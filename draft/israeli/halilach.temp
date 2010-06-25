@@ -1,0 +1,37 @@
+\header {
+	filename="halilach.ly"
+	title="Kama Yafe Poreach Halilach"
+	subtitle=""
+	composer=""
+	singer=""
+	copyright=""
+	style="Israeli"
+	piece="Med. Ballad"
+
+	enteredby="[% lily_enteredby %]"
+	maintainerEmail="[% lily_maintaineremail %]"
+	footer="[% lily_footer %]"
+	tagline="[% lily_tagline %]"
+}
+
+harmony=\chords {
+%%
+%% verse:
+%% Am7 | Dm7 | Am7 | E7 |
+%% Am7 | Dm7 G7 | Cmaj7 Dm7/G7 | Cmaj7 |
+%% chorus:
+%% Fmaj7 | Em7 | Dm7 E7 | Am7 |
+%% D7 Em7 | Fmaj7 Dm7/G7 | Cmaj7 Dm7/E7 | Am7 |
+%%
+}
+
+\score {
+	<<
+		\context ChordNames \harmony
+	>>
+	\midi {
+		\tempo 4=90
+	}
+	\paper {
+	}
+}

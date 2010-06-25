@@ -1,0 +1,43 @@
+\version [% lily_version %]
+\header {
+	filename="[% target_node %]"
+	title="Have I told you lately that I love you"
+	subtitle=""
+	composer=""
+	singer="Van Morrison"
+	copyright=""
+	style="Pop"
+	piece="Med. Ballad"
+
+	enteredby="[% lily_enteredby %]"
+	maintainerEmail="[% lily_maintaineremail %]"
+	footer="[% lily_footer %]"
+	tagline="[% lily_tagline %]"
+}
+
+harmony=\chords {
+%%
+%%	Fmaj7 Am7 | Bbmaj7 C7 |  x 2
+%%	Bbmaj7 | Am7 | Gm7 C7 | Fmaj7 -> C7 |
+%%
+%%
+}
+
+text=\lyrics {
+	Have I told you lately that I love you.
+	Have I told you that there's no one but you.
+	You give me so much gladness.
+	Take away all the sadness.
+	Take my troubles that's what you do.
+}
+
+\score {
+	<<
+		\context ChordNames \harmony
+		\context Lyrics \text
+	>>
+	\midi {
+		\tempo 4=90
+	}
+	\layout {}
+}

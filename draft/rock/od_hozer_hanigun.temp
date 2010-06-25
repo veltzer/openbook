@@ -1,0 +1,35 @@
+\header {
+	filename="od_hozer_hanigun.ly"
+	title="Od hozer hanigun"
+	subtitle=""
+	composer=""
+	singer="Berry Saharof"
+	copyright=""
+	style="Pop"
+	piece="Med. Ballad"
+
+	enteredby="[% lily_enteredby %]"
+	maintainerEmail="[% lily_maintaineremail %]"
+	footer="[% lily_footer %]"
+	tagline="[% lily_tagline %]"
+}
+
+harmony=\chords {
+%%
+%% openning:
+%%	Bm7 A7 | Bm7 A7 | Bm7 A7 | Bm7 A7 |
+%% verse:
+%%	D Em7 | G Bm7 | Em7 F#7 | G D |
+%%	G D | Em7 Bm7 | Em7 F#7 | G A7 |
+}
+
+\score {
+	<<
+		\context ChordNames \harmony
+	>>
+	\midi {
+		\tempo 4=90
+	}
+	\paper {
+	}
+}
