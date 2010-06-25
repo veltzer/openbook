@@ -29,8 +29,10 @@ check_extra_files:
 
 # rule about how to create .ly files from .temp files
 $(LY): %.ly: %.temp
+	rm -f $@
 	cp $< $@
 	chmod 444 $@
 # rule about how to create .pdf files from .ly files
 $(PDF): %.pdf: %.ly
-	lilypond $<
+	lilypond -o $(basename $@) $<
+	rm -f $(basename $@).ps $(basename $@).midi
