@@ -1,0 +1,36 @@
+\header {
+	filename="shtey_alamot.ly"
+	title="Shtey Alamot"
+	subtitle=""
+	composer=""
+	singer="Shalom Hanoch"
+	copyright=""
+	style="Pop"
+	piece="Med. Ballad"
+
+	enteredby="[% lily_enteredby %]"
+	maintainerEmail="[% lily_maintaineremail %]"
+	footer="[% lily_footer %]"
+	tagline="[% lily_tagline %]"
+}
+
+harmony=\chords {
+%%
+%% verse:
+%% C B7b5 | Am7 Dm7 | G7 Cmaj7 | Dm7 G7 | x2
+%% chorus:
+%% Am7 G7 | Fmaj7 | Am7 Dm7 | G7 |
+%% C B7b5 | Am7 G7 | Fmaj7 G7 | C (G7) |
+%%
+}
+
+\score {
+	<<
+		\context ChordNames \harmony
+	>>
+	\midi {
+		\tempo 4=90
+	}
+	\paper {
+	}
+}
