@@ -7,11 +7,6 @@
 	copyright=""
 	style="Jazz"
 	piece="Upbeat Jazz Blues"
-	
-	enteredby="[% lily_enteredby %]"
-	maintainerEmail="[% lily_maintaineremail %]"
-	footer="[% lily_footer %]"
-	tagline="[% lily_tagline %]"
 }
 
 %{

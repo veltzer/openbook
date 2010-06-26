@@ -7,11 +7,6 @@
 	copyright=""
 	style="blues"
 	piece="Med Swing"
-
-	enteredby="[% lily_enteredby %]"
-	maintainerEmail="[% lily_maintaineremail %]"
-	footer="[% lily_footer %]"
-	tagline="[% lily_tagline %]"
 }
 
 phraseA={ r4 d'8. c'16 aes8. g16 f8. d16 }
