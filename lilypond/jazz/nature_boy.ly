@@ -8,11 +8,6 @@
 	style="Jazz"
 	note="7th bar of letters A and B were originally 2 bars each. Melody is straight eights, though rather freely interpreted rhythmically."
 	piece="Med. Ballad"
-
-	enteredby="[% lily_enteredby %]"
-	maintainerEmail="[% lily_maintaineremail %]"
-	footer="[% lily_footer %]"
-	tagline="[% lily_tagline %]"
 }
 
 %{

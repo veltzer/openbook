@@ -8,11 +8,6 @@
 	copyright=""
 	style="Pop"
 	piece="Med. Ballad"
-
-	enteredby="[% lily_enteredby %]"
-	maintainerEmail="[% lily_maintaineremail %]"
-	footer="[% lily_footer %]"
-	tagline="[% lily_tagline %]"
 }
 
 %{

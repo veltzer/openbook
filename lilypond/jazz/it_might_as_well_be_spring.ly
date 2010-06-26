@@ -8,11 +8,6 @@
 	copyright=""
 	style="Jazz"
 	piece="Med Swing"
-
-	enteredby="[% lily_enteredby %]"
-	maintainerEmail="[% lily_maintaineremail %]"
-	footer="[% lily_footer %]"
-	tagline="[% lily_tagline %]"
 }
 
 tune=\relative d' {

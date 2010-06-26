@@ -12,11 +12,6 @@
 	copyright="GPL"
 	style="Pop"
 	piece="Med. Ballad"
-
-	enteredby="Mark Veltzer"
-	maintainerEmail="mark.veltzer@gmail.com"
-	footer="footer is here"
-	tagline="tagline is here"
 }
 
 harmony=\new ChordNames \with {

@@ -9,11 +9,6 @@
 	style="Jazz"
 	remark="copied from the real book"
 	piece="Med. Ballad"
-
-	enteredby="[% lily_enteredby %]"
-	maintainerEmail="[% lily_maintaineremail %]"
-	footer="[% lily_footer %]"
-	tagline="[% lily_tagline %]"
 }
 
 harmony=\chords {
