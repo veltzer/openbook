@@ -1,6 +1,8 @@
-\version [% lily_version %]
-%% this version was entered by me from the real book
-%% on Mon May 22 02:18:00 IDT 2006
+\version "2.12.3"
+%{
+	this version was entered by Mark Veltzer from the real book
+	on Mon May 22 02:18:00 IDT 2006
+%}
 \header {
 	filename="[% target_node %]"
 	title="Autumn Leaves"
@@ -8,6 +10,7 @@
 	composer="Joseph Kosma and Jacques Prevert"
 	copyright=""
 	style="Jazz"
+	piece="Med Swing"
 	remark="copied from the real book"
 
 	enteredby="[% lily_enteredby %]"
@@ -67,8 +70,6 @@ tune={
 		\context ChordNames \harmony
 		\context Staff \tune
 	>>
-	\midi {
-		\tempo 4=90
-	}
+	\midi {}
 	\layout {}
 }

@@ -1,4 +1,4 @@
-\version [% lily_version %]
+\version "2.12.3"
 \header {
 	filename="[% target_node %]"
 	title="Chega De Saudade"
@@ -6,6 +6,7 @@
 	composer="Antonio Carlos Jobim"
 	copyright="1962,1967 Editora Musical Arapua, Sao Paulo, Brazil"
 	style="Jazz"
+	piece="Med Swing"
 
 	enteredby="[% lily_enteredby %]"
 	maintainerEmail="[% lily_maintaineremail %]"
@@ -38,8 +39,6 @@ harmony=\chords {
 		\context ChordNames \harmony
 		\context Staff \tune
 	>>
-	\midi {
-		\tempo 4=90
-	}
+	\midi {}
 	\layout {}
 }

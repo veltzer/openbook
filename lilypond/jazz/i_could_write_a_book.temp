@@ -1,11 +1,12 @@
-\version [% lily_version %]
+\version "2.12.3"
 \header {
 	filename="[% target_node %]"
 	title="I could write a book"
 	subtitle=""
-	composer="Lorenz Hart \& Richard Rodgers"
+	composer="Lorenz Hart & Richard Rodgers"
 	copyright=""
 	style="Jazz"
+	piece="Med Swing"
 
 	enteredby="[% lily_enteredby %]"
 	maintainerEmail="[% lily_maintaineremail %]"
@@ -48,8 +49,6 @@ tune=\relative g' {
 		\context ChordNames \harmony
 		\context Staff \tune
 	>>
-	\midi {
-		\tempo 4=90
-	}
+	\midi {}
 	\layout {}
 }

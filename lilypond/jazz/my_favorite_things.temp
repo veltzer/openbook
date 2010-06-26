@@ -1,4 +1,4 @@
-\version [% lily_version %]
+\version "2.12.3"
 \header {
 	filename="[% target_node %]"
 	title="My Favorite Things"
@@ -6,6 +6,7 @@
 	composer="Oscar Hammerstein and Richard Rodgers"
 	copyright=""
 	style="Jazz"
+	piece="Med Swing"
 
 	enteredby="[% lily_enteredby %]"
 	maintainerEmail="[% lily_maintaineremail %]"
@@ -13,10 +14,12 @@
 	tagline="[% lily_tagline %]"
 }
 
-%% todo:
-%% 0. add lyrics.
-%% 1. check this whole sheet again.
-%% 2. add length to all note.
+%{
+	TODO:
+	- add lyrics.
+	- check this whole sheet again.
+	- add length to all note.
+%}
 
 harmony=\chords {
 	\mark "Intro"
@@ -66,8 +69,6 @@ tune=\relative e' {
 		\context ChordNames \harmony
 		\context Staff \tune
 	>>
-	\midi {
-		\tempo 4=90
-	}
+	\midi {}
 	\layout {}
 }

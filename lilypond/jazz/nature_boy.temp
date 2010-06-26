@@ -1,4 +1,4 @@
-\version [% lily_version %]
+\version "2.12.3"
 \header {
 	filename="[% target_node %]"
 	title="Nature Boy"
@@ -15,14 +15,15 @@
 	tagline="[% lily_tagline %]"
 }
 
-%% todo:
-%%	0. do a repeat in the chords on the whole first 8 bars.
+%{
+	todo:
+	0. do a repeat in the chords on the whole first 8 bars.
+%}
 
 tune={
 	\time 4/4
 	\key d \minor
-%%	\clef treble
-	\partial 8 a8	|
+	\partial 8 a8	\bar "||"
 	a'8 f'8 d'2.	| r4 r8 a8 e'8 f'8 g'8 bes'8	| a'8 f'8 d'2.	| r4 r8 a8 e'8 f'8 g'8 bes'8 | \break
 	a'4. d''8 cis''2	| a'4. c''8 b'2		| g'4. bes'8 a'4. d'8	| e'2. r8 a8	| \break
 	a'2. g'4	| e'2. a4		| g'2. f'4		| d'2. a4		| \break
@@ -34,8 +35,6 @@ tune={
 }
 
 harmony=\chords {
-	%% next line means that chords will not be reprinted if they do not change
-	%%\set chordChanges = ##t
 	\partial 8 r8	|
 	\mark "A"
 	d1:min		| e2:min7.5- a2:7	| d1:min		| e2:min7.5- a2:7	|
@@ -67,8 +66,6 @@ text=\lyrics {
 		\context Staff \tune
 		\context Lyrics \text
 	>>
-	\midi {
-		\tempo 4=90
-	}
+	\midi {}
 	\layout {}
 }

@@ -1,4 +1,4 @@
-\version [% lily_version %]
+\version "2.12.3"
 \header {
 	filename="[% target_node %]"
 	title="Have I told you lately that I love you"
@@ -16,11 +16,10 @@
 }
 
 harmony=\chords {
-%%
-%%	Fmaj7 Am7 | Bbmaj7 C7 |  x 2
-%%	Bbmaj7 | Am7 | Gm7 C7 | Fmaj7 -> C7 |
-%%
-%%
+	\repeat volta 2 {
+		f2:maj7 a2:min7 | bes2:maj7 c2:7 |
+	}
+	bes1:maj7 | a1:min7 | g2:min7 c2:7 | f4*3:maj7 c4:7 \bar "||"
 }
 
 text=\lyrics {
@@ -36,8 +35,6 @@ text=\lyrics {
 		\context ChordNames \harmony
 		\context Lyrics \text
 	>>
-	\midi {
-		\tempo 4=90
-	}
+	\midi {}
 	\layout {}
 }

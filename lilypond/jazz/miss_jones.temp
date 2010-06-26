@@ -1,17 +1,23 @@
-\version [% lily_version %]
+\version "2.12.3"
 \header {
 	filename="[% target_node %]"
 	title="Have you met Miss Jones"
 	subtitle=""
-	composer="Lorenz Hart \& Richard Rogers"
+	composer="Lorenz Hart & Richard Rogers"
 	copyright=""
 	style="Jazz"
+	piece="Med Swing"
 
 	enteredby="[% lily_enteredby %]"
 	maintainerEmail="[% lily_maintaineremail %]"
 	footer="[% lily_footer %]"
 	tagline="[% lily_tagline %]"
 }
+
+%{
+	TODO:
+	-add lyrics
+%}
 
 harmony=\chords {
 	f1:maj7 | d:7.9- | g:min7 | c:7 | a:min7 \break | d:min7 | g:min7 | c:7 |
@@ -41,8 +47,6 @@ tune=\relative a' {
 		\context ChordNames \harmony
 		\context Staff \tune
 	>>
-	\midi {
-		\tempo 4=90
-	}
+	\midi {}
 	\layout {}
 }
