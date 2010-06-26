@@ -4,7 +4,6 @@
 	title="I Remember Clifford"
 	subtitle=""
 	composer="Benny Golson"
-	copyright=""
 	style="Jazz"
 	piece="Med Swing"
 }

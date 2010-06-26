@@ -4,7 +4,6 @@
 	title="Watermelon Man"
 	subtitle=""
 	composer="Herbie Hancock"
-	copyright=""
 	style="Jazz"
 	piece="Med Swing"
 }

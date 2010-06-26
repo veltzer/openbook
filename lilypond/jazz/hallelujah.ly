@@ -4,7 +4,6 @@
 	title="Hallelujah I Love Him(her) So"
 	subtitle=""
 	composer="Ray Charles"
-	copyright=""
 	style="blues"
 	piece="Med Swing"
 }

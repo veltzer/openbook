@@ -1,5 +1,3 @@
-- use a real macro processor to process the files here (not cp!).
-- put the version back into the macro processor.
 - add "poet="poetname"" header in all the pieces.
 - add "todo" in all the pieces in the same style.
 - add "completion level" in all the pieces. define completion levels and mark them out.

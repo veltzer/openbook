@@ -4,4 +4,5 @@
 	maintainerEmail="mark.veltzer@gmail.com"
 	footer="this is the footer"
 	tagline="this is the tagline"
+	copyright="[no copyright notice]"
 }

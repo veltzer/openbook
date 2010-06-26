@@ -4,7 +4,6 @@
 	title="A Foggy Day"
 	subtitle=""
 	composer="George Gershwin"
-	copyright=""
 	style="Jazz"
 	piece="Med Swing"
 	remark="copied from the real book"

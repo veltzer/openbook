@@ -5,7 +5,6 @@
 	subtitle=""
 	composer="Jerome Kern"
 	poet="Dorothy Fields"
-	copyright=""
 	style="Jazz"
 	remark="copied from the real book"
 	piece="Med. Ballad"

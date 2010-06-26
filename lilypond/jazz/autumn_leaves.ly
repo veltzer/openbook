@@ -9,7 +9,6 @@
 	subtitle=""
 	composer="Joseph Kosma"
 	poet="Jacques Prevert"
-	copyright=""
 	style="Jazz"
 	piece="Med Swing"
 	remark="copied from the real book"

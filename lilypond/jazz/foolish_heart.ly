@@ -5,7 +5,6 @@
 	subtitle=""
 	composer="Victor Young"
 	poet="Ned Washington"
-	copyright=""
 	style="Jazz"
 	piece="Med Swing"
 }

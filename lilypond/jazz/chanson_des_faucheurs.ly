@@ -4,7 +4,6 @@
 	title="Chanson des faucheurs"
 	subtitle=""
 	composer="R. Schumann"
-	copyright=""
 	style="Jazz"
 	piece="Med Swing"
 }

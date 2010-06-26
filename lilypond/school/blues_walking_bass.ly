@@ -4,7 +4,6 @@
 	title="Jazz Bass line for Blues in F"
 	subtitle=""
 	composer=""
-	copyright=""
 	style="Jazz"
 	piece="Upbeat Jazz Blues"
 }

@@ -4,7 +4,6 @@
 	title="Lullaby of birdland"
 	subtitle=""
 	composer="George Shearing"
-	copyright=""
 	style="Jazz"
 	piece="Med Swing"
 }

@@ -35,6 +35,15 @@ check_ws:
 .PHONY: check_common
 check_common:
 	-@grep --files-without-match "common.lyi" `find . -name "*.ly"`
+.PHONY: check_no_poet
+check_no_poet:
+	-@grep --files-without-match "poet=" `find . -name "*.ly"`
+.PHONY: check_no_copyright
+check_no_copyright:
+	-@grep --files-without-match "copyright=" `find . -name "*.ly"`
+.PHONY: check_empty_copyright
+check_empty_copyright:
+	-@grep --files-with-match "copyright=\"\"" `find . -name "*.ly"`
 
 # rules
 
