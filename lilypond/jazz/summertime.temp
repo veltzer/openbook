@@ -1,11 +1,12 @@
-\version [% lily_version %]
+\version "2.12.3"
 \header {
 	filename="[% target_node %]"
 	title="Summertime"
 	subtitle=""
-	composer="G. Gershwin"
-	copyright=""
+	composer="George Gershwin"
+	copyright="[% lily_copyright %]"
 	style="Jazz"
+	piece="Med Swing"
 
 	enteredby="[% lily_enteredby %]"
 	maintainerEmail="[% lily_maintaineremail %]"
@@ -13,12 +14,17 @@
 	tagline="[% lily_tagline %]"
 }
 
+%{
+	TODO:
+		- add lurics
+%}
+
 harmony=\chords {
-	\partial 4 r4 |
+	\partial 4 r4 \bar "||"
 	\repeat volta 2 {
 		d1*4:min7 | g1*2:min7 | e1:min7.5- | a:7.9+ |
 		d1*3:min7 | g2:min7 c:7 |
-		f1:maj | e2:min7.5- a:7.9+ | d1:min7 | a:7.9+ |
+		f1:maj | e2:min7.5- a:7.9+ | d1:min7 | a:7.9+ \bar "||"
 	}
 }
 
@@ -39,8 +45,6 @@ tune=\relative c'''{
 		\context ChordNames \harmony
 		\context Staff \tune
 	>>
-	\midi {
-		\tempo 4=90
-	}
+	\midi {}
 	\layout {}
 }

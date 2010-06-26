@@ -1,4 +1,4 @@
-\version [% lily_version %]
+\version "2.12.3"
 \header {
 	filename="[% target_node %]"
 	title="Foolish Heart"
@@ -6,6 +6,7 @@
 	composer="Ned Washington and Victor Young"
 	copyright=""
 	style="Jazz"
+	piece="Med Swing"
 
 	enteredby="[% lily_enteredby %]"
 	maintainerEmail="[% lily_maintaineremail %]"
@@ -13,7 +14,6 @@
 	tagline="[% lily_tagline %]"
 }
 
-%% the tune in C
 tune={
 	\key bes \major
 	\time 4/4
@@ -52,8 +52,6 @@ harmony=\chords {
 		\context ChordNames \harmony
 		\context Staff \tune
 	>>
-	\midi {
-		\tempo 4=90
-	}
+	\midi {}
 	\layout {}
 }

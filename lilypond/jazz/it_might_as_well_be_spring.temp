@@ -1,11 +1,12 @@
-\version [% lily_version %]
+\version "2.12.3"
 \header {
 	filename="[% target_node %]"
 	title="It might as well be spring"
 	subtitle=""
-	composer="Oscar Hammerstein \& Richard Rogers"
+	composer="Oscar Hammerstein & Richard Rogers"
 	copyright=""
 	style="Jazz"
+	piece="Med Swing"
 
 	enteredby="[% lily_enteredby %]"
 	maintainerEmail="[% lily_maintaineremail %]"
@@ -40,8 +41,6 @@ tune=\relative d' {
 	<<
 		\context Staff \tune
 	>>
-	\midi {
-		\tempo 4=90
-	}
+	\midi {}
 	\layout {}
 }

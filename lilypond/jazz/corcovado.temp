@@ -1,4 +1,4 @@
-\version [% lily_version %]
+\version "2.12.3"
 \header{
 	filename="[% target_node %]"
 	title="Corcovado"
@@ -6,6 +6,7 @@
 	composer="Antonio Carlos Jobim"
 	copyright="1959 Editora Musical Arapua, Brazil"
 	style="Jazz"
+	piece="Med Swing"
 
 	enteredby="[% lily_enteredby %]"
 	maintainerEmail="[% lily_maintaineremail %]"
@@ -114,8 +115,6 @@ text=\lyrics {
 			\context Lyrics \text
 		>>
 	}
-	\midi {
-		\tempo 4=90
-	}
+	\midi {}
 	\layout {}
 }

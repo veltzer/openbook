@@ -1,4 +1,4 @@
-\version [% lily_version %]
+\version "2.12.3"
 \header {
 	filename="[% target_node %]"
 	title="A Foggy Day"
@@ -50,8 +50,6 @@ tune={
 		\context ChordNames \harmony
 		\context Staff \tune
 	>>
-	\midi {
-		\tempo 4=140
-	}
+	\midi {}
 	\layout {}
 }

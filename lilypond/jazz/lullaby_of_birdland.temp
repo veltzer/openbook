@@ -1,4 +1,4 @@
-\version [% lily_version %]
+\version "2.12.3"
 \header {
 	filename="[% target_node %]"
 	title="Lullaby of birdland"
@@ -6,6 +6,7 @@
 	composer="George Shearing"
 	copyright=""
 	style="Jazz"
+	piece="Med Swing"
 
 	enteredby="[% lily_enteredby %]"
 	maintainerEmail="[% lily_maintaineremail %]"
@@ -47,8 +48,6 @@ harmony=\chords {
 		\context ChordNames \harmony
 		\context Staff \tune
 	>>
-	\midi {
-		\tempo 4=90
-	}
+	\midi {}
 	\layout {}
 }

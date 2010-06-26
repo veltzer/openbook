@@ -1,4 +1,4 @@
-\version [% lily_version %]
+\version "2.12.3"
 \header{
 	filename="[% target_node %]"
 	title="One note samba"
@@ -6,6 +6,7 @@
 	composer="Antonio Carlos Jobim"
 	copyright="© 1959 editora musical arapua, brazil"
 	style="Jazz"
+	piece="Med Swing"
 
 	enteredby="[% lily_enteredby %]"
 	maintainerEmail="[% lily_maintaineremail %]"
@@ -108,8 +109,6 @@ text=\lyrics {
 		\context Staff \tune
 		\context Lyrics \text
 	>>
-	\midi {
-		\tempo 4=90
-	}
+	\midi {}
 	\layout {}
 }

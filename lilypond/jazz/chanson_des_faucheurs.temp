@@ -1,4 +1,4 @@
-\version [% lily_version %]
+\version "2.12.3"
 \header {
 	filename="[% target_node %]"
 	title="Chanson des faucheurs"
@@ -6,6 +6,7 @@
 	composer="R. Schumann"
 	copyright=""
 	style="Jazz"
+	piece="Med Swing"
 
 	enteredby="[% lily_enteredby %]"
 	maintainerEmail="[% lily_maintaineremail %]"
@@ -31,8 +32,6 @@ tune=\relative g'' {
 	<<
 		\context Staff \tune
 	>>
-	\midi {
-		\tempo 4=90
-	}
+	\midi {}
 	\layout {}
 }
