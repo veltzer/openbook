@@ -1,4 +1,4 @@
-\version "2.12.3"
+\include "lilypond/include/common.lyi"
 \header{
 	filename="[% target_node %]"
 	title="Desafinado"
@@ -7,11 +7,6 @@
 	copyright="1959 editora musical arapua, brazil"
 	style="Jazz"
 	piece="Med Swing"
-
-	enteredby="[% lily_enteredby %]"
-	maintainerEmail="[% lily_maintaineremail %]"
-	footer="[% lily_footer %]"
-	tagline="[% lily_tagline %]"
 }
 
 %{
@@ -126,11 +121,4 @@ harmony=\chords {
 	g:7 | g2:m7 c:9+ | f1*2:6.9 |
 }
 
-\score {
-	<<
-		\context ChordNames \harmony
-		\context Staff \tune
-	>>
-	\midi {}
-	\layout {}
-}
+\include "lilypond/include/harmony_and_tune.lyi"

@@ -1,10 +1,7 @@
 ALL:=
 CLEAN:=
 
-TEMP:=$(shell find . -name "*.temp")
-LY:=$(addsuffix .ly,$(basename $(TEMP)))
-ALL:=$(ALL) $(LY)
-CLEAN:=$(CLEAN) $(LY)
+LY:=$(shell find . -name "*.ly")
 PDF:=$(addsuffix .pdf,$(basename $(LY)))
 ALL:=$(ALL) $(PDF)
 CLEAN:=$(CLEAN) $(PDF)
@@ -25,24 +22,22 @@ clean:
 
 .PHONY: check_extra_files
 check_extra_files:
-	-@find -type f -and -not -name "Makefile" -and -not -path "./.git/*" -and -not -name "*.temp"
+	-@find -type f -and -not -name "Makefile" -and -not -path "./.git/*" -and -not -name "*.ly" -and -not -name "*.lyi"
 .PHONY: check_comments
 check_comments:
-	-@fgrep "%%" `find . -name "*.temp"`
+	-@grep "%%" `find . -name "*.ly"`
 .PHONY: check_composer_and
 check_composer_and:
-	-@grep "composer=\".* and .*\"" `find . -name "*.temp"`
+	-@grep "composer=\".* and .*\"" `find . -name "*.ly" -or -name "*.lyi"`
 .PHONY: check_ws
 check_ws:
-	-@grep "  " `find . -name "*.temp"`
+	-@grep "  " `find . -name "*.ly" -or -name "*.lyi"`
+.PHONY: check_common
+check_common:
+	-@grep --files-without-match "common.lyi" `find . -name "*.ly"`
 
 # rules
 
-# rule about how to create .ly files from .temp files
-$(LY): %.ly: %.temp
-	rm -f $@
-	cp $< $@
-	chmod 444 $@
 # rule about how to create .pdf files from .ly files
 $(PDF): %.pdf: %.ly
 	lilypond -o $(basename $@) $<
