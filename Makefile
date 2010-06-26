@@ -29,6 +29,12 @@ check_extra_files:
 .PHONY: check_comments
 check_comments:
 	-@fgrep "%%" `find . -name "*.temp"`
+.PHONY: check_composer_and
+check_composer_and:
+	-@grep "composer=\".* and .*\"" `find . -name "*.temp"`
+.PHONY: check_ws
+check_ws:
+	-@grep "  " `find . -name "*.temp"`
 
 # rules
 
