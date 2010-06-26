@@ -6,3 +6,4 @@
 - add include folder and put shared stuff in it.
 - once include folder is added add include dependency analysis script and hook it into
 	the makefile.
+- create midi,ps and jpegs also (multi rules in the makefile ?!?)
