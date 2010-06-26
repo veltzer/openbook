@@ -1,7 +1,7 @@
 % end verbatim - this comment is a hack to prevent texinfo.tex
 % from choking on non-European UTF-8 subsets
 
-\version "2.12.3"
+\include "lilypond/include/common.lyi"
 \header {
 	filename="zarot_gdolot.ly"
 	title="צרות טובות"

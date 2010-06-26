@@ -1,4 +1,4 @@
-\version "2.12.3"
+\include "lilypond/include/common.lyi"
 %{
 	this version was entered by Mark Veltzer from the real book
 	on Mon May 22 02:18:00 IDT 2006
