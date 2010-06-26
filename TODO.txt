@@ -2,3 +2,4 @@
 - add "todo" in all the pieces in the same style.
 - add "completion level" in all the pieces. define completion levels and mark them out.
 - add "tags" header in all the pieces (jazz, swing, bossa etc...).
+- add a non empty copyright to all of the pieces...
