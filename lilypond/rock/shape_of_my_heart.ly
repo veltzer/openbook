@@ -1,4 +1,4 @@
-\version "2.12.3"
+\include "lilypond/include/common.lyi"
 \header {
 	filename="shape_of_my_heart.ly"
 	title="Shape of My Heart"

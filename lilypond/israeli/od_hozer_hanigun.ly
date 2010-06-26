@@ -1,4 +1,4 @@
-\version "2.12.3"
+\include "lilypond/include/common.lyi"
 \header {
 	filename="od_hozer_hanigun.ly"
 	title="Od hozer hanigun"

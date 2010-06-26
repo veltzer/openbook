@@ -22,7 +22,7 @@ clean:
 
 .PHONY: check_extra_files
 check_extra_files:
-	-@find -type f -and -not -name "Makefile" -and -not -path "./.git/*" -and -not -name "*.ly" -and -not -name "*.lyi"
+	-@find -type f -and -not -name "Makefile" -and -not -path "./.git/*" -and -not -name "*.ly" -and -not -name "*.lyi" -and -not -name "TODO.txt"
 .PHONY: check_comments
 check_comments:
 	-@grep "%%" `find . -name "*.ly"`
