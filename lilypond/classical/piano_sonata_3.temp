@@ -1,4 +1,4 @@
-\version [% lily_version %]
+\version "2.12.3"
 \header {
 	filename="[% target_node %]"
 	title="Sonata III"
@@ -13,8 +13,10 @@
 	footer="[% lily_footer %]"
 	tagline="[% lily_tagline %]"
 }
-%% Schirmer's library of musical classics"
-%% An accompaniment for Second Piano by Edvard Grieg may be found in Schirmer's Library, Vol. 1440.
+%{
+	Schirmer's library of musical classics"
+	An accompaniment for Second Piano by Edvard Grieg may be found in Schirmer's Library, Vol. 1440.
+%}
 
 tune={
 	\key c \major
@@ -40,8 +42,6 @@ tune={
 	<<
 		\context Staff \tune
 	>>
-	\midi {
-		\tempo 4=140
-	}
+	\midi {}
 	\layout {}
 }

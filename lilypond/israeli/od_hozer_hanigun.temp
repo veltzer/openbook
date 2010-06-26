@@ -1,3 +1,4 @@
+\version "2.12.3"
 \header {
 	filename="od_hozer_hanigun.ly"
 	title="Od hozer hanigun"
@@ -15,21 +16,19 @@
 }
 
 harmony=\chords {
-%%
-%% openning:
-%%	Bm7 A7 | Bm7 A7 | Bm7 A7 | Bm7 A7 |
-%% verse:
-%%	D Em7 | G Bm7 | Em7 F#7 | G D |
-%%	G D | Em7 Bm7 | Em7 F#7 | G A7 |
+	\mark "opening"
+	\repeat volta 4 {
+		b2:min7 a2:7 |
+	}
+	\mark "verse"
+	d2 e2:min7 | g2 b2:min7 | e2:min7 fis2:7 | g2 d2 | \break
+	g2 d2 | e2:min7 b2:min7 | e2:min7 fis2:7 | g2 a2:7 | \break
 }
 
 \score {
 	<<
 		\context ChordNames \harmony
 	>>
-	\midi {
-		\tempo 4=90
-	}
-	\paper {
-	}
+	\midi {}
+	\layout {}
 }

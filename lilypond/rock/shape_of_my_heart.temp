@@ -1,3 +1,4 @@
+\version "2.12.3"
 \header {
 	filename="shape_of_my_heart.ly"
 	title="Shape of My Heart"
@@ -14,24 +15,30 @@
 	tagline="[% lily_tagline %]"
 }
 
+%{
+	TODO:
+	- add lyrics
+	- add tune
+%}
+
 harmony=\chords {
-%%
-%% verse:
-%% Gbm Gbm|E | Dmaj7 D/Db7 | x2 
-%% Dmaj7 | Amaj7 Db7 | Dmaj7 Db7 | Gbm |
-%% chorus:
-%% Gbm Gbm|E | Dmaj7 Db7 | x2 
-%% Dmaj7 | Amaj7 Db7 | Dmaj7 Db7 | Gbm |
-%%
+	\mark "verse"
+	ges2:min ges2:min
+	\mark "chorus"
+%{
+	verse:
+	Gbm Gbm|E | Dmaj7 D/Db7 | x2 
+	Dmaj7 | Amaj7 Db7 | Dmaj7 Db7 | Gbm |
+	chorus:
+	Gbm Gbm|E | Dmaj7 Db7 | x2 
+	Dmaj7 | Amaj7 Db7 | Dmaj7 Db7 | Gbm |
+%}
 }
 
 \score {
 	<<
 		\context ChordNames \harmony
 	>>
-	\midi {
-		\tempo 4=90
-	}
-	\paper {
-	}
+	\midi {}
+	\layout {}
 }

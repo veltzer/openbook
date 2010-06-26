@@ -1,3 +1,4 @@
+\version "2.12.3"
 \header {
 	filename="halilach.ly"
 	title="Kama Yafe Poreach Halilach"
@@ -15,23 +16,18 @@
 }
 
 harmony=\chords {
-%%
-%% verse:
-%% Am7 | Dm7 | Am7 | E7 |
-%% Am7 | Dm7 G7 | Cmaj7 Dm7/G7 | Cmaj7 |
-%% chorus:
-%% Fmaj7 | Em7 | Dm7 E7 | Am7 |
-%% D7 Em7 | Fmaj7 Dm7/G7 | Cmaj7 Dm7/E7 | Am7 |
-%%
+	\mark "verse"
+	a1:min7 | d1:min7 | a1:min7 | e1 | \break
+	a1:min7 | d2:min7 g2:7 | c2:maj7 d4:min7 g4:7 | c1:maj7 | \break
+	\mark "chorus"
+	f1:maj7 | e1:min7 | d2:min7 e2:7 | a1:min7 | \break
+	d2:7 e2:min7 | f2:maj7 d4:min7 g4:7 | c2:maj7 d4:min7 e4:7 | a1:min7 | \break
 }
 
 \score {
 	<<
 		\context ChordNames \harmony
 	>>
-	\midi {
-		\tempo 4=90
-	}
-	\paper {
-	}
+	\midi {}
+	\layout {}
 }
