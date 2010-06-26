@@ -1,6 +1,5 @@
 \include "lilypond/include/common.lyi"
 \header {
-	filename="[% target_node %]"
 	title="Round Midnight"
 	subtitle=""
 	composer="Cootie Williams & Thelonious Monk"

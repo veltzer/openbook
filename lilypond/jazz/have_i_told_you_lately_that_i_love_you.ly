@@ -1,6 +1,5 @@
 \include "lilypond/include/common.lyi"
 \header {
-	filename="[% target_node %]"
 	title="Have I told you lately that I love you"
 	subtitle=""
 	composer=""

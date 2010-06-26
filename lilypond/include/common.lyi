@@ -1,8 +1,13 @@
 \version "2.12.3"
 \header{
+	subsubtitle="Mark Veltzer <mark.veltzer@gmail.com>"
 	enteredby="Mark Veltzer"
 	maintainerEmail="mark.veltzer@gmail.com"
 	footer="this is the footer"
+%{
+	I do not enable the tagline as want to keep the original lilypond tag to promote
+	lilypond usage...
 	tagline="this is the tagline"
+%}
 	copyright="[no copyright notice]"
 }

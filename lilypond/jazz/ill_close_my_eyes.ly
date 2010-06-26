@@ -1,6 +1,5 @@
 \include "lilypond/include/common.lyi"
 \header {
-	filename="[% target_node %]"
 	title="I'll Close My Eyes"
 	subtitle=""
 	composer="Blue Mitchell"

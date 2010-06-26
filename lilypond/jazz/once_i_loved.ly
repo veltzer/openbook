@@ -1,6 +1,5 @@
 \include "lilypond/include/common.lyi"
 \header {
-	filename="[% target_node %]"
 	title="Once I Loved"
 	subtitle=""
 	composer="Antonio Carlos Jobim"

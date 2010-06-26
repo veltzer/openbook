@@ -3,7 +3,6 @@
 
 \include "lilypond/include/common.lyi"
 \header {
-	filename="zarot_gdolot.ly"
 	title="צרות טובות"
 	subtitle=""
 	composer="שלום חנוך"

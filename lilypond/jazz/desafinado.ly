@@ -1,6 +1,5 @@
 \include "lilypond/include/common.lyi"
 \header{
-	filename="[% target_node %]"
 	title="Desafinado"
 	subtitle="Slightly Out Of Tune"
 	composer="Antonio Carlos Jobim"

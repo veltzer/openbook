@@ -1,6 +1,5 @@
 \include "lilypond/include/common.lyi"
 \header{
-	filename="[% target_node %]"
 	title="One note samba"
 	subtitle="Samba de uma nota so"
 	composer="Antonio Carlos Jobim"

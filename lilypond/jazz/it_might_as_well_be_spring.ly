@@ -1,6 +1,5 @@
 \include "lilypond/include/common.lyi"
 \header {
-	filename="[% target_node %]"
 	title="It might as well be spring"
 	subtitle=""
 	composer="Richard Rogers"

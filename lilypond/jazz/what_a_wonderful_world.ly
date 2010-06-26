@@ -1,6 +1,5 @@
 \include "lilypond/include/common.lyi"
 \header {
-	filename="[% target_node %]"
 	title="What a wonderful world"
 	subtitle=""
 	composer="George David Weiss & Bob Thiele"

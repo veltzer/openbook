@@ -1,6 +1,5 @@
 \include "lilypond/include/common.lyi"
 \header {
-	filename="[% target_node %]"
 	title="The Girl From Ipanema"
 	subtitle="garota de ipanema"
 	composer="Antonio Carlos Jobim"

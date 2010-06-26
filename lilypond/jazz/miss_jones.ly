@@ -1,6 +1,5 @@
 \include "lilypond/include/common.lyi"
 \header {
-	filename="[% target_node %]"
 	title="Have you met Miss Jones"
 	subtitle=""
 	composer="Richard Rogers"

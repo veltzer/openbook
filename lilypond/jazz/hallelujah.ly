@@ -1,6 +1,5 @@
 \include "lilypond/include/common.lyi"
 \header {
-	filename="[% target_node %]"
 	title="Hallelujah I Love Him(her) So"
 	subtitle=""
 	composer="Ray Charles"

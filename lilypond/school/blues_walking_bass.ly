@@ -1,6 +1,5 @@
 \include "lilypond/include/common.lyi"
 \header {
-	filename="blues_walking_bass.ly"
 	title="Jazz Bass line for Blues in F"
 	subtitle=""
 	composer=""
