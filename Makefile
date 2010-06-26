@@ -2,7 +2,6 @@ ALL:=
 CLEAN:=
 
 TEMP:=$(shell find . -name "*.temp")
-#TEMP:=$(shell find lilypond/jazz -name "*.temp")
 LY:=$(addsuffix .ly,$(basename $(TEMP)))
 ALL:=$(ALL) $(LY)
 CLEAN:=$(CLEAN) $(LY)
