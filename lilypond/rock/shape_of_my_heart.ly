@@ -1,6 +1,5 @@
 \include "lilypond/include/common.lyi"
 \header {
-	filename="shape_of_my_heart.ly"
 	title="Shape of My Heart"
 	subtitle=""
 	composer=""

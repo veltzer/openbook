@@ -1,6 +1,5 @@
 \include "lilypond/include/common.lyi"
 \header {
-	filename="halilach.ly"
 	title="Kama Yafe Poreach Halilach"
 	subtitle=""
 	composer=""

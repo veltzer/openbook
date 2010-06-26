@@ -1,6 +1,5 @@
 \include "lilypond/include/common.lyi"
 \header{
-	filename="[% target_node %]"
 	title="Corcovado"
 	subtitle="quiet nights of quiet stars"
 	composer="Antonio Carlos Jobim"

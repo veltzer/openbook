@@ -1,6 +1,5 @@
 \include "lilypond/include/common.lyi"
 \header {
-	filename="[% target_node %]"
 	title="I Remember Clifford"
 	subtitle=""
 	composer="Benny Golson"

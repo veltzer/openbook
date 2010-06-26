@@ -1,6 +1,5 @@
 \include "lilypond/include/common.lyi"
 \header {
-	filename="[% target_node %]"
 	title="My Favorite Things"
 	subtitle=""
 	composer="Richard Rodgers"

@@ -1,6 +1,5 @@
 \include "lilypond/include/common.lyi"
 \header {
-	filename="[% target_node %]"
 	title="Chega De Saudade"
 	subtitle="No More Blues"
 	composer="Antonio Carlos Jobim"

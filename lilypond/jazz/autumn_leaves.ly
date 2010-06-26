@@ -4,7 +4,6 @@
 	on Mon May 22 02:18:00 IDT 2006
 %}
 \header {
-	filename="[% target_node %]"
 	title="Autumn Leaves"
 	subtitle=""
 	composer="Joseph Kosma"
