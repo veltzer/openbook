@@ -14,6 +14,12 @@
 	tagline="[% lily_tagline %]"
 }
 
+%{
+	TODO:
+	- chords at the end are problematic (don't sync with the melody).
+	- add lyrics and name of poet.
+%}
+
 tune={
 	\time 4/4
 	\key f \major
