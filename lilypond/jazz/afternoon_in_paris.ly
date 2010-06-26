@@ -4,7 +4,6 @@
 	title="Afternoon in Paris"
 	subtitle=""
 	composer="John Lewis"
-	copyright=""
 	style="Jazz"
 	piece="Swing"
 	note="song form is AABA"

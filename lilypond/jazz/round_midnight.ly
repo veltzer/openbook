@@ -5,7 +5,6 @@
 	subtitle=""
 	composer="Cootie Williams & Thelonious Monk"
 	poet="Bernie Hanighen"
-	copyright=""
 	style="Jazz"
 	piece="Med Swing"
 }

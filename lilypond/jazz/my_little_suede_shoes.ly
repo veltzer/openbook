@@ -4,7 +4,6 @@
 	title="My Little Suede Shoes"
 	subtitle=""
 	composer="Charlie Parker"
-	copyright=""
 	style="Jazz"
 	piece="Med Swing"
 }

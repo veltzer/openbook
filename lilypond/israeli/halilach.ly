@@ -5,7 +5,6 @@
 	subtitle=""
 	composer=""
 	singer=""
-	copyright=""
 	style="Israeli"
 	piece="Med. Ballad"
 }

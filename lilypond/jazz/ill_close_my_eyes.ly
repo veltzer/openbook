@@ -4,7 +4,7 @@
 	title="I'll Close My Eyes"
 	subtitle=""
 	composer="Blue Mitchell"
-	copyright=""
+	copyright="[no copyright notice]"
 	style="Jazz"
 	piece="Med Swing"
 }

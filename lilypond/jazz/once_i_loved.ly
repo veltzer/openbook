@@ -5,7 +5,6 @@
 	subtitle=""
 	composer="Antonio Carlos Jobim"
 	poet="Vinicius DeMoraes"
-	copyright=""
 	style="Jazz"
 	piece="Med Swing"
 }

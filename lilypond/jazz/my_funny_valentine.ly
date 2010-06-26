@@ -5,7 +5,6 @@
 	subtitle=""
 	composer="Richard Rodgers"
 	poet="Lorenz Hart"
-	copyright=""
 	style="Jazz"
 	piece="Med Swing"
 }

@@ -5,7 +5,6 @@
 	subtitle=""
 	composer=""
 	singer="Sting"
-	copyright=""
 	style="Pop"
 	piece="Med. Ballad"
 }

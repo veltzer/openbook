@@ -5,7 +5,6 @@
 	subtitle=""
 	composer=""
 	singer="Berry Saharof"
-	copyright=""
 	style="Pop"
 	piece="Med. Ballad"
 }

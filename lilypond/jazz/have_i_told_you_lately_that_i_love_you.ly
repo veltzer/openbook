@@ -5,7 +5,6 @@
 	subtitle=""
 	composer=""
 	singer="Van Morrison"
-	copyright=""
 	style="Pop"
 	piece="Med. Ballad"
 }

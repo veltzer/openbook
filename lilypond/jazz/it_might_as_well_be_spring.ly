@@ -5,7 +5,6 @@
 	subtitle=""
 	composer="Richard Rogers"
 	poet="Oscar Hammerstein"
-	copyright=""
 	style="Jazz"
 	piece="Med Swing"
 }

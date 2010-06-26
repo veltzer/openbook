@@ -5,7 +5,6 @@
 	subtitle=""
 	composer="George David Weiss & Bob Thiele"
 	poet="George David Weiss & Bob Thiele"
-	copyright=""
 	style="Jazz"
 	piece="Med Swing"
 }
