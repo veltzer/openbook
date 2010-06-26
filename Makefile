@@ -1,8 +1,8 @@
 ALL:=
 CLEAN:=
 
-#TEMP:=$(shell find . -name "*.temp")
-TEMP:=$(shell find lilypond/jazz -name "*.temp")
+TEMP:=$(shell find . -name "*.temp")
+#TEMP:=$(shell find lilypond/jazz -name "*.temp")
 LY:=$(addsuffix .ly,$(basename $(TEMP)))
 ALL:=$(ALL) $(LY)
 CLEAN:=$(CLEAN) $(LY)
@@ -22,9 +22,14 @@ debug:
 clean:
 	rm -rf $(CLEAN)
 
+# checks
+
 .PHONY: check_extra_files
 check_extra_files:
-	@find -type f -and -not -name "Makefile" -and -not -path "./.git/*" -and -not -name "*.temp"
+	-@find -type f -and -not -name "Makefile" -and -not -path "./.git/*" -and -not -name "*.temp"
+.PHONY: check_comments
+check_comments:
+	-@fgrep "%%" `find . -name "*.temp"`
 
 # rules
 

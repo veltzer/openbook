@@ -1,4 +1,4 @@
-\version [% lily_version %]
+\version "2.12.3"
 \header {
 	filename="blues_walking_bass.ly"
 	title="Jazz Bass line for Blues in F"
@@ -14,9 +14,10 @@
 	tagline="[% lily_tagline %]"
 }
 
-%% todo: make all 8'th notes here swing style (because they are swing and not straight 8'ths)
-
-#(set-default-paper-size "a4")
+%{
+	TODO:
+	-make all 8'th notes here swing style (because they are swing and not straight 8'ths)
+%}
 
 tune={
 	\time 4/4
@@ -54,9 +55,6 @@ harmony=\chords {
 		\context ChordNames \harmony
 		\context Staff \tune
 	>>
-	\midi {
-		\tempo 4=120
-	}
-	\layout {
-	}
+	\midi {}
+	\layout {}
 }
