@@ -11,6 +11,7 @@ use diagnostics;
 use DBI;
 use Error qw(:try);
 use File::Find qw();
+use File::Basename qw();
 
 my($debug)=1;
 
@@ -26,6 +27,12 @@ sub handle_error() {
 }
 $dbh->{HandleError} =\&handle_error;
 
+# gulp down an entire file...
+sub read_file($) {
+	my($file)=$_[0];
+	return "foo";
+}
+
 sub get_meta_data($) {
 	my($file)=$_[0];
 	if($debug) {
@@ -36,23 +43,30 @@ sub get_meta_data($) {
 }
 
 sub handler() {
-	#print $_."\n";
-	#print $File::Find::name."\n";
-	#print "in here ".$_[0]."\n";
-	#print "============\n";
 	my($file)=$File::Find::name;
 	if($file=~/\.ly$/) {
+		my($source)=$file;
+		my($name,$path,$suffix)=File::Basename::fileparse($source,".ly");
+		my($pdf)=$path.$name.".pdf";
+		my($dt_source)=read_file($source);
+		my($dt_pdf)=read_file($pdf);
 		if($debug) {
 			print "file is $file\n";
+			print "name is $name\n";
+			print "path is $path\n";
+			print "suffix is $suffix\n";
+			print "pdf is $pdf\n";
 		}
 		my($hash)=get_meta_data($file);
+		$dbh->do("insert into TbMsLilypond (source,pdf) values(?,?)",undef,$dt_source,$dt_pdf);
 	}
 }
 
+$dbh->do("delete from TbMsLilypond",undef);
+$dbh->do("alter table TbMsLilypond AUTO_INCREMENT=1",undef);
 File::Find::find(\&handler,".");
 
-#$dbh->do("update TbWkWork set length=? where id=?",undef,$stat_secs,$row_id);
-#$dbh->do("update TbWkWork set size=? where id=?",undef,$stat_size,$row_id);
-#$dbh->commit();
+# now commit all the changes...
+$dbh->commit();
 
 $dbh->disconnect();
