@@ -3,7 +3,7 @@
 	title="Unforgettable"
 	composer="Irving Gordon"
 	poet="Irving Gordon"
-	copyright="Copyright (c) 1951 Bourne Co. Copyright Renewed."
+	copyright="1951, Bourne Co."
 	style="Jazz"
 	piece="Mederately"
 	remark="copied from the fake book"

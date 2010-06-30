@@ -3,7 +3,7 @@
 	title="Corcovado"
 	subtitle="quiet nights of quiet stars"
 	composer="Antonio Carlos Jobim"
-	copyright="1959 Editora Musical Arapua, Brazil"
+	copyright="1959, Editora Musical Arapua, Sao Paulo, Brazil"
 	style="Jazz"
 	piece="Med Swing"
 }
