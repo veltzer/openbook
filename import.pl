@@ -57,6 +57,9 @@ sub get_meta_data($) {
 	return $ret;
 }
 
+#get_meta_data('test.ly');
+#die("end of debug");
+
 sub handler() {
 	my($file)=$File::Find::name;
 	if($file=~/\.ly$/) {
