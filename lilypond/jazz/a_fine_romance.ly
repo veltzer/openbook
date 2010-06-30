@@ -1,7 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="A Fine Romance"
-	subtitle=""
 	composer="Jerome Kern"
 	poet="Dorothy Fields"
 	style="Jazz"

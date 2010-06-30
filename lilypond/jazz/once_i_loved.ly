@@ -1,7 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="Once I Loved"
-	subtitle=""
 	composer="Antonio Carlos Jobim"
 	poet="Vinicius DeMoraes"
 	style="Jazz"

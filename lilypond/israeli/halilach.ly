@@ -1,9 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="Kama Yafe Poreach Halilach"
-	subtitle=""
-	composer=""
-	singer=""
 	style="Israeli"
 	piece="Med. Ballad"
 }

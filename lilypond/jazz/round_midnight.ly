@@ -1,7 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="Round Midnight"
-	subtitle=""
 	composer="Cootie Williams & Thelonious Monk"
 	poet="Bernie Hanighen"
 	style="Jazz"

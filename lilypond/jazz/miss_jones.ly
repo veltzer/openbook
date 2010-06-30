@@ -1,7 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="Have you met Miss Jones"
-	subtitle=""
 	composer="Richard Rogers"
 	poet="Lorenz Hart"
 	style="Jazz"

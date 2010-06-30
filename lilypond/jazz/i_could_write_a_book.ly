@@ -1,7 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="I could write a book"
-	subtitle=""
 	composer="Richard Rodgers"
 	poet="Lorenz Hart"
 	style="Jazz"

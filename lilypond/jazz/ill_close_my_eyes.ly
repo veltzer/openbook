@@ -1,9 +1,7 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="I'll Close My Eyes"
-	subtitle=""
 	composer="Blue Mitchell"
-	copyright="[no copyright notice]"
 	style="Jazz"
 	piece="Med Swing"
 }

@@ -1,7 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="It might as well be spring"
-	subtitle=""
 	composer="Richard Rogers"
 	poet="Oscar Hammerstein"
 	style="Jazz"

@@ -1,8 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="Jazz Bass line for Blues in F"
-	subtitle=""
-	composer=""
 	style="Jazz"
 	piece="Upbeat Jazz Blues"
 }

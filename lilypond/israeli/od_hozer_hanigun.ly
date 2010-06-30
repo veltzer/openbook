@@ -1,8 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="Od hozer hanigun"
-	subtitle=""
-	composer=""
 	singer="Berry Saharof"
 	style="Pop"
 	piece="Med. Ballad"

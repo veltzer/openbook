@@ -1,7 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="My Little Suede Shoes"
-	subtitle=""
 	composer="Charlie Parker"
 	style="Jazz"
 	piece="Med Swing"

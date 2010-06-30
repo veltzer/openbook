@@ -1,7 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="Afternoon in Paris"
-	subtitle=""
 	composer="John Lewis"
 	style="Jazz"
 	piece="Swing"

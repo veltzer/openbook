@@ -1,7 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="Lullaby of birdland"
-	subtitle=""
 	composer="George Shearing"
 	style="Jazz"
 	piece="Med Swing"
