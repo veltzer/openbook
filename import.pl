@@ -12,6 +12,8 @@ use DBI;
 use Error qw(:try);
 use File::Find qw();
 use File::Basename qw();
+#use File::Slurp qw();
+use Perl6::Slurp qw();
 
 my($debug)=1;
 
@@ -26,12 +28,6 @@ sub handle_error() {
 	throw Error::Simple($str.",".$rv.",".$rv);
 }
 $dbh->{HandleError} =\&handle_error;
-
-# gulp down an entire file...
-sub read_file($) {
-	my($file)=$_[0];
-	return "foo";
-}
 
 sub get_meta_data($) {
 	my($file)=$_[0];
@@ -48,8 +44,8 @@ sub handler() {
 		my($source)=$file;
 		my($name,$path,$suffix)=File::Basename::fileparse($source,".ly");
 		my($pdf)=$path.$name.".pdf";
-		my($dt_source)=read_file($source);
-		my($dt_pdf)=read_file($pdf);
+		my($dt_source)=Perl6::Slurp::slurp($source);
+		my($dt_pdf)=Perl6::Slurp::slurp($pdf);
 		if($debug) {
 			print "file is $file\n";
 			print "name is $name\n";
@@ -64,7 +60,7 @@ sub handler() {
 
 $dbh->do("delete from TbMsLilypond",undef);
 $dbh->do("alter table TbMsLilypond AUTO_INCREMENT=1",undef);
-File::Find::find(\&handler,".");
+File::Find::find({"no_chdir"=>1,"wanted"=>\&handler},".");
 
 # now commit all the changes...
 $dbh->commit();
