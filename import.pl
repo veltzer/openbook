@@ -75,7 +75,18 @@ sub handler() {
 			print "pdf is $pdf\n";
 		}
 		my($hash)=get_meta_data($file);
-		$dbh->do("insert into TbMsLilypond (source,pdf) values(?,?)",undef,$dt_source,$dt_pdf);
+		$dbh->do("insert into TbMsLilypond (source,pdf,title,subtitle,composer,copyright,style,piece,poet) values(?,?,?,?,?,?,?,?,?)",
+			undef,
+			$dt_source,
+			$dt_pdf,
+			$hash->{"title"},
+			$hash->{"subtitle"},
+			$hash->{"composer"},
+			$hash->{"copyright"},
+			$hash->{"style"},
+			$hash->{"piece"},
+			$hash->{"poet"}
+		);
 	}
 }
 
