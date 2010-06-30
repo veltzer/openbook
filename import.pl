@@ -1,4 +1,5 @@
 #!/usr/bin/perl -w
+#!/usr/bin/env perl
 
 # this script imports all of my lilypond sources, targets and meta data (extracted
 # from the lilypond files themselves) into my database (into a lilypond table).
@@ -12,8 +13,8 @@ use DBI;
 use Error qw(:try);
 use File::Find qw();
 use File::Basename qw();
-#use File::Slurp qw();
 use Perl6::Slurp qw();
+use Parse::RecDescent qw();
 
 my($debug)=1;
 
@@ -29,11 +30,31 @@ sub handle_error() {
 }
 $dbh->{HandleError} =\&handle_error;
 
+my($grammer);
+$grammer=Perl6::Slurp::slurp("lilypond.grammer");
+#print "grammer is $grammer";
+$::RD_HINT=1;
+$::RD_WARN=1;
+#$::RD_TRACE=1;
+my($parser)=Parse::RecDescent->new($grammer);;
+#my($data);
+#$data=Perl6::Slurp::slurp('lilypond/israeli/zarot_gdolot.ly');
+#if(!$parser->lilyfile($data)) {
+#	print "ERROR!\n";
+#}
+#die("end of debug code");
+
 sub get_meta_data($) {
 	my($file)=$_[0];
 	if($debug) {
 		print "meta file is $file\n";
 	}
+	my($data);
+	$data=Perl6::Slurp::slurp($file);
+	if(!$parser->lilyfile($data)) {
+		print "ERROR!\n";
+	}
+
 	my($hash)={};
 	return $hash;
 }
@@ -44,8 +65,10 @@ sub handler() {
 		my($source)=$file;
 		my($name,$path,$suffix)=File::Basename::fileparse($source,".ly");
 		my($pdf)=$path.$name.".pdf";
-		my($dt_source)=Perl6::Slurp::slurp($source);
-		my($dt_pdf)=Perl6::Slurp::slurp($pdf);
+		my($dt_source);
+		$dt_source=Perl6::Slurp::slurp($source);
+		my($dt_pdf);
+		$dt_pdf=Perl6::Slurp::slurp($pdf);
 		if($debug) {
 			print "file is $file\n";
 			print "name is $name\n";

@@ -1,0 +1,17 @@
+lilyfile: section(s)
+section: comment | header | include | block1 | block2 | block3 | block4 | block5 | score
+include: '\include' any
+header: '\header' '{' assignment(s) '}'
+assignment: var '=' '"' value '"'
+
+comment: '%' any
+block1: 'harmony=\chords' '{' any '}'
+block2: 'tune=' '{' any '}'
+block3: 'text=\lyricmode' '{' any '}'
+block4: '\chordmode' '{' any '}'
+block5: 'harmony=\new ChordNames \with' '{' any '}'
+
+score: '\score=' '{' any '}'
+var: /[A-Za-z0-9_]+/
+value: /[\.@\Ã©A-ZÂé©\\\\a-z0-9 _,()&]*/
+any: /.*/
