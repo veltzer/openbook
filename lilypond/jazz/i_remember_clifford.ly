@@ -1,7 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="I Remember Clifford"
-	subtitle=""
 	composer="Benny Golson"
 	style="Jazz"
 	piece="Med Swing"

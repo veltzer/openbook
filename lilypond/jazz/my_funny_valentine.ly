@@ -1,7 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="My Funny Valentine"
-	subtitle=""
 	composer="Richard Rodgers"
 	poet="Lorenz Hart"
 	style="Jazz"

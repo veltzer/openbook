@@ -1,7 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="Hallelujah I Love Him(her) So"
-	subtitle=""
 	composer="Ray Charles"
 	style="blues"
 	piece="Med Swing"

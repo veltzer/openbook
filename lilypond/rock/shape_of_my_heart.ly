@@ -1,8 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="Shape of My Heart"
-	subtitle=""
-	composer=""
 	singer="Sting"
 	style="Pop"
 	piece="Med. Ballad"

@@ -1,7 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="A Foggy Day"
-	subtitle=""
 	composer="George Gershwin"
 	style="Jazz"
 	piece="Med Swing"

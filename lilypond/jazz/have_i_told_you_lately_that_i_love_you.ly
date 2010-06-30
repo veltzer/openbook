@@ -1,8 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="Have I told you lately that I love you"
-	subtitle=""
-	composer=""
 	singer="Van Morrison"
 	style="Pop"
 	piece="Med. Ballad"

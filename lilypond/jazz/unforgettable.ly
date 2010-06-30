@@ -1,7 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="Unforgettable"
-	subtitle=""
 	composer="Irving Gordon"
 	poet="Irving Gordon"
 	copyright="Copyright (c) 1951 Bourne Co. Copyright Renewed."

@@ -4,7 +4,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="צרות טובות"
-	subtitle=""
 	composer="שלום חנוך"
 	singer="שלום חנוך"
 	poet="שמרית אור"

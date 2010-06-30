@@ -1,9 +1,7 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="Summertime"
-	subtitle=""
 	composer="George Gershwin"
-	copyright="[% lily_copyright %]"
 	style="Jazz"
 	piece="Med Swing"
 }

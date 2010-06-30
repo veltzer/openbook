@@ -1,7 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="Watermelon Man"
-	subtitle=""
 	composer="Herbie Hancock"
 	style="Jazz"
 	piece="Med Swing"

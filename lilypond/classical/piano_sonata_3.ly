@@ -1,7 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="Sonata III"
-	subtitle=""
 	composer="Wolfgang Amadeus Mozart"
 	copyright="1918, by G.Schirmer, Inc."
 	style="Classical"

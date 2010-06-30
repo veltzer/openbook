@@ -1,7 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="Foolish Heart"
-	subtitle=""
 	composer="Victor Young"
 	poet="Ned Washington"
 	style="Jazz"

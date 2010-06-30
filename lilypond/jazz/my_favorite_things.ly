@@ -1,7 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="My Favorite Things"
-	subtitle=""
 	composer="Richard Rodgers"
 	poet="Oscar Hammerstein"
 	style="Jazz"

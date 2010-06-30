@@ -1,7 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="Chanson des faucheurs"
-	subtitle=""
 	composer="R. Schumann"
 	style="Jazz"
 	piece="Med Swing"

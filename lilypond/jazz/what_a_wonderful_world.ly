@@ -1,7 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="What a wonderful world"
-	subtitle=""
 	composer="George David Weiss & Bob Thiele"
 	poet="George David Weiss & Bob Thiele"
 	style="Jazz"

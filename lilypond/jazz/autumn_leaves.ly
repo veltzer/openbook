@@ -5,7 +5,6 @@
 %}
 \header {
 	title="Autumn Leaves"
-	subtitle=""
 	composer="Joseph Kosma"
 	poet="Jacques Prevert"
 	style="Jazz"

@@ -1,7 +1,6 @@
 \include "lilypond/include/common.lyi"
 \header {
 	title="Nature Boy"
-	subtitle=""
 	composer="Eben Ahbez"
 	style="Jazz"
 	note="7th bar of letters A and B were originally 2 bars each. Melody is straight eights, though rather freely interpreted rhythmically."
