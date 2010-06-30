@@ -3,7 +3,7 @@
 	title="Desafinado"
 	subtitle="Slightly Out Of Tune"
 	composer="Antonio Carlos Jobim"
-	copyright="1959 editora musical arapua, brazil"
+	copyright="1959, Editora Musical Arapua, Sao Paulo, Brazil"
 	style="Jazz"
 	piece="Med Swing"
 }

@@ -37,7 +37,6 @@ $::RD_HINT=1;
 $::RD_WARN=1;
 #$::RD_TRACE=1;
 #$Parse::RecDescent::skip='[ \v\t\n]*';
-my($parser)=Parse::RecDescent->new($grammer);;
 
 sub get_meta_data($) {
 	my($file)=$_[0];
@@ -46,6 +45,7 @@ sub get_meta_data($) {
 	}
 	my($data);
 	$data=Perl6::Slurp::slurp($file);
+	my($parser)=Parse::RecDescent->new($grammer);;
 	my($ret)=$parser->lilyfile(\$data);
 	if(!$ret) {
 		die("ERROR!");

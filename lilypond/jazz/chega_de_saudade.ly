@@ -3,7 +3,7 @@
 	title="Chega De Saudade"
 	subtitle="No More Blues"
 	composer="Antonio Carlos Jobim"
-	copyright="1962,1967 Editora Musical Arapua, Sao Paulo, Brazil"
+	copyright="1962,1967, Editora Musical Arapua, Sao Paulo, Brazil"
 	style="Jazz"
 	piece="Med Swing"
 }

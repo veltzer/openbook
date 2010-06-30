@@ -2,7 +2,7 @@
 \header {
 	title="Sonata III"
 	composer="Wolfgang Amadeus Mozart"
-	copyright="1918, by G.Schirmer, Inc."
+	copyright="1918, G.Schirmer Inc."
 	style="Classical"
 	remark="Edited, revised and fingered by Richard Epstein"
 }
