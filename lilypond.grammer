@@ -1,17 +1,24 @@
+{ my($hash)={}; }
 lilyfile: section(s)
-section: comment | header | include | block1 | block2 | block3 | block4 | block5 | score
-include: '\include' any
-header: '\header' '{' assignment(s) '}'
+{
+	$hash;
+}
+section: comment | header | include | block
+include: '\include' '"' filename '"'
+header: '\header' '{' assignment(s?) '}'
 assignment: var '=' '"' value '"'
-
-comment: '%' any
-block1: 'harmony=\chords' '{' any '}'
-block2: 'tune=' '{' any '}'
-block3: 'text=\lyricmode' '{' any '}'
-block4: '\chordmode' '{' any '}'
-block5: 'harmony=\new ChordNames \with' '{' any '}'
-
-score: '\score=' '{' any '}'
+{
+	my($key)=$item[1];
+	my($val)=$item[4];
+	$hash->{$key}=$val;
+}
+comment: '%' anyoneline 
+# this is the inner stuff (no { or })
+block: before_block '{' block(s) '}' | statement(s?)
+statement: /[^{}\n]*\n/
+before_block: 'harmony=\chords' | 'tune=' | 'text=\lyricmode' | '\chordmode' | 'harmony=\new ChordNames \with' | '\score' | '\repeat volta 2' | '\midi' | '\layout'
 var: /[A-Za-z0-9_]+/
-value: /[\.@\Ã©A-ZÂé©\\\\a-z0-9 _,()&]*/
-any: /.*/
+filename: /[A-Za-z0-9_\/\.]+/
+anyoneline: /[A-Za-z0-9_\/\.]+/
+value: /[^"]*/
+any: /[.\n]*/

@@ -36,13 +36,8 @@ $grammer=Perl6::Slurp::slurp("lilypond.grammer");
 $::RD_HINT=1;
 $::RD_WARN=1;
 #$::RD_TRACE=1;
+#$Parse::RecDescent::skip='[ \v\t\n]*';
 my($parser)=Parse::RecDescent->new($grammer);;
-#my($data);
-#$data=Perl6::Slurp::slurp('lilypond/israeli/zarot_gdolot.ly');
-#if(!$parser->lilyfile($data)) {
-#	print "ERROR!\n";
-#}
-#die("end of debug code");
 
 sub get_meta_data($) {
 	my($file)=$_[0];
@@ -51,12 +46,15 @@ sub get_meta_data($) {
 	}
 	my($data);
 	$data=Perl6::Slurp::slurp($file);
-	if(!$parser->lilyfile($data)) {
-		print "ERROR!\n";
+	my($ret)=$parser->lilyfile(\$data);
+	if(!$ret) {
+		die("ERROR!");
 	}
-
-	my($hash)={};
-	return $hash;
+	# check that there is no more data which is not parsed...
+	if($data!~/^\s*/) {
+		die("rest of data is [$data]");
+	}
+	return $ret;
 }
 
 sub handler() {
