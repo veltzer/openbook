@@ -26,4 +26,4 @@ harmony=\chords {
 %}
 }
 
-\include "src/include/harmony_only.lyi"
+\include "src/include/harmony.lyi"
