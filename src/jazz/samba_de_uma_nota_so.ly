@@ -1,11 +1,12 @@
 \include "src/include/common.lyi"
 \header{
-	title="One note samba"
+	title="One Note Samba"
 	subtitle="Samba de uma nota so"
 	composer="Antonio Carlos Jobim"
-	copyright="1959, Editora Musical Arapua, Sao Paulo, Brazil"
+	poet="Newton Mendonca"
+	copyright="1961 1962, Antonio Carlos Jobim and Mrs. Mendonca"
 	style="Jazz"
-	piece="Med Swing"
+	piece="Samba"
 }
 
 tune={
@@ -97,12 +98,4 @@ text=\lyrics {
 	Bet -- ter play ___ the note ___ you know. ___
 }
 
-\score {
-	<<
-		\context ChordNames \harmony
-		\context Staff \tune
-		\context Lyrics \text
-	>>
-	\midi {}
-	\layout {}
-}
+\include "src/include/harmony_tune_lyrics.lyi"

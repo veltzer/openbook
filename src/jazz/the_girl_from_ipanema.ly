@@ -1,12 +1,18 @@
 \include "src/include/common.lyi"
 \header {
 	title="The Girl From Ipanema"
-	subtitle="garota de ipanema"
+	subtitle="Garota De Ipanema"
 	composer="Antonio Carlos Jobim"
-	copyright="1959, Editora Musical Arapua, Sao Paulo, Brazil"
+	copyright="1963, Antonio Carlos Jobim and Vincius De Moraes, Brazil"
 	style="Jazz"
 	piece="Med Swing"
+	poet="Vincius De Moraes, Norman Gimbel"
 }
+
+%{
+	TODO
+		- the intro does not show
+%}
 
 tune={
 	\time 4/4
@@ -14,7 +20,7 @@ tune={
 	\clef treble
 
 	% intro
-	R1 * 4 \bar "||"
+	%R1 * 4 \bar "||"
 
 	{
 	g'4. e'8 e'4 d'8 g' ~ |
@@ -53,10 +59,6 @@ tune={
 	\bar "|."
 }
 
-intro=\chords {
-	f1:6.9 | c2:m7 c:m6 | f1:6.9 | c2:m7 c:m6
-}
-
 text=\lyrics {
 Tall and tan and young ___ and love ___ -- ly
 the girl ___ from I -- pa -- ne ___ -- ma goes walk ___ -- ing
@@ -71,31 +73,24 @@ How ___ ___ can I tell her I love her? ___
 Yes, ___ ___ I would give my heart glad -- ly. ___
 }
 
+intro=\chords {
+	f1:6.9 | c2:m7 c:m6 | f1:6.9 | c2:m7 c:m6 |
+}
+
 harmony=\chords {
-	% 1
-	f1*2:maj9 | g1*2:13 | g1:m7 | ges:7.5- | f:maj7 | ges:7 |
-	% 9
-	f1*2:maj9 | g1*2:13 | g1:m7 | ges:7.5- | f1*2:maj7 |
-	% 17
-	ges1*2:maj7 | ces:9 | fis:m9 | d:9 |
-	g1*2:m9 | ees:9 | a1:m7 | d:7.9-.11+ | g:m7 | c:7.9-.11+ |
-	% 33
-	f1*2:maj9 | g:13 | g1:m9 | ges:7.5- | f:maj7 | ges:7.5- |
-% 41
-
+	\mark "A"
+	f1:maj9 | r1 | g1:13 | r1 | \break
+	g1:m7 | ges:7.5- | f:maj7 | ges:7 \bar "||" \break
+	\mark "A"
+	f1:maj9 | r1 | g1:13 | r1 |
+	g1:m7 | ges:7.5- | f1:maj7 | r1 \bar "||" \break
+	\mark "B"
+	ges1:maj7 | r1 | ces1:9 | fis1:m9 |
+	d1:9 | g1:m9 | r1 | ees1:9 |
+	a1:m7 | d1:7.9-.11+ | g1:m7 | c1:7.9-.11+ \bar "||" \break
+	\mark "A"
+	f1:maj9 | r1 | g1:13 | r1 |
+	g1:m9 | ges:7.5- | f:maj7 | ges:7.5- \bar "||" \break
 }
 
-\score {
-	{
-		<<
-			\context ChordNames \intro
-		>>
-		<<
-			\context ChordNames \harmony
-			\context Staff \tune
-			\context Lyrics \text
-		>>
-	}
-	\midi {}
-	\layout {}
-}
+\include "src/include/harmony_tune_lyrics.lyi"

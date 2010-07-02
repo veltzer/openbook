@@ -57,7 +57,6 @@ tune={
 	e'4. d'8 cis'4 d' |
 	e'4. b8 e'2 ~ |
 	e' r | \break
-\mark "D"
 	r8 e'4 fis'8 gis'4 a' |
 	b'4. a'8 cis'4 d' |
 	e'8 fis' e' fis' e'2 ~ |
@@ -70,7 +69,7 @@ tune={
 	c''4. bes'8 a'4 bes' |
 	g'1 ~ |
 	g'4 r r2 | \break
-\mark "E"
+\mark "D"
 	r8 c'4 d'8 e'4 f' |
 	e'4. d'8 cis'4 d' |
 	f'4. des'8 des'2 ~ |
@@ -101,11 +100,11 @@ harmony=\chords {
 	g1:m7 | bes1:m | a1:m7 | b2:m7.5- e2:9+ \bar "||"
 	a1:maj7 | bes1:dim | b1:m11 | e1:7 |
 	a1:maj7 | bes1:dim | b1:m11 | e1:7 |
-	a1:maj7 | fis1:m7 | b1:m11 | e1:7 \bar "||"
-	c1:maj7 | cis1:dim | d1:m11 | g1:7 | g1:m7 | fis1:m7 | g1:7 | c1:7 \bar "||"
+	a1:maj7 | fis1:m7 | b1:m11 | e1:7 |
+	c1:maj7 | cis1:dim | d1:m11 | g1:7 |
+	g1:m7 | fis1:m7 | g1:7 | c1:7 \bar "||"
 	f1:maj7 | r1 | g1:7.5- | r1 | g1:m7 | c1:7 | a1:m7.5- | d1:9- |
-	g1:m7 | bes1:m | a1:m7 | aes1:dim |
-	g1:7 | r1 | bes1:m7 | ees1:9 |
+	g1:m7 | bes1:m | a1:m7 | aes1:dim | g1:7 | r1 | bes1:m7 | ees1:9 |
 	g1:7 | g2:m7 c2:9+ | f1:6.9 | r1 \bar "|."
 }
 
