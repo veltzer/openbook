@@ -2,18 +2,21 @@ ALL:=
 CLEAN:=
 
 LY:=$(shell find . -name "*.ly")
-PDF:=$(addsuffix .pdf,$(basename $(LY)))
 LYD:=$(addsuffix .d,$(LY))
-ALL:=$(ALL) $(PDF) $(LYD)
-CLEAN:=$(CLEAN) $(PDF) $(LYD)
+PDF:=$(addsuffix .pdf,$(basename $(LY)))
+PNG:=$(addsuffix .png,$(basename $(LY)))
+ALL:=$(ALL) $(LYD) $(PDF) $(PNG)
+CLEAN:=$(CLEAN) $(LYD) $(PDF) $(PNG)
 
 .PHONY: all
 all: $(ALL)
 
 .PHONY: debug
 debug:
-	$(info TEMP is $(TEMP))
 	$(info LY is $(LY))
+	$(info LYD is $(LYD))
+	$(info PDF is $(PDF))
+	$(info PNG is $(PNG))
 
 .PHONY: clean
 clean:
@@ -54,6 +57,9 @@ check_empty_copyright:
 # rule about how to create .pdf files from .ly files
 $(PDF): %.pdf: %.ly
 	lilypond -o $(basename $@) $<
+	rm -f $(basename $@).ps $(basename $@).midi
+$(PNG): %.png: %.ly
+	lilypond --png -o $(basename $@) $<
 	rm -f $(basename $@).ps $(basename $@).midi
 $(LYD): %.ly.d: %.ly
 	./lilydep.pl $< $@ $(basename $<).pdf $(basename $<).ps $(basename $<).midi

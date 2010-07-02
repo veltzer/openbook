@@ -5,6 +5,5 @@ Info addition
 - add "todo" in all the pieces in the same style.
 - add "completion level" in all the pieces. define completion levels and mark them out.
 - add "tags" header in all the pieces (jazz, swing, bossa etc...).
-- once include folder is added add include dependency analysis script and hook it into
-	the makefile.
-- create midi,ps and jpegs also (multi rules in the makefile ?!?)
+- create jpegs and post them on the website.
+- create midi,ps (multi rules in the makefile ?!?)
