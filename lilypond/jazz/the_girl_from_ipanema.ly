@@ -73,14 +73,14 @@ Yes, ___ ___ I would give my heart glad -- ly. ___
 
 harmony=\chords {
 	% 1
-	f1*2:maj9 | g1*2:13 | g1:m7 | ges:7.5- | f:maj | ges:7 |
+	f1*2:maj9 | g1*2:13 | g1:m7 | ges:7.5- | f:maj7 | ges:7 |
 	% 9
-	f1*2:maj9 | g1*2:13 | g1:m7 | ges:7.5- | f1*2:maj |
+	f1*2:maj9 | g1*2:13 | g1:m7 | ges:7.5- | f1*2:maj7 |
 	% 17
-	ges1*2:maj | ces:9 | fis:m9 | d:9 |
+	ges1*2:maj7 | ces:9 | fis:m9 | d:9 |
 	g1*2:m9 | ees:9 | a1:m7 | d:7.9-.11+ | g:m7 | c:7.9-.11+ |
 	% 33
-	f1*2:maj9 | g:13 | g1:m9 | ges:7.5- | f:maj | ges:7.5- |
+	f1*2:maj9 | g:13 | g1:m9 | ges:7.5- | f:maj7 | ges:7.5- |
 % 41
 
 }

@@ -1,12 +1,20 @@
 ALL:=
 CLEAN:=
 
+DO_PNG:=0
+
 LY:=$(shell find . -name "*.ly")
 LYD:=$(addsuffix .d,$(LY))
 PDF:=$(addsuffix .pdf,$(basename $(LY)))
 PNG:=$(addsuffix .png,$(basename $(LY)))
 ALL:=$(ALL) $(LYD) $(PDF) $(PNG)
+ifeq ($(DO_PNG),1)
+	ALL:=$(ALL) $(PNG)
+endif
 CLEAN:=$(CLEAN) $(LYD) $(PDF) $(PNG)
+ifeq ($(DO_PNG),1)
+	CLEAN:=$(CLEAN) $(PNG)
+endif
 
 .PHONY: all
 all: $(ALL)
@@ -24,6 +32,9 @@ clean:
 .PHONY: clean_deps
 clean_deps:
 	rm -f $(LYD)
+.PHONY: clean_all_png
+clean_all_png:
+	-find . -name "*.png" -exec rm {} \;
 
 # checks
 

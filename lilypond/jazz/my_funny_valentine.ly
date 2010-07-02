@@ -10,18 +10,18 @@
 harmony=\chords {
 	\repeat unfold 2 {
 		c1:m7 | c:m7/+b | c:m7/bes | a:m7.5- |
-		aes:maj | f:m7 |
+		aes:maj7 | f:m7 |
 	}
 	\alternative {
 		{ d:m7.5- | g:7 | }
 		{ f:m7.5- | bes:7.9-}
 	}
-	\repeat unfold 4 { ees2:maj f:m7/+bes | }
+	\repeat unfold 4 { ees2:maj7 f:m7/+bes | }
 	
-	ees2:maj g:7 | c:m7 bes:m7 | aes1:maj | d2:m7.5- g:7 |
+	ees2:maj7 g:7 | c:m7 bes:m7 | aes1:maj7 | d2:m7.5- g:7 |
 	c1:m7 | c:m7/+b | c:m7/bes | a:m7.5- |
-	aes:maj | d2:m7.5- g:7 | c:m7 f:7.9- | bes:m7 ees:7.9- |
-	aes1:maj | f2:m7 bes:7 | ees1:maj | d2:m7.5- g:7 |
+	aes:maj7 | d2:m7.5- g:7 | c:m7 f:7.9- | bes:m7 ees:7.9- |
+	aes1:maj7 | f2:m7 bes:7 | ees1:maj7 | d2:m7.5- g:7 |
 }
 
 tune=\relative a {

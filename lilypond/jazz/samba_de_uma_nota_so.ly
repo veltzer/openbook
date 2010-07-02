@@ -67,10 +67,10 @@ tune={
 harmony=\chords {
 	\partial 4. r4. |
 	d1:m7 | des:7 | c:m11 | b:7.5- | d:m7 | des:7 | c:m7 | b:7.5- |
-	f:m7 | e:7.5- | ees:maj | aes:9 | d4.:m7 des2:7 c8:m11 | r1 | b:7.5- bes:6 |
-	ees:m7 | aes:7 | des4.:maj des2:6 r8 | des4.:maj des2:6 r8 | des1:m7 | des:7 | ces:maj |
+	f:m7 | e:7.5- | ees:maj7 | aes:9 | d4.:m7 des2:7 c8:m11 | r1 | b:7.5- bes:6 |
+	ees:m7 | aes:7 | des4.:maj7 des2:6 r8 | des4.:maj7 des2:6 r8 | des1:m7 | des:7 | ces:maj7 |
 	c4.:m7.5- b2:7.5- r8 | d1:m7 | des:7 | c:m7 | b:7.5- | d:m7 | des:7 | c:m7 | b:7.5- |
-	f:m7 | e:7.5- | ees:maj | aes:9 | des2.:6 r8 c:7 | r2. ces1:maj r8 bes1:6 r8 |
+	f:m7 | e:7.5- | ees:maj7 | aes:9 | des2.:6 r8 c:7 | r2. ces1:maj7 r8 bes1:6 r8 |
 }
 
 text=\lyrics {
