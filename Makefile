@@ -3,6 +3,7 @@ CLEAN:=
 
 LY:=$(shell find . -name "*.ly")
 PDF:=$(addsuffix .pdf,$(basename $(LY)))
+LYD:=$(addsuffix .d,$(LY))
 ALL:=$(ALL) $(PDF)
 CLEAN:=$(CLEAN) $(PDF)
 
@@ -51,3 +52,5 @@ check_empty_copyright:
 $(PDF): %.pdf: %.ly
 	lilypond -o $(basename $@) $<
 	rm -f $(basename $@).ps $(basename $@).midi
+$(LYD): %.ly.d: %.ly
+	./lilydep.pl $< $@
