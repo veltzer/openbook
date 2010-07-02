@@ -4,8 +4,8 @@ CLEAN:=
 LY:=$(shell find . -name "*.ly")
 PDF:=$(addsuffix .pdf,$(basename $(LY)))
 LYD:=$(addsuffix .d,$(LY))
-ALL:=$(ALL) $(PDF)
-CLEAN:=$(CLEAN) $(PDF)
+ALL:=$(ALL) $(PDF) $(LYD)
+CLEAN:=$(CLEAN) $(PDF) $(LYD)
 
 .PHONY: all
 all: $(ALL)
@@ -18,6 +18,9 @@ debug:
 .PHONY: clean
 clean:
 	rm -rf $(CLEAN)
+.PHONY: clean_deps
+clean_deps:
+	rm -f $(LYD)
 
 # checks
 
@@ -54,3 +57,6 @@ $(PDF): %.pdf: %.ly
 	rm -f $(basename $@).ps $(basename $@).midi
 $(LYD): %.ly.d: %.ly
 	./lilydep.pl $< $@
+
+# include the deps files (no warnings)
+-include $(LYD)
