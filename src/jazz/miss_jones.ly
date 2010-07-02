@@ -35,4 +35,4 @@ tune=\relative a' {
 	a4 d, c d | c2. r4 | d e f g | a bes c d | e1 ~ | e4 d a g | f1 | r \bar "|."
 }
 
-\include "src/include/harmony_and_tune.lyi"
+\include "src/include/harmony_tune.lyi"

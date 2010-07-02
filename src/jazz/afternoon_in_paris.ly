@@ -54,4 +54,4 @@ tune={
 	g''2. e''8 g''8 \bar "||"
 }
 
-\include "src/include/harmony_and_tune.lyi"
+\include "src/include/harmony_tune.lyi"

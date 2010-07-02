@@ -57,4 +57,4 @@ tune=\relative e' {
 	g2. ~ | g2. ~ | g2. ~ | g4 r2 \bar "|."
 }
 
-\include "src/include/harmony_and_tune.lyi"
+\include "src/include/harmony_tune.lyi"

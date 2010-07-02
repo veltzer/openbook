@@ -37,4 +37,4 @@ tune=\relative g' {
 	}
 }
 
-\include "src/include/harmony_and_tune.lyi"
+\include "src/include/harmony_tune.lyi"
