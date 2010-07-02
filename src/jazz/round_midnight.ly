@@ -65,4 +65,4 @@ tune={
 
 }
 
-\include "src/include/harmony_and_tune.lyi"
+\include "src/include/harmony_tune.lyi"

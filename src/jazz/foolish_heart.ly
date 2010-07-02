@@ -40,4 +40,4 @@ harmony=\chords {
 	bes2:maj7 g2:m7 | ges2:maj7 f2:7 |
 }
 
-\include "src/include/harmony_and_tune.lyi"
+\include "src/include/harmony_tune.lyi"
