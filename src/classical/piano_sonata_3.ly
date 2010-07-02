@@ -31,4 +31,4 @@ tune={
 	}
 }
 
-\include "src/include/tune_only.lyi"
+\include "src/include/tune.lyi"
