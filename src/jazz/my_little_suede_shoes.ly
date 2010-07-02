@@ -13,7 +13,7 @@ tune=\relative c' {
 	\key ees \major
 	\time 4/4
 	\partial 4. bes8 ees g |
-	
+
 	\repeat volta 2 {
 		f f f f ees f r g | r2 r8 \B r2 r8 \A
 		r bes4. a4 aes | g8 g g g f f r ees |

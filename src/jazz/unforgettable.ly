@@ -33,7 +33,7 @@ tune={
 	g'4 a'4 a'4 g'4 | g'4 a'8 b'4 a'8 g'4 |
 	e'4 e'4 a'4 e'4 ~ | e'2. f'4 |
 	fis'4 fis'4 c''4 fis'4 ~ | fis'2. r4 |
-	
+
 	d'4 e'4 e'8 fis'4 fis'8 ~ | fis'2 \times 2/3 { d'4 e'4 g'4 } |
 	fis'1 ~ | fis'2. r4 |
 	g'4 a'4 a'8 b'4 b'8 ~ | b'2 \times 2/3 { g'4 a'4 c''4 } |
