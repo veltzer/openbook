@@ -1,10 +1,17 @@
-{ my($hash)={}; }
+{
+	my($hash)={};
+	my($inc)=[];
+}
 lilyfile: section(s)
 {
+	$hash->{"inc"}=$inc;
 	$hash;
 }
 section: one_line_comment | block_comment | header | include | block
-include: '\include' '"' filename '"'
+include: '\include' '"' filename '"' {
+	my($filename)=$item[3];
+	push(@$inc,$filename);
+}
 header: '\header' '{' assignment(s?) '}'
 assignment: var '=' '"' value '"'
 {
