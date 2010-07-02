@@ -8,7 +8,7 @@ use diagnostics;
 use Perl6::Slurp qw();
 use Parse::RecDescent qw();
 
-my($debug)=1;
+my($debug)=0;
 
 if(@ARGV!=2) {
 	die("usage: infile outfile");
