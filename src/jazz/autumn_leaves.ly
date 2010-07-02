@@ -58,11 +58,4 @@ tune={
 	a'2. g'4 | fis'2 g'4 b4 | e'1 | r4 e'4 fis'4 g'4 \bar "|."
 }
 
-\score {
-	<<
-		\context ChordNames \harmony
-		\context Staff \tune
-	>>
-	\midi {}
-	\layout {}
-}
+\include "src/include/harmony_and_tune.lyi"

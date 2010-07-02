@@ -61,13 +61,4 @@ text=\lyricmode {
 זו על זו וזו על זו..
 }
 
-\score {
-	<<
-		\context ChordNames \harmony
-		\context Lyrics \text
-	>>
-	\midi {
-	}
-	\layout {
-	}
-}
+\include "src/include/harmony_text.lyi"

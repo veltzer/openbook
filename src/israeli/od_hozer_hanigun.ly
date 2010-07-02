@@ -16,10 +16,4 @@ harmony=\chords {
 	g2 d2 | e2:min7 b2:min7 | e2:min7 fis2:7 | g2 a2:7 | \break
 }
 
-\score {
-	<<
-		\context ChordNames \harmony
-	>>
-	\midi {}
-	\layout {}
-}
+\include "src/include/harmony_only.lyi"

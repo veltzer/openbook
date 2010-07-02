@@ -41,11 +41,4 @@ harmony=\chords {
 	g2:7 g:min7 | c1:7 | f2:7 d2:7 | g2:7 c2:7 \bar "||"
 }
 
-\score {
-	<<
-		\context ChordNames \harmony
-		\context Staff \tune
-	>>
-	\midi {}
-	\layout {}
-}
+\include "src/include/harmony_and_tune.lyi"

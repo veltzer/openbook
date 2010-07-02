@@ -31,10 +31,4 @@ tune={
 	}
 }
 
-\score {
-	<<
-		\context Staff \tune
-	>>
-	\midi {}
-	\layout {}
-}
+\include "src/include/tune_only.lyi"

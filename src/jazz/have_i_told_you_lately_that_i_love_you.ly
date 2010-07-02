@@ -21,11 +21,4 @@ text=\lyrics {
 	Take my troubles that's what you do.
 }
 
-\score {
-	<<
-		\context ChordNames \harmony
-		\context Lyrics \text
-	>>
-	\midi {}
-	\layout {}
-}
+\include "src/include/harmony_text.lyi"

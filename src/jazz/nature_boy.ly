@@ -52,12 +52,4 @@ text=\lyrics {
 	just4. to8 love4. and8 | be4 loved2 in8 re-8 | turn.1 | -1 |
 }
 
-\score {
-	<<
-		\context ChordNames \harmony
-		\context Staff \tune
-		\context Lyrics \text
-	>>
-	\midi {}
-	\layout {}
-}
+\include "src/include/harmony_tune_lyrics.lyi"

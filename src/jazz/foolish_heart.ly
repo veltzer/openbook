@@ -40,11 +40,4 @@ harmony=\chords {
 	bes2:maj7 g2:m7 | ges2:maj7 f2:7 |
 }
 
-\score {
-	<<
-		\context ChordNames \harmony
-		\context Staff \tune
-	>>
-	\midi {}
-	\layout {}
-}
+\include "src/include/harmony_and_tune.lyi"

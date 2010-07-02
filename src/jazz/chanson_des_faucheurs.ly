@@ -20,10 +20,4 @@ tune=\relative g'' {
 	g,4 ( c ) b | a ( d ) c | b ( a ) b | c2 r4 \bar "|."
 }
 
-\score {
-	<<
-		\context Staff \tune
-	>>
-	\midi {}
-	\layout {}
-}
+\include "src/include/tune_only.lyi"
