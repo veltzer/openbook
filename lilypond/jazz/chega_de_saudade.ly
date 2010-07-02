@@ -24,7 +24,7 @@ harmony=\chords {
 	d1:m7 | d:m7/c | e1*2:7/b | \break
 	a1*2:7.5+.9- | d1:m7 | e2:m7.5- a:7 | \break
 	d1:m7 | b2:m7.5- e:7 | a1*2:m7 | \break
-	bes1:maj | bes:6 | a1*2:7.9- | \break
+	bes1:maj7 | bes:6 | a1*2:7.9- | \break
 }
 
 

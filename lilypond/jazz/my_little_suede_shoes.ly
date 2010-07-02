@@ -31,16 +31,16 @@ tune=\relative c' {
 harmony=\chords {
 	\partial 4. r4. |
 	\repeat volta 2 {
-		f2:m7 bes:7 | g:m7 c:7 | f:m7 bes:7 | ees:maj c:7 |
+		f2:m7 bes:7 | g:m7 c:7 | f:m7 bes:7 | ees:maj7 c:7 |
 		f:m7 bes:7 | g:m7 c:7.9+.5+ | f:m7 bes:7 |
 	}
-	\alternative { { ees:maj c:7 | } {ees:maj ees:7 } }
+	\alternative { { ees:maj7 c:7 | } {ees:maj7 ees:7 } }
 	\bar "||"
-	aes:maj aes:m7 | g:m7 c:7.9- |
-	f:m7 bes:7 | ees:maj ees:7 | aes aes:m7 | g:m7 c:7.9- |
+	aes:maj7 aes:m7 | g:m7 c:7.9- |
+	f:m7 bes:7 | ees:maj7 ees:7 | aes aes:m7 | g:m7 c:7.9- |
 	f:m7 bes:7 | g:m7 c:7 \bar "||"
-	f:m7 bes:7 | ees:maj c:7 | f:m7 bes:7 | ees:maj c:7 |
-	f:m7 aes:m7 | g:m7 c:7.9+.5+ | f:m7 bes:7 | ees1:maj \bar "||"
+	f:m7 bes:7 | ees:maj7 c:7 | f:m7 bes:7 | ees:maj7 c:7 |
+	f:m7 aes:m7 | g:m7 c:7.9+.5+ | f:m7 bes:7 | ees1:maj7 \bar "||"
 }
 
 \score {

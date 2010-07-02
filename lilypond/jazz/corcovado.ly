@@ -62,17 +62,17 @@ tune={
 
 intro=\chords {
 	r1 | r1 | a:m6 | aes:dim |
-	g:m7 | c2:11 c2:13 | f1:maj | f:m6 |
+	g:m7 | c2:11 c2:13 | f1:maj7 | f:m6 |
 	e:m7 | a:m7 | d:7 | aes:dim \bar "||"
 }
 
 harmony=\chords {
 	% 1
-	d1*2:9 | aes1*2:dim | g1:m7 | c:9 | f:maj | f:6 |
+	d1*2:9 | aes1*2:dim | g1:m7 | c:9 | f:maj7 | f:6 |
 	% 9
 	f:m7 | f:m6 | e:m7 | a:7.5+.9- | d1*2:9 | d1:m9 | g:7 |
 	% 17
-	d1*2:9 | aes1*2:dim | g1:m7 | c:9 | f:maj | f:6 |
+	d1*2:9 | aes1*2:dim | g1:m7 | c:9 | f:maj7 | f:6 |
 	f:m7 | bes:9 | e:m7 | a:m7 | d:m7 | g:7 | e:m7 | a:7.5+.9- |
 	d:m7 | g:7 |
 }
