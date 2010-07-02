@@ -3,22 +3,23 @@
 	title="Desafinado"
 	subtitle="Slightly Out Of Tune"
 	composer="Antonio Carlos Jobim"
-	copyright="1959, Editora Musical Arapua, Sao Paulo, Brazil"
+	copyright="1959 1962, Editora Musical Arapua, Sao Paulo, Brazil"
 	style="Jazz"
-	piece="Med Swing"
+	piece="Medium Bossa Nova"
+	poet="Newton Menonca, Jon Hendricks and Jessie Cavanaugh"
 }
 
 %{
 	TODO:
 	- chords at the end are problematic (don't sync with the melody).
-	- add lyrics and name of poet.
+	- add lyrics.
 %}
 
 tune={
 	\time 4/4
 	\key f \major
 	\clef treble
-	\mark "A"
+\mark "A"
 	r8 c'4 d'8 e'4 f' |
 	e'4. d'8 cis'4 d' |
 	f'4. des'8 des'2 ~ |
@@ -27,7 +28,6 @@ tune={
 	f'4. e'8 dis'4 e' |
 	c''4. ees'8 ees'2 ~ |
 	ees'2. r4 | \break
-	\mark "B"
 	r8 d' c'' bes' a' g'4 bes'8 ~ |
 	bes'4. a'8 dis'4 e' |
 	fis'8 a' fis'2 d'4 |
@@ -36,7 +36,7 @@ tune={
 	aes'4. g'8 f'4 e' |
 	f'4. des'8 des'2 ~ |
 	des' r | \break
-	\mark "C"
+\mark "B"
 	r8 c'4 d'8 e'4 f' |
 	e'4. d'8 cis'4 d' |
 	f'4. des'8 des'2 ~ |
@@ -45,25 +45,24 @@ tune={
 	f'4. e'8 dis'4 e' |
 	c''4. ees'8 ees'2 ~ |
 	ees'2. r4 | \break
-	\mark "D"
 	r8 c''4 bes'8 a' g'4 bes'8 ~ |
 	bes'4. a'8 g'4 f' |
 	g'8 f' g'2. ~ |
 	g'2 r | \break
+\mark "C"
 	e'4 fis' e'8 fis'4 e'8 ~ |
 	e'4. d'8 cis'4 d' |
 	e'1 ~ |
 	e'2 r4 cis' | \break
-	\mark "E"
 	e' fis' e'8 fis'4 e'8 ~ |
 	e'4. d'8 cis'4 d' |
 	e'4. b8 e'2 ~ |
 	e' r | \break
+\mark "D"
 	r8 e'4 fis'8 gis'4 a' |
 	b'4. a'8 cis'4 d' |
 	e'8 fis' e' fis' e'2 ~ |
 	e' r4 e' | \break
-	\mark "F"
 	g' a' g'8 a'4 g'8 ~ |
 	g'4. f'8 e'4 f' |
 	g' d'8 g' ~ g' d' g'4 ~ |
@@ -72,7 +71,7 @@ tune={
 	c''4. bes'8 a'4 bes' |
 	g'1 ~ |
 	g'4 r r2 | \break
-	\mark "G"
+\mark "E"
 	r8 c'4 d'8 e'4 f' |
 	e'4. d'8 cis'4 d' |
 	f'4. des'8 des'2 ~ |
@@ -81,17 +80,15 @@ tune={
 	f'4. e'8 dis'4 e' |
 	d'' des'' c'' b' |
 	bes' d'' r a' | \break
-	\mark "H"
+
 	c''4. b'8 bes'4 a' |
 	bes' a' g' f' |
 	a'2. e'4 |
 	g'2. d'8 e' | \break
-%60
 	f' f' f' f' f'4 f' |
 	r8 d'4 e'8 f'4 f' |
 	f'8 f' f' f' c''4 bes' ~ |
 	bes'2. d'8 e' | \break
-%64
 	f' f' f' f' f'4 e'8 f' ~ |
 	f'4 r8 e' dis'4 e' |
 	g'4. f'8 f'2 ~ |
@@ -99,17 +96,22 @@ tune={
 }
 
 harmony=\chords {
-	f1:maj7 | r1 | g1:7.5- | r1 | g1:m7 | c1:7 | a1:m7.5- | d1:9- \bar "||"
+	f1:maj7 | r1 | g1:7.5- | r1 | g1:m7 | c1:7 | a1:m7.5- | d1:9- |
 	g1:m7 | a1:9- | d1:7 | d1:9- | g1:9- | r1 | ges1:maj7 | r1 \bar "||"
-	f1:maj7 | r1 | g:7.5- | g1:m7 | c:7 | a:m7.5- | d:9- \bar "||"
-	g:m7 | bes:m | a:m7 | b2:m7.5- e:9+ \bar "||"
-	a1:maj7 | bes:dim | b:m11 | e:7
-	a:maj7 | bes:dim | b:m11 | e:7 | a:maj7 | fis:m7 | b:m11 | e:7 \bar "||"
-	c:maj7 | cis:dim | d:m11 | g:7 | g:m7 | fis:m7 | g:7 | c:7 \bar "||"
-	f1*2:maj7 | g1*2:7.5- | g:m7 | c:7 | a:m7.5- | d:9- \bar "||"
-	g:m7 | bes:m | a:m7 | aes:dim \bar "||"
-	g1*2:7 | bes1:m7 | ees:9 |
-	g:7 | g2:m7 c:9+ | f1*2:6.9 |
+	f1:maj7 | r1 | g1:7.5- | r1 | g1:m7 | c1:7 | a1:m7.5- | d1:9- |
+	g1:m7 | bes1:m | a1:m7 | b2:m7.5- e2:9+ \bar "||"
+	a1:maj7 | bes1:dim | b1:m11 | e1:7 |
+	a1:maj7 | bes1:dim | b1:m11 | e1:7 |
+	a1:maj7 | fis1:m7 | b1:m11 | e1:7 \bar "||"
+	c1:maj7 | cis1:dim | d1:m11 | g1:7 | g1:m7 | fis1:m7 | g1:7 | c1:7 \bar "||"
+	f1:maj7 | r1 | g1:7.5- | r1 | g1:m7 | c1:7 | a1:m7.5- | d1:9- |
+	g1:m7 | bes1:m | a1:m7 | aes1:dim |
+	g1:7 | r1 | bes1:m7 | ees1:9 |
+	g1:7 | g2:m7 c2:9+ | f1:6.9 | r1 \bar "|."
 }
 
-\include "lilypond/include/harmony_and_tune.lyi"
+text=\lyrics {
+	Love is like a never ending melody; poets have compared it to a symphony,
+}
+
+\include "lilypond/include/harmony_tune_lyrics.lyi"
