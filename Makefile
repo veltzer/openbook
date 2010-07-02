@@ -64,13 +64,15 @@ check_empty_copyright:
 	-@grep --files-with-match "copyright=\"\"" `find . -name "*.ly"`
 
 # rules
+#
+LYFLAGS=
 
 # rule about how to create .pdf files from .ly files
 $(PDF): %.pdf: %.ly
-	lilypond -o $(basename $@) $<
+	lilypond $(LYFLAGS) -o $(basename $@) $<
 	rm -f $(basename $@).ps $(basename $@).midi
 $(PNG): %.png: %.ly
-	lilypond --png -o $(basename $@) $<
+	lilypond $(LYFLAGS) --png -o $(basename $@) $<
 	rm -f $(basename $@).ps $(basename $@).midi
 $(LYD): %.ly.d: %.ly
 	./lilydep.pl $< $@ $(basename $<).pdf $(basename $<).ps $(basename $<).midi
