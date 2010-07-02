@@ -1,0 +1,7 @@
+\score {
+	<<
+		\context ChordNames \harmony
+	>>
+	\midi {}
+	\layout {}
+}

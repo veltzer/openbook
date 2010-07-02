@@ -49,7 +49,7 @@ check_composer_and:
 	-@grep "composer=\".* and .*\"" `find . -name "*.ly" -or -name "*.lyi"`
 .PHONY: check_ws
 check_ws:
-	-@grep "  " `find . -name "*.ly" -or -name "*.lyi"`
+	-./pgrep.pl "  | $$|\w\t" `find . -name "*.ly" -or -name "*.lyi"`
 .PHONY: check_common
 check_common:
 	-@grep --files-without-match "common.lyi" `find . -name "*.ly"`
@@ -62,6 +62,9 @@ check_no_copyright:
 .PHONY: check_empty_copyright
 check_empty_copyright:
 	-@grep --files-with-match "copyright=\"\"" `find . -name "*.ly"`
+.PHONY: check_score
+check_score:
+	-@grep "\score" `find . -name "*.ly"`
 
 # rules
 #
