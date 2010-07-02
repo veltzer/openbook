@@ -4,5 +4,7 @@ Info addition
 
 - add "todo" in all the pieces in the same style.
 - add "completion level" in all the pieces. define completion levels and mark them out.
+	put them in the database.
+	show them on the php.
 - add "tags" header in all the pieces (jazz, swing, bossa etc...).
 - create midi,ps (multi rules in the makefile ?!?)
