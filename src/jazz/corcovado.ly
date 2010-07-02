@@ -8,6 +8,11 @@
 	piece="Med Swing"
 }
 
+%{
+	TODO:
+	- add the intro chords (they are not currently shown
+%}
+
 tune={
 	\time 4/4
 	\key c \major
@@ -97,18 +102,4 @@ text=\lyrics {
 	the mean ___ -- ing of ex -- is -- tence, oh, ___ my love. ___
 
 }
-
-\score {
-	{
-		<<
-			\context ChordNames \intro
-		>>
-		<<
-			\context ChordNames \harmony
-			\context Staff \tune
-			\context Lyrics \text
-		>>
-	}
-	\midi {}
-	\layout {}
-}
+\include "src/include/harmony_tune_lyrics.lyi"

@@ -54,11 +54,4 @@ tune={
 	g''2. e''8 g''8 \bar "||"
 }
 
-\score {
-	<<
-		\context ChordNames \harmony
-		\context Staff \tune
-	>>
-	\midi {}
-	\layout {}
-}
+\include "src/include/harmony_and_tune.lyi"

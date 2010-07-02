@@ -1,0 +1,7 @@
+\score {
+	<<
+		\context Staff \tune
+	>>
+	\midi {}
+	\layout {}
+}

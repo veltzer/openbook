@@ -109,17 +109,4 @@ piano=\context GrandStaff <
 
 %}
 
-\score {
-	{
-		<<
-		\context ChordNames \harmony
-		>>
-		<<
-		\context Staff \tune
-		\context Lyrics \text
-		>>
-	}
-	\midi {}
-	\layout {}
-}
-
+\include "src/include/harmony_tune_lyrics.lyi"

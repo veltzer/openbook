@@ -27,12 +27,4 @@ harmony=\chords {
 	bes1:maj7 | bes:6 | a1*2:7.9- | \break
 }
 
-
-\score {
-	<<
-		\context ChordNames \harmony
-		\context Staff \tune
-	>>
-	\midi {}
-	\layout {}
-}
+\include "src/include/harmony_and_tune.lyi"

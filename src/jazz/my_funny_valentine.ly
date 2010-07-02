@@ -39,11 +39,4 @@ tune=\relative a {
 	c,2 d4 e | d4. e8 d2 | c1 ~ | c4 r r2 \bar "|."
 }
 
-\score {
-	<<
-		\context Staff \tune
-		\context ChordNames \harmony
-	>>
-	\midi {}
-	\layout {}
-}
+\include "src/include/harmony_and_tune.lyi"

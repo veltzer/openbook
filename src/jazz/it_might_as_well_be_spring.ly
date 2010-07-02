@@ -30,10 +30,4 @@ tune=\relative d' {
 	a2. g4 | d4.. b'16 g2 | d4.. c'16 a2 | g1 | r2 r4 d8 d \bar "||"
 }
 
-\score {
-	<<
-		\context Staff \tune
-	>>
-	\midi {}
-	\layout {}
-}
+\include "src/include/tune_only.lyi"

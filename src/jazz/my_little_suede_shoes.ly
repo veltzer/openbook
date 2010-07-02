@@ -42,12 +42,4 @@ harmony=\chords {
 	f:m7 bes:7 | ees:maj7 c:7 | f:m7 bes:7 | ees:maj7 c:7 |
 	f:m7 aes:m7 | g:m7 c:7.9+.5+ | f:m7 bes:7 | ees1:maj7 \bar "||"
 }
-
-\score {
-	<<
-		\context Staff \tune
-		\context ChordNames \harmony
-	>>
-	\midi {}
-	\layout {}
-}
+\include "src/include/harmony_and_tune.lyi"

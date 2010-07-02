@@ -26,10 +26,4 @@ harmony=\chords {
 %}
 }
 
-\score {
-	<<
-		\context ChordNames \harmony
-	>>
-	\midi {}
-	\layout {}
-}
+\include "src/include/harmony_only.lyi"
