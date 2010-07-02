@@ -7,11 +7,11 @@ LY:=$(shell find . -name "*.ly")
 LYD:=$(addsuffix .d,$(LY))
 PDF:=$(addsuffix .pdf,$(basename $(LY)))
 PNG:=$(addsuffix .png,$(basename $(LY)))
-ALL:=$(ALL) $(LYD) $(PDF) $(PNG)
+ALL:=$(ALL) $(LYD) $(PDF)
 ifeq ($(DO_PNG),1)
 	ALL:=$(ALL) $(PNG)
 endif
-CLEAN:=$(CLEAN) $(LYD) $(PDF) $(PNG)
+CLEAN:=$(CLEAN) $(LYD) $(PDF)
 ifeq ($(DO_PNG),1)
 	CLEAN:=$(CLEAN) $(PNG)
 endif
