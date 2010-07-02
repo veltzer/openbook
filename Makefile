@@ -40,7 +40,7 @@ clean_all_png:
 
 .PHONY: check_extra_files
 check_extra_files:
-	-@find -type f -and -not -name "Makefile" -and -not -path "./.git/*" -and -not -name "*.ly" -and -not -name "*.lyi" -and -not -name "TODO.txt"
+	-@find -type f -and -not -name "Makefile" -and -not -path "./.git/*" -and -not -name "*.ly" -and -not -name "*.lyi" -and -not -name "TODO.txt" -and -not -name "*.ly.d" -and -not -name "*.pl" -and -not -name "*.grammer" -and -not -name "*.pdf"
 .PHONY: check_comments
 check_comments:
 	-@grep "%%" `find . -name "*.ly"`
@@ -49,7 +49,7 @@ check_composer_and:
 	-@grep "composer=\".* and .*\"" `find . -name "*.ly" -or -name "*.lyi"`
 .PHONY: check_ws
 check_ws:
-	-./pgrep.pl "  | $$|\w\t" `find . -name "*.ly" -or -name "*.lyi"`
+	-@./pgrep.pl "  | $$|\w\t" `find . -name "*.ly" -or -name "*.lyi"`
 .PHONY: check_common
 check_common:
 	-@grep --files-without-match "common.lyi" `find . -name "*.ly"`
@@ -65,6 +65,8 @@ check_empty_copyright:
 .PHONY: check_score
 check_score:
 	-@grep "\score" `find . -name "*.ly"`
+.PHONY: check_all
+check_all: check_score check_empty_copyright check_common check_ws check_composer_and check_comments check_extra_files 
 
 # rules
 #
