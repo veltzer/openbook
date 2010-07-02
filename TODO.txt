@@ -8,3 +8,12 @@ Info addition
 	show them on the php.
 - add "tags" header in all the pieces (jazz, swing, bossa etc...).
 - create midi,ps (multi rules in the makefile ?!?)
+- make all of tunes have the same high level structure as "a_foggy_day.ly". This is much
+	better because:
+	- You don't have to have a stupid strucutre at the end which is replicated for each
+	tune (or included).
+	- Stuff gets in the sheet or out of it (tune, harmony, lyrics) according to whether
+	it is there. When you add or remove stuff you just add or remove it - no need to update
+	the master structure context.
+	Record all of these understandings in some kind of standards document that I will
+	start for all of this material.
