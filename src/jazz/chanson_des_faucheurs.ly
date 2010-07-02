@@ -20,4 +20,4 @@ tune=\relative g'' {
 	g,4 ( c ) b | a ( d ) c | b ( a ) b | c2 r4 \bar "|."
 }
 
-\include "src/include/tune_only.lyi"
+\include "src/include/tune.lyi"
