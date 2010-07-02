@@ -56,7 +56,7 @@ $(PDF): %.pdf: %.ly
 	lilypond -o $(basename $@) $<
 	rm -f $(basename $@).ps $(basename $@).midi
 $(LYD): %.ly.d: %.ly
-	./lilydep.pl $< $@
+	./lilydep.pl $< $@ $(basename $<).pdf $(basename $<).ps $(basename $<).midi
 
 # include the deps files (no warnings)
 -include $(LYD)

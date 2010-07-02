@@ -10,15 +10,17 @@ use Parse::RecDescent qw();
 
 my($debug)=0;
 
-if(@ARGV!=2) {
-	die("usage: infile outfile");
+if(@ARGV<3) {
+	die("usage: infile outfile [deps files...]");
 }
 my($infile)=$ARGV[0];
 my($outfile)=$ARGV[1];
+my($targets)=join(" ",@ARGV[2..$#ARGV]);
 
 if($debug) {
 	print "infile is [$infile]\n";
 	print "outfile is [$outfile]\n";
+	print "targets is [$targets]\n";
 }
 
 my($grammer);
@@ -42,5 +44,5 @@ if($data!~/^\s*/) {
 
 open(FILE,"> ".$outfile) || die("unable to open file for writing");
 my($inc)=$ret->{"inc"};
-print FILE $infile.": ".join(" ",@$inc)."\n";
+print FILE $targets.": ".join(" ",@$inc)."\n";
 close(FILE) || die("unable to close file");
