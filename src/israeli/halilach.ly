@@ -13,4 +13,4 @@ harmony=\chords {
 	f1:maj7 | e1:min7 | d2:min7 e2:7 | a1:min7 | \break
 	d2:7 e2:min7 | f2:maj7 d4:min7 g4:7 | c2:maj7 d4:min7 e4:7 | a1:min7 | \break
 }
-\include "src/include/harmony_only.lyi"
+\include "src/include/harmony.lyi"
