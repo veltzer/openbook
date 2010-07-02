@@ -34,7 +34,7 @@ tune={
 	r4 f'4 f'4 f'4 | aes'2. aes'4 | g'2. g'4 | d''1 |
 	r4 e''4 e''4 e''4 | c''4 c''2. | a'2. a'4 | f'1 |
 	r4 a'4 a'4 a'4 | c''4 c''2 c''4 | a'2. a'4 | d'1 |
-	
+
 	r4 c'4 c'4 c'4 | ees'2. ees'4 | d'2. d'4 | a'1 |
 	r4 f'4 f'4 f'4 | aes'2. aes'4 | g'2. g'4 | d''1 |
 	f''2 f''4 f''4 | d''2. d''4 | c''2 c''2 | a'2 a'4 bes'4 |
@@ -43,7 +43,11 @@ tune={
 
 }
 text=\lyrics {
-	some text here
+	Foggy Day in London town had me low and had me down.
+	I viewed the morning with alarm, the British Museum had lost its charm.
+	How long I wondered could this thing last? But the age of miracles hadn't passed,
+	for suddenly I saw you there and through foggy London town the sun was shining ev'ry
+	where.
 }
 
 \include "src/include/harmony_tune_lyrics.lyi"

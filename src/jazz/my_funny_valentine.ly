@@ -17,7 +17,7 @@ harmony=\chords {
 		{ f:m7.5- | bes:7.9-}
 	}
 	\repeat unfold 4 { ees2:maj7 f:m7/+bes | }
-	
+
 	ees2:maj7 g:7 | c:m7 bes:m7 | aes1:maj7 | d2:m7.5- g:7 |
 	c1:m7 | c:m7/+b | c:m7/bes | a:m7.5- |
 	aes:maj7 | d2:m7.5- g:7 | c:m7 f:7.9- | bes:m7 ees:7.9- |
