@@ -1,6 +1,7 @@
 \include "src/include/common.lyi"
 \header {
 	title="A Foggy Day"
+	subtitle="(From 'A Damsel In Distress')"
 	composer="George Gershwin"
 	style="Jazz"
 	piece="Medium Swing"
@@ -8,6 +9,9 @@
 	poet="Ira Gershwin"
 	copyright="1937, Gershwin Publishing Corporation"
 }
+%{
+	TODO:
+%}
 
 harmony=\chords {
 	\mark "A"
@@ -38,5 +42,8 @@ tune={
 	f'1 ~ | f'2. r4 |
 
 }
+text=\lyrics {
+	some text here
+}
 
-\include "src/include/harmony_tune.lyi"
+\include "src/include/harmony_tune_lyrics.lyi"
