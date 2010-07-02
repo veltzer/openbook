@@ -70,7 +70,7 @@ check_all: check_score check_empty_copyright check_common check_ws check_compose
 
 # rules
 #
-LYFLAGS=
+LYFLAGS:=
 
 # rule about how to create .pdf files from .ly files
 $(PDF): %.pdf: %.ly
