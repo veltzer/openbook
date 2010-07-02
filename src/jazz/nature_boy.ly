@@ -15,29 +15,29 @@
 tune={
 	\time 4/4
 	\key d \minor
-	\partial 8 a8	\bar "||"
-	a'8 f'8 d'2.	| r4 r8 a8 e'8 f'8 g'8 bes'8	| a'8 f'8 d'2.	| r4 r8 a8 e'8 f'8 g'8 bes'8 | \break
-	a'4. d''8 cis''2	| a'4. c''8 b'2		| g'4. bes'8 a'4. d'8	| e'2. r8 a8	| \break
-	a'2. g'4	| e'2. a4		| g'2. f'4		| d'2. a4		| \break
-	f'2. e'4	| b2.	c'4	| cis'1		| r2 r4 r8 a8	\bar "||" \break
-	a'8 f'8 d'2.	| r4 r8 a8 e'8 f'8 g'8 bes'8	| a'8 f'8 d'2.	| r4 r8 a8 e'8 f'8 g'8 bes'8 | \break
-	a'4. d''8 cis''2	| a'4. c''8 b'2		| g'4. bes'8 a'4. d'8	| e'2. r8 a8	| \break
-	a'2. g'4	| e'2. a4		| g'2. f'4		| d'2. a4		| \break
-	a'4. e'8 b4. a8	| g'4 f'2 a8 e'8 	| d'1		| r1		\bar "|." \break
+	\partial 8 a8 \bar "||"
+	a'8 f'8 d'2. | r4 r8 a8 e'8 f'8 g'8 bes'8 | a'8 f'8 d'2. | r4 r8 a8 e'8 f'8 g'8 bes'8 | \break
+	a'4. d''8 cis''2 | a'4. c''8 b'2 | g'4. bes'8 a'4. d'8 | e'2. r8 a8 | \break
+	a'2. g'4 | e'2. a4 | g'2. f'4 | d'2. a4 | \break
+	f'2. e'4 | b2. c'4 | cis'1 | r2 r4 r8 a8 \bar "||" \break
+	a'8 f'8 d'2. | r4 r8 a8 e'8 f'8 g'8 bes'8 | a'8 f'8 d'2. | r4 r8 a8 e'8 f'8 g'8 bes'8 | \break
+	a'4. d''8 cis''2 | a'4. c''8 b'2 | g'4. bes'8 a'4. d'8 | e'2. r8 a8 | \break
+	a'2. g'4 | e'2. a4 | g'2. f'4 | d'2. a4 | \break
+	a'4. e'8 b4. a8 | g'4 f'2 a8 e'8 | d'1 | r1 \bar "|." \break
 }
 
 harmony=\chords {
-	\partial 8 r8	|
+	\partial 8 r8 |
 	\mark "A"
-	d1:min		| e2:min7.5- a2:7	| d1:min		| e2:min7.5- a2:7	|
-	d2:min d2:min7+	| d2:min7 d2:min6	| g2:min6 d2:min	| e1:min7.5-		|
-	a1*2:7		| d1*2:min		|
-	e1*2:7.9-	| a1*2:7		\bar "||"
+	d1:min | e2:min7.5- a2:7 | d1:min | e2:min7.5- a2:7 |
+	d2:min d2:min7+ | d2:min7 d2:min6 | g2:min6 d2:min | e1:min7.5- |
+	a1*2:7 | d1*2:min |
+	e1*2:7.9- | a1*2:7 \bar "||"
 	\mark "B"
-	d1:min		| e2:min7.5- a2:7	| d1:min		| e2:min7.5- a2:7	|
-	d2:min d2:min7+	| d2:min7 d2:min6	| g2:min6 d2:min	| e1:min7.5-		|
-	a1*2:7		| d1:min		| b1:min7.5-		|
-	e1:7.9-		| a1:7.5+		| d1:min		| e2:min7.5- a2:7	\bar "|."
+	d1:min | e2:min7.5- a2:7 | d1:min | e2:min7.5- a2:7 |
+	d2:min d2:min7+ | d2:min7 d2:min6 | g2:min6 d2:min | e1:min7.5- |
+	a1*2:7 | d1:min | b1:min7.5- |
+	e1:7.9- | a1:7.5+ | d1:min | e2:min7.5- a2:7 \bar "|."
 }
 
 text=\lyrics {

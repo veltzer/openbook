@@ -18,10 +18,10 @@ harmony=\chords {
 	\mark "chorus"
 %{
 	verse:
-	Gbm Gbm|E | Dmaj7 D/Db7 | x2 
+	Gbm Gbm|E | Dmaj7 D/Db7 | x2
 	Dmaj7 | Amaj7 Db7 | Dmaj7 Db7 | Gbm |
 	chorus:
-	Gbm Gbm|E | Dmaj7 Db7 | x2 
+	Gbm Gbm|E | Dmaj7 Db7 | x2
 	Dmaj7 | Amaj7 Db7 | Dmaj7 Db7 | Gbm |
 %}
 }

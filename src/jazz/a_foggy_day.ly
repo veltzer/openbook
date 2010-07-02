@@ -3,8 +3,10 @@
 	title="A Foggy Day"
 	composer="George Gershwin"
 	style="Jazz"
-	piece="Med Swing"
+	piece="Medium Swing"
 	remark="copied from the real book"
+	poet="Ira Gershwin"
+	copyright="1937, Gershwin Publishing Corporation"
 }
 
 harmony=\chords {
@@ -37,11 +39,4 @@ tune={
 
 }
 
-\score {
-	<<
-		\context ChordNames \harmony
-		\context Staff \tune
-	>>
-	\midi {}
-	\layout {}
-}
+\include "src/include/harmony_and_tune.lyi"
