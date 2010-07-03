@@ -26,3 +26,10 @@ Info addition
 	the master structure context.
 	Record all of these understandings in some kind of standards document that I will
 	start for all of this material.
+
+- make a book with all of the standards.
+	- how do I include all the files ? Should I write a script ?!?
+- get number of pages and import that into the database too.
+	How do we get it ?!?
+	- count the number of pages in the pdf (some kind of pdf parser ?!?).
+	- count the number of images created when --png is used.
