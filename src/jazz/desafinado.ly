@@ -7,7 +7,7 @@
 	style="Jazz"
 	piece="Medium Bossa Nova"
 	poet="Newton Menonca, Jon Hendricks and Jessie Cavanaugh"
-	
+
 	completion="5"
 }
 
@@ -118,7 +118,7 @@
 	Once your kiss -- es raised me to a fev -- er pitch,
 	now the orch -- es -- tra -- tion does -- n't seem so rich.
 	Seems to me you've changed the tune we used to sing;
-	
+
 	like the Bos -- sa No -- va, love should swing.
 	We used to har -- mo -- nize two souls in per -- fect time.
 	Now the song is dif -- f'rent and the words don't e -- ven rhyme,
