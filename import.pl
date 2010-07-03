@@ -78,6 +78,15 @@ sub handler() {
 			print "pdf is $pdf\n";
 		}
 		my($hash)=get_meta_data($file);
+		if(!exists($hash->{"completion"})) {
+			next;
+		}
+		if($hash->{"completion"}<3) {
+			next;
+		}
+		if(exists($hash->{"dontimport"})) {
+			next;
+		}
 		$dbh->do("insert into TbMsLilypond (source,pdf,title,subtitle,composer,copyright,style,piece,poet) values(?,?,?,?,?,?,?,?,?)",
 			undef,
 			$dt_source,
