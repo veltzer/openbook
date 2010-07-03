@@ -35,3 +35,5 @@ Info addition
 	- count the number of images created when --png is used.
 
 - why doesn't the printing come out right ?!?
+	- in pdf both the top and botton are sort of cut off.
+	- postscript the bottom doesnt show.

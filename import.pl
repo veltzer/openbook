@@ -67,16 +67,20 @@ sub handler() {
 		my($source)=$file;
 		my($name,$path,$suffix)=File::Basename::fileparse($source,".ly");
 		my($pdf)=$path.$name.".pdf";
+		my($ps)=$path.$name.".ps";
 		my($dt_source);
 		$dt_source=Perl6::Slurp::slurp($source);
 		my($dt_pdf);
 		$dt_pdf=Perl6::Slurp::slurp($pdf);
+		my($dt_ps);
+		$dt_ps=Perl6::Slurp::slurp($ps);
 		if($debug) {
 			print "file is $file\n";
 			print "name is $name\n";
 			print "path is $path\n";
 			print "suffix is $suffix\n";
 			print "pdf is $pdf\n";
+			print "ps is $ps\n";
 		}
 		my($hash)=get_meta_data($file);
 		if($limit_imports) {
@@ -91,10 +95,11 @@ sub handler() {
 			}
 		}
 		#also use $hash->{"completion"}
-		$dbh->do("insert into TbMsLilypond (source,pdf,title,subtitle,composer,copyright,style,piece,poet) values(?,?,?,?,?,?,?,?,?)",
+		$dbh->do("insert into TbMsLilypond (source,pdf,ps,title,subtitle,composer,copyright,style,piece,poet) values(?,?,?,?,?,?,?,?,?)",
 			undef,
 			$dt_source,
 			$dt_pdf,
+			$dt_ps,
 			$hash->{"title"},
 			$hash->{"subtitle"},
 			$hash->{"composer"},
