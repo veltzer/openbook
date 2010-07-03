@@ -14,10 +14,25 @@
 	- add lyrics.
 %}
 
-tune={
+<<
+\chords {
+	f1:maj7 | r1 | g1:7.5- | r1 | g1:m7 | c1:7 | a1:m7.5- | d1:9- |
+	g1:m7 | a1:9- | d1:7 | d1:9- | g1:9- | r1 | ges1:maj7 | r1 \bar "||"
+	f1:maj7 | r1 | g1:7.5- | r1 | g1:m7 | c1:7 | a1:m7.5- | d1:9- |
+	g1:m7 | bes1:m | a1:m7 | b2:m7.5- e2:9+ \bar "||"
+	a1:maj7 | bes1:dim | b1:m11 | e1:7 |
+	a1:maj7 | bes1:dim | b1:m11 | e1:7 |
+	a1:maj7 | fis1:m7 | b1:m11 | e1:7 |
+	c1:maj7 | cis1:dim | d1:m11 | g1:7 |
+	g1:m7 | fis1:m7 | g1:7 | c1:7 \bar "||"
+	f1:maj7 | r1 | g1:7.5- | r1 | g1:m7 | c1:7 | a1:m7.5- | d1:9- |
+	g1:m7 | bes1:m | a1:m7 | aes1:dim | g1:7 | r1 | bes1:m7 | ees1:9 |
+	g1:7 | g2:m7 c2:9+ | f1:6.9 | r1 \bar "|."
+}
+
+\new Voice="melody" {
 	\time 4/4
 	\key f \major
-	\clef treble
 \mark "A"
 	r8 c'4 d'8 e'4 f' |
 	e'4. d'8 cis'4 d' |
@@ -93,34 +108,26 @@ tune={
 	f'2. r4 \bar "|."
 }
 
-harmony=\chords {
-	f1:maj7 | r1 | g1:7.5- | r1 | g1:m7 | c1:7 | a1:m7.5- | d1:9- |
-	g1:m7 | a1:9- | d1:7 | d1:9- | g1:9- | r1 | ges1:maj7 | r1 \bar "||"
-	f1:maj7 | r1 | g1:7.5- | r1 | g1:m7 | c1:7 | a1:m7.5- | d1:9- |
-	g1:m7 | bes1:m | a1:m7 | b2:m7.5- e2:9+ \bar "||"
-	a1:maj7 | bes1:dim | b1:m11 | e1:7 |
-	a1:maj7 | bes1:dim | b1:m11 | e1:7 |
-	a1:maj7 | fis1:m7 | b1:m11 | e1:7 |
-	c1:maj7 | cis1:dim | d1:m11 | g1:7 |
-	g1:m7 | fis1:m7 | g1:7 | c1:7 \bar "||"
-	f1:maj7 | r1 | g1:7.5- | r1 | g1:m7 | c1:7 | a1:m7.5- | d1:9- |
-	g1:m7 | bes1:m | a1:m7 | aes1:dim | g1:7 | r1 | bes1:m7 | ees1:9 |
-	g1:7 | g2:m7 c2:9+ | f1:6.9 | r1 \bar "|."
-}
+\new Lyrics \lyricsto "melody" {
+	Love is like a nev -- er end -- ing mel -- o -- dy;
+	po -- ets have com -- pared it to a sym -- pho -- ny,
+	a sym -- pho -- ny con -- duc -- ted by the light -- ing of the moon,
+	but our song of love is Slight -- ly Out Of Tune.
 
-text=\lyrics {
-	Love is like a never ending melody; poets have compared it to a symphony,
-	a symphony conducted by the lighting of the moon,
-	but our song of love is Slightly Out Of Tune. Once your kisses raised me to
-	a fever pitch, now the orchestration doesn't seem to rich. Seems to me you've
-	changed the tune we used to sing; like the Bossa Nova, love should swing. We
-	used to harmonize two souls in perfect time. Now the song is diff'rent and the
-	words don't even rhyme, 'cause you forgot the melody our hearts would always
-	croon, and so what good's a heart that's Slightly Out Of Tune.
-	Tune your heart to mine the way it uysed to be; join with me in harmony and sing a
-	song of loving. We're bound to get in tune again before too long.
-	There'll be no Desafinado when your heart belongs to me completely. Then you won't
-	be Slightly Ouf Of Tune, you'll sing along with me.
-}
+	Once your kiss -- es raised me to a fev -- er pitch,
+	now the orch -- es -- tra -- tion does -- n't seem so rich.
+	Seems to me you've changed the tune we used to sing;
+	
+	like the Bos -- sa No -- va, love should swing.
+	We used to har -- mo -- nize two souls in per -- fect time.
+	Now the song is dif -- f'rent and the words don't e -- ven rhyme,
+	'cause you for -- got the mel -- o -- dy our hearts would al -- ways croon,
+	and so what good's a heart that's Slight -- ly Out Of Tune.
 
-\include "src/include/harmony_tune_lyrics.lyi"
+	Tune your heart to mine the way it uysed to be;
+	join with me in har -- mo -- ny and sing a song of lov -- ing.
+	We're bound to get in tune a -- gain be -- fore too long.
+	There'll be no De -- sa -- fi -- na -- do when your heart be -- longs to me com -- plete -- ly.
+	Then you won't be Slight -- ly Ouf Of Tune, you'll sing a -- long with me.
+}
+>>
