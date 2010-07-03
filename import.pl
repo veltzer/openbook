@@ -16,7 +16,7 @@ use File::Basename qw();
 use Perl6::Slurp qw();
 use Parse::RecDescent qw();
 
-my($debug)=1;
+my($debug)=0;
 my($limit_imports)=1;
 
 my($dbh)=DBI->connect('dbi:mysql:myworld','','',{
@@ -85,13 +85,13 @@ sub handler() {
 		my($hash)=get_meta_data($file);
 		if($limit_imports) {
 			if(!exists($hash->{"completion"})) {
-				next;
+				return;
 			}
 			if($hash->{"completion"}<3) {
-				next;
+				return;
 			}
 			if(exists($hash->{"dontimport"})) {
-				next;
+				return;
 			}
 		}
 		#also use $hash->{"completion"}
