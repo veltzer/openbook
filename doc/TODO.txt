@@ -6,6 +6,14 @@ Info addition
 	on import. Show it in on the web.
 	Enable a direct link to a files history from git from the web.
 
+- fix the import mechanism to only import stuff which is over a certain
+	completion level and which does not have a "dont_import" attribute.
+	- this will allow creation of a demo page where I can make experimentations.
+		- demo page should show:
+			- complex chords
+			- chords with alternate bases.
+			- matching lyrics to melody.
+
 - add "todo" in all the pieces in the same style.
 - add "completion level" in all the pieces. define completion levels and mark them out.
 	put them in the database.
