@@ -1,0 +1,8 @@
+Here are some policy descision:
+===============================
+- until a templating system is ready we are using straight lilypond files.
+- until a configuration database is ready we are using lilypond includes to share data
+	and to make it easy to change.
+- all includes are root relative.
+- some more checks are being made by the "make check_all" procedue which are also parts
+	of the policy.
