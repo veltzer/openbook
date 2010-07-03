@@ -87,6 +87,7 @@ sub handler() {
 		if(exists($hash->{"dontimport"})) {
 			next;
 		}
+		#also use $hash->{"completion"}
 		$dbh->do("insert into TbMsLilypond (source,pdf,title,subtitle,composer,copyright,style,piece,poet) values(?,?,?,?,?,?,?,?,?)",
 			undef,
 			$dt_source,
