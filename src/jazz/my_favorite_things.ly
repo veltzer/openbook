@@ -21,20 +21,22 @@ harmony=\chords {
 
 	\mark "A"
 	\repeat volta 2 {
-		e4*12:m7 | c4*12:maj7 |
+		e2.:m7 | r2. | r2. | r2. |
+		c2.:maj7 | r2. | r2. | r2. |
 		a2.:m7 | d2.:7 | g2.:maj7 | c2.:maj7 | g2.:maj7 | c2.:maj7 | fis2.:m7.5- | b2.:7.9- |
 	}
 	\break
 
 	\mark "B"
-	e4*12:m7 | a4*12:maj7 |
+	e2.:m7 | r2. | r2. | r2. |
+	a2.:maj7 | r2. | r2. | r2. |
 	a2.:m7 | d2.:7 | g2.:maj7 | c2.:maj7 | g2.:maj7 | c2.:maj7 | fis2.:m7.5- | b2.:7.9- \bar "||"
 	\break
 
 	\mark "C"
-	e4*6:m7 | fis2.:m7.5- | b2.:7.9- | e2.:m7 | e2.:m7/d | c4*6:maj7 |
-	c4*6:maj7 | a4*6:7 | g2.:maj7 | c2.:maj7 | a2.:m7 | d2.:7 |
-	g2.:maj6 | c2.:maj7 | g4*6:maj6 \bar "||"
+	e2.:m7 | r2. | fis2.:m7.5- | b2.:7.9- | e2.:m7 | e2.:m7/d | c2.:maj7 | r2. |
+	c2.:maj7 | r2. | a2.:7 | r2. | g2.:maj7 | c2.:maj7 | a2.:m7 | d2.:7 |
+	g2.:maj6 | c2.:maj7 | g2.:maj6 | r2. \bar "||"
 	\break
 }
 

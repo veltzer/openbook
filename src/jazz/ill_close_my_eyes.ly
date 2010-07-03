@@ -9,16 +9,16 @@
 harmony=\chords {
 	\partial 8*5 r8 r4 r4
 	\repeat volta 2 {
-		f1*2:maj7 | e1:m7.5- | a1:7.9- | \break
-		d1*2:m7 | c1:m7 | f1:7 | \break
+		f1:maj7 | r1 | e1:m7.5- | a1:7.9- | \break
+		d1:m7 | r1 | c1:m7 | f1:7 | \break
 	}
 	\alternative {
 		{
-			bes1*2:maj7 | f1*2:maj7 | \break
-			e1*2:7 | a2:m7 d2:7 | g2:m7 c2:7 | \break
+			bes1:maj7 | r1 | f1:maj7 | r1 | \break
+			e1:7 | r1 | a2:m7 d2:7 | g2:m7 c2:7 | \break
 		}
 		{
-			bes1*2:maj7 | a1:m7.5- | d1:7.9- | \break
+			bes1:maj7 | r1 | a1:m7.5- | d1:7.9- | \break
 			g1:m7 | c1:7 | f2:maj7 d2:7 | g2:7 c2:7 | \break
 		}
 	}

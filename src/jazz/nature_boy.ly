@@ -31,12 +31,12 @@ harmony=\chords {
 	\mark "A"
 	d1:min | e2:min7.5- a2:7 | d1:min | e2:min7.5- a2:7 |
 	d2:min d2:min7+ | d2:min7 d2:min6 | g2:min6 d2:min | e1:min7.5- |
-	a1*2:7 | d1*2:min |
-	e1*2:7.9- | a1*2:7 \bar "||"
+	a1:7 | r1 | d1:min | r1 |
+	e1:7.9- | r1 | a1:7 | r1 \bar "||"
 	\mark "B"
 	d1:min | e2:min7.5- a2:7 | d1:min | e2:min7.5- a2:7 |
 	d2:min d2:min7+ | d2:min7 d2:min6 | g2:min6 d2:min | e1:min7.5- |
-	a1*2:7 | d1:min | b1:min7.5- |
+	a1:7 | r1 | d1:min | b1:min7.5- |
 	e1:7.9- | a1:7.5+ | d1:min | e2:min7.5- a2:7 \bar "|."
 }
 
