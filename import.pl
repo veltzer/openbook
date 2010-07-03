@@ -95,7 +95,7 @@ sub handler() {
 			}
 		}
 		#also use $hash->{"completion"}
-		$dbh->do("insert into TbMsLilypond (source,pdf,ps,title,subtitle,composer,copyright,style,piece,poet) values(?,?,?,?,?,?,?,?,?)",
+		$dbh->do("insert into TbMsLilypond (source,pdf,ps,title,subtitle,composer,copyright,style,piece,poet) values(?,?,?,?,?,?,?,?,?,?)",
 			undef,
 			$dt_source,
 			$dt_pdf,
