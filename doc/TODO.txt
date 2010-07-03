@@ -2,6 +2,10 @@ Info addition
 - add "poet="poetname"" header in all the pieces.
 - add "copyright" header in all the pieces.
 
+- get last changed date (the data of the *.ly file ?!?) and put it in the database
+	on import. Show it in on the web.
+	Enable a direct link to a files history from git from the web.
+
 - add "todo" in all the pieces in the same style.
 - add "completion level" in all the pieces. define completion levels and mark them out.
 	put them in the database.
