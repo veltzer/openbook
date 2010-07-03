@@ -17,7 +17,7 @@ use Perl6::Slurp qw();
 use Parse::RecDescent qw();
 
 my($debug)=1;
-my($limit_imports)=0;
+my($limit_imports)=1;
 
 my($dbh)=DBI->connect('dbi:mysql:myworld','','',{
 	RaiseError => 1,

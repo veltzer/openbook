@@ -9,6 +9,8 @@
 	poet="Newton Menonca, Jon Hendricks and Jessie Cavanaugh"
 
 	completion="5"
+
+	dontimport="1"
 }
 
 %{
