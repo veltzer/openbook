@@ -7,11 +7,12 @@
 	style="Jazz"
 	piece="Medium Bossa Nova"
 	poet="Newton Menonca, Jon Hendricks and Jessie Cavanaugh"
+	
+	completion="5"
 }
 
 %{
 	TODO:
-	- add lyrics.
 %}
 
 <<
