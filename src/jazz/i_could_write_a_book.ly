@@ -1,13 +1,20 @@
 \include "src/include/common.lyi"
 \header {
-	title="I could write a book"
+	title="I Could Write A Book"
 	composer="Richard Rodgers"
 	poet="Lorenz Hart"
 	style="Jazz"
-	piece="Med Swing"
+	piece="Modeartely Slow"
+	copyright="1940, Chappel & Co."
 }
 
-harmony=\chords {
+%{
+	TODO:
+	- finish all lyrics
+%}
+
+<<
+\chords {
 	\partial 2 r2 |
 	\repeat volta 2 {
 		ees2:maj7 c:7 | f:m7 bes:7 | ees1:maj7 | f2:m7 bes:7 |
@@ -21,7 +28,7 @@ harmony=\chords {
 	}
 }
 
-tune=\relative g' {
+\new Voice="melody" \relative g' {
 	\time 4/4
 	\key ees \major
 
@@ -32,9 +39,11 @@ tune=\relative g' {
 		ees2 ees | ees4 f2 d4 | \break
 	}
 	\alternative {
-		{ c2 c | bes g8 a4 bes8 ~ | bes2 bes | bes4 c2 a4 | bes1 ~ | bes2 g4 aes! | }
+		{ c2 c | bes g8 a4 bes8 ~ | bes2 bes | bes4 c2 a4 | bes1 ~ | bes2 g4 aes | }
 		{ des2 des | c bes4 aes | g2 g | f4 ees'2 d4 | ees1 ~ | ees 2 g,4 aes \bar "|." }
 	}
 }
-
-\include "src/include/harmony_tune.lyi"
+\new Lyrics \lyricsto "melody" {
+	If they asked me I Could Write A Book,
+}
+>>
