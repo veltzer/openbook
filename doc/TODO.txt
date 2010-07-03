@@ -33,3 +33,5 @@ Info addition
 	How do we get it ?!?
 	- count the number of pages in the pdf (some kind of pdf parser ?!?).
 	- count the number of images created when --png is used.
+
+- why doesn't the printing come out right ?!?
