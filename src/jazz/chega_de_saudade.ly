@@ -21,10 +21,10 @@ tune=\relative f'' {
 
 harmony=\chords {
 	% A
-	d1:m7 | d:m7/c | e1*2:7/b | \break
-	a1*2:7.5+.9- | d1:m7 | e2:m7.5- a:7 | \break
-	d1:m7 | b2:m7.5- e:7 | a1*2:m7 | \break
-	bes1:maj7 | bes:6 | a1*2:7.9- | \break
+	d1:m7 | d:m7/c | e1:7/b | r1 | \break
+	a1:7.5+.9- | r1 | d1:m7 | e2:m7.5- a:7 | \break
+	d1:m7 | b2:m7.5- e:7 | a1:m7 | r1 | \break
+	bes1:maj7 | bes:6 | a1:7.9- | r1 | \break
 }
 
 \include "src/include/harmony_tune.lyi"

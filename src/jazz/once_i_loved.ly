@@ -10,13 +10,13 @@
 harmony=\chords {
 	\repeat volta 2 {
 		g1:m7 | c:7 | f:maj7 | fis:dim7 | g:m7 | aes:dim7 | a:m7 | a:m7/+g |
-		f:m7 | bes:7 | ees1*2:maj7 | e1:m7.5- | a:7.9- |
+		f:m7 | bes:7 | ees1:maj7 | r1 | e1:m7.5- | a:7.9- |
 	}
 	\alternative {
 		{ d:maj7 | d:7.9- }
 		{ d:maj7 | g:7 }
 	}
-	c:maj7 | f:7 | bes1*2:maj7 |
+	c:maj7 | f:7 | bes1:maj7 | r1 |
 	b1:dim7 | bes:m6 | a:m7 | aes:7.4+ |
 	g:7 | g2:m7 a:7.9- | d1:m7 | d2:m7 d:7.9+ |
 }

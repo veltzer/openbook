@@ -8,10 +8,10 @@
 
 harmony=\chords {
 	\repeat volta 2 {
-		f1*4:7 | \break
-		bes1*2:7 | f1*2:7 | \break
+		f1:7 | r1 | r1 | r1 | \break
+		bes1:7 | r1 | f1:7 | r1 | \break
 		c1:7 | bes1:7 | c1:7 | bes1:7 | \break
-		c1:7 | bes1:7 | f1*2:7 | \break
+		c1:7 | bes1:7 | f1:7 | r1 | \break
 	}
 }
 
