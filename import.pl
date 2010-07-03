@@ -17,6 +17,7 @@ use Perl6::Slurp qw();
 use Parse::RecDescent qw();
 
 my($debug)=1;
+my($limit_imports)=0;
 
 my($dbh)=DBI->connect('dbi:mysql:myworld','','',{
 	RaiseError => 1,
@@ -78,14 +79,16 @@ sub handler() {
 			print "pdf is $pdf\n";
 		}
 		my($hash)=get_meta_data($file);
-		if(!exists($hash->{"completion"})) {
-			next;
-		}
-		if($hash->{"completion"}<3) {
-			next;
-		}
-		if(exists($hash->{"dontimport"})) {
-			next;
+		if($limit_imports) {
+			if(!exists($hash->{"completion"})) {
+				next;
+			}
+			if($hash->{"completion"}<3) {
+				next;
+			}
+			if(exists($hash->{"dontimport"})) {
+				next;
+			}
 		}
 		#also use $hash->{"completion"}
 		$dbh->do("insert into TbMsLilypond (source,pdf,title,subtitle,composer,copyright,style,piece,poet) values(?,?,?,?,?,?,?,?,?)",
