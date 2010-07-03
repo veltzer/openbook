@@ -7,7 +7,7 @@
 	style="Jazz"
 	piece="Modeartely Slow"
 	copyright="1940, Chappel & Co."
-	
+
 	completion="5"
 }
 
@@ -61,9 +61,9 @@
 	a -- bout the way you walk and whis -- per and look,
 	I could write a pre -- face on how we met,
 	so the world would nev -- er for -- get,
-	
+
 	and the
-	
+
 	my book ends,
 	how to make two lov -- ers of friends.
 
