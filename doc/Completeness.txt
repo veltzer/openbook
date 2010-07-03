@@ -6,3 +6,5 @@ Here is the description of completeness of the .ly files:
 3 - at least one component of tune/lyrics/harmony is ok.
 4 - at least two components of tune/lyrics/harmony are ok.
 5 - all three components of tune/lyrics/harmony are ok.
+
+This information may also be needed to be introduced to MySQL using an enum.
