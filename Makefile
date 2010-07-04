@@ -67,7 +67,7 @@ clean_all_png:
 
 .PHONY: check_extra_files
 check_extra_files:
-	-@find -type f -and -not -name "Makefile" -and -not -path "./.git/*" -and -not -name "*.ly" -and -not -name "*.lyi" -and -not -name "*.txt" -and -not -name "*.ly.d" -and -not -name "*.pl" -and -not -name "*.grammer" -and -not -name "*.pdf"
+	-@find -type f -and -not -name "Makefile" -and -not -path "./.git/*" -and -not -name "*.ly" -and -not -name "*.lyi" -and -not -name "*.txt" -and -not -name "*.ly.d" -and -not -name "*.pl" -and -not -name "*.grammer" -and -not -name "*.pdf" -and -not -name "*.ps" -and -not -name "*.midi"
 .PHONY: check_comments
 check_comments:
 	-@grep "%%" `find . -name "*.ly"`
@@ -89,11 +89,8 @@ check_no_copyright:
 .PHONY: check_empty_copyright
 check_empty_copyright:
 	-@grep --files-with-match "copyright=\"\"" `find . -name "*.ly"`
-.PHONY: check_score
-check_score:
-	-@grep "\score" `find . -name "*.ly"`
 .PHONY: check_all
-check_all: check_score check_empty_copyright check_common check_ws check_composer_and check_comments check_extra_files 
+check_all: check_empty_copyright check_common check_ws check_composer_and check_comments check_extra_files 
 
 # rules
 
