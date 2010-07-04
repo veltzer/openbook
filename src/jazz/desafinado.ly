@@ -15,6 +15,7 @@
 	TODO:
 %}
 
+\score {
 <<
 \chords {
 	f1:maj7 | r1 | g1:7.5- | r1 | g1:m7 | c1:7 | a1:m7.5- | d1:9- |
@@ -132,3 +133,6 @@
 	Then you won't be Slight -- ly Ouf Of Tune, you'll sing a -- long with me.
 }
 >>
+\midi {}
+\layout {}
+}

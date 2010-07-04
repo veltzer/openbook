@@ -15,6 +15,7 @@
 	TODO:
 %}
 
+\score {
 <<
 \chords {
 	\mark "A"
@@ -53,3 +54,6 @@
 	for sud -- den -- ly I saw you there and through fog -- gy Lon -- don town the sun was shin -- ing ev -- 'ry where.
 }
 >>
+\midi {}
+\layout {}
+}
