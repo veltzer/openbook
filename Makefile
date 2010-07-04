@@ -1,27 +1,44 @@
 ALL:=
 CLEAN:=
 
+DO_PDF:=1
 DO_PNG:=0
 DO_PS:=1
+DO_MIDI:=1
 
 LY:=$(shell find . -name "*.ly")
 LYD:=$(addsuffix .d,$(LY))
+
 PDF:=$(addsuffix .pdf,$(basename $(LY)))
 PNG:=$(addsuffix .png,$(basename $(LY)))
 PS:=$(addsuffix .ps,$(basename $(LY)))
-ALL:=$(ALL) $(LYD) $(PDF)
+MIDI:=$(addsuffix .midi,$(basename $(LY)))
+
+ALL:=$(ALL) $(LYD)
+ifeq ($(DO_PDF),1)
+	ALL:=$(ALL) $(PDF)
+endif
 ifeq ($(DO_PNG),1)
 	ALL:=$(ALL) $(PNG)
 endif
 ifeq ($(DO_PS),1)
 	ALL:=$(ALL) $(PS)
 endif
-CLEAN:=$(CLEAN) $(LYD) $(PDF)
+ifeq ($(DO_MIDI),1)
+	ALL:=$(ALL) $(MIDI)
+endif
+CLEAN:=$(CLEAN) $(LYD)
+ifeq ($(DO_PDF),1)
+	CLEAN:=$(CLEAN) $(PDF)
+endif
 ifeq ($(DO_PNG),1)
 	CLEAN:=$(CLEAN) $(PNG)
 endif
 ifeq ($(DO_PS),1)
 	CLEAN:=$(CLEAN) $(PS)
+endif
+ifeq ($(DO_MIDI),1)
+	CLEAN:=$(CLEAN) $(MIDI)
 endif
 
 .PHONY: all
@@ -34,6 +51,7 @@ debug:
 	$(info PDF is $(PDF))
 	$(info PNG is $(PNG))
 	$(info PS is $(PS))
+	$(info MIDI is $(MIDI))
 
 .PHONY: clean
 clean:
@@ -84,12 +102,15 @@ LYFLAGS:=
 $(PDF): %.pdf: %.ly
 	lilypond --pdf $(LYFLAGS) -o /tmp/foo $<
 	mv /tmp/foo.pdf $@
-$(PS): %.ps: %.ly
-	lilypond --ps $(LYFLAGS) -o /tmp/foo $<
-	mv /tmp/foo.ps $@
 $(PNG): %.png: %.ly
 	lilypond --png $(LYFLAGS) -o /tmp/foo $<
 	mv /tmp/foo.png $@
+$(PS): %.ps: %.ly
+	lilypond --ps $(LYFLAGS) -o /tmp/foo $<
+	mv /tmp/foo.ps $@
+$(MIDI): %.midi: %.ly
+	lilypond --pdf $(LYFLAGS) -o /tmp/foo $<
+	mv /tmp/foo.midi $@
 $(LYD): %.ly.d: %.ly
 	./lilydep.pl $< $@ $(basename $<).pdf $(basename $<).ps $(basename $<).midi
 
