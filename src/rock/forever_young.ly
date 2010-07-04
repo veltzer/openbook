@@ -21,7 +21,7 @@
 	\time 4/4
 	\key c \major
 
-	r2 g8 g8 g8 g8 ~ | g4 f4 e8 e8 d8 e8 ~ |
+	r2 g8 g8 g8 g8 ~ | g4 f4 e8 e8 d8 e8 ~ | e2 e8 e8 g8 f8 ~ | f4 e4 c8 c8 d8 d8 ~ |
 }
 \new Lyrics \lyricsto "melody" {
 	Let's dance in style, let's dance for a while
