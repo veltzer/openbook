@@ -15,6 +15,7 @@
 	TODO:
 %}
 
+\score {
 <<
 \chords {
 	\partial 2 r2 |
@@ -74,3 +75,6 @@
 	then the world dis -- cov -- ers as
 }
 >>
+\midi {}
+\layout {}
+}
