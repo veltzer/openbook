@@ -18,6 +18,8 @@
 \score {
 <<
 \chords {
+	\set chordChanges = ##t
+
 	\mark "A"
 	f1:maj7 | a2:m7.5- d2:7.9- | g1:m7 | c1:7 | \break
 	f1:6 | d1:m7.5- | g1:7 | g2:m7 c2:7 | \break
@@ -54,6 +56,11 @@
 	for sud -- den -- ly I saw you there and through fog -- gy Lon -- don town the sun was shin -- ing ev -- 'ry where.
 }
 >>
-\midi {}
-\layout {}
+	\midi {
+		\context {
+			\Score
+			tempoWholesPerMinute = #(ly:make-moment 130 4)
+		}
+	}
+	\layout {}
 }
