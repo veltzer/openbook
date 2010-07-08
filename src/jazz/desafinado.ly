@@ -18,18 +18,20 @@
 \score {
 <<
 \chords {
-	f1:maj7 | r1 | g1:7.5- | r1 | g1:m7 | c1:7 | a1:m7.5- | d1:9- |
-	g1:m7 | a1:9- | d1:7 | d1:9- | g1:9- | r1 | ges1:maj7 | r1 \bar "||"
-	f1:maj7 | r1 | g1:7.5- | r1 | g1:m7 | c1:7 | a1:m7.5- | d1:9- |
+	\set chordChanges = ##t
+
+	f1:maj7 | f1:maj7 | g1:7.5- | g1:7.5- | g1:m7 | c1:7 | a1:m7.5- | d1:9- |
+	g1:m7 | a1:9- | d1:7 | d1:9- | g1:9- | g1:9- | ges1:maj7 | ges1:maj7 \bar "||"
+	f1:maj7 | f1:maj7 | g1:7.5- | g1:7.5- | g1:m7 | c1:7 | a1:m7.5- | d1:9- |
 	g1:m7 | bes1:m | a1:m7 | b2:m7.5- e2:9+ \bar "||"
 	a1:maj7 | bes1:dim | b1:m11 | e1:7 |
 	a1:maj7 | bes1:dim | b1:m11 | e1:7 |
 	a1:maj7 | fis1:m7 | b1:m11 | e1:7 |
 	c1:maj7 | cis1:dim | d1:m11 | g1:7 |
 	g1:m7 | fis1:m7 | g1:7 | c1:7 \bar "||"
-	f1:maj7 | r1 | g1:7.5- | r1 | g1:m7 | c1:7 | a1:m7.5- | d1:9- |
-	g1:m7 | bes1:m | a1:m7 | aes1:dim | g1:7 | r1 | bes1:m7 | ees1:9 |
-	g1:7 | g2:m7 c2:9+ | f1:6.9 | r1 \bar "|."
+	f1:maj7 | f1:maj7 | g1:7.5- | g1:7.5- | g1:m7 | c1:7 | a1:m7.5- | d1:9- |
+	g1:m7 | bes1:m | a1:m7 | aes1:dim | g1:7 | g1:7 | bes1:m7 | ees1:9 |
+	g1:7 | g2:m7 c2:9+ | f1:6.9 | f1:6.9 \bar "|."
 }
 
 \new Voice="melody" {
@@ -49,7 +51,7 @@
 	fis'8 a' fis'2 d'4 |
 	ees'1 | \break
 	r8 aes'4 g'8 f'4 d' |
-	aes'4. g'8 f'4 e' |
+	aes'4. g'8 f'4 d' |
 	f'4. des'8 des'2 ~ |
 	des' r | \break
 \mark "B"
@@ -133,6 +135,11 @@
 	Then you won't be Slight -- ly Ouf Of Tune, you'll sing a -- long with me.
 }
 >>
-\midi {}
-\layout {}
+	\midi {
+		\context {
+			\Score
+			tempoWholesPerMinute = #(ly:make-moment 130 4)
+		}
+	}
+	\layout {}
 }
