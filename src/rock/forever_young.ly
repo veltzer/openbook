@@ -15,18 +15,25 @@
 \score {
 <<
 \chords {
-	c1 | g1:7 | a1:min |
+	\mark "Intro"
+	c1 | g1:7 | a1:min | f1 | g1:7 | d1:min | f1 | c2. g4:7 |
+	\mark "Verse"
+	c1 | g1:7 | a1:min | f1 | g1:7 | d1:min | f1 | a2.:min g4:7 |
 }
 \new Voice="melody" \relative c'' {
 	\time 4/4
 	\key c \major
+	e1 | d1 | c1 | c1 | d1 | d1 | c1 | c2. b4 |
 
 	r2 g8 g8 g8 g8 ~ | g4 f4 e8 e8 d8 e8 ~ | e2 e8 e8 g8 f8 ~ | f4 e4 c8 c8 d8 d8 ~ |
+	d2 d8 c8 d8 c8 | e4 d4 c8 c8 a8 c8 ~ | c4 c8 a8 c8 a8 c8 a8 | c4 a2 r4 |
 }
 \new Lyrics \lyricsto "melody" {
+	_ _ _ _ _ _ _ _ _
+
 	Let's dance in style, let's dance for a while
-	Heaven can wait we're only watching the skies
-	Hoping for the best but expecting the worst
+	Hea -- ven can wait we're only watching the skies
+	Ho -- ping for the best but expecting the worst
 	Are you gonna drop the bomb or not?
 
 	Let us die young or let us live forever
@@ -77,7 +84,7 @@
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 110 4)
+			tempoWholesPerMinute = #(ly:make-moment 130 4)
 		}
 	}
 	\layout {}

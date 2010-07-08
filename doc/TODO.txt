@@ -1,3 +1,8 @@
+build system
+============
+- make each build make a temp folder so that I could build at the same time.
+
+
 Info addition
 - add "poet="poetname"" header in all the pieces.
 - add "copyright" header in all the pieces.
