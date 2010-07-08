@@ -18,9 +18,11 @@
 \score {
 <<
 \chords {
+	\set chordChanges = ##t
+
 	\partial 2 r2 |
 	\repeat volta 2 {
-		c2:maj7 a2:min9 | d2:min7 g2:7 | c1:maj7 | r2 g2:7 | \break
+		c2:maj7 a2:min9 | d2:min7 g2:7 | c1:maj7 | c2:maj7 g2:7 | \break
 		c2:maj7 g2:7 | c2:maj7 cis2:dim7 | d1:min7 | g1:7 | \break
 		c2/e aes2:7/ees | d2:min7 g2:7 |
 	}
@@ -31,7 +33,7 @@
 		}
 		{
 			g2:min7 c2:7 | f2:maj7 f4:min7 bes4:7 | \break
-			c2 a2:7 | d2:min7 g2:7 | c1:maj7 | r1 | \break
+			c2 a2:7 | d2:min7 g2:7 | c1:maj7 | c1:maj7 | \break
 		}
 	}
 }
@@ -75,6 +77,11 @@
 	then the world dis -- cov -- ers as
 }
 >>
-\midi {}
-\layout {}
+	\midi {
+		\context {
+			\Score
+			tempoWholesPerMinute = #(ly:make-moment 130 4)
+		}
+	}
+	\layout {}
 }
