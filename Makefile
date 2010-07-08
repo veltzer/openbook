@@ -44,6 +44,9 @@ endif
 .PHONY: all
 all: $(ALL)
 
+.PHONY: pdf
+pdf: $(PDF)
+
 .PHONY: debug
 debug:
 	$(info LY is $(LY))
@@ -68,7 +71,7 @@ clean_all_png:
 .PHONY: check_extra_files
 check_extra_files:
 	-@find -type f -and -not -name "Makefile" -and -not -path "./.git/*" -and -not -name "*.ly" -and -not -name "*.lyi" -and -not -name "*.txt" -and -not -name "*.ly.d" -and -not -name "*.pl" -and -not -name "*.grammer" -and -not -name "*.pdf" -and -not -name "*.ps" -and -not -name "*.midi"
-.PHONY: check_comments
+.PHONY: check_comments
 check_comments:
 	-@grep "%%" `find . -name "*.ly"`
 .PHONY: check_composer_and
