@@ -15,6 +15,8 @@
 \score {
 <<
 \chords {
+	\set chordChanges = ##t
+
 	\mark "Intro"
 	c1 | g1:7 | a1:min | f1 | g1:7 | d1:min | f1 | c2. g4:7 |
 	\mark "Verse"
