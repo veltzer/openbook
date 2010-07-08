@@ -17,6 +17,7 @@ use Perl6::Slurp qw();
 use Parse::RecDescent qw();
 
 my($debug)=0;
+my($report)=1;
 my($limit_imports)=1;
 
 my($dbh)=DBI->connect('dbi:mysql:myworld','','',{
@@ -94,7 +95,9 @@ sub handler() {
 				return;
 			}
 		}
-		#also use $hash->{"completion"}
+		if($report) {
+			print "importing [".$hash->{"title"}."]\n";
+		}
 		$dbh->do("insert into TbMsLilypond (source,pdf,ps,title,subtitle,composer,copyright,style,piece,poet) values(?,?,?,?,?,?,?,?,?,?)",
 			undef,
 			$dt_source,
