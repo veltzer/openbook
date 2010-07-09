@@ -2,6 +2,9 @@ build system
 ============
 - make each build make a temp folder so that I could build at the same time.
 
+Lilypond cheet sheet
+====================
+- create a standards/lead sheet cheet sheet for lilypond.
 
 Info addition
 - add "poet="poetname"" header in all the pieces.
