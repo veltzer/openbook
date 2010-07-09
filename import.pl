@@ -69,12 +69,15 @@ sub handler() {
 		my($name,$path,$suffix)=File::Basename::fileparse($source,".ly");
 		my($pdf)=$path.$name.".pdf";
 		my($ps)=$path.$name.".ps";
+		my($midi)=$path.$name.".midi";
 		my($dt_source);
 		$dt_source=Perl6::Slurp::slurp($source);
 		my($dt_pdf);
 		$dt_pdf=Perl6::Slurp::slurp($pdf);
 		my($dt_ps);
 		$dt_ps=Perl6::Slurp::slurp($ps);
+		my($dt_midi);
+		$dt_midi=Perl6::Slurp::slurp($midi);
 		if($debug) {
 			print "file is $file\n";
 			print "name is $name\n";
@@ -98,11 +101,12 @@ sub handler() {
 		if($report) {
 			print "importing [".$hash->{"title"}."]\n";
 		}
-		$dbh->do("insert into TbMsLilypond (source,pdf,ps,title,subtitle,composer,copyright,style,piece,poet) values(?,?,?,?,?,?,?,?,?,?)",
+		$dbh->do("insert into TbMsLilypond (source,pdf,ps,midi,title,subtitle,composer,copyright,style,piece,poet) values(?,?,?,?,?,?,?,?,?,?,?)",
 			undef,
 			$dt_source,
 			$dt_pdf,
 			$dt_ps,
+			$dt_midi,
 			$hash->{"title"},
 			$hash->{"subtitle"},
 			$hash->{"composer"},
