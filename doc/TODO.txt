@@ -1,6 +1,9 @@
 build system
 ============
 - make each build make a temp folder so that I could build at the same time.
+- create wavs, ogg and mp3 from the midi.
+- add my own recording of the tune in mp3 or something for download.
+- add links to my favourite performances of the tune.
 
 Lilypond cheet sheet
 ====================
