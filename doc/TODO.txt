@@ -4,8 +4,6 @@ build system
 - create wavs, ogg and mp3 from the midi.
 - add my own recording of the tune in mp3 or something for download.
 
-small change in the file for testing of git purposes
-
 Lilypond cheet sheet
 ====================
 - create a standards/lead sheet cheet sheet for lilypond.
