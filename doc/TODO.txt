@@ -3,24 +3,33 @@ build system
 - make each build make a temp folder so that I could build at the same time.
 - create wavs, ogg and mp3 from the midi.
 - add my own recording of the tune in mp3 or something for download.
-- add links to my favourite performances of the tune.
 
 Lilypond cheet sheet
 ====================
 - create a standards/lead sheet cheet sheet for lilypond.
 
 Info addition
+=============
 - add "poet="poetname"" header in all the pieces.
 - add "copyright" header in all the pieces.
 
+Database additions
+==================
 - get last changed date (the data of the *.ly file ?!?) and put it in the database
 	on import. Show it in on the web.
 	Enable a direct link to a files history from git from the web.
+- add links to my favourite performances of the tune.
+- add wavs ogg and mp3 once they are created.
 
 - demo page should show:
-	- complex chords
+	- complex chords (7.5-)
 	- chords with alternate bases.
 	- matching lyrics to melody.
+		many words per one note
+		splitting a word
+	- the thing to type at \chords in order that chords will re-appear if when
+		they are not changed.
+	- changing the speed of the tune
 
 - add "todo" in all the pieces in the same style.
 - add "completion level" in all the pieces. define completion levels and mark them out.
