@@ -132,7 +132,7 @@
 	join with me in har -- mo -- ny and sing a song of lov -- ing.
 	We're bound to get in tune a -- gain be -- fore too long.
 	There'll be no De -- sa -- fi -- na -- do when your heart be -- longs to me com -- plete -- ly.
-	Then you won't be Slight -- ly Ouf Of Tune, you'll sing a -- long with me.
+	Then you won't be Slight -- ly Out Of Tune, you'll sing a -- long with me.
 }
 >>
 	\midi {
