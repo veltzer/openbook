@@ -3,7 +3,7 @@
 	title="Bass Lines"
 	style="Jazz"
 
-	complet="5"
+	completion="5"
 }
 
 %{
@@ -26,8 +26,11 @@
 	\clef bass
 	\relative c, {
 
-	d4 e f fis | g d b des | c d e f | g f e des |
-	d4 e f fis | g aes a b | c d e d | c g e des |
+		d4 e f fis | g d b des | c d e f | g f e des |
+		d4 e f fis | g aes a b | c d e d | c g e des |
+		d'4 a f fis | g aes a b | c e g f | e d des b |
+		d'4 a f fis | g d b des | c g c d | e d des b |
+		d4 e f fis | g b d des | c g e f | g aes a b |
 
 	}
 }
