@@ -56,6 +56,10 @@ debug:
 	$(info PS is $(PS))
 	$(info MIDI is $(MIDI))
 
+.PHONY: todo
+todo:
+	-@grep TODO $(LY)
+
 .PHONY: clean
 clean:
 	rm -rf $(CLEAN)
