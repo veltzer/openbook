@@ -19,6 +19,7 @@
 	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
 	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
 	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
 }
 \new Voice="melody" {
 	\time 4/4
@@ -27,6 +28,7 @@
 	\relative c, {
 
 		d4 e f fis | g d b des | c d e f | g f e des |
+		d4 e f fis | g f d des | c d e f | g f e des |
 		d4 e f fis | g aes a b | c d e d | c g e des |
 		d'4 a f fis | g aes a b | c e g f | e d des b |
 		d'4 a f fis | g d b des | c g c d | e d des b |
