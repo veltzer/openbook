@@ -65,13 +65,14 @@ sub get_meta_data($) {
 sub handler() {
 	my($file)=$File::Find::name;
 	if($file=~/\.ly$/) {
-		my($source)=$file;
-		my($name,$path,$suffix)=File::Basename::fileparse($source,".ly");
+		my($ly)=$file;
+		my($name,$path,$suffix)=File::Basename::fileparse($ly,".ly");
 		my($pdf)=$path.$name.".pdf";
 		my($ps)=$path.$name.".ps";
 		my($midi)=$path.$name.".midi";
-		my($dt_source);
-		$dt_source=Perl6::Slurp::slurp($source);
+		my($filebasename)=$name;
+		my($dt_ly);
+		$dt_ly=Perl6::Slurp::slurp($ly);
 		my($dt_pdf);
 		$dt_pdf=Perl6::Slurp::slurp($pdf);
 		my($dt_ps);
@@ -101,9 +102,10 @@ sub handler() {
 		if($report) {
 			print "importing [".$hash->{"title"}."]\n";
 		}
-		$dbh->do("insert into TbMsLilypond (source,pdf,ps,midi,title,subtitle,composer,copyright,style,piece,poet) values(?,?,?,?,?,?,?,?,?,?,?)",
+		$dbh->do("insert into TbMsLilypond (filebasename,ly,pdf,ps,midi,title,subtitle,composer,copyright,style,piece,poet) values(?,?,?,?,?,?,?,?,?,?,?,?)",
 			undef,
-			$dt_source,
+			$filebasename,
+			$dt_ly,
 			$dt_pdf,
 			$dt_ps,
 			$dt_midi,
