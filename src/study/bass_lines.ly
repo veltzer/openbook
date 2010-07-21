@@ -26,12 +26,17 @@
 	\key f \major
 	\clef bass
 	\relative c, {
-
+		\mark "A"
 		d4 e f fis | g d b des | c d e f | g f e des |
+		\mark "B"
 		d4 e f fis | g f d des | c d e f | g f e des |
+		\mark "C"
 		d4 e f fis | g aes a b | c d e d | c g e des |
+		\mark "D"
 		d'4 a f fis | g aes a b | c e g f | e d des b |
+		\mark "E"
 		d'4 a f fis | g d b des | c g c d | e d des b |
+		\mark "F"
 		d4 e f fis | g b d des | c g e f | g aes a b |
 
 	}
