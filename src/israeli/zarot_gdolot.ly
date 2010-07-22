@@ -16,8 +16,7 @@ harmony=\new ChordNames \with {
 	\override BarLine #'bar-size = #4
 	\consists "Bar_engraver"
 }
-\chordmode
-{
+\chordmode {
 	\mark "verse"
 	\repeat volta 2 {
 		c2 b2:min7.5- | a2:min7 d2:min7 | g2:7 c2:maj7 | d2:min7 g2:7 | \break
