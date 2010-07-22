@@ -5,6 +5,8 @@ build system
 - add my own recording of the tune in mp3 or something for download.
 - add "topic" to each piece. Topics at first should be refelections of the directory
 	the piece is in. Add it to the database.
+- make sure the build system checks that each file has the right tags at the header
+	in the right order (whats the best way to do this ?!?).
 
 Lilypond cheet sheet
 ====================
