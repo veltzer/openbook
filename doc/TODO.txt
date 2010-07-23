@@ -7,6 +7,7 @@ build system
 	the piece is in. Add it to the database.
 - make sure the build system checks that each file has the right tags at the header
 	in the right order (whats the best way to do this ?!?).
+- create compressed postscripts and not regular ones (postscript is not a compressed format).
 
 Lilypond cheet sheet
 ====================

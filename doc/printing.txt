@@ -36,8 +36,11 @@ which is better (postscript or pdf) ?
 =====================================
 Postscript: looks better. This is the original format which only then gets converted
 to pdf so probably has other advantages. It is a little larger. Postscript format sometime
-looses the footers if you do not use the "bottom-margin" trick mentioned above.
+looses the footers if you do not use the "bottom-margin" trick mentioned above. If you want
+to make it smaller then compress it (this is the one advantage of pdf).
 PDF: more portable, less weight, doesn't look as good as postscript.
+
+references: http://www.complang.tuwien.ac.at/anton/why-not-pdf.html
 
 Summary
 =======
