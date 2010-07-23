@@ -1,10 +1,11 @@
 ALL:=
 CLEAN:=
 
-DO_PDF:=1
+DO_PDF:=0
 DO_PNG:=0
-DO_PS:=1
-DO_MIDI:=1
+DO_PS:=0
+DO_MIDI:=0
+DO_STAMP:=1
 
 LY:=$(shell find . -name "*.ly")
 LYD:=$(addsuffix .d,$(LY))
@@ -13,6 +14,8 @@ PDF:=$(addsuffix .pdf,$(basename $(LY)))
 PNG:=$(addsuffix .png,$(basename $(LY)))
 PS:=$(addsuffix .ps,$(basename $(LY)))
 MIDI:=$(addsuffix .midi,$(basename $(LY)))
+
+STAMP:=$(addsuffix .stamp,$(basename $(LY)))
 
 ALL:=$(ALL) $(LYD)
 ifeq ($(DO_PDF),1)
@@ -27,25 +30,13 @@ endif
 ifeq ($(DO_MIDI),1)
 	ALL:=$(ALL) $(MIDI)
 endif
-CLEAN:=$(CLEAN) $(LYD)
-ifeq ($(DO_PDF),1)
-	CLEAN:=$(CLEAN) $(PDF)
+ifeq ($(DO_STAMP),1)
+	ALL:=$(ALL) $(STAMP)
 endif
-ifeq ($(DO_PNG),1)
-	CLEAN:=$(CLEAN) $(PNG)
-endif
-ifeq ($(DO_PS),1)
-	CLEAN:=$(CLEAN) $(PS)
-endif
-ifeq ($(DO_MIDI),1)
-	CLEAN:=$(CLEAN) $(MIDI)
-endif
+CLEAN:=$(CLEAN) $(LYD) $(PDF) $(PNG) $(PS) $(MIDI) $(STAMP)
 
 .PHONY: all
 all: $(ALL)
-
-.PHONY: pdf
-pdf: $(PDF)
 
 .PHONY: debug
 debug:
@@ -55,6 +46,7 @@ debug:
 	$(info PNG is $(PNG))
 	$(info PS is $(PS))
 	$(info MIDI is $(MIDI))
+	$(info STAMP is $(STAMP))
 
 .PHONY: todo
 todo:
@@ -74,7 +66,7 @@ clean_all_png:
 
 .PHONY: check_extra_files
 check_extra_files:
-	-@find -type f -and -not -name "Makefile" -and -not -path "./.git/*" -and -not -name "*.ly" -and -not -name "*.lyi" -and -not -name "*.txt" -and -not -name "*.ly.d" -and -not -name "*.pl" -and -not -name "*.grammer" -and -not -name "*.pdf" -and -not -name "*.ps" -and -not -name "*.midi"
+	-@find -type f -and -not -name "Makefile" -and -not -path "./.git/*" -and -not -name "*.ly" -and -not -name "*.lyi" -and -not -name "*.txt" -and -not -name "*.ly.d" -and -not -name "*.pl" -and -not -name "*.grammer" -and -not -name "*.pdf" -and -not -name "*.ps" -and -not -name "*.midi" -and -not -name "*.stamp" -and -not -name ".gitignore"
 .PHONY: check_comments
 check_comments:
 	-@grep "%%" `find . -name "*.ly"`
@@ -115,6 +107,12 @@ $(PS): %.ps: %.ly
 $(MIDI): %.midi: %.ly
 	lilypond --pdf $(LYFLAGS) -o /tmp/foo $<
 	mv /tmp/foo.midi $@
+$(STAMP): %.stamp: %.ly
+	lilypond --pdf $(LYFLAGS) -o /tmp/foo $<
+	mv /tmp/foo.ps $(basename $<).ps
+	mv /tmp/foo.pdf $(basename $<).pdf
+	mv /tmp/foo.midi $(basename $<).midi
+	touch $@
 $(LYD): %.ly.d: %.ly
 	./lilydep.pl $< $@ $(basename $<).pdf $(basename $<).ps $(basename $<).midi
 
