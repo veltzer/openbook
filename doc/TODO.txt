@@ -8,10 +8,6 @@ build system
 - make sure the build system checks that each file has the right tags at the header
 	in the right order (whats the best way to do this ?!?).
 - create compressed postscripts and not regular ones (postscript is not a compressed format).
-- the build is very inefficient since it runs a separate build process per product (pdf,ps,midi)
-	which a single run can be used to produce all. How do I do this using make? Is there
-	a way ?!? Investigate make, find a way, document it in my makefile demos, use it here
-	and make the build system much faster.
 
 Lilypond cheet sheet
 ====================
