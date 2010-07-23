@@ -5,7 +5,7 @@
 # from the lilypond files themselves) into my database (into a lilypond table).
 
 # TODO:
-# - use a real lilypond parser instead of the current hack (see the get_meta_data function).
+# - improve the lilypond parser to get more data. 
 
 use strict;
 use diagnostics;
@@ -33,7 +33,8 @@ sub handle_error() {
 $dbh->{HandleError} =\&handle_error;
 
 my($grammer);
-$grammer=Perl6::Slurp::slurp("lilypond.grammer");
+my($grammer_file)="data/lilypond.grammer";
+$grammer=Perl6::Slurp::slurp($grammer_file);
 #print "grammer is $grammer";
 $::RD_HINT=1;
 $::RD_WARN=1;
