@@ -2,6 +2,9 @@
 \header {
 	title="Bass Lines"
 	style="Jazz"
+	piece="Upbeat Jazz"
+
+	copyright="[no copyright notice for study materials]"
 
 	completion="5"
 }
