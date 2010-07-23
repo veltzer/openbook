@@ -14,8 +14,12 @@
 	completion="0"
 }
 
+%% make lilypond use paper of size a4 (Is this the default ?!?)
 #(set-default-paper-size "a4")
 \paper {
+	%% make lilypond distance the footer from the bottom of the page more
+	%% it seems that if you don't do something line this you're going to have
+	%% a real problem seeing the footer in postscript printing...
 	bottom-margin = 2.5\cm
 }
 
