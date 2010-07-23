@@ -24,7 +24,8 @@ if($debug) {
 }
 
 my($grammer);
-$grammer=Perl6::Slurp::slurp("lilypond.grammer");
+my($grammer_file)="data/lilypond.grammer";
+$grammer=Perl6::Slurp::slurp($grammer_file);
 #print "grammer is $grammer";
 $::RD_HINT=1;
 $::RD_WARN=1;

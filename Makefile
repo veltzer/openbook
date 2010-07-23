@@ -1,10 +1,10 @@
 ALL:=
 CLEAN:=
 
-DO_PDF:=0
-DO_PNG:=0
-DO_PS:=0
-DO_MIDI:=0
+DO_PDF:=1
+DO_PNG:=1
+DO_PS:=1
+DO_MIDI:=1
 DO_STAMP:=1
 
 LY:=$(shell find . -name "*.ly")
@@ -75,7 +75,7 @@ check_composer_and:
 	-@grep "composer=\".* and .*\"" `find . -name "*.ly" -or -name "*.lyi"`
 .PHONY: check_ws
 check_ws:
-	-@./pgrep.pl "  | $$|\w\t|\t$$|\*\\d\:" `find . -name "*.ly" -or -name "*.lyi"`
+	-@./scripts/pgrep.pl "  | $$|\w\t|\t$$|\*\\d\:" `find . -name "*.ly" -or -name "*.lyi"`
 .PHONY: check_common
 check_common:
 	-@grep --files-without-match "common.lyi" `find . -name "*.ly"`
@@ -95,18 +95,26 @@ check_all: check_empty_copyright check_common check_ws check_composer_and check_
 
 LYFLAGS:=
 
-$(PDF): %.pdf: %.ly
-	lilypond --pdf $(LYFLAGS) -o /tmp/foo $<
-	mv /tmp/foo.pdf $@
-$(PNG): %.png: %.ly
-	lilypond --png $(LYFLAGS) -o /tmp/foo $<
-	mv /tmp/foo.png $@
-$(PS): %.ps: %.ly
-	lilypond --ps $(LYFLAGS) -o /tmp/foo $<
-	mv /tmp/foo.ps $@
-$(MIDI): %.midi: %.ly
-	lilypond --pdf $(LYFLAGS) -o /tmp/foo $<
-	mv /tmp/foo.midi $@
+#$(PDF): %.pdf: %.ly
+#	lilypond --pdf $(LYFLAGS) -o /tmp/foo $<
+#	mv /tmp/foo.pdf $@
+#$(PNG): %.png: %.ly
+#	lilypond --png $(LYFLAGS) -o /tmp/foo $<
+#	mv /tmp/foo.png $@
+#$(PS): %.ps: %.ly
+#	lilypond --ps $(LYFLAGS) -o /tmp/foo $<
+#	mv /tmp/foo.ps $@
+#$(MIDI): %.midi: %.ly
+#	lilypond --pdf $(LYFLAGS) -o /tmp/foo $<
+#	mv /tmp/foo.midi $@
+$(PNG): %.png: %.stamp
+
+$(PS): %.ps: %.stamp
+
+$(PDF): %.pdf: %.stamp
+
+$(MIDI): %.midi: %.stamp
+
 $(STAMP): %.stamp: %.ly
 	lilypond --pdf $(LYFLAGS) -o /tmp/foo $<
 	mv /tmp/foo.ps $(basename $<).ps
@@ -114,7 +122,7 @@ $(STAMP): %.stamp: %.ly
 	mv /tmp/foo.midi $(basename $<).midi
 	touch $@
 $(LYD): %.ly.d: %.ly
-	./lilydep.pl $< $@ $(basename $<).pdf $(basename $<).ps $(basename $<).midi
+	./scripts/lilydep.pl $< $@ $(basename $<).pdf $(basename $<).ps $(basename $<).midi
 
 # include the deps files (no warnings)
 -include $(LYD)
