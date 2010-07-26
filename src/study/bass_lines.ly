@@ -31,27 +31,69 @@
 	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
 	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
 	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
 }
 \new Voice="melody" {
 	\time 4/4
 	\key f \major
 	\clef bass
 	\relative c, {
-		%% Dm has: d e f fis, d a f fis, d f a aes
-		%% G7 has: g d b des, g f d des, g aes a b
-		%% Cmaj has:
-		%% c d e d c g e des 
-		%% c d e f g f e des
-		%% c g c d e d des b
-		%% c g e f g aes a b
-		%% I should have at least 3 x 3 x 4 = 9 X 4 = 36 options
+		%% I should have at least 17 x 3 x 4 = 51 X 4 = 204 options
+
+		%% 16 options for Dm7
 		\mark "Dm 1"
 		d4 e f fis | g d b des | c d e f | g f e des |
-		\mark "Dm 2"
-		d'4 a f fis | g d b des | c d e f | g f e des |
-		\mark "Dm 3"
-		d f a aes | g d b des | c d e f | g f e des |
 
+		\mark "Dm 2"
+		d4 f a aes | g d b des | c d e f | g f e des |
+		\mark "Dm 3"
+		d4 f a fis | g d b des | c d e f | g f e des |
+		\mark "Dm 4"
+		d4 a' f aes | g d b des | c d e f | g f e des |
+		\mark "Dm 5"
+		d4 a' f fis | g d b des | c d e f | g f e des |
+		
+		\mark "Dm 6"
+		d'4 f, a aes | g d b des | c d e f | g f e des |
+		\mark "Dm 7"
+		d'4 f, a fis | g d b des | c d e f | g f e des |
+		\mark "Dm 8"
+		d'4 a f aes | g d b des | c d e f | g f e des |
+		\mark "Dm 9"
+		d'4 a f fis | g d b des | c d e f | g f e des |
+
+		\mark "Dm 10"
+		d'4 c a aes | g d b des | c d e f | g f e des |
+		\mark "Dm 11"
+		d'4 c a fis | g d b des | c d e f | g f e des |
+		\mark "Dm 12"
+		d'4 c f, aes | g d b des | c d e f | g f e des |
+		\mark "Dm 13"
+		d'4 c f, fis | g d b des | c d e f | g f e des |
+
+		\mark "Dm 14"
+		d'4 d, a' aes | g d b des | c d e f | g f e des |
+		\mark "Dm 15"
+		d'4 d, a' fis | g d b des | c d e f | g f e des |
+		\mark "Dm 16"
+		d'4 d, f aes | g d b des | c d e f | g f e des |
+		\mark "Dm 17"
+		d'4 d, f fis | g d b des | c d e f | g f e des |
+
+		%% 3 options for G7
 		\mark "G7 1"
 		d4 e f fis | g d b des | c d e f | g f e des |
 		\mark "G7 2"
