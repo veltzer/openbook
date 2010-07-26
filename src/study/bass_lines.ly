@@ -12,6 +12,9 @@
 %{
 	TODO:
 	- Emphasize the bars which are important in the variations (how do you do that in lilypond ?)
+	- add short bass lines, ones which form the harmony Dm7,G7,Cm7,F7,...
+	- add long bass lines for harmony: Dm7,Dm7,G7,G7
+	- add turn around bass lines for harmony: Cmaj7,A7,Dm7,G7
 %}
 
 \score {
