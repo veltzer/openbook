@@ -9,7 +9,7 @@
 	piece="Med. Ballad"
 	poet="unknown"
 
-	completion="5"
+	completion="2"
 }
 
 %{
