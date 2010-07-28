@@ -1,0 +1,1 @@
+- midi translation does not respect voltas. If I have: A V1 A V2 Then midi will play: A V1 V2 which sounds bad.
