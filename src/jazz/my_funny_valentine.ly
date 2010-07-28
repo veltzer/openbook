@@ -1,42 +1,74 @@
 \include "src/include/common.lyi"
 \header {
 	title="My Funny Valentine"
+	subtitle=""
 	composer="Richard Rodgers"
-	poet="Lorenz Hart"
+	copyright="1937 by Chappell & Co., Inc. Copyright Renewed"
 	style="Jazz"
 	piece="Med Swing"
+	poet="Lorenz Hart"
+	completion="5"
 }
 
-harmony=\chords {
-	\repeat unfold 2 {
-		c1:m7 | c:m7/+b | c:m7/bes | a:m7.5- |
-		aes:maj7 | f:m7 |
-	}
-	\alternative {
-		{ d:m7.5- | g:7 | }
-		{ f:m7.5- | bes:7.9-}
-	}
-	\repeat unfold 4 { ees2:maj7 f:m7/+bes | }
+%{
+	TODO:
+%}
 
-	ees2:maj7 g:7 | c:m7 bes:m7 | aes1:maj7 | d2:m7.5- g:7 |
-	c1:m7 | c:m7/+b | c:m7/bes | a:m7.5- |
-	aes:maj7 | d2:m7.5- g:7 | c:m7 f:7.9- | bes:m7 ees:7.9- |
-	aes1:maj7 | f2:m7 bes:7 | ees1:maj7 | d2:m7.5- g:7 |
+\score {
+<<
+\chords {
+	\set chordChanges = ##t
+	c1:m7 | c:m7/+b | c:m7/+bes | a:m7.5- |
+	aes:maj7 | f:m7.9 | d:m7.5- | g:7.9- |
+	c1:m7 | c:m7/+b | c:m7/+bes | f/a |
+	aes:maj7 | a4:m7.5- d:7.5-.9- g:m7 c:7.5-.9- | f1:m7.5- | bes:7.9- |
+
+	ees2:maj7 f:m7 | g:m7 f:m7 | ees2:maj7 f:m7 | g:m7 f:m7 |
+	ees2:maj7 g4:7.5+ g:7 | c2:m7 bes4:m7 a:7.9- | aes1:maj7 | d2:m7.5- g:7.9- |
+
+	c1:m7 | c:m7/+b | c:m7/+bes | f/a |
+	aes:maj7 | d2:m7.5- g:7.9- | c:m7 b:7.9 | bes:m7.9 a:7.5-.9+ |
+	aes1:maj7 | f2:m7 bes:7 | ees1:maj7 | ees1:maj7 |
 }
-
-tune=\relative a {
+\new Voice="melody" \relative a {
 	\time 4/4
-	\key c \major
+	\key c \minor
 
-	a2 b4 c | b4. c8 b2 | a2 b4 c | b4. c8 b2 |
-	a2 b4 c | g'2 f4 e | \break d1 ~ | d \bar "||"
-	c2 d4 e | d4. e8 d2 | c2 d4 e | d4. e8 d2 | \break
-	c2 d4 e | b'4. a8 g4. fis8 | f1 ~ | f2 e4 d \bar "||"
-	g4 r8 c, c4 b | c2 c4 b | \break a'4 r8 c,8 c4 b | c2 c4 b |
-	b' r8 c, c4 b | c2 d4 e | a1 ~ | a2 b, \bar "||" \break
-	a2 b4 c | b4. c8 b2 | c2 d4 e | d4. e8 d2 |
-	a'2 b4 c | b4. c8 b2 | \break c1 ~ | c |
-	c,2 d4 e | d4. e8 d2 | c1 ~ | c4 r r2 \bar "|."
+	c2 d4 ees | d4. ees8 d2 | c2 d4 ees | d4. ees8 d2 |
+	c2 d4 ees | bes'2 aes4 g | f1 ~ | f \bar "||" \break
+
+	ees2 f4 g | f4. g8 f2 | ees2 f4 g | f4. g8 f2 |
+	ees2 f4 g | d'4. c8 bes4. a8 | aes1 ~ | aes2 g4 f \bar "||" \break
+
+	bes4 r8 ees, ees4 d | ees2 ees4 d | c'4 r8 ees,8 ees4 d | ees2 ees4 d |
+	bes' r8 ees, ees4 d | ees2 f4 g | c1 ~ | c2 d, \bar "||" \break
+
+	c2 d4 ees | d4. ees8 d2 | ees2 f4 g | f4. g8 f2 |
+	c'2 d4 ees | d4. ees8 d2 | ees1 ~ | ees |
+	ees,2 f4 g | f4. g8 f2 | ees1 ~ | ees2. r4 \bar "|."
 }
+\new Lyrics \lyricsto "melody" {
+	My Fun -- ny Val -- en -- tine,
+	Sweet com -- ic val -- en -- tine,
+	You make me smile with my heart.
+	Your looks are laugh -- a -- ble, un -- pho -- to -- graph -- a -- ble,
+	Yet, you're my fav' -- rite work of art.
 
-\include "src/include/harmony_tune.lyi"
+	Is your fig -- ure less than Greek?
+	Is your mouth a lit -- tle weak?
+	When you o -- pen it to speak, are you smart?
+
+	But don't change a hair for me,
+	Not if you care for me,
+	Stay lit -- tle Val -- en -- tine, stay!
+	Each day is Val -- en -- tine's day.
+}
+>>
+	\midi {
+		\context {
+			\Score
+			tempoWholesPerMinute = #(ly:make-moment 130 4)
+		}
+	}
+	\layout {}
+}

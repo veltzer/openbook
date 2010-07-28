@@ -32,7 +32,7 @@
 		}
 	}
 	bes1:7 | bes1:7 | ees1:7 | e1:dim7 |
-	bes2:7 aes2:7 | aes2:7 g2:7 | c2:7 f2:7 | bes1:7 \bar "||"
+	bes2:7 aes2:7 | aes2:7 g2:7 | c2:7 f2:7 | bes1:7 \bar "|."
 
 }
 
