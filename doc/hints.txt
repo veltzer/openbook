@@ -1,0 +1,25 @@
+This is a set of lilypond hints:
+
+- \chords is akin to \new ChordNames but with something else... What is it ?
+	find out from the lilypond documentation...
+
+- in order to put guitar chord notations just use:
+	\include "predefined-guitar-fretboards.ly"
+	\new FretBoards {
+		\chordmode {
+			[chords go here]	
+		}
+	}
+  The problem with this is that you wind up repeating the chord names yet again just for the
+  guitar diagrams. Find out how to avoid this...
+
+
+Lyrics
+======
+- breaking up lyrics
+	eve -- ry day I write the book 
+	eve - will be on the first note
+	ry - will be on the second one.
+- one syllable or word on a couple of notes
+	I'm with you rain _ or shine!
+	rain will be on two notes (rain _ _ will be places on three notes).
