@@ -13,6 +13,7 @@
 
 %{
 	TODO:
+	Enter Amits chords for this as an alternative...
 %}
 
 \score {
