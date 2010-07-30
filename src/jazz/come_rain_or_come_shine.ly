@@ -61,7 +61,7 @@
 	But don't ev -- er bet me,
 	'Cause I'm gon -- na be true if you let me.
 
-	You're gon -- na love me like no -- body's loved me,
+	You're gon -- na love me like no -- bod -- y's loved me,
 	Come Rain Or Come Shine.
 	Hap -- py to -- geth -- er, un -- hap -- py to -- geth -- er
 	And won't it be fine.
@@ -69,7 +69,7 @@
 	Days may be cloud -- y or sun -- ny,
 	We're in or we're out of the mon -- ey.
 	But I'm with you al -- ways,
-	I'm with you rain or shine!
+	I'm with you rain _ or shine!
 }
 >>
 	\midi {
