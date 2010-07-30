@@ -23,3 +23,10 @@ Lyrics
 - one syllable or word on a couple of notes
 	I'm with you rain _ or shine!
 	rain will be on two notes (rain _ _ will be places on three notes).
+
+Midi production
+===============
+- if you have multiple scores in one file then you will need multipl \midi statements which
+will lead to multiple midi files produced when that file gets processed.
+
+- Is there a way to catenates all the midi files from within lilypond ? (tell lilypond that all midi should come out in a single midi file ?)
