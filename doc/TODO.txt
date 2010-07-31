@@ -8,6 +8,13 @@ build system
 - make sure the build system checks that each file has the right tags at the header
 	in the right order (whats the best way to do this ?!?).
 - create compressed postscripts and not regular ones (postscript is not a compressed format).
+- make a book with all of the standards.
+	- how do I include all the files ? Should I write a script ?!?
+
+Material
+========
+- write the material for drumming training.
+	get material from the drummers course at Rimon.
 
 Lilypond cheet sheet
 ====================
@@ -25,8 +32,9 @@ Database additions
 	Enable a direct link to a files history from git from the web.
 - add links to my favourite performances of the tune.
 - add wavs ogg and mp3 once they are created.
+- assume many jpegs and many midis per compilation. Store them all in the database.
 
-- demo page should show:
+- cheet sheet should show:
 	- complex chords (7.5-)
 	- chords with alternate bases.
 	- matching lyrics to melody.
@@ -35,13 +43,14 @@ Database additions
 	- the thing to type at \chords in order that chords will re-appear if when
 		they are not changed.
 	- changing the speed of the tune
+	- all the rest on the stuff I have in hints.txt.
+	* once the cheet sheet it done I can get ridd of the hints.txt file.
 
 - add "todo" in all the pieces in the same style.
 - add "completion level" in all the pieces. define completion levels and mark them out.
 	put them in the database.
 	show them on the php.
 - add "tags" header in all the pieces (jazz, swing, bossa etc...).
-- create midi,ps (multi rules in the makefile ?!?)
 - make all of tunes have the same high level structure as "a_foggy_day.ly". This is much
 	better because:
 	- You don't have to have a stupid strucutre at the end which is replicated for each
@@ -52,13 +61,7 @@ Database additions
 	Record all of these understandings in some kind of standards document that I will
 	start for all of this material.
 
-- make a book with all of the standards.
-	- how do I include all the files ? Should I write a script ?!?
 - get number of pages and import that into the database too.
 	How do we get it ?!?
 	- count the number of pages in the pdf (some kind of pdf parser ?!?).
 	- count the number of images created when --png is used.
-
-- why doesn't the printing come out right ?!?
-	- in pdf both the top and botton are sort of cut off.
-	- postscript the bottom doesnt show.
