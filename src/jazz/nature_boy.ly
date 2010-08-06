@@ -3,6 +3,7 @@
 	title="Nature Boy"
 	subtitle=""
 	composer="Eben Ahbez"
+	copyright="-- help me fill this out --"
 	style="Jazz"
 	piece="Med. Ballad"
 	poet="Eben Ahbez"
