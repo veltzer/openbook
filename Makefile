@@ -8,6 +8,7 @@ DO_MIDI:=1
 DO_STAMP:=1
 DO_WAV:=1
 DO_MP3:=1
+DO_OGG:=1
 
 # do you actually want to use dependency information ?
 USE_DEPS:=0
@@ -22,6 +23,7 @@ FILES_MIDI:=$(addsuffix .midi,$(basename $(FILES_LY)))
 FILES_STAMP:=$(addsuffix .stamp,$(basename $(FILES_LY)))
 FILES_WAV:=$(addsuffix .wav,$(basename $(FILES_LY)))
 FILES_MP3:=$(addsuffix .mp3,$(basename $(FILES_LY)))
+FILES_OGG:=$(addsuffix .ogg,$(basename $(FILES_LY)))
 
 ALL:=$(ALL) $(FILES_LYD)
 ifeq ($(DO_PDF),1)
@@ -45,7 +47,10 @@ endif
 ifeq ($(DO_MP3),1)
 	ALL:=$(ALL) $(FILES_MP3)
 endif
-CLEAN:=$(CLEAN) $(FILES_LYD) $(FILES_PDF) $(FILES_PNG) $(FILES_PS) $(FILES_MIDI) $(FILES_STAMP) $(FILES_WAV) $(FILES_MP3)
+ifeq ($(DO_OGG),1)
+	ALL:=$(ALL) $(FILES_OGG)
+endif
+CLEAN:=$(CLEAN) $(FILES_LYD) $(FILES_PDF) $(FILES_PNG) $(FILES_PS) $(FILES_MIDI) $(FILES_STAMP) $(FILES_WAV) $(FILES_MP3) $(FILES_OGG)
 
 .PHONY: all
 all: $(ALL)
@@ -64,6 +69,7 @@ debug:
 	$(info FILES_STAMP is $(FILES_STAMP))
 	$(info FILES_WAV is $(FILES_WAV))
 	$(info FILES_MP3 is $(FILES_MP3))
+	$(info FILES_OGG is $(FILES_OGG))
 
 .PHONY: todo
 todo:
@@ -146,6 +152,8 @@ $(FILES_WAV): %.wav: %.midi
 	timidity $< -Ow -o $@ > /dev/null
 $(FILES_MP3): %.mp3: %.wav
 	lame $< $@
+$(FILES_OGG): %.ogg: %.midi
+	timidity $< -Ov -o $@
 
 # include the deps files (no warnings)
 ifeq ($(USE_DEPS),1)

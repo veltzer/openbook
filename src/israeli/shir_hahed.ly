@@ -34,7 +34,7 @@
 	e2. | e2. | cis2.:m | cis2.:m |
 	fis2.:m | fis2.:m | b2.:7 | b2.:7/a |
 	aes2. | cis2.:m | aes2. | cis4.:m cis4.:m/b |
-	a2. | \time 3/8 e | \time 6/8 cis2.:m |
+	a2. | \time 3/8 e4. | \time 6/8 cis2.:m |
 	fis2.:m | fis2.:m | b2.:7 | b2.:7 |
 }
 \new Voice="melody" \relative f' {
