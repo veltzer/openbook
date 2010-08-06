@@ -7,6 +7,7 @@ DO_PS:=1
 DO_MIDI:=1
 DO_STAMP:=1
 DO_WAV:=1
+DO_MP3:=1
 
 FILES_LY:=$(shell find . -name "*.ly")
 FILES_LYD:=$(addsuffix .d,$(FILES_LY))
@@ -17,6 +18,7 @@ FILES_PS:=$(addsuffix .ps,$(basename $(FILES_LY)))
 FILES_MIDI:=$(addsuffix .midi,$(basename $(FILES_LY)))
 FILES_STAMP:=$(addsuffix .stamp,$(basename $(FILES_LY)))
 FILES_WAV:=$(addsuffix .wav,$(basename $(FILES_LY)))
+FILES_MP3:=$(addsuffix .mp3,$(basename $(FILES_LY)))
 
 ALL:=$(ALL) $(FILES_LYD)
 ifeq ($(DO_PDF),1)
@@ -37,7 +39,10 @@ endif
 ifeq ($(DO_WAV),1)
 	ALL:=$(ALL) $(FILES_WAV)
 endif
-CLEAN:=$(CLEAN) $(FILES_LYD) $(FILES_PDF) $(FILES_PNG) $(FILES_PS) $(FILES_MIDI) $(FILES_STAMP) $(FILES_WAV)
+ifeq ($(DO_MP3),1)
+	ALL:=$(ALL) $(FILES_MP3)
+endif
+CLEAN:=$(CLEAN) $(FILES_LYD) $(FILES_PDF) $(FILES_PNG) $(FILES_PS) $(FILES_MIDI) $(FILES_STAMP) $(FILES_WAV) $(FILES_MP3)
 
 .PHONY: all
 all: $(ALL)
@@ -52,6 +57,7 @@ debug:
 	$(info FILES_MIDI is $(FILES_MIDI))
 	$(info FILES_STAMP is $(FILES_STAMP))
 	$(info FILES_WAV is $(FILES_WAV))
+	$(info FILES_MP3 is $(FILES_MP3))
 
 .PHONY: todo
 todo:
@@ -130,6 +136,8 @@ $(FILES_LYD): %.ly.d: %.ly
 	./scripts/lilydep.pl $< $@ $(basename $<).pdf $(basename $<).ps $(basename $<).midi
 $(FILES_WAV): %.wav: %.midi
 	timidity $< -Ow -o $@ > /dev/null
+$(FILES_MP3): %.mp3: %.wav
+	lame $< $@
 
 # include the deps files (no warnings)
 -include $(FILES_LYD)
