@@ -1,7 +1,7 @@
 \include "src/include/common.lyi"
 \header {
 	title="A Foggy Day"
-	subtitle="(From 'A Damsel In Distress')"
+	subtitle="From 'A Damsel In Distress'"
 	composer="George Gershwin"
 	style="Jazz"
 	piece="Medium Swing"
