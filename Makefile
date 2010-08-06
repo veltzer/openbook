@@ -6,7 +6,7 @@ DO_PNG:=1
 DO_PS:=1
 DO_MIDI:=1
 DO_STAMP:=1
-DO_WAV:=1
+DO_WAV:=0
 DO_MP3:=1
 DO_OGG:=1
 
@@ -150,10 +150,14 @@ $(FILES_LYD): %.ly.d: %.ly
 	./scripts/lilydep.pl $< $@ $(basename $<).pdf $(basename $<).ps $(basename $<).midi
 $(FILES_WAV): %.wav: %.midi
 	timidity $< -idq -Ow -o $@ > /dev/null
-$(FILES_MP3): %.mp3: %.wav
-	lame $< $@
+# rule about making mp3 from wav files - I currently don't use it since
+# I generated mp3 directly from midi using a pipe between timidity and lame...
+#$(FILES_MP3): %.mp3: %.wav
+#	lame $< $@
 $(FILES_OGG): %.ogg: %.midi
 	timidity $< -idq -Ov -o $@ > /dev/null
+$(FILES_MP3): %.mp3: %.midi
+	timidity $< -idq -Ow -o - | lame - $@
 
 # include the deps files (no warnings)
 ifeq ($(USE_DEPS),1)
