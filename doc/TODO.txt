@@ -1,7 +1,7 @@
 build system
 ============
 - make each build make a temp folder so that I could build at the same time.
-- create wavs, ogg and mp3 from the midi.
+- create ogg from the midi.
 - add my own recording of the tune in mp3 or something for download.
 - add "topic" to each piece. Topics at first should be refelections of the directory
 	the piece is in. Add it to the database.
@@ -10,6 +10,15 @@ build system
 - create compressed postscripts and not regular ones (postscript is not a compressed format).
 - make a book with all of the standards.
 	- how do I include all the files ? Should I write a script ?!?
+
+wav support:
+============
+- reduce the size of the wav files (why are some of them so big ?!?).
+
+mp3 support:
+============
+- generate mp3 directly from the midi using timidity piped to lame.
+- there are no tags in the mp3 files. Add them.
 
 Material
 ========
