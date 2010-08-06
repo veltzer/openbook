@@ -9,6 +9,9 @@ DO_STAMP:=1
 DO_WAV:=1
 DO_MP3:=1
 
+# do you actually want to use dependency information ?
+USE_DEPS:=0
+
 FILES_LY:=$(shell find . -name "*.ly")
 FILES_LYD:=$(addsuffix .d,$(FILES_LY))
 
@@ -140,4 +143,6 @@ $(FILES_MP3): %.mp3: %.wav
 	lame $< $@
 
 # include the deps files (no warnings)
+ifeq ($(USE_DEPS),1)
 -include $(FILES_LYD)
+endif

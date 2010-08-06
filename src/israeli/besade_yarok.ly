@@ -1,6 +1,3 @@
-% end verbatim - this comment is a hack to prevent texinfo.tex
-% from choking on non-European UTF-8 subsets
-
 \include "src/include/common.lyi"
 \header {
 	title="בשדה ירוק"
@@ -13,6 +10,8 @@
 	poet="מאיר אריאל"
 	
 	completion="5"
+
+	url="http://www.youtube.com/watch?v=En9qtX5VnLE"
 }
 
 %{
