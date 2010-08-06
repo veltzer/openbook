@@ -149,11 +149,11 @@ $(FILES_STAMP): %.stamp: %.ly
 $(FILES_LYD): %.ly.d: %.ly
 	./scripts/lilydep.pl $< $@ $(basename $<).pdf $(basename $<).ps $(basename $<).midi
 $(FILES_WAV): %.wav: %.midi
-	timidity $< -Ow -o $@ > /dev/null
+	timidity $< -idq -Ow -o $@ > /dev/null
 $(FILES_MP3): %.mp3: %.wav
 	lame $< $@
 $(FILES_OGG): %.ogg: %.midi
-	timidity $< -Ov -o $@
+	timidity $< -idq -Ov -o $@ > /dev/null
 
 # include the deps files (no warnings)
 ifeq ($(USE_DEPS),1)
