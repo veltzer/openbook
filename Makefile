@@ -50,6 +50,9 @@ CLEAN:=$(CLEAN) $(FILES_LYD) $(FILES_PDF) $(FILES_PNG) $(FILES_PS) $(FILES_MIDI)
 .PHONY: all
 all: $(ALL)
 
+.PHONY: stamp
+stamp: $(FILES_STAMP)
+
 .PHONY: debug
 debug:
 	$(info FILES_LY is $(FILES_LY))
@@ -109,6 +112,8 @@ check_all: check_empty_copyright check_common check_ws check_composer_and check_
 
 LYFLAGS:=
 
+# rules for creating pdf, ps, png and midi directly from the ly files,
+# they are not used as we are creating everything together...
 #$(FILES_PDF): %.pdf: %.ly
 #	lilypond --pdf $(LYFLAGS) -o /tmp/foo $<
 #	mv /tmp/foo.pdf $@
