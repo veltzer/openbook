@@ -23,6 +23,7 @@ my($limit_imports)=1;
 my($dbh)=DBI->connect('dbi:mysql:myworld','','',{
 	RaiseError => 1,
 	AutoCommit => 0,
+	mysql_enable_utf8 => 1,
 });
 sub handle_error() {
 	my($rc)=$dbh->err;

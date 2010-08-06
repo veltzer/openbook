@@ -6,7 +6,7 @@
 	title="בשדה ירוק"
 	subtitle=""
 	composer="דני סנדרסון"
-	copyright="]עיזרו לי למלא זכויות יוצרים["
+	copyright="-- עיזרו לי למלא זכויות יוצרים --"
 	style="Rock"
 	singer="דני סנדרסון"
 	piece="בלדה איטית"
