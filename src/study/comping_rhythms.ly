@@ -3,7 +3,7 @@
 	title="Comping Rhythms"
 	style="Jazz"
 
-	copyright="[no copyright notice for study materials]"
+	copyright="-- no copyright notice for study materials --"
 
 	completion="5"
 }
