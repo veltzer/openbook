@@ -16,24 +16,42 @@
 
 %{
 	TODO:
+		- after the first verse there is a transposition of 1.5 steps up
+		though the chord Ab7 (which is the alter-dominant of g which we are
+		going to...).
 %}
 
 \score {
 <<
 \chords {
 	\set chordChanges = ##t
-	\partial 4 r4
-	\mark "opening"
-	e1 | e1 | fis1 | e4 aes4/ees a4/cis a4 | e1 |
-	\mark "verse"
+	\time 6/8
+	\mark "פתיחה"
+	e2. | e2. | e2. | e2. |
+	fis2. | fis2. | e4. aes4./ees | a4./cis a4. |
+	e2. | e2. \bar "||" \break
+	\mark "בית"
+	e2. | e2. | cis2.:m | cis2.:m |
+	fis2.:m | fis2.:m | b2.:7 | b2.:7/a |
+	aes2. | cis2.:m | aes2. | cis4.:m cis4.:m/b |
+	a2. | \time 3/8 e | \time 6/8 cis2.:m |
+	fis2.:m | fis2.:m | b2.:7 | b2.:7 |
 }
 \new Voice="melody" \relative f' {
 	\time 6/8
 	\key e \major
-	gis4
+	gis2 a8 b | gis2 a8 b | gis8 a b gis8 a b | gis2. |
+	fis2 gis8 ais | fis2 ~ fis8 e | b'4. gis4 fis8 | fis8 e4. cis8 e8 |
+	e2. | e2. |
+
+	b8 e b e4. ~ | e8 fis gis fis e cis | cis2. ~ | cis2. |
 }
 \new Lyrics \lyricsto "melody" {
-	בוקר עלה בהרים הכחולים
+	_ _ _ _ _ _ _ _ _ _ _
+	_ _ _ _ _ _ _ _ _ _ _
+	_ _ _ _ _
+
+	בו -- קר ע -- לה ב -- ה -- רים ה -- כחו -- לים
 	טיפסתי נושם בשבילים עתיקים
 	נולד בי שיר זמר נושן:
 	"הו, מה כחול!"
