@@ -1,7 +1,7 @@
 \include "src/include/common.lyi"
 \header {
 	title="I Could Write A Book"
-	subtitle="(From 'Pal Joey')"
+	subtitle="From 'Pal Joey'"
 	composer="Richard Rodgers"
 	poet="Lorenz Hart"
 	style="Jazz"
