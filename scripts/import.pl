@@ -72,7 +72,7 @@ sub handler() {
 		my($file_pdf)=$path.$name.".pdf";
 		my($file_ps)=$path.$name.".ps";
 		my($file_midi)=$path.$name.".midi";
-		my($file_wav)=$path.$name.".wav";
+		my($file_mp3)=$path.$name.".mp3";
 		my($filebasename)=$name;
 		my($dt_ly);
 		$dt_ly=Perl6::Slurp::slurp($file_ly);
@@ -82,8 +82,8 @@ sub handler() {
 		$dt_ps=Perl6::Slurp::slurp($file_ps);
 		my($dt_midi);
 		$dt_midi=Perl6::Slurp::slurp($file_midi);
-		my($dt_wav);
-		$dt_wav=Perl6::Slurp::slurp($file_wav);
+		my($dt_mp3);
+		$dt_mp3=Perl6::Slurp::slurp($file_mp3);
 		if($debug) {
 			print "name is $name\n";
 			print "path is $path\n";
@@ -92,7 +92,7 @@ sub handler() {
 			print "file_pdf is $file_pdf\n";
 			print "file_ps is $file_ps\n";
 			print "file_midi is $file_midi\n";
-			print "file_wav is $file_wav\n";
+			print "file_mp3 is $file_mp3\n";
 		}
 		my($hash)=get_meta_data($file);
 		if($limit_imports) {
@@ -109,14 +109,14 @@ sub handler() {
 		if($report) {
 			print "importing [".$hash->{"title"}."]\n";
 		}
-		$dbh->do("insert into TbMsLilypond (filebasename,ly,pdf,ps,midi,wav,title,subtitle,composer,copyright,style,piece,poet) values(?,?,?,?,?,?,?,?,?,?,?,?,?)",
+		$dbh->do("insert into TbMsLilypond (filebasename,ly,pdf,ps,midi,mp3,title,subtitle,composer,copyright,style,piece,poet) values(?,?,?,?,?,?,?,?,?,?,?,?,?)",
 			undef,
 			$filebasename,
 			$dt_ly,
 			$dt_pdf,
 			$dt_ps,
 			$dt_midi,
-			$dt_wav,
+			$dt_mp3,
 			$hash->{"title"},
 			$hash->{"subtitle"},
 			$hash->{"composer"},
