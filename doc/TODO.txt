@@ -1,8 +1,9 @@
 build system
 ============
 - make each build make a temp folder so that I could build at the same time.
-- add my own recording of the tune in mp3 or something for download.
-- add "topic" to each piece. Topics at first should be refelections of the directory
+- add flac support.
+- add my own recording of the tune in wav, mp3, flac and ogg for download.
+- add "topic" to each piece. Topics at first should be reflections of the directory
 	the piece is in. Add it to the database.
 - make sure the build system checks that each file has the right tags at the header
 	in the right order (whats the best way to do this ?!?).
@@ -31,22 +32,7 @@ Material
 Lilypond cheet sheet
 ====================
 - create a standards/lead sheet cheet sheet for lilypond.
-
-Info addition
-=============
-- add "poet="poetname"" header in all the pieces.
-- add "copyright" header in all the pieces.
-
-Database additions
-==================
-- get last changed date (the data of the *.ly file ?!?) and put it in the database
-	on import. Show it in on the web.
-	Enable a direct link to a files history from git from the web.
-- add links to my favourite performances of the tune.
-- add wavs ogg and mp3 once they are created.
-- assume many jpegs and many midis per compilation. Store them all in the database.
-
-- cheet sheet should show:
+  cheet sheet should show:
 	- complex chords (7.5-)
 	- chords with alternate bases.
 	- matching lyrics to melody.
@@ -58,6 +44,11 @@ Database additions
 	- all the rest on the stuff I have in hints.txt.
 	* once the cheet sheet it done I can get ridd of the hints.txt file.
 
+
+Info addition
+=============
+- add "poet="poetname"" header in all the pieces.
+- add "copyright" header in all the pieces.
 - add "todo" in all the pieces in the same style.
 - add "completion level" in all the pieces. define completion levels and mark them out.
 	put them in the database.
@@ -72,8 +63,15 @@ Database additions
 	the master structure context.
 	Record all of these understandings in some kind of standards document that I will
 	start for all of this material.
-
 - get number of pages and import that into the database too.
 	How do we get it ?!?
 	- count the number of pages in the pdf (some kind of pdf parser ?!?).
 	- count the number of images created when --png is used.
+
+Database additions
+==================
+- get last changed date (the data of the *.ly file ?!?) and put it in the database
+	on import. Show it in on the web.
+	Enable a direct link to a files history from git from the web.
+- add links to my favourite performances of the tune.
+- assume many jpegs and many midis per compilation. Store them all in the database.
