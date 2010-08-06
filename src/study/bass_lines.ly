@@ -4,7 +4,7 @@
 	style="Jazz"
 	piece="Upbeat Jazz"
 
-	copyright="[no copyright notice for study materials]"
+	copyright="-- no copyright notice for study materials --"
 
 	completion="5"
 }
