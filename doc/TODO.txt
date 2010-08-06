@@ -17,7 +17,6 @@ wav support:
 
 mp3 support:
 ============
-- generate mp3 directly from the midi using timidity piped to lame.
 - there are no tags in the mp3 files. Add them.
 
 ogg support:
