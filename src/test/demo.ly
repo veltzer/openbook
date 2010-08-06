@@ -43,6 +43,10 @@
 		f4 f8 f f4 f8 f
 		g4 g8 g g4 g8 g
 		c4 c8 c c4 c8 c
+	} 
+%% this is how to repeat something without showing it in the score...
+	\repeat unfold 2 {
+		c4 d4
 	}
 }
 >>
