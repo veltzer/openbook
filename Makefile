@@ -6,58 +6,63 @@ DO_PNG:=1
 DO_PS:=1
 DO_MIDI:=1
 DO_STAMP:=1
+DO_WAV:=1
 
-LY:=$(shell find . -name "*.ly")
-LYD:=$(addsuffix .d,$(LY))
+FILES_LY:=$(shell find . -name "*.ly")
+FILES_LYD:=$(addsuffix .d,$(FILES_LY))
 
-PDF:=$(addsuffix .pdf,$(basename $(LY)))
-PNG:=$(addsuffix .png,$(basename $(LY)))
-PS:=$(addsuffix .ps,$(basename $(LY)))
-MIDI:=$(addsuffix .midi,$(basename $(LY)))
+FILES_PDF:=$(addsuffix .pdf,$(basename $(FILES_LY)))
+FILES_PNG:=$(addsuffix .png,$(basename $(FILES_LY)))
+FILES_PS:=$(addsuffix .ps,$(basename $(FILES_LY)))
+FILES_MIDI:=$(addsuffix .midi,$(basename $(FILES_LY)))
+FILES_STAMP:=$(addsuffix .stamp,$(basename $(FILES_LY)))
+FILES_WAV:=$(addsuffix .wav,$(basename $(FILES_LY)))
 
-STAMP:=$(addsuffix .stamp,$(basename $(LY)))
-
-ALL:=$(ALL) $(LYD)
+ALL:=$(ALL) $(FILES_LYD)
 ifeq ($(DO_PDF),1)
-	ALL:=$(ALL) $(PDF)
+	ALL:=$(ALL) $(FILES_PDF)
 endif
 ifeq ($(DO_PNG),1)
-	ALL:=$(ALL) $(PNG)
+	ALL:=$(ALL) $(FILES_PNG)
 endif
 ifeq ($(DO_PS),1)
-	ALL:=$(ALL) $(PS)
+	ALL:=$(ALL) $(FILES_PS)
 endif
 ifeq ($(DO_MIDI),1)
-	ALL:=$(ALL) $(MIDI)
+	ALL:=$(ALL) $(FILES_MIDI)
 endif
 ifeq ($(DO_STAMP),1)
-	ALL:=$(ALL) $(STAMP)
+	ALL:=$(ALL) $(FILES_STAMP)
 endif
-CLEAN:=$(CLEAN) $(LYD) $(PDF) $(PNG) $(PS) $(MIDI) $(STAMP)
+ifeq ($(DO_WAV),1)
+	ALL:=$(ALL) $(FILES_WAV)
+endif
+CLEAN:=$(CLEAN) $(FILES_LYD) $(FILES_PDF) $(FILES_PNG) $(FILES_PS) $(FILES_MIDI) $(FILES_STAMP) $(FILES_WAV)
 
 .PHONY: all
 all: $(ALL)
 
 .PHONY: debug
 debug:
-	$(info LY is $(LY))
-	$(info LYD is $(LYD))
-	$(info PDF is $(PDF))
-	$(info PNG is $(PNG))
-	$(info PS is $(PS))
-	$(info MIDI is $(MIDI))
-	$(info STAMP is $(STAMP))
+	$(info FILES_LY is $(FILES_LY))
+	$(info FILES_LYD is $(FILES_LYD))
+	$(info FILES_PDF is $(FILES_PDF))
+	$(info FILES_PNG is $(FILES_PNG))
+	$(info FILES_PS is $(FILES_PS))
+	$(info FILES_MIDI is $(FILES_MIDI))
+	$(info FILES_STAMP is $(FILES_STAMP))
+	$(info FILES_WAV is $(FILES_WAV))
 
 .PHONY: todo
 todo:
-	-@grep TODO $(LY)
+	-@grep TODO $(FILES_LY)
 
 .PHONY: clean
 clean:
 	rm -rf $(CLEAN)
 .PHONY: clean_deps
 clean_deps:
-	rm -f $(LYD)
+	rm -f $(FILES_LYD)
 .PHONY: clean_all_png
 clean_all_png:
 	-find . -name "*.png" -exec rm {} \;
@@ -95,34 +100,36 @@ check_all: check_empty_copyright check_common check_ws check_composer_and check_
 
 LYFLAGS:=
 
-#$(PDF): %.pdf: %.ly
+#$(FILES_PDF): %.pdf: %.ly
 #	lilypond --pdf $(LYFLAGS) -o /tmp/foo $<
 #	mv /tmp/foo.pdf $@
-#$(PNG): %.png: %.ly
+#$(FILES_PNG): %.png: %.ly
 #	lilypond --png $(LYFLAGS) -o /tmp/foo $<
 #	mv /tmp/foo.png $@
-#$(PS): %.ps: %.ly
+#$(FILES_PS): %.ps: %.ly
 #	lilypond --ps $(LYFLAGS) -o /tmp/foo $<
 #	mv /tmp/foo.ps $@
-#$(MIDI): %.midi: %.ly
+#$(FILES_MIDI): %.midi: %.ly
 #	lilypond --pdf $(LYFLAGS) -o /tmp/foo $<
 #	mv /tmp/foo.midi $@
-$(PNG): %.png: %.stamp
+$(FILES_PNG): %.png: %.stamp
 
-$(PS): %.ps: %.stamp
+$(FILES_PS): %.ps: %.stamp
 
-$(PDF): %.pdf: %.stamp
+$(FILES_PDF): %.pdf: %.stamp
 
-$(MIDI): %.midi: %.stamp
+$(FILES_MIDI): %.midi: %.stamp
 
-$(STAMP): %.stamp: %.ly
+$(FILES_STAMP): %.stamp: %.ly
 	lilypond --pdf $(LYFLAGS) -o /tmp/foo $<
 	mv /tmp/foo.ps $(basename $<).ps
 	mv /tmp/foo.pdf $(basename $<).pdf
 	mv /tmp/foo.midi $(basename $<).midi
 	touch $@
-$(LYD): %.ly.d: %.ly
+$(FILES_LYD): %.ly.d: %.ly
 	./scripts/lilydep.pl $< $@ $(basename $<).pdf $(basename $<).ps $(basename $<).midi
+$(FILES_WAV): %.wav: %.midi
+	timidity $< -Ow -o $@ > /dev/null
 
 # include the deps files (no warnings)
--include $(LYD)
+-include $(FILES_LYD)
