@@ -98,7 +98,7 @@ sub handler() {
 		if($report) {
 			print "importing [".$hash->{"title"}."]\n";
 		}
-		$dbh->do("insert into TbMsLilypond (filebasename,ly,pdf,ps,midi,mp3,ogg,title,subtitle,composer,copyright,style,piece,poet) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+		$dbh->do("insert into TbMsLilypond (filebasename,ly,pdf,ps,midi,mp3,ogg,uuid,title,subtitle,composer,copyright,style,piece,poet) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
 			undef,
 			$filebasename,
 			$dt_ly,
@@ -107,6 +107,7 @@ sub handler() {
 			$dt_midi,
 			$dt_mp3,
 			$dt_ogg,
+			$hash->{"uuid"},
 			$hash->{"title"},
 			$hash->{"subtitle"},
 			$hash->{"composer"},
