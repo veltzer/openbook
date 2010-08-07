@@ -19,28 +19,16 @@ use Parse::RecDescent qw();
 my($debug)=0;
 my($report)=1;
 my($limit_imports)=1;
+my($dbh);
+my($parser);
+my($grammer);
 
-my($dbh)=DBI->connect('dbi:mysql:myworld','','',{
-	RaiseError => 1,
-	AutoCommit => 0,
-	mysql_enable_utf8 => 1,
-});
 sub handle_error() {
 	my($rc)=$dbh->err;
 	my($str)=$dbh->errstr;
 	my($rv)=$dbh->state;
 	throw Error::Simple($str.",".$rv.",".$rv);
 }
-$dbh->{HandleError} =\&handle_error;
-
-my($grammer);
-my($grammer_file)="data/lilypond.grammer";
-$grammer=Perl6::Slurp::slurp($grammer_file);
-#print "grammer is $grammer";
-$::RD_HINT=1;
-$::RD_WARN=1;
-#$::RD_TRACE=1;
-#$Parse::RecDescent::skip='[ \v\t\n]*';
 
 sub get_meta_data($) {
 	my($file)=$_[0];
@@ -49,7 +37,7 @@ sub get_meta_data($) {
 	}
 	my($data);
 	$data=Perl6::Slurp::slurp($file);
-	my($parser)=Parse::RecDescent->new($grammer);;
+	my($parser)=Parse::RecDescent->new($grammer);
 	my($ret)=$parser->lilyfile(\$data);
 	if(!$ret) {
 		die("ERROR!");
@@ -60,9 +48,6 @@ sub get_meta_data($) {
 	}
 	return $ret;
 }
-
-#get_meta_data('test.ly');
-#die("end of debug");
 
 sub handler() {
 	my($file)=$File::Find::name;
@@ -133,11 +118,35 @@ sub handler() {
 	}
 }
 
-$dbh->do("delete from TbMsLilypond",undef);
-$dbh->do("alter table TbMsLilypond AUTO_INCREMENT=1",undef);
-File::Find::find({"no_chdir"=>1,"wanted"=>\&handler},".");
+$dbh=DBI->connect('dbi:mysql:myworld','','',{
+	RaiseError => 1,
+	AutoCommit => 0,
+	mysql_enable_utf8 => 1,
+});
+$dbh->{HandleError} =\&handle_error;
 
+# on two separate lines because of list context...
+$grammer=Perl6::Slurp::slurp("data/lilypond.grammer");
+#$parser=Parse::RecDescent->new($grammer);
+#print "grammer is $grammer";
+# show hints...
+$::RD_HINT=1;
+# show warnings...
+$::RD_WARN=1;
+# to debug the grammer...
+#$::RD_TRACE=1;
+#$Parse::RecDescent::skip='[ \v\t\n]*';
+
+#get_meta_data('test.ly');
+#die("end of debug");
+
+# erase all old records
+$dbh->do("delete from TbMsLilypond",undef);
+# set the auto increment for the ids to start from 1...
+$dbh->do("alter table TbMsLilypond AUTO_INCREMENT=1",undef);
+# go import things
+File::Find::find({"no_chdir"=>1,"wanted"=>\&handler},".");
 # now commit all the changes...
 $dbh->commit();
-
+# disconnect from the database
 $dbh->disconnect();
