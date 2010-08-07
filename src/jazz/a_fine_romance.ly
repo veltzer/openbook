@@ -6,6 +6,8 @@
 	style="Jazz"
 	remark="copied from the real book"
 	piece="Med. Ballad"
+
+	uuid="7c9691e6-a26e-11df-8418-0019d11e5a41"
 }
 
 harmony=\chords {

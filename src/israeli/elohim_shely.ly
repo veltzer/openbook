@@ -13,6 +13,8 @@
 
 	completion="2"
 	url="http://www.youtube.com/watch?v=fTZb0abU4Rw"
+
+	uuid="467b2af8-a26f-11df-b03d-0019d11e5a41"
 }
 
 %{

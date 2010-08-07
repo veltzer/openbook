@@ -4,6 +4,8 @@
 	singer="Berry Saharof"
 	style="Pop"
 	piece="Med. Ballad"
+
+	uuid="505a0a3a-a26f-11df-bbef-0019d11e5a41"
 }
 
 harmony=\chords {

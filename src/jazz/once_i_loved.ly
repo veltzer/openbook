@@ -5,6 +5,8 @@
 	poet="Vinicius DeMoraes"
 	style="Jazz"
 	piece="Med Swing"
+
+	uuid="18294374-a26f-11df-a5f0-0019d11e5a41"
 }
 
 harmony=\chords {

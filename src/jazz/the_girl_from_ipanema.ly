@@ -7,6 +7,8 @@
 	style="Jazz"
 	piece="Med Swing"
 	poet="Vincius De Moraes, Norman Gimbel"
+
+	uuid="2c3b337c-a26f-11df-b7d1-0019d11e5a41"
 }
 
 %{

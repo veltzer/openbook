@@ -4,6 +4,8 @@
 	composer="Herbie Hancock"
 	style="Jazz"
 	piece="Med Swing"
+
+	uuid="359f7428-a26f-11df-ad8c-0019d11e5a41"
 }
 
 harmony=\chords {

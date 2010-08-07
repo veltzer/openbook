@@ -10,6 +10,7 @@
 	copyright="1937, Gershwin Publishing Corporation"
 
 	completion="5"
+	uuid="87da6ece-a26e-11df-95d7-0019d11e5a41"
 }
 %{
 	TODO:

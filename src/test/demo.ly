@@ -11,6 +11,8 @@
 	completion="5"
 
 	dontimport="1"
+
+	uuid="9a39404e-a26f-11df-aa6e-0019d11e5a41"
 }
 
 %{

@@ -7,6 +7,8 @@
 	copyright="GPL"
 	style="Pop"
 	piece="Med. Ballad"
+
+	uuid="5a9b270e-a26f-11df-a792-0019d11e5a41"
 }
 
 harmony=\new ChordNames \with {

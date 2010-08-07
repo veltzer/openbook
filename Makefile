@@ -99,6 +99,9 @@ check_composer_and:
 .PHONY: check_ws
 check_ws:
 	-@./scripts/pgrep.pl "  | $$|\w\t|\t$$|\*\\d\:" `find . -name "*.ly" -or -name "*.lyi"`
+.PHONY: check_uuid
+check_uuid:
+	-@grep --files-without-match uuid `find . -name "*.ly"`
 .PHONY: check_common
 check_common:
 	-@grep --files-without-match "common.lyi" `find . -name "*.ly"`

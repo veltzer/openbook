@@ -4,6 +4,8 @@
 	composer="Blue Mitchell"
 	style="Jazz"
 	piece="Med Swing"
+
+	uuid="e7277c50-a26e-11df-863c-0019d11e5a41"
 }
 
 harmony=\chords {

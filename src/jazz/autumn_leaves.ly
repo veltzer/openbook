@@ -10,6 +10,8 @@
 	style="Jazz"
 	piece="Med Swing"
 	remark="copied from the real book"
+
+	uuid="9706cea6-a26e-11df-a6f2-0019d11e5a41"
 }
 
 harmony=\chords {

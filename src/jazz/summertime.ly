@@ -6,6 +6,8 @@
 	piece="Med Swing"
 	poet="DuBose Heyward"
 	copyright="1935, Gershwin Publishing Corporation"
+
+	uuid="2615b7ec-a26f-11df-b010-0019d11e5a41"
 }
 
 %{

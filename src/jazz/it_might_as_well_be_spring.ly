@@ -5,6 +5,8 @@
 	poet="Oscar Hammerstein"
 	style="Jazz"
 	piece="Med Swing"
+
+	uuid="f4f39800-a26e-11df-b97a-0019d11e5a41"
 }
 
 tune=\relative d' {

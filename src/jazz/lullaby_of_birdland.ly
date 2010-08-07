@@ -4,6 +4,8 @@
 	composer="George Shearing"
 	style="Jazz"
 	piece="Med Swing"
+
+	uuid="f9668406-a26e-11df-8542-0019d11e5a41"
 }
 
 tune=\relative c''{

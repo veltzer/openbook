@@ -7,6 +7,8 @@
 	copyright="1961 1962, Antonio Carlos Jobim and Mrs. Mendonca"
 	style="Jazz"
 	piece="Samba"
+
+	uuid="21bc8284-a26f-11df-a829-0019d11e5a41"
 }
 
 tune={
