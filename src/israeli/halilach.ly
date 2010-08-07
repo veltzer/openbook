@@ -10,6 +10,8 @@
 	poet="unknown"
 
 	completion="2"
+
+	uuid="4ae1d01a-a26f-11df-8e51-0019d11e5a41"
 }
 
 %{

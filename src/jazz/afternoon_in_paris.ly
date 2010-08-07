@@ -5,6 +5,8 @@
 	style="Jazz"
 	piece="Swing"
 	note="song form is AABA"
+
+	uuid="8f0a1ea6-a26e-11df-8edc-0019d11e5a41"
 }
 
 harmony=\chords {

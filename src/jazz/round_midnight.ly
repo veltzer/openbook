@@ -5,6 +5,8 @@
 	poet="Bernie Hanighen"
 	style="Jazz"
 	piece="Med Swing"
+
+	uuid="1c99c334-a26f-11df-b3cb-0019d11e5a41"
 }
 
 harmony=\chords {

@@ -9,6 +9,8 @@
 	copyright="1940, Chappel & Co."
 
 	completion="5"
+
+	uuid="e00ddbf8-a26e-11df-92da-0019d11e5a41"
 }
 
 %{

@@ -6,6 +6,8 @@
 	copyright="1959, Editora Musical Arapua, Sao Paulo, Brazil"
 	style="Jazz"
 	piece="Med Swing"
+
+	uuid="b847fc02-a26e-11df-92ce-0019d11e5a41"
 }
 
 %{

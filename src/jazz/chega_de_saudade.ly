@@ -6,6 +6,8 @@
 	copyright="1962,1967, Editora Musical Arapua, Sao Paulo, Brazil"
 	style="Jazz"
 	piece="Med Swing"
+
+	uuid="a8d44d0c-a26e-11df-a32b-0019d11e5a41"
 }
 
 tune=\relative f'' {

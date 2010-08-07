@@ -9,6 +9,7 @@
 	copyright="1946, by A-M Music Corp. Copyright Renewed, all rights controlled by Chappell & Co., Inc."
 
 	completion="5"
+	uuid="b109cd80-a26e-11df-8c11-0019d11e5a41"
 }
 
 %{

@@ -4,6 +4,8 @@
 	composer="Benny Golson"
 	style="Jazz"
 	piece="Med Swing"
+
+	uuid="efea8972-a26e-11df-af8e-0019d11e5a41"
 }
 
 tune=\relative c'' {

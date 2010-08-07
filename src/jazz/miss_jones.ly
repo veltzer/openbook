@@ -5,6 +5,8 @@
 	poet="Lorenz Hart"
 	style="Jazz"
 	piece="Med Swing"
+
+	uuid="fe106f6c-a26e-11df-abb3-0019d11e5a41"
 }
 
 %{

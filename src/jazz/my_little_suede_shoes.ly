@@ -4,6 +4,8 @@
 	composer="Charlie Parker"
 	style="Jazz"
 	piece="Med Swing"
+
+	uuid="0db617f0-a26f-11df-92f0-0019d11e5a41"
 }
 
 A=\relative c' { bes8 ees g | f f f f ees f r g | }

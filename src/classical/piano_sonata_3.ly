@@ -5,6 +5,8 @@
 	copyright="1918, G.Schirmer Inc."
 	style="Classical"
 	remark="Edited, revised and fingered by Richard Epstein"
+
+	uuid="744f61d8-a26f-11df-b6b1-0019d11e5a41"
 }
 %{
 	Schirmer's library of musical classics"

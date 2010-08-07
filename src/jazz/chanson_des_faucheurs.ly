@@ -4,6 +4,8 @@
 	composer="R. Schumann"
 	style="Jazz"
 	piece="Med Swing"
+
+	uuid="9ff5c7c4-a26e-11df-aa45-0019d11e5a41"
 }
 
 tune=\relative g'' {

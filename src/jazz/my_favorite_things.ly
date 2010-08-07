@@ -5,6 +5,8 @@
 	poet="Oscar Hammerstein"
 	style="Jazz"
 	piece="Med Swing"
+
+	uuid="02c22208-a26f-11df-98fd-0019d11e5a41"
 }
 
 %{

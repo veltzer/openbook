@@ -5,6 +5,8 @@
 	poet="George David Weiss & Bob Thiele"
 	style="Jazz"
 	piece="Med Swing"
+
+	uuid="39de7d2c-a26f-11df-8dbc-0019d11e5a41"
 }
 
 tune={

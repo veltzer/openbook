@@ -7,6 +7,8 @@
 	copyright="-- no copyright notice for study materials --"
 
 	completion="5"
+
+	uuid="84a886b8-a26f-11df-9034-0019d11e5a41"
 }
 
 %{

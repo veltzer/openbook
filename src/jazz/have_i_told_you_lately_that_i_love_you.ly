@@ -4,6 +4,8 @@
 	singer="Van Morrison"
 	style="Pop"
 	piece="Med. Ballad"
+
+	uuid="d86922f4-a26e-11df-b237-0019d11e5a41"
 }
 
 harmony=\chords {
