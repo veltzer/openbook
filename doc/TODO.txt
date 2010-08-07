@@ -1,3 +1,7 @@
+now:
+====
+- import only things which are not in the database.
+
 build system
 ============
 - make each build make a temp folder so that I could build at the same time.
