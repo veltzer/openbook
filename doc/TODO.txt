@@ -15,6 +15,14 @@ build system
 - make a book with all of the standards.
 	- how do I include all the files ? Should I write a script ?!?
 
+lyrics support:
+===============
+- add lyrics to the system.
+- store the lyrics inside the lilypond file so that there will be only one source file.
+- extract the lyrics somehow and turn it into a blob.
+- store the blob in the database and allow to download and view it.
+- syntax check the lyrics.
+
 wav support:
 ============
 - reduce the size of the wav files (why are some of them so big ?!?).

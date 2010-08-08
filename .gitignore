@@ -4,13 +4,12 @@
 # exclude patterns (uncomment them if you want to use them):
 # *.[oa]
 # *~
-#*.ly
-*.pdf
-*.midi
-*.ps
-*.png
-*.d
-*.stamp
-*.wav
-*.mp3
-*.ogg
+src/*/*.pdf
+src/*/*.midi
+src/*/*.ps
+src/*/*.png
+src/*/*.d
+src/*/*.stamp
+src/*/*.wav
+src/*/*.mp3
+src/*/*.ogg
