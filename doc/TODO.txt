@@ -92,3 +92,10 @@ Database additions
 - assume many jpegs and many midis per compilation. Store them all in the database.
 - make all the blobs reside in a blob table and make get blob really simple by getting
 	from that table either by uuid or by id.
+
+content
+=======
+- review the speed of the pieces and adjust them
+	(for instance: nature boy / Eben Ahbez is a little too fast).
+- why is the midi generation of lilypond not take voltas into account well ?
+	report this as a bug and have it fixed...
