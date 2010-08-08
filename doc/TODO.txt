@@ -1,6 +1,7 @@
 now:
 ====
 - import only things which are not in the database.
+- import my own recordings into the database - look at the tags for more data.
 
 build system
 ============
@@ -14,6 +15,8 @@ build system
 - create compressed postscripts and not regular ones (postscript is not a compressed format).
 - make a book with all of the standards.
 	- how do I include all the files ? Should I write a script ?!?
+- make the build system produce a .gitignore file (make the .gitignore file be a target
+	of the build system dependent on everything including the makefile itself).
 
 lyrics support:
 ===============
@@ -87,3 +90,5 @@ Database additions
 	Enable a direct link to a files history from git from the web.
 - add links to my favourite performances of the tune.
 - assume many jpegs and many midis per compilation. Store them all in the database.
+- make all the blobs reside in a blob table and make get blob really simple by getting
+	from that table either by uuid or by id.
