@@ -1,0 +1,22 @@
+this convers tag settings in mp3 files:
+
+id3:
+====
+- use id3(1) to see tags or edit tags.
+- id3 -l [files.mp3] will show you tags.
+
+* has problems with editing and more...
+
+id3v2
+=====
+- id3v2 -l [file.mp3]
+	lists all id3v2 tags
+	you should see from the output whether you have v1 or v2 tags.
+- id3v2 -C [file.mp3]
+	converts id3v1 to id3v2 tags.
+
+kid3
+====
+A KDE application.
+Very good.
+Use it for manual tagging.
