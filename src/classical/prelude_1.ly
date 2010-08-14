@@ -5,8 +5,11 @@
 	composer="Johann Sebastian Bach"
 	copyright="Public Domain"
 	style="Classical"
+	piece=""
 	remark="Taken from Shlomo Gronichs book"
+	poet=""
 
+	completion="4"
 	uuid="562ae904-a664-11df-9e85-0019d11e5a41"
 }
 %{
@@ -17,7 +20,7 @@
 		to play the voltas correclty and so need to unfold the music but in the print
 		version you want the voltas.
 	TODO:
-	- how do I make the speed indication (which is at the midi part) appear in the formatted output (pdf,ps) as well ? Can I share them so that I only need to change at one place ?
+		- how do I make the speed indication (which is at the midi part) appear in the formatted output (pdf,ps) as well ? Can I share them so that I only need to change at one place ?
 %}
 
 myChords=\chordmode {

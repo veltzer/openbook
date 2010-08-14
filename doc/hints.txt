@@ -12,7 +12,37 @@ This is a set of lilypond hints:
 	}
   The problem with this is that you wind up repeating the chord names yet again just for the
   guitar diagrams. Find out how to avoid this...
-
+	
+speed of piece:
+===============
+- one way is:
+	==== SNIP ====
+	\tempo "Andante" 4 = 88
+	==== SNIP ====
+	at the top voice. This will create the right notation on the page
+	AND determine the speed that the midi plays in.
+	Advantages:
+		- only one place that works for both print and midi, AND has the advantage
+		of showing the right way in the print version.
+	Disadvantages:
+		- You need to map name of the speed to BPM or skip the BPM or name of speed
+		entirely. You can use a lookup table like mine:
+		http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+- another way is:
+	==== SNIP ====
+	\context {
+		\Score
+		tempoWholesPerMinute = #(ly:make-moment 130 4)
+	}
+	==== SNIP ====
+	at the midi section. This only determines the midi speed and has no effect on the
+	print version.
+	Advantages:
+		- fine tuning the midi with no effect on other parts.
+	Disadvantages:
+		- can cause discrepency between the print version and the midi version. If
+		you want to keep those two in sync without worrying you better use the \tempo
+		method.
 
 Lyrics
 ======
