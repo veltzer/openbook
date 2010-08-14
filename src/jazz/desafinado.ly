@@ -45,6 +45,8 @@
 \new Voice="melody" {
 	\time 4/4
 	\key f \major
+%%	list of instruments can be found at
+%%	http://lilypond.org/doc/v2.11/Documentation/user/lilypond/MIDI-instruments#MIDI-instruments
 	\set Staff.midiInstrument = #"flute"
 \mark "A"
 	r8 c'4 d'8 e'4 f' |
