@@ -42,6 +42,11 @@ ogg support:
 ============
 - there are no tags in the ogg files. Add them.
 
+midi support:
+=============
+- wikipedia have a way of playing midi directly from the wiki pages.
+	find out how. Do that from my page too.
+
 Material
 ========
 - write the material for drumming training.

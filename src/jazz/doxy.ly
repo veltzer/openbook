@@ -14,6 +14,7 @@
 
 %{
 	TODO:
+	- add a url for a good performance of this (haven't found one of sonny rollins yet).
 %}
 
 myChords=\chordmode {
