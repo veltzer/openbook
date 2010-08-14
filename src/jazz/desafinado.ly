@@ -20,6 +20,8 @@
 <<
 \chords {
 	\set chordChanges = ##t
+%%	list of instruments can be found at
+%%	http://lilypond.org/doc/v2.11/Documentation/user/lilypond/MIDI-instruments#MIDI-instruments
 %%	\set ChordNames.midiInstrument = #"electric guitar (jazz)"
 %%	\set ChordNames.midiInstrument = #"piano"
 	\set ChordNames.midiInstrument = #"acoustic grand"
