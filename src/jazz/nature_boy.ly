@@ -107,9 +107,5 @@ myLyricsmore=\lyricmode {
 		\new Voice="myvoice" \myVoice
 	>>
 	\midi {
-		\context {
-			\Score
-%%			tempoWholesPerMinute = #(ly:make-moment 110 4)
-		}
 	}
 }

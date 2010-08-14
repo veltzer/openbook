@@ -9,7 +9,7 @@
 	piece="בלדה איטית"
 	poet="יעקב שבתאי"
 
-	completion="5"
+	completion="4"
 
 	url="http://www.youtube.com/watch?v=IUZQgbhivqw"
 
