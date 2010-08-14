@@ -22,9 +22,8 @@
 
 myChords=\chordmode {
 	\set chordChanges = ##t
-	%% list of instruments can be found at
-	%% http://lilypond.org/doc/v2.11/Documentation/user/lilypond/MIDI-instruments#MIDI-instruments
-	\set ChordNames.midiInstrument = #"electric guitar (jazz)"
+	%% there is no need to worry about which instrument plays the chords
+	%% since they will not be heard...
 
 	c1 | d:m7/c | g:7/b | c |
 	a:m/c | d:7/c | g/b | c:maj7/b |
@@ -56,6 +55,8 @@ myChords=\chordmode {
 }
 piano={
 	\set PianoStaff.instrumentName = #"Piano"
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Andante" 4 = 88
 	<<
 		%% you can move voiceB from below to the treble clef if you prefer
 		%% the notation not to match the hands but rather the music...
@@ -96,9 +97,5 @@ piano={
 		\new PianoStaff = "piano" \piano
 	>>
 	\midi {
-		\context {
-			\Score
-			tempoWholesPerMinute = #(ly:make-moment 88 4)
-		}
 	}
 }
