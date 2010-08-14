@@ -20,6 +20,11 @@
 <<
 \chords {
 	\set chordChanges = ##t
+%%	\set ChordNames.midiInstrument = #"electric guitar (jazz)"
+%%	\set ChordNames.midiInstrument = #"piano"
+	\set ChordNames.midiInstrument = #"acoustic grand"
+%%	\set ChordNames.midiInstrument = #"string ensemble 1"
+%%	\set ChordNames.midiInstrument = #"percussive organ"
 
 	f1:maj7 | f1:maj7 | g1:7.5- | g1:7.5- | g1:m7 | c1:7 | a1:m7.5- | d1:9- |
 	g1:m7 | a1:9- | d1:7 | d1:9- | g1:9- | g1:9- | ges1:maj7 | ges1:maj7 \bar "||"
@@ -38,6 +43,7 @@
 \new Voice="melody" {
 	\time 4/4
 	\key f \major
+	\set Staff.midiInstrument = #"flute"
 \mark "A"
 	r8 c'4 d'8 e'4 f' |
 	e'4. d'8 cis'4 d' |
