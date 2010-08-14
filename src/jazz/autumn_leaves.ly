@@ -3,11 +3,14 @@
 	title="Autumn Leaves"
 	subtitle="Les Feuilles Mortes"
 	composer="Joseph Kosma"
-	copyright="1947, 1950, 1987 Enoch et cie. Renewed 1975, 1978 Enoch at cie."
+	copyright="1947, 1950, 1987 Enoch Et Cie. Renewed 1975, 1978 Enoch Et Cie"
+%% Sole Selling Agent for U.S.A (including it's territories and possessions)
+%% and Dominion of Canada: Morley Music Co., by arrangement with Enoch Et Cie
+%% international Copyright Secured. All Rights Reserved.
 	poet="Jacques Prevert, Johnny Mercer"
 	style="Jazz"
 	piece="Medium Swing"
-	remark="copied from the real book by Mark Veltzer on Mon May 22 02:18:00 IDT 2006"
+	remark="derived from the real book and the fake book by Mark Veltzer on Mon May 22 02:18:00 IDT 2006"
 
 	completion="5"
 	uuid="8c35acf6-a7c1-11df-9040-0019d11e5a41"
@@ -55,7 +58,7 @@ myVoice={
 	fis'4 b4 fis'2~ | fis'4 fis'4 e'4 fis'4 | g'1~ | g'4 g'4 fis'4 g'4 |
 	a'1~ | a'4 d'4 d''4 c''4 | b'1~ | b'4 r4 ais'4 b'4 |
 	c''4 c''4 a'4 a'4 | fis'2. c''4 | b'2 b'2~ | b'2. e'4 |
-	a'2. g'4 | fis'2 g'4 b4 | e'1 | r1 \bar "|."
+	a'2. g'4 | fis'2 g'4 b4 | e'1~ | e'4 r4 r2 \bar "|."
 }
 myLyrics=\lyricmode {
 	The fall -- ing leaves drift by the win -- dow
