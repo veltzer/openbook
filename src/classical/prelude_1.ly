@@ -57,7 +57,9 @@ myChords=\chordmode {
 	c2 c |
 }
 piano={
-	\set PianoStaff.instrumentName = #"Piano"
+%%	list of instruments can be found at
+%%	http://lilypond.org/doc/v2.11/Documentation/user/lilypond/MIDI-instruments#MIDI-instruments
+	\set PianoStaff.instrumentName = #"acoustic grand"
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante" 4 = 88
 	<<
