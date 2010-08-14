@@ -17,6 +17,13 @@
 	completion="0"
 }
 
+%% setting instruments for midi generation (bah - this doesn't work...)
+%%\set ChordNames.midiInstrument = #"acoustic grand"
+%%\set Staff.midiInstrument = #"flute"
+%%\set PianoStaff.instrumentName = #"acoustic grand"
+%% do not show chords unless they change...
+%%\set chordChanges = ##t
+
 %% make lilypond use paper of size a4 (Is this the default ?!?)
 #(set-default-paper-size "a4")
 \paper {

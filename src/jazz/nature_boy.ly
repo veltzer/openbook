@@ -16,16 +16,15 @@
 }
 
 %{
-	notes:
-	- you cannot put the quotes in quotation marks (") since that will cause the lyrics
-	to come out wrong.
-	todo:
-	0. do a repeat in the chords on the whole first 8 bars.
+	NOTES:
+	- you cannot put the quotes in double quotation marks (") since that will cause the
+	lyrics to come out wrong, instead I used single quotation marks (').
+	- I did not render the lyrics for midi. It seems that could be beneficial for Karaoke or various other uses. In any case I have yet to see this work right since timidity does not render it well (could be a problem with timidity or maybe a problem with lilyponds rendering of the lyrics for midi...).
+	TODO:
+	- when playing in timidity the channel for the voice is seen as "\new" while the channel for the chords looks like "mychords" (which is the name I gave it). Why is that ?!?
 %}
 
-\score {
-<<
-\chords {
+myChords=\chordmode {
 	\set chordChanges = ##t
 
 	\partial 8 r8 |
@@ -44,8 +43,9 @@
 		}
 	}
 }
-
-\new Voice="melody" {
+myVoice={
+	%% http://en.wikipedia.org/wiki/Tempo
+	\tempo "Moderato" 4 = 110
 	\time 4/4
 	\key d \minor
 	\partial 8 a8 \bar "||"
@@ -65,7 +65,7 @@
 	}
 }
 
-\new Lyrics \lyricsto "melody" {
+myLyrics=\lyricmode {
 	There was a boy,
 	A ver -- y strange en -- chan -- ted boy
 	They say he wan -- dered ver -- y far ver -- y far
@@ -80,21 +80,36 @@
 	great -- est thing
 	You'll ev -- er learn
 	Is just to love and be loved
-	In re -- turn.
+	In re -- turn.'
 }
-\new Lyrics \lyricsto "melody" {
+myLyricsmore=\lyricmode {
 	And then one day,
 	A mag -- ic day he passed my way,
 	And while we spoke of man -- y things, Fools and kings,
-	This he said to me: The
+	This he said to me: 'The
 }
->>
+%% score for printing
+\score {
+	<<
+		\new ChordNames="mychords" \myChords
+		\new Voice="myvoice" \myVoice
+		\new Lyrics \lyricsto "myvoice" \myLyrics
+		\new Lyrics \lyricsto "myvoice" \myLyricsmore
+	>>
+	\layout {
+	}
+}
+%% score for midi
+\score {
+	\unfoldRepeats
+	<<
+		\new ChordNames="mychords" \myChords
+		\new Voice="myvoice" \myVoice
+	>>
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+%%			tempoWholesPerMinute = #(ly:make-moment 110 4)
 		}
-	}
-	\layout {
 	}
 }
