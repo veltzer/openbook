@@ -43,7 +43,7 @@
 	d8 d4 c8 ~ c4 a8 f8 | g8 g4 g8 ~ g4 d8 f8 |
 	g8 g4 f8 ~ f8 e8 d8 c8 | f8 f4 c8 ~ c2 | r2. f8 e8 |
 
-	d4 a'8 g4 f8 e8 |
+	d4 a'8 g4 f8 e4 |
 }
 \new Lyrics \lyricsto "melody" {
 	ב -- ש -- דה י -- רוק, על גב -- עה תלו -- לה.
