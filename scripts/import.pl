@@ -88,7 +88,7 @@ sub handler() {
 			if(!exists($hash->{"completion"})) {
 				return;
 			}
-			if($hash->{"completion"}<3) {
+			if($hash->{"completion"}!=5) {
 				return;
 			}
 			if(exists($hash->{"dontimport"})) {

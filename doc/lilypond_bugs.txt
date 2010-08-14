@@ -1,1 +1,5 @@
 - midi translation does not respect voltas. If I have: A V1 A V2 Then midi will play: A V1 V2 which sounds bad.
+- lyrics do not respect voltas (you can see the ugliness of the situation in autumn leaves).
+- voltas and bows. When the last note before alternatives has a bow to the next note, then
+the first note of the second (third, forth,...) alternative should have a bow coming into
+it as well. As a side effect this also affects lyrics and midi (midi will play the note twice in the second round and lyrics will put a syllable on it even though it does not deserve one).

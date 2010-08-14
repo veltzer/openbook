@@ -27,13 +27,11 @@ myChords=\chordmode {
 				b1:7 | e2:m a2:m | e1:m |
 			}
 		}
-	\break
 	\mark "B"
 		fis1:m7.5- | b1:7.9- | e1:m | e1:m |
 		a1:m7 | d1:7 | g1:maj7 | g1:maj7 |
 		fis1:m7.5- | b1:7.9- | e2:m7 ees2:7 | d2:m7 des2:7 |
 		c1:maj7 | b1:7.9- | e2:m a:m | e1:m
-	\break
 }
 myVoice={
 	\time 4/4
@@ -44,19 +42,19 @@ myVoice={
 	\partial 2. e'4 fis'4 g'4 |
 	\repeat volta 2 {
 		c''1~ | c''4 d'4 e'4 fis'4 | b'2 b'2~ | b'4 c'4 d'4 e'4 |
-		a'1~ | \break
+		a'1~ |
 	}
 	\alternative {
 		{
-			a'4 b4 cis'4 dis'4 | g'1 | r4 e'4 fis'4 g'4 | \break
+			a'4 b4 cis'4 dis'4 | g'1 | r4 e'4 fis'4 g'4 |
 		}
 		{
-			a'4 fis'4 a'4 g'4 | e'1~ | e'4 r4 dis'4 e'4 \bar "||" \break
+			a'4 fis'4 a'4 g'4 | e'1~ | e'4 r4 dis'4 e'4 \bar "||"
 		}
 	}
-	fis'4 b4 fis'2~ | fis'4 fis'4 e'4 fis'4 | g'1~ | g'4 g'4 fis'4 g'4 | \break
-	a'1~ | a'4 d'4 d''4 c''4 | b'1~ | b'4 r4 ais'4 b'4 | \break
-	c''4 c''4 a'4 a'4 | fis'2. c''4 | b'2 b'2~ | b'2. e'4 | \break
+	fis'4 b4 fis'2~ | fis'4 fis'4 e'4 fis'4 | g'1~ | g'4 g'4 fis'4 g'4 |
+	a'1~ | a'4 d'4 d''4 c''4 | b'1~ | b'4 r4 ais'4 b'4 |
+	c''4 c''4 a'4 a'4 | fis'2. c''4 | b'2 b'2~ | b'2. e'4 |
 	a'2. g'4 | fis'2 g'4 b4 | e'1 | r1 \bar "|."
 }
 myLyrics=\lyricmode {
