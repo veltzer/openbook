@@ -10,7 +10,7 @@
 
 %{
 	TODO:
-	- finish the tune and the chords... 
+	- finish the tune and the chords...
 %}
 
 \include "predefined-guitar-fretboards.ly"

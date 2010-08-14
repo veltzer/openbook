@@ -115,7 +115,7 @@ check_no_copyright:
 check_empty_copyright:
 	-@grep --files-with-match "copyright=\"\"" `find . -name "*.ly"`
 .PHONY: check_all
-check_all: check_empty_copyright check_common check_ws check_composer_and check_comments check_extra_files 
+check_all: check_empty_copyright check_common check_ws check_composer_and check_extra_files 
 
 # rules
 

@@ -8,7 +8,7 @@
 	singer="דני סנדרסון"
 	piece="בלדה איטית"
 	poet="מאיר אריאל"
-	
+
 	completion="5"
 
 	url="http://www.youtube.com/watch?v=En9qtX5VnLE"
@@ -25,10 +25,10 @@
 \chords {
 	\set chordChanges = ##t
 	\partial 4 r4
-	
+
 	bes2 a2:m7 | g1:m7 | g2:m7 bes2 | f2 c2:7 | \break
 	bes2 a2:m7 | g1:m7 | g2:m7 bes2 | f2 c2:7 | c1:7 \bar "||" \break
-	
+
 	g1:m7 | bes1 | f2 c2:7 | f1 |
 	g1:m7 | bes2 c2:7 | f2 ees2 | bes2 c2:7 \bar "||"
 }
@@ -39,7 +39,7 @@
 
 	d8 d4 c8 ~ c4 a8 f8 | g8 g4 g8 ~ g4 d8 f8 |
 	g8 g4 f8 ~ f8 e8 d8 c8 | f8 f4 e8 ~ e4 a8 c8 |
-	
+
 	d8 d4 c8 ~ c4 a8 f8 | g8 g4 g8 ~ g4 d8 f8 |
 	g8 g4 f8 ~ f8 e8 d8 c8 | f8 f4 c8 ~ c2 | r2. f8 e8 |
 

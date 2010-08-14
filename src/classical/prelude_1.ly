@@ -3,7 +3,7 @@
 	title="Prelude in C major"
 	subtitle="Prelude number 1"
 	composer="Johann Sebastian Bach"
-	copyright=""
+	copyright="Public Domain"
 	style="Classical"
 	remark="Taken from Shlomo Gronichs book"
 

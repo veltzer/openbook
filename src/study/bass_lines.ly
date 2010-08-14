@@ -67,7 +67,7 @@
 		d4 a' f aes | g d b des | c d e f | g f e des |
 		\mark "Dm 5"
 		d4 a' f fis | g d b des | c d e f | g f e des |
-		
+
 		\mark "Dm 6"
 		d'4 f, a aes | g d b des | c d e f | g f e des |
 		\mark "Dm 7"
