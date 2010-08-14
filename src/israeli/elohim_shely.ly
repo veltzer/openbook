@@ -30,7 +30,7 @@
 	g2:min | d2:7 | g2:min ~ | g4:min d4:7 | \break
 	g2:min | g2:min | c2:min | c2:min |
 	g2:min/ees | d2:7 | g2:min | g4:min d4:7 | \break
-	
+
 	g2:min | d2:7 | g2:min ~ | g4:min d4:7 |
 	g2:min | d2:7 | g2:min ~ | g4:min d4:7 | \break
 	g2:min | g2:min | c2:min | c2:min |

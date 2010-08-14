@@ -47,7 +47,7 @@
 	d2 d4 c8 d8 | ees4 c2 c8 d8 | ees8 c8 d4 c4 bes8 g8 | a4 g2. |
 
 	a4 a8 a8 a8 a4 a8 | a4 a8 a8 a8 a4 a8 | a8 f f f ~ f2 ~ | f1 |
-	b4 b8 b8 b8 b4 b8 | b4 b8 b8 b8 b4 b8 | cis8 a8 a8 a8 ~ a2 ~ | a1 | 
+	b4 b8 b8 b8 b4 b8 | b4 b8 b8 b8 b4 b8 | cis8 a8 a8 a8 ~ a2 ~ | a1 |
 
 	d4 d8 d8 d8 d4 d8 | d4 d,2 d4 | d'4 d8 d8 d8 d4 d8 | d4 d,2 e4 |
 	a4 a8 bes8 b8 d4. | e4 e8 d8 e8 d8 e4 | d1 ~ | d2 r2 |

@@ -5,6 +5,9 @@ now:
 
 build system
 ============
+- make each lily file stand on it's own so that people could use it.
+	This means stopping using the lilypond include feature and starting
+	to use some kind of marcro processor (with dependency analysis ofcourse).
 - make each build make a temp folder so that I could build at the same time.
 - add flac support.
 - add my own recording of the tune in wav, mp3, flac and ogg for download.
