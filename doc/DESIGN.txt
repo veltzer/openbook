@@ -7,3 +7,18 @@ Here are some policy descision:
 	( \include "src/include/common.lyi" )
 - some more checks are being made by the "make check_all" procedue which are also parts
 	of the policy.
+
+Policies about songs:
+=====================
+- don't end with a turn around.
+	REASONS FOR:
+		- sounds bad (in midi for instance).
+		- musicians know how to do turn arounds.
+		- an example of a turn around is usually available. This is especially
+		true for an AABA song where at least one turn around is always there (between
+		the first and the second A parts).
+	REASONS AGAINST:
+		- maybe some people don't know how to turn around.
+		- sometime the turn around is not trivial.
+		- sometime the turn around is not anywhere in the song.
+		- sometime both the previous two reasons persist.
