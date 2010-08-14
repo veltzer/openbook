@@ -16,9 +16,7 @@
 	TODO:
 %}
 
-\score {
-<<
-\chords {
+myChords=\chordmode {
 	\set chordChanges = ##t
 	\partial 8 r8 |
 	\repeat volta 2 {
@@ -37,9 +35,11 @@
 
 }
 
-\new Voice="melody" \relative f' {
+myVoice=\relative f' {
 	\time 4/4
 	\key bes \major
+	%% http://en.wikipedia.org/wiki/Tempo
+	\tempo "Allegro" 4 = 130
 
 	\partial 8 f8 |
 	\repeat volta 2 {
@@ -50,7 +50,7 @@
 			e8 g bes des \times 4/3 { c16 des c } g8 bes | r2 r4 r8 f |
 		}
 		{
-			e8 g bes des \times 4/3 { c16 des c } g8 a | r1 |
+			e8 g bes des \times 4/3 { c16 des c } g8 a | r1 \bar "||"
 		}
 	}
 	g'4 r8 f8 ~ f8 r8 des4 ~ | des4. g,8 r c4 g8 |
@@ -58,13 +58,22 @@
 	bes8 d bes f bes4 r8 f | bes8 f bes des r g,4 f8 |
 	e8 g bes des \times 4/3 { c16 des c } g8 bes | r1 |
 }
-
->>
-	\midi {
-		\context {
-			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
-		}
+%% score for printing
+\score {
+	<<
+		\new ChordNames="mychords" \myChords
+		\new Voice="myvoice" \myVoice
+	>>
+	\layout {
 	}
-	\layout {}
+}
+%% score for midi
+\score {
+	\unfoldRepeats
+	<<
+		\new ChordNames="mychords" \myChords
+		\new Voice="myvoice" \myVoice
+	>>
+	\midi {
+	}
 }
