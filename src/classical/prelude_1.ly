@@ -102,6 +102,82 @@ myChords=\chordmode {
 	r8 a,16 c f a, c f r8 a,16 c f a, c f |
 	r16 f8.~ f4 r16 f8.~ f4 |
 	e2 e |
+	% Bar 17
+	r8 a,16 c f a, c f r8 a,16 c f a, c f |
+	r16 f8.~ f4 r16 f8.~ f4 |
+	d2 d |
+	% Bar 18
+	r8 g,16 b f' g, b f' r8 g,16 b f' g, b f' |
+	r16 d8.~ d4 r16 d8.~ d4 |
+	g,2 g |
+	% Bar 19
+	r8 g,16 c e g, c e r8 g,16 c e g, c e |
+	r16 e8.~ e4 r16 e8.~ e4 |
+	c2 c |
+	% Bar 20
+	r8 bes16 c e bes c e r8 bes16 c e bes c e |
+	r16 g8.~ g4 r16 g8.~ g4 |
+	c2 c |
+	% Bar 21
+	r8 a,16 c e a, c e r8 a,16 c e a, c e |
+	r16 f8.~ f4 r16 f8.~ f4 |
+	f,2 f |
+	% Bar 22
+	r8 a,16 c ees a, c ees r8 a,16 c ees a, c ees |
+	r16 c8.~ c4 r16 c8.~ c4 |
+	fis2 fis |
+	% Bar 23
+	r8 b16 c d b c d r8 b16 c d b c d |
+	r16 f8.~ f4 r16 f8.~ f4 |
+	aes2 aes |
+	% Bar 24
+	r8 g,16 b d g, b d r8 g,16 b d g, b d |
+	r16 f8.~ f4 r16 f8.~ f4 |
+	g2 g |
+	% Bar 25
+	r8 g,16 c e g, c e r8 g,16 c e g, c e |
+	r16 e8.~ e4 r16 e8.~ e4 |
+	g2 g |
+	% Bar 26
+	r8 g,16 c f g, c f r8 g,16 c f g, c f |
+	r16 d8.~ d4 r16 d8.~ d4 |
+	g2 g |
+	% Bar 27
+	r8 g,16 b f' g, b f' r8 g,16 b f' g, b f' |
+	r16 d8.~ d4 r16 d8.~ d4 |
+	g2 g |
+	% Bar 28
+	r8 a,16 c fis a, c fis r8 a,16 c fis a, c fis |
+	r16 ees8.~ ees4 r16 ees8.~ ees4 |
+	g2 g |
+	% Bar 29
+	r8 g,16 c g' g, c g' r8 g,16 c g' g, c g' |
+	r16 e!8.~ e4 r16 e8.~ e4 |
+	g2 g |
+	% Bar 30 
+	r8 g,16 c f g, c f r8 g,16 c f g, c f |
+	r16 d8.~ d4 r16 d8.~ d4 |
+	g2 g |
+	% Bar 31
+	r8 g,16 b f' g, b f' r8 g,16 b f' g, b f' |
+	r16 d8.~ d4 r16 d8.~ d4 |
+	g2 g |
+	% Bar 32
+	r8 g,16 bes e g, bes e r8 g,16 bes e g, bes e |
+	r16 c8.~ c4 r16 c8.~ c4 |
+	c,2 c |
+	% Bar 33
+	\clef bass r8 f,16 a c f c a c a f a f d f d |
+	r16 c8.~ c4~ c2 |
+	c1 |
+	% Bar 34
+	\mark \markup { \italic { ritenuto } } \clef treble r8\sustainOn g'16 b d f d b d b g b d, f e d \sustainOff |
+	r16 b8.~ b4~ b2 |
+	c1 |
+	% Bar 35
+	<e g c>1\fermata |
+	c1\fermata |
+	c1\fermata |
 }
 piano={
 	%% This is the instrument name that will appear before the staff.
@@ -127,6 +203,7 @@ piano={
 				%%\relative c'
 				%%\voiceB
 			>>
+			\bar "|."
 		}
 		\new Staff="down" {
 			\clef bass
@@ -137,6 +214,7 @@ piano={
 				\relative c'
 				\voiceC
 			>>
+			\bar "|."
 		}
 	>>
 }
