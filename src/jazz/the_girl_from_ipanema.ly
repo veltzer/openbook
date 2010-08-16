@@ -7,16 +7,15 @@
 	style="Bossa Nova"
 	piece="Moderate Bossa Nova"
 	copyright="1963, Antonio Carlos Jobim and Vincius De Moraes, Brazil"
-	%% Sole Selling Agent Duchess Music Corporation (MCA), New York, NY for all
-	%% English speaking countries
 
 	completion="5"
 	uuid="2c3b337c-a26f-11df-b7d1-0019d11e5a41"
 }
+%% Sole Selling Agent Duchess Music Corporation (MCA), New York, NY for all
+%% English speaking countries
 
 %{
 	TODO:
-		- hear that it sounds ok.
 		- publish this.
 %}
 myChords=\chordmode {
