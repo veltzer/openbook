@@ -21,6 +21,10 @@
 
 \score {
 <<
+\chords {
+	%% see the difference between the next two chords ?!?
+	f1:maj7.9 | f1:maj9
+}
 \drums {
 	\time 4/4
 		sn16 sn8 sn16 sn8 sn8:32 ~
