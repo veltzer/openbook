@@ -3,6 +3,11 @@ now:
 - import only things which are not in the database.
 - import my own recordings into the database - look at the tags for more data.
 
+parsing lilypond:
+=================
+- my parser does not know how to handle comment in the \header section. As a result
+I cannot put stuff in comments there. worse, it fails silently when this happens.
+
 build system
 ============
 - make each lily file stand on it's own so that people could use it.
