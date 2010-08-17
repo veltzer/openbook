@@ -5,8 +5,7 @@ now:
 
 parsing lilypond:
 =================
-- my parser does not know how to handle comment in the \header section. As a result
-I cannot put stuff in comments there. worse, it fails silently when this happens.
+- there is much to do in this area but no known issues at this time.
 
 build system
 ============
