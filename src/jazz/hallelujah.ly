@@ -26,7 +26,7 @@ tune={
 	\phraseA | f4 f8 f8 ~ f8 r8 r4 |
 	\phraseB | f4 f8 f8 ~ f8. c16 d8. f16 |
 	a8 c'4. r4 a8. a16 | g8 f4. r4 aes8. g16 |
-	aes8. g16 f8. d16 f4 f8 f8 | f8 r8 r4 r2 \bar "|."
+	aes8. g16 f8. d16 f4 f8 f8 | f8 r8 r4 r2 |
 }
 
 text=\lyrics {
