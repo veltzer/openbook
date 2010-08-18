@@ -13,9 +13,12 @@
 %{
 	TODO:
 	- add lyrics
+	- discrepency between tune and melody at the end
 %}
 
 harmony=\chords {
+	\startChords
+
 	\startSong
 
 	\partial 4 r4 |
@@ -28,6 +31,8 @@ harmony=\chords {
 		g2:m7 c2:7 | f1:maj7 | e2:m7.5- a2:7.9+ | d1:m7 | a1:7.9+ | \myEndLine
 	}
 	\endSong
+
+	\endChords
 }
 
 tune=\relative c''' {

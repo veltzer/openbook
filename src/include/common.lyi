@@ -45,4 +45,7 @@ endPart=\bar "||"
 startSong={}
 endSong=\bar "|."
 
+startChords=\set chordChanges = ##t
+endChords={}
+
 myEndLine=\break

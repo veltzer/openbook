@@ -18,7 +18,7 @@
 %}
 
 myChords=\chordmode {
-	\set chordChanges = ##t
+	\startChords
 
 	\startSong
 
@@ -44,7 +44,7 @@ myChords=\chordmode {
 
 myVoice={
 	%% http://en.wikipedia.org/wiki/Tempo
-	\tempo "Allegra" 4 = 130
+	\tempo "Allegro" 4 = 130
 	\time 4/4
 	\key f \major
 
