@@ -5,6 +5,9 @@
 # from the lilypond files themselves) into my database (into a lilypond table).
 
 # TODO:
+# - make this script not import anything which is already in the database.
+# 	Do this using the uuid, a date field as compared to the date of the file,
+# 	or maybe an md5 sum ?!?
 # - improve the lilypond parser to get more data. 
 
 use strict;
