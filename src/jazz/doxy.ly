@@ -19,21 +19,31 @@
 
 myChords=\chordmode {
 	\set chordChanges = ##t
+
+	\startSong
+
 	\partial 8 r8 |
+
+	\startPart
 	\repeat volta 2 {
 		bes2:7 aes2:7 | aes2:7 g2:7 |
 	}
 	\alternative {
 		{
-			c2:7 f2:7 | bes1:7 |
+			c2:7 f2:7 | bes1:7 | \myEndLine
 		}
 		{
-			c1:7 | f1:7 |
+			c1:7 | f1:7 | \myEndLine
 		}
 	}
-	bes1:7 | bes1:7 | ees1:7 | e1:dim7 |
-	bes2:7 aes2:7 | aes2:7 g2:7 | c2:7 f2:7 | bes1:7 \bar "|."
+	\endPart
 
+	\startPart
+	bes1:7 | bes1:7 | ees1:7 | e1:dim7 | \myEndLine
+	bes2:7 aes2:7 | aes2:7 g2:7 | c2:7 f2:7 | bes1:7 | \myEndLine
+	\endPart
+
+	\endSong
 }
 
 myVoice=\relative f' {
@@ -51,7 +61,7 @@ myVoice=\relative f' {
 			e8 g bes des \times 4/3 { c16 des c } g8 bes | r2 r4 r8 f |
 		}
 		{
-			e8 g bes des \times 4/3 { c16 des c } g8 a | r1 \bar "||"
+			e8 g bes des \times 4/3 { c16 des c } g8 a | r1 |
 		}
 	}
 	g'4 r8 f8 ~ f8 r8 des4 ~ | des4. g,8 r c4 g8 |
