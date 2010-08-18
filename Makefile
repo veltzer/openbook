@@ -13,7 +13,9 @@ DO_OGG:=1
 # do you actually want to use dependency information ?
 USE_DEPS:=0
 
-SRC_FOLDER=src
+SRC_FOLDER:=src
+
+ALL_DEP:=Makefile
 
 FILES_LY:=$(shell find $(SRC_FOLDER) -name "*.ly")
 FILES_LYI:=$(shell find $(SRC_FOLDER) -name "*.lyi")
@@ -163,31 +165,31 @@ LYFLAGS:=
 #$(FILES_MIDI): %.midi: %.ly
 #	lilypond --pdf $(LYFLAGS) -o /tmp/foo $<
 #	mv /tmp/foo.midi $@
-$(FILES_PNG): %.png: %.stamp
+$(FILES_PNG): %.png: %.stamp $(ALL_DEP)
 
-$(FILES_PS): %.ps: %.stamp
+$(FILES_PS): %.ps: %.stamp $(ALL_DEP)
 
-$(FILES_PDF): %.pdf: %.stamp
+$(FILES_PDF): %.pdf: %.stamp $(ALL_DEP)
 
-$(FILES_MIDI): %.midi: %.stamp
+$(FILES_MIDI): %.midi: %.stamp $(ALL_DEP)
 
-$(FILES_STAMP): %.stamp: %.ly
+$(FILES_STAMP): %.stamp: %.ly $(ALL_DEP)
 	lilypond --pdf $(LYFLAGS) -o /tmp/foo $<
 	mv /tmp/foo.ps $(basename $<).ps
 	mv /tmp/foo.pdf $(basename $<).pdf
 	mv /tmp/foo.midi $(basename $<).midi
 	touch $@
-$(FILES_LYD): %.ly.d: %.ly
+$(FILES_LYD): %.ly.d: %.ly $(ALL_DEP)
 	./scripts/lilydep.pl $< $@ $(basename $<).pdf $(basename $<).ps $(basename $<).midi
-$(FILES_WAV): %.wav: %.midi
+$(FILES_WAV): %.wav: %.midi $(ALL_DEP)
 	timidity $< -idq -Ow -o $@ > /dev/null
 # rule about making mp3 from wav files - I currently don't use it since
 # I generated mp3 directly from midi using a pipe between timidity and lame...
 #$(FILES_MP3): %.mp3: %.wav
 #	lame $< $@
-$(FILES_OGG): %.ogg: %.midi
+$(FILES_OGG): %.ogg: %.midi $(ALL_DEP)
 	timidity $< -idq -Ov -o $@ > /dev/null
-$(FILES_MP3): %.mp3: %.midi
+$(FILES_MP3): %.mp3: %.midi $(ALL_DEP)
 	timidity $< -idq -Ow -o - | lame - $@
 
 # include the deps files (no warnings)
