@@ -26,7 +26,7 @@
 	\startChords
 
 	\startSong
-	
+
 	\partial 4 r4
 
 	bes2 a2:m7 | g1:m7 | g2:m7 bes2 | f2 c2:7 | \myEndLine

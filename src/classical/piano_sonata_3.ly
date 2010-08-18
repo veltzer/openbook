@@ -28,9 +28,10 @@ tune={
 		}
 		{
 			c''4 b'4 c''4 d''4 | \times 2/3 { e''4 d''4 c''4 } b'4 bes'4 | a'1 | \times 2/3 { c''4 b'4 bes'4 } a'4 aes'4 |
-			g'1 | \times 2/3 { b'4 a'4 aes'4 } g'4 d''4 | c''1~ | c''2 r4 <\parenthesize e'>4 \bar "|."
+			g'1 | \times 2/3 { b'4 a'4 aes'4 } g'4 d''4 | c''1~ | c''2 r4 <\parenthesize e'>4 |
 		}
 	}
+	\tuneFinish
 }
 
 \include "src/include/tune.lyi"

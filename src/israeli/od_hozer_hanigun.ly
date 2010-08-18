@@ -14,8 +14,8 @@ harmony=\chords {
 		b2:m7 a2:7 |
 	}
 	\mark "verse"
-	d2 e2:m7 | g2 b2:m7 | e2:m7 fis2:7 | g2 d2 | \break
-	g2 d2 | e2:m7 b2:m7 | e2:m7 fis2:7 | g2 a2:7 | \break
+	d2 e2:m7 | g2 b2:m7 | e2:m7 fis2:7 | g2 d2 | \myEndLine
+	g2 d2 | e2:m7 b2:m7 | e2:m7 fis2:7 | g2 a2:7 | \myEndLine
 }
 
 \include "src/include/harmony.lyi"

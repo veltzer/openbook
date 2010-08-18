@@ -9,10 +9,18 @@
 }
 
 harmony=\chords {
+	\startChords
+
+	\startSong
+
 	\repeat volta 2 {
 		f2:maj7 a2:m7 | bes2:maj7 c2:7 |
 	}
-	bes1:maj7 | a1:m7 | g2:m7 c2:7 | f2:maj7 r4 c4:7 \bar "||"
+	bes1:maj7 | a1:m7 | g2:m7 c2:7 | f2:maj7 r4 c4:7 |
+
+	\endSong
+
+	\endChords
 }
 
 text=\lyrics {

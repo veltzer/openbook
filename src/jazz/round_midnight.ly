@@ -24,7 +24,7 @@ tune={
 	% INTRO
 	\intro |
 	\intro |
-	\intro | \break
+	\intro | \myEndLine
 
 	{
 		\repeat "unfold" 3 {

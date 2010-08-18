@@ -13,7 +13,7 @@ tune={
 	\key f \major
 	\time 4/4
 
-	r1 | r2 r4 c8 e \bar "||"
+	r1 | r2 r4 c8 e |
 	f4. a8 c'2 | r8 d' d' d' c'2 | r8 bes bes bes a2 |
 	r8 g g g f4 ~ \times 2/3 { f8 f f } | f4 ~ \times 2/3 { f8 f f } f2 |
 	r4 f8 f \times 2/3 {e4 f g} | a1 ~ | a2 r4 c8 e |
@@ -28,7 +28,6 @@ tune={
 	r8 bes bes bes a4. a8 | g4 ~ \times 2/3 { g8 g g } f4 ~ \times 2/3 { f8 f f } |
 	f4 ~ \times 2/3 { f8 f f } f2 | r4 f8 f \times 2/3 {e4 f g} | a1 ~ | a4 r a a |
 	\times 2/3 {a4 f g} f2 | r4 f8 f \times 2/3 {e4 f g} | f1 ~ | f
-	\bar "|."
 }
 
 text=\lyrics {
@@ -52,7 +51,12 @@ text=\lyrics {
 }
 
 harmony=\chords {
-	r1*2 \bar "||"
+	\startChords
+
+	\startSong
+
+	r1 | r1 |
+
 	f2 a:m bes a:m g:m7 f a:7 d:m des1 c2:7.11 c:7 f f:5+ bes:7+ c:7
 	f2 a:m bes a:m g:m7 f a:7 d:m des1 c2:7.11 c:7 f bes bes f
 	c1:7 f c:7 f
@@ -60,6 +64,10 @@ harmony=\chords {
 	f2 a:m bes a:m g:m7 f a:7 d:m
 	des1 c2:7.11 c:7 f a:m7.5- d1:7
 	g:m7 r2 c:7.9- f bes:6 r f
+
+	\endSong
+
+	\endChords
 }
 
 patternA={
@@ -95,7 +103,7 @@ piano=\context GrandStaff <
 	\global
 	{
 	%1
-	a2 g2 | a2 g4 c8 e \bar "||"
+	a2 g2 | a2 g4 c8 e |
 	%3
 	f4. a8 c'2 | r8 d' d' d' c'2 | r8 bes bes bes a2 |
 	%6
@@ -164,7 +172,6 @@ piano=\context GrandStaff <
 		\repeat unfold 2 {
 			\times 2/3 { f,8 a, c f c a, f, bes, d g d bes, } |
 		}
-	\bar "||"
 	\tupletNumberOff
 	\patternA
 	\times 2/3 {

@@ -10,28 +10,36 @@
 	uuid="7c9691e6-a26e-11df-8418-0019d11e5a41"
 }
 
-harmony=\chords {
-	\partial 4 r4 |
-	\repeat volta 2 {
-		c1:6 | a1:m7 | g1:7 | dis1:dim | \break
-		e1:m7 | a1:m7 | d1:m7 | g1:7 | \break
-	}
-	\alternative {
-		{
-			c1:6 | e2.:m7 aes4:7 | d2:m7 g2:7 | d2:m7 g2:7 | \break
-			a1:m7 | e2.:m7 f4:7 | e2:7 a2:7 | d2:m7 g2:7 | \break
-		}
-		{
-			c1:maj7 | c2:7/bes g4:7 c4:7 | f2:maj7 a2:7/e | d2:m7 dis2:dim | \break
-			e1:m7 | g1:7 | c1:6 | d2:m7 g2:7 | \break
-		}
-	}
-}
-
 %{
 	TODO:
 	- add lyrics
 %}
+
+harmony=\chords {
+	\startChords
+
+	\startSong
+
+	\partial 4 r4 |
+	\repeat volta 2 {
+		c1:6 | a1:m7 | g1:7 | dis1:dim | \myEndLine
+		e1:m7 | a1:m7 | d1:m7 | g1:7 | \myEndLine
+	}
+	\alternative {
+		{
+			c1:6 | e2.:m7 aes4:7 | d2:m7 g2:7 | d2:m7 g2:7 | \myEndLine
+			a1:m7 | e2.:m7 f4:7 | e2:7 a2:7 | d2:m7 g2:7 | \myEndLine
+		}
+		{
+			c1:maj7 | c2:7/bes g4:7 c4:7 | f2:maj7 a2:7/e | d2:m7 dis2:dim | \myEndLine
+			e1:m7 | g1:7 | c1:6 | d2:m7 g2:7 | \myEndLine
+		}
+	}
+
+	\endSong
+
+	\endChords
+}
 
 tune={
 	\key c \major
@@ -48,7 +56,7 @@ tune={
 		}
 		{
 			c''4 b'4 c''4 d''4 | \times 2/3 { e''4 d''4 c''4 } b'4 bes'4 | a'1 | \times 2/3 { c''4 b'4 bes'4 } a'4 aes'4 |
-			g'1 | \times 2/3 { b'4 a'4 aes'4 } g'4 d''4 | c''1~ | c''2 r4 <\parenthesize e'>4 \bar "|."
+			g'1 | \times 2/3 { b'4 a'4 aes'4 } g'4 d''4 | c''1~ | c''2 r4 <\parenthesize e'>4 |
 		}
 	}
 }
