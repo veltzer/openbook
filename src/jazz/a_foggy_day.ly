@@ -8,6 +8,7 @@
 	remark="copied from the real book"
 	poet="Ira Gershwin"
 	copyright="1937, Gershwin Publishing Corporation"
+	%% Copyright Renewed, Assigned to Chappell & Co, Inc.
 
 	completion="5"
 	uuid="87da6ece-a26e-11df-95d7-0019d11e5a41"
@@ -49,14 +50,14 @@ myVoice=\relative c'{
 	% Bar 1
 	r4 c c c | ees2. ees4 | d d2. | a'1 |
 	r4 f f f | aes2. aes4 | g2. g4 | d'1 |
-	r4 e e e | c c2. | a2. a4 | f1 |
+	r4 e e e | c c2. | a a4 | f1 |
 	r4 a a a | c c2 c4 | a2. a4 | d,1 |
 
 	% Bar 17
 	r4 c c c | ees2. ees4 | d d2. | a'1 |
 	r4 f f f | aes2. aes4 | g2. g4 | d'1 |
 	f2 f4 f | d2. d4 | c2 c | a a4 bes |
-	c f, g bes | a f g bes | a2 f' | f, g | f1 ~ | f2 r |
+	c f, g bes | a f g bes | a2 f' | f, g | f1 | r |
 
 }
 myLyrics=\lyricmode {
