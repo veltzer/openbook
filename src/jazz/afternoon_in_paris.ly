@@ -15,14 +15,14 @@
 %}
 
 harmony=\chords {
-	\set chordChanges = ##t
+	\startChords
 
 	\startSong
 
 	\partial 4 r4 |
 	\mark "A"
 	\repeat volta 2 {
-		c1:maj7 | c2:m7 f2:7 | bes1:maj7 | bes2:m7 ees2:7 | \break
+		c1:maj7 | c2:m7 f2:7 | bes1:maj7 | bes2:m7 ees2:7 | \myEndLine
 		aes1:maj7 | d2:m7 g2:7.9- | c1:maj7 |
 	}
 	\alternative {
@@ -36,10 +36,12 @@ harmony=\chords {
 	\endPart
 
 	\mark "B"
-	d1:m7 | g1:7 | c1:maj7/e | a1:7.9 | \break
-	d1:m7 | g1:7 | c1:maj7 | d2:m7 g2:7 | \break
+	d1:m7 | g1:7 | c1:maj7/e | a1:7.9 | \myEndLine
+	d1:m7 | g1:7 | c1:maj7 | d2:m7 g2:7 | \myEndLine
 
 	\endSong
+
+	\endChords
 }
 
 tune={

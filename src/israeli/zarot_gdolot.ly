@@ -11,18 +11,27 @@
 	uuid="5a9b270e-a26f-11df-a792-0019d11e5a41"
 }
 
-harmony=\new ChordNames \with {
-	\override BarLine #'bar-size = #4
-	\consists "Bar_engraver"
-}
-\chordmode {
+myChords=\chordmode {
+	\startChords
+
+	\startSong
+
 	\mark "verse"
+	\startPart
 	\repeat volta 2 {
-		c2 b2:m7.5- | a2:m7 d2:m7 | g2:7 c2:maj7 | d2:m7 g2:7 | \break
+		c2 b2:m7.5- | a2:m7 d2:m7 | g2:7 c2:maj7 | d2:m7 g2:7 | \myEndLine
 	}
+	\endPart
+
 	\mark "chorus"
-	a2:m7 g2:7 | f1:maj7 | a2:m7 d2:m7 | g1:7 | \break
-	c2 b2:m7.5- | a2:m7 g2:7 | f2:maj7 g2:7 | c2 g2:7 | \break
+	\startPart
+	a2:m7 g2:7 | f1:maj7 | a2:m7 d2:m7 | g1:7 | \myEndLine
+	c2 b2:m7.5- | a2:m7 g2:7 | f2:maj7 g2:7 | c2 g2:7 | \myEndLine
+	\endPart
+
+	\endSong
+
+	\endChords
 }
 text=\lyricmode {
 	בעירי היו שתי עלמות

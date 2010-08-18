@@ -18,7 +18,9 @@
 %}
 
 myChords=\chordmode {
-	\set chordChanges = ##t
+	\startChords
+
+	\startSong
 
 	c1:m7 | c:m7/+b | c:m7/+bes | a:m7.5- |
 	aes:maj7 | f:m7.9 | d:m7.5- | g:7.9- |
@@ -32,7 +34,9 @@ myChords=\chordmode {
 	aes:maj7 | d2:m7.5- g:7.9- | c:m7 b:7.9 | bes:m7.9 a:7.5-.9+ |
 	aes1:maj7 | f2:m7 bes:7 | ees1:maj7 | ees1:maj7 |
 
-	\bar "|."
+	\endSong
+
+	\endChords
 }
 myVoice=\relative a {
 	\time 4/4

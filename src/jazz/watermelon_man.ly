@@ -14,8 +14,10 @@
 %}
 
 myChords=\chordmode {
-	\set chordChanges = ##t
+	\startChords
+
 	\startSong
+
 	\repeat volta 2 {
 		f1:7 | f1:7 | f1:7 | f1:7 | \myEndLine
 		bes1:7 | bes1:7 | f1:7 | f1:7 | \myEndLine
@@ -23,6 +25,8 @@ myChords=\chordmode {
 		c1:7 | bes1:7 | f1:7 | f1:7 | \myEndLine
 	}
 	\endSong
+
+	\endChords
 }
 
 myVoice={

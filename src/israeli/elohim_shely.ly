@@ -24,17 +24,23 @@
 \score {
 <<
 \chords {
-	\set chordChanges = ##t
+	\startChords
+
+	\startSong
 
 	g2:m | d2:7 | g2:m ~ | g4:m d4:7 |
-	g2:m | d2:7 | g2:m ~ | g4:m d4:7 | \break
+	g2:m | d2:7 | g2:m ~ | g4:m d4:7 | \myEndLine
 	g2:m | g2:m | c2:m | c2:m |
-	g2:m/ees | d2:7 | g2:m | g4:m d4:7 | \break
+	g2:m/ees | d2:7 | g2:m | g4:m d4:7 | \myEndLine
 
 	g2:m | d2:7 | g2:m ~ | g4:m d4:7 |
-	g2:m | d2:7 | g2:m ~ | g4:m d4:7 | \break
+	g2:m | d2:7 | g2:m ~ | g4:m d4:7 | \myEndLine
 	g2:m | g2:m | c2:m | c2:m |
-	ees2:maj | f2:7 | bes2:maj | bes2:maj | \break
+	ees2:maj | f2:7 | bes2:maj | bes2:maj | \myEndLine
+
+	\endSong
+
+	\endChords
 }
 
 \new Voice="melody" {

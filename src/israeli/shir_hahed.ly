@@ -26,18 +26,25 @@
 \score {
 <<
 \chords {
-	\set chordChanges = ##t
-	\time 6/8
+	\startChords
+
 	\mark "פתיחה"
+	\startPart
 	e2. | e2. | e2. | e2. |
 	fis2. | fis2. | e4. aes4./ees | a4./cis a4. |
-	e2. | e2. \bar "||" \break
+	e2. | e2. |
+	\endPart
+
 	\mark "בית"
+	\startPart
 	e2. | e2. | cis2.:m | cis2.:m |
 	fis2.:m | fis2.:m | b2.:7 | b2.:7/a |
 	aes2. | cis2.:m | aes2. | cis4.:m cis4.:m/b |
 	a2. | \time 3/8 e4. | \time 6/8 cis2.:m |
 	fis2.:m | fis2.:m | b2.:7 | b2.:7 |
+	\endPart
+
+	\endChords
 }
 \new Voice="melody" \relative f' {
 	\time 6/8

@@ -18,7 +18,9 @@
 %}
 
 myChords=\chordmode {
-	\set chordChanges = ##t
+	\startChords
+
+	\startSong
 
 	\partial 2 r2 |
 	\repeat volta 2 {
@@ -36,6 +38,9 @@ myChords=\chordmode {
 			c2 a2:7 | d2:m7 g2:7 | c1:maj7 | c1:maj7 |
 		}
 	}
+	\endSong
+
+	\endChords
 }
 
 myVoice=\relative c' {
@@ -60,7 +65,6 @@ myVoice=\relative c' {
 			e2 e2 | d4 c'8 r8 r4 b4 | c1 ~ | c2 r2 |
 		}
 	}
-	\bar "|."
 }
 myLyrics=\lyricmode {
 	If they asked me I Could Write A Book,
