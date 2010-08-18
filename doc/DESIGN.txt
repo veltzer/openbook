@@ -27,5 +27,13 @@ Policies about songs:
 - bars
 	- Don't do any extra special bars (\bar "||" or the like). It just overloads the music.
 	Mark stuff with \mark "A", \mark "B" etc for parts but that's it.
-	- At the end of the piece put an ending mark (\bar "|."). It seems that lilypond does
+	- At the end of the piece put an ending mark (\bar "|."). My convention is to have this mark at the end of the chords and not the tune. It seems that lilypond does
 	not do that by default. (Why? Is that a bug that I should report ?!?).
+
+Lyrics:
+=======
+- quotations in lyrics
+	you cannot put the quotes in double quotation marks (") since that will cause the
+	lyrics to come out wrong, instead I used single quotation marks (').
+- Lyrics and midi
+	- I did not render the lyrics for midi. It seems that could be beneficial for Karaoke or various other uses. In any case I have yet to see this work right since timidity does not render it well (could be a problem with timidity or maybe a problem with lilyponds rendering of the lyrics for midi...).
