@@ -17,27 +17,35 @@
 
 %{
 	TODO:
+	- turn this tune relative
 %}
 
 myChords=\chordmode {
 	\set chordChanges = ##t
 
+	\startSong
+
 	\partial 8 r8 |
+
+	\startPart
 	\repeat volta 2 {
-		d1:min | e2:min7.5- a2:7 | d1:min | e2:min7.5- a2:7 |
-		d2:min d2:min7+ | d2:min7 d2:min6 | g2:min6 d2:min | e1:min7.5- |
+		d1:min | e2:min7.5- a2:7 | d1:min | e2:min7.5- a2:7 | \myEndLine
+		d2:min d2:min7+ | d2:min7 d2:min6 | g2:min6 d2:min | e1:min7.5- | \myEndLine
 	}
 	\alternative {
 		{
-			a1:7 | r1 | d1:min | r1 |
-			e1:7.9- | r1 | a1:7 | r1 |
+			a1:7 | a1:7 | d1:min | d1:min | \myEndLine
+			e1:7.9- | e1:7.9- | a1:7 | a:7 | \myEndLine
+			\endPart
 		}
 		{
-			a1:7 | r1 | d1:min | b1:min7.5- |
-			e1:7.9- | a1:7.5+ | d1:min | e2:min7.5- a2:7 |
+			a1:7 | a1:7 | d1:min | b1:min7.5- | \myEndLine
+			e1:7.9- | a1:7.5+ | d1:min | e2:min7.5- a2:7 | \myEndLine
+			\endPart
 		}
 	}
-	\bar "|."
+
+	\endSong
 }
 myVoice={
 	%% http://en.wikipedia.org/wiki/Tempo
