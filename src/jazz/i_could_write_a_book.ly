@@ -17,51 +17,52 @@
 	TODO:
 %}
 
-\score {
-<<
-\chords {
+myChords=\chordmode {
 	\set chordChanges = ##t
 
 	\partial 2 r2 |
 	\repeat volta 2 {
-		c2:maj7 a2:min9 | d2:min7 g2:7 | c1:maj7 | c2:maj7 g2:7 | \break
-		c2:maj7 g2:7 | c2:maj7 cis2:dim7 | d1:min7 | g1:7 | \break
+		c2:maj7 a2:min9 | d2:min7 g2:7 | c1:maj7 | c2:maj7 g2:7 |
+		c2:maj7 g2:7 | c2:maj7 cis2:dim7 | d1:min7 | g1:7 |
 		c2/e aes2:7/ees | d2:min7 g2:7 |
 	}
 	\alternative {
 		{
-			a2:min7 d2:7.9- | g2. b4:7 | \break
-			e1:min | a2:min7 d2:7 | d1:min7 | g1:7 | \break
+			a2:min7 d2:7.9- | g2. b4:7 |
+			e1:min | a2:min7 d2:7 | d1:min7 | g1:7 |
 		}
 		{
-			g2:min7 c2:7 | f2:maj7 f4:min7 bes4:7 | \break
-			c2 a2:7 | d2:min7 g2:7 | c1:maj7 | c1:maj7 | \break
+			g2:min7 c2:7 | f2:maj7 f4:min7 bes4:7 |
+			c2 a2:7 | d2:min7 g2:7 | c1:maj7 | c1:maj7 |
 		}
 	}
 }
 
-\new Voice="melody" \relative c' {
+myVoice=\relative c' {
 	\time 4/4
 	\key c \major
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Allegro" 4 = 130
 
 	\partial 2 e4 f4 |
 	\repeat volta 2 {
 		g2 b2 | a4 g e d | e1 ~ | e4 g e4 d4 |
-		e4 g4 e4 d4 | e4 c'8 r8 r4 e,4 | g1 ~ | g4 r4 a4 b4 \bar "||"
+		e4 g4 e4 d4 | e4 c'8 r8 r4 e,4 | g1 ~ | g4 r4 a4 b4 |
 		c2 c2 | c4 d8 r8 r4 b4 |
 	}
 	\alternative {
 		{
 			a2 a2 | g2 e4 fis4 |
-			g2 g2 | g4 a8 r8 r4 fis4 | g1 ~ | g4 r4 e4 f4 \bar "||"
+			g2 g2 | g4 a8 r8 r4 fis4 | g1 ~ | g4 r4 e4 f4 |
 		}
 		{
 			bes2 bes2 | a2 g4 f4 |
-			e2 e2 | d4 c'8 r8 r4 b4 | c1 ~ | c2 r2 \bar "||"
+			e2 e2 | d4 c'8 r8 r4 b4 | c1 ~ | c2 r2 |
 		}
 	}
+	\bar "|."
 }
-\new Lyrics \lyricsto "melody" {
+myLyrics=\lyricmode {
 	If they asked me I Could Write A Book,
 	a -- bout the way you walk and whis -- per and look,
 	I could write a pre -- face on how we met,
@@ -73,17 +74,29 @@
 	how to make two lov -- ers of friends.
 
 }
-\new Lyrics \lyricsto "melody" {
-	and the sim -- ple se -- cret of the plot
+myLyricsmore=\lyricmode {
+	_ _ sim -- ple se -- cret of the plot
 	is just to tell them that I love you a -- lot,
 	then the world dis -- cov -- ers as
 }
->>
-	\midi {
-		\context {
-			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
-		}
+%% score for printing
+\score {
+	<<
+		\new ChordNames="mychords" \myChords
+		\new Voice="myvoice" \myVoice
+		\new Lyrics \lyricsto "myvoice" \myLyrics
+		\new Lyrics \lyricsto "myvoice" \myLyricsmore
+	>>
+	\layout {
 	}
-	\layout {}
+}
+%% score for midi
+\score {
+	\unfoldRepeats
+	<<
+		\new ChordNames="mychords" \myChords
+		\new Voice="myvoice" \myVoice
+	>>
+	\midi {
+	}
 }
