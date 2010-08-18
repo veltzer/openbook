@@ -14,7 +14,6 @@
 }
 %{
 	TODO:
-	- turn this tune relative
 %}
 
 myChords=\chordmode {
@@ -35,29 +34,29 @@ myChords=\chordmode {
 	f1:maj7 | aes:m7 | g1:m7 | c1:7 | \myEndLine
 	f1:6 | d1:m7.5- | g1:7 | g2:m7 c2:7 | \myEndLine
 	c1:m7 | f1:7 | bes1:6 | ees1:7 | \myEndLine
-	f2:6 g2:m7 | a2:m7 bes2:m6 | a2:m7 d2:7 | g2:m7 c2:7 |
-	f1:6 | f1:6 | \myEndLine
+	f2:6 g2:m7 | a2:m7 bes2:m6 | a2:m7 d2:7 | g2:m7 c2:7 | f1:6 | f1:6 | \myEndLine
 	\endPart
 
 	\endSong
 }
 
-myVoice={
+myVoice=\relative c'{
 	%% http://en.wikipedia.org/wiki/Tempo
 	\tempo "Allegro" 4 = 130
 	\time 4/4
 	\key f \major
 
-	r4 c'4 c'4 c'4 | ees'2. ees'4 | d'4 d'2. | a'1 |
-	r4 f'4 f'4 f'4 | aes'2. aes'4 | g'2. g'4 | d''1 |
-	r4 e''4 e''4 e''4 | c''4 c''2. | a'2. a'4 | f'1 |
-	r4 a'4 a'4 a'4 | c''4 c''2 c''4 | a'2. a'4 | d'1 |
+	% Bar 1
+	r4 c c c | ees2. ees4 | d d2. | a'1 |
+	r4 f f f | aes2. aes4 | g2. g4 | d'1 |
+	r4 e e e | c c2. | a2. a4 | f1 |
+	r4 a a a | c c2 c4 | a2. a4 | d,1 |
 
-	r4 c'4 c'4 c'4 | ees'2. ees'4 | d'2. d'4 | a'1 |
-	r4 f'4 f'4 f'4 | aes'2. aes'4 | g'2. g'4 | d''1 |
-	f''2 f''4 f''4 | d''2. d''4 | c''2 c''2 | a'2 a'4 bes'4 |
-	c''4 f'4 g'4 bes'4 | a'4 f'4 g'4 bes'4 | a'2 f''2 | f'2 g'2 |
-	f'1 ~ | f'2 r2 |
+	% Bar 17
+	r4 c c c | ees2. ees4 | d d2. | a'1 |
+	r4 f f f | aes2. aes4 | g2. g4 | d'1 |
+	f2 f4 f | d2. d4 | c2 c | a a4 bes |
+	c f, g bes | a f g bes | a2 f' | f, g | f1 ~ | f2 r |
 
 }
 myLyrics=\lyricmode {

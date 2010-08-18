@@ -48,6 +48,7 @@ is a better way to do it.
 Tune:
 =====
 - should be written using the \relative directive (reduces clutter and simplifies).
+	reasons:
 
 Lyrics:
 =======
