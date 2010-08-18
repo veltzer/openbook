@@ -7,14 +7,15 @@
 	style="Jazz"
 	piece="Med Swing"
 	poet="Lorenz Hart"
-	completion="5"
 
+	completion="5"
 	uuid="087137ac-a26f-11df-aa1f-0019d11e5a41"
 }
 
 %{
 	TODO:
 	- mark parts of this song (structure)
+	- mark lines of this song (structure).
 %}
 
 myChords=\chordmode {
