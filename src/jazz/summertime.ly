@@ -30,7 +30,7 @@ harmony=\chords {
 	\endSong
 }
 
-tune=\relative c'''{
+tune=\relative c''' {
 	\time 4/4
 	\key d \minor
 
