@@ -23,14 +23,21 @@
 \score {
 <<
 \chords {
-	\set chordChanges = ##t
+	\startChords
+
+	\startSong
+	
 	\partial 4 r4
 
-	bes2 a2:m7 | g1:m7 | g2:m7 bes2 | f2 c2:7 | \break
-	bes2 a2:m7 | g1:m7 | g2:m7 bes2 | f2 c2:7 | c1:7 \bar "||" \break
+	bes2 a2:m7 | g1:m7 | g2:m7 bes2 | f2 c2:7 | \myEndLine
+	bes2 a2:m7 | g1:m7 | g2:m7 bes2 | f2 c2:7 | c1:7 | \myEndLine
 
-	g1:m7 | bes1 | f2 c2:7 | f1 |
-	g1:m7 | bes2 c2:7 | f2 ees2 | bes2 c2:7 \bar "||"
+	g1:m7 | bes1 | f2 c2:7 | f1 | \myEndLine
+	g1:m7 | bes2 c2:7 | f2 ees2 | bes2 c2:7 | \myEndLine
+
+	\endSong
+
+	\endChords
 }
 \new Voice="melody" \relative f' {
 	\time 4/4

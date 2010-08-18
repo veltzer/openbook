@@ -18,12 +18,14 @@
 \score {
 <<
 \chords {
-	\set chordChanges = ##t
+	\startChords
 
 	\mark "Intro"
 	c1 | g1:7 | a1:m | f1 | g1:7 | d1:m | f1 | c2. g4:7 |
 	\mark "Verse"
 	c1 | g1:7 | a1:m | f1 | g1:7 | d1:m | f1 | a2.:m g4:7 |
+
+	\endChords
 }
 \new FretBoards {
 	\chordmode {

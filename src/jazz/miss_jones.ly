@@ -15,7 +15,7 @@
 %}
 
 harmony=\chords {
-	\set chordChanges = ##t
+	\startChords
 
 	\startSong
 
@@ -41,6 +41,8 @@ harmony=\chords {
 	\endPart
 
 	\endSong
+
+	\endChords
 }
 
 tune=\relative a' {

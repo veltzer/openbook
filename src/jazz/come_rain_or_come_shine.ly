@@ -18,37 +18,59 @@
 
 %% this set of chords is from Amit Golan
 myChordsAmit=\chordmode {
-	\set chordChanges = ##t
-	\mark "A"
-	f1:maj7 | e2:m7.5- a2:7.9- | d1:m6 | d1:m6 | \break
-	g1:7.9 | g2:m7 c2:7 | f1:maj7 | c2:m7 f2:7 | \break
+	\startChords
 
-	bes1:m6 | f1:m6 | bes2:m7 bes2:m7/aes | g2:m7 c2:m7.5+ | \break
-	d2:m7.5- g2:7.9- | c2:m7 c2:m7/bes | a2:m7.5- d2:7.9- | g2:m7 c2:7 \bar "||" \break
+	\startSong
+
+	\mark "A"
+	\startPart
+	f1:maj7 | e2:m7.5- a2:7.9- | d1:m6 | d1:m6 | \myEndLine
+	g1:7.9 | g2:m7 c2:7 | f1:maj7 | c2:m7 f2:7 | \myEndLine
+
+	bes1:m6 | f1:m6 | bes2:m7 bes2:m7/aes | g2:m7 c2:m7.5+ | \myEndLine
+	d2:m7.5- g2:7.9- | c2:m7 c2:m7/bes | a2:m7.5- d2:7.9- | g2:m7 c2:7 | \myEndLine
+	\endPart
 
 	\mark "B"
-	f1:maj7 | e2:m7.5- a2:7.9- | d1:m6 | d1:m6 | \break
-	b1:m7.5- | e:7 | a1:7 | bes2:7 a2:7 | \break
+	\startPart
+	f1:maj7 | e2:m7.5- a2:7.9- | d1:m6 | d1:m6 | \myEndLine
+	b1:m7.5- | e:7 | a1:7 | bes2:7 a2:7 | \myEndLine
 
-	d2:7 ees2:maj7 | d1:7 | g2:7 aes2:7.9 | g2.:7.9 a4:7 | \break
-	d2:m6 b2:m7.5- | e2:m7.5- a2:7.9- | d1:m6 | g2:m7 c2:7 | \break
+	d2:7 ees2:maj7 | d1:7 | g2:7 aes2:7.9 | g2.:7.9 a4:7 | \myEndLine
+	d2:m6 b2:m7.5- | e2:m7.5- a2:7.9- | d1:m6 | g2:m7 c2:7 | \myEndLine
+	\endPart
+
+	\endSong
+
+	\endChords
 }
 %% this set of chords is taken from the fake book
 myChords=\chordmode {
-	\set chordChanges = ##t
-	\mark "A"
-	f2:maj7 b2:m7.5- | e2:m7.5- a2:7.9- | d1:m7 | g1:7.9 | \break
-	g1:7.9 | g2:m7 c2:7 | f1:7 | c2:m7 f2:7 | \break
+	\startChords
 
-	bes1:m7 | f1:m | bes2:m g2:m7.5- | c2:7.5- c4:7.5 c4:7.5+ | \break
-	d2:m7.5- g2:7.9- | c1:m | c4:m7 f4:7 bes4:m7 ees4:m7 | a2:m7 g4:m7 c4:7 \bar "||" \break
+	\startSong
+
+	\mark "A"
+	\startPart
+	f2:maj7 b2:m7.5- | e2:m7.5- a2:7.9- | d1:m7 | g1:7.9 | \myEndLine
+	g1:7.9 | g2:m7 c2:7 | f1:7 | c2:m7 f2:7 | \myEndLine
+
+	bes1:m7 | f1:m | bes2:m g2:m7.5- | c2:7.5- c4:7.5 c4:7.5+ | \myEndLine
+	d2:m7.5- g2:7.9- | c1:m | c4:m7 f4:7 bes4:m7 ees4:m7 | a2:m7 g4:m7 c4:7 \bar "||" \myEndLine
+	\endPart
 
 	\mark "B"
-	f2:maj7 b2:m7.5- | e2:m7.5- a2:7.9- | d1:m7 | g1:7.9 | \break
-	cis1:m7.5- | fis2:m7 b2:7 | a1:7 | bes2:7 a2:7 | \break
+	\startPart
+	f2:maj7 b2:m7.5- | e2:m7.5- a2:7.9- | d1:m7 | g1:7.9 | \myEndLine
+	cis1:m7.5- | fis2:m7 b2:7 | a1:7 | bes2:7 a2:7 | \myEndLine
 
-	d2:7 ees2:maj7 | d1:7 | g2:7 aes2:7.9 | g2.:7.9 a4:7 | \break
-	d2:m7 g4:7 g4:7/f | e2:m7.5- a2:7.9- | d1:m7 | g2:m7 c2:7 | \break
+	d2:7 ees2:maj7 | d1:7 | g2:7 aes2:7.9 | g2.:7.9 a4:7 | \myEndLine
+	d2:m7 g4:7 g4:7/f | e2:m7.5- a2:7.9- | d1:m7 | g2:m7 c2:7 | \myEndLine
+	\endPart
+
+	\endSong
+
+	\endChords
 }
 myVoice=\relative f' {
 	\time 4/4

@@ -23,7 +23,10 @@
 %}
 
 myChords=\chordmode {
-	\set chordChanges = ##t
+	\startChords
+
+	\startSong
+
 	%% there is no need to worry about which instrument plays the chords
 	%% since they will not be heard...
 
@@ -36,6 +39,10 @@ myChords=\chordmode {
 	c/g | g:sus4.7 | g:7 | a:dim/g |
 	c/g | g:sus4.7 | g:7 | c:7 |
 	f/c | g:7/c | c |
+
+	\endSong
+
+	\endChords
 }
 \parallelMusic #'(voiceA voiceB voiceC) {
 	% Bar 1
@@ -203,7 +210,6 @@ piano={
 				%%\relative c'
 				%%\voiceB
 			>>
-			\bar "|."
 		}
 		\new Staff="down" {
 			\clef bass
@@ -214,7 +220,6 @@ piano={
 				\relative c'
 				\voiceC
 			>>
-			\bar "|."
 		}
 	>>
 }

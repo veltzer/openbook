@@ -17,7 +17,7 @@
 %}
 
 myChords=\chordmode {
-	\set chordChanges = ##t
+	\startChords
 %%	list of instruments can be found at
 %%	http://lilypond.org/doc/v2.11/Documentation/user/lilypond/MIDI-instruments#MIDI-instruments
 %%	\set ChordNames.midiInstrument = #"acoustic grand"
@@ -58,6 +58,8 @@ myChords=\chordmode {
 	\endPart
 
 	\endSong
+
+	\endChords
 }
 myVoice=\relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/

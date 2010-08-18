@@ -18,7 +18,7 @@
 %}
 
 myChords=\chordmode {
-	\set chordChanges = ##t
+	\startChords
 
 	\startSong
 
@@ -44,6 +44,8 @@ myChords=\chordmode {
 	\endPart
 
 	\endSong
+
+	\endChords
 }
 
 myVoice=\relative f' {

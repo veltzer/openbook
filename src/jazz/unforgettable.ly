@@ -12,16 +12,29 @@
 }
 
 harmony=\chords {
+	\startChords
+
+	\startSong
+
 	\mark "A"
-	g1 | g1:maj7 | g1:dim7 | r1 | \break
-	c1 | c1:maj7 | a2:7.9 e2:m7 | a1:7.9 | \break
-	f1:6 | f1:m7 | c2 e2:m7.5-/b | a1:7 | \break
-	d1:7.9 | d2.:7.9 des4:7 | d1:7 | d1:7 | \break
+	\startPart
+	g1 | g1:maj7 | g1:dim7 | r1 | \myEndLine
+	c1 | c1:maj7 | a2:7.9 e2:m7 | a1:7.9 | \myEndLine
+	f1:6 | f1:m7 | c2 e2:m7.5-/b | a1:7 | \myEndLine
+	d1:7.9 | d2.:7.9 des4:7 | d1:7 | d1:7 | \myEndLine
+	\endPart
+
 	\mark "B"
-	g1 | g1:maj7 | g1:dim7 | r1 | \break
-	c1 | c1:maj7 | a2:7.9 e2:m7 | a1:7.9 | \break
-	f1:6 | f:m | c1 | a2:7 a2:7.9 | \break
-	d1:7.9 | d2:m7 g2:7 | c2 d4:m7 des4:maj7 | c1:6.9 | \break
+	\startPart
+	g1 | g1:maj7 | g1:dim7 | r1 | \myEndLine
+	c1 | c1:maj7 | a2:7.9 e2:m7 | a1:7.9 | \myEndLine
+	f1:6 | f:m | c1 | a2:7 a2:7.9 | \myEndLine
+	d1:7.9 | d2:m7 g2:7 | c2 d4:m7 des4:maj7 | c1:6.9 | \myEndLine
+	\endPart
+	
+	\endSong
+
+	\endChords
 }
 
 tune={

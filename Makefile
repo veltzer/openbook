@@ -130,8 +130,20 @@ check_no_copyright:
 check_empty_copyright:
 	$(info doing [$@])
 	-@grep "copyright=\"\"" $(FILES_LY)
+.PHONY: check_chordChanges
+check_chordChanges:
+	$(info doing [$@])
+	-@grep "chordChanges" $(FILES_LY)
+.PHONY: check_bar
+check_bar:
+	$(info doing [$@])
+	-@grep "\\\\bar" $(FILES_LY)
+.PHONY: check_break
+check_break:
+	$(info doing [$@])
+	-@grep "\\\\break" $(FILES_LY)
 .PHONY: check_all
-check_all: check_empty_copyright check_common check_ws check_composer_and check_extra_files check_min_chords check_uuid
+check_all: check_empty_copyright check_common check_ws check_composer_and check_extra_files check_min_chords check_uuid check_chordChanges check_bar check_break
 
 # rules
 
