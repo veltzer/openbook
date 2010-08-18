@@ -9,7 +9,16 @@
 	uuid="8f0a1ea6-a26e-11df-8edc-0019d11e5a41"
 }
 
+%{
+	TODO:
+	- turn this tune relative
+%}
+
 harmony=\chords {
+	\set chordChanges = ##t
+
+	\startSong
+
 	\partial 4 r4 |
 	\mark "A"
 	\repeat volta 2 {
@@ -21,13 +30,16 @@ harmony=\chords {
 			d2:m7 g2:7 |
 		}
 		{
-			c1:maj7 \bar "||"
+			c1:maj7 |
 		}
 	}
-	\break
+	\endPart
+
 	\mark "B"
 	d1:m7 | g1:7 | c1:maj7/e | a1:7.9 | \break
 	d1:m7 | g1:7 | c1:maj7 | d2:m7 g2:7 | \break
+
+	\endSong
 }
 
 tune={
@@ -53,7 +65,7 @@ tune={
 	}
 	c''2. d''8 e''8 ~ | e''2. d''8 c''8 ~ | c''2. e''8 a'8 ~ | a'2. b'8 c''8~ |
 	c''2. d''8 e''8 ~ | e''2. f''8 g''8 ~ | g''2 g''8 e''8 f''8 g''8 ~ |
-	g''2. e''8 g''8 \bar "||"
+	g''2. e''8 g''8 |
 }
 
 \include "src/include/harmony_tune.lyi"

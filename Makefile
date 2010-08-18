@@ -92,30 +92,42 @@ check_extra_files:
 	-@find -type f -and -not -name "Makefile" -and -not -path "./.git/*" -and -not -name "*.ly" -and -not -name "*.lyi" -and -not -name "*.txt" -and -not -name "*.ly.d" -and -not -name "*.pl" -and -not -name "*.grammer" -and -not -name "*.pdf" -and -not -name "*.ps" -and -not -name "*.midi" -and -not -name "*.stamp" -and -not -name ".gitignore" -and -not -name "*.wav" -and -not -name "*.mp3" -and -not -name "*.ogg"
 .PHONY: check_comments
 check_comments:
+	$(info doing [$@])
 	-@grep "%%" `find . -name "*.ly"`
 .PHONY: check_composer_and
 check_composer_and:
+	$(info doing [$@])
 	-@grep "composer=\".* and .*\"" `find . -name "*.ly" -or -name "*.lyi"`
+.PHONY: check_min_chords
+check_min_chords:
+	$(info doing [$@])
+	-@grep ":min" $(FILES_LY)
 .PHONY: check_ws
 check_ws:
+	$(info doing [$@])
 	-@./scripts/pgrep.pl "  | $$|\w\t|\t$$|\*\\d\:" `find . -name "*.ly" -or -name "*.lyi"`
 .PHONY: check_uuid
 check_uuid:
+	$(info doing [$@])
 	-@grep --files-without-match uuid `find . -name "*.ly"`
 .PHONY: check_common
 check_common:
+	$(info doing [$@])
 	-@grep --files-without-match "common.lyi" `find . -name "*.ly"`
 .PHONY: check_no_poet
 check_no_poet:
+	$(info doing [$@])
 	-@grep --files-without-match "poet=" `find . -name "*.ly"`
 .PHONY: check_no_copyright
 check_no_copyright:
+	$(info doing [$@])
 	-@grep --files-without-match "copyright=" `find . -name "*.ly"`
 .PHONY: check_empty_copyright
 check_empty_copyright:
+	$(info doing [$@])
 	-@grep --files-with-match "copyright=\"\"" `find . -name "*.ly"`
 .PHONY: check_all
-check_all: check_empty_copyright check_common check_ws check_composer_and check_extra_files 
+check_all: check_empty_copyright check_common check_ws check_composer_and check_extra_files check_min_chords
 
 # rules
 

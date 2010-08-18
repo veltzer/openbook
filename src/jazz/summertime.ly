@@ -22,10 +22,10 @@ harmony=\chords {
 	\endPart
 
 	\repeat volta 2 {
-		d1:min7 | d1:min7 | d1:min7 | d1:min7 | \myEndLine
-		g1:min7 | g1:min7 | e1:min7.5- | a:7.9+ | \myEndLine
-		d1:min7 | d1:min7 | d1:min7 | d1:min7 | \myEndLine
-		g2:min7 c2:7 | f1:maj7 | e2:min7.5- a2:7.9+ | d1:min7 | a1:7.9+ | \myEndLine
+		d1:m7 | d1:m7 | d1:m7 | d1:m7 | \myEndLine
+		g1:m7 | g1:m7 | e1:m7.5- | a:7.9+ | \myEndLine
+		d1:m7 | d1:m7 | d1:m7 | d1:m7 | \myEndLine
+		g2:m7 c2:7 | f1:maj7 | e2:m7.5- a2:7.9+ | d1:m7 | a1:7.9+ | \myEndLine
 	}
 	\endSong
 }

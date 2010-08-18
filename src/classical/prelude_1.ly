@@ -154,7 +154,7 @@ myChords=\chordmode {
 	r8 g,16 c g' g, c g' r8 g,16 c g' g, c g' |
 	r16 e!8.~ e4 r16 e8.~ e4 |
 	g2 g |
-	% Bar 30 
+	% Bar 30
 	r8 g,16 c f g, c f r8 g,16 c f g, c f |
 	r16 d8.~ d4 r16 d8.~ d4 |
 	g2 g |

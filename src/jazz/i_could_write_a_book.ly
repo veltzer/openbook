@@ -22,18 +22,18 @@ myChords=\chordmode {
 
 	\partial 2 r2 |
 	\repeat volta 2 {
-		c2:maj7 a2:min9 | d2:min7 g2:7 | c1:maj7 | c2:maj7 g2:7 |
-		c2:maj7 g2:7 | c2:maj7 cis2:dim7 | d1:min7 | g1:7 |
-		c2/e aes2:7/ees | d2:min7 g2:7 |
+		c2:maj7 a2:m9 | d2:m7 g2:7 | c1:maj7 | c2:maj7 g2:7 |
+		c2:maj7 g2:7 | c2:maj7 cis2:dim7 | d1:m7 | g1:7 |
+		c2/e aes2:7/ees | d2:m7 g2:7 |
 	}
 	\alternative {
 		{
-			a2:min7 d2:7.9- | g2. b4:7 |
-			e1:min | a2:min7 d2:7 | d1:min7 | g1:7 |
+			a2:m7 d2:7.9- | g2. b4:7 |
+			e1:m | a2:m7 d2:7 | d1:m7 | g1:7 |
 		}
 		{
-			g2:min7 c2:7 | f2:maj7 f4:min7 bes4:7 |
-			c2 a2:7 | d2:min7 g2:7 | c1:maj7 | c1:maj7 |
+			g2:m7 c2:7 | f2:maj7 f4:m7 bes4:7 |
+			c2 a2:7 | d2:m7 g2:7 | c1:maj7 | c1:maj7 |
 		}
 	}
 }

@@ -39,6 +39,10 @@ Chords:
 		- sometime both the previous two reasons persist.
 - marking of parts ("A", "B") should be with the chords.
 	rationale: less clutter and the chords define the structure more than the melody.
+- marking the start of parts, end of parts, start of song, end of song should be with the chords.
+- use "d:m7" and not "d:min7" (shorter).
+- do NOT use repears ( | r1 | ) in chords. If you don't want the chords to repeat there
+is a better way to do it.
 
 Tune:
 =====

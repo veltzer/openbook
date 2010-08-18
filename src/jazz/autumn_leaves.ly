@@ -18,9 +18,9 @@
 
 myChords=\chordmode {
 	\set chordChanges = ##t
-	
+
 	\startSong
-	
+
 	\partial 2. r2. |
 
 	\mark "A"
@@ -45,7 +45,7 @@ myChords=\chordmode {
 	fis1:m7.5- | b1:7.9- | e2:m7 ees2:7 | d2:m7 des2:7 | \myEndLine
 	c1:maj7 | b1:7.9- | e2:m a:m | e1:m | \myEndLine
 	\endPart
-	
+
 	\endSong
 }
 myVoice={
@@ -76,7 +76,7 @@ myLyrics=\lyricmode {
 	The fall -- ing leaves drift by the win -- dow
 	The au -- tumn leaves, of red and gold.
 	I see your
-	
+
 	_ I used to hold. Since you
 
 	went a -- way the days grow long,

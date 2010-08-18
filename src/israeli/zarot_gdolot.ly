@@ -18,11 +18,11 @@ harmony=\new ChordNames \with {
 \chordmode {
 	\mark "verse"
 	\repeat volta 2 {
-		c2 b2:min7.5- | a2:min7 d2:min7 | g2:7 c2:maj7 | d2:min7 g2:7 | \break
+		c2 b2:m7.5- | a2:m7 d2:m7 | g2:7 c2:maj7 | d2:m7 g2:7 | \break
 	}
 	\mark "chorus"
-	a2:min7 g2:7 | f1:maj7 | a2:min7 d2:min7 | g1:7 | \break
-	c2 b2:min7.5- | a2:min7 g2:7 | f2:maj7 g2:7 | c2 g2:7 | \break
+	a2:m7 g2:7 | f1:maj7 | a2:m7 d2:m7 | g1:7 | \break
+	c2 b2:m7.5- | a2:m7 g2:7 | f2:maj7 g2:7 | c2 g2:7 | \break
 }
 text=\lyricmode {
 	בעירי היו שתי עלמות

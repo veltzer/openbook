@@ -20,17 +20,17 @@
 \chords {
 	\set chordChanges = ##t
 	\mark "A"
-	f1:7 | bes1:7 | f1:7 | c2:min7 f2:7 |
+	f1:7 | bes1:7 | f1:7 | c2:m7 f2:7 |
 	bes1:7 | bes1:7 | f1:7 | d1:7 |
 	g1:7 | c1:7 | f2:7 d2:7 | g2:7 c2:7 \bar "||"
 	\mark "B"
-	f1:7 | bes1:7 | f1:7 | c2:min7 f2:7 |
-	bes1:7 | bes1:7 | f1:7 | a2:min7 d2:7 |
-	g1:min7 | c1:7 | f2:7 d2:7 | g2:min7 c2:7 \bar "||"
+	f1:7 | bes1:7 | f1:7 | c2:m7 f2:7 |
+	bes1:7 | bes1:7 | f1:7 | a2:m7 d2:7 |
+	g1:m7 | c1:7 | f2:7 d2:7 | g2:m7 c2:7 \bar "||"
 	\mark "C"
-	f1:7 | bes1:7 | c1:min7 | f1:7 |
+	f1:7 | bes1:7 | c1:m7 | f1:7 |
 	bes1:7 | bes1:7 | f1:7 | d1:7 |
-	g2:7 g:min7 | c1:7 | f2:7 d2:7 | g2:7 c2:7 \bar "||"
+	g2:7 g:m7 | c1:7 | f2:7 d2:7 | g2:7 c2:7 \bar "||"
 }
 \new Voice="melody" {
 	\time 4/4

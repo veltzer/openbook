@@ -33,7 +33,7 @@ tune=\relative c''{
 
 harmony=\chords {
 	\repeat volta 2 {
-		a2:min7 fis:5- |
+		a2:m7 fis:5- |
 	}
 }
 

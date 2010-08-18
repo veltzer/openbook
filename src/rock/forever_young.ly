@@ -21,16 +21,16 @@
 	\set chordChanges = ##t
 
 	\mark "Intro"
-	c1 | g1:7 | a1:min | f1 | g1:7 | d1:min | f1 | c2. g4:7 |
+	c1 | g1:7 | a1:m | f1 | g1:7 | d1:m | f1 | c2. g4:7 |
 	\mark "Verse"
-	c1 | g1:7 | a1:min | f1 | g1:7 | d1:min | f1 | a2.:min g4:7 |
+	c1 | g1:7 | a1:m | f1 | g1:7 | d1:m | f1 | a2.:m g4:7 |
 }
 \new FretBoards {
 	\chordmode {
 		\mark "Intro"
-		c1 | g1:7 | a1:min | f1 | g1:7 | d1:min | f1 | c2. g4:7 |
+		c1 | g1:7 | a1:m | f1 | g1:7 | d1:m | f1 | c2. g4:7 |
 		\mark "Verse"
-		c1 | g1:7 | a1:min | f1 | g1:7 | d1:min | f1 | a2.:min g4:7 |
+		c1 | g1:7 | a1:m | f1 | g1:7 | d1:m | f1 | a2.:m g4:7 |
 	}
 }
 \new Voice="melody" \relative c'' {

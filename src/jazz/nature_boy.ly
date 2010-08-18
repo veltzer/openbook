@@ -29,18 +29,18 @@ myChords=\chordmode {
 
 	\startPart
 	\repeat volta 2 {
-		d1:min | e2:min7.5- a2:7 | d1:min | e2:min7.5- a2:7 | \myEndLine
-		d2:min d2:min7+ | d2:min7 d2:min6 | g2:min6 d2:min | e1:min7.5- | \myEndLine
+		d1:m | e2:m7.5- a2:7 | d1:m | e2:m7.5- a2:7 | \myEndLine
+		d2:m d2:m7+ | d2:m7 d2:m6 | g2:m6 d2:m | e1:m7.5- | \myEndLine
 	}
 	\alternative {
 		{
-			a1:7 | a1:7 | d1:min | d1:min | \myEndLine
+			a1:7 | a1:7 | d1:m | d1:m | \myEndLine
 			e1:7.9- | e1:7.9- | a1:7 | a:7 | \myEndLine
 			\endPart
 		}
 		{
-			a1:7 | a1:7 | d1:min | b1:min7.5- | \myEndLine
-			e1:7.9- | a1:7.5+ | d1:min | e2:min7.5- a2:7 | \myEndLine
+			a1:7 | a1:7 | d1:m | b1:m7.5- | \myEndLine
+			e1:7.9- | a1:7.5+ | d1:m | e2:m7.5- a2:7 | \myEndLine
 			\endPart
 		}
 	}
