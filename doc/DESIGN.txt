@@ -25,6 +25,7 @@ Policies about songs:
 
 Chords:
 =======
+- start chords with \startChords and end them with \endChords
 - don't end with a turn around.
 	REASONS FOR:
 		- sounds bad (in midi for instance).
