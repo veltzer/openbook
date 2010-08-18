@@ -33,3 +33,16 @@
 	bottom-margin = 2.5\cm
 }
 
+%% some macros to be reused all over
+myBreak=\break
+
+partBar=\bar "||"
+endBar=\bar "|."
+
+startPart={}
+endPart=\bar "||"
+
+startSong={}
+endSong=\bar "|."
+
+myEndLine=\break

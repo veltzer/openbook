@@ -8,26 +8,51 @@
 	uuid="359f7428-a26f-11df-ad8c-0019d11e5a41"
 }
 
-harmony=\chords {
+%{
+	TODO:
+	- turn the tune relative
+%}
+
+myChords=\chordmode {
+	\set chordChanges = ##t
+	\startSong
 	\repeat volta 2 {
-		f1:7 | r1 | r1 | r1 | \break
-		bes1:7 | r1 | f1:7 | r1 | \break
-		c1:7 | bes1:7 | c1:7 | bes1:7 | \break
-		c1:7 | bes1:7 | f1:7 | r1 | \break
+		f1:7 | f1:7 | f1:7 | f1:7 | \myEndLine
+		bes1:7 | bes1:7 | f1:7 | f1:7 | \myEndLine
+		c1:7 | bes1:7 | c1:7 | bes1:7 | \myEndLine
+		c1:7 | bes1:7 | f1:7 | f1:7 | \myEndLine
 	}
+	\endSong
 }
 
-tune={
+myVoice={
 	\key c \major
 	\time 4/4
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Allegro" 4 = 130
 
-	\repeat volta 2 {
-		ees''1 ~ | ees''4 f'8 f'8 <aes' c''> ( <bes' d''>4-. ) f'8 ~ | f'1 ~ | f'2 r2 | \break
-		f''1 ~ | f''4 f'8 f'8 <aes' c''> ( <bes' d''>4-. ) f'8 ~ | f'1 ~ | f'2 r2 | \break
-		r4 c''8 ( c''8 g''4 a''4 | aes''8 g''8 f''8 d''8 f''4 g''-. ) |
-		r4 c''8 ( c''8 g''4 a''4 | aes''8 g''8 f''8 d''8 c''4 d''-. ) | \break
-		r4 c''8 ( c''8 g''4 aes''4 | f''-. ) f'8 f'8 <aes' c''> ( <bes' d''>4-. ) f'8 ~ | f'1 | r1 \bar "|."
+	ees''1 ~ | ees''4 f'8 f'8 <aes' c''> ( <bes' d''>4-. ) f'8 ~ | f'1 ~ | f'2 r2 |
+	f''1 ~ | f''4 f'8 f'8 <aes' c''> ( <bes' d''>4-. ) f'8 ~ | f'1 ~ | f'2 r2 |
+	r4 c''8 ( c''8 g''4 a''4 | aes''8 g''8 f''8 d''8 f''4 g''-. ) |
+	r4 c''8 ( c''8 g''4 a''4 | aes''8 g''8 f''8 d''8 c''4 d''-. ) |
+	r4 c''8 ( c''8 g''4 aes''4 | f''-. ) f'8 f'8 <aes' c''> ( <bes' d''>4-. ) f'8 ~ | f'1 | r1 |
+}
+%% score for printing
+\score {
+	<<
+		\new ChordNames="mychords" \myChords
+		\new Voice="myvoice" \myVoice
+	>>
+	\layout {
 	}
 }
-
-\include "src/include/harmony_tune.lyi"
+%% score for midi
+\score {
+	\unfoldRepeats
+	<<
+		\new ChordNames="mychords" \myChords
+		\new Voice="myvoice" \myVoice
+	>>
+	\midi {
+	}
+}

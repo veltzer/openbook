@@ -12,6 +12,7 @@ Policies about songs:
 =====================
 - breaks.
 	Let lilypond dictate the break. Only change when lilypond makes bad descisions.
+	use the \myBreak macro at every line end. This may turn to a break or it may not.
 - bars
 	- Don't do any extra special bars (\bar "||" or the like). It just overloads the music.
 	Mark stuff with \mark "A", \mark "B" etc for parts but that's it.

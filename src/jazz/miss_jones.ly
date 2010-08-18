@@ -19,10 +19,12 @@ harmony=\chords {
 	f1:maj7 | d:7.9- | g:min7 \break | c:7 | a:min7 | d:min7 | c:min7 | f:7 \break
 
 	bes1:maj7 | aes2:min7 des:7 | ges1:maj7 | e2:min7 a:7 | d1:maj7 \break
-	aes2:min7 des:7 | ges1:maj7 | g2:min7 c:7 \bar "||"
+	aes2:min7 des:7 | ges1:maj7 | g2:min7 c:7 |
 
 	f1:maj7 | d:7.9- | g:min7 \break | c:7 | a2:min7 d:7 | g:min7 c:7 |
-	f1:maj7 | g2:min7 c:7 \bar "|."
+	f1:maj7 | g2:min7 c:7 |
+
+	\bar "|."
 }
 
 tune=\relative a' {
@@ -31,10 +33,10 @@ tune=\relative a' {
 
 	\repeat "unfold" 2 {
 	a4 d, c d | c2. r4 | d e f g | a bes c2 | d4 g, f g | f2. a4 | }
-	\alternative { { bes1 ~ | bes2. r4 \bar "||"} {c1 ~ | c4 d d d \bar "||" } }
+	\alternative { { bes1 ~ | bes2. r4 |} {c1 ~ | c4 d d d | } }
 	c4 bes f g | aes aes aes aes | aes ges des ees | e! e e e | e d fis a |
-	des2 des | bes1 ~ | bes2. r4 \bar "||"
-	a4 d, c d | c2. r4 | d e f g | a bes c d | e1 ~ | e4 d a g | f1 | r \bar "|."
+	des2 des | bes1 ~ | bes2. r4 |
+	a4 d, c d | c2. r4 | d e f g | a bes c d | e1 ~ | e4 d a g | f1 | r |
 }
 
 \include "src/include/harmony_tune.lyi"

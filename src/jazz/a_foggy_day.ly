@@ -14,22 +14,32 @@
 }
 %{
 	TODO:
+	- turn this tune relative
 %}
 
 myChords=\chordmode {
 	\set chordChanges = ##t
 
+	\startSong
+
 	\mark "A"
-	f1:maj7 | a2:m7.5- d2:7.9- | g1:m7 | c1:7 |
-	f1:6 | d1:m7.5- | g1:7 | g2:m7 c2:7 |
-	f1:maj7 | c2:m7 f2:7 | bes1:6 | bes:m6 |
-	f1:maj7 | a2:m7 d2:7 | g1:7 | g2:m7 c2:7 |
+	\startPart
+	f1:maj7 | a2:m7.5- d2:7.9- | g1:m7 | c1:7 | \myEndLine
+	f1:6 | d1:m7.5- | g1:7 | g2:m7 c2:7 | \myEndLine
+	f1:maj7 | c2:m7 f2:7 | bes1:6 | bes:m6 | \myEndLine
+	f1:maj7 | a2:m7 d2:7 | g1:7 | g2:m7 c2:7 | \myEndLine
+	\endPart
+
 	\mark "B"
-	f1:maj7 | aes:m7 | g1:m7 | c1:7 |
-	f1:6 | d1:m7.5- | g1:7 | g2:m7 c2:7 |
-	c1:m7 | f1:7 | bes1:6 | ees1:7 |
+	\startPart
+	f1:maj7 | aes:m7 | g1:m7 | c1:7 | \myEndLine
+	f1:6 | d1:m7.5- | g1:7 | g2:m7 c2:7 | \myEndLine
+	c1:m7 | f1:7 | bes1:6 | ees1:7 | \myEndLine
 	f2:6 g2:m7 | a2:m7 bes2:m6 | a2:m7 d2:7 | g2:m7 c2:7 |
-	f1:6 | g2:m7 c2:7 \bar "|."
+	f1:6 | f1:6 | \myEndLine
+	\endPart
+
+	\endSong
 }
 
 myVoice={

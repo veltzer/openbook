@@ -17,33 +17,47 @@
 
 %{
 	TODO:
-		- publish this.
 %}
 myChords=\chordmode {
 	\set chordChanges = ##t
 
+	\startSong
+
 	\mark "Intro"
-	f1:6.9 | c2:m7 c:m6 | f1:6.9 | c2:m7 c:m6 |
+	\startPart
+	f1:6.9 | c2:m7 c:m6 | f1:6.9 | c2:m7 c:m6 | \myEndLine
+	\endPart
+
 	\mark "A"
+	\startPart
 	\repeat volta 2 {
-		f1:maj7.9 | f1:maj7.9 | g1:13 | g1:13 |
+		f1:maj7.9 | f1:maj7.9 | g1:13 | g1:13 | \myEndLine
 		g1:m7.9 | ges1:7.5- |
 	} \alternative {
 		{
-			f1:maj7.9 | ges1:7.5- |
+			f1:maj7.9 | ges1:7.5- | \myEndLine
 		} {
-			f1:maj7.9 | f1:maj7.9 |
+			f1:maj7.9 | f1:maj7.9 | \myEndLine
 		}
 	}
+	\endPart
+
 	\mark "B"
-	ges1:maj7 | ges1:maj7 | ces1:7.9 | ces1:7.9 |
-	fis1:m7.9 | fis1:m7.9 | d1:7.9 | d1:7.9 |
-	g1:m7.9 | g1:m7.9 | ees1:7.9 | ees1:7.9 |
-	a1:m7 | d1:7.5-.9- | g1:m7 | c1:7.5-.9- |
+	\startPart
+	ges1:maj7 | ges1:maj7 | ces1:7.9 | ces1:7.9 | \myEndLine
+	fis1:m7.9 | fis1:m7.9 | d1:7.9 | d1:7.9 | \myEndLine
+	g1:m7.9 | g1:m7.9 | ees1:7.9 | ees1:7.9 | \myEndLine
+	a1:m7 | d1:7.5-.9- | g1:m7 | c1:7.5-.9- | \myEndLine
+	\endPart
+
 	\mark "A"
-	f1:maj7.9 | f1:maj7.9 | g1:7.13 | g1:7.13 |
-	g1:m7.9 | ges1:7.5- | f1:maj7.9 | ges1:7.5- |
-	f1:maj7.9 | ges1:7.5- | f1:maj7.9 | f1:maj7.9 \bar "|."
+	\startPart
+	f1:maj7.9 | f1:maj7.9 | g1:7.13 | g1:7.13 | \myEndLine
+	g1:m7.9 | ges1:7.5- | f1:maj7.9 | ges1:7.5- | \myEndLine
+	f1:maj7.9 | ges1:7.5- | f1:maj7.9 | f1:maj7.9 | \myEndLine
+	\endPart
+
+	\endSong
 }
 
 myVoice=\relative c' {
@@ -54,7 +68,7 @@ myVoice=\relative c' {
 	\tempo "Allegro" 4 = 130
 
 	% intro
-	r1 * 4 \bar "||"
+	r1 * 4 |
 
 	% A part
 	\repeat volta 2 {
