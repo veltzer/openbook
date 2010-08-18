@@ -26,14 +26,14 @@
 \chords {
 	\set chordChanges = ##t
 
-	g2:min | d2:7 | g2:min ~ | g4:min d4:7 |
-	g2:min | d2:7 | g2:min ~ | g4:min d4:7 | \break
-	g2:min | g2:min | c2:min | c2:min |
-	g2:min/ees | d2:7 | g2:min | g4:min d4:7 | \break
+	g2:m | d2:7 | g2:m ~ | g4:m d4:7 |
+	g2:m | d2:7 | g2:m ~ | g4:m d4:7 | \break
+	g2:m | g2:m | c2:m | c2:m |
+	g2:m/ees | d2:7 | g2:m | g4:m d4:7 | \break
 
-	g2:min | d2:7 | g2:min ~ | g4:min d4:7 |
-	g2:min | d2:7 | g2:min ~ | g4:min d4:7 | \break
-	g2:min | g2:min | c2:min | c2:min |
+	g2:m | d2:7 | g2:m ~ | g4:m d4:7 |
+	g2:m | d2:7 | g2:m ~ | g4:m d4:7 | \break
+	g2:m | g2:m | c2:m | c2:m |
 	ees2:maj | f2:7 | bes2:maj | bes2:maj | \break
 }
 

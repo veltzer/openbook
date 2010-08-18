@@ -23,30 +23,30 @@
 <<
 \chords {
 	\set chordChanges = ##t
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
-	d1:min7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
+	d1:m7 | g1:7 | c1:maj7 | c1:maj7 \bar "||" \break
 }
 \new Voice="melody" {
 	\time 4/4

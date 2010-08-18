@@ -15,16 +15,32 @@
 %}
 
 harmony=\chords {
-	f1:maj7 | d:7.9- | g:min7 | c:7 | a:min7 \break | d:min7 | g:min7 | c:7 |
-	f1:maj7 | d:7.9- | g:min7 \break | c:7 | a:min7 | d:min7 | c:min7 | f:7 \break
+	\set chordChanges = ##t
 
-	bes1:maj7 | aes2:min7 des:7 | ges1:maj7 | e2:min7 a:7 | d1:maj7 \break
-	aes2:min7 des:7 | ges1:maj7 | g2:min7 c:7 |
+	\startSong
 
-	f1:maj7 | d:7.9- | g:min7 \break | c:7 | a2:min7 d:7 | g:min7 c:7 |
-	f1:maj7 | g2:min7 c:7 |
+	\mark "A"
+	\startPart
+	f1:maj7 | d:7.9- | g:m7 | c:7 | a:m7 | d:m7 | g:m7 | c:7 | \myEndLine
+	\endPart
 
-	\bar "|."
+	\mark "A"
+	\startPart
+	f1:maj7 | d:7.9- | g:m7 | c:7 | a:m7 | d:m7 | c:m7 | f:7 | \myEndLine
+	\endPart
+
+	\mark "B"
+	\startPart
+	bes1:maj7 | aes2:m7 des:7 | ges1:maj7 | e2:m7 a:7 |
+	d1:maj7 | aes2:m7 des:7 | ges1:maj7 | g2:m7 c:7 | \myEndLine
+	\endPart
+
+	\mark "A"
+	\startPart
+	f1:maj7 | d:7.9- | g:m7 | c:7 | a2:m7 d:7 | g:m7 c:7 | f1:maj7 | g2:m7 c:7 | \myEndLine
+	\endPart
+
+	\endSong
 }
 
 tune=\relative a' {

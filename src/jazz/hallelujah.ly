@@ -45,10 +45,10 @@ text=\lyrics {
 
 harmony=\chords {
 	f1 | bes4. b4:dim7 r4. | f1 | bes4. b8:dim7 r8. c16:7 r4 | f1 | f2.:7 f4:7.5+ |
-	bes1 | b:dim7 | f2 a:7 | d:min bes:7 | g:7 c4.:7.4 f8 | r1 |
+	bes1 | b:dim7 | f2 a:7 | d:m bes:7 | g:7 c4.:7.4 f8 | r1 |
 
 	f1 | bes4. b4:dim7 r4. | f1 | bes4. b8:dim7 r8. c16:7 r4 | f1 | f2.:7 f4:7.5+ |
-	bes1 | b:dim7 | f2 a:7 | d:min bes:7 | g:7 c4.:7.4 f8 | r2 f:7.5+ |
+	bes1 | b:dim7 | f2 a:7 | d:m bes:7 | g:7 c4.:7.4 f8 | r2 f:7.5+ |
 }
 
 %{

@@ -16,7 +16,7 @@
 
 harmony=\chords {
 	\mark "verse"
-	ges2:min ges2:min
+	ges2:m ges2:m
 	\mark "chorus"
 %{
 	verse:

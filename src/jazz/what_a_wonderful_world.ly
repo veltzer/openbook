@@ -53,13 +53,13 @@ text=\lyrics {
 
 harmony=\chords {
 	r1*2 \bar "||"
-	f2 a:min bes a:min g:min7 f a:7 d:min des1 c2:7.11 c:7 f f:5+ bes:7+ c:7
-	f2 a:min bes a:min g:min7 f a:7 d:min des1 c2:7.11 c:7 f bes bes f
+	f2 a:m bes a:m g:m7 f a:7 d:m des1 c2:7.11 c:7 f f:5+ bes:7+ c:7
+	f2 a:m bes a:m g:m7 f a:7 d:m des1 c2:7.11 c:7 f bes bes f
 	c1:7 f c:7 f
-	d2:min c d:min c d:min fis:dim g4:min7 fis:dim c2:7
-	f2 a:min bes a:min g:min7 f a:7 d:min
-	des1 c2:7.11 c:7 f a:min7.5- d1:7
-	g:min7 r2 c:7.9- f bes:6 r f
+	d2:m c d:m c d:m fis:dim g4:m7 fis:dim c2:7
+	f2 a:m bes a:m g:m7 f a:7 d:m
+	des1 c2:7.11 c:7 f a:m7.5- d1:7
+	g:m7 r2 c:7.9- f bes:6 r f
 }
 
 patternA={
