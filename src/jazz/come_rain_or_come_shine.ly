@@ -14,7 +14,6 @@
 
 %{
 	TODO:
-	- Enter Amits chords for this as an alternative...
 %}
 
 %% this set of chords is from Amit Golan
@@ -51,7 +50,6 @@ myChords=\chordmode {
 	d2:7 ees2:maj7 | d1:7 | g2:7 aes2:7.9 | g2.:7.9 a4:7 | \break
 	d2:m7 g4:7 g4:7/f | e2:m7.5- a2:7.9- | d1:m7 | g2:m7 c2:7 | \break
 }
-
 myVoice=\relative f' {
 	\time 4/4
 	\key f \major
