@@ -13,7 +13,10 @@ DO_OGG:=1
 # do you actually want to use dependency information ?
 USE_DEPS:=0
 
-FILES_LY:=$(shell find . -name "*.ly")
+SRC_FOLDER=src
+
+FILES_LY:=$(shell find $(SRC_FOLDER) -name "*.ly")
+FILES_LYI:=$(shell find $(SRC_FOLDER) -name "*.lyi")
 FILES_LYD:=$(addsuffix .d,$(FILES_LY))
 
 FILES_PDF:=$(addsuffix .pdf,$(basename $(FILES_LY)))
@@ -61,6 +64,7 @@ stamp: $(FILES_STAMP)
 .PHONY: debug
 debug:
 	$(info FILES_LY is $(FILES_LY))
+	$(info FILES_LYI is $(FILES_LYI))
 	$(info FILES_LYD is $(FILES_LYD))
 	$(info FILES_PDF is $(FILES_PDF))
 	$(info FILES_PNG is $(FILES_PNG))
@@ -83,7 +87,7 @@ clean_deps:
 	rm -f $(FILES_LYD)
 .PHONY: clean_all_png
 clean_all_png:
-	-find . -name "*.png" -exec rm {} \;
+	-find $(SRC_FOLDER) -name "*.png" -exec rm {} \;
 
 # checks
 
@@ -93,11 +97,11 @@ check_extra_files:
 .PHONY: check_comments
 check_comments:
 	$(info doing [$@])
-	-@grep "%%" `find . -name "*.ly"`
+	-@grep "%%" $(FILES_LY) 
 .PHONY: check_composer_and
 check_composer_and:
 	$(info doing [$@])
-	-@grep "composer=\".* and .*\"" `find . -name "*.ly" -or -name "*.lyi"`
+	-@grep "composer=\".* and .*\"" $(FILES_LY) 
 .PHONY: check_min_chords
 check_min_chords:
 	$(info doing [$@])
@@ -105,29 +109,29 @@ check_min_chords:
 .PHONY: check_ws
 check_ws:
 	$(info doing [$@])
-	-@./scripts/pgrep.pl "  | $$|\w\t|\t$$|\*\\d\:" `find . -name "*.ly" -or -name "*.lyi"`
+	-@./scripts/pgrep.pl "  | $$|\w\t|\t$$|\*\\d\:" $(FILES_LY) $(FILES_LYI) 
 .PHONY: check_uuid
 check_uuid:
 	$(info doing [$@])
-	-@grep --files-without-match uuid `find . -name "*.ly"`
+	-@grep --files-without-match uuid $(FILES_LY)
 .PHONY: check_common
 check_common:
 	$(info doing [$@])
-	-@grep --files-without-match "common.lyi" `find . -name "*.ly"`
+	-@grep --files-without-match "common.lyi" $(FILES_LY)
 .PHONY: check_no_poet
 check_no_poet:
 	$(info doing [$@])
-	-@grep --files-without-match "poet=" `find . -name "*.ly"`
+	-@grep --files-without-match "poet=" $(FILES_LY)
 .PHONY: check_no_copyright
 check_no_copyright:
 	$(info doing [$@])
-	-@grep --files-without-match "copyright=" `find . -name "*.ly"`
+	-@grep --files-without-match "copyright=" $(FILES_LY)
 .PHONY: check_empty_copyright
 check_empty_copyright:
 	$(info doing [$@])
-	-@grep --files-with-match "copyright=\"\"" `find . -name "*.ly"`
+	-@grep "copyright=\"\"" $(FILES_LY)
 .PHONY: check_all
-check_all: check_empty_copyright check_common check_ws check_composer_and check_extra_files check_min_chords
+check_all: check_empty_copyright check_common check_ws check_composer_and check_extra_files check_min_chords check_uuid
 
 # rules
 
