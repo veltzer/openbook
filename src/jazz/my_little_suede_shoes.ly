@@ -27,21 +27,36 @@ tune=\relative c' {
 	ees'8 ees ees ees c aes r d | r d4. bes8 g r4 | c8 c c c aes f r bes ~ |
 	bes2 r8 bes c d | ees ees ees ees c aes r d | r d4. bes8 g r4 |
 	c8 c c c aes f g ees ~ | ees2 r8 \A r2 r8 \B r2 r8 \A
-	r bes4. a4 aes | g8 g g g f f r ees | r1 \bar "|."
+	r bes4. a4 aes | g8 g g g f f r ees | r1 |
 }
 
 harmony=\chords {
+	\startChords
+
+	\startSong
+
 	\partial 4. r4. |
+
+	\startPart
 	\repeat volta 2 {
 		f2:m7 bes:7 | g:m7 c:7 | f:m7 bes:7 | ees:maj7 c:7 |
 		f:m7 bes:7 | g:m7 c:7.9+.5+ | f:m7 bes:7 |
 	}
 	\alternative { { ees:maj7 c:7 | } {ees:maj7 ees:7 } }
-	\bar "||"
-	aes:maj7 aes:m7 | g:m7 c:7.9- |
-	f:m7 bes:7 | ees:maj7 ees:7 | aes aes:m7 | g:m7 c:7.9- |
-	f:m7 bes:7 | g:m7 c:7 \bar "||"
+	\endPart
+
+	\startPart
+	aes:maj7 aes:m7 | g:m7 c:7.9- | f:m7 bes:7 | ees:maj7 ees:7 |
+	aes aes:m7 | g:m7 c:7.9- | f:m7 bes:7 | g:m7 c:7 |
+	\endPart
+
+	\startPart
 	f:m7 bes:7 | ees:maj7 c:7 | f:m7 bes:7 | ees:maj7 c:7 |
-	f:m7 aes:m7 | g:m7 c:7.9+.5+ | f:m7 bes:7 | ees1:maj7 \bar "||"
+	f:m7 aes:m7 | g:m7 c:7.9+.5+ | f:m7 bes:7 | ees1:maj7 |
+	\endPart
+
+	\endSong
+
+	\endChords
 }
 \include "src/include/harmony_tune.lyi"

@@ -28,13 +28,20 @@ tune=\relative c''{
 		{ r8 r4 r2 }
 		{ f8 e d ~ d4 r }
 	}
-	\bar "|."
 }
 
 harmony=\chords {
+	\startChords
+
+	\startSong
+
 	\repeat volta 2 {
 		a2:m7 fis:5- |
 	}
+
+	\endSong
+
+	\endChords
 }
 
 \include "src/include/harmony_tune.lyi"

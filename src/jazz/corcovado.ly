@@ -42,7 +42,7 @@ tune={
 	r e'8 d' ~ d' e'4 d'8 |
 	e'4 d'8 e' ~ e' d'4 f'8 ~ |
 	f'4 e' f'8 e'4 f'8 ~ |
-	f' e'4 d'8 ~ d' c'4. \bar "||"
+	f' e'4 d'8 ~ d' c'4. |
 	% 17
 	r4 e'8 d' ~ d' e'4 d'8 |
 	e'4 d'8 e' ~ e'2 |
@@ -65,13 +65,21 @@ tune={
 	r1 |
 	% 33
 	r4 a'8 g' ~ g' f' e' d' |
-	c' b4 c'8 ~ c' d'4 c'8 ~ \bar "|."
+	c' b4 c'8 ~ c' d'4 c'8 ~ |
 }
 
 intro=\chords {
+	\startChords
+
+	\startSong
+
 	r1 | r1 | a:m6 | aes:dim |
 	g:m7 | c2:11 c2:13 | f1:maj7 | f:m6 |
-	e:m7 | a:m7 | d:7 | aes:dim \bar "||"
+	e:m7 | a:m7 | d:7 | aes:dim |
+
+	\endSong
+
+	\endChords
 }
 
 harmony=\chords {

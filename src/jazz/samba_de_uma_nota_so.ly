@@ -64,16 +64,24 @@ tune={
 	bes' bes'4 bes'8 bes'4 bes' ~ |
 %40
 	bes' bes'8 bes' ~ bes' bes'4 bes'8 ~ |
-	bes'2 r8 f'4 f'8 \bar "|."
+	bes'2 r8 f'4 f'8 |
 }
 
 harmony=\chords {
+	\startChords
+
+	\startSong
+
 	\partial 4. r4. |
 	d1:m7 | des:7 | c:m11 | b:7.5- | d:m7 | des:7 | c:m7 | b:7.5- |
 	f:m7 | e:7.5- | ees:maj7 | aes:9 | d4.:m7 des2:7 c8:m11 | r1 | b:7.5- bes:6 |
 	ees:m7 | aes:7 | des4.:maj7 des2:6 r8 | des4.:maj7 des2:6 r8 | des1:m7 | des:7 | ces:maj7 |
 	c4.:m7.5- b2:7.5- r8 | d1:m7 | des:7 | c:m7 | b:7.5- | d:m7 | des:7 | c:m7 | b:7.5- |
 	f:m7 | e:7.5- | ees:maj7 | aes:9 | des2.:6 r8 c:7 | r2. ces1:maj7 r8 bes1:6 r8 |
+
+	\endSong
+
+	\endChords
 }
 
 text=\lyrics {

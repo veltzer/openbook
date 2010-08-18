@@ -21,7 +21,7 @@
 %}
 
 myChords=\chordmode {
-	\set chordChanges = ##t
+	\startChords
 
 	\startSong
 
@@ -46,6 +46,8 @@ myChords=\chordmode {
 	}
 
 	\endSong
+
+	\endChords
 }
 myVoice={
 	%% http://en.wikipedia.org/wiki/Tempo

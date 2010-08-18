@@ -31,7 +31,7 @@ harmony=\chords {
 	f1:6 | f:m | c1 | a2:7 a2:7.9 | \myEndLine
 	d1:7.9 | d2:m7 g2:7 | c2 d4:m7 des4:maj7 | c1:6.9 | \myEndLine
 	\endPart
-	
+
 	\endSong
 
 	\endChords

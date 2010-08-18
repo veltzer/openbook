@@ -49,3 +49,5 @@ startChords=\set chordChanges = ##t
 endChords={}
 
 myEndLine=\break
+
+tuneFinish=\bar "|."

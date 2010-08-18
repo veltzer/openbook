@@ -56,7 +56,7 @@ myChords=\chordmode {
 	g1:7.9 | g2:m7 c2:7 | f1:7 | c2:m7 f2:7 | \myEndLine
 
 	bes1:m7 | f1:m | bes2:m g2:m7.5- | c2:7.5- c4:7.5 c4:7.5+ | \myEndLine
-	d2:m7.5- g2:7.9- | c1:m | c4:m7 f4:7 bes4:m7 ees4:m7 | a2:m7 g4:m7 c4:7 \bar "||" \myEndLine
+	d2:m7.5- g2:7.9- | c1:m | c4:m7 f4:7 bes4:m7 ees4:m7 | a2:m7 g4:m7 c4:7 | \myEndLine
 	\endPart
 
 	\mark "B"

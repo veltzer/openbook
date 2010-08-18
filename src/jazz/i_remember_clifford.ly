@@ -24,7 +24,7 @@ tune=\relative c'' {
 	c2 ( b8 a g a | b4 ) bes r8 a, ( c d | e a, c d ees4 aes ) | g2. d8 ( e |
 	f4. f8 g f e d ) | e2 r8 e ( a b | c4. c8 d c b a | b e, g b a4 g |
 	e2. d8 b ) | c2 r8 d ( e f | g4. g8 gis f b gis ) | a2 r8 e ( a b ) |
-	c2 r8 d, ( g a ) | bes2 r8 a, ( c d | e a, c d ees4 b ) | c1 \bar "|."
+	c2 r8 d, ( g a ) | bes2 r8 a, ( c d | e a, c d ees4 b ) | c1 |
 }
 
 \include "src/include/tune.lyi"

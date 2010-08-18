@@ -19,7 +19,7 @@ tune=\relative g'' {
 	d4 ( g ) fis | e ( a ) g | fis ( e ) fis | g2 r4 |
 
 	g,4 ( c ) b | a ( d ) c | b ( a ) b | c2 ( d4 ) |
-	g,4 ( c ) b | a ( d ) c | b ( a ) b | c2 r4 \bar "|."
+	g,4 ( c ) b | a ( d ) c | b ( a ) b | c2 r4 |
 }
 
 \include "src/include/tune.lyi"
