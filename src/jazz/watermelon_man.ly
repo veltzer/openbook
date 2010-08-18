@@ -1,16 +1,21 @@
 \include "src/include/common.lyi"
 \header {
 	title="Watermelon Man"
+	subtitle=""
 	composer="Herbie Hancock"
+	copyright="1962, 1963 & 1965 By Hancock Music Co., New York, NY"
 	style="Jazz"
-	piece="Med Swing"
+	piece="16-Bar Blues"
+	poet=""
 
+	completion="5"
 	uuid="359f7428-a26f-11df-ad8c-0019d11e5a41"
 }
 
 %{
 	TODO:
-	- turn the tune relative
+	- add the piano accompaniment for this song (rythm pattern with some notes - ripp
+	it off the album).
 %}
 
 myChords=\chordmode {
@@ -18,28 +23,27 @@ myChords=\chordmode {
 
 	\startSong
 
-	\repeat volta 2 {
-		f1:7 | f1:7 | f1:7 | f1:7 | \myEndLine
-		bes1:7 | bes1:7 | f1:7 | f1:7 | \myEndLine
-		c1:7 | bes1:7 | c1:7 | bes1:7 | \myEndLine
-		c1:7 | bes1:7 | f1:7 | f1:7 | \myEndLine
-	}
+	f1:7 | f1:7 | f1:7 | f1:7 | \myEndLine
+	bes1:7 | bes1:7 | f1:7 | f1:7 | \myEndLine
+	c1:7 | bes1:7 | c1:7 | bes1:7 | \myEndLine
+	c1:7 | bes1:7 | f1:7 | f1:7 | \myEndLine
+
 	\endSong
 
 	\endChords
 }
 
-myVoice={
+myVoice=\relative ees'' {
 	\key c \major
 	\time 4/4
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 
-	ees''1 ~ | ees''4 f'8 f'8 <aes' c''> ( <bes' d''>4-. ) f'8 ~ | f'1 ~ | f'2 r2 |
-	f''1 ~ | f''4 f'8 f'8 <aes' c''> ( <bes' d''>4-. ) f'8 ~ | f'1 ~ | f'2 r2 |
-	r4 c''8 ( c''8 g''4 a''4 | aes''8 g''8 f''8 d''8 f''4 g''-. ) |
-	r4 c''8 ( c''8 g''4 a''4 | aes''8 g''8 f''8 d''8 c''4 d''-. ) |
-	r4 c''8 ( c''8 g''4 aes''4 | f''-. ) f'8 f'8 <aes' c''> ( <bes' d''>4-. ) f'8 ~ | f'1 | r1 |
+	ees1\< ~ | ees4\! f,8 f8 <aes c> ( <bes d>4-. ) f8 ~ | f1 ~ | f2 r2 |
+	f'1\< ~ | f4\! f,8 f8 <aes c> ( <bes d>4-. ) f8 ~ | f1 ~ | f2 r2 |
+	r4 c'8 ( c8 g'4 a4 | aes8 g8 f8 d8 f4 g-. ) |
+	r4 c,8 ( c8 g'4 a4 | aes8 g8 f8 d8 c4 d-. ) |
+	r4 c8 ( c8 g'4 aes4 | \mark \markup { \italic { break } } f-. ) f,8 f8 <aes c> ( <bes d>4-. ) f8 ~ | f1 | r1 |
 }
 %% score for printing
 \score {
