@@ -22,3 +22,10 @@ Policies about songs:
 		- sometime the turn around is not trivial.
 		- sometime the turn around is not anywhere in the song.
 		- sometime both the previous two reasons persist.
+- breaks.
+	Let lilypond dictate the break. Only change when lilypond makes bad descisions.
+- bars
+	- Don't do any extra special bars (\bar "||" or the like). It just overloads the music.
+	Mark stuff with \mark "A", \mark "B" etc for parts but that's it.
+	- At the end of the piece put an ending mark (\bar "|."). It seems that lilypond does
+	not do that by default. (Why? Is that a bug that I should report ?!?).
