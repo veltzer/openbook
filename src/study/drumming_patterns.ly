@@ -12,6 +12,7 @@
 %{
 	TODO:
 		LRRLRRLRRLRRLRLR (in 16'th notes over a single bar).
+		RLLRLLRLLRLLRLRL
 %}
 
 \markup {
