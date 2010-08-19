@@ -18,7 +18,6 @@
 
 %{
 	TODO:
-	- turn the tune relative.
 %}
 
 myChords=\chordmode {
@@ -56,29 +55,29 @@ myChords=\chordmode {
 
 	\endChords
 }
-myVoice={
+myVoice=\relative e' {
 	\time 4/4
 	\key e \minor
 	%% http://en.wikipedia.org/wiki/Tempo
 	\tempo "Allegro" 4 = 130
 
-	\partial 2. e'4 fis'4 g'4 |
+	\partial 2. e4 fis g |
 	\repeat volta 2 {
-		c''1~ | c''4 d'4 e'4 fis'4 | b'2 b'2~ | b'4 c'4 d'4 e'4 |
-		a'1~ |
+		c1~ | c4 d, e fis | b2 b~ | b4 c, d e |
+		a1~ |
 	}
 	\alternative {
 		{
-			a'4 b4 cis'4 dis'4 | g'1 | r4 e'4 fis'4 g'4 |
+			a4 b, cis dis | g1 | r4 e fis g |
 		}
 		{
-			a'4 fis'4 a'4 g'4 | e'1~ | e'4 r4 dis'4 e'4 |
+			a4 fis a g | e1~ | e4 r dis e |
 		}
 	}
-	fis'4 b4 fis'2~ | fis'4 fis'4 e'4 fis'4 | g'1~ | g'4 g'4 fis'4 g'4 |
-	a'1~ | a'4 d'4 d''4 c''4 | b'1~ | b'4 r4 ais'4 b'4 |
-	c''4 c''4 a'4 a'4 | fis'2. c''4 | b'2 b'2~ | b'2. e'4 |
-	a'2. g'4 | fis'2 g'4 b4 | e'1~ | e'4 r4 r2 |
+	fis b, fis'2~ | fis4 fis e fis | g1~ | g4 g fis g |
+	a1~ | a4 d, d' c | b1~ | b4 r ais b |
+	c c a a | fis2. c'4 | b2 b~ | b2. e,4 |
+	a2. g4 | fis2 g4 b, | e1~ | e4 r r2 |
 }
 myLyrics=\lyricmode {
 	The fall -- ing leaves drift by the win -- dow
@@ -93,7 +92,7 @@ myLyrics=\lyricmode {
 	When au -- tumn leaves start to fall.
 }
 myLyricsmore=\lyricmode {
-	I see your lips, the sum -- mer kiss -- es,
+	_ _ _ lips, the sum -- mer kiss -- es,
 	The sun -- burned hands
 }
 %% score for printing
