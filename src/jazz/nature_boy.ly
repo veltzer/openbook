@@ -17,7 +17,7 @@
 
 %{
 	TODO:
-	- turn this tune relative
+	- fill in the copyright
 %}
 
 myChords=\chordmode {
@@ -49,24 +49,24 @@ myChords=\chordmode {
 
 	\endChords
 }
-myVoice={
+myVoice=\relative a {
 	%% http://en.wikipedia.org/wiki/Tempo
 	\tempo "Moderato" 4 = 110
 	\time 4/4
 	\key d \minor
 	\partial 8 a8 |
 	\repeat volta 2 {
-		a'8 f'8 d'2. | r4 r8 a8 e'8 f'8 g'8 bes'8 | a'8 f'8 d'2. | r4 r8 a8 e'8 f'8 g'8 bes'8 |
-		a'4. d''8 cis''2 | a'4. c''8 b'2 | g'4. bes'8 a'4. d'8 | e'2. r8 a8 |
+		a'8 f d2. | r4 r8 a e' f g bes | a f d2. | r4 r8 a e' f g bes |
+		a4. d8 cis2 | a4. c8 b2 | g4. bes8 a4. d,8 | e2. r8 a, |
 	}
 	\alternative {
 		{
-			a'2. g'4 | e'2. a4 | g'2. f'4 | d'2. a4 |
-			f'2. e'4 | b2. c'4 | cis'1 | r2 r4 r8 a8 |
+			a'2. g4 | e2. a,4 | g'2. f4 | d2. a4 |
+			f'2. e4 | b2. c4 | cis1 | r2 r4 r8 a |
 		}
 		{
-			a'2. g'4 | e'2. a4 | g'2. f'4 | d'2. a4 |
-			f'4. e'8 b4. a8 | g'4 f'2 a8 e'8 | d'1 | r1 |
+			a'2. g4 | e2. a,4 | g'2. f4 | d2. a4 |
+			f'4. e8 b4. a8 | g'4 f2 a,8 e' | d1 | r |
 		}
 	}
 }
