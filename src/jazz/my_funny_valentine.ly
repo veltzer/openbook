@@ -14,8 +14,6 @@
 
 %{
 	TODO:
-	- mark parts of this song (structure)
-	- mark lines of this song (structure).
 %}
 
 myChords=\chordmode {
@@ -23,17 +21,30 @@ myChords=\chordmode {
 
 	\startSong
 
-	c1:m7 | c:m7/+b | c:m7/+bes | a:m7.5- |
-	aes:maj7 | f:m7.9 | d:m7.5- | g:7.9- |
-	c1:m7 | c:m7/+b | c:m7/+bes | f/a |
-	aes:maj7 | a4:m7.5- d:7.5-.9- g:m7 c:7.5-.9- | f1:m7.5- | bes:7.9- |
+	\mark "A"
+	\startPart
+	c1:m7 | c:m7/+b | c:m7/+bes | a:m7.5- | \myEndLine
+	aes:maj7 | f:m7.9 | d:m7.5- | g:7.9- | \myEndLine
+	\endPart
 
-	ees2:maj7 f:m7 | g:m7 f:m7 | ees2:maj7 f:m7 | g:m7 f:m7 |
-	ees2:maj7 g4:7.5+ g:7 | c2:m7 bes4:m7 a:7.9- | aes1:maj7 | d2:m7.5- g:7.9- |
+	\mark "A"
+	\startPart
+	c1:m7 | c:m7/+b | c:m7/+bes | f/a | \myEndLine
+	aes:maj7 | a4:m7.5- d:7.5-.9- g:m7 c:7.5-.9- | f1:m7.5- | bes:7.9- | \myEndLine
+	\endPart
 
-	c1:m7 | c:m7/+b | c:m7/+bes | f/a |
-	aes:maj7 | d2:m7.5- g:7.9- | c:m7 b:7.9 | bes:m7.9 a:7.5-.9+ |
-	aes1:maj7 | f2:m7 bes:7 | ees1:maj7 | ees1:maj7 |
+	\mark "B"
+	\startPart
+	ees2:maj7 f:m7 | g:m7 f:m7 | ees2:maj7 f:m7 | g:m7 f:m7 | \myEndLine
+	ees2:maj7 g4:7.5+ g:7 | c2:m7 bes4:m7 a:7.9- | aes1:maj7 | d2:m7.5- g:7.9- | \myEndLine
+	\endPart
+
+	\mark "A"
+	\startPart
+	c1:m7 | c:m7/+b | c:m7/+bes | f/a | \myEndLine
+	aes:maj7 | d2:m7.5- g:7.9- | c:m7 b:7.9 | bes:m7.9 a:7.5-.9+ | \myEndLine
+	aes1:maj7 | f2:m7 bes:7 | ees1:maj7 | ees1:maj7 | \myEndLine
+	\endPart
 
 	\endSong
 

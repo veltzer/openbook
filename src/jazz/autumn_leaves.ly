@@ -16,6 +16,11 @@
 	uuid="8c35acf6-a7c1-11df-9040-0019d11e5a41"
 }
 
+%{
+	TODO:
+	- turn the tune relative.
+%}
+
 myChords=\chordmode {
 	\startChords
 
@@ -26,7 +31,8 @@ myChords=\chordmode {
 	\mark "A"
 	\startPart
 	\repeat volta 2 {
-		a1:m7 | d1:7 | g1:maj7 | c1:maj7 | fis1:m7.5- |
+		a1:m7 | d1:7 | g1:maj7 | c1:maj7 | \myEndLine
+		fis1:m7.5- |
 	}
 	\alternative {
 		{
