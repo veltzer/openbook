@@ -15,6 +15,8 @@
 
 %{
 	TODO:
+	- mark lines of this song. 
+	- mark parts of this song.
 %}
 
 myChords=\chordmode {
