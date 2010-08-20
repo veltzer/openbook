@@ -10,6 +10,8 @@
 
 	completion="5"
 	uuid="087137ac-a26f-11df-aa1f-0019d11e5a41"
+
+	id_youtube="jvXywhJpOKs"
 }
 
 %{
