@@ -1,54 +1,112 @@
 \include "src/include/common.lyi"
 \header {
 	title="I'll Close My Eyes"
-	composer="Blue Mitchell"
+	composer="Billy Reid"
+	poet="Buddy Kaye"
 	style="Jazz"
 	piece="Med Swing"
+	structure="AB"
 
+	completion="4"
 	uuid="e7277c50-a26e-11df-863c-0019d11e5a41"
+
+%%	url_lyrics="http://lyricsplayground.com/alpha/songs/i/illclosemyeyes.shtml"
+%%	url_performance="http://www.youtube.com/watch?v=u6lXbfx1hHw"
+%%	url_performance="http://www.youtube.com/watch?v=7Oh-Dl-KbF0"
 }
 
 %{
 	TODO:
-	- turn this tune relative
+	- fix up the lyrics
 %}
 
-harmony=\chords {
+myChords=\chordmode {
+	\startChords
+
+	\startSong
+
 	\partial 8*5 r8 r4 r4
 	\repeat volta 2 {
-		f1:maj7 | r1 | e1:m7.5- | a1:7.9- | \myEndLine
-		d1:m7 | r1 | c1:m7 | f1:7 | \myEndLine
+		f1:maj7 | f1:maj7 | e1:m7.5- | a1:7.9- | \myEndLine
+		d1:m7 | d1:m7 | c1:m7 | f1:7 | \myEndLine
+		bes1:maj7 | bes1:maj7 |
 	}
 	\alternative {
 		{
-			bes1:maj7 | r1 | f1:maj7 | r1 | \myEndLine
-			e1:7 | r1 | a2:m7 d2:7 | g2:m7 c2:7 | \myEndLine
+			f1:maj7 | f1:maj7 | \myEndLine
+			e1:7 | e1:7 | a2:m7 d2:7 | g2:m7 c2:7 | \myEndLine
 		}
 		{
-			bes1:maj7 | r1 | a1:m7.5- | d1:7.9- | \myEndLine
+			a1:m7.5- | d1:7.9- | \myEndLine
 			g1:m7 | c1:7 | f2:maj7 d2:7 | g2:7 c2:7 | \myEndLine
 		}
 	}
-	\endBar
-}
 
-tune={
+	\endSong
+
+	\endChords
+}
+myVoice=\relative c' {
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Allegro" 4 = 150
 	\time 4/4
 	\key f \major
-	\partial 8*5 c'8 bes'4 a'4 |
+	\partial 8*5 c8 bes'4 a |
 	\repeat volta 2 {
-		a'1 | r4 r8 c'8 bes'4 a'4 | a'4 g'4 e'2 | r4 r8 e'8 g'4 f'4 |
-		f'1 | r4 r8 f'8 g'4 f'4 | ees'1 | r4*3 ees'4 |
+		a1 | r4 r8 c, bes'4 a | a4 g e2 | r4 r8 e g4 fis |
+		f1 | r4 r8 f g4 f | ees1 | r2 r4 ees |
+		d f c'2 | r4 r8 bes f4 g |
 	}
 	\alternative {
 		{
-			d'4 f'4 c''2 | r4 r8 bes'8 f'4 g'4 | a'1 | r4*3 a'4 |
-			gis'1 | r4 r8 e'8 g'4 f'4 | e'1 | r4 r8 c'8 bes'4 a'4 |
+			a1 | r2 r4 a |
+			gis1 | r4 r8 e g4 f | e1 | r4 r8 c bes'4 a |
 		}
 		{
-			d'4 f'4 c''2 | r4 r8 bes'8 f'4 g'4 | a'1 | r4 r8 a'8 c''4 b'4 |
-			bes'4. d'8 e'4 f'4 | g'2 a'2 | f'1 | r4 r8 c'8 bes'4 a'4 |
+			a1 | r4 r8 a c4 b |
+			bes4. d,8 e4 f | g2 a | f1 | r4 r8 c bes'4 a |
 		}
 	}
 }
-\include "src/include/harmony_tune.lyi"
+myLyrics=\lyricmode {
+	I'll close my eyes
+	To everyone but you
+	And when I do
+	I'll see you standing there
+
+	I'll lock my heart
+	To any other caress
+	I'll never say yes
+	To a new love affair
+
+	Then I'll close my eyes
+	To everything that's gay
+	If you are not there
+	Oh, to share each lovely day
+
+	And through the years
+	In those moments
+	When we're far apart
+	Don't you know I'll close my eyes
+	And I'll see you with my heart
+}
+%% score for printing
+\score {
+	<<
+		\new ChordNames="mychords" \myChords
+		\new Voice="myvoice" \myVoice
+		\new Lyrics \lyricsto "myvoice" \myLyrics
+	>>
+	\layout {
+	}
+}
+%% score for midi
+\score {
+	\unfoldRepeats
+	<<
+		\new ChordNames="mychords" \myChords
+		\new Voice="myvoice" \myVoice
+	>>
+	\midi {
+	}
+}

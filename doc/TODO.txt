@@ -1,5 +1,8 @@
 now:
 ====
+- next tunes:
+	illclose my eyes
+	summer time
 - import only things which are not in the database.
 - import my own recordings into the database - look at the tags for more data.
 
