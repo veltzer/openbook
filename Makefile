@@ -4,9 +4,9 @@ CLEAN_DIRS:=
 CLEAN_EXTRA:=echo doing extra cleanup work...
 
 # should we show commands executed ?
-DO_MKDBG:=1
+DO_MKDBG:=0
 # should we depend on the date of the makefile itself ?
-DO_MAKEDEPS:=0
+DO_MAKEDEPS:=1
 DO_PDF:=1
 DO_PNG:=1
 DO_PS:=1
@@ -25,7 +25,7 @@ LYFLAGS:=
 
 ALL_DEP:=
 ifeq ($(DO_MAKEDEPS),1)
-	ALL_DEP:=Makefile
+	ALL_DEP:=$(ALL_DEP) Makefile
 endif
 
 ifeq ($(DO_MKDBG),1)
@@ -195,9 +195,9 @@ $(FILES_PDF): %.pdf: %.stamp $(ALL_DEP)
 $(FILES_MIDI): %.midi: %.stamp $(ALL_DEP)
 
 $(FILES_STAMP): %.stamp: %.ly $(ALL_DEP)
-	$(info doing $@)
+	$(info doing [$@])
 	$(Q)rm -f $(dir $@)$(basename $(notdir $@))-*.png $(dir $@)$(basename $(notdir $@)).{ps,pdf,midi}
-	$(Q)lilypond $(LYFLAGS) -o $(dir $@)$(basename $(notdir $@)) $<
+	$(Q)lilypond $(LYFLAGS) -o $(dir $@)$(basename $(notdir $@)) $< 2> /dev/null
 	$(Q)touch $@
 
 #old rule
@@ -210,7 +210,7 @@ $(FILES_STAMP): %.stamp: %.ly $(ALL_DEP)
 #	touch $@
 #rm -rf /tmp/folder
 $(FILES_LYD): %.ly.d: %.ly $(ALL_DEP)
-	$(info doing $@)
+	$(info doing [$@])
 	$(Q)./scripts/lilydep.pl $< $@ $(basename $<).pdf $(basename $<).ps $(basename $<).midi
 $(FILES_WAV): %.wav: %.midi $(ALL_DEP)
 	$(info doing $@)
@@ -220,10 +220,10 @@ $(FILES_WAV): %.wav: %.midi $(ALL_DEP)
 #$(FILES_MP3): %.mp3: %.wav
 #	lame $< $@
 $(FILES_OGG): %.ogg: %.midi $(ALL_DEP)
-	$(info doing $@)
+	$(info doing [$@])
 	$(Q)timidity $< -idq -Ov -o $@ > /dev/null
 $(FILES_MP3): %.mp3: %.midi $(ALL_DEP)
-	$(info doing $@)
+	$(info doing [$@])
 	$(Q)timidity $< -idq -Ow -o - | lame - $@
 
 # include the deps files (no warnings)
