@@ -6,7 +6,7 @@ CLEAN_EXTRA:=echo doing extra cleanup work...
 # should we show commands executed ?
 DO_MKDBG:=0
 # should we depend on the date of the makefile itself ?
-DO_MAKEDEPS:=1
+DO_MAKEDEPS:=0
 DO_PDF:=1
 DO_PNG:=1
 DO_PS:=1
@@ -33,7 +33,7 @@ Q=
 # we are not silent in this branch
 else # DO_MKDBG
 Q=@
-.SILENT:
+#.SILENT:
 endif # DO_MKDBG
 
 
