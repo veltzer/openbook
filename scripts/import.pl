@@ -89,7 +89,7 @@ sub handler() {
 		if($report) {
 			print "importing [".$hash->{"title"}."]\n";
 		}
-		$dbh->do("insert into TbMsLilypond (uuid,title,subtitle,composer,copyright,style,piece,poet,id_youtube) values(?,?,?,?,?,?,?,?,?)",
+		$dbh->do("insert into TbMsLilypond (uuid,title,subtitle,composer,copyright,style,piece,poet,idyoutube) values(?,?,?,?,?,?,?,?,?)",
 			undef,
 			$hash->{"uuid"},
 			$hash->{"title"},
@@ -99,7 +99,7 @@ sub handler() {
 			$hash->{"style"},
 			$hash->{"piece"},
 			$hash->{"poet"},
-			$hash->{"id_youtube"}
+			$hash->{"idyoutube"}
 		);
 		my($last_id)=$dbh->last_insert_id(undef, undef, undef, undef);
 		if($debug) {
