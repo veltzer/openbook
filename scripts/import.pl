@@ -55,6 +55,9 @@ sub get_meta_data($) {
 
 sub insert_blob($$$$) {
 	my($name,$slug,$mime,$file)=@_;
+	if($debug) {
+		print "inserting blob: $name, $slug, $mime, $file\n";
+	}
 	my($data);
 	$data=Perl6::Slurp::slurp($file);
 	$dbh->do("insert into TbRsBlob (name,slug,mime,data) values(?,?,?,?)",
@@ -79,25 +82,32 @@ sub handler() {
 		my($pages);
 		my(@pngs_abs);
 		my(@pngs_base);
-		if(-e $path.$name."png") {
+		my($file_to_test)=$path.$name.".png";
+		if(-e $file_to_test) {
 			# if we only have one png...
+			if($debug) {
+				print "in the first part of the branch [$file_to_test]\n";
+			}
 			$pages=1;
-			push(@pngs_abs,$path.$name."png");
-			push(@pngs_base,$name."png");
+			push(@pngs_abs,$file_to_test);
+			push(@pngs_base,$name.".png");
 		} else {
 			# if we have many pngs...
+			if($debug) {
+				print "in the second part of the branch [$file_to_test]\n";
+			}
 			my($more)=1;
 			my($counter)=1;
 			while($more) {
 				if(-e $path.$name."-page".$counter.".png") {
-					$counter++;
 					push(@pngs_abs,$path.$name."-page".$counter.".png");
 					push(@pngs_base,$name."-page".$counter.".png");
+					$counter++;
 				} else {
 					$more=0;
 				}
 			}
-			$pages=$counter;
+			$pages=$counter-1;
 		}
 		my($hash)=get_meta_data($file);
 		if($limit_imports) {
@@ -172,13 +182,15 @@ sub handler() {
 			);
 			# lets bring in the pngs...
 			my($counter)=0;
-			foreach my($png) (@pngs_abs) {
+			my($png);
+			foreach $png (@pngs_abs) {
 				insert_blob(
 					$pngs_base[$counter],
-					$hash->{"uuid"}."-png".$counter,
+					$hash->{"uuid"}."-png".($counter+1),
 					"image/png",
 					$png
 				);
+				$counter++;
 			}
 		}
 	}
