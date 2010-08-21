@@ -6,7 +6,7 @@ CLEAN_EXTRA:=echo doing extra cleanup work...
 # should we show commands executed ?
 DO_MKDBG:=0
 # should we depend on the date of the makefile itself ?
-DO_MAKEDEPS:=0
+DO_MAKEDEPS:=1
 DO_PDF:=1
 DO_PNG:=1
 DO_PS:=1
@@ -224,7 +224,7 @@ $(FILES_OGG): %.ogg: %.midi $(ALL_DEP)
 	$(Q)timidity $< -idq -Ov -o $@ > /dev/null
 $(FILES_MP3): %.mp3: %.midi $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)timidity $< -idq -Ow -o - | lame - $@
+	$(Q)timidity $< -idq -Ow -o - 2> /dev/null | lame - $@ > /dev/null 2> /dev/null
 
 # include the deps files (no warnings)
 ifeq ($(USE_DEPS),1)
