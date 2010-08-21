@@ -52,39 +52,27 @@ sub get_meta_data($) {
 	return $ret;
 }
 
+sub insert_blob($$$$) {
+	my($name,$slug,$mime,$file)=@_;
+	my($data);
+	$data=Perl6::Slurp::slurp($file);
+	$dbh->do("insert into TbRsBlob (name,slug,mime,data) values(?,?,?,?)",
+		undef,
+		$name,
+		$slug,
+		$mime,
+		$data
+	);
+}
+
 sub handler() {
 	my($file)=$File::Find::name;
 	if($file=~/\.ly$/) {
 		my($name,$path,$suffix)=File::Basename::fileparse($file,".ly");
-		my($file_ly)=$path.$name.".ly";
-		my($file_pdf)=$path.$name.".pdf";
-		my($file_ps)=$path.$name.".ps";
-		my($file_midi)=$path.$name.".midi";
-		my($file_mp3)=$path.$name.".mp3";
-		my($file_ogg)=$path.$name.".ogg";
-		my($filebasename)=$name;
-		my($dt_ly);
-		$dt_ly=Perl6::Slurp::slurp($file_ly);
-		my($dt_pdf);
-		$dt_pdf=Perl6::Slurp::slurp($file_pdf);
-		my($dt_ps);
-		$dt_ps=Perl6::Slurp::slurp($file_ps);
-		my($dt_midi);
-		$dt_midi=Perl6::Slurp::slurp($file_midi);
-		my($dt_mp3);
-		$dt_mp3=Perl6::Slurp::slurp($file_mp3);
-		my($dt_ogg);
-		$dt_ogg=Perl6::Slurp::slurp($file_ogg);
 		if($debug) {
 			print "name is $name\n";
 			print "path is $path\n";
 			print "suffix is $suffix\n";
-			print "file_ly is $file_ly\n";
-			print "file_pdf is $file_pdf\n";
-			print "file_ps is $file_ps\n";
-			print "file_midi is $file_midi\n";
-			print "file_mp3 is $file_mp3\n";
-			print "file_ogg is $file_ogg\n";
 		}
 		my($hash)=get_meta_data($file);
 		if($limit_imports) {
@@ -101,15 +89,8 @@ sub handler() {
 		if($report) {
 			print "importing [".$hash->{"title"}."]\n";
 		}
-		$dbh->do("insert into TbMsLilypond (filebasename,ly,pdf,ps,midi,mp3,ogg,uuid,title,subtitle,composer,copyright,style,piece,poet,id_youtube) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+		$dbh->do("insert into TbMsLilypond (uuid,title,subtitle,composer,copyright,style,piece,poet,id_youtube) values(?,?,?,?,?,?,?,?,?)",
 			undef,
-			$filebasename,
-			$dt_ly,
-			$dt_pdf,
-			$dt_ps,
-			$dt_midi,
-			$dt_mp3,
-			$dt_ogg,
 			$hash->{"uuid"},
 			$hash->{"title"},
 			$hash->{"subtitle"},
@@ -119,6 +100,48 @@ sub handler() {
 			$hash->{"piece"},
 			$hash->{"poet"},
 			$hash->{"id_youtube"}
+		);
+		my($last_id)=$dbh->last_insert_id(undef, undef, undef, undef);
+		if($debug) {
+			# print the id of the new insert...
+			print "last_id is $last_id\n";
+		}
+		# now insert blobs associated with this entry...
+		insert_blob(
+			$name.".ly",
+			$hash->{"uuid"}."-ly",
+			"text/plain",
+			$path.$name.".ly"
+		);
+		insert_blob(
+			$name.".pdf",
+			$hash->{"uuid"}."-pdf",
+			"application/pdf",
+			$path.$name.".pdf"
+		);
+		insert_blob(
+			$name.".ps",
+			$hash->{"uuid"}."-ps",
+			"application/postscript",
+			$path.$name.".ps"
+		);
+		insert_blob(
+			$name.".midi",
+			$hash->{"uuid"}."-midi",
+			"audio/midi",
+			$path.$name.".midi"
+		);
+		insert_blob(
+			$name.".mp3",
+			$hash->{"uuid"}."-mp3",
+			"audio/mpeg",
+			$path.$name.".mp3"
+		);
+		insert_blob(
+			$name.".ogg",
+			$hash->{"uuid"}."-ogg",
+			"audio/ogg",
+			$path.$name.".ogg"
 		);
 	}
 }
@@ -147,8 +170,10 @@ $::RD_WARN=1;
 
 # erase all old records
 $dbh->do("delete from TbMsLilypond",undef);
+$dbh->do("delete from TbRsBlob",undef);
 # set the auto increment for the ids to start from 1...
 $dbh->do("alter table TbMsLilypond AUTO_INCREMENT=1",undef);
+$dbh->do("alter table TbRsBlob AUTO_INCREMENT=1",undef);
 # go import things
 File::Find::find({"no_chdir"=>1,"wanted"=>\&handler},".");
 # now commit all the changes...
