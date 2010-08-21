@@ -1,6 +1,12 @@
 ALL:=
 CLEAN:=
+CLEAN_DIRS:=
+CLEAN_EXTRA:=echo doing extra cleanup work...
 
+# should we show commands executed ?
+DO_MKDBG:=1
+# should we depend on the date of the makefile itself ?
+DO_MAKEDEPS:=0
 DO_PDF:=1
 DO_PNG:=1
 DO_PS:=1
@@ -15,14 +21,27 @@ USE_DEPS:=0
 
 SRC_FOLDER:=src
 
-ALL_DEP:=Makefile
+LYFLAGS:=
+
+ALL_DEP:=
+ifeq ($(DO_MAKEDEPS),1)
+	ALL_DEP:=Makefile
+endif
+
+ifeq ($(DO_MKDBG),1)
+Q=
+# we are not silent in this branch
+else # DO_MKDBG
+Q=@
+.SILENT:
+endif # DO_MKDBG
+
 
 FILES_LY:=$(shell find $(SRC_FOLDER) -name "*.ly")
 FILES_LYI:=$(shell find $(SRC_FOLDER) -name "*.lyi")
 FILES_LYD:=$(addsuffix .d,$(FILES_LY))
 
 FILES_PDF:=$(addsuffix .pdf,$(basename $(FILES_LY)))
-FILES_PNG:=$(addsuffix .png,$(basename $(FILES_LY)))
 FILES_PS:=$(addsuffix .ps,$(basename $(FILES_LY)))
 FILES_MIDI:=$(addsuffix .midi,$(basename $(FILES_LY)))
 FILES_STAMP:=$(addsuffix .stamp,$(basename $(FILES_LY)))
@@ -33,9 +52,11 @@ FILES_OGG:=$(addsuffix .ogg,$(basename $(FILES_LY)))
 ALL:=$(ALL) $(FILES_LYD)
 ifeq ($(DO_PDF),1)
 	ALL:=$(ALL) $(FILES_PDF)
+	LYFLAGS:=$(LYFLAGS) --pdf
 endif
 ifeq ($(DO_PNG),1)
-	ALL:=$(ALL) $(FILES_PNG)
+	CLEAN_EXTRA:=$(CLEAN_EXTRA); find $(SRC_FOLDER) -name "*.png" -exec rm {} \;
+	LYFLAGS:=$(LYFLAGS) --png
 endif
 ifeq ($(DO_PS),1)
 	ALL:=$(ALL) $(FILES_PS)
@@ -55,7 +76,7 @@ endif
 ifeq ($(DO_OGG),1)
 	ALL:=$(ALL) $(FILES_OGG)
 endif
-CLEAN:=$(CLEAN) $(FILES_LYD) $(FILES_PDF) $(FILES_PNG) $(FILES_PS) $(FILES_MIDI) $(FILES_STAMP) $(FILES_WAV) $(FILES_MP3) $(FILES_OGG)
+CLEAN:=$(CLEAN) $(FILES_LYD) $(FILES_PDF) $(FILES_PS) $(FILES_MIDI) $(FILES_STAMP) $(FILES_WAV) $(FILES_MP3) $(FILES_OGG)
 
 .PHONY: all
 all: $(ALL)
@@ -69,7 +90,6 @@ debug:
 	$(info FILES_LYI is $(FILES_LYI))
 	$(info FILES_LYD is $(FILES_LYD))
 	$(info FILES_PDF is $(FILES_PDF))
-	$(info FILES_PNG is $(FILES_PNG))
 	$(info FILES_PS is $(FILES_PS))
 	$(info FILES_MIDI is $(FILES_MIDI))
 	$(info FILES_STAMP is $(FILES_STAMP))
@@ -79,14 +99,16 @@ debug:
 
 .PHONY: todo
 todo:
-	-@grep TODO $(FILES_LY)
+	-$(Q)grep TODO $(FILES_LY)
 
 .PHONY: clean
 clean:
-	rm -rf $(CLEAN)
+	$(Q)rm -rf $(CLEAN)
+	-$(Q)rm -rf $(CLEAN_DIRS)
+	$(Q)$(CLEAN_EXTRA)
 .PHONY: clean_deps
 clean_deps:
-	rm -f $(FILES_LYD)
+	$(Q)rm -f $(FILES_LYD)
 .PHONY: clean_all_png
 clean_all_png:
 	-find $(SRC_FOLDER) -name "*.png" -exec rm {} \;
@@ -149,8 +171,6 @@ check_all: check_empty_copyright check_common check_ws check_composer_and check_
 
 # rules
 
-LYFLAGS:=
-
 # rules for creating pdf, ps, png and midi directly from the ly files,
 # they are not used as we are creating everything together...
 #$(FILES_PDF): %.pdf: %.ly
@@ -165,7 +185,8 @@ LYFLAGS:=
 #$(FILES_MIDI): %.midi: %.ly
 #	lilypond --pdf $(LYFLAGS) -o /tmp/foo $<
 #	mv /tmp/foo.midi $@
-$(FILES_PNG): %.png: %.stamp $(ALL_DEP)
+# dependency for PNGs does not make sense since we do not know the file names...
+#$(FILES_PNG): %.png: %.stamp $(ALL_DEP)
 
 $(FILES_PS): %.ps: %.stamp $(ALL_DEP)
 
@@ -174,23 +195,36 @@ $(FILES_PDF): %.pdf: %.stamp $(ALL_DEP)
 $(FILES_MIDI): %.midi: %.stamp $(ALL_DEP)
 
 $(FILES_STAMP): %.stamp: %.ly $(ALL_DEP)
-	lilypond --pdf $(LYFLAGS) -o /tmp/foo $<
-	mv /tmp/foo.ps $(basename $<).ps
-	mv /tmp/foo.pdf $(basename $<).pdf
-	mv /tmp/foo.midi $(basename $<).midi
-	touch $@
+	$(info doing $@)
+	$(Q)rm -f $(dir $@)$(basename $(notdir $@))-*.png $(dir $@)$(basename $(notdir $@)).{ps,pdf,midi}
+	$(Q)lilypond $(LYFLAGS) -o $(dir $@)$(basename $(notdir $@)) $<
+	$(Q)touch $@
+
+#old rule
+#	rm -rf /tmp/folder
+#	mkdir /tmp/folder
+#	lilypond --png --pdf $(LYFLAGS) -o /tmp/folder/foo $<
+#	mv /tmp/folder/foo.ps $(basename $<).ps
+#	mv /tmp/folder/foo.pdf $(basename $<).pdf
+#	mv /tmp/folder/foo.midi $(basename $<).midi
+#	touch $@
+#rm -rf /tmp/folder
 $(FILES_LYD): %.ly.d: %.ly $(ALL_DEP)
-	./scripts/lilydep.pl $< $@ $(basename $<).pdf $(basename $<).ps $(basename $<).midi
+	$(info doing $@)
+	$(Q)./scripts/lilydep.pl $< $@ $(basename $<).pdf $(basename $<).ps $(basename $<).midi
 $(FILES_WAV): %.wav: %.midi $(ALL_DEP)
-	timidity $< -idq -Ow -o $@ > /dev/null
+	$(info doing $@)
+	$(Q)timidity $< -idq -Ow -o $@ > /dev/null
 # rule about making mp3 from wav files - I currently don't use it since
 # I generated mp3 directly from midi using a pipe between timidity and lame...
 #$(FILES_MP3): %.mp3: %.wav
 #	lame $< $@
 $(FILES_OGG): %.ogg: %.midi $(ALL_DEP)
-	timidity $< -idq -Ov -o $@ > /dev/null
+	$(info doing $@)
+	$(Q)timidity $< -idq -Ov -o $@ > /dev/null
 $(FILES_MP3): %.mp3: %.midi $(ALL_DEP)
-	timidity $< -idq -Ow -o - | lame - $@
+	$(info doing $@)
+	$(Q)timidity $< -idq -Ow -o - | lame - $@
 
 # include the deps files (no warnings)
 ifeq ($(USE_DEPS),1)
