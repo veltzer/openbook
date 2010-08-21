@@ -21,6 +21,7 @@ use Parse::RecDescent qw();
 
 my($debug)=0;
 my($report)=1;
+my($do_import_blobs)=1;
 my($limit_imports)=1;
 my($dbh);
 my($parser);
@@ -74,6 +75,30 @@ sub handler() {
 			print "path is $path\n";
 			print "suffix is $suffix\n";
 		}
+		# handle png stuff...
+		my($pages);
+		my(@pngs_abs);
+		my(@pngs_base);
+		if(-e $path.$name."png") {
+			# if we only have one png...
+			$pages=1;
+			push(@pngs_abs,$path.$name."png");
+			push(@pngs_base,$name."png");
+		} else {
+			# if we have many pngs...
+			my($more)=1;
+			my($counter)=1;
+			while($more) {
+				if(-e $path.$name."-page".$counter.".png") {
+					$counter++;
+					push(@pngs_abs,$path.$name."-page".$counter.".png");
+					push(@pngs_base,$name."-page".$counter.".png");
+				} else {
+					$more=0;
+				}
+			}
+			$pages=$counter;
+		}
 		my($hash)=get_meta_data($file);
 		if($limit_imports) {
 			if(!exists($hash->{"completion"})) {
@@ -89,7 +114,7 @@ sub handler() {
 		if($report) {
 			print "importing [".$hash->{"title"}."]\n";
 		}
-		$dbh->do("insert into TbMsLilypond (uuid,title,subtitle,composer,copyright,style,piece,poet,idyoutube) values(?,?,?,?,?,?,?,?,?)",
+		$dbh->do("insert into TbMsLilypond (uuid,title,subtitle,composer,copyright,style,piece,poet,pages,idyoutube) values(?,?,?,?,?,?,?,?,?,?)",
 			undef,
 			$hash->{"uuid"},
 			$hash->{"title"},
@@ -99,6 +124,7 @@ sub handler() {
 			$hash->{"style"},
 			$hash->{"piece"},
 			$hash->{"poet"},
+			$pages,
 			$hash->{"idyoutube"}
 		);
 		my($last_id)=$dbh->last_insert_id(undef, undef, undef, undef);
@@ -107,42 +133,54 @@ sub handler() {
 			print "last_id is $last_id\n";
 		}
 		# now insert blobs associated with this entry...
-		insert_blob(
-			$name.".ly",
-			$hash->{"uuid"}."-ly",
-			"text/plain",
-			$path.$name.".ly"
-		);
-		insert_blob(
-			$name.".pdf",
-			$hash->{"uuid"}."-pdf",
-			"application/pdf",
-			$path.$name.".pdf"
-		);
-		insert_blob(
-			$name.".ps",
-			$hash->{"uuid"}."-ps",
-			"application/postscript",
-			$path.$name.".ps"
-		);
-		insert_blob(
-			$name.".midi",
-			$hash->{"uuid"}."-midi",
-			"audio/midi",
-			$path.$name.".midi"
-		);
-		insert_blob(
-			$name.".mp3",
-			$hash->{"uuid"}."-mp3",
-			"audio/mpeg",
-			$path.$name.".mp3"
-		);
-		insert_blob(
-			$name.".ogg",
-			$hash->{"uuid"}."-ogg",
-			"audio/ogg",
-			$path.$name.".ogg"
-		);
+		if($do_import_blobs) {
+			insert_blob(
+				$name.".ly",
+				$hash->{"uuid"}."-ly",
+				"text/plain",
+				$path.$name.".ly"
+			);
+			insert_blob(
+				$name.".pdf",
+				$hash->{"uuid"}."-pdf",
+				"application/pdf",
+				$path.$name.".pdf"
+			);
+			insert_blob(
+				$name.".ps",
+				$hash->{"uuid"}."-ps",
+				"application/postscript",
+				$path.$name.".ps"
+			);
+			insert_blob(
+				$name.".midi",
+				$hash->{"uuid"}."-midi",
+				"audio/midi",
+				$path.$name.".midi"
+			);
+			insert_blob(
+				$name.".mp3",
+				$hash->{"uuid"}."-mp3",
+				"audio/mpeg",
+				$path.$name.".mp3"
+			);
+			insert_blob(
+				$name.".ogg",
+				$hash->{"uuid"}."-ogg",
+				"audio/ogg",
+				$path.$name.".ogg"
+			);
+			# lets bring in the pngs...
+			my($counter)=0;
+			foreach my($png) (@pngs_abs) {
+				insert_blob(
+					$pngs_base[$counter],
+					$hash->{"uuid"}."-png".$counter,
+					"image/png",
+					$png
+				);
+			}
+		}
 	}
 }
 
