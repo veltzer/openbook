@@ -8,6 +8,7 @@
 	style="Jazz"
 	piece="Samba"
 
+	completion="0"
 	uuid="21bc8284-a26f-11df-a829-0019d11e5a41"
 }
 

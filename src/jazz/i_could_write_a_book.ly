@@ -15,7 +15,7 @@
 
 %{
 	TODO:
-	- mark lines of this song. 
+	- mark lines of this song.
 	- mark parts of this song.
 %}
 

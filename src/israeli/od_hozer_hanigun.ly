@@ -5,6 +5,7 @@
 	style="Pop"
 	piece="Med. Ballad"
 
+	completion="0"
 	uuid="505a0a3a-a26f-11df-bbef-0019d11e5a41"
 }
 
