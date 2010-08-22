@@ -8,6 +8,7 @@
 	style="Pop"
 	piece="Med. Ballad"
 
+	completion="0"
 	uuid="5a9b270e-a26f-11df-a792-0019d11e5a41"
 }
 

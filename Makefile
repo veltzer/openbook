@@ -1,25 +1,36 @@
-ALL:=
-CLEAN:=
-CLEAN_DIRS:=
-CLEAN_EXTRA:=echo doing extra cleanup work...
+#######################
+# makefile parameters #
+#######################
 
 # should we show commands executed ?
 DO_MKDBG:=0
 # should we depend on the date of the makefile itself ?
 DO_MAKEDEPS:=1
+# should we make dependency files ?
+DO_LYD:=1
+# should we make pds ?
 DO_PDF:=1
+# should we make images ?
 DO_PNG:=1
+# should we make postscript ?
 DO_PS:=1
+# should we make midi ?
 DO_MIDI:=1
 DO_STAMP:=1
 DO_WAV:=0
 DO_MP3:=1
 DO_OGG:=1
-
 # do you actually want to use dependency information ?
-USE_DEPS:=0
-
+USE_LYD:=1
+# where are the sources located ?
 SRC_FOLDER:=src
+
+# here begins the makefile... 
+
+ALL:=
+CLEAN:=
+CLEAN_DIRS:=
+CLEAN_EXTRA:=echo doing extra cleanup work...
 
 LYFLAGS:=
 
@@ -36,11 +47,10 @@ Q=@
 #.SILENT:
 endif # DO_MKDBG
 
-
 FILES_LY:=$(shell find $(SRC_FOLDER) -name "*.ly")
 FILES_LYI:=$(shell find $(SRC_FOLDER) -name "*.lyi")
-FILES_LYD:=$(addsuffix .d,$(FILES_LY))
 
+FILES_LYD:=$(addsuffix .d,$(FILES_LY))
 FILES_PDF:=$(addsuffix .pdf,$(basename $(FILES_LY)))
 FILES_PS:=$(addsuffix .ps,$(basename $(FILES_LY)))
 FILES_MIDI:=$(addsuffix .midi,$(basename $(FILES_LY)))
@@ -49,9 +59,13 @@ FILES_WAV:=$(addsuffix .wav,$(basename $(FILES_LY)))
 FILES_MP3:=$(addsuffix .mp3,$(basename $(FILES_LY)))
 FILES_OGG:=$(addsuffix .ogg,$(basename $(FILES_LY)))
 
-ALL:=$(ALL) $(FILES_LYD)
+ifeq ($(DO_LYD),1)
+	ALL:=$(ALL) $(FILES_LYD)
+	CLEAN:=$(CLEAN) $(FILES_LYD)
+endif
 ifeq ($(DO_PDF),1)
 	ALL:=$(ALL) $(FILES_PDF)
+	CLEAN:=$(CLEAN) $(FILES_PDF)
 	LYFLAGS:=$(LYFLAGS) --pdf
 endif
 ifeq ($(DO_PNG),1)
@@ -60,23 +74,28 @@ ifeq ($(DO_PNG),1)
 endif
 ifeq ($(DO_PS),1)
 	ALL:=$(ALL) $(FILES_PS)
+	CLEAN:=$(CLEAN) $(FILES_PS)
 endif
 ifeq ($(DO_MIDI),1)
 	ALL:=$(ALL) $(FILES_MIDI)
+	CLEAN:=$(CLEAN) $(FILES_MIDI)
 endif
 ifeq ($(DO_STAMP),1)
 	ALL:=$(ALL) $(FILES_STAMP)
+	CLEAN:=$(CLEAN) $(FILES_STAMP) $(FILES_MIDI) $(FILES_PS) $(FILES_PDF)
 endif
 ifeq ($(DO_WAV),1)
 	ALL:=$(ALL) $(FILES_WAV)
+	CLEAN:=$(CLEAN) $(FILES_WAV)
 endif
 ifeq ($(DO_MP3),1)
 	ALL:=$(ALL) $(FILES_MP3)
+	CLEAN:=$(CLEAN) $(FILES_MP3)
 endif
 ifeq ($(DO_OGG),1)
 	ALL:=$(ALL) $(FILES_OGG)
+	CLEAN:=$(CLEAN) $(FILES_OGG)
 endif
-CLEAN:=$(CLEAN) $(FILES_LYD) $(FILES_PDF) $(FILES_PS) $(FILES_MIDI) $(FILES_STAMP) $(FILES_WAV) $(FILES_MP3) $(FILES_OGG)
 
 .PHONY: all
 all: $(ALL)
@@ -117,7 +136,8 @@ clean_all_png:
 
 .PHONY: check_extra_files
 check_extra_files:
-	-@find -type f -and -not -name "Makefile" -and -not -path "./.git/*" -and -not -name "*.ly" -and -not -name "*.lyi" -and -not -name "*.txt" -and -not -name "*.ly.d" -and -not -name "*.pl" -and -not -name "*.grammer" -and -not -name "*.pdf" -and -not -name "*.ps" -and -not -name "*.midi" -and -not -name "*.stamp" -and -not -name ".gitignore" -and -not -name "*.wav" -and -not -name "*.mp3" -and -not -name "*.ogg"
+	$(info doing [$@])
+	-@find -type f -and -not -name "Makefile" -and -not -path "./.git/*" -and -not -name "*.ly" -and -not -name "*.lyi" -and -not -name "*.txt" -and -not -name "*.ly.d" -and -not -name "*.pl" -and -not -name "*.grammer" -and -not -name "*.pdf" -and -not -name "*.ps" -and -not -name "*.midi" -and -not -name "*.stamp" -and -not -name ".gitignore" -and -not -name "*.wav" -and -not -name "*.mp3" -and -not -name "*.ogg" -and -not -name "*.png"
 .PHONY: check_comments
 check_comments:
 	$(info doing [$@])
@@ -146,10 +166,14 @@ check_common:
 check_no_poet:
 	$(info doing [$@])
 	-@grep --files-without-match "poet=" $(FILES_LY)
-.PHONY: check_no_copyright
-check_no_copyright:
+.PHONY: check_copyright
+check_copyright:
 	$(info doing [$@])
 	-@grep --files-without-match "copyright=" $(FILES_LY)
+.PHONY: check_completion
+check_completion:
+	$(info doing [$@])
+	-@grep --files-without-match "completion=" $(FILES_LY)
 .PHONY: check_empty_copyright
 check_empty_copyright:
 	$(info doing [$@])
@@ -167,7 +191,7 @@ check_break:
 	$(info doing [$@])
 	-@grep "\\\\break" $(FILES_LY)
 .PHONY: check_all
-check_all: check_empty_copyright check_common check_ws check_composer_and check_extra_files check_min_chords check_uuid check_chordChanges check_bar check_break
+check_all: check_empty_copyright check_common check_ws check_composer_and check_extra_files check_min_chords check_uuid check_chordChanges check_bar check_break check_completion
 
 # rules
 
@@ -227,6 +251,6 @@ $(FILES_MP3): %.mp3: %.midi $(ALL_DEP)
 	$(Q)timidity $< -idq -Ow -o - 2> /dev/null | lame - $@ > /dev/null 2> /dev/null
 
 # include the deps files (no warnings)
-ifeq ($(USE_DEPS),1)
+ifeq ($(USE_LYD),1)
 -include $(FILES_LYD)
 endif

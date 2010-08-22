@@ -8,6 +8,7 @@
 	piece="Mederately"
 	remark="copied from the fake book"
 
+	completion="0"
 	uuid="3162420a-a26f-11df-aacf-0019d11e5a41"
 }
 

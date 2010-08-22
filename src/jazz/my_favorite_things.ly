@@ -6,6 +6,7 @@
 	style="Jazz"
 	piece="Med Swing"
 
+	completion="0"
 	uuid="02c22208-a26f-11df-98fd-0019d11e5a41"
 }
 
