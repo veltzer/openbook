@@ -18,6 +18,8 @@
 %{
 	TODO:
 	- fix up the lyrics
+	- the chords seem kind of static (two E7 in a row, two fmaj7 in a row). Shouldn't
+		there be more II->V there ?
 %}
 
 myChords=\chordmode {
@@ -29,7 +31,7 @@ myChords=\chordmode {
 	\repeat volta 2 {
 		f1:maj7 | f1:maj7 | e1:m7.5- | a1:7.9- | \myEndLine
 		d1:m7 | d1:m7 | c1:m7 | f1:7 | \myEndLine
-		bes1:maj7 | bes1:maj7 |
+		bes1:maj7 | ees1:7 |
 	}
 	\alternative {
 		{
@@ -38,7 +40,9 @@ myChords=\chordmode {
 		}
 		{
 			a1:m7.5- | d1:7.9- | \myEndLine
-			g1:m7 | c1:7 | f2:maj7 d2:7 | g2:7 c2:7 | \myEndLine
+			g1:m7 | c1:7 | f1:maj7 | f1:maj7 | \myEndLine
+			%% turn around is:
+			%% f2:maj7 d2:7 | g2:m7 c2:7 |
 		}
 	}
 
@@ -64,7 +68,7 @@ myVoice=\relative c' {
 		}
 		{
 			a1 | r4 r8 a c4 b |
-			bes4. d,8 e4 f | g2 a | f1 | r4 r8 c bes'4 a |
+			bes4. d,8 e4 f | g2 a | f1~ | f2 r2 |
 		}
 	}
 }
