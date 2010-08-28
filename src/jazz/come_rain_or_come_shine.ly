@@ -27,7 +27,7 @@ myChordsAmit=\chordmode {
 	f1:maj7 | e2:m7.5- a2:7.9- | d1:m6 | d1:m6 | \myEndLine
 	g1:7.9 | g2:m7 c2:7 | f1:maj7 | c2:m7 f2:7 | \myEndLine
 
-	bes1:m6 | f1:m6 | bes2:m7 bes2:m7/aes | g2:m7 c2:m7.5+ | \myEndLine
+	bes1:m6 | f1:m6 | bes2:m7 bes2:m7/aes | g2:m7 c2:7.5+ | \myEndLine
 	d2:m7.5- g2:7.9- | c2:m7 c2:m7/bes | a2:m7.5- d2:7.9- | g2:m7 c2:7 | \myEndLine
 	\endPart
 
