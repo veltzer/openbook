@@ -1,5 +1,9 @@
 This is a set of lilypond hints:
 
+Chords:
+=======
+- alternate bass to a chord: c2:m7/bes
+
 - \chords is akin to \new ChordNames but with something else... What is it ?
 	find out from the lilypond documentation...
 
