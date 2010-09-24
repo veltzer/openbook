@@ -221,7 +221,7 @@ $(FILES_MIDI): %.midi: %.stamp $(ALL_DEP)
 $(FILES_STAMP): %.stamp: %.ly $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)rm -f $(dir $@)$(basename $(notdir $@))-*.png $(dir $@)$(basename $(notdir $@)).{ps,pdf,midi}
-	$(Q)lilypond $(LYFLAGS) -o $(dir $@)$(basename $(notdir $@)) $< 2> /dev/null
+	$(Q)lilypond $(LYFLAGS) -o $(dir $@)$(basename $(notdir $@)) $< 2> /tmp/error
 	$(Q)touch $@
 
 #old rule
