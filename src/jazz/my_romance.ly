@@ -1,7 +1,7 @@
 \include "src/include/common.lyi"
 \header {
 	title="My Romance"
-	subtitle="(From 'Jumbo')"
+	subtitle="From 'Jumbo'"
 	composer="Richard Rodgers"
 	poet="Lorenz Hart"
 	style="Jazz"
