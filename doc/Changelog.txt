@@ -1,0 +1,2 @@
+25/10/10: fixed the fact that ly.d files (dependency) was not being used
+right.
