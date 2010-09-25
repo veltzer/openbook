@@ -15,8 +15,6 @@
 
 %{
 	TODO:
-	- mark lines of this song.
-	- mark parts of this song.
 %}
 
 myChords=\chordmode {
@@ -25,21 +23,26 @@ myChords=\chordmode {
 	\startSong
 
 	\partial 2 r2 |
+	
+	\startPart
+
 	\repeat volta 2 {
-		c2:maj7 a2:m9 | d2:m7 g2:7 | c1:maj7 | c2:maj7 g2:7 |
-		c2:maj7 g2:7 | c2:maj7 cis2:dim7 | d1:m7 | g1:7 |
+		c2:maj7 a2:m9 | d2:m7 g2:7 | c1:maj7 | c2:maj7 g2:7 | \myEndLine
+		c2:maj7 g2:7 | c2:maj7 cis2:dim7 | d1:m7 | g1:7 | \myEndLine
 		c2/e aes2:7/ees | d2:m7 g2:7 |
 	}
 	\alternative {
 		{
-			a2:m7 d2:7.9- | g2. b4:7 |
-			e1:m | a2:m7 d2:7 | d1:m7 | g1:7 |
+			a2:m7 d2:7.9- | g2. b4:7 | \myEndLine
+			e1:m | a2:m7 d2:7 | d1:m7 | g1:7 | \myEndLine
 		}
 		{
-			g2:m7 c2:7 | f2:maj7 f4:m7 bes4:7 |
-			c2 a2:7 | d2:m7 g2:7 | c1:maj7 | c1:maj7 |
+			g2:m7 c2:7 | f2:maj7 f4:m7 bes4:7 | \myEndLine
+			c2 a2:7 | d2:m7 g2:7 | c1:maj7 | c1:maj7 | \myEndLine
 		}
 	}
+	\endPart
+
 	\endSong
 
 	\endChords

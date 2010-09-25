@@ -33,6 +33,28 @@
 	bottom-margin = 2.5\cm
 }
 
+%% reduce the font size (taken from the lilypond info documentation)
+#(set-global-staff-size 17.82)
+
+%% number of staffs per page (this does not work because of my breaks)
+%%\paper {
+%%	system-count = #7
+%%}
+
+%% reduce spaces between systems and the bottom (taken from the lilypond
+%% documentation and found the relevant variable) 
+%% the result of this is that I can fit 8 single staffs in one page
+%% which is ideal for Jazz (think 32 bar divided into 8 lines of 4 bars each...).
+%% I should really only apply this thing for Jazz tunes but that is a TODO item.
+\paper {
+%% default is 4\mm
+	between-system-padding = 1\mm
+%% default is 20\mm
+%%	between-system-space = 16\mm 
+%%	ragged-last-bottom = ##f
+%%	ragged-bottom = ##f
+}
+
 %% some macros to be reused all over
 myBreak=\break
 

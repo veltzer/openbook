@@ -235,7 +235,7 @@ $(FILES_STAMP): %.stamp: %.ly $(ALL_DEP)
 #rm -rf /tmp/folder
 $(FILES_LYD): %.ly.d: %.ly $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)./scripts/lilydep.pl $< $@ $(basename $<).pdf $(basename $<).ps $(basename $<).midi
+	$(Q)./scripts/lilydep.pl $< $@ $(basename $<).stamp $(basename $<).pdf $(basename $<).ps $(basename $<).midi
 $(FILES_WAV): %.wav: %.midi $(ALL_DEP)
 	$(info doing $@)
 	$(Q)timidity $< -idq -Ow -o $@ > /dev/null
