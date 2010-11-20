@@ -67,6 +67,9 @@ endPart=\bar "||"
 startSong={}
 endSong=\bar "|."
 
+startIntro=\mark "Intro"
+endIntro={}
+
 startChords=\set chordChanges = ##t
 endChords={}
 
