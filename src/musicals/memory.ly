@@ -24,11 +24,13 @@
 		- I don't want to see the vocal staff in the opening.
 		- rests for entire bars (like in the begining) are not centered.
 		- what's the deal with setting the key per voice?
+		- in the bass notes the bass of the chord should be held for the entire bar
+			(how do I do this in lilypond ?).
+		- in the 10/8 bar I want the subdivision to ring 3+3+4 and lilypond does not
+			do that. How do you do subdivisons in lilypond ?
 %}
 
 chordsMain=\chordmode {
-	\time 12/8
-
 	\startChords
 
 	\startSong
@@ -42,7 +44,7 @@ chordsMain=\chordmode {
 	\startPart
 
 	bes | g:m | ees | d:m |
-	c:m | g:m | f8*9 ees8*3/f | bes1. |
+	c8*10:m | g1.:m | f8*9 ees8*3/f | bes1. |
 
 	\endPart
 
@@ -50,29 +52,46 @@ chordsMain=\chordmode {
 
 	\endChords
 }
-voiceBass=\relative c' {
-	\clef bass
-	\key bes \major
-	\time 12/8
-	bes,8 f'8 d'8~ d8 f,8 d'8 bes,8 f'8 d'8~ d8 f,8 d'8 |
-	bes,8 f'8 d'8~ d8 f,8 d'8 bes,8 f'8 d'8~ d8 f,8 d'8 |
-	bes,8 f'8 d'8~ d8 f,8 d'8 bes,8 f'8 d'8~ d8 f,8 d'8 |
-	g,,8 d'8 g8~ g8 d8 g8 g,8 d'8 g8~ g8 d8 g8 |
-}
-voiceTreble=\relative c'' {
-	\clef treble
-	\key bes \major
-	\time 12/8
-	r1. | r1. |
-	bes8*3 bes~ bes8 a bes c bes g | bes8*3 bes~ bes8 a bes c bes f |
-}
 voiceVocal=\relative c'' {
 	\clef treble
 	\key bes \major
 	\time 12/8
 	r1. | r1. |
 	\mark "GRIZABELLA"
-	bes8*3 bes~ bes8 a bes c bes g | bes8*3 bes~ bes8 a bes c bes f |
+	bes4. bes~ bes8 a bes c bes g | bes4. bes~ bes8 a bes c bes f |
+	g4. g~ g8 ees f g f ees | d2.~ d4. d4 f8 |
+	\time 10/8
+	f4. c4 d8 ees[ f g a] |
+	\time 12/8
+	bes a g f4.~ f d4 bes8 |
+	f'2.~ f4 g,8 g4 bes8 |
+	\time 6/8
+	bes2.
+}
+voiceTreble=\relative c'' {
+	\clef treble
+	\key bes \major
+	r1. | r1. |
+	bes4. bes~ bes8 a bes c bes g | bes4. bes~ bes8 a bes c bes f |
+	g4. g~ g8 ees f g f ees | d2.~ d4. d4 f8 |
+	f4. c4 d8 ees[ f g a] |
+	bes a g f4.~ f d4 bes8 |
+	f'2.~ f4 g,8 g4 bes8 |
+	bes2.
+}
+voiceBass=\relative c' {
+	\clef bass
+	\key bes \major
+	bes,8 f' d'~ d f, d' bes, f' d'~ d f, d' |
+	bes, f' d'~ d f, d' bes, f' d'~ d f, d' |
+	bes, f' d'~ d f, d' bes, f' d'~ d f, d' |
+	g,, d' g~ g d g g, d' g~ g d g |
+	ees, bes' g'~ g bes, g' ees, bes' g'~ g bes, g' | 
+	d, a' d~ d a d d, a' d a' f d |
+	c,[ g' c] ees[ g c] c,[ g' c g] |
+	g, d' g bes d f g,, d' g f' d bes |
+	f,, c' f a c f f,, c' f bes g ees |
+	bes f' d'~ d' f, d' |
 }
 pianoMain={
 	%% This is the instrument name that will appear before the staff.
@@ -105,7 +124,8 @@ pianoMain={
 }
 %% lyrics
 myLyrics=\lyricmode {
-%%	This verse not a part of the song but rather some intro before the song...
+%%	The next verse not a part of the song but rather some intro before the song...
+
 %%	Daylight
 %%	See the dew on the sunflower
 %%	And a rose that is fading
@@ -114,13 +134,13 @@ myLyrics=\lyricmode {
 %%	I yearn to turn my face to the dawn
 %%	I am waiting for the day...
 
-	Mid -- night
-	Not a sound from the pave -- ment
-	Has the moon lost her memory?
-	She is smiling alone
-	In the lamplight
-	The withered leaves collect at my feet
-	And the wind begins to moan
+	Mid -- night.
+	Not a sound from the pave -- ment.
+	Has the moon lost her me -- mory?
+	She is smil -- ing a -- lone.
+	In the lamp -- light,
+	The wi -- thered leaves col -- lect at my feet.
+	And the wind be -- gins to moan.
 
 	Memory
 	All alone in the moonlight
