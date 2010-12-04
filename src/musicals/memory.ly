@@ -57,41 +57,76 @@ voiceVocal=\relative c'' {
 	\key bes \major
 	\time 12/8
 	r1. | r1. |
-	\mark "GRIZABELLA"
-	bes4. bes~ bes8 a bes c bes g | bes4. bes~ bes8 a bes c bes f |
-	g4. g~ g8 ees f g f ees | d2.~ d4. d4 f8 |
-	\time 10/8
-	f4. c4 d8 ees[ f g a] |
-	\time 12/8
-	bes a g f4.~ f d4 bes8 |
-	f'2.~ f4 g,8 g4 bes8 |
-	\time 6/8
-	bes2.
+	\repeat volta 2 {
+		\mark "GRIZABELLA"
+		bes4. bes~ bes8 a bes c bes g | bes4. bes~ bes8 a bes c bes f |
+		g4. g~ g8 ees f g f ees | d2.~ d4. d4 f8 |
+		\time 10/8
+		f4. c4 d8 ees[ f g a] |
+		\time 12/8
+		bes a g f4.~ f d4 bes8 |
+	}
+	\alternative {
+		{
+			f'2.~ f4 g,8 g4 bes8 |
+			\time 6/8
+			bes2.
+		}
+		{
+			f'2.~ f4 g,8 g4 bes8 |
+			\time 6/8
+			bes2.
+		}
+	}
 }
 voiceTreble=\relative c'' {
 	\clef treble
 	\key bes \major
 	r1. | r1. |
-	bes4. bes~ bes8 a bes c bes g | bes4. bes~ bes8 a bes c bes f |
-	g4. g~ g8 ees f g f ees | d2.~ d4. d4 f8 |
-	f4. c4 d8 ees[ f g a] |
-	bes a g f4.~ f d4 bes8 |
-	f'2.~ f4 g,8 g4 bes8 |
-	bes2.
+	\repeat volta 2 {
+		bes4. bes~ bes8 a bes c bes g | bes4. bes~ bes8 a bes c bes f |
+		g4. g~ g8 ees f g f ees | d2.~ d4. d4 f8 |
+		f4. c4 d8 ees[ f g a] |
+		bes a g f4.~ f d4 bes8 |
+	}
+	\alternative {
+		{
+			f'2.~ f4 g,8 g4 bes8 |
+			\time 6/8
+			bes2.
+		}
+		{
+			f'2.~ f4 g,8 g4 bes8 |
+			\time 6/8
+			bes2.
+		}
+	}
 }
 voiceBass=\relative c' {
 	\clef bass
 	\key bes \major
 	bes,8 f' d'~ d f, d' bes, f' d'~ d f, d' |
 	bes, f' d'~ d f, d' bes, f' d'~ d f, d' |
-	bes, f' d'~ d f, d' bes, f' d'~ d f, d' |
-	g,, d' g~ g d g g, d' g~ g d g |
-	ees, bes' g'~ g bes, g' ees, bes' g'~ g bes, g' | 
-	d, a' d~ d a d d, a' d a' f d |
-	c,[ g' c] ees[ g c] c,[ g' c g] |
-	g, d' g bes d f g,, d' g f' d bes |
-	f,, c' f a c f f,, c' f bes g ees |
-	bes f' d'~ d' f, d' |
+	\repeat volta 2 {
+		bes, f' d'~ d f, d' bes, f' d'~ d f, d' |
+		g,, d' g~ g d g g, d' g~ g d g |
+		ees, bes' g'~ g bes, g' ees, bes' g'~ g bes, g' | 
+		d, a' d~ d a d d, a' d a' f d |
+		c,[ g' c] ees[ g c] c,[ g' c g] |
+		g, d' g bes d f g,, d' g f' d bes |
+	}
+	\alternative {
+		{
+			f,, c' f a c f f,, c' f bes g ees |
+			\time 6/8
+			bes f' d'~ d f, d' |
+		}
+		{
+			f,, c' f a c f f,, c' f bes g ees |
+			\time 6/8
+			bes f' bes~ bes f bes, |
+		}
+	}
 }
 pianoMain={
 	%% This is the instrument name that will appear before the staff.
@@ -142,6 +177,8 @@ myLyrics=\lyricmode {
 	The wi -- thered leaves col -- lect at my feet.
 	And the wind be -- gins to moan.
 
+%%	up to till point it is done...
+ 
 	Memory
 	All alone in the moonlight
 	I can smile at the old days
@@ -181,8 +218,8 @@ myLyrics=\lyricmode {
 %% score for printing
 \score {
 	<<
-		\new Voice=myv \voiceVocal
-		\new Lyrics \lyricsto myv \myLyrics
+		\new Voice="myvoice" \voiceVocal
+		\new Lyrics \lyricsto "myvoice" \myLyrics
 		\new PianoStaff=piano \pianoMain
 		\new ChordNames=chords \chordsMain
 	>>
@@ -192,8 +229,9 @@ myLyrics=\lyricmode {
 }
 %% score for midi
 \score {
+	\unfoldRepeats
 	<<
-		\new VoiceStaff=voiceVocal \voiceVocal
+		\new Voice=myvoice \voiceVocal
 		\new PianoStaff=piano \pianoMain
 	>>
 	\midi {
