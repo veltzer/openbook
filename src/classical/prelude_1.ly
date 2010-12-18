@@ -15,10 +15,11 @@
 %{
 	NOTES:
 		- this tune is an example of how to create different outputs for midi and
-		printing. This is required here since I want the chord names to appear in the
-		print but not be heard in the midi. In order situations you want to the midi
-		to play the voltas correclty and so need to unfold the music but in the print
-		version you want the voltas.
+		printing. This could be required for several reasons:
+		- you may want chord names to appear in the print but not be heard in the midi.
+		- you may want the midi to unfold the voltas (play them correctly that is) while
+		in the print the voltas should appear unfolded to keep the print small and
+		comprehensible.
 	TODO:
 %}
 
