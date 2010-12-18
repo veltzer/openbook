@@ -26,8 +26,7 @@
 		- what's the deal with setting the key per voice?
 		- in the bass notes the bass of the chord should be held for the entire bar
 			(how do I do this in lilypond ?).
-		- in the 10/8 bar I want the subdivision to ring 3+3+4 and lilypond does not
-			do that. How do you do subdivisons in lilypond ?
+		- reduce the size of the "GRIZABELLA" headline.
 %}
 
 chordsMain=\chordmode {
@@ -44,7 +43,8 @@ chordsMain=\chordmode {
 	\startPart
 
 	bes | g:m | ees | d:m |
-	c8*10:m | g1.:m | f8*9 ees8*3/f | bes1. |
+	c8*10:m | g1.:m | f8*9 ees8*3/f | \time 6/8 bes2. |
+	\time 12/8 f8*9 ees8*3/f | \time 6/8 bes2. |
 
 	\endPart
 
@@ -73,6 +73,7 @@ voiceVocal=\relative c'' {
 			bes2.
 		}
 		{
+			\time 12/8
 			f'2.~ f4 g,8 g4 bes8 |
 			\time 6/8
 			bes2.
@@ -96,6 +97,7 @@ voiceTreble=\relative c'' {
 			bes2.
 		}
 		{
+			\time 12/8
 			f'2.~ f4 g,8 g4 bes8 |
 			\time 6/8
 			bes2.
@@ -117,11 +119,12 @@ voiceBass=\relative c' {
 	}
 	\alternative {
 		{
-			f,, c' f a c f f,, c' f bes g ees |
+			f, c' f a c f f,, c' f bes g ees |
 			\time 6/8
 			bes f' d'~ d f, d' |
 		}
 		{
+			\time 12/8
 			f,, c' f a c f f,, c' f bes g ees |
 			\time 6/8
 			bes f' bes~ bes f bes, |
