@@ -23,10 +23,13 @@
 	TODO:
 		- I don't want to see the vocal staff in the opening.
 		- rests for entire bars (like in the begining) are not centered.
-		- what's the deal with setting the key per voice?
+		- reduce the size of the "GRIZABELLA" headline.
+		- what's the deal with setting the key per voice? - do I have to do that ?
+			check it out in the documentation, fix if need be and document this.
 		- in the bass notes the bass of the chord should be held for the entire bar
 			(how do I do this in lilypond ?).
-		- reduce the size of the "GRIZABELLA" headline.
+		- too much space between the systems on the page.
+		- add a macro that says "Music by" and then the composer and the same for the lyrics to be preceeded by "Text by".
 %}
 
 chordsMain=\chordmode {

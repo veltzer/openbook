@@ -27,6 +27,7 @@ build system
 	- how do I include all the files ? Should I write a script ?!?
 - make the build system produce a .gitignore file (make the .gitignore file be a target
 	of the build system dependent on everything including the makefile itself).
+- add an option to find lyi files which are not used (not included anywhere).
 
 lyrics support:
 ===============
