@@ -1,7 +1,10 @@
 % end verbatim - this comment is a hack to prevent texinfo.tex
 % from choking on non-European UTF-8 subsets
 
+%% this version tag will keep me compiling only on this version of lilypond.
 \version "2.12.3"
+
+%% default values for headers
 \header{
 	subsubtitle="Mark Veltzer <mark.veltzer@gmail.com>"
 	enteredby="Mark Veltzer"
@@ -27,8 +30,8 @@
 %% make lilypond use paper of size a4 (Is this the default ?!?)
 #(set-default-paper-size "a4")
 \paper {
-	%% make lilypond distance the footer from the bottom of the page more
-	%% it seems that if you don't do something line this you're going to have
+	%% make lilypond increase the distance of the footer from the bottom of the page
+	%% it seems that if you don't do something like this you're going to have
 	%% a real problem seeing the footer in postscript printing...
 	bottom-margin = 2.5\cm
 }
