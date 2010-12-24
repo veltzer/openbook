@@ -4,8 +4,7 @@
 	composer="שלום חנוך"
 	singer="שלום חנוך"
 	poet="שמרית אור"
-	copyright="GPL"
-	style="Pop"
+	style="Israeli"
 	piece="Med. Ballad"
 
 	completion="0"

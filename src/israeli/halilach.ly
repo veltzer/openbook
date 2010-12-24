@@ -5,7 +5,6 @@
 	style="Israeli"
 	composer="unknown"
 	copyright="1959 1962, Editora Musical Arapua, Sao Paulo, Brazil"
-	style="Israeli folk"
 	piece="Med. Ballad"
 	poet="unknown"
 

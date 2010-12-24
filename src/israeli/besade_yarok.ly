@@ -4,7 +4,7 @@
 	subtitle=""
 	composer="דני סנדרסון"
 	copyright="-- עיזרו לי למלא זכויות יוצרים --"
-	style="Rock"
+	style="Israeli"
 	singer="דני סנדרסון"
 	piece="בלדה איטית"
 	poet="מאיר אריאל"
