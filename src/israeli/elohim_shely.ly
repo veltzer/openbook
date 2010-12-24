@@ -4,7 +4,7 @@
 	subtitle=""
 	composer="עוזי חיטמן"
 	copyright="unknown"
-	style="Pop"
+	style="Israeli"
 	piece="Med. Ballad"
 	poet="עוזי חיטמן"
 

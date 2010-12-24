@@ -4,7 +4,7 @@
 	subtitle="באת אלי"
 	composer="עודד לרר"
 	%%copyright=""
-	style="Pop"
+	style="Israeli"
 	piece="Med. Ballad"
 	poet="לאה גולדברג"
 	singer="יהודית רביץ"

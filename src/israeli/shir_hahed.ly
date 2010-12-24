@@ -4,7 +4,7 @@
 	subtitle=""
 	composer="יוחנן זראי"
 	copyright="-- עיזרו לי למלא זכויות יוצרים --"
-	style="Rock"
+	style="Israeli"
 	singer="אריק לביא"
 	piece="בלדה איטית"
 	poet="יעקב שבתאי"

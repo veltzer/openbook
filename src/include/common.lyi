@@ -49,7 +49,7 @@
 %% the result of this is that I can fit 8 single staffs in one page
 %% which is ideal for Jazz (think 32 bar divided into 8 lines of 4 bars each...).
 %% I should really only apply this thing for Jazz tunes but that is a TODO item.
-jazzTune=\paper {
+\paper {
 %% default is 4\mm
 	between-system-padding = 1\mm
 %% default is 20\mm

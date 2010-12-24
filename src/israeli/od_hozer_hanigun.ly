@@ -2,7 +2,7 @@
 \header {
 	title="Od hozer hanigun"
 	singer="Berry Saharof"
-	style="Pop"
+	style="Israeli"
 	piece="Med. Ballad"
 
 	completion="0"
