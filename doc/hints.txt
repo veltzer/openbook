@@ -56,7 +56,7 @@ Lyrics
 	ry - will be on the second one.
 - one syllable or word on a couple of notes
 	I'm with you rain _ or shine!
-	rain will be on two notes (rain _ _ will be places on three notes).
+	rain will be on two notes (rain _ _ will be placed on three notes).
 
 Midi production
 ===============
@@ -64,3 +64,7 @@ Midi production
 will lead to multiple midi files produced when that file gets processed.
 
 - Is there a way to catenates all the midi files from within lilypond ? (tell lilypond that all midi should come out in a single midi file ?)
+
+Documentation for lilypond:
+===========================
+- A snipplet repository: http://lsr.dsi.unimi.it/

@@ -17,6 +17,26 @@
 	TODO:
 %}
 
+%%#(define jazzyTune (\paper { between-system-padding = 1\mm }))
+
+%%jazzyTune
+
+%%#{
+%%	\paper { between-system-padding = 1\mm }
+%%#})
+
+%%jazzyTune=\markup{ \paper { between-system-padding = 1\mm } }
+
+%% this works...
+%%\paper { between-system-padding = 1\mm }
+
+%%\jazzyTune
+
+%%jazzyTune=\markup { 'between-system-padding = 1\mm' }
+%%\paper {
+%%	jazzyTune
+%%}
+
 myChords=\chordmode {
 	\startChords
 
