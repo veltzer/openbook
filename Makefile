@@ -27,6 +27,16 @@ SRC_FOLDER:=src
 
 # here begins the makefile... 
 
+ifneq ($(filter clean_git,$(MAKECMDGOALS)),)
+USE_LYD:=0
+endif
+ifneq ($(filter clean_git_test,$(MAKECMDGOALS)),)
+USE_LYD:=0
+endif
+ifneq ($(filter clean,$(MAKECMDGOALS)),)
+USE_LYD:=0
+endif
+
 ALL:=
 CLEAN:=
 CLEAN_DIRS:=
