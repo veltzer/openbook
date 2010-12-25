@@ -18,12 +18,25 @@
 
 %{
 	TODO:
+	- add the ending.
+	- check the singers rythm of the melody to see if it's ok.
+	- check the singers word intonation to check if it's ok.
 %}
 
 myChords=\chordmode {
 	\startChords
 
 	\startSong
+
+	\mark "Intro"
+	\startPart
+	
+	\partial 4 r4
+
+	a2.:m | d:m7 | g:7 | c:maj7 |
+	f:maj7 | b:7 | e:7 |
+
+	\endPart
 
 	\mark "A"
 	\startPart
@@ -33,7 +46,7 @@ myChords=\chordmode {
 	d:m7 | g:7 | c2:maj7 c4:maj7/d | e2.:7 |
 	a:m | d:m7 | e:7 | a:7 |
 	d:m7 | g:7 | c2:maj7 c4:maj7/d | e2.:7 |
-	a:m | d:m7 | e:7 | a:m |
+	a:m | d:m7 | e:7 | a:m | a:m |
 
 	\endPart
 
@@ -44,6 +57,7 @@ myChords=\chordmode {
 		a2.:m | d:m7 | g:7 | c:maj7 |
 		f:maj7 | b:7 | e:7 | a:m |
 	}
+	a:m |
 
 	\endPart
 
@@ -57,19 +71,30 @@ myVoice=\relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 112
 
-	c'4 b a | g2 f8 d | e2 d4 | c8 b a2 |
+	%% Intro
+	\partial 4 a'8 e |
+	c'4 a4. e8 | f2 g8 a | b4 a4. g8 | f8 e4. f8 g |
+	a2 f8 e | ees2 b8 a | gis4 a b |
+
+	%% A part
+	c'2 b8 a | g2 f8 d | e2 d4 | c8 b a2 |
 	c'8 b a4 g8 f | e2 d8 e | f4 e ees | e2. |
 	d4 e f | g a4. f8 | e4 e d | c b2 |
-	a8 b c4 d8 e | g4 f4. d8 | e4 f ees | e2. |
+	a8 b c4 d8 e | g4 f d | e f ees | e2. |
 	d4 e f | g a4. f8 | e4 e d | c b2 |
-	a8 b c4 d8 e | g4 f4. d8 | e4 c b | a2 a'8 e |
+	a8 b c4 d8 e | g4 f d | e c b | a2. ~ | a2 a'8 e |
 
+	%% B part
 	c'2 a8 e | f2 g8 a | b4 a g | f e f8 g |
 	a2 f8 e | ees2 b8 a | gis4 a b | c2 a'8 e |
 	c'2 a8 e | f2 g8 a | b4 a g | f e f8 g |
-	a2 b8 c | d2 b8 a | gis4 a b | a2. |
+	a2 b8 c | d2 b8 a | gis2 a8 b | a2. ~ | a2. |
 }
 myLyrics=\lyricmode {
+	_ _
+	_ _ _ _ _ _ _ _ _ _ _ _ _
+	_ _ _ _ _ _ _ _ _
+
 	בא -- ת א -- לי את עי -- ני לפ -- ק -- ו -- ח,
 	ו -- גופ -- ך לי מ -- בט ו -- ח -- לון ו -- ר -- אי,
 	בא -- ת כ -- לי -- לה ה -- בא אל ה -- או -- ח
@@ -81,11 +106,16 @@ myLyrics=\lyricmode {
 	ו -- ל -- כל ש -- ע -- רה ב -- ב -- שר ה -- ח -- שוף
 	וריח _ _ _ יל -- דות רי -- ח ד -- בק ו -- או -- רן
 	הוא ני -- חו -- ח לי -- לו של ה -- גוף, של ה -- גוף.
+}
+mySecLyrics=\lyricmode {
+	_ _
+	_ _ _ _ _ _ _ _ _ _ _ _ _
+	_ _ _ _ _ _ _ _ _
 
-%%	אם היו עינויים - הם הפליגו אליך
-%%	מפרשי הלבן אל האופל שלך
-%%	תנני ללכת תנני ללכת
-%%	לכרוע על חוף הסליחה.
+	אם ה -- יו עי -- נו -- יים - הם הפ -- לי -- גו אל -- יך
+	מפר -- שי ה -- ל -- בן אל האו -- פל של -- ך
+	תנני ללכת תנני ללכת
+	לכרוע על חוף הסליחה.
 }
 
 %% score for printing
@@ -94,6 +124,7 @@ myLyrics=\lyricmode {
 		\new ChordNames="mychords" \myChords
 		\new Voice="myvoice" \myVoice
 		\new Lyrics \lyricsto "myvoice" \myLyrics
+%%		\new Lyrics \lyricsto "myvoice" \mySecLyrics
 	>>
 	\layout {
 	}
