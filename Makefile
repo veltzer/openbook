@@ -132,6 +132,16 @@ clean_deps:
 clean_all_png:
 	-find $(SRC_FOLDER) -name "*.png" -exec rm {} \;
 
+# -x: remove everything not known to git (not only ignore rules).
+# -d: remove directories also.
+# -f: force.
+.PHONY: clean_git
+clean_git:
+	@git clean -xdf
+.PHONY: clean_git_test
+clean_git_test:
+	@git clean -xdf --dry-run
+
 # checks
 
 .PHONY: check_extra_files
