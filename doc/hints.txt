@@ -57,6 +57,8 @@ Lyrics
 - one syllable or word on a couple of notes
 	I'm with you rain _ or shine!
 	rain will be on two notes (rain _ _ will be placed on three notes).
+- waiting while there is music:
+	simply write many _ (one for each note you are waiting for...).
 
 Midi production
 ===============
