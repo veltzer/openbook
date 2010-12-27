@@ -17,9 +17,12 @@
 }
 
 %{
+	DONE:
+	- did the opening.
+	- did the lyrics for the first half of the song.
 	TODO:
+	- check the rythm of the melody to see if it's ok.
 	- add the ending.
-	- check the singers rythm of the melody to see if it's ok.
 	- check the singers word intonation to check if it's ok.
 %}
 
@@ -124,7 +127,7 @@ mySecLyrics=\lyricmode {
 		\new ChordNames="mychords" \myChords
 		\new Voice="myvoice" \myVoice
 		\new Lyrics \lyricsto "myvoice" \myLyrics
-%%		\new Lyrics \lyricsto "myvoice" \mySecLyrics
+		\new Lyrics \lyricsto "myvoice" \mySecLyrics
 	>>
 	\layout {
 	}
