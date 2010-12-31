@@ -1,3 +1,11 @@
+important:
+==========
+build system fix - when there is an error in the lily files then the error gets
+printed to a file in /tmp. Fix it and have the errors printed to the screen.
+This probably means creating a wrapper perl script to run lily (which is fine...).
+Make that script collect the standard error and keep it in it's belly to only
+be printed if the childs exit code is an error...
+
 tunes:
 ======
 - slihot (match lyrics to the tune).
