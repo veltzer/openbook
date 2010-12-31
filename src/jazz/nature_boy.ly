@@ -10,7 +10,7 @@
 
 	completion="5"
 	note="7th bar of letters A and B were originally 2 bars each. Melody is straight eights, though rather freely interpreted rhythmically."
-	url="http://www.youtube.com/watch?v=Iq0XJCJ1Srw"
+	idyoutube="Iq0XJCJ1Srw"
 
 	uuid="13d57a4a-a26f-11df-8711-0019d11e5a41"
 }

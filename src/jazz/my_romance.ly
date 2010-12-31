@@ -56,14 +56,14 @@ myVoice=\relative c' {
 
 	%% A part
 	g2. e8 f | g4 a b c | c2. b8 a | g2. c,8 d |
-	e2. c8 d | e4 f g a | a2. g8 f | e2. g4 | 
+	e2. c8 d | e4 f g a | a2. g8 f | e2. g4 |
 
 	c,2. c'4 | g2. g4 | c,2. c'4 | g2. c4 |
 	b2. a4 | g2. c4 | b2. a4 | g2. e8 f |
 
 	%% B part
 	g2. e8 f | g4 a b c | c2. b8 a | g2. c,8 d |
-	e2. c8 d | e4 f g a | a2. g8 f | e2. f8 g | 
+	e2. c8 d | e4 f g a | a2. g8 f | e2. f8 g |
 
 	a2. f8 g | a4 b c d | e e e e | c2. c8 d |
 	e2. c8 d | e4 c4 a4 f4 | c'1~ | c2. r4 |

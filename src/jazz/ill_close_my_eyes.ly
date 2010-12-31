@@ -7,16 +7,17 @@
 	piece="Med Swing"
 	structure="AB"
 
-	completion="4"
+	completion="5"
 	uuid="e7277c50-a26e-11df-863c-0019d11e5a41"
 
 %%	url_lyrics="http://lyricsplayground.com/alpha/songs/i/illclosemyeyes.shtml"
-%%	url_performance="http://www.youtube.com/watch?v=u6lXbfx1hHw"
-%%	url_performance="http://www.youtube.com/watch?v=7Oh-Dl-KbF0"
+%%	idyoutube="u6lXbfx1hHw"
+	idyoutube="7Oh-Dl-KbF0"
 }
 
 %{
 	TODO:
+	- find this standard in one of my fake/real books and check it out.
 	- fix up the lyrics
 	- the chords seem kind of static (two E7 in a row, two fmaj7 in a row). Shouldn't
 		there be more II->V there ?
@@ -40,9 +41,9 @@ myChords=\chordmode {
 		}
 		{
 			a1:m7.5- | d1:7.9- | \myEndLine
-			g1:m7 | c1:7 | f1:maj7 | f1:maj7 | \myEndLine
-			%% turn around is:
-			%% f2:maj7 d2:7 | g2:m7 c2:7 |
+			g1:m7 | c1:7 | f2:maj7 d2:7 | g2:m7 c2:7 | \myEndLine
+			%% an ending would be:
+			%% f1:maj7 | f1:maj7 | \myEndLine
 		}
 	}
 

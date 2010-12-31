@@ -36,7 +36,7 @@ chordsMain=\chordmode {
 	\startChords
 
 	\startSong
-	
+
 	\startIntro
 
 	bes1. | bes |
@@ -115,7 +115,7 @@ voiceBass=\relative c' {
 	\repeat volta 2 {
 		bes, f' d'~ d f, d' bes, f' d'~ d f, d' |
 		g,, d' g~ g d g g, d' g~ g d g |
-		ees, bes' g'~ g bes, g' ees, bes' g'~ g bes, g' | 
+		ees, bes' g'~ g bes, g' ees, bes' g'~ g bes, g' |
 		d, a' d~ d a d d, a' d a' f d |
 		c,[ g' c] ees[ g c] c,[ g' c g] |
 		g, d' g bes d f g,, d' g f' d bes |
@@ -184,7 +184,7 @@ myLyrics=\lyricmode {
 	And the wind be -- gins to moan.
 
 %%	up to till point it is done...
- 
+
 	Memory
 	All alone in the moonlight
 	I can smile at the old days

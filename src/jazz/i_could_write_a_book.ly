@@ -23,7 +23,7 @@ myChords=\chordmode {
 	\startSong
 
 	\partial 2 r2 |
-	
+
 	\startPart
 
 	\repeat volta 2 {

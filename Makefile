@@ -5,7 +5,7 @@
 # should we show commands executed ?
 DO_MKDBG:=0
 # should we depend on the date of the makefile itself ?
-DO_MAKEDEPS:=1
+DO_MAKEDEPS:=0
 # should we make dependency files ?
 DO_LYD:=1
 # should we make pds ?
@@ -25,7 +25,7 @@ USE_LYD:=1
 # where are the sources located ?
 SRC_FOLDER:=src
 
-# here begins the makefile... 
+# here begins the makefile...
 
 ifneq ($(filter clean_git,$(MAKECMDGOALS)),)
 USE_LYD:=0
@@ -161,11 +161,11 @@ check_extra_files:
 .PHONY: check_comments
 check_comments:
 	$(info doing [$@])
-	-@grep "%%" $(FILES_LY) 
+	-@grep "%%" $(FILES_LY)
 .PHONY: check_composer_and
 check_composer_and:
 	$(info doing [$@])
-	-@grep "composer=\".* and .*\"" $(FILES_LY) 
+	-@grep "composer=\".* and .*\"" $(FILES_LY)
 .PHONY: check_min_chords
 check_min_chords:
 	$(info doing [$@])
@@ -173,7 +173,7 @@ check_min_chords:
 .PHONY: check_ws
 check_ws:
 	$(info doing [$@])
-	-@./scripts/pgrep.pl "  | $$|\w\t|\t$$|\*\\d\:" $(FILES_LY) $(FILES_LYI) 
+	-@./scripts/pgrep.pl "  | $$|\w\t|\t$$|\*\\d\:" $(FILES_LY) $(FILES_LYI)
 .PHONY: check_uuid
 check_uuid:
 	$(info doing [$@])

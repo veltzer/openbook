@@ -38,29 +38,29 @@
 	\key c \major
 }
 \new Lyrics \lyricsto "melody" {
-	Ain't no sunshine when she's gone. 
-	It's not warm when she's away. 
-	Ain't no sunshine when she's gone 
-	And she's always gone too long anytime she goes away. 
+	Ain't no sunshine when she's gone.
+	It's not warm when she's away.
+	Ain't no sunshine when she's gone
+	And she's always gone too long anytime she goes away.
 
-	Wonder this time where she's gone, 
-	Wonder if she's gone to stay 
-	Ain't no sunshine when she's gone 
-	And this house just ain't no home anytime she goes away. 
+	Wonder this time where she's gone,
+	Wonder if she's gone to stay
+	Ain't no sunshine when she's gone
+	And this house just ain't no home anytime she goes away.
 
-	And I know, I know, I know, I know, I know, 
-	I know, I know, I know, I know, I know, I know, I know, 
-	I know, I know, I know, I know, I know, I know, 
-	I know, I know, I know, I know, I know, I know, I know, I know 
+	And I know, I know, I know, I know, I know,
+	I know, I know, I know, I know, I know, I know, I know,
+	I know, I know, I know, I know, I know, I know,
+	I know, I know, I know, I know, I know, I know, I know, I know
 
-	Hey, I ought to leave the young thing alone, 
-	But ain't no sunshine when she's gone, only darkness everyday. 
-	Ain't no sunshine when she's gone, 
-	And this house just ain't no home anytime she goes away. 
+	Hey, I ought to leave the young thing alone,
+	But ain't no sunshine when she's gone, only darkness everyday.
+	Ain't no sunshine when she's gone,
+	And this house just ain't no home anytime she goes away.
 
-	Anytime she goes away. 
-	Anytime she goes away. 
-	Anytime she goes away. 
+	Anytime she goes away.
+	Anytime she goes away.
+	Anytime she goes away.
 	Anytime she goes away.
 }
 >>
