@@ -33,7 +33,7 @@ myChords=\chordmode {
 
 	\mark "Intro"
 	\startPart
-	
+
 	\partial 4 r4
 
 	a2.:m | d:m7 | g:7 | c:maj7 |

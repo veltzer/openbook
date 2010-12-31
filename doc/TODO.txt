@@ -1,8 +1,11 @@
-now:
-====
-- next tunes:
-	illclose my eyes
-	summer time
+tunes:
+======
+- slihot (match lyrics to the tune).
+- illclose my eyes
+- summer time
+
+importing:
+==========
 - import only things which are not in the database.
 - import my own recordings into the database - look at the tags for more data.
 
@@ -113,5 +116,3 @@ content
 =======
 - review the speed of the pieces and adjust them
 	(for instance: nature boy / Eben Ahbez is a little too fast).
-- why is the midi generation of lilypond not take voltas into account well ?
-	report this as a bug and have it fixed...
