@@ -223,7 +223,7 @@ sub handler() {
 		foreach $epdf (@epdfs_abs) {
 			insert_blob(
 				$epdfs_base[$counter],
-				$hash->{'uuid'}.'-epdf'.($counter+1),
+				$hash->{'uuid'}.'-epdf'.$counter,
 				'application/pdf',
 				$epdf
 			);
