@@ -89,10 +89,11 @@ sub handler() {
 	if($do_epdfs) {
 		my($more)=1;
 		while($more) {
-			my($curr_name)=$name.'-epdf-'.$epdfs.'.pdf';
-			if(-e $path.$curr_name) {
-				push(@epdfs_abs,$path.$curr_name);
-				push(@epdfs_base,$curr_name);
+			my($curr_base)=$name.'-epdf-'.$epdfs.'.pdf';
+			my($curr_abs)='epdfs/'.$curr_base;
+			if(-f $curr_abs) {
+				push(@epdfs_base,$curr_base);
+				push(@epdfs_abs,$curr_abs);
 				$epdfs++;
 			} else {
 				$more=0;
@@ -105,7 +106,7 @@ sub handler() {
 	my(@pngs_abs);
 	my(@pngs_base);
 	my($file_to_test)=$path.$name.'.png';
-	if(-e $file_to_test) {
+	if(-f $file_to_test) {
 		# if we only have one png...
 		if($debug) {
 			print 'in the first part of the branch ['.$file_to_test.']'."\n";
@@ -121,7 +122,7 @@ sub handler() {
 		my($more)=1;
 		my($counter)=1;
 		while($more) {
-			if(-e $path.$name.'-page'.$counter.'.png') {
+			if(-f $path.$name.'-page'.$counter.'.png') {
 				push(@pngs_abs,$path.$name.'-page'.$counter.'.png');
 				push(@pngs_base,$name.'-page'.$counter.'.png');
 				$counter++;
