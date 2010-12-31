@@ -69,12 +69,12 @@ myVoice=\relative aes {
 		r4 aes8 bes c ees f aes | bes bes4 aes8 g2 | aes8 aes4 g8 f2 | g8 g4 f8 ees2 |
 		r4 f ees des | aes'2 aes,8 bes4. |
 	} \alternative {
-		{ c1 ~ | c2 bes | }
+		{ c1 ~ | c2 r | }
 		{ aes1 | r4 bes c ees | }
 	}
 	%% B part
 	g4 aes g aes | bes aes2 g4 | bes aes2 g4 | bes aes2 f4 |
-	aes g2 f4 | aes g2 e4 | c1 ~ | c2 bes |
+	aes g2 f4 | aes g2 e4 | c1 ~ | c2 r |
 	%% A part
 	r4 aes8 bes c ees f aes | bes bes4 aes8 g2 | aes8 aes4 g8 f2 | g8 g4 f8 ees2 |
 	r4 f ees des | aes'2 aes,8 bes4. | aes1 | r |
@@ -92,34 +92,39 @@ myLyrics=\lyricmode {
 %%	I’d like to add his initial to my monogram
 %%	Tell me, where is the shepherd for this lost lamb?
 
-	There’s a some -- bo -- dy I’m long -- in’ to see
+	There’s a some -- bo -- dy I’m lon -- gin’ to see
 	I hope that he, turns out to be
-	Someone who’ll watch over me
+	Some -- one who’ll watch o -- ver me
 
-	I’m a little lamb who’s lost in the wood
-	I know I could, always be good
-	To one who’ll watch over me
+	me
 
-	Although he may not be the man some
-	Girls think of as handsome
-	To my heart he carries the key
+	Al -- though he may not be the man some
+	Girls think of as hand -- some
+	To my heart he car -- ries the key
 
 	Won’t you tell him please to put on some speed
-	Follow my lead, oh, how I need
-	Someone to watch over me
+	Fol -- low my lead, oh, how I need
+	Some -- one to watch o -- ver me
 
-	Won’t you tell him please to put on some speed
-	Follow my lead, oh, how I need
-	Someone to watch over me
+%%	Won’t you tell him please to put on some speed
+%%	Follow my lead, oh, how I need
+%%	Someone to watch over me
 
-	Someone to watch over me
+%%	Someone to watch over me
 }
+myLyricsmore=\lyricmode {
+	I’m a lit -- tle lamb who’s lost in the wood
+	I know I could, al -- ways be good
+	To one who’ll watch o -- ver %% me
+}
+
 %% score for printing
 \score {
 	<<
 		\new ChordNames="mychords" \myChords
 		\new Voice="myvoice" \myVoice
-%%		\new Lyrics \lyricsto "myvoice" \myLyrics
+		\new Lyrics \lyricsto "myvoice" \myLyrics
+		\new Lyrics \lyricsto "myvoice" \myLyricsmore
 	>>
 	\layout {
 	}
