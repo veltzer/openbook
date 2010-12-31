@@ -10,15 +10,28 @@ do a general cache (~/.make_cache) script which will run commands for me and wil
 results according to the command line and md5 sum of the source and deps.
 this way changes to the makefile will not do a full recompile.
 
+epdfs:
+======
+The idea is to have external pdfs derived from various sources (especially real books
+that I have in my collection but also scanned from 'real' books) that will be stored along
+with my tunes.
+These could be imported into the database and shown to other users of the application.
+
+Things to improve:
+- add meta data to these epdfs:
+	Where do they come from ? (which real book?).
+	What page ?
+- support not just the pdf format but other formats as well.
+
 tunes:
 ======
 - slihot (match lyrics to the tune).
-- illclose my eyes
 - summer time
 
 importing:
 ==========
 - import only things which are not in the database.
+- import in the order of the tune names.
 - import my own recordings into the database - look at the tags for more data.
 
 parsing lilypond:
