@@ -20,7 +20,7 @@ use Perl6::Slurp qw();
 use Parse::RecDescent qw();
 
 my($debug)=0;
-my($debug_blobs)=1;
+my($debug_blobs)=0;
 my($report)=1;
 my($do_import_blobs)=1;
 my($do_epdfs)=1;
@@ -222,7 +222,7 @@ sub handler() {
 		foreach $epdf (@epdfs_abs) {
 			insert_blob(
 				$epdfs_base[$counter],
-				$hash->{'uuid'}.'-png'.($counter+1),
+				$hash->{'uuid'}.'-epdf'.($counter+1),
 				'application/pdf',
 				$epdf
 			);
