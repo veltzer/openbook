@@ -5,7 +5,7 @@
 # should we show commands executed ?
 DO_MKDBG:=0
 # should we depend on the date of the makefile itself ?
-DO_MAKEDEPS:=0
+DO_MAKEDEPS:=1
 # should we make dependency files ?
 DO_LYD:=1
 # should we make pds ?
