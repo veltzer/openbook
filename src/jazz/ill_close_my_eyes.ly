@@ -10,6 +10,8 @@
 	completion="5"
 	uuid="e7277c50-a26e-11df-863c-0019d11e5a41"
 
+	remark="consulted the real book, volume III, page 130"
+
 %%	url_lyrics="http://lyricsplayground.com/alpha/songs/i/illclosemyeyes.shtml"
 %%	idyoutube="u6lXbfx1hHw"
 	idyoutube="7Oh-Dl-KbF0"
@@ -17,10 +19,7 @@
 
 %{
 	TODO:
-	- find this standard in one of my fake/real books and check it out.
 	- fix up the lyrics
-	- the chords seem kind of static (two E7 in a row, two fmaj7 in a row). Shouldn't
-		there be more II->V there ?
 %}
 
 myChords=\chordmode {
@@ -31,13 +30,13 @@ myChords=\chordmode {
 	\partial 8*5 r8 r4 r4
 	\repeat volta 2 {
 		f1:maj7 | f1:maj7 | e1:m7.5- | a1:7.9- | \myEndLine
-		d1:m7 | d1:m7 | c1:m7 | f1:7 | \myEndLine
+		d1:m7 | g:7 | c1:m7 | f1:7 | \myEndLine
 		bes1:maj7 | ees1:7 |
 	}
 	\alternative {
 		{
 			f1:maj7 | f1:maj7 | \myEndLine
-			e1:7 | e1:7 | a2:m7 d2:7 | g2:m7 c2:7 | \myEndLine
+			b:m7.5- | e1:7 | a2:m7 aes:dim | g2:m7 ges2:7/c | \myEndLine
 		}
 		{
 			a1:m7.5- | d1:7.9- | \myEndLine
@@ -56,11 +55,11 @@ myVoice=\relative c' {
 	\tempo "Allegro" 4 = 150
 	\time 4/4
 	\key f \major
-	\partial 8*5 c8 bes'4 a |
+	\partial 8*5 c8 bes'4 c8 a ~ |
 	\repeat volta 2 {
-		a1 | r4 r8 c, bes'4 a | a4 g e2 | r4 r8 e g4 fis |
-		f1 | r4 r8 f g4 f | ees1 | r2 r4 ees |
-		d f c'2 | r4 r8 bes f4 g |
+		a1 | r4 r8 c, bes'4 a | a4 g8 e8 ~ e2 | r4 a, g'4 a8 f ~ |
+		f1 | r4 r8 f a4 f8 ees8 ~ | ees1 | r2 r4 ees |
+		des d c'2 | r4 r8 bes f4 g |
 	}
 	\alternative {
 		{
