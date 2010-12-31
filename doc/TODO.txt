@@ -6,6 +6,10 @@ This probably means creating a wrapper perl script to run lily (which is fine...
 Make that script collect the standard error and keep it in it's belly to only
 be printed if the childs exit code is an error...
 
+do a general cache (~/.make_cache) script which will run commands for me and will save
+results according to the command line and md5 sum of the source and deps.
+this way changes to the makefile will not do a full recompile.
+
 tunes:
 ======
 - slihot (match lyrics to the tune).
