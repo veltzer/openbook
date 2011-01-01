@@ -1,15 +1,3 @@
-important:
-==========
-build system fix - when there is an error in the lily files then the error gets
-printed to a file in /tmp. Fix it and have the errors printed to the screen.
-This probably means creating a wrapper perl script to run lily (which is fine...).
-Make that script collect the standard error and keep it in it's belly to only
-be printed if the childs exit code is an error...
-
-do a general cache (~/.make_cache) script which will run commands for me and will save
-results according to the command line and md5 sum of the source and deps.
-this way changes to the makefile will not do a full recompile.
-
 epdfs:
 ======
 The idea is to have external pdfs derived from various sources (especially real books
@@ -18,7 +6,9 @@ with my tunes.
 These could be imported into the database and shown to other users of the application.
 
 Things to improve:
-- add meta data to these epdfs:
+- bring more epdfs for the tunes that I already have.
+	document how to find those epdfs.
+- bring the meta data from the epdfs into the database and show them.
 	Where do they come from ? (which real book?).
 	What page ?
 - support not just the pdf format but other formats as well.
@@ -40,6 +30,9 @@ parsing lilypond:
 
 build system
 ============
+- do a general cache (~/.make_cache) script which will run commands for me and will save
+results according to the command line and md5 sum of the source and deps.
+this way changes to the makefile will not do a full recompile.
 - make each lily file stand on it's own so that people could use it.
 	This means stopping using the lilypond include feature and starting
 	to use some kind of marcro processor (with dependency analysis ofcourse).
