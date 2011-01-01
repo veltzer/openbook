@@ -24,6 +24,8 @@ DO_OGG:=1
 USE_LYD:=1
 # where are the sources located ?
 SRC_FOLDER:=src
+# what is the lilypond that we are running?
+LILYPOND:=./scripts/lilypond_wrapper.pl
 
 # here begins the makefile...
 
@@ -218,16 +220,16 @@ check_all: check_empty_copyright check_common check_ws check_composer_and check_
 # rules for creating pdf, ps, png and midi directly from the ly files,
 # they are not used as we are creating everything together...
 #$(FILES_PDF): %.pdf: %.ly
-#	lilypond --pdf $(LYFLAGS) -o /tmp/foo $<
+#	$(LILYPOND) --pdf $(LYFLAGS) -o /tmp/foo $<
 #	mv /tmp/foo.pdf $@
 #$(FILES_PNG): %.png: %.ly
-#	lilypond --png $(LYFLAGS) -o /tmp/foo $<
+#	$(LILYPOND) --png $(LYFLAGS) -o /tmp/foo $<
 #	mv /tmp/foo.png $@
 #$(FILES_PS): %.ps: %.ly
-#	lilypond --ps $(LYFLAGS) -o /tmp/foo $<
+#	$(LILYPOND) --ps $(LYFLAGS) -o /tmp/foo $<
 #	mv /tmp/foo.ps $@
 #$(FILES_MIDI): %.midi: %.ly
-#	lilypond --pdf $(LYFLAGS) -o /tmp/foo $<
+#	$(LILYPOND) --pdf $(LYFLAGS) -o /tmp/foo $<
 #	mv /tmp/foo.midi $@
 # dependency for PNGs does not make sense since we do not know the file names...
 #$(FILES_PNG): %.png: %.stamp $(ALL_DEP)
@@ -241,13 +243,13 @@ $(FILES_MIDI): %.midi: %.stamp $(ALL_DEP)
 $(FILES_STAMP): %.stamp: %.ly $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)rm -f $(dir $@)$(basename $(notdir $@))-*.png $(dir $@)$(basename $(notdir $@)).{ps,pdf,midi}
-	$(Q)lilypond $(LYFLAGS) -o $(dir $@)$(basename $(notdir $@)) $< 2> /tmp/error
+	$(Q)$(LILYPOND) $(LYFLAGS) -o $(dir $@)$(basename $(notdir $@)) $< 2> /tmp/error
 	$(Q)touch $@
 
 #old rule
 #	rm -rf /tmp/folder
 #	mkdir /tmp/folder
-#	lilypond --png --pdf $(LYFLAGS) -o /tmp/folder/foo $<
+#	$(LILYPOND) --png --pdf $(LYFLAGS) -o /tmp/folder/foo $<
 #	mv /tmp/folder/foo.ps $(basename $<).ps
 #	mv /tmp/folder/foo.pdf $(basename $<).pdf
 #	mv /tmp/folder/foo.midi $(basename $<).midi
