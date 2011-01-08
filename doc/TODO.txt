@@ -1,3 +1,10 @@
+tunes:
+======
+- a fine romance (almost done).
+- slihot (match lyrics to the tune).
+- ill close my eyes (tune, lyrics and maybe chords).
+- summer time
+
 epdfs:
 ======
 The idea is to have external pdfs derived from various sources (especially real books
@@ -12,12 +19,6 @@ Things to improve:
 	Where do they come from ? (which real book?).
 	What page ?
 - support not just the pdf format but other formats as well.
-
-tunes:
-======
-- slihot (match lyrics to the tune).
-- ill close my eyes (tune, lyrics and maybe chords).
-- summer time
 
 importing:
 ==========
