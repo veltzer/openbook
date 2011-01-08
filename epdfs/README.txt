@@ -1,0 +1,11 @@
+How to collect these ?
+- go to:
+	~/links/topics_archive/music/jazz/collections
+	There you will find the 3 index files for the jazz real books and more.
+	RB1C.pdf  RB2C.pdf  RB3C.pdf
+	open them using document viewer on Ubuntu (gnome-open [filename]).
+	Then find the page and file you need it from.
+	Open it too using the same tool.
+	Then print to a file selecting only the page(s) you need.
+- scan from my own fakebooks.
+	I usually use xsane for this.

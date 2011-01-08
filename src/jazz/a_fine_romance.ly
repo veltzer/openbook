@@ -16,7 +16,7 @@
 	- add lyrics
 %}
 
-harmony=\chords {
+myChords=\chords {
 	\startChords
 
 	\startSong
@@ -42,9 +42,11 @@ harmony=\chords {
 	\endChords
 }
 
-tune={
+myVoice={
 	\key c \major
 	\time 4/4
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Allegro" 4 = 130
 	\partial 4 e'4 |
 	\repeat volta 2 {
 		c'1 | a'4 g'2 a'4 | b1 | b'4 a'2 b'4 |
@@ -62,4 +64,22 @@ tune={
 	}
 }
 
-\include "src/include/harmony_tune.lyi"
+%% score for printing
+\score {
+	<<
+		\new ChordNames="mychords" \myChords
+		\new Voice="myvoice" \myVoice
+	>>
+	\layout {
+	}
+}
+%% score for midi
+\score {
+	\unfoldRepeats
+	<<
+		\new ChordNames="mychords" \myChords
+		\new Voice="myvoice" \myVoice
+	>>
+	\midi {
+	}
+}
