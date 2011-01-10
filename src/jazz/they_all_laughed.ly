@@ -13,7 +13,7 @@
 
 	completion="4"
 	uuid="fd79d974-e230-42f5-8067-709d6a97e2d6"
-	lyrics_url="http://www.sing365.com/music/lyric.nsf/They-All-Laughed-lyrics-Ella-Fitzgerald/2123DA2C32C02AF848256AAB000AB847"
+	lyricsurl="http://www.sing365.com/music/lyric.nsf/They-All-Laughed-lyrics-Ella-Fitzgerald/2123DA2C32C02AF848256AAB000AB847"
 
 }
 %{
