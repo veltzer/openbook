@@ -13,3 +13,4 @@ src/*/*.stamp
 src/*/*.wav
 src/*/*.mp3
 src/*/*.ogg
+src/*/*.ly

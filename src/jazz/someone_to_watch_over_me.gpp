@@ -1,0 +1,140 @@
+#include "src/include/common.lyi"
+\header {
+	title="Someone To Watch Over Me"
+	subtitle=""
+	composer="George Gershwin"
+	poet="Ira Gershwin"
+	style="Jazz Ballad"
+	piece="Jazz Ballad"
+
+	structure="AABA"
+
+	completion="5"
+	uuid="75cbb354-1411-11e0-9a9e-0019d11e5a41"
+}
+
+%{
+	TODO:
+	- do the intro.
+	- match the other verse lyrics to the melody.
+	- fill in the copyright.
+	- add performances that I like.
+%}
+myChords=\chordmode {
+	\startChords
+
+	\startSong
+
+	\mark "A"
+	\startPart
+	\repeat volta 2 {
+		aes2:maj7 aes:7 | d:m7.5- des:dim | c:m7 b:dim | bes:m6 c4:m7 f:7.5+ | \myEndLine
+		bes2:m7 c4:m7 des:6 | d2:dim ees:7.4 |
+	} \alternative {
+		{
+			c:m7 f:7 | bes:m7 ees:7 | \myEndLine
+		}
+		{
+			aes1:maj7 | ees2:m7 aes:7 | \myEndLine
+		}
+	}
+	\endPart
+
+	\mark "B"
+	\startPart
+		des1:maj7 | des1:maj7 | des2:maj7 d:dim | aes1:maj7/ees | \myEndLine
+		d:m7.5- | g:7 | c2:m7 f:7.9- | bes:m7 ees:7.9- | \myEndLine
+	\endPart
+
+	\mark "A"
+	\startPart
+		aes2:maj7 aes:7 | d:m7.5- des:dim | c:m7 b:dim | bes:m6 c4:m7 f:7.5+ | \myEndLine
+		bes2:m7 c4:m7 des:6 | d2:dim ees:7.4 | aes:maj7 f:7 | bes:m7 ees:7 | \myEndLine
+	\endPart
+
+	\endSong
+
+	\endChords
+}
+
+myVoice=\relative aes {
+	\time 4/4
+	\key aes \major
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Andante" 4 = 92
+
+	%% A part
+	\repeat volta 2 {
+		r4 aes8 bes c ees f aes | bes bes4 aes8 g2 | aes8 aes4 g8 f2 | g8 g4 f8 ees2 |
+		r4 f ees des | aes'2 aes,8 bes4. |
+	} \alternative {
+		{ c1 ~ | c2 r | }
+		{ aes1 | r4 bes c ees | }
+	}
+	%% B part
+	g4 aes g aes | bes aes2 g4 | bes aes2 g4 | bes aes2 f4 |
+	aes g2 f4 | aes g2 e4 | c1 ~ | c2 r |
+	%% A part
+	r4 aes8 bes c ees f aes | bes bes4 aes8 g2 | aes8 aes4 g8 f2 | g8 g4 f8 ees2 |
+	r4 f ees des | aes'2 aes,8 bes4. | aes1 | r |
+}
+
+myLyrics=\lyricmode {
+%%	There’s a saying old, says that love is blind
+%%	Still we’re often told, "seek and ye shall find"
+%%	So I’m going to seek a certain lad I’ve had in mind
+
+%%	Looking everywhere, haven’t found him yet
+%%	He’s the big affair I cannot forget
+%%	Only man I ever think of with regret
+
+%%	I’d like to add his initial to my monogram
+%%	Tell me, where is the shepherd for this lost lamb?
+
+	There’s a some -- bo -- dy I’m lon -- gin’ to see
+	I hope that he, turns out to be
+	Some -- one who’ll watch o -- ver me
+
+	me
+
+	Al -- though he may not be the man some
+	Girls think of as hand -- some
+	To my heart he car -- ries the key
+
+	Won’t you tell him please to put on some speed
+	Fol -- low my lead, oh, how I need
+	Some -- one to watch o -- ver me
+
+%%	Won’t you tell him please to put on some speed
+%%	Follow my lead, oh, how I need
+%%	Someone to watch over me
+
+%%	Someone to watch over me
+}
+myLyricsmore=\lyricmode {
+	I’m a lit -- tle lamb who’s lost in the wood
+	I know I could, al -- ways be good
+	To one who’ll watch o -- ver %% me
+}
+
+%% score for printing
+\score {
+	<<
+		\new ChordNames="mychords" \myChords
+		\new Voice="myvoice" \myVoice
+		\new Lyrics \lyricsto "myvoice" \myLyrics
+		\new Lyrics \lyricsto "myvoice" \myLyricsmore
+	>>
+	\layout {
+	}
+}
+%% score for midi
+\score {
+	\unfoldRepeats
+	<<
+		\new ChordNames="mychords" \myChords
+		\new Voice="myvoice" \myVoice
+	>>
+	\midi {
+	}
+}
