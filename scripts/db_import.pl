@@ -19,7 +19,7 @@ use File::Basename qw();
 use Perl6::Slurp qw();
 use Parse::RecDescent qw();
 
-my($debug)=0;
+my($debug)=1;
 my($debug_blobs)=0;
 my($report)=1;
 my($do_import_blobs)=1;
@@ -78,6 +78,7 @@ sub handler() {
 	}
 	my($name,$path,$suffix)=File::Basename::fileparse($file,'.ly');
 	if($debug) {
+		print '===================================='."\n";
 		print 'name is ['.$name.']'."\n";
 		print 'path is ['.$path.']'."\n";
 		print 'suffix is ['.$suffix.']'."\n";
@@ -136,12 +137,21 @@ sub handler() {
 	my($hash)=get_meta_data($file);
 	if($limit_imports) {
 		if(!exists($hash->{'completion'})) {
+			if($debug) {
+				print 'not importing due to completion not there'."\n";
+			}
 			return;
 		}
 		if($hash->{'completion'}!=5) {
+			if($debug) {
+				print 'not importing due to completion!=5'."\n";
+			}
 			return;
 		}
 		if(exists($hash->{'dontimport'})) {
+			if($debug) {
+				print 'not importing due to dontimport'."\n";
+			}
 			return;
 		}
 	}
