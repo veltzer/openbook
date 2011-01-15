@@ -7,10 +7,26 @@ lilyfile: section(s)
 	$hash->{"inc"}=$inc;
 	$hash;
 }
-section: one_line_comment | block_comment | header | include | block
+section: one_line_double_comment | one_line_comment | block_comment | header | include | block
 
-one_line_comment: '%' anyoneline
-block_comment: '%{' statement(s?) '%}'
+one_line_double_comment: '%%' anyoneline
+one_line_comment: '%[^{]' anyoneline
+
+block_comment: '%{' no_block_statement(s?) '%}'
+{
+# this is fake code - do not remove it or this entire parsing will go away...
+	for(my($i)=0;$i<scalar(@item);$i++) {
+		my($curr)=$item[$i];
+	}
+}
+no_block_statement: /^[^%][^}][^\n]*\n/
+{
+# this is fake code - do not remove it or this entire parsing will go away...
+	for(my($i)=0;$i<scalar(@item);$i++) {
+		my($curr)=$item[$i];
+	}
+}
+
 header: '\header' '{' headerline(s?) '}'
 include: '\include' '"' filename '"' {
 	my($filename)=$item[3];
@@ -19,16 +35,17 @@ include: '\include' '"' filename '"' {
 block: before_block '{' block(s) '}' | statement(s?)
 
 # this is the inner stuff (no { or })
-headerline: assignment | one_line_comment
+headerline: assignment | one_line_double_comment | one_line_comment | block_comment
 assignment: var '=' '"' value '"'
 {
 	my($key)=$item[1];
 	my($val)=$item[4];
 	$hash->{$key}=$val;
+#	print "assignment for [$key,$val]\n";
 }
 
 statement: /[^{}\n]*\n/
-before_block: 'harmony=\chords' | 'tune=' | 'text=\lyricmode' | '\chordmode' | 'harmony=\new ChordNames \with' | '\score' | '\repeat volta 2' | '\midi' | '\layout' | '\alternative' | ''
+before_block: '\paper' | 'harmony=\chords' | 'tune=' | 'text=\lyricmode' | '\chordmode' | 'harmony=\new ChordNames \with' | '\score' | '\repeat volta 2' | '\midi' | '\layout' | '\alternative' | ''
 var: /[A-Za-z0-9_]+/
 filename: /[A-Za-z0-9_\/\.]+/
 anyoneline: /[^\n]+/

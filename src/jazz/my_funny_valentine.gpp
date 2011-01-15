@@ -1,4 +1,4 @@
-#include "src/include/common.lyi"
+#include "src/include/header.lyi"
 \header {
 	title="My Funny Valentine"
 	subtitle=""
@@ -13,6 +13,8 @@
 
 	idyoutube="jvXywhJpOKs"
 }
+
+#include "src/include/common.lyi"
 
 %{
 	TODO:
