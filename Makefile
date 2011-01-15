@@ -59,17 +59,18 @@ Q=@
 #.SILENT:
 endif # DO_MKDBG
 
-FILES_LY:=$(shell find $(SRC_FOLDER) -name "*.ly")
+FILES_GPP:=$(shell find $(SRC_FOLDER) -name "*.gpp")
 FILES_LYI:=$(shell find $(SRC_FOLDER) -name "*.lyi")
 
 FILES_LYD:=$(addsuffix .d,$(FILES_LY))
-FILES_PDF:=$(addsuffix .pdf,$(basename $(FILES_LY)))
-FILES_PS:=$(addsuffix .ps,$(basename $(FILES_LY)))
-FILES_MIDI:=$(addsuffix .midi,$(basename $(FILES_LY)))
-FILES_STAMP:=$(addsuffix .stamp,$(basename $(FILES_LY)))
-FILES_WAV:=$(addsuffix .wav,$(basename $(FILES_LY)))
-FILES_MP3:=$(addsuffix .mp3,$(basename $(FILES_LY)))
-FILES_OGG:=$(addsuffix .ogg,$(basename $(FILES_LY)))
+FILES_LY:=$(addsuffix .ly,$(basename $(FILES_GPP)))
+FILES_PDF:=$(addsuffix .pdf,$(basename $(FILES_GPP)))
+FILES_PS:=$(addsuffix .ps,$(basename $(FILES_GPP)))
+FILES_MIDI:=$(addsuffix .midi,$(basename $(FILES_GPP)))
+FILES_STAMP:=$(addsuffix .stamp,$(basename $(FILES_GPP)))
+FILES_WAV:=$(addsuffix .wav,$(basename $(FILES_GPP)))
+FILES_MP3:=$(addsuffix .mp3,$(basename $(FILES_GPP)))
+FILES_OGG:=$(addsuffix .ogg,$(basename $(FILES_GPP)))
 
 ifeq ($(DO_LYD),1)
 	ALL:=$(ALL) $(FILES_LYD)
@@ -115,8 +116,12 @@ all: $(ALL)
 .PHONY: stamp
 stamp: $(FILES_STAMP)
 
+.PHONY: ly
+ly: $(FILES_LY)
+
 .PHONY: debug
 debug:
+	$(info FILES_GPP is $(FILES_GPP))
 	$(info FILES_LY is $(FILES_LY))
 	$(info FILES_LYI is $(FILES_LYI))
 	$(info FILES_LYD is $(FILES_LYD))
@@ -159,61 +164,65 @@ clean_git_test:
 .PHONY: check_extra_files
 check_extra_files:
 	$(info doing [$@])
-	-@find -type f -and -not -name "Makefile" -and -not -path "./.git/*" -and -not -name "*.ly" -and -not -name "*.lyi" -and -not -name "*.txt" -and -not -name "*.ly.d" -and -not -name "*.pl" -and -not -name "*.grammer" -and -not -name "*.pdf" -and -not -name "*.ps" -and -not -name "*.midi" -and -not -name "*.stamp" -and -not -name ".gitignore" -and -not -name "*.wav" -and -not -name "*.mp3" -and -not -name "*.ogg" -and -not -name "*.png" -and -not -name "*.source"
+	-@find -type f -and -not -name "Makefile" -and -not -path "./.git/*" -and -not -name "*.gpp" -and -not -name "*.lyi" -and -not -name "*.txt" -and -not -name "*.ly.d" -and -not -name "*.pl" -and -not -name "*.grammer" -and -not -name "*.pdf" -and -not -name "*.ps" -and -not -name "*.midi" -and -not -name "*.stamp" -and -not -name ".gitignore" -and -not -name "*.wav" -and -not -name "*.mp3" -and -not -name "*.ogg" -and -not -name "*.png" -and -not -name "*.source" -and -not -name "*.ly"
 .PHONY: check_comments
 check_comments:
 	$(info doing [$@])
-	-@grep "%%" $(FILES_LY)
+	-@grep "%%" $(FILES_GPP)
 .PHONY: check_composer_and
 check_composer_and:
 	$(info doing [$@])
-	-@grep "composer=\".* and .*\"" $(FILES_LY)
+	-@grep "composer=\".* and .*\"" $(FILES_GPP)
 .PHONY: check_min_chords
 check_min_chords:
 	$(info doing [$@])
-	-@grep ":min" $(FILES_LY)
+	-@grep ":min" $(FILES_GPP)
 .PHONY: check_ws
 check_ws:
 	$(info doing [$@])
-	-@./scripts/pgrep.pl "  | $$|\w\t|\t$$|\*\\d\:" $(FILES_LY) $(FILES_LYI)
+	-@./scripts/pgrep.pl "  | $$|\w\t|\t$$|\*\\d\:" $(FILES_GPP) $(FILES_LYI)
 .PHONY: check_uuid
 check_uuid:
 	$(info doing [$@])
-	-@grep --files-without-match uuid $(FILES_LY)
+	-@grep --files-without-match uuid $(FILES_GPP)
 .PHONY: check_common
 check_common:
 	$(info doing [$@])
-	-@grep --files-without-match "common.lyi" $(FILES_LY)
+	-@grep --files-without-match "common.lyi" $(FILES_GPP)
 .PHONY: check_no_poet
 check_no_poet:
 	$(info doing [$@])
-	-@grep --files-without-match "poet=" $(FILES_LY)
+	-@grep --files-without-match "poet=" $(FILES_GPP)
 .PHONY: check_copyright
 check_copyright:
 	$(info doing [$@])
-	-@grep --files-without-match "copyright=" $(FILES_LY)
+	-@grep --files-without-match "copyright=" $(FILES_GPP)
 .PHONY: check_completion
 check_completion:
 	$(info doing [$@])
-	-@grep --files-without-match "completion=" $(FILES_LY)
+	-@grep --files-without-match "completion=" $(FILES_GPP)
 .PHONY: check_empty_copyright
 check_empty_copyright:
 	$(info doing [$@])
-	-@grep "copyright=\"\"" $(FILES_LY)
+	-@grep "copyright=\"\"" $(FILES_GPP)
 .PHONY: check_chordChanges
 check_chordChanges:
 	$(info doing [$@])
-	-@grep "chordChanges" $(FILES_LY)
+	-@grep "chordChanges" $(FILES_GPP)
 .PHONY: check_bar
 check_bar:
 	$(info doing [$@])
-	-@grep "\\\\bar" $(FILES_LY)
+	-@grep "\\\\bar" $(FILES_GPP)
 .PHONY: check_break
 check_break:
 	$(info doing [$@])
-	-@grep "\\\\break" $(FILES_LY)
+	-@grep "\\\\break" $(FILES_GPP)
+.PHONY: check_include
+check_include:
+	$(info doing [$@])
+	-@grep "\\\\include" $(FILES_GPP)
 .PHONY: check_all
-check_all: check_empty_copyright check_common check_ws check_composer_and check_extra_files check_min_chords check_uuid check_chordChanges check_bar check_break check_completion
+check_all: check_empty_copyright check_common check_ws check_composer_and check_extra_files check_min_chords check_uuid check_chordChanges check_bar check_break check_completion check_include
 
 # rules
 
@@ -255,6 +264,11 @@ $(FILES_STAMP): %.stamp: %.ly $(ALL_DEP)
 #	mv /tmp/folder/foo.midi $(basename $<).midi
 #	touch $@
 #rm -rf /tmp/folder
+$(FILES_LY): %.ly: %.gpp $(ALL_DEP)
+	$(info doing [$@])
+	$(Q)rm -f $@
+	$(Q)gpp -I/usr/share/lilypond/2.12.3/ly -I. -U "" "" "(" "," ")" "(" ")" "#" "UNRELIABLE" -M "#" "\n" " " " " "\n" "(" ")" -o $@ $<
+	$(Q)chmod 444 $@
 $(FILES_LYD): %.ly.d: %.ly $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)./scripts/lilydep.pl $< $@ $(basename $<).stamp $(basename $<).pdf $(basename $<).ps $(basename $<).midi

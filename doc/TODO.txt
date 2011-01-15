@@ -32,6 +32,8 @@ parsing lilypond:
 
 build system
 ============
+- add support for deriving gpp dependencies (a simple perl script).
+	use it to generate dependencies and analyze them.
 - do a general cache (~/.make_cache) script which will run commands for me and will save
 results according to the command line and md5 sum of the source and deps.
 this way changes to the makefile will not do a full recompile.
