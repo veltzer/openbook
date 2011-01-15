@@ -6,6 +6,8 @@
 DO_MKDBG:=0
 # should we depend on the date of the makefile itself ?
 DO_MAKEDEPS:=1
+# should we make the ly files ?
+DO_LY:=1
 # should we make dependency files ?
 DO_LYD:=1
 # should we make pds ?
@@ -72,6 +74,10 @@ FILES_WAV:=$(addsuffix .wav,$(basename $(FILES_GPP)))
 FILES_MP3:=$(addsuffix .mp3,$(basename $(FILES_GPP)))
 FILES_OGG:=$(addsuffix .ogg,$(basename $(FILES_GPP)))
 
+ifeq ($(DO_LY),1)
+	ALL:=$(ALL) $(FILES_LY)
+	CLEAN:=$(CLEAN) $(FILES_LY)
+endif
 ifeq ($(DO_LYD),1)
 	ALL:=$(ALL) $(FILES_LYD)
 	CLEAN:=$(CLEAN) $(FILES_LYD)
