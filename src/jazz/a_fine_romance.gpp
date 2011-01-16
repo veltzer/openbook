@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="A Fine Romance"
 	composer="Jerome Kern"
 	poet="Dorothy Fields"
@@ -10,6 +11,7 @@
 	completion="0"
 	uuid="7c9691e6-a26e-11df-8418-0019d11e5a41"
 }
+jazzTune
 
 %{
 	TODO:

@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="Once I Loved"
 	composer="Antonio Carlos Jobim"
 	poet="Vinicius DeMoraes"
@@ -9,6 +10,7 @@
 	completion="0"
 	uuid="18294374-a26f-11df-a5f0-0019d11e5a41"
 }
+jazzTune
 
 harmony=\chords {
 	\startChords

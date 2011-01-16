@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="בשדה ירוק"
 	subtitle=""
 	composer="דני סנדרסון"
@@ -15,6 +16,7 @@
 
 	uuid="42424480-a26f-11df-abb4-0019d11e5a41"
 }
+jazzTune
 
 %{
 	TODO:

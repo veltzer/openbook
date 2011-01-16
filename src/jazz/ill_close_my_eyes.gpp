@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="I'll Close My Eyes"
 	composer="Billy Reid"
 	poet="Buddy Kaye"
@@ -16,6 +17,7 @@
 %%	idyoutube="u6lXbfx1hHw"
 	idyoutube="7Oh-Dl-KbF0"
 }
+jazzTune
 
 %{
 	TODO:

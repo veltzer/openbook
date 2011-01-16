@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="I Could Write A Book"
 	subtitle="From 'Pal Joey'"
 	composer="Richard Rodgers"
@@ -12,6 +13,7 @@
 
 	uuid="e00ddbf8-a26e-11df-92da-0019d11e5a41"
 }
+jazzTune
 
 %{
 	TODO:

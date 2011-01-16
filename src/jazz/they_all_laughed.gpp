@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="They All Laughed"
 	subtitle=""
 	composer="George Gershwin"
@@ -16,6 +17,7 @@
 	lyricsurl="http://www.sing365.com/music/lyric.nsf/They-All-Laughed-lyrics-Ella-Fitzgerald/2123DA2C32C02AF848256AAB000AB847"
 
 }
+jazzTune
 
 %{
 	TODO:

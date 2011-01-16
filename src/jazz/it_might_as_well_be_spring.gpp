@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="It might as well be spring"
 	composer="Richard Rogers"
 	poet="Oscar Hammerstein"
@@ -9,6 +10,7 @@
 	completion="0"
 	uuid="f4f39800-a26e-11df-b97a-0019d11e5a41"
 }
+jazzTune
 
 tune=\relative d' {
 	\time 4/4

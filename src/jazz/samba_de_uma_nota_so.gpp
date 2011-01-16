@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header{
+	default_header
 	title="One Note Samba"
 	subtitle="Samba de uma nota so"
 	composer="Antonio Carlos Jobim"
@@ -11,6 +12,7 @@
 	completion="0"
 	uuid="21bc8284-a26f-11df-a829-0019d11e5a41"
 }
+jazzTune
 
 tune={
 	\time 4/4

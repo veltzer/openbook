@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header{
+	default_header
 	title="Desafinado"
 	subtitle="Slightly Out Of Tune"
 	composer="Antonio Carlos Jobim"

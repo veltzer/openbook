@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="I Remember Clifford"
 	composer="Benny Golson"
 	style="Jazz"
@@ -8,6 +9,7 @@
 	completion="0"
 	uuid="efea8972-a26e-11df-af8e-0019d11e5a41"
 }
+jazzTune
 
 tune=\relative c'' {
 	\key c \major

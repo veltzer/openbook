@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="Watermelon Man"
 	subtitle=""
 	composer="Herbie Hancock"
@@ -11,6 +12,7 @@
 	completion="5"
 	uuid="359f7428-a26f-11df-ad8c-0019d11e5a41"
 }
+jazzTune
 
 %{
 	TODO:

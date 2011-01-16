@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="Lullaby of birdland"
 	composer="George Shearing"
 	style="Jazz"
@@ -8,6 +9,7 @@
 	completion="0"
 	uuid="f9668406-a26e-11df-8542-0019d11e5a41"
 }
+jazzTune
 
 tune=\relative c''{
 	\time 4/4

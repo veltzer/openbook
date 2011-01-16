@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="Autumn Leaves"
 	subtitle="Les Feuilles Mortes"
 	composer="Joseph Kosma"
@@ -15,6 +16,7 @@
 	completion="5"
 	uuid="8c35acf6-a7c1-11df-9040-0019d11e5a41"
 }
+jazzTune
 
 %{
 	TODO:

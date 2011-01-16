@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="Have you met Miss Jones"
 	composer="Richard Rogers"
 	poet="Lorenz Hart"
@@ -9,6 +10,7 @@
 	completion="0"
 	uuid="fe106f6c-a26e-11df-abb3-0019d11e5a41"
 }
+jazzTune
 
 %{
 	TODO:

@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="Six to Diminished scale exercises"
 	style="Jazz"
 	piece="Upbeat Jazz"

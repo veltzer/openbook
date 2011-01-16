@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="שיר ההד"
 	subtitle=""
 	composer="יוחנן זראי"
@@ -15,6 +16,7 @@
 
 	uuid="56513346-a26f-11df-b591-0019d11e5a41"
 }
+jazzTune
 
 %{
 	TODO:
