@@ -1,7 +1,6 @@
 urgent:
 =======
 - do the global definition too (jazzGlobal).
-- load this up to git hub and make a link to it from my music page.
 
 tunes:
 ======
