@@ -19,7 +19,7 @@ use File::Basename qw();
 use Perl6::Slurp qw();
 use Parse::RecDescent qw();
 
-my($debug)=1;
+my($debug)=0;
 my($debug_blobs)=0;
 my($report)=1;
 my($do_import_blobs)=1;
