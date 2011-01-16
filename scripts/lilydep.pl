@@ -11,22 +11,22 @@ use Parse::RecDescent qw();
 my($debug)=0;
 
 if(@ARGV<3) {
-	die("usage: infile outfile [deps files...]");
+	die('usage: infile outfile [deps files...]');
 }
 my($infile)=$ARGV[0];
 my($outfile)=$ARGV[1];
-my($targets)=join(" ",@ARGV[2..$#ARGV]);
+my($targets)=join(' ',@ARGV[2..$#ARGV]);
 
 if($debug) {
-	print "infile is [$infile]\n";
-	print "outfile is [$outfile]\n";
-	print "targets is [$targets]\n";
+	print 'infile is ['.$infile.']'."\n";
+	print 'outfile is ['.$outfile.']'."\n";
+	print 'targets is ['.$targets.']'."\n";
 }
 
 my($grammer);
-my($grammer_file)="data/lilypond.grammer";
+my($grammer_file)='scripts/lilypond.grammer';
 $grammer=Perl6::Slurp::slurp($grammer_file);
-#print "grammer is $grammer";
+#print 'grammer is '.$grammer."\n";
 $::RD_HINT=1;
 $::RD_WARN=1;
 #$::RD_TRACE=1;
@@ -36,14 +36,14 @@ $data=Perl6::Slurp::slurp($infile);
 my($parser)=Parse::RecDescent->new($grammer);;
 my($ret)=$parser->lilyfile(\$data);
 if(!$ret) {
-	die("ERROR!");
+	die('ERROR!');
 }
 # check that there is no more data which is not parsed...
 if($data!~/^\s*/) {
-	die("rest of data is [$data]");
+	die('rest of data is ['.$data.']');
 }
 
-open(FILE,"> ".$outfile) || die("unable to open file for writing");
-my($inc)=$ret->{"inc"};
-print FILE $targets.": ".join(" ",@$inc)."\n";
-close(FILE) || die("unable to close file");
+open(FILE,'> '.$outfile) || die('unable to open file for writing');
+my($inc)=$ret->{'inc'};
+print FILE $targets.': '.join(' ',@$inc)."\n";
+close(FILE) || die('unable to close file');
