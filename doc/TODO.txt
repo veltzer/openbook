@@ -1,0 +1,144 @@
+urgent:
+=======
+- do the global definition too (jazzGlobal).
+
+tunes:
+======
+- a fine romance (almost done).
+- slihot (match lyrics to the tune).
+- ill close my eyes (tune, lyrics and maybe chords).
+- summer time
+
+epdfs:
+======
+The idea is to have external pdfs derived from various sources (especially real books
+that I have in my collection but also scanned from 'real' books) that will be stored along
+with my tunes.
+These could be imported into the database and shown to other users of the application.
+
+Things to improve:
+- bring more epdfs for the tunes that I already have.
+	document how to find those epdfs.
+- bring the meta data from the epdfs into the database and show them.
+	Where do they come from ? (which real book?).
+	What page ?
+- support not just the pdf format but other formats as well.
+
+importing:
+==========
+- import only things which are not in the database.
+- import in the order of the tune names.
+- import my own recordings into the database - look at the tags for more data.
+
+parsing lilypond:
+=================
+- there is much to do in this area but no known issues at this time.
+
+build system
+============
+- add support for deriving gpp dependencies (a simple perl script).
+	use it to generate dependencies and analyze them.
+- do a general cache (~/.make_cache) script which will run commands for me and will save
+results according to the command line and md5 sum of the source and deps.
+this way changes to the makefile will not do a full recompile.
+- make each lily file stand on it's own so that people could use it.
+	This means stopping using the lilypond include feature and starting
+	to use some kind of marcro processor (with dependency analysis ofcourse).
+- make each build make a temp folder so that I could build at the same time.
+- add flac support.
+- add my own recording of the tune in wav, mp3, flac and ogg for download.
+- add "topic" to each piece. Topics at first should be reflections of the directory
+	the piece is in. Add it to the database.
+- make sure the build system checks that each file has the right tags at the header
+	in the right order (whats the best way to do this ?!?).
+- create compressed postscripts and not regular ones (postscript is not a compressed format).
+- make a book with all of the standards.
+	- how do I include all the files ? Should I write a script ?!?
+- make the build system produce a .gitignore file (make the .gitignore file be a target
+	of the build system dependent on everything including the makefile itself).
+- add an option to find lyi files which are not used (not included anywhere).
+
+lyrics support:
+===============
+- add lyrics to the system.
+- store the lyrics inside the lilypond file so that there will be only one source file.
+- extract the lyrics somehow and turn it into a blob.
+- store the blob in the database and allow to download and view it.
+- syntax check the lyrics.
+
+wav support:
+============
+- reduce the size of the wav files (why are some of them so big ?!?).
+	this causes their import to be aborted (this is why it is currently disabled).
+
+mp3 support:
+============
+- there are no tags in the mp3 files. Add them.
+
+ogg support:
+============
+- there are no tags in the ogg files. Add them.
+
+midi support:
+=============
+- wikipedia have a way of playing midi directly from the wiki pages.
+	find out how. Do that from my page too.
+
+Material
+========
+- write the material for drumming training.
+	get material from the drummers course at Rimon.
+
+Lilypond cheet sheet
+====================
+- create a standards/lead sheet cheet sheet for lilypond.
+  cheet sheet should show:
+	- complex chords (7.5-)
+	- chords with alternate bases.
+	- matching lyrics to melody.
+		many words per one note
+		splitting a word
+	- the thing to type at \chords in order that chords will re-appear if when
+		they are not changed.
+	- changing the speed of the tune
+	- all the rest on the stuff I have in hints.txt.
+	* once the cheet sheet it done I can get ridd of the hints.txt file.
+
+
+Info addition
+=============
+- add "poet="poetname"" header in all the pieces.
+- add "copyright" header in all the pieces.
+- add "todo" in all the pieces in the same style.
+- add "completion level" in all the pieces. define completion levels and mark them out.
+	put them in the database.
+	show them on the php.
+- add "tags" header in all the pieces (jazz, swing, bossa etc...).
+- make all of tunes have the same high level structure as "a_foggy_day.ly". This is much
+	better because:
+	- You don't have to have a stupid strucutre at the end which is replicated for each
+	tune (or included).
+	- Stuff gets in the sheet or out of it (tune, harmony, lyrics) according to whether
+	it is there. When you add or remove stuff you just add or remove it - no need to update
+	the master structure context.
+	Record all of these understandings in some kind of standards document that I will
+	start for all of this material.
+- get number of pages and import that into the database too.
+	How do we get it ?!?
+	- count the number of pages in the pdf (some kind of pdf parser ?!?).
+	- count the number of images created when --png is used.
+
+Database additions
+==================
+- get last changed date (the data of the *.ly file ?!?) and put it in the database
+	on import. Show it in on the web.
+	Enable a direct link to a files history from git from the web.
+- add links to my favourite performances of the tune.
+- assume many jpegs and many midis per compilation. Store them all in the database.
+- make all the blobs reside in a blob table and make get blob really simple by getting
+	from that table either by uuid or by id.
+
+content
+=======
+- review the speed of the pieces and adjust them
+	(for instance: nature boy / Eben Ahbez is a little too fast).
