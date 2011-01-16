@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="אלוהים שלי"
 	subtitle=""
 	composer="עוזי חיטמן"
@@ -16,6 +17,7 @@
 
 	uuid="467b2af8-a26f-11df-b03d-0019d11e5a41"
 }
+jazzTune
 
 %{
 	TODO:

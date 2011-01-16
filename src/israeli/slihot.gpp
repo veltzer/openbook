@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="סליחות"
 	subtitle="באת אלי"
 	composer="עודד לרר"
@@ -14,6 +15,7 @@
 	idyoutube="DZd_Ik2SNcg"
 	idyoutube="jZ_8rSmLFwU"
 }
+jazzTune
 
 %{
 	DONE:

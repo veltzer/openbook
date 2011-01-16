@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="Bass Lines"
 	style="Jazz"
 	piece="Upbeat Jazz"

@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header{
+	default_header
 	title="Desafinado"
 	subtitle="Slightly Out Of Tune"
 	composer="Antonio Carlos Jobim"
@@ -11,6 +12,7 @@
 	completion="5"
 	uuid="c3fff540-a26e-11df-9435-0019d11e5a41"
 }
+jazzTune
 
 %{
 	TODO:

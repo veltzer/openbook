@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="Prelude and Fugue No. 1 in C major"
 	subtitle="Well-Tempered Clavier, Book 1"
 	composer="Johann Sebastian Bach (1685–1750)"

@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="Foolish Heart"
 	composer="Victor Young"
 	poet="Ned Washington"
@@ -9,6 +10,11 @@
 	completion="0"
 	uuid="ce9be996-a26e-11df-bf2c-0019d11e5a41"
 }
+jazzTune
+
+%{
+	TODO:
+%}
 
 tune={
 	\key bes \major

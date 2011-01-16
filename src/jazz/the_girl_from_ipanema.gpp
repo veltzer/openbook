@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="The Girl From Ipanema"
 	subtitle="Garota De Ipanema"
 	composer="Antonio Carlos Jobim"
@@ -13,6 +14,7 @@
 	completion="5"
 	uuid="2c3b337c-a26f-11df-b7d1-0019d11e5a41"
 }
+jazzTune
 
 %{
 	TODO:

@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="Someone To Watch Over Me"
 	subtitle=""
 	composer="George Gershwin"
@@ -12,6 +13,7 @@
 	completion="5"
 	uuid="75cbb354-1411-11e0-9a9e-0019d11e5a41"
 }
+jazzTune
 
 %{
 	TODO:

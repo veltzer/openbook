@@ -73,6 +73,7 @@ some macros to be reused all over
 	startTune={}\
 	endTune=\bar "|."
 #define jazzTune \
+	generalMacros\
 	startSong={}\
 	endSong=\bar "|."\
 	startPart={}\

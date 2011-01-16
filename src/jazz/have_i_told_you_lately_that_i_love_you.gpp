@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="Have I told you lately that I love you"
 	singer="Van Morrison"
 	style="Pop"
@@ -8,6 +9,7 @@
 	completion="0"
 	uuid="d86922f4-a26e-11df-b237-0019d11e5a41"
 }
+jazzTune
 
 harmony=\chords {
 	\startChords

@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="Nature Boy"
 	subtitle=""
 	composer="Eben Ahbez"
@@ -14,6 +15,7 @@
 
 	uuid="13d57a4a-a26f-11df-8711-0019d11e5a41"
 }
+jazzTune
 
 %{
 	TODO:

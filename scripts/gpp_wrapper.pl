@@ -19,10 +19,10 @@ my($debug)=0;
 #my($args)='-n -U "" "" "(" "," ")" "(" ")" "#" "" -M "\n#\w" "\n" " " " " "\n" "" "" +c "/*" "*/" +c "//" "\n" +c "\\\n" ""';
 #my($args)='';
 #my($args)='-C';
-#my($args)='-C -s "\'"';
-my($args)='-w -P';
-#my($prog)='gpp';
-my($prog)='cpp';
+my($args)='-C -s "\'" -s "\""';
+#my($args)='-w -P';
+my($prog)='gpp';
+#my($prog)='cpp';
 
 # here we go...
 my($output)=shift(@ARGV);

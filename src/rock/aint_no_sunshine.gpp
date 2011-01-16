@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="Ain't No Sunshine"
 	composer=""
 	style="Pop"
@@ -8,6 +9,7 @@
 	completion="0"
 	uuid="669540fe-d851-11df-ae78-0019d11e5a41"
 }
+jazzTune
 
 %{
 	TODO:
@@ -15,6 +17,7 @@
 %}
 
 #include "predefined-guitar-fretboards.ly"
+
 
 \score {
 <<

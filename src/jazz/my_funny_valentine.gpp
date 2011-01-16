@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="My Funny Valentine"
 	subtitle=""
 	composer="Richard Rodgers"
@@ -13,6 +14,7 @@
 
 	idyoutube="jvXywhJpOKs"
 }
+jazzTune
 
 %{
 	TODO:

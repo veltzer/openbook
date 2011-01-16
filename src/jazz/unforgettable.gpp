@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="Unforgettable"
 	composer="Irving Gordon"
 	poet="Irving Gordon"
@@ -11,6 +12,7 @@
 	completion="0"
 	uuid="3162420a-a26f-11df-aacf-0019d11e5a41"
 }
+jazzTune
 
 harmony=\chords {
 	\startChords

@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header{
+	default_header
 	title="Corcovado"
 	subtitle="quiet nights of quiet stars"
 	composer="Antonio Carlos Jobim"
@@ -10,6 +11,7 @@
 	completion="0"
 	uuid="b847fc02-a26e-11df-92ce-0019d11e5a41"
 }
+jazzTune
 
 %{
 	TODO:

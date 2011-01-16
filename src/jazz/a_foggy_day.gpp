@@ -1,5 +1,6 @@
 #include "src/include/common.lyi"
 \header {
+	default_header
 	title="A Foggy Day"
 	subtitle="From 'A Damsel In Distress'"
 	composer="George Gershwin"
@@ -13,6 +14,8 @@
 	completion="5"
 	uuid="87da6ece-a26e-11df-95d7-0019d11e5a41"
 }
+jazzTune
+
 %{
 	TODO:
 %}
