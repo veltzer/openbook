@@ -15,7 +15,14 @@ use diagnostics;
 
 # parameters
 my($debug)=0;
-my($args)='-U "" "" "(" "," ")" "(" ")" "#" "UNRELIABLE" -M "#" "\n" " " " " "\n" "(" ")"';
+#my($args)='-U "" "" "(" "," ")" "(" ")" "#" "UNRELIABLE" -M "#" "\n" " " " " "\n" "(" ")"';
+#my($args)='-n -U "" "" "(" "," ")" "(" ")" "#" "" -M "\n#\w" "\n" " " " " "\n" "" "" +c "/*" "*/" +c "//" "\n" +c "\\\n" ""';
+#my($args)='';
+#my($args)='-C';
+#my($args)='-C -s "\'"';
+my($args)='-w -P';
+#my($prog)='gpp';
+my($prog)='cpp';
 
 # here we go...
 my($output)=shift(@ARGV);
@@ -26,7 +33,7 @@ if($debug) {
 if(-f $output) {
 	unlink($output);
 }
-my($cmd)='gpp '.$args.' '.join(' ',@ARGV);
+my($cmd)=$prog.' '.$args.' '.join(' ',@ARGV);
 if($debug) {
 	print 'cmd is ['.$cmd.']'."\n";
 }
