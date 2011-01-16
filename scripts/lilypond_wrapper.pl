@@ -35,9 +35,10 @@ print 'close returned '.$res."\n";
 
 # parameters
 my($debug)=0;
-my($tmp_fname)='/tmp/'.$ARGV[0].$$;
+my($tmp_fname)='/tmp/'.$ARGV[1].$$;
 
 # here we go...
+my($output)=shift(@ARGV);
 my($cmd)='lilypond '.join(' ',@ARGV).' 1> /dev/null 2> '.$tmp_fname;
 if($debug) {
 	print 'cmd is ['.$cmd.']'."\n";
@@ -55,4 +56,6 @@ if($res) {
 	close(FILE) || die('unable to close');
 	# exit with error code of the child...
 	exit($res << 8);
+} else {
+	system("touch $output");
 }
