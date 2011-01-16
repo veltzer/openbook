@@ -20,6 +20,8 @@
 	uuid="cc3c46c7-908d-4b3e-b90f-1e01a942ef27"
 
 }
+jazzTune
+
 %{
 	NOTES:
 		- this tune is an example of how to create different outputs for midi and
