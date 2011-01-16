@@ -1,0 +1,8 @@
+\score {
+	<<
+		\context ChordNames \harmony
+		\context Lyrics \text
+	>>
+	\midi {}
+	\layout {}
+}
