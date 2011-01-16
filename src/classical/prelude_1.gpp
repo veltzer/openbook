@@ -13,6 +13,8 @@
 	completion="5"
 	uuid="562ae904-a664-11df-9e85-0019d11e5a41"
 }
+jazzTune
+
 %{
 	NOTES:
 		- this tune is an example of how to create different outputs for midi and
@@ -218,7 +220,7 @@ piano={
 			<<
 				\relative c'
 				\voiceB
-				\\
+				\\\
 				\relative c'
 				\voiceC
 			>>
