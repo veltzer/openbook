@@ -278,17 +278,17 @@ $(FILES_LYD): %.ly.d: %.ly $(ALL_DEP)
 	$(Q)./scripts/lilydep.pl $< $@ $(basename $<).stamp $(basename $<).pdf $(basename $<).ps $(basename $<).midi
 $(FILES_WAV): %.wav: %.midi $(ALL_DEP)
 	$(info doing $@)
-	$(Q)timidity $< -idq -Ow -o $@ > /dev/null
+	$(Q)./scripts/timidity_wrapper.pl $< -idq -Ow -o $@ > /dev/null
 # rule about making mp3 from wav files - I currently don't use it since
 # I generated mp3 directly from midi using a pipe between timidity and lame...
 #$(FILES_MP3): %.mp3: %.wav
 #	lame $< $@
 $(FILES_OGG): %.ogg: %.midi $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)timidity $< -idq -Ov -o $@ > /dev/null
+	$(Q)./scripts/timidity_wrapper.pl $< -idq -Ov -o $@ > /dev/null
 $(FILES_MP3): %.mp3: %.midi $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)timidity $< -idq -Ow -o - 2> /dev/null | lame - $@ > /dev/null 2> /dev/null
+	$(Q)./scripts/timidity_wrapper.pl $< -idq -Ow -o - 2> /dev/null | lame - $@ > /dev/null 2> /dev/null
 
 # include the deps files (no warnings)
 ifeq ($(USE_LYD),1)
