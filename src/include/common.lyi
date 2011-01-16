@@ -1,59 +1,71 @@
+% end verbatim - this comment is a hack to prevent texinfo.tex
+% from choking on non-European UTF-8 subsets
+
+%% this version tag will keep me compiling only on this version of lilypond.
+%%=====================================================================
+#define version_tag \version "2.12.3"
+
+%% default values for headers
+%%=====================================================================
+#define subsubtitle_val "Mark Veltzer <mark.veltzer@gmail.com>"
+#define enteredby_val "Mark Veltzer"
+#define maintainerEmail_val "mark.veltzer@gmail.com"
+#define footer_val "this is the footer"
+#define copyright_val "[copyright not filled - help me fill it out]"
+#define completion_val "0"
+#define tagline_val "this is the tagline"
+
 %% setting instruments for midi generation (bah - this doesn't work...)
+%%=====================================================================
 %%\set ChordNames.midiInstrument = #"acoustic grand"
 %%\set Staff.midiInstrument = #"flute"
 %%\set PianoStaff.instrumentName = #"acoustic grand"
 %% do not show chords unless they change...
 %%\set chordChanges = ##t
 
-%% make lilypond use paper of size a4 (Is this the default ?!?)
-#(set-default-paper-size "a4")
-\paper {
-	%% make lilypond increase the distance of the footer from the bottom of the page
-	%% it seems that if you don't do something like this you're going to have
-	%% a real problem seeing the footer in postscript printing...
-	bottom-margin = 2.5\cm
-}
-
-%% reduce the font size (taken from the lilypond info documentation)
-#(set-global-staff-size 17.82)
-
 %% number of staffs per page (this does not work because of my breaks)
 %%\paper {
 %%	system-count = #7
 %%}
 
-%% reduce spaces between systems and the bottom (taken from the lilypond
-%% documentation and found the relevant variable)
-%% the result of this is that I can fit 8 single staffs in one page
-%% which is ideal for Jazz (think 32 bar divided into 8 lines of 4 bars each...).
-%% I should really only apply this thing for Jazz tunes but that is a TODO item.
-\paper {
-%% default is 4\mm
-	between-system-padding = 1\mm
-%% default is 20\mm
-%%	between-system-space = 16\mm
-%%	ragged-last-bottom = ##f
-%%	ragged-bottom = ##f
-}
+#define jazzGlobal \
+	\paper {\
+		%% reduce spaces between systems and the bottom (taken from the lilypond\
+		%% documentation and found the relevant variable)\
+		%% the result of this is that I can fit 8 single staffs in one page\
+		%% which is ideal for Jazz (think 32 bar divided into 8 lines of 4 bars each...).\
+		%% I should really only apply this thing for Jazz tunes but that is a TODO item.\
+		%% default is 4\mm\
+		between-system-padding = 1\mm\
+		%% default is 20\mm\
+		%% between-system-space = 16\mm\
+		%% ragged-last-bottom = ##f\
+		%% ragged-bottom = ##f\
+		\
+		%% make lilypond increase the distance of the footer from the bottom of the page\
+		%% it seems that if you don't do something like this you're going to have\
+		%% a real problem seeing the footer in postscript printing....\
+		bottom-margin = 2.5\cm\
+	}\
+	%% reduce the font size (taken from the lilypond info documentation)\
+	#(set-global-staff-size 17.82)\
+	%% make lilypond use paper of size a4 (Is this the default ?!?)\
+	#(set-default-paper-size "a4")
 
 %% some macros to be reused all over
 myBreak=\break
-
+myEndLine=\break
 partBar=\bar "||"
 endBar=\bar "|."
+startTune={}
+endTune=\bar "|."
 
-startPart={}
-endPart=\bar "||"
-
-startSong={}
-endSong=\bar "|."
-
-startIntro=\mark "Intro"
-endIntro={}
-
-startChords=\set chordChanges = ##t
-endChords={}
-
-myEndLine=\break
-
-tuneFinish=\bar "|."
+#define jazzTune \
+	startSong={}\
+	endSong=\bar "|."\
+	startPart={}\
+	endPart=\bar "||"\
+	startIntro=\mark "Intro"\
+	endIntro={}\
+	startChords=\set chordChanges = ##t\
+	endChords={}

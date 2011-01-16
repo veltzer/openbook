@@ -272,9 +272,7 @@ $(FILES_STAMP): %.stamp: %.ly $(ALL_DEP)
 #rm -rf /tmp/folder
 $(FILES_LY): %.ly: %.gpp $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)rm -f $@
-	$(Q)gpp -I/usr/share/lilypond/2.12.3/ly -I. -U "" "" "(" "," ")" "(" ")" "#" "UNRELIABLE" -M "#" "\n" " " " " "\n" "(" ")" -o $@ $<
-	$(Q)chmod 444 $@
+	$(Q)./scripts/gpp_wrapper.pl $@ -I/usr/share/lilypond/2.12.3/ly -I. -o $@ $<
 $(FILES_LYD): %.ly.d: %.ly $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)./scripts/lilydep.pl $< $@ $(basename $<).stamp $(basename $<).pdf $(basename $<).ps $(basename $<).midi

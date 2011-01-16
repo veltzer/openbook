@@ -1,3 +1,10 @@
+urgent:
+=======
+- move to using cpp as my preprocessor.
+edit common.ly and header.ly and turn everything into defines.
+use them all over.
+
+
 tunes:
 ======
 - a fine romance (almost done).

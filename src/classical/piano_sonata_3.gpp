@@ -17,6 +17,7 @@
 tune={
 	\key c \major
 	\time 4/4
+	\startTune
 	\partial 4 e'4 |
 	\repeat volta 2 {
 		c'1 | a'4 g'2 a'4 | b1 | b'4 a'2 b'4 |
@@ -32,7 +33,7 @@ tune={
 			g'1 | \times 2/3 { b'4 a'4 aes'4 } g'4 d''4 | c''1~ | c''2 r4 <\parenthesize e'>4 |
 		}
 	}
-	\tuneFinish
+	\endTune
 }
 
 #include "src/include/tune.lyi"
