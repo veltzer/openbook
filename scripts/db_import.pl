@@ -250,7 +250,7 @@ $dbh=DBI->connect('dbi:mysql:myworld','','',{
 $dbh->{HandleError} =\&handle_error;
 
 # on two separate lines because of list context...
-$grammer=Perl6::Slurp::slurp('data/lilypond.grammer');
+$grammer=Perl6::Slurp::slurp('scripts/lilypond.grammer');
 #$parser=Parse::RecDescent->new($grammer);
 #print 'grammer is '.$grammer;
 # show hints...
