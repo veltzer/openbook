@@ -1,0 +1,49 @@
+A tips and tricks file for a git user / Mark Veltzer
+====================================================
+VERSION: 0.1
+* note - bump this version if you change anything so that I will merge or better - change the
+original document that hold somewhere else and ask me to sync this one with the other...
+
+distributed git development
+===========================
+make sure you set up the original repository as a "bare" repository
+(which holds no branches). Otherwise you will have to have a separate branch to commit on.
+
+git init --bare [name]
+
+then you can start development (remote or local) by cloning (remote or local):
+
+remote:
+git clone ssh://mark@veltzer.net/~/git/repos/lilypond.git
+local:
+git clone ~/git/repos/lilypond.git 
+
+Now you can 'git add' as much as you want.
+Every so and so adds you may want to commit by using 'git commit' or 'git commit -a'
+Every so and so commits you may want to update the master. You can do that using a
+pull from the master (not documented) or using a push from the your own tree
+by using 'git push'.
+
+If you cannot push then someone got a change in before you, then you can use:
+git pull --rebase
+This will create a local change which integrates your changes with changes that happened
+on the master. Check it out, then commit and then try to push again.
+
+Note:
+first time you push you must use:
+git push origin master
+
+git maintainance
+================
+If you want to check if you have junk in your git object storage:
+git fsck
+If you want to remove junk object:
+git prune
+This can reduce your disk space (I checked it and it works)
+
+Things I do not as of yet know:
+- if I put a big file into git and want to erase it and any history of it (to reduce git disk usage), how do I do it ?
+
+- to remove a branch on a remote server use:
+git push origin :[branch name]
+yes - the : is there and it does look weird...
