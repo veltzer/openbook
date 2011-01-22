@@ -21,7 +21,10 @@ jazzTune
 
 %{
 	TODO:
+	- sync lyrics.
+	- complete the tune.
 %}
+#include "src/include/jazzVisual.lyi"
 
 myChords=\chordmode {
 	\startChords
@@ -64,10 +67,16 @@ myVoice=\relative c' {
 	r8 d e4 g a | b8 b a g a b4 g8 ~ | g1 ~ | g2. r4 |
 
 	% Bar 9
-	r8 d e4 g a | b8 b a g a b4. | b8 b a g a b4 d,8 ~ | d1 |
-	r8 d e4 g a | b8 b a g a b4 g8 ~ | g1 | g2. r4 |
+	r8 d e4 g a | b8 b a g a b4. | d8 d cis b cis d4 fis,8 ~ | fis1 |
+	b4 a8 gis a b4. | b8 c a gis a b4. | a4 b c b | a d d d |
 
 	% Bar 17
+	d2 ~ d8 b4 g8 | a2 ~ a8 b c cis | d4 e d b | c2. b4 |
+	e2 ~ e8 cis4 a8 | b2 ~ b8 a4 b8 | c4 e e, g | a1 |
+
+	% Bar 25
+	r8 d, e4 g a | b8 b a g a b4. | c8 b4 a8 b4 c | b2. a4 |
+	d4 d d2 | e8 e4 e8 b4 b | g1 ~ | g2 r |
 
 }
 myLyrics=\lyricmode {
@@ -106,11 +115,11 @@ myLyrics=\lyricmode {
 
 	They all said we'd never get together
 	Darling, let's take a bow
-	For ho, ho, ho!
-	Who's got the last laugh?
-	Hee, hee, hee!
+	For "ho, ho, ho!
+	Who's got the last laugh?"
+	"Hee, hee, hee!"
 	Let's at the past laugh
-	Ha, ha, ha!
+	"Ha, ha, ha!
 	Who's got the last laugh now?"
 }
 %% score for printing

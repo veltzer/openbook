@@ -6,7 +6,7 @@ OpenBook is a jazz real book constructed with free software.
 What tools are used ?
 lilypond, m4, make, perl and possibly more.
 
-what is produced ?
+What is produced ?
 A postscript and PDF real book with Jazz tunes.
 
 Who can contribute ?
