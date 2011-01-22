@@ -80,47 +80,51 @@ myVoice=\relative c' {
 
 }
 myLyrics=\lyricmode {
-	They all laughed at Chris -- to -- pher Co -- lum -- bus
+	They All Laughed at Chris -- to -- pher Co -- lum -- bus
 	When he said the world was round.
-	They all laughed when Ed -- i -- son re -- cor -- ded sound.
+	They All Laughed when Ed -- i -- son re -- cord -- ed sound.
 
-	They all laughed at Wil -- bur and his bro -- ther,
+	They All Laughed at Wil -- bur and his bro -- ther,
 	When they said that man could fly.
 	They told Mar -- co -- ni wire -- less was a pho -- ny;
 	It's the same old cry.
 
-	They laughed at me wanting you
-	Said I was reaching for the moon
+	They laughed at me want -- ing you,
+	Said I was reach -- ing for the moon.
 	But oh, you came through
-	Now they'll have to change their tune
+	Now they'll have to change their tune.
 
-	They all said we never could be happy
+	They all said we nev -- er could be hap -- py,
 	They laughed at us and how!
 	But ho, ho, ho!
 	Who's got the last laugh now?
+}
+myLyricsmore=\lyricmode {
+	They All Laughed at Rock -- e -- fel -- ler Cen -- ter,
+	Now they're fight -- ing to get in.
+	They all laughed at Whit -- ney and his cot -- ton gin.
 
-	They all laughed at Rockefeller Center
-	Now they're fighting to get in
-	They all laughed at Whitney and his cotton gin
-	They all laughed at Fulton and his steamboat
-	Hershey and his chocolate bar
+	They all laughed at Ful -- ton and his steam -- boat,
+	Her -- shey and his choc' -- late bar.
+	Ford and his Liz -- zie Kept the laugh -- ers bus -- y;
+	That's how peo -- ple are.
 
-	Ford and his Lizzie
-	Kept the laughers busy
-	That's how people are
-	They laughed at me wanting you
-	Said it would be, "Hello, Goodbye."
+	They laughed at me want -- ing you,
+	Said it would be "Hel -- lo, Good -- bye."
 	And oh, you came through
-	Now they're eating humble pie
+	Now they're eating hum -- ble pie.
 
-	They all said we'd never get together
-	Darling, let's take a bow
-	For "ho, ho, ho!
-	Who's got the last laugh?"
+	They all said we'd nev -- er get to -- geth -- er;
+	Dar -- ling, let's take a bow.
+	For "ho, ho, ho!"
+	Who's got the last laugh now?
+}
+
+myLyricsother=\lyricmode {
 	"Hee, hee, hee!"
-	Let's at the past laugh
-	"Ha, ha, ha!
-	Who's got the last laugh now?"
+	Let's at the past laugh,
+	"Ha, ha, ha!"
+	Who's got the last laugh now?
 }
 %% score for printing
 \score {
@@ -128,6 +132,7 @@ myLyrics=\lyricmode {
 		\new ChordNames="mychords" \myChords
 		\new Voice="myvoice" \myVoice
 		\new Lyrics \lyricsto "myvoice" \myLyrics
+		\new Lyrics \lyricsto "myvoice" \myLyricsmore
 	>>
 	\layout {
 	}

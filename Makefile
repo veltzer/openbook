@@ -283,10 +283,10 @@ $(FILES_WAV): %.wav: %.midi $(ALL_DEP)
 #	lame $< $@
 $(FILES_OGG): %.ogg: %.midi $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)./scripts/timidity_wrapper.pl $< -idq -Ov -o $@ > /dev/null
+	$(Q)./scripts/timidity_wrapper.pl $< $@ $< -idq -Ov -o $@ > /dev/null
 $(FILES_MP3): %.mp3: %.midi $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)./scripts/timidity_wrapper.pl $< -idq -Ow -o - 2> /dev/null | lame - $@ > /dev/null 2> /dev/null
+	$(Q)./scripts/timidity_wrapper.pl $< $@ $< -idq -Ow -o - 2> /dev/null | lame - $@ > /dev/null 2> /dev/null
 
 # include the deps files (no warnings)
 ifeq ($(USE_LYD),1)
