@@ -1,0 +1,3 @@
+Lyrics:
+=======
+- do not use double quotes in lyrics since it will cause lilypond not to draw them and rather put everything under a double quote under a single note. Use single quotes instead.
