@@ -1,0 +1,72 @@
+This is a set of lilypond hints:
+
+Chords:
+=======
+- alternate bass to a chord: c2:m7/bes
+
+- \chords is akin to \new ChordNames but with something else... What is it ?
+	find out from the lilypond documentation...
+
+- in order to put guitar chord notations just use:
+	\include "predefined-guitar-fretboards.ly"
+	\new FretBoards {
+		\chordmode {
+			[chords go here]	
+		}
+	}
+  The problem with this is that you wind up repeating the chord names yet again just for the
+  guitar diagrams. Find out how to avoid this...
+	
+speed of piece:
+===============
+- one way is:
+	==== SNIP ====
+	\tempo "Andante" 4 = 88
+	==== SNIP ====
+	at the top voice. This will create the right notation on the page
+	AND determine the speed that the midi plays in.
+	Advantages:
+		- only one place that works for both print and midi, AND has the advantage
+		of showing the right way in the print version.
+	Disadvantages:
+		- You need to map name of the speed to BPM or skip the BPM or name of speed
+		entirely. You can use a lookup table like mine:
+		http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+- another way is:
+	==== SNIP ====
+	\context {
+		\Score
+		tempoWholesPerMinute = #(ly:make-moment 130 4)
+	}
+	==== SNIP ====
+	at the midi section. This only determines the midi speed and has no effect on the
+	print version.
+	Advantages:
+		- fine tuning the midi with no effect on other parts.
+	Disadvantages:
+		- can cause discrepency between the print version and the midi version. If
+		you want to keep those two in sync without worrying you better use the \tempo
+		method.
+
+Lyrics
+======
+- breaking up lyrics
+	eve -- ry day I write the book 
+	eve - will be on the first note
+	ry - will be on the second one.
+- one syllable or word on a couple of notes
+	I'm with you rain _ or shine!
+	rain will be on two notes (rain _ _ will be placed on three notes).
+- waiting while there is music:
+	simply write many _ (one for each note you are waiting for...).
+
+Midi production
+===============
+- if you have multiple scores in one file then you will need multipl \midi statements which
+will lead to multiple midi files produced when that file gets processed.
+
+- Is there a way to catenates all the midi files from within lilypond ? (tell lilypond that all midi should come out in a single midi file ?)
+
+Documentation for lilypond:
+===========================
+- A snipplet repository: http://lsr.dsi.unimi.it/

@@ -58,16 +58,23 @@ this way changes to the makefile will not do a full recompile.
 	of the build system dependent on everything including the makefile itself).
 - add an option to find lyi files which are not used (not included anywhere).
 
-lyrics support:
-===============
+outof lilypond lyrics support:
+==============================
 - add lyrics to the system.
 - store the lyrics inside the lilypond file so that there will be only one source file.
 - extract the lyrics somehow and turn it into a blob.
 - store the blob in the database and allow to download and view it.
 - syntax check the lyrics.
 
-wav support:
-============
+lyrics support:
+===============
+- reduce the size of the lyrics.
+	Rationale: in a song like "They All Lauged" where you have two sets of lyrics for the entire song this makes
+	the print more than one page. Try to fit on a single page. In general - the size of the lyrics is too big for Jazz.
+	The right way to fix it would be in the Jazz style definitions.
+
+wav support (this is currently disabled):
+=========================================
 - reduce the size of the wav files (why are some of them so big ?!?).
 	this causes their import to be aborted (this is why it is currently disabled).
 
