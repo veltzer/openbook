@@ -1,4 +1,4 @@
-#include "src/include/common.lyi"
+include(src/include/common_m4.lyi)
 \header {
 	default_header
 	title="I Remember Clifford"
@@ -30,4 +30,4 @@ tune=\relative c'' {
 	c2 r8 d, ( g a ) | bes2 r8 a, ( c d | e a, c d ees4 b ) | c1 |
 }
 
-#include "src/include/tune.lyi"
+include(src/include/tune.lyi)

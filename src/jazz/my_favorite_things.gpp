@@ -1,4 +1,4 @@
-#include "src/include/common.lyi"
+include(src/include/common_m4.lyi)
 \header {
 	default_header
 	title="My Favorite Things"
@@ -70,4 +70,4 @@ tune=\relative e' {
 	g2. ~ | g2. ~ | g2. ~ | g4 r2 |
 }
 
-#include "src/include/harmony_tune.lyi"
+include(src/include/harmony_tune.lyi)

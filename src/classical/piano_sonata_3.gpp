@@ -1,4 +1,4 @@
-#include "src/include/common.lyi"
+include(src/include/common_m4.lyi)
 \header {
 	default_header
 	title="Sonata III"
@@ -39,4 +39,4 @@ tune={
 	\endTune
 }
 
-#include "src/include/tune.lyi"
+include(src/include/tune.lyi)

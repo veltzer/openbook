@@ -1,4 +1,4 @@
-#include "src/include/common.lyi"
+include(src/include/common_m4.lyi)
 \header {
 	default_header
 	title="Od hozer hanigun"
@@ -21,4 +21,4 @@ harmony=\chords {
 	g2 d2 | e2:m7 b2:m7 | e2:m7 fis2:7 | g2 a2:7 | \myEndLine
 }
 
-#include "src/include/harmony.lyi"
+include(src/include/harmony.lyi)

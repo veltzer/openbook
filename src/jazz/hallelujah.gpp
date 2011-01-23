@@ -1,4 +1,4 @@
-#include "src/include/common.lyi"
+include(src/include/common_m4.lyi)
 \header {
 	default_header
 	title="Hallelujah I Love Him(her) So"
@@ -114,4 +114,4 @@ piano=\context GrandStaff <
 
 %}
 
-#include "src/include/harmony_tune_lyrics.lyi"
+include(src/include/harmony_tune_lyrics.lyi)

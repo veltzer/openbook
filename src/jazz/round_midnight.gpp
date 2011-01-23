@@ -1,4 +1,4 @@
-#include "src/include/common.lyi"
+include(src/include/common_m4.lyi)
 \header {
 	default_header
 	title="Round Midnight"
@@ -70,4 +70,4 @@ tune={
 
 }
 
-#include "src/include/harmony_tune.lyi"
+include(src/include/harmony_tune.lyi)

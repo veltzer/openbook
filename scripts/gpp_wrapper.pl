@@ -8,7 +8,7 @@
 # - gpp does not chmod the output file properly
 #
 # Design:
-# - this script will run gpp as a child process
+# - this script runs gpp as a child process
 
 use strict;
 use diagnostics;

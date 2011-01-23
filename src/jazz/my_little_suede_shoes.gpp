@@ -1,4 +1,4 @@
-#include "src/include/common.lyi"
+include(src/include/common_m4.lyi)
 \header {
 	default_header
 	title="My Little Suede Shoes"
@@ -62,4 +62,4 @@ harmony=\chords {
 
 	\endChords
 }
-#include "src/include/harmony_tune.lyi"
+include(src/include/harmony_tune.lyi)

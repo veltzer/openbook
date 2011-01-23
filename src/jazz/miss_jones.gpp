@@ -1,4 +1,4 @@
-#include "src/include/common.lyi"
+include(src/include/common_m4.lyi)
 \header {
 	default_header
 	title="Have you met Miss Jones"
@@ -60,4 +60,4 @@ tune=\relative a' {
 	a4 d, c d | c2. r4 | d e f g | a bes c d | e1 ~ | e4 d a g | f1 | r |
 }
 
-#include "src/include/harmony_tune.lyi"
+include(src/include/harmony_tune.lyi)

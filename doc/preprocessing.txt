@@ -1,0 +1,41 @@
+I made a descision to use a standalone preprocessor to process the files before giving them
+to lilypond which means that source files are not the .ly files but rather the 'gpp' files.
+
+Advantages:
+- macro definitions in lilypond are complex and hard - a preprocessor is better.
+- we can still have a single ly file per song/piece which makes it easier for people
+to grab them from the project.
+- we can have dependency analysis embedded in the build system which we don't get from lilypond.
+
+Disadvantes:
+- yet another technology in the project.
+- people need to know how to use this preprocessor.
+- source is no longer the lily files.
+- another tool to install if you want to build the project.
+
+What preprocessor to use?
+=========================
+gpp
+	advantages:
+	- has many options and configurable syntax.
+	disadvantates:
+	- usually needs to be installed.
+	- does not do macro in macro very well.
+	- does not emit dependency information very well.
+cpp
+	advantages:
+	- widely available.
+	disadvantates:
+	- cannot handle single quotes (') well.
+m4
+	advantages:
+	- has very good documentation (info m4 has lots and lots of info).
+	- very well supported.
+	- widely available.
+	disadvantates:
+	- does not know how to emit dependency information.
+my own preprocessor
+	advantages:
+	- I can have it have any selection of features that I need.
+	disadvantates:
+	- need to be built (C, C++ ?)

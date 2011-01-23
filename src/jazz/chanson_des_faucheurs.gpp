@@ -1,4 +1,4 @@
-#include "src/include/common.lyi"
+include(src/include/common_m4.lyi)
 \header {
 	default_header
 	title="Chanson des faucheurs"
@@ -25,4 +25,4 @@ tune=\relative g'' {
 	g,4 ( c ) b | a ( d ) c | b ( a ) b | c2 r4 |
 }
 
-#include "src/include/tune.lyi"
+include(src/include/tune.lyi)

@@ -1,4 +1,4 @@
-#include "src/include/common.lyi"
+include(src/include/common_m4.lyi)
 \header{
 	default_header
 	title="Doxy"
@@ -53,7 +53,7 @@ myChords=\chordmode {
 myVoice=\relative f' {
 	\time 4/4
 	\key bes \major
-	%% http://en.wikipedia.org/wiki/Tempo
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 
 	\partial 8 f8 |

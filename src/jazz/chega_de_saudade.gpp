@@ -1,4 +1,4 @@
-#include "src/include/common.lyi"
+include(src/include/common_m4.lyi)
 \header {
 	default_header
 	title="Chega De Saudade"
@@ -47,4 +47,4 @@ tune=\relative f'' {
 	c4. bes8 ~ bes2 ~ | bes4 f'8 e ~ e d4 d8 ~ | d cis4 e8 cis4 bes~ | bes2. r4 |
 }
 
-#include "src/include/harmony_tune.lyi"
+include(src/include/harmony_tune.lyi)

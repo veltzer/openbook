@@ -1,4 +1,4 @@
-#include "src/include/common.lyi"
+include(src/include/common_m4.lyi)
 \header {
 	default_header
 	title="It might as well be spring"
@@ -35,4 +35,4 @@ tune=\relative d' {
 	a2. g4 | d4.. b'16 g2 | d4.. c'16 a2 | g1 | r2 r4 d8 d |
 }
 
-#include "src/include/tune.lyi"
+include(src/include/tune.lyi)
