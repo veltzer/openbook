@@ -1,4 +1,4 @@
-#include "src/include/common.lyi"
+include(src/include/common_m4.lyi)
 \header {
 	default_header
 	title="Afternoon in Paris"
@@ -73,4 +73,4 @@ tune={
 	g''2. e''8 g''8 |
 }
 
-#include "src/include/harmony_tune.lyi"
+include(src/include/harmony_tune.lyi)

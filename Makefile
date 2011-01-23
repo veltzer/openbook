@@ -268,9 +268,9 @@ $(FILES_STAMP): %.stamp: %.ly $(ALL_DEP)
 #	mv /tmp/folder/foo.midi $(basename $<).midi
 #	touch $@
 #rm -rf /tmp/folder
-$(FILES_LY): %.ly: %.gpp $(ALL_DEP)
+$(FILES_LY): %.ly: %.gpp $(ALL_DEP) ./scripts/m4_wrapper.pl
 	$(info doing [$@])
-	$(Q)./scripts/gpp_wrapper.pl $@ -I/usr/share/lilypond/2.12.3/ly -I. -o $@ $<
+	$(Q)./scripts/m4_wrapper.pl $< $@
 $(FILES_LYD): %.ly.d: %.ly $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)./scripts/lilydep.pl $< $@ $(basename $<).stamp $(basename $<).pdf $(basename $<).ps $(basename $<).midi

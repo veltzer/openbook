@@ -1,4 +1,4 @@
-#include "src/include/common.lyi"
+include(src/include/common_m4.lyi)
 \header {
 	default_header
 	title="Summertime"
@@ -50,4 +50,4 @@ tune=\relative c''' {
 		c a8 c d f ~ f4 | a8 g ~ g4 f2 | d1 ~ | d4 r r a'8. f16 |
 	}
 }
-#include "src/include/harmony_tune.lyi"
+include(src/include/harmony_tune.lyi)

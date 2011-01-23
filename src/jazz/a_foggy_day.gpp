@@ -1,4 +1,4 @@
-#include "src/include/common.lyi"
+include(src/include/common_m4.lyi)
 \header {
 	default_header
 	title="A Foggy Day"
@@ -45,7 +45,7 @@ myChords=\chordmode {
 }
 
 myVoice=\relative c'{
-	%% http://en.wikipedia.org/wiki/Tempo
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
 	\key f \major

@@ -1,4 +1,4 @@
-#include "src/include/common.lyi"
+include(src/include/common_m4.lyi)
 \header {
 	default_header
 	title="צרות טובות"
@@ -70,4 +70,4 @@ text=\lyricmode {
 	זו על זו וזו על זו..
 }
 
-#include "src/include/harmony_text.lyi"
+include(src/include/harmony_text.lyi)

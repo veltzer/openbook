@@ -1,4 +1,4 @@
-#include "src/include/common.lyi"
+include(src/include/common_m4.lyi)
 \header {
 	default_header
 	title="Once I Loved"
@@ -56,4 +56,4 @@ tune=\relative d'' {
 
 }
 
-#include "src/include/harmony_tune.lyi"
+include(src/include/harmony_tune.lyi)

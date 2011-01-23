@@ -1,4 +1,4 @@
-#include "src/include/common.lyi"
+include(src/include/common_m4.lyi)
 \header {
 	default_header
 	title="Autumn Leaves"
@@ -60,7 +60,7 @@ myChords=\chordmode {
 myVoice=\relative e' {
 	\time 4/4
 	\key e \minor
-	%% http://en.wikipedia.org/wiki/Tempo
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 
 	\partial 2. e4 fis g |

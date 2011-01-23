@@ -1,4 +1,4 @@
-#include "src/include/common.lyi"
+include(src/include/common_m4.lyi)
 \header {
 	default_header
 	title="They All Laughed"
@@ -24,7 +24,6 @@ jazzTune
 	- the end of the tune.
 	- make it fit on one page.
 %}
-#include "src/include/jazzVisual.lyi"
 
 myChords=\chordmode {
 	\startChords
@@ -57,7 +56,7 @@ myChords=\chordmode {
 }
 
 myVoice=\relative c' {
-	%% http://en.wikipedia.org/wiki/Tempo
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
 	\key g \major

@@ -1,4 +1,4 @@
-#include "src/include/common.lyi"
+include(src/include/common_m4.lyi)
 \header {
 	default_header
 	title="Ain't No Sunshine"
@@ -16,8 +16,7 @@ jazzTune
 	- finish the tune and the chords...
 %}
 
-#include "predefined-guitar-fretboards.ly"
-
+include(predefined-guitar-fretboards.ly)
 
 \score {
 <<

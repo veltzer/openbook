@@ -1,4 +1,4 @@
-#include "src/include/common.lyi"
+include(src/include/common_m4.lyi)
 \header {
 	default_header
 	title="Have I told you lately that I love you"
@@ -34,4 +34,4 @@ text=\lyrics {
 	Take my troubles that's what you do.
 }
 
-#include "src/include/harmony_text.lyi"
+include(src/include/harmony_text.lyi)
