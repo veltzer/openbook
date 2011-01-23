@@ -14,7 +14,7 @@ use diagnostics;
 
 # parameters
 my($debug)=0;
-my($args)='';
+my($args)='-I /usr/share/lilypond/2.12.3/ly';
 my($prog)='m4';
 
 # here we go...
