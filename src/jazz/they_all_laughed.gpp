@@ -21,8 +21,8 @@ jazzTune
 
 %{
 	TODO:
-	- sync lyrics.
-	- complete the tune.
+	- the end of the tune.
+	- make it fit on one page.
 %}
 #include "src/include/jazzVisual.lyi"
 
