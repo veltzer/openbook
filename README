@@ -1,28 +1,34 @@
 Hello and Welcome to OpenBook
-
-What is OpenBook ?
+=============================
+* What is OpenBook ?
 OpenBook is a jazz real book constructed with free software.
 
-What tools are used ?
+* What tools are used ?
 lilypond, m4, make, perl and possibly more.
 
-What is produced ?
+* What is produced ?
 A postscript and PDF real book with Jazz tunes.
 
-Who can contribute ?
+* Who can contribute ?
 Anyone.
 
-Where can I see some results ?
+* Who currently contributes ?
+Just me (Mark Veltzer <mark.veltzer@gmail.com>).
+
+* Where can I see some results ?
 Check out the PDFs and other outputs in http://veltzer.net/blog/music/.
 
-Why is there so little documentation ?
+* Why is there so little documentation ?
 I just started this project. Feel free to add stuff and request a pull. If you contribute a lot I will make you an admin...
 
-Arent you supposed to produce a real book, meaning one file ?
+* Arent you supposed to produce a real book, meaning one file ?
 Yes. I just haven't gotten around to it yet. Meanwhile you get one pdf per standard. Did I mention you can contribute ?
 
-How do you write the standards ?
-using lilypond. Check it out at: http://www.lilypond.org/
+* How do you write the standards ?
+Using lilypond. Check it out at: http://www.lilypond.org/
 
-			Mark Veltzer
+* Do you only allow Jazz tunes ?
+No. Rock and Pop will be welcome and so would classical. If you are really into classical lilypond production you may alternativly wish to contribute to the mutopia project at http://www.mutopiaproject.org/.
+
+			Mark Veltzer 2011
 			mark.veltzer@gmail.com
