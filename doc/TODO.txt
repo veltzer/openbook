@@ -9,6 +9,16 @@ tunes:
 - ill close my eyes (tune, lyrics and maybe chords).
 - summer time
 
+config system:
+==============
+The system will allow users to config which type of tune they want to produce.
+They could select:
+- scale (C for concert, Bb, Eb for horns etc).
+- do they want lyrics ?
+- font sizes from several configurations and more.
+- do they want to produce midi, postscript, pdf, mp3, ogg.
+- what tunes do they want to build.
+
 epdfs:
 ======
 The idea is to have external pdfs derived from various sources (especially real books
