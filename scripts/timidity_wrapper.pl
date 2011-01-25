@@ -61,7 +61,7 @@ if($res) {
 	}
 	close(FILE) || die('unable to close');
 	# exit with error code of the child...
-	my($fnum)=unlink($tmp_fname);
+	$fnum=unlink($tmp_fname);
 	if($fnum!=1) {
 		die('unable to remove file ['.$tmp_fname.']');
 	}
