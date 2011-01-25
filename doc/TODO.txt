@@ -1,13 +1,15 @@
-urgent:
-=======
-- do the global definition too (jazzGlobal).
+licensing:
+==========
+embed a licence in all of the tunes.
+Also do it in the Makefile, in the scripts and all.
+Do a test which shows which files are without license.
 
 tunes:
 ======
 - a fine romance (almost done).
 - slihot (match lyrics to the tune).
 - ill close my eyes (tune, lyrics and maybe chords).
-- summer time
+- summer time.
 
 config system:
 ==============
