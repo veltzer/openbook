@@ -25,10 +25,13 @@ jazzTune
 	- make it fit on one page.
 %}
 
+
 myChords=\chordmode {
 	\startChords
 
 	\startSong
+	
+	\repeat volta 2 {
 
 	\mark "A"
 	\startPart
@@ -49,7 +52,16 @@ myChords=\chordmode {
 	\mark "A''"
 	\startPart
 	g2 e:m | a:m7 d:7 | b:7 e:7 | a1:7 | \myEndLine
-	g2 e:7 | a:m7 d:7 | g e:7.9+ | a:7.9- d:7.9- | \myEndLine
+	g2 e:7 | a:m7 d:7 |
+
+	} \alternative {
+		{
+			g e:7.9+ | a:7.9- d:7.9- | \myEndLine
+		}
+		{
+			ees1 | bes2/d d:7/c | g/b e:7 | a:m7 d:7 | g1 | g | \myEndLine
+		}
+	}
 	\endPart
 
 	\endSong
@@ -60,6 +72,8 @@ myVoice=\relative c' {
 	\tempo "Allegro" 4 = 130
 	\time 4/4
 	\key g \major
+	
+	\repeat volta 2 {
 
 	% Bar 1
 	r8 d e4 g a | b8 b a g a b4. | b8 b a g a b4 d,8 ~ | d1 |
@@ -75,7 +89,16 @@ myVoice=\relative c' {
 
 	% Bar 25
 	r8 d, e4 g a | b8 b a g a b4. | c8 b4 a8 b4 c | b2. a4 |
-	d4 d d2 | e8 e4 e8 b4 b | g1 ~ | g2 r |
+	d4 d d2 | e8 e4 e8 b4 b |
+	
+	} \alternative {
+		{
+			g1 ~ | g2 r |
+		}
+		{
+			g4 g g2 | bes8 bes4 bes8 fis4 fis | d'4 d d2 | e8 e4 e8 b4 b | g1 ~ | g4 r4 r2 |
+		}
+	}
 
 }
 myLyrics=\lyricmode {
@@ -99,6 +122,7 @@ myLyrics=\lyricmode {
 	Who's got the last laugh now?
 }
 myLyricsmore=\lyricmode {
+
 	They All Laughed at Rock -- e -- fel -- ler Cen -- ter,
 	Now they're fight -- ing to get in.
 	They all laughed at Whit -- ney and his cot -- ton gin.
@@ -115,16 +139,15 @@ myLyricsmore=\lyricmode {
 
 	They all said we'd nev -- er get to -- geth -- er;
 	Dar -- ling, let's take a bow.
-	For 'ho, ho, ho!'
-	Who's got the last laugh now?
-}
-
-myLyricsother=\lyricmode {
+	For "\"ho," ho, "ho!\""
+	Who's got the last laugh _
+	
 	'Hee, hee, hee!'
 	Let's at the past laugh,
 	'Ha, ha, ha!'
 	Who's got the last laugh now?
 }
+
 %% score for printing
 \score {
 	<<
