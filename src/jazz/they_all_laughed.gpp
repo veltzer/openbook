@@ -30,7 +30,7 @@ myChords=\chordmode {
 	\startChords
 
 	\startSong
-	
+
 	\repeat volta 2 {
 
 	\mark "A"
@@ -72,7 +72,7 @@ myVoice=\relative c' {
 	\tempo "Allegro" 4 = 130
 	\time 4/4
 	\key g \major
-	
+
 	\repeat volta 2 {
 
 	% Bar 1
@@ -90,7 +90,7 @@ myVoice=\relative c' {
 	% Bar 25
 	r8 d, e4 g a | b8 b a g a b4. | c8 b4 a8 b4 c | b2. a4 |
 	d4 d d2 | e8 e4 e8 b4 b |
-	
+
 	} \alternative {
 		{
 			g1 ~ | g2 r |
@@ -141,7 +141,7 @@ myLyricsmore=\lyricmode {
 	Dar -- ling, let's take a bow.
 	For "\"ho," ho, "ho!\""
 	Who's got the last laugh _
-	
+
 	'Hee, hee, hee!'
 	Let's at the past laugh,
 	'Ha, ha, ha!'

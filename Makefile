@@ -158,73 +158,73 @@ clean_all_png:
 # -f: force.
 .PHONY: clean_git
 clean_git:
-	@git clean -xdf
+	$(Q)git clean -xdf
 .PHONY: clean_git_test
 clean_git_test:
-	@git clean -xdf --dry-run
+	$(Q)git clean -xdf --dry-run
 
 # checks
 
 .PHONY: check_extra_files
 check_extra_files:
 	$(info doing [$@])
-	-@find -type f -and -not -name "Makefile" -and -not -path "./.git/*" -and -not -name "*.gpp" -and -not -name "*.lyi" -and -not -name "*.txt" -and -not -name "*.ly.d" -and -not -name "*.pl" -and -not -name "*.grammer" -and -not -name "*.pdf" -and -not -name "*.ps" -and -not -name "*.midi" -and -not -name "*.stamp" -and -not -name ".gitignore" -and -not -name "*.wav" -and -not -name "*.mp3" -and -not -name "*.ogg" -and -not -name "*.png" -and -not -name "*.source" -and -not -name "*.ly"
+	$(Q)git status --porcelain
 .PHONY: check_comments
 check_comments:
 	$(info doing [$@])
-	-@grep "%%" $(FILES_GPP)
+	-$(Q)grep "%%" $(FILES_GPP)
 .PHONY: check_composer_and
 check_composer_and:
 	$(info doing [$@])
-	-@grep "composer=\".* and .*\"" $(FILES_GPP)
+	-$(Q)grep "composer=\".* and .*\"" $(FILES_GPP)
 .PHONY: check_min_chords
 check_min_chords:
 	$(info doing [$@])
-	-@grep ":min" $(FILES_GPP)
+	-$(Q)grep ":min" $(FILES_GPP)
 .PHONY: check_ws
 check_ws:
 	$(info doing [$@])
-	-@./scripts/pgrep.pl "  | $$|\w\t|\t$$|\*\\d\:" $(FILES_GPP) $(FILES_LYI)
+	-$(Q)./scripts/pgrep.pl "  | $$|\w\t|\t$$|\*\\d\:" $(FILES_GPP) $(FILES_LYI)
 .PHONY: check_uuid
 check_uuid:
 	$(info doing [$@])
-	-@grep --files-without-match uuid $(FILES_GPP)
+	-$(Q)grep --files-without-match uuid $(FILES_GPP)
 .PHONY: check_common
 check_common:
 	$(info doing [$@])
-	-@grep --files-without-match "common.lyi" $(FILES_GPP)
+	-$(Q)grep --files-without-match "common_m4.lyi" $(FILES_GPP)
 .PHONY: check_no_poet
 check_no_poet:
 	$(info doing [$@])
-	-@grep --files-without-match "poet=" $(FILES_GPP)
+	-$(Q)grep --files-without-match "poet=" $(FILES_GPP)
 .PHONY: check_copyright
 check_copyright:
 	$(info doing [$@])
-	-@grep --files-without-match "copyright=" $(FILES_GPP)
+	-$(Q)grep --files-without-match "copyright=" $(FILES_GPP)
 .PHONY: check_completion
 check_completion:
 	$(info doing [$@])
-	-@grep --files-without-match "completion=" $(FILES_GPP)
+	-$(Q)grep --files-without-match "completion=" $(FILES_GPP)
 .PHONY: check_empty_copyright
 check_empty_copyright:
 	$(info doing [$@])
-	-@grep "copyright=\"\"" $(FILES_GPP)
+	-$(Q)grep "copyright=\"\"" $(FILES_GPP)
 .PHONY: check_chordChanges
 check_chordChanges:
 	$(info doing [$@])
-	-@grep "chordChanges" $(FILES_GPP)
+	-$(Q)grep "chordChanges" $(FILES_GPP)
 .PHONY: check_bar
 check_bar:
 	$(info doing [$@])
-	-@grep "\\\\bar" $(FILES_GPP)
+	-$(Q)grep "\\\\bar" $(FILES_GPP)
 .PHONY: check_break
 check_break:
 	$(info doing [$@])
-	-@grep "\\\\break" $(FILES_GPP)
+	-$(Q)grep "\\\\break" $(FILES_GPP)
 .PHONY: check_include
 check_include:
 	$(info doing [$@])
-	-@grep "\\\\include" $(FILES_GPP)
+	-$(Q)grep "\\\\include" $(FILES_GPP)
 .PHONY: check_all
 check_all: check_empty_copyright check_common check_ws check_composer_and check_extra_files check_min_chords check_uuid check_chordChanges check_bar check_break check_completion check_include
 

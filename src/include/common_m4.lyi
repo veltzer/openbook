@@ -98,7 +98,7 @@ startTune={}
 endTune=\bar "|.")
 
 define(jazzParts,
-%% some macros for marking parts of jazz tunes 
+%% some macros for marking parts of jazz tunes
 %% =====================================================================
 startSong={}
 endSong=\bar "|."
