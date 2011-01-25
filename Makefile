@@ -286,7 +286,7 @@ $(FILES_OGG): %.ogg: %.midi $(ALL_DEP) ./scripts/timidity_wrapper.pl
 	$(Q)./scripts/timidity_wrapper.pl $< $@ $< -idq -Ov -o $@
 $(FILES_MP3): %.mp3: %.midi $(ALL_DEP) ./scripts/timidity_wrapper.pl
 	$(info doing [$@])
-	$(Q)./scripts/timidity_wrapper.pl $< $@ $< -idq -Ow -o - | lame - $@
+	$(Q)./scripts/timidity_wrapper.pl $< $@ $< -idq -Ow -o - | lame - $@ > /dev/null 2> /dev/null
 
 # include the deps files (no warnings)
 ifeq ($(USE_LYD),1)
