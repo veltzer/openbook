@@ -5,9 +5,13 @@
 %%=====================================================================
 \version "2.12.3"
 
+%% lets define a variable to hold the formatted build date:
+date = #(strftime "%d-%m-%Y" (localtime (current-time)))
+
 %% default values for headers
 %%=======================================================================
-define(subsubtitle_val,"Mark Veltzer <mark.veltzer@gmail.com>")
+define(subsubtitle_val,"built by Mark Veltzer <mark.veltzer@gmail.com> at esyscmd(date)")
+%%define(subsubtitle_val,\date)
 define(enteredby_val,"Mark Veltzer")
 define(maintainerEmail_val,"mark.veltzer@gmail.com")
 define(footer_val,"this is the footer")
@@ -57,6 +61,25 @@ define(jazzVisual,
 	%% it seems that if you don't do something like this you're going to have
 	%% a real problem seeing the footer in postscript printing....
 	bottom-margin = 2.5\cm
+
+}
+\layout {
+	%% don't have the fist line indented
+	indent = 0.0 \cm
+	%% don't know what this is (taken from Laurent Martelli...)
+	%%textheight = 1.5\cm
+
+	\context {
+		\Score
+		\override LyricText #'font-family = #'typewriter
+		\override LyricText #'font-size = #'-2
+		%\override ChordName #'style = #'jazz
+		%\override ChordName #'word-space = #2
+		\override ChordName #'font-series = #'bold
+		\override ChordName #'font-family = #'roman
+		\override ChordName #'font-size = #-2
+		\remove "Bar_number_engraver"
+	}
 }
 %% reduce the font size (taken from the lilypond info documentation)
 #(set-global-staff-size 17.82)

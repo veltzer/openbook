@@ -39,7 +39,7 @@ if($debug) {
 }
 if($res) {
 	unlink($output);
+	exit($res << 8);
 } else {
 	chmod(0444,$output);
 }
-exit($res);
