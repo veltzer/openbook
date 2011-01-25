@@ -253,7 +253,7 @@ $(FILES_PDF): %.pdf: %.stamp $(ALL_DEP)
 
 $(FILES_MIDI): %.midi: %.stamp $(ALL_DEP)
 
-$(FILES_STAMP): %.stamp: %.ly $(ALL_DEP)
+$(FILES_STAMP): %.stamp: %.ly $(ALL_DEP) ./scripts/lilypond_wrapper.pl
 	$(info doing [$@])
 	-$(Q)rm -f $(dir $@)$(basename $(notdir $@))*.png $(dir $@)$(basename $(notdir $@)).ps $(dir $@)$(basename $(notdir $@)).pdf $(dir $@)$(basename $(notdir $@)).midi
 	$(Q)./scripts/lilypond_wrapper.pl $@ $(LYFLAGS) -o $(dir $@)$(basename $(notdir $@)) $<
