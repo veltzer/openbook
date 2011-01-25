@@ -14,14 +14,13 @@ use strict;
 use diagnostics;
 use File::Spec qw();
 
-# parameters
+# parameters (edit these to change the way this script works)
 my($debug)=0;
-my($volume,$directories,$myscript) = File::Spec->splitpath($0);
+my($volume,$directories,$myscript)=File::Spec->splitpath($0);
 my($tmp_fname)='/tmp/'.$myscript.$$;
 my($prog)='timidity';
-#my($prog)='cpp';
 
-# here we go...
+# script starts here
 my($input)=shift(@ARGV);
 my($output)=shift(@ARGV);
 if($debug) {
@@ -29,12 +28,12 @@ if($debug) {
 	print 'input is ['.$input.']'."\n";
 	print 'output is ['.$output.']'."\n";
 }
-#check that the input exists and if not then die...
+# check that the input exists and if not then die...
 if(! -f $input) {
 	die('no input provided');
 }
+# make sure that there is no output...
 if(-f $output) {
-	# make sure that there is no output...
 	my($fnum)=unlink($output);
 	if($fnum!=1) {
 		die('unable to remove file ['.$output.']');
@@ -68,8 +67,11 @@ if($res) {
 	}
 	exit($res << 8);
 } else {
-	chmod(0444,$output);
-	my($fnum)=unlink($tmp_fname);
+	my($fnum)=chmod(0444,$output);
+	if($fnum!=1) {
+		die('unable to chmod file ['.$tmp_fname.']');
+	}
+	$fnum=unlink($tmp_fname);
 	if($fnum!=1) {
 		die('unable to remove file ['.$tmp_fname.']');
 	}

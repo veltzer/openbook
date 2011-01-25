@@ -35,7 +35,6 @@ use File::Spec qw();
 
 # parameters
 my($debug)=0;
-# todo - replace with the name of this script
 my($volume,$directories,$myscript) = File::Spec->splitpath($0);
 my($tmp_fname)='/tmp/'.$myscript.$$;
 
