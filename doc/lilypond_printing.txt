@@ -1,6 +1,10 @@
 Here are some things I found out about the printing of lilypond produced
 pdfs and ps files...
 
+command line
+============
+To find out your default configured printer: lpstat -d.
+
 Printer settings
 ================
 make sure that your printer settings (cups or administration from gnome or KDE) is right.
@@ -45,3 +49,9 @@ references: http://www.complang.tuwien.ac.at/anton/why-not-pdf.html
 Summary
 =======
 If you want the best quality then print the lilypond outputs using ** postscript ** from either the gnome document viewer or from the command line lp(1) (I prefer the latter for more determinism since it only takes preferences from the cups layer). 
+
+HP printers on Linux/Ubuntu
+===========================
+I have an HP laserjet 3030 and printing postscript directly from lilypond to it stopped working. This seems to be because the printer
+does not understand the new postscript. If I run the hp utility and configure the printer through it then it works well.
+The command line works ok too.
