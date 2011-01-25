@@ -15,10 +15,6 @@
 # collecting the childs return status while also piping from it. I don't know how to do
 # that in perl.
 
-
-use strict;
-use diagnostics;
-
 =head previous attempt
 # run lilypond with all the arguments that I was given,
 # redirecting stderr to stdout and stdout to ourselves
@@ -33,14 +29,21 @@ print 'close returned '.$res."\n";
 
 =cut
 
+use strict;
+use diagnostics;
+use File::Spec qw();
+
 # parameters
 my($debug)=0;
-my($tmp_fname)='/tmp/'.$ARGV[1].$$;
+# todo - replace with the name of this script
+my($volume,$directories,$myscript) = File::Spec->splitpath($0);
+my($tmp_fname)='/tmp/'.$myscript.$$;
 
 # here we go...
 my($output)=shift(@ARGV);
 my($cmd)='lilypond '.join(' ',@ARGV).' 1> /dev/null 2> '.$tmp_fname;
 if($debug) {
+	print 'tmp_fname is ['.$tmp_fname.']'."\n";
 	print 'cmd is ['.$cmd.']'."\n";
 }
 my($res)=system($cmd);
@@ -55,7 +58,15 @@ if($res) {
 	}
 	close(FILE) || die('unable to close');
 	# exit with error code of the child...
+	my($fnum)=unlink($tmp_fname);
+	if($fnum!=1) {
+		die('unable to remove file ['.$tmp_fname.']');
+	}
 	exit($res << 8);
 } else {
+	my($fnum)=unlink($tmp_fname);
+	if($fnum!=1) {
+		die('unable to remove file ['.$tmp_fname.']');
+	}
 	system("touch $output");
 }

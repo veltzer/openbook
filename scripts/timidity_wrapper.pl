@@ -15,6 +15,7 @@ use diagnostics;
 
 # parameters
 my($debug)=0;
+my($tmp_fname)='/tmp/'.$ARGV[0].$$;
 my($prog)='timidity';
 #my($prog)='cpp';
 
@@ -22,14 +23,22 @@ my($prog)='timidity';
 my($input)=shift(@ARGV);
 my($output)=shift(@ARGV);
 if($debug) {
+	print 'tmp_fname is ['.$tmp_fname.']'."\n";
 	print 'input is ['.$input.']'."\n";
 	print 'output is ['.$output.']'."\n";
 }
 #check that the input exists and if not then die...
 if(! -f $input) {
-	die("no input provided");
+	die('no input provided');
 }
-my($cmd)=$prog.' '.join(' ',@ARGV);
+if(-f $output) {
+	# make sure that there is no output...
+	my($fnum)=unlink($output);
+	if($fnum!=1) {
+		die('unable to remove file ['.$output.']');
+	}
+}
+my($cmd)=$prog.' '.join(' ',@ARGV).' 2> '.$tmp_fname;
 if($debug) {
 	print 'cmd is ['.$cmd.']'."\n";
 }
@@ -38,8 +47,28 @@ if($debug) {
 	print 'system returned ['.$res.']'."\n";
 }
 if($res) {
-	unlink($output);
+	# remove the output to make sure that we leave no output behind...
+	my($fnum)=unlink($output);
+	if($fnum!=1) {
+		die('unable to remove file ['.$output.']');
+	}
+	# print the error log
+	open(FILE,$tmp_fname) || die('unable to open');
+	my($line);
+	while($line=<FILE>) {
+		print $line;
+	}
+	close(FILE) || die('unable to close');
+	# exit with error code of the child...
+	my($fnum)=unlink($tmp_fname);
+	if($fnum!=1) {
+		die('unable to remove file ['.$tmp_fname.']');
+	}
 	exit($res << 8);
 } else {
 	chmod(0444,$output);
+	my($fnum)=unlink($tmp_fname);
+	if($fnum!=1) {
+		die('unable to remove file ['.$tmp_fname.']');
+	}
 }
