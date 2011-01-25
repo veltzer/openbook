@@ -12,10 +12,12 @@
 
 use strict;
 use diagnostics;
+use File::Spec qw();
 
 # parameters
 my($debug)=0;
-my($tmp_fname)='/tmp/'.$ARGV[0].$$;
+my($volume,$directories,$myscript) = File::Spec->splitpath($0);
+my($tmp_fname)='/tmp/'.$myscript.$$;
 my($prog)='timidity';
 #my($prog)='cpp';
 
