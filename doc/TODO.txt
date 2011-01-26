@@ -1,6 +1,7 @@
 urgnet:
 =======
-make all tunes include my ending includes so that I will not need to update so many tunes.
+- make all tunes include my ending includes so that I will not need to update so many tunes.
+- see that multipl epdfs work up to the web level (come rain or come shine already has those).
 
 licensing:
 ==========
