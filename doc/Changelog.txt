@@ -1,3 +1,4 @@
 25/10/10: fixed the fact that ly.d files (dependency) was not being used
 right.
 15/1/11: add gpp support. Now lilypond files are self sufficient.
+26/1/11: checked that epdfs work up to the db level.
