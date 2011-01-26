@@ -24,8 +24,6 @@ jazzTune
 	TODO:
 	- make it fit on one page (reduce sizes of staffs, space between staff and more).
 	- make the size of the copyright smaller so that I could fit the entire copyright.
-	- at the end of the tune the word "laugh" appears in the wrong place because of the voltas and the fact
-		that I still don't know how to skip notes or do voltas properly in lyrics mode.
 %}
 
 
@@ -106,49 +104,49 @@ myVoice=\relative c' {
 }
 myLyrics=\lyricmode {
 	They All Laughed at Chris -- to -- pher Co -- lum -- bus
-	When he said the world was round.
-	They All Laughed when Ed -- i -- son re -- cord -- ed sound.
+	When he said the world was round. __
+	They All Laughed when Ed -- i -- son re -- cord -- ed sound. __
 
 	They All Laughed at Wil -- bur and his bro -- ther,
-	When they said that man could fly.
+	When they said that man could fly. __
 	They told Mar -- co -- ni wire -- less was a pho -- ny;
 	It's the same old cry.
 
-	They laughed at me want -- ing you,
+	They laughed at me __ want -- ing you, __
 	Said I was reach -- ing for the moon.
-	But oh, you came through
+	But oh, __ you came through __
 	Now they'll have to change their tune.
 
 	They all said we nev -- er could be hap -- py,
 	They laughed at us and how!
-	But ho, ho, ho!
-	Who's got the last laugh now?
+	But "\"ho," ho, "ho!\""
+	Who's got the last laugh now? __
+
+	"\"Hee," hee, "hee!\""
+	Let's at the past laugh,
+	"\"Ha," ha, "ha!\""
+	Who's got the last laugh now? __
 }
 myLyricsmore=\lyricmode {
 
 	They All Laughed at Rock -- e -- fel -- ler Cen -- ter,
-	Now they're fight -- ing to get in.
-	They all laughed at Whit -- ney and his cot -- ton gin.
+	Now they're fight -- ing to get in. __
+	They all laughed at Whit -- ney and his cot -- ton gin. __
 
 	They all laughed at Ful -- ton and his steam -- boat,
-	Her -- shey and his choc' -- late bar.
+	Her -- shey and his choc' -- late bar. __
 	Ford and his Liz -- zie Kept the laugh -- ers bus -- y;
 	That's how peo -- ple are.
 
-	They laughed at me want -- ing you,
-	Said it would be 'Hel -- lo, Good -- bye.'
-	And oh, you came through
+	They laughed at me __ want -- ing you, __
+	Said it would be "\"Hel" -- lo, Good -- "bye.\""
+	And oh, __ you came through __
 	Now they're eat -- ing hum -- ble pie.
 
 	They all said we'd nev -- er get to -- geth -- er;
 	Dar -- ling, let's take a bow.
 	For "\"ho," ho, "ho!\""
-	Who's got the last laugh _
-
-	'Hee, hee, hee!'
-	Let's at the past laugh,
-	'Ha, ha, ha!'
-	Who's got the last laugh now?
+	Who's got the last laugh
 }
 
 %% score for printing
