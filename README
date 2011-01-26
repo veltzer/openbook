@@ -1,16 +1,34 @@
 Hello and Welcome to OpenBook
 =============================
 * What is OpenBook ?
-OpenBook is a jazz real book constructed with free software.
+OpenBook is a jazz real book constructed with free software. A real book simply means a big book with lots of jazz tunes or standards as they are more widely known.
+
+* Why did you start this ?
+Because of many reasons:
+- I wanted to learn jazz and a good way to do that is to write down the tunes (amongst many many other things).
+- I wanted beautiful sheet music that I could fiddle with.
+- I did not want to pay for the overly expensive real or fake books out there.
+- I believe in free software and wanted free (in the sense of freedom) sheet music.
+- Jazz is a prime example of a free type of art so it's conjunction with free software seems a match made in heaven.
 
 * What tools are used ?
 lilypond, m4, make, perl, lame, timidity, gpp, cpp and possibly more.
 
 * What is produced ?
-A postscript and PDF real book with Jazz tunes. Possibly other format in the future (epub?).
+A postscript and PDF real book with Jazz tunes.
+In addition you can produce midi, mp3, ogg outputs.
+Possibly other output formats will be supported in the future (epub?).
 
 * Who can contribute ?
 Anyone.
+
+* What system do I need to participate ?
+A Linux system that you can install software on.
+Windows is not currently supported although well formed patches will be accepted.
+
+* What do I need to know to participate ?
+Some very rudimentary Linux system administration knowledge.
+In order to edit or add tunes you also need to know the lilypond language.
 
 * Who currently contributes ?
 Just me (Mark Veltzer <mark.veltzer@gmail.com>).
@@ -27,8 +45,11 @@ Yes. I just haven't gotten around to it yet. Meanwhile you get one pdf per stand
 * How do you write the standards ?
 Using lilypond. Check it out at: http://www.lilypond.org/
 
+* Will you co-operate with the lilypond and the mutopia communities ?
+YES! Any bugs or feature suggestion are submitted to the lilypond community. Any requests for pieces from the mutopia community will be respected.
+
 * Do you only allow Jazz tunes ?
 No. Rock and Pop will be welcome and so would classical. If you are really into classical lilypond production you may alternativly wish to contribute to the mutopia project at http://www.mutopiaproject.org/.
 
-			Mark Veltzer 2011
+			Mark Veltzer, 2011
 			mark.veltzer@gmail.com
