@@ -66,9 +66,24 @@ Lyrics
 	or use double quotes this way:
 	He said "\"hello\""
 	I know it's weird.
+	If you want to print ["Hello"] you can do "\""Hello"\"" or "\"" Hello "\"".
+	The first one will show as "\""Hello"\"" and the second as " Hello ". Both are not what you want.
+	See "they_all_laughed" for an example.
 - setting the fonts for the lyrics:
 	\override Score . LyricText #'font-size = #-3
 - not singing even though there is music (real no lyrics):
+	I still don't know how to do this. This is useful when there are voltas.
+- how to handle voltas in lyrics.
+	Simply write the parts in the "wrong" order.
+	If parts are A { B, C }
+	then write them as one lyrics block which goes A B C (as opposed to A B A C).
+	If parts are A B C D where B is the first volta and D is the second then write two lyrics blocks:
+		A B D    and     C.
+	See "they_all_laughed" for an example.
+- one word over a note with arcs
+	Actually you dont need to do anything in order to do this.
+	If you really want to see lyrics with outstreched line like this___ then as __ after the relevant lyrics.
+	See "they_all_laughed" for an example.
 
 Midi production
 ===============
