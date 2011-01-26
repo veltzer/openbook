@@ -7,5 +7,9 @@ How to collect these ?
 	Then find the page and file you need it from.
 	Open it too using the same tool.
 	Then print to a file selecting only the page(s) you need.
+
+	The book that I have is called "Jazz Fake Book.pdf" and it is also quite good.
+	When printing from this book with page number use an offset of -1.
+	Meaning if you want to print pages 76-80 print the pages 75-79.
 - scan from my own fakebooks.
 	I usually use xsane for this.
