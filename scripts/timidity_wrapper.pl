@@ -30,7 +30,7 @@ if($debug) {
 }
 # check that the input exists and if not then die...
 if(! -f $input) {
-	die('no input provided');
+	die('input file ['.$input.'] doesnt exist');
 }
 # make sure that there is no output...
 if(-f $output) {

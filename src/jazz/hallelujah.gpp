@@ -14,7 +14,7 @@ jazzTune
 phraseA={ r4 d'8. c'16 aes8. g16 f8. d16 }
 phraseB={ r8. c'16 d'8. c'16 aes8. g16 f8. d16 }
 
-tune={
+myVoice={
 	\key f \major
 	\time 4/4
 	\phraseA | f4 f8 aes8 ~ aes8 r8 r4 |
@@ -32,7 +32,7 @@ tune={
 	aes8. g16 f8. d16 f4 f8 f8 | f8 r8 r4 r2 |
 }
 
-text=\lyrics {
+myLyrics=\lyrics {
 	Let me tell you 'bout a boy I know ___
 	He is my ba -- by and he lives next door. ___ ___
 	Ev -- 'ry morn -- ing 'fore the sun comes up, ___
@@ -46,7 +46,7 @@ text=\lyrics {
 	That's why I know, ___ yes I know, ___ Hal -- le lu -- jah, I just love him so. ___
 }
 
-harmony=\chords {
+myChords=\chords {
 	f1 | bes4. b4:dim7 r4. | f1 | bes4. b8:dim7 r8. c16:7 r4 | f1 | f2.:7 f4:7.5+ |
 	bes1 | b:dim7 | f2 a:7 | d:m bes:7 | g:7 c4.:7.4 f8 | r1 |
 

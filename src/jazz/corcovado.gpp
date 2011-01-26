@@ -18,7 +18,7 @@ jazzTune
 	- add the intro chords (they are not currently shown
 %}
 
-tune={
+myVoice={
 	\time 4/4
 	\key c \major
 	\clef treble
@@ -85,7 +85,7 @@ intro=\chords {
 	\endChords
 }
 
-harmony=\chords {
+myChords=\chords {
 	% 1
 	d1:9 | r1 | aes1:dim | r1 | g1:m7 | c:9 | f:maj7 | f:6 |
 	% 9
@@ -96,7 +96,7 @@ harmony=\chords {
 	d:m7 | g:7 |
 }
 
-text=\lyrics {
+myLyrics=\lyrics {
 	Qui -- et ___ nights of qui -- et stars,
 	qui -- et ___ chords from my gui -- tar ___
 	float -- ing on ___ the si ___ -- lence that sur -- rounds ___ us ___

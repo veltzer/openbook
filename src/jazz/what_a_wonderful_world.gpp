@@ -12,7 +12,7 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-tune={
+myVoice={
 	\key f \major
 	\time 4/4
 
@@ -33,7 +33,7 @@ tune={
 	\times 2/3 {a4 f g} f2 | r4 f8 f \times 2/3 {e4 f g} | f1 ~ | f
 }
 
-text=\lyrics {
+myLyrics=\lyrics {
 	I see trees of green, red ros -- es too, I see the bloom for me and you, ___
 	and I think ___ to my -- self what a won -- der -- ful world. ___
 
@@ -53,7 +53,7 @@ text=\lyrics {
 	Yes, I think to my -- self what a won -- der -- ful world. ___
 }
 
-harmony=\chords {
+myChords=\chords {
 	\startChords
 
 	\startSong
