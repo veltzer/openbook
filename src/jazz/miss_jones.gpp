@@ -17,7 +17,7 @@ jazzTune
 	-add lyrics
 %}
 
-harmony=\chords {
+myChords=\chords {
 	\startChords
 
 	\startSong
@@ -48,7 +48,7 @@ harmony=\chords {
 	\endChords
 }
 
-tune=\relative a' {
+myVoice=\relative a' {
 	\time 4/4
 	\key f \major
 

@@ -11,7 +11,7 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-tune=\relative c''{
+myVoice=\relative c''{
 	\time 4/4
 	\key a \minor
 
@@ -33,7 +33,7 @@ tune=\relative c''{
 	}
 }
 
-harmony=\chords {
+myChords=\chords {
 	\startChords
 
 	\startSong

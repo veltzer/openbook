@@ -17,7 +17,7 @@ jazzTune
 	- turn this tune relative
 %}
 
-harmony=\chords {
+myChords=\chords {
 	\startChords
 
 	\startSong
@@ -47,7 +47,7 @@ harmony=\chords {
 	\endChords
 }
 
-tune={
+myVoice={
 	\key c \major
 	\time 4/4
 	\partial 4 e''8 g''8 |
