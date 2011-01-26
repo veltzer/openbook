@@ -192,7 +192,7 @@ check_uuid:
 .PHONY: check_common
 check_common:
 	$(info doing [$@])
-	-$(Q)grep --files-without-match "common_m4.lyi" $(FILES_GPP)
+	-$(Q)grep --files-without-match "common.lyi" $(FILES_GPP)
 .PHONY: check_no_poet
 check_no_poet:
 	$(info doing [$@])
