@@ -14,13 +14,13 @@
 \score {
 	\unfoldRepeats
 	<<
-	  	%% the ="Chords" is the name of the channel that will be in midi
+		%% the ="Chords" is the name of the channel that will be in midi
 		\new ChordNames="Chords" \myChords
-	  	%% the ="Melody" is the name of the channel that will be in midi
+		%% the ="Melody" is the name of the channel that will be in midi
 		\new Staff="Melody" {
 			\new Voice="myvoice" \myVoice
 		}
-	  	%% the ="Lyrics" is the name of the channel that will be in midi
+		%% the ="Lyrics" is the name of the channel that will be in midi
 		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyrics
 	>>
 	\midi {
