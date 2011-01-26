@@ -16,13 +16,16 @@ jazzTune
 
 %{
 	TODO:
+	- bring over epdf from the fakebook.
+	- do the __ thingy.
+	- add a performance from youtube.
 %}
 
 myChords=\chordmode {
 	\startChords
 %%	list of instruments can be found at
 %%	http://lilypond.org/doc/v2.11/Documentation/user/lilypond/MIDI-instruments#MIDI-instruments
-%%	\set ChordNames.midiInstrument = #"acoustic grand"
+	\set ChordNames.midiInstrument = #"acoustic grand"
 
 	\startSong
 
@@ -70,7 +73,7 @@ myVoice=\relative c' {
 	\key f \major
 %%	list of instruments can be found at
 %%	http://lilypond.org/doc/v2.11/Documentation/user/lilypond/MIDI-instruments#MIDI-instruments
-%%	\set Staff.midiInstrument = #"flute"
+	\set Staff.midiInstrument = #"flute"
 
 	% A: Bar 1
 	r8 c4 d8 e4 f |
@@ -173,9 +176,11 @@ myLyrics=\lyricmode {
 %% score for printing
 \score {
 	<<
-		\new ChordNames="mychords" \myChords
-		\new Voice="myvoice" \myVoice
-		\new Lyrics \lyricsto "myvoice" \myLyrics
+		\new ChordNames="Chords" \myChords
+		\new Staff="Melody" {
+			\new Voice="myvoice" \myVoice
+		}
+		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyrics
 	>>
 	\layout {
 	}
@@ -184,8 +189,11 @@ myLyrics=\lyricmode {
 \score {
 	\unfoldRepeats
 	<<
-		\new ChordNames="mychords" \myChords
-		\new Voice="myvoice" \myVoice
+		\new ChordNames="Chords" \myChords
+		\new Staff="Melody" {
+			\new Voice="myvoice" \myVoice
+		}
+		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyrics
 	>>
 	\midi {
 	}
