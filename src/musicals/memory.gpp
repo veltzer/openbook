@@ -1,4 +1,4 @@
-include(src/include/common_m4.lyi)
+include(src/include/common.lyi)
 \header {
 	subsubtitle=subsubtitle_val
 	enteredby=enteredby_val

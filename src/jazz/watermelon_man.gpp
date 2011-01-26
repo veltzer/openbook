@@ -1,4 +1,4 @@
-include(src/include/common_m4.lyi)
+include(src/include/common.lyi)
 \header {
 	default_header
 	title="Watermelon Man"

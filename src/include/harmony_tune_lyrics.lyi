@@ -1,9 +1,28 @@
+%% score for printing
 \score {
 	<<
-		\context ChordNames \harmony
-		\context Staff \tune
-		\context Lyrics \text
+		\new ChordNames="Chords" \myChords
+		\new Staff="Melody" {
+			\new Voice="myvoice" \myVoice
+		}
+		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyrics
 	>>
-	\midi {}
-	\layout {}
+	\layout {
+	}
+}
+%% score for midi
+\score {
+	\unfoldRepeats
+	<<
+	  	%% the ="Chords" is the name of the channel that will be in midi
+		\new ChordNames="Chords" \myChords
+	  	%% the ="Melody" is the name of the channel that will be in midi
+		\new Staff="Melody" {
+			\new Voice="myvoice" \myVoice
+		}
+	  	%% the ="Lyrics" is the name of the channel that will be in midi
+		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyrics
+	>>
+	\midi {
+	}
 }
