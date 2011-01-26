@@ -96,23 +96,5 @@ myLyrics=\lyricmode {
 	Don't you know I'll close my eyes
 	And I'll see you with my heart
 }
-%% score for printing
-\score {
-	<<
-		\new ChordNames="mychords" \myChords
-		\new Voice="myvoice" \myVoice
-		\new Lyrics \lyricsto "myvoice" \myLyrics
-	>>
-	\layout {
-	}
-}
-%% score for midi
-\score {
-	\unfoldRepeats
-	<<
-		\new ChordNames="mychords" \myChords
-		\new Voice="myvoice" \myVoice
-	>>
-	\midi {
-	}
-}
+
+include(src/include/harmony_tune_lyrics.lyi)

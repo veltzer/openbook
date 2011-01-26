@@ -69,23 +69,5 @@ myLyrics=\lyricmode {
 	How long I wondered could this thing last? But_the age of mira -- cles had -- n't passed,
 	for sud -- den -- ly I saw you there and through fog -- gy Lon -- don town the sun was shin -- ing ev -- 'ry where.
 }
-%% score for printing
-\score {
-	<<
-		\new ChordNames="mychords" \myChords
-		\new Voice="myvoice" \myVoice
-		\new Lyrics \lyricsto "myvoice" \myLyrics
-	>>
-	\layout {
-	}
-}
-%% score for midi
-\score {
-	\unfoldRepeats
-	<<
-		\new ChordNames="mychords" \myChords
-		\new Voice="myvoice" \myVoice
-	>>
-	\midi {
-	}
-}
+
+include(src/include/harmony_tune_lyrics.lyi)

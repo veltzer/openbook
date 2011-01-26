@@ -1,8 +1,25 @@
+%% score for printing
 \score {
 	<<
-		\context ChordNames \harmony
-		\context Staff \tune
+		\new ChordNames="Chords" \myChords
+		\new Staff="Melody" {
+			\new Voice="myvoice" \myVoice
+		}
 	>>
-	\midi {}
-	\layout {}
+	\layout {
+	}
+}
+%% score for midi
+\score {
+	\unfoldRepeats
+	<<
+	  	%% the ="Chords" is the name of the channel that will be in midi
+		\new ChordNames="Chords" \myChords
+	  	%% the ="Melody" is the name of the channel that will be in midi
+		\new Staff="Melody" {
+			\new Voice="myvoice" \myVoice
+		}
+	>>
+	\midi {
+	}
 }

@@ -130,24 +130,5 @@ myLyricsmore=\lyricmode {
 	that swings so cool and sways _ so gen -- tle,
 	that when she pass -- es, each one she pass -- es goes
 }
-%% score for printing
-\score {
-	<<
-		\new ChordNames="mychords" \myChords
-		\new Voice="myvoice" \myVoice
-		\new Lyrics \lyricsto "myvoice" \myLyrics
-		\new Lyrics \lyricsto "myvoice" \myLyricsmore
-	>>
-	\layout {
-	}
-}
-%% score for midi
-\score {
-	\unfoldRepeats
-	<<
-		\new ChordNames="mychords" \myChords
-		\new Voice="myvoice" \myVoice
-	>>
-	\midi {
-	}
-}
+
+include(src/include/harmony_tune_lyricsmore.lyi)

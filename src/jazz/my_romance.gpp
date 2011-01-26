@@ -82,23 +82,5 @@ myLyrics=\lyricmode {
 	Wide a -- wake I can make my most fan -- tas -- tic dreams come true;
 	My Ro -- mance does -- n't need a thing but you.
 }
-%% score for printing
-\score {
-	<<
-		\new ChordNames="mychords" \myChords
-		\new Voice="myvoice" \myVoice
-		\new Lyrics \lyricsto "myvoice" \myLyrics
-	>>
-	\layout {
-	}
-}
-%% score for midi
-\score {
-	\unfoldRepeats
-	<<
-		\new ChordNames="mychords" \myChords
-		\new Voice="myvoice" \myVoice
-	>>
-	\midi {
-	}
-}
+
+include(src/include/harmony_tune_lyrics.lyi)

@@ -14,7 +14,7 @@ jazzTune
 A=\relative c' { bes8 ees g | f f f f ees f r g | }
 B=\relative c' { bes8 ees g | f f f f ees f r ees | }
 
-tune=\relative c' {
+myVoice=\relative c' {
 	\key ees \major
 	\time 4/4
 	\partial 4. bes8 ees g |
@@ -33,7 +33,7 @@ tune=\relative c' {
 	r bes4. a4 aes | g8 g g g f f r ees | r1 |
 }
 
-harmony=\chords {
+myChords=\chords {
 	\startChords
 
 	\startSong
@@ -62,4 +62,5 @@ harmony=\chords {
 
 	\endChords
 }
+
 include(src/include/harmony_tune.lyi)

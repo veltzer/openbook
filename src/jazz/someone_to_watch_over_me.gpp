@@ -119,24 +119,4 @@ myLyricsmore=\lyricmode {
 	To one who’ll watch o -- ver %% me
 }
 
-%% score for printing
-\score {
-	<<
-		\new ChordNames="mychords" \myChords
-		\new Voice="myvoice" \myVoice
-		\new Lyrics \lyricsto "myvoice" \myLyrics
-		\new Lyrics \lyricsto "myvoice" \myLyricsmore
-	>>
-	\layout {
-	}
-}
-%% score for midi
-\score {
-	\unfoldRepeats
-	<<
-		\new ChordNames="mychords" \myChords
-		\new Voice="myvoice" \myVoice
-	>>
-	\midi {
-	}
-}
+include(src/include/harmony_tune_lyricsmore.lyi)
