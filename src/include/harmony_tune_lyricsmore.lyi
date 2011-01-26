@@ -1,0 +1,21 @@
+%% score for printing
+\score {
+	<<
+		\new ChordNames="mychords" \myChords
+		\new Voice="myvoice" \myVoice
+		\new Lyrics \lyricsto "myvoice" \myLyrics
+		\new Lyrics \lyricsto "myvoice" \myLyricsmore
+	>>
+	\layout {
+	}
+}
+%% score for midi
+\score {
+	\unfoldRepeats
+	<<
+		\new ChordNames="mychords" \myChords
+		\new Voice="myvoice" \myVoice
+	>>
+	\midi {
+	}
+}

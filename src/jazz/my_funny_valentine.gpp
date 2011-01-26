@@ -89,23 +89,5 @@ myLyrics=\lyricmode {
 	Stay lit -- tle Val -- en -- tine, stay!
 	Each day is Val -- en -- tine's day.
 }
-%% score for printing
-\score {
-	<<
-		\new ChordNames="mychords" \myChords
-		\new Voice="myvoice" \myVoice
-		\new Lyrics \lyricsto "myvoice" \myLyrics
-	>>
-	\layout {
-	}
-}
-%% score for midi
-\score {
-	\unfoldRepeats
-	<<
-		\new ChordNames="mychords" \myChords
-		\new Voice="myvoice" \myVoice
-	>>
-	\midi {
-	}
-}
+
+include(src/include/harmony_tune_lyrics.lyi)

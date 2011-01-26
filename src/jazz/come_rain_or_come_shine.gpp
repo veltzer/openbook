@@ -115,25 +115,5 @@ myLyrics=\lyricmode {
 	But I'm with you al -- ways,
 	I'm with you rain _ or shine!
 }
-%% score for printing
-\score {
-	<<
-%%		\new ChordNames="mychords" \myChords
-		\new ChordNames="mychords" \myChordsAmit
-		\new Voice="myvoice" \myVoice
-		\new Lyrics \lyricsto "myvoice" \myLyrics
-	>>
-	\layout {
-	}
-}
-%% score for midi
-\score {
-	\unfoldRepeats
-	<<
-%%		\new ChordNames="mychords" \myChords
-		\new ChordNames="mychords" \myChordsAmit
-		\new Voice="myvoice" \myVoice
-	>>
-	\midi {
-	}
-}
+
+include(src/include/harmony_tune_lyrics.lyi)

@@ -173,4 +173,5 @@ myLyrics=\lyricmode {
 	There'll be no De -- sa -- fi -- na -- do when your heart be -- longs to me com -- plete -- ly.
 	Then you won't be Slight -- ly Out Of Tune, you'll sing a -- long with me.
 }
+
 include(src/include/harmony_tune_lyrics.lyi)

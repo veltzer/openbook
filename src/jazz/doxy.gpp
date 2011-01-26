@@ -73,22 +73,5 @@ myVoice=\relative f' {
 	bes8 d bes f bes4 r8 f | bes8 f bes des r g,4 f8 |
 	e8 g bes des \times 4/3 { c16 des c } g8 bes | r1 |
 }
-%% score for printing
-\score {
-	<<
-		\new ChordNames="mychords" \myChords
-		\new Voice="myvoice" \myVoice
-	>>
-	\layout {
-	}
-}
-%% score for midi
-\score {
-	\unfoldRepeats
-	<<
-		\new ChordNames="mychords" \myChords
-		\new Voice="myvoice" \myVoice
-	>>
-	\midi {
-	}
-}
+
+include(src/include/harmony_tune.lyi)

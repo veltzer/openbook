@@ -47,22 +47,5 @@ myVoice=\relative ees'' {
 	r4 c,8 ( c8 g'4 a4 | aes8 g8 f8 d8 c4 d-. ) |
 	r4 c8 ( c8 g'4 aes4 | \mark \markup { \italic { break } } f-. ) f,8 f8 <aes c> ( <bes d>4-. ) f8 ~ | f1 | r1 |
 }
-%% score for printing
-\score {
-	<<
-		\new ChordNames="mychords" \myChords
-		\new Voice="myvoice" \myVoice
-	>>
-	\layout {
-	}
-}
-%% score for midi
-\score {
-	\unfoldRepeats
-	<<
-		\new ChordNames="mychords" \myChords
-		\new Voice="myvoice" \myVoice
-	>>
-	\midi {
-	}
-}
+
+include(src/include/harmony_tune.lyi)
