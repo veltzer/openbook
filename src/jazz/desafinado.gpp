@@ -1,4 +1,4 @@
-include(src/include/common_m4.lyi)
+include(src/include/common.lyi)
 \header{
 	default_header
 	title="Desafinado"
@@ -173,28 +173,4 @@ myLyrics=\lyricmode {
 	There'll be no De -- sa -- fi -- na -- do when your heart be -- longs to me com -- plete -- ly.
 	Then you won't be Slight -- ly Out Of Tune, you'll sing a -- long with me.
 }
-%% score for printing
-\score {
-	<<
-		\new ChordNames="Chords" \myChords
-		\new Staff="Melody" {
-			\new Voice="myvoice" \myVoice
-		}
-		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyrics
-	>>
-	\layout {
-	}
-}
-%% score for midi
-\score {
-	\unfoldRepeats
-	<<
-		\new ChordNames="Chords" \myChords
-		\new Staff="Melody" {
-			\new Voice="myvoice" \myVoice
-		}
-		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyrics
-	>>
-	\midi {
-	}
-}
+include(src/include/harmony_tune_lyrics.lyi)
