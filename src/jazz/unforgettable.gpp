@@ -14,7 +14,7 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-harmony=\chords {
+myChords=\chords {
 	\startChords
 
 	\startSong
@@ -40,7 +40,7 @@ harmony=\chords {
 	\endChords
 }
 
-tune={
+myVoice={
 	\key g \major
 	\time 4/4
 	d'4 e'4 e'8 fis'4 fis'8 ~ | fis'2 \times 2/3 { d'4 e'4 g'4 } |
@@ -63,7 +63,7 @@ tune={
 
 }
 
-text=\lyrics {
+myLyrics=\lyrics {
 	Un-4 for-4 get-8 ta-4 ble,8 ~ | -2 \times 2/3 { that's4 what4 you4 } |
 	are,1 ~ | -2. -4 |
 	Un-4 for-4 get-8 ta-4 ble,8 ~ | -2 \times 2/3 { tho'4 near4 or4 } |

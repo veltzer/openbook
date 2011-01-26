@@ -14,7 +14,7 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-tune={
+myVoice={
 	\time 4/4
 	\key bes \major
 	\clef treble
@@ -70,7 +70,7 @@ tune={
 	bes'2 r8 f'4 f'8 |
 }
 
-harmony=\chords {
+myChords=\chords {
 	\startChords
 
 	\startSong
@@ -87,7 +87,7 @@ harmony=\chords {
 	\endChords
 }
 
-text=\lyrics {
+myLyrics=\lyrics {
 	This is just a lit ___ -- tle sam ___ -- ba
 	built up -- on a sin ___ -- gle note. ___
 	Oth -- er notes are bound ___ to fol ___ -- low
