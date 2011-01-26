@@ -12,7 +12,7 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-harmony=\chords {
+myChords=\chords {
 }
 
 intro=\relative f' {
@@ -20,7 +20,7 @@ intro=\relative f' {
 	\grace {fis'8 } g4 ~ g16 fis c gis ais2 |
 }
 
-tune={
+myVoice={
 	\time 4/4
 	\key aes \major
 
@@ -67,7 +67,6 @@ tune={
 	f4 c' f bes,! ees! aes,! des! fis, c'2
 	<b gis e b-\fermata>1
 	}
-
 }
 
 include(src/include/harmony_tune.lyi)

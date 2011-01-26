@@ -16,7 +16,7 @@ jazzTune
 	TODO:
 %}
 
-tune={
+myVoice={
 	\key bes \major
 	\time 4/4
 
@@ -37,7 +37,7 @@ tune={
 	c4 d bes c | bes1 | r1 |
 }
 
-harmony=\chords {
+myChords=\chords {
 	\startChords
 
 	\startSong

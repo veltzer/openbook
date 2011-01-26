@@ -19,7 +19,7 @@ jazzTune
 	- add length to all note.
 %}
 
-harmony=\chords {
+myChords=\chords {
 	\mark "Intro"
 	\repeat volta 4 { e2.:m7 | f2.:maj7.4+ }
 
@@ -46,7 +46,7 @@ harmony=\chords {
 	\endSong
 }
 
-tune=\relative e' {
+myVoice=\relative e' {
 	\time 3/4
 	\key g \major
 
