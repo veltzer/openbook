@@ -8,8 +8,8 @@ DO_MKDBG:=0
 DO_MAKEDEPS:=1
 # should we make the ly files ?
 DO_LY:=1
-# should we make dependency files ?
-DO_LYD:=1
+# should we make lilypond dependency files ?
+DO_LYD:=0
 # should we make pds ?
 DO_PDF:=1
 # should we make images ?
@@ -23,7 +23,7 @@ DO_WAV:=0
 DO_MP3:=1
 DO_OGG:=1
 # do you actually want to use dependency information ?
-USE_LYD:=1
+USE_LYD:=0
 # where are the sources located ?
 SRC_FOLDER:=src
 
@@ -62,8 +62,8 @@ endif # DO_MKDBG
 FILES_GPP:=$(shell find $(SRC_FOLDER) -name "*.gpp")
 FILES_LYI:=$(shell find $(SRC_FOLDER) -name "*.lyi")
 
-FILES_LYD:=$(addsuffix .d,$(FILES_LY))
 FILES_LY:=$(addsuffix .ly,$(basename $(FILES_GPP)))
+FILES_LYD:=$(addsuffix .d,$(FILES_LY))
 FILES_PDF:=$(addsuffix .pdf,$(basename $(FILES_GPP)))
 FILES_PS:=$(addsuffix .ps,$(basename $(FILES_GPP)))
 FILES_MIDI:=$(addsuffix .midi,$(basename $(FILES_GPP)))
