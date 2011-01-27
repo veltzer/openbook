@@ -19,6 +19,9 @@ A postscript and PDF real book with Jazz tunes.
 In addition you can produce midi, mp3, ogg outputs.
 Possibly other output formats will be supported in the future (epub?).
 
+* What is the copyright ?
+All the stuff in this project is GPL version 3. The tunes themselves have their own copyright holders.
+
 * Who can contribute ?
 Anyone.
 
@@ -27,8 +30,10 @@ A Linux system that you can install software on.
 Windows is not currently supported although well formed patches will be accepted.
 
 * What do I need to know to participate ?
-Some very rudimentary Linux system administration knowledge.
-In order to edit or add tunes you also need to know the lilypond language.
+Some rudimentary Linux system administration (in order to install the software needed for this project to build).
+Some basic git software content tracking (in order to fetch the project, modify and submit patches). 
+The lilypond language (in order to edit or add tunes).
+Some music knowledge would also help...:)
 
 * Who currently contributes ?
 Just me (Mark Veltzer <mark.veltzer@gmail.com>).
@@ -50,6 +55,15 @@ YES! Any bugs or feature suggestion are submitted to the lilypond community. Any
 
 * Do you only allow Jazz tunes ?
 No. Rock and Pop will be welcome and so would classical. If you are really into classical lilypond production you may alternativly wish to contribute to the mutopia project at http://www.mutopiaproject.org/.
+
+* How do I get started ?
+create an account on git hub.
+git checkout -b [your branch name] git://github.com/veltzer/openbook.git
+make (install pieces of software that it needs if it complains).
+hack on the files (git add the files that you hack on).
+commit to your own hard driver (git commit).
+push to git hub (git push).
+request me to pull your changes (button in the github ui).
 
 			Mark Veltzer, 2011
 			mark.veltzer@gmail.com
