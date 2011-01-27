@@ -4,12 +4,9 @@ embed a licence in all of the tunes.
 Also do it in the Makefile, in the scripts and all.
 Add a test which shows which files are without license to check_all.
 
-tunes:
-======
-- a fine romance (almost done).
-- slihot (match lyrics to the tune).
-- ill close my eyes (tune, lyrics and maybe chords).
-- summer time.
+youtube links:
+==============
+support more than one youtube link.
 
 config system:
 ==============
@@ -23,12 +20,6 @@ They could select:
 
 epdfs:
 ======
-The idea is to have external pdfs derived from various sources (especially real books
-that I have in my collection but also scanned from 'real' books) that will be stored along
-with my tunes.
-These could be imported into the database and shown to other users of the application.
-
-Things to improve:
 - bring more epdfs for the tunes that I already have.
 	document how to find those epdfs.
 - bring the meta data from the epdfs into the database and show them.
@@ -78,13 +69,6 @@ outof lilypond lyrics support:
 - store the blob in the database and allow to download and view it.
 - syntax check the lyrics.
 
-lyrics support:
-===============
-- reduce the size of the lyrics.
-	Rationale: in a song like "They All Lauged" where you have two sets of lyrics for the entire song this makes
-	the print more than one page. Try to fit on a single page. In general - the size of the lyrics is too big for Jazz.
-	The right way to fix it would be in the Jazz style definitions.
-
 wav support (this is currently disabled):
 =========================================
 - reduce the size of the wav files (why are some of them so big ?!?).
@@ -102,11 +86,6 @@ midi support:
 =============
 - wikipedia have a way of playing midi directly from the wiki pages.
 	find out how. Do that from my page too.
-
-Material
-========
-- write the material for drumming training.
-	get material from the drummers course at Rimon.
 
 Lilypond cheet sheet
 ====================
@@ -156,11 +135,6 @@ Database additions
 - assume many jpegs and many midis per compilation. Store them all in the database.
 - make all the blobs reside in a blob table and make get blob really simple by getting
 	from that table either by uuid or by id.
-
-content
-=======
-- review the speed of the pieces and adjust them
-	(for instance: nature boy / Eben Ahbez is a little too fast).
 
 preprocessing system (m4)
 =========================

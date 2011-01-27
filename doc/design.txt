@@ -1,0 +1,35 @@
+youtube
+=======
+The idea is to enable people to link to youtube performances directly from the song.
+
+epfs
+====
+The idea is for standards written in this project to be accompanies by externals pdfs so
+that one could compare the version of the standard in this project with other real/fake
+books.
+
+The idea is to have external pdfs derived from various sources (especially real books
+that I have in my collection but also scanned from 'real' books) that will be stored along
+with my tunes.
+These could be imported into the database and shown to other users of the application.
+
+** TODO ** - describe how to add an external pdf and formalize the source description.
+
+UUID
+====
+- I'm using a unique id for each source file in order to not reimport these files
+into the databse each time.
+- I generate this uuid using the command line uuid(1) from the "uuid" package.
+- The uuid is stored in the header of each file and is imported into the database.
+- I recognize the tune by the uuid and not by any other means.
+- I added the uuid to the table thus:
+	alter table TbMsLilypond add uuid char(36) NOT NULL after id;
+	alter table TbMsLilypond add key(uuid);
+	* It seems that uuids are 36 characters long.
+- if you want to reverese engineer a uuid then you can do
+	uuid -d [uuid]
+	from the command line.
+
+preprocessing
+=============
+The project uses m4 as a preprocessor for the files. Rationale is in a separate file.
