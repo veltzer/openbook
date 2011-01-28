@@ -47,6 +47,7 @@ my($volume,$directories,$myscript) = File::Spec->splitpath($0);
 my($tmp_fname)='/tmp/'.$myscript.$$;
 # maximum number of pages produced per lily invocation...
 my($max_pages)=10;
+my($remove_tmp)=1;
 
 
 #	-$(Q)chmod 444 $@ $(dir $@)$(basename $(notdir $@))*.png $(dir $@)$(basename $(notdir $@)).ps $(dir $@)$(basename $(notdir $@)).pdf $(dir $@)$(basename $(notdir $@)).midi
@@ -135,12 +136,16 @@ if($res) {
 	}
 	close(FILE) || die('unable to close');
 	# remove the tmp file for the errors
-	unlink_check($tmp_fname,1);
+	if($remove_tmp) {
+		unlink_check($tmp_fname,1);
+	}
 	# exit with error code of the child...
 	exit($res << 8);
 } else {
 	# remove the tmp file for the errors
-	unlink_check($tmp_fname,1);
+	if($remove_tmp) {
+		unlink_check($tmp_fname,1);
+	}
 	# touch the output
 	# TODO - do this better (using open) and check the result code
 	system('touch '.$output);
