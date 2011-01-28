@@ -11,14 +11,15 @@ include(src/include/common.lyi)
 
 	completion="5"
 	uuid="c3fff540-a26e-11df-9435-0019d11e5a41"
+
+	idyoutube="g6w3a2v_50U"
+	idyoutube="Vixc_Hu4Ris"
+	idyoutube="lo1SiVwVqic"
 }
 jazzTune
 
 %{
 	TODO:
-	- bring over epdf from the fakebook.
-	- do the __ thingy.
-	- add a performance from youtube.
 %}
 
 myChords=\chordmode {
@@ -152,26 +153,26 @@ myVoice=\relative c' {
 	f2. r4 |
 }
 myLyrics=\lyricmode {
-	Love is like a nev -- er end -- ing mel -- o -- dy;
-	po -- ets have com -- pared it to a sym -- pho -- ny,
+	Love is like a nev -- er end -- ing mel -- o -- dy; __
+	po -- ets have com -- pared it to a sym -- pho -- ny, __
 	a sym -- pho -- ny con -- duc -- ted by the light -- ing of the moon,
-	but our song of love is Slight -- ly Out Of Tune.
+	but our song of love is Slight -- ly Out Of Tune. __
 
-	Once your kiss -- es raised me to a fev -- er pitch,
-	now the orch -- es -- tra -- tion does -- n't seem so rich.
-	Seems to me you've changed the tune we used to sing;
+	Once your kiss -- es raised me to a fev -- er pitch, __
+	now the orch -- es -- tra -- tion does -- n't seem so rich. __
+	Seems to me you've changed __ the tune we used to sing; __
 
-	like the Bos -- sa No -- va, love should swing.
-	We used to har -- mo -- nize two souls in per -- fect time.
-	Now the song is dif -- f'rent and the words don't e -- ven rhyme,
-	'cause you for -- got the mel -- o -- dy our hearts would al -- ways croon,
-	and so what good's a heart that's Slight -- ly Out Of Tune.
+	like the Bos -- sa No -- va, love should swing. __
+	We used to har -- mo -- nize __ two souls in per -- fect time. __
+	Now the song is dif -- f'rent and the words don't e -- ven rhyme, __
+	'cause you for -- got the mel -- o -- dy our hearts would al -- ways croon, __
+	and so what good's a heart that's Slight -- ly Out Of Tune. __
 
-	Tune your heart to mine the way it uysed to be;
+	Tune your heart to mine the way it uysed to be; __
 	join with me in har -- mo -- ny and sing a song of lov -- ing.
 	We're bound to get in tune a -- gain be -- fore too long.
-	There'll be no De -- sa -- fi -- na -- do when your heart be -- longs to me com -- plete -- ly.
-	Then you won't be Slight -- ly Out Of Tune, you'll sing a -- long with me.
+	There'll be no De -- sa -- fi -- na -- do when your heart be -- longs to me com -- plete -- ly. __
+	Then you won't be Slight -- ly Out Of Tune, __ you'll sing a -- long with me. __
 }
 
 include(src/include/harmony_tune_lyrics.lyi)

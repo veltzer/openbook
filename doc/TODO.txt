@@ -3,6 +3,11 @@ licensing:
 embed a licence in all of the tunes.
 Also do it in the Makefile, in the scripts and all.
 Add a test which shows which files are without license to check_all.
+	
+visuals
+=======
+- make more tunes fit on one page (reduce sizes of staffs, space between staff and more).
+- make the size of the copyright smaller so that I could fit the entire copyright.
 
 youtube links:
 ==============

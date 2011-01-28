@@ -6,6 +6,8 @@
 DO_MKDBG:=0
 # should we depend on the date of the makefile itself ?
 DO_MAKEDEPS:=1
+# should we depend on the wrappers ?
+DO_WRAPDEPS:=1
 # should we make the ly files ?
 DO_LY:=1
 # should we make lilypond dependency files ?
@@ -26,6 +28,12 @@ DO_OGG:=1
 USE_LYD:=0
 # where are the sources located ?
 SRC_FOLDER:=src
+# wrappers
+LILYPOND_WRAPPER:=scripts/lilypond_wrapper.pl
+M4_WRAPPER:=scripts/m4_wrapper.pl
+LILYDEP_WRAPPER:=scripts/lilydep.pl
+TIMIDITY_WRAPPER:=scripts/timidity_wrapper.pl
+TIMLAME_WRAPPER:=scripts/timlame_wrapper.pl
 
 # here begins the makefile...
 
@@ -49,6 +57,19 @@ LYFLAGS:=
 ALL_DEP:=
 ifeq ($(DO_MAKEDEPS),1)
 	ALL_DEP:=$(ALL_DEP) Makefile
+endif
+ifeq ($(DO_WRAPDEPS),1)
+	LILYPOND_WRAPPER_DEP:=$(LILYPOND_WRAPPER)
+	M4_WRAPPER_DEP:=$(M4_WRAPPER)
+	LILYDEP_WRAPPER_DEP:=$(LILYDEP_WRAPPER)
+	TIMIDITY_WRAPPER_DEP:=$(TIMIDITY_WRAPPER)
+	TIMLAME_WRAPPER_DEP:=$(TIMLAME_WRAPPER)
+else
+	LILYPOND_WRAPPER_DEP:=
+	M4_WRAPPER_DEP:=
+	LILYDEP_WRAPPER_DEP:=
+	TIMIDITY_WRAPPER_DEP:=
+	TIMLAME_WRAPPER_DEP:=
 endif
 
 ifeq ($(DO_MKDBG),1)
@@ -253,9 +274,9 @@ $(FILES_PDF): %.pdf: %.stamp $(ALL_DEP)
 
 $(FILES_MIDI): %.midi: %.stamp $(ALL_DEP)
 
-$(FILES_STAMP): %.stamp: %.ly $(ALL_DEP) ./scripts/lilypond_wrapper.pl
+$(FILES_STAMP): %.stamp: %.ly $(ALL_DEP) $(LILYPOND_WRAPPER_DEP)
 	$(info doing [$@])
-	$(Q)./scripts/lilypond_wrapper.pl $< $@ $(LYFLAGS) -o $(dir $@)$(basename $(notdir $@)) $<
+	$(Q)$(LILYPOND_WRAPPER) $< $@ $(LYFLAGS) -o $(dir $@)$(basename $(notdir $@)) $<
 
 #old rule
 #	rm -rf /tmp/folder
@@ -266,25 +287,25 @@ $(FILES_STAMP): %.stamp: %.ly $(ALL_DEP) ./scripts/lilypond_wrapper.pl
 #	mv /tmp/folder/foo.midi $(basename $<).midi
 #	touch $@
 #rm -rf /tmp/folder
-$(FILES_LY): %.ly: %.gpp $(ALL_DEP) ./scripts/m4_wrapper.pl
+$(FILES_LY): %.ly: %.gpp $(ALL_DEP) $(M4_WRAPPER_DEP)
 	$(info doing [$@])
-	$(Q)./scripts/m4_wrapper.pl $< $@
-$(FILES_LYD): %.ly.d: %.ly $(ALL_DEP) ./scripts/lilydep.pl
+	$(Q)$(M4_WRAPPER) $< $@
+$(FILES_LYD): %.ly.d: %.ly $(ALL_DEP) $(LILYDEP_WRAPPER_DEP)
 	$(info doing [$@])
-	$(Q)./scripts/lilydep.pl $< $@ $(basename $<).stamp $(basename $<).pdf $(basename $<).ps $(basename $<).midi
-$(FILES_WAV): %.wav: %.midi $(ALL_DEP) ./scripts/timidity_wrapper.pl
+	$(Q)$(LILYDEP_WRAPPER) $< $@ $(basename $<).stamp $(basename $<).pdf $(basename $<).ps $(basename $<).midi
+$(FILES_WAV): %.wav: %.midi $(ALL_DEP) $(TIMIDITY_WRAPPER_DEP)
 	$(info doing $@)
-	$(Q)./scripts/timidity_wrapper.pl $< -idq -Ow -o $@
+	$(Q)$(TIMIDITY_WRAPPER) $< -idq -Ow -o $@
 # rule about making mp3 from wav files - I currently don't use it since
 # I generated mp3 directly from midi using a pipe between timidity and lame...
 #$(FILES_MP3): %.mp3: %.wav
 #	lame $< $@
-$(FILES_OGG): %.ogg: %.midi $(ALL_DEP) ./scripts/timidity_wrapper.pl
+$(FILES_OGG): %.ogg: %.midi $(ALL_DEP) $(TIMIDITY_WRAPPER_DEP)
 	$(info doing [$@])
-	$(Q)./scripts/timidity_wrapper.pl $< $@ $< -idq -Ov -o $@
-$(FILES_MP3): %.mp3: %.midi $(ALL_DEP) ./scripts/timlame_wrapper.pl
+	$(Q)$(TIMIDITY_WRAPPER) $< $@ $< -idq -Ov -o $@
+$(FILES_MP3): %.mp3: %.midi $(ALL_DEP) $(TIMLAME_WRAPPER_DEP)
 	$(info doing [$@])
-	$(Q)./scripts/timlame_wrapper.pl $< $@ $< -idq -Ow -o -
+	$(Q)$(TIMLAME_WRAPPER) $< $@ $< -idq -Ow -o -
 
 # include the deps files (no warnings)
 ifeq ($(USE_LYD),1)
