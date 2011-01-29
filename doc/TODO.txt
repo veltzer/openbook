@@ -11,7 +11,7 @@ visuals
 
 youtube links:
 ==============
-support more than one youtube link.
+support more than one youtube link (there are already a few tunes with more than one youtube link in them).
 
 config system:
 ==============
