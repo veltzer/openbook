@@ -51,7 +51,8 @@ if($res) {
 	# remove the output to make sure that we leave no output behind...
 	my($fnum)=unlink($output);
 	if($fnum!=1) {
-		die('unable to remove file ['.$output.']');
+		# we do not die since we want to remove more files and print output
+		print('unable to remove file ['.$output.']');
 	}
 	# print the error log
 	open(FILE,$tmp_fname) || die('unable to open');
@@ -63,7 +64,8 @@ if($res) {
 	# exit with error code of the child...
 	$fnum=unlink($tmp_fname);
 	if($fnum!=1) {
-		die('unable to remove file ['.$tmp_fname.']');
+		# we do not die since there are other things we want to do...
+		print('unable to remove file ['.$tmp_fname.']');
 	}
 	exit($res << 8);
 } else {
