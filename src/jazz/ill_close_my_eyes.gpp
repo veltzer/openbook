@@ -14,8 +14,8 @@ include(src/include/common.lyi)
 	remark="consulted the real book, volume III, page 130"
 
 %%	url_lyrics="http://lyricsplayground.com/alpha/songs/i/illclosemyeyes.shtml"
-%%	idyoutube="u6lXbfx1hHw"
 	idyoutube="7Oh-Dl-KbF0"
+	idyoutube="u6lXbfx1hHw"
 }
 jazzTune
 
