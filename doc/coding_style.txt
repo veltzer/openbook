@@ -8,6 +8,19 @@ Here are some policy descision:
 - some more checks are being made by the "make check_all" procedue which are also parts
 	of the policy.
 
+name of files:
+==============
+If a song is called "Autumn Leaves" it will be in a file called "autumn_leaves.gpp".
+This alteration has the following advantages:
+	- it is deterministic and could be implemented using a three line function in
+	almost any programming language.
+	- it prevents all problems with case sensitive vs case insensitive file systems
+	(this really means brain dead Microsoft systems).
+	- it prevents shell scripting problems because it lacks spaces. Obviously one
+	can circumvent these types of problems using correct escaping or quoting in
+	coding such scripts but I don't see a reason to complicate things when a much
+	simpler solution exists.
+
 Policies about songs:
 =====================
 - breaks.

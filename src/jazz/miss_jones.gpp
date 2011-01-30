@@ -15,6 +15,7 @@ jazzTune
 %{
 	TODO:
 	-add lyrics
+	-change the name of the file this tune is in (it is not according to convention).
 %}
 
 myChords=\chords {
