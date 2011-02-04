@@ -22,7 +22,7 @@ include(src/include/common.lyi)
 
 \score {
 <<
-\chords {
+\chordmode {
 	%% see the difference between the next two chords ?!?
 	f1:maj7.9 | f1:maj9
 }

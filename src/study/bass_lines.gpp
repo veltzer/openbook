@@ -23,7 +23,7 @@ jazzTune
 
 \score {
 <<
-\chords {
+\chordmode {
 	\startChords
 
 	d1:m7 | g1:7 | c1:maj7 | c1:maj7 | \myEndLine

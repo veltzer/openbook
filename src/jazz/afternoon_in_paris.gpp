@@ -17,7 +17,7 @@ jazzTune
 	- turn this tune relative
 %}
 
-myChords=\chords {
+myChords=\chordmode {
 	\startChords
 
 	\startSong

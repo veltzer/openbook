@@ -27,7 +27,7 @@ jazzTune
 
 \score {
 <<
-\chords {
+\chordmode {
 	\startChords
 
 	\mark "פתיחה"

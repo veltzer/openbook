@@ -7,6 +7,9 @@ Chords:
 - \chords is akin to \new ChordNames but with something else... What is it ?
 	find out from the lilypond documentation...
 
+- \chords and \chordmode is different. It seems that \chords creates two tracks in midi
+	while \chordmode creates only one. only use \chordmode.
+
 - in order to put guitar chord notations just use:
 	\include "predefined-guitar-fretboards.ly"
 	\new FretBoards {

@@ -19,7 +19,7 @@ jazzTune
 	- add length to all note.
 %}
 
-myChords=\chords {
+myChords=\chordmode {
 	\mark "Intro"
 	\repeat volta 4 { e2.:m7 | f2.:maj7.4+ }
 

@@ -41,7 +41,7 @@ jazzTune
 		- add a macro that says "Music by" and then the composer and the same for the lyrics to be preceeded by "Text by".
 %}
 
-chordsMain=\chordmode {
+myChords=\chordmode {
 	\startChords
 
 	\startSong
@@ -236,7 +236,7 @@ myLyrics=\lyricmode {
 		\new Voice="myvoice" \voiceVocal
 		\new Lyrics \lyricsto "myvoice" \myLyrics
 		\new PianoStaff=piano \pianoMain
-		\new ChordNames=chords \chordsMain
+		\new ChordNames=chords \myChords
 	>>
 	\layout {
 		\context { \RemoveEmptyStaffContext }

@@ -71,7 +71,7 @@ myVoice={
 	c' b4 c'8 ~ c' d'4 c'8 ~ |
 }
 
-intro=\chords {
+intro=\chordmode {
 	\startChords
 
 	\startSong
@@ -85,7 +85,7 @@ intro=\chords {
 	\endChords
 }
 
-myChords=\chords {
+myChords=\chordmode {
 	% 1
 	d1:9 | r1 | aes1:dim | r1 | g1:m7 | c:9 | f:maj7 | f:6 |
 	% 9

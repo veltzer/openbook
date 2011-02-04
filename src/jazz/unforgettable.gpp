@@ -14,7 +14,7 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-myChords=\chords {
+myChords=\chordmode {
 	\startChords
 
 	\startSong

@@ -18,7 +18,7 @@ jazzTune
 	- add words
 %}
 
-myChords=\chords {
+myChords=\chordmode {
 	\startChords
 
 	\startSong

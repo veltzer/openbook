@@ -37,7 +37,7 @@ myVoice={
 	c4 d bes c | bes1 | r1 |
 }
 
-myChords=\chords {
+myChords=\chordmode {
 	\startChords
 
 	\startSong

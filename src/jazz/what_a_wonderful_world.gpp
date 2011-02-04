@@ -53,7 +53,7 @@ myLyrics=\lyrics {
 	Yes, I think to my -- self what a won -- der -- ful world. ___
 }
 
-myChords=\chords {
+myChords=\chordmode {
 	\startChords
 
 	\startSong

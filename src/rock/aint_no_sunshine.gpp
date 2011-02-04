@@ -20,7 +20,7 @@ include(predefined-guitar-fretboards.ly)
 
 \score {
 <<
-\chords {
+\chordmode {
 	\startChords
 
 	\mark "Verse"

@@ -24,7 +24,7 @@ jazzTune
 
 \score {
 <<
-\chords {
+\chordmode {
 	\startChords
 
 	\startSong
