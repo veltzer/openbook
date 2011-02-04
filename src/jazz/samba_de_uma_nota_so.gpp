@@ -70,7 +70,7 @@ myVoice={
 	bes'2 r8 f'4 f'8 |
 }
 
-myChords=\chords {
+myChords=\chordmode {
 	\startChords
 
 	\startSong

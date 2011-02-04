@@ -33,7 +33,7 @@ myVoice=\relative c''{
 	}
 }
 
-myChords=\chords {
+myChords=\chordmode {
 	\startChords
 
 	\startSong

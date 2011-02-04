@@ -19,7 +19,7 @@ jazzTune
 	- discrepency between tune and melody at the end
 %}
 
-myChords=\chords {
+myChords=\chordmode {
 	\startChords
 
 	\startSong

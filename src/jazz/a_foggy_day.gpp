@@ -21,8 +21,6 @@ jazzTune
 
 %{
 	TODO:
-	- include the version from the fake book (chords are a little different and the tune is at an offset
-	to the one in the real book).
 %}
 
 %% this version of the chords is from the real book...
