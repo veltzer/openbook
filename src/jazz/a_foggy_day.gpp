@@ -1,12 +1,12 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="A Foggy Day"
 	subtitle="From 'A Damsel In Distress'"
 	composer="George Gershwin"
 	style="Jazz"
 	piece="Medium Swing"
-	remark="copied from the real book"
 	poet="Ira Gershwin"
 	copyright="1937, Gershwin Publishing Corporation"
 	%% Copyright Renewed, Assigned to Chappell & Co, Inc.

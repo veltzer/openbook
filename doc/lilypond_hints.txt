@@ -1,5 +1,9 @@
 This is a set of lilypond hints:
 
+Notes:
+======
+- in order to parenthesize notes: <\parenthesize e'>4
+
 Chords:
 =======
 - alternate bass to a chord: c2:m7/bes
@@ -19,6 +23,8 @@ Chords:
 	}
   The problem with this is that you wind up repeating the chord names yet again just for the
   guitar diagrams. Find out how to avoid this...
+
+- how do I put chords in parenthesis? I still do not know.
 	
 speed of piece:
 ===============
@@ -76,6 +82,7 @@ Lyrics
 	\override Score . LyricText #'font-size = #-3
 - not singing even though there is music (real no lyrics):
 	I still don't know how to do this. This is useful when there are voltas.
+	A single _ seems to work (look at a_fine_romance lyrics) but I don't know if this is official.
 - how to handle voltas in lyrics.
 	Simply write the parts in the "wrong" order.
 	If parts are A { B, C }
