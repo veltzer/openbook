@@ -2,13 +2,21 @@ How to collect these ?
 - go to:
 	~/links/topics_archive/music/jazz/collections
 	There you will find the 3 index files for the jazz real books and more.
-	RB1C.pdf  RB2C.pdf  RB3C.pdf
+		RB1C.pdf
+		RB2C.pdf
+		RB3C.pdf
 	open them using document viewer on Ubuntu (gnome-open [filename]).
 	Then find the page and file you need it from.
+	The real files are:
+		The Real Book of Jazz Volume I.pdf
+		The Real Book of Jazz Volume II.pdf
+		The Real Book of Jazz Volume III.pdf
 	Open it too using the same tool.
 	Then print to a file selecting only the page(s) you need.
 
-	The book that I have is called "Jazz Fake Book.pdf" and it is also quite good.
+	The book that I have is called:
+		Jazz Fake Book.pdf
+	and it is also quite good.
 	When printing from this book with page number use an offset of -1.
 	Meaning if you want to print pages 76-80 print the pages 75-79.
 - scan from my own fakebooks.

@@ -60,8 +60,12 @@ is a better way to do it.
 
 Tune:
 =====
-- should be written using the \relative directive (reduces clutter and simplifies).
+- should be written using the \relative directive.
 	reasons:
+	- jazz tunes rarely jump a lot so this is a good solution for jazz.
+	- less cluter, easier to maintain).
+	- easier to move an octave lower or higher.
+	- easier to transpose.
 
 Lyrics:
 =======
