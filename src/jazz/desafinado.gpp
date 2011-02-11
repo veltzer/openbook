@@ -79,61 +79,61 @@ myVoice=\relative c' {
 	% A: Bar 1
 	r8 c4 d8 e4 f |
 	e4. d8 cis4 d |
-	f4. des8 des2 ~ |
+	f4. des8 des2~ |
 	des2. r4 |
 	r8 d4 e8 f4 g |
 	f4. e8 dis4 e |
-	c'4. ees,8 ees2 ~ |
+	c'4. ees,8 ees2~ |
 	ees2. r4 |
-	r8 d c' bes a g4 bes8 ~ |
+	r8 d c' bes a g4 bes8~ |
 	bes4. a8 dis,4 e |
 	fis8 a fis2 d4 |
 	ees1 |
 	r8 aes4 g8 f4 d |
 	aes'4. g8 f4 d |
-	f4. des8 des2 ~ |
+	f4. des8 des2~ |
 	des r |
 
 	% B: Bar 17
 	r8 c4 d8 e4 f |
 	e4. d8 cis4 d |
-	f4. des8 des2 ~ |
+	f4. des8 des2~ |
 	des2. r4 |
 	r8 d4 e8 f4 g |
 	f4. e8 dis4 e |
-	c'4. ees,8 ees2 ~ |
+	c'4. ees,8 ees2~ |
 	ees2. r4 |
-	r8 c'4 bes8 a g4 bes8 ~ |
+	r8 c'4 bes8 a g4 bes8~ |
 	bes4. a8 g4 f |
-	g8 f g2. ~ |
+	g8 f g2.~ |
 	g2 r |
 
 	% C: Bar 29
-	e4 fis e8 fis4 e8 ~ |
+	e4 fis e8 fis4 e8~ |
 	e4. d8 cis4 d |
-	e1 ~ |
+	e1~ |
 	e2 r4 cis |
-	e fis e8 fis4 e8 ~ |
+	e fis e8 fis4 e8~ |
 	e4. d8 cis4 d |
-	e4. b8 e2 ~ |
+	e4. b8 e2~ |
 	e r |
 	r8 e4 fis8 gis4 a |
 	b4. a8 cis,4 d |
-	e8 fis e fis e2 ~ |
+	e8 fis e fis e2~ |
 	e r4 e |
-	g a g8 a4 g8 ~ |
+	g a g8 a4 g8~ |
 	g4. f8 e4 f |
-	g d8 g ~ g d g4 ~ |
+	g d8 g~ g d g4~ |
 	g r r8 d g a |
-	bes4 a bes8 a4 c8 ~ |
+	bes4 a bes8 a4 c8~ |
 	c4. bes8 a4 bes |
-	g1 ~ |
+	g1~ |
 	g4 r r2 |
 
 	% D: Bar 49
 	r8 c,4 d8 e4 f |
 	e4. d8 cis4 d |
-	f4. des8 des2 ~ |
+	f4. des8 des2~ |
 	des2. r4 |
 	r8 d4 e8 f4 g |
 	f4. e8 dis4 e |
@@ -145,11 +145,11 @@ myVoice=\relative c' {
 	g2. d8 e |
 	f f f f f4 f |
 	r8 d4 e8 f4 f |
-	f8 f f f c'4 bes ~ |
+	f8 f f f c'4 bes~ |
 	bes2. d,8 e |
-	f f f f f4 e8 f ~ |
+	f f f f f4 e8 f~ |
 	f4 r8 e dis4 e |
-	g4. f8 f2 ~ |
+	g4. f8 f2~ |
 	f2. r4 |
 }
 myLyrics=\lyricmode {

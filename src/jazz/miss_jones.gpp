@@ -55,10 +55,10 @@ myVoice=\relative a' {
 
 	\repeat "unfold" 2 {
 	a4 d, c d | c2. r4 | d e f g | a bes c2 | d4 g, f g | f2. a4 | }
-	\alternative { { bes1 ~ | bes2. r4 |} {c1 ~ | c4 d d d | } }
+	\alternative { { bes1~ | bes2. r4 |} {c1~ | c4 d d d | } }
 	c4 bes f g | aes aes aes aes | aes ges des ees | e! e e e | e d fis a |
-	des2 des | bes1 ~ | bes2. r4 |
-	a4 d, c d | c2. r4 | d e f g | a bes c d | e1 ~ | e4 d a g | f1 | r |
+	des2 des | bes1~ | bes2. r4 |
+	a4 d, c d | c2. r4 | d e f g | a bes c d | e1~ | e4 d a g | f1 | r |
 }
 
 include(src/include/harmony_tune.lyi)

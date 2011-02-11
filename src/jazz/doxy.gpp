@@ -68,7 +68,7 @@ myVoice=\relative f' {
 			e8 g bes des \times 4/3 { c16 des c } g8 a | r1 |
 		}
 	}
-	g'4 r8 f8 ~ f8 r8 des4 ~ | des4. g,8 r c4 g8 |
+	g'4 r8 f8~ f8 r8 des4~ | des4. g,8 r c4 g8 |
 	des'4 des8 des8 g,4 c4 | r2 r4 r8 f,8 |
 	bes8 d bes f bes4 r8 f | bes8 f bes des r g,4 f8 |
 	e8 g bes des \times 4/3 { c16 des c } g8 bes | r1 |

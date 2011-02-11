@@ -41,11 +41,11 @@ myVoice=\relative ees'' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 
-	ees1\< ~ | ees4\! f,8 f8 <aes c> ( <bes d>4-. ) f8 ~ | f1 ~ | f2 r2 |
-	f'1\< ~ | f4\! f,8 f8 <aes c> ( <bes d>4-. ) f8 ~ | f1 ~ | f2 r2 |
+	ees1\<~ | ees4\! f,8 f8 <aes c> ( <bes d>4-. ) f8~ | f1~ | f2 r2 |
+	f'1\<~ | f4\! f,8 f8 <aes c> ( <bes d>4-. ) f8~ | f1~ | f2 r2 |
 	r4 c'8 ( c8 g'4 a4 | aes8 g8 f8 d8 f4 g-. ) |
 	r4 c,8 ( c8 g'4 a4 | aes8 g8 f8 d8 c4 d-. ) |
-	r4 c8 ( c8 g'4 aes4 | \mark \markup { \italic { break } } f-. ) f,8 f8 <aes c> ( <bes d>4-. ) f8 ~ | f1 | r1 |
+	r4 c8 ( c8 g'4 aes4 | \mark \markup { \italic { break } } f-. ) f,8 f8 <aes c> ( <bes d>4-. ) f8~ | f1 | r1 |
 }
 
 include(src/include/harmony_tune.lyi)

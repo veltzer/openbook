@@ -61,17 +61,17 @@ myVoice=\relative a {
 	\tempo "Allegro" 4 = 130
 
 	c2 d4 ees | d4. ees8 d2 | c2 d4 ees | d4. ees8 d2 |
-	c2 d4 ees | bes'2 aes4 g | f1 ~ | f |
+	c2 d4 ees | bes'2 aes4 g | f1~ | f |
 
 	ees2 f4 g | f4. g8 f2 | ees2 f4 g | f4. g8 f2 |
-	ees2 f4 g | d'4. c8 bes4. a8 | aes1 ~ | aes2 g4 f |
+	ees2 f4 g | d'4. c8 bes4. a8 | aes1~ | aes2 g4 f |
 
 	bes4 r8 ees, ees4 d | ees2 ees4 d | c'4 r8 ees,8 ees4 d | ees2 ees4 d |
-	bes' r8 ees, ees4 d | ees2 f4 g | c1 ~ | c2 d, |
+	bes' r8 ees, ees4 d | ees2 f4 g | c1~ | c2 d, |
 
 	c2 d4 ees | d4. ees8 d2 | ees2 f4 g | f4. g8 f2 |
-	c'2 d4 ees | d4. ees8 d2 | ees1 ~ | ees |
-	ees,2 f4 g | f4. g8 f2 | ees1 ~ | ees2. r4 |
+	c'2 d4 ees | d4. ees8 d2 | ees1~ | ees |
+	ees,2 f4 g | f4. g8 f2 | ees1~ | ees2. r4 |
 }
 myLyrics=\lyricmode {
 	My Fun -- ny Val -- en -- tine,

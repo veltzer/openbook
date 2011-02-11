@@ -76,6 +76,9 @@ Tune:
 	- less cluter, easier to maintain).
 	- easier to move an octave lower or higher.
 	- easier to transpose.
+- ties should be written this way "a~ b" or "a~ | b". Meaning that the tie is right
+	next to the note from which the tie eminates with no space.
+	Need to find a rationale for this currently this is just a convention.
 
 Lyrics:
 =======

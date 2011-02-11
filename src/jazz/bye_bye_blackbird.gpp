@@ -73,11 +73,11 @@ myVoice=\relative f' {
 
 	%% A part
 	a4 a a a | bes a a2 | a4 g g2 | g4 f f2 |
-	f1 | g | f2 e2 ~ | e1 |
+	f1 | g | f2 e2~ | e1 |
 
 	%% B part
 	bes'4 bes bes bes | c bes bes2 | bes4 a a2 | a4 g g2 |
-	g1 | a | g2 f ~ | f1 |
+	g1 | a | g2 f~ | f1 |
 
 	%% C part
 	f4 c' c c | c bes a g | g1 | fis |
@@ -85,7 +85,7 @@ myVoice=\relative f' {
 
 	%% D part
 	a4 a a a | bes a a2 | a4 g g2 | g4 fis fis2 |
-	g2 bes ~ | bes e, | f2 r2 | r1 |
+	g2 bes~ | bes e, | f2 r2 | r1 |
 }
 
 myLyrics=\lyricmode {
