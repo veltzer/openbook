@@ -76,6 +76,10 @@ Tune:
 	- less cluter, easier to maintain).
 	- easier to move an octave lower or higher.
 	- easier to transpose.
+- \relative should be to c (middule c).
+	in this methodthe first note sets the octave for the entire tune.
+	reasons:
+	- all tunes have some relation one to the other and can be compares and transposed in the same way.
 - ties should be written this way "a~ b" or "a~ | b". Meaning that the tie is right
 	next to the note from which the tie eminates with no space.
 	Need to find a rationale for this currently this is just a convention.
