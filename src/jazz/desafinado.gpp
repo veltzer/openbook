@@ -47,10 +47,10 @@ myChords=\chordmode {
 
 	\mark "C"
 	\startPart
-	a1:maj7 | bes1:dim | b1:m11 | e1:7 | \myEndLine
-	a1:maj7 | bes1:dim | b1:m11 | e1:7 | \myEndLine
+	a1:maj7 | bes1:dim7 | b1:m11 | e1:7 | \myEndLine
+	a1:maj7 | bes1:dim7 | b1:m11 | e1:7 | \myEndLine
 	a1:maj7 | fis1:m7 | b1:m11 | e1:7 | \myEndLine
-	c1:maj7 | cis1:dim | d1:m11 | g1:7 | \myEndLine
+	c1:maj7 | cis1:dim7 | d1:m11 | g1:7 | \myEndLine
 	g1:m7 | fis1:m7 | g1:7 | c1:7 | \myEndLine
 	\endPart
 
@@ -58,7 +58,7 @@ myChords=\chordmode {
 	\startPart
 	f1:maj7 | f1:maj7 | g1:7.5- | g1:7.5- | \myEndLine
 	g1:m7 | c1:7 | a1:m7.5- | d1:9- | \myEndLine
-	g1:m7 | bes1:m | a1:m7 | aes1:dim | \myEndLine
+	g1:m7 | bes1:m | a1:m7 | aes1:dim7 | \myEndLine
 	g1:7 | g1:7 | bes1:m7 | ees1:9 | \myEndLine
 	g1:7 | g2:m7 c2:9+ | f1:6.9 | f1:6.9 | \myEndLine
 	\endPart

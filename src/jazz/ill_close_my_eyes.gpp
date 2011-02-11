@@ -38,7 +38,7 @@ myChords=\chordmode {
 	\alternative {
 		{
 			f1:maj7 | f1:maj7 | \myEndLine
-			b:m7.5- | e1:7 | a2:m7 aes:dim | g2:m7 ges2:7/c | \myEndLine
+			b:m7.5- | e1:7 | a2:m7 aes:dim7 | g2:m7 ges2:7/c | \myEndLine
 		}
 		{
 			a1:m7.5- | d1:7.9- | \myEndLine
