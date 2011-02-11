@@ -57,6 +57,14 @@ Chords:
 - use "d:m7" and not "d:min7" (shorter).
 - do NOT use repears ( | r1 | ) in chords. If you don't want the chords to repeat there
 is a better way to do it.
+- use "a:dim7" and not "a:dim".
+	Reasons for:
+		It shows dim7 in the sheet which is what books usually do.
+		It allow to distinguish the 4 note chord from the 3 note chord.
+	Reasons against:
+		It looks a bit ugly ("Ao7") on the page.
+		It may not be the right way in lilypond to do it.
+	* I need to rethink this policy (maybe alter the way chords are specified in lilypond).
 
 Tune:
 =====

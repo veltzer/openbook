@@ -25,7 +25,7 @@ jazzTune
 		turn around):
 		f2 bes:2 bes2:m6 f2:6
 	- add the real book harmonization option:
-		f1 f f f f aes:dim g:m7 c:7
+		f1 f f f f aes:dim7 g:m7 c:7
 		g1:m7 g:m7 g:m7 c:7 g:m7 c:7 f f
 		f1:7 f:7 a:m7.5- d:7 g:m7 g:m7 bes2:m7 ees2:7 g2:m7 c2:7
 		f1 f a:m7.5- d:7 g:m7 c:7 f f
@@ -39,7 +39,7 @@ myChords=\chordmode {
 	\mark "A"
 	\startPart
 	f1 | f2 d2:7 | g:m7 c:7.9 | f1 | \myEndLine
-	f/a | aes:dim | g2:m7 c:7 | c1:7 | \myEndLine
+	f/a | aes:dim7 | g2:m7 c:7 | c1:7 | \myEndLine
 	\endPart
 
 	\mark "B"
