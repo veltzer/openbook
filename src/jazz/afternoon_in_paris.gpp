@@ -22,13 +22,15 @@ jazzTune
 
 %{
 	TODO:
-	- complete header stuff.
-	- turn this tune relative. check that it corresponds to the real book precisely.
-	- add emphasis notes in the tune.
-	- add epdfs.
+	- complete header stuff (copyright for instace from the fake book).
+	- add epdf from the fake book.
+	- add the version from the fake book.
 	- add you tube performances.
-	- document whether this is from the real book or fake book.
 	- add lyrics. are there any ?
+
+	- the last two chords (d:m7 and g:7) should be in parenthesis since they are part of the turn around.
+	I still don't know how to do that.
+	- add emphasis notes in the tune.
 %}
 
 %% these are the chords from the real book
@@ -46,10 +48,10 @@ myChords=\chordmode {
 	}
 	\alternative {
 		{
-			d2:m7 g:7 |
+			d2:m7 g:7 | \myEndLine
 		}
 		{
-			c1:maj7 |
+			c1:maj7 | \myEndLine
 		}
 	}
 	\endPart
@@ -72,10 +74,12 @@ myChords=\chordmode {
 }
 
 %% this is the melody from the real book
-myVoice=\relative c'{
+myVoice=\relative c{
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Allegro" 4 = 130
 	\key c \major
 	\time 4/4
-	\partial 4 e8 g |
+	\partial 4 e''8 g |
 	%% A part
 	\repeat volta 2 {
 		r8 d4 c8 b c d e | ees g, bes d c4 d8 f |
@@ -88,7 +92,7 @@ myVoice=\relative c'{
 			r2. e'8 g |
 		}
 		{
-			r2 a4 b8 c~ |
+			r2 a,4 b8 c~ |
 		}
 	}
 	%% B part
