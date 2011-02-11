@@ -41,10 +41,10 @@ myVoice=\relative f'' {
 	\key f \major
 
 	% Bar 1
-	f4. a,8 ~ a4. d8 ~ | d2 ~ d8 f4 e8 ~ | e4. b8 ~ b4. d8 ~ | d2 ~ d8 e4 f8 ~ |
-	f4. bes,8 ~ bes4. cis8 ~ | cis2 ~ cis8 f4 e8 ~ | e d4 f8 e d4 a8 ~ | a1 |
-	f'4. a,8 ~ a4. cis8 ~ | cis2 ~ cis8 d4 c8 ~ | c4. e8 ~ e2 ~ | e4 e8 d ~ d c4 c8 ~ |
-	c4. bes8 ~ bes2 ~ | bes4 f'8 e ~ e d4 d8 ~ | d cis4 e8 cis4 bes~ | bes2. r4 |
+	f4. a,8~ a4. d8~ | d2~ d8 f4 e8~ | e4. b8~ b4. d8~ | d2~ d8 e4 f8~ |
+	f4. bes,8~ bes4. cis8~ | cis2~ cis8 f4 e8~ | e d4 f8 e d4 a8~ | a1 |
+	f'4. a,8~ a4. cis8~ | cis2~ cis8 d4 c8~ | c4. e8~ e2~ | e4 e8 d~ d c4 c8~ |
+	c4. bes8~ bes2~ | bes4 f'8 e~ e d4 d8~ | d cis4 e8 cis4 bes~ | bes2. r4 |
 }
 
 include(src/include/harmony_tune.lyi)

@@ -57,10 +57,10 @@ myVoice=\relative c' {
 	\tempo "Allegro" 4 = 150
 	\time 4/4
 	\key f \major
-	\partial 8*5 c8 bes'4 c8 a ~ |
+	\partial 8*5 c8 bes'4 c8 a~ |
 	\repeat volta 2 {
-		a1 | r4 r8 c, bes'4 a | a4 g8 e8 ~ e2 | r4 a, g'4 a8 f ~ |
-		f1 | r4 r8 f a4 f8 ees8 ~ | ees1 | r2 r4 ees |
+		a1 | r4 r8 c, bes'4 a | a4 g8 e8~ e2 | r4 a, g'4 a8 f~ |
+		f1 | r4 r8 f a4 f8 ees8~ | ees1 | r2 r4 ees |
 		des d c'2 | r4 r8 bes f4 g |
 	}
 	\alternative {

@@ -20,53 +20,53 @@ myVoice={
 	\clef treble
 
 	\partial 4. f'4 f'8 |
-	f'4 f'8 f' ~ f' f'4 f'8 ~ |
+	f'4 f'8 f'~ f' f'4 f'8~ |
 	f'4. f'8 r f'4 f'8 |
-	f'4 f'8 f' ~ f' f'4 f'8 ~ |
+	f'4 f'8 f'~ f' f'4 f'8~ |
 %5
 	f'2 r8 f'4 f'8 |
-	f'4 f'8 f' ~ f' f'4 f'8 ~ |
+	f'4 f'8 f'~ f' f'4 f'8~ |
 	f'4. f'8 r f'4 f'8 |
-	f'4 f'8 f' ~ f' f'4 f'8 ~ |
+	f'4 f'8 f'~ f' f'4 f'8~ |
 	f'2 r8 bes'4 bes'8 |
 %10
-	bes'4 bes'8 bes' ~ bes' bes'4 bes'8 ~ |
-	bes' bes' bes'4 ~ bes'8 bes'4 bes'8 |
-	bes'4 bes'8 bes' ~ bes' bes'4 bes'8 ~ |
+	bes'4 bes'8 bes'~ bes' bes'4 bes'8~ |
+	bes' bes' bes'4~ bes'8 bes'4 bes'8 |
+	bes'4 bes'8 bes'~ bes' bes'4 bes'8~ |
 	bes'2 r8 f'4 ees'8 |
-	f'4 f'8 f' ~ f' f'4 f'8 ~ |
+	f'4 f'8 f'~ f' f'4 f'8~ |
 %15
-	f' f'4 f'8 ~ f' f' f'4 |
-	f' f'8 f' ~ f' f'4 bes'8 ~ |
+	f' f'4 f'8~ f' f' f'4 |
+	f' f'8 f'~ f' f'4 bes'8~ |
 	bes'2. r4 |
 	bes'8 c'' des'' ees'' des'' c'' bes' aes' |
 	ges' f' ees' des' c' des' ees' f' |
 %20
 	c'4. bes8 r c' des' ees' |
-	c'4. bes8 ~ bes4 r |
+	c'4. bes8~ bes4 r |
 	aes'8 bes' ces'' des'' ces'' bes' aes' g' |
 	fes' ees' des' ces' bes ces' des' ees' |
 	bes4. aes8 r bes ces' ees' |
 %25
 	ges'4. f'8 r f'4 f'8 |
-	f'4 f'8 f' f' ~ f'4 f'8 ~ |
+	f'4 f'8 f' f'~ f'4 f'8~ |
 	f'4. f'8 r f'4 f'8 |
-	f'4 f'8 f' ~ f' f'4 f'8 ~ |
+	f'4 f'8 f'~ f' f'4 f'8~ |
 	f'2 r8 f'4 f'8 |
 %30
-	f'4 f'8 f' ~ f' f'4 f'8 ~ |
+	f'4 f'8 f'~ f' f'4 f'8~ |
 	f'4. f'8 r f'4 f'8 |
-	f'4 f'8 f' ~ f' f'4 f'8 ~ |
+	f'4 f'8 f'~ f' f'4 f'8~ |
 	f'2 r8 bes'4 bes'8 |
-	bes'4 bes'8 bes' ~ bes' bes'4 bes'8 ~ |
+	bes'4 bes'8 bes'~ bes' bes'4 bes'8~ |
 %35
 	bes'4. bes'8 r bes'4 bes'8 |
-	bes'4 bes'8 bes' ~ bes' bes'4 bes'8 ~ |
+	bes'4 bes'8 bes'~ bes' bes'4 bes'8~ |
 	bes'2 r8 bes'4 bes'8 |
-	bes'4 bes'8 bes' ~ bes' bes'4 bes'8 ~ |
-	bes' bes'4 bes'8 bes'4 bes' ~ |
+	bes'4 bes'8 bes'~ bes' bes'4 bes'8~ |
+	bes' bes'4 bes'8 bes'4 bes'~ |
 %40
-	bes' bes'8 bes' ~ bes' bes'4 bes'8 ~ |
+	bes' bes'8 bes'~ bes' bes'4 bes'8~ |
 	bes'2 r8 f'4 f'8 |
 }
 

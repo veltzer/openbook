@@ -44,10 +44,10 @@ myVoice=\relative c''' {
 
 	\partial 4 a8. f16 |
 	\repeat volta 2 {
-		a1 | r4 g8. f16 g8. a16 f4 | d2 a ~ | a4 r a' f |
-		g8 g ~ g2. | r4 f8. d16 f8. d16 f4 | e1 ~ | e2 r4 a8. f16 |
-		a1 | r4 g8. f16 g8. a16 f4 | d2 a ~ | a2 r4 a |
-		c a8 c d f ~ f4 | a8 g ~ g4 f2 | d1 ~ | d4 r r a'8. f16 |
+		a1 | r4 g8. f16 g8. a16 f4 | d2 a~ | a4 r a' f |
+		g8 g~ g2. | r4 f8. d16 f8. d16 f4 | e1~ | e2 r4 a8. f16 |
+		a1 | r4 g8. f16 g8. a16 f4 | d2 a~ | a2 r4 a |
+		c a8 c d f~ f4 | a8 g~ g4 f2 | d1~ | d4 r r a'8. f16 |
 	}
 }
 

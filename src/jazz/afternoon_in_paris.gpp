@@ -1,22 +1,37 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="Afternoon in Paris"
+	subtitle=""
 	composer="John Lewis"
 	style="Jazz"
 	piece="Swing"
+	poet=""
+	copyright=""
+
 	structure="AABA"
 
-	completion="0"
+	completion="5"
 	uuid="8f0a1ea6-a26e-11df-8edc-0019d11e5a41"
+
+	idyoutube=""
+	idyoutube=""
 }
 jazzTune
 
 %{
 	TODO:
-	- turn this tune relative
+	- complete header stuff.
+	- turn this tune relative. check that it corresponds to the real book precisely.
+	- add emphasis notes in the tune.
+	- add epdfs.
+	- add you tube performances.
+	- document whether this is from the real book or fake book.
+	- add lyrics. are there any ?
 %}
 
+%% these are the chords from the real book
 myChords=\chordmode {
 	\startChords
 
@@ -24,13 +39,14 @@ myChords=\chordmode {
 
 	\partial 4 r4 |
 	\mark "A"
+	\startPart
 	\repeat volta 2 {
-		c1:maj7 | c2:m7 f2:7 | bes1:maj7 | bes2:m7 ees2:7 | \myEndLine
-		aes1:maj7 | d2:m7 g2:7.9- | c1:maj7 |
+		c1:maj7 | c2:m7 f:7 | bes1:maj7 | bes2:m7 ees:7 | \myEndLine
+		aes1:maj7 | d2:m7 g:7.9- | c1:maj7 |
 	}
 	\alternative {
 		{
-			d2:m7 g2:7 |
+			d2:m7 g:7 |
 		}
 		{
 			c1:maj7 |
@@ -39,38 +55,51 @@ myChords=\chordmode {
 	\endPart
 
 	\mark "B"
-	d1:m7 | g1:7 | c1:maj7/e | a1:7.9 | \myEndLine
-	d1:m7 | g1:7 | c1:maj7 | d2:m7 g2:7 | \myEndLine
+	\startPart
+	d1:m7 | g:7 | c:maj7/e | a:7.9 | \myEndLine
+	d:m7 | g:7 | c:maj7 | d2:m7 g:7 | \myEndLine
+	\endPart
+
+	\mark "A"
+	\startPart
+	c1:maj7 | c2:m7 f:7 | bes1:maj7 | bes2:m7 ees:7 | \myEndLine
+	aes1:maj7 | d2:m7 g:7.9- | c1:maj7 | d2:m7 g:7 | \myEndLine
+	\endPart
 
 	\endSong
 
 	\endChords
 }
 
-myVoice={
+%% this is the melody from the real book
+myVoice=\relative c'{
 	\key c \major
 	\time 4/4
-	\partial 4 e''8 g''8 |
+	\partial 4 e8 g |
+	%% A part
 	\repeat volta 2 {
-		r8 d''4 c''8 b'8 c''8 d''8 e''8 |
-		ees''8 g'8 bes'8 d''8 c''4 d''8 f''8 |
-		r8 c''4 bes'8 a'8 bes'8 c''8 d''8 |
-		des''8 f'8 aes'8 c''8 bes'4 c''8 ees''8 |
-		r8 c''4 aes'8 g'8 bes'8 aes'8 g'8 ~ |
-		g'2 ~ g'8 bes'8 aes'8 g'8 ~ |
-		g'1 |
+		r8 d4 c8 b c d e | ees g, bes d c4 d8 f |
+		r c4 bes8 a bes c d | des f, aes c bes4 c8 ees |
+		r c4 aes8 g bes aes g~ | g2~ g8 bes aes g~ |
+		g1 |
 	}
 	\alternative {
 		{
-			r2. e''8 g''8 |
+			r2. e'8 g |
 		}
 		{
-			r2 a'4 b'8 c''8 ~ |
+			r2 a4 b8 c~ |
 		}
 	}
-	c''2. d''8 e''8 ~ | e''2. d''8 c''8 ~ | c''2. e''8 a'8 ~ | a'2. b'8 c''8~ |
-	c''2. d''8 e''8 ~ | e''2. f''8 g''8 ~ | g''2 g''8 e''8 f''8 g''8 ~ |
-	g''2. e''8 g''8 |
+	%% B part
+	c2. d8 e~ | e2. d8 c~ | c2. e8 a,~ | a2. b8 c~ |
+	c2. d8 e~ | e2. f8 g~ | g2 g8 e f g~ |
+	g2. e8 g |
+	%% A part
+	r8 d4 c8 b c d e | ees g, bes d c4 d8 f |
+	r c4 bes8 a bes c d | des f, aes c bes4 c8 ees |
+	r c4 aes8 g bes aes g~ | g2~ g8 bes aes g~ |
+	g1~ | g1 |
 }
 
 include(src/include/harmony_tune.lyi)

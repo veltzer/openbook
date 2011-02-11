@@ -65,7 +65,7 @@ myVoiceReal=\relative c'{
 	r4 c c c | ees2. ees4 | d d2. | a'1 |
 	r4 f f f | aes2. aes4 | g2. g4 | d'1 |
 	f2 f4 f | d2. d4 | c2 c | a a4 bes |
-	c f, g bes | a f g bes | a2 f' | f, g | f1 ~ | f2. r4 |
+	c f, g bes | a f g bes | a2 f' | f, g | f1~ | f2. r4 |
 
 }
 
