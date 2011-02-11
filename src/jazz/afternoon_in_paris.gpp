@@ -48,10 +48,10 @@ myChords=\chordmode {
 	}
 	\alternative {
 		{
-			d2:m7 g:7 | \myEndLine
+			d2:m7 g:7 | \myEndLineVoltaNotLast
 		}
 		{
-			c1:maj7 | \myEndLine
+			c1:maj7 | \myEndLineVoltaLast
 		}
 	}
 	\endPart

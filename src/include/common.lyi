@@ -92,6 +92,8 @@ define(generalMacros,
 %% =====================================================================
 myBreak=\break
 myEndLine=\break
+myEndLineVoltaNotLast={}
+myEndLineVoltaLast=\break
 partBar=\bar "||"
 endBar=\bar "|."
 startTune={}
