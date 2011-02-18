@@ -6,35 +6,91 @@ include(src/include/common.lyi)
 	subtitle=""
 	composer="John Lewis"
 	style="Jazz"
-	piece="Swing"
+	piece="Moderate Swing"
 	poet=""
-	copyright=""
+	copyright="1955 and Renewal of Copyright 1983 by MJQ Music, Inc."
 
 	structure="AABA"
 
 	completion="5"
 	uuid="8f0a1ea6-a26e-11df-8edc-0019d11e5a41"
 
-	idyoutube=""
-	idyoutube=""
+	idyoutube="o3KtgcvYkig"
+	idyoutube="FFj03f2Zr5Y"
 }
 jazzTune
 
 %{
 	TODO:
-	- complete header stuff (copyright for instace from the fake book).
-	- add epdf from the fake book.
-	- add the version from the fake book.
-	- add you tube performances.
-	- add lyrics. are there any ?
-
 	- the last two chords (d:m7 and g:7) should be in parenthesis since they are part of the turn around.
 	I still don't know how to do that.
-	- add emphasis notes in the tune.
+	- add emphasis notes in the tune and document how to do that.
 %}
 
-%% these are the chords from the real book
+%% these are the chords from the fake book
 myChords=\chordmode {
+	\startChords
+
+	\startSong
+
+	\partial 4 r4 |
+
+	\mark "A"
+	\startPart
+	c1:6 | c2:m7 f:7 | bes1:6 | bes2:m7 ees:7 | \myEndLine
+	aes1:maj7 | d2:m7.5- g:7 | c:maj7 a:m7 | d:m7 g:7 | \myEndLine
+	\endPart
+
+	\mark "A"
+	\startPart
+	c1:6 | c2:m7 f:7 | bes1:6 | bes2:m7 ees:7 | \myEndLine
+	aes1:maj7 | d2:m7.5- g:7 | c1 | a:m7 | \myEndLine
+	\endPart
+
+	\mark "B"
+	\startPart
+	d1:m7 | g:7.9- | c:6 | a:m7 | \myEndLine
+	d:m7 | g:7.9- | cis2:m7.5- fis:7 | d:m7 g:7 | \myEndLine
+	\endPart
+
+	\mark "A"
+	\startPart
+	c1:6 | c2:m7 f:7 | bes1:6 | bes2:m7 ees:7 | \myEndLine
+	aes1 | d2:m7.5- g:7 | c1 | c | \myEndLine
+	\endPart
+
+	\endSong
+
+	\endChords
+}
+
+%% this is the melody from the real book
+myVoice=\relative c{
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Allegro" 4 = 130
+	\key c \major
+	\time 4/4
+	\partial 4 e''4 |
+
+	%% A part
+	g8 d r c b c d e | ees g, bes d c4 d | f8 c r bes a bes c d | des f, aes c bes4 c |
+	ees8 c aes ees g bes aes4 | f2 \times 2/3 { g4 f g } | e8 g b d a b c e | f a, c e d4 e |
+
+	%% A part
+	g8 d r c b c d e | ees g, bes d c4 d | f8 c r bes a bes c d | des f, aes c bes4 c |
+	ees8 c aes ees g bes aes4 | aes2 \times 2/3 { g4 f g } | e1~ | e2 a4 b |
+
+	%% B part
+	c2. d4 | e2. d4 | c2. e4 | a,2. b4 |
+	c2. d4 | e2. d4 | e1 | f2. e4 |
+
+	%% A part
+	g8 d r c b c d e | ees g, bes d c4 d | f8 c r bes a bes c d | des f, aes c bes4 c |
+	ees8 c aes ees g bes aes4 | f2 \times 2/3 { g4 f g } | e1~ | e2. r4 |
+}
+
+%% these are the chords from the real book
+myChordsReal=\chordmode {
 	\startChords
 
 	\startSong
@@ -74,7 +130,7 @@ myChords=\chordmode {
 }
 
 %% this is the melody from the real book
-myVoice=\relative c{
+myVoiceReal=\relative c{
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\key c \major

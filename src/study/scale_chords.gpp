@@ -28,14 +28,14 @@ myVoice=\relative c' {
 	<g b d f> <a c e g> <b d f a> <c e g b>
 
 	%% downwards and then upwards on the scale
-	
+
 	<c e g b> <b d f a> <a c e g> <g b d f>
 	<f a c e> <e g b d> <d f a c> <c e g b>
 
 	%% now left hand plays 1 and 7 only while right hand plays all but the root
 
 	%% now left hand plays 1 and 7 only while right hand plays all but the root and 7 goes down to 6
-	
+
 	%% now left hand plays 1 and 7 only while right hand plays all but the root and 7 goes to approach to 6 from below and then 6
 }
 %% score for printing
