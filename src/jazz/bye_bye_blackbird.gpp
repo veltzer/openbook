@@ -13,13 +13,16 @@ include(src/include/common.lyi)
 
 	completion="5"
 	uuid="612da3c4-e08a-4afb-b257-ea67f45a0b5d"
-
-	remark="taken from the jazz fakebook"
 }
 jazzTune
 
 %{
 	TODO:
+	- bring in the fake book epdf.
+	- validate that this is indeed the fakebook version.
+	- add the real book version.
+	- add you tube ids.
+
 	- add repeat on the whole song (it's supposed to repeat twice with the same lyrics).
 	- add an optional ending to this standard from the fakebook (instead of the final
 		turn around):
@@ -29,8 +32,9 @@ jazzTune
 		g1:m7 g:m7 g:m7 c:7 g:m7 c:7 f f
 		f1:7 f:7 a:m7.5- d:7 g:m7 g:m7 bes2:m7 ees2:7 g2:m7 c2:7
 		f1 f a:m7.5- d:7 g:m7 c:7 f f
-	- add a favourite performance of this song
 %}
+
+%% the fakebook version
 myChords=\chordmode {
 	\startChords
 
@@ -65,6 +69,7 @@ myChords=\chordmode {
 	\endChords
 }
 
+%% the fakebook version
 myVoice=\relative f' {
 	\time 4/4
 	\key f \major
@@ -88,6 +93,7 @@ myVoice=\relative f' {
 	g2 bes~ | bes e, | f2 r2 | r1 |
 }
 
+%% the fakebook version
 myLyrics=\lyricmode {
 	Pack up all my care and woe,
 	Here I go,

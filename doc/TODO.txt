@@ -44,6 +44,7 @@ parsing lilypond:
 
 build system
 ============
+- add support for putting the output in a different folder than the source.
 - add support for deriving gpp dependencies (a simple perl script).
 	use it to generate dependencies and analyze them.
 - do a general cache (~/.make_cache) script which will run commands for me and will save
