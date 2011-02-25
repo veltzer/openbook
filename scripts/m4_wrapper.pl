@@ -42,3 +42,4 @@ if($res) {
 } else {
 	chmod(0444,$output);
 }
+exit($res);
