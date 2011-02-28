@@ -1,0 +1,33 @@
+include(src/include/common.lyi)
+\header {
+	default_header
+	title="She Loves You"
+	composer="John Lennon and Paul McCartney"
+	poet="John Lennon and Paul McCartney"
+	style="Rock"
+	piece="Med. Ballad"
+
+	completion="0"
+	uuid="32a5cb0e-431f-11e0-b9fa-0019d11e5a41"
+}
+jazzTune
+
+%{
+	TODO:
+	- get the beatles book in pdf form and put it with the rest of my pdf books.
+	- get an epdf for this song and attach to epds.
+	- make the headers for this song comply with the jazz headers.
+	- add performances from youtube.
+	- add lyrics and notes.
+%}
+
+harmony=\chordmode {
+	f1 | d:m | a:m | c:7 |
+	f | d:m | a:m | c:7 |
+	f | f | d:m | d:m |
+	bes:m6 | bes:m6 | c:7 | c:7 |
+	d:m | d:m | g:7 | g:7 |
+	bes:m6 | c2:7.5+ c:7 | f1 | f |
+}
+
+include(src/include/harmony.lyi)
