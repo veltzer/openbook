@@ -16,11 +16,9 @@ jazzTune
 
 %{
 	TODO:
-	- get the beatles book in pdf form and put it with the rest of my pdf books.
-	- get an epdf for this song and attach to epds.
 	- make the headers for this song comply with the jazz headers.
 	- add performances from youtube.
-	- add lyrics and notes.
+	- add lyrics and melody.
 %}
 
 %% this is taken from "The Beatles Complete" book page 175
@@ -50,6 +48,7 @@ myChords=\chordmode {
 	\endChords
 }
 
+%% this is taken from "The Beatles Complete" book page 175
 myVoice=\relative c {
 	\time 4/4
 	\key f \major
@@ -63,6 +62,7 @@ myVoice=\relative c {
 
 }
 
+%% this is taken from "The Beatles Complete" book page 175
 myLyricsReal=\lyricmode {
 	She loves you, yeah, yeah, yeah
 	She loves you, yeah, yeah, yeah
