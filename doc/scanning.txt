@@ -1,0 +1,13 @@
+This is a small guide on how to scan in ubuntu
+==============================================
+
+* why do you need this ?
+because I want to scan real sheet music for reference.
+
+* best program to use.
+	xsane
+	settings:
+		color, grey, lineart:
+			lineart is bad (in terms of quality).
+			I find grey is good for me.
+	scan resolution: 100 usuallly is good enough.
