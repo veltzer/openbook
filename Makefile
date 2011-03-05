@@ -194,10 +194,11 @@ check_extra_files:
 check_comments:
 	$(info doing [$@])
 	-$(Q)grep "%%" $(FILES_GPP)
-.PHONY: check_composer_and
-check_composer_and:
+.PHONY: check_and
+check_and:
 	$(info doing [$@])
 	-$(Q)grep "composer=\".* and .*\"" $(FILES_GPP)
+	-$(Q)grep "poet=\".* and .*\"" $(FILES_GPP)
 .PHONY: check_min_chords
 check_min_chords:
 	$(info doing [$@])
@@ -247,7 +248,7 @@ check_include:
 	$(info doing [$@])
 	-$(Q)grep "\\\\include" $(FILES_GPP)
 .PHONY: check_all
-check_all: check_empty_copyright check_common check_ws check_composer_and check_extra_files check_min_chords check_uuid check_chordChanges check_bar check_break check_completion check_include
+check_all: check_empty_copyright check_common check_ws check_and check_extra_files check_min_chords check_uuid check_chordChanges check_bar check_break check_completion check_include
 
 # rules
 

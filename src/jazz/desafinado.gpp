@@ -7,7 +7,7 @@ include(src/include/common.lyi)
 	copyright="1959 1962, Editora Musical Arapua, Sao Paulo, Brazil"
 	style="Jazz"
 	piece="Medium Bossa Nova"
-	poet="Newton Mendonca, Jon Hendricks and Jessie Cavanaugh"
+	poet="Newton Mendonca, Jon Hendricks & Jessie Cavanaugh"
 
 	completion="5"
 	uuid="c3fff540-a26e-11df-9435-0019d11e5a41"
