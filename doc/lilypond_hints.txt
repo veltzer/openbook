@@ -1,19 +1,20 @@
-This is a set of lilypond hints:
-
-Notes:
-======
+Melody:
+=======
 - in order to parenthesize notes: <\parenthesize e'>4
+- in order to add piano fingerings use: e-4
+- in order to play two or three notes together use: <c e g>8
+- in order to do ties use: g~ | g
+- in order to do triplets use: \times 2/3 { c4 e g }
+- in order to do polyphonics use: << { first part } \\ { second part } >>
+	see "she_loves_you" by the beatles.
 
 Chords:
 =======
 - alternate bass to a chord: c2:m7/bes
-
 - \chords is akin to \new ChordNames but with something else... What is it ?
 	find out from the lilypond documentation...
-
 - \chords and \chordmode is different. It seems that \chords creates two tracks in midi
 	while \chordmode creates only one. only use \chordmode.
-
 - in order to put guitar chord notations just use:
 	\include "predefined-guitar-fretboards.ly"
 	\new FretBoards {
@@ -23,7 +24,6 @@ Chords:
 	}
   The problem with this is that you wind up repeating the chord names yet again just for the
   guitar diagrams. Find out how to avoid this...
-
 - how do I put chords in parenthesis? I still do not know.
 	
 speed of piece:

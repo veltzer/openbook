@@ -46,6 +46,8 @@ myChordsReal=\chordmode {
 	\endPart
 
 	\endSong
+
+	\endChords
 }
 
 %% this version of the tune is from the real book...

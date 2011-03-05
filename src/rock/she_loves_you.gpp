@@ -5,7 +5,9 @@ include(src/include/common.lyi)
 	composer="John Lennon & Paul McCartney"
 	poet="John Lennon & Paul McCartney"
 	style="Rock"
-	piece="Med. Ballad"
+	piece="Moderato"
+
+	structure="ABABAB"
 
 	completion="0"
 	uuid="32a5cb0e-431f-11e0-b9fa-0019d11e5a41"
@@ -22,22 +24,42 @@ jazzTune
 %}
 
 %% this is taken from "The Beatles Complete" book page 175
-harmony=\chordmode {
-	f1 | d:m | a:m | c:7 |
-	f | d:m | a:m | c:7 |
-	f | f | d:m | d:m |
-	bes:m6 | bes:m6 | c:7 | c:7 |
-	d:m | d:m | g:7 | g:7 |
-	bes:m6 | c2:7.5+ c:7 | f1 | f |
+myChords=\chordmode {
+	\startChords
+
+	\startSong
+
+	\partial 8 r8 |
+	\repeat volta 3 {
+		\mark "A"
+		\startPart
+		f1 | d:m | a:m | c:7 | \myEndLine
+		f | d:m | a:m | c:7 | \myEndLine
+		f | f | d:m | d:m | \myEndLine
+		bes:m6 | bes:m6 | c:7 | c:7 | \myEndLine
+		\endPart
+		\mark "B"
+		\startPart
+		d:m | d:m | g:7 | g:7 | \myEndLine
+		bes:m6 | c2:7.5+ c:7 | f1 | f | \myEndLine
+		\endPart
+	}
+	
+	\endSong
+
+	\endChords
 }
 
 myVoice=\relative c {
 	\time 4/4
-	\key c \minor
+	\key f \major
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Allegro" 4 = 130
+	\tempo "Moderato" 4 = 112
 
-	\partial 8 c
+	\partial 8 c'8-2 |
+	f4-1 g a bes8 <f a>~ | <f a>2. a8-3 a | << { c4-5 a a4. g8 } \\ { e1 } >> | <e a>8 c' <e, a>2 r8 c' |
+
+
 }
 
-include(src/include/harmony.lyi)
+include(src/include/harmony_tune.lyi)
