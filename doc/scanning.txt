@@ -5,7 +5,8 @@ This is a small guide on how to scan in ubuntu
 because I want to scan real sheet music for reference.
 
 * best program to use.
-	xsane
+	xsane (you can just run it off the command line or via
+		applications->graphics->xsane).
 	settings:
 		color, grey, lineart:
 			lineart is bad (in terms of quality).
