@@ -57,9 +57,69 @@ myVoice=\relative c {
 	\tempo "Moderato" 4 = 112
 
 	\partial 8 c'8-2 |
-	f4-1 g a bes8 <f a>~ | <f a>2. a8-3 a | << { c4-5 a a4. g8 } \\ { e1 } >> | <e a>8 c' <e, a>2 r8 c' |
+	f4-1 g a bes8 <f a>~ | <f a>2. a8-3 a | << { c4-5 a a4. g8 } \\ { e1-1 } >> | <e a>8 c' <e, a>2 r8 c' |
+	f,4-1 g a bes8 <f a>~ | <f a>2. a8 a | << { c4 a a4. g8 } \\ { e1 } >> | <e a>8 c' <e, a>4 r8 c'-2 c c |
+	d4-3 f2 f,8-3 g |
 
+}
 
+myLyricsReal=\lyricmode {
+	She loves you, yeah, yeah, yeah
+	She loves you, yeah, yeah, yeah
+	She loves you, yeah, yeah, yeah, yeah
+
+	You think you lost your love,
+	Well, I saw her yesterday.
+	It's you she's thinking of
+	And she told me what to say.
+
+	She says she loves you
+	And you know that can't be bad.
+	Yes, she loves you
+	And you know you should be glad.
+
+	She said you hurt her so
+	She almost lost her mind.
+	But now she said she knows
+	You're not the hurting kind.
+
+	She says she loves you
+	And you know that can't be bad.
+	Yes, she loves you
+	And you know you should be glad. Ooh!
+
+	She loves you, yeah, yeah, yeah
+	She loves you, yeah, yeah, yeah
+	And with a love like that
+	You know you should be glad.
+
+	You know it's up to you,
+	I think it's only fair,
+	Pride can hurt you, too,
+	Apologize to her
+
+	Because she loves you
+	And you know that can't be bad.
+	Yes, she loves you
+	And you know you should be glad. Ooh!
+
+	She loves you, yeah, yeah, yeah
+	She loves you, yeah, yeah, yeah
+
+	with a love like that
+	You know you should
+	Be Glad!
+
+	with a love like that
+	You know you should
+	Be Glad!
+
+	With a love like that
+	You know you should
+	be glad!
+
+	Yeah, yeah, yeah.
+	Yeah, yeah, yeah Ye-ah.
 }
 
 include(src/include/harmony_tune.lyi)
