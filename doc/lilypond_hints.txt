@@ -69,6 +69,9 @@ Lyrics
 - one word or syllable over multiple notes:
 	simply write many _ (one for each note you are waiting for...).
 	This means that the previous word is to be sung over all of those notes.
+- word continuing over a beamed note:
+	"round a pug -- nosed dream. __"
+	note the space before the '__'.
 - quoting in lyrics:
 	either use single quotes which give no problem:
 	He said 'hello'
@@ -94,6 +97,8 @@ Lyrics
 	Actually you dont need to do anything in order to do this.
 	If you really want to see lyrics with outstreched line like this___ then as __ after the relevant lyrics.
 	See "they_all_laughed" for an example.
+- comments in the text
+	Just like regular comments in lilypond (%% at the start of the line).
 
 Midi production
 ===============
