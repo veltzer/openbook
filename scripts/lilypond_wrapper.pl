@@ -42,16 +42,22 @@ use File::Basename qw();
 # parameters
 # do you want debugging...
 my($debug)=0;
-my($volume,$directories,$myscript) = File::Spec->splitpath($0);
-# temporary file name to store errors...
-my($tmp_fname)='/tmp/'.$myscript.$$;
 # maximum number of pages produced per lily invocation...
 my($max_pages)=10;
+# remove the tmp file for output at the end of the run? (this should be yes
+# unless you want junk files hanging around in /tmp...)
 my($remove_tmp)=1;
 
-
-#	-$(Q)chmod 444 $@ $(dir $@)$(basename $(notdir $@))*.png $(dir $@)$(basename $(notdir $@)).ps $(dir $@)$(basename $(notdir $@)).pdf $(dir $@)$(basename $(notdir $@)).midi
-
+# print to stdout a file content
+sub printout($) {
+	my($filename)=@_;
+	open(FILE,$filename) || die('unable to open ['.$filename.']');
+	my($line);
+	while($line=<FILE>) {
+		print $line;
+	}
+	close(FILE) || die('unable to close ['.$filename.']');
+}
 # this is a function that removes a file and can optionally die if there is a problem
 sub unlink_check($$) {
 	my($file,$check)=@_;
@@ -110,10 +116,15 @@ sub do_files($$) {
 # here we go...
 my($input)=shift(@ARGV);
 my($output)=shift(@ARGV);
+# first remove the output (if it exists)
 if(-f $output) {
 	unlink_check($output,1);
 }
 do_files($output,1);
+# temporary file name to store errors...
+my($volume,$directories,$myscript) = File::Spec->splitpath($0);
+my($tmp_fname)='/tmp/'.$myscript.$$;
+# the command to run
 my($cmd)='lilypond '.join(' ',@ARGV).' 1> /dev/null 2> '.$tmp_fname;
 if($debug) {
 	print 'input is ['.$input.']'."\n";
@@ -126,22 +137,19 @@ if($debug) {
 	print 'system returned ['.$res.']'."\n";
 }
 if($res) {
+	# error path, something went wrong...
 	# remove the generated files (if any) 
 	do_files($output,1);
 	# print the errors
-	open(FILE,$tmp_fname) || die('unable to open');
-	my($line);
-	while($line=<FILE>) {
-		print $line;
-	}
-	close(FILE) || die('unable to close');
+	printout($tmp_fname);
 	# remove the tmp file for the errors
 	if($remove_tmp) {
 		unlink_check($tmp_fname,1);
 	}
 	# exit with error code of the child...
-	exit($res << 8);
+	exit($res >> 8);
 } else {
+	# everything is ok
 	# remove the tmp file for the errors
 	if($remove_tmp) {
 		unlink_check($tmp_fname,1);

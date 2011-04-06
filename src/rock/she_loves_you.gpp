@@ -63,15 +63,15 @@ myVoice=\relative c {
 }
 
 %% this is taken from "The Beatles Complete" book page 175
-myLyricsReal=\lyricmode {
-	She loves you, yeah, yeah, yeah
-	She loves you, yeah, yeah, yeah
-	She loves you, yeah, yeah, yeah, yeah
-
-	You think you lost your love,
+myLyrics=\lyricmode {
+	You think you've lost your love, __
 	Well, I saw her yesterday.
 	It's you she's thinking of
 	And she told me what to say.
+
+	She loves you, yeah, yeah, yeah
+	She loves you, yeah, yeah, yeah
+	She loves you, yeah, yeah, yeah, yeah
 
 	She says she loves you
 	And you know that can't be bad.
@@ -122,4 +122,4 @@ myLyricsReal=\lyricmode {
 	Yeah, yeah, yeah Ye-ah.
 }
 
-include(src/include/harmony_tune.lyi)
+include(src/include/harmony_tune_lyrics.lyi)
