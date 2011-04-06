@@ -65,7 +65,7 @@ if($res) {
 	if($fnum!=1) {
 		die('unable to remove file ['.$tmp_fname.']');
 	}
-	exit($res << 8);
+	exit($res >> 8);
 } else {
 	my($fnum)=chmod(0444,$output);
 	if($fnum!=1) {
