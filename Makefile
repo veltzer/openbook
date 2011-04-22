@@ -107,7 +107,7 @@ ifeq ($(DO_PDF),1)
 	LYFLAGS:=$(LYFLAGS) --pdf
 endif
 ifeq ($(DO_PNG),1)
-	CLEAN_EXTRA:=$(CLEAN_EXTRA); find $(SRC_FOLDER) -name "*.png" -exec rm {} \;
+	CLEAN_EXTRA:=$(CLEAN_EXTRA); find $(SRC_FOLDER) -name "*.png" -exec rm -f {} \;
 	LYFLAGS:=$(LYFLAGS) --png
 endif
 ifeq ($(DO_PS),1)
@@ -172,7 +172,7 @@ clean_deps:
 	$(Q)rm -f $(FILES_LYD)
 .PHONY: clean_all_png
 clean_all_png:
-	-find $(SRC_FOLDER) -name "*.png" -exec rm {} \;
+	-find $(SRC_FOLDER) -name "*.png" -exec rm -f {} \;
 
 # -x: remove everything not known to git (not only ignore rules).
 # -d: remove directories also.
