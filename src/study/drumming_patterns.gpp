@@ -7,7 +7,7 @@ include(src/include/common.lyi)
 	copyright="-- no copyright notice for study materials --"
 
 	completion="5"
-	uuid="897e4006-a26f-11df-b4da-0019d11e5a41"
+	uuid="f39a06ec-6d98-11e0-b7b1-0019d11e5a41"
 }
 
 %{
