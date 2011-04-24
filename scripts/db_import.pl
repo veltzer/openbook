@@ -1,7 +1,6 @@
 #!/usr/bin/perl -w
-#!/usr/bin/env perl
 
-# this script imports all of my lilypond sources, targets and meta data (extracted
+# This script imports all of my lilypond sources, targets and meta data (extracted
 # from the lilypond files themselves) into my database (into a lilypond table).
 
 # TODO:
@@ -12,19 +11,22 @@
 
 use strict;
 use diagnostics;
-use DBI;
-use Error qw(:try);
+use DBI qw();
+use Error qw(:try); # for the throw used in handle_error (cant I do qw() here ?)
 use File::Find qw();
 use File::Basename qw();
 use Perl6::Slurp qw();
 use Parse::RecDescent qw();
 
+# parameters
 my($debug)=0;
 my($debug_blobs)=0;
 my($report)=1;
 my($do_import_blobs)=1;
 my($do_epdfs)=1;
 my($limit_imports)=1;
+
+# variables
 my($dbh);
 my($parser);
 my($grammer);
@@ -264,12 +266,11 @@ $::RD_WARN=1;
 #get_meta_data('test.ly');
 #die('end of debug');
 
-# erase all old records
-$dbh->do('delete from TbMsLilypond',undef);
-$dbh->do('delete from TbRsBlob',undef);
-# set the auto increment for the ids to start from 1...
-$dbh->do('alter table TbMsLilypond AUTO_INCREMENT=1',undef);
-$dbh->do('alter table TbRsBlob AUTO_INCREMENT=1',undef);
+# erase all old records, and set the auto increment for those tables so that ids start from 1 again...
+$dbh->do('DELETE FROM TbMsLilypond',undef);
+$dbh->do('ALTER TABLE TbMsLilypond AUTO_INCREMENT=1',undef);
+$dbh->do('DELETE FROM TbRsBlob',undef);
+$dbh->do('ALTER TABLE TbRsBlob AUTO_INCREMENT=1',undef);
 # go import things
 File::Find::find({'no_chdir'=>1,'wanted'=>\&handler},'.');
 # now commit all the changes...

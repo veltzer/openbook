@@ -4,13 +4,4 @@
 # exclude patterns (uncomment them if you want to use them):
 # *.[oa]
 # *~
-src/*/*.pdf
-src/*/*.midi
-src/*/*.ps
-src/*/*.png
-src/*/*.d
-src/*/*.stamp
-src/*/*.wav
-src/*/*.mp3
-src/*/*.ogg
-src/*/*.ly
+out/*

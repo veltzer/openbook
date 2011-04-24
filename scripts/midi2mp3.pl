@@ -39,7 +39,7 @@ if(-f $output) {
 		die('unable to remove file ['.$output.']');
 	}
 }
-my($cmd)=$prog.' '.join(' ',@ARGV).' 2> '.$tmp_fname.' | lame - '.$output.' > /dev/null 2> /dev/null';
+my($cmd)=$prog.' '.$input.' -idq -Ow -o - 2> '.$tmp_fname.' | lame - '.$output.' > /dev/null 2> /dev/null';
 if($debug) {
 	print 'cmd is ['.$cmd.']'."\n";
 }
