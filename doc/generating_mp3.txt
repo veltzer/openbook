@@ -1,0 +1,6 @@
+I used to generate .mp3 files from .wav files which were themselves generated from the the midi files
+using timidity. The problem with this approach is that the .wav file are huge, slow to create and
+don't justify their own storage space or creation time. On the other hand I still want .mp3 files.
+
+The solution now is to create .mp3 files directly from .midi files using timidity where I pipe the
+output directly to lame(1). See the midi2mp3.pl script for more details.

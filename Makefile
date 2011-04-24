@@ -1,7 +1,6 @@
-#######################
-# makefile parameters #
-#######################
-
+##############
+# PARAMETERS #
+##############
 # should we show commands executed ?
 DO_MKDBG:=0
 # should we depend on the date of the makefile itself ?
@@ -20,37 +19,38 @@ DO_PNG:=1
 DO_PS:=1
 # should we make midi ?
 DO_MIDI:=1
+# should we make stamp files ? (always answer yes to this...)
 DO_STAMP:=1
+# should we make .wav files ? (don't really want this):
 DO_WAV:=0
+# should we make mp3 ?
 DO_MP3:=1
+# should we make ogg ?
 DO_OGG:=1
 # do you actually want to use dependency information ?
 USE_LYD:=0
 # where are the sources located ?
-SRC_FOLDER:=src
+SOURCE_DIR:=src
+# where is the output folder ?
+OUT_DIR:=out
 # wrappers
 LILYPOND_WRAPPER:=scripts/lilypond_wrapper.pl
 M4_WRAPPER:=scripts/m4_wrapper.pl
 LILYDEP_WRAPPER:=scripts/lilydep.pl
-TIMIDITY_WRAPPER:=scripts/timidity_wrapper.pl
-TIMLAME_WRAPPER:=scripts/timlame_wrapper.pl
+MIDI2WAV_WRAPPER:=scripts/midi2wav.pl
+MIDI2OGG_WRAPPER:=scripts/midi2ogg.pl
+MIDI2MP3_WRAPPER:=scripts/midi2mp3.pl
 
-# here begins the makefile...
+########
+# BODY #
+########
 
-ifneq ($(filter clean_git,$(MAKECMDGOALS)),)
-USE_LYD:=0
-endif
-ifneq ($(filter clean_git_test,$(MAKECMDGOALS)),)
-USE_LYD:=0
-endif
+# do not include deps (or generate them) if we are doing a clean...
 ifneq ($(filter clean,$(MAKECMDGOALS)),)
 USE_LYD:=0
 endif
 
 ALL:=
-CLEAN:=
-CLEAN_DIRS:=
-CLEAN_EXTRA:=echo doing extra cleanup work...
 
 LYFLAGS:=
 
@@ -62,14 +62,16 @@ ifeq ($(DO_WRAPDEPS),1)
 	LILYPOND_WRAPPER_DEP:=$(LILYPOND_WRAPPER)
 	M4_WRAPPER_DEP:=$(M4_WRAPPER)
 	LILYDEP_WRAPPER_DEP:=$(LILYDEP_WRAPPER)
-	TIMIDITY_WRAPPER_DEP:=$(TIMIDITY_WRAPPER)
-	TIMLAME_WRAPPER_DEP:=$(TIMLAME_WRAPPER)
+	MIDI2WAV_WRAPPER_DEP:=$(MIDI2WAV_WRAPPER)
+	MIDI2OGG_WRAPPER_DEP:=$(MIDI2OGG_WRAPPER)
+	MIDI2MP3_WRAPPER_DEP:=$(MIDI2MP3_WRAPPER)
 else
 	LILYPOND_WRAPPER_DEP:=
 	M4_WRAPPER_DEP:=
 	LILYDEP_WRAPPER_DEP:=
-	TIMIDITY_WRAPPER_DEP:=
-	TIMLAME_WRAPPER_DEP:=
+	MIDI2WAV_WRAPPER_DEP:=
+	MIDI2OGG_WRAPPER_DEP:=
+	MIDI2MP3_WRAPPER_DEP:=
 endif
 
 ifeq ($(DO_MKDBG),1)
@@ -80,59 +82,50 @@ Q=@
 #.SILENT:
 endif # DO_MKDBG
 
-FILES_GPP:=$(shell find $(SRC_FOLDER) -name "*.gpp")
-FILES_LYI:=$(shell find $(SRC_FOLDER) -name "*.lyi")
+SOURCES_GIT:=$(shell git ls-files)
+FILES_GPP:=$(filter %.gpp,$(SOURCES_GIT))
+FILES_LYI:=$(filter %.lyi,$(SOURCES_GIT))
 
-FILES_LY:=$(addsuffix .ly,$(basename $(FILES_GPP)))
-FILES_LYD:=$(addsuffix .d,$(FILES_LY))
-FILES_PDF:=$(addsuffix .pdf,$(basename $(FILES_GPP)))
-FILES_PS:=$(addsuffix .ps,$(basename $(FILES_GPP)))
-FILES_MIDI:=$(addsuffix .midi,$(basename $(FILES_GPP)))
-FILES_STAMP:=$(addsuffix .stamp,$(basename $(FILES_GPP)))
-FILES_WAV:=$(addsuffix .wav,$(basename $(FILES_GPP)))
-FILES_MP3:=$(addsuffix .mp3,$(basename $(FILES_GPP)))
-FILES_OGG:=$(addsuffix .ogg,$(basename $(FILES_GPP)))
+FILES_LY:=$(addsuffix .ly,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
+FILES_LYD:=$(addsuffix .ly.d,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
+FILES_PDF:=$(addsuffix .pdf,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
+FILES_PS:=$(addsuffix .ps,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
+FILES_MIDI:=$(addsuffix .midi,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
+FILES_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
+FILES_WAV:=$(addsuffix .wav,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
+FILES_MP3:=$(addsuffix .mp3,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
+FILES_OGG:=$(addsuffix .ogg,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
 
 ifeq ($(DO_LY),1)
 	ALL:=$(ALL) $(FILES_LY)
-	CLEAN:=$(CLEAN) $(FILES_LY)
 endif
 ifeq ($(DO_LYD),1)
 	ALL:=$(ALL) $(FILES_LYD)
-	CLEAN:=$(CLEAN) $(FILES_LYD)
 endif
 ifeq ($(DO_PDF),1)
 	ALL:=$(ALL) $(FILES_PDF)
-	CLEAN:=$(CLEAN) $(FILES_PDF)
 	LYFLAGS:=$(LYFLAGS) --pdf
 endif
 ifeq ($(DO_PNG),1)
-	CLEAN_EXTRA:=$(CLEAN_EXTRA); find $(SRC_FOLDER) -name "*.png" -exec rm -f {} \;
 	LYFLAGS:=$(LYFLAGS) --png
 endif
 ifeq ($(DO_PS),1)
 	ALL:=$(ALL) $(FILES_PS)
-	CLEAN:=$(CLEAN) $(FILES_PS)
 endif
 ifeq ($(DO_MIDI),1)
 	ALL:=$(ALL) $(FILES_MIDI)
-	CLEAN:=$(CLEAN) $(FILES_MIDI)
 endif
 ifeq ($(DO_STAMP),1)
 	ALL:=$(ALL) $(FILES_STAMP)
-	CLEAN:=$(CLEAN) $(FILES_STAMP) $(FILES_MIDI) $(FILES_PS) $(FILES_PDF)
 endif
 ifeq ($(DO_WAV),1)
 	ALL:=$(ALL) $(FILES_WAV)
-	CLEAN:=$(CLEAN) $(FILES_WAV)
 endif
 ifeq ($(DO_MP3),1)
 	ALL:=$(ALL) $(FILES_MP3)
-	CLEAN:=$(CLEAN) $(FILES_MP3)
 endif
 ifeq ($(DO_OGG),1)
 	ALL:=$(ALL) $(FILES_OGG)
-	CLEAN:=$(CLEAN) $(FILES_OGG)
 endif
 
 .PHONY: all
@@ -146,6 +139,7 @@ ly: $(FILES_LY)
 
 .PHONY: debug
 debug:
+	$(info SOURCES_GIT is $(SOURCES_GIT))
 	$(info FILES_GPP is $(FILES_GPP))
 	$(info FILES_LY is $(FILES_LY))
 	$(info FILES_LYI is $(FILES_LYI))
@@ -157,32 +151,27 @@ debug:
 	$(info FILES_WAV is $(FILES_WAV))
 	$(info FILES_MP3 is $(FILES_MP3))
 	$(info FILES_OGG is $(FILES_OGG))
+	$(info ALL is $(ALL))
 
 .PHONY: todo
 todo:
 	-$(Q)grep TODO $(FILES_LY)
 
-.PHONY: clean
-clean:
-	$(Q)rm -rf $(CLEAN)
-	-$(Q)rm -rf $(CLEAN_DIRS)
-	$(Q)$(CLEAN_EXTRA)
 .PHONY: clean_deps
 clean_deps:
 	$(Q)rm -f $(FILES_LYD)
 .PHONY: clean_all_png
 clean_all_png:
-	-find $(SRC_FOLDER) -name "*.png" -exec rm -f {} \;
+	-find $(SOURCE_DIR) -name "*.png" -exec rm -f {} \;
 
+# cleaning using git. Watch out! always add files or they will be erased...
 # -x: remove everything not known to git (not only ignore rules).
 # -d: remove directories also.
 # -f: force.
-.PHONY: clean_git
-clean_git:
-	$(Q)git clean -xdf
-.PHONY: clean_git_test
-clean_git_test:
-	$(Q)git clean -xdf --dry-run
+# -X: keep manually created files and remove ignored files
+.PHONY: clean
+clean:
+	$(Q)git clean -fXd > /dev/null
 
 # checks
 
@@ -252,23 +241,7 @@ check_all: check_empty_copyright check_common check_ws check_and check_extra_fil
 
 # rules
 
-# rules for creating pdf, ps, png and midi directly from the ly files,
-# they are not used as we are creating everything together...
-#$(FILES_PDF): %.pdf: %.ly
-#	./scripts/lilypond_wrapper.pl --pdf $(LYFLAGS) -o /tmp/foo $<
-#	mv /tmp/foo.pdf $@
-#$(FILES_PNG): %.png: %.ly
-#	./scripts/lilypond_wrapper.pl --png $(LYFLAGS) -o /tmp/foo $<
-#	mv /tmp/foo.png $@
-#$(FILES_PS): %.ps: %.ly
-#	./scripts/lilypond_wrapper.pl --ps $(LYFLAGS) -o /tmp/foo $<
-#	mv /tmp/foo.ps $@
-#$(FILES_MIDI): %.midi: %.ly
-#	./scripts/lilypond_wrapper.pl --pdf $(LYFLAGS) -o /tmp/foo $<
-#	mv /tmp/foo.midi $@
-# dependency for PNGs does not make sense since we do not know the file names...
-#$(FILES_PNG): %.png: %.stamp $(ALL_DEP)
-
+# explain to make that .ps .pdf and .midi are really stamp files (do I need this ?!?)
 $(FILES_PS): %.ps: %.stamp $(ALL_DEP)
 
 $(FILES_PDF): %.pdf: %.stamp $(ALL_DEP)
@@ -277,36 +250,29 @@ $(FILES_MIDI): %.midi: %.stamp $(ALL_DEP)
 
 $(FILES_STAMP): %.stamp: %.ly $(ALL_DEP) $(LILYPOND_WRAPPER_DEP)
 	$(info doing [$@])
+	$(Q)-mkdir -p $(dir $@)
 	$(Q)$(LILYPOND_WRAPPER) $< $@ $(LYFLAGS) -o $(dir $@)$(basename $(notdir $@)) $<
 
-#old rule
-#	rm -rf /tmp/folder
-#	mkdir /tmp/folder
-#	./scripts/lilypond_wrapper.pl --png --pdf $(LYFLAGS) -o /tmp/folder/foo $<
-#	mv /tmp/folder/foo.ps $(basename $<).ps
-#	mv /tmp/folder/foo.pdf $(basename $<).pdf
-#	mv /tmp/folder/foo.midi $(basename $<).midi
-#	touch $@
-#rm -rf /tmp/folder
-$(FILES_LY): %.ly: %.gpp $(ALL_DEP) $(M4_WRAPPER_DEP)
+$(FILES_LY): $(OUT_DIR)/%.ly: %.gpp $(ALL_DEP) $(M4_WRAPPER_DEP)
 	$(info doing [$@])
+	$(Q)-mkdir -p $(dir $@)
 	$(Q)$(M4_WRAPPER) $< $@
 $(FILES_LYD): %.ly.d: %.ly $(ALL_DEP) $(LILYDEP_WRAPPER_DEP)
 	$(info doing [$@])
-	$(Q)$(LILYDEP_WRAPPER) $< $@ $(basename $<).stamp $(basename $<).pdf $(basename $<).ps $(basename $<).midi
-$(FILES_WAV): %.wav: %.midi $(ALL_DEP) $(TIMIDITY_WRAPPER_DEP)
+	$(Q)-mkdir -p $(dir $@)
+	$(Q)$(LILYDEP_WRAPPER) $< $@ $(basename $@).stamp $(basename $@).pdf $(basename $@).ps $(basename $@).midi
+$(FILES_WAV): %.wav: %.midi $(ALL_DEP) $(MIDI2WAV_WRAPPER_DEP)
 	$(info doing $@)
-	$(Q)$(TIMIDITY_WRAPPER) $< -idq -Ow -o $@
-# rule about making mp3 from wav files - I currently don't use it since
-# I generated mp3 directly from midi using a pipe between timidity and lame...
-#$(FILES_MP3): %.mp3: %.wav
-#	lame $< $@
-$(FILES_OGG): %.ogg: %.midi $(ALL_DEP) $(TIMIDITY_WRAPPER_DEP)
+	$(Q)-mkdir -p $(dir $@)
+	$(Q)$(MIDI2WAV_WRAPPER) $< $@
+$(FILES_OGG): %.ogg: %.midi $(ALL_DEP) $(MIDI2OGG_WRAPPER_DEP)
 	$(info doing [$@])
-	$(Q)$(TIMIDITY_WRAPPER) $< $@ $< -idq -Ov -o $@
-$(FILES_MP3): %.mp3: %.midi $(ALL_DEP) $(TIMLAME_WRAPPER_DEP)
+	$(Q)-mkdir -p $(dir $@)
+	$(Q)$(MIDI2OGG_WRAPPER) $< $@
+$(FILES_MP3): %.mp3: %.midi $(ALL_DEP) $(MIDI2MP3_WRAPPER_DEP)
 	$(info doing [$@])
-	$(Q)$(TIMLAME_WRAPPER) $< $@ $< -idq -Ow -o -
+	$(Q)-mkdir -p $(dir $@)
+	$(Q)$(MIDI2MP3_WRAPPER) $< $@
 
 # include the deps files (no warnings)
 ifeq ($(USE_LYD),1)

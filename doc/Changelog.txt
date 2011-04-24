@@ -2,3 +2,4 @@
 15/1/11: add gpp support. Now lilypond files are self sufficient.
 26/1/11: checked that epdfs work up to the db level.
 29/1/11: better support for wrapper script dependency in the makefile.
+24/4/11: output is now in a different folder than the source.
