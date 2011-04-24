@@ -45,7 +45,7 @@ if(-f $output) {
 		die('unable to remove file ['.$output.']');
 	}
 }
-my($cmd)=$prog.' '.$input.' -idq -Ov -o '.$output.' 2> '.$tmp_fname_err.' > '.$tmp_fname_out 
+my($cmd)=$prog.' '.$input.' -idq -Ov -o '.$output.' 2> '.$tmp_fname_err.' > '.$tmp_fname_out;
 if($debug) {
 	print 'cmd is ['.$cmd.']'."\n";
 }
@@ -79,7 +79,7 @@ if($res) {
 } else {
 	my($fnum)=chmod(0444,$output);
 	if($fnum!=1) {
-		die('unable to chmod file ['.$tmp_fname.']');
+		die('unable to chmod file ['.$output.']');
 	}
 	$fnum=unlink($tmp_fname_out);
 	if($fnum!=1) {
