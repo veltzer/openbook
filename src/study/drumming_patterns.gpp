@@ -1,7 +1,7 @@
 include(src/include/common.lyi)
 \header {
 	default_header
-	title="Drumming Patterns"
+	title="Drumming patterns"
 	style="Jazz"
 
 	copyright="-- no copyright notice for study materials --"
