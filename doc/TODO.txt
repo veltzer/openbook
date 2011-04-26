@@ -44,6 +44,10 @@ parsing lilypond:
 
 build system
 ============
+- when building all the products from .ly files (pdf,midi,ps,png) make sure
+	to remove ALL products from that .ly files. This is especially true for
+	pngs since if a piece shrikns in side the number of the png produced from it
+	goes DOWN and so there is a chance of old png hanging around.
 - add support for deriving gpp dependencies (a simple perl script).
 	use it to generate dependencies and analyze them.
 - do a general cache (~/.make_cache) script which will run commands for me and will save

@@ -82,9 +82,10 @@ Q=@
 #.SILENT:
 endif # DO_MKDBG
 
-SOURCES_GIT:=$(shell git ls-files)
-FILES_GPP:=$(filter %.gpp,$(SOURCES_GIT))
-FILES_LYI:=$(filter %.lyi,$(SOURCES_GIT))
+SOURCES_ALL:=$(shell git ls-files)
+#SOURCES_ALL:=$(subst ./,,$(shell find . -type f))
+FILES_GPP:=$(filter %.gpp,$(SOURCES_ALL))
+FILES_LYI:=$(filter %.lyi,$(SOURCES_ALL))
 
 FILES_LY:=$(addsuffix .ly,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
 FILES_LYD:=$(addsuffix .ly.d,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
@@ -139,7 +140,7 @@ ly: $(FILES_LY)
 
 .PHONY: debug
 debug:
-	$(info SOURCES_GIT is $(SOURCES_GIT))
+	$(info SOURCES_ALL is $(SOURCES_ALL))
 	$(info FILES_GPP is $(FILES_GPP))
 	$(info FILES_LY is $(FILES_LY))
 	$(info FILES_LYI is $(FILES_LYI))
