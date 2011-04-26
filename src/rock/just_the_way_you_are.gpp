@@ -1,0 +1,54 @@
+include(src/include/common.lyi)
+\header {
+	default_header
+	title="Just The Way You Are"
+	composer="Billy Joel"
+	poet="Billy Joel"
+	style="Pop"
+	piece="Moderately"
+
+	structure="????"
+
+	completion="4"
+	uuid="ca1dfd9e-7033-11e0-a987-0019d11e5a41"
+}
+jazzTune
+
+%{
+	TODO:
+%}
+
+%% all of the parts are taken from the notes I have of Bill Joel
+myChords=\chordmode {
+	\startChords
+
+	\startSong
+
+	\mark "Intro"
+	\startPart
+	\endPart
+	\mark "A"
+	\startPart
+	\endPart
+	\mark "B"
+	\endPart
+
+	\endSong
+
+	\endChords
+}
+
+myVoice=\relative c {
+	\time 4/4
+	\key d \major
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Moderato" 4 = 112
+
+	r8 a d <bes e g>
+}
+
+myLyrics=\lyricmode {
+	Don't go chang -- ing__
+}
+
+include(src/include/harmony_tune_lyrics.lyi)
