@@ -26,8 +26,8 @@ Chords:
   guitar diagrams. Find out how to avoid this...
 - how do I put chords in parenthesis? I still do not know.
 	
-speed of piece:
-===============
+Tempo:
+======
 - one way is:
 	==== SNIP ====
 	\tempo "Andante" 4 = 88

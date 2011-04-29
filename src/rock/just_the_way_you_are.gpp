@@ -49,9 +49,15 @@ myVoice=\relative c' {
 	\tempo "Moderato" 4 = 112
 
 	r8 a d <bes e g>~ <bes e g>2 | r8 a d <d g b>~ <d g b> <d a'>4. |
+	r8 a d <bes e g>~ <bes e g>2 | r8 a d <d g b>~ <d g b> <d a'>4 fis16 e | \myEndLine
+	<< { r2 d'8 fis4. } \\ { fis,4. fis8~ <fis d'>2 } >>
+
+	\endTune
 }
 
 myLyrics=\lyricmode {
+	_ _ _ _ _ _ _ _
+	_ _ _ _ _ _ _ _
 	Don't go chang -- ing__
 }
 
