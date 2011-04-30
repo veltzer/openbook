@@ -45,7 +45,7 @@ myChords=\chordmode {
 	\endChords
 }
 
-myFrets=\new FretBoards {  
+myFrets=\new FretBoards {
 	\myChords
 }
 
@@ -53,9 +53,9 @@ myUpperIntro=\relative c' {
 	\clef treble
 	\time 4/4
 	\key d \major
-		    %% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-		    \mark "Intro"
-		    \tempo "Moderato" 4 = 112
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\mark "Intro"
+	\tempo "Moderato" 4 = 112
 	r8 a d <bes e g>~ <bes e g>2 | r8 a d <d g b>~ <d g b> <d a'>4. |
 	r8 a d <bes e g>~ <bes e g>2 | r8 a d <d g b>~ <d g b> <d a'>4 fis16 e | \myEndLine
 	\bar "||"
@@ -93,20 +93,20 @@ myLyrics=\lyricmode {
 %% score for printing
 \score {
 	{
-		\new PianoStaff="Melody" << 
+		\new PianoStaff="Melody" <<
 			\new Staff="upper" \myUpperIntro
 			\new Staff="lower" \myLowerIntro
 		>>
 		<<
-		%%\new ChordNames="Chords" \myChords
-		%%\new Frets="Frets" \myFrets
-		\new Voice = "mymelody" { \autoBeamOff \myMelody }
-		\new Lyrics="Lyrics" \lyricsto "mymelody" \myLyrics
-		\new PianoStaff="Melody" <<
-			\new Staff="myuppervoice" \myUpperVoice
-			\new Staff="mylowervoice" \myLowerVoice
+			%%\new ChordNames="Chords" \myChords
+			%%\new Frets="Frets" \myFrets
+			\new Voice = "mymelody" { \autoBeamOff \myMelody }
+			\new Lyrics="Lyrics" \lyricsto "mymelody" \myLyrics
+			\new PianoStaff="Melody" <<
+				\new Staff="myuppervoice" \myUpperVoice
+				\new Staff="mylowervoice" \myLowerVoice
+			>>
 		>>
-	      >>
 	}
 	\layout {
 	}
@@ -114,17 +114,22 @@ myLyrics=\lyricmode {
 %% score for midi
 \score {
 	\unfoldRepeats
-	<<
-		%% the ="Chords" is the name of the channel that will be in midi
-		\new ChordNames="Chords" \myChords
-		%% the ="Melody" is the name of the channel that will be in midi
+	{
 		\new PianoStaff="Melody" <<
-			\new Staff="myuppervoice" \myUpperVoice
-			\new Staff="mylowervoice" \myLowerVoice
+			\new Staff="upper" \myUpperIntro
+			\new Staff="lower" \myLowerIntro
 		>>
-		%% the ="Lyrics" is the name of the channel that will be in midi
-		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyrics
-	>>
+		<<
+			%%\new ChordNames="Chords" \myChords
+			%%\new Frets="Frets" \myFrets
+			\new Voice = "mymelody" { \autoBeamOff \myMelody }
+			\new Lyrics="Lyrics" \lyricsto "mymelody" \myLyrics
+			\new PianoStaff="Melody" <<
+				\new Staff="myuppervoice" \myUpperVoice
+				\new Staff="mylowervoice" \myLowerVoice
+			>>
+		>>
+	}
 	\midi {
 	}
 }
