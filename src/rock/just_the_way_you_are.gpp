@@ -22,6 +22,8 @@ jazzTune
 	TODO:
 %}
 
+include(predefined-guitar-fretboards.ly)
+
 %% all of the parts are taken from the notes I have of Bill Joel
 myChords=\chordmode {
 	\startChords
@@ -30,9 +32,14 @@ myChords=\chordmode {
 
 	\mark "Intro"
 	\startPart
+	r1 | r1 | r1 | r1 |
 	\endPart
 	\mark "A"
 	\startPart
+	d1 | b:m6 | g:maj7 | b2:m d:7 |
+	g1:maj7 | g:m | d/fis | a2:m7 d:7 |
+	g1:maj7 | g:m | d/fis | b:m7 |
+	b:m7/e | e:9 | g/a | g/a |
 	\endPart
 	\mark "B"
 	\endPart
@@ -40,6 +47,10 @@ myChords=\chordmode {
 	\endSong
 
 	\endChords
+}
+
+myFrets=\new FretBoards {  
+	\myChords
 }
 
 myVoice=\relative c' {
@@ -51,6 +62,7 @@ myVoice=\relative c' {
 	r8 a d <bes e g>~ <bes e g>2 | r8 a d <d g b>~ <d g b> <d a'>4. |
 	r8 a d <bes e g>~ <bes e g>2 | r8 a d <d g b>~ <d g b> <d a'>4 fis16 e | \myEndLine
 	<< { r2 d'8 fis4. } \\ { fis,4. fis8~ <fis d'>2 } >>
+	<< { d'8 b4.~ b2 } \\ { <d, fis>2~ <d fis>8 <d fis>4. } >>
 
 	\endTune
 }
@@ -61,4 +73,32 @@ myLyrics=\lyricmode {
 	Don't go chang -- ing__
 }
 
-include(src/include/harmony_tune_lyrics.lyi)
+%% score for printing
+\score {
+	<<
+		\new ChordNames="Chords" \myChords
+		\new Frets="Frets" \myFrets
+		\new Staff="Melody" {
+			\new Voice="myvoice" \myVoice
+		}
+		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyrics
+	>>
+	\layout {
+	}
+}
+%% score for midi
+\score {
+	\unfoldRepeats
+	<<
+		%% the ="Chords" is the name of the channel that will be in midi
+		\new ChordNames="Chords" \myChords
+		%% the ="Melody" is the name of the channel that will be in midi
+		\new Staff="Melody" {
+			\new Voice="myvoice" \myVoice
+		}
+		%% the ="Lyrics" is the name of the channel that will be in midi
+		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyrics
+	>>
+	\midi {
+	}
+}
