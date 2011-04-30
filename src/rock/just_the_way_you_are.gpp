@@ -30,10 +30,6 @@ myChords=\chordmode {
 
 	\startSong
 
-	\mark "Intro"
-	\startPart
-	r1 | r1 | r1 | r1 |
-	\endPart
 	\mark "A"
 	\startPart
 	d1 | b:m6 | g:maj7 | b2:m d:7 |
@@ -53,36 +49,65 @@ myFrets=\new FretBoards {
 	\myChords
 }
 
-myVoice=\relative c' {
+myUpperIntro=\relative c' {
+	\clef treble
 	\time 4/4
 	\key d \major
-	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Moderato" 4 = 112
-
+		    %% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+		    \mark "Intro"
+		    \tempo "Moderato" 4 = 112
 	r8 a d <bes e g>~ <bes e g>2 | r8 a d <d g b>~ <d g b> <d a'>4. |
 	r8 a d <bes e g>~ <bes e g>2 | r8 a d <d g b>~ <d g b> <d a'>4 fis16 e | \myEndLine
-	<< { r2 d'8 fis4. } \\ { fis,4. fis8~ <fis d'>2 } >>
-	<< { d'8 b4.~ b2 } \\ { <d, fis>2~ <d fis>8 <d fis>4. } >>
-
-	\endTune
+	\bar "||"
+}
+myLowerIntro=\relative c' {
+	\clef bass
+	\key d \major
+	<< { d,2~ d8 d4 d8 } \\ { d,1 } >> |
+	<< { d'2~ d8 d4 d8 } \\ { d,1 } >> |
+	<< { d'2~ d8 d4 d8 } \\ { d,1 } >> |
+	<< { d'2~ d8 d4 d8 } \\ { d,1 } >> |
 }
 
+myUpperVoice=\relative c' {
+	\clef treble
+	\key d \major
+	<< { r2 d'8 fis4. } \\ { fis,4. fis8~ <fis d'>2 } >>
+	<< { d'8 b4.~ b2 } \\ { <d, fis>2~ <d fis>8 <d fis>4. } >>
+}
+myLowerVoice=\relative c' {
+	\clef bass
+	\key d \major
+	<d, a'>1 | << { gis2~ gis8 gis4. } \\ { b1 } >> |
+}
+
+myMelody=\relative c' {
+	\clef treble
+	\key d \major
+	r2 d'8 fis4. | d8 b4.~ b2 | r4 r8 fis8 b8 d4. | b8 fis4.~ fis2 |
+}
 myLyrics=\lyricmode {
-	_ _ _ _ _ _ _ _
-	_ _ _ _ _ _ _ _
 	Don't go chang -- ing__
 }
 
 %% score for printing
 \score {
-	<<
-		\new ChordNames="Chords" \myChords
-		\new Frets="Frets" \myFrets
-		\new Staff="Melody" {
-			\new Voice="myvoice" \myVoice
-		}
-		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyrics
-	>>
+	{
+		\new PianoStaff="Melody" << 
+			\new Staff="upper" \myUpperIntro
+			\new Staff="lower" \myLowerIntro
+		>>
+		<<
+		%%\new ChordNames="Chords" \myChords
+		%%\new Frets="Frets" \myFrets
+		\new Voice = "mymelody" { \autoBeamOff \myMelody }
+		\new Lyrics="Lyrics" \lyricsto "mymelody" \myLyrics
+		\new PianoStaff="Melody" <<
+			\new Staff="myuppervoice" \myUpperVoice
+			\new Staff="mylowervoice" \myLowerVoice
+		>>
+	      >>
+	}
 	\layout {
 	}
 }
@@ -93,9 +118,10 @@ myLyrics=\lyricmode {
 		%% the ="Chords" is the name of the channel that will be in midi
 		\new ChordNames="Chords" \myChords
 		%% the ="Melody" is the name of the channel that will be in midi
-		\new Staff="Melody" {
-			\new Voice="myvoice" \myVoice
-		}
+		\new PianoStaff="Melody" <<
+			\new Staff="myuppervoice" \myUpperVoice
+			\new Staff="mylowervoice" \myLowerVoice
+		>>
 		%% the ="Lyrics" is the name of the channel that will be in midi
 		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyrics
 	>>
