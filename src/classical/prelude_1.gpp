@@ -190,7 +190,7 @@ myChords=\chordmode {
 	c1\fermata |
 	c1\fermata |
 }
-piano={
+myPiano={
 	%% This is the instrument name that will appear before the staff.
 	%% it has nothing to do with the midi instrument that will be used to
 	%% render this voice in midi format...
@@ -231,7 +231,7 @@ piano={
 \score {
 	<<
 		\new ChordNames="chords" \myChords
-		\new PianoStaff = "piano" \piano
+		\new PianoStaff="piano" \myPiano
 	>>
 	\layout {
 	}
@@ -239,7 +239,7 @@ piano={
 %% score for midi
 \score {
 	<<
-		\new PianoStaff = "piano" \piano
+		\new PianoStaff="piano" \myPiano
 	>>
 	\midi {
 	}
