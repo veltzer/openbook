@@ -61,7 +61,7 @@ create an account on git hub.
 git checkout -b [your branch name] git://github.com/veltzer/openbook.git
 make (install pieces of software that it needs if it complains).
 hack on the files (git add the files that you hack on).
-commit to your own hard repository (git commit).
+commit to your own hard drive repository (git commit).
 push to git hub (git push).
 request me to pull your changes (button in the github ui).
 

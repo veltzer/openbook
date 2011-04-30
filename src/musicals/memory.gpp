@@ -31,7 +31,7 @@ jazzTune
 		version you want the voltas.
 	TODO:
 		- I don't want to see the vocal staff in the opening.
-		- rests for entire bars (like in the begining) are not centered.
+		- rests for entire bars (like in the begining) are not centered (should they be ?).
 		- reduce the size of the "GRIZABELLA" headline.
 		- what's the deal with setting the key per voice? - do I have to do that ?
 			check it out in the documentation, fix if need be and document this.
