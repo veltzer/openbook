@@ -20,6 +20,9 @@ jazzTune
 
 %{
 	TODO:
+	- first line ender with extra lines - why ?!?
+	- bring back the guitar fretboards after I manage to put them at the top of everything
+		(currently they reside above the lyrics which is weird).
 %}
 
 include(predefined-guitar-fretboards.ly)
