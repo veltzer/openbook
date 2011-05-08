@@ -98,8 +98,8 @@ myLyrics=\lyricmode {
 			\new Staff="lower" \myLowerIntro
 		>>
 		<<
-			%%\new ChordNames="Chords" \myChords
-			%%\new Frets="Frets" \myFrets
+			\new ChordNames="Chords" \myChords
+			\new Frets="Frets" \myFrets
 			\new Voice = "mymelody" { \autoBeamOff \myMelody }
 			\new Lyrics="Lyrics" \lyricsto "mymelody" \myLyrics
 			\new PianoStaff="Melody" <<
@@ -120,8 +120,8 @@ myLyrics=\lyricmode {
 			\new Staff="lower" \myLowerIntro
 		>>
 		<<
-			%%\new ChordNames="Chords" \myChords
-			%%\new Frets="Frets" \myFrets
+			%\new ChordNames="Chords" \myChords
+			%\new Frets="Frets" \myFrets
 			\new Voice = "mymelody" { \autoBeamOff \myMelody }
 			\new Lyrics="Lyrics" \lyricsto "mymelody" \myLyrics
 			\new PianoStaff="Melody" <<
