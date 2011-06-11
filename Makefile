@@ -156,14 +156,14 @@ debug:
 
 .PHONY: todo
 todo:
-	-$(Q)grep TODO $(FILES_LY)
+	$(Q)-grep TODO $(FILES_LY)
 
 .PHONY: clean_deps
 clean_deps:
 	$(Q)rm -f $(FILES_LYD)
 .PHONY: clean_all_png
 clean_all_png:
-	-find $(SOURCE_DIR) -name "*.png" -exec rm -f {} \;
+	$(Q)-find $(SOURCE_DIR) -name "*.png" -exec rm -f {} \;
 
 # cleaning using git. Watch out! always add files or they will be erased...
 # -x: remove everything not known to git (not only ignore rules).
@@ -183,60 +183,60 @@ check_extra_files:
 .PHONY: check_comments
 check_comments:
 	$(info doing [$@])
-	-$(Q)grep "%%" $(FILES_GPP)
+	$(Q)-grep "%%" $(FILES_GPP)
 .PHONY: check_and
 check_and:
 	$(info doing [$@])
-	-$(Q)grep "composer=\".* and .*\"" $(FILES_GPP)
-	-$(Q)grep "poet=\".* and .*\"" $(FILES_GPP)
+	$(Q)-grep "composer=\".* and .*\"" $(FILES_GPP)
+	$(Q)-grep "poet=\".* and .*\"" $(FILES_GPP)
 .PHONY: check_min_chords
 check_min_chords:
 	$(info doing [$@])
-	-$(Q)grep ":min" $(FILES_GPP)
+	$(Q)-grep ":min" $(FILES_GPP)
 .PHONY: check_ws
 check_ws:
 	$(info doing [$@])
-	-$(Q)./scripts/pgrep.pl "  | $$|\w\t|\t$$|\*\\d\:" $(FILES_GPP) $(FILES_LYI)
+	$(Q)-./scripts/pgrep.pl "  | $$|\w\t|\t$$|\*\\d\:" $(FILES_GPP) $(FILES_LYI)
 .PHONY: check_uuid
 check_uuid:
 	$(info doing [$@])
-	-$(Q)grep --files-without-match uuid $(FILES_GPP)
+	$(Q)-grep --files-without-match uuid $(FILES_GPP)
 .PHONY: check_common
 check_common:
 	$(info doing [$@])
-	-$(Q)grep --files-without-match "common.lyi" $(FILES_GPP)
+	$(Q)-grep --files-without-match "common.lyi" $(FILES_GPP)
 .PHONY: check_no_poet
 check_no_poet:
 	$(info doing [$@])
-	-$(Q)grep --files-without-match "poet=" $(FILES_GPP)
+	$(Q)-grep --files-without-match "poet=" $(FILES_GPP)
 .PHONY: check_copyright
 check_copyright:
 	$(info doing [$@])
-	-$(Q)grep --files-without-match "copyright=" $(FILES_GPP)
+	$(Q)-grep --files-without-match "copyright=" $(FILES_GPP)
 .PHONY: check_completion
 check_completion:
 	$(info doing [$@])
-	-$(Q)grep --files-without-match "completion=" $(FILES_GPP)
+	$(Q)-grep --files-without-match "completion=" $(FILES_GPP)
 .PHONY: check_empty_copyright
 check_empty_copyright:
 	$(info doing [$@])
-	-$(Q)grep "copyright=\"\"" $(FILES_GPP)
+	$(Q)-grep "copyright=\"\"" $(FILES_GPP)
 .PHONY: check_chordChanges
 check_chordChanges:
 	$(info doing [$@])
-	-$(Q)grep "chordChanges" $(FILES_GPP)
+	$(Q)-grep "chordChanges" $(FILES_GPP)
 .PHONY: check_bar
 check_bar:
 	$(info doing [$@])
-	-$(Q)grep "\\\\bar" $(FILES_GPP)
+	$(Q)-grep "\\\\bar" $(FILES_GPP)
 .PHONY: check_break
 check_break:
 	$(info doing [$@])
-	-$(Q)grep "\\\\break" $(FILES_GPP)
+	$(Q)-grep "\\\\break" $(FILES_GPP)
 .PHONY: check_include
 check_include:
 	$(info doing [$@])
-	-$(Q)grep "\\\\include" $(FILES_GPP)
+	$(Q)-grep "\\\\include" $(FILES_GPP)
 .PHONY: check_all
 check_all: check_empty_copyright check_common check_ws check_and check_extra_files check_min_chords check_uuid check_chordChanges check_bar check_break check_completion check_include
 
