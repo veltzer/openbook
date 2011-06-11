@@ -87,3 +87,37 @@ My own drills for understanding the on and off 8 notes...
 	}
 	\layout {}
 }
+
+\markup {
+Patterns of 3 located in different places in the eight 8 notes...
+}
+\score {
+<<
+	\new DrumStaff <<
+		\new DrumVoice {
+			\stemUp
+			\drummode {
+				hh8 hh hh hh hh hh hh hh |
+				hh hh hh hh hh hh hh hh |
+				hh hh hh hh hh hh hh hh |
+			}
+		}
+		\new DrumVoice {
+			\stemDown
+			\drummode {
+				bd8 sn4 bd8 sn4 bd8 sn8 |
+				bd8 sn4 bd8 sn8 bd8 sn4 |
+				bd8 sn8 bd8 sn4 bd8 sn4 |
+			}
+			\bar "||"
+		}
+	>>
+>>
+	\midi {
+		\context {
+			\Score
+			tempoWholesPerMinute = #(ly:make-moment 130 4)
+		}
+	}
+	\layout {}
+}
