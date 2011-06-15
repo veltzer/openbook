@@ -1,0 +1,65 @@
+include(src/include/common.lyi)
+\header {
+	default_header
+	title="איך זה שכוכב"
+	subtitle=""
+	composer="מתי כספי"
+	copyright="-- עיזרו לי למלא זכויות יוצרים --"
+	style="Israeli"
+	singer="מתי כספי"
+	piece="בוסה נובה"
+	poet="נתן זך"
+
+	completion="4"
+
+	idyoutube=""
+
+	uuid="d936b39a-971e-11e0-9c44-0019d11e5a41"
+}
+jazzTune
+
+%{
+	TODO:
+	- fill in the tune.
+	- fill in the lyrics.
+	- add youtube url.
+%}
+
+\score {
+<<
+\chordmode {
+	\startChords
+
+	\startSong
+
+	a1:maj7 | a1:maj7 | a1:maj7 | e2:m7 e2:m6 | \myEndLine
+	e1:m | d1:m7 | d2:m7 d2:m6 | a1:maj7 | \myEndLine
+	a1:maj7 | f1:maj7 | f1:maj7 | c1:maj7 | \myEndLine
+	c1:maj7 | f2 b2:m7 | e1:7 | a1:maj7 | a1:maj7 | \myEndLine
+
+	d1:7 | d1:m | fis1:dim | a1:m | \myEndLine
+	b1:m7 | a1:7 | d1:m/f | fis1:m | \myEndLine
+	fis1:m | a1:maj7 | a1:maj7 | e2:m7 e2:m6 | \myEndLine
+	e1:m | d1:m7 | d2:m6 d2:m7 | a1:maj7 | a1:maj7 | \myEndLine
+
+	\endSong
+
+	\endChords
+}
+\new Voice="melody" \relative f' {
+	\time 4/4
+	\key a \major
+
+	e2 e | gis4 a8 gis~ gis4 a8 gis~ |
+}
+\new Lyrics \lyricsto "melody" {
+}
+>>
+	\midi {
+		\context {
+			\Score
+			tempoWholesPerMinute = #(ly:make-moment 110 4)
+		}
+	}
+	\layout {}
+}

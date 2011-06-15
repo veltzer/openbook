@@ -12,7 +12,7 @@ include(src/include/common.lyi)
 
 	completion="4"
 
-	url="http://www.youtube.com/watch?v=IUZQgbhivqw"
+	idyoutube="IUZQgbhivqw"
 
 	uuid="56513346-a26f-11df-b591-0019d11e5a41"
 }
