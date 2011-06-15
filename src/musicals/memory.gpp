@@ -1,11 +1,6 @@
 include(src/include/common.lyi)
 \header {
-	subsubtitle=subsubtitle_val
-	enteredby=enteredby_val
-	maintainerEmail=maintainerEmail_val
-	footer=footer_val
-	copyright=copyright_val
-	completion=completion_val
+	default_header
 
 	title="Memory"
 	subtitle=""

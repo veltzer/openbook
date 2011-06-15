@@ -5,7 +5,7 @@ include(src/include/common.lyi)
 	style="Jazz"
 	piece="Upbeat Jazz"
 
-	copyright="-- no copyright notice for study materials --"
+	copyright=copyright_val_study
 
 	completion="4"
 

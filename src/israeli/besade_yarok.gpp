@@ -1,10 +1,10 @@
 include(src/include/common.lyi)
 \header {
-	default_header
+	default_header_heb
+
 	title="בשדה ירוק"
 	subtitle=""
 	composer="דני סנדרסון"
-	copyright="-- עיזרו לי למלא זכויות יוצרים --"
 	style="Israeli"
 	singer="דני סנדרסון"
 	piece="בלדה איטית"

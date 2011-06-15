@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
-	default_header
+	default_header_heb
+
 	title="סליחות"
 	subtitle="באת אלי"
 	composer="עודד לרר"
