@@ -5,8 +5,7 @@ include(src/include/common.lyi)
 	title="אלוהים שלי"
 	subtitle=""
 	composer="עוזי חיטמן"
-	style="Israeli"
-	piece="Med. Ballad"
+	piece="בלדה מתונה"
 	poet="עוזי חיטמן"
 
 	singer="עוזי חיטמן"

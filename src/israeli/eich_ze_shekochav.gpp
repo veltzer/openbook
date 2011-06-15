@@ -5,7 +5,6 @@ include(src/include/common.lyi)
 	title="איך זה שכוכב"
 	subtitle=""
 	composer="מתי כספי"
-	style="Israeli"
 	singer="מתי כספי"
 	piece="בוסה נובה"
 	poet="נתן זך"

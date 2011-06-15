@@ -5,8 +5,7 @@ include(src/include/common.lyi)
 	title="סליחות"
 	subtitle="באת אלי"
 	composer="עודד לרר"
-	style="Israeli"
-	piece="Med. Ballad"
+	piece="בלדה מתונה"
 	poet="לאה גולדברג"
 	singer="יהודית רביץ"
 

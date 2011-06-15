@@ -4,10 +4,7 @@ include(src/include/common.lyi)
 
 	title="Kama Yafe Poreach Halilach"
 	subtitle=""
-	style="Israeli"
-	composer="unknown"
-	piece="Med. Ballad"
-	poet="unknown"
+	piece="בלדה מתונה"
 
 	completion="2"
 
