@@ -4,7 +4,7 @@ include(src/include/common.lyi)
 	title="Drumming patterns"
 	style="Jazz"
 
-	copyright="-- no copyright notice for study materials --"
+	copyright=copyright_val_study
 
 	completion="5"
 	uuid="f39a06ec-6d98-11e0-b7b1-0019d11e5a41"

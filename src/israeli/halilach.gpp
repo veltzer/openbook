@@ -1,11 +1,11 @@
 include(src/include/common.lyi)
 \header {
-	default_header
+	default_header_heb
+
 	title="Kama Yafe Poreach Halilach"
 	subtitle=""
 	style="Israeli"
 	composer="unknown"
-	copyright="1959 1962, Editora Musical Arapua, Sao Paulo, Brazil"
 	piece="Med. Ballad"
 	poet="unknown"
 

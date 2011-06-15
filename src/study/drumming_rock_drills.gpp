@@ -4,7 +4,7 @@ include(src/include/common.lyi)
 	title="Drumming rock drills"
 	style="Jazz"
 
-	copyright="-- no copyright notice for study materials --"
+	copyright=copyright_val_study
 
 	completion="5"
 	uuid="d54f6d36-6d29-11e0-a6dd-0019d11e5a41"

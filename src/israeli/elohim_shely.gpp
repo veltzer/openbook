@@ -1,10 +1,10 @@
 include(src/include/common.lyi)
 \header {
-	default_header
+	default_header_heb
+
 	title="אלוהים שלי"
 	subtitle=""
 	composer="עוזי חיטמן"
-	copyright="unknown"
 	style="Israeli"
 	piece="Med. Ballad"
 	poet="עוזי חיטמן"

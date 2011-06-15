@@ -11,21 +11,36 @@ date = #(strftime "%d-%m-%Y" (localtime (current-time)))
 %% default values for headers
 %%=======================================================================
 define(subsubtitle_val,"built by Mark Veltzer <mark.veltzer@gmail.com> at esyscmd(date)")
+define(subsubtitle_val_heb,"נבנה על ידי מרק ולצר mark.veltzer@gmail.com ב esyscmd(date)")
 %%define(subsubtitle_val,\date)
 define(enteredby_val,"Mark Veltzer")
+define(enteredby_val_heb,"מרק ולצר")
 define(maintainerEmail_val,"mark.veltzer@gmail.com")
+define(maintainerEmail_val_heb,"mark.veltzer@gmail.com")
 define(footer_val,"this is the footer")
-define(copyright_val,"[copyright not filled - help me fill it out]")
+define(footer_val_heb,"זה הטקסט התחתון")
+define(copyright_val,"-- help me fill it out copyright --")
+define(copyright_val_heb,"-- עיזרו לי למלא זכויות יוצרים --")
+define(copyright_val_study,"-- no copyright notice for study materials --")
 define(completion_val,"0")
-define(tagline_val,"this is the tagline")
+define(tagline_val,"built by Mark Veltzer <mark.veltzer@gmail.com> at esyscmd(date)")
+define(tagline_val_heb,"built by Mark Veltzer <mark.veltzer@gmail.com> at esyscmd(date)")
 define(default_header,
-	subsubtitle=subsubtitle_val
 	enteredby=enteredby_val
 	maintainerEmail=maintainerEmail_val
 	footer=footer_val
 	copyright=copyright_val
-	completion=completion_val)
-
+	completion=completion_val
+	tagline=tagline_val
+)
+define(default_header_heb,
+	enteredby=enteredby_val
+	maintainerEmail=maintainerEmail_val_heb
+	footer=footer_val_heb
+	copyright=copyright_val_heb
+	completion=completion_val
+	tagline=tagline_val_heb
+)
 define(unused,
 %% setting instruments for midi generation (bah - this doesn't work...)
 %%=====================================================================

@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
-	default_header
+	default_header_heb
+
 	title="Od hozer hanigun"
 	singer="Berry Saharof"
 	style="Israeli"
