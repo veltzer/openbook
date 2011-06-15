@@ -24,3 +24,6 @@ joining pdfs:
 pdfjoin [first pdf] [second pdf]
 or better:
 /usr/bin/pdfjam --fitpaper 'true' --suffix joined -- [first pdf] - [second pdf] -
+
+Read more about pdf manipulation here:
+http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/firth/software/pdfjam
