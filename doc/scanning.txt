@@ -12,3 +12,15 @@ because I want to scan real sheet music for reference.
 			lineart is bad (in terms of quality).
 			I find grey is good for me.
 	scan resolution: 100 usuallly is good enough.
+
+	You can scan to jpg or pdf.
+	For the openbook project pdf is the right format.
+
+PDF manipulation:
+=================
+rotation by 180 degrees:
+pdf180 /tmp/scan0004.pdf
+joining pdfs:
+pdfjoin [first pdf] [second pdf]
+or better:
+/usr/bin/pdfjam --fitpaper 'true' --suffix joined -- [first pdf] - [second pdf] -
