@@ -21,7 +21,7 @@ use Parse::RecDescent qw();
 # parameters
 my($debug)=0;
 my($debug_blobs)=0;
-my($debug_epdf)=1;
+my($debug_epdf)=0;
 my($report)=1;
 my($do_import_blobs)=1;
 my($do_epdfs)=1;
