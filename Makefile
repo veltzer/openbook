@@ -170,9 +170,11 @@ clean_all_png:
 # -d: remove directories also.
 # -f: force.
 # -X: keep manually created files and remove ignored files
+# -xfd - is the hardest
 .PHONY: clean
 clean:
-	$(Q)git clean -fXd > /dev/null
+	$(info doing [$@])
+	$(Q)git clean -xfd > /dev/null
 
 # checks
 
