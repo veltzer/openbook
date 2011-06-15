@@ -6,8 +6,7 @@ include(src/include/common.lyi)
 	composer="שלום חנוך"
 	singer="שלום חנוך"
 	poet="שמרית אור"
-	style="Israeli"
-	piece="Med. Ballad"
+	piece="בלדה מתונה"
 
 	completion="0"
 	uuid="5a9b270e-a26f-11df-a792-0019d11e5a41"

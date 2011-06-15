@@ -32,6 +32,8 @@ define(default_header,
 	copyright=copyright_val
 	completion=completion_val
 	tagline=tagline_val
+	style="not filled"
+	poet="unkown"
 )
 define(default_header_heb,
 	enteredby=enteredby_val
@@ -40,6 +42,8 @@ define(default_header_heb,
 	copyright=copyright_val_heb
 	completion=completion_val
 	tagline=tagline_val_heb
+	style="ישראלי"
+	poet="לא מולא"
 )
 define(unused,
 %% setting instruments for midi generation (bah - this doesn't work...)

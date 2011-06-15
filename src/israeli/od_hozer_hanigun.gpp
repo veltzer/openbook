@@ -2,10 +2,9 @@ include(src/include/common.lyi)
 \header {
 	default_header_heb
 
-	title="Od hozer hanigun"
-	singer="Berry Saharof"
-	style="Israeli"
-	piece="Med. Ballad"
+	title="עוד חוזר הניגון"
+	singer="ברי סחרוף"
+	piece="בלדה מתונה"
 
 	completion="0"
 	uuid="505a0a3a-a26f-11df-bbef-0019d11e5a41"

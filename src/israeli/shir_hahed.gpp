@@ -5,7 +5,6 @@ include(src/include/common.lyi)
 	title="שיר ההד"
 	subtitle=""
 	composer="יוחנן זראי"
-	style="Israeli"
 	singer="אריק לביא"
 	piece="בלדה איטית"
 	poet="יעקב שבתאי"

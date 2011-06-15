@@ -21,6 +21,7 @@ use Parse::RecDescent qw();
 # parameters
 my($debug)=0;
 my($debug_blobs)=0;
+my($debug_epdf)=1;
 my($report)=1;
 my($do_import_blobs)=1;
 my($do_epdfs)=1;
@@ -95,10 +96,16 @@ sub handler() {
 			my($curr_base)=$name.'-epdf-'.$epdfs.'.pdf';
 			my($curr_abs)='epdfs/'.$curr_base;
 			if(-f $curr_abs) {
+				if($debug_epdf) {
+					print 'found file ['.$curr_abs.']'."\n";
+				}
 				push(@epdfs_base,$curr_base);
 				push(@epdfs_abs,$curr_abs);
 				$epdfs++;
 			} else {
+				if($debug_epdf) {
+					print 'didnt find file ['.$curr_abs.']'."\n";
+				}
 				$more=0;
 			}
 		}
