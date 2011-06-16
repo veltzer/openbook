@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header{
 	default_header
+
 	title="Corcovado"
 	subtitle="quiet nights of quiet stars"
 	composer="Antonio Carlos Jobim"

@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="It might as well be spring"
 	composer="Richard Rogers"
 	poet="Oscar Hammerstein"

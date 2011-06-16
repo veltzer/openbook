@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="Just The Way You Are"
 	composer="Billy Joel"
 	poet="Billy Joel"

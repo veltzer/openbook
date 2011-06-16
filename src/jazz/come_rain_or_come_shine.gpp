@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="Come Rain Or Come Shine"
 	subtitle=""
 	composer="Harold Arlen"

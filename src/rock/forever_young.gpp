@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="Forever Young"
 	composer="Alphaville"
 	style="Pop"

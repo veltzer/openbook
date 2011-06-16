@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="What a wonderful world"
 	composer="George David Weiss & Bob Thiele"
 	poet="George David Weiss & Bob Thiele"

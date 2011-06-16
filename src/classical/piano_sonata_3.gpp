@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="Sonata III"
 	composer="Wolfgang Amadeus Mozart"
 	copyright="1918, G.Schirmer Inc."

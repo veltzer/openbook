@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="Have you met Miss Jones"
 	composer="Richard Rogers"
 	poet="Lorenz Hart"

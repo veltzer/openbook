@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="She Loves You"
 	composer="John Lennon & Paul McCartney"
 	poet="John Lennon & Paul McCartney"

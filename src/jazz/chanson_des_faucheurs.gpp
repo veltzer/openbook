@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="Chanson des faucheurs"
 	composer="R. Schumann"
 	style="Jazz"

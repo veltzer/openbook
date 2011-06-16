@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="The Girl From Ipanema"
 	subtitle="Garota De Ipanema"
 	composer="Antonio Carlos Jobim"

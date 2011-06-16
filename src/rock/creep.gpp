@@ -2,13 +2,13 @@ include(src/include/common.lyi)
 \header {
 	default_header
 
-	title="Ain't No Sunshine"
-	composer=""
-	style="Pop"
+	title="Creep"
+	composer="Radiohead"
+	style="Rock"
 	piece="Med. Ballad"
 
-	completion="0"
-	uuid="669540fe-d851-11df-ae78-0019d11e5a41"
+	completion="5"
+	uuid="e9b74c60-97f6-11e0-86b8-0019d11e5a41"
 }
 jazzTune
 

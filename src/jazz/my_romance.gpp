@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="My Romance"
 	subtitle="From 'Jumbo'"
 	composer="Richard Rodgers"
