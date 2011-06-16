@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="Shape of My Heart"
 	singer="Sting"
 	style="Pop"

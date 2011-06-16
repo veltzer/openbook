@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="I'll Close My Eyes"
 	composer="Billy Reid"
 	poet="Buddy Kaye"

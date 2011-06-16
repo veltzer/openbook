@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="Jazz chords on the major scale"
 	style="Jazz"
 	piece="Upbeat Jazz"

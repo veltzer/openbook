@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="Someone To Watch Over Me"
 	subtitle=""
 	composer="George Gershwin"

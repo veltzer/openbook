@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="Chega De Saudade"
 	subtitle="No More Blues"
 	composer="Antonio Carlos Jobim"

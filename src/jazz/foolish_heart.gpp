@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="Foolish Heart"
 	composer="Victor Young"
 	poet="Ned Washington"

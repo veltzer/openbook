@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="I Could Write A Book"
 	subtitle="From 'Pal Joey'"
 	composer="Richard Rodgers"

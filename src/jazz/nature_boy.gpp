@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="Nature Boy"
 	subtitle=""
 	composer="Eben Ahbez"

@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="My Little Suede Shoes"
 	composer="Charlie Parker"
 	style="Jazz"

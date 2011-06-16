@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="Have I told you lately that I love you"
 	singer="Van Morrison"
 	style="Pop"

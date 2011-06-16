@@ -1,6 +1,7 @@
 include(src/include/common.lyi)
 \header {
 	default_header
+
 	title="Polka Dots And Moonbeams"
 	subtitle=""
 	composer="Jimmy Van Heusen"
