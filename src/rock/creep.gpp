@@ -4,8 +4,11 @@ include(src/include/common.lyi)
 
 	title="Creep"
 	composer="Radiohead"
+	poet="Radiohead"
 	style="Rock"
 	piece="Med. Ballad"
+
+	lyricsurl="http://www.azlyrics.com/lyrics/radiohead/creepacoustic.html"
 
 	completion="4"
 	uuid="e9b74c60-97f6-11e0-86b8-0019d11e5a41"
@@ -19,35 +22,64 @@ jazzTune
 
 include(predefined-guitar-fretboards.ly)
 
-\score {
-<<
-\chordmode {
+myChords=\chordmode {
 	\startChords
-
-	\mark "Verse"
-
+		r1 | r1 | r1 | r1 | \myEndLine
+		g1 | g1 | g1 | g1 | \myEndLine
+		b1 | b1 | b1 | b1 | \myEndLine
+		c1 | c1 | c1 | c1 | \myEndLine
+		c1:m | c1:m | c1:m | c1:m | \myEndLine
 	\endChords
 }
-myfrets=\new FretBoards {
-	\chordmode {
-		\mark "Intro"
-		c1 | g1:7 | a1:m | f1 | g1:7 | d1:m | f1 | c2. g4:7 |
-		\mark "Verse"
-		c1 | g1:7 | a1:m | f1 | g1:7 | d1:m | f1 | a2.:m g4:7 |
-	}
+myFrets=\new FretBoards {
+	\myChords
 }
-\new Voice="melody" \relative c'' {
+myVoice=\relative c'{
 	\time 4/4
 	\key c \major
 }
-\new Lyrics \lyricsto "melody" {
+myLyrics=\lyricmode {
+	When you were here before
+	Couldn't look you in the eye
+	You're just like an angel
+	Your skin makes me cry
+	You float like a feather
+	In a beautiful world
+	I wish I was special
+	You're so fucking special
+	But I 'm a creep
+	I 'm a weirdo
+	What the hell am I doing here?
+	I don't belong here
+
+	I don't care if it hurts
+	I want to have control
+	I want a perfect body
+	I want a perfect soul
+	I want you to notice
+	When I'm not around
+	You're so fucking special
+	I wish I was special
+
+	But I'm a creep
+	I'm a weirdo
+	What the hell am I doing here?
+	I don't belong here
+
+	She's running out again
+	She's running out
+	She run, run, run run
+	Run
+
+	Whatever makes you happy
+	Whatever you want
+	You're so fucking special
+	I wish I was special
+	But I'm a creep
+	I'm a weirdo
+	What the hell am I doing here?
+	I don't belong here
+	I don't belong here.
 }
->>
-	\midi {
-		\context {
-			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
-		}
-	}
-	\layout {}
-}
+
+include(src/include/harmony_text.lyi)
