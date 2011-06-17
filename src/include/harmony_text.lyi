@@ -1,7 +1,7 @@
 \score {
 	<<
-		\context ChordNames \harmony
-		\context Lyrics \text
+		\context ChordNames \myChords
+		\context Lyrics \myLyrics
 	>>
 	\midi {}
 	\layout {}

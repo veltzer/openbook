@@ -12,7 +12,7 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-harmony=\chordmode {
+myChords=\chordmode {
 	\startChords
 
 	\startSong
@@ -27,7 +27,7 @@ harmony=\chordmode {
 	\endChords
 }
 
-text=\lyrics {
+myLyrics=\lyrics {
 	Have I told you lately that I love you.
 	Have I told you that there's no one but you.
 	You give me so much gladness.
