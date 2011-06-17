@@ -32,11 +32,16 @@ epdfs:
 	What page ?
 - support not just the pdf format but other formats as well.
 
-importing:
-==========
+db importing:
+=============
 - import only things which are not in the database.
 - import in the order of the tune names.
 - import my own recordings into the database - look at the tags for more data.
+- in the database hold style as foreign keys.
+- in the database hold poet as foreign keys.
+- in the database hold composer as foreign keys.
+- import stuff which is not finished too and add completion column.
+- add a php code that does statistics on it to display in the blog.
 
 parsing lilypond:
 =================
