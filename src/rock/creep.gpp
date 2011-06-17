@@ -10,7 +10,7 @@ include(src/include/common.lyi)
 
 	lyricsurl="http://www.azlyrics.com/lyrics/radiohead/creepacoustic.html"
 
-	completion="4"
+	completion="5"
 	uuid="e9b74c60-97f6-11e0-86b8-0019d11e5a41"
 
 	remark="The G scale is the one used in the original version (Mark Veltzer,17/6/11)"
@@ -19,18 +19,21 @@ jazzTune
 
 %{
 	TODO:
-	- finish the tune and the chords...
+	- make the chords look nicer.
+	- add youtube urls.
 %}
 
 include(predefined-guitar-fretboards.ly)
 
 myChords=\chordmode {
-	\startChords
-		g1 | g1 | g1 | g1 |
-		b1 | b1 | b1 | b1 |
-		c1 | c1 | c1 | c1 |
-		c1:m | c1:m | c1:m | c1:m |
-	\endChords
+	\repeat volta 2 {
+		\startChords
+			g1 | g1 | g1 | g1 |
+			b1 | b1 | b1 | b1 |
+			c1 | c1 | c1 | c1 |
+			c1:m | c1:m | c1:m | c1:m |
+		\endChords
+	}
 }
 myFrets=\new FretBoards {
 	\myChords
@@ -44,20 +47,20 @@ verticalSpace
 	\small { % \teeny \tiny \small \normalsize \large \huge
 		\fill-line {
 		\column {
-			\line { When you were here before }
-			\line { Couldn't look you in the eye }
-			\line { You're just like an angel }
-			\line { Your skin makes me cry }
+			"When you were here before"
+			"Couldn't look you in the eye"
+			"You're just like an angel"
+			"Your skin makes me cry"
 			\null
-			\line { You float like a feather }
-			\line { In a beautiful world }
-			\line { I wish I was special }
-			\line { You're so fucking special }
+			"You float like a feather"
+			"In a beautiful world"
+			"I wish I was special"
+			"You're so fucking special"
 			\null
-			\line { But I 'm a creep }
-			\line { I 'm a weirdo }
-			\line { What the hell am I doing here? }
-			\line { I don't belong here }
+			"But I 'm a creep"
+			"I 'm a weirdo"
+			"What the hell am I doing here?"
+			"I don't belong here"
 		}
 		\null
 		\column {
@@ -94,6 +97,6 @@ verticalSpace
 			"I don't belong here"
 			"I don't belong here."
 		}
-	      }
+		}
 	}
 }
