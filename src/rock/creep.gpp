@@ -12,6 +12,8 @@ include(src/include/common.lyi)
 
 	completion="4"
 	uuid="e9b74c60-97f6-11e0-86b8-0019d11e5a41"
+
+	remark="The G scale is the one used in the original version (Mark Veltzer,17/6/11)"
 }
 jazzTune
 
@@ -24,62 +26,74 @@ include(predefined-guitar-fretboards.ly)
 
 myChords=\chordmode {
 	\startChords
-		r1 | r1 | r1 | r1 | \myEndLine
-		g1 | g1 | g1 | g1 | \myEndLine
-		b1 | b1 | b1 | b1 | \myEndLine
-		c1 | c1 | c1 | c1 | \myEndLine
-		c1:m | c1:m | c1:m | c1:m | \myEndLine
+		g1 | g1 | g1 | g1 |
+		b1 | b1 | b1 | b1 |
+		c1 | c1 | c1 | c1 |
+		c1:m | c1:m | c1:m | c1:m |
 	\endChords
 }
 myFrets=\new FretBoards {
 	\myChords
 }
-myVoice=\relative c'{
-	\time 4/4
-	\key c \major
+include(src/include/harmony.lyi)
+
+% Lyrics
+verticalSpace
+verticalSpace
+\markup {
+	\small { % \teeny \tiny \small \normalsize \large \huge
+		\fill-line {
+		\column {
+			\line { When you were here before }
+			\line { Couldn't look you in the eye }
+			\line { You're just like an angel }
+			\line { Your skin makes me cry }
+			\null
+			\line { You float like a feather }
+			\line { In a beautiful world }
+			\line { I wish I was special }
+			\line { You're so fucking special }
+			\null
+			\line { But I 'm a creep }
+			\line { I 'm a weirdo }
+			\line { What the hell am I doing here? }
+			\line { I don't belong here }
+		}
+		\null
+		\column {
+			"I don't care if it hurts"
+			"I want to have control"
+			"I want a perfect body"
+			"I want a perfect soul"
+			\null
+			"I want you to notice"
+			"When I'm not around"
+			"You're so fucking special"
+			"I wish I was special"
+			\null
+			"But I'm a creep"
+			"I'm a weirdo"
+			"What the hell am I doing here?"
+			"I don't belong here"
+		}
+		\null
+		\column {
+			"She's running out again"
+			"She's running out"
+			"She run, run, run run"
+			"Run"
+			\null
+			"Whatever makes you happy"
+			"Whatever you want"
+			"You're so fucking special"
+			"I wish I was special"
+			\null
+			"But I'm a creep"
+			"I'm a weirdo"
+			"What the hell am I doing here?"
+			"I don't belong here"
+			"I don't belong here."
+		}
+	      }
+	}
 }
-myLyrics=\lyricmode {
-	When you were here before
-	Couldn't look you in the eye
-	You're just like an angel
-	Your skin makes me cry
-	You float like a feather
-	In a beautiful world
-	I wish I was special
-	You're so fucking special
-	But I 'm a creep
-	I 'm a weirdo
-	What the hell am I doing here?
-	I don't belong here
-
-	I don't care if it hurts
-	I want to have control
-	I want a perfect body
-	I want a perfect soul
-	I want you to notice
-	When I'm not around
-	You're so fucking special
-	I wish I was special
-
-	But I'm a creep
-	I'm a weirdo
-	What the hell am I doing here?
-	I don't belong here
-
-	She's running out again
-	She's running out
-	She run, run, run run
-	Run
-
-	Whatever makes you happy
-	Whatever you want
-	You're so fucking special
-	I wish I was special
-	But I'm a creep
-	I'm a weirdo
-	What the hell am I doing here?
-	I don't belong here
-	I don't belong here.
-}
-
-include(src/include/harmony_text.lyi)

@@ -138,3 +138,9 @@ define(jazzTune,
 generalMacros
 jazzParts
 jazzVisual)
+
+define(verticalSpace,
+\markup {
+          \null
+	}
+)
