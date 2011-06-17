@@ -13,7 +13,7 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-harmony=\chordmode {
+myChords=\chordmode {
 	\startChords
 
 	\startSong
@@ -35,7 +35,7 @@ harmony=\chordmode {
 
 	\endChords
 }
-text=\lyricmode {
+myLyrics=\lyricmode {
 	בעירי היו שתי עלמות
 	שתי עלמות יפות ותאומות.
 	הן היו תמיד כל כך דומות,
