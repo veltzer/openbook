@@ -3,7 +3,6 @@ include(src/include/common.lyi)
 	default_header
 
 	title="Someone To Watch Over Me"
-	subtitle=""
 	composer="George Gershwin"
 	poet="Ira Gershwin"
 	style="Jazz Ballad"

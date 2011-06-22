@@ -3,7 +3,6 @@ include(src/include/common.lyi)
 	default_header_heb
 
 	title="אלוהים שלי"
-	subtitle=""
 	composer="עוזי חיטמן"
 	piece="בלדה מתונה"
 	poet="עוזי חיטמן"

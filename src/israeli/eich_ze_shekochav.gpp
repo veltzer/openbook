@@ -3,7 +3,6 @@ include(src/include/common.lyi)
 	default_header_heb
 
 	title="איך זה שכוכב"
-	subtitle=""
 	composer="מתי כספי"
 	singer="מתי כספי"
 	piece="בוסה נובה"

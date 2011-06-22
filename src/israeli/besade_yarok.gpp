@@ -3,7 +3,6 @@ include(src/include/common.lyi)
 	default_header_heb
 
 	title="בשדה ירוק"
-	subtitle=""
 	composer="דני סנדרסון"
 	singer="דני סנדרסון"
 	piece="בלדה איטית"

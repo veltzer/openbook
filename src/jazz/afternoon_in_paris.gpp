@@ -3,11 +3,10 @@ include(src/include/common.lyi)
 	default_header
 
 	title="Afternoon in Paris"
-	subtitle=""
 	composer="John Lewis"
 	style="Jazz"
 	piece="Moderate Swing"
-	poet=""
+	poet="None"
 	copyright="1955 and Renewal of Copyright 1983 by MJQ Music, Inc."
 
 	structure="AABA"

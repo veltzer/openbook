@@ -3,7 +3,6 @@ include(src/include/common.lyi)
 	default_header
 
 	title="Nature Boy"
-	subtitle=""
 	composer="Eben Ahbez"
 	style="Jazz"
 	piece="Med. Ballad"

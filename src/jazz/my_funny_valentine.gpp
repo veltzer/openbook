@@ -3,7 +3,6 @@ include(src/include/common.lyi)
 	default_header
 
 	title="My Funny Valentine"
-	subtitle=""
 	composer="Richard Rodgers"
 	copyright="1937 by Chappell & Co., Inc. Copyright Renewed"
 	style="Jazz"

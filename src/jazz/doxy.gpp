@@ -3,12 +3,11 @@ include(src/include/common.lyi)
 	default_header
 
 	title="Doxy"
-	subtitle=""
 	composer="Sonny Rollins"
 	copyright="1963 Prestige music co, inc."
 	style="Jazz"
 	piece="Medium Groove"
-	poet=""
+	poet="None"
 
 	completion="5"
 	uuid="c921579e-a26e-11df-9a5c-0019d11e5a41"

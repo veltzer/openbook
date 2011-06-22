@@ -3,7 +3,6 @@ include(src/include/common.lyi)
 	default_header
 
 	title="They All Laughed"
-	subtitle=""
 	composer="George Gershwin"
 	style="Jazz"
 	piece="Medium Swing"

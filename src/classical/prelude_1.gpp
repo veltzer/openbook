@@ -9,7 +9,7 @@ include(src/include/common.lyi)
 	style="Classical"
 	piece="BWV 846"
 	remark="Taken from Shlomo Gronichs book"
-	poet=""
+	poet="None"
 
 	completion="5"
 	uuid="562ae904-a664-11df-9e85-0019d11e5a41"
