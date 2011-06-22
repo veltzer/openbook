@@ -29,9 +29,9 @@ cpp
 	- cannot handle single quotes (') well.
 m4
 	advantages:
-	- has very good documentation (info m4 has lots and lots of info).
+	- has very good documentation (info m4 has lots of info).
 	- very well supported.
-	- widely available.
+	- widely available (on linux at least).
 	disadvantates:
 	- does not know how to emit dependency information.
 my own preprocessor
@@ -39,3 +39,15 @@ my own preprocessor
 	- I can have it have any selection of features that I need.
 	disadvantates:
 	- need to be built (C, C++ ?)
+
+What processor is currently used?
+=================================
+m4. It just evolved that way.
+
+m4 hints
+========
+to quote:
+define(var,`this is quoted text')
+When do you have to quote? When you put a comma or other m4 meta important characters in the substituted text.
+The thing is that you have to keep quoting the variable if you have such meta characters:
+define(othervar,the value of the variable is `var')
