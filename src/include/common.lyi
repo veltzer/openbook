@@ -5,8 +5,9 @@
 %%=====================================================================
 \version "2.12.3"
 
-%% lets define a variable to hold the formatted build date:
-date = #(strftime "%d-%m-%Y" (localtime (current-time)))
+%% lets define a variable to hold the formatted build date (man 3 strftime):
+date=#(strftime "%T %d-%m-%Y" (localtime (current-time)))
+lilyver=#(lilypond-version)
 
 %% default values for headers
 %%=======================================================================
@@ -23,15 +24,15 @@ define(copyright_val,"-- help me fill it out copyright --")
 define(copyright_val_heb,"-- עיזרו לי למלא זכויות יוצרים --")
 define(copyright_val_study,"-- no copyright notice for study materials --")
 define(completion_val,"0")
-define(tagline_val,"built by Mark Veltzer <mark.veltzer@gmail.com> at esyscmd(date)")
-define(tagline_val_heb,"built by Mark Veltzer <mark.veltzer@gmail.com> at esyscmd(date)")
+define(tagline_val,`\markup {\small {Typeset by Mark Veltzer <mark.veltzer@gmail.com>, built at \date, engraved by lilypond \lilyver}}')
+define(tagline_val_heb,`\markup {\small {Typeset by Mark Veltzer <mark.veltzer@gmail.com>, built at \date, engraved by lilypond \lilyver}}')
 define(default_header,
 	enteredby=enteredby_val
 	maintainerEmail=maintainerEmail_val
 	footer=footer_val
 	copyright=copyright_val
 	completion=completion_val
-	tagline=tagline_val
+	tagline=`tagline_val'
 	style="not filled"
 	poet="unkown"
 )
@@ -41,7 +42,7 @@ define(default_header_heb,
 	footer=footer_val_heb
 	copyright=copyright_val_heb
 	completion=completion_val
-	tagline=tagline_val_heb
+	tagline=`tagline_val_heb'
 	style="ישראלי"
 	poet="לא מולא"
 )
