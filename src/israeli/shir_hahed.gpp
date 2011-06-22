@@ -3,7 +3,6 @@ include(src/include/common.lyi)
 	default_header_heb
 
 	title="שיר ההד"
-	subtitle=""
 	composer="יוחנן זראי"
 	singer="אריק לביא"
 	piece="בלדה איטית"

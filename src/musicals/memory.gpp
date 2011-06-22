@@ -3,11 +3,10 @@ include(src/include/common.lyi)
 	default_header
 
 	title="Memory"
-	subtitle=""
 	composer="Andrew Lloyd Webber"
 	copyright="Copyright 1981 by the Really Useful Group plc. and Faber Music Ltd."
 	style="Musical"
-	piece=""
+	piece="Musical"
 	remark="Taken from Scribd url http://www.scribd.com/doc/9491593/Sheet-Music-Cats-Memory"
 	poet="Trevor Nunn after T.S. Eliot"
 

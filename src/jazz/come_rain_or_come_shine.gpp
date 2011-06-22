@@ -3,7 +3,6 @@ include(src/include/common.lyi)
 	default_header
 
 	title="Come Rain Or Come Shine"
-	subtitle=""
 	composer="Harold Arlen"
 	poet="Johnny Mercer"
 	style="Jazz"

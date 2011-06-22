@@ -3,7 +3,7 @@ include(src/include/common.lyi)
 	default_header
 
 	title="Ain't No Sunshine"
-	composer=""
+	composer="Bill Withers"
 	style="Pop"
 	piece="Med. Ballad"
 

@@ -3,12 +3,11 @@ include(src/include/common.lyi)
 	default_header
 
 	title="Watermelon Man"
-	subtitle=""
 	composer="Herbie Hancock"
 	copyright="1962, 1963 & 1965 By Hancock Music Co., New York, NY"
 	style="Jazz"
 	piece="16-Bar Blues"
-	poet=""
+	poet="None"
 
 	completion="5"
 	uuid="359f7428-a26f-11df-ad8c-0019d11e5a41"

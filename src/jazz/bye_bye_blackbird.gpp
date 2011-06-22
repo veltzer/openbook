@@ -3,7 +3,6 @@ include(src/include/common.lyi)
 	default_header
 
 	title="Bye Bye Blackbird"
-	subtitle=""
 	composer="Ray Henderson"
 	poet="Mort Dixon"
 	style="Moderately"

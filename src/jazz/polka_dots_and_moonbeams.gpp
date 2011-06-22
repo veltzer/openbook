@@ -3,7 +3,6 @@ include(src/include/common.lyi)
 	default_header
 
 	title="Polka Dots And Moonbeams"
-	subtitle=""
 	composer="Jimmy Van Heusen"
 	copyright="1940 by ARC Music Corp., now Bourne Co. and Dorsey Bros."
 	%% Music, Division of Music Sales Corporation
