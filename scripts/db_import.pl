@@ -19,7 +19,7 @@ use Perl6::Slurp qw();
 use Parse::RecDescent qw();
 
 # parameters
-my($debug)=0;
+my($debug)=1;
 my($debug_blobs)=0;
 my($debug_epdf)=0;
 my($report)=1;

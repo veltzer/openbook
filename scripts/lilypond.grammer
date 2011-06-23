@@ -35,11 +35,18 @@ include: '\include' '"' filename '"' {
 block: before_block '{' block(s) '}' | statement(s?)
 
 # this is the inner stuff (no { or })
-headerline: assignment | one_line_double_comment | one_line_comment | block_comment
-assignment: var '=' '"' value '"'
+headerline: assignment1 | assignment2 | one_line_double_comment | one_line_comment | block_comment
+assignment1: var '=' '"' value '"'
 {
 	my($key)=$item[1];
 	my($val)=$item[4];
+	$hash->{$key}=$val;
+#	print "assignment for [$key,$val]\n";
+}
+assignment2: var '=' anyoneline
+{
+	my($key)=$item[1];
+	my($val)=$item[3];
 	$hash->{$key}=$val;
 #	print "assignment for [$key,$val]\n";
 }
