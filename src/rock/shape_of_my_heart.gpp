@@ -18,7 +18,7 @@ jazzTune
 	- add tune
 %}
 
-harmony=\chordmode {
+myChords=\chordmode {
 	\mark "verse"
 	ges2:m ges2:m
 	\mark "chorus"
