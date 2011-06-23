@@ -12,46 +12,57 @@ The most important part is the paper size - if you are using A4 then choose A4 (
 small by the way). If you do not do this then you will get various cut offs.
 Make sure that the setting are ok both in cups and in gnome/KDE since the desktop layer
 can override the cups layer.
+Also make sure that the quality is set to "Best".
 
-Footers not printing
-====================
-There is a problem which sometimes appears in postscript prints from lilypond that make
-the footer not print. I added this on each page to solve it:
-
-#(set-default-paper-size "a4")
-\paper {
-	bottom-margin = 2.5\cm
-}
-The paper-size is not mandatory but that is what I use for printing. The bottom-margin
-is mandatory since this is what makes the footer appear right.
+Configuring correct command line printing:
+==========================================
+- run lpoptions -l and see that you are using the correct options.
+- you can set the options via 'lpoptions -l key=val' or via editing the '~/.cups/lpoptions'
+file.
+- Here is an example of my file:
+============= START ============
+Default HP_LaserJet_3030 OutputMode=Best PageSize=A4
+============= END ==============
+- What can happen if you don't do this? Footers will not print, best quality will not be
+used and more.
 
 Printing pdfs
 =============
 - If you use the gnome document viewer to print pdfs then make sure that your printing
 definitions are right (see above).
 - Alternativly use the command line "lp [filename]" (more control and less layers in the way).
+There is a difference between printing via the gnome document viewer and the command line
+in terms of quality (command line looks cleaner).
 
 Printing postscript
 ===================
-- There is a problem with the footers not appearing (see above how this can be fixed).
 - You can either use the gnome document viewer or the command line lp(1) (I prefer the latter).
 
 which is better (postscript or pdf) ?
 =====================================
-Postscript: looks better. This is the original format which only then gets converted
-to pdf so probably has other advantages. It is a little larger. Postscript format sometime
-looses the footers if you do not use the "bottom-margin" trick mentioned above. If you want
-to make it smaller then compress it (this is the one advantage of pdf).
-PDF: more portable, less weight, doesn't look as good as postscript.
+Postscript:
+	- looks better
+	- this is the original format which only then gets converted to pdf so probably has other advantages
+		I'm not sure this reason still holds - need to ask the lilypond developers about this.
+	- much larger file size.
+PDF:
+	- more portable
+	- less weight
+	- looks as well as postscript when printed from the command line.
 
 references: http://www.complang.tuwien.ac.at/anton/why-not-pdf.html
 
 Summary
 =======
-If you want the best quality then print the lilypond outputs using ** postscript ** from either the gnome document viewer or from the command line lp(1) (I prefer the latter for more determinism since it only takes preferences from the cups layer). 
+If you want the best quality then print via the command line lp(1) (I prefer the latter for more determinism since it only takes preferences from the cups layer). Configure it properly via 'lpoptions' or '~/.cpus/lpoptions'
 
 HP printers on Linux/Ubuntu
 ===========================
-I have an HP laserjet 3030 and printing postscript directly from lilypond to it stopped working. This seems to be because the printer
-does not understand the new postscript. If I run the hp utility and configure the printer through it then it works well.
-The command line works ok too.
+I have an HP laserjet 3030.
+
+It seems that you need the hp utility running in order to configture this printer properly.
+If you do not configure it properly then printing directly from lilypond to it does not work.
+This seems to be because the printer does not understand the new postscript.
+If I run the hp utility and configure the printer through it then it works well.
+
+The command line works ok too for this printer (if configured properly).

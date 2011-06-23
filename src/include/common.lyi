@@ -70,8 +70,8 @@ define(jazzVisual,
 	%% the result of this is that I can fit 8 single staffs in one page
 	%% which is ideal for Jazz (think 32 bar divided into 8 lines of 4 bars each...).
 	%% I should really only apply this thing for Jazz tunes but that is a TODO item.
-	%% default is 4\mm
-	between-system-padding = 1\mm
+	%% default is 4\mm - 3 already causes 8 staffs to take 2 pages
+	between-system-padding = 2\mm
 	%% default is 20\mm
 	%% between-system-space = 16\mm
 	%% ragged-last-bottom = ##f
@@ -80,32 +80,36 @@ define(jazzVisual,
 	%% make lilypond increase the distance of the footer from the bottom of the page
 	%% it seems that if you don't do something like this you're going to have
 	%% a real problem seeing the footer in postscript printing....
-	bottom-margin = 2.5\cm
+	%bottom-margin = 2.5\cm
 
 }
 \layout {
 	%% don't have the fist line indented
 	indent = 0.0 \cm
 	%% don't know what this is (taken from Laurent Martelli...)
-	%%textheight = 1.5\cm
+	%textheight = 1.5\cm
 
 	\context {
 		\Score
 		\override LyricText #'font-family = #'typewriter
 		\override LyricText #'font-size = #'-2
+		% set the style of the chords to Jazz - I don't see this making any effect
 		%\override ChordName #'style = #'jazz
 		%\override ChordName #'word-space = #2
 		\override ChordName #'font-series = #'bold
 		\override ChordName #'font-family = #'roman
-		\override ChordName #'font-size = #-2
+		\override ChordName #'font-size = #-1
+		%% don't show bar numbers (for jazz it makes it too cluttery)
 		\remove "Bar_number_engraver"
 	}
 }
 %% reduce the font size (taken from the lilypond info documentation)
-#(set-global-staff-size 17.82)
+%%#(set-global-staff-size 17.82)
+
+%% There is no need to set the paper size to a4 since it is the default.
 %% make lilypond use paper of size a4 (Is this the default ?!?)
-#(set-default-paper-size "a4")
-)
+%%#(set-default-paper-size "a4")
+%%)
 
 % this is a macro that * really * breaks lines. You don't really need this since a regular \break will work
 % AS LONG AS you have the '\remove Bar_engraver' enabled...
