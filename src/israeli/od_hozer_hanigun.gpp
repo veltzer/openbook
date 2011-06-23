@@ -11,7 +11,7 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-harmony=\chordmode {
+myChords=\chordmode {
 	\mark "opening"
 	\repeat volta 4 {
 		b2:m7 a2:7 |
