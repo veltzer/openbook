@@ -66,6 +66,7 @@ myHighVoice=\relative c'' {
 	\key c \major
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
+	\voiceOne
 
 	\startTune
 	r8 e g f e dis ||
@@ -100,10 +101,43 @@ myHighVoice=\relative c'' {
 
 	\endTune
 }
+myMidVoice=\relative c' {
+	\voiceTwo
+
+	s2. | 
+
+	s4 <a' c> <a c>
+}
+
 myLowVoice=\relative c' {
-	r2. | 
-	
-	<< { a2. } \\ { r4 <a' c> <a c> } >> |
+	\voiceFour
+
+	s2. | 
+
+	a2. | d | a | a |
+	a | d | e | a, |
+	d | e, | a | a |
+	e | e | a4 c e | a, s s |
+
+	\repeat volta 2 {
+		e2. | e | a | a |
+		e | d' | a | a |
+		d | d | a | a |
+		e | 
+	} \alternative {
+		{ e | a | a | }
+		{ e | a | s | }
+	}
+
+	\repeat volta 2 {
+		a8 b c cis d dis | e2. | a4 f d8 dis | e2. |
+		a4 f d | c2. | b | c |
+		a8 b c cis d dis | e2. | a4 f d8 dis | e2. |
+		a4 f d | c2. | b |
+	} \alternative {
+		{ a | }
+		{ a | }
+	}
 }
 %% score for printing
 \score {
@@ -111,6 +145,7 @@ myLowVoice=\relative c' {
 		%%\new ChordNames="mychords" \myChords
 		\new Staff="Melody" <<
 			\new Voice="myhighvoice" \myHighVoice
+			\new Voice="mymidvoice" \myMidVoice
 			\new Voice="mylowvoice" \myLowVoice
 		>>
 	>>
