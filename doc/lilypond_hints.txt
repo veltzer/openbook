@@ -110,3 +110,16 @@ will lead to multiple midi files produced when that file gets processed.
 Documentation for lilypond:
 ===========================
 - A snipplet repository: http://lsr.dsi.unimi.it/
+
+Doing nothing in lilypond
+=========================
+Lets say you want a macro that does nothing (You may want it to do something in the future).
+If you do:
+myMacro=
+Then you will get errors. The only way I found so far to get over this issue is to do:
+myMacro={}
+Which seems to work.
+
+Maybe there is a better way?
+	- an official lilypond operation that does nothing ?!?
+	- a scheme macro ?!?
