@@ -13,13 +13,14 @@ include(src/include/common.lyi)
 	completion="5"
 	uuid="e9b74c60-97f6-11e0-86b8-0019d11e5a41"
 
+	idyoutube="XFkzRNyygfk"
+
 	remark="The G scale is the one used in the original version (Mark Veltzer,17/6/11)"
 }
 jazzTune
 
 %{
 	TODO:
-	- make the chords look nicer.
 	- add youtube urls.
 %}
 
@@ -28,17 +29,31 @@ include(predefined-guitar-fretboards.ly)
 myChords=\chordmode {
 	\repeat volta 2 {
 		\startChords
-			g1 | g1 | g1 | g1 |
-			b1 | b1 | b1 | b1 |
-			c1 | c1 | c1 | c1 |
-			c1:m | c1:m | c1:m | c1:m |
+			g1*4
+			b1*4
+			c1*4
+			c1*4:m
 		\endChords
 	}
 }
 myFrets=\new FretBoards {
 	\myChords
 }
-include(src/include/harmony.lyi)
+\score {
+	<<
+		\myFrets
+		\new ChordNames="Chords"
+		%% this adds a bar engraver which does not always come with chords
+		%% I didn'f find a way to put this with the chords themselves...
+		\with {
+			\override BarLine #'bar-size = #4
+			\consists "Bar_engraver"
+		}
+		\myChords
+	>>
+	\midi {}
+	\layout {}
+}
 
 % Lyrics
 verticalSpace
