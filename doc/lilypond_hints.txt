@@ -23,7 +23,12 @@ Chords:
 		}
 	}
   The problem with this is that you wind up repeating the chord names yet again just for the
-  guitar diagrams. Find out how to avoid this...
+  guitar diagrams. The is a way to share. Define a new for the chords and then reuse that name
+  inside the FretBoards section.
+- adding notes to chords: c:5.9 is a regular C chord with a D added in. This is different from
+c:9 which is c:7.9 which is correct for jazz but not for rock.
+
+questions:
 - how do I put chords in parenthesis? I still do not know.
 	
 Tempo:

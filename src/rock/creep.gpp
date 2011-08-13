@@ -21,7 +21,6 @@ jazzTune
 
 %{
 	TODO:
-	- add youtube urls.
 %}
 
 include(predefined-guitar-fretboards.ly)
