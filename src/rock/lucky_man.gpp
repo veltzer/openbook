@@ -20,6 +20,25 @@ include(src/include/common.lyi)
 jazzTune
 
 %{
+	remarks:
+	  \key d \major
+	  Some people play "a | g | d | d |" at the chorus but this is wrong if you bother
+	  to hear the original.
+	  Song progression:
+	  	opening
+		verse 1
+		chorus 1
+		verse 2
+		chorus 2
+		verse (solo) 
+		chorus (solo)
+		verse 3
+		chorus 3
+		verse 4
+		chorus 4
+		ending (2.5 choruses with a solo keyboard and a long D at the end)
+
+%{
 	TODO:
 %}
 
