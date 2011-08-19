@@ -100,7 +100,7 @@ Lyrics
 	See "they_all_laughed" for an example.
 - one word over a note with arcs
 	Actually you dont need to do anything in order to do this.
-	If you really want to see lyrics with outstreched line like this___ then as __ after the relevant lyrics.
+	If you really want to see lyrics with outstreched line like this___ then add __ after the relevant lyrics.
 	See "they_all_laughed" for an example.
 - comments in the text
 	Just like regular comments in lilypond (%% at the start of the line).
