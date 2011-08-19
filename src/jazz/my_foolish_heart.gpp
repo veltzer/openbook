@@ -89,7 +89,7 @@ myChords=\chordmode {
 %% taken from the fakebook
 myVoice=\relative f' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Andante" 4 = 92
+	\tempo "Moderato" 4 = 108
 	\key bes \major
 	\time 4/4
 
