@@ -11,6 +11,8 @@ include(src/include/common.lyi)
 
 	completion="5"
 	uuid="359f7428-a26f-11df-ad8c-0019d11e5a41"
+
+	idyoutube="4z8Rt4nvd-I"
 }
 jazzTune
 
