@@ -8,6 +8,7 @@
 # 	Do this using the uuid, a date field as compared to the date of the file,
 # 	or maybe an md5 sum ?!?
 # - improve the lilypond parser to get more data. 
+# - this script should NOT erase all the blobs which are in the DATABASE! this is important!
 
 use strict;
 use diagnostics;
@@ -65,7 +66,7 @@ sub insert_blob($$$$) {
 	}
 	my($data);
 	$data=Perl6::Slurp::slurp($file);
-	$dbh->do('insert into TbRsBlob (name,slug,mime,data) values(?,?,?,?)',
+	$dbh->do('INSERT INTO TbRsBlob (name,slug,mime,data) VALUES(?,?,?,?)',
 		undef,
 		$name,
 		$slug,
@@ -167,7 +168,7 @@ sub handler() {
 	if($report) {
 		print 'importing ['.$hash->{'title'}.']'."\n";
 	}
-	$dbh->do('insert into TbMsLilypond (uuid,title,subtitle,composer,copyright,style,piece,poet,pages,idyoutube,epdfs) values(?,?,?,?,?,?,?,?,?,?,?)',
+	$dbh->do('INSERT INTO TbMsLilypond (uuid,title,subtitle,composer,copyright,style,piece,poet,pages,idyoutube,epdfs) VALUES(?,?,?,?,?,?,?,?,?,?,?)',
 		undef,
 		$hash->{'uuid'},
 		$hash->{'title'},
