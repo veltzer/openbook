@@ -8,14 +8,13 @@ include(src/include/common.lyi)
 	style="Rock"
 	piece="Med. Ballad"
 
-	lyricsurl="http://www.sing365.com/music/lyric.nsf/Lucky-Man-lyrics-Emerson-Lake-Palmer/13302F99F6B11DEC48256AB8002432F8"
-
 	completion="5"
 	uuid="a68bcbbc-c8ae-11e0-8fa9-0019d11e5a41"
+	
+	remark="The D scale is the one used in the original version (Mark Veltzer,17/8/11)"
 
 	idyoutube="5x6uQ6yZsOY"
-
-	remark="The D scale is the one used in the original version (Mark Veltzer,17/8/11)"
+	lyricsurl="http://www.sing365.com/music/lyric.nsf/Lucky-Man-lyrics-Emerson-Lake-Palmer/13302F99F6B11DEC48256AB8002432F8"
 }
 jazzTune
 

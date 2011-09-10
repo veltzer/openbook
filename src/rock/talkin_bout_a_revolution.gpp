@@ -8,12 +8,11 @@ include(src/include/common.lyi)
 	style="Rock"
 	piece="upbeat"
 
-	lyricsurl="http://www.lyrics007.com/Tracy%20Chapman%20Lyrics/Talkin'%20Bout%20A%20Revolution%20Lyrics.html"
-
 	completion="5"
 	uuid="e9155cee-c554-11e0-b407-0019d11e5a41"
 
 	idyoutube="SKYWOwWAguk"
+	lyricsurl="http://www.lyrics007.com/Tracy%20Chapman%20Lyrics/Talkin'%20Bout%20A%20Revolution%20Lyrics.html"
 }
 jazzTune
 

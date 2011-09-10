@@ -8,14 +8,13 @@ include(src/include/common.lyi)
 	style="Rock"
 	piece="Upbeat"
 
-	lyricsurl="http://www.elyrics.net/read/e/europe-lyrics/the-final-countdown-lyrics.html"
-
 	completion="5"
 	uuid="7f247a70-c8f3-11e0-bb35-0019d11e5a41"
+	
+	remark="same scale (fis:m) as the original version"
 
 	idyoutube="9jK-NcRmVcw"
-
-	remark="same scale (fis:m) as the original version"
+	lyricsurl="http://www.elyrics.net/read/e/europe-lyrics/the-final-countdown-lyrics.html"
 }
 jazzTune
 
