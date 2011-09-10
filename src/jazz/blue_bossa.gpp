@@ -14,6 +14,7 @@ include(src/include/common.lyi)
 
 	remark="Play last 4 bars twice more to end (taken from the real book)"
 	remark="Joe Henderson - 'Page One'"
+	remark="Real book version is in the first real book on page 51"
 
 	idyoutube="EhQfGODnvww"
 	idyoutube="-0mNSP1452o"
