@@ -8,12 +8,11 @@ include(src/include/common.lyi)
 	poet="יעקב גלעד"
 	piece="בלדת רוק"
 
-	lyricsurl="http://www.mp3music.co.il/lyrics/448.html"
-
 	completion="5"
 	uuid="c562b5fa-c345-11e0-995c-0019d11e5a41"
 
 	idyoutube="1CBj7q51-BQ"
+	lyricsurl="http://www.mp3music.co.il/lyrics/448.html"
 }
 jazzTune
 

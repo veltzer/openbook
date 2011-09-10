@@ -8,14 +8,14 @@ include(src/include/common.lyi)
 	style="Rock"
 	piece="Med. Ballad"
 
-	lyricsurl="http://www.azlyrics.com/lyrics/radiohead/creepacoustic.html"
-
 	completion="5"
 	uuid="e9b74c60-97f6-11e0-86b8-0019d11e5a41"
 
-	idyoutube="XFkzRNyygfk"
-
 	remark="The G scale is the one used in the original version (Mark Veltzer,17/6/11)"
+
+	idyoutube="XFkzRNyygfk"
+	lyricsurl="http://www.azlyrics.com/lyrics/radiohead/creepacoustic.html"
+
 }
 jazzTune
 

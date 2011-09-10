@@ -71,6 +71,11 @@ Lyrics
 - one syllable or word on a couple of notes:
 	I'm with you rain _ or shine!
 	rain will be on two notes (rain _ _ will be placed on three notes).
+- several words over a single note.
+	connect them with an underscore like this:
+	The_blue
+	The underscore will NOT show up in the print.
+	I'm not sure if it's official but it works.
 - one word or syllable over multiple notes:
 	simply write many _ (one for each note you are waiting for...).
 	This means that the previous word is to be sung over all of those notes.
