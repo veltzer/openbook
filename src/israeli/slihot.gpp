@@ -111,7 +111,7 @@ myLyrics=\lyricmode {
 	וריח _ _ _ יל -- דות רי -- ח ד -- בק ו -- או -- רן
 	הוא ני -- חו -- ח לי -- לו של ה -- גוף, של ה -- גוף.
 }
-mySecLyrics=\lyricmode {
+myLyricsmore=\lyricmode {
 	_ _
 	_ _ _ _ _ _ _ _ _ _ _ _ _
 	_ _ _ _ _ _ _ _ _
@@ -122,24 +122,4 @@ mySecLyrics=\lyricmode {
 	לכרוע על חוף הסליחה.
 }
 
-%% score for printing
-\score {
-	<<
-		\new ChordNames="mychords" \myChords
-		\new Voice="myvoice" \myVoice
-		\new Lyrics \lyricsto "myvoice" \myLyrics
-		\new Lyrics \lyricsto "myvoice" \mySecLyrics
-	>>
-	\layout {
-	}
-}
-%% score for midi
-\score {
-	\unfoldRepeats
-	<<
-		\new ChordNames="mychords" \myChords
-		\new Voice="myvoice" \myVoice
-	>>
-	\midi {
-	}
-}
+include(src/include/harmony_tune_lyricsmore.lyi)
