@@ -21,9 +21,7 @@ jazzTune
 	TODO:
 %}
 
-\score {
-<<
-\chordmode {
+myChords=\chordmode {
 	\startChords
 
 	\startSong
@@ -43,9 +41,11 @@ jazzTune
 	\endChords
 }
 
-\new Voice="melody" {
+myVoice=\relative f' {
 	\time 2/4
 	\key g \minor
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Allegro" 4 = 128
 
 	bes'4 bes'4 | a'4 a'4 | g'2 ~ | g'4 a'4 |
 	bes'4 bes'4 | a'4 a'4 | g'2 ~ | g'4 d'4 |
@@ -58,7 +58,7 @@ jazzTune
 	bes'4 bes'4 | c''4 c''4 | d''2 |
 }
 
-\new Lyrics \lyricsto "melody" {
+myLyrics=\lyricmode {
 	א -- לו -- הים ש -- לי, ר -- צי -- תי ש -- ת -- דע
 	ח -- לום ש -- ח -- למ -- תי ב -- לי -- לה ב -- מי -- טה
 	ו -- ב -- ח -- לום ר -- אי -- תי מל -- אך
@@ -92,12 +92,4 @@ jazzTune
 	על החלום שלי רציתי שתדע
 	אלוהים שלי, רק רציתי שתדע
 }
->>
-	\midi {
-		\context {
-			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
-		}
-	}
-	\layout {}
-}
+include(src/include/harmony_tune_lyrics.lyi)

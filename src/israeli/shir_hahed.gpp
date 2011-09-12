@@ -21,11 +21,11 @@ jazzTune
 		- after the first verse there is a transposition of 1.5 steps up
 		though the chord Ab7 (which is the alter-dominant of g which we are
 		going to...).
+		- finish the tune. 
+		- align all the lyrics.
 %}
 
-\score {
-<<
-\chordmode {
+myChords=\chordmode {
 	\startChords
 
 	\mark "פתיחה"
@@ -46,16 +46,19 @@ jazzTune
 
 	\endChords
 }
-\new Voice="melody" \relative f' {
+myVoice=\relative f' {
 	\time 6/8
 	\key e \major
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Moderato" 4 = 112
+
 	gis2 a8 b | gis2 a8 b | gis8 a b gis8 a b | gis2. |
 	fis2 gis8 ais | fis2 ~ fis8 e | b'4. gis4 fis8 | fis8 e4. cis8 e8 |
 	e2. | e2. |
 
 	b8 e b e4. ~ | e8 fis gis fis e cis | cis2. ~ | cis2. |
 }
-\new Lyrics \lyricsto "melody" {
+myLyrics=\lyricmode {
 	_ _ _ _ _ _ _ _ _ _ _
 	_ _ _ _ _ _ _ _ _ _ _
 	_ _ _ _ _
@@ -88,12 +91,4 @@ jazzTune
 	והד לי עונה מפסגת הר סיני:
 	"הו מה רחוק, רחוק, רחוק, רחוק!"
 }
-	>>
-		\midi {
-		\context {
-			\Score
-			tempoWholesPerMinute = #(ly:make-moment 110 4)
-		}
-	}
-	\layout {}
-}
+include(src/include/harmony_tune_lyrics.lyi)

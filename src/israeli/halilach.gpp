@@ -15,9 +15,7 @@ jazzTune
 	TODO:
 %}
 
-\score {
-<<
-\chordmode {
+myChords=\chordmode {
 	\startChords
 
 	\startSong
@@ -38,20 +36,12 @@ jazzTune
 
 	\endChords
 }
-\new Voice="melody" {
+myVoice=\relative f' {
 	\time 4/4
 	\key a \minor
 	a1
 }
-\new Lyrics \lyricsto "melody" {
-	hello
+myLyrics=\lyricmode {
+	שלום	
 }
->>
-	\midi {
-		\context {
-			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
-		}
-	}
-	\layout {}
-}
+include(src/include/harmony_tune_lyrics.lyi)
