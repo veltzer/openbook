@@ -22,7 +22,8 @@ jazzTune
 
 %{
 	TODO:
-	- find a way to put the notes of the real book bersion at the end of the last bar in parenthesis
+	- I remarked the \myEndLine at the first finish of the volta to save
+	lines. Should we have a more general mechanism for this?
 %}
 
 %% these chords are taken from the real book
@@ -40,7 +41,7 @@ myChords=\chordmode {
 		fis:m7.5- |
 	} \alternative {
 		{
-			b:7 | e:m | e:m | \myEndLine
+			b:7 | e:m | e:m | %%\myEndLine
 		}
 		{
 			b:7 | e:m | e:m | \myEndLine
@@ -86,20 +87,28 @@ myVoice=\relative e' {
 	fis b, fis'2~ | fis4 fis e fis | g1~ | g4 g fis g |
 	a1~ | a4 d, d' c | b1~ | b4 r ais b |
 	c c a a | fis2. c'4 | b2 b~ | b2. e,4 |
-	a2. g4 | fis2 g4 b, | e1~ | r4 e fis g |
+	a2. g4 | fis2 g4 b, | e1 | r4 <\parenthesize e> <\parenthesize fis> <\parenthesize g> |
 }
 
 %% lyrics are taken from the fake book and adjusted for the real one
 myLyrics=\lyricmode {
 	The fall -- ing leaves __ drift by the win -- dow, __
 	The Au -- tumn Leaves, __ of red and gold.
-	I see your lips, __ the sum -- mer kiss -- es,
-	The sun -- burned hands __ I used to hold.
+	I see your
+	
+	_ I used to hold.
 
 	Since you went a -- way __ the days grow long, __
 	And soon I'll hear __ old win -- ter's song. __
 	But I miss you most of all my dar -- ling, __
-	When Au -- tumn Leaves start to fall. __
+	When Au -- tumn Leaves start to fall.
+
+	The fall -- ing
+}
+
+myLyricsmore=\lyricmode {
+	_ _ _ lips, __ the sum -- mer kiss -- es,
+	The sun -- burned hands __
 }
 
 %% these chords are taken from the fake book
@@ -166,4 +175,4 @@ myLyricsFake=\lyricmode {
 	When Au -- tumn Leaves start to fall. __
 }
 
-include(src/include/harmony_tune_lyrics.lyi)
+include(src/include/harmony_tune_lyricsmore.lyi)
