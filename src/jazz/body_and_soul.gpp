@@ -1,0 +1,123 @@
+include(src/include/common.lyi)
+\header {
+	default_header
+
+	title="Body And Soul"
+	subtitle=""
+	composer="John Green"
+	style="Jazz"
+	piece="Slowly, with expression"
+	poet="Edward Heyman, Robert Sour and Frank Eyton"
+	copyright="1930 Warner Bros. Inc & Chappel & Co. Ltd."
+	%% Copyright Renewed & Assigned to Warner Bros. Inc.
+
+	remark="This version is taken from the fake book page 67"
+	structure="AABA"
+
+	completion="5"
+	uuid="b2076c06-e025-11e0-ab4c-0019d11e5a41"
+
+	%% dexter gordon from the ballads
+	idyoutube="rMd9oZ4O0bs"
+	%% billie holiday...
+	idyoutube="CMDlk6lGQOk"
+	lyricsurl="http://www.azlyrics.com/lyrics/dianakrall/bodyandsoul.html"
+}
+jazzTune
+
+%{
+	TODO:
+	- the e9.11+ does at the end does not show on the sheet. On the sheet it says e:7.11+
+	- add the real book version with epdf.
+%}
+
+%% taken from the fake book
+myVoice=\relative f' {
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Andante" 4 = 80 
+	\time 4/4
+
+	%% part A
+	\key des \major
+	\repeat volta 2 {
+	r8. ees16 f8. ees16 f4 ees | bes' bes2. | r8. aes16 bes8. aes16 bes4 aes | ees'4 des c bes |
+	r4 des bes8 ges4 bes,8 | f'2 ees | r8. des16 ees8. f16 aes4 \times 2/3 { aes8 bes fes } |
+	} \alternative {
+		{ des1 | }
+		{ des2. r4 | }
+	}
+	%% part B
+	\key d \major
+	r8. d16 e8. fis16 a8 a4 a8 | d8 d4 fis,8 a8 a4 g8 | fis8 fis4 d8 e4 cis8 a~ | a2~ a8 r8 r4 |
+	\key c \major
+	r8. d16 e8. f16 a8 a4 g8 | e'8 e4 b8 d8 d4 a8 | c8 c4 a8 b8 b4 g8 | e4 ees d bes' |
+	%% part A
+	\key des \major
+	r8. ees,16 f8. ees16 f4 ees | bes' bes2. | r8. aes16 bes8. aes16 bes4 aes | ees'4 des c bes |
+	r4 des bes8 ges4 bes,8 | f'2 ees | r8. des16 ees8. f16 aes4 \times 2/3 { aes8 bes fes } | des1 |
+}
+
+%% taken from the fakebook
+myChords=\chordmode {
+	\startChords
+
+	\startSong
+
+	\mark "A"
+	\startPart
+	\repeat volta 2 {
+		ees2:m7 bes:9 | ees:m7 aes:7 | des:maj7 ges:7 | f:m7 e:dim7 | \myEndLine
+		ees2:m7 ees2:m7/des | c:m7.5- f:7 | bes:m7 ees4:m7 aes:7.5+ |
+	} \alternative {
+		{ des2:6 f4:m7 bes:7.9- }
+		{ des2:6 e4:m7 a:7 } \myEndLine
+	}
+	\endPart
+
+	\mark "B"
+	\startPart
+	%%\key d \major
+	d2 e:m7 | d/fis g4:m7 c:7 | fis:m7 b:m7 e:m7 a:7 | d1 | \myEndLine
+	%%\key c \major
+	d2:m7 g:9 | c:maj7 ees:dim7 | d:m7 g4:7 g:7.5+ | c:9 b:9 bes:9 e:9.11+ | \myEndLine
+	\endPart
+	
+	\mark "A"
+	\startPart
+	ees2:m7 bes:9 | ees:m7 aes:7 | des:maj7 ges:7 | f:m7 e:dim7 | \myEndLine
+	ees2:m7 ees2:m7/des | c:m7.5- f:7 | bes:m7 ees4:m7 aes:7.5+ | des1 | \myEndLine
+	\endPart
+
+	\endSong
+
+	\endChords
+}
+
+%% taken from the fakebook
+myLyrics=\lyricmode {
+	My heart is sad and lone -- ly,
+	for you I sigh, for you, dear, on -- ly,
+	Why have -- n't you seen it?
+	I'm all for you, Bod -- y And Soul! _
+
+	I can't be -- lieve it,
+	it's hard to con -- ceive it
+	that you'd turn a -- way ro -- mance.
+
+	Are you pre -- tend -- ing,
+	it looks like the end -- ing
+	un -- less I could have one more chance to prove, dear,
+
+	my life a wreck you're mak -- ing,
+	you know I'm yours for just the tak -- ing;
+	I'd glad -- ly sur -- ren -- der
+	my -- self to you, Bod -- y And Soul!
+}
+myLyricsmore=\lyricmode {
+	I spend my days in long -- ing,
+	and won -- d'ring why it's me you're wrong -- ing,
+	I tell you I mean it,
+	I'm all for you, Bod -- y And _ Soul!
+}
+
+include(src/include/harmony_tune_lyricsmore.lyi)

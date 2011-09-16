@@ -1,10 +1,12 @@
 %% score for printing
 \score {
 	<<
-		\new ChordNames="mychords" \myChords
-		\new Voice="myvoice" \myVoice
-		\new Lyrics \lyricsto "myvoice" \myLyrics
-		\new Lyrics \lyricsto "myvoice" \myLyricsmore
+		\new ChordNames="Chords" \myChords
+		\new Staff="Melody" {
+			\new Voice="myvoice" \myVoice
+		}
+		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyrics
+		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyricsmore
 	>>
 	\layout {
 	}
@@ -13,8 +15,15 @@
 \score {
 	\unfoldRepeats
 	<<
-		\new ChordNames="mychords" \myChords
-		\new Voice="myvoice" \myVoice
+		%% the ="Chords" is the name of the channel that will be in midi
+		\new ChordNames="Chords" \myChords
+		%% the ="Melody" is the name of the channel that will be in midi
+		\new Staff="Melody" {
+			\new Voice="myvoice" \myVoice
+		}
+		%% the ="Lyrics" is the name of the channel that will be in midi
+		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyrics
+		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyricsmore
 	>>
 	\midi {
 	}

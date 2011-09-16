@@ -82,8 +82,10 @@ Q=@
 #.SILENT:
 endif # DO_MKDBG
 
+# this finds the sources via git
 SOURCES_ALL:=$(shell git ls-files)
-#SOURCES_ALL:=$(subst ./,,$(shell find . -type f))
+# this find the sources without git...
+SOURCES_ALL:=$(subst ./,,$(shell find . -type f -and -name "*.gpp" -or -name "*.lyi"))
 FILES_GPP:=$(filter %.gpp,$(SOURCES_ALL))
 FILES_LYI:=$(filter %.lyi,$(SOURCES_ALL))
 
