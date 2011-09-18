@@ -4,7 +4,7 @@
 # should we show commands executed ?
 DO_MKDBG:=0
 # should we depend on the date of the makefile itself ?
-DO_MAKEDEPS:=1
+DO_MAKEDEPS?=1
 # should we depend on the wrappers ?
 DO_WRAPDEPS:=1
 # should we make the ly files ?
@@ -27,6 +27,8 @@ DO_WAV:=0
 DO_MP3:=1
 # should we make ogg ?
 DO_OGG:=1
+# should we do the full book ?
+DO_BOOK:=1
 # do you actually want to use dependency information ?
 USE_LYD:=0
 # where are the sources located ?
@@ -98,6 +100,7 @@ FILES_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))
 FILES_WAV:=$(addsuffix .wav,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
 FILES_MP3:=$(addsuffix .mp3,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
 FILES_OGG:=$(addsuffix .ogg,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
+OUT_BOOK:=out/openbook.pdf
 
 ifeq ($(DO_LY),1)
 	ALL:=$(ALL) $(FILES_LY)
@@ -130,6 +133,9 @@ endif
 ifeq ($(DO_OGG),1)
 	ALL:=$(ALL) $(FILES_OGG)
 endif
+ifeq ($(DO_BOOK),1)
+	ALL:=$(ALL) $(OUT_BOOK)
+endif
 
 .PHONY: all
 all: $(ALL)
@@ -154,6 +160,7 @@ debug:
 	$(info FILES_WAV is $(FILES_WAV))
 	$(info FILES_MP3 is $(FILES_MP3))
 	$(info FILES_OGG is $(FILES_OGG))
+	$(info OUT_BOOK is $(OUT_BOOK))
 	$(info ALL is $(ALL))
 
 .PHONY: todo
@@ -278,6 +285,13 @@ $(FILES_MP3): %.mp3: %.midi $(ALL_DEP) $(MIDI2MP3_WRAPPER_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
 	$(Q)$(MIDI2MP3_WRAPPER) $< $@
+
+.PHONY: book
+book: $(OUT_BOOK) 
+	$(info doing [$@])
+$(OUT_BOOK): $(FILES_PDF)
+	$(info doing [$@])
+	$(Q)pdfjoin $(FILES_PDF) --outfile $@ 2> /dev/null
 
 # include the deps files (no warnings)
 ifeq ($(USE_LYD),1)
