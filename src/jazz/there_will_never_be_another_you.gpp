@@ -32,7 +32,7 @@ myChordsReal=\chordmode {
 	\startChords
 
 	\startSong
-	
+
 	\partial 4 r4 |
 
 	\mark "A"
@@ -126,7 +126,7 @@ myVoice=\relative c'{
 	\tempo "Allegro" 4 = 130
 	\time 4/4
 	\key ees \major
-	
+
 	\partial 4 bes4 |
 
 	% Bar 1

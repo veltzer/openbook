@@ -147,6 +147,6 @@ jazzVisual)
 
 define(verticalSpace,
 \markup {
-          \null
+	\null
 	}
 )

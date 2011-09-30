@@ -10,7 +10,7 @@ include(src/include/common.lyi)
 
 	completion="5"
 	uuid="7f247a70-c8f3-11e0-bb35-0019d11e5a41"
-	
+
 	remark="same scale (fis:m) as the original version"
 
 	idyoutube="9jK-NcRmVcw"
@@ -39,7 +39,7 @@ myChords=\chordmode {
 		fis1:m | d | b:m | e2 e/fis |
 	}
 	\repeat volta 2 {
-		fis:m e | a d | cis1*2:7 | 
+		fis:m e | a d | cis1*2:7 |
 	}
 	\mark "interlude"
 	fis1*4:m \bar "||" \myEndLine

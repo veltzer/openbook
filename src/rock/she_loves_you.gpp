@@ -43,7 +43,7 @@ myChords=\chordmode {
 		bes:m6 | c2:7.5+ c:7 | f1 | f | \myEndLine
 		\endPart
 	}
-	
+
 	\endSong
 
 	\endChords
