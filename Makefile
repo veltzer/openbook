@@ -207,7 +207,7 @@ check_min_chords:
 .PHONY: check_ws
 check_ws:
 	$(info doing [$@])
-	$(Q)-./scripts/pgrep.pl "  | $$|\w\t|\t$$|\*\\d\:" $(FILES_GPP) $(FILES_LYI)
+	$(Q)-./scripts/pgrep.pl "  | $$|\w\t|\t$$" $(FILES_GPP) $(FILES_LYI)
 .PHONY: check_uuid
 check_uuid:
 	$(info doing [$@])

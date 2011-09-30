@@ -138,7 +138,7 @@ myMidVoice=\relative c' {
 		{ s2. | s4 <a c> <a c> | s2. | }
 		{ s2. | s2. | s2. | }
 	}
-	
+
 	\repeat volta 2 {
 		s2. | s2. | s2. | s2. |
 		s2. | s2. | s2. | s2. |

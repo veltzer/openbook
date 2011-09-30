@@ -38,7 +38,7 @@ myChords=\chordmode {
 	c | d | e:m | \myEndLine
 	a:m | b:m | c | des:m7.5- | \myEndLine
 	b:m | g | c | e | e | \myEndLine
-	
+
 	a1 | a | e | e | \myEndLine
 	d | e | fis:m | fis:m | \myEndLine
 	a | a | e | e | \myEndLine

@@ -114,7 +114,7 @@ Triple Paradiddle (starting with the right hand).
 	} <<
 		\set Score.timing = ##f
 		\new DrumVoice {
-		  	\time 8/4
+			\time 8/4
 			\stemUp
 			\drummode {
 				sn16->^"R"\( sn^"L" sn^"R" sn^"L" sn^"R" sn^"L" sn^"R" sn^"R"\)

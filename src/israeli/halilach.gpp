@@ -42,6 +42,6 @@ myVoice=\relative f' {
 	a1
 }
 myLyrics=\lyricmode {
-	שלום	
+	שלום
 }
 include(src/include/harmony_tune_lyrics.lyi)

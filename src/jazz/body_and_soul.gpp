@@ -34,7 +34,7 @@ jazzTune
 %% taken from the fake book
 myVoice=\relative f' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Andante" 4 = 80 
+	\tempo "Andante" 4 = 80
 	\time 4/4
 
 	%% part A
@@ -81,7 +81,7 @@ myChords=\chordmode {
 	%%\key c \major
 	d2:m7 g:9 | c:maj7 ees:dim7 | d:m7 g4:7 g:7.5+ | c:9 b:9 bes:9 e:9.11+ | \myEndLine
 	\endPart
-	
+
 	\mark "A"
 	\startPart
 	ees2:m7 bes:9 | ees:m7 aes:7 | des:maj7 ges:7 | f:m7 e:dim7 | \myEndLine
