@@ -1,0 +1,88 @@
+include(src/include/common.lyi)
+\header {
+	default_header
+
+	title="Au Privave"
+	subtitle=""
+	composer="Charlie Parker"
+	style="Jazz"
+	piece="Upbeat Swing"
+	poet=""
+	copyright="1956, Atlantic Music Corp."
+	%% 1978, Atlantic Music Corp.
+
+	completion="5"
+	uuid="e62b60ec-eb9b-11e0-aab7-0019d11e5a41"
+
+	idyoutube=""
+	idyoutube=""
+
+	structure="Blues"
+
+	remark="Taken from the Charlie Parker Omnibook by Jamey Aebersold"
+}
+jazzTune
+
+%{
+	DONE:
+	- chords were written and checked.
+	- first two lines of the first chorus were checked.
+	TODO:
+	- write the tune
+	- add you tube ids.
+%}
+
+%% this version of the chords is from the real book...
+myChords=\chordmode {
+	\startChords
+
+	\startSong
+
+	\startPart
+	\repeat volta 2 {
+		f1:7 | g2:m aes:dim | f1:7 | c2:m f:7 | \myEndLine
+		bes1*2:7 | f1:7 | a2:m d:7 | \myEndLine
+		g1:m | c:7 | f2:7 d:7 |
+	} \alternative {
+		{ g2:m c:7 }
+		{ g2:7 c:7 }
+	}
+	\endPart
+
+	\startPart
+	f1*2:7 | c1:m | c2:m b:7 | \myEndLine
+	bes1*2:7 | f1 | f2 d:7 | \myEndLine
+	g1:m | c:7 | f:7 | g2:m c:7 | \myEndLine
+	\endPart
+
+	\startPart
+	f1:7 | bes:7 | f:7 | f2:7 f:7.5+ | \myEndLine
+	bes1*2:7 | f1:7 | a2:m d:7 | \myEndLine
+	g1:m | c:7 | f:7 | g2:m c:7 | \myEndLine
+	\endPart
+
+	\startPart
+	f1:7 | bes:7 | f:7 | c2:m f:7 | \myEndLine
+	bes1*2:7 | f1:7 | a2:m d:7 | \myEndLine
+	g1:m | c:7 | f:7 | g2:m c:7 | \myEndLine
+	\endPart
+
+	%% one bar for the ending...
+	f1:7
+
+	\endSong
+
+	\endChords
+}
+
+myVoice=\relative c'{
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Prestissimo" 4 = 220
+	\time 4/4
+	\key f \major
+
+	f8 e f c r4 a'8 aes | a c, r e~ e g f e | g f a bes a f g ees | r d' r4 r8 des~ des bes |
+	b4. f'8 r b, bes4~ | bes2 aes8 f g f | c'4 r8 a bes4 r8 g | c4 c~ c8 a bes c |
+}
+
+include(src/include/harmony_tune.lyi)
