@@ -17,26 +17,21 @@ include(src/include/common.lyi)
 	completion="5"
 	uuid="f0a5804c-eb83-11e0-aeb1-0019d11e5a41"
 
-	idyoutube=""
-	idyoutube=""
-	lyricsurl=""
+	idyoutube="upZ00qxXrBg"
+	idyoutube="GsI4oNKGJPg"
+	lyricsurl="http://www.lyricsfreak.com/b/billie+holiday/darn+that+dream_20018018.html"
 }
 jazzTune
 
 %{
 	TODO:
-	- finish the voice in the fakebook version.
-	- add youtube references.
-	- add lyrics url.
 	- add the real book version.
-	- add epdfs.
-	- take care of the speed of the tune.
 %}
 
 %% taken from the fake book
 myVoice=\relative f' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Andante" 4 = 80
+	\tempo "Adagio" 4 = 72
 	\time 4/4
 	\key g \major
 
@@ -46,13 +41,15 @@ myVoice=\relative f' {
 
 	%% part A
 	d4 g ees4. ees8 | e4 a f4. fis8 | g4 b gis8 a b c | d4 e b2 |
-	b4 d c8 b a g | fis4 a e ees | d2 fis | d r |
+	b4 d c8 b a g | fis4 a e ees | d2 b' | g2. r4 |
 
 	%% part B
+	r8 g4 g8 f4 ees | c' c8 bes~ bes4. c8 | d ees d des~ des4 ces | bes aes8 f~ f2 |
+	r8 g4 g8 f4 ees | g a8 bes~ bes4. c8 | d d d d~ d4 d, | bes'2 b |
 
 	%% part A
-	d4 g ees4. ees8 | e4 a f4. fis8 | g4 b gis8 a b c | d4 e b2 |
-	b4 d c8 b a g | fis4 a e ees | d2 fis | d r |
+	d,4 g ees4. ees8 | e4 a f4. fis8 | g4 b gis8 a b c | d4 e b2 |
+	b4 d c8 b a g | fis4 a e ees | d2 b' | g2. r4 |
 }
 
 %% taken from the fakebook
@@ -75,8 +72,8 @@ myChords=\chordmode {
 
 	\mark "B"
 	\startPart
-	ees:6 c:m7 | f:m7 bes:7 | ees:maj7 c:7.9- | f:m7 bes4:7.9 bes:7.9- | \myEndLine
-	ees:6 c:m7 | g4:m7 g:m7/f e2:m7.5- | a:m7 d:7 | ees:7.9 d:7.9 | \myEndLine
+	ees2:6 c:m7 | f:m7 bes:7 | ees:maj7 c:7.9- | f:m7 bes4:7.9 bes:7.9- | \myEndLine
+	ees2:6 c:m7 | g4:m7 g:m7/f e2:m7.5- | a:m7 d:7 | ees:7.9 d:7.9 | \myEndLine
 	\endPart
 
 	\mark "A"
@@ -105,10 +102,10 @@ myLyrics=\lyricmode {
 	Oh, Darn That Dream.
 
 	%% B part
-	Darn that one-track mind of mine,__
-	it can't un -- der -- stand__ that you don't care.__
-	Just to change the mood I'm in,__
-	I'd wel -- come a nice__ old night -- mare.
+	Darn that one- -- track mind of mine, __
+	it can't un -- der -- stand __ that you don't care. __
+	Just to change the mood I'm in, __
+	I'd wel -- come a nice __ old night -- mare.
 
 	%% A part
 	Darn That Dream and bless it too,
