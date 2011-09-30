@@ -24,6 +24,7 @@ jazzTune
 
 %{
 	TODO:
+	- in the real book version move the last chord to be written in parenthesis (I don't know how to do that).
 %}
 
 %% this version of the chords is from the real book...
