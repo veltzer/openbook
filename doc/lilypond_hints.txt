@@ -27,9 +27,17 @@ Chords:
   inside the FretBoards section.
 - adding notes to chords: c:5.9 is a regular C chord with a D added in. This is different from
 c:9 which is c:7.9 which is correct for jazz but not for rock.
+- a single chord on more than one bar:
+	ees1*2:maj7
+	Note that the chord which is doubled MUST have length. This seems a like a bug in lilypond.
+	is it?
+	* the chord after this chord, if not annotated for length, will be considered multiplied
+	as well. take heed.
 
 questions:
 - how do I put chords in parenthesis? I still do not know.
+	- <\parenthesize bes:7> does not work
+	- ( bes:7 ) does not work either.
 	
 Tempo:
 ======
