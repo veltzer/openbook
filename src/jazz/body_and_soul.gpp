@@ -7,7 +7,7 @@ include(src/include/common.lyi)
 	composer="John Green"
 	style="Jazz"
 	piece="Slowly, with expression"
-	poet="Edward Heyman, Robert Sour and Frank Eyton"
+	poet="Edward Heyman, Robert Sour & Frank Eyton"
 	copyright="1930 Warner Bros. Inc & Chappel & Co. Ltd."
 	%% Copyright Renewed & Assigned to Warner Bros. Inc.
 
