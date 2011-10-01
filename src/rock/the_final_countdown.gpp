@@ -42,18 +42,18 @@ myChords=\chordmode {
 		fis:m e | a d | cis1*2:7 |
 	}
 	\mark "interlude"
-	fis1*4:m \bar "||" \myEndLine
+	fis1*4:m \endBar \myEndLine
 	\mark "verse"
 	fis1*3:m | d1 |
 	fis1*2:m | fis2:m e | a1 |
 	d | e | a2 e/gis | fis:m e |
-	d | cis:m | e1*2 \bar "||" \myEndLine
+	d | cis:m | e1*2 \endBar \myEndLine
 	\mark "chorus"
 	\repeat volta 2 {
 		fis1:m | d | b:m | e2 e/fis |
 	}
 	\mark "interlude"
-	fis1*2:m \bar "||" \myEndLine
+	fis1*2:m \endBar \myEndLine
 	\mark "solo"
 	\repeat volta 2 {
 		b:m | a | d | g g/fis |

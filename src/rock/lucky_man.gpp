@@ -45,7 +45,7 @@ include(predefined-guitar-fretboards.ly)
 
 myChords=\chordmode {
 	\mark "Verse"
-	g1 | d | g | d | g | d | g | d \bar "||"
+	g1 | d | g | d | g | d | g | d \endBar
 	\mark "Chorus"
 	a:m | e:m | d | d |
 	a:m | e:m | d | d |

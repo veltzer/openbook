@@ -73,7 +73,7 @@ myHighVoice=\relative c'' {
 	\voiceOne
 
 	\startTune
-	r8 e g f e dis \bar "||"
+	r8 e g f e dis \endBar
 
 	\mark "A"
 	e2\segno e4 | f2 \times 2/3 {f8 g f} | e2. | r8 e g f e dis | \myFakeEndLine
@@ -84,7 +84,7 @@ myHighVoice=\relative c'' {
 		\musicglyph #"scripts.caesura.straight"
 	}
 	\breathe
-	c b4 a \bar "||" \myFakeEndLine
+	c b4 a \endBar \myFakeEndLine
 
 	\mark "B"
 	\repeat volta 2 {
