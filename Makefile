@@ -11,6 +11,8 @@ DO_WRAPDEPS:=1
 DO_LY:=1
 # should we make lilypond dependency files ?
 DO_LYD:=0
+# should we make gpp dependency files ?
+DO_GPPD:=1
 # should we make pds ?
 DO_PDF:=1
 # should we make images ?
@@ -29,8 +31,10 @@ DO_MP3:=1
 DO_OGG:=1
 # should we do the full book ?
 DO_BOOK:=1
-# do you actually want to use dependency information ?
+# do you actually want to use lilypond dependency information ?
 USE_LYD:=0
+# do you actually want to use gpp dependency information ?
+USE_GPPD:=1
 # where are the sources located ?
 SOURCE_DIR:=src
 # where is the output folder ?
@@ -38,10 +42,12 @@ OUT_DIR:=out
 # wrappers
 LILYPOND_WRAPPER:=scripts/lilypond_wrapper.pl
 M4_WRAPPER:=scripts/m4_wrapper.pl
-LILYDEP_WRAPPER:=scripts/lilydep.pl
+LYD_WRAPPER:=scripts/lyd.pl
+GPPD_WRAPPER:=scripts/gppd.pl
 MIDI2WAV_WRAPPER:=scripts/midi2wav.pl
 MIDI2OGG_WRAPPER:=scripts/midi2ogg.pl
 MIDI2MP3_WRAPPER:=scripts/midi2mp3.pl
+MAKE_BOOK_WRAPPER:=scripts/make_book.pl
 
 ########
 # BODY #
@@ -50,6 +56,7 @@ MIDI2MP3_WRAPPER:=scripts/midi2mp3.pl
 # do not include deps (or generate them) if we are doing a clean...
 ifneq ($(filter clean,$(MAKECMDGOALS)),)
 USE_LYD:=0
+USE_GPPD:=0
 endif
 
 ALL:=
@@ -63,17 +70,21 @@ endif
 ifeq ($(DO_WRAPDEPS),1)
 	LILYPOND_WRAPPER_DEP:=$(LILYPOND_WRAPPER)
 	M4_WRAPPER_DEP:=$(M4_WRAPPER)
-	LILYDEP_WRAPPER_DEP:=$(LILYDEP_WRAPPER)
+	LYD_WRAPPER_DEP:=$(LYD_WRAPPER)
+	GPPD_WRAPPER_DEP:=$(GPPD_WRAPPER)
 	MIDI2WAV_WRAPPER_DEP:=$(MIDI2WAV_WRAPPER)
 	MIDI2OGG_WRAPPER_DEP:=$(MIDI2OGG_WRAPPER)
 	MIDI2MP3_WRAPPER_DEP:=$(MIDI2MP3_WRAPPER)
+	MAKE_BOOK_WRAPPER_DEP:=$(MAKE_BOOK_WRAPPER)
 else
 	LILYPOND_WRAPPER_DEP:=
 	M4_WRAPPER_DEP:=
-	LILYDEP_WRAPPER_DEP:=
+	LYD_WRAPPER_DEP:=
+	GPPD_WRAPPER_DEP:=
 	MIDI2WAV_WRAPPER_DEP:=
 	MIDI2OGG_WRAPPER_DEP:=
 	MIDI2MP3_WRAPPER_DEP:=
+	MAKE_BOOK_WRAPPER_DEP:=
 endif
 
 ifeq ($(DO_MKDBG),1)
@@ -91,6 +102,7 @@ SOURCES_ALL:=$(subst ./,,$(shell find . -type f -and -name "*.gpp" -or -name "*.
 FILES_GPP:=$(filter %.gpp,$(SOURCES_ALL))
 FILES_LYI:=$(filter %.lyi,$(SOURCES_ALL))
 
+FILES_GPPD:=$(addsuffix .gpp.d,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
 FILES_LY:=$(addsuffix .ly,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
 FILES_LYD:=$(addsuffix .ly.d,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
 FILES_PDF:=$(addsuffix .pdf,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
@@ -107,6 +119,9 @@ ifeq ($(DO_LY),1)
 endif
 ifeq ($(DO_LYD),1)
 	ALL:=$(ALL) $(FILES_LYD)
+endif
+ifeq ($(DO_GPPD),1)
+	ALL:=$(ALL) $(FILES_GPPD)
 endif
 ifeq ($(DO_PDF),1)
 	ALL:=$(ALL) $(FILES_PDF)
@@ -150,6 +165,7 @@ ly: $(FILES_LY)
 debug:
 	$(info SOURCES_ALL is $(SOURCES_ALL))
 	$(info FILES_GPP is $(FILES_GPP))
+	$(info FILES_GPPD is $(FILES_GPPD))
 	$(info FILES_LY is $(FILES_LY))
 	$(info FILES_LYI is $(FILES_LYI))
 	$(info FILES_LYD is $(FILES_LYD))
@@ -269,10 +285,14 @@ $(FILES_LY): $(OUT_DIR)/%.ly: %.gpp $(ALL_DEP) $(M4_WRAPPER_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
 	$(Q)$(M4_WRAPPER) $< $@
-$(FILES_LYD): %.ly.d: %.ly $(ALL_DEP) $(LILYDEP_WRAPPER_DEP)
+$(FILES_GPPD): $(OUT_DIR)/%.gpp.d: %.gpp $(ALL_DEP) $(GPPD_WRAPPER_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
-	$(Q)$(LILYDEP_WRAPPER) $< $@ $(basename $@).stamp $(basename $@).pdf $(basename $@).ps $(basename $@).midi
+	$(Q)$(GPPD_WRAPPER) $< $@ $(basename $(basename $@)).stamp $(basename $(basename $@)).pdf $(basename $(basename $@)).ps $(basename $(basename $@)).midi
+$(FILES_LYD): %.ly.d: %.ly $(ALL_DEP) $(LYD_WRAPPER_DEP)
+	$(info doing [$@])
+	$(Q)-mkdir -p $(dir $@)
+	$(Q)$(LYD_WRAPPER) $< $@ $(basename $@).stamp $(basename $@).pdf $(basename $@).ps $(basename $@).midi
 $(FILES_WAV): %.wav: %.midi $(ALL_DEP) $(MIDI2WAV_WRAPPER_DEP)
 	$(info doing $@)
 	$(Q)-mkdir -p $(dir $@)
@@ -289,11 +309,14 @@ $(FILES_MP3): %.mp3: %.midi $(ALL_DEP) $(MIDI2MP3_WRAPPER_DEP)
 .PHONY: book
 book: $(OUT_BOOK) 
 	$(info doing [$@])
-$(OUT_BOOK): $(FILES_PDF)
+$(OUT_BOOK): $(FILES_PDF) $(ALL_DEP) $(MAKE_BOOK_WRAPPER_DEP)
 	$(info doing [$@])
-	$(Q)pdfjoin $(FILES_PDF) --outfile $@ 2> /dev/null
+	$(Q)$(MAKE_BOOK_WRAPPER) $@ $(FILES_LY)
 
 # include the deps files (no warnings)
 ifeq ($(USE_LYD),1)
 -include $(FILES_LYD)
+endif
+ifeq ($(USE_GPPD),1)
+-include $(FILES_GPPD)
 endif
