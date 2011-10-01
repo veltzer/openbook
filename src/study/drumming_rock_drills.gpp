@@ -10,6 +10,7 @@ include(src/include/common.lyi)
 	completion="5"
 	uuid="d54f6d36-6d29-11e0-a6dd-0019d11e5a41"
 }
+generalMacros
 
 %{
 	TODO:
