@@ -154,4 +154,4 @@ define(verticalSpace,
 % this is a macro that * really * breaks lines. You don't really need this since a regular \break will work
 % AS LONG AS you have the '\remove Bar_engraver' enabled...
 define(hardBreak,\bar "" \break)
-
+define(endBar,bar "||")

@@ -42,7 +42,7 @@ Regular rock type drumming...
 				r8 bd sn bd bd4 sn8 sn |
 				bd4 sn8 sn r bd sn sn |
 			}
-			\bar "||"
+			\endBar
 		}
 	>>
 >>
@@ -76,7 +76,7 @@ My own drills for understanding the on and off 8 notes...
 				bd4 sn r8 bd sn r |
 				bd4 sn r bd8 sn |
 			}
-			\bar "||"
+			\endBar
 		}
 	>>
 >>
@@ -110,7 +110,7 @@ Patterns of 3 located in different places in the eight 8 notes...
 				bd8 sn4 bd8 sn8 bd8 sn4 |
 				bd8 sn8 bd8 sn4 bd8 sn4 |
 			}
-			\bar "||"
+			\endBar
 		}
 	>>
 >>
