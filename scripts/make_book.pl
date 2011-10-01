@@ -8,5 +8,6 @@
 use strict;
 use diagnostics;
 
-# the command is:
-# $(Q)pdfjoin $(FILES_PDF) --outfile $@ 2> /dev/null
+# here we go...
+my($output)=shift(@ARGV);
+system('pdfjoin out/src/jazz/*.pdf --outfile '.$output.' 2> /dev/null');
