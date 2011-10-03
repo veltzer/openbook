@@ -26,14 +26,11 @@ jazzTune
 include(predefined-guitar-fretboards.ly)
 
 myChords=\chordmode {
-	\repeat volta 2 {
-		\startChords
-			g1*4
-			b1*4
-			c1*4
-			c1*4:m
-		\endChords
-	}
+	\startChords
+	\startRepeat
+	g1*4 | b | c | c:m |
+	\endRepeat
+	\endChords
 }
 myFrets=\new FretBoards {
 	\myChords

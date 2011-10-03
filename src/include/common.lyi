@@ -124,6 +124,8 @@ myEndLineVoltaNotLast={}
 myEndLineVoltaLast=\break
 partBar=\bar "||"
 endBar=\bar "|."
+startRepeat=\bar "|:"
+endRepeat=\bar ":|"
 startTune={}
 endTune=\bar "|.")
 
