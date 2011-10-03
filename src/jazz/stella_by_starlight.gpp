@@ -6,14 +6,14 @@ include(src/include/common.lyi)
 	subtitle=""
 	composer="Victor Young"
 	style="Jazz"
-	piece=""
-	poet=""
-	copyright=""
+	piece="Slowly, with Expression"
+	poet="Ned Washington"
 
 	completion="5"
 	uuid="afea10ce-edc0-11e0-9cc4-0019d11e5a41"
 
 	idyoutube="Iqs3w1Q5sto"
+	idyoutube="IbzxJuvbH08"
 
 	lyricsurl="http://www.lyrics007.com/Ella%20Fitzgerald%20Lyrics/Stella%20By%20Starlight%20Lyrics.html"
 
@@ -31,6 +31,7 @@ jazzTune
 	- got epdf for the real book.
 	- there is no fake book version of this tune.
 	TODO:
+	- fill in the copyright.
 %}
 
 %% this version of the chords is from the real book...
