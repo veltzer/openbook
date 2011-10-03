@@ -57,13 +57,13 @@ myVoiceReal=\relative c'{
 	\time 4/4
 	\key f \major
 
-	% Bar 1
+	% part "A"
 	r4 c c c | ees2. ees4 | d d2. | a'1 |
 	r4 f f f | aes2. aes4 | g2. g4 | d'1 |
 	r4 e e e | c c2. | a a4 | f1 |
 	r4 a a a | c c2 c4 | a2. a4 | d,1 |
 
-	% Bar 17
+	% part "B"
 	r4 c c c | ees2. ees4 | d d2. | a'1 |
 	r4 f f f | aes2. aes4 | g2. g4 | d'1 |
 	f2 f4 f | d2. d4 | c2 c | a a4 bes |
@@ -130,13 +130,13 @@ myVoice=\relative c'{
 
 	\partial 4 c4 |
 
-	% Bar 1
+	% part "A"
 	c c2 ees4~ | ees2. ees4 | d d2 a'4~ | a1 | \myEndLine
 	f2 f4 aes~ | aes2. aes4 | g2 g4 d'4~ | d1 | \myEndLine
 	r4 e4 e e | c c2. | a2 a4 f~ | f2. f4 | \myEndLine
 	a a a c~ | c c2 c4 | a2 a4 d,~ | d2. c4 | \myEndLine
 
-	% Bar 17
+	% part "B"
 	c2 c4 ees~ | ees ees2 ees4 | d2 d4 a'~ | a2 a4 a | \myEndLine
 	f2 f4 aes~ | aes bes aes2 | g g4 d'~ | d2. d4 | \myEndLine
 	f2 f4 d~ | d2. d4 | c2 c4 a~ | a2 a4 bes | \myEndLine
