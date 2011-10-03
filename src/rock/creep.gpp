@@ -57,57 +57,57 @@ verticalSpace
 \markup {
 	\small { % \teeny \tiny \small \normalsize \large \huge
 		\fill-line {
-		\column {
-			"When you were here before"
-			"Couldn't look you in the eye"
-			"You're just like an angel"
-			"Your skin makes me cry"
+			\column {
+				"When you were here before"
+				"Couldn't look you in the eye"
+				"You're just like an angel"
+				"Your skin makes me cry"
+				\null
+				"You float like a feather"
+				"In a beautiful world"
+				"I wish I was special"
+				"You're so fucking special"
+				\null
+				"But I 'm a creep"
+				"I 'm a weirdo"
+				"What the hell am I doing here?"
+				"I don't belong here"
+			}
 			\null
-			"You float like a feather"
-			"In a beautiful world"
-			"I wish I was special"
-			"You're so fucking special"
+			\column {
+				"I don't care if it hurts"
+				"I want to have control"
+				"I want a perfect body"
+				"I want a perfect soul"
+				\null
+				"I want you to notice"
+				"When I'm not around"
+				"You're so fucking special"
+				"I wish I was special"
+				\null
+				"But I'm a creep"
+				"I'm a weirdo"
+				"What the hell am I doing here?"
+				"I don't belong here"
+			}
 			\null
-			"But I 'm a creep"
-			"I 'm a weirdo"
-			"What the hell am I doing here?"
-			"I don't belong here"
-		}
-		\null
-		\column {
-			"I don't care if it hurts"
-			"I want to have control"
-			"I want a perfect body"
-			"I want a perfect soul"
-			\null
-			"I want you to notice"
-			"When I'm not around"
-			"You're so fucking special"
-			"I wish I was special"
-			\null
-			"But I'm a creep"
-			"I'm a weirdo"
-			"What the hell am I doing here?"
-			"I don't belong here"
-		}
-		\null
-		\column {
-			"She's running out again"
-			"She's running out"
-			"She run, run, run run"
-			"Run"
-			\null
-			"Whatever makes you happy"
-			"Whatever you want"
-			"You're so fucking special"
-			"I wish I was special"
-			\null
-			"But I'm a creep"
-			"I'm a weirdo"
-			"What the hell am I doing here?"
-			"I don't belong here"
-			"I don't belong here."
-		}
+			\column {
+				"She's running out again"
+				"She's running out"
+				"She run, run, run run"
+				"Run"
+				\null
+				"Whatever makes you happy"
+				"Whatever you want"
+				"You're so fucking special"
+				"I wish I was special"
+				\null
+				"But I'm a creep"
+				"I'm a weirdo"
+				"What the hell am I doing here?"
+				"I don't belong here"
+				"I don't belong here."
+			}
 		}
 	}
 }
