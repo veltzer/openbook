@@ -75,41 +75,41 @@ verticalSpace
 \markup {
 	\small { % \teeny \tiny \small \normalsize \large \huge
 		\fill-line {
-		\column {
-			"He had white Horses"
-			"And ladies by the score"
-			"All dressed in satin"
-			"And waiting by the door"
+			\column {
+				"He had white Horses"
+				"And ladies by the score"
+				"All dressed in satin"
+				"And waiting by the door"
+				\null
+				"Ooooh, what a lucky man he was"
+				"Ooooh, what a lucky man he was"
+				\null
+				"White lace and feathers"
+				"They made up his bed"
+				"A gold covered mattress"
+				"On which he was led"
+				\null
+				"Ooooh, what a lucky man he was"
+				"Ooooh, what a lucky man he was"
+			}
 			\null
-			"Ooooh, what a lucky man he was"
-			"Ooooh, what a lucky man he was"
-			\null
-			"White lace and feathers"
-			"They made up his bed"
-			"A gold covered mattress"
-			"On which he was led"
-			\null
-			"Ooooh, what a lucky man he was"
-			"Ooooh, what a lucky man he was"
-		}
-		\null
-		\column {
-			"He went to fight wars"
-			"For his country and his king"
-			"Of his honor and his glory"
-			"The people would sing"
-			\null
-			"Ooooh, what a lucky man he was"
-			"Ooooh, what a lucky man he was"
-			\null
-			"A bullet had found him"
-			"His blood ran as he cried"
-			"No money could save him"
-			"So he laid down and he died"
-			\null
-			"Ooooh, what a lucky man he was"
-			"Ooooh, what a lucky man he was"
-		}
+			\column {
+				"He went to fight wars"
+				"For his country and his king"
+				"Of his honor and his glory"
+				"The people would sing"
+				\null
+				"Ooooh, what a lucky man he was"
+				"Ooooh, what a lucky man he was"
+				\null
+				"A bullet had found him"
+				"His blood ran as he cried"
+				"No money could save him"
+				"So he laid down and he died"
+				\null
+				"Ooooh, what a lucky man he was"
+				"Ooooh, what a lucky man he was"
+			}
 		}
 	}
 }
