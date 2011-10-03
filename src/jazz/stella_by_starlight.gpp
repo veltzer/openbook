@@ -71,7 +71,7 @@ myVoice=\relative c''{
 	\key bes \major
 
 	\partial 4 bes4 |
-	
+
 	% part "A"
 	a1~ | a4 g a bes | f1~ | f2. f4 |
 	g1~ | g4 f f g | bes,1~ | bes2. c4 |

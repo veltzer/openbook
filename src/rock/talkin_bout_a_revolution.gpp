@@ -33,11 +33,11 @@ include(predefined-guitar-fretboards.ly)
 \storePredefinedDiagram \chordmode {d:sus4} #guitar-tuning #"x;x;o;2-1;3-3;2-2;"
 
 myChords=\chordmode {
-	\repeat volta 2 {
-		\startChords
-			g2:sus4 c:5.9 | e:m7 d:sus4 |
-		\endChords
-	}
+	\startChords
+	\startRepeat
+	g2:sus4 c:5.9 | e:m7 d:sus4 |
+	\endRepeat
+	\endChords
 }
 myFrets=\new FretBoards {
 	\myChords

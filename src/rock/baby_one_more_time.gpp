@@ -29,7 +29,9 @@ include(predefined-guitar-fretboards.ly)
 
 myChords=\chordmode {
 	\mark "Verse"
-	\bar "|:" b1:m | fis:7 | d | e2:m fis:7 \bar ":|"
+	\startRepeat
+	b1:m | fis:7 | d | e2:m fis:7 |
+	\endRepeat
 	\mark "Special fill"
 	g1 | a | g | e2:m fis:7 |
 }

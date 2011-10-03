@@ -1,0 +1,73 @@
+include(src/include/common.lyi)
+\header {
+	default_header
+
+	title="Someday My Prince Will Come"
+	subtitle=""
+	composer="Churchill"
+	style="Jazz"
+	piece="Med. Jazz Waltz"
+	poet=""
+
+	completion="5"
+	uuid="4933391e-ee10-11e0-b804-0019d11e5a41"
+
+	idyoutube=""
+
+	structure="AB"
+	lyricsurl="http://artists.letssingit.com/disney-lyrics-someday-my-prince-will-come-31rjgwv"
+}
+jazzTune
+
+%{
+	TODO:
+	- put in the real book version
+	- add copyright notice.
+%}
+
+%% this version of the chords is from the real book...
+myChords=\chordmode {
+	\startChords
+
+	\startSong
+
+	\repeat volta 2 {
+		bes1:maj7 | d:7.5+ | ees:maj7 | g:7.5+ | \myEndLine
+		c:m7 | g:7.5+ | c:7 | f:7 | \myEndLine
+	} \alternative {
+		{
+			d:m7 | des:dim | c:m7 | f:7 | \myEndLine
+			d:m7 | des:dim | c:m7 | f:7 | \myEndLine
+		}
+		{
+			f:m7 | bes:7 | ees | e:dim | \myEndLine
+			bes/f | c2:m7/f f:7 | bes1*2 | \myEndLine
+		}
+	}
+
+	\endSong
+
+	\endChords
+}
+
+%% this version of the tune is from the real book...
+myVoice=\relative c'{
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Allegro" 4 = 130
+	\time 3/4
+	\key bes \major
+
+	\repeat volta 2 {
+	} \alternative {
+		{
+		}
+		{
+		}
+	}
+}
+
+%% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
+myLyrics=\lyricmode {
+}
+
+include(src/include/harmony_tune_lyrics.lyi)
