@@ -142,3 +142,7 @@ Which seems to work.
 Maybe there is a better way?
 	- an official lilypond operation that does nothing ?!?
 	- a scheme macro ?!?
+
+repetitions:
+If you have a repeat which ends EXACTLY where a part ends the \endPart or \bar will trample the special
+marks for repetition. Removed the \endPart.
