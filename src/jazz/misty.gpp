@@ -24,8 +24,14 @@ include(src/include/common.lyi)
 jazzTune
 
 %{
+	DONE:
+	- put in whatever is in the real book.
+	- heard it to see if it's ok.
+	- checked the chords and tune to see that it matches the real book version.
+	- added real book pdf.
+	- adjusted speed for the tune.
 	TODO:
-	- fill in the real book version.
+	- fill in the fake book version.
 	- fill in the copyright.
 	- fill in lyrics.
 	- how do I put the last two chord in the real book version in braces (they are part of the turn around)...
@@ -72,21 +78,30 @@ myChords=\chordmode {
 }
 
 %% this version of the tune is from the real book...
-myVoice=\relative c'{
+myVoice=\relative c''{
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Allegro" 4 = 130
+	\tempo "Andante" 4 = 88
 	\time 4/4
-	\key f \major
+	\key ees \major
+
+	\partial 4 bes8 g |
 
 	% part "A"
+	\repeat volta 2 {
+		d2. bes8 c | des c' c c c bes g ees | c2 \times 2/3 { r8 g aes c ees g } | bes bes bes aes bes4 aes8 bes |
+		g4~ \times 2/3 { g8 aes bes } ees,4~ \times 2/3 { ees8 f g } | aes8 c,4 c8 \times 2/3 { d4 ees f } |
+	} \alternative {
+		{ g1~ | g2. bes8 g | }
+		{ ees1~ | \times 2/3 { r4 ees f g bes c } | }
+	}
 
 	% part "B"
+	des8 des des des~ des2~ | des4 des8 ees \times 2/3 { fes4 ees des } | c8 c c c~ c2 | \times 2/3 { r4 ees, f aes bes c } |
+	d8 d d c d2~ | d8 d d c \times 2/3 { f4 d c } | bes1~ | bes2. bes8 g |
 
 	% part "A"
+	d2. bes8 c | des c' c c c bes g ees | c2 \times 2/3 { r8 g aes c ees g } | bes bes bes aes bes4 aes8 bes |
+	g4~ \times 2/3 { g8 aes bes } ees,4~ \times 2/3 { ees8 f g } | aes8 c,4 c8 \times 2/3 { d4 ees f } | ees1 | r |
 }
 
-%% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
-myLyrics=\lyricmode {
-}
-
-include(src/include/harmony_tune_lyrics.lyi)
+include(src/include/harmony_tune.lyi)
