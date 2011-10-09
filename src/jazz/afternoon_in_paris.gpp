@@ -64,7 +64,7 @@ myChords=\chordmode {
 }
 
 %% this is the melody from the real book
-myVoice=\relative c{
+myVoice=\relative c {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\key c \major
@@ -129,7 +129,7 @@ myChordsReal=\chordmode {
 }
 
 %% this is the melody from the real book
-myVoiceReal=\relative c{
+myVoiceReal=\relative c {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\key c \major

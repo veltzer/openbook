@@ -74,7 +74,7 @@ myChords=\chordmode {
 	\endChords
 }
 
-myVoice=\relative c'{
+myVoice=\relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Prestissimo" 4 = 220
 	\time 4/4
