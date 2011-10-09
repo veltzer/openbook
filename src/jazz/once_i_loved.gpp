@@ -4,41 +4,70 @@ include(src/include/common.lyi)
 
 	title="Once I Loved"
 	composer="Antonio Carlos Jobim"
-	poet="Vinicius DeMoraes"
+	poet="Vinicius DeMoraes & Ray Gilbert"
 	style="Jazz"
-	piece="Med Swing"
+	piece="Med.-Slow Bossa Nova"
+	copyright="1965, Ipanema Music."
 
-	completion="0"
+	completion="5"
 	uuid="18294374-a26f-11df-a5f0-0019d11e5a41"
+
+	structure="AAB"
 }
 jazzTune
 
+%{
+	DONE:
+	- marked out the structure of this tune.
+	- filled in poet and composer.
+	TODO:
+	- check the chords.
+	- check the tune.
+	- add youtube urls.
+	- add lyrics url.
+	- add the lyrics to this song.
+	- add copyright materials.
+	- add epdfs.
+%}
+
+%% this version of the chords is from the real book...
 myChords=\chordmode {
 	\startChords
 
 	\startSong
 
+	\mark "A"
+	\startPart
 	\repeat volta 2 {
-		g1:m7 | c:7 | f:maj7 | fis:dim7 | g:m7 | aes:dim7 | a:m7 | a:m7/+g |
-		f:m7 | bes:7 | ees1:maj7 | r1 | e1:m7.5- | a:7.9- |
+		g1:m7 | c:7.5+ | f:maj7 | fis:dim7 | \myEndLine
+		g:m7 | gis:dim7 | a:m7 | a:m7/g | \myEndLine
+		f:m7 | bes:7.5+ | ees1*2:maj7 | \myEndLine
+		e1:m7.5- | a:7.9- |
 	}
 	\alternative {
-		{ d:maj7 | d:7.9- }
-		{ d:maj7 | g:7 }
+		{ d:maj7 | d:7.9- | }
+		{ d:maj7 | g:7 | \myEndLine }
 	}
-	c:maj7 | f:7 | bes1:maj7 | r1 |
-	b1:dim7 | bes:m6 | a:m7 | aes:7.4+ |
-	g:7 | g2:m7 a:7.9- | d1:m7 | d2:m7 d:7.9+ |
+	\endPart
+
+	\mark "B"
+	\startPart
+	c1:maj7 | f:7 | bes1*2:maj7 | \myEndLine
+	b1:dim7 | bes:m6 | a:m6 | aes:7.5- | \myEndLine
+	g:7 | g2:m7 a:7.9- | d1:m6 | d2:m6 d:7 | \myEndLine
+	\endPart
 
 	\endSong
 
 	\endChords
 }
 
+%% this version of the tune is taken from the real book
 myVoice=\relative d'' {
 	\time 4/4
 	\key f \major
 
+	% part "A"
 	\repeat volta 2 {
 		d1~ | d2~ d8 c4 a8~ | a1~ | a2 \times 2/3 { r4 bes c } |
 		\times 2/3 { d d d } \times 2/3 { d d d } | d2 \times 2/3 { f4 e d } |
@@ -50,6 +79,7 @@ myVoice=\relative d'' {
 		{ g8 fis4 fis8~ fis2 | fis r }
 		{ g8 fis4 a8~ a2 | g8 f4 a8~ a g4 e8~ | }
 	}
+	% part "B"
 	e1 | g2~ g8 f4 d8~ | d1~ | d2 \times 2/3 { r4 d e } |
 	\times 2/3 { f f e~ } \times 2/3 { e g ges } | f2~ f8 f4 des8 | e4 d8 d~ d2~ |
 	d2 \times 2/3 { r4 d e } | \times 2/3 { f f e~ } \times 2/3 {e g ges } |
@@ -57,4 +87,11 @@ myVoice=\relative d'' {
 
 }
 
-include(src/include/harmony_tune.lyi)
+%% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
+myLyrics=\lyricmode {
+	Once __ I loved, __
+	And I gave so much love to this love,
+	You were the world to me; __
+}
+
+include(src/include/harmony_tune_lyrics.lyi)
