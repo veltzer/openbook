@@ -7,7 +7,9 @@ include(src/include/common.lyi)
 	composer="Errol Garner"
 	style="Jazz"
 	piece="Ballad"
-	poet=""
+	poet="Johnny Burke"
+	copyright="1955. Renewed 1983 Marke Music, Limerick Music, Reganesque"
+	%% Music and Time-Co Music
 
 	completion="5"
 	uuid="bb21d126-f210-11e0-9b64-0019d11e5a41"
@@ -30,10 +32,9 @@ jazzTune
 	- checked the chords and tune to see that it matches the real book version.
 	- added real book pdf.
 	- adjusted speed for the tune.
+	- added fake book pdf.
 	TODO:
-	- fill in the fake book version.
-	- fill in the copyright.
-	- fill in lyrics.
+	- add the fake book version.
 	- how do I put the last two chord in the real book version in braces (they are part of the turn around)...
 %}
 
@@ -92,7 +93,7 @@ myVoice=\relative c''{
 		g4~ \times 2/3 { g8 aes bes } ees,4~ \times 2/3 { ees8 f g } | aes8 c,4 c8 \times 2/3 { d4 ees f } |
 	} \alternative {
 		{ g1~ | g2. bes8 g | }
-		{ ees1~ | \times 2/3 { r4 ees f g bes c } | }
+		{ ees1 | \times 2/3 { r4 ees f } \times 2/3 { g bes c } | }
 	}
 
 	% part "B"
@@ -104,4 +105,31 @@ myVoice=\relative c''{
 	g4~ \times 2/3 { g8 aes bes } ees,4~ \times 2/3 { ees8 f g } | aes8 c,4 c8 \times 2/3 { d4 ees f } | ees1 | r |
 }
 
-include(src/include/harmony_tune.lyi)
+%% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
+myLyrics=\lyricmode {
+	Look at me,
+	I'm as help -- les as a kit -- ten up a tree
+	and I feel like I'm cling -- ing to a cloud,
+	I ca -- n't __ un -- der -- stand, __
+	I get Mist -- y just hold -- ing your hand. __
+
+	Walk my
+}
+myLyricsmore=\lyricmode {
+	Walk my way and a thou -- sand vi -- o -- lins be -- gin to play,
+	or it might be the sound of your hel -- lo,
+	th -- at mu -- sic I hear, __
+	I get Mist -- y the mo -- ment you're _ _ _ near.
+
+	You can say that you're lead -- ing me on, __
+	but it's just what I want you to do. __
+	Don't you no -- tice how hope -- less -- ly I'm lost, __
+	that's why I'm fol -- low -- ing you. __
+
+	On my own, would I wan -- der through this won -- der -- land a -- lone,
+	nev -- er know -- ing my right foot from my left,
+	my _ hat __ from my glove, __
+	I'm too Mist -- y and too much in Love. __
+}
+
+include(src/include/harmony_tune_lyricsmore.lyi)
