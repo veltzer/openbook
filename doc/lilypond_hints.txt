@@ -38,6 +38,7 @@ questions:
 - how do I put chords in parenthesis? I still do not know.
 	- <\parenthesize bes:7> does not work
 	- ( bes:7 ) does not work either.
+  I have couple of tunes that need this.
 	
 Tempo:
 ======
