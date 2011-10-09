@@ -12,7 +12,7 @@ include(src/include/common.lyi)
 	structure="ABCD"
 
 	completion="5"
-	uuid="612da3c4-e08a-4afb-b257-ea67f45a0b5d"
+	uuid="7b863bbe-f2a2-11e0-9257-0019d11e5a41"
 
 	idyoutube="HMPHMu7LVhQ"
 }
