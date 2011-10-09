@@ -51,7 +51,7 @@ myChords=\chordmode {
 }
 
 %% notes from the fake book
-myVoice=\relative c'{
+myVoice=\relative c' {
 	\key c \major
 	\time 4/4
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -130,7 +130,7 @@ myChordsReal=\chordmode {
 }
 
 %% notes from the real book
-myVoiceReal=\relative c'{
+myVoiceReal=\relative c' {
 	\key c \major
 	\time 4/4
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/

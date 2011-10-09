@@ -12,7 +12,7 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-myVoice=\relative c''{
+myVoice=\relative c'' {
 	\time 4/4
 	\key a \minor
 

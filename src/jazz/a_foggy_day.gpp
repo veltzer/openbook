@@ -51,7 +51,7 @@ myChordsReal=\chordmode {
 }
 
 %% this version of the tune is from the real book...
-myVoiceReal=\relative c'{
+myVoiceReal=\relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
@@ -120,7 +120,7 @@ myChords=\chordmode {
 }
 
 %% this version of the tune is from the fake book...
-myVoice=\relative c'{
+myVoice=\relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
