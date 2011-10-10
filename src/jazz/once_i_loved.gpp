@@ -3,31 +3,45 @@ include(src/include/common.lyi)
 	default_header
 
 	title="Once I Loved"
+	subtitle=""
 	composer="Antonio Carlos Jobim"
-	poet="Vinicius DeMoraes & Ray Gilbert"
 	style="Jazz"
 	piece="Med.-Slow Bossa Nova"
+	poet="Vinicius DeMoraes & Ray Gilbert"
 	copyright="1965, Ipanema Music."
 
 	completion="5"
 	uuid="18294374-a26f-11df-a5f0-0019d11e5a41"
 
 	structure="AAB"
+
+	%% Joe Henderson accompanied by guitar doing Bossa...
+	idyoutube="rJxHFW2S-Eo"
+	%% Astrud Gilberto (original Bossa Style with Orchestra)
+	idyoutube="BwP0eIRU-dQ"
+
+	lyricsurl="http://www.sing365.com/music/lyric.nsf/Once-I-Loved-lyrics-Ella-Fitzgerald/24CD6F6E245519E348256AAB0009C557"
 }
 jazzTune
 
 %{
 	DONE:
+	- added the chords.
+	- added the melody.
+	- added the lyrics.
 	- marked out the structure of this tune.
 	- filled in poet and composer.
+	- heard the tune and it sounded fine.
+	- adjusted the lyrics.
+	- added copyright materials.
+	- added lyrics url.
+	- added youtube urls.
+	- added epdfs.
 	TODO:
 	- check the chords.
 	- check the tune.
-	- add youtube urls.
-	- add lyrics url.
-	- add the lyrics to this song.
-	- add copyright materials.
-	- add epdfs.
+	- check the lyrics.
+	- add the version from the new real book.
 %}
 
 %% this version of the chords is from the real book...
@@ -64,6 +78,8 @@ myChords=\chordmode {
 
 %% this version of the tune is taken from the real book
 myVoice=\relative d'' {
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Allegro" 4 = 144
 	\time 4/4
 	\key f \major
 
@@ -76,7 +92,7 @@ myVoice=\relative d'' {
 		\times 2/3 { bes bes a } \times 2/3 { c c bes } | a2 \times 2/3 { g4 bes a } |
 	}
 	\alternative {
-		{ g8 fis4 fis8~ fis2 | fis r }
+		{ g8 fis4 fis8~ fis2~ | fis r }
 		{ g8 fis4 a8~ a2 | g8 f4 a8~ a g4 e8~ | }
 	}
 	% part "B"
@@ -89,9 +105,28 @@ myVoice=\relative d'' {
 
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 myLyrics=\lyricmode {
-	Once __ I loved, __
+	Once __ __ I loved, __ __
 	And I gave so much love to this love,
-	You were the world to me; __
+	You were the world to me; __ __
+
+	Once __ __ I cried __ __
+	at the thought I was fool -- ish and proud
+	and let you say good -- bye. __ __
+}
+myLyricsmore=\lyricmode {
+	Then __ __ one day, __ __
+	From my in -- fi -- nite sad -- ness you came
+	and brought me love a -- gain; __ __
+	Now __ __ I know __ __
+	that no mat -- ter what -- ev -- er be -- falls
+	I'll nev -- er _ _ _ let you go, __
+
+	I will hold __ you close, __
+	Make __ you stay; __ __
+	Be -- cause love is the __ sad -- dest thing __
+	when it goes a -- way, __ __
+	Be -- cause love is the __ sad -- dest thing __
+	when it goes a -- way, __
 }
 
-include(src/include/harmony_tune_lyrics.lyi)
+include(src/include/harmony_tune_lyricsmore.lyi)
