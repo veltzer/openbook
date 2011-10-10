@@ -27,4 +27,7 @@ Options:
 	TBD
 3. Create a book using large lilypond file that includes all other
 	lilyponds.
-	TBD
+	- if you just catenate the files and create a big lilypond file then you find that:
+		- it takes a long time to process that files (this is a bug which should be submitted to
+		the lilypond developers).
+		- the names of the tunes do not appear.

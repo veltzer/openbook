@@ -1,8 +1,11 @@
 - midi translation does not respect voltas. If I have: A V1 A V2 Then midi will play: A V1 V2 which sounds bad.
+
 - lyrics do not respect voltas (you can see the ugliness of the situation in autumn leaves).
+
 - voltas and bows. When the last note before alternatives has a bow to the next note, then
 the first note of the second (third, forth,...) alternative should have a bow coming into
 it as well. As a side effect this also affects lyrics and midi (midi will play the note twice in the second round and lyrics will put a syllable on it even though it does not deserve one).
+
 - when playing in timidity the channel for the voice is seen as "\new" while the channel for the chords looks like "mychords" (which is the name I gave it). Why is that ?!?
 
 
@@ -18,7 +21,9 @@ it as well. As a side effect this also affects lyrics and midi (midi will play t
 
 Then C begins relativly to B and not to A! This is NOT how the music is played out. The music plays ABAC and so C should be relative to A.
 
-Questions:
-How do I elongate a word in lyric mode ? I want the page to show that it is long.
-In published sheets they sometimes have a line extended from that word...
-(show example from the fakebook - autumn leaves - the ending).
+- when catenating two tunes then the names of the first tune appears but not the second.
+
+- catenating lots of tunes and trying to produce a pdf out of that takes way too much time (looks like a processing algorithm bug).
+
+- there is no lilypond flag to tell lilypond to turn warnings into errors (like -Werror in gcc). This is a very bad idea for someone
+who wants to make sure his lilypond files are clean.

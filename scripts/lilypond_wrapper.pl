@@ -19,20 +19,10 @@
 # - unfortunately this design is not currently implemented since there was a problem with
 # collecting the childs return status while also piping from it. I don't know how to do
 # that in perl.
-
-=head previous attempt
-# run lilypond with all the arguments that I was given,
-# redirecting stderr to stdout and stdout to ourselves
-my($res)=open(FILE,'./test.pl 2>&1 |') || die('unable to open');
-print 'open returned '.$res."\n";
-my($line);
-while($line=<FILE>) {
-	print 'line is '.$line;
-}
-$res=close(FILE);
-print 'close returned '.$res."\n";
-
-=cut
+#
+# TODO:
+# - I do not catch warnings out of this process because the lilypond output is redirected.
+# and there is no flag to tell lilypond to turn warnings into errors.
 
 use strict;
 use diagnostics;
