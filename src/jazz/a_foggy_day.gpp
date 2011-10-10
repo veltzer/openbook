@@ -14,8 +14,14 @@ include(src/include/common.lyi)
 	completion="5"
 	uuid="87da6ece-a26e-11df-95d7-0019d11e5a41"
 
+	structure="AB"
+
+	%% Wynton Marsalis Quartet
 	idyoutube="-P2xoeGoWMs"
+	%% Mel Torme (one of the greatest vocal versions)
 	idyoutube="tVCDZaApwV8"
+
+	lyricsurl="http://www.sing365.com/music/lyric.nsf/A-Foggy-Day-lyrics-Frank-Sinatra/0F2EB16090A785424825692000077664"
 }
 jazzTune
 
