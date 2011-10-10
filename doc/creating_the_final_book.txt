@@ -1,0 +1,30 @@
+This documentation deals with how to create the final book
+==========================================================
+Options:
+========
+1. Create a pdf from every song and catenate them.
+	A command line like this could do the trick:
+	pdfjoin out/src/jazz/*.pdf --outfile '.$output.' 2> /dev/null
+
+	Advantages:
+	- very easy to do.
+	Disadvantages:
+	- cannot create nice index.
+	- the resulting pdf is too heavy since it has the fonts over and over
+	and over again.
+		you can see this by issuing:
+		> pdffonts out/src/jazz/once_i_loved.pdf
+		and
+		> pdffonts out/openbook.pdf
+		and seeing that the object are repeated.
+	- two tunes cannot occupy the same page (bigger book).
+		I may not want, in a specific build, for two tunes
+		to occupy the same page, but then again, I may want
+		it (for printing for instance instead of digital
+		book...).
+
+2. Create a book using latex.
+	TBD
+3. Create a book using large lilypond file that includes all other
+	lilyponds.
+	TBD
