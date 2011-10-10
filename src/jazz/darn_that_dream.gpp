@@ -17,8 +17,11 @@ include(src/include/common.lyi)
 	completion="5"
 	uuid="f0a5804c-eb83-11e0-aeb1-0019d11e5a41"
 
-	idyoutube="upZ00qxXrBg"
+	%% Theloneous Monk...:)
 	idyoutube="GsI4oNKGJPg"
+	%% Dexter Gordon, once of the great performances of this song...
+	idyoutube="upZ00qxXrBg"
+
 	lyricsurl="http://www.lyricsfreak.com/b/billie+holiday/darn+that+dream_20018018.html"
 }
 jazzTune
