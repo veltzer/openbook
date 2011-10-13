@@ -1,4 +1,7 @@
-include(src/include/common.lyi)
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+%>
 \header {
 	default_header
 
@@ -16,15 +19,17 @@ include(src/include/common.lyi)
 	idyoutube="CCTIpclVQe4"
 	idyoutube="gLqsIIrk5wQ"
 }
-jazzTune
 
-%{
+<%doc>
+	DONE:
 	TODO:
+	- where did this come from?
 	- do the intro.
 	- match the other verse lyrics to the melody.
 	- fill in the copyright.
 	- add performances that I like.
-%}
+</%doc>
+
 myChords=\chordmode {
 	\startChords
 

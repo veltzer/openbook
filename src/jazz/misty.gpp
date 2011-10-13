@@ -1,4 +1,7 @@
-include(src/include/common.lyi)
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+%>
 \header {
 	default_header
 
@@ -23,9 +26,8 @@ include(src/include/common.lyi)
 
 	structure="AABA"
 }
-jazzTune
 
-%{
+<%doc>
 	DONE:
 	- put in whatever is in the real book.
 	- heard it to see if it's ok.
@@ -36,7 +38,7 @@ jazzTune
 	TODO:
 	- add the fake book version.
 	- how do I put the last two chord in the real book version in braces (they are part of the turn around)...
-%}
+</%doc>
 
 %% this version of the chords is from the real book...
 myChords=\chordmode {
@@ -87,7 +89,7 @@ myVoice=\relative c'' {
 
 	\partial 4 bes8 g |
 
-	% part "A"
+	%% part "A"
 	\repeat volta 2 {
 		d2. bes8 c | des c' c c c bes g ees | c2 \times 2/3 { r8 g aes c ees g } | bes bes bes aes bes4 aes8 bes |
 		g4~ \times 2/3 { g8 aes bes } ees,4~ \times 2/3 { ees8 f g } | aes8 c,4 c8 \times 2/3 { d4 ees f } |
@@ -96,11 +98,11 @@ myVoice=\relative c'' {
 		{ ees1 | \times 2/3 { r4 ees f } \times 2/3 { g bes c } | }
 	}
 
-	% part "B"
+	%% part "B"
 	des8 des des des~ des2~ | des4 des8 ees \times 2/3 { fes4 ees des } | c8 c c c~ c2 | \times 2/3 { r4 ees, f aes bes c } |
 	d8 d d c d2~ | d8 d d c \times 2/3 { f4 d c } | bes1~ | bes2. bes8 g |
 
-	% part "A"
+	%% part "A"
 	d2. bes8 c | des c' c c c bes g ees | c2 \times 2/3 { r8 g aes c ees g } | bes bes bes aes bes4 aes8 bes |
 	g4~ \times 2/3 { g8 aes bes } ees,4~ \times 2/3 { ees8 f g } | aes8 c,4 c8 \times 2/3 { d4 ees f } | ees1 | r |
 }

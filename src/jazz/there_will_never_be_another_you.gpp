@@ -1,4 +1,7 @@
-include(src/include/common.lyi)
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+%>
 \header {
 	default_header
 
@@ -20,12 +23,11 @@ include(src/include/common.lyi)
 	idyoutube="kh_NnsbIqNQ"
 	idyoutube="Til3lV_ItZE"
 }
-jazzTune
 
-%{
+<%doc>
 	TODO:
 	- in the real book version move the last chord to be written in parenthesis (I don't know how to do that).
-%}
+</%doc>
 
 %% this version of the chords is from the real book...
 myChordsReal=\chordmode {
@@ -66,13 +68,13 @@ myVoiceReal=\relative c' {
 
 	\partial 4 bes4 |
 
-	% Bar 1
+	%% Bar 1
 	c d ees f | g bes f ees | f1~ | f2 r8 g4. |
 	ees4 f g bes | c ees c4. bes8 | c1~ | c2. bes4 |
 	ees c bes aes | g f g aes | bes g f ees | f ees8 f~ f4 ees |
 	d' c bes a | g f g f | aes1~ | aes2. bes,4 |
 
-	% Bar 17
+	%% Bar 17
 	c d ees f | g bes f ees | f1~ | f2 r8 g4. |
 	ees4 f g bes | c ees c4. bes8 | c1~ | c2. bes4 |
 	ees c bes aes | g f g aes | bes g f ees8 d'~ | d2 r8 c4. |
@@ -129,13 +131,13 @@ myVoice=\relative c' {
 
 	\partial 4 bes4 |
 
-	% Bar 1
+	%% Bar 1
 	c d ees f | g bes f4. ees8 | f1~ | f2. g4 |
 	ees f g bes | c ees c4. bes8 | c1~ | c2. bes4 |
 	ees c bes aes | g f g4. aes8 | bes4 g f ees | f ees f4. ees8 |
 	d'4 c bes a | g f g f | aes1~ | aes2. bes,4 |
 
-	% Bar 17
+	%% Bar 17
 	c d ees f | g bes f4. ees8 | f1~ | f2. g4 |
 	ees f g bes | c ees c4. bes8 | c1~ | c2. bes4 |
 	ees4 c bes aes | g f g4. aes8 | bes4 g f ees | d'2. c4 |

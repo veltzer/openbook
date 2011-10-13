@@ -1,4 +1,7 @@
-include(src/include/common.lyi)
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+%>
 \header {
 	default_header
 
@@ -14,13 +17,12 @@ include(src/include/common.lyi)
 
 	idyoutube="4z8Rt4nvd-I"
 }
-jazzTune
 
-%{
+<%doc>
 	TODO:
 	- add the piano accompaniment for this song (rythm pattern with some notes - ripp
 	it off the album).
-%}
+</%doc>
 
 myChords=\chordmode {
 	\startChords

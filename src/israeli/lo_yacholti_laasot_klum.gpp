@@ -55,11 +55,11 @@ myFrets=\new FretBoards {
 }
 include(src/include/harmony.lyi)
 
-% Lyrics
+%% Lyrics
 verticalSpace
 verticalSpace
 \markup {
-	\small { % \teeny \tiny \small \normalsize \large \huge
+	\small { %% \teeny \tiny \small \normalsize \large \huge
 		\fill-line {
 			\column {
 				"לא יכולתי לעשות עם זה כלום, אתה שומע?"

@@ -1,4 +1,7 @@
-include(src/include/common.lyi)
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+%>
 \header {
 	default_header
 
@@ -17,12 +20,12 @@ include(src/include/common.lyi)
 
 	idyoutube="4NTxWQfMSsA"
 }
-jazzTune
 
-%{
+<%doc>
 	TODO:
 	- add the real book version.
-%}
+	- document the youtube performances.
+</%doc>
 
 %% version of the chords from the fakebook
 myChords=\chordmode {

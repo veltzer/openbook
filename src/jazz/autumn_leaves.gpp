@@ -1,6 +1,7 @@
-include(src/include/common.lyi)
-\header {
-	default_header
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+	attributes['type']="harmony_tune_lyricsmore"
 
 	title="Autumn Leaves"
 	subtitle="Les Feuilles Mortes"
@@ -17,17 +18,17 @@ include(src/include/common.lyi)
 	uuid="8c35acf6-a7c1-11df-9040-0019d11e5a41"
 	idyoutube="mRhVI7cpcS4"
 	idyoutube="io1o1Hwpo8Y"
-}
-jazzTune
+%>
 
-%{
+<%doc>
+	DONE:
 	TODO:
 	- I remarked the \myEndLine at the first finish of the volta to save
 	lines. Should we have a more general mechanism for this?
-%}
+	- document the youtube performances.
+</%doc>
 
-%% these chords are taken from the real book
-myChords=\chordmode {
+myChordsReal=\chordmode {
 	\startChords
 
 	\startSong
@@ -62,8 +63,7 @@ myChords=\chordmode {
 	\endChords
 }
 
-%% the melody is taken from the real book
-myVoice=\relative e' {
+myVoiceReal=\relative e' {
 	\time 4/4
 	\key e \minor
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -91,7 +91,7 @@ myVoice=\relative e' {
 }
 
 %% lyrics are taken from the fake book and adjusted for the real one
-myLyrics=\lyricmode {
+myLyricsReal=\lyricmode {
 	The fall -- ing leaves __ drift by the win -- dow, __
 	The Au -- tumn Leaves, __ of red and gold.
 	I see your
@@ -106,12 +106,11 @@ myLyrics=\lyricmode {
 	The fall -- ing
 }
 
-myLyricsmore=\lyricmode {
+myLyricsRealmore=\lyricmode {
 	_ _ _ lips, __ the sum -- mer kiss -- es,
 	The sun -- burned hands __
 }
 
-%% these chords are taken from the fake book
 myChordsFake=\chordmode {
 	\startChords
 
@@ -140,7 +139,6 @@ myChordsFake=\chordmode {
 	\endChords
 }
 
-%% the melody is taken from the fake book
 myVoiceFake=\relative e' {
 	\time 4/4
 	\key e \minor
@@ -162,7 +160,6 @@ myVoiceFake=\relative e' {
 	a2. g4 | fis2 g4 b, | e1~ | e4 r r2 |
 }
 
-%% lyrics are taken from the fake book
 myLyricsFake=\lyricmode {
 	The fall -- ing leaves __ drift by the win -- dow, __
 	The Au -- tumn Leaves, __ of red and gold.
@@ -174,5 +171,3 @@ myLyricsFake=\lyricmode {
 	But I miss you most of all my dar -- ling, __
 	When Au -- tumn Leaves start to fall. __
 }
-
-include(src/include/harmony_tune_lyricsmore.lyi)

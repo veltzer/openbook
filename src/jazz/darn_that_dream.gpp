@@ -1,4 +1,7 @@
-include(src/include/common.lyi)
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+%>
 \header {
 	default_header
 
@@ -24,12 +27,11 @@ include(src/include/common.lyi)
 
 	lyricsurl="http://www.lyricsfreak.com/b/billie+holiday/darn+that+dream_20018018.html"
 }
-jazzTune
 
-%{
+<%doc>
 	TODO:
 	- add the real book version.
-%}
+</%doc>
 
 %% taken from the fake book
 myVoice=\relative f' {

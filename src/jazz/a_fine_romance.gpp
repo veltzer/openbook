@@ -1,29 +1,31 @@
-include(src/include/common.lyi)
-\header {
-	default_header
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+	attributes['type']="harmony_tune_lyricsmore"
+	attributes['render']="Fake"
 
-	title="A Fine Romance"
-	composer="Jerome Kern"
-	style="Jazz"
-	piece="Med. Ballad"
-	poet="Dorothy Fields"
-	copyright="1936 T.B. Harms Company"
-	%% Copyright Renewed. (c/o The Welk Music Group, Santa Monica, CA 90401).
+	attributes['title']="A Fine Romance"
+	attributes['composer']="Jerome Kern"
+	attributes['style']="Jazz"
+	attributes['piece']="Med. Ballad"
+	attributes['poet']="Dorothy Fields"
+	attributes['copyright']="1936 T.B. Harms Company"
+	attributes['copyrightextra']="Copyright Renewed. (c/o The Welk Music Group, Santa Monica, CA 90401)."
 
-	completion="5"
-	uuid="7c9691e6-a26e-11df-8418-0019d11e5a41"
+	attributes['completion']="5"
+	attributes['uuid']="7c9691e6-a26e-11df-8418-0019d11e5a41"
 
-	idyoutube="ytipqjANlrY"
-	idyoutube="cKbD4PQBrIA"
-}
-jazzTune
+	attributes['idyoutube']="ytipqjANlrY"
+	attributes['idyoutube']="cKbD4PQBrIA"
+%>
 
-%{
-	TODO:
-%}
+##	DONE:
+##	TODO:
+##	- fill in whats been done for this tune.
+##	- fill in data about the you tube performances.
 
 %% these are the chords from the fake book
-myChords=\chordmode {
+myChordsFake=\chordmode {
 	\startChords
 
 	\startSong
@@ -51,7 +53,7 @@ myChords=\chordmode {
 }
 
 %% notes from the fake book
-myVoice=\relative c' {
+myVoiceFake=\relative c' {
 	\key c \major
 	\time 4/4
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -78,7 +80,7 @@ myVoice=\relative c' {
 }
 
 %% lyrics taken from the fake book
-myLyrics=\lyricmode {
+myLyricsFake=\lyricmode {
 	A Fine Ro -- mance with no kis -- es!
 	A Fine Ro -- mance, my friend, this is!
 	We should be like a cou -- ple of hot to -- ma -- toes, __
@@ -90,7 +92,7 @@ myLyrics=\lyricmode {
 	I have -- n't got a chance. This is A Fine Ro -- mance. A
 }
 
-myLyricsmore=\lyricmode {
+myLyricsFakemore=\lyricmode {
 	_ Fine Ro -- mance my good fel -- low!
 	You take ro -- mance, I'll take jel -- lo!
 	You're calm -- er than the seal in the Arc -- tic O -- cean, __
@@ -167,10 +169,8 @@ myLyricsReal=\lyricmode {
 	A
 }
 
-myLyricsmoreReal=\lyricmode {
+myLyricsRealmore=\lyricmode {
 	_ Fine Ro -- mance, you won't nest -- le.
 	A Fine Ro -- mance, you won't wrest -- le!
 	I
 }
-
-include(src/include/harmony_tune_lyricsmore.lyi)

@@ -1,4 +1,7 @@
-include(src/include/common.lyi)
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+%>
 \header {
 	default_header
 
@@ -22,9 +25,8 @@ include(src/include/common.lyi)
 	structure="AB"
 	lyricsurl="http://artists.letssingit.com/disney-lyrics-someday-my-prince-will-come-31rjgwv"
 }
-jazzTune
 
-%{
+<%doc>
 	DONE:
 	for the real book version:
 	- made sure it sounds fine.
@@ -36,7 +38,7 @@ jazzTune
 	- add copyright notice.
 	- add a fakebook version (is there one?)
 	- fixup names of composers and poets (I'm not sure they are right)
-%}
+</%doc>
 
 %% this version of the chords is from the real book...
 myChords=\chordmode {
@@ -103,11 +105,11 @@ myLyricsmore=\lyricmode {
 
 include(src/include/harmony_tune_lyricsmore.lyi)
 
-% More lyrics
+%% More lyrics
 verticalSpace
 verticalSpace
 \markup {
-	\small { % \teeny \tiny \small \normalsize \large \huge
+	\small { %% \teeny \tiny \small \normalsize \large \huge
 		\fill-line {
 			\column {
 				"Someday I'll find my love"

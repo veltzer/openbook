@@ -12,9 +12,9 @@ include(src/include/common.lyi)
 }
 generalMacros
 
-%{
+<%doc>
 	TODO:
-%}
+</%doc>
 
 \markup {
 Regular rock type drumming...

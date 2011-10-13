@@ -13,14 +13,14 @@ include(src/include/common.lyi)
 	uuid="35529555-8b38-4cc0-be20-2dc5f1848d77"
 }
 
-%{
+<%doc>
 	TODO:
 	- six to dim with full chords going up and down.
 	- six to dim with drop two (two hands).
 	- six to dim with full chords left hand going down.
 	- six to dim arpeggio with the two hands in an interval (a third and then a fifth).
 		at least a couple of kinds of argpegios.
-%}
+</%doc>
 
 myVoice=\relative c' {
 	\time 4/4

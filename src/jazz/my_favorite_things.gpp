@@ -1,4 +1,7 @@
-include(src/include/common.lyi)
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+%>
 \header {
 	default_header
 
@@ -11,14 +14,13 @@ include(src/include/common.lyi)
 	completion="0"
 	uuid="02c22208-a26f-11df-98fd-0019d11e5a41"
 }
-jazzTune
 
-%{
+<%doc>
 	TODO:
 	- add lyrics.
 	- check this whole sheet again.
 	- add length to all note.
-%}
+</%doc>
 
 myChords=\chordmode {
 	\mark "Intro"

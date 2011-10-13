@@ -1,4 +1,7 @@
-include(src/include/common.lyi)
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+%>
 \header {
 	default_header
 
@@ -19,15 +22,14 @@ include(src/include/common.lyi)
 	idyoutube="neXL51g8P-M"
 	lyricsurl="http://www.oldielyrics.com/lyrics/frank_sinatra/my_foolish_heart.html"
 }
-jazzTune
 
-%{
+<%doc>
 	TODO:
 	- add the real book version and check it.
 	- add an epdf of the real book.
 	- In the lyrics where it says "His" a boy should sing "Her". We should have
 	alternate lyrics here. See how they did it in the fake book.
-%}
+</%doc>
 
 %% taken from the real book (to be checked...)
 myVoiceReal=\relative f' {

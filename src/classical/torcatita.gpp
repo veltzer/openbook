@@ -17,14 +17,12 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-%{
+<%doc>
 	TODO:
 	- add a scan of the paper (after fixing the printer).
 	- fill in the fingerings.
 	- write that the tune is for guitar.
-%}
-
-myFakeEndLine={}
+</%doc>
 
 myChords=\chordmode {
 	\startChords
@@ -65,6 +63,7 @@ myChords=\chordmode {
 
 	\endChords
 }
+
 myHighVoice=\relative c'' {
 	\time 3/4
 	\key c \major
@@ -119,6 +118,7 @@ myHighVoice=\relative c'' {
 
 	\endTune
 }
+
 myMidVoice=\relative c' {
 	\voiceTwo
 
@@ -180,6 +180,7 @@ myLowVoice=\relative c' {
 		{ a | }
 	}
 }
+
 %% score for printing
 \score {
 	<<

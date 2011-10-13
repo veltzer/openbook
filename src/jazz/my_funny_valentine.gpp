@@ -1,4 +1,7 @@
-include(src/include/common.lyi)
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+%>
 \header {
 	default_header
 
@@ -14,11 +17,10 @@ include(src/include/common.lyi)
 
 	idyoutube="jvXywhJpOKs"
 }
-jazzTune
 
-%{
+<%doc>
 	TODO:
-%}
+</%doc>
 
 myChords=\chordmode {
 	\startChords

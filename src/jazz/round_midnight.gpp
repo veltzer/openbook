@@ -1,4 +1,7 @@
-include(src/include/common.lyi)
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+%>
 \header {
 	default_header
 
@@ -11,7 +14,6 @@ include(src/include/common.lyi)
 	completion="0"
 	uuid="1c99c334-a26f-11df-b3cb-0019d11e5a41"
 }
-jazzTune
 
 myChords=\chordmode {
 }
@@ -25,7 +27,7 @@ myVoice={
 	\time 4/4
 	\key aes \major
 
-	% INTRO
+	%% INTRO
 	\intro |
 	\intro |
 	\intro | \myEndLine
@@ -39,7 +41,7 @@ myVoice={
 	}
 
 	\relative c' {
-	% theme
+	%% theme
 	\repeat volta 2 {
 		r4 c16 f g c aes4. c,8 | f8 f~ f4~ f8 f c'16 bes8. |
 		r4 f16 aes c ees d4. aes8 | b4 bes bes8 aes~ a4 |
@@ -58,7 +60,7 @@ myVoice={
 	r4 bes16 des f aes g4. des8 | c2. f,8 g |
 	aes8 g4 f8~ f4 f8 f8~ | f2. r4 |
 
-	% coda
+	%% coda
 	r8 c \times 2/3 {d8 e f} g f~ \times 2/3 {g8 ees d} |
 	aes'1~ | aes4~ \times 2/3 {aes8 g f} g8. e16 f g aes bes |
 	\times 2/3 {b8 des ais} b2.~ |

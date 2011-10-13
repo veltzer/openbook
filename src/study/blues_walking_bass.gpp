@@ -14,9 +14,9 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-%{
+<%doc>
 	TODO:
-%}
+</%doc>
 
 \score {
 <<

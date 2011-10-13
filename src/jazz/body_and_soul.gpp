@@ -1,38 +1,40 @@
-include(src/include/common.lyi)
-\header {
-	default_header
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+	attributes['type']="harmony_tune_lyricsmore"
+	attributes['render']="Fake"
 
-	title="Body And Soul"
-	subtitle=""
-	composer="John Green"
-	style="Jazz"
-	piece="Slowly, with expression"
-	poet="Edward Heyman, Robert Sour & Frank Eyton"
-	copyright="1930 Warner Bros. Inc & Chappel & Co. Ltd."
-	%% Copyright Renewed & Assigned to Warner Bros. Inc.
+	attributes['title']="Body And Soul"
+	attributes['subtitle']=""
+	attributes['composer']="John Green"
+	attributes['style']="Jazz"
+	attributes['piece']="Slowly, with expression"
+	attributes['poet']="Edward Heyman, Robert Sour & Frank Eyton"
+	attributes['copyright']="1930 Warner Bros. Inc & Chappel & Co. Ltd."
+	attributes['copyrightextra']="Copyright Renewed & Assigned to Warner Bros. Inc."
 
-	remark="This version is taken from the fake book page 67"
-	structure="AABA"
+	attributes['remark']="This version is taken from the fake book page 67"
+	attributes['structure']="AABA"
 
-	completion="5"
-	uuid="b2076c06-e025-11e0-ab4c-0019d11e5a41"
+	attributes['completion']="5"
+	attributes['uuid']="b2076c06-e025-11e0-ab4c-0019d11e5a41"
 
-	%% dexter gordon from the ballads
-	idyoutube="rMd9oZ4O0bs"
-	%% billie holiday...
-	idyoutube="CMDlk6lGQOk"
-	lyricsurl="http://www.azlyrics.com/lyrics/dianakrall/bodyandsoul.html"
-}
-jazzTune
+	attributes['idyoutuberemark']="Billie Holiday"
+	attributes['idyoutube']="CMDlk6lGQOk"
+	attributes['idyoutuberemark']="Dexter Gordon from the ballads. Excellent"
+	attributes['idyoutube']="rMd9oZ4O0bs"
+	attributes['lyricsurl']="http://www.azlyrics.com/lyrics/dianakrall/bodyandsoul.html"
+%>
 
-%{
+<%doc>
+	DONE:
 	TODO:
 	- the e9.11+ does at the end does not show on the sheet. On the sheet it says e:7.11+
 	- add the real book version with epdf.
-%}
+	- mark whats been done to this tune.
+</%doc>
 
-%% taken from the fake book
-myVoice=\relative f' {
+myVoiceFake=\relative f' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante" 4 = 80
 	\time 4/4
@@ -57,8 +59,7 @@ myVoice=\relative f' {
 	r4 des bes8 ges4 bes,8 | f'2 ees | r8. des16 ees8. f16 aes4 \times 2/3 { aes8 bes fes } | des1 |
 }
 
-%% taken from the fakebook
-myChords=\chordmode {
+myChordsFake=\chordmode {
 	\startChords
 
 	\startSong
@@ -93,8 +94,7 @@ myChords=\chordmode {
 	\endChords
 }
 
-%% taken from the fakebook
-myLyrics=\lyricmode {
+myLyricsFake=\lyricmode {
 	My heart is sad and lone -- ly,
 	for you I sigh, for you, dear, on -- ly,
 	Why have -- n't you seen it?
@@ -113,11 +113,10 @@ myLyrics=\lyricmode {
 	I'd glad -- ly sur -- ren -- der
 	my -- self to you, Bod -- y And Soul!
 }
-myLyricsmore=\lyricmode {
+
+myLyricsFakemore=\lyricmode {
 	I spend my days in long -- ing,
 	and won -- d'ring why it's me you're wrong -- ing,
 	I tell you I mean it,
 	I'm all for you, Bod -- y And _ Soul!
 }
-
-include(src/include/harmony_tune_lyricsmore.lyi)

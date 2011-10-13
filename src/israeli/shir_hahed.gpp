@@ -16,14 +16,14 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-%{
+<%doc>
 	TODO:
 		- after the first verse there is a transposition of 1.5 steps up
 		though the chord Ab7 (which is the alter-dominant of g which we are
 		going to...).
 		- finish the tune.
 		- align all the lyrics.
-%}
+</%doc>
 
 myChords=\chordmode {
 	\startChords

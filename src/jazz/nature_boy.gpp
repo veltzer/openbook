@@ -1,4 +1,7 @@
-include(src/include/common.lyi)
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+%>
 \header {
 	default_header
 
@@ -14,12 +17,11 @@ include(src/include/common.lyi)
 
 	uuid="13d57a4a-a26f-11df-8711-0019d11e5a41"
 }
-jazzTune
 
-%{
+<%doc>
 	TODO:
 	- fill in the copyright
-%}
+</%doc>
 
 myChords=\chordmode {
 	\startChords

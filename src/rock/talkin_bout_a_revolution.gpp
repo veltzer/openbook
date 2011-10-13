@@ -16,14 +16,14 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-%{
+<%doc>
 	TODO:
 	- are the g:sus4 and d:sus4 chords really sus4 chords? They 4 note
 	in them is just an embelishment. How do I annotate this correctly?
 	- the g:sus4 and d:sus4 chords look (in guitar tabs) just like regular
 	g and d chords. How can also annotate the extra note to be added and the
 	finger with which to add it with?
-%}
+</%doc>
 
 include(predefined-guitar-fretboards.ly)
 
@@ -58,11 +58,11 @@ myFrets=\new FretBoards {
 	\layout {}
 }
 
-% Lyrics
+%% Lyrics
 verticalSpace
 verticalSpace
 \markup {
-	\small { % \teeny \tiny \small \normalsize \large \huge
+	\small { %% \teeny \tiny \small \normalsize \large \huge
 		\fill-line {
 		\column {
 			"Don't you know you're talking about a revolution"

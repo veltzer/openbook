@@ -18,10 +18,10 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-%{
+<%doc>
 	TODO:
 	- some of the frets are way off (e/gis is hilarious!)
-%}
+</%doc>
 
 include(predefined-guitar-fretboards.ly)
 
@@ -82,11 +82,11 @@ myFrets=\new FretBoards {
 	\layout {}
 }
 
-% Lyrics
+%% Lyrics
 verticalSpace
 verticalSpace
 \markup {
-	\small { % \teeny \tiny \small \normalsize \large \huge
+	\small { %% \teeny \tiny \small \normalsize \large \huge
 		\fill-line {
 		\column {
 			"We're leaving together"

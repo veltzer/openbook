@@ -1,7 +1,10 @@
 \score {
 	<<
-		\context Staff \tune
+		\new Staff="Melody" {
+			\new Voice="myvoice" ${myVoice()}
+		}
 	>>
 	\midi {}
-	\layout {}
+	\layout {
+	}
 }

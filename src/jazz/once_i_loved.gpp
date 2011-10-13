@@ -1,4 +1,7 @@
-include(src/include/common.lyi)
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+%>
 \header {
 	default_header
 
@@ -22,9 +25,8 @@ include(src/include/common.lyi)
 
 	lyricsurl="http://www.sing365.com/music/lyric.nsf/Once-I-Loved-lyrics-Ella-Fitzgerald/24CD6F6E245519E348256AAB0009C557"
 }
-jazzTune
 
-%{
+<%doc>
 	DONE:
 	- added the chords.
 	- added the melody.
@@ -46,7 +48,7 @@ jazzTune
 		(not flat nor sharp) because it is confusing. It is so in the real book. How do I
 		do that?
 	- add the version from the new real book.
-%}
+</%doc>
 
 %% this version of the chords is from the real book...
 myChords=\chordmode {
@@ -87,7 +89,7 @@ myVoice=\relative d'' {
 	\time 4/4
 	\key f \major
 
-	% part "A"
+	%% part "A"
 	\repeat volta 2 {
 		d1~ | d2~ d8 c4 a8~ | a1~ | a2 \times 2/3 { r4 bes c } |
 		\times 2/3 { d d d } \times 2/3 { d d d } | d2 \times 2/3 { f4 e d } |
@@ -99,7 +101,7 @@ myVoice=\relative d'' {
 		{ g8 fis4 fis8~ fis2~ | fis r }
 		{ g8 fis4 a8~ a2 | g8 f4 a8~ a g4 e8~ | }
 	}
-	% part "B"
+	%% part "B"
 	e1 | g2~ g8 f4 d8~ | d1~ | d2 \times 2/3 { r4 d e } |
 	\times 2/3 { f f e~ } \times 2/3 { e g ges } | f2~ f8 f4 des8 | e4 d8 d~ d2~ |
 	d2 \times 2/3 { r4 d e } | \times 2/3 { f f e~ } \times 2/3 {e g ges } |

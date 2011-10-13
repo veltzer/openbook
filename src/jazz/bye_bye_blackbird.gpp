@@ -1,25 +1,29 @@
-include(src/include/common.lyi)
-\header {
-	default_header
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+	attributes['type']="harmony_tune_lyrics"
+	attributes['render']="Fake"
 
-	title="Bye Bye Blackbird"
-	composer="Ray Henderson"
-	poet="Mort Dixon"
-	style="Moderately"
-	piece="Jazz Ballad"
-	copyright="1926 (Renewed) Warner Bros. Inc."
+	attributes['title']="Bye Bye Blackbird"
+	attributes['composer']="Ray Henderson"
+	attributes['poet']="Mort Dixon"
+	attributes['style']="Moderately"
+	attributes['piece']="Jazz Ballad"
+	attributes['copyright']="1926 (Renewed) Warner Bros. Inc."
 
-	structure="ABCD"
+	attributes['structure']="ABCD"
 
-	completion="5"
-	uuid="7b863bbe-f2a2-11e0-9257-0019d11e5a41"
+	attributes['completion']="5"
+	attributes['uuid']="7b863bbe-f2a2-11e0-9257-0019d11e5a41"
 
-	idyoutube="HMPHMu7LVhQ"
-}
-jazzTune
+	attributes['idyoutube']="HMPHMu7LVhQ"
+%>
 
-%{
+<%doc>
+	DONE:
 	TODO:
+	- document what has been done.
+	- document the youtube performance.
 	- bring in the fake book epdf.
 	- validate that this is indeed the fakebook version.
 	- add the real book version.
@@ -34,10 +38,9 @@ jazzTune
 		g1:m7 g:m7 g:m7 c:7 g:m7 c:7 f f
 		f1:7 f:7 a:m7.5- d:7 g:m7 g:m7 bes2:m7 ees2:7 g2:m7 c2:7
 		f1 f a:m7.5- d:7 g:m7 c:7 f f
-%}
+</%doc>
 
-%% the fakebook version
-myChords=\chordmode {
+myChordsFake=\chordmode {
 	\startChords
 
 	\startSong
@@ -71,8 +74,7 @@ myChords=\chordmode {
 	\endChords
 }
 
-%% the fakebook version
-myVoice=\relative f' {
+myVoiceFake=\relative f' {
 	\time 4/4
 	\key f \major
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -95,8 +97,7 @@ myVoice=\relative f' {
 	g2 bes~ | bes e, | f2 r2 | r1 |
 }
 
-%% the fakebook version
-myLyrics=\lyricmode {
+myLyricsFake=\lyricmode {
 	Pack up all my care and woe,
 	Here I go,
 	Sing -- ing low,
@@ -111,5 +112,3 @@ myLyrics=\lyricmode {
 	I'll ar -- rive late to -- night,
 	black -- bird bye bye.
 }
-
-include(src/include/harmony_tune_lyrics.lyi)

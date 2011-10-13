@@ -1,4 +1,7 @@
-include(src/include/common.lyi)
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+%>
 \header {
 	default_header
 
@@ -16,9 +19,8 @@ include(src/include/common.lyi)
 	idyoutube="u6lXbfx1hHw"
 	lyricsurl="http://lyricsplayground.com/alpha/songs/i/illclosemyeyes.shtml"
 }
-jazzTune
 
-%{
+<%doc>
 	DONE:
 	- Checked chords against the real book.
 	- Checked notes against the real book.
@@ -27,7 +29,7 @@ jazzTune
 	TODO:
 	- problem with the words ( the phrase "Don't you know" did not fit in my version, fix the tune).
 	- get copyright for this tune (the real book didn't have one).
-%}
+</%doc>
 
 %% this is the real book version
 myChordsReal=\chordmode {
