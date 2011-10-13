@@ -11,11 +11,11 @@ include(src/include/common.lyi)
 	uuid="f39a06ec-6d98-11e0-b7b1-0019d11e5a41"
 }
 
-%{
+<%doc>
 	TODO:
 		LRRLRRLRRLRRLRLR (in 16'th notes over a single bar).
 		RLLRLLRLLRLLRLRL
-%}
+</%doc>
 
 \markup {
 Drumming patterns to train with pad over...

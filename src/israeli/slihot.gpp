@@ -17,7 +17,7 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-%{
+<%doc>
 	DONE:
 	- did the opening.
 	- did the lyrics for the first half of the song.
@@ -25,7 +25,7 @@ jazzTune
 	- check the rythm of the melody to see if it's ok.
 	- add the ending.
 	- check the singers word intonation to check if it's ok.
-%}
+</%doc>
 
 myChords=\chordmode {
 	\startChords

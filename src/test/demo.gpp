@@ -16,9 +16,9 @@ include(src/include/common.lyi)
 	uuid="9a39404e-a26f-11df-aa6e-0019d11e5a41"
 }
 
-%{
+<%doc>
 	TODO:
-%}
+</%doc>
 
 \score {
 <<

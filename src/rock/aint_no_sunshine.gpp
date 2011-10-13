@@ -12,10 +12,10 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-%{
+<%doc>
 	TODO:
 	- finish the tune and the chords...
-%}
+</%doc>
 
 include(predefined-guitar-fretboards.ly)
 

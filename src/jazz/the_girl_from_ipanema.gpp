@@ -1,4 +1,7 @@
-include(src/include/common.lyi)
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+%>
 \header {
 	default_header
 
@@ -17,11 +20,10 @@ include(src/include/common.lyi)
 
 	idyoutube="DmV0TcTNJ3o"
 }
-jazzTune
 
-%{
+<%doc>
 	TODO:
-%}
+</%doc>
 myChords=\chordmode {
 	\startChords
 
@@ -73,10 +75,10 @@ myVoice=\relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 
-	% intro
+	%% intro
 	r1 * 4 |
 
-	% A part
+	%% A part
 	\repeat volta 2 {
 		g'4. e8 e4 d8 g~ | g4 e8 e~ e e d g~ |
 		g4 e e d8 g~ | g g e e~ e e d f~ |
@@ -89,7 +91,7 @@ myVoice=\relative c' {
 		}
 	}
 
-	% B part
+	%% B part
 	f1~ | \times 2/3 {f4 ges f} \times 2/3 {ees4 f ees} |
 	des4. ees8~ ees2~ | ees2. r8 gis~ |
 	gis1~ | \times 2/3 {gis4 a gis} \times 2/3 {fis gis fis} |
@@ -99,7 +101,7 @@ myVoice=\relative c' {
 	\times 2/3 {c c, d} \times 2/3 {e f g} | gis2. a4 |
 	\times 2/3 {bes bes, c} \times 2/3 {d e f} | fis2. r4 |
 
-	% back to A part
+	%% back to A part
 	g4. e8 e4 d8 g8~ | g4 e8 e~ e e d g~ |
 	g4 e e d8 g~ | g g e e~ e e d a'~ |
 	a4. f8 f f d c'~ | c4. e,8 \times 2/3 {e4 e d} |

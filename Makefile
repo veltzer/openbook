@@ -41,7 +41,7 @@ SOURCE_DIR:=src
 OUT_DIR:=out
 # wrappers
 LILYPOND_WRAPPER:=scripts/lilypond_wrapper.pl
-M4_WRAPPER:=scripts/m4_wrapper.pl
+MAKO_WRAPPER:=scripts/mako_wrapper.py
 LYD_WRAPPER:=scripts/lyd.pl
 GPPD_WRAPPER:=scripts/gppd.pl
 MIDI2WAV_WRAPPER:=scripts/midi2wav.pl
@@ -69,7 +69,7 @@ ifeq ($(DO_MAKEDEPS),1)
 endif
 ifeq ($(DO_WRAPDEPS),1)
 	LILYPOND_WRAPPER_DEP:=$(LILYPOND_WRAPPER)
-	M4_WRAPPER_DEP:=$(M4_WRAPPER)
+	MAKO_WRAPPER_DEP:=$(MAKO_WRAPPER)
 	LYD_WRAPPER_DEP:=$(LYD_WRAPPER)
 	GPPD_WRAPPER_DEP:=$(GPPD_WRAPPER)
 	MIDI2WAV_WRAPPER_DEP:=$(MIDI2WAV_WRAPPER)
@@ -78,7 +78,7 @@ ifeq ($(DO_WRAPDEPS),1)
 	MAKE_BOOK_WRAPPER_DEP:=$(MAKE_BOOK_WRAPPER)
 else
 	LILYPOND_WRAPPER_DEP:=
-	M4_WRAPPER_DEP:=
+	MAKO_WRAPPER_DEP:=
 	LYD_WRAPPER_DEP:=
 	GPPD_WRAPPER_DEP:=
 	MIDI2WAV_WRAPPER_DEP:=
@@ -281,10 +281,10 @@ $(FILES_STAMP): %.stamp: %.ly $(ALL_DEP) $(LILYPOND_WRAPPER_DEP)
 	$(Q)-mkdir -p $(dir $@)
 	$(Q)$(LILYPOND_WRAPPER) $< $@ $(LYFLAGS) -o $(dir $@)$(basename $(notdir $@)) $<
 
-$(FILES_LY): $(OUT_DIR)/%.ly: %.gpp $(ALL_DEP) $(M4_WRAPPER_DEP)
+$(FILES_LY): $(OUT_DIR)/%.ly: %.gpp $(ALL_DEP) $(MAKO_WRAPPER_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
-	$(Q)$(M4_WRAPPER) $< $@
+	$(Q)$(MAKO_WRAPPER) $< $@
 $(FILES_GPPD): $(OUT_DIR)/%.gpp.d: %.gpp $(ALL_DEP) $(GPPD_WRAPPER_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)

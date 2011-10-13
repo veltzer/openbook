@@ -1,4 +1,7 @@
-include(src/include/common.lyi)
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+%>
 \header {
 	default_header
 
@@ -19,12 +22,10 @@ include(src/include/common.lyi)
 	idyoutube="TdLm9qRRdh4"
 	lyricsurl="http://www.sing365.com/music/lyric.nsf/They-All-Laughed-lyrics-Ella-Fitzgerald/2123DA2C32C02AF848256AAB000AB847"
 }
-jazzTune
 
-%{
+<%doc>
 	TODO:
-%}
-
+</%doc>
 
 myChords=\chordmode {
 	\startChords
@@ -75,19 +76,19 @@ myVoice=\relative c' {
 
 	\repeat volta 2 {
 
-	% Bar 1
+	%% Bar 1
 	r8 d e4 g a | b8 b a g a b4. | b8 b a g a b4 d,8~ | d1 |
 	r8 d e4 g a | b8 b a g a b4 g8~ | g1~ | g2. r4 |
 
-	% Bar 9
+	%% Bar 9
 	r8 d e4 g a | b8 b a g a b4. | d8 d cis b cis d4 fis,8~ | fis1 |
 	b4 a8 gis a b4. | b8 c a gis a b4. | a4 b c b | a d d d |
 
-	% Bar 17
+	%% Bar 17
 	d2~ d8 b4 g8 | a2~ a8 b c cis | d4 e d b | c2. b4 |
 	e2~ e8 cis4 a8 | b2~ b8 a4 b8 | c4 e e, g | a1 |
 
-	% Bar 25
+	%% Bar 25
 	r8 d, e4 g a | b8 b a g a b4. | c8 b4 a8 b4 c | b2. a4 |
 	d4 d d2 | e8 e4 e8 b4 b |
 

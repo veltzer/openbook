@@ -16,7 +16,7 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-%{
+<%doc>
 	NOTES:
 		- this tune is an example of how to create different outputs for midi and
 		printing. This is required here since I want the chord names to appear in the
@@ -33,7 +33,7 @@ jazzTune
 			(how do I do this in lilypond ?).
 		- too much space between the systems on the page.
 		- add a macro that says "Music by" and then the composer and the same for the lyrics to be preceeded by "Text by".
-%}
+</%doc>
 
 myChords=\chordmode {
 	\startChords

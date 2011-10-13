@@ -1,4 +1,7 @@
-include(src/include/common.lyi)
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+%>
 \header {
 	default_header
 
@@ -15,14 +18,15 @@ include(src/include/common.lyi)
 
 	idyoutube="aCO1Gd0jRto"
 }
-jazzTune
 
-%{
+<%doc>
+	DONE:
 	TODO:
-%}
+	- fill in whats been done for this tune.
+</%doc>
 
 %% this set of chords is taken from the fake book
-myChords=\chordmode {
+myChordsFake=\chordmode {
 	\startChords
 
 	\startSong
@@ -51,7 +55,8 @@ myChords=\chordmode {
 
 	\endChords
 }
-myVoice=\relative c' {
+%% this voice is taken from the fakebook
+myVoiceFake=\relative c' {
 	\time 4/4
 	\key c \major
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -74,7 +79,8 @@ myVoice=\relative c' {
 	e2. c8 d | e4 c4 a4 f4 | c'1~ | c2. r4 |
 
 }
-myLyrics=\lyricmode {
+%% these lyrics are taken from the fake book
+myLyricsFake=\lyricmode {
 	My Ro -- mance does -- n't have to have a moon in the sky,
 	My Ro -- mance does -- n't need a blue la -- goon stand -- ing by;
 	No month of May, No twin -- kling stars,

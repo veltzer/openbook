@@ -13,10 +13,10 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-%{
-	Schirmer's library of musical classics"
+<%doc>
+	"Schirmer's library of musical classics"
 	An accompaniment for Second Piano by Edvard Grieg may be found in Schirmer's Library, Vol. 1440.
-%}
+</%doc>
 
 tune={
 	\key c \major

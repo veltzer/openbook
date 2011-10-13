@@ -1,5 +1,5 @@
-% end verbatim - this comment is a hack to prevent texinfo.tex
-% from choking on non-European UTF-8 subsets
+%% end verbatim - this comment is a hack to prevent texinfo.tex
+%% from choking on non-European UTF-8 subsets
 
 %% this version tag will keep me compiling only on this version of lilypond.
 %%=====================================================================
@@ -11,42 +11,31 @@ lilyver=#(lilypond-version)
 
 %% default values for headers
 %%=======================================================================
-define(subsubtitle_val,"Built by Mark Veltzer <mark.veltzer@gmail.com> at esyscmd(date)")
-define(subsubtitle_val_heb,"נבנה על ידי מרק ולצר mark.veltzer@gmail.com ב esyscmd(date)")
-%%define(subsubtitle_val,\date)
-define(enteredby_val,"Mark Veltzer")
-define(enteredby_val_heb,"מרק ולצר")
-define(maintainerEmail_val,"mark.veltzer@gmail.com")
-define(maintainerEmail_val_heb,"mark.veltzer@gmail.com")
-define(footer_val,"this is the footer")
-define(footer_val_heb,"זה הטקסט התחתון")
-define(copyright_val,"-- help me fill it out copyright --")
-define(copyright_val_heb,"-- עיזרו לי למלא זכויות יוצרים --")
-define(copyright_val_study,"-- no copyright notice for study materials --")
-define(completion_val,"0")
-define(tagline_val,`\markup {\small {Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at \date, Engraved by lilypond \lilyver}}')
-define(tagline_val_heb,`\markup {\small {Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at \date, Engraved by lilypond \lilyver}}')
-define(default_header,
-	enteredby=enteredby_val
-	maintainerEmail=maintainerEmail_val
-	footer=footer_val
-	copyright=copyright_val
-	completion=completion_val
-	tagline=`tagline_val'
-	style="not filled"
-	poet="unkown"
-)
-define(default_header_heb,
-	enteredby=enteredby_val
-	maintainerEmail=maintainerEmail_val_heb
-	footer=footer_val_heb
-	copyright=copyright_val_heb
-	completion=completion_val
-	tagline=`tagline_val_heb'
-	style="ישראלי"
-	poet="לא מולא"
-)
-define(unused,
+subsubtitleval=#"Built by Mark Veltzer <mark.veltzer@gmail.com> at esyscmd(date)"
+subsubtitlevalheb=#"נבנה על ידי מרק ולצר mark.veltzer@gmail.com ב esyscmd(date)"
+%%subsubtitle_val=\date
+enteredbyval=#"Mark Veltzer"
+enteredbyvalheb=#"מרק ולצר"
+maintainerEmailval=#"mark.veltzer@gmail.com"
+maintainerEmailvalheb=#"mark.veltzer@gmail.com"
+footerval=#"this is the footer"
+footervalheb=#"זה הטקסט התחתון"
+copyrightval=#"-- help me fill it out copyright --"
+copyrightvalheb=#"-- עיזרו לי למלא זכויות יוצרים --"
+copyrightvalstudy=#"-- no copyright notice for study materials --"
+completionval=#"0"
+taglineval=\markup {\small {Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at \date, Engraved by lilypond \lilyver}}
+taglinevalheb=\markup {\small {Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at \date, Engraved by lilypond \lilyver}}
+%%define(default_header_heb,
+%%	enteredby=enteredbyval
+%%	maintainerEmail=maintainerEmailvalheb
+%%	footer=footervalheb
+%%	copyright=copyrightvalheb
+%%	completion=completionval
+%%	tagline=taglinevalheb
+%%	style="ישראלי"
+%%	poet="לא מולא"
+%%)
 %% setting instruments for midi generation (bah - this doesn't work...)
 %%=====================================================================
 %%\set ChordNames.midiInstrument = #"acoustic grand"
@@ -54,16 +43,12 @@ define(unused,
 %%\set PianoStaff.instrumentName = #"acoustic grand"
 %% do not show chords unless they change...
 %%\set chordChanges = ##t
-)
 
-define(unused,
 %% number of staffs per page (this does not work because of my breaks)
 %%\paper {
 %%	system-count = #7
 %%}
-)
 
-define(jazzVisual,
 \paper {
 	%% reduce spaces between systems and the bottom (taken from the lilypond
 	%% documentation and found the relevant variable)
@@ -80,22 +65,22 @@ define(jazzVisual,
 	%% make lilypond increase the distance of the footer from the bottom of the page
 	%% it seems that if you don't do something like this you're going to have
 	%% a real problem seeing the footer in postscript printing....
-	%bottom-margin = 2.5\cm
+	%%bottom-margin = 2.5\cm
 
 }
 \layout {
 	%% don't have the fist line indented
 	indent = 0.0 \cm
 	%% don't know what this is (taken from Laurent Martelli...)
-	%textheight = 1.5\cm
+	%%textheight = 1.5\cm
 
 	\context {
 		\Score
 		\override LyricText #'font-family = #'typewriter
 		\override LyricText #'font-size = #'-2
-		% set the style of the chords to Jazz - I don't see this making any effect
-		%\override ChordName #'style = #'jazz
-		%\override ChordName #'word-space = #2
+		%% set the style of the chords to Jazz - I don't see this making any effect
+		%%\override ChordName #'style = #'jazz
+		%%\override ChordName #'word-space = #2
 		\override ChordName #'font-series = #'bold
 		\override ChordName #'font-family = #'roman
 		\override ChordName #'font-size = #-1
@@ -111,11 +96,6 @@ define(jazzVisual,
 %%#(set-default-paper-size "a4")
 %%)
 
-% this is a macro that * really * breaks lines. You don't really need this since a regular \break will work
-% AS LONG AS you have the '\remove Bar_engraver' enabled...
-define(hardBreak,\bar "" \break)
-
-define(generalMacros,
 %% some macros to be reused all over
 %% =====================================================================
 myBreak=\break
@@ -127,11 +107,18 @@ endBar=\bar "|."
 startRepeat=\bar "|:"
 endRepeat=\bar ":|"
 startTune={}
-endTune=\bar "|.")
+endTune=\bar "|."
+myFakeEndLine={}
 
-define(jazzParts,
+%% this is a macro that * really * breaks lines. You don't really need this since a regular \break will work
+%% AS LONG AS you have the '\remove Bar_engraver' enabled...
+hardBreak={ \bar "" \break }
+%% a macro to make vertical space
+verticalSpace=\markup { \null }
+
 %% some macros for marking parts of jazz tunes
 %% =====================================================================
+%% if attributes['jazzTune']:
 startSong={}
 endSong=\bar "|."
 startPart={}
@@ -140,19 +127,74 @@ startIntro=\mark "Intro"
 endIntro={}
 %% this causes chords that do not change to disappear...
 startChords=\set chordChanges = ##t
-endChords={})
+endChords={}
+%% endif
 
-define(jazzTune,
-generalMacros
-jazzParts
-jazzVisual)
+%% this causes the variables to be defined...
+${self.body()}
 
-define(verticalSpace,
-\markup {
-	\null
+\header {
+	enteredby=\enteredbyval
+	maintainerEmail=\maintainerEmailval
+	footer=\footerval
+	copyright=\copyrightval
+	completion=\completionval
+	tagline=\taglineval
+	style="not filled"
+	poet="unkown"
+
+	title="${attributes['title']}"
+	subtitle="${attributes['subtitle']}"
+	composer="${attributes['composer']}"
+	style="${attributes['style']}"
+	piece="${attributes['piece']}"
+	poet="${attributes['poet']}"
+	copyright="${attributes['copyright']}"
+	copyrightextra="${attributes['copyrightextra']}"
+
+	completion="${attributes['completion']}"
+	uuid="${attributes['uuid']}"
+
+	structure="${attributes['structure']}"
+
+	idyoutube="${attributes['idyoutube']}"
+
+	lyricsurl="${attributes['lyricsurl']}"
+}
+
+% if attributes['type']=='harmony_tune_lyrics':
+%% score for printing
+\score {
+	<<
+		\new ChordNames="Chords"
+			${self.myChords()}
+		\new Staff="Melody" {
+			\new Voice="myvoice"
+			${self.myVoice()}
+		}
+		\new Lyrics="Lyrics" \lyricsto "myvoice"
+			${self.myLyrics()}
+	>>
+	\layout {
 	}
-)
-
-% this is a macro that * really * breaks lines. You don't really need this since a regular \break will work
-% AS LONG AS you have the '\remove Bar_engraver' enabled...
-define(hardBreak,\bar "" \break)
+}
+%% score for midi
+\score {
+	\unfoldRepeats
+	<<
+		%% the ="Chords" is the name of the channel that will be in midi
+		\new ChordNames="Chords"
+			${self.myChords()}
+		%% the ="Melody" is the name of the channel that will be in midi
+		\new Staff="Melody" {
+			\new Voice="myvoice"
+			${self.myVoice()}
+		}
+		%% the ="Lyrics" is the name of the channel that will be in midi
+		\new Lyrics="Lyrics" \lyricsto "myvoice"
+			${self.myLyrics()}
+	>>
+	\midi {
+	}
+}
+% endif

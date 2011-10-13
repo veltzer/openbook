@@ -1,4 +1,7 @@
-include(src/include/common.lyi)
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+%>
 \header {
 	default_header
 
@@ -19,9 +22,8 @@ include(src/include/common.lyi)
 	%% the original Sunday at the Village version (take 2)...
 	idyoutube="Aib_RL_x7PA"
 }
-jazzTune
 
-%{
+<%doc>
 	DONE:
 	- added the chords.
 	- added the notes.
@@ -33,7 +35,7 @@ jazzTune
 	TODO:
 	- do the rythm markings on the second bar of the real book version.
 	- enter the new real book version.
-%}
+</%doc>
 
 %% this version of the chords is from the real book...
 myChords=\chordmode {
@@ -72,14 +74,14 @@ myVoice=\relative c'' {
 	\time 4/4
 	\key c \major
 
-	% part "A"
+	%% part "A"
 	\repeat volta 2 {
 		r8 g4 c8 \times 2/3 { b c a } \times 2/3 { r a e } | g1 | r8 f g f~ f ees c ees~ | ees2 r8 c bes c~ | c1 |
 	}
-	% part "B"
+	%% part "B"
 	g'4 a8 b~ b2 | r8 a4. b4 c8 d~ | d2 r8 c g bes~ | bes2. a4 | c2 r8 bes f aes~ |
 	aes2. g4 | bes2 r8 aes16 bes aes8 des, | ees'2 r8 des16 ees des8 aes | ges'1~ | ges |
-	% part "A"
+	%% part "A"
 	r8 g,4 c8 \times 2/3 { b c a } \times 2/3 { r a e } | g1 | r8 f g f~ f ees c ees~ | ees2 r8 c bes c~ | c1 |
 }
 

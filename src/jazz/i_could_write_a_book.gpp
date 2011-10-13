@@ -1,25 +1,27 @@
-include(src/include/common.lyi)
-\header {
-	default_header
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+	attributes['type']="harmony_tune_lyricsmore"
 
-	title="I Could Write A Book"
-	subtitle="From 'Pal Joey'"
-	composer="Richard Rodgers"
-	poet="Lorenz Hart"
-	style="Jazz"
-	piece="Modeartely Slow"
-	copyright="1940, Chappel & Co."
+	attributes['title']="I Could Write A Book"
+	attributes['subtitle']="From 'Pal Joey'"
+	attributes['composer']="Richard Rodgers"
+	attributes['poet']="Lorenz Hart"
+	attributes['style']="Jazz"
+	attributes['piece']="Modeartely Slow"
+	attributes['copyright']="1940, Chappel & Co."
 
-	completion="5"
-	uuid="e00ddbf8-a26e-11df-92da-0019d11e5a41"
+	attributes['completion']="5"
+	attributes['uuid']="e00ddbf8-a26e-11df-92da-0019d11e5a41"
 
-	idyoutube="_DH46QyK2cw"
-}
-jazzTune
+	attributes['idyoutube']="_DH46QyK2cw"
+%>
 
-%{
+<%doc>
+	DONE:
 	TODO:
-%}
+	- document the youtube performance.
+</%doc>
 
 myChords=\chordmode {
 	\startChords
@@ -92,5 +94,3 @@ myLyricsmore=\lyricmode {
 	is just to tell them that I love you a -- lot,
 	then the world dis -- cov -- ers as
 }
-
-include(src/include/harmony_tune_lyricsmore.lyi)

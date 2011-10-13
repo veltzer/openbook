@@ -18,7 +18,7 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-%{
+<%doc>
 	remarks:
 	\key d \major
 	Some people play "a | g | d | d |" at the chorus but this is wrong if you bother
@@ -37,9 +37,8 @@ jazzTune
 		chorus 4
 		ending (2.5 choruses with a solo keyboard and a long D at the end)
 
-%{
 	TODO:
-%}
+</%doc>
 
 include(predefined-guitar-fretboards.ly)
 
@@ -69,11 +68,11 @@ myFrets=\new FretBoards {
 	\layout {}
 }
 
-% Lyrics
+%% Lyrics
 verticalSpace
 verticalSpace
 \markup {
-	\small { % \teeny \tiny \small \normalsize \large \huge
+	\small { %% \teeny \tiny \small \normalsize \large \huge
 		\fill-line {
 			\column {
 				"He had white Horses"

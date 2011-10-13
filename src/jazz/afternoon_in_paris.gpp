@@ -1,33 +1,31 @@
-include(src/include/common.lyi)
-\header {
-	default_header
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+	attributes['type']="harmony_tune"
+	attributes['render']="Fake"
 
-	title="Afternoon in Paris"
-	composer="John Lewis"
-	style="Jazz"
-	piece="Moderate Swing"
-	poet="None"
-	copyright="1955 and Renewal of Copyright 1983 by MJQ Music, Inc."
+	attributes['title']="Afternoon in Paris"
+	attributes['composer']="John Lewis"
+	attributes['style']="Jazz"
+	attributes['piece']="Moderate Swing"
+	attributes['poet']="None"
+	attributes['copyright']="1955 and Renewal of Copyright 1983 by MJQ Music, Inc."
+	attributes['structure']="AABA"
+	attributes['completion']="5"
+	attributes['uuid']="8f0a1ea6-a26e-11df-8edc-0019d11e5a41"
+	attributes['idyoutube']="o3KtgcvYkig"
+	attributes['idyoutube']="FFj03f2Zr5Y"
+%>
 
-	structure="AABA"
-
-	completion="5"
-	uuid="8f0a1ea6-a26e-11df-8edc-0019d11e5a41"
-
-	idyoutube="o3KtgcvYkig"
-	idyoutube="FFj03f2Zr5Y"
-}
-jazzTune
-
-%{
+<%doc>
 	TODO:
 	- the last two chords (d:m7 and g:7) should be in parenthesis since they are part of the turn around.
 	I still don't know how to do that.
 	- add emphasis notes in the tune and document how to do that.
-%}
+</%doc>
 
 %% these are the chords from the fake book
-myChords=\chordmode {
+myChordsFake=\chordmode {
 	\startChords
 
 	\startSong
@@ -64,7 +62,7 @@ myChords=\chordmode {
 }
 
 %% this is the melody from the real book
-myVoice=\relative c {
+myVoiceFake=\relative c {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\key c \major
@@ -160,5 +158,3 @@ myVoiceReal=\relative c {
 	r c4 aes8 g bes aes g~ | g2~ g8 bes aes g~ |
 	g1~ | g1 |
 }
-
-include(src/include/harmony_tune.lyi)

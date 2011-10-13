@@ -1,4 +1,7 @@
-include(src/include/common.lyi)
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+%>
 \header {
 	default_header
 
@@ -14,13 +17,12 @@ include(src/include/common.lyi)
 
 	idyoutube="XqECFy_qzkM"
 }
-jazzTune
 
-%{
+<%doc>
 	TODO:
 	- do the __ at the end of sentences thing.
 	- add a youtube performance.
-%}
+</%doc>
 
 %% this set of chords is from Amit Golan
 myChordsAmit=\chordmode {

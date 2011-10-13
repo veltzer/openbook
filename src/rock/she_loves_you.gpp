@@ -15,12 +15,12 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-%{
+<%doc>
 	TODO:
 	- make the headers for this song comply with the jazz headers.
 	- add performances from youtube.
 	- add lyrics and melody.
-%}
+</%doc>
 
 %% this is taken from "The Beatles Complete" book page 175
 myChords=\chordmode {

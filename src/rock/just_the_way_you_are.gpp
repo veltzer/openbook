@@ -19,12 +19,12 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-%{
+<%doc>
 	TODO:
 	- first line ender with extra lines - why ?!?
 	- bring back the guitar fretboards after I manage to put them at the top of everything
 		(currently they reside above the lyrics which is weird).
-%}
+</%doc>
 
 include(predefined-guitar-fretboards.ly)
 
@@ -124,8 +124,8 @@ myLyrics=\lyricmode {
 			\new Staff="lower" \myLowerIntro
 		>>
 		<<
-			%\new ChordNames="Chords" \myChords
-			%\new Frets="Frets" \myFrets
+			%%\new ChordNames="Chords" \myChords
+			%%\new Frets="Frets" \myFrets
 			\new Voice = "mymelody" { \autoBeamOff \myMelody }
 			\new Lyrics="Lyrics" \lyricsto "mymelody" \myLyrics
 			\new PianoStaff="Melody" <<

@@ -11,9 +11,9 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-%{
+<%doc>
 	TODO:
-%}
+</%doc>
 
 myChords=\chordmode {
 	\startChords

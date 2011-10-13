@@ -1,4 +1,7 @@
-include(src/include/common.lyi)
+<%inherit file="/src/include/common.lyi"/>
+<%
+	attributes['jazzTune']=True
+%>
 \header {
 	default_header
 
@@ -21,9 +24,8 @@ include(src/include/common.lyi)
 
 	structure="AB"
 }
-jazzTune
 
-%{
+<%doc>
 	DONE:
 	- put in the real book chords.
 	- put in the real book notes.
@@ -41,7 +43,7 @@ jazzTune
 	TODO:
 	- add the new real book version (already have it in the epdfs).
 	- how do I put the last two chords in the real book version into parenthesis?
-%}
+</%doc>
 
 %% this version of the chords is from the real book...
 myChords=\chordmode {
@@ -79,16 +81,16 @@ myVoice=\relative c'' {
 	\time 4/4
 	\key g \major
 
-	% partial
+	%% partial
 	\partial 4 b4 |
 
-	% part "A"
+	%% part "A"
 	b1~ | b2 \times 2/3 { a4 b a } | ees1~ | ees2 a |
 	a1~ | a4 a \times 2/3 { g a g } | des1~ | des2. g4 |
 	g4. e8 g4. e8 | fis2. fis4 | fis4. d8 fis4. d8 | e4 fis g b |
 	e2 b~ | b4 e, \times 2/3 { e fis g } | b2 a~ | a b |
 
-	% part "B"
+	%% part "B"
 	b1~ | b2 \times 2/3 { a4 b a } | ees1~ | ees2 a |
 	a1~ | a4 a \times 2/3 { g a g } | des1~ | des2. g4 |
 	g4. e8 g4. e8 | fis2. a4 | a4. fis8 a4. fis8 | g4 a b d |
@@ -97,12 +99,12 @@ myVoice=\relative c'' {
 
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 myLyrics=\lyricmode {
-	% part "A"
+	%% part "A"
 	Just friends, __ lov -- ers no more __
 	Just friends, __ but not like be -- fore. __
 	To think of what we've been and not to kiss a -- gain seems like
 	pre -- tend -- ing __ it is -- n't the end -- ing. __
-	% part "B"
+	%% part "B"
 	Two friends __ drift -- ing a -- part, __
 	Two friends __ but one brok -- en heart. __
 	We loved, we laughed, we cried and sud -- den -- ly love died.

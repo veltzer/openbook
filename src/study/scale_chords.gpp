@@ -13,9 +13,9 @@ include(src/include/common.lyi)
 	uuid="ffbec224-36a6-11e0-aecb-0019d11e5a41"
 }
 
-%{
+<%doc>
 	TODO:
-%}
+</%doc>
 
 myVoice=\relative c' {
 	\time 4/4

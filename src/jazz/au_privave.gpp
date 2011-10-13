@@ -1,34 +1,38 @@
-include(src/include/common.lyi)
-\header {
-	default_header
+<%inherit file="/src/include/common.lyi"/>
 
-	title="Au Privave"
-	subtitle=""
-	composer="Charlie Parker"
-	style="Jazz"
-	piece="Upbeat Swing"
-	poet=""
-	copyright="1956, Atlantic Music Corp."
-	%% 1978, Atlantic Music Corp.
+<%
+	attributes['jazzTune']=True
+	attributes['type']="harmony_tune"
+	attributes['render']="Aebersold"
+	attributes['title']="Au Privave"
+	attributes['subtitle']=""
+	attributes['composer']="Charlie Parker"
+	attributes['style']="Jazz"
+	attributes['piece']="Upbeat Swing"
+	attributes['poet']=""
+	attributes['copyright']="1956, Atlantic Music Corp."
+	attributes['copyrightextra']="1978, Atlantic Music Corp."
 
-	completion="5"
-	uuid="e62b60ec-eb9b-11e0-aab7-0019d11e5a41"
+	attributes['completion']="5"
+	attributes['uuid']="e62b60ec-eb9b-11e0-aab7-0019d11e5a41"
 
-	idyoutube="HUNgcPSYeyM"
-	idyoutube="dvdQYSWOobc"
+	attributes['idyoutube']="HUNgcPSYeyM"
+	attributes['idyoutube']="dvdQYSWOobc"
 
-	structure="Blues"
+	attributes['structure']="Blues"
 
-	remark="Taken from the Charlie Parker Omnibook by Jamey Aebersold, moved to scale f major which is better for this tune. Why the hell did aebersold put it in C?"
-}
-jazzTune
+	attributes['remark']="Taken from the Charlie Parker Omnibook by Jamey Aebersold, moved to scale f major which is better for this tune. Why the hell did aebersold put it in C?"
+%>
 
-%{
+<%doc>
+	DONE:
 	TODO:
-%}
+	- mark whats been done to this tune.
+	- document the you tube performances.
+</%doc>
 
-%% this version of the chords is from the real book...
-myChords=\chordmode {
+%% this version of the chords is from the aebersold book...
+myChordsAebersold=\chordmode {
 	\startChords
 
 	\startSong
@@ -74,7 +78,8 @@ myChords=\chordmode {
 	\endChords
 }
 
-myVoice=\relative c' {
+%% this version of the melody is taken from the Aebersold book
+myVoiceAebersold=\relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Prestissimo" 4 = 220
 	\time 4/4
@@ -109,5 +114,3 @@ myVoice=\relative c' {
 	%% ending
 	g8 f g2. |
 }
-
-include(src/include/harmony_tune.lyi)

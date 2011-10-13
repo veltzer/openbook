@@ -11,9 +11,9 @@ include(src/include/common.lyi)
 	uuid="6d469874-6e9e-11e0-b6e5-0019d11e5a41"
 }
 
-%{
+<%doc>
 	TODO:
-%}
+</%doc>
 
 \markuplines {
 	\wordwrap-lines { \italic {
@@ -31,8 +31,8 @@ Same number of strokes in each hand.
 <<
 	\new DrumStaff \with {
 		\remove Time_signature_engraver
-		% you don't really need this (have yet to see this do anything useful...)
-		%\remove Forbid_line_break_engraver
+		%% you don't really need this (have yet to see this do anything useful...)
+		%%\remove Forbid_line_break_engraver
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
 		\override StaffSymbol #'line-count = #1
@@ -78,8 +78,8 @@ Same number of strokes in each hand.
 <<
 	\new DrumStaff \with {
 		\remove Time_signature_engraver
-		% you don't really need this (have yet to see this do anything useful...)
-		%\remove Forbid_line_break_engraver
+		%% you don't really need this (have yet to see this do anything useful...)
+		%%\remove Forbid_line_break_engraver
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
 		\override StaffSymbol #'line-count = #1
@@ -125,8 +125,8 @@ Different number of strokes in each hand.
 <<
 	\new DrumStaff \with {
 		\remove Time_signature_engraver
-		% you don't really need this (have yet to see this do anything useful...)
-		%\remove Forbid_line_break_engraver
+		%% you don't really need this (have yet to see this do anything useful...)
+		%%\remove Forbid_line_break_engraver
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
 		\override StaffSymbol #'line-count = #1
@@ -165,8 +165,8 @@ Different number of strokes in each hand.
 <<
 	\new DrumStaff \with {
 		\remove Time_signature_engraver
-		% you don't really need this (have yet to see this do anything useful...)
-		%\remove Forbid_line_break_engraver
+		%% you don't really need this (have yet to see this do anything useful...)
+		%%\remove Forbid_line_break_engraver
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
 		\override StaffSymbol #'line-count = #1
@@ -209,8 +209,8 @@ Starting with the right hand.
 <<
 	\new DrumStaff \with {
 		\remove Time_signature_engraver
-		% you don't really need this (have yet to see this do anything useful...)
-		%\remove Forbid_line_break_engraver
+		%% you don't really need this (have yet to see this do anything useful...)
+		%%\remove Forbid_line_break_engraver
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
 		\override StaffSymbol #'line-count = #1
@@ -247,8 +247,8 @@ Starting with the left hand.
 <<
 	\new DrumStaff \with {
 		\remove Time_signature_engraver
-		% you don't really need this (have yet to see this do anything useful...)
-		%\remove Forbid_line_break_engraver
+		%% you don't really need this (have yet to see this do anything useful...)
+		%%\remove Forbid_line_break_engraver
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
 		\override StaffSymbol #'line-count = #1

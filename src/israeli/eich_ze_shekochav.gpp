@@ -16,14 +16,14 @@ include(src/include/common.lyi)
 }
 jazzTune
 
-%{
+<%doc>
 	This version is from the Mati Caspi book of "Brit Olam"
 
 	TODO:
 	- add nikud? Is that possible ?
 	- add the epdf from a scan.
 	- adjust the lyrics.
-%}
+</%doc>
 
 myChords=\chordmode {
 	\startChords
