@@ -1,6 +1,6 @@
-include(src/include/common.lyi)
-\header {
-	default_header_heb
+<%inherit file="/src/include/common.makoi"/>
+<%
+	attributes['jazzTune']=True
 
 	title="איך זה שכוכב"
 	composer="מתי כספי"
@@ -13,12 +13,10 @@ include(src/include/common.lyi)
 	idyoutube="1GI5Vst5a-o"
 
 	uuid="d936b39a-971e-11e0-9c44-0019d11e5a41"
-}
-jazzTune
+%>
 
 <%doc>
-	This version is from the Mati Caspi book of "Brit Olam"
-
+	DONE:
 	TODO:
 	- add nikud? Is that possible ?
 	- add the epdf from a scan.

@@ -1,6 +1,6 @@
-include(src/include/common.lyi)
-\header {
-	default_header_heb
+<%inherit file="/src/include/common.makoi"/>
+<%
+	attributes['jazzTune']=True
 
 	title="לא יכולתי לעשות כלום"
 	composer="אילן וירצברג"
@@ -13,8 +13,7 @@ include(src/include/common.lyi)
 
 	idyoutube="XJYKf0sNDoE"
 	lyricsurl="http://www.mp3music.co.il/tabs/10728.html"
-}
-jazzTune
+%>
 
 include(predefined-guitar-fretboards.ly)
 

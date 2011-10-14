@@ -1,19 +1,28 @@
-include(src/include/common.lyi)
-\header {
-	default_header_heb
+<%inherit file="/src/include/common.makoi"/>
+<%
+	attributes['jazzTune']=True
+	attributes['type']="harmony_tune_lyrics"
+	attributes['render']="My"
 
-	title="צרות טובות"
-	composer="שלום חנוך"
-	singer="שלום חנוך"
-	poet="שמרית אור"
-	piece="בלדה מתונה"
+	attributes['title']=u"צרות טובות"
+	attributes['composer']=u"שלום חנוך"
+	attributes['singer']=u"שלום חנוך"
+	attributes['poet']=u"שמרית אור"
+	attributes['piece']=u"בלדה מתונה"
 
-	completion="0"
-	uuid="5a9b270e-a26f-11df-a792-0019d11e5a41"
-}
-jazzTune
+	attributes['completion']="0"
+	attributes['uuid']="5a9b270e-a26f-11df-a792-0019d11e5a41"
+%>
 
-myChords=\chordmode {
+<%doc>
+	DONE:
+	TODO:
+	- add you tube performances.
+	- document what has been done to this tune.
+</%doc>
+
+<%def name="myChordsMy()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -35,7 +44,16 @@ myChords=\chordmode {
 
 	\endChords
 }
-myLyrics=\lyricmode {
+</%def>
+
+<%def name="myVoiceMy()">
+\relative c {
+	a b c d e f
+}
+</%def>
+
+<%def name="myLyricsMy()">
+\lyricmode {
 	בעירי היו שתי עלמות
 	שתי עלמות יפות ותאומות.
 	הן היו תמיד כל כך דומות,
@@ -69,5 +87,4 @@ myLyrics=\lyricmode {
 	שתיים הן ולא יודעות
 	זו על זו וזו על זו..
 }
-
-include(src/include/harmony_tune_lyrics.lyi)
+</%def>

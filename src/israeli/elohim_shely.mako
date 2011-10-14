@@ -1,6 +1,6 @@
-include(src/include/common.lyi)
-\header {
-	default_header_heb
+<%inherit file="/src/include/common.makoi"/>
+<%
+	attributes['jazzTune']=True
 
 	title="אלוהים שלי"
 	composer="עוזי חיטמן"
@@ -14,8 +14,7 @@ include(src/include/common.lyi)
 	idyoutube="fTZb0abU4Rw"
 
 	uuid="467b2af8-a26f-11df-b03d-0019d11e5a41"
-}
-jazzTune
+%>
 
 <%doc>
 	TODO:

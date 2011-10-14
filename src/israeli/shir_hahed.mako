@@ -1,22 +1,24 @@
-include(src/include/common.lyi)
-\header {
-	default_header_heb
+<%inherit file="/src/include/common.makoi"/>
+<%
+	attributes['jazzTune']=True
+	attributes['type']="harmony_tune_lyrics"
+	attributes['render']="My"
 
-	title="שיר ההד"
-	composer="יוחנן זראי"
-	singer="אריק לביא"
-	piece="בלדה איטית"
-	poet="יעקב שבתאי"
+	attributes['title']=u"שיר ההד"
+	attributes['composer']=u"יוחנן זראי"
+	attributes['singer']=u"אריק לביא"
+	attributes['piece']=u"בלדה איטית"
+	attributes['poet']=u"יעקב שבתאי"
 
-	completion="4"
+	attributes['completion']="4"
 
-	idyoutube="IUZQgbhivqw"
+	attributes['idyoutube']="IUZQgbhivqw"
 
-	uuid="56513346-a26f-11df-b591-0019d11e5a41"
-}
-jazzTune
+	attributes['uuid']="56513346-a26f-11df-b591-0019d11e5a41"
+%>
 
 <%doc>
+	DONE:
 	TODO:
 		- after the first verse there is a transposition of 1.5 steps up
 		though the chord Ab7 (which is the alter-dominant of g which we are
@@ -25,7 +27,8 @@ jazzTune
 		- align all the lyrics.
 </%doc>
 
-myChords=\chordmode {
+<%def name="myChordsMy()">
+\chordmode {
 	\startChords
 
 	\mark "פתיחה"
@@ -46,7 +49,10 @@ myChords=\chordmode {
 
 	\endChords
 }
-myVoice=\relative f' {
+</%def>
+
+<%def name="myVoiceMy()">
+\relative f' {
 	\time 6/8
 	\key e \major
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -58,7 +64,10 @@ myVoice=\relative f' {
 
 	b8 e b e4. ~ | e8 fis gis fis e cis | cis2. ~ | cis2. |
 }
-myLyrics=\lyricmode {
+</%def>
+
+<%def name="myLyricsMy()">
+\lyricmode {
 	_ _ _ _ _ _ _ _ _ _ _
 	_ _ _ _ _ _ _ _ _ _ _
 	_ _ _ _ _
@@ -91,4 +100,4 @@ myLyrics=\lyricmode {
 	והד לי עונה מפסגת הר סיני:
 	"הו מה רחוק, רחוק, רחוק, רחוק!"
 }
-include(src/include/harmony_tune_lyrics.lyi)
+</%def>
