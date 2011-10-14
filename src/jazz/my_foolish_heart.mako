@@ -1,9 +1,8 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
-%>
-\header {
-	default_header
+	attributes['type']="harmony_tune_lyrics"
+	attributes['render']="Fake"
 
 	title="My Foolish Heart"
 	composer="Victor Young"
@@ -11,8 +10,7 @@
 	piece="Slowly & Expressively"
 	poet="Ned Washington"
 	copyright="1949 by Anne-Rachel Music Corp."
-	%% Copyright Renewed, Young interest conrolled by Chappel & Co., Inc.
-	%% Intersong Music, Publisher
+	copyrightextra="Copyright Renewed, Young interest conrolled by Chappel & Co., Inc. Intersong Music, Publisher"
 
 	completion="5"
 	uuid="ce9be996-a26e-11df-bf2c-0019d11e5a41"
@@ -20,18 +18,21 @@
 	idyoutube="a2LFVWBmoiw"
 	idyoutube="neXL51g8P-M"
 	lyricsurl="http://www.oldielyrics.com/lyrics/frank_sinatra/my_foolish_heart.html"
-}
+%>
 
 <%doc>
+	DONE:
 	TODO:
-	- add the real book version and check it.
+	- add the missing parts of the real book version and check it.
 	- add an epdf of the real book.
 	- In the lyrics where it says "His" a boy should sing "Her". We should have
 	alternate lyrics here. See how they did it in the fake book.
+	- mark whats been done with this tune.
+	- document the youtube performances.
 </%doc>
 
-%% taken from the real book (to be checked...)
-myVoiceReal=\relative f' {
+<%def name="myVoiceReal()">
+\relative f' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 108
 	\key bes \major
@@ -53,9 +54,10 @@ myVoiceReal=\relative f' {
 	d4. d8 d d c bes | d,2. g4 | bes2~ bes8 ees, g bes |
 	c4 d bes c | bes1 | r1 |
 }
+</%def>
 
-%% taken from the fakebook
-myChords=\chordmode {
+<%def name="myChordsFake()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -85,9 +87,10 @@ myChords=\chordmode {
 
 	\endChords
 }
+</%def>
 
-%% taken from the fakebook
-myVoice=\relative f' {
+<%def name="myVoiceFake()">
+\relative f' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 108
 	\key bes \major
@@ -110,9 +113,10 @@ myVoice=\relative f' {
 		{ bes1~ | bes1 | }
 	}
 }
+</%def>
 
-%% taken from the fakebook
-myLyrics=\lyricmode {
+<%def name="myLyricsFake()">
+\lyricmode {
 	The night __ is like a love -- ly tune,
 	be -- ware __ My Fool -- ish Heart!
 	How while __ the ev -- er con -- stant moon;
@@ -135,5 +139,4 @@ myLyrics=\lyricmode {
 
 	Heart. __
 }
-
-include(src/include/harmony_tune_lyrics.lyi)
+</%def>
