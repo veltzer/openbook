@@ -1,9 +1,8 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
-%>
-\header {
-	default_header
+	attributes['type']="harmony_tune"
+	attributes['render']="Unknown"
 
 	title="My Favorite Things"
 	composer="Richard Rodgers"
@@ -13,16 +12,21 @@
 
 	completion="0"
 	uuid="02c22208-a26f-11df-98fd-0019d11e5a41"
-}
+%>
 
 <%doc>
+	DONE:
 	TODO:
+	- where is this sheet from.
+	- mark what has been done for this tune.
+	- bring in the epdf for this one.
 	- add lyrics.
 	- check this whole sheet again.
-	- add length to all note.
+	- add length to all notes.
 </%doc>
 
-myChords=\chordmode {
+<%def name="myChordsUnknown()">
+\chordmode {
 	\mark "Intro"
 	\repeat volta 4 { e2.:m7 | f2.:maj7.4+ }
 
@@ -48,29 +52,30 @@ myChords=\chordmode {
 
 	\endSong
 }
+</%def>
 
-myVoice=\relative e' {
+<%def name="myVoiceUnknown()">
+\relative e' {
 	\time 3/4
 	\key g \major
 
-	\repeat volta 4 { r2. | r2. }
+	\repeat volta 4 { r2. | r }
 
 	\repeat volta 2 {
 		\repeat unfold 2
-			{ e4 b'4 b4 | fis4 e4 e4 | b4 e4 e4 | fis4 e2 | }
-		e4 b'4 a4 | e4 fis4 d4 | d4 a'4 g4 | c,2. |
-		b4 c4 d4 | e4 fis4 g4 | a4 b4 a4 | dis,2. |
+			{ e4 b' b | fis e e | b e e | fis e2 | }
+		e4 b' a | e fis d | d a' g | c,2. |
+		b4 c d | e fis g | a b a | dis,2. |
 	}
 
-	\repeat unfold 2 { e4 b'4 b4 | fis4 e4 e4 | b4 e4 e4 | fis4 e2 | }
-	e4 b'4 a4 | e4 fis4 d4 | d4 a'4 g4 | c,2. |
-	b4 c4 d4 | e4 fis4 g4 | a4 ais4 b4 | c2. |
+	\repeat unfold 2 { e4 b' b | fis e e | b e e | fis e2 | }
+	e4 b' a | e fis d | d a' g | c,2. |
+	b4 c d | e fis g | a ais b | c2. |
 
-	r4 b4 b4 | b2 e,4 | r4 a4 a4 | a2 dis,4 |
-	r4 g4 g4 | g2 b,4 | e2.~ | e2 e4 |
-	e4 fis4 e4 | fis4 e4 fis4 | g4 a4 g4 |
-	a2 g4 | b4 c4 b4 | c2.~ | c2. | b2. |
-	g2.~ | g2.~ | g2.~ | g4 r2 |
+	r4 b b | b2 e,4 | r a a | a2 dis,4 |
+	r g g | g2 b,4 | e2.~ | e2 e4 |
+	e fis e | fis e fis | g a g |
+	a2 g4 | b c b | c2.~ | c | b |
+	g~ | g~ | g~ | g4 r2 |
 }
-
-include(src/include/harmony_tune.lyi)
+</%def>

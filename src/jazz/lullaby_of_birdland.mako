@@ -1,20 +1,36 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['type']="harmony_tune"
+	attributes['render']="Unknown"
+
+	attributes['title']="Lullaby of birdland"
+	attributes['composer']="George Shearing"
+	attributes['style']="Jazz"
+	attributes['piece']="Med Swing"
+
+	attributes['completion']="0"
+	attributes['uuid']="f9668406-a26e-11df-8542-0019d11e5a41"
 %>
-\header {
-	default_header
 
-	title="Lullaby of birdland"
-	composer="George Shearing"
-	style="Jazz"
-	piece="Med Swing"
+<%def name="myChordsUnknown()">
+\chordmode {
+	\startChords
 
-	completion="0"
-	uuid="f9668406-a26e-11df-8542-0019d11e5a41"
+	\startSong
+
+	\repeat volta 2 {
+		a2:m7 fis:5- |
+	}
+
+	\endSong
+
+	\endChords
 }
+</%def>
 
-myVoice=\relative c'' {
+<%def name="myVoiceUnknown()">
+\relative c'' {
 	\time 4/4
 	\key a \minor
 
@@ -35,19 +51,4 @@ myVoice=\relative c'' {
 		{ f8 e d~ d4 r }
 	}
 }
-
-myChords=\chordmode {
-	\startChords
-
-	\startSong
-
-	\repeat volta 2 {
-		a2:m7 fis:5- |
-	}
-
-	\endSong
-
-	\endChords
-}
-
-include(src/include/harmony_tune.lyi)
+</%def>

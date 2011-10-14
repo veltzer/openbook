@@ -1,7 +1,8 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
-	attributes['type']="tune"
+	attributes['type']="harmony_tune"
+	attributes['render']="Unknown"
 
 	attributes['title']="I Remember Clifford"
 	attributes['composer']="Benny Golson"
@@ -20,7 +21,18 @@
 	- add chords and music.
 </%doc>
 
-myVoice=\relative c'' {
+<%def name="myChordsUnknown()">
+\chordmode {
+	\startChords
+
+	\startSong
+	\endSong
+	\endChords
+}
+</%def>
+
+<%def name="myVoiceUnknown()">
+\relative c'' {
 	\key c \major
 	\time 4/4
 
@@ -38,3 +50,4 @@ myVoice=\relative c'' {
 	e2. d8 b ) | c2 r8 d ( e f | g4. g8 gis f b gis ) | a2 r8 e ( a b ) |
 	c2 r8 d, ( g a ) | bes2 r8 a, ( c d | e a, c d ees4 b ) | c1 |
 }
+</%def>

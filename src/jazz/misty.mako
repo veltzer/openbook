@@ -1,30 +1,29 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['type']="harmony_tune_lyricsmore"
+	attributes['render']="Real"
+
+	attributes['title']="Misty"
+	attributes['composer']="Errol Garner"
+	attributes['style']="Jazz"
+	attributes['piece']="Ballad"
+	attributes['poet']="Johnny Burke"
+	attributes['copyright']="1955. Renewed 1983 Marke Music, Limerick Music, Reganesque"
+	attributes['copyrightextra']="Music and Time-Co Music"
+
+	attributes['completion']="5"
+	attributes['uuid']="bb21d126-f210-11e0-9b64-0019d11e5a41"
+
+	attributes['idyoutuberemark']="great version by Ella Fitzgerald"
+	attributes['idyoutube']="mQouJdvB80U"
+	attributes['idyoutuberemark']="Garner himself! what an amazing piano..." 
+	attributes['idyoutube']="nAaZzQWk8V4"
+
+	attributes['lyricsurl']="http://www.lyrics007.com/Ella%20Fitzgerald%20Lyrics/Misty%20Lyrics.html"
+
+	attributes['structure']="AABA"
 %>
-\header {
-	default_header
-
-	title="Misty"
-	composer="Errol Garner"
-	style="Jazz"
-	piece="Ballad"
-	poet="Johnny Burke"
-	copyright="1955. Renewed 1983 Marke Music, Limerick Music, Reganesque"
-	%% Music and Time-Co Music
-
-	completion="5"
-	uuid="bb21d126-f210-11e0-9b64-0019d11e5a41"
-
-	%% great version by Ella Fitzgerald
-	idyoutube="mQouJdvB80U"
-	%% garner himself! what an amazing playing...
-	idyoutube="nAaZzQWk8V4"
-
-	lyricsurl="http://www.lyrics007.com/Ella%20Fitzgerald%20Lyrics/Misty%20Lyrics.html"
-
-	structure="AABA"
-}
 
 <%doc>
 	DONE:
@@ -39,8 +38,8 @@
 	- how do I put the last two chord in the real book version in braces (they are part of the turn around)...
 </%doc>
 
-%% this version of the chords is from the real book...
-myChords=\chordmode {
+<%def name="myChordsReal()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -78,9 +77,10 @@ myChords=\chordmode {
 
 	\endChords
 }
+</%def>
 
-%% this version of the tune is from the real book...
-myVoice=\relative c'' {
+<%def name="myVoiceReal()">
+\relative c'' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante" 4 = 88
 	\time 4/4
@@ -105,9 +105,11 @@ myVoice=\relative c'' {
 	d2. bes8 c | des c' c c c bes g ees | c2 \times 2/3 { r8 g aes c ees g } | bes bes bes aes bes4 aes8 bes |
 	g4~ \times 2/3 { g8 aes bes } ees,4~ \times 2/3 { ees8 f g } | aes8 c,4 c8 \times 2/3 { d4 ees f } | ees1 | r |
 }
+</%def>
 
+<%def name="myLyricsReal()">
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
-myLyrics=\lyricmode {
+\lyricmode {
 	Look at me,
 	I'm as help -- les as a kit -- ten up a tree
 	and I feel like I'm cling -- ing to a cloud,
@@ -116,7 +118,10 @@ myLyrics=\lyricmode {
 
 	Walk my
 }
-myLyricsmore=\lyricmode {
+</%def>
+
+<%def name="myLyricsRealmore()">
+\lyricmode {
 	Walk my way and a thou -- sand vi -- o -- lins be -- gin to play,
 	or it might be the sound of your hel -- lo,
 	th -- at mu -- sic I hear, __
@@ -132,5 +137,4 @@ myLyricsmore=\lyricmode {
 	my _ hat __ from my glove, __
 	I'm too Mist -- y and too much in Love. __
 }
-
-include(src/include/harmony_tune_lyricsmore.lyi)
+</%def>
