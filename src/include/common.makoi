@@ -130,6 +130,23 @@ startChords=\set chordChanges = ##t
 endChords={}
 %% endif
 
+<%
+	attributes['title']=""
+	attributes['subtitle']=""
+	attributes['structure']=""
+	attributes['copyright']=""
+	attributes['copyrightextra']=""
+	attributes['composer']=""
+	attributes['style']=""
+	attributes['lyricsurl']=""
+	attributes['piece']=""
+	attributes['poet']=""
+	attributes['completion']=""
+	attributes['uuid']=""
+	attributes['idyoutube']=""
+	attributes['type']=""
+	attributes['render']=""
+%>
 %% this causes the variables to be defined...
 ${self.body()}
 
@@ -167,13 +184,28 @@ ${self.body()}
 \score {
 	<<
 		\new ChordNames="Chords"
-			${self.myChords()}
+% if attributes['render']=='Real':
+			${self.myChordsReal()}
+% endif
+% if attributes['render']=='Fake':
+			${self.myChordsFake()}
+% endif
 		\new Staff="Melody" {
 			\new Voice="myvoice"
-			${self.myVoice()}
+% if attributes['render']=='Real':
+			${self.myVoiceReal()}
+% endif
+% if attributes['render']=='Fake':
+			${self.myVoiceFake()}
+% endif
 		}
 		\new Lyrics="Lyrics" \lyricsto "myvoice"
-			${self.myLyrics()}
+% if attributes['render']=='Real':
+			${self.myLyricsReal()}
+% endif
+% if attributes['render']=='Fake':
+			${self.myLyricsFake()}
+% endif
 	>>
 	\layout {
 	}
@@ -184,15 +216,30 @@ ${self.body()}
 	<<
 		%% the ="Chords" is the name of the channel that will be in midi
 		\new ChordNames="Chords"
-			${self.myChords()}
+% if attributes['render']=='Real':
+			${self.myChordsReal()}
+% endif
+% if attributes['render']=='Fake':
+			${self.myChordsFake()}
+% endif
 		%% the ="Melody" is the name of the channel that will be in midi
 		\new Staff="Melody" {
 			\new Voice="myvoice"
-			${self.myVoice()}
+% if attributes['render']=='Real':
+			${self.myVoiceReal()}
+% endif
+% if attributes['render']=='Fake':
+			${self.myVoiceFake()}
+% endif
 		}
 		%% the ="Lyrics" is the name of the channel that will be in midi
 		\new Lyrics="Lyrics" \lyricsto "myvoice"
-			${self.myLyrics()}
+% if attributes['render']=='Real':
+			${self.myLyricsReal()}
+% endif
+% if attributes['render']=='Fake':
+			${self.myLyricsFake()}
+% endif
 	>>
 	\midi {
 	}
@@ -206,10 +253,16 @@ ${self.body()}
 % if attributes['render']=='Real':
 			${self.myChordsReal()}
 % endif
+% if attributes['render']=='Fake':
+			${self.myChordsFake()}
+% endif
 		\new Staff="Melody" {
 			\new Voice="myvoice"
 % if attributes['render']=='Real':
 			${self.myVoiceReal()}
+% endif
+% if attributes['render']=='Fake':
+			${self.myVoiceFake()}
 % endif
 		}
 	>>
@@ -225,15 +278,24 @@ ${self.body()}
 % if attributes['render']=='Real':
 			${self.myChordsReal()}
 % endif
+% if attributes['render']=='Fake':
+			${self.myChordsFake()}
+% endif
 		%% the ="Melody" is the name of the channel that will be in midi
 		\new Staff="Melody" {
 			\new Voice="myvoice"
 % if attributes['render']=='Real':
 			${self.myVoiceReal()}
 % endif
+% if attributes['render']=='Fake':
+			${self.myVoiceFake()}
+% endif
 		}
 	>>
 	\midi {
 	}
 }
+% endif
+% if attributes['type']=='own':
+${self.myOwn()}
 % endif

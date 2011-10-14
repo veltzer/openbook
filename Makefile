@@ -235,15 +235,15 @@ check_common:
 .PHONY: check_no_poet
 check_no_poet:
 	$(info doing [$@])
-	$(Q)-grep --files-without-match "poet=" $(FILES_MAKO)
+	$(Q)-grep --files-without-match "attributes['poet']=" $(FILES_MAKO)
 .PHONY: check_copyright
 check_copyright:
 	$(info doing [$@])
-	$(Q)-grep --files-without-match "copyright=" $(FILES_MAKO)
+	$(Q)-grep --files-without-match "attributes['copyright']=" $(FILES_MAKO)
 .PHONY: check_completion
 check_completion:
 	$(info doing [$@])
-	$(Q)-grep --files-without-match "completion=" $(FILES_MAKO)
+	$(Q)-grep --files-without-match "attributes['completion']=" $(FILES_MAKO)
 .PHONY: check_empty_copyright
 check_empty_copyright:
 	$(info doing [$@])

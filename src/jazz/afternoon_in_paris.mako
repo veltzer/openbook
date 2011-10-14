@@ -19,13 +19,15 @@
 
 <%doc>
 	TODO:
+	- list what has been done to this tune.
+	- document the youtube performances.
 	- the last two chords (d:m7 and g:7) should be in parenthesis since they are part of the turn around.
 	I still don't know how to do that.
 	- add emphasis notes in the tune and document how to do that.
 </%doc>
 
-%% these are the chords from the fake book
-myChordsFake=\chordmode {
+<%def name="myChordsFake()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -60,9 +62,10 @@ myChordsFake=\chordmode {
 
 	\endChords
 }
+</%def>
 
-%% this is the melody from the real book
-myVoiceFake=\relative c {
+<%def name="myVoiceFake()">
+\relative c {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\key c \major
@@ -85,9 +88,10 @@ myVoiceFake=\relative c {
 	g8 d r c b c d e | ees g, bes d c4 d | f8 c r bes a bes c d | des f, aes c bes4 c |
 	ees8 c aes ees g bes aes4 | f2 \times 2/3 { g4 f g } | e1~ | e2. r4 |
 }
+</%def>
 
-%% these are the chords from the real book
-myChordsReal=\chordmode {
+<%def name="myChordsReal()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -125,9 +129,10 @@ myChordsReal=\chordmode {
 
 	\endChords
 }
+</%def>
 
-%% this is the melody from the real book
-myVoiceReal=\relative c {
+<%def name="myVoiceReal()">
+\relative c {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\key c \major
@@ -158,3 +163,4 @@ myVoiceReal=\relative c {
 	r c4 aes8 g bes aes g~ | g2~ g8 bes aes g~ |
 	g1~ | g1 |
 }
+</%def>

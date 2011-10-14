@@ -1,9 +1,8 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
-%>
-\header {
-	default_header
+	attributes['type']="harmony_tune_lyricsmore"
+	attributes['render']="Real"
 
 	title="Someone To Watch Over Me"
 	composer="George Gershwin"
@@ -18,7 +17,7 @@
 
 	idyoutube="CCTIpclVQe4"
 	idyoutube="gLqsIIrk5wQ"
-}
+%>
 
 <%doc>
 	DONE:
@@ -30,7 +29,7 @@
 	- add performances that I like.
 </%doc>
 
-myChords=\chordmode {
+myChordsReal=\chordmode {
 	\startChords
 
 	\startSong
@@ -67,7 +66,7 @@ myChords=\chordmode {
 	\endChords
 }
 
-myVoice=\relative aes {
+myVoiceReal=\relative aes {
 	\time 4/4
 	\key aes \major
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -89,21 +88,22 @@ myVoice=\relative aes {
 	r4 f ees des | aes'2 aes,8 bes4. | aes1 | r |
 }
 
-myLyrics=\lyricmode {
-%%	There’s a saying old, says that love is blind
-%%	Still we’re often told, "seek and ye shall find"
-%%	So I’m going to seek a certain lad I’ve had in mind
+%% lyrics from the internet adjusted for the real book
+myLyricsReal=\lyricmode {
+%%	There's a saying old, says that love is blind
+%%	Still we're often told, "seek and ye shall find"
+%%	So I'm going to seek a certain lad I've had in mind
 
-%%	Looking everywhere, haven’t found him yet
-%%	He’s the big affair I cannot forget
+%%	Looking everywhere, haven't found him yet
+%%	He's the big affair I cannot forget
 %%	Only man I ever think of with regret
 
-%%	I’d like to add his initial to my monogram
+%%	I'd like to add his initial to my monogram
 %%	Tell me, where is the shepherd for this lost lamb?
 
-	There’s a some -- bo -- dy I’m lon -- gin’ to see
+	There's a some -- bo -- dy I'm lon -- gin' to see
 	I hope that he, turns out to be
-	Some -- one who’ll watch o -- ver me
+	Some -- one who'll watch o -- ver me
 
 	me
 
@@ -111,20 +111,18 @@ myLyrics=\lyricmode {
 	Girls think of as hand -- some
 	To my heart he car -- ries the key
 
-	Won’t you tell him please to put on some speed
+	Won't you tell him please to put on some speed
 	Fol -- low my lead, oh, how I need
 	Some -- one to watch o -- ver me
 
-%%	Won’t you tell him please to put on some speed
+%%	Won't you tell him please to put on some speed
 %%	Follow my lead, oh, how I need
 %%	Someone to watch over me
 
 %%	Someone to watch over me
 }
-myLyricsmore=\lyricmode {
-	I’m a lit -- tle lamb who’s lost in the wood
+myLyricsRealmore=\lyricmode {
+	I'm a lit -- tle lamb who's lost in the wood
 	I know I could, al -- ways be good
-	To one who’ll watch o -- ver %% me
+	To one who'll watch o -- ver %% me
 }
-
-include(src/include/harmony_tune_lyricsmore.lyi)

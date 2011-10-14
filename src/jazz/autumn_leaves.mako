@@ -3,21 +3,19 @@
 	attributes['jazzTune']=True
 	attributes['type']="harmony_tune_lyricsmore"
 
-	title="Autumn Leaves"
-	subtitle="Les Feuilles Mortes"
-	composer="Joseph Kosma"
-	copyright="1947, 1950, 1987 Enoch Et Cie. Renewed 1975, 1978 Enoch Et Cie"
-	%% Sole Selling Agent for U.S.A (including it's territories and possessions)
-	%% and Dominion of Canada: Morley Music Co., by arrangement with Enoch Et Cie
-	%% international Copyright Secured. All Rights Reserved.
-	poet="Jacques Prevert, Johnny Mercer"
-	style="Jazz"
-	piece="Medium Swing"
+	attributes['title']="Autumn Leaves"
+	attributes['subtitle']="Les Feuilles Mortes"
+	attributes['composer']="Joseph Kosma"
+	attributes['copyright']="1947, 1950, 1987 Enoch Et Cie. Renewed 1975, 1978 Enoch Et Cie"
+	attributes['copyrightextra']="Sole Selling Agent for U.S.A (including it's territories and possessions) and Dominion of Canada: Morley Music Co., by arrangement with Enoch Et Cie. International Copyright Secured. All Rights Reserved."
+	attributes['poet']="Jacques Prevert, Johnny Mercer"
+	attributes['style']="Jazz"
+	attributes['piece']="Medium Swing"
 
-	completion="5"
-	uuid="8c35acf6-a7c1-11df-9040-0019d11e5a41"
-	idyoutube="mRhVI7cpcS4"
-	idyoutube="io1o1Hwpo8Y"
+	attributes['completion']="5"
+	attributes['uuid']="8c35acf6-a7c1-11df-9040-0019d11e5a41"
+	attributes['idyoutube']="mRhVI7cpcS4"
+	attributes['idyoutube']="io1o1Hwpo8Y"
 %>
 
 <%doc>

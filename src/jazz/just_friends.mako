@@ -98,7 +98,7 @@
 }
 </%def>
 
-<%def name="myVoiceReal()">
+<%def name="myLyricsReal()">
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 	%% part "A"
