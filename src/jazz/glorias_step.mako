@@ -1,27 +1,28 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['render']="Real"
+	attributes['type']="harmony_tune"
+
+	attributes['title']="Gloria's Step"
+	attributes['subtitle']=""
+	attributes['composer']="Scott LaFaro"
+	attributes['style']="Jazz"
+	attributes['piece']="Swing"
+	attributes['poet']=""
+	attributes['copyright']="1962, Orpheum Music."
+	attributes['copyrightextra']=""
+
+	attributes['completion']="5"
+	attributes['uuid']="892e5552-f2ad-11e0-8c10-0019d11e5a41"
+
+	attributes['structure']="AABA"
+	attributes['idyoutuberemark']="Bill Evans, not the orignal Sunday at the Village version..."
+	attributes['idyoutube']="C84KmJwtPeI"
+	attributes['idyoutuberemark']="the original Sunday at the Village version (take 2)..."
+	attributes['idyoutube']="Aib_RL_x7PA"
+	attributes['lyricsurl']="NONE"
 %>
-\header {
-	default_header
-
-	title="Gloria's Step"
-	subtitle=""
-	composer="Scott LaFaro"
-	style="Jazz"
-	piece="Swing"
-	poet=""
-	copyright="1962, Orpheum Music."
-
-	completion="5"
-	uuid="892e5552-f2ad-11e0-8c10-0019d11e5a41"
-
-	structure="AABA"
-	%% Bill Evans, not the orignal Sunday at the Village version...
-	idyoutube="C84KmJwtPeI"
-	%% the original Sunday at the Village version (take 2)...
-	idyoutube="Aib_RL_x7PA"
-}
 
 <%doc>
 	DONE:
@@ -37,8 +38,8 @@
 	- enter the new real book version.
 </%doc>
 
-%% this version of the chords is from the real book...
-myChords=\chordmode {
+<%def name="myChordsReal()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -66,9 +67,10 @@ myChords=\chordmode {
 
 	\endChords
 }
+</%def>
 
-%% this version of the tune is from the real book...
-myVoice=\relative c'' {
+<%def name="myVoiceReal()">
+\relative c'' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 160
 	\time 4/4
@@ -84,5 +86,4 @@ myVoice=\relative c'' {
 	%% part "A"
 	r8 g,4 c8 \times 2/3 { b c a } \times 2/3 { r a e } | g1 | r8 f g f~ f ees c ees~ | ees2 r8 c bes c~ | c1 |
 }
-
-include(src/include/harmony_tune.lyi)
+</%def>
