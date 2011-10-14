@@ -48,15 +48,15 @@ myVoice={
 }
 
 myLyrics=\lyrics {
-	Let me tell you 'bout a boy I know ___
-	He is my ba -- by and he lives next door. ___ ___
-	Ev -- 'ry morn -- ing 'fore the sun comes up, ___
-	He brings my cof -- fe in my fav -- 'rite cup. ___
-	That's why I know, ___ yes, I know, ___ Hal -- le -- lu -- jah, I just love him so. ___
+	Let me tell you 'bout a boy I know __
+	He is my ba -- by and he lives next door. __ __
+	Ev -- 'ry morn -- ing 'fore the sun comes up, __
+	He brings my cof -- fe in my fav -- 'rite cup. __
+	That's why I know, __ yes, I know, __ Hal -- le -- lu -- jah, I just love him so. __
 
-	When I'm in trou -- ble an I have no friends, ___
-	I know he'll go with me un -- til the end. ___ ___
-	Ev -- 'vry bo -- dy asks me how I know. ___
-	I smile at them and say he told me so. ___
-	That's why I know, ___ yes I know, ___ Hal -- le lu -- jah, I just love him so. ___
+	When I'm in trou -- ble an I have no friends, __
+	I know he'll go with me un -- til the end. __ __
+	Ev -- 'vry bo -- dy asks me how I know. __
+	I smile at them and say he told me so. __
+	That's why I know, __ yes I know, __ Hal -- le lu -- jah, I just love him so. __
 }

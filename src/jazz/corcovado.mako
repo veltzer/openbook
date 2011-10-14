@@ -1,27 +1,52 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['type']="harmony_tune_lyrics"
+	attributes['render']="Unknown"
+
+	attributes['title']="Corcovado"
+	attributes['subtitle']="quiet nights of quiet stars"
+	attributes['composer']="Antonio Carlos Jobim"
+	attributes['copyright']="1959, Editora Musical Arapua, Sao Paulo, Brazil"
+	attributes['style']="Jazz"
+	attributes['piece']="Med Swing"
+
+	attributes['completion']="0"
+	attributes['uuid']="b847fc02-a26e-11df-92ce-0019d11e5a41"
 %>
-\header{
-	default_header
-
-	title="Corcovado"
-	subtitle="quiet nights of quiet stars"
-	composer="Antonio Carlos Jobim"
-	copyright="1959, Editora Musical Arapua, Sao Paulo, Brazil"
-	style="Jazz"
-	piece="Med Swing"
-
-	completion="0"
-	uuid="b847fc02-a26e-11df-92ce-0019d11e5a41"
-}
 
 <%doc>
+	DONE:
 	TODO:
+	- where is this from?
 	- add the intro chords (they are not currently shown
+	- mark whats been done to this tune.
+	- add youtube performances.
 </%doc>
 
-myVoice={
+myChordsUnknown=\chordmode {
+	\startSong
+	\startChords
+
+	\mark "Intro"
+	r1 | r1 | a:m6 | aes:dim7 |
+	g:m7 | c2:11 c2:13 | f1:maj7 | f:m6 |
+	e:m7 | a:m7 | d:7 | aes:dim7 |
+
+	\mark "A"
+	%% 1
+	d1:9 | r1 | aes1:dim7 | r1 | g1:m7 | c:9 | f:maj7 | f:6 |
+	%% 9
+	f:m7 | f:m6 | e:m7 | a:7.5+.9- | d1:9 | r1 | d1:m9 | g:7 |
+	%% 17
+	d1:9 | r1 | aes1:dim7 | r1 | g1:m7 | c:9 | f:maj7 | f:6 |
+	f:m7 | bes:9 | e:m7 | a:m7 | d:m7 | g:7 | e:m7 | a:7.5+.9- |
+	d:m7 | g:7 |
+	\endChords
+	\endSong
+}
+
+myVoiceUnknown={
 	\time 4/4
 	\key c \major
 	\clef treble
@@ -74,50 +99,22 @@ myVoice={
 	c' b4 c'8~ c' d'4 c'8~ |
 }
 
-intro=\chordmode {
-	\startChords
+myLyricsUnknown=\lyrics {
+	Qui -- et __ nights of qui -- et stars,
+	qui -- et __ chords from my gui -- tar __
+	float -- ing on __ the si __ -- lence that sur -- rounds __ us __
 
-	\startSong
+	Qui -- et __ thoughts and qui -- et dreams __
+	qui -- et __ walks by qui -- et streams,
+	and a __ win -- dow look -- ing on __ the mount __ -- tains and the sea. __
+	How love __ -- ly!
 
-	r1 | r1 | a:m6 | aes:dim7 |
-	g:m7 | c2:11 c2:13 | f1:maj7 | f:m6 |
-	e:m7 | a:m7 | d:7 | aes:dim7 |
+	This is __ where I want to be, __
+	here with you so close to me, __
+	un -- til __ the fina -- al flick -- er __ of life's em __ -- ber. __
 
-	\endSong
-
-	\endChords
-}
-
-myChords=\chordmode {
-	%% 1
-	d1:9 | r1 | aes1:dim7 | r1 | g1:m7 | c:9 | f:maj7 | f:6 |
-	%% 9
-	f:m7 | f:m6 | e:m7 | a:7.5+.9- | d1:9 | r1 | d1:m9 | g:7 |
-	%% 17
-	d1:9 | r1 | aes1:dim7 | r1 | g1:m7 | c:9 | f:maj7 | f:6 |
-	f:m7 | bes:9 | e:m7 | a:m7 | d:m7 | g:7 | e:m7 | a:7.5+.9- |
-	d:m7 | g:7 |
-}
-
-myLyrics=\lyrics {
-	Qui -- et ___ nights of qui -- et stars,
-	qui -- et ___ chords from my gui -- tar ___
-	float -- ing on ___ the si ___ -- lence that sur -- rounds ___ us ___
-
-	Qui -- et ___ thoughts and qui -- et dreams ___
-	qui -- et ___ walks by qui -- et streams,
-	and a ___ win -- dow look -- ing on ___ the mount ___ -- tains and the sea. ___
-	How love ___ -- ly!
-
-	This is ___ where I want to be, ___
-	here with you so close to me, ___
-	un -- til ___ the fina -- al flick -- er ___ of life's em ___ -- ber. ___
-
-	I who ___ was lost and lone -- ly, ___ ___
-	be -- liev ___ -- ing life was on -- ly
+	I who __ was lost and lone -- ly, __ __
+	be -- liev __ -- ing life was on -- ly
 	a bit -- ter tra -- gic joke have found with you
-	the mean ___ -- ing of ex -- is -- tence, oh, ___ my love. ___
-
+	the mean __ -- ing of ex -- is -- tence, oh, __ my love. __
 }
-
-include(src/include/harmony_tune_lyrics.lyi)

@@ -99,7 +99,7 @@ myVoiceUnknown={
 }
 
 myLyricsUnknown=\lyrics {
-	This is just a lit ___ -- tle sam ___ -- ba
+	This is just a lit __ -- tle sam __ -- ba
 	built up -- on a sin __ -- gle note. __
 	Oth -- er notes are bound __ to fol __ -- low
 	but the root is still __ that note. __
