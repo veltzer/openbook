@@ -35,4 +35,4 @@ myLyrics=\lyrics {
 	Take my troubles that's what you do.
 }
 
-include(src/include/harmony_text.lyi)
+include(src/include/harmony_tune_lyrics.lyi)

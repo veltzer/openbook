@@ -419,6 +419,7 @@ ${self.definitions()}
 	}
 }
 % endif
+
 % if attributes['type']=='harmony_tune':
 %% score for printing
 \score {
@@ -450,6 +451,49 @@ ${self.definitions()}
 	}
 }
 % endif
+
+% if attributes['type']=='tune':
+%% score for printing
+\score {
+	<<
+		\new Staff="Melody" {
+			\new Voice="myvoice"
+			${self.myVoice()}
+		}
+	>>
+	\layout {
+	}
+}
+%% score for midi
+\score {
+	\unfoldRepeats
+	<<
+		%% the ="Melody" is the name of the channel that will be in midi
+		\new Staff="Melody" {
+			\new Voice="myvoice"
+			${self.myVoice()}
+		}
+	>>
+	\midi {
+	}
+}
+% endif
+
+% if attributes['type']=='harmony':
+\score {
+	<<
+		\new ChordNames="Chords"
+		\with {
+			\override BarLine #'bar-size = #4
+			\consists "Bar_engraver"
+		}
+		${self.myChords()}
+	>>
+	\midi {}
+	\layout {}
+}
+% endif
+
 % if attributes['type']=='own':
 ${self.myOwn()}
 % endif
