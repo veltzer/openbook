@@ -81,7 +81,7 @@ myLyricsReal=\lyricmode {
 	Mem -- ories of our start
 	The love you give
 
-	Days when we’re a -- lone
+	Days when we're a -- lone
 	And you are in my arms
 	The_blue -- ness of the_true -- ness of our love
 }

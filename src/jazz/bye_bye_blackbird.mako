@@ -40,7 +40,8 @@
 		f1 f a:m7.5- d:7 g:m7 c:7 f f
 </%doc>
 
-myChordsFake=\chordmode {
+<%def name="myChordsFake()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -73,8 +74,10 @@ myChordsFake=\chordmode {
 
 	\endChords
 }
+</%def>
 
-myVoiceFake=\relative f' {
+<%def name="myVoiceFake()">
+\relative f' {
 	\time 4/4
 	\key f \major
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -96,8 +99,10 @@ myVoiceFake=\relative f' {
 	a4 a a a | bes a a2 | a4 g g2 | g4 fis fis2 |
 	g2 bes~ | bes e, | f2 r2 | r1 |
 }
+</%def>
 
-myLyricsFake=\lyricmode {
+<%def name="myLyricsFake()">
+\lyricmode {
 	Pack up all my care and woe,
 	Here I go,
 	Sing -- ing low,
@@ -112,3 +117,4 @@ myLyricsFake=\lyricmode {
 	I'll ar -- rive late to -- night,
 	black -- bird bye bye.
 }
+</%def>

@@ -1,20 +1,25 @@
-include(src/include/common.lyi)
-\header {
-	default_header
+<%inherit file="/src/include/common.makoi"/>
+<%
+	attributes['jazzTune']=True
+	attributes['type']="own"
+	attributes['render']="Own"
 
-	title="Memory"
-	composer="Andrew Lloyd Webber"
-	copyright="Copyright 1981 by the Really Useful Group plc. and Faber Music Ltd."
-	style="Musical"
-	piece="Musical"
-	remark="Taken from Scribd url http://www.scribd.com/doc/9491593/Sheet-Music-Cats-Memory"
-	poet="Trevor Nunn after T.S. Eliot"
+	attributes['title']="Memory"
+	attributes['subtitle']=""
+	attributes['composer']="Andrew Lloyd Webber"
+	attributes['copyright']="Copyright 1981 by the Really Useful Group plc. and Faber Music Ltd."
+	attributes['copyrightextra']=""
+	attributes['style']="Musical"
+	attributes['piece']="Musical"
+	attributes['remark']="Taken from Scribd url http://www.scribd.com/doc/9491593/Sheet-Music-Cats-Memory"
+	attributes['poet']="Trevor Nunn after T.S. Eliot"
 
-	completion="1"
-	uuid="cc3c46c7-908d-4b3e-b90f-1e01a942ef27"
-
-}
-jazzTune
+	attributes['completion']="1"
+	attributes['uuid']="cc3c46c7-908d-4b3e-b90f-1e01a942ef27"
+	attributes['structure']=""
+	attributes['idyoutube']=""
+	attributes['lyricsurl']=""
+%>
 
 <%doc>
 	NOTES:
@@ -35,6 +40,7 @@ jazzTune
 		- add a macro that says "Music by" and then the composer and the same for the lyrics to be preceeded by "Text by".
 </%doc>
 
+<%def name="myOwn()">
 myChords=\chordmode {
 	\startChords
 
@@ -58,6 +64,7 @@ myChords=\chordmode {
 
 	\endChords
 }
+
 voiceVocal=\relative c'' {
 	\clef treble
 	\key bes \major
@@ -246,3 +253,4 @@ myLyrics=\lyricmode {
 	\midi {
 	}
 }
+</%def>

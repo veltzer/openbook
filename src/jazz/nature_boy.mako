@@ -1,29 +1,32 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['type']="harmony_tune_lyricsmore"
+	attributes['render']="Real"
+
+	attributes['title']="Nature Boy"
+	attributes['composer']="Eben Ahbez"
+	attributes['style']="Jazz"
+	attributes['piece']="Med. Ballad"
+	attributes['poet']="Eben Ahbez"
+
+	attributes['completion']="5"
+	attributes['remark']="7th bar of letters A and B were originally 2 bars each. Melody is straight eights, though rather freely interpreted rhythmically."
+	attributes['idyoutube']="Iq0XJCJ1Srw"
+
+	attributes['uuid']="13d57a4a-a26f-11df-8711-0019d11e5a41"
 %>
-\header {
-	default_header
-
-	title="Nature Boy"
-	composer="Eben Ahbez"
-	style="Jazz"
-	piece="Med. Ballad"
-	poet="Eben Ahbez"
-
-	completion="5"
-	note="7th bar of letters A and B were originally 2 bars each. Melody is straight eights, though rather freely interpreted rhythmically."
-	idyoutube="Iq0XJCJ1Srw"
-
-	uuid="13d57a4a-a26f-11df-8711-0019d11e5a41"
-}
 
 <%doc>
+	DONE:
 	TODO:
+	- where is this from?
+	- document what been done in this tune.
+	- document the youtube performance.
 	- fill in the copyright
 </%doc>
 
-myChords=\chordmode {
+myChordsReal=\chordmode {
 	\startChords
 
 	\startSong
@@ -52,7 +55,7 @@ myChords=\chordmode {
 
 	\endChords
 }
-myVoice=\relative a {
+myVoiceReal=\relative a {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 110
 	\time 4/4
@@ -73,8 +76,8 @@ myVoice=\relative a {
 		}
 	}
 }
-
-myLyrics=\lyricmode {
+%% lyrics were taken from the internet and adjusted for the real book
+myLyricsReal=\lyricmode {
 	There was a boy,
 	A ver -- y strange en -- chan -- ted boy
 	They say he wan -- dered ver -- y far ver -- y far
@@ -91,11 +94,9 @@ myLyrics=\lyricmode {
 	Is just to love and be loved
 	In re -- turn.'
 }
-myLyricsmore=\lyricmode {
+myLyricsRealmore=\lyricmode {
 	_ then one day,
 	A mag -- ic day he passed my way,
 	And while we spoke of man -- y things, Fools and kings,
 	This he said to me: 'The
 }
-
-include(src/include/harmony_tune_lyricsmore.lyi)
