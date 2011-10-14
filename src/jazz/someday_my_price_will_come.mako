@@ -1,28 +1,28 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['type']="harmony_tune_lyricsmore"
+	attributes['render']="Real"
+	attributes['extra']=True
+
+	attributes['title']="Someday My Prince Will Come"
+	attributes['composer']="Frank Churchill & Larry Morey"
+	attributes['style']="Jazz"
+	attributes['piece']="Med. Jazz Waltz"
+
+	attributes['completion']="5"
+	attributes['uuid']="4933391e-ee10-11e0-b804-0019d11e5a41"
+
+	attributes['idyoutuberemark']="Miles"
+	attributes['idyoutube']="Lo18F5ObPng"
+	attributes['idyoutuberemark']="the great Bill Evans"
+	attributes['idyoutube']="zYpKNM1Yi5o"
+	attributes['idyoutuberemark']="and Bill again"
+	attributes['idyoutube']="KUT06K5eGz4"
+
+	attributes['structure']="AB"
+	attributes['lyricsurl']="http://artists.letssingit.com/disney-lyrics-someday-my-prince-will-come-31rjgwv"
 %>
-\header {
-	default_header
-
-	title="Someday My Prince Will Come"
-	composer="Frank Churchill & Larry Morey"
-	style="Jazz"
-	piece="Med. Jazz Waltz"
-
-	completion="5"
-	uuid="4933391e-ee10-11e0-b804-0019d11e5a41"
-
-	%% Miles
-	idyoutube="Lo18F5ObPng"
-	%% the great Bill Evans
-	idyoutube="zYpKNM1Yi5o"
-	%% and Bill again:
-	idyoutube="KUT06K5eGz4"
-
-	structure="AB"
-	lyricsurl="http://artists.letssingit.com/disney-lyrics-someday-my-prince-will-come-31rjgwv"
-}
 
 <%doc>
 	DONE:
@@ -38,8 +38,8 @@
 	- fixup names of composers and poets (I'm not sure they are right)
 </%doc>
 
-%% this version of the chords is from the real book...
-myChords=\chordmode {
+<%def name="myChordsReal()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -62,9 +62,10 @@ myChords=\chordmode {
 
 	\endChords
 }
+</%def>
 
-%% this version of the tune is from the real book...
-myVoice=\relative c' {
+<%def name="myVoiceReal()">
+\relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 3/4
@@ -85,14 +86,18 @@ myVoice=\relative c' {
 	}
 }
 
+<%def name="myLyricsReal()">
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
-myLyrics=\lyricmode {
+\lyricmode {
 	Some -- day my prince will come
 	Some -- day I'll find my love
 	And how thrilling that moment will be
 	When the prince of my dreams_comes to me
 }
-myLyricsmore=\lyricmode {
+</%def>
+
+<%def name="myLyricsRealmore()">
+\lyricmode {
 	He'll whis -- per I love you
 	And steal a kiss or two
 	Though he's
@@ -100,9 +105,9 @@ myLyricsmore=\lyricmode {
 	far _ a -- way I'll find my love_some -- day
 	Some -- day_when my dreams come true
 }
+</%def>
 
-include(src/include/harmony_tune_lyricsmore.lyi)
-
+<%def name="extra()">
 %% More lyrics
 verticalSpace
 verticalSpace
@@ -135,3 +140,4 @@ verticalSpace
 		}
 	}
 }
+</%def>

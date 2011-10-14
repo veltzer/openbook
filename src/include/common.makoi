@@ -149,6 +149,7 @@ endChords={}
 	attributes['render']=""
 	attributes['guitar']=False
 	attributes['jazzTune']=False
+	attributes['extra']=False
 %>
 %% this causes the variables to be defined...
 ${self.body()}
@@ -185,6 +186,111 @@ include(predefined-guitar-fretboards.ly)
 
 	lyricsurl="${attributes['lyricsurl']}"
 }
+
+% if attributes['type']=='harmony_tune_lyricsmore':
+%% score for printing
+\score {
+	<<
+		\new ChordNames="Chords"
+% if attributes['render']=='Real':
+			${self.myChordsReal()}
+% endif
+% if attributes['render']=='Fake':
+			${self.myChordsFake()}
+% endif
+% if attributes['render']=='Unknown':
+			${self.myChordsUnknown()}
+% endif
+		\new Staff="Melody" {
+			\new Voice="myvoice"
+% if attributes['render']=='Real':
+			${self.myVoiceReal()}
+% endif
+% if attributes['render']=='Fake':
+			${self.myVoiceFake()}
+% endif
+% if attributes['render']=='Unknown':
+			${self.myVoiceUnknown()}
+% endif
+		}
+		\new Lyrics="Lyrics" \lyricsto "myvoice"
+% if attributes['render']=='Real':
+			${self.myLyricsReal()}
+% endif
+% if attributes['render']=='Fake':
+			${self.myLyricsFake()}
+% endif
+% if attributes['render']=='Unknown':
+			${self.myLyricsUnknown()}
+% endif
+		\new Lyrics="Lyrics" \lyricsto "myvoice"
+% if attributes['render']=='Real':
+			${self.myLyricsRealmore()}
+% endif
+% if attributes['render']=='Fake':
+			${self.myLyricsFakemore()}
+% endif
+% if attributes['render']=='Unknown':
+			${self.myLyricsUnknownmore()}
+% endif
+	>>
+	\layout {
+	}
+}
+%% score for midi
+\score {
+	\unfoldRepeats
+	<<
+		%% the ="Chords" is the name of the channel that will be in midi
+		\new ChordNames="Chords"
+% if attributes['render']=='Real':
+			${self.myChordsReal()}
+% endif
+% if attributes['render']=='Fake':
+			${self.myChordsFake()}
+% endif
+% if attributes['render']=='Unknown':
+			${self.myChordsUnknown()}
+% endif
+		%% the ="Melody" is the name of the channel that will be in midi
+		\new Staff="Melody" {
+			\new Voice="myvoice"
+% if attributes['render']=='Real':
+			${self.myVoiceReal()}
+% endif
+% if attributes['render']=='Fake':
+			${self.myVoiceFake()}
+% endif
+% if attributes['render']=='Unknown':
+			${self.myVoiceUnknown()}
+% endif
+		}
+		%% the ="Lyrics" is the name of the channel that will be in midi
+		\new Lyrics="Lyrics" \lyricsto "myvoice"
+% if attributes['render']=='Real':
+			${self.myLyricsReal()}
+% endif
+% if attributes['render']=='Fake':
+			${self.myLyricsFake()}
+% endif
+% if attributes['render']=='Unknown':
+			${self.myLyricsUnknown()}
+% endif
+		\new Lyrics="Lyrics" \lyricsto "myvoice"
+% if attributes['render']=='Real':
+			${self.myLyricsRealmore()}
+% endif
+% if attributes['render']=='Fake':
+			${self.myLyricsFakemore()}
+% endif
+% if attributes['render']=='Unknown':
+			${self.myLyricsUnknownmore()}
+% endif
+	>>
+	\midi {
+	}
+}
+% endif
 
 % if attributes['type']=='harmony_tune_lyrics':
 %% score for printing
@@ -335,4 +441,7 @@ include(predefined-guitar-fretboards.ly)
 % endif
 % if attributes['type']=='own':
 ${self.myOwn()}
+% endif
+% if attributes['extra']:
+${self.extra()}
 % endif

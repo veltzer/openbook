@@ -2,6 +2,7 @@
 <%
 	attributes['jazzTune']=True
 	attributes['type']="harmony_tune_lyricsmore"
+	attributes['render']="Real"
 
 	attributes['title']="Autumn Leaves"
 	attributes['subtitle']="Les Feuilles Mortes"
@@ -26,7 +27,8 @@
 	- document the youtube performances.
 </%doc>
 
-myChordsReal=\chordmode {
+<%def name="myChordsReal()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -60,8 +62,10 @@ myChordsReal=\chordmode {
 
 	\endChords
 }
+</%def>
 
-myVoiceReal=\relative e' {
+<%def name="myVoiceReal()">
+\relative e' {
 	\time 4/4
 	\key e \minor
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -87,9 +91,11 @@ myVoiceReal=\relative e' {
 	c c a a | fis2. c'4 | b2 b~ | b2. e,4 |
 	a2. g4 | fis2 g4 b, | e1 | r4 <\parenthesize e> <\parenthesize fis> <\parenthesize g> |
 }
+</%def>
 
+<%def name="myLyricsReal()">
 %% lyrics are taken from the fake book and adjusted for the real one
-myLyricsReal=\lyricmode {
+\lyricmode {
 	The fall -- ing leaves __ drift by the win -- dow, __
 	The Au -- tumn Leaves, __ of red and gold.
 	I see your
@@ -103,13 +109,17 @@ myLyricsReal=\lyricmode {
 
 	The fall -- ing
 }
+</%def>
 
-myLyricsRealmore=\lyricmode {
+<%def name="myLyricsRealmore()">
+\lyricmode {
 	_ _ _ lips, __ the sum -- mer kiss -- es,
 	The sun -- burned hands __
 }
+</%def>
 
-myChordsFake=\chordmode {
+<%def name="myChordsFake()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -136,8 +146,10 @@ myChordsFake=\chordmode {
 
 	\endChords
 }
+</%def>
 
-myVoiceFake=\relative e' {
+<%def name="myVoiceFake()">
+\relative e' {
 	\time 4/4
 	\key e \minor
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -157,7 +169,9 @@ myVoiceFake=\relative e' {
 	c c a a | fis2. c'4 | b2 b~ | b e, |
 	a2. g4 | fis2 g4 b, | e1~ | e4 r r2 |
 }
+</%def>
 
+<%def name="myLyricsFake()">
 myLyricsFake=\lyricmode {
 	The fall -- ing leaves __ drift by the win -- dow, __
 	The Au -- tumn Leaves, __ of red and gold.
@@ -169,3 +183,4 @@ myLyricsFake=\lyricmode {
 	But I miss you most of all my dar -- ling, __
 	When Au -- tumn Leaves start to fall. __
 }
+</%def>
