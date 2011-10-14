@@ -130,11 +130,8 @@ startChords=\set chordChanges = ##t
 endChords={}
 %% endif
 
-% if attributes['guitar']:
-include(predefined-guitar-fretboards.ly)
-% endif
-
 <%
+	# these are the default values for the variables
 	attributes['title']=""
 	attributes['subtitle']=""
 	attributes['structure']=""
@@ -150,9 +147,15 @@ include(predefined-guitar-fretboards.ly)
 	attributes['idyoutube']=""
 	attributes['type']=""
 	attributes['render']=""
+	attributes['guitar']=False
+	attributes['jazzTune']=False
 %>
 %% this causes the variables to be defined...
 ${self.body()}
+
+% if attributes['guitar']:
+include(predefined-guitar-fretboards.ly)
+% endif
 
 \header {
 	enteredby=\enteredbyval

@@ -5,13 +5,13 @@
 	attributes['render']="Own"
 	attributes['guitar']=True
 
-	title="Ain't No Sunshine"
-	composer="Bill Withers"
-	style="Pop"
-	piece="Med. Ballad"
+	attributes['title']="Ain't No Sunshine"
+	attributes['composer']="Bill Withers"
+	attributes['style']="Pop"
+	attributes['piece']="Med. Ballad"
 
-	completion="0"
-	uuid="669540fe-d851-11df-ae78-0019d11e5a41"
+	attributes['completion']="0"
+	attributes['uuid']="669540fe-d851-11df-ae78-0019d11e5a41"
 %>
 
 <%doc>
@@ -20,7 +20,7 @@
 	- finish the tune and the chords...
 </%doc>
 
-
+<%def name="myOwn()">
 \score {
 <<
 \chordmode {
@@ -77,3 +77,4 @@
 	}
 	\layout {}
 }
+</%def>
