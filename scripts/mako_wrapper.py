@@ -21,7 +21,7 @@ p_output=sys.argv[2]
 #file.write(result.encode(encoding))
 #file.close()
 
-mylookup = mako.lookup.TemplateLookup(directories=['.'],input_encoding=input_encoding)
+mylookup = mako.lookup.TemplateLookup(directories=['.'],input_encoding=input_encoding,output_encoding=output_encoding)
 template=mako.template.Template(filename=p_input,lookup=mylookup,output_encoding=output_encoding,input_encoding=input_encoding)
 file=open(p_output,'w')
 file.write(template.render(attributes={}))

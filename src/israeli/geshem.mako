@@ -1,6 +1,6 @@
-include(src/include/common.lyi)
-\header {
-	default_header_heb
+<%inherit file="/src/include/common.makoi"/>
+<%
+	attributes['jazzTune']=True
 
 	title="גשם"
 	composer="יחיאל אמסלם"
@@ -13,8 +13,7 @@ include(src/include/common.lyi)
 
 	idyoutube="1CBj7q51-BQ"
 	lyricsurl="http://www.mp3music.co.il/lyrics/448.html"
-}
-jazzTune
+%>
 
 include(predefined-guitar-fretboards.ly)
 

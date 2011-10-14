@@ -1,6 +1,6 @@
-include(src/include/common.lyi)
-\header {
-	default_header_heb
+<%inherit file="/src/include/common.makoi"/>
+<%
+	attributes['jazzTune']=True
 
 	title="כמה יפה פורח הלילך"
 	piece="בלדה מתונה"
@@ -8,10 +8,10 @@ include(src/include/common.lyi)
 	completion="2"
 
 	uuid="4ae1d01a-a26f-11df-8e51-0019d11e5a41"
-}
-jazzTune
+%>
 
 <%doc>
+	DONE:
 	TODO:
 </%doc>
 

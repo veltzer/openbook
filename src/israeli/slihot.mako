@@ -1,21 +1,22 @@
-include(src/include/common.lyi)
-\header {
-	default_header_heb
+<%inherit file="/src/include/common.makoi"/>
+<%
+	attributes['jazzTune']=True
+	attributes['type']="harmony_tune_lyricsmore"
+	attributes['render']="My"
 
-	title="סליחות"
-	subtitle="באת אלי"
-	composer="עודד לרר"
-	piece="בלדה מתונה"
-	poet="לאה גולדברג"
-	singer="יהודית רביץ"
+	attributes['title']=u"סליחות"
+	attributes['subtitle']=u"באת אלי"
+	attributes['composer']=u"עודד לרר"
+	attributes['piece']=u"בלדה מתונה"
+	attributes['poet']=u"לאה גולדברג"
+	attributes['singer']=u"יהודית רביץ"
 
-	completion="5"
-	uuid="11ad0c38-6dc9-4318-873f-5e7e80b7c8a8"
+	attributes['completion']="5"
+	attributes['uuid']="11ad0c38-6dc9-4318-873f-5e7e80b7c8a8"
 
-	idyoutube="DZd_Ik2SNcg"
-	idyoutube="jZ_8rSmLFwU"
-}
-jazzTune
+	attributes['idyoutube']="DZd_Ik2SNcg"
+	attributes['idyoutube']="jZ_8rSmLFwU"
+%>
 
 <%doc>
 	DONE:
@@ -25,9 +26,11 @@ jazzTune
 	- check the rythm of the melody to see if it's ok.
 	- add the ending.
 	- check the singers word intonation to check if it's ok.
+	- document the you tube performances.
 </%doc>
 
-myChords=\chordmode {
+<%def name="myChordsMy()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -69,7 +72,10 @@ myChords=\chordmode {
 
 	\endChords
 }
-myVoice=\relative c' {
+</%def>
+
+<%def name="myVoiceMy()">
+\relative c' {
 	\time 3/4
 	\key a \minor
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -94,7 +100,10 @@ myVoice=\relative c' {
 	c'2 a8 e | f2 g8 a | b4 a g | f e f8 g |
 	a2 b8 c | d2 b8 a | gis2 a8 b | a2. ~ | a2. |
 }
-myLyrics=\lyricmode {
+</%def>
+
+<%def name="myLyricsMy()">
+\lyricmode {
 	_ _
 	_ _ _ _ _ _ _ _ _ _ _ _ _
 	_ _ _ _ _ _ _ _ _
@@ -111,7 +120,10 @@ myLyrics=\lyricmode {
 	וריח _ _ _ יל -- דות רי -- ח ד -- בק ו -- או -- רן
 	הוא ני -- חו -- ח לי -- לו של ה -- גוף, של ה -- גוף.
 }
-myLyricsmore=\lyricmode {
+</%def>
+
+<%def name="myLyricsMymore()">
+\lyricmode {
 	_ _
 	_ _ _ _ _ _ _ _ _ _ _ _ _
 	_ _ _ _ _ _ _ _ _
@@ -121,5 +133,5 @@ myLyricsmore=\lyricmode {
 	תנני ללכת תנני ללכת
 	לכרוע על חוף הסליחה.
 }
+</%def>
 
-include(src/include/harmony_tune_lyricsmore.lyi)

@@ -1,27 +1,29 @@
-include(src/include/common.lyi)
-\header {
-	default_header_heb
+<%inherit file="/src/include/common.makoi"/>
+<%
+	attributes['jazzTune']=True
+	attributes['type']="harmony_tune_lyrics"
+	attributes['render']="My"
 
-	title="בשדה ירוק"
-	composer="דני סנדרסון"
-	singer="דני סנדרסון"
-	piece="בלדה איטית"
-	poet="מאיר אריאל"
+	attributes['title']="בשדה ירוק"
+	attributes['composer']="דני סנדרסון"
+	attributes['singer']="דני סנדרסון"
+	attributes['piece']="בלדה איטית"
+	attributes['poet']="מאיר אריאל"
 
-	completion="4"
+	attributes['completion']="4"
 
-	idyoutube="En9qtX5VnLE"
+	attributes['idyoutube']="En9qtX5VnLE"
 
-	uuid="42424480-a26f-11df-abb4-0019d11e5a41"
-}
-jazzTune
+	attributes['uuid']="42424480-a26f-11df-abb4-0019d11e5a41"
+%>
 
 <%doc>
+	DONE:
 	TODO:
+	- mark what has been done with this tune.
 </%doc>
 
-\score {
-<<
+<%def name="myChordsMy()">
 \chordmode {
 	\startChords
 
@@ -39,7 +41,10 @@ jazzTune
 
 	\endChords
 }
-\new Voice="melody" \relative f' {
+</%def>
+
+<%def name="myVoiceMy()">
+\relative f' {
 	\time 4/4
 	\key f \major
 	\partial 4 a8 c8 |
@@ -52,7 +57,10 @@ jazzTune
 
 	d4 a'8 g4 f8 e4 |
 }
-\new Lyrics \lyricsto "melody" {
+</%def>
+
+<%def name="myLyricsMy()">
+\lyricmode {
 	ב -- ש -- דה י -- רוק, על גב -- עה תלו -- לה.
 	ב -- מ -- קום ר -- חוק, סוף ד -- רך לא סלו -- לה.
 	ב -- ש -- דה י -- רוק, על גב -- עה תלו -- לה.
@@ -93,12 +101,4 @@ jazzTune
 	בשדה ירוק, על גבעה תלולה
 	אהבת חיי ליפול עוד עלולה
 }
->>
-	\midi {
-		\context {
-			\Score
-			tempoWholesPerMinute = #(ly:make-moment 110 4)
-		}
-	}
-	\layout {}
-}
+</%def>
