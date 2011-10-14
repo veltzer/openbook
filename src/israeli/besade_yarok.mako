@@ -4,11 +4,11 @@
 	attributes['type']="harmony_tune_lyrics"
 	attributes['render']="My"
 
-	attributes['title']="בשדה ירוק"
-	attributes['composer']="דני סנדרסון"
-	attributes['singer']="דני סנדרסון"
-	attributes['piece']="בלדה איטית"
-	attributes['poet']="מאיר אריאל"
+	attributes['title']=u"בשדה ירוק"
+	attributes['composer']=u"דני סנדרסון"
+	attributes['singer']=u"דני סנדרסון"
+	attributes['piece']=u"בלדה איטית"
+	attributes['poet']=u"מאיר אריאל"
 
 	attributes['completion']="4"
 
