@@ -1,7 +1,7 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
-	attributes['redner']="Unknown"
+	attributes['render']="Unknown"
 	attributes['type']="tune"
 
 	attributes['title']="It might as well be spring"
