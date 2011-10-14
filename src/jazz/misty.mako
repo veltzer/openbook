@@ -6,7 +6,6 @@
 	default_header
 
 	title="Misty"
-	subtitle=""
 	composer="Errol Garner"
 	style="Jazz"
 	piece="Ballad"

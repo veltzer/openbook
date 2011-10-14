@@ -6,7 +6,6 @@
 	default_header
 
 	title="Stella By Starlight"
-	subtitle=""
 	composer="Victor Young"
 	style="Jazz"
 	piece="Slowly, with Expression"

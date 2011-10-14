@@ -5,7 +5,6 @@
 	attributes['render']="Real"
 
 	attributes['title']="Just Friends"
-	attributes['subtitle']=""
 	attributes['composer']="John Klenner"
 	attributes['style']="Jazz"
 	attributes['piece']="Medium Swing"

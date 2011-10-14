@@ -6,7 +6,6 @@
 	default_header
 
 	title="My Foolish Heart"
-	subtitle=""
 	composer="Victor Young"
 	style="Jazz"
 	piece="Slowly & Expressively"

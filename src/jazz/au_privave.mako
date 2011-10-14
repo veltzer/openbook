@@ -4,11 +4,9 @@
 	attributes['type']="harmony_tune"
 	attributes['render']="Aebersold"
 	attributes['title']="Au Privave"
-	attributes['subtitle']=""
 	attributes['composer']="Charlie Parker"
 	attributes['style']="Jazz"
 	attributes['piece']="Upbeat Swing"
-	attributes['poet']=""
 	attributes['copyright']="1956, Atlantic Music Corp."
 	attributes['copyrightextra']="1978, Atlantic Music Corp."
 
