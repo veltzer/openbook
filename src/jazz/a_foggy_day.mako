@@ -3,7 +3,6 @@
 	attributes['jazzTune']=True
 	attributes['type']="harmony_tune_lyrics"
 	attributes['render']="Fake"
-
 	attributes['title']="A Foggy Day"
 	attributes['subtitle']="From 'A Damsel In Distress'"
 	attributes['composer']="George Gershwin"
@@ -15,12 +14,11 @@
 	attributes['completion']="5"
 	attributes['uuid']="87da6ece-a26e-11df-95d7-0019d11e5a41"
 	attributes['structure']="AB"
-	# Wynton Marsalis Quartet
+	attributes['idyoutuberemark']="Wynton Marsalis Quartet"
 	attributes['idyoutube']="-P2xoeGoWMs"
-	# Mel Torme (one of the greatest vocal versions)
+	attributes['idyoutuberemark']="Mel Torme (one of the greatest vocal versions)"
 	attributes['idyoutube']="tVCDZaApwV8"
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/A-Foggy-Day-lyrics-Frank-Sinatra/0F2EB16090A785424825692000077664"
-
 %>
 
 <%doc>

@@ -1,6 +1,9 @@
-include(src/include/common.lyi)
-\header {
-	default_header
+<%inherit file="/src/include/common.makoi"/>
+<%
+	attributes['jazzTune']=True
+	attributes['type']="own"
+	attributes['render']="Own"
+	attributes['guitar']=True
 
 	title="Ain't No Sunshine"
 	composer="Bill Withers"
@@ -9,15 +12,14 @@ include(src/include/common.lyi)
 
 	completion="0"
 	uuid="669540fe-d851-11df-ae78-0019d11e5a41"
-}
-jazzTune
+%>
 
 <%doc>
+	DONE:
 	TODO:
 	- finish the tune and the chords...
 </%doc>
 
-include(predefined-guitar-fretboards.ly)
 
 \score {
 <<

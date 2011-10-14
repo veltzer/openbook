@@ -130,6 +130,10 @@ startChords=\set chordChanges = ##t
 endChords={}
 %% endif
 
+% if attributes['guitar']:
+include(predefined-guitar-fretboards.ly)
+% endif
+
 <%
 	attributes['title']=""
 	attributes['subtitle']=""
