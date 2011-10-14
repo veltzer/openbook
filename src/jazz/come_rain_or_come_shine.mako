@@ -4,19 +4,19 @@
 	attributes['type']="harmony_tune_lyrics"
 	attributes['render']="Fake"
 
-	title="Come Rain Or Come Shine"
-	composer="Harold Arlen"
-	poet="Johnny Mercer"
-	style="Jazz"
-	piece="Modeartely Slow"
-	copyright="1946, by A-M Music Corp. Copyright Renewed, all rights controlled by Chappell & Co., Inc."
+	attributes['title']="Come Rain Or Come Shine"
+	attributes['composer']="Harold Arlen"
+	attributes['poet']="Johnny Mercer"
+	attributes['style']="Jazz"
+	attributes['piece']="Modeartely Slow"
+	attributes['copyright']="1946, by A-M Music Corp. Copyright Renewed, all rights controlled by Chappell & Co., Inc."
 
-	completion="5"
-	uuid="b109cd80-a26e-11df-8c11-0019d11e5a41"
+	attributes['completion']="5"
+	attributes['uuid']="b109cd80-a26e-11df-8c11-0019d11e5a41"
 
-	idyoutube="XqECFy_qzkM"
+	attributes['idyoutube']="XqECFy_qzkM"
 
-	remark="the my set of chords is from Amit Golan"
+	attributes['remark']="the my set of chords is from Amit Golan"
 %>
 
 <%doc>

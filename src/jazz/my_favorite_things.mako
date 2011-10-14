@@ -4,14 +4,14 @@
 	attributes['type']="harmony_tune"
 	attributes['render']="Unknown"
 
-	title="My Favorite Things"
-	composer="Richard Rodgers"
-	poet="Oscar Hammerstein"
-	style="Jazz"
-	piece="Med Swing"
+	attributes['title']="My Favorite Things"
+	attributes['composer']="Richard Rodgers"
+	attributes['poet']="Oscar Hammerstein"
+	attributes['style']="Jazz"
+	attributes['piece']="Med Swing"
 
-	completion="0"
-	uuid="02c22208-a26f-11df-98fd-0019d11e5a41"
+	attributes['completion']="0"
+	attributes['uuid']="02c22208-a26f-11df-98fd-0019d11e5a41"
 %>
 
 <%doc>

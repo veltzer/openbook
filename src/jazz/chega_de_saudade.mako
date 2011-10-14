@@ -4,15 +4,15 @@
 	attributes['type']="harmony_tune"
 	attributes['render']="Unknown"
 
-	title="Chega De Saudade"
-	subtitle="No More Blues"
-	composer="Antonio Carlos Jobim"
-	copyright="1962,1967, Editora Musical Arapua, Sao Paulo, Brazil"
-	style="Jazz"
-	piece="Med Swing"
+	attributes['title']="Chega De Saudade"
+	attributes['subtitle']="No More Blues"
+	attributes['composer']="Antonio Carlos Jobim"
+	attributes['copyright']="1962,1967, Editora Musical Arapua, Sao Paulo, Brazil"
+	attributes['style']="Jazz"
+	attributes['piece']="Med Swing"
 
-	completion="0"
-	uuid="a8d44d0c-a26e-11df-a32b-0019d11e5a41"
+	attributes['completion']="0"
+	attributes['uuid']="a8d44d0c-a26e-11df-a32b-0019d11e5a41"
 %>
 
 <%doc>

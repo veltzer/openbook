@@ -4,24 +4,24 @@
 	attributes['type']="harmony_tune_lyricsmore"
 	attributes['render']="Real"
 
-	title="Once I Loved"
-	composer="Antonio Carlos Jobim"
-	style="Jazz"
-	piece="Med.-Slow Bossa Nova"
-	poet="Vinicius DeMoraes & Ray Gilbert"
-	copyright="1965, Ipanema Music."
+	attributes['title']="Once I Loved"
+	attributes['composer']="Antonio Carlos Jobim"
+	attributes['style']="Jazz"
+	attributes['piece']="Med.-Slow Bossa Nova"
+	attributes['poet']="Vinicius DeMoraes & Ray Gilbert"
+	attributes['copyright']="1965, Ipanema Music."
 
-	completion="5"
-	uuid="18294374-a26f-11df-a5f0-0019d11e5a41"
+	attributes['completion']="5"
+	attributes['uuid']="18294374-a26f-11df-a5f0-0019d11e5a41"
 
-	structure="AAB"
+	attributes['structure']="AAB"
 
-	idyoutuberemark="Joe Henderson accompanied by guitar doing Bossa..."
-	idyoutube="rJxHFW2S-Eo"
-	idyoutuberemark="Astrud Gilberto (original Bossa Style with Orchestra)"
-	idyoutube="BwP0eIRU-dQ"
+	attributes['idyoutuberemark']="Joe Henderson accompanied by guitar doing Bossa..."
+	attributes['idyoutube']="rJxHFW2S-Eo"
+	attributes['idyoutuberemark']="Astrud Gilberto (original Bossa Style with Orchestra)"
+	attributes['idyoutube']="BwP0eIRU-dQ"
 
-	lyricsurl="http://www.sing365.com/music/lyric.nsf/Once-I-Loved-lyrics-Ella-Fitzgerald/24CD6F6E245519E348256AAB0009C557"
+	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Once-I-Loved-lyrics-Ella-Fitzgerald/24CD6F6E245519E348256AAB0009C557"
 %>
 
 <%doc>

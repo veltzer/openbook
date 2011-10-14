@@ -4,21 +4,21 @@
 	attributes['type']="harmony_tune_lyricsmore"
 	attributes['render']="Ultimate"
 
-	title="They All Laughed"
-	composer="George Gershwin"
-	style="Jazz"
-	piece="Medium Swing"
-	poet="Ira Gershwin"
-	copyright="1937, Gershwin Publishing Corporation"
-	copyrightextra="Copyright Renewed, Assigned to Chappell & Co, Inc."
-	structure="AA'BA''"
+	attributes['title']="They All Laughed"
+	attributes['composer']="George Gershwin"
+	attributes['style']="Jazz"
+	attributes['piece']="Medium Swing"
+	attributes['poet']="Ira Gershwin"
+	attributes['copyright']="1937, Gershwin Publishing Corporation"
+	attributes['copyrightextra']="Copyright Renewed, Assigned to Chappell & Co, Inc."
+	attributes['structure']="AA'BA''"
 
-	completion="5"
-	uuid="89e1c354-f2a2-11e0-9cf1-0019d11e5a41"
+	attributes['completion']="5"
+	attributes['uuid']="89e1c354-f2a2-11e0-9cf1-0019d11e5a41"
 
-	idyoutube="9InLhEc6K2g"
-	idyoutube="TdLm9qRRdh4"
-	lyricsurl="http://www.sing365.com/music/lyric.nsf/They-All-Laughed-lyrics-Ella-Fitzgerald/2123DA2C32C02AF848256AAB000AB847"
+	attributes['idyoutube']="9InLhEc6K2g"
+	attributes['idyoutube']="TdLm9qRRdh4"
+	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/They-All-Laughed-lyrics-Ella-Fitzgerald/2123DA2C32C02AF848256AAB000AB847"
 %>
 
 <%doc>
