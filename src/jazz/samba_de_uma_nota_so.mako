@@ -25,7 +25,8 @@
 	- add youtube performances.
 </%doc>
 
-myChordsUnknown=\chordmode {
+<%def name="myChordsUnknown()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -41,8 +42,10 @@ myChordsUnknown=\chordmode {
 
 	\endChords
 }
+</%def>
 
-myVoiceUnknown={
+<%def name="myVoiceUnknown()">
+\relative c' {
 	\time 4/4
 	\key bes \major
 	\clef treble
@@ -97,8 +100,10 @@ myVoiceUnknown={
 	bes' bes'8 bes'~ bes' bes'4 bes'8~ |
 	bes'2 r8 f'4 f'8 |
 }
+</%def>
 
-myLyricsUnknown=\lyrics {
+<%def name="myLyricsUnknown()">
+\lyrics {
 	This is just a lit __ -- tle sam __ -- ba
 	built up -- on a sin __ -- gle note. __
 	Oth -- er notes are bound __ to fol __ -- low
@@ -121,3 +126,4 @@ myLyricsUnknown=\lyrics {
 	he will find him -- self __ with no __ show.
 	Bet -- ter play __ the note __ you know. __
 }
+</%def>

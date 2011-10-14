@@ -1,28 +1,27 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['render']="Real"
+	attributes['type']="harmony_tune_lyrics"
+
+	attributes['title']="Stella By Starlight"
+	attributes['composer']="Victor Young"
+	attributes['style']="Jazz"
+	attributes['piece']="Slowly, with Expression"
+	attributes['poet']="Ned Washington"
+
+	attributes['completion']="5"
+	attributes['uuid']="afea10ce-edc0-11e0-9cc4-0019d11e5a41"
+
+	attributes['idyoutube']="Iqs3w1Q5sto"
+	attributes['idyoutube']="IbzxJuvbH08"
+
+	attributes['lyricsurl']="http://www.lyrics007.com/Ella%20Fitzgerald%20Lyrics/Stella%20By%20Starlight%20Lyrics.html"
+
+	attributes['structure']="AB"
+
+	attributes['remark']="there are a couple of different lyric versions for this song"
 %>
-\header {
-	default_header
-
-	title="Stella By Starlight"
-	composer="Victor Young"
-	style="Jazz"
-	piece="Slowly, with Expression"
-	poet="Ned Washington"
-
-	completion="5"
-	uuid="afea10ce-edc0-11e0-9cc4-0019d11e5a41"
-
-	idyoutube="Iqs3w1Q5sto"
-	idyoutube="IbzxJuvbH08"
-
-	lyricsurl="http://www.lyrics007.com/Ella%20Fitzgerald%20Lyrics/Stella%20By%20Starlight%20Lyrics.html"
-
-	structure="AB"
-
-	remark="there are a couple of different lyric versions for this song"
-}
 
 <%doc>
 	DONE:
@@ -36,8 +35,8 @@
 	- fill in the copyright.
 </%doc>
 
-%% this version of the chords is from the real book...
-myChords=\chordmode {
+<%def name="myChordsReal()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -64,9 +63,10 @@ myChords=\chordmode {
 
 	\endChords
 }
+</%def>
 
-%% this version of the tune is from the real book...
-myVoice=\relative c'' {
+<%def name="myVoiceReal()">
+\relative c'' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
@@ -87,9 +87,11 @@ myVoice=\relative c'' {
 	ges1~ | ges4 ges ges f | f1~ | f1 |
 
 }
+</%def>
 
+<%def name="myLyricsReal()">
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
-myLyrics=\lyricmode {
+\lyricmode {
 	The song a rob -- in sings,
 	Through years of end -- less springs,
 	The mur -- mur of a brook at even -- ing tides.
@@ -101,5 +103,4 @@ myLyrics=\lyricmode {
 	My heart and I ag -- ree,
 	She's eve -- ry -- thing on_this earth to me.
 }
-
-include(src/include/harmony_tune_lyrics.lyi)
+</%def>

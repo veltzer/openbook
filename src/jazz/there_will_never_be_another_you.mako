@@ -1,35 +1,33 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['render']="Fake"
+	attributes['type']="harmony_tune_lyrics"
+
+	attributes['title']="There Will Never Be Another You"
+	attributes['composer']="Harry Warren"
+	attributes['style']="Jazz"
+	attributes['piece']="Easy Swing"
+	attributes['poet']="Mack Gordon"
+	attributes['copyright']="1942, 1987 Twentieth Century Music Corporation"
+	attributes['copyrightextra']="Renewed 1970 Twentieth Century Music Corporation. All Rights Controlled by Morley Music Co. International Copyright Secured. All Rights Reserved."
+	attributes['structure']="AB"
+
+	attributes['completion']="5"
+	attributes['uuid']="e30e1074-eaf3-11e0-a377-0019d11e5a41"
+
+	attributes['idyoutube']="kh_NnsbIqNQ"
+	attributes['idyoutube']="Til3lV_ItZE"
 %>
-\header {
-	default_header
-
-	title="There Will Never Be Another You"
-	composer="Harry Warren"
-	style="Jazz"
-	piece="Easy Swing"
-	poet="Mack Gordon"
-	copyright="1942, 1987 Twentieth Century Music Corporation"
-	%% Renewed 1970 Twentieth Century Music Corporation
-	%% All Rights Controlled by Morley Music Co.
-	%% International Copyright Secured. All Rights Reserved.
-	structure="AB"
-
-	completion="5"
-	uuid="e30e1074-eaf3-11e0-a377-0019d11e5a41"
-
-	idyoutube="kh_NnsbIqNQ"
-	idyoutube="Til3lV_ItZE"
-}
 
 <%doc>
+	DONE:
 	TODO:
 	- in the real book version move the last chord to be written in parenthesis (I don't know how to do that).
 </%doc>
 
-%% this version of the chords is from the real book...
-myChordsReal=\chordmode {
+<%def name="myChordsReal()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -57,9 +55,10 @@ myChordsReal=\chordmode {
 
 	\endChords
 }
+</%def>
 
-%% this version of the tune is from the real book...
-myVoiceReal=\relative c' {
+<%def name="myVoiceReal()">
+\relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
@@ -80,9 +79,11 @@ myVoiceReal=\relative c' {
 	bes4 ees d c | bes ees, bes' aes | f2 g | ees1 |
 
 }
+</%def>
 
+<%def name="myLyricsReal()">
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
-myLyricsReal=\lyricmode {
+\lyricmode {
 	There will be man -- y oth -- er nights like this, __
 	and I'll be stand -- ing here with some -- one new, __
 	There will be oth -- er songs to sing, an -- oth -- er fall, an -- oth -- er spring,
@@ -93,9 +94,10 @@ myLyricsReal=\lyricmode {
 	Yes, I may dream a mil -- lion dreams, but how can they come true,
 	if there will nev -- er ev -- er be an -- oth -- er you?
 }
+</%def>
 
-%% this version of the chords is from the fake book...
-myChords=\chordmode {
+<%def name="myChordsFake()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -120,9 +122,10 @@ myChords=\chordmode {
 
 	\endSong
 }
+</%def>
 
-%% this version of the tune is from the fake book...
-myVoice=\relative c' {
+<%def name="myVoiceFake()">
+\relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
@@ -142,9 +145,10 @@ myVoice=\relative c' {
 	ees4 c bes aes | g f g4. aes8 | bes4 g f ees | d'2. c4 |
 	bes ees d c | bes ees, bes' aes | f2 g | ees2. r4 |
 }
+</%def>
 
-%% this version of the lyrics is from the fake book...
-myLyrics=\lyricmode {
+<%def name="myLyricsFake()">
+\lyricmode {
 	There will be man -- y oth -- er nights like this, __
 	and I'll be stand -- ing here with some -- one new, __
 	There will be oth -- er songs to sing, an -- oth -- er fall, an -- oth -- er spring,
@@ -155,5 +159,4 @@ myLyrics=\lyricmode {
 	Yes, I may dream a mil -- lion dreams, but how can they come true,
 	if there will nev -- er ev -- er be an -- oth -- er you?
 }
-
-include(src/include/harmony_tune_lyrics.lyi)
+</%def>

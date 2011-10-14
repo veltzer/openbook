@@ -4,19 +4,19 @@
 	attributes['type']="harmony_tune_lyricsmore"
 	attributes['render']="Real"
 
-	title="Someone To Watch Over Me"
-	composer="George Gershwin"
-	poet="Ira Gershwin"
-	style="Jazz Ballad"
-	piece="Jazz Ballad"
+	attributes['title']="Someone To Watch Over Me"
+	attributes['composer']="George Gershwin"
+	attributes['poet']="Ira Gershwin"
+	attributes['style']="Jazz Ballad"
+	attributes['piece']="Jazz Ballad"
 
-	structure="AABA"
+	attributes['structure']="AABA"
 
-	completion="5"
-	uuid="75cbb354-1411-11e0-9a9e-0019d11e5a41"
+	attributes['completion']="5"
+	attributes['uuid']="75cbb354-1411-11e0-9a9e-0019d11e5a41"
 
-	idyoutube="CCTIpclVQe4"
-	idyoutube="gLqsIIrk5wQ"
+	attributes['idyoutube']="CCTIpclVQe4"
+	attributes['idyoutube']="gLqsIIrk5wQ"
 %>
 
 <%doc>
@@ -26,10 +26,11 @@
 	- do the intro.
 	- match the other verse lyrics to the melody.
 	- fill in the copyright.
-	- add performances that I like.
+	- document the youtube performances.
 </%doc>
 
-myChordsReal=\chordmode {
+<%def name="myChordsReal()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -65,8 +66,10 @@ myChordsReal=\chordmode {
 
 	\endChords
 }
+</%def>
 
-myVoiceReal=\relative aes {
+<%def name="myVoiceReal()">
+\relative aes {
 	\time 4/4
 	\key aes \major
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -87,9 +90,11 @@ myVoiceReal=\relative aes {
 	r4 aes8 bes c ees f aes | bes bes4 aes8 g2 | aes8 aes4 g8 f2 | g8 g4 f8 ees2 |
 	r4 f ees des | aes'2 aes,8 bes4. | aes1 | r |
 }
+</%def>
 
+<%def name="myLyricsReal()">
 %% lyrics from the internet adjusted for the real book
-myLyricsReal=\lyricmode {
+\lyricmode {
 %%	There's a saying old, says that love is blind
 %%	Still we're often told, "seek and ye shall find"
 %%	So I'm going to seek a certain lad I've had in mind
@@ -121,8 +126,12 @@ myLyricsReal=\lyricmode {
 
 %%	Someone to watch over me
 }
-myLyricsRealmore=\lyricmode {
+</%def>
+
+<%def name="myLyricsRealmore()">
+\lyricmode {
 	I'm a lit -- tle lamb who's lost in the wood
 	I know I could, al -- ways be good
 	To one who'll watch o -- ver %% me
 }
+</%def>

@@ -26,7 +26,8 @@
 	- fill in the copyright
 </%doc>
 
-myChordsReal=\chordmode {
+<%def name="myChordsReal()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -55,7 +56,10 @@ myChordsReal=\chordmode {
 
 	\endChords
 }
-myVoiceReal=\relative a {
+</%def>
+
+<%def name="myVoiceReal()">
+\relative a {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 110
 	\time 4/4
@@ -76,8 +80,11 @@ myVoiceReal=\relative a {
 		}
 	}
 }
+</%def>
+
+<%def name="myLyricsReal()">
 %% lyrics were taken from the internet and adjusted for the real book
-myLyricsReal=\lyricmode {
+\lyricmode {
 	There was a boy,
 	A ver -- y strange en -- chan -- ted boy
 	They say he wan -- dered ver -- y far ver -- y far
@@ -94,9 +101,13 @@ myLyricsReal=\lyricmode {
 	Is just to love and be loved
 	In re -- turn.'
 }
-myLyricsRealmore=\lyricmode {
+</%def>
+
+<%def name="myLyricsRealmore()">
+\lyricmode {
 	_ then one day,
 	A mag -- ic day he passed my way,
 	And while we spoke of man -- y things, Fools and kings,
 	This he said to me: 'The
 }
+</%def>

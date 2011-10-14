@@ -85,6 +85,7 @@
 		}
 	}
 }
+</%def>
 
 <%def name="myLyricsReal()">
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
@@ -109,8 +110,8 @@
 
 <%def name="extra()">
 %% More lyrics
-verticalSpace
-verticalSpace
+\verticalSpace
+\verticalSpace
 \markup {
 	\small { %% \teeny \tiny \small \normalsize \large \huge
 		\fill-line {

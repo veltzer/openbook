@@ -1,32 +1,32 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['type']="harmony_tune_lyrics"
+	attributes['render']="Fake"
+
+	attributes['title']="My Romance"
+	attributes['subtitle']="From 'Jumbo'"
+	attributes['composer']="Richard Rodgers"
+	attributes['poet']="Lorenz Hart"
+	attributes['style']="Jazz"
+	attributes['piece']="Modeartely Slow"
+	attributes['copyright']="1935, T.B. Harms Company. Copyright Renewed, (c/o The Welk Music Group, Santa Monica, CA 90401)"
+
+	attributes['completion']="5"
+	attributes['uuid']="6a5d2730-c7dd-11df-b3d0-0019d11e5a41"
+
+	attributes['idyoutube']="aCO1Gd0jRto"
 %>
-\header {
-	default_header
-
-	title="My Romance"
-	subtitle="From 'Jumbo'"
-	composer="Richard Rodgers"
-	poet="Lorenz Hart"
-	style="Jazz"
-	piece="Modeartely Slow"
-	copyright="1935, T.B. Harms Company. Copyright Renewed, (c/o The Welk Music Group, Santa Monica, CA 90401)"
-
-	completion="5"
-	uuid="6a5d2730-c7dd-11df-b3d0-0019d11e5a41"
-
-	idyoutube="aCO1Gd0jRto"
-}
 
 <%doc>
 	DONE:
 	TODO:
 	- fill in whats been done for this tune.
+	- document the youtube performance.
 </%doc>
 
-%% this set of chords is taken from the fake book
-myChordsFake=\chordmode {
+<%def name="myChordsFake()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -55,8 +55,10 @@ myChordsFake=\chordmode {
 
 	\endChords
 }
-%% this voice is taken from the fakebook
-myVoiceFake=\relative c' {
+</%def>
+
+<%def name="myVoiceFake()">
+\relative c' {
 	\time 4/4
 	\key c \major
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -79,8 +81,10 @@ myVoiceFake=\relative c' {
 	e2. c8 d | e4 c4 a4 f4 | c'1~ | c2. r4 |
 
 }
-%% these lyrics are taken from the fake book
-myLyricsFake=\lyricmode {
+</%def>
+
+<%def name="myLyricsFake()">
+\lyricmode {
 	My Ro -- mance does -- n't have to have a moon in the sky,
 	My Ro -- mance does -- n't need a blue la -- goon stand -- ing by;
 	No month of May, No twin -- kling stars,
@@ -91,5 +95,4 @@ myLyricsFake=\lyricmode {
 	Wide a -- wake I can make my most fan -- tas -- tic dreams come true;
 	My Ro -- mance does -- n't need a thing but you.
 }
-
-include(src/include/harmony_tune_lyrics.lyi)
+</%def>

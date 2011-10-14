@@ -4,14 +4,14 @@
 	attributes['type']="harmony_tune_lyrics"
 	attributes['render']="Unknown"
 
-	title="What a wonderful world"
-	composer="George David Weiss & Bob Thiele"
-	poet="George David Weiss & Bob Thiele"
-	style="Jazz"
-	piece="Med Swing"
+	attributes['title']="What a wonderful world"
+	attributes['composer']="George David Weiss & Bob Thiele"
+	attributes['poet']="George David Weiss & Bob Thiele"
+	attributes['style']="Jazz"
+	attributes['piece']="Med Swing"
 
-	completion="0"
-	uuid="39de7d2c-a26f-11df-8dbc-0019d11e5a41"
+	attributes['completion']="0"
+	attributes['uuid']="39de7d2c-a26f-11df-8dbc-0019d11e5a41"
 %>
 
 <%doc>
@@ -21,7 +21,8 @@
 	- mark what's been done.
 </%doc>
 
-myChordsUnknown=\chordmode {
+<%def name="myChordsUnknown()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -40,8 +41,10 @@ myChordsUnknown=\chordmode {
 
 	\endChords
 }
+</%def>
 
-myVoiceUnknown={
+<%def name="myVoiceUnknown()">
+\relative c' {
 	\key f \major
 	\time 4/4
 
@@ -61,8 +64,10 @@ myVoiceUnknown={
 	f4~ \times 2/3 { f8 f f } f2 | r4 f8 f \times 2/3 {e4 f g} | a1~ | a4 r a a |
 	\times 2/3 {a4 f g} f2 | r4 f8 f \times 2/3 {e4 f g} | f1~ | f
 }
+</%def>
 
-myLyricsUnknown=\lyrics {
+<%def name="myLyricsUnknown()">
+\lyrics {
 	I see trees of green, red ros -- es too, I see the bloom for me and you, __
 	and I think __ to my -- self what a won -- der -- ful world. __
 
@@ -81,3 +86,4 @@ myLyricsUnknown=\lyrics {
 	and I think __ to my -- self what a won -- der -- ful world. __
 	Yes, I think to my -- self what a won -- der -- ful world. __
 }
+</%def>
