@@ -6,7 +6,6 @@
 	default_header
 
 	title="Once I Loved"
-	subtitle=""
 	composer="Antonio Carlos Jobim"
 	style="Jazz"
 	piece="Med.-Slow Bossa Nova"

@@ -6,11 +6,9 @@
 	default_header
 
 	title="Someday My Prince Will Come"
-	subtitle=""
 	composer="Frank Churchill & Larry Morey"
 	style="Jazz"
 	piece="Med. Jazz Waltz"
-	poet=""
 
 	completion="5"
 	uuid="4933391e-ee10-11e0-b804-0019d11e5a41"

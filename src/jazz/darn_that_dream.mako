@@ -6,7 +6,6 @@
 	default_header
 
 	title="Darn That Dream"
-	subtitle=""
 	composer="Jimmy Van Heusen"
 	style="Jazz"
 	piece="Slowly"

@@ -5,7 +5,6 @@
 	attributes['render']="Fake"
 
 	attributes['title']="Body And Soul"
-	attributes['subtitle']=""
 	attributes['composer']="John Green"
 	attributes['style']="Jazz"
 	attributes['piece']="Slowly, with expression"

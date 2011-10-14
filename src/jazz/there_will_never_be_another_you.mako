@@ -6,7 +6,6 @@
 	default_header
 
 	title="There Will Never Be Another You"
-	subtitle=""
 	composer="Harry Warren"
 	style="Jazz"
 	piece="Easy Swing"

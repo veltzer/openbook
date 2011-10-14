@@ -5,13 +5,10 @@
 	attributes['type']="harmony_tune"
 
 	attributes['title']="Gloria's Step"
-	attributes['subtitle']=""
 	attributes['composer']="Scott LaFaro"
 	attributes['style']="Jazz"
 	attributes['piece']="Swing"
-	attributes['poet']=""
 	attributes['copyright']="1962, Orpheum Music."
-	attributes['copyrightextra']=""
 
 	attributes['completion']="5"
 	attributes['uuid']="892e5552-f2ad-11e0-8c10-0019d11e5a41"
