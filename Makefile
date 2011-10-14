@@ -264,8 +264,12 @@ check_break:
 check_include:
 	$(info doing [$@])
 	$(Q)-grep "\\\\include" $(FILES_MAKO)
+.PHONY: check_threeunderscores
+check_threeunderscores:
+	$(info doing [$@])
+	$(Q)-grep "___" $(FILES_MAKO)
 .PHONY: check_all
-check_all: check_empty_copyright check_common check_ws check_and check_extra_files check_min_chords check_uuid check_chordChanges check_bar check_break check_completion check_include
+check_all: check_empty_copyright check_common check_ws check_and check_extra_files check_min_chords check_uuid check_chordChanges check_bar check_break check_completion check_include check_threeunderscores
 
 # rules
 

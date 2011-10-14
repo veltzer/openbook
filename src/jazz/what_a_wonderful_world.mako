@@ -63,21 +63,21 @@ myVoiceUnknown={
 }
 
 myLyricsUnknown=\lyrics {
-	I see trees of green, red ros -- es too, I see the bloom for me and you, ___
-	and I think ___ to my -- self what a won -- der -- ful world. ___
+	I see trees of green, red ros -- es too, I see the bloom for me and you, __
+	and I think __ to my -- self what a won -- der -- ful world. __
 
 	I see skies of blue and clouds of white,
-	he bright ___ bles -- sed day, the dark ___ sac -- red night, ___
-	and I think ___ to my- self what a won -- der -- ful world. ___
+	he bright __ bles -- sed day, the dark __ sac -- red night, __
+	and I think __ to my- self what a won -- der -- ful world. __
 
 	The col -- ors of the rain- bow so pret -- ty in the sky
 	are al -- so on the fa- ces of peo -- ple go -- in' by,
 
-	I see friends sha -- kin' hands, ___ say -- in' How do you do!
+	I see friends sha -- kin' hands, __ say -- in' How do you do!
 	They're real -- ly say -- in' I love you
 
 	I hear ba -- bies cry, I watch them grow
-	They'll learn much more than I'll ___ ev -- er know ___
-	and I think ___ to my -- self what a won -- der -- ful world. ___
-	Yes, I think to my -- self what a won -- der -- ful world. ___
+	They'll learn much more than I'll __ ev -- er know __
+	and I think __ to my -- self what a won -- der -- ful world. __
+	Yes, I think to my -- self what a won -- der -- ful world. __
 }
