@@ -44,7 +44,8 @@
 	- how do I put the last two chords in the real book version into parenthesis?
 </%doc>
 
-myChordsReal=\chordmode {
+<%def name="myChordsReal()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -71,8 +72,10 @@ myChordsReal=\chordmode {
 
 	\endChords
 }
+</%def>
 
-myVoiceReal=\relative c'' {
+<%def name="myVoiceReal()">
+\relative c'' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 168
 	\time 4/4
@@ -93,9 +96,11 @@ myVoiceReal=\relative c'' {
 	g4. e8 g4. e8 | fis2. a4 | a4. fis8 a4. fis8 | g4 a b d |
 	e2 e, | d' b | g1 | r2 b |
 }
+</%def>
 
+<%def name="myVoiceReal()">
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
-myLyricsReal=\lyricmode {
+\lyricmode {
 	%% part "A"
 	Just friends, __ lov -- ers no more __
 	Just friends, __ but not like be -- fore. __
@@ -107,3 +112,4 @@ myLyricsReal=\lyricmode {
 	We loved, we laughed, we cried and sud -- den -- ly love died.
 	The sto -- ry ends and we're just friends.
 }
+</%def>
