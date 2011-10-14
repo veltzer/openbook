@@ -13,7 +13,10 @@
 %>
 
 <%doc>
+	DONE:
 	TODO:
+		- mark what has been done in this tune.
+		- more exercises:
 		LRRLRRLRRLRRLRLR (in 16'th notes over a single bar).
 		RLLRLLRLLRLLRLRL
 </%doc>
