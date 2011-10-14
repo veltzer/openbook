@@ -231,7 +231,7 @@ check_uuid:
 .PHONY: check_common
 check_common:
 	$(info doing [$@])
-	$(Q)-grep --files-without-match "common.lyi" $(FILES_MAKO)
+	$(Q)-grep --files-without-match "common.makoi" $(FILES_MAKO)
 .PHONY: check_no_poet
 check_no_poet:
 	$(info doing [$@])
