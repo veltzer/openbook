@@ -70,4 +70,4 @@ myLyrics=\lyricmode {
 	זו על זו וזו על זו..
 }
 
-include(src/include/harmony_text.lyi)
+include(src/include/harmony_tune_lyrics.lyi)

@@ -64,6 +64,7 @@ myChords=\chordmode {
 myFrets=\new FretBoards {
 	\myChords
 }
+
 include(src/include/harmony.lyi)
 
 %% Lyrics
