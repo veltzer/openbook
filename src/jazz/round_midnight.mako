@@ -1,36 +1,35 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['type']="harmony_tune"
+	attributes['render']="Unknown"
+
+	attributes['title']="Round Midnight"
+	attributes['composer']="Cootie Williams & Thelonious Monk"
+	attributes['poet']="Bernie Hanighen"
+	attributes['style']="Jazz"
+	attributes['piece']="Med Swing"
+
+	attributes['completion']="0"
+	attributes['uuid']="1c99c334-a26f-11df-b3cb-0019d11e5a41"
 %>
-\header {
-	default_header
 
-	title="Round Midnight"
-	composer="Cootie Williams & Thelonious Monk"
-	poet="Bernie Hanighen"
-	style="Jazz"
-	piece="Med Swing"
-
-	completion="0"
-	uuid="1c99c334-a26f-11df-b3cb-0019d11e5a41"
+<%def name="myChordsUnknown()">
+\chordmode {
 }
+</%def>
 
-myChords=\chordmode {
-}
-
-intro=\relative f' {
-	r4 f16 g a b \grace { dis8 } e8 b16 a \grace { dis8 } e8 b16 a |
-	\grace {fis'8 } g4~ g16 fis c gis ais2 |
-}
-
-myVoice={
+<%def name="myVoiceUnknown()">
+\relative c' {
 	\time 4/4
 	\key aes \major
 
 	%% INTRO
-	\intro |
-	\intro |
-	\intro | \myEndLine
+	\repeat unfold 3 {
+		r4 f16 g a b \grace { dis8 } e8 b16 a \grace { dis8 } e8 b16 a |
+		\grace {fis'8 } g4~ g16 fis c gis ais2 |
+	}
+	\myEndLine
 
 	{
 		\repeat "unfold" 3 {
@@ -40,7 +39,6 @@ myVoice={
 		r16 < a, e gis bis >16 < a, e gis bis >8 < bes, e fis c' >4
 	}
 
-	\relative c' {
 	%% theme
 	\repeat volta 2 {
 		r4 c16 f g c aes4. c,8 | f8 f~ f4~ f8 f c'16 bes8. |
@@ -69,7 +67,5 @@ myVoice={
 	c4 \times 2/3 {bes8 f d} <cis fis a>4 r8 c |
 	f4 c' f bes,! ees! aes,! des! fis, c'2
 	<b gis e b-\fermata>1
-	}
 }
-
-include(src/include/harmony_tune.lyi)
+</%def>

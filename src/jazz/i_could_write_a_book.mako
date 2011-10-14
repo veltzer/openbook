@@ -2,6 +2,7 @@
 <%
 	attributes['jazzTune']=True
 	attributes['type']="harmony_tune_lyricsmore"
+	attributes['render']="Real"
 
 	attributes['title']="I Could Write A Book"
 	attributes['subtitle']="From 'Pal Joey'"
@@ -21,9 +22,11 @@
 	DONE:
 	TODO:
 	- document the youtube performance.
+	- mark what was done in this.
 </%doc>
 
-myChords=\chordmode {
+<%def name="myChordsReal()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -53,8 +56,10 @@ myChords=\chordmode {
 
 	\endChords
 }
+</%def>
 
-myVoice=\relative c' {
+<%def name="myVoiceReal()">
+\relative c' {
 	\time 4/4
 	\key c \major
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -77,7 +82,10 @@ myVoice=\relative c' {
 		}
 	}
 }
-myLyrics=\lyricmode {
+</%def>
+
+<%def name="myLyricsReal()">
+\lyricmode {
 	If they asked me I Could Write A Book,
 	a -- bout the way you walk and whis -- per and look,
 	I could write a pre -- face on how we met,
@@ -89,8 +97,12 @@ myLyrics=\lyricmode {
 	how to make two lov -- ers of friends.
 
 }
-myLyricsmore=\lyricmode {
+</%def>
+
+<%def name="myLyricsRealmore()">
+\lyricmode {
 	_ _ sim -- ple se -- cret of the plot
 	is just to tell them that I love you a -- lot,
 	then the world dis -- cov -- ers as
 }
+</%def>

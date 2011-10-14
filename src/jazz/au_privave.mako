@@ -3,6 +3,7 @@
 	attributes['jazzTune']=True
 	attributes['type']="harmony_tune"
 	attributes['render']="Aebersold"
+
 	attributes['title']="Au Privave"
 	attributes['composer']="Charlie Parker"
 	attributes['style']="Jazz"
@@ -28,8 +29,8 @@
 	- document the you tube performances.
 </%doc>
 
-%% this version of the chords is from the aebersold book...
-myChordsAebersold=\chordmode {
+<%def name="myChordsAebersold()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -74,9 +75,10 @@ myChordsAebersold=\chordmode {
 
 	\endChords
 }
+</%def>
 
-%% this version of the melody is taken from the Aebersold book
-myVoiceAebersold=\relative c' {
+<%def name="myVoiceAebersold()">
+\relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Prestissimo" 4 = 220
 	\time 4/4
@@ -111,3 +113,4 @@ myVoiceAebersold=\relative c' {
 	%% ending
 	g8 f g2. |
 }
+</%def>

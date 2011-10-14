@@ -1,9 +1,8 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
-%>
-\header {
-	default_header
+	attributes['render']="My"
+	attributes['type']="harmony_tune_lyrics"
 
 	title="I'll Close My Eyes"
 	composer="Billy Reid"
@@ -18,7 +17,9 @@
 	idyoutube="7Oh-Dl-KbF0"
 	idyoutube="u6lXbfx1hHw"
 	lyricsurl="http://lyricsplayground.com/alpha/songs/i/illclosemyeyes.shtml"
-}
+
+	remark="my version is from Amit Golan"
+%>
 
 <%doc>
 	DONE:
@@ -31,8 +32,8 @@
 	- get copyright for this tune (the real book didn't have one).
 </%doc>
 
-%% this is the real book version
-myChordsReal=\chordmode {
+<%def name="myChordsReal()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -59,8 +60,10 @@ myChordsReal=\chordmode {
 
 	\endChords
 }
-%% this is the real book version
-myVoiceReal=\relative c' {
+</%def>
+
+<%def name="myVoiceReal()">
+\relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 150
 	\time 4/4
@@ -79,9 +82,12 @@ myVoiceReal=\relative c' {
 	cis d c'2~ | c4 bes f g | a4. a8 a a4 a8~ | a4 a c bes |
 	a4. d,8 e f4 g8~ | g2 a | f1~ | f4 r r2 |
 }
+</%def>
+
+<%def name="myLyricsReal()">
 %% these are lyrics from the internet adjusted by me to the real book tune
 %% the adjustment is pretty horrible
-myLyricsReal=\lyricmode {
+\lyricmode {
 	I'll Close My Eyes __ __
 	To eve -- ry -- one but you __ __
 	And when I do __ __
@@ -102,9 +108,10 @@ myLyricsReal=\lyricmode {
 	Do -- n't you know I'll Close My Eyes
 	And I'll see you_with __ my heart __
 }
+</%def>
 
-%% this is my own version (with Amit Golan) - it is better
-myChords=\chordmode {
+<%def name="myChordsMy()">
+\chordmode {
 	\startChords
 	\startSong
 
@@ -131,7 +138,10 @@ myChords=\chordmode {
 	\endSong
 	\endChords
 }
-myVoice=\relative c' {
+</%def>
+
+<%def name="myVoiceMy()">
+\relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 150
 	\time 4/4
@@ -150,7 +160,10 @@ myVoice=\relative c' {
 	des d c'2 | r4 r8 bes f4 g | a1 | r4 r8 a c4 b |
 	bes4. d,8 e4 f | g2 a | f1~ | f2 r2 |
 }
-myLyrics=\lyricmode {
+</%def>
+
+<%def name="myLyricsMy()">
+\lyricmode {
 	I'll Close My Eyes __
 	To eve -- ry -- one but you __
 	And when I do __
@@ -172,5 +185,4 @@ myLyrics=\lyricmode {
 	I'll Close My Eyes
 	And I'll see you_with my heart __
 }
-
-include(src/include/harmony_tune_lyrics.lyi)
+</%def>

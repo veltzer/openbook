@@ -26,8 +26,8 @@
 	- fill in data about the you tube performances.
 </%doc>
 
-%% these are the chords from the fake book
-myChordsFake=\chordmode {
+<%def name="myChordsFake()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -53,9 +53,10 @@ myChordsFake=\chordmode {
 		}
 	}
 }
+</%def>
 
-%% notes from the fake book
-myVoiceFake=\relative c' {
+<%def name="myVoiceFake()">
+\relative c' {
 	\key c \major
 	\time 4/4
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -80,9 +81,10 @@ myVoiceFake=\relative c' {
 		}
 	}
 }
+</%def>
 
-%% lyrics taken from the fake book
-myLyricsFake=\lyricmode {
+<%def name="myLyricsFake()">
+\lyricmode {
 	A Fine Ro -- mance with no kis -- es!
 	A Fine Ro -- mance, my friend, this is!
 	We should be like a cou -- ple of hot to -- ma -- toes, __
@@ -93,8 +95,10 @@ myLyricsFake=\lyricmode {
 	I might as well play bridge with my old maid aunts!
 	I have -- n't got a chance. This is A Fine Ro -- mance. A
 }
+</%def>
 
-myLyricsFakemore=\lyricmode {
+<%def name="myLyricsFakemore()">
+\lyricmode {
 	_ Fine Ro -- mance my good fel -- low!
 	You take ro -- mance, I'll take jel -- lo!
 	You're calm -- er than the seal in the Arc -- tic O -- cean, __
@@ -105,9 +109,10 @@ myLyricsFakemore=\lyricmode {
 	I've nev -- er mussed the crease in your blue serge pants!
 	I nev -- er get the chance. This is A Fine Ro -- _ _ mance. __
 }
+</%def>
 
-%% these are the chords from the real book
-myChordsReal=\chordmode {
+<%def name="myChordsReal()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -132,9 +137,10 @@ myChordsReal=\chordmode {
 
 	\endChords
 }
+</%def>
 
-%% notes from the real book
-myVoiceReal=\relative c' {
+<%def name="myVoiceReal()">
+\relative c' {
 	\key c \major
 	\time 4/4
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -155,9 +161,11 @@ myVoiceReal=\relative c' {
 		}
 	}
 }
+</%def>
 
+<%def name="myLyricsReal()">
 %% lyrics taken from the fake book and adjusted for the real book
-myLyricsReal=\lyricmode {
+\lyricmode {
 	A Fine Ro -- mance with no kis -- es!
 	A Fine Ro -- mance, my friend, this is!
 	We should be like a cou -- ple of hot to -- ma -- toes, __
@@ -170,9 +178,12 @@ myLyricsReal=\lyricmode {
 
 	A
 }
+</%def>
 
-myLyricsRealmore=\lyricmode {
+<%def name="myLyricsRealmore()">
+\lyricmode {
 	_ Fine Ro -- mance, you won't nest -- le.
 	A Fine Ro -- mance, you won't wrest -- le!
 	I
 }
+</%def>

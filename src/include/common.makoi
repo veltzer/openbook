@@ -150,6 +150,7 @@ endChords={}
 	attributes['guitar']=False
 	attributes['jazzTune']=False
 	attributes['extra']=False
+	attributes['definitions']=False
 %>
 %% this causes the variables to be defined...
 ${self.body()}
@@ -186,6 +187,10 @@ include(predefined-guitar-fretboards.ly)
 
 	lyricsurl="${attributes['lyricsurl']}"
 }
+
+% if attributes['definitions']:
+${self.definitions()}
+% endif
 
 % if attributes['type']=='harmony_tune_lyricsmore':
 %% score for printing
@@ -306,6 +311,9 @@ include(predefined-guitar-fretboards.ly)
 % if attributes['render']=='Unknown':
 			${self.myChordsUnknown()}
 % endif
+% if attributes['render']=='My':
+			${self.myChordsMy()}
+% endif
 		\new Staff="Melody" {
 			\new Voice="myvoice"
 % if attributes['render']=='Real':
@@ -317,6 +325,9 @@ include(predefined-guitar-fretboards.ly)
 % if attributes['render']=='Unknown':
 			${self.myVoiceUnknown()}
 % endif
+% if attributes['render']=='My':
+			${self.myVoiceMy()}
+% endif
 		}
 		\new Lyrics="Lyrics" \lyricsto "myvoice"
 % if attributes['render']=='Real':
@@ -327,6 +338,9 @@ include(predefined-guitar-fretboards.ly)
 % endif
 % if attributes['render']=='Unknown':
 			${self.myLyricsUnknown()}
+% endif
+% if attributes['render']=='My':
+			${self.myLyricsMy()}
 % endif
 	>>
 	\layout {
@@ -347,6 +361,9 @@ include(predefined-guitar-fretboards.ly)
 % if attributes['render']=='Unknown':
 			${self.myChordsUnknown()}
 % endif
+% if attributes['render']=='My':
+			${self.myChordsMy()}
+% endif
 		%% the ="Melody" is the name of the channel that will be in midi
 		\new Staff="Melody" {
 			\new Voice="myvoice"
@@ -359,6 +376,9 @@ include(predefined-guitar-fretboards.ly)
 % if attributes['render']=='Unknown':
 			${self.myVoiceUnknown()}
 % endif
+% if attributes['render']=='My':
+			${self.myVoiceMy()}
+% endif
 		}
 		%% the ="Lyrics" is the name of the channel that will be in midi
 		\new Lyrics="Lyrics" \lyricsto "myvoice"
@@ -370,6 +390,9 @@ include(predefined-guitar-fretboards.ly)
 % endif
 % if attributes['render']=='Unknown':
 			${self.myLyricsUnknown()}
+% endif
+% if attributes['render']=='My':
+			${self.myLyricsMy()}
 % endif
 	>>
 	\midi {
@@ -390,6 +413,9 @@ include(predefined-guitar-fretboards.ly)
 % if attributes['render']=='Unknown':
 			${self.myChordsUnknown()}
 % endif
+% if attributes['render']=='Aebersold':
+			${self.myChordsAebersold()}
+% endif
 		\new Staff="Melody" {
 			\new Voice="myvoice"
 % if attributes['render']=='Real':
@@ -400,6 +426,9 @@ include(predefined-guitar-fretboards.ly)
 % endif
 % if attributes['render']=='Unknown':
 			${self.myVoiceUnknown()}
+% endif
+% if attributes['render']=='Aebersold':
+			${self.myVoiceAebersold()}
 % endif
 		}
 	>>
@@ -421,6 +450,9 @@ include(predefined-guitar-fretboards.ly)
 % if attributes['render']=='Unknown':
 			${self.myChordsUnknown()}
 % endif
+% if attributes['render']=='Aebersold':
+			${self.myChordsAebersold()}
+% endif
 		%% the ="Melody" is the name of the channel that will be in midi
 		\new Staff="Melody" {
 			\new Voice="myvoice"
@@ -432,6 +464,9 @@ include(predefined-guitar-fretboards.ly)
 % endif
 % if attributes['render']=='Unknown':
 			${self.myVoiceUnknown()}
+% endif
+% if attributes['render']=='Aebersold':
+			${self.myVoiceAebersold()}
 % endif
 		}
 	>>

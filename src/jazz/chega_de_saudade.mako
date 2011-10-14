@@ -24,7 +24,8 @@
 	- where did this come from
 </%doc>
 
-myChordsUnknown=\chordmode {
+<%def name="myChordsUnknown()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -41,8 +42,10 @@ myChordsUnknown=\chordmode {
 
 	\endChords
 }
+</%def>
 
-myVoiceUnknown=\relative f'' {
+<%def name="myVoiceUnknown()">
+\relative f'' {
 	\time 4/4
 	\key f \major
 
@@ -52,3 +55,4 @@ myVoiceUnknown=\relative f'' {
 	f'4. a,8~ a4. cis8~ | cis2~ cis8 d4 c8~ | c4. e8~ e2~ | e4 e8 d~ d c4 c8~ |
 	c4. bes8~ bes2~ | bes4 f'8 e~ e d4 d8~ | d cis4 e8 cis4 bes~ | bes2. r4 |
 }
+</%def>

@@ -1,30 +1,31 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['type']="harmony_tune_lyricsmore"
+	attributes['render']="Real"
+
+	attributes['title']="The Girl From Ipanema"
+	attributes['subtitle']="Garota De Ipanema"
+	attributes['composer']="Antonio Carlos Jobim"
+	attributes['poet']="Vincius De Moraes, Norman Gimbel"
+	attributes['style']="Bossa Nova"
+	attributes['piece']="Moderate Bossa Nova"
+	attributes['copyright']="1963, Antonio Carlos Jobim and Vincius De Moraes, Brazil"
+	attributes['copyrightextra']="Sole Selling Agent Duchess Music Corporation (MCA), New York, NY for all. English speaking countries"
+
+	attributes['completion']="5"
+	attributes['uuid']="2c3b337c-a26f-11df-b7d1-0019d11e5a41"
+
+	attributes['idyoutube']="DmV0TcTNJ3o"
 %>
-\header {
-	default_header
-
-	title="The Girl From Ipanema"
-	subtitle="Garota De Ipanema"
-	composer="Antonio Carlos Jobim"
-	poet="Vincius De Moraes, Norman Gimbel"
-	style="Bossa Nova"
-	piece="Moderate Bossa Nova"
-	copyright="1963, Antonio Carlos Jobim and Vincius De Moraes, Brazil"
-	%% Sole Selling Agent Duchess Music Corporation (MCA), New York, NY for all
-	%% English speaking countries
-
-	completion="5"
-	uuid="2c3b337c-a26f-11df-b7d1-0019d11e5a41"
-
-	idyoutube="DmV0TcTNJ3o"
-}
 
 <%doc>
+	DONE:
 	TODO:
 </%doc>
-myChords=\chordmode {
+
+<%def name="myChordsReal()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -67,8 +68,10 @@ myChords=\chordmode {
 
 	\endChords
 }
+</%def>
 
-myVoice=\relative c' {
+<%def name="myVoiceReal()">
+\relative c' {
 	\time 4/4
 	\key f \major
 	\clef treble
@@ -109,8 +112,10 @@ myVoice=\relative c' {
 	e1 | r4 r8 e8 \times 2/3 {e4 e d} |
 	e1~ | e2. r4 |
 }
+</%def>
 
-myLyrics=\lyricmode {
+<%def name="myLyricsReal()">
+\lyricmode {
 	Tall and tan and young and love -- ly,
 	the Girl From I -- pa -- ne -- ma goes walk -- ing,
 	and when she pass -- es, each one she pass -- es goes "ah!"
@@ -130,10 +135,12 @@ myLyrics=\lyricmode {
 	She just does -- n't see.
 	No, she does -- n't see.
 }
-myLyricsmore=\lyricmode {
+</%def>
+
+<%def name="myLyricsRealmore()">
+\lyricmode {
 	When she walks she's like a Sam -- ba
 	that swings so cool and sways _ so gen -- tle,
 	that when she pass -- es, each one she pass -- es goes
 }
-
-include(src/include/harmony_tune_lyricsmore.lyi)
+</%def>

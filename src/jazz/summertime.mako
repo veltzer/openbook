@@ -1,28 +1,29 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['type']="harmony_tune"
+	attributes['render']="Unknown"
+
+	attributes['title']="Summertime"
+	attributes['composer']="George Gershwin"
+	attributes['style']="Jazz"
+	attributes['piece']="Med Swing"
+	attributes['poet']="DuBose Heyward"
+	attributes['copyright']="1935, Gershwin Publishing Corporation"
+
+	attributes['completion']="4"
+	attributes['uuid']="2615b7ec-a26f-11df-b010-0019d11e5a41"
 %>
-\header {
-	default_header
-
-	title="Summertime"
-	composer="George Gershwin"
-	style="Jazz"
-	piece="Med Swing"
-	poet="DuBose Heyward"
-	copyright="1935, Gershwin Publishing Corporation"
-
-	completion="4"
-	uuid="2615b7ec-a26f-11df-b010-0019d11e5a41"
-}
 
 <%doc>
 	TODO:
+	- where is this from?
 	- add lyrics
 	- discrepency between tune and melody at the end
 </%doc>
 
-myChords=\chordmode {
+<%def name="myChordsUnknown()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -40,8 +41,10 @@ myChords=\chordmode {
 
 	\endChords
 }
+</%def>
 
-myVoice=\relative c''' {
+<%def name="myVoiceUnknown()">
+\relative c''' {
 	\time 4/4
 	\key d \minor
 
@@ -53,5 +56,4 @@ myVoice=\relative c''' {
 		c a8 c d f~ f4 | a8 g~ g4 f2 | d1~ | d4 r r a'8. f16 |
 	}
 }
-
-include(src/include/harmony_tune.lyi)
+</%def>
