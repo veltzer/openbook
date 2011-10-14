@@ -18,13 +18,15 @@
 <%doc>
 	DONE:
 	TODO:
+	- turn this tune relative.
 	- where is this from?
 	- add the intro chords (they are not currently shown
 	- mark whats been done to this tune.
 	- add youtube performances.
 </%doc>
 
-myChordsUnknown=\chordmode {
+<%def name="myChordsUnknown()">
+\chordmode {
 	\startSong
 	\startChords
 
@@ -45,8 +47,10 @@ myChordsUnknown=\chordmode {
 	\endChords
 	\endSong
 }
+</%def>
 
-myVoiceUnknown={
+<%def name="myVoiceUnknown()">
+\relative c' {
 	\time 4/4
 	\key c \major
 	\clef treble
@@ -98,8 +102,10 @@ myVoiceUnknown={
 	r4 a'8 g'~ g' f' e' d' |
 	c' b4 c'8~ c' d'4 c'8~ |
 }
+</%def>
 
-myLyricsUnknown=\lyrics {
+<%def name="myLyricsUnknown()">
+\lyrics {
 	Qui -- et __ nights of qui -- et stars,
 	qui -- et __ chords from my gui -- tar __
 	float -- ing on __ the si __ -- lence that sur -- rounds __ us __
@@ -118,3 +124,4 @@ myLyricsUnknown=\lyrics {
 	a bit -- ter tra -- gic joke have found with you
 	the mean __ -- ing of ex -- is -- tence, oh, __ my love. __
 }
+</%def>

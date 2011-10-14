@@ -197,6 +197,9 @@ include(predefined-guitar-fretboards.ly)
 % if attributes['render']=='Fake':
 			${self.myChordsFake()}
 % endif
+% if attributes['render']=='Unknown':
+			${self.myChordsUnknown()}
+% endif
 		\new Staff="Melody" {
 			\new Voice="myvoice"
 % if attributes['render']=='Real':
@@ -205,6 +208,9 @@ include(predefined-guitar-fretboards.ly)
 % if attributes['render']=='Fake':
 			${self.myVoiceFake()}
 % endif
+% if attributes['render']=='Unknown':
+			${self.myVoiceUnknown()}
+% endif
 		}
 		\new Lyrics="Lyrics" \lyricsto "myvoice"
 % if attributes['render']=='Real':
@@ -212,6 +218,9 @@ include(predefined-guitar-fretboards.ly)
 % endif
 % if attributes['render']=='Fake':
 			${self.myLyricsFake()}
+% endif
+% if attributes['render']=='Unknown':
+			${self.myLyricsUnknown()}
 % endif
 	>>
 	\layout {
@@ -229,6 +238,9 @@ include(predefined-guitar-fretboards.ly)
 % if attributes['render']=='Fake':
 			${self.myChordsFake()}
 % endif
+% if attributes['render']=='Unknown':
+			${self.myChordsUnknown()}
+% endif
 		%% the ="Melody" is the name of the channel that will be in midi
 		\new Staff="Melody" {
 			\new Voice="myvoice"
@@ -238,6 +250,9 @@ include(predefined-guitar-fretboards.ly)
 % if attributes['render']=='Fake':
 			${self.myVoiceFake()}
 % endif
+% if attributes['render']=='Unknown':
+			${self.myVoiceUnknown()}
+% endif
 		}
 		%% the ="Lyrics" is the name of the channel that will be in midi
 		\new Lyrics="Lyrics" \lyricsto "myvoice"
@@ -246,6 +261,9 @@ include(predefined-guitar-fretboards.ly)
 % endif
 % if attributes['render']=='Fake':
 			${self.myLyricsFake()}
+% endif
+% if attributes['render']=='Unknown':
+			${self.myLyricsUnknown()}
 % endif
 	>>
 	\midi {
@@ -263,6 +281,9 @@ include(predefined-guitar-fretboards.ly)
 % if attributes['render']=='Fake':
 			${self.myChordsFake()}
 % endif
+% if attributes['render']=='Unknown':
+			${self.myChordsUnknown()}
+% endif
 		\new Staff="Melody" {
 			\new Voice="myvoice"
 % if attributes['render']=='Real':
@@ -270,6 +291,9 @@ include(predefined-guitar-fretboards.ly)
 % endif
 % if attributes['render']=='Fake':
 			${self.myVoiceFake()}
+% endif
+% if attributes['render']=='Unknown':
+			${self.myVoiceUnknown()}
 % endif
 		}
 	>>
@@ -288,6 +312,9 @@ include(predefined-guitar-fretboards.ly)
 % if attributes['render']=='Fake':
 			${self.myChordsFake()}
 % endif
+% if attributes['render']=='Unknown':
+			${self.myChordsUnknown()}
+% endif
 		%% the ="Melody" is the name of the channel that will be in midi
 		\new Staff="Melody" {
 			\new Voice="myvoice"
@@ -296,6 +323,9 @@ include(predefined-guitar-fretboards.ly)
 % endif
 % if attributes['render']=='Fake':
 			${self.myVoiceFake()}
+% endif
+% if attributes['render']=='Unknown':
+			${self.myVoiceUnknown()}
 % endif
 		}
 	>>
