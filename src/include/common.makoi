@@ -198,3 +198,42 @@ ${self.body()}
 	}
 }
 % endif
+% if attributes['type']=='harmony_tune':
+%% score for printing
+\score {
+	<<
+		\new ChordNames="Chords"
+% if attributes['render']=='Real':
+			${self.myChordsReal()}
+% endif
+		\new Staff="Melody" {
+			\new Voice="myvoice"
+% if attributes['render']=='Real':
+			${self.myVoiceReal()}
+% endif
+		}
+	>>
+	\layout {
+	}
+}
+%% score for midi
+\score {
+	\unfoldRepeats
+	<<
+		%% the ="Chords" is the name of the channel that will be in midi
+		\new ChordNames="Chords"
+% if attributes['render']=='Real':
+			${self.myChordsReal()}
+% endif
+		%% the ="Melody" is the name of the channel that will be in midi
+		\new Staff="Melody" {
+			\new Voice="myvoice"
+% if attributes['render']=='Real':
+			${self.myVoiceReal()}
+% endif
+		}
+	>>
+	\midi {
+	}
+}
+% endif
