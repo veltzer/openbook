@@ -1,29 +1,28 @@
 <%inherit file="/src/include/common.lyi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['type']="harmony_tune_lyrics"
+	attributes['render']="Real"
+
+	attributes['title']="Just Friends"
+	attributes['subtitle']=""
+	attributes['composer']="John Klenner"
+	attributes['style']="Jazz"
+	attributes['piece']="Medium Swing"
+	attributes['poet']="Sam M. Lewis"
+	attributes['copyright']="1931 (renewed 1959) EMI Robbins Catalog, Inc."
+	attributes['copyrightextra']="Used by by Persmission of CPP/Belwin, Inc., Miami, FL. International Copyright Secured."
+
+	attributes['completion']="5"
+	attributes['uuid']="2f6e2740-f29e-11e0-9ede-0019d11e5a41"
+
+	attributes['idyoutubedesc']="the fabulous Chet Baker"
+	attributes['idyoutube']="88CqlgFAJ-k"
+	attributes['idyoutubedesc']="fast and furious Trane"
+	attributes['idyoutube']="9W_XQCLD_I0"
+
+	attributes['structure']="AB"
 %>
-\header {
-	default_header
-
-	title="Just Friends"
-	subtitle=""
-	composer="John Klenner"
-	style="Jazz"
-	piece="Medium Swing"
-	poet="Sam M. Lewis"
-	copyright="1931 (renewed 1959) EMI Robbins Catalog, Inc."
-	%% Used by by Persmission of CPP/Belwin, Inc., Miami, FL. International Copyright Secured.
-
-	completion="5"
-	uuid="2f6e2740-f29e-11e0-9ede-0019d11e5a41"
-
-	%% the fabulous Chet Baker
-	idyoutube="88CqlgFAJ-k"
-	%% fast and furious Trane
-	idyoutube="9W_XQCLD_I0"
-
-	structure="AB"
-}
 
 <%doc>
 	DONE:
@@ -45,8 +44,7 @@
 	- how do I put the last two chords in the real book version into parenthesis?
 </%doc>
 
-%% this version of the chords is from the real book...
-myChords=\chordmode {
+myChordsReal=\chordmode {
 	\startChords
 
 	\startSong
@@ -74,8 +72,7 @@ myChords=\chordmode {
 	\endChords
 }
 
-%% this version of the tune is from the real book...
-myVoice=\relative c'' {
+myVoiceReal=\relative c'' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 168
 	\time 4/4
@@ -98,7 +95,7 @@ myVoice=\relative c'' {
 }
 
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
-myLyrics=\lyricmode {
+myLyricsReal=\lyricmode {
 	%% part "A"
 	Just friends, __ lov -- ers no more __
 	Just friends, __ but not like be -- fore. __
@@ -110,5 +107,3 @@ myLyrics=\lyricmode {
 	We loved, we laughed, we cried and sud -- den -- ly love died.
 	The sto -- ry ends and we're just friends.
 }
-
-include(src/include/harmony_tune_lyrics.lyi)

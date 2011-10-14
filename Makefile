@@ -11,8 +11,8 @@ DO_WRAPDEPS:=1
 DO_LY:=1
 # should we make lilypond dependency files ?
 DO_LYD:=0
-# should we make gpp dependency files ?
-DO_GPPD:=1
+# should we make mako dependency files ?
+DO_MAKOD:=1
 # should we make pds ?
 DO_PDF:=1
 # should we make images ?
@@ -33,8 +33,8 @@ DO_OGG:=1
 DO_BOOK:=1
 # do you actually want to use lilypond dependency information ?
 USE_LYD:=0
-# do you actually want to use gpp dependency information ?
-USE_GPPD:=1
+# do you actually want to use mako dependency information ?
+USE_MAKOD:=1
 # where are the sources located ?
 SOURCE_DIR:=src
 # where is the output folder ?
@@ -43,7 +43,7 @@ OUT_DIR:=out
 LILYPOND_WRAPPER:=scripts/lilypond_wrapper.pl
 MAKO_WRAPPER:=scripts/mako_wrapper.py
 LYD_WRAPPER:=scripts/lyd.pl
-GPPD_WRAPPER:=scripts/gppd.pl
+MAKOD_WRAPPER:=scripts/makod.pl
 MIDI2WAV_WRAPPER:=scripts/midi2wav.pl
 MIDI2OGG_WRAPPER:=scripts/midi2ogg.pl
 MIDI2MP3_WRAPPER:=scripts/midi2mp3.pl
@@ -56,7 +56,7 @@ MAKE_BOOK_WRAPPER:=scripts/make_book.pl
 # do not include deps (or generate them) if we are doing a clean...
 ifneq ($(filter clean,$(MAKECMDGOALS)),)
 USE_LYD:=0
-USE_GPPD:=0
+USE_MAKOD:=0
 endif
 
 ALL:=
@@ -71,7 +71,7 @@ ifeq ($(DO_WRAPDEPS),1)
 	LILYPOND_WRAPPER_DEP:=$(LILYPOND_WRAPPER)
 	MAKO_WRAPPER_DEP:=$(MAKO_WRAPPER)
 	LYD_WRAPPER_DEP:=$(LYD_WRAPPER)
-	GPPD_WRAPPER_DEP:=$(GPPD_WRAPPER)
+	MAKOD_WRAPPER_DEP:=$(MAKOD_WRAPPER)
 	MIDI2WAV_WRAPPER_DEP:=$(MIDI2WAV_WRAPPER)
 	MIDI2OGG_WRAPPER_DEP:=$(MIDI2OGG_WRAPPER)
 	MIDI2MP3_WRAPPER_DEP:=$(MIDI2MP3_WRAPPER)
@@ -80,7 +80,7 @@ else
 	LILYPOND_WRAPPER_DEP:=
 	MAKO_WRAPPER_DEP:=
 	LYD_WRAPPER_DEP:=
-	GPPD_WRAPPER_DEP:=
+	MAKOD_WRAPPER_DEP:=
 	MIDI2WAV_WRAPPER_DEP:=
 	MIDI2OGG_WRAPPER_DEP:=
 	MIDI2MP3_WRAPPER_DEP:=
@@ -98,20 +98,20 @@ endif # DO_MKDBG
 # this finds the sources via git
 SOURCES_ALL:=$(shell git ls-files)
 # this find the sources without git...
-SOURCES_ALL:=$(subst ./,,$(shell find . -type f -and -name "*.gpp" -or -name "*.lyi"))
-FILES_GPP:=$(filter %.gpp,$(SOURCES_ALL))
-FILES_LYI:=$(filter %.lyi,$(SOURCES_ALL))
+SOURCES_ALL:=$(subst ./,,$(shell find . -type f -and -name "*.mako" -or -name "*.makoi"))
+FILES_MAKO:=$(filter %.mako,$(SOURCES_ALL))
+FILES_MAKOI:=$(filter %.makoi,$(SOURCES_ALL))
 
-FILES_GPPD:=$(addsuffix .gpp.d,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
-FILES_LY:=$(addsuffix .ly,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
-FILES_LYD:=$(addsuffix .ly.d,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
-FILES_PDF:=$(addsuffix .pdf,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
-FILES_PS:=$(addsuffix .ps,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
-FILES_MIDI:=$(addsuffix .midi,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
-FILES_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
-FILES_WAV:=$(addsuffix .wav,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
-FILES_MP3:=$(addsuffix .mp3,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
-FILES_OGG:=$(addsuffix .ogg,$(addprefix $(OUT_DIR)/,$(basename $(FILES_GPP))))
+FILES_MAKOD:=$(addsuffix .mako.d,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
+FILES_LY:=$(addsuffix .ly,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
+FILES_LYD:=$(addsuffix .ly.d,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
+FILES_PDF:=$(addsuffix .pdf,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
+FILES_PS:=$(addsuffix .ps,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
+FILES_MIDI:=$(addsuffix .midi,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
+FILES_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
+FILES_WAV:=$(addsuffix .wav,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
+FILES_MP3:=$(addsuffix .mp3,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
+FILES_OGG:=$(addsuffix .ogg,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 OUT_BOOK:=out/openbook.pdf
 
 ifeq ($(DO_LY),1)
@@ -120,8 +120,8 @@ endif
 ifeq ($(DO_LYD),1)
 	ALL:=$(ALL) $(FILES_LYD)
 endif
-ifeq ($(DO_GPPD),1)
-	ALL:=$(ALL) $(FILES_GPPD)
+ifeq ($(DO_MAKOD),1)
+	ALL:=$(ALL) $(FILES_MAKOD)
 endif
 ifeq ($(DO_PDF),1)
 	ALL:=$(ALL) $(FILES_PDF)
@@ -164,8 +164,8 @@ ly: $(FILES_LY)
 .PHONY: debug
 debug:
 	$(info SOURCES_ALL is $(SOURCES_ALL))
-	$(info FILES_GPP is $(FILES_GPP))
-	$(info FILES_GPPD is $(FILES_GPPD))
+	$(info FILES_MAKO is $(FILES_MAKO))
+	$(info FILES_MAKOD is $(FILES_MAKOD))
 	$(info FILES_LY is $(FILES_LY))
 	$(info FILES_LYI is $(FILES_LYI))
 	$(info FILES_LYD is $(FILES_LYD))
@@ -210,60 +210,60 @@ check_extra_files:
 .PHONY: check_comments
 check_comments:
 	$(info doing [$@])
-	$(Q)-grep "%%" $(FILES_GPP)
+	$(Q)-grep "%%" $(FILES_MAKO)
 .PHONY: check_and
 check_and:
 	$(info doing [$@])
-	$(Q)-grep "composer=\".* and .*\"" $(FILES_GPP)
-	$(Q)-grep "poet=\".* and .*\"" $(FILES_GPP)
+	$(Q)-grep "composer=\".* and .*\"" $(FILES_MAKO)
+	$(Q)-grep "poet=\".* and .*\"" $(FILES_MAKO)
 .PHONY: check_min_chords
 check_min_chords:
 	$(info doing [$@])
-	$(Q)-grep ":min" $(FILES_GPP)
+	$(Q)-grep ":min" $(FILES_MAKO)
 .PHONY: check_ws
 check_ws:
 	$(info doing [$@])
-	$(Q)-./scripts/pgrep.pl "  | $$|\w\t|\t$$" $(FILES_GPP) $(FILES_LYI)
+	$(Q)-./scripts/pgrep.pl "  | $$|\w\t|\t$$" $(FILES_MAKO) $(FILES_LYI)
 .PHONY: check_uuid
 check_uuid:
 	$(info doing [$@])
-	$(Q)-grep --files-without-match uuid $(FILES_GPP)
+	$(Q)-grep --files-without-match uuid $(FILES_MAKO)
 .PHONY: check_common
 check_common:
 	$(info doing [$@])
-	$(Q)-grep --files-without-match "common.lyi" $(FILES_GPP)
+	$(Q)-grep --files-without-match "common.lyi" $(FILES_MAKO)
 .PHONY: check_no_poet
 check_no_poet:
 	$(info doing [$@])
-	$(Q)-grep --files-without-match "poet=" $(FILES_GPP)
+	$(Q)-grep --files-without-match "poet=" $(FILES_MAKO)
 .PHONY: check_copyright
 check_copyright:
 	$(info doing [$@])
-	$(Q)-grep --files-without-match "copyright=" $(FILES_GPP)
+	$(Q)-grep --files-without-match "copyright=" $(FILES_MAKO)
 .PHONY: check_completion
 check_completion:
 	$(info doing [$@])
-	$(Q)-grep --files-without-match "completion=" $(FILES_GPP)
+	$(Q)-grep --files-without-match "completion=" $(FILES_MAKO)
 .PHONY: check_empty_copyright
 check_empty_copyright:
 	$(info doing [$@])
-	$(Q)-grep "copyright=\"\"" $(FILES_GPP)
+	$(Q)-grep "copyright=\"\"" $(FILES_MAKO)
 .PHONY: check_chordChanges
 check_chordChanges:
 	$(info doing [$@])
-	$(Q)-grep "chordChanges" $(FILES_GPP)
+	$(Q)-grep "chordChanges" $(FILES_MAKO)
 .PHONY: check_bar
 check_bar:
 	$(info doing [$@])
-	$(Q)-grep "\\\\bar" $(FILES_GPP)
+	$(Q)-grep "\\\\bar" $(FILES_MAKO)
 .PHONY: check_break
 check_break:
 	$(info doing [$@])
-	$(Q)-grep "\\\\break" $(FILES_GPP)
+	$(Q)-grep "\\\\break" $(FILES_MAKO)
 .PHONY: check_include
 check_include:
 	$(info doing [$@])
-	$(Q)-grep "\\\\include" $(FILES_GPP)
+	$(Q)-grep "\\\\include" $(FILES_MAKO)
 .PHONY: check_all
 check_all: check_empty_copyright check_common check_ws check_and check_extra_files check_min_chords check_uuid check_chordChanges check_bar check_break check_completion check_include
 
@@ -281,14 +281,14 @@ $(FILES_STAMP): %.stamp: %.ly $(ALL_DEP) $(LILYPOND_WRAPPER_DEP)
 	$(Q)-mkdir -p $(dir $@)
 	$(Q)$(LILYPOND_WRAPPER) $< $@ $(LYFLAGS) -o $(dir $@)$(basename $(notdir $@)) $<
 
-$(FILES_LY): $(OUT_DIR)/%.ly: %.gpp $(ALL_DEP) $(MAKO_WRAPPER_DEP)
+$(FILES_LY): $(OUT_DIR)/%.ly: %.mako $(ALL_DEP) $(MAKO_WRAPPER_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
 	$(Q)$(MAKO_WRAPPER) $< $@
-$(FILES_GPPD): $(OUT_DIR)/%.gpp.d: %.gpp $(ALL_DEP) $(GPPD_WRAPPER_DEP)
+$(FILES_MAKOD): $(OUT_DIR)/%.mako.d: %.mako $(ALL_DEP) $(MAKOD_WRAPPER_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
-	$(Q)$(GPPD_WRAPPER) $< $@ $(basename $(basename $@)).stamp $(basename $(basename $@)).pdf $(basename $(basename $@)).ps $(basename $(basename $@)).midi
+	$(Q)$(MAKOD_WRAPPER) $< $@ $(basename $(basename $@)).stamp $(basename $(basename $@)).pdf $(basename $(basename $@)).ps $(basename $(basename $@)).midi
 $(FILES_LYD): %.ly.d: %.ly $(ALL_DEP) $(LYD_WRAPPER_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
@@ -317,6 +317,6 @@ $(OUT_BOOK): $(FILES_PDF) $(ALL_DEP) $(MAKE_BOOK_WRAPPER_DEP)
 ifeq ($(USE_LYD),1)
 -include $(FILES_LYD)
 endif
-ifeq ($(USE_GPPD),1)
--include $(FILES_GPPD)
+ifeq ($(USE_MAKOD),1)
+-include $(FILES_MAKOD)
 endif

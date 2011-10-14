@@ -19,10 +19,12 @@
 	attributes['idyoutube']="cKbD4PQBrIA"
 %>
 
-##	DONE:
-##	TODO:
-##	- fill in whats been done for this tune.
-##	- fill in data about the you tube performances.
+<%doc>
+	DONE:
+	TODO:
+	- fill in whats been done for this tune.
+	- fill in data about the you tube performances.
+</%doc>
 
 %% these are the chords from the fake book
 myChordsFake=\chordmode {
