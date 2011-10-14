@@ -1,4 +1,4 @@
-<%inherit file="/src/include/common.lyi"/>
+<%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
 	attributes['type']="harmony_tune"
