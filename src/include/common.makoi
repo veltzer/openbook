@@ -131,6 +131,7 @@ endChords={}
 %% endif
 
 <%
+	attributes['copyrightvalstudy']="-- no copyright notice for study materials --"
 	# these are the default values for the variables
 	attributes['title']=""
 	attributes['subtitle']=""

@@ -5,7 +5,7 @@
 	title="Drumming paradiddles"
 	style="Jazz"
 
-	copyright=copyright_val_study
+	attributes['copyright']=attributes['copyrightvalstudy']
 
 	completion="5"
 	uuid="eb2be7a4-6f42-11e0-a53d-0019d11e5a41"

@@ -1,20 +1,23 @@
 <%inherit file="/src/include/common.makoi"/>
-\header {
-	default_header
+<%
+	attributes['jazzTune']=True
+	attributes['type']="own"
 
-	title="Drumming drills with no bar lines"
-	style="Jazz"
+	attributes['title']="Drumming drills with no bar lines"
+	attributes['style']="Jazz"
 
-	copyright=copyright_val_study
+	attributes['copyright']=attributes['copyrightvalstudy']
 
-	completion="5"
-	uuid="6d469874-6e9e-11e0-b6e5-0019d11e5a41"
-}
+	attributes['completion']="5"
+	attributes['uuid']="6d469874-6e9e-11e0-b6e5-0019d11e5a41"
+%>
 
 <%doc>
+	DONE:
 	TODO:
 </%doc>
 
+<%def name="myOwn()">
 \markuplines {
 	\wordwrap-lines { \italic {
 	These are exercises to train the control of your hands. The idea is to train your hand for flexibility and agility.
@@ -278,3 +281,4 @@ Starting with the left hand.
 		}
 	}
 }
+</%def>

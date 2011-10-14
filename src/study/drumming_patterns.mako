@@ -1,15 +1,16 @@
 <%inherit file="/src/include/common.makoi"/>
-\header {
-	default_header
+<%
+	attributes['jazzTune']=True
+	attributes['type']="own"
 
-	title="Drumming patterns"
-	style="Jazz"
+	attributes['title']="Drumming patterns"
+	attributes['style']="Jazz"
 
-	copyright=copyright_val_study
+	attributes['copyright']=attributes['copyrightvalstudy']
 
-	completion="5"
-	uuid="f39a06ec-6d98-11e0-b7b1-0019d11e5a41"
-}
+	attributes['completion']="5"
+	attributes['uuid']="f39a06ec-6d98-11e0-b7b1-0019d11e5a41"
+%>
 
 <%doc>
 	TODO:
@@ -17,6 +18,7 @@
 		RLLRLLRLLRLLRLRL
 </%doc>
 
+<%def name="myOwn()">
 \markup {
 Drumming patterns to train with pad over...
 }
@@ -157,3 +159,4 @@ Triplet based combinations...
 	}
 	\layout {}
 }
+</%def>

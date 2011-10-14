@@ -1,23 +1,28 @@
 <%inherit file="/src/include/common.makoi"/>
-\header {
-	default_header
+<%
+	attributes['jazzTune']=True
+	attributes['type']="tune"
+	attributes['render']="My"
 
-	title="Jazz chords on the major scale"
-	style="Jazz"
-	piece="Upbeat Jazz"
+	attributes['title']="Jazz chords on the major scale"
+	attributes['style']="Jazz"
+	attributes['piece']="Upbeat Jazz"
 
-	copyright=copyright_val_study
+	attributes['copyright']=attributes['copyrightvalstudy']
 
-	completion="4"
+	attributes['completion']="4"
 
-	uuid="ffbec224-36a6-11e0-aecb-0019d11e5a41"
-}
+	attributes['uuid']="ffbec224-36a6-11e0-aecb-0019d11e5a41"
+%>
 
 <%doc>
+	DONE:
 	TODO:
+	- document what has been done for this tune.
 </%doc>
 
-myVoice=\relative c' {
+<%def name="myVoiceMy()">
+\relative c' {
 	\time 4/4
 	\key bes \major
 
@@ -39,20 +44,4 @@ myVoice=\relative c' {
 
 	%% now left hand plays 1 and 7 only while right hand plays all but the root and 7 goes to approach to 6 from below and then 6
 }
-%% score for printing
-\score {
-	<<
-		\new Voice="myvoice" \myVoice
-	>>
-	\layout {
-	}
-}
-%% score for midi
-\score {
-	\unfoldRepeats
-	<<
-		\new Voice="myvoice" \myVoice
-	>>
-	\midi {
-	}
-}
+</%def>
