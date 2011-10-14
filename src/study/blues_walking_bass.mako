@@ -1,25 +1,28 @@
 <%inherit file="/src/include/common.makoi"/>
-\header {
-	default_header
+<%
+	attributes['jazzTune']=True
+	attributes['type']="harmony_tune"
+	attributes['render']="My"
 
-	title="Jazz Bass line for Blues in F"
-	style="Jazz"
-	piece="Upbeat Jazz Blues"
+	attributes['title']="Jazz Bass line for Blues in F"
+	attributes['style']="Jazz"
+	attributes['piece']="Upbeat Jazz Blues"
 
-	copyright=copyright_val_study
+	attributes['copyright']=attributes['copyrightvalstudy']
 
-	completion="5"
+	attributes['completion']="5"
 
-	uuid="84a886b8-a26f-11df-9034-0019d11e5a41"
-}
-jazzTune
+	attributes['uuid']="84a886b8-a26f-11df-9034-0019d11e5a41"
+
+	attributes['remark']="Taken from Ofer Portugali's exercises at Rimon"
+%>
 
 <%doc>
+	DONE:
 	TODO:
 </%doc>
 
-\score {
-<<
+<%def name="myChordsMy()">
 \chordmode {
 	\startChords
 
@@ -50,30 +53,26 @@ jazzTune
 
 	\endChords
 }
-\new Voice="melody" {
+</%def>
+
+<%def name="myVoiceMy()">
+\relative f, {
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Allegro" 4 = 130
 	\time 4/4
 	\key f \major
 	\clef bass
 
-	f,4 a, c b, | bes, d, dis, e, | f, a, d des | c e, f, a, |
-	bes, f d c | bes, b, c e | f a, c cis | d fis, a, aes, |
-	g, a, ais, b, | c cis d e | f a, d fis, | g, b, c e |
+	f4 a c b | bes d, dis e | f a d des | c e, f a |
+	bes f' d c | bes b c e | f a, c cis | d fis, a aes |
+	g a ais b | c cis d e | f a, d fis, | g b c e |
 
-	f f ees ees | d d des des | c d g, c | f, fis, g, a, |
-	bes,4 b,4 c4 b,8 f,8-> | bes,8 f,8 aes,4 g, ges, | f, c b, bes, | a, ees d8 a,8 fis,4 |
-	g, bes, d des | c bes, a, g, | f, ees d aes, | g, des c bes, |
+	f f ees ees | d d des des | c d g, c | f, fis g a |
+	bes b c b8 f-> | bes f aes4 g ges | f c' b bes | a ees' d8 a fis4 |
+	g bes d des | c bes a g | f ees' d aes | g des' c bes |
 
-	a, c f ees | d ees d des | c d ees g, | c bes, a, f |
-	bes, f, c f | bes,8 f8-> b,4 c bes, | a, bes, a, g, | fis, a, d8 a,8 fis,4 |
-	g,8 g,8-> a,4 bes, b, | c d dis e8 f8-> | r8 a,4.-> d4 c | b, g, c8 e,4.-> |
+	a c f ees | d ees d des | c d ees g, | c bes a f' |
+	bes, f c' f | bes,8 f'-> b,4 c bes | a bes a g | fis a d8 a fis4 |
+	g8 g-> a4 bes b | c d dis e8 f-> | r a,4.-> d4 c | b g c8 e,4.-> |
 }
-
->>
-	\midi {
-		\context {
-			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
-		}
-	}
-	\layout {}
-}
+</%def>

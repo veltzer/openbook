@@ -5,7 +5,7 @@
 	title="Drumming rock drills"
 	style="Jazz"
 
-	copyright=copyright_val_study
+	attributes['copyright']=attributes['copyrightvalstudy']
 
 	completion="5"
 	uuid="d54f6d36-6d29-11e0-a6dd-0019d11e5a41"

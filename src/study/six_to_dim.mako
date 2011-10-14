@@ -1,19 +1,22 @@
 <%inherit file="/src/include/common.makoi"/>
-\header {
-	default_header
+<%
+	attributes['jazzTune']=True
+	attributes['type']="tune"
+	attributes['render']="My"
 
-	title="Six to Diminished scale exercises"
-	style="Jazz"
-	piece="Upbeat Jazz"
+	attributes['title']="Six to Diminished scale exercises"
+	attributes['style']="Jazz"
+	attributes['piece']="Upbeat Jazz"
 
-	copyright=copyright_val_study
+	attributes['copyright']=attributes['copyrightvalstudy']
 
-	completion="4"
+	attributes['completion']="4"
 
-	uuid="35529555-8b38-4cc0-be20-2dc5f1848d77"
-}
+	attributes['uuid']="35529555-8b38-4cc0-be20-2dc5f1848d77"
+%>
 
 <%doc>
+	DONE:
 	TODO:
 	- six to dim with full chords going up and down.
 	- six to dim with drop two (two hands).
@@ -22,7 +25,8 @@
 		at least a couple of kinds of argpegios.
 </%doc>
 
-myVoice=\relative c' {
+<%def name="myVoiceMy()">
+\relative c' {
 	\time 4/4
 	\key bes \major
 
@@ -32,20 +36,4 @@ myVoice=\relative c' {
 	<g a c ees> <aes b d f> <a c ees g> <b d f aes>
 	<c ees g a>
 }
-%% score for printing
-\score {
-	<<
-		\new Voice="myvoice" \myVoice
-	>>
-	\layout {
-	}
-}
-%% score for midi
-\score {
-	\unfoldRepeats
-	<<
-		\new Voice="myvoice" \myVoice
-	>>
-	\midi {
-	}
-}
+</%def>

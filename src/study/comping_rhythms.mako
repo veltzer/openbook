@@ -1,21 +1,24 @@
 <%inherit file="/src/include/common.makoi"/>
-\header {
-	default_header
+<%
+	attributes['jazzTune']=True
+	attributes['type']="own"
 
-	title="Comping Rhythms"
-	style="Jazz"
+	attributes['title']="Comping Rhythms"
+	attributes['style']="Jazz"
 
-	copyright=copyright_val_study
+	attributes['copyright']=attributes['copyrightvalstudy']
 
-	completion="5"
+	attributes['completion']="5"
 
-	uuid="897e4006-a26f-11df-b4da-0019d11e5a41"
-}
+	attributes['uuid']="897e4006-a26f-11df-b4da-0019d11e5a41"
+%>
 
 <%doc>
+	DONE:
 	TODO:
 </%doc>
 
+<%def name="myOwn()">
 \markup {
 Standard Jazz comping pattern...
 }
@@ -156,3 +159,4 @@ Triplet based combinations...
 	}
 	\layout {}
 }
+</%def>

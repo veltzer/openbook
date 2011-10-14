@@ -6,7 +6,7 @@
 	style="Jazz"
 	piece="Upbeat Jazz"
 
-	copyright=copyright_val_study
+	attributes['copyright']=attributes['copyrightvalstudy']
 
 	completion="5"
 
