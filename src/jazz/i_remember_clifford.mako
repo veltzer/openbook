@@ -1,20 +1,26 @@
 <%inherit file="/src/include/common.lyi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['type']="tune"
+
+	attributes['title']="I Remember Clifford"
+	attributes['composer']="Benny Golson"
+	attributes['style']="Jazz"
+	attributes['piece']="Med Swing"
+
+	attributes['completion']="0"
+	attributes['uuid']="efea8972-a26e-11df-af8e-0019d11e5a41"
 %>
-\header {
-	default_header
 
-	title="I Remember Clifford"
-	composer="Benny Golson"
-	style="Jazz"
-	piece="Med Swing"
+<%doc>
+	DONE:
+	TODO:
+	- where is this from?
+	- mark whats been done for this tune
+	- add chords and music.
+</%doc>
 
-	completion="0"
-	uuid="efea8972-a26e-11df-af8e-0019d11e5a41"
-}
-
-tune=\relative c'' {
+myVoice=\relative c'' {
 	\key c \major
 	\time 4/4
 
@@ -32,5 +38,3 @@ tune=\relative c'' {
 	e2. d8 b ) | c2 r8 d ( e f | g4. g8 gis f b gis ) | a2 r8 e ( a b ) |
 	c2 r8 d, ( g a ) | bes2 r8 a, ( c d | e a, c d ees4 b ) | c1 |
 }
-
-include(src/include/tune.lyi)

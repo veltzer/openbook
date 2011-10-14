@@ -24,9 +24,11 @@
 
 %>
 
-##	DONE:
-##	TODO:
-##	- fill out what's been done for this tune.
+<%doc>
+	DONE:
+	TODO:
+	- fill out what's been done for this tune.
+</%doc>
 
 <%def name="myChordsReal()">
 \chordmode {

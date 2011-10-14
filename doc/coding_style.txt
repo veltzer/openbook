@@ -1,12 +1,24 @@
 Here are some policy descision:
 ===============================
-- until a templating system is ready we are using straight lilypond files.
+- we are using a rich preprocessing/templating system. Reasons are:
+	- we want lilypond to see the minimum information to render the result.
+	- we would like to use the same file as the source for many different lilypond
+	renderings.
+	- we would like to use the same file as the source of many versions of the same tune.
+	- we would like to minimum infomation that pertains to the tune to be in the tune
+	file. All the rest should be handled by the framework.
+	Currently we are using pythons Mako.
 - until a configuration database is ready we are using lilypond includes to share data
 	and to make it easy to change.
 - all includes are root relative.
 	( \include "src/include/common.lyi" )
-- some more checks are being made by the "make check_all" procedue which are also parts
-	of the policy.
+- "make check_all" should pass with no error. This is currently not part of the build and needs
+	to be checked manually but hopefully in the future it will be.
+
+comments:
+=========
+In the lilypond section comments should start with %% and not one (%). The main reason is to avoid
+the chance of collision with future or current templating systems that may use a single % as a directive.
 
 name of files:
 ==============
@@ -25,8 +37,8 @@ This alteration has the following advantages:
 	coding such scripts but I don't see a reason to complicate things when a much
 	simpler solution exists.
 
-Policies about songs:
-=====================
+writing songs:
+==============
 - breaks.
 	Let lilypond dictate the break. Only change when lilypond makes bad descisions.
 	use the \myBreak macro at every line end. This may turn to a break or it may not.
@@ -37,8 +49,8 @@ Policies about songs:
 	not do that by default. (Why? Is that a bug that I should report ?!?).
 - order between parts:
 	first chords.
-	then melody.
-	at the end vocals.
+	then voice.
+	at the end text.
 
 Chords:
 =======

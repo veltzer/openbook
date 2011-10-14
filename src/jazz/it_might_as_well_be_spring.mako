@@ -1,21 +1,19 @@
 <%inherit file="/src/include/common.lyi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['type']="tune"
+
+	attributes['title']="It might as well be spring"
+	attributes['composer']="Richard Rogers"
+	attributes['poet']="Oscar Hammerstein"
+	attributes['style']="Jazz"
+	attributes['piece']="Med Swing"
+
+	attributes['completion']="0"
+	attributes['uuid']="f4f39800-a26e-11df-b97a-0019d11e5a41"
 %>
-\header {
-	default_header
 
-	title="It might as well be spring"
-	composer="Richard Rogers"
-	poet="Oscar Hammerstein"
-	style="Jazz"
-	piece="Med Swing"
-
-	completion="0"
-	uuid="f4f39800-a26e-11df-b97a-0019d11e5a41"
-}
-
-tune=\relative d' {
+myVoice=\relative d' {
 	\time 4/4
 	\key g \major
 
@@ -37,5 +35,3 @@ tune=\relative d' {
 	b2. b8 bis | cis4 a a a8 b! | c! a a a a4 a8 ais | b4 g g b |
 	a2. g4 | d4.. b'16 g2 | d4.. c'16 a2 | g1 | r2 r4 d8 d |
 }
-
-include(src/include/tune.lyi)
