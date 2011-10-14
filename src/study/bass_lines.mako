@@ -1,27 +1,30 @@
 <%inherit file="/src/include/common.makoi"/>
-\header {
-	default_header
+<%
+	attributes['jazzTune']=True
+	attributes['type']="own"
 
-	title="Bass Lines"
-	style="Jazz"
-	piece="Upbeat Jazz"
+	attributes['title']="Bass Lines"
+	attributes['style']="Jazz"
+	attributes['piece']="Upbeat Jazz"
 
 	attributes['copyright']=attributes['copyrightvalstudy']
 
-	completion="5"
+	attributes['completion']="5"
 
-	uuid="805e8a3a-a26f-11df-aa51-0019d11e5a41"
-}
-jazzTune
+	attributes['uuid']="805e8a3a-a26f-11df-aa51-0019d11e5a41"
+%>
 
 <%doc>
+	DONE:
 	TODO:
+	- write was has been done in this tune.
 	- Emphasize the bars which are important in the variations (how do you do that in lilypond ?)
 	- add short bass lines, ones which form the harmony Dm7,G7,Cm7,F7,...
 	- add long bass lines for harmony: Dm7,Dm7,G7,G7
 	- add turn around bass lines for harmony: Cmaj7,A7,Dm7,G7
 </%doc>
 
+<%def name="myOwn()">
 \score {
 <<
 \chordmode {
@@ -128,3 +131,4 @@ jazzTune
 	}
 	\layout {}
 }
+</%def>

@@ -1,23 +1,27 @@
 <%inherit file="/src/include/common.makoi"/>
-\header {
-	default_header
+<%
+	attributes['jazzTune']=True
+	attributes['type']="own"
 
-	title="Drumming paradiddles"
-	style="Jazz"
+	attributes['title']="Drumming paradiddles"
+	attributes['style']="Jazz"
 
 	attributes['copyright']=attributes['copyrightvalstudy']
 
-	completion="5"
-	uuid="eb2be7a4-6f42-11e0-a53d-0019d11e5a41"
-}
+	attributes['completion']="5"
+	attributes['uuid']="eb2be7a4-6f42-11e0-a53d-0019d11e5a41"
+%>
 
 <%doc>
+	DONE:
 	TODO:
+	- mark what has been done in this tune.
 	- add more text here about paradiddles.
 	- add a reference to wikipedia: http://en.wikipedia.org/wiki/Rudiment
 	- get more examples from wikipedia coded here.
 </%doc>
 
+<%def name="myOwn()">
 \markuplines {
 	\wordwrap-lines { \italic {
 	This is some text about paradiddles...
@@ -163,3 +167,4 @@ Paradiddle-Diddle (starting with the right hand).
 		}
 	}
 }
+</%def>

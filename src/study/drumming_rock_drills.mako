@@ -1,21 +1,23 @@
 <%inherit file="/src/include/common.makoi"/>
-\header {
-	default_header
+<%
+	attributes['jazzTune']=True
+	attributes['type']="own"
 
-	title="Drumming rock drills"
-	style="Jazz"
+	attributes['title']="Drumming rock drills"
+	attributes['style']="Jazz"
 
 	attributes['copyright']=attributes['copyrightvalstudy']
 
-	completion="5"
-	uuid="d54f6d36-6d29-11e0-a6dd-0019d11e5a41"
-}
-generalMacros
+	attributes['completion']="5"
+	attributes['uuid']="d54f6d36-6d29-11e0-a6dd-0019d11e5a41"
+%>
 
 <%doc>
+	DONE:
 	TODO:
 </%doc>
 
+<%def name="myOwn()">
 \markup {
 Regular rock type drumming...
 }
@@ -123,3 +125,4 @@ Patterns of 3 located in different places in the eight 8 notes...
 	}
 	\layout {}
 }
+</%def>
