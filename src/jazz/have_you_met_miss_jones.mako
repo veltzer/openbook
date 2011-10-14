@@ -1,9 +1,8 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
-%>
-\header {
-	default_header
+	attributes['type']="harmony_tune"
+	attributes['render']="Unknown"
 
 	title="Have you met Miss Jones"
 	composer="Richard Rogers"
@@ -13,15 +12,17 @@
 
 	completion="0"
 	uuid="fe106f6c-a26e-11df-abb3-0019d11e5a41"
-}
+%>
 
 <%doc>
+	DONE:
 	TODO:
 	-add lyrics
 	-change the name of the file this tune is in (it is not according to convention).
 </%doc>
 
-myChords=\chordmode {
+<%def name="myChordsUnknown()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -51,8 +52,10 @@ myChords=\chordmode {
 
 	\endChords
 }
+</%def>
 
-myVoice=\relative a' {
+<%def name="myVoiceUnknown()">
+\relative a' {
 	\time 4/4
 	\key f \major
 
@@ -63,5 +66,4 @@ myVoice=\relative a' {
 	des2 des | bes1~ | bes2. r4 |
 	a4 d, c d | c2. r4 | d e f g | a bes c d | e1~ | e4 d a g | f1 | r |
 }
-
-include(src/include/harmony_tune.lyi)
+</%def>

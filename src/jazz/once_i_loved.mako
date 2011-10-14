@@ -1,9 +1,8 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
-%>
-\header {
-	default_header
+	attributes['type']="harmony_tune_lyricsmore"
+	attributes['render']="Real"
 
 	title="Once I Loved"
 	composer="Antonio Carlos Jobim"
@@ -17,13 +16,13 @@
 
 	structure="AAB"
 
-	%% Joe Henderson accompanied by guitar doing Bossa...
+	idyoutuberemark="Joe Henderson accompanied by guitar doing Bossa..."
 	idyoutube="rJxHFW2S-Eo"
-	%% Astrud Gilberto (original Bossa Style with Orchestra)
+	idyoutuberemark="Astrud Gilberto (original Bossa Style with Orchestra)"
 	idyoutube="BwP0eIRU-dQ"
 
 	lyricsurl="http://www.sing365.com/music/lyric.nsf/Once-I-Loved-lyrics-Ella-Fitzgerald/24CD6F6E245519E348256AAB0009C557"
-}
+%>
 
 <%doc>
 	DONE:
@@ -49,8 +48,8 @@
 	- add the version from the new real book.
 </%doc>
 
-%% this version of the chords is from the real book...
-myChords=\chordmode {
+<%def name="myChordsReal()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -80,9 +79,10 @@ myChords=\chordmode {
 
 	\endChords
 }
+</%def>
 
-%% this version of the tune is taken from the real book
-myVoice=\relative d'' {
+<%def name="myVoiceReal()">
+\relative d'' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 144
 	\time 4/4
@@ -107,9 +107,11 @@ myVoice=\relative d'' {
 	f2~ f8 f4 cis8 | e4. d8 d2~ | d1 |
 
 }
+</%def>
 
+<%def name="myLyricsReal()">
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
-myLyrics=\lyricmode {
+\lyricmode {
 	Once __ __ I loved, __ __
 	And I gave so much love to this love,
 	You were the world to me; __ __
@@ -118,7 +120,10 @@ myLyrics=\lyricmode {
 	at the thought I was fool -- ish and proud
 	and let you say good -- bye. __
 }
-myLyricsmore=\lyricmode {
+</%def>
+
+<%def name="myLyricsRealmore()">
+\lyricmode {
 	Then __ __ one day, __ __
 	From my in -- fi -- nite sad -- ness you came
 	and brought me love a -- gain; __ __
@@ -133,5 +138,4 @@ myLyricsmore=\lyricmode {
 	Be -- cause love is the __ sad -- dest thing __
 	when it goes a -- way, __
 }
-
-include(src/include/harmony_tune_lyricsmore.lyi)
+</%def>
