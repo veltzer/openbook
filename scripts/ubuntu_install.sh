@@ -9,4 +9,4 @@
 
 # optional:
 # lilypond-doc: for documentation
-sudo apt-get install lilypond timidity lame gpp m4 cpp pdfjam
+sudo apt-get install perl python python-mako lilypond timidity lame pdfjam

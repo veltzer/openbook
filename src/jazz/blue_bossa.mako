@@ -33,7 +33,8 @@
 	- document the youtube performances.
 </%doc>
 
-myChordsReal=\chordmode {
+<%def name="myChordsReal()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -53,8 +54,10 @@ myChordsReal=\chordmode {
 
 	\endChords
 }
+</%def>
 
-myVoiceReal=\relative c''' {
+<%def name="myVoiceReal()">
+\relative c''' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 150
 	\time 4/4
@@ -73,9 +76,11 @@ myVoiceReal=\relative c''' {
 
 	}
 }
+</%def>
 
-%% this version of the lyrics is from the internet...
-myLyricsReal=\lyricmode {
+<%def name="myLyricsReal()">
+%% this version of the lyrics is from the internet adjusted for the real book.
+\lyricmode {
 	A place in -- side my heart
 	Is where you live
 	Mem -- ories of our start
@@ -85,8 +90,10 @@ myLyricsReal=\lyricmode {
 	And you are in my arms
 	The_blue -- ness of the_true -- ness of our love
 }
+</%def>
 
-myLyricsRealmore=\lyricmode {
+<%def name="myLyricsRealmore()">
+\lyricmode {
 	_ Nights of moon -- lit skies
 	A gen -- tle kiss
 	Some -- thing in your eyes
@@ -98,8 +105,10 @@ myLyricsRealmore=\lyricmode {
 
 	The
 }
+</%def>
 
-myLyricsRealmoremore=\lyricmode {
+<%def name="myLyricsRealmoremore()">
+\lyricmode {
 	The thought of how we met
 	Still lin -- gers on
 	How can I for -- get
@@ -109,3 +118,4 @@ myLyricsRealmoremore=\lyricmode {
 	The fi -- re in your touch
 	The_blue -- ness of the_true -- ness of our love
 }
+</%def>

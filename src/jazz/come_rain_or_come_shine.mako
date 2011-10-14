@@ -1,9 +1,8 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
-%>
-\header {
-	default_header
+	attributes['type']="harmony_tune_lyrics"
+	attributes['render']="Fake"
 
 	title="Come Rain Or Come Shine"
 	composer="Harold Arlen"
@@ -16,16 +15,21 @@
 	uuid="b109cd80-a26e-11df-8c11-0019d11e5a41"
 
 	idyoutube="XqECFy_qzkM"
-}
+
+	remark="the my set of chords is from Amit Golan"
+%>
 
 <%doc>
+	DONE:
 	TODO:
+	- mark whats been done with this tune...
 	- do the __ at the end of sentences thing.
 	- add a youtube performance.
+	- document the current you tube performance.
 </%doc>
 
-%% this set of chords is from Amit Golan
-myChordsAmit=\chordmode {
+<%def name="myChordsMy()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -52,8 +56,10 @@ myChordsAmit=\chordmode {
 
 	\endChords
 }
-%% this set of chords is taken from the fake book
-myChords=\chordmode {
+</%def>
+
+<%def name="myChordsFake()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -80,25 +86,31 @@ myChords=\chordmode {
 
 	\endChords
 }
-myVoice=\relative f' {
+</%def>
+
+<%def name="myVoiceFake()">
+\relative f' {
 	\time 4/4
 	\key f \major
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 100
 
-	a4 a8 a8 a8 a4 a8 | a4 a8 a8 a8 a4 a8 | a8 f f f~ f2~ | f1 |
-	a4 a8 a8 a8 a4 a8 | c4 a8 a8 a8 a4 a8 | a8 f f f~ f2~ | f1 |
+	a4 a8 a a a4 a8 | a4 a8 a a a4 a8 | a f f f~ f2~ | f1 |
+	a4 a8 a a a4 a8 | c4 a8 a a a4 a8 | a f f f~ f2~ | f1 |
 
-	bes2 bes4 aes8 bes8 | c4 f,2 f8 f8 | bes2 bes4 aes8 bes8 | c1 |
-	d2 d4 c8 d8 | ees4 c2 c8 d8 | ees8 c8 d4 c4 bes8 g8 | a4 g2. |
+	bes2 bes4 aes8 bes | c4 f,2 f8 f | bes2 bes4 aes8 bes | c1 |
+	d2 d4 c8 d | ees4 c2 c8 d | ees c d4 c bes8 g | a4 g2. |
 
-	a4 a8 a8 a8 a4 a8 | a4 a8 a8 a8 a4 a8 | a8 f f f~ f2~ | f1 |
-	b4 b8 b8 b8 b4 b8 | b4 b8 b8 b8 b4 b8 | cis8 a8 a8 a8~ a2~ | a1 |
+	a4 a8 a a a4 a8 | a4 a8 a a a4 a8 | a f f f~ f2~ | f1 |
+	b4 b8 b b b4 b8 | b4 b8 b b b4 b8 | cis a a a~ a2~ | a1 |
 
-	d4 d8 d8 d8 d4 d8 | d4 d,2 d4 | d'4 d8 d8 d8 d4 d8 | d4 d,2 e4 |
-	a4 a8 bes8 b8 d4. | e4 e8 d8 e8 d8 e4 | d1~ | d2 r2 |
+	d4 d8 d d d4 d8 | d4 d,2 d4 | d' d8 d d d4 d8 | d4 d,2 e4 |
+	a a8 bes b d4. | e4 e8 d e d e4 | d1~ | d2 r |
 }
-myLyrics=\lyricmode {
+</%def>
+
+<%def name="myLyricsFake()">
+\lyricmode {
 	I'm gon -- na love you like no -- bod -- y's loved you,
 	Come Rain Or Come Shine.
 	High as a moun -- tain and deep as a riv -- er,
@@ -119,5 +131,4 @@ myLyrics=\lyricmode {
 	But I'm with you al -- ways,
 	I'm with you rain _ or shine!
 }
-
-include(src/include/harmony_tune_lyrics.lyi)
+</%def>

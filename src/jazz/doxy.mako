@@ -1,30 +1,33 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['type']="harmony_tune"
+	attributes['render']="Real"
+
+	attributes['title']="Doxy"
+	attributes['composer']="Sonny Rollins"
+	attributes['copyright']="1963 Prestige music co, inc."
+	attributes['style']="Jazz"
+	attributes['piece']="Medium Groove"
+	attributes['poet']="None"
+
+	attributes['completion']="5"
+	attributes['uuid']="c921579e-a26e-11df-9a5c-0019d11e5a41"
+
+	attributes['idyoutube']="ZcPxCQhJ2n4"
 %>
-\header{
-	default_header
-
-	title="Doxy"
-	composer="Sonny Rollins"
-	copyright="1963 Prestige music co, inc."
-	style="Jazz"
-	piece="Medium Groove"
-	poet="None"
-
-	completion="5"
-	uuid="c921579e-a26e-11df-9a5c-0019d11e5a41"
-
-	idyoutube="ZcPxCQhJ2n4"
-}
 
 <%doc>
 	DONE:
 	TODO:
-	- add a url for a good performance of this (haven't found one of sonny rollins yet).
+	- document what has been done to this tune.
+	- document the youtube performance.
+	- add another you tube good performance of this (haven't found one of sonny rollins yet).
+	- add another version of this tune from some other book.
 </%doc>
 
-myChords=\chordmode {
+<%def name="myChordsReal()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -54,8 +57,10 @@ myChords=\chordmode {
 
 	\endChords
 }
+</%def>
 
-myVoice=\relative f' {
+<%def name="myVoiceReal()">
+\relative f' {
 	\time 4/4
 	\key bes \major
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -78,5 +83,4 @@ myVoice=\relative f' {
 	bes8 d bes f bes4 r8 f | bes8 f bes des r g,4 f8 |
 	e8 g bes des \times 4/3 { c16 des c } g8 bes | r1 |
 }
-
-include(src/include/harmony_tune.lyi)
+</%def>

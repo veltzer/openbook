@@ -192,11 +192,7 @@ include(predefined-guitar-fretboards.ly)
 ${self.definitions()}
 % endif
 
-% if attributes['type']=='harmony_tune_lyricsmore':
-%% score for printing
-\score {
-	<<
-		\new ChordNames="Chords"
+<%def name="myChords()">
 % if attributes['render']=='Real':
 			${self.myChordsReal()}
 % endif
@@ -206,8 +202,18 @@ ${self.definitions()}
 % if attributes['render']=='Unknown':
 			${self.myChordsUnknown()}
 % endif
-		\new Staff="Melody" {
-			\new Voice="myvoice"
+% if attributes['render']=='Ultimate':
+			${self.myChordsUltimate()}
+% endif
+% if attributes['render']=='Aebersold':
+			${self.myChordsAebersold()}
+% endif
+% if attributes['render']=='My':
+			${self.myChordsMy()}
+% endif
+</%def>
+
+<%def name="myVoice()">
 % if attributes['render']=='Real':
 			${self.myVoiceReal()}
 % endif
@@ -217,8 +223,18 @@ ${self.definitions()}
 % if attributes['render']=='Unknown':
 			${self.myVoiceUnknown()}
 % endif
-		}
-		\new Lyrics="Lyrics" \lyricsto "myvoice"
+% if attributes['render']=='Ultimate':
+			${self.myVoiceUltimate()}
+% endif
+% if attributes['render']=='Aebersold':
+			${self.myVoiceAebersold()}
+% endif
+% if attributes['render']=='My':
+			${self.myVoiceMy()}
+% endif
+</%def>
+
+<%def name="myLyrics()">
 % if attributes['render']=='Real':
 			${self.myLyricsReal()}
 % endif
@@ -228,7 +244,18 @@ ${self.definitions()}
 % if attributes['render']=='Unknown':
 			${self.myLyricsUnknown()}
 % endif
-		\new Lyrics="Lyrics" \lyricsto "myvoice"
+% if attributes['render']=='Ultimate':
+			${self.myLyricsUltimate()}
+% endif
+% if attributes['render']=='Aebersold':
+			${self.myLyricsAebersold()}
+% endif
+% if attributes['render']=='My':
+			${self.myLyricsMy()}
+% endif
+</%def>
+
+<%def name="myLyricsmore()">
 % if attributes['render']=='Real':
 			${self.myLyricsRealmore()}
 % endif
@@ -238,6 +265,54 @@ ${self.definitions()}
 % if attributes['render']=='Unknown':
 			${self.myLyricsUnknownmore()}
 % endif
+% if attributes['render']=='Ultimate':
+			${self.myLyricsUltimatemore()}
+% endif
+% if attributes['render']=='Aebersold':
+			${self.myLyricsAebersoldmore()}
+% endif
+% if attributes['render']=='My':
+			${self.myLyricsMymore()}
+% endif
+</%def>
+
+<%def name="myLyricsmoremore()">
+% if attributes['render']=='Real':
+			${self.myLyricsRealmoremore()}
+% endif
+% if attributes['render']=='Fake':
+			${self.myLyricsFakemoremore()}
+% endif
+% if attributes['render']=='Unknown':
+			${self.myLyricsUnknownmoremore()}
+% endif
+% if attributes['render']=='Ultimate':
+			${self.myLyricsUltimatemoremore()}
+% endif
+% if attributes['render']=='Aebersold':
+			${self.myLyricsAebersoldmoremore()}
+% endif
+% if attributes['render']=='My':
+			${self.myLyricsMymoremore()}
+% endif
+</%def>
+
+% if attributes['type']=='harmony_tune_lyricsmoremore':
+%% score for printing
+\score {
+	<<
+		\new ChordNames="Chords"
+			${self.myChords()}
+		\new Staff="Melody" {
+			\new Voice="myvoice"
+			${self.myVoice()}
+		}
+		\new Lyrics="Lyrics" \lyricsto "myvoice"
+			${self.myLyrics()}
+		\new Lyrics="Lyrics" \lyricsto "myvoice"
+			${self.myLyricsmore()}
+		\new Lyrics="Lyrics" \lyricsto "myvoice"
+			${self.myLyricsmoremore()}
 	>>
 	\layout {
 	}
@@ -248,49 +323,60 @@ ${self.definitions()}
 	<<
 		%% the ="Chords" is the name of the channel that will be in midi
 		\new ChordNames="Chords"
-% if attributes['render']=='Real':
-			${self.myChordsReal()}
-% endif
-% if attributes['render']=='Fake':
-			${self.myChordsFake()}
-% endif
-% if attributes['render']=='Unknown':
-			${self.myChordsUnknown()}
-% endif
+			${self.myChords()}
 		%% the ="Melody" is the name of the channel that will be in midi
 		\new Staff="Melody" {
 			\new Voice="myvoice"
-% if attributes['render']=='Real':
-			${self.myVoiceReal()}
-% endif
-% if attributes['render']=='Fake':
-			${self.myVoiceFake()}
-% endif
-% if attributes['render']=='Unknown':
-			${self.myVoiceUnknown()}
-% endif
+			${self.myVoice()}
 		}
 		%% the ="Lyrics" is the name of the channel that will be in midi
 		\new Lyrics="Lyrics" \lyricsto "myvoice"
-% if attributes['render']=='Real':
-			${self.myLyricsReal()}
-% endif
-% if attributes['render']=='Fake':
-			${self.myLyricsFake()}
-% endif
-% if attributes['render']=='Unknown':
-			${self.myLyricsUnknown()}
-% endif
+			${self.myLyrics()}
 		\new Lyrics="Lyrics" \lyricsto "myvoice"
-% if attributes['render']=='Real':
-			${self.myLyricsRealmore()}
+			${self.myLyricsmore()}
+		\new Lyrics="Lyrics" \lyricsto "myvoice"
+			${self.myLyricsmoremore()}
+	>>
+	\midi {
+	}
+}
 % endif
-% if attributes['render']=='Fake':
-			${self.myLyricsFakemore()}
-% endif
-% if attributes['render']=='Unknown':
-			${self.myLyricsUnknownmore()}
-% endif
+
+% if attributes['type']=='harmony_tune_lyricsmore':
+%% score for printing
+\score {
+	<<
+		\new ChordNames="Chords"
+			${self.myChords()}
+		\new Staff="Melody" {
+			\new Voice="myvoice"
+			${self.myVoice()}
+		}
+		\new Lyrics="Lyrics" \lyricsto "myvoice"
+			${self.myLyrics()}
+		\new Lyrics="Lyrics" \lyricsto "myvoice"
+			${self.myLyricsmore()}
+	>>
+	\layout {
+	}
+}
+%% score for midi
+\score {
+	\unfoldRepeats
+	<<
+		%% the ="Chords" is the name of the channel that will be in midi
+		\new ChordNames="Chords"
+			${self.myChords()}
+		%% the ="Melody" is the name of the channel that will be in midi
+		\new Staff="Melody" {
+			\new Voice="myvoice"
+			${self.myVoice()}
+		}
+		%% the ="Lyrics" is the name of the channel that will be in midi
+		\new Lyrics="Lyrics" \lyricsto "myvoice"
+			${self.myLyrics()}
+		\new Lyrics="Lyrics" \lyricsto "myvoice"
+			${self.myLyricsmore()}
 	>>
 	\midi {
 	}
@@ -302,46 +388,13 @@ ${self.definitions()}
 \score {
 	<<
 		\new ChordNames="Chords"
-% if attributes['render']=='Real':
-			${self.myChordsReal()}
-% endif
-% if attributes['render']=='Fake':
-			${self.myChordsFake()}
-% endif
-% if attributes['render']=='Unknown':
-			${self.myChordsUnknown()}
-% endif
-% if attributes['render']=='My':
-			${self.myChordsMy()}
-% endif
+			${self.myChords()}
 		\new Staff="Melody" {
 			\new Voice="myvoice"
-% if attributes['render']=='Real':
-			${self.myVoiceReal()}
-% endif
-% if attributes['render']=='Fake':
-			${self.myVoiceFake()}
-% endif
-% if attributes['render']=='Unknown':
-			${self.myVoiceUnknown()}
-% endif
-% if attributes['render']=='My':
-			${self.myVoiceMy()}
-% endif
+			${self.myVoice()}
 		}
 		\new Lyrics="Lyrics" \lyricsto "myvoice"
-% if attributes['render']=='Real':
-			${self.myLyricsReal()}
-% endif
-% if attributes['render']=='Fake':
-			${self.myLyricsFake()}
-% endif
-% if attributes['render']=='Unknown':
-			${self.myLyricsUnknown()}
-% endif
-% if attributes['render']=='My':
-			${self.myLyricsMy()}
-% endif
+			${self.myLyrics()}
 	>>
 	\layout {
 	}
@@ -352,48 +405,15 @@ ${self.definitions()}
 	<<
 		%% the ="Chords" is the name of the channel that will be in midi
 		\new ChordNames="Chords"
-% if attributes['render']=='Real':
-			${self.myChordsReal()}
-% endif
-% if attributes['render']=='Fake':
-			${self.myChordsFake()}
-% endif
-% if attributes['render']=='Unknown':
-			${self.myChordsUnknown()}
-% endif
-% if attributes['render']=='My':
-			${self.myChordsMy()}
-% endif
+			${self.myChords()}
 		%% the ="Melody" is the name of the channel that will be in midi
 		\new Staff="Melody" {
 			\new Voice="myvoice"
-% if attributes['render']=='Real':
-			${self.myVoiceReal()}
-% endif
-% if attributes['render']=='Fake':
-			${self.myVoiceFake()}
-% endif
-% if attributes['render']=='Unknown':
-			${self.myVoiceUnknown()}
-% endif
-% if attributes['render']=='My':
-			${self.myVoiceMy()}
-% endif
+			${self.myVoice()}
 		}
 		%% the ="Lyrics" is the name of the channel that will be in midi
 		\new Lyrics="Lyrics" \lyricsto "myvoice"
-% if attributes['render']=='Real':
-			${self.myLyricsReal()}
-% endif
-% if attributes['render']=='Fake':
-			${self.myLyricsFake()}
-% endif
-% if attributes['render']=='Unknown':
-			${self.myLyricsUnknown()}
-% endif
-% if attributes['render']=='My':
-			${self.myLyricsMy()}
-% endif
+			${self.myLyrics()}
 	>>
 	\midi {
 	}
@@ -404,32 +424,10 @@ ${self.definitions()}
 \score {
 	<<
 		\new ChordNames="Chords"
-% if attributes['render']=='Real':
-			${self.myChordsReal()}
-% endif
-% if attributes['render']=='Fake':
-			${self.myChordsFake()}
-% endif
-% if attributes['render']=='Unknown':
-			${self.myChordsUnknown()}
-% endif
-% if attributes['render']=='Aebersold':
-			${self.myChordsAebersold()}
-% endif
+			${self.myChords()}
 		\new Staff="Melody" {
 			\new Voice="myvoice"
-% if attributes['render']=='Real':
-			${self.myVoiceReal()}
-% endif
-% if attributes['render']=='Fake':
-			${self.myVoiceFake()}
-% endif
-% if attributes['render']=='Unknown':
-			${self.myVoiceUnknown()}
-% endif
-% if attributes['render']=='Aebersold':
-			${self.myVoiceAebersold()}
-% endif
+			${self.myVoice()}
 		}
 	>>
 	\layout {
@@ -441,33 +439,11 @@ ${self.definitions()}
 	<<
 		%% the ="Chords" is the name of the channel that will be in midi
 		\new ChordNames="Chords"
-% if attributes['render']=='Real':
-			${self.myChordsReal()}
-% endif
-% if attributes['render']=='Fake':
-			${self.myChordsFake()}
-% endif
-% if attributes['render']=='Unknown':
-			${self.myChordsUnknown()}
-% endif
-% if attributes['render']=='Aebersold':
-			${self.myChordsAebersold()}
-% endif
+			${self.myChords()}
 		%% the ="Melody" is the name of the channel that will be in midi
 		\new Staff="Melody" {
 			\new Voice="myvoice"
-% if attributes['render']=='Real':
-			${self.myVoiceReal()}
-% endif
-% if attributes['render']=='Fake':
-			${self.myVoiceFake()}
-% endif
-% if attributes['render']=='Unknown':
-			${self.myVoiceUnknown()}
-% endif
-% if attributes['render']=='Aebersold':
-			${self.myVoiceAebersold()}
-% endif
+			${self.myVoice()}
 		}
 	>>
 	\midi {

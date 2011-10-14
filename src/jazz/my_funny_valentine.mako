@@ -1,28 +1,32 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['type']="harmony_tune_lyrics"
+	attributes['render']="Real"
+
+	attributes['title']="My Funny Valentine"
+	attributes['composer']="Richard Rodgers"
+	attributes['copyright']="1937 by Chappell & Co., Inc. Copyright Renewed"
+	attributes['style']="Jazz"
+	attributes['piece']="Med Swing"
+	attributes['poet']="Lorenz Hart"
+
+	attributes['completion']="5"
+	attributes['uuid']="087137ac-a26f-11df-aa1f-0019d11e5a41"
+
+	attributes['idyoutube']="jvXywhJpOKs"
 %>
-\header {
-	default_header
-
-	title="My Funny Valentine"
-	composer="Richard Rodgers"
-	copyright="1937 by Chappell & Co., Inc. Copyright Renewed"
-	style="Jazz"
-	piece="Med Swing"
-	poet="Lorenz Hart"
-
-	completion="5"
-	uuid="087137ac-a26f-11df-aa1f-0019d11e5a41"
-
-	idyoutube="jvXywhJpOKs"
-}
 
 <%doc>
+	DONE:
 	TODO:
+	- get another version of this tune.
+	- document the youtube performances.
+	- mark what has been done with this tune.
 </%doc>
 
-myChords=\chordmode {
+<%def name="myChordsReal()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -56,7 +60,10 @@ myChords=\chordmode {
 
 	\endChords
 }
-myVoice=\relative a {
+</%def>
+
+<%def name="myVoiceReal()">
+\relative a {
 	\time 4/4
 	\key c \minor
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -75,7 +82,10 @@ myVoice=\relative a {
 	c'2 d4 ees | d4. ees8 d2 | ees1~ | ees |
 	ees,2 f4 g | f4. g8 f2 | ees1~ | ees2. r4 |
 }
-myLyrics=\lyricmode {
+</%def>
+
+<%def name="myLyricsReal()">
+\lyricmode {
 	My Fun -- ny Val -- en -- tine,
 	Sweet com -- ic val -- en -- tine,
 	You make me smile with my heart.
@@ -91,5 +101,4 @@ myLyrics=\lyricmode {
 	Stay lit -- tle Val -- en -- tine, stay!
 	Each day is Val -- en -- tine's day.
 }
-
-include(src/include/harmony_tune_lyrics.lyi)
+</%def>

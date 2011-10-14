@@ -1,63 +1,39 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['render']="Fake"
+	attributes['type']="harmony_tune_lyrics"
+
+	attributes['title']="Darn That Dream"
+	attributes['composer']="Jimmy Van Heusen"
+	attributes['style']="Jazz"
+	attributes['piece']="Slowly"
+	attributes['poet']="Eddie DeLange"
+	attributes['copyright']="1939 Bregman, Vocco and Conn, Inc. New York"
+	attributes['copyrightextra']="Copyright Renewed, Assigned and Copyright 1968 by Scarsdale Music. Corporation and Van Heusen Music Corp., New York"
+
+	attributes['structure']="AABA"
+
+	attributes['completion']="5"
+	attributes['uuid']="f0a5804c-eb83-11e0-aeb1-0019d11e5a41"
+
+	attributes['idyoutuberemark']="Theloneous Monk...:)"
+	attributes['idyoutube']="GsI4oNKGJPg"
+	attributes['idyoutuberemark']="Dexter Gordon, once of the great performances of this song..."
+	attributes['idyoutube']="upZ00qxXrBg"
+
+	attributes['lyricsurl']="http://www.lyricsfreak.com/b/billie+holiday/darn+that+dream_20018018.html"
 %>
-\header {
-	default_header
-
-	title="Darn That Dream"
-	composer="Jimmy Van Heusen"
-	style="Jazz"
-	piece="Slowly"
-	poet="Eddie DeLange"
-	copyright="1939 Bregman, Vocco and Conn, Inc. New York"
-	%% Copyright Renewed, Assigned and Copyright 1968 by Scarsdale Music
-	%% Corporation and Van Heusen Music Corp., New York
-
-	structure="AABA"
-
-	completion="5"
-	uuid="f0a5804c-eb83-11e0-aeb1-0019d11e5a41"
-
-	%% Theloneous Monk...:)
-	idyoutube="GsI4oNKGJPg"
-	%% Dexter Gordon, once of the great performances of this song...
-	idyoutube="upZ00qxXrBg"
-
-	lyricsurl="http://www.lyricsfreak.com/b/billie+holiday/darn+that+dream_20018018.html"
-}
 
 <%doc>
+	DONE:
 	TODO:
+	- mark what's been done with this tune.
 	- add the real book version.
 </%doc>
 
-%% taken from the fake book
-myVoice=\relative f' {
-	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Adagio" 4 = 72
-	\time 4/4
-	\key g \major
-
-	%% part A
-	d4 g ees4. ees8 | e4 a f4. fis8 | g4 b gis8 a b c | d4 e b2 |
-	b4 d c8 b a g | fis4 a e ees | d2 fis | d r |
-
-	%% part A
-	d4 g ees4. ees8 | e4 a f4. fis8 | g4 b gis8 a b c | d4 e b2 |
-	b4 d c8 b a g | fis4 a e ees | d2 b' | g2. r4 |
-
-	%% part B
-	r8 g4 g8 f4 ees | c' c8 bes~ bes4. c8 | d ees d des~ des4 ces | bes aes8 f~ f2 |
-	r8 g4 g8 f4 ees | g a8 bes~ bes4. c8 | d d d d~ d4 d, | bes'2 b |
-
-	%% part A
-	d,4 g ees4. ees8 | e4 a f4. fis8 | g4 b gis8 a b c | d4 e b2 |
-	b4 d c8 b a g | fis4 a e ees | d2 b' | g2. r4 |
-}
-
-%% taken from the fakebook
-myChords=\chordmode {
+<%def name="myChordsFake()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -90,9 +66,35 @@ myChords=\chordmode {
 
 	\endChords
 }
+</%def>
 
-%% taken from the fakebook
-myLyrics=\lyricmode {
+<%def name="myVoiceFake()">
+\relative f' {
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Adagio" 4 = 72
+	\time 4/4
+	\key g \major
+
+	%% part A
+	d4 g ees4. ees8 | e4 a f4. fis8 | g4 b gis8 a b c | d4 e b2 |
+	b4 d c8 b a g | fis4 a e ees | d2 fis | d r |
+
+	%% part A
+	d4 g ees4. ees8 | e4 a f4. fis8 | g4 b gis8 a b c | d4 e b2 |
+	b4 d c8 b a g | fis4 a e ees | d2 b' | g2. r4 |
+
+	%% part B
+	r8 g4 g8 f4 ees | c' c8 bes~ bes4. c8 | d ees d des~ des4 ces | bes aes8 f~ f2 |
+	r8 g4 g8 f4 ees | g a8 bes~ bes4. c8 | d d d d~ d4 d, | bes'2 b |
+
+	%% part A
+	d,4 g ees4. ees8 | e4 a f4. fis8 | g4 b gis8 a b c | d4 e b2 |
+	b4 d c8 b a g | fis4 a e ees | d2 b' | g2. r4 |
+}
+</%def>
+
+<%def name="myLyricsFake()">
+\lyricmode {
 	%% A part
 	Darn That Dream I dream each night,
 	You say you love me and you hold me tight,
@@ -117,5 +119,4 @@ myLyrics=\lyricmode {
 	But it haunts me and it won't come true,
 	Oh, Darn That Dream.
 }
-
-include(src/include/harmony_tune_lyrics.lyi)
+</%def>

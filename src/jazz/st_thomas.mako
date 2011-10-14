@@ -11,8 +11,6 @@
 	attributes['completion']="5"
 	attributes['uuid']="ef0827e0-f690-11e0-ba56-0019d11e5a41"
 	attributes['structure']="AABC"
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
 %>
 
 <%doc>

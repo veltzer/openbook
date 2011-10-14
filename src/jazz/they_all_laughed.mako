@@ -1,18 +1,16 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
-%>
-\header {
-	default_header
+	attributes['type']="harmony_tune_lyricsmore"
+	attributes['render']="Ultimate"
 
 	title="They All Laughed"
 	composer="George Gershwin"
 	style="Jazz"
 	piece="Medium Swing"
-	remark="copied from the ultimate fake book"
 	poet="Ira Gershwin"
 	copyright="1937, Gershwin Publishing Corporation"
-	%% Copyright Renewed, Assigned to Chappell & Co, Inc.
+	copyrightextra="Copyright Renewed, Assigned to Chappell & Co, Inc."
 	structure="AA'BA''"
 
 	completion="5"
@@ -21,13 +19,17 @@
 	idyoutube="9InLhEc6K2g"
 	idyoutube="TdLm9qRRdh4"
 	lyricsurl="http://www.sing365.com/music/lyric.nsf/They-All-Laughed-lyrics-Ella-Fitzgerald/2123DA2C32C02AF848256AAB000AB847"
-}
+%>
 
 <%doc>
+	DONE:
 	TODO:
+	- mark what has been done with this tune.
+	- document the youtube performances.
 </%doc>
 
-myChords=\chordmode {
+<%def name="myChordsUltimate()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -67,8 +69,10 @@ myChords=\chordmode {
 
 	\endSong
 }
+</%def>
 
-myVoice=\relative c' {
+<%def name="myVoiceUltimate()">
+\relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
@@ -102,7 +106,10 @@ myVoice=\relative c' {
 	}
 
 }
-myLyrics=\lyricmode {
+</%def>
+
+<%def name="myLyricsUltimate()">
+\lyricmode {
 	They All Laughed at Chris -- to -- pher Co -- lum -- bus
 	When he said the world was round. __
 	They All Laughed when Ed -- i -- son re -- cord -- ed sound. __
@@ -127,7 +134,10 @@ myLyrics=\lyricmode {
 	"\"Ha," ha, "ha!\""
 	Who's got the last laugh now? __
 }
-myLyricsmore=\lyricmode {
+</%def>
+
+<%def name="myLyricsUltimatemore()">
+\lyricmode {
 
 	They All Laughed at Rock -- e -- fel -- ler Cen -- ter,
 	Now they're fight -- ing to get in. __
@@ -148,5 +158,4 @@ myLyricsmore=\lyricmode {
 	For "\"ho," ho, "ho!\""
 	Who's got the last laugh
 }
-
-include(src/include/harmony_tune_lyricsmore.lyi)
+</%def>

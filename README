@@ -14,7 +14,7 @@ Because of many reasons:
 used by Jazz musicians both for practice and for performance.
 
 * What tools are used ?
-lilypond, m4, make, perl, lame, timidity, gpp, cpp and possibly more.
+lilypond, make, perl, python, mako, lame, timidity and possibly more.
 
 * What is produced ?
 A beautiful and lightweight postscript and PDF real books with Jazz tunes.

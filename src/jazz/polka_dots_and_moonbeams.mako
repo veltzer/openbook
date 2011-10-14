@@ -1,34 +1,35 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['type']="harmony_tune_lyrics"
+	attributes['render']="Fake"
+
+	attributes['title']="Polka Dots And Moonbeams"
+	attributes['composer']="Jimmy Van Heusen"
+	attributes['copyright']="1940 by ARC Music Corp., now Bourne Co. and Dorsey Bros."
+	attributes['copyrightextra']="Music, Division of Music Sales Corporation"
+	attributes['style']="Jazz"
+	attributes['piece']="Slowly, with expression"
+	attributes['poet']="Johnny Burke"
+
+	attributes['structure']="AABA"
+
+	attributes['completion']="5"
+	attributes['uuid']="60170b42-46e0-11e0-bf54-0019d11e5a41"
+
+	attributes['idyoutube']="4NTxWQfMSsA"
 %>
-\header {
-	default_header
-
-	title="Polka Dots And Moonbeams"
-	composer="Jimmy Van Heusen"
-	copyright="1940 by ARC Music Corp., now Bourne Co. and Dorsey Bros."
-	%% Music, Division of Music Sales Corporation
-	style="Jazz"
-	piece="Slowly, with expression"
-	poet="Johnny Burke"
-
-	structure="AABA"
-
-	completion="5"
-	uuid="60170b42-46e0-11e0-bf54-0019d11e5a41"
-
-	idyoutube="4NTxWQfMSsA"
-}
 
 <%doc>
+	DONE:
 	TODO:
+	- document what has been done with this tune.
 	- add the real book version.
 	- document the youtube performances.
 </%doc>
 
-%% version of the chords from the fakebook
-myChords=\chordmode {
+<%def name="myChordsFake()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -61,9 +62,11 @@ myChords=\chordmode {
 
 	\endChords
 }
+</%def>
 
-%% version from the fake book (turned into 8'th notes)
-myVoice=\relative a {
+<%def name="myVoiceFake()">
+%% the tune was turned into 8'th notes instead of triplets.
+\relative a {
 	\time 4/4
 	\key f \major
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -85,9 +88,10 @@ myVoice=\relative a {
 	r8 c, d e f g a c | a4 g8 f e d4. | r8 c d e f g a c | d4 c8 bes a g4. |
 	f8 g f g f2 | a8 a g f e ees4. | d8 bes' g f e a4 f8~ | f2. r4 |
 }
+</%def>
 
-%% version from the fake book
-myLyrics=\lyricmode {
+<%def name="myLyricsFake()">
+\lyricmode {
 	%% A part
 	A coun -- try dance was be -- ing held in a gar -- den,
 	I felt a bump and heard an "\"Oh," beg your par -- "don,\""
@@ -112,5 +116,4 @@ myLyrics=\lyricmode {
 	And I'll al -- ways see Pol -- ka Dots And Moon -- beams
 	when I kiss the pug -- nosed dream. __
 }
-
-include(src/include/harmony_tune_lyrics.lyi)
+</%def>

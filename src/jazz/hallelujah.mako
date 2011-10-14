@@ -2,6 +2,8 @@
 <%
 	attributes['jazzTune']=True
 	attributes['type']="harmony_tune_lyrics"
+	attributes['render']="Unknown"
+	attributes['definitions']=True
 
 	attributes['title']="Hallelujah I Love Him(her) So"
 	attributes['composer']="Ray Charles"
@@ -21,15 +23,23 @@
 	- mark whats been done with this tune.
 </%doc>
 
-myChords=\chordmode {
+<%def name="myChordsUnknown()">
+\chordmode {
 	f1 | bes4. b4:dim7 r4. | f1 | bes4. b8:dim7 r8. c16:7 r4 | f1 | f2.:7 f4:7.5+ |
 	bes1 | b:dim7 | f2 a:7 | d:m bes:7 | g:7 c4.:7.4 f8 | r1 |
 
 	f1 | bes4. b4:dim7 r4. | f1 | bes4. b8:dim7 r8. c16:7 r4 | f1 | f2.:7 f4:7.5+ |
 	bes1 | b:dim7 | f2 a:7 | d:m bes:7 | g:7 c4.:7.4 f8 | r2 f:7.5+ |
 }
+</%def>
 
-myVoice={
+<%def name="definitions()">
+phraseA={ r4 d'8. c'16 aes8. g16 f8. d16 }
+phraseB={ r8. c'16 d'8. c'16 aes8. g16 f8. d16 }
+</%def>
+
+<%def name="myVoiceUnknown()">
+\relative c {
 	\key f \major
 	\time 4/4
 	\phraseA | f4 f8 aes8~ aes8 r8 r4 |
@@ -46,8 +56,10 @@ myVoice={
 	a8 c'4. r4 a8. a16 | g8 f4. r4 aes8. g16 |
 	aes8. g16 f8. d16 f4 f8 f8 | f8 r8 r4 r2 |
 }
+</%def>
 
-myLyrics=\lyrics {
+<%def name="myLyricsUnknown()">
+\lyrics {
 	Let me tell you 'bout a boy I know __
 	He is my ba -- by and he lives next door. __ __
 	Ev -- 'ry morn -- ing 'fore the sun comes up, __
@@ -60,3 +72,4 @@ myLyrics=\lyrics {
 	I smile at them and say he told me so. __
 	That's why I know, __ yes I know, __ Hal -- le lu -- jah, I just love him so. __
 }
+</%def>

@@ -1,23 +1,32 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['render']="Fake"
+	attributes['type']="harmony_tune_lyrics"
+
+	attributes['title']="Unforgettable"
+	attributes['composer']="Irving Gordon"
+	attributes['poet']="Irving Gordon"
+	attributes['copyright']="1951, Bourne Co."
+	attributes['style']="Jazz"
+	attributes['piece']="Mederately"
+
+	attributes['completion']="0"
+	attributes['uuid']="3162420a-a26f-11df-aacf-0019d11e5a41"
 %>
-\header {
-	default_header
 
-	title="Unforgettable"
-	composer="Irving Gordon"
-	poet="Irving Gordon"
-	copyright="1951, Bourne Co."
-	style="Jazz"
-	piece="Mederately"
-	remark="copied from the fake book"
+<%doc>
+	DONE:
+	TODO:
+	- document what has been done.
+	- turn the tune relative.
+	- make the lyrics go with the tune and not be note based.
+	- add youtube performances.
+	- add epdfs.
+</%doc>
 
-	completion="0"
-	uuid="3162420a-a26f-11df-aacf-0019d11e5a41"
-}
-
-myChords=\chordmode {
+<%def name="myChordsFake()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -42,8 +51,10 @@ myChords=\chordmode {
 
 	\endChords
 }
+</%def>
 
-myVoice={
+<%def name="myVoiceFake()">
+\relative g {
 	\key g \major
 	\time 4/4
 	d'4 e'4 e'8 fis'4 fis'8~ | fis'2 \times 2/3 { d'4 e'4 g'4 } |
@@ -63,10 +74,11 @@ myVoice={
 	g'4 a'4 a'4 g'4 | g'4 a'8 b'4 a'8 g'4 |
 	d'4 e'4 e'4 d'4 | d'4 e'8 g'4 e'8 d'4 |
 	c'1~ | c'2. r4 |
-
 }
+</%def>
 
-myLyrics=\lyrics {
+<%def name="myLyricsFake()">
+\lyrics {
 	Un-4 for-4 get-8 ta-4 ble,8~ | -2 \times 2/3 { that's4 what4 you4 } |
 	are,1~ | -2. -4 |
 	Un-4 for-4 get-8 ta-4 ble,8~ | -2 \times 2/3 { tho'4 near4 or4 } |
@@ -84,5 +96,4 @@ myLyrics=\lyrics {
 	thinks4 that4 I4 am4 | Un-4 -for-8 -get-4 -ta-8 -ble4 |
 	too.1~ | -2. -4 |
 }
-
-include(src/include/harmony_tune_lyrics.lyi)
+</%def>

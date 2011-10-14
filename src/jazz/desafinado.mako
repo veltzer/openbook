@@ -1,31 +1,35 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['render']="Unknown"
+	attributes['type']="harmony_tune_lyrics"
+
+	attributes['title']="Desafinado"
+	attributes['subtitle']="Slightly Out Of Tune"
+	attributes['composer']="Antonio Carlos Jobim"
+	attributes['copyright']="1959 1962, Editora Musical Arapua, Sao Paulo, Brazil"
+	attributes['style']="Jazz"
+	attributes['piece']="Medium Bossa Nova"
+	attributes['poet']="Newton Mendonca, Jon Hendricks & Jessie Cavanaugh"
+
+	attributes['completion']="5"
+	attributes['uuid']="c3fff540-a26e-11df-9435-0019d11e5a41"
+
+	attributes['idyoutube']="g6w3a2v_50U"
+	attributes['idyoutube']="Vixc_Hu4Ris"
+	attributes['idyoutube']="lo1SiVwVqic"
 %>
-\header{
-	default_header
-
-	title="Desafinado"
-	subtitle="Slightly Out Of Tune"
-	composer="Antonio Carlos Jobim"
-	copyright="1959 1962, Editora Musical Arapua, Sao Paulo, Brazil"
-	style="Jazz"
-	piece="Medium Bossa Nova"
-	poet="Newton Mendonca, Jon Hendricks & Jessie Cavanaugh"
-
-	completion="5"
-	uuid="c3fff540-a26e-11df-9435-0019d11e5a41"
-
-	idyoutube="g6w3a2v_50U"
-	idyoutube="Vixc_Hu4Ris"
-	idyoutube="lo1SiVwVqic"
-}
 
 <%doc>
+	DONE:
 	TODO:
+	- document what has been done with this tune.
+	- what version is this?
+	- document the you tube performances.
 </%doc>
 
-myChords=\chordmode {
+<%def name="myChordsUnknown()">
+\chordmode {
 	\startChords
 %%	list of instruments can be found at
 %%	http://lilypond.org/doc/v2.11/Documentation/user/lilypond/MIDI-instruments#MIDI-instruments
@@ -70,7 +74,10 @@ myChords=\chordmode {
 
 	\endChords
 }
-myVoice=\relative c' {
+</%def>
+
+<%def name="myVoiceUnknown()">
+\relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
@@ -155,7 +162,10 @@ myVoice=\relative c' {
 	g4. f8 f2~ |
 	f2. r4 |
 }
-myLyrics=\lyricmode {
+</%def>
+
+<%def name="myLyricsUnknown()">
+\lyricmode {
 	Love is like a nev -- er end -- ing mel -- o -- dy; __
 	po -- ets have com -- pared it to a sym -- pho -- ny, __
 	a sym -- pho -- ny con -- duc -- ted by the light -- ing of the moon,
@@ -177,5 +187,4 @@ myLyrics=\lyricmode {
 	There'll be no De -- sa -- fi -- na -- do when your heart be -- longs to me com -- plete -- ly. __
 	Then you won't be Slight -- ly Out Of Tune, __ you'll sing a -- long with me. __
 }
-
-include(src/include/harmony_tune_lyrics.lyi)
+</%def>
