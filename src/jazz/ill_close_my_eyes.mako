@@ -4,21 +4,21 @@
 	attributes['render']="My"
 	attributes['type']="harmony_tune_lyrics"
 
-	title="I'll Close My Eyes"
-	composer="Billy Reid"
-	poet="Buddy Kaye"
-	style="Jazz"
-	piece="Medium Swing"
-	structure="AB"
+	attributes['title']="I'll Close My Eyes"
+	attributes['composer']="Billy Reid"
+	attributes['poet']="Buddy Kaye"
+	attributes['style']="Jazz"
+	attributes['piece']="Medium Swing"
+	attributes['structure']="AB"
 
-	completion="5"
-	uuid="e7277c50-a26e-11df-863c-0019d11e5a41"
+	attributes['completion']="5"
+	attributes['uuid']="e7277c50-a26e-11df-863c-0019d11e5a41"
 
-	idyoutube="7Oh-Dl-KbF0"
-	idyoutube="u6lXbfx1hHw"
-	lyricsurl="http://lyricsplayground.com/alpha/songs/i/illclosemyeyes.shtml"
+	attributes['idyoutube']="7Oh-Dl-KbF0"
+	attributes['idyoutube']="u6lXbfx1hHw"
+	attributes['lyricsurl']="http://lyricsplayground.com/alpha/songs/i/illclosemyeyes.shtml"
 
-	remark="my version is from Amit Golan"
+	attributes['remark']="my version is from Amit Golan"
 %>
 
 <%doc>

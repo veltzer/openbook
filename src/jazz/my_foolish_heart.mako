@@ -4,20 +4,20 @@
 	attributes['type']="harmony_tune_lyrics"
 	attributes['render']="Fake"
 
-	title="My Foolish Heart"
-	composer="Victor Young"
-	style="Jazz"
-	piece="Slowly & Expressively"
-	poet="Ned Washington"
-	copyright="1949 by Anne-Rachel Music Corp."
-	copyrightextra="Copyright Renewed, Young interest conrolled by Chappel & Co., Inc. Intersong Music, Publisher"
+	attributes['title']="My Foolish Heart"
+	attributes['composer']="Victor Young"
+	attributes['style']="Jazz"
+	attributes['piece']="Slowly & Expressively"
+	attributes['poet']="Ned Washington"
+	attributes['copyright']="1949 by Anne-Rachel Music Corp."
+	attributes['copyrightextra']="Copyright Renewed, Young interest conrolled by Chappel & Co., Inc. Intersong Music, Publisher"
 
-	completion="5"
-	uuid="ce9be996-a26e-11df-bf2c-0019d11e5a41"
+	attributes['completion']="5"
+	attributes['uuid']="ce9be996-a26e-11df-bf2c-0019d11e5a41"
 
-	idyoutube="a2LFVWBmoiw"
-	idyoutube="neXL51g8P-M"
-	lyricsurl="http://www.oldielyrics.com/lyrics/frank_sinatra/my_foolish_heart.html"
+	attributes['idyoutube']="a2LFVWBmoiw"
+	attributes['idyoutube']="neXL51g8P-M"
+	attributes['lyricsurl']="http://www.oldielyrics.com/lyrics/frank_sinatra/my_foolish_heart.html"
 %>
 
 <%doc>

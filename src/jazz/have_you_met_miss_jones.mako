@@ -4,14 +4,14 @@
 	attributes['type']="harmony_tune"
 	attributes['render']="Unknown"
 
-	title="Have you met Miss Jones"
-	composer="Richard Rogers"
-	poet="Lorenz Hart"
-	style="Jazz"
-	piece="Med Swing"
+	attributes['title']="Have you met Miss Jones"
+	attributes['composer']="Richard Rogers"
+	attributes['poet']="Lorenz Hart"
+	attributes['style']="Jazz"
+	attributes['piece']="Med Swing"
 
-	completion="0"
-	uuid="fe106f6c-a26e-11df-abb3-0019d11e5a41"
+	attributes['completion']="0"
+	attributes['uuid']="fe106f6c-a26e-11df-abb3-0019d11e5a41"
 %>
 
 <%doc>
