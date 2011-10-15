@@ -3,6 +3,7 @@
 import sys
 import mako.template
 import mako.lookup
+import os # for os.chmod, os.unlink
 
 if len(sys.argv)<2:
 	raise ValueError('command line issue')
@@ -12,17 +13,10 @@ output_encoding='utf-8'
 p_input=sys.argv[1]
 p_output=sys.argv[2]
 
-#import jinja2
-#loader=jinja2.FileSystemLoader('.',encoding=encoding)
-#env=jinja2.Environment(loader=loader)
-#template=env.get_template(p_input)
-#result=template.render()
-#file=open(p_output,'w')
-#file.write(result.encode(encoding))
-#file.close()
-
+os.unlink(p_output)
 mylookup = mako.lookup.TemplateLookup(directories=['.'],input_encoding=input_encoding,output_encoding=output_encoding)
 template=mako.template.Template(filename=p_input,lookup=mylookup,output_encoding=output_encoding,input_encoding=input_encoding)
 file=open(p_output,'w')
 file.write(template.render(attributes={}))
 file.close()
+os.chmod(p_output,0444)
