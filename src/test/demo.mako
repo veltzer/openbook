@@ -1,25 +1,26 @@
 <%inherit file="/src/include/common.makoi"/>
-\header{
-	default_header
-	title="Desafinado"
-	subtitle="Slightly Out Of Tune"
-	composer="Antonio Carlos Jobim"
-	copyright="1959 1962, Editora Musical Arapua, Sao Paulo, Brazil"
-	style="Jazz"
-	piece="Medium Bossa Nova"
-	poet="Newton Menonca, Jon Hendricks & Jessie Cavanaugh"
+<%
+	attributes['title']="Desafinado"
+	attributes['subtitle']="Slightly Out Of Tune"
+	attributes['composer']="Antonio Carlos Jobim"
+	attributes['copyright']="1959 1962, Editora Musical Arapua, Sao Paulo, Brazil"
+	attributes['style']="Jazz"
+	attributes['piece']="Medium Bossa Nova"
+	attributes['poet']="Newton Menonca, Jon Hendricks & Jessie Cavanaugh"
 
-	completion="5"
+	attributes['completion']="5"
 
-	dontimport="1"
+	attributes['dontimport']="1"
 
-	uuid="9a39404e-a26f-11df-aa6e-0019d11e5a41"
-}
+	attributes['uuid']="9a39404e-a26f-11df-aa6e-0019d11e5a41"
+%>
 
 <%doc>
+	DONE:
 	TODO:
 </%doc>
 
+<%def name="myOwn()">
 \score {
 <<
 \chordmode {
@@ -65,3 +66,4 @@
 	}
 	\layout {}
 }
+</%def>
