@@ -1,13 +1,15 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['type']="harmony_tune_lyrics"
+	attributes['render']="My"
 
-	title="כמה יפה פורח הלילך"
-	piece="בלדה מתונה"
+	attributes['title']=u"כמה יפה פורח הלילך"
+	attributes['piece']=u"בלדה מתונה"
 
-	completion="2"
+	attributes['completion']="2"
 
-	uuid="4ae1d01a-a26f-11df-8e51-0019d11e5a41"
+	attributes['uuid']="4ae1d01a-a26f-11df-8e51-0019d11e5a41"
 %>
 
 <%doc>
@@ -15,7 +17,8 @@
 	TODO:
 </%doc>
 
-myChords=\chordmode {
+<%def name="myChordsMy()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -36,12 +39,18 @@ myChords=\chordmode {
 
 	\endChords
 }
-myVoice=\relative f' {
+</%def>
+
+<%def name="myVoiceMy()">
+\relative f' {
 	\time 4/4
 	\key a \minor
 	a1
 }
-myLyrics=\lyricmode {
+</%def>
+
+<%def name="myLyricsMy()">
+\lyricmode {
 	שלום
 }
-include(src/include/harmony_tune_lyrics.lyi)
+</%def>

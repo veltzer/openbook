@@ -83,8 +83,8 @@ myFrets=\new FretBoards {
 }
 
 %% Lyrics
-verticalSpace
-verticalSpace
+\verticalSpace
+\verticalSpace
 \markup {
 	\small { %% \teeny \tiny \small \normalsize \large \huge
 		\fill-line {

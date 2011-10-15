@@ -55,8 +55,8 @@ myFrets=\new FretBoards {
 include(src/include/harmony.lyi)
 
 %% Lyrics
-verticalSpace
-verticalSpace
+\verticalSpace
+\verticalSpace
 \markup {
 	\small { %% \teeny \tiny \small \normalsize \large \huge
 		\fill-line {

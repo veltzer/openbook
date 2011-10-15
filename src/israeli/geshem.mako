@@ -1,6 +1,10 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['type']="harmony"
+	attributes['render']="My"
+	attributes['guitar']=True
+	attributes['extra']=True
 
 	attributes['title']=u"גשם"
 	attributes['composer']=u"יחיאל אמסלם"
@@ -15,9 +19,8 @@
 	attributes['lyricsurl']="http://www.mp3music.co.il/lyrics/448.html"
 %>
 
-include(predefined-guitar-fretboards.ly)
-
-myChords=\chordmode {
+<%def name="myChordsMy()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -60,15 +63,18 @@ myChords=\chordmode {
 
 	\endChords
 }
+</%def>
+
+<%def name="myFretsMy()">
 myFrets=\new FretBoards {
 	\myChords
 }
+</%def>
 
-include(src/include/harmony.lyi)
-
+<%def name="extra()">
 %% Lyrics
-verticalSpace
-verticalSpace
+\verticalSpace
+\verticalSpace
 \markup {
 	\small { %% \teeny \tiny \small \normalsize \large \huge
 		\fill-line {
@@ -103,3 +109,4 @@ verticalSpace
 		}
 	}
 }
+</%def>
