@@ -1,6 +1,8 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['type']="harmony_tune_lyrics"
+	attributes['render']="My"
 
 	attributes['title']=u"אלוהים שלי"
 	attributes['composer']=u"עוזי חיטמן"
@@ -21,7 +23,8 @@
 	TODO:
 </%doc>
 
-myChords=\chordmode {
+<%def name="myChordsMy()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -40,8 +43,10 @@ myChords=\chordmode {
 
 	\endChords
 }
+</%def>
 
-myVoice=\relative f' {
+<%def name="myVoiceMy()">
+\relative f' {
 	\time 2/4
 	\key g \minor
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -57,8 +62,10 @@ myVoice=\relative f' {
 	g'4 g'4 | a'4 bes'4 | d''4 c''4 | c''2 |
 	bes'4 bes'4 | c''4 c''4 | d''2 |
 }
+</%def>
 
-myLyrics=\lyricmode {
+<%def name="myLyricsMy()">
+\lyricmode {
 	א -- לו -- הים ש -- לי, ר -- צי -- תי ש -- ת -- דע
 	ח -- לום ש -- ח -- למ -- תי ב -- לי -- לה ב -- מי -- טה
 	ו -- ב -- ח -- לום ר -- אי -- תי מל -- אך
@@ -92,4 +99,4 @@ myLyrics=\lyricmode {
 	על החלום שלי רציתי שתדע
 	אלוהים שלי, רק רציתי שתדע
 }
-include(src/include/harmony_tune_lyrics.lyi)
+</%def>

@@ -157,7 +157,7 @@ endChords={}
 ${self.body()}
 
 % if attributes['guitar']:
-include(predefined-guitar-fretboards.ly)
+\include "predefined-guitar-fretboards.ly"
 % endif
 
 \header {
