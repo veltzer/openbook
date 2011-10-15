@@ -1,24 +1,30 @@
 <%inherit file="/src/include/common.makoi"/>
-\header {
-	default_header
+<%
+	attributes['type']="tune"
+	attributes['render']="Epdf0"
 
-	title="Sonata III"
-	composer="Wolfgang Amadeus Mozart"
-	copyright="1918, G.Schirmer Inc."
-	style="Classical"
-	remark="Edited, revised and fingered by Richard Epstein"
+	attributes['title']="Sonata III"
+	attributes['composer']="Wolfgang Amadeus Mozart"
+	attributes['copyright']="1918, G.Schirmer Inc."
+	attributes['style']="Classical"
+	attributes['remark']="Edited, revised and fingered by Richard Epstein"
 
-	completion="0"
-	uuid="744f61d8-a26f-11df-b6b1-0019d11e5a41"
-}
-jazzTune
+	attributes['completion']="0"
+	attributes['uuid']="744f61d8-a26f-11df-b6b1-0019d11e5a41"
+%>
 
 <%doc>
+	DONE:
+	TODO:
+	- turn this tune relative.
+	- add it as an epdf:
 	"Schirmer's library of musical classics"
 	An accompaniment for Second Piano by Edvard Grieg may be found in Schirmer's Library, Vol. 1440.
+	- write whats been done for this tune.
 </%doc>
 
-tune={
+<%def name="myVoiceEpdf0()">
+\relative c{
 	\key c \major
 	\time 4/4
 	\startTune
@@ -39,5 +45,4 @@ tune={
 	}
 	\endTune
 }
-
-include(src/include/tune.lyi)
+</%def>
