@@ -1,29 +1,32 @@
 <%inherit file="/src/include/common.makoi"/>
-\header {
-	default_header
+<%
+	attributes['jazzTune']=True
+	attributes['type']="own"
+	attributes['render']="Own"
 
-	title="Torcacita"
-	subtitle="South American tune"
-	composer="Folk"
-	copyright="Public Domain"
-	style="Classical"
-	piece=""
-	remark="Taken from guitar album II by Misha Applebaum"
-	poet=""
+	attributes['title']="Torcacita"
+	attributes['subtitle']="South American tune"
+	attributes['composer']="Folk"
+	attributes['copyright']="Public Domain"
+	attributes['style']="Classical"
+	attributes['remark']="Taken from guitar album II by Misha Applebaum"
 
-	completion="5"
-	uuid="29e07ac4-ba42-11e0-a95c-0019d11e5a41"
-	idyoutube="gVDDRvoVgQg"
-}
-jazzTune
+	attributes['completion']="5"
+	attributes['uuid']="29e07ac4-ba42-11e0-a95c-0019d11e5a41"
+	attributes['idyoutube']="gVDDRvoVgQg"
+%>
 
 <%doc>
+	DONE:
 	TODO:
 	- add a scan of the paper (after fixing the printer).
 	- fill in the fingerings.
 	- write that the tune is for guitar.
+	- document what has been done for this tune.
+	- document the youtube performances.
 </%doc>
 
+<%def name="myOwn()">
 myChords=\chordmode {
 	\startChords
 
@@ -207,3 +210,4 @@ myLowVoice=\relative c' {
 	\midi {
 	}
 }
+</%def>

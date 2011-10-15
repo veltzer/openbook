@@ -1,5 +1,8 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
+	attributes['type']="own"
+	attributes['render']="Own"
+
 	attributes['title']="Desafinado"
 	attributes['subtitle']="Slightly Out Of Tune"
 	attributes['composer']="Antonio Carlos Jobim"
