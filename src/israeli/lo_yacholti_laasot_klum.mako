@@ -1,24 +1,34 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['guitar']=True
+	attributes['type']="harmony"
+	attributes['extra']=True
 
-	title="לא יכולתי לעשות כלום"
-	composer="אילן וירצברג"
-	singer="איןך ןירצברג"
-	poet="יונה וולך"
-	piece="בלדת רוק"
+	attributes['title']=u"לא יכולתי לעשות כלום"
+	attributes['composer']=u"אילן וירצברג"
+	attributes['singer']=u"איןך ןירצברג"
+	attributes['poet']=u"יונה וולך"
+	attributes['piece']=u"בלדת רוק"
 
-	completion="5"
-	uuid="f2e3c22e-f100-11e0-9162-0019d11e5a41"
+	attributes['completion']="5"
+	attributes['uuid']="f2e3c22e-f100-11e0-9162-0019d11e5a41"
 
-	idyoutube="XJYKf0sNDoE"
-	lyricsurl="http://www.mp3music.co.il/tabs/10728.html"
+	attributes['idyoutube']="XJYKf0sNDoE"
+	attributes['lyricsurl']="http://www.mp3music.co.il/tabs/10728.html"
+	attributes['remark']="Ilan Virtsberg plays it in G in live concerts"
 %>
 
-include(predefined-guitar-fretboards.ly)
+<%doc>
+	DONE:
+	TODO:
+	- mark whats been done in this tune.
+	- document the youtube performances.
+	- do it in two scales.
+</%doc>
 
-%% Ilan Virtsberg plays it in G in live concerts
-myChords=\chordmode {
+<%def name="myChordsMy()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -49,11 +59,15 @@ myChords=\chordmode {
 
 	\endChords
 }
-myFrets=\new FretBoards {
+</%def>
+
+<%def name="myFretsMy()">
+\new FretBoards {
 	\myChords
 }
-include(src/include/harmony.lyi)
+</%def>
 
+<%def name="extra()">
 %% Lyrics
 \verticalSpace
 \verticalSpace
@@ -110,3 +124,4 @@ include(src/include/harmony.lyi)
 		}
 	}
 }
+</%def>
