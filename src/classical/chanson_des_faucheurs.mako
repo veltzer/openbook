@@ -1,20 +1,19 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['type']="tune"
+	attributes['render']="Unknown"
+
+	attributes['title']="Chanson des faucheurs"
+	attributes['composer']="R. Schumann"
+	attributes['style']="Classical"
+
+	attributes['completion']="0"
+	attributes['uuid']="9ff5c7c4-a26e-11df-aa45-0019d11e5a41"
 %>
-\header {
-	default_header
 
-	title="Chanson des faucheurs"
-	composer="R. Schumann"
-	style="Jazz"
-	piece="Med Swing"
-
-	completion="0"
-	uuid="9ff5c7c4-a26e-11df-aa45-0019d11e5a41"
-}
-
-myVoice=\relative g'' {
+<%def name="myVoiceUnknown()">
+\relative g'' {
 	\key c \major
 	\time 3/4
 
@@ -27,5 +26,4 @@ myVoice=\relative g'' {
 	g,4 ( c ) b | a ( d ) c | b ( a ) b | c2 ( d4 ) |
 	g,4 ( c ) b | a ( d ) c | b ( a ) b | c2 r4 |
 }
-
-include(src/include/tune.lyi)
+</%def>
