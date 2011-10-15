@@ -206,11 +206,9 @@ myVoice=\relative c'' {
 
 
 	title="Gloria's Step"
-	subtitle=""
 	composer="Scott LaFaro"
 	style="Jazz"
 	piece="Glorias Step 1"
-	poet=""
 	copyright="1962, Orpheum Music."
 
 	completion="5"
