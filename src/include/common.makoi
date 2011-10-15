@@ -212,6 +212,9 @@ ${self.definitions()}
 % if attributes['render']=='My':
 			${self.myChordsMy()}
 % endif
+% if attributes['render']=='Epdf0':
+			${self.myChordsEpdf0()}
+% endif
 </%def>
 
 <%def name="myVoice()">
@@ -232,6 +235,9 @@ ${self.definitions()}
 % endif
 % if attributes['render']=='My':
 			${self.myVoiceMy()}
+% endif
+% if attributes['render']=='Epdf0':
+			${self.myVoiceEpdf0()}
 % endif
 </%def>
 
@@ -254,6 +260,9 @@ ${self.definitions()}
 % if attributes['render']=='My':
 			${self.myLyricsMy()}
 % endif
+% if attributes['render']=='Epdf0':
+			${self.myLyricsEpdf0()}
+% endif
 </%def>
 
 <%def name="myLyricsmore()">
@@ -275,6 +284,9 @@ ${self.definitions()}
 % if attributes['render']=='My':
 			${self.myLyricsMymore()}
 % endif
+% if attributes['render']=='Epdf0':
+			${self.myLyricsEpdf0more()}
+% endif
 </%def>
 
 <%def name="myLyricsmoremore()">
@@ -295,6 +307,9 @@ ${self.definitions()}
 % endif
 % if attributes['render']=='My':
 			${self.myLyricsMymoremore()}
+% endif
+% if attributes['render']=='Epdf0':
+			${self.myLyricsEpdf0moremore()}
 % endif
 </%def>
 

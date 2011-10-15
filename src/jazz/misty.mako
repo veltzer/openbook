@@ -17,7 +17,7 @@
 
 	attributes['idyoutuberemark']="great version by Ella Fitzgerald"
 	attributes['idyoutube']="mQouJdvB80U"
-	attributes['idyoutuberemark']="Garner himself! what an amazing piano..." 
+	attributes['idyoutuberemark']="Garner himself! what an amazing piano..."
 	attributes['idyoutube']="nAaZzQWk8V4"
 
 	attributes['lyricsurl']="http://www.lyrics007.com/Ella%20Fitzgerald%20Lyrics/Misty%20Lyrics.html"
