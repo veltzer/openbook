@@ -1,22 +1,19 @@
 <%inherit file="/src/include/common.makoi"/>
-\header {
-	default_header
+<%
 
-	title="Prelude and Fugue No. 1 in C major"
-	subtitle="Well-Tempered Clavier, Book 1"
-	composer="Johann Sebastian Bach (1685–1750)"
-	copyright="Public Domain"
-	style="Classical"
-	piece="BWV 846"
-	remark="Taken from Shlomo Gronichs book"
-	poet="None"
+	attributes['title']="Prelude and Fugue No. 1 in C major"
+	attributes['subtitle']="Well-Tempered Clavier, Book 1"
+	attributes['composer']="Johann Sebastian Bach (1685–1750)"
+	attributes['copyright']="Public Domain"
+	attributes['style']="Classical"
+	attributes['piece']="BWV 846"
+	attributes['remark']="Taken from Shlomo Gronichs book"
 
-	completion="5"
-	uuid="562ae904-a664-11df-9e85-0019d11e5a41"
+	attributes['completion']="5"
+	attributes['uuid']="562ae904-a664-11df-9e85-0019d11e5a41"
 
-	idyoutube="0KQW2YnCUrE"
-}
-jazzTune
+	attributes['idyoutube']="0KQW2YnCUrE"
+%>
 
 <%doc>
 	NOTES:

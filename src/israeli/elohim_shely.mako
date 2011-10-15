@@ -2,21 +2,22 @@
 <%
 	attributes['jazzTune']=True
 
-	title="אלוהים שלי"
-	composer="עוזי חיטמן"
-	piece="בלדה מתונה"
-	poet="עוזי חיטמן"
+	attributes['title']=u"אלוהים שלי"
+	attributes['composer']=u"עוזי חיטמן"
+	attributes['piece']=u"בלדה מתונה"
+	attributes['poet']=u"עוזי חיטמן"
 
-	singer="עוזי חיטמן"
-	arranger="יאיר רוזנבלום"
+	attributes['singer']=u"עוזי חיטמן"
+	attributes['arranger']=u"יאיר רוזנבלום"
 
-	completion="2"
-	idyoutube="fTZb0abU4Rw"
+	attributes['completion']="2"
+	attributes['idyoutube']="fTZb0abU4Rw"
 
-	uuid="467b2af8-a26f-11df-b03d-0019d11e5a41"
+	attributes['uuid']="467b2af8-a26f-11df-b03d-0019d11e5a41"
 %>
 
 <%doc>
+	DONE:
 	TODO:
 </%doc>
 
