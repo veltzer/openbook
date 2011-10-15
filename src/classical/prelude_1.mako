@@ -1,5 +1,6 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
+	attributes['jazzTune']=True
 
 	attributes['title']="Prelude and Fugue No. 1 in C major"
 	attributes['subtitle']="Well-Tempered Clavier, Book 1"
