@@ -13,7 +13,11 @@ output_encoding='utf-8'
 p_input=sys.argv[1]
 p_output=sys.argv[2]
 
-os.unlink(p_output)
+try:
+	os.unlink(p_output)
+except:
+	# handle the error better, only non existant file should be glossed over...
+	pass
 mylookup = mako.lookup.TemplateLookup(directories=['.'],input_encoding=input_encoding,output_encoding=output_encoding)
 template=mako.template.Template(filename=p_input,lookup=mylookup,output_encoding=output_encoding,input_encoding=input_encoding)
 file=open(p_output,'w')
