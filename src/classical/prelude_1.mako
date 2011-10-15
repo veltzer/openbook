@@ -225,7 +225,7 @@ myPiano={
 			<<
 				\relative c'
 				\voiceB
-				\\
+				\\\
 				\relative c'
 				\voiceC
 			>>
