@@ -9,7 +9,6 @@
 	attributes['copyright']="1962, 1963 & 1965 By Hancock Music Co., New York, NY"
 	attributes['style']="Jazz"
 	attributes['piece']="16-Bar Blues"
-	attributes['poet']="None"
 
 	attributes['completion']="5"
 	attributes['uuid']="359f7428-a26f-11df-ad8c-0019d11e5a41"

@@ -8,7 +8,6 @@
 	attributes['composer']="John Lewis"
 	attributes['style']="Jazz"
 	attributes['piece']="Moderate Swing"
-	attributes['poet']="None"
 	attributes['copyright']="1955 and Renewal of Copyright 1983 by MJQ Music, Inc."
 	attributes['structure']="AABA"
 	attributes['completion']="5"

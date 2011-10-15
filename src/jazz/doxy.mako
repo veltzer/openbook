@@ -9,7 +9,6 @@
 	attributes['copyright']="1963 Prestige music co, inc."
 	attributes['style']="Jazz"
 	attributes['piece']="Medium Groove"
-	attributes['poet']="None"
 
 	attributes['completion']="5"
 	attributes['uuid']="c921579e-a26e-11df-9a5c-0019d11e5a41"
