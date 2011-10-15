@@ -1,30 +1,32 @@
 <%inherit file="/src/include/common.makoi"/>
-\header {
-	default_header
+<%
+	attributes['jazzTune']=True
+	attributes['guitar']=True
+	attributes['type']="own"
+	attributes['render']="Own"
 
-	title="The Final Countdown"
-	composer="Europe"
-	poet="Europe"
-	style="Rock"
-	piece="Upbeat"
+	attributes['title']="The Final Countdown"
+	attributes['composer']="Europe"
+	attributes['poet']="Europe"
+	attributes['style']="Rock"
+	attributes['piece']="Upbeat"
 
-	completion="5"
-	uuid="7f247a70-c8f3-11e0-bb35-0019d11e5a41"
+	attributes['completion']="5"
+	attributes['uuid']="7f247a70-c8f3-11e0-bb35-0019d11e5a41"
 
-	remark="same scale (fis:m) as the original version"
+	attributes['remark']="same scale (fis:m) as the original version"
 
-	idyoutube="9jK-NcRmVcw"
-	lyricsurl="http://www.elyrics.net/read/e/europe-lyrics/the-final-countdown-lyrics.html"
-}
-jazzTune
+	attributes['idyoutube']="9jK-NcRmVcw"
+	attributes['lyricsurl']="http://www.elyrics.net/read/e/europe-lyrics/the-final-countdown-lyrics.html"
+%>
 
 <%doc>
+	DONE:
 	TODO:
 	- some of the frets are way off (e/gis is hilarious!)
 </%doc>
 
-include(predefined-guitar-fretboards.ly)
-
+<%def name="myOwn()">
 myChords=\chordmode {
 	\mark "opening"
 	%% the remarked part is from the song but it is repeated so I just
@@ -134,3 +136,4 @@ myFrets=\new FretBoards {
 		}
 	}
 }
+</%def>

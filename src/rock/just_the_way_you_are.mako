@@ -1,33 +1,37 @@
 <%inherit file="/src/include/common.makoi"/>
-\header {
-	default_header
+<%
+	attributes['jazzTune']=True
+	attributes['guitar']=True
+	attributes['type']="own"
+	attributes['render']="Own"
 
-	title="Just The Way You Are"
-	composer="Billy Joel"
-	poet="Billy Joel"
-	style="Pop"
-	piece="Moderately"
+	attributes['title']="Just The Way You Are"
+	attributes['composer']="Billy Joel"
+	attributes['poet']="Billy Joel"
+	attributes['style']="Pop"
+	attributes['piece']="Moderately"
 
-	structure="????"
+	attributes['structure']="????"
 
-	completion="4"
-	uuid="ca1dfd9e-7033-11e0-a987-0019d11e5a41"
+	attributes['completion']="4"
+	attributes['uuid']="ca1dfd9e-7033-11e0-a987-0019d11e5a41"
 
-	idyoutube="QPiK_yGG8ag"
-	idyoutube="YiOYsnET6Iw"
-	idyoutube="ounJsqomcv8"
-}
-jazzTune
+	attributes['idyoutube']="QPiK_yGG8ag"
+	attributes['idyoutube']="YiOYsnET6Iw"
+	attributes['idyoutube']="ounJsqomcv8"
+%>
 
 <%doc>
+	DONE:
 	TODO:
+	- document what was done on this tune.
+	- document the you tube performances.
 	- first line ender with extra lines - why ?!?
 	- bring back the guitar fretboards after I manage to put them at the top of everything
 		(currently they reside above the lyrics which is weird).
 </%doc>
 
-include(predefined-guitar-fretboards.ly)
-
+<%def name="myOwn()">
 %% all of the parts are taken from the notes I have of Bill Joel
 myChords=\chordmode {
 	\startChords
@@ -137,3 +141,4 @@ myLyrics=\lyricmode {
 	\midi {
 	}
 }
+</%def>
