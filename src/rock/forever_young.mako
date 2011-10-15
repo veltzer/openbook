@@ -1,24 +1,27 @@
 <%inherit file="/src/include/common.makoi"/>
-\header {
-	default_header
+<%
+	attributes['jazzTune']=True
+	attributes['guitar']=True
+	attributes['type']="own"
+	attributes['render']="Own"
 
-	title="Forever Young"
-	composer="Alphaville"
-	style="Pop"
-	piece="Med. Ballad"
+	attributes['title']="Forever Young"
+	attributes['composer']="Alphaville"
+	attributes['style']="Pop"
+	attributes['piece']="Med. Ballad"
 
-	completion="0"
-	uuid="625ad0a2-a26f-11df-8f71-0019d11e5a41"
-}
-jazzTune
+	attributes['completion']="5"
+	attributes['uuid']="625ad0a2-a26f-11df-8f71-0019d11e5a41"
+%>
 
 <%doc>
+	DONE:
 	TODO:
 	- finish the tune and the chords...
+	- add you tube performances.
 </%doc>
 
-include(predefined-guitar-fretboards.ly)
-
+<%def name="myOwn()">
 \score {
 <<
 \chordmode {
@@ -108,3 +111,4 @@ include(predefined-guitar-fretboards.ly)
 	}
 	\layout {}
 }
+</%def>

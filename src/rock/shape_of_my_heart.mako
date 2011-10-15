@@ -1,36 +1,43 @@
 <%inherit file="/src/include/common.makoi"/>
-\header {
-	default_header
+<%
+	attributes['jazzTune']=True
+	attributes['guitar']=True
+	attributes['type']='harmony'
+	attributes['render']='My'
 
-	title="Shape of My Heart"
-	singer="Sting"
-	style="Pop"
-	piece="Med. Ballad"
+	attributes['title']="Shape of My Heart"
+	attributes['singer']="Sting"
+	attributes['style']="Pop"
+	attributes['piece']="Med. Ballad"
 
-	completion="0"
-	uuid="677fee0a-a26f-11df-bd2c-0019d11e5a41"
-}
-jazzTune
+	attributes['completion']="0"
+	attributes['uuid']="677fee0a-a26f-11df-bd2c-0019d11e5a41"
+%>
 
 <%doc>
+	DONE:
 	TODO:
+	- add guitar chords.
+	- check the chords
 	- add lyrics
 	- add tune
 </%doc>
 
-myChords=\chordmode {
-	\mark "verse"
-	ges2:m ges2:m
-	\mark "chorus"
-
-<%doc>
-	verse:
-	Gbm Gbm|E | Dmaj7 D/Db7 | x2
-	Dmaj7 | Amaj7 Db7 | Dmaj7 Db7 | Gbm |
-	chorus:
-	Gbm Gbm|E | Dmaj7 Db7 | x2
-	Dmaj7 | Amaj7 Db7 | Dmaj7 Db7 | Gbm |
-</%doc>
+<%def name="myChordsMy()">
+\chordmode {
+	\startChords
+	\startSong
+	\mark "Verse"
+	\startPart
+	ges2:m ges:m/e | d:maj7 d4 des:7 | ges2:m ges:m/e | d:maj7 d4 des:7 | \myEndLine
+	d1:maj7 | a2:maj7 des:7 | d:maj7 des:7 | ges1:m | \myEndLine
+	\endPart
+	\mark "Chorus"
+	\startPart
+	ges2:m ges:m/e | d:maj7 des:7 | ges2:m ges:m/e | d:maj7 des:7 | \myEndLine
+	d1:maj7 | a2:maj7 des:7 | d:maj7 des:7 | ges1:m | \myEndLine
+	\endPart
+	\endSong
+	\endChords
 }
-
-include(src/include/harmony.lyi)
+</%def>

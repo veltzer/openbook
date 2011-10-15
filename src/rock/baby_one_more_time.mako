@@ -1,32 +1,32 @@
 <%inherit file="/src/include/common.makoi"/>
-\header {
-	default_header
+<%
+	attributes['jazzTune']=True
+	attributes['guitar']=True
+	attributes['type']="own"
+	attributes['render']="Own"
 
-	title="Baby One More Time"
-	composer="Max Martin"
-	poet="Max Martin"
-	style="Pop"
-	piece="Pop"
+	attributes['title']="Baby One More Time"
+	attributes['composer']="Max Martin"
+	attributes['poet']="Max Martin"
+	attributes['style']="Pop"
+	attributes['piece']="Pop"
 
-	completion="5"
-	uuid="8a728316-ee02-11e0-b7c5-0019d11e5a41"
+	attributes['completion']="5"
+	attributes['uuid']="8a728316-ee02-11e0-b7c5-0019d11e5a41"
 
-	remark=""
-
-	%% the original Britney Spears clip
-	idyoutube="C-u5WLJ9Yk4"
-	%% a cover by Travis
-	idyoutube="acULghgYUg0"
-	lyricsurl="http://www.elyrics.net/read/b/britney-spears-lyrics/baby-one-more-time-lyrics.html"
-}
-jazzTune
+	attributes['idyoutuberemark']="the original Britney Spears clip"
+	attributes['idyoutube']="C-u5WLJ9Yk4"
+	attributes['idyoutuberemark']="a cover by Travis"
+	attributes['idyoutube']="acULghgYUg0"
+	attributes['lyricsurl']="http://www.elyrics.net/read/b/britney-spears-lyrics/baby-one-more-time-lyrics.html"
+%>
 
 <%doc>
+	DONE:
 	TODO:
 </%doc>
 
-include(predefined-guitar-fretboards.ly)
-
+<%def name="myOwn()">
 myChords=\chordmode {
 	\mark "Verse"
 	\startRepeat
@@ -121,3 +121,4 @@ myFrets=\new FretBoards {
 		}
 	}
 }
+</%def>

@@ -1,22 +1,25 @@
 <%inherit file="/src/include/common.makoi"/>
-\header {
-	default_header
+<%
+	attributes['jazzTune']=True
+	attributes['guitar']=True
+	attributes['type']="own"
+	attributes['render']="Own"
 
-	title="Talkin' Bout A Revolution"
-	composer="Tracy Chapman"
-	poet="Tracy Chapman"
-	style="Rock"
-	piece="upbeat"
+	attributes['title']="Talkin' Bout A Revolution"
+	attributes['composer']="Tracy Chapman"
+	attributes['poet']="Tracy Chapman"
+	attributes['style']="Rock"
+	attributes['piece']="upbeat"
 
-	completion="5"
-	uuid="e9155cee-c554-11e0-b407-0019d11e5a41"
+	attributes['completion']="5"
+	attributes['uuid']="e9155cee-c554-11e0-b407-0019d11e5a41"
 
-	idyoutube="SKYWOwWAguk"
-	lyricsurl="http://www.lyrics007.com/Tracy%20Chapman%20Lyrics/Talkin'%20Bout%20A%20Revolution%20Lyrics.html"
-}
-jazzTune
+	attributes['idyoutube']="SKYWOwWAguk"
+	attributes['lyricsurl']="http://www.lyrics007.com/Tracy%20Chapman%20Lyrics/Talkin'%20Bout%20A%20Revolution%20Lyrics.html"
+%>
 
 <%doc>
+	DONE:
 	TODO:
 	- are the g:sus4 and d:sus4 chords really sus4 chords? They 4 note
 	in them is just an embelishment. How do I annotate this correctly?
@@ -25,8 +28,7 @@ jazzTune
 	finger with which to add it with?
 </%doc>
 
-include(predefined-guitar-fretboards.ly)
-
+<%def name="myOwn()">
 \storePredefinedDiagram \chordmode {g:sus4} #guitar-tuning #"3-3;2-2;o;o;o;3-4;"
 \storePredefinedDiagram \chordmode {c:5.9} #guitar-tuning #"x;3-2;2-1;o;3-3;3-4;"
 \storePredefinedDiagram \chordmode {e:m7} #guitar-tuning #"o;2-1;2-2;o;3-3;3-4;"
@@ -116,3 +118,4 @@ myFrets=\new FretBoards {
 		}
 	}
 }
+</%def>

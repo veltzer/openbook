@@ -18,7 +18,6 @@
 	DONE:
 	TODO:
 	-add lyrics
-	-change the name of the file this tune is in (it is not according to convention).
 </%doc>
 
 <%def name="myChordsUnknown()">

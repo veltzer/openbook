@@ -1,29 +1,31 @@
 <%inherit file="/src/include/common.makoi"/>
-\header {
-	default_header
+<%
+	attributes['jazzTune']=True
+	attributes['type']="harmony_tune_lyrics"
+	attributes['render']="Epdf0"
 
-	title="She Loves You"
-	composer="John Lennon & Paul McCartney"
-	poet="John Lennon & Paul McCartney"
-	style="Rock"
-	piece="Moderato"
+	attributes['title']="She Loves You"
+	attributes['composer']="John Lennon & Paul McCartney"
+	attributes['poet']="John Lennon & Paul McCartney"
+	attributes['style']="Rock"
+	attributes['piece']="Moderato"
 
-	structure="ABABAB"
+	attributes['structure']="ABABAB"
 
-	completion="0"
-	uuid="32a5cb0e-431f-11e0-b9fa-0019d11e5a41"
-}
-jazzTune
+	attributes['completion']="0"
+	attributes['uuid']="32a5cb0e-431f-11e0-b9fa-0019d11e5a41"
+%>
 
 <%doc>
+	DONE:
 	TODO:
 	- make the headers for this song comply with the jazz headers.
 	- add performances from youtube.
 	- add lyrics and melody.
 </%doc>
 
-%% this is taken from "The Beatles Complete" book page 175
-myChords=\chordmode {
+<%def name="myChordsEpdf0()">
+\chordmode {
 	\startChords
 
 	\startSong
@@ -48,9 +50,10 @@ myChords=\chordmode {
 
 	\endChords
 }
+</%def>
 
-%% this is taken from "The Beatles Complete" book page 175
-myVoice=\relative c {
+<%def name="myVoiceEpdf0()">
+\relative c {
 	\time 4/4
 	\key f \major
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -62,9 +65,10 @@ myVoice=\relative c {
 	d4-3 f2 f,8-3 g |
 
 }
+</%def>
 
-%% this is taken from "The Beatles Complete" book page 175
-myLyrics=\lyricmode {
+<%def name="myLyricsEpdf0()">
+\lyricmode {
 	You think you've lost your love, __
 	Well, I saw her yesterday.
 	It's you she's thinking of
@@ -122,5 +126,4 @@ myLyrics=\lyricmode {
 	Yeah, yeah, yeah.
 	Yeah, yeah, yeah Ye-ah.
 }
-
-include(src/include/harmony_tune_lyrics.lyi)
+</%def>

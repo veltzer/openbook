@@ -1,22 +1,24 @@
 <%inherit file="/src/include/common.makoi"/>
-\header {
-	default_header
+<%
+	attributes['jazzTune']=True
+	attributes['guitar']=True
+	attributes['type']="own"
+	attributes['render']="Own"
 
-	title="Lucky Man"
-	composer="Greg Lake"
-	poet="Greg Lake"
-	style="Rock"
-	piece="Med. Ballad"
+	attributes['title']="Lucky Man"
+	attributes['composer']="Greg Lake"
+	attributes['poet']="Greg Lake"
+	attributes['style']="Rock"
+	attributes['piece']="Med. Ballad"
 
-	completion="5"
-	uuid="a68bcbbc-c8ae-11e0-8fa9-0019d11e5a41"
+	attributes['completion']="5"
+	attributes['uuid']="a68bcbbc-c8ae-11e0-8fa9-0019d11e5a41"
 
-	remark="The D scale is the one used in the original version (Mark Veltzer,17/8/11)"
+	attributes['remark']="The D scale is the one used in the original version (Mark Veltzer,17/8/11)"
 
-	idyoutube="5x6uQ6yZsOY"
-	lyricsurl="http://www.sing365.com/music/lyric.nsf/Lucky-Man-lyrics-Emerson-Lake-Palmer/13302F99F6B11DEC48256AB8002432F8"
-}
-jazzTune
+	attributes['idyoutube']="5x6uQ6yZsOY"
+	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Lucky-Man-lyrics-Emerson-Lake-Palmer/13302F99F6B11DEC48256AB8002432F8"
+%>
 
 <%doc>
 	remarks:
@@ -37,17 +39,29 @@ jazzTune
 		chorus 4
 		ending (2.5 choruses with a solo keyboard and a long D at the end)
 
+	DONE:
 	TODO:
 </%doc>
 
-include(predefined-guitar-fretboards.ly)
-
+<%def name="myOwn()">
 myChords=\chordmode {
+	\startChords
+	\startSong
+
 	\mark "Verse"
-	g1 | d | g | d | g | d | g | d \endBar
+	\startPart
+	g1 | d | g | d | \myEndLine
+	g | d | g | d | \myEndLine
+	\endPart
+
 	\mark "Chorus"
-	a:m | e:m | d | d |
-	a:m | e:m | d | d |
+	\startPart
+	a:m | e:m | d1*2 | \myEndLine
+	a1:m | e:m | d1*2 | \myEndLine
+	\endPart
+
+	\endSong
+	\endChords
 }
 myFrets=\new FretBoards {
 	\myChords
@@ -112,3 +126,4 @@ myFrets=\new FretBoards {
 		}
 	}
 }
+</%def>
