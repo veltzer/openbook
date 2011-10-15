@@ -3,6 +3,7 @@
 	attributes['jazzTune']=True
 	attributes['guitar']=True
 	attributes['type']="harmony"
+	attributes['render']="My"
 	attributes['extra']=True
 
 	attributes['title']=u"לא יכולתי לעשות כלום"
