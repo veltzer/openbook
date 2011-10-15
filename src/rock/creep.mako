@@ -1,30 +1,33 @@
 <%inherit file="/src/include/common.makoi"/>
-\header {
-	default_header
+<%
+	attributes['jazzTune']=True
+	attributes['guitar']=True
+	attributes['type']="own"
+	attributes['render']="Own"
 
-	title="Creep"
-	composer="Radiohead"
-	poet="Radiohead"
-	style="Rock"
-	piece="Med. Ballad"
+	attributes['title']="Creep"
+	attributes['composer']="Radiohead"
+	attributes['poet']="Radiohead"
+	attributes['style']="Rock"
+	attributes['piece']="Med. Ballad"
 
-	completion="5"
-	uuid="e9b74c60-97f6-11e0-86b8-0019d11e5a41"
+	attributes['completion']="5"
+	attributes['uuid']="e9b74c60-97f6-11e0-86b8-0019d11e5a41"
 
-	remark="The G scale is the one used in the original version (Mark Veltzer,17/6/11)"
+	attributes['remark']="The G scale is the one used in the original version (Mark Veltzer,17/6/11)"
 
-	idyoutube="XFkzRNyygfk"
-	lyricsurl="http://www.azlyrics.com/lyrics/radiohead/creepacoustic.html"
-
-}
-jazzTune
+	attributes['idyoutube']="XFkzRNyygfk"
+	attributes['lyricsurl']="http://www.azlyrics.com/lyrics/radiohead/creepacoustic.html"
+%>
 
 <%doc>
+	DONE:
 	TODO:
+	- document what was done in this tune.
+	- document the youtube performances.
 </%doc>
 
-include(predefined-guitar-fretboards.ly)
-
+<%def name="myOwn()">
 myChords=\chordmode {
 	\startChords
 	\startRepeat
@@ -111,3 +114,4 @@ verticalSpace
 		}
 	}
 }
+</%def>

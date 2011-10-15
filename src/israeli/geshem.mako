@@ -2,17 +2,17 @@
 <%
 	attributes['jazzTune']=True
 
-	title="גשם"
-	composer="יחיאל אמסלם"
-	singer="אלי לוזון"
-	poet="יעקב גלעד"
-	piece="בלדת רוק"
+	attributes['title']=u"גשם"
+	attributes['composer']=u"יחיאל אמסלם"
+	attributes['singer']=u"אלי לוזון"
+	attributes['poet']=u"יעקב גלעד"
+	attributes['piece']=u"בלדת רוק"
 
-	completion="5"
-	uuid="c562b5fa-c345-11e0-995c-0019d11e5a41"
+	attributes['completion']="5"
+	attributes['uuid']="c562b5fa-c345-11e0-995c-0019d11e5a41"
 
-	idyoutube="1CBj7q51-BQ"
-	lyricsurl="http://www.mp3music.co.il/lyrics/448.html"
+	attributes['idyoutube']="1CBj7q51-BQ"
+	attributes['lyricsurl']="http://www.mp3music.co.il/lyrics/448.html"
 %>
 
 include(predefined-guitar-fretboards.ly)
