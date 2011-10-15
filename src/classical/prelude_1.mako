@@ -1,10 +1,12 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['type']="own"
+	attributes['render']="Own"
 
 	attributes['title']="Prelude and Fugue No. 1 in C major"
 	attributes['subtitle']="Well-Tempered Clavier, Book 1"
-	attributes['composer']="Johann Sebastian Bach (1685–1750)"
+	attributes['composer']="Johann Sebastian Bach (1685-1750)"
 	attributes['copyright']="Public Domain"
 	attributes['style']="Classical"
 	attributes['piece']="BWV 846"
@@ -28,6 +30,7 @@
 	TODO:
 </%doc>
 
+<%def name="myOwn()">
 myChords=\chordmode {
 	\startChords
 
@@ -246,3 +249,4 @@ myPiano={
 	\midi {
 	}
 }
+</%def>
