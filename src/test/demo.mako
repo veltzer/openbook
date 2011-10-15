@@ -1,4 +1,4 @@
-include(src/include/common.lyi)
+<%inherit file="/src/include/common.makoi"/>
 \header{
 	default_header
 	title="Desafinado"

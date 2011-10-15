@@ -1,18 +1,20 @@
 <%inherit file="/src/include/common.makoi"/>
 <%
 	attributes['jazzTune']=True
+	attributes['type']="harmony_tune_lyrics"
+	attributes['render']="Epdf0"
 
-	title="איך זה שכוכב"
-	composer="מתי כספי"
-	singer="מתי כספי"
-	piece="בוסה נובה"
-	poet="נתן זך"
+	attributes['title']=u"איך זה שכוכב"
+	attributes['composer']=u"מתי כספי"
+	attributes['singer']=u"מתי כספי"
+	attributes['piece']=u"בוסה נובה"
+	attributes['poet']=u"נתן זך"
 
-	completion="5"
+	attributes['completion']="5"
 
-	idyoutube="1GI5Vst5a-o"
+	attributes['idyoutube']="1GI5Vst5a-o"
 
-	uuid="d936b39a-971e-11e0-9c44-0019d11e5a41"
+	attributes['uuid']="d936b39a-971e-11e0-9c44-0019d11e5a41"
 %>
 
 <%doc>
@@ -23,7 +25,8 @@
 	- adjust the lyrics.
 </%doc>
 
-myChords=\chordmode {
+<%def name="myChordsEpdf0()>
+\chordmode {
 	\startChords
 
 	\startSong
@@ -42,7 +45,10 @@ myChords=\chordmode {
 
 	\endChords
 }
-myVoice=\relative c'{
+</%def>
+
+<%def name="myVoiceEpdf0()>
+\relative c'{
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
@@ -58,7 +64,10 @@ myVoice=\relative c'{
 	r4 r8 a b b b a~ | a4 r r2 | r2 a8 gis fis g~ | g2 r |
 	r2 g8 fis e f~ | f2 r | r4 r8 f g a b a~ | a1~ | a1 |
 }
-myLyrics=\lyricmode {
+</%def>
+
+<%def name="myLyricsEpdf0()>
+\lyricmode {
 	איך זה ש -- כו -- כב __ א -- חד __ ל -- בד __ מ -- עז. __
 	איך הוא מ -- עז, __ ל -- מ -- ען ה -- שם. __
 	כו -- כב __ א -- חד __ ל -- בד. __
@@ -72,4 +81,4 @@ myLyrics=\lyricmode {
 	לה לה לה לה __
 	לה לה לה לה לה __ __
 }
-include(src/include/harmony_tune_lyrics.lyi)
+</%def>

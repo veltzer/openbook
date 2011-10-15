@@ -232,8 +232,8 @@ check_uuid:
 check_common:
 	$(info doing [$@])
 	$(Q)-grep --files-without-match "common.makoi" $(FILES_MAKO)
-.PHONY: check_no_poet
-check_no_poet:
+.PHONY: check_poet
+check_poet:
 	$(info doing [$@])
 	$(Q)-grep --files-without-match "attributes['poet']=" $(FILES_MAKO)
 .PHONY: check_copyright
