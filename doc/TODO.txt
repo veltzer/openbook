@@ -1,9 +1,6 @@
 transfer to mako:
 =================
-- make check_all pass again.
-- make everything compile
 - make the .d mechanism work.
-- release
 
 licensing:
 ==========
