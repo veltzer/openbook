@@ -168,7 +168,7 @@ ${self.body()}
 	completion=\completionval
 	tagline=\taglineval
 	style="not filled"
-	poet="unkown"
+	poet="unknown"
 
 	title="${attributes['title']}"
 	subtitle="${attributes['subtitle']}"

@@ -58,7 +58,7 @@ lilyver=#(lilypond-version)
 	completion="0"
 	tagline=\markup {\small {Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at \date, Engraved by lilypond \lilyver}}
 	style="not filled"
-	poet="unkown"
+	poet="unknown"
 
 
 	title="A Foggy Day"
