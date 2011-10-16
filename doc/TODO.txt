@@ -1,7 +1,3 @@
-transfer to mako:
-=================
-- make the .d mechanism work.
-
 licensing:
 ==========
 embed a licence in all of the tunes.
@@ -16,6 +12,12 @@ visuals
 youtube links:
 ==============
 support more than one youtube link (there are already a few tunes with more than one youtube link in them).
+
+mako:
+=====
+- do dependency analysis on it.
+- look at some of the lilypond outputs and see that some %% in the source produce just one (%) in the
+output. What is that? Take care of it...
 
 config system:
 ==============
@@ -153,7 +155,3 @@ Database additions
 - assume many jpegs and many midis per compilation. Store them all in the database.
 - make all the blobs reside in a blob table and make get blob really simple by getting
 	from that table either by uuid or by id.
-
-preprocessing system (m4)
-=========================
-do dependency analysis on it.
