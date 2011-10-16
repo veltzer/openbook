@@ -76,13 +76,13 @@
 	\small { %% \teeny \tiny \small \normalsize \large \huge
 		\fill-line {
 			\column {
-			  	%% Verse
+				%% Verse
 				"He deals the cards as a meditation"
 				"And those he plays never suspect"
 				"He doesn't play for the money he wins"
 				"He doesn't play for respect"
 				\null
-			  	%% Verse
+				%% Verse
 				"He deals the cards to find the answer"
 				"The sacred geometry of chance"
 				"The hidden law of a probable outcome"
@@ -94,7 +94,7 @@
 				"I know that diamonds mean money for this art"
 				"But that's not the shape of my heart"
 				\null
-			  	%% Verse
+				%% Verse
 				"He may play the jack of diamonds"
 				"He may lay the queen of spades"
 				"He may conceal a king in his hand"
@@ -109,12 +109,12 @@
 				"But that's not the shape of my heart"
 				"Shape of my heart"
 				\null
-			  	%% Verse
+				%% Verse
 				"And if I told you that I loved you"
 				"You'd maybe think there's something wrong"
 				"I'm not a man of too many faces"
 				"The mask I wear is one"
-			  	%% Verse
+				%% Verse
 				\null
 				"Those who speak know nothing"
 				"And find out to their cost"
