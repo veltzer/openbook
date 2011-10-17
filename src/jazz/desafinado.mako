@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['render']="Unknown"
 	attributes['type']="harmony_tune_lyrics"
@@ -18,17 +19,17 @@
 	attributes['idyoutube']="Vixc_Hu4Ris"
 	attributes['idyoutube']="lo1SiVwVqic"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- document what has been done with this tune.
 	- what version is this?
 	- document the you tube performances.
-</%doc>
+% endif
 
-<%def name="ChordsUnknown()">
+% if part=='ChordsUnknown':
 \chordmode {
 	\startChords
 %%	list of instruments can be found at
@@ -74,9 +75,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceUnknown()">
+% if part=='VoiceUnknown':
 \relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
@@ -162,9 +163,9 @@
 	g4. f8 f2~ |
 	f2. r4 |
 }
-</%def>
+% endif
 
-<%def name="LyricsUnknown()">
+% if part=='LyricsUnknown':
 \lyricmode {
 	Love is like a nev -- er end -- ing mel -- o -- dy; __
 	po -- ets have com -- pared it to a sym -- pho -- ny, __
@@ -187,4 +188,4 @@
 	There'll be no De -- sa -- fi -- na -- do when your heart be -- longs to me com -- plete -- ly. __
 	Then you won't be Slight -- ly Out Of Tune, __ you'll sing a -- long with me. __
 }
-</%def>
+% endif

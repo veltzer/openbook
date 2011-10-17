@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyrics"
 	attributes['render']="Real"
@@ -15,17 +16,17 @@
 
 	attributes['idyoutube']="jvXywhJpOKs"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- get another version of this tune.
 	- document the youtube performances.
 	- mark what has been done with this tune.
-</%doc>
+% endif
 
-<%def name="ChordsReal()">
+% if part=='ChordsReal':
 \chordmode {
 	\startChords
 
@@ -60,9 +61,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceReal()">
+% if part=='VoiceReal':
 \relative a {
 	\time 4/4
 	\key c \minor
@@ -82,9 +83,9 @@
 	c'2 d4 ees | d4. ees8 d2 | ees1~ | ees |
 	ees,2 f4 g | f4. g8 f2 | ees1~ | ees2. r4 |
 }
-</%def>
+% endif
 
-<%def name="LyricsReal()">
+% if part=='LyricsReal':
 \lyricmode {
 	My Fun -- ny Val -- en -- tine,
 	Sweet com -- ic val -- en -- tine,
@@ -101,4 +102,4 @@
 	Stay lit -- tle Val -- en -- tine, stay!
 	Each day is Val -- en -- tine's day.
 }
-</%def>
+% endif

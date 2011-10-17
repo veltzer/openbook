@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyrics"
 	attributes['render']="Unknown"
@@ -12,16 +13,16 @@
 	attributes['completion']="0"
 	attributes['uuid']="39de7d2c-a26f-11df-8dbc-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- check this tune.
 	- mark what's been done.
-</%doc>
+% endif
 
-<%def name="ChordsUnknown()">
+% if part=='ChordsUnknown':
 \chordmode {
 	\startChords
 
@@ -41,9 +42,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceUnknown()">
+% if part=='VoiceUnknown':
 \relative c' {
 	\key f \major
 	\time 4/4
@@ -64,9 +65,9 @@
 	f4~ \times 2/3 { f8 f f } f2 | r4 f8 f \times 2/3 {e4 f g} | a1~ | a4 r a a |
 	\times 2/3 {a4 f g} f2 | r4 f8 f \times 2/3 {e4 f g} | f1~ | f
 }
-</%def>
+% endif
 
-<%def name="LyricsUnknown()">
+% if part=='LyricsUnknown':
 \lyrics {
 	I see trees of green, red ros -- es too, I see the bloom for me and you, __
 	and I think __ to my -- self what a won -- der -- ful world. __
@@ -86,4 +87,4 @@
 	and I think __ to my -- self what a won -- der -- ful world. __
 	Yes, I think to my -- self what a won -- der -- ful world. __
 }
-</%def>
+% endif

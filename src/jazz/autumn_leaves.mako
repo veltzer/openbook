@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyricsmore"
 	attributes['render']="Real"
@@ -17,17 +18,17 @@
 	attributes['idyoutube']="mRhVI7cpcS4"
 	attributes['idyoutube']="io1o1Hwpo8Y"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- I remarked the \myEndLine at the first finish of the volta to save
 	lines. Should we have a more general mechanism for this?
 	- document the youtube performances.
-</%doc>
+% endif
 
-<%def name="ChordsReal()">
+% if part=='ChordsReal':
 \chordmode {
 	\startChords
 
@@ -62,9 +63,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceReal()">
+% if part=='VoiceReal':
 \relative e' {
 	\time 4/4
 	\key e \minor
@@ -91,9 +92,9 @@
 	c c a a | fis2. c'4 | b2 b~ | b2. e,4 |
 	a2. g4 | fis2 g4 b, | e1 | r4 <\parenthesize e> <\parenthesize fis> <\parenthesize g> |
 }
-</%def>
+% endif
 
-<%def name="LyricsReal()">
+% if part=='LyricsReal':
 %% lyrics are taken from the fake book and adjusted for the real one
 \lyricmode {
 	The fall -- ing leaves __ drift by the win -- dow, __
@@ -109,16 +110,16 @@
 
 	The fall -- ing
 }
-</%def>
+% endif
 
-<%def name="LyricsRealmore()">
+% if part=='LyricsRealmore':
 \lyricmode {
 	_ _ _ lips, __ the sum -- mer kiss -- es,
 	The sun -- burned hands __
 }
-</%def>
+% endif
 
-<%def name="ChordsFake()">
+% if part=='ChordsFake':
 \chordmode {
 	\startChords
 
@@ -146,9 +147,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceFake()">
+% if part=='VoiceFake':
 \relative e' {
 	\time 4/4
 	\key e \minor
@@ -169,9 +170,9 @@
 	c c a a | fis2. c'4 | b2 b~ | b e, |
 	a2. g4 | fis2 g4 b, | e1~ | e4 r r2 |
 }
-</%def>
+% endif
 
-<%def name="LyricsFake()">
+% if part=='LyricsFake':
 \lyricmode {
 	The fall -- ing leaves __ drift by the win -- dow, __
 	The Au -- tumn Leaves, __ of red and gold.
@@ -183,4 +184,4 @@
 	But I miss you most of all my dar -- ling, __
 	When Au -- tumn Leaves start to fall. __
 }
-</%def>
+% endif

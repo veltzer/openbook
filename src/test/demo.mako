@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doOwn']=True
 
@@ -16,14 +17,14 @@
 
 	attributes['uuid']="9a39404e-a26f-11df-aa6e-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
-</%doc>
+% endif
 
-<%def name="Own()">
+% if part=='Own':
 \score {
 <<
 \chordmode {
@@ -69,4 +70,4 @@
 	}
 	\layout {}
 }
-</%def>
+% endif

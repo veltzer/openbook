@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune"
 	attributes['render']="Unknown"
@@ -12,9 +13,9 @@
 	attributes['completion']="0"
 	attributes['uuid']="02c22208-a26f-11df-98fd-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- where is this sheet from.
@@ -23,9 +24,9 @@
 	- add lyrics.
 	- check this whole sheet again.
 	- add length to all notes.
-</%doc>
+% endif
 
-<%def name="ChordsUnknown()">
+% if part=='ChordsUnknown':
 \chordmode {
 	\mark "Intro"
 	\repeat volta 4 { e2.:m7 | f2.:maj7.4+ }
@@ -52,9 +53,9 @@
 
 	\endSong
 }
-</%def>
+% endif
 
-<%def name="VoiceUnknown()">
+% if part=='VoiceUnknown':
 \relative e' {
 	\time 3/4
 	\key g \major
@@ -78,4 +79,4 @@
 	a2 g4 | b c b | c2.~ | c | b |
 	g~ | g~ | g~ | g4 r2 |
 }
-</%def>
+% endif

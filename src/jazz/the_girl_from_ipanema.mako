@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyricsmore"
 	attributes['render']="Real"
@@ -17,14 +18,14 @@
 
 	attributes['idyoutube']="DmV0TcTNJ3o"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
-</%doc>
+% endif
 
-<%def name="ChordsReal()">
+% if part=='ChordsReal':
 \chordmode {
 	\startChords
 
@@ -68,9 +69,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceReal()">
+% if part=='VoiceReal':
 \relative c' {
 	\time 4/4
 	\key f \major
@@ -112,9 +113,9 @@
 	e1 | r4 r8 e8 \times 2/3 {e4 e d} |
 	e1~ | e2. r4 |
 }
-</%def>
+% endif
 
-<%def name="LyricsReal()">
+% if part=='LyricsReal':
 \lyricmode {
 	Tall and tan and young and love -- ly,
 	the Girl From I -- pa -- ne -- ma goes walk -- ing,
@@ -135,12 +136,12 @@
 	She just does -- n't see.
 	No, she does -- n't see.
 }
-</%def>
+% endif
 
-<%def name="LyricsRealmore()">
+% if part=='LyricsRealmore':
 \lyricmode {
 	When she walks she's like a Sam -- ba
 	that swings so cool and sways _ so gen -- tle,
 	that when she pass -- es, each one she pass -- es goes
 }
-</%def>
+% endif

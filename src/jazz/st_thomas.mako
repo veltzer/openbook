@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune"
 	attributes['render']="Fake"
@@ -11,9 +12,9 @@
 	attributes['uuid']="ef0827e0-f690-11e0-ba56-0019d11e5a41"
 	attributes['structure']="AABC"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	- chords were taken from the fake book.
 	TODO:
@@ -21,9 +22,9 @@
 	- add epdf from the fake book.
 	- add another version from some other book.
 	- add youtube performances.
-</%doc>
+% endif
 
-<%def name="ChordsFake()">
+% if part=='ChordsFake':
 \chordmode {
 	\startChords
 
@@ -53,9 +54,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceFake()">
+% if part=='VoiceFake':
 \relative c'' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
@@ -74,4 +75,4 @@
 	%% part "C"
 	e2 d | c a | g4 c b c | r1 |
 }
-</%def>
+% endif

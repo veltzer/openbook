@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyrics"
 	attributes['render']="Epdf0"
@@ -15,17 +16,17 @@
 
 	attributes['uuid']="d936b39a-971e-11e0-9c44-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- add nikud? Is that possible ?
 	- add the epdf from a scan.
 	- adjust the lyrics.
-</%doc>
+% endif
 
-<%def name="ChordsEpdf0()">
+% if part=='ChordsEpdf0':
 \chordmode {
 	\startChords
 
@@ -45,9 +46,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceEpdf0()">
+% if part=='VoiceEpdf0':
 \relative c'{
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
@@ -64,9 +65,9 @@
 	r4 r8 a b b b a~ | a4 r r2 | r2 a8 gis fis g~ | g2 r |
 	r2 g8 fis e f~ | f2 r | r4 r8 f g a b a~ | a1~ | a1 |
 }
-</%def>
+% endif
 
-<%def name="LyricsEpdf0()">
+% if part=='LyricsEpdf0':
 \lyricmode {
 	איך זה ש -- כו -- כב __ א -- חד __ ל -- בד __ מ -- עז. __
 	איך הוא מ -- עז, __ ל -- מ -- ען ה -- שם. __
@@ -81,4 +82,4 @@
 	לה לה לה לה __
 	לה לה לה לה לה __ __
 }
-</%def>
+% endif

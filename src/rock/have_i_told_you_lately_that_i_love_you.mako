@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doChords']=True
 	attributes['doVoice']=True
@@ -13,16 +14,16 @@
 	attributes['completion']="0"
 	attributes['uuid']="d86922f4-a26e-11df-b237-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- finish this.
 	- document what was done in this song.
-</%doc>
+% endif
 
-<%def name="ChordsMy()">
+% if part=='ChordsMy':
 \chordmode {
 	\startChords
 
@@ -37,15 +38,15 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceMy()">
+% if part=='VoiceMy':
 \relative c {
 	a b c d
 }
-</%def>
+% endif
 
-<%def name="LyricsMy()">
+% if part=='LyricsMy':
 \lyrics {
 	Have I told you lately that I love you.
 	Have I told you that there's no one but you.
@@ -53,4 +54,4 @@
 	Take away all the sadness.
 	Take my troubles that's what you do.
 }
-</%def>
+% endif

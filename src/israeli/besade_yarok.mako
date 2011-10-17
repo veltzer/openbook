@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyrics"
 	attributes['render']="My"
@@ -15,15 +16,15 @@
 
 	attributes['uuid']="42424480-a26f-11df-abb4-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- mark what has been done with this tune.
-</%doc>
+% endif
 
-<%def name="ChordsMy()">
+% if part=='ChordsMy':
 \chordmode {
 	\startChords
 
@@ -41,9 +42,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceMy()">
+% if part=='VoiceMy':
 \relative f' {
 	\time 4/4
 	\key f \major
@@ -57,9 +58,9 @@
 
 	d4 a'8 g4 f8 e4 |
 }
-</%def>
+% endif
 
-<%def name="LyricsMy()">
+% if part=='LyricsMy':
 \lyricmode {
 	ב -- ש -- דה י -- רוק, על גב -- עה תלו -- לה.
 	ב -- מ -- קום ר -- חוק, סוף ד -- רך לא סלו -- לה.
@@ -101,4 +102,4 @@
 	בשדה ירוק, על גבעה תלולה
 	אהבת חיי ליפול עוד עלולה
 }
-</%def>
+% endif

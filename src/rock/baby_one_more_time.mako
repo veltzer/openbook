@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doGuitar']=True
 	attributes['doOwn']=True
@@ -18,14 +19,14 @@
 	attributes['idyoutube']="acULghgYUg0"
 	attributes['lyricsurl']="http://www.elyrics.net/read/b/britney-spears-lyrics/baby-one-more-time-lyrics.html"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
-</%doc>
+% endif
 
-<%def name="Own()">
+% if part=='Own':
 PartChords=\chordmode {
 	\mark "Verse"
 	\startRepeat
@@ -120,4 +121,4 @@ PartFrets=\new FretBoards {
 		}
 	}
 }
-</%def>
+% endif

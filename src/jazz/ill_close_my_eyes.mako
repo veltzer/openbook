@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['render']="My"
 	attributes['type']="harmony_tune_lyrics"
@@ -19,9 +20,9 @@
 
 	attributes['remark']="version is from Amit Golan"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	- Checked chords against the real book.
 	- Checked notes against the real book.
@@ -30,9 +31,9 @@
 	TODO:
 	- problem with the words ( the phrase "Don't you know" did not fit in my version, fix the tune).
 	- get copyright for this tune (the real book didn't have one).
-</%doc>
+% endif
 
-<%def name="ChordsReal()">
+% if part=='ChordsReal':
 \chordmode {
 	\startChords
 
@@ -60,9 +61,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceReal()">
+% if part=='VoiceReal':
 \relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 150
@@ -82,9 +83,9 @@
 	cis d c'2~ | c4 bes f g | a4. a8 a a4 a8~ | a4 a c bes |
 	a4. d,8 e f4 g8~ | g2 a | f1~ | f4 r r2 |
 }
-</%def>
+% endif
 
-<%def name="LyricsReal()">
+% if part=='LyricsReal':
 %% these are lyrics from the internet adjusted by me to the real book tune
 %% the adjustment is pretty horrible
 \lyricmode {
@@ -108,9 +109,9 @@
 	Do -- n't you know I'll Close My Eyes
 	And I'll see you_with __ my heart __
 }
-</%def>
+% endif
 
-<%def name="ChordsMy()">
+% if part=='ChordsMy':
 \chordmode {
 	\startChords
 	\startSong
@@ -138,9 +139,9 @@
 	\endSong
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceMy()">
+% if part=='VoiceMy':
 \relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 150
@@ -160,9 +161,9 @@
 	des d c'2 | r4 r8 bes f4 g | a1 | r4 r8 a c4 b |
 	bes4. d,8 e4 f | g2 a | f1~ | f2 r2 |
 }
-</%def>
+% endif
 
-<%def name="LyricsMy()">
+% if part=='LyricsMy':
 \lyricmode {
 	I'll Close My Eyes __
 	To eve -- ry -- one but you __
@@ -185,4 +186,4 @@
 	I'll Close My Eyes
 	And I'll see you_with my heart __
 }
-</%def>
+% endif

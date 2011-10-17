@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyricsmore"
 	attributes['render']="Real"
@@ -15,18 +16,18 @@
 
 	attributes['uuid']="13d57a4a-a26f-11df-8711-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- where is this from?
 	- document what been done in this tune.
 	- document the youtube performance.
 	- fill in the copyright
-</%doc>
+% endif
 
-<%def name="ChordsReal()">
+% if part=='ChordsReal':
 \chordmode {
 	\startChords
 
@@ -56,9 +57,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceReal()">
+% if part=='VoiceReal':
 \relative a {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 110
@@ -80,9 +81,9 @@
 		}
 	}
 }
-</%def>
+% endif
 
-<%def name="LyricsReal()">
+% if part=='LyricsReal':
 %% lyrics were taken from the internet and adjusted for the real book
 \lyricmode {
 	There was a boy,
@@ -101,13 +102,13 @@
 	Is just to love and be loved
 	In re -- turn.'
 }
-</%def>
+% endif
 
-<%def name="LyricsRealmore()">
+% if part=='LyricsRealmore':
 \lyricmode {
 	_ then one day,
 	A mag -- ic day he passed my way,
 	And while we spoke of man -- y things, Fools and kings,
 	This he said to me: 'The
 }
-</%def>
+% endif

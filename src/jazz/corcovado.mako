@@ -1,6 +1,9 @@
-<%def name="Vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
-	attributes['type']="harmony_tune_lyrics"
+	attributes['doChords']=True
+	attributes['doVoice']=True
+	attributes['doLyrics']=True
 	attributes['render']="Unknown"
 
 	attributes['title']="Corcovado"
@@ -13,9 +16,9 @@
 	attributes['completion']="0"
 	attributes['uuid']="b847fc02-a26e-11df-92ce-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- turn this tune relative.
@@ -23,9 +26,9 @@
 	- add the intro chords (they are not currently shown
 	- mark whats been done to this tune.
 	- add youtube performances.
-</%doc>
+% endif
 
-<%def name="ChordsUnknown()">
+% if part=='ChordsUnknown':
 \chordmode {
 	\startSong
 	\startChords
@@ -47,9 +50,9 @@
 	\endChords
 	\endSong
 }
-</%def>
+% endif
 
-<%def name="VoiceUnknown()">
+% if part=='VoiceUnknown':
 \relative c' {
 	\time 4/4
 	\key c \major
@@ -102,9 +105,9 @@
 	r4 a'8 g'~ g' f' e' d' |
 	c' b4 c'8~ c' d'4 c'8~ |
 }
-</%def>
+% endif
 
-<%def name="LyricsUnknown()">
+% if part=='LyricsUnknown':
 \lyrics {
 	Qui -- et __ nights of qui -- et stars,
 	qui -- et __ chords from my gui -- tar __
@@ -124,4 +127,4 @@
 	a bit -- ter tra -- gic joke have found with you
 	the mean __ -- ing of ex -- is -- tence, oh, __ my love. __
 }
-</%def>
+% endif

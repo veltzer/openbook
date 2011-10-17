@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doOwn']=True
 
@@ -10,14 +11,14 @@
 	attributes['completion']="5"
 	attributes['uuid']="6d469874-6e9e-11e0-b6e5-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
-</%doc>
+% endif
 
-<%def name="Own()">
+% if part=='Own':
 \markuplines {
 	\wordwrap-lines { \italic {
 	These are exercises to train the control of your hands. The idea is to train your hand for flexibility and agility.
@@ -281,4 +282,4 @@ Starting with the left hand.
 		}
 	}
 }
-</%def>
+% endif

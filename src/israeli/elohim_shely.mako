@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyrics"
 	attributes['render']="My"
@@ -16,14 +17,14 @@
 
 	attributes['uuid']="467b2af8-a26f-11df-b03d-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
-</%doc>
+% endif
 
-<%def name="ChordsMy()">
+% if part=='ChordsMy':
 \chordmode {
 	\startChords
 
@@ -43,9 +44,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceMy()">
+% if part=='VoiceMy':
 \relative f' {
 	\time 2/4
 	\key g \minor
@@ -62,9 +63,9 @@
 	g'4 g'4 | a'4 bes'4 | d''4 c''4 | c''2 |
 	bes'4 bes'4 | c''4 c''4 | d''2 |
 }
-</%def>
+% endif
 
-<%def name="LyricsMy()">
+% if part=='LyricsMy':
 \lyricmode {
 	א -- לו -- הים ש -- לי, ר -- צי -- תי ש -- ת -- דע
 	ח -- לום ש -- ח -- למ -- תי ב -- לי -- לה ב -- מי -- טה
@@ -99,4 +100,4 @@
 	על החלום שלי רציתי שתדע
 	אלוהים שלי, רק רציתי שתדע
 }
-</%def>
+% endif

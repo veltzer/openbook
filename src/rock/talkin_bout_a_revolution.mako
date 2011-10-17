@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doGuitar']=True
 	attributes['doOwn']=True
@@ -15,9 +16,9 @@
 	attributes['idyoutube']="SKYWOwWAguk"
 	attributes['lyricsurl']="http://www.lyrics007.com/Tracy%20Chapman%20Lyrics/Talkin'%20Bout%20A%20Revolution%20Lyrics.html"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- are the g:sus4 and d:sus4 chords really sus4 chords? They 4 note
@@ -25,9 +26,9 @@
 	- the g:sus4 and d:sus4 chords look (in guitar tabs) just like regular
 	g and d chords. How can also annotate the extra note to be added and the
 	finger with which to add it with?
-</%doc>
+% endif
 
-<%def name="Own()">
+% if part=='Own':
 \storePredefinedDiagram \chordmode {g:sus4} #guitar-tuning #"3-3;2-2;o;o;o;3-4;"
 \storePredefinedDiagram \chordmode {c:5.9} #guitar-tuning #"x;3-2;2-1;o;3-3;3-4;"
 \storePredefinedDiagram \chordmode {e:m7} #guitar-tuning #"o;2-1;2-2;o;3-3;3-4;"
@@ -117,4 +118,4 @@ PartFrets=\new FretBoards {
 		}
 	}
 }
-</%def>
+% endif

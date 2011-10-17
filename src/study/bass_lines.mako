@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doOwn']=True
 
@@ -12,9 +13,9 @@
 
 	attributes['uuid']="805e8a3a-a26f-11df-aa51-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- write was has been done in this tune.
@@ -22,9 +23,9 @@
 	- add short bass lines, ones which form the harmony Dm7,G7,Cm7,F7,...
 	- add long bass lines for harmony: Dm7,Dm7,G7,G7
 	- add turn around bass lines for harmony: Cmaj7,A7,Dm7,G7
-</%doc>
+% endif
 
-<%def name="Own()">
+% if part=='Own':
 \score {
 <<
 \chordmode {
@@ -131,4 +132,4 @@
 	}
 	\layout {}
 }
-</%def>
+% endif

@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune"
 	attributes['render']="Real"
@@ -14,9 +15,9 @@
 
 	attributes['idyoutube']="4z8Rt4nvd-I"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- document what has been done.
@@ -24,9 +25,9 @@
 	- add the piano accompaniment for this song (rythm pattern with some notes - ripp
 	it off the album).
 	- add another version of this one with epdf.
-</%doc>
+% endif
 
-<%def name="ChordsReal()">
+% if part=='ChordsReal':
 \chordmode {
 	\startChords
 
@@ -41,9 +42,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceReal()">
+% if part=='VoiceReal':
 \relative ees'' {
 	\key c \major
 	\time 4/4
@@ -56,4 +57,4 @@
 	r4 c,8 ( c8 g'4 a4 | aes8 g8 f8 d8 c4 d-. ) |
 	r4 c8 ( c8 g'4 aes4 | \mark \markup { \italic { break } } f-. ) f,8 f8 <aes c> ( <bes d>4-. ) f8~ | f1 | r1 |
 }
-</%def>
+% endif

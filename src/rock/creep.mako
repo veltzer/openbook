@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doGuitar']=True
 	attributes['doOwn']=True
@@ -17,16 +18,16 @@
 	attributes['idyoutube']="XFkzRNyygfk"
 	attributes['lyricsurl']="http://www.azlyrics.com/lyrics/radiohead/creepacoustic.html"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- document what was done in this tune.
 	- document the youtube performances.
-</%doc>
+% endif
 
-<%def name="Own()">
+% if part=='Own':
 PartChords=\chordmode {
 	\startChords
 	\startRepeat
@@ -113,4 +114,4 @@ PartFrets=\new FretBoards {
 		}
 	}
 }
-</%def>
+% endif

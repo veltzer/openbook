@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyricsmore"
 	attributes['render']="Fake"
@@ -23,17 +24,17 @@
 	attributes['idyoutube']="rMd9oZ4O0bs"
 	attributes['lyricsurl']="http://www.azlyrics.com/lyrics/dianakrall/bodyandsoul.html"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- the e9.11+ does at the end does not show on the sheet. On the sheet it says e:7.11+
 	- add the real book version with epdf.
 	- mark whats been done to this tune.
-</%doc>
+% endif
 
-<%def name="ChordsFake()">
+% if part=='ChordsFake':
 \chordmode {
 	\startChords
 
@@ -68,9 +69,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceFake()">
+% if part=='VoiceFake':
 \relative f' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante" 4 = 80
@@ -95,9 +96,9 @@
 	r8. ees,16 f8. ees16 f4 ees | bes' bes2. | r8. aes16 bes8. aes16 bes4 aes | ees'4 des c bes |
 	r4 des bes8 ges4 bes,8 | f'2 ees | r8. des16 ees8. f16 aes4 \times 2/3 { aes8 bes fes } | des1 |
 }
-</%def>
+% endif
 
-<%def name="LyricsFake()">
+% if part=='LyricsFake':
 \lyricmode {
 	My heart is sad and lone -- ly,
 	for you I sigh, for you, dear, on -- ly,
@@ -117,13 +118,13 @@
 	I'd glad -- ly sur -- ren -- der
 	my -- self to you, Bod -- y And Soul!
 }
-</%def>
+% endif
 
-<%def name="LyricsFakemore()">
+% if part=='LyricsFakemore':
 \lyricmode {
 	I spend my days in long -- ing,
 	and won -- d'ring why it's me you're wrong -- ing,
 	I tell you I mean it,
 	I'm all for you, Bod -- y And _ Soul!
 }
-</%def>
+% endif

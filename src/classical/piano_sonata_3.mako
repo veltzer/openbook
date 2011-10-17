@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="tune"
 	attributes['render']="Epdf0"
@@ -12,9 +13,9 @@
 	attributes['completion']="0"
 	attributes['uuid']="744f61d8-a26f-11df-b6b1-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- turn this tune relative.
@@ -22,9 +23,9 @@
 	"Schirmer's library of musical classics"
 	An accompaniment for Second Piano by Edvard Grieg may be found in Schirmer's Library, Vol. 1440.
 	- write whats been done for this tune.
-</%doc>
+% endif
 
-<%def name="VoiceEpdf0()">
+% if part=='VoiceEpdf0':
 \relative c{
 	\key c \major
 	\time 4/4
@@ -46,4 +47,4 @@
 	}
 	\endTune
 }
-</%def>
+% endif

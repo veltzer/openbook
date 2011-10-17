@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyrics"
 	attributes['render']="Fake"
@@ -17,18 +18,18 @@
 
 	attributes['remark']="the my set of chords is from Amit Golan"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- mark whats been done with this tune...
 	- do the __ at the end of sentences thing.
 	- add a youtube performance.
 	- document the current you tube performance.
-</%doc>
+% endif
 
-<%def name="ChordsMy()">
+% if part=='ChordsMy':
 \chordmode {
 	\startChords
 
@@ -56,9 +57,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="ChordsFake()">
+% if part=='ChordsFake':
 \chordmode {
 	\startChords
 
@@ -86,9 +87,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceFake()">
+% if part=='VoiceFake':
 \relative f' {
 	\time 4/4
 	\key f \major
@@ -107,9 +108,9 @@
 	d4 d8 d d d4 d8 | d4 d,2 d4 | d' d8 d d d4 d8 | d4 d,2 e4 |
 	a a8 bes b d4. | e4 e8 d e d e4 | d1~ | d2 r |
 }
-</%def>
+% endif
 
-<%def name="LyricsFake()">
+% if part=='LyricsFake':
 \lyricmode {
 	I'm gon -- na love you like no -- bod -- y's loved you,
 	Come Rain Or Come Shine.
@@ -131,4 +132,4 @@
 	But I'm with you al -- ways,
 	I'm with you rain _ or shine!
 }
-</%def>
+% endif

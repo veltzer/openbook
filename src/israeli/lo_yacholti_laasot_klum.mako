@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doGuitar']=True
 	attributes['doChords']=True
@@ -18,17 +19,17 @@
 	attributes['lyricsurl']="http://www.mp3music.co.il/tabs/10728.html"
 	attributes['remark']="Ilan Virtsberg plays it in G in live concerts"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- mark whats been done in this tune.
 	- document the youtube performances.
 	- do it in two scales.
-</%doc>
+% endif
 
-<%def name="ChordsMy()">
+% if part=='ChordsMy':
 \chordmode {
 	\startChords
 
@@ -60,15 +61,15 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="FretsMy()">
+% if part=='FretsMy':
 \new FretBoards {
 	\PartChords
 }
-</%def>
+% endif
 
-<%def name="Extra()">
+% if part=='Extra':
 %% Lyrics
 \verticalSpace
 \verticalSpace
@@ -125,4 +126,4 @@
 		}
 	}
 }
-</%def>
+% endif

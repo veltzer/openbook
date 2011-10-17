@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['render']="Fake"
 	attributes['type']="harmony_tune_lyrics"
@@ -18,15 +19,15 @@
 	attributes['idyoutube']="kh_NnsbIqNQ"
 	attributes['idyoutube']="Til3lV_ItZE"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- in the real book version move the last chord to be written in parenthesis (I don't know how to do that).
-</%doc>
+% endif
 
-<%def name="ChordsReal()">
+% if part=='ChordsReal':
 \chordmode {
 	\startChords
 
@@ -55,9 +56,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceReal()">
+% if part=='VoiceReal':
 \relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
@@ -79,9 +80,9 @@
 	bes4 ees d c | bes ees, bes' aes | f2 g | ees1 |
 
 }
-</%def>
+% endif
 
-<%def name="LyricsReal()">
+% if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 	There will be man -- y oth -- er nights like this, __
@@ -94,9 +95,9 @@
 	Yes, I may dream a mil -- lion dreams, but how can they come true,
 	if there will nev -- er ev -- er be an -- oth -- er you?
 }
-</%def>
+% endif
 
-<%def name="ChordsFake()">
+% if part=='ChordsFake':
 \chordmode {
 	\startChords
 
@@ -122,9 +123,9 @@
 
 	\endSong
 }
-</%def>
+% endif
 
-<%def name="VoiceFake()">
+% if part=='VoiceFake':
 \relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
@@ -145,9 +146,9 @@
 	ees4 c bes aes | g f g4. aes8 | bes4 g f ees | d'2. c4 |
 	bes ees d c | bes ees, bes' aes | f2 g | ees2. r4 |
 }
-</%def>
+% endif
 
-<%def name="LyricsFake()">
+% if part=='LyricsFake':
 \lyricmode {
 	There will be man -- y oth -- er nights like this, __
 	and I'll be stand -- ing here with some -- one new, __
@@ -159,4 +160,4 @@
 	Yes, I may dream a mil -- lion dreams, but how can they come true,
 	if there will nev -- er ev -- er be an -- oth -- er you?
 }
-</%def>
+% endif

@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyricsmore"
 	attributes['render']="Real"
@@ -16,16 +17,16 @@
 
 	attributes['idyoutube']="_DH46QyK2cw"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- document the youtube performance.
 	- mark what was done in this.
-</%doc>
+% endif
 
-<%def name="ChordsReal()">
+% if part=='ChordsReal':
 \chordmode {
 	\startChords
 
@@ -56,9 +57,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceReal()">
+% if part=='VoiceReal':
 \relative c' {
 	\time 4/4
 	\key c \major
@@ -82,9 +83,9 @@
 		}
 	}
 }
-</%def>
+% endif
 
-<%def name="LyricsReal()">
+% if part=='LyricsReal':
 \lyricmode {
 	If they asked me I Could Write A Book,
 	a -- bout the way you walk and whis -- per and look,
@@ -97,12 +98,12 @@
 	how to make two lov -- ers of friends.
 
 }
-</%def>
+% endif
 
-<%def name="LyricsRealmore()">
+% if part=='LyricsRealmore':
 \lyricmode {
 	_ _ sim -- ple se -- cret of the plot
 	is just to tell them that I love you a -- lot,
 	then the world dis -- cov -- ers as
 }
-</%def>
+% endif

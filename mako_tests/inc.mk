@@ -6,7 +6,7 @@
 	This is the second part of song1
 % endif
 % if part=='Vars':
-	${self.vars()}
+	${self.Vars()}
 % endif
 % if part=='foo':
 	${self.foo()}

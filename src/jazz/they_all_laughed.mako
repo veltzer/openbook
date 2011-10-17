@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyricsmore"
 	attributes['render']="Ultimate"
@@ -19,16 +20,16 @@
 	attributes['idyoutube']="TdLm9qRRdh4"
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/They-All-Laughed-lyrics-Ella-Fitzgerald/2123DA2C32C02AF848256AAB000AB847"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- mark what has been done with this tune.
 	- document the youtube performances.
-</%doc>
+% endif
 
-<%def name="ChordsUltimate()">
+% if part=='ChordsUltimate':
 \chordmode {
 	\startChords
 
@@ -69,9 +70,9 @@
 
 	\endSong
 }
-</%def>
+% endif
 
-<%def name="VoiceUltimate()">
+% if part=='VoiceUltimate':
 \relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
@@ -106,9 +107,9 @@
 	}
 
 }
-</%def>
+% endif
 
-<%def name="LyricsUltimate()">
+% if part=='LyricsUltimate':
 \lyricmode {
 	They All Laughed at Chris -- to -- pher Co -- lum -- bus
 	When he said the world was round. __
@@ -134,9 +135,9 @@
 	"\"Ha," ha, "ha!\""
 	Who's got the last laugh now? __
 }
-</%def>
+% endif
 
-<%def name="LyricsUltimatemore()">
+% if part=='LyricsUltimatemore':
 \lyricmode {
 
 	They All Laughed at Rock -- e -- fel -- ler Cen -- ter,
@@ -158,4 +159,4 @@
 	For "\"ho," ho, "ho!\""
 	Who's got the last laugh
 }
-</%def>
+% endif

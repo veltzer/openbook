@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doOwn']=True
 
@@ -10,14 +11,14 @@
 	attributes['completion']="5"
 	attributes['uuid']="d54f6d36-6d29-11e0-a6dd-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
-</%doc>
+% endif
 
-<%def name="Own()">
+% if part=='Own':
 \markup {
 Regular rock type drumming...
 }
@@ -125,4 +126,4 @@ Patterns of 3 located in different places in the eight 8 notes...
 	}
 	\layout {}
 }
-</%def>
+% endif

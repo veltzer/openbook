@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['render']="Unknown"
 	attributes['type']="tune"
@@ -12,9 +13,9 @@
 	attributes['completion']="0"
 	attributes['uuid']="f4f39800-a26e-11df-b97a-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%def name="VoiceUnknown()">
+% if part=='VoiceUnknown':
 \relative d' {
 	\time 4/4
 	\key g \major
@@ -37,4 +38,4 @@
 	b2. b8 bis | cis4 a a a8 b! | c! a a a a4 a8 ais | b4 g g b |
 	a2. g4 | d4.. b'16 g2 | d4.. c'16 a2 | g1 | r2 r4 d8 d |
 }
-</%def>
+% endif
