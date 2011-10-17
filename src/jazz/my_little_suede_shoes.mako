@@ -53,7 +53,7 @@
 }
 </%def>
 
-<%def name="prep()">
+<%def name="Prep()">
 A=\relative c' { bes8 ees g | f f f f ees f r g | }
 B=\relative c' { bes8 ees g | f f f f ees f r ees | }
 </%def>

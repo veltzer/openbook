@@ -215,8 +215,9 @@ ${self.clearVars()}
 
 % if not attributes['doOwn']:
 
+%% include the preparatory stuff, if there is any
 % if attributes['doPrep']:
-${song.prep()}
+<%include file="/${attributes['blocks']}" args="part='Prep'"/>
 % endif
 
 %% calculate the vars

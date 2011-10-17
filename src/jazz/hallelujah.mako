@@ -33,7 +33,7 @@
 }
 </%def>
 
-<%def name="prep()">
+<%def name="Prep()">
 phraseA={ r4 d'8. c'16 aes8. g16 f8. d16 }
 phraseB={ r8. c'16 d'8. c'16 aes8. g16 f8. d16 }
 </%def>
