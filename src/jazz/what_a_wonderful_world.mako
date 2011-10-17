@@ -43,7 +43,7 @@
 }
 </%def>
 
-<%def name="myVoiceUnknown()">
+<%def name="VoiceUnknown()">
 \relative c' {
 	\key f \major
 	\time 4/4

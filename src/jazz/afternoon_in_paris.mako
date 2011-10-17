@@ -25,7 +25,7 @@
 	- add emphasis notes in the tune and document how to do that.
 </%doc>
 
-<%def name="myChordsFake()">
+<%def name="ChordsFake()">
 \chordmode {
 	\startChords
 

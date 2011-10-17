@@ -35,7 +35,7 @@
 	- enter the new real book version.
 </%doc>
 
-<%def name="myChordsReal()">
+<%def name="ChordsReal()">
 \chordmode {
 	\startChords
 

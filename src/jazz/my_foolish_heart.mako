@@ -31,7 +31,7 @@
 	- document the youtube performances.
 </%doc>
 
-<%def name="myVoiceReal()">
+<%def name="VoiceReal()">
 \relative f' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 108

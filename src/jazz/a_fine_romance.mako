@@ -26,7 +26,7 @@
 	- fill in data about the you tube performances.
 </%doc>
 
-<%def name="myChordsFake()">
+<%def name="ChordsFake()">
 \chordmode {
 	\startChords
 

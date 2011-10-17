@@ -71,7 +71,7 @@ myFrets=\new FretBoards {
 }
 </%def>
 
-<%def name="extra()">
+<%def name="Extra()">
 %% Lyrics
 \verticalSpace
 \verticalSpace

@@ -71,7 +71,7 @@
 }
 </%def>
 
-<%def name="myVoiceUltimate()">
+<%def name="VoiceUltimate()">
 \relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130

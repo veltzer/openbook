@@ -58,7 +58,7 @@ A=\relative c' { bes8 ees g | f f f f ees f r g | }
 B=\relative c' { bes8 ees g | f f f f ees f r ees | }
 </%def>
 
-<%def name="myVoiceUnknown()">
+<%def name="VoiceUnknown()">
 \relative c' {
 	\key ees \major
 	\time 4/4

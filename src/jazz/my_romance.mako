@@ -57,7 +57,7 @@
 }
 </%def>
 
-<%def name="myVoiceFake()">
+<%def name="VoiceFake()">
 \relative c' {
 	\time 4/4
 	\key c \major

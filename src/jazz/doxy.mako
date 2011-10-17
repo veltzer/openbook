@@ -25,7 +25,7 @@
 	- add another version of this tune from some other book.
 </%doc>
 
-<%def name="myChordsReal()">
+<%def name="ChordsReal()">
 \chordmode {
 	\startChords
 

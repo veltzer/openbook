@@ -64,7 +64,7 @@
 }
 </%def>
 
-<%def name="myVoiceFake()">
+<%def name="VoiceFake()">
 %% the tune was turned into 8'th notes instead of triplets.
 \relative a {
 	\time 4/4
