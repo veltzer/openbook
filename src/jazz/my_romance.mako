@@ -25,7 +25,7 @@
 	- document the youtube performance.
 </%doc>
 
-<%def name="myChordsFake()">
+<%def name="ChordsFake()">
 \chordmode {
 	\startChords
 
@@ -83,7 +83,7 @@
 }
 </%def>
 
-<%def name="myLyricsFake()">
+<%def name="LyricsFake()">
 \lyricmode {
 	My Ro -- mance does -- n't have to have a moon in the sky,
 	My Ro -- mance does -- n't need a blue la -- goon stand -- ing by;

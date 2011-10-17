@@ -55,7 +55,7 @@
 }
 </%def>
 
-<%def name="myVoiceFake()">
+<%def name="VoiceFake()">
 \relative c' {
 	\key c \major
 	\time 4/4
@@ -83,7 +83,7 @@
 }
 </%def>
 
-<%def name="myLyricsFake()">
+<%def name="LyricsFake()">
 \lyricmode {
 	A Fine Ro -- mance with no kis -- es!
 	A Fine Ro -- mance, my friend, this is!
@@ -97,7 +97,7 @@
 }
 </%def>
 
-<%def name="myLyricsFakemore()">
+<%def name="LyricsFakemore()">
 \lyricmode {
 	_ Fine Ro -- mance my good fel -- low!
 	You take ro -- mance, I'll take jel -- lo!
@@ -111,7 +111,7 @@
 }
 </%def>
 
-<%def name="myChordsReal()">
+<%def name="ChordsReal()">
 \chordmode {
 	\startChords
 
@@ -139,7 +139,7 @@
 }
 </%def>
 
-<%def name="myVoiceReal()">
+<%def name="VoiceReal()">
 \relative c' {
 	\key c \major
 	\time 4/4
@@ -163,7 +163,7 @@
 }
 </%def>
 
-<%def name="myLyricsReal()">
+<%def name="LyricsReal()">
 %% lyrics taken from the fake book and adjusted for the real book
 \lyricmode {
 	A Fine Ro -- mance with no kis -- es!
@@ -180,7 +180,7 @@
 }
 </%def>
 
-<%def name="myLyricsRealmore()">
+<%def name="LyricsRealmore()">
 \lyricmode {
 	_ Fine Ro -- mance, you won't nest -- le.
 	A Fine Ro -- mance, you won't wrest -- le!

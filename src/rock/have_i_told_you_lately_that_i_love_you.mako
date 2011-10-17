@@ -22,7 +22,7 @@
 	- document what was done in this song.
 </%doc>
 
-<%def name="myChordsMy()">
+<%def name="ChordsMy()">
 \chordmode {
 	\startChords
 
@@ -39,13 +39,13 @@
 }
 </%def>
 
-<%def name="myVoiceMy()">
+<%def name="VoiceMy()">
 \relative c {
 	a b c d
 }
 </%def>
 
-<%def name="myLyricsMy()">
+<%def name="LyricsMy()">
 \lyrics {
 	Have I told you lately that I love you.
 	Have I told you that there's no one but you.

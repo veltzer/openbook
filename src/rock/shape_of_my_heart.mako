@@ -42,7 +42,7 @@
 	- add tune
 </%doc>
 
-<%def name="myChordsMy()">
+<%def name="ChordsMy()">
 \chordmode {
 	\startChords
 	\startSong

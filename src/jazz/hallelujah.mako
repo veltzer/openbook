@@ -38,7 +38,7 @@ phraseA={ r4 d'8. c'16 aes8. g16 f8. d16 }
 phraseB={ r8. c'16 d'8. c'16 aes8. g16 f8. d16 }
 </%def>
 
-<%def name="myVoiceUnknown()">
+<%def name="VoiceUnknown()">
 \relative c {
 	\key f \major
 	\time 4/4
@@ -58,7 +58,7 @@ phraseB={ r8. c'16 d'8. c'16 aes8. g16 f8. d16 }
 }
 </%def>
 
-<%def name="myLyricsUnknown()">
+<%def name="LyricsUnknown()">
 \lyrics {
 	Let me tell you 'bout a boy I know __
 	He is my ba -- by and he lives next door. __ __

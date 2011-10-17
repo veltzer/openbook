@@ -29,7 +29,7 @@
 	- document the youtube performances.
 </%doc>
 
-<%def name="myChordsReal()">
+<%def name="ChordsReal()">
 \chordmode {
 	\startChords
 
@@ -92,7 +92,7 @@
 }
 </%def>
 
-<%def name="myLyricsReal()">
+<%def name="LyricsReal()">
 %% lyrics from the internet adjusted for the real book
 \lyricmode {
 %%	There's a saying old, says that love is blind
@@ -128,7 +128,7 @@
 }
 </%def>
 
-<%def name="myLyricsRealmore()">
+<%def name="LyricsRealmore()">
 \lyricmode {
 	I'm a lit -- tle lamb who's lost in the wood
 	I know I could, al -- ways be good

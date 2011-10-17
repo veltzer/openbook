@@ -56,7 +56,7 @@
 }
 </%def>
 
-<%def name="myChordsFake()">
+<%def name="ChordsFake()">
 \chordmode {
 	\startChords
 
@@ -89,7 +89,7 @@
 }
 </%def>
 
-<%def name="myVoiceFake()">
+<%def name="VoiceFake()">
 \relative f' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 108
@@ -115,7 +115,7 @@
 }
 </%def>
 
-<%def name="myLyricsFake()">
+<%def name="LyricsFake()">
 \lyricmode {
 	The night __ is like a love -- ly tune,
 	be -- ware __ My Fool -- ish Heart!

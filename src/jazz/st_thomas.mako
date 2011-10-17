@@ -23,7 +23,7 @@
 	- add youtube performances.
 </%doc>
 
-<%def name="myChordsFake()">
+<%def name="ChordsFake()">
 \chordmode {
 	\startChords
 

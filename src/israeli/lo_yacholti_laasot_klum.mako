@@ -28,7 +28,7 @@
 	- do it in two scales.
 </%doc>
 
-<%def name="myChordsMy()">
+<%def name="ChordsMy()">
 \chordmode {
 	\startChords
 
@@ -62,9 +62,9 @@
 }
 </%def>
 
-<%def name="myFretsMy()">
+<%def name="FretsMy()">
 \new FretBoards {
-	\myChords
+	\PartChords
 }
 </%def>
 

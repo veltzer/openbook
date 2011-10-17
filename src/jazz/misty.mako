@@ -38,7 +38,7 @@
 	- how do I put the last two chord in the real book version in braces (they are part of the turn around)...
 </%doc>
 
-<%def name="myChordsReal()">
+<%def name="ChordsReal()">
 \chordmode {
 	\startChords
 
@@ -107,7 +107,7 @@
 }
 </%def>
 
-<%def name="myLyricsReal()">
+<%def name="LyricsReal()">
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 	Look at me,
@@ -120,7 +120,7 @@
 }
 </%def>
 
-<%def name="myLyricsRealmore()">
+<%def name="LyricsRealmore()">
 \lyricmode {
 	Walk my way and a thou -- sand vi -- o -- lins be -- gin to play,
 	or it might be the sound of your hel -- lo,

@@ -27,7 +27,7 @@
 		- align all the lyrics.
 </%doc>
 
-<%def name="myChordsMy()">
+<%def name="ChordsMy()">
 \chordmode {
 	\startChords
 
@@ -51,7 +51,7 @@
 }
 </%def>
 
-<%def name="myVoiceMy()">
+<%def name="VoiceMy()">
 \relative f' {
 	\time 6/8
 	\key e \major
@@ -66,7 +66,7 @@
 }
 </%def>
 
-<%def name="myLyricsMy()">
+<%def name="LyricsMy()">
 \lyricmode {
 	_ _ _ _ _ _ _ _ _ _ _
 	_ _ _ _ _ _ _ _ _ _ _

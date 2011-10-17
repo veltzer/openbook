@@ -48,7 +48,7 @@
 	- add the version from the new real book.
 </%doc>
 
-<%def name="myChordsReal()">
+<%def name="ChordsReal()">
 \chordmode {
 	\startChords
 
@@ -109,7 +109,7 @@
 }
 </%def>
 
-<%def name="myLyricsReal()">
+<%def name="LyricsReal()">
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 	Once __ __ I loved, __ __
@@ -122,7 +122,7 @@
 }
 </%def>
 
-<%def name="myLyricsRealmore()">
+<%def name="LyricsRealmore()">
 \lyricmode {
 	Then __ __ one day, __ __
 	From my in -- fi -- nite sad -- ness you came

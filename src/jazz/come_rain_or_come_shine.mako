@@ -58,7 +58,7 @@
 }
 </%def>
 
-<%def name="myChordsFake()">
+<%def name="ChordsFake()">
 \chordmode {
 	\startChords
 
@@ -88,7 +88,7 @@
 }
 </%def>
 
-<%def name="myVoiceFake()">
+<%def name="VoiceFake()">
 \relative f' {
 	\time 4/4
 	\key f \major
@@ -109,7 +109,7 @@
 }
 </%def>
 
-<%def name="myLyricsFake()">
+<%def name="LyricsFake()">
 \lyricmode {
 	I'm gon -- na love you like no -- bod -- y's loved you,
 	Come Rain Or Come Shine.

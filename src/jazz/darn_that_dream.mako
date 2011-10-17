@@ -68,7 +68,7 @@
 }
 </%def>
 
-<%def name="myVoiceFake()">
+<%def name="VoiceFake()">
 \relative f' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Adagio" 4 = 72
@@ -93,7 +93,7 @@
 }
 </%def>
 
-<%def name="myLyricsFake()">
+<%def name="LyricsFake()">
 \lyricmode {
 	%% A part
 	Darn That Dream I dream each night,

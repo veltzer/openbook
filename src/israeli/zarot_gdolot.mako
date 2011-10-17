@@ -21,7 +21,7 @@
 	- document what has been done to this tune.
 </%doc>
 
-<%def name="myChordsMy()">
+<%def name="ChordsMy()">
 \chordmode {
 	\startChords
 
@@ -46,13 +46,13 @@
 }
 </%def>
 
-<%def name="myVoiceMy()">
+<%def name="VoiceMy()">
 \relative c {
 	a b c d e f
 }
 </%def>
 
-<%def name="myLyricsMy()">
+<%def name="LyricsMy()">
 \lyricmode {
 	בעירי היו שתי עלמות
 	שתי עלמות יפות ותאומות.

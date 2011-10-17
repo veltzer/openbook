@@ -17,7 +17,7 @@
 	TODO:
 </%doc>
 
-<%def name="myChordsMy()">
+<%def name="ChordsMy()">
 \chordmode {
 	\startChords
 
@@ -41,7 +41,7 @@
 }
 </%def>
 
-<%def name="myVoiceMy()">
+<%def name="VoiceMy()">
 \relative f' {
 	\time 4/4
 	\key a \minor
@@ -49,7 +49,7 @@
 }
 </%def>
 
-<%def name="myLyricsMy()">
+<%def name="LyricsMy()">
 \lyricmode {
 	שלום
 }

@@ -45,7 +45,7 @@
 	- how do I put the last two chords in the real book version into parenthesis?
 </%doc>
 
-<%def name="myChordsReal()">
+<%def name="ChordsReal()">
 \chordmode {
 	\startChords
 
@@ -99,7 +99,7 @@
 }
 </%def>
 
-<%def name="myLyricsReal()">
+<%def name="LyricsReal()">
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 	%% part "A"

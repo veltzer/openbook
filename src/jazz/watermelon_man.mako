@@ -26,7 +26,7 @@
 	- add another version of this one with epdf.
 </%doc>
 
-<%def name="myChordsReal()">
+<%def name="ChordsReal()">
 \chordmode {
 	\startChords
 

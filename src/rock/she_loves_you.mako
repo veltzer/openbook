@@ -26,7 +26,7 @@
 	- add lyrics and melody.
 </%doc>
 
-<%def name="myChordsEpdf0()">
+<%def name="ChordsEpdf0()">
 \chordmode {
 	\startChords
 
@@ -54,7 +54,7 @@
 }
 </%def>
 
-<%def name="myVoiceEpdf0()">
+<%def name="VoiceEpdf0()">
 \relative c {
 	\time 4/4
 	\key f \major
@@ -69,7 +69,7 @@
 }
 </%def>
 
-<%def name="myLyricsEpdf0()">
+<%def name="LyricsEpdf0()">
 \lyricmode {
 	You think you've lost your love, __
 	Well, I saw her yesterday.

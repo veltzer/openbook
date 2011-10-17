@@ -19,7 +19,7 @@
 %>
 </%def>
 
-<%def name="myChordsMy()">
+<%def name="ChordsMy()">
 \chordmode {
 	\startChords
 
@@ -65,9 +65,9 @@
 }
 </%def>
 
-<%def name="myFretsMy()">
-myFrets=\new FretBoards {
-	\myChords
+<%def name="FretsMy()">
+\new FretBoards {
+	\PartChords
 }
 </%def>
 

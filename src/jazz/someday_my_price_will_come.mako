@@ -38,7 +38,7 @@
 	- fixup names of composers and poets (I'm not sure they are right)
 </%doc>
 
-<%def name="myChordsReal()">
+<%def name="ChordsReal()">
 \chordmode {
 	\startChords
 
@@ -87,7 +87,7 @@
 }
 </%def>
 
-<%def name="myLyricsReal()">
+<%def name="LyricsReal()">
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 	Some -- day my prince will come
@@ -97,7 +97,7 @@
 }
 </%def>
 
-<%def name="myLyricsRealmore()">
+<%def name="LyricsRealmore()">
 \lyricmode {
 	He'll whis -- per I love you
 	And steal a kiss or two

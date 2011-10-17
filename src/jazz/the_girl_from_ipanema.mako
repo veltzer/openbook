@@ -24,7 +24,7 @@
 	TODO:
 </%doc>
 
-<%def name="myChordsReal()">
+<%def name="ChordsReal()">
 \chordmode {
 	\startChords
 
@@ -114,7 +114,7 @@
 }
 </%def>
 
-<%def name="myLyricsReal()">
+<%def name="LyricsReal()">
 \lyricmode {
 	Tall and tan and young and love -- ly,
 	the Girl From I -- pa -- ne -- ma goes walk -- ing,
@@ -137,7 +137,7 @@
 }
 </%def>
 
-<%def name="myLyricsRealmore()">
+<%def name="LyricsRealmore()">
 \lyricmode {
 	When she walks she's like a Sam -- ba
 	that swings so cool and sways _ so gen -- tle,

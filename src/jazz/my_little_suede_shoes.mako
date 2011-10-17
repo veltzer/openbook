@@ -21,7 +21,7 @@
 	- youtube performances?
 </%doc>
 
-<%def name="myChordsUnknown()">
+<%def name="ChordsUnknown()">
 \chordmode {
 	\startChords
 

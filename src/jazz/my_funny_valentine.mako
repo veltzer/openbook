@@ -25,7 +25,7 @@
 	- mark what has been done with this tune.
 </%doc>
 
-<%def name="myChordsReal()">
+<%def name="ChordsReal()">
 \chordmode {
 	\startChords
 
@@ -84,7 +84,7 @@
 }
 </%def>
 
-<%def name="myLyricsReal()">
+<%def name="LyricsReal()">
 \lyricmode {
 	My Fun -- ny Val -- en -- tine,
 	Sweet com -- ic val -- en -- tine,

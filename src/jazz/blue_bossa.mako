@@ -56,7 +56,7 @@
 }
 </%def>
 
-<%def name="myVoiceReal()">
+<%def name="VoiceReal()">
 \relative c''' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 150
@@ -78,7 +78,7 @@
 }
 </%def>
 
-<%def name="myLyricsReal()">
+<%def name="LyricsReal()">
 %% this version of the lyrics is from the internet adjusted for the real book.
 \lyricmode {
 	A place in -- side my heart
@@ -92,7 +92,7 @@
 }
 </%def>
 
-<%def name="myLyricsRealmore()">
+<%def name="LyricsRealmore()">
 \lyricmode {
 	_ Nights of moon -- lit skies
 	A gen -- tle kiss
@@ -107,7 +107,7 @@
 }
 </%def>
 
-<%def name="myLyricsRealmoremore()">
+<%def name="LyricsRealmoremore()">
 \lyricmode {
 	The thought of how we met
 	Still lin -- gers on

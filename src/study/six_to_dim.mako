@@ -25,7 +25,7 @@
 		at least a couple of kinds of argpegios.
 </%doc>
 
-<%def name="myVoiceMy()">
+<%def name="VoiceMy()">
 \relative c' {
 	\time 4/4
 	\key bes \major

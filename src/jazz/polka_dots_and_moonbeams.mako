@@ -28,7 +28,7 @@
 	- document the youtube performances.
 </%doc>
 
-<%def name="myChordsFake()">
+<%def name="ChordsFake()">
 \chordmode {
 	\startChords
 
@@ -90,7 +90,7 @@
 }
 </%def>
 
-<%def name="myLyricsFake()">
+<%def name="LyricsFake()">
 \lyricmode {
 	%% A part
 	A coun -- try dance was be -- ing held in a gar -- den,

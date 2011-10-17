@@ -157,7 +157,7 @@ endChords={}
 %}
 
 %% this version of the chords is from the real book...
-myChordsReal=\chordmode {
+PartChordsReal=\chordmode {
 	\startChords
 
 	\startSong
@@ -184,7 +184,7 @@ myChordsReal=\chordmode {
 }
 
 %% this version of the tune is from the real book...
-myVoiceReal=\relative c' {
+PartVoiceReal=\relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
@@ -205,7 +205,7 @@ myVoiceReal=\relative c' {
 }
 
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
-myLyricsReal=\lyricmode {
+PartLyricsReal=\lyricmode {
 	A Fog -- gy Day __ in Lon -- don town __ ha -- d me low __ and had me down. __
 	I viewed the morn -- ing with a -- larm, __ the Brit -- ish Mu -- seum had lost its charm. __
 	How long I wondered could this thing last? __ But_the age of mira -- cles had -- n't passed, __
@@ -214,7 +214,7 @@ myLyricsReal=\lyricmode {
 
 
 %% this version of the chords is from the fake book...
-myChords=\chordmode {
+PartChords=\chordmode {
 	\startChords
 
 	\startSong
@@ -253,7 +253,7 @@ myChords=\chordmode {
 }
 
 %% this version of the tune is from the fake book...
-myVoice=\relative c' {
+PartVoice=\relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
@@ -286,7 +286,7 @@ myVoice=\relative c' {
 }
 
 %% this version of the lyrics is from the fake book...
-myLyrics=\lyricmode {
+PartLyrics=\lyricmode {
 	A Fog -- gy Day __ in Lon -- don town __ had me low __ and had me down. __
 	I viewed the morn -- ing with a -- larm, __ the Brit -- ish Mu -- se -- um had lost its charm. __
 	How long I won -- dered could this thing last? __ But the age of mir -- a -- cles had -- n't passed, __
@@ -297,11 +297,11 @@ myLyrics=\lyricmode {
 %% score for printing
 \score {
 	<<
-		\new ChordNames="Chords" \myChords
-		\new Staff="Melody" {
-			\new Voice="myvoice" \myVoice
+		\new ChordNames="chords" \PartChords
+		\new Staff="melody" {
+			\new Voice="voice" \PartVoice
 		}
-		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyrics
+		\new Lyrics="lyrics" \lyricsto "voice" \PartLyrics
 	>>
 	\layout {
 	}
@@ -311,13 +311,13 @@ myLyrics=\lyricmode {
 	\unfoldRepeats
 	<<
 		%% the ="Chords" is the name of the channel that will be in midi
-		\new ChordNames="Chords" \myChords
+		\new ChordNames="chords" \PartChords
 		%% the ="Melody" is the name of the channel that will be in midi
-		\new Staff="Melody" {
-			\new Voice="myvoice" \myVoice
+		\new Staff="melody" {
+			\new Voice="voice" \PartVoice
 		}
 		%% the ="Lyrics" is the name of the channel that will be in midi
-		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyrics
+		\new Lyrics="lyrics" \lyricsto "voice" \PartLyrics
 	>>
 	\midi {
 	}

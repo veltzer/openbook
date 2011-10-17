@@ -22,7 +22,7 @@
 	TODO:
 </%doc>
 
-<%def name="myChordsMy()">
+<%def name="ChordsMy()">
 \chordmode {
 	\startChords
 
@@ -55,7 +55,7 @@
 }
 </%def>
 
-<%def name="myVoiceMy()">
+<%def name="VoiceMy()">
 \relative f, {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130

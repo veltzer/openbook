@@ -70,7 +70,7 @@
 }
 </%def>
 
-<%def name="myVoiceFake()">
+<%def name="VoiceFake()">
 \relative f' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante" 4 = 80
@@ -97,7 +97,7 @@
 }
 </%def>
 
-<%def name="myLyricsFake()">
+<%def name="LyricsFake()">
 \lyricmode {
 	My heart is sad and lone -- ly,
 	for you I sigh, for you, dear, on -- ly,
@@ -119,7 +119,7 @@
 }
 </%def>
 
-<%def name="myLyricsFakemore()">
+<%def name="LyricsFakemore()">
 \lyricmode {
 	I spend my days in long -- ing,
 	and won -- d'ring why it's me you're wrong -- ing,

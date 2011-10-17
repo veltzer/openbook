@@ -25,7 +25,7 @@
 	- adjust the lyrics.
 </%doc>
 
-<%def name="myChordsEpdf0()">
+<%def name="ChordsEpdf0()">
 \chordmode {
 	\startChords
 
@@ -47,7 +47,7 @@
 }
 </%def>
 
-<%def name="myVoiceEpdf0()">
+<%def name="VoiceEpdf0()">
 \relative c'{
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
@@ -66,7 +66,7 @@
 }
 </%def>
 
-<%def name="myLyricsEpdf0()">
+<%def name="LyricsEpdf0()">
 \lyricmode {
 	איך זה ש -- כו -- כב __ א -- חד __ ל -- בד __ מ -- עז. __
 	איך הוא מ -- עז, __ ל -- מ -- ען ה -- שם. __

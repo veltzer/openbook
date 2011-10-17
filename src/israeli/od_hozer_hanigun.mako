@@ -20,7 +20,7 @@
 	- add youtube performance.
 </%doc>
 
-<%def name="myChordsMy()">
+<%def name="ChordsMy()">
 \chordmode {
 	\mark "פתיחה"
 	\repeat volta 4 {

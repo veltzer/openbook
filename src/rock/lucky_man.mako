@@ -43,7 +43,7 @@
 </%doc>
 
 <%def name="Own()">
-myChords=\chordmode {
+PartChords=\chordmode {
 	\startChords
 	\startSong
 
@@ -62,12 +62,12 @@ myChords=\chordmode {
 	\endSong
 	\endChords
 }
-myFrets=\new FretBoards {
-	\myChords
+PartFrets=\new FretBoards {
+	\PartChords
 }
 \score {
 	<<
-		\myFrets
+		\PartFrets
 		\new ChordNames="Chords"
 		%% this adds a bar engraver which does not always come with chords
 		%% I didn'f find a way to put this with the chords themselves...
@@ -75,7 +75,7 @@ myFrets=\new FretBoards {
 			\override BarLine #'bar-size = #4
 			\consists "Bar_engraver"
 		}
-		\myChords
+		\PartChords
 	>>
 	\midi {}
 	\layout {}
