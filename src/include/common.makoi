@@ -130,6 +130,7 @@ startChords=\set chordChanges = ##t
 endChords={}
 %% endif
 
+<%def name="clearVars()">
 <%
 	attributes['copyrightvalstudy']="-- no copyright notice for study materials --"
 	# these are the default values for the variables
@@ -153,8 +154,10 @@ endChords={}
 	attributes['extra']=False
 	attributes['definitions']=False
 %>
+</%def>
 %% this causes the variables to be defined...
-${self.body()}
+${self.clearVars()}
+${self.vars()}
 
 % if attributes['guitar']:
 \include "predefined-guitar-fretboards.ly"

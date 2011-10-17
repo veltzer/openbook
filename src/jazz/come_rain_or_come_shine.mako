@@ -1,4 +1,5 @@
 <%inherit file="/src/include/common.makoi"/>
+<%def name="vars()">
 <%
 	attributes['jazzTune']=True
 	attributes['type']="harmony_tune_lyrics"
@@ -18,6 +19,7 @@
 
 	attributes['remark']="the my set of chords is from Amit Golan"
 %>
+</%def>
 
 <%doc>
 	DONE:

@@ -1,4 +1,5 @@
 <%inherit file="/src/include/common.makoi"/>
+<%def name="vars()">
 <%
 	attributes['jazzTune']=True
 	attributes['render']="Unknown"
@@ -13,6 +14,7 @@
 	attributes['completion']="0"
 	attributes['uuid']="f4f39800-a26e-11df-b97a-0019d11e5a41"
 %>
+</%def>
 
 <%def name="myVoiceUnknown()">
 \relative d' {

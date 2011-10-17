@@ -1,4 +1,5 @@
 <%inherit file="/src/include/common.makoi"/>
+<%def name="vars()">
 <%
 	attributes['jazzTune']=True
 	attributes['type']="harmony_tune_lyricsmore"
@@ -24,6 +25,7 @@
 	attributes['idyoutube']="rMd9oZ4O0bs"
 	attributes['lyricsurl']="http://www.azlyrics.com/lyrics/dianakrall/bodyandsoul.html"
 %>
+</%def>
 
 <%doc>
 	DONE:

@@ -8,10 +8,13 @@ Here are some policy descision:
 	- we would like to minimum infomation that pertains to the tune to be in the tune
 	file. All the rest should be handled by the framework.
 	Currently we are using pythons Mako.
-- until a configuration database is ready we are using lilypond includes to share data
-	and to make it easy to change.
+- we are not using lilypond includes but rather the preprocessing system for includes because:
+	- we may want to control from the outside what is included and what is not.
+	- we would like to produce, for each tune, a single lilypond file that can be used
+	by an outsider to edit and produce a different output.
 - all includes are root relative.
-	( \include "src/include/common.lyi" )
+	- that way there is no ambiguity.
+	- that way we can easily, on the command line, do tests.
 - "make check_all" should pass with no error. This is currently not part of the build and needs
 	to be checked manually but hopefully in the future it will be.
 

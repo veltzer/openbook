@@ -1,4 +1,5 @@
 #!/usr/bin/python
+#!/usr/bin/python3
 
 import sys
 import mako.template
@@ -21,6 +22,12 @@ except:
 mylookup = mako.lookup.TemplateLookup(directories=['.'],input_encoding=input_encoding,output_encoding=output_encoding)
 template=mako.template.Template(filename=p_input,lookup=mylookup,output_encoding=output_encoding,input_encoding=input_encoding)
 file=open(p_output,'w')
+# python 3
+#file.write((template.render_unicode(attributes={})))
+# python 2
 file.write(template.render(attributes={}))
 file.close()
+# python 3
+#os.chmod(p_output,0o0444)
+# python 2
 os.chmod(p_output,0444)

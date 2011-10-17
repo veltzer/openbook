@@ -1,4 +1,5 @@
 <%inherit file="/src/include/common.makoi"/>
+<%def name="vars()">
 <%
 	attributes['jazzTune']=True
 	attributes['guitar']=True
@@ -17,6 +18,7 @@
 	attributes['idyoutube']="SKYWOwWAguk"
 	attributes['lyricsurl']="http://www.lyrics007.com/Tracy%20Chapman%20Lyrics/Talkin'%20Bout%20A%20Revolution%20Lyrics.html"
 %>
+</%def>
 
 <%doc>
 	DONE:

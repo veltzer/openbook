@@ -1,4 +1,5 @@
 <%inherit file="/src/include/common.makoi"/>
+<%def name="vars()">
 <%
 	attributes['jazzTune']=True
 	attributes['type']="harmony_tune"
@@ -13,6 +14,7 @@
 	attributes['completion']="0"
 	attributes['uuid']="1c99c334-a26f-11df-b3cb-0019d11e5a41"
 %>
+</%def>
 
 <%def name="myChordsUnknown()">
 \chordmode {

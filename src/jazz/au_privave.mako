@@ -1,4 +1,5 @@
 <%inherit file="/src/include/common.makoi"/>
+<%def name="vars()">
 <%
 	attributes['jazzTune']=True
 	attributes['type']="harmony_tune"
@@ -21,6 +22,7 @@
 
 	attributes['remark']="Taken from the Charlie Parker Omnibook by Jamey Aebersold, moved to scale f major which is better for this tune. Why the hell did aebersold put it in C?"
 %>
+</%def>
 
 <%doc>
 	DONE:

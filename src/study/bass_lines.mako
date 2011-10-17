@@ -1,4 +1,5 @@
 <%inherit file="/src/include/common.makoi"/>
+<%def name="vars()">
 <%
 	attributes['jazzTune']=True
 	attributes['type']="own"
@@ -13,6 +14,7 @@
 
 	attributes['uuid']="805e8a3a-a26f-11df-aa51-0019d11e5a41"
 %>
+</%def>
 
 <%doc>
 	DONE:

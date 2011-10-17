@@ -1,4 +1,5 @@
 <%inherit file="/src/include/common.makoi"/>
+<%def name="vars()">
 <%
 	attributes['jazzTune']=True
 	attributes['render']="Fake"
@@ -24,6 +25,7 @@
 
 	attributes['lyricsurl']="http://www.lyricsfreak.com/b/billie+holiday/darn+that+dream_20018018.html"
 %>
+</%def>
 
 <%doc>
 	DONE:
