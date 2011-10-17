@@ -1,7 +1,6 @@
 <%def name="vars()">
 <%
-	attributes['jazzTune']=True
-	attributes['type']="own"
+	attributes['doOwn']=True
 
 	attributes['title']="Drumming rock drills"
 	attributes['style']="Jazz"
@@ -18,7 +17,7 @@
 	TODO:
 </%doc>
 
-<%def name="myOwn()">
+<%def name="Own()">
 \markup {
 Regular rock type drumming...
 }

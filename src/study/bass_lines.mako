@@ -1,7 +1,6 @@
 <%def name="vars()">
 <%
-	attributes['jazzTune']=True
-	attributes['type']="own"
+	attributes['doOwn']=True
 
 	attributes['title']="Bass Lines"
 	attributes['style']="Jazz"
@@ -25,7 +24,7 @@
 	- add turn around bass lines for harmony: Cmaj7,A7,Dm7,G7
 </%doc>
 
-<%def name="myOwn()">
+<%def name="Own()">
 \score {
 <<
 \chordmode {

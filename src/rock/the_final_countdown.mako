@@ -1,9 +1,7 @@
 <%def name="vars()">
 <%
-	attributes['jazzTune']=True
-	attributes['guitar']=True
-	attributes['type']="own"
-	attributes['render']="Own"
+	attributes['doGuitar']=True
+	attributes['doOwn']=True
 
 	attributes['title']="The Final Countdown"
 	attributes['composer']="Europe"
@@ -27,7 +25,7 @@
 	- some of the frets are way off (e/gis is hilarious!)
 </%doc>
 
-<%def name="myOwn()">
+<%def name="Own()">
 myChords=\chordmode {
 	\mark "opening"
 	%% the remarked part is from the song but it is repeated so I just

@@ -1,9 +1,7 @@
 <%def name="vars()">
 <%
-	attributes['jazzTune']=True
-	attributes['type']="own"
-	attributes['render']="Own"
-	attributes['guitar']=True
+	attributes['doOwn']=True
+	attributes['doGuitar']=True
 
 	attributes['title']="Ain't No Sunshine"
 	attributes['composer']="Bill Withers"
@@ -21,7 +19,7 @@
 	- finish the tune and the chords...
 </%doc>
 
-<%def name="myOwn()">
+<%def name="Own()">
 \score {
 <<
 \chordmode {

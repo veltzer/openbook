@@ -1,6 +1,5 @@
 <%def name="vars()">
 <%
-	attributes['jazzTune']=True
 	attributes['type']="harmony_tune"
 	attributes['render']="Unknown"
 

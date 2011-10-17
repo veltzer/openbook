@@ -1,7 +1,6 @@
 <%def name="vars()">
 <%
-	attributes['jazzTune']=True
-	attributes['type']="own"
+	attributes['doOwn']=True
 
 	attributes['title']="Drumming drills with no bar lines"
 	attributes['style']="Jazz"
@@ -18,7 +17,7 @@
 	TODO:
 </%doc>
 
-<%def name="myOwn()">
+<%def name="Own()">
 \markuplines {
 	\wordwrap-lines { \italic {
 	These are exercises to train the control of your hands. The idea is to train your hand for flexibility and agility.

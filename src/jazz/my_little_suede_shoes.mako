@@ -1,9 +1,8 @@
 <%def name="vars()">
 <%
-	attributes['jazzTune']=True
 	attributes['type']="harmony_tune"
 	attributes['render']="Unknown"
-	attributes['definitions']=True
+	attributes['doPrep']=True
 
 	attributes['title']="My Little Suede Shoes"
 	attributes['composer']="Charlie Parker"
@@ -54,7 +53,7 @@
 }
 </%def>
 
-<%def name="definitions()">
+<%def name="prep()">
 A=\relative c' { bes8 ees g | f f f f ees f r g | }
 B=\relative c' { bes8 ees g | f f f f ees f r ees | }
 </%def>

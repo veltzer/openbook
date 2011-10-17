@@ -1,8 +1,6 @@
 <%def name="vars()">
 <%
-	attributes['jazzTune']=True
-	attributes['type']="own"
-	attributes['render']="Own"
+	attributes['doOwn']=True
 
 	attributes['title']="Memory"
 	attributes['composer']="Andrew Lloyd Webber"
@@ -36,7 +34,7 @@
 		- add a macro that says "Music by" and then the composer and the same for the lyrics to be preceeded by "Text by".
 </%doc>
 
-<%def name="myOwn()">
+<%def name="Own()">
 myChords=\chordmode {
 	\startChords
 

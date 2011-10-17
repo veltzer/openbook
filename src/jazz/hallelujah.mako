@@ -1,9 +1,8 @@
 <%def name="vars()">
 <%
-	attributes['jazzTune']=True
 	attributes['type']="harmony_tune_lyrics"
 	attributes['render']="Unknown"
-	attributes['definitions']=True
+	attributes['doPrep']=True
 
 	attributes['title']="Hallelujah I Love Him(her) So"
 	attributes['composer']="Ray Charles"
@@ -34,7 +33,7 @@
 }
 </%def>
 
-<%def name="definitions()">
+<%def name="prep()">
 phraseA={ r4 d'8. c'16 aes8. g16 f8. d16 }
 phraseB={ r8. c'16 d'8. c'16 aes8. g16 f8. d16 }
 </%def>

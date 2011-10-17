@@ -1,7 +1,6 @@
 <%def name="vars()">
 <%
-	attributes['jazzTune']=True
-	attributes['type']="own"
+	attributes['doOwn']=True
 
 	attributes['title']="Drumming paradiddles"
 	attributes['style']="Jazz"
@@ -22,7 +21,7 @@
 	- get more examples from wikipedia coded here.
 </%doc>
 
-<%def name="myOwn()">
+<%def name="Own()">
 \markuplines {
 	\wordwrap-lines { \italic {
 	This is some text about paradiddles...

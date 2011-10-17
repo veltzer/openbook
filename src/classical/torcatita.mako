@@ -1,8 +1,6 @@
 <%def name="vars()">
 <%
-	attributes['jazzTune']=True
-	attributes['type']="own"
-	attributes['render']="Own"
+	attributes['doOwn']=True
 
 	attributes['title']="Torcacita"
 	attributes['subtitle']="South American tune"
@@ -27,7 +25,7 @@
 	- document the youtube performances.
 </%doc>
 
-<%def name="myOwn()">
+<%def name="Own()">
 myChords=\chordmode {
 	\startChords
 

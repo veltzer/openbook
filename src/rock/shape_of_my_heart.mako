@@ -1,10 +1,9 @@
 <%def name="vars()">
 <%
-	attributes['jazzTune']=True
-	attributes['guitar']=True
-	attributes['type']='harmony'
+	attributes['doGuitar']=True
+	attributes['doChords']=True
 	attributes['render']='My'
-	attributes['extra']=True
+	attributes['doExtra']=True
 
 	attributes['title']="Shape of My Heart"
 	attributes['singer']="Sting"
