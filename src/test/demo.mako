@@ -38,7 +38,7 @@
 		sn4 r4
 }
 \new RhythmicStaff {
-	\new Voice = "myRhythm" {
+	\new Voice = "PartRhythm" {
 	\time 4/4
 		c4 e8 f g2
 		r4 g g f
