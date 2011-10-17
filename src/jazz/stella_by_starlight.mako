@@ -2,9 +2,9 @@
 % if part=='Vars':
 <%
 	attributes['render']="Real"
-					attributes['doChords']=True
-					attributes['doVoice']=True
-					attributes['doLyrics']=True
+	attributes['doChords']=True
+	attributes['doVoice']=True
+	attributes['doLyrics']=True
 
 	attributes['title']="Stella By Starlight"
 	attributes['composer']="Victor Young"

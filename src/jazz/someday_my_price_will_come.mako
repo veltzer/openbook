@@ -1,12 +1,12 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-					attributes['doChords']=True
-					attributes['doVoice']=True
-					attributes['doLyrics']=True
-					attributes['doLyricsmore']=True
+	attributes['doChords']=True
+	attributes['doVoice']=True
+	attributes['doLyrics']=True
+	attributes['doLyricsmore']=True
 	attributes['render']="Real"
-						attributes['doExtra']=True
+	attributes['doExtra']=True
 
 	attributes['title']="Someday My Prince Will Come"
 	attributes['composer']="Frank Churchill & Larry Morey"

@@ -1,10 +1,10 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-					attributes['doChords']=True
-					attributes['doVoice']=True
-					attributes['doLyrics']=True
-					attributes['doLyricsmore']=True
+	attributes['doChords']=True
+	attributes['doVoice']=True
+	attributes['doLyrics']=True
+	attributes['doLyricsmore']=True
 	attributes['render']="Ultimate"
 
 	attributes['title']="They All Laughed"

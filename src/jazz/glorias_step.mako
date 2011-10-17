@@ -2,8 +2,8 @@
 % if part=='Vars':
 <%
 	attributes['render']="Real"
-						attributes['doChords']=True
-						attributes['doVoice']=True
+	attributes['doChords']=True
+	attributes['doVoice']=True
 
 	attributes['title']="Gloria's Step"
 	attributes['composer']="Scott LaFaro"

@@ -252,17 +252,17 @@ Lyricsmoremore=<%include file="/${attributes['blocks']}" args="part=Lyricsmoremo
 % endif
 % if attributes['doVoice']:
 \new Staff="Melody" {
-\new Voice="voice" \Voice
+\new Voice="Voice" \Voice
 }
 % endif
 % if attributes['doLyrics']:
-\new Lyrics="Lyrics" \lyricsto "voice" \Lyrics
+\new Lyrics="Lyrics" \lyricsto "Voice" \Lyrics
 % endif
 % if attributes['doLyricsmore']:
-\new Lyrics="Lyrics" \lyricsto "voice" \Lyricsmore
+\new Lyrics="Lyrics" \lyricsto "Voice" \Lyricsmore
 % endif
 % if attributes['doLyricsmoremore']:
-\new Lyrics="Lyrics" \lyricsto "voice" \Lyricsmoremore
+\new Lyrics="Lyrics" \lyricsto "Voice" \Lyricsmoremore
 % endif
 </%def>
 

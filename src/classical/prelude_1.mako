@@ -1,7 +1,7 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-						attributes['doOwn']=True
+	attributes['doOwn']=True
 
 	attributes['title']="Prelude and Fugue No. 1 in C major"
 	attributes['subtitle']="Well-Tempered Clavier, Book 1"
