@@ -5,6 +5,7 @@
 	attributes['doChords']=True
 	attributes['render']="My"
 	attributes['doExtra']=True
+	attributes['heb']=True
 
 	attributes['title']=u"לא יכולתי לעשות כלום"
 	attributes['composer']=u"אילן וירצברג"

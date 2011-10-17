@@ -3,6 +3,7 @@
 <%
 	attributes['doChords']=True
 	attributes['render']="My"
+	attributes['heb']=True
 
 	attributes['title']=u"עוד חוזר הניגון"
 	attributes['singer']=u"ברי סחרוף"

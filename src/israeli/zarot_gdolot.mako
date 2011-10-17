@@ -5,6 +5,7 @@
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
 	attributes['render']="My"
+	attributes['heb']=True
 
 	attributes['title']=u"צרות טובות"
 	attributes['composer']=u"שלום חנוך"

@@ -5,6 +5,7 @@
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
 	attributes['render']="My"
+	attributes['heb']=True
 
 	attributes['title']=u"אלוהים שלי"
 	attributes['composer']=u"עוזי חיטמן"

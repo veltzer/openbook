@@ -5,6 +5,7 @@
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
 	attributes['render']="My"
+	attributes['heb']=True
 
 	attributes['title']=u"בשדה ירוק"
 	attributes['composer']=u"דני סנדרסון"
