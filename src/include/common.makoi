@@ -147,17 +147,18 @@ endChords={}
 	attributes['completion']=""
 	attributes['uuid']=""
 	attributes['idyoutube']=""
-	attributes['type']=""
-	attributes['render']=""
-	attributes['guitar']=False
-	attributes['extra']=False
-	attributes['definitions']=False
+
+	attributes['doGuitar']=False
+	attributes['doExtra']=False
+	attributes['doPrep']=False
+	attributes['doOwn']=False
 	
 	attributes['doChords']=False
 	attributes['doVoice']=False
 	attributes['doLyrics']=False
 	attributes['doLyricsmore']=False
 	attributes['doLyricsmoremore']=False
+	attributes['render']=""
 %>
 </%def>
 
@@ -174,10 +175,10 @@ ${self.defs()}
 
 %% this causes the variables to be defined...
 ${self.clearVars()}
-<%include file="/${attributes['blocks']}" args="part='vars'"/>
+<%include file="/${attributes['blocks']}" args="part='Vars'"/>
 
 <%doc>
-% if attributes['guitar']:
+% if attributes['doGuitar']:
 \include "predefined-guitar-fretboards.ly"
 % endif
 </%doc>
@@ -211,6 +212,8 @@ ${self.clearVars()}
 
 	lyricsurl="${attributes['lyricsurl']}"
 }
+
+% if not attributes['doOwn']:
 
 % if attributes['doPrep']:
 ${song.prep()}
@@ -295,9 +298,11 @@ Lyricsmoremore=<%include file="/${attributes['blocks']}" args="part=Lyricsmoremo
 ##}
 ##% endif
 
+% endif
+
 % if attributes['doOwn']:
-${song.Own()}
+<%include file="/${attributes['blocks']}" args="part='Own'"/>
 % endif
 % if attributes['doExtra']:
-${song.extra()}
+<%include file="/${attributes['blocks']}" args="part='Extra'"/>
 % endif

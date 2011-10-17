@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doOwn']=True
 
@@ -13,9 +14,9 @@
 	attributes['completion']="1"
 	attributes['uuid']="cc3c46c7-908d-4b3e-b90f-1e01a942ef27"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	NOTES:
 		- this tune is an example of how to create different outputs for midi and
 		printing. This is required here since I want the chord names to appear in the
@@ -32,9 +33,9 @@
 			(how do I do this in lilypond ?).
 		- too much space between the systems on the page.
 		- add a macro that says "Music by" and then the composer and the same for the lyrics to be preceeded by "Text by".
-</%doc>
+% endif
 
-<%def name="Own()">
+% if part=='Own':
 myChords=\chordmode {
 	\startChords
 
@@ -247,4 +248,4 @@ myLyrics=\lyricmode {
 	\midi {
 	}
 }
-</%def>
+% endif
