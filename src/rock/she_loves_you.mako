@@ -1,9 +1,9 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-						attributes['doChords']=True
-						attributes['doVoice']=True
-						attributes['doLyrics']=True
+	attributes['doChords']=True
+	attributes['doVoice']=True
+	attributes['doLyrics']=True
 	attributes['render']="Epdf0"
 
 	attributes['title']="She Loves You"

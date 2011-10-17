@@ -1,11 +1,11 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-				attributes['doChords']=True
-				attributes['doVoice']=True
-				attributes['doLyrics']=True
-				attributes['doLyricsmore']=True
-				attributes['doLyricsmoremore']=True
+	attributes['doChords']=True
+	attributes['doVoice']=True
+	attributes['doLyrics']=True
+	attributes['doLyricsmore']=True
+	attributes['doLyricsmoremore']=True
 	attributes['render']="Real"
 
 	attributes['title']="Blue Bossa"

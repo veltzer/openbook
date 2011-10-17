@@ -1,11 +1,11 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-					attributes['doChords']=True
-					attributes['doVoice']=True
-					attributes['doLyrics']=True
+	attributes['doChords']=True
+	attributes['doVoice']=True
+	attributes['doLyrics']=True
 	attributes['render']="Unknown"
-						attributes['doPrep']=True
+	attributes['doPrep']=True
 
 	attributes['title']="Hallelujah I Love Him(her) So"
 	attributes['composer']="Ray Charles"

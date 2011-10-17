@@ -25,14 +25,11 @@ open(FILE,'> '.$outfile) || die('unable to open output file for writing');
 my($line);
 while($line=<IN>) {
 	chop($line);
-	if($line=~/attributes\[\'do/) {
-		$line="\t".$line;
+	if($line=~/^\t+attributes\[\'do/) {
+		my($content)=($line=~/^\t+(.*)$/);
+		$line="\t".$content;
 	}
-	if($line eq "\tattributes['type']=\"tune\"") {
-		print FILE "\tattributes['doVoice']=True"."\n";
-	} else {
-		print FILE $line."\n";
-	}
+	print FILE $line."\n";
 }
 close(IN) || die('unable to close input file');
 close(FILE) || die('unable to close output file');

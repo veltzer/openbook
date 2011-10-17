@@ -1,8 +1,8 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-			attributes['doChords']=True
-			attributes['doVoice']=True
+	attributes['doChords']=True
+	attributes['doVoice']=True
 	attributes['render']="Unknown"
 
 	attributes['title']="Lullaby of birdland"

@@ -1,7 +1,7 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-						attributes['doVoice']=True
+	attributes['doVoice']=True
 	attributes['render']="My"
 
 	attributes['title']="Jazz chords on the major scale"
