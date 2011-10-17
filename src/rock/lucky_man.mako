@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doGuitar']=True
 	attributes['doOwn']=True
@@ -17,9 +18,9 @@
 	attributes['idyoutube']="5x6uQ6yZsOY"
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Lucky-Man-lyrics-Emerson-Lake-Palmer/13302F99F6B11DEC48256AB8002432F8"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	remarks:
 	\key d \major
 	Some people play "a | g | d | d |" at the chorus but this is wrong if you bother
@@ -40,9 +41,9 @@
 
 	DONE:
 	TODO:
-</%doc>
+% endif
 
-<%def name="Own()">
+% if part=='Own':
 PartChords=\chordmode {
 	\startChords
 	\startSong
@@ -125,4 +126,4 @@ PartFrets=\new FretBoards {
 		}
 	}
 }
-</%def>
+% endif

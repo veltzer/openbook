@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune"
 	attributes['render']="Unknown"
@@ -11,17 +12,17 @@
 	attributes['completion']="0"
 	attributes['uuid']="efea8972-a26e-11df-af8e-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- where is this from?
 	- mark whats been done for this tune
 	- add chords and music.
-</%doc>
+% endif
 
-<%def name="ChordsUnknown()">
+% if part=='ChordsUnknown':
 \chordmode {
 	\startChords
 
@@ -29,9 +30,9 @@
 	\endSong
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceUnknown()">
+% if part=='VoiceUnknown':
 \relative c'' {
 	\key c \major
 	\time 4/4
@@ -50,4 +51,4 @@
 	e2. d8 b ) | c2 r8 d ( e f | g4. g8 gis f b gis ) | a2 r8 e ( a b ) |
 	c2 r8 d, ( g a ) | bes2 r8 a, ( c d | e a, c d ees4 b ) | c1 |
 }
-</%def>
+% endif

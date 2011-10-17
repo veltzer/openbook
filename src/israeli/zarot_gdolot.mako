@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyrics"
 	attributes['render']="My"
@@ -12,16 +13,16 @@
 	attributes['completion']="0"
 	attributes['uuid']="5a9b270e-a26f-11df-a792-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- add you tube performances.
 	- document what has been done to this tune.
-</%doc>
+% endif
 
-<%def name="ChordsMy()">
+% if part=='ChordsMy':
 \chordmode {
 	\startChords
 
@@ -44,15 +45,15 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceMy()">
+% if part=='VoiceMy':
 \relative c {
 	a b c d e f
 }
-</%def>
+% endif
 
-<%def name="LyricsMy()">
+% if part=='LyricsMy':
 \lyricmode {
 	בעירי היו שתי עלמות
 	שתי עלמות יפות ותאומות.
@@ -87,4 +88,4 @@
 	שתיים הן ולא יודעות
 	זו על זו וזו על זו..
 }
-</%def>
+% endif

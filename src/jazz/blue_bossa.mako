@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyricsmoremore"
 	attributes['render']="Real"
@@ -23,17 +24,17 @@
 	attributes['idyoutube']="lKEEVECH58Q"
 	attributes['lyricsurl']="http://fyicomminc.bizland.com/music/lyrics/bluebossa.htm"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- get another version in here.
 	- mark what's been done to this tune.
 	- document the youtube performances.
-</%doc>
+% endif
 
-<%def name="ChordsReal()">
+% if part=='ChordsReal':
 \chordmode {
 	\startChords
 
@@ -54,9 +55,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceReal()">
+% if part=='VoiceReal':
 \relative c''' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 150
@@ -76,9 +77,9 @@
 
 	}
 }
-</%def>
+% endif
 
-<%def name="LyricsReal()">
+% if part=='LyricsReal':
 %% this version of the lyrics is from the internet adjusted for the real book.
 \lyricmode {
 	A place in -- side my heart
@@ -90,9 +91,9 @@
 	And you are in my arms
 	The_blue -- ness of the_true -- ness of our love
 }
-</%def>
+% endif
 
-<%def name="LyricsRealmore()">
+% if part=='LyricsRealmore':
 \lyricmode {
 	_ Nights of moon -- lit skies
 	A gen -- tle kiss
@@ -105,9 +106,9 @@
 
 	The
 }
-</%def>
+% endif
 
-<%def name="LyricsRealmoremore()">
+% if part=='LyricsRealmoremore':
 \lyricmode {
 	The thought of how we met
 	Still lin -- gers on
@@ -118,4 +119,4 @@
 	The fi -- re in your touch
 	The_blue -- ness of the_true -- ness of our love
 }
-</%def>
+% endif

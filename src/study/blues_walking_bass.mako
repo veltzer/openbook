@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune"
 	attributes['render']="My"
@@ -15,14 +16,14 @@
 
 	attributes['remark']="Taken from Ofer Portugali's exercises at Rimon"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
-</%doc>
+% endif
 
-<%def name="ChordsMy()">
+% if part=='ChordsMy':
 \chordmode {
 	\startChords
 
@@ -53,9 +54,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceMy()">
+% if part=='VoiceMy':
 \relative f, {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
@@ -75,4 +76,4 @@
 	bes, f c' f | bes,8 f'-> b,4 c bes | a bes a g | fis a d8 a fis4 |
 	g8 g-> a4 bes b | c d dis e8 f-> | r a,4.-> d4 c | b g c8 e,4.-> |
 }
-</%def>
+% endif

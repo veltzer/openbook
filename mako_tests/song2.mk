@@ -1,7 +1,7 @@
 <%def name="foo()">
 This is the content of foo in song2
 </%def>
-<%def name="vars()">
+<%def name="Vars()">
 	<%
 		attributes['g']="song2 value"
 	%>
@@ -14,7 +14,7 @@ This is the content of foo in song2
 	This is the second part of song1
 % endif
 % if part=='Vars':
-	${self.vars()}
+	${self.Vars()}
 % endif
 % if part=='foo':
 	${self.foo()}

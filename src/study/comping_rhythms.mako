@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doOwn']=True
 
@@ -11,14 +12,14 @@
 
 	attributes['uuid']="897e4006-a26f-11df-b4da-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
-</%doc>
+% endif
 
-<%def name="Own()">
+% if part=='Own':
 \markup {
 Standard Jazz comping pattern...
 }
@@ -159,4 +160,4 @@ Triplet based combinations...
 	}
 	\layout {}
 }
-</%def>
+% endif

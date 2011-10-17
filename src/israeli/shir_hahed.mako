@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyrics"
 	attributes['render']="My"
@@ -15,9 +16,9 @@
 
 	attributes['uuid']="56513346-a26f-11df-b591-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 		- after the first verse there is a transposition of 1.5 steps up
@@ -25,9 +26,9 @@
 		going to...).
 		- finish the tune.
 		- align all the lyrics.
-</%doc>
+% endif
 
-<%def name="ChordsMy()">
+% if part=='ChordsMy':
 \chordmode {
 	\startChords
 
@@ -49,9 +50,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceMy()">
+% if part=='VoiceMy':
 \relative f' {
 	\time 6/8
 	\key e \major
@@ -64,9 +65,9 @@
 
 	b8 e b e4. ~ | e8 fis gis fis e cis | cis2. ~ | cis2. |
 }
-</%def>
+% endif
 
-<%def name="LyricsMy()">
+% if part=='LyricsMy':
 \lyricmode {
 	_ _ _ _ _ _ _ _ _ _ _
 	_ _ _ _ _ _ _ _ _ _ _
@@ -100,4 +101,4 @@
 	והד לי עונה מפסגת הר סיני:
 	"הו מה רחוק, רחוק, רחוק, רחוק!"
 }
-</%def>
+% endif

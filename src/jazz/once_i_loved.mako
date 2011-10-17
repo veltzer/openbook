@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyricsmore"
 	attributes['render']="Real"
@@ -22,9 +23,9 @@
 
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Once-I-Loved-lyrics-Ella-Fitzgerald/24CD6F6E245519E348256AAB0009C557"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	- added the chords.
 	- added the melody.
@@ -46,9 +47,9 @@
 		(not flat nor sharp) because it is confusing. It is so in the real book. How do I
 		do that?
 	- add the version from the new real book.
-</%doc>
+% endif
 
-<%def name="ChordsReal()">
+% if part=='ChordsReal':
 \chordmode {
 	\startChords
 
@@ -79,9 +80,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceReal()">
+% if part=='VoiceReal':
 \relative d'' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 144
@@ -107,9 +108,9 @@
 	f2~ f8 f4 cis8 | e4. d8 d2~ | d1 |
 
 }
-</%def>
+% endif
 
-<%def name="LyricsReal()">
+% if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 	Once __ __ I loved, __ __
@@ -120,9 +121,9 @@
 	at the thought I was fool -- ish and proud
 	and let you say good -- bye. __
 }
-</%def>
+% endif
 
-<%def name="LyricsRealmore()">
+% if part=='LyricsRealmore':
 \lyricmode {
 	Then __ __ one day, __ __
 	From my in -- fi -- nite sad -- ness you came
@@ -138,4 +139,4 @@
 	Be -- cause love is the __ sad -- dest thing __
 	when it goes a -- way, __
 }
-</%def>
+% endif

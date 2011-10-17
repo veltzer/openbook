@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyricsmore"
 	attributes['render']="Fake"
@@ -17,16 +18,16 @@
 	attributes['idyoutube']="ytipqjANlrY"
 	attributes['idyoutube']="cKbD4PQBrIA"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- fill in whats been done for this tune.
 	- fill in data about the you tube performances.
-</%doc>
+% endif
 
-<%def name="ChordsFake()">
+% if part=='ChordsFake':
 \chordmode {
 	\startChords
 
@@ -53,9 +54,9 @@
 		}
 	}
 }
-</%def>
+% endif
 
-<%def name="VoiceFake()">
+% if part=='VoiceFake':
 \relative c' {
 	\key c \major
 	\time 4/4
@@ -81,9 +82,9 @@
 		}
 	}
 }
-</%def>
+% endif
 
-<%def name="LyricsFake()">
+% if part=='LyricsFake':
 \lyricmode {
 	A Fine Ro -- mance with no kis -- es!
 	A Fine Ro -- mance, my friend, this is!
@@ -95,9 +96,9 @@
 	I might as well play bridge with my old maid aunts!
 	I have -- n't got a chance. This is A Fine Ro -- mance. A
 }
-</%def>
+% endif
 
-<%def name="LyricsFakemore()">
+% if part=='LyricsFakemore':
 \lyricmode {
 	_ Fine Ro -- mance my good fel -- low!
 	You take ro -- mance, I'll take jel -- lo!
@@ -109,9 +110,9 @@
 	I've nev -- er mussed the crease in your blue serge pants!
 	I nev -- er get the chance. This is A Fine Ro -- _ _ mance. __
 }
-</%def>
+% endif
 
-<%def name="ChordsReal()">
+% if part=='ChordsReal':
 \chordmode {
 	\startChords
 
@@ -137,9 +138,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceReal()">
+% if part=='VoiceReal':
 \relative c' {
 	\key c \major
 	\time 4/4
@@ -161,9 +162,9 @@
 		}
 	}
 }
-</%def>
+% endif
 
-<%def name="LyricsReal()">
+% if part=='LyricsReal':
 %% lyrics taken from the fake book and adjusted for the real book
 \lyricmode {
 	A Fine Ro -- mance with no kis -- es!
@@ -178,12 +179,12 @@
 
 	A
 }
-</%def>
+% endif
 
-<%def name="LyricsRealmore()">
+% if part=='LyricsRealmore':
 \lyricmode {
 	_ Fine Ro -- mance, you won't nest -- le.
 	A Fine Ro -- mance, you won't wrest -- le!
 	I
 }
-</%def>
+% endif

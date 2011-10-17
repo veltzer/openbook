@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune"
 	attributes['render']="Aebersold"
@@ -20,16 +21,16 @@
 
 	attributes['remark']="Taken from the Charlie Parker Omnibook by Jamey Aebersold, moved to scale f major which is better for this tune. Why the hell did aebersold put it in C?"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- mark whats been done to this tune.
 	- document the you tube performances.
-</%doc>
+% endif
 
-<%def name="ChordsAebersold()">
+% if part=='ChordsAebersold':
 \chordmode {
 	\startChords
 
@@ -75,9 +76,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceAebersold()">
+% if part=='VoiceAebersold':
 \relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Prestissimo" 4 = 220
@@ -113,4 +114,4 @@
 	%% ending
 	g8 f g2. |
 }
-</%def>
+% endif

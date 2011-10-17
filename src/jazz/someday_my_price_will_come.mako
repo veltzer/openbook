@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyricsmore"
 	attributes['render']="Real"
@@ -22,9 +23,9 @@
 	attributes['structure']="AB"
 	attributes['lyricsurl']="http://artists.letssingit.com/disney-lyrics-someday-my-prince-will-come-31rjgwv"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	for the real book version:
 	- made sure it sounds fine.
@@ -36,9 +37,9 @@
 	- add copyright notice.
 	- add a fakebook version (is there one?)
 	- fixup names of composers and poets (I'm not sure they are right)
-</%doc>
+% endif
 
-<%def name="ChordsReal()">
+% if part=='ChordsReal':
 \chordmode {
 	\startChords
 
@@ -62,9 +63,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceReal()">
+% if part=='VoiceReal':
 \relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
@@ -85,9 +86,9 @@
 		}
 	}
 }
-</%def>
+% endif
 
-<%def name="LyricsReal()">
+% if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 	Some -- day my prince will come
@@ -95,9 +96,9 @@
 	And how thrilling that moment will be
 	When the prince of my dreams_comes to me
 }
-</%def>
+% endif
 
-<%def name="LyricsRealmore()">
+% if part=='LyricsRealmore':
 \lyricmode {
 	He'll whis -- per I love you
 	And steal a kiss or two
@@ -106,9 +107,9 @@
 	far _ a -- way I'll find my love_some -- day
 	Some -- day_when my dreams come true
 }
-</%def>
+% endif
 
-<%def name="Extra()">
+% if part=='Extra':
 %% More lyrics
 \verticalSpace
 \verticalSpace
@@ -141,4 +142,4 @@
 		}
 	}
 }
-</%def>
+% endif

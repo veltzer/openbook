@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doOwn']=True
 	attributes['doGuitar']=True
@@ -11,15 +12,15 @@
 	attributes['completion']="0"
 	attributes['uuid']="669540fe-d851-11df-ae78-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- finish the tune and the chords...
-</%doc>
+% endif
 
-<%def name="Own()">
+% if part=='Own':
 \score {
 <<
 \chordmode {
@@ -76,4 +77,4 @@
 	}
 	\layout {}
 }
-</%def>
+% endif

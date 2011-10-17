@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doGuitar']=True
 	attributes['doOwn']=True
@@ -17,15 +18,15 @@
 	attributes['idyoutube']="9jK-NcRmVcw"
 	attributes['lyricsurl']="http://www.elyrics.net/read/e/europe-lyrics/the-final-countdown-lyrics.html"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- some of the frets are way off (e/gis is hilarious!)
-</%doc>
+% endif
 
-<%def name="Own()">
+% if part=='Own':
 PartChords=\chordmode {
 	\mark "opening"
 	%% the remarked part is from the song but it is repeated so I just
@@ -135,4 +136,4 @@ PartFrets=\new FretBoards {
 		}
 	}
 }
-</%def>
+% endif

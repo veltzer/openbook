@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune"
 	attributes['render']="Real"
@@ -14,18 +15,18 @@
 
 	attributes['idyoutube']="ZcPxCQhJ2n4"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- document what has been done to this tune.
 	- document the youtube performance.
 	- add another you tube good performance of this (haven't found one of sonny rollins yet).
 	- add another version of this tune from some other book.
-</%doc>
+% endif
 
-<%def name="ChordsReal()">
+% if part=='ChordsReal':
 \chordmode {
 	\startChords
 
@@ -56,9 +57,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceReal()">
+% if part=='VoiceReal':
 \relative f' {
 	\time 4/4
 	\key bes \major
@@ -82,4 +83,4 @@
 	bes8 d bes f bes4 r8 f | bes8 f bes des r g,4 f8 |
 	e8 g bes des \times 4/3 { c16 des c } g8 bes | r1 |
 }
-</%def>
+% endif

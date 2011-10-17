@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyrics"
 	attributes['render']="Fake"
@@ -17,9 +18,9 @@
 
 	attributes['idyoutube']="HMPHMu7LVhQ"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- document what has been done.
@@ -38,9 +39,9 @@
 		g1:m7 g:m7 g:m7 c:7 g:m7 c:7 f f
 		f1:7 f:7 a:m7.5- d:7 g:m7 g:m7 bes2:m7 ees2:7 g2:m7 c2:7
 		f1 f a:m7.5- d:7 g:m7 c:7 f f
-</%doc>
+% endif
 
-<%def name="ChordsFake()">
+% if part=='ChordsFake':
 \chordmode {
 	\startChords
 
@@ -74,9 +75,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceFake()">
+% if part=='VoiceFake':
 \relative f' {
 	\time 4/4
 	\key f \major
@@ -99,9 +100,9 @@
 	a4 a a a | bes a a2 | a4 g g2 | g4 fis fis2 |
 	g2 bes~ | bes e, | f2 r2 | r1 |
 }
-</%def>
+% endif
 
-<%def name="LyricsFake()">
+% if part=='LyricsFake':
 \lyricmode {
 	Pack up all my care and woe,
 	Here I go,
@@ -117,4 +118,4 @@
 	I'll ar -- rive late to -- night,
 	black -- bird bye bye.
 }
-</%def>
+% endif

@@ -1,7 +1,9 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['render']="Real"
-	attributes['type']="harmony_tune"
+	attributes['doChords']=True
+	attributes['doVoice']=True
 
 	attributes['title']="Gloria's Step"
 	attributes['composer']="Scott LaFaro"
@@ -19,9 +21,9 @@
 	attributes['idyoutube']="Aib_RL_x7PA"
 	attributes['lyricsurl']="NONE"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	- added the chords.
 	- added the notes.
@@ -33,9 +35,9 @@
 	TODO:
 	- do the rythm markings on the second bar of the real book version.
 	- enter the new real book version.
-</%doc>
+% endif
 
-<%def name="ChordsReal()">
+% if part=='ChordsReal':
 \chordmode {
 	\startChords
 
@@ -64,9 +66,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceReal()">
+% if part=='VoiceReal':
 \relative c'' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 160
@@ -83,4 +85,4 @@
 	%% part "A"
 	r8 g,4 c8 \times 2/3 { b c a } \times 2/3 { r a e } | g1 | r8 f g f~ f ees c ees~ | ees2 r8 c bes c~ | c1 |
 }
-</%def>
+% endif

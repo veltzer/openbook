@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyrics"
 	attributes['render']="Fake"
@@ -18,9 +19,9 @@
 	attributes['idyoutube']="neXL51g8P-M"
 	attributes['lyricsurl']="http://www.oldielyrics.com/lyrics/frank_sinatra/my_foolish_heart.html"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- add the missing parts of the real book version and check it.
@@ -29,9 +30,9 @@
 	alternate lyrics here. See how they did it in the fake book.
 	- mark whats been done with this tune.
 	- document the youtube performances.
-</%doc>
+% endif
 
-<%def name="VoiceReal()">
+% if part=='VoiceReal':
 \relative f' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 108
@@ -54,9 +55,9 @@
 	d4. d8 d d c bes | d,2. g4 | bes2~ bes8 ees, g bes |
 	c4 d bes c | bes1 | r1 |
 }
-</%def>
+% endif
 
-<%def name="ChordsFake()">
+% if part=='ChordsFake':
 \chordmode {
 	\startChords
 
@@ -87,9 +88,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceFake()">
+% if part=='VoiceFake':
 \relative f' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 108
@@ -113,9 +114,9 @@
 		{ bes1~ | bes1 | }
 	}
 }
-</%def>
+% endif
 
-<%def name="LyricsFake()">
+% if part=='LyricsFake':
 \lyricmode {
 	The night __ is like a love -- ly tune,
 	be -- ware __ My Fool -- ish Heart!
@@ -139,4 +140,4 @@
 
 	Heart. __
 }
-</%def>
+% endif

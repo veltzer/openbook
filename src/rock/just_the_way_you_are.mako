@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doGuitar']=True
 	attributes['doOwn']=True
@@ -18,9 +19,9 @@
 	attributes['idyoutube']="YiOYsnET6Iw"
 	attributes['idyoutube']="ounJsqomcv8"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- document what was done on this tune.
@@ -28,9 +29,9 @@
 	- first line ender with extra lines - why ?!?
 	- bring back the guitar fretboards after I manage to put them at the top of everything
 		(currently they reside above the lyrics which is weird).
-</%doc>
+% endif
 
-<%def name="Own()">
+% if part=='Own':
 %% all of the parts are taken from the notes I have of Bill Joel
 PartChords=\chordmode {
 	\startChords
@@ -140,4 +141,4 @@ PartLyrics=\lyricmode {
 	\midi {
 	}
 }
-</%def>
+% endif

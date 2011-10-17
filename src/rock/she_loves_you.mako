@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doChords']=True
 	attributes['doVoice']=True
@@ -16,17 +17,17 @@
 	attributes['completion']="0"
 	attributes['uuid']="32a5cb0e-431f-11e0-b9fa-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- make the headers for this song comply with the jazz headers.
 	- add performances from youtube.
 	- add lyrics and melody.
-</%doc>
+% endif
 
-<%def name="ChordsEpdf0()">
+% if part=='ChordsEpdf0':
 \chordmode {
 	\startChords
 
@@ -52,9 +53,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceEpdf0()">
+% if part=='VoiceEpdf0':
 \relative c {
 	\time 4/4
 	\key f \major
@@ -67,9 +68,9 @@
 	d4-3 f2 f,8-3 g |
 
 }
-</%def>
+% endif
 
-<%def name="LyricsEpdf0()">
+% if part=='LyricsEpdf0':
 \lyricmode {
 	You think you've lost your love, __
 	Well, I saw her yesterday.
@@ -128,4 +129,4 @@
 	Yeah, yeah, yeah.
 	Yeah, yeah, yeah Ye-ah.
 }
-</%def>
+% endif

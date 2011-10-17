@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doVoice']=True
 	attributes['render']="My"
@@ -13,9 +14,9 @@
 
 	attributes['uuid']="35529555-8b38-4cc0-be20-2dc5f1848d77"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- six to dim with full chords going up and down.
@@ -23,9 +24,9 @@
 	- six to dim with full chords left hand going down.
 	- six to dim arpeggio with the two hands in an interval (a third and then a fifth).
 		at least a couple of kinds of argpegios.
-</%doc>
+% endif
 
-<%def name="VoiceMy()">
+% if part=='VoiceMy':
 \relative c' {
 	\time 4/4
 	\key bes \major
@@ -36,4 +37,4 @@
 	<g a c ees> <aes b d f> <a c ees g> <b d f aes>
 	<c ees g a>
 }
-</%def>
+% endif

@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doGuitar']=True
 	attributes['doChords']=True
@@ -28,9 +29,9 @@
 	attributes['completion']="5"
 	attributes['uuid']="677fee0a-a26f-11df-bd2c-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	- wrote the chords.
 	- added lyrics.
@@ -40,9 +41,9 @@
 	- add guitar chords.
 	- is the composer really sting?
 	- add tune
-</%doc>
+% endif
 
-<%def name="ChordsMy()">
+% if part=='ChordsMy':
 \chordmode {
 	\startChords
 	\startSong
@@ -66,9 +67,9 @@
 	\endSong
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="Extra()">
+% if part=='Extra':
 %% Lyrics
 \verticalSpace
 \verticalSpace
@@ -130,4 +131,4 @@
 		}
 	}
 }
-</%def>
+% endif

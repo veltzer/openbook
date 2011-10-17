@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyricsmore"
 	attributes['render']="My"
@@ -16,9 +17,9 @@
 	attributes['idyoutube']="DZd_Ik2SNcg"
 	attributes['idyoutube']="jZ_8rSmLFwU"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	- did the opening.
 	- did the lyrics for the first half of the song.
@@ -27,9 +28,9 @@
 	- add the ending.
 	- check the singers word intonation to check if it's ok.
 	- document the you tube performances.
-</%doc>
+% endif
 
-<%def name="ChordsMy()">
+% if part=='ChordsMy':
 \chordmode {
 	\startChords
 
@@ -72,9 +73,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceMy()">
+% if part=='VoiceMy':
 \relative c' {
 	\time 3/4
 	\key a \minor
@@ -100,9 +101,9 @@
 	c'2 a8 e | f2 g8 a | b4 a g | f e f8 g |
 	a2 b8 c | d2 b8 a | gis2 a8 b | a2. ~ | a2. |
 }
-</%def>
+% endif
 
-<%def name="LyricsMy()">
+% if part=='LyricsMy':
 \lyricmode {
 	_ _
 	_ _ _ _ _ _ _ _ _ _ _ _ _
@@ -120,9 +121,9 @@
 	וריח _ _ _ יל -- דות רי -- ח ד -- בק ו -- או -- רן
 	הוא ני -- חו -- ח לי -- לו של ה -- גוף, של ה -- גוף.
 }
-</%def>
+% endif
 
-<%def name="LyricsMymore()">
+% if part=='LyricsMymore':
 \lyricmode {
 	_ _
 	_ _ _ _ _ _ _ _ _ _ _ _ _
@@ -133,5 +134,5 @@
 	תנני ללכת תנני ללכת
 	לכרוע על חוף הסליחה.
 }
-</%def>
+% endif
 

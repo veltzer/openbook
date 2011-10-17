@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['render']="Fake"
 	attributes['type']="harmony_tune_lyrics"
@@ -23,16 +24,16 @@
 
 	attributes['lyricsurl']="http://www.lyricsfreak.com/b/billie+holiday/darn+that+dream_20018018.html"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- mark what's been done with this tune.
 	- add the real book version.
-</%doc>
+% endif
 
-<%def name="ChordsFake()">
+% if part=='ChordsFake':
 \chordmode {
 	\startChords
 
@@ -66,9 +67,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceFake()">
+% if part=='VoiceFake':
 \relative f' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Adagio" 4 = 72
@@ -91,9 +92,9 @@
 	d,4 g ees4. ees8 | e4 a f4. fis8 | g4 b gis8 a b c | d4 e b2 |
 	b4 d c8 b a g | fis4 a e ees | d2 b' | g2. r4 |
 }
-</%def>
+% endif
 
-<%def name="LyricsFake()">
+% if part=='LyricsFake':
 \lyricmode {
 	%% A part
 	Darn That Dream I dream each night,
@@ -119,4 +120,4 @@
 	But it haunts me and it won't come true,
 	Oh, Darn That Dream.
 }
-</%def>
+% endif

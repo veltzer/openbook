@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyrics"
 	attributes['render']="Fake"
@@ -16,16 +17,16 @@
 
 	attributes['idyoutube']="aCO1Gd0jRto"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- fill in whats been done for this tune.
 	- document the youtube performance.
-</%doc>
+% endif
 
-<%def name="ChordsFake()">
+% if part=='ChordsFake':
 \chordmode {
 	\startChords
 
@@ -55,9 +56,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceFake()">
+% if part=='VoiceFake':
 \relative c' {
 	\time 4/4
 	\key c \major
@@ -81,9 +82,9 @@
 	e2. c8 d | e4 c4 a4 f4 | c'1~ | c2. r4 |
 
 }
-</%def>
+% endif
 
-<%def name="LyricsFake()">
+% if part=='LyricsFake':
 \lyricmode {
 	My Ro -- mance does -- n't have to have a moon in the sky,
 	My Ro -- mance does -- n't need a blue la -- goon stand -- ing by;
@@ -95,4 +96,4 @@
 	Wide a -- wake I can make my most fan -- tas -- tic dreams come true;
 	My Ro -- mance does -- n't need a thing but you.
 }
-</%def>
+% endif

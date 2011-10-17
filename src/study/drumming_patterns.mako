@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doOwn']=True
 
@@ -10,18 +11,18 @@
 	attributes['completion']="5"
 	attributes['uuid']="f39a06ec-6d98-11e0-b7b1-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 		- mark what has been done in this tune.
 		- more exercises:
 		LRRLRRLRRLRRLRLR (in 16'th notes over a single bar).
 		RLLRLLRLLRLLRLRL
-</%doc>
+% endif
 
-<%def name="Own()">
+% if part=='Own':
 \markup {
 Drumming patterns to train with pad over...
 }
@@ -162,4 +163,4 @@ Triplet based combinations...
 	}
 	\layout {}
 }
-</%def>
+% endif

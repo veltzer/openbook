@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doChords']=True
 	attributes['doVoice']=True
@@ -23,9 +24,9 @@
 
 	attributes['structure']="AB"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	- put in the real book chords.
 	- put in the real book notes.
@@ -43,9 +44,9 @@
 	TODO:
 	- add the new real book version (already have it in the epdfs).
 	- how do I put the last two chords in the real book version into parenthesis?
-</%doc>
+% endif
 
-<%def name="ChordsReal()">
+% if part=='ChordsReal':
 \chordmode {
 	\startChords
 
@@ -73,9 +74,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceReal()">
+% if part=='VoiceReal':
 \relative c'' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 168
@@ -97,9 +98,9 @@
 	g4. e8 g4. e8 | fis2. a4 | a4. fis8 a4. fis8 | g4 a b d |
 	e2 e, | d' b | g1 | r2 b |
 }
-</%def>
+% endif
 
-<%def name="LyricsReal()">
+% if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 	%% part "A"
@@ -113,4 +114,4 @@
 	We loved, we laughed, we cried and sud -- den -- ly love died.
 	The sto -- ry ends and we're just friends.
 }
-</%def>
+% endif

@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doOwn']=True
 
@@ -15,9 +16,9 @@
 
 	attributes['idyoutube']="0KQW2YnCUrE"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	NOTES:
 		- this tune is an example of how to create different outputs for midi and
 		printing. This could be required for several reasons:
@@ -27,9 +28,9 @@
 		comprehensible.
 	DONE:
 	TODO:
-</%doc>
+% endif
 
-<%def name="Own()">
+% if part=='Own':
 PartChords=\chordmode {
 	\startChords
 
@@ -248,4 +249,4 @@ PartPiano={
 	\midi {
 	}
 }
-</%def>
+% endif

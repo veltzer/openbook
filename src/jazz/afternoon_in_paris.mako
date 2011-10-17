@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune"
 	attributes['render']="Fake"
@@ -14,18 +15,18 @@
 	attributes['idyoutube']="o3KtgcvYkig"
 	attributes['idyoutube']="FFj03f2Zr5Y"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	TODO:
 	- list what has been done to this tune.
 	- document the youtube performances.
 	- the last two chords (d:m7 and g:7) should be in parenthesis since they are part of the turn around.
 	I still don't know how to do that.
 	- add emphasis notes in the tune and document how to do that.
-</%doc>
+% endif
 
-<%def name="ChordsFake()">
+% if part=='ChordsFake':
 \chordmode {
 	\startChords
 
@@ -61,9 +62,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceFake()">
+% if part=='VoiceFake':
 \relative c {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
@@ -87,9 +88,9 @@
 	g8 d r c b c d e | ees g, bes d c4 d | f8 c r bes a bes c d | des f, aes c bes4 c |
 	ees8 c aes ees g bes aes4 | f2 \times 2/3 { g4 f g } | e1~ | e2. r4 |
 }
-</%def>
+% endif
 
-<%def name="ChordsReal()">
+% if part=='ChordsReal':
 \chordmode {
 	\startChords
 
@@ -128,9 +129,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceReal()">
+% if part=='VoiceReal':
 \relative c {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
@@ -162,4 +163,4 @@
 	r c4 aes8 g bes aes g~ | g2~ g8 bes aes g~ |
 	g1~ | g1 |
 }
-</%def>
+% endif

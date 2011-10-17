@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['render']="Real"
 	attributes['type']="harmony_tune_lyrics"
@@ -21,9 +22,9 @@
 
 	attributes['remark']="there are a couple of different lyric versions for this song"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	- checked the real book chords.
 	- checked the real book notes.
@@ -33,9 +34,9 @@
 	- there is no fake book version of this tune.
 	TODO:
 	- fill in the copyright.
-</%doc>
+% endif
 
-<%def name="ChordsReal()">
+% if part=='ChordsReal':
 \chordmode {
 	\startChords
 
@@ -63,9 +64,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceReal()">
+% if part=='VoiceReal':
 \relative c'' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
@@ -87,9 +88,9 @@
 	ges1~ | ges4 ges ges f | f1~ | f1 |
 
 }
-</%def>
+% endif
 
-<%def name="LyricsReal()">
+% if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 	The song a rob -- in sings,
@@ -103,4 +104,4 @@
 	My heart and I ag -- ree,
 	She's eve -- ry -- thing on_this earth to me.
 }
-</%def>
+% endif

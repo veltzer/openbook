@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doOwn']=True
 
@@ -13,9 +14,9 @@
 	attributes['uuid']="29e07ac4-ba42-11e0-a95c-0019d11e5a41"
 	attributes['idyoutube']="gVDDRvoVgQg"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- add a scan of the paper (after fixing the printer).
@@ -23,9 +24,9 @@
 	- write that the tune is for guitar.
 	- document what has been done for this tune.
 	- document the youtube performances.
-</%doc>
+% endif
 
-<%def name="Own()">
+% if part=='Own':
 PartChords=\chordmode {
 	\startChords
 
@@ -209,4 +210,4 @@ PartLowVoice=\relative c' {
 	\midi {
 	}
 }
-</%def>
+% endif

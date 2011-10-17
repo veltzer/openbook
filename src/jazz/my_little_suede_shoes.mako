@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune"
 	attributes['render']="Unknown"
@@ -12,16 +13,16 @@
 	attributes['completion']="0"
 	attributes['uuid']="0db617f0-a26f-11df-92f0-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- where is this from?
 	- youtube performances?
-</%doc>
+% endif
 
-<%def name="ChordsUnknown()">
+% if part=='ChordsUnknown':
 \chordmode {
 	\startChords
 
@@ -51,14 +52,14 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="Prep()">
+% if part=='Prep':
 A=\relative c' { bes8 ees g | f f f f ees f r g | }
 B=\relative c' { bes8 ees g | f f f f ees f r ees | }
-</%def>
+% endif
 
-<%def name="VoiceUnknown()">
+% if part=='VoiceUnknown':
 \relative c' {
 	\key ees \major
 	\time 4/4
@@ -77,4 +78,4 @@ B=\relative c' { bes8 ees g | f f f f ees f r ees | }
 	c8 c c c aes f g ees~ | ees2 r8 \A r2 r8 \B r2 r8 \A
 	r bes4. a4 aes | g8 g g g f f r ees | r1 |
 }
-</%def>
+% endif

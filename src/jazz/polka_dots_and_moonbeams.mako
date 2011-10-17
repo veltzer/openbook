@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyrics"
 	attributes['render']="Fake"
@@ -18,17 +19,17 @@
 
 	attributes['idyoutube']="4NTxWQfMSsA"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- document what has been done with this tune.
 	- add the real book version.
 	- document the youtube performances.
-</%doc>
+% endif
 
-<%def name="ChordsFake()">
+% if part=='ChordsFake':
 \chordmode {
 	\startChords
 
@@ -62,9 +63,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceFake()">
+% if part=='VoiceFake':
 %% the tune was turned into 8'th notes instead of triplets.
 \relative a {
 	\time 4/4
@@ -88,9 +89,9 @@
 	r8 c, d e f g a c | a4 g8 f e d4. | r8 c d e f g a c | d4 c8 bes a g4. |
 	f8 g f g f2 | a8 a g f e ees4. | d8 bes' g f e a4 f8~ | f2. r4 |
 }
-</%def>
+% endif
 
-<%def name="LyricsFake()">
+% if part=='LyricsFake':
 \lyricmode {
 	%% A part
 	A coun -- try dance was be -- ing held in a gar -- den,
@@ -116,4 +117,4 @@
 	And I'll al -- ways see Pol -- ka Dots And Moon -- beams
 	when I kiss the pug -- nosed dream. __
 }
-</%def>
+% endif

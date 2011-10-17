@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doOwn']=True
 
@@ -10,18 +11,18 @@
 	attributes['completion']="5"
 	attributes['uuid']="eb2be7a4-6f42-11e0-a53d-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- mark what has been done in this tune.
 	- add more text here about paradiddles.
 	- add a reference to wikipedia: http://en.wikipedia.org/wiki/Rudiment
 	- get more examples from wikipedia coded here.
-</%doc>
+% endif
 
-<%def name="Own()">
+% if part=='Own':
 \markuplines {
 	\wordwrap-lines { \italic {
 	This is some text about paradiddles...
@@ -171,4 +172,4 @@ Paradiddle-Diddle (starting with the right hand).
 		}
 	}
 }
-</%def>
+% endif

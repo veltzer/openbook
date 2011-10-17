@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyricsmore"
 	attributes['render']="Real"
@@ -23,9 +24,9 @@
 
 	attributes['structure']="AABA"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	- put in whatever is in the real book.
 	- heard it to see if it's ok.
@@ -36,9 +37,9 @@
 	TODO:
 	- add the fake book version.
 	- how do I put the last two chord in the real book version in braces (they are part of the turn around)...
-</%doc>
+% endif
 
-<%def name="ChordsReal()">
+% if part=='ChordsReal':
 \chordmode {
 	\startChords
 
@@ -77,9 +78,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceReal()">
+% if part=='VoiceReal':
 \relative c'' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante" 4 = 88
@@ -105,9 +106,9 @@
 	d2. bes8 c | des c' c c c bes g ees | c2 \times 2/3 { r8 g aes c ees g } | bes bes bes aes bes4 aes8 bes |
 	g4~ \times 2/3 { g8 aes bes } ees,4~ \times 2/3 { ees8 f g } | aes8 c,4 c8 \times 2/3 { d4 ees f } | ees1 | r |
 }
-</%def>
+% endif
 
-<%def name="LyricsReal()">
+% if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 	Look at me,
@@ -118,9 +119,9 @@
 
 	Walk my
 }
-</%def>
+% endif
 
-<%def name="LyricsRealmore()">
+% if part=='LyricsRealmore':
 \lyricmode {
 	Walk my way and a thou -- sand vi -- o -- lins be -- gin to play,
 	or it might be the sound of your hel -- lo,
@@ -137,4 +138,4 @@
 	my _ hat __ from my glove, __
 	I'm too Mist -- y and too much in Love. __
 }
-</%def>
+% endif

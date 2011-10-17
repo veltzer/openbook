@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune"
 	attributes['render']="Unknown"
@@ -13,16 +14,16 @@
 	attributes['completion']="4"
 	attributes['uuid']="2615b7ec-a26f-11df-b010-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	TODO:
 	- where is this from?
 	- add lyrics
 	- discrepency between tune and melody at the end
-</%doc>
+% endif
 
-<%def name="ChordsUnknown()">
+% if part=='ChordsUnknown':
 \chordmode {
 	\startChords
 
@@ -41,9 +42,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceUnknown()">
+% if part=='VoiceUnknown':
 \relative c''' {
 	\time 4/4
 	\key d \minor
@@ -56,4 +57,4 @@
 		c a8 c d f~ f4 | a8 g~ g4 f2 | d1~ | d4 r r a'8. f16 |
 	}
 }
-</%def>
+% endif

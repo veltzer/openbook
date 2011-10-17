@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyricsmore"
 	attributes['render']="Real"
@@ -17,9 +18,9 @@
 	attributes['idyoutube']="CCTIpclVQe4"
 	attributes['idyoutube']="gLqsIIrk5wQ"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- where did this come from?
@@ -27,9 +28,9 @@
 	- match the other verse lyrics to the melody.
 	- fill in the copyright.
 	- document the youtube performances.
-</%doc>
+% endif
 
-<%def name="ChordsReal()">
+% if part=='ChordsReal':
 \chordmode {
 	\startChords
 
@@ -66,9 +67,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceReal()">
+% if part=='VoiceReal':
 \relative aes {
 	\time 4/4
 	\key aes \major
@@ -90,9 +91,9 @@
 	r4 aes8 bes c ees f aes | bes bes4 aes8 g2 | aes8 aes4 g8 f2 | g8 g4 f8 ees2 |
 	r4 f ees des | aes'2 aes,8 bes4. | aes1 | r |
 }
-</%def>
+% endif
 
-<%def name="LyricsReal()">
+% if part=='LyricsReal':
 %% lyrics from the internet adjusted for the real book
 \lyricmode {
 %%	There's a saying old, says that love is blind
@@ -126,12 +127,12 @@
 
 %%	Someone to watch over me
 }
-</%def>
+% endif
 
-<%def name="LyricsRealmore()">
+% if part=='LyricsRealmore':
 \lyricmode {
 	I'm a lit -- tle lamb who's lost in the wood
 	I know I could, al -- ways be good
 	To one who'll watch o -- ver %% me
 }
-</%def>
+% endif

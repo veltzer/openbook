@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony_tune_lyrics"
 	attributes['render']="Unknown"
@@ -14,18 +15,18 @@
 	attributes['completion']="0"
 	attributes['uuid']="21bc8284-a26f-11df-a829-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- turn this tune relative!
 	- mark whats been done.
 	- mark the origins of the tune.
 	- add youtube performances.
-</%doc>
+% endif
 
-<%def name="ChordsUnknown()">
+% if part=='ChordsUnknown':
 \chordmode {
 	\startChords
 
@@ -42,9 +43,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="VoiceUnknown()">
+% if part=='VoiceUnknown':
 \relative c' {
 	\time 4/4
 	\key bes \major
@@ -100,9 +101,9 @@
 	bes' bes'8 bes'~ bes' bes'4 bes'8~ |
 	bes'2 r8 f'4 f'8 |
 }
-</%def>
+% endif
 
-<%def name="LyricsUnknown()">
+% if part=='LyricsUnknown':
 \lyrics {
 	This is just a lit __ -- tle sam __ -- ba
 	built up -- on a sin __ -- gle note. __
@@ -126,4 +127,4 @@
 	he will find him -- self __ with no __ show.
 	Bet -- ter play __ the note __ you know. __
 }
-</%def>
+% endif

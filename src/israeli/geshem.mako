@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['doChords']=True
 	attributes['render']="My"
@@ -17,9 +18,9 @@
 	attributes['idyoutube']="1CBj7q51-BQ"
 	attributes['lyricsurl']="http://www.mp3music.co.il/lyrics/448.html"
 %>
-</%def>
+% endif
 
-<%def name="ChordsMy()">
+% if part=='ChordsMy':
 \chordmode {
 	\startChords
 
@@ -63,15 +64,15 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="FretsMy()">
+% if part=='FretsMy':
 \new FretBoards {
 	\PartChords
 }
-</%def>
+% endif
 
-<%def name="Extra()">
+% if part=='Extra':
 %% Lyrics
 \verticalSpace
 \verticalSpace
@@ -109,4 +110,4 @@
 		}
 	}
 }
-</%def>
+% endif

@@ -1,4 +1,5 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='Vars':
 <%
 	attributes['type']="harmony"
 	attributes['render']="My"
@@ -10,17 +11,17 @@
 	attributes['completion']="0"
 	attributes['uuid']="505a0a3a-a26f-11df-bbef-0019d11e5a41"
 %>
-</%def>
+% endif
 
-<%doc>
+% if part=='Doc':
 	DONE:
 	TODO:
 	- complete this tune.
 	- mark what has been done.
 	- add youtube performance.
-</%doc>
+% endif
 
-<%def name="ChordsMy()">
+% if part=='ChordsMy':
 \chordmode {
 	\mark "פתיחה"
 	\repeat volta 4 {
@@ -30,4 +31,4 @@
 	d2 e2:m7 | g2 b2:m7 | e2:m7 fis2:7 | g2 d2 | \myEndLine
 	g2 d2 | e2:m7 b2:m7 | e2:m7 fis2:7 | g2 a2:7 | \myEndLine
 }
-</%def>
+% endif
