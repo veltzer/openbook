@@ -5,6 +5,7 @@
 	attributes['render']="My"
 	attributes['doGuitar']=True
 	attributes['doExtra']=True
+	attributes['heb']=True
 
 	attributes['title']=u"גשם"
 	attributes['composer']=u"יחיאל אמסלם"

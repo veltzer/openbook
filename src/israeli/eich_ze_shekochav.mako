@@ -5,6 +5,7 @@
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
 	attributes['render']="Epdf0"
+	attributes['heb']=True
 
 	attributes['title']=u"איך זה שכוכב"
 	attributes['composer']=u"מתי כספי"

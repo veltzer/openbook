@@ -6,6 +6,7 @@
 	attributes['doLyrics']=True
 	attributes['doLyricsmore']=True
 	attributes['render']="My"
+	attributes['heb']=True
 
 	attributes['title']=u"סליחות"
 	attributes['subtitle']=u"באת אלי"
