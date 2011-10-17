@@ -144,9 +144,23 @@ if($res) {
 	if($remove_tmp) {
 		unlink_check($tmp_fname,1);
 	}
-	# touch the output
-	# TODO - do this better (using open) and check the result code
-	system('touch '.$output);
+	# check that there is a pdf, if not, it's an error
+	my($volume,$directories,$file)=File::Spec->splitpath($output);
+	my($base)=File::Basename::basename($file,'.stamp');
+	my($pdf_file)=File::Spec->catpath($volume,$directories,$base.'.pdf');
+	if(!(-f $pdf_file)) {
+		do_files($output,1);
+		die("error in output production");
+	}
+	# now we are sure that there is output, we can touch the stamp file...
+	my($res0)=open(FILE,'> '.$output);
+	if(!$res0) {
+		die('unable to open output file ['.$output.']');
+	}
+	my($res1)=close(FILE);
+	if(!$res1) {
+		die('unable to close output file ['.$output.']');
+	}
 	chmod_check($output,1);
 	# chmod the files
 	do_files($output,0);
