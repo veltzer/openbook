@@ -1,3 +1,4 @@
+<%def name="defs()">
 %% end verbatim - this comment is a hack to prevent texinfo.tex
 %% from choking on non-European UTF-8 subsets
 
@@ -129,6 +130,7 @@ endIntro={}
 startChords=\set chordChanges = ##t
 endChords={}
 %% endif
+</%def>
 
 <%def name="clearVars()">
 <%
@@ -155,9 +157,16 @@ endChords={}
 	attributes['definitions']=False
 %>
 </%def>
+
+%% lets include the blocks
+<%namespace file="/${context['attributes']['blocks']}" name="song"/>
+
 %% this causes the variables to be defined...
 ${self.clearVars()}
-${self.vars()}
+${song.vars()}
+
+%% lets emit the definitions
+${self.defs()}
 
 % if attributes['guitar']:
 \include "predefined-guitar-fretboards.ly"
@@ -193,126 +202,126 @@ ${self.vars()}
 }
 
 % if attributes['definitions']:
-${self.definitions()}
+${song.definitions()}
 % endif
 
 <%def name="myChords()">
 % if attributes['render']=='Real':
-			${self.myChordsReal()}
+			${song.myChordsReal()}
 % endif
 % if attributes['render']=='Fake':
-			${self.myChordsFake()}
+			${song.myChordsFake()}
 % endif
 % if attributes['render']=='Unknown':
-			${self.myChordsUnknown()}
+			${song.myChordsUnknown()}
 % endif
 % if attributes['render']=='Ultimate':
-			${self.myChordsUltimate()}
+			${song.myChordsUltimate()}
 % endif
 % if attributes['render']=='Aebersold':
-			${self.myChordsAebersold()}
+			${song.myChordsAebersold()}
 % endif
 % if attributes['render']=='My':
-			${self.myChordsMy()}
+			${song.myChordsMy()}
 % endif
 % if attributes['render']=='Epdf0':
-			${self.myChordsEpdf0()}
+			${song.myChordsEpdf0()}
 % endif
 </%def>
 
 <%def name="myVoice()">
 % if attributes['render']=='Real':
-			${self.myVoiceReal()}
+			${song.myVoiceReal()}
 % endif
 % if attributes['render']=='Fake':
-			${self.myVoiceFake()}
+			${song.myVoiceFake()}
 % endif
 % if attributes['render']=='Unknown':
-			${self.myVoiceUnknown()}
+			${song.myVoiceUnknown()}
 % endif
 % if attributes['render']=='Ultimate':
-			${self.myVoiceUltimate()}
+			${song.myVoiceUltimate()}
 % endif
 % if attributes['render']=='Aebersold':
-			${self.myVoiceAebersold()}
+			${song.myVoiceAebersold()}
 % endif
 % if attributes['render']=='My':
-			${self.myVoiceMy()}
+			${song.myVoiceMy()}
 % endif
 % if attributes['render']=='Epdf0':
-			${self.myVoiceEpdf0()}
+			${song.myVoiceEpdf0()}
 % endif
 </%def>
 
 <%def name="myLyrics()">
 % if attributes['render']=='Real':
-			${self.myLyricsReal()}
+			${song.myLyricsReal()}
 % endif
 % if attributes['render']=='Fake':
-			${self.myLyricsFake()}
+			${song.myLyricsFake()}
 % endif
 % if attributes['render']=='Unknown':
-			${self.myLyricsUnknown()}
+			${song.myLyricsUnknown()}
 % endif
 % if attributes['render']=='Ultimate':
-			${self.myLyricsUltimate()}
+			${song.myLyricsUltimate()}
 % endif
 % if attributes['render']=='Aebersold':
-			${self.myLyricsAebersold()}
+			${song.myLyricsAebersold()}
 % endif
 % if attributes['render']=='My':
-			${self.myLyricsMy()}
+			${song.myLyricsMy()}
 % endif
 % if attributes['render']=='Epdf0':
-			${self.myLyricsEpdf0()}
+			${song.myLyricsEpdf0()}
 % endif
 </%def>
 
 <%def name="myLyricsmore()">
 % if attributes['render']=='Real':
-			${self.myLyricsRealmore()}
+			${song.myLyricsRealmore()}
 % endif
 % if attributes['render']=='Fake':
-			${self.myLyricsFakemore()}
+			${song.myLyricsFakemore()}
 % endif
 % if attributes['render']=='Unknown':
-			${self.myLyricsUnknownmore()}
+			${song.myLyricsUnknownmore()}
 % endif
 % if attributes['render']=='Ultimate':
-			${self.myLyricsUltimatemore()}
+			${song.myLyricsUltimatemore()}
 % endif
 % if attributes['render']=='Aebersold':
-			${self.myLyricsAebersoldmore()}
+			${song.myLyricsAebersoldmore()}
 % endif
 % if attributes['render']=='My':
-			${self.myLyricsMymore()}
+			${song.myLyricsMymore()}
 % endif
 % if attributes['render']=='Epdf0':
-			${self.myLyricsEpdf0more()}
+			${song.myLyricsEpdf0more()}
 % endif
 </%def>
 
 <%def name="myLyricsmoremore()">
 % if attributes['render']=='Real':
-			${self.myLyricsRealmoremore()}
+			${song.myLyricsRealmoremore()}
 % endif
 % if attributes['render']=='Fake':
-			${self.myLyricsFakemoremore()}
+			${song.myLyricsFakemoremore()}
 % endif
 % if attributes['render']=='Unknown':
-			${self.myLyricsUnknownmoremore()}
+			${song.myLyricsUnknownmoremore()}
 % endif
 % if attributes['render']=='Ultimate':
-			${self.myLyricsUltimatemoremore()}
+			${song.myLyricsUltimatemoremore()}
 % endif
 % if attributes['render']=='Aebersold':
-			${self.myLyricsAebersoldmoremore()}
+			${song.myLyricsAebersoldmoremore()}
 % endif
 % if attributes['render']=='My':
-			${self.myLyricsMymoremore()}
+			${song.myLyricsMymoremore()}
 % endif
 % if attributes['render']=='Epdf0':
-			${self.myLyricsEpdf0moremore()}
+			${song.myLyricsEpdf0moremore()}
 % endif
 </%def>
 
@@ -514,8 +523,8 @@ ${self.definitions()}
 % endif
 
 % if attributes['type']=='own':
-${self.myOwn()}
+${song.myOwn()}
 % endif
 % if attributes['extra']:
-${self.extra()}
+${song.extra()}
 % endif

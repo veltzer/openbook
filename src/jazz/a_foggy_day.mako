@@ -1,4 +1,3 @@
-<%inherit file="/src/include/common.makoi"/>
 <%def name="vars()">
 <%
 	attributes['jazzTune']=True
@@ -23,11 +22,11 @@
 %>
 </%def>
 
-<%doc>
+<%def name="doc()">
 	DONE:
 	TODO:
 	- fill out what's been done for this tune.
-</%doc>
+</%def>
 
 <%def name="myChordsReal()">
 \chordmode {
