@@ -1,11 +1,3 @@
-<%def name="foo()">
-This is the content of foo in song2
-</%def>
-<%def name="vars()">
-	<%
-		attributes['g']="song2 value"
-	%>
-</%def>
 <%page args="part"/>
 % if part=='First':
 	This is the first part of song1
