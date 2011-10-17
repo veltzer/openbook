@@ -228,10 +228,6 @@ check_ws:
 check_uuid:
 	$(info doing [$@])
 	$(Q)-grep --files-without-match uuid $(FILES_MAKO)
-.PHONY: check_common
-check_common:
-	$(info doing [$@])
-	$(Q)-grep --files-without-match "common.makoi" $(FILES_MAKO)
 .PHONY: check_poet
 check_poet:
 	$(info doing [$@])
@@ -269,7 +265,7 @@ check_threeunderscores:
 	$(info doing [$@])
 	$(Q)-grep "___" $(FILES_MAKO)
 .PHONY: check_all
-check_all: check_empty_copyright check_common check_ws check_and check_extra_files check_min_chords check_uuid check_chordChanges check_bar check_break check_completion check_include check_threeunderscores
+check_all: check_empty_copyright check_ws check_and check_extra_files check_min_chords check_uuid check_chordChanges check_bar check_break check_completion check_include check_threeunderscores
 
 # rules
 
