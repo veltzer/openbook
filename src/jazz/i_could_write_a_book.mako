@@ -25,7 +25,7 @@
 	- mark what was done in this.
 </%doc>
 
-<%def name="myChordsReal()">
+<%def name="ChordsReal()">
 \chordmode {
 	\startChords
 

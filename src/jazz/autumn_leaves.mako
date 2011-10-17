@@ -27,7 +27,7 @@
 	- document the youtube performances.
 </%doc>
 
-<%def name="myChordsReal()">
+<%def name="ChordsReal()">
 \chordmode {
 	\startChords
 

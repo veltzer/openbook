@@ -24,7 +24,7 @@
 	- where did this come from
 </%doc>
 
-<%def name="myChordsUnknown()">
+<%def name="ChordsUnknown()">
 \chordmode {
 	\startChords
 

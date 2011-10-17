@@ -28,7 +28,7 @@
 	- document the current you tube performance.
 </%doc>
 
-<%def name="myChordsMy()">
+<%def name="ChordsMy()">
 \chordmode {
 	\startChords
 

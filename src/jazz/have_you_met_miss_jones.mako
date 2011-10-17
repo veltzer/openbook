@@ -20,7 +20,7 @@
 	-add lyrics
 </%doc>
 
-<%def name="myChordsUnknown()">
+<%def name="ChordsUnknown()">
 \chordmode {
 	\startChords
 

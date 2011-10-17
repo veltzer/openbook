@@ -40,7 +40,7 @@
 		f1 f a:m7.5- d:7 g:m7 c:7 f f
 </%doc>
 
-<%def name="myChordsFake()">
+<%def name="ChordsFake()">
 \chordmode {
 	\startChords
 

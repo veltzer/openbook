@@ -43,7 +43,7 @@
 }
 </%def>
 
-<%def name="myVoiceReal()">
+<%def name="VoiceReal()">
 \relative ees'' {
 	\key c \major
 	\time 4/4

@@ -68,7 +68,7 @@
 }
 </%def>
 
-<%def name="myVoiceReal()">
+<%def name="VoiceReal()">
 \relative aes {
 	\time 4/4
 	\key aes \major

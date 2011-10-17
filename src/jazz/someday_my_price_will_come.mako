@@ -64,7 +64,7 @@
 }
 </%def>
 
-<%def name="myVoiceReal()">
+<%def name="VoiceReal()">
 \relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
@@ -108,7 +108,7 @@
 }
 </%def>
 
-<%def name="extra()">
+<%def name="Extra()">
 %% More lyrics
 \verticalSpace
 \verticalSpace

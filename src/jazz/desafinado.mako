@@ -28,7 +28,7 @@
 	- document the you tube performances.
 </%doc>
 
-<%def name="myChordsUnknown()">
+<%def name="ChordsUnknown()">
 \chordmode {
 	\startChords
 %%	list of instruments can be found at

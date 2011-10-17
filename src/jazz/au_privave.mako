@@ -29,7 +29,7 @@
 	- document the you tube performances.
 </%doc>
 
-<%def name="myChordsAebersold()">
+<%def name="ChordsAebersold()">
 \chordmode {
 	\startChords
 

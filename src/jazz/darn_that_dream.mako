@@ -32,7 +32,7 @@
 	- add the real book version.
 </%doc>
 
-<%def name="myChordsFake()">
+<%def name="ChordsFake()">
 \chordmode {
 	\startChords
 

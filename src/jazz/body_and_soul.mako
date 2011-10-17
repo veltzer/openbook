@@ -33,7 +33,7 @@
 	- mark whats been done to this tune.
 </%doc>
 
-<%def name="myChordsFake()">
+<%def name="ChordsFake()">
 \chordmode {
 	\startChords
 

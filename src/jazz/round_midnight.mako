@@ -19,7 +19,7 @@
 }
 </%def>
 
-<%def name="myVoiceUnknown()">
+<%def name="VoiceUnknown()">
 \relative c' {
 	\time 4/4
 	\key aes \major

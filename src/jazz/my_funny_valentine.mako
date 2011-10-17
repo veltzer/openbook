@@ -62,7 +62,7 @@
 }
 </%def>
 
-<%def name="myVoiceReal()">
+<%def name="VoiceReal()">
 \relative a {
 	\time 4/4
 	\key c \minor

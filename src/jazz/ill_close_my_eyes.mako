@@ -32,7 +32,7 @@
 	- get copyright for this tune (the real book didn't have one).
 </%doc>
 
-<%def name="myChordsReal()">
+<%def name="ChordsReal()">
 \chordmode {
 	\startChords
 
