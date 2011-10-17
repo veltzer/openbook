@@ -27,6 +27,7 @@ file=open(p_output,'w')
 # python 2
 attr={}
 attr['blocks']=p_input
+attr['list']=['/mako_tests/song1.mk','/mako_tests/song2.mk']
 file.write(template.render(attributes=attr))
 file.close()
 # python 3
