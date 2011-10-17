@@ -1,6 +1,10 @@
-<%def name="vars()">
+<%page args="part"/>
+% if part=='vars':
 <%
 	attributes['jazzTune']=True
+	attributes['doChords']=True
+	attributes['doVoice']=True
+	attributes['doLyrics']=True
 	attributes['type']="harmony_tune_lyrics"
 	attributes['render']="Fake"
 	attributes['title']="A Foggy Day"
@@ -20,15 +24,15 @@
 	attributes['idyoutube']="tVCDZaApwV8"
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/A-Foggy-Day-lyrics-Frank-Sinatra/0F2EB16090A785424825692000077664"
 %>
-</%def>
+% endif
 
-<%def name="doc()">
+% if part=='doc':
 	DONE:
 	TODO:
 	- fill out what's been done for this tune.
-</%def>
+% endif
 
-<%def name="myChordsReal()">
+% if part=='myChordsReal':
 \chordmode {
 	\startChords
 
@@ -54,9 +58,9 @@
 
 	\endChords
 }
-</%def>
+% endif
 
-<%def name="myVoiceReal()">
+% if part=='myVoiceReal':
 \relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
@@ -76,9 +80,9 @@
 	c f, g bes | a f g bes | a2 f' | f, g | f1~ | f2. r4 |
 
 }
-</%def>
+% endif
 
-<%def name="myLyricsReal()">
+% if part=='myLyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 	A Fog -- gy Day __ in Lon -- don town __ ha -- d me low __ and had me down. __
@@ -86,9 +90,9 @@
 	How long I wondered could this thing last? __ But_the age of mira -- cles had -- n't passed, __
 	for sud -- den -- ly __ I saw you there __ and through fog -- gy Lon -- don town the sun was shin -- ing ev -- 'ry where.
 }
-</%def>
+% endif
 
-<%def name="myChordsFake()">
+% if part=='myChordsFake':
 \chordmode {
 	\startChords
 
@@ -126,9 +130,9 @@
 
 	\endSong
 }
-</%def>
+% endif
 
-<%def name="myVoiceFake()">
+% if part=='myVoiceFake':
 \relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
@@ -160,9 +164,9 @@
 		}
 	}
 }
-</%def>
+% endif
 
-<%def name="myLyricsFake()">
+% if part=='myLyricsFake':
 \lyricmode {
 	A Fog -- gy Day __ in Lon -- don town __ had me low __ and had me down. __
 	I viewed the morn -- ing with a -- larm, __ the Brit -- ish Mu -- se -- um had lost its charm. __
@@ -170,4 +174,4 @@
 	for sud -- den -- ly, __ I saw you there __ and through fog -- gy Lon -- don town the sun was shin -- ing ev -- 'ry where.
 	A where. __
 }
-</%def>
+% endif

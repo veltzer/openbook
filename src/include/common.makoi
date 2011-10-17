@@ -155,6 +155,12 @@ endChords={}
 	attributes['jazzTune']=False
 	attributes['extra']=False
 	attributes['definitions']=False
+	
+	attributes['doChords']=False
+	attributes['doVoice']=False
+	attributes['doLyrics']=False
+	attributes['doLyricsmore']=False
+	attributes['doLyricsmoremore']=False
 %>
 </%def>
 
@@ -171,7 +177,7 @@ ${self.defs()}
 
 %% this causes the variables to be defined...
 ${self.clearVars()}
-${song.vars()}
+<%include file="/${attributes['blocks']}" args="part='vars'"/>
 
 <%doc>
 % if attributes['guitar']:
@@ -213,142 +219,39 @@ ${song.vars()}
 ${song.definitions()}
 % endif
 
-<%def name="myChords()">
-% if attributes['render']=='Real':
-			${song.myChordsReal()}
-% endif
-% if attributes['render']=='Fake':
-			${song.myChordsFake()}
-% endif
-% if attributes['render']=='Unknown':
-			${song.myChordsUnknown()}
-% endif
-% if attributes['render']=='Ultimate':
-			${song.myChordsUltimate()}
-% endif
-% if attributes['render']=='Aebersold':
-			${song.myChordsAebersold()}
-% endif
-% if attributes['render']=='My':
-			${song.myChordsMy()}
-% endif
-% if attributes['render']=='Epdf0':
-			${song.myChordsEpdf0()}
-% endif
-</%def>
+<%
+	myChords='myChords'+attributes['render']
+	myVoice='myVoice'+attributes['render']
+	myLyrics='myLyrics'+attributes['render']
+	myLyricsmore='myLyricsmore'+attributes['render']
+	myLyricsmoremore='myLyricsmoremore'+attributes['render']
+%>
 
-<%def name="myVoice()">
-% if attributes['render']=='Real':
-			${song.myVoiceReal()}
-% endif
-% if attributes['render']=='Fake':
-			${song.myVoiceFake()}
-% endif
-% if attributes['render']=='Unknown':
-			${song.myVoiceUnknown()}
-% endif
-% if attributes['render']=='Ultimate':
-			${song.myVoiceUltimate()}
-% endif
-% if attributes['render']=='Aebersold':
-			${song.myVoiceAebersold()}
-% endif
-% if attributes['render']=='My':
-			${song.myVoiceMy()}
-% endif
-% if attributes['render']=='Epdf0':
-			${song.myVoiceEpdf0()}
-% endif
-</%def>
-
-<%def name="myLyrics()">
-% if attributes['render']=='Real':
-			${song.myLyricsReal()}
-% endif
-% if attributes['render']=='Fake':
-			${song.myLyricsFake()}
-% endif
-% if attributes['render']=='Unknown':
-			${song.myLyricsUnknown()}
-% endif
-% if attributes['render']=='Ultimate':
-			${song.myLyricsUltimate()}
-% endif
-% if attributes['render']=='Aebersold':
-			${song.myLyricsAebersold()}
-% endif
-% if attributes['render']=='My':
-			${song.myLyricsMy()}
-% endif
-% if attributes['render']=='Epdf0':
-			${song.myLyricsEpdf0()}
-% endif
-</%def>
-
-<%def name="myLyricsmore()">
-% if attributes['render']=='Real':
-			${song.myLyricsRealmore()}
-% endif
-% if attributes['render']=='Fake':
-			${song.myLyricsFakemore()}
-% endif
-% if attributes['render']=='Unknown':
-			${song.myLyricsUnknownmore()}
-% endif
-% if attributes['render']=='Ultimate':
-			${song.myLyricsUltimatemore()}
-% endif
-% if attributes['render']=='Aebersold':
-			${song.myLyricsAebersoldmore()}
-% endif
-% if attributes['render']=='My':
-			${song.myLyricsMymore()}
-% endif
-% if attributes['render']=='Epdf0':
-			${song.myLyricsEpdf0more()}
-% endif
-</%def>
-
-<%def name="myLyricsmoremore()">
-% if attributes['render']=='Real':
-			${song.myLyricsRealmoremore()}
-% endif
-% if attributes['render']=='Fake':
-			${song.myLyricsFakemoremore()}
-% endif
-% if attributes['render']=='Unknown':
-			${song.myLyricsUnknownmoremore()}
-% endif
-% if attributes['render']=='Ultimate':
-			${song.myLyricsUltimatemoremore()}
-% endif
-% if attributes['render']=='Aebersold':
-			${song.myLyricsAebersoldmoremore()}
-% endif
-% if attributes['render']=='My':
-			${song.myLyricsMymoremore()}
-% endif
-% if attributes['render']=='Epdf0':
-			${song.myLyricsEpdf0moremore()}
-% endif
-</%def>
-
-% if attributes['type']=='harmony_tune_lyricsmoremore':
 %% score for printing
 \score {
 	<<
+		% if attributes['doChords']:
 		\new ChordNames="Chords"
-			${self.myChords()}
+			<%include file="/${attributes['blocks']}" args="part=myChords"/>
+		% endif
+		% if attributes['doVoice']:
 		\new Staff="Melody" {
 			\new Voice="myvoice"
-			${self.myVoice()}
+			<%include file="/${attributes['blocks']}" args="part=myVoice"/>
 		}
+		% endif
+		% if attributes['doLyrics']:
 		\new Lyrics="Lyrics" \lyricsto "myvoice"
-			${self.myLyrics()}
+			<%include file="/${attributes['blocks']}" args="part=myLyrics"/>
+		% endif
+		% if attributes['doLyricsmore']:
 		\new Lyrics="Lyrics" \lyricsto "myvoice"
-			${self.myLyricsmore()}
+			<%include file="/${attributes['blocks']}" args="part=myLyricsmore"/>
+		% endif
+		% if attributes['doLyricsmoremore']:
 		\new Lyrics="Lyrics" \lyricsto "myvoice"
-			${self.myLyricsmoremore()}
+			<%include file="/${attributes['blocks']}" args="part=myLyricsmoremore"/>
+		% endif
 	>>
 	\layout {
 	}
@@ -357,178 +260,47 @@ ${song.definitions()}
 \score {
 	\unfoldRepeats
 	<<
-		%% the ="Chords" is the name of the channel that will be in midi
+		% if attributes['doChords']:
 		\new ChordNames="Chords"
-			${self.myChords()}
-		%% the ="Melody" is the name of the channel that will be in midi
+			<%include file="/${attributes['blocks']}" args="part=myChords"/>
+		% endif
+		% if attributes['doVoice']:
 		\new Staff="Melody" {
 			\new Voice="myvoice"
-			${self.myVoice()}
+			<%include file="/${attributes['blocks']}" args="part=myVoice"/>
 		}
-		%% the ="Lyrics" is the name of the channel that will be in midi
+		% endif
+		% if attributes['doLyrics']:
 		\new Lyrics="Lyrics" \lyricsto "myvoice"
-			${self.myLyrics()}
+			<%include file="/${attributes['blocks']}" args="part=myLyrics"/>
+		% endif
+		% if attributes['doLyricsmore']:
 		\new Lyrics="Lyrics" \lyricsto "myvoice"
-			${self.myLyricsmore()}
+			<%include file="/${attributes['blocks']}" args="part=myLyricsmore"/>
+		% endif
+		% if attributes['doLyricsmoremore']:
 		\new Lyrics="Lyrics" \lyricsto "myvoice"
-			${self.myLyricsmoremore()}
+			<%include file="/${attributes['blocks']}" args="part=myLyricsmoremore"/>
+		% endif
 	>>
 	\midi {
 	}
 }
-% endif
 
-% if attributes['type']=='harmony_tune_lyricsmore':
-%% score for printing
-\score {
-	<<
-		\new ChordNames="Chords"
-			${self.myChords()}
-		\new Staff="Melody" {
-			\new Voice="myvoice"
-			${self.myVoice()}
-		}
-		\new Lyrics="Lyrics" \lyricsto "myvoice"
-			${self.myLyrics()}
-		\new Lyrics="Lyrics" \lyricsto "myvoice"
-			${self.myLyricsmore()}
-	>>
-	\layout {
-	}
-}
-%% score for midi
-\score {
-	\unfoldRepeats
-	<<
-		%% the ="Chords" is the name of the channel that will be in midi
-		\new ChordNames="Chords"
-			${self.myChords()}
-		%% the ="Melody" is the name of the channel that will be in midi
-		\new Staff="Melody" {
-			\new Voice="myvoice"
-			${self.myVoice()}
-		}
-		%% the ="Lyrics" is the name of the channel that will be in midi
-		\new Lyrics="Lyrics" \lyricsto "myvoice"
-			${self.myLyrics()}
-		\new Lyrics="Lyrics" \lyricsto "myvoice"
-			${self.myLyricsmore()}
-	>>
-	\midi {
-	}
-}
-% endif
-
-% if attributes['type']=='harmony_tune_lyrics':
-%% score for printing
-\score {
-	<<
-		\new ChordNames="Chords"
-			${self.myChords()}
-		\new Staff="Melody" {
-			\new Voice="myvoice"
-			${self.myVoice()}
-		}
-		\new Lyrics="Lyrics" \lyricsto "myvoice"
-			${self.myLyrics()}
-	>>
-	\layout {
-	}
-}
-%% score for midi
-\score {
-	\unfoldRepeats
-	<<
-		%% the ="Chords" is the name of the channel that will be in midi
-		\new ChordNames="Chords"
-			${self.myChords()}
-		%% the ="Melody" is the name of the channel that will be in midi
-		\new Staff="Melody" {
-			\new Voice="myvoice"
-			${self.myVoice()}
-		}
-		%% the ="Lyrics" is the name of the channel that will be in midi
-		\new Lyrics="Lyrics" \lyricsto "myvoice"
-			${self.myLyrics()}
-	>>
-	\midi {
-	}
-}
-% endif
-
-% if attributes['type']=='harmony_tune':
-%% score for printing
-\score {
-	<<
-		\new ChordNames="Chords"
-			${self.myChords()}
-		\new Staff="Melody" {
-			\new Voice="myvoice"
-			${self.myVoice()}
-		}
-	>>
-	\layout {
-	}
-}
-%% score for midi
-\score {
-	\unfoldRepeats
-	<<
-		%% the ="Chords" is the name of the channel that will be in midi
-		\new ChordNames="Chords"
-			${self.myChords()}
-		%% the ="Melody" is the name of the channel that will be in midi
-		\new Staff="Melody" {
-			\new Voice="myvoice"
-			${self.myVoice()}
-		}
-	>>
-	\midi {
-	}
-}
-% endif
-
-% if attributes['type']=='tune':
-%% score for printing
-\score {
-	<<
-		\new Staff="Melody" {
-			\new Voice="myvoice"
-			${self.myVoice()}
-		}
-	>>
-	\layout {
-	}
-}
-%% score for midi
-\score {
-	\unfoldRepeats
-	<<
-		%% the ="Melody" is the name of the channel that will be in midi
-		\new Staff="Melody" {
-			\new Voice="myvoice"
-			${self.myVoice()}
-		}
-	>>
-	\midi {
-	}
-}
-% endif
-
-% if attributes['type']=='harmony':
-\score {
-	<<
-		\new ChordNames="Chords"
-		\with {
-			\override BarLine #'bar-size = #4
-			\consists "Bar_engraver"
-		}
-		${self.myChords()}
-	>>
-	\midi {}
-	\layout {}
-}
-% endif
+##% if attributes['type']=='harmony':
+##\score {
+##	<<
+##		\new ChordNames="Chords"
+##		\with {
+##			\override BarLine #'bar-size = #4
+##			\consists "Bar_engraver"
+##		}
+##		${self.myChords()}
+##	>>
+##	\midi {}
+##	\layout {}
+##}
+##% endif
 
 % if attributes['type']=='own':
 ${song.myOwn()}
