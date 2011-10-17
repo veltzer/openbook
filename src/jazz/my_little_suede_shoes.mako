@@ -1,9 +1,10 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['type']="harmony_tune"
+			attributes['doChords']=True
+			attributes['doVoice']=True
 	attributes['render']="Unknown"
-	attributes['doPrep']=True
+						attributes['doPrep']=True
 
 	attributes['title']="My Little Suede Shoes"
 	attributes['composer']="Charlie Parker"

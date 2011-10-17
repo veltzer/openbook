@@ -284,20 +284,15 @@ Lyricsmoremore=<%include file="/${attributes['blocks']}" args="part=Lyricsmoremo
 	}
 }
 
-##% if attributes['type']=='harmony':
+## I may need the following snipplet to have separators in chord only melodies:
 ##\score {
 ##	<<
 ##		\new ChordNames="Chords"
 ##		\with {
 ##			\override BarLine #'bar-size = #4
 ##			\consists "Bar_engraver"
-##		}
-##		${self.Chords()}
+##		} \myChords
 ##	>>
-##	\midi {}
-##	\layout {}
-##}
-##% endif
 
 % endif
 

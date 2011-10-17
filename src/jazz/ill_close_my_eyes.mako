@@ -2,7 +2,9 @@
 % if part=='Vars':
 <%
 	attributes['render']="My"
-	attributes['type']="harmony_tune_lyrics"
+					attributes['doChords']=True
+					attributes['doVoice']=True
+					attributes['doLyrics']=True
 
 	attributes['title']="I'll Close My Eyes"
 	attributes['composer']="Billy Reid"

@@ -1,7 +1,7 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['type']="harmony"
+		attributes['doChords']=True
 	attributes['render']="My"
 
 	attributes['title']=u"עוד חוזר הניגון"

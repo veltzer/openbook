@@ -1,7 +1,10 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['type']="harmony_tune_lyricsmore"
+					attributes['doChords']=True
+					attributes['doVoice']=True
+					attributes['doLyrics']=True
+					attributes['doLyricsmore']=True
 	attributes['render']="My"
 
 	attributes['title']=u"סליחות"
