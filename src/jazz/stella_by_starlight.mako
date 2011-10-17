@@ -1,4 +1,5 @@
 <%inherit file="/src/include/common.makoi"/>
+<%def name="vars()">
 <%
 	attributes['jazzTune']=True
 	attributes['render']="Real"
@@ -22,6 +23,7 @@
 
 	attributes['remark']="there are a couple of different lyric versions for this song"
 %>
+</%def>
 
 <%doc>
 	DONE:

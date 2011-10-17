@@ -1,4 +1,5 @@
 <%inherit file="/src/include/common.makoi"/>
+<%def name="vars()">
 <%
 	attributes['type']="own"
 	attributes['render']="Own"
@@ -17,6 +18,7 @@
 
 	attributes['uuid']="9a39404e-a26f-11df-aa6e-0019d11e5a41"
 %>
+</%def>
 
 <%doc>
 	DONE:

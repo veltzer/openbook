@@ -1,4 +1,5 @@
 <%inherit file="/src/include/common.makoi"/>
+<%def name="vars()">
 <%
 	attributes['jazzTune']=True
 	attributes['guitar']=True
@@ -20,6 +21,7 @@
 	attributes['idyoutube']="acULghgYUg0"
 	attributes['lyricsurl']="http://www.elyrics.net/read/b/britney-spears-lyrics/baby-one-more-time-lyrics.html"
 %>
+</%def>
 
 <%doc>
 	DONE:

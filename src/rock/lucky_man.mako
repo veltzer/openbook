@@ -1,4 +1,5 @@
 <%inherit file="/src/include/common.makoi"/>
+<%def name="vars()">
 <%
 	attributes['jazzTune']=True
 	attributes['guitar']=True
@@ -19,6 +20,7 @@
 	attributes['idyoutube']="5x6uQ6yZsOY"
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Lucky-Man-lyrics-Emerson-Lake-Palmer/13302F99F6B11DEC48256AB8002432F8"
 %>
+</%def>
 
 <%doc>
 	remarks:

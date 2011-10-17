@@ -1,4 +1,5 @@
 <%inherit file="/src/include/common.makoi"/>
+<%def name="vars()">
 <%
 	attributes['type']="tune"
 	attributes['render']="Epdf0"
@@ -12,6 +13,7 @@
 	attributes['completion']="0"
 	attributes['uuid']="744f61d8-a26f-11df-b6b1-0019d11e5a41"
 %>
+</%def>
 
 <%doc>
 	DONE:

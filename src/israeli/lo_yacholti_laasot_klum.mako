@@ -1,4 +1,5 @@
 <%inherit file="/src/include/common.makoi"/>
+<%def name="vars()">
 <%
 	attributes['jazzTune']=True
 	attributes['guitar']=True
@@ -19,6 +20,7 @@
 	attributes['lyricsurl']="http://www.mp3music.co.il/tabs/10728.html"
 	attributes['remark']="Ilan Virtsberg plays it in G in live concerts"
 %>
+</%def>
 
 <%doc>
 	DONE:

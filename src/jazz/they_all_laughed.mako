@@ -1,4 +1,5 @@
 <%inherit file="/src/include/common.makoi"/>
+<%def name="vars()">
 <%
 	attributes['jazzTune']=True
 	attributes['type']="harmony_tune_lyricsmore"
@@ -20,6 +21,7 @@
 	attributes['idyoutube']="TdLm9qRRdh4"
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/They-All-Laughed-lyrics-Ella-Fitzgerald/2123DA2C32C02AF848256AAB000AB847"
 %>
+</%def>
 
 <%doc>
 	DONE:

@@ -1,4 +1,5 @@
 <%inherit file="/src/include/common.makoi"/>
+<%def name="vars()">
 <%
 	attributes['jazzTune']=True
 	attributes['type']="harmony"
@@ -18,6 +19,7 @@
 	attributes['idyoutube']="1CBj7q51-BQ"
 	attributes['lyricsurl']="http://www.mp3music.co.il/lyrics/448.html"
 %>
+</%def>
 
 <%def name="myChordsMy()">
 \chordmode {
