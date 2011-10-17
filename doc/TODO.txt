@@ -1,3 +1,7 @@
+mako:
+=====
+turn all %doc blocks in to %def blocks (like in "a_foggy_day").
+
 licensing:
 ==========
 embed a licence in all of the tunes.
