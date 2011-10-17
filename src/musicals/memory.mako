@@ -36,7 +36,7 @@
 % endif
 
 % if part=='Own':
-myChords=\chordmode {
+PartChords=\chordmode {
 	\startChords
 
 	\startSong
@@ -169,7 +169,7 @@ pianoMain={
 	>>
 }
 %% lyrics
-myLyrics=\lyricmode {
+PartLyrics=\lyricmode {
 %%	The next verse not a part of the song but rather some intro before the song...
 
 %%	Daylight
@@ -229,10 +229,10 @@ myLyrics=\lyricmode {
 %% score for printing
 \score {
 	<<
-		\new Voice="myvoice" \voiceVocal
-		\new Lyrics \lyricsto "myvoice" \myLyrics
-		\new PianoStaff=piano \pianoMain
-		\new ChordNames=chords \myChords
+		\new Voice="voice" \voiceVocal
+		\new Lyrics \lyricsto "voice" \PartLyrics
+		\new PianoStaff="piano" \pianoMain
+		\new ChordNames="chords" \PartChords
 	>>
 	\layout {
 		\context { \RemoveEmptyStaffContext }
@@ -242,8 +242,8 @@ myLyrics=\lyricmode {
 \score {
 	\unfoldRepeats
 	<<
-		\new Voice=myvoice \voiceVocal
-		\new PianoStaff=piano \pianoMain
+		\new Voice="voice" \voiceVocal
+		\new PianoStaff="piano" \pianoMain
 	>>
 	\midi {
 	}

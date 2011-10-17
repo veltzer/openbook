@@ -28,7 +28,7 @@
 	- document the youtube performances.
 </%doc>
 
-<%def name="myChordsUltimate()">
+<%def name="ChordsUltimate()">
 \chordmode {
 	\startChords
 
@@ -108,7 +108,7 @@
 }
 </%def>
 
-<%def name="myLyricsUltimate()">
+<%def name="LyricsUltimate()">
 \lyricmode {
 	They All Laughed at Chris -- to -- pher Co -- lum -- bus
 	When he said the world was round. __
@@ -136,7 +136,7 @@
 }
 </%def>
 
-<%def name="myLyricsUltimatemore()">
+<%def name="LyricsUltimatemore()">
 \lyricmode {
 
 	They All Laughed at Rock -- e -- fel -- ler Cen -- ter,

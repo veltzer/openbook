@@ -25,7 +25,7 @@
 	- add length to all notes.
 </%doc>
 
-<%def name="myChordsUnknown()">
+<%def name="ChordsUnknown()">
 \chordmode {
 	\mark "Intro"
 	\repeat volta 4 { e2.:m7 | f2.:maj7.4+ }

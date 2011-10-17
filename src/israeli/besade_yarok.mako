@@ -23,7 +23,7 @@
 	- mark what has been done with this tune.
 </%doc>
 
-<%def name="myChordsMy()">
+<%def name="ChordsMy()">
 \chordmode {
 	\startChords
 
@@ -43,7 +43,7 @@
 }
 </%def>
 
-<%def name="myVoiceMy()">
+<%def name="VoiceMy()">
 \relative f' {
 	\time 4/4
 	\key f \major
@@ -59,7 +59,7 @@
 }
 </%def>
 
-<%def name="myLyricsMy()">
+<%def name="LyricsMy()">
 \lyricmode {
 	ב -- ש -- דה י -- רוק, על גב -- עה תלו -- לה.
 	ב -- מ -- קום ר -- חוק, סוף ד -- רך לא סלו -- לה.

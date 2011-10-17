@@ -23,7 +23,7 @@
 	TODO:
 </%doc>
 
-<%def name="myChordsMy()">
+<%def name="ChordsMy()">
 \chordmode {
 	\startChords
 
@@ -45,7 +45,7 @@
 }
 </%def>
 
-<%def name="myVoiceMy()">
+<%def name="VoiceMy()">
 \relative f' {
 	\time 2/4
 	\key g \minor
@@ -64,7 +64,7 @@
 }
 </%def>
 
-<%def name="myLyricsMy()">
+<%def name="LyricsMy()">
 \lyricmode {
 	א -- לו -- הים ש -- לי, ר -- צי -- תי ש -- ת -- דע
 	ח -- לום ש -- ח -- למ -- תי ב -- לי -- לה ב -- מי -- טה

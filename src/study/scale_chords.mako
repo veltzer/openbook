@@ -21,7 +21,7 @@
 	- document what has been done for this tune.
 </%doc>
 
-<%def name="myVoiceMy()">
+<%def name="VoiceMy()">
 \relative c' {
 	\time 4/4
 	\key bes \major

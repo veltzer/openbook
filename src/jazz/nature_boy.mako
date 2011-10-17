@@ -26,7 +26,7 @@
 	- fill in the copyright
 </%doc>
 
-<%def name="myChordsReal()">
+<%def name="ChordsReal()">
 \chordmode {
 	\startChords
 
@@ -82,7 +82,7 @@
 }
 </%def>
 
-<%def name="myLyricsReal()">
+<%def name="LyricsReal()">
 %% lyrics were taken from the internet and adjusted for the real book
 \lyricmode {
 	There was a boy,
@@ -103,7 +103,7 @@
 }
 </%def>
 
-<%def name="myLyricsRealmore()">
+<%def name="LyricsRealmore()">
 \lyricmode {
 	_ then one day,
 	A mag -- ic day he passed my way,

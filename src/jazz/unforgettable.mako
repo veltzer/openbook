@@ -25,7 +25,7 @@
 	- add epdfs.
 </%doc>
 
-<%def name="myChordsFake()">
+<%def name="ChordsFake()">
 \chordmode {
 	\startChords
 
@@ -77,7 +77,7 @@
 }
 </%def>
 
-<%def name="myLyricsFake()">
+<%def name="LyricsFake()">
 \lyrics {
 	Un-4 for-4 get-8 ta-4 ble,8~ | -2 \times 2/3 { that's4 what4 you4 } |
 	are,1~ | -2. -4 |

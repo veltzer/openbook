@@ -64,7 +64,7 @@
 }
 </%def>
 
-<%def name="myVoiceReal()">
+<%def name="VoiceReal()">
 \relative e' {
 	\time 4/4
 	\key e \minor
@@ -93,7 +93,7 @@
 }
 </%def>
 
-<%def name="myLyricsReal()">
+<%def name="LyricsReal()">
 %% lyrics are taken from the fake book and adjusted for the real one
 \lyricmode {
 	The fall -- ing leaves __ drift by the win -- dow, __
@@ -111,14 +111,14 @@
 }
 </%def>
 
-<%def name="myLyricsRealmore()">
+<%def name="LyricsRealmore()">
 \lyricmode {
 	_ _ _ lips, __ the sum -- mer kiss -- es,
 	The sun -- burned hands __
 }
 </%def>
 
-<%def name="myChordsFake()">
+<%def name="ChordsFake()">
 \chordmode {
 	\startChords
 
@@ -148,7 +148,7 @@
 }
 </%def>
 
-<%def name="myVoiceFake()">
+<%def name="VoiceFake()">
 \relative e' {
 	\time 4/4
 	\key e \minor
@@ -171,8 +171,8 @@
 }
 </%def>
 
-<%def name="myLyricsFake()">
-myLyricsFake=\lyricmode {
+<%def name="LyricsFake()">
+\lyricmode {
 	The fall -- ing leaves __ drift by the win -- dow, __
 	The Au -- tumn Leaves, __ of red and gold.
 	I see your lips, __ the sum -- mer kiss -- es,

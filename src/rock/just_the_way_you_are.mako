@@ -32,7 +32,7 @@
 
 <%def name="Own()">
 %% all of the parts are taken from the notes I have of Bill Joel
-myChords=\chordmode {
+PartChords=\chordmode {
 	\startChords
 
 	\startSong
@@ -52,11 +52,11 @@ myChords=\chordmode {
 	\endChords
 }
 
-myFrets=\new FretBoards {
-	\myChords
+PartFrets=\new FretBoards {
+	\PartChords
 }
 
-myUpperIntro=\relative c' {
+PartUpperIntro=\relative c' {
 	\clef treble
 	\time 4/4
 	\key d \major
@@ -67,7 +67,7 @@ myUpperIntro=\relative c' {
 	r8 a d <bes e g>~ <bes e g>2 | r8 a d <d g b>~ <d g b> <d a'>4 fis16 e | \myEndLine
 	\endBar
 }
-myLowerIntro=\relative c' {
+PartLowerIntro=\relative c' {
 	\clef bass
 	\key d \major
 	<< { d,2~ d8 d4 d8 } \\ { d,1 } >> |
@@ -76,24 +76,24 @@ myLowerIntro=\relative c' {
 	<< { d'2~ d8 d4 d8 } \\ { d,1 } >> |
 }
 
-myUpperVoice=\relative c' {
+PartUpperVoice=\relative c' {
 	\clef treble
 	\key d \major
 	<< { r2 d'8 fis4. } \\ { fis,4. fis8~ <fis d'>2 } >>
 	<< { d'8 b4.~ b2 } \\ { <d, fis>2~ <d fis>8 <d fis>4. } >>
 }
-myLowerVoice=\relative c' {
+PartLowerVoice=\relative c' {
 	\clef bass
 	\key d \major
 	<d, a'>1 | << { gis2~ gis8 gis4. } \\ { b1 } >> |
 }
 
-myMelody=\relative c' {
+PartMelody=\relative c' {
 	\clef treble
 	\key d \major
 	r2 d'8 fis4. | d8 b4.~ b2 | r4 r8 fis8 b8 d4. | b8 fis4.~ fis2 |
 }
-myLyrics=\lyricmode {
+PartLyrics=\lyricmode {
 	Don't go chang -- ing__
 }
 
@@ -101,17 +101,17 @@ myLyrics=\lyricmode {
 \score {
 	{
 		\new PianoStaff="Melody" <<
-			\new Staff="upper" \myUpperIntro
-			\new Staff="lower" \myLowerIntro
+			\new Staff="upper" \PartUpperIntro
+			\new Staff="lower" \PartLowerIntro
 		>>
 		<<
-			\new ChordNames="Chords" \myChords
-			\new Frets="Frets" \myFrets
-			\new Voice = "mymelody" { \autoBeamOff \myMelody }
-			\new Lyrics="Lyrics" \lyricsto "mymelody" \myLyrics
+			\new ChordNames="Chords" \PartChords
+			\new Frets="Frets" \PartFrets
+			\new Voice = "melody" { \autoBeamOff \PartMelody }
+			\new Lyrics="Lyrics" \lyricsto "melody" \PartLyrics
 			\new PianoStaff="Melody" <<
-				\new Staff="myuppervoice" \myUpperVoice
-				\new Staff="mylowervoice" \myLowerVoice
+				\new Staff="uppervoice" \PartUpperVoice
+				\new Staff="lowervoice" \PartLowerVoice
 			>>
 		>>
 	}
@@ -123,17 +123,17 @@ myLyrics=\lyricmode {
 	\unfoldRepeats
 	{
 		\new PianoStaff="Melody" <<
-			\new Staff="upper" \myUpperIntro
-			\new Staff="lower" \myLowerIntro
+			\new Staff="upper" \PartUpperIntro
+			\new Staff="lower" \PartLowerIntro
 		>>
 		<<
-			%%\new ChordNames="Chords" \myChords
-			%%\new Frets="Frets" \myFrets
-			\new Voice = "mymelody" { \autoBeamOff \myMelody }
-			\new Lyrics="Lyrics" \lyricsto "mymelody" \myLyrics
+			%%\new ChordNames="Chords" \PartChords
+			%%\new Frets="Frets" \PartFrets
+			\new Voice = "melody" { \autoBeamOff \PartMelody }
+			\new Lyrics="Lyrics" \lyricsto "melody" \PartLyrics
 			\new PianoStaff="Melody" <<
-				\new Staff="myuppervoice" \myUpperVoice
-				\new Staff="mylowervoice" \myLowerVoice
+				\new Staff="uppervoice" \PartUpperVoice
+				\new Staff="lowervoice" \PartLowerVoice
 			>>
 		>>
 	}

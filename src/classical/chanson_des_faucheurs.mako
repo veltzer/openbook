@@ -12,7 +12,7 @@
 %>
 </%def>
 
-<%def name="myVoiceUnknown()">
+<%def name="VoiceUnknown()">
 \relative g'' {
 	\key c \major
 	\time 3/4

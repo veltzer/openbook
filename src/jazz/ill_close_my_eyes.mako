@@ -17,7 +17,7 @@
 	attributes['idyoutube']="u6lXbfx1hHw"
 	attributes['lyricsurl']="http://lyricsplayground.com/alpha/songs/i/illclosemyeyes.shtml"
 
-	attributes['remark']="my version is from Amit Golan"
+	attributes['remark']="version is from Amit Golan"
 %>
 </%def>
 
@@ -62,7 +62,7 @@
 }
 </%def>
 
-<%def name="myVoiceReal()">
+<%def name="VoiceReal()">
 \relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 150
@@ -84,7 +84,7 @@
 }
 </%def>
 
-<%def name="myLyricsReal()">
+<%def name="LyricsReal()">
 %% these are lyrics from the internet adjusted by me to the real book tune
 %% the adjustment is pretty horrible
 \lyricmode {
@@ -110,7 +110,7 @@
 }
 </%def>
 
-<%def name="myChordsMy()">
+<%def name="ChordsMy()">
 \chordmode {
 	\startChords
 	\startSong
@@ -140,7 +140,7 @@
 }
 </%def>
 
-<%def name="myVoiceMy()">
+<%def name="VoiceMy()">
 \relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 150
@@ -162,7 +162,7 @@
 }
 </%def>
 
-<%def name="myLyricsMy()">
+<%def name="LyricsMy()">
 \lyricmode {
 	I'll Close My Eyes __
 	To eve -- ry -- one but you __

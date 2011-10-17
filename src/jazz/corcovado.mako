@@ -1,4 +1,4 @@
-<%def name="vars()">
+<%def name="Vars()">
 <%
 	attributes['type']="harmony_tune_lyrics"
 	attributes['render']="Unknown"
@@ -49,7 +49,7 @@
 }
 </%def>
 
-<%def name="myVoiceUnknown()">
+<%def name="VoiceUnknown()">
 \relative c' {
 	\time 4/4
 	\key c \major
@@ -104,7 +104,7 @@
 }
 </%def>
 
-<%def name="myLyricsUnknown()">
+<%def name="LyricsUnknown()">
 \lyrics {
 	Qui -- et __ nights of qui -- et stars,
 	qui -- et __ chords from my gui -- tar __

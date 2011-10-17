@@ -14,7 +14,7 @@
 %>
 </%def>
 
-<%def name="myChordsUnknown()">
+<%def name="ChordsUnknown()">
 \chordmode {
 }
 </%def>

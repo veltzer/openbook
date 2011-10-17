@@ -24,7 +24,7 @@
 	- write whats been done for this tune.
 </%doc>
 
-<%def name="myVoiceEpdf0()">
+<%def name="VoiceEpdf0()">
 \relative c{
 	\key c \major
 	\time 4/4

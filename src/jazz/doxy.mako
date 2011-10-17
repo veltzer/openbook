@@ -58,7 +58,7 @@
 }
 </%def>
 
-<%def name="myVoiceReal()">
+<%def name="VoiceReal()">
 \relative f' {
 	\time 4/4
 	\key bes \major

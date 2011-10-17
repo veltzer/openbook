@@ -29,7 +29,7 @@
 	- document the you tube performances.
 </%doc>
 
-<%def name="myChordsMy()">
+<%def name="ChordsMy()">
 \chordmode {
 	\startChords
 
@@ -74,7 +74,7 @@
 }
 </%def>
 
-<%def name="myVoiceMy()">
+<%def name="VoiceMy()">
 \relative c' {
 	\time 3/4
 	\key a \minor
@@ -102,7 +102,7 @@
 }
 </%def>
 
-<%def name="myLyricsMy()">
+<%def name="LyricsMy()">
 \lyricmode {
 	_ _
 	_ _ _ _ _ _ _ _ _ _ _ _ _
@@ -122,7 +122,7 @@
 }
 </%def>
 
-<%def name="myLyricsMymore()">
+<%def name="LyricsMymore()">
 \lyricmode {
 	_ _
 	_ _ _ _ _ _ _ _ _ _ _ _ _

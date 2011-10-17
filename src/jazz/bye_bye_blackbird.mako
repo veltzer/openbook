@@ -76,7 +76,7 @@
 }
 </%def>
 
-<%def name="myVoiceFake()">
+<%def name="VoiceFake()">
 \relative f' {
 	\time 4/4
 	\key f \major
@@ -101,7 +101,7 @@
 }
 </%def>
 
-<%def name="myLyricsFake()">
+<%def name="LyricsFake()">
 \lyricmode {
 	Pack up all my care and woe,
 	Here I go,

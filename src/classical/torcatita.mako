@@ -26,7 +26,7 @@
 </%doc>
 
 <%def name="Own()">
-myChords=\chordmode {
+PartChords=\chordmode {
 	\startChords
 
 	\startSong
@@ -66,7 +66,7 @@ myChords=\chordmode {
 	\endChords
 }
 
-myHighVoice=\relative c'' {
+PartHighVoice=\relative c'' {
 	\time 3/4
 	\key c \major
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -121,7 +121,7 @@ myHighVoice=\relative c'' {
 	\endTune
 }
 
-myMidVoice=\relative c' {
+PartMidVoice=\relative c' {
 	\voiceTwo
 
 	s2. |
@@ -152,7 +152,7 @@ myMidVoice=\relative c' {
 	}
 }
 
-myLowVoice=\relative c' {
+PartLowVoice=\relative c' {
 	\voiceFour
 
 	s2. |
@@ -186,11 +186,11 @@ myLowVoice=\relative c' {
 %% score for printing
 \score {
 	<<
-		%%\new ChordNames="mychords" \myChords
+		%%\new ChordNames="Partchords" \PartChords
 		\new Staff="Melody" <<
-			\new Voice="myhighvoice" \myHighVoice
-			\new Voice="mymidvoice" \myMidVoice
-			\new Voice="mylowvoice" \myLowVoice
+			\new Voice="highvoice" \PartHighVoice
+			\new Voice="midvoice" \PartMidVoice
+			\new Voice="lowvoice" \PartLowVoice
 		>>
 	>>
 	\layout {
@@ -201,9 +201,9 @@ myLowVoice=\relative c' {
 	\unfoldRepeats
 	<<
 		\new Staff="Melody" <<
-			\new Voice="myhighvoice" \myHighVoice
-			\new Voice="mymidvoice" \myMidVoice
-			\new Voice="mylowvoice" \myLowVoice
+			\new Voice="highvoice" \PartHighVoice
+			\new Voice="midvoice" \PartMidVoice
+			\new Voice="lowvoice" \PartLowVoice
 		>>
 	>>
 	\midi {

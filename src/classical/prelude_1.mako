@@ -30,7 +30,7 @@
 </%doc>
 
 <%def name="Own()">
-myChords=\chordmode {
+PartChords=\chordmode {
 	\startChords
 
 	\startSong
@@ -194,7 +194,7 @@ myChords=\chordmode {
 	c1\fermata |
 	c1\fermata |
 }
-myPiano={
+PartPiano={
 	%% This is the instrument name that will appear before the staff.
 	%% it has nothing to do with the midi instrument that will be used to
 	%% render this voice in midi format...
@@ -234,8 +234,8 @@ myPiano={
 %% score for printing
 \score {
 	<<
-		\new ChordNames="chords" \myChords
-		\new PianoStaff="piano" \myPiano
+		\new ChordNames="chords" \PartChords
+		\new PianoStaff="piano" \PartPiano
 	>>
 	\layout {
 	}
@@ -243,7 +243,7 @@ myPiano={
 %% score for midi
 \score {
 	<<
-		\new PianoStaff="piano" \myPiano
+		\new PianoStaff="piano" \PartPiano
 	>>
 	\midi {
 	}

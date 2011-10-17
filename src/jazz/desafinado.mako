@@ -76,7 +76,7 @@
 }
 </%def>
 
-<%def name="myVoiceUnknown()">
+<%def name="VoiceUnknown()">
 \relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
@@ -164,7 +164,7 @@
 }
 </%def>
 
-<%def name="myLyricsUnknown()">
+<%def name="LyricsUnknown()">
 \lyricmode {
 	Love is like a nev -- er end -- ing mel -- o -- dy; __
 	po -- ets have com -- pared it to a sym -- pho -- ny, __

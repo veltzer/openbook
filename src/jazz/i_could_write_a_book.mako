@@ -58,7 +58,7 @@
 }
 </%def>
 
-<%def name="myVoiceReal()">
+<%def name="VoiceReal()">
 \relative c' {
 	\time 4/4
 	\key c \major
@@ -84,7 +84,7 @@
 }
 </%def>
 
-<%def name="myLyricsReal()">
+<%def name="LyricsReal()">
 \lyricmode {
 	If they asked me I Could Write A Book,
 	a -- bout the way you walk and whis -- per and look,
@@ -99,7 +99,7 @@
 }
 </%def>
 
-<%def name="myLyricsRealmore()">
+<%def name="LyricsRealmore()">
 \lyricmode {
 	_ _ sim -- ple se -- cret of the plot
 	is just to tell them that I love you a -- lot,

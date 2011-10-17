@@ -22,7 +22,7 @@
 	- discrepency between tune and melody at the end
 </%doc>
 
-<%def name="myChordsUnknown()">
+<%def name="ChordsUnknown()">
 \chordmode {
 	\startChords
 

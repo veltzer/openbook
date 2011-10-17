@@ -135,7 +135,7 @@ endChords={}
 %}
 
 %% this version of the chords is from the real book...
-myChords=\chordmode {
+PartChords=\chordmode {
 	\startChords
 
 	\startSong
@@ -165,7 +165,7 @@ myChords=\chordmode {
 }
 
 %% this version of the tune is from the real book...
-myVoice=\relative c'' {
+PartVoice=\relative c'' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 160
 	\time 4/4
@@ -189,9 +189,9 @@ myVoice=\relative c'' {
 \tocItem \markup "First Score"
 \score {
 	<<
-		\new ChordNames="Chords" \myChords
+		\new ChordNames="Chords" \PartChords
 		\new Staff="Melody" {
-			\new Voice="myvoice" \myVoice
+			\new Voice="voice" \PartVoice
 		}
 	>>
 \header {
@@ -253,9 +253,9 @@ myVoice=\relative c'' {
 }
 \score {
 	<<
-		\new ChordNames="Chords" \myChords
+		\new ChordNames="Chords" \PartChords
 		\new Staff="Melody" {
-			\new Voice="myvoice" \myVoice
+			\new Voice="voice" \PartVoice
 		}
 	>>
 }

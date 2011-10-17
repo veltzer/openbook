@@ -33,19 +33,19 @@
 \storePredefinedDiagram \chordmode {e:m7} #guitar-tuning #"o;2-1;2-2;o;3-3;3-4;"
 \storePredefinedDiagram \chordmode {d:sus4} #guitar-tuning #"x;x;o;2-1;3-3;2-2;"
 
-myChords=\chordmode {
+PartChords=\chordmode {
 	\startChords
 	\startRepeat
 	g2:sus4 c:5.9 | e:m7 d:sus4 |
 	\endRepeat
 	\endChords
 }
-myFrets=\new FretBoards {
-	\myChords
+PartFrets=\new FretBoards {
+	\PartChords
 }
 \score {
 	<<
-		\myFrets
+		\PartFrets
 		\new ChordNames="Chords"
 		%% this adds a bar engraver which does not always come with chords
 		%% I didn'f find a way to put this with the chords themselves...
@@ -53,7 +53,7 @@ myFrets=\new FretBoards {
 			\override BarLine #'bar-size = #4
 			\consists "Bar_engraver"
 		}
-		\myChords
+		\PartChords
 	>>
 	\midi {}
 	\layout {}
