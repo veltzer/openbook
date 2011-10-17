@@ -101,7 +101,7 @@
 }
 % endif
 
-% if part=='LyricsFakemore':
+% if part=='LyricsmoreFake':
 \lyricmode {
 	_ Fine Ro -- mance my good fel -- low!
 	You take ro -- mance, I'll take jel -- lo!
@@ -184,7 +184,7 @@
 }
 % endif
 
-% if part=='LyricsRealmore':
+% if part=='LyricsmoreReal':
 \lyricmode {
 	_ Fine Ro -- mance, you won't nest -- le.
 	A Fine Ro -- mance, you won't wrest -- le!

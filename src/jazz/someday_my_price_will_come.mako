@@ -101,7 +101,7 @@
 }
 % endif
 
-% if part=='LyricsRealmore':
+% if part=='LyricsmoreReal':
 \lyricmode {
 	He'll whis -- per I love you
 	And steal a kiss or two

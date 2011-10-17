@@ -107,7 +107,7 @@
 }
 % endif
 
-% if part=='LyricsRealmore':
+% if part=='LyricsmoreReal':
 \lyricmode {
 	_ then one day,
 	A mag -- ic day he passed my way,

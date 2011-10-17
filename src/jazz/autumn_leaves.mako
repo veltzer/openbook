@@ -115,7 +115,7 @@
 }
 % endif
 
-% if part=='LyricsRealmore':
+% if part=='LyricsmoreReal':
 \lyricmode {
 	_ _ _ lips, __ the sum -- mer kiss -- es,
 	The sun -- burned hands __

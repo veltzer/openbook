@@ -124,7 +124,7 @@
 }
 % endif
 
-% if part=='LyricsRealmore':
+% if part=='LyricsmoreReal':
 \lyricmode {
 	Walk my way and a thou -- sand vi -- o -- lins be -- gin to play,
 	or it might be the sound of your hel -- lo,

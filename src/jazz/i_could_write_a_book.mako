@@ -103,7 +103,7 @@
 }
 % endif
 
-% if part=='LyricsRealmore':
+% if part=='LyricsmoreReal':
 \lyricmode {
 	_ _ sim -- ple se -- cret of the plot
 	is just to tell them that I love you a -- lot,

@@ -123,7 +123,7 @@
 }
 % endif
 
-% if part=='LyricsFakemore':
+% if part=='LyricsmoreFake':
 \lyricmode {
 	I spend my days in long -- ing,
 	and won -- d'ring why it's me you're wrong -- ing,

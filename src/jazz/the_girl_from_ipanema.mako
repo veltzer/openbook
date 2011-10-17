@@ -141,7 +141,7 @@
 }
 % endif
 
-% if part=='LyricsRealmore':
+% if part=='LyricsmoreReal':
 \lyricmode {
 	When she walks she's like a Sam -- ba
 	that swings so cool and sways _ so gen -- tle,

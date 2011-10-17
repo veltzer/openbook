@@ -126,7 +126,7 @@
 }
 % endif
 
-% if part=='LyricsRealmore':
+% if part=='LyricsmoreReal':
 \lyricmode {
 	Then __ __ one day, __ __
 	From my in -- fi -- nite sad -- ness you came

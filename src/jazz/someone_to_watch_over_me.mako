@@ -132,7 +132,7 @@
 }
 % endif
 
-% if part=='LyricsRealmore':
+% if part=='LyricsmoreReal':
 \lyricmode {
 	I'm a lit -- tle lamb who's lost in the wood
 	I know I could, al -- ways be good

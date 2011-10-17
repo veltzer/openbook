@@ -97,7 +97,7 @@
 }
 % endif
 
-% if part=='LyricsRealmore':
+% if part=='LyricsmoreReal':
 \lyricmode {
 	_ Nights of moon -- lit skies
 	A gen -- tle kiss
@@ -112,7 +112,7 @@
 }
 % endif
 
-% if part=='LyricsRealmoremore':
+% if part=='LyricsmoreRealmore':
 \lyricmode {
 	The thought of how we met
 	Still lin -- gers on
