@@ -140,7 +140,7 @@
 }
 % endif
 
-% if part=='LyricsUltimatemore':
+% if part=='LyricsmoreUltimate':
 \lyricmode {
 
 	They All Laughed at Rock -- e -- fel -- ler Cen -- ter,
