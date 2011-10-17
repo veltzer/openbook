@@ -21,11 +21,18 @@ if($debug) {
 my(@inc);
 open(IN,$infile) || die('unable to open input file for reading');
 open(FILE,'> '.$outfile) || die('unable to open output file for writing');
-print FILE "<%page args=\"part\"/>"."\n";
+#print FILE "<%page args=\"part\"/>"."\n";
 my($line);
 while($line=<IN>) {
 	chop($line);
-	print FILE $line."\n";
+	if($line=~/attributes\[\'do/) {
+		$line="\t".$line;
+	}
+	if($line eq "\tattributes['type']=\"tune\"") {
+		print FILE "\tattributes['doVoice']=True"."\n";
+	} else {
+		print FILE $line."\n";
+	}
 }
 close(IN) || die('unable to close input file');
 close(FILE) || die('unable to close output file');

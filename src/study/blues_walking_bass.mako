@@ -1,7 +1,8 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['type']="harmony_tune"
+			attributes['doChords']=True
+			attributes['doVoice']=True
 	attributes['render']="My"
 
 	attributes['title']="Jazz Bass line for Blues in F"

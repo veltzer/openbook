@@ -2,7 +2,9 @@
 % if part=='Vars':
 <%
 	attributes['render']="Unknown"
-	attributes['type']="harmony_tune_lyrics"
+					attributes['doChords']=True
+					attributes['doVoice']=True
+					attributes['doLyrics']=True
 
 	attributes['title']="Desafinado"
 	attributes['subtitle']="Slightly Out Of Tune"

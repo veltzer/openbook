@@ -2,7 +2,7 @@
 % if part=='Vars':
 <%
 	attributes['render']="Unknown"
-	attributes['type']="tune"
+	attributes['doVoice']=True
 
 	attributes['title']="It might as well be spring"
 	attributes['composer']="Richard Rogers"

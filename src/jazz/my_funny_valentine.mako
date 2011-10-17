@@ -1,7 +1,9 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['type']="harmony_tune_lyrics"
+					attributes['doChords']=True
+					attributes['doVoice']=True
+					attributes['doLyrics']=True
 	attributes['render']="Real"
 
 	attributes['title']="My Funny Valentine"

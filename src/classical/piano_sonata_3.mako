@@ -1,7 +1,7 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['type']="tune"
+	attributes['doVoice']=True
 	attributes['render']="Epdf0"
 
 	attributes['title']="Sonata III"

@@ -2,7 +2,9 @@
 % if part=='Vars':
 <%
 	attributes['render']="Fake"
-	attributes['type']="harmony_tune_lyrics"
+						attributes['doChords']=True
+						attributes['doVoice']=True
+						attributes['doLyrics']=True
 
 	attributes['title']="Darn That Dream"
 	attributes['composer']="Jimmy Van Heusen"

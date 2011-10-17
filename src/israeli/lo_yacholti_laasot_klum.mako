@@ -1,10 +1,10 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doGuitar']=True
-	attributes['doChords']=True
+						attributes['doGuitar']=True
+						attributes['doChords']=True
 	attributes['render']="My"
-	attributes['doExtra']=True
+						attributes['doExtra']=True
 
 	attributes['title']=u"לא יכולתי לעשות כלום"
 	attributes['composer']=u"אילן וירצברג"

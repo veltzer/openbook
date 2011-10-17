@@ -1,7 +1,7 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doOwn']=True
+						attributes['doOwn']=True
 
 	attributes['title']="Torcacita"
 	attributes['subtitle']="South American tune"

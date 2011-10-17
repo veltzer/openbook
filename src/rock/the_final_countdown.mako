@@ -1,8 +1,8 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doGuitar']=True
-	attributes['doOwn']=True
+						attributes['doGuitar']=True
+						attributes['doOwn']=True
 
 	attributes['title']="The Final Countdown"
 	attributes['composer']="Europe"

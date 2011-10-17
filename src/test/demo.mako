@@ -1,7 +1,7 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doOwn']=True
+						attributes['doOwn']=True
 
 	attributes['title']="Desafinado"
 	attributes['subtitle']="Slightly Out Of Tune"
@@ -13,7 +13,7 @@
 
 	attributes['completion']="5"
 
-	attributes['dontimport']="1"
+						attributes['dontimport']="1"
 
 	attributes['uuid']="9a39404e-a26f-11df-aa6e-0019d11e5a41"
 %>
