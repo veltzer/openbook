@@ -158,20 +158,28 @@ endChords={}
 %>
 </%def>
 
-%% lets include the blocks
+%% lets emit the definitions
+${self.defs()}
+
+%% lets always include guitar definitions
+\include "predefined-guitar-fretboards.ly"
+
+%% from here everything needs to go into a loop
+
+%% lets include the blocks (the slash is because we want absolute search and not relative)
 <%namespace file="/${context['attributes']['blocks']}" name="song"/>
 
 %% this causes the variables to be defined...
 ${self.clearVars()}
 ${song.vars()}
 
-%% lets emit the definitions
-${self.defs()}
-
+<%doc>
 % if attributes['guitar']:
 \include "predefined-guitar-fretboards.ly"
 % endif
+</%doc>
 
+%% emitting the header...
 \header {
 	enteredby=\enteredbyval
 	maintainerEmail=\maintainerEmailval
