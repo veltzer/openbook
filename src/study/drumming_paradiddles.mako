@@ -39,7 +39,8 @@ Single Paradiddle (starting with the right hand).
 		%%\remove Forbid_line_break_engraver
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
-		\override StaffSymbol #'line-count = #0
+		%% the next line killed lilypond 2.12.3
+		%%\override StaffSymbol #'line-count = #0
 		%%\override Stem #'Y-extent = ##f
 		%%\override Stem #'transparent = ##t
 	} <<
@@ -74,7 +75,8 @@ Double Paradiddle (starting with the right hand)
 		%%\remove Forbid_line_break_engraver
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
-		\override StaffSymbol #'line-count = #0
+		%% the next line killed lilypond 2.12.3
+		%%\override StaffSymbol #'line-count = #0
 		%%\override Stem #'Y-extent = ##f
 		%%\override Stem #'transparent = ##t
 	} <<
@@ -109,7 +111,8 @@ Triple Paradiddle (starting with the right hand).
 		%%\remove Forbid_line_break_engraver
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
-		\override StaffSymbol #'line-count = #0
+		%% the next line killed lilypond 2.12.3
+		%%\override StaffSymbol #'line-count = #0
 		%%\override Stem #'Y-extent = ##f
 		%%\override Stem #'transparent = ##t
 	} <<
@@ -144,7 +147,8 @@ Paradiddle-Diddle (starting with the right hand).
 		%%\remove Forbid_line_break_engraver
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
-		\override StaffSymbol #'line-count = #0
+		%% the next line killed lilypond 2.12.3
+		%%\override StaffSymbol #'line-count = #0
 		%%\override Stem #'Y-extent = ##f
 		%%\override Stem #'transparent = ##t
 	} <<
