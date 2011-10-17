@@ -219,6 +219,7 @@ ${self.clearVars()}
 ${song.definitions()}
 % endif
 
+%% calculate the vars
 <%
 	myChords='myChords'+attributes['render']
 	myVoice='myVoice'+attributes['render']
@@ -226,31 +227,43 @@ ${song.definitions()}
 	myLyricsmore='myLyricsmore'+attributes['render']
 	myLyricsmoremore='myLyricsmoremore'+attributes['render']
 %>
+		
+%% lets emit the blocks
+% if attributes['doChords']:
+myChords=<%include file="/${attributes['blocks']}" args="part=myChords"/>
+% endif
+% if attributes['doVoice']:
+myVoice=<%include file="/${attributes['blocks']}" args="part=myVoice"/>
+% endif
+% if attributes['doLyrics']:
+myLyrics=<%include file="/${attributes['blocks']}" args="part=myLyrics"/>
+% endif
+% if attributes['doLyricsmore']:
+myLyricsmore=<%include file="/${attributes['blocks']}" args="part=myLyricsmore"/>
+% endif
+% if attributes['doLyricsmoremore']:
+myLyricsmoremore=<%include file="/${attributes['blocks']}" args="part=myLyricsmoremore"/>
+% endif
 
 %% score for printing
 \score {
 	<<
 		% if attributes['doChords']:
-		\new ChordNames="Chords"
-			<%include file="/${attributes['blocks']}" args="part=myChords"/>
+		\new ChordNames="Chords" \myChords
 		% endif
 		% if attributes['doVoice']:
 		\new Staff="Melody" {
-			\new Voice="myvoice"
-			<%include file="/${attributes['blocks']}" args="part=myVoice"/>
+			\new Voice="myvoice" \myVoice
 		}
 		% endif
 		% if attributes['doLyrics']:
-		\new Lyrics="Lyrics" \lyricsto "myvoice"
-			<%include file="/${attributes['blocks']}" args="part=myLyrics"/>
+		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyrics
 		% endif
 		% if attributes['doLyricsmore']:
-		\new Lyrics="Lyrics" \lyricsto "myvoice"
-			<%include file="/${attributes['blocks']}" args="part=myLyricsmore"/>
+		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyricsmore
 		% endif
 		% if attributes['doLyricsmoremore']:
-		\new Lyrics="Lyrics" \lyricsto "myvoice"
-			<%include file="/${attributes['blocks']}" args="part=myLyricsmoremore"/>
+		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyricsmoremore
 		% endif
 	>>
 	\layout {
@@ -261,26 +274,21 @@ ${song.definitions()}
 	\unfoldRepeats
 	<<
 		% if attributes['doChords']:
-		\new ChordNames="Chords"
-			<%include file="/${attributes['blocks']}" args="part=myChords"/>
+		\new ChordNames="Chords" \myChords
 		% endif
 		% if attributes['doVoice']:
 		\new Staff="Melody" {
-			\new Voice="myvoice"
-			<%include file="/${attributes['blocks']}" args="part=myVoice"/>
+			\new Voice="myvoice" \myVoice
 		}
 		% endif
 		% if attributes['doLyrics']:
-		\new Lyrics="Lyrics" \lyricsto "myvoice"
-			<%include file="/${attributes['blocks']}" args="part=myLyrics"/>
+		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyrics
 		% endif
 		% if attributes['doLyricsmore']:
-		\new Lyrics="Lyrics" \lyricsto "myvoice"
-			<%include file="/${attributes['blocks']}" args="part=myLyricsmore"/>
+		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyricsmore
 		% endif
 		% if attributes['doLyricsmoremore']:
-		\new Lyrics="Lyrics" \lyricsto "myvoice"
-			<%include file="/${attributes['blocks']}" args="part=myLyricsmoremore"/>
+		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyricsmoremore
 		% endif
 	>>
 	\midi {
