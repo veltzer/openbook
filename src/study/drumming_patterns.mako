@@ -1,7 +1,6 @@
 <%def name="vars()">
 <%
-	attributes['jazzTune']=True
-	attributes['type']="own"
+	attributes['doOwn']=True
 
 	attributes['title']="Drumming patterns"
 	attributes['style']="Jazz"
@@ -22,7 +21,7 @@
 		RLLRLLRLLRLLRLRL
 </%doc>
 
-<%def name="myOwn()">
+<%def name="Own()">
 \markup {
 Drumming patterns to train with pad over...
 }

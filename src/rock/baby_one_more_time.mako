@@ -1,9 +1,7 @@
 <%def name="vars()">
 <%
-	attributes['jazzTune']=True
-	attributes['guitar']=True
-	attributes['type']="own"
-	attributes['render']="Own"
+	attributes['doGuitar']=True
+	attributes['doOwn']=True
 
 	attributes['title']="Baby One More Time"
 	attributes['composer']="Max Martin"
@@ -27,7 +25,7 @@
 	TODO:
 </%doc>
 
-<%def name="myOwn()">
+<%def name="Own()">
 myChords=\chordmode {
 	\mark "Verse"
 	\startRepeat

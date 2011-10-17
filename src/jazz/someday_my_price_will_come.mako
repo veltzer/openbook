@@ -1,9 +1,8 @@
 <%def name="vars()">
 <%
-	attributes['jazzTune']=True
 	attributes['type']="harmony_tune_lyricsmore"
 	attributes['render']="Real"
-	attributes['extra']=True
+	attributes['doExtra']=True
 
 	attributes['title']="Someday My Prince Will Come"
 	attributes['composer']="Frank Churchill & Larry Morey"

@@ -1,7 +1,6 @@
 <%def name="vars()">
 <%
-	attributes['jazzTune']=True
-	attributes['type']="tune"
+	attributes['doVoice']=True
 	attributes['render']="My"
 
 	attributes['title']="Six to Diminished scale exercises"

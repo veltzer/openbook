@@ -1,7 +1,6 @@
 <%def name="vars()">
 <%
-	attributes['jazzTune']=True
-	attributes['type']="own"
+	attributes['doOwn']=True
 
 	attributes['title']="Comping Rhythms"
 	attributes['style']="Jazz"
@@ -19,7 +18,7 @@
 	TODO:
 </%doc>
 
-<%def name="myOwn()">
+<%def name="Own()">
 \markup {
 Standard Jazz comping pattern...
 }

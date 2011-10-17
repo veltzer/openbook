@@ -1,9 +1,7 @@
 <%def name="vars()">
 <%
-	attributes['jazzTune']=True
-	attributes['guitar']=True
-	attributes['type']="own"
-	attributes['render']="Own"
+	attributes['doGuitar']=True
+	attributes['doOwn']=True
 
 	attributes['title']="Creep"
 	attributes['composer']="Radiohead"
@@ -28,7 +26,7 @@
 	- document the youtube performances.
 </%doc>
 
-<%def name="myOwn()">
+<%def name="Own()">
 myChords=\chordmode {
 	\startChords
 	\startRepeat

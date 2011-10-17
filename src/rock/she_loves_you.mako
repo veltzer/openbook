@@ -1,7 +1,8 @@
 <%def name="vars()">
 <%
-	attributes['jazzTune']=True
-	attributes['type']="harmony_tune_lyrics"
+	attributes['doChords']=True
+	attributes['doVoice']=True
+	attributes['doLyrics']=True
 	attributes['render']="Epdf0"
 
 	attributes['title']="She Loves You"

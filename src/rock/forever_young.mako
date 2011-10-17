@@ -1,9 +1,7 @@
 <%def name="vars()">
 <%
-	attributes['jazzTune']=True
-	attributes['guitar']=True
-	attributes['type']="own"
-	attributes['render']="Own"
+	attributes['doGuitar']=True
+	attributes['doOwn']=True
 
 	attributes['title']="Forever Young"
 	attributes['composer']="Alphaville"
@@ -22,7 +20,7 @@
 	- add you tube performances.
 </%doc>
 
-<%def name="myOwn()">
+<%def name="Own()">
 \score {
 <<
 \chordmode {

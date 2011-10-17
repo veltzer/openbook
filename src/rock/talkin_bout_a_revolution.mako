@@ -1,9 +1,7 @@
 <%def name="vars()">
 <%
-	attributes['jazzTune']=True
-	attributes['guitar']=True
-	attributes['type']="own"
-	attributes['render']="Own"
+	attributes['doGuitar']=True
+	attributes['doOwn']=True
 
 	attributes['title']="Talkin' Bout A Revolution"
 	attributes['composer']="Tracy Chapman"
@@ -29,7 +27,7 @@
 	finger with which to add it with?
 </%doc>
 
-<%def name="myOwn()">
+<%def name="Own()">
 \storePredefinedDiagram \chordmode {g:sus4} #guitar-tuning #"3-3;2-2;o;o;o;3-4;"
 \storePredefinedDiagram \chordmode {c:5.9} #guitar-tuning #"x;3-2;2-1;o;3-3;3-4;"
 \storePredefinedDiagram \chordmode {e:m7} #guitar-tuning #"o;2-1;2-2;o;3-3;3-4;"

@@ -1,7 +1,6 @@
 <%def name="vars()">
 <%
-	attributes['type']="own"
-	attributes['render']="Own"
+	attributes['doOwn']=True
 
 	attributes['title']="Desafinado"
 	attributes['subtitle']="Slightly Out Of Tune"
@@ -24,7 +23,7 @@
 	TODO:
 </%doc>
 
-<%def name="myOwn()">
+<%def name="Own()">
 \score {
 <<
 \chordmode {

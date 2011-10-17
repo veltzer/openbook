@@ -119,7 +119,6 @@ verticalSpace=\markup { \null }
 
 %% some macros for marking parts of jazz tunes
 %% =====================================================================
-%% if attributes['jazzTune']:
 startSong={}
 endSong=\bar "|."
 startPart={}
@@ -129,7 +128,6 @@ endIntro={}
 %% this causes chords that do not change to disappear...
 startChords=\set chordChanges = ##t
 endChords={}
-%% endif
 </%def>
 
 <%def name="clearVars()">
@@ -152,7 +150,6 @@ endChords={}
 	attributes['type']=""
 	attributes['render']=""
 	attributes['guitar']=False
-	attributes['jazzTune']=False
 	attributes['extra']=False
 	attributes['definitions']=False
 	
@@ -215,56 +212,60 @@ ${self.clearVars()}
 	lyricsurl="${attributes['lyricsurl']}"
 }
 
-% if attributes['definitions']:
-${song.definitions()}
+% if attributes['doPrep']:
+${song.prep()}
 % endif
 
 %% calculate the vars
 <%
-	myChords='myChords'+attributes['render']
-	myVoice='myVoice'+attributes['render']
-	myLyrics='myLyrics'+attributes['render']
-	myLyricsmore='myLyricsmore'+attributes['render']
-	myLyricsmoremore='myLyricsmoremore'+attributes['render']
+	Chords='Chords'+attributes['render']
+	Voice='Voice'+attributes['render']
+	Lyrics='Lyrics'+attributes['render']
+	Lyricsmore='Lyricsmore'+attributes['render']
+	Lyricsmoremore='Lyricsmoremore'+attributes['render']
 %>
 		
 %% lets emit the blocks
 % if attributes['doChords']:
-myChords=<%include file="/${attributes['blocks']}" args="part=myChords"/>
+Chords=<%include file="/${attributes['blocks']}" args="part=Chords"/>
 % endif
 % if attributes['doVoice']:
-myVoice=<%include file="/${attributes['blocks']}" args="part=myVoice"/>
+Voice=<%include file="/${attributes['blocks']}" args="part=Voice"/>
 % endif
 % if attributes['doLyrics']:
-myLyrics=<%include file="/${attributes['blocks']}" args="part=myLyrics"/>
+Lyrics=<%include file="/${attributes['blocks']}" args="part=Lyrics"/>
 % endif
 % if attributes['doLyricsmore']:
-myLyricsmore=<%include file="/${attributes['blocks']}" args="part=myLyricsmore"/>
+Lyricsmore=<%include file="/${attributes['blocks']}" args="part=Lyricsmore"/>
 % endif
 % if attributes['doLyricsmoremore']:
-myLyricsmoremore=<%include file="/${attributes['blocks']}" args="part=myLyricsmoremore"/>
+Lyricsmoremore=<%include file="/${attributes['blocks']}" args="part=Lyricsmoremore"/>
 % endif
+
+<%def name="AllParts()">
+% if attributes['doChords']:
+\new ChordNames="Chords" \Chords
+% endif
+% if attributes['doVoice']:
+\new Staff="Melody" {
+\new Voice="voice" \Voice
+}
+% endif
+% if attributes['doLyrics']:
+\new Lyrics="Lyrics" \lyricsto "voice" \Lyrics
+% endif
+% if attributes['doLyricsmore']:
+\new Lyrics="Lyrics" \lyricsto "voice" \Lyricsmore
+% endif
+% if attributes['doLyricsmoremore']:
+\new Lyrics="Lyrics" \lyricsto "voice" \Lyricsmoremore
+% endif
+</%def>
 
 %% score for printing
 \score {
 	<<
-		% if attributes['doChords']:
-		\new ChordNames="Chords" \myChords
-		% endif
-		% if attributes['doVoice']:
-		\new Staff="Melody" {
-			\new Voice="myvoice" \myVoice
-		}
-		% endif
-		% if attributes['doLyrics']:
-		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyrics
-		% endif
-		% if attributes['doLyricsmore']:
-		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyricsmore
-		% endif
-		% if attributes['doLyricsmoremore']:
-		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyricsmoremore
-		% endif
+		${self.AllParts()}
 	>>
 	\layout {
 	}
@@ -273,23 +274,7 @@ myLyricsmoremore=<%include file="/${attributes['blocks']}" args="part=myLyricsmo
 \score {
 	\unfoldRepeats
 	<<
-		% if attributes['doChords']:
-		\new ChordNames="Chords" \myChords
-		% endif
-		% if attributes['doVoice']:
-		\new Staff="Melody" {
-			\new Voice="myvoice" \myVoice
-		}
-		% endif
-		% if attributes['doLyrics']:
-		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyrics
-		% endif
-		% if attributes['doLyricsmore']:
-		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyricsmore
-		% endif
-		% if attributes['doLyricsmoremore']:
-		\new Lyrics="Lyrics" \lyricsto "myvoice" \myLyricsmoremore
-		% endif
+		${self.AllParts()}
 	>>
 	\midi {
 	}
@@ -303,16 +288,16 @@ myLyricsmoremore=<%include file="/${attributes['blocks']}" args="part=myLyricsmo
 ##			\override BarLine #'bar-size = #4
 ##			\consists "Bar_engraver"
 ##		}
-##		${self.myChords()}
+##		${self.Chords()}
 ##	>>
 ##	\midi {}
 ##	\layout {}
 ##}
 ##% endif
 
-% if attributes['type']=='own':
-${song.myOwn()}
+% if attributes['doOwn']:
+${song.Own()}
 % endif
-% if attributes['extra']:
+% if attributes['doExtra']:
 ${song.extra()}
 % endif

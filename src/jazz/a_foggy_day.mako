@@ -1,12 +1,11 @@
 <%page args="part"/>
-% if part=='vars':
+% if part=='Vars':
 <%
-	attributes['jazzTune']=True
 	attributes['doChords']=True
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
-	attributes['type']="harmony_tune_lyrics"
 	attributes['render']="Fake"
+
 	attributes['title']="A Foggy Day"
 	attributes['subtitle']="From 'A Damsel In Distress'"
 	attributes['composer']="George Gershwin"
@@ -26,13 +25,13 @@
 %>
 % endif
 
-% if part=='doc':
+% if part=='Doc':
 	DONE:
 	TODO:
 	- fill out what's been done for this tune.
 % endif
 
-% if part=='myChordsReal':
+% if part=='ChordsReal':
 \chordmode {
 	\startChords
 
@@ -60,7 +59,7 @@
 }
 % endif
 
-% if part=='myVoiceReal':
+% if part=='VoiceReal':
 \relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
@@ -82,7 +81,7 @@
 }
 % endif
 
-% if part=='myLyricsReal':
+% if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 	A Fog -- gy Day __ in Lon -- don town __ ha -- d me low __ and had me down. __
@@ -92,7 +91,7 @@
 }
 % endif
 
-% if part=='myChordsFake':
+% if part=='ChordsFake':
 \chordmode {
 	\startChords
 
@@ -132,7 +131,7 @@
 }
 % endif
 
-% if part=='myVoiceFake':
+% if part=='VoiceFake':
 \relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
@@ -166,7 +165,7 @@
 }
 % endif
 
-% if part=='myLyricsFake':
+% if part=='LyricsFake':
 \lyricmode {
 	A Fog -- gy Day __ in Lon -- don town __ had me low __ and had me down. __
 	I viewed the morn -- ing with a -- larm, __ the Brit -- ish Mu -- se -- um had lost its charm. __

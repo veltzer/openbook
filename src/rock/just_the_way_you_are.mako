@@ -1,9 +1,7 @@
 <%def name="vars()">
 <%
-	attributes['jazzTune']=True
-	attributes['guitar']=True
-	attributes['type']="own"
-	attributes['render']="Own"
+	attributes['doGuitar']=True
+	attributes['doOwn']=True
 
 	attributes['title']="Just The Way You Are"
 	attributes['composer']="Billy Joel"
@@ -32,7 +30,7 @@
 		(currently they reside above the lyrics which is weird).
 </%doc>
 
-<%def name="myOwn()">
+<%def name="Own()">
 %% all of the parts are taken from the notes I have of Bill Joel
 myChords=\chordmode {
 	\startChords

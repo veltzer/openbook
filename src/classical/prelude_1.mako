@@ -1,8 +1,6 @@
 <%def name="vars()">
 <%
-	attributes['jazzTune']=True
-	attributes['type']="own"
-	attributes['render']="Own"
+	attributes['doOwn']=True
 
 	attributes['title']="Prelude and Fugue No. 1 in C major"
 	attributes['subtitle']="Well-Tempered Clavier, Book 1"
@@ -31,7 +29,7 @@
 	TODO:
 </%doc>
 
-<%def name="myOwn()">
+<%def name="Own()">
 myChords=\chordmode {
 	\startChords
 
