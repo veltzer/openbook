@@ -356,6 +356,7 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 	\layout {
 	}
 }
+% if attributes['midi']:
 %% score for midi
 \score {
 	\unfoldRepeats
@@ -411,6 +412,7 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 	\midi {
 	}
 }
+% endif
 
 ## I may need the following snipplet to have separators in chord only melodies:
 ##\score {

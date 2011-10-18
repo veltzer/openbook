@@ -31,6 +31,7 @@ attr['files']=glob.glob("src/jazz/*.mako")
 attr['book']=True
 attr['toc']=True
 attr['inline']=True
+attr['midi']=False
 file.write(template.render(attributes=attr))
 file.close()
 # python 3
