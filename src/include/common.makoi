@@ -114,6 +114,7 @@ endChords={}
 	attributes['footer']=""
 	attributes['tagline']=""
 
+	attributes['dedication']=""
 	attributes['title']=""
 	attributes['subtitle']=""
 	attributes['subsubtitle']=""
@@ -121,10 +122,11 @@ endChords={}
 	attributes['style']=""
 	attributes['piece']=""
 	attributes['poet']=""
+	attributes['instrument']=""
 
 	attributes['copyright']=""
 	attributes['copyrightextra']=""
-	
+
 	attributes['completion']=""
 	attributes['uuid']=""
 
@@ -137,7 +139,7 @@ endChords={}
 	attributes['doExtra']=False
 	attributes['doPrep']=False
 	attributes['doOwn']=False
-	
+
 	attributes['doChords']=False
 	attributes['doVoice']=False
 	attributes['doLyrics']=False
@@ -154,14 +156,21 @@ ${self.defs()}
 %% lets always include guitar definitions
 \include "predefined-guitar-fretboards.ly"
 
-%% from here everything needs to go into a loop
+%% book header
+% if attributes['book']:
+\book {
+% endif
+% if attributes['toc']:
+\markuplines \table-of-contents
+\pageBreak
+% endif
 
-%% lets include the blocks (the slash is because we want absolute search and not relative)
-<%namespace file="/${context['attributes']['blocks']}" name="song"/>
+%% from here everything needs to go into a loop
+% for file in attributes['files']:
 
 %% this causes the variables to be defined...
 ${self.clearVars()}
-<%include file="/${attributes['blocks']}" args="part='Vars'"/>
+<%include file="/${file}" args="part='Vars'"/>
 
 %% now play with the variables that depend on language
 % if attributes['copyright']=="":
@@ -170,7 +179,7 @@ ${self.clearVars()}
 	attributes['copyright']=u"-- עיזרו לי למלא זכויות יוצרים --"
 %>
 % endif
-% if not attributes['heb']:
+% if attributes['heb']==False:
 <%
 	attributes['copyright']="-- help me fill it out copyright --"
 %>
@@ -208,13 +217,19 @@ footervalheb=#"זה הטקסט התחתון"
 % endif
 </%doc>
 
+% if attributes['toc']:
+\tocItem \markup "${attributes['title']}"
+% endif
+
 %% emitting the header...
+<%doc>
 \header {
 	enteredby="${attributes['enteredby']}"
 	maintainerEmail="${attributes['maintainerEmail']}"
 	footer="${attributes['footer']}"
 	tagline=${attributes['tagline']}
 
+	dedication="${attributes['dedication']}"
 	title="${attributes['title']}"
 	subtitle="${attributes['subtitle']}"
 	subsubtitle="${attributes['subsubtitle']}"
@@ -233,12 +248,30 @@ footervalheb=#"זה הטקסט התחתון"
 	idyoutuberemark="${attributes['idyoutuberemark']}"
 	lyricsurl="${attributes['lyricsurl']}"
 }
+</%doc>
+%% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
+\markup {
+	\column {
+		\fill-line { "${attributes['dedication']}" }
+		\override #'(baseline-skip . 3.5)
+		\column {
+			\huge \larger \bold
+			\fill-line { \larger "${attributes['title']}" }
+			\fill-line { \large \smaller \bold \larger "${attributes['subtitle']}" }
+			\fill-line { \smaller \bold "${attributes['subsubtitle']}" }
+			\fill-line {
+				"${attributes['poet']}" { \large \bold "${attributes['instrument']}" }
+				"${attributes['composer']}"
+			}
+		}
+	}
+}
 
-% if not attributes['doOwn']:
+% if attributes['doOwn']==False:
 
 %% include the preparatory stuff, if there is any
 % if attributes['doPrep']:
-<%include file="/${attributes['blocks']}" args="part='Prep'"/>
+<%include file="/${file}" args="part='Prep'"/>
 % endif
 
 %% calculate the vars
@@ -249,48 +282,76 @@ footervalheb=#"זה הטקסט התחתון"
 	Lyricsmore='Lyricsmore'+attributes['render']
 	Lyricsmoremore='Lyricsmoremore'+attributes['render']
 %>
-		
+
+% if attributes['inline']==False:
 %% lets emit the blocks
 % if attributes['doChords']:
-Chords=<%include file="/${attributes['blocks']}" args="part=Chords"/>
+Chords=<%include file="/${file}" args="part=Chords"/>
 % endif
 % if attributes['doVoice']:
-Voice=<%include file="/${attributes['blocks']}" args="part=Voice"/>
+Voice=<%include file="/${file}" args="part=Voice"/>
 % endif
 % if attributes['doLyrics']:
-Lyrics=<%include file="/${attributes['blocks']}" args="part=Lyrics"/>
+Lyrics=<%include file="/${file}" args="part=Lyrics"/>
 % endif
 % if attributes['doLyricsmore']:
-Lyricsmore=<%include file="/${attributes['blocks']}" args="part=Lyricsmore"/>
+Lyricsmore=<%include file="/${file}" args="part=Lyricsmore"/>
 % endif
 % if attributes['doLyricsmoremore']:
-Lyricsmoremore=<%include file="/${attributes['blocks']}" args="part=Lyricsmoremore"/>
+Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 % endif
-
-<%def name="AllParts()">
-% if attributes['doChords']:
-\new ChordNames="Chords" \Chords
 % endif
-% if attributes['doVoice']:
-\new Staff="Melody" {
-\new Voice="Voice" \Voice
-}
-% endif
-% if attributes['doLyrics']:
-\new Lyrics="Lyrics" \lyricsto "Voice" \Lyrics
-% endif
-% if attributes['doLyricsmore']:
-\new Lyrics="Lyrics" \lyricsto "Voice" \Lyricsmore
-% endif
-% if attributes['doLyricsmoremore']:
-\new Lyrics="Lyrics" \lyricsto "Voice" \Lyricsmoremore
-% endif
-</%def>
 
 %% score for printing
 \score {
 	<<
-		${self.AllParts()}
+% if attributes['doChords']:
+\new ChordNames="Chords"
+% if attributes['inline']:
+	<%include file="/${file}" args="part=Chords"/>
+% endif
+% if attributes['inline']==False:
+	\Chords
+% endif
+% endif
+% if attributes['doVoice']:
+\new Staff="Melody" {
+\new Voice="Voice"
+% if attributes['inline']:
+	<%include file="/${file}" args="part=Voice"/>
+% endif
+% if attributes['inline']==False:
+	\Voice
+% endif
+}
+% endif
+% if attributes['doLyrics']:
+\new Lyrics="Lyrics" \lyricsto "Voice"
+% if attributes['inline']:
+	<%include file="/${file}" args="part=Lyrics"/>
+% endif
+% if attributes['inline']==False:
+	\Lyrics
+% endif
+% endif
+% if attributes['doLyricsmore']:
+\new Lyrics="Lyrics" \lyricsto "Voice"
+% if attributes['inline']:
+	<%include file="/${file}" args="part=Lyricsmore"/>
+% endif
+% if attributes['inline']==False:
+	\Lyricsmore
+% endif
+% endif
+% if attributes['doLyricsmoremore']:
+\new Lyrics="Lyrics" \lyricsto "Voice"
+% if attributes['inline']:
+	<%include file="/${file}" args="part=Lyricsmoremore"/>
+% endif
+% if attributes['inline']==False:
+	\Lyricsmoremore
+% endif
+% endif
 	>>
 	\layout {
 	}
@@ -299,7 +360,53 @@ Lyricsmoremore=<%include file="/${attributes['blocks']}" args="part=Lyricsmoremo
 \score {
 	\unfoldRepeats
 	<<
-		${self.AllParts()}
+% if attributes['doChords']:
+\new ChordNames="Chords"
+% if attributes['inline']:
+	<%include file="/${file}" args="part=Chords"/>
+% endif
+% if attributes['inline']==False:
+	\Chords
+% endif
+% endif
+% if attributes['doVoice']:
+\new Staff="Melody" {
+\new Voice="Voice"
+% if attributes['inline']:
+	<%include file="/${file}" args="part=Voice"/>
+% endif
+% if attributes['inline']==False:
+	\Voice
+% endif
+}
+% endif
+% if attributes['doLyrics']:
+\new Lyrics="Lyrics" \lyricsto "Voice"
+% if attributes['inline']:
+	<%include file="/${file}" args="part=Lyrics"/>
+% endif
+% if attributes['inline']==False:
+	\Lyrics
+% endif
+% endif
+% if attributes['doLyricsmore']:
+\new Lyrics="Lyrics" \lyricsto "Voice"
+% if attributes['inline']:
+	<%include file="/${file}" args="part=Lyricsmore"/>
+% endif
+% if attributes['inline']==False:
+	\Lyricsmore
+% endif
+% endif
+% if attributes['doLyricsmoremore']:
+\new Lyrics="Lyrics" \lyricsto "Voice"
+% if attributes['inline']:
+	<%include file="/${file}" args="part=Lyricsmoremore"/>
+% endif
+% if attributes['inline']==False:
+	\Lyricsmoremore
+% endif
+% endif
 	>>
 	\midi {
 	}
@@ -318,8 +425,24 @@ Lyricsmoremore=<%include file="/${attributes['blocks']}" args="part=Lyricsmoremo
 % endif
 
 % if attributes['doOwn']:
-<%include file="/${attributes['blocks']}" args="part='Own'"/>
+<%include file="/${file}" args="part='Own'"/>
 % endif
 % if attributes['doExtra']:
-<%include file="/${attributes['blocks']}" args="part='Extra'"/>
+<%include file="/${file}" args="part='Extra'"/>
+% endif
+
+% if attributes['toc']:
+% endif
+
+% if attributes['book']:
+\markup {
+	\null
+}
+% endif
+
+% endfor
+
+%% book footer
+% if attributes['book']:
+}
 % endif

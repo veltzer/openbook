@@ -5,7 +5,6 @@
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
 	attributes['render']="Unknown"
-	attributes['doPrep']=True
 
 	attributes['title']="Hallelujah I Love Him(her) So"
 	attributes['composer']="Ray Charles"
@@ -36,26 +35,21 @@
 }
 % endif
 
-% if part=='Prep':
-phraseA={ r4 d'8. c'16 aes8. g16 f8. d16 }
-phraseB={ r8. c'16 d'8. c'16 aes8. g16 f8. d16 }
-% endif
-
 % if part=='VoiceUnknown':
 \relative c {
 	\key f \major
 	\time 4/4
-	\phraseA | f4 f8 aes8~ aes8 r8 r4 |
-	\phraseB | f4 f8 d8(~ d8. )c16 r4 |
-	\phraseA | f4 f8 f8~ f8 r8 r4 |
-	\phraseB | f4 f8 f8~ f8. c16 d8. f16 |
+	r4 d'8. c'16 aes8. g16 f8. d16 | f4 f8 aes8~ aes8 r8 r4 |
+	r8. c'16 d'8. c'16 aes8. g16 f8. d16 | f4 f8 d8(~ d8. )c16 r4 |
+	r4 d'8. c'16 aes8. g16 f8. d16 | f4 f8 f8~ f8 r8 r4 |
+	r8. c'16 d'8. c'16 aes8. g16 f8. d16 | f4 f8 f8~ f8. c16 d8. f16 |
 	a8 c'4. r4 a8. a16 | g8 f4. r4 aes8. g16 |
 	aes8. g16 f8. d16 f4 f8 f8 | f8 r8 r4 r2 |
 
-	\phraseB | f4 f8 aes8~ aes8 r8 r4 |
-	\phraseB | f4 f8 d8(~ d8. )c16 r4 |
-	\phraseA | f4 f8 f8~ f8 r8 r4 |
-	\phraseB | f4 f8 f8~ f8. c16 d8. f16 |
+	r8. c'16 d'8. c'16 aes8. g16 f8. d16 | f4 f8 aes8~ aes8 r8 r4 |
+	r8. c'16 d'8. c'16 aes8. g16 f8. d16 | f4 f8 d8(~ d8. )c16 r4 |
+	r4 d'8. c'16 aes8. g16 f8. d16 | f4 f8 f8~ f8 r8 r4 |
+	r8. c'16 d'8. c'16 aes8. g16 f8. d16 | f4 f8 f8~ f8. c16 d8. f16 |
 	a8 c'4. r4 a8. a16 | g8 f4. r4 aes8. g16 |
 	aes8. g16 f8. d16 f4 f8 f8 | f8 r8 r4 r2 |
 }

@@ -252,6 +252,7 @@ PartVoice=\relative c'' {
 }
 }
 \score {
+  	mydef=\markup { "foobar" }
 	<<
 		\new ChordNames="Chords" \PartChords
 		\new Staff="Melody" {
