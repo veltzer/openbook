@@ -130,6 +130,7 @@ will lead to multiple midi files produced when that file gets processed.
 Documentation for lilypond:
 ===========================
 - A snipplet repository: http://lsr.dsi.unimi.it/
+- A good pdf: http://wikitex.org/doc/lilypond.pdf
 
 Doing nothing in lilypond
 =========================
