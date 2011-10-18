@@ -122,7 +122,7 @@
 
 	Once __ __ I cried __ __
 	at the thought I was fool -- ish and proud
-	and let you say good -- bye. __
+	and let you say good -- bye. __ __
 }
 % endif
 
