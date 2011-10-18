@@ -144,6 +144,7 @@ endChords={}
 	attributes['doLyricsmore']=False
 	attributes['doLyricsmoremore']=False
 	attributes['render']=""
+	attributes['heb']=False
 %>
 </%def>
 
@@ -168,11 +169,24 @@ ${self.clearVars()}
 <%
 	attributes['copyright']=u"-- עיזרו לי למלא זכויות יוצרים --"
 %>
+% endif
 % if not attributes['heb']:
 <%
 	attributes['copyright']="-- help me fill it out copyright --"
 %>
 % endif
+% endif
+
+% if attributes['tagline']=="":
+% if attributes['heb']:
+<%
+	attributes['tagline']="\markup {\small {Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at \date, Engraved by lilypond \lilyver}}"
+%>
+% endif
+% if attributes['heb']==False:
+<%
+	attributes['tagline']="\markup {\small {Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at \date, Engraved by lilypond \lilyver}}"
+%>
 % endif
 % endif
 
@@ -186,8 +200,6 @@ maintainerEmailval=#"mark.veltzer@gmail.com"
 maintainerEmailvalheb=#"mark.veltzer@gmail.com"
 footerval=#"this is the footer"
 footervalheb=#"זה הטקסט התחתון"
-taglineval=\markup {\small {Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at \date, Engraved by lilypond \lilyver}}
-taglinevalheb=\markup {\small {Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at \date, Engraved by lilypond \lilyver}}
 </%doc>
 
 <%doc>
@@ -201,7 +213,7 @@ taglinevalheb=\markup {\small {Typeset by Mark Veltzer <mark.veltzer@gmail.com>,
 	enteredby="${attributes['enteredby']}"
 	maintainerEmail="${attributes['maintainerEmail']}"
 	footer="${attributes['footer']}"
-	tagline="${attributes['tagline']}"
+	tagline=${attributes['tagline']}
 
 	title="${attributes['title']}"
 	subtitle="${attributes['subtitle']}"
