@@ -1,6 +1,6 @@
-mako:
-=====
-turn all %doc blocks in to %def blocks (like in "a_foggy_day").
+Now:
+====
+- do a better book with the new templating system (with index).
 
 parts in the song:
 ==================
