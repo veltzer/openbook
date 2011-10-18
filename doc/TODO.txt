@@ -7,6 +7,12 @@ Now:
 	Need to bring it back...
 	This will keep the size of the .ly files down and will make them more
 	editable by hand.
+- find out how to give names to various snipplets of notes and thus write less.
+	This is related to the previous TODO item.
+	This was done in two of the tunes but I removed it because of technical
+	difficulties in producing the final book.
+- capture the output of lilypond and check for warnings. I currently do not do that
+	and so I miss warnings.
 
 parts in the song:
 ==================
