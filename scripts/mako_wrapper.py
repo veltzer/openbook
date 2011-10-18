@@ -6,7 +6,7 @@ import mako.template
 import mako.lookup
 import os # for os.chmod, os.unlink
 
-if len(sys.argv)!=2:
+if len(sys.argv)!=3:
 	raise ValueError('command line issue')
 
 input_encoding='utf-8'
