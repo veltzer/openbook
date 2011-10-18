@@ -1,6 +1,12 @@
 Now:
 ====
 - do a better book with the new templating system (with index).
+- I'm not doing inlining in the ly files. This means that the chords, tune
+	and other big parts are repeated in the individual ly files more than once.
+	I once did it and removed it as part of the effort to build the book.
+	Need to bring it back...
+	This will keep the size of the .ly files down and will make them more
+	editable by hand.
 
 parts in the song:
 ==================

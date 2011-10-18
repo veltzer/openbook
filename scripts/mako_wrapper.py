@@ -6,7 +6,7 @@ import mako.template
 import mako.lookup
 import os # for os.chmod, os.unlink
 
-if len(sys.argv)<2:
+if len(sys.argv)!=2:
 	raise ValueError('command line issue')
 
 input_encoding='utf-8'
@@ -27,7 +27,10 @@ file=open(p_output,'w')
 #file.write((template.render_unicode(attributes={})))
 # python 2
 attr={}
-attr['blocks']=p_input
+attr['files']=[ p_input ]
+attr['book']=False
+attr['toc']=False
+attr['inline']=True
 file.write(template.render(attributes=attr))
 file.close()
 # python 3
