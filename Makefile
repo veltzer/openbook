@@ -315,7 +315,7 @@ book: $(OUT_BOOK)
 $(OUT_BOOK): $(FILES_MAKO) $(ALL_DEP) $(MAKE_BOOK_WRAPPER_DEP)
 	$(info doing [$@])
 	$(Q)$(MAKE_BOOK_WRAPPER) $(OUT_LY)
-	$(Q)lilypond $(OUT_LY) --output=$(OUT_BASE)
+	$(Q)lilypond --output=$(OUT_BASE) $(OUT_LY)
 # this is the old thing with pdfjoin...
 #$(OUT_BOOK): $(FILES_PDF) $(ALL_DEP) $(MAKE_BOOK_WRAPPER_DEP)
 #	$(info doing [$@])
