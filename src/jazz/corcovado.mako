@@ -123,8 +123,8 @@
 	un -- til __ the fina -- al flick -- er __ of life's em __ -- ber. __
 
 	I who __ was lost and lone -- ly, __ __
-	be -- liev __ -- ing life was on -- ly
-	a bit -- ter tra -- gic joke have found with you
-	the mean __ -- ing of ex -- is -- tence, oh, __ my love. __
+%%	be -- liev __ -- ing life was on -- ly
+%%	a bit -- ter tra -- gic joke have found with you
+%%	the mean __ -- ing of ex -- is -- tence, oh, __ my love. __
 }
 % endif
