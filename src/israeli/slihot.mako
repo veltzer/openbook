@@ -127,7 +127,7 @@
 }
 % endif
 
-% if part=='LyricsMymore':
+% if part=='LyricsmoreMy':
 \lyricmode {
 	_ _
 	_ _ _ _ _ _ _ _ _ _ _ _ _
