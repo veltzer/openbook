@@ -48,6 +48,7 @@ MIDI2WAV_WRAPPER:=scripts/midi2wav.pl
 MIDI2OGG_WRAPPER:=scripts/midi2ogg.pl
 MIDI2MP3_WRAPPER:=scripts/midi2mp3.pl
 MAKE_BOOK_WRAPPER:=scripts/make_book.pl
+MAKE_BOOK_WRAPPER:=scripts/mako_book.py
 
 ########
 # BODY #
@@ -112,7 +113,9 @@ FILES_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO)
 FILES_WAV:=$(addsuffix .wav,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_MP3:=$(addsuffix .mp3,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_OGG:=$(addsuffix .ogg,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
-OUT_BOOK:=out/openbook.pdf
+OUT_BOOK:=$(OUT_DIR)/openbook.pdf
+OUT_BASE:=$(OUT_DIR)/openbook
+OUT_LY:=$(OUT_DIR)/openbook.ly
 
 ifeq ($(DO_LY),1)
 	ALL:=$(ALL) $(FILES_LY)
@@ -309,9 +312,14 @@ $(FILES_MP3): %.mp3: %.midi $(ALL_DEP) $(MIDI2MP3_WRAPPER_DEP)
 .PHONY: book
 book: $(OUT_BOOK) 
 	$(info doing [$@])
-$(OUT_BOOK): $(FILES_PDF) $(ALL_DEP) $(MAKE_BOOK_WRAPPER_DEP)
+$(OUT_BOOK): $(FILES_MAKO) $(ALL_DEP) $(MAKE_BOOK_WRAPPER_DEP)
 	$(info doing [$@])
-	$(Q)$(MAKE_BOOK_WRAPPER) $@ $(FILES_LY)
+	$(Q)$(MAKE_BOOK_WRAPPER) $(OUT_LY)
+	$(Q)lilypond $(OUT_LY) --output=$(OUT_BASE)
+# this is the old thing with pdfjoin...
+#$(OUT_BOOK): $(FILES_PDF) $(ALL_DEP) $(MAKE_BOOK_WRAPPER_DEP)
+#	$(info doing [$@])
+#	$(Q)$(MAKE_BOOK_WRAPPER) $@ $(FILES_LY)
 
 # include the deps files (no warnings)
 ifeq ($(USE_LYD),1)

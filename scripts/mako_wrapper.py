@@ -31,6 +31,7 @@ attr['files']=[ p_input ]
 attr['book']=False
 attr['toc']=False
 attr['inline']=True
+attr['midi']=True
 file.write(template.render(attributes=attr))
 file.close()
 # python 3
