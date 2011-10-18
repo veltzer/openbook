@@ -117,17 +117,21 @@ endChords={}
 	attributes['title']=""
 	attributes['subtitle']=""
 	attributes['subsubtitle']=""
-	attributes['structure']=""
-	attributes['copyright']=""
-	attributes['copyrightextra']=""
 	attributes['composer']=""
 	attributes['style']=""
-	attributes['lyricsurl']=""
 	attributes['piece']=""
 	attributes['poet']=""
+
+	attributes['copyright']=""
+	attributes['copyrightextra']=""
+	
 	attributes['completion']=""
 	attributes['uuid']=""
+
+	attributes['structure']=""
 	attributes['idyoutube']=""
+	attributes['idyoutuberemark']=""
+	attributes['lyricsurl']=""
 
 	attributes['doGuitar']=False
 	attributes['doExtra']=False
@@ -213,9 +217,8 @@ taglinevalheb=\markup {\small {Typeset by Mark Veltzer <mark.veltzer@gmail.com>,
 	uuid="${attributes['uuid']}"
 
 	structure="${attributes['structure']}"
-
 	idyoutube="${attributes['idyoutube']}"
-
+	idyoutuberemark="${attributes['idyoutuberemark']}"
 	lyricsurl="${attributes['lyricsurl']}"
 }
 
