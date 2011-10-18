@@ -40,7 +40,7 @@
 
 	\startSong
 
-	\mark "Intro"
+	\mark "פתיחה"
 	\startPart
 
 	\partial 4 r4

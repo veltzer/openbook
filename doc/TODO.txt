@@ -2,6 +2,11 @@ mako:
 =====
 turn all %doc blocks in to %def blocks (like in "a_foggy_day").
 
+parts in the song:
+==================
+In hebrew I want it to read "helek alef" "ptiha" etc.. In English A, B, Intro...
+Make a set of macros and use them.
+
 licensing:
 ==========
 embed a licence in all of the tunes.
