@@ -112,7 +112,7 @@
 }
 % endif
 
-% if part=='LyricsmoreRealmore':
+% if part=='LyricsmoremoreReal':
 \lyricmode {
 	The thought of how we met
 	Still lin -- gers on

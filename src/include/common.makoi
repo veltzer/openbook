@@ -10,33 +10,6 @@
 date=#(strftime "%T %d-%m-%Y" (localtime (current-time)))
 lilyver=#(lilypond-version)
 
-%% default values for headers
-%%=======================================================================
-subsubtitleval=#"Built by Mark Veltzer <mark.veltzer@gmail.com> at esyscmd(date)"
-subsubtitlevalheb=#"נבנה על ידי מרק ולצר mark.veltzer@gmail.com ב esyscmd(date)"
-%%subsubtitle_val=\date
-enteredbyval=#"Mark Veltzer"
-enteredbyvalheb=#"מרק ולצר"
-maintainerEmailval=#"mark.veltzer@gmail.com"
-maintainerEmailvalheb=#"mark.veltzer@gmail.com"
-footerval=#"this is the footer"
-footervalheb=#"זה הטקסט התחתון"
-copyrightval=#"-- help me fill it out copyright --"
-copyrightvalheb=#"-- עיזרו לי למלא זכויות יוצרים --"
-copyrightvalstudy=#"-- no copyright notice for study materials --"
-completionval=#"0"
-taglineval=\markup {\small {Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at \date, Engraved by lilypond \lilyver}}
-taglinevalheb=\markup {\small {Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at \date, Engraved by lilypond \lilyver}}
-%%define(default_header_heb,
-%%	enteredby=enteredbyval
-%%	maintainerEmail=maintainerEmailvalheb
-%%	footer=footervalheb
-%%	copyright=copyrightvalheb
-%%	completion=completionval
-%%	tagline=taglinevalheb
-%%	style="ישראלי"
-%%	poet="לא מולא"
-%%)
 %% setting instruments for midi generation (bah - this doesn't work...)
 %%=====================================================================
 %%\set ChordNames.midiInstrument = #"acoustic grand"
@@ -132,12 +105,20 @@ endChords={}
 
 <%def name="clearVars()">
 <%
+	# these are variables passed to the template for its use
 	attributes['copyrightvalstudy']="-- no copyright notice for study materials --"
+
 	# these are the default values for the variables
+	attributes['enteredby']=""
+	attributes['maintainerEmail']=""
+	attributes['footer']=""
+	attributes['tagline']=""
+
 	attributes['title']=""
 	attributes['subtitle']=""
+	attributes['subsubtitle']=""
 	attributes['structure']=""
-	attributes['copyright']="-- help me fill it out copyright --"
+	attributes['copyright']=""
 	attributes['copyrightextra']=""
 	attributes['composer']=""
 	attributes['style']=""
@@ -177,6 +158,34 @@ ${self.defs()}
 ${self.clearVars()}
 <%include file="/${attributes['blocks']}" args="part='Vars'"/>
 
+%% now play with the variables that depend on language
+% if attributes['copyright']=="":
+% if attributes['heb']:
+<%
+	attributes['copyright']=u"-- עיזרו לי למלא זכויות יוצרים --"
+%>
+% if not attributes['heb']:
+<%
+	attributes['copyright']="-- help me fill it out copyright --"
+%>
+% endif
+% endif
+% endif
+
+<%doc>
+do all of these...
+subsubtitleval=#"Built by Mark Veltzer <mark.veltzer@gmail.com> at esyscmd(date)"
+subsubtitlevalheb=#"נבנה על ידי מרק ולצר mark.veltzer@gmail.com ב esyscmd(date)"
+enteredbyval=#"Mark Veltzer"
+enteredbyvalheb=#"מרק ולצר"
+maintainerEmailval=#"mark.veltzer@gmail.com"
+maintainerEmailvalheb=#"mark.veltzer@gmail.com"
+footerval=#"this is the footer"
+footervalheb=#"זה הטקסט התחתון"
+taglineval=\markup {\small {Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at \date, Engraved by lilypond \lilyver}}
+taglinevalheb=\markup {\small {Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at \date, Engraved by lilypond \lilyver}}
+</%doc>
+
 <%doc>
 % if attributes['doGuitar']:
 \include "predefined-guitar-fretboards.ly"
@@ -185,17 +194,14 @@ ${self.clearVars()}
 
 %% emitting the header...
 \header {
-	enteredby=\enteredbyval
-	maintainerEmail=\maintainerEmailval
-	footer=\footerval
-	copyright=\copyrightval
-	completion=\completionval
-	tagline=\taglineval
-	style="not filled"
-	poet="unknown"
+	enteredby="${attributes['enteredby']}"
+	maintainerEmail="${attributes['maintainerEmail']}"
+	footer="${attributes['footer']}"
+	tagline="${attributes['tagline']}"
 
 	title="${attributes['title']}"
 	subtitle="${attributes['subtitle']}"
+	subsubtitle="${attributes['subsubtitle']}"
 	composer="${attributes['composer']}"
 	style="${attributes['style']}"
 	piece="${attributes['piece']}"
