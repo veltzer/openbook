@@ -20,6 +20,20 @@ if($debug) {
 	print 'targets is ['.$targets.']'."\n";
 }
 
+# this is a function that removes a file and can optionally die if there is a problem
+sub chmod_check($$) {
+	my($file,$check)=@_;
+	if($debug) {
+		print 'chmodding ['.$file.']'."\n";
+	}
+	my($ret)=chmod(0444,$file);
+	if($check) {
+		if($ret!=1) {
+			die('problem chmodding file ['.$file.']');
+		}
+	}
+}
+
 my(@inc);
 open(IN,$infile) || die('unable to open input file for reading');
 my($line);
@@ -37,3 +51,4 @@ close(IN) || die('unable to close input file');
 open(FILE,'> '.$outfile) || die('unable to open file for writing');
 print FILE $targets.': '.join(' ',@inc)."\n";
 close(FILE) || die('unable to close file');
+chmod_check($outfile,1);
