@@ -1,5 +1,7 @@
 Now:
 ====
+- add a nice front page to the book with the name of the project, links etc.
+- try to add index by performer, composer, poet, structure, and more.
 - get to a good book.
 	only publish good tunes.
 	put it up on my website.
