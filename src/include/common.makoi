@@ -4,7 +4,12 @@
 
 %% this version tag will keep me compiling only on this version of lilypond.
 %%=====================================================================
-\version "2.12.3"
+<%
+	import datetime
+	attributes['lilyver']="2.12.3"
+	attributes['date']=datetime.datetime.now().strftime("%T %d-%m-%Y")
+%>
+\version "${attributes['lilyver']}"
 
 %% lets define a variable to hold the formatted build date (man 3 strftime):
 date=#(strftime "%T %d-%m-%Y" (localtime (current-time)))
@@ -41,7 +46,7 @@ lilyver=#(lilypond-version)
 	%% a real problem seeing the footer in postscript printing....
 	%%bottom-margin = 2.5\cm
 
-	%% from /usr/share/lilypond/2.12.3/ly/titling-init.ly 
+	%% from /usr/share/lilypond/2.12.3/ly/titling-init.ly
 	%% to stop lilypond from printing footers...
 	oddFooterMarkup = \markup {}
 
@@ -187,8 +192,7 @@ ${self.clearVars()}
 <%
 	attributes['copyright']=u"-- עיזרו לי למלא זכויות יוצרים --"
 %>
-% endif
-% if attributes['heb']==False:
+% else:
 <%
 	attributes['copyright']="-- help me fill it out copyright --"
 %>
@@ -198,12 +202,11 @@ ${self.clearVars()}
 % if attributes['tagline']=="":
 % if attributes['heb']:
 <%
-	attributes['tagline']="\markup \small {Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at \date, Engraved by lilypond \lilyver}"
+	attributes['tagline']="Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at "+attributes['date']+", Engraved by lilypond "+attributes['lilyver']
 %>
-% endif
-% if attributes['heb']==False:
+% else:
 <%
-	attributes['tagline']="\markup \small {Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at \date, Engraved by lilypond \lilyver}"
+	attributes['tagline']="Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at "+attributes['date']+", Engraved by lilypond "+attributes['lilyver']
 %>
 % endif
 % endif
@@ -236,7 +239,7 @@ footervalheb=#"זה הטקסט התחתון"
 	enteredby="${attributes['enteredby']}"
 	maintainerEmail="${attributes['maintainerEmail']}"
 	footer="${attributes['footer']}"
-	tagline=${attributes['tagline']}
+	tagline="${attributes['tagline']}"
 
 	dedication="${attributes['dedication']}"
 	title="${attributes['title']}"
@@ -260,6 +263,17 @@ footervalheb=#"זה הטקסט התחתון"
 }
 </%doc>
 
+<%
+	if attributes['poet']=="":
+		attributes['fullpoet']=""
+	else:
+		attributes['fullpoet']="Words by "+attributes['poet']
+	if attributes['composer']=="":
+		attributes['fullcomposer']=""
+	else:
+		attributes['fullcomposer']="Music by "+attributes['composer']
+%>
+
 %% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
 \markup {
 	\column {
@@ -271,17 +285,13 @@ footervalheb=#"זה הטקסט התחתון"
 			\fill-line { \large \smaller \bold \larger "${attributes['subtitle']}" }
 			\fill-line { \smaller \bold "${attributes['subsubtitle']}" }
 			\fill-line {
-				"Words by ${attributes['poet']}" { \large \bold "${attributes['instrument']}" }
-				"Music by ${attributes['composer']}"
+				"${attributes['fullpoet']}"
+				"${attributes['fullcomposer']}"
 			}
 			\fill-line {
 				"${attributes['piece']}"
 				"${attributes['opus']}"
 			}
-			%%\fill-line {
-			%%	\smaller \smaller { "${attributes['copyright']}" }
-			%%	\smaller \smaller { "${attributes['tagline']}" }
-			%%}
 		}
 	}
 }

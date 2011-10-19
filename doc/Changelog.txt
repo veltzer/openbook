@@ -8,3 +8,6 @@
 19/10/11: some stress testing ideas about book creation with lilypond in
 place.
 19/10/11: registered myself to the lilypond bug list.
+19/10/11: now doing everything without the \header block.
+19/10/11: copyrights and notices under the songs.
+19/10/11: fixed the words by problem.
