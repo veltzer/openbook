@@ -1,5 +1,6 @@
 Now:
 ====
+- rebuild the book and re-examine it.
 - fix tunes:
 	one note samba.
 	what a wonderful world.
@@ -7,8 +8,6 @@ Now:
 	My little suede shoes.
 	Round midnight.
 	Corcovado.
-- check chord only songs (rock song) to see if they were not broken.
-- check training and classical to see if they were not broken.
 
 book stuff:
 - logo for the project.
