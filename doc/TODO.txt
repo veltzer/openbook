@@ -20,6 +20,10 @@ Now:
 	This was done in two of the tunes but I removed it because of technical
 	difficulties in producing the final book.
 	document it in the lilypond hints doc.
+- make the footer that I have point to an openbook web page that I need to open.
+	Copy the ideas from the mutopia footer.
+	Open the webpage at veltzer.org/openbook
+	do make install to install the webpage.
 
 parts in the song:
 ==================
