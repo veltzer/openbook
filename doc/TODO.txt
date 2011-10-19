@@ -1,5 +1,7 @@
 Now:
 ====
+- do stats about lilypond performance with big files...
+	produce a graph.
 - do a better book with the new templating system (with index).
 - I'm not doing inlining in the ly files. This means that the chords, tune
 	and other big parts are repeated in the individual ly files more than once.
