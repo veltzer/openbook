@@ -97,9 +97,9 @@
 
 	\startSong
 
-	\repeat volta 2 {
-
 	\partial 4 r4 |
+
+	\repeat volta 2 {
 
 	\mark "A"
 	\startPart
@@ -138,9 +138,9 @@
 	\time 4/4
 	\key f \major
 
-	\repeat volta 2 {
-
 	\partial 4 c4 |
+
+	\repeat volta 2 {
 
 	%% part "A"
 	c c2 ees4~ | ees2. ees4 | d d2 a'4~ | a1 | \myEndLine
