@@ -47,11 +47,11 @@
 	\startPart
 	\repeat volta 2 {
 		ees2:m7 bes:9 | ees:m7 aes:7 | des:maj7 ges:7 | f:m7 e:dim7 | \myEndLine
-		ees2:m7 ees2:m7/des | c:m7.5- f:7 | bes:m7 ees4:m7 aes:7.5+ |
+		ees:m7 ees:m7/des | c:m7.5- f:7 | bes:m7 ees4:m7 aes:7.5+ |
 	} \alternative {
-		{ des2:6 f4:m7 bes:7.9- }
-		{ des2:6 e4:m7 a:7 } \myEndLine
-	}
+		{ des2:6 f4:m7 bes:7.9- | }
+		{ des2:6 e4:m7 a:7 | }
+	} \myEndLine
 	\endPart
 
 	\mark "B"
@@ -83,8 +83,8 @@
 	%% part A
 	\key des \major
 	\repeat volta 2 {
-	r8. ees16 f8. ees16 f4 ees | bes' bes2. | r8. aes16 bes8. aes16 bes4 aes | ees'4 des c bes |
-	r4 des bes8 ges4 bes,8 | f'2 ees | r8. des16 ees8. f16 aes4 \times 2/3 { aes8 bes fes } |
+		r8. ees16 f8. ees16 f4 ees | bes' bes2. | r8. aes16 bes8. aes16 bes4 aes | ees'4 des c bes |
+		r4 des bes8 ges4 bes,8 | f'2 ees | r8. des16 ees8. f16 aes4 \times 2/3 { aes8 bes fes } |
 	} \alternative {
 		{ des1 | }
 		{ des2. r4 | }
