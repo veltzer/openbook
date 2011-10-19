@@ -23,6 +23,7 @@
 	- check this tune.
 	- add you tube performances.
 	- mark whats been done with this tune.
+	- change the name of the tune (it does not conform to convention).
 % endif
 
 % if part=='ChordsUnknown':
@@ -56,7 +57,7 @@
 % endif
 
 % if part=='LyricsUnknown':
-\lyrics {
+\lyricmode {
 	Let me tell you 'bout a boy I know __
 	He is my ba -- by and he lives next door. __ __
 	Ev -- 'ry morn -- ing 'fore the sun comes up, __

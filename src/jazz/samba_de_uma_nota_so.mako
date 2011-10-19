@@ -106,7 +106,7 @@
 % endif
 
 % if part=='LyricsUnknown':
-\lyrics {
+\lyricmode {
 	This is just a lit __ -- tle sam __ -- ba
 	built up -- on a sin __ -- gle note. __
 	Oth -- er notes are bound __ to fol __ -- low

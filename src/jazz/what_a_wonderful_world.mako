@@ -70,7 +70,7 @@
 % endif
 
 % if part=='LyricsUnknown':
-\lyrics {
+\lyricmode {
 	I see trees of green, red ros -- es too, I see the bloom for me and you, __
 	and I think __ to my -- self what a won -- der -- ful world. __
 

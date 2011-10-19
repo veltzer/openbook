@@ -108,7 +108,7 @@
 % endif
 
 % if part=='LyricsUnknown':
-\lyrics {
+\lyricmode {
 	Qui -- et __ nights of qui -- et stars,
 	qui -- et __ chords from my gui -- tar __
 	float -- ing on __ the si __ -- lence that sur -- rounds __ us __
