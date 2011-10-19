@@ -11,3 +11,4 @@ place.
 19/10/11: now doing everything without the \header block.
 19/10/11: copyrights and notices under the songs.
 19/10/11: fixed the words by problem.
+19/10/11: better handled poet==composer.
