@@ -264,14 +264,20 @@ footervalheb=#"זה הטקסט התחתון"
 </%doc>
 
 <%
-	if attributes['poet']=="":
+	# this block handles poet and composer. The idea is that the author of the tune
+	# just fills in the raw poet/composer data and this takes care of the nice printing...
+	if attributes['poet']==attributes['composer'] and attributes['poet']!="":
+		attributes['fullcomposer']="Words and Music by "+attributes['poet']
 		attributes['fullpoet']=""
 	else:
-		attributes['fullpoet']="Words by "+attributes['poet']
-	if attributes['composer']=="":
-		attributes['fullcomposer']=""
-	else:
-		attributes['fullcomposer']="Music by "+attributes['composer']
+		if attributes['poet']=="":
+			attributes['fullpoet']=""
+		else:
+			attributes['fullpoet']="Words by "+attributes['poet']
+		if attributes['composer']=="":
+			attributes['fullcomposer']=""
+		else:
+			attributes['fullcomposer']="Music by "+attributes['composer']
 %>
 
 %% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
