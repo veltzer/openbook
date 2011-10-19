@@ -20,7 +20,7 @@
 	attributes['idyoutube']="u6lXbfx1hHw"
 	attributes['lyricsurl']="http://lyricsplayground.com/alpha/songs/i/illclosemyeyes.shtml"
 
-	attributes['remark']="version is from Amit Golan"
+	attributes['remark']="the My version is from Amit Golan"
 %>
 % endif
 
@@ -31,6 +31,7 @@
 	- Fixed up the lyrics.
 	- Wrote down my own version.
 	TODO:
+	- add info about the youtube performances.
 	- problem with the words ( the phrase "Don't you know" did not fit in my version, fix the tune).
 	- get copyright for this tune (the real book didn't have one).
 % endif
