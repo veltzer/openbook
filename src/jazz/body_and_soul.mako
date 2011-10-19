@@ -11,7 +11,7 @@
 	attributes['composer']="John Green"
 	attributes['style']="Jazz"
 	attributes['piece']="Slowly, with expression"
-	attributes['poet']="Edward Heyman, Robert Sour & Frank Eyton"
+	attributes['poet']="Edward Heyman, Robert Sour, Frank Eyton"
 	attributes['copyright']="1930 Warner Bros. Inc & Chappel & Co. Ltd."
 	attributes['copyrightextra']="Copyright Renewed & Assigned to Warner Bros. Inc."
 

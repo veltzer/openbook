@@ -1,5 +1,8 @@
 Here are some policy descision:
 ===============================
+
+general:
+========
 - we are using a rich preprocessing/templating system. Reasons are:
 	- we want lilypond to see the minimum information to render the result.
 	- we would like to use the same file as the source for many different lilypond
@@ -39,6 +42,13 @@ This alteration has the following advantages:
 	can circumvent these types of problems using correct escaping or quoting in
 	coding such scripts but I don't see a reason to complicate things when a much
 	simpler solution exists.
+
+meta data:
+==========
+- if a song has more than one poet or composer they will be written without "&" but
+rather as a list of names catenated by ",":
+	attributes['composer']="Cootie Williams, Thelonious Monk"
+	rationale: this will enable further processing by python code.
 
 writing songs:
 ==============

@@ -11,7 +11,7 @@
 	attributes['composer']="Antonio Carlos Jobim"
 	attributes['style']="Jazz"
 	attributes['piece']="Med.-Slow Bossa Nova"
-	attributes['poet']="Vinicius DeMoraes & Ray Gilbert"
+	attributes['poet']="Vinicius DeMoraes, Ray Gilbert"
 	attributes['copyright']="1965, Ipanema Music."
 
 	attributes['completion']="5"

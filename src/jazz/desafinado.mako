@@ -12,7 +12,7 @@
 	attributes['copyright']="1959 1962, Editora Musical Arapua, Sao Paulo, Brazil"
 	attributes['style']="Jazz"
 	attributes['piece']="Medium Bossa Nova"
-	attributes['poet']="Newton Mendonca, Jon Hendricks & Jessie Cavanaugh"
+	attributes['poet']="Newton Mendonca, Jon Hendricks, Jessie Cavanaugh"
 
 	attributes['completion']="5"
 	attributes['uuid']="c3fff540-a26e-11df-9435-0019d11e5a41"

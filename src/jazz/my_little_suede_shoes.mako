@@ -61,7 +61,7 @@
 	\partial 4. bes8 ees g |
 
 	\repeat volta 2 {
-		f f f f ees f r g | r2 r8 bes8 ees g | f f f f ees f r ees | r2 r8 bes8 ees g | f f f f ees f r g | 
+		f f f f ees f r g | r2 r8 bes8 ees g | f f f f ees f r ees | r2 r8 bes8 ees g | f f f f ees f r g |
 		r bes4. a4 aes | g8 g g g f f r ees |
 	}
 	\alternative {
@@ -70,7 +70,7 @@
 	}
 	ees'8 ees ees ees c aes r d | r d4. bes8 g r4 | c8 c c c aes f r bes~ |
 	bes2 r8 bes c d | ees ees ees ees c aes r d | r d4. bes8 g r4 |
-	c8 c c c aes f g ees~ | ees2 r8 bes8 ees g | f f f f ees f r g | r2 r8 bes8 ees g | f f f f ees f r ees | r2 r8 bes8 ees g | f f f f ees f r g | 
+	c8 c c c aes f g ees~ | ees2 r8 bes8 ees g | f f f f ees f r g | r2 r8 bes8 ees g | f f f f ees f r ees | r2 r8 bes8 ees g | f f f f ees f r g |
 	r bes4. a4 aes | g8 g g g f f r ees | r1 |
 }
 % endif
