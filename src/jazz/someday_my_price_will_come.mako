@@ -9,7 +9,7 @@
 	attributes['doExtra']=True
 
 	attributes['title']="Someday My Prince Will Come"
-	attributes['composer']="Frank Churchill & Larry Morey"
+	attributes['composer']="Frank Churchill, Larry Morey"
 	attributes['style']="Jazz"
 	attributes['piece']="Med. Jazz Waltz"
 

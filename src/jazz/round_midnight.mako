@@ -6,7 +6,7 @@
 	attributes['render']="Unknown"
 
 	attributes['title']="Round Midnight"
-	attributes['composer']="Cootie Williams & Thelonious Monk"
+	attributes['composer']="Cootie Williams, Thelonious Monk"
 	attributes['poet']="Bernie Hanighen"
 	attributes['style']="Jazz"
 	attributes['piece']="Med Swing"

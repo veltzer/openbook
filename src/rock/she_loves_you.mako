@@ -7,8 +7,8 @@
 	attributes['render']="Epdf0"
 
 	attributes['title']="She Loves You"
-	attributes['composer']="John Lennon & Paul McCartney"
-	attributes['poet']="John Lennon & Paul McCartney"
+	attributes['composer']="John Lennon, Paul McCartney"
+	attributes['poet']="John Lennon, Paul McCartney"
 	attributes['style']="Rock"
 	attributes['piece']="Moderato"
 

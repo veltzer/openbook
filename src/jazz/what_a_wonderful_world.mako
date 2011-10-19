@@ -7,8 +7,8 @@
 	attributes['render']="Unknown"
 
 	attributes['title']="What a wonderful world"
-	attributes['composer']="George David Weiss & Bob Thiele"
-	attributes['poet']="George David Weiss & Bob Thiele"
+	attributes['composer']="George David Weiss, Bob Thiele"
+	attributes['poet']="George David Weiss, Bob Thiele"
 	attributes['style']="Jazz"
 	attributes['piece']="Med Swing"
 
