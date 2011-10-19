@@ -7,3 +7,4 @@
 18/10/11: book creation now via lilypond.
 19/10/11: some stress testing ideas about book creation with lilypond in
 place.
+19/10/11: registered myself to the lilypond bug list.

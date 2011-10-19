@@ -1,12 +1,14 @@
 Now:
 ====
-- register to lilypond bugs mailing list.
-- reduce size of bug (warning).
-- do warnings in lilypond.
 - get to a good book.
 	only publish good tunes.
+	put it up on my website.
+- The generation of the book is not quiet. make it quiet but still catch
+	warnings off of it.
+- do warnings catching in lilypond wrapper.
 - do stats about lilypond performance with big files...
 	produce a graph.
+	send it to the lilypond bugs mailing list.
 - I'm not doing inlining in the ly files. This means that the chords, tune
 	and other big parts are repeated in the individual ly files more than once.
 	I once did it and removed it as part of the effort to build the book.
@@ -17,8 +19,7 @@ Now:
 	This is related to the previous TODO item.
 	This was done in two of the tunes but I removed it because of technical
 	difficulties in producing the final book.
-- capture the output of lilypond and check for warnings. I currently do not do that
-	and so I miss warnings.
+	document it in the lilypond hints doc.
 
 parts in the song:
 ==================
