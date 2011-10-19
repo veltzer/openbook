@@ -260,9 +260,10 @@ footervalheb=#"זה הטקסט התחתון"
 			\fill-line { \large \smaller \bold \larger "${attributes['subtitle']}" }
 			\fill-line { \smaller \bold "${attributes['subsubtitle']}" }
 			\fill-line {
-				"${attributes['poet']}" { \large \bold "${attributes['instrument']}" }
-				"${attributes['composer']}"
+				"Words by ${attributes['poet']}" { \large \bold "${attributes['instrument']}" }
+				"Music by ${attributes['composer']}"
 			}
+			\smaller \smaller { "${attributes['copyright']}" }
 		}
 	}
 }

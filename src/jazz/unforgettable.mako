@@ -9,23 +9,41 @@
 	attributes['title']="Unforgettable"
 	attributes['composer']="Irving Gordon"
 	attributes['poet']="Irving Gordon"
-	attributes['copyright']="1951, Bourne Co."
+	attributes['copyright']="1951, Bourne Co. Copyright Renewed."
 	attributes['style']="Jazz"
 	attributes['piece']="Mederately"
 
-	attributes['completion']="0"
+	attributes['completion']="5"
 	attributes['uuid']="3162420a-a26f-11df-aacf-0019d11e5a41"
+	attributes['structure']="AB"
+
+	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/unforgettable-lyrics-nat-king-cole/afdec7063791226248256af1000bbaa6"
+	attributes['idyoutuberemark']="Nat King Cole the unforgettable..."
+	attributes['idyoutube']="S1UEzL9poPM"
+	attributes['idyoutuberemark']="Nat King Cole with Natalie Cole duet..."
+	attributes['idyoutube']="2uRtNMFfF-g"
 %>
 % endif
 
 % if part=='Doc':
 	DONE:
-	TODO:
-	- document what has been done.
+	- put in the chords (fakebook).
+	- put in the tune (fakebook).
+	- put in the lyrics (fakebook).
+	- added the epdf from the fake book.
+	- fixed the chords.
+	- checked the meta data.
+	- fixed the tune.
 	- turn the tune relative.
+	- checked the chords.
+	- turned completion to 5.
+	- checked the tune.
 	- make the lyrics go with the tune and not be note based.
-	- add youtube performances.
-	- add epdfs.
+	- checked the lyrics.
+	- added lyrics url.
+	- added youtube performances.
+	TODO:
+	- add epdf from other sources (real book?).
 % endif
 
 % if part=='ChordsFake':
@@ -36,18 +54,18 @@
 
 	\mark "A"
 	\startPart
-	g1 | g1:maj7 | g1:dim7 | r1 | \myEndLine
-	c1 | c1:maj7 | a2:7.9 e2:m7 | a1:7.9 | \myEndLine
-	f1:6 | f1:m7 | c2 e2:m7.5-/b | a1:7 | \myEndLine
-	d1:7.9 | d2.:7.9 des4:7 | d1:7 | d1:7 | \myEndLine
+	g1 | g:maj7 | g1*2:dim7 | \myEndLine
+	c1 | c:maj7 | a2:7.9 e:m7 | a1:7.9 | \myEndLine
+	f:6 | f:m7 | c2 e:m7.5-/b | a1:7 | \myEndLine
+	d:7.9 | d2.:7.9 des4:7 | d1*2:7 | \myEndLine
 	\endPart
 
 	\mark "B"
 	\startPart
-	g1 | g1:maj7 | g1:dim7 | r1 | \myEndLine
-	c1 | c1:maj7 | a2:7.9 e2:m7 | a1:7.9 | \myEndLine
-	f1:6 | f:m | c1 | a2:7 a2:7.9 | \myEndLine
-	d1:7.9 | d2:m7 g2:7 | c2 d4:m7 des4:maj7 | c1:6.9 | \myEndLine
+	g1 | g:maj7 | g1*2:dim7 | \myEndLine
+	c1 | c:maj7 | a2:7.9 e:m7 | a1:7.9 | \myEndLine
+	f:6 | f:m | c | a2:7 a:7.9 | \myEndLine
+	d1:7.9 | d2:m7 g:7 | c d4:m7 des:maj7 | c1:6.9 | \myEndLine
 	\endPart
 
 	\endSong
@@ -57,46 +75,35 @@
 % endif
 
 % if part=='VoiceFake':
-\relative g {
-	\key g \major
+\relative g' {
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Allegro" 4 = 130
 	\time 4/4
-	d'4 e'4 e'8 fis'4 fis'8~ | fis'2 \times 2/3 { d'4 e'4 g'4 } |
-	fis'1~ | fis'2. r4 |
-	g'4 a'4 a'8 b'4 b'8~ | b'2 \times 2/3 { g'4 a'4 c''4 } |
-	b'1~ | b'2. r4 |
-	c''4 d''4 d''4 c''4 | c''4 d''8 ees''4 d''8 c''4 |
-	g'4 a'4 a'4 g'4 | g'4 a'8 b'4 a'8 g'4 |
-	e'4 e'4 a'4 e'4~ | e'2. f'4 |
-	fis'4 fis'4 c''4 fis'4~ | fis'2. r4 |
+	\key g \major
 
-	d'4 e'4 e'8 fis'4 fis'8~ | fis'2 \times 2/3 { d'4 e'4 g'4 } |
-	fis'1~ | fis'2. r4 |
-	g'4 a'4 a'8 b'4 b'8~ | b'2 \times 2/3 { g'4 a'4 c''4 } |
-	b'1~ | b'2. r4 |
-	c''4 d''4 d''4 c''4 | c''4 d''8 e''4 d''8 c''4 |
-	g'4 a'4 a'4 g'4 | g'4 a'8 b'4 a'8 g'4 |
-	d'4 e'4 e'4 d'4 | d'4 e'8 g'4 e'8 d'4 |
-	c'1~ | c'2. r4 |
+	\repeat unfold 2 {
+		d4 e e8 fis4 fis8~ | fis2 \times 2/3 { d4 e g } | fis1~ | fis2. r4 |
+		g4 a a8 b4 b8~ | b2 \times 2/3 { g4 a c } | b1~ | b2. r4 |
+		c d d c | c d8 ees~ ees d c4 | g a a g | g a8 b~ b a g4 |
+	} \alternative {
+		{ e e a e~ | e2. f4 | fis fis c' fis,~ | fis2. r4 | }
+		{ d e e d | d e8 g~ g e d4 | c1~ | c2. r4 | }
+	}
 }
 % endif
 
 % if part=='LyricsFake':
-\lyrics {
-	Un-4 for-4 get-8 ta-4 ble,8~ | -2 \times 2/3 { that's4 what4 you4 } |
-	are,1~ | -2. -4 |
-	Un-4 for-4 get-8 ta-4 ble,8~ | -2 \times 2/3 { tho'4 near4 or4 } |
-	far,1~ | -2. -4 |
-	Like4 a4 song4 of4 | love4 that8 clings4 to8 me,4 |
-	how4 the4 thought4 of4 | you4 does8 things4 to8 me,4 |
-	nev-4 -er4 be-4 -for4~ | -2. has4 |
-	some-4 -one4 been4 more4~ | -2. -4 |
-	Un-4 for-4 get-8 ta-4 ble,8~ | -2 \times 2/3 { in4 ev-4 -ry4 } |
-	way,1~ | -2. -4 |
-	and4 for-4 -ev-8 -er4 more8~ | -2 \times 2/3 { that's4 how4 you'll4 } |
-	stay.-1~ | -2. -4 |
-	That's4 why,4 dar-4 -ling,4 | it's4 in-8 -cred-4 -i-8 -ble,4 |
-	that4 some-4 -one4 so4 | un-4 -for-8 -get-4 -ta-8 -ble,4 |
-	thinks4 that4 I4 am4 | Un-4 -for-8 -get-4 -ta-8 -ble4 |
-	too.1~ | -2. -4 |
+\lyricmode {
+	Un -- for -- get -- ta -- ble, __ that's what you are, __
+	Un -- for -- get -- ta -- ble, __ tho' near or far. __
+	Like a song of love that clings __ to me,
+	how the thought of you does things __ to me,
+	nev -- er be -- fore __ has some -- one been more __
+
+	Un -- for -- get -- ta -- ble, __ in ev -- 'ry way, __
+	and for -- ev -- er more, __ that's how you'll stay. __
+	That's why, dar -- ling, it's in -- cred -- i -- ble,
+	that some -- one so Un -- for -- get __ -- ta -- ble,
+	thinks that I am Un -- for -- get __ -- ta -- ble too. __
 }
 % endif
