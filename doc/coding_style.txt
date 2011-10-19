@@ -105,6 +105,8 @@ Tune:
 
 Lyrics:
 =======
+- the lyrics should be done under \lyricmode and not \lyrics
+	(I'm not sure why that should be so but it is the current convention).
 - quotations in lyrics
 	you cannot put the quotes in double quotation marks (") since that will cause the
 	lyrics to come out wrong, instead I used single quotation marks (').

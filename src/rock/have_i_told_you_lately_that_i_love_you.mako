@@ -47,7 +47,7 @@
 % endif
 
 % if part=='LyricsMy':
-\lyrics {
+\lyricmode {
 	Have I told you lately that I love you.
 	Have I told you that there's no one but you.
 	You give me so much gladness.
