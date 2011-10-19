@@ -48,6 +48,7 @@ while($line=<IN>) {
 }
 close(IN) || die('unable to close input file');
 
+unlink($outfile);
 open(FILE,'> '.$outfile) || die('unable to open file for writing');
 print FILE $targets.': '.join(' ',@inc)."\n";
 close(FILE) || die('unable to close file');
