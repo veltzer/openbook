@@ -15,3 +15,5 @@ place.
 20/10/11: added page breaks between the songs. 
 20/10/11: sorted the tunes according to name in the book. 
 20/10/11: beautified copyright a bit. 
+20/10/11: checked chord only songs (rock song) to see if they were not broken.
+20/10/11: check training and classical to see if they were not broken.
