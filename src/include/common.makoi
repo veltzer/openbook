@@ -43,7 +43,7 @@ lilyver=#(lilypond-version)
 
 	%% from /usr/share/lilypond/2.12.3/ly/titling-init.ly 
 	%% to stop lilypond from printing footers...
-	%%oddFooterMarkup = \markup {}
+	oddFooterMarkup = \markup {}
 
 	%% prevent lilypond from printing the headers...
 
@@ -230,6 +230,7 @@ footervalheb=#"זה הטקסט התחתון"
 \tocItem \markup "${attributes['title']}"
 % endif
 
+<%doc>
 %% emitting the header...
 \header {
 	enteredby="${attributes['enteredby']}"
@@ -257,6 +258,8 @@ footervalheb=#"זה הטקסט התחתון"
 	idyoutuberemark="${attributes['idyoutuberemark']}"
 	lyricsurl="${attributes['lyricsurl']}"
 }
+</%doc>
+
 %% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
 \markup {
 	\column {
@@ -448,6 +451,15 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 % if attributes['doExtra']:
 <%include file="/${file}" args="part='Extra'"/>
 % endif
+
+\markup \column {
+	\fill-line {
+		\smaller \smaller { "${attributes['copyright']}" }
+	}
+	\fill-line {
+		\smaller \smaller { "${attributes['tagline']}" }
+	}
+}
 
 % if attributes['toc']:
 % endif
