@@ -23,12 +23,16 @@
 % if part=='Doc':
 	DONE:
 	TODO:
+	- mark what has been done to this tune.
 	- some of the frets are way off (e/gis is hilarious!)
+	- the special bar lines are not demarcated correctly. This is a lilypond issue. Check it out.
+	- document the youtube performance.
 % endif
 
 % if part=='Own':
 PartChords=\chordmode {
 	\mark "opening"
+	\startRepeat
 	%% the remarked part is from the song but it is repeated so I just
 	%% put it once...
 	%%\repeat volta 4 {
@@ -43,20 +47,32 @@ PartChords=\chordmode {
 	\repeat volta 2 {
 		fis:m e | a d | cis1*2:7 |
 	}
+	\endRepeat
 	\mark "interlude"
-	fis1*4:m \endBar \myEndLine
+	\startBar
+	fis1*4:m |
+	\myEndLine
+	\endBar
 	\mark "verse"
+	\startBar
 	fis1*3:m | d1 |
 	fis1*2:m | fis2:m e | a1 |
 	d | e | a2 e/gis | fis:m e |
-	d | cis:m | e1*2 \endBar \myEndLine
+	d | cis:m | e1*2 |
+	\myEndLine
+	\endBar
 	\mark "chorus"
+	\startRepeat
 	\repeat volta 2 {
 		fis1:m | d | b:m | e2 e/fis |
 	}
 	\mark "interlude"
-	fis1*2:m \endBar \myEndLine
+	\startBar
+	fis1*2:m |
+	\myEndLine
+	\endBar
 	\mark "solo"
+	\startRepeat
 	\repeat volta 2 {
 		b:m | a | d | g g/fis |
 		e:m | a |
@@ -64,6 +80,7 @@ PartChords=\chordmode {
 		{ b:m | fis | }
 		{ b:m | cis | }
 	}
+	\endBar
 }
 PartFrets=\new FretBoards {
 	\PartChords

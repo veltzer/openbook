@@ -12,3 +12,6 @@ place.
 19/10/11: copyrights and notices under the songs.
 19/10/11: fixed the words by problem.
 19/10/11: better handled poet==composer.
+20/10/11: added page breaks between the songs. 
+20/10/11: sorted the tunes according to name in the book. 
+20/10/11: beautified copyright a bit. 

@@ -1,10 +1,16 @@
 Now:
 ====
+- fix tunes:
+	one note samba.
+	what a wonderful world.
+	hellelujah I love him so.
+	My little suede shoes.
+	Round midnight.
+	Corcovado.
 - check chord only songs (rock song) to see if they were not broken.
 - check training and classical to see if they were not broken.
 
 book stuff:
-- each song on it's own page (page breaks).
 - logo for the project.
 - add a nice front page to the book with the name of the project, logo, links etc.
 

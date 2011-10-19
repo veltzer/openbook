@@ -27,7 +27,9 @@ file=open(p_output,'w')
 #file.write((template.render_unicode(attributes={})))
 # python 2
 attr={}
-attr['files']=glob.glob("src/jazz/*.mako")
+filelist=glob.glob("src/jazz/*.mako")
+filelist.sort()
+attr['files']=filelist
 attr['book']=True
 attr['toc']=True
 attr['inline']=True
