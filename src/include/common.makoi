@@ -41,6 +41,14 @@ lilyver=#(lilypond-version)
 	%% a real problem seeing the footer in postscript printing....
 	%%bottom-margin = 2.5\cm
 
+	%% from /usr/share/lilypond/2.12.3/ly/titling-init.ly 
+	%% to stop lilypond from printing footers...
+	%%oddFooterMarkup = \markup {}
+
+	%% prevent lilypond from printing the headers...
+
+	scoreTitleMarkup = \markup {}
+	bookTitleMarkup = \markup {}
 }
 \layout {
 	%% don't have the fist line indented
@@ -121,6 +129,7 @@ endChords={}
 	attributes['composer']=""
 	attributes['style']=""
 	attributes['piece']=""
+	attributes['opus']=""
 	attributes['poet']=""
 	attributes['instrument']=""
 
@@ -189,12 +198,12 @@ ${self.clearVars()}
 % if attributes['tagline']=="":
 % if attributes['heb']:
 <%
-	attributes['tagline']="\markup {\small {Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at \date, Engraved by lilypond \lilyver}}"
+	attributes['tagline']="\markup \small {Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at \date, Engraved by lilypond \lilyver}"
 %>
 % endif
 % if attributes['heb']==False:
 <%
-	attributes['tagline']="\markup {\small {Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at \date, Engraved by lilypond \lilyver}}"
+	attributes['tagline']="\markup \small {Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at \date, Engraved by lilypond \lilyver}"
 %>
 % endif
 % endif
@@ -222,7 +231,6 @@ footervalheb=#"זה הטקסט התחתון"
 % endif
 
 %% emitting the header...
-<%doc>
 \header {
 	enteredby="${attributes['enteredby']}"
 	maintainerEmail="${attributes['maintainerEmail']}"
@@ -236,6 +244,7 @@ footervalheb=#"זה הטקסט התחתון"
 	composer="${attributes['composer']}"
 	style="${attributes['style']}"
 	piece="${attributes['piece']}"
+	opus="${attributes['opus']}"
 	poet="${attributes['poet']}"
 	copyright="${attributes['copyright']}"
 	copyrightextra="${attributes['copyrightextra']}"
@@ -248,7 +257,6 @@ footervalheb=#"זה הטקסט התחתון"
 	idyoutuberemark="${attributes['idyoutuberemark']}"
 	lyricsurl="${attributes['lyricsurl']}"
 }
-</%doc>
 %% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
 \markup {
 	\column {
@@ -263,7 +271,14 @@ footervalheb=#"זה הטקסט התחתון"
 				"Words by ${attributes['poet']}" { \large \bold "${attributes['instrument']}" }
 				"Music by ${attributes['composer']}"
 			}
-			\smaller \smaller { "${attributes['copyright']}" }
+			\fill-line {
+				"${attributes['piece']}"
+				"${attributes['opus']}"
+			}
+			%%\fill-line {
+			%%	\smaller \smaller { "${attributes['copyright']}" }
+			%%	\smaller \smaller { "${attributes['tagline']}" }
+			%%}
 		}
 	}
 }
