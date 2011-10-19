@@ -91,6 +91,7 @@ myEndLineVoltaNotLast={}
 myEndLineVoltaLast=\break
 partBar=\bar "||"
 endBar=\bar "|."
+startBar=\bar ".|"
 startRepeat=\bar "|:"
 endRepeat=\bar ":|"
 startTune={}
@@ -469,6 +470,8 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 % endif
 
 \markup \column {
+	%% just a little space
+	\null
 	\fill-line {
 		\smaller \smaller { "${attributes['copyright']}" }
 	}
@@ -481,9 +484,13 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 % endif
 
 % if attributes['book']:
-\markup {
-	\null
-}
+%% this is just a small space, maybe we should replace this with a page break?
+%% TODO: at the very end of the book this should not appear. 
+%%\markup {
+%%	\null
+%%	\null
+%%}
+\pageBreak
 % endif
 
 % endfor
