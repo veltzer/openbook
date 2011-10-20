@@ -153,3 +153,6 @@ book creation in lilypond:
 ==========================
 - you must use \bookpart! why? because if you put your tunes without \bookpart then the layout algorithm will
 work for the ENTIRE book which is WAY SLOW (25 minutes on 40 jazz standards). So use \bookpart!
+- if you want a book part with no score you can just have a \header in it and it will show up. The thing is that
+you must have some markup in order for it to show up (even a \markup { \null } will do...) and you must have
+headers enabled (ofcourse).

@@ -176,16 +176,13 @@ ${self.defs()}
 \book {
 	%% this is the title page
 	\bookpart {
-		%% a different page breaking function may be used on each part
-		\header {
-			title="OpenBook"
-			subtitle = "Mark Veltzer <mark.veltzer@gmail.com>"
-			copyright = "Copyright 2011, Mark Veltzer <mark.veltzer@gmail.com>"
-			parttagline = "Part tagline"
-			tagline = "Book tagline"
+		\markup {
+			\column {
+				\fill-line { \huge \bold "Jazz OpenBook" }
+				\fill-line { \huge \bold "Mark Veltzer <mark.veltzer@gmail.com>" }
+				\fill-line { \huge \bold "Copyright 2011, Mark Veltzer <mark.veltzer@gmail.com>" }
+			}
 		}
-		%% there MUST be some markup for this entire part to appear in the book!!!
-		\markup { \null }
 	}
 % endif
 
