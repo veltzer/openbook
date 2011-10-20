@@ -32,6 +32,7 @@ attr['book']=False
 attr['toc']=False
 attr['inline']=True
 attr['midi']=True
+attr['parts']=False
 file.write(template.render(attributes=attr))
 file.close()
 # python 3
