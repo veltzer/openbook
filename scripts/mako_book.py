@@ -22,6 +22,13 @@ def is_ready(file):
 			return True
 	return False
 
+def get_results(lst):
+	(pin,pout)=os.popen2(lst)
+	res=''
+	for line in pout:
+		res+=line
+	return res
+
 try:
 	os.unlink(p_output)
 except:

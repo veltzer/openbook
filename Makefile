@@ -49,6 +49,8 @@ MIDI2OGG_WRAPPER:=scripts/midi2ogg.pl
 MIDI2MP3_WRAPPER:=scripts/midi2mp3.pl
 MAKE_BOOK_WRAPPER:=scripts/make_book.pl
 MAKE_BOOK_WRAPPER:=scripts/mako_book.py
+# what is the web folder ?
+WEB_DIR:=/var/www/openbook
 
 ########
 # BODY #
@@ -318,10 +320,14 @@ $(OUT_BOOK): $(OUT_LY) $(ALL_DEP)
 $(OUT_LY): $(FILES_MAKO) $(ALL_DEP) $(MAKE_BOOK_WRAPPER_DEP)
 	$(info doing [$@])
 	$(Q)$(MAKE_BOOK_WRAPPER) $(OUT_LY)
-# this is the old thing with pdfjoin...
-#$(OUT_BOOK): $(FILES_PDF) $(ALL_DEP) $(MAKE_BOOK_WRAPPER_DEP)
-#	$(info doing [$@])
-#	$(Q)$(MAKE_BOOK_WRAPPER) $@ $(FILES_LY)
+
+
+.PHONY: install
+install: $(OUT_LY) $(OUT_BOOK) $(ALL_DEP)
+	$(info doing [$@])
+	$(Q)-sudo rm -rf $(WEB_DIR)
+	$(Q)sudo mkdir $(WEB_DIR)
+	$(Q)sudo cp $(OUT_LY) $(OUT_BOOK) $(WEB_DIR)
 
 # include the deps files (no warnings)
 ifeq ($(USE_LYD),1)
