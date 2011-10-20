@@ -12,6 +12,9 @@ Now:
 	My little suede shoes.
 	Round midnight.
 	Corcovado.
+- add a (c) sign to copyright printing. This goes both for the copyright
+	printed for each tune and on the big cover page (my own copyright).
+- add a license on the first page (select a good license? Creative Commons?)
 
 book stuff:
 - logo for the project.
