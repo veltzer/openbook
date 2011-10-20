@@ -210,15 +210,15 @@ ${self.defs()}
 				\null
 				\null
 				\null
-				\fill-line { \huge \bold "Website at: http://www.veltzer.net/openbook" }
+				\fill-line { \huge \bold "Website: http://www.veltzer.net/openbook" }
 				\null
-				\fill-line { \huge \bold "Development at: https://github.com/veltzer/openbook" }
+				\fill-line { \huge \bold "Development: https://github.com/veltzer/openbook" }
 				\null
 				\fill-line { \huge \bold "Lead developer: Mark Veltzer <mark.veltzer@gmail.com>" }
 				\null
-				\fill-line { \huge \bold "Typesetting copyright 2011, Mark Veltzer <mark.veltzer@gmail.com>" }
+				\fill-line { \huge \bold "Typesetting copyright: 2011, Mark Veltzer <mark.veltzer@gmail.com>" }
 				\null
-				\fill-line { \huge \bold "Tune copyright belong to their respective holders" }
+				\fill-line { \huge \bold "Tune copyright: belong to their respective holders" }
 				\null
 				\null
 				\null
@@ -229,6 +229,9 @@ ${self.defs()}
 				\fill-line { \small "Build machine: ${attributes['machine']}" }
 				\fill-line { \small "Lilypond version: ${attributes['lilyver']}" }
 				\fill-line { \small "Number of tunes: ${len(attributes['files'])}" }
+				\null
+				\null
+				\null
 			}
 		}
 		\score {
@@ -238,12 +241,14 @@ ${self.defs()}
 					\relative c' {
 						\time 4/4
 						\key f \major
+						\set fontSize = #-3
 						f8 e f c r4 a'8 aes | a c, r e~ e g f e | g f a bes a f g ees
 					}
 				}
 			>>
 			\layout {
-				#(layout-set-staff-size 25)
+				#(layout-set-staff-size 35)
+				indent = 2\cm
 			}
 		}
 	}
