@@ -202,7 +202,7 @@ ${self.defs()}
 				\null
 				\null
 				\null
-				\fill-line { \fontsize #9 \bold "OpenBook" }
+				\fill-line { \fontsize #11 \bold "OpenBook" }
 				\null
 				\null
 				\fill-line { \larger \larger \bold "An open source Jazz real book" }
@@ -228,6 +228,19 @@ ${self.defs()}
 				\fill-line { \small "Lilypond version: ${attributes['lilyver']}" }
 				\fill-line { \small "Number of tunes: ${len(attributes['files'])}" }
 			}
+		}
+		\score {
+			<<
+				\new Staff="Melody" {
+					\new Voice="Voice"
+					\relative c' {
+						\time 4/4
+						\key f \major
+						\set fontSize = #7
+						f8 e f c r4 a'8 aes | a c, r e~ e g f e | g f a bes a f g ees
+					}
+				}
+			>>
 		}
 	}
 % endif
