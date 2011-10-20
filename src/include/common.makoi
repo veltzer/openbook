@@ -20,7 +20,7 @@
 	attributes['lilyver']="2.12.3"
 	attributes['date']=datetime.datetime.now().strftime("%T %d-%m-%Y")
 	attributes['username']=pwd.getpwuid(os.getuid())[0]
-	attributes['gittag']=get_results(["git tag -l | tail -1"]).strip()
+	attributes['gittag']=get_results("git tag -l | tail -1").strip()
 	attributes['gitdesc']=get_results(["git","describe","--tags"]).strip()
 	attributes['gitcommits']=get_results("git log --pretty=format:'' | wc -l").strip()
 	attributes['hostname']=socket.gethostname()
