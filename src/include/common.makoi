@@ -490,9 +490,11 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 	\fill-line {
 		\smaller \smaller { "${attributes['copyright']}" }
 	}
+% if attributes['book']==False:
 	\fill-line {
 		\smaller \smaller { "${attributes['tagline']}" }
 	}
+% endif
 }
 
 % if attributes['toc']:

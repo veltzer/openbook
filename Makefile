@@ -310,12 +310,14 @@ $(FILES_MP3): %.mp3: %.midi $(ALL_DEP) $(MIDI2MP3_WRAPPER_DEP)
 	$(Q)$(MIDI2MP3_WRAPPER) $< $@
 
 .PHONY: book
-book: $(OUT_BOOK) 
+book: $(OUT_BOOK) $(ALL_DEP)
 	$(info doing [$@])
-$(OUT_BOOK): $(FILES_MAKO) $(ALL_DEP) $(MAKE_BOOK_WRAPPER_DEP)
+$(OUT_BOOK): $(OUT_LY) $(ALL_DEP)
+	$(info doing [$@])
+	$(Q)lilypond --output=$(OUT_BASE) $(OUT_LY) 2> /dev/null > /dev/null
+$(OUT_LY): $(FILES_MAKO) $(ALL_DEP) $(MAKE_BOOK_WRAPPER_DEP)
 	$(info doing [$@])
 	$(Q)$(MAKE_BOOK_WRAPPER) $(OUT_LY)
-	$(Q)lilypond --output=$(OUT_BASE) $(OUT_LY) 2> /dev/null > /dev/null
 # this is the old thing with pdfjoin...
 #$(OUT_BOOK): $(FILES_PDF) $(ALL_DEP) $(MAKE_BOOK_WRAPPER_DEP)
 #	$(info doing [$@])
