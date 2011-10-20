@@ -174,14 +174,32 @@ ${self.defs()}
 %% book header
 % if attributes['book']:
 \book {
+	%% this is the title page
+	\bookpart {
+		%% a different page breaking function may be used on each part
+		\header {
+			title="OpenBook"
+			subtitle = "Mark Veltzer <mark.veltzer@gmail.com>"
+			copyright = "Copyright 2011, Mark Veltzer <mark.veltzer@gmail.com>"
+			parttagline = "Part tagline"
+			tagline = "Book tagline"
+		}
+		%% there MUST be some markup for this entire part to appear in the book!!!
+		\markup { \null }
+	}
 % endif
+
 % if attributes['toc']:
 \markuplines \table-of-contents
-\pageBreak
+%%\pageBreak
 % endif
 
 %% from here everything needs to go into a loop
 % for file in attributes['files']:
+
+% if attributes['parts']:
+\bookpart {
+% endif
 
 %% this causes the variables to be defined...
 ${self.clearVars()}
@@ -490,7 +508,11 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 %%	\null
 %%	\null
 %%}
+% if attributes['parts']:
+}
+% else:
 \pageBreak
+% endif
 % endif
 
 % endfor
