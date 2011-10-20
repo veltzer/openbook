@@ -15,6 +15,13 @@ output_encoding='utf-8'
 p_output=sys.argv[1]
 common='src/include/common.makoi'
 
+def is_ready(file):
+	for line in open(file):
+		#print line
+		if line=="\tattributes['completion']=\"5\"\n":
+			return True
+	return False
+
 try:
 	os.unlink(p_output)
 except:
@@ -28,6 +35,7 @@ file=open(p_output,'w')
 # python 2
 attr={}
 filelist=glob.glob("src/jazz/*.mako")
+filelist=filter(is_ready,filelist)
 filelist.sort()
 attr['files']=filelist
 attr['book']=True

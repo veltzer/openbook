@@ -1,6 +1,5 @@
 Now:
 ====
-- make the book building script just do 5 tunes...
 - reimport everything to my site.
 - rebuild the book and re-examine it.
 	note any problems.
