@@ -327,7 +327,7 @@ install: $(OUT_LY) $(OUT_BOOK) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-sudo rm -rf $(WEB_DIR)
 	$(Q)sudo mkdir $(WEB_DIR)
-	$(Q)sudo cp $(OUT_LY) $(OUT_BOOK) $(WEB_DIR)
+	$(Q)sudo cp web/index.html $(OUT_LY) $(OUT_BOOK) $(WEB_DIR)
 
 # include the deps files (no warnings)
 ifeq ($(USE_LYD),1)

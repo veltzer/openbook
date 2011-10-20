@@ -20,3 +20,4 @@ place.
 20/10/11: make the book building script just do 5 tunes...
 20/10/11: not printing copyright on every page in the book. 
 20/10/11: added an 'install' target.
+20/10/11: book front page now contains lots of meta info.
