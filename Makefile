@@ -51,6 +51,8 @@ MAKE_BOOK_WRAPPER:=scripts/make_book.pl
 MAKE_BOOK_WRAPPER:=scripts/mako_book.py
 # what is the web folder ?
 WEB_DIR:=/var/www/openbook
+# where is the common file?
+COMMON:=src/include/common.makoi
 
 ########
 # BODY #
@@ -317,7 +319,7 @@ book: $(OUT_BOOK) $(ALL_DEP)
 $(OUT_BOOK): $(OUT_LY) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)lilypond --output=$(OUT_BASE) $(OUT_LY) 2> /dev/null > /dev/null
-$(OUT_LY): $(FILES_MAKO) $(ALL_DEP) $(MAKE_BOOK_WRAPPER_DEP)
+$(OUT_LY): $(FILES_MAKO) $(ALL_DEP) $(MAKE_BOOK_WRAPPER_DEP) $(COMMON)
 	$(info doing [$@])
 	$(Q)$(MAKE_BOOK_WRAPPER) $(OUT_LY)
 
