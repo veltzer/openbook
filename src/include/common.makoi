@@ -556,6 +556,7 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 <%include file="/${file}" args="part='Extra'"/>
 % endif
 
+\noPageBreak
 \markup \column {
 	%% just a little space
 	\null
