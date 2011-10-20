@@ -199,7 +199,8 @@ ${self.defs()}
 				\null
 				\null
 				\null
-				\fill-line { \larger \larger \bold "Jazz OpenBook" }
+				\fill-line { \larger \larger \larger \bold "Jazz OpenBook" }
+				\fill-line { \larger \larger \bold "An open source real book" }
 				\null
 				\null
 				\null
