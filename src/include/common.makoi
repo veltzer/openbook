@@ -20,15 +20,16 @@
 	attributes['lilyver']="2.12.3"
 	attributes['date']=datetime.datetime.now().strftime("%T %d-%m-%Y")
 	attributes['username']=pwd.getpwuid(os.getuid())[0]
-	attributes['version']=get_results(["git","tag","-l"]).strip()
+	attributes['gittag']=get_results(["git","tag","-l"]).strip()
+	attributes['gitdesc']=get_results(["git","describe","--tags"]).strip()
 	attributes['hostname']=socket.gethostname()
 	attributes['machine']=' '.join(os.uname())
 %>
 \version "${attributes['lilyver']}"
 
 %% lets define a variable to hold the formatted build date (man 3 strftime):
-date=#(strftime "%T %d-%m-%Y" (localtime (current-time)))
-lilyver=#(lilypond-version)
+%%date=#(strftime "%T %d-%m-%Y" (localtime (current-time)))
+%%lilyver=#(lilypond-version)
 
 %% setting instruments for midi generation (bah - this doesn't work...)
 %%=====================================================================
@@ -222,7 +223,8 @@ ${self.defs()}
 				\null
 				\null
 				\null
-				\fill-line { \small "Git version: ${attributes['version']}" }
+				\fill-line { \small "Git tag: ${attributes['gittag']}" }
+				\fill-line { \small "Git describe: ${attributes['gitdesc']}" }
 				\fill-line { \small "Build date: ${attributes['date']}" }
 				\fill-line { \small "Build user: ${attributes['username']}" }
 				\fill-line { \small "Build host: ${attributes['hostname']}" }
