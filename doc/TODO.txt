@@ -1,8 +1,11 @@
 Now:
 ====
+- clean build.
+- modify the import script to import the book too
+	(in all of its formats: lilypond, postscript, pdf).
 - reimport everything to my site.
-- rebuild the book and re-examine it.
-	note any problems.
+	put a special place on my site for the entire book.
+- unite the two python wrapper scripts, they are almost the same.
 - fix tunes:
 	one note samba.
 	what a wonderful world.
