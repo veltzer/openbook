@@ -1,6 +1,8 @@
 Now:
 ====
+- reimport everything to my site.
 - rebuild the book and re-examine it.
+	note any problems.
 - fix tunes:
 	one note samba.
 	what a wonderful world.
