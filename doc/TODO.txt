@@ -216,14 +216,9 @@ book generation tweaks:
 - add the ability to have page numbers on ALL pages. by default lilypond only puts page numbers on even numbered
 	pages.
 - add much more information on the first page:
-	the computer on which the book was built (name and IP).
-	date of the build
+	ip of the computer doing the build.
 	checksum of the input.
-	name of user doing the build.
-	git version of the source code (which is also the version of the book).
 	links to the openbook website and to openbook on github and to my own blog,
 		and to the lilypond website.
-	version of lilypond used to build the book.
 	version of the operating system used to build the book.
-	number of tunes in the book.
 	number of commits in git.

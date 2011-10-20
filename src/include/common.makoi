@@ -199,13 +199,15 @@ ${self.defs()}
 				\null
 				\null
 				\null
-				\fill-line { \huge \huge \bold "Jazz OpenBook" }
+				\fill-line { \larger \larger \bold "Jazz OpenBook" }
 				\null
 				\null
 				\null
-				\fill-line { \huge \bold "Mark Veltzer <mark.veltzer@gmail.com>" }
+				\fill-line { \huge \bold "Website at: http://www.veltzer.net/openbook" }
+				\fill-line { \huge \bold "Development at: https://github.com/veltzer/openbook" }
+				\fill-line { \huge \bold "Lead developer: Mark Veltzer <mark.veltzer@gmail.com>" }
 				\fill-line { \huge \bold "Typesetting copyright 2011, Mark Veltzer <mark.veltzer@gmail.com>" }
-				\fill-line { \huge \bold "Tune copyright belong to their appropriate holders." }
+				\fill-line { \huge \bold "Tune copyright belong to their respective holders" }
 				\null
 				\null
 				\null
