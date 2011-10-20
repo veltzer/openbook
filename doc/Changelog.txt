@@ -17,3 +17,4 @@ place.
 20/10/11: beautified copyright a bit. 
 20/10/11: checked chord only songs (rock song) to see if they were not broken.
 20/10/11: check training and classical to see if they were not broken.
+20/10/11: make the book building script just do 5 tunes...
