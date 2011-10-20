@@ -117,7 +117,8 @@ FILES_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO)
 FILES_WAV:=$(addsuffix .wav,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_MP3:=$(addsuffix .mp3,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_OGG:=$(addsuffix .ogg,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
-OUT_BOOK:=$(OUT_DIR)/openbook.pdf
+OUT_PDF:=$(OUT_DIR)/openbook.pdf
+OUT_PS:=$(OUT_DIR)/openbook.ps
 OUT_BASE:=$(OUT_DIR)/openbook
 OUT_LY:=$(OUT_DIR)/openbook.ly
 
@@ -156,7 +157,7 @@ ifeq ($(DO_OGG),1)
 	ALL:=$(ALL) $(FILES_OGG)
 endif
 ifeq ($(DO_BOOK),1)
-	ALL:=$(ALL) $(OUT_BOOK)
+	ALL:=$(ALL) $(OUT_LY) $(OUT_PS) $(OUT_PDF)
 endif
 
 .PHONY: all
@@ -183,7 +184,9 @@ debug:
 	$(info FILES_WAV is $(FILES_WAV))
 	$(info FILES_MP3 is $(FILES_MP3))
 	$(info FILES_OGG is $(FILES_OGG))
-	$(info OUT_BOOK is $(OUT_BOOK))
+	$(info OUT_LY is $(OUT_LY))
+	$(info OUT_PS is $(OUT_PS))
+	$(info OUT_PDF is $(OUT_PDF))
 	$(info ALL is $(ALL))
 
 .PHONY: todo
@@ -314,9 +317,9 @@ $(FILES_MP3): %.mp3: %.midi $(ALL_DEP) $(MIDI2MP3_WRAPPER_DEP)
 	$(Q)$(MIDI2MP3_WRAPPER) $< $@
 
 .PHONY: book
-book: $(OUT_BOOK) $(ALL_DEP)
+book: $(OUT_PDF) $(ALL_DEP)
 	$(info doing [$@])
-$(OUT_BOOK): $(OUT_LY) $(ALL_DEP)
+$(OUT_PDF) $(OUT_PS): $(OUT_LY) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)lilypond --output=$(OUT_BASE) $(OUT_LY) 2> /dev/null > /dev/null
 $(OUT_LY): $(FILES_MAKO) $(ALL_DEP) $(MAKE_BOOK_WRAPPER_DEP) $(COMMON)
@@ -325,11 +328,11 @@ $(OUT_LY): $(FILES_MAKO) $(ALL_DEP) $(MAKE_BOOK_WRAPPER_DEP) $(COMMON)
 
 
 .PHONY: install
-install: $(OUT_LY) $(OUT_BOOK) $(ALL_DEP)
+install: $(OUT_LY) $(OUT_PS) $(OUT_PDF) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-sudo rm -rf $(WEB_DIR)
 	$(Q)sudo mkdir $(WEB_DIR)
-	$(Q)sudo cp web/index.html $(OUT_LY) $(OUT_BOOK) $(WEB_DIR)
+	$(Q)sudo cp web/index.html $(OUT_LY) $(OUT_PS) $(OUT_PDF) $(WEB_DIR)
 
 # include the deps files (no warnings)
 ifeq ($(USE_LYD),1)
