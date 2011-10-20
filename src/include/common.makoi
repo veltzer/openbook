@@ -22,6 +22,7 @@
 	attributes['username']=pwd.getpwuid(os.getuid())[0]
 	attributes['version']=get_results(["git","tag","-l"]).strip()
 	attributes['hostname']=socket.gethostname()
+	attributes['machine']=' '.join(os.uname())
 %>
 \version "${attributes['lilyver']}"
 
@@ -225,6 +226,7 @@ ${self.defs()}
 				\fill-line { \small "Build date: ${attributes['date']}" }
 				\fill-line { \small "Build user: ${attributes['username']}" }
 				\fill-line { \small "Build host: ${attributes['hostname']}" }
+				\fill-line { \small "Build machine: ${attributes['machine']}" }
 				\fill-line { \small "Lilypond version: ${attributes['lilyver']}" }
 				\fill-line { \small "Number of tunes: ${len(attributes['files'])}" }
 			}
@@ -236,11 +238,13 @@ ${self.defs()}
 					\relative c' {
 						\time 4/4
 						\key f \major
-						\set fontSize = #7
 						f8 e f c r4 a'8 aes | a c, r e~ e g f e | g f a bes a f g ees
 					}
 				}
 			>>
+			\layout {
+				#(layout-set-staff-size 25)
+			}
 		}
 	}
 % endif

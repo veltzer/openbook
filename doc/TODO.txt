@@ -1,6 +1,5 @@
 Now:
 ====
-- clean build.
 - modify the import script to import the book too
 	(in all of its formats: lilypond, postscript, pdf).
 - reimport everything to my site.
@@ -209,7 +208,6 @@ Database additions
 
 book generation tweaks:
 =======================
-- make the first page more beautiful.
 - make the copyright and tagline be at the bottom of each last page of every tune instead of directly after.
 - have the table of content contain the names of the composers/poets too.
 - add a last page.
@@ -220,5 +218,6 @@ book generation tweaks:
 	checksum of the input.
 	links to the openbook website and to openbook on github and to my own blog,
 		and to the lilypond website.
+		and to my email.
 	version of the operating system used to build the book.
 	number of commits in git.
