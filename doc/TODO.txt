@@ -1,5 +1,6 @@
 Now:
 ====
+- fix the import script. turn it into python and use the mako system.
 - modify the import script to import the book too
 	(in all of its formats: lilypond, postscript, pdf).
 - reimport everything to my site.
