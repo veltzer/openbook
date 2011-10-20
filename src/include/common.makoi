@@ -5,9 +5,23 @@
 %% this version tag will keep me compiling only on this version of lilypond.
 %%=====================================================================
 <%
-	import datetime
+	import datetime # for datetime.now().strftime
+	import os # for getuid, popen2
+	import pwd # for getpwuid
+	import socket # for gethostname
+
+	def get_results(lst):
+		(pin,pout)=os.popen2(lst)
+		res=''
+		for line in pout:
+			res+=line
+		return res
+
 	attributes['lilyver']="2.12.3"
 	attributes['date']=datetime.datetime.now().strftime("%T %d-%m-%Y")
+	attributes['username']=pwd.getpwuid(os.getuid())[0]
+	attributes['version']=get_results(["git","tag","-l"]).strip()
+	attributes['hostname']=socket.gethostname()
 %>
 \version "${attributes['lilyver']}"
 
@@ -178,9 +192,20 @@ ${self.defs()}
 	\bookpart {
 		\markup {
 			\column {
+				\null
+				\null
+				\null
+				\null
+				\null
 				\fill-line { \huge \bold "Jazz OpenBook" }
 				\fill-line { \huge \bold "Mark Veltzer <mark.veltzer@gmail.com>" }
 				\fill-line { \huge \bold "Copyright 2011, Mark Veltzer <mark.veltzer@gmail.com>" }
+				\fill-line { \huge \bold "Git version: ${attributes['version']}" }
+				\fill-line { \huge \bold "Build date: ${attributes['date']}" }
+				\fill-line { \huge \bold "Build user: ${attributes['username']}" }
+				\fill-line { \huge \bold "Build host: ${attributes['hostname']}" }
+				\fill-line { \huge \bold "Lilypond version: ${attributes['lilyver']}" }
+				\fill-line { \huge \bold "Number of tunes: ${len(attributes['files'])}" }
 			}
 		}
 	}
