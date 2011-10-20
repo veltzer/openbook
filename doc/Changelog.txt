@@ -21,3 +21,6 @@ place.
 20/10/11: not printing copyright on every page in the book. 
 20/10/11: added an 'install' target.
 20/10/11: book front page now contains lots of meta info.
+20/10/11: made the front page beautiful.
+20/10/11: started a web site for the project.
+20/10/11: put the final result (the book) on my web log.
