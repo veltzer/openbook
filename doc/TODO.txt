@@ -19,8 +19,6 @@ book stuff:
 - get to a good book.
 	only publish good tunes.
 	put it up on my website.
-- The generation of the book is not quiet. make it quiet but still catch
-	warnings off of it.
 - do warnings catching in lilypond wrapper.
 - do stats about lilypond performance with big files...
 	produce a graph.
@@ -103,6 +101,8 @@ parsing lilypond:
 
 build system
 ============
+- the making of the book (final book) is run without a lilypond wrapper and as a result
+	I do not catch warnings off of it. make it so.
 - when building all the products from .ly files (pdf,midi,ps,png) make sure
 	to remove ALL products from that .ly files. This is especially true for
 	pngs since if a piece shrikns in side the number of the png produced from it
@@ -212,3 +212,15 @@ book generation tweaks:
 - add a last page.
 - add the ability to have page numbers on ALL pages. by default lilypond only puts page numbers on even numbered
 	pages.
+- add much more information on the first page:
+	the computer on which the book was built (name and IP).
+	date of the build
+	checksum of the input.
+	name of user doing the build.
+	git version of the source code (which is also the version of the book).
+	links to the openbook website and to openbook on github and to my own blog,
+		and to the lilypond website.
+	version of lilypond used to build the book.
+	version of the operating system used to build the book.
+	number of tunes in the book.
+	number of commits in git.
