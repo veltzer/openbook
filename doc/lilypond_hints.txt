@@ -148,3 +148,8 @@ Maybe there is a better way?
 repetitions:
 If you have a repeat which ends EXACTLY where a part ends the \endPart or \bar will trample the special
 marks for repetition. Removed the \endPart.
+
+book creation in lilypond:
+==========================
+- you must use \bookpart! why? because if you put your tunes without \bookpart then the layout algorithm will
+work for the ENTIRE book which is WAY SLOW (25 minutes on 40 jazz standards). So use \bookpart!
