@@ -10,7 +10,7 @@
 	attributes['composer']="Richard Rodgers"
 	attributes['copyright']="1937 by Chappell & Co., Inc. Copyright Renewed"
 	attributes['style']="Jazz"
-	attributes['piece']="Med Swing"
+	attributes['piece']="Ballad"
 	attributes['poet']="Lorenz Hart"
 
 	attributes['completion']="5"
@@ -23,9 +23,10 @@
 % if part=='Doc':
 	DONE:
 	TODO:
-	- get another version of this tune.
-	- document the youtube performances.
 	- mark what has been done with this tune.
+	- get another version of this tune (fakebook?).
+	- document the youtube performances.
+	- add lyrics url.
 % endif
 
 % if part=='ChordsReal':
@@ -56,7 +57,7 @@
 	\startPart
 	c1:m7 | c:m7/+b | c:m7/+bes | f/a | \myEndLine
 	aes:maj7 | d2:m7.5- g:7.9- | c:m7 b:7.9 | bes:m7.9 a:7.5-.9+ | \myEndLine
-	aes1:maj7 | f2:m7 bes:7 | ees1:maj7 | ees1:maj7 | \myEndLine
+	aes1:maj7 | f2:m7 bes:7 | ees1*2 | \myEndLine
 	\endPart
 
 	\endSong
@@ -78,7 +79,7 @@
 	ees2 f4 g | f4. g8 f2 | ees2 f4 g | f4. g8 f2 |
 	ees2 f4 g | d'4. c8 bes4. a8 | aes1~ | aes2 g4 f |
 
-	bes4 r8 ees, ees4 d | ees2 ees4 d | c'4 r8 ees,8 ees4 d | ees2 ees4 d |
+	bes4 r8 ees, ees4 d | ees2 ees4 d | c'4 r8 ees, ees4 d | ees2 ees4 d |
 	bes' r8 ees, ees4 d | ees2 f4 g | c1~ | c2 d, |
 
 	c2 d4 ees | d4. ees8 d2 | ees2 f4 g | f4. g8 f2 |
