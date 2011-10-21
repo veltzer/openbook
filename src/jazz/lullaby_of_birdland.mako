@@ -17,6 +17,12 @@
 
 	attributes['completion']="5"
 	attributes['uuid']="f9668406-a26e-11df-8542-0019d11e5a41"
+
+	attributes['idyoutuberemark']="The famous Ella version"
+	attributes['idyoutube']="UY8zK4R9oE8"
+	attributes['idyoutuberemark']="George Shearing himself! Amazing!"
+	attributes['idyoutube']="LKXvMbAKAmY"
+	attributes['lyricsurl']="http://www.bluesforpeace.com/lyrics/lullaby-birdland.htm"
 %>
 % endif
 
@@ -26,7 +32,16 @@
 		- added real book epdf.
 		- added fake book epdf.
 		- added fake book chords.
+		- added fake book tune.
+		- added fake book lyrics.
+		- check fake book chords.
+		- check fake book tune.
+		- check fake book lyrics.
+		- hear the tune to make sure it's ok.
+		- add you tube performances.
+		- add lyricsurl.
 	TODO:
+		- add the real book version.
 % endif
 
 % if part=='ChordsFake':
@@ -59,7 +74,7 @@
 		c:m7 f:m7 | bes:m7 ees:7.9- |
 	} \alternative {
 		{ aes:maj7 des:9 | g:m7.5- c:7 | }
-		{ aes1:maj7 | bes2:m7 ees:9 | aes1:maj7 | bes2:m7 a4:maj7 aes:maj7 | }
+		{ aes1:maj7 | bes2:m7 ees:9 | aes1:maj7 | bes2:m7 a4:maj7 aes:maj7.9 | }
 	} \myEndLine
 	\endPart
 
@@ -80,11 +95,25 @@
 	ees8 ees des c bes aes4. | f8 c' bes e,~ e c' bes ees,~ | ees2~ ees8 bes' aes des,~ | des aes' g c,~ c2 |
 
 	%% A part
-	c8 c bes aes g f4. | d4 f8 e~ e2 | c4 g'8 f~ f2 | des4 c'8 bes~ bes2 |
+	c'8 c bes aes g f4. | d4 f8 e~ e2 | c4 g'8 f~ f2 | des4 c'8 bes~ bes2 |
 	ees8 ees des c bes aes4. | f8 c' bes e,~ e c' bes ees,~ | ees2~ ees8 ees g aes~ | aes1 |
 
 	%% B part
+	c4 des8 d ees c ees des~ | des bes4.~ bes2 | bes4 b8 c des bes des c~ | c1 |
+	c4 des8 d ees c ees des~ | des bes4.~ bes2 | bes4 b8 c des bes des c~ | c des c bes~ bes2 |
 
+	%% A part
+	\repeat volta 2 {
+		c8 c bes aes g f4. | d4 f8 e~ e2 | c4 g'8 f~ f2 | des4 c'8 bes~ bes2 |
+		ees8 ees des c bes aes4. | f8 c' bes e,~ e c' bes ees,~ |
+	} \alternative {
+		{
+			ees2~ ees8 bes' aes des,~ | des aes' g c,~ c r r4 |
+		}
+		{
+			ees2~ ees8 e f des'~ | des2 c4 c8 aes~ | aes1~ | aes2. r4 |
+		}
+	}
 }
 % endif
 
@@ -99,7 +128,7 @@
 	Have you ev -- er heard two tur -- tle doves __
 	bill and coo __
 	when they love? __
-	That's the kind of mag -- ic music we make __ with our lips __ __ when we kiss! __
+	That's the kind of mag -- ic mu -- sic we make __ with our lips __ __ when we kiss! __
 
 	And tere's a weep -- y old wil -- low; __
 	he real -- ly knows how to cry! __
@@ -111,6 +140,6 @@
 	and we'll go __
 	fly -- in' high in Bird -- land, high in the sky __ up a -- bove __ __ all be -- cause __ we're in love! __
 
-	all be -- cause __ we're in love. __ __
+	_ all be -- cause __ we're in love. __ __
 }
 % endif
