@@ -36,7 +36,6 @@
 	- fixed the tune.
 	- turn the tune relative.
 	- checked the chords.
-	- turned completion to 5.
 	- checked the tune.
 	- make the lyrics go with the tune and not be note based.
 	- checked the lyrics.
