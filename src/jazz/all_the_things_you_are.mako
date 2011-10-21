@@ -6,32 +6,46 @@
 	attributes['doLyrics']=True
 	attributes['render']="Fake"
 
-	attributes['title']=""
-	attributes['subtitle']=""
-	attributes['composer']=""
+	attributes['title']="All The Things You Are"
+	attributes['composer']="Jerome Kern"
 	attributes['style']="Jazz"
-	attributes['piece']=""
-	attributes['poet']=""
-	attributes['copyright']=""
-	attributes['copyrightextra']=""
-	attributes['completion']="0"
+	attributes['piece']="Moderately"
+	attributes['poet']="Oscar Hammerstein II"
+	attributes['copyright']="1939 T.B. Harms Company. Copyright Renewed."
+	attributes['copyrightextra']="(c/o The Welk Music Group, Santa Monica, CA 90401)"
+	attributes['completion']="5"
 	attributes['uuid']="a064f20e-fb85-11e0-8d5d-0019d11e5a41"
 
 	attributes['structure']="ABC"
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
+	attributes['idyoutuberemark']="Charlie Parker, great performance"
+	attributes['idyoutube']="UTORd2Y_X6U"
+	attributes['idyoutuberemark']="Art Tatum. Brilliant"
+	attributes['idyoutube']="_bPgf_olXeE"
+	attributes['lyricsurl']="http://www.lyrics007.com/Jerome%20Kern%20Lyrics/All%20The%20Things%20You%20Are%20Lyrics.html"
 %>
 % endif
 
 % if part=='Doc':
 	DONE:
-	TODO:
 	- bring in real book pdf.
 	- bring in fake book pdf.
-	- write real book version.
+	- wrote the real book chords.
+	- wrote the real book tune.
+	- filled in the meta data from the fake book.
+	- write the fake book lyrics fitted for the real book tune.
+	- checked the real book chords.
+	- check the real book notes.
+	- hear the tune, adjust it's speed and see it's ok.
+	- check the lyrics.
+	- wrote the lyrics for the fake book vesion.
+	- wrote the fake book chords.
+	- wrote the fake book tune.
+	- checked the chords of the fake book version.
+	- check the tune of the fake book version.
+	- check the lyrics of the fake book version.
+	- put you tube performances and lyrics url.
+	TODO:
+	- how do I put the last two chords of the real book version in parens?
 % endif
 
 % if part=='ChordsReal':
@@ -42,18 +56,23 @@
 
 	\mark "A"
 	\startPart
-	f1:maj7 | a2:m7.5- d:7.9- | g1:m7 | c:7 | \myEndLine
-	f:6 | d:m7.5- | g:7 | g2:m7 c:7 | \myEndLine
-	f1:maj7 | c2:m7 f:7 | bes1:6 | bes:m6 | \myEndLine
-	f:maj7 | a2:m7 d:7 | g1:7 | g2:m7 c:7 | \myEndLine
+	f1:m7 | bes:m7 | ees:7 | aes:maj7 | \myEndLine
+	des:maj7 | g:7 | c1*2:maj7 | \myEndLine
+	c1:m7 | f:m7 | bes:7 | ees:maj7 | \myEndLine
+	aes:maj7 | d:7 | g1*2:maj7 | \myEndLine
 	\endPart
 
 	\mark "B"
 	\startPart
-	f1:maj7 | aes:m7 | g:m7 | c:7 | \myEndLine
-	f:6 | d:m7.5- | g:7 | g2:m7 c:7 | \myEndLine
-	c1:m7 | f:7 | bes:6 | ees:7 | \myEndLine
-	f2:6 g:m7 | a:m7 bes:m6 | a:m7 d:m7 | g:m7 c:7 | f1:6 | g2:m7 c:7 | \myEndLine
+	a1:m7 | d:7 | g1*2:maj7 | \myEndLine
+	fis1:m7 | b:7 | e:maj7 | c:7.5+ | \myEndLine
+	\endPart
+
+	\mark "C"
+	\startPart
+	f1:m7 | bes:m7 | ees:7 | aes:maj7 | \myEndLine
+	des:maj7 | des:m7 | c:m7 | b:dim7 | \myEndLine
+	bes:m7 | ees:7 | aes:maj7 | g2:7 c:7 | \myEndLine
 	\endPart
 
 	\endSong
@@ -63,34 +82,43 @@
 % endif
 
 % if part=='VoiceReal':
-\relative c' {
+\relative c'' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
-	\key f \major
+	\key aes \major
 
 	%% part "A"
-	r4 c c c | ees2. ees4 | d d2. | a'1 |
-	r4 f f f | aes2. aes4 | g2. g4 | d'1 |
-	r4 e e e | c c2. | a a4 | f1 |
-	r4 a a a | c c2 c4 | a2. a4 | d,1 |
+	aes1 | des2. aes4 | g g g g | g c2 g4 |
+	f f f f | f b2 f4 | e1~ | e |
+	ees | aes2. ees4 | d d d d | d g2 d4 |
+	c c c c | \times 2/3 { c d ees } d c | b1~ | b4 d g d' |
 
 	%% part "B"
-	r4 c c c | ees2. ees4 | d d2. | a'1 |
-	r4 f f f | aes2. aes4 | g2. g4 | d'1 |
-	f2 f4 f | d2. d4 | c2 c | a a4 bes |
-	c f, g bes | a f g bes | a2 f' | f, g | f1~ | f2. r4 |
+	d2 c2~ | c4 ees, e c' | b1~ | b4 d, g b |
+	b2 a~ | a4 bes, b a' | aes1~ | aes |
 
+	%% part "C"
+	aes | des2. aes4 | g g g g | g c2 g4 |
+	f1 | ees'2 des | ees,4 ees \times 2/3 { ees ees ees } | g2. f4 |
+	des f aes des | f2 g | aes1~ | aes |
 }
 % endif
 
 % if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
-	A Fog -- gy Day __ in Lon -- don town __ ha -- d me low __ and had me down. __
-	I viewed the morn -- ing with a -- larm, __ the Brit -- ish Mu -- seum had lost its charm. __
-	How long I wondered could this thing last? __ But_the age of mira -- cles had -- n't passed, __
-	for sud -- den -- ly __ I saw you there __ and through fog -- gy Lon -- don town the sun was shin -- ing ev -- 'ry where.
+	You are the prom -- ised kiss of spring -- time
+	That makes the lone -- ly win -- ter seem long. __
+	You are the breath -- less hush of eve -- ning
+	That trem -- bles on the brink of a love -- ly song. __
+
+	You are the angel glow __ that lights a star. __
+	The dear -- est things_I know __ are what you are. __
+
+	Some day my hap -- py arms will hold you,
+	And some day I'll know that mo -- ment di -- vine,
+	When All The Things You Are, are mine. __
 }
 % endif
 
@@ -100,34 +128,25 @@
 
 	\startSong
 
-	\partial 4 r4 |
-
-	\repeat volta 2 {
-
 	\mark "A"
 	\startPart
-	f1:maj7 | a2:m7.5- d:7.9- | g1:m7 | c:7 | \myEndLine
-	f2. d4:m7.5- | d1:m7.5- | g:7 | g2:m7 c:7 | \myEndLine
-	f1:maj7 | c2:m7 f:7 | bes1:maj7 | bes:m6 | \myEndLine
-	f:maj7 | a2:m7 d:7 | g1:7.9 | g2:m7 c:7 | \myEndLine
+	f1:m7 | bes:m7 | ees:7 | aes:maj7 | \myEndLine
+	des:maj7 | g:7 | c1*2:maj7 | \myEndLine
+	c1:m7 | f:m7 | bes:7 | ees:maj7 | \myEndLine
+	aes:maj7 | a2:m7.5- d:7.9- | g1:maj7 | g2:maj7 e:7.9+ | \myEndLine
 	\endPart
 
 	\mark "B"
 	\startPart
-	f1:maj7 | a2:m7.5- d:7.9- | g1:m7 | c:7 | \myEndLine
-	f2. d4:m7.5- | d1:m7.5- | g:7 | g2:m7 c:7 | \myEndLine
-	c1:m7 | f:7 | bes:maj7 | ees:7 | \myEndLine
-	f2 g:m7 | a:m7 bes:m6 | a:m7 d:m7 | g:m7 c:7 |
+	a1:m7 | d:7 | g:maj7 | c:maj7 | \myEndLine
+	fis:m7.5- | b:7 | e:maj7 | c:7.5+ | \myEndLine
+	\endPart
 
-	} \alternative {
-		{
-			f1 | g2:m7 c:7 | \myEndLine
-		}
-		{
-			f1 | bes2:7 bes:m6 | f1:maj7 | \myEndLine
-		}
-	}
-
+	\mark "C"
+	\startPart
+	f:m7 | bes:m7 | ees:7 | aes:maj7 | \myEndLine
+	des:maj7 | des2:m7 ges:7.9 | aes1:maj7 | b:dim7 | \myEndLine
+	bes:m7 | ees:7.9 | aes1*2:maj7 | \myEndLine
 	\endPart
 
 	\endSong
@@ -135,45 +154,41 @@
 % endif
 
 % if part=='VoiceFake':
-\relative c' {
+\relative c'' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
-	\key f \major
-
-	\partial 4 c4 |
-
-	\repeat volta 2 {
+	\key aes \major
 
 	%% part "A"
-	c c2 ees4~ | ees2. ees4 | d d2 a'4~ | a1 | \myEndLine
-	f2 f4 aes~ | aes2. aes4 | g2 g4 d'4~ | d1 | \myEndLine
-	r4 e e e | c c2. | a2 a4 f~ | f2. f4 | \myEndLine
-	a a a c~ | c c2 c4 | a2 a4 d,~ | d2. c4 | \myEndLine
+	aes1 | des2. aes4 | g g g g | g c2 g4 |
+	f f f f | f b2 f4 | e1~ | e |
+	ees | aes2. ees4 | d d d d | d g2 d4 |
+	c c c c | c d8 ees d4 c | b1~ | b4 d g d' |
 
 	%% part "B"
-	c2 c4 ees~ | ees ees2 ees4 | d2 d4 a'~ | a2 a4 a | \myEndLine
-	f2 f4 aes~ | aes bes aes2 | g g4 d'~ | d2. d4 | \myEndLine
-	f2 f4 d~ | d2. d4 | c2 c4 a~ | a2 a4 bes | \myEndLine
-	c f, g bes | a f g bes | a2 f' | f, g |
+	d4. c8 c2~ | c4 dis, e c' | b1~ | b4 d, g b |
+	b4. a8 a2~ | a4 bes, b a' | gis1 | r |
 
-	} \alternative {
-		{
-			f1 | r2 r4 c | \myEndLine
-		}
-		{
-			f1~ | f~ | f | \myEndLine
-		}
-	}
+	%% part "C"
+	aes | des2. aes4 | g g g g | g c2 g4 |
+	f1 | ees'2. des4 | ees, ees \times 2/3 { ees ees ees } | g2. f4 |
+	des des f aes | f'2 g, | aes1~ | aes2. r4 |
 }
 % endif
 
 % if part=='LyricsFake':
 \lyricmode {
-	A Fog -- gy Day __ in Lon -- don town __ had me low __ and had me down. __
-	I viewed the morn -- ing with a -- larm, __ the Brit -- ish Mu -- se -- um had lost its charm. __
-	How long I won -- dered could this thing last? __ But the age of mir -- a -- cles had -- n't passed, __
-	for sud -- den -- ly, __ I saw you there __ and through fog -- gy Lon -- don town the sun was shin -- ing ev -- 'ry where.
-	A where. __
+	You are the prom -- ised kiss of spring -- time
+	That makes the lone -- ly win -- ter seem long. __
+	You are the breath -- less hush of eve -- ning
+	That trem -- bles on the brink of a love -- ly song. __
+
+	You are the an -- gel glow __ that lights a star. __
+	The dear -- est things I know __ are what you are.
+
+	Some day my hap -- py arms will hold you,
+	And some day I'll know that mo -- ment di -- vine,
+	When All The Things You Are, are mine. __
 }
 % endif

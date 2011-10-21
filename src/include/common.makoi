@@ -275,6 +275,19 @@ ${self.clearVars()}
 <%include file="/${file}" args="part='Vars'"/>
 
 %% now play with the variables that depend on language
+<%
+	if attributes['composer']=='':
+		if attributes['poet']=='':
+			add=''
+		else:
+			add=attributes['poet']
+	else:
+		if attributes['poet']=='':
+			add=attributes['composer']
+		else:
+			add=attributes['composer']+' , '+attributes['poet']
+	attributes['tocname']=attributes['title']+' / '+add
+%>
 % if attributes['copyright']=="":
 % if attributes['heb']:
 <%
@@ -318,7 +331,7 @@ footervalheb=#"זה הטקסט התחתון"
 </%doc>
 
 % if attributes['toc']:
-\tocItem \markup "${attributes['title']}"
+\tocItem \markup "${attributes['tocname']}"
 % endif
 
 <%doc>
