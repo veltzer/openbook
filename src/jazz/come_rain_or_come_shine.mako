@@ -10,7 +10,7 @@
 	attributes['composer']="Harold Arlen"
 	attributes['poet']="Johnny Mercer"
 	attributes['style']="Jazz"
-	attributes['piece']="Modeartely Slow"
+	attributes['piece']="Moderately"
 	attributes['copyright']="1946, by A-M Music Corp. Copyright Renewed, all rights controlled by Chappell & Co., Inc."
 
 	attributes['completion']="5"

@@ -225,3 +225,6 @@ book generation tweaks:
 		and to my email.
 	version of the operating system used to build the book.
 	number of commits in git.
+- consider moving the format of the copyright to the way it is done in the fakebook:
+	the copyright is on the left in small print, the poet and composer are on the right
+	in bigger print.
