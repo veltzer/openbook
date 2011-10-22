@@ -17,6 +17,11 @@
 	attributes['completion']="5"
 	attributes['uuid']="2615b7ec-a26f-11df-b010-0019d11e5a41"
 	attributes['structure']="AB"
+	attributes['idyoutuberemark']="Janis!"
+	attributes['idyoutube']="mzNEgcqWDG4"
+	attributes['idyoutuberemark']="Ella Fitzgerald with Louis"
+	attributes['idyoutube']="MIDOEsQL7lA"
+	attributes['lyricsurl']="http://www.stlyrics.com/songs/g/georgegershwin8836/summertime299720.html"
 %>
 % endif
 
@@ -29,10 +34,10 @@
 	- checked the aebersold tune.
 	- heard the aebersold version to make sure it's ok.
 	- added parenthesis on the turn around notes.
+	- in the aebersold version added phrases.
+	- added youtube and lyrics url.
 	TODO:
-	- in the aebersold version add phrases.
 	- add lyrics from somewhere to the aebersold tune.
-	- add youtube and lyrics url.
 	- add real book version.
 	- add fake book version.
 % endif
