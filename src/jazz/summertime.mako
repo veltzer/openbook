@@ -21,6 +21,7 @@
 	DONE:
 	- brought in epdfs for this tune.
 	TODO:
+	- get the aebersold sheet imported as epdf (scan it).
 	- find out where is this from?
 	- add lyrics
 	- discrepency between tune and melody at the end

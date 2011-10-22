@@ -39,10 +39,18 @@ my own preprocessor
 	- I can have it have any selection of features that I need.
 	disadvantates:
 	- need to be built (C, C++ ?)
+mako
+	advantages:
+	- widely used
+	- programmatic
+	- very rich interface
+	disadvantages:
+	- need to learn how to use it.
 
 What processor is currently used?
 =================================
-m4. It just evolved that way.
+mako. It just evolved that way. I used gpp, and then cpp and then m4. With all of them I ran into all kinds of limitations.
+mako seems to work out fine.
 
 m4 hints
 ========
