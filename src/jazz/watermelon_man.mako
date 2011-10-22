@@ -21,6 +21,8 @@
 % if part=='Doc':
 	DONE:
 	TODO:
+	- this version is not really from the Real book, it is from the aebersold book,
+		bring in the PDF verify and write it seperately.
 	- document what has been done.
 	- document the youtube performance.
 	- add the piano accompaniment for this song (rythm pattern with some notes - ripp
