@@ -1,6 +1,9 @@
 Now:
 ====
-- fix the import script. turn it into python and use the mako system.
+- enable the runner of the build to decide whether \myEndLine will be
+	a real break or not. This could reduce the size of the book by
+	a lot.
+- fix the db import script. turn it into python and use the mako system.
 - modify the import script to import the book too
 	(in all of its formats: lilypond, postscript, pdf).
 - reimport everything to my site.

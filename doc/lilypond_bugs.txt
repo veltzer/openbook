@@ -29,3 +29,5 @@ who wants to make sure his lilypond files are clean.
 
 - lilypond takes forever to process my book. This is a real bug!
 	Probably some algorithm is doing some exhostive search which turns out to be in a big space in my case.
+
+- is there a way for book parts not to do page breaks?
