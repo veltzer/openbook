@@ -92,8 +92,8 @@
 		\remove "Bar_number_engraver"
 	}
 }
-%% reduce the font size (taken from the lilypond info documentation)
-%%#(set-global-staff-size 17.82)
+%% reduce the font size (taken from the lilypond info documentation, default is 20)
+#(set-global-staff-size 17.82)
 
 %% There is no need to set the paper size to a4 since it is the default.
 %% make lilypond use paper of size a4 (Is this the default ?!?)
@@ -252,7 +252,7 @@ ${self.defs()}
 			>>
 			\layout {
 				#(layout-set-staff-size 35)
-				indent = 2\cm
+				indent = 2.6\cm
 			}
 		}
 	}
@@ -402,6 +402,7 @@ footervalheb=#"זה הטקסט התחתון"
 		}
 	}
 }
+\noPageBreak
 
 % if attributes['doOwn']==False:
 

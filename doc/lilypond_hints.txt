@@ -131,6 +131,7 @@ Documentation for lilypond:
 ===========================
 - A snipplet repository: http://lsr.dsi.unimi.it/
 - A good pdf: http://wikitex.org/doc/lilypond.pdf
+- some tips and tricks for lilypond: http://www.geoffhorton.com/lilypond.html
 
 Doing nothing in lilypond
 =========================
