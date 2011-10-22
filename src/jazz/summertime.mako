@@ -3,7 +3,7 @@
 <%
 	attributes['doChords']=True
 	attributes['doVoice']=True
-	attributes['render']="Unknown"
+	attributes['render']="Aebersold"
 
 	attributes['title']="Summertime"
 	attributes['composer']="George Gershwin"
@@ -18,34 +18,33 @@
 % endif
 
 % if part=='Doc':
+	DONE:
+	- brought in epdfs for this tune.
 	TODO:
-	- where is this from?
+	- find out where is this from?
 	- add lyrics
 	- discrepency between tune and melody at the end
 % endif
 
-% if part=='ChordsUnknown':
+% if part=='ChordsAebersold':
 \chordmode {
 	\startChords
-
 	\startSong
 
 	\partial 4 r4 |
-	\endPart
 
 	\repeat volta 2 {
-		d1:m7 | d1:m7 | d1:m7 | d1:m7 | \myEndLine
-		g1:m7 | g1:m7 | e1:m7.5- | a:7.9+ | \myEndLine
-		d1:m7 | d1:m7 | d1:m7 | d1:m7 | \myEndLine
-		g2:m7 c2:7 | f1:maj7 | e2:m7.5- a2:7.9+ | d1:m7 | a1:7.9+ | \myEndLine
+		d1:m7 | d:m7 | d:m7 | d:m7 | \myEndLine
+		g:m7 | g:m7 | e:m7.5- | a:7.9+ | \myEndLine
+		d:m7 | d:m7 | d:m7 | d:m7 | \myEndLine
+		g2:m7 c:7 | f1:maj7 | e2:m7.5- a:7.9+ | d1:m7 | a:7.9+ | \myEndLine
 	}
 	\endSong
-
 	\endChords
 }
 % endif
 
-% if part=='VoiceUnknown':
+% if part=='VoiceAebersold':
 \relative c''' {
 	\time 4/4
 	\key d \minor
