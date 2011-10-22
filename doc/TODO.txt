@@ -231,3 +231,7 @@ book generation tweaks:
 - consider moving the format of the copyright to the way it is done in the fakebook:
 	the copyright is on the left in small print, the poet and composer are on the right
 	in bigger print.
+- in the books table of content there are problems when the name(s) of the poets are also
+	the name(s) of the composers. Take a look at "What A Wonderful World" to see an example.
+	Fix this. The best way would be to gather names of composers and poets, unique them,
+	then put the composers first. This would require a bit of python code to fix.
