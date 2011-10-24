@@ -319,13 +319,12 @@ $(FILES_MP3): %.mp3: %.midi $(ALL_DEP) $(MIDI2MP3_WRAPPER_DEP)
 .PHONY: book
 book: $(OUT_PDF) $(ALL_DEP)
 	$(info doing [$@])
-$(OUT_PDF) $(OUT_PS): $(OUT_LY) $(ALL_DEP)
+$(OUT_PS) $(OUT_PDF): $(OUT_LY) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)lilypond --output=$(OUT_BASE) $(OUT_LY) 2> /dev/null > /dev/null
 $(OUT_LY): $(FILES_MAKO) $(ALL_DEP) $(MAKE_BOOK_WRAPPER_DEP) $(COMMON)
 	$(info doing [$@])
 	$(Q)$(MAKE_BOOK_WRAPPER) $(OUT_LY)
-
 
 .PHONY: install
 install: $(OUT_LY) $(OUT_PS) $(OUT_PDF) $(ALL_DEP)
