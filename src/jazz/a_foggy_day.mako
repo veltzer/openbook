@@ -34,7 +34,6 @@
 % if part=='ChordsReal':
 \chordmode {
 	\startChords
-
 	\startSong
 
 	\mark "A"
@@ -54,7 +53,6 @@
 	\endPart
 
 	\endSong
-
 	\endChords
 }
 % endif
@@ -94,7 +92,6 @@
 % if part=='ChordsFake':
 \chordmode {
 	\startChords
-
 	\startSong
 
 	\partial 4 r4 |
@@ -124,10 +121,10 @@
 			f1 | bes2:7 bes:m6 | f1:maj7 | \myEndLine
 		}
 	}
-
 	\endPart
 
 	\endSong
+	\endChords
 }
 % endif
 
@@ -143,23 +140,23 @@
 	\repeat volta 2 {
 
 	%% part "A"
-	c c2 ees4~ | ees2. ees4 | d d2 a'4~ | a1 | \myEndLine
-	f2 f4 aes~ | aes2. aes4 | g2 g4 d'4~ | d1 | \myEndLine
-	r4 e e e | c c2. | a2 a4 f~ | f2. f4 | \myEndLine
-	a a a c~ | c c2 c4 | a2 a4 d,~ | d2. c4 | \myEndLine
+	c c2 ees4~ | ees2. ees4 | d d2 a'4~ | a1 |
+	f2 f4 aes~ | aes2. aes4 | g2 g4 d'4~ | d1 |
+	r4 e e e | c c2. | a2 a4 f~ | f2. f4 |
+	a a a c~ | c c2 c4 | a2 a4 d,~ | d2. c4 |
 
 	%% part "B"
-	c2 c4 ees~ | ees ees2 ees4 | d2 d4 a'~ | a2 a4 a | \myEndLine
-	f2 f4 aes~ | aes bes aes2 | g g4 d'~ | d2. d4 | \myEndLine
-	f2 f4 d~ | d2. d4 | c2 c4 a~ | a2 a4 bes | \myEndLine
+	c2 c4 ees~ | ees ees2 ees4 | d2 d4 a'~ | a2 a4 a |
+	f2 f4 aes~ | aes bes aes2 | g g4 d'~ | d2. d4 |
+	f2 f4 d~ | d2. d4 | c2 c4 a~ | a2 a4 bes |
 	c f, g bes | a f g bes | a2 f' | f, g |
 
 	} \alternative {
 		{
-			f1 | r2 r4 c | \myEndLine
+			f1 | r2 r4 c |
 		}
 		{
-			f1~ | f~ | f | \myEndLine
+			f1~ | f~ | f |
 		}
 	}
 }

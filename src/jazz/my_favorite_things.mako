@@ -13,6 +13,10 @@
 
 	attributes['completion']="0"
 	attributes['uuid']="02c22208-a26f-11df-98fd-0019d11e5a41"
+	
+	attributes['idyoutuberemark']=""
+	attributes['idyoutube']=""
+	attributes['lyricsurl']=""
 %>
 % endif
 
@@ -20,6 +24,7 @@
 	DONE:
 	TODO:
 	- where is this sheet from.
+	- fill meta data for this tune (copyright and more).
 	- mark what has been done for this tune.
 	- bring in the epdf for this one.
 	- add lyrics.
@@ -29,10 +34,16 @@
 
 % if part=='ChordsUnknown':
 \chordmode {
+	\startChords
+	\startSong
+
 	\mark "Intro"
+	\startPart
 	\repeat volta 4 { e2.:m7 | f2.:maj7.4+ }
+	\endPart
 
 	\mark "A"
+	\startPart
 	\repeat volta 2 {
 		e2.:m7 | r2. | r2. | r2. |
 		c2.:maj7 | r2. | r2. | r2. |
@@ -41,31 +52,35 @@
 	\endPart
 
 	\mark "B"
+	\startPart
 	e2.:m7 | r2. | r2. | r2. |
 	a2.:maj7 | r2. | r2. | r2. |
 	a2.:m7 | d2.:7 | g2.:maj7 | c2.:maj7 | g2.:maj7 | c2.:maj7 | fis2.:m7.5- | b2.:7.9- |
 	\endPart
 
 	\mark "C"
+	\startPart
 	e2.:m7 | r2. | fis2.:m7.5- | b2.:7.9- | e2.:m7 | e2.:m7/d | c2.:maj7 | r2. |
 	c2.:maj7 | r2. | a2.:7 | r2. | g2.:maj7 | c2.:maj7 | a2.:m7 | d2.:7 |
 	g2.:maj6 | c2.:maj7 | g2.:maj6 | r2. |
 	\endPart
 
 	\endSong
+	\endChords
 }
 % endif
 
 % if part=='VoiceUnknown':
 \relative e' {
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Allegro" 4 = 130
 	\time 3/4
 	\key g \major
 
 	\repeat volta 4 { r2. | r }
 
 	\repeat volta 2 {
-		\repeat unfold 2
-			{ e4 b' b | fis e e | b e e | fis e2 | }
+		\repeat unfold 2 { e4 b' b | fis e e | b e e | fis e2 | }
 		e4 b' a | e fis d | d a' g | c,2. |
 		b4 c d | e fis g | a b a | dis,2. |
 	}
