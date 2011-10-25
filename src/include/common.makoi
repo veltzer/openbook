@@ -17,12 +17,12 @@
 			res+=line
 		return res
 
-	attributes['lilyver']="2.12.3"
-	attributes['date']=datetime.datetime.now().strftime("%T %d-%m-%Y")
+	attributes['lilyver']='2.12.3'
+	attributes['date']=datetime.datetime.now().strftime('%T %d-%m-%Y')
 	attributes['username']=pwd.getpwuid(os.getuid())[0]
-	attributes['gittag']=get_results("git tag -l | tail -1").strip()
-	attributes['gitdesc']=get_results(["git","describe","--tags"]).strip()
-	attributes['gitcommits']=get_results("git log --pretty=format:'' | wc -l").strip()
+	attributes['gittag']=get_results('git tag -l | tail -1').strip()
+	attributes['gitdesc']=get_results(['git','describe','--tags']).strip()
+	attributes['gitcommits']=get_results('git log --pretty=format:\'\' | wc -l').strip()
 	attributes['hostname']=socket.gethostname()
 	attributes['machine']=' '.join(os.uname())
 %>
@@ -137,35 +137,35 @@ endChords={}
 <%def name="clearVars()">
 <%
 	# these are variables passed to the template for its use
-	attributes['copyrightvalstudy']="-- no copyright notice for study materials --"
+	attributes['copyrightvalstudy']='-- no copyright notice for study materials --'
 
 	# these are the default values for the variables
-	attributes['enteredby']=""
-	attributes['maintainerEmail']=""
-	attributes['footer']=""
-	attributes['tagline']=""
+	attributes['enteredby']=''
+	attributes['maintainerEmail']=''
+	attributes['footer']=''
+	attributes['tagline']=''
 
-	attributes['dedication']=""
-	attributes['title']=""
-	attributes['subtitle']=""
-	attributes['subsubtitle']=""
-	attributes['composer']=""
-	attributes['style']=""
-	attributes['piece']=""
-	attributes['opus']=""
-	attributes['poet']=""
-	attributes['instrument']=""
+	attributes['dedication']=''
+	attributes['title']=''
+	attributes['subtitle']=''
+	attributes['subsubtitle']=''
+	attributes['composer']=''
+	attributes['style']=''
+	attributes['piece']=''
+	attributes['opus']=''
+	attributes['poet']=''
+	attributes['instrument']=''
 
-	attributes['copyright']=""
-	attributes['copyrightextra']=""
+	attributes['copyright']=''
+	attributes['copyrightextra']=''
 
-	attributes['completion']=""
-	attributes['uuid']=""
+	attributes['completion']=''
+	attributes['uuid']=''
 
-	attributes['structure']=""
-	attributes['idyoutube']=""
-	attributes['idyoutuberemark']=""
-	attributes['lyricsurl']=""
+	attributes['structure']=''
+	attributes['idyoutube']=''
+	attributes['idyoutuberemark']=''
+	attributes['lyricsurl']=''
 
 	attributes['doGuitar']=False
 	attributes['doExtra']=False
@@ -177,7 +177,7 @@ endChords={}
 	attributes['doLyrics']=False
 	attributes['doLyricsmore']=False
 	attributes['doLyricsmoremore']=False
-	attributes['render']=""
+	attributes['render']=''
 	attributes['heb']=False
 %>
 </%def>
@@ -218,9 +218,9 @@ ${self.defs()}
 				\null
 				\fill-line { \huge \bold "Lead developer: Mark Veltzer <mark.veltzer@gmail.com>" }
 				\null
-				\fill-line { \huge \bold "Typesetting copyright: 2011, Mark Veltzer <mark.veltzer@gmail.com>" }
+				\fill-line { \huge \bold "Typesetting copyright: © 2011, Mark Veltzer <mark.veltzer@gmail.com>" }
 				\null
-				\fill-line { \huge \bold "Tune copyright: belong to their respective holders" }
+				\fill-line { \huge \bold "Tune copyright: © belong to their respective holders" }
 				\null
 				\null
 				\null
@@ -291,23 +291,27 @@ ${self.clearVars()}
 % if attributes['copyright']=="":
 % if attributes['heb']:
 <%
-	attributes['copyright']=u"-- עיזרו לי למלא זכויות יוצרים --"
+	attributes['copyright']=u'-- עיזרו לי למלא זכויות יוצרים --'
 %>
 % else:
 <%
-	attributes['copyright']="-- help me fill it out copyright --"
+	attributes['copyright']='-- help me fill it out copyright --'
 %>
 % endif
+% else:
+<%
+	attributes['copyright']=u'© '+attributes['copyright']
+%>
 % endif
 
-% if attributes['tagline']=="":
+% if attributes['tagline']=='':
 % if attributes['heb']:
 <%
-	attributes['tagline']="Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at "+attributes['date']+", Engraved by lilypond "+attributes['lilyver']
+	attributes['tagline']='Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at '+attributes['date']+', Engraved by lilypond '+attributes['lilyver']
 %>
 % else:
 <%
-	attributes['tagline']="Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at "+attributes['date']+", Engraved by lilypond "+attributes['lilyver']
+	attributes['tagline']='Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at '+attributes['date']+', Engraved by lilypond '+attributes['lilyver']
 %>
 % endif
 % endif
@@ -367,18 +371,18 @@ footervalheb=#"זה הטקסט התחתון"
 <%
 	# this block handles poet and composer. The idea is that the author of the tune
 	# just fills in the raw poet/composer data and this takes care of the nice printing...
-	if attributes['poet']==attributes['composer'] and attributes['poet']!="":
-		attributes['fullcomposer']="Words and Music by "+attributes['poet']
-		attributes['fullpoet']=""
+	if attributes['poet']==attributes['composer'] and attributes['poet']!='':
+		attributes['fullcomposer']='Words and Music by '+attributes['poet']
+		attributes['fullpoet']=''
 	else:
-		if attributes['poet']=="":
-			attributes['fullpoet']=""
+		if attributes['poet']=='':
+			attributes['fullpoet']=''
 		else:
-			attributes['fullpoet']="Words by "+attributes['poet']
-		if attributes['composer']=="":
-			attributes['fullcomposer']=""
+			attributes['fullpoet']='Words by '+attributes['poet']
+		if attributes['composer']=='':
+			attributes['fullcomposer']=''
 		else:
-			attributes['fullcomposer']="Music by "+attributes['composer']
+			attributes['fullcomposer']='Music by '+attributes['composer']
 %>
 
 %% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
