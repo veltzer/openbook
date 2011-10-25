@@ -1,0 +1,6 @@
+A post about how to do the copyright sign in Linux:
+
+http://www.ossramblings.com/copyright_sign_in_linux
+
+The point is that you type: CTRL+SHIFT and then a unicode hex
+code. UA9 is for the (c) sign.
