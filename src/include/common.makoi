@@ -288,7 +288,7 @@ ${self.clearVars()}
 			add=attributes['composer']+' , '+attributes['poet']
 	attributes['tocname']=attributes['title']+' / '+add
 %>
-% if attributes['copyright']=="":
+% if attributes['copyright']=='':
 % if attributes['heb']:
 <%
 	attributes['copyright']=u'-- עיזרו לי למלא זכויות יוצרים --'

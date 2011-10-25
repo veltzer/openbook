@@ -17,6 +17,8 @@ Now:
 	Round midnight.
 	Corcovado.
 - add a license on the first page (select a good license? Creative Commons?)
+- In most cases where there is a \repate volta (lots of tunes!!!) I remark the first alternatives \myEndLine to save
+	lines. Should we have a more general mechanism for this?
 
 book stuff:
 - logo for the project.
