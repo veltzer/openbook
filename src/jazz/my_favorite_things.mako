@@ -31,12 +31,13 @@
 	- checked the chords for the real book.
 	- put in the notes for the real book.
 	- filled in meta data for this tune (copyright and more).
+	- checked the notes for the real book.
+	- checked how the tune sounds.
 	TODO:
-	- check the notes for the real book.
 	- add lyrics for the real book version.
 	- check the lyrics for the real book version.
-	- check how the tune sounds.
 	- add lyrics url and youtube performances.
+	- add the fake book version.
 	NOTES:
 	- in the real book version the last repeat sign is not taken because it seems out of place.
 % endif
@@ -54,7 +55,8 @@
 		a2.:m7 | d:7 | g:maj7 | c:maj7 | \myEndLine
 		g:maj7 | c:maj7 | fis:m7.5- | b:7 | \myEndLine
 	}
-	\endPart
+	%% removed in order to show the repeat sign...
+	%%\endPart
 
 	\mark "B"
 	\startPart
