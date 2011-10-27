@@ -16,10 +16,12 @@
 
 	attributes['completion']="5"
 	attributes['uuid']="02c22208-a26f-11df-98fd-0019d11e5a41"
-	
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
+
+	attributes['idyoutuberemark']="Sarah Vaughan"
+	attributes['idyoutube']="dusavln6Cjw"
+	attributes['idyoutuberemark']="The great version by Coltrane"
+	attributes['idyoutube']="0I6xkVRWzCY"
+	attributes['lyricsurl']="http://www.stlyrics.com/songs/s/soundofmusic9841/myfavouritethings323514.html"
 %>
 % endif
 
@@ -33,10 +35,10 @@
 	- filled in meta data for this tune (copyright and more).
 	- checked the notes for the real book.
 	- checked how the tune sounds.
+	- added lyrics url and youtube performances.
 	TODO:
 	- add lyrics for the real book version.
 	- check the lyrics for the real book version.
-	- add lyrics url and youtube performances.
 	- add the fake book version.
 	NOTES:
 	- in the real book version the last repeat sign is not taken because it seems out of place.
