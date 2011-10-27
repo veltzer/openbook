@@ -20,6 +20,12 @@
 
 	attributes['completion']="5"
 	attributes['uuid']="21bc8284-a26f-11df-a829-0019d11e5a41"
+
+	attributes['idyoutuberemark']="Dizzy Gilespie in a great version"
+	attributes['idyoutube']="Jb7LqPmWBKw"
+	attributes['idyoutuberemark']="The only performance of Jobim in Japan"
+	attributes['idyoutube']="eEkMwotUuic"
+	attributes['lyricsurl']="http://www.lyricsfreak.com/f/frank+sinatra/one+note+samba_10122272.html"
 %>
 % endif
 
@@ -36,9 +42,9 @@
 	- checked the tune in the real book version.
 	- checked the lyrics in the real book version.
 	- hear the tune to make sure it sounds good.
+	- added youtube performances.
+	- added lyrics url.
 	TODO:
-	- add youtube performances.
-	- add lyrics url.
 	- add the fake book version.
 % endif
 
