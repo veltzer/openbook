@@ -62,7 +62,7 @@
 	d1:m7 | des:7 | c:m7 | b:7.5- | \myEndLine
 	d:m7 | des:7 | c:m7 | b:7.5- | \myEndLine
 	f:m7 | bes:7 | ees:maj7 | aes:7 | \myEndLine
-	des:6 | c:7 | bes:maj7 | bes:6 | \myEndLine
+	des:6 | c:7 | b:maj7 | bes:6 | \myEndLine
 	\endPart
 
 	\endSong
@@ -81,13 +81,13 @@
 
 	%% part "A"
 	f4 f8 f~ f f4 f8~ | f4. f8 r f4 f8 | f4 f8 f~ f f4 f8~ | f2 r8 f4 f8 |
-	f4 f8 f~ f f4 f8~ | f4. f8 r f4 f8 | f4 f8 f~ f f4 f8~ | f2 r8 bes4 bes8 |
-	bes4 bes8 bes~ bes bes4 bes8~ | bes bes bes4~ bes8 bes4 bes8 | bes4 bes8 bes~ bes bes4 bes8~ | bes2 r8 f4 ees8 |
-	f4 f8 f~ f f4 f8~ | f f4 f8~ f f f4 | f f8 f~ f f4 bes8~ | bes2. r4 |
+	f4 f8 f~ f f4 f8~ | f f4. r8 f4 f8 | f4 f8 f~ f f4 f8~ | f2 r8 bes4 bes8 |
+	bes4 bes8 bes~ bes bes4 bes8~ | bes bes4. r8 bes4 bes8 | bes4 bes8 bes~ bes bes4 bes8~ | bes4. r8 r f4 f8 |
+	f4 f8 f~ f f4 f8~ | f f4 f8~ f f f4 | f f8 f~ f f4 bes8-^ | r1 |
 
 	%% part "B"
-	bes8 c des ees des c bes aes | ges f ees des c des ees f | c4. bes8 r c des ees | c4. bes8~ bes4 r |
-	aes8 bes ces des ces bes aes g | fes ees des ces bes ces des ees | bes4. aes8 r bes ces ees | ges4. f8 r f4 f8 |
+	bes8 c des ees des c bes aes | ges f ees des c des ees f | c4. bes8 r c des f | c4. bes8 r2 |
+	aes'8 bes ces des ces bes aes g | fes ees des ces bes ces des ees | bes4. aes8 r bes ces ees | ges4. f8 r f4 f8 |
 
 	%% part "A"
 	f4 f8 f f~ f4 f8~ | f4. f8 r f4 f8 | f4 f8 f~ f f4 f8~ | f2 r8 f4 f8 |
