@@ -4,7 +4,7 @@
 	attributes['doChords']=True
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
-	attributes['render']="Unknown"
+	attributes['render']="Real"
 
 	attributes['title']="One Note Samba"
 	attributes['subtitle']="Samba de uma nota so"
@@ -28,15 +28,21 @@
 	- filled in the meta data.
 	- brought in fake book epdf.
 	- brought in real book epdf.
+	- put in the real book chords.
+	- put in the real book tune.
+	- put in the real book lyrics.
+	- filled in the meta data (from the fake book).
+	- checked the chords in the real book version.
+	- checked the tune in the real book version.
+	- checked the lyrics in the real book version.
+	- hear the tune to make sure it sounds good.
 	TODO:
-	- do end lines in the chords.
-	- do the fake book version accurately.
-	- turn this tune relative!
 	- add youtube performances.
 	- add lyrics url.
+	- add the fake book version.
 % endif
 
-% if part=='ChordsUnknown':
+% if part=='ChordsReal':
 \chordmode {
 	\startChords
 	\startSong
@@ -70,7 +76,7 @@
 }
 % endif
 
-% if part=='VoiceUnknown':
+% if part=='VoiceReal':
 \relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
@@ -80,45 +86,48 @@
 	\partial 2 r8 f4 f8 |
 
 	%% part "A"
-	f4 f8 f~ f f4 f8~ | f4. f8 r f4 f8 | f4 f8 f~ f f4 f8~ | f2 r8 f4 f8 |
+	f4 f8 f~ f f4 f8~ | f f4. r8 f4 f8 | f4 f8 f~ f f4 f8~ | f2 r8 f4 f8 |
 	f4 f8 f~ f f4 f8~ | f f4. r8 f4 f8 | f4 f8 f~ f f4 f8~ | f2 r8 bes4 bes8 |
 	bes4 bes8 bes~ bes bes4 bes8~ | bes bes4. r8 bes4 bes8 | bes4 bes8 bes~ bes bes4 bes8~ | bes4. r8 r f4 f8 |
 	f4 f8 f~ f f4 f8~ | f f4 f8~ f f f4 | f f8 f~ f f4 bes8-^ | r1 |
 
 	%% part "B"
 	bes8 c des ees des c bes aes | ges f ees des c des ees f | c4. bes8 r c des f | c4. bes8 r2 |
-	aes'8 bes ces des ces bes aes g | fes ees des ces bes ces des ees | bes4. aes8 r bes ces ees | ges4. f8 r f4 f8 |
+	aes'8 bes ces des ces bes aes ges | fes ees des ces bes ces des ees | bes4. aes8 r bes ces ees | ges4. f8 r f4 f8 |
 
 	%% part "A"
-	f4 f8 f f~ f4 f8~ | f4. f8 r f4 f8 | f4 f8 f~ f f4 f8~ | f2 r8 f4 f8 |
-	f4 f8 f~ f f4 f8~ | f4. f8 r f4 f8 | f4 f8 f~ f f4 f8~ | f2 r8 bes4 bes8 |
-	bes4 bes8 bes~ bes bes4 bes8~ | bes4. bes8 r bes4 bes8 | bes4 bes8 bes~ bes bes4 bes8~ | bes2 r8 bes4 bes8 |
-	bes4 bes8 bes~ bes bes4 bes8~ | bes bes4 bes8 bes4 bes~ | bes bes8 bes~ bes bes4 bes8~ | bes2 r8 f4 f8 |
+	f4 f8 f f~ f4 f8~ | f f4. r8 f4 f8 | f4 f8 f~ f f4 f8~ | f2 r8 f4 f8 |
+	f4 f8 f~ f f4 f8~ | f f4. r8 f4 f8 | f4 f8 f~ f f4 f8~ | f2 r8 bes4 bes8 |
+	bes4 bes8 bes~ bes bes4 bes8~ | bes bes4. r8 bes4 bes8 | bes4 bes8 bes~ bes bes4 bes8~ | bes2 r8 bes4 bes8 |
+	bes4 bes8 bes~ bes bes4 bes8~ | bes bes4 bes8 bes4 bes~ | bes bes8 bes~ bes bes4 bes8-^ | r2 <\parenthesize f>4 <\parenthesize f>8 |
 }
 % endif
 
-% if part=='LyricsUnknown':
+% if part=='LyricsReal':
+%% these are lyrics copied from the internet and adjusted for real book
 \lyricmode {
+	%% part A
 	This is just a lit __ -- tle sam __ -- ba
 	built up -- on a sin __ -- gle note. __
 	Oth -- er notes are bound __ to fol __ -- low
 	but the root is still __ that note. __
 
-	Now the new one is __ the con __ -- se -- quence __
+	Now the new one is __ the con __ -- sequence __
 	of the one we've just __ been through __
 	as I'm bound to be __ the un __ -- a -- void __ -- a -- ble
 	con -- se -- quence __ of you. __
 
+	%% part B
 	There's so man -- y peo -- ple who can talk and talk and talk
-	and just say no -- thing or near -- ly no -- thing __
-
+	and just say no -- thing or near -- ly no -- thing
 	I have used up all the scale I know and at the end I've come to no -- thing
-	or near -- ly no -- thing __
+	or near -- ly no -- thing
 
-	So I come back to __ my first __ note as I must come back __ to you.__
+	%% part A
+	So I come back to my first __ note as I must come back __ to you. __
 	I will pour in -- to __ that one __ note all the love I feel __ for you __
 	A -- ny -- one who wants __ the whole __ show, Re, Mi, Fa, Sol, La, __ Te, Doh. __
 	he will find him -- self __ with no __ show.
-	Bet -- ter play __ the note __ you know. __
+	Bet -- ter play __ the note __ you know.
 }
 % endif

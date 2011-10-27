@@ -2,6 +2,7 @@ Melody:
 =======
 - in order to parenthesize notes: <\parenthesize e'>4
 	This is just for a single note? how do I put parens on more than one note?
+	It does not work to put two notes inside the <\parenthesize> block.
 - in order to add piano fingerings use: e-4
 - in order to play two or three notes together use: <c e g>8
 - in order to do ties use: g~ | g
