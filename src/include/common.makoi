@@ -179,6 +179,7 @@ endChords={}
 	attributes['doLyricsmoremore']=False
 	attributes['render']=''
 	attributes['heb']=False
+	attributes['lyricsInMidi']=False
 %>
 </%def>
 
@@ -522,6 +523,7 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 % endif
 }
 % endif
+% if attributes['lyricsInMidi']:
 % if attributes['doLyrics']:
 \new Lyrics="Lyrics" \lyricsto "Voice"
 % if attributes['inline']:
@@ -547,6 +549,7 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 % endif
 % if attributes['inline']==False:
 	\Lyricsmoremore
+% endif
 % endif
 % endif
 	>>
