@@ -142,7 +142,6 @@
 
 % if part=='LyricsmoreUltimate':
 \lyricmode {
-
 	They All Laughed at Rock -- e -- fel -- ler Cen -- ter,
 	Now they're fight -- ing to get in. __
 	They all laughed at Whit -- ney and his cot -- ton gin. __
