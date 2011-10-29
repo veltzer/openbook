@@ -3,16 +3,21 @@
 <%
 	attributes['doChords']=True
 	attributes['doVoice']=True
-	attributes['render']="Unknown"
+	attributes['render']="Fake"
 
-	attributes['title']="Have you met Miss Jones"
-	attributes['composer']="Richard Rogers"
+	attributes['title']="Have you met Miss Jones?"
+	attributes['composer']="Richard Rodgers"
 	attributes['poet']="Lorenz Hart"
 	attributes['style']="Jazz"
-	attributes['piece']="Med Swing"
-	attributes['structure']="ABA"
+	# this is from the real book
+	attributes['piece']="Med."
+	# this is from the fake book
+	attributes['piece']="Medum Swing"
+	attributes['copyright']="1937, by Chappell & Co., Inc. Copyright Renewed"
 
-	attributes['completion']="0"
+	attributes['structure']="AABA"
+
+	attributes['completion']="5"
 	attributes['uuid']="fe106f6c-a26e-11df-abb3-0019d11e5a41"
 %>
 % endif
@@ -20,14 +25,23 @@
 % if part=='Doc':
 	DONE:
 	- filled in the structure for this tune.
-	TODO:
-	- bring in epdfs for this tune.
+	- added the real book epdf.
+	- added the fake book epdf.
 	- fill in the meta data for this tune.
-	- where is this tune from ?
-	- add lyrics
+	TODO:
+	- put in the chords for the fake book version.
+	- put in the tune for the fake book version.
+	- put in the lyrics for the fake book version.
+	- check the chords for the fake book version.
+	- check the tune for the fake book version.
+	- check the lyrics for the fake book version.
+	- play the fake book tune to hear that it's ok.
+	- add you tube performances.
+	- add a lyrics url.
+	- add the real book version.
 % endif
 
-% if part=='ChordsUnknown':
+% if part=='ChordsFake':
 \chordmode {
 	\startChords
 
@@ -61,7 +75,7 @@
 }
 % endif
 
-% if part=='VoiceUnknown':
+% if part=='VoiceFake':
 \relative a' {
 	\time 4/4
 	\key f \major
