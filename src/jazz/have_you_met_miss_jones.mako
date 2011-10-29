@@ -48,12 +48,14 @@
 
 	\mark "A"
 	\startPart
-	f1:maj7 | d:7.9- | g:m7 | c:7 | a:m7 | d:m7 | g:m7 | c:7 | \myEndLine
+	f1:maj7 | d:7.9- | g:m7 | c:7 | \myEndLine
+	a:m7 | d:m7 | g:m7 | c:7 | \myEndLine
 	\endPart
 
 	\mark "A"
 	\startPart
-	f1:maj7 | d:7.9- | g:m7 | c:7 | a:m7 | d:m7 | c:m7 | f:7 | \myEndLine
+	f1:maj7 | d:7.9- | g:m7 | c:7 | \myEndLine
+	a:m7 | d:m7 | c:m7 | f:7 | \myEndLine
 	\endPart
 
 	\mark "B"
@@ -81,6 +83,7 @@
 	\repeat "unfold" 2 {
 	a4 d, c d | c2. r4 | d e f g | a bes c2 | d4 g, f g | f2. a4 | }
 	\alternative { { bes1~ | bes2. r4 |} {c1~ | c4 d d d | } }
+
 	c4 bes f g | aes aes aes aes | aes ges des ees | e! e e e | e d fis a |
 	des2 des | bes1~ | bes2. r4 |
 	a4 d, c d | c2. r4 | d e f g | a bes c d | e1~ | e4 d a g | f1 | r |
