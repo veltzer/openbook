@@ -10,6 +10,7 @@
 	attributes['copyright']="1962, 1963 & 1965 By Hancock Music Co., New York, NY"
 	attributes['style']="Jazz"
 	attributes['piece']="16-Bar Blues"
+	attributes['structure']="A"
 
 	attributes['completion']="5"
 	attributes['uuid']="359f7428-a26f-11df-ad8c-0019d11e5a41"
@@ -20,6 +21,7 @@
 
 % if part=='Doc':
 	DONE:
+	- added 'structure' field to the meta data.
 	TODO:
 	- this version is not really from the Real book, it is from the aebersold book,
 		bring in the PDF verify and write it seperately.
@@ -33,16 +35,17 @@
 % if part=='ChordsReal':
 \chordmode {
 	\startChords
-
 	\startSong
 
+	\mark "A"
+	\startPart
 	f1:7 | f1:7 | f1:7 | f1:7 | \myEndLine
 	bes1:7 | bes1:7 | f1:7 | f1:7 | \myEndLine
 	c1:7 | bes1:7 | c1:7 | bes1:7 | \myEndLine
 	c1:7 | bes1:7 | f1:7 | f1:7 | \myEndLine
+	\endPart
 
 	\endSong
-
 	\endChords
 }
 % endif

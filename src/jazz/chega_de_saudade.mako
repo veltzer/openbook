@@ -29,7 +29,6 @@
 % if part=='ChordsUnknown':
 \chordmode {
 	\startChords
-
 	\startSong
 
 	\mark "A"
@@ -41,7 +40,6 @@
 	\endPart
 
 	\endSong
-
 	\endChords
 }
 % endif

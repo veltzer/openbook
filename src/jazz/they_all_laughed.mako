@@ -35,7 +35,6 @@
 % if part=='ChordsUltimate':
 \chordmode {
 	\startChords
-
 	\startSong
 
 	\repeat volta 2 {
@@ -72,6 +71,7 @@
 	\endPart
 
 	\endSong
+	\endChords
 }
 % endif
 

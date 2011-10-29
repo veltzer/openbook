@@ -31,7 +31,6 @@
 % if part=='ChordsReal':
 \chordmode {
 	\startChords
-
 	\startSong
 
 	\mark "Intro"
@@ -69,7 +68,6 @@
 	\endPart
 
 	\endSong
-
 	\endChords
 }
 % endif
