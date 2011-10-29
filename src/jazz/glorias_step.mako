@@ -19,7 +19,6 @@
 	attributes['idyoutube']="C84KmJwtPeI"
 	attributes['idyoutuberemark']="the original Sunday at the Village version (take 2)..."
 	attributes['idyoutube']="Aib_RL_x7PA"
-	attributes['lyricsurl']="NONE"
 %>
 % endif
 
@@ -40,7 +39,6 @@
 % if part=='ChordsReal':
 \chordmode {
 	\startChords
-
 	\startSong
 
 	\mark "A"
@@ -63,7 +61,6 @@
 	\endPart
 
 	\endSong
-
 	\endChords
 }
 % endif
