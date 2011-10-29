@@ -235,3 +235,9 @@ book generation tweaks:
 	the name(s) of the composers. Take a look at "What A Wonderful World" to see an example.
 	Fix this. The best way would be to gather names of composers and poets, unique them,
 	then put the composers first. This would require a bit of python code to fix.
+
+checking of tunes:
+==================
+- look for \endSong and then a newline between it and \endChords.
+	This needs to be done via an improvement of pgrep.pl since pgrep cannot
+	scan for patterns that span more than one line.
