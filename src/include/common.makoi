@@ -281,13 +281,13 @@ ${self.clearVars()}
 		if attributes['poet']=='':
 			add=''
 		else:
-			add=attributes['poet']
+			add=' / '+attributes['poet']
 	else:
 		if attributes['poet']=='':
-			add=attributes['composer']
+			add=' / '+attributes['composer']
 		else:
-			add=attributes['composer']+' , '+attributes['poet']
-	attributes['tocname']=attributes['title']+' / '+add
+			add=' / '+attributes['composer']+' , '+attributes['poet']
+	attributes['tocname']=attributes['title']+add
 %>
 % if attributes['copyright']=='':
 % if attributes['heb']:
@@ -557,17 +557,6 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 	}
 }
 % endif
-
-## I may need the following snipplet to have separators in chord only melodies:
-##\score {
-##	<<
-##		\new ChordNames="Chords"
-##		\with {
-##			\override BarLine #'bar-size = #4
-##			\consists "Bar_engraver"
-##		} \myChords
-##	>>
-
 % endif
 
 % if attributes['doOwn']:
