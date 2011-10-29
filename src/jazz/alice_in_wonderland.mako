@@ -13,7 +13,7 @@
 	# this is from the real book
 	attributes['piece']="Med."
 	attributes['copyright']=""
-	attributes['completion']="0"
+	attributes['completion']="5"
 
 	attributes['uuid']="718a13e0-023a-11e1-924f-0019d11e5a41"
 	attributes['structure']="AABA"
@@ -27,14 +27,16 @@
 % if part=='Doc':
 	DONE:
 	- put in the real book chords.
-	TODO:
-	- bring in the real book epdf.
+	- brought in the real book epdf.
 	- put in the real book tune.
-	- put in the real book lyrics (are there lyrics?)
-	- check the real book chords.
-	- check the real book tune.
+	- checked the real book chords.
+	- checked the real book tune.
+	TODO:
+	- hear the tune to make sure it's ok.
 	- put in youtube performances.
 	- put in lyrics url.
+	- put in the real book lyrics (are there lyrics?)
+	- put more versions in here (from where?)
 % endif
 
 % if part=='ChordsReal':
@@ -46,12 +48,13 @@
 	\startPart
 	\repeat volta 2 {
 		d2.:m7 | g:7 | c:maj7 | f:maj7 | \myEndLine
-		b:m7.5- | e:7 | a:m7 | ees:7 | \myEndLine 
+		b:m7.5- | e:7 | a:m7 | ees:7 | \myEndLine
 		d:m7 | g:7 | e:m7 | a:m7 | \myEndLine
 		d:m7 | g:7 |
 	} \alternative {
 		{
-			e4.:m7 a:7 | a:m7 d:7 |
+			%% the chords a:m7 d:7 are a mistake in the real book 
+			e4.:m7 a:7 | d:m7 g:7 |
 		}
 		{
 			c2.:maj7 | a:m7 | \myEndLine
@@ -70,7 +73,7 @@
 	\mark "A"
 	\startPart
 	d2.:m7 | g:7 | c:maj7 | f:maj7 | \myEndLine
-	b:m7.5- | e:7 | a:m7 | ees:7 | \myEndLine 
+	b:m7.5- | e:7 | a:m7 | ees:7 | \myEndLine
 	d:m7 | g:7 | e:m7 | a:m7 | \myEndLine
 	d:m7 | g:7 | c1*2:maj7 | \myEndLine
 	\endPart
@@ -99,7 +102,16 @@
 	}
 
 	%% B part
+	d2. | a' | g | c, |
+	d4 e f | g2 a4 | b2 g4 | e2. |
+	fis | c' | b2 g4 | e2. |
+	a2 g4 | f2 e4 | d2 c4 | b2. |
 
+	%% A part
+	g2. | g'2 f4 | e2 c4 | g2. |
+	d'4 e f | e2 d4 | e2 c4 | g2. |
+	d'4 e f | e2 d4 | e2 g4 | c2 a4 |
+	g2 f4 | e2 d4 | c2.~ | c |
 }
 % endif
 
