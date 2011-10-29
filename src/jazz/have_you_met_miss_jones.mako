@@ -10,6 +10,7 @@
 	attributes['poet']="Lorenz Hart"
 	attributes['style']="Jazz"
 	attributes['piece']="Med Swing"
+	attributes['structure']="ABA"
 
 	attributes['completion']="0"
 	attributes['uuid']="fe106f6c-a26e-11df-abb3-0019d11e5a41"
@@ -18,8 +19,12 @@
 
 % if part=='Doc':
 	DONE:
+	- filled in the structure for this tune.
 	TODO:
-	-add lyrics
+	- bring in epdfs for this tune.
+	- fill in the meta data for this tune.
+	- where is this tune from ?
+	- add lyrics
 % endif
 
 % if part=='ChordsUnknown':
@@ -40,13 +45,14 @@
 
 	\mark "B"
 	\startPart
-	bes1:maj7 | aes2:m7 des:7 | ges1:maj7 | e2:m7 a:7 |
+	bes1:maj7 | aes2:m7 des:7 | ges1:maj7 | e2:m7 a:7 | \myEndLine
 	d1:maj7 | aes2:m7 des:7 | ges1:maj7 | g2:m7 c:7 | \myEndLine
 	\endPart
 
 	\mark "A"
 	\startPart
-	f1:maj7 | d:7.9- | g:m7 | c:7 | a2:m7 d:7 | g:m7 c:7 | f1:maj7 | g2:m7 c:7 | \myEndLine
+	f1:maj7 | d:7.9- | g:m7 | c:7 | \myEndLine
+	a2:m7 d:7 | g:m7 c:7 | f1:maj7 | g2:m7 c:7 | \myEndLine
 	\endPart
 
 	\endSong

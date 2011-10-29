@@ -1,10 +1,10 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['render']="My"
 	attributes['doChords']=True
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
+	attributes['render']="My"
 
 	attributes['title']="I'll Close My Eyes"
 	attributes['composer']="Billy Reid"

@@ -1,9 +1,9 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['render']="Real"
 	attributes['doChords']=True
 	attributes['doVoice']=True
+	attributes['render']="Real"
 
 	attributes['title']="Gloria's Step"
 	attributes['composer']="Scott LaFaro"

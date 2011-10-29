@@ -5,8 +5,8 @@
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
 	attributes['doLyricsmore']=True
-	attributes['render']="Real"
 	attributes['doExtra']=True
+	attributes['render']="Real"
 
 	attributes['title']="Someday My Prince Will Come"
 	attributes['composer']="Frank Churchill, Larry Morey"

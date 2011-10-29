@@ -1,8 +1,8 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['render']="Unknown"
 	attributes['doVoice']=True
+	attributes['render']="Unknown"
 
 	attributes['title']="It might as well be spring"
 	attributes['composer']="Richard Rogers"
