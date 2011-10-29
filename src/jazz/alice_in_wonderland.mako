@@ -31,8 +31,9 @@
 	- put in the real book tune.
 	- checked the real book chords.
 	- checked the real book tune.
+	- heard the tune to make sure it's ok.
 	TODO:
-	- hear the tune to make sure it's ok.
+	- put in meta data (composer, poet, copyright) from where?!?
 	- put in youtube performances.
 	- put in lyrics url.
 	- put in the real book lyrics (are there lyrics?)
