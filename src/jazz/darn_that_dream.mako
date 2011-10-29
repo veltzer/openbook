@@ -1,10 +1,10 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['render']="Fake"
 	attributes['doChords']=True
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
+	attributes['render']="Fake"
 
 	attributes['title']="Darn That Dream"
 	attributes['composer']="Jimmy Van Heusen"

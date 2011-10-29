@@ -1,10 +1,10 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['render']="Fake"
 	attributes['doChords']=True
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
+	attributes['render']="Fake"
 
 	attributes['title']="There Will Never Be Another You"
 	attributes['composer']="Harry Warren"
