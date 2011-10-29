@@ -3,6 +3,8 @@
 <%
 	attributes['doChords']=True
 	attributes['doVoice']=True
+	attributes['doLyrics']=True
+	attributes['doLyricsmore']=True
 	attributes['render']="Real"
 
 	attributes['title']="Green Dolphin Street"
@@ -21,9 +23,11 @@
 	attributes['completion']="5"
 	attributes['uuid']="b93bdc7e-0207-11e1-9e68-0019d11e5a41"
 
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
+	attributes['idyoutuberemark']="Sarah Vaughan from a radio show"
+	attributes['idyoutube']="vHp0IvAEFMQ"
+	attributes['idyoutuberemark']="The great Coltrane"
+	attributes['idyoutube']="Ny1n5E4IdYY"
+	attributes['lyricsurl']="http://www.lyricszoo.com/miles-davis/on-green-dolphin-street-miles-davis-washington-ned/"
 %>
 % endif
 
@@ -31,18 +35,27 @@
 	DONE:
 	- added the tune structure.
 	- added the real book chords.
-	- added the reak book notes.
+	- added the real book notes.
 	- checked the real book chords.
 	- take care of the repeat signs.
 	- added "The book" epdf for this tune.
 	- checked the real book tune.
 	- checked that the real book version sounds hood.
 	- get meta data for this tune from somewhere.
+	- added lyrics url.
+	- added the lyrics for the real book version.
+	- adjusted the real book lyrics to the real book tune.
+	- added lyrics url.
+	- added youtube performances.
 	TODO:
-	- are there lyrics for this? if so, add them (and lyrics url).
-	- add youtube performances.
 	- in the real book version how do I put the last two chords (the turn-around chords)
 		in parenthesis?
+	- add more versions of this tune (plenty of epdfs).
+	REMARKS:
+	- in a lot of books this tune is called "On Green Dolphin Street". Should we build an alias mechanism
+	whereby tunes can have alias names?
+	- in a lot of books this tune is played in e flat.
+	- there is an intro text to this tune and an outgoing text from the film in which it was introduced.
 % endif
 
 % if part=='ChordsReal':
@@ -104,5 +117,24 @@
 			a4. g8~ g2 | r8 g4. g4 g | g1~ | g |
 		}
 	}
+}
+% endif
+
+% if part=='LyricsReal':
+\lyricmode {
+	Lo -- ver, __ one love -- ly day __
+	A_love came __ plan -- ning to stay __
+	Green Dol -- phin Street sup -- plied the setting __
+	The_set -- ting for nights be -- yond for -- getting __ And
+
+	When I re -- call the love I found on
+	I'm_gonna kiss_the ground I found on Green Dol -- phin Street __
+}
+% endif
+
+% if part=='LyricsmoreReal':
+\lyricmode {
+	through these __ mo -- ments a -- part __
+	Love come __ here in my heart __
 }
 % endif
