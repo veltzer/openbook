@@ -11,6 +11,8 @@ Melody:
 	see "she_loves_you" by the beatles.
 - in order to do pharses: put "(" AFTER the first note that starts the phrase (NOT BEFORE).
 	and put ")" after the note that ends the phrase.
+- when you want to put a sharp/flat/bekar sign even though it is not needed (just as a reminder
+	to the player) use the "!" sign on the note on which to put it.
 
 Chords:
 =======
