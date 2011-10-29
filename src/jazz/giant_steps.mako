@@ -42,6 +42,7 @@
 	- checked the real book chords.
 	- checked the real book tune.
 	- added youtube performances.
+	- added the new real book epdf.
 	TODO:
 	- do the hal leonard epdf.
 	REMARKS:
