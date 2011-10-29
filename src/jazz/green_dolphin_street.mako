@@ -6,11 +6,15 @@
 	attributes['render']="Real"
 
 	attributes['title']="Green Dolphin Street"
-	attributes['composer']="Kaper/Washington"
+	attributes['composer']="Bronislau Kaper"
+	attributes['poet']="Ned Washington"
 	attributes['style']="Jazz"
 	# this is from the real book
 	attributes['piece']="Latin/Swing"
-	attributes['copyright']=""
+	# this is from the new real book, vol 3
+	attributes['piece']="Med. Latin"
+	# this is from the new real book, vol 3
+	attributes['copyright']="1947 (Renewed 1975) MGM/EMI Feist Catalog, Inc."
 
 	attributes['structure']="ABAC"
 
@@ -33,8 +37,8 @@
 	- added "The book" epdf for this tune.
 	- checked the real book tune.
 	- checked that the real book version sounds hood.
-	TODO:
 	- get meta data for this tune from somewhere.
+	TODO:
 	- are there lyrics for this? if so, add them (and lyrics url).
 	- add youtube performances.
 	- in the real book version how do I put the last two chords (the turn-around chords)
