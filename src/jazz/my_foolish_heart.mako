@@ -62,7 +62,6 @@
 % if part=='ChordsFake':
 \chordmode {
 	\startChords
-
 	\startSong
 
 	\partial 4 r4 |
@@ -87,7 +86,6 @@
 	}
 
 	\endSong
-
 	\endChords
 }
 % endif

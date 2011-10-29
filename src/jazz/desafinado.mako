@@ -33,11 +33,11 @@
 
 % if part=='ChordsUnknown':
 \chordmode {
-	\startChords
 %%	list of instruments can be found at
 %%	http://lilypond.org/doc/v2.11/Documentation/user/lilypond/MIDI-instruments#MIDI-instruments
 	\set ChordNames.midiInstrument = #"acoustic grand"
 
+	\startChords
 	\startSong
 
 	\mark "A"
@@ -74,7 +74,6 @@
 	\endPart
 
 	\endSong
-
 	\endChords
 }
 % endif

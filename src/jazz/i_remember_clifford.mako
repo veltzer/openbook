@@ -26,8 +26,8 @@
 % if part=='ChordsUnknown':
 \chordmode {
 	\startChords
-
 	\startSong
+
 	\endSong
 	\endChords
 }

@@ -5,6 +5,11 @@
 # The reason this script is here is to make this source repository independant of any
 # of my other stuff...
 
+# TODO
+# - better command line interaction (help, better command line assurence).
+# - enable to scan whole files and not just lines.
+# 	What if I'm looking for a pattern that spans more than one line?
+
 use strict;
 use diagnostics;
 

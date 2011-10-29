@@ -32,7 +32,6 @@
 % if part=='ChordsReal':
 \chordmode {
 	\startChords
-
 	\startSong
 
 	\partial 4 r4 |
@@ -55,7 +54,6 @@
 	\endPart
 
 	\endSong
-
 	\endChords
 }
 % endif

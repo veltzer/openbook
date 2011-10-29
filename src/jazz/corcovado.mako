@@ -30,8 +30,8 @@
 
 % if part=='ChordsUnknown':
 \chordmode {
-	\startSong
 	\startChords
+	\startSong
 
 	\mark "Intro"
 	r1 | r1 | a:m6 | aes:dim7 |
@@ -47,8 +47,9 @@
 	d1:9 | r1 | aes1:dim7 | r1 | g1:m7 | c:9 | f:maj7 | f:6 |
 	f:m7 | bes:9 | e:m7 | a:m7 | d:m7 | g:7 | e:m7 | a:7.5+.9- |
 	d:m7 | g:7 |
-	\endChords
+
 	\endSong
+	\endChords
 }
 % endif
 

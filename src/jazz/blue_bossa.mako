@@ -41,22 +41,22 @@
 % if part=='ChordsReal':
 \chordmode {
 	\startChords
-
 	\startSong
 
 	\partial 4 r4 |
 
 	\repeat volta 3 {
-
-	c1*2:m7 | f1*2:m7 | \myEndLine
-	d1:m7.5- | g:7 | c1*2:m7 | \myEndLine
-	ees1:m7 | aes:7 | des1*2:maj | \myEndLine
-	d1:m7.5- | g:7 | c1:m7 | d2:m7.5- g:7 | \myEndLine
-
+		\mark "A"
+		\startPart
+		c1*2:m7 | f1*2:m7 | \myEndLine
+		d1:m7.5- | g:7 | c1*2:m7 | \myEndLine
+		ees1:m7 | aes:7 | des1*2:maj | \myEndLine
+		d1:m7.5- | g:7 | c1:m7 | d2:m7.5- g:7 | \myEndLine
+		%% remarked to show the repeat sign...
+		%%\endPart
 	}
 
 	\endSong
-
 	\endChords
 }
 % endif

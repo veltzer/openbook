@@ -34,7 +34,6 @@
 % if part=='ChordsMy':
 \chordmode {
 	\startChords
-
 	\startSong
 
 	\mark "A"
@@ -56,7 +55,6 @@
 	\endPart
 
 	\endSong
-
 	\endChords
 }
 % endif

@@ -40,7 +40,6 @@
 % if part=='ChordsFake':
 \chordmode {
 	\startChords
-
 	\startSong
 
 	\mark "A"
@@ -69,7 +68,6 @@
 	\endPart
 
 	\endSong
-
 	\endChords
 }
 % endif
