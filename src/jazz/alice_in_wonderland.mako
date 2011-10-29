@@ -31,6 +31,10 @@
 	- bring in the real book epdf.
 	- put in the real book tune.
 	- put in the real book lyrics (are there lyrics?)
+	- check the real book chords.
+	- check the real book tune.
+	- put in youtube performances.
+	- put in lyrics url.
 % endif
 
 % if part=='ChordsReal':
