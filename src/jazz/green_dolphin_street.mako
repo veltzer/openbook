@@ -46,7 +46,7 @@
 	\mark "A"
 	\startPart
 	\repeat volta 2 {
-	  	c1*2:maj7 | c:m7 | \myEndLine
+		c1*2:maj7 | c:m7 | \myEndLine
 		d1:7/c | d2:7/c des/c | c1*2:maj7 | \myEndLine
 	}
 	\endPart
@@ -81,13 +81,13 @@
 
 	%% part "A"
 	\repeat volta 2 {
-	  c2 c~ | c \times 2/3 { b4 g e } | bes1~ | bes |
-	  a2 a~ | a \times 2/3 { bes4 f des } | g1~ | g |
+		c2 c~ | c \times 2/3 { b4 g e } | bes1~ | bes |
+		a2 a~ | a \times 2/3 { bes4 f des } | g1~ | g |
 	}
 	\alternative {
 		{
 			%% part "B"
-			r8 g4. d4 e | f g aes bes | g1~  g |
+			r8 g4. d4 e | f g aes bes | g1~ | g |
 			r8 bes4. f4 g | aes bes ces des | bes1~ | bes2 b |
 		}
 		{
