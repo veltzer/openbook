@@ -4,6 +4,7 @@
 	attributes['doChords']=True
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
+	attributes['doLyricsmore']=True
 	attributes['render']="Real"
 
 	attributes['title']="'Round Midnight"
@@ -14,6 +15,7 @@
 	attributes['piece']="Slowly"
 	# this is from the real book
 	attributes['piece']="Ballad"
+	# this is from the fake book
 	attributes['copyright']="1944 (Renewed) Warner Bros. Inc. and Thelonian Music"
 
 	attributes['structure']="AABA"
@@ -21,8 +23,10 @@
 	attributes['completion']="5"
 	attributes['uuid']="1c99c334-a26f-11df-b3cb-0019d11e5a41"
 
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
+	attributes['idyoutuberemark']="Ella's vocal version"
+	attributes['idyoutube']="DEaDj6TXiQQ"
+	attributes['idyoutuberemark']="Monk. What can I say?"
+	attributes['idyoutube']="OMmeNsmQaFw"
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Round-Midnight-lyrics-Ella-Fitzgerald/F7F9D0761ABE750348256AAB0009FEEA"
 %>
 % endif
@@ -40,10 +44,10 @@
 	- heard the tune to make sure it sounds good.
 	- checked the real book chords.
 	- checked the real book tune.
-	TODO:
 	- put in the real book lyrics.
-	- check the real book lyrics.
-	- add youtube performances.
+	- checked the real book lyrics.
+	- added youtube performances.
+	TODO:
 	- add the fake book version.
 	REMARKS:
 	- in the real book chords the bes:7 chord that ends the first two bars of the A section (appears
@@ -125,26 +129,31 @@
 \lyricmode {
 	%% A part
 	It be -- gins to tell, 'round midnight, mid _ _ -- night.
-	I do pre -- tty well, till af -- ter _ _ sun -- down, _ _
+	I do pre -- tty well, till af -- _ _ ter sun -- _ _ down,
 	Sup -- per -- time I'm fee -- lin' sad; _ _ _ _ _
-	But it real -- ly gets bad, _ _ _ 'round mid -- night.
-	%% A part
-	Memories always start 'round midnight
-	Haven't got the heart to stand those memories,
-	When my heart is still with you,
-	And ol' midnight knows it, too.
+	But it real -- ly gets _ _ _ bad, 'round mid -- night.
+	%% second volta
+	mid -- _ _ night knows it, too.
 	%% B part
-	When a quarrel we had needs mending,
-	Does it mean that our love is ending.
-	Darlin' I need you, lately I find
+	When a quar -- rel we had needs men -- ding,
+	Does it mean that our love is end -- ing.
+	Dar -- lin' I need you, lately I find
 	You're out of my heart,
-	And I'm out of my mind.
+	And I'm out of my mind. _ _ _
 	%% A part
-	Let our hearts take wings'
-	'round midnight, midnight
-	Let the angels sing,
-	for your returning.
-	Till our love is safe and sound.
-	And old midnight comes a -- round.
+	Let our hearts take wings' 'round midnight, mid _ _ -- night.
+	Let the an -- gels sing, for your -- _ _ re tur -- _ _ ning.
+	Till our love is safe and sound. _ _ _ _ _
+	And old mid -- _ _ night comes a -- round.
+}
+% endif
+
+% if part=='LyricsmoreReal':
+\lyricmode {
+	%% A part
+	Memo -- ries al -- ways start 'round midnight, mid _ _ -- night.
+	Ha -- ven't got the heart to stand -- _ _ those me -- _ _ mories,
+	When my heart is still with you, _ _ _ _ _
+	And ol'
 }
 % endif

@@ -125,6 +125,12 @@ Lyrics
 	See "they_all_laughed" for an example.
 - comments in the text
 	Just like regular comments in lilypond (%% at the start of the line).
+- combinations. Sometimes you want to break up a work but also have the first syllable span more
+	than one note. In that case you must put the -- before the _ like this:
+	af -- _ _ ter
+	The other way will NOT work:
+	af _ _  -- ter
+	Is this a bug in lilypond ?!?
 
 Midi production
 ===============
