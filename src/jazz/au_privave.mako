@@ -19,16 +19,18 @@
 	attributes['idyoutube']="dvdQYSWOobc"
 
 	attributes['structure']="Blues"
-
-	attributes['remark']="Taken from the Charlie Parker Omnibook by Jamey Aebersold, moved to scale f major which is better for this tune. Why the hell did aebersold put it in C?"
 %>
 % endif
 
 % if part=='Doc':
 	DONE:
+	- got the Aebersold epdf in here.
 	TODO:
 	- mark whats been done to this tune.
 	- document the you tube performances.
+	- get the real book and fake book versions in here.
+	REMARKS:
+	- I moved this tune to scale f major which is better for this tune. Why the hell did aebersold put it in C?
 % endif
 
 % if part=='ChordsAebersold':
@@ -43,9 +45,9 @@
 		bes1*2:7 | f1:7 | a2:m d:7 | \myEndLine
 		g1:m | c:7 | f2:7 d:7 |
 	} \alternative {
-		{ g2:m c:7 }
-		{ g2:7 c:7 }
-	} \myEndLine
+		{ g2:m c:7 | }
+		{ g2:7 c:7 | \myEndLine}
+	}
 	\endPart
 
 	\mark "A"
