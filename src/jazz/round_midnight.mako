@@ -20,6 +20,10 @@
 
 	attributes['completion']="5"
 	attributes['uuid']="1c99c334-a26f-11df-b3cb-0019d11e5a41"
+
+	attributes['idyoutuberemark']=""
+	attributes['idyoutube']=""
+	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Round-Midnight-lyrics-Ella-Fitzgerald/F7F9D0761ABE750348256AAB0009FEEA"
 %>
 % endif
 
@@ -28,19 +32,23 @@
 	- brought in the real book epdf.
 	- brought in the fake book epdf.
 	- fill in the meta data for the this tune.
-	TODO:
 	- put in the real book chords.
 	- make sure the repetition marks show.
 	- put in the structure of the tune.
+	- added lyrics url.
 	- put in the real book tune.
+	- heard the tune to make sure it sounds good.
+	- checked the real book chords.
+	- checked the real book tune.
+	TODO:
 	- put in the real book lyrics.
-	- check the real book chords.
-	- check the real book tune.
 	- check the real book lyrics.
-	- hear the tune to make sure it sounds good.
 	- add youtube performances.
-	- add lyrics url.
 	- add the fake book version.
+	REMARKS:
+	- in the real book chords the bes:7 chord that ends the first two bars of the A section (appears
+	3 times) is an altered chord and the lead sheet says so. How do I do an altered chord in lilypond?
+	I've seen some discussions about it but nothing conclusive.
 % endif
 
 % if part=='ChordsReal':
@@ -102,10 +110,41 @@
 	}
 
 	%% B part
+	ges4 f8 ees f4. ees8 | d bes' r4 r ees,8 f | ges4 f8 ees f4. ees8 | d bes r4 r bes'4 |
+	ces4. ces8 bes4. bes8 | aes4 ges f4. bes8 | ees ees ees4 des8 des des4 | ces ees,8 d bes' aes e d |
+
+	%% A part
+	r4 bes16 ees f bes ges4. bes,8 | ees4. d16 ees bes'8 aes r4 |
+	r ees16 ges bes des c4. ees,8 | a8 fis16 d gis4 aes8 f16 des g4 |
+	r4 aes16 ces ees ges f4. ces8 | bes4 \times 2/3 { ees,8 d des } c aes'4 ees16 f |
+	ges4 f8 ees f4 ees8 des | ees1 |
 }
 % endif
 
 % if part=='LyricsReal':
 \lyricmode {
+	%% A part
+	It be -- gins to tell, 'round midnight, mid _ _ -- night.
+	I do pre -- tty well, till af -- ter _ _ sun -- down, _ _
+	Sup -- per -- time I'm fee -- lin' sad; _ _ _ _ _
+	But it real -- ly gets bad, _ _ _ 'round mid -- night.
+	%% A part
+	Memories always start 'round midnight
+	Haven't got the heart to stand those memories,
+	When my heart is still with you,
+	And ol' midnight knows it, too.
+	%% B part
+	When a quarrel we had needs mending,
+	Does it mean that our love is ending.
+	Darlin' I need you, lately I find
+	You're out of my heart,
+	And I'm out of my mind.
+	%% A part
+	Let our hearts take wings'
+	'round midnight, midnight
+	Let the angels sing,
+	for your returning.
+	Till our love is safe and sound.
+	And old midnight comes a -- round.
 }
 % endif
