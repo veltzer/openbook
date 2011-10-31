@@ -54,7 +54,7 @@
 		d:m7 | g:7 |
 	} \alternative {
 		{
-			%% the chords a:m7 d:7 are a mistake in the real book 
+			%% the chords a:m7 d:7 are a mistake in the real book
 			e4.:m7 a:7 | d:m7 g:7 |
 		}
 		{
