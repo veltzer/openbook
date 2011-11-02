@@ -292,11 +292,11 @@ ${self.clearVars()}
 % if attributes['copyright']=='':
 % if attributes['heb']:
 <%
-	attributes['copyright']=u'-- עיזרו לי למלא זכויות יוצרים --'
+	attributes['copyright']=u'-- עיזרו לי למלא את שורת זכויות היוצרים הזו --'
 %>
 % else:
 <%
-	attributes['copyright']='-- help me fill it out copyright --'
+	attributes['copyright']='-- help me fill it out this copyright notice --'
 %>
 % endif
 % else:
