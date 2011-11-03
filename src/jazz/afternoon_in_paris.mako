@@ -3,28 +3,44 @@
 <%
 	attributes['doChords']=True
 	attributes['doVoice']=True
-	attributes['render']="Fake"
+	attributes['render']="Real"
 
 	attributes['title']="Afternoon in Paris"
 	attributes['composer']="John Lewis"
 	attributes['style']="Jazz"
 	attributes['piece']="Moderate Swing"
+	# this is from the fake book
 	attributes['copyright']="1955 and Renewal of Copyright 1983 by MJQ Music, Inc."
 	attributes['structure']="AABA"
 	attributes['completion']="5"
 	attributes['uuid']="8f0a1ea6-a26e-11df-8edc-0019d11e5a41"
+	attributes['idyoutuberemark']="Chet Baker in a cool jazz version"
 	attributes['idyoutube']="o3KtgcvYkig"
+	attributes['idyoutuberemark']="Milt Jackson in a cool jazz version"
 	attributes['idyoutube']="FFj03f2Zr5Y"
 %>
 % endif
 
 % if part=='Doc':
-	TODO:
-	- list what has been done to this tune.
+	DONE:
+	- added the real book epdf.
+	- added the fake book epdf.
+	- put in the fake book chords.
+	- put in the fake book tune.
+	- checked the fake book chords.
+	- put in this tunes structure.
+	- put in the real book chords.
+	- put in the real book tune.
+	- checked the fake book tune.
+	- checked that the tune sounds well and it's speed is ok in the midi.
+	- checked the real book chords.
+	- checked the real book tune.
 	- document the youtube performances.
-	- the last two chords (d:m7 and g:7) should be in parenthesis since they are part of the turn around.
+	TODO:
+	- are there lyrics to this thing? Even if there isn't it's needs to be marked clearly here.
+	- the last two chords of the real book version (d:m7 and g:7) should be in parenthesis since they are part of the turn around.
 	I still don't know how to do that.
-	- add emphasis notes in the tune and document how to do that.
+	- add emphasis notes in the real book tune and document how to do that.
 % endif
 
 % if part=='ChordsFake':
@@ -114,7 +130,7 @@
 
 	\mark "B"
 	\startPart
-	d1:m7 | g:7 | c:maj7/e | a:7.9 | \myEndLine
+	d1:m7 | g:7 | c:maj7/e | a:9 | \myEndLine
 	d:m7 | g:7 | c:maj7 | d2:m7 g:7 | \myEndLine
 	\endPart
 
@@ -146,7 +162,7 @@
 	}
 	\alternative {
 		{
-			r2. e'8 g |
+			r2 r4 e'8 g |
 		}
 		{
 			r2 a,4 b8 c~ |

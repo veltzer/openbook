@@ -13,6 +13,7 @@ Melody:
 	and put ")" after the note that ends the phrase.
 - when you want to put a sharp/flat/bekar sign even though it is not needed (just as a reminder
 	to the player) use the "!" sign on the note on which to put it.
+- rests: "r2." looks diffrent on the page than "r2 r4". do with this information what you will.
 
 Chords:
 =======
@@ -39,6 +40,10 @@ c:9 which is c:7.9 which is correct for jazz but not for rock.
 	is it?
 	* the chord after this chord, if not annotated for length, will be considered multiplied
 	as well. take heed.
+- how do I mark out a 9 chord? if I do a:7.9 it shows up as a9 on the music page and not as a7/9.
+	- first, is there a way to make a7/9 appear on the page?
+	- what is the right way to mark a 9 chord?
+	So basically marking out a:7.9 or a:9 is the same on the page...
 
 questions:
 - how do I put chords in parenthesis? I still do not know.
