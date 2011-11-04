@@ -394,7 +394,9 @@ footervalheb=#"זה הטקסט התחתון"
 		\column {
 			\huge \larger \bold
 			\fill-line { \larger "${attributes['title']}" }
+% if attributes['subtitle']!='':
 			\fill-line { \large \smaller \bold \larger "(${attributes['subtitle']})" }
+% endif
 			\fill-line { \smaller \bold "${attributes['subsubtitle']}" }
 			\fill-line {
 				"${attributes['fullpoet']}"
