@@ -4,18 +4,24 @@
 	attributes['doChords']=True
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
-	attributes['render']="Unknown"
+	attributes['render']="Fake"
 
 	attributes['title']="Desafinado"
 	attributes['subtitle']="Slightly Out Of Tune"
 	attributes['composer']="Antonio Carlos Jobim"
-	attributes['copyright']="1959 1962, Editora Musical Arapua, Sao Paulo, Brazil"
+	# this is from the fake book
+	attributes['copyright']="1959 and 1962, Editora Musical Arapua, Sao Paulo, Brazil"
+	attributes['copyrightextra']="1959 1962, Editora Musical Arapua, Sao Paulo, Brazil"
 	attributes['style']="Jazz"
+	# this is from the fake book
 	attributes['piece']="Medium Bossa Nova"
+	# this is from the fake book
 	attributes['poet']="Newton Mendonca, Jon Hendricks, Jessie Cavanaugh"
 
 	attributes['completion']="5"
 	attributes['uuid']="c3fff540-a26e-11df-9435-0019d11e5a41"
+
+	attributes['structure']="AABA"
 
 	attributes['idyoutube']="g6w3a2v_50U"
 	attributes['idyoutube']="Vixc_Hu4Ris"
@@ -25,52 +31,69 @@
 
 % if part=='Doc':
 	DONE:
+	- brought in the real book epdf.
+	- brought in the fake book epdf.
+	- put in the tunes meta data from the fake book.
+	- put in the tunes chords from the fake book.
+	- put in the tunes tune from the fake book.
+	- put in the tunes lyrics from the fake book.
+	- filled in the tunes structure
+	- checked the fake book chords.
 	TODO:
-	- document what has been done with this tune.
-	- what version is this?
+	- checked the fake book tune.
+	- checked the fake book lyrics.
+	- hear the tune to make sure it sounds ok.
 	- document the you tube performances.
+	- add a lyrics url.
+	- add the real book version of this tune.
+	- in the fake book version the rythm for this tune is cut time instead of regular 4/4.
+	make it so. (how do I do that in lilypond?)
+	REMARKS:
+	- the tune structure is marked as AABA but all the A's in there are not exactly the same.
+	still AABA is a good description of this tune (better than ABCD which would be a description
+	that a pedantic would give).
 % endif
 
-% if part=='ChordsUnknown':
+% if part=='ChordsFake':
 \chordmode {
 %%	list of instruments can be found at
 %%	http://lilypond.org/doc/v2.11/Documentation/user/lilypond/MIDI-instruments#MIDI-instruments
-	\set ChordNames.midiInstrument = #"acoustic grand"
+%%	\set ChordNames.midiInstrument = #"acoustic grand"
 
 	\startChords
 	\startSong
 
 	\mark "A"
 	\startPart
-	f1:maj7 | f1:maj7 | g1:7.5- | g1:7.5- | \myEndLine
-	g1:m7 | c1:7 | a1:m7.5- | d1:9- | \myEndLine
-	g1:m7 | a1:9- | d1:7 | d1:9- | \myEndLine
-	g1:9- | g1:9- | ges1:maj7 | ges1:maj7 | \myEndLine
+	f1*2:maj7 | g:7.5- | \myEndLine
+	g1:m7 | c2.:7 c4:7/bes | a1:m7.5- | d:7.9- | \myEndLine
+	g:m7 | a:7.9- | d:7 | d:7.9- | \myEndLine
+	g1*2:7.9- | ges:maj7 | \myEndLine
+	\endPart
+
+	\mark "A"
+	\startPart
+	f1*2:maj7 | g:7.5- | \myEndLine
+	g1:m7 | c2.:7 c4:7/bes | a1:m7.5- | d:7.9- | \myEndLine
+	g:m7 | bes2:m7 ees:7 | f1:maj7 | b2:m7.5- e:9- | \myEndLine
 	\endPart
 
 	\mark "B"
 	\startPart
-	f1:maj7 | f1:maj7 | g1:7.5- | g1:7.5- | \myEndLine
-	g1:m7 | c1:7 | a1:m7.5- | d1:9- | \myEndLine
-	g1:m7 | bes1:m | a1:m7 | b2:m7.5- e2:9+ | \myEndLine
+	a1:maj7 | bes:dim7 | b:m7 | e:7 | \myEndLine
+	a | bes:dim7 | b:m7 | e:7 | \myEndLine
+	a | fis:m7 | b:m7 | e:7 | \myEndLine
+	c:maj7 | cis:dim7 | d:m7 | g:7 | \myEndLine
+	g:m7 | fis:dim | g:7 | c2:7 c:7.5- | \myEndLine
 	\endPart
 
-	\mark "C"
+	\mark "A"
 	\startPart
-	a1:maj7 | bes1:dim7 | b1:m11 | e1:7 | \myEndLine
-	a1:maj7 | bes1:dim7 | b1:m11 | e1:7 | \myEndLine
-	a1:maj7 | fis1:m7 | b1:m11 | e1:7 | \myEndLine
-	c1:maj7 | cis1:dim7 | d1:m11 | g1:7 | \myEndLine
-	g1:m7 | fis1:m7 | g1:7 | c1:7 | \myEndLine
-	\endPart
-
-	\mark "D"
-	\startPart
-	f1:maj7 | f1:maj7 | g1:7.5- | g1:7.5- | \myEndLine
-	g1:m7 | c1:7 | a1:m7.5- | d1:9- | \myEndLine
-	g1:m7 | bes1:m | a1:m7 | aes1:dim7 | \myEndLine
-	g1:7 | g1:7 | bes1:m7 | ees1:9 | \myEndLine
-	g1:7 | g2:m7 c2:9+ | f1:6.9 | f1:6.9 | \myEndLine
+	f1*2:maj7 | g:7.5- | \myEndLine
+	g1:m7 | c2.:7 c4:7/bes | a1:m7.5- | d:7.9- | \myEndLine
+	g:m7 | bes2:m ees:7 | f1:maj7 | d:m7 | \myEndLine
+	g1*2:7 | bes1:m7 | ees:7.9 | \myEndLine
+	g:7 | g2:m7 c:7 | f1*2:6 | \myEndLine
 	\endPart
 
 	\endSong
@@ -78,7 +101,7 @@
 }
 % endif
 
-% if part=='VoiceUnknown':
+% if part=='VoiceFake':
 \relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
@@ -86,87 +109,36 @@
 	\key f \major
 %%	list of instruments can be found at
 %%	http://lilypond.org/doc/v2.11/Documentation/user/lilypond/MIDI-instruments#MIDI-instruments
-	\set Staff.midiInstrument = #"flute"
+%%	\set Staff.midiInstrument = #"flute"
 
-	%% A: Bar 1
-	r8 c4 d8 e4 f |
-	e4. d8 cis4 d |
-	f4. des8 des2~ |
-	des2. r4 |
-	r8 d4 e8 f4 g |
-	f4. e8 dis4 e |
-	c'4. ees,8 ees2~ |
-	ees2. r4 |
-	r8 d c' bes a g4 bes8~ |
-	bes4. a8 dis,4 e |
-	fis8 a fis2 d4 |
-	ees1 |
-	r8 aes4 g8 f4 d |
-	aes'4. g8 f4 d |
-	f4. des8 des2~ |
-	des r |
+	%% A part
+	r8 c4 d8 e4 f | e4. d8 cis4 d | f4. des8 des2~ | des1 |
+	r8 d4 e8 f4 g | f4. e8 dis4 e | c'4. ees,8 ees2~ | ees1 |
+	r8 d c' bes a g4 bes8~ | bes4. a8 dis,4 e | fis8 a fis2 d4 | ees1 |
+	r8 aes4 g8 f4 d | aes'4. g8 f4 d | f4. des8 des2~ | des r |
 
-	%% B: Bar 17
-	r8 c4 d8 e4 f |
-	e4. d8 cis4 d |
-	f4. des8 des2~ |
-	des2. r4 |
-	r8 d4 e8 f4 g |
-	f4. e8 dis4 e |
-	c'4. ees,8 ees2~ |
-	ees2. r4 |
-	r8 c'4 bes8 a g4 bes8~ |
-	bes4. a8 g4 f |
-	g8 f g2.~ |
-	g2 r |
+	%% A part
+	r8 c4 d8 e4 f | e4. d8 cis4 d | f4. des8 des2~ | des1 |
+	r8 d4 e8 f4 g | f4. e8 dis4 e | c'4. ees,8 ees2~ | ees1 |
+	r8 c'4 bes8 a g4 bes8~ | bes4. a8 g4 f | g8 f g2.~ | g2 r |
 
-	%% C: Bar 29
-	e4 fis e8 fis4 e8~ |
-	e4. d8 cis4 d |
-	e1~ |
-	e2 r4 cis |
-	e fis e8 fis4 e8~ |
-	e4. d8 cis4 d |
-	e4. b8 e2~ |
-	e r |
-	r8 e4 fis8 gis4 a |
-	b4. a8 cis,4 d |
-	e8 fis e fis e2~ |
-	e r4 e |
-	g a g8 a4 g8~ |
-	g4. f8 e4 f |
-	g d8 g~ g d g4~ |
-	g r r8 d g a |
-	bes4 a bes8 a4 c8~ |
-	c4. bes8 a4 bes |
-	g1~ |
-	g4 r r2 |
+	%% B part
+	e4 fis e8 fis4 e8~ | e4. d8 cis4 d | e1~ | e2 r4 cis |
+	e fis e8 fis4 e8~ | e4. d8 cis4 d | e4. b8 e2~ | e r |
+	r8 e4 fis8 gis4 a | b4. a8 cis,4 d | e8 fis e fis e2~ | e r4 e |
+	g a g8 a4 g8~ | g4. f8 e4 f | g d8 g~ g d g4~ | g r r8 d g a |
+	bes4 a bes8 a4 c8~ | c4. bes8 a4 bes | g1~ | g4 r r2 |
 
-	%% D: Bar 49
-	r8 c,4 d8 e4 f |
-	e4. d8 cis4 d |
-	f4. des8 des2~ |
-	des2. r4 |
-	r8 d4 e8 f4 g |
-	f4. e8 dis4 e |
-	d' des c b |
-	bes d r a |
-	c4. b8 bes4 a |
-	bes a g f |
-	a2. e4 |
-	g2. d8 e |
-	f f f f f4 f |
-	r8 d4 e8 f4 f |
-	f8 f f f c'4 bes~ |
-	bes2. d,8 e |
-	f f f f f4 e8 f~ |
-	f4 r8 e dis4 e |
-	g4. f8 f2~ |
-	f2. r4 |
+	%% A part
+	r8 c,4 d8 e4 f | e4. d8 cis4 d | f4. des8 des2~ | des2. r4 |
+	r8 d4 e8 f4 g | f4. e8 dis4 e | d' des c b | bes d r a |
+	c4. b8 bes4 a | bes a g f | a2. e4 | g2. d8 e |
+	f f f f f4 f | r8 d4 e8 f4 f | f8 f f f c'4 bes~ | bes2. d,8 e |
+	f f f f f4 e8 f~ | f4 r8 e dis4 e | g4. f8 f2~ | f2. r4 |
 }
 % endif
 
-% if part=='LyricsUnknown':
+% if part=='LyricsFake':
 \lyricmode {
 	Love is like a nev -- er end -- ing mel -- o -- dy; __
 	po -- ets have com -- pared it to a sym -- pho -- ny, __
