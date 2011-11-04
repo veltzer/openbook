@@ -23,9 +23,11 @@
 
 	attributes['structure']="AABA"
 
+	attributes['idyoutuberemark']="Joao Gilberto in a nice brasilian version"
 	attributes['idyoutube']="g6w3a2v_50U"
-	attributes['idyoutube']="Vixc_Hu4Ris"
+	attributes['idyoutuberemark']="Stan Getz in a nice instrumental version"
 	attributes['idyoutube']="lo1SiVwVqic"
+	attributes['lyricsurl']="http://www.hotlyrics.net/lyrics/E/Ella_Fitzgerald/Desafinado.html"
 %>
 % endif
 
@@ -39,12 +41,12 @@
 	- put in the tunes lyrics from the fake book.
 	- filled in the tunes structure
 	- checked the fake book chords.
-	TODO:
 	- checked the fake book tune.
 	- checked the fake book lyrics.
-	- hear the tune to make sure it sounds ok.
-	- document the you tube performances.
-	- add a lyrics url.
+	- heard the tune to make sure it sounds ok.
+	- documented the you tube performances.
+	- added a lyrics url.
+	TODO:
 	- add the real book version of this tune.
 	- in the fake book version the rythm for this tune is cut time instead of regular 4/4.
 	make it so. (how do I do that in lilypond?)
@@ -113,28 +115,28 @@
 
 	%% A part
 	r8 c4 d8 e4 f | e4. d8 cis4 d | f4. des8 des2~ | des1 |
-	r8 d4 e8 f4 g | f4. e8 dis4 e | c'4. ees,8 ees2~ | ees1 |
+	r8 d!4 e8 f4 g | f4. e8 dis4 e | c'4. ees,8 ees2~ | ees1 |
 	r8 d c' bes a g4 bes8~ | bes4. a8 dis,4 e | fis8 a fis2 d4 | ees1 |
 	r8 aes4 g8 f4 d | aes'4. g8 f4 d | f4. des8 des2~ | des r |
 
 	%% A part
 	r8 c4 d8 e4 f | e4. d8 cis4 d | f4. des8 des2~ | des1 |
-	r8 d4 e8 f4 g | f4. e8 dis4 e | c'4. ees,8 ees2~ | ees1 |
+	r8 d!4 e8 f4 g | f4. e8 dis4 e | c'4. ees,8 ees2~ | ees1 |
 	r8 c'4 bes8 a g4 bes8~ | bes4. a8 g4 f | g8 f g2.~ | g2 r |
 
 	%% B part
 	e4 fis e8 fis4 e8~ | e4. d8 cis4 d | e1~ | e2 r4 cis |
-	e fis e8 fis4 e8~ | e4. d8 cis4 d | e4. b8 e2~ | e r |
+	e fis e8 fis4 e8~ | e4. d8 cis4 d | e4. b8 e2~ | e1 |
 	r8 e4 fis8 gis4 a | b4. a8 cis,4 d | e8 fis e fis e2~ | e r4 e |
-	g a g8 a4 g8~ | g4. f8 e4 f | g d8 g~ g d g4~ | g r r8 d g a |
-	bes4 a bes8 a4 c8~ | c4. bes8 a4 bes | g1~ | g4 r r2 |
+	g a g a | g f e f | g d8 g~ g d g4~ | g r r8 d g a |
+	bes4 a bes a | c bes a bes | g1~ | g4 r r2 |
 
 	%% A part
-	r8 c,4 d8 e4 f | e4. d8 cis4 d | f4. des8 des2~ | des2. r4 |
-	r8 d4 e8 f4 g | f4. e8 dis4 e | d' des c b | bes d r a |
+	r8 c,4 d8 e4 f | e4. d8 cis4 d | f4. des8 des2~ | des1 |
+	r8 d!4 e8 f4 g | f4. e8 dis4 e | d' des c b | bes! d r a |
 	c4. b8 bes4 a | bes a g f | a2. e4 | g2. d8 e |
 	f f f f f4 f | r8 d4 e8 f4 f | f8 f f f c'4 bes~ | bes2. d,8 e |
-	f f f f f4 e8 f~ | f4 r8 e dis4 e | g4. f8 f2~ | f2. r4 |
+	f f f f f4 e8 f~ | f4 r8 e dis4 e | g4. f8 f2~ | f1 |
 }
 % endif
 
