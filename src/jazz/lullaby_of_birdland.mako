@@ -119,22 +119,26 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+	%% A part
 	Lul -- la -- by Of Bird -- land
 	that's what I __
 	al -- ways hear __
 	when you sigh. __
 	Nev -- er in my word -- land could there be ways __ to re -- veal __ __ in a phrase __ how I feel! __
 
+	%% A part
 	Have you ev -- er heard two tur -- tle doves __
 	bill and coo __
 	when they love? __
 	That's the kind of mag -- ic mu -- sic we make __ with our lips __ __ when we kiss! __
 
+	%% B part
 	And tere's a weep -- y old wil -- low; __
 	he real -- ly knows how to cry! __
 	That's how I'd cry in my pil -- low __
 	if you should tell me fare -- well __ and good -- bye! __
 
+	%% A part
 	Lul -- la -- by Of Bird -- land whis -- per low, __
 	kiss me sweet __
 	and we'll go __
