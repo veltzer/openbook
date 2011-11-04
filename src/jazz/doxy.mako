@@ -35,6 +35,7 @@
 	- document the youtube performance.
 	TODO:
 	- add the real book chords and tune.
+	- how about adding the Aebersold version too?
 % endif
 
 % if part=='ChordsFake':
