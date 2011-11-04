@@ -21,12 +21,12 @@
 	attributes['completion']="5"
 	attributes['uuid']="070df83e-0676-11e1-b7fe-0019d11e5a41"
 
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
+	attributes['idyoutuberemark']="Billie in a radio show"
+	attributes['idyoutube']="XxwJ9lh-id4"
+	attributes['idyoutuberemark']="The great Dexter Gordon at the height of his power"
+	attributes['idyoutube']="k2Lx3n10fkc"
 
-	attributes['lyricsurl']=""
+	attributes['lyricsurl']="http://www.elyrics.net/read/b/billie-holiday-lyrics/don_t-explain-lyrics.html"
 %>
 % endif
 
@@ -41,11 +41,11 @@
 	- checked the fake book chords.
 	- checked the fake book tune.
 	- checked the fake book lyrics.
-	TODO:
-	- check that the tune sounds good.
+	- checked that the tune sounds good.
 	- add you tube performances.
 	- add lyrics url.
-	- add the real book version.
+	TODO:
+	- do the jazz ltd version.
 	REMARKS:
 	- in the fake book lyrics there are dual parts for girl and boy and I only put the girl
 	version cause I don't know how to write dual parts.
