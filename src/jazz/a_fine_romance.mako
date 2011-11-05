@@ -10,11 +10,14 @@
 	attributes['title']="A Fine Romance"
 	attributes['composer']="Jerome Kern"
 	attributes['style']="Jazz"
-	attributes['piece']="Med. Ballad"
+	# this is from the fake book
+	attributes['piece']="Moderately"
 	attributes['poet']="Dorothy Fields"
-	attributes['copyright']="1936 T.B. Harms Company"
-	attributes['copyrightextra']="Copyright Renewed. (c/o The Welk Music Group, Santa Monica, CA 90401)."
+	# this is from the fake book
+	attributes['copyright']="1936 T.B. Harms Company. Copyright Renewed."
+	attributes['copyrightextra']="(c/o The Welk Music Group, Santa Monica, CA 90401)."
 
+	attributes['structure']="ABAC"
 	attributes['completion']="5"
 	attributes['uuid']="7c9691e6-a26e-11df-8418-0019d11e5a41"
 
@@ -25,9 +28,28 @@
 
 % if part=='Doc':
 	DONE:
+	- brought in the real book epdf.
+	- brought in the fake book epdf.
+	- filled in the meta data from the fake book.
+	- put in the fake book chords.
+	- put in the fake book tune.
+	- put in the fake book lyrics.
+	- put in the real book chords.
+	- put in the real book tune.
+	- put in the real book lyrics.
+	- checked the fake book chords.
+	- checked the fake book tune.
+	- heard the fake book tune to hear that it sounds well.
 	TODO:
-	- fill in whats been done for this tune.
+	- checked the fake book lyrics.
+	- checked the real book chords.
+	- checked the real book tune.
+	- checked the real book lyrics.
 	- fill in data about the you tube performances.
+	- add a lyrics url.
+	- how do I mark the "Fine" mark in the real book version?
+	REMARKS:
+	- the structure of this tune can also be AA or AA'. Doesn't really matter.
 % endif
 
 % if part=='ChordsFake':
@@ -49,7 +71,7 @@
 	}
 	\alternative {
 		{
-			c:6 a:m7 | d:m7 g:7 | \myEndLine
+			c:6 a:m7 | d:m7 g:7 |
 		}
 		{
 			c:6 f:7 | c1:6.9 | \myEndLine
@@ -68,16 +90,16 @@
 	\repeat volta 2 {
 		c1 | a'4 g2 a4 | b,1 | b'4 a2 b4 |
 		e,1 | d'4 c2 e,4 | g1 | e'4 d2 g,4 |
-		c4 b c d | \times 2/3 { c b bes } a aes | g2 g~ | g2. g4 |
-		a gis a b | \times 2/3 { a aes g } fis f | e2 e~ | e2. e4 |
+		c4 b c d | \times 2/3 { c b! bes } a aes | g2 g~ | g2. g4 |
+		a gis a b | \times 2/3 { a aes g! } fis f | e2 e~ | e2. e4 |
 		c1 | a'4 g2 a4 | b,1 | b'4 a2 b4 |
 		e,1 | d'4 c2 e,4 | g1 | e'4 d2 g,4 |
-		c4 b c d | \times 2/3 { e d c } b bes | a1 | \times 2/3 { c4 b bes } a aes |
-		g1 | \times 2/3 { b4 a aes } g d' |
+		c4 b c d | \times 2/3 { e d c } b! bes | a1 | \times 2/3 { c4 b bes } a! aes |
+		g1 | \times 2/3 { b4 a aes } g! d' |
 	}
 	\alternative {
 		{
-			c1 | r2. e,4 |
+			c1 | r2 r4 e,4 |
 		}
 		{
 			c'1~ | c2. r4 |
