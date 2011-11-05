@@ -37,7 +37,7 @@
 	- checked the real book tune.
 	- document the youtube performances.
 	TODO:
-	- are there lyrics to this thing? Even if there isn't it's needs to be marked clearly here.
+	- are there lyrics to this thing? Even if there isn't it needs to be marked clearly here.
 	- the last two chords of the real book version (d:m7 and g:7) should be in parenthesis since they are part of the turn around.
 	I still don't know how to do that.
 	- add emphasis notes in the real book tune and document how to do that.
