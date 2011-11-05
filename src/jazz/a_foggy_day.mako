@@ -4,7 +4,7 @@
 	attributes['doChords']=True
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
-	attributes['render']="Fake"
+	attributes['render']="Real"
 
 	attributes['title']="A Foggy Day"
 	# this is from the fake book
@@ -16,6 +16,8 @@
 	attributes['style']="Jazz"
 	# this is from the real book
 	attributes['piece']="Med. Swing"
+	# this is from the fake book
+	attributes['piece']="Medium Swing"
 	# this is from the fake book
 	attributes['copyright']="1937, Gershwin Publishing Corporation"
 	attributes['copyrightextra']="Copyright Renewed, Assigned to Chappell & Co, Inc."
@@ -40,15 +42,18 @@
 	- put in the tunes structure.
 	- put in a lyrics url.
 	- filled in the meta data.
+	- checked the fake book chords.
+	- checked the fake book tune.
+	- checked the fake book lyrics.
+	- played the fake book version to hear that it sounds well.
+	- checked the real book chords.
+	- checked the real book tune.
+	- checked the real book lyrics.
+	- played the real book version to hear that it sounds well.
 	TODO:
-	- check the fake book chords.
-	- check the fake book tune.
-	- check the fake book lyrics.
-	- play the fake book version to hear that it sounds well.
-	- check the real book chords.
-	- check the real book tune.
-	- check the real book lyrics.
-	- play the real book version to hear that it sounds well.
+	- how do I put the last two chords in the real book version in parenthesis? (the turn around chords).
+	REMARKS:
+	- this tunes structure can also be categorised as "ABAC" since the first 8 bars of both the first and second part are the same.
 % endif
 
 % if part=='ChordsReal':
@@ -91,7 +96,7 @@
 	r4 a a a | c c2 c4 | a2. a4 | d,1 |
 
 	%% part "B"
-	r4 c c c | ees2. ees4 | d d2. | a'1 |
+	r4 c c c | ees2. ees4 | d2. d4 | a'1 |
 	r4 f f f | aes2. aes4 | g2. g4 | d'1 |
 	f2 f4 f | d2. d4 | c2 c | a a4 bes |
 	c f, g bes | a f g bes | a2 f' | f, g | f1~ | f2. r4 |
@@ -102,10 +107,10 @@
 % if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
-	A Fog -- gy Day __ in Lon -- don town __ ha -- d me low __ and had me down. __
-	I viewed the morn -- ing with a -- larm, __ the Brit -- ish Mu -- seum had lost its charm. __
-	How long I wondered could this thing last? __ But_the age of mira -- cles had -- n't passed, __
-	for sud -- den -- ly __ I saw you there __ and through fog -- gy Lon -- don town the sun was shin -- ing ev -- 'ry where.
+	A Fog -- gy Day in Lon -- don town ha -- d me low and had me down.
+	I viewed the morn -- ing with a -- larm, the Brit -- ish Mu -- seum had lost its charm.
+	How long I wondered could this thing last? But_the age of mira -- cles had -- n't passed,
+	for sud -- den -- ly I saw you there and through fog -- gy Lon -- don town the sun was shin -- ing ev -- 'ry where. __
 }
 % endif
 
@@ -135,7 +140,7 @@
 
 	} \alternative {
 		{
-			f1 | g2:m7 c:7 | \myEndLine
+			f1 | g2:m7 c:7 |
 		}
 		{
 			f1 | bes2:7 bes:m6 | f1:maj7 | \myEndLine
