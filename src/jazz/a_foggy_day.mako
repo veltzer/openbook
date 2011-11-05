@@ -7,15 +7,22 @@
 	attributes['render']="Fake"
 
 	attributes['title']="A Foggy Day"
+	# this is from the fake book
 	attributes['subtitle']="From 'A Damsel In Distress'"
+	# this is from the fake book
 	attributes['composer']="George Gershwin"
-	attributes['style']="Jazz"
-	attributes['piece']="Medium Swing"
+	# this is from the fake book
 	attributes['poet']="Ira Gershwin"
+	attributes['style']="Jazz"
+	# this is from the real book
+	attributes['piece']="Med. Swing"
+	# this is from the fake book
 	attributes['copyright']="1937, Gershwin Publishing Corporation"
 	attributes['copyrightextra']="Copyright Renewed, Assigned to Chappell & Co, Inc."
+
 	attributes['completion']="5"
 	attributes['uuid']="87da6ece-a26e-11df-95d7-0019d11e5a41"
+
 	attributes['structure']="AB"
 	attributes['idyoutuberemark']="Wynton Marsalis Quartet"
 	attributes['idyoutube']="-P2xoeGoWMs"
@@ -27,8 +34,21 @@
 
 % if part=='Doc':
 	DONE:
+	- brought in the real book epdf.
+	- brought in the fake book epdf.
+	- put in you tube performances with documentation.
+	- put in the tunes structure.
+	- put in a lyrics url.
+	- filled in the meta data.
 	TODO:
-	- fill out what's been done for this tune.
+	- check the fake book chords.
+	- check the fake book tune.
+	- check the fake book lyrics.
+	- play the fake book version to hear that it sounds well.
+	- check the real book chords.
+	- check the real book tune.
+	- check the real book lyrics.
+	- play the real book version to hear that it sounds well.
 % endif
 
 % if part=='ChordsReal':

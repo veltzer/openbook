@@ -175,3 +175,11 @@ work for the ENTIRE book which is WAY SLOW (25 minutes on 40 jazz standards). So
 - if you want a book part with no score you can just have a \header in it and it will show up. The thing is that
 you must have some markup in order for it to show up (even a \markup { \null } will do...) and you must have
 headers enabled (ofcourse).
+
+meta data:
+==========
+- quoting in the meta data. If you want to quote in meta data then for now you have to use single quotes
+	and not double. I can fix that and allow double quotes but currently it is not supported.
+	look at the subtitle of "A Foggy Day" if you want to see an example. You can try to change it
+	to double quotes to see what happens and try to fix the system to support double quotes (maybe
+	through a python function to quote strings?!?)
