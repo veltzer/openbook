@@ -321,7 +321,9 @@ book: $(OUT_PDF) $(ALL_DEP)
 	$(info doing [$@])
 $(OUT_PS) $(OUT_PDF): $(OUT_LY) $(ALL_DEP)
 	$(info doing [$@])
+	$(Q)-rm $(OUT_PS) $(OUT_PDF) 2> /dev/null
 	$(Q)lilypond --output=$(OUT_BASE) $(OUT_LY) 2> /dev/null > /dev/null
+	$(Q)chmod 444 $(OUT_PS) $(OUT_PDF)
 $(OUT_LY): $(FILES_MAKO) $(ALL_DEP) $(MAKE_BOOK_WRAPPER_DEP) $(COMMON)
 	$(info doing [$@])
 	$(Q)$(MAKE_BOOK_WRAPPER) $(OUT_LY)
