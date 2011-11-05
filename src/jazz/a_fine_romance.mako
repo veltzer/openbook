@@ -5,7 +5,7 @@
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
 	attributes['doLyricsmore']=True
-	attributes['render']="Fake"
+	attributes['render']="Real"
 
 	attributes['title']="A Fine Romance"
 	attributes['composer']="Jerome Kern"
@@ -21,8 +21,11 @@
 	attributes['completion']="5"
 	attributes['uuid']="7c9691e6-a26e-11df-8418-0019d11e5a41"
 
+	attributes['idyoutuberemark']="Oscar Peterson!"
 	attributes['idyoutube']="ytipqjANlrY"
+	attributes['idyoutuberemark']="Ella and Louis, great vocal performance of this song"
 	attributes['idyoutube']="cKbD4PQBrIA"
+	attributes['lyricsurl']="http://www.elyrics.net/read/b/billie-holiday-lyrics/a-fine-romance-lyrics.html"
 %>
 % endif
 
@@ -40,14 +43,16 @@
 	- checked the fake book chords.
 	- checked the fake book tune.
 	- heard the fake book tune to hear that it sounds well.
-	TODO:
 	- checked the fake book lyrics.
 	- checked the real book chords.
-	- checked the real book tune.
 	- checked the real book lyrics.
-	- fill in data about the you tube performances.
-	- add a lyrics url.
+	- checked the real book tune.
+	- heard the real book tune to hear that it sounds well.
+	- filled in data about the you tube performances.
+	- added a lyrics url.
+	TODO:
 	- how do I mark the "Fine" mark in the real book version?
+	- how do I put the last two chords in the real book version in parenthesis? (the turn around chords).
 	REMARKS:
 	- the structure of this tune can also be AA or AA'. Doesn't really matter.
 % endif
@@ -143,16 +148,16 @@
 
 	\partial 4 r4 |
 	\repeat volta 2 {
-		c1:6 | a:m7 | g:7 | dis:dim7 | \myEndLine
+		c1:6 | a:m7 | g:7 | dis:dim | \myEndLine
 		e:m7 | a:m7 | d:m7 | g:7 | \myEndLine
 	}
 	\alternative {
 		{
 			c:6 | e2.:m7 aes4:7 | d2:m7 g:7 | d:m7 g:7 | \myEndLine
-			a1:m7 | e2.:m7 f4:7 | e2:7 a:7 | d:m7 g:7 | \myEndLine
+			a1:m7 | e2.:m7 f4 | e2:7 a:7 | d:m7 g:7 | \myEndLine
 		}
 		{
-			c1:maj7 | c2:7/bes g4:7 c:7 | f2:maj7 a:7/e | d:m7 dis:dim7 | \myEndLine
+			c1:maj7 | c2:7/bes g4:7 c:7 | f2:maj7 a:7/e | d:m7 dis:dim | \myEndLine
 			e1:m7 | g:7 | c:6 | d2:m7 g:7 | \myEndLine
 		}
 	}
