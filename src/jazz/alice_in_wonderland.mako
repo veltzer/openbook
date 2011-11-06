@@ -3,7 +3,6 @@
 <%
 	attributes['doChords']=True
 	attributes['doVoice']=True
-	attributes['doLyrics']=True
 	attributes['render']="Real"
 
 	attributes['title']="Alice In Wonderland"
@@ -113,11 +112,5 @@
 	d'4 e f | e2 d4 | e2 c4 | g2. |
 	d'4 e f | e2 d4 | e2 g4 | c2 a4 |
 	g2 f4 | e2 d4 | c2.~ | c |
-}
-% endif
-
-% if part=='LyricsReal':
-%% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
-\lyricmode {
 }
 % endif

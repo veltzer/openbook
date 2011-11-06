@@ -64,12 +64,16 @@
 
 	\partial 4 r4 |
 	\repeat volta 2 {
+		\mark "A"
 		c1:6 | cis:dim7 | g:7/d | dis:dim7 | \myEndLine
 		e:m7 | a:m7 | d:m7 | g:7 | \myEndLine
+		\mark "B"
 		c:maj7 | c2:7 a4:13 aes:13 | g2:13 d:m7 | g:dim7 g:7 | \myEndLine
 		c1:6 | a2:7 fis4:13 f:13 | e2:7 a:7 | d:7 g:7 | \myEndLine
+		\mark "A"
 		c1:6 | cis:dim7 | g:7/d | dis:dim7 | \myEndLine
 		e:m7 | a:m7 | d:m7 | g:7 | \myEndLine
+		\mark "C"
 		c:6 | c2:7 a:7 | d:m7 a:7 | d:m7 dis:dim7 | \myEndLine
 		e:m7 a:7 | d:m7 g:7.9- |
 
@@ -115,13 +119,17 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+	%% A part
 	A Fine Ro -- mance with no kis -- es!
 	A Fine Ro -- mance, my friend, this is!
+	%% B part
 	We should be like a cou -- ple of hot to -- ma -- toes, __
 	but you're as cold as yes -- ter -- day's mashed po -- ta -- toes. __
 
+	%% A part
 	A Fine Ro -- mance you won't nest -- le.
 	A Fine Ro -- mance, you won't wrest -- le!
+	%% C part
 	I might as well play bridge with my old maid aunts!
 	I have -- n't got a chance. This is A Fine Ro -- mance. A
 }
@@ -129,13 +137,17 @@
 
 % if part=='LyricsmoreFake':
 \lyricmode {
+	%% A part
 	_ Fine Ro -- mance my good fel -- low!
 	You take ro -- mance, I'll take jel -- lo!
+	%% B part
 	You're calm -- er than the seal in the Arc -- tic O -- cean, __
 	at least they flap their fins to ex -- press e -- mo -- tion. __
 
+	%% A part
 	A Fine Ro -- mance with no quar -- rels,
 	With no in -- sults, and all mor -- als!
+	%% C part
 	I've nev -- er mussed the crease in your blue serge pants!
 	I nev -- er get the chance. This is A Fine Ro -- _ _ mance. __
 }
@@ -147,16 +159,19 @@
 	\startSong
 
 	\partial 4 r4 |
+	\mark "A"
 	\repeat volta 2 {
 		c1:6 | a:m7 | g:7 | dis:dim | \myEndLine
 		e:m7 | a:m7 | d:m7 | g:7 | \myEndLine
 	}
 	\alternative {
 		{
+			\mark "B"
 			c:6 | e2.:m7 aes4:7 | d2:m7 g:7 | d:m7 g:7 | \myEndLine
 			a1:m7 | e2.:m7 f4 | e2:7 a:7 | d:m7 g:7 | \myEndLine
 		}
 		{
+			\mark "C"
 			c1:maj7 | c2:7/bes g4:7 c:7 | f2:maj7 a:7/e | d:m7 dis:dim | \myEndLine
 			e1:m7 | g:7 | c:6 | d2:m7 g:7 | \myEndLine
 		}
@@ -194,13 +209,16 @@
 % if part=='LyricsReal':
 %% lyrics taken from the fake book and adjusted for the real book
 \lyricmode {
+	%% A part
 	A Fine Ro -- mance with no kis -- es!
 	A Fine Ro -- mance, my friend, this is!
+	%% B part
 	We should be like a cou -- ple of hot to -- ma -- toes, __
 	but you're as cold as yes -- ter -- day's mashed po -- ta -- toes. __
 
 	A
 
+	%% C part
 	might as well play bridge with my old maid aunts!
 	I have -- n't got a chance. This is A Fine Ro -- mance.
 

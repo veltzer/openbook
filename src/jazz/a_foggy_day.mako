@@ -189,10 +189,13 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+	%% A part
 	A Fog -- gy Day __ in Lon -- don town __ had me low __ and had me down. __
 	I viewed the morn -- ing with a -- larm, __ the Brit -- ish Mu -- se -- um had lost its charm. __
+	%% B part
 	How long I won -- dered could this thing last? __ But the age of mir -- a -- cles had -- n't passed, __
 	for sud -- den -- ly, __ I saw you there __ and through fog -- gy Lon -- don town the sun was shin -- ing ev -- 'ry where.
+	%% Voltas
 	A where. __
 }
 % endif

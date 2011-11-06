@@ -45,12 +45,12 @@
 	- checked the real book tune.
 	- hear the tune, adjust it's speed and see it's ok.
 	- put you tube performances.
+	- in the real book version how do I put the 3 turn around chords in parenthesis?
 	TODO:
 	- add the fake book version.
 	REMARKS:
 	- the structure of this tune could also be interpreted as ABAC since the 8 first bars of A and B
 	are the same.
-	- In the real book version how do I put the 3 turn around chords in parenthesis?
 % endif
 
 % if part=='ChordsReal':
