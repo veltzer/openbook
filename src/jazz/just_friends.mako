@@ -7,11 +7,16 @@
 	attributes['render']="Real"
 
 	attributes['title']="Just Friends"
+	# from the new real book
 	attributes['composer']="John Klenner"
-	attributes['style']="Jazz"
-	attributes['piece']="Medium Swing"
+	# from the new real book
 	attributes['poet']="Sam M. Lewis"
+	attributes['style']="Jazz"
+	# from the new real book
+	attributes['piece']="Medium Swing"
+	# from the new real book
 	attributes['copyright']="1931 (renewed 1959) EMI Robbins Catalog, Inc."
+	# from the new real book
 	attributes['copyrightextra']="Used by by Persmission of CPP/Belwin, Inc., Miami, FL. International Copyright Secured."
 
 	attributes['completion']="5"

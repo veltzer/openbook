@@ -32,9 +32,9 @@
 % if part=='Doc':
 	DONE:
 	TODO:
-	- the e9.11+ does at the end does not show on the sheet. On the sheet it says e:7.11+
-	- add the real book version with epdf.
 	- mark whats been done to this tune.
+	- add the real book version with epdf.
+	- the e9.11+ does at the end does not show on the sheet. On the sheet it says e:7.11+
 % endif
 
 % if part=='ChordsFake':
@@ -101,19 +101,22 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+	%% A part
 	My heart is sad and lone -- ly,
 	for you I sigh, for you, dear, on -- ly,
 	Why have -- n't you seen it?
 	I'm all for you, Bod -- y And Soul! _
 
+	%% B part
 	I can't be -- lieve it,
 	it's hard to con -- ceive it
-	that you'd turn a -- way ro -- mance.
+	that you'd turn a -- way ro -- mance. __
 
 	Are you pre -- tend -- ing,
 	it looks like the end -- ing
 	un -- less I could have one more chance to prove, dear,
 
+	%% A part
 	my life a wreck you're mak -- ing,
 	you know I'm yours for just the tak -- ing;
 	I'd glad -- ly sur -- ren -- der
@@ -123,6 +126,7 @@
 
 % if part=='LyricsmoreFake':
 \lyricmode {
+	%% A part
 	I spend my days in long -- ing,
 	and won -- d'ring why it's me you're wrong -- ing,
 	I tell you I mean it,

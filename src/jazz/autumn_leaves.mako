@@ -5,27 +5,29 @@
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
 	attributes['doLyricsmore']=True
-	attributes['render']='Real'
+	attributes['render']="Real"
 
-	attributes['title']='Autumn Leaves'
-	attributes['subtitle']='Les Feuilles Mortes'
-	attributes['composer']='Joseph Kosma'
-	attributes['copyright']='1947, 1950, 1987 Enoch Et Cie. Renewed 1975, 1978 Enoch Et Cie'
-	attributes['copyrightextra']='Sole Selling Agent for U.S.A (including its territories and possessions) and Dominion of Canada: Morley Music Co., by arrangement with Enoch Et Cie. International Copyright Secured. All Rights Reserved.'
-	attributes['poet']='Jacques Prevert, Johnny Mercer'
-	attributes['style']='Jazz'
+	attributes['title']="Autumn Leaves"
+	attributes['subtitle']="Les Feuilles Mortes"
+	attributes['composer']="Joseph Kosma"
+	attributes['copyright']="1947, 1950, 1987 Enoch Et Cie. Renewed 1975, 1978 Enoch Et Cie"
+	attributes['copyrightextra']="Sole Selling Agent for U.S.A (including its territories and possessions) and Dominion of Canada: Morley Music Co., by arrangement with Enoch Et Cie. International Copyright Secured. All Rights Reserved."
+	attributes['poet']="Jacques Prevert, Johnny Mercer"
+	attributes['style']="Jazz"
 	# this is from the fake book.
-	attributes['piece']='Medium Swing'
+	attributes['piece']="Medium Swing"
 	# this is from the real book
-	attributes['piece']='Med. Jazz'
+	attributes['piece']="Med. Jazz"
 
-	attributes['completion']='5'
-	attributes['uuid']='8c35acf6-a7c1-11df-9040-0019d11e5a41'
-	attributes['idyoutuberemark']='The great Bill Evans...'
-	attributes['idyoutube']='mRhVI7cpcS4'
-	attributes['idyoutuberemark']='Keith Jarret in a great performance'
-	attributes['idyoutube']='io1o1Hwpo8Y'
-	attributes['lyricsurl']='http://www.bluesforpeace.com/lyrics/autumn-leaves.htm'
+	attributes['structure']="AAB"
+
+	attributes['completion']="5"
+	attributes['uuid']="8c35acf6-a7c1-11df-9040-0019d11e5a41"
+	attributes['idyoutuberemark']="The great Bill Evans..."
+	attributes['idyoutube']="mRhVI7cpcS4"
+	attributes['idyoutuberemark']="Keith Jarret in a great performance"
+	attributes['idyoutube']="io1o1Hwpo8Y"
+	attributes['lyricsurl']="http://www.bluesforpeace.com/lyrics/autumn-leaves.htm"
 %>
 % endif
 
@@ -111,12 +113,14 @@
 % if part=='LyricsReal':
 %% lyrics are taken from the fake book and adjusted for the real one
 \lyricmode {
+	%% A part
 	The fall -- ing leaves __ drift by the win -- dow, __
 	The Au -- tumn Leaves, __ of red and gold.
 	I see your
 
 	_ I used to hold.
 
+	%% B part
 	Since you went a -- way __ the days grow long, __
 	And soon I'll hear __ old win -- ter's song. __
 	But I miss you most of all my dar -- ling, __
@@ -128,6 +132,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
+	%% A part
 	_ _ _ lips, __ the sum -- mer kiss -- es, __
 	The sun -- burned hands __
 }
@@ -144,6 +149,10 @@
 	\startPart
 	a1:m7 | d:7 | g:maj7 | c:maj7 | \myEndLine
 	fis:m7.5- | b:7 | e1*2:m | \myEndLine
+	\endPart
+
+	\mark "A"
+	\startPart
 	a1:m7 | d:7 | g:maj7 | c:maj7 | \myEndLine
 	fis:m7.5- | b:7 | e2:m a:m | e1:m | \myEndLine
 	\endPart
@@ -186,11 +195,14 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+	%% A part
 	The fall -- ing leaves __ drift by the win -- dow, __
 	The Au -- tumn Leaves, __ of red and gold.
+	%% A part
 	I see your lips, __ the sum -- mer kiss -- es,
 	The sun -- burned hands __ I used to hold.
 
+	%% B part
 	Since you went a -- way __ the days grow long, __
 	And soon I'll hear __ old win -- ter's song. __
 	But I miss you most of all my dar -- ling, __
