@@ -4,112 +4,127 @@
 	attributes['doChords']=True
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
-	attributes['doLyricsmore']=True
-	attributes['render']="Real"
+	attributes['render']="Newreal"
 
 	attributes['title']="Nature Boy"
+	# from the new real book
 	attributes['composer']="Eben Ahbez"
-	attributes['style']="Jazz"
-	attributes['piece']="Med. Ballad"
 	attributes['poet']="Eben Ahbez"
+	attributes['style']="Jazz"
+	# from the real book (volume II)
+	attributes['piece']="Slowly"
+	# from the new Real book
+	attributes['piece']="Med. Ballad"
+	# from the new Real Book
+	attributes['copyright']="1948, Eben Ahbez"
+
+	attributes['remark']="7th bar of letters A and B were originally 2 bars each. Melody is straight eights, though rather freely interpreted rhythmically."
+	attributes['structure']="AB"
 
 	attributes['completion']="5"
-	attributes['remark']="7th bar of letters A and B were originally 2 bars each. Melody is straight eights, though rather freely interpreted rhythmically."
-	attributes['idyoutube']="Iq0XJCJ1Srw"
-
 	attributes['uuid']="13d57a4a-a26f-11df-8711-0019d11e5a41"
+
+	attributes['idyoutube']="Iq0XJCJ1Srw"
 %>
 % endif
 
 % if part=='Doc':
 	DONE:
+	- brought in the real book epdf.
+	- brought in the new real book epdf.
+	- filled in this tunes structure.
+	- filled in this tunes meta data (from the new real book).
+	- put in the new real book chords.
+	- put in the new real book tune.
+	- put in the new real book lyrics.
+	- checked the new real book chords.
+	- checked the new real book tune.
 	TODO:
-	- where is this from?
-	- document what been done in this tune.
+	- check the new real book lyrics.
+	- hear the tune to make sure it sounds right and the rythm is right.
 	- document the youtube performance.
-	- fill in the copyright
+	- add another youtube performance.
+	- add a lyrics url.
+	- mark the parts in the lyrics.
+	- add the real book version.
+	- in the new real book version the b:m7.5- on at the end of the B part and the final two chords of the B
+	part (turn-around chords) should be in parenthesis. How do I do that?
+	REMARKS:
+	- this tunes structure can also be AA' since the A and the B part are VERY similar.
 % endif
 
-% if part=='ChordsReal':
+% if part=='ChordsNewreal':
 \chordmode {
 	\startChords
 	\startSong
 
 	\partial 8 r8 |
 
+	\mark "A"
 	\startPart
-	\repeat volta 2 {
-		d1:m | e2:m7.5- a2:7 | d1:m | e2:m7.5- a2:7 | \myEndLine
-		d2:m d2:m7+ | d2:m7 d2:m6 | g2:m6 d2:m | e1:m7.5- | \myEndLine
-	}
-	\alternative {
-		{
-			a1:7 | a1:7 | d1:m | d1:m | \myEndLine
-			e1:7.9- | e1:7.9- | a1:7 | a:7 | \myEndLine
-			\endPart
-		}
-		{
-			a1:7 | a1:7 | d1:m | b1:m7.5- | \myEndLine
-			e1:7.9- | a1:7.5+ | d1:m | e2:m7.5- a2:7 | \myEndLine
-			\endPart
-		}
-	}
+	d1:m | e2:m7.5- a:7 | d1:m | e2:m7.5- a:7 | \myEndLine
+	d:m d:m7+ | d:m7 d:m6 | g:m6 d:m | e1:m7.5- | \myEndLine
+	a1*2:7 | d:m | \myEndLine
+	e:7.9- | a:7 | \myEndLine
+	\endPart
+
+	\mark "B"
+	\startPart
+	d1:m | e2:m7.5- a:7 | d1:m | e2:m7.5- a:7 | \myEndLine
+	d:m d:m7+ | d:m7 d:m6 | g:m6 d:m | e1:m7.5- | \myEndLine
+	a1*2:7 | d1:m | b:m7.5- | \myEndLine
+	e:7.9- | a:7.5+ | d:m | e2:m7.5- a:7 | \myEndLine
+	\endPart
 
 	\endSong
 	\endChords
 }
 % endif
 
-% if part=='VoiceReal':
+% if part=='VoiceNewreal':
 \relative a {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 110
 	\time 4/4
 	\key d \minor
 	\partial 8 a8 |
-	\repeat volta 2 {
-		a'8 f d2. | r4 r8 a e' f g bes | a f d2. | r4 r8 a e' f g bes |
-		a4. d8 cis2 | a4. c8 b2 | g4. bes8 a4. d,8 | e2. r8 a, |
-	}
-	\alternative {
-		{
-			a'2. g4 | e2. a,4 | g'2. f4 | d2. a4 |
-			f'2. e4 | b2. c4 | cis1 | r2 r4 r8 a |
-		}
-		{
-			a'2. g4 | e2. a,4 | g'2. f4 | d2. a4 |
-			f'4. e8 b4. a8 | g'4 f2 a,8 e' | d1 | r |
-		}
-	}
+
+	%% A part
+	a'8 f d2. | r4 r8 a e' f g bes | a f d2. | r4 r8 a e' f g bes |
+	a4. d8 cis2 | a4. c!8 b2 | g4. bes!8 a4. d,8 | e2. r8 a, |
+	a'2. g4 | e2. a,4 | g'2. f4 | d2. a4 |
+	f'2. e4 | b2. c4 | cis1 | r2 r4 r8 a |
+
+	%% B part
+	a'8 f d2. | r4 r8 a e' f g bes | a f d2. | r4 r8 a e' f g bes |
+	a4. d8 cis2 | a4. c!8 b2 | g4. bes!8 a4. d,8 | e2. r8 a, |
+	a'2. g4 | e2. a,4 | g'2. f4 | d2. a4 |
+	f'4. e8 b4. a8 | g'4 f2 a,8 e' | d1 | r |
 }
 % endif
 
-% if part=='LyricsReal':
-%% lyrics were taken from the internet and adjusted for the real book
+% if part=='LyricsNewreal':
 \lyricmode {
+	%% A part
 	There was a boy,
 	A ver -- y strange en -- chan -- ted boy
 	They say he wan -- dered ver -- y far ver -- y far
 	O -- ver land and sea
+
 	A Lit -- tle shy
 	And sad of eye
 	But ver -- y wise
 	Was he
 
-	And
+	%% B part
+	And then one day,
+	A mag -- ic day he passed my way,
+	And while we spoke of man -- y things, Fools and kings,
+	This he said to me: 'The
 
 	great -- est thing
 	You'll ev -- er learn
 	Is just to love and be loved
 	In re -- turn.'
-}
-% endif
-
-% if part=='LyricsmoreReal':
-\lyricmode {
-	_ then one day,
-	A mag -- ic day he passed my way,
-	And while we spoke of man -- y things, Fools and kings,
-	This he said to me: 'The
 }
 % endif
