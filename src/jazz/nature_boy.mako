@@ -39,16 +39,15 @@
 	- put in the new real book lyrics.
 	- checked the new real book chords.
 	- checked the new real book tune.
+	- checked the new real book lyrics.
+	- heard the tune to make sure it sounds right and the rythm is right.
 	TODO:
-	- check the new real book lyrics.
-	- hear the tune to make sure it sounds right and the rythm is right.
 	- document the youtube performance.
 	- add another youtube performance.
 	- add a lyrics url.
-	- mark the parts in the lyrics.
-	- add the real book version.
 	- in the new real book version the b:m7.5- on at the end of the B part and the final two chords of the B
 	part (turn-around chords) should be in parenthesis. How do I do that?
+	- add the real book version.
 	REMARKS:
 	- this tunes structure can also be AA' since the A and the B part are VERY similar.
 % endif
@@ -107,24 +106,24 @@
 \lyricmode {
 	%% A part
 	There was a boy,
-	A ver -- y strange en -- chan -- ted boy
-	They say he wan -- dered ver -- y far ver -- y far
-	O -- ver land and sea
+	A ver -- y strange en -- chant -- ed boy
+	They say he wan -- dered ver -- y far, ver -- y far,
+	o -- ver land and sea;
 
-	A Lit -- tle shy
-	And sad of eye
+	A lit -- tle shy
+	and sad of eye,
 	But ver -- y wise
-	Was he
+	was he
 
 	%% B part
 	And then one day,
-	A mag -- ic day he passed my way,
-	And while we spoke of man -- y things, Fools and kings,
-	This he said to me: 'The
+	One mag -- ic day he came my way,
+	And as we spoke of man -- y things, fools and kings,
+	this he said to me: The
 
 	great -- est thing
-	You'll ev -- er learn
-	Is just to love and be loved
-	In re -- turn.'
+	you'll ev -- er learn
+	is just to love and be loved
+	in re -- turn.
 }
 % endif
