@@ -77,9 +77,8 @@
 
 	\mark "A"
 	\startPart
-	\repeat volta 2 {
-		d1:m | e2:m7.5- a:7.9- | d1:m | e2:m7.5- a:7.9- | \myEndLine
-		d1:m | bes2:7 a:7 | d1:m | e2:m7.5- a:7 | \myEndLine
+	d1:m | e2:m7.5- a:7.9- | d1:m | e2:m7.5- a:7.9- | \myEndLine
+	d1:m | bes2:7 a:7 | d1:m | e2:m7.5- a:7 | \myEndLine
 
 	\endSong
 	\endChords
