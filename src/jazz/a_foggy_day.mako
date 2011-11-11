@@ -42,10 +42,16 @@
 	- put in the tunes structure.
 	- put in a lyrics url.
 	- filled in the meta data.
+	- put in the fake book chords.
+	- put in the fake book tune.
+	- put in the fake book lyrics.
 	- checked the fake book chords.
 	- checked the fake book tune.
 	- checked the fake book lyrics.
 	- played the fake book version to hear that it sounds well.
+	- put in the real book chords.
+	- put in the real book tune.
+	- put in the real book lyrics.
 	- checked the real book chords.
 	- checked the real book tune.
 	- checked the real book lyrics.
