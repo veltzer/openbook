@@ -1,5 +1,6 @@
 Now:
 ====
+- enable to turn off lyrics and produce a book with lyrics and a book without.
 - enable the runner of the build to decide whether \myEndLine will be
 	a real break or not. This could reduce the size of the book by
 	a lot.
