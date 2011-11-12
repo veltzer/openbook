@@ -25,8 +25,16 @@
 
 % if part=='Doc':
 	DONE:
+	- brought in the real book epdf.
+	- brought in the fake book epdf.
 	TODO:
+	- mark what has been done with this tune.
+	- document the youtube performances.
+	- add a lyrics url.
 	- in the real book version move the last chord to be written in parenthesis (I don't know how to do that).
+	REMARK:
+	- the structure of this tune could also be thought of "ABAC" since in the "AB" interpretation the first 8
+	bars of the "A" and "B" part are identical.
 % endif
 
 % if part=='ChordsReal':
