@@ -44,8 +44,9 @@
 	- checked that the tune sounds good.
 	- add you tube performances.
 	- add lyrics url.
+	- added the jazz ltd epdf.
 	TODO:
-	- do the jazz ltd version.
+	- do the jazz ltd version (the epdf is there).
 	REMARKS:
 	- in the fake book lyrics there are dual parts for girl and boy and I only put the girl
 	version cause I don't know how to write dual parts.

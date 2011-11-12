@@ -8,10 +8,15 @@
 	attributes['render']="Real"
 
 	attributes['title']="Misty"
+	# this is from the fake book
 	attributes['composer']="Errol Garner"
-	attributes['style']="Jazz"
-	attributes['piece']="Ballad"
 	attributes['poet']="Johnny Burke"
+	attributes['style']="Jazz"
+	# this is from the fake book
+	attributes['piece']="Slowly, with a smooth swing"
+	# this is from the real book
+	attributes['piece']="Ballad"
+	# this is from the fake book
 	attributes['copyright']="1955. Renewed 1983 Marke Music, Limerick Music, Reganesque"
 	attributes['copyrightextra']="Music and Time-Co Music"
 
@@ -31,14 +36,20 @@
 
 % if part=='Doc':
 	DONE:
-	- put in whatever is in the real book.
+	- added real book epdf.
+	- added fake book epdf.
+	- added the real book chords.
+	- added the real book tune.
+	- added the real book lyrics.
+	- checked the real book chords.
+	- checked the real book tune.
+	- checked the real book lyrics.
 	- heard it to see if it's ok.
-	- checked the chords and tune to see that it matches the real book version.
-	- added real book pdf.
 	- adjusted speed for the tune.
-	- added fake book pdf.
+	- added youtube performances.
+	- added lyrics url.
 	TODO:
-	- add the fake book version.
+	- add the fake book version (the epdf is already there).
 	- how do I put the last two chord in the real book version in braces (they are part of the turn around)...
 % endif
 
@@ -137,6 +148,6 @@
 	On my own, would I wan -- der through this won -- der -- land a -- lone,
 	nev -- er know -- ing my right foot from my left,
 	my _ hat __ from my glove, __
-	I'm too Mist -- y and too much in Love. __
+	I'm too Mist -- y and too much in Love.
 }
 % endif
