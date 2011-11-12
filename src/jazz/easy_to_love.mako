@@ -15,6 +15,8 @@
 	# this is from the fake book
 	attributes['poet']="Cole Porter"
 	attributes['style']="Jazz"
+	# this is from the fake book
+	attributes['piece']="Moderately"
 	# this is from the real book
 	attributes['piece']="Ballad"
 	# this is from the fake book
@@ -26,8 +28,10 @@
 
 	attributes['structure']="AB"
 
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
+	attributes['idyoutuberemark']="Ella"
+	attributes['idyoutube']="uYnqy84ZY9Q"
+	attributes['idyoutuberemark']="Billie Holiday"
+	attributes['idyoutube']="izaZR89BJBo"
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Easy-To-Love-lyrics-Ella-Fitzgerald/3040B6936D6C386048256AAB00074FEE"
 %>
 % endif
@@ -42,13 +46,14 @@
 	- added the real book chords.
 	- added the real book tune.
 	- added the real book lyrics.
-	TODO:
+	- print "Fine" at the end in the real book version.
 	- check the real book chords.
 	- check the real book tune.
 	- check the real book lyrics.
-	- hear the real book version to make sure it sounds ok and is in good pace.
-	- add you tube performances.
-	- print "Fine" at the end in the real book version.
+	- heard the real book version to make sure it sounds ok and is in good pace.
+	- added you tube performances.
+	TODO:
+	- add the fake book version (epdf is already there).
 	REMARK:
 	- the structure of this tune could also be thought of as "ABAC" since the first 8 bars of the A and B
 	parts of an "AB" conception are almost identical.
@@ -69,7 +74,9 @@
 			d:m7 | g:7 | e:m7 | a:7 | \myEndLine
 		}
 		{
-			a:7 | \myEndLine
+			%% \myEndLine after the following line was removed to reduce
+			%% number of lines in the presentation
+			a:7 |
 			d:m7 | f:m6 | c:maj7 | e2:7 ees:dim | \myEndLine
 			d1:m7 | g:7 | c1*2:6 | \myEndLine
 		}
@@ -81,7 +88,7 @@
 % endif
 
 % if part=='VoiceReal':
-\relative c' {
+\relative c'' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 108
 	\key c \major
@@ -92,14 +99,14 @@
 		g2 fis4 g | d' des c b | a2 gis4. a8 |
 	} \alternative {
 		{
-			g!'1 |
+			g'!1 |
 			g | a,2. b4 | e e e2~ | e4 r r2 |
-			r4 g g,4. g8 | aes a4 aes8 a4 a8 b~ | b4 b b2~ | b4 r r2 |
+			r4 g g,4. g8 | aes aes4 aes8 a4 a8 b~ | b4 b b2~ | b4 r r2 |
 		}
 		{
 			a'2. e4 |
 			g2. d4 | f2. c4 | e2 b4 c | d des c b |
-			a2 e | e ees4 d | c1~ | c4 r r2 |
+			a2 e' | e ees4 d | c1~ \mark \markup { \italic { Fine } } | c4 r r2 |
 		}
 	}
 }
@@ -108,11 +115,16 @@
 % if part=='LyricsReal':
 \lyricmode {
 	%% A part
-	You'd be so Easy To Love,
+	You'd be so Eas -- y To Love,
 	So eas -- y to i -- dol -- ize,
 	All oth -- ers a -- bove
 	So worth the yearn -- ing for, __
 	So swell to keep ev -- 'ry home -- fire burn -- ing for __
+	
+	shame
+	that you can't see
+	your fu -- ture with me,
+	'cause you'd be oh, so Eas -- y To Love! __
 }
 % endif
 
@@ -121,9 +133,6 @@
 	%% B part
 	We'd be so grand at the game
 	So care -- free to -- get -- her,
-	that it does seem a shame
-	that you can't see
-	your fu -- ture with me,
-	'cause you'd be oh, so Eas -- y To Love! __
+	that it does seem a
 }
 % endif
