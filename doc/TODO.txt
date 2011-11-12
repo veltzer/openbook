@@ -242,3 +242,7 @@ checking of tunes:
 - look for \endSong and then a newline between it and \endChords.
 	This needs to be done via an improvement of pgrep.pl since pgrep cannot
 	scan for patterns that span more than one line.
+- cat * | grep uuid | sort  | uniq | wc -l
+	is used to check that each tune has a unique uuid. do it this way or some other
+	way but check this as part of check_all also.
+- make the checks be part of the build and make the build fail if some of the checks fail.
