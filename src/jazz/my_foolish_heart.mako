@@ -35,20 +35,25 @@
 	- added the fake book chords.
 	- added the fake book tune.
 	- added the fake book lyrics.
-	- added the real book tune.
 	- added the meta data for this tune from the fake book.
 	- added this tunes structure.
+	- added a lyrics url.
 	TODO:
+	- document the youtube performances.
 	- check the fake book chords.
 	- check the fake book tune.
 	- check the fake book lyrics.
 	- play the fake book tune to hear that it sounds well.
-	- document the youtube performances.
-	- add an epdf of the real book.
+	- add an epdf of the real book (volume I, page 307).
 	- add the real book chords.
+	- add the real book tune.
 	- add the real book lyrics.
-	- In the lyrics where it says "His" a boy should sing "Her". We should have
-	alternate lyrics here. See how they did it in the fake book.
+	- check the real book chords.
+	- check the real book tune.
+	- check the real book lyrics.
+	- hear the real book version to make sure it sounds well.
+	- In the fake book lyrics where it says "His" a boy should sing "Her". We should have
+	alternate lyrics here.
 	REMARK:
 	- this tunes structure can also be seen as ABAC since the first 8 bars of the A and B part
 	under an "AB" structure are the same.
