@@ -53,7 +53,7 @@
 	- add more versions of this tune (plenty of epdfs).
 	REMARKS:
 	- in a lot of books this tune is called "On Green Dolphin Street". Should we build an alias mechanism
-	whereby tunes can have alias names?
+	whereby tunes can have alias names? (like new real book vol III).
 	- in a lot of books this tune is played in e flat.
 	- there is an intro text to this tune and an outgoing text from the film in which it was introduced.
 % endif

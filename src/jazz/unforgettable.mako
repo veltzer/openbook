@@ -42,7 +42,7 @@
 	- added lyrics url.
 	- added youtube performances.
 	TODO:
-	- add epdf from other sources (real book?).
+	- add epdf from other sources (new real book vol II).
 % endif
 
 % if part=='ChordsFake':
