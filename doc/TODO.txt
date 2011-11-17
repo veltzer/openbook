@@ -111,6 +111,8 @@ parsing lilypond:
 
 build system
 ============
+- the defaul target of the build system should be to build the book and not
+	all the tunes (and certainly not the mp3 or ogg).
 - the making of the book (final book) is run without a lilypond wrapper and as a result
 	I do not catch warnings off of it. make it so.
 - when building all the products from .ly files (pdf,midi,ps,png) make sure
