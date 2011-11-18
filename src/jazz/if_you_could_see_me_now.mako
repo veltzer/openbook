@@ -50,6 +50,7 @@
 
 	\mark "A"
 	\startPart
+	ees1:maj7 | aes:7 | ees:maj7 | aes:7 | \myEndLine
 	\endPart
 
 	\mark "A"
@@ -72,11 +73,12 @@
 % if part=='VoiceReal':
 \relative a {
 	\time 4/4
-	\key f \major
+	\key ees \major
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Adagio" 4 = 76
 
 	%% A part
+	d8 ees g bes d c bes g |
 
 	%% A part
 
