@@ -50,41 +50,45 @@ sub printout($) {
 }
 # this is a function that removes a file and can optionally die if there is a problem
 sub unlink_check($$) {
-	my($file,$check)=@_;
+	my($file,$dodie)=@_;
 	if($debug) {
 		print 'unlinking ['.$file.']'."\n";
 	}
 	my($ret)=unlink($file);
-	if($check) {
+	if($dodie) {
 		if($ret!=1) {
 			die('problem unlinking file ['.$file.']');
 		}
 	}
+	return $ret;
 }
 # this is a function that removes a file and can optionally die if there is a problem
 sub chmod_check($$) {
-	my($file,$check)=@_;
+	my($file,$dodie)=@_;
 	if($debug) {
 		print 'chmodding ['.$file.']'."\n";
 	}
 	my($ret)=chmod(0444,$file);
-	if($check) {
+	if($dodie) {
 		if($ret!=1) {
 			die('problem chmodding file ['.$file.']');
 		}
 	}
+	return $ret;
 }
 # sub do file
 sub do_file($$$) {
-	my($file,$unlink,$check)=@_;
+	my($file,$unlink,$dodie)=@_;
 	if($unlink) {
-		unlink_check($file,0);
+		my($ret)=unlink_check($file,0);
+		return $ret;
 	} else {
-		chmod_check($file,$check);
+		my($ret)=chmod_check($file,$dodie);
+		return $ret;
 	}
 }
 
-# a function that messes with the list of files associated with a certain lilypond file...
+# a function that either unlinks or checks the permissions on a list of files associated with a certain lilypond file...
 sub do_files($$) {
 	my($output,$unlink)=@_;
 	my($volume,$directories,$file)=File::Spec->splitpath($output);
@@ -149,6 +153,11 @@ if($res) {
 	my($base)=File::Basename::basename($file,'.stamp');
 	my($pdf_file)=File::Spec->catpath($volume,$directories,$base.'.pdf');
 	if(!(-f $pdf_file)) {
+		do_files($output,1);
+		die("error in output production");
+	}
+	my($midi_file)=File::Spec->catpath($volume,$directories,$base.'.midi');
+	if(!(-f $midi_file)) {
 		do_files($output,1);
 		die("error in output production");
 	}
