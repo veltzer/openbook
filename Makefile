@@ -26,9 +26,9 @@ DO_STAMP:=1
 # should we make .wav files ? (don't really want this):
 DO_WAV:=0
 # should we make mp3 ?
-DO_MP3:=1
+DO_MP3:=0
 # should we make ogg ?
-DO_OGG:=1
+DO_OGG:=0
 # should we do the full book ?
 DO_BOOK:=1
 # do you actually want to use lilypond dependency information ?
