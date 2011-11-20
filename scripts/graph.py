@@ -2,6 +2,9 @@
 
 """
 this script gets the graph data for the openbook progress report
+the idea is to be able to see in a graph the progress being made in
+this project.
+
 TODO:
 	- create a pair of tables in the database to hold date based graphs.
 		each entry will have a string, date and value.
@@ -9,6 +12,12 @@ TODO:
 	- add code to this script to delete the data in the database under the same name
 		at the start.
 	- then you can go ahead and show this graph in the website.
+	- modify this script to produce counts for both jazz and non-jazz tunes.
+		(very easy). This way the data that is outputted will be related to the openbook pdf.
+	- take care of the corrupt commits. either:
+		- get their uncorrupted data from github or something.
+		- erase them from the history altogether (in that case document how I did
+			that in the git hints file).
 """
 
 import subprocess
@@ -25,8 +34,7 @@ corrupt={
 };
 
 # this gets all commits in the right order
-output=subprocess.check_output(["git","log","--format=%H","--reverse"])
-commits=output.split("\n")
+commits=subprocess.check_output(["git","log","--format=%H","--reverse"]).split("\n")
 # removes the extra element that I don't need
 commits.pop()
 for commit in commits:
@@ -36,8 +44,7 @@ for commit in commits:
 	d2=dateutil.parser.parse(d1)
 	dt=d2.astimezone(dateutil.tz.tzutc())
 	count=0
-	lines=subprocess.check_output(["git","ls-tree","-r",commit]);
-	lines=lines.split("\n")
+	lines=subprocess.check_output(["git","ls-tree","-r",commit]).split("\n");
 	for line in lines:
 		if line.endswith('.ly') or line.endswith('.temp') or line.endswith('.mako') or line.endswith('.gpp'):
 			count=count+1
