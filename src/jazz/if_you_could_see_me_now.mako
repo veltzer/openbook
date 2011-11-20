@@ -7,7 +7,7 @@
 	attributes['render']="Real"
 
 	attributes['title']="If You Could See Me Now"
-	attributes['composer']=""
+	attributes['composer']="Tadd Dameron"
 	attributes['copyright']=""
 	attributes['copyrightextra']=""
 	attributes['style']="Jazz"
@@ -50,7 +50,17 @@
 
 	\mark "A"
 	\startPart
-	ees1:maj7 | aes:7 | ees:maj7 | aes:7 | \myEndLine
+	\repeat volta 2 {
+		ees1:maj7 | aes:7 | ees:maj7 | aes:7 | \myEndLine
+		aes:7 | g2:min7 ges4:m7 b:7 | f2:m7 bes:7 | \myEndLine
+	} \alternative {
+		{
+			g:m7 c:7 | f:m7 bes:7 |
+		}
+		{
+			a:m7.5-
+		}
+	}
 	\endPart
 
 	\mark "A"
