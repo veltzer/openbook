@@ -23,9 +23,9 @@ TODO:
 import subprocess
 import dateutil.parser
 import MySQLdb
-import sys
 
 debug=True
+doDb=True
 
 # these are corrupt commits for which there is no meta data or there
 # is no tree...
@@ -35,6 +35,7 @@ corrupt={
 	'd5a7675bb3132d5b89715b637368e9eace672a2f',
 	'3ebc2b5854a94b96d351ede91fabb9e20c440ecc',
 	'4d6523fbc7066b6f436f89d50506a6a7af7b7f0c',
+	'1284db847767666779a0ffcf7fc3de32bb62a931',
 }
 
 conn=MySQLdb.connect(
@@ -44,25 +45,23 @@ conn=MySQLdb.connect(
 	db="myworld"
 )
 
-# remove the old data
-cursor=conn.cursor()
-cursor.execute("SELECT id FROM TbGraph WHERE name='openbook_progress'")
-row=cursor.fetchone()
-# only remove data if we already have data
-if row!=None:
-	id=int(row[0])
+if doDb:
+	# remove the old data
+	cursor=conn.cursor()
+	cursor.execute("SELECT id FROM TbGraph WHERE name='openbook_progress'")
+	row=cursor.fetchone()
+	# only remove data if we already have data
+	if row!=None:
+		id=int(row[0])
+		if debug:
+			print "id is",id
+		cursor.execute('DELETE from TbGraphData WHERE graphId=%d' % (id,))
+		cursor.execute('DELETE from TbGraph WHERE id=%d' % (id,))
+	# insert a new row into the graph meta data
+	cursor.execute('INSERT INTO TbGraph (name) VALUES(\'openbook_progress\')')
+	id=cursor.lastrowid
 	if debug:
 		print "id is",id
-		print type(id)
-	cursor.execute('DELETE from TbGraphData WHERE graphId=%d' % (id,))
-	cursor.execute('DELETE from TbGraph WHERE id=%d' % (id,))
-
-# insert a new row into the graph meta data
-cursor.execute('INSERT INTO TbGraph (name) VALUES(\'openbook_progress\')')
-id=cursor.lastrowid
-if debug:
-	print "id is",id
-#sys.exit(0)
 # this gets all commits in the right order
 commits=subprocess.check_output(["git","log","--format=%H","--reverse"]).split("\n")
 # removes the extra element that I don't need
@@ -82,9 +81,11 @@ for commit in commits:
 		print "commit is "+commit
 		print "dt is "+str(dt)
 		print "count is "+str(count)
-	cursor.execute("INSERT INTO TbGraphData (tag,dt,value,graphId) VALUES('%s','%s','%s','%s')" % (commit,dt,count,id))
+	if doDb:
+		cursor.execute("INSERT INTO TbGraphData (tag,dt,value,graphId) VALUES('%s','%s','%s','%s')" % (commit,dt,count,id))
 
 # commit everything...
-cursor.close()
-conn.commit()
-conn.close()
+if doDb:
+	cursor.close()
+	conn.commit()
+	conn.close()
