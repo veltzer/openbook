@@ -3,20 +3,11 @@ Now:
 - enable to turn off lyrics and produce a book with lyrics and a book without.
 - enable the runner of the build to decide whether \myEndLine will be
 	a real break or not. This could reduce the size of the book by
-	a lot.
+	a lot. Turn the default off so that the book will be lesser in size.
 - fix the db import script. turn it into python and use the mako system.
 - modify the import script to import the book too
 	(in all of its formats: lilypond, postscript, pdf).
-- reimport everything to my site.
-	put a special place on my site for the entire book.
 - unite the two python wrapper scripts, they are almost the same.
-- fix tunes:
-	one note samba.
-	what a wonderful world.
-	hellelujah I love him so.
-	My little suede shoes.
-	Round midnight.
-	Corcovado.
 - add a license on the first page (select a good license? Creative Commons?)
 - In most cases where there is a \repate volta (lots of tunes!!!) I remark the first alternatives \myEndLine to save
 	lines. Should we have a more general mechanism for this?
@@ -111,19 +102,22 @@ parsing lilypond:
 
 build system
 ============
-- the defaul target of the build system should be to build the book and not
-	all the tunes (and certainly not the mp3 or ogg).
+- add a release script with a build id that gets incremented by that script.
+	the release script will:
+	1. check that everything is committed.
+	2. get the current git tag and increment it by one.
+	3. build everything and install it.
+	4. potentially could also update progress graphs.
+	this should be written in python and could be used in other projects too.
 - the making of the book (final book) is run without a lilypond wrapper and as a result
-	I do not catch warnings off of it. make it so.
+	I do not catch warnings off of it. catch those warnings!
 - when building all the products from .ly files (pdf,midi,ps,png) make sure
 	to remove ALL products from that .ly files. This is especially true for
-	pngs since if a piece shrikns in side the number of the png produced from it
+	pngs since if a piece shrinks in side the number of the png produced from it
 	goes DOWN and so there is a chance of old png hanging around.
-- add support for deriving gpp dependencies (a simple perl script).
-	use it to generate dependencies and analyze them.
 - do a general cache (~/.make_cache) script which will run commands for me and will save
-results according to the command line and md5 sum of the source and deps.
-this way changes to the makefile will not do a full recompile.
+	results according to the command line and md5 sum of the source and deps.
+	this way changes to the makefile will not do a full recompile.
 - make each lily file stand on it's own so that people could use it.
 	This means stopping using the lilypond include feature and starting
 	to use some kind of marcro processor (with dependency analysis ofcourse).
