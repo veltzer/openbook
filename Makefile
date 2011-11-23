@@ -53,6 +53,8 @@ MAKE_BOOK_WRAPPER:=scripts/mako_book.py
 WEB_DIR:=/var/www/openbook
 # where is the common file?
 COMMON:=src/include/common.makoi
+# web index file
+SRC_INDEX=web/index.html
 
 ########
 # BODY #
@@ -117,10 +119,13 @@ FILES_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO)
 FILES_WAV:=$(addsuffix .wav,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_MP3:=$(addsuffix .mp3,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_OGG:=$(addsuffix .ogg,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
-OUT_PDF:=$(OUT_DIR)/openbook.pdf
-OUT_PS:=$(OUT_DIR)/openbook.ps
 OUT_BASE:=$(OUT_DIR)/openbook
 OUT_LY:=$(OUT_DIR)/openbook.ly
+OUT_PS:=$(OUT_DIR)/openbook.ps
+OUT_PDF:=$(OUT_DIR)/openbook.pdf
+WEB_LY=$(WEB_DIR)/openbook.ly
+WEB_PS=$(WEB_DIR)/openbook.ps
+WEB_PDF=$(WEB_DIR)/openbook.pdf
 
 ifeq ($(DO_LY),1)
 	ALL:=$(ALL) $(FILES_LY)
@@ -171,6 +176,7 @@ ly: $(FILES_LY)
 
 .PHONY: debug
 debug:
+	$(info ALL is $(ALL))
 	$(info SOURCES_ALL is $(SOURCES_ALL))
 	$(info FILES_MAKO is $(FILES_MAKO))
 	$(info FILES_MAKOD is $(FILES_MAKOD))
@@ -187,7 +193,9 @@ debug:
 	$(info OUT_LY is $(OUT_LY))
 	$(info OUT_PS is $(OUT_PS))
 	$(info OUT_PDF is $(OUT_PDF))
-	$(info ALL is $(ALL))
+	$(info WEB_LY is $(WEB_LY))
+	$(info WEB_PS is $(WEB_PS))
+	$(info WEB_PDF is $(WEB_PDF))
 
 .PHONY: todo
 todo:
@@ -286,32 +294,32 @@ $(FILES_PDF): %.pdf: %.stamp $(ALL_DEP)
 
 $(FILES_MIDI): %.midi: %.stamp $(ALL_DEP)
 
-$(FILES_STAMP): %.stamp: %.ly $(ALL_DEP) $(LILYPOND_WRAPPER_DEP)
+$(FILES_STAMP): %.stamp: %.ly $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
 	$(Q)$(LILYPOND_WRAPPER) $< $@ $(LYFLAGS) -o $(dir $@)$(basename $(notdir $@)) $<
 
-$(FILES_LY): $(OUT_DIR)/%.ly: %.mako $(ALL_DEP) $(MAKO_WRAPPER_DEP)
+$(FILES_LY): $(OUT_DIR)/%.ly: %.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
 	$(Q)$(MAKO_WRAPPER) $< $@
-$(FILES_MAKOD): $(OUT_DIR)/%.mako.d: %.mako $(ALL_DEP) $(MAKOD_WRAPPER_DEP)
+$(FILES_MAKOD): $(OUT_DIR)/%.mako.d: %.mako $(MAKOD_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
 	$(Q)$(MAKOD_WRAPPER) $< $@ $(basename $(basename $@)).stamp $(basename $(basename $@)).pdf $(basename $(basename $@)).ps $(basename $(basename $@)).midi
-$(FILES_LYD): %.ly.d: %.ly $(ALL_DEP) $(LYD_WRAPPER_DEP)
+$(FILES_LYD): %.ly.d: %.ly $(LYD_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
 	$(Q)$(LYD_WRAPPER) $< $@ $(basename $@).stamp $(basename $@).pdf $(basename $@).ps $(basename $@).midi
-$(FILES_WAV): %.wav: %.midi $(ALL_DEP) $(MIDI2WAV_WRAPPER_DEP)
+$(FILES_WAV): %.wav: %.midi $(MIDI2WAV_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing $@)
 	$(Q)-mkdir -p $(dir $@)
 	$(Q)$(MIDI2WAV_WRAPPER) $< $@
-$(FILES_OGG): %.ogg: %.midi $(ALL_DEP) $(MIDI2OGG_WRAPPER_DEP)
+$(FILES_OGG): %.ogg: %.midi $(MIDI2OGG_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
 	$(Q)$(MIDI2OGG_WRAPPER) $< $@
-$(FILES_MP3): %.mp3: %.midi $(ALL_DEP) $(MIDI2MP3_WRAPPER_DEP)
+$(FILES_MP3): %.mp3: %.midi $(MIDI2MP3_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
 	$(Q)$(MIDI2MP3_WRAPPER) $< $@
@@ -324,16 +332,24 @@ $(OUT_PS) $(OUT_PDF): $(OUT_LY) $(ALL_DEP)
 	$(Q)-rm -f $(OUT_PS) $(OUT_PDF) 2> /dev/null
 	$(Q)lilypond --output=$(OUT_BASE) $(OUT_LY) 2> /dev/null > /dev/null
 	$(Q)chmod 444 $(OUT_PS) $(OUT_PDF)
-$(OUT_LY): $(FILES_MAKO) $(ALL_DEP) $(MAKE_BOOK_WRAPPER_DEP) $(COMMON)
+$(OUT_LY): $(FILES_MAKO) $(MAKE_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)$(MAKE_BOOK_WRAPPER) $(OUT_LY)
 
 .PHONY: install
-install: $(OUT_LY) $(OUT_PS) $(OUT_PDF) $(ALL_DEP)
+install: $(WEB_LY) $(WEB_PS) $(WEB_PDF) $(WEB_INDEX)
+
+$(WEB_LY) $(WEB_PS) $(WEB_PDF) $(WEB_INDEX): %: % $(ALL_DEP)
+	$(info doing [$@])
+	$(Q)sudo mkdir $(WEB_DIR)
+	$(Q)sudo cp $< $@
+
+.PHONY: install
+install: $(SRC_INDEX) $(OUT_LY) $(OUT_PS) $(OUT_PDF) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-sudo rm -rf $(WEB_DIR)
 	$(Q)sudo mkdir $(WEB_DIR)
-	$(Q)sudo cp web/index.html $(OUT_LY) $(OUT_PS) $(OUT_PDF) $(WEB_DIR)
+	$(Q)sudo cp $(SRC_INDEX) $(OUT_LY) $(OUT_PS) $(OUT_PDF) $(WEB_DIR)
 
 # include the deps files (no warnings)
 ifeq ($(USE_LYD),1)
