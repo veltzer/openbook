@@ -4,7 +4,7 @@
 # should we show commands executed ?
 DO_MKDBG:=0
 # should we depend on the date of the makefile itself ?
-DO_MAKEDEPS?=1
+DO_ALL_DEP?=1
 # should we depend on the wrappers ?
 DO_WRAPDEPS:=1
 # should we make the ly files ?
@@ -54,7 +54,7 @@ WEB_DIR:=/var/www/openbook
 # where is the common file?
 COMMON:=src/include/common.makoi
 # web index file
-SRC_INDEX=web/index.html
+SRC_INDEX=mako/index.html
 
 ########
 # BODY #
@@ -71,7 +71,7 @@ ALL:=
 LYFLAGS:=
 
 ALL_DEP:=
-ifeq ($(DO_MAKEDEPS),1)
+ifeq ($(DO_ALL_DEP),1)
 	ALL_DEP:=$(ALL_DEP) Makefile
 endif
 ifeq ($(DO_WRAPDEPS),1)
@@ -123,9 +123,11 @@ OUT_BASE:=$(OUT_DIR)/openbook
 OUT_LY:=$(OUT_DIR)/openbook.ly
 OUT_PS:=$(OUT_DIR)/openbook.ps
 OUT_PDF:=$(OUT_DIR)/openbook.pdf
+OUT_INDEX:=$(OUT_DIR)/index.html
 WEB_LY=$(WEB_DIR)/openbook.ly
 WEB_PS=$(WEB_DIR)/openbook.ps
 WEB_PDF=$(WEB_DIR)/openbook.pdf
+WEB_INDEX=$(WEB_DIR)/index.html
 
 ifeq ($(DO_LY),1)
 	ALL:=$(ALL) $(FILES_LY)
@@ -193,9 +195,11 @@ debug:
 	$(info OUT_LY is $(OUT_LY))
 	$(info OUT_PS is $(OUT_PS))
 	$(info OUT_PDF is $(OUT_PDF))
+	$(info OUT_INDEX is $(OUT_INDEX))
 	$(info WEB_LY is $(WEB_LY))
 	$(info WEB_PS is $(WEB_PS))
 	$(info WEB_PDF is $(WEB_PDF))
+	$(info WEB_INDEX is $(WEB_INDEX))
 
 .PHONY: todo
 todo:
@@ -336,20 +340,23 @@ $(OUT_LY): $(FILES_MAKO) $(MAKE_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)$(MAKE_BOOK_WRAPPER) $(OUT_LY)
 
+# this should be moved to some kind of macro preprocessor
+$(OUT_INDEX): $(SRC_INDEX) $(ALL_DEP)
+	$(info doing [$@])
+	$(Q)cp $< $@
+
 .PHONY: install
 install: $(WEB_LY) $(WEB_PS) $(WEB_PDF) $(WEB_INDEX)
 
-$(WEB_LY) $(WEB_PS) $(WEB_PDF) $(WEB_INDEX): %: % $(ALL_DEP)
+$(WEB_LY) $(WEB_PS) $(WEB_PDF) $(WEB_INDEX): $(WEB_DIR)/%: $(OUT_DIR)/% $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)sudo mkdir $(WEB_DIR)
+	$(Q)-sudo mkdir $(WEB_DIR) 2> /dev/null
 	$(Q)sudo cp $< $@
 
-.PHONY: install
-install: $(SRC_INDEX) $(OUT_LY) $(OUT_PS) $(OUT_PDF) $(ALL_DEP)
+.PHONY: clean_web
+clean_web: $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-sudo rm -rf $(WEB_DIR)
-	$(Q)sudo mkdir $(WEB_DIR)
-	$(Q)sudo cp $(SRC_INDEX) $(OUT_LY) $(OUT_PS) $(OUT_PDF) $(WEB_DIR)
 
 # include the deps files (no warnings)
 ifeq ($(USE_LYD),1)
