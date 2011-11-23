@@ -120,7 +120,7 @@
 	All oth -- ers a -- bove
 	So worth the yearn -- ing for, __
 	So swell to keep ev -- 'ry home -- fire burn -- ing for __
-	
+
 	shame
 	that you can't see
 	your fu -- ture with me,

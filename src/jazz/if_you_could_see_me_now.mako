@@ -52,7 +52,7 @@
 	\startPart
 	\repeat volta 2 {
 		ees1:maj7 | aes:7 | ees:maj7 | aes:7 | \myEndLine
-		aes:7 | g2:min7 ges4:m7 b:7 | f2:m7 bes:7 | \myEndLine
+		aes:7 | g2:m7 ges4:m7 b:7 | f2:m7 bes:7 | \myEndLine
 	} \alternative {
 		{
 			g:m7 c:7 | f:m7 bes:7 |
