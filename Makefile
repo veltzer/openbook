@@ -296,32 +296,32 @@ $(FILES_MIDI): %.midi: %.stamp $(ALL_DEP)
 
 $(FILES_STAMP): %.stamp: %.ly $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)-mkdir -p $(dir $@)
+	$(Q)mkdir -p $(dir $@)
 	$(Q)$(LILYPOND_WRAPPER) $< $@ $(LYFLAGS) -o $(dir $@)$(basename $(notdir $@)) $<
 
 $(FILES_LY): $(OUT_DIR)/%.ly: %.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)-mkdir -p $(dir $@)
+	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKO_WRAPPER) $< $@
 $(FILES_MAKOD): $(OUT_DIR)/%.mako.d: %.mako $(MAKOD_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)-mkdir -p $(dir $@)
+	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKOD_WRAPPER) $< $@ $(basename $(basename $@)).stamp $(basename $(basename $@)).pdf $(basename $(basename $@)).ps $(basename $(basename $@)).midi
 $(FILES_LYD): %.ly.d: %.ly $(LYD_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)-mkdir -p $(dir $@)
+	$(Q)mkdir -p $(dir $@)
 	$(Q)$(LYD_WRAPPER) $< $@ $(basename $@).stamp $(basename $@).pdf $(basename $@).ps $(basename $@).midi
 $(FILES_WAV): %.wav: %.midi $(MIDI2WAV_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing $@)
-	$(Q)-mkdir -p $(dir $@)
+	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MIDI2WAV_WRAPPER) $< $@
 $(FILES_OGG): %.ogg: %.midi $(MIDI2OGG_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)-mkdir -p $(dir $@)
+	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MIDI2OGG_WRAPPER) $< $@
 $(FILES_MP3): %.mp3: %.midi $(MIDI2MP3_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)-mkdir -p $(dir $@)
+	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MIDI2MP3_WRAPPER) $< $@
 
 .PHONY: book
@@ -346,9 +346,11 @@ $(OUT_INDEX): $(SRC_INDEX) $(ALL_DEP)
 install: $(WEB_LY) $(WEB_PS) $(WEB_PDF) $(WEB_INDEX)
 
 # the --parents is to shut mkdir if the directory exists
+# in that case there is no need to put a - before the command
+# since mkdir will not return an error...
 $(WEB_LY) $(WEB_PS) $(WEB_PDF) $(WEB_INDEX): $(WEB_DIR)/%: $(OUT_DIR)/% $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)sudo mkdir --parents $(WEB_DIR)
+	$(Q)mkdir -p $(dir $@)
 	$(Q)sudo cp $< $@
 
 .PHONY: clean_web
