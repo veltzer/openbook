@@ -4,9 +4,12 @@
 	attributes['doChords']=True
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
+	attributes['doLyricsmore']=True
 	attributes['render']="Real"
 
 	attributes['title']="How Insensitive"
+	# from the internet
+	attributes['subtitle']="Insensatez"
 	# this is from the real book
 	attributes['composer']="A.C. Jobim"
 	# this is from the fake book
@@ -23,14 +26,16 @@
 	attributes['copyright']="1963, 1964 by Antonio Carlos Jobim and Vincius De Moraes, Brazil"
 	attributes['copyrightextra']="Sole Selling Agent Duchess Music Corporation (MCA), New York, NY for the U.S.A. and Canada"
 
-	attributes['completion']="4"
+	attributes['completion']="5"
 	attributes['uuid']="ee9c0d62-15fd-11e1-bd56-0019d11e5a41"
 
 	attributes['structure']="AB"
 
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
+	attributes['idyoutuberemark']="Jobim with Pat Metheny"
+	attributes['idyoutube']="VendEbBv3nc"
+	attributes['idyoutuberemark']="Astrud Gilberto in the classic version"
+	attributes['idyoutube']="nIW049UrhGM"
+	attributes['lyricsurl']="http://www.lyricsmode.com/lyrics/a/antonio_carlos_jobim/how_insensitive.html"
 %>
 % endif
 
@@ -40,23 +45,29 @@
 	- filled in the meta data from the real book.
 	- put in the tunes structure.
 	- put in the real book chords.
-	TODO:
+	- brought in the fake book epdf.
+	- filled in the meta data from the fake book.
 	- put in the real book tune.
-	- put in the real book lyrics.
 	- checked the real book chords.
 	- checked the real book tune.
+	- put in the real book lyrics.
 	- checked the real book lyrics.
 	- played the real book version to hear that it sounds well.
-	- fill in missing meta data.
 	- put in you tube performances with documentation.
 	- put in a lyrics url.
+	TODO:
+	- add the fakebook version.
 	- this song has two poets one for the original portugese and one for english. This is not reflected in the output,
 		make it not so.
+	- in the real book version of the chords in the B section the des:7 should come in the middle of the bar and I
+		have no way to indicate that. The original real book score does indicate that using tempo markings.
+		Find out how to do that in lilypond and do it.
+	- how do I put the last two chords in the real book version (the turn around chords) in parenthesis?
 	REMARKS:
 	- this tunes structure can also be categorised as "ABAC" since the first 8 bars of both the first and second part are the same.
 	- this tune was written in the real book under a C major scale (or A minor scale) where the B is always flat.
 		Obviously this is a serious mistake.
-	- how do I put the last two chords in the real book version (the turn around chords) in parenthesis?
+	- I added two turn around chords that were missing in the real book version.
 % endif
 
 % if part=='ChordsReal':
@@ -86,7 +97,7 @@
 % endif
 
 % if part=='VoiceReal':
-\relative c' {
+\relative c'' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
@@ -94,11 +105,14 @@
 
 	%% part "A"
 	a1~ | a8 bes4 a bes a8~ | a1~ | a8 bes4 a bes a8~ |
-	a2~ \times 2/3 { a4 gis a } | c8 b4 bes8~ bes a4 | a4. g8~ g2~ | g1 |
+	a2~ \times 2/3 { a4 gis a } | c8 b4 bes8~ bes a4. | a4. g8~ g2~ | g1 |
 	g~ | g8 a4 g a g8~ | g1~ | g8 a4 g a g8~ |
 	g2~ \times 2/3 { g4 fis g } | bes4. a8 \times 2/3 { aes4 g g~ } | g4. f8~ f2~ | f1 |
-
 	%% part "B"
+	f1~ | f8 g4 f g f8~ | f1~ | f8 g4 f g a8~ |
+	a2. f4 | d e d e | f2 f~ | f1 |
+	f~ | f4. g8 f g4 e8~ | e1~ | e8 f4 e f e8~ |
+	e2~ \times 2/3 { e4 dis e } | g4. ges8 f4 e | e4. d8~ d2 | r1 |
 }
 % endif
 
@@ -106,6 +120,38 @@
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 	%% part "A"
+	How __ In -- sen -- si -- tive __ I must have seemed __ when she told me that __ she loved me. __
+	How __ un -- moved and cold __ I must have seemed __ when she told me so sin -- cere __ -- ly. __
+	Why, __ she must have asked, __ did I just turn __ and stare in i -- cy si -- lence? __
+	What __ was I to say? __ What can you say __ when a love af -- fair is o -- ver? __
+}
+% endif
+
+% if part=='LyricsmoreReal':
+\lyricmode {
 	%% part "B"
+	Now, __ she's gone a -- way __ and I'm a -- lone __ with the mem -- 'ry of __ her last look. __
+	Vague __ dra -- wn and sad, __ I see it still, __ all her heart- break -- ing that last __ look. __
+	How, __ she must have asked, __ could I just turn __ and stare in i -- cy si -- lence? __
+	What __ was I to do? __ What can one do __ when a love af -- fair is o -- ver? __
+}
+% endif
+
+% if part=='LyricsFake':
+%% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
+\lyricmode {
+	How __ In -- sen -- si -- tive __ I must __ have seemed __ when she told me that __ she loved __ me. __
+	How __ un -- moved and cold __ I must __ have seemed __ when she told me so __ sin -- cere -- ly. __
+	Why, __ she must __ have asked, __ did I __ just turn __ and stare in i -- cy si -- lence? __
+	What __ was I __ to say? __ What can __ you say __ when a love __ af -- fair __ is o -- ver? __
+}
+% endif
+
+% if part=='LyricsmoreFake':
+\lyricmode {
+	Now, __ she's gone __ a -- way __ and I'm __ a -- lone __ with the mem -- 'ry of __ her last __ look. __
+	Vague __ drawn and sad, __ I see __ it still, __ all her heart- breaking __ that last __ look. __
+	How, __ she must __ have asked, __ could I __ just turn __ and stare in i -- cy si -- lence? __
+	What __ was I __ to do? __ What can __ one do __ when a love __ af -- fair __ is o -- ver? __
 }
 % endif
