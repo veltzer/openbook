@@ -23,8 +23,11 @@ TODO:
 import subprocess
 import dateutil.parser
 import MySQLdb
+import warnings
 
-debug=True
+# turn warnings into errors
+warnings.filterwarnings("error")
+debug=False
 doDb=True
 
 # these are corrupt commits for which there is no meta data or there
@@ -48,15 +51,15 @@ conn=MySQLdb.connect(
 if doDb:
 	# remove the old data
 	cursor=conn.cursor()
-	cursor.execute("SELECT id FROM TbGraph WHERE name='openbook_progress'")
+	cursor.execute('SELECT id FROM TbGraph WHERE name=\'openbook_progress\'')
 	row=cursor.fetchone()
 	# only remove data if we already have data
 	if row!=None:
 		id=int(row[0])
 		if debug:
 			print "id is",id
-		cursor.execute('DELETE from TbGraphData WHERE graphId=%d' % (id,))
-		cursor.execute('DELETE from TbGraph WHERE id=%d' % (id,))
+		cursor.execute('DELETE from TbGraphData WHERE graphId=%s',(id,))
+		cursor.execute('DELETE from TbGraph WHERE id=%s',(id,))
 	# insert a new row into the graph meta data
 	cursor.execute('INSERT INTO TbGraph (name) VALUES(\'openbook_progress\')')
 	id=cursor.lastrowid
@@ -82,7 +85,7 @@ for commit in commits:
 		print "dt is "+str(dt)
 		print "count is "+str(count)
 	if doDb:
-		cursor.execute("INSERT INTO TbGraphData (tag,dt,value,graphId) VALUES('%s','%s','%s','%s')" % (commit,dt,count,id))
+		cursor.execute('INSERT INTO TbGraphData (tag,dt,value,graphId) VALUES(%s,%s,%s,%s)',(commit,dt,count,id))
 
 # commit everything...
 if doDb:
