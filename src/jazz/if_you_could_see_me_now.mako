@@ -16,7 +16,7 @@
 
 	attributes['structure']="AABA"
 
-	attributes['completion']="5"
+	attributes['completion']="4"
 	attributes['uuid']="e259226a-11ac-11e1-90cb-0019d11e5a41"
 
 	attributes['idyoutuberemark']=""
