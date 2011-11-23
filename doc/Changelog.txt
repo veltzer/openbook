@@ -25,3 +25,4 @@ place.
 20/10/11: started a web site for the project.
 20/10/11: put the final result (the book) on my web log.
 25/10/11: put a copyright sign in the tunes and in the cover.
+23/11/11: by default we only build the book.

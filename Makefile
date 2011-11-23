@@ -8,21 +8,21 @@ DO_ALL_DEP?=1
 # should we depend on the wrappers ?
 DO_WRAPDEPS?=1
 # should we make the ly files and use them?
-DO_LY?=1
+DO_LY?=0
 # should we make lilypond dependency files and use them?
 DO_LYD?=0
 # should we make mako dependency files ?
 DO_MAKOD?=0
-# should we make pds ?
-DO_PDF?=1
+# should we make pdfs ?
+DO_PDF?=0
 # should we make images ?
-DO_PNG?=1
+DO_PNG?=0
 # should we make postscript ?
-DO_PS?=1
+DO_PS?=0
 # should we make midi ?
-DO_MIDI?=1
-# should we make stamp files ? (always answer yes to this...)
-DO_STAMP?=1
+DO_MIDI?=0
+# should we make stamp files ?
+DO_STAMP?=0
 # should we make .wav files ? (don't really want this):
 DO_WAV?=0
 # should we make mp3 ?
@@ -45,13 +45,12 @@ SRC_INDEX:=mako/index.html
 # wrappers
 LILYPOND_WRAPPER:=scripts/lilypond_wrapper.pl
 MAKO_WRAPPER:=scripts/mako_wrapper.py
+MAKO_BOOK_WRAPPER:=scripts/mako_book.py
 LYD_WRAPPER:=scripts/lyd.pl
 MAKOD_WRAPPER:=scripts/makod.pl
 MIDI2WAV_WRAPPER:=scripts/midi2wav.pl
 MIDI2OGG_WRAPPER:=scripts/midi2ogg.pl
 MIDI2MP3_WRAPPER:=scripts/midi2mp3.pl
-MAKE_BOOK_WRAPPER:=scripts/make_book.pl
-MAKE_BOOK_WRAPPER:=scripts/mako_book.py
 
 ########
 # BODY #
@@ -79,7 +78,7 @@ ifeq ($(DO_WRAPDEPS),1)
 	MIDI2WAV_WRAPPER_DEP:=$(MIDI2WAV_WRAPPER)
 	MIDI2OGG_WRAPPER_DEP:=$(MIDI2OGG_WRAPPER)
 	MIDI2MP3_WRAPPER_DEP:=$(MIDI2MP3_WRAPPER)
-	MAKE_BOOK_WRAPPER_DEP:=$(MAKE_BOOK_WRAPPER)
+	MAKO_BOOK_WRAPPER_DEP:=$(MAKO_BOOK_WRAPPER)
 else
 	LILYPOND_WRAPPER_DEP:=
 	MAKO_WRAPPER_DEP:=
@@ -88,7 +87,7 @@ else
 	MIDI2WAV_WRAPPER_DEP:=
 	MIDI2OGG_WRAPPER_DEP:=
 	MIDI2MP3_WRAPPER_DEP:=
-	MAKE_BOOK_WRAPPER_DEP:=
+	MAKO_BOOK_WRAPPER_DEP:=
 endif
 
 ifeq ($(DO_MKDBG),1)
@@ -333,9 +332,10 @@ $(OUT_PS) $(OUT_PDF): $(OUT_LY) $(ALL_DEP)
 	$(Q)-rm -f $(OUT_PS) $(OUT_PDF) 2> /dev/null
 	$(Q)lilypond --output=$(OUT_BASE) $(OUT_LY) 2> /dev/null > /dev/null
 	$(Q)chmod 444 $(OUT_PS) $(OUT_PDF)
-$(OUT_LY): $(FILES_MAKO) $(MAKE_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
+$(OUT_LY): $(FILES_MAKO) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)$(MAKE_BOOK_WRAPPER) $(OUT_LY)
+	$(Q)-mkdir -p $(dir $@)
+	$(Q)$(MAKO_BOOK_WRAPPER) $(OUT_LY)
 
 # this should be moved to some kind of macro preprocessor
 $(OUT_INDEX): $(SRC_INDEX) $(ALL_DEP)
