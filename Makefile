@@ -2,43 +2,46 @@
 # PARAMETERS #
 ##############
 # should we show commands executed ?
-DO_MKDBG:=0
+DO_MKDBG?=0
 # should we depend on the date of the makefile itself ?
 DO_ALL_DEP?=1
 # should we depend on the wrappers ?
-DO_WRAPDEPS:=1
-# should we make the ly files ?
-DO_LY:=1
-# should we make lilypond dependency files ?
-DO_LYD:=0
+DO_WRAPDEPS?=1
+# should we make the ly files and use them?
+DO_LY?=1
+# should we make lilypond dependency files and use them?
+DO_LYD?=0
 # should we make mako dependency files ?
-DO_MAKOD:=1
+DO_MAKOD?=0
 # should we make pds ?
-DO_PDF:=1
+DO_PDF?=1
 # should we make images ?
-DO_PNG:=1
+DO_PNG?=1
 # should we make postscript ?
-DO_PS:=1
+DO_PS?=1
 # should we make midi ?
-DO_MIDI:=1
+DO_MIDI?=1
 # should we make stamp files ? (always answer yes to this...)
-DO_STAMP:=1
+DO_STAMP?=1
 # should we make .wav files ? (don't really want this):
-DO_WAV:=0
+DO_WAV?=0
 # should we make mp3 ?
-DO_MP3:=0
+DO_MP3?=0
 # should we make ogg ?
-DO_OGG:=0
+DO_OGG?=0
 # should we do the full book ?
-DO_BOOK:=1
-# do you actually want to use lilypond dependency information ?
-USE_LYD:=0
-# do you actually want to use mako dependency information ?
-USE_MAKOD:=1
+DO_BOOK?=1
+
 # where are the sources located ?
 SOURCE_DIR:=src
 # where is the output folder ?
 OUT_DIR:=out
+# what is the web folder ?
+WEB_DIR:=/var/www/openbook
+# where is the common file?
+COMMON:=src/include/common.makoi
+# web index file
+SRC_INDEX:=mako/index.html
 # wrappers
 LILYPOND_WRAPPER:=scripts/lilypond_wrapper.pl
 MAKO_WRAPPER:=scripts/mako_wrapper.py
@@ -49,12 +52,6 @@ MIDI2OGG_WRAPPER:=scripts/midi2ogg.pl
 MIDI2MP3_WRAPPER:=scripts/midi2mp3.pl
 MAKE_BOOK_WRAPPER:=scripts/make_book.pl
 MAKE_BOOK_WRAPPER:=scripts/mako_book.py
-# what is the web folder ?
-WEB_DIR:=/var/www/openbook
-# where is the common file?
-COMMON:=src/include/common.makoi
-# web index file
-SRC_INDEX=mako/index.html
 
 ########
 # BODY #
@@ -62,8 +59,8 @@ SRC_INDEX=mako/index.html
 
 # do not include deps (or generate them) if we are doing a clean...
 ifneq ($(filter clean,$(MAKECMDGOALS)),)
-USE_LYD:=0
-USE_MAKOD:=0
+	DO_LYD:=0
+	DO_MAKOD:=0
 endif
 
 ALL:=
@@ -348,9 +345,10 @@ $(OUT_INDEX): $(SRC_INDEX) $(ALL_DEP)
 .PHONY: install
 install: $(WEB_LY) $(WEB_PS) $(WEB_PDF) $(WEB_INDEX)
 
+# the --parents is to shut mkdir if the directory exists
 $(WEB_LY) $(WEB_PS) $(WEB_PDF) $(WEB_INDEX): $(WEB_DIR)/%: $(OUT_DIR)/% $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)-sudo mkdir $(WEB_DIR) 2> /dev/null
+	$(Q)sudo mkdir --parents $(WEB_DIR)
 	$(Q)sudo cp $< $@
 
 .PHONY: clean_web
@@ -359,9 +357,9 @@ clean_web: $(ALL_DEP)
 	$(Q)-sudo rm -rf $(WEB_DIR)
 
 # include the deps files (no warnings)
-ifeq ($(USE_LYD),1)
+ifeq ($(DO_LYD),1)
 -include $(FILES_LYD)
 endif
-ifeq ($(USE_MAKOD),1)
+ifeq ($(DO_MAKOD),1)
 -include $(FILES_MAKOD)
 endif
