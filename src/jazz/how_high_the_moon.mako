@@ -55,7 +55,7 @@
 	- played the real book version to hear that it sounds well.
 	- how do I put the last two chords in the real book version in parenthesis? (the turn around chords).
 	REMARKS:
-	- this tunes structure can also be categorised as "AB" if you take the AB as A and the AC as B. 
+	- this tunes structure can also be categorised as "AB" if you take the AB as A and the AC as B.
 % endif
 
 % if part=='ChordsReal':
