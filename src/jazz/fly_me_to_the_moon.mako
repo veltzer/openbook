@@ -24,9 +24,11 @@
 
 	attributes['structure']="AB"
 
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
+	attributes['idyoutuberemark']="The one and only Frank"
+	attributes['idyoutube']="oCW9Hey6IVY"
+	attributes['idyoutuberemark']="I didn't know that Diana Krall knew piano this well..."
+	attributes['idyoutube']="-b8brVSAAQA"
+	attributes['lyricsurl']="http://www.metrolyrics.com/fly-me-to-the-moon-lyrics-frank-sinatra.html"
 %>
 % endif
 
@@ -38,22 +40,21 @@
 	- put in the fake book chords.
 	- put in the fake book lyrics.
 	- put in the fake book tune.
-	TODO:
-	- check the fake book chords.
-	- check the fake book tune.
-	- check the fake book lyrics.
-	- play the fake book version to hear that it sounds well.
-
-	- brought in the real book epdf.
+	- checked the fake book chords.
+	- checked the fake book tune.
+	- checked the fake book lyrics.
+	- played the fake book version to hear that it sounds well.
 	- put in you tube performances with documentation.
 	- put in a lyrics url.
+	TODO:
+	- bring in the real book epdf.
 	- put in the real book chords.
 	- put in the real book tune.
 	- put in the real book lyrics.
-	- checked the real book chords.
-	- checked the real book tune.
-	- checked the real book lyrics.
-	- played the real book version to hear that it sounds well.
+	- check the real book chords.
+	- check the real book tune.
+	- check the real book lyrics.
+	- play the real book version to hear that it sounds well.
 	REMARKS:
 % endif
 
@@ -80,7 +81,7 @@
 	} \alternative {
 		{
 			e1:m7.5- | a:7.9- | \myEndLine
-			d:m7 | d2:m7/g g4:7.9- | c1:6 | b2:m7 e:7 |
+			d:m7 | d2.:m7/g g4:7.9- | c1:6 | b2:m7 e:7 |
 		}
 		{
 			e2:m7.5- bes:7.9 | a1:7.9- | \myEndLine
@@ -94,7 +95,7 @@
 % endif
 
 % if part=='VoiceFake':
-\relative c' {
+\relative c'' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
@@ -108,7 +109,7 @@
 	c8 f4 f8~ f2~ | f4 a2 g4 | f2 e2~ | e1 |
 
 	%% part "B"
-	c4 b a8 g4. | f g8 a4 c | b a g8 f4. | e1 |
+	c'4 b a8 g4. | f g8 a4 c | b a g8 f4. | e1 |
 	a4 g f8 e4. | d4 e4 f a | gis f e8 d4. | c2. cis4 |
 	d8 a'4 a8~ a2~ | a4 c2 b4 |
 	} \alternative {
