@@ -5,7 +5,7 @@
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
 	attributes['doLyricsmore']=True
-	attributes['render']="Real"
+	attributes['render']="Fake"
 
 	attributes['title']="How Insensitive"
 	# from the internet
@@ -55,8 +55,14 @@
 	- played the real book version to hear that it sounds well.
 	- put in you tube performances with documentation.
 	- put in a lyrics url.
+	- add the fake book chords.
+	- add the fake book tune.
+	- add the fake book lyrics.
+	- check the fake book chords.
+	- check the fake book tune.
+	- check the fake book lyrics.
+	- heard the fake book version.
 	TODO:
-	- add the fakebook version.
 	- this song has two poets one for the original portugese and one for english. This is not reflected in the output,
 		make it not so.
 	- in the real book version of the chords in the B section the des:7 should come in the middle of the bar and I
@@ -131,27 +137,95 @@
 \lyricmode {
 	%% part "B"
 	Now, __ she's gone a -- way __ and I'm a -- lone __ with the mem -- 'ry of __ her last look. __
-	Vague __ dra -- wn and sad, __ I see it still, __ all her heart- break -- ing that last __ look. __
+	Vague __ dra -- wn and sad, __ I see it still, __ all her heart- break in that last __ look. __
 	How, __ she must have asked, __ could I just turn __ and stare in i -- cy si -- lence? __
 	What __ was I to do? __ What can one do __ when a love af -- fair is o -- ver? __
+}
+% endif
+
+% if part=='ChordsFake':
+\chordmode {
+	\startChords
+	\startSong
+
+	\repeat volta 2 {
+		\mark "A"
+		\startPart
+		d1*2:m7 | des:dim7 | \myEndLine
+		c:m6 | g:7 | \myEndLine
+		bes:maj7 | ees:maj7 | \myEndLine
+		e1:m7.5- | a:7.9- | d:m7 | des:7 | \myEndLine
+		\endPart
+
+		\mark "B"
+		\startPart
+		c1*2:m7 | b:dim7 | \myEndLine
+		bes1:maj7 | e2:m7.5- a:7.9- | d1.:m7 des2:7 | \myEndLine
+		c1:m7 | f:7 | b:m7 | e:7.9- | \myEndLine
+		g:m6 |
+	} \alternative {
+		{
+			a:7 | d:m7 | e2:m7.5- a:7.9- | \myEndLine
+		}
+		{
+			a1:7 | d2:m d:m6 | d1:m6 | \myEndLine
+		}
+	}
+	\endPart
+
+	\endSong
+	\endChords
+}
+% endif
+
+% if part=='VoiceFake':
+\relative c'' {
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Allegro" 4 = 130
+	\time 4/4
+	\key d \minor
+
+	\repeat volta 2 {
+		%% A part
+		a1~ | a4 bes8 a~ a bes4 a8~ | a1~ | a4 bes8 a~ a bes4 a8~ |
+		a2~ a8 gis4 a8 | c b4 bes8~ bes a4 a8~ | a4. g8~ g2~ | g2~ g4. g8~ |
+		g1~ | g4 a8 g~ g a4 g8~ | g1~ | g4 a8 g~ g a4 g8~ |
+		g2 r8 fis4 g8 | bes a4 gis8~ gis g4 g8~ | g4. f8~ f2~ | f~ f4. f8~ |
+		%% B part
+		f1~ | f4 g8 f~ f g4 f8~ | f1~ | f4 g8 f~ f g4 a8~ |
+		a2. f4 | d e8 d~ d e4 f8~ | f2 f~ | f~ f4. f8~ |
+		f1~ | f4 g8 f~ f g4 e8~ | e1~ | e4 f8 e~ e f4 e8~ |
+		e2 r8 dis e g~ |
+	} \alternative {
+		{
+			g fis4 f8~ f e4 e8~ | e4. d8~ d2~ | d4 r r2 |
+		}
+		{
+			g8 fis4 f8~ f e4 e8~ | e4. d8~ d2~ | d2.\fermata r4 |
+		}
+	}
 }
 % endif
 
 % if part=='LyricsFake':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
-	How __ In -- sen -- si -- tive __ I must __ have seemed __ when she told me that __ she loved __ me. __
-	How __ un -- moved and cold __ I must __ have seemed __ when she told me so __ sin -- cere -- ly. __
-	Why, __ she must __ have asked, __ did I __ just turn __ and stare in i -- cy si -- lence? __
-	What __ was I __ to say? __ What can __ you say __ when a love __ af -- fair __ is o -- ver? __
+	%% A part
+	How __ In -- sen __ -- si -- tive __ I must __ have seemed __ when she told me that __ she loved __ me. __
+	How __ un -- moved __ and cold __ I must __ have seemed __ when she told me so __ sin -- cere __ -- ly. __
+	Why, __ she must __ have asked, __ did I __ just turn __ and stare in i __ -- cy si -- lence? __
+	What __ was I __ to say? __ What can __ you say __ when a love __ af -- fair __ is o __ -- ver? __
+	%% Voltas
+	_ af -- fair __ is o __ -- ver? __
 }
 % endif
 
 % if part=='LyricsmoreFake':
 \lyricmode {
+	%% B part
 	Now, __ she's gone __ a -- way __ and I'm __ a -- lone __ with the mem -- 'ry of __ her last __ look. __
-	Vague __ drawn and sad, __ I see __ it still, __ all her heart- breaking __ that last __ look. __
-	How, __ she must __ have asked, __ could I __ just turn __ and stare in i -- cy si -- lence? __
-	What __ was I __ to do? __ What can __ one do __ when a love __ af -- fair __ is o -- ver? __
+	Vague __ _ drawn __ and sad, __ I see __ it still, __ all her heart- break in __ that last __ look. __
+	How, __ she must __ have asked, __ could I __ just turn __ and stare in i __ -- cy si -- lence? __
+	What __ was I __ to do? __ What can __ one do __ when a love __
 }
 % endif
