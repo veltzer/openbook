@@ -351,7 +351,7 @@ install: $(WEB_LY) $(WEB_PS) $(WEB_PDF) $(WEB_INDEX)
 # since mkdir will not return an error...
 $(WEB_LY) $(WEB_PS) $(WEB_PDF) $(WEB_INDEX): $(WEB_DIR)/%: $(OUT_DIR)/% $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)mkdir -p $(dir $@)
+	$(Q)sudo mkdir -p $(dir $@)
 	$(Q)sudo cp $< $@
 
 .PHONY: clean_web
