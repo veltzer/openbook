@@ -340,7 +340,7 @@ $(OUT_LY): $(FILES_MAKO) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 # this should be moved to some kind of macro preprocessor
 $(OUT_INDEX): $(SRC_INDEX) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)cp $< $@
+	$(Q)cp -f $< $@
 	$(Q)chmod 444 $@
 
 .PHONY: install
