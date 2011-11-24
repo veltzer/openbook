@@ -341,6 +341,7 @@ $(OUT_LY): $(FILES_MAKO) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 $(OUT_INDEX): $(SRC_INDEX) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)cp $< $@
+	$(Q)chmod 444 $@
 
 .PHONY: install
 install: $(WEB_LY) $(WEB_PS) $(WEB_PDF) $(WEB_INDEX)
