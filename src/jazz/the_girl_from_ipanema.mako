@@ -26,6 +26,13 @@
 % if part=='Doc':
 	DONE:
 	TODO:
+	- fill in from where the meta data came.
+	- document what has been done to this tune.
+	- the lyrics do not have __ in them.
+	- the quotation in the lyrics is not done right.
+	- add a lyrics url.
+	- add description of the you tube performance and add another performance.
+	- add the fakebook version of this tune.
 % endif
 
 % if part=='ChordsReal':
