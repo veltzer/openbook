@@ -105,9 +105,9 @@ SOURCES_ALL:=$(subst ./,,$(shell find src -type f -and -name "*.mako" -or -name 
 FILES_MAKO:=$(filter %.mako,$(SOURCES_ALL))
 FILES_MAKOI:=$(filter %.makoi,$(SOURCES_ALL))
 
-FILES_WEB:=$(subst ./,,$(shell find mako -type f -and -name "*.html"))
-OUT_WEB:=$(addprefix $(OUT_DIR)/,$(FILES_WEB))
-WEB_WEB:=$(addprefix $(WEB_DIR)/,$(FILES_WEB))
+FILES_WEB:=$(subst ./,,$(shell find mako -type f))
+OUT_WEB:=$(addprefix $(OUT_DIR)/,$(notdir $(FILES_WEB)))
+WEB_WEB:=$(addprefix $(WEB_DIR)/,$(notdir $(FILES_WEB)))
 
 FILES_MAKOD:=$(addsuffix .mako.d,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_LY:=$(addsuffix .ly,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
@@ -341,7 +341,7 @@ $(OUT_LY): $(FILES_MAKO) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(Q)$(MAKO_BOOK_WRAPPER) $(OUT_LY)
 
 # this should be moved to some kind of macro preprocessor
-$(OUT_WEB): $(OUT_DIR)/%: % $(ALL_DEP)
+$(OUT_WEB): $(OUT_DIR)/%: $(MAKO_DIR)/% $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)cp -f $< $@

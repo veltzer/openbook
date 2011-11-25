@@ -17,7 +17,9 @@ used by Jazz musicians both for practice and for performance.
 lilypond, make, perl, python, mako, lame, timidity and possibly more.
 
 * What is produced ?
-A beautiful and lightweight postscript and PDF real books with Jazz tunes.
+Beautiful and lightweight postscript and PDF real books with Jazz tunes.
+The idea is that the end user can control the final output and decide if he/she
+wants lyrics, size of paper, transposition for trumpet, selection of tunes and more.
 In addition you can produce midi, mp3 and ogg outputs.
 Possibly other output formats will be supported in the future (epub?).
 
@@ -45,9 +47,6 @@ Check out the PDFs and other outputs in http://veltzer.net/blog/music/.
 
 * Why is there so little documentation ?
 I just started this project. Feel free to add stuff and request a pull. If you contribute a lot I will make you an admin...
-
-* Arent you supposed to produce a real book, meaning one file ?
-Yes - if you build this package you will find it under out/openbook.pdf.
 
 * How do you write the standards ?
 Using lilypond. Check it out at: http://www.lilypond.org/
