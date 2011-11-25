@@ -1,0 +1,8 @@
+- download the sources from:
+	http://download.linuxaudio.org/lilypond/sources/v2.14/
+- untar.
+- ./configure --prefix=/local/tools 
+- install the missing packages.
+	t2utils, texi2html, guide-1.8-dev and more.
+- get to a situation where ./configure does not complain about anything.
+- make all
