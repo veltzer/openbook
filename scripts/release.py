@@ -23,5 +23,5 @@ if debug:
 	print 'new tag is '+str(tag)
 # tag the new tag
 subprocess.check_output(['git','tag',str(tag)])
-subprocess.check_output(['make','clean'])
-subprocess.check_output(['make','install'])
+subprocess.check_call(['make','clean'])
+subprocess.check_call(['make','install'])
