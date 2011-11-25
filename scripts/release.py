@@ -7,10 +7,20 @@
 
 import subprocess
 
+##############
+# parameters #
+##############
+# do you want debug info printed?
 debug=True
 # do you want to check if everything is commited ? Answer True to this
 # unless you are doing development on this script...
 check=True
+# what is the name of the project?
+project='openbook'
+
+######################
+# script starts here #
+######################
 out=subprocess.check_output(['git','status','-s'])
 if check and out!='':
 	raise ValueError('first commit everything, then call me...')
@@ -22,6 +32,6 @@ tag+=1
 if debug:
 	print 'new tag is '+str(tag)
 # tag the new tag
-subprocess.check_output(['git','tag','-s','-m','openbook version '+str(tag),str(tag)])
+subprocess.check_output(['git','tag','-s','-m',project+' version '+str(tag),str(tag)])
 subprocess.check_call(['make','clean'])
 subprocess.check_call(['make','install'])
