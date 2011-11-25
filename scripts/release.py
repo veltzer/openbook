@@ -24,7 +24,7 @@ project='openbook'
 out=subprocess.check_output(['git','status','-s'])
 if check and out!='':
 	raise ValueError('first commit everything, then call me...')
-tag=subprocess.check_output(['git','tag']).strip().split('\n')[-1]
+tag=subprocess.check_output(['git','describe','--abbrev=0']).strip()
 tag=int(tag)
 if debug:
 	print 'old tag is '+str(tag)
