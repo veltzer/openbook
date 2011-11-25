@@ -36,12 +36,12 @@ DO_BOOK?=1
 SOURCE_DIR:=src
 # where is the output folder ?
 OUT_DIR:=out
+# where are the mako files?
+MAKO_DIR:=mako
 # what is the web folder ?
 WEB_DIR:=/var/www/openbook
 # where is the common file?
 COMMON:=src/include/common.makoi
-# web index file
-SRC_INDEX:=mako/index.html
 # wrappers
 LILYPOND_WRAPPER:=scripts/lilypond_wrapper.pl
 MAKO_WRAPPER:=scripts/mako_wrapper.py
@@ -101,9 +101,13 @@ endif # DO_MKDBG
 # this finds the sources via git
 SOURCES_ALL:=$(shell git ls-files)
 # this find the sources without git...
-SOURCES_ALL:=$(subst ./,,$(shell find . -type f -and -name "*.mako" -or -name "*.makoi"))
+SOURCES_ALL:=$(subst ./,,$(shell find src -type f -and -name "*.mako" -or -name "*.makoi"))
 FILES_MAKO:=$(filter %.mako,$(SOURCES_ALL))
 FILES_MAKOI:=$(filter %.makoi,$(SOURCES_ALL))
+
+FILES_WEB:=$(subst ./,,$(shell find mako -type f -and -name "*.html"))
+OUT_WEB:=$(addsuffix .html,$(addprefix $(OUT_DIR)/,$(basename $(FILES_WEB))))
+WEB_WEB:=$(addsuffix .html,$(addprefix $(WEB_DIR)/,$(basename $(FILES_WEB))))
 
 FILES_MAKOD:=$(addsuffix .mako.d,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_LY:=$(addsuffix .ly,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
@@ -119,11 +123,9 @@ OUT_BASE:=$(OUT_DIR)/openbook
 OUT_LY:=$(OUT_DIR)/openbook.ly
 OUT_PS:=$(OUT_DIR)/openbook.ps
 OUT_PDF:=$(OUT_DIR)/openbook.pdf
-OUT_INDEX:=$(OUT_DIR)/index.html
 WEB_LY=$(WEB_DIR)/openbook.ly
 WEB_PS=$(WEB_DIR)/openbook.ps
 WEB_PDF=$(WEB_DIR)/openbook.pdf
-WEB_INDEX=$(WEB_DIR)/index.html
 
 ifeq ($(DO_LY),1)
 	ALL:=$(ALL) $(FILES_LY)
@@ -188,14 +190,15 @@ debug:
 	$(info FILES_WAV is $(FILES_WAV))
 	$(info FILES_MP3 is $(FILES_MP3))
 	$(info FILES_OGG is $(FILES_OGG))
+	$(info FILES_WEB is $(FILES_WEB))
 	$(info OUT_LY is $(OUT_LY))
 	$(info OUT_PS is $(OUT_PS))
 	$(info OUT_PDF is $(OUT_PDF))
-	$(info OUT_INDEX is $(OUT_INDEX))
+	$(info OUT_WEB is $(OUT_WEB))
 	$(info WEB_LY is $(WEB_LY))
 	$(info WEB_PS is $(WEB_PS))
 	$(info WEB_PDF is $(WEB_PDF))
-	$(info WEB_INDEX is $(WEB_INDEX))
+	$(info WEB_WEB is $(WEB_WEB))
 
 .PHONY: todo
 todo:
@@ -338,18 +341,18 @@ $(OUT_LY): $(FILES_MAKO) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(Q)$(MAKO_BOOK_WRAPPER) $(OUT_LY)
 
 # this should be moved to some kind of macro preprocessor
-$(OUT_INDEX): $(SRC_INDEX) $(ALL_DEP)
+$(OUT_WEB): $(OUT_DIR)/%: $(MAKO_DIR)/% $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)cp -f $< $@
 	$(Q)chmod 444 $@
 
 .PHONY: install
-install: $(WEB_LY) $(WEB_PS) $(WEB_PDF) $(WEB_INDEX)
+install: $(WEB_LY) $(WEB_PS) $(WEB_PDF) $(WEB_WEB)
 
 # the --parents is to shut mkdir if the directory exists
 # in that case there is no need to put a - before the command
 # since mkdir will not return an error...
-$(WEB_LY) $(WEB_PS) $(WEB_PDF) $(WEB_INDEX): $(WEB_DIR)/%: $(OUT_DIR)/% $(ALL_DEP)
+$(WEB_LY) $(WEB_PS) $(WEB_PDF) $(WEB_WEB): $(WEB_DIR)/%: $(OUT_DIR)/% $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)sudo mkdir -p $(dir $@)
 	$(Q)sudo cp $< $@
