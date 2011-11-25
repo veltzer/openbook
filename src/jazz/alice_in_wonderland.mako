@@ -75,7 +75,7 @@
 	d2.:m7 | g:7 | c:maj7 | f:maj7 | \myEndLine
 	b:m7.5- | e:7 | a:m7 | ees:7 | \myEndLine
 	d:m7 | g:7 | e:m7 | a:m7 | \myEndLine
-	d:m7 | g:7 | c1*2:maj7 | \myEndLine
+	d:m7 | g:7 | c2.*2:maj7 | \myEndLine
 	\endPart
 
 	\endSong

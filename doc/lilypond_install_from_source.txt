@@ -6,3 +6,9 @@
 	t2utils, texi2html, guide-1.8-dev and more.
 - get to a situation where ./configure does not complain about anything.
 - make all
+- run make all a couple of times (the lilypond build system is not very clean).
+- sudo make install
+
+I have seen times when the version installed from source crashed on me in weird ways
+and produced bad output. A better option seems to be to use the .sh installers provided
+by the lilypond team.

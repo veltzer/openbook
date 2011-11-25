@@ -145,6 +145,7 @@ ifeq ($(DO_PNG),1)
 endif
 ifeq ($(DO_PS),1)
 	ALL:=$(ALL) $(FILES_PS)
+	LYFLAGS:=$(LYFLAGS) --ps
 endif
 ifeq ($(DO_MIDI),1)
 	ALL:=$(ALL) $(FILES_MIDI)
@@ -333,7 +334,7 @@ book: $(OUT_PDF) $(ALL_DEP)
 $(OUT_PS) $(OUT_PDF): $(OUT_LY) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-rm -f $(OUT_PS) $(OUT_PDF) 2> /dev/null
-	$(Q)lilypond --output=$(OUT_BASE) $(OUT_LY) 2> /dev/null > /dev/null
+	$(Q)lilypond --ps --pdf --output=$(OUT_BASE) $(OUT_LY) 2> /dev/null > /dev/null
 	$(Q)chmod 444 $(OUT_PS) $(OUT_PDF)
 $(OUT_LY): $(FILES_MAKO) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])

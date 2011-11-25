@@ -11,7 +11,7 @@
 	import socket # for gethostname
 	import subprocess # for subprocess.check_output
 
-	attributes['lilyver']='2.12.3'
+	attributes['lilyver']='2.14.2'
 	attributes['date']=datetime.datetime.now().strftime('%T %d-%m-%Y')
 	attributes['username']=pwd.getpwuid(os.getuid())[0]
 	attributes['gittag']=subprocess.check_output(['git','describe','--abbrev=0']).strip()
