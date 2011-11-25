@@ -64,7 +64,7 @@ endif
 
 ALL:=
 
-LYFLAGS:=--ps
+LYFLAGS:=--ps --pdf --png
 
 ALL_DEP:=
 ifeq ($(DO_ALL_DEP),1)
@@ -138,14 +138,11 @@ ifeq ($(DO_MAKOD),1)
 endif
 ifeq ($(DO_PDF),1)
 	ALL:=$(ALL) $(FILES_PDF)
-	LYFLAGS:=$(LYFLAGS) --pdf
 endif
 ifeq ($(DO_PNG),1)
-	LYFLAGS:=$(LYFLAGS) --png
 endif
 ifeq ($(DO_PS),1)
 	ALL:=$(ALL) $(FILES_PS)
-	LYFLAGS:=$(LYFLAGS) --ps
 endif
 ifeq ($(DO_MIDI),1)
 	ALL:=$(ALL) $(FILES_MIDI)
