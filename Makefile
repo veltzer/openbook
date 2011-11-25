@@ -64,7 +64,7 @@ endif
 
 ALL:=
 
-LYFLAGS:=
+LYFLAGS:=--ps
 
 ALL_DEP:=
 ifeq ($(DO_ALL_DEP),1)
