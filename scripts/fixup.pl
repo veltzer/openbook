@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-# this script analyzes gpp dependency information...
+# a generic script to fix source files in this project
 
 use strict;
 use diagnostics;
@@ -33,4 +33,3 @@ while($line=<IN>) {
 }
 close(IN) || die('unable to close input file');
 close(FILE) || die('unable to close output file');
-
