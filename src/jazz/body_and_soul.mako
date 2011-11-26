@@ -8,14 +8,17 @@
 	attributes['render']="Fake"
 
 	attributes['title']="Body And Soul"
-	attributes['composer']="John Green"
 	attributes['style']="Jazz"
-	attributes['piece']="Slowly, with expression"
+	# this is from the fake book
+	attributes['composer']="John Green"
+	# this is from the fake book
 	attributes['poet']="Edward Heyman, Robert Sour, Frank Eyton"
-	attributes['copyright']="1930 Warner Bros. Inc & Chappel & Co. Ltd."
+	# this is from the fake book
+	attributes['piece']="Slowly, with expression"
+	# this is from the fake book
+	attributes['copyright']="1930 Warner Bros. Inc & Chappell & Co. Ltd."
 	attributes['copyrightextra']="Copyright Renewed & Assigned to Warner Bros. Inc."
 
-	attributes['remark']="This version is taken from the fake book page 67"
 	attributes['structure']="AABA"
 
 	attributes['completion']="5"
@@ -31,9 +34,13 @@
 
 % if part=='Doc':
 	DONE:
+	- added the fake book epdf.
+	- added the real book epdf.
+	- added the structure of the tune.
 	TODO:
+	- mark where did I get the meta dta from.
 	- mark whats been done to this tune.
-	- add the real book version with epdf.
+	- write the real book version.
 	- the e9.11+ does at the end does not show on the sheet. On the sheet it says e:7.11+
 % endif
 
@@ -106,16 +113,13 @@
 	for you I sigh, for you, dear, on -- ly,
 	Why have -- n't you seen it?
 	I'm all for you, Bod -- y And Soul! _
-
 	%% B part
 	I can't be -- lieve it,
 	it's hard to con -- ceive it
 	that you'd turn a -- way ro -- mance. __
-
 	Are you pre -- tend -- ing,
 	it looks like the end -- ing
 	un -- less I could have one more chance to prove, dear,
-
 	%% A part
 	my life a wreck you're mak -- ing,
 	you know I'm yours for just the tak -- ing;
