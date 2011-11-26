@@ -12,7 +12,7 @@ DO_LY?=0
 # should we make lilypond dependency files and use them?
 DO_LYD?=0
 # should we make mako dependency files ?
-DO_MAKOD?=0
+DO_MAKO_DEPS?=0
 # should we make pdfs ?
 DO_PDF?=0
 # should we make images ?
@@ -47,7 +47,7 @@ LILYPOND_WRAPPER:=scripts/lilypond_wrapper.pl
 MAKO_WRAPPER:=scripts/mako_wrapper.py
 MAKO_BOOK_WRAPPER:=scripts/mako_book.py
 LYD_WRAPPER:=scripts/lyd.pl
-MAKOD_WRAPPER:=scripts/makod.pl
+MAKO_DEPS_WRAPPER:=scripts/mako_deps.pl
 MIDI2WAV_WRAPPER:=scripts/midi2wav.pl
 MIDI2OGG_WRAPPER:=scripts/midi2ogg.pl
 MIDI2MP3_WRAPPER:=scripts/midi2mp3.pl
@@ -59,7 +59,7 @@ MIDI2MP3_WRAPPER:=scripts/midi2mp3.pl
 # do not include deps (or generate them) if we are doing a clean...
 ifneq ($(filter clean,$(MAKECMDGOALS)),)
 	DO_LYD:=0
-	DO_MAKOD:=0
+	DO_MAKO_DEPS:=0
 endif
 
 ALL:=
@@ -74,7 +74,7 @@ ifeq ($(DO_WRAPDEPS),1)
 	LILYPOND_WRAPPER_DEP:=$(LILYPOND_WRAPPER)
 	MAKO_WRAPPER_DEP:=$(MAKO_WRAPPER)
 	LYD_WRAPPER_DEP:=$(LYD_WRAPPER)
-	MAKOD_WRAPPER_DEP:=$(MAKOD_WRAPPER)
+	MAKO_DEPS_WRAPPER_DEP:=$(MAKO_DEPS_WRAPPER)
 	MIDI2WAV_WRAPPER_DEP:=$(MIDI2WAV_WRAPPER)
 	MIDI2OGG_WRAPPER_DEP:=$(MIDI2OGG_WRAPPER)
 	MIDI2MP3_WRAPPER_DEP:=$(MIDI2MP3_WRAPPER)
@@ -83,7 +83,7 @@ else
 	LILYPOND_WRAPPER_DEP:=
 	MAKO_WRAPPER_DEP:=
 	LYD_WRAPPER_DEP:=
-	MAKOD_WRAPPER_DEP:=
+	MAKO_DEPS_WRAPPER_DEP:=
 	MIDI2WAV_WRAPPER_DEP:=
 	MIDI2OGG_WRAPPER_DEP:=
 	MIDI2MP3_WRAPPER_DEP:=
@@ -109,7 +109,7 @@ FILES_WEB:=$(subst ./,,$(shell find mako -type f))
 OUT_WEB:=$(addprefix $(OUT_DIR)/,$(notdir $(FILES_WEB)))
 WEB_WEB:=$(addprefix $(WEB_DIR)/,$(notdir $(FILES_WEB)))
 
-FILES_MAKOD:=$(addsuffix .mako.d,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
+FILES_MAKO_DEPS:=$(addsuffix .mako.d,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_LY:=$(addsuffix .ly,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_LYD:=$(addsuffix .ly.d,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_PDF:=$(addsuffix .pdf,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
@@ -133,8 +133,8 @@ endif
 ifeq ($(DO_LYD),1)
 	ALL:=$(ALL) $(FILES_LYD)
 endif
-ifeq ($(DO_MAKOD),1)
-	ALL:=$(ALL) $(FILES_MAKOD)
+ifeq ($(DO_MAKO_DEPS),1)
+	ALL:=$(ALL) $(FILES_MAKO_DEPS)
 endif
 ifeq ($(DO_PDF),1)
 	ALL:=$(ALL) $(FILES_PDF)
@@ -177,7 +177,7 @@ debug:
 	$(info ALL is $(ALL))
 	$(info SOURCES_ALL is $(SOURCES_ALL))
 	$(info FILES_MAKO is $(FILES_MAKO))
-	$(info FILES_MAKOD is $(FILES_MAKOD))
+	$(info FILES_MAKO_DEPS is $(FILES_MAKO_DEPS))
 	$(info FILES_LY is $(FILES_LY))
 	$(info FILES_LYI is $(FILES_LYI))
 	$(info FILES_LYD is $(FILES_LYD))
@@ -304,10 +304,10 @@ $(FILES_LY): $(OUT_DIR)/%.ly: %.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKO_WRAPPER) $< $@
-$(FILES_MAKOD): $(OUT_DIR)/%.mako.d: %.mako $(MAKOD_WRAPPER_DEP) $(ALL_DEP)
+$(FILES_MAKO_DEPS): $(OUT_DIR)/%.mako.d: %.mako $(MAKO_DEPS_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
-	$(Q)$(MAKOD_WRAPPER) $< $@ $(basename $(basename $@)).stamp $(basename $(basename $@)).pdf $(basename $(basename $@)).ps $(basename $(basename $@)).midi
+	$(Q)$(MAKO_DEPS_WRAPPER) $< $@ $(basename $(basename $@)).stamp $(basename $(basename $@)).pdf $(basename $(basename $@)).ps $(basename $(basename $@)).midi
 $(FILES_LYD): %.ly.d: %.ly $(LYD_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
@@ -365,6 +365,6 @@ clean_web: $(ALL_DEP)
 ifeq ($(DO_LYD),1)
 -include $(FILES_LYD)
 endif
-ifeq ($(DO_MAKOD),1)
--include $(FILES_MAKOD)
+ifeq ($(DO_MAKO_DEPS),1)
+-include $(FILES_MAKO_DEPS)
 endif
