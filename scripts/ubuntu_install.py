@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/python
 
 # this scrip will install all the required packages that you need on
 # ubuntu to compile and work with this package.
@@ -15,4 +15,21 @@
 # pdfjam: pdfjoin for creaing pdfs.
 # python3-mako: mako for python3 (we are not really using it).
 
-sudo apt-get install perl python python-mako python-mako-doc lilypond-doc lilypond timidity lame pdfjam python3-mako
+import subprocess
+
+packs=[
+	'perl', # for the perl scripts
+	'python', # for the python scripts
+	'python-mako', # this is out template processor
+#	'python3-mako',
+#	'python-mako-doc',
+	'lilypond', # this is the main tool we use
+#	'lilypond-doc',
+#	'timidity',
+#	'lame',
+#	'pdfjam',
+]
+
+args=['sudo','apt-get','install']
+args.extend(packs)
+subprocess.check_call(args)
