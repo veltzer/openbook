@@ -37,9 +37,14 @@
 	- added the fake book epdf.
 	- added the real book epdf.
 	- added the structure of the tune.
+	- put the fake book chords.
+	- put the fake book tune.
+	- put the fake book lyrics.
 	TODO:
-	- mark where did I get the meta dta from.
-	- mark whats been done to this tune.
+	- check the fake book chords.
+	- check the fake book tune.
+	- check the fake book lyrics.
+	- play the fake book tune and check that it sounds well.
 	- write the real book version.
 	- the e9.11+ does at the end does not show on the sheet. On the sheet it says e:7.11+
 % endif
