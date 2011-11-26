@@ -50,14 +50,14 @@
 
 	\mark "A"
 	\startPart
-	f1 | f2 d2:7 | g:m7 c:7.9 | f1 | \myEndLine
+	f1 | f2 d:7 | g:m7 c:7.9 | f1 | \myEndLine
 	f/a | aes:dim7 | g2:m7 c:7 | c1:7 | \myEndLine
 	\endPart
 
 	\mark "B"
 	\startPart
 	g2:m ees/g | g:m6 ees/g | g1:m7 | c:7 | \myEndLine
-	g1:m7 | c:7 | f2:maj7 f:6 | f1:6 | \myEndLine
+	g:m7 | c:7 | f2:maj7 f:6 | f1:6 | \myEndLine
 	\endPart
 
 	\mark "C"
@@ -68,8 +68,8 @@
 
 	\mark "D"
 	\startPart
-	f1 | f | ees:7 | d:7 | \myEndLine
-	g:m7 | g2:m7 c:7 | f d:m7 g:m7 c:7 | \myEndLine
+	f1*2 | ees1:7 | d:7 | \myEndLine
+	g:m7 | g2:m7 c:7 | f2 d:m7 | g:m7 c:7 | \myEndLine
 	\endPart
 
 	\endSong
@@ -87,33 +87,32 @@
 	%% A part
 	a4 a a a | bes a a2 | a4 g g2 | g4 f f2 |
 	f1 | g | f2 e2~ | e1 |
-
 	%% B part
 	bes'4 bes bes bes | c bes bes2 | bes4 a a2 | a4 g g2 |
 	g1 | a | g2 f~ | f1 |
-
 	%% C part
 	f4 c' c c | c bes a g | g1 | fis |
-	d4 bes' bes bes | bes a g f | f1 | e1 |
-
+	d4 bes' bes bes | bes a g f | f1 | e |
 	%% D part
 	a4 a a a | bes a a2 | a4 g g2 | g4 fis fis2 |
-	g2 bes~ | bes e, | f2 r2 | r1 |
+	g2 bes~ | bes e, | f2 r | r1 |
 }
 % endif
 
 % if part=='LyricsFake':
 \lyricmode {
+	%% A part
 	Pack up all my care and woe,
-	Here I go,
-	Sing -- ing low,
+	Here I go, Sing -- ing low,
 	Bye Bye Black -- bird,
+	%% B part
 	Where some -- bod -- y waits for me,
 	Sug -- ar's sweet, so is she,
 	Bye Bye Black -- bird.
-
+	%% C part
 	No one here can love or un -- der -- stand me,
 	Oh, what hard luck sto -- ries they all hand me.
+	%% D part
 	Make my bed and light the light,
 	I'll ar -- rive late to -- night,
 	black -- bird bye bye.
