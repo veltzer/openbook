@@ -3,23 +3,30 @@
 <%
 	attributes['doChords']=True
 	attributes['doVoice']=True
+	attributes['doLyrics']=True
+	attributes['doLyricsmore']=True
 	attributes['render']="Real"
 
 	attributes['title']="Alice In Wonderland"
-	attributes['composer']=""
-	attributes['poet']=""
+	# this is from the internet
+	attributes['composer']="Sammy Fain"
+	# this is from the internet
+	attributes['poet']="Bob Hilliard"
 	attributes['style']="Jazz"
 	# this is from the real book
 	attributes['piece']="Med."
-	attributes['copyright']=""
+	# this is still missing
+	#attributes['copyright']=""
 	attributes['completion']="5"
 
 	attributes['uuid']="718a13e0-023a-11e1-924f-0019d11e5a41"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
+	attributes['idyoutuberemark']="An amzing version by Oscar Peterson"
+	attributes['idyoutube']="TSNPzm_wYLY"
+	attributes['idyoutuberemark']="Bill Evans in the amazing Village Vanguard version"
+	attributes['idyoutube']="bSXRvgFea-0"
+	attributes['lyricsurl']="http://www.stlyrics.com/lyrics/aliceinwonderland/aliceinwonderland.htm"
 %>
 % endif
 
@@ -31,12 +38,16 @@
 	- checked the real book chords.
 	- checked the real book tune.
 	- heard the tune to make sure it's ok.
-	TODO:
-	- put in meta data (composer, poet, copyright) from where?!?
+	- put in meta data (composer, poet).
 	- put in youtube performances.
 	- put in lyrics url.
-	- put in the real book lyrics (are there lyrics?)
+	- put in the real book lyrics (from the internet)
+	TODO:
+	- put in the copyright (from where?)
 	- put more versions in here (from where?)
+	REMARKS:
+	- if you want a vocal recording then you can find one at:
+		http://www.youtube.com/watch?v=seToJih5eq0
 % endif
 
 % if part=='ChordsReal':
@@ -112,5 +123,36 @@
 	d'4 e f | e2 d4 | e2 c4 | g2. |
 	d'4 e f | e2 d4 | e2 g4 | c2 a4 |
 	g2 f4 | e2 d4 | c2.~ | c |
+}
+% endif
+
+% if part=='LyricsReal':
+%% This is taken from the inetnet and adjusted for this tune
+\lyricmode {
+	%% A part
+	A -- lice In Won -- der -- land
+	How do you get to won -- der -- land
+	O -- ver the hill or un -- der -- land
+	or just be -- hind the tree __
+}
+% endif
+
+% if part=='LyricsmoreReal':
+\lyricmode {
+	%% A part
+	When clouds go rol -- ling by
+	They roll a -- way and leave the sky
+	Where is the land be -- yond the eye
+	That peo -- ple can -- not _ see __
+	%% B part
+	And where do stars go
+	Where is the sil -- ver cre -- scent moon
+	They must be some -- where
+	in the sun -- ny af -- ter -- noon
+	%% A part
+	A -- lice In Won -- der -- land
+	Where is the path to won -- der -- land
+	O -- ver the hill or here or there
+	I real -- ly won -- der where __
 }
 % endif
