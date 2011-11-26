@@ -8,7 +8,9 @@
 	attributes['title']="Au Privave"
 	attributes['composer']="Charlie Parker"
 	attributes['style']="Jazz"
+	# this is my own definition
 	attributes['piece']="Upbeat Swing"
+	# this is from the aebersold book
 	attributes['copyright']="1956, Atlantic Music Corp."
 	attributes['copyrightextra']="1978, Atlantic Music Corp."
 
@@ -25,12 +27,16 @@
 % if part=='Doc':
 	DONE:
 	- got the Aebersold epdf in here.
+	- got the real book epdf in here.
+	- got the fake book epdf in here.
+	- put in the structure of the tune.
 	TODO:
-	- mark whats been done to this tune.
+	- mark whats been done to the Aebersold tune.
 	- document the you tube performances.
-	- get the real book and fake book versions in here.
+	- write the real book version.
+	- write the fake book version.
 	REMARKS:
-	- I moved this tune to scale f major which is better for this tune. Why the hell did aebersold put it in C?
+	- I moved the Aebersold tune to scale f major which is better for this tune. Why the hell did aebersold put it in C?
 % endif
 
 % if part=='ChordsAebersold':
