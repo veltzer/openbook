@@ -34,7 +34,7 @@
 
 % if part=='Doc':
 	DONE:
-	- bring in the fake book epdf.
+	- brought in the fake book epdf.
 	- filled in the meta data from the fake book.
 	- put in the tunes structure.
 	- put in the fake book chords.
@@ -47,14 +47,7 @@
 	- put in you tube performances with documentation.
 	- put in a lyrics url.
 	TODO:
-	- bring in the real book epdf.
-	- put in the real book chords.
-	- put in the real book tune.
-	- put in the real book lyrics.
-	- check the real book chords.
-	- check the real book tune.
-	- check the real book lyrics.
-	- play the real book version to hear that it sounds well.
+	- add another version of this tune (from where?)
 	REMARKS:
 % endif
 
