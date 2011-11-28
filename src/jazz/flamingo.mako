@@ -63,7 +63,7 @@
 		des1:7.9 | g2:m7 c4:7 c:7/bes | \myEndLine
 	} \alternative {
 		{
-			a2:m7 d:7 | g:m7 c:7 | \myEndLine
+			a2:m7 d:7 | g:m7 c:7 | %%\myEndLine
 		}
 		{
 			f:2 bes:7.9 | f c4:m7 f:7 | \myEndLine

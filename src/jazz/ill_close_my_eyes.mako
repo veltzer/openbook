@@ -122,7 +122,7 @@
 	\startChords
 	\startSong
 
-	\partial 8*5 r8 r4 r4
+	\partial 8*5 s8 s2
 
 	\mark "A"
 	\startPart
