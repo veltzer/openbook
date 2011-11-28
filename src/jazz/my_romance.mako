@@ -56,24 +56,24 @@
 	\startChords
 	\startSong
 
-	\partial 4 r4
+	\partial 4 s4
 
 	\mark "A"
 	\startPart
-	c2:maj7 d2:m7 | e2:m7 ees2:dim7 | d2:m7 g2:7 | c2:maj7 bes2:7.13 | \myEndLine
-	a2:m a2:m7+ | a2:m7 a2:7 | d2:m7 g2:7 | c2:maj7 c2:7 | \myEndLine
+	c2:maj7 d:m7 | e:m7 ees:dim7 | d:m7 g:7 | c:maj7 bes:7.13 | \myEndLine
+	a:m a:m7+ | a:m7 a:7 | d:m7 g:7 | c:maj7 c:7 | \myEndLine
 
-	f2:maj7 fis2:dim7 | c2:maj7 c2:7 | f2:maj7 fis2:dim7 | c1:maj7 | \myEndLine
-	fis2:m7 f2:7.5- | e2:m7 ees:7 | a2:m7.9 d2:7 | d2:m7 g2:7 | \myEndLine
+	f:maj7 fis:dim7 | c:maj7 c:7 | f:maj7 fis:dim7 | c1:maj7 | \myEndLine
+	fis2:m7 f:7.5- | e:m7 ees:7 | a:m7.9 d:7 | d:m7 g:7 | \myEndLine
 	\endPart
 
 	\mark "B"
 	\startPart
-	c2:maj7 d2:m7 | e2:m7 ees2:dim7 | d2:m7 g2:7 | c2:maj7 bes2:7.13 | \myEndLine
-	a2:m a2:m7+ | a2:m7 a2:7 | d2:m7 g2:7 | c2:maj7 c2:7 | \myEndLine
+	c:maj7 d:m7 | e:m7 ees:dim7 | d:m7 g:7 | c:maj7 bes:7.13 | \myEndLine
+	a:m a:m7+ | a:m7 a:7 | d:m7 g:7 | c:maj7 c:7 | \myEndLine
 
-	f2:maj7 f2:maj7/e | d2:m7 d2:m7/c | b2:m7 bes2:7.9.11+ | a2:m7 aes2:7.9 | \myEndLine
-	c2:maj7/g a2:m7 | d2:m7 d4:m7/g g4:7 | c1:6 | c1:6 | \myEndLine
+	f:maj7 f:maj7/e | d:m7 d:m7/c | b:m7 bes:7.9.11+ | a:m7 aes:7.9 | \myEndLine
+	c:maj7/g a:m7 | d:m7 d4:m7/g g:7 | c1*2:6 | \myEndLine
 	\endPart
 
 	\endSong
@@ -109,11 +109,12 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+	%% A part
 	My Ro -- mance does -- n't have to have a moon in the sky,
 	My Ro -- mance does -- n't need a blue la -- goon stand -- ing by;
 	no month of May, no twin -- kling stars,
 	no hide a -- way, no soft gui -- tars.
-
+	%% B part
 	My Ro -- mance does -- n't need a cas -- tle ris -- ing in Spain,
 	nor a dance to a con -- stant -- ly sur -- pris -- ing re -- frain.
 	Wide a -- wake I can make my most fan -- tas -- tic dreams come true;

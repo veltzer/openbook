@@ -50,7 +50,7 @@
 	\startChords
 	\startSong
 
-	\partial 4 r4
+	\partial 4 s4
 
 	\mark "A"
 	\startPart
@@ -113,17 +113,18 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+	%% A part
 	I see trees of green, red ros -- es too, I see the bloom for me and you, __
 	and I think __ to my -- self What A Won -- der -- ful World. __
-
+	%% A part
 	I see skies of blue and clouds of white, the bright __ bless -- ed day, the dark __ sac -- red night, __
 	and I think __ to my -- self What A Won -- der -- ful World. __
-
+	%% B part
 	The col -- ors of the rain -- bow, so pret -- ty in the sky
 	are al -- so on the fa -- ces of peo -- ple go -- in' by,
 	I see friends shak -- in' hands, __ say -- in' "\"How" do you "do!\""
 	They're real -- ly say -- in' "\"I" love "you,\""
-
+	%% A part
 	I hear ba -- bies cry, I watch them grow.
 	They'll learn much more than I'll __ ev -- er know, __
 	and I think __ to my -- self What A Won -- der -- ful World. __

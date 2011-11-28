@@ -34,6 +34,9 @@
 	- add info about the youtube performances.
 	- problem with the words ( the phrase "Don't you know" did not fit in my version, fix the tune).
 	- get copyright for this tune (the real book didn't have one).
+	REMARKS:
+	- this tunes structure could also be thought of as ABAC since the begining of the A and B part (the
+	first 8 bars) under the AB interpretation is exactly the same.
 % endif
 
 % if part=='ChordsReal':
@@ -41,7 +44,7 @@
 	\startChords
 	\startSong
 
-	\partial 4*3 r4 r2
+	\partial 2. s2.
 
 	\mark "A"
 	\startPart
@@ -90,6 +93,7 @@
 %% these are lyrics from the internet adjusted by me to the real book tune
 %% the adjustment is pretty horrible
 \lyricmode {
+	%% A part
 	I'll Close My Eyes __ __
 	To eve -- ry -- one but you __ __
 	And when I do __ __
@@ -100,6 +104,7 @@
 	I'll nev -- er say yes __ _
 	To_a_new love af -- fair
 
+	%% B part
 	Then_I'll Close My Eyes __ __
 	To eve -- ry -- thing that's gay __ __
 	If you_are not there __ __

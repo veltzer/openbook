@@ -54,33 +54,33 @@
 	\startChords
 	\startSong
 
-	\partial 4 r4
+	\partial 4 s4
 
 	\mark "A"
 	\startPart
 	\repeat volta 2 {
-		f2:maj7 d:m7 | g:m7 c:7.5+ | f1:m7 | bes2:7 c:7.5+ |
-		des1:7.9 | g2:m7 c4:7 c:7/bes |
+		f2:maj7 d:m7 | g:m7 c:7.5+ | f1:m7 | bes2:7 c:7.5+ | \myEndLine
+		des1:7.9 | g2:m7 c4:7 c:7/bes | \myEndLine
 	} \alternative {
 		{
-			a2:m7 d:7 | g:m7 c:7 |
+			a2:m7 d:7 | g:m7 c:7 | \myEndLine
 		}
 		{
-			f:2 bes:7.9 | f c4:m7 f:7 |
+			f:2 bes:7.9 | f c4:m7 f:7 | \myEndLine
 		}
 	}
 	\endPart
 
 	\mark "B"
 	\startPart
-	bes2:m bes:m7.7+ | bes:m7 ees:7.9 | aes1:6 | c2:m7.5- f:7 |
-	bes:m7 ees:7 | bes:m7 bes:m7/aes | g1:m7 | c:7 |
+	bes2:m bes:m7.7+ | bes:m7 ees:7.9 | aes1:6 | c2:m7.5- f:7 | \myEndLine
+	bes:m7 ees:7 | bes:m7 bes:m7/aes | g1:m7 | c:7 | \myEndLine
 	\endPart
 
 	\mark "A"
 	\startPart
-	f2:maj7 d:m7 | g:m7 c:7.5+ | f1:m7 | bes2:7 c:7.5+ |
-	des1:7.9 | g2:m7 g:m7/c | f:maj7 bes:maj7 | f1:maj7 |
+	f2:maj7 d:m7 | g:m7 c:7.5+ | f1:m7 | bes2:7 c:7.5+ | \myEndLine
+	des1:7.9 | g2:m7 g:m7/c | f:maj7 bes:maj7 | f1:maj7 | \myEndLine
 	\endPart
 
 	\endSong

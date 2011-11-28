@@ -56,7 +56,7 @@
 	\startChords
 	\startSong
 
-	\partial 8 r8 |
+	\partial 8 s8 |
 
 	\mark "A"
 	\startPart

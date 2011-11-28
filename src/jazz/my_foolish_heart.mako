@@ -89,7 +89,7 @@
 	\startChords
 	\startSong
 
-	\partial 4 r4 |
+	\partial 4 s4 |
 
 	\repeat volta 2 {
 

@@ -9,10 +9,10 @@
 
 	attributes['title']="Summertime"
 	attributes['composer']="George Gershwin"
+	attributes['poet']="DuBose Heyward"
 	attributes['style']="Jazz"
 	# this piece instruction is from the fake book
 	attributes['piece']="Slowly"
-	attributes['poet']="DuBose Heyward"
 	# the next one is from Aebersold...
 	attributes['copyright']="1936, Gershwin Publishing Corp., copyright renewed"
 
@@ -29,17 +29,23 @@
 
 % if part=='Doc':
 	DONE:
-	- brought in 3 epdfs for this tune.
+	- added the meta data for this tune.
+	- brought in the fake book epdf.
+	- brought in the real book epdf.
+	- brought in the aebersold book epdf.
 	- put in the aebersold chords.
 	- put in the aebersold tune.
+	- put in the aebersold lyrics.
 	- checked the aebersold chords.
 	- checked the aebersold tune.
-	- heard the aebersold version to make sure it's ok.
-	- added parenthesis on the turn around notes.
+	- checked the aebersold lyrics.
+	- in the aebersold version added parenthesis on the turn around notes.
 	- in the aebersold version added phrases.
-	- added youtube and lyrics url.
-	- added lyrics from somewhere to the aebersold tune.
+	- heard the aebersold version to make sure it's ok.
+	- added youtube performances.
+	- added lyrics url.
 	TODO:
+	- mark where the meta data for this tune came from. 
 	- add real book version.
 	- add fake book version.
 	- in the Aebersold tune there are two versions: one marked out and one not. The only
@@ -55,7 +61,7 @@
 	\startChords
 	\startSong
 
-	\partial 4 r4 |
+	\partial 4 s4 |
 
 	\repeat volta 2 {
 
