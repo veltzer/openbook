@@ -62,7 +62,7 @@
 	\startChords
 	\startSong
 
-	\partial 4 r4 |
+	\partial 4 s4 |
 	\repeat volta 2 {
 		\mark "A"
 		c1:6 | cis:dim7 | g:7/d | dis:dim7 | \myEndLine
@@ -158,7 +158,7 @@
 	\startChords
 	\startSong
 
-	\partial 4 r4 |
+	\partial 4 s4 |
 	\mark "A"
 	\repeat volta 2 {
 		c1:6 | a:m7 | g:7 | dis:dim | \myEndLine

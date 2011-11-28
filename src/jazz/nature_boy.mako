@@ -49,7 +49,7 @@
 	part (turn-around chords) should be in parenthesis. How do I do that?
 	- add the real book version.
 	REMARKS:
-	- this tunes structure can also be AA' since the A and the B part are VERY similar.
+	- this tunes structure can also be AA' or maybe ABAC since the A and the B part are VERY similar.
 % endif
 
 % if part=='ChordsNewreal':
@@ -57,7 +57,7 @@
 	\startChords
 	\startSong
 
-	\partial 8 r8 |
+	\partial 8 s8 |
 
 	\mark "A"
 	\startPart

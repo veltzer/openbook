@@ -55,7 +55,7 @@
 	\startChords
 	\startSong
 
-	\partial 2 r2 |
+	\partial 2 s2 |
 
 	\mark "A"
 	\startPart

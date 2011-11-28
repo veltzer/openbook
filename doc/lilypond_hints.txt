@@ -18,6 +18,8 @@ Melody:
 
 Chords:
 =======
+- when you don't want a chord put r if you want N.C. to be printed and s if you
+want nothing to be printed.
 - alternate bass to a chord: c2:m7/bes
 - \chords is akin to \new ChordNames but with something else... What is it ?
 	find out from the lilypond documentation...

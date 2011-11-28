@@ -43,7 +43,7 @@
 	\startChords
 	\startSong
 
-	\partial 8 r8 |
+	\partial 8 s8 |
 
 	\startPart
 	\repeat volta 2 {

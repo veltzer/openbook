@@ -42,7 +42,7 @@
 	\startChords
 	\startSong
 
-	\partial 4 r4 |
+	\partial 4 s4 |
 
 	\mark "A"
 	\startPart
@@ -75,13 +75,12 @@
 
 	\partial 4 bes4 |
 
-	%% Bar 1
+	%% A part
 	c d ees f | g bes f ees | f1~ | f2 r8 g4. |
 	ees4 f g bes | c ees c4. bes8 | c1~ | c2. bes4 |
 	ees c bes aes | g f g aes | bes g f ees | f ees8 f~ f4 ees |
 	d' c bes a | g f g f | aes1~ | aes2. bes,4 |
-
-	%% Bar 17
+	%% B part
 	c d ees f | g bes f ees | f1~ | f2 r8 g4. |
 	ees4 f g bes | c ees c4. bes8 | c1~ | c2. bes4 |
 	ees c bes aes | g f g aes | bes g f ees8 d'~ | d2 r8 c4. |
@@ -93,11 +92,12 @@
 % if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
+	%% A part
 	There will be man -- y oth -- er nights like this, __
 	and I'll be stand -- ing here with some -- one new, __
 	There will be oth -- er songs to sing, an -- oth -- er fall, an -- oth -- er spring,
 	but There Will Nev -- er Be An -- oth -- er You. __
-
+	%% B part
 	There will be oth -- er lips that I may kiss, __
 	but they won't thrill me like yours used to do. __
 	Yes, I may dream a mil -- lion dreams, but how can they come true,
@@ -111,7 +111,7 @@
 
 	\startSong
 
-	\partial 4 r4 |
+	\partial 4 s4 |
 
 	\mark "A"
 	\startPart
@@ -142,13 +142,12 @@
 
 	\partial 4 bes4 |
 
-	%% Bar 1
+	%% A part
 	c d ees f | g bes f4. ees8 | f1~ | f2. g4 |
 	ees f g bes | c ees c4. bes8 | c1~ | c2. bes4 |
 	ees c bes aes | g f g4. aes8 | bes4 g f ees | f ees f4. ees8 |
 	d'4 c bes a | g f g f | aes1~ | aes2. bes,4 |
-
-	%% Bar 17
+	%% B part
 	c d ees f | g bes f4. ees8 | f1~ | f2. g4 |
 	ees f g bes | c ees c4. bes8 | c1~ | c2. bes4 |
 	ees4 c bes aes | g f g4. aes8 | bes4 g f ees | d'2. c4 |
@@ -158,11 +157,12 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+	%% A part
 	There will be man -- y oth -- er nights like this, __
 	and I'll be stand -- ing here with some -- one new, __
 	There will be oth -- er songs to sing, an -- oth -- er fall, an -- oth -- er spring,
 	but There Will Nev -- er Be An -- oth -- er You. __
-
+	%% B part
 	There will be oth -- er lips that I may kiss, __
 	but they won't thrill me like yours used to do. __
 	Yes, I may dream a mil -- lion dreams, but how can they come true,

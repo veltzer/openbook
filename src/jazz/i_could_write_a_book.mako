@@ -34,23 +34,23 @@
 	\startChords
 	\startSong
 
-	\partial 2 r2 |
+	\partial 2 s2 |
 
 	\startPart
 
 	\repeat volta 2 {
-		c2:maj7 a2:m9 | d2:m7 g2:7 | c1:maj7 | c2:maj7 g2:7 | \myEndLine
-		c2:maj7 g2:7 | c2:maj7 cis2:dim7 | d1:m7 | g1:7 | \myEndLine
-		c2/e aes2:7/ees | d2:m7 g2:7 |
+		c2:maj7 a:m9 | d:m7 g:7 | c1:maj7 | c2:maj7 g:7 | \myEndLine
+		c:maj7 g:7 | c:maj7 cis:dim7 | d1:m7 | g:7 | \myEndLine
+		c2/e aes:7/ees | d:m7 g:7 |
 	}
 	\alternative {
 		{
-			a2:m7 d2:7.9- | g2. b4:7 | \myEndLine
-			e1:m | a2:m7 d2:7 | d1:m7 | g1:7 | \myEndLine
+			a:m7 d:7.9- | g2. b4:7 | \myEndLine
+			e1:m | a2:m7 d:7 | d1:m7 | g:7 | \myEndLine
 		}
 		{
-			g2:m7 c2:7 | f2:maj7 f4:m7 bes4:7 | \myEndLine
-			c2 a2:7 | d2:m7 g2:7 | c1:maj7 | c1:maj7 | \myEndLine
+			g2:m7 c:7 | f:maj7 f4:m7 bes:7 | \myEndLine
+			c2 a:7 | d:m7 g:7 | c1:maj7 | c:maj7 | \myEndLine
 		}
 	}
 	\endPart

@@ -37,6 +37,7 @@
 	- checked the real book tune.
 	- document the youtube performances.
 	TODO:
+	- mark where the meta data for this tune came from.
 	- are there lyrics to this thing? Even if there isn't it needs to be marked clearly here.
 	- the last two chords of the real book version (d:m7 and g:7) should be in parenthesis since they are part of the turn around.
 	I still don't know how to do that.
@@ -48,7 +49,7 @@
 	\startChords
 	\startSong
 
-	\partial 4 r4 |
+	\partial 4 s4 |
 
 	\mark "A"
 	\startPart
@@ -108,10 +109,10 @@
 % if part=='ChordsReal':
 \chordmode {
 	\startChords
-
 	\startSong
 
-	\partial 4 r4 |
+	\partial 4 s4 |
+
 	\mark "A"
 	\startPart
 	\repeat volta 2 {
