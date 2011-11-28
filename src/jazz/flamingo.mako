@@ -1,0 +1,147 @@
+<%page args="part"/>
+% if part=='Vars':
+<%
+	attributes['doChords']=True
+	attributes['doVoice']=True
+	attributes['doLyrics']=True
+	attributes['doLyricsmore']=True
+	attributes['render']="Fake"
+
+	attributes['title']="Flamingo"
+	attributes['style']="Jazz"
+	# this is from the fake book
+	attributes['composer']="Ted Grouya"
+	# this is from the fake book
+	attributes['poet']="Ed Anderson"
+	# this is from the fake book
+	attributes['piece']="Slowly"
+	# this is from the fake book
+	attributes['copyright']="1941 Tempo Music, Inc."
+	attributes['copyrightextra']="Renewed 1969 Edwin H. Morris & Company, A Division of MPL Communications, Inc."
+
+	attributes['completion']="4"
+	attributes['uuid']="be87a49a-1a05-11e1-ba9e-0019d11e5a41"
+
+	attributes['structure']="AABA"
+
+	attributes['idyoutuberemark']=""
+	attributes['idyoutube']=""
+	attributes['lyricsurl']=""
+%>
+% endif
+
+% if part=='Doc':
+	DONE:
+	- brought in the fake book epdf.
+	- filled in the meta data from the fake book.
+	- put in the tunes structure.
+	- put in the fake book chords.
+	- put in the fake book lyrics.
+	- put in the fake book tune.
+	TODO:
+	- checked the fake book chords.
+	- checked the fake book tune.
+	- checked the fake book lyrics.
+	- played the fake book version to hear that it sounds well.
+	- put in you tube performances with documentation.
+	- put in a lyrics url.
+	- add another version of this tune (from where?)
+	REMARKS:
+% endif
+
+% if part=='ChordsFake':
+\chordmode {
+	\startChords
+	\startSong
+
+	\partial 4 r4
+
+	\mark "A"
+	\startPart
+	\repeat volta 2 {
+		f2:maj7 d:m7 | g:m7 c:7.5+ | f1:m7 | bes2:7 c:7.5+ |
+		des1:7.9 | g2:m7 c4:7 c:7/bes |
+	} \alternative {
+		{
+			a2:m7 d:7 | g:m7 c:7 |
+		}
+		{
+			f:2 bes:7.9 | f c4:m7 f:7 |
+		}
+	}
+	\endPart
+
+	\mark "B"
+	\startPart
+	bes2:m bes:m7.7+ | bes:m7 ees:7.9 | aes1:6 | c2:m7.5- f:7 |
+	bes:m7 ees:7 | bes:m7 bes:m7/aes | g1:m7 | c:7 |
+	\endPart
+
+	\mark "A"
+	\startPart
+	f2:maj7 d:m7 | g:m7 c:7.5+ | f1:m7 | bes2:7 c:7.5+ |
+	des1:7.9 | g2:m7 g:m7/c | f:maj7 bes:maj7 | f1:maj7 |
+	\endPart
+
+	\endSong
+	\endChords
+}
+% endif
+
+% if part=='VoiceFake':
+\relative c' {
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Allegro" 4 = 130
+	\time 4/4
+	\key f \major
+
+	\partial 4 c4
+	%% A part
+	\repeat volta 2 {
+		c'4. a8~ a2 | r4 bes8 c e4 d8 c | aes1 | r4 g8 aes c4 bes8 aes |
+		f4 f2. | r4 f8 f g4 f8 g |
+	} \alternative {
+		{
+			a1~ | a2 r4 c,4 |
+		}
+		{
+			f1~ | f4 r r f |
+		}
+	}
+	%% B part
+	f'1 | r4 f8 f f4 ees8 des | ees4. ees8 aes4 | r4 ees8 ees~ ees4 des8 c |
+	des4. des8 g2 | r4 des4 des c8 bes | c1~ | c2 r4 c,4 |
+	%% A part
+	c'4. a8~ a2 | r4 bes8 c e4 d4 c | aes1 | r4 g8 aes c4 bes8 aes |
+	f4 f2. | r4 g \times 2/3 { bes d f } | a1~ | a2. r4 |
+}
+% endif
+
+% if part=='LyricsFake':
+\lyricmode {
+	%% part "A"
+	Fla -- min -- go, __
+	like a flame in the sky,
+	flying o -- ver the is -- land
+	to my lov -- er near by. __
+	%% Volta
+	Fla --
+	%% part "B"
+	The wind sings a song to you as you go,
+	a song __ that I hear be -- low the mur -- mur -- ing palms. __
+	%% part "A"
+	Fla -- min -- go, __
+	when the sun meets the sea,
+	say fare -- well to my lov -- er
+	and has -- ten to me. __
+}
+% endif
+
+% if part=='LyricsmoreFake':
+\lyricmode {
+	Fla -- min -- go, __
+	in your trop -- i -- cal hue,
+	speak of pas -- sion un -- dy -- ing
+	and a love that is _ true. __
+}
+% endif
