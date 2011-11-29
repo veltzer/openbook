@@ -67,6 +67,10 @@ writing songs:
 
 Chords:
 =======
+- if a partial bar starts the tune the chords in it should
+	be marked as 's' and not 'r'. 'r' will cause N.C. to
+	be printed while 's' causes nothing to be printed.
+	Use 'r' only when there is really no chord (rare).
 - start chords with \startChords and end them with \endChords
 - don't end with a turn around.
 	REASONS FOR:
