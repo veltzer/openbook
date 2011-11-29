@@ -19,14 +19,16 @@
 	attributes['copyright']="1941 Tempo Music, Inc."
 	attributes['copyrightextra']="Renewed 1969 Edwin H. Morris & Company, A Division of MPL Communications, Inc."
 
-	attributes['completion']="4"
+	attributes['completion']="5"
 	attributes['uuid']="be87a49a-1a05-11e1-ba9e-0019d11e5a41"
 
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
+	attributes['idyoutuberemark']="Duke and his orchestra"
+	attributes['idyoutube']="XlmMzUMCIIg"
+	attributes['idyoutuberemark']="Petrucciani and Grappelli"
+	attributes['idyoutube']="oqR5hPjPM3o"
+	attributes['lyricsurl']="http://lyricsplayground.com/alpha/songs/f/flamingo.shtml"
 %>
 % endif
 
@@ -38,13 +40,13 @@
 	- put in the fake book chords.
 	- put in the fake book lyrics.
 	- put in the fake book tune.
-	TODO:
 	- checked the fake book chords.
 	- checked the fake book tune.
 	- checked the fake book lyrics.
 	- played the fake book version to hear that it sounds well.
 	- put in you tube performances with documentation.
 	- put in a lyrics url.
+	TODO:
 	- add another version of this tune (from where?)
 	REMARKS:
 % endif
@@ -66,7 +68,7 @@
 			a2:m7 d:7 | g:m7 c:7 | %%\myEndLine
 		}
 		{
-			f:2 bes:7.9 | f c4:m7 f:7 | \myEndLine
+			f bes:7.9 | f c4:m7 f:7 | \myEndLine
 		}
 	}
 	\endPart
@@ -109,10 +111,10 @@
 		}
 	}
 	%% B part
-	f'1 | r4 f8 f f4 ees8 des | ees4. ees8 aes4 | r4 ees8 ees~ ees4 des8 c |
+	f'1 | r4 f8 f f4 ees8 des | ees4. ees8 aes2 | r4 ees8 ees~ ees4 des8 c |
 	des4. des8 g2 | r4 des4 des c8 bes | c1~ | c2 r4 c,4 |
 	%% A part
-	c'4. a8~ a2 | r4 bes8 c e4 d4 c | aes1 | r4 g8 aes c4 bes8 aes |
+	c'4. a8~ a2 | r4 bes8 c e4 d8 c | aes1 | r4 g8 aes c4 bes8 aes |
 	f4 f2. | r4 g \times 2/3 { bes d f } | a1~ | a2. r4 |
 }
 % endif
@@ -122,18 +124,10 @@
 	%% part "A"
 	Fla -- min -- go, __
 	like a flame in the sky,
-	flying o -- ver the is -- land
+	fly -- ing o -- ver the is -- land
 	to my lov -- er near by. __
 	%% Volta
 	Fla --
-	%% part "B"
-	The wind sings a song to you as you go,
-	a song __ that I hear be -- low the mur -- mur -- ing palms. __
-	%% part "A"
-	Fla -- min -- go, __
-	when the sun meets the sea,
-	say fare -- well to my lov -- er
-	and has -- ten to me. __
 }
 % endif
 
@@ -142,6 +136,14 @@
 	Fla -- min -- go, __
 	in your trop -- i -- cal hue,
 	speak of pas -- sion un -- dy -- ing
-	and a love that is _ true. __
+	and a love that is _ _ true. __
+	%% part "B"
+	The wind sings a song to you as you go,
+	a song __ that I hear be -- low the mur -- mur -- ing palms. __
+	%% part "A"
+	Fla -- min -- go, __
+	when the sun meets the sea,
+	say fare -- well to my lov -- er
+	and has -- ten to me. __
 }
 % endif
