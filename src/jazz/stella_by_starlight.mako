@@ -7,8 +7,8 @@
 	attributes['render']="Real"
 
 	attributes['title']="Stella By Starlight"
-	attributes['composer']="Victor Young"
 	attributes['style']="Jazz"
+	attributes['composer']="Victor Young"
 	attributes['piece']="Slowly, with Expression"
 	attributes['poet']="Ned Washington"
 

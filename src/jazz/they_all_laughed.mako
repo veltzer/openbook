@@ -8,8 +8,8 @@
 	attributes['render']="Ultimate"
 
 	attributes['title']="They All Laughed"
-	attributes['composer']="George Gershwin"
 	attributes['style']="Jazz"
+	attributes['composer']="George Gershwin"
 	attributes['piece']="Medium Swing"
 	attributes['poet']="Ira Gershwin"
 	attributes['copyright']="1937, Gershwin Publishing Corporation"

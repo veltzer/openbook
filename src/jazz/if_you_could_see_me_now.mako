@@ -7,10 +7,10 @@
 	attributes['render']="Real"
 
 	attributes['title']="If You Could See Me Now"
+	attributes['style']="Jazz"
 	attributes['composer']="Tadd Dameron"
 	attributes['copyright']=""
 	attributes['copyrightextra']=""
-	attributes['style']="Jazz"
 	attributes['piece']=""
 	attributes['poet']=""
 

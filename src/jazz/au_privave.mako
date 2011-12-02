@@ -6,8 +6,9 @@
 	attributes['render']="Aebersold"
 
 	attributes['title']="Au Privave"
-	attributes['composer']="Charlie Parker"
 	attributes['style']="Jazz"
+	# from the aebersold book
+	attributes['composer']="Charlie Parker"
 	# this is my own definition
 	attributes['piece']="Upbeat Swing"
 	# this is from the aebersold book

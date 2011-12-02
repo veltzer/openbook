@@ -8,13 +8,13 @@
 	attributes['render']="Real"
 
 	attributes['title']="Easy To Love"
+	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['subtitle']="From 'Born To Dance'"
 	# this is from the real book
 	attributes['composer']="Cole Porter"
 	# this is from the fake book
 	attributes['poet']="Cole Porter"
-	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['piece']="Moderately"
 	# this is from the real book

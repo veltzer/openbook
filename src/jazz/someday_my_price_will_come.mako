@@ -9,8 +9,8 @@
 	attributes['render']="Real"
 
 	attributes['title']="Someday My Prince Will Come"
-	attributes['composer']="Frank Churchill, Larry Morey"
 	attributes['style']="Jazz"
+	attributes['composer']="Frank Churchill, Larry Morey"
 	attributes['piece']="Med. Jazz Waltz"
 
 	attributes['completion']="5"

@@ -8,9 +8,9 @@
 	attributes['render']="Aebersold"
 
 	attributes['title']="Summertime"
+	attributes['style']="Jazz"
 	attributes['composer']="George Gershwin"
 	attributes['poet']="DuBose Heyward"
-	attributes['style']="Jazz"
 	# this piece instruction is from the fake book
 	attributes['piece']="Slowly"
 	# the next one is from Aebersold...

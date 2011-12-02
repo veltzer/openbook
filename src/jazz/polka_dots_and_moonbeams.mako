@@ -7,10 +7,10 @@
 	attributes['render']="Fake"
 
 	attributes['title']="Polka Dots And Moonbeams"
+	attributes['style']="Jazz"
 	attributes['composer']="Jimmy Van Heusen"
 	attributes['copyright']="1940 by ARC Music Corp., now Bourne Co. and Dorsey Bros."
 	attributes['copyrightextra']="Music, Division of Music Sales Corporation"
-	attributes['style']="Jazz"
 	attributes['piece']="Slowly, with expression"
 	attributes['poet']="Johnny Burke"
 

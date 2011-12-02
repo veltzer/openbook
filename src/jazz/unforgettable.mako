@@ -7,10 +7,10 @@
 	attributes['render']="Fake"
 
 	attributes['title']="Unforgettable"
+	attributes['style']="Jazz"
 	attributes['composer']="Irving Gordon"
 	attributes['poet']="Irving Gordon"
 	attributes['copyright']="1951, Bourne Co. Copyright Renewed."
-	attributes['style']="Jazz"
 	attributes['piece']="Mederately"
 
 	attributes['completion']="5"

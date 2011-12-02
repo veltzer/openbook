@@ -7,8 +7,8 @@
 	attributes['render']="Unknown"
 
 	attributes['title']="Hallelujah I Love Him(her) So"
-	attributes['composer']="Ray Charles"
 	attributes['style']="blues"
+	attributes['composer']="Ray Charles"
 	attributes['piece']="Med Swing"
 
 	attributes['completion']="0"

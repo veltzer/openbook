@@ -7,10 +7,10 @@
 	attributes['render']="Newreal"
 
 	attributes['title']="Nature Boy"
+	attributes['style']="Jazz"
 	# from the new real book
 	attributes['composer']="Eben Ahbez"
 	attributes['poet']="Eben Ahbez"
-	attributes['style']="Jazz"
 	# from the real book (volume II)
 	attributes['piece']="Slowly"
 	# from the new Real book

@@ -8,9 +8,9 @@
 	attributes['render']="Real"
 
 	attributes['title']="Green Dolphin Street"
+	attributes['style']="Jazz"
 	attributes['composer']="Bronislau Kaper"
 	attributes['poet']="Ned Washington"
-	attributes['style']="Jazz"
 	# this is from the real book
 	attributes['piece']="Latin/Swing"
 	# this is from the new real book, vol 3

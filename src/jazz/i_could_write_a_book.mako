@@ -8,10 +8,10 @@
 	attributes['render']="Real"
 
 	attributes['title']="I Could Write A Book"
+	attributes['style']="Jazz"
 	attributes['subtitle']="From 'Pal Joey'"
 	attributes['composer']="Richard Rodgers"
 	attributes['poet']="Lorenz Hart"
-	attributes['style']="Jazz"
 	attributes['piece']="Modeartely Slow"
 	attributes['copyright']="1940, Chappel & Co."
 

@@ -6,8 +6,8 @@
 	attributes['render']="Fake"
 
 	attributes['title']="St. Thomas"
-	attributes['composer']="Sonny Rollins"
 	attributes['style']="Jazz"
+	attributes['composer']="Sonny Rollins"
 	attributes['piece']="Latin/Calypso"
 	attributes['copyright']="1963, Prestigve Music"
 

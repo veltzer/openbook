@@ -5,9 +5,9 @@
 	attributes['render']="Unknown"
 
 	attributes['title']="It might as well be spring"
+	attributes['style']="Jazz"
 	attributes['composer']="Richard Rogers"
 	attributes['poet']="Oscar Hammerstein"
-	attributes['style']="Jazz"
 	attributes['piece']="Med Swing"
 
 	attributes['completion']="0"

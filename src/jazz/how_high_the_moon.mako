@@ -7,11 +7,11 @@
 	attributes['render']="Fake"
 
 	attributes['title']="How High The Moon"
+	attributes['style']="Jazz"
 	# this is from the real book and fake book
 	attributes['composer']="Morgan Lewis"
 	# this is from the fake book
 	attributes['poet']="Nancy Hamilton"
-	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['piece']="Moderately"
 	# this is from the fake book

@@ -7,9 +7,9 @@
 	attributes['render']="Fake"
 
 	attributes['title']="My Funny Valentine"
+	attributes['style']="Jazz"
 	attributes['composer']="Richard Rodgers"
 	attributes['copyright']="1937 by Chappell & Co., Inc. Copyright Renewed"
-	attributes['style']="Jazz"
 	# this direction is from the fake book
 	attributes['piece']="Slowly"
 	attributes['poet']="Lorenz Hart"

@@ -8,11 +8,11 @@
 	attributes['render']="Real"
 
 	attributes['title']="Alone Together"
+	attributes['style']="Jazz"
 	# this is from the internet
 	attributes['composer']="Arthur Schwartz"
 	# this is from the internet
 	attributes['poet']="Howard Dietz"
-	attributes['style']="Jazz"
 	# this is from the real book
 	attributes['piece']="Ballad"
 	attributes['copyright']="1932 (Renewed) Warner Bros. Inc."

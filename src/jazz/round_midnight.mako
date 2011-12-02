@@ -8,9 +8,9 @@
 	attributes['render']="Real"
 
 	attributes['title']="'Round Midnight"
+	attributes['style']="Jazz"
 	attributes['composer']="Cootie Williams, Thelonious Monk"
 	attributes['poet']="Bernie Hanighen"
-	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['piece']="Slowly"
 	# this is from the real book

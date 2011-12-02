@@ -7,13 +7,13 @@
 	attributes['render']="Fake"
 
 	attributes['title']="My Romance"
+	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['subtitle']="From 'Jumbo'"
 	# this is from the fake book
 	attributes['composer']="Richard Rodgers"
 	# this is from the fake book
 	attributes['poet']="Lorenz Hart"
-	attributes['style']="Jazz"
 	# this is from the real book
 	attributes['piece']="Med."
 	# this is from the fake book

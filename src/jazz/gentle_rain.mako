@@ -8,8 +8,8 @@
 	attributes['render']="Real"
 
 	attributes['title']="Gentle Rain"
-	attributes['composer']="Louis Bonfa"
 	attributes['style']="Jazz"
+	attributes['composer']="Louis Bonfa"
 	# this comes from the real book...
 	attributes['piece']="Bossa"
 	attributes['poet']=""
