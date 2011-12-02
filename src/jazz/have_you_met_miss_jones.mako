@@ -7,9 +7,9 @@
 	attributes['render']="Fake"
 
 	attributes['title']="Have you met Miss Jones?"
+	attributes['style']="Jazz"
 	attributes['composer']="Richard Rodgers"
 	attributes['poet']="Lorenz Hart"
-	attributes['style']="Jazz"
 	# this is from the real book
 	attributes['piece']="Med."
 	# this is from the fake book

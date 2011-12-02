@@ -8,8 +8,8 @@
 	attributes['render']="Real"
 
 	attributes['title']="Once I Loved"
-	attributes['composer']="Antonio Carlos Jobim"
 	attributes['style']="Jazz"
+	attributes['composer']="Antonio Carlos Jobim"
 	attributes['piece']="Med.-Slow Bossa Nova"
 	attributes['poet']="Vinicius DeMoraes, Ray Gilbert"
 	attributes['copyright']="1965, Ipanema Music."

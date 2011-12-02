@@ -6,10 +6,10 @@
 	attributes['render']="Unknown"
 
 	attributes['title']="Chega De Saudade"
+	attributes['style']="Jazz"
 	attributes['subtitle']="No More Blues"
 	attributes['composer']="Antonio Carlos Jobim"
 	attributes['copyright']="1962,1967, Editora Musical Arapua, Sao Paulo, Brazil"
-	attributes['style']="Jazz"
 	attributes['piece']="Med Swing"
 
 	attributes['completion']="0"

@@ -8,10 +8,10 @@
 	attributes['render']="Real"
 
 	attributes['title']="Misty"
+	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['composer']="Errol Garner"
 	attributes['poet']="Johnny Burke"
-	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['piece']="Slowly, with a smooth swing"
 	# this is from the real book

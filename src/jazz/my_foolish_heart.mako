@@ -7,11 +7,11 @@
 	attributes['render']="Fake"
 
 	attributes['title']="My Foolish Heart"
+	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['composer']="Victor Young"
 	# this is from the fake book
 	attributes['poet']="Ned Washington"
-	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['piece']="Slowly & Expressively"
 	# this is from the fake book

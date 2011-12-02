@@ -7,13 +7,13 @@
 	attributes['render']="Real"
 
 	attributes['title']="A Foggy Day"
+	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['subtitle']="From 'A Damsel In Distress'"
 	# this is from the fake book
 	attributes['composer']="George Gershwin"
 	# this is from the fake book
 	attributes['poet']="Ira Gershwin"
-	attributes['style']="Jazz"
 	# this is from the real book
 	attributes['piece']="Med. Swing"
 	# this is from the fake book

@@ -7,8 +7,8 @@
 	attributes['render']="Fake"
 
 	attributes['title']="Don't Explain"
-	attributes['composer']="Billie Holiday"
 	attributes['style']="Jazz"
+	attributes['composer']="Billie Holiday"
 	# this is from the fake book
 	attributes['piece']="Slowly"
 	attributes['poet']="Arthur Herzog, Jr."

@@ -7,11 +7,11 @@
 	attributes['render']="Real"
 
 	attributes['title']="Just Friends"
+	attributes['style']="Jazz"
 	# from the new real book
 	attributes['composer']="John Klenner"
 	# from the new real book
 	attributes['poet']="Sam M. Lewis"
-	attributes['style']="Jazz"
 	# from the new real book
 	attributes['piece']="Medium Swing"
 	# from the new real book

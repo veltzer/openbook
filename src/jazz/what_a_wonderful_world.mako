@@ -7,9 +7,9 @@
 	attributes['render']="Fake"
 
 	attributes['title']="What A Wonderful World"
+	attributes['style']="Jazz"
 	attributes['composer']="George David Weiss, Bob Thiele"
 	attributes['poet']="George David Weiss, Bob Thiele"
-	attributes['style']="Jazz"
 	attributes['piece']="Slowly"
 	attributes['copyright']="1967 by Range Road Music Inc. and Quartet Music Inc."
 	attributes['copyrightextra']="All rights administered by Hudson Bay Music, Inc."

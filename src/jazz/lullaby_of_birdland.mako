@@ -7,10 +7,10 @@
 	attributes['render']="Fake"
 
 	attributes['title']="Lullaby of birdland"
+	attributes['style']="Jazz"
 	attributes['composer']="George Shearing"
 	attributes['poet']="George David Weiss"
 	attributes['copyright']="1952, 1953, 1954 Adam R. Levy & Father Ent., Inc., New York NY. Copyrights Renewed."
-	attributes['style']="Jazz"
 	attributes['piece']="Relaxed Swing"
 
 	attributes['structure']="AABA"

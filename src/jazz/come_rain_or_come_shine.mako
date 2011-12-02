@@ -7,9 +7,9 @@
 	attributes['render']="Fake"
 
 	attributes['title']="Come Rain Or Come Shine"
+	attributes['style']="Jazz"
 	attributes['composer']="Harold Arlen"
 	attributes['poet']="Johnny Mercer"
-	attributes['style']="Jazz"
 	attributes['piece']="Moderately"
 	attributes['copyright']="1946, by A-M Music Corp. Copyright Renewed, all rights controlled by Chappell & Co., Inc."
 

@@ -7,8 +7,8 @@
 	attributes['render']="Fake"
 
 	attributes['title']="Darn That Dream"
-	attributes['composer']="Jimmy Van Heusen"
 	attributes['style']="Jazz"
+	attributes['composer']="Jimmy Van Heusen"
 	attributes['piece']="Slowly"
 	attributes['poet']="Eddie DeLange"
 	attributes['copyright']="1939 Bregman, Vocco and Conn, Inc. New York"

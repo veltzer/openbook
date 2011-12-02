@@ -7,9 +7,9 @@
 	attributes['render']="Real"
 
 	attributes['title']="All Of Me"
+	attributes['style']="Jazz"
 	attributes['composer']="Seymour Simons, Gerald Marks"
 	attributes['poet']="Seymour Simons, Gerald Marks"
-	attributes['style']="Jazz"
 	# this if from the real book
 	attributes['piece']="Mod. Swing"
 	# this is from the fake book

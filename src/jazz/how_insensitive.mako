@@ -8,6 +8,7 @@
 	attributes['render']="Fake"
 
 	attributes['title']="How Insensitive"
+	attributes['style']="Jazz"
 	# from the internet
 	attributes['subtitle']="Insensatez"
 	# this is from the real book
@@ -16,7 +17,6 @@
 	attributes['composer']="Antonio Carlos Jobim"
 	# this is from the fake book
 	attributes['poet']="Vincius De Moraes, Norman Gimbel"
-	attributes['style']="Jazz"
 	# this is from the real book
 	attributes['piece']="Bossa"
 	# this is from the fake book

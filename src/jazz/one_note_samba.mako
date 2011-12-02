@@ -7,12 +7,12 @@
 	attributes['render']="Real"
 
 	attributes['title']="One Note Samba"
+	attributes['style']="Jazz"
 	attributes['subtitle']="Samba de uma nota so"
 	attributes['composer']="Antonio Carlos Jobim"
 	attributes['poet']="Newton Mendonca"
 	attributes['copyright']="1961, 1962 by Antonio Carlos Jobim and Mrs. Mendonca, Brazil"
 	attributes['copyrightextra']="Sole Selling Agent Duchess Music Croporation (MCA), New York, NY for all English Speaking Countries"
-	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['piece']="Samba"
 

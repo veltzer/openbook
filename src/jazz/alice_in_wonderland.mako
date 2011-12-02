@@ -8,11 +8,11 @@
 	attributes['render']="Real"
 
 	attributes['title']="Alice In Wonderland"
+	attributes['style']="Jazz"
 	# this is from the internet
 	attributes['composer']="Sammy Fain"
 	# this is from the internet
 	attributes['poet']="Bob Hilliard"
-	attributes['style']="Jazz"
 	# this is from the real book
 	attributes['piece']="Med."
 	# this is still missing

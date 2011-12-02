@@ -7,12 +7,12 @@
 	attributes['render']="Fake"
 
 	attributes['title']="Desafinado"
+	attributes['style']="Jazz"
 	attributes['subtitle']="Slightly Out Of Tune"
 	attributes['composer']="Antonio Carlos Jobim"
 	# this is from the fake book
 	attributes['copyright']="1959 and 1962, Editora Musical Arapua, Sao Paulo, Brazil"
 	attributes['copyrightextra']="1959 1962, Editora Musical Arapua, Sao Paulo, Brazil"
-	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['piece']="Medium Bossa Nova"
 	# this is from the fake book

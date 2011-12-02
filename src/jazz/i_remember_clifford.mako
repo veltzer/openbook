@@ -6,8 +6,8 @@
 	attributes['render']="Unknown"
 
 	attributes['title']="I Remember Clifford"
-	attributes['composer']="Benny Golson"
 	attributes['style']="Jazz"
+	attributes['composer']="Benny Golson"
 	attributes['piece']="Med Swing"
 
 	attributes['completion']="0"

@@ -7,8 +7,8 @@
 	attributes['render']="Fake"
 
 	attributes['title']="All The Things You Are"
-	attributes['composer']="Jerome Kern"
 	attributes['style']="Jazz"
+	attributes['composer']="Jerome Kern"
 	attributes['piece']="Moderately"
 	attributes['poet']="Oscar Hammerstein II"
 	attributes['copyright']="1939 T.B. Harms Company. Copyright Renewed."

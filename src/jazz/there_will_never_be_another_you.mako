@@ -7,8 +7,8 @@
 	attributes['render']="Fake"
 
 	attributes['title']="There Will Never Be Another You"
-	attributes['composer']="Harry Warren"
 	attributes['style']="Jazz"
+	attributes['composer']="Harry Warren"
 	attributes['piece']="Easy Swing"
 	attributes['poet']="Mack Gordon"
 	attributes['copyright']="1942, 1987 Twentieth Century Music Corporation"

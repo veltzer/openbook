@@ -6,10 +6,10 @@
 	attributes['render']="Real"
 
 	attributes['title']="My Favorite Things"
+	attributes['style']="Jazz"
 	attributes['subtitle']="From 'The Sound Of Music'"
 	attributes['composer']="Richard Rodgers"
 	attributes['poet']="Oscar Hammerstein II"
-	attributes['style']="Jazz"
 	attributes['piece']="Med Swing"
 	attributes['copyright']="1959 by Richard Rodgers and Oscar Hammerstein II. Copyright Renewed."
 	attributes['copyrightextra']="Williamson Music Co., owner of publication and allied right throughout the Westen Hemisphere and Japan. All Rights Administered by Chappell & Co., Inc."

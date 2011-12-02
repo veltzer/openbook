@@ -6,8 +6,8 @@
 	attributes['render']="Real"
 
 	attributes['title']="Gloria's Step"
-	attributes['composer']="Scott LaFaro"
 	attributes['style']="Jazz"
+	attributes['composer']="Scott LaFaro"
 	attributes['piece']="Swing"
 	attributes['copyright']="1962, Orpheum Music."
 

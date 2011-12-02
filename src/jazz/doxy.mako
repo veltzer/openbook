@@ -6,10 +6,10 @@
 	attributes['render']="Fake"
 
 	attributes['title']="Doxy"
+	attributes['style']="Jazz"
 	attributes['composer']="Sonny Rollins"
 	# this is from the fake book
 	attributes['copyright']="1963 Prestige Music Co, Inc."
-	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['piece']="Medium Groove"
 

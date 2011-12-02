@@ -9,9 +9,9 @@
 	attributes['render']="Real"
 
 	attributes['title']="Blue Bossa"
+	attributes['style']="Jazz"
 	attributes['composer']="Kenny Dorham"
 	attributes['poet']="Joan Cartwright"
-	attributes['style']="Jazz"
 	attributes['piece']="Bossa Nova"
 	attributes['structure']="A"
 

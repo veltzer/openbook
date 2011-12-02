@@ -7,13 +7,13 @@
 	attributes['render']="Fake"
 
 	attributes['title']="Fly Me To The Moon"
+	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['subtitle']="In Other Words"
 	# this is from the fake book
 	attributes['composer']="Bart Howard"
 	# this is from the fake book
 	attributes['poet']="Bart Howard"
-	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['piece']="Moderately, with a beat"
 	# this is from the fake book

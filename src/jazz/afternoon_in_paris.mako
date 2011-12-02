@@ -6,8 +6,8 @@
 	attributes['render']="Real"
 
 	attributes['title']="Afternoon in Paris"
-	attributes['composer']="John Lewis"
 	attributes['style']="Jazz"
+	attributes['composer']="John Lewis"
 	attributes['piece']="Moderate Swing"
 	# this is from the fake book
 	attributes['copyright']="1955 and Renewal of Copyright 1983 by MJQ Music, Inc."

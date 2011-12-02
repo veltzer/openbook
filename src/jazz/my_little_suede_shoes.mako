@@ -6,8 +6,8 @@
 	attributes['render']="Unknown"
 
 	attributes['title']="My Little Suede Shoes"
-	attributes['composer']="Charlie Parker"
 	attributes['style']="Jazz"
+	attributes['composer']="Charlie Parker"
 	attributes['piece']="Med Swing"
 
 	attributes['completion']="0"

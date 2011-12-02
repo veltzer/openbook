@@ -8,8 +8,8 @@
 	attributes['render']="Real"
 
 	attributes['title']="Giant Steps"
-	attributes['composer']="John Coltrane"
 	attributes['style']="Jazz"
+	attributes['composer']="John Coltrane"
 	# this is from the real book
 	attributes['piece']="Fast"
 	# this is from the hal leonard book

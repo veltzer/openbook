@@ -7,9 +7,9 @@
 	attributes['render']="My"
 
 	attributes['title']="I'll Close My Eyes"
+	attributes['style']="Jazz"
 	attributes['composer']="Billy Reid"
 	attributes['poet']="Buddy Kaye"
-	attributes['style']="Jazz"
 	attributes['piece']="Medium Swing"
 	attributes['structure']="AB"
 

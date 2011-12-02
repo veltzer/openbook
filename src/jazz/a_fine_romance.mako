@@ -8,8 +8,8 @@
 	attributes['render']="Real"
 
 	attributes['title']="A Fine Romance"
-	attributes['composer']="Jerome Kern"
 	attributes['style']="Jazz"
+	attributes['composer']="Jerome Kern"
 	# this is from the fake book
 	attributes['piece']="Moderately"
 	attributes['poet']="Dorothy Fields"
