@@ -5,6 +5,7 @@
 # it then tags the current tree with one + the old tag.
 # it then clean and then rebuilds everything and puts the results in the output.
 
+# this is for running the various commands that we need
 import subprocess
 
 ##############
