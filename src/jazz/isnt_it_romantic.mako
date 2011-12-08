@@ -44,7 +44,7 @@
 	- check in the real book chords.
 	- check in the real book notes.
 	- check in the real book lyrics.
-	- play the real book version and make sure it sounds right. 
+	- play the real book version and make sure it sounds right.
 	- add youtube performances.
 	- add a lyrics url.
 	- add the Hal Leonard version of this tune (epdf is already here).
