@@ -68,8 +68,17 @@ overall song structure:
 
 Chords:
 =======
-- don't put bar lines in chords. They are not taken into consideration anyway and they
-	just make the code longer.
+- Put bar lines in chords.
+	I tried not to put bar lines in chords and they make the code harder to maintain
+		and for me maintainance is a very serious objective.
+		I consider the bar lines as sort of documentation when writing chords.
+	disadvantages:
+		They are not taken into consideration
+		They make the code longer
+		In Jazz tunes the lines (usually 4 chords) are very well defined
+			and the chord layout will be visible from the lines.
+	advantages:
+		It makes the chords harder to read.
 - if a partial bar starts the tune the chords in it should
 	be marked as 's' and not 'r'. 'r' will cause N.C. to
 	be printed while 's' causes nothing to be printed.
