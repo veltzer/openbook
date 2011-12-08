@@ -48,31 +48,34 @@ meta data:
 - if a song has more than one poet or composer they will be written without "&" but
 rather as a list of names catenated by ",":
 	attributes['composer']="Cootie Williams, Thelonious Monk"
-	rationale: this will enable further processing by python code.
+rationale: this will enable further processing by python code by splitting the list and understanding who
+	the different composers/poets are.
 
-writing songs:
-==============
-- breaks.
-	Let lilypond dictate the break. Only change when lilypond makes bad descisions.
-	use the \myBreak macro at every line end. This may turn to a break or it may not.
-- bars
-	- Don't do any extra special bars (\bar "||" or the like). It just overloads the music.
-	Mark stuff with \mark "A", \mark "B" etc for parts but that's it.
-	- At the end of the piece put an ending mark (\bar "|."). My convention is to have this mark at the end of the chords and not the tune. It seems that lilypond does
-	not do that by default. (Why? Is that a bug that I should report ?!?).
+overall song structure:
+=======================
 - order between parts:
 	first chords.
 	then voice.
 	at the end text.
+- breaks.
+	Use the \myBreak macro at every line end in the chords in the tune do nothing.
+	This may turn to a break or it may not.
+	This lets lilypond dictate the breaks. Only change when lilypond makes bad descisions.
+- bars
+	Don't do any extra special bars (\bar "||" or the like). It just overloads the music.
+	Mark stuff with \mark "A", \mark "B" etc for parts but that's it.
+	At the end of the piece put an ending mark (\bar "|."). My convention is to have this mark at the end of the chords and not the tune. It seems that lilypond does not do that by default. (Why? Is that a bug that I should report ?!?).
 
 Chords:
 =======
+- don't put bar lines in chords. They are not taken into consideration anyway and they
+	just make the code longer.
 - if a partial bar starts the tune the chords in it should
 	be marked as 's' and not 'r'. 'r' will cause N.C. to
 	be printed while 's' causes nothing to be printed.
 	Use 'r' only when there is really no chord (rare).
 - start chords with \startChords and end them with \endChords
-- don't end with a turn around.
+- in tunes which are not copies of existing one don't end with a turn around.
 	REASONS FOR:
 		- sounds bad (in midi for instance).
 		- musicians know how to do turn arounds.
@@ -84,12 +87,13 @@ Chords:
 		- sometime the turn around is not trivial.
 		- sometime the turn around is not anywhere in the song.
 		- sometime both the previous two reasons persist.
-- marking of parts ("A", "B") should be with the chords.
+- marking of parts ("A", "B") should be done within the chord section.
 	rationale: less clutter and the chords define the structure more than the melody.
-- marking the start of parts, end of parts, start of song, end of song should be with the chords.
+- marking the start of parts, end of parts, start of song, end of song should be done in the chord section.
 - use "d:m7" and not "d:min7" (shorter).
+	This is enforced by the style checker.
 - do NOT use repears ( | r1 | ) in chords. If you don't want the chords to repeat there
-is a better way to do it.
+	is a better way to do it: write a1*2:7 to have the A7 chord last two bars.
 - use "a:dim7" and not "a:dim" to denote a 4 note diminished chord.
 	Reasons for:
 		It shows dim7 in the sheet which is what books usually do.
