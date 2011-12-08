@@ -37,17 +37,20 @@
 	- filled in the meta data from the Hal Leonard book.
 	- filled in the meta data from the real book.
 	- fill in the tunes structure.
-	TODO:
 	- put in the real book chords.
-	- put in the real book notes.
 	- put in the real book lyrics.
+	- put in the real book notes.
 	- check in the real book chords.
 	- check in the real book notes.
 	- check in the real book lyrics.
 	- play the real book version and make sure it sounds right.
+	TODO:
+	- put the last notes in the real book tune in parenthesis and put the "fine" as in the real book.
 	- add youtube performances.
 	- add a lyrics url.
 	- add the Hal Leonard version of this tune (epdf is already here).
+	- how do I put the last bes:7 chord in the real book version in parenthesis?
+	- how do I put the first bes:7 chord in the real book version in parenthesis?
 	REMARK:
 	- this tunes structure could also be interpreted as "AB" where A is AB and B is AC in the ABAC interpretation.
 % endif
@@ -74,6 +77,8 @@
 		{
 			\mark "C"
 			\startPart
+			f2:m f:m/ees | d:m7.5- g:7 | c:m c:m/bes | c:m/a aes:6 | \myEndLine
+			g:m7 ges:7 | f:m7 bes:7 | ees aes:6 | ees bes:7 | \myEndLine
 			\endPart
 		}
 	}
@@ -83,35 +88,48 @@
 % endif
 
 % if part=='VoiceReal':
-\relative c'' {
+\relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Allegro" 4 = 168
+	\tempo "Andante" 4 = 108
 	\time 4/4
-	\key g \major
+	\key ees \major
 
 	%% partial
-	\partial 4 b4 |
+	\partial 2 d8 ees c d |
 
-	%% part "A"
-
-	%% part "B"
+	\repeat volta 2 {
+		%% part "A"
+		ees4 ees2. | d8 ees c d ees4 f | g4. g8 bes4. bes8 | g2 d8 ees c d |
+		ees4 ees2. | d8 ees c d ees4 f | g4. g8 bes4. bes8 | des1 |
+	} \alternative {
+		{
+			%% part "B"
+			c | d8 c bes aes g4 f | ees4. ees8 g4. g8 | ees1 |
+			c' | d8 c bes aes g4 f | ees4. ees8 c'4. c8 | des,2 d8 ees c d |
+		}
+		{
+			%% part "C"
+			c'1 | d8 c bes aes g4 f | ees4. ees8 g4. g8 | c4. c8 ees4. ees8 |
+			f4 ees bes2~ | bes d8 ees c d | ees1~ | ees2 d,8 ees c d |
+		}
+	}
 }
 % endif
 
 % if part=='LyricsReal':
-%% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
+%% this version of the lyrics is from the Hal Leonard book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 	%% part "A"
 	Is -- n't It Ro -- man -- tic? Mu -- sic in the night, a dream that can be heard.
 	Is -- n't It Ro -- man -- tic? Mov -- ing shad -- ows write the old -- est mag -- ic word.
 	%% Part "B"
 	I hear the breez -- es play -- ing in the trees a -- bove.
-	Whilte all the world is say -- ing you were meant for love.
+	While all the world is say -- ing you were meant for love.
 	%% Forward
 	Is -- n't It Ro --
 	%% part "C"
 	Sweet sym -- bols in the moon -- light
-	Do you mean that I will fall in love per -- chance? __ Isn't it ro -- mance? __
+	Do you mean that I will fall in love per -- chance? __ Is -- n't it ro -- mance? __
 
 }
 % endif
