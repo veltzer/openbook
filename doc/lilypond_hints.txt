@@ -54,6 +54,7 @@ questions:
 	- ( bes:7 ) does not work either.
   I have couple of tunes that need this.
 - how do I do 4-3, 9-8 or other similar chords ?
+- how do I do altered chords ?
 	
 Tempo:
 ======

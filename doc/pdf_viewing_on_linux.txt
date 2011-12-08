@@ -1,0 +1,2 @@
+gnome-open which uses document viewer/evince is ok but sometimes fails on some pdfs.
+xpdf can also help and I've seen it succeed in some of the cases when gnome-open failed.
