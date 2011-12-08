@@ -47,6 +47,11 @@ c:9 which is c:7.9 which is correct for jazz but not for rock.
 	- first, is there a way to make a7/9 appear on the page?
 	- what is the right way to mark a 9 chord?
 	So basically marking out a:7.9 or a:9 is the same on the page...
+- altered chords:
+	mark them out as: "7.3-.5-.9-.11-.13-". I know its weird.
+		The 3- is for the 9+ and the 11- is for the real third. Ugly.
+	But don't worry I have my own chord exception that will print this out nicely as "7alt".
+	See discussion at: http://www.mail-archive.com/lilypond-user@gnu.org/msg48542.html
 
 questions:
 - how do I put chords in parenthesis? I still do not know.
@@ -54,7 +59,6 @@ questions:
 	- ( bes:7 ) does not work either.
   I have couple of tunes that need this.
 - how do I do 4-3, 9-8 or other similar chords ?
-- how do I do altered chords ?
 	
 Tempo:
 ======

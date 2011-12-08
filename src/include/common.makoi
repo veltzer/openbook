@@ -94,6 +94,15 @@
 %%#(set-default-paper-size "a4")
 %%)
 
+%% chord related matters
+myChordDefinitions={
+	<c ees ges bes des' fes' aes'>-\markup \super {7alt}
+}
+myChordExceptions=#(append
+	(sequential-music-to-chord-exceptions myChordDefinitions #t)
+	ignatzekExceptions
+)
+
 %% some macros to be reused all over
 %% =====================================================================
 myBreak=\break
@@ -123,8 +132,12 @@ startPart={}
 endPart=\bar "||"
 startIntro=\mark "Intro"
 endIntro={}
-%% this causes chords that do not change to disappear...
-startChords=\set chordChanges = ##t
+startChords={
+	%% this causes chords that do not change to disappear...
+	\set chordChanges = ##t
+	%% use my own chord exceptions
+	\set chordNameExceptions = #myChordExceptions
+}
 endChords={}
 </%def>
 
