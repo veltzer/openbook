@@ -3,7 +3,12 @@
 # this is a release script.
 # it runs git status -s in order to see that everything is commited.
 # it then tags the current tree with one + the old tag.
-# it then clean and then rebuilds everything and puts the results in the output.
+# it then cleans and then rebuilds everything and puts the results in the output.
+
+# TODO:
+# - add integration with twitter and facebook to announce new versions.
+# - dont hardcode the name of the project.
+# - try to use a better git interface (there are native python git interfaces).
 
 # this is for running the various commands that we need
 import subprocess
