@@ -46,9 +46,6 @@
 	- checked the lyrics.
 	TODO:
 	- how do I put the last d7 chord in the real book version in parenthesis?
-	- in the g7 of the second volta the f on the second bar should be emphasized to be natural
-		(not flat nor sharp) because it is confusing. It is so in the real book. How do I
-		do that?
 	- add the version from the new real book.
 % endif
 
@@ -100,7 +97,7 @@
 	}
 	\alternative {
 		{ g8 fis4 fis8~ fis2~ | fis r }
-		{ g8 fis4 a8~ a2 | g8 f4 a8~ a g4 e8~ | }
+		{ g8 fis4 a8~ a2 | g8 f!4 a8~ a g4 e8~ | }
 	}
 	%% part "B"
 	e1 | g2~ g8 f4 d8~ | d1~ | d2 \times 2/3 { r4 d e } |
