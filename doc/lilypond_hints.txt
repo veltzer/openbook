@@ -15,6 +15,10 @@ Melody:
 	to the player) use the "!" sign on the note on which to put it.
 	example: d!4
 - rests: "r2." looks diffrent on the page than "r2 r4". do with this information what you will.
+- beams: sometimes lilypond beams are not that smart. For instance in Jazz certain passages are fast
+	and should be connected by one beam but since the melody rises and falls lilypond decides
+	to connect it with one beam. In order to get around it use manual beams this way:
+	b8.[ b16 a8. g16] a8
 
 Chords:
 =======
@@ -39,10 +43,12 @@ want nothing to be printed.
 c:9 which is c:7.9 which is correct for jazz but not for rock.
 - a single chord on more than one bar:
 	ees1*2:maj7
-	Note that the chord which is doubled MUST have length. This seems a like a bug in lilypond.
-	is it?
+	Note that the chord which is doubled MUST have length (you cant just write ees*2 and assume
+	that the base of multiplication will be taken from the previous chord).
+	This seems a like a bug in lilypond, is it?
 	* the chord after this chord, if not annotated for length, will be considered multiplied
 	as well. take heed.
+	If you want weird durations, say the same chord over 11 beats then write: g4*11:7.9-.
 - how do I mark out a 9 chord? if I do a:7.9 it shows up as a9 on the music page and not as a7/9.
 	- first, is there a way to make a7/9 appear on the page?
 	- what is the right way to mark a 9 chord?
