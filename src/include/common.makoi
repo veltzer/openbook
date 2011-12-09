@@ -97,6 +97,7 @@
 %% chord related matters
 myChordDefinitions={
 	<c ees ges bes des' fes' aes'>-\markup \super {7alt}
+	<c e g bes f'>-\markup \super {7sus}
 }
 myChordExceptions=#(append
 	(sequential-music-to-chord-exceptions myChordDefinitions #t)

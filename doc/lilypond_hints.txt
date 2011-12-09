@@ -3,6 +3,7 @@ Melody:
 - in order to parenthesize notes: <\parenthesize e'>4
 	This is just for a single note? how do I put parens on more than one note?
 	It does not work to put two notes inside the <\parenthesize> block.
+- in order to emphasize notes or other articulation: e->, e-. e-^ etc...
 - in order to add piano fingerings use: e-4
 - in order to play two or three notes together use: <c e g>8
 - in order to do ties use: g~ | g
@@ -58,6 +59,11 @@ c:9 which is c:7.9 which is correct for jazz but not for rock.
 		The 3- is for the 9+ and the 11- is for the real third. Ugly.
 	But don't worry I have my own chord exception that will print this out nicely as "7alt".
 	See discussion at: http://www.mail-archive.com/lilypond-user@gnu.org/msg48542.html
+- sus chords:
+	mark them out as "7.11".
+	My own exception will handle this and will print it out as "7sus".
+	This seems to be the correct definition of a sus chord (4'th note suspended) in Jazz according
+	to wikipedia and my own experience. 2 sus is rarely used in jazz and usually marked as sus2 or sus9.
 
 questions:
 - how do I put chords in parenthesis? I still do not know.
