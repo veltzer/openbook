@@ -246,3 +246,5 @@ openbook website:
 - add paypal donation to the project.
 - add the ability to ask me for specific standards.
 - add a form whereby people can register who they are if they are using the book.
+- when I link to the website from facebook the website icon does not show.
+	Is it about <meta> tags in the html? Find out how to do it right...

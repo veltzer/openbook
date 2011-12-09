@@ -5,21 +5,28 @@
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
 	attributes['doLyricsmore']=True
-	attributes['render']="Ultimate"
+	attributes['render']="Fake"
 
 	attributes['title']="They All Laughed"
 	attributes['style']="Jazz"
+	# from the fake book
 	attributes['composer']="George Gershwin"
-	attributes['piece']="Medium Swing"
+	# from the fake book
 	attributes['poet']="Ira Gershwin"
+	# from the fake book
+	attributes['piece']="Medium Swing"
+	# from the fake book
 	attributes['copyright']="1937, Gershwin Publishing Corporation"
+	# from the fake book
 	attributes['copyrightextra']="Copyright Renewed, Assigned to Chappell & Co, Inc."
 	attributes['structure']="AA'BA''"
 
 	attributes['completion']="5"
 	attributes['uuid']="89e1c354-f2a2-11e0-9cf1-0019d11e5a41"
 
-	attributes['idyoutube']="9InLhEc6K2g"
+	attributes['idyoutuberemark']="Ella & Louis"
+	attributes['idyoutube']="ppFVmnmpGz8"
+	attributes['idyoutuberemark']="Carlie Biddle with daughter Stephanie Biddle - excellent performance"
 	attributes['idyoutube']="TdLm9qRRdh4"
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/They-All-Laughed-lyrics-Ella-Fitzgerald/2123DA2C32C02AF848256AAB000AB847"
 %>
@@ -27,12 +34,25 @@
 
 % if part=='Doc':
 	DONE:
+	- added a lyrics url.
+	- added the fake book epdf.
+	- wrote down the fake book chords.
+	- wrote down the fake book tune.
+	- wrote down the fake book lyrics.
+	- filled in the meta data from the fake book.
+	- check the fake book chords.
+	- check the fake book tune.
+	- check the fake book lyrics.
+	- played the midi to hear that it sounds right.
+	- added youtube performances.
 	TODO:
-	- mark what has been done with this tune.
-	- document the youtube performances.
+	- get another version in here (from where?)
+	REMARK:
+	- this tune is very close to AABA. The tags (A') are there to show that there are subtle changes but these are
+	indeed subtle.
 % endif
 
-% if part=='ChordsUltimate':
+% if part=='ChordsFake':
 \chordmode {
 	\startChords
 	\startSong
@@ -47,12 +67,12 @@
 
 	\mark "A'"
 	g2 e:m | a:m7 d:7 | cis:7.9- fis:7.9- | b:m7 e:7 | \myEndLine
-	d1:6 | a:7 | d:7 | d:7 | \myEndLine
+	d1:6 | a:7 | d1*2:7 | \myEndLine
 
 	\mark "B"
 	\startPart
-	g:7 | g:7 | g2.:7 b4:7 | e1:7.5+ | \myEndLine
-	a1:7 | a:7 | a:m7 | ees2:7 d2:7 | \myEndLine
+	g4*11:7 b4:7 | e1:7.5+ | \myEndLine
+	a1*2:7 | a1:m7 | ees2:7 d2:7 | \myEndLine
 	\endPart
 
 	\mark "A''"
@@ -65,7 +85,7 @@
 			g e:7.9+ | a:7.9- d:7.9- | \myEndLine
 		}
 		{
-			ees1 | bes2/d d:7/c | g/b e:7 | a:m7 d:7 | g1 | g | \myEndLine
+			ees1 | bes2/d d:7/c | g/b e:7 | a:m7 d:7 | g1*2 | \myEndLine
 		}
 	}
 	\endPart
@@ -75,31 +95,25 @@
 }
 % endif
 
-% if part=='VoiceUltimate':
+% if part=='VoiceFake':
 \relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
 	\key g \major
-
 	\repeat volta 2 {
-
-	%% Bar 1
-	r8 d e4 g a | b8 b a g a b4. | b8 b a g a b4 d,8~ | d1 |
-	r8 d e4 g a | b8 b a g a b4 g8~ | g1~ | g2. r4 |
-
-	%% Bar 9
-	r8 d e4 g a | b8 b a g a b4. | d8 d cis b cis d4 fis,8~ | fis1 |
-	b4 a8 gis a b4. | b8 c a gis a b4. | a4 b c b | a d d d |
-
-	%% Bar 17
-	d2~ d8 b4 g8 | a2~ a8 b c cis | d4 e d b | c2. b4 |
-	e2~ e8 cis4 a8 | b2~ b8 a4 b8 | c4 e e, g | a1 |
-
-	%% Bar 25
-	r8 d, e4 g a | b8 b a g a b4. | c8 b4 a8 b4 c | b2. a4 |
-	d4 d d2 | e8 e4 e8 b4 b |
-
+		%% part "A"
+		r8 d e4 g a | b8.[ b16 a8. g16] a8 b4. | b8.[ b16 a8. g16] a8 b4 d,8~ | d1 |
+		r8 d e4 g a | b8.[ b16 a8. g16] a8 b4 g8~ | g1~ | g2. r4 |
+		%% part "A"
+		r8 d e4 g a | b8.[ b16 a8. g16] a8 b4. | d8.[ d16 cis8. b16] cis8 d4 fis,8~ | fis1 |
+		b4 a8. gis16 a8 b4. | b8.[ c16 a8. gis16] a8 b4. | a4 b c b | a d d d |
+		%% part "B"
+		d2~ d8 b4 g8 | a2~ a8.[ b16 c8. cis16] | d4 e d b | c2. b4 |
+		e2~ e8 cis4 a8 | b2~ b8 a4 b8 | c4 e e, g | a1 |
+		%% part "A"
+		r8 d, e4 g a | b8.[ b16 a8. g16] a8 b4. | c8 b4 a8 b4 c | b2. a4 |
+		d4 d d2 | e8 e4 e8 b4 b |
 	} \alternative {
 		{
 			g1~ | g2 r |
@@ -108,57 +122,58 @@
 			g4 g g2 | bes8 bes4 bes8 fis4 fis | d'4 d d2 | e8 e4 e8 b4 b | g1~ | g4 r4 r2 |
 		}
 	}
-
 }
 % endif
 
-% if part=='LyricsUltimate':
+% if part=='LyricsFake':
 \lyricmode {
+	%% part "A"
 	They All Laughed at Chris -- to -- pher Co -- lum -- bus
-	When he said the world was round. __
+	when he said the world was round. __
 	They All Laughed when Ed -- i -- son re -- cord -- ed sound. __
-
-	They All Laughed at Wil -- bur and his bro -- ther,
-	When they said that man could fly. __
-	They told Mar -- co -- ni wire -- less was a pho -- ny;
-	It's the same old cry.
-
+	%% part "A"
+	They All Laughed at Wil -- bur and his broth -- er,
+	when they said that man could fly. __
+	They told Mar -- co -- ni wire -- less was a pho -- ney;
+	it's the same old cry.
+	%% part "B"
 	They laughed at me __ want -- ing you, __
-	Said I was reach -- ing for the moon.
+	said I was reach -- ing for the moon.
 	But oh, __ you came through __
-	Now they'll have to change their tune.
-
+	now they'll have to change their tune.
+	%% part "A"
 	They all said we nev -- er could be hap -- py,
-	They laughed at us and how!
-	But "\"ho," ho, "ho!\""
+	they laughed at us and how!
+	But ho, ho, ho!
 	Who's got the last laugh now? __
-
-	"\"Hee," hee, "hee!\""
+	%% Second volta
+	He, he, he!
 	Let's at the past laugh,
-	"\"Ha," ha, "ha!\""
+	Ha, ha, ha!
 	Who's got the last laugh now? __
 }
 % endif
 
-% if part=='LyricsmoreUltimate':
+% if part=='LyricsmoreFake':
 \lyricmode {
+	%% part "A"
 	They All Laughed at Rock -- e -- fel -- ler Cen -- ter,
-	Now they're fight -- ing to get in. __
-	They all laughed at Whit -- ney and his cot -- ton gin. __
-
-	They all laughed at Ful -- ton and his steam -- boat,
+	now they're fight -- ing to get in. __
+	They All Laughed at Whit -- ney and his cot -- ton gin. __
+	%% part "A"
+	They All Laughed at Ful -- ton and his steam -- boat,
 	Her -- shey and his choc' -- late bar. __
-	Ford and his Liz -- zie Kept the laugh -- ers bus -- y;
-	That's how peo -- ple are.
-
+	Ford and his Liz -- zie kept the laugh -- ers bus -- y;
+	that's how peo -- ple are.
+	%% part "B"
 	They laughed at me __ want -- ing you, __
-	Said it would be "\"Hel" -- lo, Good -- "bye.\""
-	And oh, __ you came through __
-	Now they're eat -- ing hum -- ble pie.
-
+	said it would be hel -- lo, good -- bye.
+	But oh, __ you came through __
+	now they're eat -- ing hum -- ble pie.
+	%% part "A"
 	They all said we'd nev -- er get to -- geth -- er;
-	Dar -- ling, let's take a bow.
-	For "\"ho," ho, "ho!\""
+	dar -- ling, let's take a bow.
+	For ho, ho, ho!
 	Who's got the last laugh
 }
 % endif
