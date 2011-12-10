@@ -23,10 +23,13 @@
 	attributes['completion']="5"
 	attributes['uuid']="dedcc73c-1ead-11e1-8007-0019d11e5a41"
 
-	attributes['idyoutubedesc']=""
-	attributes['idyoutube']=""
-
 	attributes['structure']="ABAC"
+
+	attributes['idyoutubedesc']="Cool Jazz by Chet Baker..."
+	attributes['idyoutube']="c8C6i3kpsQU"
+	attributes['idyoutubedesc']="Swinging Bill Evans..."
+	attributes['idyoutube']="10ZYoSryrcI"
+	attributes['lyricsurl']="http://www.stlyrics.com/lyrics/onefineday/isntitromantic.htm"
 %>
 % endif
 
@@ -36,21 +39,20 @@
 	- added the Hal Leonard epdf.
 	- filled in the meta data from the Hal Leonard book.
 	- filled in the meta data from the real book.
-	- fill in the tunes structure.
+	- filled in the tunes structure.
 	- put in the real book chords.
 	- put in the real book lyrics.
 	- put in the real book notes.
 	- check in the real book chords.
 	- check in the real book notes.
 	- check in the real book lyrics.
-	- play the real book version and make sure it sounds right.
+	- heard the real book version and make sure it sounds right.
+	- added youtube performances.
+	- added a lyrics url.
 	TODO:
-	- put the last notes in the real book tune in parenthesis and put the "fine" as in the real book.
-	- add youtube performances.
-	- add a lyrics url.
-	- add the Hal Leonard version of this tune (epdf is already here).
 	- how do I put the last bes:7 chord in the real book version in parenthesis?
 	- how do I put the first bes:7 chord in the real book version in parenthesis?
+	- add the Hal Leonard version of this tune (epdf is already here).
 	REMARK:
 	- this tunes structure could also be interpreted as "AB" where A is AB and B is AC in the ABAC interpretation.
 % endif
@@ -110,7 +112,7 @@
 		{
 			%% part "C"
 			c'1 | d8 c bes aes g4 f | ees4. ees8 g4. g8 | c4. c8 ees4. ees8 |
-			f4 ees bes2~ | bes d8 ees c d | ees1~ | ees2 d,8 ees c d |
+			f4 ees bes2~ | bes d8 ees c d | ees1~ | ees2 \mark \markup { \italic { Fine } } <\parenthesize d,>8 <\parenthesize ees> <\parenthesize c> <\parenthesize d> |
 		}
 	}
 }
