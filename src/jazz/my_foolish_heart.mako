@@ -110,7 +110,7 @@
 
 	} \alternative {
 		{ bes2 g:m7 | c:m7 f:7 | }
-		{ bes1*2 | } \myEndLine \endPart
+		{ bes1*2 | \myEndLine \endPart }
 	}
 
 	\endSong

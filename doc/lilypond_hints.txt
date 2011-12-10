@@ -156,6 +156,9 @@ Lyrics
 	The other way will NOT work:
 	af _ _  -- ter
 	Is this a bug in lilypond ?!?
+- broken up word at the end of the tune. Look at "Flamingo" for this. It has the prefix of the last word
+	at the end of the tune and it is supposed to join the suffix of that same word at the begining.
+	We could end the tune with "Fla --" with no other part but lilypond gives errors for this.
 
 Midi production
 ===============

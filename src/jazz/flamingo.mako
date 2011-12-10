@@ -127,7 +127,7 @@
 	fly -- ing o -- ver the is -- land
 	to my lov -- er near by. __
 	%% Volta
-	Fla --
+	Fla
 }
 % endif
 
