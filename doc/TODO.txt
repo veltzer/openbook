@@ -241,6 +241,10 @@ checking of tunes:
 
 openbook website:
 =================
+- consider using pdf.js from mozilla in order to show pdf in my site.
+- consider doing a site along the lines of wikifonia.
+- in the wikifonia site they are showing pdfs somehow. Find the component that they are using and use it myself.
+	Check that it works on all browsers.
 - add all the stuff that I have in my blog to the website.
 - make it more beautiful.
 - add paypal donation to the project.

@@ -54,8 +54,9 @@ I just started this project. Feel free to add stuff and request a pull. If you c
 * How do you write the standards ?
 Using lilypond. Check it out at: http://www.lilypond.org/
 
-* Will you co-operate with the lilypond and the mutopia communities ?
+* Will you co-operate with the lilypond, mutopia and wikifonia communities ?
 YES! Any bugs or feature suggestion are submitted to the lilypond community. Any requests for pieces from the mutopia community will be respected.
+Wikifonia uses musicXML fpr typesetting while I use an essentially lilypond format as input format - so there could not be much co-operation there.
 
 * Do you only allow Jazz tunes ?
 No. Rock and Pop will be welcome and so would classical. If you are really into classical lilypond production you may alternativly wish to contribute to the mutopia project at http://www.mutopiaproject.org/.
