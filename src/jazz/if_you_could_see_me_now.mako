@@ -55,27 +55,25 @@
 	\startPart
 	\repeat volta 2 {
 		ees1:maj7 | aes:7 | ees:maj7 | aes:7 | \myEndLine
-		aes:7 | g2:m7 ges4:m7 b:7 | f2:m7 bes:7 | \myEndLine
+		g2:m7 fis4:m7 b:7 | f2:m7 bes:7 |
 	} \alternative {
 		{
 			g:m7 c:7 | f:m7 bes:7 |
 		}
 		{
-			a:m7.5- | aes:maj7 |
+			a:m7.5- aes:m7 | g:m7 c4:m7 bes:m7 | \myEndLine
 		}
 	}
 	\endPart
-
-	\mark "A"
-	\startPart
-	\endPart
-
 	\mark "B"
 	\startPart
+	a2:m7 d:7 | b:m7 e:7 | a:m7 d:7 | b:m7 e:7 | \myEndLine
+	a:m7 c4:m7 f:7 | bes2:maj7 g:m7 | c:m7 f:7 | f:m7 bes:7 | \myEndLine
 	\endPart
-
 	\mark "A"
 	\startPart
+	ees1:maj7 | aes:7 | ees:maj7 | aes:7 | \myEndLine
+	g2:m7 fis4:m7 b:7 | f2:m7 bes:7 | ees ges:maj7 | b:maj7 e:maj7 | \myEndLine
 	\endPart
 
 	\endSong
@@ -90,14 +88,24 @@
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Adagio" 4 = 76
 
-	%% A part
-	d8 ees g bes d c bes g |
-
-	%% A part
-
+	\repeat volta 2 {
+		%% A part
+		d8 ees g bes d c bes g | bes a aes bes f2 | d8 ees g bes d c bes g | bes a aes bes f4. g8 |
+		bes4 g8 bes b e, ees4 | c' aes8 f d'4. bes8 |
+	} \alternative {
+		{
+			g1~ | g2. r4 |
+		}
+		{
+			ees'1~ | ees |
+		}
+	}
 	%% B part
-
+	d4 d8 d d4 ees8 bes | \times 2/3 { b4 b b } b c8 d | a4 a8 a a4 b8 c | d2. e,4 |
+	b'8 a g a bes c d ees | f2 r8 d c bes | ees2 r8 c bes a | bes1 |
 	%% A part
+	d,8 ees g bes d c bes g | bes a aes bes f2 | d8 ees g bes d c bes g | bes a aes bes f4. g8 |
+	bes4 g8 bes b e, ees4 | c' aes8 f d'4. bes8 | ees1~ | ees2. r4 |
 }
 % endif
 
