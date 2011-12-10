@@ -31,6 +31,7 @@
 % if part=='Doc':
 	DONE:
 	- brought in the real book epdf.
+	- brought in the wikifonia epdf.
 	- added lyrics url.
 	TODO:
 	- write the real book chords.
@@ -41,7 +42,7 @@
 	- check the real book lyrics.
 	- hear the real book tune to make sure the tempo and tune is right.
 	- put in you tube performances.
-	- add another version of this tune? (from where?!?)
+	- do the wikifonia version.
 	- bring in copyright info from somewhere...
 % endif
 
