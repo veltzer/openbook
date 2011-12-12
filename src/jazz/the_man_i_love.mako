@@ -42,6 +42,10 @@
 	- heard the real book version to make sure that the tempo and tune is right.
 	- added a lyrics url.
 	- added you tube performances.
+	- added the galit version of the chords. (copied from the real book version).
+	- added the galit version of the tune. (copied from the real book version).
+	- added the galit version of the lyrics.
+	- checked all the parts of the galit version.
 	TODO:
 	- add copyright to this tune.
 	- bring in another version of this (from where?)
@@ -135,8 +139,106 @@
 	%% part "A"
 	He'll build a lit -- tle home, just meant for two
 	From which we'll ne -- ver roam; Who would, would you?
-	And so all else a -- bove I'm wait -- ing for the man I love
+	And so all else a -- bove
+	I'm wait -- ing for the man I love
 	%% Volta
 	_ love
+}
+% endif
+
+% if part=='ChordsGalit':
+%% taken from the real book
+\chordmode {
+	\startChords
+	\startSong
+	\mark "Intro"
+	ees1:6 | b2:7 bes:7 | \myEndLine
+	\repeat volta 2 {
+		\mark "A"
+		ees2. ees4:7 | ees1:m7 | bes:m | c2:7.5+ c:7 | \myEndLine
+		aes1:m6 | bes:7 | ees2 aes:maj7 | g:m bes:7 | \myEndLine
+		\mark "A"
+		ees2. ees4:7 | ees1:m7 | bes:m | c2:7.5+ c:7 | \myEndLine
+		aes1:m6 | bes2:7 bes4:7.11 bes:7 | ees2 aes | ees aes4:7 g:7 | \myEndLine
+		\mark "B"
+		c1:m7 | d2:7 bes4:7 d:dim | c1:m | g:7 | \myEndLine
+		c:m7 | d2:7 bes4:7 d:dim | c2:m g:dim | aes bes:7 | \myEndLine
+		\mark "A"
+		ees2. ees4:7 | ees1:m7 | bes:m | c2:7.5+ c:7 | \myEndLine
+		aes1:m | bes2:7 bes4:7.11 bes:7 | ees2 aes |
+	} \alternative {
+		{
+			%% TODO: myEndLine emitted in next line in order not to force break
+			ees bes:7 |
+		}
+		{
+			ees1 | \myEndLine
+		}
+	}
+	\endSong
+	\endChords
+}
+% endif
+
+% if part=='VoiceGalit':
+%% taken from the real book
+\relative c'' {
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Andante" 4 = 76
+	\time 4/4
+	\key ees \major
+	%% part "Intro"
+	r8.[ bes16 c8. bes16] c8.[ bes16 ees,8. f16] | ges8-. ges-. ges-. ges-. ges-> f~ f4 |
+	\repeat volta 2 {
+		%% part "A"
+		r8 bes c bes c bes des4 | r8 bes c bes des2 | r8 bes c bes c bes des4 | r8 aes bes aes c2 |
+		r8 aes bes aes bes aes ces4 | r8 g aes g bes4 aes | g2 g | g1 |
+		%% part "A"
+		r8 bes c bes c bes des4 | r8 bes c bes des2 | r8 bes c bes c bes des4 | r8 aes bes aes c2 |
+		r8 aes bes aes bes aes ces4 | r8 g aes g bes4 g | ees2 ees | ees1 |
+		%% part "B"
+		ees8 f g fis g4 ees' | ees d bes b | d c g a | b1 |
+		ees,8 f g fis g4 ees' | ees d bes b | d c bes! aes | g f g aes |
+		%% part "A"
+		r8 bes c bes c bes des4 | r8 bes c bes des2 | r8 bes c bes c bes des4 | r8 aes bes aes c2 |
+		r8 aes bes aes bes aes ces4 | r8 g aes g bes4 g | ees2 ees |
+	} \alternative {
+		{
+			ees f |
+		}
+		{
+			ees1 |
+		}
+	}
+}
+% endif
+
+% if part=='LyricsGalit':
+%% these are lyrics from the internet adjust for the real book
+\lyricmode {
+	%% part "Intro"
+	_ _ _ _ _ _ _ _ _ _ _ _ _
+	%% part "A"
+	הוא יום א -- חד י -- בוא א -- הוב לי -- בי
+	ע -- ייף מ -- נ -- תי -- בו א -- הוב לי -- בי
+	ו -- כש -- הוא י -- ע -- צר
+	אז רק או -- מר לו תי -- ש -- אר
+	%% part "A"
+	י -- ביט בי ו -- יצ -- חק מה, מה מצ -- חיק?
+	את שתי י -- די ח -- זק פת -- אום יח -- זיק
+	ו -- גם אם זה מו -- זר
+	א -- דע כי שנינו לא נאמר ד -- בר
+	%% part "B"
+	גם אם זה יה -- יה יום ג -- שם
+	יום של ק -- שת יום של סתיו
+	הוא י -- בוא אי -- ני חו -- ש -- שת
+	יום של תכ -- לת הוא דו -- פק ב -- ד -- לת
+	%% part "A"
+	תה -- יה ל -- נו בק -- תה רק לי ו -- לו
+	עם ד -- לת ו -- מי -- טה אח ו -- ח -- לון
+	א -- שב בו ו -- א -- ביט
+	מ -- תי י -- בוא א -- הוב לי -- בי?
+	%% Volta
+	_ בי?
 }
 % endif
