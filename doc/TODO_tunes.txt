@@ -1,24 +1,3 @@
-Last touches:
-=============
-- slihot (match lyrics to the tune).
-- ill close my eyes (tune, lyrics and maybe chords).
-- summer time.
-
-- fix tunes:
-	one note samba.
-	what a wonderful world.
-	hellelujah I love him so.
-	My little suede shoes.
-	Round midnight.
-	Corcovado.
-
-General:
-========
-- review the speed of the pieces and adjust them
-	(for instance: nature boy / Eben Ahbez is a little too fast).
-- review the lyrics and check that I used "__" whereever neccessary.
-- get stuff from the laurent part and work them into my framework (they do not compile anymore).
-
 Training material:
 ==================
 - write the material for drumming training.
@@ -26,6 +5,8 @@ Training material:
 - write hannon and czerny (maybe I can find them on the net ?!?).
 - click more rhythms.
                 2 2 , 2 3 , 3 2 , 3 3
+- rock rythms training on splitting 2 bars into pieces:
+	4+4=2+3+3=3+2+3=3+3+2=2+2+4=2+2+2+2=4+2+2=3+5=5+3
 
 Israeli songs:
 ==============
@@ -62,7 +43,6 @@ write the spandaw ballet song (gold).
 Jazz:
 =====
 standard line:
-	if you could see me now
 	things we did last summer. Where can I get an epdf version of this?
 	solar
 	The shadow of your smile
@@ -80,8 +60,6 @@ standard line:
 	in a sentimental mood
 	I remember April
 	I love you
-	how insensitive
-	how high the moon
 	god bless the child
 	epistrophy
 	don't get around much anymore
@@ -110,17 +88,14 @@ standard line:
 	all or nothing at all
 	waltz for debby
 	moments notice
-	fly me to the moon
-	flamingo
 	blues for Alice
 	A ghost of a chance
+	new york, new york.
+	some where over the rainbow
 
-write new york, new york.
+Misc:
+=====
 sting - spread a little happiness as you walk by.
-somewhere over the rainbow as on the page in my piano.
-the_more_i_see_you.txt
-who_can_i_turn_to.txt
-	http://www.youtube.com/watch?v=LdVgQxh9jW0
 write the muppet song.
 	F F# | G C7 | x3
 	F G  | F |
