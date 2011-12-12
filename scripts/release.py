@@ -7,11 +7,11 @@
 
 # TODO:
 # - add integration with twitter and facebook to announce new versions.
-# - dont hardcode the name of the project.
 # - try to use a better git interface (there are native python git interfaces).
 
 # this is for running the various commands that we need
 import subprocess
+import os # for getcwd
 
 ##############
 # parameters #
@@ -22,7 +22,7 @@ debug=True
 # unless you are doing development on this script...
 check=True
 # what is the name of the project?
-project='openbook'
+project=os.getcwd().split('/')[-1]
 
 ######################
 # script starts here #
