@@ -74,6 +74,10 @@ questions:
 	
 Tempo:
 ======
+- cut time:
+	\set Staff.timeSignatureFraction=#'(2 . 2)
+        \time 4/4
+	see "My Romance" for a use case.
 - one way is:
 	==== SNIP ====
 	\tempo "Andante" 4 = 88
