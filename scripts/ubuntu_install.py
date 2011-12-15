@@ -24,6 +24,8 @@ packs=[
 #	'python3-mako',
 #	'python-mako-doc',
 	'lilypond', # this is the main tool we use
+	'python-tweepy', # this is for tweeting new releases
+	'python-tweepy-doc', # this is for tweeting new releases
 #	'lilypond-doc',
 #	'timidity',
 #	'lame',
