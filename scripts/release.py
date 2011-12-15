@@ -12,6 +12,7 @@
 # this is for running the various commands that we need
 import subprocess
 import os # for getcwd
+import releasemanager
 
 ##############
 # parameters #
@@ -41,3 +42,5 @@ if debug:
 subprocess.check_output(['git','tag','-s','-m',project+' version '+str(tag),str(tag)])
 subprocess.check_call(['make','clean'])
 subprocess.check_call(['make','install'])
+rm=ReleaseManager()
+rm.release()
