@@ -23,6 +23,11 @@
 
 % if part=='Doc':
 	DONE:
+	- filled in the meta data from the internet.
+	- added youtube performance.
+	- added lyrics url.
+	- added lyrics (from the internet).
+	- added chords (found them myself).
 	TODO:
 	REMARKS:
 % endif
@@ -33,7 +38,7 @@ PartChords=\chordmode {
 	\startSong
 	\mark "Opening"
 	\startPart
-	ees | des | c:m | ces |
+	ees1 | des | c:m | ces |
 	ees | des | c:m | ces |
 	\endPart
 	\mark "Verse"
@@ -51,6 +56,11 @@ PartChords=\chordmode {
 	\startPart
 	ees | des | c:m | ces |
 	\endPart
+	\mark "Special part"
+	\startPart
+	ees | des | c:m | ces |
+	ees | des | c:m | ces |
+	\endPart
 	\endSong
 	\endChords
 }
@@ -64,7 +74,9 @@ PartFrets=\new FretBoards {
 		%% this adds a bar engraver which does not always come with chords
 		%% I didn'f find a way to put this with the chords themselves...
 		\with {
-			\override BarLine #'bar-size = #4
+			%% for lilypond 2.12
+			%%\override BarLine #'bar-size = #4
+			\override BarLine #'bar-extent = #'(-2 . 2)
 			\consists "Bar_engraver"
 		}
 		\PartChords

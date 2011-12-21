@@ -2,8 +2,6 @@ Now:
 ====
 - make the full build also build all the pdfs (not just the ones going into
 	the book).
-- the bar engravers in the chord tunes (the rock tunes like "I Am Beautiful")
-	are not showing up. The did show up in lily 2.12. Check it out.
 - enable to turn off lyrics and produce a book with lyrics and a book without.
 - enable the runner of the build to decide whether \myEndLine will be
 	a real break or not. This could reduce the size of the book by

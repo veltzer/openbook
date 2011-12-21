@@ -73,7 +73,9 @@ PartFrets=\new FretBoards {
 		%% this adds a bar engraver which does not always come with chords
 		%% I didn'f find a way to put this with the chords themselves...
 		\with {
-			\override BarLine #'bar-size = #4
+			%% for lilypond 2.12
+			%%\override BarLine #'bar-size = #4
+			\override BarLine #'bar-extent = #'(-2 . 2)
 			\consists "Bar_engraver"
 		}
 		\PartChords
