@@ -8,16 +8,17 @@
 	attributes['heb']=True
 
 	attributes['title']=u"איך זה שכוכב"
+	attributes['style']="Israeli"
 	attributes['composer']=u"מתי כספי"
+	attributes['poet']=u"נתן זך"
 	attributes['singer']=u"מתי כספי"
 	attributes['piece']=u"בוסה נובה"
-	attributes['poet']=u"נתן זך"
 
 	attributes['completion']="5"
+	attributes['uuid']="d936b39a-971e-11e0-9c44-0019d11e5a41"
 
 	attributes['idyoutube']="1GI5Vst5a-o"
 
-	attributes['uuid']="d936b39a-971e-11e0-9c44-0019d11e5a41"
 %>
 % endif
 

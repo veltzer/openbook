@@ -9,11 +9,12 @@
 	attributes['heb']=True
 
 	attributes['title']=u"סליחות"
+	attributes['style']="Israeli"
 	attributes['subtitle']=u"באת אלי"
 	attributes['composer']=u"עודד לרר"
-	attributes['piece']=u"בלדה מתונה"
 	attributes['poet']=u"לאה גולדברג"
 	attributes['singer']=u"יהודית רביץ"
+	attributes['piece']=u"בלדה מתונה"
 
 	attributes['completion']="5"
 	attributes['uuid']="11ad0c38-6dc9-4318-873f-5e7e80b7c8a8"

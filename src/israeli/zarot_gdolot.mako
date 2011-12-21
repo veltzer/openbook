@@ -8,9 +8,10 @@
 	attributes['heb']=True
 
 	attributes['title']=u"צרות טובות"
+	attributes['style']="Israeli"
 	attributes['composer']=u"שלום חנוך"
-	attributes['singer']=u"שלום חנוך"
 	attributes['poet']=u"שמרית אור"
+	attributes['singer']=u"שלום חנוך"
 	attributes['piece']=u"בלדה מתונה"
 
 	attributes['completion']="0"

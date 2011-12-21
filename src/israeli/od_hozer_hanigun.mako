@@ -6,6 +6,7 @@
 	attributes['heb']=True
 
 	attributes['title']=u"עוד חוזר הניגון"
+	attributes['style']="Israeli"
 	attributes['singer']=u"ברי סחרוף"
 	attributes['piece']=u"בלדה מתונה"
 

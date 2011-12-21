@@ -26,6 +26,8 @@ packs=[
 	'lilypond', # this is the main tool we use
 	'python-tweepy', # this is for tweeting new releases
 	'python-tweepy-doc', # this is for tweeting new releases
+	'python-facebook', # this is for facebooking releases
+	'python-simplejson', # this make facebook work better
 #	'lilypond-doc',
 #	'timidity',
 #	'lame',
