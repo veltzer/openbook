@@ -8,9 +8,10 @@
 	attributes['heb']=True
 
 	attributes['title']=u"לא יכולתי לעשות כלום"
+	attributes['style']="Israeli"
 	attributes['composer']=u"אילן וירצברג"
-	attributes['singer']=u"איןך ןירצברג"
 	attributes['poet']=u"יונה וולך"
+	attributes['singer']=u"איןך ןירצברג"
 	attributes['piece']=u"בלדת רוק"
 
 	attributes['completion']="5"

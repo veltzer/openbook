@@ -8,9 +8,10 @@
 	attributes['heb']=True
 
 	attributes['title']=u"גשם"
+	attributes['style']="Israeli"
 	attributes['composer']=u"יחיאל אמסלם"
-	attributes['singer']=u"אלי לוזון"
 	attributes['poet']=u"יעקב גלעד"
+	attributes['singer']=u"אלי לוזון"
 	attributes['piece']=u"בלדת רוק"
 
 	attributes['completion']="5"

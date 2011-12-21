@@ -8,16 +8,17 @@
 	attributes['heb']=True
 
 	attributes['title']=u"בשדה ירוק"
+	attributes['style']="Israeli"
 	attributes['composer']=u"דני סנדרסון"
+	attributes['poet']=u"מאיר אריאל"
 	attributes['singer']=u"דני סנדרסון"
 	attributes['piece']=u"בלדה איטית"
-	attributes['poet']=u"מאיר אריאל"
 
 	attributes['completion']="4"
+	attributes['uuid']="42424480-a26f-11df-abb4-0019d11e5a41"
 
 	attributes['idyoutube']="En9qtX5VnLE"
 
-	attributes['uuid']="42424480-a26f-11df-abb4-0019d11e5a41"
 %>
 % endif
 
