@@ -29,10 +29,11 @@
 % endif
 
 % if part=='Own':
-\storePredefinedDiagram \chordmode {g:sus4} #guitar-tuning #"3-3;2-2;o;o;o;3-4;"
-\storePredefinedDiagram \chordmode {c:5.9} #guitar-tuning #"x;3-2;2-1;o;3-3;3-4;"
-\storePredefinedDiagram \chordmode {e:m7} #guitar-tuning #"o;2-1;2-2;o;3-3;3-4;"
-\storePredefinedDiagram \chordmode {d:sus4} #guitar-tuning #"x;x;o;2-1;3-3;2-2;"
+
+\storePredefinedDiagram #default-fret-table \chordmode {g:sus4} #guitar-tuning #"3-3;2-2;o;o;o;3-4;"
+\storePredefinedDiagram #default-fret-table \chordmode {c:5.9} #guitar-tuning #"x;3-2;2-1;o;3-3;3-4;"
+\storePredefinedDiagram #default-fret-table \chordmode {e:m7} #guitar-tuning #"o;2-1;2-2;o;3-3;3-4;"
+\storePredefinedDiagram #default-fret-table \chordmode {d:sus4} #guitar-tuning #"x;x;o;2-1;3-3;2-2;"
 
 PartChords=\chordmode {
 	\startChords
