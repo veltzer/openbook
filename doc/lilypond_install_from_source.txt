@@ -20,3 +20,5 @@ do:
 	./lilypond-2.14.2-1.linux-x86.sh --prefix=/home/mark/install/lilypond-2.14.2
 then:
 	ln -s ~/install/lilypond-2.14.2/bin/lilypond ~/bin
+
+Currently (01/12) I do manage to build openbook using the .sh package.
