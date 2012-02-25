@@ -38,8 +38,27 @@
 	\partial 4 r4 |
 	\mark "A"
 	\startPart
-	d1:m | g2:m7 c:7 | f1:maj7 | g:m7 | \myEndLine
-	bes | g:m7 | bes2:maj7 a:7 | d1:m | \myEndLine
+	\repeat volta 2 {
+		d1:m | g2:m7 c:7 | f1:maj7 | g:m7 | \myEndLine
+		bes:maj7 | g:m7 | bes2:maj7 a:7 |
+	} \alternative {
+		{ d1:m | }
+		{ d1:m | }
+	} \myEndLine
+	\endPart
+
+	\mark "B"
+	\startPart
+	\repeat volta 2 {
+		a1:7 | d:m | c:7 | f:maj7 | \myEndLine
+	} \alternative {
+		{
+			bes2:maj7 a:7 | bes1:maj7 | d2:m g:m7 | d1:m | \myEndLine
+		}
+		{
+			bes2:maj7 a:7 | bes1:maj7 | bes2:maj7 a:7 | d1:m | \myEndLine
+		}
+	}
 	\endPart
 
 	\endSong
@@ -51,10 +70,25 @@
 \relative f' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
+	\set Staff.midiInstrument = #"flute"
 	\time 4/4
 	\key d \minor
 	\partial 4 f8 e |
-	d4 d'8 c4 bes8 a g |
+	%% part A
+	\repeat volta 2 {
+		d4. d'8 c4 bes8 a | g2. f8 g | a4. c,8 f4 a8 g | d2. e8 f |
+		g4. f8 e4 d8 d' | bes2 a4 g | f4. f8 e4. e8 |
+	} \alternative {
+		{ d2. f8 e | }
+		{ d2. cis8 d | }
+	}
+	%% part B
+	\repeat volta 2 {
+		e4. a,8 d4. e8 | f4 f2 e8 f | g4. c,8 f4. g8 | a4 a2 bes8 c |
+	} \alternative {
+		{ d4. cis8 f4. e8 | d4 d2 c8 bes | a4. a8 bes8 c bes4 | a2. cis,8 d | } 
+		{ d'4. cis8 f4. e8 | d4 d2 bes8 c | d4. cis8 f4. e8 | d2. f,8 e | } 
+	}
 }
 % endif
 
