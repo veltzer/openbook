@@ -44,6 +44,7 @@ WEB_DIR:=/var/www/openbook
 COMMON:=src/include/common.makoi
 # wrappers
 LILYPOND_WRAPPER:=scripts/lilypond_wrapper.pl
+BOOK_WRAPPER:=scripts/lilypond_wrapper.py
 MAKO_WRAPPER:=scripts/mako_wrapper.py
 MAKO_BOOK_WRAPPER:=scripts/mako_book.py
 LYD_WRAPPER:=scripts/lyd.pl
@@ -72,6 +73,7 @@ ifeq ($(DO_ALL_DEP),1)
 endif
 ifeq ($(DO_WRAPDEPS),1)
 	LILYPOND_WRAPPER_DEP:=$(LILYPOND_WRAPPER)
+	BOOK_WRAPPER_DEP:=$(BOOK_WRAPPER)
 	MAKO_WRAPPER_DEP:=$(MAKO_WRAPPER)
 	LYD_WRAPPER_DEP:=$(LYD_WRAPPER)
 	MAKO_DEPS_WRAPPER_DEP:=$(MAKO_DEPS_WRAPPER)
@@ -81,6 +83,7 @@ ifeq ($(DO_WRAPDEPS),1)
 	MAKO_BOOK_WRAPPER_DEP:=$(MAKO_BOOK_WRAPPER)
 else
 	LILYPOND_WRAPPER_DEP:=
+	BOOK_WRAPPER_DEP:=
 	MAKO_WRAPPER_DEP:=
 	LYD_WRAPPER_DEP:=
 	MAKO_DEPS_WRAPPER_DEP:=
@@ -328,11 +331,9 @@ $(FILES_MP3): %.mp3: %.midi $(MIDI2MP3_WRAPPER_DEP) $(ALL_DEP)
 .PHONY: book
 book: $(OUT_PDF) $(ALL_DEP)
 	$(info doing [$@])
-$(OUT_PS) $(OUT_PDF): $(OUT_LY) $(ALL_DEP)
+$(OUT_PS) $(OUT_PDF): $(OUT_LY) $(BOOK_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)-rm -f $(OUT_PS) $(OUT_PDF) 2> /dev/null
-	$(Q)lilypond --ps --pdf --output=$(OUT_BASE) $(OUT_LY) 2> /dev/null
-	$(Q)chmod 444 $(OUT_PS) $(OUT_PDF)
+	$(Q)$(BOOK_WRAPPER) $(OUT_PS) $(OUT_PDF) $(OUT_BASE) $(OUT_LY)
 $(OUT_LY): $(FILES_MAKO) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)

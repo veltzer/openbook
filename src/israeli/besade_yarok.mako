@@ -52,13 +52,13 @@
 \relative f' {
 	\time 4/4
 	\key f \major
-	\partial 4 a8 c8 |
+	\partial 4 a8 c |
 
-	d8 d4 c8 ~ c4 a8 f8 | g8 g4 g8 ~ g4 d8 f8 |
-	g8 g4 f8 ~ f8 e8 d8 c8 | f8 f4 e8 ~ e4 a8 c8 |
+	d d4 c8 ~ c4 a8 f | g g4 g8 ~ g4 d8 f |
+	g g4 f8 ~ f e d c | f f4 e8 ~ e4 a8 c |
 
-	d8 d4 c8 ~ c4 a8 f8 | g8 g4 g8 ~ g4 d8 f8 |
-	g8 g4 f8 ~ f8 e8 d8 c8 | f8 f4 c8 ~ c2 | r2. f8 e8 |
+	d d4 c8 ~ c4 a8 f | g g4 g8 ~ g4 d8 f |
+	g g4 f8 ~ f e d c | f f4 c8 ~ c2 | r2. f8 e |
 
 	d4 a'8 g4 f8 e4 |
 }
