@@ -35,7 +35,7 @@
 	\mark "A"
 	\startPart
 	c1*2:m | g:7/b | c:7/bes | f1:m9/a | f1:m | \myEndLine
-	g:m7.5- | c:7 | f1*2:m | 
+	g:m7.5- | c:7 | f1*2:m |
 	\endPart
 	\mark "B"
 	\startPart
