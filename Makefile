@@ -122,12 +122,22 @@ FILES_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO)
 FILES_WAV:=$(addsuffix .wav,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_MP3:=$(addsuffix .mp3,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_OGG:=$(addsuffix .ogg,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
-OUT_BASE:=$(OUT_DIR)/openbook
-OUT_LY:=$(OUT_DIR)/openbook.ly
-OUT_PATTERN:=src/jazz/*.mako
-OUT_FILES:=$(shell find src -type f -and -wholename "$(OUT_PATTERN)")
-OUT_PS:=$(OUT_DIR)/openbook.ps
-OUT_PDF:=$(OUT_DIR)/openbook.pdf
+# books
+# book - openbook
+OB_OUT_BASE:=$(OUT_DIR)/openbook
+OB_OUT_LY:=$(OUT_DIR)/openbook.ly
+OB_OUT_PATTERN:=src/jazz/*.mako
+OB_OUT_FILES:=$(shell find src -type f -and -wholename "$(OB_OUT_PATTERN)")
+OB_OUT_PS:=$(OUT_DIR)/openbook.ps
+OB_OUT_PDF:=$(OUT_DIR)/openbook.pdf
+# book - israelbook
+IL_OUT_BASE:=$(OUT_DIR)/israelisongbook
+IL_OUT_LY:=$(OUT_DIR)/israelisongbook.ly
+IL_OUT_PATTERN:=src/israeli/*.mako
+IL_OUT_FILES:=$(shell find src -type f -and -wholename "$(IL_OUT_PATTERN)")
+IL_OUT_PS:=$(OUT_DIR)/israelisongbook.ps
+IL_OUT_PDF:=$(OUT_DIR)/israelisongbook.pdf
+# web
 WEB_LY=$(WEB_DIR)/openbook.ly
 WEB_PS=$(WEB_DIR)/openbook.ps
 WEB_PDF=$(WEB_DIR)/openbook.pdf
@@ -165,7 +175,7 @@ ifeq ($(DO_OGG),1)
 	ALL:=$(ALL) $(FILES_OGG)
 endif
 ifeq ($(DO_BOOK),1)
-	ALL:=$(ALL) $(OUT_LY) $(OUT_PS) $(OUT_PDF)
+	ALL:=$(ALL) $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(IL_OUT_LY) $(IL_OUT_PS) $(IL_OUT_PDF)
 endif
 
 .PHONY: all
@@ -194,12 +204,18 @@ debug:
 	$(info FILES_MP3 is $(FILES_MP3))
 	$(info FILES_OGG is $(FILES_OGG))
 	$(info FILES_WEB is $(FILES_WEB))
-	$(info OUT_LY is $(OUT_LY))
-	$(info OUT_PS is $(OUT_PS))
-	$(info OUT_PDF is $(OUT_PDF))
-	$(info OUT_WEB is $(OUT_WEB))
-	$(info OUT_PATTERN is $(OUT_PATTERN))
-	$(info OUT_FILES is $(OUT_FILES))
+	$(info OB_OUT_LY is $(OB_OUT_LY))
+	$(info OB_OUT_PS is $(OB_OUT_PS))
+	$(info OB_OUT_PDF is $(OB_OUT_PDF))
+	$(info OB_OUT_WEB is $(OB_OUT_WEB))
+	$(info OB_OUT_PATTERN is $(OB_OUT_PATTERN))
+	$(info OB_OUT_FILES is $(OB_OUT_FILES))
+	$(info IL_OUT_LY is $(IL_OUT_LY))
+	$(info IL_OUT_PS is $(IL_OUT_PS))
+	$(info IL_OUT_PDF is $(IL_OUT_PDF))
+	$(info IL_OUT_WEB is $(IL_OUT_WEB))
+	$(info IL_OUT_PATTERN is $(IL_OUT_PATTERN))
+	$(info IL_OUT_FILES is $(IL_OUT_FILES))
 	$(info WEB_LY is $(WEB_LY))
 	$(info WEB_PS is $(WEB_PS))
 	$(info WEB_PDF is $(WEB_PDF))
@@ -332,16 +348,23 @@ $(FILES_MP3): %.mp3: %.midi $(MIDI2MP3_WRAPPER_DEP) $(ALL_DEP)
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MIDI2MP3_WRAPPER) $< $@
 
-.PHONY: book
-book: $(OUT_PDF) $(ALL_DEP)
+.PHONY: books
+books: $(OB_OUT_PDF) $(IL_OUT_PDF) $(ALL_DEP)
 	$(info doing [$@])
-$(OUT_PS) $(OUT_PDF): $(OUT_LY) $(BOOK_WRAPPER_DEP) $(ALL_DEP)
+$(OB_OUT_PS) $(OB_OUT_PDF): $(OB_OUT_LY) $(BOOK_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)$(BOOK_WRAPPER) $(OUT_PS) $(OUT_PDF) $(OUT_BASE) $(OUT_LY)
-$(OUT_LY): $(OUT_FILES) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
+	$(Q)$(BOOK_WRAPPER) $(OB_OUT_PS) $(OB_OUT_PDF) $(OB_OUT_BASE) $(OB_OUT_LY)
+$(OB_OUT_LY): $(OB_OUT_FILES) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
-	$(Q)$(MAKO_BOOK_WRAPPER) $(OUT_LY) "$(OUT_PATTERN)"
+	$(Q)$(MAKO_BOOK_WRAPPER) $(OB_OUT_LY) "$(OB_OUT_PATTERN)"
+$(IL_OUT_PS) $(IL_OUT_PDF): $(IL_OUT_LY) $(BOOK_WRAPPER_DEP) $(ALL_DEP)
+	$(info doing [$@])
+	$(Q)$(BOOK_WRAPPER) $(IL_OUT_PS) $(IL_OUT_PDF) $(IL_OUT_BASE) $(IL_OUT_LY)
+$(IL_OUT_LY): $(IL_OUT_FILES) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
+	$(info doing [$@])
+	$(Q)-mkdir -p $(dir $@)
+	$(Q)$(MAKO_BOOK_WRAPPER) $(IL_OUT_LY) "$(IL_OUT_PATTERN)"
 
 # this should be moved to some kind of macro preprocessor
 $(OUT_WEB): $(OUT_DIR)/%: $(MAKO_DIR)/% $(ALL_DEP)

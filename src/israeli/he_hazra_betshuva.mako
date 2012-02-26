@@ -31,7 +31,7 @@
 \chordmode {
 	\startChords
 	\startSong
-	\partial s1 |
+	\partial 2. s2. |
 	\mark "A"
 	\startPart
 	c1*2:m | g:7/b | c:7/bes | f1:m9/a | f1:m | \myEndLine
