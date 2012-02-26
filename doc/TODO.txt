@@ -17,6 +17,15 @@ Now:
 - In most cases where there is a \repate volta (lots of tunes!!!) I remark the first alternatives \myEndLine to save
 	lines. Should we have a more general mechanism for this?
 
+Hebrew song book:
+=================
+- logo for the project.
+- table of contents: title needs to be changed to hebrew.
+- table of contents: page numbers should be on the left side.
+- first page must have different content.
+- remove songs which are not ready.
+- check the "5" labeled songs to make sure they are ready for publications.
+
 book stuff:
 - logo for the project.
 - add a nice front page to the book with the name of the project, logo, links etc.

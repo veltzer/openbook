@@ -44,7 +44,7 @@
 	\mark "פתיחה"
 	\startPart
 
-	\partial 4 r4
+	\partial 4 s4
 
 	a2.:m | d:m7 | g:7 | c:maj7 |
 	f:maj7 | b:7 | e:7 |
