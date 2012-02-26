@@ -1,5 +1,8 @@
 Now:
 ====
+- the openbook.ly is dependant on too many .mako and .ly files althorugh
+	it is built only with the jazz. Change that.
+- build a hebrew songbook as well.
 - stop calling the template common.makoi. The name and the location of this
 	template is totally inappropriate...
 - make the full build also build all the pdfs (not just the ones going into
