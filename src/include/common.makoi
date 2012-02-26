@@ -323,7 +323,7 @@ ${self.clearVars()}
 % if attributes['tagline']=='':
 % if attributes['heb']:
 <%
-	attributes['tagline']=u'נבנה על ידי מרק ולצר <mark.veltzer@gmail.com>, בתאריך '+attributes['date']+u', חקיקה על ידי lilypond '+attributes['lilyver']
+	attributes['tagline']=u'נבנה על ידי מרק ולצר <mark.veltzer@gmail.com>, בתאריך '+attributes['date']+u', תימון על ידי lilypond '+attributes['lilyver']
 %>
 % else:
 <%
