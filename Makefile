@@ -124,6 +124,8 @@ FILES_MP3:=$(addsuffix .mp3,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_OGG:=$(addsuffix .ogg,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 OUT_BASE:=$(OUT_DIR)/openbook
 OUT_LY:=$(OUT_DIR)/openbook.ly
+OUT_PATTERN:=src/jazz/*.mako
+OUT_FILES:=$(shell find src -type f -and -wholename "$(OUT_PATTERN)")
 OUT_PS:=$(OUT_DIR)/openbook.ps
 OUT_PDF:=$(OUT_DIR)/openbook.pdf
 WEB_LY=$(WEB_DIR)/openbook.ly
@@ -196,6 +198,8 @@ debug:
 	$(info OUT_PS is $(OUT_PS))
 	$(info OUT_PDF is $(OUT_PDF))
 	$(info OUT_WEB is $(OUT_WEB))
+	$(info OUT_PATTERN is $(OUT_PATTERN))
+	$(info OUT_FILES is $(OUT_FILES))
 	$(info WEB_LY is $(WEB_LY))
 	$(info WEB_PS is $(WEB_PS))
 	$(info WEB_PDF is $(WEB_PDF))
@@ -334,10 +338,10 @@ book: $(OUT_PDF) $(ALL_DEP)
 $(OUT_PS) $(OUT_PDF): $(OUT_LY) $(BOOK_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)$(BOOK_WRAPPER) $(OUT_PS) $(OUT_PDF) $(OUT_BASE) $(OUT_LY)
-$(OUT_LY): $(FILES_MAKO) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
+$(OUT_LY): $(OUT_FILES) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
-	$(Q)$(MAKO_BOOK_WRAPPER) $(OUT_LY)
+	$(Q)$(MAKO_BOOK_WRAPPER) $(OUT_LY) "$(OUT_PATTERN)"
 
 # this should be moved to some kind of macro preprocessor
 $(OUT_WEB): $(OUT_DIR)/%: $(MAKO_DIR)/% $(ALL_DEP)
