@@ -6,12 +6,13 @@ import mako.lookup
 import os # for os.chmod, os.unlink
 import glob # for glob.glob
 
-if len(sys.argv)!=2:
+if len(sys.argv)!=3:
 	raise ValueError('command line issue')
 
 input_encoding='utf-8'
 output_encoding='utf-8'
 p_output=sys.argv[1]
+p_glob=sys.argv[2]
 common='src/include/common.makoi'
 
 def is_ready(file):
@@ -40,7 +41,7 @@ file=open(p_output,'w')
 #file.write((template.render_unicode(attributes={})))
 # python 2
 attr={}
-filelist=glob.glob("src/jazz/*.mako")
+filelist=glob.glob(p_glob)
 filelist=filter(is_ready,filelist)
 filelist.sort()
 attr['files']=filelist
