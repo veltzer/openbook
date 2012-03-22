@@ -9,27 +9,57 @@
 
 	attributes['title']="Autumn In New York"
 	attributes['style']="Jazz"
+	# from the hal leonard book
 	attributes['composer']="Vernon Duke"
-	attributes['copyright']=""
-	attributes['copyrightextra']=""
-	attributes['poet']=""
-	# this is from the fake book.
-	attributes['piece']="Medium Swing"
+	# from the hal leonard book
+	attributes['copyright']="1934 by Kay Duke Music."
+	attributes['copyrightextra']="Copyright Renewed. All Rights Administered by BMG Songs, Inc."
+	attributes['poet']="Vernon Duke"
+	# this is from the hal leonard book.
+	attributes['piece']="Brightly"
 
 	attributes['structure']="ABAC"
 	attributes['structureremark']="I determined it was ABAC although the A part does not repeat exactly. It is good enough"
 
 	attributes['completion']="5"
 	attributes['uuid']="9677b522-7463-11e1-a57d-bbc28ffad085"
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
+	attributes['idyoutuberemark']="Virtuoso Sonny Stitt"
+	attributes['idyoutube']="Nn11v07Db3s"
+	attributes['idyoutuberemark']="The classic Billie Holiday..."
+	attributes['idyoutube']="cl_e7UW-bz8"
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Autumn-in-New-York-lyrics-Frank-Sinatra/C779DB117665DFD94825691F00067AD0"
 %>
 % endif
 
 % if part=='Doc':
 	DONE:
+	- filled out basic details.
+	- filled in lyrics url.
+	- filled in the tunes structure.
+	- filled in more meta data from the hal leonard version.
+	- added the real book epdf.
+	- entered the real book chords.
+	- entered the real book tune.
+	- entered the real book lyrics.
+	- checked the real book chords.
+	- checked the real book tune.
+	- checked the real book lyrics.
+	- heard the real book version and it sounds good.
+	- adjusted the speed of the real book version.
+	- added the hal leonard epdf.
 	TODO:
+	- add performances on youtube.
+	- how do I mention the beat of the chords when it's confusing?
+		(consider the a2:m7 d4:7 des4:7 in the tune where the sheet
+		music does NOT SHOW the fact that the a minor is two beats and
+		each of the following chords are on one beat).
+		Document this issue in the lilyponds hints file.
+	- how do I enter french keys? As in the words of the song "rou -- es"
+		(the e is supposed to be a french e)
+	- how do I united two exact lyrics? Look at the hal leonard lyrical
+		ending of this songs and see how he joins the two lyrics
+		versions... Document this.
+	- do the hal leonard epdf.
 % endif
 
 % if part=='ChordsReal':
@@ -91,42 +121,49 @@
 %% lyrics are taken from the fake book and adjusted for the real one
 \lyricmode {
 	%% A part
-Autumn in New York
-Why does it seem so exciting (inviting)
-Autumn in New York
-It spells the thrill of first-nighting
-
-Shimmering clouds - glimmering crowds (glittering crowds and shimmering clouds)
-In canyons of steel
-They're making me feel - I'm home
-
-It's autumn in New York
-That brings a (the) promise of new love
-Autumn in New York
-Is often mingled with pain
-
-Dreamers with empty hands 
-(They) All sigh for exotic lands
-
-(But) It's autumn in New York
-It's good to live it again
-
-This autumn in New York
-Transforms the slums into Mayfair
-Autumn in New York
-You'll need no castles in Spain
-
-Lovers that bless the dark
-On benches in Central Park
-
-(But) It's autumn in New York
-It's good to live it again
+	Au -- tumn In New York,
+	why does it seem so in -- vit -- ing?
+	Au -- tumn In New York,
+	it spells the thrill of first night -- ing.
 	%% B part
+	Glit -- ter -- ing crowds and shim -- mer -- ing clouds
+	in can -- yons of steel, __
+	they're mak -- ing me feel __
+	I'm home. __
+	%% A part
+	It's Au -- tumn In New York,
+	that brings the pro -- mise of new love;
+	Au -- tumn In New York __
+	is of -- ten min -- gled with pain. __
+	%% C part
+	Dream -- ers with emp -- ty hands
+	may sigh for ex -- ot -- ic lands;
+	It's Au -- tumn In New York, __
+	it's good to live it a -- gain.
 }
 % endif
 
 % if part=='LyricsmoreReal':
 \lyricmode {
 	%% A part
+	Au -- tumn In New York,
+	the gleam -- ing roof -- tops at sun -- down.
+	Au -- tumn In New York,
+	it lifts you up when you're run -- down.
+	%% B part
+	Jad -- ed rou -- es and gay di -- vor -- cees
+	who lunch at the Ritz __
+	will tell you that "\"it's" __
+	di -- "vine!\"" __
+	%% A part
+	This Au -- tumn In New York,
+	trans -- forms the slums in -- to May -- fair;
+	Au -- tumn In New York, __
+	you'll need no cas -- tles in Spain. __
+	%% C part
+	Lov -- ers that bless the dark
+	on bench -- es in Cen -- tral Park
+	greet Au -- tumn In New York, __
+	it's good to live it a -- gain.
 }
 % endif
