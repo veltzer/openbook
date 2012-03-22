@@ -47,8 +47,8 @@
 	- heard the real book version and it sounds good.
 	- adjusted the speed of the real book version.
 	- added the hal leonard epdf.
+	- added performances on you tube.
 	TODO:
-	- add performances on youtube.
 	- how do I mention the beat of the chords when it's confusing?
 		(consider the a2:m7 d4:7 des4:7 in the tune where the sheet
 		music does NOT SHOW the fact that the a minor is two beats and
