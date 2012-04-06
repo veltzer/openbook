@@ -225,6 +225,10 @@ debug:
 todo:
 	$(Q)-grep TODO $(FILES_LY)
 
+.PHONY: show_uncompleted
+show_uncompleted:
+	$(Q)grep completion src/jazz/* | grep -v 5
+
 .PHONY: clean_deps
 clean_deps:
 	$(Q)rm -f $(FILES_LYD)
