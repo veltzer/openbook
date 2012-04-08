@@ -58,7 +58,7 @@
 		f1:7 | f2:m7 bes:7 |
 	} \alternative {
 		{
-		  	ees1:maj7 | f2:m7 bes:7 | \myEndLine
+			ees1:maj7 | f2:m7 bes:7 | \myEndLine
 		}
 		{
 			ees1:6 | bes2:m7 ees:7 | \myEndLine
