@@ -1,5 +1,8 @@
 Now:
 ====
+- tweeter api does not work. check it out and fix it.
+- add the facebook api to release manager and see that it works.
+
 - build a hebrew songbook as well.
 - stop calling the template common.makoi. The name and the location of this
 	template is totally inappropriate...
