@@ -10,6 +10,10 @@ Training material:
 
 Israeli songs:
 ==============
+write shir shel yom hulin.
+write "mechakim lemachiach"/ "Shalom Hanoch"
+write arik einstein - ze barosh shelach.
+write shem tov levi - shuvi levitech.
 write down "hatishma koli"
 	C G F E7 x2
 	C Dm7 G7 C
@@ -23,11 +27,12 @@ write tzika pik "met av vement elul"
 write rutzy shmulik by ariel zilber.
 ee yarok bayam:
 	http://mp3music.co.il/Tabs/4833.html
+http://www.jimjum.co.il/%D7%90%D7%A7%D7%95%D7%A8%D7%93%D7%99%D7%9D-%D7%9C%D7%92%D7%99%D7%98%D7%A8%D7%94/%D7%90%D7%A7%D7%95%D7%A8%D7%93%D7%99%D7%9D/81-%D7%90%D7%A7%D7%95%D7%A8%D7%93%D7%99%D7%9D-%D7%90-%D7%94/546-%D7%91%D7%94%D7%99%D7%90%D7%97%D7%96%D7%95%D7%AA-%D7%94%D7%A0%D7%97%D7%9C-%D7%91%D7%A1%D7%99%D7%A0%D7%99-%D7%9C%D7%94%D7%A7%D7%AA-%D7%94%D7%A0%D7%97%D7%9C
 
 Rock/Pop:
 =========
-- write "While my Guitar Gently weeps"
-        chords in the open book project.
+http://tabs.ultimate-guitar.com/k/king_crimson/i_talk_to_the_wind_crd.htm
+write "While my Guitar Gently weeps"
 write the devision bell song (pink floyd or david glimour in live concert)
 aint_no_sunshine.txt
 with_or_without_you.txt
@@ -42,75 +47,9 @@ write stevie wonder - "Love on the run" (Strangers by day lovers by nightime).
 	Am7 Fmaj7 Dm7 G7 Am7 verse
 	Fmaj Cmaj Dm7 E7 Am  chorus
 	Fmaj Cmaj Dm7 E7 E7
-write the spandaw ballet song (gold).
-
+write the "gold" song by spandaw ballet.
 http://tabs.ultimate-guitar.com/i/irene_cara/what_a_feeling_crd.htm
 http://www.e-chords.com/chords/nikka-costa/out-here-on-my-own
-
-Jazz:
-=====
-standard line:
-	things we did last summer. Where can I get an epdf version of this?
-	solar
-	The shadow of your smile
-	serenade to a cuckoo
-	scrapple from the apple
-	satin doll
-	ornithology
-	night and day
-	my ship
-	my one and only love
-	the more I see you
-	like someone in love.
-	it don't mean a thing
-	isn't it romantic?
-	in a sentimental mood
-	I remember April
-	I love you
-	god bless the child
-	epistrophy
-	don't get around much anymore
-	donna lee
-	don't blame me
-	dancing on the ceiling
-	could it be you
-	confirmation
-	cherokee
-	blue train
-	bluesette
-	blue monk
-	blue in green
-	black orpheus
-	autumn in new york
-	as time goes by
-	angel eyes
-	all of you
-	all blues
-	a night in tunisia
-	take the "A" train.
-	Tenderly
-	Who can I turn to?
-	Moonlight in Vermont
-	all or nothing at all
-	waltz for debby
-	moments notice
-	blues for Alice
-	A ghost of a chance
-	new york, new york.
-	some where over the rainbow
-
-Misc:
-=====
-sting - spread a little happiness as you walk by.
-write the muppet song.
-	F F# | G C7 | x3
-	F G  | F |
-	B7 C | F | x3
-	G
-
-http://www.christymoore.com/lyrics_detail.php?id=53
-	G C D chords
-
 - write the beatles song "And I Love Her".
 	The main part goes like this:
 		f#m c#m
@@ -120,8 +59,63 @@ http://www.christymoore.com/lyrics_detail.php?id=53
 		E E
 	These chords are ok as far as key goes (got it from hearing a you tube recording).
 	I still need to get the B part.
+http://www.christymoore.com/lyrics_detail.php?id=53
+	G C D chords
+	Hey! Ronnie Reagan
+sting - spread a little happiness as you walk by.
+write the muppet song.
+	F F# | G C7 | x3
+	F G  | F |
+	B7 C | F | x3
+	G
 
-- write a song (shir shel yom hulin).
-- write "mechakim lemachiach"/ "Shalom Hanoch"
-- write a song (arik einstein - ze barosh shelach).
-- write a song in openbook (shem tov levi - shuvi levitech).
+Jazz:
+=====
+things we did last summer. Where can I get an epdf version of this?
+solar
+The shadow of your smile
+serenade to a cuckoo
+scrapple from the apple
+satin doll
+ornithology
+night and day
+my ship
+my one and only love
+the more I see you
+like someone in love.
+it don't mean a thing
+isn't it romantic?
+in a sentimental mood
+I remember April
+I love you
+god bless the child
+epistrophy
+don't get around much anymore
+donna lee
+don't blame me
+dancing on the ceiling
+could it be you
+confirmation
+cherokee
+blue train
+bluesette
+blue monk
+blue in green
+black orpheus
+autumn in new york
+as time goes by
+angel eyes
+all of you
+all blues
+a night in tunisia
+take the "A" train.
+Tenderly
+Who can I turn to?
+Moonlight in Vermont
+all or nothing at all
+waltz for debby
+moments notice
+blues for Alice
+A ghost of a chance
+new york, new york.
+some where over the rainbow
