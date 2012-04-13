@@ -37,25 +37,25 @@ PartChords=\chordmode {
 
 	r2. |
 
-	a:m | d:m | a:m | a:m | \myFakeEndLine
-	a:m | d:m | a:m/e | a:m | \myFakeEndLine
-	d:m | e:7 | a:m | a:m | \myFakeEndLine
-	e:7 | e:7 | a:m | a:m | \myFakeEndLine
+	a:m | d:m | a1*2:m | \myFakeEndLine
+	a1:m | d:m | a:m/e | a:m | \myFakeEndLine
+	d:m | e:7 | a1*2:m | \myFakeEndLine
+	e:7 | a:m | \myFakeEndLine
 
 	\repeat volta 2 {
-		e:7 | e:7 | a:m | a:m | \myFakeEndLine
-		e:7 | e:7/d | a:m | a:m | \myFakeEndLine
-		d:m | d:m | a:m | a:m | \myFakeEndLine
-		e:7 |
+		e1*2:7 | a:m | \myFakeEndLine
+		e1:7 | e:7/d | a1*2:m | \myFakeEndLine
+		d:m | a:m | \myFakeEndLine
+		e1:7 |
 	} \alternative {
-		{ e:7 | a:m | a:m | }
-		{ e:7 | a:m | a:m | }
+		{ e1:7 | a1*2:m | }
+		{ e1:7 | a1*2:m | }
 	} \myFakeEndLine
 
 	\repeat volta 2 {
-		a:m | a:m | d:m | a:m | \myFakeEndLine
+		a1*2:m | d1:m | a:m | \myFakeEndLine
 		d:m | a:m | e:7 | a:m | \myFakeEndLine
-		a:m | a:m | d:m | a:m | \myFakeEndLine
+		a1*2:m | d1:m | a:m | \myFakeEndLine
 		d:m | a:m/c | e:7/b |
 	} \alternative {
 		{ a:m | }
