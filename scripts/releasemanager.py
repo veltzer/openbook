@@ -16,7 +16,9 @@ class ReleaseManager:
 		self.section='release'
 		self.p_subject=self.config.get(self.section,'subject')
 		self.p_from=self.config.get(self.section,'from')
-		self.p_to=self.config.get(self.section,'to').split(',')
+		self.p_to_string=self.config.get(self.section,'to')
+		self.p_to=self.p_to_string.split(',')
+		self.p_doTo=self.config.get(self.section,'doTo')
 		self.p_smtp_host=self.config.get(self.section,'smtp_host')
 		self.p_smtp_port=self.config.get(self.section,'smtp_port')
 		self.p_content=self.config.get(self.section,'content')
@@ -46,7 +48,8 @@ class ReleaseManager:
 		msg=email.mime.text.MIMEText(self.p_content)
 		msg['Subject']=self.p_subject
 		msg['From']=self.p_from
-		msg['To']=self.p_to
+		if self.p_doTo:
+			msg['To']=self.p_to_string
 		# Send the message via our own SMTP server, but don't include the # envelope header.
 		server=smtplib.SMTP(self.p_smtp_host,self.p_smtp_port)
 		server.ehlo()
