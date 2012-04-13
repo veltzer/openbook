@@ -46,6 +46,7 @@ class ReleaseManager:
 		msg=email.mime.text.MIMEText(self.p_content)
 		msg['Subject']=self.p_subject
 		msg['From']=self.p_from
+		msg['To']=self.p_to
 		# Send the message via our own SMTP server, but don't include the # envelope header.
 		server=smtplib.SMTP(self.p_smtp_host,self.p_smtp_port)
 		server.ehlo()
