@@ -21,6 +21,8 @@
 	attributes['idyoutuberemark']="הביצוע המקורי של בנזין"
 	attributes['idyoutube']="wD0Zlwg5VOg"
 	attributes['lyricsurl']="http://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=187&wrkid=1537"
+
+	attributes['remark']="The chords were taken from the original song which is in the C scale"
 %>
 % endif
 
