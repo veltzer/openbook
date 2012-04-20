@@ -50,6 +50,7 @@ attr['toc']=True
 attr['inline']=True
 attr['midi']=False
 attr['parts']=True
+attr['doChordBars']=False
 file.write(template.render(attributes=attr))
 file.close()
 # python 3

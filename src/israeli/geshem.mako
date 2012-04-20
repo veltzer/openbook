@@ -1,14 +1,12 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
+	attributes['doChords']=True
+	attributes['doChordBars']=True
+	attributes['doExtra']=True
 	attributes['doGuitar']=True
-	attributes['doOwn']=True
+	attributes['render']="My"
 	attributes['heb']=True
-
-	#attributes['doChords']=True
-	#attributes['render']="My"
-	#attributes['doGuitar']=True
-	#attributes['doExtra']=True
 
 	attributes['title']=u"גשם"
 	attributes['style']="Israeli"
@@ -25,10 +23,9 @@
 %>
 % endif
 
-% if part=='Own':
-PartChords=\chordmode {
+% if part=='ChordsMy':
+\chordmode {
 	\startChords
-
 	\startSong
 
 	\repeat volta 2 {
@@ -68,27 +65,9 @@ PartChords=\chordmode {
 	%%\endSong
 	%%\endChords
 }
-%%PartFrets=\new FretBoards {
-%%	\PartChords
-%%}
-\score {
-	<<
-		%%\PartFrets
-		\new ChordNames="Chords"
-		%% this adds a bar engraver which does not always come with chords
-		%% I didn'f find a way to put this with the chords themselves...
-		\with {
-			%% for lilypond 2.12
-			%%\override BarLine #'bar-size = #4
-			\override BarLine #'bar-extent = #'(-2 . 2)
-			\consists "Bar_engraver"
-		}
-		\PartChords
-	>>
-	\midi {}
-	\layout {}
-}
+% endif
 
+% if part=='Extra':
 %% Lyrics
 \verticalSpace
 \verticalSpace
@@ -96,14 +75,9 @@ PartChords=\chordmode {
 	\small { %% \teeny \tiny \small \normalsize \large \huge
 		\fill-line {
 			\column {
-				"ברחובות כיבו מזמן את הניאון"
-				"את נראית לי עייפה נלך לישון"
-				"האור דולק בחדר השני"
-				"אבל מישהו בוכה וזה לא אני."
-				\null
-				"אני רוצה לשמור עלייך ועלי"
-				"היום עבר עלינו יום קשה מדי"
-				"בחוץ יורדים עכשיו גשמי ברכה"
+				"אין מקום לדאגה היי שקטה"
+				"אני איתך, את לא לבד לעת עתה"
+				"עכשיו הכל זורם כאן במנוחה"
 				"ואת בוכה, ואת בוכה."
 				\null
 				"ספרי לי מה כבד עלייך"
@@ -113,9 +87,14 @@ PartChords=\chordmode {
 			}
 			\null
 			\column {
-				"אין מקום לדאגה היי שקטה"
-				"אני איתך, את לא לבד לעת עתה"
-				"עכשיו הכל זורם כאן במנוחה"
+				"ברחובות כיבו מזמן את הניאון"
+				"את נראית לי עייפה נלך לישון"
+				"האור דולק בחדר השני"
+				"אבל מישהו בוכה וזה לא אני."
+				\null
+				"אני רוצה לשמור עלייך ועלי"
+				"היום עבר עלינו יום קשה מדי"
+				"בחוץ יורדים עכשיו גשמי ברכה"
 				"ואת בוכה, ואת בוכה."
 				\null
 				"ספרי לי מה כבד עלייך"
