@@ -26,6 +26,17 @@
 %>
 % endif
 
+% if part=='Doc':
+	DONE:
+	- put in the chords (my own extraction)
+	- put in the lyrics.
+	- put in a youtube performance.
+	- checked the chords.
+	- checked the lyrics.
+	TODO:
+	- put in the intro solo and the connection solo (it's pretty easy).
+% endif
+
 % if part=='ChordsMy':
 \chordmode {
 	\startChords
