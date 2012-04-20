@@ -47,7 +47,7 @@
 	\time 4/4
 	\key a \minor
 
-	c2 b | b16 c d4 c16 b b4 c | c4 c8 d dis e e4 | d16 e f4 e16 d d8 e e4 | 
+	c2 b | b16 c d4 c16 b b4 c | c4 c8 d dis e e4 | d16 e f4 e16 d d8 e e4 |
 	\repeat volta 2 {
 		g4 g8 a b4 b | fis fis8 gis a4 a | e e8 e e4 e | e fis8 gis a2 |
 	}

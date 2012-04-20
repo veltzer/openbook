@@ -1,11 +1,14 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['render']="My"
 	attributes['doGuitar']=True
-	attributes['doExtra']=True
+	attributes['doOwn']=True
 	attributes['heb']=True
+
+	#attributes['doChords']=True
+	#attributes['render']="My"
+	#attributes['doGuitar']=True
+	#attributes['doExtra']=True
 
 	attributes['title']=u"גשם"
 	attributes['style']="Israeli"
@@ -22,59 +25,70 @@
 %>
 % endif
 
-% if part=='ChordsMy':
-\chordmode {
+% if part=='Own':
+PartChords=\chordmode {
 	\startChords
 
 	\startSong
 
 	\repeat volta 2 {
-		g1 | g | d | d | \myEndLine
-		c | d | e:m | e:m | \myEndLine
-		g | g | d | d | \myEndLine
-		c | d | e:m | e:m | \myEndLine
+		g1*2 | d | \myEndLine
+		c1 | d | e1*2:m |
+	}
+	d | \myEndLine
+	\repeat volta 2 {
+		g1*2 | d | \myEndLine
+		c1 | d | e1*2:m |
+	}
+	d | \myEndLine
 
-		d | d |
+	e:m | d | \myEndLine
+	c1 | d | g | g2 g/fis | \myEndLine
+	e1*2:m | d | \myEndLine
+	c1 | d | e:m | \myEndLine
+	a:m | b:m | c | des:m7.5- | \myEndLine
+	b:m | g | c | e1*2 | \myEndLine
+
+	\repeat volta 2 {
+		a | e | \myEndLine
+		d1 | e | fis1*2:m |
+	}
+	e | \myEndLine
+
+	fis:m | e | \myEndLine
+	d1 | e | fis1*2:m | \myEndLine
+	fis:m | e | \myEndLine
+	d1 | e | fis:m | \myEndLine
+	\repeat volta 3 {
+		b:m | cis:m | d | ees:m7.5- | \myEndLine
+		cis:m | a | d | fis1*2 | \myEndLine
 	}
 
-	e:m | e:m | d | d | \myEndLine
-	c | d | g | g2 g/fis | \myEndLine
-	e1:m | e:m | d | d | \myEndLine
-	c | d | e:m | \myEndLine
-	a:m | b:m | c | des:m7.5- | \myEndLine
-	b:m | g | c | e | e | \myEndLine
-
-	a1 | a | e | e | \myEndLine
-	d | e | fis:m | fis:m | \myEndLine
-	a | a | e | e | \myEndLine
-	d | e | fis:m | fis:m | \myEndLine
-
-	e | e |
-
-	fis:m | fis:m | e | e | \myEndLine
-	d | e | fis:m | fis:m | \myEndLine
-	fis:m | fis:m | e | e | \myEndLine
-	d | e | fis:m | \myEndLine
-	b:m | cis:m | d | ees:m7.5- | \myEndLine
-	cis:m | a | d | fis | fis | \myEndLine
-	b:m | cis:m | d | ees:m7.5- | \myEndLine
-	cis:m | a | d | fis | fis | \myEndLine
-	b:m | cis:m | d | ees:m7.5- | \myEndLine
-	cis:m | a | d | fis | fis | \myEndLine
-
-	\endSong
-
-	\endChords
+	%% in order to see the closing repeats
+	%%\endSong
+	%%\endChords
 }
-% endif
-
-% if part=='FretsMy':
-\new FretBoards {
-	\PartChords
+%%PartFrets=\new FretBoards {
+%%	\PartChords
+%%}
+\score {
+	<<
+		%%\PartFrets
+		\new ChordNames="Chords"
+		%% this adds a bar engraver which does not always come with chords
+		%% I didn'f find a way to put this with the chords themselves...
+		\with {
+			%% for lilypond 2.12
+			%%\override BarLine #'bar-size = #4
+			\override BarLine #'bar-extent = #'(-2 . 2)
+			\consists "Bar_engraver"
+		}
+		\PartChords
+	>>
+	\midi {}
+	\layout {}
 }
-% endif
 
-% if part=='Extra':
 %% Lyrics
 \verticalSpace
 \verticalSpace
