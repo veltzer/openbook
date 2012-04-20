@@ -35,11 +35,9 @@
 % if part=='ChordsMy':
 \chordmode {
 	\startChords
-
 	\startSong
 
-	\mark "Verse"
-
+	\mark "בית"
 	\startPart
 	a1 | fis:m | d | g | a | \myEndLine
 	d | d:m | g | a | \myEndLine
@@ -47,13 +45,13 @@
 	a | cis:m | d | d:m | a | \myEndLine
 	\endPart
 
-	\mark "Chorus"
+	\mark "פזמון"
 	\startPart
 	fis1*2:m | cis:m | b:m | fis:m | \myEndLine
 	a | cis:m | b:m | fis:m | \myEndLine
 	\endPart
 
-	\mark "Instrumental"
+	\mark "אינסטרומנטלי"
 	\startPart
 	\startRepeat
 	fis1*2:m | cis:m | b:m | fis:m | \myEndLine
@@ -61,7 +59,6 @@
 	\endPart
 
 	\endSong
-
 	\endChords
 }
 % endif

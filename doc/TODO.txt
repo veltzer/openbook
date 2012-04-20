@@ -22,6 +22,8 @@ Now:
 
 Hebrew song book:
 =================
+- tempo markings should be in hebrew.
+	produce a hebrew table for tempo and work with that (blog about it?)
 - logo for the project.
 - table of contents: title needs to be changed to hebrew.
 - table of contents: page numbers should be on the left side.
