@@ -3,8 +3,9 @@
 <%
 	attributes['doGuitar']=True
 	attributes['doChords']=True
-	attributes['render']="My"
+	attributes['doChordBars']=True
 	attributes['doExtra']=True
+	attributes['render']="My"
 	attributes['heb']=True
 
 	attributes['title']=u"לא יכולתי לעשות כלום"
@@ -40,34 +41,28 @@
 	\mark "Verse"
 
 	\startPart
-	a1 | fis:m | d | g | a |
-	d | d:m | g | a |
-	a1 | fis:m | d | g | a |
-	a | cis:m | d | d:m | a |
+	a1 | fis:m | d | g | a | \myEndLine
+	d | d:m | g | a | \myEndLine
+	a1 | fis:m | d | g | a | \myEndLine
+	a | cis:m | d | d:m | a | \myEndLine
 	\endPart
 
 	\mark "Chorus"
 	\startPart
-	fis1*2:m | cis:m | b:m | fis:m |
-	a | cis:m | b:m | fis:m |
+	fis1*2:m | cis:m | b:m | fis:m | \myEndLine
+	a | cis:m | b:m | fis:m | \myEndLine
 	\endPart
 
 	\mark "Instrumental"
 	\startPart
 	\startRepeat
-	fis1*2:m | cis:m | b:m | fis:m |
+	fis1*2:m | cis:m | b:m | fis:m | \myEndLine
 	\endRepeat
 	\endPart
 
 	\endSong
 
 	\endChords
-}
-% endif
-
-% if part=='FretsMy':
-\new FretBoards {
-	\PartChords
 }
 % endif
 
@@ -78,28 +73,6 @@
 \markup {
 	\small { %% \teeny \tiny \small \normalsize \large \huge
 		\fill-line {
-			\column {
-				"לא יכולתי לעשות עם זה כלום, אתה שומע?"
-				"לא יכולתי לעשות עם זה כלום."
-				"זה היה אצלי בידיים..."
-				"ולא יכולתי לעשות כלום."
-				\null
-				"לא יכולתי לעשות משהו, אתה שומע?"
-				"יכולתי לגמגם"
-				"מה רציתי להגיד "
-				"יכולתי להרגיש הכי רע, שאפשר."
-				\null
-				"לא יכולתי לעשות עם זה כלום, אתה שומע?"
-				"לא יכולתי לעשות עם זה כלום."
-				"זה היה אצלי בידיים..."
-				"ולא יכולתי לעשות כלום."
-				\null
-				"לא יכולתי לעשות משהו, אתה שומע?"
-				"יכולתי לגמגם"
-				"מה רציתי להגיד"
-				"יכולתי להרגיש הכי רע, שאפשר."
-			}
-			\null
 			\column {
 				"ופתאום אתה עומד כמו ילד קטן"
 				"בסינור לצוואר וחוזר על השאלה"
@@ -124,6 +97,28 @@
 				"ואתה תצטרך להתחיל הכל מחדש."
 				\null
 				"לא יכולתי לעשות עם זה כלום."
+			}
+			\null
+			\column {
+				"לא יכולתי לעשות עם זה כלום, אתה שומע?"
+				"לא יכולתי לעשות עם זה כלום."
+				"זה היה אצלי בידיים..."
+				"ולא יכולתי לעשות כלום."
+				\null
+				"לא יכולתי לעשות משהו, אתה שומע?"
+				"יכולתי לגמגם"
+				"מה רציתי להגיד "
+				"יכולתי להרגיש הכי רע, שאפשר."
+				\null
+				"לא יכולתי לעשות עם זה כלום, אתה שומע?"
+				"לא יכולתי לעשות עם זה כלום."
+				"זה היה אצלי בידיים..."
+				"ולא יכולתי לעשות כלום."
+				\null
+				"לא יכולתי לעשות משהו, אתה שומע?"
+				"יכולתי לגמגם"
+				"מה רציתי להגיד"
+				"יכולתי להרגיש הכי רע, שאפשר."
 			}
 		}
 	}
