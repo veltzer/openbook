@@ -29,6 +29,31 @@
 	\startChords
 	\startSong
 
+	\mark "Intro"
+	f1 | g | c | a:m | \myEndLine
+	f | g | c1*2 | \myEndLine
+
+	\mark "Verse"
+	\repeat volta 2 {
+		c1*2 | g1*2 | \myEndLine
+		g1*2 | c1*2 | \myEndLine
+	}
+	bes1 | a | aes | g | \myEndLine
+	c2 c4 d | ees1 | c1*2 | \myEndLine
+
+	\mark "Chorus"
+	\repeat volta 2 {
+		f1 | g | c | a:m | \myEndLine
+		d:m7 | g | c | c:7 | \myEndLine
+	}
+	\mark "Interim"
+	f | g | c1*2 | \myEndLine
+
+	\mark "Ending"
+	\repeat volta 2 {
+		c1 | g | g | c | \myEndLine
+	}
+
 	\endSong
 	\endChords
 }
