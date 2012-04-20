@@ -124,7 +124,7 @@
 	%% part "A"
 	Is -- n't It Ro -- man -- tic? Mu -- sic in the night, a dream that can be heard.
 	Is -- n't It Ro -- man -- tic? Mov -- ing shad -- ows write the old -- est mag -- ic word.
-	%% Part "B"
+	%% part "B"
 	I hear the breez -- es play -- ing in the trees a -- bove.
 	While all the world is say -- ing you were meant for love.
 	%% Forward
