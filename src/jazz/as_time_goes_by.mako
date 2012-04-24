@@ -17,31 +17,38 @@
 	attributes['piece']="Ballad"
 	# this is still missing
 	#attributes['copyright']=""
-	attributes['completion']="0"
+	attributes['completion']="5"
 
 	attributes['uuid']="0a7b423c-7a4e-11e1-8d67-878c1414bdce"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
+	attributes['idyoutuberemark']="Classic Billie Holiday"
+	attributes['idyoutube']="vYoet7-qDHI"
+	attributes['idyoutuberemark']="The classic Sinatra performance with the Casablanca footage"
+	attributes['idyoutube']="AY62QByUYJQ"
+	attributes['lyricsurl']="http://www.lyrics007.com/Frank%20Sinatra%20Lyrics/As%20Time%20Goes%20By%20Lyrics.html"
 %>
 % endif
 
 % if part=='Doc':
-	TODO:
+	DONE:
+	- brough in the real book jazz epdf.
+	- put in the tunes meta data from the real book and from the internet.
+	- put in the tunes structure.
 	- put in the real book chords.
-	- brought in the real book epdf.
+	- put in a lyrics url.
+	- put in lyrics for the real book from the internet.
 	- put in the real book tune.
 	- checked the real book chords.
 	- checked the real book tune.
+	- adjusted the tunes speed.
 	- heard the tune to make sure it's ok.
-	- put in meta data (composer, poet).
+	- sync the words to the melody.
 	- put in youtube performances.
-	- put in lyrics url.
-	- put in the real book lyrics (from the internet)
+	TODO:
 	- put in the copyright (from where?)
-	- put more versions in here (from where?)
+	- put another version here (from where?)
+	- how do I put the last turn around chord (bes:7) in parenthesis?
 % endif
 
 % if part=='ChordsReal':
@@ -58,24 +65,24 @@
 		f1:7 | f2:m7 bes:7 |
 	} \alternative {
 		{
-			ees1:maj7 | f2:m7 bes:7 | \myEndLine
+			ees1:maj7 | f2:m7 bes:7 | \myEndLineVoltaNotLast
 		}
 		{
-			ees1:6 | bes2:m7 ees:7 | \myEndLine
+			ees1:6 | bes2:m7 ees:7 | \myEndLineVoltaLast
 		}
 	}
 	\endPart
 
 	\mark "B"
 	\startPart
-	a1:maj7 | c:7 | f:m | a:dim | \myEndLine
+	aes1:maj7 | c:7 | f:m | a:dim | \myEndLine
 	c2:m aes:7 | f1:7 | bes2:7 bes:dim | bes1:7 | \myEndLine
 	\endPart
 
 	\mark "A"
 	\startPart
 	f2:m7 bes:7 | bes:m6 bes:7 | ees:6 f:m7 | fis:dim7 g:m7 | \myEndLine
-	f1:7 | g2:m7 c:7 | f:m7 bes:7 | ees
+	f1:7 | g2:m7 c:7 | f:m7 bes:7 | ees4:6 des:7 ees:6 bes:7 | \myEndLine
 	\endPart
 
 	\endSong
@@ -86,32 +93,29 @@
 % if part=='VoiceReal':
 \relative c'' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Allegro" 4 = 130
-	\time 3/4
-	\key c \major
+	\tempo "Andante" 4 = 76
+	\time 4/4
+	\key ees \major
 
 	%% A part
+	g8 |
 	\repeat volta 2 {
-		g2. | g'2 f4 | e2 c4 | g2. |
-		d'4 e f | e2 d4 | e2 c4 | g2. |
-		d'4 e f | e2 d4 | e2 g4 | c2 a4 |
-		g2 f4 | e2 d4 |
+		aes g f ees f4. g8 | bes8 aes g f aes4. bes8 | ees8 d c bes c2 | r2 r4 d4 |
+		f8 ees d c d4 ees | bes bes ees, f |
 	} \alternative {
-		{ g2.~ | g | }
-		{ c,2.~ | c2 cis4 | }
+		{
+			g1~ | g2 r4 r8 g |
+		}
+		{
+		  	ees1~ | ees2 r |
+		}
 	}
-
 	%% B part
-	d2. | a' | g | c, |
-	d4 e f | g2 a4 | b2 g4 | e2. |
-	fis | c' | b2 g4 | e2. |
-	a2 g4 | f2 e4 | d2 c4 | b2. |
-
+	ees8 f ees c'~ c4 c | c8 des c b c2 | f,8 g f c'~ c4 c | c8 des c b c2 |
+	g8 aes g ees'~ ees4 ees | ees8 d ees d f4 d | c c g g | bes2. r8 g |
 	%% A part
-	g2. | g'2 f4 | e2 c4 | g2. |
-	d'4 e f | e2 d4 | e2 c4 | g2. |
-	d'4 e f | e2 d4 | e2 g4 | c2 a4 |
-	g2 f4 | e2 d4 | c2.~ | c |
+	aes g f ees f f4 g8 | bes8 aes g f aes8 aes4 bes8 | ees8 d c bes c2 | r2 r4 d4 |
+	f8 ees d c d4 ees | bes bes2 g4 | bes2 bes | ees2. r8 g, |
 }
 % endif
 
@@ -119,29 +123,34 @@
 %% This is taken from the inetnet and adjusted for this tune
 \lyricmode {
 	%% A part
-	A -- lice In Won -- der -- land
-	How do you get to won -- der -- land
-	O -- ver the hill or un -- der -- land
-	or just be -- hind the tree __
+	You must re -- mem -- ber this
+	A kiss is still a kiss
+	A sigh is still a sigh
+	The fun -- da -- men -- tal things app -- ly
+	As Time Goes By
+	%% A part
+	And _
+	%% B part
+	Moon -- light and love songs- nev -- er out of date
+	Hearts full of pas -- sion- jea -- lou -- sy and hate
+	Wo -- men needs man- and man must have his mate
+	That no one can de -- ny
+	%% A part
+	It's still the same old sto -- ry
+	A fight for love and glo -- ry
+	A case of do or die
+	The world will al -- ways wel -- come lov -- ers
+	As Time Goes By
 }
 % endif
 
 % if part=='LyricsmoreReal':
 \lyricmode {
 	%% A part
-	When clouds go rol -- ling by
-	They roll a -- way and leave the sky
-	Where is the land be -- yond the eye
-	That peo -- ple can -- not _ see __
-	%% B part
-	And where do stars go
-	Where is the sil -- ver cre -- scent moon
-	They must be some -- where
-	in the sun -- ny af -- ter -- noon
-	%% A part
-	A -- lice In Won -- der -- land
-	Where is the path to won -- der -- land
-	O -- ver the hill or here or there
-	I real -- ly won -- der where __
+	And when two lov -- ers woo
+	They still say: "\"I" love "you\""
+	On that you can re -- ly
+	No mat -- ter what the fu -- ture brings
+	As Time Goes _ _ By
 }
 % endif
