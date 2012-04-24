@@ -315,9 +315,15 @@ ${self.clearVars()}
 %>
 % endif
 % else:
+% if attributes['heb']:
 <%
-	attributes['copyright']=u'© '+attributes['copyright']
+	attributes['copyright']=u'זכויות יוצרים © '+attributes['copyright']
 %>
+% else:
+<%
+	attributes['copyright']=u'Copyright © '+attributes['copyright']
+%>
+% endif
 % endif
 
 % if attributes['tagline']=='':

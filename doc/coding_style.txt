@@ -31,7 +31,9 @@ name of files:
 If a song is called "Autumn Leaves" it will be in a file called "autumn_leaves.gpp".
 - spaces are replaced by underscores.
 - up case moves to low.
-- apostrophes, and any other special punctuation marks, are removed: "Gloria's Step" -> "glorias_step.gpp"
+- apostrophes, and any other special punctuation marks, are removed. examples:
+	"Gloria's Step" -> "glorias_step.mako"
+	"Hallelujah I Love Him (Her) So" -> "hallelujah_i_love_him_her_so.mako"
 
 This alteration has the following advantages:
 	- it is deterministic and could be implemented using a three line function in
