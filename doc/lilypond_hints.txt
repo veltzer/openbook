@@ -136,7 +136,7 @@ Lyrics
 	I know it's weird.
 	If you want to print ["Hello"] you can do "\""Hello"\"" or "\"" Hello "\"".
 	The first one will show as "\""Hello"\"" and the second as " Hello ". Both are not what you want.
-	See "they_all_laughed" for an example.
+	See "have you met miss jones" for an example.
 - setting the fonts for the lyrics:
 	\override Score . LyricText #'font-size = #-3
 - not singing even though there is music (real no lyrics):
