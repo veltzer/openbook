@@ -107,7 +107,7 @@
 			g1~ | g2 r4 r8 g |
 		}
 		{
-		  	ees1~ | ees2 r |
+			ees1~ | ees2 r |
 		}
 	}
 	%% B part
