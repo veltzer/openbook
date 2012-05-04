@@ -17,6 +17,8 @@
 
 import subprocess
 
+import versioncheck
+
 packs=[
 	'perl', # for the perl scripts
 	'python', # for the python scripts

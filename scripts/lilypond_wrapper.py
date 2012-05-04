@@ -7,6 +7,8 @@ import sys # for argv
 import os # for chmod
 import subprocess # for Popen
 
+import versioncheck
+
 # this function is here because python2.6 does not have subprocess.check_output
 def system_check_output(args):
 	pr=subprocess.Popen(args,stdout=subprocess.PIPE,stderr=subprocess.PIPE)

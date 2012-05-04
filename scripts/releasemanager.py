@@ -7,6 +7,8 @@ import os
 import sys
 import tweepy
 
+import versioncheck
+
 class ReleaseManager:
 	def __init__(self):
 		self.debug=False
