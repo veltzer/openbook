@@ -1,0 +1,7 @@
+Discussion of the lilypond version needed for this project:
+
+I really needed the features and bug fixes in 2.14.2 so I installed it on my own
+machine at /local/tools on top of ubuntu 11.04/10
+
+Then came 12.04 and 2.14.2 is there already. So my private version is no longer
+neccessary.
