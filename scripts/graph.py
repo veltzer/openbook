@@ -25,6 +25,8 @@ import dateutil.parser
 import MySQLdb
 import warnings
 
+import versioncheck
+
 # turn warnings into errors
 warnings.filterwarnings("error")
 debug=False

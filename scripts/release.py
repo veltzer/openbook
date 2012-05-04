@@ -14,6 +14,8 @@ import subprocess
 import os # for getcwd
 import releasemanager
 
+import versioncheck
+
 ##############
 # parameters #
 ##############

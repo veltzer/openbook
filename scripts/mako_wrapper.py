@@ -5,6 +5,8 @@ import mako.template
 import mako.lookup
 import os # for os.chmod, os.unlink
 
+import versioncheck
+
 if len(sys.argv)!=3:
 	raise ValueError('command line issue')
 
