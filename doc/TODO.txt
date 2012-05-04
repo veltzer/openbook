@@ -1,5 +1,8 @@
 Now:
 ====
+- make sure we use python 2.7. 2.6 does not seem to compile the project.
+	do a document about the right python version.
+	Do an auto check for the right python version.
 - tweeter api does not work. check it out and fix it.
 - add the facebook api to release manager and see that it works.
 
