@@ -5,3 +5,6 @@ machine at /local/tools on top of ubuntu 11.04/10
 
 Then came 12.04 and 2.14.2 is there already. So my private version is no longer
 neccessary.
+
+The descision is to keep using the public version on ubuntu. This will make new
+contributors happy and I think I can stick to the 2.14 feature set for now.
