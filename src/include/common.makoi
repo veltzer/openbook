@@ -234,7 +234,7 @@ ${self.defs()}
 				\null
 				\fill-line { \huge \bold "Lead developer: Mark Veltzer <mark.veltzer@gmail.com>" }
 				\null
-				\fill-line { \huge \bold "Typesetting copyright: © 2011, Mark Veltzer <mark.veltzer@gmail.com>" }
+				\fill-line { \huge \bold "Typesetting copyright: © 2011-2012 Mark Veltzer <mark.veltzer@gmail.com>" }
 				\null
 				\fill-line { \huge \bold "Tune copyright: © belong to their respective holders" }
 				\null
