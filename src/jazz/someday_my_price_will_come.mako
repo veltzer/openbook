@@ -10,7 +10,11 @@
 
 	attributes['title']="Someday My Prince Will Come"
 	attributes['style']="Jazz"
-	attributes['composer']="Frank Churchill, Larry Morey"
+	# this is from the internet
+	attributes['composer']="Frank Churchill"
+	# this is from the internet
+	attributes['poet']="Larry Morey"
+	# this is from the real book
 	attributes['piece']="Med. Jazz Waltz"
 
 	attributes['completion']="5"
