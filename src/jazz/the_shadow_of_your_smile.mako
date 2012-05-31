@@ -12,8 +12,13 @@
 	attributes['composer']="Johnny Mandel"
 	# this is from wikipedia
 	attributes['poet']="Paul Francis Webster"
+	# this is from the new real book vol 3
+	attributes['piece']="Medium Bossa (or Swing)"
 	# this is from the real book
 	attributes['piece']="Slow Bossa"
+	# this is from the new real book vol 3
+	attributes['copyright']="1965 (Renewed 1993) MGM/EMI Miller Catalog, Inc"
+	attributes['copyrightextra']="Used by Permission of CPP/Belwin, Inc, Miami, FL"
 
 	attributes['completion']="5"
 	attributes['uuid']="dff04e04-a969-11e1-b8c5-5a1faa0d3cc5"
@@ -41,8 +46,9 @@
 	- checked the real book tune.
 	- checked the real book lyrics.
 	- put in youtube performances.
+	- filled in the copyright for this tune (from the new real book vol 3).
 	TODO:
-	- put in another version of this tune.
+	- put in the new reall book version of this tune (already have the epdf).
 	- in the real book version how do I put the last b:7 chord and its tune in parenthesis?
 % endif
 
