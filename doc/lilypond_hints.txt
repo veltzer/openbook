@@ -20,6 +20,11 @@ Melody:
 	and should be connected by one beam but since the melody rises and falls lilypond decides
 	to connect it with one beam. In order to get around it use manual beams this way:
 	b8.[ b16 a8. g16] a8
+- putting a Fine in the tune:
+	g1~ \mark \markup { \italic { Fine } }
+	This will put the Fine on top of the staff.
+	If you want it below the staff then use:
+	g1  | r4_\markup { \italic { Fine } }
 
 Chords:
 =======
