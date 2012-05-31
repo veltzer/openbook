@@ -18,8 +18,10 @@
 	attributes['completion']="5"
 	attributes['uuid']="dff04e04-a969-11e1-b8c5-5a1faa0d3cc5"
 
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
+	attributes['idyoutuberemark']="A very sensitive rendition by Dexter Gordon"
+	attributes['idyoutube']="8PttNhYVY3c"
+	attributes['idyoutuberemark']="Sarah Vaughan, fucking awesome"
+	attributes['idyoutube']="t9HxfF7faXk"
 
 	attributes['structure']="ABAC"
 	attributes['remark']="The structure could also be thought of as AB but it is very close to a pure ABAC"
@@ -31,8 +33,17 @@
 	DONE:
 	- filled in the lyrics URL.
 	- filled in all the meta data for this tune.
+	- filled in the tunes structure.
+	- put in the real book chords.
+	- put in the real book tune.
+	- put in lyrics to the real book version.
+	- checked the real book chords.
+	- checked the real book tune.
+	- checked the real book lyrics.
+	- put in youtube performances.
 	TODO:
-	- in the real book version how do I put the last b:7 chord in parenthesis?
+	- put in another version of this tune.
+	- in the real book version how do I put the last b:7 chord and its tune in parenthesis?
 % endif
 
 % if part=='ChordsReal':
@@ -46,7 +57,7 @@
 	fis1:m7 | b2:7.9 b:7.9- | e1:m7 | a:7 | \myEndLine
 	a:m7 | d:7 | g:maj7| c:maj7 | \myEndLine
 	%% B part
-	fis:m7.5- | b:7 | e1.:m7 e2:7/d | \myEndLine
+	fis:m7.5- | b:7 | e1.:m7 e2:m7/d | \myEndLine
 	cis1:m7.5- | fis:7 | fis:m7 | b:7 | \myEndLine
 	%% A part
 	fis1:m7 | b2:7.9 b:7.9- | e1:m7 | a:7 | \myEndLine
@@ -71,6 +82,16 @@
 
 	%% A part
 	cis,2. fis4 | dis2. c!4 | b1~ | b4. b8 e fis g b |
+	e,2. a4 | fis2. d4 | b'1~ | b2 c8 b a g |
+	%% B part
+	a2. c,4 | b2. a'4 | g1~ | g2 b8 a g fis |
+	g2. b,4 | ais2. g'4 | fis1~ | fis4 r8 b, e fis g b |
+	%% A part
+	cis,2. fis4 | dis2. c!4 | b1~ | b4. b8 e fis g b |
+	e,2. c'4 | a2. fis4 | d'1~ | d2 e8 d c b |
+	%% C part
+	c4. e,8 c'2~ | c d8 c b a | b4. d,8 b'2~ | b c8 b a gis |
+	a4. cis,8 a'2~ | a4. c,!8 b' a g fis | g1  | r4_\markup { \italic { Fine } } r8 b, e fis g b |
 }
 % endif
 
@@ -78,27 +99,20 @@
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics).
 \lyricmode {
 	%% A part
-	The sha -- dow of your smile
-	When you are gone
-	Will co -- lor all my dreams
-	And light the dawn
+	The sha -- dow of your smile, when you are gone. __
+	Will co -- lor all my dreams, and light the dawn. __
 	%% B part
-	Look into my eyes, my love, and see
-	All the lovely things you are to me
+	Look in -- to my eyes, my love, and see. __
+	All the love -- ly things you are to me. __
 	%% A part
-	A wistful little star
-	Was far too high
-	A tear drop kissed your lips
-	and so did I
+	A wist -- ful lit -- tle star, was far too high. __
+	A tear drop kissed your lips, and so did I. __
 	%% C part
-	Now when I remember spring
-	All the joy that love can bring
-	I will be remembering
-	The shadow of your smile
-
-	Now when I remember spring
-	All the love that joy can bring
-	I will be remembering
-	The shadow of your smile...
+	Now when I re -- mem -- ber spring. __
+	All the joy that love can bring. __
+	I will be re -- mem -- be -- ring __
+	The sha -- dow of your smile.
+	%% return
+	The sha -- dow of your
 }
 % endif
