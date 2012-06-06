@@ -8,7 +8,7 @@
 	attributes['render']="Real"
 
 	attributes['title']="Someone To Watch Over Me"
-	attributes['style']="Jazz Ballad"
+	attributes['style']="Jazz"
 	attributes['composer']="George Gershwin"
 	attributes['poet']="Ira Gershwin"
 	attributes['piece']="Jazz Ballad"
