@@ -6,7 +6,7 @@
 	attributes['doLyrics']=True
 	attributes['render']="Fake"
 
-	attributes['title']="Things We Did Last Summer"
+	attributes['title']="The Things We Did Last Summer"
 	attributes['style']="Jazz"
 	# from the fake book
 	attributes['composer']="Sammy Chan & Jule Styne"
