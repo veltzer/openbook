@@ -8,10 +8,11 @@
 	attributes['render']="Real"
 
 	attributes['title']="The Girl From Ipanema"
-	attributes['style']="Bossa Nova"
+	attributes['style']="Jazz"
 	attributes['subtitle']="Garota De Ipanema"
 	attributes['composer']="Antonio Carlos Jobim"
 	attributes['poet']="Vincius De Moraes, Norman Gimbel"
+	attributes['piece']="Bossa Nova"
 	attributes['piece']="Moderate Bossa Nova"
 	attributes['copyright']="1963, Antonio Carlos Jobim and Vincius De Moraes, Brazil"
 	attributes['copyrightextra']="Sole Selling Agent Duchess Music Corporation (MCA), New York, NY for all. English speaking countries"

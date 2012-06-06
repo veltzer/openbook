@@ -47,6 +47,7 @@
 	- checked the real book lyrics.
 	- put in youtube performances.
 	- filled in the copyright for this tune (from the new real book vol 3).
+	- heard the real book version to make sure it sounds good and in the right tempo.
 	TODO:
 	- put in the new reall book version of this tune (already have the epdf).
 	- in the real book version how do I put the last b:7 chord and its tune in parenthesis?
