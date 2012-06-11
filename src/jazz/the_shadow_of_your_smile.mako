@@ -98,7 +98,7 @@
 	e,2. c'4 | a2. fis4 | d'1~ | d2 e8 d c b |
 	%% C part
 	c4. e,8 c'2~ | c d8 c b a | b4. d,8 b'2~ | b c8 b a gis |
-	a4. cis,8 a'2~ | a4. c,!8 b' a g fis | g1  | r4_\markup { \italic { Fine } } r8 b, e fis g b |
+	a4. cis,8 a'2~ | a4. c,!8 b' a g fis | g1 | r4_\markup { \italic { Fine } } r8 b, e fis g b |
 }
 % endif
 
