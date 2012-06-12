@@ -28,7 +28,7 @@
 	attributes['idyoutuberemark']="The original Coltrane version..."
 	attributes['idyoutube']="BZRnkBK_0no"
 	attributes['lyricsurl']="http://www.bjazz.com/Giant_Steps.html"
-	
+
 	attributes['remark']="the key here is of little meaning as the harmony changes key all the time...:) That's why it's written in C."
 %>
 % endif

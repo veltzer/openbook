@@ -60,10 +60,10 @@
 
 	\startPart
 	\repeat volta 2 {
-	  	\mark "A"
+		\mark "A"
 		a1*2:m6 | b1:m7.5- | e:7 | \myEndLine
 		a2:m7 d:7 | g:m7 c:7 | f1*2:6 | \myEndLine
-	  	\mark "B"
+		\mark "B"
 		fis1:m7.5- | b:7.9- | e:m7.5- | a:7.9- | \myEndLine
 		d:m7.5- | b2:m7.5- e:7 |
 	}
