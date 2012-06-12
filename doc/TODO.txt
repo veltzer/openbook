@@ -1,5 +1,7 @@
 Now:
 ====
+- check that all tunes have structure markings in them
+	(\mark "A", \mark "B", etc)
 - make sure we use python 2.7. 2.6 does not seem to compile the project.
 	Do an auto check for the right python version.
 - tweeter api does not work. check it out and fix it.
