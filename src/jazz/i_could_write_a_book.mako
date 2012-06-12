@@ -24,31 +24,37 @@
 	attributes['copyright']="1940, Chappell & Co., Inc. Copyright Renewed."
 
 	attributes['structure']="ABAC"
+	attributes['structureremark']="could be categorized as AB"
 
 	attributes['completion']="5"
 	attributes['uuid']="e00ddbf8-a26e-11df-92da-0019d11e5a41"
 
+	attributes['idyoutuberemark']="Frank in the classic vocal version"
+	attributes['idyoutube']="UwoZNHhFgLQ"
+	attributes['idyoutuberemark']="Miles swings!"
 	attributes['idyoutube']="_DH46QyK2cw"
+	attributes['lyricsurl']="http://www.lorenzhart.org/booksng.htm"
 %>
 % endif
 
 % if part=='Doc':
 	DONE:
 	- added the real book epdf.
-	- filled in the tunes meta data.
+	- filled in the tunes meta data (from real and fake book).
 	- added the real book chords.
 	- added the real book tune.
-	- added the real book lyrics.
+	- added the real book lyrics (from the fake book).
 	- put in the tunes structure (in the meta data and in the tune itself).
 	- added the fake book epdf.
+	- added youtube performance.
+	- added lyrics url.
+	- checked the real book chords.
+	- checked the real book tune. 
+	- checked the real book lyrics. 
+	- checked that the tune sounds good (rythm wise and note wise).
 	TODO:
-	- check the real book chords.
-	- check the real book tune. 
-	- check the real book lyrics. 
-	- add the fake book epdf.
-	- add youtube performance.
-	- add lyrics url.
 	- how do I put the last two chords in the real book version in parenthesis?
+	- add the fake book version.
 % endif
 
 % if part=='ChordsReal':
@@ -72,7 +78,7 @@
 		{
 			\mark "C"
 			a2:m a:m7+ | a:m7 a:m6 | g2:m7 c:7 | f:maj7 f4:m7 bes:7 | \myEndLine
-			c2 a:7 | d:m7 g:7 | c1:maj7 | d2:m7 g:7 | \myEndLine
+			c2:maj7 a:7 | d:m7 g:7 | c1:6 | d2:m7 g:7 | \myEndLine
 		}
 	}
 
@@ -93,24 +99,25 @@
 	\repeat volta 2 {
 		%% A part
 		g2 b | a4 g e d | e1~ | e4 g e d |
-		e g e d | e c'8 r r4 e, | g1~ | g4 r a b |
+		e g e d | e c'2 e,4 | g1~ | g2 a4 b |
 	}
 	\alternative {
 		{
 			%% B part
-			c2 c | c4 d8 r r4 b | a2 a | g e4 fis |
-			g2 g | g4 a8 r r4 fis | g1~ | g4 r e f |
+			c2 c | c4 d2 b4 | a2 a | g e4 fis |
+			g2 g | g4 a2 fis4 | g1~ | g4 r e f |
 		}
 		{
 			%% C part
-			c'2 c | c4 d8 r r4 b | bes2 bes | a g4 f |
-			e2 e | d4 c'8 r r4 b | c1~ | c2 r |
+			c'2 c | c4 d2 b4 | bes2 bes | a g4 f |
+			e2 e | d4 c'2 b4 | c1 | r2 e,4 f |
 		}
 	}
 }
 % endif
 
 % if part=='LyricsReal':
+%% these are lyrics from the fake book adjusted for the real book
 \lyricmode {
 	%% partial
 	If they
@@ -143,6 +150,9 @@
 
 	%% C part
 	world dis -- cov -- ers as my book ends,
-	how to make two lov -- ers of friends. __
+	how to make two lov -- ers of friends.
+
+	%% partial
+	If they
 }
 % endif
