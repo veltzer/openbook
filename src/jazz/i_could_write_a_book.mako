@@ -49,8 +49,8 @@
 	- added youtube performance.
 	- added lyrics url.
 	- checked the real book chords.
-	- checked the real book tune. 
-	- checked the real book lyrics. 
+	- checked the real book tune.
+	- checked the real book lyrics.
 	- checked that the tune sounds good (rythm wise and note wise).
 	TODO:
 	- how do I put the last two chords in the real book version in parenthesis?
