@@ -108,6 +108,8 @@ SOURCES_ALL:=$(subst ./,,$(shell find src -type f -and -name "*.mako" -or -name 
 FILES_MAKO:=$(filter %.mako,$(SOURCES_ALL))
 FILES_MAKOI:=$(filter %.makoi,$(SOURCES_ALL))
 
+FILES_COMPLETED_JAZZ:=$(shell grep -l \'completion\']=\"5\" src/jazz/*)
+
 FILES_WEB:=$(subst ./,,$(shell find mako -type f))
 OUT_WEB:=$(addprefix $(OUT_DIR)/,$(notdir $(FILES_WEB)))
 WEB_WEB:=$(addprefix $(WEB_DIR)/,$(notdir $(FILES_WEB)))
@@ -220,6 +222,7 @@ debug:
 	$(info WEB_PS is $(WEB_PS))
 	$(info WEB_PDF is $(WEB_PDF))
 	$(info WEB_WEB is $(WEB_WEB))
+	$(info FILES_COMPLETED_JAZZ is $(FILES_COMPLETED_JAZZ))
 
 .PHONY: todo
 todo:
@@ -282,6 +285,10 @@ check_poet:
 check_copyright:
 	$(info doing [$@])
 	$(Q)-grep --files-without-match "attributes\['copyright'\]=" $(FILES_MAKO)
+.PHONY: check_mark
+check_mark:
+	$(info doing [$@])
+	$(Q)-grep --files-without-match "\\\\mark" $(FILES_COMPLETED_JAZZ)
 .PHONY: check_completion
 check_completion:
 	$(info doing [$@])
@@ -311,7 +318,7 @@ check_threeunderscores:
 	$(info doing [$@])
 	$(Q)-grep "___" $(FILES_MAKO)
 .PHONY: check_all
-check_all: check_empty_copyright check_ws check_and check_extra_files check_min_chords check_uuid check_chordChanges check_bar check_break check_completion check_include check_threeunderscores
+check_all: check_empty_copyright check_ws check_and check_extra_files check_min_chords check_uuid check_chordChanges check_bar check_break check_completion check_include check_threeunderscores check_mark
 
 # rules
 
