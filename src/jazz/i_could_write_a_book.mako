@@ -9,11 +9,21 @@
 
 	attributes['title']="I Could Write A Book"
 	attributes['style']="Jazz"
+	# this is from the fake book
 	attributes['subtitle']="From 'Pal Joey'"
+	# this is from the real book and the fake book
 	attributes['composer']="Richard Rodgers"
+	# this is from the real book and the fake book
 	attributes['poet']="Lorenz Hart"
+	# this is from the jazz fake book
 	attributes['piece']="Modeartely Slow"
-	attributes['copyright']="1940, Chappel & Co."
+	# this is from the real book
+	attributes['piece']="Ballad"
+
+	# this is from the jazz fake book
+	attributes['copyright']="1940, Chappell & Co., Inc. Copyright Renewed."
+
+	attributes['structure']="ABAC"
 
 	attributes['completion']="5"
 	attributes['uuid']="e00ddbf8-a26e-11df-92da-0019d11e5a41"
@@ -24,9 +34,21 @@
 
 % if part=='Doc':
 	DONE:
+	- added the real book epdf.
+	- filled in the tunes meta data.
+	- added the real book chords.
+	- added the real book tune.
+	- added the real book lyrics.
+	- put in the tunes structure (in the meta data and in the tune itself).
+	- added the fake book epdf.
 	TODO:
-	- document the youtube performance.
-	- mark what was done in this.
+	- check the real book chords.
+	- check the real book tune. 
+	- check the real book lyrics. 
+	- add the fake book epdf.
+	- add youtube performance.
+	- add lyrics url.
+	- how do I put the last two chords in the real book version in parenthesis?
 % endif
 
 % if part=='ChordsReal':
@@ -36,24 +58,23 @@
 
 	\partial 2 s2 |
 
-	\startPart
-
 	\repeat volta 2 {
-		c2:maj7 a:m9 | d:m7 g:7 | c1:maj7 | c2:maj7 g:7 | \myEndLine
+		\mark "A"
+		c2:maj7 a:m7 | d:m7 g:7 | c1:maj7 | c2:maj7 g:7 | \myEndLine
 		c:maj7 g:7 | c:maj7 cis:dim7 | d1:m7 | g:7 | \myEndLine
-		c2/e aes:7/ees | d:m7 g:7 |
 	}
 	\alternative {
 		{
-			a:m7 d:7.9- | g2. b4:7 | \myEndLine
+			\mark "B"
+			c2/e aes:7/ees | d:m7 g:7 | a:m7 d:7.9- | g2.:maj7 b4:7 | \myEndLine
 			e1:m | a2:m7 d:7 | d1:m7 | g:7 | \myEndLine
 		}
 		{
-			g2:m7 c:7 | f:maj7 f4:m7 bes:7 | \myEndLine
-			c2 a:7 | d:m7 g:7 | c1:maj7 | c:maj7 | \myEndLine
+			\mark "C"
+			a2:m a:m7+ | a:m7 a:m6 | g2:m7 c:7 | f:maj7 f4:m7 bes:7 | \myEndLine
+			c2 a:7 | d:m7 g:7 | c1:maj7 | d2:m7 g:7 | \myEndLine
 		}
 	}
-	\endPart
 
 	\endSong
 	\endChords
@@ -67,20 +88,23 @@
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 
-	\partial 2 e4 f4 |
+	%% partial
+	\partial 2 e4 f |
 	\repeat volta 2 {
-		g2 b2 | a4 g e d | e1~ | e4 g e4 d4 |
-		e4 g4 e4 d4 | e4 c'8 r8 r4 e,4 | g1~ | g4 r4 a4 b4 |
-		c2 c2 | c4 d8 r8 r4 b4 |
+		%% A part
+		g2 b | a4 g e d | e1~ | e4 g e d |
+		e g e d | e c'8 r r4 e, | g1~ | g4 r a b |
 	}
 	\alternative {
 		{
-			a2 a2 | g2 e4 fis4 |
-			g2 g2 | g4 a8 r8 r4 fis4 | g1~ | g4 r4 e4 f4 |
+			%% B part
+			c2 c | c4 d8 r r4 b | a2 a | g e4 fis |
+			g2 g | g4 a8 r r4 fis | g1~ | g4 r e f |
 		}
 		{
-			bes2 bes2 | a2 g4 f4 |
-			e2 e2 | d4 c'8 r8 r4 b4 | c1~ | c2 r2 |
+			%% C part
+			c'2 c | c4 d8 r r4 b | bes2 bes | a g4 f |
+			e2 e | d4 c'8 r r4 b | c1~ | c2 r |
 		}
 	}
 }
@@ -88,23 +112,37 @@
 
 % if part=='LyricsReal':
 \lyricmode {
-	If they asked me I Could Write A Book,
-	a -- bout the way you walk and whis -- per and look,
-	I could write a pre -- face on how we met,
-	so the world would nev -- er for -- get,
+	%% partial
+	If they
+
+	%% A part
+	asked me I Could Write A Book, __
+	a -- bout the way you walk and whis -- per and look, __
+	I could
+
+	%% B part
+	write a pre -- face on how we met,
+	so the world would nev -- er for -- get, __
 
 	and the
-
-	my book ends,
-	how to make two lov -- ers of friends.
-
 }
 % endif
 
 % if part=='LyricsmoreReal':
 \lyricmode {
-	_ _ sim -- ple se -- cret of the plot
-	is just to tell them that I love you a -- lot,
-	then the world dis -- cov -- ers as
+	%% partial
+	_ _
+
+	%% A part
+	sim -- ple se -- cret of the plot __
+	is just to tell them that I love you a -- lot, __
+	then the
+
+	%% B part
+	_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+	%% C part
+	world dis -- cov -- ers as my book ends,
+	how to make two lov -- ers of friends. __
 }
 % endif

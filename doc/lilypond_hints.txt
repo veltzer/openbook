@@ -69,6 +69,10 @@ c:9 which is c:7.9 which is correct for jazz but not for rock.
 	My own exception will handle this and will print it out as "7sus".
 	This seems to be the correct definition of a sus chord (4'th note suspended) in Jazz according
 	to wikipedia and my own experience. 2 sus is rarely used in jazz and usually marked as sus2 or sus9.
+- minor/major chords:
+	a:m7+
+	see discussion on:
+	http://osdir.com/ml/lilypond-user-gnu/2009-09/msg00254.html
 
 questions:
 - how do I put chords in parenthesis? I still do not know.

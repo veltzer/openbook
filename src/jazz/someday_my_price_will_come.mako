@@ -27,23 +27,25 @@
 	attributes['idyoutuberemark']="and Bill again"
 	attributes['idyoutube']="KUT06K5eGz4"
 
-	attributes['structure']="AB"
+	attributes['structure']="ABAC"
+	attributes['structureremark']="This could be thought of as AB as well"
 	attributes['lyricsurl']="http://artists.letssingit.com/disney-lyrics-someday-my-prince-will-come-31rjgwv"
 %>
 % endif
 
 % if part=='Doc':
 	DONE:
-	for the real book version:
-	- made sure it sounds fine.
-	- made sure the chords are good.
-	- made sure the melody is right.
-	- aligned the lyrics.
-	- added an epdf from the real book.
+	- added an epdf for the real book.
+	- put in the real book chords.
+	- put in the real book tune.
+	- put in the real book lyrics.
+	- made sure the real book chords are good.
+	- made sure the real book melody is right.
+	- made sure the real book version sounds fine.
+	- put in the tunes structure.
 	TODO:
 	- add copyright notice.
-	- add a fakebook version (is there one?)
-	- fixup names of composers and poets (I'm not sure they are right)
+	- add another version of this tune.
 % endif
 
 % if part=='ChordsReal':
@@ -51,15 +53,18 @@
 	\startChords
 	\startSong
 
+	\mark "A"
 	\repeat volta 2 {
 		bes2.:maj7 | d:7.5+ | ees:maj7 | g:7.5+ | \myEndLine
 		c:m7 | g:7.5+ | c:7 | f:7 | \myEndLine
 	} \alternative {
 		{
+			\mark "B"
 			d:m7 | des:dim | c:m7 | f:7 | \myEndLine
 			d:m7 | des:dim | c:m7 | f:7 | \myEndLine
 		}
 		{
+			\mark "C"
 			f:m7 | bes:7 | ees | e:dim | \myEndLine
 			bes/f | c2:m7/f f4:7 | bes2.*2 | \myEndLine
 		}

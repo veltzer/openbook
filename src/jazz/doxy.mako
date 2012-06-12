@@ -16,6 +16,8 @@
 	attributes['completion']="5"
 	attributes['uuid']="c921579e-a26e-11df-9a5c-0019d11e5a41"
 
+	attributes['structure']="AABA"
+
 	attributes['idyoutuberemark']="Miles Davis!"
 	attributes['idyoutube']="ZcPxCQhJ2n4"
 %>
@@ -33,6 +35,7 @@
 	- check the fake book tune.
 	- heard the tune to make sure it sounds right.
 	- document the youtube performance.
+	- added the tunes structure.
 	TODO:
 	- add the real book chords and tune.
 	- how about adding the Aebersold version too?
@@ -45,6 +48,7 @@
 
 	\partial 8 s8 |
 
+	\mark "A"
 	\startPart
 	\repeat volta 2 {
 		bes2:7 aes:7 | aes:7 g:7 |
@@ -59,8 +63,13 @@
 	}
 	\endPart
 
+	\mark "B"
 	\startPart
 	bes1*2:7 | ees1:7 | e:dim7 | \myEndLine
+	\endPart
+
+	\mark "A"
+	\startPart
 	bes2 aes:7 | aes:7 g:7 | c:7 f:7 | bes1 | \myEndLine
 	\endPart
 

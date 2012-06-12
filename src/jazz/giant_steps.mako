@@ -21,11 +21,15 @@
 	attributes['uuid']="828326cc-013c-11e1-b823-0019d11e5a41"
 
 	attributes['structure']="A"
+	attributes['structureremark']="Very weird not repeating structure because of the weird harmony steps"
+
 	attributes['idyoutuberemark']="Mccoy Tyner awesome solo..."
 	attributes['idyoutube']="PukuQPUKfyU"
 	attributes['idyoutuberemark']="The original Coltrane version..."
 	attributes['idyoutube']="BZRnkBK_0no"
 	attributes['lyricsurl']="http://www.bjazz.com/Giant_Steps.html"
+	
+	attributes['remark']="the key here is of little meaning as the harmony changes key all the time...:) That's why it's written in C."
 %>
 % endif
 
@@ -43,11 +47,10 @@
 	- checked the real book tune.
 	- added youtube performances.
 	- added the new real book epdf.
+	- added the tunes structure, in the meta data and in the tune itself.
 	TODO:
 	- do the hal leonard epdf.
 	REMARKS:
-	- the key here is of little meaning as the harmony changes key all the time...:)
-	That's why it's written in C.
 	- there is a note which has no corresponding lyric in the real book version (last line).
 % endif
 
@@ -57,6 +60,7 @@
 	\startSong
 
 	\startPart
+	\mark "A"
 	b2 d:7 | g bes:7 | ees1 | a2:m7 d:7 | \myEndLine
 	g bes:7 | ees fis:7 | b1 | f2:m7 bes:7.9 | \myEndLine
 	ees1 | a2:m7 d:7 | g1 | cis2:m7 fis:7 | \myEndLine
