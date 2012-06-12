@@ -11,6 +11,7 @@
 	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['composer']="Errol Garner"
+	# this is from the fake book
 	attributes['poet']="Johnny Burke"
 	# this is from the fake book
 	attributes['piece']="Slowly, with a smooth swing"
