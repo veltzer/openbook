@@ -45,7 +45,7 @@
 		bes2:m7 c4:m7 des:6 | d2:dim7 ees:7.4 |
 	} \alternative {
 		{
-			c:m7 f:7 | bes:m7 ees:7 | \myEndLine
+			c:m7 f:7 | bes:m7 ees:7 | %% \myEndLine
 		}
 		{
 			aes1:maj7 | ees2:m7 aes:7 | \myEndLine
