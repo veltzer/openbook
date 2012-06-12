@@ -12,35 +12,45 @@
 	attributes['composer']="Louis Bonfa"
 	# this comes from the real book...
 	attributes['piece']="Bossa"
-	attributes['poet']=""
-	attributes['copyright']=""
-	attributes['copyrightextra']=""
+	# this is from the new real book
+	attributes['piece']="Med. Ballad (or Slow Bossa)"
+	# this is from the new real book
+	attributes['poet']="Matt Dubey"
+	attributes['copyright']="1931 (renewed 1959) EMI Robbins Catalog, Inc"
+	attributes['copyrightextra']="Used by Persmission of CPP/Belwin, Inc, Miami, FL. International Copyright Secured. All Rights Reserved."
+
 	attributes['completion']="5"
 	attributes['uuid']="04bbfb74-0128-11e1-9e2a-0019d11e5a41"
+
 	attributes['structure']="AB"
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
+	attributes['structureremark']="This tune has a weird structure because the B part has different lengths"
+
+	attributes['idyoutuberemark']="Tony Bennet slow version"
+	attributes['idyoutube']="uJGqzudEDDE"
+	attributes['idyoutuberemark']="The wonderful ballad version of Astrud Gilberto"
+	attributes['idyoutube']="s6ndU7GKpjI"
+	attributes['lyricsurl']="http://lyrics.wikia.com/Astrud_Gilberto:The_Gentle_Rain"
 %>
 % endif
 
 % if part=='Doc':
 	DONE:
+	- added the real book epdf.
 	- put in the real book chords.
-	- checked the real book chords.
 	- put in the real book tune.
-	- checked the real book tune.
 	- put in the lyrics adjusted for the real book.
-	- heard the real book version.
+	- checked the real book chords.
+	- checked the real book tune.
 	- checked the real book lyrics.
-	- add the real book epdf.
-	TODO:
-	- fill in missing meta data (copyright, poet, ...) - from the fake book?
+	- heard the real book version.
+	- added the new real book epdf.
+	- filled in missing meta data (copyright, poet, ...) from the new real book.
 	- put in youtube performances and lyrics url.
-	- add another epdf (fake book?)
-	- add another version (fake book?)
+	- mark the structure in this tune.
+	TODO:
 	- the last chords in the real book version should be in parenthesis (I don't know
 	how to do that).
+	- add the new real book version (pdf is already there).
 % endif
 
 % if part=='ChordsReal':
@@ -50,8 +60,10 @@
 
 	\startPart
 	\repeat volta 2 {
+	  	\mark "A"
 		a1*2:m6 | b1:m7.5- | e:7 | \myEndLine
 		a2:m7 d:7 | g:m7 c:7 | f1*2:6 | \myEndLine
+	  	\mark "B"
 		fis1:m7.5- | b:7.9- | e:m7.5- | a:7.9- | \myEndLine
 		d:m7.5- | b2:m7.5- e:7 |
 	}

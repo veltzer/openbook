@@ -117,7 +117,7 @@
 % endif
 
 % if part=='LyricsReal':
-%% these are lyrics from the internet adjust for the real book
+%% these are lyrics from the internet adjusted for the real book
 \lyricmode {
 	%% part "Intro"
 	_ _ _ _ _ _ _ _ _ _ _ _ _
@@ -214,7 +214,7 @@
 % endif
 
 % if part=='LyricsGalit':
-%% these are lyrics from the internet adjust for the real book
+%% these are lyrics from the internet adjusted for the real book
 \lyricmode {
 	%% part "Intro"
 	_ _ _ _ _ _ _ _ _ _ _ _ _

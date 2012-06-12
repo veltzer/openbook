@@ -26,7 +26,8 @@
 	attributes['completion']="5"
 	attributes['uuid']="ac74c90e-0d62-11e1-816c-0019d11e5a41"
 
-	attributes['structure']="AB"
+	attributes['structure']="ABAC"
+	attributes['structureremark']="Can also think of this tune as AB"
 
 	attributes['idyoutuberemark']="Ella"
 	attributes['idyoutube']="uYnqy84ZY9Q"
@@ -64,12 +65,14 @@
 	\startChords
 	\startSong
 
+	\mark "A"
 	\repeat volta 2 {
 		d1:m7 | g:m7 | d:m7 | g:7 | \myEndLine
 		c:maj7 | f:maj7 | e:m7 |
 	} \alternative {
 		{
 			f:7 | \myEndLine
+			\mark "B"
 			d:m7 | g:7 | c:maj7 | a:m7 | \myEndLine
 			d:m7 | g:7 | e:m7 | a:7 | \myEndLine
 		}
@@ -77,6 +80,7 @@
 			%% \myEndLine after the following line was removed to reduce
 			%% number of lines in the presentation
 			a:7 |
+			\mark "C"
 			d:m7 | f:m6 | c:maj7 | e2:7 ees:dim | \myEndLine
 			d1:m7 | g:7 | c1*2:6 | \myEndLine
 		}
@@ -118,10 +122,12 @@
 	You'd be so Eas -- y To Love,
 	So eas -- y to i -- dol -- ize,
 	All oth -- ers a -- bove
+	%% B part
 	So worth the yearn -- ing for, __
 	So swell to keep ev -- 'ry home -- fire burn -- ing for __
 
 	shame
+	%% C part
 	that you can't see
 	your fu -- ture with me,
 	'cause you'd be oh, so Eas -- y To Love! __
@@ -130,7 +136,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
-	%% B part
+	%% A part
 	We'd be so grand at the game
 	So care -- free to -- get -- her,
 	that it does seem a
