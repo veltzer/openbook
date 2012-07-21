@@ -59,6 +59,7 @@ c:9 which is c:7.9 which is correct for jazz but not for rock.
 	- first, is there a way to make a7/9 appear on the page?
 	- what is the right way to mark a 9 chord?
 	So basically marking out a:7.9 or a:9 is the same on the page...
+	For jazz this is fine (every jazz musician seeing A9 knows to play A:7.9).
 - altered chords:
 	mark them out as: "7.3-.5-.9-.11-.13-". I know its weird.
 		The 3- is for the 9+ and the 11- is for the real third. Ugly.
@@ -73,6 +74,8 @@ c:9 which is c:7.9 which is correct for jazz but not for rock.
 	a:m7+
 	see discussion on:
 	http://osdir.com/ml/lilypond-user-gnu/2009-09/msg00254.html
+- maj9 chords:
+	either c:maj9 or c:maj7.9 (both appear the same on the page).
 
 questions:
 - how do I put chords in parenthesis? I still do not know.
@@ -88,6 +91,15 @@ Tempo:
         \time 4/4
 	see "My Romance" for a use case.
 	(the spaces are CRITICAL!)
+
+	Another way is:
+
+	\once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+        \once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+        \time 4/4
+
+	See discussion here:
+	http://old.nabble.com/using-the-cut-time-symbol-for-4-2-etc.-td18200303.html
 - one way is:
 	==== SNIP ====
 	\tempo "Andante" 4 = 88
