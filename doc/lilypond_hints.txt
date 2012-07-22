@@ -76,6 +76,11 @@ c:9 which is c:7.9 which is correct for jazz but not for rock.
 	http://osdir.com/ml/lilypond-user-gnu/2009-09/msg00254.html
 - maj9 chords:
 	either c:maj9 or c:maj7.9 (both appear the same on the page).
+- diminished chords.
+	if you just want the little circle (not dim7 but just the circle) then use "dim":
+	aes:dim
+	if you want the little circle with 7 next to it then use "dim7":
+	aes:dim7
 
 questions:
 - how do I put chords in parenthesis? I still do not know.

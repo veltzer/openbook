@@ -4,10 +4,14 @@
 	attributes['doChords']=True
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
+	# this is only for the real book version
+	#attributes['doLyricsmore']=True
 	attributes['render']="Fake"
 
 	attributes['title']="Here's That Rainy Day"
 	attributes['style']="Jazz"
+	# this is from the real book
+	attributes['composer']="Jim Van Heusen"
 	# this is from the fake book
 	attributes['composer']="James Van Heusen"
 	# this is from the fake book
@@ -46,9 +50,15 @@
 	- put in you tube performances with documentation.
 	- put in a lyrics url.
 	- brought in the real book epdf.
+	- put in the real book chords.
+	- put in the real book tune. 
+	- put in the real book lyrics.
+	- played the real book version to hear that is sounds well.
+	- checked the real book chords.
+	- checked the fake book lyrics.
+	- checked the fake book tune.
 	TODO:
-	- do the real book version as well.
-	REMARKS:
+	- how do I put the last two chords in the real book version in parenthesis?
 % endif
 
 % if part=='ChordsFake':
@@ -142,5 +152,88 @@
 	Fun -- ny that rain -- y day is here. __
 	%% volta
 	here. __
+}
+% endif
+
+% if part=='ChordsReal':
+\chordmode {
+	\startChords
+	\startSong
+
+	\repeat volta 2 {
+		\mark "A"
+		\startPart
+		f2:m c:7/e | aes:7/ees d:7 | des:maj7 c:m7 | bes:m bes:m7 | \myEndLine
+		g1:m7.5- | c:7.9- | f:maj7 | c2:m7 f:7 | \myEndLine
+		\endPart
+	} \alternative {
+		{
+			\mark "B"
+			\startPart
+			bes1:m7 | ees:7 | aes:maj7 | des:maj7 | \myEndLine
+			g:m7.5- | c:7 | f:maj7 | g2:m7.5- c:7.9- | \myEndLine
+			\endPart
+		}
+		{
+			\mark "C"
+			\startPart
+			bes1:maj7 | g2:m7 c:7 | a1:m7 | aes:dim | \myEndLine
+			g:m7 | c:7 | f:maj7 | g2:m7.5- c:7.9- | \myEndLine
+			\endPart
+		}
+	}
+
+	\endSong
+	\endChords
+}
+% endif
+
+% if part=='VoiceReal':
+\relative c' {
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Allegro" 4 = 130
+	\time 4/4
+	\key f \major
+
+	\repeat volta 2 {
+		%% "A" part
+		c2. c4 | c ees aes c | c2. bes8 a! | bes2. r4 |
+		c,2. c4 | c e g bes | a1~ | a2. f4 |
+	} \alternative {
+		{
+			%% "B" part
+			des'2. des4 | des f, fis g | c2. ees,8 e! | f1 |
+			bes2. bes4 | bes d, dis e | a1~ | a2. r4 |
+		}
+		{
+			%% "C" part
+			d2. d4 | d g, a bes | c2. e,8 f | g2. f4 |
+			c2. c4 | c e g a | f1~ | f |
+		}
+	}
+}
+% endif
+
+% if part=='LyricsReal':
+\lyricmode {
+	%% part "A"
+	Maybe I should have saved those left -- ov -- er dreams;
+	funny, but Here's That Rain -- y Day. __
+	%% part "B"
+	_ Here's That Rain -- y Day they told me a -- bout,
+	and_I laughed_at the thought that_it_might turn_out_this way. __
+	%% part "C"
+	Funny how love be -- comes a cold rain -- y day. _
+	Funny that rain -- y day is here. __
+	%% volta
+	here. __
+}
+% endif
+
+% if part=='LyricsmoreReal':
+\lyricmode {
+	%% part "A"
+	Where_is that worn out wish that I threw a -- side,
+	After it brought my lov -- er near? __ _
 }
 % endif
