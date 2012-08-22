@@ -112,7 +112,6 @@ FILES_COMPLETED_JAZZ:=$(shell grep -l \'completion\']=\"5\" src/jazz/*)
 
 FILES_WEB:=$(subst ./,,$(shell find mako -type f))
 OUT_WEB:=$(addprefix $(OUT_DIR)/,$(notdir $(FILES_WEB)))
-WEB_WEB:=$(addprefix $(WEB_DIR)/,$(notdir $(FILES_WEB)))
 
 FILES_MAKO_DEPS:=$(addsuffix .mako.d,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_LY:=$(addsuffix .ly,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
@@ -139,10 +138,6 @@ IL_OUT_PATTERN:=src/israeli/*.mako
 IL_OUT_FILES:=$(shell find src -type f -and -wholename "$(IL_OUT_PATTERN)")
 IL_OUT_PS:=$(OUT_DIR)/israelisongbook.ps
 IL_OUT_PDF:=$(OUT_DIR)/israelisongbook.pdf
-# web
-WEB_LY=$(WEB_DIR)/openbook.ly
-WEB_PS=$(WEB_DIR)/openbook.ps
-WEB_PDF=$(WEB_DIR)/openbook.pdf
 
 ifeq ($(DO_LY),1)
 	ALL:=$(ALL) $(FILES_LY)
@@ -209,20 +204,15 @@ debug:
 	$(info OB_OUT_LY is $(OB_OUT_LY))
 	$(info OB_OUT_PS is $(OB_OUT_PS))
 	$(info OB_OUT_PDF is $(OB_OUT_PDF))
-	$(info OB_OUT_WEB is $(OB_OUT_WEB))
 	$(info OB_OUT_PATTERN is $(OB_OUT_PATTERN))
 	$(info OB_OUT_FILES is $(OB_OUT_FILES))
 	$(info IL_OUT_LY is $(IL_OUT_LY))
 	$(info IL_OUT_PS is $(IL_OUT_PS))
 	$(info IL_OUT_PDF is $(IL_OUT_PDF))
-	$(info IL_OUT_WEB is $(IL_OUT_WEB))
 	$(info IL_OUT_PATTERN is $(IL_OUT_PATTERN))
 	$(info IL_OUT_FILES is $(IL_OUT_FILES))
-	$(info WEB_LY is $(WEB_LY))
-	$(info WEB_PS is $(WEB_PS))
-	$(info WEB_PDF is $(WEB_PDF))
-	$(info WEB_WEB is $(WEB_WEB))
 	$(info FILES_COMPLETED_JAZZ is $(FILES_COMPLETED_JAZZ))
+	$(info OUT_WEB is $(OUT_WEB))
 
 .PHONY: todo
 todo:
@@ -385,20 +375,16 @@ $(OUT_WEB): $(OUT_DIR)/%: $(MAKO_DIR)/% $(ALL_DEP)
 	$(Q)chmod 444 $@
 
 .PHONY: install
-install: $(WEB_LY) $(WEB_PS) $(WEB_PDF) $(WEB_WEB)
-
-# the --parents is to shut mkdir if the directory exists
-# in that case there is no need to put a - before the command
-# since mkdir will not return an error...
-$(WEB_LY) $(WEB_PS) $(WEB_PDF) $(WEB_WEB): $(WEB_DIR)/%: $(OUT_DIR)/% $(ALL_DEP)
+install: $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(OUT_WEB) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)sudo mkdir -p $(dir $@)
-	$(Q)sudo cp $< $@
+	$(Q)sudo rm -rf $(WEB_DIR)
+	$(Q)sudo mkdir -p $(WEB_DIR)
+	$(Q)sudo cp $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(OUT_WEB) $(WEB_DIR)
 
 .PHONY: clean_web
 clean_web: $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)-sudo rm -rf $(WEB_DIR)
+	$(Q)sudo rm -rf $(WEB_DIR)
 
 # include the deps files (no warnings)
 ifeq ($(DO_LYD),1)
