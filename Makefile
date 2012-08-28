@@ -112,6 +112,7 @@ FILES_COMPLETED_JAZZ:=$(shell grep -l \'completion\']=\"5\" src/jazz/*)
 
 FILES_WEB:=$(subst ./,,$(shell find mako -type f))
 OUT_WEB:=$(addprefix $(OUT_DIR)/,$(notdir $(FILES_WEB)))
+WEB_FOLDERS=$(shell find web)
 
 FILES_MAKO_DEPS:=$(addsuffix .mako.d,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_LY:=$(addsuffix .ly,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
@@ -213,6 +214,7 @@ debug:
 	$(info IL_OUT_FILES is $(IL_OUT_FILES))
 	$(info FILES_COMPLETED_JAZZ is $(FILES_COMPLETED_JAZZ))
 	$(info OUT_WEB is $(OUT_WEB))
+	$(info WEB_FOLDERS is $(WEB_FOLDERS))
 
 .PHONY: todo
 todo:
@@ -375,11 +377,11 @@ $(OUT_WEB): $(OUT_DIR)/%: $(MAKO_DIR)/% $(ALL_DEP)
 	$(Q)chmod 444 $@
 
 .PHONY: install
-install: $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(OUT_WEB) $(ALL_DEP)
+install: $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(OUT_WEB) $(WEB_FOLDERS) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)sudo rm -rf $(WEB_DIR)
 	$(Q)sudo mkdir -p $(WEB_DIR)
-	$(Q)sudo cp $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(OUT_WEB) $(WEB_DIR)
+	$(Q)sudo cp -r $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(OUT_WEB) $(WEB_FOLDERS) $(WEB_DIR)
 
 .PHONY: clean_web
 clean_web: $(ALL_DEP)
