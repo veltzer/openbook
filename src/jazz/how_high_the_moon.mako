@@ -19,7 +19,6 @@
 
 	attributes['completion']="5"
 	attributes['uuid']="7d17fd1c-15fe-11e1-b205-0019d11e5a41"
-
 	attributes['structure']="AB"
 
 	attributes['idyoutuberemark']="Ella!"

@@ -21,9 +21,9 @@
 	# this is from the fake book
 	attributes['copyright']="1935, T.B. Harms Company. Copyright Renewed, (c/o The Welk Music Group, Santa Monica, CA 90401)"
 
-	attributes['structure']="ABAC"
 	attributes['completion']="5"
 	attributes['uuid']="6a5d2730-c7dd-11df-b3d0-0019d11e5a41"
+	attributes['structure']="ABAC"
 
 	attributes['idyoutuberemark']="Ben Webster on his airy sax..."
 	attributes['idyoutube']="_D2XBzcKFPM"

@@ -16,10 +16,9 @@
 	# this is from the fake book
 	attributes['copyright']="1955 and Renewal of Copyright 1983 by MJQ Music, Inc."
 
-	attributes['structure']="AABA"
-
 	attributes['completion']="5"
 	attributes['uuid']="8f0a1ea6-a26e-11df-8edc-0019d11e5a41"
+	attributes['structure']="AABA"
 
 	attributes['idyoutuberemark']="Chet Baker in a cool jazz version"
 	attributes['idyoutube']="o3KtgcvYkig"

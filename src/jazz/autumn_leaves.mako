@@ -19,10 +19,10 @@
 	# this is from the real book
 	attributes['piece']="Med. Jazz"
 
-	attributes['structure']="AAB"
-
 	attributes['completion']="5"
 	attributes['uuid']="8c35acf6-a7c1-11df-9040-0019d11e5a41"
+	attributes['structure']="AAB"
+
 	attributes['idyoutuberemark']="The great Bill Evans..."
 	attributes['idyoutube']="mRhVI7cpcS4"
 	attributes['idyoutuberemark']="Keith Jarret in a great performance"

@@ -22,14 +22,13 @@
 
 	attributes['completion']="5"
 	attributes['uuid']="dff04e04-a969-11e1-b8c5-5a1faa0d3cc5"
+	attributes['structure']="ABAC"
+	attributes['structureremark']="The structure could also be thought of as AB but it is very close to a pure ABAC"
 
 	attributes['idyoutuberemark']="A very sensitive rendition by Dexter Gordon"
 	attributes['idyoutube']="8PttNhYVY3c"
 	attributes['idyoutuberemark']="Sarah Vaughan, fucking awesome"
 	attributes['idyoutube']="t9HxfF7faXk"
-
-	attributes['structure']="ABAC"
-	attributes['remark']="The structure could also be thought of as AB but it is very close to a pure ABAC"
 	attributes['lyricsurl']="http://www.absolutelyrics.com/lyrics/view/barbra_streisand/the_shadow_of_your_smile"
 %>
 % endif

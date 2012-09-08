@@ -18,11 +18,11 @@
 	# this is from the hal leonard book.
 	attributes['piece']="Brightly"
 
+	attributes['completion']="5"
+	attributes['uuid']="9677b522-7463-11e1-a57d-bbc28ffad085"
 	attributes['structure']="ABAC"
 	attributes['structureremark']="I determined it was ABAC although the A part does not repeat exactly. It is good enough"
 
-	attributes['completion']="5"
-	attributes['uuid']="9677b522-7463-11e1-a57d-bbc28ffad085"
 	attributes['idyoutuberemark']="Virtuoso Sonny Stitt"
 	attributes['idyoutube']="Nn11v07Db3s"
 	attributes['idyoutuberemark']="The classic Billie Holiday..."

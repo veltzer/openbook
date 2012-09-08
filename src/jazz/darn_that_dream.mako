@@ -14,16 +14,14 @@
 	attributes['copyright']="1939 Bregman, Vocco and Conn, Inc. New York"
 	attributes['copyrightextra']="Copyright Renewed, Assigned and Copyright 1968 by Scarsdale Music. Corporation and Van Heusen Music Corp., New York"
 
-	attributes['structure']="AABA"
-
 	attributes['completion']="5"
 	attributes['uuid']="f0a5804c-eb83-11e0-aeb1-0019d11e5a41"
+	attributes['structure']="AABA"
 
 	attributes['idyoutuberemark']="Theloneous Monk...:)"
 	attributes['idyoutube']="GsI4oNKGJPg"
 	attributes['idyoutuberemark']="Dexter Gordon, once of the great performances of this song..."
 	attributes['idyoutube']="upZ00qxXrBg"
-
 	attributes['lyricsurl']="http://www.lyricsfreak.com/b/billie+holiday/darn+that+dream_20018018.html"
 %>
 % endif

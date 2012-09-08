@@ -25,7 +25,6 @@
 
 	attributes['completion']="5"
 	attributes['uuid']="ac74c90e-0d62-11e1-816c-0019d11e5a41"
-
 	attributes['structure']="ABAC"
 	attributes['structureremark']="Can also think of this tune as AB"
 

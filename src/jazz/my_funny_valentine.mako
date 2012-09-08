@@ -9,14 +9,14 @@
 	attributes['title']="My Funny Valentine"
 	attributes['style']="Jazz"
 	attributes['composer']="Richard Rodgers"
-	attributes['copyright']="1937 by Chappell & Co., Inc. Copyright Renewed"
 	# this direction is from the fake book
 	attributes['piece']="Slowly"
 	attributes['poet']="Lorenz Hart"
-	attributes['structure']="AABA"
+	attributes['copyright']="1937 by Chappell & Co., Inc. Copyright Renewed"
 
 	attributes['completion']="5"
 	attributes['uuid']="087137ac-a26f-11df-aa1f-0019d11e5a41"
+	attributes['structure']="AABA"
 
 	attributes['idyoutuberemark']="Frank!"
 	attributes['idyoutube']="wG6lAtpcI_Q"

@@ -4,23 +4,21 @@
 	attributes['doChords']=True
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
-	attributes['render']="Real"
+	attributes['render']="Fake"
 
-	attributes['title']="Stella By Starlight"
+	attributes['title']="When I Fall In Love"
 	attributes['style']="Jazz"
 	attributes['composer']="Victor Young"
 	attributes['piece']="Slowly, with Expression"
 	attributes['poet']="Ned Washington"
 
-	attributes['completion']="5"
-	attributes['uuid']="afea10ce-edc0-11e0-9cc4-0019d11e5a41"
+	attributes['completion']="0"
+	attributes['uuid']="4e2019f6-f9ef-11e1-b796-174ce4bd9471"
 	attributes['structure']="AB"
 	attributes['remark']="there are a couple of different lyric versions for this song"
-	
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']="Iqs3w1Q5sto"
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']="IbzxJuvbH08"
+
+	attributes['idyoutube']=""
+	attributes['idyoutube']=""
 	attributes['lyricsurl']="http://www.lyrics007.com/Ella%20Fitzgerald%20Lyrics/Stella%20By%20Starlight%20Lyrics.html"
 %>
 % endif

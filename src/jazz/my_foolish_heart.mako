@@ -20,7 +20,6 @@
 
 	attributes['completion']="5"
 	attributes['uuid']="ce9be996-a26e-11df-bf2c-0019d11e5a41"
-
 	attributes['structure']="AB"
 
 	attributes['idyoutube']="a2LFVWBmoiw"

@@ -13,10 +13,11 @@
 	attributes['poet']="Oscar Hammerstein II"
 	attributes['copyright']="1939 T.B. Harms Company. Copyright Renewed."
 	attributes['copyrightextra']="(c/o The Welk Music Group, Santa Monica, CA 90401)"
+
 	attributes['completion']="5"
 	attributes['uuid']="a064f20e-fb85-11e0-8d5d-0019d11e5a41"
-
 	attributes['structure']="ABC"
+
 	attributes['idyoutuberemark']="Charlie Parker, great performance"
 	attributes['idyoutube']="UTORd2Y_X6U"
 	attributes['idyoutuberemark']="Art Tatum. Brilliant"

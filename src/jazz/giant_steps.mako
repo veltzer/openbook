@@ -19,7 +19,6 @@
 
 	attributes['completion']="5"
 	attributes['uuid']="828326cc-013c-11e1-b823-0019d11e5a41"
-
 	attributes['structure']="A"
 	attributes['structureremark']="Very weird not repeating structure because of the weird harmony steps"
 

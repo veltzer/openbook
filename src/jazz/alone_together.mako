@@ -19,8 +19,8 @@
 
 	attributes['completion']="5"
 	attributes['uuid']="b647880a-0b68-11e1-b491-0019d11e5a41"
-
 	attributes['structure']="AABA"
+
 	attributes['idyoutuberemark']="The great trumpet version of Chet Baker"
 	attributes['idyoutube']="zdDhinO58ss"
 	attributes['idyoutuberemark']="Dexter in a soprano sax version"

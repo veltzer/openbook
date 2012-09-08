@@ -19,15 +19,13 @@
 	attributes['piece']="Modeartely Slow"
 	# this is from the real book
 	attributes['piece']="Ballad"
-
 	# this is from the jazz fake book
 	attributes['copyright']="1940, Chappell & Co., Inc. Copyright Renewed."
 
-	attributes['structure']="ABAC"
-	attributes['structureremark']="could be categorized as AB"
-
 	attributes['completion']="5"
 	attributes['uuid']="e00ddbf8-a26e-11df-92da-0019d11e5a41"
+	attributes['structure']="ABAC"
+	attributes['structureremark']="could be categorized as AB"
 
 	attributes['idyoutuberemark']="Frank in the classic vocal version"
 	attributes['idyoutube']="UwoZNHhFgLQ"

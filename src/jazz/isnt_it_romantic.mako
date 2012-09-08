@@ -22,7 +22,6 @@
 
 	attributes['completion']="5"
 	attributes['uuid']="dedcc73c-1ead-11e1-8007-0019d11e5a41"
-
 	attributes['structure']="ABAC"
 
 	attributes['idyoutubedesc']="Cool Jazz by Chet Baker..."

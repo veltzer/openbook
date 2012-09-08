@@ -17,10 +17,9 @@
 	# this is from the fake book
 	attributes['copyright']="1941, by Chappell & Co., Inc. Copyright Renewed"
 
-	attributes['structure']="AABA"
-
 	attributes['completion']="5"
 	attributes['uuid']="dd1624e6-2567-11e1-9444-0019d11e5a41"
+	attributes['structure']="AABA"
 
 	attributes['idyoutuberemark']="Ella Fitzgerald with the intro part..."
 	attributes['idyoutube']="nDlCCKHql0w"

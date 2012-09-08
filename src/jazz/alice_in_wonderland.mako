@@ -17,8 +17,8 @@
 	attributes['piece']="Med."
 	# this is still missing
 	#attributes['copyright']=""
-	attributes['completion']="5"
 
+	attributes['completion']="5"
 	attributes['uuid']="718a13e0-023a-11e1-924f-0019d11e5a41"
 	attributes['structure']="AABA"
 

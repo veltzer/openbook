@@ -9,13 +9,12 @@
 	attributes['style']="Jazz"
 	attributes['composer']="Sonny Rollins"
 	# this is from the fake book
-	attributes['copyright']="1963 Prestige Music Co, Inc."
-	# this is from the fake book
 	attributes['piece']="Medium Groove"
+	# this is from the fake book
+	attributes['copyright']="1963 Prestige Music Co, Inc."
 
 	attributes['completion']="5"
 	attributes['uuid']="c921579e-a26e-11df-9a5c-0019d11e5a41"
-
 	attributes['structure']="AABA"
 
 	attributes['idyoutuberemark']="Miles Davis!"

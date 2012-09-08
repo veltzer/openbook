@@ -24,7 +24,6 @@
 
 	attributes['completion']="5"
 	attributes['uuid']="02c22208-a26f-11df-98fd-0019d11e5a41"
-
 	attributes['structure']="AABA"
 
 	attributes['idyoutuberemark']="Sarah Vaughan"
