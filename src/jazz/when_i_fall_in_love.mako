@@ -8,98 +8,141 @@
 
 	attributes['title']="When I Fall In Love"
 	attributes['style']="Jazz"
+	# from the fake book
 	attributes['composer']="Victor Young"
-	attributes['piece']="Slowly, with Expression"
-	attributes['poet']="Ned Washington"
+	# from the fake book
+	attributes['piece']="Moderately"
+	# from the fake book
+	attributes['poet']="Edward Heyman"
+	attributes['copyright']="1952 by Victor Young Publications, Inc. Copyright Renewed, Assigned to Chappell & Co., Inc. and Intersong -USA,Inc."
+	attributes['copyrightextra']="All Rights Administered by Chappell & Co., Inc."
 
-	attributes['completion']="0"
+	attributes['completion']="5"
 	attributes['uuid']="4e2019f6-f9ef-11e1-b796-174ce4bd9471"
-	attributes['structure']="AB"
-	attributes['remark']="there are a couple of different lyric versions for this song"
+	attributes['structure']="ABAC"
+	attributes['structureremark']="You can think of this as AB but it's really an ABAC tune"
 
-	attributes['idyoutube']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']="http://www.lyrics007.com/Ella%20Fitzgerald%20Lyrics/Stella%20By%20Starlight%20Lyrics.html"
+	attributes['idyoutuberemark']="Nat King Cole in an excellent lyric version"
+	attributes['idyoutube']="GfAb0gNPy6s"
+	attributes['idyoutuberemark']="Bill Evans Trio (Wow!)"
+	attributes['idyoutube']="adPpG0Dnxeg"
+	attributes['lyricsurl']="http://www.lyricsfreak.com/n/nat+king+cole/when+i+fall+in+love_20098122.html"
 %>
 % endif
 
 % if part=='Doc':
 	DONE:
-	- checked the real book chords.
-	- checked the real book notes.
-	- heard it and made sure it sounds fine.
-	- wrote the lyrics and adjusted them to the tune.
-	- got epdf for the real book.
-	- there is no fake book version of this tune.
+	- added the real book epdf.
+	- added the fake book epdf.
+	- filled in the tunes structure.
+	- filled in the tunes meta data from the fake book.
+	- filled in the lyrics url.
+	- filled in youtube performances.
+	- filled in the fake book lyrics.
+	- filled in the fake book chords.
+	- filled in the fake book tune.
+	- checked the fake book chords.
+	- checked the fake book lyrics.
+	- checked the fake book tune.
+	- heard that the fake book version sounds good.
+	- adjusted the fake book tunes speed.
 	TODO:
-	- fill in the copyright.
+	- add the real book version (epdf is already here).
 % endif
 
-% if part=='ChordsReal':
+% if part=='ChordsFake':
 \chordmode {
 	\startChords
 	\startSong
 
-	\partial 4 s4 |
+	\repeat volta 2 {
+		\mark "A"
+		\startPart
+		ees2 c:7.9-.5+ | f:m7 bes:7 | ees c:7.9-.5+ | f:m7 bes:7 | \myEndLine
+		ees1 | des2:9 c:9.5+ | f1:m7 | bes:7.9- | \myEndLine
+		\endPart
 
-	\mark "A"
-	\startPart
-	e1:m7.5- | a:7.9- | c:m7 | f:7 | \myEndLine
-	f:m7 | bes:7 | ees:maj7 | aes:7 | \myEndLine
-	bes:maj7 | e2:m7.5- a:7.9- | d1:m7 | bes2:m7 ees:7 | \myEndLine
-	f1:maj7 | e2:m7.5- a:7 | a1:m7.5- | d:7.9- | \myEndLine
-	\endPart
+		\mark "B"
+		\startPart
+		ees1 | f2:m7 bes:7 | g1:m7 | c:7 | \myEndLine
+		f:m | c:7.9- | f:m7 | bes:7 | \myEndLine
+		\endPart
 
-	\mark "B"
-	\startPart
-	g1*2:7.5+ | c:m7 | \myEndLine
-	aes:7 | bes:maj7 | \myEndLine
-	e1:m7.5- | a:7.9- | d:m7.5- | g:7.9- | \myEndLine
-	c:m7.5- | f:7.9- | bes1*2:maj7 | \myEndLine
-	\endPart
+		\mark "A"
+		\startPart
+		ees2 c:7.9-.5+ | f:m7 bes:7 | ees c:7.9-.5+ | f:m7 bes:7 | \myEndLine
+		ees1 | des2:9 c:9.5+ | f1:m7 | bes:7 | \myEndLine
+		\endPart
+
+		\mark "C"
+		\startPart
+		ees1 | aes | g2:m7 c:7 | f:m7 des:9 | \myEndLine
+		ees c:7.9-.5+ | f:m7 bes:7 |
+	} \alternative {
+		{ ees c:m7 | f:m7 bes:7.9- | }
+		{ ees1*2 | } \myEndLine
+		\endPart
+	}
 
 	\endSong
 	\endChords
 }
 % endif
 
-% if part=='VoiceReal':
-\relative c'' {
+% if part=='VoiceFake':
+\relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Allegro" 4 = 130
+	\tempo "Andante" 4 = 88
 	\time 4/4
-	\key bes \major
+	\key ees \major
 
-	\partial 4 bes4 |
+	\repeat volta 2 {
+		%% part "A"
+		bes4 ees aes g | ees1 | bes4 ees aes g | ees f2. |
+		bes,4 ees c' bes | aes2. g4 | f1~ | f2. g8 aes |
 
-	%% part "A"
-	a1~ | a4 g a bes | f1~ | f2. f4 |
-	g1~ | g4 f f g | bes,1~ | bes2. c4 |
-	ees d c bes | d2. e4 | g4. f8 f2~ | f2. g4 |
-	bes a g f | g2 a4 bes | d4. c8 c2~ | c d |
+		%% part "B"
+		bes4. ees,8 ees4 ees | g f2 g8 aes | \times 2/3 { bes4 g aes } \times 2/3 { bes g aes } | bes2. aes8 bes |
+		c4. f,8 f4 f | aes g2 aes8 bes | \times 2/3 { c4 aes bes } \times 2/3 { c aes c } | bes1 |
 
-	%% part "B"
-	ees1~ | ees4 ees ees d | f1~ | f4 ees \times 2/3 { d c bes } |
-	d2 d2~ | d4 c bes a | c1~ | c2. bes4 |
-	a1~ | a4 g a bes | f1~ | f4 f f ees |
-	ges1~ | ges4 ges ges f | f1~ | f1 |
+		%% part "A"
+		bes,4 ees aes g | ees1 | bes4 ees aes g | ees f2. |
+		bes,4 ees c' bes | aes2. g4 | f1~ | f2. g8 aes |
+
+		%% part "C"
+		bes4. ees,8 ees4 ees | d' c2 c,4 | c' bes2 c4 | aes2. f4 |
+		bes, ees aes g | ees2 f |
+	} \alternative {
+		{ ees1~ | ees4 r r2 | }
+		{ ees1~ | ees2. r4 | }
+	}
 
 }
 % endif
 
-% if part=='LyricsReal':
-%% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
+% if part=='LyricsFake':
 \lyricmode {
 	%% part "A"
-	The song a rob -- in sings,
-	Through years of end -- less springs,
-	The mur -- mur of a brook at even -- ing tides.
-	That rip -- ples through a nook where two lov -- ers hide.
+	When I Fall In Love
+	it will be for -- ev -- er,
+	or I'll nev -- er
+	fall in love. __
 	%% part "B"
-	That great sym -- pho -- nic theme,
-	That's Stel -- la by star -- light,
-	And not a dream,
-	My heart and I ag -- ree,
-	She's eve -- ry -- thing on_this earth to me.
+	in a rest -- less world like this is,
+	love is end -- ed be -- fore it's be -- gun,
+	and too man -- y moon -- light kiss -- es
+	seem to cool in the warmth of the sun.
+	%% part "A"
+	When I give my heart
+	it will be com -- plete -- ly
+	or I'll nev -- er
+	give my heart. __
+	%% part "C"
+	And the mo -- ment I can feel that
+	you feel that way too,
+	is When I Fall In
+	Love with you. __
+	%% volta
+	you. __
 }
 % endif
