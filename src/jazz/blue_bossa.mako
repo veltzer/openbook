@@ -30,8 +30,9 @@
 
 % if part=='Doc':
 	DONE:
+	- brought in the real book edpf.
 	TODO:
-	- get another version in here.
+	- get another version in here (is there a fake book version?!?).
 	- mark what's been done to this tune.
 	- document the youtube performances.
 % endif
@@ -68,15 +69,12 @@
 
 	\partial 4 g,4 |
 
-	\mark "A"
-
+	%% part "A"
 	\repeat volta 3 {
-
-	g'4. f8 ees d4 c8~ | c2. bes4 | aes2 g'4. f8~ | f1 |
-	f4. ees 8 d c4 bes8~ | bes2. aes4 | g2 f'4. ees8~ | ees1 |
-	ees4. des8 c bes4 aes8~ | aes2. ges4 | ges f8 bes~ bes f aes4~ | aes1 |
-	aes4 g8 bes~ bes2 | aes4 g8 bes~ bes4. aes8 | g1~ | g2. <\parenthesize g>4 |
-
+		g'4. f8 ees d4 c8~ | c2. bes4 | aes2 g'4. f8~ | f1 |
+		f4. ees 8 d c4 bes8~ | bes2. aes4 | g2 f'4. ees8~ | ees1 |
+		ees4. des8 c bes4 aes8~ | aes2. ges4 | ges f8 bes~ bes f aes4~ | aes1 |
+		aes4 g8 bes~ bes2 | aes4 g8 bes~ bes4. aes8 | g1~ | g2. <\parenthesize g>4 |
 	}
 }
 % endif
