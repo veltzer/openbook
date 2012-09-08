@@ -15,10 +15,9 @@
 	# from the real book
 	attributes['piece']="Slowly"
 
-	attributes['structure']="AB"
-
 	attributes['completion']="0"
 	attributes['uuid']="b806ce6c-b405-11e1-9daf-1fdf93f5ba36"
+	attributes['structure']="AB"
 
 	attributes['idyoutuberemark']=""
 	attributes['idyoutube']=""

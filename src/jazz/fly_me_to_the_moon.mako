@@ -21,7 +21,6 @@
 
 	attributes['completion']="5"
 	attributes['uuid']="3244f4ae-159d-11e1-bbe3-0019d11e5a41"
-
 	attributes['structure']="AB"
 
 	attributes['idyoutuberemark']="The one and only Frank"

@@ -12,6 +12,7 @@
 
 	attributes['completion']="0"
 	attributes['uuid']="0db617f0-a26f-11df-92f0-0019d11e5a41"
+	attributes['structure']="????"
 %>
 % endif
 

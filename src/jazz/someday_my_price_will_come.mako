@@ -19,6 +19,8 @@
 
 	attributes['completion']="5"
 	attributes['uuid']="4933391e-ee10-11e0-b804-0019d11e5a41"
+	attributes['structure']="ABAC"
+	attributes['structureremark']="This could be thought of as AB as well"
 
 	attributes['idyoutuberemark']="Miles"
 	attributes['idyoutube']="Lo18F5ObPng"
@@ -26,9 +28,6 @@
 	attributes['idyoutube']="zYpKNM1Yi5o"
 	attributes['idyoutuberemark']="and Bill again"
 	attributes['idyoutube']="KUT06K5eGz4"
-
-	attributes['structure']="ABAC"
-	attributes['structureremark']="This could be thought of as AB as well"
 	attributes['lyricsurl']="http://artists.letssingit.com/disney-lyrics-someday-my-prince-will-come-31rjgwv"
 %>
 % endif

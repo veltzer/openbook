@@ -17,11 +17,10 @@
 
 	attributes['completion']="5"
 	attributes['uuid']="e62b60ec-eb9b-11e0-aab7-0019d11e5a41"
+	attributes['structure']="Blues"
 
 	attributes['idyoutube']="HUNgcPSYeyM"
 	attributes['idyoutube']="dvdQYSWOobc"
-
-	attributes['structure']="Blues"
 %>
 % endif
 

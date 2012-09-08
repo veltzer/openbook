@@ -13,14 +13,12 @@
 	attributes['composer']="Kenny Dorham"
 	attributes['poet']="Joan Cartwright"
 	attributes['piece']="Bossa Nova"
-	attributes['structure']="A"
 
 	attributes['completion']="5"
 	attributes['uuid']="f7fdc5e0-db41-11e0-a31c-0019d11e5a41"
-
-	attributes['remark']="Play last 4 bars twice more to end (taken from the real book)"
-	attributes['remark']="Joe Henderson - 'Page One'"
-	attributes['remark']="Real book version is in the first real book on page 51"
+	attributes['structure']="A"
+	# from the real book
+	attributes['remark']="Play last 4 bars twice more to end"
 
 	attributes['idyoutube']="EhQfGODnvww"
 	attributes['idyoutube']="-0mNSP1452o"

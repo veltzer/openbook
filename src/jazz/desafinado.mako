@@ -20,7 +20,6 @@
 
 	attributes['completion']="5"
 	attributes['uuid']="c3fff540-a26e-11df-9435-0019d11e5a41"
-
 	attributes['structure']="AABA"
 
 	attributes['idyoutuberemark']="Joao Gilberto in a nice brasilian version"

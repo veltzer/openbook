@@ -21,13 +21,12 @@
 
 	attributes['completion']="5"
 	attributes['uuid']="2f6e2740-f29e-11e0-9ede-0019d11e5a41"
+	attributes['structure']="AB"
 
 	attributes['idyoutubedesc']="the fabulous Chet Baker"
 	attributes['idyoutube']="88CqlgFAJ-k"
 	attributes['idyoutubedesc']="fast and furious Trane"
 	attributes['idyoutube']="9W_XQCLD_I0"
-
-	attributes['structure']="AB"
 %>
 % endif
 
@@ -47,6 +46,7 @@
 	- filled in the strucutre of the tune.
 	- added youtube performances.
 	TODO:
+	- add a lyrics url.
 	- add the new real book version (already have it in the epdfs).
 	- how do I put the last two chords in the real book version into parenthesis?
 % endif

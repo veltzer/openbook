@@ -14,10 +14,9 @@
 	attributes['copyright']="1967 by Range Road Music Inc. and Quartet Music Inc."
 	attributes['copyrightextra']="All rights administered by Hudson Bay Music, Inc."
 
-	attributes['structure']="AABA"
-
 	attributes['completion']="5"
 	attributes['uuid']="39de7d2c-a26f-11df-8dbc-0019d11e5a41"
+	attributes['structure']="AABA"
 
 	attributes['idyoutuberemark']="Orchestral version from the film score of \"Meet Joe Black\""
 	attributes['idyoutube']="Qhrpc9FFFAI"

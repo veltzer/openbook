@@ -18,11 +18,10 @@
 	# from the new Real Book
 	attributes['copyright']="1948, Eben Ahbez"
 
-	attributes['remark']="7th bar of letters A and B were originally 2 bars each. Melody is straight eights, though rather freely interpreted rhythmically."
-	attributes['structure']="AB"
-
 	attributes['completion']="5"
 	attributes['uuid']="13d57a4a-a26f-11df-8711-0019d11e5a41"
+	attributes['structure']="AB"
+	attributes['remark']="7th bar of letters A and B were originally 2 bars each. Melody is straight eights, though rather freely interpreted rhythmically."
 
 	attributes['idyoutube']="Iq0XJCJ1Srw"
 %>

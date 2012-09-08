@@ -15,10 +15,9 @@
 	# from the real book
 	attributes['piece']="Slowly"
 
-	attributes['structure']="AABA"
-
 	attributes['completion']="5"
 	attributes['uuid']="e8ff288e-2233-11e1-9b9f-0019d11e5a41"
+	attributes['structure']="AABA"
 
 	attributes['idyoutuberemark']="Classic Billie Holiday"
 	attributes['idyoutube']="uzJMTSaAl8g"

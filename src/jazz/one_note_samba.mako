@@ -16,10 +16,9 @@
 	# this is from the fake book
 	attributes['piece']="Samba"
 
-	attributes['structure']="ABA'"
-
 	attributes['completion']="5"
 	attributes['uuid']="21bc8284-a26f-11df-a829-0019d11e5a41"
+	attributes['structure']="ABA'"
 
 	attributes['idyoutuberemark']="Dizzy Gilespie in a great version"
 	attributes['idyoutube']="Jb7LqPmWBKw"

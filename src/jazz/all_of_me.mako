@@ -16,10 +16,11 @@
 	attributes['piece']="Moderately"
 	# this is from the fake book
 	attributes['copyright']="1931 Bourne Co. Copyright Renewed"
+
 	attributes['completion']="5"
 	attributes['uuid']="6dd0233c-03b8-11e1-b5a9-0019d11e5a41"
-
 	attributes['structure']="AB"
+
 	attributes['idyoutuberemark']="Louis Armstrong with amazing rythm"
 	attributes['idyoutube']="wFzxo-XI8As"
 	attributes['idyoutuberemark']="Ella Firtzerald - amazing"

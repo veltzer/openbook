@@ -10,18 +10,18 @@
 	attributes['style']="Jazz"
 	attributes['composer']="Irving Gordon"
 	attributes['poet']="Irving Gordon"
-	attributes['copyright']="1951, Bourne Co. Copyright Renewed."
 	attributes['piece']="Mederately"
+	attributes['copyright']="1951, Bourne Co. Copyright Renewed."
 
 	attributes['completion']="5"
 	attributes['uuid']="3162420a-a26f-11df-aacf-0019d11e5a41"
 	attributes['structure']="AB"
 
-	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/unforgettable-lyrics-nat-king-cole/afdec7063791226248256af1000bbaa6"
 	attributes['idyoutuberemark']="Nat King Cole the unforgettable..."
 	attributes['idyoutube']="S1UEzL9poPM"
 	attributes['idyoutuberemark']="Nat King Cole with Natalie Cole duet..."
 	attributes['idyoutube']="2uRtNMFfF-g"
+	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/unforgettable-lyrics-nat-king-cole/afdec7063791226248256af1000bbaa6"
 %>
 % endif
 

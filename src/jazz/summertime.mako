@@ -19,6 +19,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="2615b7ec-a26f-11df-b010-0019d11e5a41"
 	attributes['structure']="AB"
+
 	attributes['idyoutuberemark']="Janis!"
 	attributes['idyoutube']="mzNEgcqWDG4"
 	attributes['idyoutuberemark']="Ella Fitzgerald with Louis"

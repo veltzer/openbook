@@ -23,7 +23,6 @@
 
 	attributes['completion']="5"
 	attributes['uuid']="4c69df80-cd7f-11e1-8c91-4b6b0349580b"
-
 	attributes['structure']="ABAC"
 	attributes['structureremark']="You can also think of this as AB"
 

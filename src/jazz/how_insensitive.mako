@@ -21,14 +21,12 @@
 	attributes['piece']="Bossa"
 	# this is from the fake book
 	attributes['piece']="Moderately"
-
 	# this is from the fake book
 	attributes['copyright']="1963, 1964 by Antonio Carlos Jobim and Vincius De Moraes, Brazil"
 	attributes['copyrightextra']="Sole Selling Agent Duchess Music Corporation (MCA), New York, NY for the U.S.A. and Canada"
 
 	attributes['completion']="5"
 	attributes['uuid']="ee9c0d62-15fd-11e1-bd56-0019d11e5a41"
-
 	attributes['structure']="AB"
 
 	attributes['idyoutuberemark']="Jobim with Pat Metheny"

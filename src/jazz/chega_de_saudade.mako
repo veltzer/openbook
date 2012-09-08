@@ -9,11 +9,12 @@
 	attributes['style']="Jazz"
 	attributes['subtitle']="No More Blues"
 	attributes['composer']="Antonio Carlos Jobim"
-	attributes['copyright']="1962,1967, Editora Musical Arapua, Sao Paulo, Brazil"
 	attributes['piece']="Med Swing"
+	attributes['copyright']="1962,1967, Editora Musical Arapua, Sao Paulo, Brazil"
 
 	attributes['completion']="0"
 	attributes['uuid']="a8d44d0c-a26e-11df-a32b-0019d11e5a41"
+	attributes['structure']="AABA"
 %>
 % endif
 
