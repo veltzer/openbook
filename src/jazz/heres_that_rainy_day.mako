@@ -50,7 +50,7 @@
 	- put in a lyrics url.
 	- brought in the real book epdf.
 	- put in the real book chords.
-	- put in the real book tune. 
+	- put in the real book tune.
 	- put in the real book lyrics.
 	- played the real book version to hear that is sounds well.
 	- checked the real book chords.
