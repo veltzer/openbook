@@ -381,7 +381,7 @@ install: $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(OUT_WEB) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)sudo rm -rf $(WEB_DIR)
 	$(Q)sudo mkdir -p $(WEB_DIR)
-	$(Q)sudo cp -r index.html $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(WEB_FOLDER) $(WEB_DIR)
+	$(Q)sudo cp -r .htaccess index.html $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(WEB_FOLDER) $(WEB_DIR)
 	$(Q)sudo cp $(OUT_WEB) $(WEB_DIR)/web
 
 .PHONY: clean_web
