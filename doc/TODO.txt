@@ -1,5 +1,10 @@
 Now:
 ====
+- in the web site the pdf file doesn't always show up properly even if the file
+	is updated.
+	maybe we should use .htaccess and tell the server not to cache.
+	I tried this and it doesn't seem to work.
+	try other things.
 - check that all tunes have structure markings in them
 	(\mark "A", \mark "B", etc)
 - make sure we use python 2.7. 2.6 does not seem to compile the project.
