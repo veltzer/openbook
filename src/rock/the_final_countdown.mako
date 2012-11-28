@@ -111,49 +111,49 @@
 \markup {
 	\small { %% \teeny \tiny \small \normalsize \large \huge
 		\fill-line {
-		\column {
-			"We're leaving together"
-			"But still it's farewell"
-			"And maybe we'll come back"
-			"To earth, who can tell?"
-			"I guess there is no one to blame"
-			"We're leaving ground"
-			"Will things ever be the same again?"
+			\column {
+				"We're leaving together"
+				"But still it's farewell"
+				"And maybe we'll come back"
+				"To earth, who can tell?"
+				"I guess there is no one to blame"
+				"We're leaving ground"
+				"Will things ever be the same again?"
+				\null
+				"It's the final countdown"
+				"The final countdown"
+				\null
+				"Ohh"
+				"We're heading for Venus and still we stand tall"
+				"'Cause maybe they've seen us and welcome us all, yea"
+				"With so many light years to go and things to be found"
+				"(To be found)"
+				"I'm sure that we'll all miss her so"
+			}
 			\null
-			"It's the final countdown"
-			"The final countdown"
-			\null
-			"Ohh"
-			"We're heading for Venus and still we stand tall"
-			"'Cause maybe they've seen us and welcome us all, yea"
-			"With so many light years to go and things to be found"
-			"(To be found)"
-			"I'm sure that we'll all miss her so"
-		}
-		\null
-		\column {
-			"It's the final countdown"
-			"The final countdown"
-			"The final countdown"
-			"(The final countdown)"
-			"Ohh ho ohh"
-			\null
-			"The final countdown, oh ho"
-			"It's the final countdown"
-			"The final countdown"
-			"The final countdown"
-			"(The final countdown)"
-			\null
-			"Ohh"
-			"It's the final countdown"
-			"We're leaving together"
-			"The final countdown"
-			"We'll all miss her so"
-			"It's the final countdown"
-			"(The final countdown)"
-			"Ohh, it's the final countdown"
-			"Yea"
-		}
+			\column {
+				"It's the final countdown"
+				"The final countdown"
+				"The final countdown"
+				"(The final countdown)"
+				"Ohh ho ohh"
+				\null
+				"The final countdown, oh ho"
+				"It's the final countdown"
+				"The final countdown"
+				"The final countdown"
+				"(The final countdown)"
+				\null
+				"Ohh"
+				"It's the final countdown"
+				"We're leaving together"
+				"The final countdown"
+				"We'll all miss her so"
+				"It's the final countdown"
+				"(The final countdown)"
+				"Ohh, it's the final countdown"
+				"Yea"
+			}
 		}
 	}
 }

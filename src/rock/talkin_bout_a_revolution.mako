@@ -84,9 +84,7 @@
 			\null
 			"Don't you know you're talking about a revolution"
 			"It sounds like a whisper"
-		}
-		\null
-		\column {
+			\null
 			"Poor people are gonna rise up"
 			"And get their share"
 			"Poor people are gonna rise up "
@@ -96,15 +94,15 @@
 			"run, run, run, run, run, run, run, run"
 			"Oh I said you better run, run, run, run, run, run,"
 			"run, run, run, run, run, run, run"
-			\null
+		}
+		\null
+		\column {
 			"Finally the tables are starting to turn"
 			"Talking about a revolution "
 			"Finally the tables are starting to turn"
 			"Talking about a revolution oh no"
 			"Talking about a revolution oh no"
-		}
-		\null
-		\column {
+			\null
 			"While they're standing in the welfare lines"
 			"Crying at the doorsteps of those armies of salvation"
 			"Wasting time in unemployment lines"
