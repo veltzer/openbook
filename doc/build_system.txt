@@ -3,3 +3,6 @@ make out/src/israeli/hardufim.stamp
 
 If you want to build all rock songs use this:
 for x in src/rock/*; do y=out/`dirname $x`/`basename $x .mako`.pdf; make $y;done
+
+If you want to build all jazz songs use this:
+for x in src/jazz/*; do y=out/`dirname $x`/`basename $x .mako`.pdf; make $y;done

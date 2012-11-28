@@ -23,6 +23,8 @@
 	- document what was done in this song.
 % endif
 
+<%namespace name="defs" file="/src/include/defs.makoi"/>
+
 % if part=='ChordsMy':
 \chordmode {
 	\startChords
