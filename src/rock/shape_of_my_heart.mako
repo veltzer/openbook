@@ -43,6 +43,8 @@
 	- add tune
 % endif
 
+<%namespace name="defs" file="/src/include/defs.makoi"/>
+
 % if part=='ChordsMy':
 \chordmode {
 	\startChords
