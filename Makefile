@@ -139,6 +139,13 @@ IL_OUT_PATTERN:=src/israeli/*.mako
 IL_OUT_FILES:=$(shell find src -type f -and -wholename "$(IL_OUT_PATTERN)")
 IL_OUT_PS:=$(OUT_DIR)/israelisongbook.ps
 IL_OUT_PDF:=$(OUT_DIR)/israelisongbook.pdf
+# book - rockbook
+RK_OUT_BASE:=$(OUT_DIR)/rockbook
+RK_OUT_LY:=$(OUT_DIR)/rockbook.ly
+RK_OUT_PATTERN:=src/rock/*.mako
+RK_OUT_FILES:=$(shell find src -type f -and -wholename "$(RK_OUT_PATTERN)")
+RK_OUT_PS:=$(OUT_DIR)/rockbook.ps
+RK_OUT_PDF:=$(OUT_DIR)/rockbook.pdf
 
 ifeq ($(DO_LY),1)
 	ALL:=$(ALL) $(FILES_LY)
@@ -173,7 +180,7 @@ ifeq ($(DO_OGG),1)
 	ALL:=$(ALL) $(FILES_OGG)
 endif
 ifeq ($(DO_BOOK),1)
-	ALL:=$(ALL) $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(IL_OUT_LY) $(IL_OUT_PS) $(IL_OUT_PDF)
+	ALL:=$(ALL) $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(IL_OUT_LY) $(IL_OUT_PS) $(IL_OUT_PDF) $(RK_OUT_LY) $(RK_OUT_PS) $(RK_OUT_PDF)
 endif
 
 .PHONY: all
@@ -212,6 +219,11 @@ debug:
 	$(info IL_OUT_PDF is $(IL_OUT_PDF))
 	$(info IL_OUT_PATTERN is $(IL_OUT_PATTERN))
 	$(info IL_OUT_FILES is $(IL_OUT_FILES))
+	$(info RK_OUT_LY is $(RK_OUT_LY))
+	$(info RK_OUT_PS is $(RK_OUT_PS))
+	$(info RK_OUT_PDF is $(RK_OUT_PDF))
+	$(info RK_OUT_PATTERN is $(RK_OUT_PATTERN))
+	$(info RK_OUT_FILES is $(RK_OUT_FILES))
 	$(info FILES_COMPLETED_JAZZ is $(FILES_COMPLETED_JAZZ))
 	$(info WEB_FOLDER is $(WEB_FOLDER))
 	$(info OUT_WEB is $(OUT_WEB))
@@ -352,7 +364,7 @@ $(FILES_MP3): %.mp3: %.midi $(MIDI2MP3_WRAPPER_DEP) $(ALL_DEP)
 	$(Q)$(MIDI2MP3_WRAPPER) $< $@
 
 .PHONY: books
-books: $(OB_OUT_PDF) $(IL_OUT_PDF) $(ALL_DEP)
+books: $(OB_OUT_PDF) $(IL_OUT_PDF) $(RK_OUT_PDF) $(ALL_DEP)
 	$(info doing [$@])
 $(OB_OUT_PS) $(OB_OUT_PDF): $(OB_OUT_LY) $(BOOK_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
@@ -368,6 +380,13 @@ $(IL_OUT_LY): $(IL_OUT_FILES) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
 	$(Q)$(MAKO_BOOK_WRAPPER) $(IL_OUT_LY) "$(IL_OUT_PATTERN)"
+$(RK_OUT_PS) $(RK_OUT_PDF): $(RK_OUT_LY) $(BOOK_WRAPPER_DEP) $(ALL_DEP)
+	$(info doing [$@])
+	$(Q)$(BOOK_WRAPPER) $(RK_OUT_PS) $(RK_OUT_PDF) $(RK_OUT_BASE) $(RK_OUT_LY)
+$(RK_OUT_LY): $(RK_OUT_FILES) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
+	$(info doing [$@])
+	$(Q)-mkdir -p $(dir $@)
+	$(Q)$(MAKO_BOOK_WRAPPER) $(RK_OUT_LY) "$(RK_OUT_PATTERN)"
 
 # this should be moved to some kind of macro preprocessor
 $(OUT_WEB): $(OUT_DIR)/%: $(MAKO_DIR)/% $(ALL_DEP)

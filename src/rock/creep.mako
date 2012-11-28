@@ -27,20 +27,22 @@
 	- document the youtube performances.
 % endif
 
+<%def name="chords()">
+	\chordmode {
+		\startChords
+		\startRepeat
+		g1*4 | b | c | c:m |
+		\endRepeat
+		\endChords
+	}
+</%def>
+
 % if part=='Own':
-PartChords=\chordmode {
-	\startChords
-	\startRepeat
-	g1*4 | b | c | c:m |
-	\endRepeat
-	\endChords
-}
-PartFrets=\new FretBoards {
-	\PartChords
-}
 \score {
 	<<
-		\PartFrets
+		\new FretBoards {
+			${chords()}
+		}
 		\new ChordNames="Chords"
 		%% this adds a bar engraver which does not always come with chords
 		%% I didn'f find a way to put this with the chords themselves...
@@ -50,7 +52,7 @@ PartFrets=\new FretBoards {
 			\override BarLine #'bar-extent = #'(-2 . 2)
 			\consists "Bar_engraver"
 		}
-		\PartChords
+		${chords()}
 	>>
 	\midi {}
 	\layout {}

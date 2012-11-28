@@ -204,8 +204,8 @@ ${self.defs()}
 %% lets always include guitar definitions
 \include "predefined-guitar-fretboards.ly"
 
-%% book header
 % if attributes['book']:
+%% book header
 \book {
 	%% this is the title page
 	\bookpart {
@@ -646,7 +646,7 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 
 % endfor
 
-%% book footer
 % if attributes['book']:
+%% book footer
 }
 % endif
