@@ -43,32 +43,34 @@
 	TODO:
 % endif
 
+<%def name="chords()">
+	\chordmode {
+		\startChords
+		\startSong
+
+		\mark "Verse"
+		\startPart
+		g1 | d | g | d | \myEndLine
+		g | d | g | d | \myEndLine
+		\endPart
+
+		\mark "Chorus"
+		\startPart
+		a:m | e:m | d1*2 | \myEndLine
+		a1:m | e:m | d1*2 | \myEndLine
+		\endPart
+
+		\endSong
+		\endChords
+	}
+</%def>
+
 % if part=='Own':
-PartChords=\chordmode {
-	\startChords
-	\startSong
-
-	\mark "Verse"
-	\startPart
-	g1 | d | g | d | \myEndLine
-	g | d | g | d | \myEndLine
-	\endPart
-
-	\mark "Chorus"
-	\startPart
-	a:m | e:m | d1*2 | \myEndLine
-	a1:m | e:m | d1*2 | \myEndLine
-	\endPart
-
-	\endSong
-	\endChords
-}
-PartFrets=\new FretBoards {
-	\PartChords
-}
 \score {
 	<<
-		\PartFrets
+		\new FretBoards {
+			${chords()}
+		}
 		\new ChordNames="Chords"
 		%% this adds a bar engraver which does not always come with chords
 		%% I didn'f find a way to put this with the chords themselves...
@@ -78,7 +80,7 @@ PartFrets=\new FretBoards {
 			\override BarLine #'bar-extent = #'(-2 . 2)
 			\consists "Bar_engraver"
 		}
-		\PartChords
+		${chords()}
 	>>
 	\midi {}
 	\layout {}

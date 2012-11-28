@@ -26,21 +26,23 @@
 	TODO:
 % endif
 
+<%def name="chords()">
+	\chordmode {
+		\mark "Verse"
+		\startRepeat
+		b1:m | fis:7 | d | e2:m fis:7 |
+		\endRepeat
+		\mark "Special fill"
+		g1 | a | g | e2:m fis:7 |
+	}
+</%def>
+
 % if part=='Own':
-PartChords=\chordmode {
-	\mark "Verse"
-	\startRepeat
-	b1:m | fis:7 | d | e2:m fis:7 |
-	\endRepeat
-	\mark "Special fill"
-	g1 | a | g | e2:m fis:7 |
-}
-PartFrets=\new FretBoards {
-	\PartChords
-}
 \score {
 	<<
-		\PartFrets
+		\new FretBoards {
+			${chords()}
+		}
 		\new ChordNames="Chords"
 		%% this adds a bar engraver which does not always come with chords
 		%% I didn'f find a way to put this with the chords themselves...
@@ -50,7 +52,7 @@ PartFrets=\new FretBoards {
 			\override BarLine #'bar-extent = #'(-2 . 2)
 			\consists "Bar_engraver"
 		}
-		\PartChords
+		${chords()}
 	>>
 	\midi {}
 	\layout {}

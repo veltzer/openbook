@@ -32,44 +32,46 @@
 	REMARKS:
 % endif
 
+<%def name="chords()">
+	\chordmode {
+		\startChords
+		\startSong
+		\mark "Opening"
+		\startPart
+		ees1 | des | c:m | ces |
+		ees | des | c:m | ces |
+		\endPart
+		\mark "Verse"
+		\startPart
+		ees | des | c:m | ces |
+		ees | des | c:m | ces |
+		\endPart
+		\mark "Chorus"
+		\startPart
+		aes | f:m | ees2 des | c1:m |
+		aes | f:m | ees2 des | c1:m |
+		f:m |
+		\endPart
+		\mark "Transition"
+		\startPart
+		ees | des | c:m | ces |
+		\endPart
+		\mark "Special part"
+		\startPart
+		ees | des | c:m | ces |
+		ees | des | c:m | ces |
+		\endPart
+		\endSong
+		\endChords
+	}
+</%def>
+
 % if part=='Own':
-PartChords=\chordmode {
-	\startChords
-	\startSong
-	\mark "Opening"
-	\startPart
-	ees1 | des | c:m | ces |
-	ees | des | c:m | ces |
-	\endPart
-	\mark "Verse"
-	\startPart
-	ees | des | c:m | ces |
-	ees | des | c:m | ces |
-	\endPart
-	\mark "Chorus"
-	\startPart
-	aes | f:m | ees2 des | c1:m |
-	aes | f:m | ees2 des | c1:m |
-	f:m |
-	\endPart
-	\mark "Transition"
-	\startPart
-	ees | des | c:m | ces |
-	\endPart
-	\mark "Special part"
-	\startPart
-	ees | des | c:m | ces |
-	ees | des | c:m | ces |
-	\endPart
-	\endSong
-	\endChords
-}
-PartFrets=\new FretBoards {
-	\PartChords
-}
 \score {
 	<<
-		\PartFrets
+		\new FretBoards {
+			${chords()}
+		}
 		\new ChordNames="Chords"
 		%% this adds a bar engraver which does not always come with chords
 		%% I didn'f find a way to put this with the chords themselves...
@@ -79,7 +81,7 @@ PartFrets=\new FretBoards {
 			\override BarLine #'bar-extent = #'(-2 . 2)
 			\consists "Bar_engraver"
 		}
-		\PartChords
+		${chords()}
 	>>
 	\midi {}
 	\layout {}

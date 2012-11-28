@@ -29,65 +29,67 @@
 	- document the youtube performance.
 % endif
 
+<%def name="chords()">
+	\chordmode {
+		\mark "opening"
+		\startRepeat
+		%% the remarked part is from the song but it is repeated so I just
+		%% put it once...
+		%%\repeat volta 4 {
+		%%	fis1:m | d | b:m | e2 e/fis |
+		%%}
+		%%\repeat volta 2 {
+		%%	fis:m e | a d | cis1*2:7 |
+		%%}
+		\repeat volta 2 {
+			fis1:m | d | b:m | e2 e/fis |
+		}
+		\repeat volta 2 {
+			fis:m e | a d | cis1*2:7 |
+		}
+		\endRepeat
+		\mark "interlude"
+		\startBar
+		fis1*4:m |
+		\myEndLine
+		\endBar
+		\mark "verse"
+		\startBar
+		fis1*3:m | d1 |
+		fis1*2:m | fis2:m e | a1 |
+		d | e | a2 e/gis | fis:m e |
+		d | cis:m | e1*2 |
+		\myEndLine
+		\endBar
+		\mark "chorus"
+		\startRepeat
+		\repeat volta 2 {
+			fis1:m | d | b:m | e2 e/fis |
+		}
+		\mark "interlude"
+		\startBar
+		fis1*2:m |
+		\myEndLine
+		\endBar
+		\mark "solo"
+		\startRepeat
+		\repeat volta 2 {
+			b:m | a | d | g g/fis |
+			e:m | a |
+		} \alternative {
+			{ b:m | fis | }
+			{ b:m | cis | }
+		}
+		\endBar
+	}
+</%def>
+
 % if part=='Own':
-PartChords=\chordmode {
-	\mark "opening"
-	\startRepeat
-	%% the remarked part is from the song but it is repeated so I just
-	%% put it once...
-	%%\repeat volta 4 {
-	%%	fis1:m | d | b:m | e2 e/fis |
-	%%}
-	%%\repeat volta 2 {
-	%%	fis:m e | a d | cis1*2:7 |
-	%%}
-	\repeat volta 2 {
-		fis1:m | d | b:m | e2 e/fis |
-	}
-	\repeat volta 2 {
-		fis:m e | a d | cis1*2:7 |
-	}
-	\endRepeat
-	\mark "interlude"
-	\startBar
-	fis1*4:m |
-	\myEndLine
-	\endBar
-	\mark "verse"
-	\startBar
-	fis1*3:m | d1 |
-	fis1*2:m | fis2:m e | a1 |
-	d | e | a2 e/gis | fis:m e |
-	d | cis:m | e1*2 |
-	\myEndLine
-	\endBar
-	\mark "chorus"
-	\startRepeat
-	\repeat volta 2 {
-		fis1:m | d | b:m | e2 e/fis |
-	}
-	\mark "interlude"
-	\startBar
-	fis1*2:m |
-	\myEndLine
-	\endBar
-	\mark "solo"
-	\startRepeat
-	\repeat volta 2 {
-		b:m | a | d | g g/fis |
-		e:m | a |
-	} \alternative {
-		{ b:m | fis | }
-		{ b:m | cis | }
-	}
-	\endBar
-}
-PartFrets=\new FretBoards {
-	\PartChords
-}
 \score {
 	<<
-		\PartFrets
+		\new FretBoards {
+			${chords()}
+		}
 		\new ChordNames="Chords"
 		%% this adds a bar engraver which does not always come with chords
 		%% I didn'f find a way to put this with the chords themselves...
@@ -97,7 +99,7 @@ PartFrets=\new FretBoards {
 			\override BarLine #'bar-extent = #'(-2 . 2)
 			\consists "Bar_engraver"
 		}
-		\PartChords
+		${chords()}
 	>>
 	\midi {}
 	\layout {}

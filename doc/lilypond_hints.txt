@@ -35,16 +35,6 @@ want nothing to be printed.
 	find out from the lilypond documentation...
 - \chords and \chordmode is different. It seems that \chords creates two tracks in midi
 	while \chordmode creates only one. only use \chordmode.
-- in order to put guitar chord notations just use:
-	\include "predefined-guitar-fretboards.ly"
-	\new FretBoards {
-		\chordmode {
-			[chords go here]	
-		}
-	}
-  The problem with this is that you wind up repeating the chord names yet again just for the
-  guitar diagrams. The is a way to share. Define a new for the chords and then reuse that name
-  inside the FretBoards section.
 - adding notes to chords: c:5.9 is a regular C chord with a D added in. This is different from
 c:9 which is c:7.9 which is correct for jazz but not for rock.
 - a single chord on more than one bar:
@@ -88,6 +78,22 @@ questions:
 	- ( bes:7 ) does not work either.
   I have couple of tunes that need this.
 - how do I do 4-3, 9-8 or other similar chords ?
+
+Frets:
+======
+- in order to put guitar chord notations just use:
+	\include "predefined-guitar-fretboards.ly"
+	\new FretBoards {
+		\chordmode {
+			[chords go here]	
+		}
+	}
+  The problem with this is that you wind up repeating the chord names yet again just for the
+  guitar diagrams. There is a way to share. Define a name for the chords and then reuse that name
+  inside the FretBoards section.
+- in order to define your own fretboards use something like:
+	\storePredefinedDiagram #default-fret-table \chordmode {g:sus4} #guitar-tuning #"3-3;2-2;o;o;o;3-4;"
+	look at "src/rock/talking_bout_a_revolution.mako"
 	
 Tempo:
 ======

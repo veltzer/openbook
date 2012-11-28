@@ -28,6 +28,16 @@
 	finger with which to add it with?
 % endif
 
+<%def name="chords()">
+	\chordmode {
+		\startChords
+		\startRepeat
+		g2:sus4 c:5.9 | e:m7 d:sus4 |
+		\endRepeat
+		\endChords
+	}
+</%def>
+
 % if part=='Own':
 
 \storePredefinedDiagram #default-fret-table \chordmode {g:sus4} #guitar-tuning #"3-3;2-2;o;o;o;3-4;"
@@ -35,19 +45,11 @@
 \storePredefinedDiagram #default-fret-table \chordmode {e:m7} #guitar-tuning #"o;2-1;2-2;o;3-3;3-4;"
 \storePredefinedDiagram #default-fret-table \chordmode {d:sus4} #guitar-tuning #"x;x;o;2-1;3-3;2-2;"
 
-PartChords=\chordmode {
-	\startChords
-	\startRepeat
-	g2:sus4 c:5.9 | e:m7 d:sus4 |
-	\endRepeat
-	\endChords
-}
-PartFrets=\new FretBoards {
-	\PartChords
-}
 \score {
 	<<
-		\PartFrets
+		\new FretBoards {
+			${chords()}
+		}
 		\new ChordNames="Chords"
 		%% this adds a bar engraver which does not always come with chords
 		%% I didn'f find a way to put this with the chords themselves...
@@ -57,7 +59,7 @@ PartFrets=\new FretBoards {
 			\override BarLine #'bar-extent = #'(-2 . 2)
 			\consists "Bar_engraver"
 		}
-		\PartChords
+		${chords()}
 	>>
 	\midi {}
 	\layout {}
