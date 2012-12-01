@@ -36,8 +36,6 @@ DO_BOOK?=1
 SOURCE_DIR:=src
 # where is the output folder ?
 OUT_DIR:=out
-# where are the mako files?
-MAKO_DIR:=mako
 # what is the web folder ?
 WEB_DIR:=/var/www/openbook
 # where is the common file?
@@ -110,9 +108,8 @@ FILES_MAKOI:=$(filter %.makoi,$(SOURCES_ALL))
 
 FILES_COMPLETED_JAZZ:=$(shell grep -l \'completion\']=\"5\" src/jazz/*)
 
-FILES_WEB:=$(subst ./,,$(shell find mako -type f))
-OUT_WEB:=$(addprefix $(OUT_DIR)/,$(notdir $(FILES_WEB)))
 WEB_FOLDER:=web
+WEB_FILES:=$(shell find $(WEB_FOLDER) -type f)
 
 FILES_MAKO_DEPS:=$(addsuffix .mako.d,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_LY:=$(addsuffix .ly,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
@@ -208,7 +205,6 @@ debug:
 	$(info FILES_WAV is $(FILES_WAV))
 	$(info FILES_MP3 is $(FILES_MP3))
 	$(info FILES_OGG is $(FILES_OGG))
-	$(info FILES_WEB is $(FILES_WEB))
 	$(info OB_OUT_LY is $(OB_OUT_LY))
 	$(info OB_OUT_PS is $(OB_OUT_PS))
 	$(info OB_OUT_PDF is $(OB_OUT_PDF))
@@ -226,7 +222,7 @@ debug:
 	$(info RK_OUT_FILES is $(RK_OUT_FILES))
 	$(info FILES_COMPLETED_JAZZ is $(FILES_COMPLETED_JAZZ))
 	$(info WEB_FOLDER is $(WEB_FOLDER))
-	$(info OUT_WEB is $(OUT_WEB))
+	$(info WEB_FILES is $(WEB_FILES))
 
 .PHONY: todo
 todo:
@@ -388,20 +384,12 @@ $(RK_OUT_LY): $(RK_OUT_FILES) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(Q)-mkdir -p $(dir $@)
 	$(Q)$(MAKO_BOOK_WRAPPER) $(RK_OUT_LY) "$(RK_OUT_PATTERN)"
 
-# this should be moved to some kind of macro preprocessor
-$(OUT_WEB): $(OUT_DIR)/%: $(MAKO_DIR)/% $(ALL_DEP)
-	$(info doing [$@])
-	$(Q)mkdir -p $(dir $@)
-	$(Q)cp -f $< $@
-	$(Q)chmod 444 $@
-
 .PHONY: install
-install: $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(OUT_WEB) $(ALL_DEP)
+install: $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(WEB_FILES) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)sudo rm -rf $(WEB_DIR)
 	$(Q)sudo mkdir -p $(WEB_DIR)
 	$(Q)sudo cp -r .htaccess index.html $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(WEB_FOLDER) $(WEB_DIR)
-	$(Q)sudo cp $(OUT_WEB) $(WEB_DIR)/web
 
 .PHONY: clean_web
 clean_web: $(ALL_DEP)
