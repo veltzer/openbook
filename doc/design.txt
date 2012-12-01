@@ -32,4 +32,7 @@ into the databse each time.
 
 preprocessing
 =============
-The project uses m4 as a preprocessor for the files. Rationale is in a separate file.
+The project uses mako (python lib) as a preprocessor for the files. Rationale is that lilypond
+does not offer enough tools to have my own layer on top of it to avoid repetition. Note that
+may not be the case: it may just be the case that I do not know enough lisp or whatever. But in
+any case if the content will be kept tidy enough I could switch without much work.
