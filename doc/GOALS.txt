@@ -1,12 +1,19 @@
-Here are the goals for the 2.0 system:
+Here are the long term goals for the openbook system:
 
-- recursive parsing of the lilypond files by the perl parser
-	(so that we would handle all header content properly and all recursive includes).
-- completeness to be advertised in the db and the web.
-- system to automatically create the table on the database if needed.
-- many blobs per entry (ps, pdf, many pngs, ly) etc...
-	import pngs too.
-- all files to reach maturity level 2.
-- all files have poet, copyright and all (checks are added to check_all).
-- all hebrew songs are completely in hebrew.
+- 100 jazz standards.
+- 100 rock songs.
+- 100 israeli songs.
+- easy creation of Eb and Bb versions of the jazz book.
+- a build system that allows the user to configure the build.
+- complete dependencies management so that every build will be right.
+- separate system to add the meta data of the tunes and the tunes themselves
+	to a relational database.
+	This system will automatically create the database tables if needed.
+	many blobs per entry (ps, pdf, many pngs, ly, png) etc...
+- all files at maturity 5.
+- more checks that make sure that all files are the same.
+- adding -d flag to lilypond so that it could emit dependency info.
 - tags are added to the files and are inserted into the db.
+- mobile app to show the tunes.
+	in phone/pad version it should scroll the tune slowly so that the player
+	could keep playing and not fiddle with the mobile device.

@@ -2,7 +2,7 @@ This documentation deals with how to create the final book
 ==========================================================
 Options:
 ========
-1. Create a pdf from every song and catenate them.
+1. Create a pdf from every song and catenate the small pdfs into one large pdf.
 	A command line like this could do the trick:
 	pdfjoin out/src/jazz/*.pdf --outfile '.$output.' 2> /dev/null
 
@@ -31,3 +31,4 @@ Options:
 		- it takes a long time to process that files (this is a bug which should be submitted to
 		the lilypond developers).
 		- the names of the tunes do not appear.
+	THIS IS THE WAY WE DO IT NOW.
