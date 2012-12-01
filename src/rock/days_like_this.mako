@@ -14,6 +14,8 @@
 	attributes['completion']="5"
 	attributes['uuid']="6437a34a-3bd4-11e2-9e13-9f845e169c9b"
 
+	attributes['remark']="This is the right scale"
+
 	attributes['idyoutuberemark']="Original video clip"
 	attributes['idyoutube']="BteIwbKU_iQ"
 	attributes['lyricsurl']="http://www.lyricsfreak.com/v/van+morrison/days+like+this_20142994.html"

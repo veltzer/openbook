@@ -23,6 +23,7 @@
 % if part=='Doc':
 	DONE:
 	TODO:
+	- mark what has been done to this song (I think it is done).
 	- how do I mark out verses and choruses in the actual text that appears?
 % endif
 
