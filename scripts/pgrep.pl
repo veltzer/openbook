@@ -15,7 +15,7 @@ use diagnostics;
 
 my($pattern)=$ARGV[0];
 my($debug)=0;
-my($pring_filename)=1;
+my($print_filename)=1;
 
 for(my($i)=1;$i<@ARGV;$i++) {
 	my($filename)=$ARGV[$i];
@@ -26,7 +26,7 @@ for(my($i)=1;$i<@ARGV;$i++) {
 	my($line);
 	while($line=<FILE>) {
 		if($line=~$pattern) {
-			if($pring_filename) {
+			if($print_filename) {
 				print $filename.": ";
 			}
 			print $line; 
