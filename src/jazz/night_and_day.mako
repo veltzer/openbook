@@ -24,6 +24,7 @@
 	attributes['idyoutuberemark']=""
 	attributes['idyoutube']=""
 	attributes['lyricsurl']="http://www.lyricsfreak.com/f/frank+sinatra/night+day_20055251.html"
+	attributes['wiki']="Night_and_Day_(song)"
 %>
 % endif
 
@@ -32,11 +33,12 @@
 	- filled in the meta data from the real book
 	- filled in the chords from the real book version.
 	- filled in this songs structure.
+	- filled in the wikipedia link.
+	- brought in the real book version.
+	- brought in the kiselev book version.
+	- checked the chords from the real book version.
+	- fill in the meta data from the kiselev book version (there was no meta info).
 	TODO:
-	- check the chords from the real book version.
-	- bring in the real book version.
-	- bring in the fake book version.
-	- fill in the meta data from the fake book version.
 	- fill in the tune from the real book version.
 	- fill in the words for the real book version.
 	- how do I put the last two chords (d:7 g:7) in the real book version in parenthesis?
