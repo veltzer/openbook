@@ -9,10 +9,16 @@
 
 	attributes['title']="Once I Loved"
 	attributes['style']="Jazz"
+	# from the real book
 	attributes['composer']="Antonio Carlos Jobim"
+	# from the real book
+	attributes['piece']="Bossa"
+	# from the new real book
 	attributes['piece']="Med.-Slow Bossa Nova"
+	# Ray Gilbert from the new real book
 	attributes['poet']="Vinicius DeMoraes, Ray Gilbert"
-	attributes['copyright']="1965, Ipanema Music."
+	# from the new real book
+	attributes['copyright']="1965, Ipanema Music. Used By Permission."
 
 	attributes['completion']="5"
 	attributes['uuid']="18294374-a26f-11df-a5f0-0019d11e5a41"
