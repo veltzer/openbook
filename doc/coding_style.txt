@@ -70,37 +70,40 @@ overall song structure:
 
 Chords:
 =======
-- Put bar lines in chords.
-	I tried not to put bar lines in chords and they make the code harder to maintain
-		and for me maintainance is a very serious objective.
+- should we put bar lines in chords? yes
+	advantages: (selected)
+		It makes the chords easier to read.
+		It makes it very easy to see on the resulting sheet when you didnt time the chords right
+			(bar lines appear where they should not)
+		It makes lilypond give you errors about the timings (which is good).
 		I consider the bar lines as sort of documentation when writing chords.
 	disadvantages:
 		They are not taken into consideration
 		They make the code longer
 		In Jazz tunes the lines (usually 4 chords) are very well defined
-			and the chord layout will be visible from the lines.
-	advantages:
-		It makes the chords harder to read.
+			and the chord layout will be visible from the lines
+			so bar lines are superfluous.
 - if a partial bar starts the tune the chords in it should
 	be marked as 's' and not 'r'. 'r' will cause N.C. to
 	be printed while 's' causes nothing to be printed.
-	Use 'r' only when there is really no chord (rare).
-- start chords with \startChords and end them with \endChords
-- in tunes which are not copies of existing one don't end with a turn around.
-	REASONS FOR:
-		- sounds bad (in midi for instance).
+	Use 'r' only when there is really no chord for that part of the tune (very rare).
+- should we end with a turn around? yes
+	advantages: (selected)
+		- maybe some people don't know how to turn around.
+		- sometime the turn around is not trivial (there are many types of turn around we must remember).
+		- sometime the turn around is not anywhere in the song.
+		- sometime the previous two reasons persist.
+	disadvantages:
+		- sounds bad at the very end of the music (in midi for instance).
 		- musicians know how to do turn arounds.
 		- an example of a turn around is usually available. This is especially
 		true for an AABA song where at least one turn around is always there (between
 		the first and the second A parts).
-	REASONS AGAINST:
-		- maybe some people don't know how to turn around.
-		- sometime the turn around is not trivial.
-		- sometime the turn around is not anywhere in the song.
-		- sometime both the previous two reasons persist.
 - marking of parts ("A", "B") should be done within the chord section.
 	rationale: less clutter and the chords define the structure more than the melody.
-- marking the start of parts, end of parts, start of song, end of song should be done in the chord section.
+- marking the start of chords, parts, end of parts, start of song, end of song should be done in the chord section.
+	Use: \startChords, \endChords, \startPart, \endPart
+	rationale: less clutter and the chords define the structure more than the melody.
 - use "d:m7" and not "d:min7" (shorter).
 	This is enforced by the style checker.
 - do NOT use repears ( | r1 | ) in chords. If you don't want the chords to repeat there
