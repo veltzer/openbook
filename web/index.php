@@ -105,8 +105,12 @@
 		</ul>
 		</p>
 		<p>
-			Mark Veltzer, 2011-2012
-			<a href="mailto:mark.veltzer@gmail.com">mark.veltzer@gmail.com</a>
+		Mark Veltzer, <?php 
+			$copyYear = 2011;
+			$curYear = date('Y');
+			echo $copyYear . (($copyYear != $curYear) ? '-' . $curYear : '');
+		?>
+		<a href="mailto:mark.veltzer@gmail.com">mark.veltzer@gmail.com</a>
 		</p>
 	</body>
 </html>
