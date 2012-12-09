@@ -61,7 +61,7 @@
 		cis:m | a | d | fis1*2 | \myEndLine
 	}
 
-	%% in order to see the closing repeats
+	%% commented in order to see the closing repeats
 	%%\endSong
 	%%\endChords
 }
