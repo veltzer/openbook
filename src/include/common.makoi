@@ -195,6 +195,7 @@ endChords={}
 	attributes['render']=''
 	attributes['heb']=False
 	attributes['lyricsInMidi']=False
+	attributes['doChordBars']=False
 %>
 </%def>
 
@@ -489,6 +490,10 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 		%%\override BarLine #'bar-size = #4
 		\override BarLine #'bar-extent = #'(-2 . 2)
 		\consists "Bar_engraver"
+	}
+% else:
+	\with {
+		\remove "Bar_engraver"
 	}
 % endif
 % if attributes['inline']:
