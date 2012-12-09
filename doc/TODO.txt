@@ -1,5 +1,11 @@
 Now:
 ====
+- both in the hebrew and english versions when the name of the poet is the
+	name of the composer they appear ugly in the index.
+	Examples:
+		Eich Hu Shar/Danny Robas
+		As Time Goes By/Herman Hupfeld
+
 - in the web site the pdf file doesn't always show up properly even if the file
 	is updated.
 	maybe we should use .htaccess and tell the server not to cache.
