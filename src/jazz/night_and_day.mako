@@ -60,12 +60,13 @@
 		d:m7 | g:7 | c:maj7 |
 	} \alternative {
 		{
-			c:maj7 | %% \myEndLine
+			c:maj7 | %% \myEndLine remarked to prevent line break
 		}
 		{
-			bes:7 | \myEndLine \endPart
+			bes:7 | \myEndLine
 		}
 	}
+	\endPart
 
 	\mark "B"
 	\startPart
