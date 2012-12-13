@@ -1,5 +1,6 @@
 Now:
 ====
+- the rockbook creation leaves midi files around. Remove these junk files. 
 - both in the hebrew and english versions when the name of the poet is the
 	name of the composer they appear ugly in the index.
 	Examples:
