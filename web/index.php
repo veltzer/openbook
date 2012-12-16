@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="UTF-8"/>
 		<title>OpenBook</title>
 		<link rel="shortcut icon" href="favicon.ico"/>
 		<meta name="Description" content="jazz real book open source project that produces beautiful jazz standards for musicians"/>
