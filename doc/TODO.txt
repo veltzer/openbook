@@ -1,12 +1,13 @@
 Now:
 ====
+- remove the perl scripts and replace them with python ones
+	(we don't want to rely on both python and perl - one is enough)
 - the rockbook creation leaves midi files around. Remove these junk files. 
 - both in the hebrew and english versions when the name of the poet is the
 	name of the composer they appear ugly in the index.
 	Examples:
 		Eich Hu Shar/Danny Robas
 		As Time Goes By/Herman Hupfeld
-
 - in the web site the pdf file doesn't always show up properly even if the file
 	is updated.
 	maybe we should use .htaccess and tell the server not to cache.
@@ -19,7 +20,6 @@ Now:
 - tweeter api does not work. check it out and fix it.
 - add the facebook api to release manager and see that it works.
 
-- build a hebrew songbook as well.
 - stop calling the template common.makoi. The name and the location of this
 	template is totally inappropriate...
 - make the full build also build all the pdfs (not just the ones going into
