@@ -35,6 +35,7 @@
 	- heard the tune to make sure it sounds right.
 	- document the youtube performance.
 	- added the tunes structure.
+	- marked the part markings in the fake book version.
 	TODO:
 	- add the real book chords and tune.
 	- how about adding the Aebersold version too?
@@ -85,6 +86,7 @@
 	\tempo "Allegro" 4 = 130
 
 	\partial 8 f8 |
+	%% A part
 	\repeat volta 2 {
 		bes8 d bes f bes4 r8 f | bes8 f bes des r g,4 f8 |
 	}
@@ -96,9 +98,9 @@
 			e8 g bes des \times 4/3 { c16 des c } g8 a | r1 |
 		}
 	}
-	g'4 r8 f~ f r des4~ | des4. g,8 r c4 g8 |
-	des'4 des8 des g,4 c | r2 r4 r8 f, |
-	bes d bes f bes4 r8 f | bes f bes des r g,4 f8 |
-	e g bes des \times 4/3 { c16 des c } g8 bes | r1 |
+	%% B part
+	g'4 r8 f~ f r des4~ | des4. g,8 r c4 g8 | des'4 des8 des g,4 c | r2 r4 r8 f, |
+	%% A part
+	bes d bes f bes4 r8 f | bes f bes des r g,4 f8 | e g bes des \times 4/3 { c16 des c } g8 bes | r1 |
 }
 % endif

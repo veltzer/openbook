@@ -12,7 +12,7 @@
 	attributes['composer']="Sting"
 	attributes['style']="Pop"
 	attributes['piece']="Med. Ballad"
-	attributes['lyricsurl']="http://www.lyrics007.com/Sting%20Lyrics/Shape%20Of%20My%20Heart%20Lyrics.html"
+
 	attributes['idyoutuberemark']="Leon the professional clip...:)"
 	attributes['idyoutube']="_0J0toYZB6Q"
 	attributes['idyoutuberemark']="Another one from Leon...:)"
@@ -25,6 +25,7 @@
 	attributes['idyoutube']="037uSAIahho"
 	attributes['idyoutuberemark']="Orignal video in the studio"
 	attributes['idyoutube']="qZ22i7QllO8"
+	attributes['lyricsurl']="http://www.lyrics007.com/Sting%20Lyrics/Shape%20Of%20My%20Heart%20Lyrics.html"
 
 	attributes['completion']="5"
 	attributes['uuid']="677fee0a-a26f-11df-bd2c-0019d11e5a41"
