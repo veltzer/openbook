@@ -15,6 +15,7 @@
 
 	attributes['remark']="same scale (fis:m) as the original version"
 
+	attributes['idyoutuberemark']="Original version by Europe"
 	attributes['idyoutube']="9jK-NcRmVcw"
 	attributes['lyricsurl']="http://www.elyrics.net/read/e/europe-lyrics/the-final-countdown-lyrics.html"
 %>
@@ -33,7 +34,7 @@
 
 <%def name="chords()">
 	\chordmode {
-		\mark "opening"
+		\mark "Opening"
 		\startRepeat
 		%% the remarked part is from the song but it is repeated so I just
 		%% put it once...
@@ -50,12 +51,12 @@
 			fis:m e | a d | cis1*2:7 |
 		}
 		\endRepeat
-		\mark "interlude"
+		\mark "Interlude"
 		\startBar
 		fis1*4:m |
 		\myEndLine
 		\endBar
-		\mark "verse"
+		\mark "Verse"
 		\startBar
 		fis1*3:m | d1 |
 		fis1*2:m | fis2:m e | a1 |
@@ -63,17 +64,17 @@
 		d | cis:m | e1*2 |
 		\myEndLine
 		\endBar
-		\mark "chorus"
+		\mark "Chorus"
 		\startRepeat
 		\repeat volta 2 {
 			fis1:m | d | b:m | e2 e/fis |
 		}
-		\mark "interlude"
+		\mark "Interlude"
 		\startBar
 		fis1*2:m |
 		\myEndLine
 		\endBar
-		\mark "solo"
+		\mark "Solo"
 		\startRepeat
 		\repeat volta 2 {
 			b:m | a | d | g g/fis |
