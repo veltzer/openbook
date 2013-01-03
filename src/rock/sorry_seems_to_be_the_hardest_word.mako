@@ -52,8 +52,8 @@
 		g1:m7.9 | c:m7.9 | f:7.9 | bes2:9 a4:m7.5- d:7.9- | \myEndLine
 		g1:m7.9 | c:m7.9 | f:7.9 | bes2:9 a:m7.5- | \myEndLine
 		\mark "Chorus"
-		ees2:maj7.9 d:7 | g:m7/bes c:7.9 | ees:maj7.9 d:7 | g:m7.9 a4:m7.5- d:7.9- | \myEndLine
-		ees2:maj7.9 d:7 | g:m7/bes c:7.9 | ees1:maj7.9 | c2:m7.9/ees d:7 | \myEndLine
+		ees2/g d:7/fis | g:m6/f e:m7.5- | ees:maj7.9 d:7 | g:m7.9 a4:m7.5- d:7.9- | \myEndLine
+		ees2/g d:7/fis | g:m6/f e:m7.5- | ees1:maj7.9 | c2:m7.9/ees d:7 | \myEndLine
 		\mark "Instrumental"
 		g1:m7.9 | c:m7.9 | f:7.9 | bes2:9 a4:m7.5- d:7.9- | \myEndLine
 		g1:m7.9 | c:m7.9 | f:7.9 | bes2:9 a:m7.5- | \myEndLine
