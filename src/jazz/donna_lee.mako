@@ -26,8 +26,8 @@
 	DONE:
 	- filled in the meta data from the real book
 	TODO:
-	- fill in the real book chords.
 	- fill in the real book tune.
+	- fill in the real book chords.
 
 	- brought in the real book pdf.
 	- filled in the tunes meta data from the fake book.
