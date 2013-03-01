@@ -1,5 +1,8 @@
 Now:
 ====
+- move to using the Jazz font in this project.
+	https://sites.google.com/site/jpgzic/home/demonstration
+	and the email I got from vicent (vincent).
 - remove the perl scripts and replace them with python ones
 	(we don't want to rely on both python and perl - one is enough)
 - the rockbook creation leaves midi files around. Remove these junk files. 
