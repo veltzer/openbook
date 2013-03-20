@@ -2,6 +2,8 @@ Now:
 ====
 - move to using the Jazz font in this project.
 	https://sites.google.com/site/jpgzic/home/demonstration
+	http://lists.gnu.org/archive/html/lilypond-user/2013-03/msg00647.html
+	https://sites.google.com/site/jpgzic/home
 	and the email I got from vicent (vincent).
 - remove the perl scripts and replace them with python ones
 	(we don't want to rely on both python and perl - one is enough)
