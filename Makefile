@@ -37,7 +37,7 @@ SOURCE_DIR:=src
 # where is the output folder ?
 OUT_DIR:=out
 # what is the web folder ?
-WEB_DIR:=/var/www/openbook
+WEB_DIR:=~/public_html/public/openbook
 # where is the common file?
 COMMON:=src/include/common.makoi
 # wrappers
@@ -387,14 +387,10 @@ $(RK_OUT_LY): $(RK_OUT_FILES) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 .PHONY: install
 install: $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(WEB_FILES) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)sudo rm -rf $(WEB_DIR)
-	$(Q)sudo mkdir -p $(WEB_DIR)
-	$(Q)sudo cp -r .htaccess index.html $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(WEB_FOLDER) $(WEB_DIR)
-
-.PHONY: clean_web
-clean_web: $(ALL_DEP)
-	$(info doing [$@])
-	$(Q)sudo rm -rf $(WEB_DIR)
+	$(Q)rm -rf $(WEB_DIR)
+	$(Q)mkdir -p $(WEB_DIR)
+	$(Q)cp -r .htaccess index.html $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(WEB_FOLDER) $(WEB_DIR)
+	$(Q)chmod -R go+rx $(WEB_DIR)
 
 # include the deps files (no warnings)
 ifeq ($(DO_LYD),1)
