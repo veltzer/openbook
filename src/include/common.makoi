@@ -429,7 +429,7 @@ footervalheb=#"זה הטקסט התחתון"
 			\huge \larger \bold
 			\fill-line { \larger "${attributes['title']}" }
 % if attributes['subtitle']!='':
-			\fill-line { \large \smaller \bold \larger "(${attributes['subtitle']})" }
+			\fill-line { \large \smaller \bold \larger "${attributes['subtitle']}" }
 % endif
 			\fill-line { \smaller \bold "${attributes['subsubtitle']}" }
 			\fill-line {
