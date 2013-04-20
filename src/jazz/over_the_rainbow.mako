@@ -26,7 +26,11 @@
 	attributes['uuid']="c6992350-a9da-11e2-8a7f-97606039682f"
 	attributes['structure']="AABA"
 
-	attributes['idyoutube']=""
+	attributes['idyoutuberemark']="The original Judy Garland version"
+	attributes['idyoutube']="1HRa4X07jdE"
+	attributes['idyoutuberemark']="Keith Jarret kills them"
+	attributes['idyoutube']="u3eH6VW6Chc"
+	attributes['lyricsurl']="http://www.stlyrics.com/lyrics/thewizardofoz/somewhereovertherainbow.htm"
 %>
 % endif
 
@@ -40,11 +44,13 @@
 	- checked the wikifonia melody sounds fine.
 	- checked the wikifonia chords.
 	- checked the wikifonia lyrics.
+	- checked the wikifonia melody.
+	- find youtube performances.
+	- put a link to the lyrics.
 	TODO:
-	- check the chords tune lyrics and hearing of the wikifonia tune.
 	- put the copyright right (with the copyright symbol).
 	- put the link to the tune on the web: http://www.wikifonia.org/node/1072#/C/0/1
-	- find you tube performances.
+	- get another version of this tune in here.
 % endif
 
 % if part=='ChordsWikifonia':
