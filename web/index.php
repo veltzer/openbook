@@ -2,7 +2,12 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<title>OpenBook</title>
+		<?php
+			echo '<link rel="shortcut icon" href="favicon.ico?t='.time().'" />';
+		?>
+		<!-- static favicon
 		<link rel="shortcut icon" href="favicon.ico"/>
+		-->
 		<meta name="Description" content="jazz real book open source project that produces beautiful jazz standards for musicians"/>
 		<meta name="Keywords" content="Mark Veltzer, veltzer, jazz, Real book, realbook, openbook, open book, music, standards, pdf, sheet music, open source"/>
 	</head>
