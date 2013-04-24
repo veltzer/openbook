@@ -1,0 +1,63 @@
+\paper {
+ ragged-bottom = ##f
+ indent = 0
+}
+
+\version "2.14.0"  % necessary for upgrading to future LilyPond versions.
+
+% notation en francais + accords police manuscrite
+\include "AccordsJazzDefs-fr.ly"
+\include "LilyJAZZ.ily"
+
+%{
+Tenor Madness
+%}
+
+\header{
+	title =\markup {\fontsize #+4 \override #'(font-name . "LilyJAZZText")
+		"Tenor Madness"
+	}
+	composer =\markup {\fontsize #+1 \override #'(font-name . "LilyJAZZText")
+		"Sony Rollins"
+	}
+  tagline = "Vicnet   Version du 21 mars 2013"
+}
+
+melodie = {
+  \jazzOn
+  \relative {
+    \time 4/4
+    \key sib \major
+    \partial 8 re'8 |
+    re8 sib4 sol8 sib4 r8 reb ~ |
+    reb sib4 sol8 sib4 r8 re |
+    re sib4 sol8 sib do sib sol |
+    sib do sib sib r4 r8 reb ~ |
+    reb sib4 sol8 sib4 r8 reb ~ |
+    reb sib4 sol8 sib4 r8 re ~ |
+    re sib4 sol8 sib do sib sol |
+    sib do sib sib r4 r8 do ~ |
+    do sol4 do8 si sol mib do |
+    sib' sol sold la r4 r8 re ~ |
+    re sib4 sol8 sib do sib sol |
+    sib do sib sib r2 |
+  }
+}
+
+accords = {
+  \chordmode {
+	\partial 8 s8 |
+	sib1:7 | mib  | sib:7 | fa2:m7 sib:7 |
+	mib1:7 | mib:7 | sib:7 | sib:7 |
+	do2:maj sol:7 | do:m7 fa:7 | sib1:7 | sib:7 |
+  }
+}
+
+<<
+  \chords {
+      \accords
+  }
+  {
+      \melodie
+  }
+>>
