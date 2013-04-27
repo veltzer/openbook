@@ -11,7 +11,8 @@
 	import socket # for gethostname
 	import subprocess # for subprocess.check_output
 
-	attributes['lilyver']='2.14.2'
+	#attributes['lilyver']='2.14.2'
+	attributes['lilyver']='2.16.0'
 	attributes['date']=datetime.datetime.now().strftime('%T %d-%m-%Y')
 	attributes['username']=pwd.getpwuid(os.getuid())[0]
 	attributes['gittag']=subprocess.check_output(['git','describe','--abbrev=0']).strip()
@@ -276,7 +277,7 @@ ${self.defs()}
 % endif
 
 % if attributes['toc']:
-\markuplines \table-of-contents
+\markuplist \table-of-contents
 %%\pageBreak
 % endif
 
