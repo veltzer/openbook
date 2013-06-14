@@ -1,0 +1,24 @@
+The beatles
+Meter: 4/4
+
+C1/8 C1/8 D1/8 | D5/8 C1/8 C1/8 D1/8 | D5/8 C1/8 C1/8 D1/8 | D | D |
+
+verse:
+G | D | Em | Bm |
+G | D | Em | B7 |
+
+chorus:
+C D | G E:m |
+C D | G |
+
+special:
+D:m7 | G | C | A:m7 |
+D:m7 | G |
+C5/8 C1/8 C1/8 D1/8 | D5/8 C1/8 C1/8 D1/8 | D5/8 C1/8 C1/8 D1/8 | D | D |
+
+last chorus:
+C D | G E:m |
+C D | B7 |
+C D | G3/4 G3/4 G2/4 |
+
+youtube: http://www.youtube.com/watch?v=iim6s8Ea_bE
