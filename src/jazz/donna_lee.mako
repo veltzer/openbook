@@ -34,7 +34,7 @@
 	- filled in the real book chords.
 	- filled in the real book tune.
 	- checked the real book chords.
-	- checked the real book tune. 
+	- checked the real book tune.
 	- heard the real book tune to make sure it sounds right.
 	- documented the youtube performance.
 	- upgraded the tune to level 5.

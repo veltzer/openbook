@@ -115,7 +115,7 @@
 	\times 2/3 {c c, d} \times 2/3 {e f g} | gis2. a4 |
 	\times 2/3 {bes bes, c} \times 2/3 {d e f} | fis2. r4 |
 
-	%% back to A part
+	%% A part
 	g4. e8 e4 d8 g8~ | g4 e8 e~ e e d g~ |
 	g4 e e d8 g~ | g g e e~ e e d a'~ |
 	a4. f8 f f d c'~ | c4. e,8 \times 2/3 {e4 e d} |
