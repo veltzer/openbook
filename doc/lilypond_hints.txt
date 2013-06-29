@@ -20,11 +20,20 @@ Melody:
 	and should be connected by one beam but since the melody rises and falls lilypond decides
 	to connect it with one beam. In order to get around it use manual beams this way:
 	b8.[ b16 a8. g16] a8
-- putting a Fine in the tune:
+- putting a "Fine" mark in the tune:
 	g1~ \mark \markup { \italic { Fine } }
 	This will put the Fine on top of the staff.
 	If you want it below the staff then use:
 	g1  | r4_\markup { \italic { Fine } }
+- putting "small" gliding notes
+	just use on of \grace \acciaccatura \appoggiatura. See the suicide_tango tune.
+	References: http://lilypond.org/doc/v2.14/Documentation/notation/special-rhythmic-concerns
+	Notes:
+	- if you use one of these before an "\alternative" to voltas you will get indiscrepency
+		between the voltas of the chords and melody. To avoid this use the special notation mentioned
+		here in the bar *BEFORE* the alternative. See the suicide_tango tune.
+	- all of these (grace, acciaccature, ...) seem to interfere with line breaks. Haven't figured
+		this one out yet.
 
 Chords:
 =======
@@ -203,6 +212,21 @@ Midi production
 will lead to multiple midi files produced when that file gets processed.
 
 - Is there a way to catenates all the midi files from within lilypond ? (tell lilypond that all midi should come out in a single midi file ?)
+
+- setting instruments for midi production
+	list of instruments can be found at
+	http://lilypond.org/doc/v2.11/Documentation/user/lilypond/MIDI-instruments#MIDI-instruments
+	for chords:
+	\set ChordNames.midiInstrument = #"acoustic grand"
+	for melody:
+	\set Staff.midiInstrument = #"flute"
+- setting midi volumes
+	\set Staff.midiMinimumVolume = #0.7
+	\set Staff.midiMaximumVolume = #0.9
+	* first note of the staff MUST be accompanied with dynamic symbols.
+	see suicide_tango as example.
+	References:
+	http://lilypond.org/doc/v2.12/Documentation/user/lilypond/Controlling-MIDI-dynamics
 
 Documentation for lilypond:
 ===========================
