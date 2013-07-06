@@ -5,7 +5,7 @@
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
 	attributes['doLyricsmore']=True
-	attributes['render']="Real"
+	attributes['render']="My"
 
 	attributes['title']="Suicide Tango"
 	attributes['style']="Tango"
@@ -20,7 +20,8 @@
 	attributes['uuid']="66834ecc-dcd0-11e2-9ec9-782bcbdd3b7a"
 	attributes['structure']="AABA"
 
-	attributes['idyoutube']="http://www.youtube.com/watch?v=qOnU-TRRmSE"
+	attributes['idyoutuberemark']="Original Russian version"
+	attributes['idyoutube']="qOnU-TRRmSE"
 %>
 % endif
 
@@ -32,7 +33,7 @@
 	- add russian lyrics (write it in russian?!?).
 % endif
 
-% if part=='ChordsReal':
+% if part=='ChordsMy':
 \chordmode {
 %%	\set ChordNames.midiInstrument = #"accordion"
 %%	\set ChordNames.midiMinimumVolume = #0.1
@@ -86,7 +87,7 @@
 }
 % endif
 
-% if part=='VoiceReal':
+% if part=='VoiceMy':
 \relative c' {
 	\time 4/4
 	\key f \minor
@@ -137,12 +138,12 @@
 }
 % endif
 
-% if part=='LyricsReal':
+% if part=='LyricsMy':
 \lyricmode {
 }
 % endif
 
-% if part=='LyricsmoreReal':
+% if part=='LyricsmoreMy':
 \lyricmode {
 }
 % endif
