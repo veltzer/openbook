@@ -58,7 +58,7 @@
 	d:m | f:7/c | bes:maj7 | bes:m | \myEndLine
 	d:m | b4:m7.5- e2:7 | a4:m7 d2:7 | g4:m7 c2:7 | \myEndLine
 	\endPart
-	
+
 	\mark "A"
 	\startPart
 	f2. | d:m7 | bes:maj7 | f | \myEndLine
