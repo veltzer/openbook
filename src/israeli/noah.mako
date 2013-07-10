@@ -40,6 +40,11 @@
 \chordmode {
 	\startChords
 	\startSong
+	
+	\mark "Intro"
+	\startPart
+	f1:m | bes:m | f:m | c:7 | \myEndLine
+	\endPart
 
 	\mark "A"
 	\startPart
@@ -63,18 +68,28 @@
 	\time 4/4
 	\key f \minor
 
+	%% Intro
+	f8 aes bes b c f, c' b | bes f ees' d f, d' des f, | des' c f, c' b f bes aes | c, e g bes c4 c' | 
+
 	%% A part
-	f8 aes8~ aes2. | f'4 des8 bes4 g4 c8~ | c4 aes8 f4 c4 bes'8~ | bes4 g8 e4 c4. |
+	f,,8 aes8~ aes2. | f'4 des8 bes4 g4 c8~ | c4 aes8 f4 c4 bes'8~ | bes4 g8 e4 c4. |
 	f8 aes8~ aes2. | f'4 des8 bes4 g4 c8~ | c4 aes8 f4 c4 bes'8~ | bes4 g8 e4 c4. |
 	g'4 f8 f4 c g'8~ | g f4 f2~ f8 | g4 f8 f4 c g'8~ | g f4 f c4. |
 	g'4 f8 f4 c g'8~ | g f4 f bes,4. | g'4 f8 f4 c g'8~ | g f4 c'8~ c2 |
 	c4 bes8 bes4 f c'8~ | c bes4 bes ees,4. | c'4 bes8 bes4 ges4 c8~ | c8 bes4 bes aes8 g aes~ |
-	aes1 | f'4 des8 bes4 g f8~ | f1~ | f |
+	aes1 | f'4 des8 bes4 g f8~ | f c' bes aes bes aes f aes | c, e g bes c2 |
 }
 % endif
 
 % if part=='LyricsMy':
 \lyricmode {
+	%% Intro
+	_ _ _ _ _ _ _ _
+	_ _ _ _ _ _ _ _
+	_ _ _ _ _ _ _ _
+	_ _ _ _ _ _
+
+	%% A part
 	נ -- ח- __ לא ש -- כ -- חנו איך __ ב -- ג -- שם ו __ -- ב -- ס -- ער
 	נ -- ח- __ ל -- תי -- בה א -- ספ __ -- ת את ח -- יות __ ה -- י -- ער.
 	שת -- יים, שת -- יים מ __ -- כל מין __
