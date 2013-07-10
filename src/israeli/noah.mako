@@ -19,6 +19,8 @@
 
 	attributes['structure']="A"
 
+	attributes['lyricsurl']="http://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=688&wrkid=2292&gclid=CLiirsj_o7gCFci23godXw0A8w"
+
 	attributes['idyoutube']="Eiae247OZXI"
 
 %>
