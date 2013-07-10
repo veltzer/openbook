@@ -1,4 +1,4 @@
-Hello and Welcome to OpenBook
+Hello and welcome to OpenBook
 =============================
 What is OpenBook ?
 ------------------
