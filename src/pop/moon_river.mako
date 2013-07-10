@@ -32,7 +32,14 @@
 	- put in the chords
 	- put in the tune
 	- put in the lyrics
+	- head the tune (sounds good).
+	- put it one version of youtube.
+	- put in the lyrics url.
+	- checked that the lyrics fit the chords and tune.
+	- put in all the meta data.
+	- put in the tunes structure.
 	TODO:
+	- add another youtube performance.
 % endif
 
 % if part=='ChordsMy':
