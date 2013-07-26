@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import sys
+import sys # for version_info
 
 def checkversion():
 	if sys.version_info[0:2] != (2,7):
@@ -9,4 +9,4 @@ def checkversion():
 #if __name__=='__main__':
 #	checkversion()
 
-checkversion()
+#checkversion()

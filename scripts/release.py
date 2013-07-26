@@ -13,8 +13,10 @@
 import subprocess
 import os # for getcwd
 import releasemanager
+import versioncheck # for checkversion
 
-import versioncheck
+# first check that we are using the correct version of python
+versioncheck.checkversion()
 
 ##############
 # parameters #

@@ -70,7 +70,7 @@
 	ees1*4:9 | \myEndLine
 	aes1*2:6 | c1*2:7 | \myEndLine
 	\endPart
-	
+
 	\mark "A (Bright Latin)"
 	\startPart
 	c1*4:7 | \myEndLine
