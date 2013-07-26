@@ -5,7 +5,7 @@ this script gets the graph data for the openbook progress report
 the idea is to be able to see in a graph the progress being made in
 this project.
 
-CHAGELOG:
+CHANGELOG:
 19/11/11: wrote the damn script.
 21/11/11: added insertion of graph data into the database.
 
@@ -24,9 +24,10 @@ import subprocess
 import dateutil.parser
 import MySQLdb
 import warnings
+import versioncheck # for checkversion
 
-import versioncheck
-
+# first check that we are using the correct version of python
+versioncheck.checkversion()
 # turn warnings into errors
 warnings.filterwarnings("error")
 debug=False

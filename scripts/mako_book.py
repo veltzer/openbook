@@ -5,8 +5,10 @@ import mako.template
 import mako.lookup
 import os # for os.chmod, os.unlink
 import glob # for glob.glob
+import versioncheck # for checkversion
 
-import versioncheck
+# first check that we are using the correct version of python
+versioncheck.checkversion()
 
 if len(sys.argv)!=3:
 	raise ValueError('command line issue')
@@ -31,11 +33,10 @@ def get_results(lst):
 		res+=line
 	return res
 
-try:
+# unlink the file if it exists
+if os.path.isfile(p_output):
 	os.unlink(p_output)
-except:
-	# handle the error better, only non existant file should be glossed over...
-	pass
+
 mylookup = mako.lookup.TemplateLookup(directories=['.'],input_encoding=input_encoding,output_encoding=output_encoding)
 template=mako.template.Template(filename=common,lookup=mylookup,output_encoding=output_encoding,input_encoding=input_encoding)
 file=open(p_output,'w')
@@ -53,9 +54,17 @@ attr['inline']=True
 attr['midi']=False
 attr['parts']=True
 attr['doChordBars']=False
-file.write(template.render(attributes=attr))
-file.close()
-# python 3
-#os.chmod(p_output,0o0444)
-# python 2
-os.chmod(p_output,0444)
+
+# if there is any error, remove the output to prevent having
+# bad output...
+try:
+	file.write(template.render(attributes=attr))
+	file.close()
+	# python 3
+	#os.chmod(p_output,0o0444)
+	# python 2
+	os.chmod(p_output,0444)
+except Exception, e:
+	file.close()
+	os.unlink(p_output)
+	raise e

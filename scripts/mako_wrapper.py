@@ -4,8 +4,10 @@ import sys
 import mako.template
 import mako.lookup
 import os # for os.chmod, os.unlink
+import versioncheck # for checkversion
 
-import versioncheck
+# first make sure that we are using the correct version of python
+versioncheck.checkversion()
 
 if len(sys.argv)!=3:
 	raise ValueError('command line issue')
@@ -43,6 +45,5 @@ try:
 	# python 2
 	os.chmod(p_output,0444)
 except Exception,e:
-	print "unlinking output"
 	os.unlink(p_output)
 	raise e

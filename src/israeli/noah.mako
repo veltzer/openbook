@@ -10,9 +10,13 @@
 
 	attributes['title']=u"נח"
 	attributes['style']="Israeli"
+	# from the internet
 	attributes['composer']=u"מתי כספי"
+	# from the internet
 	attributes['poet']=u"יורם טהרלב"
+	# from the internet
 	attributes['singer']=u"מתי כספי"
+	# mine
 	attributes['piece']=u"סמבה"
 
 	attributes['completion']="5"
@@ -22,6 +26,7 @@
 
 	attributes['lyricsurl']="http://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=688&wrkid=2292&gclid=CLiirsj_o7gCFci23godXw0A8w"
 
+	attributes['idyoutuberemark']="Mati Caspi in the original performance"
 	attributes['idyoutube']="Eiae247OZXI"
 
 %>
@@ -31,16 +36,23 @@
 	DONE:
 	- put in some of the meta data
 	- put in the chords
-	TODO:
 	- put in the melody
 	- put in the lyrics
+	- listened to the midi and it is ok.
+	- added the you tube link.
+	- checked the chords.
+	- checked the melody.
+	- marked out the structure.
+	- added the lyrics url
+	- adjusted the lyrics for the tune.
+	TODO:
 % endif
 
 % if part=='ChordsMy':
 \chordmode {
 	\startChords
 	\startSong
-	
+
 	\mark "Intro"
 	\startPart
 	f1:m | bes:m | f:m | c:7 | \myEndLine
@@ -48,8 +60,8 @@
 
 	\mark "A"
 	\startPart
-	f1:m | bes:m | f:m | c:7 | \myEndLine
-	f1:m | bes:m | f:m | c:7 | \myEndLine
+	f:m | bes:m | f:m | c:7 | \myEndLine
+	f:m | bes:m | f:m | c:7 | \myEndLine
 	f:7 | bes:7 | c:7 | f | \myEndLine
 	f:7 | bes:7 | c:7 | f:7 | \myEndLine
 	bes | ees | ees:m7 | c:7 | \myEndLine
@@ -69,7 +81,7 @@
 	\key f \minor
 
 	%% Intro
-	f8 aes bes b c f, c' b | bes f ees' d f, d' des f, | des' c f, c' b f bes aes | c, e g bes c4 c' | 
+	f8 aes bes b c f, c' b | bes f ees' d f, d' des f, | des' c f, c' b f bes aes | c, e g bes c4 c' |
 
 	%% A part
 	f,,8 aes8~ aes2. | f'4 des8 bes4 g4 c8~ | c4 aes8 f4 c4 bes'8~ | bes4 g8 e4 c4. |
@@ -141,7 +153,6 @@
 				"פתח לרגע את הצוהר"
 				"ואל תוך התכלת הלבנה"
 				"שלח את היונה."
-
 			}
 		}
 	}

@@ -6,10 +6,11 @@
 import sys # for argv
 import os # for chmod
 import subprocess # for Popen
+import os.path # for isfile
+import versioncheck # for checkversion
 
-import versioncheck
-
-# this function is here because python2.6 does not have subprocess.check_output
+# this function is here because we want to supress output until we know
+# there is an error (and subprocess.check_output does not do this)
 def system_check_output(args):
 	pr=subprocess.Popen(args,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
 	(output,errout)=pr.communicate()
@@ -18,6 +19,9 @@ def system_check_output(args):
 		print output
 		print errout
 		raise ValueError('error in executing',args)
+
+# first check that we are using the correct version of python
+versioncheck.checkversion()
 
 if len(sys.argv)!=5:
 	raise ValueError('command line issue')
@@ -28,11 +32,11 @@ p_out=sys.argv[3]
 p_ly=sys.argv[4]
 
 # remove the target files, do nothing if they are not there
-try:
+if os.path.isfile(p_ps):
 	os.unlink(p_ps)
+if os.path.isfile(p_pdf):
 	os.unlink(p_pdf)
-except:
-	pass
+
 # run the command
 args=[]
 args.append('lilypond')
