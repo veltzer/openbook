@@ -31,10 +31,13 @@
 	- the grace notes seem to meddle with the line breaks. Why is that? find
 	the reason/submit a bug and document the issue in the hints file.
 	- add russian lyrics (write it in russian?!?).
+	- find out how to balance volume of accompaniment and lead and set the
+	instruments back in (violin for melody and accordion for chords).
 % endif
 
 % if part=='ChordsMy':
 \chordmode {
+%%	http://lilypond.org/doc/v2.11/Documentation/user/lilypond/MIDI-instruments#MIDI-instruments
 %%	\set ChordNames.midiInstrument = #"accordion"
 %%	\set ChordNames.midiMinimumVolume = #0.1
 %%	\set ChordNames.midiMaximumVolume = #0.1
@@ -94,9 +97,10 @@
 	\clef treble
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
-	\set Staff.midiInstrument = #"accordion"
-	\set Staff.midiMinimumVolume = #0.95
-	\set Staff.midiMaximumVolume = #0.95
+%%	http://lilypond.org/doc/v2.11/Documentation/user/lilypond/MIDI-instruments#MIDI-instruments
+%%	\set Staff.midiInstrument = #"violin"
+%%	\set Staff.midiMinimumVolume = #0.5
+%%	\set Staff.midiMaximumVolume = #0.5
 
 	%% intro
 	\repeat volta 2 {

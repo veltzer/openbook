@@ -235,6 +235,8 @@ will lead to multiple midi files produced when that file gets processed.
 	see suicide_tango as example.
 	References:
 	http://lilypond.org/doc/v2.12/Documentation/user/lilypond/Controlling-MIDI-dynamics
+	The problem is I do not seem to be able to balance accompaniment and lead.
+	see suicide_tango as example.
 
 Documentation for lilypond:
 ===========================
