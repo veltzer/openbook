@@ -1,5 +1,16 @@
 Now:
 ====
+- try doing "make out/src/israeli/kama_ahava.stamp"
+	and see the error.
+	This does not let you know what the lilypond error is.
+	It is using a perl script (instead of python).
+	so:
+		- move the perl script to a python script.
+		- show the errors.
+		- get ridd of the ok_wrapper.pl script in favour of a python script.
+		- get ridd of perl as a dependency to this project (check ubuntu_install.py
+			compiles with that).
+
 - move to using the Jazz font in this project.
 	https://sites.google.com/site/jpgzic/home/demonstration
 	http://lists.gnu.org/archive/html/lilypond-user/2013-03/msg00647.html
