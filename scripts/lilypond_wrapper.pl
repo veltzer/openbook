@@ -154,12 +154,12 @@ if($res) {
 	my($pdf_file)=File::Spec->catpath($volume,$directories,$base.'.pdf');
 	if(!(-f $pdf_file)) {
 		do_files($output,1);
-		die("error in output production");
+		die("error in output production - no pdf file was generated");
 	}
 	my($midi_file)=File::Spec->catpath($volume,$directories,$base.'.midi');
 	if(!(-f $midi_file)) {
 		do_files($output,1);
-		die("error in output production");
+		die("error in output production - no midi file was generated. This probably means that you have no music in your lilypond file");
 	}
 	# now we are sure that there is output, we can touch the stamp file...
 	my($res0)=open(FILE,'> '.$output);
