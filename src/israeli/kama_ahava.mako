@@ -19,15 +19,15 @@
 	# mine
 	attributes['piece']=u"פלמנקו"
 
-	attributes['completion']="5"
+	attributes['completion']="4"
 	attributes['uuid']="9196fc14-f623-11e2-afd9-ebf7136455e5"
 
-	# fill this one out
-	attributes['structure']="A"
+	# mine
+	attributes['structure']="Intro,Verse,Chorus,Verse2,Chorus,Instrumental"
 
 	attributes['lyricsurl']="http://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=606&wrkid=3894"
 
-	attributes['idyoutuberemark']="MtkYo-IVCjw"
+	attributes['idyoutuberemark']="Meir Banay in original version"
 	attributes['idyoutube']="MtkYo-IVCjw"
 
 %>
@@ -38,6 +38,7 @@
 	- added meta data for the tune from the internet
 	- added lyrics url.
 	- added youtube performances.
+	- filled in the tunes structure
 	TODO:
 % endif
 
@@ -107,7 +108,7 @@
 	c1~ | c2 \times 2/3 { c4 des c } | c4. bes8 bes2~ | bes \times 2/3 { bes4 aes c } |
 	c4. f,8 f2 | g \times 2/3 { g4 ees' bes } | c1~ | c |
 
-	%% A part
+	%% Verse
 }
 % endif
 
