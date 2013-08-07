@@ -19,8 +19,8 @@
 	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 
 	attributes['completion']="5"
-	attributes['uuid']=""
-	attributes['structure']="A"
+	attributes['uuid']="79535ff6-ff7b-11e2-a95b-b74fc9213a2b"
+	attributes['structure']="AABA"
 
 	attributes['idyoutuberemark']=""
 	attributes['idyoutube']=""
@@ -37,25 +37,36 @@
 
 % if part=='ChordsFake':
 \chordmode {
-	\startChords
 	\startSong
+	\startChords
 
 	\mark "A"
 	\startPart
-	\repeat volta 2 {
-		ees2 c:9- | f1:m7 | bes2.:7 bes4:5+9 | ees1~ |
-		ees2 ees4/g ges:dim7 | f1:m7 | bes:7 | ees~ |
-		ees2 c:9- | f1:m7 | bes2.:7 bes4:5+9 | ees1~ |
-		ees2 ees4/g ges:dim7 | f1:m7 | bes:9 | ees |
-		ees:7 | aes:6 | f2:m7 bes4:7 bes:5+9 | ees1~ |
-		ees | bes:7~ | bes2:7 d:dim7 | g:7 c:m7 |
-%% Dm7b5
-		f:9 bes:5+7 | ees c:9- | f1:m7 | bes2.:7 bes4:5+9 |
-		ees1~ | ees2 ees4/g ges:dim7 | f1:m7 | bes:9 |
-		ees2 aes:m6 | ees1 |
-	}
+	ees2 c:9- | f1:m7 | bes2.:7 bes4:5+9 | ees1~ | \myEndLine
+	ees2 ees4/g ges:dim7 | f1:m7 | bes:7 | ees~ | \myEndLine
 	\endPart
+
+	\mark "A"
+	\startPart
+	ees2 c:9- | f1:m7 | bes2.:7 bes4:5+9 | ees1~ | \myEndLine
+	ees2 ees4/g ges:dim7 | f1:m7 | bes:9 | ees | \myEndLine
+	\endPart
+
+	\mark "B"
+	ees:7 | aes:6 | f2:m7 bes4:7 bes:5+9 | ees1~ | \myEndLine
+	ees | bes:7~ | bes2:7 d:dim7 | g:7 c:m7 | f:9 bes:5+7 | \myEndLine
+	\startPart
+	\endPart
+%% Dm7b5
+
+	\mark "A"
+	\startPart
+	ees c:9- | f1:m7 | bes2.:7 bes4:5+9 | ees1~ | \myEndLine
+	ees2 ees4/g ges:dim7 | f1:m7 | bes:9 | ees2 aes:m6 | ees1 | \myEndLine
+	\endPart
+
 	\endChords
+	\endSong
 }
 % endif
 
@@ -67,43 +78,20 @@
 	\key ees \major
 
 	%% part "A"
-	\repeat volta 2 {
-        r4 g g bes |
-        bes aes aes2~ |
-        aes4 aes aes c |
-        c bes bes2~ |
-        bes4 bes bes ees |
-        ees d d c |
-        c bes bes aes |
-        g1~ |
-        g4 g g bes |
-        bes aes aes2~ |
-        aes4 aes aes c |
-        c bes bes2~ |
-        bes4 bes bes ees |
-        ees d d c |
-        c bes bes aes |
-        g1~ |
-        g4 g aes bes |
-        c f f2~ |
-        f4 ees d c | 
-        ees g, bes2~ |
-        bes4 ees, f g |
-        aes d d2~ |
-        d4 c bes aes |
-        g2 ees |
-        g fis |
-        r4 g g bes |
-        bes aes aes2~ |
-        aes4 aes aes c |
-        c bes bes2~ |
-        bes4 bes bes ees |
-        ees d d c |
-        c d c bes |
-        ees1~ |
-        ees4 r r2 |
+	r4 g g bes | bes aes aes2~ | aes4 aes aes c | c bes bes2~ |
+	bes4 bes bes ees | ees d d c | c bes bes aes | g1~ |
 
-	}
+	%% part "A"
+	g4 g g bes | bes aes aes2~ | aes4 aes aes c | c bes bes2~ |
+	bes4 bes bes ees | ees d d c | c bes bes aes | g1~ |
+
+	%% part "B"
+	g4 g aes bes | c f f2~ | f4 ees d c | ees g, bes2~ |
+	bes4 ees, f g | aes d d2~ | d4 c bes aes | g2 ees | g fis |
+
+	%% part "A"
+	r4 g g bes | bes aes aes2~ | aes4 aes aes c | c bes bes2~ |
+	bes4 bes bes ees | ees d d c | c d c bes | ees1~ | ees4 r r2 |
 }
 % endif
 
