@@ -75,7 +75,7 @@
 	b:m7 | f:m | b:m7 | c1*2:7 | \myEndLine
 	\startPart
 	\endPart
-	
+
 	\mark "Verse"
 	\startPart
 	f1*2:m | c:m | \myEndLine
