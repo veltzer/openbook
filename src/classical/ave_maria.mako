@@ -9,6 +9,7 @@
 	attributes['title']="Ave Maria"
 	attributes['subtitle']="Meditation on Prelude in C by J.S. Bach"
 	attributes['style']="Classical"
+    attributes['typesetter']="Jordan Eldredge JordanEldredge@gmail.com"
 	attributes['composer']="Charles Gounod"
 	attributes['copyright']="Public Domain"
 	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"

@@ -12,6 +12,7 @@
 	attributes['composer']="Horatio Nicholls"
 	# this is from the fake book
 	attributes['poet']="Edgar Leslie"
+    attributes['typesetter']="Jordan Eldredge JordanEldredge@gmail.com"
 	# this is from the fake book
 	attributes['piece']="Moderately"
 	attributes['copyright']=""
