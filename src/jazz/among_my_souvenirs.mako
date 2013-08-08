@@ -97,7 +97,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
-	There's no -- thing left for me; __ of days that used to be __ I live in 
+	There's no -- thing left for me; __ of days that used to be __ I live in
 	mem -- o -- ry A -- mong My Sou -- ve -- nirs. __ Some let -- ters tied to blue, __
 	a pho -- to -- graph or two, __ I see a rose from you A -- mong My Sou -- ve --
 	nirs. __ A few more to -- kens rest __ with -- in my trea -- sure chest, __ and tho' they
