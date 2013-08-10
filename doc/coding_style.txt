@@ -65,7 +65,7 @@ overall song structure:
 	This lets lilypond dictate the breaks. Only change when lilypond makes bad descisions.
 - bars
 	Don't do any extra special bars (\bar "||" or the like). It just overloads the music.
-	Mark stuff with \mark "A", \mark "B" etc for parts but that's it.
+	Mark stuff with \myMark "A", \myMark "B" etc for parts but that's it.
 	At the end of the piece put an ending mark (\bar "|."). My convention is to have this mark at the end of the chords and not the tune. It seems that lilypond does not do that by default. (Why? Is that a bug that I should report ?!?).
 
 Chords:

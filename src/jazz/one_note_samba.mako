@@ -56,7 +56,7 @@
 
 	\partial 2 s2 |
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	d1:m7 | des:7 | c:m7 | b:7.5- | \myEndLine
 	d:m7 | des:7 | c:m7 | b:7.5- | \myEndLine
@@ -64,13 +64,13 @@
 	d:m7 | des:7 | c2:m7 b:7.5- | bes1:6 | \myEndLine
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	ees:m7 | aes:7 | des1*2:maj7 | \myEndLine
 	des1:m7 | ges:7 | ces:maj7 | c2:m7.5- b:7.5- | \myEndLine
 	\endPart
 
-	\mark "A'"
+	\myMark "A'"
 	\startPart
 	d1:m7 | des:7 | c:m7 | b:7.5- | \myEndLine
 	d:m7 | des:7 | c:m7 | b:7.5- | \myEndLine

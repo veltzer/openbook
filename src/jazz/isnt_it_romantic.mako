@@ -62,21 +62,21 @@
 	\startSong
 	\partial 2 bes2:7 |
 	\repeat volta 2 {
-		\mark "A"
+		\myMark "A"
 		\startPart
 		ees:6 c:m7 | f:m7 bes:7 | ees:maj7 e:dim7 | f:m7 bes:7 | \myEndLine
 		ees:6/g c:7 | f:m7 bes:7 | ees1:maj7 | bes2:m7 ees:7 | \myEndLine
 		\endPart
 	} \alternative {
 		{
-			\mark "B"
+			\myMark "B"
 			\startPart
 			aes1:maj7 | bes2:7 g:7 | c:m g:7/b | bes:m7 ees:7 | \myEndLine
 			aes:maj7 c:7/g | f:m d4:m7.5- g:7 | c2:m f:7.9 | bes:7.3-.5-.9-.11-.13- bes:7 | \myEndLine
 			\endPart
 		}
 		{
-			\mark "C"
+			\myMark "C"
 			\startPart
 			f2:m f:m/ees | d:m7.5- g:7 | c:m c:m/bes | c:m/a aes:6 | \myEndLine
 			g:m7 ges:7 | f:m7 bes:7 | ees aes:6 | ees bes:7 | \myEndLine

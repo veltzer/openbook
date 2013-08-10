@@ -30,21 +30,21 @@
 
 	\startSong
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	f1:7 | bes1:7 | f1:7 | c2:m7 f2:7 | \myEndLine
 	bes1:7 | bes1:7 | f1:7 | d1:7 | \myEndLine
 	g1:7 | c1:7 | f2:7 d2:7 | g2:7 c2:7 | \myEndLine
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	f1:7 | bes1:7 | f1:7 | c2:m7 f2:7 | \myEndLine
 	bes1:7 | bes1:7 | f1:7 | a2:m7 d2:7 | \myEndLine
 	g1:m7 | c1:7 | f2:7 d2:7 | g2:m7 c2:7 | \myEndLine
 	\endPart
 
-	\mark "C"
+	\myMark "C"
 	\startPart
 	f1:7 | bes1:7 | c1:m7 | f1:7 | \myEndLine
 	bes1:7 | bes1:7 | f1:7 | d1:7 | \myEndLine

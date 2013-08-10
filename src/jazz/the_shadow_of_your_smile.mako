@@ -59,22 +59,22 @@
 
 	\partial 8*5 s8 s2 |
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	fis1:m7 | b2:7.9 b:7.9- | e1:m7 | a:7 | \myEndLine
 	a:m7 | d:7 | g:maj7| c:maj7 | \myEndLine
 	\endPart
-	\mark "B"
+	\myMark "B"
 	\startPart
 	fis:m7.5- | b:7 | e1.:m7 e2:m7/d | \myEndLine
 	cis1:m7.5- | fis:7 | fis:m7 | b:7 | \myEndLine
 	\endPart
-	\mark "A"
+	\myMark "A"
 	\startPart
 	fis1:m7 | b2:7.9 b:7.9- | e1:m7 | a:7 | \myEndLine
 	a:m7 | d:7 | b:m7.5- | e:7.3-.5-.9-.11-.13- | \myEndLine
 	\endPart
-	\mark "C"
+	\myMark "C"
 	\startPart
 	a:m7 | c2:m7 f:7 | b1:m7 | e:7.9- | \myEndLine
 	a2:7 ees:7 | a:m7 d:7.9- | g1.:6 b2:7 | \myEndLine

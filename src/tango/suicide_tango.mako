@@ -58,7 +58,7 @@
 		}
 	}
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	\repeat volta 2 {
 		f1*2:m7 | g1*2:m7.5- | \myEndLine
@@ -73,13 +73,13 @@
 	}
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	f1*2:7 | bes1*2:m7 | \myEndLine
 	ees1*2:7 | aes1 | c:7.9- | \myEndLine
 	\endPart
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	f1*2:m7 | g1*2:m7.5- | \myEndLine
 	c1*2:7.9- | f2:m7 c:7.9- | f4:m7 c:7.9- f2:m7 | \myEndLine

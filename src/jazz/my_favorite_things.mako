@@ -62,7 +62,7 @@
 	\startChords
 	\startSong
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	\repeat volta 2 {
 		e2.:m7 | fis:m7 | e:m7 | fis:m7 | \myEndLine
@@ -73,7 +73,7 @@
 	%% removed in order to show the repeat sign...
 	%%\endPart
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	e2.:maj7 | fis:m7 | e:maj7 | fis:m7 | \myEndLine
 	a2.*4:maj7 | \myEndLine
@@ -81,7 +81,7 @@
 	g:maj7 | c:maj7 | fis:m7.5- | b:7.9- | \myEndLine
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	e2.*2:m7 | fis2.:m7.5- | b:7 | \myEndLine
 	e2.*2:m7 | c:maj7 | \myEndLine

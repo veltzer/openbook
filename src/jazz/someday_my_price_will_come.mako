@@ -52,18 +52,18 @@
 	\startChords
 	\startSong
 
-	\mark "A"
+	\myMark "A"
 	\repeat volta 2 {
 		bes2.:maj7 | d:7.5+ | ees:maj7 | g:7.5+ | \myEndLine
 		c:m7 | g:7.5+ | c:7 | f:7 | \myEndLine
 	} \alternative {
 		{
-			\mark "B"
+			\myMark "B"
 			d:m7 | des:dim | c:m7 | f:7 | \myEndLine
 			d:m7 | des:dim | c:m7 | f:7 | \myEndLine
 		}
 		{
-			\mark "C"
+			\myMark "C"
 			f:m7 | bes:7 | ees | e:dim | \myEndLine
 			bes/f | c2:m7/f f4:7 | bes2.*2 | \myEndLine
 		}

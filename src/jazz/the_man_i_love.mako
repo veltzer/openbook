@@ -57,16 +57,16 @@
 	\mark "Intro"
 	ees1:6 | b2:7 bes:7 | \myEndLine
 	\repeat volta 2 {
-		\mark "A"
+		\myMark "A"
 		ees2. ees4:7 | ees1:m7 | bes:m | c2:7.5+ c:7 | \myEndLine
 		aes1:m6 | bes:7 | ees2 aes:maj7 | g:m bes:7 | \myEndLine
-		\mark "A"
+		\myMark "A"
 		ees2. ees4:7 | ees1:m7 | bes:m | c2:7.5+ c:7 | \myEndLine
 		aes1:m6 | bes2:7 bes4:7.11 bes:7 | ees2 aes | ees aes4:7 g:7 | \myEndLine
-		\mark "B"
+		\myMark "B"
 		c1:m7 | d2:7 bes4:7 d:dim | c1:m | g:7 | \myEndLine
 		c:m7 | d2:7 bes4:7 d:dim | c2:m g:dim | aes bes:7 | \myEndLine
-		\mark "A"
+		\myMark "A"
 		ees2. ees4:7 | ees1:m7 | bes:m | c2:7.5+ c:7 | \myEndLine
 		aes1:m | bes2:7 bes4:7.11 bes:7 | ees2 aes |
 	} \alternative {
@@ -153,16 +153,16 @@
 	\mark "Intro"
 	ees1:6 | b2:7 bes:7 | \myEndLine
 	\repeat volta 2 {
-		\mark "A"
+		\myMark "A"
 		ees2. ees4:7 | ees1:m7 | bes:m | c2:7.5+ c:7 | \myEndLine
 		aes1:m6 | bes:7 | ees2 aes:maj7 | g:m bes:7 | \myEndLine
-		\mark "A"
+		\myMark "A"
 		ees2. ees4:7 | ees1:m7 | bes:m | c2:7.5+ c:7 | \myEndLine
 		aes1:m6 | bes2:7 bes4:7.11 bes:7 | ees2 aes | ees aes4:7 g:7 | \myEndLine
-		\mark "B"
+		\myMark "B"
 		c1:m7 | d2:7 bes4:7 d:dim | c1:m | g:7 | \myEndLine
 		c:m7 | d2:7 bes4:7 d:dim | c2:m g:dim | aes bes:7 | \myEndLine
-		\mark "A"
+		\myMark "A"
 		ees2. ees4:7 | ees1:m7 | bes:m | c2:7.5+ c:7 | \myEndLine
 		aes1:m | bes2:7 bes4:7.11 bes:7 | ees2 aes |
 	} \alternative {

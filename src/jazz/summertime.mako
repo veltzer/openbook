@@ -66,13 +66,13 @@
 
 	\repeat volta 2 {
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	d1*3:m | d2:m d:7.9+ | \myEndLine
 	g1*2:m | e1:m7.5- | a:7.9+ | \myEndLine
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	d1*3:m | g2:m c:7 | \myEndLine
 	f1:maj7 | e2:m7.5- a:7.9+ | d1:m | a:7.9+ | \myEndLine
