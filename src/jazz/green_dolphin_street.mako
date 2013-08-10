@@ -63,7 +63,7 @@
 	\startSong
 
 	\repeat volta 2 {
-		\mark "A"
+		\myMark "A"
 		\startPart
 		c1*2:maj7 | c:m7 | \myEndLine
 		d1:7/c | d2:7/c des/c | c1*2:maj7 | \myEndLine
@@ -71,7 +71,7 @@
 	}
 	\alternative {
 		{
-			\mark "B"
+			\myMark "B"
 			\startPart
 			d1:m7 | g:7 | c1*2:maj7 | \myEndLine
 			f1:m7 | bes:7 | ees1:maj7 | ees2:maj7 g:7 | \myEndLine
@@ -79,7 +79,7 @@
 			%%\endPart
 		}
 		{
-			\mark "C"
+			\myMark "C"
 			\startPart
 			d2:m7 d:m/c | b:m7.5- e:7.9- | a:m7 a:m/g | fis:m7.5- b:7 | \myEndLine
 			e:m7 a:7 | d:m7 g:7 | c1:maj7 | d2:m7 g:7 | \myEndLine

@@ -60,22 +60,22 @@
 	\startChords
 	\startSong
 	\partial 4 s4
-	\mark "A"
+	\myMark "A"
 	\startPart
 	c2:maj7 d:m7 | e:m7 ees:dim7 | d:m7 g:7 | c:maj7 bes:7.13 | \myEndLine
 	a:m a:m7+ | a:m7 a:7 | d:m7 g:7 | c:maj7 c:7 | \myEndLine
 	\endPart
-	\mark "B"
+	\myMark "B"
 	\startPart
 	f:maj7 fis:dim7 | c:maj7 c:7 | f:maj7 fis:dim7 | c1:maj7 | \myEndLine
 	fis2:m7 f:7.5- | e:m7 ees:7 | a:m7.9 d:7 | d:m7 g:7 | \myEndLine
 	\endPart
-	\mark "A"
+	\myMark "A"
 	\startPart
 	c:maj7 d:m7 | e:m7 ees:dim7 | d:m7 g:7 | c:maj7 bes:7.13 | \myEndLine
 	a:m a:m7+ | a:m7 a:7 | d:m7 g:7 | c:maj7 c:7 | \myEndLine
 	\endPart
-	\mark "C"
+	\myMark "C"
 	\startPart
 	f:maj7 f:maj7/e | d:m7 d:m7/c | b:m7 bes:7.9.11+ | a:m7 aes:7.9 | \myEndLine
 	c:maj7/g a:m7 | d:m7 d4:m7/g g:7 | c1*2:6 | \myEndLine

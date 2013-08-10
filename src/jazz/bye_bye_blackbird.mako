@@ -55,25 +55,25 @@
 	\startSong
 
 	\repeat volta 2 {
-		\mark "A"
+		\myMark "A"
 		\startPart
 		f1. d2:7 | g:m7 c:7.9 | f1 | \myEndLine
 		f/a | aes:dim7 | g2:m7 c1.:7 | \myEndLine
 		\endPart
 
-		\mark "B"
+		\myMark "B"
 		\startPart
 		g2:m ees/g | g:m6 ees/g | g1:m7 | c:7 | \myEndLine
 		g:m7 | c:7 | f2:maj7 f1.:6 | \myEndLine
 		\endPart
 
-		\mark "C"
+		\myMark "C"
 		\startPart
 		f1*2:7 | a1:m7.5- | d:7 | \myEndLine
 		g1*2:m | g1:m7.5- | c:7 | \myEndLine
 		\endPart
 
-		\mark "D"
+		\myMark "D"
 		\startPart
 		f1*2 | ees1:7 | d:7 | \myEndLine
 		g1.:m7 c2:7 |

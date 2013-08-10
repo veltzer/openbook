@@ -58,7 +58,7 @@
 	\startChords
 	\startSong
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	\repeat volta 2 {
 		g1:m7 | c:7.5+ | f:maj7 | fis:dim7 | \myEndLine
@@ -72,7 +72,7 @@
 	}
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	c1:maj7 | f:7 | bes1*2:maj7 | \myEndLine
 	b1:dim7 | bes:m6 | a:m6 | aes:7.5- | \myEndLine

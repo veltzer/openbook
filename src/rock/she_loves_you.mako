@@ -37,14 +37,14 @@
 
 	\partial 8 r8 |
 	\repeat volta 3 {
-		\mark "A"
+		\myMark "A"
 		\startPart
 		f1 | d:m | a:m | c:7 | \myEndLine
 		f | d:m | a:m | c:7 | \myEndLine
 		f | f | d:m | d:m | \myEndLine
 		bes:m6 | bes:m6 | c:7 | c:7 | \myEndLine
 		\endPart
-		\mark "B"
+		\myMark "B"
 		\startPart
 		d:m | d:m | g:7 | g:7 | \myEndLine
 		bes:m6 | c2:7.5+ c:7 | f1 | f | \myEndLine

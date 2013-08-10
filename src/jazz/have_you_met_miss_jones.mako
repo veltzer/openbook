@@ -52,25 +52,25 @@
 	\startChords
 	\startSong
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	f1:maj7 | fis:dim7 | g:m7 | c:7 | \myEndLine
 	a:m7 | d:m7 | g:m7 | c:7 | \myEndLine
 	\endPart
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	f:maj7 | fis:dim7 | g:m7 | c:7 | \myEndLine
 	a:m7 | d:m7 | c:m7 | f:7 | \myEndLine
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	bes:maj7 | aes2:m7 des:7 | ges1:maj7 | e2:m7 a:7 | \myEndLine
 	d1:maj7 | aes2:m7 des:7 | ges1:maj7 | g2:m7 c:7 | \myEndLine
 	\endPart
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	\repeat volta 2 {
 		f1:maj7 | fis:dim7 | g:m7 | c2:7 bes:7 | \myEndLine

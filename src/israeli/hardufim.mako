@@ -39,7 +39,7 @@
 	\startSong
 
 	\partial 4 s4 |
-	\mark "A"
+	\myMark "A"
 	\startPart
 	\repeat volta 2 {
 		d1:m | g2:m7 c:7 | f1:maj7 | g:m7 | \myEndLine
@@ -50,7 +50,7 @@
 	} \myEndLine
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	\repeat volta 2 {
 		a1:7 | d:m | c:7 | f:maj7 | \myEndLine

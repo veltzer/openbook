@@ -58,7 +58,7 @@
 	\startChords
 	\startSong
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	b2 d:7 | g bes:7 | ees1 | a2:m7 d:7 | \myEndLine
 	g bes:7 | ees fis:7 | b1 | f2:m7 bes:7.9 | \myEndLine

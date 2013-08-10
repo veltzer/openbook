@@ -44,7 +44,7 @@
 
 	\partial 4 s4 |
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	e1:m7.5- | a:7.9- | c:m7 | f:7 | \myEndLine
 	f:m7 | bes:7 | ees:maj7 | aes:7 | \myEndLine
@@ -52,7 +52,7 @@
 	f1:maj7 | e2:m7.5- a:7 | a1:m7.5- | d:7.9- | \myEndLine
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	g1*2:7.5+ | c:m7 | \myEndLine
 	aes:7 | bes:maj7 | \myEndLine

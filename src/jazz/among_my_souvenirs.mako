@@ -41,26 +41,26 @@
 	\startChords
 
     \repeat volta 2 {
-        \mark "A"
+        \myMark "A"
         \startPart
         ees2 c:9- | f1:m7 | bes2.:7 bes4:5+9 | ees1~ | \myEndLine
         ees2 ees4/g ges:dim7 | f1:m7 | bes:7 | ees~ | \myEndLine
         \endPart
 
-        \mark "A"
+        \myMark "A"
         \startPart
         ees2 c:9- | f1:m7 | bes2.:7 bes4:5+9 | ees1~ | \myEndLine
         ees2 ees4/g ges:dim7 | f1:m7 | bes:9 | ees | \myEndLine
         \endPart
 
-        \mark "B"
+        \myMark "B"
         ees:7 | aes:6 | f2:m7 bes4:7 bes:5+9 | ees1~ | \myEndLine
         ees | bes:7~ | bes2:7 d:dim7 | g:7 c:m7 | f:9 bes:5+7 | \myEndLine
         \startPart
         \endPart
     %% Dm7b5
 
-        \mark "A"
+        \myMark "A"
         \startPart
         ees c:9- | f1:m7 | bes2.:7 bes4:5+9 | ees1~ | \myEndLine
         ees2 ees4/g ges:dim7 | f1:m7 | bes:9 |

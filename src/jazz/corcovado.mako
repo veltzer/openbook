@@ -39,7 +39,7 @@
 	g:m7 | c2:11 c2:13 | f1:maj7 | f:m6 |
 	e:m7 | a:m7 | d:7 | aes:dim7 |
 
-	\mark "A"
+	\myMark "A"
 	%% 1
 	d1:9 | r1 | aes1:dim7 | r1 | g1:m7 | c:9 | f:maj7 | f:6 |
 	%% 9

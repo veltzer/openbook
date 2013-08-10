@@ -64,7 +64,7 @@
 	\partial 2. s2. |
 
 	\repeat volta 2 {
-		\mark "A"
+		\myMark "A"
 		\startPart
 		g1*2:maj7 | g1:m7 | c:7 | \myEndLine
 		f1*2:maj7 | f1:m7 | bes:7 | \myEndLine
@@ -72,7 +72,7 @@
 		g1:maj7.9 | a2:m d:7 | b:m7 bes:7 | a:m7 a4:m7/d d:7 | \myEndLine
 		\endPart
 
-		\mark "B"
+		\myMark "B"
 		\startPart
 		g1*2:maj7 | g1:m7 | c:7 | \myEndLine
 		f1*2:maj7 | f1:m7 | bes:7 | \myEndLine

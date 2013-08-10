@@ -51,25 +51,25 @@
 
 	\partial 4 s4
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	f2 a:m | bes a:m | g:m7 f | a:7 d:m | \myEndLine
 	des1 | g2:m7/c c:7 | f f:5+ | bes:maj7 c:7 | \myEndLine
 	\endPart
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	f2 a:m | bes a:m | g:m7 f | a:7 d:m | \myEndLine
 	des1 | g2:m7/c c:7 | f bes | bes f | \myEndLine
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	c1:7 | f | c:7 | f | \myEndLine
 	d2:m c | d:m c | d:m fis:dim7 | g4:m7 fis:dim7 g:m7 c:7 | \myEndLine
 	\endPart
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	f2 a:m | bes a:m | g:m7 f | a:7 d:m | \myEndLine
 	des1 | g2:m7/c c:7 | f a:m7.5- | d1:7 | \myEndLine
