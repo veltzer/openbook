@@ -1,5 +1,10 @@
 Now:
 ====
+- use some function instead of "\mark "A"" to mark rehersal points.
+	This will enable to put circles, squares and what not and
+	make those marks distinct from chord symbols.
+	See captabritones suggestion at:
+	https://github.com/veltzer/openbook/issues/7#issuecomment-22447967
 - stop stroing pdfs in the epdf section. store page numbers and
 	have an extract program to extract the right pages from
 	a collection of real books which is out of the git tree.
