@@ -10,9 +10,9 @@
 	attributes['title']="Satin Doll"
 	attributes['style']="Jazz"
 	# this is from the fake book
-	attributes['composer']="Duke Ellingtone, Johnny Mercer, Billy Strayhorn"
+	attributes['composer']="Duke Ellingtone, Billy Strayhorn"
 	# this is from the fake book
-	attributes['poet']="Duke Ellingtone, Johnny Mercer, Billy Strayhorn"
+	attributes['poet']="Johnny Mercer"
 	# this is from the fake book
 	attributes['piece']="Smoothly"
 	# this is from the fake book
@@ -56,6 +56,7 @@
 	\endPart
 
 	\myMark "B"
+	\startPart
     c1 | g2:m7 c:7 | g:m7 | c:9- | f:maj7 g:m7 | 
     a:m7 bes:m7 | a:m7 d:7 | a:m7 d:9- | g:7 d:m7 |
     g1:7 | 
@@ -88,13 +89,13 @@
             g1~ | g |
 		}
 		{
-            g1 |
+            g1\repeatTie |
 		}
 	}
 	%% B part
     r2 r4 r8 g | c4 bes8. a16 g8. a16 bes4 | c4 bes8. a16 g8. a16 bes8 c~ | c1~ |
     c2. r8 c | d8. c16 b8. a16~ a8. b16 c4 | d8. c16 b8 a~ a8. b16 c8 d~ | d1~ |
-    d8 d4 d8 d d4. | a8. g16 a8 g~ g a4. | r8 a4. g8 a4. | b8. a16 b8 a~ a b4. |
+    d8 \xNote { d4^"(Spoken)" d8 d d4. } | a8. g16 a8 g~ g a4. | r8 a4. g8 a4. | b8. a16 b8 a~ a b4. |
     r8 b4. a8 b4. | r8 d4. c8 d4. | r8 bes4. aes4 bes8 g~ | g1~ | g2. r4 |
 }
 % endif
