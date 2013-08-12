@@ -14,6 +14,7 @@
 	#attributes['lilyver']='2.14.2'
 	attributes['lilyver']='2.16.0'
 	attributes['date']=datetime.datetime.now().strftime('%T %d-%m-%Y')
+	attributes['year']=datetime.datetime.now().strftime('%Y')
 	attributes['username']=pwd.getpwuid(os.getuid())[0]
 	attributes['gittag']=subprocess.check_output(['git','describe','--abbrev=0']).strip()
 	attributes['gitdesc']=subprocess.check_output(['git','describe','--tags']).strip()
@@ -236,7 +237,7 @@ ${self.defs()}
 				\null
 				\fill-line { \huge \bold "Lead developer: Mark Veltzer <mark.veltzer@gmail.com>" }
 				\null
-				\fill-line { \huge \bold "Typesetting copyright: © 2011-2012 Mark Veltzer <mark.veltzer@gmail.com>" }
+				\fill-line { \huge \bold "Typesetting copyright: © 2011-${attributes['year']} Mark Veltzer <mark.veltzer@gmail.com>" }
 				\null
 				\fill-line { \huge \bold "Tune copyright: © belong to their respective holders" }
 				\null
