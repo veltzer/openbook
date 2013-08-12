@@ -288,7 +288,7 @@ check_copyright:
 .PHONY: check_mark
 check_mark:
 	$(info doing [$@])
-	$(Q)./scripts/ok_wrapper.pl grep --files-without-match "\\\\mark" $(FILES_COMPLETED_JAZZ)
+	$(Q)./scripts/ok_wrapper.pl grep --files-without-match "\\\\myMark" $(FILES_COMPLETED_JAZZ)
 .PHONY: check_completion
 check_completion:
 	$(info doing [$@])

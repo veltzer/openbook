@@ -40,7 +40,7 @@
 	\startSong
 	\startChords
 
-	\mark "A"
+	\myMark "A"
     \startPart
     \repeat volta 2 {
         f2. | f | f | f | c:7 | c:7 | f | f \myEndLine
