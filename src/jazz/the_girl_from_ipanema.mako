@@ -128,31 +128,31 @@
 
 % if part=='LyricsReal':
 \lyricmode {
-	Tall and tan and young and love -- ly,
-	the Girl From I -- pa -- ne -- ma goes walk -- ing,
-	and when she pass -- es, each one she pass -- es goes "ah!"
+	Tall and tan and young __ and love __ -- ly,
+	the Girl __ From I -- pa -- ne __ -- ma goes walk __ -- ing,
+	and when __ she pass __ -- es, each one __ she pass __ -- es goes "ah!" __
 
-	"ah!"
+	"ah!" __
 
-	Oh, but I watch her so sad -- ly.
-	How can I tell her I love her?
-	Yes, I would give my heart glad -- ly,
+	Oh, __ but I watch her so sad -- ly. __
+	How __ can I tell her I love her? __
+	Yes, __ I would give my heart glad -- ly, __
 	but each day when she walks to the sea,
 	she looks straight a -- head not at me.
 
-	Tall and tan and young and love -- ly,
-	The Girl From I -- pa -- ne -- ma goes walk -- ing,
-	and when she pass -- es I smile,
+	Tall and tan and young __ and love __ -- ly,
+	The Girl __ From I -- pa -- ne __ -- ma goes walk __ -- ing,
+	and when __ she pass -- es I smile, __
 	but she does -- n't see.
 	She just does -- n't see.
-	No, she does -- n't see.
+	No, she does -- n't see. __
 }
 % endif
 
 % if part=='LyricsmoreReal':
 \lyricmode {
-	When she walks she's like a Sam -- ba
-	that swings so cool and sways _ so gen -- tle,
-	that when she pass -- es, each one she pass -- es goes
+	When she walks she's like __ a Sam __ -- ba
+	that swings __ so cool and sways __ _ so gen __ -- tle,
+	that when __ she pass __ -- es, each one __ she pass __ -- es goes
 }
 % endif

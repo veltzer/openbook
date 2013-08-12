@@ -8,6 +8,7 @@
 	attributes['composer']="Alphaville"
 	attributes['style']="Pop"
 	attributes['piece']="Med. Ballad"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="625ad0a2-a26f-11df-8f71-0019d11e5a41"

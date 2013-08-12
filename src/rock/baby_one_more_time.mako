@@ -9,6 +9,7 @@
 	attributes['poet']="Max Martin"
 	attributes['style']="Pop"
 	attributes['piece']="Pop"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="8a728316-ee02-11e0-b7c5-0019d11e5a41"

@@ -9,6 +9,7 @@
 	attributes['poet']="Radiohead"
 	attributes['style']="Rock"
 	attributes['piece']="Med. Ballad"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="e9b74c60-97f6-11e0-86b8-0019d11e5a41"

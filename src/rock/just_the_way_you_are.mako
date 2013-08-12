@@ -9,6 +9,7 @@
 	attributes['poet']="Billy Joel"
 	attributes['style']="Pop"
 	attributes['piece']="Moderately"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['structure']="????"
 

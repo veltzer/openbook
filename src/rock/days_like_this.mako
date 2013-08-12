@@ -10,6 +10,7 @@
 	attributes['poet']="Van Morrison"
 	attributes['style']="Rock"
 	attributes['piece']="Med. Ballad"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="6437a34a-3bd4-11e2-9e13-9f845e169c9b"

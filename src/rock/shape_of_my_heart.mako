@@ -12,6 +12,7 @@
 	attributes['composer']="Sting"
 	attributes['style']="Pop"
 	attributes['piece']="Med. Ballad"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['idyoutuberemark']="Leon the professional clip...:)"
 	attributes['idyoutube']="_0J0toYZB6Q"

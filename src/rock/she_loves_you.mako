@@ -11,6 +11,7 @@
 	attributes['poet']="John Lennon, Paul McCartney"
 	attributes['style']="Rock"
 	attributes['piece']="Moderato"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['structure']="ABABAB"
 
