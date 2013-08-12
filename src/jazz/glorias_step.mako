@@ -10,6 +10,7 @@
 	attributes['composer']="Scott LaFaro"
 	attributes['piece']="Swing"
 	attributes['copyright']="1962, Orpheum Music."
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="892e5552-f2ad-11e0-8c10-0019d11e5a41"

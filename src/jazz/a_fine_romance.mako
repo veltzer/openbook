@@ -16,6 +16,7 @@
 	# this is from the fake book
 	attributes['copyright']="1936 T.B. Harms Company. Copyright Renewed."
 	attributes['copyrightextra']="(c/o The Welk Music Group, Santa Monica, CA 90401)."
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['structure']="ABAC"
 	attributes['completion']="5"

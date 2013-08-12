@@ -19,6 +19,7 @@
 	attributes['copyright']="1934 (Renewed 1961) Famous Music Corporation"
 	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['copyrightextra']=""
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']=""

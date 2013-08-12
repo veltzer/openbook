@@ -16,6 +16,7 @@
 	attributes['piece']="Moderately"
 	# this is from the fake book
 	attributes['copyright']="1940 by Chappell & Co., Inc. Copyright Renewed."
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="7d17fd1c-15fe-11e1-b205-0019d11e5a41"

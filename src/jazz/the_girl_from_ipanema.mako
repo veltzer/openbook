@@ -16,6 +16,7 @@
 	attributes['piece']="Moderate Bossa Nova"
 	attributes['copyright']="1963, Antonio Carlos Jobim and Vincius De Moraes, Brazil"
 	attributes['copyrightextra']="Sole Selling Agent Duchess Music Corporation (MCA), New York, NY for all. English speaking countries"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="2c3b337c-a26f-11df-b7d1-0019d11e5a41"

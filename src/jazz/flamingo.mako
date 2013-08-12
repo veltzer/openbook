@@ -18,6 +18,7 @@
 	# this is from the fake book
 	attributes['copyright']="1941 Tempo Music, Inc."
 	attributes['copyrightextra']="Renewed 1969 Edwin H. Morris & Company, A Division of MPL Communications, Inc."
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="be87a49a-1a05-11e1-ba9e-0019d11e5a41"

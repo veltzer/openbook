@@ -16,6 +16,7 @@
 	attributes['piece']="Moderately"
 	# this is from the fake book
 	attributes['copyright']="1926 (Renewed) Warner Bros. Inc."
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="7b863bbe-f2a2-11e0-9257-0019d11e5a41"

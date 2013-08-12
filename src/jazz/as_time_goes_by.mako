@@ -17,6 +17,7 @@
 	attributes['piece']="Ballad"
 	# this is still missing
 	#attributes['copyright']=""
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="0a7b423c-7a4e-11e1-8d67-878c1414bdce"

@@ -11,7 +11,6 @@
 	import socket # for gethostname
 	import subprocess # for subprocess.check_output
 
-	#attributes['lilyver']='2.14.2'
 	attributes['lilyver']='2.16.0'
 	attributes['date']=datetime.datetime.now().strftime('%T %d-%m-%Y')
 	attributes['username']=pwd.getpwuid(os.getuid())[0]
@@ -342,16 +341,26 @@ ${self.clearVars()}
 % endif
 % endif
 
-% if attributes['tagline']=='':
+%% calculate the tag line
 % if attributes['heb']:
 <%
-	attributes['tagline']=u'נבנה על ידי מרק ולצר <mark.veltzer@gmail.com>, בתאריך '+attributes['date']+u', תימון על ידי lilypond '+attributes['lilyver']
+	attributes['tagline']=u'תווי על ידי '+attributes['typesetter']+u', נבנה בתאריך'+attributes['date']+u', תימון על ידי lilypond '+attributes['lilyver']
 %>
 % else:
 <%
-	attributes['tagline']='Typeset by Mark Veltzer <mark.veltzer@gmail.com>, Built at '+attributes['date']+', Engraved by lilypond '+attributes['lilyver']
+	attributes['tagline']='Typeset by '+attributes['typesetter']+', Built at '+attributes['date']+', Engraved by lilypond '+attributes['lilyver']
 %>
 % endif
+
+%% calculate the typesetby
+% if attributes['heb']:
+<%
+	attributes['typesetby']=u'תווי על ידי '+attributes['typesetter']
+%>
+% else:
+<%
+	attributes['typesetby']='Typeset by '+attributes['typesetter']
+%>
 % endif
 
 <%doc>
@@ -640,6 +649,11 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 	\fill-line {
 		\smaller \smaller { "${attributes['copyright']}" }
 	}
+% if attributes['book']==True:
+	\fill-line {
+		\smaller \smaller { "${attributes['typesetby']}" }
+	}
+% endif
 % if attributes['book']==False:
 	\fill-line {
 		\smaller \smaller { "${attributes['tagline']}" }

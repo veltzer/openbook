@@ -16,6 +16,7 @@
 	attributes['piece']="Fast Swing"
 	# this is from the hal leonard book
 	attributes['copyright']="1974 Jowcol Music."
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="828326cc-013c-11e1-b823-0019d11e5a41"

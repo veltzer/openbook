@@ -13,6 +13,7 @@
 	attributes['poet']=u"מאיר אריאל"
 	attributes['singer']=u"דני סנדרסון"
 	attributes['piece']=u"בלדה איטית"
+	atttibutes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
 
 	attributes['completion']="4"
 	attributes['uuid']="42424480-a26f-11df-abb4-0019d11e5a41"

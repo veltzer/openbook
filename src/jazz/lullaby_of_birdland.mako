@@ -12,6 +12,7 @@
 	attributes['poet']="George David Weiss"
 	attributes['piece']="Relaxed Swing"
 	attributes['copyright']="1952, 1953, 1954 Adam R. Levy & Father Ent., Inc., New York NY. Copyrights Renewed."
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="f9668406-a26e-11df-8542-0019d11e5a41"

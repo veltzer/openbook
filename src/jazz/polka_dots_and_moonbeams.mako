@@ -13,6 +13,7 @@
 	attributes['copyrightextra']="Music, Division of Music Sales Corporation"
 	attributes['piece']="Slowly, with expression"
 	attributes['poet']="Johnny Burke"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="60170b42-46e0-11e0-bf54-0019d11e5a41"

@@ -13,6 +13,7 @@
 	attributes['piece']="Slowly"
 	attributes['copyright']="1967 by Range Road Music Inc. and Quartet Music Inc."
 	attributes['copyrightextra']="All rights administered by Hudson Bay Music, Inc."
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="39de7d2c-a26f-11df-8dbc-0019d11e5a41"
