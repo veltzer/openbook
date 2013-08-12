@@ -14,7 +14,7 @@
 	attributes['poet']=u"דני רובס"
 	attributes['singer']=u"דני רובס"
 	attributes['piece']=u"בלדת רוק"
-	atttibutes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
+	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
 
 	attributes['completion']="5"
 	attributes['uuid']="8203d67e-41a0-11e2-a975-5a1faa0d3cc5"

@@ -18,7 +18,7 @@
 	attributes['singer']=u"מאיר בנאי"
 	# mine
 	attributes['piece']=u"פלמנקו"
-	atttibutes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
+	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
 
 	attributes['completion']="4"
 	attributes['uuid']="9196fc14-f623-11e2-afd9-ebf7136455e5"
