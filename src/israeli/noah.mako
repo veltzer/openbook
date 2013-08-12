@@ -58,7 +58,7 @@
 	f1:m | bes:m | f:m | c:7 | \myEndLine
 	\endPart
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	f:m | bes:m | f:m | c:7 | \myEndLine
 	f:m | bes:m | f:m | c:7 | \myEndLine

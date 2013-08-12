@@ -50,7 +50,7 @@
 	\startChords
 	\startSong
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	g1 | g:maj7 | g1*2:dim7 | \myEndLine
 	c1 | c:maj7 | a2:7.9 e:m7 | a1:7.9 | \myEndLine
@@ -58,7 +58,7 @@
 	d:7.9 | d2.:7.9 des4:7 | d1*2:7 | \myEndLine
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	g1 | g:maj7 | g1*2:dim7 | \myEndLine
 	c1 | c:maj7 | a2:7.9 e:m7 | a1:7.9 | \myEndLine

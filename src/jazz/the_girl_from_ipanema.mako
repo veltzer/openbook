@@ -47,7 +47,7 @@
 	f1:6.9 | c2:m7 c:m6 | f1:6.9 | c2:m7 c:m6 | \myEndLine
 	\endPart
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	\repeat volta 2 {
 		f1:maj7.9 | f1:maj7.9 | g1:13 | g1:13 | \myEndLine
@@ -61,7 +61,7 @@
 	}
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	ges1:maj7 | ges1:maj7 | ces1:7.9 | ces1:7.9 | \myEndLine
 	fis1:m7.9 | fis1:m7.9 | d1:7.9 | d1:7.9 | \myEndLine
@@ -69,7 +69,7 @@
 	a1:m7 | d1:7.5-.9- | g1:m7 | c1:7.5-.9- | \myEndLine
 	\endPart
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	f1:maj7.9 | f1:maj7.9 | g1:7.13 | g1:7.13 | \myEndLine
 	g1:m7.9 | ges1:7.5- | f1:maj7.9 | ges1:7.5- | \myEndLine

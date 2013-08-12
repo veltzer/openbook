@@ -37,7 +37,7 @@
 	\startChords
 	\startSong
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	f1:7 | f1:7 | f1:7 | f1:7 | \myEndLine
 	bes1:7 | bes1:7 | f1:7 | f1:7 | \myEndLine

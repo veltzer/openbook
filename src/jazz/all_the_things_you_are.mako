@@ -54,7 +54,7 @@
 	\startChords
 	\startSong
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	f1:m7 | bes:m7 | ees:7 | aes:maj7 | \myEndLine
 	des:maj7 | g:7 | c1*2:maj7 | \myEndLine
@@ -62,13 +62,13 @@
 	aes:maj7 | d:7 | g1*2:maj7 | \myEndLine
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	a1:m7 | d:7 | g1*2:maj7 | \myEndLine
 	fis1:m7 | b:7 | e:maj7 | c:7.5+ | \myEndLine
 	\endPart
 
-	\mark "C"
+	\myMark "C"
 	\startPart
 	f1:m7 | bes:m7 | ees:7 | aes:maj7 | \myEndLine
 	des:maj7 | des:m7 | c:m7 | b:dim7 | \myEndLine
@@ -130,7 +130,7 @@
 
 	\startSong
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	f1:m7 | bes:m7 | ees:7 | aes:maj7 | \myEndLine
 	des:maj7 | g:7 | c1*2:maj7 | \myEndLine
@@ -138,13 +138,13 @@
 	aes:maj7 | a2:m7.5- d:7.9- | g1:maj7 | g2:maj7 e:7.9+ | \myEndLine
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	a1:m7 | d:7 | g:maj7 | c:maj7 | \myEndLine
 	fis:m7.5- | b:7 | e:maj7 | c:7.5+ | \myEndLine
 	\endPart
 
-	\mark "C"
+	\myMark "C"
 	\startPart
 	f:m7 | bes:m7 | ees:7 | aes:maj7 | \myEndLine
 	des:maj7 | des2:m7 ges:7.9 | aes1:maj7 | b:dim7 | \myEndLine

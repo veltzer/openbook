@@ -32,22 +32,22 @@
 	\startChords
 	\startSong
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	c1 | a:7 | d2:m7 g4:7 c | c2 g:7 | \myEndLine
 	\endPart
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	c1 | a:7 | d2:m7 g4:7 c | c1 | \myEndLine
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	e1:m7.5- | a:7 | d:m7 | g:7 | \myEndLine
 	\endPart
 
-	\mark "C"
+	\myMark "C"
 	\startPart
 	c:7 | f2 fis:dim7 | c/g g4:7 c | c1 | \myEndLine
 	\endPart

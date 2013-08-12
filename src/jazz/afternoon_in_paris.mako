@@ -57,25 +57,25 @@
 
 	\partial 4 s4 |
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	c1:6 | c2:m7 f:7 | bes1:6 | bes2:m7 ees:7 | \myEndLine
 	aes1:maj7 | d2:m7.5- g:7 | c:maj7 a:m7 | d:m7 g:7 | \myEndLine
 	\endPart
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	c1:6 | c2:m7 f:7 | bes1:6 | bes2:m7 ees:7 | \myEndLine
 	aes1:maj7 | d2:m7.5- g:7 | c1 | a:m7 | \myEndLine
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	d1:m7 | g:7.9- | c:6 | a:m7 | \myEndLine
 	d:m7 | g:7.9- | cis2:m7.5- fis:7 | d:m7 g:7 | \myEndLine
 	\endPart
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	c1:6 | c2:m7 f:7 | bes1:6 | bes2:m7 ees:7 | \myEndLine
 	aes1 | d2:m7.5- g:7 | c1*2 | \myEndLine
@@ -116,7 +116,7 @@
 
 	\partial 4 s4 |
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	\repeat volta 2 {
 		c1:maj7 | c2:m7 f:7 | bes1:maj7 | bes2:m7 ees:7 | \myEndLine
@@ -132,13 +132,13 @@
 	}
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	d1:m7 | g:7 | c:maj7/e | a:9 | \myEndLine
 	d:m7 | g:7 | c:maj7 | d2:m7 g:7 | \myEndLine
 	\endPart
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	c1:maj7 | c2:m7 f:7 | bes1:maj7 | bes2:m7 ees:7 | \myEndLine
 	aes1:maj7 | d2:m7 g:7.9- | c1:maj7 | d2:m7 g:7 | \myEndLine

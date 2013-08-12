@@ -45,7 +45,7 @@
 
 	\partial 2. s2.
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	f1*2:maj7 | e1:m7 | a:7 | \myEndLine
 	d1:m7 | g:7 | c:m7 | f:7 | \myEndLine
@@ -53,7 +53,7 @@
 	b1:m7.5- | e1:7.9- | a2:m7 aes:dim7 | g:m7 ges:7/c | \myEndLine
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	f1*2:maj7 | e1:m7 | a:7 | \myEndLine
 	d:m7 | g:7 | c:m7 | f:7 | \myEndLine
@@ -123,7 +123,7 @@
 
 	\partial 8*5 s8 s2
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	f1*2:maj7 | e1:m7.5- | a:7.9- | \myEndLine
 	d:m7 | g:7 | c:m7 | f:7 | \myEndLine
@@ -131,7 +131,7 @@
 	b1:m7.5- | e:7 | a2:m7 aes:dim7 | g:m7 ges:7/c | \myEndLine
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	f1*2:maj7 | e1:m7.5- | a:7.9- | \myEndLine
 	d:m7 | g:7 | c:m7 | f:7 | \myEndLine
