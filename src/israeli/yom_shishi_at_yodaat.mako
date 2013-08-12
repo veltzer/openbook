@@ -14,7 +14,7 @@
 	attributes['poet']=u"יעקב גלעד"
 	attributes['singer']=u"יהודה פוליקר"
 	attributes['piece']=u"רוקנרול"
-	atttibutes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
+	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
 
 	attributes['completion']="5"
 	attributes['uuid']="d4c79db6-8aec-11e1-bca8-3b15b6cb5cfe"
