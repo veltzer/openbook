@@ -9,7 +9,7 @@
 	attributes['style']="Israeli"
 	attributes['singer']=u"ברי סחרוף"
 	attributes['piece']=u"בלדה מתונה"
-	atttibutes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
+	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
 
 	attributes['completion']="0"
 	attributes['uuid']="505a0a3a-a26f-11df-bbef-0019d11e5a41"

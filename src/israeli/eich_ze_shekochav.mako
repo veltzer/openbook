@@ -13,7 +13,7 @@
 	attributes['poet']=u"נתן זך"
 	attributes['singer']=u"מתי כספי"
 	attributes['piece']=u"בוסה נובה"
-	atttibutes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
+	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
 
 	attributes['completion']="5"
 	attributes['uuid']="d936b39a-971e-11e0-9c44-0019d11e5a41"
