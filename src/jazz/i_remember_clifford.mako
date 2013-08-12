@@ -9,6 +9,7 @@
 	attributes['style']="Jazz"
 	attributes['composer']="Benny Golson"
 	attributes['piece']="Med Swing"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="0"
 	attributes['uuid']="efea8972-a26e-11df-af8e-0019d11e5a41"

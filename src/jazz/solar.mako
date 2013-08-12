@@ -16,6 +16,7 @@
 	attributes['piece']="Jazz"
 	# no copyright for this tune as of yet
 	#attributes['copyright']=""
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="841f9004-4477-11e2-acde-078065be2912"

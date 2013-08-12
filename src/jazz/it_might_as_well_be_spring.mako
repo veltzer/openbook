@@ -9,6 +9,7 @@
 	attributes['composer']="Richard Rogers"
 	attributes['poet']="Oscar Hammerstein"
 	attributes['piece']="Med Swing"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="0"
 	attributes['uuid']="f4f39800-a26e-11df-b97a-0019d11e5a41"

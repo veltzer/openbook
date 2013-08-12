@@ -13,6 +13,7 @@
 	attributes['poet']="Mack Gordon"
 	attributes['copyright']="1942, 1987 Twentieth Century Music Corporation"
 	attributes['copyrightextra']="Renewed 1970 Twentieth Century Music Corporation. All Rights Controlled by Morley Music Co. International Copyright Secured. All Rights Reserved."
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="e30e1074-eaf3-11e0-a377-0019d11e5a41"

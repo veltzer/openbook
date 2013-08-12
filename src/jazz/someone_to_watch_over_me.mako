@@ -12,6 +12,7 @@
 	attributes['composer']="George Gershwin"
 	attributes['poet']="Ira Gershwin"
 	attributes['piece']="Jazz Ballad"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="75cbb354-1411-11e0-9a9e-0019d11e5a41"

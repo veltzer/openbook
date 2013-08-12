@@ -21,6 +21,7 @@
 	# this is from the fake book
 	attributes['copyright']="1937, Gershwin Publishing Corporation"
 	attributes['copyrightextra']="Copyright Renewed, Assigned to Chappell & Co, Inc."
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="87da6ece-a26e-11df-95d7-0019d11e5a41"

@@ -15,6 +15,7 @@
 	attributes['piece']="Slowly"
 	# the next one is from Aebersold...
 	attributes['copyright']="1936, Gershwin Publishing Corp., copyright renewed"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="2615b7ec-a26f-11df-b010-0019d11e5a41"

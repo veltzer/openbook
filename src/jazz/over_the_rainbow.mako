@@ -21,6 +21,7 @@
 	attributes['piece']="Slowly, with expression"
 	# from wikifonia and wikipedia
 	attributes['poet']="Edgar Yipsel Harburg"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="c6992350-a9da-11e2-8a7f-97606039682f"

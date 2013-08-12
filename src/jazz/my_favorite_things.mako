@@ -21,6 +21,7 @@
 	attributes['copyright']="1959 by Richard Rodgers and Oscar Hammerstein II. Copyright Renewed."
 	# this is from the fake book
 	attributes['copyrightextra']="Williamson Music Co., owner of publication and allied right throughout the Westen Hemisphere and Japan. All Rights Administered by Chappell & Co., Inc."
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="02c22208-a26f-11df-98fd-0019d11e5a41"

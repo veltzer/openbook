@@ -21,6 +21,7 @@
 	attributes['piece']="Ballad"
 	# this is from the jazz fake book
 	attributes['copyright']="1940, Chappell & Co., Inc. Copyright Renewed."
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="e00ddbf8-a26e-11df-92da-0019d11e5a41"

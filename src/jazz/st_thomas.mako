@@ -10,6 +10,7 @@
 	attributes['composer']="Sonny Rollins"
 	attributes['piece']="Latin/Calypso"
 	attributes['copyright']="1963, Prestigve Music"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="ef0827e0-f690-11e0-ba56-0019d11e5a41"

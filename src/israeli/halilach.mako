@@ -10,6 +10,7 @@
 	attributes['title']=u"כמה יפה פורח הלילך"
 	attributes['style']="Israeli"
 	attributes['piece']=u"בלדה מתונה"
+	atttibutes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
 
 	attributes['completion']="2"
 	attributes['uuid']="4ae1d01a-a26f-11df-8e51-0019d11e5a41"

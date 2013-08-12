@@ -17,6 +17,7 @@
 	# this is from the fake book
 	attributes['copyright']="1949 by Anne-Rachel Music Corp."
 	attributes['copyrightextra']="Copyright Renewed, Young interest conrolled by Chappel & Co., Inc. Intersong Music, Publisher"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="ce9be996-a26e-11df-bf2c-0019d11e5a41"

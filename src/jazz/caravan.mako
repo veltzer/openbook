@@ -19,6 +19,7 @@
 	attributes['copyright']="1937 (renewed 1965) Mills Music c/o EMI Music Publishing"
 	# this is from the new real book, volume III
 	attributes['copyrightextra']="Used by Permission of CPP/Belwin, Inc., Miami, FL ALL Right Reserved"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="4"
 	attributes['uuid']="160af5b0-ebe1-11e2-937c-bb8193c610fc"

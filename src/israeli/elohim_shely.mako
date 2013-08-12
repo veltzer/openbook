@@ -14,6 +14,7 @@
 	attributes['singer']=u"עוזי חיטמן"
 	attributes['piece']=u"בלדה מתונה"
 	attributes['arranger']=u"יאיר רוזנבלום"
+	atttibutes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
 
 	attributes['completion']="2"
 	attributes['uuid']="467b2af8-a26f-11df-b03d-0019d11e5a41"

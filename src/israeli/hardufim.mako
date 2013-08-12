@@ -14,6 +14,7 @@
 	attributes['poet']=u"נתן יונתן"
 	attributes['singer']=u"שלמה ראצי"
 	attributes['piece']=u"שירי ארץ ישראל"
+	atttibutes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
 
 	attributes['completion']="5"
 	attributes['uuid']="95e9e525-ef27-4e45-bba0-9ba1391723c1"

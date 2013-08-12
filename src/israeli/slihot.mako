@@ -15,6 +15,7 @@
 	attributes['poet']=u"לאה גולדברג"
 	attributes['singer']=u"יהודית רביץ"
 	attributes['piece']=u"בלדה מתונה"
+	atttibutes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
 
 	attributes['completion']="5"
 	attributes['uuid']="11ad0c38-6dc9-4318-873f-5e7e80b7c8a8"

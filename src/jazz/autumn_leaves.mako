@@ -18,6 +18,7 @@
 	attributes['piece']="Medium Swing"
 	# this is from the real book
 	attributes['piece']="Med. Jazz"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="8c35acf6-a7c1-11df-9040-0019d11e5a41"

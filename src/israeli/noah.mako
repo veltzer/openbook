@@ -18,6 +18,7 @@
 	attributes['singer']=u"מתי כספי"
 	# mine
 	attributes['piece']=u"סמבה"
+	atttibutes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
 
 	attributes['completion']="5"
 	attributes['uuid']="702eab24-e8ce-11e2-91c8-5b1ff4f22893"
