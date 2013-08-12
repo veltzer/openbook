@@ -19,7 +19,7 @@
 	attributes['gitdesc']=subprocess.check_output(['git','describe','--tags']).strip()
 	attributes['gitcommits']=subprocess.check_output(['git','log','--pretty=format:\'\'']).split('\n').__len__()
 	attributes['hostname']=socket.gethostname()
-	attributes['machine']=' '.join(os.uname())
+	attributes['machine']=os.uname()[0]+' '+os.uname()[2]
 %>
 \version "${attributes['lilyver']}"
 
