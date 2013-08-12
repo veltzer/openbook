@@ -59,23 +59,23 @@
 
 	\repeat volta 2 {
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	g2 e:m | a:m7 d:7 | a:m7 d:7.9- | g4 bes:7 a:7 d:7 | \myEndLine
 	g2 e:m | a:m7 d:7 | g:6 e:m7 | a:m7 d:7 | \myEndLine
 	\endPart
 
-	\mark "A'"
+	\myMark "A'"
 	g2 e:m | a:m7 d:7 | cis:7.9- fis:7.9- | b:m7 e:7 | \myEndLine
 	d1:6 | a:7 | d1*2:7 | \myEndLine
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	g4*11:7 b4:7 | e1:7.5+ | \myEndLine
 	a1*2:7 | a1:m7 | ees2:7 d2:7 | \myEndLine
 	\endPart
 
-	\mark "A''"
+	\myMark "A''"
 	\startPart
 	g2 e:m | a:m7 d:7 | b:7 e:7 | a1:7 | \myEndLine
 	g2 e:7 | a:m7 d:7 |

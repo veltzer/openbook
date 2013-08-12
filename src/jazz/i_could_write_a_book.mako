@@ -63,18 +63,18 @@
 	\partial 2 s2 |
 
 	\repeat volta 2 {
-		\mark "A"
+		\myMark "A"
 		c2:maj7 a:m7 | d:m7 g:7 | c1:maj7 | c2:maj7 g:7 | \myEndLine
 		c:maj7 g:7 | c:maj7 cis:dim7 | d1:m7 | g:7 | \myEndLine
 	}
 	\alternative {
 		{
-			\mark "B"
+			\myMark "B"
 			c2/e aes:7/ees | d:m7 g:7 | a:m7 d:7.9- | g2.:maj7 b4:7 | \myEndLine
 			e1:m | a2:m7 d:7 | d1:m7 | g:7 | \myEndLine
 		}
 		{
-			\mark "C"
+			\myMark "C"
 			a2:m a:m7+ | a:m7 a:m6 | g2:m7 c:7 | f:maj7 f4:m7 bes:7 | \myEndLine
 			c2:maj7 a:7 | d:m7 g:7 | c1:6 | d2:m7 g:7 | \myEndLine
 		}

@@ -55,16 +55,16 @@
 	\startChords
 	\startSong
 
-	\mark "A"
+	\myMark "A"
 	f2 f/a | bes b4:dim7 c:7 | f2 f/a | bes b4:dim7 c:7 | \myEndLine
 	f1 | f2.:7 f4:7.5+ | bes1 | b:dim7 | \myEndLine
 	f2 a:7 | d:m bes:7 | g:7 c:7.11 | f1 | \myEndLine
 
-	\mark "B"
+	\myMark "B"
 	bes1:6 | b:dim7 | f | f:7 | \myEndLine
 	bes:7.9 | aes:9 | g:7 | c:7 | \myEndLine
 
-	\mark "A"
+	\myMark "A"
 	f2 f/a | bes b4:dim7 c:7 | f2 f/a | bes b4:dim7 c:7 | \myEndLine
 	f1 | f2.:7 f4:7.5+ | bes1 | b:dim7 | \myEndLine
 	f2 a:7 | d:m bes:7 | g:7 c:7.11 | f bes:7 | f1 | \myEndLine

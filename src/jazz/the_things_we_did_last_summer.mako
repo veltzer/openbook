@@ -57,22 +57,22 @@
 	%% Intro
 	\partial 8 s8 |
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	g2 e:7 | a:m7 d:7 | g1 | b2:m7.5- e:7.9- | \myEndLine
 	a:m7 d:7 | g e:m7 | a:m7 d:7 | g d:7 | \myEndLine
 	\endPart
-	\mark "A"
+	\myMark "A"
 	\startPart
 	g2 e:7 | a:m7 d:7 | g1 | b2:m7.5- e:7 | \myEndLine
 	a:m7 d:7 | g e:m7 | a:m7 d:7 | g1 | \myEndLine
 	\endPart
-	\mark "B"
+	\myMark "B"
 	\startPart
 	d2:m7 g:7 | d:m7 g:7 | c g:7 | c1 | \myEndLine
 	e2:m7 a:7 | e:m7 a:7 | d a:7.9- | d1:7 | \myEndLine
 	\endPart
-	\mark "A"
+	\myMark "A"
 	\startPart
 	g2 e:7 | a:m7 d:7 | g1 | b2:m7.5- e:7 | \myEndLine
 	a:m7 d:7 | b:m7 e:7 | a:m7 d:7 | g1 | \myEndLine

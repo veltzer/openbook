@@ -32,7 +32,7 @@
 	\startChords
 	\startSong
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	d1:m7 | d:m7/c | e1:7/b | r1 | \myEndLine
 	a1:7.5+.9- | r1 | d1:m7 | e2:m7.5- a:7 | \myEndLine

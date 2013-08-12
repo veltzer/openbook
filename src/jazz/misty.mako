@@ -59,7 +59,7 @@
 
 	\partial 4 s4
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	\repeat volta 2 {
 		ees1:maj7 | bes2:m7 ees:7 | aes1:maj7 | aes2:m7 des:7 | \myEndLine
@@ -74,13 +74,13 @@
 	}
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	bes1:m7 | ees:7.9- | aes1*2:maj7 | \myEndLine
 	a1:m7 | d2:7 f:7 | g2:m7.5- c:7.9- | f:m7 bes:7 | \myEndLine
 	\endPart
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	ees1:maj7 | bes2:m7 ees:7 | aes1:maj7 | aes2:m7 des:7 | \myEndLine
 	ees:maj7 c:m7 | f:m7 bes:7 | ees1:6 | f2:m7 bes:7 | \myEndLine

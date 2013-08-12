@@ -51,7 +51,7 @@
 
 	\endPart
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 
 	a2.:m | d:m7 | e:7 | a:m |
@@ -63,7 +63,7 @@
 
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 
 	\repeat unfold 2 {
