@@ -1,0 +1,3 @@
+If you want to build openbook on osx you will probably need to install the python
+mako templating system. Do that either via the osx package management system
+or via pip(1).
