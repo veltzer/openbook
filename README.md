@@ -1,5 +1,6 @@
 Hello and welcome to OpenBook
 =============================
+
 What is OpenBook ?
 ------------------
 OpenBook is a Jazz real book constructed with free software. A real book simply means a big book with lots of Jazz tunes or standards as they are more widely known.
@@ -108,6 +109,10 @@ to get both pdf and midi.
 Can I send corrections to the tunes without learning lilypond and all the rest of the stuff?
 --------------------------------------------------------------------------------------------
 Yes. Just send them as regular text via my email : mark.veltzer@gmail.com
+
+Where can I get more documentation about this project?
+------------------------------------------------------
+Look in the "doc" subfolder of the source code...
 
 			Mark Veltzer, 2011-2013
 			mark.veltzer@gmail.com
