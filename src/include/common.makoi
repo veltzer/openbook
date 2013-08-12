@@ -317,7 +317,7 @@ ${self.clearVars()}
 			if attributes['composer']==attributes['poet']:
 				add=' / '+attributes['composer']
 			else:
-				add=' / '+attributes['composer']+' , '+attributes['poet']
+				add=' / '+attributes['composer']+', '+attributes['poet']
 	attributes['tocname']=attributes['title']+add
 %>
 % if attributes['copyright']=='':
