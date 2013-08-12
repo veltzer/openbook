@@ -91,7 +91,7 @@
 	\time 4/4
 	\key ees \major
 	%% part "Intro"
-	r8.[ bes16 c8. bes16] c8.[ bes16 ees,8. f16] | ges8-. ges-. ges-. ges-. ges-> f~ f4 |
+	r8. bes16[ c8. bes16] c8.[ bes16 ees,8. f16] | ges8-. ges-. ges-. ges-. ges-> f~ f4 |
 	\repeat volta 2 {
 		%% part "A"
 		r8 bes c bes c bes des4 | r8 bes c bes des2 | r8 bes c bes c bes des4 | r8 aes bes aes c2 |
@@ -188,7 +188,7 @@
 	\time 4/4
 	\key ees \major
 	%% part "Intro"
-	r8.[ bes16 c8. bes16] c8.[ bes16 ees,8. f16] | ges8-. ges-. ges-. ges-. ges-> f~ f4 |
+	r8. bes16[ c8. bes16] c8.[ bes16 ees,8. f16] | ges8-. ges-. ges-. ges-. ges-> f~ f4 |
 	\repeat volta 2 {
 		%% part "A"
 		r8 bes c bes c bes des4 | r8 bes c bes des2 | r8 bes c bes c bes des4 | r8 aes bes aes c2 |
