@@ -1,15 +1,15 @@
 Hello and welcome to OpenBook
 =============================
 
-What is OpenBook ?
+What is OpenBook?
 ------------------
 OpenBook is a Jazz real book constructed with free software. A real book simply means a big book with lots of Jazz tunes or standards as they are more widely known.
 
-Where is the projects website ?
+Where is the projects website?
 -------------------------------
 http://veltzer.net/openbook/
 
-Why did you start this ?
+Why did you start this?
 ------------------------
 Because of many reasons:
 * I wanted to learn Jazz and a good way to do that is to write down the tunes (amongst many many other things).
@@ -20,11 +20,11 @@ Because of many reasons:
 * Jazz musicians may need beautiful electronic Real books because electronic books are starting to be
 used by Jazz musicians both for practice and for performance.
 
-What tools are used ?
+What tools are used?
 ---------------------
 lilypond, make, perl, python, mako, lame, timidity and possibly more.
 
-What is produced ?
+What is produced?
 ------------------
 Beautiful and lightweight postscript and PDF real books with Jazz tunes.
 The idea is that the end user can control the final output and decide if he/she
@@ -32,52 +32,52 @@ wants lyrics, size of paper, transposition for trumpet, selection of tunes and m
 In addition you can produce midi, mp3 and ogg outputs.
 Possibly other output formats will be supported in the future (epub?).
 
-What is the copyright ?
+What is the copyright?
 -----------------------
 All the stuff in this project is GPL version 3. The tunes themselves have their own copyright holders.
 
-Who can contribute ?
+Who can contribute?
 --------------------
 Anyone.
 
-What system do I need to participate ?
+What system do I need to participate?
 --------------------------------------
 A Linux system that you can install software on.
 Windows is not currently supported although well formed patches will be accepted.
 
-What do I need to know to participate ?
+What do I need to know to participate?
 ---------------------------------------
 * Some rudimentary Linux system administration (in order to install the software needed for this project to build).
 * Some basic git software content tracking (in order to fetch the project, modify and submit patches). 
 * The lilypond language (in order to edit or add tunes).
 * Some music knowledge would also help...:)
 
-Who currently contributes ?
+Who currently contributes?
 ---------------------------
 Just me (Mark Veltzer <mark.veltzer@gmail.com>).
 
-Where can I see some results ?
+Where can I see some results?
 ------------------------------
 Check out the PDFs and other outputs in http://veltzer.net/openbook/.
 
-Why is there so little documentation ?
+Why is there so little documentation?
 --------------------------------------
 I just started this project. Feel free to add stuff and request a pull. If you contribute a lot I will make you an admin...
 
-How do you write the standards ?
+How do you write the standards?
 --------------------------------
 Using lilypond. Check it out at: http://www.lilypond.org/
 
-Will you co-operate with the lilypond, mutopia and wikifonia communities ?
+Will you co-operate with the lilypond, mutopia and wikifonia communities?
 --------------------------------------------------------------------------
 YES! Any bugs or feature suggestion are submitted to the lilypond community. Any requests for pieces from the mutopia community will be respected.
 Wikifonia uses musicXML for typesetting while I use an essentially lilypond format as input format - so there could not be much co-operation there.
 
-Do you only allow Jazz tunes ?
+Do you only allow Jazz tunes?
 ------------------------------
 No. Rock and Pop will be welcome and so would classical. If you are really into classical lilypond production you may alternativly wish to contribute to the mutopia project at http://www.mutopiaproject.org/.
 
-How do I get started ?
+How do I get started?
 ----------------------
 * create an account on git hub.
 * git checkout -b [your branch name] git://github.com/veltzer/openbook.git
@@ -87,7 +87,7 @@ How do I get started ?
 * push to git hub (git push).
 * request me to pull your changes (button in the github ui).
 
-Can I just add a single tune ?
+Can I just add a single tune?
 ------------------------------
 Yes. To add a tune named "yourtune" just a single file named
 

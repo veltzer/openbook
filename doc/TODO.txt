@@ -121,7 +121,7 @@ config system:
 The system will allow users to config which type of tune they want to produce.
 They could select:
 - scale (C for concert, Bb, Eb for horns etc).
-- do they want lyrics ?
+- do they want lyrics?
 - font sizes from several configurations and more.
 - do they want to produce midi, postscript, pdf, mp3, ogg.
 - what tunes do they want to build.
@@ -131,8 +131,8 @@ epdfs:
 - bring more epdfs for the tunes that I already have.
 	document how to find those epdfs.
 - bring the meta data from the epdfs into the database and show them.
-	Where do they come from ? (which real book?).
-	What page ?
+	Where do they come from? (which real book?).
+	What page?
 - support not just the pdf format but other formats as well.
 
 db importing:
@@ -173,10 +173,10 @@ build system
 - add "topic" to each piece. Topics at first should be reflections of the directory
 	the piece is in. Add it to the database.
 - make sure the build system checks that each file has the right tags at the header
-	in the right order (whats the best way to do this ?!?).
+	in the right order (whats the best way to do this?!?).
 - create compressed postscripts and not regular ones (postscript is not a compressed format).
 - make a book with all of the standards.
-	- how do I include all the files ? Should I write a script ?!?
+	- how do I include all the files? Should I write a script?!?
 - make the build system produce a .gitignore file (make the .gitignore file be a target
 	of the build system dependent on everything including the makefile itself).
 - add an option to find lyi files which are not used (not included anywhere).
@@ -191,7 +191,7 @@ outof lilypond lyrics support:
 
 wav support (this is currently disabled):
 =========================================
-- reduce the size of the wav files (why are some of them so big ?!?).
+- reduce the size of the wav files (why are some of them so big?!?).
 	this causes their import to be aborted (this is why it is currently disabled).
 
 mp3 support:
@@ -242,13 +242,13 @@ Info addition
 	Record all of these understandings in some kind of standards document that I will
 	start for all of this material.
 - get number of pages and import that into the database too.
-	How do we get it ?!?
-	- count the number of pages in the pdf (some kind of pdf parser ?!?).
+	How do we get it?!?
+	- count the number of pages in the pdf (some kind of pdf parser?!?).
 	- count the number of images created when --png is used.
 
 Database additions
 ==================
-- get last changed date (the data of the *.ly file ?!?) and put it in the database
+- get last changed date (the data of the *.ly file?!?) and put it in the database
 	on import. Show it in on the web.
 	Enable a direct link to a files history from git from the web.
 - add links to my favourite performances of the tune.
