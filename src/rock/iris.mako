@@ -10,6 +10,7 @@
 	attributes['album']="Dizzy Up The Girls"
 	attributes['style']="Rock"
 	attributes['piece']="Med. Ballad"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="2596358c-3929-11e2-a2c3-6beac8f09e25"

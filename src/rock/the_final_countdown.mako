@@ -9,6 +9,7 @@
 	attributes['poet']="Europe"
 	attributes['style']="Rock"
 	attributes['piece']="Upbeat"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="7f247a70-c8f3-11e0-bb35-0019d11e5a41"

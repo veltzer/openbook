@@ -9,6 +9,7 @@
 	attributes['poet']="Greg Lake"
 	attributes['style']="Rock"
 	attributes['piece']="Med. Ballad"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="a68bcbbc-c8ae-11e0-8fa9-0019d11e5a41"

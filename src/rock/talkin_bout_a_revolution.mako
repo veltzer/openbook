@@ -9,6 +9,7 @@
 	attributes['poet']="Tracy Chapman"
 	attributes['style']="Rock"
 	attributes['piece']="upbeat"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="e9155cee-c554-11e0-b407-0019d11e5a41"
