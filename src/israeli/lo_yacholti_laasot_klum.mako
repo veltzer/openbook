@@ -14,7 +14,7 @@
 	attributes['poet']=u"יונה וולך"
 	attributes['singer']=u"איןך ןירצברג"
 	attributes['piece']=u"בלדת רוק"
-	atttibutes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
+	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
 
 	attributes['completion']="5"
 	attributes['uuid']="f2e3c22e-f100-11e0-9162-0019d11e5a41"
