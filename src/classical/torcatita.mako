@@ -77,7 +77,7 @@ PartHighVoice=\relative c'' {
 	\startTune
 	r8 e g f e dis \endPart
 
-	\mark "A"
+	\myMark "A"
 	e2\segno e4 | f2 \times 2/3 {f8 g f} | e2. | r8 e g f e dis | \myFakeEndLine
 	e2 e4 | f2 \times 2/3 {f8 g f} | e2. | r8 a b a gis a | \myFakeEndLine
 	f2. | r8 gis a b a gis | e2. | r8 e g f e f | \myFakeEndLine
@@ -88,7 +88,7 @@ PartHighVoice=\relative c'' {
 	\breathe
 	c b4 a \endPart \myFakeEndLine
 
-	\mark "B"
+	\myMark "B"
 	\repeat volta 2 {
 		c4 b2 | r8 d c4 b | d c2 | r8 e d4 c | \myFakeEndLine
 		e d2 | r8 f e4 dis | e2. | r8 g f4 e | \myFakeEndLine
@@ -99,7 +99,7 @@ PartHighVoice=\relative c'' {
 		{ r8 f' e4 gis, | a2 e'4 | <c e a>2. | }
 	} \myFakeEndLine
 
-	\mark "C"
+	\myMark "C"
 	\repeat volta 2 {
 		r2. | r4 <a c e> <a c e> | r2. | r4 <a c e> <a c e> | \myFakeEndLine
 		r2. | r4 <a c e> <a c e> | r4 <e gis d'> <e gis d'> | r4 <e a c> <e a c> | \myFakeEndLine

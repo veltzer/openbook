@@ -64,14 +64,14 @@
 	\startChords
 	\startSong
 
-	\mark "A"
+	\myMark "A"
 	\repeat volta 2 {
 		d1:m7 | g:m7 | d:m7 | g:7 | \myEndLine
 		c:maj7 | f:maj7 | e:m7 |
 	} \alternative {
 		{
 			f:7 | \myEndLine
-			\mark "B"
+			\myMark "B"
 			d:m7 | g:7 | c:maj7 | a:m7 | \myEndLine
 			d:m7 | g:7 | e:m7 | a:7 | \myEndLine
 		}
@@ -79,7 +79,7 @@
 			%% \myEndLine after the following line was removed to reduce
 			%% number of lines in the presentation
 			a:7 |
-			\mark "C"
+			\myMark "C"
 			d:m7 | f:m6 | c:maj7 | e2:7 ees:dim | \myEndLine
 			d1:m7 | g:7 | c1*2:6 | \myEndLine
 		}

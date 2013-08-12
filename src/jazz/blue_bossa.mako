@@ -45,7 +45,7 @@
 	\partial 4 s4 |
 
 	\repeat volta 3 {
-		\mark "A"
+		\myMark "A"
 		\startPart
 		c1*2:m7 | f1*2:m7 | \myEndLine
 		d1:m7.5- | g:7 | c1*2:m7 | \myEndLine

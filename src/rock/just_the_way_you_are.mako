@@ -40,14 +40,14 @@ PartChords=\chordmode {
 
 	\startSong
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	d1 | b:m6 | g:maj7 | b2:m d:7 |
 	g1:maj7 | g:m | d/fis | a2:m7 d:7 |
 	g1:maj7 | g:m | d/fis | b:m7 |
 	b:m7/e | e:9 | g/a | g/a |
 	\endPart
-	\mark "B"
+	\myMark "B"
 	\endPart
 
 	\endSong

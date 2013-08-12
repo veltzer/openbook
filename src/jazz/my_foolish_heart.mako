@@ -92,7 +92,7 @@
 
 	\repeat volta 2 {
 
-		\mark "A"
+		\myMark "A"
 		\startPart
 		bes2:maj7 ees:maj7 | d:m7 g:7 | c1:m7 | f:7.9- | \myEndLine
 		bes2:maj7 d:7.9+ | g1:m7 | c:m7 | f:7 | \myEndLine
@@ -100,7 +100,7 @@
 		g2:m7 d:7.5+ | g:m7 c:7 | f1:maj7 | f:7 | \myEndLine
 		\endPart
 
-		\mark "B"
+		\myMark "B"
 		\startPart
 		bes2:maj7 ees:maj7 | d:m7 g:7 | c1:m7 | f:7.9- | \myEndLine
 		bes2:maj7 d:7.9+ | g1:m7 | c:m7 | a2:m7.5- d:7.5- | \myEndLine

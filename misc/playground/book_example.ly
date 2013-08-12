@@ -140,7 +140,7 @@ PartChords=\chordmode {
 
 	\startSong
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	\repeat volta 2 {
 		f1:maj7 | ees2:maj7 d:maj | des1:maj7 | c:7.9+ | f:m7 | \myEndLine
@@ -148,13 +148,13 @@ PartChords=\chordmode {
 	%% this is remarked ON PURPOSE to keep the repetition sign in the chart...
 	%%\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	e1:m7 | f:maj1 | a:m7.5- | e:m7.5- | g:m7.5- |
 	d:m7.5- | g:7.9+ | c:7.9+ | ees1*2:7.9+ | \myEndLine
 	\endPart
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	f1:maj7 | ees2:maj7 d:maj | des1:maj7 | c:7.9+ | f:m7 | \myEndLine
 	\endPart

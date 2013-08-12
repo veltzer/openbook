@@ -38,25 +38,25 @@
 	\startChords
 	\startSong
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	g2 bes4:m7 ees:7 | a2:m7 b:7.5- | e4:m7 e:m/d cis:m7 c:maj7 | b2:m7.5- e:7.9- | \myEndLine
 	a:m7 f:7 | b:m7 bes:dim7 | a:m7 d:7 | b4:m7 e:7 a:m7 d:7 | \myEndLine
 	\endPart
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	g2 bes4:m7 ees:7 | a2:m7 b:7.5- | e4:m7 e:m/d cis:m7 c:maj7 | b2:m7.5- e:7.9- | \myEndLine
 	a:m7 f:7 | b:m7 bes:dim7 | a:m7 d:7.9- | g2 bes:7 | \myEndLine
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	ees2:6 c:m7 | f:m7 bes:7 | ees:maj7 c:7.9- | f:m7 bes4:7.9 bes:7.9- | \myEndLine
 	ees2:6 c:m7 | g4:m7 g:m7/f e2:m7.5- | a:m7 d:7 | ees:7.9 d:7.9 | \myEndLine
 	\endPart
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	g2 bes4:m7 ees:7 | a2:m7 b:7.5- | e4:m7 e:m/d cis:m7 c:maj7 | b2:m7.5- e:7.9- | \myEndLine
 	a:m7 f:7 | b:m7 bes:dim7 | a:m7 d:7.9- | g1 | \myEndLine

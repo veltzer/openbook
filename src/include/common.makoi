@@ -127,6 +127,17 @@ startTune={}
 endTune=\bar "|."
 myFakeEndLine={}
 
+%% some functions to be reused all over
+%% =====================================================================
+%% A wrapper for section markers that allows us to control their formatting
+myMark =
+#(define-music-function
+     (parser location mark)
+     (markup?)
+   #{
+     \mark \markup { \circle #mark }
+   #})
+
 %% this is a macro that * really * breaks lines. You don't really need this since a regular \break will work
 %% AS LONG AS you have the '\remove Bar_engraver' enabled...
 hardBreak={ \bar "" \break }

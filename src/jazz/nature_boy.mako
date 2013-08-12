@@ -58,7 +58,7 @@
 
 	\partial 8 s8 |
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	d1:m | e2:m7.5- a:7 | d1:m | e2:m7.5- a:7 | \myEndLine
 	d:m d:m7+ | d:m7 d:m6 | g:m6 d:m | e1:m7.5- | \myEndLine
@@ -66,7 +66,7 @@
 	e:7.9- | a:7 | \myEndLine
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	d1:m | e2:m7.5- a:7 | d1:m | e2:m7.5- a:7 | \myEndLine
 	d:m d:m7+ | d:m7 d:m6 | g:m6 d:m | e1:m7.5- | \myEndLine

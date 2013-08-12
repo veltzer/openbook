@@ -42,7 +42,7 @@
 
 	\partial 2.. s2..
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	\repeat volta 2 {
         c2 g:5+7 | c1 | g2:7 g:dim7 | 
@@ -57,12 +57,12 @@
 	}
 	\endPart
 
-	\mark "B"
+	\myMark "B"
     c2:7 c:5+7 | f:maj7 f:6 | bes1:9 | a:m7 |
     a:dim7 | d2:m7 g:7 | d:m7 g:7 | c cis:dim |
 	\endPart
 
-	\mark "A"
+	\myMark "A"
 	\startPart
     g1:7 | c2 g:5+7 | c1 | g2:7 g:dim7 |
     g1:7 | d2:m7 g:7 | d:m7 g:7 | c4:6 f:m c2 |

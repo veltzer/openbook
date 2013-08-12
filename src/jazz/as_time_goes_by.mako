@@ -58,7 +58,7 @@
 
 	\partial 8 s8 |
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	\repeat volta 2 {
 		f2:m7 bes:7 | bes:m6 bes:7 | ees:6 f:m7 | fis:dim7 g:m7 | \myEndLine
@@ -73,13 +73,13 @@
 	}
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	aes1:maj7 | c:7 | f:m | a:dim | \myEndLine
 	c2:m aes:7 | f1:7 | bes2:7 bes:dim | bes1:7 | \myEndLine
 	\endPart
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	f2:m7 bes:7 | bes:m6 bes:7 | ees:6 f:m7 | fis:dim7 g:m7 | \myEndLine
 	f1:7 | g2:m7 c:7 | f:m7 bes:7 | ees4:6 des:7 ees:6 bes:7 | \myEndLine

@@ -55,25 +55,25 @@
 	\startChords
 	\startSong
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	d2:m d:m/c | g:m6/bes a:7 | d:m d:m/c | e:7/b bes4:7.5- a4:9 | \myEndLine
 	ees2:9 d4:9.5+ d:7.5+.9- | des2:9 c:9 | f:maj7 bes4:maj7 a:m7 | bes:m6/des c:7.9- bes:7 a:7 | \myEndLine
 	\endPart
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	d2:m d:m/c | g:m6/bes a:7 | d:m d:m/c | e:7/b bes4:7.5- a4:9 | \myEndLine
 	ees2:9 d4:9.5+ d:7.5+.9- | des2:9 c:9 | f b:m7.5- | e:7.9- a:7.9- | \myEndLine
 	\endPart
 
-	\mark "B"
+	\myMark "B"
 	\startPart
 	d:m7 g:m7 | c:7 f:maj7 | bes:maj7 e:m7.5- | bes:7 a:7 | \myEndLine
 	d:m7 g:m7 | c:7 f:maj7 | bes:maj7 e:m7.5- | bes:7 a:7 | \myEndLine
 	\endPart
 
-	\mark "A"
+	\myMark "A"
 	\startPart
 	d2:m d:m/c | g:m6/bes a:7 | d:m d:m/c | e:7/b bes4:7.5- a4:9 | \myEndLine
 	ees2:9 d:9.5+ | des:9 c:9 | f bes:6 | f1 | \myEndLine
