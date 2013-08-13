@@ -43,9 +43,11 @@
 	\myMark "A"
 	\startPart
 	c1:m | g2:7.5+ g:7 | c1:m | g:7 | d2:m7.5- g:7.9- |
-	d:m7.9- g:7 | c:m g:7 | c1:m | c2:m g:7/d | c:m/ees c:m | c1:m | 
-	c2:m g:7/d | c:m/e c:m | c:m d:m7.5- | g1:7.9- | c2:m g:7 |
-	c:m g:7 | g:7.9-/f g:7.9-/d | g:7.9-/b g:7.9- | g1:7.9- | c2:m c:m/b |
+	%% Fake Book has d:m9.9- for the first measure, second system  here, but I
+	%% think the a (fifth) should be flat to match the melody.
+	d:m7.5- g:7 | c:m g:7 | c1:m | c2:m g:7/d | c:m/ees c:m | c1:m |
+	c2:m g:7/d | c:m/ees c:m | c:m d:m7.5- | g1:7.9- | c2:m g:7 |
+	c:m g:7 | g:7.9-/f g:7.9-/d | g:7.9-/b g:7.9- | g1:7.9- | c2:m c:m/bes |
 	aes:maj7 g:7 | d:m7.5- g:7 | d:m7.5- g:7 c1:m | d:m7.5- |
 	c2:m/g g:7 | c1:m | g2:7 des:6.9 | c:m g:7 | c1:m |
 	\endPart
@@ -74,10 +76,10 @@
 % if part=='LyricsFake':
 \lyricmode {
 	South -- ern trees bear a strange fruit, blood on the leaves and blood at the root, black bod -- y swing -- ing in the 
-	south -- ern breeze; Strange Fruit hang -- ing from the pop -- lar trees. __ (Humming) __ _ _ _ _ _ _ _ _
+	south -- ern breeze; Strange Fruit hang -- ing from the pop -- lar trees. __ \markup \italic (Humming) __ _ _ _ _ _ _ _ _
 	Pas -- tor -- al scene of the gal -- lant South, the bul -- ging eyes and the twist -- ed mouth; scent of mag -- no -- _ lia
 	Sweet _ and fresh, and the sud -- den smell of burn -- ing flesh! Here is the fruit for the
 	crows to pluck, for the rain to gath -- er, for the wind to suck, for the sun to rot, for the tree to drop.
-	(Hum) __ _ Here is a strange and bit -- ter crop. (Hum) __
+	\markup \italic (Hum) __ _ Here is a strange and bit -- ter crop. \markup \italic (Hum) __
 }
 % endif
