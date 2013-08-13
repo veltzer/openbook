@@ -7,6 +7,7 @@
 	attributes['title']="Six to Diminished scale exercises"
 	attributes['style']="Jazz"
 	attributes['piece']="Upbeat Jazz"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['copyright']=attributes['copyrightvalstudy']
 

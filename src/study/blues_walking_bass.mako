@@ -8,6 +8,7 @@
 	attributes['title']="Jazz Bass line for Blues in F"
 	attributes['style']="Jazz"
 	attributes['piece']="Upbeat Jazz Blues"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['copyright']=attributes['copyrightvalstudy']
 

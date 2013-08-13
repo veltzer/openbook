@@ -10,6 +10,7 @@
 	attributes['style']="Jazz"
 	attributes['piece']="Medium Bossa Nova"
 	attributes['poet']="Newton Menonca, Jon Hendricks, Jessie Cavanaugh"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 
