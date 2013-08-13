@@ -5,6 +5,7 @@
 
 	attributes['title']="Drumming drills with no bar lines"
 	attributes['style']="Jazz"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['copyright']=attributes['copyrightvalstudy']
 

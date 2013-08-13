@@ -11,6 +11,7 @@
 	attributes['copyright']="Public Domain"
 	attributes['style']="Classical"
 	attributes['remark']="Extracted by ear as a training exercise"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="d5e32c7a-854b-11e1-96fa-2b2b01073991"

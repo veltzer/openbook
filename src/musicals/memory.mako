@@ -10,6 +10,7 @@
 	attributes['piece']="Musical"
 	attributes['remark']="Taken from Scribd url http://www.scribd.com/doc/9491593/Sheet-Music-Cats-Memory"
 	attributes['poet']="Trevor Nunn after T.S. Eliot"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="1"
 	attributes['uuid']="cc3c46c7-908d-4b3e-b90f-1e01a942ef27"

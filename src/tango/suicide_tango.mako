@@ -15,6 +15,7 @@
 	attributes['piece']="Tango"
 	attributes['copyright']="???"
 	attributes['copyrightextra']="???"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="66834ecc-dcd0-11e2-9ec9-782bcbdd3b7a"

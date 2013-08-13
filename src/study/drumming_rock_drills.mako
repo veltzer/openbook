@@ -5,6 +5,7 @@
 
 	attributes['title']="Drumming rock drills"
 	attributes['style']="Jazz"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['copyright']=attributes['copyrightvalstudy']
 
