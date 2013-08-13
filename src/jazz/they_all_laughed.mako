@@ -108,7 +108,7 @@
 		r8 d e4 g a | b8.[ b16 a8. g16] a8 b4 g8~ | g1~ | g2. r4 |
 		%% part "A"
 		r8 d e4 g a | b8.[ b16 a8. g16] a8 b4. | d8.[ d16 cis8. b16] cis8 d4 fis,8~ | fis1 |
-		b4 a8. gis16 a8 b4. | b8.[ c16 a8. gis16] a8 b4. | a4 b c b | a d d d |
+		b4 a8. gis16 a8 b4. | b8.[ b16 a8. gis16] a8 b4. | a4 b c b | a d d d |
 		%% part "B"
 		d2~ d8 b4 g8 | a2~ a8.[ b16 c8. cis16] | d4 e d b | c2. b4 |
 		e2~ e8 cis4 a8 | b2~ b8 a4 b8 | c4 e e, g | a1 |
