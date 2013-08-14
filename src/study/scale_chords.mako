@@ -7,6 +7,7 @@
 	attributes['title']="Jazz chords on the major scale"
 	attributes['style']="Jazz"
 	attributes['piece']="Upbeat Jazz"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['copyright']=attributes['copyrightvalstudy']
 

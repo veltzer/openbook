@@ -14,6 +14,7 @@
 	attributes['piece']="Ballad"
 	attributes['copyright']="???"
 	attributes['copyrightextra']="???"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="11542882-e65c-11e2-9030-4311f6fc08c2"

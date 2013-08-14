@@ -7,6 +7,7 @@
 	attributes['title']="Chanson des faucheurs"
 	attributes['composer']="R. Schumann"
 	attributes['style']="Classical"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="0"
 	attributes['uuid']="9ff5c7c4-a26e-11df-aa45-0019d11e5a41"
