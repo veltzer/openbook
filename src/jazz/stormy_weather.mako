@@ -63,14 +63,17 @@
 	\myMark "B"
 	\startPart
 	g2 b4:m7 e:7 | a2:m7 d:7.9- | g d4:m7 g:7 |
-    c1:maj7 | g4/b a:m7 g2:maj7 | c1:maj7 |
-    g2/b a4:m7 d:7 | c2 cis:dim7 | g/d e:7 a4:m7 b:7 e2:m7 |
-	a:7 a4:m7 d:7 | g2 gis:dim7 | a:m7 d:9 | g e:7 |
-    a:m7 d:9 | g e:7 | a:m7 d:7.5+.9- | g1 |
-    a2:m7 d:7.5+.9- | g a4:m7 aes:maj7 | 
+	c1:maj7 | g4/b a:m7 g2:maj7 | c1:maj7 |
+	g2/b a4:m7 g:7 | c2 cis:dim7 | g/d e:7 a4:m7 b:7 e2:m7 |
+	a:7 a4:m7 d:7 |
+	\endPart
+	\startPart
+	\myMark "A"
+	g2 gis:dim7 | a:m7 d:9 | g e:7 |
+	a:m7 d:9 | g e:7 | a:m7 d:7.5+.9- | g1 |
+	a2:m7 d:7.5+.9- | g a4:m7 aes:maj7 | 
 	\partial 2.
 	g:maj7 c g4:6 |
-
 	\endPart
 	\endSong
 	\endChords
@@ -101,9 +104,11 @@
 	}
 	%% B part
 	e8 d4.~ d2 | c8 e g ais~ ais4. ais8 | b8 g4.~ g2 |
-	e8. fis16 \times 2/3 { g8 a g~ } g8. g16 g8. g16 | g4. g8 b g4. | e8. f16 \times 2/3 { g8 a g~ } g8. g16 g8. g16 |
+	e8. fis16 \times 2/3 { g8 a g~ } g8. g16 g8. g16 | g4. g8 b g4. | e8. fis16 \times 2/3 { g8 a g~ } g8. g16 g8. g16 |
 	g4. g8 e d4. | e8. fis16 \times 2/3 { g8 a g~ } g8. g16 g8. g16 | g4. g8 c8 b4. | d4 b8 a g4 e |
-	a2. ais8 b | d2.~ d8 ais16 b | d8 b d cis c4 ais8 b | d d,4.~ d2 | 
+	a2. ais8 b |
+	%% A part
+	d2.~ d8 ais16 b | d8 b d cis c4 ais8 b | d d,4.~ d2 | 
 	a'8. a16 a8. a16 a4~ a8 g16 e | g8 d4.~ d2 | c8 e g ais~ ais4. ais8 | b g4.~ g2 |
 	c,8 e g ais~ ais4. ais8 | b g4.~ g2~ | 
 	\partial 2. 
@@ -127,7 +132,7 @@
 	more.
 	%% part "A"
 	Can't go on, __ ev -- 'ry -- thing I had is gone, Storm -- y Weath -- er, __
-	since my man and I __ ain't to -- geth -- er, __ keeps rain -- in' all _ the time. __ _
+	since my man and I __ ain't to -- geth -- er, __ keeps rain -- in' all __ the time. __ _
 	Keeps rain -- in' all __ the time. __ _
 }
 % endif
@@ -135,8 +140,8 @@
 % if part=='LyricsmoreFake':
 \lyricmode {
 	%% Workaround to avoid having to repeat words. Each one skips a note.
-	{ \skip 1 } { \skip 1 } { \skip 1 } { \skip 1 } { \skip 1 } { \skip 1 } { \skip 1 }
-	rette, __ to some ex -- qui -- site chan -- son -- ette __
-	two hand are sure to sly -- ly meet be -- neath a ser -- vi -- nette, with
+	{ \skip 1 } { \skip 1 }
+	bare __ gloom and mis -- 'ry ev -- 'ry -- where, Storm -- y Weath -- er, __
+	just can't get my poor __ self to -- geth -- er, __ I'm wear -- y all __ the
 }
 % endif
