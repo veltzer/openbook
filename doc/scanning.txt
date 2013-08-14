@@ -1,7 +1,7 @@
 This is a small guide on how to scan in ubuntu
 ==============================================
 
-* why do you need this ?
+* why do you need this?
 because I want to scan real sheet music for reference.
 
 * best program to use.
