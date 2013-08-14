@@ -43,7 +43,7 @@
 	\myMark "A"
 	\startPart
 	c1:m | g2:7.5+ g:7 | c1:m | g:7 | d2:m7.5- g:7.9- |
-	%% Fake Book has d:m9.9- for the first measure, second system  here, but I
+	%% Fake Book has d:m9.9- for the first measure, second system here, but I
 	%% think the a (fifth) should be flat to match the melody.
 	d:m7.5- g:7 | c:m g:7 | c1:m | c2:m g:7/d | c:m/ees c:m | c1:m |
 	c2:m g:7/d | c:m/ees c:m | c:m d:m7.5- | g1:7.9- | c2:m g:7 |
@@ -75,7 +75,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
-	South -- ern trees bear a strange fruit, blood on the leaves and blood at the root, black bod -- y swing -- ing in the 
+	South -- ern trees bear a strange fruit, blood on the leaves and blood at the root, black bod -- y swing -- ing in the
 	south -- ern breeze; Strange Fruit hang -- ing from the pop -- lar trees. __ \markup \italic (Humming) __ _ _ _ _ _ _ _ _
 	Pas -- tor -- al scene of the gal -- lant South, the bul -- ging eyes and the twist -- ed mouth; scent of mag -- no -- _ lia
 	Sweet _ and fresh, and the sud -- den smell of burn -- ing flesh! Here is the fruit for the
