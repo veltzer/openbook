@@ -81,13 +81,13 @@
 
 	%% A part
 	\repeat volta 2 {
-		g1~ | g8 e'4. g,4 c | e8 aes,~ aes2.~ |  aes1 | a? | a8 bes b e g, fis f cis' | c? e,~ e2.~ |
+		g1~ | g8 e'4. g,4 c | e8 aes,~ aes2.~ | aes1 | a? | a8 bes b e g, fis f cis' | c? e,~ e2.~ |
 	} \alternative {
 		{
 			e1
 		}
 		{
-            e2\repeatTie r |
+			e2\repeatTie r |
 		}
 	}
 	%% B part
@@ -95,8 +95,8 @@
 	e8 a,~ a2.~ | a2 aes |
 
 	%% A part
-	g1~ | g8 e'4. g,4 c | e8 aes,~ aes2.~ |  aes1 | a? |
-	a8 bes b e g, fis f cis' | c? e,~ e2.~ | 
+	g1~ | g8 e'4. g,4 c | e8 aes,~ aes2.~ | aes1 | a? |
+	a8 bes b e g, fis f cis' | c? e,~ e2.~ |
 	e2 r2 |
 	%% These small cue notes were in the fake book, but splitting the voices
 	%% breaks the tie from the previous measure. Maybe some can find a fix?
@@ -111,8 +111,8 @@
 	You __ must take the "\"A\"" Train, __ To go to Sug -- ar Hill way up in Har -- lem. __
 	_
 	%% part "B"
-	Hur -- ry, get on now it's com -- ing. __ Lis -- ten __ to those rails a -- 
-	thrum -- ming. __ All 
+	Hur -- ry, get on now it's com -- ing. __ Lis -- ten __ to those rails a --
+	thrum -- ming. __ All
 	%% part "A"
 	'board! __ Get on the "\"A\"" Train, __ soon
 	you will be on Sug -- ar Hill in Har -- lem. __
