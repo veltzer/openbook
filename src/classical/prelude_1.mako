@@ -9,6 +9,7 @@
 	attributes['copyright']="Public Domain"
 	attributes['style']="Classical"
 	attributes['piece']="BWV 846"
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['remark']="Taken from Shlomo Gronichs book"
 
 	attributes['completion']="5"
