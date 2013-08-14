@@ -62,7 +62,10 @@
 
 	\myMark "B"
 	\startPart
-	g2 b4:m7 e:7 | a2:m7 d:7.9- | g d4:m7 g:7 |
+	%% Jazz Fakebook has the follow d:7.5+.9- chord without the augmented, but
+	%% given the melody note, and the fact that this exact figure appears in
+	%% two other places augmented, I'm assumign this was a typo.
+	g2 b4:m7 e:7 | a2:m7 d:7.5+.9- | g d4:m7 g:7 |
 	c1:maj7 | g4/b a:m7 g2:maj7 | c1:maj7 |
 	g2/b a4:m7 g:7 | c2 cis:dim7 | g/d e:7 a4:m7 b:7 e2:m7 |
 	a:7 a4:m7 d:7 |
