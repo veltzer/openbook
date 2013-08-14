@@ -6,7 +6,7 @@
 the first note of the second (third, forth,...) alternative should have a bow coming into
 it as well. As a side effect this also affects lyrics and midi (midi will play the note twice in the second round and lyrics will put a syllable on it even though it does not deserve one).
 
-- when playing in timidity the channel for the voice is seen as "\new" while the channel for the chords looks like "mychords" (which is the name I gave it). Why is that ?!?
+- when playing in timidity the channel for the voice is seen as "\new" while the channel for the chords looks like "mychords" (which is the name I gave it). Why is that?!?
 
 - When I have a relative tune with the following structure:
 

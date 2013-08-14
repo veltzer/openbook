@@ -38,7 +38,7 @@ Printing postscript
 ===================
 - You can either use the gnome document viewer or the command line lp(1) (I prefer the latter).
 
-which is better (postscript or pdf) ?
+which is better (postscript or pdf)?
 =====================================
 Postscript:
 	- looks better
