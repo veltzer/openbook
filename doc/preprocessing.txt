@@ -38,7 +38,7 @@ my own preprocessor
 	advantages:
 	- I can have it have any selection of features that I need.
 	disadvantates:
-	- need to be built (C, C++ ?)
+	- need to be built (C, C++?)
 mako
 	advantages:
 	- widely used
