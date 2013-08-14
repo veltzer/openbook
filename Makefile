@@ -392,6 +392,11 @@ install: $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(WEB_FILES) $(ALL_DEP)
 	$(Q)cp -r .htaccess index.html $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(WEB_FOLDER) $(WEB_DIR)
 	$(Q)chmod -R go+rx $(WEB_DIR)
 
+.PHONY: all_tunes
+all_tunes:
+	$(info doing [$@])
+	$(Q)for x in src/jazz/*; do y=out/`dirname $$x`/`basename $$x .mako`.pdf; make $$y;done
+
 # include the deps files (no warnings)
 ifeq ($(DO_LYD),1)
 -include $(FILES_LYD)
