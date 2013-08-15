@@ -1,15 +1,8 @@
 Now:
 ====
-- use some function instead of "\mark "A"" to mark rehersal points.
-	This will enable to put circles, squares and what not and
-	make those marks distinct from chord symbols.
-	See captabritones suggestion at:
-	https://github.com/veltzer/openbook/issues/7#issuecomment-22447967
 - stop stroing pdfs in the epdf section. store page numbers and
 	have an extract program to extract the right pages from
 	a collection of real books which is out of the git tree.
-- add the "typesetter" attribute. Mark all tunes by me (except the one
-	contribution) and remove my name from the common mako files.
 - move to using the Jazz font in this project.
 	https://sites.google.com/site/jpgzic/home/demonstration
 	http://lists.gnu.org/archive/html/lilypond-user/2013-03/msg00647.html
