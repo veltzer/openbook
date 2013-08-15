@@ -38,31 +38,47 @@
 	\startChords
 	\startSong
 
-    \partial 8
-    s8
-	\myMark "A"
+	\partial 8 s8
+
 	\repeat volta 2 {
-	ees2:maj7 c:m7 | g:m7 ees:7 | aes g:7 | c:m7 aes:m6 |
-	ees:maj7 bes:7 | ees:7 aes4:m7 des:7 | ees2:maj7 c:m7 | f:m7 bes:7 | ees:6 c:m7 |
-	f:m7 bes:7 | 
-	\myMark "A"
+
+		\myMark "A"
+		\startPart
+		ees2:maj7 c:m7 | g:m7 ees:7 | aes g:7 | c:m7 aes:m6 |
+		ees:maj7 bes:7 | ees:7 aes4:m7 des:7 | ees2:maj7 c:m7 | f:m7 bes:7 | ees:6 c:m7 |
+		f:m7 bes:7 |
+		\endPart
+
+		\myMark "A"
+		\startPart
 		ees:maj7 c:m7 | g:m7 ees:7 | aes:maj7 g:7 | c:m7 aes:m6 |
-	ees:maj7 bes:7 | ees:7 aes4:m7 des:7 | ees2:maj7 c:m7 | f:m7 bes:7 | ees:6 c4:m7 c:m7/bes | a2:m7.5- d:7 |
-	\myMark "B"
-	g e:m7 | a:m7 d4:7 d:7/c | b2:m7 bes:dim7 | a:m7 d:7 |
-	\myMark "B"
-	g e:m7 | a:m7 d4:7 d:7/c | b2:m7 bes:dim7 | f:m7 bes:7 |
-	\myMark "A"
-	ees2:maj7 c:m7 | g:m7 ees:7 | aes g:7 | c:m7 aes:m6 | ees bes:7 |
-	ees:7 aes4:m7 des:7 | ees,2 c:m7 | f:m7 bes:7 |
+		ees:maj7 bes:7 | ees:7 aes4:m7 des:7 | ees2:maj7 c:m7 | f:m7 bes:7 | ees:6 c4:m7 c:m7/bes | a2:m7.5- d:7 |
+		\endPart
+
+		\myMark "B"
+		\startPart
+		g e:m7 | a:m7 d4:7 d:7/c | b2:m7 bes:dim7 | a:m7 d:7 |
+		\endPart
+
+		\myMark "B"
+		\startPart
+		g e:m7 | a:m7 d4:7 d:7/c | b2:m7 bes:dim7 | f:m7 bes:7 |
+		\endPart
+
+		\myMark "A"
+		\startPart
+		ees2:maj7 c:m7 | g:m7 ees:7 | aes g:7 | c:m7 aes:m6 | ees bes:7 |
+		ees:7 aes4:m7 des:7 | ees,2 c:m7 | f:m7 bes:7 |
 	} \alternative {
 		{
-			ees c:m7 | f:m7 bes:7 | 
+			ees c:m7 | f:m7 bes:7 |
 		}
 		{
-			ees c:m7 | f:m7  bes4:7 bes:7/aes | g2:m7.5- c:7 | f:m7.5- aes4/bes bes:7 | ees2 c4:m c:m7/bes | aes2:m6 ees:6 |
+			ees c:m7 | f:m7 bes4:7 bes:7/aes | g2:m7.5- c:7 | f:m7.5- aes4/bes bes:7 | ees2 c4:m c:m7/bes | aes2:m6 ees:6 |
 		}
 	}
+	\endPart
+
 	\endSong
 	\endChords
 }
@@ -79,33 +95,33 @@
 	bes,8
 
 	\repeat volta 2 {
-	  g'4 g ees4. ees8 | bes'4 bes g ees8 ees | \times 2/3 { c'4 c c d d d } | ees2. ees8 ees |
-	  d4 bes c4. aes8 | bes4 ees, bes' aes8 aes | g aes bes4 ees, ees | ees2 f | ees1 |
-	  r2 r4 r8 bes | g'4 g ees4. ees8 | bes'4 bes g ees8 ees | \times 2/3 { c'4 c c d d d } | ees2. ees4 |
-	  d4 bes c4. aes8 | bes4 ees, bes'4. aes8 | g aes bes4 ees, ees | ees2 f | ees1 | r |
-	  r8. d16 e8. fis16 g8. a16 b8. c16 | d8 d4 b8~ b4. b8 | a4 a  fis4. fis8 | e4 e d2 |
-	  r8. d16 e8. fis16 g8. a16 b8. c16 | d8 d4 b8~ b4. b8 | a4 a g4. g8 | c4 c bes4. bes,8 |
-	  g'4 g ees4. ees8 | bes'4 bes g ees8 ees | \times 2/3 { c'4 c c d d d } | ees2. ees4 | d  bes c4. aes8 |
-	  bes4 ees, bes'4. aes8 | g8 aes bes4 ees, ees | ees2 f |
+		g'4 g ees4. ees8 | bes'4 bes g ees8 ees | \times 2/3 { c'4 c c d d d } | ees2. ees8 ees |
+		d4 bes c4. aes8 | bes4 ees, bes' aes8 aes | g aes bes4 ees, ees | ees2 f | ees1 |
+		r2 r4 r8 bes | g'4 g ees4. ees8 | bes'4 bes g ees8 ees | \times 2/3 { c'4 c c d d d } | ees2. ees4 |
+		d4 bes c4. aes8 | bes4 ees, bes'4. aes8 | g aes bes4 ees, ees | ees2 f | ees1 | r |
+		r8. d16 e8. fis16 g8. a16 b8. c16 | d8 d4 b8~ b4. b8 | a4 a fis4. fis8 | e4 e d2 |
+		r8. d16 e8. fis16 g8. a16 b8. c16 | d8 d4 b8~ b4. b8 | a4 a g4. g8 | c4 c bes4. bes,8 |
+		g'4 g ees4. ees8 | bes'4 bes g ees8 ees | \times 2/3 { c'4 c c d d d } | ees2. ees4 | d bes c4. aes8 |
+		bes4 ees, bes'4. aes8 | g8 aes bes4 ees, ees | ees2 f |
 	} \alternative {
-	  {
-		ees1~ | ees4 r r r8 bes8 |
-	  }
-	  {
-		ees1 | r8 c' bes aes g4 f | g1 | r8 aes g f ees4 d | ees1~ ees2. r4 |
-	  }
+		{
+			ees1~ | ees4 r r r8 bes8 |
+		}
+		{
+			ees1 | r8 c' bes aes g4 f | g1 | r8 aes g f ees4 d | ees1~ ees2. r4 |
+		}
 	}
 }
 % endif
 
 % if part=='LyricsFake':
 \lyricmode {
-	That cer -- tain night, the night we met there was ma -- gic a -- broad in the air, there were 
-	an -- gels din -- in at the Ritz, and A Nigh -- in  -- gale Sang In Ber -- k'ley Square.
-	I may be right, I may be wrong, but I'm per -- fect -- ly will -- ing to swear that 
+	That cer -- tain night, the night we met there was ma -- gic a -- broad in the air, there were
+	an -- gels din -- in at the Ritz, and A Nigh -- in -- gale Sang In Ber -- k'ley Square.
+	I may be right, I may be wrong, but I'm per -- fect -- ly will -- ing to swear that
 	when you turn'd and smiled at me A Night -- in gale Sang In Ber -- k'ley Square.
 	The moon that lin -- gered o -- ver Lon -- don town, __ poor Puz -- zled moon, he wore a frown.
-	How could he know we two were so in love. __ The whole darn world seemed up -- side down, the 
+	How could he know we two were so in love. __ The whole darn world seemed up -- side down, the
 	streets of town were paved with stars. It was such a ro -- man -- tic af -- fair, and as we kiss'd and
 	said "\"good" -- "night\"" A Night -- in gale Sang In Ber -- k'ley Square. __ How Square.
 	I know, 'cause I was there that night in Ber -- k'ly Square. __
