@@ -56,7 +56,7 @@
 	  ees c:m7 |
 	}
 	{
-	  f:m7  bes4:7 bes:7/aes | g2:m7.5- c:7 | f:m7.5- aes4/bes bes:7 | ees2 c4:m c:7/bes | aes2:m7 ees:6 |
+	  f:m7  bes4:7 bes:7/aes | g2:m7.5- c:7 | f:m7.5- aes4/bes bes:7 | ees2 c4:m c:m7/bes | aes2:m6 ees:6 |
 	}
   }
 	\endPart
@@ -107,7 +107,7 @@
 	How could he know we two were so in love. __ The whole darn world seemed up -- side down, the 
 	streets of town were paved with stars. It was such a ro -- man -- tic af -- fair, and as we kiss'd and
 	said "\"good" -- "night\"" A Night -- in gale Sang In Ber -- k'ley Square. __ How Square.
-	I know, 'cause I was there tha tnight in Ber -- k'ly Square. __
+	I know, 'cause I was there that night in Ber -- k'ly Square. __
 }
 % endif
 
