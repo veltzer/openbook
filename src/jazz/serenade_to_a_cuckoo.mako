@@ -47,19 +47,20 @@
 	\startChords
 	\startSong
 
-	\myMark "A"
-	\startPart
-	f2:m f:m/ees | f:m/des f:m/c | f2:m f:m/ees | f:m/des f:m/c | \myEndLine
-	f2:m f:m/ees | f:m/des f:m/c | f2:m f:m/ees | f:m/des f:m/c | \myEndLine
-	\endPart
+	\repeat volta 2 {
+		\myMark "A"
+		\startPart
+		f2:m f:m/ees | f:m/des f:m/c | f2:m f:m/ees | f:m/des f:m/c | \myEndLine
+		f2:m f:m/ees | f:m/des f:m/c | f2:m f:m/ees | f:m/des f:m/c | \myEndLine
+		\endPart
 
-	\myMark "B"
-	\startPart
-	bes:m7 ees:7 | aes:maj7 des:maj7 | g:m7.5- c:7 | f:m f:7 | \myEndLine
-	bes:m7 ees:7 | aes:maj7 des:maj7 | g:m7.5- c:7 | f1:m | \myEndLine
-	\endPart
+		\myMark "B"
+		\startPart
+		bes:m7 ees:7 | aes:maj7 des:maj7 | g:m7.5- c:7 | f:m f:7 | \myEndLine
+		bes:m7 ees:7 | aes:maj7 des:maj7 | g:m7.5- c:7 | f1:m | \myEndLine
+	}
 
-	\myMark "Ending"
+	\mark "Ending"
 	\startPart
 	g2:m7.5- c:7 | f1:m | \myEndLine
 	\endPart
@@ -77,11 +78,13 @@
 	\key f \minor
 
 	%% A part
-	r8 c4 f,8 c'4. f,8 | c' c bes bes aes f4 ees8 | f4 f8 f aes aes4 c8~ | c1 |
-	r8 c4 f,8 c'4. f,8 | c' c bes bes aes f4 ees8 | f4 f8 f aes f ees f~ | f1 |
-	%% B part
-	r8 f'4-^ r8 bes,2 | r8 ees4-^ r8 aes,2 | r8 des4-^ r8 g,2 | g8 aes bes c~ c2 |
-	r8 f4-^ r8 bes,2 | r8 ees4-^ r8 aes,2 | r8 des4-^ r8 g,2 | g8 aes g f~ f2 |
+	\repeat volta 2 {
+		r8 c4 f,8 c'4. f,8 | c' c bes bes aes f4 ees8 | f4 f8 f aes aes4 c8~ | c1 |
+		r8 c4 f,8 c'4. f,8 | c' c bes bes aes f4 ees8 | f4 f8 f aes f ees f~ | f1 |
+		%% B part
+		r8 f'4-^ r8 bes,2 | r8 ees4-^ r8 aes,2 | r8 des4-^ r8 g,2 | g8 aes bes c~ c2 |
+		r8 f4-^ r8 bes,2 | r8 ees4-^ r8 aes,2 | r8 des4-^ r8 g,2 | g8 aes g f~ f2 |
+	}
 	%% Ending part
 	c'8 c c ees-^ r des4.-> | c4-> r r2 |
 }
