@@ -84,7 +84,7 @@
 		g4 a a8 b4 b8~ | b2 \times 2/3 { g4 a c } | b1~ | b2. r4 |
 		c d d c | c d8 ees~ ees d c4 | g a a g | g a8 b~ b a g4 |
 	} \alternative {
-		{ e e a e~ | e2. f4 | fis fis c' fis,~ | fis2. r4 | }
+		{ e e a e~ | e2. f4 | fis? fis c' fis,~ | fis2. r4 | }
 		{ d e e d | d e8 g~ g e d4 | c1~ | c2. r4 | }
 	}
 }
