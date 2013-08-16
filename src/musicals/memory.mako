@@ -42,11 +42,12 @@ PartChords=\chordmode {
 
 	\startSong
 
-	\startIntro
+	\myMark "Intro"
+	\startPart
 
 	bes1. | bes |
 
-	\endIntro
+	\endPart
 
 	\startPart
 

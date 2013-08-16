@@ -68,8 +68,6 @@ startSong={}
 endSong=\bar "|."
 startPart={}
 endPart=\bar "||"
-startIntro=\mark "Intro"
-endIntro={}
 %% this causes chords that do not change to disappear...
 startChords=\set chordChanges = ##t
 endChords={}
