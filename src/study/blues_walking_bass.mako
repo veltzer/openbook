@@ -28,7 +28,6 @@
 % if part=='ChordsMy':
 \chordmode {
 	\startChords
-
 	\startSong
 
 	\myMark "A"
@@ -53,7 +52,6 @@
 	\endPart
 
 	\endSong
-
 	\endChords
 }
 % endif
@@ -66,14 +64,17 @@
 	\key f \major
 	\clef bass
 
+	%% A part
 	f4 a c b | bes d, dis e | f a d des | c e, f a |
 	bes f' d c | bes b c e | f a, c cis | d fis, a aes |
 	g a ais b | c cis d e | f a, d fis, | g b c e |
 
+	%% B part
 	f f ees ees | d d des des | c d g, c | f, fis g a |
 	bes b c b8 f-> | bes f aes4 g ges | f c' b bes | a ees' d8 a fis4 |
 	g bes d des | c bes a g | f ees' d aes | g des' c bes |
 
+	%% C part
 	a c f ees | d ees d des | c d ees g, | c bes a f' |
 	bes, f c' f | bes,8 f'-> b,4 c bes | a bes a g | fis a d8 a fis4 |
 	g8 g-> a4 bes b | c d dis e8 f-> | r a,4.-> d4 c | b g c8 e,4.-> |

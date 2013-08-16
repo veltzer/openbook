@@ -148,11 +148,17 @@ verticalSpace=\markup { \null }
 %% some macros for marking parts of jazz tunes
 %% =====================================================================
 startSong={}
-endSong=\bar "|."
+%% If we want endings of parts to be denoted by anything we need
+%% to find a smarter function that this since this will tend
+%% to make other things disapper (repeat markings etc)
+%%endSong=\bar "|."
+endSong={}
 startPart={}
-endPart=\bar "||"
-startIntro=\mark "Intro"
-endIntro={}
+%% If we want endings of parts to be denoted by anything we need
+%% to find a smarter function that this since this will tend
+%% to make other things disapper (repeat markings etc)
+%% endPart=\bar "||"
+endPart={}
 startChords={
 	%% this causes chords that do not change to disappear...
 	\set chordChanges = ##t
