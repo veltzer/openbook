@@ -115,7 +115,7 @@
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 	%% part "A"
-	A Fog -- gy Day in Lon -- don town ha -- d me low and had me down.
+	A Fog -- gy Day in Lon -- don town had __ _ me low and had me down.
 	I viewed the morn -- ing with a -- larm, the Brit -- ish Mu -- seum had lost its charm.
 	%% part "B"
 	How long I wondered could this thing last? But_the age of mira -- cles had -- n't passed,
