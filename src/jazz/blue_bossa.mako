@@ -48,10 +48,10 @@
 	\repeat volta 3 {
 		\myMark "A"
 		\startPart
-		c1*2:m7 | f1*2:m7 | \myEndLine
+		c1*2:m7 | f:m7 | \myEndLine
 		d1:m7.5- | g:7 | c1*2:m7 | \myEndLine
 		ees1:m7 | aes:7 | des1*2:maj | \myEndLine
-		d1:m7.5- | g:7 | c1:m7 | d2:m7.5- g:7 | \myEndLine
+		d1:m7.5- | g:7 | c:m7 | d2:m7.5- g:7 | \myEndLine
 		%% remarked to show the repeat sign...
 		%%\endPart
 	}
@@ -73,7 +73,7 @@
 	%% part "A"
 	\repeat volta 3 {
 		g'4. f8 ees d4 c8~ | c2. bes4 | aes2 g'4. f8~ | f1 |
-		f4. ees 8 d c4 bes8~ | bes2. aes4 | g2 f'4. ees8~ | ees1 |
+		f4. ees8 d c4 bes8~ | bes2. aes4 | g2 f'4. ees8~ | ees1 |
 		ees4. des8 c bes4 aes8~ | aes2. ges4 | ges f8 bes~ bes f aes4~ | aes1 |
 		aes4 g8 bes~ bes2 | aes4 g8 bes~ bes4. aes8 | g1~ | g2. <\parenthesize g>4 |
 	}
@@ -84,28 +84,28 @@
 %% this version of the lyrics is from the internet adjusted for the real book.
 \lyricmode {
 	%% A part
-	A place in -- side my heart
-	Is where you live
-	Mem -- ories of our start
-	The love you give
+	A place in -- side my heart __
+	Is where you live __
+	Mem -- ories of our start __
+	The love you give __
 
-	Days when we're a -- lone
-	And you are in my arms
-	The_blue -- ness of the_true -- ness of our love
+	Days when we're a -- lone __
+	And you are in my arms __
+	The_blue -- ness of the_true -- ness of our love __
 }
 % endif
 
 % if part=='LyricsmoreReal':
 \lyricmode {
 	%% A part
-	_ Nights of moon -- lit skies
-	A gen -- tle kiss
-	Some -- thing in your eyes
-	Fills me with bliss
+	_ Nights of moon -- lit skies __
+	A gen -- tle kiss __
+	Some -- thing in your eyes __
+	Fills me with bliss __
 
-	Hold me in your arms
-	And then I will re -- call
-	The_blue -- ness of the_true -- ness of our love
+	Hold me in your arms __
+	And then I will re -- call __
+	The_blue -- ness of the_true -- ness of our love __
 
 	The
 }
@@ -114,13 +114,13 @@
 % if part=='LyricsmoremoreReal':
 \lyricmode {
 	%% A part
-	The thought of how we met
-	Still lin -- gers on
-	How can I for -- get
-	That mag -- ic dawn
+	The thought of how we met __
+	Still lin -- gers on __
+	How can I for -- get __
+	That mag -- ic dawn __
 
-	All the warm de -- sire
-	The fi -- re in your touch
-	The_blue -- ness of the_true -- ness of our love
+	All the warm de -- sire __
+	The fi -- re in your touch __
+	The_blue -- ness of the_true -- ness of our love __
 }
 % endif

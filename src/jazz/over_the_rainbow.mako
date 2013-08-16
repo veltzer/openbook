@@ -130,7 +130,7 @@
 
 	%% B part
 	true
-	Some day I'll wish up -- on a star and wake up where the clouds are far be -- hind me.
+	Some day I'll wish up -- on a star and wake up where the clouds are far be -- hind me. __
 	Where trou -- bles melt like le -- mon drops a -- way a -- bove the chim -- ney tops that's where you'll find me
 
 	%% B part
