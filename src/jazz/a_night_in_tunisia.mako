@@ -39,7 +39,7 @@
 \chordmode {
 	\startChords
 	\startSong
-	
+
 	\partial 8
 	s8
 	\repeat volta 2 {

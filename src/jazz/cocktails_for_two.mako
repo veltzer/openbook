@@ -80,7 +80,6 @@
 	\time 2/2
 	\key c \major
 
-
 	\partial 2..
 	c8 e g gis b a8. e16
 	%% A part
