@@ -24,13 +24,15 @@ for(my($i)=1;$i<@ARGV;$i++) {
 	}
 	open(FILE,$filename) || die "Can't open file [$filename]: $!";
 	my($line);
+	my($line_number)=1;
 	while($line=<FILE>) {
 		if($line=~$pattern) {
 			if($print_filename) {
-				print $filename.": ";
+				print $filename.":".$line_number." ";
 			}
-			print $line; 
+			print $line;
 		}
+		$line_number++;
 	}
 	close(FILE) || die("unable to close file [$filename]: $!");
 }
