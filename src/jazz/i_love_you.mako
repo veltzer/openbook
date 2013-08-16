@@ -53,18 +53,25 @@
 \chordmode {
 	\startChords
 	\startSong
-	%% partial
+
 	\partial 4 s4 |
-	%% A part
+
+	\myMark "A"
+	\startPart
 	g1:m7.5- | c:7.9- | f1*2:maj7 | \myEndLine
 	g1:m7 | c:7 | f1*2:maj7 | \myEndLine
 	g1:m7.5- | c:7.9- | f:maj7 | b2:m7 e:7 | \myEndLine
 	a1:maj7 | b2:m7 e:7 | a1*2:maj7 | \myEndLine
-	%% B part
+	\endPart
+
+	\myMark "B"
+	\startPart
 	g1:m7 | c:7 | f1*2:maj7 | \myEndLine
 	a1:m7.5- | d:7.9- | g:7 | c:7 | \myEndLine
 	g1:m7.5- | c:7.9- | f:maj7 | a2:m7.5- d:7 | \myEndLine
 	g1:7 | g2:m7 c:7 | f1*2:6 | \myEndLine
+	\endPart
+
 	\endSong
 	\endChords
 }
@@ -76,13 +83,15 @@
 	\tempo "Andante" 4 = 76
 	\time 4/4
 	\key f \major
-	%% partial
+	
 	\partial 4 c4 |
+
 	%% A part
 	c2 des,~ | des bes'4. a8 | gis4. a8 a2~ | a r4 a |
 	a2 bes,~ | bes \times 2/3 { g'4 f e } | d1~ | d2 r4 c' |
 	c2 des,~ | des4. bes'8 bes4. a8 | gis4. a8 a2~ | a a4 a |
 	b4. cis8 cis2 | d2. e4 | e1~ | e2 r4 e |
+
 	%% B part
 }
 % endif
