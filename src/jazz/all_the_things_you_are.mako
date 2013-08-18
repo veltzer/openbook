@@ -95,7 +95,7 @@
 	c c c c | \times 2/3 { c d ees } d c | b1~ | b4 d g d' |
 
 	%% part "B"
-	d2 c2~ | c4 ees, e c' | b1~ | b4 d, g b |
+	d2 c~ | c4 ees, e c' | b1~ | b4 d, g b |
 	b2 a~ | a4 bes,? b a' | aes1~ | aes |
 
 	%% part "C"
