@@ -96,7 +96,7 @@
 
 	%% part "B"
 	d2 c2~ | c4 ees, e c' | b1~ | b4 d, g b |
-	b2 a~ | a4 bes?, b a' | aes1~ | aes |
+	b2 a~ | a4 bes,? b a' | aes1~ | aes |
 
 	%% part "C"
 	aes | des2. aes4 | g g g g | g c2 g4 |
@@ -171,7 +171,7 @@
 
 	%% part "B"
 	d4. c8 c2~ | c4 dis, e c' | b1~ | b4 d, g b |
-	b4. a8 a2~ | a4 bes, b a' | gis1 | r |
+	b4. a8 a2~ | a4 bes,? b a' | gis1 | r |
 
 	%% part "C"
 	aes | des2. aes4 | g g g g | g c2 g4 |
