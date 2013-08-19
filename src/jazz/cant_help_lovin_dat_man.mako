@@ -9,7 +9,7 @@
 	attributes['title']="Can't Help Lovin' Dat Man"
 	attributes['style']="Jazz"
 	attributes['composer']="Jerome Kern"
-	attributes['poet']="Oscap Hammerstein III"
+	attributes['poet']="Oscar Hammerstein III"
 	attributes['piece']="Moderately and rather freely"
 	attributes['copyright']="1927 T.B. Hama Company, Copyright Renewed"
 	attributes['copyrightextra']=""
