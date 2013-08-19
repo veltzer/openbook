@@ -83,7 +83,7 @@
 	\tempo "Andante" 4 = 76
 	\time 4/4
 	\key f \major
-	
+
 	\partial 4 c4 |
 
 	%% A part
