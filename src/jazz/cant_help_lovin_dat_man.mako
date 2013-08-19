@@ -39,8 +39,8 @@
 
 	\myMark "A"
 	\startPart
-	c2:maj7 a:m7 | d:m7 g:7 | c:maj7 g4:m7 c:7.9- | g2:6 bes:9 | e:m7 a:m7 |
-	aes2:7 d4:7.9- g:7.9- | c2:maj7 ees:dim | d:m7 g:7.5+ |
+	c2:maj7 a:m7 | d:m7 g:7 | c:maj7 g4:m7 c:7.9- | f2:6 bes:9 | e:m7 a:m7 |
+	aes2:7 d4:7.9- g:7.9- | c2:maj7 ees:dim7 | d:m7 g:7.5+ |
 	\endPart
 	\myMark "A"
 	\startPart
@@ -77,7 +77,7 @@
 	d4 d d d8 ees~ | ees1 | e?4 e e e8 fis~ | fis1 | g4 g g g | a a a a | d2~ d8 c b a | g1 |
 	%% part "A"
 	g8 g g c~ c4 c | c8 g g g~ g2 | e8 e e a~ a4 a | a8 d, d d~ d2 | g c |
-	aes8 c c ees~ ees4 d | c1~ | c2. r4 | R1 |
+	ees8 c d ees~ ees4 d | c1~ | c2. r4 | R1 |
 }
 % endif
 
