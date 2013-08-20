@@ -59,7 +59,6 @@
 	\startPart
 	f1:maj7 | f:maj7 | f:maj7 | f:maj7 | d:7 | d:7 |
 	d2:m9 g:9 | g:9 des:9 |
-
 	\endPart
 
 	\myMark "A"
