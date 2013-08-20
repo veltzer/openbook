@@ -69,8 +69,8 @@
 	g2/b a4:m7 g:7 | c2 cis:dim7 | g/d e:7 a4:m7 b:7 e2:m7 |
 	a:7 a4:m7 d:7 |
 	\endPart
-	\startPart
 	\myMark "A"
+	\startPart
 	g2 gis:dim7 | a:m7 d:9 | g e:7 |
 	a:m7 d:9 | g e:7 | a:m7 d:7.5+.9- | g1 |
 	a2:m7 d:7.5+.9- | g a4:m7 aes:maj7 |

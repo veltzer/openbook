@@ -58,6 +58,7 @@
 	\endPart
 
 	\myMark "B"
+	\startPart
 	c2:7 c:5+7 | f:maj7 f:6 | bes1:9 | a:m7 |
 	a:dim7 | d2:m7 g:7 | d:m7 g:7 | c cis:dim |
 	\endPart
