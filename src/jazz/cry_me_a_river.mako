@@ -66,7 +66,6 @@
 			ees1:6 |
 		}
 	}
-
 	\endPart
 	\endChords
 	\endSong
