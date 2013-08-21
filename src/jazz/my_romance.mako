@@ -60,27 +60,33 @@
 \chordmode {
 	\startChords
 	\startSong
+
 	\partial 4 s4
+
 	\myMark "A"
 	\startPart
 	c2:maj7 d:m7 | e:m7 ees:dim7 | d:m7 g:7 | c:maj7 bes:7.13 | \myEndLine
 	a:m a:m7+ | a:m7 a:7 | d:m7 g:7 | c:maj7 c:7 | \myEndLine
 	\endPart
+
 	\myMark "B"
 	\startPart
 	f:maj7 fis:dim7 | c:maj7 c:7 | f:maj7 fis:dim7 | c1:maj7 | \myEndLine
 	fis2:m7 f:7.5- | e:m7 ees:7 | a:m7.9 d:7 | d:m7 g:7 | \myEndLine
 	\endPart
+
 	\myMark "A"
 	\startPart
 	c:maj7 d:m7 | e:m7 ees:dim7 | d:m7 g:7 | c:maj7 bes:7.13 | \myEndLine
 	a:m a:m7+ | a:m7 a:7 | d:m7 g:7 | c:maj7 c:7 | \myEndLine
 	\endPart
+
 	\myMark "C"
 	\startPart
 	f:maj7 f:maj7/e | d:m7 d:m7/c | b:m7 bes:7.9.11+ | a:m7 aes:7.9 | \myEndLine
 	c:maj7/g a:m7 | d:m7 d4:m7/g g:7 | c1*2:6 | \myEndLine
 	\endPart
+
 	\endSong
 	\endChords
 }
@@ -93,16 +99,21 @@
 	\key c \major
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 100
+
 	\partial 4 e8 f |
+
 	%% A part
 	g2. e8 f | g4 a b c | c2. b8 a | g2. c,8 d |
 	e2. c8 d | e4 f g a | a2. g8 f | e2. g4 |
+
 	%% B part
 	c,2. c'4 | g2. g4 | c,2. c'4 | g2. c4 |
 	b2. a4 | g2. c4 | b2. a4 | g2. e8 f |
+
 	%% A part
 	g2. e8 f | g4 a b c | c2. b8 a | g2. c,8 d |
 	e2. c8 d | e4 f g a | a2. g8 f | e2. f8 g |
+
 	%% C part
 	a2. f8 g | a4 b c d | e e e e | c2. c8 d |
 	e2. c8 d | e4 c4 a4 f4 | c'1~ | c2. r4 |
