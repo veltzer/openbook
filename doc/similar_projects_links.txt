@@ -1,2 +1,8 @@
 http://www.wikifonia.org/
 	very nice site offersing free lead sheets
+http://www.irealb.com/
+	iPhone app that has thousands of changes for almost all standard jazz
+	tunes. The tunes can be found on their form
+	(http://www.irealb.com/forums/showthread.php?4519-Jazz-1300-Standards) but
+	I have uploaded them in a more readable format here:
+	https://gist.github.com/captbaritone/6289832
