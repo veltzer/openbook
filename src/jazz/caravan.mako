@@ -21,10 +21,11 @@
 	attributes['copyrightextra']="Used by Permission of CPP/Belwin, Inc., Miami, FL ALL Right Reserved"
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
-	attributes['completion']="4"
+	attributes['completion']="5"
 	attributes['uuid']="160af5b0-ebe1-11e2-937c-bb8193c610fc"
 	# my own (the structure in the new real book claims ABC which is totally wrong)
 	attributes['structure']="AABA"
+	attributes['location']="the new real book volume III, page 73"
 
 	attributes['idyoutuberemark']="A great performance by Ella"
 	attributes['idyoutube']="s4VjltPMfds"
@@ -37,15 +38,21 @@
 % if part=='Doc':
 	DONE:
 	- put in the chords.
-	- put in the lyrics.
+	- put in the lyrics from the internet.
 	- put in the melody.
 	- checked the melody.
 	- put in youtube performances.
 	- put in lyrics url.
+	- put in the lyrics from ella.
+	- checked the lyrics of ella.
+	- checked the lyrics from the internet.
+	- checked the chords.
+	- added the location in the real book
 	TODO:
-	- put the directions in a nicer place on the page (and document it).
-	- put the rest of the lyrics in (as extra).
-	- put the alternate chords in (how do I do that?!?)
+	- do the style marking which are now in remark. If you enable them they will not
+	be seen since there is little room for them without stepping over the "A", "B"
+	rehersal markings.
+	- put the alternate chords from the (how do I do that?!?)
 % endif
 
 % if part=='ChordsReal':
@@ -53,7 +60,8 @@
 	\startChords
 	\startSong
 
-	\mark "A (Bright Latin)"
+	\myMark "A"
+	%%\mark "Bright Latin"
 	\startPart
 	\repeat volta 2 {
 		c1*4:7 | \myEndLine
@@ -64,15 +72,17 @@
 	%% so I would see the repeat marks
 	%%\endPart
 
-	\mark "B (Swing)"
+	\myMark "B"
+	%%\mark "Swing"
 	\startPart
 	f1*4:9 | \myEndLine
 	bes1*4:9 | \myEndLine
-	ees1*4:9 | \myEndLine
+	ees1*4:7 | \myEndLine
 	aes1*2:6 | c1*2:7 | \myEndLine
 	\endPart
 
-	\mark "A (Bright Latin)"
+	\myMark "A"
+	%%\mark "Bright Latin"
 	\startPart
 	c1*4:7 | \myEndLine
 	c1*4:7 | \myEndLine
@@ -88,6 +98,7 @@
 % if part=='VoiceReal':
 \relative c'' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\set Staff.timeSignatureFraction=#'(2 . 2)
 	\tempo "Prestissimo" 4 = 220
 	\time 4/4
 	\key f \minor
@@ -114,29 +125,58 @@
 }
 % endif
 
-% if part=='LyricsReal':
+% if part=='LyricsInet':
 %% these lyrics are from the Internet and adjusted for this tune...
 \lyricmode {
 	%% A part
-	Night and stars ab -- ove that shine so bright
-	The mys -- t'ry of their fa -- ding light
-	That shines u -- pon our ca -- ra -- van
+	Night __ and stars ab -- ove that shine so bright __
+	The mys -- t'ry of their fa -- ding light __
+	That shines u -- pon our Ca -- ra -- van __
 	%% B part
-	This is so exciting, you are so inviting
-	Resting in my arms
-	As I thrill to the magic charms
+	This is so exciting, __ _ _ _
+	you are so inviting __ _ _ _ _
+	Res -- ting in my_arms __
+	As I thrill to the magic charms __ _ _
 	%% A part
-	Of you beside me here, beneath the blue
-	My dream of love is coming true
-	Within our desert caravan
+	Of_you be -- side me here, be -- neath the blue __
+	My dream of love is com -- ing true __
+	With -- in our de -- sert Ca -- ra -- van __
+}
+% endif
+
+% if part=='LyricsmoreInet':
+\lyricmode {
+	%% A part
+	Sleep __ u -- pon my shou -- lder as we creep __
+	Ac -- ross the sand so I may keep __
+	This mem -- 'ry of our Ca -- ra -- van __
+}
+% endif
+
+% if part=='LyricsReal':
+%% these lyrics are from the Ella Firtgerald performance and adjusted for this tune...
+\lyricmode {
+	%% A part
+	Night __ and stars that shine ab -- ove so bright __
+	The ma -- gic of their fa -- ding light __
+	That shines u -- pon our Ca -- ra -- van __
+	%% B part
+	You are so exciting, __ _ _ _
+	This is so inviting __ _ _ _ _
+	Res -- ting in my_arms __
+	As I thrill to the magic charms __ _ _
+	%% A part
+	Of_you be -- side me here, be -- neath the blue __
+	My dream of love is com -- ing true __
+	With -- in our de -- sert Ca -- ra -- van __
 }
 % endif
 
 % if part=='LyricsmoreReal':
 \lyricmode {
 	%% A part
-	Sleep u -- pon my shou -- lder as we creep
-	Ac -- ross the sand so I may keep
-	This mem -- 'ry of our ca -- ra -- van
+	Sleep __ u -- pon my shou -- lder as we creep __
+	Ac -- ross the sand so I may keep __
+	This mem -- 'ry of our Ca -- ra -- van __
 }
 % endif

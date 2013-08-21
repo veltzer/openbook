@@ -15,7 +15,7 @@
 	attributes['piece']=""
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
-	attributes['completion']="1"
+	attributes['completion']="0"
 	attributes['uuid']="f3f8f010-3fda-11e2-ad72-a3725b0aaeaa"
 	attributes['structure']="AB"
 	attributes['remark']=""
