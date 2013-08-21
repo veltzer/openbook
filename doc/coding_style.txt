@@ -144,6 +144,8 @@ Lyrics:
 	lyrics to come out wrong, instead I used single quotation marks (').
 - Lyrics and midi
 	- I did not render the lyrics for midi. It seems that could be beneficial for Karaoke or various other uses. In any case I have yet to see this work right since timidity does not render it well (could be a problem with timidity or maybe a problem with lilyponds rendering of the lyrics for midi...).
+- Song titles in lyrics
+	- When a song's title occurs in the lyrics, the initial letters of each word of the title should be capitalized. For example: "Don't know why there's no sun up in the sky, Stormy Weather,"
 
 Completeness:
 =============
