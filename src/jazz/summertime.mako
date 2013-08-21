@@ -5,7 +5,7 @@
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
 	attributes['doLyricsmore']=True
-	attributes['render']="Aebersold"
+	attributes['render']="Fake"
 
 	attributes['title']="Summertime"
 	attributes['style']="Jazz"
@@ -88,6 +88,24 @@
 }
 % endif
 
+% if part=='ChordsFake':
+\chordmode {
+	\startChords
+	\startSong
+	\partial 2
+	\myMark "A"
+	s2 | a:m6 e:7/b | a:m6/c e:7/b | a:m6 e:7/b | a:m6 e4:7/b a:m6 | d2:m f |
+	f2.:maj7 dis4:dim | e2 b:7 | e e8:m6 e4.:7.5- | a2:m6 e:7/b | a:m6 e:7/b |
+	a:m6 e:7/b | a:m d:7 | c a:m | d d:m7/g | a1:m | a2:m a:m7+ |
+	a:m6 a:m7+ | d:9 e:5+ | a2.:m6 e4:7/b | a2:m6/c e:7/b | a:m6 e:7/b |
+	a:m6/c e4:7/b a:m6 | d2:m f | f2.:maj dis4:dim | e2 b:7 | e e4:m6 e:7.5- |
+	a2:m6 e:7/b | a:m6/c e:7/b | a:m6 e:7/b | a:m d:7 | c a:m |
+	d d:m7/g | a1:m | d2 f | c f:9 | bes e:13.11 | a1:m |
+	\endSong
+	\endChords
+}
+% endif
+
 % if part=='VoiceAebersold':
 \relative c'' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -110,6 +128,26 @@
 	}
 }
 % endif
+
+% if part=='VoiceFake':
+\relative c'' {
+	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Moderato" 4 = 108
+	\time 2/2
+	\key a \minor
+
+	\partial 2
+
+	e4 c | e1~ | e8 r d8. c16 d8. e16 c4 | a2 e~ | e4 r e' c | d8 d4.~ d2 |
+	r4 c8. a16 c8. a16 c4 | b1~ | b2 r8 e4 c8 | e8 c4 e8~ e2 | r4 d8. c16 d8. e16 c4 |
+	a2 e~ | e r4 e | g e8 g a4 c | e8 d4. c2 | a1~ | a1~ |
+	a4 r4 r2 | r \times 2/3 { e'4 e c } | e4 e2. | r8. e16 d8. c16 d8. e16 c4 | a2 e~ |
+	e e'4 c | d8 d4 d8~ d2 | r4 c8. a16 c8. a16 c4 | b1~ | b2 r8 e e c |
+	e8 e4.~ e2 | r4 d8. c16 d8. e16 c4 | a2 e~ | e r4 e | g e8 g a4 c |
+	e8 d4. c2 | a1~ | a1~ | a1~ | a1~ | a2. r4 |
+}
+% endif
+
 
 % if part=='LyricsAebersold':
 %% these lyrics are from the Internet and adjusted for this tune...
@@ -138,5 +176,33 @@
 	But_till that morn -- ing __
 	There's a -- 'no -- thing can harm you __
 	With da -- ddy and ma -- mma st -- an -- ding by __
+}
+% endif
+
+% if part=='LyricsFake':
+\lyricmode {
+	Sum -- mer -- time __
+	an' the li -- vin' is ea -- sy, __
+	fish are jum -- pin'; __
+	an' the cot -- ton is high. __
+
+	Oh yo' dad -- dy's rich, __
+	an' your ma is good look -- in', __
+	so hush lit -- tle ba -- by, __
+	don' _ __ yo' cry. __
+
+	One of these morn -- in's __
+	you goin' to rise _ __ up sing -- in', __
+	then you'll spread you' wings __
+	an' you'll take to the sky. __
+
+	But 'til that morn -- in' __
+	there's a -- noth -- in' can harm you __
+	with da -- dy an' mam -- my stand _ -- in' by. __
+}
+% endif
+
+% if part=='LyricsmoreFake':
+\lyricmode {
 }
 % endif
