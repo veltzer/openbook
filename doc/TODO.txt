@@ -1,8 +1,11 @@
 Now:
 ====
+- remove the warnings of the israeli and rock book.
+	make the script stop and not produce output if there
+	are any warnings. 
 - somehow, just the creation of the rockbook creates midi.
 	Investigate and make sure that it does not happen.
-- stop stroing pdfs in the epdf section. store page numbers and
+- stop storing pdfs in the epdf folder. store page numbers and
 	have an extract program to extract the right pages from
 	a collection of real books which is out of the git tree.
 - move to using the Jazz font in this project.
