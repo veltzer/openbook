@@ -25,7 +25,7 @@
 	attributes['uuid']="160af5b0-ebe1-11e2-937c-bb8193c610fc"
 	# my own (the structure in the new real book claims ABC which is totally wrong)
 	attributes['structure']="AABA"
-	attributes['location']="the new real book volume III, page 73"
+	attributes['location']="nrbk3:73"
 
 	attributes['idyoutuberemark']="A great performance by Ella"
 	attributes['idyoutube']="s4VjltPMfds"
