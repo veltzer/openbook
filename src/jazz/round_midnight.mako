@@ -128,7 +128,7 @@
 % if part=='LyricsReal':
 \lyricmode {
 	%% A part
-	It be -- gins to tell, 'round midnight, mid _ _ -- night.
+	It be -- gins to tell, 'round midnight, mid -- _ _ night.
 	I do pre -- tty well, till af -- _ _ ter sun -- _ _ down,
 	Sup -- per -- time I'm fee -- lin' sad; _ _ _ _ _
 	But it real -- ly gets _ _ _ bad, 'round mid -- night.
@@ -141,7 +141,7 @@
 	You're out of my heart,
 	And I'm out of my mind. _ _ _
 	%% A part
-	Let our hearts take wings' 'round midnight, mid _ _ -- night.
+	Let our hearts take wings' 'round midnight, mid -- _ _ night.
 	Let the an -- gels sing, for your -- _ _ re tur -- _ _ ning.
 	Till our love is safe and sound. _ _ _ _ _
 	And old mid -- _ _ night comes a -- round.
@@ -151,7 +151,7 @@
 % if part=='LyricsmoreReal':
 \lyricmode {
 	%% A part
-	Memo -- ries al -- ways start 'round midnight, mid _ _ -- night.
+	Memo -- ries al -- ways start 'round midnight, mid -- _ _ night.
 	Ha -- ven't got the heart to stand -- _ _ those me -- _ _ mories,
 	When my heart is still with you, _ _ _ _ _
 	And ol'

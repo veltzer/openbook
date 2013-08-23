@@ -146,7 +146,7 @@
 	The star -- less night, __
 	we're not in vain;
 	For we're to -- geth -- er, and what is there
-	to fear to _ _ _ -- geth -- er. __
+	to fear to -- _ _ _ geth -- er. __
 
 	%% B part
 	Our love __ is as deep as the sea, __

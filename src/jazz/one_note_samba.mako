@@ -115,14 +115,14 @@
 %% these are lyrics copied from the internet and adjusted for real book
 \lyricmode {
 	%% part A
-	This is just a lit __ -- tle sam __ -- ba
-	built up -- on a sin __ -- gle note. __
-	Oth -- er notes are bound __ to fol __ -- low
+	This is just a lit -- __ tle sam -- __ ba
+	built up -- on a sin -- __ gle note. __
+	Oth -- er notes are bound __ to fol -- __ low
 	but the root is still __ that note. __
 
-	Now the new one is __ the con __ -- sequence __
+	Now the new one is __ the con -- __ sequence __
 	of the one we've just __ been through __
-	as I'm bound to be __ the un __ -- a -- void __ -- a -- ble
+	as I'm bound to be __ the un -- __ a -- void -- __ a -- ble
 	con -- se -- quence __ of you. __
 
 	%% part B

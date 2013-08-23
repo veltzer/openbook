@@ -40,11 +40,14 @@ if os.path.isfile(p_pdf):
 # run the command
 args=[]
 args.append('lilypond')
+args.append('--loglevel=WARN')
 args.append('--ps')
 args.append('--pdf')
 args.append('--output='+p_out)
 args.append(p_ly)
-system_check_output(args)
+# to make sure that lilypond shuts up...
+#system_check_output(args)
+subprocess.check_output(args)
 
 # chmod the results
 os.chmod(p_ps,0444)

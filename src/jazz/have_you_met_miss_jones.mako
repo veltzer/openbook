@@ -99,10 +99,13 @@
 	\key f \major
 
 	%% the first two "A" parts...
-	\repeat "unfold" 2 {
-	a4 d, c d | c2. r4 | d e f g | a bes c2 |
-	d4 g, f g | f2. a4 | }
-	\alternative { { bes1~ | bes2. r4 |} { c1~ | c4 d d d | } }
+	\repeat unfold 2 {
+		a4 d, c d | c2. r4 | d e f g | a bes c2 |
+		d4 g, f g | f2. a4 |
+	} \alternative {
+		{ bes1~ | bes2. r4 |}
+		{ c1~ | c4 d d d | }
+	}
 
 	%% B part...
 	c4 bes f g | aes aes aes aes | aes ges des ees | e! e e e |

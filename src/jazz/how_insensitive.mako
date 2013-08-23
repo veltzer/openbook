@@ -126,7 +126,7 @@
 \lyricmode {
 	%% part "A"
 	How __ In -- sen -- si -- tive __ I must have seemed __ when she told me that __ she loved me. __
-	How __ un -- moved and cold __ I must have seemed __ when she told me so sin -- cere __ -- ly. __
+	How __ un -- moved and cold __ I must have seemed __ when she told me so sin -- cere -- __ ly. __
 	Why, __ she must have asked, __ did I just turn __ and stare in i -- cy si -- lence? __
 	What __ was I to say? __ What can you say __ when a love af -- fair is o -- ver? __
 }
@@ -210,12 +210,12 @@
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 	%% A part
-	How __ In -- sen __ -- si -- tive __ I must __ have seemed __ when she told me that __ she loved __ me. __
-	How __ un -- moved __ and cold __ I must __ have seemed __ when she told me so __ sin -- cere __ -- ly. __
-	Why, __ she must __ have asked, __ did I __ just turn __ and stare in i __ -- cy si -- lence? __
-	What __ was I __ to say? __ What can __ you say __ when a love __ af -- fair __ is o __ -- ver? __
+	How __ In -- sen -- __ si -- tive __ I must __ have seemed __ when she told me that __ she loved __ me. __
+	How __ un -- moved __ and cold __ I must __ have seemed __ when she told me so __ sin -- cere -- __ ly. __
+	Why, __ she must __ have asked, __ did I __ just turn __ and stare in i -- __ cy si -- lence? __
+	What __ was I __ to say? __ What can __ you say __ when a love __ af -- fair __ is o -- __ ver? __
 	%% Voltas
-	_ af -- fair __ is o __ -- ver? __
+	_ af -- fair __ is o -- __ ver? __
 }
 % endif
 
@@ -224,7 +224,7 @@
 	%% B part
 	Now, __ she's gone __ a -- way __ and I'm __ a -- lone __ with the mem -- 'ry of __ her last __ look. __
 	Vague __ _ drawn __ and sad, __ I see __ it still, __ all her heart- break in __ that last __ look. __
-	How, __ she must __ have asked, __ could I __ just turn __ and stare in i __ -- cy si -- lence? __
+	How, __ she must __ have asked, __ could I __ just turn __ and stare in i -- __ cy si -- lence? __
 	What __ was I __ to do? __ What can __ one do __ when a love __
 }
 % endif
