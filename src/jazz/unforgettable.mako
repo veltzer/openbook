@@ -101,7 +101,7 @@
 	Un -- for -- get -- ta -- ble, __ in ev -- 'ry way, __
 	and for -- ev -- er more, __ that's how you'll stay. __
 	That's why, dar -- ling, it's in -- cred -- i -- ble,
-	that some -- one so Un -- for -- get __ -- ta -- ble,
-	thinks that I am Un -- for -- get __ -- ta -- ble too. __
+	that some -- one so Un -- for -- get -- __ ta -- ble,
+	thinks that I am Un -- for -- get -- __ ta -- ble too. __
 }
 % endif

@@ -198,7 +198,7 @@
 
 	But 'til that morn -- in' __
 	there's a -- noth -- in' can harm you __
-	with da -- dy an' mam -- my stand _ -- in' by. __
+	with da -- dy an' mam -- my stand -- _ in' by. __
 }
 % endif
 

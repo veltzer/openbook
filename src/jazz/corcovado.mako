@@ -114,21 +114,21 @@
 \lyricmode {
 	Qui -- et __ nights of qui -- et stars,
 	qui -- et __ chords from my gui -- tar __
-	float -- ing on __ the si __ -- lence that sur -- rounds __ us __
+	float -- ing on __ the si -- __ lence that sur -- rounds __ us __
 
 	Qui -- et __ thoughts and qui -- et dreams __
 	qui -- et __ walks by qui -- et streams,
-	and a __ win -- dow look -- ing on __ the mount __ -- tains and the sea. __
-	How love __ -- ly!
+	and a __ win -- dow look -- ing on __ the mount -- __ tains and the sea. __
+	How love -- __ ly!
 
 	This is __ where I want to be, __
 	here with you so close to me, __
-	un -- til __ the fina -- al flick -- er __ of life's em __ -- ber. __
+	un -- til __ the fina -- al flick -- er __ of life's em -- __ ber. __
 
 	I who __ was lost and lone -- ly, __ __
 %% there is a warning on the next line from lilypond...
-%%	be -- liev __ -- ing life was on -- ly
+%%	be -- liev -- __ ing life was on -- ly
 %%	a bit -- ter tra -- gic joke have found with you
-%%	the mean __ -- ing of ex -- is -- tence, oh, __ my love. __
+%%	the mean -- __ ing of ex -- is -- tence, oh, __ my love. __
 }
 % endif

@@ -74,7 +74,7 @@
 	g2 gis:dim7 | a:m7 d:9 | g e:7 |
 	a:m7 d:9 | g e:7 | a:m7 d:7.5+.9- | g1 |
 	a2:m7 d:7.5+.9- | g a4:m7 aes:maj7 |
-	\partial 2.
+	\time 3/4
 	g:maj7 c g4:6 |
 	\endPart
 	\endSong
@@ -113,7 +113,7 @@
 	d2.~ d8 ais16 b | d8 b d cis c4 ais8 b | d d,4.~ d2 |
 	a'8. a16 a8. a16 a4~ a8 g16 e | g8 d4.~ d2 | c8 e g ais~ ais4. ais8 | b g4.~ g2 |
 	c,8 e g ais~ ais4. ais8 | b g4.~ g2~ |
-	\partial 2.
+	\time 3/4
 	g2. |
 }
 % endif

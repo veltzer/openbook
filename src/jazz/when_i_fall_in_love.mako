@@ -81,9 +81,9 @@
 		ees c:7.9-.5+ | f:m7 bes:7 |
 	} \alternative {
 		{ ees c:m7 | f:m7 bes:7.9- | }
-		{ ees1*2 | } \myEndLine
-		\endPart
+		{ ees1*2 | \myEndLine }
 	}
+	\endPart
 
 	\endSong
 	\endChords

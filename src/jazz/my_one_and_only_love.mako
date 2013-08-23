@@ -152,8 +152,8 @@
 
 	%% B part
 	The touch __ of your hand __ is like heav -- en, __
-	a heav __ -- en that I've __ nev -- er known.
-	The blush __ on your cheek when -- ev __ -- er I speak
+	a heav -- __ en that I've __ nev -- er known.
+	The blush __ on your cheek when -- ev -- __ er I speak
 	tell me that you are my own.
 
 	%% A part
