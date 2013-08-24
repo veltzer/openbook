@@ -47,10 +47,7 @@
 		ees1 | g2:7/d g:7 | c2.:m c4:m7 | bes2:m7 ees:7 | aes1 |
 		c2:7/g c:7 | f1:7 | f2:m7.5-/bes bes:7 | ees1 | ees:7 |
 		aes | aes:m6 |
-
-
-	}
-	\alternative {
+	} \alternative {
 		{
 			ees:maj7 | c:7.9- | f:m7 |
 			bes:7 |
@@ -60,11 +57,13 @@
 		}
 	}
 	\endPart
+
 	\myMark "B"
 	\startPart
 	f2:m7 bes:7 | ees4:maj9 ees2.:6 | f2:m7 bes:7 | ees2:maj9 ees:6 |
 	a:m7 d:7 | g:maj7 g:6 | f1:m7 | b2:7.5- bes4:7 bes:7.5+ |
 	\endPart
+
 	\myMark "A"
 	\startPart
 	ees1 |
@@ -73,6 +72,8 @@
 	aes | f:9 | f2.:m7 f4:m7.5-/bes | ees1:6 | ees1:6 |
 	\endPart
 
+	\endSong
+	\endChords
 }
 % endif
 
@@ -82,13 +83,14 @@
 	\time 4/4
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	%% \tempo "Presto" 4 = 196
+
 	\partial 4 bes4 |
+
 	\repeat volta 2 {
 		g'2. g4 | g2~ \times 2/3 { g4 bes aes } | g2. g4 | f2 r4 d8 ees | c'2. c4 |
 		bes2~ \times 2/3 { bes4 c bes } | a2. f4 | aes2 r4 g8 aes | bes2~ bes8 g f ees | ees'2. c4 |
 		bes2 aes | r4 ees4 f ees |
-	}
-	\alternative {
+	} \alternative {
 		{
 			bes'1~ | bes4 g c4. g8 | bes1~ |
 			bes2 r4 aes |
@@ -111,14 +113,12 @@
 	Your eyes don't shine __ like they used to shine. And the thrill is
 	gone __ when your lips meet mine. I'm A -- fraid __ The Mas -- que -- rade Is
 	O -- ver And so is love, __ and so is love. __
-	Your
-		love, __ and so is love. __ I
-		guess I'll have to play Pag -- liac -- ci and get my self a clown's dis -- guise, and
-		learn to laugh like Pag -- liac -- ci with tears __ in my eyes. You look the
-		same, __ you're a lot the same, but my heart says, "\"No," __ no, you're
-		not the "same.\"" I'm A -- fraid __ The Mas -- que -- rade Is O -- ver
-		and so is love, __ and so is love. __
-
+	Your love, __ and so is love. __ I
+	guess I'll have to play Pag -- liac -- ci and get my self a clown's dis -- guise, and
+	learn to laugh like Pag -- liac -- ci with tears __ in my eyes. You look the
+	same, __ you're a lot the same, but my heart says, "\"No," __ no, you're
+	not the "same.\"" I'm A -- fraid __ The Mas -- que -- rade Is O -- ver
+	and so is love, __ and so is love. __
 }
 % endif
 
