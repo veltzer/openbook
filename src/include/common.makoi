@@ -670,6 +670,9 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 	\fill-line {
 		\smaller \smaller { "${attributes['tagline']}" }
 	}
+	\fill-line {
+		\smaller \smaller { \with-url #"http://veltzer.net/openbook" http://veltzer.net/openbook }
+	}
 % endif
 }
 
