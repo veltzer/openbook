@@ -62,7 +62,7 @@
 		fis1*3:m | d1 |
 		fis1*2:m | fis2:m e | a1 |
 		d | e | a2 e/gis | fis:m e |
-		d | cis:m | e1*2 |
+		d1 | cis:m | e1*2 |
 		\myEndLine
 		\endBar
 		\mark "Chorus"
