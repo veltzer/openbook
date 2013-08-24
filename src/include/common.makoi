@@ -105,9 +105,9 @@ myChordDefinitions={
 	<c ees ges bes des' fes' aes'>-\markup \super {7alt}
 	<c e g bes f'>-\markup \super {7sus}
 	<c ees ges bes>-\markup { "m" \super { "7 " \flat "5" } }
-	<c ees ges beses>-\markup { "dim7" }
+	<c ees ges beses>-\markup { "dim" \super { "7" } }
 	<c ees ges>-\markup { "dim" }
-	<c e g b>-\markup { "maj7" }
+	%%<c e g b>-\markup { "maj7" }
 	<c e gis bes d'>-\markup { \super { "9 " \sharp "5" } }
 }
 myChordExceptions=#(append
