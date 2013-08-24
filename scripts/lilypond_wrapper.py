@@ -15,6 +15,7 @@ import versioncheck # for checkversion
 
 # parameters
 stopOnOutput=False
+showOutput=True
 
 # this function is here because we want to supress output until we know
 # there is an error (and subprocess.check_output does not do this)
@@ -26,6 +27,9 @@ def system_check_output(args):
 		print(output,end='')
 		print(errout,end='')
 		raise ValueError('error in executing',args)
+	if showOutput:
+		print(output,end='')
+		print(errout,end='')
 
 # first check that we are using the correct version of python
 versioncheck.checkversion()
@@ -50,8 +54,8 @@ remove_output_if_exists()
 # run the command
 args=[]
 args.append('lilypond')
-#args.append('--loglevel=WARN')
-args.append('--loglevel=ERROR')
+args.append('--loglevel=WARN')
+#args.append('--loglevel=ERROR')
 args.append('--ps')
 args.append('--pdf')
 args.append('--output='+p_out)

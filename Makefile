@@ -29,8 +29,8 @@ DO_WAV?=0
 DO_MP3?=0
 # should we make ogg ?
 DO_OGG?=0
-# should we do the full book ?
-DO_BOOK?=1
+# should we do the full books ?
+DO_BOOKS_PDF?=1
 
 # where are the sources located ?
 SOURCE_DIR:=src
@@ -153,13 +153,13 @@ endif
 ifeq ($(DO_MAKO_DEPS),1)
 	ALL:=$(ALL) $(FILES_MAKO_DEPS)
 endif
+ifeq ($(DO_PS),1)
+	ALL:=$(ALL) $(FILES_PS)
+endif
 ifeq ($(DO_PDF),1)
 	ALL:=$(ALL) $(FILES_PDF)
 endif
 ifeq ($(DO_PNG),1)
-endif
-ifeq ($(DO_PS),1)
-	ALL:=$(ALL) $(FILES_PS)
 endif
 ifeq ($(DO_MIDI),1)
 	ALL:=$(ALL) $(FILES_MIDI)
@@ -176,8 +176,8 @@ endif
 ifeq ($(DO_OGG),1)
 	ALL:=$(ALL) $(FILES_OGG)
 endif
-ifeq ($(DO_BOOK),1)
-	ALL:=$(ALL) $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(IL_OUT_LY) $(IL_OUT_PS) $(IL_OUT_PDF) $(RK_OUT_LY) $(RK_OUT_PS) $(RK_OUT_PDF)
+ifeq ($(DO_BOOKS_PDF),1)
+	ALL:=$(ALL) $(OB_OUT_PDF) $(IL_OUT_PDF) $(RK_OUT_PDF)
 endif
 
 .PHONY: all
@@ -317,8 +317,12 @@ check_include:
 check_threeunderscores:
 	$(info doing [$@])
 	$(Q)./scripts/ok_wrapper.pl grep "___" $(FILES_MAKO)
+.PHONY: check_bad_lyric_breakup
+check_bad_lyric_breakup:
+	$(info doing [$@])
+	$(Q)./scripts/ok_wrapper.pl grep "_ --" $(FILES_MAKO)
 .PHONY: check_all
-check_all: check_empty_copyright check_ws check_and check_extra_files check_min_chords check_uuid check_chordChanges check_bar check_break check_completion check_include check_threeunderscores check_mark
+check_all: check_empty_copyright check_ws check_and check_extra_files check_min_chords check_uuid check_chordChanges check_bar check_break check_completion check_include check_threeunderscores check_mark check_bad_lyric_breakup
 
 # rules
 
@@ -362,21 +366,21 @@ $(FILES_MP3): %.mp3: %.midi $(MIDI2MP3_WRAPPER_DEP) $(ALL_DEP)
 .PHONY: books
 books: $(OB_OUT_PDF) $(IL_OUT_PDF) $(RK_OUT_PDF) $(ALL_DEP)
 	$(info doing [$@])
-$(OB_OUT_PS) $(OB_OUT_PDF): $(OB_OUT_LY) $(BOOK_WRAPPER_DEP) $(ALL_DEP)
+$(OB_OUT_PDF) $(OB_OUT_PS): $(OB_OUT_LY) $(BOOK_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)$(BOOK_WRAPPER) $(OB_OUT_PS) $(OB_OUT_PDF) $(OB_OUT_BASE) $(OB_OUT_LY)
 $(OB_OUT_LY): $(OB_OUT_FILES) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
 	$(Q)$(MAKO_BOOK_WRAPPER) $(OB_OUT_LY) "$(OB_OUT_PATTERN)"
-$(IL_OUT_PS) $(IL_OUT_PDF): $(IL_OUT_LY) $(BOOK_WRAPPER_DEP) $(ALL_DEP)
+$(IL_OUT_PDF) $(IL_OUT_PS): $(IL_OUT_LY) $(BOOK_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)$(BOOK_WRAPPER) $(IL_OUT_PS) $(IL_OUT_PDF) $(IL_OUT_BASE) $(IL_OUT_LY)
 $(IL_OUT_LY): $(IL_OUT_FILES) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
 	$(Q)$(MAKO_BOOK_WRAPPER) $(IL_OUT_LY) "$(IL_OUT_PATTERN)"
-$(RK_OUT_PS) $(RK_OUT_PDF): $(RK_OUT_LY) $(BOOK_WRAPPER_DEP) $(ALL_DEP)
+$(RK_OUT_PDF) $(RK_OUT_PS): $(RK_OUT_LY) $(BOOK_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)$(BOOK_WRAPPER) $(RK_OUT_PS) $(RK_OUT_PDF) $(RK_OUT_BASE) $(RK_OUT_LY)
 $(RK_OUT_LY): $(RK_OUT_FILES) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
