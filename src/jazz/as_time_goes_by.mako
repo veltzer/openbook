@@ -133,7 +133,7 @@
 	And _
 	%% B part
 	Moon -- light and love __ songs- nev -- er out of date
-	Hearts full of pas __ -- sion- jea -- lou -- sy and hate
+	Hearts full of pas -- __ sion- jea -- lou -- sy and hate
 	Wo -- men needs man- __ and man must have his mate
 	That no one can de -- ny
 	%% A part

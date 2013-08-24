@@ -2,12 +2,12 @@ Now:
 ====
 - release the stopOnOutput flag in script/lilypond_wrapper.py
 	and make all the stuff compile.
-- release the level in script/lilypond_wrapper.py to warning
-	and not to error and make all the stuff compile.
 - improve the script/lilypond_wrapper to get a --nomidi option
 	to disable midi production.
 		At first shot do this by removing the midi
 		after the lilypond run (just like the perl script).
+- improve the script/lilypond_wrapper to be able to generate just
+	pdf with no ps.
 - stop storing pdfs in the epdf folder. store page numbers and
 	have an extract program to extract the right pages from
 	a collection of real books which is out of the git tree.
