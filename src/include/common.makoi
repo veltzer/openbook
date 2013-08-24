@@ -252,13 +252,35 @@ ${self.defs()}
 				\null
 				\null
 				\null
-				\fill-line { \huge \bold "Website: http://www.veltzer.net/openbook" }
+				\fill-line {
+					\huge \bold \concat {
+						"Website: "
+						\with-url #"http://veltzer.net/openbook" http://veltzer.net/openbook
+					}
+				}
 				\null
-				\fill-line { \huge \bold "Development: https://github.com/veltzer/openbook" }
+				\fill-line {
+					\huge \bold \concat {
+						"Development: "
+						\with-url #"https://github.com/veltzer/openbook" https://github.com/veltzer/openbook
+					}
+				}
 				\null
-				\fill-line { \huge \bold "Lead developer: Mark Veltzer <mark.veltzer@gmail.com>" }
+				\fill-line {
+					\huge \bold \concat {
+						"Lead developer: Mark Veltzer "
+						"<" \with-url #"mailto:mark.veltzer@gmail.com" mark.veltzer@gmail.com ">"
+					}
+				}
 				\null
-				\fill-line { \huge \bold "Typesetting copyright: © 2011-${attributes['year']} Mark Veltzer <mark.veltzer@gmail.com>" }
+				\fill-line {
+					\huge \bold \concat {
+						"Typesetting copyright: © 2011-"
+						${attributes['year']}
+						" Mark Veltzer "
+						"<" \with-url #"mailto:mark.veltzer@gmail.com" mark.veltzer@gmail.com ">"
+					}
+				}
 				\null
 				\fill-line { \huge \bold "Tune copyright: © belong to their respective holders" }
 				\null
