@@ -40,26 +40,26 @@
 
 	\myMark "A"
 	\startPart
-	a1:m | a:m/gis | a:m7/g | a:m/fis |
-	c2:7 a:7.9- | d:m7 g:7 | c1:6 | b2:m7.5- e:7.9-.13- |
+	a1:m | e1:5+/gis | c1/g | d2.:9/fis f4:m | c1 |
+	f2:9 g:5+ | c1 | c1 |
 	\endPart
 	\myMark "A"
 	\startPart
-	a1:m | a:m/gis | a:m7/g | a:m/fis |
-	c2:7 a:7.9- | d:m7 g:7 | c1:6 | c:6 |
+	a1:m | e1:5+/gis | c1/g | d2.:9/fis f4:m | c1 |
+	f2:9 g:5+ | c1 | c1 |
 	\endPart
 	\myMark "B"
 	\startPart
-	c1:6 | g2:sus7.9- c:6 | g2:sus7.9- c:6 | g2:7 c:6 |
+	c1 | f2:m c | f2:m c | f2:m c |
 	\endPart
 	\myMark "B"
 	\startPart
-	c1:6 | g2:sus7.9- c:6 | g2:sus7.9- c:6 | g2:7 c:6 |
+	c1 | f2:m c | f2:m c | g:7 c4 e:5+ |
 	\endPart
 	\myMark "A"
 	\startPart
-	a1:m | a:m/gis | a:m7/g | a:m/fis |
-	c2:7 a:7.9- | d:m7 g:7 | c1:6 | b2:m7.5- e:7.9-.13- |
+	a1:m | e1:5+/gis | c1/g | d2.:9/fis f4:m | c1 |
+	f2:9 g:5+ | c1 | c1 |
 	\endPart
 	\endChords
 	\endSong
@@ -73,16 +73,16 @@
 	\time 4/4
 	\key a \minor
 
-	a,2 e' | r d8 c d4 | e1 | r2 \times 2/3 { d4 c d } |
+	a,2 e' | r d8 c d4 | e1 | r2 d8 c d4 |
 	e2 g, | r g8 a4. | c1~ | c |
 
-	a2 e' | r d8 c d4 | e1 | r2 \times 2/3 { d4 c d } |
+	a2 e' | r d8 c d4 | e1 | r2 d8 c d4 |
 	e2 g, | r g8 a4. | c1~ | c |
 
 	c8 d e f g2 | aes8 g f4 g2 | f8 e d4 e2 | d8 c b4 c2 |
 	c8 d e f g2 | aes8 g f4 g2 | f8 e d4 e2 | \times 2/3 { d4 c b } c2 |
 
-	a2 e' | r d8 c d4 | e1 | r2 \times 2/3 { d4 c d } |
+	a2 e' | r d8 c d4 | e1 | r2 d8 c d4 |
 	e2 g, | r g4 a4 | c1~ | c |
 }
 % endif
