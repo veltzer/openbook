@@ -1,10 +1,12 @@
 Now:
 ====
+- release the stopOnOutput flag in script/lilypond_wrapper.py
+	and make all the stuff compile.
+- release the level in script/lilypond_wrapper.py to warning
+	and not to error and make all the stuff compile.
 - remove the warnings of the israeli and rock book.
 	make the script stop and not produce output if there
 	are any warnings. 
-- somehow, just the creation of the rockbook creates midi.
-	Investigate and make sure that it does not happen.
 - stop storing pdfs in the epdf folder. store page numbers and
 	have an extract program to extract the right pages from
 	a collection of real books which is out of the git tree.

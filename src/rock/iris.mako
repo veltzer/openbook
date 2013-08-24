@@ -99,7 +99,7 @@
 		${defs.chordDefs()}
 		${chords()}
 	>>
-	\midi {}
+	%%\midi {}
 	\layout {}
 }
 

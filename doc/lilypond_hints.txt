@@ -276,3 +276,8 @@ meta data:
 	look at the subtitle of "A Foggy Day" if you want to see an example. You can try to change it
 	to double quotes to see what happens and try to fix the system to support double quotes (maybe
 	through a python function to quote strings?!?)
+
+command line:
+=============
+- I couldn't find any command line to stop lilypond to from producing midi. If I do ever
+	find a way to do that it could help me in my wrapper scripts for lilypond.

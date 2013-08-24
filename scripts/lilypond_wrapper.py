@@ -1,13 +1,20 @@
 #!/usr/bin/python
 
-# run lilypond to produce the book
-# lilypond --ps --pdf --output=$(OUT_BASE) $(OUT_LY)
+"""
+wrapper to run lilypond.
+run lilypond to produce the book
+lilypond --ps --pdf --output=$(OUT_BASE) $(OUT_LY)
+"""
 
+from __future__ import print_function
 import sys # for argv
 import os # for chmod
 import subprocess # for Popen
 import os.path # for isfile
 import versioncheck # for checkversion
+
+# parameters
+stopOnOutput=False
 
 # this function is here because we want to supress output until we know
 # there is an error (and subprocess.check_output does not do this)
@@ -15,9 +22,9 @@ def system_check_output(args):
 	pr=subprocess.Popen(args,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
 	(output,errout)=pr.communicate()
 	status=pr.returncode
-	if status:
-		print output
-		print errout
+	if status or (stopOnOutput and (output!='' or errout!='')):
+		print(output,end='')
+		print(errout,end='')
 		raise ValueError('error in executing',args)
 
 # first check that we are using the correct version of python
@@ -32,23 +39,30 @@ p_out=sys.argv[3]
 p_ly=sys.argv[4]
 
 # remove the target files, do nothing if they are not there
-if os.path.isfile(p_ps):
-	os.unlink(p_ps)
-if os.path.isfile(p_pdf):
-	os.unlink(p_pdf)
+def remove_output_if_exists():
+	if os.path.isfile(p_ps):
+		os.unlink(p_ps)
+	if os.path.isfile(p_pdf):
+		os.unlink(p_pdf)
+
+remove_output_if_exists()
 
 # run the command
 args=[]
 args.append('lilypond')
-args.append('--loglevel=WARN')
+#args.append('--loglevel=WARN')
+args.append('--loglevel=ERROR')
 args.append('--ps')
 args.append('--pdf')
 args.append('--output='+p_out)
 args.append(p_ly)
-# to make sure that lilypond shuts up...
-#system_check_output(args)
-subprocess.check_output(args)
-
-# chmod the results
-os.chmod(p_ps,0444)
-os.chmod(p_pdf,0444)
+try:
+	# to make sure that lilypond shuts up...
+	#subprocess.check_output(args)
+	system_check_output(args)
+	# chmod the results
+	os.chmod(p_ps,0444)
+	os.chmod(p_pdf,0444)
+except Exception,e:
+	remove_output_if_exists()
+	raise e

@@ -104,12 +104,12 @@
 	Do you really want to live forever?
 }
 >>
-	\midi {
-		\context {
-			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
-		}
-	}
+	%%\midi {
+	%%	\context {
+	%%		\Score
+	%%		tempoWholesPerMinute = #(ly:make-moment 130 4)
+	%%	}
+	%%}
 	\layout {}
 }
 % endif

@@ -128,13 +128,13 @@
 	A kiss is still a kiss
 	A sigh is still a sigh
 	The fun -- da -- men -- tal things app -- ly
-	As Time Goes By
+	As Time Goes By __
 	%% A part
 	And _
 	%% B part
-	Moon -- light and love songs- nev -- er out of date
-	Hearts full of pas -- sion- jea -- lou -- sy and hate
-	Wo -- men needs man- and man must have his mate
+	Moon -- light and love __ songs- nev -- er out of date
+	Hearts full of pas __ -- sion- jea -- lou -- sy and hate
+	Wo -- men needs man- __ and man must have his mate
 	That no one can de -- ny
 	%% A part
 	It's still the same old sto -- ry
@@ -152,6 +152,6 @@
 	They still say: "\"I" love "you\""
 	On that you can re -- ly
 	No mat -- ter what the fu -- ture brings
-	As Time Goes _ _ By
+	As Time Goes _ _ By __
 }
 % endif
