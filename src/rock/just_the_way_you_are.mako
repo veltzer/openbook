@@ -123,25 +123,25 @@ PartLyrics=\lyricmode {
 	}
 }
 %% score for midi
-\score {
-	\unfoldRepeats
-	{
-		\new PianoStaff="Melody" <<
-			\new Staff="upper" \PartUpperIntro
-			\new Staff="lower" \PartLowerIntro
-		>>
-		<<
-			%%\new ChordNames="Chords" \PartChords
-			%%\new Frets="Frets" \PartFrets
-			\new Voice = "melody" { \autoBeamOff \PartMelody }
-			\new Lyrics="Lyrics" \lyricsto "melody" \PartLyrics
-			\new PianoStaff="Melody" <<
-				\new Staff="uppervoice" \PartUpperVoice
-				\new Staff="lowervoice" \PartLowerVoice
-			>>
-		>>
-	}
-	\midi {
-	}
-}
+%%\score {
+%%	\unfoldRepeats
+%%	{
+%%		\new PianoStaff="Melody" <<
+%%			\new Staff="upper" \PartUpperIntro
+%%			\new Staff="lower" \PartLowerIntro
+%%		>>
+%%		<<
+%%			%%\new ChordNames="Chords" \PartChords
+%%			%%\new Frets="Frets" \PartFrets
+%%			\new Voice = "melody" { \autoBeamOff \PartMelody }
+%%			\new Lyrics="Lyrics" \lyricsto "melody" \PartLyrics
+%%			\new PianoStaff="Melody" <<
+%%				\new Staff="uppervoice" \PartUpperVoice
+%%				\new Staff="lowervoice" \PartLowerVoice
+%%			>>
+%%		>>
+%%	}
+%%	\midi {
+%%	}
+%%}
 % endif
