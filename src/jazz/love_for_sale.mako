@@ -115,7 +115,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
-	Love __  For Sale, Ap -- pe -- tiz -- ing young Love For Sale
+	Love __ For Sale, Ap -- pe -- tiz -- ing young Love For Sale
 	Love that's fresh and still un -- spoiled, love that's on -- ly slight -- ly soiled, Love __ For Sale. __
 
 	Who __ will buy? __ Who would like to sam -- ple my sup -- ply? __
