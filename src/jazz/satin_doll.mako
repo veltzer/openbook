@@ -57,7 +57,7 @@
 
 	\myMark "B"
 	\startPart
-	c1 | g2:m7 c:7 | g1:m7 | c:9- | f:maj7 g:m7 |
+	c1 | g2:m7 c:7 | g:m7 c:9- | f:maj7 g:m7 |
 	a:m7 bes:m7 | a:m7 d:7 | a:m7 d:9- | g:7 d:m7 |
 	g1:7 |
 	\endPart
