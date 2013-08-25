@@ -62,7 +62,9 @@
 		\startPart
 		ees:7 | ees:7 | bes:m | bes:m | ees:7 | ees:7 |
 		bes:m | bes:m | ees:m7 | aes:7 | des:7 | ges:7 | c:m7.5- | f:7.5+ |
-		bes:m | bes:m7/aes | g2:m7.5- g:m7.5-/f | ees1:7 | ees2:m7 ees:m7/des | c1:m7.5- |
+		bes:m | bes:m7/aes | \myEndLine
+		g2:m7.5- g:m7.5-/f | ees1:7 | ees2:m7 ees:m7/des | \myEndLine
+			c1:m7.5- |
 		bes:m | ees:7 |
 	} \alternative {
 		{
