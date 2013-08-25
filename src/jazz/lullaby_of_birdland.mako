@@ -111,7 +111,7 @@
 			ees2~ ees8 bes' aes des,~ | des aes' g c,~ c r r4 |
 		}
 		{
-			ees2~ ees8 e f des'~ | des2 c4 c8 aes~ | aes1~ | aes2. r4 |
+			ees2~\repeatTie ees8 e f des'~ | des2 c4 c8 aes~ | aes1~ | aes2. r4 |
 		}
 	}
 }

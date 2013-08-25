@@ -99,7 +99,7 @@
 			a4 b, cis dis | g1 | r4 e fis g |
 		}
 		{
-			a4 fis a g | e1~ | e4 r dis e |
+			a4\repeatTie fis a g | e1~ | e4 r dis e |
 		}
 	}
 
