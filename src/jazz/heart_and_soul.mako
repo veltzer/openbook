@@ -39,13 +39,13 @@
 
 	\myMark "A"
 	\startPart
-	f2 d:m7 | g:m7 c:7 | f d:m | g:m7 c:7 |
-	f d:m | g:m c:7 | f1 | g2:m7 c:9 |
+	f2 d:m7 | g:m7 c:7 | f d:m7 | g:m7 c:7 |
+	f d:m7 | g:m7 c:7 | f1 | g2:m7 c:9 |
 	\endPart
 	\myMark "A"
 	\startPart
-	f d:m7 | g:m7 c:7 | f d:m | g:m7 c:7 |
-	f d:m | g:m c:7 | f1 | f2. f4:7 |
+	f d:m7 | g:m7 c:7 | f d:m7 | g:m7 c:7 |
+	f d:m7 | g:m7 c:7 | f1 | f2. f4:7 |
 	\endPart
 	\myMark "B"
 	\startPart
@@ -55,8 +55,8 @@
 	\myMark "A"
 	\startPart
 	f d:m7 |
-	g:m7 c:7 | f d:m | g:m7 c:7 | f d:m |
-	g1:m7 | a2:7 d:7 g:m7 g4:7 c:7 | f1~ | f |
+	g:m7 c:7 | f d:m7 | g:m7 c:7 | f d:m7 |
+	g2:m7 c:7 | a2:7 d:7 g:m7 g4:7 c:7 | f1~ | f |
 	\endPart
 
 	\endPart
@@ -68,7 +68,7 @@
 % if part=='VoiceFake':
 \relative c' {
 	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Andante Moderato" 4 = 88
+	%% \tempo "Andante Moderato" 4 = 88
 	\time 2/2
 	\key f \major
 	%% part "A"
