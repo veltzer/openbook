@@ -393,7 +393,7 @@ install: $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(WEB_FILES) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)rm -rf $(WEB_DIR)
 	$(Q)mkdir -p $(WEB_DIR)
-	$(Q)cp -r .htaccess index.html $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(WEB_FOLDER) $(WEB_DIR)
+	$(Q)cp -r .htaccess index.html $(OB_OUT_PDF) $(WEB_FOLDER) $(WEB_DIR)
 	$(Q)chmod -R go+rx $(WEB_DIR)
 
 .PHONY: all_tunes
