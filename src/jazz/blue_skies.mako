@@ -40,12 +40,12 @@
 
 	\myMark "A"
 	\startPart
-	a1:m | e1:5+/gis | c1/g | d2.:9/fis f4:m | c1 |
+	a1:m | e1:5+/gis | c1/g | d2.:9/fis f4:m | c1/g |
 	f2:9 g:5+ | c1 | c1 |
 	\endPart
 	\myMark "A"
 	\startPart
-	a1:m | e1:5+/gis | c1/g | d2.:9/fis f4:m | c1 |
+	a1:m | e1:5+/gis | c1/g | d2.:9/fis f4:m | c1/g |
 	f2:9 g:5+ | c1 | c1 |
 	\endPart
 	\myMark "B"
@@ -54,11 +54,11 @@
 	\endPart
 	\myMark "B"
 	\startPart
-	c1 | f2:m c | f2:m c | g:7 c4 e:5+ |
+	c1 | f2:m c | f2:m c | g:7 c4 e:7 |
 	\endPart
 	\myMark "A"
 	\startPart
-	a1:m | e1:5+/gis | c1/g | d2.:9/fis f4:m | c1 |
+	a1:m | e1:5+/gis | c1/g | d2.:9/fis f4:m | c1/g |
 	f2:9 g:5+ | c1 | c1 |
 	\endPart
 	\endChords
@@ -80,7 +80,7 @@
 	e2 g, | r g8 a4. | c1~ | c |
 
 	c8 d e f g2 | aes8 g f4 g2 | f8 e d4 e2 | d8 c b4 c2 |
-	c8 d e f g2 | aes8 g f4 g2 | f8 e d4 e2 | \times 2/3 { d4 c b } c2 |
+	c8 d e f g2 | aes8 g f4 g2 | f8 e d4 e2 | \times 2/3 { d4 c b } c4 b |
 
 	a2 e' | r d8 c d4 | e1 | r2 d8 c d4 |
 	e2 g, | r g4 a4 | c1~ | c |
