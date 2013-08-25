@@ -200,7 +200,7 @@
 			g fis4 f8~ f e4 e8~ | e4. d8~ d2~ | d4 r r2 |
 		}
 		{
-			g8 fis4 f8~ f e4 e8~ | e4. d8~ d2~ | d2.\fermata r4 |
+			g8\repeatTie fis4 f8~ f e4 e8~ | e4. d8~ d2~ | d2.\fermata r4 |
 		}
 	}
 }

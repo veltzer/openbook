@@ -90,7 +90,7 @@
 			d4 r r r8 a |
 		}
 		{
-			d4 r r r8 a' |
+			d4\repeatTie r r r8 a' |
 		}
 	}
 	%% B part
