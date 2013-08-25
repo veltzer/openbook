@@ -105,7 +105,7 @@
 			bes~ | bes4 r r2 |
 		}
 		{
-			bes1~ | bes4 r r2 |
+			bes1~\repeatTie | bes4 r r2 |
 		}
 	}
 }
