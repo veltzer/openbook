@@ -1,5 +1,6 @@
 Now:
 ====
+- make check_all produce a stub and make it a prereq for full build.
 - release the stopOnOutput flag in script/lilypond_wrapper.py
 	and make all the stuff compile.
 - improve the script/lilypond_wrapper to get a --nomidi option
