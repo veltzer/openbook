@@ -7,7 +7,7 @@
 	attributes['render']="Fake"
 
 	attributes['title']="Nice Work If You Can Get It"
-	attributes['title']="(From \\\"A Damsel In Distress\\\")"
+	attributes['subtitle']="(From \\\"A Damsel In Distress\\\")"
 	attributes['style']="Jazz"
 	attributes['composer']="George Gershwin"
 	attributes['poet']="Ira Gershwin"
