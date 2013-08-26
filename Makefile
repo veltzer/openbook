@@ -41,7 +41,7 @@ WEB_DIR:=~/public_html/public/openbook
 # where is the common file?
 COMMON:=src/include/common.makoi
 # wrappers
-LILYPOND_WRAPPER:=scripts/lilypond_wrapper.pl
+LILYPOND_WRAPPER:=scripts/lilypond_wrapper.py
 BOOK_WRAPPER:=scripts/lilypond_wrapper.py
 MAKO_WRAPPER:=scripts/mako_wrapper.py
 MAKO_BOOK_WRAPPER:=scripts/mako_book.py
@@ -62,8 +62,6 @@ ifneq ($(filter clean,$(MAKECMDGOALS)),)
 endif
 
 ALL:=
-
-LYFLAGS:=--ps --pdf --png
 
 ALL_DEP:=
 ifeq ($(DO_ALL_DEP),1)
@@ -336,7 +334,8 @@ $(FILES_MIDI): %.midi: %.stamp $(ALL_DEP)
 $(FILES_STAMP): %.stamp: %.ly $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
-	$(Q)$(LILYPOND_WRAPPER) $< $@ $(LYFLAGS) -o $(dir $@)$(basename $(notdir $@)) $<
+	$(Q)$(LILYPOND_WRAPPER) $(dir $@)$(basename $(notdir $@)).ps $(dir $@)$(basename $(notdir $@)).pdf $(dir $@)$(basename $(notdir $@)) $<
+	$(Q)touch $@
 
 $(FILES_LY): $(OUT_DIR)/%.ly: %.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
@@ -393,7 +392,7 @@ install: $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(WEB_FILES) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)rm -rf $(WEB_DIR)
 	$(Q)mkdir -p $(WEB_DIR)
-	$(Q)cp -r .htaccess index.html $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(WEB_FOLDER) $(WEB_DIR)
+	$(Q)cp -r .htaccess index.html $(OB_OUT_PDF) $(WEB_FOLDER) $(WEB_DIR)
 	$(Q)chmod -R go+rx $(WEB_DIR)
 
 .PHONY: all_tunes
