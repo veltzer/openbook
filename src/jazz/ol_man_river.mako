@@ -18,7 +18,7 @@
 
 	attributes['completion']="5"
 	attributes['uuid']=""
-	attributes['structure']=""
+	attributes['structure']="AA'BA'''"
 
 	attributes['idyoutuberemark']=""
 	attributes['idyoutube']=""
@@ -42,11 +42,23 @@
 	\startPart
 	\repeat volta 2 {
 		ees2 c:m7 | ees aes | ees aes | ees c:m7 |
-		f:m7 bes:9 | f:m7 bes:9 | ees aes:6 | ees1 | ees2 c:m7 |
+		f:m7 bes:9 | f:m7 bes:9 | ees aes:6 | ees1 |
+		\endPart
+		\myMark "A'"
+		\startPart
+		ees2 c:m7 |
 		ees aes | ees c:m | ees ges:dim7 | f:m7 bes:7 |
-		f:m7 bes:9 | ees aes | ees a4:m7.5- d:7 | g2:m d:7.9- | g:m d:7.9- |
+		f:m7 bes:9 | ees aes | ees a4:m7.5- d:7 |
+		\endPart
+		\myMark "B"
+		\startPart
+		g2:m d:7.9- | g:m d:7.9- |
 		g:m d:7.9- | g:m d:7.9- | g:m c:m6 | g:m d:7.9- | g:m d:7.9- |
-		g:m f4:m7 bes:7 | ees2 c:m7 | ees aes | ees bes:9 | c:m7 f:7 |
+		\endPart
+		\myMark "A''"
+		\startPart
+		g:m f4:m7 bes:7 |
+		ees2 c:m7 | ees aes | ees bes:9 | c:m7 f:7 |
 		ees4/bes b:dim c2:m7 | f:m9 bes:7 |
 	} \alternative {
 		{
