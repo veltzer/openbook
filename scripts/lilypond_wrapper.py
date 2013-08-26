@@ -1,10 +1,10 @@
 #!/usr/bin/python
 
-"""
+'''
 wrapper to run lilypond.
 run lilypond to produce the book
 lilypond --ps --pdf --output=$(OUT_BASE) $(OUT_LY)
-"""
+'''
 
 from __future__ import print_function
 import sys # for argv
@@ -32,6 +32,7 @@ stopOnOutput=False
 showOutput=True
 doPs=False
 doPdf=True
+debug=False
 
 # first check that we are using the correct version of python
 versioncheck.checkversion()
@@ -43,6 +44,9 @@ p_ps=sys.argv[1]
 p_pdf=sys.argv[2]
 p_out=sys.argv[3]
 p_ly=sys.argv[4]
+
+if debug:
+	print('arguments are',sys.argv)
 
 # remove the target files, do nothing if they are not there
 def remove_output_if_exists():
