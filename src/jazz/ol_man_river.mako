@@ -18,7 +18,7 @@
 
 	attributes['completion']="5"
 	attributes['uuid']=""
-	attributes['structure']="AA'BA'''"
+	attributes['structure']="AA'BA''"
 
 	attributes['idyoutuberemark']=""
 	attributes['idyoutube']=""
