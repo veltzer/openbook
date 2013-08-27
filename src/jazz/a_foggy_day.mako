@@ -117,12 +117,12 @@
 		f2 f4 f | d2. d4 | c2 c | a a4 bes |
 		c f, g bes | a f g bes | a2 f' | f, g |
 	} \alternative {
-	  {
-		f1~ | f2. r4 |
-	  }
-	  {
-		f1~ | f2. r4 |
-	  }
+		{
+			f1~ | f2. r4 |
+		}
+		{
+			f1~ | f2. r4 |
+		}
 	}
 
 }

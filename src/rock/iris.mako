@@ -56,20 +56,24 @@
 	\chordmode {
 		\time 4/4
 		\startChords
+
 		\mark "Intro"
 		\startPart
 		b8*3:m b8*3:9 b8:9 b:m | g8*3:maj7 g8*3:6 g8*2:6 |
 		\endPart
+
 		\mark "Verse"
 		\startPart
 		d4 e:m g2 | b4:m a g2 |
 		d4 e:m g2 | b4:m a g2 |
 		\endPart
+
 		\mark "Chorus"
 		\startPart
 		b4:m a g2 | b4:m a g2 |
 		b4:m a g2 | b4:m a g2 |
 		\endPart
+
 		\mark "Interlude"
 		\startPart
 		b8*3:m b8*3:9 b8:9 b:m | g8*3:maj7 g8*3:6 g8*2:6 |
@@ -80,6 +84,7 @@
 		b8*3:m b8*3:9 b8:9 b:m | g8*3:maj7 g8*3:6 g8*2:6 |
 		b8*3:m b8*3:9 b8:9 b:m | g8*3:maj7 g8*3:6 g8*2:6 |
 		\endPart
+
 		\endChords
 	}
 </%def>
