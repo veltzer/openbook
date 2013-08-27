@@ -174,7 +174,7 @@
 		{
 			\myMark "C"
 			c1:maj7 | c2:7/bes g4:7 c:7 | f2:maj7 a:7/e | d:m7 dis:dim | \myEndLine
-			e1:m7 | g:7 | c:6 | d2:m7 g:7 | \myEndLine
+			e1:m7 | g:7 | c:6 | c:6 | \myEndLine
 		}
 	}
 
@@ -201,7 +201,7 @@
 		}
 		{
 			c'4 b c d | \times 2/3 { e d c } b bes | a1 | \times 2/3 { c4 b bes } a aes |
-			g1 | \times 2/3 { b4 a aes } g d' | c1~ | c2 r4 <\parenthesize e,>4 |
+			g1 | \times 2/3 { b4 a aes } g d' | c1~ | c2 r2|
 		}
 	}
 }
