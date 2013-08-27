@@ -51,10 +51,16 @@
 		c1*2:m7 | f:m7 | \myEndLine
 		d1:m7.5- | g:7 | c1*2:m7 | \myEndLine
 		ees1:m7 | aes:7 | des1*2:maj | \myEndLine
-		d1:m7.5- | g:7 | c:m7 | d2:m7.5- g:7 | \myEndLine
-		%% remarked to show the repeat sign...
-		%%\endPart
+		d1:m7.5- | g:7 |
+	} \alternative {
+		{
+			c1:m7 | d2:m7.5- g:7 |
+		}
+		{
+			c1:m7 | c:m7 | \myEndLine
+		}
 	}
+	\endPart
 
 	\endSong
 	\endChords
@@ -75,8 +81,17 @@
 		g'4. f8 ees d4 c8~ | c2. bes4 | aes2 g'4. f8~ | f1 |
 		f4. ees8 d c4 bes8~ | bes2. aes4 | g2 f'4. ees8~ | ees1 |
 		ees4. des8 c bes4 aes8~ | aes2. ges4 | ges f8 bes~ bes f aes4~ | aes1 |
-		aes4 g8 bes~ bes2 | aes4 g8 bes~ bes4. aes8 | g1~ | g2. <\parenthesize g>4 |
+		aes4 g8 bes~ bes2 | aes4 g8 bes~ bes4. aes8 |
+	} \alternative
+	{
+		{
+			g1~ | g2. g4 |
+		}
+		{
+			g1~ | g2. r4 |
+		}
 	}
+
 }
 % endif
 
