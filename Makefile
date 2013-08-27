@@ -125,6 +125,7 @@ OB_OUT_BASE:=$(OUT_DIR)/openbook
 OB_OUT_LY:=$(OUT_DIR)/openbook.ly
 OB_OUT_PATTERN:=src/jazz/*.mako
 OB_OUT_FILES:=$(shell find src -type f -and -wholename "$(OB_OUT_PATTERN)")
+OB_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(OB_OUT_FILES))))
 OB_OUT_PS:=$(OUT_DIR)/openbook.ps
 OB_OUT_PDF:=$(OUT_DIR)/openbook.pdf
 # book - israelbook
@@ -139,6 +140,7 @@ RK_OUT_BASE:=$(OUT_DIR)/rockbook
 RK_OUT_LY:=$(OUT_DIR)/rockbook.ly
 RK_OUT_PATTERN:=src/rock/*.mako
 RK_OUT_FILES:=$(shell find src -type f -and -wholename "$(RK_OUT_PATTERN)")
+RK_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(RK_OUT_FILES))))
 RK_OUT_PS:=$(OUT_DIR)/rockbook.ps
 RK_OUT_PDF:=$(OUT_DIR)/rockbook.pdf
 
@@ -218,6 +220,7 @@ debug:
 	$(info RK_OUT_PDF is $(RK_OUT_PDF))
 	$(info RK_OUT_PATTERN is $(RK_OUT_PATTERN))
 	$(info RK_OUT_FILES is $(RK_OUT_FILES))
+	$(info RK_OUT_STAMP is $(RK_OUT_STAMP))
 	$(info FILES_COMPLETED_JAZZ is $(FILES_COMPLETED_JAZZ))
 	$(info WEB_FOLDER is $(WEB_FOLDER))
 	$(info WEB_FILES is $(WEB_FILES))
@@ -395,10 +398,12 @@ install: $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(WEB_FILES) $(ALL_DEP)
 	$(Q)cp -r .htaccess index.html $(OB_OUT_PDF) $(WEB_FOLDER) $(WEB_DIR)
 	$(Q)chmod -R go+rx $(WEB_DIR)
 
-.PHONY: all_tunes
-all_tunes:
+.PHONY: all_tunes_jazz
+all_tunes_jazz: $(OB_OUT_STAMP)
 	$(info doing [$@])
-	$(Q)for x in src/jazz/*; do y=out/`dirname $$x`/`basename $$x .mako`.pdf; make $$y;done
+.PHONY: all_tunes_rock
+all_tunes_rock: $(RK_OUT_STAMP)
+	$(info doing [$@])
 
 # include the deps files (no warnings)
 ifeq ($(DO_LYD),1)
