@@ -60,20 +60,29 @@
 	\startChords
 	\startSong
 
-	\myMark "A"
-	\startPart
-	c1*2:maj7 | e:7 | \myEndLine
-	a:7 | d:m | \myEndLine
-	e:7 | a:m | \myEndLine
-	d:7 | d1:m7 | g:7 | \myEndLine
-	\endPart
+	\repeat volta 2 {
+		\myMark "A"
+		\startPart
+		c1*2:maj7 | e:7 | \myEndLine
+		a:7 | d:m | \myEndLine
+		e:7 | a:m | \myEndLine
+		d:7 | d1:m7 | g:7 | \myEndLine
+		\endPart
 
-	\myMark "B"
-	\startPart
-	c1*2:maj7 | e:7 | \myEndLine
-	a:7 | d:m | \myEndLine
-	f1 | f:m | c2:maj7 e:m7 | a1:7 | \myEndLine
-	d:m7 | g:7 | c2:6 ees:dim | d:m7 g:7 | \myEndLine
+		\myMark "B"
+		\startPart
+		c1*2:maj7 | e:7 | \myEndLine
+		a:7 | d:m | \myEndLine
+		f1 | f:m | c2:maj7 e:m7 | a1:7 | \myEndLine
+		d:m7 | g:7 |
+	} \alternative {
+		{
+			c2:6 ees:dim | d:m7 g:7 |
+		}
+		{
+			c1:6 | c1:6 | \myEndLine
+		}
+	}
 	\endPart
 
 	\endSong
@@ -88,17 +97,26 @@
 	\time 4/4
 	\key c \major
 
-	%% part "A"
-	c4 g8 e~ e2~ | e \times 2/3 { c'4 d c } | b gis8 e~ e2~ | e1 |
-	a4. g8 e2~ | e4 dis \times 2/3 { e bes' a } | g2 f~ | f1 |
-	e4. ees8 d2~ | d \times 2/3 { e4 gis b } | d2 c~ | c1 |
-	b4. bes8 a2~ | a \times 2/3 { a4 d b } | a1 | b |
+	\repeat volta 2 {
+		%% part "A"
+		c4 g8 e~ e2~ | e \times 2/3 { c'4 d c } | b gis8 e~ e2~ | e1 |
+		a4. g8 e2~ | e4 dis \times 2/3 { e bes' a } | g2 f~ | f1 |
+		e4. ees8 d2~ | d \times 2/3 { e4 gis b } | d2 c~ | c1 |
+		b4. bes8 a2~ | a \times 2/3 { a4 d b } | a1 | b |
 
-	%% part "B"
-	c4 g8 e~ e2~ | e \times 2/3 { c'4 d c } | b gis8 e~ e2~ | e1 |
-	a4. g8 e2~ | e4 dis \times 2/3 { e bes' a } | g2 f~ | f1 |
-	d'2 c4 b | d2. c4 | b2 e,4 g | b2. a4 |
-	c2 a4 c | e2 e | c1~ | c |
+		%% part "B"
+		c4 g8 e~ e2~ | e \times 2/3 { c'4 d c } | b gis8 e~ e2~ | e1 |
+		a4. g8 e2~ | e4 dis \times 2/3 { e bes' a } | g2 f~ | f1 |
+		d'2 c4 b | d2. c4 | b2 e,4 g | b2. a4 |
+		c2 a4 c | e2 e |
+	} \alternative {
+		{
+			c1~ | c |
+		}
+		{
+			c1~ | c |
+		}
+	}
 }
 % endif
 
@@ -126,5 +144,6 @@
 	that once was my heart
 	So why not
 	take all of me __
+	me __
 }
 % endif
