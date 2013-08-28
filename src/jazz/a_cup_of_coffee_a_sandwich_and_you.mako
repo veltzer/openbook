@@ -99,7 +99,7 @@
 			d ( bes2. ) | r4 f g f |
 		}
 		{
-			d ( bes2.~ | bes4 ) r4 r2 |
+			d' ( bes2.~ | bes4 ) r4 r2 |
 		}
 	}
 }
