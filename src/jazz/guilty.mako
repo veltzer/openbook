@@ -62,7 +62,7 @@
 	\myMark "A"
 	\startPart
 	bes4 f:m/aes g:7.5+ g:7 | c:m c:m/bes a:7.5+ a:7 |
-	bes2:maj7 bes:7.5+ | ees:maj7 ees:m | bes/d des:dim7 | c:m7  f:7 | c4:m f2:sus4.9 f4:7.9- | bes aes:6 bes:6 s |
+	bes2:maj7 bes:7.5+ | ees:maj7 ees:m | bes/d des:dim7 | c:m7 f:7 | c4:m f2:sus4.9 f4:7.9- | bes aes:6 bes:6 s |
 	\endPart
 	\endSong
 	\endChords
