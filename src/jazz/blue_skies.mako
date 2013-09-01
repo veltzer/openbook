@@ -93,7 +93,7 @@
 	Blue -- birds sing -- ing a song, noth -- ing but blue -- birds all day long.
 
 	Nev -- er saw the sun shin -- ing so bright, nev -- er saw things go -- ing so right.
-	Not -- ic -- ing the days hur -- ry -- ing by, when you're in love, my how they fly.
+	Not -- ic -- ing the days hur -- ry -- ing by, when you're in love, my how they fly by.
 
 	Blue days all of them gone, noth -- ing but blue skies from now on.
 }
