@@ -391,7 +391,7 @@ $(RK_OUT_LY): $(RK_OUT_FILES) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(Q)$(MAKO_BOOK_WRAPPER) $(RK_OUT_LY) "$(RK_OUT_PATTERN)"
 
 .PHONY: install
-install: $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) $(WEB_FILES) $(ALL_DEP)
+install: $(OB_OUT_LY) $(OB_OUT_PDF) $(WEB_FILES) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)rm -rf $(WEB_DIR)
 	$(Q)mkdir -p $(WEB_DIR)
