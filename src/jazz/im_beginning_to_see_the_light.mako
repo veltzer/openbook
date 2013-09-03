@@ -50,7 +50,7 @@
 
 		b1:9 | b:9 | bes:9 | bes:9 | a:9 |
 		a:9 | bes2:m7 ees:7 | a:m7 d:7 | g:6 c:9 |
-		b:m7 e:m7 | cis:m7.5- c4:m7 f:7 | bes:m7  ees:7 a:m7.5- d:7.9- | cis2:m7.5- c:9 |
+		b:m7 e:m7 | cis:m7.5- c4:m7 f:7 | bes:m7 ees:7 a:m7.5- d:7.9- | cis2:m7.5- c:9 |
 		b:m7 e:7.5-.9- | a:9 a4:m7 d:7 |
 	} \alternative {
 		{
