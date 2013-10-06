@@ -54,7 +54,17 @@ What do I need to know to participate?
 
 Who currently contributes?
 ---------------------------
-Just me (Mark Veltzer <mark.veltzer@gmail.com>).
+* Mark Veltzer <mark.veltzer@gmail.com>
+Original developer, lead developer and maintainer.
+Most Tunes
+
+* Jordan Eldredge <JordanEldredge@gmail.com>
+Tunes and many other contributions
+
+* Vincent O. <osele31@gmail.com>
+Ideas about using a Jazz lilypond font in openbook.
+
+Your name could be here if you contribute...
 
 Where can I see some results?
 ------------------------------
