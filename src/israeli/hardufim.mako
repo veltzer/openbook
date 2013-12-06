@@ -43,8 +43,8 @@
 	\myMark "A"
 	\startPart
 	\repeat volta 2 {
-		d1:m | g2:m7 c:7 | f1:maj7 | g:m7 | \myEndLine
-		bes:maj7 | g:m7 | bes2:maj7 a:7 |
+		d1:m | g2:m7 c:7 | f1:maj7 | g:m | \myEndLine
+		g:m7 | bes:maj7 | d2:dim7 a:7 |
 	} \alternative {
 		{ d1:m | }
 		{ d1:m | }
@@ -54,13 +54,13 @@
 	\myMark "B"
 	\startPart
 	\repeat volta 2 {
-		a1:7 | d:m | c:7 | f:maj7 | \myEndLine
+		a2 a2:7 | d1:m | g2:m7/c c:7 | f1:maj7 | \myEndLine
 	} \alternative {
 		{
-			bes2:maj7 a:7 | bes1:maj7 | d2:m g:m7 | d1:m | \myEndLine
+			bes2:maj7 a:7 | ees1:maj7 | e2:m7.5- ees:maj7 | d1:m | \myEndLine
 		}
 		{
-			bes2:maj7 a:7 | bes1:maj7 | bes2:maj7 a:7 | d1:m | \myEndLine
+			bes2:maj7 a:7 | d1:m/f | d2:dim7 a:7 | d1:m | \myEndLine
 		}
 	}
 	\endPart
