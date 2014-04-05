@@ -11,7 +11,7 @@
 	import socket # for gethostname
 	import subprocess # for subprocess.check_output
 
-	attributes['lilyver']='2.16.0'
+	attributes['lilyver']='2.16.2'
 	attributes['date']=datetime.datetime.now().strftime('%T %d-%m-%Y')
 	attributes['year']=datetime.datetime.now().strftime('%Y')
 	attributes['username']=pwd.getpwuid(os.getuid())[0]
