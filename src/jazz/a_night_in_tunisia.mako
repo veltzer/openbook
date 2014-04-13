@@ -45,8 +45,8 @@
 	\repeat volta 2 {
 		\myMark "A"
 		\startPart
-		ees1:7 | d:m6 | ees:7 | d:m6 | ees:7 | d:m6 |
-		ees2:m7.5- a4.:7.5-.9- d8:m6 |
+		ees1:7 | d:m6 | ees:7 | d:m6 | \myEndLine
+		ees:7 | d:m6 | ees2:m7.5- a4.:7.5-.9- d8:m6 |
 	} \alternative {
 		{
 			d1:m6 |
@@ -55,17 +55,17 @@
 			d1:m6 |
 		}
 	}
+	\myEndLine
 	\endPart
 	\myMark "B"
 	\startPart
-	a:m7.5- | d:7.9- |
-	g2:m6 d:7.9- | g1:m6 | g1:m7.5- | c:7.9- | f:maj |
-	e2:m7.5- a:7.9- |
+	a:m7.5- | d:7.9- | g2:m6 d:7.9- | g1:m6 | \myEndLine
+	g1:m7.5- | c:7.9- | f:maj | e2:m7.5- a:7.9- | \myEndLine
 	\endPart
 	\myMark "A"
 	\startPart
-	ees1:7 | d:m6 | ees:7 | d:m6 |
-	ees:7 | d:m6 | e2:m7.5- a:7.5- | d1:m7+ |
+	ees1:7 | d:m6 | ees:7 | d:m6 | \myEndLine
+	ees:7 | d:m6 | e2:m7.5- a:7.5- | d1:m7+ | \myEndLine
 	\endPart
 	\endSong
 	\endChords

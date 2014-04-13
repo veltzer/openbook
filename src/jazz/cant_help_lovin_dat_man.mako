@@ -39,22 +39,23 @@
 
 	\myMark "A"
 	\startPart
-	c2:maj7 a:m7 | d:m7 g:7 | c:maj7 g4:m7 c:7.9- | f2:6 bes:9 | e:m7 a:m7 |
-	aes2:7 d4:7.9- g:7.9- | c2:maj7 ees:dim7 | d:m7 g:7.5+ |
+	c2:maj7 a:m7 | d:m7 g:7 | c:maj7 g4:m7 c:7.9- | f2:6 bes:9 | \myEndLine
+	e:m7 a:m7 | aes2:7 d4:7.9- g:7.9- | c2:maj7 ees:dim7 | d:m7 g:7.5+ | \myEndLine
 	\endPart
 	\myMark "A"
 	\startPart
-	c:maj7 a:m7 | d:m7 g:7 |
-	c:maj7 g4:m7 c:7.9- | f2:6 bes:9 | e:m7 a:m7 | aes:7 d4:7.9- g:7.9- | c2:maj7 d:m7 | g:m7 c:7.9- |
+	c:maj7 a:m7 | d:m7 g:7 | c:maj7 g4:m7 c:7.9- | f2:6 bes:9 | \myEndLine
+	e:m7 a:m7 | aes:7 d4:7.9- g:7.9- | c2:maj7 d:m7 | g:m7 c:7.9- | \myEndLine
 	\endPart
 	\myMark "B"
 	\startPart
-	f1:6 | fis:dim7 | c:maj7 | d:7 | e2:m7 ees:maj7 | d:m7 d:9 | d1:m7/g | g:7 |
+	f1:6 | fis:dim7 | c:maj7 | d:7 | \myEndLine
+	e2:m7 ees:maj7 | d:m7 d:9 | d1:m7/g | g:7 | \myEndLine
 	\endPart
 	\myMark "A"
 	\startPart
-	c2:maj7 a:m7 | d:m7 g:7 | c:maj7 g4:m7 c:7.9- | f2:6 bes:9 | e:m7 a:m7 |
-	aes:7 d4:7.9- g:7.9- | c2:maj7 ees:9 aes:maj7 des:maj7 | c1:maj7 |
+	c2:maj7 a:m7 | d:m7 g:7 | c:maj7 g4:m7 c:7.9- | f2:6 bes:9 | \myEndLine
+	e:m7 a:m7 | aes:7 d4:7.9- g:7.9- | c2:maj7 ees:9 aes:maj7 des:maj7 | c1:maj7 | \myEndLine
 	\endPart
 	\endChords
 	\endSong

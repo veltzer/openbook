@@ -43,11 +43,14 @@
 	\myMark "A"
 	\startPart
 	\repeat volta 2 {
-		f2. | f | f | f | c:7 | c:7 | f | f \myEndLine
-		| f | f2 f4:7 | a2. | a | e:7 | e:7 | \myEndLine
-		a | c:7 | f | f | f:7 | f:7 | d:7 | d:7 \myEndLine
-		| c4:m g2:m | g2.:m | g:m | bes:m | f | \myEndLine
-		g:9 | c:7 | c:7 |
+		f2. | f | f | f | \myEndLine
+		c:7 | c:7 | f | f | \myEndLine
+		f | f2 f4:7 | a2. | a | \myEndLine
+		e:7 | e:7 | a | c:7 | \myEndLine
+		f | f | f:7 | f:7 | \myEndLine
+		d:7 | d:7 | c4:m g2:m | g2.:m | \myEndLine
+		g:m | bes:m | f | g:9 | \myEndLine
+		c:7 | c:7 |
 	} \alternative {
 		{
 			f | c:7 |
@@ -56,6 +59,7 @@
 			f | f |
 		}
 	}
+	\myEndLine
 	\endPart
 
 	\endChords

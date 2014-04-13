@@ -12,7 +12,7 @@
 		<meta name="Keywords" content="Mark Veltzer, veltzer, jazz, Real book, realbook, openbook, open book, music, standards, pdf, sheet music, open source"/>
 	</head>
 	<body>
-		<h1>Welcome to the openbook web site</h1>
+		<h1>Welcome to The openbook web site</h1>
 
 		<h2>A demo for the impatient...</h2>
 		<iframe src="viewer/viewer.html" width="100%" height="1700px"></iframe>

@@ -71,9 +71,10 @@
 		}
 		{
 			ees2 aes:m6 | ees1 |
-			\endPart
 		}
 	}
+	\myEndLine
+	\endPart
 
 	\endChords
 	\endSong

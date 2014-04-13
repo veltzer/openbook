@@ -44,31 +44,31 @@
 
 		\myMark "A"
 		\startPart
-		ees2:maj7 c:m7 | g:m7 ees:7 | aes g:7 | c:m7 aes:m6 |
-		ees:maj7 bes:7 | ees:7 aes4:m7 des:7 | ees2:maj7 c:m7 | f:m7 bes:7 | ees:6 c:m7 |
+		ees2:maj7 c:m7 | g:m7 ees:7 | aes g:7 | c:m7 aes:m6 | \myEndLine
+		ees:maj7 bes:7 | ees:7 aes4:m7 des:7 | ees2:maj7 c:m7 | f:m7 bes:7 | ees:6 c:m7 | \myEndLine
 		f:m7 bes:7 |
 		\endPart
 
 		\myMark "A"
 		\startPart
-		ees:maj7 c:m7 | g:m7 ees:7 | aes:maj7 g:7 | c:m7 aes:m6 |
-		ees:maj7 bes:7 | ees:7 aes4:m7 des:7 | ees2:maj7 c:m7 | f:m7 bes:7 | ees:6 c4:m7 c:m7/bes | a2:m7.5- d:7 |
+		ees:maj7 c:m7 | g:m7 ees:7 | aes:maj7 g:7 | c:m7 aes:m6 | \myEndLine
+		ees:maj7 bes:7 | ees:7 aes4:m7 des:7 | ees2:maj7 c:m7 | f:m7 bes:7 | ees:6 c4:m7 c:m7/bes | a2:m7.5- d:7 | \myEndLine
 		\endPart
 
 		\myMark "B"
 		\startPart
-		g e:m7 | a:m7 d4:7 d:7/c | b2:m7 bes:dim7 | a:m7 d:7 |
+		g e:m7 | a:m7 d4:7 d:7/c | b2:m7 bes:dim7 | a:m7 d:7 | \myEndLine
 		\endPart
 
 		\myMark "B"
 		\startPart
-		g e:m7 | a:m7 d4:7 d:7/c | b2:m7 bes:dim7 | f:m7 bes:7 |
+		g e:m7 | a:m7 d4:7 d:7/c | b2:m7 bes:dim7 | f:m7 bes:7 | \myEndLine
 		\endPart
 
 		\myMark "A"
 		\startPart
-		ees2:maj7 c:m7 | g:m7 ees:7 | aes g:7 | c:m7 aes:m6 | ees bes:7 |
-		ees:7 aes4:m7 des:7 | ees,2 c:m7 | f:m7 bes:7 |
+		ees2:maj7 c:m7 | g:m7 ees:7 | aes g:7 | c:m7 aes:m6 | \myEndLine
+		ees bes:7 | ees:7 aes4:m7 des:7 | ees,2 c:m7 | f:m7 bes:7 |
 	} \alternative {
 		{
 			ees c:m7 | f:m7 bes:7 |
@@ -77,6 +77,7 @@
 			ees c:m7 | f:m7 bes4:7 bes:7/aes | g2:m7.5- c:7 | f:m7.5- aes4/bes bes:7 | ees2 c4:m c:m7/bes | aes2:m6 ees:6 |
 		}
 	}
+	\myEndLine
 	\endPart
 
 	\endSong
