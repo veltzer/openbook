@@ -43,21 +43,23 @@
 	\myMark "A"
 	\startPart
 	\repeat volta 2 {
-		c2:m c:m5+ | c:m6 c:m7 | f:m7 bes4:7 bes:7.5+ | ees2:maj7 d4:m7 g:7 | g2:m7 c:7.5+ |
-		f1:9 | f2:m7 f:m7/bes | ees:6 d4:7.9- g:7 |
+		c2:m c:m5+ | c:m6 c:m7 | f:m7 bes4:7 bes:7.5+ | ees2:maj7 d4:m7 g:7 | \myEndLine
+		g2:m7 c:7.5+ | f1:9 | f2:m7 f:m7/bes | ees:6 d4:7.9- g:7 | \myEndLine
 		\endPart
 		\myMark "A"
 		\startPart
-		c2:m c:m5+ | c:m6 c:m7 | f:m7 bes4:7 bes:7.5+ | ees2:maj7 d4:m7 g:7 | g2:m7 c:7.5+ |
-		f1:9 | f2:m7 f:m7/bes | ees:6 a4:m7.5- d:7.9- |
+		c2:m c:m5+ | c:m6 c:m7 | f:m7 bes4:7 bes:7.5+ | ees2:maj7 d4:m7 g:7 | \myEndLine
+		g2:m7 c:7.5+ | f1:9 | f2:m7 f:m7/bes | ees:6 a4:m7.5- d:7.9- | \myEndLine
 		\endPart
 		\myMark "B"
 		\startPart
-		g1:m | c2:m6 d:7 |
-		g:m e:m7.5- | c:m6/ees d:7 | g1:m | c2:m6/ees d4:sus4.7 d:7 |
-		g1 | d2:m7 g:7 | c:m c:m5+ | c:m6 c:m7 |
-		f:m7 bes4:7 bes:7.5+ | ees2:maj7 d4:m7 g:7 | g2:m7 c:7.5+ | f1:9 |
-		f2:m7 f:m7/bes |
+		g1:m | c2:m6 d:7 | g:m e:m7.5- | c:m6/ees d:7 | \myEndLine
+		g1:m | c2:m6/ees d4:sus4.7 d:7 | g1 | d2:m7 g:7 | \myEndLine
+		\endPart
+		\myMark "A"
+		\startPart
+		c:m c:m5+ | c:m6 c:m7 | f:m7 bes4:7 bes:7.5+ | ees2:maj7 d4:m7 g:7 | \myEndLine
+		g2:m7 c:7.5+ | f1:9 | f2:m7 f:m7/bes |
 	} \alternative {
 		{
 			ees:6 g:7.5+.9- |
@@ -66,6 +68,7 @@
 			ees1:6 |
 		}
 	}
+	\myEndLine
 	\endPart
 	\endChords
 	\endSong
