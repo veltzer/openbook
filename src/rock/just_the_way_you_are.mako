@@ -64,7 +64,7 @@ PartUpperIntro=\relative c' {
 	\clef treble
 	\time 4/4
 	\key d \major
-	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\mark "Intro"
 	\tempo "Moderato" 4 = 112
 	r8 a d <bes e g>~ <bes e g>2 | r8 a d <d g b>~ <d g b> <d a'>4. |

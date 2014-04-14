@@ -61,7 +61,7 @@
 \relative f' {
 	\time 6/8
 	\key e \major
-	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 112
 
 	gis2 a8 b | gis2 a8 b | gis8 a b gis8 a b | gis2. |

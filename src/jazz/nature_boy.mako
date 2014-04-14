@@ -82,7 +82,7 @@
 
 % if part=='VoiceNewreal':
 \relative a {
-	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 110
 	\time 4/4
 	\key d \minor

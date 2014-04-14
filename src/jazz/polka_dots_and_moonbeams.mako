@@ -70,7 +70,7 @@
 \relative a {
 	\time 4/4
 	\key f \major
-	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Adagio" 4 = 76
 
 	%% A part

@@ -55,7 +55,7 @@
 \relative f' {
 	\time 2/4
 	\key g \minor
-	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 128
 
 	bes'4 bes'4 | a'4 a'4 | g'2 ~ | g'4 a'4 |

@@ -255,7 +255,7 @@ ${self.defs()}
 				\fill-line {
 					\huge \bold \concat {
 						"Website: "
-						\with-url #"http://veltzer.net/openbook" http://veltzer.net/openbook
+						\with-url #"https://veltzer.net/openbook" https://veltzer.net/openbook
 					}
 				}
 				\null
@@ -693,7 +693,7 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 		\smaller \smaller { "${attributes['tagline']}" }
 	}
 	\fill-line {
-		\smaller \smaller { \with-url #"http://veltzer.net/openbook" http://veltzer.net/openbook }
+		\smaller \smaller { \with-url #"https://veltzer.net/openbook" https://veltzer.net/openbook }
 	}
 % endif
 }

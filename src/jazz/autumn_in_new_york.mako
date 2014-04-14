@@ -101,7 +101,7 @@
 \relative e' {
 	\time 4/4
 	\key f \major
-	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante" 4 = 76
 	%% part A
 	a8 g f d c2 | r8 d f bes d d4 c8 | d2 a | r1 |

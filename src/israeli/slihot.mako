@@ -85,7 +85,7 @@
 \relative c' {
 	\time 3/4
 	\key a \minor
-	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 112
 
 	%% Intro

@@ -7,7 +7,7 @@ OpenBook is a Jazz real book constructed with free software. A real book simply 
 
 Where is the projects website?
 -------------------------------
-http://veltzer.net/openbook/
+https://veltzer.net/openbook/
 
 Why did you start this?
 ------------------------
@@ -68,7 +68,7 @@ Your name could be here if you contribute...
 
 Where can I see some results?
 ------------------------------
-Check out the PDFs and other outputs in http://veltzer.net/openbook/.
+Check out the PDFs and other outputs in https://veltzer.net/openbook/.
 
 Why is there so little documentation?
 --------------------------------------
