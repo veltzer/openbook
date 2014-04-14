@@ -260,72 +260,72 @@ check_extra_files:
 .PHONY: check_comments
 check_comments:
 	$(info doing [$@])
-	$(Q)./scripts/ok_wrapper.pl grep "%%" $(FILES_MAKO)
+	$(Q)scripts/ok_wrapper.pl grep "%%" $(FILES_MAKO)
 .PHONY: check_and
 check_and:
 	$(info doing [$@])
-	$(Q)./scripts/ok_wrapper.pl grep "composer=\".* and .*\"" $(FILES_MAKO)
-	$(Q)./scripts/ok_wrapper.pl grep "poet=\".* and .*\"" $(FILES_MAKO)
+	$(Q)scripts/ok_wrapper.pl grep "composer=\".* and .*\"" $(FILES_MAKO)
+	$(Q)scripts/ok_wrapper.pl grep "poet=\".* and .*\"" $(FILES_MAKO)
 .PHONY: check_min_chords
 check_min_chords:
 	$(info doing [$@])
-	$(Q)./scripts/ok_wrapper.pl grep ":min" $(FILES_MAKO)
+	$(Q)scripts/ok_wrapper.pl grep ":min" $(FILES_MAKO)
 .PHONY: check_ws
 check_ws:
 	$(info doing [$@])
-	$(Q)-./scripts/pgrep.pl "  | $$|\w\t|\t$$" $(FILES_MAKO) $(FILES_LYI)
+	$(Q)-scripts/pgrep.pl "  | $$|\w\t|\t$$" $(FILES_MAKO) $(FILES_LYI)
 .PHONY: check_uuid
 check_uuid:
 	$(info doing [$@])
-	$(Q)./scripts/ok_wrapper.pl grep --files-without-match uuid $(FILES_MAKO)
+	$(Q)scripts/ok_wrapper.pl grep --files-without-match uuid $(FILES_MAKO)
 .PHONY: check_poet
 check_poet:
 	$(info doing [$@])
-	$(Q)./scripts/ok_wrapper.pl grep --files-without-match "attributes\['poet'\]=" $(FILES_MAKO)
+	$(Q)scripts/ok_wrapper.pl grep --files-without-match "attributes\['poet'\]=" $(FILES_MAKO)
 .PHONY: check_copyright
 check_copyright:
 	$(info doing [$@])
-	$(Q)./scripts/ok_wrapper.pl grep --files-without-match "attributes\['copyright'\]=" $(FILES_MAKO)
+	$(Q)scripts/ok_wrapper.pl grep --files-without-match "attributes\['copyright'\]=" $(FILES_MAKO)
 .PHONY: check_mark
 check_mark:
 	$(info doing [$@])
-	$(Q)./scripts/ok_wrapper.pl grep --files-without-match "\\\\myMark" $(FILES_COMPLETED_JAZZ)
+	$(Q)scripts/ok_wrapper.pl grep --files-without-match "\\\\myMark" $(FILES_COMPLETED_JAZZ)
 .PHONY: check_completion
 check_completion:
 	$(info doing [$@])
-	$(Q)./scripts/ok_wrapper.pl grep --files-without-match "attributes\['completion'\]=" $(FILES_MAKO)
+	$(Q)scripts/ok_wrapper.pl grep --files-without-match "attributes\['completion'\]=" $(FILES_MAKO)
 .PHONY: check_empty_copyright
 check_empty_copyright:
 	$(info doing [$@])
-	$(Q)./scripts/ok_wrapper.pl grep "copyright=\"\"" $(FILES_MAKO)
+	$(Q)scripts/ok_wrapper.pl grep "copyright=\"\"" $(FILES_MAKO)
 .PHONY: check_chordChanges
 check_chordChanges:
 	$(info doing [$@])
-	$(Q)./scripts/ok_wrapper.pl grep "chordChanges" $(FILES_MAKO)
+	$(Q)scripts/ok_wrapper.pl grep "chordChanges" $(FILES_MAKO)
 .PHONY: check_bar
 check_bar:
 	$(info doing [$@])
-	$(Q)./scripts/ok_wrapper.pl grep "\\\\bar" $(FILES_MAKO)
+	$(Q)scripts/ok_wrapper.pl grep "\\\\bar" $(FILES_MAKO)
 .PHONY: check_break
 check_break:
 	$(info doing [$@])
-	$(Q)./scripts/ok_wrapper.pl grep "\\\\break" $(FILES_MAKO)
+	$(Q)scripts/ok_wrapper.pl grep "\\\\break" $(FILES_MAKO)
 .PHONY: check_include
 check_include:
 	$(info doing [$@])
-	$(Q)./scripts/ok_wrapper.pl grep "\\\\include" $(FILES_MAKO)
+	$(Q)scripts/ok_wrapper.pl grep "\\\\include" $(FILES_MAKO)
 .PHONY: check_threeunderscores
 check_threeunderscores:
 	$(info doing [$@])
-	$(Q)./scripts/ok_wrapper.pl grep "___" $(FILES_MAKO)
+	$(Q)scripts/ok_wrapper.pl grep "___" $(FILES_MAKO)
 .PHONY: check_bad_lyric_breakup
 check_bad_lyric_breakup:
 	$(info doing [$@])
-	$(Q)./scripts/ok_wrapper.pl grep "_ --" $(FILES_MAKO)
+	$(Q)scripts/ok_wrapper.pl grep "_ --" $(FILES_MAKO)
 .PHONY: check_veltzer_https
 check_veltzer_https:
 	$(info doing [$@])
-	$(Q)./scripts/ok_wrapper.pl git grep "http:\/\/veltzer.net"
+	$(Q)scripts/ok_wrapper.pl git grep "http:\/\/veltzer.net"
 .PHONY: check_all
 check_all: check_empty_copyright check_ws check_and check_extra_files check_min_chords check_uuid check_chordChanges check_bar check_break check_completion check_include check_threeunderscores check_mark check_bad_lyric_breakup check_veltzer_https
 
