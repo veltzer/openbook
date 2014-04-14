@@ -97,7 +97,7 @@
 	\set Staff.timeSignatureFraction=#'(2 . 2)
 	\time 4/4
 	\key c \major
-	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 100
 
 	\partial 4 e8 f |

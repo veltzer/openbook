@@ -132,7 +132,7 @@ Tempo:
 	Disadvantages:
 		- You need to map name of the speed to BPM or skip the BPM or name of speed
 		entirely. You can use a lookup table like mine:
-		http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+		https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 - another way is:
 	==== SNIP ====
 	\context {

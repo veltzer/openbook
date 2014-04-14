@@ -97,7 +97,7 @@
 
 % if part=='VoiceReal':
 \relative c'' {
-	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 3/4
 	\key c \major

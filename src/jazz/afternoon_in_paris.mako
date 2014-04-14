@@ -89,7 +89,7 @@
 
 % if part=='VoiceFake':
 \relative c {
-	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\key c \major
 	\time 4/4
@@ -153,7 +153,7 @@
 
 % if part=='VoiceReal':
 \relative c {
-	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\key c \major
 	\time 4/4

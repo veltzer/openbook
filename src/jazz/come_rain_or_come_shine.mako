@@ -95,7 +95,7 @@
 \relative f' {
 	\time 4/4
 	\key f \major
-	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 100
 
 	a4 a8 a a a4 a8 | a4 a8 a a a4 a8 | a f f f~ f2~ | f1 |

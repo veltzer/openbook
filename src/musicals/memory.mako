@@ -151,7 +151,7 @@ pianoMain={
 	%% http://lilypond.org/doc/v2.11/Documentation/user/lilypond/MIDI-instruments#MIDI-instruments
 	\set PianoStaff.midiInstrument=#"acoustic grand"
 	%% The tempo of the tune
-	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo Freely 4.=50
 	<<
 		%% you can move voiceB from below to the treble clef if you prefer

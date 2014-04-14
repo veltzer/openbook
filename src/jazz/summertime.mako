@@ -108,7 +108,7 @@
 
 % if part=='VoiceAebersold':
 \relative c'' {
-	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 108
 	\time 4/4
 	\key d \minor
@@ -131,7 +131,7 @@
 
 % if part=='VoiceFake':
 \relative c'' {
-	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 108
 	\time 2/2
 	\key a \minor

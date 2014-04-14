@@ -97,7 +97,7 @@
 
 % if part=='VoiceReal':
 \relative c'' {
-	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\set Staff.timeSignatureFraction=#'(2 . 2)
 	\tempo "Prestissimo" 4 = 220
 	\time 4/4

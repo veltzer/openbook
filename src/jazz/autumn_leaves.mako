@@ -86,7 +86,7 @@
 \relative e' {
 	\time 4/4
 	\key e \minor
-	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 
 	\partial 2. e4 fis g |
@@ -175,7 +175,7 @@
 \relative e' {
 	\time 4/4
 	\key e \minor
-	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 
 	\partial 2. e4 fis g |

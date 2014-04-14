@@ -322,8 +322,12 @@ check_threeunderscores:
 check_bad_lyric_breakup:
 	$(info doing [$@])
 	$(Q)./scripts/ok_wrapper.pl grep "_ --" $(FILES_MAKO)
+.PHONY: check_veltzer_https
+check_veltzer_https:
+	$(info doing [$@])
+	$(Q)./scripts/ok_wrapper.pl git grep "http:\/\/veltzer.net"
 .PHONY: check_all
-check_all: check_empty_copyright check_ws check_and check_extra_files check_min_chords check_uuid check_chordChanges check_bar check_break check_completion check_include check_threeunderscores check_mark check_bad_lyric_breakup
+check_all: check_empty_copyright check_ws check_and check_extra_files check_min_chords check_uuid check_chordChanges check_bar check_break check_completion check_include check_threeunderscores check_mark check_bad_lyric_breakup check_veltzer_https
 
 # rules
 

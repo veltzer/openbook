@@ -79,7 +79,7 @@
 \relative c'' {
 	\time 2/2
 	\key g \major
-	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	%% \tempo "Moderato" 4 = 100
 
 	\repeat volta 2 {

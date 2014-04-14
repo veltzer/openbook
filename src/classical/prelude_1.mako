@@ -202,7 +202,7 @@ PartPiano={
 	%% render this voice in midi format...
 	\set PianoStaff.instrumentName = #"Piano"
 	%% The tempo of the tune
-	%% http://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante" 4 = 72
 	%% The instrument that will be used to render this voice in midi
 	%% list of instruments can be found at
