@@ -103,7 +103,7 @@
 	\time 4/4
 	\key f \minor
 
-	%% A part
+	%% part "A"
 	\repeat volta 2 {
 		c1~ | c~ | c4 des c g | bes c e g, |
 		bes1~ | bes~ | bes4 c des c | des c b g |
@@ -111,13 +111,13 @@
 		f1~ | f~ | f | r |
 	}
 
-	%% B part
+	%% part "B"
 	f'1 | d2 c4. g8~ | g1~ | g4. f8 e4-. f-. |
 	c'1 | g2 f4. c8~ | c1 | r2 bes'8 c des d |
 	ees1 | c2 bes4. f8~ | f1~ | f2 g4-. ees-. |
 	c'4. aes8~ aes2~ | aes bes4-. aes-. | g2 g4. g8~ | g2 r |
 
-	%% A part
+	%% part "A"
 	c1~ | c~ | c4 des c g | bes c e g, |
 	bes1~ | bes~ | bes4 c des c | des c b g |
 	bes!1~ | bes~ | bes4 c b bes | a aes g ges |
@@ -128,16 +128,16 @@
 % if part=='LyricsInet':
 %% these lyrics are from the Internet and adjusted for this tune...
 \lyricmode {
-	%% A part
+	%% part "A"
 	Night __ and stars ab -- ove that shine so bright __
 	The mys -- t'ry of their fa -- ding light __
 	That shines u -- pon our Ca -- ra -- van __
-	%% B part
+	%% part "B"
 	This is so exciting, __ _ _ _
 	you are so inviting __ _ _ _ _
 	Res -- ting in my_arms __
 	As I thrill to the magic charms __ _ _
-	%% A part
+	%% part "A"
 	Of_you be -- side me here, be -- neath the blue __
 	My dream of love is com -- ing true __
 	With -- in our de -- sert Ca -- ra -- van __
@@ -146,7 +146,7 @@
 
 % if part=='LyricsmoreInet':
 \lyricmode {
-	%% A part
+	%% part "A"
 	Sleep __ u -- pon my shou -- lder as we creep __
 	Ac -- ross the sand so I may keep __
 	This mem -- 'ry of our Ca -- ra -- van __
@@ -156,16 +156,16 @@
 % if part=='LyricsReal':
 %% these lyrics are from the Ella Firtgerald performance and adjusted for this tune...
 \lyricmode {
-	%% A part
+	%% part "A"
 	Night __ and stars that shine ab -- ove so bright __
 	The ma -- gic of their fa -- ding light __
 	That shines u -- pon our Ca -- ra -- van __
-	%% B part
+	%% part "B"
 	You are so exciting, __ _ _ _
 	This is so inviting __ _ _ _ _
 	Res -- ting in my_arms __
 	As I thrill to the magic charms __ _ _
-	%% A part
+	%% part "A"
 	Of_you be -- side me here, be -- neath the blue __
 	My dream of love is com -- ing true __
 	With -- in our de -- sert Ca -- ra -- van __
@@ -174,7 +174,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
-	%% A part
+	%% part "A"
 	Sleep __ u -- pon my shou -- lder as we creep __
 	Ac -- ross the sand so I may keep __
 	This mem -- 'ry of our Ca -- ra -- van __

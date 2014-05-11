@@ -83,16 +83,16 @@
 	%% \tempo "Moderato" 4 = 100
 
 	\repeat volta 2 {
-		%% A part
+		%% part "A"
 		r4 b \times 2/3 { b c b } | d d2. | r4 g, \times 2/3 { g a g } | b1 | r4 d, \times 2/3 { d e d } | a' a2. |
 		r4 a \times 2/3 { a g fis } | g1 |
-		%% A part
+		%% part "A"
 		r4 b \times 2/3 { b c b } | d d2. | r4 g, \times 2/3 { g a g } | b1 | r4 d, \times 2/3 { d e d } | a' a2. |
 		r4 a \times 2/3 { a g fis } | g1 |
-		%% B part
+		%% part "B"
 		a2 \times 2/3 { g4 a g } | e d2. |
 		r4 a' \times 2/3 { a g e } | g1 | a2 \times 2/3 { g4 a g } | e d2. | r8 b' b b b a4 g8 | a1 |
-		%% A part
+		%% part "A"
 		r4 b \times 2/3 { b c b } | d d2. | r4 g, \times 2/3 { g a g } | b1 | r4 d, \times 2/3 { d e d } | a' a2. |
 		r4 a \times 2/3 { a g fis } |
 	} \alternative {
@@ -108,21 +108,18 @@
 
 % if part=='LyricsFake':
 \lyricmode {
-	%% A part
+	%% part "A"
 	Red Sails In The Sun -- set way out on the sea. oh! ca -- ry my loved one
 	home safe -- ly to me.
-
-
-	%% A part
+	%% part "A"
 	He sailed at the dawn -- ing. all day I've been blue.
 	Red Sails In The Sun -- set I'm trust -- ing in you.
-	%% B part
+	%% part "B"
 	Swift wings you must bor -- row, make stright for the shore.
 	We mar -- ry to -- mor -- row and he goes sail -- ing no more.
-
-	%% A part
+	%% part "A"
 	Red Sails In The Sun -- set way out on the sea, oh! car -- ry my loved one home safe -- ly to me.
-
+	%% part "Volta"
 	me.
 }
 % endif

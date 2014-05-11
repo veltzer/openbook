@@ -82,7 +82,7 @@
 	\key f \major
 	\time 4/4
 
-	%% A part
+	%% part "A"
 	r8. c16[ d8. c16] aes8.[ g16 f8. d16] | f4 f8 aes~ aes r r4 |
 	r8. c16[ d8. c16] aes8.[ g16 f8. d16] | f4 f8 d~ d8. c16 r4 |
 	r4 d'8. c16 aes8.[ g16 f8. d16] | f4 f8 f~ f r r4 |
@@ -90,13 +90,13 @@
 	a8 c4. r4 a8. a16 | g8 f4. r4 aes8. g16 |
 	aes8.[ g16 f8. d16] f4 f8 f~ | f r r4 r2 |
 
-	%% B part
+	%% part "B"
 	r8. d16[ f8. d16] f8.[ d16 f8. d16] | f8. f16 f4 r2 |
 	r4 a d8.[ c16 a8. f16] | a4 f8 g~ g4 r |
 	r f8. d16 f8.[ d16 f8. d16] | f4 f8 f~ f r r4 |
 	r8. d16[ g8. d16] r2 | g8 a4 d8~ d4 c |
 
-	%% A part
+	%% part "A"
 	r4 d8. c16 aes8.[ g16 f8. d16] | f4 f8 aes~ aes r r4 |
 	r4 d8. c16 aes8.[ g16 f8. d16] | f4 f8 d~ d8. c16 r4 |
 	r8. c'16[ d8. c16] aes8.[ g16 f8. d16] | f4 f8 f~ f r r4 |
@@ -108,18 +108,18 @@
 
 % if part=='LyricsFake':
 \lyricmode {
-	%% A part
+	%% part "A"
 	_ Let me tell you 'bout a boy I know. __
 	He is my ba -- by and he lives next door __ _
 	Ev -- 'ry morn -- ing 'fore the sun comes up __
 	he brings my cof -- fee in my fav -- 'rite cup __
 	That's why I know, __ _ yes, I know, __ _ Hal -- le -- lu -- jah, I just love him so. __
-	%% B part
+	%% part "B"
 	Now if I call him on the tel -- e -- phone,
 	and tell him that I'm all a -- lone, __
 	by the time I count from one to four, __
 	I hear him on my door. __ _
-	%% A part
+	%% part "A"
 	In the eve -- ning when the sun goes down, __
 	when there is no -- bod -- y else a -- round __ _
 	he kiss -- es me __ _ and he holds me tight. __

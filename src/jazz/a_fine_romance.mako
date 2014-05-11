@@ -120,17 +120,16 @@
 
 % if part=='LyricsFake':
 \lyricmode {
-	%% A part
+	%% part "A"
 	A Fine Ro -- mance with no kis -- es!
 	A Fine Ro -- mance, my friend, this is!
-	%% B part
+	%% part "B"
 	We should be like a cou -- ple of hot to -- ma -- toes, __
 	but you're as cold as yes -- ter -- day's mashed po -- ta -- toes. __
-
-	%% A part
+	%% part "A"
 	A Fine Ro -- mance you won't nest -- le.
 	A Fine Ro -- mance, you won't wrest -- le!
-	%% C part
+	%% part "C"
 	I might as well play bridge with my old maid aunts!
 	I have -- n't got a chance. This is A Fine Ro -- mance. A
 }
@@ -138,17 +137,16 @@
 
 % if part=='LyricsmoreFake':
 \lyricmode {
-	%% A part
+	%% part "A"
 	_ Fine Ro -- mance my good fel -- low!
 	You take ro -- mance, I'll take jel -- lo!
-	%% B part
+	%% part "B"
 	You're calm -- er than the seal in the Arc -- tic O -- cean, __
 	at least they flap their fins to ex -- press e -- mo -- tion. __
-
-	%% A part
+	%% part "A"
 	A Fine Ro -- mance with no quar -- rels,
 	With no in -- sults, and all mor -- als!
-	%% C part
+	%% part "C"
 	I've nev -- er mussed the crease in your blue serge pants!
 	I nev -- er get the chance. This is A Fine Ro -- _ _ mance. __
 }
@@ -210,16 +208,16 @@
 % if part=='LyricsReal':
 %% lyrics taken from the fake book and adjusted for the real book
 \lyricmode {
-	%% A part
+	%% part "A"
 	A Fine Ro -- mance with no kis -- es!
 	A Fine Ro -- mance, my friend, this is!
-	%% B part
+	%% part "B"
 	We should be like a cou -- ple of hot to -- ma -- toes, __
 	but you're as cold as yes -- ter -- day's mashed po -- ta -- toes. __
 
 	A
 
-	%% C part
+	%% part "C"
 	might as well play bridge with my old maid aunts!
 	I have -- n't got a chance. This is A Fine Ro -- mance.
 

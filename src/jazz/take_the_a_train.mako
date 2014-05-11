@@ -78,7 +78,7 @@
 	\time 4/4
 	\key c \major
 
-	%% A part
+	%% part "A"
 	\repeat volta 2 {
 		g1~ | g8 e'4. g,4 c | e8 aes,~ aes2.~ | aes1 | a? | a8 bes b e g, fis f cis' | c? e,~ e2.~ |
 	} \alternative {
@@ -89,11 +89,11 @@
 			e2\repeatTie r |
 		}
 	}
-	%% B part
+	%% part "B"
 	a8 c~ c2. | e8 f,4. a4 c e8 a,4.~ a2~ | a1 | a8 c~ c2. | e4 fis, a c |
 	e8 a,~ a2.~ | a2 aes |
 
-	%% A part
+	%% part "A"
 	g1~ | g8 e'4. g,4 c | e8 aes,~ aes2.~ | aes1 | a? |
 	a8 bes b e g, fis f cis' | c? e,~ e2.~ |
 	e2 r2 |

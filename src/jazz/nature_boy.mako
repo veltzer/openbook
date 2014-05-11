@@ -45,11 +45,11 @@
 	- document the youtube performance.
 	- add another youtube performance.
 	- add a lyrics url.
-	- in the new real book version the b:m7.5- on at the end of the B part and the final two chords of the B
+	- in the new real book version the b:m7.5- on at the end of the part "B" and the final two chords of the B
 	part (turn-around chords) should be in parenthesis. How do I do that?
 	- add the real book version.
 	REMARKS:
-	- this tunes structure can also be AA' or maybe ABAC since the A and the B part are VERY similar.
+	- this tunes structure can also be AA' or maybe ABAC since the A and the part "B" are VERY similar.
 % endif
 
 % if part=='ChordsNewreal':
@@ -88,13 +88,13 @@
 	\key d \minor
 	\partial 8 a8 |
 
-	%% A part
+	%% part "A"
 	a'8 f d2. | r4 r8 a e' f g bes | a f d2. | r4 r8 a e' f g bes |
 	a4. d8 cis2 | a4. c!8 b2 | g4. bes!8 a4. d,8 | e2. r8 a, |
 	a'2. g4 | e2. a,4 | g'2. f4 | d2. a4 |
 	f'2. e4 | b2. c4 | cis1 | r2 r4 r8 a |
 
-	%% B part
+	%% part "B"
 	a'8 f d2. | r4 r8 a e' f g bes | a f d2. | r4 r8 a e' f g bes |
 	a4. d8 cis2 | a4. c!8 b2 | g4. bes!8 a4. d,8 | e2. r8 a, |
 	a'2. g4 | e2. a,4 | g'2. f4 | d2. a4 |
@@ -104,7 +104,7 @@
 
 % if part=='LyricsNewreal':
 \lyricmode {
-	%% A part
+	%% part "A"
 	There was a boy,
 	A ver -- y strange en -- chant -- ed boy
 	They say he wan -- dered ver -- y far, ver -- y far,
@@ -115,7 +115,7 @@
 	But ver -- y wise
 	was he
 
-	%% B part
+	%% part "B"
 	And then one day,
 	One mag -- ic day he came my way,
 	And as we spoke of man -- y things, fools and kings,

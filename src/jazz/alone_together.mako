@@ -125,7 +125,7 @@
 % if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
-	%% A part
+	%% part "A"
 	A -- lone To -- geth -- er; __
 	be -- yond the crowd. __
 	a -- bove the world, __
@@ -140,7 +140,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
-	%% A part
+	%% part "A"
 	A -- lone To -- geth -- er; __
 	the blind -- ing rain __
 	The star -- less night, __
@@ -148,11 +148,11 @@
 	For we're to -- geth -- er, and what is there
 	to fear to -- _ _ _ geth -- er. __
 
-	%% B part
+	%% part "B"
 	Our love __ is as deep as the sea, __
 	Our love __ is as great as a love can be,
 
-	%% A part
+	%% part "A"
 	And we can wea -- ther __
 	the great un -- known, __
 	If we're A -- lone To -- geth -- er. __

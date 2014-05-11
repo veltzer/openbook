@@ -22,7 +22,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="9677b522-7463-11e1-a57d-bbc28ffad085"
 	attributes['structure']="ABAC"
-	attributes['structureremark']="I determined it was ABAC although the A part does not repeat exactly. It is good enough"
+	attributes['structureremark']="I determined it was ABAC although the part A does not repeat exactly. It is good enough"
 
 	attributes['idyoutuberemark']="Virtuoso Sonny Stitt"
 	attributes['idyoutube']="Nn11v07Db3s"
@@ -103,16 +103,16 @@
 	\key f \major
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante" 4 = 76
-	%% part A
+	%% part "A"
 	a8 g f d c2 | r8 d f bes d d4 c8 | d2 a | r1 |
 	a8 g f d c2 | r8 d f bes d d4 c8 | d2 a | r1 |
-	%% part B
+	%% part "B"
 	c8 c4 a8 a4. f8 | aes8 aes4 f8 ees4. des8 | ees b4 c8 ees2~ | ees f |
 	g8 d4 ees8 g2~ | g b | g1~ | g2. gis4 |
-	%% part A
+	%% part "A"
 	a8 g! f d c2 | r8 d f bes d d4 c8 | d2 a | r1 |
 	d8 c bes g f2~ | f8 ges bes c des ees4 c8 | des1~ | des2. r4 |
-	%% part C
+	%% part "C"
 	c8 aes4 c8 e4 e | c2. bes4 | aes8 f4 aes8 c4 c | aes2. aes4 |
 	a!8 g f d c2~ | c8 bes des f aes bes4 g8 | f1 | r1 |
 }
@@ -121,22 +121,22 @@
 % if part=='LyricsReal':
 %% lyrics are taken from the fake book and adjusted for the real one
 \lyricmode {
-	%% A part
+	%% part "A"
 	Au -- tumn In New York,
 	why does it seem so in -- vit -- ing?
 	Au -- tumn In New York,
 	it spells the thrill of first night -- ing.
-	%% B part
+	%% part "B"
 	Glit -- ter -- ing crowds and shim -- mer -- ing clouds
 	in can -- yons of steel, __
 	they're mak -- ing me feel __
 	I'm home. __
-	%% A part
+	%% part "A"
 	It's Au -- tumn In New York,
 	that brings the pro -- mise of new love;
 	Au -- tumn In New York __
 	is of -- ten min -- gled with pain. __
-	%% C part
+	%% part "C"
 	Dream -- ers with emp -- ty hands
 	may sigh for ex -- ot -- ic lands;
 	It's Au -- tumn In New York, __
@@ -146,22 +146,22 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
-	%% A part
+	%% part "A"
 	Au -- tumn In New York,
 	the gleam -- ing roof -- tops at sun -- down.
 	Au -- tumn In New York,
 	it lifts you up when you're run -- down.
-	%% B part
+	%% part "B"
 	Jad -- ed rou -- es and gay di -- vor -- cees
 	who lunch at the Ritz __
 	will tell you that "\"it's" __
 	di -- "vine!\"" __
-	%% A part
+	%% part "A"
 	This Au -- tumn In New York,
 	trans -- forms the slums in -- to May -- fair;
 	Au -- tumn In New York, __
 	you'll need no cas -- tles in Spain. __
-	%% C part
+	%% part "C"
 	Lov -- ers that bless the dark
 	on bench -- es in Cen -- tral Park
 	greet Au -- tumn In New York, __

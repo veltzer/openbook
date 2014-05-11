@@ -84,7 +84,7 @@
 
 	\partial 2..
 	c8 e g gis b a8. e16
-	%% A part
+	%% part "A"
 	\repeat volta 2 {
 		a1~ | a8 c, e g gis b a8. e16 | g1~
 		g8 d f a c e d8. c16 | a4. c8 b4. f8 | a4. c8 b4. g8 |
@@ -96,7 +96,7 @@
 			d'8 g, g g~ g2 |
 		}
 	}
-	%% B part
+	%% part "B"
 	r4 e'4 \times 2/3 { e4 e e } |
 	e2 d | r4 d8 cis e d c b | d4. c8 c2 |
 	r4 c8 b d c b a | c b~ b2 b8 a | a4. g8 g4. fis8 | a4. g8 g2 |

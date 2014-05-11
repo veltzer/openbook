@@ -86,13 +86,13 @@
 
 	\partial 4 c4 |
 
-	%% A part
+	%% part "A"
 	c2 des,~ | des bes'4. a8 | gis4. a8 a2~ | a r4 a |
 	a2 bes,~ | bes \times 2/3 { g'4 f e } | d1~ | d2 r4 c' |
 	c2 des,~ | des4. bes'8 bes4. a8 | gis4. a8 a2~ | a a4 a |
 	b4. cis8 cis2 | d2. e4 | e1~ | e2 r4 e |
 
-	%% B part
+	%% part "B"
 }
 % endif
 

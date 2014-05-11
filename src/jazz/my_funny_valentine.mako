@@ -84,19 +84,19 @@
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 
-	%% A part
+	%% part "A"
 	c2 d4 ees | d4. ees8 d2 | c2 d4 ees | d4. ees8 d2 |
 	c2 d4 ees | bes'2 aes4 g | f1~ | f |
 
-	%% A part (2)
+	%% part "A"
 	ees2 f4 g | f4. g8 f2 | ees2 f4 g | f4. g8 f2 |
 	ees2 f4 g | d'4. c8 bes4. a8 | aes1~ | aes2 g4 f |
 
-	%% B part
+	%% part "B"
 	bes4 r8 ees, ees4 d | ees2 ees4 d | c'4 r8 ees, ees4 d | ees2 ees4 d |
 	bes' r8 ees, ees4 d | ees2 f4 g | c1~ | c2 d, |
 
-	%% A part
+	%% part "A"
 	c2 d4 ees | d4. ees8 d2 | ees2 f4 g | f4. g8 f2 |
 	c'2 d4 ees | d4. ees8 d2 | ees1~ | ees |
 	ees,2 f4 g | f4. g8 f2 | ees1~ | ees2. r4 |
@@ -105,16 +105,19 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+	%% part "A"
 	My Fun -- ny Val -- en -- tine,
 	sweet com -- ic val -- en -- tine,
 	you make me smile with my heart. __
-	Your looks are laugh -- a -- ble, un -- pho -- to -- graph -- a -- ble,
+	%% part "A"
+	Your looks are laugh -- a -- ble,
+	un -- pho -- to -- graph -- a -- ble,
 	yet, you're my fav -- 'rite work of art. __
-
+	%% part "B"
 	Is your fig -- ure less than Greek;
 	is your mouth a lit -- tle weak
 	when you o -- pen it to speak, are you smart? __
-
+	%% part "A"
 	But don't change a hair for me,
 	not if you care for me,
 	stay lit -- tle val -- en -- tine, stay! __

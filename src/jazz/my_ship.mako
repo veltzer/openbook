@@ -106,19 +106,19 @@
 	\partial 4 c4 |
 
 	\repeat volta 2 {
-		%% A part
+		%% part "A"
 		d f c' a8 c | a4 d, d r8 c | d4 f c' c | d,2. c8 cis |
 		d4 f d' c8 d | c4 bes a e8 f | g1~ | g2. c,4 |
 
-		%% A part
+		%% part "A"
 		d f c' a8 c | a4 d, d4. c8 | d4 f c' c | d,2. r8 c |
 		d4 f d' c8 d | c4 bes a e8 f | g2 g | f2 r4 a8 c |
 
-		%% B part
+		%% part "B"
 		bes4 a g4. c8 | bes4 a g2 | d'4 bes g f | a2. b!8 d |
 		c4 b! a r8 d | c4 b! a b8 c | d4 b! g e | d2. c4 |
 
-		%% A part
+		%% part "A"
 		d f c' a8 c | a4 d, d4. c8 | d4 f c' c | d,2. c8 cis |
 		d4 f d' c8 d | c4 bes a4. g8 |
 	} \alternative {
@@ -135,24 +135,24 @@
 % if part=='LyricsFake':
 %% this is from the fake book
 \lyricmode {
-	%% A part
+	%% part "A"
 	My Ship has sails that are made of silk,
 	the decks are trimmed with gold.
 	And of jam and spice there's a par -- a -- dise in the hold. __
 
-	%% A part
+	%% part "A"
 	My Ship's a -- glow with a mil -- lion pearls and ru -- bies fill each bin;
 	the sun sits high in a sap -- phire sky when my ship comes in.
 
-	%% B part
+	%% part "B"
 	I can wait the years 'til it ap -- pears one fine day one spring,
 	but the pearls and such the won't mean much if there's miss -- ing just one thing.
 
-	%% A part
+	%% part "A"
 	I do not care if that day ar -- rives, that dream need nev -- er be,
 	if the ship I sing does -- n't al -- so bring my own true love to me.
 
-	%% ending
+	%% part "ending"
 	My own true love to me,
 	if the ship I sing does -- n't al -- so bring my own true love to me. __
 }

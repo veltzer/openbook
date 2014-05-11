@@ -84,16 +84,16 @@
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Presto" 4 = 200
 
-	%% A part
+	%% part "A"
 	g'2 fis4 g | d g fis g | e2 g4 a~ | a2. g4 |
 	b r d, d~ | d e g2 | a1~ | a2. r4 |
-	%% A part
+	%% part "A"
 	g2 fis4 g | d g fis g | e2 g4 a~ | a2. g4 |
 	d' r g, g~ | g b a2 | g1~ | g4 b b b |
-	%% B part
+	%% part "B"
 	cis, r e dis~ | dis b' b8 b4. | d1 | r4 b b b |
 	d1 | c | b | a |
-	%% A part
+	%% part "A"
 	g2 fis4 g | d g fis g | e2 g4 a~ | a g a g |
 	e' r g, g~ | g b a2 | g1~ | g2. r4 |
 }
@@ -101,16 +101,16 @@
 
 % if part=='LyricsFake':
 \lyricmode {
-	%% A part
+	%% part "A"
 	This Can't Be Love be -- cause I feel so well, __
 	no sobs, no sor -- rows, no sighs; __
-	%% A part
+	%% part "A"
 	This Can't Be Love, I get no diz -- zy spell. __
 	My head is not __ in the skies, __
-	%% B part
+	%% part "B"
 	my heart does not stand still, __ just hear it beat!
 	This is too sweet to be love.
-	%% A part
+	%% part "A"
 	This Can't Be Love be -- cause I feel so well; __
 	but still I love to look __ in your eyes. __
 }

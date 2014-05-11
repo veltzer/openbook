@@ -98,7 +98,7 @@
 	\time 4/4
 	\key ees \major
 
-	%% A part
+	%% part "A"
 	g8 |
 	\repeat volta 2 {
 		aes g f ees f4. g8 | bes8 aes g f aes4. bes8 | ees8 d c bes c2 | r2 r4 d4 |
@@ -111,10 +111,10 @@
 			ees1~ | ees2 r |
 		}
 	}
-	%% B part
+	%% part "B"
 	ees8 f ees c'~ c4 c | c8 des c b c2 | f,8 g f c'~ c4 c | c8 des c b c2 |
 	g8 aes g ees'~ ees4 ees | ees8 d ees d f4 d | c c g g | bes2. r8 g |
-	%% A part
+	%% part "A"
 	aes g f ees f f4 g8 | bes8 aes g f aes8 aes4 bes8 | ees8 d c bes c2 | r2 r4 d4 |
 	f8 ees d c d4 ees | bes bes2 g4 | bes2 bes | ees2. r8 g, |
 }
@@ -123,20 +123,20 @@
 % if part=='LyricsReal':
 %% This is taken from the inetnet and adjusted for this tune
 \lyricmode {
-	%% A part
+	%% part "A"
 	You must re -- mem -- ber this
 	A kiss is still a kiss
 	A sigh is still a sigh
 	The fun -- da -- men -- tal things app -- ly
 	As Time Goes By __
-	%% A part
+	%% part "A"
 	And _
-	%% B part
+	%% part "B"
 	Moon -- light and love __ songs- nev -- er out of date
 	Hearts full of pas -- __ sion- jea -- lou -- sy and hate
 	Wo -- men needs man- __ and man must have his mate
 	That no one can de -- ny
-	%% A part
+	%% part "A"
 	It's still the same old sto -- ry
 	A fight for love and glo -- ry
 	A case of do or die
@@ -147,7 +147,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
-	%% A part
+	%% part "A"
 	And when two lov -- ers woo
 	They still say: "\"I" love "you\""
 	On that you can re -- ly

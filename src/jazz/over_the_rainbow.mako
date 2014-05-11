@@ -99,7 +99,7 @@
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Adagio" 4 = 76
 
-	%% A part
+	%% part "A"
 	\repeat volta 2 {
 		ees2 ees' | d4 bes8 c d4 ees | ees,2 c' | bes1 |
 		c,2 aes' | g4 ees8 f g4 aes | f d8 ees f4 g |
@@ -112,11 +112,11 @@
 		}
 	}
 
-	%% B part
+	%% part "B"
 	g8 bes g bes g bes g bes | aes bes aes bes aes bes aes bes | c2 c~ | c2. r8 bes |
 	g8 bes g bes g bes g bes | a c a c a c a c | d2 d | f c |
 
-	%% A part
+	%% part "A"
 	ees,2 ees' | d4 bes8 c d4 ees | ees,2 c' | bes1 |
 	c,2 aes' | g4 ees8 f g4 aes | f d8 ees f4 g | ees1 |
 }
@@ -124,16 +124,16 @@
 
 % if part=='LyricsWikifonia':
 \lyricmode {
-	%% A part
+	%% part "A"
 	Some -- where O -- ver The Rain -- bow, way up high,
 	there's a land that I heard of once in a lull -- a -- by
 
-	%% B part
+	%% part "B"
 	true
 	Some day I'll wish up -- on a star and wake up where the clouds are far be -- hind me. __
 	Where trou -- bles melt like le -- mon drops a -- way a -- bove the chim -- ney tops that's where you'll find me
 
-	%% B part
+	%% part "A"
 	Some -- where O -- ver The Rain -- bow, blue -- birds fly.
 	Birds fly o -- ver the rain -- bow, why then, oh why can't I?
 }
@@ -141,7 +141,7 @@
 
 % if part=='LyricsmoreWikifonia':
 \lyricmode {
-	%% A part
+	%% part "A"
 	Some -- where O -- ver The Rain -- bow, skies are blue,
 	and the dreams that you dare to dream real -- ly do come
 }

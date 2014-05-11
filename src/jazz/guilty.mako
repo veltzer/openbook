@@ -76,7 +76,7 @@
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	%% \tempo "Moderato" 4 = 100
 
-	%% A part
+	%% part "A"
 	\repeat volta 2 {
 		f,8 g f g~ g2 | g8 a g a~ a2 | a8 bes a bes~ bes a bes4 | d2 c | c8 bes a g~ g a bes4 |
 		f4 f2. |
@@ -88,10 +88,10 @@
 			g8 ees g4 a8 bes c bes~ | bes2. r4 |
 		}
 	}
-	%% B part
+	%% part "B"
 	a8 f g a~ a2 | a8 c bes a~ a2 | d8 c bes a~ a f g4 | a1 |
 	c8 a bes c~ c2 | bes8 c d c~ c4. a8 | c g a bes~ bes c d4 | c2. r4 |
-	%% A part
+	%% part "A"
 	f,8 g f g~ g2 | g8 a g a~ a2 | a8 bes a bes~ bes a bes4 | d2 c |
 	c8 bes a g~ g a bes4 | f4 f2. | ees'8 d ees c~ c4 d | bes2. r4\fermata |
 }
@@ -99,7 +99,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
-	%% A part
+	%% part "A"
 	Is it a sin, __ is it a crime, __ lov -- ing you dar, __ like i do? __ _ If it's a crime __ then I'm
 	Guilt -- y, Guilt -- y of lov -- ing you. __ Guit -- y of dream -- ing of you. __
 	What can I do, __ what can I say, __ af -- ter I've tak -- en the blame? You say you're thu, __

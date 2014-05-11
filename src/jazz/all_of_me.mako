@@ -123,7 +123,7 @@
 % if part=='LyricsReal':
 %% this version of the lyrics is from the internet but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
-	%% A part
+	%% part "A"
 	All of me __
 	why not take all of me __
 	Can't you see __
@@ -134,7 +134,7 @@
 	Take my arms __
 	I'll ne -- ver use them __
 
-	%% B part
+	%% part "B"
 	Your good -- bye __
 	left me with eyes that cry __
 	How can I __

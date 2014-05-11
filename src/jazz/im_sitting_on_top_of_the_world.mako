@@ -80,7 +80,7 @@
 
 	\partial 4
 	c4 |
-	%% A part
+	%% part "A"
 	\repeat volta 2 {
 		c a r c | d bes r d | c1~ | c4 c,8 c~ c d f4 | g1~ | g4 g8 g~ g a g4 | f1~ |
 		f2. c'4 |

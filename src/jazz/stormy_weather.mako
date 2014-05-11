@@ -92,7 +92,7 @@
 
 	\partial 4 ais'8 b
 
-	%% A part
+	%% part "A"
 	\repeat volta 2 {
 		d2.~ d8 ais16 b | d8 b d cis c4 ais8 b | d d,4.~ d2 |
 		a'8. a16 a8. a16 a4~ a8 g16 e | g8 d4.~ d2 | c8 e g ais~ ais4. ais8 |
@@ -104,12 +104,12 @@
 			b8 g4.~ g4 g |
 		}
 	}
-	%% B part
+	%% part "B"
 	e8 d4.~ d2 | c8 e g ais~ ais4. ais8 | b8 g4.~ g2 |
 	e8. fis16 \times 2/3 { g8 a g~ } g8. g16 g8. g16 | g4. g8 b g4. | e8. fis16 \times 2/3 { g8 a g~ } g8. g16 g8. g16 |
 	g4. g8 e d4. | e8. fis16 \times 2/3 { g8 a g~ } g8. g16 g8. g16 | g4. g8 c8 b4. | d4 b8 a g4 e |
 	a2. ais8 b |
-	%% A part
+	%% part "A"
 	d2.~ d8 ais16 b | d8 b d cis c4 ais8 b | d d,4.~ d2 |
 	a'8. a16 a8. a16 a4~ a8 g16 e | g8 d4.~ d2 | c8 e g ais~ ais4. ais8 | b g4.~ g2 |
 	c,8 e g ais~ ais4. ais8 | b g4.~ g2~ |

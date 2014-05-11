@@ -53,7 +53,7 @@
 	- add the real book version.
 	- the Bb9#11 in the fake book version appears as Bb#11 in the print. Check it out and document the results.
 	REMARKS:
-	- this tunes song could also be noted as "AB" but then you lose the info that the first 8 bars of the A and B part are the same.
+	- this tunes song could also be noted as "AB" but then you lose the info that the first 8 bars of the A and part "B" are the same.
 % endif
 
 % if part=='ChordsFake':
@@ -102,19 +102,16 @@
 
 	\partial 4 e8 f |
 
-	%% A part
+	%% part "A"
 	g2. e8 f | g4 a b c | c2. b8 a | g2. c,8 d |
 	e2. c8 d | e4 f g a | a2. g8 f | e2. g4 |
-
-	%% B part
+	%% part "B"
 	c,2. c'4 | g2. g4 | c,2. c'4 | g2. c4 |
 	b2. a4 | g2. c4 | b2. a4 | g2. e8 f |
-
-	%% A part
+	%% part "A"
 	g2. e8 f | g4 a b c | c2. b8 a | g2. c,8 d |
 	e2. c8 d | e4 f g a | a2. g8 f | e2. f8 g |
-
-	%% C part
+	%% part "C"
 	a2. f8 g | a4 b c d | e e e e | c2. c8 d |
 	e2. c8 d | e4 c4 a4 f4 | c'1~ | c2. r4 |
 }
@@ -122,16 +119,16 @@
 
 % if part=='LyricsFake':
 \lyricmode {
-	%% A part
+	%% part "A"
 	My Ro -- mance does -- n't have to have a moon in the sky,
 	My Ro -- mance does -- n't need a blue la -- goon stand -- ing by;
-	%% B part
+	%% part "B"
 	no month of May, no twin -- kling stars,
 	no hide a -- way, no soft gui -- tars.
-	%% A part
+	%% part "A"
 	My Ro -- mance does -- n't need a cas -- tle ris -- ing in Spain,
 	nor a dance to a con -- stant -- ly sur -- pris -- ing re -- frain.
-	%% C part
+	%% part "C"
 	Wide a -- wake I can make my most fan -- tas -- tic dreams come true;
 	My Ro -- mance does -- n't need a thing but you. __
 }

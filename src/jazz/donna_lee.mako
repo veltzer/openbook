@@ -80,7 +80,7 @@
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 
-	%% A part
+	%% part "A"
 	r2 \times 2/3 { g8 aes g } f e | ees! des c bes-4 a-3 c,-1 ees f |
 	\times 2/3 { ges aes ges } f-1 ees d f aes c | g! f r4 r e!8 d! |
 	ees! a, bes des! f aes c ees | des e, f c' b g-1 ees-3 des-2 |
@@ -89,7 +89,7 @@
 	c c des d ees des c bes | a c ees f \times 2/3 { ges aes ges } f ees |
 	d c b a bes aes r d,16 f | \times 2/3 { g8 ges f } e4 r2 |
 	ees'!8 des f, aes c bes aes f | g bes des ees \times 2/3 { e fis e } ees des |
-	%% B part
+	%% part "B"
 	c4 r \times 2/3 { g'8 aes g } f e | ees! des c bes-4 a-3 c,-1 ees f |
 	\times 2/3 { ges aes ges } f-1 ees d f aes c | g! f r4 r g8 f |
 	e f g aes bes aes g f | \times 2/3 { des' ees des } c bes \times 2/3 { aes bes aes } g e |

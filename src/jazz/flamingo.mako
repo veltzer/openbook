@@ -98,7 +98,7 @@
 	\key f \major
 
 	\partial 4 c4
-	%% A part
+	%% part "A"
 	\repeat volta 2 {
 		c'4. a8~ a2 | r4 bes8 c e4 d8 c | aes1 | r4 g8 aes c4 bes8 aes |
 		f4 f2. | r4 f8 f g4 f8 g |
@@ -110,10 +110,10 @@
 			f1~ | f4 r r f |
 		}
 	}
-	%% B part
+	%% part "B"
 	f'1 | r4 f8 f f4 ees8 des | ees4. ees8 aes2 | r4 ees8 ees~ ees4 des8 c |
 	des4. des8 g2 | r4 des4 des c8 bes | c1~ | c2 r4 c,4 |
-	%% A part
+	%% part "A"
 	c'4. a8~ a2 | r4 bes8 c e4 d8 c | aes1 | r4 g8 aes c4 bes8 aes |
 	f4 f2. | r4 g \times 2/3 { bes d f } | a1~ | a2. r4 |
 }

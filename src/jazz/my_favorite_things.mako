@@ -129,17 +129,17 @@
 % if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
-	%% A part
+	%% part "A"
 	Rain -- drops on ros -- es and whisk -- ers on kit -- tens,
 	bright cop -- per ket -- tles and warm wool -- en mit -- tens;
 	brown pa -- per pack -- ag -- es tied up with string,
 	these are a few of My Fa -- vor -- ite Things.
-	%% A part
+	%% part "A"
 	Girls in white dress -- es with blue sat -- in sash -- es,
 	snow -- flakes that stay on my node and eye -- lash -- es,
 	sil -- ver white win -- ters that melt in to spring.
 	These are a few of My Fa -- vor -- ite Things.
-	%% B part
+	%% part "B"
 	When the dog bites, when the bee stings,
 	when I'm feel -- ing sad, __
 	I sim -- ply re -- mem -- ber My Fa -- vor -- ite things
@@ -149,7 +149,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
-	%% A part
+	%% part "A"
 	cream col -- ored po -- nies and crip ap -- ple strud -- els,
 	door -- bells and sleigh -- bell and schnitz -- el with noo -- dles;
 	wild geese that fly with the moon on the wings,

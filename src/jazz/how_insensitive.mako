@@ -185,12 +185,12 @@
 	\key d \minor
 
 	\repeat volta 2 {
-		%% A part
+		%% part "A"
 		a1~ | a4 bes8 a~ a bes4 a8~ | a1~ | a4 bes8 a~ a bes4 a8~ |
 		a2~ a8 gis4 a8 | c b4 bes8~ bes a4 a8~ | a4. g8~ g2~ | g2~ g4. g8~ |
 		g1~ | g4 a8 g~ g a4 g8~ | g1~ | g4 a8 g~ g a4 g8~ |
 		g2 r8 fis4 g8 | bes a4 gis8~ gis g4 g8~ | g4. f8~ f2~ | f~ f4. f8~ |
-		%% B part
+		%% part "B"
 		f1~ | f4 g8 f~ f g4 f8~ | f1~ | f4 g8 f~ f g4 a8~ |
 		a2. f4 | d e8 d~ d e4 f8~ | f2 f~ | f~ f4. f8~ |
 		f1~ | f4 g8 f~ f g4 e8~ | e1~ | e4 f8 e~ e f4 e8~ |
@@ -209,7 +209,7 @@
 % if part=='LyricsFake':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
-	%% A part
+	%% part "A"
 	How __ In -- sen -- __ si -- tive __ I must __ have seemed __ when she told me that __ she loved __ me. __
 	How __ un -- moved __ and cold __ I must __ have seemed __ when she told me so __ sin -- cere -- __ ly. __
 	Why, __ she must __ have asked, __ did I __ just turn __ and stare in i -- __ cy si -- lence? __
@@ -221,7 +221,7 @@
 
 % if part=='LyricsmoreFake':
 \lyricmode {
-	%% B part
+	%% part "B"
 	Now, __ she's gone __ a -- way __ and I'm __ a -- lone __ with the mem -- 'ry of __ her last __ look. __
 	Vague __ _ drawn __ and sad, __ I see __ it still, __ all her heart- break in __ that last __ look. __
 	How, __ she must __ have asked, __ could I __ just turn __ and stare in i -- __ cy si -- lence? __

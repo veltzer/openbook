@@ -98,7 +98,7 @@
 % if part=='LyricsReal':
 %% this version of the lyrics is from the internet adjusted for the real book.
 \lyricmode {
-	%% A part
+	%% part "A"
 	A place in -- side my heart __
 	Is where you live __
 	Mem -- ories of our start __
@@ -112,7 +112,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
-	%% A part
+	%% part "A"
 	_ Nights of moon -- lit skies __
 	A gen -- tle kiss __
 	Some -- thing in your eyes __
@@ -128,7 +128,7 @@
 
 % if part=='LyricsmoremoreReal':
 \lyricmode {
-	%% A part
+	%% part "A"
 	The thought of how we met __
 	Still lin -- gers on __
 	How can I for -- get __

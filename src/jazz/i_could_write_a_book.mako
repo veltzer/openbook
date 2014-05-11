@@ -96,18 +96,18 @@
 	%% partial
 	\partial 2 e4 f |
 	\repeat volta 2 {
-		%% A part
+		%% part "A"
 		g2 b | a4 g e d | e1~ | e4 g e d |
 		e g e d | e c'2 e,4 | g1~ | g2 a4 b |
 	}
 	\alternative {
 		{
-			%% B part
+			%% part "B"
 			c2 c | c4 d2 b4 | a2 a | g e4 fis |
 			g2 g | g4 a2 fis4 | g1~ | g4 r e f |
 		}
 		{
-			%% C part
+			%% part "C"
 			c'2 c | c4 d2 b4 | bes2 bes | a g4 f |
 			e2 e | d4 c'2 b4 | c1 | r2 e,4 f |
 		}
@@ -121,12 +121,12 @@
 	%% partial
 	If they
 
-	%% A part
+	%% part "A"
 	asked me I Could Write A Book, __
 	a -- bout the way you walk and whis -- per and look, __
 	I could
 
-	%% B part
+	%% part "B"
 	write a pre -- face on how we met,
 	so the world would nev -- er for -- get, __
 
@@ -139,15 +139,15 @@
 	%% partial
 	_ _
 
-	%% A part
+	%% part "A"
 	sim -- ple se -- cret of the plot __
 	is just to tell them that I love you a -- lot, __
 	then the
 
-	%% B part
+	%% part "B"
 	_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-	%% C part
+	%% part "C"
 	world dis -- cov -- ers as my book ends,
 	how to make two lov -- ers of friends.
 
