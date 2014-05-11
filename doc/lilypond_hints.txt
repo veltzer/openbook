@@ -24,7 +24,7 @@ Melody:
 	g1~ \mark \markup { \italic { Fine } }
 	This will put the Fine on top of the staff.
 	If you want it below the staff then use:
-	g1  | r4_\markup { \italic { Fine } }
+	g1 | r4_\markup { \italic { Fine } }
 - putting "small" gliding notes
 	just use on of \grace \acciaccatura \appoggiatura. See the suicide_tango tune.
 	References: http://lilypond.org/doc/v2.14/Documentation/notation/special-rhythmic-concerns
@@ -89,7 +89,7 @@ questions:
 - how do I put chords in parenthesis? I still do not know.
 	- <\parenthesize bes:7> does not work
 	- ( bes:7 ) does not work either.
-  I have couple of tunes that need this.
+	I have couple of tunes that need this.
 - how do I do 4-3, 9-8 or other similar chords?
 
 Frets:
@@ -98,29 +98,29 @@ Frets:
 	\include "predefined-guitar-fretboards.ly"
 	\new FretBoards {
 		\chordmode {
-			[chords go here]	
+			[chords go here]
 		}
 	}
-  The problem with this is that you wind up repeating the chord names yet again just for the
-  guitar diagrams. There is a way to share. Define a name for the chords and then reuse that name
-  inside the FretBoards section.
+	The problem with this is that you wind up repeating the chord names yet again just for the
+	guitar diagrams. There is a way to share. Define a name for the chords and then reuse that name
+	inside the FretBoards section.
 - in order to define your own fretboards use something like:
 	\storePredefinedDiagram #default-fret-table \chordmode {g:sus4} #guitar-tuning #"3-3;2-2;o;o;o;3-4;"
 	look at "src/rock/talking_bout_a_revolution.mako"
-	
+
 Tempo:
 ======
 - cut time:
 	\set Staff.timeSignatureFraction=#'(2 . 2)
-        \time 4/4
+	\time 4/4
 	see "My Romance" for a use case.
 	(the spaces are CRITICAL!)
 
 	Another way is:
 
 	\once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
-        \once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
-        \time 4/4
+	\once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+	\time 4/4
 
 	See discussion here:
 	http://old.nabble.com/using-the-cut-time-symbol-for-4-2-etc.-td18200303.html
@@ -156,7 +156,7 @@ Tempo:
 Lyrics
 ======
 - breaking up lyrics:
-	eve -- ry day I write the book 
+	eve -- ry day I write the book
 		eve - will be on the first note
 		ry - will be on the second one.
 - one syllable or word on a couple of notes:
@@ -192,7 +192,7 @@ Lyrics
 	If parts are A { B, C }
 	then write them as one lyrics block which goes A B C (as opposed to A B A C).
 	If parts are A B C D where B is the first volta and D is the second then write two lyrics blocks:
-		A B D    and     C.
+		A B D and C.
 	See "they_all_laughed" for an example.
 - one word over a note with arcs:
 	Actually you dont need to do anything in order to do this.
@@ -204,7 +204,7 @@ Lyrics
 	than one note. In that case you must put the -- before the _ like this:
 	af -- _ _ ter
 	The other way will NOT work:
-	af _ _  -- ter
+	af _ _ -- ter
 	Is this a bug in lilypond?!?
 - broken up word at the end of the tune:
 	Look at "Flamingo" for this. It has the prefix of the last word
