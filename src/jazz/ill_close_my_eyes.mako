@@ -35,7 +35,7 @@
 	- problem with the words ( the phrase "Don't you know" did not fit in my version, fix the tune).
 	- get copyright for this tune (the real book didn't have one).
 	REMARKS:
-	- this tunes structure could also be thought of as ABAC since the begining of the A and B part (the
+	- this tunes structure could also be thought of as ABAC since the begining of the A and part "B" (the
 	first 8 bars) under the AB interpretation is exactly the same.
 % endif
 
@@ -75,13 +75,12 @@
 	\key f \major
 	\partial 4*3 c4 bes' c8 a~ |
 
-	%% A part
+	%% part "A"
 	a1~ | a4 c, bes' a | a4 g8 e~ e2~ | e4 a, g' a8 f~ |
 	f1~ | f4 f a f8 ees~ | ees1~ | ees2 r4 d |
 	cis d c'2~ | c4 bes f g | a4. a8 a a4 a8~ | a4 r \times 2/3 { a a a } |
 	a4. gis8 gis2~ | gis4 e dis e | g1~ | g4 c, bes' c8 a~ |
-
-	%% B part
+	%% part "B"
 	a1~ | a4 c, bes' a | a4 g8 e~ e2~ | e4 a, g' a8 f~ |
 	f1~ | f4 f a f8 ees~ | ees1~ | ees2 r4 d |
 	cis d c'2~ | c4 bes f g | a4. a8 a a4 a8~ | a4 a c bes |
@@ -93,7 +92,7 @@
 %% these are lyrics from the internet adjusted by me to the real book tune
 %% the adjustment is pretty horrible
 \lyricmode {
-	%% A part
+	%% part "A"
 	I'll Close My Eyes __ __
 	To eve -- ry -- one but you __ __
 	And when I do __ __
@@ -104,7 +103,7 @@
 	I'll nev -- er say yes __ _
 	To_a_new love af -- fair
 
-	%% B part
+	%% part "B"
 	Then_I'll Close My Eyes __ __
 	To eve -- ry -- thing that's gay __ __
 	If you_are not there __ __
@@ -155,13 +154,13 @@
 	\key f \major
 	\partial 8*5 c8 bes'4 c8 a~ |
 
-	%% A part
+	%% part "A"
 	a1 | r4 r8 c, bes'4 a | a4 g8 e8~ e2 | r4 a, g'4 a8 f~ |
 	f1 | r4 r8 f a4 f8 ees8~ | ees1 | r2 r4 ees |
 	des d c'2 | r4 r8 bes f4 g | a1 | r2 r4 a |
 	gis1 | r4 r8 e g4 f | e1 | r4 r8 c bes'4 c8 a~ |
 
-	%% B part
+	%% part "B"
 	a1 | r4 r8 c, bes'4 a | a4 g8 e8~ e2 | r4 a, g'4 a8 f~ |
 	f1 | r4 r8 f a4 f8 ees8~ | ees1 | r2 r4 ees |
 	des d c'2 | r4 r8 bes f4 g | a1 | r4 r8 a c4 b |
@@ -171,6 +170,7 @@
 
 % if part=='LyricsMy':
 \lyricmode {
+	%% part "A"
 	I'll Close My Eyes __
 	To eve -- ry -- one but you __
 	And when I do __
@@ -181,6 +181,7 @@
 	I'll_never_say yes
 	To_a_new love af -- fair
 
+	%% part "B"
 	Then_I'll Close My Eyes __
 	To eve -- ry -- thing that's gay __
 	If you_are not there __

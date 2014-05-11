@@ -90,16 +90,16 @@
 
 % if part=='LyricsFake':
 \lyricmode {
-	%% A part
+	%% part "A"
 	Heart and soul, __ I fell in love with you Heart and Soul, __ the way a fool would do,
 	Mad -- ly, be -- case you held me tight __ and stole a kiss in the night.
-	%% A part
+	%% part "A"
 	Heart and soul, __ I begged to be a -- dored; Lost con -- trol, __ and tum -- bled o -- ver -- board
 	Glad -- ly, that mag -- ic night we kissed. __ there in the moon -- mist.
-	%% B part
+	%% part "B"
 	Oh! but your lips were thrill -- ing, much too thirll -- ing. Nev -- er be -- fore were
 	mine so strange -- ly will -- ing. But
-	%% A part
+	%% part "A"
 	now I see __ what one em -- brace can do. Look at me, __ it's got me love -- ing you, Mad -- ly
 	that lit -- tle kiss your stole Heald all my heart and soul. __
 }

@@ -55,7 +55,7 @@
 	- In the fake book lyrics where it says "His" a boy should sing "Her". We should have
 	alternate lyrics here.
 	REMARK:
-	- this tunes structure can also be seen as ABAC since the first 8 bars of the A and B part
+	- this tunes structure can also be seen as ABAC since the first 8 bars of the part "A" and "B"
 	under an "AB" structure are the same.
 % endif
 
@@ -128,13 +128,13 @@
 	\partial 4 f4 |
 
 	\repeat volta 2 {
-		%% A part
+		%% part "A"
 		f2~ f8 bes, d f | g a g2 g4 | g2~ g8 c, ees g | a2. a4 |
 		a2~ a8 d, f a | bes c bes2 bes4 | bes2~ bes8 ees, g bes | c2. bes8 c |
 		d4. d16 d d8 d d d | d4 d~ d8 d c bes | c4 c8 c c d c bes | c2. bes8 a |
 		bes8 bes4 bes8 bes c a g | bes4 bes2 g8 gis | a4 a8 a a a g f | a2. g4 |
 
-		%% B part
+		%% part "B"
 		f2~ f8 bes, d f | g a g2 g4 | g2~ g8 c, ees g | a2. a4 |
 		a2~ a8 d, f a | bes c bes2 bes4 | bes2~ bes8 ees, g bes | d2. c4 |
 		bes4 bes8 bes bes a g a | bes4 bes2 bes8 c | d4 d8 d d d c bes | d,2. g4 |
@@ -148,7 +148,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
-	%% A part
+	%% part "A"
 	The night __ is like a love -- ly tune,
 	be -- ware __ My Fool -- ish Heart!
 	How while __ the ev -- er con -- stant moon;
@@ -159,7 +159,7 @@
 	for they both give the ver -- y same sen -- sa -- tion
 	when you're lost in the mag -- ic of a kiss.
 
-	%% B part
+	%% part "B"
 	His lips __ are much to close to mine,
 	be -- ware __ My Fool -- ish Heart
 	but should __ our ea -- ger lips com -- bine

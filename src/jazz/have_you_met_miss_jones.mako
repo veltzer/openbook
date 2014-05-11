@@ -98,7 +98,7 @@
 	\time 4/4
 	\key f \major
 
-	%% the first two "A" parts...
+	%% part "A"
 	\repeat unfold 2 {
 		a4 d, c d | c2. r4 | d e f g | a bes c2 |
 		d4 g, f g | f2. a4 |
@@ -107,11 +107,11 @@
 		{ c1~ | c4 d d d | }
 	}
 
-	%% B part...
+	%% part "B"
 	c4 bes f g | aes aes aes aes | aes ges des ees | e! e e e |
 	e d fis a | des2 des | bes1~ | bes2. r4 |
 
-	%% A part...
+	%% part "A"
 	\repeat volta 2 {
 		a4 d, c d | c2. r4 | d e f g | a bes c d |
 		e1~ | e4 d a g |
@@ -128,16 +128,20 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+	%% part "A"
 	"\"Have" You Met Miss "Jones?\"" Some one said as we shook hands.
 	She was just Miss Jones to me. __
 
+	%% part "A"
 	Then I said "\"Miss" Jones, You're a girl who un -- der -- stands,
 	I'm a man who must be "free.\"" __
 
+	%% part "B"
 	And all at once I lost my breath,
 	and all at once was scared to death,
 	and all at once I owned the earth and sky! __
 
+	%% part "A"
 	Now I've met Miss Jones, and we'll keep on meet -- ing till we die, __
 	Miss Jones and I.
 

@@ -90,19 +90,19 @@
 	\time 4/4
 	\key f \minor
 
-	%% A part
+	%% part "A"
 	c8 c bes aes g f4. | d4 f8 e~ e2 | c4 g'8 f~ f2 | des4 c'8 bes~ bes2 |
 	ees8 ees des c bes aes4. | f8 c' bes e,~ e c' bes ees,~ | ees2~ ees8 bes' aes des,~ | des aes' g c,~ c2 |
 
-	%% A part
+	%% part "A"
 	c'8 c bes aes g f4. | d4 f8 e~ e2 | c4 g'8 f~ f2 | des4 c'8 bes~ bes2 |
 	ees8 ees des c bes aes4. | f8 c' bes e,~ e c' bes ees,~ | ees2~ ees8 ees g aes~ | aes1 |
 
-	%% B part
+	%% part "B"
 	c4 des8 d ees c ees des~ | des bes4.~ bes2 | bes4 b8 c des bes des c~ | c1 |
 	c4 des8 d ees c ees des~ | des bes4.~ bes2 | bes4 b8 c des bes des c~ | c des c bes~ bes2 |
 
-	%% A part
+	%% part "A"
 	\repeat volta 2 {
 		c8 c bes aes g f4. | d4 f8 e~ e2 | c4 g'8 f~ f2 | des4 c'8 bes~ bes2 |
 		ees8 ees des c bes aes4. | f8 c' bes e,~ e c' bes ees,~ |
@@ -119,26 +119,26 @@
 
 % if part=='LyricsFake':
 \lyricmode {
-	%% A part
+	%% part "A"
 	Lul -- la -- by Of Bird -- land
 	that's what I __
 	al -- ways hear __
 	when you sigh. __
 	Nev -- er in my word -- land could there be ways __ to re -- veal __ __ in a phrase __ how I feel! __
 
-	%% A part
+	%% part "A"
 	Have you ev -- er heard two tur -- tle doves __
 	bill and coo __
 	when they love? __
 	That's the kind of mag -- ic mu -- sic we make __ with our lips __ __ when we kiss! __
 
-	%% B part
+	%% part "B"
 	And tere's a weep -- y old wil -- low; __
 	he real -- ly knows how to cry! __
 	That's how I'd cry in my pil -- low __
 	if you should tell me fare -- well __ and good -- bye! __
 
-	%% A part
+	%% part "A"
 	Lul -- la -- by Of Bird -- land whis -- per low, __
 	kiss me sweet __
 	and we'll go __

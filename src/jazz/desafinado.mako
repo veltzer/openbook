@@ -113,25 +113,25 @@
 %%	http://lilypond.org/doc/v2.11/Documentation/user/lilypond/MIDI-instruments#MIDI-instruments
 %%	\set Staff.midiInstrument = #"flute"
 
-	%% A part
+	%% part "A"
 	r8 c4 d8 e4 f | e4. d8 cis4 d | f4. des8 des2~ | des1 |
 	r8 d!4 e8 f4 g | f4. e8 dis4 e | c'4. ees,8 ees2~ | ees1 |
 	r8 d c' bes a g4 bes8~ | bes4. a8 dis,4 e | fis8 a fis2 d4 | ees1 |
 	r8 aes4 g8 f4 d | aes'4. g8 f4 d | f4. des8 des2~ | des r |
 
-	%% A part
+	%% part "A"
 	r8 c4 d8 e4 f | e4. d8 cis4 d | f4. des8 des2~ | des1 |
 	r8 d!4 e8 f4 g | f4. e8 dis4 e | c'4. ees,8 ees2~ | ees1 |
 	r8 c'4 bes8 a g4 bes8~ | bes4. a8 g4 f | g8 f g2.~ | g2 r |
 
-	%% B part
+	%% part "B"
 	e4 fis e8 fis4 e8~ | e4. d8 cis4 d | e1~ | e2 r4 cis |
 	e fis e8 fis4 e8~ | e4. d8 cis4 d | e4. b8 e2~ | e1 |
 	r8 e4 fis8 gis4 a | b4. a8 cis,4 d | e8 fis e fis e2~ | e r4 e |
 	g a g a | g f e f | g d8 g~ g d g4~ | g r r8 d g a |
 	bes4 a bes a | c bes a bes | g1~ | g4 r r2 |
 
-	%% A part
+	%% part "A"
 	r8 c,4 d8 e4 f | e4. d8 cis4 d | f4. des8 des2~ | des1 |
 	r8 d!4 e8 f4 g | f4. e8 dis4 e | d' des c b | bes! d r a |
 	c4. b8 bes4 a | bes a g f | a2. e4 | g2. d8 e |

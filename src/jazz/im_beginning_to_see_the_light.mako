@@ -75,7 +75,7 @@
 
 	\partial 8
 	dis,8 |
-	%% A part
+	%% part "A"
 	\repeat volta 2 {
 		e g e4 g a | b8 e,4 e8~ e4. dis8 | e g e4 g a | bes8 ees,4 ees8~ ees4. ees8 |
 		e8 g e4 g a | b8 d4 d8~ d4 d8 c | b g e4 g8 a4 g8~ | g2 r4 r8 dis |

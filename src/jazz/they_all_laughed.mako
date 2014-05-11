@@ -67,8 +67,10 @@
 		\endPart
 
 		\myMark "A'"
+		\startPart
 		g2 e:m | a:m7 d:7 | cis:7.9- fis:7.9- | b:m7 e:7 | \myEndLine
 		d1:6 | a:7 | d1*2:7 | \myEndLine
+		\endPart
 
 		\myMark "B"
 		\startPart

@@ -90,10 +90,10 @@
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 
-	%% intro
+	%% part "intro"
 	r1 * 4 |
 
-	%% A part
+	%% part "A"
 	\repeat volta 2 {
 		g'4. e8 e4 d8 g~ | g4 e8 e~ e e d g~ |
 		g4 e e d8 g~ | g g e e~ e e d f~ |
@@ -106,7 +106,7 @@
 		}
 	}
 
-	%% B part
+	%% part "B"
 	f1~ | \times 2/3 {f4 ges f} \times 2/3 {ees4 f ees} |
 	des4. ees8~ ees2~ | ees2. r8 gis~ |
 	gis1~ | \times 2/3 {gis4 a gis} \times 2/3 {fis gis fis} |
@@ -116,7 +116,7 @@
 	\times 2/3 {c c, d} \times 2/3 {e f g} | gis2. a4 |
 	\times 2/3 {bes bes, c} \times 2/3 {d e f} | fis2. r4 |
 
-	%% A part
+	%% part "A"
 	g4. e8 e4 d8 g8~ | g4 e8 e~ e e d g~ |
 	g4 e e d8 g~ | g g e e~ e e d a'~ |
 	a4. f8 f f d c'~ | c4. e,8 \times 2/3 {e4 e d} |
@@ -128,10 +128,12 @@
 
 % if part=='LyricsReal':
 \lyricmode {
+	%% part "A"
 	Tall and tan and young __ and love -- __ ly,
 	the Girl __ From I -- pa -- ne -- __ ma goes walk -- __ ing,
 	and when __ she pass -- __ es, each one __ she pass -- __ es goes "ah!" __
 
+	%% part "B"
 	"ah!" __
 
 	Oh, __ but I watch her so sad -- ly. __
@@ -140,6 +142,7 @@
 	but each day when she walks to the sea,
 	she looks straight a -- head not at me.
 
+	%% part "A"
 	Tall and tan and young __ and love -- __ ly,
 	The Girl __ From I -- pa -- ne -- __ ma goes walk -- __ ing,
 	and when __ she pass -- es I smile, __
@@ -151,6 +154,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
+	%% part "A"
 	When she walks she's like __ a Sam -- __ ba
 	that swings __ so cool and sways __ _ so gen -- __ tle,
 	that when __ she pass -- __ es, each one __ she pass -- __ es goes

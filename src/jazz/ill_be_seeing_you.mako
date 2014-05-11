@@ -65,7 +65,7 @@
 	\time 2/2
 	\key ees \major
 
-	%% A part
+	%% part "A"
 	\repeat volta 2 {
 		g2. f4 | f8 ees4 d8~ d4 ees | aes4. g8 g4. f8 | f4. e8 e4 f | as4. g8 g4. f8 | f4. e8 e4 f | fis8 g4 c8~ c2~ | c2. r4 | ees2. d4 | d8 c4 b8~ b4 c | ees2. d4 | d8 c4 b8~ b4 c | c2. bes4 | bes8 fis4 fis8~ fis4 d' |
 		c8 g4 g8~ g4 c | fis,8 c4 c8~ c2 | g'2. f4 | f8 ees4 d8~ d4 ees | aes4. g8 g4. f8 | f4. e8 e4 f | aes4. g8 g4. f8 |

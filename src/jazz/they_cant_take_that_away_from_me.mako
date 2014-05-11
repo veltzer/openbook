@@ -89,19 +89,19 @@
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 120
 
-	%% Intro
+	%% part "Intro"
 	\partial 8*7 ees'8 ees ees ees4 ees8 g~ |
 
-	%% A part
+	%% part "A"
 	g1 | r8 ees ees ees ees4 ees8 bes~ | bes1 | r8 ees ees ees ees4 ees8 bes'~ |
 	bes1~ | bes8 r c4 c c | ees8.[ c16 bes8. aes16] bes4 g8 f | r ees ees ees ees4 ees8 g~ |
-	%% A part
+	%% part "A"
 	g1 | r8 ees ees ees ees4 ees8 bes~ | bes1 | r8 ees ees ees ees4 ees8 bes'~ |
 	bes1~ | bes4 c4 c c | ees8.[ c16 bes8. aes16] bes4 g8 ees~ | ees2. g8 a! |
-	%% B part
+	%% part "B"
 	bes4 g d' c | bes g d' c8 bes | g g g2 f4 | d2. g8 a! |
 	bes4 a! d c | bes g c c | f,1 | r8 ees ees ees ees4 ees8 g~ |
-	%% A part
+	%% part "A"
 	g1 | r8 ees ees ees ees4 ees8 bes~ | bes1 | r8 ees ees ees ees4 ees8 c'~ |
 	c1~ | c4 ees ees ees | ees8.[ c16 bes8. aes16] bes4 g8 ees~ | ees r bes'2 aes4 |
 	g aes g bes | f2 g | ees1~ | ees2. r4 |
@@ -110,20 +110,20 @@
 
 % if part=='LyricsFake':
 \lyricmode {
-	%% A part
+	%% part "A"
 	The way you wear your hat, __
 	the way you sip your tea, __
 	the mem -- 'ry of all that __
 	no, no! They Can't Take That A -- way From Me!
-	%% A part
+	%% part "A"
 	The way your smile just beams, __
 	the way you sing off key, __
 	the way you haunt my dreams, __
 	no, no! They Can't Take That A -- way From Me! __
-	%% B part
+	%% part "B"
 	We may nev -- er, nev -- er meet a -- gain on the bump -- y road to love,
 	still I'll al -- ways, al -- ways keep the mem -- 'ry of
-	%% A part
+	%% part "A"
 	the way you hold your knife, __
 	the way we danced till three, __
 	the way you changed my life, __

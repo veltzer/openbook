@@ -76,7 +76,7 @@
 	%%\tempo "Allegro" 4 = 130
 	\time 2/2
 	\key f \major
-	%% A part
+	%% part "A"
 	\repeat volta 2 {
 		c8 bes d, f a2 | c8 bes d, f a2 | c8 bes d, f a4 a |a2 a8 g f d | f4 f f2~ |
 		f a8 g f d | f1~ | f4 r r2 | c'8 bes d, f a2 | c8 bes d, f a2 | c8 bes d, f a4 a |

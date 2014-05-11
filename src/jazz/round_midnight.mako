@@ -99,7 +99,7 @@
 	\time 4/4
 	\key ees \minor
 
-	%% A part
+	%% part "A"
 	\repeat volta 2 {
 		r4 bes16 ees f bes ges4. bes,8 | ees4. d16 ees bes'8 aes r4 |
 		r ees16 ges bes des c4. ees,8 | a8 fis16 d gis4 aes8 f16 des g4 |
@@ -112,12 +112,10 @@
 			fis'4 f8 dis f4 ees8 des | ees2. ees8 f |
 		}
 	}
-
-	%% B part
+	%% part "B"
 	ges4 f8 ees f4. ees8 | d bes' r4 r ees,8 f | ges4 f8 ees f4. ees8 | d bes r4 r bes'4 |
 	ces4. ces8 bes4. bes8 | aes4 ges f4. bes8 | ees ees ees4 des8 des des4 | ces ees,8 d bes' aes e d |
-
-	%% A part
+	%% part "A"
 	r4 bes16 ees f bes ges4. bes,8 | ees4. d16 ees bes'8 aes r4 |
 	r ees16 ges bes des c4. ees,8 | a8 fis16 d gis4 aes8 f16 des g4 |
 	r4 aes16 ces ees ges f4. ces8 | bes4 \times 2/3 { ees,8 d des } c aes'4 ees16 f |
@@ -127,20 +125,20 @@
 
 % if part=='LyricsReal':
 \lyricmode {
-	%% A part
+	%% part "A"
 	It be -- gins to tell, 'round midnight, mid -- _ _ night.
 	I do pre -- tty well, till af -- _ _ ter sun -- _ _ down,
 	Sup -- per -- time I'm fee -- lin' sad; _ _ _ _ _
 	But it real -- ly gets _ _ _ bad, 'round mid -- night.
 	%% second volta
 	mid -- _ _ night knows it, too.
-	%% B part
+	%% part "B"
 	When a quar -- rel we had needs men -- ding,
 	Does it mean that our love is end -- ing.
 	Dar -- lin' I need you, lately I find
 	You're out of my heart,
 	And I'm out of my mind. _ _ _
-	%% A part
+	%% part "A"
 	Let our hearts take wings' 'round midnight, mid -- _ _ night.
 	Let the an -- gels sing, for your -- _ _ re tur -- _ _ ning.
 	Till our love is safe and sound. _ _ _ _ _
@@ -150,7 +148,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
-	%% A part
+	%% part "A"
 	Memo -- ries al -- ways start 'round midnight, mid -- _ _ night.
 	Ha -- ven't got the heart to stand -- _ _ those me -- _ _ mories,
 	When my heart is still with you, _ _ _ _ _

@@ -77,7 +77,7 @@
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante" 4 = 92
 
-	%% A part
+	%% part "A"
 	\repeat volta 2 {
 		r4 aes8 bes c ees f aes | bes bes4 aes8 g2 | aes8 aes4 g8 f2 | g8 g4 f8 ees2 |
 		r4 f ees des | aes'2 aes,8 bes4. |
@@ -85,10 +85,10 @@
 		{ c1~ | c2 r | }
 		{ aes1 | r4 bes c ees | }
 	}
-	%% B part
+	%% part "B"
 	g4 aes g aes | bes aes2 g4 | bes aes2 g4 | bes aes2 f4 |
 	aes g2 f4 | aes g2 e4 | c1~ | c2 r |
-	%% A part
+	%% part "A"
 	r4 aes8 bes c ees f aes | bes bes4 aes8 g2 | aes8 aes4 g8 f2 | g8 g4 f8 ees2 |
 	r4 f ees des | aes'2 aes,8 bes4. | aes1 | r |
 }
@@ -108,16 +108,19 @@
 %%	I'd like to add his initial to my monogram
 %%	Tell me, where is the shepherd for this lost lamb?
 
+	%% part "A"
 	There's a some -- bo -- dy I'm lon -- gin' to see
 	I hope that he, turns out to be
 	Some -- one who'll watch o -- ver me
 
 	me
 
+	%% part "B"
 	Al -- though he may not be the man some
 	Girls think of as hand -- some
 	To my heart he car -- ries the key
 
+	%% part "A"
 	Won't you tell him please to put on some speed
 	Fol -- low my lead, oh, how I need
 	Some -- one to watch o -- ver me
@@ -132,6 +135,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
+	%% part "A"
 	I'm a lit -- tle lamb who's lost in the wood
 	I know I could, al -- ways be good
 	To one who'll watch o -- ver %% me

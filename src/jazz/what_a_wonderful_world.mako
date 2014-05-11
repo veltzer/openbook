@@ -92,19 +92,19 @@
 	\partial 4
 	c8 e |
 
-	%% A part
+	%% part "A"
 	f4. a8 c2 | r8 d d d c2 | r8 bes bes bes a2 | r8 g g g f4~ \times 2/3 { f8 f f } |
 	f4~ \times 2/3 { f8 f f } f2 | r4 f8 f \times 2/3 {e4 f g} | a1~ | a2 r4 c,8 e |
 
-	%% A part
+	%% part "A"
 	f4. a8 c4. c8 | d4. d8 c4. c8 | bes4~ \times 2/3 { bes8 bes bes } a4. a8 | g4~ \times 2/3 { g8 g g } f4~ \times 2/3 { f8 f f } |
 	f4~ \times 2/3 { f8 f f } f2 | r4 f8 f \times 2/3 {e4 f g } | f1~ | f2 r4 f4 |
 
-	%% B part
+	%% part "B"
 	g8 g g g g c,4 c8 | bes' a a gis a4. f8 | g g g g g c,4 g'8 | bes a a gis a4 a8 c |
 	d4 d8 d c4~ \times 2/3 { c8 a c } | d4 d8 d c2 | r8 d d d c c4. | bes4 a g c,8 e |
 
-	%% A part
+	%% part "A"
 	f4. a8 c4. c8 | d4. d8 c2 | r8 bes bes bes a4. a8 | g4~ \times 2/3 { g8 g g } f4~ \times 2/3 { f8 f f } |
 	f4~ \times 2/3 { f8 f f } f2 | r4 f8 f \times 2/3 {e4 f g} | a1~ | a4 r a a |
 	\times 2/3 {a4 f g} f2 | r4 f8 f \times 2/3 {e4 f g} | f1~ | f\fermata |
@@ -113,18 +113,18 @@
 
 % if part=='LyricsFake':
 \lyricmode {
-	%% A part
+	%% part "A"
 	I see trees of green, red ros -- es too, I see the bloom for me and you, __
 	and I think __ to my -- self What A Won -- der -- ful World. __
-	%% A part
+	%% part "A"
 	I see skies of blue and clouds of white, the bright __ bless -- ed day, the dark __ sac -- red night, __
 	and I think __ to my -- self What A Won -- der -- ful World. __
-	%% B part
+	%% part "B"
 	The col -- ors of the rain -- bow, so pret -- ty in the sky
 	are al -- so on the fa -- ces of peo -- ple go -- in' by,
 	I see friends shak -- in' hands, __ say -- in' "\"How" do you "do!\""
 	They're real -- ly say -- in' "\"I" love "you,\""
-	%% A part
+	%% part "A"
 	I hear ba -- bies cry, I watch them grow.
 	They'll learn much more than I'll __ ev -- er know, __
 	and I think __ to my -- self What A Won -- der -- ful World. __

@@ -82,7 +82,7 @@
 
 	\partial 2.
 	bes4 d c |
-	%% A part
+	%% part "A"
 	\repeat volta 2 {
 		ees4. f,8 f2 | r8 f f g f4 ees | g1~ | g4 bes d c | ees4. f,8 f2~ | f4 g \times 2/3 { f ees d } |
 		c1~ | c2. c4 | g' g g g | ees2. g4 | bes bes bes bes | g2. b4 | d d d2~ | d d |

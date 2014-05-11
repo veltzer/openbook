@@ -23,7 +23,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="04bbfb74-0128-11e1-9e2a-0019d11e5a41"
 	attributes['structure']="AB"
-	attributes['structureremark']="This tune has a weird structure because the B part has different lengths"
+	attributes['structureremark']="This tune has a weird structure because the part B has different lengths"
 
 	attributes['idyoutuberemark']="Tony Bennet slow version"
 	attributes['idyoutube']="uJGqzudEDDE"

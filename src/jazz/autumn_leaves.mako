@@ -90,7 +90,7 @@
 	\tempo "Allegro" 4 = 130
 
 	\partial 2. e4 fis g |
-	%% part A
+	%% part "A"
 	\repeat volta 2 {
 		c1~ | c4 d, e fis | b2 b~ | b4 c, d e |
 		a1~ |
@@ -103,7 +103,7 @@
 		}
 	}
 
-	%% part B
+	%% part "B"
 	fis b, fis'2~ | fis4 fis e fis | g1~ | g4 g fis g |
 	a1~ | a4 d, d' c | b1~ | b4 r ais b |
 	c c a a | fis2. c'4 | b2 b~ | b2. e,4 |
@@ -114,14 +114,14 @@
 % if part=='LyricsReal':
 %% lyrics are taken from the fake book and adjusted for the real one
 \lyricmode {
-	%% A part
+	%% part "A"
 	The fall -- ing leaves __ drift by the win -- dow, __
 	The Au -- tumn Leaves, __ of red and gold.
 	I see your
 
 	_ I used to hold.
 
-	%% B part
+	%% part "B"
 	Since you went a -- way __ the days grow long, __
 	And soon I'll hear __ old win -- ter's song. __
 	But I miss you most of all my dar -- ling, __
@@ -133,7 +133,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
-	%% A part
+	%% part "A"
 	_ _ _ lips, __ the sum -- mer kiss -- es, __
 	The sun -- burned hands __
 }
@@ -196,14 +196,14 @@
 
 % if part=='LyricsFake':
 \lyricmode {
-	%% A part
+	%% part "A"
 	The fall -- ing leaves __ drift by the win -- dow, __
 	The Au -- tumn Leaves, __ of red and gold.
-	%% A part
+	%% part "A"
 	I see your lips, __ the sum -- mer kiss -- es,
 	The sun -- burned hands __ I used to hold.
 
-	%% B part
+	%% part "B"
 	Since you went a -- way __ the days grow long, __
 	And soon I'll hear __ old win -- ter's song. __
 	But I miss you most of all my dar -- ling, __

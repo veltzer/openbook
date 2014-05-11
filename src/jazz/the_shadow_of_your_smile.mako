@@ -95,16 +95,16 @@
 
 	\partial 8*5 b8 e fis g b |
 
-	%% A part
+	%% part "A"
 	cis,2. fis4 | dis2. c!4 | b1~ | b4. b8 e fis g b |
 	e,2. a4 | fis2. d4 | b'1~ | b2 c8 b a g |
-	%% B part
+	%% part "B"
 	a2. c,4 | b2. a'4 | g1~ | g2 b8 a g fis |
 	g2. b,4 | ais2. g'4 | fis1~ | fis4 r8 b, e fis g b |
-	%% A part
+	%% part "A"
 	cis,2. fis4 | dis2. c!4 | b1~ | b4. b8 e fis g b |
 	e,2. c'4 | a2. fis4 | d'1~ | d2 e8 d c b |
-	%% C part
+	%% part "C"
 	c4. e,8 c'2~ | c d8 c b a | b4. d,8 b'2~ | b c8 b a gis |
 	a4. cis,8 a'2~ | a4. c,!8 b' a g fis | g1 | r4_\markup { \italic { Fine } } r8 b, e fis g b |
 }
@@ -113,21 +113,21 @@
 % if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics).
 \lyricmode {
-	%% A part
+	%% part "A"
 	The sha -- dow of your smile, when you are gone. __
 	Will co -- lor all my dreams, and light the dawn. __
-	%% B part
+	%% part "B"
 	Look in -- to my eyes, my love, and see. __
 	All the love -- ly things you are to me. __
-	%% A part
+	%% part "A"
 	A wist -- ful lit -- tle star, was far too high. __
 	A tear drop kissed your lips, and so did I. __
-	%% C part
+	%% part "C"
 	Now when I re -- mem -- ber spring. __
 	All the joy that love can bring. __
 	I will be re -- mem -- be -- ring __
 	The sha -- dow of your smile.
-	%% return
+	%% part "return"
 	The sha -- dow of your
 }
 % endif

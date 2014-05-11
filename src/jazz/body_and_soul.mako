@@ -90,7 +90,7 @@
 	\tempo "Andante" 4 = 80
 	\time 4/4
 
-	%% part A
+	%% part "A"
 	\key des \major
 	\repeat volta 2 {
 		r8. ees16 f8. ees16 f4 ees | bes' bes2. | r8. aes16 bes8. aes16 bes4 aes | ees'4 des c bes |
@@ -99,12 +99,12 @@
 		{ des1 | }
 		{ des2. r4 | }
 	}
-	%% part B
+	%% part "B"
 	\key d \major
 	r8. d16 e8. fis16 a8 a4 a8 | d8 d4 fis,8 a8 a4 g8 | fis8 fis4 d8 e4 cis8 a~ | a2~ a8 r8 r4 |
 	\key c \major
 	r8. d16 e8. f16 a8 a4 g8 | e'8 e4 b8 d8 d4 a8 | c8 c4 a8 b8 b4 g8 | e4 ees d bes' |
-	%% part A
+	%% part "A"
 	\key des \major
 	r8. ees,16 f8. ees16 f4 ees | bes' bes2. | r8. aes16 bes8. aes16 bes4 aes | ees'4 des c bes |
 	r4 des bes8 ges4 bes,8 | f'2 ees | r8. des16 ees8. f16 aes4 \times 2/3 { aes8 bes fes } | des1 |
@@ -113,19 +113,19 @@
 
 % if part=='LyricsFake':
 \lyricmode {
-	%% A part
+	%% part "A"
 	My heart is sad and lone -- ly,
 	for you I sigh, for you, dear, on -- ly,
 	Why have -- n't you seen it?
 	I'm all for you, Bod -- y And Soul! _
-	%% B part
+	%% part "B"
 	I can't be -- lieve it,
 	it's hard to con -- ceive it
 	that you'd turn a -- way ro -- mance. __
 	Are you pre -- tend -- ing,
 	it looks like the end -- ing
 	un -- less I could have one more chance to prove, dear,
-	%% A part
+	%% part "A"
 	my life a wreck you're mak -- ing,
 	you know I'm yours for just the tak -- ing;
 	I'd glad -- ly sur -- ren -- der
@@ -135,7 +135,7 @@
 
 % if part=='LyricsmoreFake':
 \lyricmode {
-	%% A part
+	%% part "A"
 	I spend my days in long -- ing,
 	and won -- d'ring why it's me you're wrong -- ing,
 	I tell you I mean it,

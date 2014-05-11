@@ -84,7 +84,7 @@
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 
-	%% part A
+	%% part "A"
 	\repeat volta 2 {
 		r8 e4 d8 c g f4 | e1 | r8 e'4 d8 c g f4 | e1 |
 		r8 g4 f8 e d c c'~ | c4. a8~ a2 | r8 e f fis g c, dis e | c1 |
@@ -106,7 +106,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
-	%% A part
+	%% part "A"
 	Missed the Sat -- ur -- day dance, heard they crowd -- ed the floor;
 	cound -- n't bear it with -- out you, __ Don't Get A -- round Much An -- y -- more.
 	Thougt I'd vis -- it the club, got as far as the door;

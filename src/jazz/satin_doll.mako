@@ -80,7 +80,7 @@
 	\time 2/2
 	\key c \major
 
-	%% A part
+	%% part "A"
 	\repeat volta 2 {
 		a8. g16 a8 g~ g a4. | r8 a4. g8 a4. | b8. a16 b8 a~ a b4. | r8 b4. a8 b4. |
 		r8 d4. c8 d4. | r8 bes4. aes4 bes8 g~ |
@@ -92,7 +92,7 @@
 			g1\repeatTie |
 		}
 	}
-	%% B part
+	%% part "B"
 	r2 r4 r8 g | c4 bes8. a16 g8. a16 bes4 | c4 bes8. a16 g8. a16 bes8 c~ | c1~ |
 	c2. r8 c | d8. c16 b8. a16~ a8. b16 c4 | d8. c16 b8 a~ a8. b16 c8 d~ | d1~ |
 	d8 \xNote { d4^"(Spoken)" d8 d d4. } | a8. g16 a8 g~ g a4. | r8 a4. g8 a4. | b8. a16 b8 a~ a b4. |

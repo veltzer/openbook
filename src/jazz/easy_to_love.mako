@@ -118,16 +118,16 @@
 
 % if part=='LyricsReal':
 \lyricmode {
-	%% A part
+	%% part "A"
 	You'd be so Eas -- y To Love,
 	So eas -- y to i -- dol -- ize,
 	All oth -- ers a -- bove
-	%% B part
+	%% part "B"
 	So worth the yearn -- ing for, __
 	So swell to keep ev -- 'ry home -- fire burn -- ing for __
 
 	shame
-	%% C part
+	%% part "C"
 	that you can't see
 	your fu -- ture with me,
 	'cause you'd be oh, so Eas -- y To Love! __
@@ -136,7 +136,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
-	%% A part
+	%% part "A"
 	We'd be so grand at the game
 	So care -- free to -- get -- her,
 	that it does seem a

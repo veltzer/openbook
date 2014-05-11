@@ -102,25 +102,25 @@
 	\tempo "Moderato" 4 = 100
 
 	\repeat volta 2 {
-		%% A part
+		%% part "A"
 		r8 g a8. c16 d8 e b' g | a4 d b~ \times 2/3 { b8 g f } |
 		e4 c' a~ \times 2/3 { a8 f e } | d4 b' g2 |
 		r8 a g f e8. d16 g8. e16 | c8 a4.~ a2 |
 		r8 f' g a g4 d | g1 |
 
-		%% A part
+		%% part "A"
 		r8 g, a8. c16 d8 e b' g | a4 d b~ \times 2/3 { b8 g f } |
 		e4 c' a~ \times 2/3 { a8 f e } | d4 b' g2 |
 		r8 a g f e8. d16 g8. e16 | c8 a4.~ a2 |
 		r8 f' g a g4 e | c2. r8 b |
 
-		%% B part
+		%% part "B"
 		b'4~ \times 2/3 { b8 a g } b4~ \times 2/3 { b8 a g } | b,8 b4.~ b4 r8 b |
 		b'4~ \times 2/3 { b8 a g } b4~ \times 2/3 { b8 a g } | b,2. r8 b |
 		e4~ \times 2/3 { e8 fis g } e4. b8 | e4~ \times 2/3 { e8 fis g } e2 |
 		\times 2/3 { d4 d d } \times 2/3 { f! d f } | d1 |
 
-		%% A part
+		%% part "A"
 		r8 g, a8. c16 d8 e b' g | a4 d b~ \times 2/3 { b8 g f } |
 		e4 c' a~ \times 2/3 { a8 f e } | d4 b' g2 |
 		r8 a g f e8. d16 g8. e16 | c8 a4.~ a2 |
@@ -138,25 +138,25 @@
 
 % if part=='LyricsFake':
 \lyricmode {
-	%% A part
+	%% part "A"
 	The ver -- y thought of you makes my heart sing __
 	like an A -- pril breeze __ on the wings of spring.
 	And you ap -- pear in all your splen -- dor, __
 	My One And On -- ly Love.
 
-	%% A part
+	%% part "A"
 	The shad -- own fall and spread their mys -- tic charms __
 	in the hush of night __ while you're in my arms.
 	I feel your lips so warm and ten -- der, __
 	My One And On -- ly Love.
 
-	%% B part
+	%% part "B"
 	The touch __ of your hand __ is like heav -- en, __
 	a heav -- __ en that I've __ nev -- er known.
 	The blush __ on your cheek when -- ev -- __ er I speak
 	tell me that you are my own.
 
-	%% A part
+	%% part "A"
 	You fill my ea -- ger heart with such de -- sire. __
 	Ev -- r'y kiss you give __ sets my soul on fire.
 	I give my -- self in sweet sur -- ren -- der, __

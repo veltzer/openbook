@@ -102,7 +102,7 @@
 	\time 3/4
 	\key c \major
 
-	%% A part
+	%% part "A"
 	\repeat volta 2 {
 		g2. | g'2 f4 | e2 c4 | g2. |
 		d'4 e f | e2 d4 | e2 c4 | g2. |
@@ -113,13 +113,13 @@
 		{ c,2.~ | c2 cis4 | }
 	}
 
-	%% B part
+	%% part "B"
 	d2. | a' | g | c, |
 	d4 e f | g2 a4 | b2 g4 | e2. |
 	fis | c' | b2 g4 | e2. |
 	a2 g4 | f2 e4 | d2 c4 | b2. |
 
-	%% A part
+	%% part "A"
 	g2. | g'2 f4 | e2 c4 | g2. |
 	d'4 e f | e2 d4 | e2 c4 | g2. |
 	d'4 e f | e2 d4 | e2 g4 | c2 a4 |
@@ -130,7 +130,7 @@
 % if part=='LyricsReal':
 %% This is taken from the inetnet and adjusted for this tune
 \lyricmode {
-	%% A part
+	%% part "A"
 	A -- lice In Won -- der -- land
 	How do you get to won -- der -- land
 	O -- ver the hill or un -- der -- land
@@ -140,17 +140,17 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
-	%% A part
+	%% part "A"
 	When clouds go rol -- ling by
 	They roll a -- way and leave the sky
 	Where is the land be -- yond the eye
 	That peo -- ple can -- not _ see __
-	%% B part
+	%% part "B"
 	And where do stars go
 	Where is the sil -- ver cre -- scent moon
 	They must be some -- where
 	in the sun -- ny af -- ter -- noon
-	%% A part
+	%% part "A"
 	A -- lice In Won -- der -- land
 	Where is the path to won -- der -- land
 	O -- ver the hill or here or there

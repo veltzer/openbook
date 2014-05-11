@@ -87,7 +87,7 @@
 	\tempo "Allegro" 4 = 130
 
 	\partial 8 f8 |
-	%% A part
+	%% part "A"
 	\repeat volta 2 {
 		bes8 d bes f bes4 r8 f | bes8 f bes des r g,4 f8 |
 	}
@@ -99,9 +99,9 @@
 			e8 g bes des \times 2/3 { c8 des c } g8 a | r1 |
 		}
 	}
-	%% B part
+	%% part "B"
 	g'4 r8 f~ f r des4~ | des4. g,8 r c4 g8 | des'4 des8 des g,4 c | r2 r4 r8 f, |
-	%% A part
+	%% part "A"
 	bes d bes f bes4 r8 f | bes f bes des r g,4 f8 | e g bes des \times 2/3 { c8 des c } g8 bes | r1 |
 }
 % endif
