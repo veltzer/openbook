@@ -4,6 +4,7 @@
 	attributes['doChords']=True
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
+	attributes['doLyricsmore']=True
 	attributes['render']="Real"
 
 	attributes['title']="Night And Day"
@@ -19,10 +20,10 @@
 	attributes['uuid']="f3f8f010-3fda-11e2-ad72-a3725b0aaeaa"
 	attributes['structure']="AAB"
 
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
+	attributes['idyoutuberemark']="Cannonical version by Frank Sinatra"
+	attributes['idyoutube']="mGGirB4XOmI"
+	attributes['idyoutuberemark']="Cole Porter version"
+	attributes['idyoutube']="5WX_fKVWX2s"
 	attributes['lyricsurl']="http://www.lyricsfreak.com/f/frank+sinatra/night+day_20055251.html"
 	attributes['wiki']="Night_and_Day_(song)"
 %>
@@ -42,9 +43,9 @@
 	- filled in the words from the internet for the real book version (there are no lyrics in the real book version).
 	- check the tune from the real book version.
 	- checked that the tune sounds right in the midi version.
-	TODO:
-	- check the lyrics from the real book version.
 	- bring you tube performances.
+	- check the lyrics from the real book version.
+	TODO:
 	- how do I put the last two chords (d:7 g:7) in the real book version in parenthesis?
 % endif
 
@@ -119,32 +120,39 @@
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 	%% part "A"
-	Night and day __
+	Night And Day __
 	You are the one __
-	On -- ly you be -- nea -- th the moon
+	On -- ly you __ be -- nea -- th the moon
 	And under the sun __
-	Whether near to me or far
-	No matter, darling Where you are
-	I think of you
-	Night and day
-	%% part "A"
-	Day and night
-	Why it is so
-	That this longing for you
-	Follows wherever I go.
-	In the roarin' traffic's boom
-	In the silence of my lonely room
-	I think of you
-	Night and day
+	Whe -- ther near to me or far __ _
+	No mat -- ter, dar -- ling Where you are __ _
+	I think of __ you
+	Night And Day __
+
+	Day and night __
 	%% part "B"
-	Night and day
-	Under the hide of me
-	There's an oh such a hungry
-	Yearnin' burnin' inside of me
-	And its torment won't be through
+	_ Night And Day
+	Un -- der the hide of me __
+	There's an oh such a hun -- gry
+	Year __ -- nin' bur __ -- nin' in -- side of me __
+	And its tor -- ment won't be through __
 	'Til you let me spend my life
-	Making love to you
-	Day and night
-	Night and day
+	Mak -- ing love __ to you
+	Day and night __
+	Night And Day __
+}
+% endif
+
+% if part=='LyricsmoreReal':
+\lyricmode {
+	%% part "A"
+	_ _ _
+	Why it is so __
+	That this long __ -- ing for you
+	Fol -- lows wher -- ever I go. __
+	In the roa -- rin' tra -- ffic's boom __
+	In the si -- lence of my lone -- ly room __ _
+	I think of __ you
+	Night And Day __
 }
 % endif
