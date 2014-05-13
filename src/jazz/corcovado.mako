@@ -12,8 +12,8 @@
 	attributes['composer']="Antonio Carlos Jobim"
 	attributes['copyright']="1959, Editora Musical Arapua, Sao Paulo, Brazil"
 	attributes['piece']="Med Swing"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="0"
 	attributes['uuid']="b847fc02-a26e-11df-92ce-0019d11e5a41"
 	attributes['structure']="????"

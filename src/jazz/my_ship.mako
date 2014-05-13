@@ -18,11 +18,10 @@
 	attributes['piece']="Moderately Slow"
 	# this is from the fake book
 	attributes['copyright']="1941 and renewed 1969 Hampshire House Publishing Corp. and Chappell & Co., Inc., New York, NY"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="ffe98a96-0a4c-11e3-bcaf-3b8eec526bc3"
-	# my own
 	attributes['structure']="AABA"
 	attributes['locations']="fb:268,269"
 

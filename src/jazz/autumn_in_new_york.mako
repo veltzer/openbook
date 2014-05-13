@@ -17,8 +17,8 @@
 	attributes['poet']="Vernon Duke"
 	# this is from the hal leonard book.
 	attributes['piece']="Brightly"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="9677b522-7463-11e1-a57d-bbc28ffad085"
 	attributes['structure']="ABAC"

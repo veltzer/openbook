@@ -16,8 +16,8 @@
 	attributes['piece']="Moderately"
 	attributes['copyright']="1937 by Gershwin Publishing Corporation"
 	attributes['copyrightextra']="Copyright renewed, Assigned to Chappell & Co., Inc."
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="d0904c80-d84b-11e3-b741-dbf5614f4f33"
 	attributes['structure']="AABA"

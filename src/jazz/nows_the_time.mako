@@ -14,8 +14,8 @@
 	# from the fake book
 	attributes['copyright']="1945, Atlantic Music Corp."
 	attributes['copyrightextra']="Renewed and assigned 1973, Atlantic Music Corp."
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="cd56a8d8-da1d-11e3-a6ca-c3a55777c28e"
 	attributes['structure']="Blues"
@@ -31,7 +31,7 @@
 	DONE:
 	- filled in the meta data from the fake book
 	- write the fake book chords.
-	- write the fake book tune. 
+	- write the fake book tune.
 	- got the fake book epdf.
 	- add you tube performances.
 	- check the fake book chords.
@@ -48,6 +48,7 @@
 
 	\partial 8 s8 |
 
+	\myMark "A"
 	\startPart
 	\repeat volta 2 {
 		f1*4:7 | \myEndLine

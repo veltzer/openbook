@@ -15,10 +15,10 @@
 	attributes['piece']="Moderately"
 	attributes['copyright']="1935 Gershiwin Publishing Corporation"
 	attributes['copyrightextra']="Corporation Renewed, Assigned to Chappell & Co., Inc."
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 
+	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
-	attributes['uuid']=""
+	attributes['uuid']="51444eaa-da7f-11e3-a1f7-4b82298467da"
 	attributes['structure']=""
 
 	attributes['idyoutuberemark']=""

@@ -14,10 +14,10 @@
 	attributes['piece']="Medium Bounce"
 	attributes['copyright']="1944 Alamo Music, Inc."
 	attributes['copyrightextra']="Copyright Renewed, controlled by Chappell & Chappell & Co., Inc. (Intersong Music, Publisher)"
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 
+	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
-	attributes['uuid']=""
+	attributes['uuid']="849d81e0-da7f-11e3-acc0-47bbef4c81a6"
 	attributes['structure']=""
 
 	attributes['idyoutuberemark']=""

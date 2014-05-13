@@ -14,8 +14,8 @@
 	attributes['poet']="Ira Gershwin"
 	# from the real book
 	attributes['piece']="Slowly"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="e8ff288e-2233-11e1-9b9f-0019d11e5a41"
 	attributes['structure']="AABA"

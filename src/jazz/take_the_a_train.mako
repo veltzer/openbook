@@ -18,11 +18,10 @@
 	attributes['piece']="Easy Swing"
 	# this is from the fake book
 	attributes['copyright']="1941 and 1943 Tempo Music. Inc. Renewed 1969"
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['copyrightextra']=""
 
+	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
-	attributes['uuid']=""
+	attributes['uuid']="8e4bc138-da80-11e3-a96b-032e06c074f3"
 	attributes['structure']="AABA"
 
 	attributes['idyoutuberemark']=""

@@ -17,8 +17,8 @@
 	attributes['piece']="Medium Bossa Nova"
 	# this is from the fake book
 	attributes['poet']="Newton Mendonca, Jon Hendricks, Jessie Cavanaugh"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="c3fff540-a26e-11df-9435-0019d11e5a41"
 	attributes['structure']="AABA"

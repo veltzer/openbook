@@ -12,8 +12,8 @@
 	attributes['poet']="George David Weiss"
 	attributes['piece']="Relaxed Swing"
 	attributes['copyright']="1952, 1953, 1954 Adam R. Levy & Father Ent., Inc., New York NY. Copyrights Renewed."
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="f9668406-a26e-11df-8542-0019d11e5a41"
 	attributes['structure']="AABA"
@@ -28,20 +28,21 @@
 
 % if part=='Doc':
 	DONE:
-		- filled in meta data from the fake book.
-		- added real book epdf.
-		- added fake book epdf.
-		- added fake book chords.
-		- added fake book tune.
-		- added fake book lyrics.
-		- check fake book chords.
-		- check fake book tune.
-		- check fake book lyrics.
-		- hear the tune to make sure it's ok.
-		- add you tube performances.
-		- add lyricsurl.
+	- filled in meta data from the fake book.
+	- added real book epdf.
+	- added fake book epdf.
+	- added fake book chords.
+	- added fake book tune.
+	- added fake book lyrics.
+	- check fake book chords.
+	- check fake book tune.
+	- check fake book lyrics.
+	- hear the tune to make sure it's ok.
+	- add you tube performances.
+	- add lyricsurl.
 	TODO:
-		- add the real book version.
+	- fill in where the meta data is from.
+	- add the real book version.
 % endif
 
 % if part=='ChordsFake':

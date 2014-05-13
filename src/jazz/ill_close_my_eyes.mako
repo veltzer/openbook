@@ -11,8 +11,8 @@
 	attributes['composer']="Billy Reid"
 	attributes['poet']="Buddy Kaye"
 	attributes['piece']="Medium Swing"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="e7277c50-a26e-11df-863c-0019d11e5a41"
 	attributes['structure']="AB"

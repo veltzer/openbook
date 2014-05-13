@@ -15,8 +15,8 @@
 	attributes['copyrightextra']="Sole Selling Agent Duchess Music Croporation (MCA), New York, NY for all English Speaking Countries"
 	# this is from the fake book
 	attributes['piece']="Samba"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="21bc8284-a26f-11df-a829-0019d11e5a41"
 	attributes['structure']="ABA'"

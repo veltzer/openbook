@@ -19,8 +19,8 @@
 	attributes['piece']="Easy Swing"
 	# from the Hal Leonard book
 	attributes['copyright']="1932 (Renewed 1959) by Famous Music Corporation"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="dedcc73c-1ead-11e1-8007-0019d11e5a41"
 	attributes['structure']="ABAC"

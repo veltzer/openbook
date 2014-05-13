@@ -16,8 +16,8 @@
 	# this is from the real book
 	attributes['piece']="Ballad"
 	attributes['copyright']="1932 (Renewed) Warner Bros. Inc."
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="b647880a-0b68-11e1-b491-0019d11e5a41"
 	attributes['structure']="AABA"

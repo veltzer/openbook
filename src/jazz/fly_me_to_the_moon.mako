@@ -18,8 +18,8 @@
 	attributes['piece']="Moderately, with a beat"
 	# this is from the fake book
 	attributes['copyright']="1954 and renewed 1982 Hampshire House Publishing Corp., New York NY."
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="3244f4ae-159d-11e1-bbe3-0019d11e5a41"
 	attributes['structure']="AB"

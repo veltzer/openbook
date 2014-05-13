@@ -14,10 +14,10 @@
 	attributes['piece']="Moderately"
 	attributes['copyright']="1925 Leo Feist, INC."
 	attributes['copyrightextra']="Renewed 1953 Warock Corp."
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 
+	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
-	attributes['uuid']=""
+	attributes['uuid']="8c31fdb4-da7f-11e3-ad9a-d3417ee0a02e"
 	attributes['structure']="AABA"
 
 	attributes['idyoutuberemark']=""

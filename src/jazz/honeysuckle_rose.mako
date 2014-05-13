@@ -14,10 +14,10 @@
 	attributes['piece']="Medium, with a lift"
 	attributes['copyright']="1929 Santly Bros., Inc."
 	attributes['copyrightextra']="Copyright Renewed, Waller's Interet controller by Chappell & Co., Inc. (Interson Music, Publisher), Razaf's interest controlled by Razaf Music Co., co/o The Songwriters Guild"
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 
+	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
-	attributes['uuid']=""
+	attributes['uuid']="1afdbda2-da81-11e3-a538-a3a8bef9e7c8"
 	attributes['structure']=""
 
 	attributes['idyoutuberemark']=""
