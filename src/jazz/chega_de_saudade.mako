@@ -17,6 +17,8 @@
 	# from the fake book
 	attributes['piece']="Bossa Nova"
 	# from the fake book
+	attributes['poet']="Vinicius DeMoraes, John Hendricks, Jessie Cavanaugh"
+	# from the fake book
 	attributes['copyright']="1962 and 1967 Editora Musical Arapua, Sao Paulo, Brazil"
 	# from the fake book
 	attributes['copyrightextra']="TRO-Hollis Music, Inc., New York, controls all publication rights for the U.S.A. and Canada"
@@ -25,6 +27,12 @@
 	attributes['completion']="5"
 	attributes['uuid']="a8d44d0c-a26e-11df-a32b-0019d11e5a41"
 	attributes['structure']="AA'BA''"
+
+	attributes['idyoutuberemark']="The original Jobim on piano"
+	attributes['idyoutube']="-c6Zbi3tbMg"
+	attributes['idyoutuberemark']="And Jobim sings..."
+	attributes['idyoutube']="UzFJwiHRwDg"
+	attributes['lyricsurl']="http://www.stlyrics.com/songs/j/janemonheit24558/chegadesaudadenomoreblues1055457.html"
 %>
 % endif
 
@@ -32,16 +40,18 @@
 	DONE:
 	- brought in fake book epdf for this tune.
 	- filled in meta data from the fake book.
-	- fill in chords from the fake book.
-	- fill in lyrics from the fake book.
+	- filled in chords from the fake book.
+	- filled in lyrics from the fake book.
+	- filled in tune from the fake book.
+	- checked chords from the fake book.
+	- checked tune from the fake book.
+	- checked lyrics from the fake book.
+	- heard that the tune sounds well.
+	- added youtube performances.
+	- added lyrics url.
 	TODO:
-	- fill in tune from the fake book.
-	- check chords from the fake book.
-	- check tune from the fake book.
-	- check lyrics from the fake book.
-	- hear that the tune sounds well.
-	- add youtube performances.
-	- add lyrics url.
+	- there is a boy/girl part in the lyrics of which I retrained just the "boy" part. Do them both.
+	- get another version of this tune.
 % endif
 
 % if part=='ChordsFake':
@@ -51,7 +61,7 @@
 
 	\myMark "A"
 	\startPart
-	d1:m7 | d2:m7 d:m7/c | b:m7.5- | e1:7.9- | \myEndLine
+	d1:m7 | d2.:m7 d4:m7/c | b1:m7.5- | e:7.9- | \myEndLine
 	e:m7.5- | a:7.9- | d:m | e2:m7.5- a:7.9- | \myEndLine
 	d2:m d:m/c | b:m7.5- e:7 | a1*2:m | \myEndLine
 	bes:maj7 | e1:m7.5- | a:7.9- | \myEndLine
@@ -59,7 +69,7 @@
 
 	\myMark "A'"
 	\startPart
-	d1:m7 | d2:m7 d:m7/c | b:m7.5- | e1:7.9- | \myEndLine
+	d1:m7 | d2.:m7 d4:m7/c | b1:m7.5- | e:7.9- | \myEndLine
 	e:m7.5- | a:7.9- | d:m | d:7 | \myEndLine
 	g2:m g:m/f | a:7/e a:7 | d1:m | d:m/c | \myEndLine
 	b2:m7.5- e:7.9- | a1:7.9- | d:m | e2:m7 a:7.5+ | \myEndLine
@@ -79,7 +89,7 @@
 	fis1 | fis:7 | b2:m7 bes:m7 | a2:m7 d:7.9- | \myEndLine
 	g1:maj7 | c:9 | fis:m7 | b2:7 b:7.5+ | \myEndLine
 	e1:7 | e2..:m7/a a8:7/g | fis1:m7 | b:7.9- | \myEndLine
-	e:7 | e2.:m7/a a4:7 | d1*2 | \myEndLine
+	e:7 | e2:m7/a e8:m7/a a4.:7 | d1*2 | \myEndLine
 	\endPart
 
 	\endSong
@@ -91,14 +101,34 @@
 \relative f'' {
 	\set Staff.timeSignatureFraction=#'(2 . 2)
 	\time 4/4
-	\key f \major
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Presto" 4 = 200
 
+	\key f \major
 	%% part "A"
-	f'2 a, | d2. f4 | e2 b! | d2. e4 | \myEndLine
-	f2 b | cis f4 e~ | e8 d4 f8~ f e d4 | a1 | \myEndLine
+	f2 a, | d2. f4 | e2 b! | d2. e4 | \myEndLine
+	f2 bes, | cis f4 e~ | e8 d4 f8~ f e d4 | a1 | \myEndLine
+	f'2 a, | b!2. d4 | c2 e~ | e4 e d c | \myEndLine
+	c2 bes~ | bes4 f' e d | d cis e8 cis4 bes8~ | bes2. r4 | \myEndLine
 	%% part "A'"
+	f'2 a, | d2. f4 | e2 b! | d2. e4 | \myEndLine
+	f2 bes, | cis f4 e~ | e8 d4 cis8~ cis d ees4~ | ees d fis a | \myEndLine
+	g2 bes | cis,~ cis8 a'4 g8~ | g f4 a8~ a g f4 | e4. d8 cis4 d | \myEndLine
+	f8 d4 b!8~ b d4 f8~ | f cis4 bes8~ bes f'4 d8~ | d1 | r | \myEndLine
+
+	\key d \major
 	%% part "B"
+	fis2. a4 | g2. dis4 | fis e dis8 e4 b'8~ | b4 g e b | \myEndLine
+	d4. cis8~ cis2~ | cis4 e cis8 a4 b8~ | b1 | a2. cis4 | \myEndLine
+	e d cis8 d4 f8~ | f4 gis cis8 b4 a8~ | a g4 b,8~ b2~ | b4 b cis8 d4 fis8~ | \myEndLine
+	fis4 e d8 b4 gis8~ | gis4 b cis8 e4 d8~ | d2~ d4. cis8~ | cis1 | \myEndLine
+
 	%% part "A''"
+	fis2 a, | b2. fis'4 | e2 b | d2. e4 | \myEndLine
+	fis2 ais, | cis2. fis4 | e8 d4 cis8~ cis d4 e8~ | e d4 fis8~ fis4 b | \myEndLine
+	a8 fis4 d8~ d4. b8 | a' f!4 d8~ d4 bes | a'8 e4 cis8~ cis4 a | gis'4 b g! b | \myEndLine
+	fis8 d4 b8 d4 fis~ | fis d b8 d4 fis8~ | fis2~ fis8 fis g a | b4 a g fis | \myEndLine
+	d8 b4 d8 fis4 d~ | d b d8 fis4 d8~ | d1~ | d2. r4 | \myEndLine
 }
 % endif
 
@@ -110,13 +140,13 @@
 	No, No More Blues,
 	I prom -- ise no __ more to roam.
 	Home is where the heart is, __
-	the funny part is __
+	the fun -- ny part is __
 	my heart's been right there all a -- long. __
 	%% part "A'"
 	No more tears and no more sighs,
 	and no more fears, I'll say __ no more __ good -- byes. __
 	If tra -- vel beck -- ons me __
-	I swear __ I'm gon -- na re -- fuse,
+	I swear __ I'm gon -- __ na re -- fuse,
 	I'm gon -- na set -- tle down __
 	and there'll __ be No __ More Blues. __
 	%% part "B"
