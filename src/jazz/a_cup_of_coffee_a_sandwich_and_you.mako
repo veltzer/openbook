@@ -11,19 +11,10 @@
 	attributes['composer']="Joseph Meyer"
 	attributes['poet']="Billy Rose, Al Dubin"
 	attributes['piece']="Moderato"
-	attributes['copyright']=""
-	attributes['copyrightextra']=""
 
 	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
 	attributes['uuid']="efaf8a18-da80-11e3-83d3-8b992af01517"
-	attributes['structure']=""
-
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
 %>
 % endif
 

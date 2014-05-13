@@ -18,13 +18,6 @@
 	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
 	attributes['uuid']="e55de2a4-da7f-11e3-8543-8726b44261b4"
-	attributes['structure']=""
-
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
 %>
 % endif
 

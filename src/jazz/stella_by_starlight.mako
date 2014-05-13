@@ -18,9 +18,7 @@
 	attributes['structure']="AB"
 	attributes['remark']="there are a couple of different lyric versions for this song"
 
-	attributes['idyoutuberemark']=""
 	attributes['idyoutube']="Iqs3w1Q5sto"
-	attributes['idyoutuberemark']=""
 	attributes['idyoutube']="IbzxJuvbH08"
 	attributes['lyricsurl']="http://www.lyrics007.com/Ella%20Fitzgerald%20Lyrics/Stella%20By%20Starlight%20Lyrics.html"
 %>

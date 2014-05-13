@@ -15,8 +15,6 @@
 	attributes['poet']="Bob Hilliard"
 	# this is from the real book
 	attributes['piece']="Med."
-	# this is still missing
-	#attributes['copyright']=""
 
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"

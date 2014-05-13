@@ -14,19 +14,10 @@
 	attributes['poet']="Irving Berlin"
 	# this is from the fake book
 	attributes['piece']="Valse Moderato"
-	attributes['copyright']=""
-	attributes['copyrightextra']=""
 
 	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
 	attributes['uuid']="e2f7709c-da80-11e3-80dc-7f255b43b3a5"
-	attributes['structure']=""
-
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
 %>
 % endif
 

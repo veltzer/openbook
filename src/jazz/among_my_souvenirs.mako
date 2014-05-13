@@ -14,19 +14,11 @@
 	attributes['poet']="Edgar Leslie"
 	# this is from the fake book
 	attributes['piece']="Moderately"
-	attributes['copyright']=""
-	attributes['copyrightextra']=""
 
 	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
 	attributes['uuid']="79535ff6-ff7b-11e2-a95b-b74fc9213a2b"
 	attributes['structure']="AABA"
-
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
 %>
 % endif
 

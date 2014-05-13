@@ -12,7 +12,6 @@
 	# Sorry for all the slashes. They have to be escaped by mako and then
 	# still escaped for Lilypond
 	attributes['composer']="John \\\"Dizzy\\\" Gillespie, Frank Paparelli"
-	attributes['poet']=""
 	# this is from the fake book
 	attributes['piece']="Bright Swing"
 	# this is from the fake book
@@ -23,12 +22,6 @@
 	attributes['completion']="5"
 	attributes['uuid']="ea02cd50-da80-11e3-999d-eb3f2153c941"
 	attributes['structure']="ABA"
-
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
 %>
 % endif
 

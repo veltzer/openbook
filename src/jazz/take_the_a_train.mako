@@ -13,7 +13,6 @@
 	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['composer']="Billy Strayhorn, The Delta Rhythm Boys"
-	attributes['poet']=""
 	# this is from the fake book
 	attributes['piece']="Easy Swing"
 	# this is from the fake book
@@ -23,12 +22,6 @@
 	attributes['completion']="5"
 	attributes['uuid']="8e4bc138-da80-11e3-a96b-032e06c074f3"
 	attributes['structure']="AABA"
-
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
 %>
 % endif
 

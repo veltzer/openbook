@@ -12,18 +12,11 @@
 	attributes['poet']="Douglass Cross"
 	attributes['piece']="Slowly"
 	attributes['copyright']="1954 General Music Publishing Co., Inc."
-	attributes['copyrightextra']=""
 
 	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
 	attributes['uuid']="5a23cc08-da7f-11e3-8c45-c30fe9a88e5b"
 	attributes['structure']="ABA'C"
-
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
 %>
 % endif
 

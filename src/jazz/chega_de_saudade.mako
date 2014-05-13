@@ -25,12 +25,6 @@
 	attributes['completion']="5"
 	attributes['uuid']="a8d44d0c-a26e-11df-a32b-0019d11e5a41"
 	attributes['structure']="AA'BA''"
-
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
 %>
 % endif
 

@@ -15,7 +15,6 @@
 
 	attributes['completion']="5"
 	attributes['uuid']="d5e32c7a-854b-11e1-96fa-2b2b01073991"
-	attributes['idyoutube']=""
 %>
 % endif
 
