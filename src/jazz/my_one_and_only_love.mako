@@ -18,12 +18,12 @@
 	attributes['copyright']="1952, 1953 SHERWIN MUSIC PUBLISHING CORP."
 	# this is from the fake book
 	attributes['copyrightextra']="Renewed 1980, 1981 WAROCK CORP."
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['location']="fb:266"
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="ac777f1c-0bf0-11e3-9fd3-782bcbdd3b7a"
 	attributes['structure']="AABA"
+	attributes['location']="fb:266"
 
 	attributes['idyoutuberemark']="Coltrane!"
 	attributes['idyoutube']="ecrE80rnjhw"

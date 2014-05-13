@@ -16,10 +16,10 @@
 	attributes['piece']="Slowly and Rhythmically"
 	attributes['copyright']="1953, 1955 by Saunders Publications, Inc."
 	attributes['copyrightextra']="Copyright renewed, assigned to Arthur Hamilton and Chappell & Co., Inc."
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 
+	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
-	attributes['uuid']=""
+	attributes['uuid']="d7e89780-da80-11e3-b56b-2bd125289f76"
 	attributes['structure']=""
 
 	attributes['idyoutuberemark']=""

@@ -15,10 +15,10 @@
 	attributes['copyrightextra']=""
 	attributes['poet']="Bob Russell"
 	attributes['piece']="Medium Swing"
-	attributes['typesetter']="Jordan Eldredge <jordaneldredge@gmail.com>"
 
+	attributes['typesetter']="Jordan Eldredge <jordaneldredge@gmail.com>"
 	attributes['completion']="5"
-	attributes['uuid']=""
+	attributes['uuid']="09a63a8e-da81-11e3-b649-339a89e65802"
 	attributes['structure']="AABA"
 
 	attributes['idyoutuberemark']=""

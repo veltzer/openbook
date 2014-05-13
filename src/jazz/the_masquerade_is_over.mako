@@ -12,13 +12,11 @@
 	attributes['composer']="Allie Wrubel"
 	attributes['piece']="Moderately Slow"
 	attributes['poet']="Herb Magidson"
-	attributes['copyright']=""
-	attributes['copyrightextra']=""
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 
-	attributes['structure']=""
+	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
-	attributes['uuid']=""
+	attributes['uuid']="a213452e-da80-11e3-82b2-1f2053bf55c9"
+	attributes['structure']=""
 
 	attributes['idyoutuberemark']=""
 	attributes['idyoutube']=""

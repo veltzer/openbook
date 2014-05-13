@@ -14,10 +14,10 @@
 	attributes['piece']="Dreamily"
 	attributes['copyright']=""
 	attributes['copyrightextra']=""
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 
+	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
-	attributes['uuid']=""
+	attributes['uuid']="2501ad54-da81-11e3-ba1a-2b982dfcfb4e"
 	attributes['structure']="ABA'"
 
 	attributes['idyoutuberemark']=""

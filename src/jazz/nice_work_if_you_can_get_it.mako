@@ -14,10 +14,10 @@
 	attributes['piece']="Moderately"
 	attributes['copyright']="1937 Gershwin Publishing Corp."
 	attributes['copyrightextra']="Copyright Renewed, Assigned to Chappell & Co. Inc."
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 
+	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
-	attributes['uuid']=""
+	attributes['uuid']="e55de2a4-da7f-11e3-8543-8726b44261b4"
 	attributes['structure']=""
 
 	attributes['idyoutuberemark']=""
@@ -31,6 +31,11 @@
 % if part=='Doc':
 	DONE:
 	TODO:
+	- fill in the structure
+	- fill in where the tune is from
+	- fill in where the meta data is from
+	- fill in youtube performances
+	- add lyrics url.
 % endif
 
 % if part=='ChordsFake':

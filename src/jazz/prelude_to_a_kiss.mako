@@ -13,10 +13,10 @@
 	attributes['piece']="Slowly"
 	attributes['copyright']=""
 	attributes['copyrightextra']=""
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 
+	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
-	attributes['uuid']=""
+	attributes['uuid']="1a21cdfc-da80-11e3-8e64-13828462b6b5"
 	attributes['structure']=""
 
 	attributes['idyoutuberemark']=""

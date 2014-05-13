@@ -14,10 +14,10 @@
 	attributes['piece']="With Swinging Rhythm"
 	attributes['copyright']="1930 (Renewed) Warner Bros. Inc."
 	attributes['copyrightextra']=""
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 
+	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
-	attributes['uuid']=""
+	attributes['uuid']="ae7a1f0a-da7f-11e3-83ac-9776cf1b3075"
 	attributes['structure']="AABA'"
 
 	attributes['idyoutuberemark']=""

@@ -17,8 +17,8 @@
 	# this is from the fake book
 	attributes['copyright']="1956 & 1959 by Hill & Range Snogs, Inc."
 	attributes['copyrightextra']="Copyright renewed, all rights controlled by Unichappell Music, Inc."
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="d387ae5e-a26e-11df-9edf-0019d11e5a41"
 	attributes['structure']="ABA"

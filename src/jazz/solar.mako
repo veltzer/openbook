@@ -14,13 +14,10 @@
 	#attributes['poet']=""
 	# from the real book
 	attributes['piece']="Jazz"
-	# no copyright for this tune as of yet
-	#attributes['copyright']=""
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="841f9004-4477-11e2-acde-078065be2912"
-	# filled this in myself
 	attributes['structure']="A"
 	attributes['remark']="The 12 bars have a kind of blue structure feel to them"
 

@@ -11,10 +11,10 @@
 	attributes['style']="Classical"
 	attributes['composer']="Charles Gounod"
 	attributes['copyright']="Public Domain"
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 
-	attributes['completion']=""
-	attributes['uuid']=""
+	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
+	attributes['completion']="5"
+	attributes['uuid']="626a30f8-da81-11e3-a291-2f021049e3c1"
 	attributes['structure']="A"
 
 	attributes['idyoutuberemark']=""

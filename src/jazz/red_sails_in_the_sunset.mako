@@ -14,12 +14,12 @@
 	# this is from the fake book
 	attributes['copyright']="1935 The Peter Maurice Music Co. Ltd, London England"
 	attributes['copyrightextra']="United Sates Copyright Renewed andAssigned to Sharpiro Bernstein & Co., Inc."
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['location']=""
 
+	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
-	attributes['uuid']=""
+	attributes['uuid']="2507f6ec-da80-11e3-9bfd-ff436f70a1a7"
 	attributes['structure']=""
+	attributes['location']=""
 
 	attributes['idyoutuberemark']=""
 	attributes['idyoutube']=""

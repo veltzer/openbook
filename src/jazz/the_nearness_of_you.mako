@@ -14,10 +14,10 @@
 	attributes['piece']="Slowly"
 	attributes['copyright']="1937, 1940 Famous Music Corporation"
 	attributes['copyrightextra']="Renewed 1964, 1967"
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 
+	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
-	attributes['uuid']=""
+	attributes['uuid']="aeb48162-da80-11e3-9daf-67e95f938714"
 	attributes['structure']="AABA"
 
 	attributes['idyoutuberemark']=""

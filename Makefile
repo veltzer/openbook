@@ -274,8 +274,8 @@ check_min_chords:
 check_ws:
 	$(info doing [$@])
 	$(Q)-scripts/pgrep.pl "  | $$|\w\t|\t$$" $(FILES_MAKO) $(FILES_LYI)
-.PHONY: check_uuid
-check_uuid:
+.PHONY: check_uuid_basic
+check_uuid_basic:
 	$(info doing [$@])
 	$(Q)scripts/ok_wrapper.pl grep --files-without-match uuid $(FILES_MAKO)
 .PHONY: check_poet
@@ -326,8 +326,12 @@ check_bad_lyric_breakup:
 check_veltzer_https:
 	$(info doing [$@])
 	$(Q)scripts/ok_wrapper.pl git grep "http:\/\/veltzer.net"
+.PHONY: check_uuid
+check_uuid:
+	$(info doing [$@])
+	$(Q)scripts/ok_wrapper.pl git grep "uuid']=\"\"" $(FILES_MAKO)
 .PHONY: check_all
-check_all: check_empty_copyright check_ws check_and check_extra_files check_min_chords check_uuid check_chordChanges check_bar check_break check_completion check_include check_threeunderscores check_mark check_bad_lyric_breakup check_veltzer_https
+check_all: check_empty_copyright check_ws check_and check_extra_files check_min_chords check_uuid_basic check_chordChanges check_bar check_break check_completion check_include check_threeunderscores check_mark check_bad_lyric_breakup check_veltzer_https check_uuid
 
 # rules
 

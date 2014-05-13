@@ -18,10 +18,10 @@
 	# this is from the fake book
 	attributes['copyright']="1944 by MCA Music Publishing, A division of MCA Inc, New York, NY"
 	attributes['copyrightextra']="Copyright Renewed"
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 
+	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
-	attributes['uuid']=""
+	attributes['uuid']="ea02cd50-da80-11e3-999d-eb3f2153c941"
 	attributes['structure']="ABA"
 
 	attributes['idyoutuberemark']=""

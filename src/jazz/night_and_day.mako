@@ -14,8 +14,8 @@
 	# from wikipedia
 	attributes['poet']="Cole Porter"
 	attributes['piece']=""
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="f3f8f010-3fda-11e2-ad72-a3725b0aaeaa"
 	attributes['structure']="AAB"
@@ -134,7 +134,7 @@
 	_ Night And Day
 	Un -- der the hide of me __
 	There's an oh such a hun -- gry
-	Year __ -- nin' bur __ -- nin' in -- side of me __
+	Year -- __ nin' bur -- __ nin' in -- side of me __
 	And its tor -- ment won't be through __
 	'Til you let me spend my life
 	Mak -- ing love __ to you
@@ -148,7 +148,7 @@
 	%% part "A"
 	_ _ _
 	Why it is so __
-	That this long __ -- ing for you
+	That this long -- __ ing for you
 	Fol -- lows wher -- ever I go. __
 	In the roa -- rin' tra -- ffic's boom __
 	In the si -- lence of my lone -- ly room __ _

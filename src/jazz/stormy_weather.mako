@@ -19,10 +19,10 @@
 	# this is from the fake book
 	attributes['copyright']="1933 Mills Music, Inc."
 	attributes['copyrightextra']="Renewed 1961 Arko Music Corp"
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 
+	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
-	attributes['uuid']=""
+	attributes['uuid']="6204de70-da80-11e3-95e9-fbc293b14fcd"
 	attributes['structure']=""
 
 	attributes['idyoutuberemark']=""

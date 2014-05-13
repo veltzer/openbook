@@ -16,8 +16,8 @@
 	attributes['poet']="Edward Heyman"
 	attributes['copyright']="1952 by Victor Young Publications, Inc. Copyright Renewed, Assigned to Chappell & Co., Inc. and Intersong -USA,Inc."
 	attributes['copyrightextra']="All Rights Administered by Chappell & Co., Inc."
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="4e2019f6-f9ef-11e1-b796-174ce4bd9471"
 	attributes['structure']="ABAC"

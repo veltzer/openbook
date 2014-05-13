@@ -14,10 +14,10 @@
 	attributes['piece']="Moderately"
 	attributes['copyright']="1939 MCA Music Publsihing, A Division of MCA inc,."
 	attributes['copyrightextra']=""
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 
+	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
-	attributes['uuid']=""
+	attributes['uuid']="7708f4d8-da7f-11e3-a46b-fb3b74e0bdec"
 	attributes['structure']=""
 
 	attributes['idyoutuberemark']=""

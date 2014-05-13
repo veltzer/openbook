@@ -16,8 +16,8 @@
 	attributes['piece']="Moderately"
 	# this is from the fake book
 	attributes['copyright']="1931 Bourne Co. Copyright Renewed"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="6dd0233c-03b8-11e1-b5a9-0019d11e5a41"
 	attributes['structure']="AB"

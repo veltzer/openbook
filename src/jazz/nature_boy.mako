@@ -17,8 +17,8 @@
 	attributes['piece']="Med. Ballad"
 	# from the new Real Book
 	attributes['copyright']="1948, Eben Ahbez"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="13d57a4a-a26f-11df-8711-0019d11e5a41"
 	attributes['structure']="AB"

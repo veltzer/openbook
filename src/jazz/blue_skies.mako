@@ -14,10 +14,10 @@
 	attributes['piece']=""
 	attributes['copyright']=""
 	attributes['copyrightextra']=""
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 
+	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
-	attributes['uuid']=""
+	attributes['uuid']="fe14b29a-da80-11e3-a178-07c25bb937a6"
 	attributes['structure']="ABAC"
 
 	attributes['idyoutuberemark']=""

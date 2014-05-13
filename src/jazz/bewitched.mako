@@ -16,8 +16,8 @@
 	attributes['piece']="Modeartely Slow"
 	# this is from the fake book
 	attributes['copyright']="1941, by Chappell & Co., Inc. Copyright Renewed"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="dd1624e6-2567-11e1-9444-0019d11e5a41"
 	attributes['structure']="AABA"

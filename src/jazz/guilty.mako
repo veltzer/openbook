@@ -14,11 +14,10 @@
 	attributes['piece']="Slowly"
 	attributes['copyright']="1931 (Renewed 1958) Whiting Publishing and EMI Feist Catalog Inc."
 	attributes['copyrightextra']=""
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['location']=""
 
+	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
-	attributes['uuid']=""
+	attributes['uuid']="16154c88-da81-11e3-b38d-b75a4937af0f"
 	attributes['structure']=""
 
 	attributes['idyoutuberemark']=""
