@@ -19,12 +19,6 @@
 	attributes['completion']="5"
 	attributes['uuid']="aeb48162-da80-11e3-9daf-67e95f938714"
 	attributes['structure']="AABA"
-
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
 %>
 % endif
 

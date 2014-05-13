@@ -12,18 +12,11 @@
 	attributes['poet']="Oscar Hammerstein III"
 	attributes['piece']="Moderately and rather freely"
 	attributes['copyright']="1927 T.B. Hama Company, Copyright Renewed"
-	attributes['copyrightextra']=""
 
 	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
 	attributes['uuid']="0343bfb8-da81-11e3-a02b-6be199cd3208"
 	attributes['structure']="AABA"
-
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
 %>
 % endif
 

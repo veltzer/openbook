@@ -8,17 +8,13 @@
 
 	attributes['title']="Moon River"
 	attributes['style']="Ballad"
-	attributes['subtitle']=""
 	attributes['composer']="Henri Mancini"
 	attributes['poet']="Johnny Mercer"
 	attributes['piece']="Ballad"
-	attributes['copyright']="???"
-	attributes['copyrightextra']="???"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="11542882-e65c-11e2-9030-4311f6fc08c2"
-	# my own deduction
 	attributes['structure']="ABAC"
 
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Moon-River-lyrics-Frank-Sinatra/B08DDFF369E15C874825691F000CAC36"

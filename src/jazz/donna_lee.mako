@@ -11,7 +11,6 @@
 	attributes['composer']="Charlie Parker"
 	# this is from the real book
 	attributes['piece']="Up Tempo"
-	#attributes['copyright']=""
 
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"

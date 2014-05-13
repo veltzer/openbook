@@ -9,23 +9,15 @@
 
 	attributes['title']="Don't Get Around Much Anymore"
 	attributes['style']="Jazz"
-	attributes['subtitle']=""
 	attributes['composer']="Duke Ellington"
-	attributes['copyright']="1973 Herrison Music Corp. and Robbins Music"
-	attributes['copyrightextra']=""
 	attributes['poet']="Bob Russell"
 	attributes['piece']="Medium Swing"
+	attributes['copyright']="1973 Herrison Music Corp. and Robbins Music"
 
 	attributes['typesetter']="Jordan Eldredge <jordaneldredge@gmail.com>"
 	attributes['completion']="5"
 	attributes['uuid']="09a63a8e-da81-11e3-b649-339a89e65802"
 	attributes['structure']="AABA"
-
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
 %>
 % endif
 

@@ -10,8 +10,6 @@
 	attributes['style']="Jazz"
 	# from the real book
 	attributes['composer']="Miles Davis"
-	# no poet for this tune
-	#attributes['poet']=""
 	# from the real book
 	attributes['piece']="Jazz"
 

@@ -9,21 +9,12 @@
 	attributes['title']="Take Five"
 	attributes['style']="Jazz"
 	attributes['composer']="Paul Desmond"
-	attributes['poet']=""
 	attributes['piece']="Moderately"
 	attributes['copyright']="1960 (Renewed) Desmond Music Company (U.S.A.) and Derry Music Company (Canada)"
-	attributes['copyrightextra']=""
 
 	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
 	attributes['uuid']="86e17438-da80-11e3-9f6f-832caca8efee"
-	attributes['structure']=""
-
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
 %>
 % endif
 

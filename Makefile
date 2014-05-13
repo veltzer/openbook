@@ -330,8 +330,12 @@ check_veltzer_https:
 check_uuid:
 	$(info doing [$@])
 	$(Q)scripts/ok_wrapper.pl git grep "uuid']=\"\"" $(FILES_MAKO)
+.PHONY: check_empty
+check_empty:
+	$(info doing [$@])
+	$(Q)scripts/ok_wrapper.pl git grep "']=\"\"" $(FILES_MAKO)
 .PHONY: check_all
-check_all: check_empty_copyright check_ws check_and check_extra_files check_min_chords check_uuid_basic check_chordChanges check_bar check_break check_completion check_include check_threeunderscores check_mark check_bad_lyric_breakup check_veltzer_https check_uuid
+check_all: check_empty_copyright check_ws check_and check_extra_files check_min_chords check_uuid_basic check_chordChanges check_bar check_break check_completion check_include check_threeunderscores check_mark check_bad_lyric_breakup check_veltzer_https check_uuid check_empty
 
 # rules
 

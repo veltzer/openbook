@@ -13,7 +13,6 @@
 	attributes['composer']="Cole Porter"
 	# from wikipedia
 	attributes['poet']="Cole Porter"
-	attributes['piece']=""
 
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"

@@ -14,19 +14,10 @@
 	attributes['poet']="Lewis Allan"
 	# this is from the fake book
 	attributes['piece']="Andante Moderato"
-	attributes['copyright']=""
-	attributes['copyrightextra']=""
 
 	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
 	attributes['uuid']="68679a0a-da80-11e3-8208-4fcd89557297"
-	attributes['structure']=""
-
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
 %>
 % endif
 

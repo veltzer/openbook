@@ -16,18 +16,11 @@
 	attributes['piece']="Moderately"
 	# from the fake book
 	attributes['copyright']="1944 Bourne Co. and Dorsey Bros. Music, Inc. Division of Music Sales Corporation"
-	attributes['copyrightextra']=""
 
 	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
 	attributes['uuid']="a2084076-da7f-11e3-86db-a7e6565c22fc"
 	attributes['structure']="ABAB'"
-
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
 %>
 % endif
 

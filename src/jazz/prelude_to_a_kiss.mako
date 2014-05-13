@@ -11,19 +11,10 @@
 	attributes['composer']="Duke Ellington"
 	attributes['poet']="Irving Gordon and Irving Mills"
 	attributes['piece']="Slowly"
-	attributes['copyright']=""
-	attributes['copyrightextra']=""
 
 	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
 	attributes['uuid']="1a21cdfc-da80-11e3-8e64-13828462b6b5"
-	attributes['structure']=""
-
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['lyricsurl']=""
 %>
 % endif
 
