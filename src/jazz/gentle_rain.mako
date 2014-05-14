@@ -10,12 +10,12 @@
 	attributes['title']="Gentle Rain"
 	attributes['style']="Jazz"
 	attributes['composer']="Louis Bonfa"
+	# this is from the new real book
+	attributes['poet']="Matt Dubey"
 	# this comes from the real book...
 	attributes['piece']="Bossa"
 	# this is from the new real book
 	attributes['piece']="Med. Ballad (or Slow Bossa)"
-	# this is from the new real book
-	attributes['poet']="Matt Dubey"
 	attributes['copyright']="1931 (renewed 1959) EMI Robbins Catalog, Inc"
 	attributes['copyrightextra']="Used by Persmission of CPP/Belwin, Inc, Miami, FL. International Copyright Secured. All Rights Reserved."
 

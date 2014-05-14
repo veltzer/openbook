@@ -7,9 +7,9 @@
 	attributes['render']="Fake"
 
 	attributes['title']="My Ship"
-	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['subtitle']="From The Musical Production 'LADY IN THE DARK'"
+	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['composer']="Kurt Weil"
 	# this is from the fake book

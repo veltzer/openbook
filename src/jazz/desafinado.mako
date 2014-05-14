@@ -11,12 +11,12 @@
 	attributes['subtitle']="Slightly Out Of Tune"
 	attributes['composer']="Antonio Carlos Jobim"
 	# this is from the fake book
-	attributes['copyright']="1959 and 1962, Editora Musical Arapua, Sao Paulo, Brazil"
-	attributes['copyrightextra']="1959 1962, Editora Musical Arapua, Sao Paulo, Brazil"
+	attributes['poet']="Newton Mendonca, Jon Hendricks, Jessie Cavanaugh"
 	# this is from the fake book
 	attributes['piece']="Medium Bossa Nova"
 	# this is from the fake book
-	attributes['poet']="Newton Mendonca, Jon Hendricks, Jessie Cavanaugh"
+	attributes['copyright']="1959 and 1962, Editora Musical Arapua, Sao Paulo, Brazil"
+	attributes['copyrightextra']="1959 1962, Editora Musical Arapua, Sao Paulo, Brazil"
 
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"

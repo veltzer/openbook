@@ -26,6 +26,8 @@
 % endif
 
 % if part=='Doc':
+	TODO:
+	- add lyrics to this one.
 % endif
 
 % if part=='ChordsFake':

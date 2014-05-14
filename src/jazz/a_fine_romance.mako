@@ -11,8 +11,8 @@
 	attributes['style']="Jazz"
 	attributes['composer']="Jerome Kern"
 	# this is from the fake book
-	attributes['piece']="Moderately"
 	attributes['poet']="Dorothy Fields"
+	attributes['piece']="Moderately"
 	# this is from the fake book
 	attributes['copyright']="1936 T.B. Harms Company. Copyright Renewed."
 	attributes['copyrightextra']="(c/o The Welk Music Group, Santa Monica, CA 90401)."

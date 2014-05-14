@@ -10,8 +10,8 @@
 	attributes['title']="(I'm Afraid) The Masquerade Is Over"
 	attributes['style']="Jazz"
 	attributes['composer']="Allie Wrubel"
-	attributes['piece']="Moderately Slow"
 	attributes['poet']="Herb Magidson"
+	attributes['piece']="Moderately Slow"
 
 	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"

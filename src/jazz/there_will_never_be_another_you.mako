@@ -9,8 +9,8 @@
 	attributes['title']="There Will Never Be Another You"
 	attributes['style']="Jazz"
 	attributes['composer']="Harry Warren"
-	attributes['piece']="Easy Swing"
 	attributes['poet']="Mack Gordon"
+	attributes['piece']="Easy Swing"
 	attributes['copyright']="1942, 1987 Twentieth Century Music Corporation"
 	attributes['copyrightextra']="Renewed 1970 Twentieth Century Music Corporation. All Rights Controlled by Morley Music Co. International Copyright Secured. All Rights Reserved."
 

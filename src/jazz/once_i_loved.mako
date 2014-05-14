@@ -11,12 +11,12 @@
 	attributes['style']="Jazz"
 	# from the real book
 	attributes['composer']="Antonio Carlos Jobim"
+	# Ray Gilbert from the new real book
+	attributes['poet']="Vinicius DeMoraes, Ray Gilbert"
 	# from the real book
 	attributes['piece']="Bossa"
 	# from the new real book
 	attributes['piece']="Med.-Slow Bossa Nova"
-	# Ray Gilbert from the new real book
-	attributes['poet']="Vinicius DeMoraes, Ray Gilbert"
 	# from the new real book
 	attributes['copyright']="1965, Ipanema Music. Used By Permission."
 

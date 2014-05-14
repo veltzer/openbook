@@ -11,12 +11,12 @@
 	attributes['style']="Jazz"
 	# from the hal leonard book
 	attributes['composer']="Vernon Duke"
-	# from the hal leonard book
-	attributes['copyright']="1934 by Kay Duke Music."
-	attributes['copyrightextra']="Copyright Renewed. All Rights Administered by BMG Songs, Inc."
 	attributes['poet']="Vernon Duke"
 	# this is from the hal leonard book.
 	attributes['piece']="Brightly"
+	# from the hal leonard book
+	attributes['copyright']="1934 by Kay Duke Music."
+	attributes['copyrightextra']="Copyright Renewed. All Rights Administered by BMG Songs, Inc."
 
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"

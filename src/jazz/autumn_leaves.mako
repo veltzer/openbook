@@ -11,13 +11,13 @@
 	attributes['style']="Jazz"
 	attributes['subtitle']="Les Feuilles Mortes"
 	attributes['composer']="Joseph Kosma"
-	attributes['copyright']="1947, 1950, 1987 Enoch Et Cie. Renewed 1975, 1978 Enoch Et Cie"
-	attributes['copyrightextra']="Sole Selling Agent for U.S.A (including its territories and possessions) and Dominion of Canada: Morley Music Co., by arrangement with Enoch Et Cie. International Copyright Secured. All Rights Reserved."
 	attributes['poet']="Jacques Prevert, Johnny Mercer"
 	# this is from the fake book.
 	attributes['piece']="Medium Swing"
 	# this is from the real book
 	attributes['piece']="Med. Jazz"
+	attributes['copyright']="1947, 1950, 1987 Enoch Et Cie. Renewed 1975, 1978 Enoch Et Cie"
+	attributes['copyrightextra']="Sole Selling Agent for U.S.A (including its territories and possessions) and Dominion of Canada: Morley Music Co., by arrangement with Enoch Et Cie. International Copyright Secured. All Rights Reserved."
 
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
