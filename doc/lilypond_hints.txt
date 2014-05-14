@@ -1,5 +1,6 @@
 Melody:
 =======
+- coda. see "I'll remember April".
 - in order to parenthesize notes: <\parenthesize e'>4
 	This is just for a single note? how do I put parens on more than one note?
 	It does not work to put two notes inside the <\parenthesize> block.
