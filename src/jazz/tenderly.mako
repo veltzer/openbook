@@ -27,7 +27,7 @@
 
 	attributes['idyoutuberemark']="Beautiful lyric version by Chet Baker"
 	attributes['idyoutube']="H6mfWun73vI"
-	attributes['idyoutuberemark']="Vocal version by Sarah Vaughan"
+	attributes['idyoutuberemark']="Vocal version by Sarah Vaughn"
 	attributes['idyoutube']="qNi6M_A9AzU"
 	attributes['lyricsurl']="http://www.metrolyrics.com/tenderly-lyrics-ella-fitzgerald.html"
 %>
