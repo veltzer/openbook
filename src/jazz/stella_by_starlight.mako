@@ -9,8 +9,8 @@
 	attributes['title']="Stella By Starlight"
 	attributes['style']="Jazz"
 	attributes['composer']="Victor Young"
-	attributes['piece']="Slowly, with Expression"
 	attributes['poet']="Ned Washington"
+	attributes['piece']="Slowly, with Expression"
 
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"

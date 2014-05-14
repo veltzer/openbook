@@ -9,8 +9,8 @@
 	attributes['title']="Darn That Dream"
 	attributes['style']="Jazz"
 	attributes['composer']="Jimmy Van Heusen"
-	attributes['piece']="Slowly"
 	attributes['poet']="Eddie DeLange"
+	attributes['piece']="Slowly"
 	attributes['copyright']="1939 Bregman, Vocco and Conn, Inc. New York"
 	attributes['copyrightextra']="Copyright Renewed, Assigned and Copyright 1968 by Scarsdale Music. Corporation and Van Heusen Music Corp., New York"
 

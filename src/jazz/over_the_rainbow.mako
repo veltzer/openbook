@@ -15,12 +15,12 @@
 	attributes['style']="Jazz"
 	# from wikifonia
 	attributes['composer']="Harold Arlen"
-	# from wikifonia
-	attributes['copyright']="Musicopy"
-	# my own
-	attributes['piece']="Slowly, with expression"
 	# from wikifonia and wikipedia
 	attributes['poet']="Edgar Yipsel Harburg"
+	# my own
+	attributes['piece']="Slowly, with expression"
+	# from wikifonia
+	attributes['copyright']="Musicopy"
 
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"

@@ -15,9 +15,9 @@
 	# from the fake book
 	attributes['composer']="Antonio Carlos Jobim"
 	# from the fake book
-	attributes['piece']="Bossa Nova"
-	# from the fake book
 	attributes['poet']="Vinicius DeMoraes, John Hendricks, Jessie Cavanaugh"
+	# from the fake book
+	attributes['piece']="Bossa Nova"
 	# from the fake book
 	attributes['copyright']="1962 and 1967 Editora Musical Arapua, Sao Paulo, Brazil"
 	# from the fake book

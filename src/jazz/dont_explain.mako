@@ -9,9 +9,9 @@
 	attributes['title']="Don't Explain"
 	attributes['style']="Jazz"
 	attributes['composer']="Billie Holiday"
+	attributes['poet']="Arthur Herzog, Jr."
 	# this is from the fake book
 	attributes['piece']="Slowly"
-	attributes['poet']="Arthur Herzog, Jr."
 	# this is from the fake book
 	attributes['copyright']="1946 by Northern Music Company"
 	attributes['copyrightextra']="Rights Administered by MCA Music Publishing, A Division of MCA INC., New York, NY. Copyright Renewed."

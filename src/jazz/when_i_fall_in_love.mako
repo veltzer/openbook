@@ -11,9 +11,9 @@
 	# from the fake book
 	attributes['composer']="Victor Young"
 	# from the fake book
-	attributes['piece']="Moderately"
-	# from the fake book
 	attributes['poet']="Edward Heyman"
+	# from the fake book
+	attributes['piece']="Moderately"
 	attributes['copyright']="1952 by Victor Young Publications, Inc. Copyright Renewed, Assigned to Chappell & Co., Inc. and Intersong -USA,Inc."
 	attributes['copyrightextra']="All Rights Administered by Chappell & Co., Inc."
 

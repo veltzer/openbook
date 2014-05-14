@@ -7,11 +7,11 @@
 	attributes['render']="Unknown"
 
 	attributes['title']="Corcovado"
-	attributes['style']="Jazz"
 	attributes['subtitle']="quiet nights of quiet stars"
+	attributes['style']="Jazz"
 	attributes['composer']="Antonio Carlos Jobim"
-	attributes['copyright']="1959, Editora Musical Arapua, Sao Paulo, Brazil"
 	attributes['piece']="Med Swing"
+	attributes['copyright']="1959, Editora Musical Arapua, Sao Paulo, Brazil"
 
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="0"

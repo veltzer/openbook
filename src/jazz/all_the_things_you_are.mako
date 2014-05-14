@@ -9,8 +9,8 @@
 	attributes['title']="All The Things You Are"
 	attributes['style']="Jazz"
 	attributes['composer']="Jerome Kern"
-	attributes['piece']="Moderately"
 	attributes['poet']="Oscar Hammerstein II"
+	attributes['piece']="Moderately"
 	attributes['copyright']="1939 T.B. Harms Company. Copyright Renewed."
 	attributes['copyrightextra']="(c/o The Welk Music Group, Santa Monica, CA 90401)"
 
