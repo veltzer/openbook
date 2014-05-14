@@ -134,8 +134,7 @@
 
 % if part=='LyricsmoreFake':
 \lyricmode {
-	%% Workaround to avoid having to repeat words. Each one skips a note.
-	{ \skip 1 } { \skip 1 }
+	_ _
 	bare __ gloom and mis -- 'ry ev -- 'ry -- where, Storm -- y Weath -- er, __
 	just can't get my poor __ self to -- geth -- er, __ I'm wear -- y all __ the
 }
