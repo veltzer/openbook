@@ -117,8 +117,7 @@
 
 % if part=='LyricsmoreFake':
 \lyricmode {
-	%% Workaround to avoid having to repeat words. Each one skips a note.
-	{ \skip 1 } { \skip 1 } { \skip 1 } { \skip 1 } { \skip 1 } { \skip 1 } { \skip 1 }
+	_ _ _ _ _ _ _
 	rette, __ to some ex -- qui -- site chan -- son -- ette __
 	two hand are sure to sly -- ly meet be -- neath a ser -- vi -- nette, with
 }

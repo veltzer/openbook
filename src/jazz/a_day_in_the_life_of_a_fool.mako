@@ -51,7 +51,7 @@
 	- put in youtube performances
 	- put in the lyrics url
 	TODO:
-	- add another version of this tune. 
+	- add another version of this tune.
 % endif
 
 % if part=='ChordsFake':
@@ -60,7 +60,7 @@
 	\startSong
 
 	\partial 4 s4 |
- 
+
 	\myMark "A"
 	\startPart
 	a1:m | b2:m7.5- e:7.9- | a1:m | b2:m7.5- e:7.9- | \myEndLine
@@ -96,12 +96,12 @@
 
 	\partial 4 e4 |
 	%% part "A"
-	c'2~ \times 2/3 { c4 b a } | a2~ \times 2/3 { a4 gis b } | e,1~ | e2 r4 e4 | \myEndLine 
+	c'2~ \times 2/3 { c4 b a } | a2~ \times 2/3 { a4 gis b } | e,1~ | e2 r4 e4 | \myEndLine
 	c'2~ \times 2/3 { c4 b a } | a2~ \times 2/3 { a4 g b } | e,1~ | e2 r8 e f g | \myEndLine
 	a4. d,8 d2~ | d r8 d e f | g4. c,8 c2~ | c r8 c d e | \myEndLine
 	f4. b,8 b2~ | b \times 2/3 { b4 c d } | e1~ | e2 r4 e | \myEndLine
 	%% part "A'"
-	c'2~ \times 2/3 { c4 b a } | a2~ \times 2/3 { a4 gis b } | e,1~ | e2 r4 e4 | \myEndLine 
+	c'2~ \times 2/3 { c4 b a } | a2~ \times 2/3 { a4 gis b } | e,1~ | e2 r4 e4 | \myEndLine
 	bes'2~ \times 2/3 { bes4 a g } | g2~ \times 2/3 { g4 f e } | a1~ | a | \myEndLine
 	r4 d, \times 2/3 { d e f } | b1 | r4 c, \times 2/3 { c d e } | a2. g4 | \myEndLine
 	e1~ | e2 \times 2/3 { e4 gis b } | a1~ | a2 \times 2/3 { r4 a b } | \myEndLine

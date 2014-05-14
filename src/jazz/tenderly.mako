@@ -14,7 +14,7 @@
 	# from the fake book
 	attributes['poet']="Jack Lawrence"
 	# from the fake book
-	attributes['piece']="Mederately"
+	attributes['piece']="Moderately"
 	# from the fake book
 	attributes['copyright']="1946, 1947, 1987 EDWIN H. MORRIS & COMPANY, A Division of MPL Communications, Inc."
 	# from the fake book

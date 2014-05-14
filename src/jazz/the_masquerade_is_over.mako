@@ -115,7 +115,7 @@
 
 % if part=='LyricsmoreFake':
 \lyricmode {
-	{ \skip 1 } words don't mean __ what they used to mean. They were once in --
+	_ words don't mean __ what they used to mean. They were once in --
 	spired, __ now they're juse rou -- tine.
 }
 % endif

@@ -1,0 +1,156 @@
+<%page args="part"/>
+% if part=='Vars':
+<%
+	attributes['doChords']=True
+	attributes['doVoice']=True
+	attributes['doLyrics']=True
+	attributes['doLyricsmore']=True
+	attributes['render']="Fake"
+
+	# from the fake book
+	attributes['title']="That's All"
+	attributes['style']="Jazz"
+	# from the fake book
+	attributes['composer']="Alan Brandt, Bob Haymes"
+	# from the fake book
+	attributes['poet']="Alan Brandt, Bob Haymes"
+	# from the fake book
+	attributes['piece']="Slowly, with expression"
+	# from the fake book
+	attributes['copyright']="1952 Renewed 1982 Mixed Bag Music, Inc."
+
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
+	attributes['completion']="5"
+	attributes['uuid']="b0685520-db92-11e3-a96d-4fe96cfbc3fb"
+	attributes['structure']="AABA"
+
+	attributes['idyoutuberemark']="Nat King Cole cannonical version"
+	attributes['idyoutube']="sooSaQpGnMM"
+	attributes['idyoutuberemark']="Frank Sinatra cannonical version"
+	attributes['idyoutube']="SINfqtCq0lY"
+	attributes['lyricsurl']="http://www.metrolyrics.com/thats-all-lyrics-nat-king-cole.html"
+%>
+% endif
+
+% if part=='Doc':
+	DONE:
+	- added the epdf from the fake book.
+	- put in the tunes structure
+	- added the meta data from the fake book.
+	- put in the chords (fakebook).
+	- put in the lyrics (fakebook).
+	- put in the tune (fakebook).
+	- check the chords (fakebook).
+	- check the tune (fakebook).
+	- check the lyrics (fakebook).
+	- heard the tune to check that it is right and adjust the tempo.
+	- added lyrics url.
+	- added youtube performances.
+	TODO:
+	- add another version of this tune.
+% endif
+
+% if part=='ChordsFake':
+\chordmode {
+	\startChords
+	\startSong
+
+	\partial 4 s4 |
+
+	\myMark "A"
+	\startPart
+	\repeat volta 2 {
+		c2 d:m7 | e:m7 f4:m7 g:7 | e2:m7 a:9 | d:m7 g:7 | \myEndLine
+		fis:m7.5- f:m7 | e:m7 ees:dim7 |
+	} \alternative {
+		{
+			e:m7 a:7.9- | d:7.5- g:7 | %% \myEndLine remarked to not cause line break
+		}
+		{
+			e4:m7 a:7.9- d:m7 g:7.9- | c1 | \myEndLine
+		}
+	}
+	\endPart
+
+	\myMark "B"
+	\startPart
+	g2:m7 c:9 | f:maj7.9 d:9 | g:m7 c:9 | f:maj7 f:6 | \myEndLine
+	a:m7 d:9 | g:maj7.9 e:9 | a:m7 d:9 | d:m7 g:7 | \myEndLine
+	\endPart
+
+	\myMark "A"
+	\startPart
+	c2 d:m7 | e:m7 f4:m7 g:7 | e2:m7 a:9 | d:m7 g:7 | \myEndLine
+	fis:m7.5- f:m7 | e:m7 ees:dim7 | e4:m7 a:7.9- d:m7 g:7.9- | c1 | \myEndLine
+	\endPart
+
+	\endSong
+	\endChords
+}
+% endif
+
+% if part=='VoiceFake':
+\relative g' {
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Andante" 4 = 90
+	\set Staff.timeSignatureFraction=#'(2 . 2)
+	\time 4/4
+	\key c \major
+
+	\partial 4 e8 f |
+	%% part "A"
+	\repeat volta 2 {
+		g b g e g b g e | g g~ g2 e8 f | g b g e g b g e | g2. a8 b | \myEndLine
+		c e c a c4. a8 | c e c a c4. a8 |
+	} \alternative {
+		{
+			g2. e4 | d2. e8 f | %% \myEndLine remarked to not cause a line break
+		}
+		{
+			g2. e4 | c2. c8 c' | \myEndLine
+		}
+	}
+	%% part "B"
+	a4 c,8 c' a4 c,8 c' | a4 a2 c,8 c' | a4 c,8 c' a4 c,8 c' | a2. d,8 d' | \myEndLine
+	b4 d,8 d' b4 d,8 d' | b4 b2 d,8 d' | b4 d,8 d' b4 d,8 b' | g2. e8 f | \myEndLine
+	%% part "A"
+	g b g e g b g e | g g~ g2 e8 f | g b g e g b g e | g2. a8 b | \myEndLine
+	c e c a c4. a8 | c e c a c4. a8 | g2. e4 | c1 | \myEndLine
+}
+% endif
+
+% if part=='LyricsFake':
+\lyricmode {
+	%% part "A"
+	I can on -- ly give you love that lasts for -- ev -- er, __
+	and the prom -- ise to be near each time you call;
+	and the on -- ly heart I own, for you and you a -- lone, That's All, That's All. I can
+	_ _ _ _ _
+	%%All, That's All.
+	%% part "B"
+	those I am sure who have told you
+	they would give you the world for a toy.
+	All I have are these arms to en -- fold you
+	and a love time can nev -- er de -- stroy.
+	%% part "A"
+	If you're won -- d'ring what I'm ask -- ing in re -- turn dear, __
+	you'll be glad to know that my de -- mands are small:
+	say it's me that you'll a -- dore,
+	for now and ev -- er -- more,
+	That's All, That's All.
+}
+% endif
+
+% if part=='LyricsmoreFake':
+\lyricmode {
+	%% part "A"
+	_ _
+	on -ly give you coun -- try walks in spring -- time, __
+	and a hand to hold when leaves be -- gin to fall;
+	and a love whose burn -- ing light,
+	will warm the win -- ter night,
+	That's
+	_ _ _ _ _
+	All, That's All. There are
+}
+% endif

@@ -121,7 +121,7 @@
 
 % if part=='LyricsmoreFake':
 \lyricmode {
-	\skip 1 \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 \skip 1 \skip 1
+	_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 	got the sun, got the moon, _ got the deep blue sea. __ De folks wid plen -- ty o' plen -- ty __
 	got to pray __ all de day, _ __ Seems wid plen -- ty you sure got to wor -- ry how to
 	keep the debbel a -- way, __ a -- way. __ I ain't a -- fret -- tin' 'bout

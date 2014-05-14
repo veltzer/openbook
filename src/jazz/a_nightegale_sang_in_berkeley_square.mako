@@ -125,8 +125,7 @@
 
 % if part=='LyricsmoreFake':
 \lyricmode {
-	%% Workaround to avoid having to repeat words. Each one skips a note.
-	{ \skip 1 }
+	_
 	strange it ws, how sweet and strange. There was nev -- er a dream to com -- pare with that
 	ha -- zy, cra -- zy night we met, when A Night -- in -- gale Sang In Ber -- k'ley Square.
 	This heart of mine beat loud and fast like a mer -- ry -- go -- round in a fair. For

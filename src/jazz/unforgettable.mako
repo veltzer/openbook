@@ -10,7 +10,7 @@
 	attributes['style']="Jazz"
 	attributes['composer']="Irving Gordon"
 	attributes['poet']="Irving Gordon"
-	attributes['piece']="Mederately"
+	attributes['piece']="Moderately"
 	attributes['copyright']="1951, Bourne Co. Copyright Renewed."
 
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
