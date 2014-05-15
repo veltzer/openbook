@@ -3,7 +3,7 @@
 <%
 	attributes['doChords']=True
 	attributes['doVoice']=True
-	attributes['render']="Real"
+	attributes['render']="Aebersold"
 
 	attributes['title']="Watermelon Man"
 	attributes['style']="Jazz"
@@ -14,7 +14,7 @@
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="359f7428-a26f-11df-ad8c-0019d11e5a41"
-	attributes['structure']="A"
+	attributes['structure']="16 bar Blues"
 
 	attributes['idyoutube']="4z8Rt4nvd-I"
 %>
@@ -24,26 +24,25 @@
 	DONE:
 	- added 'structure' field to the meta data.
 	TODO:
-	- this version is not really from the Real book, it is from the aebersold book,
-		bring in the PDF verify and write it seperately.
+	- bring in the aebersold pdf this tune is based on as it is not in the epdf folder.
 	- document what has been done.
 	- document the youtube performance.
 	- add the piano accompaniment for this song (rythm pattern with some notes - ripp
 	it off the album).
-	- add another version of this one with epdf.
+	- do the real book III version of this tune too (it is already in the epdf).
 % endif
 
-% if part=='ChordsReal':
+% if part=='ChordsAebersold':
 \chordmode {
 	\startChords
 	\startSong
 
 	\myMark "A"
 	\startPart
-	f1:7 | f1:7 | f1:7 | f1:7 | \myEndLine
-	bes1:7 | bes1:7 | f1:7 | f1:7 | \myEndLine
-	c1:7 | bes1:7 | c1:7 | bes1:7 | \myEndLine
-	c1:7 | bes1:7 | f1:7 | f1:7 | \myEndLine
+	f1*4:7 | \myEndLine
+	bes1*2:7 | f:7 | \myEndLine
+	c1:7 | bes:7 | c:7 | bes:7 | \myEndLine
+	c:7 | bes:7 | f1*2:7 | \myEndLine
 	\endPart
 
 	\endSong
@@ -51,17 +50,18 @@
 }
 % endif
 
-% if part=='VoiceReal':
+% if part=='VoiceAebersold':
 \relative ees'' {
 	\key c \major
 	\time 4/4
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 
-	ees1\<~ | ees4\! f,8 f8 <aes c> ( <bes d>4-. ) f8~ | f1~ | f2 r2 |
-	f'1\<~ | f4\! f,8 f8 <aes c> ( <bes d>4-. ) f8~ | f1~ | f2 r2 |
-	r4 c'8 ( c8 g'4 a4 | aes8 g8 f8 d8 f4 g-. ) |
-	r4 c,8 ( c8 g'4 a4 | aes8 g8 f8 d8 c4 d-. ) |
-	r4 c8 ( c8 g'4 aes4 | \mark \markup { \italic { break } } f-. ) f,8 f8 <aes c> ( <bes d>4-. ) f8~ | f1 | r1 |
+	%% part "A"
+	ees1\p\<~ | ees4\! f,8 f <aes c> ( <bes d>4-. ) f8~ | f1~ | f2 r |
+	f'1\p\<~ | f4\! f,8 f <aes c> ( <bes d>4-. ) f8~ | f1~ | f2 r |
+	r4 c'8 ( c g'4 a | aes8 g f d f4 g-. ) |
+	r c,8 ( c g'4 a | aes8 g f d c4 d-. ) |
+	r c8 ( c g'4 aes | \mark \markup { \italic { break } } f-. ) f,8 f <aes c> ( <bes d>4-. ) f8~ | f1 | r |
 }
 % endif
