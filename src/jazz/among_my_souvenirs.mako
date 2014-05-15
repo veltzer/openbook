@@ -25,6 +25,7 @@
 % if part=='Doc':
 	DONE:
 	TODO:
+	- document where this tune is from (it is not neccessarily from the fake book).
 % endif
 
 % if part=='ChordsFake':
@@ -56,16 +57,14 @@
 		\startPart
 		ees c:9- | f1:m7 | bes2.:7 bes4:5+9 | ees1~ | \myEndLine
 		ees2 ees4/g ges:dim7 | f1:m7 | bes:9 |
-		\myEndLine
 	} \alternative {
 		{
-			ees2 c:m7 | f:m bes:7 |
+			ees2 c:m7 | f:m bes:7 | %% \myEndLine
 		}
 		{
-			ees2 aes:m6 | ees1 |
+			ees2 aes:m6 | ees1 | \myEndLine
 		}
 	}
-	\myEndLine
 	\endPart
 
 	\endChords
