@@ -1,5 +1,3 @@
-\version "2.14.2"
-
 %% This example shows how to customize chord names...
 %% I use it for altered chords.
 

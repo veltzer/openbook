@@ -5,7 +5,7 @@
 DO_MKDBG?=0
 # should we depend on the date of the makefile itself ?
 DO_ALL_DEP?=1
-# should we depend on the wrappers ?
+# should we depend on the wrappers scripts dates ?
 DO_WRAPDEPS?=1
 # should we make the ly files and use them?
 DO_LY?=0
@@ -270,8 +270,8 @@ check_and:
 check_min_chords:
 	$(info doing [$@])
 	$(Q)scripts/ok_wrapper.pl grep ":min" $(FILES_MAKO)
-.PHONY: check_ws
-check_ws:
+.PHONY: check_whitespace
+check_whitespace:
 	$(info doing [$@])
 	$(Q)-scripts/pgrep.pl "  | $$|\w\t|\t$$" $(FILES_MAKO) $(FILES_LYI)
 .PHONY: check_uuid_basic
@@ -334,8 +334,12 @@ check_uuid:
 check_empty:
 	$(info doing [$@])
 	$(Q)scripts/ok_wrapper.pl git grep "']=\"\"" $(FILES_MAKO)
+.PHONY: check_relative
+check_relative:
+	$(info doing [$@])
+	$(Q)git grep relative -- *.mako | grep -v "\relative {"
 .PHONY: check_all
-check_all: check_empty_copyright check_ws check_and check_extra_files check_min_chords check_uuid_basic check_chordChanges check_bar check_break check_completion check_include check_threeunderscores check_mark check_bad_lyric_breakup check_veltzer_https check_uuid check_empty
+check_all: check_empty_copyright check_whitespace check_and check_extra_files check_min_chords check_uuid_basic check_chordChanges check_bar check_break check_completion check_include check_threeunderscores check_mark check_bad_lyric_breakup check_veltzer_https check_uuid check_empty check_relative
 
 # rules
 

@@ -50,7 +50,7 @@
 \new Voice \with {
 	\consists "Pitch_squash_engraver"
 } {
-	\relative c'' {
+	\relative {
 		\improvisationOn
 		c4 c8 c c4 c8 c
 		f4 f8 f f4 f8 f

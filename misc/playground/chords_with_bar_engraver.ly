@@ -1,5 +1,3 @@
-\version "2.14.2"
-
 %% this example shows how to add bar engravers to plain chords
 
 \score {

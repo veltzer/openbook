@@ -1,5 +1,3 @@
-\version "2.14.2"
-
 %% this example shows how to use chords instead of chordmode
 
 \score {
