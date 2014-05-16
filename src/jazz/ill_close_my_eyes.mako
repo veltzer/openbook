@@ -44,7 +44,7 @@
 	\startChords
 	\startSong
 
-	\partial 2. s2.
+	\partial 2. s2. |
 
 	\myMark "A"
 	\startPart
@@ -73,6 +73,7 @@
 	\tempo "Allegro" 4 = 150
 	\time 4/4
 	\key f \major
+
 	\partial 4*3 c4 bes' c8 a~ |
 
 	%% part "A"
@@ -121,7 +122,7 @@
 	\startChords
 	\startSong
 
-	\partial 8*5 s8 s2
+	\partial 8*5 s8 s2 |
 
 	\myMark "A"
 	\startPart
@@ -152,6 +153,7 @@
 	\tempo "Allegro" 4 = 150
 	\time 4/4
 	\key f \major
+
 	\partial 8*5 c8 bes'4 c8 a~ |
 
 	%% part "A"
