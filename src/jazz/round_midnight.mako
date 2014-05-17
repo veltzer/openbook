@@ -95,7 +95,7 @@
 % endif
 
 % if part=='VoiceReal':
-\relative c' {
+\relative {
 	\time 4/4
 	\key ees \minor
 

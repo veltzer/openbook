@@ -34,37 +34,42 @@
 	\repeat volta 2 {
 		\myMark "A"
 		\startPart
-		ees1:7 | ees:7 | bes:m | bes:m | ees:7 | ees:7 | bes:m | bes:m |
-		ees:m7 | aes:7 | des:7 | ges:7 | c:m7.5- | f:7.5+ | bes:m | bes:m |
+		ees1:7 | ees:7 | bes:m | bes:m | \myEndLine
+		ees:7 | ees:7 | bes:m | bes:m | \myEndLine
+		ees:m7 | aes:7 | des:7 | ges:7 | \myEndLine
+		c:m7.5- | f:7.5+ | bes:m | bes:m | \myEndLine
 		\endPart
 
 		\myMark "A"
 		\startPart
-		ees1:7 | ees:7 | bes:m | bes:m | ees:7 | ees:7 | bes:m | bes:m |
-		ees:m7 | aes:7 | des:7 | ges:7 | c:m7.5- | f:7.5+ | bes:m | bes:m7 |
+		ees1:7 | ees:7 | bes:m | bes:m | \myEndLine
+		ees:7 | ees:7 | bes:m | bes:m | \myEndLine
+		ees:m7 | aes:7 | des:7 | ges:7 | \myEndLine
+		c:m7.5- | f:7.5+ | bes:m | bes:m7 | \myEndLine
 		\endPart
 
 		\myMark "B"
 		\startPart
-		ees:m7 | aes:7 | des:maj7 | f2:m7.5- bes:7 | ees1:m7 | aes:7 |
-		des:maj7 | bes:m7 | bes:7 | bes:7 | ees:m | ees:m | g:m7.5- |
-		c:7 | f:m7.5- | bes:7.9- |
+		ees:m7 | aes:7 | des:maj7 | f2:m7.5- bes:7 | \myEndLine
+		ees1:m7 | aes:7 | des:maj7 | bes:m7 | \myEndLine
+		bes:7 | bes:7 | ees:m | ees:m | \myEndLine
+		g:m7.5- | c:7 | f:m7.5- | bes:7.9- | \myEndLine
 		\endPart
 
 		\myMark "A'"
 		\startPart
-		ees:7 | ees:7 | bes:m | bes:m | ees:7 | ees:7 |
-		bes:m | bes:m | ees:m7 | aes:7 | des:7 | ges:7 | c:m7.5- | f:7.5+ |
-		bes:m | bes:m7/aes | \myEndLine
-		g2:m7.5- g:m7.5-/f | ees1:7 | ees2:m7 ees:m7/des | \myEndLine
-			c1:m7.5- |
+		ees:7 | ees:7 | bes:m | bes:m | \myEndLine
+		ees:7 | ees:7 | bes:m | bes:m | \myEndLine
+		ees:m7 | aes:7 | des:7 | ges:7 | \myEndLine
+		c:m7.5- | f:7.5+ | bes:m | bes:m7/aes | \myEndLine
+		g2:m7.5- g:m7.5-/f | ees1:7 | ees2:m7 ees:m7/des | c1:m7.5- | \myEndLine
 		bes:m | ees:7 |
 	} \alternative {
 		{
-			bes | bes |
+			bes | bes | %% \myEndLine remarked not to cause a line break
 		}
 		{
-			bes | bes |
+			bes | bes | \myEndLine
 		}
 	}
 	\endPart
@@ -75,25 +80,34 @@
 % endif
 
 % if part=='VoiceFake':
-\relative g' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	%%\tempo "Allegro" 4 = 130
 	\time 2/2
 	\key bes \major
 
 	\repeat volta 2 {
-		%% Part A
-		bes1~ | bes2. g4 | f1~ | f | r4 bes8 bes bes4 bes | bes bes2 g4 | f1~ | f2. r4 |
-		r4 bes8 bes bes4 bes | bes c c2 | r4 aes8 aes aes4 aes | aes ges ges2 | f1~ | f2. des4 | bes1~ | bes2. r4 |
-		%% Part A
-		bes'1~ | bes2. g4 | f1~ | f | r4 bes8 bes bes4 bes | ees c bes g | f1~ | f2. r4 |
-		r4 bes8 bes bes4 bes | bes c c2 | r4 des8 des des4 des | des ges, ges2 | f1~ | f2. des4 | bes1~ | bes2. r4 |
-		%% Part B
-		r4 bes8 c des4 ees | f4 ees ees2 | r4 c8 des ees4 f | aes1 | r4 bes,8 c des4 ees | f4 ees ees2 |
-		r4 c8 des ees4 f | bes1 | r4 bes,8 c d4 f | ges f f2 | r4 d \times 2/3 { ees4 f ges } | c4 bes bes2 | des c |
-		des c | r4 b8 b b4 b | b2 bes | bes1~ | bes2. g4 | f1~ | f2. r4 | r4 bes8 bes bes4 bes | bes bes2 g4 |
-		f1~ | f2. r4 | r4 bes8 bes bes4 bes | bes c c2 | r4 des8 des des4 des | des ees ees2 | f1~ | f2. des4 |
-		bes1~ | bes2. r4 | f'1~ | f2 f8 des bes g | bes c des ees f4 f | f2. des4 |
+		%% part "A"
+		bes'1~ | bes2. g4 | f1~ | f |
+		r4 bes8 bes bes4 bes | bes bes2 g4 | f1~ | f2. r4 |
+		r4 bes8 bes bes4 bes | bes c c2 | r4 aes8 aes aes4 aes | aes ges ges2 |
+		f1~ | f2. des4 | bes1~ | bes2. r4 |
+		%% part "A"
+		bes'1~ | bes2. g4 | f1~ | f |
+		r4 bes8 bes bes4 bes | ees c bes g | f1~ | f2. r4 |
+		r4 bes8 bes bes4 bes | bes c c2 | r4 des8 des des4 des | des ges, ges2 |
+		f1~ | f2. des4 | bes1~ | bes2. r4 |
+		%% part "B"
+		r4 bes8 c des4 ees | f4 ees ees2 | r4 c8 des ees4 f | aes1 |
+		r4 bes,8 c des4 ees | f4 ees ees2 | r4 c8 des ees4 f | bes1 |
+		r4 bes,8 c d4 f | ges f f2 | r4 d \times 2/3 { ees4 f ges } | c4 bes bes2 |
+		des c | des c | r4 b8 b b4 b | b2 bes |
+		%% part "A"
+		bes1~ | bes2. g4 | f1~ | f2. r4 |
+		r4 bes8 bes bes4 bes | bes bes2 g4 | f1~ | f2. r4 |
+		r4 bes8 bes bes4 bes | bes c c2 | r4 des8 des des4 des | des ees ees2 |
+		f1~ | f2. des4 | bes1~ | bes2. r4 |
+		f'1~ | f2 f8 des bes g | bes c des ees f4 f | f2. des4 |
 		bes1~ | bes~ |
 	} \alternative {
 		{

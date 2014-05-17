@@ -18,6 +18,7 @@
 	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
 	attributes['uuid']="2507f6ec-da80-11e3-9bfd-ff436f70a1a7"
+	attributes['structure']="AABA"
 %>
 % endif
 
@@ -34,30 +35,30 @@
 	\repeat volta 2 {
 		\myMark "A"
 		\startPart
-		g1 | g1 | c2 c:m6 | g1 | g2 gis:dim7 | a2:m7 d:7 |
-		a:m7 d:7 | g1 |
+		g1*2 | c2 c:m6 | g1 | \myEndLine
+		g2 gis:dim7 | a2:m7 d:7 | a:m7 d:7 | g1 | \myEndLine
 		\endPart
 		\myMark "A"
 		\startPart
-		g1 | g1 | c2 c:m6 | g1 | g2 gis:dim7 | a2:m7 d:7 |
-		a:m7 d:7 | g1 |
+		g1*2 | c2 c:m6 | g1 | \myEndLine
+		g2 gis:dim7 | a2:m7 d:7 | a:m7 d:7 | g1 | \myEndLine
 		\endPart
 		\myMark "B"
 		\startPart
-		c2 c:m6 | g1 |
-		d:7 | g | c2 c:m6 | g1 | a:7 | a2:m7 d:7 |
+		c2 c:m6 | g1 | d:7 | g | \myEndLine
+		c2 c:m6 | g1 | a:7 | a2:m7 d:7 | \myEndLine
 		\endPart
 		\myMark "A"
 		\startPart
-		g1 | g1 | c2 c:m6 | g1 | g2 gis:dim7 |
-		a2:m7 d:7 | a:m7 d:7 |
+		g1*2 | c2 c:m6 | g1 | \myEndLine
+		g2 gis:dim7 | a2:m7 d:7 | a:m7 d:7 |
 		\endPart
 	} \alternative {
 		{
-			g2 a4:m7 d:7 |
+			g2 a4:m7 d:7 | %% \myEndLine remarked to not cause a line break
 		}
 		{
-			g1 |
+			g1 | \myEndLine
 		}
 	}
 	\endPart
@@ -68,7 +69,7 @@
 % endif
 
 % if part=='VoiceFake':
-\relative c'' {
+\relative {
 	\time 2/2
 	\key g \major
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -76,17 +77,17 @@
 
 	\repeat volta 2 {
 		%% part "A"
-		r4 b \times 2/3 { b c b } | d d2. | r4 g, \times 2/3 { g a g } | b1 | r4 d, \times 2/3 { d e d } | a' a2. |
-		r4 a \times 2/3 { a g fis } | g1 |
+		r4 b' \times 2/3 { b c b } | d d2. | r4 g, \times 2/3 { g a g } | b1 |
+		r4 d, \times 2/3 { d e d } | a' a2. | r4 a \times 2/3 { a g fis } | g1 |
 		%% part "A"
-		r4 b \times 2/3 { b c b } | d d2. | r4 g, \times 2/3 { g a g } | b1 | r4 d, \times 2/3 { d e d } | a' a2. |
-		r4 a \times 2/3 { a g fis } | g1 |
+		r4 b \times 2/3 { b c b } | d d2. | r4 g, \times 2/3 { g a g } | b1 |
+		r4 d, \times 2/3 { d e d } | a' a2. | r4 a \times 2/3 { a g fis } | g1 |
 		%% part "B"
-		a2 \times 2/3 { g4 a g } | e d2. |
-		r4 a' \times 2/3 { a g e } | g1 | a2 \times 2/3 { g4 a g } | e d2. | r8 b' b b b a4 g8 | a1 |
+		a2 \times 2/3 { g4 a g } | e d2. | r4 a' \times 2/3 { a g e } | g1 |
+		a2 \times 2/3 { g4 a g } | e d2. | r8 b' b b b a4 g8 | a1 |
 		%% part "A"
-		r4 b \times 2/3 { b c b } | d d2. | r4 g, \times 2/3 { g a g } | b1 | r4 d, \times 2/3 { d e d } | a' a2. |
-		r4 a \times 2/3 { a g fis } |
+		r4 b \times 2/3 { b c b } | d d2. | r4 g, \times 2/3 { g a g } | b1 |
+		r4 d, \times 2/3 { d e d } | a' a2. | r4 a \times 2/3 { a g fis } |
 	} \alternative {
 		{
 			g2 r |

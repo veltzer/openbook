@@ -90,7 +90,7 @@
 % endif
 
 % if part=='VoiceReal':
-\relative c' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante" 4 = 108
 	\time 4/4
