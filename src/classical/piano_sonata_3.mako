@@ -19,7 +19,7 @@
 % if part=='Doc':
 	DONE:
 	TODO:
-	- turn this tune relative.
+	- fix the tune which has absolute notes
 	- add it as an epdf:
 	"Schirmer's library of musical classics"
 	An accompaniment for Second Piano by Edvard Grieg may be found in Schirmer's Library, Vol. 1440.
@@ -27,7 +27,7 @@
 % endif
 
 % if part=='VoiceEpdf0':
-\relative c{
+\relative {
 	\key c \major
 	\time 4/4
 	\startTune
@@ -38,12 +38,12 @@
 	}
 	\alternative {
 		{
-			c''4 b'4 c''4 d''4 | \times 2/3 { c''4 b'4 bes'4 } a'4 aes'4 | g'2 g'2~ | g'2. g'4 |
-			a'4 gis'4 a'4 b'4 | \times 2/3 { a'4 aes'4 g'4 } ges'4 f'4 | e'2 e'2~ | e'2 e'2 |
+			c''4 b'4 c''4 d''4 | \times 2/3 { c''4 b'4 bes'4 } a'4 aes'4 | g'2 g2~ | g2. g'4 |
+			a'4 gis'4 a'4 b'4 | \times 2/3 { a'4 aes'4 g'4 } ges'4 f'4 | e'2 e2~ | e2 e'2 |
 		}
 		{
 			c''4 b'4 c''4 d''4 | \times 2/3 { e''4 d''4 c''4 } b'4 bes'4 | a'1 | \times 2/3 { c''4 b'4 bes'4 } a'4 aes'4 |
-			g'1 | \times 2/3 { b'4 a'4 aes'4 } g'4 d''4 | c''1~ | c''2 r4 <\parenthesize e'>4 |
+			g'1 | \times 2/3 { b'4 a'4 aes'4 } g'4 d''4 | c1~ | c2 r4 <\parenthesize e'>4 |
 		}
 	}
 	\endTune

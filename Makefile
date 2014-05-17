@@ -133,6 +133,7 @@ IL_OUT_BASE:=$(OUT_DIR)/israelisongbook
 IL_OUT_LY:=$(OUT_DIR)/israelisongbook.ly
 IL_OUT_PATTERN:=src/israeli/*.mako
 IL_OUT_FILES:=$(shell find src -type f -and -wholename "$(IL_OUT_PATTERN)")
+IL_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(IL_OUT_FILES))))
 IL_OUT_PS:=$(OUT_DIR)/israelisongbook.ps
 IL_OUT_PDF:=$(OUT_DIR)/israelisongbook.pdf
 # book - rockbook
@@ -337,7 +338,7 @@ check_empty:
 .PHONY: check_relative
 check_relative:
 	$(info doing [$@])
-	$(Q)git grep relative -- *.mako | grep -v "\relative {"
+	$(Q)scripts/ok_wrapper.pl git grep relative -- *.mako | grep -v "\relative {"
 .PHONY: check_all
 check_all: check_empty_copyright check_whitespace check_and check_extra_files check_min_chords check_uuid_basic check_chordChanges check_bar check_break check_completion check_include check_threeunderscores check_mark check_bad_lyric_breakup check_veltzer_https check_uuid check_empty check_relative
 
@@ -419,6 +420,9 @@ all_tunes_jazz: $(OB_OUT_STAMP)
 	$(info doing [$@])
 .PHONY: all_tunes_rock
 all_tunes_rock: $(RK_OUT_STAMP)
+	$(info doing [$@])
+.PHONY: all_tunes_israeli
+all_tunes_israeli: $(IL_OUT_STAMP)
 	$(info doing [$@])
 
 # include the deps files (no warnings)

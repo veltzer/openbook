@@ -32,46 +32,53 @@
 % if part=='ChordsMy':
 \chordmode {
 	\startChords
-
 	\startSong
 
-	g2:m | d2:7 | g2:m ~ | g4:m d4:7 |
-	g2:m | d2:7 | g2:m ~ | g4:m d4:7 | \myEndLine
-	g2:m | g2:m | c2:m | c2:m |
-	g2:m/ees | d2:7 | g2:m | g4:m d4:7 | \myEndLine
+	\myMark "A"
+	\startPart
+	g2:m | d:7 | g:m~ | g4:m d:7 |
+	g2:m | d:7 | g:m~ | g4:m d:7 | \myEndLine
+	g2*2:m | c:m |
+	g2:m/ees | d:7 | g:m | g4:m d:7 | \myEndLine
+	\endPart
 
-	g2:m | d2:7 | g2:m ~ | g4:m d4:7 |
-	g2:m | d2:7 | g2:m ~ | g4:m d4:7 | \myEndLine
-	g2:m | g2:m | c2:m | c2:m |
-	ees2:maj | f2:7 | bes2:maj | bes2:maj | \myEndLine
+	\myMark "A"
+	\startPart
+	g2:m | d:7 | g:m~ | g4:m d:7 |
+	g2:m | d:7 | g:m~ | g4:m d:7 | \myEndLine
+	g2*2:m | c:m |
+	ees2:maj | f:7 | bes1*2:maj | \myEndLine
+	\endPart
 
 	\endSong
-
 	\endChords
 }
 % endif
 
 % if part=='VoiceMy':
-\relative f' {
-	\time 2/4
-	\key g \minor
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 128
+	\time 2/4
+	\key g \minor
 
-	bes'4 bes'4 | a'4 a'4 | g'2 ~ | g'4 a'4 |
-	bes'4 bes'4 | a'4 a'4 | g'2 ~ | g'4 d'4 |
-	g'2 | a'4 bes'4 | d''2 | c''4 a'4 |
-	bes'4 bes'4 | a'4 a'4 | g'2 ~ | g'2 |
+	%% part "A"
+	bes'4 bes | a a | g2~ | g4 a |
+	bes4 bes | a a | g2~ | g4 d |
+	g2 | a4 bes | d2 | c4 a |
+	bes bes | a a | g2~ | g |
 
-	bes'2 | a'4 d''4 | g'2 ~ | g'4 a'4 |
-	bes'2 | a'4 d''4 | g'2 ~ | g'2 |
-	g'4 g'4 | a'4 bes'4 | d''4 c''4 | c''2 |
-	bes'4 bes'4 | c''4 c''4 | d''2 |
+	%% part "A"
+	bes | a4 d | g,2~ | g4 a |
+	bes2 | a4 d4 | g,2~ | g |
+	g4 g | a bes | d c | c2 |
+	bes4 bes | c c | d2~ | d2 |
 }
 % endif
 
 % if part=='LyricsMy':
 \lyricmode {
+	%% part "A"
 	א -- לו -- הים ש -- לי, ר -- צי -- תי ש -- ת -- דע
 	ח -- לום ש -- ח -- למ -- תי ב -- לי -- לה ב -- מי -- טה
 	ו -- ב -- ח -- לום ר -- אי -- תי מל -- אך

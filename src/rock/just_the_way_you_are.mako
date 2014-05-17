@@ -38,7 +38,6 @@
 %% all of the parts are taken from the notes I have of Bill Joel
 PartChords=\chordmode {
 	\startChords
-
 	\startSong
 
 	\myMark "A"
@@ -46,13 +45,12 @@ PartChords=\chordmode {
 	d1 | b:m6 | g:maj7 | b2:m d:7 |
 	g1:maj7 | g:m | d/fis | a2:m7 d:7 |
 	g1:maj7 | g:m | d/fis | b:m7 |
-	b:m7/e | e:9 | g/a | g/a |
+	b:m7/e | e:9 | g1*2/a |
 	\endPart
 	\myMark "B"
 	\endPart
 
 	\endSong
-
 	\endChords
 }
 
@@ -60,18 +58,19 @@ PartFrets=\new FretBoards {
 	\PartChords
 }
 
-PartUpperIntro=\relative c' {
+PartUpperIntro=\relative {
 	\clef treble
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Moderato" 4 = 112
 	\time 4/4
 	\key d \major
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	
 	\mark "Intro"
-	\tempo "Moderato" 4 = 112
 	r8 a d <bes e g>~ <bes e g>2 | r8 a d <d g b>~ <d g b> <d a'>4. |
 	r8 a d <bes e g>~ <bes e g>2 | r8 a d <d g b>~ <d g b> <d a'>4 fis16 e | \myEndLine
 	\endBar
 }
-PartLowerIntro=\relative c' {
+PartLowerIntro=\relative {
 	\clef bass
 	\key d \major
 	<< { d,2~ d8 d4 d8 } \\ { d,1 } >> |
@@ -80,19 +79,19 @@ PartLowerIntro=\relative c' {
 	<< { d'2~ d8 d4 d8 } \\ { d,1 } >> |
 }
 
-PartUpperVoice=\relative c' {
+PartUpperVoice=\relative {
 	\clef treble
 	\key d \major
 	<< { r2 d'8 fis4. } \\ { fis,4. fis8~ <fis d'>2 } >>
 	<< { d'8 b4.~ b2 } \\ { <d, fis>2~ <d fis>8 <d fis>4. } >>
 }
-PartLowerVoice=\relative c' {
+PartLowerVoice=\relative {
 	\clef bass
 	\key d \major
 	<d, a'>1 | << { gis2~ gis8 gis4. } \\ { b1 } >> |
 }
 
-PartMelody=\relative c' {
+PartMelody=\relative {
 	\clef treble
 	\key d \major
 	r2 d'8 fis4. | d8 b4.~ b2 | r4 r8 fis8 b8 d4. | b8 fis4.~ fis2 |

@@ -39,61 +39,53 @@
 % if part=='ChordsMy':
 \chordmode {
 	\startChords
-
 	\startSong
+
+	\partial 4 s4 |
 
 	\mark "פתיחה"
 	\startPart
-
-	\partial 4 s4
-
 	a2.:m | d:m7 | g:7 | c:maj7 |
-	f:maj7 | b:7 | e:7 |
-
+	f:maj7 | b:7 | e:7 | \myEndLine
 	\endPart
 
 	\myMark "A"
 	\startPart
-
 	a2.:m | d:m7 | e:7 | a:m |
-	a:m | d:m7 | e:7 | a:7 |
+	a:m | d:m7 | e:7 | a:7 | \myEndLine
 	d:m7 | g:7 | c2:maj7 c4:maj7/d | e2.:7 |
-	a:m | d:m7 | e:7 | a:7 |
+	a:m | d:m7 | e:7 | a:7 | \myEndLine
 	d:m7 | g:7 | c2:maj7 c4:maj7/d | e2.:7 |
-	a:m | d:m7 | e:7 | a:m | a:m |
-
+	a:m | d:m7 | e:7 | a:m | a:m | \myEndLine
 	\endPart
 
 	\myMark "B"
 	\startPart
-
 	\repeat unfold 2 {
 		a2.:m | d:m7 | g:7 | c:maj7 |
 		f:maj7 | b:7 | e:7 | a:m |
 	}
-	a:m |
-
+	a:m | \myEndLine
 	\endPart
 
 	\endSong
-
 	\endChords
 }
 % endif
 
 % if part=='VoiceMy':
-\relative c' {
+\relative {
 	\time 3/4
 	\key a \minor
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 112
 
-	%% Intro
 	\partial 4 a'8 e |
+	%% part "Intro"
 	c'4 a4. e8 | f2 g8 a | b4 a4. g8 | f8 e4. f8 g |
 	a2 f8 e | ees2 b8 a | gis4 a b |
 
-	%% A part
+	%% part "A"
 	c'2 b8 a | g2 f8 d | e2 d4 | c8 b a2 |
 	c'8 b a4 g8 f | e2 d8 e | f4 e ees | e2. |
 	d4 e f | g a4. f8 | e4 e d | c b2 |
@@ -101,7 +93,7 @@
 	d4 e f | g a4. f8 | e4 e d | c b2 |
 	a8 b c4 d8 e | g4 f d | e c b | a2. ~ | a2 a'8 e |
 
-	%% B part
+	%% part "B"
 	c'2 a8 e | f2 g8 a | b4 a g | f e f8 g |
 	a2 f8 e | ees2 b8 a | gis4 a b | c2 a'8 e |
 	c'2 a8 e | f2 g8 a | b4 a g | f e f8 g |

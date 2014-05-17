@@ -99,7 +99,7 @@
 % endif
 
 % if part=='VoiceMy':
-\relative c'{
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 120
 	\time 4/4

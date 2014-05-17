@@ -15,11 +15,11 @@
 % endif
 
 % if part=='VoiceUnknown':
-\relative g'' {
+\relative {
 	\key c \major
 	\time 3/4
 
-	g4 ( c ) b | a ( d ) c | b ( a ) b | c2 ( d4 ) |
+	g''4 ( c ) b | a ( d ) c | b ( a ) b | c2 ( d4 ) |
 	g,4 ( c ) b | a ( d ) c | b ( a ) b | c2 r4 |
 
 	d,4 ( g ) fis | e ( a ) g | fis ( e ) fis | g2 ( b4 ) |

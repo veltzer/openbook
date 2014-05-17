@@ -56,7 +56,7 @@ PartChords=\chordmode {
 }
 \parallelMusic #'(voiceA voiceB voiceC) {
 	%% Bar 1
-	r8 g16 c e g, c e r8 g,16 c e g, c e |
+	r8 g'16 c e g, c e r8 g,16 c e g, c e |
 	r16 e8.~ e4 r16 e8.~ e4 |
 	c2 c |
 	%% Bar 2
@@ -214,21 +214,25 @@ PartPiano={
 		\new Staff="up" {
 			\clef treble
 			<<
-				\relative c''
-				\voiceA
+				\relative {
+					\voiceA
+				}
 				%%\\
-				%%\relative c'
-				%%\voiceB
+				%%\relative {
+				%%	\voiceB
+				%%}
 			>>
 		}
 		\new Staff="down" {
 			\clef bass
 			<<
-				\relative c'
-				\voiceB
+				\relative {
+					\voiceB
+				}
 				\\\
-				\relative c'
-				\voiceC
+				\relative {
+					\voiceC
+				}
 			>>
 		}
 	>>

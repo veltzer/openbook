@@ -58,13 +58,13 @@
 % endif
 
 % if part=='VoiceMy':
-\relative f' {
-	\time 6/8
-	\key e \major
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 112
+	\time 6/8
+	\key e \major
 
-	gis2 a8 b | gis2 a8 b | gis8 a b gis8 a b | gis2. |
+	gis'2 a8 b | gis2 a8 b | gis8 a b gis8 a b | gis2. |
 	fis2 gis8 ais | fis2 ~ fis8 e | b'4. gis4 fis8 | fis8 e4. cis8 e8 |
 	e2. | e2. |
 

@@ -68,7 +68,7 @@ PartChords=\chordmode {
 	\endChords
 }
 
-PartHighVoice=\relative c'' {
+PartHighVoice=\relative {
 	\time 3/4
 	\key c \major
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -76,7 +76,7 @@ PartHighVoice=\relative c'' {
 	\voiceOne
 
 	\startTune
-	r8 e g f e dis \endPart
+	r8 e' g f e dis \endPart
 
 	\myMark "A"
 	e2\segno e4 | f2 \times 2/3 {f8 g f} | e2. | r8 e g f e dis | \myFakeEndLine
@@ -123,7 +123,7 @@ PartHighVoice=\relative c'' {
 	\endTune
 }
 
-PartMidVoice=\relative c' {
+PartMidVoice=\relative {
 	\voiceTwo
 
 	s2. |
@@ -154,7 +154,7 @@ PartMidVoice=\relative c' {
 	}
 }
 
-PartLowVoice=\relative c' {
+PartLowVoice=\relative {
 	\voiceFour
 
 	s2. |
