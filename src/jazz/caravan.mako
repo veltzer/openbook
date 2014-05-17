@@ -96,7 +96,7 @@
 % endif
 
 % if part=='VoiceReal':
-\relative c'' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\set Staff.timeSignatureFraction=#'(2 . 2)
 	\tempo "Prestissimo" 4 = 220
@@ -105,7 +105,7 @@
 
 	%% part "A"
 	\repeat volta 2 {
-		c1~ | c~ | c4 des c g | bes c e g, |
+		c'1~ | c~ | c4 des c g | bes c e g, |
 		bes1~ | bes~ | bes4 c des c | des c b g |
 		bes!1~ | bes~ | bes4 c b bes | a aes g ges |
 		f1~ | f~ | f | r |

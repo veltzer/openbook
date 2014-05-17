@@ -23,7 +23,6 @@
 % if part=='Doc':
 	DONE:
 	TODO:
-	- turn this tune relative.
 	- where is this from?
 	- add the intro chords (they are not currently shown
 	- mark whats been done to this tune.
@@ -56,7 +55,7 @@
 % endif
 
 % if part=='VoiceUnknown':
-\relative c' {
+\relative {
 	\time 4/4
 	\key c \major
 	\clef treble

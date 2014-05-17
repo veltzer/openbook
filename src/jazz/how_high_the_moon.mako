@@ -95,12 +95,14 @@
 % endif
 
 % if part=='VoiceFake':
-\relative c' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
 	\key g \major
+
 	\partial 2. d4 g a |
+
 	\repeat volta 2 {
 		%% part "A"
 		a2 b~ | b4 d, g a | bes1~ | bes4 c, f g |

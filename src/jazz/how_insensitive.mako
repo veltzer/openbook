@@ -102,14 +102,14 @@
 % endif
 
 % if part=='VoiceReal':
-\relative c'' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
 	\key d \minor
 
 	%% part "A"
-	a1~ | a8 bes4 a bes a8~ | a1~ | a8 bes4 a bes a8~ |
+	a'1~ | a8 bes4 a bes a8~ | a1~ | a8 bes4 a bes a8~ |
 	a2~ \times 2/3 { a4 gis a } | c8 b4 bes8~ bes a4. | a4. g8~ g2~ | g1 |
 	g~ | g8 a4 g a g8~ | g1~ | g8 a4 g a g8~ |
 	g2~ \times 2/3 { g4 fis g } | bes4. a8 \times 2/3 { aes4 g g~ } | g4. f8~ f2~ | f1 |
@@ -178,7 +178,7 @@
 % endif
 
 % if part=='VoiceFake':
-\relative c'' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
@@ -186,7 +186,7 @@
 
 	\repeat volta 2 {
 		%% part "A"
-		a1~ | a4 bes8 a~ a bes4 a8~ | a1~ | a4 bes8 a~ a bes4 a8~ |
+		a'1~ | a4 bes8 a~ a bes4 a8~ | a1~ | a4 bes8 a~ a bes4 a8~ |
 		a2~ a8 gis4 a8 | c b4 bes8~ bes a4 a8~ | a4. g8~ g2~ | g2~ g4. g8~ |
 		g1~ | g4 a8 g~ g a4 g8~ | g1~ | g4 a8 g~ g a4 g8~ |
 		g2 r8 fis4 g8 | bes a4 gis8~ gis g4 g8~ | g4. f8~ f2~ | f~ f4. f8~ |

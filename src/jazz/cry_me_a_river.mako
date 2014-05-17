@@ -69,14 +69,15 @@
 % endif
 
 % if part=='VoiceFake':
-\relative c'' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andrante Moderato" 4 = 88
 	\time 4/4
 	\key ees \major
+
 	%% part "A"
 	\repeat volta 2 {
-		d2~ d8 c g ees | d c4.~ c2 | r8 c ees c' bes4 bes | g2~ g8. g16 fis8. g16 | c4~ \times 2/3 { c8 des c } des8 c4. |
+		d'2~ d8 c g ees | d c4.~ c2 | r8 c ees c' bes4 bes | g2~ g8. g16 fis8. g16 | c4~ \times 2/3 { c8 des c } des8 c4. |
 		%% part "A"
 		r8 g8~ \times 2/3 { g8 f ees } f8 g4. | r8 ges f ees f ees c ees | ees2~ ees4. r8 | d'2~ d8 c g ees | d c4.~ c2 |
 		r8 c ees c' bes4 bes | g2~ g8. g16 fis8. g16 | c4~ \times 2/3 { c8 des c } des8 c4. | r8 g8~ \times 2/3 { g8 f ees } f8 g4. |

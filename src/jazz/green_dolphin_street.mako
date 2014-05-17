@@ -94,7 +94,7 @@
 % endif
 
 % if part=='VoiceReal':
-\relative c'' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 160
 	\time 4/4
@@ -102,7 +102,7 @@
 
 	%% part "A"
 	\repeat volta 2 {
-		c2 c~ | c \times 2/3 { b4 g e } | bes'1~ | bes |
+		c'2 c~ | c \times 2/3 { b4 g e } | bes'1~ | bes |
 		a2 a~ | a \times 2/3 { aes4 f des } | g1~ | g |
 	}
 	\alternative {

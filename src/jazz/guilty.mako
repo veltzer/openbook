@@ -17,6 +17,7 @@
 	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
 	attributes['uuid']="16154c88-da81-11e3-b38d-b75a4937af0f"
+	attributes['structure']="AABA"
 %>
 % endif
 
@@ -37,31 +38,34 @@
 		bes/d des:dim7 | c:m7 f:7 |
 	} \alternative {
 		{
-			c:m7 f:7.5+ | bes f:7 |
+			c:m7 f:7.5+ | bes f:7 | %% \myEndLine remarked to suppress line break
 		}
 		{
-			c:m7 f:7 | bes a:7 |
+			c:m7 f:7 | bes a:7 | \myEndLine
 		}
 	}
 	\myEndLine
 	\endPart
+
 	\myMark "B"
 	\startPart
 	d:m d4:m7+ d:m7 | e2:m7.5- a4:7.5+ a:7 | d2:m d:m7 | e:m7 a4:7.5+ a:7 | \myEndLine
 	f1:6/c | g2:m7/c f4:6 fis:dim7 | g2:m7 c:9 | f:sus4.9 f:7.9- | \myEndLine
 	\endPart
+
 	\myMark "A"
 	\startPart
 	bes4 f:m/aes g:7.5+ g:7 | c:m c:m/bes a:7.5+ a:7 | bes2:maj7 bes:7.5+ | ees:maj7 ees:m | \myEndLine
-	bes/d des:dim7 | c:m7 f:7 | c4:m f2:sus4.9 f4:7.9- | bes aes:6 bes:6 s | \myEndLine
+	bes/d des:dim7 | c:m7 f:7 | c4:m f2:sus4.9 f4:7.9- | bes aes:6 bes:6 r | \myEndLine
 	\endPart
+
 	\endSong
 	\endChords
 }
 % endif
 
 % if part=='VoiceFake':
-\relative c'' {
+\relative {
 	\time 4/4
 	\key bes \major
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -69,8 +73,8 @@
 
 	%% part "A"
 	\repeat volta 2 {
-		f,8 g f g~ g2 | g8 a g a~ a2 | a8 bes a bes~ bes a bes4 | d2 c | c8 bes a g~ g a bes4 |
-		f4 f2. |
+		f8 g f g~ g2 | g8 a g a~ a2 | a8 bes a bes~ bes a bes4 | d2 c |
+		c8 bes a g~ g a bes4 | f4 f2. |
 	} \alternative {
 		{
 			\times 2/3 { f4 c f } cis a'8 g~ | g2. r4 |
@@ -79,9 +83,11 @@
 			g8 ees g4 a8 bes c bes~ | bes2. r4 |
 		}
 	}
+
 	%% part "B"
 	a8 f g a~ a2 | a8 c bes a~ a2 | d8 c bes a~ a f g4 | a1 |
 	c8 a bes c~ c2 | bes8 c d c~ c4. a8 | c g a bes~ bes c d4 | c2. r4 |
+
 	%% part "A"
 	f,8 g f g~ g2 | g8 a g a~ a2 | a8 bes a bes~ bes a bes4 | d2 c |
 	c8 bes a g~ g a bes4 | f4 f2. | ees'8 d ees c~ c4 d | bes2. r4\fermata |

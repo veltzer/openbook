@@ -92,7 +92,7 @@
 % endif
 
 % if part=='VoiceFake':
-\relative a' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 160
 	\time 4/4
@@ -100,7 +100,7 @@
 
 	%% part "A"
 	\repeat unfold 2 {
-		a4 d, c d | c2. r4 | d e f g | a bes c2 |
+		a'4 d, c d | c2. r4 | d e f g | a bes c2 |
 		d4 g, f g | f2. a4 |
 	} \alternative {
 		{ bes1~ | bes2. r4 |}

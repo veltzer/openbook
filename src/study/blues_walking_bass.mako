@@ -57,7 +57,7 @@
 % endif
 
 % if part=='VoiceMy':
-\relative f, {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
@@ -65,7 +65,7 @@
 	\clef bass
 
 	%% A part
-	f4 a c b | bes d, dis e | f a d des | c e, f a |
+	f,,4 a c b | bes d, dis e | f a d des | c e, f a |
 	bes f' d c | bes b c e | f a, c cis | d fis, a aes |
 	g a ais b | c cis d e | f a, d fis, | g b c e |
 
