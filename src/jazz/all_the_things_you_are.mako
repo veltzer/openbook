@@ -82,14 +82,14 @@
 % endif
 
 % if part=='VoiceReal':
-\relative c'' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
 	\key aes \major
 
 	%% part "A"
-	aes1 | des2. aes4 | g g g g | g c2 g4 |
+	aes'1 | des2. aes4 | g g g g | g c2 g4 |
 	f f f f | f b2 f4 | e1~ | e |
 	ees | aes2. ees4 | d d d d | d g2 d4 |
 	c c c c | \times 2/3 { c d ees } d c | b1~ | b4 d g d' |
@@ -155,14 +155,14 @@
 % endif
 
 % if part=='VoiceFake':
-\relative c'' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
 	\key aes \major
 
 	%% part "A"
-	aes1 | des2. aes4 | g g g g | g c2 g4 |
+	aes'1 | des2. aes4 | g g g g | g c2 g4 |
 	f f f f | f b2 f4 | e1~ | e |
 	ees | aes2. ees4 | d d d d | d g2 d4 |
 	c c c c | c d8 ees d4 c | b1~ | b4 d g d' |
