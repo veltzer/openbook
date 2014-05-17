@@ -43,7 +43,7 @@
 		\endPart
 		\myMark "B"
 		\startPart
-		ees1:7 | ees:7 | a:m | d4:7 g2.:7 | \myEndLine
+		ees1*2:7 | a1:m | d4:7 g2.:7 | \myEndLine
 		c1:7 | c:7 | c:m7 | f2:7 f:5+ | \myEndLine
 		\endPart
 		\myMark "A"
@@ -67,14 +67,14 @@
 % endif
 
 % if part=='VoiceFake':
-\relative c'' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	%% \tempo "Andante" 4 = 88
 	\time 2/2
 	\key bes \major
 
-	\partial 2.
-	f,4 g f |
+	\partial 2. f4 g f |
+
 	\repeat volta 2 {
 		%% part "A"
 		d' bes r d | c bes r d | d ( bes2.~ | bes4 ) d, ees d |

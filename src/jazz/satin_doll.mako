@@ -36,29 +36,28 @@
 	\myMark "A"
 	\startPart
 	\repeat volta 2 {
-		d2:m7 g:7 | d:m7 g:7 | e:m7 a:7 | e:m7 a:7 |
+		d2:m7 g:7 | d:m7 g:7 | e:m7 a:7 | e:m7 a:7 | \myEndLine
 		a:m9 d:9 | aes:m9 des:9 |
 	} \alternative {
 		{
-			c d:m7 | e:m7 a:7 |
+			c d:m7 | e:m7 a:7 | %% \myEndLine remarked to not cause a line break
 		}
 		{
-			c f:7
+			c f:7 | c1 | \myEndLine
 		}
 	}
 	\endPart
 
 	\myMark "B"
 	\startPart
-	c1 | g2:m7 c:7 | g:m7 c:9- | f:maj7 g:m7 |
-	a:m7 bes:m7 | a:m7 d:7 | a:m7 d:9- | g:7 d:m7 |
-	g1:7 |
+	g2:m7 c:7 | g:m7 c:9- | f:maj7 g:m7 | a:m7 bes:m7 | \myEndLine
+	a:m7 d:7 | a:m7 d:9- | g:7 d:m7 | g1:7 | \myEndLine
 	\endPart
 
 	\myMark "A"
 	\startPart
-	d2:m7 g:7 | d:m7 g:7 | e:m7 a:7 | e:m7 a:7 |
-	a:m9 d:9 | aes:m9 des:9 | c4 c:7/e f aes/ges | c/g g:7 c2:6.9 |
+	d2:m7 g:7 | d:m7 g:7 | e:m7 a:7 | e:m7 a:7 | \myEndLine
+	a:m9 d:9 | aes:m9 des:9 | c4 c:7/e f aes/ges | c/g g:7 c2:6.9 | \myEndLine
 	\endPart
 
 	\endSong
@@ -67,7 +66,7 @@
 % endif
 
 % if part=='VoiceFake':
-\relative c'' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	%%\tempo "Allegro" 4 = 130
 	\time 2/2
@@ -75,21 +74,22 @@
 
 	%% part "A"
 	\repeat volta 2 {
-		a8. g16 a8 g~ g a4. | r8 a4. g8 a4. | b8. a16 b8 a~ a b4. | r8 b4. a8 b4. |
+		a'8. g16 a8 g~ g a4. | r8 a4. g8 a4. | b8. a16 b8 a~ a b4. | r8 b4. a8 b4. |
 		r8 d4. c8 d4. | r8 bes4. aes4 bes8 g~ |
 	} \alternative {
 		{
 			g1~ | g |
 		}
 		{
-			g1\repeatTie |
+			g1\repeatTie | r2 r4 r8 g |
 		}
 	}
 	%% part "B"
-	r2 r4 r8 g | c4 bes8. a16 g8. a16 bes4 | c4 bes8. a16 g8. a16 bes8 c~ | c1~ |
-	c2. r8 c | d8. c16 b8. a16~ a8. b16 c4 | d8. c16 b8 a~ a8. b16 c8 d~ | d1~ |
-	d8 \xNote { d4^"(Spoken)" d8 d d4. } | a8. g16 a8 g~ g a4. | r8 a4. g8 a4. | b8. a16 b8 a~ a b4. |
-	r8 b4. a8 b4. | r8 d4. c8 d4. | r8 bes4. aes4 bes8 g~ | g1~ | g2. r4 |
+	c4 bes8. a16 g8. a16 bes4 | c4 bes8. a16 g8. a16 bes8 c~ | c1~ | c2. r8 c |
+	d8. c16 b8. a16~ a8. b16 c4 | d8. c16 b8 a~ a8. b16 c8 d~ | d1~ | d8 \xNote { d4^"(Spoken)" d8 d d4. } |
+	%% part "A"
+	a8. g16 a8 g~ g a4. | r8 a4. g8 a4. | b8. a16 b8 a~ a b4. | r8 b4. a8 b4. |
+	r8 d4. c8 d4. | r8 bes4. aes4 bes8 g~ | g1~ | g2. r4 |
 }
 % endif
 

@@ -51,14 +51,14 @@
 % endif
 
 % if part=='VoiceAebersold':
-\relative ees'' {
+\relative {
 	\key c \major
 	\time 4/4
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 
 	%% part "A"
-	ees1\p\<~ | ees4\! f,8 f <aes c> ( <bes d>4-. ) f8~ | f1~ | f2 r |
+	ees'1\p\<~ | ees4\! f,8 f <aes c> ( <bes d>4-. ) f8~ | f1~ | f2 r |
 	f'1\p\<~ | f4\! f,8 f <aes c> ( <bes d>4-. ) f8~ | f1~ | f2 r |
 	r4 c'8 ( c g'4 a | aes8 g f d f4 g-. ) |
 	r c,8 ( c g'4 a | aes8 g f d c4 d-. ) |

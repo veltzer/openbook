@@ -51,30 +51,30 @@
 	\myMark "A"
 	\startPart
 	\repeat volta 2 {
-		f1:maj7.9 | f1:maj7.9 | g1:13 | g1:13 | \myEndLine
-		g1:m7.9 | ges1:7.5- |
+		f1*2:maj7.9 | g:13 | \myEndLine
+		g1:m7.9 | ges:7.5- |
 	} \alternative {
 		{
-			f1:maj7.9 | ges1:7.5- | \myEndLine
+			f1:maj7.9 | ges:7.5- | %% \myEndLine remarked to not cause line break
 		} {
-			f1:maj7.9 | f1:maj7.9 | \myEndLine
+			f1*2:maj7.9 | \myEndLine
 		}
 	}
 	\endPart
 
 	\myMark "B"
 	\startPart
-	ges1:maj7 | ges1:maj7 | ces1:7.9 | ces1:7.9 | \myEndLine
-	fis1:m7.9 | fis1:m7.9 | d1:7.9 | d1:7.9 | \myEndLine
-	g1:m7.9 | g1:m7.9 | ees1:7.9 | ees1:7.9 | \myEndLine
-	a1:m7 | d1:7.5-.9- | g1:m7 | c1:7.5-.9- | \myEndLine
+	ges1*2:maj7 | ces:7.9 | \myEndLine
+	fis:m7.9 | d:7.9 | \myEndLine
+	g:m7.9 | ees:7.9 | \myEndLine
+	a1:m7 | d:7.5-.9- | g:m7 | c:7.5-.9- | \myEndLine
 	\endPart
 
 	\myMark "A"
 	\startPart
-	f1:maj7.9 | f1:maj7.9 | g1:7.13 | g1:7.13 | \myEndLine
-	g1:m7.9 | ges1:7.5- | f1:maj7.9 | ges1:7.5- | \myEndLine
-	f1:maj7.9 | ges1:7.5- | f1:maj7.9 | f1:maj7.9 | \myEndLine
+	f1*2:maj7.9 | g:13 | \myEndLine
+	g1:m7.9 | ges:7.5- | f:maj7.9 | ges:7.5- | \myEndLine
+	f:maj7.9 | ges:7.5- | f1*2:maj7.9 | \myEndLine
 	\endPart
 
 	\endSong
@@ -83,7 +83,7 @@
 % endif
 
 % if part=='VoiceReal':
-\relative c' {
+\relative {
 	\time 4/4
 	\key f \major
 	\clef treble
@@ -91,17 +91,17 @@
 	\tempo "Allegro" 4 = 130
 
 	%% part "intro"
-	r1 * 4 |
+	r1*4 |
 
 	%% part "A"
 	\repeat volta 2 {
-		g'4. e8 e4 d8 g~ | g4 e8 e~ e e d g~ |
-		g4 e e d8 g~ | g g e e~ e e d f~ |
+		g'4. e8 e4 d8 g~ | g4 e8 e~ e e d g~ | g4 e e d8 g~ | g g e e~ e e d f~ |
 		f d4 d8~ d d c e~ | e c4 c8~ c c bes4 |
 	} \alternative {
 		{
 			r4 c2.~ | c2 r2 |
-		} {
+		}
+		{
 			r4 c2.~ | c2 r2 |
 		}
 	}
@@ -117,12 +117,9 @@
 	\times 2/3 {bes bes, c} \times 2/3 {d e f} | fis2. r4 |
 
 	%% part "A"
-	g4. e8 e4 d8 g8~ | g4 e8 e~ e e d g~ |
-	g4 e e d8 g~ | g g e e~ e e d a'~ |
-	a4. f8 f f d c'~ | c4. e,8 \times 2/3 {e4 e d} |
-	e1 | r4 r8 e8 \times 2/3 {e4 e d} |
-	e1 | r4 r8 e8 \times 2/3 {e4 e d} |
-	e1~ | e2. r4 |
+	g4. e8 e4 d8 g8~ | g4 e8 e~ e e d g~ | g4 e e d8 g~ | g g e e~ e e d a'~ |
+	a4. f8 f f d c'~ | c4. e,8 \times 2/3 {e4 e d} | e1 | r4 r8 e8 \times 2/3 {e4 e d} |
+	e1 | r4 r8 e8 \times 2/3 {e4 e d} | e1~ | e2. r4 |
 }
 % endif
 

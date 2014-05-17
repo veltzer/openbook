@@ -67,7 +67,7 @@
 
 % if part=='VoiceFake':
 %% the tune was turned into 8'th notes instead of triplets.
-\relative a {
+\relative {
 	\time 4/4
 	\key f \major
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/

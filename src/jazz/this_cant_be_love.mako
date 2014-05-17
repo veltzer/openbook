@@ -77,7 +77,7 @@
 % endif
 
 % if part=='VoiceFake':
-\relative aes {
+\relative {
 	\set Staff.timeSignatureFraction=#'(2 . 2)
 	\time 4/4
 	\key g \major
