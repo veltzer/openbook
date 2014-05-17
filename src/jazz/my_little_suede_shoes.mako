@@ -55,9 +55,10 @@
 % endif
 
 % if part=='VoiceUnknown':
-\relative c' {
+\relative {
 	\key ees \major
 	\time 4/4
+
 	\partial 4. bes8 ees g |
 
 	\repeat volta 2 {

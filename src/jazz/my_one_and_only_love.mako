@@ -94,7 +94,7 @@
 % endif
 
 % if part=='VoiceFake':
-\relative c' {
+\relative {
 	\set Staff.timeSignatureFraction=#'(2 . 2)
 	\time 4/4
 	\key c \major

@@ -60,7 +60,7 @@
 % endif
 
 % if part=='VoiceReal':
-\relative f' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 108
 	\key bes \major
@@ -119,7 +119,7 @@
 % endif
 
 % if part=='VoiceFake':
-\relative f' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 108
 	\key bes \major

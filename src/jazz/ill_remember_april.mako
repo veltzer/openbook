@@ -87,7 +87,7 @@
 % endif
 
 % if part=='VoiceFake':
-\relative g' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\set Staff.timeSignatureFraction=#'(2 . 2)
@@ -95,7 +95,7 @@
 	\key g \major
 
 	%% part "A"
-	r4 b c d | c b a g | a2. g4 | fis e2. | \myEndLine
+	r4 b' c d | c b a g | a2. g4 | fis e2. | \myEndLine
 	r4 a bes c | bes a g f! | g8 a g2.~ | g2 r4 g^\markup {To Coda \musicglyph #"scripts.coda"} | \myEndLine
 	a2. a4 | a a b4. c8 | d4 d2.~ | d4 r e4. d8 | \myEndLine
 	b4 c d c~ | c2 b4 ais | b1~ | b2 r4 b | \myEndLine

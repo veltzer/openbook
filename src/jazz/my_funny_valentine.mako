@@ -78,7 +78,7 @@
 % endif
 
 % if part=='VoiceFake':
-\relative a {
+\relative {
 	\time 4/4
 	\key c \minor
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/

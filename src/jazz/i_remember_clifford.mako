@@ -36,11 +36,11 @@
 % endif
 
 % if part=='VoiceUnknown':
-\relative c'' {
+\relative {
 	\key c \major
 	\time 4/4
 
-	r8 a ( c e g f c d | e e~ ) e2. | r8 e ( gis b d4. b8 ) | c1 |
+	r8 a' ( c e g f c d | e e~ ) e2. | r8 e ( gis b d4. b8 ) | c1 |
 	r8 a, ( c d e4 c8 a | c8 c~ ) c4 r4 g' |
 	\repeat volta 2 {
 		e2. ( d8 b ) | c2 r8 d ( e f | g4. g8 gis f b gis ) | a2 r8 e ( a b ) |
