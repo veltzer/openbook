@@ -47,12 +47,13 @@
 % endif
 
 % if part=='VoiceMy':
-\relative f' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4
 	\key a \minor
-	a1
+
+	a'1
 }
 % endif
 

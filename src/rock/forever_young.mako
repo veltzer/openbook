@@ -43,13 +43,16 @@
 		}
 		${defs.chordDefs()}
 		${chords()}
-\new Voice="melody" \relative c'' {
+\new Voice="melody" \relative {
 	\time 4/4
 	\key c \major
-	e1 | d1 | c1 | c1 | d1 | d1 | c1 | c2. b4 |
 
-	r2 g8 g8 g8 g8 ~ | g4 f4 e8 e8 d8 e8 ~ | e2 e8 e8 g8 f8 ~ | f4 e4 c8 c8 d8 d8 ~ |
-	d2 d8 c8 d8 c8 | e4 d4 c8 c8 a8 c8 ~ | c4 c8 a8 c8 a8 c8 a8 | c4 a2 r4 |
+	%% part "Intro"
+	e'1 | d | c | c | d | d | c | c2. b4 |
+
+	%% part "Verse"
+	r2 g8 g g g~ | g4 f e8 e d e~ | e2 e8 e g f~ | f4 e c8 c d d~ |
+	d2 d8 c d c | e4 d c8 c a c~ | c4 c8 a c a c a | c4 a2 r4 |
 }
 \new Lyrics \lyricsto "melody" {
 	_ _ _ _ _ _ _ _ _

@@ -17,7 +17,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="841f9004-4477-11e2-acde-078065be2912"
 	attributes['structure']="A"
-	attributes['remark']="The 12 bars have a kind of blue structure feel to them"
+	attributes['remark']="The 12 bars have a kind of blues structure feel to them"
 
 	attributes['idyoutuberemark']="Metheny/Holland/Hancock/DeJohnette kickass performance"
 	attributes['idyoutube']="FAYt3a-c_k0"

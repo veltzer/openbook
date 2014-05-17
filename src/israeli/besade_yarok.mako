@@ -32,10 +32,9 @@
 % if part=='ChordsMy':
 \chordmode {
 	\startChords
-
 	\startSong
 
-	\partial 4 r4
+	\partial 4 r4 |
 
 	bes2 a2:m7 | g1:m7 | g2:m7 bes2 | f2 c2:7 | \myEndLine
 	bes2 a2:m7 | g1:m7 | g2:m7 bes2 | f2 c2:7 | c1:7 | \myEndLine
@@ -44,16 +43,15 @@
 	g1:m7 | bes2 c2:7 | f2 ees2 | bes2 c2:7 | \myEndLine
 
 	\endSong
-
 	\endChords
 }
 % endif
 
 % if part=='VoiceMy':
-\relative f' {
+\relative {
 	\time 4/4
 	\key f \major
-	\partial 4 a8 c |
+	\partial 4 a'8 c |
 
 	d d4 c8 ~ c4 a8 f | g g4 g8 ~ g4 d8 f |
 	g g4 f8 ~ f e d c | f f4 e8 ~ e4 a8 c |

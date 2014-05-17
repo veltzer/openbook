@@ -63,7 +63,7 @@
 	c:7sus4 |
 	c:7 |
 	f:7 |
-	bes2/f |
+	bes/f |
 	g:m7/f |
 	c1:7sus4/f |
 	f |
@@ -75,7 +75,7 @@
 % endif
 
 % if part=='VoiceFake':
-\relative c' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Reverently" %%4 = 130
 	\time 4/4
