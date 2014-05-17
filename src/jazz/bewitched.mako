@@ -89,13 +89,15 @@
 % endif
 
 % if part=='VoiceFake':
-\relative c'' {
+\relative {
 	\set Staff.timeSignatureFraction=#'(2 . 2)
 	\time 4/4
 	\key c \major
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 100
-	\partial 4 g4 |
+
+	\partial 4 g'4 |
+
 	\repeat volta 2 {
 		%% part "A"
 		e8 b' c2 e,4 | f8 b c2 f,4 | g8 b c4 gis8 b c4 | a8 b c2 b4 |

@@ -94,7 +94,7 @@
 % endif
 
 % if part=='VoiceReal':
-\relative c'' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 3/4
@@ -102,7 +102,7 @@
 
 	%% part "A"
 	\repeat volta 2 {
-		g2. | g'2 f4 | e2 c4 | g2. |
+		g'2. | g'2 f4 | e2 c4 | g2. |
 		d'4 e f | e2 d4 | e2 c4 | g2. |
 		d'4 e f | e2 d4 | e2 g4 | c2 a4 |
 		g2 f4 | e2 d4 |

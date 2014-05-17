@@ -85,13 +85,13 @@
 % endif
 
 % if part=='VoiceFake':
-\relative f' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante" 4 = 80
 	\time 4/4
+	\key des \major
 
 	%% part "A"
-	\key des \major
 	\repeat volta 2 {
 		r8. ees16 f8. ees16 f4 ees | bes' bes2. | r8. aes16 bes8. aes16 bes4 aes | ees'4 des c bes |
 		r4 des bes8 ges4 bes,8 | f'2 ees | r8. des16 ees8. f16 aes4 \times 2/3 { aes8 bes fes } |

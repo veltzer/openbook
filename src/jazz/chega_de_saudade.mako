@@ -98,15 +98,15 @@
 % endif
 
 % if part=='VoiceFake':
-\relative f'' {
+\relative {
 	\set Staff.timeSignatureFraction=#'(2 . 2)
 	\time 4/4
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Presto" 4 = 200
-
 	\key f \major
+
 	%% part "A"
-	f2 a, | d2. f4 | e2 b! | d2. e4 | \myEndLine
+	f'2 a, | d2. f4 | e2 b! | d2. e4 | \myEndLine
 	f2 bes, | cis f4 e~ | e8 d4 f8~ f e d4 | a1 | \myEndLine
 	f'2 a, | b!2. d4 | c2 e~ | e4 e d c | \myEndLine
 	c2 bes~ | bes4 f' e d | d cis e8 cis4 bes8~ | bes2. r4 | \myEndLine

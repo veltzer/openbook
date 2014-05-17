@@ -81,7 +81,7 @@
 	}
 	\alternative {
 		{
-			c:6 a:m7 | d:m7 g:7 |
+			c:6 a:m7 | d:m7 g:7 | %% \myEndLine remarked to not cause a line break
 		}
 		{
 			c:6 f:7 | c1:6.9 | \myEndLine
@@ -91,19 +91,25 @@
 % endif
 
 % if part=='VoiceFake':
-\relative c' {
+\relative {
 	\key c \major
 	\time 4/4
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Presto" 4 = 196
+
 	\partial 4 e4 |
+
 	\repeat volta 2 {
+		%% part "A"
 		c1 | a'4 g2 a4 | b,1 | b'4 a2 b4 |
 		e,1 | d'4 c2 e,4 | g1 | e'4 d2 g,4 |
+		%% part "B"
 		c4 b c d | \times 2/3 { c b! bes } a aes | g2 g~ | g2. g4 |
 		a gis a b | \times 2/3 { a aes g! } fis f | e2 e~ | e2. e4 |
+		%% part "A"
 		c1 | a'4 g2 a4 | b,1 | b'4 a2 b4 |
 		e,1 | d'4 c2 e,4 | g1 | e'4 d2 g,4 |
+		%% part "C"
 		c4 b c d | \times 2/3 { e d c } b! bes | a1 | \times 2/3 { c4 b bes } a! aes |
 		g1 | \times 2/3 { b4 a aes } g! d' |
 	}
@@ -182,22 +188,27 @@
 % endif
 
 % if part=='VoiceReal':
-\relative c' {
+\relative {
 	\key c \major
 	\time 4/4
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Presto" 4 = 196
+
 	\partial 4 e4 |
+
+	%% part "A"
 	\repeat volta 2 {
 		c1 | a'4 g2 a4 | b,1 | b'4 a2 b4 |
 		e,1 | d'4 c2 e,4 | g1 | e'4 d2 g,4 |
 	}
 	\alternative {
 		{
+			%% part "B"
 			c4 b c d | \times 2/3 { c b bes } a aes | g2 g~ | g2. g4 |
 			a gis a b | \times 2/3 { a aes g } ges f | e2 e~ | e e |
 		}
 		{
+			%% part "C"
 			c'4 b c d | \times 2/3 { e d c } b bes | a1 | \times 2/3 { c4 b bes } a aes |
 			g1 | \times 2/3 { b4 a aes } g d' | c1~ | c2 r2|
 		}
@@ -227,6 +238,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
+	%% part "A"
 	_ Fine Ro -- mance, you won't nest -- le.
 	A Fine Ro -- mance, you won't wrest -- le!
 	I

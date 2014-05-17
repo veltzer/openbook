@@ -88,13 +88,14 @@
 % endif
 
 % if part=='VoiceFake':
-\relative f' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 120
 	\time 4/4
 	\key c \major
 
 	\partial 4 e4 |
+
 	%% part "A"
 	c'2~ \times 2/3 { c4 b a } | a2~ \times 2/3 { a4 gis b } | e,1~ | e2 r4 e4 | \myEndLine
 	c'2~ \times 2/3 { c4 b a } | a2~ \times 2/3 { a4 g b } | e,1~ | e2 r8 e f g | \myEndLine

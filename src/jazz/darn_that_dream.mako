@@ -69,11 +69,12 @@
 % endif
 
 % if part=='VoiceFake':
-\relative f' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Adagio" 4 = 72
 	\time 4/4
 	\key g \major
+
 	%% part "A"
 	d4 g ees4. ees8 | e4 a f4. fis8 | g4 b gis8 a b c | d4 e b2 |
 	b4 d c8 b a g | fis4 a e ees | d2 fis | d r |
