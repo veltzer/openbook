@@ -92,14 +92,14 @@
 % endif
 
 % if part=='VoiceReal':
-\relative c'' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 108
 	\key c \major
 	\time 4/4
 
 	\repeat volta 2 {
-		a1 | d,2. e4 | f2 e4. f8 | b2. a4 |
+		a'1 | d,2. e4 | f2 e4. f8 | b2. a4 |
 		g2 fis4 g | d' des c b | a2 gis4. a8 |
 	} \alternative {
 		{

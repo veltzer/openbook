@@ -94,7 +94,7 @@
 % endif
 
 % if part=='VoiceFake':
-\relative f' {
+\relative {
 	\time 4/4
 	\key f \major
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -102,7 +102,7 @@
 
 	\repeat volta 2 {
 		%% part "A"
-		a4 a a a | bes a a2 | a4 g g2 | g4 f f2 |
+		a'4 a a a | bes a a2 | a4 g g2 | g4 f f2 |
 		f1 | g | f2 e2~ | e1 |
 		%% part "B"
 		bes'4 bes bes bes | c bes bes2 | bes4 a a2 | a4 g g2 |

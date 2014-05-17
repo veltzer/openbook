@@ -28,7 +28,7 @@
 % endif
 
 % if part=='VoiceMy':
-\relative c' {
+\relative {
 	\time 4/4
 	\key bes \major
 

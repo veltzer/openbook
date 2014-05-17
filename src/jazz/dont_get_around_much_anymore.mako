@@ -70,7 +70,7 @@
 % endif
 
 % if part=='VoiceFake':
-\relative c'' {
+\relative {
 	\time 2/2
 	\key c \major
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -78,7 +78,7 @@
 
 	%% part "A"
 	\repeat volta 2 {
-		r8 e4 d8 c g f4 | e1 | r8 e'4 d8 c g f4 | e1 |
+		r8 e'4 d8 c g f4 | e1 | r8 e'4 d8 c g f4 | e1 |
 		r8 g4 f8 e d c c'~ | c4. a8~ a2 | r8 e f fis g c, dis e | c1 |
 		r8 e'4 d8 c g f4 | e1 | r8 e'4 d8 c g f4 | e1 |
 		r8 g4 f8 e d c c'~ | c4. a8~ a2 | r8 e8 f fis g c, dis e | c1 | R1 |

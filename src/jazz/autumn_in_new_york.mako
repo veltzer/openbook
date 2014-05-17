@@ -98,13 +98,14 @@
 % endif
 
 % if part=='VoiceReal':
-\relative e' {
+\relative {
 	\time 4/4
 	\key f \major
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante" 4 = 76
+
 	%% part "A"
-	a8 g f d c2 | r8 d f bes d d4 c8 | d2 a | r1 |
+	a'8 g f d c2 | r8 d f bes d d4 c8 | d2 a | r1 |
 	a8 g f d c2 | r8 d f bes d d4 c8 | d2 a | r1 |
 	%% part "B"
 	c8 c4 a8 a4. f8 | aes8 aes4 f8 ees4. des8 | ees b4 c8 ees2~ | ees f |

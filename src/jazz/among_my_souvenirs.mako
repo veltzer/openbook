@@ -73,7 +73,7 @@
 % endif
 
 % if part=='VoiceFake':
-\relative c'' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante" 4 = 88
 	\time 2/2
@@ -81,7 +81,7 @@
 
 	\repeat volta 2 {
 		%% part "A"
-		r4 g g bes | bes aes aes2~ | aes4 aes aes c | c bes bes2~ |
+		r4 g' g bes | bes aes aes2~ | aes4 aes aes c | c bes bes2~ |
 		bes4 bes bes ees | ees d d c | c bes bes aes | g1~ |
 
 		%% part "A"

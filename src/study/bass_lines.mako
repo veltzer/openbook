@@ -63,12 +63,12 @@
 	\time 4/4
 	\key f \major
 	\clef bass
-	\relative c, {
+	\relative {
 		%% I should have at least 17 x 3 x 4 = 51 X 4 = 204 options
 
 		%% 16 options for Dm7
 		\mark "Dm 1"
-		d4 e f fis | g d b des | c d e f | g f e des |
+		d,,4 e f fis | g d b des | c d e f | g f e des |
 
 		\mark "Dm 2"
 		d4 f a aes | g d b des | c d e f | g f e des |

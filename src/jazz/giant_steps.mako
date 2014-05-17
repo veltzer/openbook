@@ -73,13 +73,13 @@
 % endif
 
 % if part=='VoiceReal':
-\relative c'' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Prestissimo" 4 = 240
 	\time 4/4
 	\key c \major
 
-	fis2 d | b g4. bes8~ | bes1 | b4. a8~ a2 |
+	fis'2 d | b g4. bes8~ | bes1 | b4. a8~ a2 |
 	d bes | g dis4. fis8~ | fis1 | g2 f4. bes8~ |
 	bes1 | b2 a4. d8~ | d1 | dis2 cis4. fis8~ |
 	fis2 fis | g f4. bes8~ | bes1 | fis4. fis8~ fis2 |

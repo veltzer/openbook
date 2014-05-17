@@ -80,7 +80,7 @@
 % endif
 
 % if part=='VoiceFake':
-\relative f' {
+\relative {
 	\time 4/4
 	\key bes \major
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
