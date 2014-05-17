@@ -83,14 +83,14 @@
 % endif
 
 % if part=='VoiceFake':
-\relative aes {
+\relative {
 	\time 4/4
 	\key ees \major
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 120
 
 	%% part "Intro"
-	\partial 8*7 ees'8 ees ees ees4 ees8 g~ |
+	\partial 8*7 ees8 ees ees ees4 ees8 g~ |
 
 	%% part "A"
 	g1 | r8 ees ees ees ees4 ees8 bes~ | bes1 | r8 ees ees ees ees4 ees8 bes'~ |

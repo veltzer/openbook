@@ -35,7 +35,6 @@
 	- fixed the chords.
 	- checked the meta data.
 	- fixed the tune.
-	- turn the tune relative.
 	- checked the chords.
 	- checked the tune.
 	- make the lyrics go with the tune and not be note based.
@@ -73,7 +72,7 @@
 % endif
 
 % if part=='VoiceFake':
-\relative g' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 	\time 4/4

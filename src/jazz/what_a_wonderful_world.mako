@@ -50,7 +50,7 @@
 	\startChords
 	\startSong
 
-	\partial 4 s4
+	\partial 4 s4 |
 
 	\myMark "A"
 	\startPart
@@ -83,14 +83,13 @@
 % endif
 
 % if part=='VoiceFake':
-\relative c' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante" 4 = 76
 	\time 4/4
 	\key f \major
 
-	\partial 4
-	c8 e |
+	\partial 4 c8 e |
 
 	%% part "A"
 	f4. a8 c2 | r8 d d d c2 | r8 bes bes bes a2 | r8 g g g f4~ \times 2/3 { f8 f f } |

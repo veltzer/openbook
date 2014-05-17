@@ -107,14 +107,14 @@
 % endif
 
 % if part=='VoiceAebersold':
-\relative c'' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 108
 	\time 4/4
 	\key d \minor
 
-	%%\partial 4 a8. ( f16 |
-	\partial 4 a8. f16 |
+	%%\partial 4 a'8. ( f16 |
+	\partial 4 a'8. f16 |
 
 	\repeat volta 2 {
 		%%a1~ | a8 ) r g8. ( f16 g8. a16 f4 | d2 a~ | a4 ) r a' ( f |
@@ -130,7 +130,7 @@
 % endif
 
 % if part=='VoiceFake':
-\relative c'' {
+\relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 108
 	\time 2/2
@@ -138,7 +138,7 @@
 
 	\partial 2
 
-	e4 c | e1~ | e8 r d8. c16 d8. e16 c4 | a2 e~ | e4 r e' c | d8 d4.~ d2 |
+	e'4 c | e1~ | e8 r d8. c16 d8. e16 c4 | a2 e~ | e4 r e' c | d8 d4.~ d2 |
 	r4 c8. a16 c8. a16 c4 | b1~ | b2 r8 e4 c8 | e8 c4 e8~ e2 | r4 d8. c16 d8. e16 c4 |
 	a2 e~ | e r4 e | g e8 g a4 c | e8 d4. c2 | a1~ | a1~ |
 	a4 r4 r2 | r \times 2/3 { e'4 e c } | e4 e2. | r8. e16 d8. c16 d8. e16 c4 | a2 e~ |
