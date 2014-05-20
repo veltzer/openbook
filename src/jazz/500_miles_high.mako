@@ -3,6 +3,9 @@
 <%
 	attributes['doChords']=True
 	attributes['doVoice']=True
+	attributes['doLyrics']=True
+	attributes['doLyricsmore']=True
+	attributes['doLyricsmoremore']=True
 	attributes['render']="Real"
 
 	attributes['title']="500 Miles High"
@@ -17,22 +20,27 @@
 	attributes['uuid']="ed0cff46-dffa-11e3-b4b7-43ee65102d59"
 	attributes['structure']="A"
 
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
+	attributes['idyoutuberemark']="The Chick Corea cool version"
+	attributes['idyoutube']="b3yAq20qSm4"
+	attributes['idyoutuberemark']="An older Chick with Stanley Clarke, Marcus Gilmore, Gaule Moran, Hubert Laws"
+	attributes['idyoutube']="fxhSFDdTfD4"
+	attributes['lyricsurl']="http://www.allthelyrics.com/lyrics/chick_corea/500_miles_high-lyrics-1180014.html"
 %>
 % endif
 
 % if part=='Doc':
 	DONE:
+	- got the real book epdf.
+	- put in the lyrics url.
 	- put in the meta data from the real book.
 	- put in the chords from the real book.
 	- put in the tune from the real book.
-	- get the real book epdf.
+	- put in the lyrics for the real book version.
 	- played the real book version to hear that it sounds well.
 	- checked the real book chords.
 	- checked the real book tune.
+	- checked the lyrics for the real book version.
+	- put in youtube performances.
 	TODO:
 	- fix the coda thing.
 % endif
@@ -88,5 +96,41 @@
 	\repeat volta 2 {
 		r4 r8 g,, d' ees aes, d | c1~ | c | r | \myEndLine
 	}
+}
+% endif
+
+% if part=='LyricsReal':
+%% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
+\lyricmode {
+	%% part "A"
+	Some day you'll look in to her eyes __
+	Then there'll be no good -- byes
+	And yes -- ter -- day __ will have gone __
+	And you'll find yourself __ in a -- no -- ther space __
+	"500" _ _ mi -- les high __
+	%% part "Coda"
+	_ "500" _ _ mi -- les high __
+}
+% endif
+
+% if part=='LyricsmoreReal':
+\lyricmode {
+	%% part "A"
+	You'll see just one look and you'll know __
+	She's so ten -- der and warm
+	You'll re -- cog -- nise __ this is love __
+	And you'll find yourself __ on a -- no -- ther plane __
+	"500" _ _ mi -- les high __
+}
+% endif
+
+% if part=='LyricsmoremoreReal':
+\lyricmode {
+	%% part "A"
+	Be sure that you love stays so free __
+	Then it nev -- er can die
+	Just re -- a -- lise __ this is truth __
+	And above the skies __ you will al -- ways stay __
+	"500" _ _ mi -- les high __
 }
 % endif

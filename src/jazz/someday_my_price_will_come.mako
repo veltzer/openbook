@@ -43,6 +43,8 @@
 	- made sure the real book melody is right.
 	- made sure the real book version sounds fine.
 	- put in the tunes structure.
+	- added the lyrics url.
+	- added youtube performances
 	TODO:
 	- add copyright notice.
 	- add another version of this tune.
@@ -54,19 +56,25 @@
 	\startSong
 
 	\myMark "A"
+	\startPart
 	\repeat volta 2 {
 		bes2.:maj7 | d:7.5+ | ees:maj7 | g:7.5+ | \myEndLine
 		c:m7 | g:7.5+ | c:7 | f:7 | \myEndLine
+		\endPart
 	} \alternative {
 		{
 			\myMark "B"
+			\startPart
 			d:m7 | des:dim | c:m7 | f:7 | \myEndLine
 			d:m7 | des:dim | c:m7 | f:7 | \myEndLine
+			\endPart
 		}
 		{
 			\myMark "C"
+			\startPart
 			f:m7 | bes:7 | ees | e:dim | \myEndLine
 			bes/f | c2:m7/f f4:7 | bes2.*2 | \myEndLine
+			\endPart
 		}
 	}
 
@@ -82,15 +90,18 @@
 	\time 3/4
 	\key bes \major
 
+	%% part "A"
 	\repeat volta 2 {
 		f2. | bes2 fis4 | a2 g4 | g2. |
 		g | ees'2 b4 | d2 c4 | c d ees |
 	} \alternative {
 		{
+			%% part "B"
 			f2 f4 | a2 a4 | f2. | c4 d ees |
 			f2 f4 | a2 a4 | f2.~ | f |
 		}
 		{
+			%% part "C"
 			f4. e8 f4 | c'2 bes4 | c,4 bes c | a'2 g4 |
 			f2 ees4 | d2 c4 | bes2.~ | bes |
 		}
@@ -101,8 +112,10 @@
 % if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
+	%% part "A"
 	Some -- day my prince will come
 	Some -- day I'll find my love
+	%% part "B"
 	And how thrilling that moment will be
 	When the prince of my dreams_comes to me
 }
@@ -110,8 +123,10 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
+	%% part "A"
 	He'll whis -- per I love you
 	And steal a kiss or two
+	%% part "C"
 	Though he's
 	_ _ _ _ _ _ _ _ _ _ _ _ _
 	far _ a -- way I'll find my love_some -- day
