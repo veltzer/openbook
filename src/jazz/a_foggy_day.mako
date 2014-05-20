@@ -26,6 +26,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="87da6ece-a26e-11df-95d7-0019d11e5a41"
 	attributes['structure']="AB"
+	attributes['structureremark']="this tunes structure can also be categorised as ABAC since the first 8 bars of both the first and second part are the same."
 
 	attributes['idyoutuberemark']="Wynton Marsalis Quartet"
 	attributes['idyoutube']="-P2xoeGoWMs"
@@ -59,8 +60,6 @@
 	- played the real book version to hear that it sounds well.
 	TODO:
 	- how do I put the last two chords in the real book version in parenthesis? (the turn around chords).
-	REMARKS:
-	- this tunes structure can also be categorised as "ABAC" since the first 8 bars of both the first and second part are the same.
 % endif
 
 % if part=='ChordsReal':
@@ -92,6 +91,7 @@
 		}
 	}
 	\endPart
+
 	\endSong
 	\endChords
 }
