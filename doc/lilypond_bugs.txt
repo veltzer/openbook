@@ -31,3 +31,6 @@ who wants to make sure his lilypond files are clean.
 	Probably some algorithm is doing some exhostive search which turns out to be in a big space in my case.
 
 - is there a way for book parts not to do page breaks?
+
+- ties in chords. If I have a chord over a strange period of time or over a bar line then adding tie to it like this "g7 c~ | c"
+	does not help in the sense that midi will still play the chord twice.

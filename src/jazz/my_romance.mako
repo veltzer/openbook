@@ -25,6 +25,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="6a5d2730-c7dd-11df-b3d0-0019d11e5a41"
 	attributes['structure']="ABAC"
+	attrubutes['structureremark']="this tunes song could also be noted as "AB" but then you lose the info that the first 8 bars of the A and part "B" are the same."
 
 	attributes['idyoutuberemark']="Ben Webster on his airy sax..."
 	attributes['idyoutube']="_D2XBzcKFPM"
@@ -52,8 +53,6 @@
 	TODO:
 	- add the real book version.
 	- the Bb9#11 in the fake book version appears as Bb#11 in the print. Check it out and document the results.
-	REMARKS:
-	- this tunes song could also be noted as "AB" but then you lose the info that the first 8 bars of the A and part "B" are the same.
 % endif
 
 % if part=='ChordsFake':
@@ -61,7 +60,7 @@
 	\startChords
 	\startSong
 
-	\partial 4 s4
+	\partial 4 s4 |
 
 	\myMark "A"
 	\startPart

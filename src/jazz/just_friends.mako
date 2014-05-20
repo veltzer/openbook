@@ -44,7 +44,7 @@
 	- filled in the copyright poet and style.
 	- added the real book epdf.
 	- added the new real book epdf.
-	- filled in the strucutre of the tune.
+	- filled in the structure of the tune.
 	- added youtube performances.
 	TODO:
 	- add a lyrics url.

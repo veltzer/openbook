@@ -31,7 +31,7 @@
 
 % if part=='Doc':
 	DONE:
-	- filled in the tune strucutre.
+	- filled in the tune structure.
 	- filled in the tune meta data from the fake book.
 	- put in the fake book chords.
 	- put in the fake book lyrics.
