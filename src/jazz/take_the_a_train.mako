@@ -36,8 +36,8 @@
 	\myMark "A"
 	\startPart
 	\repeat volta 2 {
-	c1*2:6 | d:7.5- | \myEndLine
-	d1:m7 | g:7 | c |
+		c1*2:6 | d:7.5- | \myEndLine
+		d1:m7 | g:7 | c |
 	} \alternative {
 		{
 			c | %% \myEndLine remarked to not cause a line break
@@ -115,6 +115,7 @@
 
 % if part=='LyricsmoreFake':
 \lyricmode {
+	%% part "A"
 	If you __ miss the "\"A\"" Train, __ You'll find you've missed the quick -- est way to Har -- lem. __
 }
 % endif
