@@ -42,7 +42,6 @@ WEB_DIR:=~/public_html/public/openbook
 COMMON:=src/include/common.makoi
 # wrappers
 LILYPOND_WRAPPER:=scripts/lilypond_wrapper.py
-BOOK_WRAPPER:=scripts/lilypond_wrapper.py
 MAKO_WRAPPER:=scripts/mako_wrapper.py
 MAKO_BOOK_WRAPPER:=scripts/mako_book.py
 LYD_WRAPPER:=scripts/lyd.pl
@@ -69,7 +68,6 @@ ifeq ($(DO_ALL_DEP),1)
 endif
 ifeq ($(DO_WRAPDEPS),1)
 	LILYPOND_WRAPPER_DEP:=$(LILYPOND_WRAPPER)
-	BOOK_WRAPPER_DEP:=$(BOOK_WRAPPER)
 	MAKO_WRAPPER_DEP:=$(MAKO_WRAPPER)
 	LYD_WRAPPER_DEP:=$(LYD_WRAPPER)
 	MAKO_DEPS_WRAPPER_DEP:=$(MAKO_DEPS_WRAPPER)
@@ -120,6 +118,7 @@ FILES_WAV:=$(addsuffix .wav,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_MP3:=$(addsuffix .mp3,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_OGG:=$(addsuffix .ogg,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 # books
+DO:=
 # book - openbook
 OB_OUT_BASE:=$(OUT_DIR)/openbook
 OB_OUT_LY:=$(OUT_DIR)/openbook.ly
@@ -128,6 +127,7 @@ OB_OUT_FILES:=$(shell find src -type f -and -wholename "$(OB_OUT_PATTERN)")
 OB_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(OB_OUT_FILES))))
 OB_OUT_PS:=$(OUT_DIR)/openbook.ps
 OB_OUT_PDF:=$(OUT_DIR)/openbook.pdf
+DO:=$(DO) $(OB_OUT_PDF)
 # book - israelbook
 IL_OUT_BASE:=$(OUT_DIR)/israelisongbook
 IL_OUT_LY:=$(OUT_DIR)/israelisongbook.ly
@@ -136,6 +136,7 @@ IL_OUT_FILES:=$(shell find src -type f -and -wholename "$(IL_OUT_PATTERN)")
 IL_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(IL_OUT_FILES))))
 IL_OUT_PS:=$(OUT_DIR)/israelisongbook.ps
 IL_OUT_PDF:=$(OUT_DIR)/israelisongbook.pdf
+DO:=$(DO) $(IL_OUT_PDF)
 # book - rockbook
 RK_OUT_BASE:=$(OUT_DIR)/rockbook
 RK_OUT_LY:=$(OUT_DIR)/rockbook.ly
@@ -144,6 +145,8 @@ RK_OUT_FILES:=$(shell find src -type f -and -wholename "$(RK_OUT_PATTERN)")
 RK_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(RK_OUT_FILES))))
 RK_OUT_PS:=$(OUT_DIR)/rockbook.ps
 RK_OUT_PDF:=$(OUT_DIR)/rockbook.pdf
+# don't do the rockbook for now since it has errors
+#DO:=$(DO) $(RK_OUT_PDF)
 
 ifeq ($(DO_LY),1)
 	ALL:=$(ALL) $(FILES_LY)
@@ -178,7 +181,7 @@ ifeq ($(DO_OGG),1)
 	ALL:=$(ALL) $(FILES_OGG)
 endif
 ifeq ($(DO_BOOKS_PDF),1)
-	ALL:=$(ALL) $(OB_OUT_PDF) $(IL_OUT_PDF) $(RK_OUT_PDF)
+	ALL:=$(ALL) $(DO)
 endif
 
 .PHONY: all
@@ -385,23 +388,28 @@ $(FILES_MP3): %.mp3: %.midi $(MIDI2MP3_WRAPPER_DEP) $(ALL_DEP)
 .PHONY: books
 books: $(OB_OUT_PDF) $(IL_OUT_PDF) $(RK_OUT_PDF) $(ALL_DEP)
 	$(info doing [$@])
-$(OB_OUT_PDF) $(OB_OUT_PS): $(OB_OUT_LY) $(BOOK_WRAPPER_DEP) $(ALL_DEP)
+$(OB_OUT_PDF) $(OB_OUT_PS): $(OB_OUT_LY) $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)$(BOOK_WRAPPER) $(OB_OUT_PS) $(OB_OUT_PDF) $(OB_OUT_BASE) $(OB_OUT_LY)
+	$(Q)$(LILYPOND_WRAPPER) $(OB_OUT_PS) $(OB_OUT_PDF) $(OB_OUT_BASE) $(OB_OUT_LY)
+	$(Q)-rm -f $(OB_OUT_PS)
+	$(Q)pdf2ps $(OB_OUT_PDF) $(OB_OUT_PS)
+	$(Q)-rm -f $(OB_OUT_PDF)
+	$(Q)ps2pdf $(OB_OUT_PS) $(OB_OUT_PDF)
+	$(Q)-rm -f $(OB_OUT_PS)
 $(OB_OUT_LY): $(OB_OUT_FILES) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
 	$(Q)$(MAKO_BOOK_WRAPPER) $(OB_OUT_LY) "$(OB_OUT_PATTERN)"
-$(IL_OUT_PDF) $(IL_OUT_PS): $(IL_OUT_LY) $(BOOK_WRAPPER_DEP) $(ALL_DEP)
+$(IL_OUT_PDF) $(IL_OUT_PS): $(IL_OUT_LY) $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)$(BOOK_WRAPPER) $(IL_OUT_PS) $(IL_OUT_PDF) $(IL_OUT_BASE) $(IL_OUT_LY)
+	$(Q)$(LILYPOND_WRAPPER) $(IL_OUT_PS) $(IL_OUT_PDF) $(IL_OUT_BASE) $(IL_OUT_LY)
 $(IL_OUT_LY): $(IL_OUT_FILES) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
 	$(Q)$(MAKO_BOOK_WRAPPER) $(IL_OUT_LY) "$(IL_OUT_PATTERN)"
-$(RK_OUT_PDF) $(RK_OUT_PS): $(RK_OUT_LY) $(BOOK_WRAPPER_DEP) $(ALL_DEP)
+$(RK_OUT_PDF) $(RK_OUT_PS): $(RK_OUT_LY) $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)$(BOOK_WRAPPER) $(RK_OUT_PS) $(RK_OUT_PDF) $(RK_OUT_BASE) $(RK_OUT_LY)
+	$(Q)$(LILYPOND_WRAPPER) $(RK_OUT_PS) $(RK_OUT_PDF) $(RK_OUT_BASE) $(RK_OUT_LY)
 $(RK_OUT_LY): $(RK_OUT_FILES) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
