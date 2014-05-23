@@ -1,0 +1,32 @@
+The issue of pdf size is very important in this project since we want the smallest
+possible pdf but with high quality.
+
+Method 1 (BEST)
+========
+pdf2ps and then ps2pdf
+It turns out we can reduce from ~9MB to 2MB this way!!!
+We do lose links within the document but the quality does not seem to be diminished.
+
+Method 2
+========
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dBATCH  -dQUIET -sOutputFile=gs.pdf openbook.pdf
+does not reduce the size of the file
+
+Method 3
+========
+qpdf --linearize openbook.pdf qpdf.pdf
+does not reduce the size
+
+Method 4
+========
+convert openbook.pdf -compress Zip convert.pdf
+Reduces the size by half but the output is ugly and pixelized.
+
+Method 5
+========
+pdftk openbook.pdf output pdftk.pdf compress
+does not reduce the size of the file
+
+References:
+http://askubuntu.com/questions/113544/how-to-reduce-pdf-filesize
+http://stackoverflow.com/questions/5296667/pdftk-compression-option
