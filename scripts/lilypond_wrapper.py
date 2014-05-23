@@ -92,3 +92,4 @@ if p_do_pdfred:
 	system_check_output(['ps2pdf', p_ps, p_pdf])
 	if os.path.isfile(p_ps):
 		os.unlink(p_ps)
+	os.chmod(p_pdf,0444)
