@@ -38,13 +38,14 @@ debug=False
 # first check that we are using the correct version of python
 versioncheck.checkversion()
 
-if len(sys.argv)!=5:
+if len(sys.argv)!=6:
 	raise ValueError('command line issue')
 
 p_ps=sys.argv[1]
 p_pdf=sys.argv[2]
 p_out=sys.argv[3]
 p_ly=sys.argv[4]
+p_do_pdfred=int(sys.argv[5])
 
 if debug:
 	print('arguments are',sys.argv)
@@ -81,3 +82,13 @@ try:
 except Exception,e:
 	remove_output_if_exists()
 	raise e
+
+# do pdf reduction
+if p_do_pdfred:
+	if os.path.isfile(p_ps):
+		os.unlink(p_ps)
+	system_check_output(['pdf2ps', p_pdf, p_ps])
+	os.unlink(p_pdf)
+	system_check_output(['ps2pdf', p_ps, p_pdf])
+	if os.path.isfile(p_ps):
+		os.unlink(p_ps)

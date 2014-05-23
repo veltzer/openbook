@@ -4,8 +4,8 @@ Now:
 	or maybe offer a warning on using the wrong version of
 	lilypond?
 - make check_all produce a stub and make it a prereq for full build.
-- release the stopOnOutput flag in script/lilypond_wrapper.py
-	and make all the stuff compile.
+- get back to compiling the rock book which does not compile due
+	to errors.
 - improve the script/lilypond_wrapper to get a --nomidi option
 	to disable midi production.
 		At first shot do this by removing the midi
