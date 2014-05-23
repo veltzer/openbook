@@ -31,7 +31,12 @@ DO_MP3?=0
 DO_OGG?=0
 # should we do the full books ?
 DO_BOOKS_PDF?=1
+# should we reduce the size of the pdf?
+DO_PDFRED?=1
 
+#############
+# CONSTANTS #
+#############
 # where are the sources located ?
 SOURCE_DIR:=src
 # where is the output folder ?
@@ -228,6 +233,7 @@ debug:
 	$(info FILES_COMPLETED_JAZZ is $(FILES_COMPLETED_JAZZ))
 	$(info WEB_FOLDER is $(WEB_FOLDER))
 	$(info WEB_FILES is $(WEB_FILES))
+	$(info DO_PDFRED is $(DO_PDFRED))
 
 .PHONY: todo
 todo:
@@ -357,7 +363,7 @@ $(FILES_MIDI): %.midi: %.stamp $(ALL_DEP)
 $(FILES_STAMP): %.stamp: %.ly $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
-	$(Q)$(LILYPOND_WRAPPER) $(dir $@)$(basename $(notdir $@)).ps $(dir $@)$(basename $(notdir $@)).pdf $(dir $@)$(basename $(notdir $@)) $<
+	$(Q)$(LILYPOND_WRAPPER) $(dir $@)$(basename $(notdir $@)).ps $(dir $@)$(basename $(notdir $@)).pdf $(dir $@)$(basename $(notdir $@)) $< $(DO_PDFRED)
 	$(Q)touch $@
 
 $(FILES_LY): $(OUT_DIR)/%.ly: %.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
@@ -390,26 +396,21 @@ books: $(OB_OUT_PDF) $(IL_OUT_PDF) $(RK_OUT_PDF) $(ALL_DEP)
 	$(info doing [$@])
 $(OB_OUT_PDF) $(OB_OUT_PS): $(OB_OUT_LY) $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)$(LILYPOND_WRAPPER) $(OB_OUT_PS) $(OB_OUT_PDF) $(OB_OUT_BASE) $(OB_OUT_LY)
-	$(Q)-rm -f $(OB_OUT_PS)
-	$(Q)pdf2ps $(OB_OUT_PDF) $(OB_OUT_PS)
-	$(Q)-rm -f $(OB_OUT_PDF)
-	$(Q)ps2pdf $(OB_OUT_PS) $(OB_OUT_PDF)
-	$(Q)-rm -f $(OB_OUT_PS)
+	$(Q)$(LILYPOND_WRAPPER) $(OB_OUT_PS) $(OB_OUT_PDF) $(OB_OUT_BASE) $(OB_OUT_LY) $(DO_PDFRED)
 $(OB_OUT_LY): $(OB_OUT_FILES) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
 	$(Q)$(MAKO_BOOK_WRAPPER) $(OB_OUT_LY) "$(OB_OUT_PATTERN)"
 $(IL_OUT_PDF) $(IL_OUT_PS): $(IL_OUT_LY) $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)$(LILYPOND_WRAPPER) $(IL_OUT_PS) $(IL_OUT_PDF) $(IL_OUT_BASE) $(IL_OUT_LY)
+	$(Q)$(LILYPOND_WRAPPER) $(IL_OUT_PS) $(IL_OUT_PDF) $(IL_OUT_BASE) $(IL_OUT_LY) $(DO_PDFRED)
 $(IL_OUT_LY): $(IL_OUT_FILES) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
 	$(Q)$(MAKO_BOOK_WRAPPER) $(IL_OUT_LY) "$(IL_OUT_PATTERN)"
 $(RK_OUT_PDF) $(RK_OUT_PS): $(RK_OUT_LY) $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)$(LILYPOND_WRAPPER) $(RK_OUT_PS) $(RK_OUT_PDF) $(RK_OUT_BASE) $(RK_OUT_LY)
+	$(Q)$(LILYPOND_WRAPPER) $(RK_OUT_PS) $(RK_OUT_PDF) $(RK_OUT_BASE) $(RK_OUT_LY) $(DO_PDFRED)
 $(RK_OUT_LY): $(RK_OUT_FILES) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
