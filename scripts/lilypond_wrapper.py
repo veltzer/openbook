@@ -28,7 +28,8 @@ def system_check_output(args):
 		print(errout,end='')
 
 # parameters
-stopOnOutput=False
+# I want errors to happen if there is any output...
+stopOnOutput=True
 showOutput=True
 doPs=False
 doPdf=True
