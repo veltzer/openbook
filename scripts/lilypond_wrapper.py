@@ -87,7 +87,8 @@ except Exception,e:
 if p_do_pdfred:
 	if os.path.isfile(p_ps):
 		os.unlink(p_ps)
-	system_check_output(['pdf2ps', p_pdf, p_ps])
+	# language 2 is the default
+	system_check_output(['pdf2ps', '-dLanguageLevel=3', p_pdf, p_ps])
 	os.unlink(p_pdf)
 	system_check_output(['ps2pdf', p_ps, p_pdf])
 	if os.path.isfile(p_ps):
