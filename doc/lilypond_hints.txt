@@ -1,5 +1,8 @@
 Melody:
 =======
+- strange repeat marks:
+	http://www.lilypond.org/doc/v2.18/Documentation/notation/long-repeats#manual-repeat-marks
+	see "Waltz For Debby"
 - coda. see "I'll remember April".
 - in order to parenthesize notes: <\parenthesize e'>4
 	This is just for a single note? how do I put parens on more than one note?
