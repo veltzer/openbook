@@ -15,7 +15,8 @@
 		<h1>Welcome to The openbook web site</h1>
 
 		<h2>A demo for the impatient...</h2>
-		<iframe src="viewer/viewer.html" width="100%" height="1700px"></iframe>
+		<!--iframe src="viewer/viewer.html" width="100%" height="1700px"></iframe-->
+		<embed src="https://veltzer.net/openbook/openbook.pdf" width="100%" height="1700px"></embed>
 		<!--embed style="height: 100%; width: 100%;" src="au_privave.svg" type="image/svg+xml"/-->
 		<!--img src="au_privave.png" title="Sample output from the openbook project in the form of an image"/-->
 		<p>You can download the latest version of the openbook from <a href="https://veltzer.net/openbook/openbook.pdf">here</a>.</p>
