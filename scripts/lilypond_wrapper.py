@@ -13,11 +13,26 @@ import subprocess # for Popen
 import os.path # for isfile
 import versioncheck # for checkversion
 
+# parameters
+# I want errors to happen if there is any output...
+stopOnOutput=True
+showOutput=True
+doPs=False
+doPdf=True
+debug=False
+unlinkPs=True
+
 # this function is here because we want to supress output until we know
 # there is an error (and subprocess.check_output does not do this)
 def system_check_output(args):
+	if debug:
+		print('running:', args)
 	pr=subprocess.Popen(args,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
 	(output,errout)=pr.communicate()
+	if debug:
+		print(output,end='')
+		print(errout,end='')
+		print(pr.returncode)
 	status=pr.returncode
 	if status or (stopOnOutput and (output!='' or errout!='')):
 		print(output,end='')
@@ -26,14 +41,6 @@ def system_check_output(args):
 	if showOutput:
 		print(output,end='')
 		print(errout,end='')
-
-# parameters
-# I want errors to happen if there is any output...
-stopOnOutput=True
-showOutput=True
-doPs=False
-doPdf=True
-debug=False
 
 # first check that we are using the correct version of python
 versioncheck.checkversion()
@@ -91,6 +98,6 @@ if p_do_pdfred:
 	system_check_output(['pdf2ps', '-dLanguageLevel=3', p_pdf, p_ps])
 	os.unlink(p_pdf)
 	system_check_output(['ps2pdf', p_ps, p_pdf])
-	if os.path.isfile(p_ps):
+	if os.path.isfile(p_ps) and unlinkPs:
 		os.unlink(p_ps)
 	os.chmod(p_pdf,0444)
