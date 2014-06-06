@@ -69,8 +69,8 @@ remove_output_if_exists()
 # run the command
 args=[]
 args.append('lilypond')
-args.append('--loglevel=WARN')
-#args.append('--loglevel=ERROR')
+#args.append('--loglevel=WARN')
+args.append('--loglevel=ERROR')
 if doPs:
 	args.append('--ps')
 if doPdf:
