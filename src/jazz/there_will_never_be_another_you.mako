@@ -18,6 +18,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="e30e1074-eaf3-11e0-a377-0019d11e5a41"
 	attributes['structure']="AB"
+	attributes['structureremark']="the structure of this tune could also be thought of ABAC since in the AB interpretation the first 8 bars of the A and B part are identical."
 
 	attributes['idyoutube']="kh_NnsbIqNQ"
 	attributes['idyoutube']="Til3lV_ItZE"
@@ -32,10 +33,6 @@
 	- mark what has been done with this tune.
 	- document the youtube performances.
 	- add a lyrics url.
-	- in the real book version move the last chord to be written in parenthesis (I don't know how to do that).
-	REMARK:
-	- the structure of this tune could also be thought of "ABAC" since in the "AB" interpretation the first 8
-	bars of the "A" and "B" part are identical.
 % endif
 
 % if part=='ChordsReal':
@@ -50,7 +47,7 @@
 	ees1*2:maj7 | d1:m7.5- | g:7.9- | \myEndLine
 	c1*2:m7 | bes1:m7 | ees:7 | \myEndLine
 	aes:maj7 | f2:m7.5- bes:7 | ees1:maj7 | c:m7 | \myEndLine
-	f:7 | c2:m7 f:7 | f1:m7 | bes:7 | \myEndLine
+	f:7 | \LPC c2:m7 \RPC f:7 | f1:m7 | bes:7 | \myEndLine
 	\endPart
 
 	\myMark "B"
@@ -58,8 +55,7 @@
 	ees1*2:maj7 | d1:m7.5- | g:7.9- | \myEndLine
 	c1*2:m7 | bes1:m7 | ees:7 | \myEndLine
 	aes:maj7 | f2:m7.5- bes:7 | ees1:maj7 | g2:m7 c:7 | \myEndLine
-	%% the bes:7 at the end of the next line is supposed to be in parenthesis (as turn-around)
-	ees:maj7 d:7 | g:7 c:7 | f:m7 bes:7 | ees:maj7 bes:7 | \myEndLine
+	ees:maj7 d:7 | g:7 c:7 | f:m7 bes:7 | ees:maj7 \OPC bes:7 | \myEndLine
 	\endPart
 
 	\endSong
@@ -85,7 +81,7 @@
 	c d ees f | g bes f ees | f1~ | f2 r8 g4. |
 	ees4 f g bes | c ees c4. bes8 | c1~ | c2. bes4 |
 	ees c bes aes | g f g aes | bes g f ees8 d'~ | d2 r8 c4. |
-	bes4 ees d c | bes ees, bes' aes | f2 g | ees1 |
+	bes4 ees d c | bes ees, bes' aes | f2 g | ees1_\markup { \italic { Fine } } |
 
 }
 % endif
