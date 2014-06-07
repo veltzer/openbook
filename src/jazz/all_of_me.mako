@@ -21,6 +21,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="6dd0233c-03b8-11e1-b5a9-0019d11e5a41"
 	attributes['structure']="AB"
+	attributes['structureremark']="the structure of this tune could also be interpreted as ABAC since the 8 first bars of A and B are the same."
 
 	attributes['idyoutuberemark']="Louis Armstrong with amazing rythm"
 	attributes['idyoutube']="wFzxo-XI8As"
@@ -47,12 +48,8 @@
 	- checked the real book tune.
 	- hear the tune, adjust it's speed and see it's ok.
 	- put you tube performances.
-	- in the real book version how do I put the 3 turn around chords in parenthesis?
 	TODO:
 	- add the fake book version.
-	REMARKS:
-	- the structure of this tune could also be interpreted as ABAC since the 8 first bars of A and B
-	are the same.
 % endif
 
 % if part=='ChordsReal':
@@ -60,29 +57,20 @@
 	\startChords
 	\startSong
 
-	\repeat volta 2 {
-		\myMark "A"
-		\startPart
-		c1*2:maj7 | e:7 | \myEndLine
-		a:7 | d:m | \myEndLine
-		e:7 | a:m | \myEndLine
-		d:7 | d1:m7 | g:7 | \myEndLine
-		\endPart
+	\myMark "A"
+	\startPart
+	c1*2:maj7 | e:7 | \myEndLine
+	a:7 | d:m | \myEndLine
+	e:7 | a:m | \myEndLine
+	d:7 | d1:m7 | g:7 | \myEndLine
+	\endPart
 
-		\myMark "B"
-		\startPart
-		c1*2:maj7 | e:7 | \myEndLine
-		a:7 | d:m | \myEndLine
-		f1 | f:m | c2:maj7 e:m7 | a1:7 | \myEndLine
-		d:m7 | g:7 |
-	} \alternative {
-		{
-			c2:6 ees:dim | d:m7 g:7 |
-		}
-		{
-			c1:6 | c1:6 | \myEndLine
-		}
-	}
+	\myMark "B"
+	\startPart
+	c1*2:maj7 | e:7 | \myEndLine
+	a:7 | d:m | \myEndLine
+	f1 | f:m | c2:maj7 e:m7 | a1:7 | \myEndLine
+	d:m7 | g:7 | c2:6 \LPC ees:dim | d:m7 \RPC g:7 | \myEndLine
 	\endPart
 
 	\endSong
@@ -97,26 +85,17 @@
 	\time 4/4
 	\key c \major
 
-	\repeat volta 2 {
-		%% part "A"
-		c'4 g8 e~ e2~ | e \times 2/3 { c'4 d c } | b gis8 e~ e2~ | e1 |
-		a4. g8 e2~ | e4 dis \times 2/3 { e bes' a } | g2 f~ | f1 |
-		e4. ees8 d2~ | d \times 2/3 { e4 gis b } | d2 c~ | c1 |
-		b4. bes8 a2~ | a \times 2/3 { a4 d b } | a1 | b |
+	%% part "A"
+	c'4 g8 e~ e2~ | e \times 2/3 { c'4 d c } | b gis8 e~ e2~ | e1 | \myEndLine
+	a4. g8 e2~ | e4 dis \times 2/3 { e bes' a } | g2 f~ | f1 | \myEndLine
+	e4. ees8 d2~ | d \times 2/3 { e4 gis b } | d2 c~ | c1 | \myEndLine
+	b4. bes8 a2~ | a \times 2/3 { a4 d b } | a1 | b | \myEndLine
 
-		%% part "B"
-		c4 g8 e~ e2~ | e \times 2/3 { c'4 d c } | b gis8 e~ e2~ | e1 |
-		a4. g8 e2~ | e4 dis \times 2/3 { e bes' a } | g2 f~ | f1 |
-		d'2 c4 b | d2. c4 | b2 e,4 g | b2. a4 |
-		c2 a4 c | e2 e |
-	} \alternative {
-		{
-			c1~ | c |
-		}
-		{
-			c1~ | c |
-		}
-	}
+	%% part "B"
+	c4 g8 e~ e2~ | e \times 2/3 { c'4 d c } | b gis8 e~ e2~ | e1 | \myEndLine
+	a4. g8 e2~ | e4 dis \times 2/3 { e bes' a } | g2 f~ | f1 | \myEndLine
+	d'2 c4 b | d2. c4 | b2 e,4 g | b2. a4 | \myEndLine
+	c2 a4 c | e2 e | c1~ | c | \myEndLine
 }
 % endif
 
@@ -144,6 +123,5 @@
 	that once was my heart
 	So why not
 	take all of me __
-	me __
 }
 % endif

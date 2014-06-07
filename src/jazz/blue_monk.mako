@@ -37,7 +37,6 @@
 	- heard the tune to check that it is right and adjust the tempo.
 	- added youtube performances.
 	TODO:
-	- how do I put the f:7 chord in parenthesis at the end of the tune?
 	- add another version of this tune.
 % endif
 
@@ -50,7 +49,7 @@
 	\startPart
 	bes1 | ees:7 | bes2 f:7 | bes bes:7 | \myEndLine
 	ees1 | e:dim7 | bes2 f:7 | bes1 | \myEndLine
-	f1*2:7 | bes | \myEndLine
+	f1*2:7 | bes1. \OPC f2:7 | \myEndLine
 	\endPart
 
 	\endSong

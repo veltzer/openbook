@@ -48,8 +48,6 @@
 	- put in youtube performances and lyrics url.
 	- mark the structure in this tune.
 	TODO:
-	- the last chords in the real book version should be in parenthesis (I don't know
-	how to do that).
 	- add the new real book version (pdf is already there).
 % endif
 
@@ -73,7 +71,7 @@
 		}
 		{
 			a2:m7 d:7 | g:m7 c:7 | f1:6 | c:7 | \myEndLine
-			f:6 | e:m7 | a:m | e:7 | \myEndLine
+			f:6 | e:m7 | a:m | \OPC e:7 | \myEndLine
 		}
 	}
 	\endPart

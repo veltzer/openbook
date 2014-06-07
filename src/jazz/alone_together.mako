@@ -21,6 +21,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="b647880a-0b68-11e1-b491-0019d11e5a41"
 	attributes['structure']="AABA"
+	attributes['structureremark']="this tunes structure can also be categorised as ABAC since the first 8 bars of both the first and second part are the same."
 
 	attributes['idyoutuberemark']="The great trumpet version of Chet Baker"
 	attributes['idyoutube']="zdDhinO58ss"
@@ -46,10 +47,6 @@
 	- put in you tube performances with documentation.
 	TODO:
 	- put in another version of this tune.
-	- how do I put the last two chords in the real book version in parenthesis? (the turn around chords).
-	- I didn't find any other epdf for this. Bring it from somewhere.
-	REMARKS:
-	- this tunes structure can also be categorised as "ABAC" since the first 8 bars of both the first and second part are the same.
 % endif
 
 % if part=='ChordsReal':
@@ -84,7 +81,7 @@
 	\myMark "A"
 	\startPart
 	d1:m | e2:m7.5- a:7.9- | d1:m | e2:m7.5- a:7.9- | \myEndLine
-	d1:m | bes2:7 a:7 | d1:m | e2:m7.5- a:7 | \myEndLine
+	d1:m | bes2:7 a:7 | d1:m | \LPC e2:m7.5- \RPC a:7 | \myEndLine
 	\endPart
 
 	\endSong

@@ -46,7 +46,6 @@
 	- add youtube performances.
 	TODO:
 	- add copyright notice.
-	- how do I put the last two chords in the real book version in parenthesis?
 	- add another version of this tune.
 % endif
 
@@ -72,7 +71,7 @@
 	\myMark "A"
 	\startPart
 	f1:maj7 | f:7.5+ | bes2:maj7 b:dim | a:m7 aes:dim | \myEndLine
-	g1:m7 | c:7 | f | \mark \markup { \italic { Fine } } g2:m7 c:7 | \myEndLine
+	g1:m7 | c:7 | f | \mark \markup { \italic { Fine } } \LPC g2:m7 \RPC c:7 | \myEndLine
 	\endPart
 
 	\endSong
