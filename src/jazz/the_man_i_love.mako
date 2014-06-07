@@ -72,8 +72,7 @@
 		aes1:m | bes2:7 bes4:7.11 bes:7 | ees2 aes |
 	} \alternative {
 		{
-			%% TODO: myEndLine emitted in next line in order not to force break
-			ees bes:7 |
+			ees bes:7 | \myEndLineVoltaNotLast
 		}
 		{
 			ees1 | \myEndLine
@@ -168,8 +167,7 @@
 		aes1:m | bes2:7 bes4:7.11 bes:7 | ees2 aes |
 	} \alternative {
 		{
-			%% TODO: myEndLine emitted in next line in order not to force break
-			ees bes:7 |
+			ees bes:7 | \myEndLineVoltaNotLast
 		}
 		{
 			ees1 | \myEndLine

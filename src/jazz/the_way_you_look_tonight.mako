@@ -75,7 +75,7 @@
 		f:6 d:m7 | g:m9 c:7 | f:maj7 d:m7 |
 	} \alternative {
 		{
-			g:m9 c:7 | %% \myEndLine
+			g:m9 c:7 | \myEndLineVoltaNotLast
 		}
 		{
 			bes:m7 ees:7 | \myEndLine

@@ -60,7 +60,7 @@
 		f:m7 aes:m7 | g:m7 c:7.9- | f:m7 bes:7.9- |
 	} \alternative {
 		{
-			ees:maj7 f4:m7 bes:7.9- | %% \myEndLine remarked to avoid line break
+			ees:maj7 f4:m7 bes:7.9- | \myEndLineVoltaNotLast
 		}
 		{
 			ees2:maj7 f4:m7 bes:7.9- | \myEndLine
@@ -98,7 +98,7 @@
 		c,2 aes' | g4 ees8 f g4 aes | f d8 ees f4 g |
 	} \alternative {
 		{
-			ees2 r | %% \myEndLine remarked to avoid a line break
+			ees2 r | \myEndLineVoltaNotLast
 		}
 		{
 			ees2. bes'4 | \myEndLine

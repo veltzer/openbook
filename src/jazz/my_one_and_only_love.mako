@@ -80,7 +80,7 @@
 		d:m7 c:m7 b:m7.5- e:7 | a2:m7 ees:9 | a:m7 g4:7.5+ des:9 |
 	} \alternative {
 		{
-			c2 d4:m7 g:7.5+ | %% \myEndLine
+			c2 d4:m7 g:7.5+ | \myEndLineVoltaNotLast
 		}
 		{
 			aes4:maj7 des:maj7 des:6 c:6.9 | \myEndLine

@@ -64,7 +64,7 @@
 		d:m7 | g:7 | c:maj7 |
 	} \alternative {
 		{
-			c:maj7 | %% \myEndLine remarked to prevent line break
+			c:maj7 | \myEndLineVoltaNotLast
 		}
 		{
 			bes:7 | \myEndLine
@@ -102,7 +102,7 @@
 		a4 aes8 g~ g2 | g g'4 g8 g~ | g1~ |
 	} \alternative {
 		{
-			g2 g4 g8 g | %% \myEndLine remarked to not create a break
+			g2 g4 g8 g | \myEndLineVoltaNotLast
 		}
 		{
 			g2 g4 g | \myEndLine

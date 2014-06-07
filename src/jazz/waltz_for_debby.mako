@@ -64,7 +64,7 @@
 		ees:7 | aes:maj7 |
 	} \alternative {
 		{
-			f:m7.5- | bes2:7 bes4:7/aes | g2.:m7 | c:7 | f:m7 | bes:7 | %% \myEndLine remarked to avoid line break
+			f:m7.5- | bes2:7 bes4:7/aes | g2.:m7 | c:7 | f:m7 | bes:7 | \myEndLineVoltaNotLast
 		}
 		{
 			a:m7 | d2:7 d4:7/c | b2.:m7 | a:m7 | g:maj7 | fis:m7 | \myEndLine
@@ -105,7 +105,7 @@
 	%%} \alternative {
 	\set Score.repeatCommands = #'((volta "1, 3") end-repeat)
 	%%	{
-			aes aes g | f g aes | bes2.~ | bes~ | bes~ | bes | %% \myEndLine remarked to avoid a line break
+			aes aes g | f g aes | bes2.~ | bes~ | bes~ | bes | \myEndLineVoltaNotLast
 	%%	}
 	\set Score.repeatCommands = #'((volta #f) (volta "2.") end-repeat)
 	%%	{

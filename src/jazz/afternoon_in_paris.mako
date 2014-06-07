@@ -45,10 +45,6 @@
 	- checked the real book tune.
 	- checked that the real book tune sounds well and it's speed is ok in the midi.
 	- added youtube performances.
-	TODO:
-	- are there lyrics to this thing? Even if there isn't it needs to be marked clearly here.
-	- the last two chords of the real book version (d:m7 and g:7) should be in parenthesis since they are part of the turn around.
-	I still don't know how to do that.
 % endif
 
 % if part=='ChordsFake':
@@ -143,7 +139,7 @@
 	\myMark "A"
 	\startPart
 	c1:maj7 | c2:m7 f:7 | bes1:maj7 | bes2:m7 ees:7 | \myEndLine
-	aes1:maj7 | d2:m7 g:7.9- | c1:maj7 | d2:m7 g:7 | \myEndLine
+	aes1:maj7 | d2:m7 g:7.9- | c1:maj7 | \LPC d2:m7 \RPC g:7 | \myEndLine
 	\endPart
 
 	\endSong

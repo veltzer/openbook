@@ -351,8 +351,12 @@ check_empty:
 check_relative:
 	$(info doing [$@])
 	$(Q)-git grep relative -- *.mako | grep -v "\relative {"
+.PHONY: check_line_break
+check_line_break:
+	$(info doing [$@])
+	$(Q)-git grep "\myEndLine" -- *.mako | grep \%\%
 .PHONY: check_all
-check_all: check_empty_copyright check_whitespace check_and check_extra_files check_min_chords check_uuid_basic check_chordChanges check_bar check_break check_completion check_include check_threeunderscores check_mark check_bad_lyric_breakup check_veltzer_https check_uuid check_empty check_relative
+check_all: check_empty_copyright check_whitespace check_and check_extra_files check_min_chords check_uuid_basic check_chordChanges check_bar check_break check_completion check_include check_threeunderscores check_mark check_bad_lyric_breakup check_veltzer_https check_uuid check_empty check_relative check_line_break
 
 # rules
 

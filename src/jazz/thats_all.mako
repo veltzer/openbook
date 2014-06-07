@@ -64,7 +64,7 @@
 		fis:m7.5- f:m7 | e:m7 ees:dim7 |
 	} \alternative {
 		{
-			e:m7 a:7.9- | d:7.5- g:7 | %% \myEndLine remarked to not cause line break
+			e:m7 a:7.9- | d:7.5- g:7 | \myEndLineVoltaNotLast
 		}
 		{
 			e4:m7 a:7.9- d:m7 g:7.9- | c1 | \myEndLine
@@ -104,7 +104,7 @@
 		c e c a c4. a8 | c e c a c4. a8 |
 	} \alternative {
 		{
-			g2. e4 | d2. e8 f | %% \myEndLine remarked to not cause a line break
+			g2. e4 | d2. e8 f | \myEndLineVoltaNotLast
 		}
 		{
 			g2. e4 | c2. c8 c' | \myEndLine

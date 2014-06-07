@@ -61,7 +61,7 @@
 	}
 	\alternative {
 		{
-			d:m7 g:7 | c:6 d4:m7 g:7 | %% \myEndLine remarked to avoid a line break
+			d:m7 g:7 | c:6 d4:m7 g:7 | \myEndLineVoltaNotLast
 		}
 		{
 			d2:m7 g:7 | c:6 g4:m7 c:7 | \myEndLine
@@ -100,7 +100,7 @@
 	}
 	\alternative {
 		{
-			a2 b | g1 | %% \myEndLine remarked to avoid a line break
+			a2 b | g1 | \myEndLineVoltaNotLast
 		}
 		{
 			a2 a | c1 | \myEndLine

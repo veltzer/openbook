@@ -62,7 +62,7 @@
 		c2:m9 aes:7/c | c:m6 aes:9/c | d:7.9- aes4:9 g:7.9- |
 	} \alternative {
 		{
-			c2:m7 aes4:9 g:7.9- | %% \myEndLine remarked to avoid a line break
+			c2:m7 aes4:9 g:7.9- | \myEndLineVoltaNotLast
 		}
 		{
 			c1:m | \myEndLine
@@ -102,7 +102,7 @@
 		ees8. c16 ees8. c16 ees4 ees8 c~ |
 	} \alternative {
 		{
-			c2 r | %% \myEndLine remarked to avoid a line break
+			c2 r | \myEndLineVoltaNotLast
 		}
 		{
 			c2. c'4 | \myEndLine
