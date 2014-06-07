@@ -29,6 +29,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="ee9c0d62-15fd-11e1-bd56-0019d11e5a41"
 	attributes['structure']="AB"
+	attributes['structureremark']="this tunes structure can also be categorised as ABAC since the first 8 bars of both the first and second part are the same."
 
 	attributes['idyoutuberemark']="Jobim with Pat Metheny"
 	attributes['idyoutube']="VendEbBv3nc"
@@ -67,12 +68,9 @@
 	- in the real book version of the chords in the B section the des:7 should come in the middle of the bar and I
 		have no way to indicate that. The original real book score does indicate that using tempo markings.
 		Find out how to do that in lilypond and do it.
-	- how do I put the last two chords in the real book version (the turn around chords) in parenthesis?
 	REMARKS:
-	- this tunes structure can also be categorised as "ABAC" since the first 8 bars of both the first and second part are the same.
 	- this tune was written in the real book under a C major scale (or A minor scale) where the B is always flat.
 		Obviously this is a serious mistake.
-	- I added two turn around chords that were missing in the real book version.
 % endif
 
 % if part=='ChordsReal':
@@ -93,7 +91,7 @@
 	c1*2:m7 | b:dim7 | \myEndLine
 	bes1:maj7 | e2:m7.5- a:7 | d1.:m7 des2:7 | \myEndLine
 	c1:m9 | f:7 | b:m7 | e:7.9- | \myEndLine
-	bes:maj7 | a:7 | d:m7 | e2:m7.5- a:7.9- | \myEndLine
+	bes:maj7 | a:7 | d1*2:m7 | \myEndLine
 	\endPart
 
 	\endSong
