@@ -22,9 +22,14 @@
 	attributes['completion']="5"
 	attributes['uuid']="13d57a4a-a26f-11df-8711-0019d11e5a41"
 	attributes['structure']="AB"
+	attributes['structureremark']="this tunes structure can also be AA' or maybe ABAC since the A and the part B are VERY similar."
 	attributes['remark']="7th bar of letters A and B were originally 2 bars each. Melody is straight eights, though rather freely interpreted rhythmically."
 
+	attributes['idyoutuberemark']="Nat King Cole in a the cannonical version..."
 	attributes['idyoutube']="Iq0XJCJ1Srw"
+	attributes['idyoutuberemark']="Miles in a slow version"
+	attributes['idyoutube']="GDS_nqHaUvc"
+	attributes['lyricsurl']="http://www.metrolyrics.com/nature-boy-lyrics-nat-king-cole.html"
 %>
 % endif
 
@@ -41,15 +46,10 @@
 	- checked the new real book tune.
 	- checked the new real book lyrics.
 	- heard the tune to make sure it sounds right and the rythm is right.
+	- put in a lyrics url.
+	- put in youtube performances and documented them.
 	TODO:
-	- document the youtube performance.
-	- add another youtube performance.
-	- add a lyrics url.
-	- in the new real book version the b:m7.5- on at the end of the part "B" and the final two chords of the B
-	part (turn-around chords) should be in parenthesis. How do I do that?
 	- add the real book version.
-	REMARKS:
-	- this tunes structure can also be AA' or maybe ABAC since the A and the part "B" are VERY similar.
 % endif
 
 % if part=='ChordsNewreal':
@@ -71,8 +71,8 @@
 	\startPart
 	d1:m | e2:m7.5- a:7 | d1:m | e2:m7.5- a:7 | \myEndLine
 	d:m d:m7+ | d:m7 d:m6 | g:m6 d:m | e1:m7.5- | \myEndLine
-	a1*2:7 | d1:m | b:m7.5- | \myEndLine
-	e:7.9- | a:7.5+ | d:m | e2:m7.5- a:7 | \myEndLine
+	a1*2:7 | d1:m | \OPC b:m7.5- | \myEndLine
+	e:7.9- | a:7.5+ | d:m | \LPC e2:m7.5- \RPC a:7 | \myEndLine
 	\endPart
 
 	\endSong
@@ -86,6 +86,7 @@
 	\tempo "Moderato" 4 = 110
 	\time 4/4
 	\key d \minor
+
 	\partial 8 a8 |
 
 	%% part "A"
