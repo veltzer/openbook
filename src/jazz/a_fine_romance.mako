@@ -18,9 +18,10 @@
 	attributes['copyrightextra']="(c/o The Welk Music Group, Santa Monica, CA 90401)."
 
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['structure']="ABAC"
 	attributes['completion']="5"
 	attributes['uuid']="7c9691e6-a26e-11df-8418-0019d11e5a41"
+	attributes['structure']="ABAC"
+	attributes['structureremark']="the structure of this tune can also be AA or AA'. Doesn't really matter."
 
 	attributes['idyoutuberemark']="Oscar Peterson!"
 	attributes['idyoutube']="ytipqjANlrY"
@@ -51,11 +52,6 @@
 	- heard the real book tune to hear that it sounds well.
 	- filled in data about the you tube performances.
 	- added a lyrics url.
-	TODO:
-	- how do I mark the "Fine" mark in the real book version?
-	- how do I put the last two chords in the real book version in parenthesis? (the turn around chords).
-	REMARKS:
-	- the structure of this tune can also be AA or AA'. Doesn't really matter.
 % endif
 
 % if part=='ChordsFake':
@@ -178,7 +174,7 @@
 		{
 			\myMark "C"
 			c1:maj7 | c2:7/bes g4:7 c:7 | f2:maj7 a:7/e | d:m7 dis:dim | \myEndLine
-			e1:m7 | g:7 | c:6 | c:6 | \myEndLine
+			e1:m7 | g:7 | c:6 | \LPC d2:m7 \RPC g:7 | \myEndLine
 		}
 	}
 
@@ -210,7 +206,7 @@
 		{
 			%% part "C"
 			c'4 b c d | \times 2/3 { e d c } b bes | a1 | \times 2/3 { c4 b bes } a aes |
-			g1 | \times 2/3 { b4 a aes } g d' | c1~ | c2 r2|
+			g1 | \times 2/3 { b4 a aes } g d' | c1~_\markup { \italic { Fine } } | c2 r2|
 		}
 	}
 }

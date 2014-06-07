@@ -165,6 +165,13 @@ hardBreak={ \bar "" \break }
 %% a macro to make vertical space
 verticalSpace=\markup { \null }
 
+%% macros to help in parenthesizing chords
+%% see the playground area for openbook and http://lilypond.1069038.n5.nabble.com/Parenthesizing-chord-names-td44370.html
+#(define (left-parenthesis-ignatzek-chord-names in-pitches bass inversion context) (markup #:line ("(" (ignatzek-chord-names in-pitches bass inversion context))))
+#(define (right-parenthesis-ignatzek-chord-names in-pitches bass inversion context) (markup #:line ((ignatzek-chord-names in-pitches bass inversion context) ")")))
+LPC = { \once \set chordNameFunction = #left-parenthesis-ignatzek-chord-names }
+RPC = { \once \set chordNameFunction = #right-parenthesis-ignatzek-chord-names }
+
 %% some macros for marking parts of jazz tunes
 %% =====================================================================
 startSong={}
