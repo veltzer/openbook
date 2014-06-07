@@ -88,12 +88,16 @@ Chords:
 	aes:dim
 	if you want the little circle with 7 next to it then use "dim7":
 	aes:dim7
-
-questions:
-- how do I put chords in parenthesis? I still do not know.
+- putthing chords in parenthesis.
 	- <\parenthesize bes:7> does not work
 	- ( bes:7 ) does not work either.
-	I have couple of tunes that need this.
+	Add \LPC before the first chord and \RPC before the last chord like this:
+		\LPC e2:m7.5- \RPC a:7
+	see the playground for an example and explanation of how this works.
+	If you want to put a single chord then do this:
+		\OPC bes4:7
+
+questions:
 - how do I do 4-3, 9-8 or other similar chords?
 
 Frets:

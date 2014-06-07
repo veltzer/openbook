@@ -48,9 +48,8 @@
 	- added lyrics url.
 	- added youtube performances.
 	TODO:
-	- in the real book version how do I put the last two chords (the turn-around chords)
-		in parenthesis?
 	- add more versions of this tune (plenty of epdfs).
+	- the \endPart at the end of the B part is blocking the correct repeat signs. Fix this.
 	REMARKS:
 	- in a lot of books this tune is called "On Green Dolphin Street". Should we build an alias mechanism
 	whereby tunes can have alias names? (like new real book vol III).
@@ -75,15 +74,14 @@
 			\myMark "B"
 			\startPart
 			d1:m7 | g:7 | c1*2:maj7 | \myEndLine
-			f1:m7 | bes:7 | ees1:maj7 | ees2:maj7 g:7 | \myEndLine
-			%% remarked to allow the repeat signs
-			%%\endPart
+			f1:m7 | bes:7 | ees1.:maj7 \OPC g2:7 | \myEndLine
+			\endPart
 		}
 		{
 			\myMark "C"
 			\startPart
 			d2:m7 d:m/c | b:m7.5- e:7.9- | a:m7 a:m/g | fis:m7.5- b:7 | \myEndLine
-			e:m7 a:7 | d:m7 g:7 | c1:maj7 | d2:m7 g:7 | \myEndLine
+			e:m7 a:7 | d:m7 g:7 | c1:maj7 | \LPC d2:m7 \RPC g:7 | \myEndLine
 			\endPart
 		}
 	}

@@ -47,7 +47,6 @@
 	TODO:
 	- put in the copyright (from where?)
 	- put another version here (from where?)
-	- how do I put the last turn around chord (bes:7) in parenthesis?
 % endif
 
 % if part=='ChordsReal':
@@ -81,7 +80,7 @@
 	\myMark "A"
 	\startPart
 	f2:m7 bes:7 | bes:m6 bes:7 | ees:6 f:m7 | fis:dim7 g:m7 | \myEndLine
-	f1:7 | g2:m7 c:7 | f:m7 bes:7 | ees4:6 des:7 ees:6 bes:7 | \myEndLine
+	f1:7 | g2:m7 c:7 | f:m7 bes:7 | ees4:6 des:7 ees:6 \OPC bes:7 | \myEndLine
 	\endPart
 
 	\endSong
