@@ -50,7 +50,6 @@
 	- heard the real book version to make sure it sounds good and in the right tempo.
 	TODO:
 	- put in the new reall book version of this tune (already have the epdf).
-	- in the real book version how do I put the last b:7 chord and its tune in parenthesis?
 % endif
 
 % if part=='ChordsReal':
@@ -78,7 +77,7 @@
 	\myMark "C"
 	\startPart
 	a:m7 | c2:m7 f:7 | b1:m7 | e:7.9- | \myEndLine
-	a2:7 ees:7 | a:m7 d:7.9- | g1.:6 b2:7 | \myEndLine
+	a2:7 ees:7 | a:m7 d:7.9- | g1.:6 \OPC b2:7 | \myEndLine
 	\endPart
 
 	\endSong
