@@ -4,7 +4,7 @@
 	attributes['doChords']=True
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
-	attributes['render']="Real"
+	attributes['render']="Fake"
 
 	attributes['title']="How High The Moon"
 	attributes['style']="Jazz"
@@ -47,8 +47,13 @@
 	- put in you tube performances with documentation.
 	- put in a lyrics url.
 	- brought in the real book epdf.
-	TODO:
-	- write the real book version
+	- put in the real book chords.
+	- put in the real book tune.
+	- put in the real book lyrics.
+	- check the real book chords.
+	- check the real book tune.
+	- heard the real book version.
+	- check the real book lyrics.
 % endif
 
 % if part=='ChordsFake':
@@ -140,5 +145,76 @@
 	%% Volta
 	Some -- where there's
 	Moon! __
+}
+% endif
+
+% if part=='ChordsReal':
+\chordmode {
+	\startChords
+	\startSong
+
+	\partial 2. s2. |
+
+	\myMark "A"
+	\startPart
+	g1*2:maj7 | g1:m7 | c:7 | \myEndLine
+	f1*2:maj7 | f1:m7 | bes:7 | \myEndLine
+	ees:maj7 | a2:m7 d:7 | g1:m7 | a2:m7.5- d:7.9- | \myEndLine
+	g1:maj7 | a2:m7 d:7 | b:m7 bes:7 | a:m7 d:7 | \myEndLine
+	\endPart
+
+	\myMark "B"
+	\startPart
+	g1*2:maj7 | g1:m7 | c:7 | \myEndLine
+	f1*2:maj7 | f1:m7 | bes:7 | \myEndLine
+	ees:maj7 | a2:m7 d:7 | g1:maj7 | a2:m7 d:7.9- | \myEndLine
+	b:m7 bes:7 | a:m7 d:7 | g1:6 | \LPC a2:m7 \RPC d:7 | \myEndLine
+	\endPart
+
+	\endSong
+	\endChords
+}
+% endif
+
+% if part=='VoiceReal':
+\relative {
+	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
+	\tempo "Allegro" 4 = 130
+	\time 4/4
+	\key g \major
+
+	\partial 2. d4 g a |
+
+	%% part "A"
+	a2 b~ | b4 d, g a | bes1~ | bes4 c, f! g | \myEndLine
+	g2 a~ | a4 c, f! g | aes1~ | aes4 d, ees! f! | \myEndLine
+	g g g g | g g8 a~ a g a4 | bes1~ | bes4. a8~ a g a4 | \myEndLine
+	b!1~ | b4 a b c | d d d d | d8 r d,4 g a | \myEndLine
+	%% part "B"
+	a2 b~ | b4 d, g a | bes1~ | bes4 c, f! g | \myEndLine
+	g2 a~ | a4 c, f! g | aes1~ | aes4 d, ees! f! | \myEndLine
+	g g g g | g g8 a~ a g a4 | b1~ | b4 a b c | \myEndLine
+	d d d d | d d, g a | g1~ | g | \myEndLine
+}
+% endif
+
+% if part=='LyricsReal':
+\lyricmode {
+	%% part "A"
+	Some -- where there's mu -- sic, __
+	how faint the tune! __
+	Some -- where there's heav -- en, __
+	How High The Moon! __
+	There is no moon a -- bove when love is far __ a -- way too, __
+	'till __ it comes true __
+	that you love me as I love you.
+	%% part "B"
+	Some -- where there's mu -- sic, __
+	it's where you are. __
+	Some -- where there's heav -- en, __
+	how near, how far! __
+	The dark -- est night would shine if you would come __ to me soon. __
+	Un -- til you will, how still my heart,
+	How High The Moon! __
 }
 % endif
