@@ -44,8 +44,6 @@
 	- checked that the tune sounds right in the midi version.
 	- bring you tube performances.
 	- check the lyrics from the real book version.
-	TODO:
-	- how do I put the last two chords (d:7 g:7) in the real book version in parenthesis?
 % endif
 
 % if part=='ChordsReal':
@@ -77,7 +75,7 @@
 	ees1*2:maj7 | c:maj7 | \myEndLine
 	ees:maj7 | c:maj7 | \myEndLine
 	fis1:m7.5- | f:m7 | e:m7 | ees:dim7 | \myEndLine
-	d:m7 | g2:7 d:m7 | c1:6 | d2:7 g:7 | \myEndLine
+	d:m7 | g2:7 d:m7 | c1:6 | \LPC d2:7 \RPC g:7 | \myEndLine
 	\endPart
 
 	\endSong
