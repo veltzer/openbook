@@ -58,8 +58,6 @@
 	- checked the real book tune.
 	- checked the real book lyrics.
 	- played the real book version to hear that it sounds well.
-	TODO:
-	- how do I put the last two chords in the real book version in parenthesis? (the turn around chords).
 % endif
 
 % if part=='ChordsReal':
@@ -69,27 +67,18 @@
 
 	\myMark "A"
 	\startPart
-	\repeat volta 2 {
-		f1:maj7 | a2:m7.5- d:7.9- | g1:m7 | c:7 | \myEndLine
-		f:6 | d:m7.5- | g:7 | g2:m7 c:7 | \myEndLine
-		f1:maj7 | c2:m7 f:7 | bes1:6 | bes:m6 | \myEndLine
-		f:maj7 | a2:m7 d:7 | g1:7 | g2:m7 c:7 | \myEndLine
-		\endPart
+	f1:maj7 | a2:m7.5- d:7.9- | g1:m7 | c:7 | \myEndLine
+	f:6 | d:m7.5- | g:7 | g2:m7 c:7 | \myEndLine
+	f1:maj7 | c2:m7 f:7 | bes1:6 | bes:m6 | \myEndLine
+	f:maj7 | a2:m7 d:7 | g1:7 | g2:m7 c:7 | \myEndLine
+	\endPart
 
-		\myMark "B"
-		\startPart
-		f1:maj7 | aes:m7 | g:m7 | c:7 | \myEndLine
-		f:6 | d:m7.5- | g:7 | g2:m7 c:7 | \myEndLine
-		c1:m7 | f:7 | bes:6 | ees:7 | \myEndLine
-		f2:6 g:m7 | a:m7 bes:m6 | a:m7 d:m7 | g:m7 c:7 |
-	} \alternative {
-		{
-			f1:6 | g2:m7 c:7 |
-		}
-		{
-			f1:6 | f:6 | \myEndLine
-		}
-	}
+	\myMark "B"
+	\startPart
+	f1:maj7 | aes:m7 | g:m7 | c:7 | \myEndLine
+	f:6 | d:m7.5- | g:7 | g2:m7 c:7 | \myEndLine
+	c1:m7 | f:7 | bes:6 | ees:7 | \myEndLine
+	f2:6 g:m7 | a:m7 bes:m6 | a:m7 d:m7 | g:m7 c:7 | f1:6 | \LPC g2:m7 \RPC c:7 | \myEndLine
 	\endPart
 
 	\endSong
@@ -104,27 +93,17 @@
 	\time 4/4
 	\key f \major
 
-	\repeat volta 2 {
-		%% part "A"
-		r4 c c c | ees2. ees4 | d d2. | a'1 |
-		r4 f f f | aes2. aes4 | g2. g4 | d'1 |
-		r4 e e e | c c2. | a a4 | f1 |
-		r4 a a a | c c2 c4 | a2. a4 | d,1 |
+	%% part "A"
+	r4 c c c | ees2. ees4 | d d2. | a'1 | \myEndLine
+	r4 f f f | aes2. aes4 | g2. g4 | d'1 | \myEndLine
+	r4 e e e | c c2. | a a4 | f1 | \myEndLine
+	r4 a a a | c c2 c4 | a2. a4 | d,1 | \myEndLine
 
-		%% part "B"
-		r4 c c c | ees2. ees4 | d2. d4 | a'1 |
-		r4 f f f | aes2. aes4 | g2. g4 | d'1 |
-		f2 f4 f | d2. d4 | c2 c | a a4 bes |
-		c f, g bes | a f g bes | a2 f' | f, g |
-	} \alternative {
-		{
-			f1~ | f2. r4 |
-		}
-		{
-			f1~ | f2. r4 |
-		}
-	}
-
+	%% part "B"
+	r4 c c c | ees2. ees4 | d2. d4 | a'1 | \myEndLine
+	r4 f f f | aes2. aes4 | g2. g4 | d'1 | \myEndLine
+	f2 f4 f | d2. d4 | c2 c | a a4 bes | \myEndLine
+	c f, g bes | a f g bes | a2 f' | f, g | f1~ | f2. r4 | \myEndLine
 }
 % endif
 
@@ -137,8 +116,6 @@
 	%% part "B"
 	How long I wondered could this thing last? But_the age of mira -- cles had -- n't passed,
 	for sud -- den -- ly I saw you there and through fog -- gy Lon -- don town the sun was shin -- ing ev -- 'ry where. __
-
-	where. __
 }
 % endif
 
