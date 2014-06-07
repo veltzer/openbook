@@ -57,8 +57,6 @@
 	- checked the real book chords.
 	- checked the fake book lyrics.
 	- checked the fake book tune.
-	TODO:
-	- how do I put the last two chords in the real book version in parenthesis?
 % endif
 
 % if part=='ChordsFake':
@@ -178,7 +176,7 @@
 			\myMark "C"
 			\startPart
 			bes1:maj7 | g2:m7 c:7 | a1:m7 | aes:dim | \myEndLine
-			g:m7 | c:7 | f:maj7 | g2:m7.5- c:7.9- | \myEndLine
+			g:m7 | c:7 | f:maj7 | \LPC g2:m7.5- \RPC c:7.9- | \myEndLine
 			\endPart
 		}
 	}

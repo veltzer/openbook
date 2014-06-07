@@ -4,7 +4,7 @@
 	attributes['doChords']=True
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
-	attributes['render']="Fake"
+	attributes['render']="Real"
 
 	attributes['title']="How High The Moon"
 	attributes['style']="Jazz"
@@ -21,6 +21,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="7d17fd1c-15fe-11e1-b205-0019d11e5a41"
 	attributes['structure']="AB"
+	attributes['structureremark']="this tunes structure can also be categorised as ABAC if you take the AB as A and the AC as B. Under the AB interpretation the first part of A (first 8 bars) is the same as the first part of B."
 
 	attributes['idyoutuberemark']="Ella!"
 	attributes['idyoutube']="2d-l7_TGnIE"
@@ -32,7 +33,6 @@
 
 % if part=='Doc':
 	DONE:
-	- brought in the real book epdf.
 	- brought in the fake book epdf.
 	- filled in the meta data from the real book.
 	- filled in the meta data from the fake book.
@@ -46,15 +46,9 @@
 	- played the fake book version to hear that it sounds well.
 	- put in you tube performances with documentation.
 	- put in a lyrics url.
+	- brought in the real book epdf.
 	TODO:
-	- write down the real book version (epdf is already here)
-		keep this remark:
-		how do I put the last two chords in the real book version in parenthesis? (the turn around chords).
-	REMARKS:
-	- this tunes structure can also be categorised as "ABAC" if you take the AB as A and the AC as B.
-		Under the AB interpretation the first part of A (first 8 bars) is the same as the first part of B.
-	- the real book version is written in C major but this is a mistake (this one is in G major). So I wrote
-		it in G major.
+	- write the real book version
 % endif
 
 % if part=='ChordsFake':
