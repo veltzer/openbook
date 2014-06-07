@@ -69,6 +69,7 @@ remove_output_if_exists()
 # run the command
 args=[]
 args.append('lilypond')
+# we really need to work with warnings and solve all of them
 #args.append('--loglevel=WARN')
 args.append('--loglevel=ERROR')
 if doPs:
