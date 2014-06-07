@@ -50,7 +50,6 @@
 	- checked the tune.
 	- checked the lyrics.
 	TODO:
-	- how do I put the last d7 chord in the real book version in parenthesis?
 	- add the version from the new real book.
 % endif
 
@@ -77,7 +76,7 @@
 	\startPart
 	c1:maj7 | f:7 | bes1*2:maj7 | \myEndLine
 	b1:dim7 | bes:m6 | a:m6 | aes:7.5- | \myEndLine
-	g:7 | g2:m7 a:7.9- | d1:m6 | d2:m6 d:7 | \myEndLine
+	g:7 | g2:m7 a:7.9- | d1:m6 | d2:m6 \OPC d:7 | \myEndLine
 	\endPart
 
 	\endSong
