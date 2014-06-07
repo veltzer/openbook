@@ -74,8 +74,11 @@ Chords:
 	This seems to be the correct definition of a sus chord (4'th note suspended) in Jazz according
 	to wikipedia and my own experience. 2 sus is rarely used in jazz and usually marked as sus2 or sus9.
 	look at "they cant take that away from me" for an example.
+- dominant 9 sus chords:
+	mark them out as "9.11"
 - non dominant sus chords:
 	mark them out as "5.11"
+	mark them out as "sus4"
 	My own exception will handle this and will print it out as "sus".
 - minor/major chords:
 	a:m7+
