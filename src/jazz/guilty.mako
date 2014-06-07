@@ -38,7 +38,7 @@
 		bes/d des:dim7 | c:m7 f:7 |
 	} \alternative {
 		{
-			c:m7 f:7.5+ | bes f:7 | %% \myEndLine remarked to suppress line break
+			c:m7 f:7.5+ | bes f:7 | \myEndLineVoltaNotLast
 		}
 		{
 			c:m7 f:7 | bes a:7 | \myEndLine

@@ -59,7 +59,7 @@
 		ees2 ees4/g ges:dim7 | f1:m7 | bes:9 |
 	} \alternative {
 		{
-			ees2 c:m7 | f:m bes:7 | %% \myEndLine
+			ees2 c:m7 | f:m bes:7 | \myEndLineVoltaNotLast
 		}
 		{
 			ees2 aes:m6 | ees1 | \myEndLine

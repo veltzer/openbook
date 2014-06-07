@@ -55,7 +55,7 @@
 		\endPart
 	} \alternative {
 		{
-			g2 a4:m7 d:7 | %% \myEndLine remarked to not cause a line break
+			g2 a4:m7 d:7 | \myEndLineVoltaNotLast
 		}
 		{
 			g1 | \myEndLine

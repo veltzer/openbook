@@ -139,8 +139,6 @@
 	bes:maj7 | ees:7 | a1:m7.5- | d:7.9- | \myEndLine
 	g:m7 | c:7 | f2:maj7 d:7 | g:m7 c:7 | \myEndLine
 	\endPart
-	%% an ending would be:
-	%% f1:maj7 | f1:maj7 | \myEndLine
 
 	\endSong
 	\endChords

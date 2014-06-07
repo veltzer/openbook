@@ -66,8 +66,7 @@
 		f:m7 des:7 | ees:maj7 g4:m7 c:7 | f2:m7 bes:7 |
 	} \alternative {
 		{
-			%% TODO: myEndLine emitted in next line in order not to force break
-			ees:maj7 f4:m7 bes:7 |
+			ees:maj7 f4:m7 bes:7 | \myEndLineVoltaNotLast
 		}
 		{
 			ees1:maj7 | \myEndLine

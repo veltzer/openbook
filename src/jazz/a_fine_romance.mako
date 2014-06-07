@@ -77,7 +77,7 @@
 	}
 	\alternative {
 		{
-			c:6 a:m7 | d:m7 g:7 | %% \myEndLine remarked to not cause a line break
+			c:6 a:m7 | d:m7 g:7 | \myEndLineVoltaNotLast
 		}
 		{
 			c:6 f:7 | c1:6.9 | \myEndLine

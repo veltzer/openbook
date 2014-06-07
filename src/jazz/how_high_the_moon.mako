@@ -81,7 +81,7 @@
 		b:m7 bes:7 | a:m7 a4:m7/d d:7.9- |
 	} \alternative {
 		{
-			g1:6 | d2:7 a4:m7/d d:7 | %%\myEndLine
+			g1:6 | d2:7 a4:m7/d d:7 | \myEndLineVoltaNotLast
 		}
 		{
 			g1*2 | \myEndLine

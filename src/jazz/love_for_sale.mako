@@ -66,7 +66,7 @@
 		bes:m | ees:7 |
 	} \alternative {
 		{
-			bes | bes | %% \myEndLine remarked not to cause a line break
+			bes | bes | \myEndLineVoltaNotLast
 		}
 		{
 			bes | bes | \myEndLine

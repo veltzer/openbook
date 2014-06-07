@@ -40,7 +40,7 @@
 		a:m9 d:9 | aes:m9 des:9 |
 	} \alternative {
 		{
-			c d:m7 | e:m7 a:7 | %% \myEndLine remarked to not cause a line break
+			c d:m7 | e:m7 a:7 | \myEndLineVoltaNotLast
 		}
 		{
 			c f:7 | c1 | \myEndLine

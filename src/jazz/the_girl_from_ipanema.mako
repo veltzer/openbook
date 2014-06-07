@@ -55,8 +55,9 @@
 		g1:m7.9 | ges:7.5- |
 	} \alternative {
 		{
-			f1:maj7.9 | ges:7.5- | %% \myEndLine remarked to not cause line break
-		} {
+			f1:maj7.9 | ges:7.5- | \myEndLineVoltaNotLast
+		}
+		{
 			f1*2:maj7.9 | \myEndLine
 		}
 	}

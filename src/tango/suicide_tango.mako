@@ -52,7 +52,7 @@
 		bes:m7 | f:m7 | des:7 |
 	} \alternative {
 		{
-			c:7.9- | %% \myEndLine remarked to not break the line
+			c:7.9- | \myEndLineVoltaNotLast
 		}
 		{
 			c:7.9- | \myEndLine
@@ -66,7 +66,7 @@
 		c1:7.9- |
 	} \alternative {
 		{
-			c:7.9- | f1:m7 | c:7.9- | %% \myEndLine remarked to not break the line
+			c:7.9- | f1:m7 | c:7.9- | \myEndLineVoltaNotLast
 		}
 		{
 			c:7.9- | f:m7 | f:7 | \myEndLine
