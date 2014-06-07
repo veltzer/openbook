@@ -41,7 +41,7 @@
 	- checked the aebersold chords.
 	- checked the aebersold tune.
 	- checked the aebersold lyrics.
-	- in the aebersold version added parenthesis on the turn around notes.
+	- in the aebersold version added parens on the turn around notes.
 	- in the aebersold version added phrases.
 	- heard the aebersold version to make sure it's ok.
 	- added youtube performances.
