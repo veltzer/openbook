@@ -50,8 +50,6 @@
 	- added youtube performances.
 	- added a lyrics url.
 	TODO:
-	- how do I put the last bes:7 chord in the real book version in parenthesis?
-	- how do I put the first bes:7 chord in the real book version in parenthesis?
 	- add the Hal Leonard version of this tune (epdf is already here).
 	REMARK:
 	- this tunes structure could also be interpreted as "AB" where A is AB and B is AC in the ABAC interpretation.
@@ -61,7 +59,7 @@
 \chordmode {
 	\startChords
 	\startSong
-	\partial 2 bes2:7 |
+	\partial 2 \OPC bes2:7 |
 	\repeat volta 2 {
 		\myMark "A"
 		\startPart
@@ -80,7 +78,7 @@
 			\myMark "C"
 			\startPart
 			f2:m f:m/ees | d:m7.5- g:7 | c:m c:m/bes | c:m/a aes:6 | \myEndLine
-			g:m7 ges:7 | f:m7 bes:7 | ees aes:6 | ees bes:7 | \myEndLine
+			g:m7 ges:7 | f:m7 bes:7 | ees aes:6 | ees \OPC bes:7 | \myEndLine
 			\endPart
 		}
 	}
