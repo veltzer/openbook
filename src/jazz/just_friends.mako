@@ -28,6 +28,7 @@
 	attributes['idyoutube']="88CqlgFAJ-k"
 	attributes['idyoutubedesc']="fast and furious Trane"
 	attributes['idyoutube']="9W_XQCLD_I0"
+	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Just-Friends-lyrics-Frank-Sinatra/FA2BFD6A414238734825691F000AC7E7"
 %>
 % endif
 
@@ -47,9 +48,7 @@
 	- filled in the structure of the tune.
 	- added youtube performances.
 	TODO:
-	- add a lyrics url.
 	- add the new real book version (already have it in the epdfs).
-	- how do I put the last two chords in the real book version into parenthesis?
 % endif
 
 % if part=='ChordsReal':
@@ -72,7 +71,7 @@
 	c1*2:maj7 | c1:m7 | f:7 | \myEndLine
 	g1*2:maj7 | bes1:m7 | ees:7 | \myEndLine
 	a:m7 | d:7 | b:m7 | e:m7 | \myEndLine
-	a:7 | a2:m7 d:7 | g1:6 | d2:m7 g:7 | \myEndLine
+	a:7 | a2:m7 d:7 | g1:6 | \LPC d2:m7 \RPC g:7 | \myEndLine
 	\endPart
 
 	\endSong

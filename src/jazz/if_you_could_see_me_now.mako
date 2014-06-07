@@ -46,7 +46,6 @@
 	TODO:
 	- do the wikifonia version.
 	- bring in copyright info from somewhere.
-	- how do I put the last chords (ending chords) of the real book version in parenthesis?
 	REMARKS:
 	- I did lots of fixes to the chords in the real book version:
 		- the second volta has really ugly chords. Fixed them up to join nicely with the part "B".
@@ -82,7 +81,7 @@
 	\myMark "A"
 	\startPart
 	ees1:maj7 | aes:7 | ees:maj7 | aes:7 | \myEndLine
-	g2:m7 fis4:m7 b:7 | f2:m7 bes:7 | ees ges:maj7 | b:maj7 e4:maj7 ees:maj7 | \myEndLine
+	g2:m7 fis4:m7 b:7 | f2:m7 bes:7 | ees \LPC ges:maj7 | b:maj7 e4:maj7 \RPC ees:maj7 | \myEndLine
 	\endPart
 
 	\endSong
