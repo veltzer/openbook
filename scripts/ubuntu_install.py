@@ -27,6 +27,7 @@ packs=[
 	'lame', # convert audio (encode ogg)
 	'pdfjam', # join pdfs (using pdfjoin(1))
 	'ghostscript', # for pdfopt(1)
+	'grive', # for grive(1)
 ]
 
 args=['sudo','apt-get','install']
