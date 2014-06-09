@@ -431,6 +431,12 @@ install: $(OB_OUT_LY) $(OB_OUT_PDF) $(WEB_FILES) $(ALL_DEP)
 	$(Q)cp -r .htaccess index.html $(OB_OUT_LY) $(OB_OUT_PDF) $(WEB_FOLDER) $(WEB_DIR)
 	$(Q)chmod -R go+rx $(WEB_DIR)
 
+.PHONY: grive
+grive: $(OB_OUT_PDF) $(ALL_DEP)
+	$(info doing [$@])
+	$(Q)cp $(OB_OUT_PDF) ~/grive/music
+	$(Q)cd ~/grive; grive
+
 .PHONY: all_tunes_jazz
 all_tunes_jazz: $(OB_OUT_STAMP)
 	$(info doing [$@])
