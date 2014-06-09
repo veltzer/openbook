@@ -434,8 +434,19 @@ install: $(OB_OUT_LY) $(OB_OUT_PDF) $(WEB_FILES) $(ALL_DEP)
 .PHONY: grive
 grive: $(OB_OUT_PDF) $(ALL_DEP)
 	$(info doing [$@])
+	$(Q)-rm -f ~/grive/music/openbook.pdf
 	$(Q)cp $(OB_OUT_PDF) ~/grive/music
 	$(Q)cd ~/grive; grive
+
+.PHONY: dropbox
+dropbox: $(OB_OUT_PDF) $(ALL_DEP)
+	$(info doing [$@])
+	$(Q)-rm -f ~/Dropbox/music/openbook.pdf
+	$(Q)cp $(OB_OUT_PDF) ~/Dropbox/music
+
+.PHONY: web
+web: grive dropbox
+	$(info doing [$@])
 
 .PHONY: all_tunes_jazz
 all_tunes_jazz: $(OB_OUT_STAMP)
