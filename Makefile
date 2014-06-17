@@ -35,6 +35,10 @@ DO_BOOKS_PDF?=1
 DO_PDFRED_BOOKS?=1
 # should we reduce the size of the pdf individual songs?
 DO_PDFRED_PIECES?=1
+# what to export out (to grive and dropbox)?
+OUTPUTS_TO_EXPORT:=$(OB_OUT_PDF)
+# what is the name of the project?
+PROJECT:=$(notdir $(CURDIR))
 
 #############
 # CONSTANTS #
@@ -432,17 +436,19 @@ install: $(OB_OUT_LY) $(OB_OUT_PDF) $(WEB_FILES) $(ALL_DEP)
 	$(Q)chmod -R go+rx $(WEB_DIR)
 
 .PHONY: grive
-grive: $(OB_OUT_PDF) $(ALL_DEP)
+grive: $(OUTPUTS_TO_EXPORT) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)-rm -f ~/grive/outputs/openbook.pdf
-	$(Q)cp $(OB_OUT_PDF) ~/grive/outputs
+	$(Q)-rm -rf ~/grive/outputs/$(PROJECT)
+	$(Q)-mkdir ~/grive/outputs/$(PROJECT)
+	$(Q)cp $(OUTPUTS_TO_EXPORT) ~/grive/outputs/$(PROJECT)
 	$(Q)cd ~/grive; grive
 
 .PHONY: dropbox
-dropbox: $(OB_OUT_PDF) $(ALL_DEP)
+dropbox: $(OUTPUTS_TO_EXPORT) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)-rm -f ~/Dropbox/outputs/openbook.pdf
-	$(Q)cp $(OB_OUT_PDF) ~/Dropbox/outputs
+	$(Q)-rm -rf ~/Dropbox/outputs/$(PROJECT)
+	$(Q)-mkdir ~/Dropbox/outputs/$(PROJECT)
+	$(Q)cp $(OUTPUTS_TO_EXPORT) ~/Dropbox/outputs/$(PROJECT)
 
 .PHONY: web
 web: grive dropbox
