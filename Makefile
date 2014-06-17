@@ -434,15 +434,15 @@ install: $(OB_OUT_LY) $(OB_OUT_PDF) $(WEB_FILES) $(ALL_DEP)
 .PHONY: grive
 grive: $(OB_OUT_PDF) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)-rm -f ~/grive/music/openbook.pdf
-	$(Q)cp $(OB_OUT_PDF) ~/grive/music
+	$(Q)-rm -f ~/grive/outputs/openbook.pdf
+	$(Q)cp $(OB_OUT_PDF) ~/grive/outputs
 	$(Q)cd ~/grive; grive
 
 .PHONY: dropbox
 dropbox: $(OB_OUT_PDF) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)-rm -f ~/Dropbox/music/openbook.pdf
-	$(Q)cp $(OB_OUT_PDF) ~/Dropbox/music
+	$(Q)-rm -f ~/Dropbox/outputs/openbook.pdf
+	$(Q)cp $(OB_OUT_PDF) ~/Dropbox/outputs
 
 .PHONY: web
 web: grive dropbox
