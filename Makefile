@@ -241,6 +241,8 @@ debug:
 	$(info WEB_FILES is $(WEB_FILES))
 	$(info DO_PDFRED_BOOKS is $(DO_PDFRED_BOOKS))
 	$(info DO_PDFRED_PIECES is $(DO_PDFRED_PIECES))
+	$(info OUTPUTS_TO_EXPORT is $(OUTPUTS_TO_EXPORT))
+	$(info PROJECT is $(PROJECT))
 
 .PHONY: todo
 todo:
