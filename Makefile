@@ -35,10 +35,6 @@ DO_BOOKS_PDF?=1
 DO_PDFRED_BOOKS?=1
 # should we reduce the size of the pdf individual songs?
 DO_PDFRED_PIECES?=1
-# what to export out (to grive and dropbox)?
-OUTPUTS_TO_EXPORT:=$(OB_OUT_PDF)
-# what is the name of the project?
-PROJECT:=$(notdir $(CURDIR))
 
 #############
 # CONSTANTS #
@@ -195,6 +191,14 @@ ifeq ($(DO_BOOKS_PDF),1)
 	ALL:=$(ALL) $(DO)
 endif
 
+# what to export out (to grive and dropbox)?
+OUTPUTS_TO_EXPORT:=$(OB_OUT_PDF)
+# what is the name of the project?
+PROJECT:=$(notdir $(CURDIR))
+
+#########
+# rules #
+#########
 .PHONY: all
 all: $(ALL)
 
