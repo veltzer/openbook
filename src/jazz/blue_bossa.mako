@@ -13,13 +13,13 @@
 	attributes['composer']="Kenny Dorham"
 	attributes['poet']="Joan Cartwright"
 	attributes['piece']="Bossa Nova"
-	# from the real book
-	attributes['remark']="Play last 4 bars twice more to end"
 
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="f7fdc5e0-db41-11e0-a31c-0019d11e5a41"
 	attributes['structure']="A"
+	# from the real book
+	attributes['remark']="Play last 4 bars twice more to end"
 
 	attributes['idyoutube']="EhQfGODnvww"
 	attributes['idyoutube']="-0mNSP1452o"

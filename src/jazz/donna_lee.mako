@@ -16,7 +16,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="a9ca1752-53d6-11e2-a687-1bd4487b8eae"
 	attributes['structure']="AB"
-	attributes['remark']="This could be thought of as ABAC although the two A's are not the same so AB is more accurate"
+	attributes['structureremark']="This could be thought of as ABAC although the two A's are not the same so AB is more accurate"
 
 	attributes['idyoutuberemark']="Very fast Wynton Marsalis version"
 	attributes['idyoutube']="QdD6XE9DtAE"
