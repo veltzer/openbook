@@ -22,14 +22,13 @@
 	attributes['uuid']="828326cc-013c-11e1-b823-0019d11e5a41"
 	attributes['structure']="A"
 	attributes['structureremark']="Very weird not repeating structure because of the weird harmony steps"
+	attributes['remark']="the key here is of little meaning as the harmony changes key all the time...:) That's why it's written in C."
 
 	attributes['idyoutuberemark']="Mccoy Tyner awesome solo..."
 	attributes['idyoutube']="PukuQPUKfyU"
 	attributes['idyoutuberemark']="The original Coltrane version..."
 	attributes['idyoutube']="BZRnkBK_0no"
 	attributes['lyricsurl']="http://www.bjazz.com/Giant_Steps.html"
-
-	attributes['remark']="the key here is of little meaning as the harmony changes key all the time...:) That's why it's written in C."
 %>
 % endif
 
