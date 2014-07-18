@@ -1,6 +1,6 @@
 How to collect these ?
 - go to:
-	~/links/topics_archive/music_education/jazz/collections
+	~/slow_links/topics_archive/music_education/jazz/collections
 	There you will find the 3 index files for the jazz real books and more.
 		RB1C.pdf
 		RB2C.pdf
