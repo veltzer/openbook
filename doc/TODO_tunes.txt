@@ -1,3 +1,24 @@
+Jazz:
+=====
+a ghost of a chance
+all blues
+all of you
+blue train
+blues for alice
+cherokee
+confirmation
+could it be you
+equinox
+god bless the child
+in a sentimental mood
+it don't mean a thing
+moments notice
+new york, new york
+ruby my dear
+scrapple from the apple
+star eyes
+who can i turn to?
+
 Training material:
 ==================
 - write the material for drumming training.
@@ -70,26 +91,3 @@ write the muppet song.
 	F G  | F |
 	B7 C | F | x3
 	G
-
-Jazz:
-=====
-one by one
-a ghost of a chance
-all blues
-all of you
-blue train
-blues for alice
-cherokee
-confirmation
-could it be you
-equinox
-god bless the child
-in a sentimental mood
-it don't mean a thing
-moments notice
-new york, new york
-ornithology
-ruby my dear
-scrapple from the apple
-star eyes
-who can i turn to?
