@@ -1,5 +1,13 @@
 Now:
 ====
+- turn the strings in attributes in every song to an enum.
+	This will force the correct strings to be used.
+	Do examples of enums in python to show how to work right with them before
+	I do this.
+	Then I can force the correct order of the setting of attributes.
+	make the setting of attributes be a method call:
+		attr.setAttr(Attr.name, "sdfsdfsd")
+	and make sure that the first parameter is indeed of the right type.
 - postscript file is missing from the web site.
 - move to a website at some hosting.
 - do not allow to compile on the wrong version of lilypond.
