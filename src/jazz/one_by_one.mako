@@ -13,7 +13,7 @@
 	# from the fake book
 	attributes['piece']="Shuffle"
 	# from the fake book
-	attributes['copyright']="1963 Miyako Music" 
+	attributes['copyright']="1963 Miyako Music"
 
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"

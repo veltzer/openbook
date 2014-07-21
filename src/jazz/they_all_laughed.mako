@@ -24,6 +24,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="89e1c354-f2a2-11e0-9cf1-0019d11e5a41"
 	attributes['structure']="AA'BA''"
+	attributes['structureremark']="this tune is very close to AABA. The tags (A') are there to show that there are subtle changes but these are indeed subtle."
 
 	attributes['idyoutuberemark']="Ella & Louis"
 	attributes['idyoutube']="ppFVmnmpGz8"
@@ -48,9 +49,6 @@
 	- added youtube performances.
 	TODO:
 	- get another version in here (from where?)
-	REMARK:
-	- this tune is very close to AABA. The tags (A') are there to show that there are subtle changes but these are
-	indeed subtle.
 % endif
 
 % if part=='ChordsFake':
