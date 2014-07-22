@@ -73,7 +73,7 @@
 	\time 2/2
 	\key g \major
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	%% \tempo "Moderato" 4 = 100
+	\tempo "Moderato" 4 = 100
 
 	\repeat volta 2 {
 		%% part "A"
