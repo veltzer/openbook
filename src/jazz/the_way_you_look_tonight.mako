@@ -51,7 +51,7 @@
 	- check the new real book vol1 lyrics.
 	TODO:
 	- there is a second voice which is already written in the notes of the new real book vol1 version
-	but which is in remarks because of lyrics adjustment problems. Enable it.
+	but which is marked out because of lyrics adjustment problems. Enable it.
 	- there are more details (senor, fine, etc) in the new real book vol1 version which are not there.
 	- add another version of this tune.
 % endif

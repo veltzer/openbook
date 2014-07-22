@@ -73,7 +73,7 @@
 	\key ees \major
 	\time 4/4
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	%% \tempo "Presto" 4 = 196
+	\tempo "Presto" 4 = 196
 
 	\partial 4 bes4 |
 
