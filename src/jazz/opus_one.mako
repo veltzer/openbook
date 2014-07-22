@@ -126,7 +126,7 @@
 	%% part "B"
 	So, __ I'll call it O -- pus One! It's not for Sam -- my Kaye. __
 	Hey! __ hey! __ hey! __ It's O -- pus One! It's got to swing,
-	not sway. __ May -- be, __ 
+	not sway. __ May -- be, __
 	%% part "A"
 	if Mis -- ter Les Brown could make it re -- nown, __
 	and Ray An -- tho -- ny could swing it for me. __
