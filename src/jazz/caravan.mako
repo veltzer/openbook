@@ -98,9 +98,8 @@
 % if part=='VoiceReal':
 \relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\set Staff.timeSignatureFraction=#'(2 . 2)
 	\tempo "Prestissimo" 4 = 220
-	\time 4/4
+	\time 2/2
 	\key f \minor
 
 	%% part "A"

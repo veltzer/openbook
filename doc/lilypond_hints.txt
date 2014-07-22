@@ -133,6 +133,10 @@ Tempo:
 	\once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
 	\time 4/4
 
+	Another way is: (this is the current way we do it, until some problem arises)
+	\time 2/2
+	(instead of \time 4/4)
+
 	See discussion here:
 	http://old.nabble.com/using-the-cut-time-symbol-for-4-2-etc.-td18200303.html
 - one way is:

@@ -6,7 +6,9 @@
 	attributes['doLyrics']=True
 	attributes['render']="Fake"
 
+	# from the fake book
 	attributes['title']="Orchids In The Moonlight"
+	# from the fake book
 	attributes['style']="Jazz"
 	# from the fake book
 	attributes['composer']="Vincent Youmans"

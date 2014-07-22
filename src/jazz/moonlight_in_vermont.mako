@@ -88,8 +88,7 @@
 \relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
-	\set Staff.timeSignatureFraction=#'(2 . 2)
-	\time 4/4
+	\time 2/2
 	\key ees \major
 
 	%% part "A"
