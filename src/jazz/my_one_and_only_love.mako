@@ -95,11 +95,10 @@
 
 % if part=='VoiceFake':
 \relative {
-	\set Staff.timeSignatureFraction=#'(2 . 2)
-	\time 4/4
-	\key c \major
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 100
+	\time 2/2
+	\key c \major
 
 	\repeat volta 2 {
 		%% part "A"

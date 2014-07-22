@@ -89,8 +89,7 @@
 \relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante" 4 = 88
-	\set Staff.timeSignatureFraction=#'(2 . 2)
-	\time 4/4
+	\time 2/2
 	\key f \major
 
 	%% part "A"
