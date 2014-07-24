@@ -91,7 +91,7 @@ Chords:
 	aes:dim
 	if you want the little circle with 7 next to it then use "dim7":
 	aes:dim7
-- putthing chords in parenthesis.
+- putting chords in parenthesis.
 	- <\parenthesize bes:7> does not work
 	- ( bes:7 ) does not work either.
 	Add \LPC before the first chord and \RPC before the last chord like this:
