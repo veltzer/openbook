@@ -1,5 +1,7 @@
 Now:
 ====
+- bring back the hyper links in the generated pdf file.
+	They are gone now that I'm doing minimization of the pdf file.
 - turn the strings in attributes in every song to an enum.
 	This will force the correct strings to be used.
 	Do examples of enums in python to show how to work right with them before
@@ -16,6 +18,8 @@ Now:
 - make check_all produce a stub and make it a prereq for full build.
 - get back to compiling the rock book which does not compile due
 	to errors.
+- make the check_all be a python script with plugins and such instead
+	of multiple greps inside the make file.
 - improve the script/lilypond_wrapper to get a --nomidi option
 	to disable midi production.
 		At first shot do this by removing the midi
