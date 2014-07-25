@@ -11,7 +11,7 @@ import sys # for argv
 import os # for chmod
 import subprocess # for Popen
 import os.path # for isfile
-import versioncheck # for checkversion
+import check_version # for check_version
 
 # parameters
 # I want errors to happen if there is any output...
@@ -43,7 +43,7 @@ def system_check_output(args):
 		print(errout,end='')
 
 # first check that we are using the correct version of python
-versioncheck.checkversion()
+check_version.check_version()
 
 if len(sys.argv)!=6:
 	raise ValueError('command line issue')
