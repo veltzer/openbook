@@ -1,7 +1,5 @@
 Now:
 ====
-- add progress report on the openbook web page.
-	(I already have it in my database).
 - bring back the hyper links in the generated pdf file.
 	They are gone now that I'm doing minimization of the pdf file.
 - turn the strings in attributes in every song to an enum.
