@@ -254,7 +254,7 @@ ${self.defs()}
 %% lets always include guitar definitions
 \include "predefined-guitar-fretboards.ly"
 
-% if attributes['book']:
+% if gattr['book']:
 %% book header
 \book {
 	%% this is the title page
@@ -320,7 +320,7 @@ ${self.defs()}
 				\fill-line { \small "Build host: ${attributes['hostname']}" }
 				\fill-line { \small "Build kernel: ${attributes['kernel']}" }
 				\fill-line { \small "Lilypond version: ${attributes['lilyver']}" }
-				\fill-line { \small "Number of tunes: ${len(attributes['files'])}" }
+				\fill-line { \small "Number of tunes: ${len(gattr['files'])}" }
 				\null
 				\null
 				\null
@@ -346,15 +346,15 @@ ${self.defs()}
 	}
 % endif
 
-% if attributes['toc']:
+% if gattr['toc']:
 \markuplist \table-of-contents
 %%\pageBreak
 % endif
 
 %% from here everything needs to go into a loop
-% for file in attributes['files']:
+% for file in gattr['files']:
 
-% if attributes['parts']:
+% if gattr['parts']:
 \bookpart {
 % endif
 
@@ -441,7 +441,7 @@ footervalheb=#"זה הטקסט התחתון"
 % endif
 </%doc>
 
-% if attributes['toc']:
+% if gattr['toc']:
 \tocItem \markup "${attributes['tocname']}"
 % endif
 
@@ -542,7 +542,7 @@ footervalheb=#"זה הטקסט התחתון"
 	Lyricsmoremore='Lyricsmoremore'+attributes['render']
 %>
 
-% if attributes['inline']==False:
+% if gattr['inline']==False:
 %% lets emit the blocks
 % if attributes['doChords']:
 Chords=<%include file="/${file}" args="part=Chords"/>
@@ -566,7 +566,7 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 	<<
 % if attributes['doChords']:
 \new ChordNames="Chords"
-% if attributes['doChordBars']==True:
+% if attributes['doChordBars']:
 	%% this adds a bar engraver which does not always come with chords
 	%% I didn'f find a way to put this with the chords themselves...
 	\with {
@@ -580,10 +580,10 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 		\remove "Bar_engraver"
 	}
 % endif
-% if attributes['inline']:
+% if gattr['inline']:
 	<%include file="/${file}" args="part=Chords"/>
 % endif
-% if attributes['inline']==False:
+% if gattr['inline']==False:
 	\Chords
 % endif
 % endif
@@ -595,38 +595,38 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 % if attributes['doVoice']:
 \new Staff="Melody" {
 \new Voice="Voice"
-% if attributes['inline']:
+% if gattr['inline']:
 	<%include file="/${file}" args="part=Voice"/>
 % endif
-% if attributes['inline']==False:
+% if gattr['inline']==False:
 	\Voice
 % endif
 }
 % endif
 % if attributes['doLyrics']:
 \new Lyrics="Lyrics" \lyricsto "Voice"
-% if attributes['inline']:
+% if gattr['inline']:
 	<%include file="/${file}" args="part=Lyrics"/>
 % endif
-% if attributes['inline']==False:
+% if gattr['inline']==False:
 	\Lyrics
 % endif
 % endif
 % if attributes['doLyricsmore']:
 \new Lyrics="Lyrics" \lyricsto "Voice"
-% if attributes['inline']:
+% if gattr['inline']:
 	<%include file="/${file}" args="part=Lyricsmore"/>
 % endif
-% if attributes['inline']==False:
+% if gattr['inline']==False:
 	\Lyricsmore
 % endif
 % endif
 % if attributes['doLyricsmoremore']:
 \new Lyrics="Lyrics" \lyricsto "Voice"
-% if attributes['inline']:
+% if gattr['inline']:
 	<%include file="/${file}" args="part=Lyricsmoremore"/>
 % endif
-% if attributes['inline']==False:
+% if gattr['inline']==False:
 	\Lyricsmoremore
 % endif
 % endif
@@ -634,27 +634,27 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 	\layout {
 	}
 }
-% if attributes['midi']:
+% if gattr['midi']:
 %% score for midi
 \score {
 	\unfoldRepeats
 	<<
 % if attributes['doChords']:
 \new ChordNames="Chords"
-% if attributes['inline']:
+% if gattr['inline']:
 	<%include file="/${file}" args="part=Chords"/>
 % endif
-% if attributes['inline']==False:
+% if gattr['inline']==False:
 	\Chords
 % endif
 % endif
 % if attributes['doVoice']:
 \new Staff="Melody" {
 \new Voice="Voice"
-% if attributes['inline']:
+% if gattr['inline']:
 	<%include file="/${file}" args="part=Voice"/>
 % endif
-% if attributes['inline']==False:
+% if gattr['inline']==False:
 	\Voice
 % endif
 }
@@ -662,28 +662,28 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 % if attributes['lyricsInMidi']:
 % if attributes['doLyrics']:
 \new Lyrics="Lyrics" \lyricsto "Voice"
-% if attributes['inline']:
+% if gattr['inline']:
 	<%include file="/${file}" args="part=Lyrics"/>
 % endif
-% if attributes['inline']==False:
+% if gattr['inline']==False:
 	\Lyrics
 % endif
 % endif
 % if attributes['doLyricsmore']:
 \new Lyrics="Lyrics" \lyricsto "Voice"
-% if attributes['inline']:
+% if gattr['inline']:
 	<%include file="/${file}" args="part=Lyricsmore"/>
 % endif
-% if attributes['inline']==False:
+% if gattr['inline']==False:
 	\Lyricsmore
 % endif
 % endif
 % if attributes['doLyricsmoremore']:
 \new Lyrics="Lyrics" \lyricsto "Voice"
-% if attributes['inline']:
+% if gattr['inline']:
 	<%include file="/${file}" args="part=Lyricsmoremore"/>
 % endif
-% if attributes['inline']==False:
+% if gattr['inline']==False:
 	\Lyricsmoremore
 % endif
 % endif
@@ -709,12 +709,12 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 	\fill-line {
 		\smaller \smaller { "${attributes['copyright']}" }
 	}
-% if attributes['book']==True:
+% if gattr['book']:
 	\fill-line {
 		\smaller \smaller { "${attributes['typesetby']}" }
 	}
 % endif
-% if attributes['book']==False:
+% if gattr['book']==False:
 	\fill-line {
 		\smaller \smaller { "${attributes['tagline']}" }
 	}
@@ -724,17 +724,17 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 % endif
 }
 
-% if attributes['toc']:
+% if gattr['toc']:
 % endif
 
-% if attributes['book']:
+% if gattr['book']:
 %% this is just a small space, maybe we should replace this with a page break?
 %% TODO: at the very end of the book this should not appear.
 %%\markup {
 %%	\null
 %%	\null
 %%}
-% if attributes['parts']:
+% if gattr['parts']:
 }
 % else:
 \pageBreak
@@ -743,7 +743,7 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 
 % endfor
 
-% if attributes['book']:
+% if gattr['book']:
 %% book footer
 }
 % endif

@@ -43,28 +43,26 @@ if os.path.isfile(p_output):
 try:
 	mylookup=mako.lookup.TemplateLookup(directories=['.'],input_encoding=input_encoding,output_encoding=output_encoding)
 	template=mako.template.Template(filename=common,lookup=mylookup,output_encoding=output_encoding,input_encoding=input_encoding)
-	attr={}
+	gattr={}
 	if p_book:
 		filelist=glob.glob(p_input)
 		filelist=list(filter(is_ready,filelist))
 		filelist.sort()
-		attr['files']=filelist
-		attr['book']=True
-		attr['toc']=True
-		attr['inline']=True
-		attr['midi']=False
-		attr['parts']=True
-		attr['doChordBars']=False
+		gattr['files']=filelist
+		gattr['book']=True
+		gattr['toc']=True
+		gattr['midi']=False
+		gattr['parts']=True
 	else:
-		attr['files']=[ p_input ]
-		attr['book']=False
-		attr['toc']=False
-		attr['inline']=True
-		attr['midi']=True
-		attr['parts']=False
-		attr['doChordBars']=False
+		gattr['files']=[ p_input ]
+		gattr['book']=False
+		gattr['toc']=False
+		gattr['midi']=True
+		gattr['parts']=False
+	gattr['inline']=True
 	file=open(p_output,'wb')
-	file.write(template.render(attributes=attr))
+	attr={}
+	file.write(template.render(attributes=attr, gattr=gattr))
 	file.close()
 	os.chmod(p_output,0o0444)
 except Exception as e:
