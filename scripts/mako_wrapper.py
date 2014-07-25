@@ -4,10 +4,10 @@ import sys
 import mako.template
 import mako.lookup
 import os # for os.chmod, os.unlink
-import versioncheck # for checkversion
+import check_version # for check_version
 
 # first make sure that we are using the correct version of python
-versioncheck.checkversion()
+check_version.check_version()
 
 if len(sys.argv)!=3:
 	raise ValueError('command line issue')

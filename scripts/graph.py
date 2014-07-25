@@ -24,9 +24,17 @@ import os.path # for isfile, expanduser
 import configparser # for ConfigParser
 import getpass # for getuser
 import progressbar # for ProgressBar
+import check_version # for check_version
 
+##############
+# parameters #
+##############
 debug=False
 doDb=True
+
+#############
+# functions #
+#############
 
 '''
 get the configuration, including user and password from the ~/.my.cnf
@@ -55,6 +63,12 @@ def get_config():
 		d['user']=getpass.getuser()
 		d['database']='mysql'
 		return d
+
+########
+# code #
+########
+
+check_version.check_version()
 
 conn=mysql.connector.Connect(**get_config())
 

@@ -4,10 +4,10 @@
 # ubuntu to compile and work with this package.
 
 import subprocess # for check_call
-import versioncheck # for checkversion
+import check_version # for check_version
 
 # first check that we are using the correct version of python
-versioncheck.checkversion()
+check_version.check_version()
 
 packs=[
 	'perl', # for the old perl scripts
