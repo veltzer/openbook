@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python3.4
 
 '''
 this script gets the graph data for the openbook progress report

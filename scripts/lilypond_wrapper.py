@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3.4
 
 '''
 wrapper to run lilypond.
@@ -16,7 +16,7 @@ import check_version # for check_version
 # parameters
 # I want errors to happen if there is any output...
 stopOnOutput=True
-showOutput=True
+showOutput=False
 doPs=False
 doPdf=True
 debug=False
@@ -29,18 +29,20 @@ def system_check_output(args):
 		print('running:', args)
 	pr=subprocess.Popen(args,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
 	(output,errout)=pr.communicate()
+	output=output.decode()
+	errout=errout.decode()
 	if debug:
-		print(output,end='')
-		print(errout,end='')
+		print('stdout is',output)
+		print('stderr is',errout)
 		print(pr.returncode)
 	status=pr.returncode
 	if status or (stopOnOutput and (output!='' or errout!='')):
-		print(output,end='')
-		print(errout,end='')
+		print('stdout is',output)
+		print('stderr is',errout)
 		raise ValueError('error in executing',args)
 	if showOutput:
-		print(output,end='')
-		print(errout,end='')
+		print('stdout is',output)
+		print('stderr is',errout)
 
 # first check that we are using the correct version of python
 check_version.check_version()
@@ -84,10 +86,10 @@ try:
 	system_check_output(args)
 	# chmod the results
 	if doPs:
-		os.chmod(p_ps,0444)
+		os.chmod(p_ps,0o0444)
 	if doPdf:
-		os.chmod(p_pdf,0444)
-except Exception,e:
+		os.chmod(p_pdf,0o0444)
+except Exception as e:
 	remove_output_if_exists()
 	raise e
 
@@ -101,4 +103,4 @@ if p_do_pdfred:
 	system_check_output(['ps2pdf', p_ps, p_pdf])
 	if os.path.isfile(p_ps) and unlinkPs:
 		os.unlink(p_ps)
-	os.chmod(p_pdf,0444)
+	os.chmod(p_pdf,0o0444)
