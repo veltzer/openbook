@@ -50,7 +50,6 @@ COMMON:=src/include/common.makoi
 # wrappers
 LILYPOND_WRAPPER:=scripts/lilypond_wrapper.py
 MAKO_WRAPPER:=scripts/mako_wrapper.py
-MAKO_BOOK_WRAPPER:=scripts/mako_book.py
 LYD_WRAPPER:=scripts/lyd.pl
 MAKO_DEPS_WRAPPER:=scripts/mako_deps.py
 MIDI2WAV_WRAPPER:=scripts/midi2wav.pl
@@ -81,7 +80,6 @@ ifeq ($(DO_WRAPDEPS),1)
 	MIDI2WAV_WRAPPER_DEP:=$(MIDI2WAV_WRAPPER)
 	MIDI2OGG_WRAPPER_DEP:=$(MIDI2OGG_WRAPPER)
 	MIDI2MP3_WRAPPER_DEP:=$(MIDI2MP3_WRAPPER)
-	MAKO_BOOK_WRAPPER_DEP:=$(MAKO_BOOK_WRAPPER)
 else
 	LILYPOND_WRAPPER_DEP:=
 	BOOK_WRAPPER_DEP:=
@@ -91,7 +89,6 @@ else
 	MIDI2WAV_WRAPPER_DEP:=
 	MIDI2OGG_WRAPPER_DEP:=
 	MIDI2MP3_WRAPPER_DEP:=
-	MAKO_BOOK_WRAPPER_DEP:=
 endif
 
 ifeq ($(DO_MKDBG),1)
@@ -386,7 +383,7 @@ $(FILES_STAMP): %.stamp: %.ly $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 $(FILES_LY): $(OUT_DIR)/%.ly: %.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
-	$(Q)$(MAKO_WRAPPER) $< $@
+	$(Q)$(MAKO_WRAPPER) $@ $< 0
 $(FILES_MAKO_DEPS): $(OUT_DIR)/%.mako.d: %.mako $(MAKO_DEPS_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
@@ -414,24 +411,24 @@ books: $(OB_OUT_PDF) $(IL_OUT_PDF) $(RK_OUT_PDF) $(ALL_DEP)
 $(OB_OUT_PDF) $(OB_OUT_PS): $(OB_OUT_LY) $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)$(LILYPOND_WRAPPER) $(OB_OUT_PS) $(OB_OUT_PDF) $(OB_OUT_BASE) $(OB_OUT_LY) $(DO_PDFRED_BOOKS)
-$(OB_OUT_LY): $(OB_OUT_FILES) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
+$(OB_OUT_LY): $(OB_OUT_FILES) $(MAKO_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
-	$(Q)$(MAKO_BOOK_WRAPPER) $(OB_OUT_LY) "$(OB_OUT_PATTERN)"
+	$(Q)$(MAKO_WRAPPER) $(OB_OUT_LY) "$(OB_OUT_PATTERN)" 1
 $(IL_OUT_PDF) $(IL_OUT_PS): $(IL_OUT_LY) $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)$(LILYPOND_WRAPPER) $(IL_OUT_PS) $(IL_OUT_PDF) $(IL_OUT_BASE) $(IL_OUT_LY) $(DO_PDFRED_BOOKS)
-$(IL_OUT_LY): $(IL_OUT_FILES) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
+$(IL_OUT_LY): $(IL_OUT_FILES) $(MAKO_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
-	$(Q)$(MAKO_BOOK_WRAPPER) $(IL_OUT_LY) "$(IL_OUT_PATTERN)"
+	$(Q)$(MAKO_WRAPPER) $(IL_OUT_LY) "$(IL_OUT_PATTERN)" 1
 $(RK_OUT_PDF) $(RK_OUT_PS): $(RK_OUT_LY) $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)$(LILYPOND_WRAPPER) $(RK_OUT_PS) $(RK_OUT_PDF) $(RK_OUT_BASE) $(RK_OUT_LY) $(DO_PDFRED_BOOKS)
-$(RK_OUT_LY): $(RK_OUT_FILES) $(MAKO_BOOK_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
+$(RK_OUT_LY): $(RK_OUT_FILES) $(MAKO_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
-	$(Q)$(MAKO_BOOK_WRAPPER) $(RK_OUT_LY) "$(RK_OUT_PATTERN)"
+	$(Q)$(MAKO_WRAPPER) $(RK_OUT_LY) "$(RK_OUT_PATTERN)" 1
 
 .PHONY: install
 install: $(OB_OUT_LY) $(OB_OUT_PDF) $(WEB_FILES) $(ALL_DEP)
