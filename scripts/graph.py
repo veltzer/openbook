@@ -1,6 +1,6 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
-"""
+'''
 this script gets the graph data for the openbook progress report
 the idea is to be able to see in a graph the progress being made in
 this project.
@@ -8,48 +8,58 @@ this project.
 CHANGELOG:
 19/11/11: wrote the damn script.
 21/11/11: added insertion of graph data into the database.
+25/07/14: moved to python3, removed corrupt handling and added progress report.
 
 TODO:
 	- show this graph in the website.
 	- modify this script to produce counts for both jazz and non-jazz tunes.
 		(very easy). This way the data that is outputted will be related to the openbook pdf.
 		And do this also for completion level 5.
-	- take care of the corrupt commits. either:
-		- get their uncorrupted data from github or something.
-		- erase them from the history altogether (in that case document how I did
-			that in the git hints file).
-"""
+'''
 
-import subprocess
-import dateutil.parser
-import MySQLdb
-import warnings
-import versioncheck # for checkversion
+import subprocess # for check_output
+import dateutil.parser # for parse
+import mysql.connector # for Connect
+import warnings # for filterwarnings
+import os.path # for isfile, expanduser
+import configparser # for ConfigParser
+import getpass # for getuser
+import progressbar # for ProgressBar
 
-# first check that we are using the correct version of python
-versioncheck.checkversion()
 # turn warnings into errors
-warnings.filterwarnings("error")
+warnings.filterwarnings('error')
 debug=False
 doDb=True
 
-# these are corrupt commits for which there is no meta data or there
-# is no tree...
-corrupt={
-	'cb6eaf130fdcfe0e46254ee2ecf9aa6e5fb98be4',
-	'7f9eec3d2843f9b7cb1266b9e2f274e22f938f93',
-	'd5a7675bb3132d5b89715b637368e9eace672a2f',
-	'3ebc2b5854a94b96d351ede91fabb9e20c440ecc',
-	'4d6523fbc7066b6f436f89d50506a6a7af7b7f0c',
-	'1284db847767666779a0ffcf7fc3de32bb62a931',
-}
+'''
+get the configuration, including user and password from the ~/.my.cnf
+file of the user
 
-conn=MySQLdb.connect(
-	host="localhost",
-	user="mark",
-	passwd="",
-	db="myworld"
-)
+if no such file exists then use sensible defaults
+'''
+def get_config():
+	d={}
+	inifile=os.path.expanduser('~/.my.cnf')
+	if os.path.isfile(inifile):
+		config=configparser.ConfigParser()
+		config.read(inifile)
+		if config.has_option('mysql', 'user'):
+			d['user']=config.get('mysql', 'user')
+		else:
+			d['user']=getpass.getuser()
+		if config.has_option('mysql', 'database'):
+			d['database']=config.get('mysql', 'database')
+		else:
+			d['database']='mysql'
+		if config.has_option('mysql', 'password'):
+			d['password']=config.get('mysql', 'password')
+		return d
+	else:
+		d['user']=getpass.getuser()
+		d['database']='mysql'
+		return d
+
+conn=mysql.connector.Connect(**get_config())
 
 if doDb:
 	# remove the old data
@@ -60,33 +70,32 @@ if doDb:
 	if row!=None:
 		id=int(row[0])
 		if debug:
-			print "id is",id
+			print('id is',id)
 		cursor.execute('DELETE from TbGraphData WHERE graphId=%s',(id,))
 		cursor.execute('DELETE from TbGraph WHERE id=%s',(id,))
 	# insert a new row into the graph meta data
 	cursor.execute('INSERT INTO TbGraph (name) VALUES(\'openbook_progress\')')
 	id=cursor.lastrowid
 	if debug:
-		print "id is",id
+		print('id is',id)
 # this gets all commits in the right order
-commits=subprocess.check_output(["git","log","--format=%H","--reverse"]).split("\n")
-# removes the extra element that I don't need
+commits=subprocess.check_output(['git','log','--format=%H','--reverse']).decode().split('\n')
+pbar = progressbar.ProgressBar()
+# removes the extra element that I don't need which is the current commit
 commits.pop()
-for commit in commits:
-	if commit in corrupt:
-		continue
-	d1=subprocess.check_output(["git","show","-s","--format=%ci",commit]).strip()
+for commit in pbar(commits):
+	d1=subprocess.check_output(['git','show','-s','--format=%ci',commit]).decode().strip()
 	d2=dateutil.parser.parse(d1)
 	dt=d2.astimezone(dateutil.tz.tzutc())
 	count=0
-	lines=subprocess.check_output(["git","ls-tree","-r",commit]).split("\n");
+	lines=subprocess.check_output(['git','ls-tree','-r',commit]).decode().split('\n');
 	for line in lines:
 		if line.endswith('.ly') or line.endswith('.temp') or line.endswith('.mako') or line.endswith('.gpp'):
 			count=count+1
 	if debug:
-		print "commit is "+commit
-		print "dt is "+str(dt)
-		print "count is "+str(count)
+		print('commit is', commit)
+		print('dt is', str(dt))
+		print('count is', str(count))
 	if doDb:
 		cursor.execute('INSERT INTO TbGraphData (tag,dt,value,graphId) VALUES(%s,%s,%s,%s)',(commit,dt,count,id))
 

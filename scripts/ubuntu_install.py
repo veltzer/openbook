@@ -12,6 +12,7 @@ versioncheck.checkversion()
 packs=[
 	'perl', # for the old perl scripts
 	'python', # for the python scripts
+	'python3', # for the python scripts
 	'python-mako', # this is out template processor
 	'python3-mako', # mako for python 3 (we are not really using it)
 	'python-mako-doc', # documentation for the template preprocessor
