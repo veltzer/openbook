@@ -124,5 +124,5 @@ Where can I get more documentation about this project?
 ------------------------------------------------------
 Look in the "doc" subfolder of the source code...
 
-			Mark Veltzer, 2011-2014
+			Mark Veltzer, 2010-2014
 			mark.veltzer@gmail.com
