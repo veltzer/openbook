@@ -20,14 +20,11 @@ TODO:
 import subprocess # for check_output
 import dateutil.parser # for parse
 import mysql.connector # for Connect
-import warnings # for filterwarnings
 import os.path # for isfile, expanduser
 import configparser # for ConfigParser
 import getpass # for getuser
 import progressbar # for ProgressBar
 
-# turn warnings into errors
-warnings.filterwarnings('error')
 debug=False
 doDb=True
 
