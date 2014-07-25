@@ -59,7 +59,7 @@
 
 	\myMark "Verse"
 	\startPart
-	ees2:6 f4:9 bes:9.5+ | ees2:6 e:dim7 | f:m7 bes9.11 | ees:maj7 \OPC bes:13 | \myEndLine
+	ees2:6 f4:9 bes:9.5+ | ees2:6 e:dim7 | f:m7 bes:9.11 | ees:maj7 \OPC bes:13 | \myEndLine
 	ees:6 a4:m7.5- d:7.9- | g:sus4 gis:dim7 | a:m7 d4:9sus4 \OPC d:9 | g:7 c:7 f:7 bes:7 | bes:7 |
 	\endPart
 
