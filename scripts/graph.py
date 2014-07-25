@@ -84,11 +84,21 @@ for commit in pbar(commits):
 	d1=subprocess.check_output(['git','show','-s','--format=%ci',commit]).decode().strip()
 	d2=dateutil.parser.parse(d1)
 	dt=d2.astimezone(dateutil.tz.tzutc())
-	count=0
+	count_mako=0
+	count_temp=0
+	count_gpp=0
+	count_ly=0
 	lines=subprocess.check_output(['git','ls-tree','-r',commit]).decode().split('\n');
 	for line in lines:
-		if line.endswith('.ly') or line.endswith('.temp') or line.endswith('.mako') or line.endswith('.gpp'):
-			count=count+1
+		if line.endswith('.mako'):
+			count_mako+=1
+		if line.endswith('.temp'):
+			count_temp+=1
+		if line.endswith('.gpp'):
+			count_gpp+=1
+		if line.endswith('.ly'):
+			count_ly+=1
+	count=max(count_mako, count_temp, count_gpp, count_ly)
 	if debug:
 		print('commit is', commit)
 		print('dt is', str(dt))
