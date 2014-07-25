@@ -6,6 +6,7 @@ import mako.lookup # for TemplateLookup
 import os # for chmod, unlink
 import glob # for glob
 import check_version # for check_version
+import os.path # for isfile
 
 #############
 # functions #
@@ -31,6 +32,9 @@ p_output=sys.argv[1]
 p_input=sys.argv[2]
 p_book=int(sys.argv[3])
 common='src/include/common.makoi'
+
+if os.path.isfile(p_output):
+	os.unlink(p_output)
 
 # if there is any error, remove the output to prevent having
 # bad output...
