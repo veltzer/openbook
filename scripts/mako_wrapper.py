@@ -33,6 +33,8 @@ p_input=sys.argv[2]
 p_book=int(sys.argv[3])
 common='src/include/common.makoi'
 
+# I really need the unlink, even though we have open a file
+# for writing later on since we chmod the output to be unwritable.
 if os.path.isfile(p_output):
 	os.unlink(p_output)
 
