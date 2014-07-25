@@ -1,8 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/python3.4
 
-import sys
-import mako.template
-import mako.lookup
+import sys # for argv
+import mako.template # for Template
+import mako.lookup # for TemplateLookup
 import os # for os.chmod, os.unlink
 import check_version # for check_version
 
@@ -19,17 +19,9 @@ p_output=sys.argv[2]
 common='src/include/common.makoi'
 
 try:
-	os.unlink(p_output)
-except:
-	# handle the error better, only non existant file should be glossed over...
-	pass
-try:
 	mylookup = mako.lookup.TemplateLookup(directories=['.'],input_encoding=input_encoding,output_encoding=output_encoding)
 	template=mako.template.Template(filename=common,lookup=mylookup,output_encoding=output_encoding,input_encoding=input_encoding)
-	file=open(p_output,'w')
-	# python 3
-	#file.write((template.render_unicode(attributes={})))
-	# python 2
+	file=open(p_output,'wb')
 	attr={}
 	attr['files']=[ p_input ]
 	attr['book']=False
@@ -40,10 +32,7 @@ try:
 	attr['doChordBars']=False
 	file.write(template.render(attributes=attr))
 	file.close()
-	# python 3
-	#os.chmod(p_output,0o0444)
-	# python 2
-	os.chmod(p_output,0444)
-except Exception,e:
+	os.chmod(p_output,0o0444)
+except Exception as e:
 	os.unlink(p_output)
 	raise e

@@ -1,12 +1,25 @@
-#!/usr/bin/env python
+#!/usr/bin/python3.4
 
-import sys
-import mako.template
-import mako.lookup
-import os # for os.chmod, os.unlink
-import glob # for glob.glob
+import sys # for argv
+import mako.template # for Template
+import mako.lookup # for TemplateLookup
+import os # for chmod, unlink
+import glob # for glob
 import check_version # for check_version
 
+#############
+# functions #
+#############
+def is_ready(file):
+	for line in open(file):
+		#print line
+		if line=="\tattributes['completion']=\"5\"\n":
+			return True
+	return False
+
+########
+# code #
+########
 # first check that we are using the correct version of python
 check_version.check_version()
 
@@ -19,33 +32,11 @@ p_output=sys.argv[1]
 p_glob=sys.argv[2]
 common='src/include/common.makoi'
 
-def is_ready(file):
-	for line in open(file):
-		#print line
-		if line=="\tattributes['completion']=\"5\"\n":
-			return True
-	return False
-
-def get_results(lst):
-	(pin,pout)=os.popen2(lst)
-	res=''
-	for line in pout:
-		res+=line
-	return res
-
-# unlink the file if it exists
-if os.path.isfile(p_output):
-	os.unlink(p_output)
-
 mylookup=mako.lookup.TemplateLookup(directories=['.'],input_encoding=input_encoding,output_encoding=output_encoding)
 template=mako.template.Template(filename=common,lookup=mylookup,output_encoding=output_encoding,input_encoding=input_encoding)
-file=open(p_output,'w')
-# python 3
-#file.write((template.render_unicode(attributes={})))
-# python 2
 attr={}
 filelist=glob.glob(p_glob)
-filelist=filter(is_ready,filelist)
+filelist=list(filter(is_ready,filelist))
 filelist.sort()
 attr['files']=filelist
 attr['book']=True
@@ -55,16 +46,14 @@ attr['midi']=False
 attr['parts']=True
 attr['doChordBars']=False
 
+file=open(p_output,'wb')
 # if there is any error, remove the output to prevent having
 # bad output...
 try:
 	file.write(template.render(attributes=attr))
 	file.close()
-	# python 3
-	#os.chmod(p_output,0o0444)
-	# python 2
-	os.chmod(p_output,0444)
-except Exception, e:
+	os.chmod(p_output,0o0444)
+except Exception as e:
 	file.close()
 	os.unlink(p_output)
 	raise e

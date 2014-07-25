@@ -1,0 +1,12 @@
+This document deals with which python version we use in openbook and why
+
+We currently use python3.4
+
+Why? 3 is better than 2 and 3.4 is really stable and mature.
+
+Do we wish to enforce our selected version of python on the user?
+- not really clear that we wish to enforce this specific version but for now we do.
+
+How do we enforce our selected version?
+- check_version.py used in every script.
+- /usr/bin/python3.4 at SHBANG lines.

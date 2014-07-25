@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3.4
 
 # this is a release script.
 # it runs git status -s in order to see that everything is commited.
