@@ -11,8 +11,8 @@
 	attributes['style']="Israeli"
 	attributes['composer']=u"שלום חנוך"
 	attributes['poet']=u"שמרית אור"
-	attributes['singer']=u"שלום חנוך"
 	attributes['piece']=u"בלדה מתונה"
+	attributes['singer']=u"שלום חנוך"
 	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
 
 	attributes['completion']="0"

@@ -7,9 +7,9 @@
 	attributes['render']="Fake"
 
 	attributes['title']="My Ship"
+	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['subtitle']="From The Musical Production 'LADY IN THE DARK'"
-	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['composer']="Kurt Weil"
 	# this is from the fake book
@@ -23,12 +23,12 @@
 	attributes['completion']="5"
 	attributes['uuid']="ffe98a96-0a4c-11e3-bcaf-3b8eec526bc3"
 	attributes['structure']="AABA"
-	attributes['locations']="fb:268,269"
+	attributes['location']="fb:268,269"
 
-	attributes['idyoutuberemark']="Hancock, Brecker and Hargrove"
-	attributes['idyoutube']="QTHYSBAZJrQ"
-	attributes['idyoutuberemark']="Ella and Joe Pass"
-	attributes['idyoutube']="UEOll-nNy4I"
+	attributes['idyoutuberemark1']="Hancock, Brecker and Hargrove"
+	attributes['idyoutube1']="QTHYSBAZJrQ"
+	attributes['idyoutuberemark2']="Ella and Joe Pass"
+	attributes['idyoutube2']="UEOll-nNy4I"
 	attributes['lyricsurl']="http://www.stlyrics.com/lyrics/ladyinthedark/myship.htm"
 %>
 % endif

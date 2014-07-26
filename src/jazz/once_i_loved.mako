@@ -25,10 +25,10 @@
 	attributes['uuid']="18294374-a26f-11df-a5f0-0019d11e5a41"
 	attributes['structure']="AAB"
 
-	attributes['idyoutuberemark']="Joe Henderson accompanied by guitar doing Bossa..."
-	attributes['idyoutube']="rJxHFW2S-Eo"
-	attributes['idyoutuberemark']="Astrud Gilberto (original Bossa Style with Orchestra)"
-	attributes['idyoutube']="BwP0eIRU-dQ"
+	attributes['idyoutuberemark1']="Joe Henderson accompanied by guitar doing Bossa..."
+	attributes['idyoutube1']="rJxHFW2S-Eo"
+	attributes['idyoutuberemark2']="Astrud Gilberto (original Bossa Style with Orchestra)"
+	attributes['idyoutube2']="BwP0eIRU-dQ"
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Once-I-Loved-lyrics-Ella-Fitzgerald/24CD6F6E245519E348256AAB0009C557"
 %>
 % endif

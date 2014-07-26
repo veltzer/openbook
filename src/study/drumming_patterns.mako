@@ -7,7 +7,7 @@
 	attributes['style']="Jazz"
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
-	attributes['copyright']=attributes['copyrightvalstudy']
+	attributes['copyright']=gattr['copyrightvalstudy']
 
 	attributes['completion']="5"
 	attributes['uuid']="f39a06ec-6d98-11e0-b7b1-0019d11e5a41"

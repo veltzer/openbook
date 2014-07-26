@@ -26,10 +26,10 @@
 	attributes['structure']="ABA'C"
 	attributes['structureremark']="This is almost a pure ABAC"
 
-	attributes['idyoutuberemark']="Sinatra in his younger days"
-	attributes['idyoutube']="oL60OQLekWQ"
-	attributes['idyoutuberemark']="Stitt in a cool instrumental version"
-	attributes['idyoutube']="cmkEbH43GIQ"
+	attributes['idyoutuberemark1']="Sinatra in his younger days"
+	attributes['idyoutube1']="oL60OQLekWQ"
+	attributes['idyoutuberemark2']="Stitt in a cool instrumental version"
+	attributes['idyoutube2']="cmkEbH43GIQ"
 	attributes['lyricsurl']="http://www.azlyrics.com/lyrics/billieholiday/illbeseeingyou.html"
 %>
 % endif

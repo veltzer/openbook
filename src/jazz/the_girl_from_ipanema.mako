@@ -22,7 +22,7 @@
 	attributes['uuid']="2c3b337c-a26f-11df-b7d1-0019d11e5a41"
 	attributes['structure']="AABA"
 
-	attributes['idyoutube']="DmV0TcTNJ3o"
+	attributes['idyoutube1']="DmV0TcTNJ3o"
 %>
 % endif
 

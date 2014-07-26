@@ -24,10 +24,10 @@
 	attributes['uuid']="b2076c06-e025-11e0-ab4c-0019d11e5a41"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Billie Holiday"
-	attributes['idyoutube']="CMDlk6lGQOk"
-	attributes['idyoutuberemark']="Dexter Gordon from the ballads. Excellent"
-	attributes['idyoutube']="rMd9oZ4O0bs"
+	attributes['idyoutuberemark1']="Billie Holiday"
+	attributes['idyoutube1']="CMDlk6lGQOk"
+	attributes['idyoutuberemark2']="Dexter Gordon from the ballads. Excellent"
+	attributes['idyoutube2']="rMd9oZ4O0bs"
 	attributes['lyricsurl']="http://www.azlyrics.com/lyrics/dianakrall/bodyandsoul.html"
 %>
 % endif

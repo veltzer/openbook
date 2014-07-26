@@ -25,10 +25,10 @@
 	attributes['uuid']="2af3e35c-e252-11e3-abb7-932771d3c7a0"
 	attributes['structure']="AA'BA"
 
-	attributes['idyoutuberemark']="Cannonical version by Frank"
-	attributes['idyoutube']="hlSbSKNk9f0"
-	attributes['idyoutuberemark']="Another version by Frank"
-	attributes['idyoutube']="nHuko5BCFzA"
+	attributes['idyoutuberemark1']="Cannonical version by Frank"
+	attributes['idyoutube1']="hlSbSKNk9f0"
+	attributes['idyoutuberemark2']="Another version by Frank"
+	attributes['idyoutube2']="nHuko5BCFzA"
 	attributes['lyricsurl']="http://www.lyricsfreak.com/f/frank+sinatra/strangers+in+the+night_20056148.html"
 %>
 % endif

@@ -23,8 +23,8 @@
 	attributes['uuid']="ce9be996-a26e-11df-bf2c-0019d11e5a41"
 	attributes['structure']="AB"
 
-	attributes['idyoutube']="a2LFVWBmoiw"
-	attributes['idyoutube']="neXL51g8P-M"
+	attributes['idyoutube1']="a2LFVWBmoiw"
+	attributes['idyoutube2']="neXL51g8P-M"
 	attributes['lyricsurl']="http://www.oldielyrics.com/lyrics/frank_sinatra/my_foolish_heart.html"
 %>
 % endif

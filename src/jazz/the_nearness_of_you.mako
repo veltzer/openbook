@@ -7,8 +7,8 @@
 	attributes['render']="Fake"
 
 	attributes['title']="The Nearness Of You"
-	attributes['subtitle']="from the Paramount Picture \\\"Romance in the Dark\\\""
 	attributes['style']="Jazz"
+	attributes['subtitle']="from the Paramount Picture \\\"Romance in the Dark\\\""
 	attributes['composer']="Hoagy Charmichael"
 	attributes['poet']="Ned Washington"
 	attributes['piece']="Slowly"

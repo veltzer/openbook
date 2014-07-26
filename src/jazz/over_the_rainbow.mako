@@ -9,10 +9,10 @@
 
 	# from wikifonia
 	attributes['title']="Over The Rainbow"
-	# this is from wikifonia and wikipedia
-	attributes['subtitle']="Somewhere Over The Rainbow"
 	# my own
 	attributes['style']="Jazz"
+	# this is from wikifonia and wikipedia
+	attributes['subtitle']="Somewhere Over The Rainbow"
 	# from wikifonia
 	attributes['composer']="Harold Arlen"
 	# from wikifonia and wikipedia
@@ -27,10 +27,10 @@
 	attributes['uuid']="c6992350-a9da-11e2-8a7f-97606039682f"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="The original Judy Garland version"
-	attributes['idyoutube']="1HRa4X07jdE"
-	attributes['idyoutuberemark']="Keith Jarret kills them"
-	attributes['idyoutube']="u3eH6VW6Chc"
+	attributes['idyoutuberemark1']="The original Judy Garland version"
+	attributes['idyoutube1']="1HRa4X07jdE"
+	attributes['idyoutuberemark2']="Keith Jarret kills them"
+	attributes['idyoutube2']="u3eH6VW6Chc"
 	attributes['lyricsurl']="http://www.stlyrics.com/lyrics/thewizardofoz/somewhereovertherainbow.htm"
 %>
 % endif

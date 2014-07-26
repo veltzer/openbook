@@ -23,10 +23,10 @@
 	attributes['uuid']="1c99c334-a26f-11df-b3cb-0019d11e5a41"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Ella's vocal version"
-	attributes['idyoutube']="DEaDj6TXiQQ"
-	attributes['idyoutuberemark']="Monk. What can I say?"
-	attributes['idyoutube']="OMmeNsmQaFw"
+	attributes['idyoutuberemark1']="Ella's vocal version"
+	attributes['idyoutube1']="DEaDj6TXiQQ"
+	attributes['idyoutuberemark2']="Monk. What can I say?"
+	attributes['idyoutube2']="OMmeNsmQaFw"
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Round-Midnight-lyrics-Ella-Fitzgerald/F7F9D0761ABE750348256AAB0009FEEA"
 %>
 % endif

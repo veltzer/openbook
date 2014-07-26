@@ -20,10 +20,10 @@
 	attributes['uuid']="b806ce6c-b405-11e1-9daf-1fdf93f5ba36"
 	attributes['structure']="AB"
 
-	attributes['idyoutuberemark']="John Coltrane in a great version"
-	attributes['idyoutube']="MzSVV1sI57g"
-	attributes['idyoutuberemark']="Peter Bernstein on guitar"
-	attributes['idyoutube']="C9gT-6K-cgE"
+	attributes['idyoutuberemark1']="John Coltrane in a great version"
+	attributes['idyoutube1']="MzSVV1sI57g"
+	attributes['idyoutuberemark2']="Peter Bernstein on guitar"
+	attributes['idyoutube2']="C9gT-6K-cgE"
 	attributes['lyricsurl']="http://www.lyricstime.com/cole-porter-i-love-you-lyrics.html"
 %>
 % endif

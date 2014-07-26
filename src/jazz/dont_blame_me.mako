@@ -22,10 +22,10 @@
 	attributes['uuid']="d01b9fc8-e077-11e3-8a42-b3378bc59d8a"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Nat King Cole"
-	attributes['idyoutube']="CkqKURwl9m0"
-	attributes['idyoutuberemark']="Monk in a monked version of the tune"
-	attributes['idyoutube']="KshrtLXBdl8"
+	attributes['idyoutuberemark1']="Nat King Cole"
+	attributes['idyoutube1']="CkqKURwl9m0"
+	attributes['idyoutuberemark2']="Monk in a monked version of the tune"
+	attributes['idyoutube2']="KshrtLXBdl8"
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Don%27t-Blame-Me-1958-version-lyrics-Nat-King-Cole/C27E88B65E6C613D48256AF1000ED478"
 %>
 % endif

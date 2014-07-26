@@ -21,10 +21,10 @@
 	attributes['uuid']="070df83e-0676-11e1-b7fe-0019d11e5a41"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Billie in a radio show"
-	attributes['idyoutube']="XxwJ9lh-id4"
-	attributes['idyoutuberemark']="The great Dexter Gordon at the height of his power"
-	attributes['idyoutube']="k2Lx3n10fkc"
+	attributes['idyoutuberemark1']="Billie in a radio show"
+	attributes['idyoutube1']="XxwJ9lh-id4"
+	attributes['idyoutuberemark2']="The great Dexter Gordon at the height of his power"
+	attributes['idyoutube2']="k2Lx3n10fkc"
 	attributes['lyricsurl']="http://www.elyrics.net/read/b/billie-holiday-lyrics/don_t-explain-lyrics.html"
 %>
 % endif

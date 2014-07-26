@@ -24,10 +24,10 @@
 	attributes['uuid']="ca5eae8e-ee84-11e3-a0d7-d7aaa2e1aa93"
 	attributes['structure']="ABAC"
 
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
-	attributes['idyoutuberemark']=""
-	attributes['idyoutube']=""
+	attributes['idyoutuberemark1']=""
+	attributes['idyoutube1']=""
+	attributes['idyoutuberemark2']=""
+	attributes['idyoutube2']=""
 	attributes['lyricsurl']=""
 %>
 % endif

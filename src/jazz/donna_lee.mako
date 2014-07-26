@@ -18,10 +18,10 @@
 	attributes['structure']="AB"
 	attributes['structureremark']="This could be thought of as ABAC although the two A's are not the same so AB is more accurate"
 
-	attributes['idyoutuberemark']="Very fast Wynton Marsalis version"
-	attributes['idyoutube']="QdD6XE9DtAE"
-	attributes['idyoutuberemark']="The original Parker, Davis, Bud Powell version"
-	attributes['idyoutube']="hANODMX9c5g"
+	attributes['idyoutuberemark1']="Very fast Wynton Marsalis version"
+	attributes['idyoutube1']="QdD6XE9DtAE"
+	attributes['idyoutuberemark2']="The original Parker, Davis, Bud Powell version"
+	attributes['idyoutube2']="hANODMX9c5g"
 %>
 % endif
 

@@ -26,10 +26,10 @@
 	attributes['uuid']="bb21d126-f210-11e0-9b64-0019d11e5a41"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="great version by Ella Fitzgerald"
-	attributes['idyoutube']="mQouJdvB80U"
-	attributes['idyoutuberemark']="Garner himself! what an amazing piano..."
-	attributes['idyoutube']="nAaZzQWk8V4"
+	attributes['idyoutuberemark1']="great version by Ella Fitzgerald"
+	attributes['idyoutube1']="mQouJdvB80U"
+	attributes['idyoutuberemark2']="Garner himself! what an amazing piano..."
+	attributes['idyoutube2']="nAaZzQWk8V4"
 	attributes['lyricsurl']="http://www.lyrics007.com/Ella%20Fitzgerald%20Lyrics/Misty%20Lyrics.html"
 %>
 % endif

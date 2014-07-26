@@ -11,14 +11,14 @@
 	attributes['style']="Israeli"
 	attributes['composer']=u"יוחנן זראי"
 	attributes['poet']=u"יעקב שבתאי"
-	attributes['singer']=u"אריק לביא"
 	attributes['piece']=u"בלדה איטית"
+	attributes['singer']=u"אריק לביא"
 	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
 
 	attributes['completion']="4"
 	attributes['uuid']="56513346-a26f-11df-b591-0019d11e5a41"
 
-	attributes['idyoutube']="IUZQgbhivqw"
+	attributes['idyoutube1']="IUZQgbhivqw"
 
 %>
 % endif

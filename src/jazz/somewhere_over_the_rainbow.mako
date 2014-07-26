@@ -22,10 +22,10 @@
 	attributes['uuid']="f046f51c-ed4d-11e3-9d71-67b6b025e741"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Keith Jarret solo"
-	attributes['idyoutube']="eq0EWNuR1H8"
-	attributes['idyoutuberemark']="Original Judy Garland version"
-	attributes['idyoutube']="PSZxmZmBfnU"
+	attributes['idyoutuberemark1']="Keith Jarret solo"
+	attributes['idyoutube1']="eq0EWNuR1H8"
+	attributes['idyoutuberemark2']="Original Judy Garland version"
+	attributes['idyoutube2']="PSZxmZmBfnU"
 	attributes['lyricsurl']="http://www.stlyrics.com/lyrics/thewizardofoz/somewhereovertherainbow.htm"
 %>
 % endif

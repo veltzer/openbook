@@ -25,10 +25,10 @@
 	attributes['uuid']="37e8d9d8-db6c-11e3-8007-f7449ea11e17"
 	attributes['structure']="ABAC"
 
-	attributes['idyoutuberemark']="Beautiful lyric version by Chet Baker"
-	attributes['idyoutube']="H6mfWun73vI"
-	attributes['idyoutuberemark']="Vocal version by Sarah Vaughn"
-	attributes['idyoutube']="qNi6M_A9AzU"
+	attributes['idyoutuberemark1']="Beautiful lyric version by Chet Baker"
+	attributes['idyoutube1']="H6mfWun73vI"
+	attributes['idyoutuberemark2']="Vocal version by Sarah Vaughn"
+	attributes['idyoutube2']="qNi6M_A9AzU"
 	attributes['lyricsurl']="http://www.metrolyrics.com/tenderly-lyrics-ella-fitzgerald.html"
 %>
 % endif

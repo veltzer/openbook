@@ -25,10 +25,10 @@
 	attributes['structure']="AB"
 	attributes['structureremark']="This tune has a weird structure because the part B has different lengths"
 
-	attributes['idyoutuberemark']="Tony Bennet slow version"
-	attributes['idyoutube']="uJGqzudEDDE"
-	attributes['idyoutuberemark']="The wonderful ballad version of Astrud Gilberto"
-	attributes['idyoutube']="s6ndU7GKpjI"
+	attributes['idyoutuberemark1']="Tony Bennet slow version"
+	attributes['idyoutube1']="uJGqzudEDDE"
+	attributes['idyoutuberemark2']="The wonderful ballad version of Astrud Gilberto"
+	attributes['idyoutube2']="s6ndU7GKpjI"
 	attributes['lyricsurl']="http://lyrics.wikia.com/Astrud_Gilberto:The_Gentle_Rain"
 %>
 % endif

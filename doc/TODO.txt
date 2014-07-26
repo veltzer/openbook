@@ -1,5 +1,6 @@
 Now:
 ====
+- check if I need the input encoding output encoding.
 - turn the strings in attributes in every song to an enum.
 	This will force the correct strings to be used.
 	Do examples of enums in python to show how to work right with them before

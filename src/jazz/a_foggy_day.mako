@@ -28,10 +28,10 @@
 	attributes['structure']="AB"
 	attributes['structureremark']="this tunes structure can also be categorised as ABAC since the first 8 bars of both the first and second part are the same."
 
-	attributes['idyoutuberemark']="Wynton Marsalis Quartet"
-	attributes['idyoutube']="-P2xoeGoWMs"
-	attributes['idyoutuberemark']="Mel Torme (one of the greatest vocal versions)"
-	attributes['idyoutube']="tVCDZaApwV8"
+	attributes['idyoutuberemark1']="Wynton Marsalis Quartet"
+	attributes['idyoutube1']="-P2xoeGoWMs"
+	attributes['idyoutuberemark2']="Mel Torme (one of the greatest vocal versions)"
+	attributes['idyoutube2']="tVCDZaApwV8"
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/A-Foggy-Day-lyrics-Frank-Sinatra/0F2EB16090A785424825692000077664"
 %>
 % endif

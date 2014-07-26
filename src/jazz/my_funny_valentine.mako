@@ -19,10 +19,10 @@
 	attributes['uuid']="087137ac-a26f-11df-aa1f-0019d11e5a41"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Frank!"
-	attributes['idyoutube']="wG6lAtpcI_Q"
-	attributes['idyoutuberemark']="Chet Baker vocal version (amazing!)"
-	attributes['idyoutube']="7iQQGBfbB0k"
+	attributes['idyoutuberemark1']="Frank!"
+	attributes['idyoutube1']="wG6lAtpcI_Q"
+	attributes['idyoutuberemark2']="Chet Baker vocal version (amazing!)"
+	attributes['idyoutube2']="7iQQGBfbB0k"
 	attributes['lyricsurl']="http://www.elyrics.net/read/f/frank-sinatra-lyrics/my-funny-valentine-lyrics.html"
 %>
 % endif

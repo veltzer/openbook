@@ -20,8 +20,8 @@
 	attributes['structure']="AB"
 	attributes['structureremark']="the structure of this tune could also be thought of ABAC since in the AB interpretation the first 8 bars of the A and B part are identical."
 
-	attributes['idyoutube']="kh_NnsbIqNQ"
-	attributes['idyoutube']="Til3lV_ItZE"
+	attributes['idyoutube1']="kh_NnsbIqNQ"
+	attributes['idyoutube2']="Til3lV_ItZE"
 %>
 % endif
 

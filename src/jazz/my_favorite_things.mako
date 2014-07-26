@@ -27,10 +27,10 @@
 	attributes['uuid']="02c22208-a26f-11df-98fd-0019d11e5a41"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Sarah Vaughan"
-	attributes['idyoutube']="dusavln6Cjw"
-	attributes['idyoutuberemark']="The great version by Coltrane"
-	attributes['idyoutube']="0I6xkVRWzCY"
+	attributes['idyoutuberemark1']="Sarah Vaughan"
+	attributes['idyoutube1']="dusavln6Cjw"
+	attributes['idyoutuberemark2']="The great version by Coltrane"
+	attributes['idyoutube2']="0I6xkVRWzCY"
 	attributes['lyricsurl']="http://www.stlyrics.com/songs/s/soundofmusic9841/myfavouritethings323514.html"
 %>
 % endif

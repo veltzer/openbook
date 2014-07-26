@@ -21,10 +21,10 @@
 	# from the real book
 	attributes['remark']="Play last 4 bars twice more to end"
 
-	attributes['idyoutube']="EhQfGODnvww"
-	attributes['idyoutube']="-0mNSP1452o"
-	attributes['idyoutube']="6sr7BXinJMw"
-	attributes['idyoutube']="lKEEVECH58Q"
+	attributes['idyoutube1']="EhQfGODnvww"
+	attributes['idyoutube2']="-0mNSP1452o"
+	attributes['idyoutube3']="6sr7BXinJMw"
+	attributes['idyoutube4']="lKEEVECH58Q"
 	attributes['lyricsurl']="http://fyicomminc.bizland.com/music/lyrics/bluebossa.htm"
 %>
 % endif

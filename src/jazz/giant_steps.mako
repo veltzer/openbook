@@ -24,10 +24,10 @@
 	attributes['structureremark']="Very weird not repeating structure because of the weird harmony steps"
 	attributes['remark']="the key here is of little meaning as the harmony changes key all the time...:) That's why it's written in C."
 
-	attributes['idyoutuberemark']="Mccoy Tyner awesome solo..."
-	attributes['idyoutube']="PukuQPUKfyU"
-	attributes['idyoutuberemark']="The original Coltrane version..."
-	attributes['idyoutube']="BZRnkBK_0no"
+	attributes['idyoutuberemark1']="Mccoy Tyner awesome solo..."
+	attributes['idyoutube1']="PukuQPUKfyU"
+	attributes['idyoutuberemark2']="The original Coltrane version..."
+	attributes['idyoutube2']="BZRnkBK_0no"
 	attributes['lyricsurl']="http://www.bjazz.com/Giant_Steps.html"
 %>
 % endif

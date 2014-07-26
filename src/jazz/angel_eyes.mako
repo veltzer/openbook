@@ -24,10 +24,10 @@
 	attributes['uuid']="0a43bee4-e044-11e3-9617-b76a2faa3d0b"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Chet Baker in a very good version"
-	attributes['idyoutube']="shuy1hpUGvQ"
-	attributes['idyoutuberemark']="Stings version (I like this one...)"
-	attributes['idyoutube']="QS1MgqJ7B3Y"
+	attributes['idyoutuberemark1']="Chet Baker in a very good version"
+	attributes['idyoutube1']="shuy1hpUGvQ"
+	attributes['idyoutuberemark2']="Stings version (I like this one...)"
+	attributes['idyoutube2']="QS1MgqJ7B3Y"
 	attributes['lyricsurl']="http://www.metrolyrics.com/angel-eyes-lyrics-ella-fitzgerald.html"
 %>
 % endif

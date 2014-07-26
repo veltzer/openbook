@@ -19,10 +19,10 @@
 	attributes['uuid']="f0a5804c-eb83-11e0-aeb1-0019d11e5a41"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Theloneous Monk...:)"
-	attributes['idyoutube']="GsI4oNKGJPg"
-	attributes['idyoutuberemark']="Dexter Gordon, once of the great performances of this song..."
-	attributes['idyoutube']="upZ00qxXrBg"
+	attributes['idyoutuberemark1']="Theloneous Monk...:)"
+	attributes['idyoutube1']="GsI4oNKGJPg"
+	attributes['idyoutuberemark2']="Dexter Gordon, one of the great performances of this song..."
+	attributes['idyoutube2']="upZ00qxXrBg"
 	attributes['lyricsurl']="http://www.lyricsfreak.com/b/billie+holiday/darn+that+dream_20018018.html"
 %>
 % endif

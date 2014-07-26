@@ -21,10 +21,10 @@
 	attributes['uuid']="718a13e0-023a-11e1-924f-0019d11e5a41"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="An amzing version by Oscar Peterson"
-	attributes['idyoutube']="TSNPzm_wYLY"
-	attributes['idyoutuberemark']="Bill Evans in the amazing Village Vanguard version"
-	attributes['idyoutube']="bSXRvgFea-0"
+	attributes['idyoutuberemark1']="An amzing version by Oscar Peterson"
+	attributes['idyoutube1']="TSNPzm_wYLY"
+	attributes['idyoutuberemark2']="Bill Evans in the amazing Village Vanguard version"
+	attributes['idyoutube2']="bSXRvgFea-0"
 	attributes['lyricsurl']="http://www.stlyrics.com/lyrics/aliceinwonderland/aliceinwonderland.htm"
 %>
 % endif

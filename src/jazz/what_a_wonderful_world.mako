@@ -19,10 +19,10 @@
 	attributes['uuid']="39de7d2c-a26f-11df-8dbc-0019d11e5a41"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Orchestral version from the film score of \"Meet Joe Black\""
-	attributes['idyoutube']="Qhrpc9FFFAI"
-	attributes['idyoutuberemark']="Louis in the classic version"
-	attributes['idyoutube']="m5TwT69i1lU"
+	attributes['idyoutuberemark1']="Orchestral version from the film score of \"Meet Joe Black\""
+	attributes['idyoutube1']="Qhrpc9FFFAI"
+	attributes['idyoutuberemark2']="Louis in the classic version"
+	attributes['idyoutube2']="m5TwT69i1lU"
 	attributes['lyricsurl']="http://www.lyrics007.com/Louis%20Armstrong%20Lyrics/What%20A%20Wonderful%20World%20Lyrics.html"
 %>
 % endif

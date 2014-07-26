@@ -18,8 +18,8 @@
 	attributes['structure']="AB"
 	attributes['remark']="the My version is from Amit Golan"
 
-	attributes['idyoutube']="7Oh-Dl-KbF0"
-	attributes['idyoutube']="u6lXbfx1hHw"
+	attributes['idyoutube1']="7Oh-Dl-KbF0"
+	attributes['idyoutube2']="u6lXbfx1hHw"
 	attributes['lyricsurl']="http://lyricsplayground.com/alpha/songs/i/illclosemyeyes.shtml"
 %>
 % endif

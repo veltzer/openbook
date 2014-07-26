@@ -7,8 +7,8 @@
 
 	attributes['title']=u"עוד חוזר הניגון"
 	attributes['style']="Israeli"
-	attributes['singer']=u"ברי סחרוף"
 	attributes['piece']=u"בלדה מתונה"
+	attributes['singer']=u"ברי סחרוף"
 	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
 
 	attributes['completion']="0"

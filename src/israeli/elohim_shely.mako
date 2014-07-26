@@ -11,15 +11,15 @@
 	attributes['style']="Israeli"
 	attributes['composer']=u"עוזי חיטמן"
 	attributes['poet']=u"עוזי חיטמן"
-	attributes['singer']=u"עוזי חיטמן"
 	attributes['piece']=u"בלדה מתונה"
+	attributes['singer']=u"עוזי חיטמן"
 	attributes['arranger']=u"יאיר רוזנבלום"
 	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
 
 	attributes['completion']="2"
 	attributes['uuid']="467b2af8-a26f-11df-b03d-0019d11e5a41"
 
-	attributes['idyoutube']="fTZb0abU4Rw"
+	attributes['idyoutube1']="fTZb0abU4Rw"
 
 %>
 % endif

@@ -18,10 +18,10 @@
 	attributes['uuid']="f9668406-a26e-11df-8542-0019d11e5a41"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="The famous Ella version"
-	attributes['idyoutube']="UY8zK4R9oE8"
-	attributes['idyoutuberemark']="George Shearing himself! Amazing!"
-	attributes['idyoutube']="LKXvMbAKAmY"
+	attributes['idyoutuberemark1']="The famous Ella version"
+	attributes['idyoutube1']="UY8zK4R9oE8"
+	attributes['idyoutuberemark2']="George Shearing himself! Amazing!"
+	attributes['idyoutube2']="LKXvMbAKAmY"
 	attributes['lyricsurl']="http://www.bluesforpeace.com/lyrics/lullaby-birdland.htm"
 %>
 % endif

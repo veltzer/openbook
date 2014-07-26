@@ -22,10 +22,10 @@
 	attributes['uuid']="d0904c80-d84b-11e3-b741-dbf5614f4f33"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Louis and Ella in a great performance"
-	attributes['idyoutube']="ExmoiGZuiFQ"
-	attributes['idyoutuberemark']="Tony Bennett and Elvis Constello..."
-	attributes['idyoutube']="x6uDp5lYPzs"
+	attributes['idyoutuberemark1']="Louis and Ella in a great performance"
+	attributes['idyoutube1']="ExmoiGZuiFQ"
+	attributes['idyoutuberemark2']="Tony Bennett and Elvis Constello..."
+	attributes['idyoutube2']="x6uDp5lYPzs"
 	attributes['lyricsurl']="http://www.lyrics007.com/Ella%20Fitzgerald%20Lyrics/They%20Can%27t%20Take%20That%20Away%20From%20Me%20Lyrics.html"
 %>
 % endif

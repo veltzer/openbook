@@ -23,10 +23,10 @@
 	attributes['uuid']="c3fff540-a26e-11df-9435-0019d11e5a41"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Joao Gilberto in a nice brasilian version"
-	attributes['idyoutube']="g6w3a2v_50U"
-	attributes['idyoutuberemark']="Stan Getz in a nice instrumental version"
-	attributes['idyoutube']="lo1SiVwVqic"
+	attributes['idyoutuberemark1']="Joao Gilberto in a nice brasilian version"
+	attributes['idyoutube1']="g6w3a2v_50U"
+	attributes['idyoutuberemark2']="Stan Getz in a nice instrumental version"
+	attributes['idyoutube2']="lo1SiVwVqic"
 	attributes['lyricsurl']="http://www.hotlyrics.net/lyrics/E/Ella_Fitzgerald/Desafinado.html"
 %>
 % endif

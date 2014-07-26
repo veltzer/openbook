@@ -26,10 +26,10 @@
 	attributes['structure']="AA'BA''"
 	attributes['structureremark']="this tune is very close to AABA. The tags (A') are there to show that there are subtle changes but these are indeed subtle."
 
-	attributes['idyoutuberemark']="Ella & Louis"
-	attributes['idyoutube']="ppFVmnmpGz8"
-	attributes['idyoutuberemark']="Carlie Biddle with daughter Stephanie Biddle - excellent performance"
-	attributes['idyoutube']="TdLm9qRRdh4"
+	attributes['idyoutuberemark1']="Ella & Louis"
+	attributes['idyoutube1']="ppFVmnmpGz8"
+	attributes['idyoutuberemark2']="Carlie Biddle with daughter Stephanie Biddle - excellent performance"
+	attributes['idyoutube2']="TdLm9qRRdh4"
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/They-All-Laughed-lyrics-Ella-Fitzgerald/2123DA2C32C02AF848256AAB000AB847"
 %>
 % endif

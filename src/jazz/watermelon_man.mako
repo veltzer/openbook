@@ -16,7 +16,7 @@
 	attributes['uuid']="359f7428-a26f-11df-ad8c-0019d11e5a41"
 	attributes['structure']="16 bar Blues"
 
-	attributes['idyoutube']="4z8Rt4nvd-I"
+	attributes['idyoutube1']="4z8Rt4nvd-I"
 %>
 % endif
 

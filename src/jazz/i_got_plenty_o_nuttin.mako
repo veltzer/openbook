@@ -8,8 +8,8 @@
 	attributes['render']="Fake"
 
 	attributes['title']="I Got Plenty O' Nuttin'"
-	attributes['subtitle']="(From \\\"Porgy and Bess\\\")"
 	attributes['style']="Jazz"
+	attributes['subtitle']="(From \\\"Porgy and Bess\\\")"
 	attributes['composer']="George Gershwin"
 	attributes['poet']="Ira Gershwin, DuBose Hayward"
 	attributes['piece']="Moderately"

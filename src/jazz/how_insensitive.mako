@@ -31,10 +31,10 @@
 	attributes['structure']="AB"
 	attributes['structureremark']="this tunes structure can also be categorised as ABAC since the first 8 bars of both the first and second part are the same."
 
-	attributes['idyoutuberemark']="Jobim with Pat Metheny"
-	attributes['idyoutube']="VendEbBv3nc"
-	attributes['idyoutuberemark']="Astrud Gilberto in the classic version"
-	attributes['idyoutube']="nIW049UrhGM"
+	attributes['idyoutuberemark1']="Jobim with Pat Metheny"
+	attributes['idyoutube1']="VendEbBv3nc"
+	attributes['idyoutuberemark2']="Astrud Gilberto in the classic version"
+	attributes['idyoutube2']="nIW049UrhGM"
 	attributes['lyricsurl']="http://www.lyricsmode.com/lyrics/a/antonio_carlos_jobim/how_insensitive.html"
 %>
 % endif

@@ -23,10 +23,10 @@
 	attributes['structure']="ABAC"
 	attributes['structureremark']="This can also be seen as AB but they start with exactly the same first 8 bar so ABAC is better"
 
-	attributes['idyoutuberemark']="Charlie!"
-	attributes['idyoutube']="DEeISJ0wr48"
-	attributes['idyoutuberemark']="Kenny Garrett And Brad Mehldau classic"
-	attributes['idyoutube']="W_CskOhskbc"
+	attributes['idyoutuberemark1']="Charlie!"
+	attributes['idyoutube1']="DEeISJ0wr48"
+	attributes['idyoutuberemark2']="Kenny Garrett And Brad Mehldau classic"
+	attributes['idyoutube2']="W_CskOhskbc"
 %>
 % endif
 

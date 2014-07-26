@@ -9,9 +9,9 @@
 	# from the fake book
 	attributes['title']="Chega De Saudade"
 	# from the fake book
-	attributes['subtitle']="No More Blues"
-	# from the fake book
 	attributes['style']="Latin/Jazz"
+	# from the fake book
+	attributes['subtitle']="No More Blues"
 	# from the fake book
 	attributes['composer']="Antonio Carlos Jobim"
 	# from the fake book
@@ -28,10 +28,10 @@
 	attributes['uuid']="a8d44d0c-a26e-11df-a32b-0019d11e5a41"
 	attributes['structure']="AA'BA''"
 
-	attributes['idyoutuberemark']="The original Jobim on piano"
-	attributes['idyoutube']="-c6Zbi3tbMg"
-	attributes['idyoutuberemark']="And Jobim sings..."
-	attributes['idyoutube']="UzFJwiHRwDg"
+	attributes['idyoutuberemark1']="The original Jobim on piano"
+	attributes['idyoutube1']="-c6Zbi3tbMg"
+	attributes['idyoutuberemark2']="And Jobim sings..."
+	attributes['idyoutube2']="UzFJwiHRwDg"
 	attributes['lyricsurl']="http://www.stlyrics.com/songs/j/janemonheit24558/chegadesaudadenomoreblues1055457.html"
 %>
 % endif

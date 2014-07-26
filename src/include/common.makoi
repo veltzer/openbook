@@ -11,17 +11,19 @@
 	import socket # for gethostname
 	import subprocess # for subprocess.check_output
 
-	attributes['lilyver']='2.16.2'
-	attributes['date']=datetime.datetime.now().strftime('%T %d-%m-%Y')
-	attributes['year']=datetime.datetime.now().strftime('%Y')
-	attributes['username']=pwd.getpwuid(os.getuid())[0]
-	attributes['gittag']=subprocess.check_output(['git','describe','--abbrev=0']).decode().strip()
-	attributes['gitdesc']=subprocess.check_output(['git','describe','--tags']).decode().strip()
-	attributes['gitcommits']=subprocess.check_output(['git','log','--pretty=format:\'\'']).decode().split('\n').__len__()
-	attributes['hostname']=socket.gethostname()
-	attributes['kernel']=os.uname()[0]+' '+os.uname()[2]
+	gattr['lilyver']='2.16.2'
+	gattr['date']=datetime.datetime.now().strftime('%T %d-%m-%Y')
+	gattr['year']=datetime.datetime.now().strftime('%Y')
+	gattr['username']=pwd.getpwuid(os.getuid())[0]
+	gattr['gittag']=subprocess.check_output(['git','describe','--abbrev=0']).decode().strip()
+	gattr['gitdesc']=subprocess.check_output(['git','describe','--tags']).decode().strip()
+	gattr['gitcommits']=subprocess.check_output(['git','log','--pretty=format:\'\'']).decode().split('\n').__len__()
+	gattr['hostname']=socket.gethostname()
+	gattr['kernel']=os.uname()[0]+' '+os.uname()[2]
+	gattr['copyrightvalstudy']='-- no copyright notice for study materials --'
+	gattr['lyricsInMidi']=False
 %>
-\version "${attributes['lilyver']}"
+\version "${gattr['lilyver']}"
 
 %% lets define a variable to hold the formatted build date (man 3 strftime):
 %%date=#(strftime "%T %d-%m-%Y" (localtime (current-time)))
@@ -201,23 +203,31 @@ endChords={}
 <%def name="clearVars()">
 <%
 	# these are variables passed to the template for its use
-	attributes['copyrightvalstudy']='-- no copyright notice for study materials --'
 
 	# these are the default values for the variables
-	attributes['enteredby']=''
-	attributes['maintainerEmail']=''
-	attributes['footer']=''
-	attributes['tagline']=''
+	attributes.reset()
+	attributes['doChords']=False
+	attributes['doVoice']=False
+	attributes['doLyrics']=False
+	attributes['doLyricsmore']=False
+	attributes['doLyricsmoremore']=False
+	attributes['doChordBars']=False
+	attributes['doGuitar']=False
+	attributes['doExtra']=False
+	attributes['doPrep']=False
+	attributes['doOwn']=False
+	attributes['render']=''
+	attributes['heb']=False
 
 	attributes['dedication']=''
 	attributes['title']=''
+	attributes['style']=''
 	attributes['subtitle']=''
 	attributes['subsubtitle']=''
 	attributes['composer']=''
-	attributes['style']=''
+	attributes['poet']=''
 	attributes['piece']=''
 	attributes['opus']=''
-	attributes['poet']=''
 	attributes['instrument']=''
 
 	attributes['copyright']=''
@@ -227,25 +237,20 @@ endChords={}
 	attributes['uuid']=''
 
 	attributes['structure']=''
-	attributes['idyoutube']=''
-	attributes['idyoutuberemark']=''
+	attributes['idyoutuberemark1']=''
+	attributes['idyoutube1']=''
+	attributes['idyoutuberemark2']=''
+	attributes['idyoutube2']=''
+	attributes['idyoutuberemark3']=''
+	attributes['idyoutube3']=''
+	attributes['idyoutuberemark4']=''
+	attributes['idyoutube4']=''
 	attributes['lyricsurl']=''
 
-	attributes['doGuitar']=False
-	attributes['doExtra']=False
-	attributes['doPrep']=False
-	attributes['doOwn']=False
+	attributes.reset()
 
-	attributes['doChords']=False
-	attributes['doVoice']=False
-	attributes['doLyrics']=False
-	attributes['doLyricsmore']=False
-	attributes['doLyricsmoremore']=False
-	attributes['render']=''
-	attributes['heb']=False
-	attributes['lyricsInMidi']=False
-	attributes['doChordBars']=False
 %>
+
 </%def>
 
 %% lets emit the definitions
@@ -302,7 +307,7 @@ ${self.defs()}
 				\fill-line {
 					\huge \bold \concat {
 						"Typesetting copyright: © 2011-"
-						${attributes['year']}
+						${gattr['year']}
 						" Mark Veltzer "
 						"<" \with-url #"mailto:mark.veltzer@gmail.com" mark.veltzer@gmail.com ">"
 					}
@@ -312,14 +317,14 @@ ${self.defs()}
 				\null
 				\null
 				\null
-				\fill-line { \small "Git tag: ${attributes['gittag']}" }
-				\fill-line { \small "Git describe: ${attributes['gitdesc']}" }
-				\fill-line { \small "Git commits: ${attributes['gitcommits']}" }
-				\fill-line { \small "Build date: ${attributes['date']}" }
-				\fill-line { \small "Build user: ${attributes['username']}" }
-				\fill-line { \small "Build host: ${attributes['hostname']}" }
-				\fill-line { \small "Build kernel: ${attributes['kernel']}" }
-				\fill-line { \small "Lilypond version: ${attributes['lilyver']}" }
+				\fill-line { \small "Git tag: ${gattr['gittag']}" }
+				\fill-line { \small "Git describe: ${gattr['gitdesc']}" }
+				\fill-line { \small "Git commits: ${gattr['gitcommits']}" }
+				\fill-line { \small "Build date: ${gattr['date']}" }
+				\fill-line { \small "Build user: ${gattr['username']}" }
+				\fill-line { \small "Build host: ${gattr['hostname']}" }
+				\fill-line { \small "Build kernel: ${gattr['kernel']}" }
+				\fill-line { \small "Lilypond version: ${gattr['lilyver']}" }
 				\fill-line { \small "Number of tunes: ${len(gattr['files'])}" }
 				\null
 				\null
@@ -377,26 +382,26 @@ ${self.clearVars()}
 				add=' / '+attributes['composer']
 			else:
 				add=' / '+attributes['composer']+', '+attributes['poet']
-	attributes['tocname']=attributes['title']+add
+	scratch['tocname']=attributes['title']+add
 %>
 % if attributes['copyright']=='':
 % if attributes['heb']:
 <%
-	attributes['copyright']=u'-- עיזרו לי למלא את שורת זכויות היוצרים הזו --'
+	scratch['copyright']=u'-- עיזרו לי למלא את שורת זכויות היוצרים הזו --'
 %>
 % else:
 <%
-	attributes['copyright']='-- help me fill it out this copyright notice --'
+	scratch['copyright']='-- help me fill it out this copyright notice --'
 %>
 % endif
 % else:
 % if attributes['heb']:
 <%
-	attributes['copyright']=u'זכויות יוצרים © '+attributes['copyright']
+	scratch['copyright']=u'זכויות יוצרים © '+attributes['copyright']
 %>
 % else:
 <%
-	attributes['copyright']=u'Copyright © '+attributes['copyright']
+	scratch['copyright']=u'Copyright © '+attributes['copyright']
 %>
 % endif
 % endif
@@ -404,36 +409,24 @@ ${self.clearVars()}
 %% calculate the tag line
 % if attributes['heb']:
 <%
-	attributes['tagline']=u'תווי על ידי '+attributes['typesetter']+u', נבנה בתאריך'+attributes['date']+u', תימון על ידי lilypond '+attributes['lilyver']
+	scratch['tagline']=u'תווי על ידי '+attributes['typesetter']+u', נבנה בתאריך'+gattr['date']+u', תימון על ידי lilypond '+gattr['lilyver']
 %>
 % else:
 <%
-	attributes['tagline']='Typeset by '+attributes['typesetter']+', Built at '+attributes['date']+', Engraved by lilypond '+attributes['lilyver']
+	scratch['tagline']='Typeset by '+attributes['typesetter']+', Built at '+gattr['date']+', Engraved by lilypond '+gattr['lilyver']
 %>
 % endif
 
 %% calculate the typesetby
 % if attributes['heb']:
 <%
-	attributes['typesetby']=u'תווי על ידי '+attributes['typesetter']
+	scratch['typesetby']=u'תווי על ידי '+attributes['typesetter']
 %>
 % else:
 <%
-	attributes['typesetby']='Typeset by '+attributes['typesetter']
+	scratch['typesetby']='Typeset by '+attributes['typesetter']
 %>
 % endif
-
-<%doc>
-do all of these...
-subsubtitleval=#"Built by Mark Veltzer <mark.veltzer@gmail.com> at esyscmd(date)"
-subsubtitlevalheb=#"נבנה על ידי מרק ולצר mark.veltzer@gmail.com ב esyscmd(date)"
-enteredbyval=#"Mark Veltzer"
-enteredbyvalheb=#"מרק ולצר"
-maintainerEmailval=#"mark.veltzer@gmail.com"
-maintainerEmailvalheb=#"mark.veltzer@gmail.com"
-footerval=#"this is the footer"
-footervalheb=#"זה הטקסט התחתון"
-</%doc>
 
 <%doc>
 % if attributes['doGuitar']:
@@ -442,17 +435,12 @@ footervalheb=#"זה הטקסט התחתון"
 </%doc>
 
 % if gattr['toc']:
-\tocItem \markup "${attributes['tocname']}"
+\tocItem \markup "${scratch['tocname']}"
 % endif
 
 <%doc>
 %% emitting the header...
 \header {
-	enteredby="${attributes['enteredby']}"
-	maintainerEmail="${attributes['maintainerEmail']}"
-	footer="${attributes['footer']}"
-	tagline="${attributes['tagline']}"
-
 	dedication="${attributes['dedication']}"
 	title="${attributes['title']}"
 	subtitle="${attributes['subtitle']}"
@@ -462,15 +450,17 @@ footervalheb=#"זה הטקסט התחתון"
 	piece="${attributes['piece']}"
 	opus="${attributes['opus']}"
 	poet="${attributes['poet']}"
-	copyright="${attributes['copyright']}"
-	copyrightextra="${attributes['copyrightextra']}"
+	copyright="${scratch['copyright']}"
+	copyrightextra="${scratch['copyrightextra']}"
 
 	completion="${attributes['completion']}"
 	uuid="${attributes['uuid']}"
 
 	structure="${attributes['structure']}"
-	idyoutube="${attributes['idyoutube']}"
-	idyoutuberemark="${attributes['idyoutuberemark']}"
+	idyoutuberemark1="${attributes['idyoutuberemark1']}"
+	idyoutube1="${attributes['idyoutube1']}"
+	idyoutuberemark2="${attributes['idyoutuberemark2']}"
+	idyoutube2="${attributes['idyoutube2']}"
 	lyricsurl="${attributes['lyricsurl']}"
 }
 </%doc>
@@ -480,31 +470,33 @@ footervalheb=#"זה הטקסט התחתון"
 	# just fills in the raw poet/composer data and this takes care of the nice printing...
 	if attributes['poet']==attributes['composer'] and attributes['poet']!='':
 		if attributes['heb']:
-			attributes['fullcomposer']=u'מילים ולחן: '+attributes['poet']
+			scratch['fullcomposer']=u'מילים ולחן: '+attributes['poet']
 		else:
-			attributes['fullcomposer']='Lyrics and Music by '+attributes['poet']
-		attributes['fullpoet']=''
+			scratch['fullcomposer']='Lyrics and Music by '+attributes['poet']
+		scratch['fullpoet']=''
 	else:
 		if attributes['poet']=='':
-			attributes['fullpoet']=''
+			scratch['fullpoet']=''
 		else:
 			if attributes['heb']:
-				attributes['fullpoet']=u'מלים: '+attributes['poet']
+				scratch['fullpoet']=u'מלים: '+attributes['poet']
 			else:
-				attributes['fullpoet']='Lyrics by '+attributes['poet']
+				scratch['fullpoet']='Lyrics by '+attributes['poet']
 		if attributes['composer']=='':
-			attributes['fullcomposer']=''
+			scratch['fullcomposer']=''
 		else:
 			if attributes['heb']:
-				attributes['fullcomposer']=u'לחן: '+attributes['composer']
+				scratch['fullcomposer']=u'לחן: '+attributes['composer']
 			else:
-				attributes['fullcomposer']='Music by '+attributes['composer']
+				scratch['fullcomposer']='Music by '+attributes['composer']
 %>
 
 %% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
 \markup {
 	\column {
+% if attributes['dedication']!='':
 		\fill-line { "${attributes['dedication']}" }
+% endif
 		\override #'(baseline-skip . 3.5)
 		\column {
 			\huge \larger \bold
@@ -514,8 +506,8 @@ footervalheb=#"זה הטקסט התחתון"
 % endif
 			\fill-line { \smaller \bold "${attributes['subsubtitle']}" }
 			\fill-line {
-				"${attributes['fullpoet']}"
-				"${attributes['fullcomposer']}"
+				"${scratch['fullpoet']}"
+				"${scratch['fullcomposer']}"
 			}
 			\fill-line {
 				"${attributes['piece']}"
@@ -659,7 +651,7 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 % endif
 }
 % endif
-% if attributes['lyricsInMidi']:
+% if gattr['lyricsInMidi']:
 % if attributes['doLyrics']:
 \new Lyrics="Lyrics" \lyricsto "Voice"
 % if gattr['inline']:
@@ -707,16 +699,16 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 	%% just a little space
 	\null
 	\fill-line {
-		\smaller \smaller { "${attributes['copyright']}" }
+		\smaller \smaller { "${scratch['copyright']}" }
 	}
 % if gattr['book']:
 	\fill-line {
-		\smaller \smaller { "${attributes['typesetby']}" }
+		\smaller \smaller { "${scratch['typesetby']}" }
 	}
 % endif
 % if gattr['book']==False:
 	\fill-line {
-		\smaller \smaller { "${attributes['tagline']}" }
+		\smaller \smaller { "${scratch['tagline']}" }
 	}
 	\fill-line {
 		\smaller \smaller { \with-url #"https://veltzer.net/openbook" https://veltzer.net/openbook }

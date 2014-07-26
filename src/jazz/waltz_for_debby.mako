@@ -25,10 +25,10 @@
 	attributes['uuid']="010d881c-e348-11e3-bd2b-af99bf9a3980"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Bill Evans in great form"
-	attributes['idyoutube']="dH3GSrCmzC8"
-	attributes['idyoutuberemark']="Bill with Tony Bennett"
-	attributes['idyoutube']="lsb8mYrYycE"
+	attributes['idyoutuberemark1']="Bill Evans in great form"
+	attributes['idyoutube1']="dH3GSrCmzC8"
+	attributes['idyoutuberemark2']="Bill with Tony Bennett"
+	attributes['idyoutube2']="lsb8mYrYycE"
 	attributes['lyricsurl']="http://www.azlyrics.com/lyrics/tonybennett/waltzfordebby.html"
 %>
 % endif

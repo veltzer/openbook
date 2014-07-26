@@ -23,12 +23,12 @@
 	attributes['structure']="AB"
 	attributes['structureremark']="the structure of this tune could also be interpreted as ABAC since the 8 first bars of A and B are the same."
 
-	attributes['idyoutuberemark']="Louis Armstrong with amazing rythm"
-	attributes['idyoutube']="wFzxo-XI8As"
-	attributes['idyoutuberemark']="Ella Firtzerald - amazing"
-	attributes['idyoutube']="Mx5b4AFVaT8"
-	attributes['idyoutuberemark']="Oscar - amazing version"
-	attributes['idyoutube']="aNLvaBCFHdE"
+	attributes['idyoutuberemark1']="Louis Armstrong with amazing rythm"
+	attributes['idyoutube1']="wFzxo-XI8As"
+	attributes['idyoutuberemark2']="Ella Firtzerald - amazing"
+	attributes['idyoutube2']="Mx5b4AFVaT8"
+	attributes['idyoutuberemark3']="Oscar - amazing version"
+	attributes['idyoutube3']="aNLvaBCFHdE"
 	attributes['lyricsurl']="http://www.lyrics007.com/Frank%20Sinatra%20Lyrics/All%20Of%20Me%20Lyrics.html"
 %>
 % endif

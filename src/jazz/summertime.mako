@@ -21,10 +21,10 @@
 	attributes['uuid']="2615b7ec-a26f-11df-b010-0019d11e5a41"
 	attributes['structure']="AB"
 
-	attributes['idyoutuberemark']="Janis!"
-	attributes['idyoutube']="mzNEgcqWDG4"
-	attributes['idyoutuberemark']="Ella Fitzgerald with Louis"
-	attributes['idyoutube']="MIDOEsQL7lA"
+	attributes['idyoutuberemark1']="Janis!"
+	attributes['idyoutube1']="mzNEgcqWDG4"
+	attributes['idyoutuberemark2']="Ella Fitzgerald with Louis"
+	attributes['idyoutube2']="MIDOEsQL7lA"
 	attributes['lyricsurl']="http://www.stlyrics.com/songs/g/georgegershwin8836/summertime299720.html"
 %>
 % endif

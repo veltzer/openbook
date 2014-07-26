@@ -27,10 +27,10 @@
 	attributes['structure']="ABAC"
 	attributes['structureremark']="You can also think of this as AB"
 
-	attributes['idyoutuberemark']="Nat King Cole in a great vocal version"
-	attributes['idyoutube']="yokM-Hfu5Gc"
-	attributes['idyoutuberemark']="The great Bill Evans"
-	attributes['idyoutube']="cJzIvj9IKcM"
+	attributes['idyoutuberemark1']="Nat King Cole in a great vocal version"
+	attributes['idyoutube1']="yokM-Hfu5Gc"
+	attributes['idyoutuberemark2']="The great Bill Evans"
+	attributes['idyoutube2']="cJzIvj9IKcM"
 	attributes['lyricsurl']="http://kokomo.ca/pop_standards/heres_that_rainy_day_lyrics.htm"
 %>
 % endif

@@ -18,10 +18,10 @@
 	attributes['uuid']="4cc04ec0-e8b6-11e3-a334-5bb66fd360f0"
 	attributes['structure']="A"
 
-	attributes['idyoutuberemark']="Classic Monk..."
-	attributes['idyoutube']="FRUWtrgTpcs"
-	attributes['idyoutuberemark']="Bobby McFerrin and Chick Corea"
-	attributes['idyoutube']="u0LDlgOsp_k"
+	attributes['idyoutuberemark1']="Classic Monk..."
+	attributes['idyoutube1']="FRUWtrgTpcs"
+	attributes['idyoutuberemark2']="Bobby McFerrin and Chick Corea"
+	attributes['idyoutube2']="u0LDlgOsp_k"
 %>
 % endif
 

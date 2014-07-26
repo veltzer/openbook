@@ -23,10 +23,10 @@
 	attributes['structure']="AABA"
 	attributes['structureremark']="this tunes structure can also be categorised as ABAC since the first 8 bars of both the first and second part are the same."
 
-	attributes['idyoutuberemark']="The great trumpet version of Chet Baker"
-	attributes['idyoutube']="zdDhinO58ss"
-	attributes['idyoutuberemark']="Dexter in a soprano sax version"
-	attributes['idyoutube']="mmu6kgQtl-k"
+	attributes['idyoutuberemark1']="The great trumpet version of Chet Baker"
+	attributes['idyoutube1']="zdDhinO58ss"
+	attributes['idyoutuberemark2']="Dexter in a soprano sax version"
+	attributes['idyoutube2']="mmu6kgQtl-k"
 	attributes['lyricsurl']="http://www.hotlyrics.net/lyrics/E/Ella_Fitzgerald/Alone_Together.html"
 %>
 % endif
