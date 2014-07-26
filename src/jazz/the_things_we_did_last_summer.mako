@@ -23,12 +23,12 @@
 	attributes['structure']="AABA"
 	attributes['structureremark']="This is not a perfect AABA (last A is a little different) but very very close"
 
-	attributes['idyoutuberemark']="Fats Navaro blowing cool"
-	attributes['idyoutube']="extdr--C3jI"
-	attributes['idyoutuberemark']="The classic Dean Martin version"
-	attributes['idyoutube']="yRWfc-8wLm4"
-	attributes['idyoutuberemark']="The classic Sinatra version"
-	attributes['idyoutube']="f_88dKZHeF4"
+	attributes['idyoutuberemark1']="Fats Navaro blowing cool"
+	attributes['idyoutube1']="extdr--C3jI"
+	attributes['idyoutuberemark2']="The classic Dean Martin version"
+	attributes['idyoutube2']="yRWfc-8wLm4"
+	attributes['idyoutuberemark3']="The classic Sinatra version"
+	attributes['idyoutube3']="f_88dKZHeF4"
 	attributes['lyricsurl']="http://www.lyricsfreak.com/f/frank+sinatra/the+things+we+did+last+summer_20055125.html"
 %>
 % endif

@@ -23,12 +23,12 @@
 	attributes['structure']="ABAC"
 	attributes['structureremark']="This could be thought of as AB as well"
 
-	attributes['idyoutuberemark']="Miles"
-	attributes['idyoutube']="Lo18F5ObPng"
-	attributes['idyoutuberemark']="the great Bill Evans"
-	attributes['idyoutube']="zYpKNM1Yi5o"
-	attributes['idyoutuberemark']="and Bill again"
-	attributes['idyoutube']="KUT06K5eGz4"
+	attributes['idyoutuberemark1']="Miles"
+	attributes['idyoutube1']="Lo18F5ObPng"
+	attributes['idyoutuberemark2']="the great Bill Evans"
+	attributes['idyoutube2']="zYpKNM1Yi5o"
+	attributes['idyoutuberemark3']="and Bill again"
+	attributes['idyoutube3']="KUT06K5eGz4"
 	attributes['lyricsurl']="http://artists.letssingit.com/disney-lyrics-someday-my-prince-will-come-31rjgwv"
 %>
 % endif

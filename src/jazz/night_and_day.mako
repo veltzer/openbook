@@ -19,10 +19,10 @@
 	attributes['uuid']="f3f8f010-3fda-11e2-ad72-a3725b0aaeaa"
 	attributes['structure']="AAB"
 
-	attributes['idyoutuberemark']="Cannonical version by Frank Sinatra"
-	attributes['idyoutube']="mGGirB4XOmI"
-	attributes['idyoutuberemark']="Cole Porter version"
-	attributes['idyoutube']="5WX_fKVWX2s"
+	attributes['idyoutuberemark1']="Cannonical version by Frank Sinatra"
+	attributes['idyoutube1']="mGGirB4XOmI"
+	attributes['idyoutuberemark2']="Cole Porter version"
+	attributes['idyoutube2']="5WX_fKVWX2s"
 	attributes['lyricsurl']="http://www.lyricsfreak.com/f/frank+sinatra/night+day_20055251.html"
 	attributes['wiki']="Night_and_Day_(song)"
 %>

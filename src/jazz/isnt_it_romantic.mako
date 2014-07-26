@@ -8,9 +8,9 @@
 	attributes['render']="Real"
 
 	attributes['title']="Isn't It Romantic"
+	attributes['style']="Jazz"
 	# from the Hal Leonard book
 	attributes['subtitle']="From the Paramount Picture 'Love Me Tonight'"
-	attributes['style']="Jazz"
 	# from the Hal Leonard book
 	attributes['composer']="Richard Rodgers"
 	# from the Hal Leonard book
@@ -25,10 +25,10 @@
 	attributes['uuid']="dedcc73c-1ead-11e1-8007-0019d11e5a41"
 	attributes['structure']="ABAC"
 
-	attributes['idyoutubedesc']="Cool Jazz by Chet Baker..."
-	attributes['idyoutube']="c8C6i3kpsQU"
-	attributes['idyoutubedesc']="Swinging Bill Evans..."
-	attributes['idyoutube']="10ZYoSryrcI"
+	attributes['idyoutuberemark1']="Cool Jazz by Chet Baker..."
+	attributes['idyoutube1']="c8C6i3kpsQU"
+	attributes['idyoutuberemark2']="Swinging Bill Evans..."
+	attributes['idyoutube2']="10ZYoSryrcI"
 	attributes['lyricsurl']="http://www.stlyrics.com/lyrics/onefineday/isntitromantic.htm"
 %>
 % endif

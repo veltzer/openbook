@@ -7,8 +7,8 @@
 	attributes['render']="Real"
 
 	attributes['title']="One Note Samba"
-	attributes['subtitle']="Samba de uma nota so"
 	attributes['style']="Jazz"
+	attributes['subtitle']="Samba de uma nota so"
 	attributes['composer']="Antonio Carlos Jobim"
 	attributes['poet']="Newton Mendonca"
 	# this is from the fake book
@@ -21,10 +21,10 @@
 	attributes['uuid']="21bc8284-a26f-11df-a829-0019d11e5a41"
 	attributes['structure']="ABA'"
 
-	attributes['idyoutuberemark']="Dizzy Gilespie in a great version"
-	attributes['idyoutube']="Jb7LqPmWBKw"
-	attributes['idyoutuberemark']="The only performance of Jobim in Japan"
-	attributes['idyoutube']="eEkMwotUuic"
+	attributes['idyoutuberemark1']="Dizzy Gilespie in a great version"
+	attributes['idyoutube1']="Jb7LqPmWBKw"
+	attributes['idyoutuberemark2']="The only performance of Jobim in Japan"
+	attributes['idyoutube2']="eEkMwotUuic"
 	attributes['lyricsurl']="http://www.lyricsfreak.com/f/frank+sinatra/one+note+samba_10122272.html"
 %>
 % endif

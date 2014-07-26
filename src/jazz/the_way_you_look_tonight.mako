@@ -26,12 +26,12 @@
 	attributes['structure']="AABA"
 	attributes['structureremark']="The New Real Book marks this one as AABC but the C is too damn close to the A"
 
-	attributes['idyoutuberemark']="The cannonical performance by Frank Sinatra"
-	attributes['idyoutube']="h9ZGKALMMuc"
-	attributes['idyoutuberemark']="Nat King Cole in a great version"
-	attributes['idyoutube']="qLVvHtKUrdQ"
-	attributes['idyoutuberemark']="Monk and Rollins in an instrumental version"
-	attributes['idyoutube']="V0fPYzyB2AQ"
+	attributes['idyoutuberemark1']="The cannonical performance by Frank Sinatra"
+	attributes['idyoutube1']="h9ZGKALMMuc"
+	attributes['idyoutuberemark2']="Nat King Cole in a great version"
+	attributes['idyoutube2']="qLVvHtKUrdQ"
+	attributes['idyoutuberemark3']="Monk and Rollins in an instrumental version"
+	attributes['idyoutube3']="V0fPYzyB2AQ"
 	attributes['lyricsurl']="http://www.lyrics007.com/Frank%20Sinatra%20Lyrics/The%20Way%20You%20Look%20Tonight%20Lyrics.html"
 %>
 % endif

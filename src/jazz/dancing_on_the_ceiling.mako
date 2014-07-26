@@ -22,10 +22,10 @@
 	attributes['uuid']="2f047dae-e00d-11e3-98f7-03db92494d62"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Frank in a cannonical version"
-	attributes['idyoutube']="C406rXlRT6c"
-	attributes['idyoutuberemark']="Ella in a great version"
-	attributes['idyoutube']="qzBld5uHTiw"
+	attributes['idyoutuberemark1']="Frank in a cannonical version"
+	attributes['idyoutube1']="C406rXlRT6c"
+	attributes['idyoutuberemark2']="Ella in a great version"
+	attributes['idyoutube2']="qzBld5uHTiw"
 	attributes['lyricsurl']="http://www.lorenzhart.org/ceilingsng.htm"
 %>
 % endif

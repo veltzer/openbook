@@ -25,10 +25,10 @@
 	attributes['uuid']="557b082e-e0d8-11e3-a037-b365e6166d43"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Louis and Ella"
-	attributes['idyoutube']="Rg0hg5YD7sE"
-	attributes['idyoutuberemark']="Franks version"
-	attributes['idyoutube']="_CiizL8Vfu8"
+	attributes['idyoutuberemark1']="Louis and Ella"
+	attributes['idyoutube1']="Rg0hg5YD7sE"
+	attributes['idyoutuberemark2']="Franks version"
+	attributes['idyoutube2']="_CiizL8Vfu8"
 	attributes['lyricsurl']="http://www.azlyrics.com/lyrics/franksinatra/moonlightinvermont.html"
 %>
 % endif

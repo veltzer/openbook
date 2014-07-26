@@ -10,7 +10,7 @@
 	attributes['piece']="Upbeat Jazz Blues"
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
-	attributes['copyright']=attributes['copyrightvalstudy']
+	attributes['copyright']=gattr['copyrightvalstudy']
 
 	attributes['completion']="5"
 

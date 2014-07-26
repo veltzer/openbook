@@ -24,10 +24,10 @@
 	attributes['uuid']="b0685520-db92-11e3-a96d-4fe96cfbc3fb"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Nat King Cole cannonical version"
-	attributes['idyoutube']="sooSaQpGnMM"
-	attributes['idyoutuberemark']="Frank Sinatra cannonical version"
-	attributes['idyoutube']="SINfqtCq0lY"
+	attributes['idyoutuberemark1']="Nat King Cole cannonical version"
+	attributes['idyoutube1']="sooSaQpGnMM"
+	attributes['idyoutuberemark2']="Frank Sinatra cannonical version"
+	attributes['idyoutube2']="SINfqtCq0lY"
 	attributes['lyricsurl']="http://www.metrolyrics.com/thats-all-lyrics-nat-king-cole.html"
 %>
 % endif

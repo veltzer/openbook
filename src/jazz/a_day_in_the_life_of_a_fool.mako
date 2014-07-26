@@ -9,9 +9,9 @@
 	# from the fake book
 	attributes['title']="A Day In The Life Of A Fool"
 	# from the fake book
-	attributes['subtitle']="Manha De Carnaval / Black Orpheus"
-	# from the fake book
 	attributes['style']="Jazz"
+	# from the fake book
+	attributes['subtitle']="Manha De Carnaval / Black Orpheus"
 	# from the fake book
 	attributes['composer']="Luiz Bonfa"
 	# from the fake book
@@ -28,10 +28,10 @@
 	attributes['uuid']="88a1ec40-db4c-11e3-8a8c-23226fc873cc"
 	attributes['structure']="AA'B"
 
-	attributes['idyoutuberemark']="Frank doin it sadly..."
-	attributes['idyoutube']="ZMX3AeJy4_Q"
-	attributes['idyoutuberemark']="Cassandra Wilson live"
-	attributes['idyoutube']="SHRn-uKViqg"
+	attributes['idyoutuberemark1']="Frank doin it sadly..."
+	attributes['idyoutube1']="ZMX3AeJy4_Q"
+	attributes['idyoutuberemark2']="Cassandra Wilson live"
+	attributes['idyoutube2']="SHRn-uKViqg"
 	attributes['lyricsurl']="http://www.lyricsfreak.com/f/frank+sinatra/a+day+in+the+life+of+a+fool_20055645.html"
 %>
 % endif

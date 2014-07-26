@@ -24,10 +24,10 @@
 	attributes['uuid']="2f6e2740-f29e-11e0-9ede-0019d11e5a41"
 	attributes['structure']="AB"
 
-	attributes['idyoutubedesc']="the fabulous Chet Baker"
-	attributes['idyoutube']="88CqlgFAJ-k"
-	attributes['idyoutubedesc']="fast and furious Trane"
-	attributes['idyoutube']="9W_XQCLD_I0"
+	attributes['idyoutuberemark1']="the fabulous Chet Baker"
+	attributes['idyoutube1']="88CqlgFAJ-k"
+	attributes['idyoutuberemark2']="fast and furious Trane"
+	attributes['idyoutube2']="9W_XQCLD_I0"
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Just-Friends-lyrics-Frank-Sinatra/FA2BFD6A414238734825691F000AC7E7"
 %>
 % endif

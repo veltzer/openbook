@@ -13,15 +13,15 @@
 	attributes['subtitle']=u"באת אלי"
 	attributes['composer']=u"עודד לרר"
 	attributes['poet']=u"לאה גולדברג"
-	attributes['singer']=u"יהודית רביץ"
 	attributes['piece']=u"בלדה מתונה"
+	attributes['singer']=u"יהודית רביץ"
 	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
 
 	attributes['completion']="5"
 	attributes['uuid']="11ad0c38-6dc9-4318-873f-5e7e80b7c8a8"
 
-	attributes['idyoutube']="DZd_Ik2SNcg"
-	attributes['idyoutube']="jZ_8rSmLFwU"
+	attributes['idyoutube1']="DZd_Ik2SNcg"
+	attributes['idyoutube2']="jZ_8rSmLFwU"
 %>
 % endif
 

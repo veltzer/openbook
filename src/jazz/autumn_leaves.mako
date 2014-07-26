@@ -24,10 +24,10 @@
 	attributes['uuid']="8c35acf6-a7c1-11df-9040-0019d11e5a41"
 	attributes['structure']="AAB"
 
-	attributes['idyoutuberemark']="The great Bill Evans..."
-	attributes['idyoutube']="mRhVI7cpcS4"
-	attributes['idyoutuberemark']="Keith Jarret in a great performance"
-	attributes['idyoutube']="io1o1Hwpo8Y"
+	attributes['idyoutuberemark1']="The great Bill Evans..."
+	attributes['idyoutube1']="mRhVI7cpcS4"
+	attributes['idyoutuberemark2']="Keith Jarret in a great performance"
+	attributes['idyoutube2']="io1o1Hwpo8Y"
 	attributes['lyricsurl']="http://www.bluesforpeace.com/lyrics/autumn-leaves.htm"
 %>
 % endif

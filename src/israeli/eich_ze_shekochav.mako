@@ -11,8 +11,8 @@
 	attributes['style']="Israeli"
 	attributes['composer']=u"מתי כספי"
 	attributes['poet']=u"נתן זך"
-	attributes['singer']=u"מתי כספי"
 	attributes['piece']=u"בוסה נובה"
+	attributes['singer']=u"מתי כספי"
 	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
 
 	attributes['completion']="5"
@@ -21,7 +21,7 @@
 	# my own deduction
 	attributes['structure']="AB"
 
-	attributes['idyoutube']="1GI5Vst5a-o"
+	attributes['idyoutube1']="1GI5Vst5a-o"
 
 %>
 % endif

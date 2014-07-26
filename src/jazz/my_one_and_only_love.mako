@@ -25,10 +25,10 @@
 	attributes['structure']="AABA"
 	attributes['location']="fb:266"
 
-	attributes['idyoutuberemark']="Coltrane!"
-	attributes['idyoutube']="ecrE80rnjhw"
-	attributes['idyoutuberemark']="Sting in the leaving Las-Vegas version"
-	attributes['idyoutube']="lEkJoMNFPEA"
+	attributes['idyoutuberemark1']="Coltrane!"
+	attributes['idyoutube1']="ecrE80rnjhw"
+	attributes['idyoutuberemark2']="Sting in the leaving Las-Vegas version"
+	attributes['idyoutube2']="lEkJoMNFPEA"
 	attributes['lyricsurl']="http://www.lyricsfreak.com/l/louis+armstrong/my+one+and+only+love_20268115.html"
 %>
 % endif

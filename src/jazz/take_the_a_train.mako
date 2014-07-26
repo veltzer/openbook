@@ -27,10 +27,10 @@
 	attributes['uuid']="8e4bc138-da80-11e3-a96b-032e06c074f3"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Original version by Duke"
-	attributes['idyoutube']="cb2w2m1JmCY"
-	attributes['idyoutuberemark']="Mingus and Dolphy together?!?"
-	attributes['idyoutube']="YuCbQCnoIzI"
+	attributes['idyoutuberemark1']="Original version by Duke"
+	attributes['idyoutube1']="cb2w2m1JmCY"
+	attributes['idyoutuberemark2']="Mingus and Dolphy together?!?"
+	attributes['idyoutube2']="YuCbQCnoIzI"
 	attributes['lyricsurl']="http://www.metrolyrics.com/take-the-a-train-lyrics-ella-fitzgerald.html"
 %>
 % endif

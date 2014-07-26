@@ -4,9 +4,9 @@
 	attributes['doChords']=True
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
+	attributes['doExtra']=True
 	attributes['render']="My"
 	attributes['heb']=True
-	attributes['doExtra']=True
 
 	attributes['title']=u"כמה אהבה"
 	attributes['style']="Israeli"
@@ -14,10 +14,10 @@
 	attributes['composer']=u"מאיר בנאי"
 	# from the internet
 	attributes['poet']=u"מאיר בנאי"
-	# from the internet
-	attributes['singer']=u"מאיר בנאי"
 	# mine
 	attributes['piece']=u"פלמנקו"
+	# from the internet
+	attributes['singer']=u"מאיר בנאי"
 	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
 
 	attributes['completion']="4"
@@ -26,10 +26,9 @@
 	# mine
 	attributes['structure']="Intro,Verse,Chorus,Verse2,Chorus,Instrumental"
 
+	attributes['idyoutuberemark1']="Meir Banay in original version"
+	attributes['idyoutube1']="MtkYo-IVCjw"
 	attributes['lyricsurl']="http://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=606&wrkid=3894"
-
-	attributes['idyoutuberemark']="Meir Banay in original version"
-	attributes['idyoutube']="MtkYo-IVCjw"
 
 %>
 % endif

@@ -19,10 +19,10 @@
 	attributes['structure']="A"
 	attributes['structureremark']="The 12 bars have a kind of blues structure feel to them"
 
-	attributes['idyoutuberemark']="Metheny/Holland/Hancock/DeJohnette kickass performance"
-	attributes['idyoutube']="FAYt3a-c_k0"
-	attributes['idyoutuberemark']="Classic miles davis"
-	attributes['idyoutube']="9GADuMRXMRw"
+	attributes['idyoutuberemark1']="Metheny/Holland/Hancock/DeJohnette kickass performance"
+	attributes['idyoutube1']="FAYt3a-c_k0"
+	attributes['idyoutuberemark2']="Classic miles davis"
+	attributes['idyoutube2']="9GADuMRXMRw"
 %>
 % endif
 

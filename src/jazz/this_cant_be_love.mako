@@ -21,10 +21,10 @@
 	attributes['uuid']="c01fbf4c-d7a2-11e3-a29f-abfec0c435b3"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="I like this version by Diana Krall"
-	attributes['idyoutube']="9uRGw8Bc0s0"
-	attributes['idyoutuberemark']="Well know version by Nat King Cole"
-	attributes['idyoutube']="dfWsU4IDCS0"
+	attributes['idyoutuberemark1']="I like this version by Diana Krall"
+	attributes['idyoutube1']="9uRGw8Bc0s0"
+	attributes['idyoutuberemark2']="Well know version by Nat King Cole"
+	attributes['idyoutube2']="dfWsU4IDCS0"
 	attributes['lyricsurl']="http://www.lyricsfreak.com/n/nat+king+cole/this+cant+be+love_20098113.html"
 %>
 % endif

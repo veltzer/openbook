@@ -21,10 +21,10 @@
 	attributes['uuid']="fe106f6c-a26e-11df-abb3-0019d11e5a41"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Frank!"
-	attributes['idyoutube']="wZIVgszUs7c"
-	attributes['idyoutuberemark']="Art Tatum on piano solo"
-	attributes['idyoutube']="h3YNBVpxOcQ"
+	attributes['idyoutuberemark1']="Frank!"
+	attributes['idyoutube1']="wZIVgszUs7c"
+	attributes['idyoutuberemark2']="Art Tatum on piano solo"
+	attributes['idyoutube2']="h3YNBVpxOcQ"
 	attributes['lyricsurl']="http://www.lyrics007.com/Ella%20Fitzgerald%20Lyrics/Have%20You%20Met%20Miss%20Jones%20Lyrics.html"
 %>
 % endif

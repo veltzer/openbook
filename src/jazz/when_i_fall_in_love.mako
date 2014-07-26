@@ -23,10 +23,10 @@
 	attributes['structure']="ABAC"
 	attributes['structureremark']="You can think of this as AB but it's really an ABAC tune"
 
-	attributes['idyoutuberemark']="Nat King Cole in an excellent lyric version"
-	attributes['idyoutube']="GfAb0gNPy6s"
-	attributes['idyoutuberemark']="Bill Evans Trio (Wow!)"
-	attributes['idyoutube']="adPpG0Dnxeg"
+	attributes['idyoutuberemark1']="Nat King Cole in an excellent lyric version"
+	attributes['idyoutube1']="GfAb0gNPy6s"
+	attributes['idyoutuberemark2']="Bill Evans Trio (Wow!)"
+	attributes['idyoutube2']="adPpG0Dnxeg"
 	attributes['lyricsurl']="http://www.lyricsfreak.com/n/nat+king+cole/when+i+fall+in+love_20098122.html"
 %>
 % endif

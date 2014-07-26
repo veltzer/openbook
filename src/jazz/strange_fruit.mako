@@ -23,10 +23,10 @@
 	attributes['uuid']="68679a0a-da80-11e3-8208-4fcd89557297"
 	attributes['structure']="A"
 
-	attributes['idyoutuberemark']="Nina Simon version"
-	attributes['idyoutube']="ughAVo2ZAag"
-	attributes['idyoutuberemark']="The famous version by Billie Holiday"
-	attributes['idyoutube']="h4ZyuULy9zs"
+	attributes['idyoutuberemark1']="Nina Simon version"
+	attributes['idyoutube1']="ughAVo2ZAag"
+	attributes['idyoutuberemark2']="The famous version by Billie Holiday"
+	attributes['idyoutube2']="h4ZyuULy9zs"
 	attributes['lyricsurl']="http://www.lyricsfreak.com/b/billie+holiday/strange+fruit_20017859.html"
 %>
 % endif

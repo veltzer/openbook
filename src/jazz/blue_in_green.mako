@@ -22,10 +22,10 @@
 	attributes['uuid']="c73decf2-e30c-11e3-b12b-dbe41a94d84d"
 	attributes['structure']="A"
 
-	attributes['idyoutuberemark']="Original from Kind of Blue"
-	attributes['idyoutube']="PoPL7BExSQU"
-	attributes['idyoutuberemark']="Bill Evans in a piano version"
-	attributes['idyoutube']="mW_7gRH7ASE"
+	attributes['idyoutuberemark1']="Original from Kind of Blue"
+	attributes['idyoutube1']="PoPL7BExSQU"
+	attributes['idyoutuberemark2']="Bill Evans in a piano version"
+	attributes['idyoutube2']="mW_7gRH7ASE"
 %>
 % endif
 

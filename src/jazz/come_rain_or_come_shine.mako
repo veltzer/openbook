@@ -19,7 +19,7 @@
 	attributes['structure']="AB"
 	attributes['remark']="the my set of chords is from Amit Golan"
 
-	attributes['idyoutube']="XqECFy_qzkM"
+	attributes['idyoutube1']="XqECFy_qzkM"
 %>
 % endif
 

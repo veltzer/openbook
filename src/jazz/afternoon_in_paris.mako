@@ -21,10 +21,10 @@
 	attributes['uuid']="8f0a1ea6-a26e-11df-8edc-0019d11e5a41"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Chet Baker in a cool jazz version"
-	attributes['idyoutube']="o3KtgcvYkig"
-	attributes['idyoutuberemark']="Milt Jackson in a cool jazz version"
-	attributes['idyoutube']="FFj03f2Zr5Y"
+	attributes['idyoutuberemark1']="Chet Baker in a cool jazz version"
+	attributes['idyoutube1']="o3KtgcvYkig"
+	attributes['idyoutuberemark2']="Milt Jackson in a cool jazz version"
+	attributes['idyoutube2']="FFj03f2Zr5Y"
 %>
 % endif
 

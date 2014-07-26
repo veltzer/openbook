@@ -17,12 +17,12 @@
 	attributes['uuid']="7f78edea-47a9-11e2-8d61-0f0bb7c14483"
 	attributes['structure']="AB"
 
-	attributes['idyoutuberemark']="Jethro Tull doing it ?!?"
-	attributes['idyoutube']="Zh4GZJlQCfY"
-	attributes['idyoutuberemark']="Another one from Jethro"
-	attributes['idyoutube']="wHw4N_lZl10"
-	attributes['idyoutuberemark']="The original Roland Kirk!"
-	attributes['idyoutube']="_q8Ye58uL5o"
+	attributes['idyoutuberemark1']="Jethro Tull doing it ?!?"
+	attributes['idyoutube1']="Zh4GZJlQCfY"
+	attributes['idyoutuberemark2']="Another one from Jethro"
+	attributes['idyoutube2']="wHw4N_lZl10"
+	attributes['idyoutuberemark3']="The original Roland Kirk!"
+	attributes['idyoutube3']="_q8Ye58uL5o"
 %>
 % endif
 

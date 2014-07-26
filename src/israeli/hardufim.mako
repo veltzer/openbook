@@ -12,16 +12,16 @@
 	attributes['style']="Israeli"
 	attributes['composer']=u"שלמה ארצי"
 	attributes['poet']=u"נתן יונתן"
-	attributes['singer']=u"שלמה ראצי"
 	attributes['piece']=u"שירי ארץ ישראל"
+	attributes['singer']=u"שלמה ראצי"
 	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
 
 	attributes['completion']="5"
 	attributes['uuid']="95e9e525-ef27-4e45-bba0-9ba1391723c1"
-
-	attributes['idyoutube']="jl5uOClGcWQ"
-	attributes['lyricsurl']="http://www.mp3music.co.il/lyrics/579.html"
 	attributes['remark']="The D minor is the original key from the Shlomo Artzi album"
+
+	attributes['idyoutube1']="jl5uOClGcWQ"
+	attributes['lyricsurl']="http://www.mp3music.co.il/lyrics/579.html"
 
 %>
 % endif

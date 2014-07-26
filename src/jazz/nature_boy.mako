@@ -25,10 +25,10 @@
 	attributes['structureremark']="this tunes structure can also be AA' or maybe ABAC since the A and the part B are VERY similar."
 	attributes['remark']="7th bar of letters A and B were originally 2 bars each. Melody is straight eights, though rather freely interpreted rhythmically."
 
-	attributes['idyoutuberemark']="Nat King Cole in a the cannonical version..."
-	attributes['idyoutube']="Iq0XJCJ1Srw"
-	attributes['idyoutuberemark']="Miles in a slow version"
-	attributes['idyoutube']="GDS_nqHaUvc"
+	attributes['idyoutuberemark1']="Nat King Cole in a the cannonical version..."
+	attributes['idyoutube1']="Iq0XJCJ1Srw"
+	attributes['idyoutuberemark2']="Miles in a slow version"
+	attributes['idyoutube2']="GDS_nqHaUvc"
 	attributes['lyricsurl']="http://www.metrolyrics.com/nature-boy-lyrics-nat-king-cole.html"
 %>
 % endif

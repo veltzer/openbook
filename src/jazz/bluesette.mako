@@ -26,10 +26,10 @@
 	attributes['uuid']="e4c0cc74-eb5c-11e3-8d65-b71fa04c4d86"
 	attributes['structure']="A"
 
-	attributes['idyoutuberemark']="Bill with Toots"
-	attributes['idyoutube']="micPH3vJVs0"
-	attributes['idyoutuberemark']="Toots with Orchestra"
-	attributes['idyoutube']="yKnG_9q4crA"
+	attributes['idyoutuberemark1']="Bill with Toots"
+	attributes['idyoutube1']="micPH3vJVs0"
+	attributes['idyoutuberemark2']="Toots with Orchestra"
+	attributes['idyoutube2']="yKnG_9q4crA"
 	attributes['lyricsurl']="http://www.lyricsmode.com/lyrics/t/toots_thielemans/bluesette.html"
 %>
 % endif

@@ -26,10 +26,10 @@
 	attributes['uuid']="84142766-dba0-11e3-9e62-bb6aa0505531"
 	attributes['structure']="ABA"
 
-	attributes['idyoutuberemark']="Caterina Valente & Chet Baker"
-	attributes['idyoutube']="2YZ4FGEGom8"
-	attributes['idyoutuberemark']="Sonny Stitt blasts away..."
-	attributes['idyoutube']="VHbwr4ieI2U"
+	attributes['idyoutuberemark1']="Caterina Valente & Chet Baker"
+	attributes['idyoutube1']="2YZ4FGEGom8"
+	attributes['idyoutuberemark2']="Sonny Stitt blasts away..."
+	attributes['idyoutube2']="VHbwr4ieI2U"
 	attributes['lyricsurl']="http://www.lyricsfreak.com/f/frank+sinatra/ill+remember+april_20055817.html"
 %>
 % endif

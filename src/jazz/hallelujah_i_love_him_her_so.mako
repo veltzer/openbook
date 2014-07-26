@@ -23,10 +23,10 @@
 	attributes['uuid']="d387ae5e-a26e-11df-9edf-0019d11e5a41"
 	attributes['structure']="ABA"
 
-	attributes['idyoutuberemark']="Ray Charles live!"
-	attributes['idyoutube']="Cf0X7QuK4LI"
-	attributes['idyoutuberemark']="The original version"
-	attributes['idyoutube']="rWGG6MdGdlg"
+	attributes['idyoutuberemark1']="Ray Charles live!"
+	attributes['idyoutube1']="Cf0X7QuK4LI"
+	attributes['idyoutuberemark2']="The original version"
+	attributes['idyoutube2']="rWGG6MdGdlg"
 	attributes['lyricsurl']="http://www.lyrics007.com/Peggy%20Lee%20Lyrics/Hallelujah,%20I%20Love%20Him%20So%20Lyrics.html"
 %>
 % endif

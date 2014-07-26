@@ -27,10 +27,10 @@
 	attributes['structure']="AABA"
 	attributes['location']="nrbk3:73"
 
-	attributes['idyoutuberemark']="A great performance by Ella"
-	attributes['idyoutube']="s4VjltPMfds"
-	attributes['idyoutuberemark']="Jazz messengers with an intro by Blakey"
-	attributes['idyoutube']="eP12RhmBIRw"
+	attributes['idyoutuberemark1']="A great performance by Ella"
+	attributes['idyoutube1']="s4VjltPMfds"
+	attributes['idyoutuberemark2']="Jazz messengers with an intro by Blakey"
+	attributes['idyoutube2']="eP12RhmBIRw"
 	attributes['lyricsurl']="http://www.metrolyrics.com/caravan-lyrics-ella-fitzgerald.html"
 %>
 % endif

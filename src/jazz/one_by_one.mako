@@ -21,10 +21,10 @@
 	attributes['structure']="AABA"
 	attributes['structureremark']="The second half of the B part is the same as the second half of the A part. Didn't see this a lot."
 
-	attributes['idyoutuberemark']="Blakey with the kids"
-	attributes['idyoutube']="Hmu57-USSs0"
-	attributes['idyoutuberemark']="Wyntons version (he learned it from Blakey...:)"
-	attributes['idyoutube']="-phKoexy_E0"
+	attributes['idyoutuberemark1']="Blakey with the kids"
+	attributes['idyoutube1']="Hmu57-USSs0"
+	attributes['idyoutuberemark2']="Wyntons version (he learned it from Blakey...:)"
+	attributes['idyoutube2']="-phKoexy_E0"
 %>
 % endif
 

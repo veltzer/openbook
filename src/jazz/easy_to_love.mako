@@ -8,9 +8,9 @@
 	attributes['render']="Real"
 
 	attributes['title']="Easy To Love"
+	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['subtitle']="From 'Born To Dance'"
-	attributes['style']="Jazz"
 	# this is from the real book
 	attributes['composer']="Cole Porter"
 	# this is from the fake book
@@ -29,10 +29,10 @@
 	attributes['structure']="ABAC"
 	attributes['structureremark']="Can also think of this tune as AB"
 
-	attributes['idyoutuberemark']="Ella"
-	attributes['idyoutube']="uYnqy84ZY9Q"
-	attributes['idyoutuberemark']="Billie Holiday"
-	attributes['idyoutube']="izaZR89BJBo"
+	attributes['idyoutuberemark1']="Ella"
+	attributes['idyoutube1']="uYnqy84ZY9Q"
+	attributes['idyoutuberemark2']="Billie Holiday"
+	attributes['idyoutube2']="izaZR89BJBo"
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Easy-To-Love-lyrics-Ella-Fitzgerald/3040B6936D6C386048256AAB00074FEE"
 %>
 % endif

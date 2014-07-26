@@ -28,10 +28,10 @@
 	attributes['structure']="ABAC"
 	attributes['structureremark']="could be categorized as AB"
 
-	attributes['idyoutuberemark']="Frank in the classic vocal version"
-	attributes['idyoutube']="UwoZNHhFgLQ"
-	attributes['idyoutuberemark']="Miles swings!"
-	attributes['idyoutube']="_DH46QyK2cw"
+	attributes['idyoutuberemark1']="Frank in the classic vocal version"
+	attributes['idyoutube1']="UwoZNHhFgLQ"
+	attributes['idyoutuberemark2']="Miles swings!"
+	attributes['idyoutube2']="_DH46QyK2cw"
 	attributes['lyricsurl']="http://www.lorenzhart.org/booksng.htm"
 %>
 % endif

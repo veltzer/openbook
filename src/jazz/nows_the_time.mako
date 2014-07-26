@@ -20,10 +20,10 @@
 	attributes['uuid']="cd56a8d8-da1d-11e3-a6ca-c3a55777c28e"
 	attributes['structure']="Blues"
 
-	attributes['idyoutuberemark']="The great Charlie Parker"
-	attributes['idyoutube']="ryNtmkfeJk4"
-	attributes['idyoutuberemark']="A much more modern version by Blakey and the Messengers"
-	attributes['idyoutube']="qq7xDN1G3Bc"
+	attributes['idyoutuberemark1']="The great Charlie Parker"
+	attributes['idyoutube1']="ryNtmkfeJk4"
+	attributes['idyoutuberemark2']="A much more modern version by Blakey and the Messengers"
+	attributes['idyoutube2']="qq7xDN1G3Bc"
 %>
 % endif
 

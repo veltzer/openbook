@@ -23,10 +23,10 @@
 	attributes['uuid']="4a4a2f24-ed86-11e3-aaf5-87841dcdcaf2"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Diana Krall in a good version of this one"
-	attributes['idyoutube']="GHyT8m6mSuI"
-	attributes['idyoutuberemark']="Early Frank with Orchestra"
-	attributes['idyoutube']="u7klm1GS3v8"
+	attributes['idyoutuberemark1']="Diana Krall in a good version of this one"
+	attributes['idyoutube1']="GHyT8m6mSuI"
+	attributes['idyoutuberemark2']="Early Frank with Orchestra"
+	attributes['idyoutube2']="u7klm1GS3v8"
 	attributes['lyricsurl']="http://www.azlyrics.com/lyrics/franksinatra/allornothingatall.html"
 %>
 % endif

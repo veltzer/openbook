@@ -24,10 +24,10 @@
 	attributes['structure']="ABAC"
 	attributes['structureremark']="I determined it was ABAC although the part A does not repeat exactly. It is good enough"
 
-	attributes['idyoutuberemark']="Virtuoso Sonny Stitt"
-	attributes['idyoutube']="Nn11v07Db3s"
-	attributes['idyoutuberemark']="The classic Billie Holiday..."
-	attributes['idyoutube']="cl_e7UW-bz8"
+	attributes['idyoutuberemark1']="Virtuoso Sonny Stitt"
+	attributes['idyoutube1']="Nn11v07Db3s"
+	attributes['idyoutuberemark2']="The classic Billie Holiday..."
+	attributes['idyoutube2']="cl_e7UW-bz8"
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Autumn-in-New-York-lyrics-Frank-Sinatra/C779DB117665DFD94825691F00067AD0"
 %>
 % endif

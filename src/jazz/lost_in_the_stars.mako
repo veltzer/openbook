@@ -7,8 +7,8 @@
 	attributes['render']="Fake"
 
 	attributes['title']="Lost In The Stars"
-	attributes['subtitle']="(Form \\\"Lost In The Stars\\\")"
 	attributes['style']="Jazz"
+	attributes['subtitle']="(Form \\\"Lost In The Stars\\\")"
 	attributes['composer']="Kurt Weill"
 	attributes['poet']="Maxwell Anderson"
 	attributes['piece']="Moderately"

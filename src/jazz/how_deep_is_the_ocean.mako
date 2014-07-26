@@ -7,8 +7,8 @@
 	attributes['render']="Fake"
 
 	attributes['title']="How Deep Is the Ocean"
-	attributes['subtitle']="How High Is the Sky"
 	attributes['style']="Jazz"
+	attributes['subtitle']="How High Is the Sky"
 	# this is from the fake book
 	attributes['composer']="Irving Berlin"
 	# this is from the fake book

@@ -7,8 +7,8 @@
 	attributes['render']="Unknown"
 
 	attributes['title']="Corcovado"
-	attributes['subtitle']="quiet nights of quiet stars"
 	attributes['style']="Jazz"
+	attributes['subtitle']="quiet nights of quiet stars"
 	attributes['composer']="Antonio Carlos Jobim"
 	attributes['piece']="Med Swing"
 	attributes['copyright']="1959, Editora Musical Arapua, Sao Paulo, Brazil"

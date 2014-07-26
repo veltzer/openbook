@@ -20,10 +20,10 @@
 	attributes['uuid']="ed0cff46-dffa-11e3-b4b7-43ee65102d59"
 	attributes['structure']="A"
 
-	attributes['idyoutuberemark']="The Chick Corea cool version"
-	attributes['idyoutube']="b3yAq20qSm4"
-	attributes['idyoutuberemark']="An older Chick with Stanley Clarke, Marcus Gilmore, Gaule Moran, Hubert Laws"
-	attributes['idyoutube']="fxhSFDdTfD4"
+	attributes['idyoutuberemark1']="The Chick Corea cool version"
+	attributes['idyoutube1']="b3yAq20qSm4"
+	attributes['idyoutuberemark2']="An older Chick with Stanley Clarke, Marcus Gilmore, Gaule Moran, Hubert Laws"
+	attributes['idyoutube2']="fxhSFDdTfD4"
 	attributes['lyricsurl']="http://www.allthelyrics.com/lyrics/chick_corea/500_miles_high-lyrics-1180014.html"
 %>
 % endif

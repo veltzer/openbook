@@ -21,10 +21,10 @@
 	attributes['structure']="AABC"
 	attributes['structureremark']="The tune is so short and fast that some see it as just A"
 
-	attributes['idyoutuberemark']="The classic version from Saxophone Colossus"
-	attributes['idyoutube']="UA2XIWZxMKM"
-	attributes['idyoutuberemark']="Kenny Drew on Piano"
-	attributes['idyoutube']="Ed8UuEH41XQ"
+	attributes['idyoutuberemark1']="The classic version from Saxophone Colossus"
+	attributes['idyoutube1']="UA2XIWZxMKM"
+	attributes['idyoutuberemark2']="Kenny Drew on Piano"
+	attributes['idyoutube2']="Ed8UuEH41XQ"
 %>
 % endif
 

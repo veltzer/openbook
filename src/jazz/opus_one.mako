@@ -25,10 +25,10 @@
 	attributes['structure']="AABA"
 	attributes['structureremark']="The A's are just a little bit different"
 
-	attributes['idyoutuberemark']="Nat King Cole swings"
-	attributes['idyoutube']="a33vdj7zoB0"
-	attributes['idyoutuberemark']="Tommy Dorsey's Orchestra swings"
-	attributes['idyoutube']="rV9LhjTr5Bc"
+	attributes['idyoutuberemark1']="Nat King Cole swings"
+	attributes['idyoutube1']="a33vdj7zoB0"
+	attributes['idyoutuberemark2']="Tommy Dorsey's Orchestra swings"
+	attributes['idyoutube2']="rV9LhjTr5Bc"
 	attributes['lyricsurl']="http://www.songlyrics.com/the-mills-brothers/opus-one-lyrics/"
 %>
 % endif

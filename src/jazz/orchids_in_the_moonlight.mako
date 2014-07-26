@@ -27,10 +27,10 @@
 	attributes['structure']="ABA"
 	attributes['structureremark']="Each A part is the 16 bars where the first 4 of every half are the same"
 
-	attributes['idyoutuberemark']="Excellent piano arrangement"
-	attributes['idyoutube']="2LEah90aDmA"
-	attributes['idyoutuberemark']="Classic tango vocal version"
-	attributes['idyoutube']="WuD8XmCza5U"
+	attributes['idyoutuberemark1']="Excellent piano arrangement"
+	attributes['idyoutube1']="2LEah90aDmA"
+	attributes['idyoutuberemark2']="Classic tango vocal version"
+	attributes['idyoutube2']="WuD8XmCza5U"
 	attributes['lyricsurl']="http://lyricsplayground.com/alpha/songs/o/orchidsinthemoonlight.shtml"
 %>
 % endif

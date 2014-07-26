@@ -26,10 +26,10 @@
 	attributes['structure']="ABAC"
 	attributes['structureremark']="The structure could also be thought of as AB but it is very close to a pure ABAC"
 
-	attributes['idyoutuberemark']="A very sensitive rendition by Dexter Gordon"
-	attributes['idyoutube']="8PttNhYVY3c"
-	attributes['idyoutuberemark']="Sarah Vaughan, fucking awesome"
-	attributes['idyoutube']="t9HxfF7faXk"
+	attributes['idyoutuberemark1']="A very sensitive rendition by Dexter Gordon"
+	attributes['idyoutube1']="8PttNhYVY3c"
+	attributes['idyoutuberemark2']="Sarah Vaughan, fucking awesome"
+	attributes['idyoutube2']="t9HxfF7faXk"
 	attributes['lyricsurl']="http://www.absolutelyrics.com/lyrics/view/barbra_streisand/the_shadow_of_your_smile"
 %>
 % endif

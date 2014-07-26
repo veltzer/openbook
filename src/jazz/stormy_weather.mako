@@ -8,8 +8,8 @@
 	attributes['render']="Fake"
 
 	attributes['title']="Stormy Weather"
-	attributes['subtitle']="Keeps Rainin' All the Time"
 	attributes['style']="Jazz"
+	attributes['subtitle']="Keeps Rainin' All the Time"
 	# this is from the fake book
 	attributes['composer']="Harold Arlen"
 	# this is from the fake book

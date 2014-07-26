@@ -4,9 +4,9 @@
 	attributes['doChords']=True
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
+	attributes['doExtra']=True
 	attributes['render']="My"
 	attributes['heb']=True
-	attributes['doExtra']=True
 
 	attributes['title']=u"נח"
 	attributes['style']="Israeli"
@@ -14,10 +14,10 @@
 	attributes['composer']=u"מתי כספי"
 	# from the internet
 	attributes['poet']=u"יורם טהרלב"
-	# from the internet
-	attributes['singer']=u"מתי כספי"
 	# mine
 	attributes['piece']=u"סמבה"
+	# from the internet
+	attributes['singer']=u"מתי כספי"
 	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
 
 	attributes['completion']="5"
@@ -25,10 +25,10 @@
 
 	attributes['structure']="A"
 
-	attributes['lyricsurl']="http://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=688&wrkid=2292&gclid=CLiirsj_o7gCFci23godXw0A8w"
+	attributes['idyoutuberemark1']="Mati Caspi in the original performance"
+	attributes['idyoutube1']="Eiae247OZXI"
 
-	attributes['idyoutuberemark']="Mati Caspi in the original performance"
-	attributes['idyoutube']="Eiae247OZXI"
+	attributes['lyricsurl']="http://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=688&wrkid=2292&gclid=CLiirsj_o7gCFci23godXw0A8w"
 
 %>
 % endif

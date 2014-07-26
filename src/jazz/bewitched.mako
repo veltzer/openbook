@@ -22,10 +22,10 @@
 	attributes['uuid']="dd1624e6-2567-11e1-9444-0019d11e5a41"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Ella Fitzgerald with the intro part..."
-	attributes['idyoutube']="nDlCCKHql0w"
-	attributes['idyoutuberemark']="Benny Goodman in the 1980's"
-	attributes['idyoutube']="rv8G78Cw2mc"
+	attributes['idyoutuberemark1']="Ella Fitzgerald with the intro part..."
+	attributes['idyoutube1']="nDlCCKHql0w"
+	attributes['idyoutuberemark2']="Benny Goodman in the 1980's"
+	attributes['idyoutube2']="rv8G78Cw2mc"
 	attributes['lyricsurl']="http://www.lyricsfreak.com/e/ella+fitzgerald/bewitched_20045684.html"
 %>
 % endif

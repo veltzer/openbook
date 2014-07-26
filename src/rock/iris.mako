@@ -5,11 +5,11 @@
 	attributes['doOwn']=True
 
 	attributes['title']="Iris"
+	attributes['style']="Rock"
 	attributes['composer']="Goo Goo Dolls"
 	attributes['poet']="Goo Goo Dolls"
-	attributes['album']="Dizzy Up The Girls"
-	attributes['style']="Rock"
 	attributes['piece']="Med. Ballad"
+	attributes['album']="Dizzy Up The Girls"
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
@@ -17,8 +17,8 @@
 
 	attributes['remark']="This is the right scale"
 
-	attributes['idyoutuberemark']="The original video clip from youtube"
-	attributes['idyoutube']="NdYWuo9OFAw"
+	attributes['idyoutuberemark1']="The original video clip from youtube"
+	attributes['idyoutube1']="NdYWuo9OFAw"
 	attributes['lyricsurl']="http://tabs.ultimate-guitar.com/g/goo_goo_dolls/iris_ver5_crd.htm"
 %>
 % endif

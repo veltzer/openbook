@@ -20,10 +20,10 @@
 	attributes['uuid']="e8ff288e-2233-11e1-9b9f-0019d11e5a41"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Classic Billie Holiday"
-	attributes['idyoutube']="uzJMTSaAl8g"
-	attributes['idyoutuberemark']="Ella Fitzgerald with Tommy Flanagan on the piano"
-	attributes['idyoutube']="ySszeu4H4QI"
+	attributes['idyoutuberemark1']="Classic Billie Holiday"
+	attributes['idyoutube1']="uzJMTSaAl8g"
+	attributes['idyoutuberemark2']="Ella Fitzgerald with Tommy Flanagan on the piano"
+	attributes['idyoutube2']="ySszeu4H4QI"
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/The-Man-I-Love-lyrics-Ella-Fitzgerald/8EE600AB304A9C6948256AAB0009579B"
 %>
 % endif

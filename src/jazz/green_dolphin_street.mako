@@ -23,10 +23,10 @@
 	attributes['uuid']="b93bdc7e-0207-11e1-9e68-0019d11e5a41"
 	attributes['structure']="ABAC"
 
-	attributes['idyoutuberemark']="Sarah Vaughan from a radio show"
-	attributes['idyoutube']="vHp0IvAEFMQ"
-	attributes['idyoutuberemark']="The great Coltrane"
-	attributes['idyoutube']="Ny1n5E4IdYY"
+	attributes['idyoutuberemark1']="Sarah Vaughan from a radio show"
+	attributes['idyoutube1']="vHp0IvAEFMQ"
+	attributes['idyoutuberemark2']="The great Coltrane"
+	attributes['idyoutube2']="Ny1n5E4IdYY"
 	attributes['lyricsurl']="http://www.lyricszoo.com/miles-davis/on-green-dolphin-street-miles-davis-washington-ned/"
 %>
 % endif

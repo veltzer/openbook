@@ -21,10 +21,10 @@
 	attributes['uuid']="0a7b423c-7a4e-11e1-8d67-878c1414bdce"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Classic Billie Holiday"
-	attributes['idyoutube']="vYoet7-qDHI"
-	attributes['idyoutuberemark']="The classic Sinatra performance with the Casablanca footage"
-	attributes['idyoutube']="AY62QByUYJQ"
+	attributes['idyoutuberemark1']="Classic Billie Holiday"
+	attributes['idyoutube1']="vYoet7-qDHI"
+	attributes['idyoutuberemark2']="The classic Sinatra performance with the Casablanca footage"
+	attributes['idyoutube2']="AY62QByUYJQ"
 	attributes['lyricsurl']="http://www.lyrics007.com/Frank%20Sinatra%20Lyrics/As%20Time%20Goes%20By%20Lyrics.html"
 %>
 % endif

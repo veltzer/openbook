@@ -18,10 +18,10 @@
 	attributes['uuid']="3162420a-a26f-11df-aacf-0019d11e5a41"
 	attributes['structure']="AB"
 
-	attributes['idyoutuberemark']="Nat King Cole the unforgettable..."
-	attributes['idyoutube']="S1UEzL9poPM"
-	attributes['idyoutuberemark']="Nat King Cole with Natalie Cole duet..."
-	attributes['idyoutube']="2uRtNMFfF-g"
+	attributes['idyoutuberemark1']="Nat King Cole the unforgettable..."
+	attributes['idyoutube1']="S1UEzL9poPM"
+	attributes['idyoutuberemark2']="Nat King Cole with Natalie Cole duet..."
+	attributes['idyoutube2']="2uRtNMFfF-g"
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/unforgettable-lyrics-nat-king-cole/afdec7063791226248256af1000bbaa6"
 %>
 % endif

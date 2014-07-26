@@ -23,10 +23,10 @@
 	attributes['structure']="ABAC"
 	attributes['structureremark']="the structure of this tune can also be AA or AA'. Doesn't really matter."
 
-	attributes['idyoutuberemark']="Oscar Peterson!"
-	attributes['idyoutube']="ytipqjANlrY"
-	attributes['idyoutuberemark']="Ella and Louis, great vocal performance of this song"
-	attributes['idyoutube']="cKbD4PQBrIA"
+	attributes['idyoutuberemark1']="Oscar Peterson!"
+	attributes['idyoutube1']="ytipqjANlrY"
+	attributes['idyoutuberemark2']="Ella and Louis, great vocal performance of this song"
+	attributes['idyoutube2']="cKbD4PQBrIA"
 	attributes['lyricsurl']="http://www.elyrics.net/read/b/billie-holiday-lyrics/a-fine-romance-lyrics.html"
 %>
 % endif

@@ -1,9 +1,9 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doGuitar']=True
 	attributes['doChords']=True
 	attributes['doChordBars']=True
+	attributes['doGuitar']=True
 	attributes['doExtra']=True
 	attributes['render']="My"
 	attributes['heb']=True
@@ -12,16 +12,16 @@
 	attributes['style']="Israeli"
 	attributes['composer']=u"אילן וירצברג"
 	attributes['poet']=u"יונה וולך"
-	attributes['singer']=u"איןך ןירצברג"
 	attributes['piece']=u"בלדת רוק"
+	attributes['singer']=u"איןך ןירצברג"
 	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
 
 	attributes['completion']="5"
 	attributes['uuid']="f2e3c22e-f100-11e0-9162-0019d11e5a41"
-
-	attributes['idyoutube']="XJYKf0sNDoE"
-	attributes['lyricsurl']="http://www.mp3music.co.il/tabs/10728.html"
 	attributes['remark']="Ilan Virtsberg plays it in G in live concerts"
+
+	attributes['idyoutube1']="XJYKf0sNDoE"
+	attributes['lyricsurl']="http://www.mp3music.co.il/tabs/10728.html"
 %>
 % endif
 

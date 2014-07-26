@@ -7,9 +7,9 @@
 	attributes['render']="Fake"
 
 	attributes['title']="My Romance"
+	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['subtitle']="From 'Jumbo'"
-	attributes['style']="Jazz"
 	# this is from the fake book
 	attributes['composer']="Richard Rodgers"
 	# this is from the fake book
@@ -27,10 +27,10 @@
 	attributes['structure']="ABAC"
 	attributes['structureremark']="this tunes song could also be noted as AB but then you lose the info that the first 8 bars of the A and part B are the same."
 
-	attributes['idyoutuberemark']="Ben Webster on his airy sax..."
-	attributes['idyoutube']="_D2XBzcKFPM"
-	attributes['idyoutuberemark']="The great Bill Evans in the late 70's trio"
-	attributes['idyoutube']="aCO1Gd0jRto"
+	attributes['idyoutuberemark1']="Ben Webster on his airy sax..."
+	attributes['idyoutube1']="_D2XBzcKFPM"
+	attributes['idyoutuberemark2']="The great Bill Evans in the late 70's trio"
+	attributes['idyoutube2']="aCO1Gd0jRto"
 	attributes['lyricsurl']="http://www.lyricsfreak.com/e/ella+fitzgerald/my+romance_20045848.html"
 %>
 % endif

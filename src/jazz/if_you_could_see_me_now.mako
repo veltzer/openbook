@@ -21,10 +21,10 @@
 	attributes['uuid']="e259226a-11ac-11e1-90cb-0019d11e5a41"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Sarah Vaughan"
-	attributes['idyoutube']="ySI5ZPhf5Lw"
-	attributes['idyoutuberemark']="Bill Evans (amazing version)"
-	attributes['idyoutube']="NXUxR4wunaE"
+	attributes['idyoutuberemark1']="Sarah Vaughan"
+	attributes['idyoutube1']="ySI5ZPhf5Lw"
+	attributes['idyoutuberemark2']="Bill Evans (amazing version)"
+	attributes['idyoutube2']="NXUxR4wunaE"
 	attributes['lyricsurl']="http://www.metrolyrics.com/if-you-could-see-me-now-lyrics-natalie-cole.html"
 
 %>

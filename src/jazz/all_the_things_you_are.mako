@@ -19,10 +19,10 @@
 	attributes['uuid']="a064f20e-fb85-11e0-8d5d-0019d11e5a41"
 	attributes['structure']="ABC"
 
-	attributes['idyoutuberemark']="Charlie Parker, great performance"
-	attributes['idyoutube']="UTORd2Y_X6U"
-	attributes['idyoutuberemark']="Art Tatum. Brilliant"
-	attributes['idyoutube']="_bPgf_olXeE"
+	attributes['idyoutuberemark1']="Charlie Parker, great performance"
+	attributes['idyoutube1']="UTORd2Y_X6U"
+	attributes['idyoutuberemark2']="Art Tatum. Brilliant"
+	attributes['idyoutube2']="_bPgf_olXeE"
 	attributes['lyricsurl']="http://www.lyrics007.com/Jerome%20Kern%20Lyrics/All%20The%20Things%20You%20Are%20Lyrics.html"
 %>
 % endif
