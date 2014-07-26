@@ -64,6 +64,7 @@ try:
 		gattr['book']=True
 		gattr['toc']=True
 		gattr['midi']=False
+		# put each tune in it's own book part (avoid lilypond performance problems)
 		gattr['parts']=True
 	else:
 		gattr['files']=[ p_input ]
@@ -72,6 +73,12 @@ try:
 		gattr['midi']=True
 		gattr['parts']=False
 	gattr['inline']=True
+	# put some space after each tune
+	gattr['space_after_tune']=False
+	# put a page break after each tune
+	gattr['break_after_tune']=False
+	# put a page break after the toc?
+	gattr['break_after_toc']=True
 	file=open(p_output,'wb')
 	attr=attributes.Attributes()
 	file.write(template.render(attributes=attr, gattr=gattr, scratch={}))

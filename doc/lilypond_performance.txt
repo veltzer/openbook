@@ -1,0 +1,23 @@
+These are stats of lilypond performance:
+
+break after each tune:
+mark@cantor:~/links/openbook$ time make
+doing [out/openbook.ly]
+doing [out/openbook.pdf]
+doing [out/israelisongbook.ly]
+doing [out/israelisongbook.pdf]
+
+real    1m59.504s
+user    1m57.378s
+sys     0m1.650s
+
+each tune in its own part:
+mark@cantor:~/links/openbook$ time make
+doing [out/openbook.ly]
+doing [out/openbook.pdf]
+doing [out/israelisongbook.ly]
+doing [out/israelisongbook.pdf]
+
+real    1m40.991s
+user    1m38.871s
+sys     0m1.738s
