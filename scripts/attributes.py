@@ -30,6 +30,7 @@ order=[
 	'copyrightextra',
 	'typesetter',
 	'completion',
+	'dontimport',
 	'uuid',
 	'structure',
 	'location',

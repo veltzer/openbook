@@ -5,12 +5,10 @@
 
 	attributes['title']="Comping Rhythms"
 	attributes['style']="Jazz"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-
 	attributes['copyright']=gattr['copyrightvalstudy']
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
-
 	attributes['uuid']="897e4006-a26f-11df-b4da-0019d11e5a41"
 %>
 % endif
