@@ -8,3 +8,6 @@ for x in src/rock/*; do y=out/`dirname $x`/`basename $x .mako`.pdf; make $y;done
 
 If you want to build all jazz songs use this:
 for x in src/jazz/*; do y=out/`dirname $x`/`basename $x .mako`.pdf; make $y;done
+
+if you want to try to build all tunes with no regard to lilypond output:
+DO_STOP_OUTPUT=0 make all_tunes
