@@ -353,7 +353,9 @@ ${self.defs()}
 
 % if gattr['toc']:
 \markuplist \table-of-contents
-%%\pageBreak
+% if gattr['break_after_toc']:
+\pageBreak
+% endif
 % endif
 
 %% from here everything needs to go into a loop
@@ -716,21 +718,21 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 % endif
 }
 
-% if gattr['toc']:
-% endif
-
-% if gattr['book']:
+% if gattr['space_after_tune']:
 %% this is just a small space, maybe we should replace this with a page break?
 %% TODO: at the very end of the book this should not appear.
-%%\markup {
-%%	\null
-%%	\null
-%%}
-% if gattr['parts']:
+\markup \column {
+	\null
+	\null
 }
-% else:
+%endif
+
+% if gattr['break_after_tune']:
 \pageBreak
 % endif
+
+% if gattr['parts']:
+}
 % endif
 
 % endfor
