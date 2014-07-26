@@ -17,10 +17,9 @@
 	attributes['uuid']="11542882-e65c-11e2-9030-4311f6fc08c2"
 	attributes['structure']="ABAC"
 
+	attributes['idyoutuberemark1']="Rita Hayworth version"
+	attributes['idyoutube1']="SQ8keKFByh8"
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Moon-River-lyrics-Frank-Sinatra/B08DDFF369E15C874825691F000CAC36"
-
-	attributes['idyoutuberemark']="Rita Hayworth version"
-	attributes['idyoutube']="SQ8keKFByh8"
 %>
 % endif
 

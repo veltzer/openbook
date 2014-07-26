@@ -1,35 +1,36 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doGuitar']=True
 	attributes['doChords']=True
-	attributes['render']='My'
+	attributes['doGuitar']=True
 	attributes['doExtra']=True
+	attributes['render']='My'
 
 	attributes['title']="Shape of My Heart"
-	attributes['singer']="Sting"
-	attributes['poet']="Sting"
-	attributes['composer']="Sting"
 	attributes['style']="Pop"
+	attributes['composer']="Sting"
+	attributes['poet']="Sting"
 	attributes['piece']="Med. Ballad"
+	attributes['singer']="Sting"
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-
-	attributes['idyoutuberemark']="Leon the professional clip...:)"
-	attributes['idyoutube']="_0J0toYZB6Q"
-	attributes['idyoutuberemark']="Another one from Leon...:)"
-	attributes['idyoutube']="nVYFOlVB-Uo"
-	attributes['idyoutuberemark']="And another one from Leon...:)"
-	attributes['idyoutube']="P_1orNvO6Xk"
-	attributes['idyoutuberemark']="And another one from Leon...:)"
-	attributes['idyoutube']="locIxsfpgp4"
-	attributes['idyoutuberemark']="Sting and Dominic with nylon guitar"
-	attributes['idyoutube']="037uSAIahho"
-	attributes['idyoutuberemark']="Orignal video in the studio"
-	attributes['idyoutube']="qZ22i7QllO8"
-	attributes['lyricsurl']="http://www.lyrics007.com/Sting%20Lyrics/Shape%20Of%20My%20Heart%20Lyrics.html"
 
 	attributes['completion']="5"
 	attributes['uuid']="677fee0a-a26f-11df-bd2c-0019d11e5a41"
+
+	attributes['idyoutuberemark1']="Leon the professional clip...:)"
+	attributes['idyoutube1']="_0J0toYZB6Q"
+	attributes['idyoutuberemark2']="Another one from Leon...:)"
+	attributes['idyoutube2']="nVYFOlVB-Uo"
+	attributes['idyoutuberemark3']="And another one from Leon...:)"
+	attributes['idyoutube3']="P_1orNvO6Xk"
+	attributes['idyoutuberemark4']="And another one from Leon...:)"
+	attributes['idyoutube4']="locIxsfpgp4"
+	attributes['idyoutuberemark5']="Sting and Dominic with nylon guitar"
+	attributes['idyoutube5']="037uSAIahho"
+	attributes['idyoutuberemark6']="Orignal video in the studio"
+	attributes['idyoutube6']="qZ22i7QllO8"
+	attributes['lyricsurl']="http://www.lyrics007.com/Sting%20Lyrics/Shape%20Of%20My%20Heart%20Lyrics.html"
+
 %>
 % endif
 

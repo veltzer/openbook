@@ -31,7 +31,7 @@ input_encoding='utf-8'
 output_encoding='utf-8'
 p_output=sys.argv[1]
 p_input=sys.argv[2]
-p_book=int(sys.argv[3])
+p_book=bool(int(sys.argv[3]))
 common='src/include/common.makoi'
 
 # We really need the unlink, even though we have "open a file

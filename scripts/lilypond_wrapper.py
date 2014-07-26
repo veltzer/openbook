@@ -13,15 +13,9 @@ import subprocess # for Popen
 import os.path # for isfile
 import check_version # for check_version
 
-# parameters
-# I want errors to happen if there is any output...
-stopOnOutput=True
-showOutput=False
-doPs=False
-doPdf=True
-debug=False
-unlinkPs=True
-
+#############
+# functions #
+#############
 # this function is here because we want to supress output until we know
 # there is an error (and subprocess.check_output does not do this)
 def system_check_output(args):
@@ -44,10 +38,30 @@ def system_check_output(args):
 		print('stdout is',output)
 		print('stderr is',errout)
 
+# remove the target files, do nothing if they are not there
+def remove_output_if_exists():
+	if doPs and os.path.isfile(p_ps):
+		os.unlink(p_ps)
+	if doPdf and os.path.isfile(p_pdf):
+		os.unlink(p_pdf)
+
+##############
+# parameters #
+##############
+# I want errors to happen if there is any output...
+showOutput=False
+doPs=False
+doPdf=True
+debug=False
+unlinkPs=True
+
+########
+# code #
+########
 # first check that we are using the correct version of python
 check_version.check_version()
 
-if len(sys.argv)!=6:
+if len(sys.argv)!=7:
 	raise ValueError('command line issue')
 
 p_ps=sys.argv[1]
@@ -55,16 +69,10 @@ p_pdf=sys.argv[2]
 p_out=sys.argv[3]
 p_ly=sys.argv[4]
 p_do_pdfred=int(sys.argv[5])
+stopOnOutput=bool(int(sys.argv[6]))
 
 if debug:
 	print('arguments are',sys.argv)
-
-# remove the target files, do nothing if they are not there
-def remove_output_if_exists():
-	if doPs and os.path.isfile(p_ps):
-		os.unlink(p_ps)
-	if doPdf and os.path.isfile(p_pdf):
-		os.unlink(p_pdf)
 
 remove_output_if_exists()
 

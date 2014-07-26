@@ -7,16 +7,15 @@
 	attributes['render']="Epdf0"
 
 	attributes['title']="She Loves You"
+	attributes['style']="Rock"
 	attributes['composer']="John Lennon, Paul McCartney"
 	attributes['poet']="John Lennon, Paul McCartney"
-	attributes['style']="Rock"
 	attributes['piece']="Moderato"
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
-	attributes['structure']="ABABAB"
-
 	attributes['completion']="0"
 	attributes['uuid']="32a5cb0e-431f-11e0-b9fa-0019d11e5a41"
+	attributes['structure']="ABABAB"
 %>
 % endif
 

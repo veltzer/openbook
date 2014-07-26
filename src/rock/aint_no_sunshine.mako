@@ -5,17 +5,17 @@
 	attributes['doOwn']=True
 
 	attributes['title']="Ain't No Sunshine"
+	attributes['style']="Pop"
 	attributes['composer']="Bill Withers"
 	attributes['poet']="Bill Withers"
-	attributes['style']="Pop"
 	attributes['piece']="Med. Ballad"
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="669540fe-d851-11df-ae78-0019d11e5a41"
 
-	attributes['idyoutuberemark']="The original video clip from youtube"
-	attributes['idyoutube']="tIdIqbv7SPo"
+	attributes['idyoutuberemark1']="The original video clip from youtube"
+	attributes['idyoutube1']="tIdIqbv7SPo"
 	attributes['lyricsurl']="http://tabs.ultimate-guitar.com/b/bill_withers/aint_no_sunshine_crd.htm"
 	attributes['wiki']="Ain%27t_No_Sunshine"
 %>

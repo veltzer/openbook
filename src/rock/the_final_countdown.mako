@@ -5,9 +5,9 @@
 	attributes['doOwn']=True
 
 	attributes['title']="The Final Countdown"
+	attributes['style']="Rock"
 	attributes['composer']="Europe"
 	attributes['poet']="Europe"
-	attributes['style']="Rock"
 	attributes['piece']="Upbeat"
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
@@ -16,8 +16,8 @@
 
 	attributes['remark']="same scale (fis:m) as the original version"
 
-	attributes['idyoutuberemark']="Original version by Europe"
-	attributes['idyoutube']="9jK-NcRmVcw"
+	attributes['idyoutuberemark1']="Original version by Europe"
+	attributes['idyoutube1']="9jK-NcRmVcw"
 	attributes['lyricsurl']="http://www.elyrics.net/read/e/europe-lyrics/the-final-countdown-lyrics.html"
 %>
 % endif

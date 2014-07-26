@@ -5,8 +5,8 @@
 	attributes['doOwn']=True
 
 	attributes['title']="Forever Young"
-	attributes['composer']="Alphaville"
 	attributes['style']="Pop"
+	attributes['composer']="Alphaville"
 	attributes['piece']="Med. Ballad"
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 

@@ -7,11 +7,11 @@
 	# from wikipedia
 	attributes['title']="Sorry Seems to Be the Hardest Word"
 	# from wikipedia
+	attributes['style']="Pop,R&B"
+	# from wikipedia
 	attributes['composer']="Elton John"
 	# from wikipedia
 	attributes['poet']="Bernie Taupin"
-	# from wikipedia
-	attributes['style']="Pop,R&B"
 	# from me
 	attributes['piece']="Ballad"
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
@@ -21,8 +21,8 @@
 
 	attributes['remark']="same scale (g:m) as the original version"
 
-	attributes['idyoutube']="c3nScN89Klo"
-	attributes['idyoutuberemark']="Original Elton John Video clip"
+	attributes['idyoutuberemark1']="Original Elton John Video clip"
+	attributes['idyoutube1']="c3nScN89Klo"
 	attributes['lyricsurl']="http://www.eltonography.com/songs/sorry_seems_to_be_the_hardest_word.html"
 	attributes['wiki']="Sorry_Seems_to_Be_the_Hardest_Word"
 %>

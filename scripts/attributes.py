@@ -43,6 +43,10 @@ order=[
 	'idyoutube3',
 	'idyoutuberemark4',
 	'idyoutube4',
+	'idyoutuberemark5',
+	'idyoutube5',
+	'idyoutuberemark6',
+	'idyoutube6',
 	'lyricsurl',
 	'wiki',
 ]
@@ -54,7 +58,7 @@ class Attributes(dict):
 	def __setitem__(self, key, val):
 		newpos=order.index(key)
 		if newpos<self.pos:
-			raise ValueError('incorrect order of assignment', key)
+			raise ValueError('incorrect order of assignment', key, self['title'])
 		self.pos=newpos
 		super().__setitem__(key, val)
 	def reset(self):
