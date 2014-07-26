@@ -5,19 +5,19 @@
 	attributes['doOwn']=True
 
 	attributes['title']="Baby One More Time"
+	attributes['style']="Pop"
 	attributes['composer']="Max Martin"
 	attributes['poet']="Max Martin"
-	attributes['style']="Pop"
 	attributes['piece']="Pop"
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="8a728316-ee02-11e0-b7c5-0019d11e5a41"
 
-	attributes['idyoutuberemark']="the original Britney Spears clip"
-	attributes['idyoutube']="C-u5WLJ9Yk4"
-	attributes['idyoutuberemark']="a cover by Travis"
-	attributes['idyoutube']="acULghgYUg0"
+	attributes['idyoutuberemark1']="the original Britney Spears clip"
+	attributes['idyoutube1']="C-u5WLJ9Yk4"
+	attributes['idyoutuberemark2']="a cover by Travis"
+	attributes['idyoutube2']="acULghgYUg0"
 	attributes['lyricsurl']="http://www.elyrics.net/read/b/britney-spears-lyrics/baby-one-more-time-lyrics.html"
 %>
 % endif

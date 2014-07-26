@@ -5,20 +5,19 @@
 	attributes['doOwn']=True
 
 	attributes['title']="Just The Way You Are"
+	attributes['style']="Pop"
 	attributes['composer']="Billy Joel"
 	attributes['poet']="Billy Joel"
-	attributes['style']="Pop"
 	attributes['piece']="Moderately"
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
-	attributes['structure']="????"
-
 	attributes['completion']="4"
 	attributes['uuid']="ca1dfd9e-7033-11e0-a987-0019d11e5a41"
+	attributes['structure']="????"
 
-	attributes['idyoutube']="QPiK_yGG8ag"
-	attributes['idyoutube']="YiOYsnET6Iw"
-	attributes['idyoutube']="ounJsqomcv8"
+	attributes['idyoutube1']="QPiK_yGG8ag"
+	attributes['idyoutube2']="YiOYsnET6Iw"
+	attributes['idyoutube3']="ounJsqomcv8"
 %>
 % endif
 

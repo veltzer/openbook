@@ -5,11 +5,11 @@
 	attributes['doOwn']=True
 
 	attributes['title']="Days Like This"
-	attributes['composer']="Van Morrison"
-	attributes['album']="Days Like This/1995"
-	attributes['poet']="Van Morrison"
 	attributes['style']="Rock"
+	attributes['composer']="Van Morrison"
+	attributes['poet']="Van Morrison"
 	attributes['piece']="Med. Ballad"
+	attributes['album']="Days Like This/1995"
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
@@ -17,8 +17,8 @@
 
 	attributes['remark']="This is the right scale"
 
-	attributes['idyoutuberemark']="Original video clip"
-	attributes['idyoutube']="BteIwbKU_iQ"
+	attributes['idyoutuberemark1']="Original video clip"
+	attributes['idyoutube1']="BteIwbKU_iQ"
 	attributes['lyricsurl']="http://www.lyricsfreak.com/v/van+morrison/days+like+this_20142994.html"
 	attributes['wiki']="Days_Like_This_(song)"
 %>

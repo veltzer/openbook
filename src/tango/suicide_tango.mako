@@ -21,8 +21,8 @@
 	attributes['uuid']="66834ecc-dcd0-11e2-9ec9-782bcbdd3b7a"
 	attributes['structure']="AABA"
 
-	attributes['idyoutuberemark']="Original Russian version"
-	attributes['idyoutube']="qOnU-TRRmSE"
+	attributes['idyoutuberemark1']="Original Russian version"
+	attributes['idyoutube1']="qOnU-TRRmSE"
 %>
 % endif
 

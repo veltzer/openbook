@@ -5,9 +5,9 @@
 	attributes['doOwn']=True
 
 	attributes['title']="Lucky Man"
+	attributes['style']="Rock"
 	attributes['composer']="Greg Lake"
 	attributes['poet']="Greg Lake"
-	attributes['style']="Rock"
 	attributes['piece']="Med. Ballad"
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
@@ -16,7 +16,7 @@
 
 	attributes['remark']="The D scale is the one used in the original version (Mark Veltzer,17/8/11)"
 
-	attributes['idyoutube']="5x6uQ6yZsOY"
+	attributes['idyoutube1']="5x6uQ6yZsOY"
 	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Lucky-Man-lyrics-Emerson-Lake-Palmer/13302F99F6B11DEC48256AB8002432F8"
 %>
 % endif

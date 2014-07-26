@@ -7,9 +7,9 @@
 	attributes['render']="My"
 
 	attributes['title']="Have I told you lately that I love you"
-	attributes['singer']="Van Morrison"
 	attributes['style']="Pop"
 	attributes['piece']="Med. Ballad"
+	attributes['singer']="Van Morrison"
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="0"

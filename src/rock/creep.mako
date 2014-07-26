@@ -5,9 +5,9 @@
 	attributes['doOwn']=True
 
 	attributes['title']="Creep"
+	attributes['style']="Rock"
 	attributes['composer']="Radiohead"
 	attributes['poet']="Radiohead"
-	attributes['style']="Rock"
 	attributes['piece']="Med. Ballad"
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
@@ -16,7 +16,7 @@
 
 	attributes['remark']="The G scale is the one used in the original version (Mark Veltzer,17/6/11)"
 
-	attributes['idyoutube']="XFkzRNyygfk"
+	attributes['idyoutube1']="XFkzRNyygfk"
 	attributes['lyricsurl']="http://www.azlyrics.com/lyrics/radiohead/creepacoustic.html"
 %>
 % endif

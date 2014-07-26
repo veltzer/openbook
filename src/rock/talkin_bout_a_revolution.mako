@@ -5,16 +5,16 @@
 	attributes['doOwn']=True
 
 	attributes['title']="Talkin' Bout A Revolution"
+	attributes['style']="Rock"
 	attributes['composer']="Tracy Chapman"
 	attributes['poet']="Tracy Chapman"
-	attributes['style']="Rock"
 	attributes['piece']="upbeat"
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 
 	attributes['completion']="5"
 	attributes['uuid']="e9155cee-c554-11e0-b407-0019d11e5a41"
 
-	attributes['idyoutube']="SKYWOwWAguk"
+	attributes['idyoutube1']="SKYWOwWAguk"
 	attributes['lyricsurl']="http://www.lyrics007.com/Tracy%20Chapman%20Lyrics/Talkin'%20Bout%20A%20Revolution%20Lyrics.html"
 %>
 % endif
