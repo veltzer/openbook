@@ -23,7 +23,10 @@ packs=[
 	'texi2html', # needed to install lilypond from source
 	'guile-1.8-dev', # needed to install lilypond from source
 	'lilypond', # this is the main tool we use
+	'lilypond-data', # documentation for lilypond
 	'lilypond-doc', # documentation for lilypond
+	'lilypond-doc-html', # documentation for lilypond
+	'lilypond-doc-pdf', # documentation for lilypond
 	'timidity', # play output midi and convert midi to wav
 	'lame', # convert audio (encode ogg)
 	'pdfjam', # join pdfs (using pdfjoin(1))

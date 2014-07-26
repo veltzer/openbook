@@ -43,7 +43,10 @@ Anyone.
 What system do I need to participate?
 --------------------------------------
 A Linux system that you can install software on.
+Mac OSX is reported to work too if you know how to install the right stuff on it.
 Windows is not currently supported although well formed patches will be accepted.
+(disclaimer: the author hates Windows with a vengence so patches have to be ultra
+clean to be accepted)
 
 What do I need to know to participate?
 ---------------------------------------
@@ -72,7 +75,7 @@ Check out the PDFs and other outputs in https://veltzer.net/openbook/.
 
 Why is there so little documentation?
 --------------------------------------
-I just started this project. Feel free to add stuff and request a pull. If you contribute a lot I will make you an admin...
+I just started this project (4 years all in all). Feel free to add stuff and request a pull. If you contribute a lot I will make you an admin...
 
 How do you write the standards?
 --------------------------------
@@ -91,11 +94,13 @@ How do I get started?
 ----------------------
 * create an account on git hub.
 * git checkout -b [your branch name] git://github.com/veltzer/openbook.git
+* on Ubuntu run ./scripts/ubuntu_install.py to install required pieces of software.
+* on other systems do the best you can.
 * make (install pieces of software that it needs if it complains).
 * hack on the files (git add the files that you hack on).
 * commit to your own hard drive repository (git commit).
 * push to git hub (git push).
-* request me to pull your changes (button in the github ui).
+* send me a pull request (button in the github ui).
 
 Can I just add a single tune?
 ------------------------------
