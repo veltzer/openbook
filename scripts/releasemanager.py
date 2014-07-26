@@ -2,7 +2,7 @@
 
 import smtplib
 import email.mime.text
-import ConfigParser
+import configparser
 import os
 import sys
 import tweepy

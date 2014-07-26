@@ -10,13 +10,9 @@
 # - try to use a better git interface (there are native python git interfaces).
 
 # this is for running the various commands that we need
-import subprocess
+import subprocess # for check_output, check_call
 import os # for getcwd
-import releasemanager
 import check_version # for check_version
-
-# first check that we are using the correct version of python
-check_version.check_version()
 
 ##############
 # parameters #
@@ -28,15 +24,20 @@ debug=True
 check=True
 # what is the name of the project?
 project=os.getcwd().split('/')[-1]
+# do we want to use the release manager?
+doRelease=False
 
-######################
-# script starts here #
-######################
+########
+# code #
+########
+# first check that we are using the correct version of python
+check_version.check_version()
+
 if check:
-	out=subprocess.check_output(['git','status','-s'])
+	out=subprocess.check_output(['git','status','-s']).decode()
 	if out!='':
 		raise ValueError('first commit everything, then call me...')
-tag=int(subprocess.check_output(['git','describe','--abbrev=0']).strip())
+tag=int(subprocess.check_output(['git','describe','--abbrev=0']).decode().strip())
 if debug:
 	print('old tag is '+str(tag))
 tag+=1
@@ -47,5 +48,7 @@ tag=str(tag)
 subprocess.check_output(['git','tag','-s','-m',project+' version '+tag,tag])
 subprocess.check_call(['make','clean'])
 subprocess.check_call(['make','install'])
-rm=releasemanager.ReleaseManager()
-rm.release()
+if doRelease:
+	import releasemanager # for ReleaseManager
+	rm=releasemanager.ReleaseManager()
+	rm.release()
