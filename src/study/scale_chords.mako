@@ -7,10 +7,9 @@
 	attributes['title']="Jazz chords on the major scale"
 	attributes['style']="Jazz"
 	attributes['piece']="Upbeat Jazz"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-
 	attributes['copyright']=gattr['copyrightvalstudy']
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="4"
 
 	attributes['uuid']="ffbec224-36a6-11e0-aecb-0019d11e5a41"

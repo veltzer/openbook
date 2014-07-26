@@ -4,18 +4,16 @@
 	attributes['doOwn']=True
 
 	attributes['title']="Desafinado"
+	attributes['style']="Jazz"
 	attributes['subtitle']="Slightly Out Of Tune"
 	attributes['composer']="Antonio Carlos Jobim"
-	attributes['copyright']="1959 1962, Editora Musical Arapua, Sao Paulo, Brazil"
-	attributes['style']="Jazz"
-	attributes['piece']="Medium Bossa Nova"
 	attributes['poet']="Newton Menonca, Jon Hendricks, Jessie Cavanaugh"
+	attributes['piece']="Medium Bossa Nova"
+	attributes['copyright']="1959 1962, Editora Musical Arapua, Sao Paulo, Brazil"
+	
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-
 	attributes['completion']="5"
-
 	attributes['dontimport']="1"
-
 	attributes['uuid']="9a39404e-a26f-11df-aa6e-0019d11e5a41"
 %>
 % endif

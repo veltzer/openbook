@@ -4,18 +4,18 @@
 	attributes['doOwn']=True
 
 	attributes['title']="Prelude and Fugue No. 1 in C major"
+	attributes['style']="Classical"
 	attributes['subtitle']="Well-Tempered Clavier, Book 1"
 	attributes['composer']="Johann Sebastian Bach (1685-1750)"
-	attributes['copyright']="Public Domain"
-	attributes['style']="Classical"
 	attributes['piece']="BWV 846"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['remark']="Taken from Shlomo Gronichs book"
+	attributes['copyright']="Public Domain"
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="562ae904-a664-11df-9e85-0019d11e5a41"
+	attributes['remark']="Taken from Shlomo Gronichs book"
 
-	attributes['idyoutube']="0KQW2YnCUrE"
+	attributes['idyoutube1']="0KQW2YnCUrE"
 %>
 % endif
 

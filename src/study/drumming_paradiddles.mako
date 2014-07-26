@@ -5,10 +5,9 @@
 
 	attributes['title']="Drumming paradiddles"
 	attributes['style']="Jazz"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-
 	attributes['copyright']=gattr['copyrightvalstudy']
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="eb2be7a4-6f42-11e0-a53d-0019d11e5a41"
 %>
@@ -24,7 +23,7 @@
 % endif
 
 % if part=='Own':
-\markuplines {
+\markup {
 	\wordwrap-lines { \italic {
 	This is some text about paradiddles...
 	} }

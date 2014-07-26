@@ -5,10 +5,9 @@
 
 	attributes['title']="Drumming drills with no bar lines"
 	attributes['style']="Jazz"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-
 	attributes['copyright']=gattr['copyrightvalstudy']
 
+	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['uuid']="6d469874-6e9e-11e0-b6e5-0019d11e5a41"
 %>
@@ -20,7 +19,7 @@
 % endif
 
 % if part=='Own':
-\markuplines {
+\markup {
 	\wordwrap-lines { \italic {
 	These are exercises to train the control of your hands. The idea is to train your hand for flexibility and agility.
 	Try be aware of how you are performing the exercises and make sure you are not straining your wrists or your muscles.
@@ -202,7 +201,7 @@ Different number of strokes in each hand.
 		}
 	}
 }
-\markuplines {
+\markup {
 	\wordwrap-lines { \italic {
 	Focus on the center of the previous exercises. This could be thought of in 3/4 time.
 	} }
