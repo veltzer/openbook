@@ -38,10 +38,10 @@ if check:
 		raise ValueError('first commit everything, then call me...')
 tag=int(subprocess.check_output(['git','describe','--abbrev=0']).strip())
 if debug:
-	print 'old tag is '+str(tag)
+	print('old tag is '+str(tag))
 tag+=1
 if debug:
-	print 'new tag is '+str(tag)
+	print('new tag is '+str(tag))
 tag=str(tag)
 # tag the new tag
 subprocess.check_output(['git','tag','-s','-m',project+' version '+tag,tag])
