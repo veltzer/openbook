@@ -25,6 +25,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="e4c0cc74-eb5c-11e3-8d65-b71fa04c4d86"
 	attributes['structure']="A"
+	attributes['location']="jfb:67-68"
 
 	attributes['idyoutuberemark1']="Bill with Toots"
 	attributes['idyoutube1']="micPH3vJVs0"

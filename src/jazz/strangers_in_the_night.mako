@@ -24,6 +24,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="2af3e35c-e252-11e3-abb7-932771d3c7a0"
 	attributes['structure']="AA'BA"
+	attributes['location']="jfb:364-365"
 
 	attributes['idyoutuberemark1']="Cannonical version by Frank"
 	attributes['idyoutube1']="hlSbSKNk9f0"

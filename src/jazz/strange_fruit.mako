@@ -22,6 +22,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="68679a0a-da80-11e3-8208-4fcd89557297"
 	attributes['structure']="A"
+	attributes['location']="jfb:364"
 
 	attributes['idyoutuberemark1']="Nina Simon version"
 	attributes['idyoutube1']="ughAVo2ZAag"

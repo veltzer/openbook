@@ -18,6 +18,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="f0a5804c-eb83-11e0-aeb1-0019d11e5a41"
 	attributes['structure']="AABA"
+	attributes['location']="rbk1:103,jfb:94"
 
 	attributes['idyoutuberemark1']="Theloneous Monk...:)"
 	attributes['idyoutube1']="GsI4oNKGJPg"

@@ -20,6 +20,7 @@
 	attributes['uuid']="654dc682-0e83-11e4-8688-1f470b65356e"
 	attributes['structure']="AABA"
 	attributes['structureremark']="The second half of the B part is the same as the second half of the A part. Didn't see this a lot."
+	attributes['location']="jfb:292"
 
 	attributes['idyoutuberemark1']="Blakey with the kids"
 	attributes['idyoutube1']="Hmu57-USSs0"

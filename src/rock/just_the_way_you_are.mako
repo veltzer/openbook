@@ -14,6 +14,7 @@
 	attributes['completion']="4"
 	attributes['uuid']="ca1dfd9e-7033-11e0-a987-0019d11e5a41"
 	attributes['structure']="????"
+	attributes['location']="file:just_the_way_you_are.pdf"
 
 	attributes['idyoutube1']="QPiK_yGG8ag"
 	attributes['idyoutube2']="YiOYsnET6Iw"

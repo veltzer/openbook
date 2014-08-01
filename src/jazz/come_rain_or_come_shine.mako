@@ -17,6 +17,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="b109cd80-a26e-11df-8c11-0019d11e5a41"
 	attributes['structure']="AB"
+	attributes['location']="rbk2:63,jfb:86-87"
 	attributes['remark']="the my set of chords is from Amit Golan"
 
 	attributes['idyoutube1']="XqECFy_qzkM"

@@ -18,6 +18,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="f7fdc5e0-db41-11e0-a31c-0019d11e5a41"
 	attributes['structure']="A"
+	attributes['location']="rbk1:51"
 	# from the real book
 	attributes['remark']="Play last 4 bars twice more to end"
 

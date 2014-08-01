@@ -16,6 +16,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="7f78edea-47a9-11e2-8d61-0f0bb7c14483"
 	attributes['structure']="AB"
+	attributes['location']="rbk1:377"
 
 	attributes['idyoutuberemark1']="Jethro Tull doing it ?!?"
 	attributes['idyoutube1']="Zh4GZJlQCfY"

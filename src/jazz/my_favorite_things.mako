@@ -26,6 +26,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="02c22208-a26f-11df-98fd-0019d11e5a41"
 	attributes['structure']="AABA"
+	attributes['location']="rbk1:306,jfb:260"
 
 	attributes['idyoutuberemark1']="Sarah Vaughan"
 	attributes['idyoutube1']="dusavln6Cjw"

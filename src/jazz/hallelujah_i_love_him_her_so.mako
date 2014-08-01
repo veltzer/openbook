@@ -22,6 +22,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="d387ae5e-a26e-11df-9edf-0019d11e5a41"
 	attributes['structure']="ABA"
+	attributes['location']="jfb:141"
 
 	attributes['idyoutuberemark1']="Ray Charles live!"
 	attributes['idyoutube1']="Cf0X7QuK4LI"

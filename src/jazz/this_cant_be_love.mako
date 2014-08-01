@@ -20,6 +20,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="c01fbf4c-d7a2-11e3-a29f-abfec0c435b3"
 	attributes['structure']="AABA"
+	attributes['location']="jfb:392"
 
 	attributes['idyoutuberemark1']="I like this version by Diana Krall"
 	attributes['idyoutube1']="9uRGw8Bc0s0"

@@ -20,6 +20,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="2615b7ec-a26f-11df-b010-0019d11e5a41"
 	attributes['structure']="AB"
+	attributes['location']="rbk2:323,jfb:370,ja54:4"
 
 	attributes['idyoutuberemark1']="Janis!"
 	attributes['idyoutube1']="mzNEgcqWDG4"

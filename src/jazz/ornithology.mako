@@ -22,6 +22,7 @@
 	attributes['uuid']="dac427e4-0b81-11e4-9974-0f7c29702a29"
 	attributes['structure']="ABAC"
 	attributes['structureremark']="This can also be seen as AB but they start with exactly the same first 8 bar so ABAC is better"
+	attributes['location']="jfb:293"
 
 	attributes['idyoutuberemark1']="Charlie!"
 	attributes['idyoutube1']="DEeISJ0wr48"

@@ -17,6 +17,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="c921579e-a26e-11df-9a5c-0019d11e5a41"
 	attributes['structure']="AABA"
+	attributes['location']="rbk2:79,jfb:105"
 
 	attributes['idyoutuberemark1']="Miles Davis!"
 	attributes['idyoutube1']="ZcPxCQhJ2n4"

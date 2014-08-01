@@ -17,12 +17,11 @@
 
 	attributes['completion']="5"
 	attributes['uuid']="d936b39a-971e-11e0-9c44-0019d11e5a41"
-
 	# my own deduction
 	attributes['structure']="AB"
+	attributes['location']="file:eich_ze_shekochav.pdf"
 
 	attributes['idyoutube1']="1GI5Vst5a-o"
-
 %>
 % endif
 

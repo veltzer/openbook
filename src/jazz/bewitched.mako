@@ -21,6 +21,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="dd1624e6-2567-11e1-9444-0019d11e5a41"
 	attributes['structure']="AABA"
+	attributes['location']="rbk2:43,jfb:58"
 
 	attributes['idyoutuberemark1']="Ella Fitzgerald with the intro part..."
 	attributes['idyoutube1']="nDlCCKHql0w"

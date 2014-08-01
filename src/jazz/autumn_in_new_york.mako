@@ -23,6 +23,7 @@
 	attributes['uuid']="9677b522-7463-11e1-a57d-bbc28ffad085"
 	attributes['structure']="ABAC"
 	attributes['structureremark']="I determined it was ABAC although the part A does not repeat exactly. It is good enough"
+	attributes['location']="rbk1:33,hlrjb:34"
 
 	attributes['idyoutuberemark1']="Virtuoso Sonny Stitt"
 	attributes['idyoutube1']="Nn11v07Db3s"

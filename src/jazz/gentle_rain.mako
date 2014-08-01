@@ -24,6 +24,7 @@
 	attributes['uuid']="04bbfb74-0128-11e1-9e2a-0019d11e5a41"
 	attributes['structure']="AB"
 	attributes['structureremark']="This tune has a weird structure because the part B has different lengths"
+	attributes['location']="rbk1:169,nrbk3:128"
 
 	attributes['idyoutuberemark1']="Tony Bennet slow version"
 	attributes['idyoutube1']="uJGqzudEDDE"

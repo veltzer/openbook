@@ -23,6 +23,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="3244f4ae-159d-11e1-bbe3-0019d11e5a41"
 	attributes['structure']="AB"
+	attributes['location']="jfb:119"
 
 	attributes['idyoutuberemark1']="The one and only Frank"
 	attributes['idyoutube1']="oCW9Hey6IVY"

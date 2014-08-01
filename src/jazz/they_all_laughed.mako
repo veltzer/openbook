@@ -25,6 +25,7 @@
 	attributes['uuid']="89e1c354-f2a2-11e0-9cf1-0019d11e5a41"
 	attributes['structure']="AA'BA''"
 	attributes['structureremark']="this tune is very close to AABA. The tags (A') are there to show that there are subtle changes but these are indeed subtle."
+	attributes['location']="jfb:389"
 
 	attributes['idyoutuberemark1']="Ella & Louis"
 	attributes['idyoutube1']="ppFVmnmpGz8"

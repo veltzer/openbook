@@ -19,6 +19,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="cd56a8d8-da1d-11e3-a6ca-c3a55777c28e"
 	attributes['structure']="Blues"
+	attributes['location']="jfb:279"
 
 	attributes['idyoutuberemark1']="The great Charlie Parker"
 	attributes['idyoutube1']="ryNtmkfeJk4"

@@ -20,6 +20,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="718a13e0-023a-11e1-924f-0019d11e5a41"
 	attributes['structure']="AABA"
+	attributes['location']="rbk1:12"
 
 	attributes['idyoutuberemark1']="An amzing version by Oscar Peterson"
 	attributes['idyoutube1']="TSNPzm_wYLY"

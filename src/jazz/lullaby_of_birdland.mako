@@ -17,6 +17,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="f9668406-a26e-11df-8542-0019d11e5a41"
 	attributes['structure']="AABA"
+	attributes['location']="rbk1:277,jfb:234"
 
 	attributes['idyoutuberemark1']="The famous Ella version"
 	attributes['idyoutube1']="UY8zK4R9oE8"

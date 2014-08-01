@@ -22,6 +22,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="4a4a2f24-ed86-11e3-aaf5-87841dcdcaf2"
 	attributes['structure']="AABA"
+	attributes['location']="jfb:41"
 
 	attributes['idyoutuberemark1']="Diana Krall in a good version of this one"
 	attributes['idyoutube1']="GHyT8m6mSuI"

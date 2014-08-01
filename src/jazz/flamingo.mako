@@ -23,6 +23,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="be87a49a-1a05-11e1-ba9e-0019d11e5a41"
 	attributes['structure']="AABA"
+	attributes['location']="jfb:119"
 
 	attributes['idyoutuberemark1']="Duke and his orchestra"
 	attributes['idyoutube1']="XlmMzUMCIIg"

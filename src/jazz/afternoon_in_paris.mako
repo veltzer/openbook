@@ -20,6 +20,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="8f0a1ea6-a26e-11df-8edc-0019d11e5a41"
 	attributes['structure']="AABA"
+	attributes['location']="rbk1:10,jfb:35"
 
 	attributes['idyoutuberemark1']="Chet Baker in a cool jazz version"
 	attributes['idyoutube1']="o3KtgcvYkig"

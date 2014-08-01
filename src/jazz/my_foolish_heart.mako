@@ -22,6 +22,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="ce9be996-a26e-11df-bf2c-0019d11e5a41"
 	attributes['structure']="AB"
+	attributes['location']="jfb:260-261"
 
 	attributes['idyoutube1']="a2LFVWBmoiw"
 	attributes['idyoutube2']="neXL51g8P-M"

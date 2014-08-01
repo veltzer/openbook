@@ -22,6 +22,7 @@
 	attributes['uuid']="4e2019f6-f9ef-11e1-b796-174ce4bd9471"
 	attributes['structure']="ABAC"
 	attributes['structureremark']="You can think of this as AB but it's really an ABAC tune"
+	attributes['location']="jfb:423,rbk1:461"
 
 	attributes['idyoutuberemark1']="Nat King Cole in an excellent lyric version"
 	attributes['idyoutube1']="GfAb0gNPy6s"

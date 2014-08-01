@@ -22,6 +22,7 @@
 	attributes['uuid']="828326cc-013c-11e1-b823-0019d11e5a41"
 	attributes['structure']="A"
 	attributes['structureremark']="Very weird not repeating structure because of the weird harmony steps"
+	attributes['location']="rbk1:170,hlrjb:130,nrbk2:121,kw:3"
 	attributes['remark']="the key here is of little meaning as the harmony changes key all the time...:) That's why it's written in C."
 
 	attributes['idyoutuberemark1']="Mccoy Tyner awesome solo..."

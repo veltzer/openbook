@@ -18,6 +18,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="f3f8f010-3fda-11e2-ad72-a3725b0aaeaa"
 	attributes['structure']="AAB"
+	attributes['location']="kw:42,rbk1:320"
 
 	attributes['idyoutuberemark1']="Cannonical version by Frank Sinatra"
 	attributes['idyoutube1']="mGGirB4XOmI"

@@ -22,6 +22,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="1c99c334-a26f-11df-b3cb-0019d11e5a41"
 	attributes['structure']="AABA"
+	attributes['location']="rbk1:364,jfb:322"
 
 	attributes['idyoutuberemark1']="Ella's vocal version"
 	attributes['idyoutube1']="DEaDj6TXiQQ"

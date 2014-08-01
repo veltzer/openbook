@@ -18,6 +18,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="39de7d2c-a26f-11df-8dbc-0019d11e5a41"
 	attributes['structure']="AABA"
+	attributes['location']="jfb:422-423"
 
 	attributes['idyoutuberemark1']="Orchestral version from the film score of \"Meet Joe Black\""
 	attributes['idyoutube1']="Qhrpc9FFFAI"

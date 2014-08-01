@@ -16,6 +16,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="afea10ce-edc0-11e0-9cc4-0019d11e5a41"
 	attributes['structure']="AB"
+	attributes['location']="rbk1:408"
 	attributes['remark']="there are a couple of different lyric versions for this song"
 
 	attributes['idyoutube1']="Iqs3w1Q5sto"

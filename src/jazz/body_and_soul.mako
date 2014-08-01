@@ -23,6 +23,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="b2076c06-e025-11e0-ab4c-0019d11e5a41"
 	attributes['structure']="AABA"
+	attributes['location']="rbk1:59,jfb:67"
 
 	attributes['idyoutuberemark1']="Billie Holiday"
 	attributes['idyoutube1']="CMDlk6lGQOk"

@@ -22,6 +22,7 @@
 	attributes['uuid']="7d17fd1c-15fe-11e1-b205-0019d11e5a41"
 	attributes['structure']="AB"
 	attributes['structureremark']="this tunes structure can also be categorised as ABAC if you take the AB as A and the AC as B. Under the AB interpretation the first part of A (first 8 bars) is the same as the first part of B."
+	attributes['location']="rbk1:202,jfb:149"
 
 	attributes['idyoutuberemark1']="Ella!"
 	attributes['idyoutube1']="2d-l7_TGnIE"

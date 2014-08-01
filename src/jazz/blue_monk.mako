@@ -17,6 +17,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="4cc04ec0-e8b6-11e3-a334-5bb66fd360f0"
 	attributes['structure']="A"
+	attributes['location']="rbk1:54"
 
 	attributes['idyoutuberemark1']="Classic Monk..."
 	attributes['idyoutube1']="FRUWtrgTpcs"

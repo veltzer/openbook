@@ -24,6 +24,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="010d881c-e348-11e3-bd2b-af99bf9a3980"
 	attributes['structure']="AABA"
+	attributes['location']="jfb:414"
 
 	attributes['idyoutuberemark1']="Bill Evans in great form"
 	attributes['idyoutube1']="dH3GSrCmzC8"

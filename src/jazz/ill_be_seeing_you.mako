@@ -25,6 +25,7 @@
 	attributes['uuid']="6161149e-da7f-11e3-9076-0bd9aa7a6778"
 	attributes['structure']="ABA'C"
 	attributes['structureremark']="This is almost a pure ABAC"
+	attributes['location']="jfb:167"
 
 	attributes['idyoutuberemark1']="Sinatra in his younger days"
 	attributes['idyoutube1']="oL60OQLekWQ"

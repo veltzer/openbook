@@ -18,6 +18,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="087137ac-a26f-11df-aa1f-0019d11e5a41"
 	attributes['structure']="AABA"
+	attributes['location']="rbk1:308,jfb:259"
 
 	attributes['idyoutuberemark1']="Frank!"
 	attributes['idyoutube1']="wG6lAtpcI_Q"

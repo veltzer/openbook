@@ -17,6 +17,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="736a8ed2-ea4b-11e3-8549-ff0ac7b12d0d"
 	attributes['structure']="ABCB"
+	attributes['location']="rbk1:138"
 
 	attributes['idyoutuberemark1']="Monk live!"
 	attributes['idyoutube1']="dZ9El7k4mNo"

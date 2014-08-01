@@ -20,6 +20,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="070df83e-0676-11e1-b7fe-0019d11e5a41"
 	attributes['structure']="AABA"
+	attributes['location']="jfb:102,jltd:90"
 
 	attributes['idyoutuberemark1']="Billie in a radio show"
 	attributes['idyoutube1']="XxwJ9lh-id4"

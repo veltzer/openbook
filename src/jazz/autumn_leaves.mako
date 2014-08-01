@@ -23,6 +23,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="8c35acf6-a7c1-11df-9040-0019d11e5a41"
 	attributes['structure']="AAB"
+	attributes['location']="rbk1:36,jfb:50"
 
 	attributes['idyoutuberemark1']="The great Bill Evans..."
 	attributes['idyoutube1']="mRhVI7cpcS4"

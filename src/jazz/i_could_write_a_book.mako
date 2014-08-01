@@ -27,6 +27,7 @@
 	attributes['uuid']="e00ddbf8-a26e-11df-92da-0019d11e5a41"
 	attributes['structure']="ABAC"
 	attributes['structureremark']="could be categorized as AB"
+	attributes['location']="rbk1:209,jfb:153"
 
 	attributes['idyoutuberemark1']="Frank in the classic vocal version"
 	attributes['idyoutube1']="UwoZNHhFgLQ"

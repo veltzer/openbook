@@ -16,6 +16,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="e7277c50-a26e-11df-863c-0019d11e5a41"
 	attributes['structure']="AB"
+	attributes['location']="rbk3:130"
 	attributes['remark']="the My version is from Amit Golan"
 
 	attributes['idyoutube1']="7Oh-Dl-KbF0"

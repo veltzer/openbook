@@ -23,7 +23,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="ffe98a96-0a4c-11e3-bcaf-3b8eec526bc3"
 	attributes['structure']="AABA"
-	attributes['location']="fb:268,269"
+	attributes['location']="jfb:268-269"
 
 	attributes['idyoutuberemark1']="Hancock, Brecker and Hargrove"
 	attributes['idyoutube1']="QTHYSBAZJrQ"

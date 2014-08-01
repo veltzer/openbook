@@ -23,6 +23,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="0a43bee4-e044-11e3-9617-b76a2faa3d0b"
 	attributes['structure']="AABA"
+	attributes['location']="jfb:45"
 
 	attributes['idyoutuberemark1']="Chet Baker in a very good version"
 	attributes['idyoutube1']="shuy1hpUGvQ"

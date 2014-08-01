@@ -26,6 +26,7 @@
 	attributes['uuid']="6a5d2730-c7dd-11df-b3d0-0019d11e5a41"
 	attributes['structure']="ABAC"
 	attributes['structureremark']="this tunes song could also be noted as AB but then you lose the info that the first 8 bars of the A and part B are the same."
+	attributes['location']="rbk1:311,jfb:268"
 
 	attributes['idyoutuberemark1']="Ben Webster on his airy sax..."
 	attributes['idyoutube1']="_D2XBzcKFPM"

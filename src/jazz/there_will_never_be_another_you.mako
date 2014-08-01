@@ -19,6 +19,7 @@
 	attributes['uuid']="e30e1074-eaf3-11e0-a377-0019d11e5a41"
 	attributes['structure']="AB"
 	attributes['structureremark']="the structure of this tune could also be thought of ABAC since in the AB interpretation the first 8 bars of the A and B part are identical."
+	attributes['location']="jfb:384,rbk1:426"
 
 	attributes['idyoutube1']="kh_NnsbIqNQ"
 	attributes['idyoutube2']="Til3lV_ItZE"
