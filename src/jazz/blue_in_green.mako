@@ -21,6 +21,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="c73decf2-e30c-11e3-b12b-dbe41a94d84d"
 	attributes['structure']="A"
+	attributes['location']="jfb:64"
 
 	attributes['idyoutuberemark1']="Original from Kind of Blue"
 	attributes['idyoutube1']="PoPL7BExSQU"

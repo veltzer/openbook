@@ -19,6 +19,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="ed0cff46-dffa-11e3-b4b7-43ee65102d59"
 	attributes['structure']="A"
+	attributes['location']="rbk1:152"
 
 	attributes['idyoutuberemark1']="The Chick Corea cool version"
 	attributes['idyoutube1']="b3yAq20qSm4"

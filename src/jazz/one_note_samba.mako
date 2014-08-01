@@ -20,6 +20,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="21bc8284-a26f-11df-a829-0019d11e5a41"
 	attributes['structure']="ABA'"
+	attributes['location']="jfb:289,rbk1:331"
 
 	attributes['idyoutuberemark1']="Dizzy Gilespie in a great version"
 	attributes['idyoutube1']="Jb7LqPmWBKw"

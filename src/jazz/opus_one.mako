@@ -24,6 +24,7 @@
 	attributes['uuid']="31cf66b6-11b8-11e4-bcfe-f76051fd87b1"
 	attributes['structure']="AABA"
 	attributes['structureremark']="The A's are just a little bit different"
+	attributes['location']="jfb:291"
 
 	attributes['idyoutuberemark1']="Nat King Cole swings"
 	attributes['idyoutube1']="a33vdj7zoB0"

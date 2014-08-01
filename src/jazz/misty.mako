@@ -25,6 +25,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="bb21d126-f210-11e0-9b64-0019d11e5a41"
 	attributes['structure']="AABA"
+	attributes['location']="rbk1:296,jfb:252"
 
 	attributes['idyoutuberemark1']="great version by Ella Fitzgerald"
 	attributes['idyoutube1']="mQouJdvB80U"

@@ -27,6 +27,7 @@
 	attributes['uuid']="87da6ece-a26e-11df-95d7-0019d11e5a41"
 	attributes['structure']="AB"
 	attributes['structureremark']="this tunes structure can also be categorised as ABAC since the first 8 bars of both the first and second part are the same."
+	attributes['location']="rbk1:6,jfb:120-121"
 
 	attributes['idyoutuberemark1']="Wynton Marsalis Quartet"
 	attributes['idyoutube1']="-P2xoeGoWMs"

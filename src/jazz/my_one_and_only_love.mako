@@ -23,7 +23,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="ac777f1c-0bf0-11e3-9fd3-782bcbdd3b7a"
 	attributes['structure']="AABA"
-	attributes['location']="fb:266"
+	attributes['location']="jfb:266"
 
 	attributes['idyoutuberemark1']="Coltrane!"
 	attributes['idyoutube1']="ecrE80rnjhw"

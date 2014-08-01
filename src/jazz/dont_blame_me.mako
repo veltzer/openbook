@@ -21,6 +21,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="d01b9fc8-e077-11e3-8a42-b3378bc59d8a"
 	attributes['structure']="AABA"
+	attributes['location']="rbk1:125"
 
 	attributes['idyoutuberemark1']="Nat King Cole"
 	attributes['idyoutube1']="CkqKURwl9m0"

@@ -26,6 +26,7 @@
 	attributes['uuid']="ba3d8788-10f7-11e4-b63c-8397db34c0b9"
 	attributes['structure']="ABA"
 	attributes['structureremark']="Each A part is the 16 bars where the first 4 of every half are the same"
+	attributes['location']="jfb:292"
 
 	attributes['idyoutuberemark1']="Excellent piano arrangement"
 	attributes['idyoutube1']="2LEah90aDmA"

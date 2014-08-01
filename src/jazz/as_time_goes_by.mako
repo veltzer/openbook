@@ -20,6 +20,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="0a7b423c-7a4e-11e1-8d67-878c1414bdce"
 	attributes['structure']="AABA"
+	attributes['location']="rbk1:31"
 
 	attributes['idyoutuberemark1']="Classic Billie Holiday"
 	attributes['idyoutube1']="vYoet7-qDHI"

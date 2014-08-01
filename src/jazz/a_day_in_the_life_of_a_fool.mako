@@ -27,6 +27,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="88a1ec40-db4c-11e3-8a8c-23226fc873cc"
 	attributes['structure']="AA'B"
+	attributes['location']="jfb:94-95"
 
 	attributes['idyoutuberemark1']="Frank doin it sadly..."
 	attributes['idyoutube1']="ZMX3AeJy4_Q"

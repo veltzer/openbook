@@ -20,6 +20,7 @@
 	attributes['uuid']="ef0827e0-f690-11e0-ba56-0019d11e5a41"
 	attributes['structure']="AABC"
 	attributes['structureremark']="The tune is so short and fast that some see it as just A"
+	attributes['location']="jfb:357"
 
 	attributes['idyoutuberemark1']="The classic version from Saxophone Colossus"
 	attributes['idyoutube1']="UA2XIWZxMKM"

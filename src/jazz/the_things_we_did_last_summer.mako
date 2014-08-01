@@ -22,6 +22,7 @@
 	attributes['uuid']="31587e4e-ab0c-11e1-9dc8-3765c038b685"
 	attributes['structure']="AABA"
 	attributes['structureremark']="This is not a perfect AABA (last A is a little different) but very very close"
+	attributes['location']="jfb:392-393"
 
 	attributes['idyoutuberemark1']="Fats Navaro blowing cool"
 	attributes['idyoutube1']="extdr--C3jI"

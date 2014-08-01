@@ -24,6 +24,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="557b082e-e0d8-11e3-a037-b365e6166d43"
 	attributes['structure']="AABA"
+	attributes['location']="jfb:256"
 
 	attributes['idyoutuberemark1']="Louis and Ella"
 	attributes['idyoutube1']="Rg0hg5YD7sE"

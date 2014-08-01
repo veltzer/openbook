@@ -23,6 +23,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="2f6e2740-f29e-11e0-9ede-0019d11e5a41"
 	attributes['structure']="AB"
+	attributes['location']="rbk1:249,nrbk3:193"
 
 	attributes['idyoutuberemark1']="the fabulous Chet Baker"
 	attributes['idyoutube1']="88CqlgFAJ-k"

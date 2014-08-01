@@ -22,6 +22,7 @@
 	attributes['uuid']="7c9691e6-a26e-11df-8418-0019d11e5a41"
 	attributes['structure']="ABAC"
 	attributes['structureremark']="the structure of this tune can also be AA or AA'. Doesn't really matter."
+	attributes['location']="rbk1:3,jfb:116"
 
 	attributes['idyoutuberemark1']="Oscar Peterson!"
 	attributes['idyoutube1']="ytipqjANlrY"

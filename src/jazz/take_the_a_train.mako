@@ -26,6 +26,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="8e4bc138-da80-11e3-a96b-032e06c074f3"
 	attributes['structure']="AABA"
+	attributes['location']="jfb:379"
 
 	attributes['idyoutuberemark1']="Original version by Duke"
 	attributes['idyoutube1']="cb2w2m1JmCY"

@@ -23,6 +23,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="b0685520-db92-11e3-a96d-4fe96cfbc3fb"
 	attributes['structure']="AABA"
+	attributes['location']="jfb:380-381"
 
 	attributes['idyoutuberemark1']="Nat King Cole cannonical version"
 	attributes['idyoutube1']="sooSaQpGnMM"

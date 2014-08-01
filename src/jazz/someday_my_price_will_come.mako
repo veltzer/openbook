@@ -22,6 +22,7 @@
 	attributes['uuid']="4933391e-ee10-11e0-b804-0019d11e5a41"
 	attributes['structure']="ABAC"
 	attributes['structureremark']="This could be thought of as AB as well"
+	attributes['location']="rbk1:388"
 
 	attributes['idyoutuberemark1']="Miles"
 	attributes['idyoutube1']="Lo18F5ObPng"

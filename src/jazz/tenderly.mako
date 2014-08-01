@@ -24,6 +24,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="37e8d9d8-db6c-11e3-8007-f7449ea11e17"
 	attributes['structure']="ABAC"
+	attributes['location']="jfb:381"
 
 	attributes['idyoutuberemark1']="Beautiful lyric version by Chet Baker"
 	attributes['idyoutube1']="H6mfWun73vI"

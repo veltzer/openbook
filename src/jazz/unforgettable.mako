@@ -17,6 +17,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="3162420a-a26f-11df-aacf-0019d11e5a41"
 	attributes['structure']="AB"
+	attributes['location']="jfb:406-407"
 
 	attributes['idyoutuberemark1']="Nat King Cole the unforgettable..."
 	attributes['idyoutube1']="S1UEzL9poPM"

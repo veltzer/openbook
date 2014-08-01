@@ -22,6 +22,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="b93bdc7e-0207-11e1-9e68-0019d11e5a41"
 	attributes['structure']="ABAC"
+	attributes['location']="rbk1:179,tbk:227,gt:126,nrbk3:273"
 
 	attributes['idyoutuberemark1']="Sarah Vaughan from a radio show"
 	attributes['idyoutube1']="vHp0IvAEFMQ"

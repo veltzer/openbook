@@ -25,6 +25,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="84142766-dba0-11e3-9e62-bb6aa0505531"
 	attributes['structure']="ABA"
+	attributes['location']="jfb:168-169"
 
 	attributes['idyoutuberemark1']="Caterina Valente & Chet Baker"
 	attributes['idyoutube1']="2YZ4FGEGom8"

@@ -26,6 +26,7 @@
 	attributes['uuid']="4c69df80-cd7f-11e1-8c91-4b6b0349580b"
 	attributes['structure']="ABAC"
 	attributes['structureremark']="You can also think of this as AB"
+	attributes['location']="rbk1:191,jfb:147"
 
 	attributes['idyoutuberemark1']="Nat King Cole in a great vocal version"
 	attributes['idyoutube1']="yokM-Hfu5Gc"

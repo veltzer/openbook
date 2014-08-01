@@ -19,6 +19,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="b806ce6c-b405-11e1-9daf-1fdf93f5ba36"
 	attributes['structure']="AB"
+	attributes['location']="rbk1:215"
 
 	attributes['idyoutuberemark1']="John Coltrane in a great version"
 	attributes['idyoutube1']="MzSVV1sI57g"

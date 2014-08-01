@@ -21,6 +21,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="2f047dae-e00d-11e3-98f7-03db92494d62"
 	attributes['structure']="AABA"
+	attributes['location']="rbk1:102"
 
 	attributes['idyoutuberemark1']="Frank in a cannonical version"
 	attributes['idyoutube1']="C406rXlRT6c"

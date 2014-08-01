@@ -25,6 +25,7 @@
 	attributes['uuid']="dff04e04-a969-11e1-b8c5-5a1faa0d3cc5"
 	attributes['structure']="ABAC"
 	attributes['structureremark']="The structure could also be thought of as AB but it is very close to a pure ABAC"
+	attributes['location']="nrbk3:336,rbk1:381"
 
 	attributes['idyoutuberemark1']="A very sensitive rendition by Dexter Gordon"
 	attributes['idyoutube1']="8PttNhYVY3c"

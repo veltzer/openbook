@@ -18,6 +18,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="a064f20e-fb85-11e0-8d5d-0019d11e5a41"
 	attributes['structure']="ABC"
+	attributes['location']="rbk1:18,jfb:40"
 
 	attributes['idyoutuberemark1']="Charlie Parker, great performance"
 	attributes['idyoutube1']="UTORd2Y_X6U"

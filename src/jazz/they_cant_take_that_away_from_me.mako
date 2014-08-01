@@ -21,6 +21,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="d0904c80-d84b-11e3-b741-dbf5614f4f33"
 	attributes['structure']="AABA"
+	attributes['location']="jfb:390"
 
 	attributes['idyoutuberemark1']="Louis and Ella in a great performance"
 	attributes['idyoutube1']="ExmoiGZuiFQ"

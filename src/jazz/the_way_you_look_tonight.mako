@@ -25,6 +25,7 @@
 	attributes['uuid']="30fc7894-d8f8-11e3-84a6-77203dda2123"
 	attributes['structure']="AABA"
 	attributes['structureremark']="The New Real Book marks this one as AABC but the C is too damn close to the A"
+	attributes['location']="nrbk1:395-396"
 
 	attributes['idyoutuberemark1']="The cannonical performance by Frank Sinatra"
 	attributes['idyoutube1']="h9ZGKALMMuc"
