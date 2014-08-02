@@ -2,12 +2,17 @@ These are hints about using the openbook build system:
 ======================================================
 If you want to build a single tune use this:
 make out/src/israeli/hardufim.stamp
+or
+make out/src/jazz/a_foggy_day.pdf
 
 If you want to build all rock songs use this:
-for x in src/rock/*; do y=out/`dirname $x`/`basename $x .mako`.pdf; make $y;done
+make all_tunes_rock
 
 If you want to build all jazz songs use this:
-for x in src/jazz/*; do y=out/`dirname $x`/`basename $x .mako`.pdf; make $y;done
+make all_tunes_jazz
 
 if you want to try to build all tunes with no regard to lilypond output:
 DO_STOP_OUTPUT=0 make all_tunes
+
+if you want to cut an external pdf use (you must have the external pdfs in the right place):
+make out/src/jazz/a_foggy_day.[0-9].pdf
