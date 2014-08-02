@@ -14,19 +14,16 @@ Now:
 	or maybe offer a warning on using the wrong version of
 	lilypond?
 - make check_all produce a stub and make it a prereq for full build.
-- get back to compiling the rock book which does not compile due
-	to errors.
 - make the check_all be a python script with plugins and such instead
 	of multiple greps inside the make file.
+- get back to compiling the rock book which does not compile due
+	to errors.
 - improve the script/lilypond_wrapper to get a --nomidi option
 	to disable midi production.
 		At first shot do this by removing the midi
 		after the lilypond run (just like the perl script).
 - improve the script/lilypond_wrapper to be able to generate just
 	pdf with no ps.
-- stop storing pdfs in the epdf folder. store page numbers and
-	have an extract program to extract the right pages from
-	a collection of real books which is out of the git tree.
 - move to using the Jazz font in this project.
 	https://sites.google.com/site/jpgzic/home/demonstration
 	http://lists.gnu.org/archive/html/lilypond-user/2013-03/msg00647.html
@@ -34,7 +31,7 @@ Now:
 	and the email I got from vicent (vincent).
 - remove the perl scripts and replace them with python ones
 	(we don't want to rely on both python and perl - one is enough)
-- the rockbook creation leaves midi files around. Remove these junk files. 
+- the rockbook creation leaves midi files around. Remove these junk files.
 - both in the hebrew and english versions when the name of the poet is the
 	name of the composer they appear ugly in the index.
 	Examples:
@@ -118,7 +115,7 @@ licensing:
 embed a licence in all of the tunes.
 Also do it in the Makefile, in the scripts and all.
 Add a test which shows which files are without license to check_all.
-	
+
 visuals
 =======
 - make more tunes fit on one page (reduce sizes of staffs, space between staff and more).
@@ -228,7 +225,7 @@ midi support:
 Lilypond cheet sheet
 ====================
 - create a standards/lead sheet cheet sheet for lilypond.
-  cheet sheet should show:
+- cheet sheet should show:
 	- complex chords (7.5-)
 	- chords with alternate bases.
 	- matching lyrics to melody.
@@ -302,7 +299,7 @@ checking of tunes:
 - look for \endSong and then a newline between it and \endChords.
 	This needs to be done via an improvement of pgrep.pl since pgrep cannot
 	scan for patterns that span more than one line.
-- cat * | grep uuid | sort  | uniq | wc -l
+- cat * | grep uuid | sort | uniq | wc -l
 	is used to check that each tune has a unique uuid. do it this way or some other
 	way but check this as part of check_all also.
 - make the checks be part of the build and make the build fail if some of the checks fail.
