@@ -23,7 +23,7 @@
 	attributes['completion']="0"
 	attributes['uuid']="ca5eae8e-ee84-11e3-a0d7-d7aaa2e1aa93"
 	attributes['structure']="ABAC"
-	attributes['location']="tsrb:306-307"
+	attributes['location']="tsrbk:306-307"
 
 	attributes['idyoutuberemark1']=""
 	attributes['idyoutube1']=""
