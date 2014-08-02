@@ -205,5 +205,6 @@ def cut_pdf(source_pdf, pg_from, pg_to, output_pdf):
 		'-sOutputFile='+output_pdf,
 		source_pdf,
 	]
-	print('going to run', args)
-	subprocess.check_call(args)
+	#print('going to run', args)
+	f=open('/dev/null', 'w')
+	subprocess.check_call(args, stdout=f, stderr=f)

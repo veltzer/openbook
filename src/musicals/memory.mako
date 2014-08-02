@@ -9,7 +9,7 @@
 	attributes['poet']="Trevor Nunn after T.S. Eliot"
 	attributes['piece']="Musical"
 	attributes['copyright']="Copyright 1981 by the Really Useful Group plc. and Faber Music Ltd."
-	
+
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="1"
 	attributes['uuid']="cc3c46c7-908d-4b3e-b90f-1e01a942ef27"
