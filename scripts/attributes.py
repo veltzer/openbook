@@ -8,6 +8,8 @@ good meta data by tune authors
 '''
 
 import os.path # for join, isfile
+import subprocess # for check_call
+import shutil # for copy
 
 order=[
 	'doChords',
@@ -98,6 +100,10 @@ books_translation={
 	'ja54': 'Jamey Aebersold volume 54',
 	'gt': 'Guitar - 557 Standards',
 }
+books_offsets={
+	'jfb': -1,
+	'rbk1': 13,
+}
 
 books_dont_have=set([
 	'ja54',
@@ -126,8 +132,8 @@ def check_location(val):
 			if not bk in books_translation:
 				raise ValueError('what kind of value is', val)
 			if not bk in books_dont_have:
-				filename=books_translation[bk]
-				check_have_file(filename+'.pdf')
+				filename=books_translation[bk]+'.pdf'
+				check_have_file(filename)
 			if '-' in pages:
 				(pg_from, pg_to)=pages.split('-')
 				check_int(pg_from)
@@ -149,3 +155,55 @@ class Attributes(dict):
 		super().__setitem__(key, val)
 	def reset(self):
 		self.pos=-1
+	def cut(self, p_cutnum, p_output):
+		val=self['location']
+		if val=='':
+			raise ValueError('have no location information')
+		parts=val.split(',')
+		if p_cutnum<0 or p_cutnum>=len(parts):
+			raise ValueError('location out of range')
+		part=parts[p_cutnum]
+		(bk, pages)=part.split(':')
+		if bk=='file':
+			filename=pages
+			full=os.path.join(folder, filename)
+			shutil.copy(full, p_output)
+		else:
+			if not bk in books_translation:
+				raise ValueError('what kind of value is', val)
+			if bk in books_dont_have:
+				raise ValueError('dont have the book', bk)
+			filename=books_translation[bk]+'.pdf'
+			full=os.path.join(folder, filename)
+			if not os.path.isfile(full):
+				raise ValueError('dont have file', full)
+			if '-' in pages:
+				(pg_from, pg_to)=pages.split('-')
+				check_int(pg_from)
+				check_int(pg_to)
+			else:
+				check_int(pages)
+				pg_from=pages
+				pg_to=pages
+			pg_from=int(pg_from)
+			pg_to=int(pg_to)
+			# apply offsets to page numbers
+			if bk in books_offsets:
+				pg_from+=books_offsets[bk]
+				pg_to+=books_offsets[bk]
+			cut_pdf(full, pg_from, pg_to, p_output)
+
+def cut_pdf(source_pdf, pg_from, pg_to, output_pdf):
+	args=[
+		'gs',
+		'-sDEVICE=pdfwrite',
+		'-dNOPAUSE',
+		'-dBATCH',
+		'-dSAFER',
+		'-dFirstPage='+str(pg_from),
+		'-dLastPage='+str(pg_to),
+		'-sOutputFile='+output_pdf,
+		source_pdf,
+	]
+	print('going to run', args)
+	subprocess.check_call(args)

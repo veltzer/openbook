@@ -24,7 +24,7 @@ def is_ready(file):
 # first check that we are using the correct version of python
 check_version.check_version()
 
-if len(sys.argv)!=4:
+if len(sys.argv)!=6:
 	raise ValueError('command line issue')
 
 input_encoding='utf-8'
@@ -32,6 +32,8 @@ output_encoding='utf-8'
 p_output=sys.argv[1]
 p_input=sys.argv[2]
 p_book=bool(int(sys.argv[3]))
+p_cut=bool(int(sys.argv[4]))
+p_cutnum=int(sys.argv[5])
 common='src/include/common.makoi'
 
 # We really need the unlink, even though we have "open a file
@@ -79,10 +81,17 @@ try:
 	gattr['break_after_tune']=False
 	# put a page break after the toc?
 	gattr['break_after_toc']=True
-	file=open(p_output,'wb')
+	if not p_cut:
+		file=open(p_output,'wb')
 	attr=attributes.Attributes()
-	file.write(template.render(attributes=attr, gattr=gattr, scratch={}))
-	file.close()
+	if p_cut:
+		template.render(attributes=attr, gattr=gattr, scratch={})
+	else:
+		file.write(template.render(attributes=attr, gattr=gattr, scratch={}))
+	if p_cut:
+		attr.cut(p_cutnum, p_output)
+	if not p_cut:
+		file.close()
 	os.chmod(p_output,0o0444)
 except Exception as e:
 	os.unlink(p_output)
