@@ -14,7 +14,9 @@
 	attributes['poet']="Edward Heyman"
 	# from the fake book
 	attributes['piece']="Moderately"
+	# from the fake book
 	attributes['copyright']="1952 by Victor Young Publications, Inc. Copyright Renewed, Assigned to Chappell & Co., Inc. and Intersong -USA,Inc."
+	# from the fake book
 	attributes['copyrightextra']="All Rights Administered by Chappell & Co., Inc."
 
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"

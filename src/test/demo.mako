@@ -10,7 +10,7 @@
 	attributes['poet']="Newton Menonca, Jon Hendricks, Jessie Cavanaugh"
 	attributes['piece']="Medium Bossa Nova"
 	attributes['copyright']="1959 1962, Editora Musical Arapua, Sao Paulo, Brazil"
-	
+
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
 	attributes['completion']="5"
 	attributes['dontimport']="1"
