@@ -103,6 +103,7 @@ books_translation={
 books_offsets={
 	'jfb': -1,
 	'rbk1': 13,
+	'tsrbk': -3,
 }
 
 books_dont_have=set([

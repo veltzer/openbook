@@ -10,11 +10,14 @@
 	attributes['title']="The More I See You"
 	attributes['style']="Jazz"
 	# from the standards real book
+	attributes['subtitle']="From 'Diamond Horseshoe'"
+	# from the standards real book
 	attributes['composer']="Harry Warren"
 	# from the standards real book
 	attributes['poet']="Mack Gordon"
 	# from the standards real book
 	attributes['piece']="Freely"
+	# from the standards real book (middle of tune)
 	attributes['piece']="Med. Ballad or Medium"
 	# from the standards real book
 	attributes['copyright']="1945 WB Music Corp. (Renewed) All Rights Reserved. Used by Permission"
@@ -23,31 +26,32 @@
 	attributes['completion']="0"
 	attributes['uuid']="ca5eae8e-ee84-11e3-a0d7-d7aaa2e1aa93"
 	attributes['structure']="ABAC"
-	attributes['location']="tsrbk:306-307"
+	attributes['structureremark']="The tune in the standards real book is written as ABCD but A and C are so close that it's really ABAC"
+	attributes['location']="tsrbk:309-310"
 
-	attributes['idyoutuberemark1']=""
-	attributes['idyoutube1']=""
-	attributes['idyoutuberemark2']=""
-	attributes['idyoutube2']=""
-	attributes['lyricsurl']=""
+	attributes['idyoutuberemark1']="Hank Mobley in a great and soulful version"
+	attributes['idyoutube1']="ViniUjqqVZI"
+	attributes['idyoutuberemark2']="Classic vocal version of Nat King Cole"
+	attributes['idyoutube2']="XASZpJcgVLI"
+	attributes['lyricsurl']="http://www.metrolyrics.com/the-more-i-see-you-lyrics-nat-king-cole.html"
 %>
 % endif
 
 % if part=='Doc':
 	DONE:
-	- added the epdf from the standards real book.
-	TODO:
-	- put in the tunes structure
-	- added the meta data from the fake book.
-	- put in the chords (fakebook).
-	- put in the lyrics (fakebook).
-	- put in the tune (fakebook).
-	- check the chords (fakebook).
-	- check the tune (fakebook).
-	- check the lyrics (fakebook).
-	- heard the tune to check that it is right and adjust the tempo.
+	- added tune location.
 	- added lyrics url.
 	- added youtube performances.
+	- added the meta data from the standards real book.
+	- put in the tunes structure
+	TODO:
+	- put in the chords (standards real book).
+	- put in the lyrics (standards real book).
+	- put in the tune (standards real book).
+	- check the chords (standards real book).
+	- check the tune (standards real book).
+	- check the lyrics (standards real book).
+	- heard the tune to check that it is right and adjust the tempo.
 	- add another version of this tune.
 % endif
 
@@ -89,7 +93,7 @@
 \relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
-	\time 4/4
+	\time 2/2
 	\key ees \major
 
 	\partial 8 b8 |
