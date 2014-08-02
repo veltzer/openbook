@@ -1,12 +1,14 @@
 Now:
 ====
+- remove the epdf project
+	- put 'location' attribute to all the tunes instead of the .source
+		file in the epdf folder. DONE
+	- make some make target which cuts the epdfs and puts them in the
+		out folder.
+		$ make cut
 - make the release manager work again.
 	(twitter, facebook and email).
 	setup a mailing list for openbook.
-- put 'location' attribute to all the tunes instead of the .source
-	file in the epdf folder.
-- do script which cuts the epdf from the right folder and get ridd
-	of the epdf folder in openbook.
 - add more funtionality to the attributes class so the common include
 	file will be simpler.
 - bring back the hyper links in the generated pdf file.

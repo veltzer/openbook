@@ -7,6 +7,8 @@ DO_MKDBG?=0
 DO_ALL_DEP?=1
 # should we depend on the wrappers scripts dates ?
 DO_WRAPDEPS?=1
+# should we depend on the common include file ?
+DO_INCDEPS?=1
 # should we make the ly files and use them?
 DO_LY?=0
 # should we make lilypond dependency files and use them?
@@ -93,6 +95,9 @@ else
 	MIDI2WAV_WRAPPER_DEP:=
 	MIDI2OGG_WRAPPER_DEP:=
 	MIDI2MP3_WRAPPER_DEP:=
+endif
+ifeq ($(DO_INCDEPS),1)
+	MAKO_WRAPPER_DEP:=$(MAKO_WRAPPER_DEP) src/include/common.makoi
 endif
 
 ifeq ($(DO_MKDBG),1)
@@ -381,6 +386,7 @@ $(FILES_PDF): %.pdf: %.stamp $(ALL_DEP)
 
 $(FILES_MIDI): %.midi: %.stamp $(ALL_DEP)
 
+# this is the real rule
 $(FILES_STAMP): %.stamp: %.ly $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
