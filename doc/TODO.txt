@@ -8,7 +8,6 @@ Now:
 	file will be simpler.
 - bring back the hyper links in the generated pdf file.
 	They are gone now that I'm doing minimization of the pdf file.
-- postscript file is missing from the web site.
 - move to a website at some hosting.
 - do not allow to compile on the wrong version of lilypond.
 	or maybe offer a warning on using the wrong version of

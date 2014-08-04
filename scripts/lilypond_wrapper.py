@@ -53,7 +53,7 @@ showOutput=False
 doPs=False
 doPdf=True
 debug=False
-unlinkPs=True
+unlinkPs=False
 
 ########
 # code #
