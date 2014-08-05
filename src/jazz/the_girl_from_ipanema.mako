@@ -58,10 +58,10 @@
 	TODO:
 	- add the real book version of this tune.
 	- there is an intro to this song (I don't know where from...)
-	%%\mark "Intro"
-	%%\startPart
-	%%f1:6.9 | c2:m7 c:m6 | f1:6.9 | c2:m7 c:m6 | \myEndLine
-	%%\endPart
+	\mark "Intro"
+	\startPart
+	f1:6.9 | c2:m7 c:m6 | f1:6.9 | c2:m7 c:m6 | \myEndLine
+	\endPart
 
 % endif
 
