@@ -13,7 +13,7 @@
 	attributes['composer']="Joseph Kosma"
 	attributes['poet']="Jacques Prevert, Johnny Mercer"
 	# this is from the fake book.
-	attributes['piece']="Medium Swing"
+	#attributes['piece']="Medium Swing"
 	# this is from the real book
 	attributes['piece']="Med. Jazz"
 	attributes['copyright']="1947, 1950, 1987 Enoch Et Cie. Renewed 1975, 1978 Enoch Et Cie"

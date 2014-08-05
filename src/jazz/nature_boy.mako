@@ -12,7 +12,7 @@
 	attributes['composer']="Eben Ahbez"
 	attributes['poet']="Eben Ahbez"
 	# from the real book (volume II)
-	attributes['piece']="Slowly"
+	#attributes['piece']="Slowly"
 	# from the new Real book
 	attributes['piece']="Med. Ballad"
 	# from the new Real Book

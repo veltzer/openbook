@@ -14,7 +14,7 @@
 	# this is from the real book
 	attributes['piece']="Latin/Swing"
 	# this is from the new real book, vol 3
-	attributes['piece']="Med. Latin"
+	#attributes['piece']="Med. Latin"
 	# this is from the new real book, vol 3
 	attributes['copyright']="1947 (Renewed 1975) MGM/EMI Feist Catalog, Inc."
 

@@ -15,7 +15,7 @@
 	# this comes from the real book...
 	attributes['piece']="Bossa"
 	# this is from the new real book
-	attributes['piece']="Med. Ballad (or Slow Bossa)"
+	#attributes['piece']="Med. Ballad (or Slow Bossa)"
 	attributes['copyright']="1931 (renewed 1959) EMI Robbins Catalog, Inc"
 	attributes['copyrightextra']="Used by Persmission of CPP/Belwin, Inc, Miami, FL. International Copyright Secured. All Rights Reserved."
 
