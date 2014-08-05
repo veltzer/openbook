@@ -1,5 +1,7 @@
 Now:
 ====
+- bring back midi, ogg, wav creation but this time with python scripts.
+	just copy the perl scripts.
 - 'make all_tunes' doesn't work. fix it.
 - make the release manager work again.
 	(twitter, facebook and email).
