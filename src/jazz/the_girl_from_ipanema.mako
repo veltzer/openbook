@@ -5,7 +5,7 @@
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
 	attributes['doLyricsmore']=True
-	attributes['render']="Real"
+	attributes['render']="Fake"
 
 	attributes['title']="The Girl From Ipanema"
 	attributes['style']="Jazz"
@@ -18,9 +18,9 @@
 	# from the fake book
 	attributes['poet']="Vincius De Moraes, Norman Gimbel"
 	# from the real book
-	attributes['piece']="Bossa"
+	#attributes['piece']="Bossa"
 	# from the fake book
-	#attributes['piece']="Moderate Bossa Nova"
+	attributes['piece']="Moderate Bossa Nova"
 	# from the fake book
 	attributes['copyright']="1963, Antonio Carlos Jobim and Vincius De Moraes, Brazil"
 	# from the fake book
@@ -34,44 +34,53 @@
 
 	attributes['idyoutuberemark1']="Tom Jobim and Joan Gilberto"
 	attributes['idyoutube1']="DmV0TcTNJ3o"
+	attributes['idyoutuberemark2']="Frank!"
+	attributes['idyoutube2']="NldPFVKYmiw"
+	attributes['lyricsurl']="http://www.lyricsfreak.com/f/frank+sinatra/girl+from+ipanema+the_10121534.html"
 %>
 % endif
 
 % if part=='Doc':
 	DONE:
-	- put in the tunes meta data.
+	- added the location of the real book and fake book versions.
+	- put in the tunes meta data from the real book and fake book.
 	- put in locations for reak book and fake book.
 	- put in the tunes structure.
+	- put in the fake book chords.
+	- put in the fake book tune.
+	- put in the fake book lyrics.
+	- check the fake book chords.
+	- check the fake book tune.
+	- check the fake book lyrics.
+	- heard the tune to make sure it sounds good.
+	- added you tube performances.
+	- added a lyrics url.
 	TODO:
-	- document what has been done to this tune.
-	- the lyrics do not have __ in them.
-	- the quotation in the lyrics is not done right.
-	- add a lyrics url.
-	- add another you tube performance.
-	- add the fakebook version of this tune.
+	- add the real book version of this tune.
+	- there is an intro to this song (I don't know where from...)
+	%%\mark "Intro"
+	%%\startPart
+	%%f1:6.9 | c2:m7 c:m6 | f1:6.9 | c2:m7 c:m6 | \myEndLine
+	%%\endPart
+
 % endif
 
-% if part=='ChordsReal':
+% if part=='ChordsFake':
 \chordmode {
 	\startChords
 	\startSong
 
-	\mark "Intro"
-	\startPart
-	f1:6.9 | c2:m7 c:m6 | f1:6.9 | c2:m7 c:m6 | \myEndLine
-	\endPart
-
 	\myMark "A"
 	\startPart
 	\repeat volta 2 {
-		f1*2:maj7.9 | g:13 | \myEndLine
-		g1:m7.9 | ges:7.5- |
+		f1*2:maj7 | g:7 | \myEndLine
+		g1:m7 | ges:7 |
 	} \alternative {
 		{
-			f1:maj7.9 | ges:7.5- | \myEndLineVoltaNotLast
+			f1:maj7 | ges:7.5- | \myEndLineVoltaNotLast
 		}
 		{
-			f1*2:maj7.9 | \myEndLine
+			f1*2:maj7 | \myEndLine
 		}
 	}
 	\endPart
@@ -79,16 +88,16 @@
 	\myMark "B"
 	\startPart
 	ges1*2:maj7 | ces:7.9 | \myEndLine
-	fis:m7.9 | d:7.9 | \myEndLine
-	g:m7.9 | ees:7.9 | \myEndLine
+	fis:m7 | d:7.9 | \myEndLine
+	g:m7 | ees:7.9 | \myEndLine
 	a1:m7 | d:7.5-.9- | g:m7 | c:7.5-.9- | \myEndLine
 	\endPart
 
 	\myMark "A"
 	\startPart
-	f1*2:maj7.9 | g:13 | \myEndLine
-	g1:m7.9 | ges:7.5- | f:maj7.9 | ges:7.5- | \myEndLine
-	f:maj7.9 | ges:7.5- | f1*2:maj7.9 | \myEndLine
+	f1*2:maj7 | g:7 | \myEndLine
+	g1:m7 | ges:7.5- | f:maj7 | ges:7 | \myEndLine
+	f:maj7 | ges:7 | f1*2:maj7 | \myEndLine
 	\endPart
 
 	\endSong
@@ -96,16 +105,12 @@
 }
 % endif
 
-% if part=='VoiceReal':
+% if part=='VoiceFake':
 \relative {
-	\time 4/4
-	\key f \major
-	\clef treble
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
-
-	%% part "intro"
-	r1*4 |
+	\time 2/2
+	\key f \major
 
 	%% part "A"
 	\repeat volta 2 {
@@ -113,10 +118,10 @@
 		f d4 d8~ d d c e~ | e c4 c8~ c c bes4 |
 	} \alternative {
 		{
-			r4 c2.~ | c2 r2 |
+			r4 c2.~ | c2 r |
 		}
 		{
-			r4 c2.~ | c2 r2 |
+			r4 c2.~ | c2 r |
 		}
 	}
 
@@ -137,16 +142,17 @@
 }
 % endif
 
-% if part=='LyricsReal':
+% if part=='LyricsFake':
 \lyricmode {
 	%% part "A"
 	Tall and tan and young __ and love -- __ ly,
 	the Girl __ From I -- pa -- ne -- __ ma goes walk -- __ ing,
-	and when __ she pass -- __ es, each one __ she pass -- __ es goes "ah!" __
+	and when __ she pass -- __ es, each one __ she pass -- __ es goes "\"ah!\"" __
+
+	%% part "volta"
+	_
 
 	%% part "B"
-	"ah!" __
-
 	Oh, __ but I watch her so sad -- ly. __
 	How __ can I tell her I love her? __
 	Yes, __ I would give my heart glad -- ly, __
@@ -163,11 +169,11 @@
 }
 % endif
 
-% if part=='LyricsmoreReal':
+% if part=='LyricsmoreFake':
 \lyricmode {
 	%% part "A"
-	When she walks she's like __ a Sam -- __ ba
+	When she walks she's like __ a sam -- __ ba
 	that swings __ so cool and sways __ _ so gen -- __ tle,
-	that when __ she pass -- __ es, each one __ she pass -- __ es goes
+	that when __ she pass -- __ es, each one __ she pass -- __ es goes _ "\"ah!\"" __
 }
 % endif

@@ -58,7 +58,6 @@
 \relative {
 	\time 4/4
 	\key c \major
-	\clef treble
 
 	r1 | r1 | r1 | r1 | r1 | r1 |
 	r1 | r1 | r1 | r1 | r1 | r1 |
