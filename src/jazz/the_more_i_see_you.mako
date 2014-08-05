@@ -16,7 +16,7 @@
 	# from the standards real book
 	attributes['poet']="Mack Gordon"
 	# from the standards real book
-	attributes['piece']="Freely"
+	#attributes['piece']="Freely"
 	# from the standards real book (middle of tune)
 	attributes['piece']="Med. Ballad or Medium"
 	# from the standards real book
