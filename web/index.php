@@ -73,9 +73,6 @@
 		The GNU make system used to build openbook is <a title="GNU make" href="http://www.gnu.org/s/make/">here</a>
 		</li>
 		<li>
-		The perl scripting language that is used to script openbook is <a title="perl" href="http://www.perl.org/">here</a>
-		</li>
-		<li>
 		The python scripting language that is used to script openbook is <a title="python" href="http://python.org/">here</a>
 		</li>
 		<li>

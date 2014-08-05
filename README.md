@@ -22,7 +22,7 @@ used by Jazz musicians both for practice and for performance.
 
 What tools are used?
 ---------------------
-lilypond, make, perl, python, mako, lame, timidity and possibly more.
+lilypond, make, python, mako, lame, timidity and possibly more.
 
 What is produced?
 ------------------
