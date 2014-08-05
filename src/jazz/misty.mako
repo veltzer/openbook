@@ -14,7 +14,7 @@
 	# this is from the fake book
 	attributes['poet']="Johnny Burke"
 	# this is from the fake book
-	attributes['piece']="Slowly, with a smooth swing"
+	#attributes['piece']="Slowly, with a smooth swing"
 	# this is from the real book
 	attributes['piece']="Ballad"
 	# this is from the fake book

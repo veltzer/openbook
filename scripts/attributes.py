@@ -104,6 +104,7 @@ books_offsets={
 	'jfb': -1,
 	'rbk1': 13,
 	'tsrbk': -3,
+	'nrbk1': 13,
 }
 
 books_dont_have=set([
@@ -148,8 +149,8 @@ class Attributes(dict):
 		self.pos=-1
 	def __setitem__(self, key, val):
 		newpos=order.index(key)
-		if newpos<self.pos:
-			raise ValueError('incorrect order of assignment', key, self['title'])
+		if newpos<=self.pos:
+			raise ValueError('incorrect order of assignment', key, self['title'], self.pos, newpos)
 		if key=='location':
 			check_location(val)
 		self.pos=newpos

@@ -7,30 +7,24 @@
 	attributes['doLyricsmore']=True
 	attributes['render']="Fake"
 
-	attributes['title']="How Insensitive"
+	attributes['title']="I Can't Get Started"
 	attributes['style']="Jazz"
-	# from the internet
-	attributes['subtitle']="Insensatez"
-	# this is from the real book
-	#attributes['composer']="A.C. Jobim"
 	# this is from the fake book
-	attributes['composer']="Antonio Carlos Jobim"
+	attributes['composer']="Vernon Duke"
 	# this is from the fake book
-	attributes['poet']="Vincius De Moraes, Norman Gimbel"
-	# this is from the real book
-	#attributes['piece']="Bossa"
+	attributes['poet']="Ira Gershwin"
 	# this is from the fake book
-	attributes['piece']="Moderately"
+	attributes['piece']="Slowly"
 	# this is from the fake book
 	attributes['copyright']="1963, 1964 by Antonio Carlos Jobim and Vincius De Moraes, Brazil"
 	attributes['copyrightextra']="Sole Selling Agent Duchess Music Corporation (MCA), New York, NY for the U.S.A. and Canada"
 
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
+	attributes['completion']="0"
 	attributes['uuid']="ee9c0d62-15fd-11e1-bd56-0019d11e5a41"
 	attributes['structure']="AB"
 	attributes['structureremark']="this tunes structure can also be categorised as ABAC since the first 8 bars of both the first and second part are the same."
-	attributes['location']="rbk1:203,jfb:150"
+	attributes['location']="jfb:150-151"
 
 	attributes['idyoutuberemark1']="Jobim with Pat Metheny"
 	attributes['idyoutube1']="VendEbBv3nc"

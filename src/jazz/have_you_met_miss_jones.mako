@@ -11,7 +11,7 @@
 	attributes['composer']="Richard Rodgers"
 	attributes['poet']="Lorenz Hart"
 	# this is from the real book
-	attributes['piece']="Med."
+	#attributes['piece']="Med."
 	# this is from the fake book
 	attributes['piece']="Medum Swing"
 	attributes['copyright']="1937, by Chappell & Co., Inc. Copyright Renewed"

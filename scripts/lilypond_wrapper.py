@@ -40,9 +40,13 @@ def system_check_output(args):
 
 # remove the target files, do nothing if they are not there
 def remove_output_if_exists():
-	if doPs and os.path.isfile(p_ps):
+	#if doPs and os.path.isfile(p_ps):
+	#	os.unlink(p_ps)
+	#if doPdf and os.path.isfile(p_pdf):
+	#	os.unlink(p_pdf)
+	if os.path.isfile(p_ps):
 		os.unlink(p_ps)
-	if doPdf and os.path.isfile(p_pdf):
+	if os.path.isfile(p_pdf):
 		os.unlink(p_pdf)
 
 ##############

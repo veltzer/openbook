@@ -10,7 +10,7 @@
 	# this is from the fake book
 	attributes['composer']="John Lewis"
 	# this is from the fake book
-	attributes['piece']="Moderate Swing"
+	#attributes['piece']="Moderate Swing"
 	# this is from the real book
 	attributes['piece']="Swing"
 	# this is from the fake book

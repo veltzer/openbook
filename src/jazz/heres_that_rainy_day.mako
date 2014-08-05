@@ -11,7 +11,7 @@
 	attributes['title']="Here's That Rainy Day"
 	attributes['style']="Jazz"
 	# this is from the real book
-	attributes['composer']="Jim Van Heusen"
+	#attributes['composer']="Jim Van Heusen"
 	# this is from the fake book
 	attributes['composer']="James Van Heusen"
 	# this is from the fake book

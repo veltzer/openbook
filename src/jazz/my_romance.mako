@@ -15,7 +15,7 @@
 	# this is from the fake book
 	attributes['poet']="Lorenz Hart"
 	# this is from the real book
-	attributes['piece']="Med."
+	#attributes['piece']="Med."
 	# this is from the fake book
 	attributes['piece']="Modeartely Slow"
 	# this is from the fake book

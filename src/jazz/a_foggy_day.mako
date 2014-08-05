@@ -15,7 +15,7 @@
 	# this is from the fake book
 	attributes['poet']="Ira Gershwin"
 	# this is from the real book
-	attributes['piece']="Med. Swing"
+	#attributes['piece']="Med. Swing"
 	# this is from the fake book
 	attributes['piece']="Medium Swing"
 	# this is from the fake book

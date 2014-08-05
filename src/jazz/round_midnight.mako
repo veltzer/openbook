@@ -12,7 +12,7 @@
 	attributes['composer']="Cootie Williams, Thelonious Monk"
 	attributes['poet']="Bernie Hanighen"
 	# this is from the fake book
-	attributes['piece']="Slowly"
+	#attributes['piece']="Slowly"
 	# this is from the real book
 	attributes['piece']="Ballad"
 	# this is from the fake book

@@ -13,7 +13,7 @@
 	# this if from the real book
 	attributes['piece']="Mod. Swing"
 	# this is from the fake book
-	attributes['piece']="Moderately"
+	#attributes['piece']="Moderately"
 	# this is from the fake book
 	attributes['copyright']="1931 Bourne Co. Copyright Renewed"
 

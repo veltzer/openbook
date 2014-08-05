@@ -13,7 +13,7 @@
 	# this is from wikipedia
 	attributes['poet']="Paul Francis Webster"
 	# this is from the new real book vol 3
-	attributes['piece']="Medium Bossa (or Swing)"
+	#attributes['piece']="Medium Bossa (or Swing)"
 	# this is from the real book
 	attributes['piece']="Slow Bossa"
 	# this is from the new real book vol 3

@@ -13,7 +13,7 @@
 	# this is from the real book
 	attributes['piece']="Fast"
 	# this is from the hal leonard book
-	attributes['piece']="Fast Swing"
+	#attributes['piece']="Fast Swing"
 	# this is from the hal leonard book
 	attributes['copyright']="1974 Jowcol Music."
 

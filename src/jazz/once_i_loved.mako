@@ -16,7 +16,7 @@
 	# from the real book
 	attributes['piece']="Bossa"
 	# from the new real book
-	attributes['piece']="Med.-Slow Bossa Nova"
+	#attributes['piece']="Med.-Slow Bossa Nova"
 	# from the new real book
 	attributes['copyright']="1965, Ipanema Music. Used By Permission."
 
