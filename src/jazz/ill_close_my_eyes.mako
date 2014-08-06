@@ -16,6 +16,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="e7277c50-a26e-11df-863c-0019d11e5a41"
 	attributes['structure']="AB"
+	attributes['structureremark']="this tunes structure could also be thought of as ABAC since the begining of the A and part B (the first 8 bars) under the AB interpretation is exactly the same."
 	attributes['location']="rbk3:130"
 	attributes['remark']="the My version is from Amit Golan"
 
@@ -28,16 +29,13 @@
 % if part=='Doc':
 	DONE:
 	- Checked chords against the real book.
-	- Checked notes against the real book.
+	- Checked tune against the real book.
 	- Fixed up the lyrics.
 	- Wrote down my own version.
 	TODO:
 	- add info about the youtube performances.
 	- problem with the words ( the phrase "Don't you know" did not fit in my version, fix the tune).
 	- get copyright for this tune (the real book didn't have one).
-	REMARKS:
-	- this tunes structure could also be thought of as ABAC since the begining of the A and part "B" (the
-	first 8 bars) under the AB interpretation is exactly the same.
 % endif
 
 % if part=='ChordsReal':
