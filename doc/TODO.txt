@@ -26,28 +26,21 @@ Now:
 - improve the script/lilypond_wrapper to be able to generate just
 	pdf with no ps.
 - move to using the Jazz font in this project.
+	or at least allow it via a menu selection.
 	https://sites.google.com/site/jpgzic/home/demonstration
 	http://lists.gnu.org/archive/html/lilypond-user/2013-03/msg00647.html
 	https://sites.google.com/site/jpgzic/home
 	and the email I got from vicent (vincent).
-- remove the perl scripts and replace them with python ones
-	(we don't want to rely on both python and perl - one is enough)
 - the rockbook creation leaves midi files around. Remove these junk files.
-- both in the hebrew and english versions when the name of the poet is the
-	name of the composer they appear ugly in the index.
-	Examples:
-		Eich Hu Shar/Danny Robas
-		As Time Goes By/Herman Hupfeld
 - in the web site the pdf file doesn't always show up properly even if the file
 	is updated.
 	maybe we should use .htaccess and tell the server not to cache.
 	I tried this and it doesn't seem to work.
 	try other things.
+	This is a problem in firefox, chrome seems to work well.
 - check that all tunes have structure markings in them
 	(\myMark "A", \myMark "B", etc)
 	Do that as part of check_all
-- make sure we use python 2.7. 2.6 does not seem to compile the project.
-	Do an auto check for the right python version.
 - tweeter api does not work. check it out and fix it.
 - add the facebook api to release manager and see that it works.
 
@@ -62,10 +55,7 @@ Now:
 - fix the db import script. turn it into python and use the mako system.
 - modify the import script to import the book too
 	(in all of its formats: lilypond, postscript, pdf).
-- unite the two python wrapper scripts, they are almost the same.
 - add a license on the first page (select a good license? Creative Commons?)
-- In most cases where there is a \repate volta (lots of tunes!!!) I remark the first alternatives \myEndLine to save
-	lines. Should we have a more general mechanism for this?
 
 Hebrew song book:
 =================
