@@ -1,5 +1,11 @@
 Now:
 ====
+- have each file declare which versions it has. Files with more than
+	one version will declare multiple versions, EACH WITH ITS
+	OK "doXXX" variables!!! This is necessary since some versions
+	are different from others. The standard can also present
+	a preferred version which will be rendered all other things
+	being equal.
 - bring back midi, ogg, wav creation but this time with python scripts.
 	just copy the perl scripts.
 - 'make all_tunes' doesn't work. fix it.
