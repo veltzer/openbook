@@ -5,7 +5,7 @@
 	attributes['doVoice']=True
 	attributes['doLyrics']=True
 	attributes['doLyricsmore']=True
-	attributes['render']="Real"
+	attributes['render']="Fake"
 
 	attributes['title']="A Fine Romance"
 	attributes['style']="Jazz"
