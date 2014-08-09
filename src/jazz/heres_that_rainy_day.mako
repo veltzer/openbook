@@ -100,7 +100,7 @@
 			g2 e:m7 | a:m7 d:9 | \myEndLineVoltaNotLast
 		}
 		{
-			g1 | bes:6 | ees2:maj7 aes:maj7 | g1:6 | \myEndLine
+			g1 | bes:6 | ees2:maj7 aes:maj7 | g1:6 | \myEndLineVoltaLast
 		}
 	}
 	\endPart

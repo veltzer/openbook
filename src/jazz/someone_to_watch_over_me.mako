@@ -52,7 +52,7 @@
 			c:m7 f:7 | bes:m7 ees:7 | \myEndLineVoltaNotLast
 		}
 		{
-			aes1:maj7 | ees2:m7 aes:7 | \myEndLine
+			aes1:maj7 | ees2:m7 aes:7 | \myEndLineVoltaLast
 		}
 	}
 	\endPart

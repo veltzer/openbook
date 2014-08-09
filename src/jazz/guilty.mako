@@ -45,7 +45,7 @@
 			c:m7 f:7.5+ | bes f:7 | \myEndLineVoltaNotLast
 		}
 		{
-			c:m7 f:7 | bes a:7 | \myEndLine
+			c:m7 f:7 | bes a:7 | \myEndLineVoltaLast
 		}
 	}
 	\myEndLine

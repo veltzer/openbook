@@ -83,7 +83,7 @@
 			f1:maj7 | ges:7.5- | \myEndLineVoltaNotLast
 		}
 		{
-			f1*2:maj7 | \myEndLine
+			f1*2:maj7 | \myEndLineVoltaLast
 		}
 	}
 	\endPart

@@ -73,7 +73,7 @@
 			c | \myEndLineVoltaNotLast
 		}
 		{
-			c | \myEndLine
+			c | \myEndLineVoltaLast
 		}
 	}
 	\endPart
@@ -108,7 +108,7 @@
 		a! | a8 bes b e g, fis f cis' | c! e,~ e2.~ |
 	} \alternative {
 		{
-			e1
+			e1 |
 		}
 		{
 			e2\repeatTie r |

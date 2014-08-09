@@ -85,7 +85,7 @@
 			ees | f2:m7 bes4:7 bes:7.5+ | \myEndLineVoltaNotLast
 		}
 		{
-			ees2 f4:m7 e:m7 | ees1:6 | \myEndLine
+			ees2 f4:m7 e:m7 | ees1:6 | \myEndLineVoltaLast
 		}
 	}
 	\endPart
