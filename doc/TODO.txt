@@ -1,5 +1,6 @@
 Now:
 ====
+- fix the israli book making which is now broken.
 - bring back midi, ogg, wav creation but this time with python scripts.
 	just copy the perl scripts.
 - 'make all_tunes' doesn't work. fix it.

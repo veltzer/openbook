@@ -1,9 +1,12 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['render']="My"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	attributes.addVersion('My', version)
+	attributes.setDefaultVersionName('My')
 
 	attributes['title']="Symphony 2"
 	attributes['style']="Classical"
@@ -21,6 +24,7 @@
 % if part=='Doc':
 	DONE:
 	TODO:
+	- mark what has been done to this tune.
 % endif
 
 % if part=='ChordsMy':

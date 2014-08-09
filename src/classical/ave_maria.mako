@@ -1,10 +1,13 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=True
-	attributes['render']="Fake"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	attributes.addVersion('My', version)
+	attributes.setDefaultVersionName('My')
 
 	attributes['title']="Ave Maria"
 	attributes['style']="Classical"
@@ -22,9 +25,10 @@
 % if part=='Doc':
 	DONE:
 	TODO:
+	- mark what has been done to this tune.
 % endif
 
-% if part=='ChordsFake':
+% if part=='ChordsMy':
 \chordmode {
 	\startChords
 	\startSong
@@ -74,7 +78,7 @@
 }
 % endif
 
-% if part=='VoiceFake':
+% if part=='VoiceMy':
 \relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Reverently" %%4 = 130
@@ -125,7 +129,7 @@
 }
 % endif
 
-% if part=='LyricsFake':
+% if part=='LyricsMy':
 \lyricmode {
 	A -- ve, Ma -- ri -- a! Gra -- ti -- a ple -- na. Do -- mi -- nus Te -- cum
 	be -- ne -- dic -- ta tu in mu -- li -- e -- ri -- bus et be -- ne dic -- tus

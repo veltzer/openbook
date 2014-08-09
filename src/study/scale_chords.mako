@@ -1,8 +1,11 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doVoice']=True
-	attributes['render']="My"
+	import attr
+	version=attr.Version()
+	version['doVoice']=True
+	attributes.addVersion('My', version)
+	attributes.setDefaultVersionName('My')
 
 	attributes['title']="Jazz chords on the major scale"
 	attributes['style']="Jazz"

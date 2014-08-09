@@ -1,11 +1,15 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=True
-	attributes['doExtra']=True
-	attributes['render']="My"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	version['doExtra']=True
+	attributes.addVersion('My', version)
+	attributes.setDefaultVersionName('My')
+
 	attributes['heb']=True
 
 	attributes['title']=u"כמה אהבה"

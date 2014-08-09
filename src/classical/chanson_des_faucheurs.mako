@@ -1,8 +1,11 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doVoice']=True
-	attributes['render']="Unknown"
+	import attr
+	version=attr.Version()
+	version['doVoice']=True
+	attributes.addVersion('Unknown', version)
+	attributes.setDefaultVersionName('Unknown')
 
 	attributes['title']="Chanson des faucheurs"
 	attributes['style']="Classical"

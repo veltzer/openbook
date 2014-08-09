@@ -1,8 +1,12 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['render']="My"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	attributes.addVersion('My', version)
+	attributes.setDefaultVersionName('My')
+
 	attributes['heb']=True
 
 	attributes['title']=u"עוד חוזר הניגון"
