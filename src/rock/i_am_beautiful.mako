@@ -1,8 +1,12 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doGuitar']=True
-	attributes['doOwn']=True
+	import attr
+	version=attr.Version()
+	version['doGuitar']=True
+	version['doOwn']=True
+	attributes.addVersion('DontMatter', version)
+	attributes.setDefaultVersionName('DontMatter')
 
 	attributes['title']="I Am Beautiful"
 	attributes['style']="Rock"

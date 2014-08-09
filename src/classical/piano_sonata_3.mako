@@ -1,8 +1,11 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doVoice']=True
-	attributes['render']="Epdf0"
+	import attr
+	version=attr.Version()
+	version['doVoice']=True
+	attributes.addVersion('Epdf0', version)
+	attributes.setDefaultVersionName('Epdf0')
 
 	attributes['title']="Sonata III"
 	attributes['style']="Classical"

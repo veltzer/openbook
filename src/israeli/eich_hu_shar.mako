@@ -1,11 +1,15 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doChordBars']=True
-	attributes['doGuitar']=True
-	attributes['doExtra']=True
-	attributes['render']="My"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doChordBars']=True
+	version['doGuitar']=True
+	version['doExtra']=True
+	attributes.addVersion('My', version)
+	attributes.setDefaultVersionName('My')
+
 	attributes['heb']=True
 
 	attributes['title']=u"איך הוא שר"

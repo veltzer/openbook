@@ -1,10 +1,13 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doGuitar']=True
-	attributes['doExtra']=True
-	attributes['render']='My'
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doGuitar']=True
+	version['doExtra']=True
+	attributes.addVersion('My', version)
+	attributes.setDefaultVersionName('My')
 
 	attributes['title']="Shape of My Heart"
 	attributes['style']="Pop"

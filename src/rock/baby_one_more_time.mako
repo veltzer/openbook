@@ -1,8 +1,12 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doGuitar']=True
-	attributes['doOwn']=True
+	import attr
+	version=attr.Version()
+	version['doGuitar']=True
+	version['doOwn']=True
+	attributes.addVersion('DontMatter', version)
+	attributes.setDefaultVersionName('DontMatter')
 
 	attributes['title']="Baby One More Time"
 	attributes['style']="Pop"
@@ -25,6 +29,7 @@
 % if part=='Doc':
 	DONE:
 	TODO:
+	- mark what has been done to thus tune.
 % endif
 
 <%namespace name="defs" file="/src/include/defs.makoi"/>

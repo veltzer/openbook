@@ -1,9 +1,12 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['render']="My"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	attributes.addVersion('My', version)
+	attributes.setDefaultVersionName('My')
 
 	attributes['title']="Jazz Bass line for Blues in F"
 	attributes['style']="Jazz"
