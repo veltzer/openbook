@@ -1,10 +1,13 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=True
-	attributes['render']="Newreal"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	attributes.addVersion('Newreal', version)
+	attributes.setDefaultVersionName('Newreal')
 
 	attributes['title']="Nature Boy"
 	attributes['style']="Jazz"

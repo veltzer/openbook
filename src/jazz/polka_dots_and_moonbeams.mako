@@ -1,10 +1,13 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=True
-	attributes['render']="Fake"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	attributes.addVersion('Fake', version)
+	attributes.setDefaultVersionName('Fake')
 
 	attributes['title']="Polka Dots And Moonbeams"
 	attributes['style']="Jazz"
@@ -29,7 +32,7 @@
 	TODO:
 	- document what has been done with this tune.
 	- add the real book version.
-	- document the youtube performances.
+	- document the youtube performance and add another one.
 % endif
 
 % if part=='ChordsFake':

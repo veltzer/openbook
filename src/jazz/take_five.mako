@@ -1,10 +1,12 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=False
-	attributes['render']="Fake"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	attributes.addVersion('Fake', version)
+	attributes.setDefaultVersionName('Fake')
 
 	attributes['title']="Take Five"
 	attributes['style']="Jazz"
@@ -21,6 +23,7 @@
 % if part=='Doc':
 	DONE:
 	TODO:
+	- mark what has been done with this tune.
 % endif
 
 % if part=='ChordsFake':
@@ -28,23 +31,26 @@
 	\startSong
 	\startChords
 
-	\partial 2
-	s2
+	\partial 2 s2 |
+
 	\myMark "A"
 	\startPart
-	d2.:m a2:m7 | d2.:m a2:m7 | d2.:m a2:m7 | d2.:m a2:m7 |
-	d2.:m a2:m7 | d2.:m a2:m7 | d2.:m a2:m7 | d2.:m a2:m7 |
+	d2.:m a2:m7 | d2.:m a2:m7 | d2.:m a2:m7 | d2.:m a2:m7 | \myEndLine
+	d2.:m a2:m7 | d2.:m a2:m7 | d2.:m a2:m7 | d2.:m a2:m7 | \myEndLine
 	\endPart
+
 	\myMark "B"
 	\startPart
-	bes2. c2:7 | a2.:m7 d2:m | g2.:m7 c2:7 | f2. f2:7 |
-	bes2. c2:7 | a2.:m7 d2:m | g2.:m7 c2:7 | e2.:m7 a2:7 |
+	bes2. c2:7 | a2.:m7 d2:m | g2.:m7 c2:7 | f2. f2:7 | \myEndLine
+	bes2. c2:7 | a2.:m7 d2:m | g2.:m7 c2:7 | e2.:m7 a2:7 | \myEndLine
 	\endPart
+
 	\myMark "A"
 	\startPart
-	d2.:m a2:m7 | d2.:m a2:m7 | d2.:m a2:m7 | d2.:m a2:m7 |
-	d2.:m a2:m7 | d2.:m a2:m7 | d2.:m a2:m7 | d2.:m d2:m |
+	d2.:m a2:m7 | d2.:m a2:m7 | d2.:m a2:m7 | d2.:m a2:m7 | \myEndLine
+	d2.:m a2:m7 | d2.:m a2:m7 | d2.:m a2:m7 | d2.:m d2:m | \myEndLine
 	\endPart
+
 	\endChords
 	\endSong
 }

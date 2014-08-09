@@ -1,11 +1,14 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=True
-	attributes['doLyricsmore']=True
-	attributes['render']="Fake"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	version['doLyricsmore']=True
+	attributes.addVersion('Fake', version)
+	attributes.setDefaultVersionName('Fake')
 
 	attributes['title']="I Got Plenty O' Nuttin'"
 	attributes['style']="Jazz"
@@ -23,6 +26,9 @@
 % endif
 
 % if part=='Doc':
+	DONE:
+	TODO:
+	- mark what has been done to this tune.
 % endif
 
 % if part=='ChordsFake':
@@ -30,42 +36,43 @@
 	\startChords
 	\startSong
 
-	\partial 4
-	s4
+	\partial 4 s4 |
 
 	\repeat volta 2 {
 		\myMark "A"
 		\startPart
-		g2 a:m7 | b:m7 a:m7 | g a:m7 | g b:7 | e a |
-		e a e a4 e | cis1 | cis2 d |
+		g2 a:m7 | b:m7 a:m7 | g a:m7 | g b:7 | \myEndLine
+		e a | e a e a4 e | cis1 | cis2 d | \myEndLine
 		\endPart
+
 		\myMark "A"
 		\startPart
-		g2 a:m7 | b:m7 a:m7 | g a:m7 | g b:7 | e a |
-		e a e a4 e | cis1 | cis2 d | g2 a:m7 | b:m g |
+		g2 a:m7 | b:m7 a:m7 | g a:m7 | g b:7 | \myEndLine
+		e a | e a e a4 e | cis1 | cis2 d | g2 a:m7 | b:m g | \myEndLine
 		\endPart
 
 		\myMark "B"
 		\startPart
-		b:m e:m/b |
-		b:m6 e:m/b | b:m e:m/b | b:m6 e:m/b | b:m e:m/b | b:m6 e:m/b |
-		b:m a:m7 | d a:m7 | d1:7 | d:7 |
-
+		b:m e:m/b | b:m6 e:m/b | b:m e:m/b | b:m6 e:m/b | \myEndLine
+		b:m e:m/b | b:m6 e:m/b | b:m a:m7 | d a:m7 | d1:7 | d:7 | \myEndLine
 		\endPart
+
 		\myMark "A'"
 		\startPart
-		g2 a:m7 | b:m7 a:m7 | g a:m7 | g b:7 | e a |
-		e a e a4 e | cis1 | cis | cis2 d | g a:m7 | g d:m7 | g a:m7 |
+		g2 a:m7 | b:m7 a:m7 | g a:m7 | g b:7 | \myEndLine
+		e a | e a e a4 e | cis1 | cis | \myEndLine
+		cis2 d | g a:m7 | g d:m7 | g a:m7 | \myEndLine
 		g c |
 	} \alternative {
 		{
-			g1 | g | b2:m a:m7 |
+			g1 | g | b2:m a:m7 | \myEndLineVoltaNotLast
 		}
 		{
-			g4 c2:7 d4:7 | g1 |
+			g4 c2:7 d4:7 | g1 | \myEndLineVoltaLast
 		}
 	}
 	\endPart
+
 	\endSong
 	\endChords
 }

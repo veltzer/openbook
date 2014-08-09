@@ -1,11 +1,19 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=True
-	attributes['doLyricsmore']=True
-	attributes['render']="Real"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	version['doLyricsmore']=True
+	attributes.addVersion('Real', version)
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	attributes.addVersion('Fake', version)
+	attributes.setDefaultVersionName('Fake')
 
 	attributes['title']="Autumn Leaves"
 	attributes['style']="Jazz"

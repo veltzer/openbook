@@ -1,11 +1,13 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=True
-	attributes['doLyricsmore']=False
-	attributes['render']="Fake"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	attributes.addVersion('Fake', version)
+	attributes.setDefaultVersionName('Fake')
 
 	attributes['title']="I'll Never Smile Again"
 	attributes['style']="Jazz"
@@ -21,6 +23,9 @@
 % endif
 
 % if part=='Doc':
+	DONE:
+	TODO:
+	- mark what has been done to this tune.
 % endif
 
 % if part=='ChordsFake':
@@ -28,38 +33,41 @@
 	\startChords
 	\startSong
 
-	\partial 2.
-	s2.
+	\partial 2. s2. |
 
 	\repeat volta 2 {
 		\myMark "A"
 		\startPart
-		f1:m7 | bes:7 | ees2:maj7 f:m7 | g:m7 ges:dim7 | f1:m7 | bes:7 |
-		ees | ees |
+		f1:m7 | bes:7 | ees2:maj7 f:m7 | g:m7 ges:dim7 | \myEndLine
+		f1:m7 | bes:7 | ees | ees | \myEndLine
 		\endPart
+
 		\myMark "B"
 		\startPart
-		b2:7.5+ bes:7 | ees1 | f2:m7.5- bes:7.5+ | ees2.:maj7 d4:9 | g2 d:7 | g ges:dim7 |
-		f1:m7 | bes4:7 ees:maj7 g:m7 ges:dim |
+		b2:7.5+ bes:7 | ees1 | f2:m7.5- bes:7.5+ | ees2.:maj7 d4:9 | \myEndLine
+		g2 d:7 | g ges:dim7 | f1:m7 | bes4:7 ees:maj7 g:m7 ges:dim | \myEndLine
 		\endPart
+
 		\myMark "A"
 		\startPart
-		f1:m7 | bes:7 | ees2:maj7 f:m7 | g:m7 ges:dim7 | f1:m7 |
-		bes:7 | ees:7 | ees:7 |
+		f1:m7 | bes:7 | ees2:maj7 f:m7 | g:m7 ges:dim7 | \myEndLine
+		f1:m7 | bes:7 | ees:7 | ees:7 | \myEndLine
 		\endPart
+
 		\myMark "C"
 		\startPart
-		aes2.:maj7 aes4:6 | des1:9 | ees | g2:m7 c:7 |
+		aes2.:maj7 aes4:6 | des1:9 | ees | g2:m7 c:7 | \myEndLine
 		f1:m7 | f2:m7 b4:7.5+ bes:7 |
 	} \alternative {
 		{
-			ees2 ges:dim7 | bes4:7/f ees:maj7 g:m7 ges:dim7 |
+			ees2 ges:dim7 | bes4:7/f ees:maj7 g:m7 ges:dim7 | \myEndLineVoltaNotLast
 		}
 		{
-			ees1 | ees |
+			ees1 | ees | \myEndLineVoltaLast
 		}
 	}
 	\endPart
+
 	\endSong
 	\endChords
 }

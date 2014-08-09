@@ -1,11 +1,14 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=True
-	attributes['doLyricsmore']=True
-	attributes['render']="Fake"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	version['doLyricsmore']=True
+	attributes.addVersion('Fake', version)
+	attributes.setDefaultVersionName('Fake')
 
 	attributes['title']="Stormy Weather"
 	attributes['style']="Jazz"
@@ -27,6 +30,9 @@
 % endif
 
 % if part=='Doc':
+	DONE:
+	TODO:
+	- mark what has been done with this tune.
 % endif
 
 % if part=='ChordsFake':
@@ -43,8 +49,7 @@
 		a:m7 d:9 | g e:7 | a:m7 d:7.5+.9- |
 	} \alternative {
 		{
-			g1 |
-			a2:m7 d:9 |
+			g1 | a2:m7 d:9 |
 		}
 		{
 			g2 c |

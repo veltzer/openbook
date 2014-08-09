@@ -1,10 +1,18 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=True
-	attributes['render']="Fake"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	attributes.addVersion('Fake', version)
+	attributes.setDefaultVersionName('Fake')
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	attributes.addVersion('Real', version)
 
 	attributes['title']="How High The Moon"
 	attributes['style']="Jazz"

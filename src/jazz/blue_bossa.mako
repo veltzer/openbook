@@ -1,12 +1,15 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=True
-	attributes['doLyricsmore']=True
-	attributes['doLyricsmoremore']=True
-	attributes['render']="Real"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	version['doLyricsmore']=True
+	version['doLyricsmoremore']=True
+	attributes.addVersion('Real', version)
+	attributes.setDefaultVersionName('Real')
 
 	attributes['title']="Blue Bossa"
 	attributes['style']="Jazz"

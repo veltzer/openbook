@@ -1,11 +1,13 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=True
-	attributes['doLyricsmore']=False
-	attributes['render']="Fake"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	attributes.addVersion('Fake', version)
+	attributes.setDefaultVersionName('Fake')
 
 	attributes['title']="Honeysuckle Rose"
 	attributes['style']="Jazz"
@@ -22,6 +24,9 @@
 % endif
 
 % if part=='Doc':
+	DONE:
+	TODO:
+	- mark what has been done to this tune.
 % endif
 
 % if part=='ChordsFake':
@@ -32,32 +37,36 @@
 	\repeat volta 2 {
 		\myMark "A"
 		\startPart
-		g2:m7 c:7 | g:m7 c:7 | g:m7 c:7 | g:m7 c:7 | f d:m7 |
-		g2:m7 c:7 | f1 | a2:m7.5- d:7.9- |
+		g2:m7 c:7 | g:m7 c:7 | g:m7 c:7 | g:m7 c:7 | \myEndLine
+		f d:m7 | g2:m7 c:7 | f1 | a2:m7.5- d:7.9- | \myEndLine
 		\endPart
+
 		\myMark "A"
 		\startPart
-		g:m7 c:7 | g:m7 c:7 | g:m7 c:7 |
-		g:m9 c:7 | f aes:dim7 | g:m7 c:7 | f des:7 | g:m7 f |
+		g:m7 c:7 | g:m7 c:7 | g:m7 c:7 | g:m9 c:7 | \myEndLine
+		f aes:dim7 | g:m7 c:7 | f des:7 | g:m7 f | \myEndLine
 		\endPart
+
 		\myMark "B"
 		\startPart
-		f:7 c:m7 | f:dim f:7 |
-		bes f:9 | ges4:9 f:9 bes2 | g:7 d:m7 | g:dim g:7 | c:7 g:m7 | aes4:9 g:9 c2:7 |
+		f:7 c:m7 | f:dim f:7 | bes f:9 | ges4:9 f:9 bes2 | \myEndLine
+		g:7 d:m7 | g:dim g:7 | c:7 g:m7 | aes4:9 g:9 c2:7 | \myEndLine
 		\endPart
+
 		\myMark "A"
 		\startPart
-		g:m7 c:7 | g:m7 c:7 | g:m7 c:7 | g:m9 c:7 | f gis:dim7 |
-		g:m7 c:7 |
+		g:m7 c:7 | g:m7 c:7 | g:m7 c:7 | g:m9 c:7 | \myEndLine
+		f gis:dim7 | g:m7 c:7 |
 	} \alternative {
 		{
-			f1 | a2:m7.5- d:7.9- |
+			f1 | a2:m7.5- d:7.9- | \myEndLineVoltaNotLast
 		}
 		{
-			f2 des:7 | g4:m7 ges:7 f2:6 |
+			f2 des:7 | g4:m7 ges:7 f2:6 | \myEndLineVoltaLast
 		}
 	}
 	\endPart
+
 	\endSong
 	\endChords
 }
@@ -70,14 +79,19 @@
 	\time 2/2
 	\key f \major
 
-	%% part "A"
 	\repeat volta 2 {
-		c'8 bes d, f a2 | c8 bes d, f a2 | c8 bes d, f a4 a |a2 a8 g f d | f4 f f2~ |
-		f a8 g f d | f1~ | f4 r r2 | c'8 bes d, f a2 | c8 bes d, f a2 | c8 bes d, f a4 a |
-		a2 a8 g f d | f4 f f2~ | f a8 g f d | f1~ | f4 r r2 | f2 g | gis a |
-		r4 bes8 c~ c bes c4 | des c8 bes~ bes2 | g a | ais b | r4 c8 d~ d c d4 | ees d8 c~ c2 |
-		c8 bes d, f a2 | c8 bes d, f a2 | c8 bes d, f a4 a | a2 a8 g f d | f4 f f2~ |
-		f a8 g f d |
+		%% part "A"
+		c'8 bes d, f a2 | c8 bes d, f a2 | c8 bes d, f a4 a | a2 a8 g f d |
+		f4 f f2~ | f a8 g f d | f1~ | f4 r r2 |
+		%% part "A"
+		c'8 bes d, f a2 | c8 bes d, f a2 | c8 bes d, f a4 a | a2 a8 g f d |
+		f4 f f2~ | f a8 g f d | f1~ | f4 r r2 |
+		%% part "B"
+		f2 g | gis a | r4 bes8 c~ c bes c4 | des c8 bes~ bes2 |
+		g a | ais b | r4 c8 d~ d c d4 | ees d8 c~ c2 |
+		%% part "A"
+		c8 bes d, f a2 | c8 bes d, f a2 | c8 bes d, f a4 a | a2 a8 g f d |
+		f4 f f2~ | f a8 g f d |
 	} \alternative {
 		{
 			f1~ | f4 r4 r2 |

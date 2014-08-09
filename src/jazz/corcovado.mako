@@ -1,10 +1,13 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=True
-	attributes['render']="Unknown"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	attributes.addVersion('Unknown', version)
+	attributes.setDefaultVersionName('Unknown')
 
 	attributes['title']="Corcovado"
 	attributes['style']="Jazz"
@@ -59,8 +62,9 @@
 	\time 4/4
 	\key c \major
 
-	r1 | r1 | r1 | r1 | r1 | r1 |
-	r1 | r1 | r1 | r1 | r1 | r1 |
+	r1 | r | r | r |
+	r | r | r | r |
+	r | r | r | r |
 
 	%% 1
 	r4 e8 d~ d e4 d8 |

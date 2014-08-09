@@ -1,9 +1,12 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['render']="Aebersold"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	attributes.addVersion('Aebersold', version)
+	attributes.setDefaultVersionName('Aebersold')
 
 	attributes['title']="Watermelon Man"
 	attributes['style']="Jazz"

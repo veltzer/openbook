@@ -1,11 +1,14 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=True
-	attributes['doLyricsmore']=True
-	attributes['render']="Fake"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	version['doLyricsmore']=True
+	attributes.addVersion('Fake', version)
+	attributes.setDefaultVersionName('Fake')
 
 	attributes['title']="(I'm Afraid) The Masquerade Is Over"
 	attributes['style']="Jazz"
@@ -22,7 +25,7 @@
 % if part=='Doc':
 	DONE:
 	TODO:
-	REMARKS:
+	- mark what has been done to this tune.
 % endif
 
 % if part=='ChordsFake':
@@ -30,8 +33,8 @@
 	\startChords
 	\startSong
 
-	\partial 4
-	s4
+	\partial 4 s4 |
+
 	\myMark "A"
 	\startPart
 	\repeat volta 2 {
@@ -70,10 +73,10 @@
 
 % if part=='VoiceFake':
 \relative {
-	\key ees \major
-	\time 4/4
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Presto" 4 = 196
+	\key ees \major
+	\time 4/4
 
 	\partial 4 bes4 |
 

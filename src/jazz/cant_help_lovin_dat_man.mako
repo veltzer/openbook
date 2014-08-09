@@ -1,10 +1,13 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=True
-	attributes['render']="Fake"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	attributes.addVersion('Fake', version)
+	attributes.setDefaultVersionName('Fake')
 
 	attributes['title']="Can't Help Lovin' Dat Man"
 	attributes['style']="Jazz"
@@ -23,6 +26,7 @@
 % if part=='Doc':
 	DONE:
 	TODO:
+	- document what has been done to this tune.
 % endif
 
 % if part=='ChordsFake':
