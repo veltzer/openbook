@@ -72,7 +72,7 @@
 			bes | bes | \myEndLineVoltaNotLast
 		}
 		{
-			bes | bes | \myEndLine
+			bes | bes | \myEndLineVoltaLast
 		}
 	}
 	\endPart

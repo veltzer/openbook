@@ -86,7 +86,7 @@
 			c2 d4:m7 g:7.5+ | \myEndLineVoltaNotLast
 		}
 		{
-			aes4:maj7 des:maj7 des:6 c:6.9 | \myEndLine
+			aes4:maj7 des:maj7 des:6 c:6.9 | \myEndLineVoltaLast
 		}
 	}
 	\endPart

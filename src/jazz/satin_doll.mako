@@ -49,7 +49,7 @@
 			c d:m7 | e:m7 a:7 | \myEndLineVoltaNotLast
 		}
 		{
-			c f:7 | c1 | \myEndLine
+			c f:7 | c1 | \myEndLineVoltaLast
 		}
 	}
 	\endPart

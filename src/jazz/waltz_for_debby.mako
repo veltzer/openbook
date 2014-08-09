@@ -71,7 +71,7 @@
 			f:m7.5- | bes2:7 bes4:7/aes | g2.:m7 | c:7 | f:m7 | bes:7 | \myEndLineVoltaNotLast
 		}
 		{
-			a:m7 | d2:7 d4:7/c | b2.:m7 | a:m7 | g:maj7 | fis:m7 | \myEndLine
+			a:m7 | d2:7 d4:7/c | b2.:m7 | a:m7 | g:maj7 | fis:m7 | \myEndLineVoltaLast
 		}
 	}
 	\endPart
@@ -113,7 +113,7 @@
 	%%	}
 	\set Score.repeatCommands = #'((volta #f) (volta "2.") end-repeat)
 	%%	{
-			a!2 g4 | fis! g a! | b!2.~ | b~ | b~ | b | \myEndLine
+			a!2 g4 | fis! g a! | b!2.~ | b~ | b~ | b | \myEndLineVoltaLast
 	%%	}
 	%%}
 	\set Score.repeatCommands = #'((volta #f))

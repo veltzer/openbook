@@ -26,8 +26,6 @@ Now:
 	to disable midi production.
 		At first shot do this by removing the midi
 		after the lilypond run (just like the perl script).
-- improve the script/lilypond_wrapper to be able to generate just
-	pdf with no ps.
 - move to using the Jazz font in this project.
 	or at least allow it via a menu selection.
 	https://sites.google.com/site/jpgzic/home/demonstration

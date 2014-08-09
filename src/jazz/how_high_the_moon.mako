@@ -92,7 +92,7 @@
 			g1:6 | d2:7 a4:m7/d d:7 | \myEndLineVoltaNotLast
 		}
 		{
-			g1*2 | \myEndLine
+			g1*2 | \myEndLineVoltaLast
 		}
 	}
 	\endPart

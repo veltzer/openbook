@@ -69,7 +69,7 @@
 			c:maj7 | \myEndLineVoltaNotLast
 		}
 		{
-			bes:7 | \myEndLine
+			bes:7 | \myEndLineVoltaLast
 		}
 	}
 	\endPart
@@ -107,7 +107,7 @@
 			g2 g4 g8 g | \myEndLineVoltaNotLast
 		}
 		{
-			g2 g4 g | \myEndLine
+			g2 g4 g | \myEndLineVoltaLast
 		}
 	}
 	%% part "B"

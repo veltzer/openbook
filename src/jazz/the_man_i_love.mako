@@ -84,7 +84,7 @@
 			ees bes:7 | \myEndLineVoltaNotLast
 		}
 		{
-			ees1 | \myEndLine
+			ees1 | \myEndLineVoltaLast
 		}
 	}
 	\endSong
@@ -179,7 +179,7 @@
 			ees bes:7 | \myEndLineVoltaNotLast
 		}
 		{
-			ees1 | \myEndLine
+			ees1 | \myEndLineVoltaLast
 		}
 	}
 	\endSong

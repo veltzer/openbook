@@ -82,7 +82,7 @@
 			g:m9 c:7 | \myEndLineVoltaNotLast
 		}
 		{
-			bes:m7 ees:7 | \myEndLine
+			bes:m7 ees:7 | \myEndLineVoltaLast
 		}
 	}
 	\endPart

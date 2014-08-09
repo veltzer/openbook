@@ -88,7 +88,7 @@
 		}
 		{
 			d2:m c:7 | f c:7 | \myEndLine
-			f d:m | bes c:7 | f d:m7 | g:m7.5- c:7 | f des:7 | f1 | \myEndLine
+			f d:m | bes c:7 | f d:m7 | g:m7.5- c:7 | f des:7 | f1 | \myEndLineVoltaLast
 		}
 	}
 	\endPart
