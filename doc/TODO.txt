@@ -1,5 +1,8 @@
 Now:
 ====
+- make each tune add into info to some variable instead of set
+	the variable.
+	This will allow me to use the tunes to create an index and more.
 - bring back midi, ogg, wav creation but this time with python scripts.
 	just copy the perl scripts.
 - 'make all_tunes' doesn't work. fix it.
