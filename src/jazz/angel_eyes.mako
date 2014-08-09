@@ -1,11 +1,14 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=True
-	attributes['doLyricsmore']=True
-	attributes['render']="Fake"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	version['doLyricsmore']=True
+	attributes.addVersion('Fake', version)
+	attributes.setDefaultVersionName('Fake')
 
 	# from the fake book
 	attributes['title']="Angel Eyes"
@@ -66,7 +69,7 @@
 			c2:m7 aes4:9 g:7.9- | \myEndLineVoltaNotLast
 		}
 		{
-			c1:m | \myEndLine
+			c1:m | \myEndLineVoltaLast
 		}
 	}
 	\endPart
@@ -106,7 +109,7 @@
 			c2 r | \myEndLineVoltaNotLast
 		}
 		{
-			c2. c'4 | \myEndLine
+			c2. c'4 | \myEndLineVoltaLast
 		}
 	}
 	%% part "B"

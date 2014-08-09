@@ -1,11 +1,13 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=True
-	attributes['doLyricsmore']=False
-	attributes['render']="Fake"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	attributes.addVersion('Fake', version)
+	attributes.setDefaultVersionName('Fake')
 
 	attributes['title']="I'm Beginning To See The Light"
 	attributes['style']="Jazz"
@@ -22,6 +24,9 @@
 % endif
 
 % if part=='Doc':
+	DONE:
+	TODO:
+	- mark what has been done to this tune.
 % endif
 
 % if part=='ChordsFake':
@@ -29,28 +34,27 @@
 	\startChords
 	\startSong
 
-	\partial 8
-	s8
+	\partial 8 s8 |
 
 	\repeat volta 2 {
 		\myMark "A"
 		\startPart
-		g2:6 c:9 | g1:6 | g2:6 c4:m7 f:7 | bes2:m7 ees:7 |
-		g:6 c:9 | b:m7 e:7 | a:9 a4:m7 d:7 | g2 a4:m7 d:7 |
+		g2:6 c:9 | g1:6 | g2:6 c4:m7 f:7 | bes2:m7 ees:7 | \myEndLine
+		g:6 c:9 | b:m7 e:7 | a:9 a4:m7 d:7 | g2 a4:m7 d:7 | \myEndLine
 
-		g2:6 c:9 | g1:6 | g2:6 c4:m7 f:7 | bes2:m7 ees:7 |
-		g:6 c:9 | b:m7 e:7 | a:9 a4:m7 d:7 | g1 |
+		g2:6 c:9 | g1:6 | g2:6 c4:m7 f:7 | bes2:m7 ees:7 | \myEndLine
+		g:6 c:9 | b:m7 e:7 | a:9 a4:m7 d:7 | g1 | \myEndLine
 
-		b1:9 | b:9 | bes:9 | bes:9 | a:9 |
-		a:9 | bes2:m7 ees:7 | a:m7 d:7 | g:6 c:9 |
-		b:m7 e:m7 | cis:m7.5- c4:m7 f:7 | bes:m7 ees:7 a:m7.5- d:7.9- | cis2:m7.5- c:9 |
-		b:m7 e:7.5-.9- | a:9 a4:m7 d:7 |
+		b1:9 | b:9 | bes:9 | bes:9 | \myEndLine
+		a:9 | a:9 | bes2:m7 ees:7 | a:m7 d:7 | \myEndLine
+		g:6 c:9 | b:m7 e:m7 | cis:m7.5- c4:m7 f:7 | bes:m7 ees:7 a:m7.5- d:7.9- | \myEndLine
+		cis2:m7.5- c:9 | b:m7 e:7.5-.9- | a:9 a4:m7 d:7 |
 	} \alternative {
 		{
-			g2 a4:m7 d:7 |
+			g2 a4:m7 d:7 | \myEndLineVoltaNotLast
 		}
 		{
-			g2 aes4:maj9 g:6.9 |
+			g2 aes4:maj9 g:6.9 | \myEndLineVoltaLast
 		}
 	}
 	\endPart

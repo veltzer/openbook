@@ -1,10 +1,13 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=True
-	attributes['render']="Fake"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	attributes.addVersion('Fake', version)
+	attributes.setDefaultVersionName('Fake')
 
 	attributes['title']="I Left My Heart In San Francisco"
 	attributes['style']="Jazz"
@@ -23,34 +26,40 @@
 % if part=='Doc':
 	DONE:
 	TODO:
+	- mark what has been done to this tune.
 % endif
 
 % if part=='ChordsFake':
 \chordmode {
 	\startSong
 	\startChords
-	\partial 2.
-	s2. |
+
+	\partial 2. s2. |
+
 	\myMark "A"
 	\startPart
-	bes1 | d2:m7 cis:dim7 | c1:m7 | c:m7 | c:m7 | c2:m7/f f:7.5+ |
-	bes1 |
+	bes1 | d2:m7 cis:dim7 | c1:m7 | c:m7 |
+	c:m7 | c2:m7/f f:7.5+ | bes1 |
 	\endPart
+
 	\myMark "B"
 	\startPart
 	bes2 c4:m7 cis:dim7 | bes1 | d2:m7 cis:dim7 | d1:m7 | d2:m7 d:7.9- |
 	g1:m7 | c2:9 c:7.9- | f:9 b:dim7 | c:m7 f:7 |
 	\endPart
+
 	\myMark "A'"
 	\startPart
 	bes1 | d2:m7 cis:dim7 | c1:m7 |
 	c:m7 | f:9 | f2:9 ees:9 | d1:7 |
 	\endPart
+
 	\myMark "C"
 	\startPart
 	d:7 | g2.:7.5+ g4:9 | g1:9 |
 	c2. g4:m7 | c1:9 | c:m7 | c2:m7/f f:7.9- | bes2:6 aes4:6.9 a:6.9 | bes1:6.9 |
 	\endPart
+
 	\endChords
 	\endSong
 }

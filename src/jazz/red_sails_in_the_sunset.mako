@@ -1,10 +1,13 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=True
-	attributes['render']="Fake"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	attributes.addVersion('Fake', version)
+	attributes.setDefaultVersionName('Fake')
 
 	attributes['title']="Red Sails In The Sunset"
 	attributes['style']="Jazz"
@@ -25,6 +28,7 @@
 % if part=='Doc':
 	DONE:
 	TODO:
+	- mark what has been done to this tune.
 % endif
 
 % if part=='ChordsFake':
@@ -38,27 +42,29 @@
 		g1*2 | c2 c:m6 | g1 | \myEndLine
 		g2 gis:dim7 | a2:m7 d:7 | a:m7 d:7 | g1 | \myEndLine
 		\endPart
+
 		\myMark "A"
 		\startPart
 		g1*2 | c2 c:m6 | g1 | \myEndLine
 		g2 gis:dim7 | a2:m7 d:7 | a:m7 d:7 | g1 | \myEndLine
 		\endPart
+
 		\myMark "B"
 		\startPart
 		c2 c:m6 | g1 | d:7 | g | \myEndLine
 		c2 c:m6 | g1 | a:7 | a2:m7 d:7 | \myEndLine
 		\endPart
+
 		\myMark "A"
 		\startPart
 		g1*2 | c2 c:m6 | g1 | \myEndLine
 		g2 gis:dim7 | a2:m7 d:7 | a:m7 d:7 |
-		\endPart
 	} \alternative {
 		{
 			g2 a4:m7 d:7 | \myEndLineVoltaNotLast
 		}
 		{
-			g1 | \myEndLine
+			g1 | \myEndLineVoltaLast
 		}
 	}
 	\endPart

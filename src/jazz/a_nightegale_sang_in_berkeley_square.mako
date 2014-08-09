@@ -1,11 +1,14 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=True
-	attributes['doLyricsmore']=True
-	attributes['render']="Fake"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	version['doLyricsmore']=True
+	attributes.addVersion('Fake', version)
+	attributes.setDefaultVersionName('Fake')
 
 	attributes['title']="A Nightengale Sang in Berkeley Square"
 	attributes['style']="Jazz"
@@ -32,7 +35,7 @@
 	\startChords
 	\startSong
 
-	\partial 8 s8
+	\partial 8 s8 |
 
 	\repeat volta 2 {
 
@@ -65,10 +68,10 @@
 		ees bes:7 | ees:7 aes4:m7 des:7 | ees,2 c:m7 | f:m7 bes:7 |
 	} \alternative {
 		{
-			ees c:m7 | f:m7 bes:7 |
+			ees c:m7 | f:m7 bes:7 | \myEndLineVoltaNotLast
 		}
 		{
-			ees c:m7 | f:m7 bes4:7 bes:7/aes | g2:m7.5- c:7 | f:m7.5- aes4/bes bes:7 | ees2 c4:m c:m7/bes | aes2:m6 ees:6 |
+			ees c:m7 | f:m7 bes4:7 bes:7/aes | g2:m7.5- c:7 | f:m7.5- aes4/bes bes:7 | ees2 c4:m c:m7/bes | aes2:m6 ees:6 | \myEndLineVoltaLast
 		}
 	}
 	\myEndLine

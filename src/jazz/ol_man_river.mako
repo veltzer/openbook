@@ -1,10 +1,13 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=True
-	attributes['render']="Fake"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	attributes.addVersion('Fake', version)
+	attributes.setDefaultVersionName('Fake')
 
 	attributes['title']="Ol' Man River"
 	attributes['style']="Jazz"
@@ -25,6 +28,7 @@
 % if part=='Doc':
 	DONE:
 	TODO:
+	- mark what has been done to this tune.
 % endif
 
 % if part=='ChordsFake':
@@ -32,34 +36,35 @@
 	\startSong
 	\startChords
 
-	\myMark "A"
-	\startPart
 	\repeat volta 2 {
-		ees2 c:m7 | ees aes | ees aes | ees c:m7 |
-		f:m7 bes:9 | f:m7 bes:9 | ees aes:6 | ees1 |
+		\myMark "A"
+		\startPart
+		ees2 c:m7 | ees aes | ees aes | ees c:m7 | \myEndLine
+		f:m7 bes:9 | f:m7 bes:9 | ees aes:6 | ees1 | \myEndLine
 		\endPart
+
 		\myMark "A'"
 		\startPart
-		ees2 c:m7 |
-		ees aes | ees c:m | ees ges:dim7 | f:m7 bes:7 |
-		f:m7 bes:9 | ees aes | ees a4:m7.5- d:7 |
+		ees2 c:m7 | ees aes | ees c:m | ees ges:dim7 | \myEndLine
+		f:m7 bes:7 | f:m7 bes:9 | ees aes | ees a4:m7.5- d:7 | \myEndLine
 		\endPart
+
 		\myMark "B"
 		\startPart
-		g2:m d:7.9- | g:m d:7.9- |
-		g:m d:7.9- | g:m d:7.9- | g:m c:m6 | g:m d:7.9- | g:m d:7.9- |
+		g2:m d:7.9- | g:m d:7.9- | g:m d:7.9- | g:m d:7.9- |
+		g:m c:m6 | g:m d:7.9- | g:m d:7.9- | g:m f4:m7 bes:7 |
 		\endPart
+
 		\myMark "A''"
 		\startPart
-		g:m f4:m7 bes:7 |
-		ees2 c:m7 | ees aes | ees bes:9 | c:m7 f:7 |
+		ees2 c:m7 | ees aes | ees bes:9 | c:m7 f:7 | \myEndLine
 		ees4/bes b:dim c2:m7 | f:m9 bes:7 |
 	} \alternative {
 		{
-			ees aes:m | ees f4:m7 bes:7 |
+			ees aes:m | ees f4:m7 bes:7 | \myEndLineVoltaNotLast
 		}
 		{
-			ees2 f4:m7 bes:7 | ees1 |
+			ees2 f4:m7 bes:7 | ees1 | \myEndLineVoltaLast
 		}
 	}
 	\endPart

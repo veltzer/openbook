@@ -1,11 +1,13 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=True
-	attributes['doLyricsmore']=False
-	attributes['render']="Fake"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	attributes.addVersion('Fake', version)
+	attributes.setDefaultVersionName('Fake')
 
 	attributes['title']="Like Someone In Love"
 	attributes['style']="Jazz"
@@ -27,6 +29,7 @@
 % if part=='Doc':
 	DONE:
 	TODO:
+	- mark what has been done to this tune.
 % endif
 
 % if part=='ChordsFake':
@@ -41,16 +44,19 @@
 		c2:maj7 c/b | c:6/a c/g | d:7/fis g:7/f | e:m7 ees:7 | \myEndLine
 		d1:m7 | g2.:7 g4:9.5+ | c1:maj7 | g4:m7 c2:9 c4:9.5+ | \myEndLine
 		\endPart
+
 		\myMark "B"
 		\startPart
 		f2.:6 f4:5+ | b2:m7 e:7 | a1:maj7 | a:6 | \myEndLine
 		a:m7 | d:7 | d1:7 | g:7.5+ | \myEndLine
 		\endPart
+
 		\myMark "A"
 		\startPart
 		c2:maj7 c/b | c:6/a c/g | d:7/fis g:7/f | e:m7 ees:7 | \myEndLine
 		d1:m7 | g2.:7 g4:9.5+ | c1:maj7 | g4:m7 c2:9 c4:9.5+ | \myEndLine
 		\endPart
+
 		\myMark "B'"
 		\startPart
 		f2.:6 f4:5+ | b2:m7 e:7 | a1:maj7 | d2.:9 dis4:dim | \myEndLine
@@ -60,7 +66,7 @@
 			c a:m7 | d:9 g:7 | \myEndLineVoltaNotLast
 		}
 		{
-			c f:m6 | c1 | \myEndLine
+			c f:m6 | c1 | \myEndLineVoltaLast
 		}
 	}
 	\endPart

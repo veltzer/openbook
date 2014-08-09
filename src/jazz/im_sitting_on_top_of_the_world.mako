@@ -1,11 +1,13 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=True
-	attributes['doLyricsmore']=False
-	attributes['render']="Fake"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	attributes.addVersion('Fake', version)
+	attributes.setDefaultVersionName('Fake')
 
 	attributes['title']="I'm Sitting On Top Of The World"
 	attributes['style']="Jazz"
@@ -23,6 +25,9 @@
 % endif
 
 % if part=='Doc':
+	DONE:
+	TODO:
+	- mark what has been done to this tune.
 % endif
 
 % if part=='ChordsFake':
@@ -35,28 +40,32 @@
 	\repeat volta 2 {
 		\myMark "A"
 		\startPart
-		f2 f4:maj7 f:7 | bes1 | f | f | g:7 | c:7 | f2 g4:m f/a |
-		g2:m7 c:7.5+ |
+		f2 f4:maj7 f:7 | bes1 | f | f | \myEndLine
+		g:7 | c:7 | f2 g4:m f/a | g2:m7 c:7.5+ | \myEndLine
 		\endPart
+
 		\myMark "A"
 		\startPart
-		f f4:maj7 f:7 | bes1 | f | f | g:7 | c:7 | f |
+		f f4:maj7 f:7 | bes1 | f | f | \myEndLine
+		g:7 | c:7 | f | f:7 | \myEndLine
 		\endPart
+
 		\myMark "B"
 		\startPart
-		f:7 | bes | e:7 | f | f | d2:m d:m7+ | d:m7 d:m6 |
-		g1:7 | c2.:7 c4:7.5+ |
+		bes | e:7 | f | f | \myEndLine
+		d2:m d:m7+ | d:m7 d:m6 | g1:7 | c2.:7 c4:7.5+ | \myEndLine
 		\endPart
-		\startPart
+
 		\myMark "A"
-		f2 f4:maj7 f:7 | bes1 | f2 c:9.5+ | f1 | g2:7 g:7.5-/des |
-		c1:7 |
+		\startPart
+		f2 f4:maj7 f:7 | bes1 | f2 c:9.5+ | f1 | \myEndLine
+		g2:7 g:7.5-/des | c1:7 |
 	} \alternative {
 		{
-			f2 des:7 | g:7 c:7.5+ |
+			f2 des:7 | g:7 c:7.5+ | \myEndLineVoltaNotLast
 		}
 		{
-			f bes | f1 |
+			f bes | f1 | \myEndLineVoltaLast
 		}
 	}
 	\endPart

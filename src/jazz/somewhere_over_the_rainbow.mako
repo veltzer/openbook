@@ -1,12 +1,20 @@
 <%page args="part"/>
 % if part=='Vars':
 <%
-	attributes['doChords']=True
-	attributes['doVoice']=True
-	attributes['doLyrics']=True
-	attributes['doLyricsmore']=True
-	attributes['render']="Ccb"
-	#attributes['render']="Wikifonia"
+	import attr
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	version['doLyricsmore']=True
+	attributes.addVersion('Ccb', version)
+	attributes.setDefaultVersionName('Ccb')
+	version=attr.Version()
+	version['doChords']=True
+	version['doVoice']=True
+	version['doLyrics']=True
+	version['doLyricsmore']=True
+	attributes.addVersion('Wikifonia', version)
 
 	# from the ccb book
 	attributes['title']="Somewhere, Over The Rainbow"
@@ -82,7 +90,7 @@
 			ees:maj7 f4:m7 bes:7.9- | \myEndLineVoltaNotLast
 		}
 		{
-			ees2:maj7 f4:m7 bes:7.9- | \myEndLine
+			ees2:maj7 f4:m7 bes:7.9- | \myEndLineVoltaLast
 		}
 	}
 	\endPart
@@ -120,7 +128,7 @@
 			ees2 r | \myEndLineVoltaNotLast
 		}
 		{
-			ees2. bes'4 | \myEndLine
+			ees2. bes'4 | \myEndLineVoltaLast
 		}
 	}
 	%% part "B"
@@ -179,7 +187,7 @@
 			ees:maj7 f4:m7 bes:7 | \myEndLineVoltaNotLast
 		}
 		{
-			ees1:maj7 | \myEndLine
+			ees1:maj7 | \myEndLineVoltaLast
 		}
 	}
 	\endPart

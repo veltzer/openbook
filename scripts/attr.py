@@ -144,10 +144,28 @@ def check_location(val):
 			else:
 				check_int(pages)
 
-class Attributes(dict):
+class Version(dict):
 	def __init__(self):
 		super().__init__()
+		self['doChords']=False
+		self['doVoice']=False
+		self['doLyrics']=False
+		self['doLyricsmore']=False
+		self['doLyricsmoremore']=False
+		self['doChordBars']=False
+		self['doGuitar']=False
+		self['doExtra']=False
+		self['doPrep']=False
+		self['doOwn']=False
+
+class Attributes(dict):
+	def postinit(self):
 		self.pos=-1
+		self.versions=dict()
+		self.defaultVersionName=None
+	def __init__(self):
+		super().__init__()
+		self.postinit()
 	def __setitem__(self, key, val):
 		newpos=order.index(key)
 		if newpos<=self.pos:
@@ -157,7 +175,7 @@ class Attributes(dict):
 		self.pos=newpos
 		super().__setitem__(key, val)
 	def reset(self):
-		self.pos=-1
+		self.postinit()
 	def cut(self, p_cutnum, p_output):
 		val=self['location']
 		if val=='':
@@ -195,6 +213,16 @@ class Attributes(dict):
 				pg_from+=books_offsets[bk]
 				pg_to+=books_offsets[bk]
 			cut_pdf(full, pg_from, pg_to, p_output)
+	def addVersion(self, name, version):
+		self.versions[name]=version
+	def setDefaultVersionName(self, name):
+		self.defaultVersionName=name
+	def getDefaultVersionName(self):
+		return self.defaultVersionName
+	def getDefaultVersion(self):
+		return self.versions[self.defaultVersionName]
+	def getWorkingVersion(self):
+		return self.versions[self.defaultVersionName]
 
 def cut_pdf(source_pdf, pg_from, pg_to, output_pdf):
 	args=[

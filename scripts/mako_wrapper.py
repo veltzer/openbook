@@ -7,7 +7,7 @@ import os # for chmod, unlink
 import glob # for glob
 import check_version # for check_version
 import os.path # for isfile
-import attributes # for Attributes
+import attr # for Attributes
 
 #############
 # functions #
@@ -83,11 +83,11 @@ try:
 	gattr['break_after_toc']=True
 	if not p_cut:
 		file=open(p_output,'wb')
-	attr=attributes.Attributes()
+	attributes=attr.Attributes()
 	if p_cut:
-		template.render(attributes=attr, gattr=gattr, scratch={})
+		template.render(attributes=attributes, gattr=gattr, scratch={})
 	else:
-		file.write(template.render(attributes=attr, gattr=gattr, scratch={}))
+		file.write(template.render(attributes=attributes, gattr=gattr, scratch={}))
 	if p_cut:
 		attr.cut(p_cutnum, p_output)
 	if not p_cut:
