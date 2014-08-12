@@ -70,7 +70,7 @@
 	\myMark "B"
 	\startPart
 	e1:m7 | a:7 | d1*2:m7 | \myEndLine
-	g:7 | g1:m7 | c2:7 r | \myEndLine 
+	g:7 | g1:m7 | c2:7 r | \myEndLine
 	\endPart
 
 	%% end of the "A" part
