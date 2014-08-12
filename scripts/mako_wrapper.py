@@ -89,10 +89,11 @@ try:
 	else:
 		file.write(template.render(attributes=attributes, gattr=gattr, scratch={}))
 	if p_cut:
-		attr.cut(p_cutnum, p_output)
+		attributes.cut(p_cutnum, p_output)
 	if not p_cut:
 		file.close()
 	os.chmod(p_output,0o0444)
 except Exception as e:
-	os.unlink(p_output)
+	if os.path.isfile(p_output):
+		os.unlink(p_output)
 	raise e
