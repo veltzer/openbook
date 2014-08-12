@@ -9,12 +9,18 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
+	# from the fake book
 	attributes['title']="What A Wonderful World"
 	attributes['style']="Jazz"
+	# from the fake book
 	attributes['composer']="George David Weiss, Bob Thiele"
+	# from the fake book
 	attributes['poet']="George David Weiss, Bob Thiele"
+	# from the fake book
 	attributes['piece']="Slowly"
+	# from the fake book
 	attributes['copyright']="1967 by Range Road Music Inc. and Quartet Music Inc."
+	# from the fake book
 	attributes['copyrightextra']="All rights administered by Hudson Bay Music, Inc."
 
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
@@ -33,18 +39,17 @@
 
 % if part=='Doc':
 	DONE:
-	- brought in fake book epdf.
+	- wrote down fake book location.
+	- filled in the structure.
 	- filled in meta data from the fake book.
 	- filled in chords from the fake book.
+	- filled in tune from the fake book.
 	- filled in lyrics from the real book.
-	- filled in the structure.
-	- filled in the tune from the fake book.
 	- checked the chords from the fake book.
 	- checked the tune from the fake book.
 	- checked the lyrics from the fake book.
 	- heard the tune to make sure it sounds ok.
-	- added the fermata on the last note of the tune in the fake book version.
-	- add you tube performances and lyrics url.
+	- added you tube performances and lyrics url.
 	TODO:
 	- get another version of this tune from somewhere.
 % endif
@@ -119,14 +124,17 @@
 	%% part "A"
 	I see trees of green, red ros -- es too, I see the bloom for me and you, __
 	and I think __ to my -- self What A Won -- der -- ful World. __
+
 	%% part "A"
 	I see skies of blue and clouds of white, the bright __ bless -- ed day, the dark __ sac -- red night, __
 	and I think __ to my -- self What A Won -- der -- ful World. __
+
 	%% part "B"
 	The col -- ors of the rain -- bow, so pret -- ty in the sky
 	are al -- so on the fa -- ces of peo -- ple go -- in' by,
 	I see friends shak -- in' hands, __ say -- in' "\"How" do you "do!\""
 	They're real -- ly say -- in' "\"I" love "you,\""
+
 	%% part "A"
 	I hear ba -- bies cry, I watch them grow.
 	They'll learn much more than I'll __ ev -- er know, __
