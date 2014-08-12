@@ -23,7 +23,7 @@
 	attributes['copyright']="1934 by Edward B. Marks Music Company. Copyright Renewed."
 
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="0"
+	attributes['completion']="5"
 	attributes['uuid']="d28e02f4-2218-11e4-870b-bfbfa80d68bd"
 	attributes['structure']="ABAC"
 	attributes['location']="jfb:422"
