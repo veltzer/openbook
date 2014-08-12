@@ -1,5 +1,9 @@
 Now:
 ====
+- upload results to scribd via the scribd api.
+	http://www.scribd.com/developers/tutorials
+	apparently all you need to do is http upload from the command line
+	via curl or some python HTTP library.
 - make each tune add into info to some variable instead of set
 	the variable.
 	This will allow me to use the tunes to create an index and more.
