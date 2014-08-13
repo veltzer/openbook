@@ -32,7 +32,7 @@
 	\startChords
 	\startSong
 
-	\partial 4. r4. |
+	\partial 4. s4. |
 
 	\startPart
 	\repeat volta 2 {

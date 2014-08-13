@@ -35,10 +35,9 @@
 % if part=='ChordsEpdf0':
 \chordmode {
 	\startChords
-
 	\startSong
 
-	\partial 8 r8 |
+	\partial 8 s8 |
 	\repeat volta 3 {
 		\myMark "A"
 		\startPart
@@ -55,7 +54,6 @@
 	}
 
 	\endSong
-
 	\endChords
 }
 % endif
