@@ -112,9 +112,11 @@
 			c2. c'4 |
 		}
 	}
+
 	%% part "B"
 	c8 c4.~ c8 c bes ees,~ | ees ees4.~ ees2 | c'8 c4 c16 bes c4 bes8 ees,~ | ees2. c'4 |
 	b2~ b8 a4 b16 a | d,8 d4.~ d4 r8 e | fis8. fis16 fis8 fis~ fis4 fis8 g~ | g1 |
+
 	%% part "A"
 	r8. c,16 g'8 ges8~ ges4. f8 | ees4 \times 2/3 { ees8 c ees~ } ees2 |
 	r8. c16 ees8 g d'8. d16 c8 g~ | g1 |
@@ -126,6 +128,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	Try to think __
 	that love's not a -- round __
@@ -134,11 +137,13 @@
 	ain't gain -- in' no ground __
 	be -- cause my An -- gel Eyes ain't here. __
 	_
+
 	%% part "B"
 	So drink up __ all you peo -- ple, __
 	or -- der an -- y -- thing you see. __
 	Have fun, __ you hap -- py peo -- ple __
 	the drink and the laugh's __ on me. __
+
 	%% part "A"
 	Par -- don me, __
 	but I got -- ta run, __
@@ -151,6 +156,7 @@
 
 % if part=='LyricsmoreFake':
 \lyricmode {
+
 	%% part "A"
 	An -- gel Eyes __
 	that old dev -- il sent, __

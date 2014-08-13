@@ -109,6 +109,7 @@
 
 % if part=='LyricsNewreal':
 \lyricmode {
+
 	%% part "A"
 	There was a boy,
 	A ver -- y strange en -- chant -- ed boy

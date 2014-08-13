@@ -115,6 +115,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	What A Diff -- 'rence A Day Made, __
 	twen -- ty -- four lit -- tle ho -- urs, __
@@ -141,6 +142,7 @@
 
 % if part=='LyricsmoreFake':
 \lyricmode {
+
 	%% part "A"
 	_ _ _ _ _
 	day makes, __ there's a rain -- bow be -- fore me, __

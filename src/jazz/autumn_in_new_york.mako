@@ -111,12 +111,15 @@
 	%% part "A"
 	a'8 g f d c2 | r8 d f bes d d4 c8 | d2 a | r1 |
 	a8 g f d c2 | r8 d f bes d d4 c8 | d2 a | r1 |
+
 	%% part "B"
 	c8 c4 a8 a4. f8 | aes8 aes4 f8 ees4. des8 | ees b4 c8 ees2~ | ees f |
 	g8 d4 ees8 g2~ | g b | g1~ | g2. gis4 |
+
 	%% part "A"
 	a8 g! f d c2 | r8 d f bes d d4 c8 | d2 a | r1 |
 	d8 c bes g f2~ | f8 ges bes c des ees4 c8 | des1~ | des2. r4 |
+
 	%% part "C"
 	c8 aes4 c8 e4 e | c2. bes4 | aes8 f4 aes8 c4 c | aes2. aes4 |
 	a!8 g f d c2~ | c8 bes des f aes bes4 g8 | f1 | r1 |
@@ -126,21 +129,25 @@
 % if part=='LyricsReal':
 %% lyrics are taken from the fake book and adjusted for the real one
 \lyricmode {
+
 	%% part "A"
 	Au -- tumn In New York,
 	why does it seem so in -- vit -- ing?
 	Au -- tumn In New York,
 	it spells the thrill of first night -- ing.
+
 	%% part "B"
 	Glit -- ter -- ing crowds and shim -- mer -- ing clouds
 	in can -- yons of steel, __
 	they're mak -- ing me feel __
 	I'm home. __
+
 	%% part "A"
 	It's Au -- tumn In New York,
 	that brings the pro -- mise of new love;
 	Au -- tumn In New York __
 	is of -- ten min -- gled with pain. __
+
 	%% part "C"
 	Dream -- ers with emp -- ty hands
 	may sigh for ex -- ot -- ic lands;
@@ -151,21 +158,25 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
+
 	%% part "A"
 	Au -- tumn In New York,
 	the gleam -- ing roof -- tops at sun -- down.
 	Au -- tumn In New York,
 	it lifts you up when you're run -- down.
+
 	%% part "B"
 	Jad -- ed rou -- es and gay di -- vor -- cees
 	who lunch at the Ritz __
 	will tell you that "\"it's" __
 	di -- "vine!\"" __
+
 	%% part "A"
 	This Au -- tumn In New York,
 	trans -- forms the slums in -- to May -- fair;
 	Au -- tumn In New York, __
 	you'll need no cas -- tles in Spain. __
+
 	%% part "C"
 	Lov -- ers that bless the dark
 	on bench -- es in Cen -- tral Park

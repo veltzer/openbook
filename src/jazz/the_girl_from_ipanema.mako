@@ -147,6 +147,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	Tall and tan and young __ and love -- __ ly,
 	the Girl __ From I -- pa -- ne -- __ ma goes walk -- __ ing,
@@ -174,6 +175,7 @@
 
 % if part=='LyricsmoreFake':
 \lyricmode {
+
 	%% part "A"
 	When she walks she's like __ a sam -- __ ba
 	that swings __ so cool and sways __ _ so gen -- __ tle,

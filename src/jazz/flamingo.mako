@@ -115,9 +115,11 @@
 			f1~ | f4 r r f |
 		}
 	}
+
 	%% part "B"
 	f'1 | r4 f8 f f4 ees8 des | ees4. ees8 aes2 | r4 ees8 ees~ ees4 des8 c |
 	des4. des8 g2 | r4 des4 des c8 bes | c1~ | c2 r4 c,4 |
+
 	%% part "A"
 	c'4. a8~ a2 | r4 bes8 c e4 d8 c | aes1 | r4 g8 aes c4 bes8 aes |
 	f4 f2. | r4 g \times 2/3 { bes d f } | a1~ | a2. r4 |
@@ -126,6 +128,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	Fla -- min -- go, __
 	like a flame in the sky,
@@ -138,13 +141,17 @@
 
 % if part=='LyricsmoreFake':
 \lyricmode {
+
+	%% part "A"
 	Fla -- min -- go, __
 	in your trop -- i -- cal hue,
 	speak of pas -- sion un -- dy -- ing
 	and a love that is _ _ true. __
+
 	%% part "B"
 	The wind sings a song to you as you go,
 	a song __ that I hear be -- low the mur -- mur -- ing palms. __
+
 	%% part "A"
 	Fla -- min -- go, __
 	when the sun meets the sea,

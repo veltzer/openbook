@@ -99,6 +99,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	It's not the pale moon that ex -- cites me, that thrills and de -- lights me. Oh,
 	no, __ it's just The Near -- ness Of You. __

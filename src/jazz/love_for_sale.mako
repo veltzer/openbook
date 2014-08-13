@@ -90,21 +90,25 @@
 	\key bes \major
 
 	\repeat volta 2 {
+
 		%% part "A"
 		bes'1~ | bes2. g4 | f1~ | f |
 		r4 bes8 bes bes4 bes | bes bes2 g4 | f1~ | f2. r4 |
 		r4 bes8 bes bes4 bes | bes c c2 | r4 aes8 aes aes4 aes | aes ges ges2 |
 		f1~ | f2. des4 | bes1~ | bes2. r4 |
+
 		%% part "A"
 		bes'1~ | bes2. g4 | f1~ | f |
 		r4 bes8 bes bes4 bes | ees c bes g | f1~ | f2. r4 |
 		r4 bes8 bes bes4 bes | bes c c2 | r4 des8 des des4 des | des ges, ges2 |
 		f1~ | f2. des4 | bes1~ | bes2. r4 |
+
 		%% part "B"
 		r4 bes8 c des4 ees | f4 ees ees2 | r4 c8 des ees4 f | aes1 |
 		r4 bes,8 c des4 ees | f4 ees ees2 | r4 c8 des ees4 f | bes1 |
 		r4 bes,8 c d4 f | ges f f2 | r4 d \times 2/3 { ees4 f ges } | c4 bes bes2 |
 		des c | des c | r4 b8 b b4 b | b2 bes |
+
 		%% part "A"
 		bes1~ | bes2. g4 | f1~ | f2. r4 |
 		r4 bes8 bes bes4 bes | bes bes2 g4 | f1~ | f2. r4 |

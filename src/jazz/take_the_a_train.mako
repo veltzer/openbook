@@ -114,6 +114,7 @@
 			e2\repeatTie r |
 		}
 	}
+
 	%% part "B"
 	a8 c~ c2. | e8 f,4. a4 c | e8 a,4.~ a2~ | a1 |
 	a8 c~ c2. | e4 fis, a c | e8 a,~ a2.~ | a2 aes |
@@ -129,13 +130,15 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
-	%% Volta
 	You __ must take the "\"A\"" Train __ To go to Sug -- ar Hill way up in Har -- lem. __
 	_
+
 	%% part "B"
 	Hur -- ry, __ get on now it's com -- ing. __ Lis -- ten __ to those rails a --
 	thrum -- ming. __ All
+
 	%% part "A"
 	'board! __ Get on the "\"A\"" Train, __ soon
 	you will be on Sug -- ar Hill in Har -- lem. __
@@ -145,6 +148,7 @@
 
 % if part=='LyricsmoreFake':
 \lyricmode {
+
 	%% part "A"
 	If __ you miss the "\"A\"" Train, __ You'll find you've missed the quick -- est way to Har -- lem. __
 }

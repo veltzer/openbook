@@ -132,6 +132,7 @@
 	\partial 4 f4 |
 
 	\repeat volta 2 {
+
 		%% part "A"
 		f2~ f8 bes, d f | g a g2 g4 | g2~ g8 c, ees g | a2. a4 |
 		a2~ a8 d, f a | bes c bes2 bes4 | bes2~ bes8 ees, g bes | c2. bes8 c |
@@ -152,6 +153,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	The night __ is like a love -- ly tune,
 	be -- ware __ My Fool -- ish Heart!

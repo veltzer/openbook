@@ -100,6 +100,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	Missed the Sat -- ur -- day dance, heard they crowd -- ed the floor;
 	cound -- n't bear it with -- out you, __ Don't Get A -- round Much An -- y -- more.

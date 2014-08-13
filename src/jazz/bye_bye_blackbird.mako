@@ -105,15 +105,19 @@
 	\tempo "Moderato" 4 = 116
 
 	\repeat volta 2 {
+
 		%% part "A"
 		a'4 a a a | bes a a2 | a4 g g2 | g4 f f2 |
 		f1 | g | f2 e2~ | e1 |
+
 		%% part "B"
 		bes'4 bes bes bes | c bes bes2 | bes4 a a2 | a4 g g2 |
 		g1 | a | g2 f~ | f1 |
+
 		%% part "C"
 		f4 c' c c | c bes a g | g1 | fis |
 		d4 bes' bes bes | bes a g f | f1 | e |
+
 		%% part "D"
 		a4 a a a | bes a a2 | a4 g g2 | g4 fis fis2 |
 		g2 bes~ | bes e, |
@@ -130,17 +134,21 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	Pack up all my care and woe,
 	here I go, Sing -- ing low,
 	Bye Bye Black -- bird, __
+
 	%% part "B"
 	Where some -- bod -- y waits for me,
 	sug -- ar's sweet, so is she,
 	Bye Bye Black -- bird. __
+
 	%% part "C"
 	No one here can love or un -- der -- stand me,
 	oh, what hard luck sto -- ries they all hand me.
+
 	%% part "D"
 	Make my bed and light the light,
 	I'll ar -- rive late to -- night,

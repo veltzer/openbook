@@ -94,10 +94,13 @@
 	\partial 8 d8 |
 
 	\repeat volta 2 {
+
 		%% part "A"
 		g a b c d b c d | b g r4 r r8 d | g a bes c d e4 f!8~ | f g, a bes~ bes4. d8 |
 		c a4 f!8 bes gis a f~ | f r r4 r4 r8 aes~ | aes4 g8 f! e g f c | f!4 ees8 d r4 r8 des'8~ |
+
 		%% part "B"
+
 		%% part "C"
 		des4 c8 bes a c bes g | a4 g8 fis r4 r8 d |
 	} \alternative {

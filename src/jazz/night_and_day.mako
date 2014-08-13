@@ -110,6 +110,7 @@
 			g2 g4 g |
 		}
 	}
+
 	%% part "B"
 	bes1~ | bes2 \times 2/3 { g4 f ees } | g g8 g~ g2~ | g g4. g8 |
 	bes c4 bes8 c4 bes8 c~ | c bes4 g8~ \times 2/3 { g4 f ees } | g g8 g~ g2~ | g2 e!4. e8 |
@@ -121,6 +122,7 @@
 % if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
+
 	%% part "A"
 	Night And Day __
 	You are the one __
@@ -132,6 +134,7 @@
 	Night And Day __
 
 	Day and night __
+
 	%% part "B"
 	_ Night And Day
 	Un -- der the hide of me __
@@ -147,6 +150,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
+
 	%% part "A"
 	_ _ _
 	Why it is so __

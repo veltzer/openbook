@@ -132,6 +132,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	"\"Have" You Met Miss "Jones?\"" Some one said as we shook hands.
 	She was just Miss Jones to me. __

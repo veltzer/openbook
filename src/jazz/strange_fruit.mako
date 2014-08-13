@@ -99,6 +99,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	South -- ern trees bear a strange fruit, blood on the leaves and blood at the root, black bod -- y swing -- ing in the
 	south -- ern breeze; Strange Fruit hang -- ing from the pop -- lar trees. __ \markup \italic (Humming) __ _ _ _ _ _ _ _ _

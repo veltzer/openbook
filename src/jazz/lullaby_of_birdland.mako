@@ -124,6 +124,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	Lul -- la -- by Of Bird -- land
 	that's what I __

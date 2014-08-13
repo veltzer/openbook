@@ -117,9 +117,11 @@
 	%%	}
 	%%}
 	\set Score.repeatCommands = #'((volta #f))
+
 	%% part "B"
 	c2.~ | c2 bes4 | c2.~ | c2 bes4 | c bes aes | g2 d4 | f2 ees4 | c' bes aes |
 	g2 aes4 | g2 d4 | ees g bes | d ees c | bes2.~ | bes~ | bes~ | bes^\markup {D.C. al Coda} |
+
 	%% part "Coda"
 	c2.~ | c | r4 d c | d c d | bes2.~ | bes |
 	r4 bes aes | bes aes bes | g2.~ | g~ | g | r4 f ees | f ees f | ees f ees |
@@ -129,13 +131,16 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	In her own sweet world, __ pop -- u -- lat -- ed by dolls and clowns and a
 	prince and a big pur -- ple bear, __
 	wear -- y grown -- ups all wear. __
+
 	%% part "B"
 	In __ the sun, __ she danc -- es to si -- lent mu -- sic, songs that are spun of
 	gold some -- where in her own lit -- tle head. __
+
 	%% part "Coda"
 	bear. __ When she goes they will cry __ as they whis -- per "\"good" -- "bye.\"" __
 	They will miss her, I fear, but then, so will I. __
@@ -144,6 +149,7 @@
 
 % if part=='LyricsmoreFake':
 \lyricmode {
+
 	%% part "A"
 	lives my fav -- 'rite girl, __ un -- a -- ware of the wor -- ried frowns that we
 }
@@ -151,6 +157,7 @@
 
 % if part=='LyricsmoremoreFake':
 \lyricmode {
+
 	%% part "A"
 	one day all too soon __ she'll grow up and she'll leave her dolls and her prince and
 	her sil -- ly old

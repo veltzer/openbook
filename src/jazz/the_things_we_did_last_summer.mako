@@ -101,12 +101,15 @@
 	%% part "A"
 	d8.[ e16 b8. c16] d4. b'8 | b8.[ c16 e,8. g16] a4. b8 | a8.[ g16 d'8. b16] a8.[ g16 fis8. d16] | f!2. r8 e |
 	c4 b' b a | d, d2 a'8. g16 | d4 d~ d8. a'16 g8. fis16 | e2. r8 b |
+
 	%% part "A"
 	d8.[ e16 b8. c16] d4. b'8 | b8.[ c16 e,8. g16] a4. b8 | a8.[ g16 d'8. b16] a8.[ g16 fis8. d16] | f!2. r8 e |
 	c4 b' b a | d, d2 a'8. g16 | d4 d~ d8. a'16 g8. fis16 | g2. r8 gis |
+
 	%% part "B"
 	a8.[ d,16 e8. f!16] g4. gis8 | a8.[ d,16 e8. f!16] g4. dis8 | e8.[ g16 a8. c16] b4 g8 e~ | e2. r8 ais |
 	b8.[ e,16 fis8. g16] a4. ais8 | b8.[ e,16 fis8. g16] a4. g8 | fis[ d d d] g4 e8 a~ | a2. r8 b,8 |
+
 	%% part "A"
 	d8.[ e16 b8. c16] d4. b'8 | b8.[ c16 e,8. g16] a4. b8 | a8.[ g16 d'8. b16] a8.[ g16 fis8. d16] | f!2. r8 e |
 	c4 b' b a | d, d2 b'8. b16 | b4 c~ c8. a16 g8. fis16 | g2. r4 |
@@ -115,18 +118,21 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	The boat rides we would take,
 	the moon -- light on the lake,
 	the way we danced and hummed our fav -- 'rite song.
 	The Things We Did Last Sum -- mer
 	I'll re -- mem -- ber __ all win -- ter long.
+
 	%% part "A"
 	The mid -- way and the fun,
 	the kew -- pie dolls we won,
 	the bell I/you rang to prove that I/you was/were strong;
 	The Things We Did Last Sum -- mer
 	I'll re -- mem -- ber __ all win -- ter long.
+
 	%% part "B"
 	The ear -- ly morn -- ing hike.
 	The rent -- ed tan -- dem bike.
@@ -134,6 +140,7 @@
 	We nev -- er could ex -- plain
 	that sud -- den sum -- mer rain.
 	The looks we got when we got back. __
+
 	%% part "A"
 	The leaves be -- gan to fade
 	like prom -- is -- es we made.

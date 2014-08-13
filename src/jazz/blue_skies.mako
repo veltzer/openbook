@@ -85,13 +85,17 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	Blue Skies smil -- ing at me, noth -- ing but blue skies do I see.
+
 	%% part "A"
 	Blue -- birds sing -- ing a song, noth -- ing but blue -- birds all day long.
+
 	%% part "B"
 	Nev -- er saw the sun shin -- ing so bright, nev -- er saw things go -- ing so right.
 	Not -- ic -- ing the days hur -- ry -- ing by, when you're in love, my how they fly by.
+
 	%% part "A"
 	Blue days all of them gone, noth -- ing but blue skies from now on.
 }

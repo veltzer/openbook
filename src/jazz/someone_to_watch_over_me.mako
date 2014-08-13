@@ -89,9 +89,11 @@
 		{ c1~ | c2 r | }
 		{ aes1 | r4 bes c ees | }
 	}
+
 	%% part "B"
 	g4 aes g aes | bes aes2 g4 | bes aes2 g4 | bes aes2 f4 |
 	aes g2 f4 | aes g2 e4 | c1~ | c2 r |
+
 	%% part "A"
 	r4 aes8 bes c ees f aes | bes bes4 aes8 g2 | aes8 aes4 g8 f2 | g8 g4 f8 ees2 |
 	r4 f ees des | aes'2 aes,8 bes4. | aes1 | r |
@@ -139,6 +141,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
+
 	%% part "A"
 	I'm a lit -- tle lamb who's lost in the wood
 	I know I could, al -- ways be good

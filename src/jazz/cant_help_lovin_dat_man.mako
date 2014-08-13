@@ -69,11 +69,14 @@
 	%% part "A"
 	g'8 g g c~ c4 c | c8 g g g~ g2 | e8 e e a~ a4 a | a8 d, d d~ d2 | g c, |
 	aes8 c c ees~ ees4 d | c1 | R1 |
+
 	%% part "A"
 	g'8 g g c~ c4 c | c8 g g g~ g2 | e8 e e a~ a4 a | a8 d, d d~ d2 | g c, |
 	aes8 c c ees~ ees4 d | c1 | R1 |
+
 	%% part "B"
 	d4 d d d8 ees~ | ees1 | e?4 e e e8 fis~ | fis1 | g4 g g g | a a a a | d2~ d8 c b a | g1 |
+
 	%% part "A"
 	g8 g g c~ c4 c | c8 g g g~ g2 | e8 e e a~ a4 a | a8 d, d d~ d2 | g c |
 	ees8 c d ees~ ees4 d | c1~ | c2. r4 | R1 |

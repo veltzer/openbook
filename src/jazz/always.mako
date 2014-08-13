@@ -91,11 +91,13 @@
 	\key f \major
 
 	\repeat volta 2 {
+
 		%% part "A"
 		c4. d8 f g | a2. | c4 a2~ | a2. |
 		c,4. d8 e f | g2. | a4 f2~ | f2. |
 		c4. d8 f g | a2. | e4. fis8 a b | cis2. |
 		e,4. fis8 gis b | d2. | cis4 a2 | a4 g2 |
+
 		%% part "B"
 		c,4. d8 f g | a2. | c4 a2~ | a2. |
 		d,4. e8 fis a | d2. | es4 d2~ | d2. |
@@ -115,17 +117,20 @@
 
 % if part=='LyricsTBK':
 \lyricmode {
+
 	%% part "A"
 	I'll be lov -- ing you, Al -- ways __
 	With a love that's true, Al -- ways __
 	When the things you've planned
 	Need a help -- ing hand,
 	I will un -- der -- stand, Al -- ways, Al -- ways.
+
 	%% part "B"
 	Days may not be fair, Al -- ways __
 	That's when I'll be there, Al -- ways. __
 	Not for just and hour, Not for just a day,
 	Not for just a year, But Al -- ways. __
+
 	%% part "Volta"
 	Al -- ways. __
 }

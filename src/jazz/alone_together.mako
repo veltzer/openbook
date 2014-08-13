@@ -126,6 +126,7 @@
 % if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
+
 	%% part "A"
 	A -- lone To -- geth -- er; __
 	be -- yond the crowd. __
@@ -141,6 +142,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
+
 	%% part "A"
 	A -- lone To -- geth -- er; __
 	the blind -- ing rain __

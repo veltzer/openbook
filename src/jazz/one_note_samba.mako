@@ -118,6 +118,7 @@
 % if part=='LyricsReal':
 %% these are lyrics copied from the internet and adjusted for real book
 \lyricmode {
+
 	%% part "A"
 	This is just a lit -- __ tle sam -- __ ba
 	built up -- on a sin -- __ gle note. __
@@ -127,11 +128,13 @@
 	of the one we've just __ been through __
 	as I'm bound to be __ the un -- __ a -- void -- __ a -- ble
 	con -- se -- quence __ of you. __
+
 	%% part "B"
 	There's so man -- y peo -- ple who can talk and talk and talk
 	and just say no -- thing or near -- ly no -- thing
 	I have used up all the scale I know and at the end I've come to no -- thing
 	or near -- ly no -- thing
+
 	%% part "A"
 	So I come back to my first __ note as I must come back __ to you. __
 	I will pour in -- to __ that one __ note all the love I feel __ for you __

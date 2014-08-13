@@ -120,6 +120,7 @@
 	\repeat volta 2 {
 		r4 c' d2 | r4 a' g2 | r4 e d2 | r4 a g2 |
 	}
+
 	%% part "A"
 	%%\mark \markup { \musicglyph #"scripts.segno" }
 	\repeat volta 2 {
@@ -138,11 +139,13 @@
 			r1 |
 		}
 	}
+
 	%% part "B"
 	c2 c | c c | c4 ees des bes~ | bes1 |
 	bes4 c aes g~ | g2 aes | f'1~ | f2. r4 |
 	ees2 ees | ees ees | ees4 f des c~ | c1 |
 	bes4 c2 aes4 | g2 aes | c1~ | c2. r4 |
+
 	%% part "C"
 	c1 | f, | g4 a bes a | g1 |
 	a4 bes c bes | a1 | bes4 c d c | bes c d e |
@@ -155,8 +158,10 @@
 
 % if part=='LyricsNewreal':
 \lyricmode {
+
 	%% part "Instr."
 	_ _ _ _ _ _ _ _
+
 	%% part "A"
 	Some -- day when I'm aw -- fly low,
 	When the world is cold,
@@ -164,11 +169,13 @@
 	of you,
 	And the way you look to -- night.
 	Oh, but you're
+
 	%% part "B"
 	With each word your ten -- der -- ness grows, __
 	tear -- ing my fear __ a -- part, __
 	And that laugh that wrin -- kles your nose __
 	touch -- es my fool -- ish heart. __
+
 	%% part "C"
 	Love -- ly, nev -- er, nev -- er change,
 	Keep that breath -- less charm,
@@ -180,8 +187,10 @@
 
 % if part=='LyricsmoreNewreal':
 \lyricmode {
+
 	%% part "Instr."
 	_ _ _ _ _ _ _ _
+
 	%% part "A"
 	Love -- ly, with your smile so warm,
 	And your cheek so soft,

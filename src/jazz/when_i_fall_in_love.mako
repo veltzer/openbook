@@ -104,6 +104,7 @@
 	\key ees \major
 
 	\repeat volta 2 {
+
 		%% part "A"
 		bes4 ees aes g | ees1 | bes4 ees aes g | ees f2. |
 		bes,4 ees c' bes | aes2. g4 | f1~ | f2. g8 aes |
@@ -129,27 +130,32 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	When I Fall In Love
 	it will be for -- ev -- er,
 	or I'll nev -- er
 	fall in love. __
+
 	%% part "B"
 	in a rest -- less world like this is,
 	love is end -- ed be -- fore it's be -- gun,
 	and too man -- y moon -- light kiss -- es
 	seem to cool in the warmth of the sun.
+
 	%% part "A"
 	When I give my heart
 	it will be com -- plete -- ly
 	or I'll nev -- er
 	give my heart. __
+
 	%% part "C"
 	And the mo -- ment I can feel that
 	you feel that way too,
 	is When I Fall In
 	Love with you. __
-	%% volta
+
+	%% part "Volta"
 	you. __
 }
 % endif

@@ -116,19 +116,23 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	Stran -- gers In The Night __ ex -- chang -- ing glanc -- es
 	won -- d'ring in the night __ what were the chanc -- es
 	we'd be shar -- ing love __ be -- fore the night was through. __
+
 	%% part "A'"
 	Some -- thing in your eyes __ was so in -- vit -- ing,
 	some -- thing in your smile __ was so ex -- cit -- ing,
 	some -- thing in my heart __ told me I must have you. __
+
 	%% part "B"
 	Stran -- gers In The Night, __ two lone -- ly peo -- ple we were
 	Stran -- gers In The Night __ up tp the mo -- ment when we
 	said our first hel -- lo. Lit -- tle did we know
 	love was just a glance a -- way, a warm em -- brac -- ing dance a -- way and
+
 	%% part "A"
 	ev -- er since that night __ we've been to -- geth -- er.
 	Lov -- ers at first sight, __ in love for -- ev -- er.

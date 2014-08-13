@@ -101,6 +101,7 @@
 	\tempo "Adagio" 4 = 76
 
 	\repeat volta 2 {
+
 		%% part "A"
 		d8 ees g bes d c bes g | bes a aes bes f2 | d8 ees g bes d c bes g | bes a aes bes f4. g8 |
 		bes4 g8 bes b e, ees4 | c' aes8 f d'4. bes8 |
@@ -112,9 +113,11 @@
 			ees'1~ | ees |
 		}
 	}
+
 	%% part "B"
 	d4 d8 d d4 e8 bes | \times 2/3 { b4 b b } b c8 d | a4 a8 a a4 b8 c | d2. e,4 |
 	b'8 a g a bes c d ees | f2 r8 d c bes | ees2 r8 c bes a | bes1 |
+
 	%% part "A"
 	d,8 ees g bes d c bes g | bes a aes bes f2 | d8 ees g bes d c bes g | bes a aes bes f4. g8 |
 	bes4 g8 bes b e, ees4 | c' aes8 f d'4. bes8 | ees1~ | ees2. r4 |
@@ -123,18 +126,22 @@
 
 % if part=='LyricsReal':
 \lyricmode {
+
 	%% part "A"
 	_ If you could see me now you'd know how blue I've been.
 	_ One look is all you'd need to see the mood I'm in.
 	Per -- haps then you'd re -- al -- ize
 	I'm still in love with you. __
-	%% Volta
+
+	%% part "Volta"
 	_
+
 	%% part "B"
 	You'll happen my way on some mem -- 'ra -- ble day
 	and the month will be May for a while.
 	I'll try to smile but can I play the part with -- out my heart
 	be -- hind the smile?
+
 	%% part "B"
 	_ The way I feel for you I nev -- er could dis -- guise.
 	_ The look of love is writ -- ten plain -- ly in my eyes.
@@ -145,6 +152,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
+
 	%% part "A"
 	_ If you could see me now you'd find me be -- ing brave,
 	_ and try -- in aw -- f'lly hard to make my tears be -- have.

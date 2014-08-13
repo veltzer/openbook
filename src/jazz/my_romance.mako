@@ -107,12 +107,15 @@
 	%% part "A"
 	g2. e8 f | g4 a b c | c2. b8 a | g2. c,8 d |
 	e2. c8 d | e4 f g a | a2. g8 f | e2. g4 |
+
 	%% part "B"
 	c,2. c'4 | g2. g4 | c,2. c'4 | g2. c4 |
 	b2. a4 | g2. c4 | b2. a4 | g2. e8 f |
+
 	%% part "A"
 	g2. e8 f | g4 a b c | c2. b8 a | g2. c,8 d |
 	e2. c8 d | e4 f g a | a2. g8 f | e2. f8 g |
+
 	%% part "C"
 	a2. f8 g | a4 b c d | e e e e | c2. c8 d |
 	e2. c8 d | e4 c4 a4 f4 | c'1~ | c2. r4 |
@@ -121,15 +124,19 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	My Ro -- mance does -- n't have to have a moon in the sky,
 	My Ro -- mance does -- n't need a blue la -- goon stand -- ing by;
+
 	%% part "B"
 	no month of May, no twin -- kling stars,
 	no hide a -- way, no soft gui -- tars.
+
 	%% part "A"
 	My Ro -- mance does -- n't need a cas -- tle ris -- ing in Spain,
 	nor a dance to a con -- stant -- ly sur -- pris -- ing re -- frain.
+
 	%% part "C"
 	Wide a -- wake I can make my most fan -- tas -- tic dreams come true;
 	My Ro -- mance does -- n't need a thing but you. __

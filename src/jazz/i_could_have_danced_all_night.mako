@@ -115,16 +115,19 @@
 	b1~ | b2 a | a1~ | a2 g |
 	e1~ | e2 f | g1~ | g2 a |
 	d,1~ | d~ | d | r4 d f a |
+
 	%% part "B"
 	d1~ | d2 cis | cis1~ | cis4 c, f a |
 	c1~ | c2 b | b1~ | b2 a |
 	f1~ | f2 g | a1~ | a2 a |
 	e1~ | e~ | e | r4 e fis gis |
+
 	%% part "C"
 	b1~ | b4 e, fis gis | a1~ | a2 b |
 	gis1 | gis~ | gis~ | gis4 g a b |
 	d1~ | d2 g, | a1 | c |
 	b1~ | b~ | b4 r c2 | c c |
+
 	%% part "D"
 	c1~ | c2 b | b1~ | b4 e, g b |
 	d1~ | d2 c | c1~ | c4 f, a c |
@@ -135,18 +138,22 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	I Could Have Danced __ All Night __
 	I Could Have Danced __ All Night! __
 	and still __ have begged __ for more. __
+
 	%% part "B"
 	I could have spread __ my wings __
 	and done a thou -- sand things __
 	I've nev -- er done __ be -- fore. __
+
 	%% part "C"
 	I'll nev -- er know __ what made it so __
 	ex -- cit -- ing, __
 	why all at once __ my heart took flight. __
+
 	%% part "D"
 	I on -- ly know __ when he __
 	be -- gan to dance __ with me. __

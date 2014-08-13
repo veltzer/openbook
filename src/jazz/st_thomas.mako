@@ -86,12 +86,16 @@
 	\key c \major
 
 	\repeat volta 2 {
+
 		%% part "A"
 		r4 g'8 c r b r a | g4 a e f | g c b c | r1 |
+
 		%% part "A"
 		r4 g8 c r b r a | g4 a e f | g c b c | r1 |
+
 		%% part "B"
 		e2 f4. g8 | r1 | f2 e4. d8 | r1 |
+
 		%% part "C"
 		e2 d | c a | g4 c b c | r1 |
 	}

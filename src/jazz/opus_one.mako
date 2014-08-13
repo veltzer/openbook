@@ -103,12 +103,15 @@
 	%% part "A"
 	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g fis4 e4. d8 | e g fis e~ e4. d8 |
 	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g fis4 e8 g fis4 | e8 g fis e~ e4. d8 |
+
 	%% part "A"
 	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g fis4 e4. d8 | e g fis e~ e4. d8 |
 	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g e d e g e g~ | g4. b8~ b d b g |
+
 	%% part "B"
 	f! bes4 r8 bes4. g8 | c4 c c8 d4 bes8~ | bes4. g8~ g4. g8~ | g4. g8~ g4. g8 |
 	aes des4 r8 des4. bes8 | ees4 ees ees8 f4 des8~ | des2~ des4. des8~ | des8 d4.~ d4. d,8 |
+
 	%% part "A"
 	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g fis4 e4. d8 | e g fis e~ e4. d8 |
 	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g e d e g e g~ | g2~ g8 r r4 |
@@ -117,20 +120,24 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	I'm wrack -- in' my brain, to think of a name, __
 	to give to this tune, so Per -- ry can croon, __
 	and may -- be ol' Bing will give it a fling. __
 	And that -- 'll start ev -- 'ry -- one hum -- min' the thing. __
+
 	%% part "A"
 	The mel -- o -- dy's dumb, re -- peat an' re -- peat. __
 	But if you can swing, it's got a good beat. __
 	And that's the main thing, to make with the feet. __
 	'Cause ev -- 'ry -- one is swing -- in' to day. __
+
 	%% part "B"
 	So, __ I'll call it O -- pus One! It's not for Sam -- my Kaye. __
 	Hey! __ hey! __ hey! __ It's O -- pus One! It's got to swing,
 	not sway. __ May -- be, __
+
 	%% part "A"
 	if Mis -- ter Les Brown could make it re -- nown, __
 	and Ray An -- tho -- ny could swing it for me. __

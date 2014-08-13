@@ -115,6 +115,7 @@
 	a2~ \times 2/3 { a4 gis a } | c8 b4 bes8~ bes a4. | a4. g8~ g2~ | g1 |
 	g~ | g8 a4 g a g8~ | g1~ | g8 a4 g a g8~ |
 	g2~ \times 2/3 { g4 fis g } | bes4. a8 \times 2/3 { aes4 g g~ } | g4. f8~ f2~ | f1 |
+
 	%% part "B"
 	f1~ | f8 g4 f g f8~ | f1~ | f8 g4 f g a8~ |
 	a2. f4 | d e d e | f2 f~ | f1 |
@@ -126,6 +127,7 @@
 % if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
+
 	%% part "A"
 	How __ In -- sen -- si -- tive __ I must have seemed __ when she told me that __ she loved me. __
 	How __ un -- moved and cold __ I must have seemed __ when she told me so sin -- cere -- __ ly. __
@@ -136,6 +138,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
+
 	%% part "B"
 	Now, __ she's gone a -- way __ and I'm a -- lone __ with the mem -- 'ry of __ her last look. __
 	Vague __ dra -- wn and sad, __ I see it still, __ all her heart- break in that last __ look. __
@@ -187,11 +190,13 @@
 	\key d \minor
 
 	\repeat volta 2 {
+
 		%% part "A"
 		a'1~ | a4 bes8 a~ a bes4 a8~ | a1~ | a4 bes8 a~ a bes4 a8~ |
 		a2~ a8 gis4 a8 | c b4 bes8~ bes a4 a8~ | a4. g8~ g2~ | g2~ g4. g8~ |
 		g1~ | g4 a8 g~ g a4 g8~ | g1~ | g4 a8 g~ g a4 g8~ |
 		g2 r8 fis4 g8 | bes a4 gis8~ gis g4 g8~ | g4. f8~ f2~ | f~ f4. f8~ |
+
 		%% part "B"
 		f1~ | f4 g8 f~ f g4 f8~ | f1~ | f4 g8 f~ f g4 a8~ |
 		a2. f4 | d e8 d~ d e4 f8~ | f2 f~ | f~ f4. f8~ |
@@ -211,18 +216,21 @@
 % if part=='LyricsFake':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
+
 	%% part "A"
 	How __ In -- sen -- __ si -- tive __ I must __ have seemed __ when she told me that __ she loved __ me. __
 	How __ un -- moved __ and cold __ I must __ have seemed __ when she told me so __ sin -- cere -- __ ly. __
 	Why, __ she must __ have asked, __ did I __ just turn __ and stare in i -- __ cy si -- lence? __
 	What __ was I __ to say? __ What can __ you say __ when a love __ af -- fair __ is o -- __ ver? __
-	%% Voltas
+
+	%% part "Volta"
 	_ af -- fair __ is o -- __ ver? __
 }
 % endif
 
 % if part=='LyricsmoreFake':
 \lyricmode {
+
 	%% part "B"
 	Now, __ she's gone __ a -- way __ and I'm __ a -- lone __ with the mem -- 'ry of __ her last __ look. __
 	Vague __ _ drawn __ and sad, __ I see __ it still, __ all her heart- break in __ that last __ look. __

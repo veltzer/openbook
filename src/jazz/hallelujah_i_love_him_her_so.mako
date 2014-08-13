@@ -112,17 +112,20 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	_ Let me tell you 'bout a boy I know. __
 	He is my ba -- by and he lives next door __ _
 	Ev -- 'ry morn -- ing 'fore the sun comes up __
 	he brings my cof -- fee in my fav -- 'rite cup __
 	That's why I know, __ _ yes, I know, __ _ Hal -- le -- lu -- jah, I just love him so. __
+
 	%% part "B"
 	Now if I call him on the tel -- e -- phone,
 	and tell him that I'm all a -- lone, __
 	by the time I count from one to four, __
 	I hear him on my door. __ _
+
 	%% part "A"
 	In the eve -- ning when the sun goes down, __
 	when there is no -- bod -- y else a -- round __ _

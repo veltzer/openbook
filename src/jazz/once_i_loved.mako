@@ -107,6 +107,7 @@
 		{ g8 fis4 fis8~ fis2~ | fis r }
 		{ g8 fis4 a8~ a2 | g8 f!4 a8~ a g4 e8~ | }
 	}
+
 	%% part "B"
 	e1 | g2~ g8 f4 d8~ | d1~ | d2 \times 2/3 { r4 d e } |
 	\times 2/3 { f f e~ } \times 2/3 { e g ges } | f2~ f8 f4 des8 | e4 d8 d~ d2~ |

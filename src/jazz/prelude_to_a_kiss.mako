@@ -64,16 +64,20 @@
 	\tempo "Andante Moderato" 4 = 88
 	\time 4/4
 	\key c \major
+
 	%% part "A"
 	b'4 bes a gis | g a8 e~ \times 2/3 { e4 f g } | gis4 g fis f | e f8 d~ d2 |
 	\times 2/3 { g4 g g } \times 2/3 { g gis a } | c,4 d'8 b~ b2 | d,8 e f gis~ gis4 gis8 a~ | a2. r4 |
+
 	%% part "A"
 	b4 bes a gis | g a8 e~ \times 2/3 { e4 f g } | gis4 g fis f | e f8 d~ d2 |
 	\times 2/3 { g4 g g } \times 2/3 { g gis a } | c,4 d'8 b~ b2 | d,8 e f gis~ gis4 a8 c,~ | c2. r4 |
+
 	%% part "B"
 	r4 ais'8 b dis, e dis' cis | b a c,2 cis4 | r fis8 fis fis4 e |
 	r4 a8 a a2 | r4 ais8 b dis, e dis' cis | b a c,2 cis4 | e8 e4 e8~ e4 e8 e |
 	g4 gis a ais |
+
 	%% part "A"
 	b4 bes a gis | g a8 e~ \times 2/3 { e4 f g } | gis4 g fis f | e f8 d~ d4 d |
 	\times 2/3 { g4 g g } \times 2/3 { g gis a } | c,4 d'8 b~ b2 | d,8 e f gis~ gis4 a8 c,~ | c1 |

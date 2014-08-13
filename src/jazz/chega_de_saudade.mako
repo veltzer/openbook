@@ -113,6 +113,7 @@
 	f2 bes, | cis f4 e~ | e8 d4 f8~ f e d4 | a1 |
 	f'2 a, | b!2. d4 | c2 e~ | e4 e d c |
 	c2 bes~ | bes4 f' e d | d cis e8 cis4 bes8~ | bes2. r4 |
+
 	%% part "A'"
 	f'2 a, | d2. f4 | e2 b! | d2. e4 |
 	f2 bes, | cis f4 e~ | e8 d4 cis8~ cis d ees4~ | ees d fis a |
@@ -120,6 +121,7 @@
 	f8 d4 b!8~ b d4 f8~ | f cis4 bes8~ bes f'4 d8~ | d1 | r |
 
 	\key d \major
+
 	%% part "B"
 	fis2. a4 | g2. dis4 | fis e dis8 e4 b'8~ | b4 g e b |
 	d4. cis8~ cis2~ | cis4 e cis8 a4 b8~ | b1 | a2. cis4 |
@@ -137,6 +139,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	No More Blues,
 	I'm goin' back home.
@@ -145,6 +148,7 @@
 	Home is where the heart is, __
 	the fun -- ny part is __
 	my heart's been right there all a -- long. __
+
 	%% part "A'"
 	No more tears and no more sighs,
 	and no more fears, I'll say __ no more __ good -- byes. __
@@ -152,6 +156,7 @@
 	I swear __ I'm gon -- __ na re -- fuse,
 	I'm gon -- na set -- tle down __
 	and there'll __ be No __ More Blues. __
+
 	%% part "B"
 	Ev -- 'ry day while I am far a -- way __
 	my thoughts turn home -- ward, __
@@ -160,6 +165,7 @@
 	in search of hap -- pi -- ness, __
 	but all my hap -- pi -- ness I found __
 	was in my home -- __ town. __
+
 	%% part "A''"
 	No More Blues, I'm goin' back home.
 	No, no more dues, I'm through with all __

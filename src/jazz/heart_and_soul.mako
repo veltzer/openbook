@@ -71,12 +71,15 @@
 	%% part "A"
 	f4 f f2~ | f8 f e d e f g4 | a a a2~ | a8 a g f g a bes4 |
 	c2 f, | r8 d' c bes a4 g | f2~ f8 g a bes | c4 bes8 a g2 |
+
 	%% part "A"
 	f4 f f2~ | f8 f e d e f g4 | a a a2~ | a8 a g f g a bes4 |
 	c2 f, | r8 d' c bes a4 g | f2~ f8 g a bes | c4 f,2. |
+
 	%% part "B"
 	r8 d' c bes a4. g8 | fis2 g | e f | d e |
 	r8 d' c bes a4. g8 | fis2 g | e f | d e4. c8 |
+
 	%% part "A"
 	f4 f f2~ | f8 f e d e f g4 | a a a2~ | a8 a g f g a bes4 |
 	c2 f, | r8 d' c bes a4 g | a1 | r8 bes a g f4 e | f1~ | f2. r4 |
@@ -86,15 +89,19 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	Heart and soul, __ I fell in love with you Heart and Soul, __ the way a fool would do,
 	Mad -- ly, be -- case you held me tight __ and stole a kiss in the night.
+
 	%% part "A"
 	Heart and soul, __ I begged to be a -- dored; Lost con -- trol, __ and tum -- bled o -- ver -- board
 	Glad -- ly, that mag -- ic night we kissed. __ there in the moon -- mist.
+
 	%% part "B"
 	Oh! but your lips were thrill -- ing, much too thirll -- ing. Nev -- er be -- fore were
 	mine so strange -- ly will -- ing. But
+
 	%% part "A"
 	now I see __ what one em -- brace can do. Look at me, __ it's got me love -- ing you, Mad -- ly
 	that lit -- tle kiss your stole Heald all my heart and soul. __

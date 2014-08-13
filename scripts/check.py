@@ -6,8 +6,14 @@ This script checks if we have \myEndLine in voice
 
 import glob # for glob
 
+##############
+# parameters #
+##############
+debug=False
+
 def check_file(file):
 	inside=False
+	prev=None
 	for line in open(file, 'r'):
 		line=line.rstrip('\n')
 		if line.startswith('% if part==\'Voice'):
@@ -17,7 +23,11 @@ def check_file(file):
 		if inside:
 			if line.find('\myEndLine')!=-1:
 				print(line)
+		if line.find('%% part')!=-1 and prev!='':
+			print(line)
+		prev=line
 
 for file in glob.glob('src/jazz/*.mako'):
-	#print('doing [{0}]'.format(file))
+	if debug:
+		print('doing [{0}]'.format(file))
 	check_file(file)

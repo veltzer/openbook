@@ -95,11 +95,13 @@
 % if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
+
 	%% part "A"
 	The song a rob -- in sings,
 	Through years of end -- less springs,
 	The mur -- mur of a brook at even -- ing tides.
 	That rip -- ples through a nook where two lov -- ers hide.
+
 	%% part "B"
 	That great sym -- pho -- nic theme,
 	That's Stel -- la by star -- light,

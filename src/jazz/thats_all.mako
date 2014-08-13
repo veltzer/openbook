@@ -101,6 +101,7 @@
 	\key c \major
 
 	\partial 4 e8 f |
+
 	%% part "A"
 	\repeat volta 2 {
 		g b g e g b g e | g g~ g2 e8 f | g b g e g b g e | g2. a8 b |
@@ -113,9 +114,11 @@
 			g2. e4 | c2. c8 c' |
 		}
 	}
+
 	%% part "B"
 	a4 c,8 c' a4 c,8 c' | a4 a2 c,8 c' | a4 c,8 c' a4 c,8 c' | a2. d,8 d' |
 	b4 d,8 d' b4 d,8 d' | b4 b2 d,8 d' | b4 d,8 d' b4 d,8 b' | g2. e8 f |
+
 	%% part "A"
 	g b g e g b g e | g g~ g2 e8 f | g b g e g b g e | g2. a8 b |
 	c e c a c4. a8 | c e c a c4. a8 | g2. e4 | c1 |
@@ -124,17 +127,20 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	I can on -- ly give you love that lasts for -- ev -- er, __
 	and the prom -- ise to be near each time you call;
 	and the on -- ly heart I own, for you and you a -- lone, That's All, That's All. I can
 	_ _ _ _ _
 	%%All, That's All.
+
 	%% part "B"
 	those I am sure who have told you
 	they would give you the world for a toy.
 	All I have are these arms to en -- fold you
 	and a love time can nev -- er de -- stroy.
+
 	%% part "A"
 	If you're won -- d'ring what I'm ask -- ing in re -- turn dear, __
 	you'll be glad to know that my de -- mands are small:
@@ -146,6 +152,7 @@
 
 % if part=='LyricsmoreFake':
 \lyricmode {
+
 	%% part "A"
 	_ _
 	on -ly give you coun -- try walks in spring -- time, __

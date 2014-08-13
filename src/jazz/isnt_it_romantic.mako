@@ -98,20 +98,22 @@
 	\time 4/4
 	\key ees \major
 
-	%% partial
 	\partial 2 d8 ees c d |
 
 	\repeat volta 2 {
+
 		%% part "A"
 		ees4 ees2. | d8 ees c d ees4 f | g4. g8 bes4. bes8 | g2 d8 ees c d |
 		ees4 ees2. | d8 ees c d ees4 f | g4. g8 bes4. bes8 | des1 |
 	} \alternative {
 		{
+
 			%% part "B"
 			c | d8 c bes aes g4 f | ees4. ees8 g4. g8 | ees1 |
 			c' | d8 c bes aes g4 f | ees4. ees8 c'4. c8 | des,2 d8 ees c d |
 		}
 		{
+
 			%% part "C"
 			c'1 | d8 c bes aes g4 f | ees4. ees8 g4. g8 | c4. c8 ees4. ees8 |
 			f4 ees bes2~ | bes d8 ees c d | ees1~ | ees2 \mark \markup { \italic { Fine } } <\parenthesize d,>8 <\parenthesize ees> <\parenthesize c> <\parenthesize d> |
@@ -123,14 +125,18 @@
 % if part=='LyricsReal':
 %% this version of the lyrics is from the Hal Leonard book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
+
 	%% part "A"
 	Is -- n't It Ro -- man -- tic? Mu -- sic in the night, a dream that can be heard.
 	Is -- n't It Ro -- man -- tic? Mov -- ing shad -- ows write the old -- est mag -- ic word.
+
 	%% part "B"
 	I hear the breez -- es play -- ing in the trees a -- bove.
 	While all the world is say -- ing you were meant for love.
-	%% Forward
+
+	%% part "Forward"
 	Is -- n't It Ro --
+
 	%% part "C"
 	Sweet sym -- bols in the moon -- light
 	Do you mean that I will fall in love per -- chance? __ Is -- n't it ro -- mance? __
@@ -140,6 +146,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
+
 	%% part "A"
 	Is -- n't It Ro -- man -- tic? Mere -- ly to be young on such a night as this?
 	Is -- n't It Ro -- man -- tic? Ev -- 'ry note that's sung is like a lov -- er's kiss.

@@ -99,16 +99,17 @@
 	\key c \major
 
 	\repeat volta 2 {
-	%% part "A"
-	c'4 b a8 g4. | f g8 a4 c | b a g8 f4. | e1 |
-	a4 g f8 e4. | d4. e8 f4 a | gis f e8 d4. | c2. cis4 |
-	d8 a'4 a8~ a2~ | a4 c2 b4 | g1~ | g2. b,4 |
-	c8 f4 f8~ f2~ | f4 a2 g4 | f2 e2~ | e1 |
 
-	%% part "B"
-	c'4 b a8 g4. | f g8 a4 c | b a g8 f4. | e1 |
-	a4 g f8 e4. | d4 e4 f a | gis f e8 d4. | c2. cis4 |
-	d8 a'4 a8~ a2~ | a4 c2 b4 |
+		%% part "A"
+		c'4 b a8 g4. | f g8 a4 c | b a g8 f4. | e1 |
+		a4 g f8 e4. | d4. e8 f4 a | gis f e8 d4. | c2. cis4 |
+		d8 a'4 a8~ a2~ | a4 c2 b4 | g1~ | g2. b,4 |
+		c8 f4 f8~ f2~ | f4 a2 g4 | f2 e2~ | e1 |
+
+		%% part "B"
+		c'4 b a8 g4. | f g8 a4 c | b a g8 f4. | e1 |
+		a4 g f8 e4. | d4 e4 f a | gis f e8 d4. | c2. cis4 |
+		d8 a'4 a8~ a2~ | a4 c2 b4 |
 	} \alternative {
 		{
 			g1~ | g2. gis4 |
@@ -124,6 +125,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	Fly Me To The Moon, and let me play a -- mong the stars;
 	let me see what spring is like on Ju -- pi -- ter and Mars.
@@ -136,7 +138,7 @@
 	In oth -- er words, __ please be true! __
 	In oth -- er words, __ I love you!
 
-	%% Voltas
+	%% part "Volta"
 	true! __ In oth -- er words, __ I love you! __
 }
 % endif

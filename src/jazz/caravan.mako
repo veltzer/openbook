@@ -130,15 +130,18 @@
 % if part=='LyricsInet':
 %% these lyrics are from the Internet and adjusted for this tune...
 \lyricmode {
+
 	%% part "A"
 	Night __ and stars ab -- ove that shine so bright __
 	The mys -- t'ry of their fa -- ding light __
 	That shines u -- pon our Ca -- ra -- van __
+
 	%% part "B"
 	This is so exciting, __ _ _ _
 	you are so inviting __ _ _ _ _
 	Res -- ting in my_arms __
 	As I thrill to the magic charms __ _ _
+
 	%% part "A"
 	Of_you be -- side me here, be -- neath the blue __
 	My dream of love is com -- ing true __
@@ -148,6 +151,7 @@
 
 % if part=='LyricsmoreInet':
 \lyricmode {
+
 	%% part "A"
 	Sleep __ u -- pon my shou -- lder as we creep __
 	Ac -- ross the sand so I may keep __
@@ -158,15 +162,18 @@
 % if part=='LyricsReal':
 %% these lyrics are from the Ella Firtgerald performance and adjusted for this tune...
 \lyricmode {
+
 	%% part "A"
 	Night __ and stars that shine ab -- ove so bright __
 	The ma -- gic of their fa -- ding light __
 	That shines u -- pon our Ca -- ra -- van __
+
 	%% part "B"
 	You are so exciting, __ _ _ _
 	This is so inviting __ _ _ _ _
 	Res -- ting in my_arms __
 	As I thrill to the magic charms __ _ _
+
 	%% part "A"
 	Of_you be -- side me here, be -- neath the blue __
 	My dream of love is com -- ing true __
@@ -176,6 +183,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
+
 	%% part "A"
 	Sleep __ u -- pon my shou -- lder as we creep __
 	Ac -- ross the sand so I may keep __

@@ -88,6 +88,7 @@
 	f1~ | f4 f a f8 ees~ | ees1~ | ees2 r4 d |
 	cis d c'2~ | c4 bes f g | a4. a8 a a4 a8~ | a4 r \times 2/3 { a a a } |
 	a4. gis8 gis2~ | gis4 e dis e | g1~ | g4 c, bes' c8 a~ |
+
 	%% part "B"
 	a1~ | a4 c, bes' a | a4 g8 e~ e2~ | e4 a, g' a8 f~ |
 	f1~ | f4 f a f8 ees~ | ees1~ | ees2 r4 d |
@@ -100,6 +101,7 @@
 %% these are lyrics from the internet adjusted by me to the real book tune
 %% the adjustment is pretty horrible
 \lyricmode {
+
 	%% part "A"
 	I'll Close My Eyes __ __
 	To eve -- ry -- one but you __ __
@@ -177,6 +179,7 @@
 
 % if part=='LyricsMy':
 \lyricmode {
+
 	%% part "A"
 	I'll Close My Eyes __
 	To eve -- ry -- one but you __

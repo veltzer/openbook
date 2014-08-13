@@ -90,7 +90,6 @@
 	\time 4/4
 	\key g \major
 
-	%% partial
 	\partial 4 b'4 |
 
 	%% part "A"
@@ -110,11 +109,13 @@
 % if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
+
 	%% part "A"
 	Just friends, __ lov -- ers no more __
 	Just friends, __ but not like be -- fore. __
 	To think of what we've been and not to kiss a -- gain seems like
 	pre -- tend -- ing __ it is -- n't the end -- ing. __
+
 	%% part "B"
 	Two friends __ drift -- ing a -- part, __
 	Two friends __ but one brok -- en heart. __
