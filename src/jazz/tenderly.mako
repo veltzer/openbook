@@ -101,17 +101,20 @@
 	\partial 4. bes'8 c ees |
 
 	%% part "A"
-	d4. bes8 c ees | d2 bes8 ges | f2.~ | f4 r8 ees f aes | \myEndLine
-	g4. ees8 f aes | g2 ees8 ces | bes2.~ | bes4 r bes | \myEndLine
+	d4. bes8 c ees | d2 bes8 ges | f2.~ | f4 r8 ees f aes |
+	g4. ees8 f aes | g2 ees8 ces | bes2.~ | bes4 r bes |
+
 	%% part "B"
-	ces2 bes'4 | g2 bes,4 | ces ees bes' | g2 f4 | \myEndLine
-	ees g f' | d2 f,4 | bes2.~ | bes4 r8 bes8 c ees | \myEndLine
+	ces2 bes'4 | g2 bes,4 | ces ees bes' | g2 f4 |
+	ees g f' | d2 f,4 | bes2.~ | bes4 r8 bes8 c ees |
+
 	%% part "A"
-	d4. bes8 c ees | d2 bes8 ges | f2.~ | f4 r8 ees f aes | \myEndLine
-	g4. ees8 f aes | g2 ees8 ces | bes2.~ | bes4 r bes | \myEndLine
+	d4. bes8 c ees | d2 bes8 ges | f2.~ | f4 r8 ees f aes |
+	g4. ees8 f aes | g2 ees8 ces | bes2.~ | bes4 r bes |
+
 	%% part "C"
-	ces ees bes' | g2 f4 | ees g f' | d4. ees8 c d | \myEndLine
-	bes4. c8 aes bes | g4. f8 aes d, | ees2.~ | ees4. r8 r4 | \myEndLine
+	ces ees bes' | g2 f4 | ees g f' | d4. ees8 c d |
+	bes4. c8 aes bes | g4. f8 aes d, | ees2.~ | ees4. r8 r4 |
 }
 % endif
 

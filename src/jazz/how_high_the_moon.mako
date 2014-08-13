@@ -195,15 +195,15 @@
 	\partial 2. d4 g a |
 
 	%% part "A"
-	a2 b~ | b4 d, g a | bes1~ | bes4 c, f! g | \myEndLine
-	g2 a~ | a4 c, f! g | aes1~ | aes4 d, ees! f! | \myEndLine
-	g g g g | g g8 a~ a g a4 | bes1~ | bes4. a8~ a g a4 | \myEndLine
-	b!1~ | b4 a b c | d d d d | d8 r d,4 g a | \myEndLine
+	a2 b~ | b4 d, g a | bes1~ | bes4 c, f! g |
+	g2 a~ | a4 c, f! g | aes1~ | aes4 d, ees! f! |
+	g g g g | g g8 a~ a g a4 | bes1~ | bes4. a8~ a g a4 |
+	b!1~ | b4 a b c | d d d d | d8 r d,4 g a |
 	%% part "B"
-	a2 b~ | b4 d, g a | bes1~ | bes4 c, f! g | \myEndLine
-	g2 a~ | a4 c, f! g | aes1~ | aes4 d, ees! f! | \myEndLine
-	g g g g | g g8 a~ a g a4 | b1~ | b4 a b c | \myEndLine
-	d d d d | d d, g a | g1~ | g | \myEndLine
+	a2 b~ | b4 d, g a | bes1~ | bes4 c, f! g |
+	g2 a~ | a4 c, f! g | aes1~ | aes4 d, ees! f! |
+	g g g g | g g8 a~ a g a4 | b1~ | b4 a b c |
+	d d d d | d d, g a | g1~ | g |
 }
 % endif
 

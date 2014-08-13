@@ -109,29 +109,29 @@
 	\key f \major
 
 	%% part "A"
-	f'2 a, | d2. f4 | e2 b! | d2. e4 | \myEndLine
-	f2 bes, | cis f4 e~ | e8 d4 f8~ f e d4 | a1 | \myEndLine
-	f'2 a, | b!2. d4 | c2 e~ | e4 e d c | \myEndLine
-	c2 bes~ | bes4 f' e d | d cis e8 cis4 bes8~ | bes2. r4 | \myEndLine
+	f'2 a, | d2. f4 | e2 b! | d2. e4 |
+	f2 bes, | cis f4 e~ | e8 d4 f8~ f e d4 | a1 |
+	f'2 a, | b!2. d4 | c2 e~ | e4 e d c |
+	c2 bes~ | bes4 f' e d | d cis e8 cis4 bes8~ | bes2. r4 |
 	%% part "A'"
-	f'2 a, | d2. f4 | e2 b! | d2. e4 | \myEndLine
-	f2 bes, | cis f4 e~ | e8 d4 cis8~ cis d ees4~ | ees d fis a | \myEndLine
-	g2 bes | cis,~ cis8 a'4 g8~ | g f4 a8~ a g f4 | e4. d8 cis4 d | \myEndLine
-	f8 d4 b!8~ b d4 f8~ | f cis4 bes8~ bes f'4 d8~ | d1 | r | \myEndLine
+	f'2 a, | d2. f4 | e2 b! | d2. e4 |
+	f2 bes, | cis f4 e~ | e8 d4 cis8~ cis d ees4~ | ees d fis a |
+	g2 bes | cis,~ cis8 a'4 g8~ | g f4 a8~ a g f4 | e4. d8 cis4 d |
+	f8 d4 b!8~ b d4 f8~ | f cis4 bes8~ bes f'4 d8~ | d1 | r |
 
 	\key d \major
 	%% part "B"
-	fis2. a4 | g2. dis4 | fis e dis8 e4 b'8~ | b4 g e b | \myEndLine
-	d4. cis8~ cis2~ | cis4 e cis8 a4 b8~ | b1 | a2. cis4 | \myEndLine
-	e d cis8 d4 f8~ | f4 gis cis8 b4 a8~ | a g4 b,8~ b2~ | b4 b cis8 d4 fis8~ | \myEndLine
-	fis4 e d8 b4 gis8~ | gis4 b cis8 e4 d8~ | d2~ d4. cis8~ | cis1 | \myEndLine
+	fis2. a4 | g2. dis4 | fis e dis8 e4 b'8~ | b4 g e b |
+	d4. cis8~ cis2~ | cis4 e cis8 a4 b8~ | b1 | a2. cis4 |
+	e d cis8 d4 f8~ | f4 gis cis8 b4 a8~ | a g4 b,8~ b2~ | b4 b cis8 d4 fis8~ |
+	fis4 e d8 b4 gis8~ | gis4 b cis8 e4 d8~ | d2~ d4. cis8~ | cis1 |
 
 	%% part "A''"
-	fis2 a, | b2. fis'4 | e2 b | d2. e4 | \myEndLine
-	fis2 ais, | cis2. fis4 | e8 d4 cis8~ cis d4 e8~ | e d4 fis8~ fis4 b | \myEndLine
-	a8 fis4 d8~ d4. b8 | a' f!4 d8~ d4 bes | a'8 e4 cis8~ cis4 a | gis'4 b g! b | \myEndLine
-	fis8 d4 b8 d4 fis~ | fis d b8 d4 fis8~ | fis2~ fis8 fis g a | b4 a g fis | \myEndLine
-	d8 b4 d8 fis4 d~ | d b d8 fis4 d8~ | d1~ | d2. r4 | \myEndLine
+	fis2 a, | b2. fis'4 | e2 b | d2. e4 |
+	fis2 ais, | cis2. fis4 | e8 d4 cis8~ cis d4 e8~ | e d4 fis8~ fis4 b |
+	a8 fis4 d8~ d4. b8 | a' f!4 d8~ d4 bes | a'8 e4 cis8~ cis4 a | gis'4 b g! b |
+	fis8 d4 b8 d4 fis~ | fis d b8 d4 fis8~ | fis2~ fis8 fis g a | b4 a g fis |
+	d8 b4 d8 fis4 d~ | d b d8 fis4 d8~ | d1~ | d2. r4 |
 }
 % endif
 

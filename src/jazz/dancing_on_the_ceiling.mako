@@ -92,15 +92,15 @@
 
 	%% part "A"
 	\repeat volta 2 {
-		r4 c d e | f g a2 | g4. f8 e4 d | c' c b!2 | \myEndLine
-		bes!2. c4 | a1 | g2. a4 | f1 | \myEndLine
+		r4 c d e | f g a2 | g4. f8 e4 d | c' c b!2 |
+		bes!2. c4 | a1 | g2. a4 | f1 |
 	}
 	%% part "B"
-	r4 g g g | g8 g g a f4 g | a r c c~ | c1 | \myEndLine
-	r4 g g g | g8 g a a f4 g | a r c c~ | c1 | \myEndLine
+	r4 g g g | g8 g g a f4 g | a r c c~ | c1 |
+	r4 g g g | g8 g a a f4 g | a r c c~ | c1 |
 	%% part "A"
-	r4 c, d e | f g a2 | g4. f8 e4 d | c' c b!2 | \myEndLine
-	bes!2 d~ | d e, | f1~ | f4 r r2 | \myEndLine
+	r4 c, d e | f g a2 | g4. f8 e4 d | c' c b!2 |
+	bes!2 d~ | d e, | f1~ | f4 r r2 |
 }
 % endif
 

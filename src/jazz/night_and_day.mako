@@ -98,23 +98,23 @@
 
 	%% part "A"
 	\repeat volta 2 {
-		g1~ | g2 \times 2/3 { f4 e dis } | e1~ | e2 g4 g8 g~ | \myEndLine
-		g4 g g g | g f \times 2/3 { f e dis } | e1~ | e2 e4. e8 | \myEndLine
-		e4 e e e | ees2~ ees8 ees4 ees8 | d4 d d d | d des8 c~ c4 b | \myEndLine
+		g1~ | g2 \times 2/3 { f4 e dis } | e1~ | e2 g4 g8 g~ |
+		g4 g g g | g f \times 2/3 { f e dis } | e1~ | e2 e4. e8 |
+		e4 e e e | ees2~ ees8 ees4 ees8 | d4 d d d | d des8 c~ c4 b |
 		a4 aes8 g~ g2 | g g'4 g8 g~ | g1~ |
 	} \alternative {
 		{
-			g2 g4 g8 g | \myEndLineVoltaNotLast
+			g2 g4 g8 g |
 		}
 		{
-			g2 g4 g | \myEndLineVoltaLast
+			g2 g4 g |
 		}
 	}
 	%% part "B"
-	bes1~ | bes2 \times 2/3 { g4 f ees } | g g8 g~ g2~ | g g4. g8 | \myEndLine
-	bes c4 bes8 c4 bes8 c~ | c bes4 g8~ \times 2/3 { g4 f ees } | g g8 g~ g2~ | g2 e!4. e8 | \myEndLine
-	e4 e e e | ees2~ ees8 ees4 ees8 | d4 d d d | d8 des c b'~ b bes a4 | \myEndLine
-	g4 g8 g~ g2~ | g c4 c8 c~ | c1 | r | \myEndLine
+	bes1~ | bes2 \times 2/3 { g4 f ees } | g g8 g~ g2~ | g g4. g8 |
+	bes c4 bes8 c4 bes8 c~ | c bes4 g8~ \times 2/3 { g4 f ees } | g g8 g~ g2~ | g2 e!4. e8 |
+	e4 e e e | ees2~ ees8 ees4 ees8 | d4 d d d | d8 des c b'~ b bes a4 |
+	g4 g8 g~ g2~ | g c4 c8 c~ | c1 | r |
 }
 % endif
 

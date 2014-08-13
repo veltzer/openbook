@@ -75,8 +75,8 @@
 
 	%% part "A"
 	e'2. d4 | c2. bes4 | a2. g4 | f d'2. |
-	e,4. d8 cis d f a | c2. a4 | \myEndLine
+	e,4. d8 cis d f a | c2. a4 |
 	g2. f4 | c'2. gis4 | b2. a4 | f'2. cis4 |
-	e2. d4 | c2. bes4 | a1\fermata | \myEndLine
+	e2. d4 | c2. bes4 | a1\fermata |
 }
 % endif

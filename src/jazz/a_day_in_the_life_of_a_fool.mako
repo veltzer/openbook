@@ -30,6 +30,7 @@
 	attributes['completion']="5"
 	attributes['uuid']="88a1ec40-db4c-11e3-8a8c-23226fc873cc"
 	attributes['structure']="AA'B"
+	attributes['structureremark']="This is almost ABAC"
 	attributes['location']="jfb:94-95"
 
 	attributes['idyoutuberemark1']="Frank doin it sadly..."
@@ -101,18 +102,20 @@
 	\partial 4 e4 |
 
 	%% part "A"
-	c'2~ \times 2/3 { c4 b a } | a2~ \times 2/3 { a4 gis b } | e,1~ | e2 r4 e4 | \myEndLine
-	c'2~ \times 2/3 { c4 b a } | a2~ \times 2/3 { a4 g b } | e,1~ | e2 r8 e f g | \myEndLine
-	a4. d,8 d2~ | d r8 d e f | g4. c,8 c2~ | c r8 c d e | \myEndLine
-	f4. b,8 b2~ | b \times 2/3 { b4 c d } | e1~ | e2 r4 e | \myEndLine
+	c'2~ \times 2/3 { c4 b a } | a2~ \times 2/3 { a4 gis b } | e,1~ | e2 r4 e4 |
+	c'2~ \times 2/3 { c4 b a } | a2~ \times 2/3 { a4 g b } | e,1~ | e2 r8 e f g |
+	a4. d,8 d2~ | d r8 d e f | g4. c,8 c2~ | c r8 c d e |
+	f4. b,8 b2~ | b \times 2/3 { b4 c d } | e1~ | e2 r4 e |
+
 	%% part "A'"
-	c'2~ \times 2/3 { c4 b a } | a2~ \times 2/3 { a4 gis b } | e,1~ | e2 r4 e4 | \myEndLine
-	bes'2~ \times 2/3 { bes4 a g } | g2~ \times 2/3 { g4 f e } | a1~ | a | \myEndLine
-	r4 d, \times 2/3 { d e f } | b1 | r4 c, \times 2/3 { c d e } | a2. g4 | \myEndLine
-	e1~ | e2 \times 2/3 { e4 gis b } | a1~ | a2 \times 2/3 { r4 a b } | \myEndLine
+	c'2~ \times 2/3 { c4 b a } | a2~ \times 2/3 { a4 gis b } | e,1~ | e2 r4 e4 |
+	bes'2~ \times 2/3 { bes4 a g } | g2~ \times 2/3 { g4 f e } | a1~ | a |
+	r4 d, \times 2/3 { d e f } | b1 | r4 c, \times 2/3 { c d e } | a2. g4 |
+	e1~ | e2 \times 2/3 { e4 gis b } | a1~ | a2 \times 2/3 { r4 a b } |
+
 	%% part "B"
 	\times 2/3 { c d c } \times 2/3 { b a b } | \times 2/3 { c d c } \times 2/3 { b a b } |
-	\times 2/3 { c d c } \times 2/3 { b a g } | a1~ | a2. r4 | \myEndLine
+	\times 2/3 { c d c } \times 2/3 { b a g } | a1~ | a2. r4 |
 }
 % endif
 
@@ -123,11 +126,13 @@
 	a sad __ and a long, __ lone -- ly day, __
 	I walk the av -- e -- nue __ and hope I'll run in -- to __
 	the wel -- come sight of you __ com -- ing my way. __
+
 	%% part "A'"
 	I stop __ just a -- cross __ from your door __
 	but you're __ nev -- er home __ an -- y -- more. __
 	So back to my room and there in the gloom
 	I cry __ tears of good -- bye. __
+
 	%% part "B"
 	'Til you come back to me,
 	that's the way it will be

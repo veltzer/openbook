@@ -99,23 +99,23 @@
 
 	%% part "A"
 	\repeat volta 2 {
-		g'2 bes | a2. g4 | \times 2/3 { f4 f f } e e | d2. c4 | \myEndLine
+		g'2 bes | a2. g4 | \times 2/3 { f4 f f } e e | d2. c4 |
 		\times 2/3 { f f f } e d | \times 2/3 { g g g } f e |
 	}
 	\alternative {
 		{
-			a2 b | g1 | \myEndLineVoltaNotLast
+			a2 b | g1 |
 		}
 		{
-			a2 a | c1 | \myEndLineVoltaLast
+			a2 a | c1 |
 		}
 	}
 	%% part "B"
-	gis4 a gis a | ais b ais b | d2 c4 c~ | c1 | \myEndLine
-	d2 c4 c~ | c2 \times 2/3 { d,4 fis b } | a2 aes | g1 | \myEndLine
+	gis4 a gis a | ais b ais b | d2 c4 c~ | c1 |
+	d2 c4 c~ | c2 \times 2/3 { d,4 fis b } | a2 aes | g1 |
 	%% part "A"
-	g2 bes | a2. g4 | \times 2/3 { f4 f f } e e | d2. c4 | \myEndLine
-	\times 2/3 { f f f } e d | \times 2/3 { g g g } f e | a2 a | c2. r4 | \myEndLine
+	g2 bes | a2. g4 | \times 2/3 { f4 f f } e e | d2. c4 |
+	\times 2/3 { f f f } e d | \times 2/3 { g g g } f e | a2 a | c2. r4 |
 }
 % endif
 

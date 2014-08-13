@@ -101,17 +101,17 @@
 	\partial 8 d8 |
 
 	%% part "A"
-	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g fis4 e4. d8 | e g fis e~ e4. d8 | \myEndLine
-	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g fis4 e8 g fis4 | e8 g fis e~ e4. d8 | \myEndLine
+	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g fis4 e4. d8 | e g fis e~ e4. d8 |
+	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g fis4 e8 g fis4 | e8 g fis e~ e4. d8 |
 	%% part "A"
-	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g fis4 e4. d8 | e g fis e~ e4. d8 | \myEndLine
-	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g e d e g e g~ | g4. b8~ b d b g | \myEndLine
+	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g fis4 e4. d8 | e g fis e~ e4. d8 |
+	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g e d e g e g~ | g4. b8~ b d b g |
 	%% part "B"
-	f! bes4 r8 bes4. g8 | c4 c c8 d4 bes8~ | bes4. g8~ g4. g8~ | g4. g8~ g4. g8 | \myEndLine
-	aes des4 r8 des4. bes8 | ees4 ees ees8 f4 des8~ | des2~ des4. des8~ | des8 d4.~ d4. d,8 | \myEndLine
+	f! bes4 r8 bes4. g8 | c4 c c8 d4 bes8~ | bes4. g8~ g4. g8~ | g4. g8~ g4. g8 |
+	aes des4 r8 des4. bes8 | ees4 ees ees8 f4 des8~ | des2~ des4. des8~ | des8 d4.~ d4. d,8 |
 	%% part "A"
-	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g fis4 e4. d8 | e g fis e~ e4. d8 | \myEndLine
-	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g e d e g e g~ | g2~ g8 r r4 | \myEndLine
+	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g fis4 e4. d8 | e g fis e~ e4. d8 |
+	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g e d e g e g~ | g2~ g8 r r4 |
 }
 % endif
 
