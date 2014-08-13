@@ -1,5 +1,10 @@
 Now:
 ====
+- if let say I have a fake book tune and I know it's location
+	the location should NOT be in 'attribute['location']' but
+	rather in the version so I could associate the external pdf
+	with that version (this is not the case now).
+	Should we leave the 'location' attribute? I don't know. Think about it.
 - upload results to scribd via the scribd api.
 	http://www.scribd.com/developers/tutorials
 	apparently all you need to do is http upload from the command line
