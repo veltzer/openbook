@@ -136,29 +136,27 @@
 	\partial 4 s4 |
 
 	\repeat volta 2 {
+		\myMark "A"
+		\startPart
+		f1:maj7 | a2:m7.5- d:7.9- | g1:m7 | c:7 | \myEndLine
+		f2. d4:m7.5- | d1:m7.5- | g:7 | g2:m7 c:7 | \myEndLine
+		f1:maj7 | c2:m7 f:7 | bes1:maj7 | bes:m6 | \myEndLine
+		f:maj7 | a2:m7 d:7 | g1:7.9 | g2:m7 c:7 | \myEndLine
+		\endPart
 
-	\myMark "A"
-	\startPart
-	f1:maj7 | a2:m7.5- d:7.9- | g1:m7 | c:7 | \myEndLine
-	f2. d4:m7.5- | d1:m7.5- | g:7 | g2:m7 c:7 | \myEndLine
-	f1:maj7 | c2:m7 f:7 | bes1:maj7 | bes:m6 | \myEndLine
-	f:maj7 | a2:m7 d:7 | g1:7.9 | g2:m7 c:7 | \myEndLine
-	\endPart
-
-	\myMark "B"
-	\startPart
-	f1:maj7 | a2:m7.5- d:7.9- | g1:m7 | c:7 | \myEndLine
-	f2. d4:m7.5- | d1:m7.5- | g:7 | g2:m7 c:7 | \myEndLine
-	c1:m7 | f:7 | bes:maj7 | ees:7 | \myEndLine
-	f2 g:m7 | a:m7 bes:m6 | a:m7 d:m7 | g:m7 c:7 |
-
+		\myMark "B"
+		\startPart
+		f1:maj7 | a2:m7.5- d:7.9- | g1:m7 | c:7 | \myEndLine
+		f2. d4:m7.5- | d1:m7.5- | g:7 | g2:m7 c:7 | \myEndLine
+		c1:m7 | f:7 | bes:maj7 | ees:7 | \myEndLine
+		f2 g:m7 | a:m7 bes:m6 | a:m7 d:m7 | g:m7 c:7 | \myEndLine
 	} \alternative {
-		{
-			f1 | g2:m7 c:7 |
-		}
-		{
-			f1 | bes2:7 bes:m6 | f1:maj7 | \myEndLine
-		}
+			{
+				f1 | g2:m7 c:7 | \myEndLineVoltaNotLast
+			}
+			{
+				f1 | bes2:7 bes:m6 | f1:maj7 | \myEndLineVoltaLast
+			}
 	}
 	\endPart
 
