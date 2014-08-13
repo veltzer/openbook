@@ -13,6 +13,7 @@ debug=False
 
 def check_file(file):
 	inside=False
+	prevprev=None
 	prev=None
 	for line in open(file, 'r'):
 		line=line.rstrip('\n')
@@ -25,6 +26,9 @@ def check_file(file):
 				print(line)
 		if line.find('%% part')!=-1 and prev!='':
 			print(line)
+		if line.find('%% part')!=-1 and prev=='' and prevprev=='':
+			print(line)
+		prevprev=prev
 		prev=line
 
 for file in glob.glob('src/jazz/*.mako'):
