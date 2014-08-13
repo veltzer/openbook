@@ -113,6 +113,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	I'm gon -- na love you like no -- bod -- y's loved you,
 	Come Rain Or Come Shine.

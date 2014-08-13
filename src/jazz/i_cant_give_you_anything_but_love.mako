@@ -65,12 +65,15 @@
 	\tempo "Andante Moderato" 4 = 88
 	\time 4/4
 	\key g \major
+
 	%% part "A"
 	g'4 fis e g | fis e g e | a1 | a8 ais b2. |
 	g4 fis e g | fis e g b | d1 | b8 bes a2. |
+
 	%% part "B"
 	g8 gis a2. | a8 ais b2. | d4 c b a~ | a1 |
 	a8 ais b2. | b8 c cis2. | e4 d c b | d c e, fis |
+
 	%% part "A"
 	g fis e g | fis e g e | a1 | a8 ais b2. |
 	d4 c b d | c b d c | b1 | a4 g2. |

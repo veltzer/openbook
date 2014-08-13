@@ -80,15 +80,19 @@
 	\key f \major
 
 	\repeat volta 2 {
+
 		%% part "A"
 		c'8 bes d, f a2 | c8 bes d, f a2 | c8 bes d, f a4 a | a2 a8 g f d |
 		f4 f f2~ | f a8 g f d | f1~ | f4 r r2 |
+
 		%% part "A"
 		c'8 bes d, f a2 | c8 bes d, f a2 | c8 bes d, f a4 a | a2 a8 g f d |
 		f4 f f2~ | f a8 g f d | f1~ | f4 r r2 |
+
 		%% part "B"
 		f2 g | gis a | r4 bes8 c~ c bes c4 | des c8 bes~ bes2 |
 		g a | ais b | r4 c8 d~ d c d4 | ees d8 c~ c2 |
+
 		%% part "A"
 		c8 bes d, f a2 | c8 bes d, f a2 | c8 bes d, f a4 a | a2 a8 g f d |
 		f4 f f2~ | f a8 g f d |
@@ -105,6 +109,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	Ev -- 're hon -- ey bee fills with jeal -- ous -- y when they see you out with me, I don't blame them, good -- ness knows, __
 	Hon -- ey -- sucke -- le Rose. __ When you're pass -in' by, flow -- ers droop and sigh, and I know the rea -- son

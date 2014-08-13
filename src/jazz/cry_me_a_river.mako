@@ -29,6 +29,7 @@
 % if part=='Doc':
 	DONE:
 	TODO:
+	- mark what has been done to this tune.
 % endif
 
 % if part=='ChordsFake':
@@ -36,36 +37,40 @@
 	\startSong
 	\startChords
 
-	\myMark "A"
-	\startPart
 	\repeat volta 2 {
+
+		\myMark "A"
+		\startPart
 		c2:m c:m5+ | c:m6 c:m7 | f:m7 bes4:7 bes:7.5+ | ees2:maj7 d4:m7 g:7 | \myEndLine
 		g2:m7 c:7.5+ | f1:9 | f2:m7 f:m7/bes | ees:6 d4:7.9- g:7 | \myEndLine
 		\endPart
+
 		\myMark "A"
 		\startPart
 		c2:m c:m5+ | c:m6 c:m7 | f:m7 bes4:7 bes:7.5+ | ees2:maj7 d4:m7 g:7 | \myEndLine
 		g2:m7 c:7.5+ | f1:9 | f2:m7 f:m7/bes | ees:6 a4:m7.5- d:7.9- | \myEndLine
 		\endPart
+
 		\myMark "B"
 		\startPart
 		g1:m | c2:m6 d:7 | g:m e:m7.5- | c:m6/ees d:7 | \myEndLine
 		g1:m | c2:m6/ees d4:sus4.7 d:7 | g1 | d2:m7 g:7 | \myEndLine
 		\endPart
+
 		\myMark "A"
 		\startPart
 		c:m c:m5+ | c:m6 c:m7 | f:m7 bes4:7 bes:7.5+ | ees2:maj7 d4:m7 g:7 | \myEndLine
 		g2:m7 c:7.5+ | f1:9 | f2:m7 f:m7/bes |
 	} \alternative {
 		{
-			ees:6 g:7.5+.9- |
+			ees:6 g:7.5+.9- | \myEndLineVoltaNotLast
 		}
 		{
-			ees1:6 |
+			ees1:6 | \myEndLineVoltaLast
 		}
 	}
-	\myEndLine
 	\endPart
+
 	\endChords
 	\endSong
 }
@@ -78,24 +83,28 @@
 	\time 4/4
 	\key ees \major
 
-	%% part "A"
 	\repeat volta 2 {
+
+		%% part "A"
 		d'2~ d8 c g ees | d c4.~ c2 | r8 c ees c' bes4 bes | g2~ g8. g16 fis8. g16 | c4~ \times 2/3 { c8 des c } des8 c4. |
+
 		%% part "A"
 		r8 g8~ \times 2/3 { g8 f ees } f8 g4. | r8 ges f ees f ees c ees | ees2~ ees4. r8 | d'2~ d8 c g ees | d c4.~ c2 |
 		r8 c ees c' bes4 bes | g2~ g8. g16 fis8. g16 | c4~ \times 2/3 { c8 des c } des8 c4. | r8 g8~ \times 2/3 { g8 f ees } f8 g4. |
 		r8 ges f ees f ees c ees | ees1 |
+
 		%% part "B"
 		r8. g16 a bes8.~ \times 2/3 { bes8 d, e } fis8 g | a8. g16 bes8 a~ a4. g8 |
 		bes4~ \times 2/3 { bes8 g d' } c4 bes8 c~ | c1 | r8. g16 a bes8.~ \times 2/3 { bes8 d, e } fis8 g | a8. g16 bes8 a~ a2 |
 		r8 a16 g a8. g16 a8. g16 b16 g8. | r8 a16 g a8. g16 a8. g16 b16 g8. |
+
 		%% part "A"
 		d'2~ d8 c g ees | d c4.~ c2 |
 		r8 c ees c' bes4 bes | g2~ g8. g16 fis8. g16 | c4~ \times 2/3 { c8 des c } des c4. | r8 g~ \times 2/3 { g8 f ees } f8 g4. |
 		r8 c ges ees f ees c ees |
 	} \alternative {
 		{
-		ees2~ ees8 r r4 |
+			ees2~ ees8 r r4 |
 		}
 		{
 			ees1 |

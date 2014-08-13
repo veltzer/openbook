@@ -124,6 +124,7 @@
 % if part=='LyricsReal':
 %% lyrics are taken from the fake book and adjusted for the real one
 \lyricmode {
+
 	%% part "A"
 	The fall -- ing leaves __ drift by the win -- dow, __
 	The Au -- tumn Leaves, __ of red and gold.
@@ -143,6 +144,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
+
 	%% part "A"
 	_ _ _ lips, __ the sum -- mer kiss -- es, __
 	The sun -- burned hands __
@@ -206,9 +208,11 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	The fall -- ing leaves __ drift by the win -- dow, __
 	The Au -- tumn Leaves, __ of red and gold.
+
 	%% part "A"
 	I see your lips, __ the sum -- mer kiss -- es,
 	The sun -- burned hands __ I used to hold.

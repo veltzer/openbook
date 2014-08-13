@@ -111,6 +111,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	Oh, I Got Plen -- ty O' Nut -- tin', __ an' nut -- tin's plen -- ty fo' me. I got no car,
 	got no mule, I got no mis -- er -- y. __ De folks wid plen -- ty o' plen -- ty __

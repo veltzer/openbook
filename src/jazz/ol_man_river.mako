@@ -82,6 +82,7 @@
 	\key ees \major
 
 	\repeat volta 2 {
+
 		%% part "A"
 		bes4 bes c8 ees4 c8 | bes4 bes c8 ees4 f8 | g4 g f8 ees4 f8 | g4 bes c8 bes4 c8 |
 		bes4 bes g8 f4 g8 | bes4 bes g8 f4 g8 | ees1~ | ees2. r8 bes8 | bes4 bes c8 ees4 c8 |

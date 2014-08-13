@@ -52,6 +52,7 @@
 	- added lyrics url.
 	- added youtube performances.
 	TODO:
+	- add part markings in the lyrics.
 	- add more versions of this tune (plenty of epdfs).
 	- the \endPart at the end of the B part is blocking the correct repeat signs. Fix this.
 	REMARKS:
@@ -67,6 +68,7 @@
 	\startSong
 
 	\repeat volta 2 {
+
 		\myMark "A"
 		\startPart
 		c1*2:maj7 | c:m7 | \myEndLine
@@ -75,6 +77,7 @@
 	}
 	\alternative {
 		{
+
 			\myMark "B"
 			\startPart
 			d1:m7 | g:7 | c1*2:maj7 | \myEndLine
@@ -82,6 +85,7 @@
 			\endPart
 		}
 		{
+
 			\myMark "C"
 			\startPart
 			d2:m7 d:m/c | b:m7.5- e:7.9- | a:m7 a:m/g | fis:m7.5- b:7 | \myEndLine
@@ -109,11 +113,13 @@
 	}
 	\alternative {
 		{
+
 			%% part "B"
 			r8 g4. d4 e | f g aes bes | g1~ | g |
 			r8 bes4. f4 g | aes bes ces des | bes1~ | bes2 b |
 		}
 		{
+
 			%% part "C"
 			r8 g4. d4 e | f g gis e' | d4. c8~ c2 | c,4 d dis b' |
 			a4. g8~ g2 | r8 g4. g4 g | g1~ | g |

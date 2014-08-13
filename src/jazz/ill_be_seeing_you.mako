@@ -103,15 +103,19 @@
 	\key ees \major
 
 	\repeat volta 2 {
+
 		%% part "A"
 		g'2. f4 | f8 ees4 d8~ d4 ees | aes4. g8 g4. f8 | f4. e8 e4 f |
 		as4. g8 g4. f8 | f4. e8 e4 f | fis8 g4 c8~ c2~ | c2. r4 |
+
 		%% part "B"
 		ees2. d4 | d8 c4 b8~ b4 c | ees2. d4 | d8 c4 b8~ b4 c |
 		c2. bes4 | bes8 fis4 fis8~ fis4 d' | c8 g4 g8~ g4 c | fis,8 c4 c8~ c2 |
+
 		%% part "A'"
 		g'2. f4 | f8 ees4 d8~ d4 ees | aes4. g8 g4. f8 | f4. e8 e4 f |
 		aes4. g8 g4. f8 | f4. e8 e4 f | bes4. aes8 aes4. g8 | g4. fis8 fis4 g |
+
 		%% part "C"
 		%% on the third bar we can do <g \parenthesize \tweak #'font-size #-1 g'>2.
 		c4. c8 bes4 aes | d4. d8 c4 b | ees ees d c | g2. f8 g |
@@ -129,17 +133,22 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	I'll Be See -- ing You __ in all the old fa -- mil -- iar plac -- es that this heart of mine em -- brac -- es all day thru. __
+
 	%% part "B"
 	In that samll ca -- fe; __ the park a -- cross the way, __ the chil -- dren's ca -- rou -- sel, __ the
 	chet -- nut -- trees, __ the wish -- ing well. __
+
 	%% part "A'"
 	I'll Be See -- ing You __ in ev -- 'ry love -- ly sum -- mer's day, in ev -- 'ry -- thing that's
 	light and gay, I'll al -- ways think of you that way.
+
 	%% part "C"
 	I'll find you in the morn -- ing sun and when the night is new. I'll be
 	look -- ing at the moon, __ but I'll Be See -- ing You!
+
 	%% part "Volta"
 	You! __
 }

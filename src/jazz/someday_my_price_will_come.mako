@@ -100,11 +100,13 @@
 		g | ees'2 b4 | d2 c4 | c d ees |
 	} \alternative {
 		{
+
 			%% part "B"
 			f2 f4 | a2 a4 | f2. | c4 d ees |
 			f2 f4 | a2 a4 | f2.~ | f |
 		}
 		{
+
 			%% part "C"
 			f4. e8 f4 | c'2 bes4 | c,4 bes c | a'2 g4 |
 			f2 ees4 | d2 c4 | bes2.~ | bes |
@@ -116,9 +118,11 @@
 % if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
+
 	%% part "A"
 	Some -- day my prince will come
 	Some -- day I'll find my love
+
 	%% part "B"
 	And how thrilling that moment will be
 	When the prince of my dreams_comes to me
@@ -127,9 +131,11 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
+
 	%% part "A"
 	He'll whis -- per I love you
 	And steal a kiss or two
+
 	%% part "C"
 	Though he's
 	_ _ _ _ _ _ _ _ _ _ _ _ _

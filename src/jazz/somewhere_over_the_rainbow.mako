@@ -131,9 +131,11 @@
 			ees2. bes'4 |
 		}
 	}
+
 	%% part "B"
 	g8 bes g bes g bes g bes | aes bes aes bes aes bes aes bes | c2 c~ | c r4 bes |
 	g8 bes g bes g bes g bes | a c a c a c a c | d2 d | f c |
+
 	%% part "A"
 	ees,2 ees' | d4 bes8 c d4 ees | ees,2 c' | bes1 |
 	c,2 aes' | g4 ees8 f g4 aes | f d8 ees f4 g | ees2 r |
@@ -142,11 +144,13 @@
 
 % if part=='LyricsCcb':
 \lyricmode {
+
 	%% part "A"
 	Some -- where o -- ver the rain -- bow
 	Way up high,
 	There's a land that I heard of
 	Once in a lu -- lla -- by.
+
 	%% part "B"
 	_ Some -- day I'll wish u -- pon a star
 	And wake up where the clouds are far
@@ -154,6 +158,7 @@
 	Where trou -- bles melt like le -- mon drops
 	A -- way a -- bove the chim -- ney tops
 	That's where you'll find me.
+
 	%% part "A"
 	Some -- where o -- ver the rain -- bow
 	Blue -- birds fly.
@@ -164,6 +169,7 @@
 
 % if part=='LyricsmoreCcb':
 \lyricmode {
+
 	%% part "A"
 	Some -- where o -- ver the rain -- bow
 	Skies are blue,
@@ -241,6 +247,7 @@
 
 % if part=='LyricsWikifonia':
 \lyricmode {
+
 	%% part "A"
 	Some -- where O -- ver The Rain -- bow, way up high,
 	there's a land that I heard of once in a lull -- a -- by
@@ -258,6 +265,7 @@
 
 % if part=='LyricsmoreWikifonia':
 \lyricmode {
+
 	%% part "A"
 	Some -- where O -- ver The Rain -- bow, skies are blue,
 	and the dreams that you dare to dream real -- ly do come

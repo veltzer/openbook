@@ -82,16 +82,21 @@
 	\tempo "Allegro" 4 = 130
 	\time 2/2
 	\key c \major
+
 	\repeat volta 2 {
+
 		%% part "A"
 		e4 e2 e4 | e4 a g e | d d2 b'4 | g1 |
 		f4 f2 c'4 | b2. a4 | g4 g2 e'4 | d1 |
+
 		%% part "B"
 		d4 d2 cis4 | e d cis b | e,2 e~ | e1 |
 		c'4 c2 b4 | d c b a | d,1 | dis |
+
 		%% part "A"
 		e4 e2 e4 | e a g e | d d2 b'4 | g1 |
 		f4 f2 c'4 | b2. a4 | g4 g2 e'4 | d1 |
+
 		%% part "B"
 		d4 d2 cis4 | e d cis b | e, e2 e4 | fis2. fis4 |
 		g4 g2 g4 | f d'2 b4 |
@@ -108,18 +113,23 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	Late -- ly I find my -- self out gaz -- ing at stars,
 	hear -- ing gui -- tars Like Some -- one In Love.
+
 	%% part "B"
 	Some -- times the things I do a -- stound me,
 	__ most -- ly when -- ev -- er you're a -- round me.
+
 	%% part "A"
 	Late -- ly I seem to walk as though I had wings,
 	bump in -- to things Like Some -- one In Love.
+
 	%% part "B"
 	Each time I look at you I'm linmp as a glove
 	and feel -- ing Like Some -- one In Love.
+
 	%% part "Volta"
 	Love. __
 }

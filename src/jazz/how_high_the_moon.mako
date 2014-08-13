@@ -112,11 +112,13 @@
 	\partial 2. d4 g a |
 
 	\repeat volta 2 {
+
 		%% part "A"
 		a2 b~ | b4 d, g a | bes1~ | bes4 c, f g |
 		g2 a~ | a4 c, f g | aes1~ | aes4 d, ees f |
 		g g g g | g g8 a~ a g a4 | bes1~ | bes4. a8~ a g a4 |
 		b!1~ | b4 a b c | d d d d | d d, g a |
+
 		%% part "B"
 		a2 b~ | b4 d, g a | bes1~ | bes4 c, f g |
 		g2 a~ | a4 c, f g | aes1~ | aes4 d, ees f |
@@ -135,6 +137,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	Some -- where there's mu -- sic, __
 	how faint the tune! __
@@ -143,6 +146,7 @@
 	There is no moon a -- bove when love is far __ a -- way too, __
 	'till __ it comes true __
 	that you love me as I love you.
+
 	%% part "B"
 	Some -- where there's mu -- sic, __
 	it's where you are. __
@@ -199,6 +203,7 @@
 	g2 a~ | a4 c, f! g | aes1~ | aes4 d, ees! f! |
 	g g g g | g g8 a~ a g a4 | bes1~ | bes4. a8~ a g a4 |
 	b!1~ | b4 a b c | d d d d | d8 r d,4 g a |
+
 	%% part "B"
 	a2 b~ | b4 d, g a | bes1~ | bes4 c, f! g |
 	g2 a~ | a4 c, f! g | aes1~ | aes4 d, ees! f! |
@@ -209,6 +214,7 @@
 
 % if part=='LyricsReal':
 \lyricmode {
+
 	%% part "A"
 	Some -- where there's mu -- sic, __
 	how faint the tune! __
@@ -217,6 +223,7 @@
 	There is no moon a -- bove when love is far __ a -- way too, __
 	'till __ it comes true __
 	that you love me as I love you.
+
 	%% part "B"
 	Some -- where there's mu -- sic, __
 	it's where you are. __

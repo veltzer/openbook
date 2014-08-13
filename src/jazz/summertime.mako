@@ -110,9 +110,11 @@
 	\partial 4 a'8. f16 |
 
 	\repeat volta 2 {
+
 		%% part "A"
 		a1~ | a8 r g8. f16 g8. a16 f4 | d2 a~ | a4 r a' f |
 		g8 g~ g2. | r4 f8. d16 f8. d16 f4 | e1~ | e2 r8 a4 f8 |
+
 		%% part "B"
 		a8 a~ a2. | r4 g8. f16 g8. a16 f4 | d2 a~ | a r4 a |
 		c a8 c d f~ f4 | a8 g~ g4 f2 | d1~ | d4 r r <\parenthesize a'>8. <\parenthesize f>16 |
@@ -123,6 +125,7 @@
 % if part=='LyricsAebersold':
 %% these lyrics are from the Internet and adjusted for this tune...
 \lyricmode {
+
 	%% part "A"
 	Sum -- mer -- time, __
 	And the liv -- in' is eas -- y __
@@ -141,6 +144,7 @@
 
 % if part=='LyricsmoreAebersold':
 \lyricmode {
+
 	%% part "A"
 	One_of these mornings __
 	You're going to rise up sing -- ing __
@@ -202,12 +206,15 @@
 	%% part "A"
 	e1~ | e8 r d8. c16 d8. e16 c4 | a2 e~ | e4 r e' c |
 	d8 d4.~ d2 | r4 c8. a16 c8. a16 c4 | b1~ | b2 r8 e4 c8 |
+
 	%% part "B"
 	e8 e4 e8~ e2 | r4 d8. c16 d8. e16 c4 | a2 e~ | e r4 e |
 	g e8 g a4 c | e8 d4. c2 | a1~ | a1~ | a4 r4 r2 | r \times 2/3 { e'4 e c } |
+
 	%% part "A"
 	e4 e2. | r8. e16 d8. c16 d8. e16 c4 | a2 e~ | e e'4 c |
 	d8 d4 d8~ d2 | r4 c8. a16 c8. a16 c4 | b1~ | b2 r8 e e c |
+
 	%% part "B"
 	e8 e4.~ e2 | r4 d8. c16 d8. e16 c4 | a2 e~ | e r4 e |
 	g e8 g a4 c | e8 d4. c2 | a1~ | a1~ | a1~ | a1~ | a2. r4 |
@@ -216,6 +223,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	Sum -- mer -- time __
 	an' the liv -- in' is eas -- y, __

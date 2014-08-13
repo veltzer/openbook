@@ -86,6 +86,7 @@
 	ees4 f g bes | c ees c4. bes8 | c1~ | c2. bes4 |
 	ees c bes aes | g f g aes | bes g f ees | f ees8 f~ f4 ees |
 	d' c bes a | g f g f | aes1~ | aes2. bes,4 |
+
 	%% part "B"
 	c d ees f | g bes f ees | f1~ | f2 r8 g4. |
 	ees4 f g bes | c ees c4. bes8 | c1~ | c2. bes4 |
@@ -98,11 +99,13 @@
 % if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
+
 	%% part "A"
 	There will be man -- y oth -- er nights like this, __
 	and I'll be stand -- ing here with some -- one new, __
 	There will be oth -- er songs to sing, an -- oth -- er fall, an -- oth -- er spring,
 	but There Will Nev -- er Be An -- oth -- er You. __
+
 	%% part "B"
 	There will be oth -- er lips that I may kiss, __
 	but they won't thrill me like yours used to do. __
@@ -153,6 +156,7 @@
 	ees f g bes | c ees c4. bes8 | c1~ | c2. bes4 |
 	ees c bes aes | g f g4. aes8 | bes4 g f ees | f ees f4. ees8 |
 	d'4 c bes a | g f g f | aes1~ | aes2. bes,4 |
+
 	%% part "B"
 	c d ees f | g bes f4. ees8 | f1~ | f2. g4 |
 	ees f g bes | c ees c4. bes8 | c1~ | c2. bes4 |
@@ -163,11 +167,13 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	There will be man -- y oth -- er nights like this, __
 	and I'll be stand -- ing here with some -- one new, __
 	There will be oth -- er songs to sing, an -- oth -- er fall, an -- oth -- er spring,
 	but There Will Nev -- er Be An -- oth -- er You. __
+
 	%% part "B"
 	There will be oth -- er lips that I may kiss, __
 	but they won't thrill me like yours used to do. __

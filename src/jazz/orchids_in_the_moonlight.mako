@@ -94,6 +94,7 @@
 	r8 bes bes c des4 c8 bes | f'2 e!2~ | e8 c c des ees!4 des8 c | f1 |
 	r8 f, f g aes4 g8 f | des'2 c~ | c8 c c des ees4 des8 c | f1 |
 	r8 des ees f~ f ees des bes | r c des ees~ ees des c aes | r bes c des~ des bes g e! | f4 r r2^\markup { \italic { Fine } } |
+
 	%% part "B"
 	\key f \major
 	r4 c8 a' aes4 bes,8 g' | f2 c~ | c4 f8 a c4. c8 | c1 |
@@ -105,11 +106,13 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	When or -- chids bloom in the moon -- light __ and lov -- ers vow to be true;
 	I still can dream in the moon -- light, __ of one dear night that we knew.
 	When or -- chids fade in the dawn -- ing, __ they speak of tears and "\"Good" -- "bye!\""
 	Tho' my dreams __ are shat -- tered, like the pet -- als scat -- tered, still my love __ can nev -- er die.
+
 	%% part "B"
 	There is peace in the twi -- light, __ when the day is thru,
 	but the shad -- own that fall on -- ly seem to re -- call all my long -- ing for you.

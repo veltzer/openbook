@@ -122,6 +122,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	Cig -- a -- rette hold -- er which wigs me, o -- ver her shoul -- der, she digs me.
 	Out cat -- tin' that Sat -- in Doll. __
@@ -139,6 +140,7 @@
 
 % if part=='LyricsmoreFake':
 \lyricmode {
+
 	%% part "A"
 	Ba -- by shall we __ go out skip -- pin' care -- ful a -- mi -- go, you're flip -- pin'.
 	Speaks lat -- in that Sat -- in Doll.

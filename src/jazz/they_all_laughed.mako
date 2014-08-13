@@ -106,16 +106,21 @@
 	\tempo "Allegro" 4 = 130
 	\time 4/4
 	\key g \major
+
 	\repeat volta 2 {
+
 		%% part "A"
 		r8 d e4 g a | b8.[ b16 a8. g16] a8 b4. | b8.[ b16 a8. g16] a8 b4 d,8~ | d1 |
 		r8 d e4 g a | b8.[ b16 a8. g16] a8 b4 g8~ | g1~ | g2. r4 |
+
 		%% part "A"
 		r8 d e4 g a | b8.[ b16 a8. g16] a8 b4. | d8.[ d16 cis8. b16] cis8 d4 fis,8~ | fis1 |
 		b4 a8. gis16 a8 b4. | b8.[ c16 a8. gis16] a8 b4. | a4 b c b | a d d d |
+
 		%% part "B"
 		d2~ d8 b4 g8 | a2~ a8.[ b16 c8. cis16] | d4 e d b | c2. b4 |
 		e2~ e8 cis4 a8 | b2~ b8 a4 b8 | c4 e e, g | a1 |
+
 		%% part "A"
 		r8 d, e4 g a | b8.[ b16 a8. g16] a8 b4. | c8 b4 a8 b4 c | b2. a4 |
 		d4 d d2 | e8 e4 e8 b4 b |
@@ -132,26 +137,31 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	They All Laughed at Chris -- to -- pher Co -- lum -- bus
 	when he said the world was round. __
 	They All Laughed when Ed -- i -- son re -- cord -- ed sound. __
+
 	%% part "A"
 	They All Laughed at Wil -- bur and his broth -- er,
 	when they said that man could fly. __
 	They told Mar -- co -- ni wire -- less was a pho -- ney;
 	it's the same old cry.
+
 	%% part "B"
 	They laughed at me __ want -- ing you, __
 	said I was reach -- ing for the moon.
 	But oh, __ you came through __
 	now they'll have to change their tune.
+
 	%% part "A"
 	They all said we nev -- er could be hap -- py,
 	they laughed at us and how!
 	But ho, ho, ho!
 	Who's got the last laugh now? __
-	%% Second volta
+
+	%% part "Volta"
 	He, he, he!
 	Let's at the past laugh,
 	Ha, ha, ha!
@@ -161,20 +171,24 @@
 
 % if part=='LyricsmoreFake':
 \lyricmode {
+
 	%% part "A"
 	They All Laughed at Rock -- e -- fel -- ler Cen -- ter,
 	now they're fight -- ing to get in. __
 	They All Laughed at Whit -- ney and his cot -- ton gin. __
+
 	%% part "A"
 	They All Laughed at Ful -- ton and his steam -- boat,
 	Her -- shey and his choc' -- late bar. __
 	Ford and his Liz -- zie kept the laugh -- ers bus -- y;
 	that's how peo -- ple are.
+
 	%% part "B"
 	They laughed at me __ want -- ing you, __
 	said it would be hel -- lo, good -- bye.
 	But oh, __ you came through __
 	now they're eat -- ing hum -- ble pie.
+
 	%% part "A"
 	They all said we'd nev -- er get to -- geth -- er;
 	dar -- ling, let's take a bow.

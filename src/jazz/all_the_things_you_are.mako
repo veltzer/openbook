@@ -117,14 +117,17 @@
 % if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
+
 	%% part "A"
 	You are the prom -- ised kiss of spring -- time
 	That makes the lone -- ly win -- ter seem long. __
 	You are the breath -- less hush of eve -- ning
 	That trem -- bles on the brink of a love -- ly song. __
+
 	%% part "B"
 	You are the angel glow __ that lights a star. __
 	The dear -- est things_I know __ are what you are. __
+
 	%% part "C"
 	Some day my hap -- py arms will hold you,
 	And some day I'll know that mo -- ment di -- vine,
@@ -189,14 +192,17 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	You are the prom -- ised kiss of spring -- time
 	That makes the lone -- ly win -- ter seem long. __
 	You are the breath -- less hush of eve -- ning
 	That trem -- bles on the brink of a love -- ly song. __
+
 	%% part "B"
 	You are the an -- gel glow __ that lights a star. __
 	The dear -- est things I know __ are what you are.
+
 	%% part "C"
 	Some day my hap -- py arms will hold you,
 	And some day I'll know that mo -- ment di -- vine,

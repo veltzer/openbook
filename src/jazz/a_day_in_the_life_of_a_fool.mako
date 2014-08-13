@@ -121,6 +121,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	A Day __ In The Life __ Of A Fool, __
 	a sad __ and a long, __ lone -- ly day, __

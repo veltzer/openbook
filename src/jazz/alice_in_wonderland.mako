@@ -132,6 +132,7 @@
 % if part=='LyricsReal':
 %% This is taken from the inetnet and adjusted for this tune
 \lyricmode {
+
 	%% part "A"
 	A -- lice In Won -- der -- land
 	How do you get to won -- der -- land
@@ -142,16 +143,19 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
+
 	%% part "A"
 	When clouds go rol -- ling by
 	They roll a -- way and leave the sky
 	Where is the land be -- yond the eye
 	That peo -- ple can -- not _ see __
+
 	%% part "B"
 	And where do stars go
 	Where is the sil -- ver cre -- scent moon
 	They must be some -- where
 	in the sun -- ny af -- ter -- noon
+
 	%% part "A"
 	A -- lice In Won -- der -- land
 	Where is the path to won -- der -- land

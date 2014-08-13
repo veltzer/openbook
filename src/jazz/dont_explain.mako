@@ -99,12 +99,15 @@
 	%% part "A"
 	d4 f2 a8 d, | e1 | d4 f2 e8 f | e1 |
 	c'4 bes2. | bes4 a2 a8 d, | e1~ | e4 r r2 |
+
 	%% part "A"
 	d4 f2 a8 d, | e1 | d4 f2 e8 f | e1 |
 	c'4 bes2. | bes4 a2 a8 d, | f1~ | f |
+
 	%% part "B"
 	a8 a c a bes bes4. | g8 g bes g a2 | f8 f a f g g4. | e8 f g g g f e4 |
 	a8 a c a bes bes4. | g8 g bes g a2 | f8 f a f g g4. | e8 f g f e2 |
+
 	%% part "A"
 	d4 f2 a8 d, | e1 | d4 f2 e8 f | e1 |
 	c'4 bes2. | bes4 a2 a8 d, | f1~ | f |
@@ -113,16 +116,19 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	Hush now, Don't Ex -- plain!
 	Just say youl'll re -- main,
 	I'm glad you're back,
 	Don't Ex -- plain! __
+
 	%% part "A"
 	Qui -- et, Don't Ex -- plain!
 	What is there to gain?
 	Skip that lip -- stick,
 	Don't Ex -- plain! __
+
 	%% part "B"
 	You know that I love you
 	and what love en -- dures.
@@ -132,6 +138,7 @@
 	and I know you cheat.
 	Right or wrong don't mat -- ter
 	when you're with me, sweet.
+
 	%% part "A"
 	Hush now, Don't Ex -- plain!
 	You're my joy and pain.

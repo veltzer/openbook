@@ -108,6 +108,7 @@
 	\partial 4 c4 |
 
 	\repeat volta 2 {
+
 		%% part "A"
 		d f c' a8 c | a4 d, d r8 c | d4 f c' c | d,2. c8 cis |
 		d4 f d' c8 d | c4 bes a e8 f | g1~ | g2. c,4 |
@@ -137,6 +138,7 @@
 % if part=='LyricsFake':
 %% this is from the fake book
 \lyricmode {
+
 	%% part "A"
 	My Ship has sails that are made of silk,
 	the decks are trimmed with gold.

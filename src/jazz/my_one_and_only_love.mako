@@ -104,6 +104,7 @@
 	\key c \major
 
 	\repeat volta 2 {
+
 		%% part "A"
 		r8 g a8. c16 d8 e b' g | a4 d b~ \times 2/3 { b8 g f } |
 		e4 c' a~ \times 2/3 { a8 f e } | d4 b' g2 |
@@ -140,6 +141,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	The ver -- y thought of you makes my heart sing __
 	like an A -- pril breeze __ on the wings of spring.

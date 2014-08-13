@@ -82,12 +82,15 @@
 	%% part "A"
 	d4 g ees4. ees8 | e4 a f4. fis8 | g4 b gis8 a b c | d4 e b2 |
 	b4 d c8 b a g | fis4 a e ees | d2 fis | d r |
+
 	%% part "A"
 	d4 g ees4. ees8 | e4 a f4. fis8 | g4 b gis8 a b c | d4 e b2 |
 	b4 d c8 b a g | fis4 a e ees | d2 b' | g2. r4 |
+
 	%% part "B"
 	r8 g4 g8 f4 ees | c' c8 bes~ bes4. c8 | d ees d des~ des4 ces | bes aes8 f~ f2 |
 	r8 g4 g8 f4 ees | g a8 bes~ bes4. c8 | d d d d~ d4 d, | bes'2 b |
+
 	%% part "A"
 	d,4 g ees4. ees8 | e4 a f4. fis8 | g4 b gis8 a b c | d4 e b2 |
 	b4 d c8 b a g | fis4 a e ees | d2 b' | g2. r4 |
@@ -96,21 +99,25 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	Darn That Dream I dream each night,
 	You say you love me and you hold me tight,
 	but when I a -- wake you're out of sight.
 	Oh, Darn That Dream.
+
 	%% part "A"
 	Darn your lips and darn your eyes,
 	they lift me high a -- bove the moon -- lit skies,
 	then I tum -- ble out of Par -- a -- dise.
 	Oh, Darn That Dream.
+
 	%% part "B"
 	Darn that one- -- track mind of mine, __
 	it can't un -- der -- stand __ that you don't care. __
 	Just to change the mood I'm in, __
 	I'd wel -- come a nice __ old night -- mare.
+
 	%% part "A"
 	Darn That Dream and bless it too,
 	with -- out that dream I nev -- er would have you.

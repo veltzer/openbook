@@ -102,7 +102,6 @@
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
 
-	%% partial
 	\partial 2 e4 f |
 
 	%% part "A"
@@ -112,11 +111,13 @@
 	}
 	\alternative {
 		{
+
 			%% part "B"
 			c2 c | c4 d2 b4 | a2 a | g e4 fis |
 			g2 g | g4 a2 fis4 | g1~ | g4 r e f |
 		}
 		{
+
 			%% part "C"
 			c'2 c | c4 d2 b4 | bes2 bes | a g4 f |
 			e2 e | d4 c'2 b4 | c1 | r2 e,4 f |
@@ -128,11 +129,9 @@
 % if part=='LyricsReal':
 %% these are lyrics from the fake book adjusted for the real book
 \lyricmode {
-	%% partial
-	If they
 
 	%% part "A"
-	asked me I Could Write A Book, __
+	If they asked me I Could Write A Book, __
 	a -- bout the way you walk and whis -- per and look, __
 	I could
 
@@ -146,11 +145,9 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
-	%% partial
-	_ _
 
 	%% part "A"
-	sim -- ple se -- cret of the plot __
+	_ _ sim -- ple se -- cret of the plot __
 	is just to tell them that I love you a -- lot, __
 	then the
 
@@ -161,7 +158,7 @@
 	world dis -- cov -- ers as my book ends,
 	how to make two lov -- ers of friends.
 
-	%% partial
+	%% part "Reprise"
 	If they
 }
 % endif

@@ -121,6 +121,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	I see trees of green, red ros -- es too, I see the bloom for me and you, __
 	and I think __ to my -- self What A Won -- der -- ful World. __

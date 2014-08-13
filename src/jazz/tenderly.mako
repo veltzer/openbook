@@ -120,14 +120,18 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	The eve -- ning breeze ca -- ressed the trees Ten -- der -- ly, __
 	The termb -- ling trees em -- braced the breeze Ten -- der -- ly. __
+
 	%% part "B"
 	Then you and I came wand -- er -- ing by and lost in a sigh were we. __
+
 	%% part "A"
 	The shore was kissed by sea and mist Ten -- der -- ly. __
 	I can't for -- get how two hearts met breath -- less -- ly. __
+
 	%% part "C"
 	Your arms op -- ened wide and closed me in -- side; you took my lips, you took my love so Ten -- der -- ly. __
 }

@@ -110,9 +110,11 @@
 			a2 a | c1 |
 		}
 	}
+
 	%% part "B"
 	gis4 a gis a | ais b ais b | d2 c4 c~ | c1 |
 	d2 c4 c~ | c2 \times 2/3 { d,4 fis b } | a2 aes | g1 |
+
 	%% part "A"
 	g2 bes | a2. g4 | \times 2/3 { f4 f f } e e | d2. c4 |
 	\times 2/3 { f f f } e d | \times 2/3 { g g g } f e | a2 a | c2. r4 |
@@ -122,6 +124,7 @@
 % if part=='LyricsReal':
 %% these are lyrics from the internet adjusted for the real book
 \lyricmode {
+
 	%% part "A"
 	Don't Blame Me
 	For fal -- ling in love with you.
@@ -129,11 +132,13 @@
 	But how can I help it?
 	Don't Blame Me.
 	_ _ _
+
 	%% part "B"
 	I can't help it
 	If that dog -- gone moon a -- bove __
 	Makes me want __
 	Some -- one like you to love.
+
 	%% part "A"
 	Blame your kiss
 	As sweet as a kiss can be,
@@ -145,6 +150,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
+
 	%% part "A"
 	Can't you see
 	When you do the things you do

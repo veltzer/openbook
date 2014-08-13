@@ -96,6 +96,7 @@
 		d'1~ | d2. c4 | c b8 d~ d2~ | d2~ \times 2/3 { d4 c b } |
 		bes aes8 c~ c2~ | c4 r8 g d' ees aes, d | c1~ | c | r | r2. <\parenthesize d'>4 |
 	}
+
 	%% part "Coda"
 	\repeat volta 2 {
 		r4 r8 g,, d' ees aes, d | c1~ | c | r |
@@ -106,12 +107,14 @@
 % if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
+
 	%% part "A"
 	Some day you'll look in to her eyes __
 	Then there'll be no good -- byes
 	And yes -- ter -- day __ will have gone __
 	And you'll find yourself __ in a -- no -- ther space __
 	"500" _ _ mi -- les high __
+
 	%% part "Coda"
 	_ "500" _ _ mi -- les high __
 }
@@ -119,6 +122,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
+
 	%% part "A"
 	You'll see just one look and you'll know __
 	She's so ten -- der and warm
@@ -130,6 +134,7 @@
 
 % if part=='LyricsmoremoreReal':
 \lyricmode {
+
 	%% part "A"
 	Be sure that you love stays so free __
 	Then it nev -- er can die

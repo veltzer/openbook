@@ -89,9 +89,11 @@
 		d4 f r8 d4 bes8~ | bes2 d4 f | a f r8 d c d~ | d1 |
 		r8 des' c g bes bes c f, | g4 bes8 g bes bes c bes | d4 c8 g bes bes c g~ | g1 |
 	}
+
 	%% part "B"
 	r8 aes' g d f f g d~ | d1~ | d~ | d2. f4 |
 	r8 des c g bes bes c f, | g4 bes8 g bes bes c bes | d4 c8 g bes bes c g~ | g1 |
+
 	%% part "A"
 	d4 f r8 d4 bes8~ | bes2 d4 f | a f r8 d c d~ | d1 |
 	r8 des' c g bes bes c f, | g4 bes8 g bes bes c bes | d4 c8 g bes bes c g~ | g1 |

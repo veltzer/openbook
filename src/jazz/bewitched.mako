@@ -102,15 +102,19 @@
 	\partial 4 g'4 |
 
 	\repeat volta 2 {
+
 		%% part "A"
 		e8 b' c2 e,4 | f8 b c2 f,4 | g8 b c4 gis8 b c4 | a8 b c2 b4 |
 		c r b8 a g fis | g4 d2 e4 | f1~ | f2 r |
+
 		%% part "A"
 		e8 b' c2 e,4 | f8 b c2 f,4 | g8 b c4 gis8 b c4 | a8 b c2 b4 |
 		c r b8 a g fis | g4 d2 e4 | a1~ | a2. r4 |
+
 		%% part "B"
 		b8 a f2 b8 a | f4 f2. | b8 a e2 b'8 a | e1 |
 		c'8 b g2 c8 b | g4 g~ g8 a b c | d2 c f,2. g4 |
+
 		%% part "A"
 		e8 b' c2 e,4 | f8 b c2 f,4 | g8 b c4 gis8 b c4 | a8 b c2 b4 |
 		c r b8 a g fis | g4 d'2 g,4 |
@@ -127,26 +131,29 @@
 
 % if part=='LyricsFake':
 \lyricmode {
-	%% Partial
-	I'm
+
 	%% part "A"
-	wild a -- gain, be -- guiled a -- gain,
+	I'm wild a -- gain, be -- guiled a -- gain,
 	a sim -- per -- ing, whim -- per -- ing child a -- gain,
 	Be -- witched, both -- ered and be -- wild -- ered am I. __
+
 	%% part "A"
 	Could -- n't sleep, and would -- n't sleep,
 	when love came and told me I should -- n't sleep,
 	Be -- witched, both -- ered and be -- wild -- ered am I. __
+
 	%% part "B"
 	Lost my heart, but what of it?
 	He is cold I a -- gree,
 	he can laugh, but I love it, __
 	al -- though the laugh's on me.
+
 	%% part "A"
 	I'll sing to him, each spring to him,
 	and long for the day when I'll cling to him,
 	Be -- witched, both -- ered and be -- wild -- ered am I.
-	%% Volta
+
+	%% part "Volta"
 	I'm I. __
 }
 % endif

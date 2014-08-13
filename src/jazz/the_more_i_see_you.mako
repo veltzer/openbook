@@ -102,19 +102,28 @@
 	\partial 8 b8 |
 
 	%% part "Verse"
+
 	%% part "A"
+
 	%% part "B"
+
 	%% part "A"
+
 	%% part "C"
 }
 % endif
 
 % if part=='LyricsStan':
 \lyricmode {
+
 	%% part "Verse"
+
 	%% part "A"
+
 	%% part "B"
+
 	%% part "A"
+
 	%% part "C"
 }
 % endif

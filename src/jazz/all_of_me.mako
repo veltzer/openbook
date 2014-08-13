@@ -106,6 +106,7 @@
 % if part=='LyricsReal':
 %% this version of the lyrics is from the internet but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
+
 	%% part "A"
 	All of me __
 	why not take all of me __

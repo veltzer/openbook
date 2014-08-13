@@ -77,12 +77,15 @@
 	%% part "A"
 	r4 ees \times 2/3 { ees d ees } | g4 g2. | r4 ees \times 2/3 { ees d ees } | g2. r4 |
 	r4 bes \times 2/3 { bes a bes } | c4 c2. | r4 bes \times 2/3 { bes a bes } | c1 |
+
 	%% part "B"
 	r4 ees ees ees | ees8 bes4 bes8~ bes4 bes4 | bes ges ges ges~ | ges1 |
 	ges4 ees ees ees~ | ees d2 ees4 | ges f f f~ | f2 r |
+
 	%% part "A"
 	r4 ees \times 2/3 { ees d ees } | g4 g2. | r4 ees \times 2/3 { ees d ees } | g2. r4 |
 	r4 bes \times 2/3 { bes a bes } | c4 c2. | r4 bes \times 2/3 { bes a bes } | c1 |
+
 	%% part "C"
 	r4 ees ees des | des c c bes | r aes \times 2/3 { aes g f } | aes1 |
 	r4 g \times 2/3 { g f ees } | g4 g2. | r4 f \times 2/3 { f ees d } | ees2. r4 |
@@ -91,15 +94,19 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	How much do I love you? I'll tell you no lie.
 	How Deep Is The O -- cean, how high is the sky?
+
 	%% part "B"
 	How man -- y times a day __ do I think of you? __
 	How man -- y ros -- es are sprink -- led with dew? __
+
 	%% part "A"
 	How far would I trav -- el to be whre you are?
 	How far is the jour -- ney for here to a star?
+
 	%% part "C"
 	And if I ev -- er lost you, how much would I cry?
 	How Deep Is The O -- cean, how high is the sky?

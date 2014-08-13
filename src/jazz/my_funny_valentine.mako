@@ -109,18 +109,22 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	My Fun -- ny Val -- en -- tine,
 	sweet com -- ic val -- en -- tine,
 	you make me smile with my heart. __
+
 	%% part "A"
 	Your looks are laugh -- a -- ble,
 	un -- pho -- to -- graph -- a -- ble,
 	yet, you're my fav -- 'rite work of art. __
+
 	%% part "B"
 	Is your fig -- ure less than Greek;
 	is your mouth a lit -- tle weak
 	when you o -- pen it to speak, are you smart? __
+
 	%% part "A"
 	But don't change a hair for me,
 	not if you care for me,

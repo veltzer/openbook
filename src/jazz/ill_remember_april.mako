@@ -102,11 +102,13 @@
 	r4 a bes c | bes a g f! | g8 a g2.~ | g2 r4 g^\markup {To Coda \musicglyph #"scripts.coda"} |
 	a2. a4 | a a b4. c8 | d4 d2.~ | d4 r e4. d8 |
 	b4 c d c~ | c2 b4 ais | b1~ | b2 r4 b |
+
 	%% part "B"
 	g g g2~ | g4 a bes c | d2. c4 | bes4 g2 f!4 |
 	g g g2~ | g4 a bes c | d d d2~ | d4 d \times 2/3 { d d d } |
 	d2. d4 | e c d4. b8 | a4 b2.~ | b4 b d c |
 	b b2.~ | b4 r \times 2/3 { b a gis } | b1~ | b^\markup {D.C. al Coda} |
+
 	%% part "Coda"
 	a4. a8 a2~ | a4 a \times 2/3 { a b c } | d d2.~ | d4 r e4. d8 |
 	b4 c d c~ | c2 b4 b | g1~ | g2 r |
@@ -115,16 +117,19 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	This love -- ly day will leng -- then in -- to ev -- 'ning,
 	we'll sign good -- bye to all we've ev -- er had. __
 	A -- lone, where we have walked to -- geth -- er, __
 	I'll Re -- mem -- ber A -- pril __ and be glad. __
+
 	%% part "B"
 	I'll be con -- tent __ you loved me once in A -- pril.
 	your lips were warm __ and love and Spring were new. __
 	But I'm not a -- fraid of Au -- tumn and her sor -- row, __
 	for I'll Re -- mem -- ber __ A -- pril and you. __
+
 	%% part "Coda"
 	won't for -- get, __ but I won't be lone -- ly, __
 	I'll Re -- mem -- ber A -- pril, __ and I'll smile. __
@@ -133,6 +138,7 @@
 
 % if part=='LyricsmoreFake':
 \lyricmode {
+
 	%% part "A"
 	The fire will dwin -- dle in -- to glow -- ing ash -- es,
 	for flames and love live such a lit -- tle while. __

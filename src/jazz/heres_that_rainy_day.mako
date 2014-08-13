@@ -143,15 +143,19 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	May -- be I should have saved those left -- ov -- er dreams;
 	fun -- ny, but Here's That Rain -- y Day. __
+
 	%% part "B"
 	Here's That Rain -- y Day they told me a -- bout,
 	and I laughed at the thought that it might turn out this way. __
+
 	%% part "A"
 	Where is that worn out wish that I threw a -- side,
 	Af -- ter it brought my lov -- er near? __
+
 	%% part "C"
 	Fun -- ny how love be -- comes a cold rain -- y day.
 	Fun -- ny that rain -- y day is here. __
@@ -201,17 +205,20 @@
 	\key f \major
 
 	\repeat volta 2 {
-		%% "A" part
+
+		%% part "A"
 		c2. c4 | c ees aes c | c2. bes8 a! | bes2. r4 |
 		c,2. c4 | c e g bes | a1~ | a2. f4 |
 	} \alternative {
 		{
-			%% "B" part
+
+			%% part "B"
 			des'2. des4 | des f, fis g | c2. ees,8 e! | f1 |
 			bes2. bes4 | bes d, dis e | a1~ | a2. r4 |
 		}
 		{
-			%% "C" part
+
+			%% part "C"
 			d2. d4 | d g, a bes | c2. e,8 f | g2. f4 |
 			c2. c4 | c e g a | f1~ | f |
 		}
@@ -221,22 +228,27 @@
 
 % if part=='LyricsReal':
 \lyricmode {
+
 	%% part "A"
 	Maybe I should have saved those left -- ov -- er dreams;
 	funny, but Here's That Rain -- y Day. __
+
 	%% part "B"
 	_ Here's That Rain -- y Day they told me a -- bout,
 	and_I laughed_at the thought that_it_might turn_out_this way. __
+
 	%% part "C"
 	Funny how love be -- comes a cold rain -- y day. _
 	Funny that rain -- y day is here. __
-	%% volta
+
+	%% part "Volta"
 	here. __
 }
 % endif
 
 % if part=='LyricsmoreReal':
 \lyricmode {
+
 	%% part "A"
 	Where_is that worn out wish that I threw a -- side,
 	After it brought my lov -- er near? __ _

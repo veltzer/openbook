@@ -131,6 +131,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	All, __ Or Noth -- ing At All. __
 	Half a love nev -- er ap -- pealed to me. __

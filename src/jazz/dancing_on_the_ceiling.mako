@@ -95,9 +95,11 @@
 		r4 c d e | f g a2 | g4. f8 e4 d | c' c b!2 |
 		bes!2. c4 | a1 | g2. a4 | f1 |
 	}
+
 	%% part "B"
 	r4 g g g | g8 g g a f4 g | a r c c~ | c1 |
 	r4 g g g | g8 g a a f4 g | a r c c~ | c1 |
+
 	%% part "A"
 	r4 c, d e | f g a2 | g4. f8 e4 d | c' c b!2 |
 	bes!2 d~ | d e, | f1~ | f4 r r2 |
@@ -107,14 +109,17 @@
 % if part=='LyricsReal':
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
+
 	%% part "A"
 	He dan -- ces o -- ver -- head
 	on the ceil -- ing near my bed
 	in my sight
 	through the night
+
 	%% part "B"
 	I whis -- per "\"go" a -- way my lo -- ver it's not "fair\"" __
 	but I'm so grate -- ful to dis -- co -- ver he's till there __
+
 	%% part "A"
 	lo -- ve my ceil -- ing more
 	since it is a dan -- cing floor
@@ -124,6 +129,7 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
+
 	%% part "A"
 	I tried to hide in vain
 	un -- der -- neath my coun -- ter -- pane

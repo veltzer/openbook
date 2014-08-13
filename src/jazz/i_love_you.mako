@@ -105,6 +105,7 @@
 % if part=='LyricsReal':
 %% these are lyrics from the internet adjusted for the real book
 \lyricmode {
+
 	%% part "A"
 	I love you __
 	Hums the Ap -- ril breeze. __
@@ -114,6 +115,7 @@
 	The gol -- den dawn ag -- rees __
 	As once more she sees
 	Daf -- fo -- dils. __
+
 	%% part "B"
 	It's spring a -- gain __
 	And birds on the wing a -- gain __

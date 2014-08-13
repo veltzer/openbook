@@ -119,9 +119,11 @@
 			b8 g4.~ g4 g | e8 d4.~ d2 | c8 e g ais~ ais4. ais8 | b8 g4.~ g2 |
 		}
 	}
+
 	%% part "B"
 	e8. fis16 \times 2/3 { g8 a g~ } g8. g16 g8. g16 | g4. g8 b g4. |
 	e8. fis16 \times 2/3 { g8 a g~ } g8. g16 g8. g16 | g4. g8 e d4. | e8. fis16 \times 2/3 { g8 a g~ } g8. g16 g8. g16 | g4. g8 c8 b4. |
+
 	%% part "A"
 	d4 b8 a g4 e | a2. ais8 b | d2.~ d8 ais16 b | d8 b d cis c4 ais8 b |
 	d d,4.~ d2 | a'8. a16 a8. a16 a4~ a8 g16 e | g8 d4.~ d2 | c8 e g ais~ ais4. ais8 |
@@ -131,9 +133,11 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	Don't know
-	%% Volta
+
+	%% part "Volta"
 	why __ there's no sun up in the sky, Storm -- y Weath -- er, __
 	since my man and I __ ain't to -- geth -- er, __ keeps rain -- in' all __ the time. __ _
 	Life is
@@ -154,6 +158,7 @@
 
 % if part=='LyricsmoreFake':
 \lyricmode {
+
 	%% part "A"
 	_ _
 	bare __ gloom and mis -- 'ry ev -- 'ry -- where, Storm -- y Weath -- er, __

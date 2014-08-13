@@ -94,6 +94,7 @@
 			d'8 g, g g~ g2 |
 		}
 	}
+
 	%% part "B"
 	r4 e'4 \times 2/3 { e4 e e } |
 	e2 d | r4 d8 cis e d c b | d4. c8 c2 |
@@ -105,16 +106,19 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	In some se -- clud -- ed ren -- dez -- vous __ that o -- ver looks the av -- e --neu __
 	with some one shar -- ing a de -- light -- ful chat, of this and that and
 	%% Volta
 	Cock -- tails For Two. __
 	As we en -- joy a cig -- a --
+
 	%% part "B"
 	Cock -- tails For Two. __
 	My head may go reel -- ing, but my heart will be o -- be -- di --ent
 	with in -- tox -- i -- cat -- ing kiss -- es for the prin -- ci -- pal in -- gre -- di --ent.
+
 	%% part "A"
 	Most an -- y af -- ter -- nnon at five __ we'll be so gald we're both a -- live, __
 	then may -- be for -- tune will com -- plete her plan that all be -- gan with Cock -- tails For Two. __
@@ -123,6 +127,8 @@
 
 % if part=='LyricsmoreFake':
 \lyricmode {
+
+	%% part "A"
 	_ _ _ _ _ _ _
 	rette, __ to some ex -- qui -- site chan -- son -- ette __
 	two hand are sure to sly -- ly meet be -- neath a ser -- vi -- nette, with

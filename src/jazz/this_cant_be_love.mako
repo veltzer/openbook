@@ -110,6 +110,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	This Can't Be Love be -- cause I feel so well, __
 	no sobs, no sor -- rows, no sighs; __

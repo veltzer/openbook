@@ -80,12 +80,15 @@
 	%% part "A"
 	r8 c d e f g a c | a4 g8 f e d4. | r8 c d e f g a c | d4 c8 bes a g4. |
 	f8 g f g f2 | a8 a g f e ees4. | d8 bes' g f e d'4 c8~ | c1 |
+
 	%% part "A"
 	r8 c, d e f g a c | a4 g8 f e d4. | r8 c d e f g a c | d4 c8 bes a g4. |
 	f8 g f g f2 | a8 a g f e ees4. | d8 bes' g f e a4 f8~ | f2. e8 fis |
+
 	%% part "B"
 	e4 cis'2 e8 ees | d cis b a gis e4. | e8 fis fis gis \times 2/3 { gis4 a cis } | e2. e,8 fis |
 	e4 cis'2 e8 ees | d cis b a gis e4. | r8 a4 b8 a4 bes | c bes8 g~ g r8 r4 |
+
 	%% part "A"
 	r8 c, d e f g a c | a4 g8 f e d4. | r8 c d e f g a c | d4 c8 bes a g4. |
 	f8 g f g f2 | a8 a g f e ees4. | d8 bes' g f e a4 f8~ | f2. r4 |
@@ -94,6 +97,7 @@
 
 % if part=='LyricsFake':
 \lyricmode {
+
 	%% part "A"
 	A coun -- try dance was be -- ing held in a gar -- den,
 	I felt a bump and heard an "\"Oh," beg your par -- "don,\""
