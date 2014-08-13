@@ -6,13 +6,17 @@
 	version['doChords']=True
 	version['doVoice']=True
 	version['doLyrics']=True
-	attributes.addVersion('Fake', version)
-	attributes.setDefaultVersionName('Fake')
+	attributes.addVersion('Unknown', version)
+	#version['doChords']=True
+	#version['doVoice']=True
+	#version['doLyrics']=True
+	#attributes.addVersion('Real', version)
+	attributes.setDefaultVersionName('Unknown')
 
 	attributes['title']="The Nearness Of You"
 	attributes['style']="Jazz"
 	attributes['subtitle']="from the Paramount Picture \\\"Romance in the Dark\\\""
-	attributes['composer']="Hoagy Charmichael"
+	attributes['composer']="Hoagy Carmichael"
 	attributes['poet']="Ned Washington"
 	attributes['piece']="Slowly"
 	attributes['copyright']="1937, 1940 Famous Music Corporation"
@@ -22,16 +26,18 @@
 	attributes['completion']="5"
 	attributes['uuid']="aeb48162-da80-11e3-9daf-67e95f938714"
 	attributes['structure']="AABA"
+	attributes['location']="rbk2:261"
 %>
 % endif
 
 % if part=='Doc':
 	DONE:
+	- added the location in the real book volume II.
 	TODO:
 	- mark what has been done with this tune.
 % endif
 
-% if part=='ChordsFake':
+% if part=='ChordsUnknown':
 \chordmode {
 	\startSong
 	\startChords
@@ -68,7 +74,7 @@
 }
 % endif
 
-% if part=='VoiceFake':
+% if part=='VoiceUnknown':
 \relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante Moderato" 4 = 88
@@ -93,11 +99,10 @@
 	g2 bes4 aes8 g | f4 aes2 g4 | ees2 g4 f | d f2 ees4 |
 	bes1~ | bes8 c d ees \times 2/3 { f4 ees d } | bes'1~ | bes4 g8 aes \times 2/3 { bes4 aes g } |
 	c2. c,4 | d ees2 f4 | ees1~ | ees2 r |
-
 }
 % endif
 
-% if part=='LyricsFake':
+% if part=='LyricsUnknown':
 \lyricmode {
 
 	%% part "A"

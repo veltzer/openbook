@@ -103,6 +103,7 @@ books_translation={
 books_offsets={
 	'jfb': -1,
 	'rbk1': 13,
+	'rbk2': 7,
 	'rbk3': 5,
 	'tsrbk': -3,
 	'nrbk1': 13,
