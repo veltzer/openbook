@@ -103,22 +103,22 @@
 	\partial 4 e8 f |
 	%% part "A"
 	\repeat volta 2 {
-		g b g e g b g e | g g~ g2 e8 f | g b g e g b g e | g2. a8 b | \myEndLine
+		g b g e g b g e | g g~ g2 e8 f | g b g e g b g e | g2. a8 b |
 		c e c a c4. a8 | c e c a c4. a8 |
 	} \alternative {
 		{
-			g2. e4 | d2. e8 f | \myEndLineVoltaNotLast
+			g2. e4 | d2. e8 f |
 		}
 		{
-			g2. e4 | c2. c8 c' | \myEndLineVoltaLast
+			g2. e4 | c2. c8 c' |
 		}
 	}
 	%% part "B"
-	a4 c,8 c' a4 c,8 c' | a4 a2 c,8 c' | a4 c,8 c' a4 c,8 c' | a2. d,8 d' | \myEndLine
-	b4 d,8 d' b4 d,8 d' | b4 b2 d,8 d' | b4 d,8 d' b4 d,8 b' | g2. e8 f | \myEndLine
+	a4 c,8 c' a4 c,8 c' | a4 a2 c,8 c' | a4 c,8 c' a4 c,8 c' | a2. d,8 d' |
+	b4 d,8 d' b4 d,8 d' | b4 b2 d,8 d' | b4 d,8 d' b4 d,8 b' | g2. e8 f |
 	%% part "A"
-	g b g e g b g e | g g~ g2 e8 f | g b g e g b g e | g2. a8 b | \myEndLine
-	c e c a c4. a8 | c e c a c4. a8 | g2. e4 | c1 | \myEndLine
+	g b g e g b g e | g g~ g2 e8 f | g b g e g b g e | g2. a8 b |
+	c e c a c4. a8 | c e c a c4. a8 | g2. e4 | c1 |
 }
 % endif
 

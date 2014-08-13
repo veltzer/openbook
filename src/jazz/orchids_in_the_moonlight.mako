@@ -90,16 +90,16 @@
 	\key f \minor
 
 	%% part "A"
-	r8 f f g aes4 g8 f | des'2 c~ | c8 c c des ees4 des8 c | e!1 | \myEndLine
-	r8 bes bes c des4 c8 bes | f'2 e!2~ | e8 c c des ees!4 des8 c | f1 | \myEndLine
-	r8 f, f g aes4 g8 f | des'2 c~ | c8 c c des ees4 des8 c | f1 | \myEndLine
-	r8 des ees f~ f ees des bes | r c des ees~ ees des c aes | r bes c des~ des bes g e! | f4 r r2^\markup { \italic { Fine } } | \myEndLine
+	r8 f f g aes4 g8 f | des'2 c~ | c8 c c des ees4 des8 c | e!1 |
+	r8 bes bes c des4 c8 bes | f'2 e!2~ | e8 c c des ees!4 des8 c | f1 |
+	r8 f, f g aes4 g8 f | des'2 c~ | c8 c c des ees4 des8 c | f1 |
+	r8 des ees f~ f ees des bes | r c des ees~ ees des c aes | r bes c des~ des bes g e! | f4 r r2^\markup { \italic { Fine } } |
 	%% part "B"
 	\key f \major
-	r4 c8 a' aes4 bes,8 g' | f2 c~ | c4 f8 a c4. c8 | c1 | \myEndLine
-	r4 bes8 a bes c4 bes8 | a4 gis8 g gis a4 gis8 | g!4 fis8 f fis g4 e8 | c2. r4 | \myEndLine
-	r c8 a' aes4 bes,8 g' | f2 c~ | c8 f a c f4. f8 | f1 | \myEndLine
-	r4 d8 cis d e4 d8 | des4 des8 c des ees4 des8 | c4 c,8 a' aes4 bes,8 g' | f2. r4^\markup { \italic { D.C. al Fine } } | \myEndLine
+	r4 c8 a' aes4 bes,8 g' | f2 c~ | c4 f8 a c4. c8 | c1 |
+	r4 bes8 a bes c4 bes8 | a4 gis8 g gis a4 gis8 | g!4 fis8 f fis g4 e8 | c2. r4 |
+	r c8 a' aes4 bes,8 g' | f2 c~ | c8 f a c f4. f8 | f1 |
+	r4 d8 cis d e4 d8 | des4 des8 c des ees4 des8 | c4 c,8 a' aes4 bes,8 g' | f2. r4^\markup { \italic { D.C. al Fine } } |
 }
 % endif
 

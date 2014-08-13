@@ -121,22 +121,22 @@
 
 	%% part "A"
 	\repeat volta 2 {
-		ees2 ees' | d4 bes8 c d4 ees | ees,2 c' | bes1 | \myEndLine
+		ees2 ees' | d4 bes8 c d4 ees | ees,2 c' | bes1 |
 		c,2 aes' | g4 ees8 f g4 aes | f d8 ees f4 g |
 	} \alternative {
 		{
-			ees2 r | \myEndLineVoltaNotLast
+			ees2 r |
 		}
 		{
-			ees2. bes'4 | \myEndLineVoltaLast
+			ees2. bes'4 |
 		}
 	}
 	%% part "B"
-	g8 bes g bes g bes g bes | aes bes aes bes aes bes aes bes | c2 c~ | c r4 bes | \myEndLine
-	g8 bes g bes g bes g bes | a c a c a c a c | d2 d | f c | \myEndLine
+	g8 bes g bes g bes g bes | aes bes aes bes aes bes aes bes | c2 c~ | c r4 bes |
+	g8 bes g bes g bes g bes | a c a c a c a c | d2 d | f c |
 	%% part "A"
-	ees,2 ees' | d4 bes8 c d4 ees | ees,2 c' | bes1 | \myEndLine
-	c,2 aes' | g4 ees8 f g4 aes | f d8 ees f4 g | ees2 r | \myEndLine
+	ees,2 ees' | d4 bes8 c d4 ees | ees,2 c' | bes1 |
+	c,2 aes' | g4 ees8 f g4 aes | f d8 ees f4 g | ees2 r |
 }
 % endif
 

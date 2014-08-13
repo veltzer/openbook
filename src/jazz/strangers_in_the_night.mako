@@ -97,17 +97,20 @@
 	\key f \major
 
 	%% part "A"
-	f8 g g f g2~ | g8 f g a g4 f | e8 f f e f2~ | f8 e f g f4 e | \myEndLine
-	d8 e e d e2~ | e8 d e f e4 d | bes'1~ | bes2. r4 | \myEndLine
+	f8 g g f g2~ | g8 f g a g4 f | e8 f f e f2~ | f8 e f g f4 e |
+	d8 e e d e2~ | e8 d e f e4 d | bes'1~ | bes2. r4 |
+
 	%% part "A'"
-	g8 a a g a2~ | a8 g a bes a4 g | f8 g g f g2~ | g8 f g a g4 f | \myEndLine
-	e8 f f e f2~ | f8 e f g f4 e | c'1~ | c | \myEndLine
+	g8 a a g a2~ | a8 g a bes a4 g | f8 g g f g2~ | g8 f g a g4 f |
+	e8 f f e f2~ | f8 e f g f4 e | c'1~ | c |
+
 	%% part "B"
-	c8 bes bes a a2~ | a8 bes bes c c bes bes a | c bes bes a a2~ | a8 bes bes c c bes bes a | \myEndLine
-	bes a a g g2 | bes8 a a g g2 | bes8 a a g g f e f | a g g f f e d e | \myEndLine
+	c8 bes bes a a2~ | a8 bes bes c c bes bes a | c bes bes a a2~ | a8 bes bes c c bes bes a |
+	bes a a g g2 | bes8 a a g g2 | bes8 a a g g f e f | a g g f f e d e |
+
 	%% part "A"
-	f8 g g f g2~ | g8 f g a g4 f | e8 f f e f2~ | f8 e f g f4 e | \myEndLine
-	d8 e e d e2~ | e8 e f g f4 e | f1~ | f2. r4 | \myEndLine
+	f8 g g f g2~ | g8 f g a g4 f | e8 f f e f2~ | f8 e f g f4 e |
+	d8 e e d e2~ | e8 e f g f4 e | f1~ | f2. r4 |
 }
 % endif
 

@@ -98,18 +98,18 @@
 	\key g \major
 
 	%% part "A"
-	r4 b' c d | c b a g | a2. g4 | fis e2. | \myEndLine
-	r4 a bes c | bes a g f! | g8 a g2.~ | g2 r4 g^\markup {To Coda \musicglyph #"scripts.coda"} | \myEndLine
-	a2. a4 | a a b4. c8 | d4 d2.~ | d4 r e4. d8 | \myEndLine
-	b4 c d c~ | c2 b4 ais | b1~ | b2 r4 b | \myEndLine
+	r4 b' c d | c b a g | a2. g4 | fis e2. |
+	r4 a bes c | bes a g f! | g8 a g2.~ | g2 r4 g^\markup {To Coda \musicglyph #"scripts.coda"} |
+	a2. a4 | a a b4. c8 | d4 d2.~ | d4 r e4. d8 |
+	b4 c d c~ | c2 b4 ais | b1~ | b2 r4 b |
 	%% part "B"
-	g g g2~ | g4 a bes c | d2. c4 | bes4 g2 f!4 | \myEndLine
-	g g g2~ | g4 a bes c | d d d2~ | d4 d \times 2/3 { d d d } | \myEndLine
-	d2. d4 | e c d4. b8 | a4 b2.~ | b4 b d c | \myEndLine
-	b b2.~ | b4 r \times 2/3 { b a gis } | b1~ | b^\markup {D.C. al Coda} \myEndLine
+	g g g2~ | g4 a bes c | d2. c4 | bes4 g2 f!4 |
+	g g g2~ | g4 a bes c | d d d2~ | d4 d \times 2/3 { d d d } |
+	d2. d4 | e c d4. b8 | a4 b2.~ | b4 b d c |
+	b b2.~ | b4 r \times 2/3 { b a gis } | b1~ | b^\markup {D.C. al Coda} |
 	%% part "Coda"
-	a4. a8 a2~ | a4 a \times 2/3 { a b c } | d d2.~ | d4 r e4. d8 | \myEndLine
-	b4 c d c~ | c2 b4 b | g1~ | g2 r | \myEndLine
+	a4. a8 a2~ | a4 a \times 2/3 { a b c } | d d2.~ | d4 r e4. d8 |
+	b4 c d c~ | c2 b4 b | g1~ | g2 r |
 }
 % endif
 

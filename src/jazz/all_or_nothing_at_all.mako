@@ -104,25 +104,28 @@
 	\key c \major
 
 	%% part "A"
-	e1~ | e4 e \times 2/3 { e f c } | e1~ | e2. r4 | \myEndLine
-	e2 e | e \times 2/3 { e4 g c, } | d4. d8 d2~ | d2. r4 | \myEndLine
-	d2 d | d \times 2/3 { e4 cis d } | a'4. a8 a2~ | a b4 a | \myEndLine
-	g g2 g4 | g g2 g4 | g1 | r | \myEndLine
+	e1~ | e4 e \times 2/3 { e f c } | e1~ | e2. r4 |
+	e2 e | e \times 2/3 { e4 g c, } | d4. d8 d2~ | d2. r4 |
+	d2 d | d \times 2/3 { e4 cis d } | a'4. a8 a2~ | a b4 a |
+	g g2 g4 | g g2 g4 | g1 | r |
+
 	%% part "A"
-	e~ | e4 e \times 2/3 { e f c } | e1~ | e2. r4 | \myEndLine
-	e2 e | e \times 2/3 { e4 g c, } | d4. d8 d2~ | d2. r4 | \myEndLine
-	d4. d8 d4. d8 | d4. d8 \times 2/3 { e4 cis d } | a'4. a8 a2~ | a b4 a | \myEndLine
-	g g2 g4 | g g2 g4 | g1~ | g4 r r ees | \myEndLine
+	e~ | e4 e \times 2/3 { e f c } | e1~ | e2. r4 |
+	e2 e | e \times 2/3 { e4 g c, } | d4. d8 d2~ | d2. r4 |
+	d4. d8 d4. d8 | d4. d8 \times 2/3 { e4 cis d } | a'4. a8 a2~ | a b4 a |
+	g g2 g4 | g g2 g4 | g1~ | g4 r r ees |
+
 	%% part "B"
-	c' c c c | c4. c8 \times 2/3 { c4 des aes } | c1~ | c2. ees,4 | \myEndLine
-	c'4. c8 c4. c8 | des2 \times 2/3 { c4 bes aes } | g1~ | g2. ees4 | \myEndLine
-	\times 2/3 { bes' bes bes } bes4. bes8 | \times 2/3 { bes4 bes bes } \times 2/3 { bes c g } | bes1~ | bes2 c4 bes | \myEndLine
-	aes2 aes4 aes | aes aes2 aes4 | g1 | r4 d c b | \myEndLine
+	c' c c c | c4. c8 \times 2/3 { c4 des aes } | c1~ | c2. ees,4 |
+	c'4. c8 c4. c8 | des2 \times 2/3 { c4 bes aes } | g1~ | g2. ees4 |
+	\times 2/3 { bes' bes bes } bes4. bes8 | \times 2/3 { bes4 bes bes } \times 2/3 { bes c g } | bes1~ | bes2 c4 bes |
+	aes2 aes4 aes | aes aes2 aes4 | g1 | r4 d c b |
+
 	%% part "A"
-	e1 | \times 2/3 { e4 f c } \times 2/3 { e f c } | e1~ | e2. r4 | \myEndLine
-	e2 e | e \times 2/3 { e4 g c, } | d4. d8 d2~ | d2. r4 | \myEndLine
-	d2 d | d4. d8 \times 2/3 { e4 cis d } | a'1 | b | \myEndLine
-	c1~ | c4 c \times 2/3 { c c c } | c1~ | c2. r4 | \myEndLine
+	e1 | \times 2/3 { e4 f c } \times 2/3 { e f c } | e1~ | e2. r4 |
+	e2 e | e \times 2/3 { e4 g c, } | d4. d8 d2~ | d2. r4 |
+	d2 d | d4. d8 \times 2/3 { e4 cis d } | a'1 | b |
+	c1~ | c4 c \times 2/3 { c c c } | c1~ | c2. r4 |
 }
 % endif
 
@@ -133,16 +136,19 @@
 	Half a love nev -- er ap -- pealed to me. __
 	If your heart nev -- er could yield to me, __
 	then I'd rath -- er have noth -- ing at all!
+
 	%% part "A"
 	All __ Or Noth -- ing At All! __
 	If it's love, there is no in -- be -- tween. __
 	Why be -- gin, then cry for some -- thing that might have been. __
 	No, I'd rath -- er have noth -- ing at all. __
+
 	%% part "B"
 	But, please, don't bring your lips so close to my cheek. __
 	Don't smile or I'll be lost be -- yond re -- call. __
 	The kiss in your eyes, the touch of your hand makes me weak, __
 	And my heart may grow diz -- zy and fall.
+
 	%% part "A"
 	And if I fell un -- der the spell of your call. __
 	I would be caught in the un -- der -- tow. __

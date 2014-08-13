@@ -101,26 +101,26 @@
 	%% part "A"
 	\repeat volta 2 {
 		r8. c16 g'8 ges8~ ges4. f8 | ees4 \times 2/3 { ees8 c ees~ } ees2 |
-		r8. c16 ees8 g d'8. d16 c8 g~ | g1 | \myEndLine
+		r8. c16 ees8 g d'8. d16 c8 g~ | g1 |
 		r8. c,16 g'8 ges8~ ges4. f8 | ees8. ees16 c8 ees8~ ees4. c8 |
 		ees8. c16 ees8. c16 ees4 ees8 c~ |
 	} \alternative {
 		{
-			c2 r | \myEndLineVoltaNotLast
+			c2 r |
 		}
 		{
-			c2. c'4 | \myEndLineVoltaLast
+			c2. c'4 |
 		}
 	}
 	%% part "B"
-	c8 c4.~ c8 c bes ees,~ | ees ees4.~ ees2 | c'8 c4 c16 bes c4 bes8 ees,~ | ees2. c'4 | \myEndLine
-	b2~ b8 a4 b16 a | d,8 d4.~ d4 r8 e | fis8. fis16 fis8 fis~ fis4 fis8 g~ | g1 | \myEndLine
+	c8 c4.~ c8 c bes ees,~ | ees ees4.~ ees2 | c'8 c4 c16 bes c4 bes8 ees,~ | ees2. c'4 |
+	b2~ b8 a4 b16 a | d,8 d4.~ d4 r8 e | fis8. fis16 fis8 fis~ fis4 fis8 g~ | g1 |
 	%% part "A"
 	r8. c,16 g'8 ges8~ ges4. f8 | ees4 \times 2/3 { ees8 c ees~ } ees2 |
-	r8. c16 ees8 g d'8. d16 c8 g~ | g1 | \myEndLine
+	r8. c16 ees8 g d'8. d16 c8 g~ | g1 |
 	r8. c,16 g'8 ges8~ ges4. f8 | ees8. ees16 c8 ees8~ ees4. c8 |
 	ees8. c16 ees8. c16 ees4 ees8 c~ | c1 |
-	ees8. c16 ees8. c16 bes'8. g16 f8 g~ | g1 | \myEndLine
+	ees8. c16 ees8. c16 bes'8. g16 f8 g~ | g1 |
 }
 % endif
 

@@ -107,23 +107,23 @@
 
 	%% part "A"
 	\repeat volta 2 {
-		d4 e fis | g a b | c2 e,4 | dis2. | b'2 d,!4 | cis2. | a'2 c,!4 | b2. | \myEndLine
-		g'2 b,4 | c4. d8 ees f | g2 ees'4 | d2 c4 | f,2 d'4 | c2 bes4 | f2 des'4 | c2 bes4 | \myEndLine
-		ees, f g | aes bes c | d2 c4 | b2 a4 | d,2.~ | d~ | d~ | d4 r r | \myEndLine
+		d4 e fis | g a b | c2 e,4 | dis2. | b'2 d,!4 | cis2. | a'2 c,!4 | b2. |
+		g'2 b,4 | c4. d8 ees f | g2 ees'4 | d2 c4 | f,2 d'4 | c2 bes4 | f2 des'4 | c2 bes4 |
+		ees, f g | aes bes c | d2 c4 | b2 a4 | d,2.~ | d~ | d~ | d4 r r |
 	}
 	%% part "A"
-	g a b | d r r | c b a | g2 fis4 | e fis g | b2. | a4 g f | e2 d4 | \myEndLine
-	g2 b,4 | c4. b8 c d | ees4. f8 g bes | a4 bes c | f,2 a,4 | bes4. c8 des ees | f2 des'4 | c2 bes4 | \myEndLine
-	ees,8 ees f f g g | aes aes bes bes c c | d2 \times 2/3 { c8 d c } | b2 a4 | d,2.~ | d~ | d | r2. | \myEndLine
+	g a b | d r r | c b a | g2 fis4 | e fis g | b2. | a4 g f | e2 d4 |
+	g2 b,4 | c4. b8 c d | ees4. f8 g bes | a4 bes c | f,2 a,4 | bes4. c8 des ees | f2 des'4 | c2 bes4 |
+	ees,8 ees f f g g | aes aes bes bes c c | d2 \times 2/3 { c8 d c } | b2 a4 | d,2.~ | d~ | d | r2. |
 	%% part "A"
-	r4 d'8 d d d | c4 b2 | r4 c8 c c c | b4 a2 | r4 b8 b b b | a4 g2 | r4 a8 a a a | g4 f2 | \myEndLine
-	e4 f fis | g a b | c cis d | ees d c | f, g a | bes b c | cis d dis | e ees des | \myEndLine
-	c r8 bes4. | aes4 r8 bes4 c8 | d4 r8 c4 b8 | aes4 r fis8 e | d4 d d | f d4. c8 | d2.~ | d2 r4 | \myEndLine
+	r4 d'8 d d d | c4 b2 | r4 c8 c c c | b4 a2 | r4 b8 b b b | a4 g2 | r4 a8 a a a | g4 f2 |
+	e4 f fis | g a b | c cis d | ees d c | f, g a | bes b c | cis d dis | e ees des |
+	c r8 bes4. | aes4 r8 bes4 c8 | d4 r8 c4 b8 | aes4 r fis8 e | d4 d d | f d4. c8 | d2.~ | d2 r4 |
 	%% part "A"
-	d e fis | g a b | c2 e,4 | dis2. | b'2 d,!4 | cis2. | a'2 c,!4 | b2. | \myEndLine
-	g'2 b,4 | c4. d8 ees f! | g2 ees'4 | d2 c4 | f,!2 d'4 | c2 bes4 | f2 des'4 | c2 bes4 | \myEndLine
-	ees, f g | aes bes c | d2 c4 | b2 a4 | e'2.~ | e~ | e2 d4 | c2 b4 | \myEndLine
-	d2.~ | d~ | d2 c4 | b g4. e8 | g2.~ | g~ | g~ | g4 r r | \myEndLine
+	d e fis | g a b | c2 e,4 | dis2. | b'2 d,!4 | cis2. | a'2 c,!4 | b2. |
+	g'2 b,4 | c4. d8 ees f! | g2 ees'4 | d2 c4 | f,!2 d'4 | c2 bes4 | f2 des'4 | c2 bes4 |
+	ees, f g | aes bes c | d2 c4 | b2 a4 | e'2.~ | e~ | e2 d4 | c2 b4 |
+	d2.~ | d~ | d2 c4 | b g4. e8 | g2.~ | g~ | g~ | g4 r r |
 }
 % endif
 

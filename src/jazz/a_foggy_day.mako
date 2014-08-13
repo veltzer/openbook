@@ -103,16 +103,16 @@
 	\key f \major
 
 	%% part "A"
-	r4 c c c | ees2. ees4 | d d2. | a'1 | \myEndLine
-	r4 f f f | aes2. aes4 | g2. g4 | d'1 | \myEndLine
-	r4 e e e | c c2. | a a4 | f1 | \myEndLine
-	r4 a a a | c c2 c4 | a2. a4 | d,1 | \myEndLine
+	r4 c c c | ees2. ees4 | d d2. | a'1 |
+	r4 f f f | aes2. aes4 | g2. g4 | d'1 |
+	r4 e e e | c c2. | a a4 | f1 |
+	r4 a a a | c c2 c4 | a2. a4 | d,1 |
 
 	%% part "B"
-	r4 c c c | ees2. ees4 | d2. d4 | a'1 | \myEndLine
-	r4 f f f | aes2. aes4 | g2. g4 | d'1 | \myEndLine
-	f2 f4 f | d2. d4 | c2 c | a a4 bes | \myEndLine
-	c f, g bes | a f g bes | a2 f' | f, g | f1~ | f2. r4 | \myEndLine
+	r4 c c c | ees2. ees4 | d2. d4 | a'1 |
+	r4 f f f | aes2. aes4 | g2. g4 | d'1 |
+	f2 f4 f | d2. d4 | c2 c | a a4 bes |
+	c f, g bes | a f g bes | a2 f' | f, g | f1~ | f2. r4 |
 }
 % endif
 

@@ -104,26 +104,26 @@
 
 	%% part "A"
 	%%\repeat volta 2 {
-		bes'2. | ees, | aes | d, | g~ | g | r4 f ees | d ees f | \myEndLine
+		bes'2. | ees, | aes | d, | g~ | g | r4 f ees | d ees f |
 		g2 f4 | ees f g |
 	%%} \alternative {
 	\set Score.repeatCommands = #'((volta "1, 3") end-repeat)
 	%%	{
-			aes aes g | f g aes | bes2.~ | bes~ | bes~ | bes | \myEndLineVoltaNotLast
+			aes aes g | f g aes | bes2.~ | bes~ | bes~ | bes |
 	%%	}
 	\set Score.repeatCommands = #'((volta #f) (volta "2.") end-repeat)
 	%%	{
-			a!2 g4 | fis! g a! | b!2.~ | b~ | b~ | b | \myEndLineVoltaLast
+			a!2 g4 | fis! g a! | b!2.~ | b~ | b~ | b |
 	%%	}
 	%%}
 	\set Score.repeatCommands = #'((volta #f))
 	%% part "B"
-	c2.~ | c2 bes4 | c2.~ | c2 bes4 | c bes aes | g2 d4 | f2 ees4 | c' bes aes | \myEndLine
-	g2 aes4 | g2 d4 | ees g bes | d ees c | bes2.~ | bes~ | bes~ | bes^\markup {D.C. al Coda} | \myEndLine
+	c2.~ | c2 bes4 | c2.~ | c2 bes4 | c bes aes | g2 d4 | f2 ees4 | c' bes aes |
+	g2 aes4 | g2 d4 | ees g bes | d ees c | bes2.~ | bes~ | bes~ | bes^\markup {D.C. al Coda} |
 	%% part "Coda"
-	c2.~ | c | r4 d c | d c d | bes2.~ | bes | \myEndLine
-	r4 bes aes | bes aes bes | g2.~ | g~ | g | r4 f ees | f ees f | ees f ees | \myEndLine
-	c'2. | d,2. | ees2.( | bes'2.) | \myEndLine
+	c2.~ | c | r4 d c | d c d | bes2.~ | bes |
+	r4 bes aes | bes aes bes | g2.~ | g~ | g | r4 f ees | f ees f | ees f ees |
+	c'2. | d,2. | ees2.( | bes'2.) |
 }
 % endif
 

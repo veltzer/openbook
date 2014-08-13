@@ -377,8 +377,12 @@ check_relative:
 check_line_break:
 	$(info doing [$@])
 	$(Q)-git grep "\myEndLine" -- *.mako | grep \%\%
+.PHONY: check_python
+check_python:
+	$(info doing [$@])
+	$(Q)scripts/check.py
 .PHONY: check_all
-check_all: check_empty_copyright check_whitespace check_and check_extra_files check_min_chords check_uuid_basic check_chordChanges check_bar check_break check_completion check_include check_threeunderscores check_mark check_bad_lyric_breakup check_veltzer_https check_uuid check_empty check_relative check_line_break
+check_all: check_empty_copyright check_whitespace check_and check_extra_files check_min_chords check_uuid_basic check_chordChanges check_bar check_break check_completion check_include check_threeunderscores check_mark check_bad_lyric_breakup check_veltzer_https check_uuid check_empty check_relative check_line_break check_python
 
 # rules
 

@@ -94,18 +94,18 @@
 	\key c \major
 
 	%% part "A"
-	r4 cis8 d ais' b4. | cis,8 d ais' b~ b4 r | r cis,8 d bes' e,4. | cis8 d bes' e,~ e4 r | \myEndLine
-	r4 dis8 e c' cis4. | dis,8 e c'! cis~ cis4 r | r dis,8 e c'! fis,!4. | dis8 e c' fis,~ fis4 r | \myEndLine
+	r4 cis8 d ais' b4. | cis,8 d ais' b~ b4 r | r cis,8 d bes' e,4. | cis8 d bes' e,~ e4 r |
+	r4 dis8 e c' cis4. | dis,8 e c'! cis~ cis4 r | r dis,8 e c'! fis,!4. | dis8 e c' fis,~ fis4 r |
 	%% part "B"
-	r4 dis8 e c' cis4. | dis,8 e c'! cis~ cis4 r | r dis,8 e c'! fis,!4. | dis8 e c' fis,~ fis4 r | \myEndLine
-	r4 cis8 d ais' b4. | cis,8 d ais' b~ b4 r | r cis,8 d bes' e,4. | cis8 d bes' e,~ e4 r | \myEndLine
+	r4 dis8 e c' cis4. | dis,8 e c'! cis~ cis4 r | r dis,8 e c'! fis,!4. | dis8 e c' fis,~ fis4 r |
+	r4 cis8 d ais' b4. | cis,8 d ais' b~ b4 r | r cis,8 d bes' e,4. | cis8 d bes' e,~ e4 r |
 	%% part "C"
-	fis,4-> fis-> cis'8 dis fis gis | a4 gis8 a fis4 dis | fis,-> fis-> cis'8 dis fis a | r a4 gis8 fis4 dis | \myEndLine
-	b-> b-> cis8 dis fis gis | b4 a8 b a4 fis | f!8 aes ces ees~ ees ces4. | fis,8 a c! e~ e c4. | \myEndLine
+	fis,4-> fis-> cis'8 dis fis gis | a4 gis8 a fis4 dis | fis,-> fis-> cis'8 dis fis a | r a4 gis8 fis4 dis |
+	b-> b-> cis8 dis fis gis | b4 a8 b a4 fis | f!8 aes ces ees~ ees ces4. | fis,8 a c! e~ e c4. |
 	%% part "B"
-	r4 dis,8 e c' cis4. | dis,8 e c'! cis~ cis4 r | r dis,8 e c'! fis,!4. | dis8 e c' fis,~ fis4 r | \myEndLine
-	r4 cis8 d ais' b4. | cis,8 d ais' b~ b4 r | r cis,8 d bes' e,4. | cis8 d bes' e,~ e4 r | \myEndLine
+	r4 dis,8 e c' cis4. | dis,8 e c'! cis~ cis4 r | r dis,8 e c'! fis,!4. | dis8 e c' fis,~ fis4 r |
+	r4 cis8 d ais' b4. | cis,8 d ais' b~ b4 r | r cis,8 d bes' e,4. | cis8 d bes' e,~ e4 r |
 	%% part "Coda"
-	cis8 d ais' b~ b4 a!8 c~ | c1\fermata | \myEndLine
+	cis8 d ais' b~ b4 a!8 c~ | c1\fermata |
 }
 % endif
