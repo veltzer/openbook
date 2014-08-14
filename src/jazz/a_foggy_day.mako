@@ -138,6 +138,7 @@
 	\partial 4 s4 |
 
 	\repeat volta 2 {
+
 		\myMark "A"
 		\startPart
 		f1:maj7 | a2:m7.5- d:7.9- | g1:m7 | c:7 | \myEndLine

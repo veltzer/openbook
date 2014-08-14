@@ -58,23 +58,29 @@
 \chordmode {
 	\startChords
 	\startSong
+
 	\partial 4 s4
+
 	\repeat volta 2 {
+
 		\myMark "A"
 		\startPart
 		c2 cis:dim7 | d:m7 dis:dim7 | c e:7 | f:maj7 fis:dim7 | \myEndLine
 		c d:7 | g:7 a:7 | d1:m7 | g:7 | \myEndLine
 		\endPart
+
 		\myMark "A"
 		\startPart
 		c2 cis:dim7 | d:m dis:dim7 | c e:7 | f:maj7 fis:dim7 | \myEndLine
 		c d:7 | g:7 c:7 | f1:maj7 | a:7 | \myEndLine
 		\endPart
+
 		\myMark "B"
 		\startPart
 		d1*2:m | a:m | \myEndLine
 		d1:m | g:7 | e2:m7 a:7.9+ | d:m7 g:7 | \myEndLine
 		\endPart
+
 		\myMark "A"
 		\startPart
 		c2 cis:dim7 | d:m dis:dim7 | c e:7 | f:maj7 fis:dim7 | \myEndLine

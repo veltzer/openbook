@@ -37,6 +37,7 @@
 	\partial 8 s8 |
 
 	\repeat volta 2 {
+
 		\myMark "A"
 		\startPart
 		g2:6 c:9 | g1:6 | g2:6 c4:m7 f:7 | bes2:m7 ees:7 | \myEndLine

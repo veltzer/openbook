@@ -73,6 +73,7 @@
 	\partial 2. s2. |
 
 	\repeat volta 2 {
+
 		\myMark "A"
 		\startPart
 		g1*2:maj7 | g1:m7 | c:7 | \myEndLine

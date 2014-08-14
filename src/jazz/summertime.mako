@@ -82,6 +82,7 @@
 	\partial 4 s4 |
 
 	\repeat volta 2 {
+
 		\myMark "A"
 		\startPart
 		d1*3:m | d2:m d:7.9+ | \myEndLine

@@ -70,17 +70,29 @@
 	\startSong
 
 	\partial 4 s4 |
+
 	\repeat volta 2 {
+
 		\myMark "A"
+		\startPart
 		c1:6 | cis:dim7 | g:7/d | dis:dim7 | \myEndLine
 		e:m7 | a:m7 | d:m7 | g:7 | \myEndLine
+		\endPart
+
 		\myMark "B"
+		\startPart
 		c:maj7 | c2:7 a4:13 aes:13 | g2:13 d:m7 | g:dim7 g:7 | \myEndLine
 		c1:6 | a2:7 fis4:13 f:13 | e2:7 a:7 | d:7 g:7 | \myEndLine
+		\endPart
+
 		\myMark "A"
+		\startPart
 		c1:6 | cis:dim7 | g:7/d | dis:dim7 | \myEndLine
 		e:m7 | a:m7 | d:m7 | g:7 | \myEndLine
+		\endPart
+
 		\myMark "C"
+		\startPart
 		c:6 | c2:7 a:7 | d:m7 a:7 | d:m7 dis:dim7 | \myEndLine
 		e:m7 a:7 | d:m7 g:7.9- |
 
@@ -93,6 +105,7 @@
 			c:6 f:7 | c1:6.9 | \myEndLineVoltaLast
 		}
 	}
+	\endPart
 }
 % endif
 
@@ -184,6 +197,7 @@
 	\partial 4 s4 |
 
 	\repeat volta 2 {
+
 		\myMark "A"
 		\startPart
 		c1:6 | a:m7 | g:7 | dis:dim | \myEndLine
@@ -192,6 +206,7 @@
 	}
 	\alternative {
 		{
+
 			\myMark "B"
 			\startPart
 			c:6 | e2.:m7 aes4:7 | d2:m7 g:7 | d:m7 g:7 | \myEndLine
@@ -199,6 +214,7 @@
 			\endPart
 		}
 		{
+
 			\myMark "C"
 			\startPart
 			c1:maj7 | c2:7/bes g4:7 c:7 | f2:maj7 a:7/e | d:m7 dis:dim | \myEndLine

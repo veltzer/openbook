@@ -43,8 +43,8 @@
 
 % if part=='Doc':
 	DONE:
-	- added the real book pdf.
-	- added the fake book pdf.
+	- added the real book location.
+	- added the fake book location.
 	- added the meta data from the fake book.
 	- wrote down the tunes structure.
 	- added lyrics url.
@@ -58,10 +58,7 @@
 	- heard the real book version to make sure it sounds ok and is in good pace.
 	- added you tube performances.
 	TODO:
-	- add the fake book version (epdf is already there).
-	REMARK:
-	- the structure of this tune could also be thought of as "ABAC" since the first 8 bars of the A and B
-	parts of an "AB" conception are almost identical.
+	- add the fake book version.
 % endif
 
 % if part=='ChordsReal':
@@ -70,21 +67,30 @@
 	\startSong
 
 	\myMark "A"
+	\startPart
 	\repeat volta 2 {
 		d1:m7 | g:m7 | d:m7 | g:7 | \myEndLine
 		c:maj7 | f:maj7 | e:m7 |
 	} \alternative {
 		{
 			f:7 | \myEndLine
+			\endPart
+
 			\myMark "B"
+			\startPart
 			d:m7 | g:7 | c:maj7 | a:m7 | \myEndLine
 			d:m7 | g:7 | e:m7 | a:7 | \myEndLine
+			\endPart
 		}
 		{
 			a:7 | \myEndLine
+			\endPart
+
 			\myMark "C"
+			\startPart
 			d:m7 | f:m6 | c:maj7 | e2:7 ees:dim | \myEndLine
 			d1:m7 | g:7 | c1*2:6 | \myEndLine
+			\endPart
 		}
 	}
 
@@ -100,17 +106,22 @@
 	\key c \major
 	\time 4/4
 
+	%% part "A"
 	\repeat volta 2 {
 		a'1 | d,2. e4 | f2 e4. f8 | b2. a4 |
 		g2 fis4 g | d' des c b | a2 gis4. a8 |
 	} \alternative {
 		{
 			g'!1 |
+
+			%% part "B"
 			g | a,2. b4 | e e e2~ | e4 r r2 |
 			r4 g g,4. g8 | aes aes4 aes8 a4 a8 b~ | b4 b b2~ | b4 r r2 |
 		}
 		{
 			a'2. e4 |
+
+			%% part "C"
 			g2. d4 | f2. c4 | e2 b4 c | d des c b |
 			a2 e' | e ees4 d | c1~ \mark \markup { \italic { Fine } } | c4 r r2 |
 		}

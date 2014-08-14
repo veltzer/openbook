@@ -68,16 +68,19 @@
 	fis1:m7 | b2:7.9 b:7.9- | e1:m7 | a:7 | \myEndLine
 	a:m7 | d:7 | g:maj7| c:maj7 | \myEndLine
 	\endPart
+
 	\myMark "B"
 	\startPart
 	fis:m7.5- | b:7 | e1.:m7 e2:m7/d | \myEndLine
 	cis1:m7.5- | fis:7 | fis:m7 | b:7 | \myEndLine
 	\endPart
+
 	\myMark "A"
 	\startPart
 	fis1:m7 | b2:7.9 b:7.9- | e1:m7 | a:7 | \myEndLine
 	a:m7 | d:7 | b:m7.5- | e:7.3-.5-.9-.11-.13- | \myEndLine
 	\endPart
+
 	\myMark "C"
 	\startPart
 	a:m7 | c2:m7 f:7 | b1:m7 | e:7.9- | \myEndLine

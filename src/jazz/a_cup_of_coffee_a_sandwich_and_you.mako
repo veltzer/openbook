@@ -31,38 +31,41 @@
 	\startSong
 	\startChords
 
-	\partial 2.
-	s4 f2:5+ |
+	\partial 2. s4 f2:5+ |
+
 	\repeat volta 2 {
+
 		\myMark "A"
 		\startPart
 		bes1 | ees:m | bes | bes2 b:dim7 | \myEndLine
 		c4:m7 f2.:7 | f1:5+ | bes2 b:dim7 | f:7 f:5+ | \myEndLine
 		\endPart
+
 		\myMark "A"
 		\startPart
 		bes1 | ees:m | bes | bes2 b:dim7 | \myEndLine
 		c4:m7 f2.:7 | f1:5+ | bes | bes2 f4:7 f:m6 | \myEndLine
 		\endPart
+
 		\myMark "B"
 		\startPart
 		ees1*2:7 | a1:m | d4:7 g2.:7 | \myEndLine
 		c1:7 | c:7 | c:m7 | f2:7 f:5+ | \myEndLine
 		\endPart
+
 		\myMark "A"
 		\startPart
 		bes1 | ees:m6 | bes | bes2 b:dim7 | \myEndLine
 		c4:m7 f2.:7 | c4:m7 f2.:7 |
 	} \alternative {
 		{
-			bes2 a:7 | f:7 f:5+ |
+			bes2 a:7 | f:7 f:5+ | \myEndLineVoltaNotLast
 		}
 		{
-			bes2 ees:6 | bes1 |
+			bes2 ees:6 | bes1 | \myEndLineVoltaLast
 		}
 	}
 	\endPart
-	\myEndLine
 
 	\endChords
 	\endSong

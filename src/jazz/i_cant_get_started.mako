@@ -153,6 +153,7 @@
 	\startSong
 
 	\repeat volta 2 {
+
 		\myMark "A"
 		\startPart
 		d1*2:m7 | des:dim7 | \myEndLine

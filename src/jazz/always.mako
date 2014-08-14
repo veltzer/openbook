@@ -55,6 +55,7 @@
 	\startChords
 
 	\repeat volta 2 {
+
 		\myMark "A"
 		\startPart
 		f2.*4 | \myEndLine
@@ -62,6 +63,7 @@
 		f2. | f2 f4:7 | a2.*2 | \myEndLine
 		e:7 | a2. | c2.:7 | \myEndLine
 		\endPart
+
 		\myMark "B"
 		\startPart
 		f2.*2 | f2.:7 | f4:7/f f:7/e f:7/ees | \myEndLine

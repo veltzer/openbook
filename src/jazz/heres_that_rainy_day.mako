@@ -73,6 +73,7 @@
 	\startSong
 
 	\repeat volta 2 {
+
 		\myMark "A"
 		\startPart
 		g2.:maj9 g4:maj9/fis | bes2:7/f e:7.5- | ees1:maj7 | ees:6 | \myEndLine
@@ -118,16 +119,20 @@
 	\key g \major
 
 	\repeat volta 2 {
-		%% "A" part
+
+		%% part "A"
 		d4 d2 d4 | d f bes d | d2 c4. b!8 | c1 |
 		d,4 d2 d4 | d fis a c | b1~ | b2. r4 |
-		%% "B" part
+
+		%% part "B"
 		ees2 ees | ees4 g, aes a | d2 f,4 fis | g2 f4 g |
 		c c8 c c4 c8 c | c4 e, eis fis | b1~ | b2. r4 |
-		%% "A" part
+
+		%% part "A"
 		d,4 d2 d4 | d f bes d | d2 c4. b!8 | c1 |
 		d,4 d2 d4 | d fis a c | b1~ | b2. r4 |
-		%% "C" part
+
+		%% part "C"
 		e4 e2 e4 | e a, b c | d2 fis,4 g | a1 |
 		d,4 d2 d4 | d fis a b |
 	} \alternative {
@@ -170,6 +175,7 @@
 	\startSong
 
 	\repeat volta 2 {
+
 		\myMark "A"
 		\startPart
 		f2:m c:7/e | aes:7/ees d:7 | des:maj7 c:m7 | bes:m bes:m7 | \myEndLine
@@ -177,6 +183,7 @@
 		\endPart
 	} \alternative {
 		{
+
 			\myMark "B"
 			\startPart
 			bes1:m7 | ees:7 | aes:maj7 | des:maj7 | \myEndLine
@@ -184,6 +191,7 @@
 			\endPart
 		}
 		{
+
 			\myMark "C"
 			\startPart
 			bes1:maj7 | g2:m7 c:7 | a1:m7 | aes:dim | \myEndLine

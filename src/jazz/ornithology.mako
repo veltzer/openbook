@@ -57,6 +57,7 @@
 	\partial 8 s8 |
 
 	\repeat volta 2 {
+
 		\myMark "A"
 		\startPart
 		g1*2:maj7 | g2:m7 c:7 | g:m7 | c:7 | \myEndLine
@@ -64,6 +65,7 @@
 		\endPart
 
 		\myMark "B"
+
 		\myMark "C"
 		\startPart
 		ees:7 | d:7 |

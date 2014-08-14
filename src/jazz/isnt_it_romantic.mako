@@ -65,6 +65,7 @@
 	\startSong
 	\partial 2 \OPC bes2:7 |
 	\repeat volta 2 {
+
 		\myMark "A"
 		\startPart
 		ees:6 c:m7 | f:m7 bes:7 | ees:maj7 e:dim7 | f:m7 bes:7 | \myEndLine
@@ -72,6 +73,7 @@
 		\endPart
 	} \alternative {
 		{
+
 			\myMark "B"
 			\startPart
 			aes1:maj7 | bes2:7 g:7 | c:m g:7/b | bes:m7 ees:7 | \myEndLine
@@ -79,6 +81,7 @@
 			\endPart
 		}
 		{
+
 			\myMark "C"
 			\startPart
 			f2:m f:m/ees | d:m7.5- g:7 | c:m c:m/bes | c:m/a aes:6 | \myEndLine
