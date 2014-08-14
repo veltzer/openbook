@@ -28,6 +28,12 @@
 	attributes['uuid']="2507f6ec-da80-11e3-9bfd-ff436f70a1a7"
 	attributes['structure']="AABA"
 	attributes['location']="jfb:313"
+
+	attributes['idyoutuberemark1']="Nat King Cole in a classic..."
+	attributes['idyoutube1']="HLQZZoAkdig"
+	attributes['idyoutuberemark2']="The Beatles?!?"
+	attributes['idyoutube2']="b_Xg_md46Sw"
+	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Red-Sails-In-the-Sunset-lyrics-Nat-King-Cole/F51AC099651BC18A48256AF1000B7499"
 %>
 % endif
 
@@ -35,8 +41,17 @@
 	DONE:
 	- added location from the fake book.
 	- added meta data from the fake book.
+	- filled in the structure of this tune.
+	- added the fake book chords.
+	- added the fake book tune.
+	- added the fake book lyrics.
+	- checked the fake book chords.
+	- checked the fake book tune.
+	- checked the fake book lyrics.
+	- played the tune for tempo and bugs.
+	- added youtube performances and lyrics url.
 	TODO:
-	- add youtube performances and lyrics url.
+	- get another version of this tune.
 % endif
 
 % if part=='ChordsFake':
@@ -85,10 +100,10 @@
 
 % if part=='VoiceFake':
 \relative {
-	\time 2/2
-	\key g \major
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 100
+	\time 2/2
+	\key g \major
 
 	\repeat volta 2 {
 
@@ -122,11 +137,11 @@
 \lyricmode {
 
 	%% part "A"
-	Red Sails In The Sun -- set way out on the sea. oh! ca -- ry my loved one
+	Red Sails In The Sun -- set way out on the sea, oh! car -- ry my loved one
 	home safe -- ly to me.
 
 	%% part "A"
-	He sailed at the dawn -- ing. all day I've been blue.
+	He sailed at the dawn -- ing, all day I've been blue.
 	Red Sails In The Sun -- set I'm trust -- ing in you.
 
 	%% part "B"
