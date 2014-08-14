@@ -38,6 +38,10 @@ def check_file(file):
 			error(line, file)
 		if line.find('%% part')!=-1 and prev=='' and prevprev=='':
 			error(line, file)
+		if line.find('\myEndLine')!=-1 and line.find('%%')!=-1:
+			error(line, file)
+		if line.find('relative')!=-1 and not line.endswith('\\relative {'):
+			error(line, file)
 		prevprev=prev
 		prev=line
 
