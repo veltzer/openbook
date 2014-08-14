@@ -63,6 +63,7 @@
 	\startSong
 
 	\repeat volta 2 {
+
 		\myMark "A"
 		\startPart
 		ees2 c:7.9-.5+ | f:m7 bes:7 | ees c:7.9-.5+ | f:m7 bes:7 | \myEndLine

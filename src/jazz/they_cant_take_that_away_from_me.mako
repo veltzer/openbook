@@ -64,16 +64,19 @@
 	ees1:6 | ees2/g ges:dim7 | f:m7 bes:9 | f:m7 bes:7.11 | \myEndLine
 	ees1 | bes2:m7 ees:13 | aes c4:7 f:7 | f1:m7/bes | \myEndLine
 	\endPart
+
 	\myMark "A"
 	\startPart
 	ees1:6 | ees2/g ges:dim7 | f:m7 bes:7 | f:m7 bes:7.11 | \myEndLine
 	ees1 | bes2:m7 ees:13 | aes bes:7 | ees1:6 | \myEndLine
 	\endPart
+
 	\myMark "B"
 	\startPart
 	g2:m c4:7 d:7.9- | g2:m c4:7 d:7.9- | g2:m a:7 | a:m7 d:7 | \myEndLine
 	g2:m c4:7 d:7.9- | g2:m bes4:m c:7 | f2:7 bes:7 | f1:m7/bes | \myEndLine
 	\endPart
+
 	\myMark "A"
 	\startPart
 	ees1:6 | ees2/g ges:dim7 | f:m7 bes:7 | f:m7 bes:5.11 | \myEndLine

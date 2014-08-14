@@ -75,6 +75,7 @@
 	}
 	\alternative {
 		{
+
 			\myMark "B"
 			\startPart
 			c2/e aes:7/ees | d:m7 g:7 | a:m7 d:7.9- | g2.:maj7 b4:7 | \myEndLine
@@ -82,6 +83,7 @@
 			\endPart
 		}
 		{
+
 			\myMark "C"
 			\startPart
 			a2:m a:m7+ | a:m7 a:m6 | g2:m7 c:7 | f:maj7 f4:m7 bes:7 | \myEndLine

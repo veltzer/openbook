@@ -87,12 +87,14 @@
 	c1:maj7 | g4/b a:m7 g2:maj7 | c1:maj7 | g2/b a4:m7 g:maj7 | \myEndLine
 	c2 cis:dim7 | g/d e:7 | a4:m7 b:7 e2:m7 | a:7 a4:m7 d:7 | \myEndLine
 	\endPart
+
 	\myMark "A"
 	\startPart
 	g2 gis:dim7 | a:m7 d:9 | g e:7 | a:m7 d:9 | \myEndLine
 	g e:7 | a:m7 d:7.5+.9- | g1 | a2:m7 d:7.5+.9- | \myEndLine
 	g a4:m7 aes:maj7 | g:maj7 c g2:6 | \myEndLine
 	\endPart
+
 	\endSong
 	\endChords
 }

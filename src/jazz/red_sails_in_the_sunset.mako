@@ -9,26 +9,34 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
+	# from the fake book
 	attributes['title']="Red Sails In The Sunset"
 	attributes['style']="Jazz"
+	# from the fake book
 	attributes['composer']="Hugh Williams"
+	# from the fake book
 	attributes['poet']="Jimmy Kennedy"
+	# from the fake book
 	attributes['piece']="Slowly"
-	# this is from the fake book
-	attributes['copyright']="1935 The Peter Maurice Music Co. Ltd, London England"
-	attributes['copyrightextra']="United Sates Copyright Renewed andAssigned to Sharpiro Bernstein & Co., Inc."
+	# from the fake book
+	attributes['copyright']="1935 The Peter Maurice Music Co. Ltd., London, England"
+	# from the fake book
+	attributes['copyrightextra']="United Sates Copyright Renewed and Assigned to Sharpiro, Bernstein & Co., Inc."
 
 	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
 	attributes['uuid']="2507f6ec-da80-11e3-9bfd-ff436f70a1a7"
 	attributes['structure']="AABA"
+	attributes['location']="jfb:313"
 %>
 % endif
 
 % if part=='Doc':
 	DONE:
+	- added location from the fake book.
+	- added meta data from the fake book.
 	TODO:
-	- mark what has been done to this tune.
+	- add youtube performances and lyrics url.
 % endif
 
 % if part=='ChordsFake':
@@ -37,6 +45,7 @@
 	\startSong
 
 	\repeat volta 2 {
+
 		\myMark "A"
 		\startPart
 		g1*2 | c2 c:m6 | g1 | \myEndLine

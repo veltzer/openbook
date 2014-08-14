@@ -34,38 +34,41 @@
 	\startChords
 	\startSong
 
-	\startPart
 	\repeat volta 2 {
+
 		\myMark "A"
 		\startPart
 		s1 | s4 c d:m7 dis8:dim7 c/e | c1/e | c4/e a b:m7 c8:dim7 a:7/cis | \myEndLine
 		a1:7/cis | d:7 | g:7 | c4 c/e ees:dim7 d8:m7 c | \myEndLine
 		\endPart
+
 		\myMark "A"
 		\startPart
 		c1 | c4 c d:m7 dis8:dim7 c/e | c1/e | c4/e a b:m7 c8:dim7 a:7/cis | \myEndLine
 		a1:7/cis | d:7 | g:7 | c4 c/e ees:dim7 d8:m7 c | \myEndLine
 		\endPart
+
 		\myMark "B"
 		\startPart
 		g2:m7 c:7 | f2..:6 bes8:9 | bes1:9 | c:maj7 | \myEndLine
 		c2.:7 c4:7.5+ | d1:7 | fis2:7.5- b:7 | e4:m7 ees:dim7 d4.:7 g8:7 |
 		g1:7 | g4:7 c d:m7 dis8:dim7 c/e |
 		\endPart
+
 		\myMark "A"
 		\startPart
-		c1 | c4/e a b:m7 c8:dim7 a:7/cis | a1:7/cis | d:7 |
+		c1 | c4/e a b:m7 c8:dim7 a:7/cis | a1:7/cis | d:7 | \myEndLine
 		g:7 |
 	} \alternative {
 		{
-			c | c |
+			c | c | \myEndLineVoltaNotLast
 		}
 		{
-			s4 c/e ees:dim7 d8:m7 c | c1 | c | c:7.9+ |
-			\endPart
+			s4 c/e ees:dim7 d8:m7 c | c1 | c | c:7.9+ | \myEndLineVoltaLast
 		}
 	}
 	\endPart
+
 	\endSong
 	\endChords
 }

@@ -60,16 +60,19 @@
 	\startChords
 	\startSong
 
-	\startPart
 	\repeat volta 2 {
+
 		\myMark "A"
+		\startPart
 		a1*2:m6 | b1:m7.5- | e:7 | \myEndLine
 		a2:m7 d:7 | g:m7 c:7 | f1*2:6 | \myEndLine
+		\endPart
+
 		\myMark "B"
+		\startPart
 		fis1:m7.5- | b:7.9- | e:m7.5- | a:7.9- | \myEndLine
 		d:m7.5- | b2:m7.5- e:7 |
-	}
-	\alternative {
+	} \alternative {
 		{
 			a1:m6 | bes:7 | \myEndLine
 		}
@@ -93,12 +96,15 @@
 	\key a \minor
 
 	\repeat volta 2 {
+
+		%% part "A"
 		e2. d8 c | c2. d8 e | e2. d8 c | b2. c8 d |
 		e1~ | e2 e8 g e c | d1~ | d2. r4 |
+
+		%% part "B"
 		c'2. b8 a | a2. g8 fis | bes2. a8 g | g2. f8 e |
 		aes2. g8 f | f2. e8 d |
-	}
-	\alternative {
+	} \alternative {
 		{
 			e1~ | e2. r4 |
 		}

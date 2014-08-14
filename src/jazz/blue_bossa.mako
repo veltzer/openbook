@@ -50,6 +50,7 @@
 	\partial 4 s4 |
 
 	\repeat volta 3 {
+
 		\myMark "A"
 		\startPart
 		c1*2:m7 | f:m7 | \myEndLine

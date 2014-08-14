@@ -61,20 +61,21 @@
 	\startSong
 
 	\repeat volta 2 {
-	\myMark "A"
-	\startPart
-	a1:m7 | d:m7 | g:7 | c:maj7 | \myEndLine
-	f:maj7 | b:m7.5- | e:7.9- | a2.:m7 a4:7.9- | \myEndLine
-	d1:m7 | g2.:7.9 g4:7.9- | c1:maj7.9 | a2.:m7 a4:m7.9 | \myEndLine
-	d1:m7 | g:7 | f2:dim7/c c:maj7 | b:m7 e:7 | \myEndLine
-	\endPart
 
-	\myMark "B"
-	\startPart
-	a1:m7 | d:m7 | g:7 | c:maj7 | \myEndLine
-	f:maj7 | b:m7.5- | e:7.9- | a2.:m7 a4:7.9- | \myEndLine
-	d1:m7 | g2.:7.9 g4:7/f |
-	\endPart
+		\myMark "A"
+		\startPart
+		a1:m7 | d:m7 | g:7 | c:maj7 | \myEndLine
+		f:maj7 | b:m7.5- | e:7.9- | a2.:m7 a4:7.9- | \myEndLine
+		d1:m7 | g2.:7.9 g4:7.9- | c1:maj7.9 | a2.:m7 a4:m7.9 | \myEndLine
+		d1:m7 | g:7 | f2:dim7/c c:maj7 | b:m7 e:7 | \myEndLine
+		\endPart
+
+		\myMark "B"
+		\startPart
+		a1:m7 | d:m7 | g:7 | c:maj7 | \myEndLine
+		f:maj7 | b:m7.5- | e:7.9- | a2.:m7 a4:7.9- | \myEndLine
+		d1:m7 | g2.:7.9 g4:7/f |
+		\endPart
 	} \alternative {
 		{
 			e1:m7.5- | a:7.9- | \myEndLine

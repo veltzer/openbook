@@ -59,6 +59,7 @@
 	\startSong
 
 	\repeat volta 2 {
+
 		\myMark "A"
 		\startPart
 		c2 a:m7 | d:m7 g4:9 gis:dim7 | a:m a:m7/g f2:maj7 | b:m7.5- e4:m7 a:7.9- | \myEndLine

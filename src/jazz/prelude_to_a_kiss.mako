@@ -37,22 +37,26 @@
 	d2:9 g:7.5+ | c:9 f:maj7 | b:7 e:7 | a:7 d:m |
 	d:m7 g:7 | c d:7 d:m7 g:7.9- | c a:7 |
 	\endPart
+
 	\myMark "A"
 	\startPart
 	d2:9 g:7.5+ | c:9 f:maj7 | b:7 e:7 | a:7 d:m |
 	d:m7 g:7 | c d:7 d:m7 g:7.9- | c1 |
 	\endPart
+
 	\myMark "B"
 	\startPart
 	e2 cis:m | fis:m7 b:7 | e2 cis:m | fis:m7 b:7 | e2 cis:m |
 	fis:m7 b:7 | e4. a:7 d4:9 |
 	d:m7 dis:m7 e:m7 a:7.9- |
 	\endPart
+
 	\myMark "A"
+	\startPart
 	d2:9 g:7.5+ | c:9 f:maj7 | b:7 e:7 | a:7 d:m |
 	d:m7 g:7 | c d:7 d:m7 g:7.9- | c1 |
 	\endPart
-	\startPart
+
 	\endChords
 	\endSong
 }

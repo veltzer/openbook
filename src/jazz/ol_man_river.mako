@@ -37,6 +37,7 @@
 	\startChords
 
 	\repeat volta 2 {
+
 		\myMark "A"
 		\startPart
 		ees2 c:m7 | ees aes | ees aes | ees c:m7 | \myEndLine

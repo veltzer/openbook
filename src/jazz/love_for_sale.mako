@@ -35,6 +35,7 @@
 	\startSong
 
 	\repeat volta 2 {
+
 		\myMark "A"
 		\startPart
 		ees1:7 | ees:7 | bes:m | bes:m | \myEndLine

@@ -38,21 +38,25 @@
 	a1:m | e1:5+/gis | c1/g | d2.:9/fis f4:m | \myEndLine
 	c1/g | f2:9 g:5+ | c1 | c1 | \myEndLine
 	\endPart
+
 	\myMark "A"
 	\startPart
 	a1:m | e1:5+/gis | c1/g | d2.:9/fis f4:m | \myEndLine
 	c1/g | f2:9 g:5+ | c1 | c1 | \myEndLine
 	\endPart
+
 	\myMark "B"
 	\startPart
 	c1 | f2:m c | f2:m c | f2:m c | \myEndLine
 	c1 | f2:m c | f2:m c | g:7 c4 e:7 | \myEndLine
 	\endPart
+
 	\myMark "A"
 	\startPart
 	a1:m | e1:5+/gis | c1/g | d2.:9/fis f4:m | \myEndLine
 	c1/g | f2:9 g:5+ | c1 | c1 | \myEndLine
 	\endPart
+
 	\endChords
 	\endSong
 }
