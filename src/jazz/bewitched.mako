@@ -90,7 +90,7 @@
 			c a:m | d:m7 g:7 |
 		}
 		{
-		 	c f | c1 | \myEndLine \endPart
+			c f | c1 | \myEndLine \endPart
 		}
 	}
 	\endSong
