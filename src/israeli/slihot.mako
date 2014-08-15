@@ -85,6 +85,7 @@
 	\tempo "Moderato" 4 = 112
 
 	\partial 4 a'8 e |
+
 	%% part "Intro"
 	c'4 a4. e8 | f2 g8 a | b4 a4. g8 | f8 e4. f8 g |
 	a2 f8 e | ees2 b8 a | gis4 a b |

@@ -44,6 +44,7 @@
 	\startSong
 
 	\partial 4 s4 |
+
 	\myMark "A"
 	\startPart
 	\repeat volta 2 {
@@ -84,7 +85,7 @@
 
 	\partial 4 f8 e |
 
-	%% part A
+	%% part "A"
 	\repeat volta 2 {
 		d4. d'8 c4 bes8 a | g2. f8 g | a4. c,8 f4 a8 g | d2. e8 f |
 		g4. f8 e4 d8 d' | bes2 a4 g | f4. f8 e4. e8 |
@@ -93,7 +94,7 @@
 		{ d2. cis8 d | }
 	}
 
-	%% part B
+	%% part "B"
 	\repeat volta 2 {
 		e4. a,8 d4. e8 | f4 f2 e8 f | g4. c,8 f4. g8 | a4 a2 bes8 c |
 	} \alternative {
