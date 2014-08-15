@@ -59,7 +59,7 @@ def check_file(file):
 		prevprev=prev
 		prev=line
 
-for file in glob.glob('src/jazz/*.mako'):
+for file in glob.glob('src/**/*.mako'):
 	if debug:
 		print('doing [{0}]'.format(file))
 	check_file(file)

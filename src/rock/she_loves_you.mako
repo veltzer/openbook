@@ -38,7 +38,9 @@
 	\startSong
 
 	\partial 8 s8 |
+
 	\repeat volta 3 {
+
 		\myMark "A"
 		\startPart
 		f1 | d:m | a:m | c:7 | \myEndLine
@@ -46,6 +48,7 @@
 		f | f | d:m | d:m | \myEndLine
 		bes:m6 | bes:m6 | c:7 | c:7 | \myEndLine
 		\endPart
+
 		\myMark "B"
 		\startPart
 		d:m | d:m | g:7 | g:7 | \myEndLine
@@ -69,7 +72,6 @@
 	f4-1 g a bes8 <f a>~ | <f a>2. a8-3 a | << { c4-5 a a4. g8 } \\ { e1-1 } >> | <e a>8 c' <e, a>2 r8 c' |
 	f,4-1 g a bes8 <f a>~ | <f a>2. a8 a | << { c4 a a4. g8 } \\ { e1 } >> | <e a>8 c' <e, a>4 r8 c'-2 c c |
 	d4-3 f2 f,8-3 g |
-
 }
 % endif
 

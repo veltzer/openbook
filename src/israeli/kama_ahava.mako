@@ -145,12 +145,15 @@
 	\small {
 		\fill-line {
 			\right-column {
+
 				%% part
 			}
 			\null
 			\right-column {
+
 				%% part
 				\null
+
 				%% part
 			}
 		}
