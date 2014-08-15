@@ -83,7 +83,6 @@
 	%% part "A"
 	f4 f f2~ | f8 f e d e f g4 | a a a2~ | a8 a g f g a bes4 |
 	c2 f, | r8 d' c bes a4 g | a1 | r8 bes a g f4 e | f1~ | f2. r4 |
-
 }
 % endif
 

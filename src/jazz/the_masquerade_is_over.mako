@@ -98,7 +98,6 @@
 	g2~ \times 2/3 { g4 bes aes } | g2. g4 | f2 r4 d8 ees | c'2. c4 | bes2~ \times 2/3 { bes4 c bes } |
 	a2. f4 | aes?2 r4 g8 aes | bes2~ bes8 g f ees | ees'2. ees4 | ees2 f, |
 	r4 f g aes | c1~ | c4 aes c ees | ees1~ | ees\fermata |
-
 }
 % endif
 

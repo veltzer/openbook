@@ -90,7 +90,6 @@
 	%% part "A"
 	b4 c c b | a b2. | g4 a \times 2/3 { a4 gis g } | fis1 |
 	d4. e8~ e8. d16 e8. g16 | a8 b4. r8. d,16 e8. g16 | a8 b4.~ b2 | d4 b g e | g1~ | g2. r4 |
-
 }
 % endif
 

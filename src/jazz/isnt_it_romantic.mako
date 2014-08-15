@@ -143,7 +143,6 @@
 	%% part "C"
 	Sweet sym -- bols in the moon -- light
 	Do you mean that I will fall in love per -- chance? __ Is -- n't it ro -- mance? __
-
 }
 % endif
 
