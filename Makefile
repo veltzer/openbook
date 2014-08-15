@@ -288,93 +288,25 @@ clean:
 
 # checks
 
-.PHONY: check_extra_files
-check_extra_files:
-	$(info doing [$@])
-	$(Q)git status --porcelain
-.PHONY: check_comments
-check_comments:
-	$(info doing [$@])
-	$(Q)scripts/wrapper_ok.py grep "%%" $(FILES_MAKO)
 .PHONY: check_and
 check_and:
 	$(info doing [$@])
 	$(Q)scripts/wrapper_ok.py grep "composer=\".* and .*\"" $(FILES_MAKO)
 	$(Q)scripts/wrapper_ok.py grep "poet=\".* and .*\"" $(FILES_MAKO)
-.PHONY: check_min_chords
-check_min_chords:
-	$(info doing [$@])
-	$(Q)scripts/wrapper_ok.py grep ":min" $(FILES_MAKO)
-.PHONY: check_whitespace
-check_whitespace:
-	$(info doing [$@])
-	$(Q)-scripts/grep.py "  | $$|\w\t|\t$$" "^.*\.mako$$" src
-.PHONY: check_uuid_basic
-check_uuid_basic:
-	$(info doing [$@])
-	$(Q)scripts/wrapper_ok.py grep --files-without-match uuid $(FILES_MAKO)
-.PHONY: check_poet
-check_poet:
-	$(info doing [$@])
-	$(Q)scripts/wrapper_ok.py grep --files-without-match "attributes\['poet'\]=" $(FILES_MAKO)
-.PHONY: check_copyright
-check_copyright:
-	$(info doing [$@])
-	$(Q)scripts/wrapper_ok.py grep --files-without-match "attributes\['copyright'\]=" $(FILES_MAKO)
 .PHONY: check_mark
 check_mark:
 	$(info doing [$@])
 	$(Q)scripts/wrapper_ok.py grep --files-without-match "\\\\myMark" $(FILES_COMPLETED_JAZZ)
-.PHONY: check_completion
-check_completion:
-	$(info doing [$@])
-	$(Q)scripts/wrapper_ok.py grep --files-without-match "attributes\['completion'\]=" $(FILES_MAKO)
-.PHONY: check_empty_copyright
-check_empty_copyright:
-	$(info doing [$@])
-	$(Q)scripts/wrapper_ok.py grep "copyright=\"\"" $(FILES_MAKO)
-.PHONY: check_chordChanges
-check_chordChanges:
-	$(info doing [$@])
-	$(Q)scripts/wrapper_ok.py grep "chordChanges" $(FILES_MAKO)
-.PHONY: check_bar
-check_bar:
-	$(info doing [$@])
-	$(Q)scripts/wrapper_ok.py grep "\\\\bar" $(FILES_MAKO)
-.PHONY: check_break
-check_break:
-	$(info doing [$@])
-	$(Q)scripts/wrapper_ok.py grep "\\\\break" $(FILES_MAKO)
-.PHONY: check_include
-check_include:
-	$(info doing [$@])
-	$(Q)scripts/wrapper_ok.py grep "\\\\include" $(FILES_MAKO)
-.PHONY: check_threeunderscores
-check_threeunderscores:
-	$(info doing [$@])
-	$(Q)scripts/wrapper_ok.py grep "___" $(FILES_MAKO)
-.PHONY: check_bad_lyric_breakup
-check_bad_lyric_breakup:
-	$(info doing [$@])
-	$(Q)scripts/wrapper_ok.py grep "_ --" $(FILES_MAKO)
 .PHONY: check_veltzer_https
 check_veltzer_https:
 	$(info doing [$@])
 	$(Q)scripts/wrapper_ok.py git grep "http:\/\/veltzer.net"
-.PHONY: check_uuid
-check_uuid:
-	$(info doing [$@])
-	$(Q)scripts/wrapper_ok.py git grep "uuid']=\"\"" $(FILES_MAKO)
-.PHONY: check_empty
-check_empty:
-	$(info doing [$@])
-	$(Q)scripts/wrapper_ok.py git grep "']=\"\"" $(FILES_MAKO)
 .PHONY: check_python
 check_python:
 	$(info doing [$@])
 	$(Q)scripts/check.py
 .PHONY: check_all
-check_all: check_empty_copyright check_whitespace check_and check_extra_files check_min_chords check_uuid_basic check_chordChanges check_bar check_break check_completion check_include check_threeunderscores check_mark check_bad_lyric_breakup check_veltzer_https check_uuid check_empty check_python
+check_all: check_and check_mark check_veltzer_https check_python
 
 # rules
 

@@ -44,6 +44,18 @@ def check_file(file):
 			error(num, line, file)
 		if line=='}' and prev=='':
 			error(num, line, file)
+		if line.find(':min')!=-1 or line.find('___')!=-1 or line.find('chordChanges')!=-1 or line.find('_ --')!=-1:
+			error(num, line, file)
+		if line.find('copyright=""')!=-1:
+			error(num, line, file)
+		if line.endswith('\t') or line.endswith(' '):
+			error(num, line, file)
+		if line.find(' \t')!=-1 or line.find('\t ')!=-1:
+			error(num, line, file)
+		if line.find(']=""')!=-1:
+			error(num, line, file)
+		if line.find('\bar')!=-1 or line.find('\include')!=-1 or line.find('\break')!=-1:
+			error(num, line, file)
 		prevprev=prev
 		prev=line
 
