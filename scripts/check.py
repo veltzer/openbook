@@ -11,15 +11,15 @@ import glob # for glob
 ##############
 debug=False
 
-def error(line, file):
-	print("{0}: {1}".format(file, line))
+def error(num, line, file):
+	print("{0}:{1}: {2}".format(file, num, line))
 
 def check_file(file):
 	insideVoice=False
 	insideChords=False
 	prevprev=None
 	prev=None
-	for line in open(file, 'r'):
+	for num,line in enumerate(open(file, 'r')):
 		line=line.rstrip('\n')
 		if line.startswith('% if part==\'Voice'):
 			insideVoice=True
@@ -27,21 +27,23 @@ def check_file(file):
 			insideVoice=False
 		if insideVoice:
 			if line.find('\myEndLine')!=-1:
-				error(line, file)
+				error(num, line, file)
 		if line.startswith('% if part==\'Chords'):
 			insideChords=True
 		if line=='% endif':
 			insideChords=False
 		if insideChords and line.find('\myMark')!=-1 and prev!='':
-			error(line, file)
+			error(num, line, file)
 		if line.find('%% part')!=-1 and prev!='':
-			error(line, file)
+			error(num, line, file)
 		if line.find('%% part')!=-1 and prev=='' and prevprev=='':
-			error(line, file)
+			error(num, line, file)
 		if line.find('\myEndLine')!=-1 and line.find('%%')!=-1:
-			error(line, file)
+			error(num, line, file)
 		if line.find('relative')!=-1 and not line.endswith('\\relative {'):
-			error(line, file)
+			error(num, line, file)
+		if line=='}' and prev=='':
+			error(num, line, file)
 		prevprev=prev
 		prev=line
 

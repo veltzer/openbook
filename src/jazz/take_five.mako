@@ -5,8 +5,8 @@
 	version=attr.Version()
 	version['doChords']=True
 	version['doVoice']=True
-	attributes.addVersion('Fake', version)
-	attributes.setDefaultVersionName('Fake')
+	attributes.addVersion('Unknown', version)
+	attributes.setDefaultVersionName('Unknown')
 
 	attributes['title']="Take Five"
 	attributes['style']="Jazz"
@@ -17,16 +17,19 @@
 	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
 	attributes['completion']="5"
 	attributes['uuid']="86e17438-da80-11e3-9f6f-832caca8efee"
+	attributes['structure']="ABA"
+	attributes['location']="rbk1:420"
 %>
 % endif
 
 % if part=='Doc':
 	DONE:
+	- brought in the real book location.
 	TODO:
 	- mark what has been done with this tune.
 % endif
 
-% if part=='ChordsFake':
+% if part=='ChordsUnknown':
 \chordmode {
 	\startSong
 	\startChords
@@ -56,7 +59,7 @@
 }
 % endif
 
-% if part=='VoiceFake':
+% if part=='VoiceUnknown':
 \relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante Moderato" 4 = 88
@@ -76,6 +79,5 @@
 	%% part "A"
 	gis a gis g f4 a, c | d2. \times 2/3 { e16 f e } d8 c4 | d2. \times 2/3 { c16 d c } a8 g4 | a2.~ a8 d f g |
 	gis a gis g f4 a, c | d2. \times 2/3 { c16 d c } a8 g4 | a2. \times 2/3 { e'16 f e } d8 c4 | d2.~ d2 |
-
 }
 % endif

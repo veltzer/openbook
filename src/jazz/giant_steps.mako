@@ -82,16 +82,18 @@
 	\time 4/4
 	\key c \major
 
+	%% part "A"
 	fis'2 d | b g4. bes8~ | bes1 | b4. a8~ a2 |
 	d bes | g dis4. fis8~ | fis1 | g2 f4. bes8~ |
 	bes1 | b2 a4. d8~ | d1 | dis2 cis4. fis8~ |
 	fis2 fis | g f4. bes8~ | bes1 | fis4. fis8~ fis2 |
-
 }
 % endif
 
 % if part=='LyricsReal':
 \lyricmode {
+
+	%% part "A"
 	Life when we were kids __
 	Was like __ play -- ing gi -- ant steps __
 	We were told __ to ad -- vance __
@@ -102,6 +104,8 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
+
+	%% part "A"
 	Think of life as chess __
 	Cap -- ture __ one piece at a time __
 	For -- ward east, __ cas -- tle next __

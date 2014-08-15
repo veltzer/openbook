@@ -92,7 +92,6 @@
 	ees4 f g bes | c ees c4. bes8 | c1~ | c2. bes4 |
 	ees c bes aes | g f g aes | bes g f ees8 d'~ | d2 r8 c4. |
 	bes4 ees d c | bes ees, bes' aes | f2 g | ees1_\markup { \italic { Fine } } |
-
 }
 % endif
 

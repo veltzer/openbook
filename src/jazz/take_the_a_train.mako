@@ -142,7 +142,6 @@
 	%% part "A"
 	'board! __ Get on the "\"A\"" Train, __ soon
 	you will be on Sug -- ar Hill in Har -- lem. __
-
 }
 % endif
 

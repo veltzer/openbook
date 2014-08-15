@@ -88,7 +88,6 @@
 	d2 d2~ | d4 c bes a | c1~ | c2. bes4 |
 	a1~ | a4 g a bes | f1~ | f4 f f ees |
 	ges1~ | ges4 ges ges f | f1~ | f1 |
-
 }
 % endif
 

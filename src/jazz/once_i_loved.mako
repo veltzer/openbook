@@ -113,7 +113,6 @@
 	\times 2/3 { f f e~ } \times 2/3 { e g ges } | f2~ f8 f4 des8 | e4 d8 d~ d2~ |
 	d2 \times 2/3 { r4 d e } | \times 2/3 { f f e~ } \times 2/3 {e g ges } |
 	f2~ f8 f4 cis8 | e4. d8 d2~ | d1 |
-
 }
 % endif
 

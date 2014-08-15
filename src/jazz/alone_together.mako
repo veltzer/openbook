@@ -119,7 +119,6 @@
 	%% part "A"
 	f2.. d8 | e e4.~ e2~ | e4 r8 d e4. f8 | a1~ |
 	a4 r8 a b4. d8 | f2.. cis8 | d d4.~ d2~ | d2 r4 r8 <\parenthesize d,>8 |
-
 }
 % endif
 
