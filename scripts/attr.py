@@ -100,6 +100,7 @@ books_translation={
 	'ja54': 'Jamey Aebersold volume 54',
 	'gt': 'Guitar - 557 Standards',
 }
+
 books_offsets={
 	'jfb': -1,
 	'rbk1': 13,
@@ -113,6 +114,8 @@ books_offsets={
 books_dont_have=set([
 	'ja54',
 ])
+
+doCheckLocation=False
 
 # where are all the fake books?
 folder='/home/mark/slow_links/topics_archive/music_education/jazz/collections'
@@ -172,7 +175,7 @@ class Attributes(dict):
 		newpos=order.index(key)
 		if newpos<=self.pos:
 			raise ValueError('incorrect order of assignment', key, self['title'], self.pos, newpos)
-		if key=='location':
+		if key=='location' and doCheckLocation:
 			check_location(val)
 		self.pos=newpos
 		super().__setitem__(key, val)
