@@ -7,19 +7,27 @@
 	version['doVoice']=True
 	version['doLyrics']=True
 	attributes.addVersion('Fake', version)
-	attributes.setDefaultVersionName('Fake')
 	version=attr.Version()
 	version['doChords']=True
 	version['doVoice']=True
 	version['doLyrics']=True
 	attributes.addVersion('Real', version)
+	attributes.setDefaultVersionName('Fake')
 
+	# from the jazz fake book
 	attributes['title']="All The Things You Are"
 	attributes['style']="Jazz"
+	# from the jazz fake book
+	attributes['subtitle']="From 'VERY WARM FOR MAY'"
+	# from the jazz fake book
 	attributes['composer']="Jerome Kern"
+	# from the jazz fake book
 	attributes['poet']="Oscar Hammerstein II"
+	# from the jazz fake book
 	attributes['piece']="Moderately"
+	# from the jazz fake book
 	attributes['copyright']="1939 T.B. Harms Company. Copyright Renewed."
+	# from the jazz fake book
 	attributes['copyrightextra']="(c/o The Welk Music Group, Santa Monica, CA 90401)"
 
 	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
@@ -55,8 +63,8 @@
 	- check the tune of the fake book version.
 	- check the lyrics of the fake book version.
 	- put you tube performances and lyrics url.
+	- put in where the meta data came from.
 	TODO:
-	- how do I put the last two chords of the real book version in parens?
 % endif
 
 % if part=='ChordsReal':
@@ -82,7 +90,7 @@
 	\startPart
 	f1:m7 | bes:m7 | ees:7 | aes:maj7 | \myEndLine
 	des:maj7 | des:m7 | c:m7 | b:dim7 | \myEndLine
-	bes:m7 | ees:7 | aes:maj7 | g2:7 c:7 | \myEndLine
+	bes:m7 | ees:7 | aes:maj7 | \LPC g2:7 \RPC c:7 | \myEndLine
 	\endPart
 
 	\endSong
