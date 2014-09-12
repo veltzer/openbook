@@ -6,7 +6,6 @@ run lilypond to produce the book
 lilypond --ps --pdf --output=$(OUT_BASE) $(OUT_LY)
 '''
 
-from __future__ import print_function
 import sys # for argv
 import os # for chmod
 import subprocess # for Popen
