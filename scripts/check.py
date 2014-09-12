@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python3.4
 
 '''
 This script checks if we have \myEndLine in voice
@@ -12,7 +12,7 @@ import glob # for glob
 debug=False
 
 def error(num, line, file):
-	print("{0}:{1}: {2}".format(file, num, line))
+	print('{0}:{1}: {2}'.format(file, num, line))
 
 def check_file(file):
 	insideVoice=False

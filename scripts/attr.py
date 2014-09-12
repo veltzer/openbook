@@ -3,8 +3,6 @@ This is the attributes object to be used in every tune
 to fill in the tunes meta data.
 It should do as much validation as is possible to enforce
 good meta data by tune authors
-
-	Mark Veltzer <mark@veltzer.net>
 '''
 
 import os.path # for join, isfile
