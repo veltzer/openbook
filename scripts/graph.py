@@ -11,7 +11,6 @@ CHANGELOG:
 25/07/14: moved to python3, removed corrupt handling and added progress report.
 
 TODO:
-	- show this graph in the website.
 	- modify this script to produce counts for both jazz and non-jazz tunes.
 		(very easy). This way the data that is outputted will be related to the openbook pdf.
 		And do this also for completion level 5.
