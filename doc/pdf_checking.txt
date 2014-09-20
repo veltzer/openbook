@@ -1,0 +1,2 @@
+to check pdfs try:
+qpdf --check out/openbook.pdf

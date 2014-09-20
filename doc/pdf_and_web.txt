@@ -1,0 +1,15 @@
+for a pdf to be viewable on the web fast it must be "linearized".
+This means that the first page could be shown even before the entire document
+is loaded.
+
+here is some info about what linearisation is:
+http://www.verypdf.com/pdfinfoeditor/linearized-pdf.html
+
+how do you do it?
+- the qpdf(1) program (we already do it)
+
+how do you check if a file is linearized?
+- qpdf --check [filename.pdf]
+- pdfinfo [filename.pdf] 
+	you can find it under:
+	Optimized:      yes

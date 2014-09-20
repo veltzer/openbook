@@ -16,6 +16,7 @@ Method 3
 ========
 qpdf --linearize openbook.pdf qpdf.pdf
 does not reduce the size
+it does, however, linearize the file (see pdf_and_web.txt for details).
 
 Method 4
 ========
@@ -26,6 +27,12 @@ Method 5
 ========
 pdftk openbook.pdf output pdftk.pdf compress
 does not reduce the size of the file
+
+Method 6
+========
+pdftocairo -pdf out/openbook.pdf /tmp/try.pdf
+turns the pdf into a pdf containing a collection of images in some format.
+makes the file bigger but sometimes easier to draw. grew to 8MB from 2MB in one attempt.
 
 References:
 http://askubuntu.com/questions/113544/how-to-reduce-pdf-filesize
