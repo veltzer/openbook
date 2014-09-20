@@ -52,7 +52,7 @@ def remove_outputs_if_exists():
 # I want errors to happen if there is any output...
 p_show_output=False
 # do postscript?
-p_do_ps=False
+p_do_ps=True
 # do pdf?
 p_do_pdf=True
 # emit debug info?
