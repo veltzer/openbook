@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -8,18 +8,18 @@
 	attributes.addVersion('DontMatter', version)
 	attributes.setDefaultVersionName('DontMatter')
 
-	attributes['title']="Talkin' Bout A Revolution"
-	attributes['style']="Rock"
-	attributes['composer']="Tracy Chapman"
-	attributes['poet']="Tracy Chapman"
-	attributes['piece']="upbeat"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
+	attributes['title']='Talkin\' Bout A Revolution'
+	attributes['style']='Rock'
+	attributes['composer']='Tracy Chapman'
+	attributes['poet']='Tracy Chapman'
+	attributes['piece']='upbeat'
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
 
-	attributes['completion']="5"
-	attributes['uuid']="e9155cee-c554-11e0-b407-0019d11e5a41"
+	attributes['completion']='5'
+	attributes['uuid']='e9155cee-c554-11e0-b407-0019d11e5a41'
 
-	attributes['idyoutube1']="SKYWOwWAguk"
-	attributes['lyricsurl']="http://www.lyrics007.com/Tracy%20Chapman%20Lyrics/Talkin'%20Bout%20A%20Revolution%20Lyrics.html"
+	attributes['idyoutube1']='SKYWOwWAguk'
+	attributes['lyricsurl']='http://www.lyrics007.com/Tracy%20Chapman%20Lyrics/Talkin\'%20Bout%20A%20Revolution%20Lyrics.html'
 %>
 % endif
 
@@ -70,53 +70,53 @@
 \markup {
 	\small { %% \teeny \tiny \small \normalsize \large \huge
 		\fill-line {
-		\column {
-			"Don't you know you're talking about a revolution"
-			"It sounds like a whisper"
-			"Don't you know they're talking about a revolution"
-			"It sounds like a whisper"
+			\column {
+				"Don't you know you're talking about a revolution"
+				"It sounds like a whisper"
+				"Don't you know they're talking about a revolution"
+				"It sounds like a whisper"
+				\null
+				"While they're standing in the welfare lines"
+				"Crying at the doorsteps of those armies of salvation"
+				"Wasting time in unemployment lines"
+				"Sitting around waiting for a promotion"
+				\null
+				"Don't you know you're talking about a revolution"
+				"It sounds like a whisper"
+				\null
+				"Poor people are gonna rise up"
+				"And get their share"
+				"Poor people are gonna rise up "
+				"And take what's theirs"
+				\null
+				"Don't you know you better run, run, run, run, run,"
+				"run, run, run, run, run, run, run, run"
+				"Oh I said you better run, run, run, run, run, run,"
+				"run, run, run, run, run, run, run"
+			}
 			\null
-			"While they're standing in the welfare lines"
-			"Crying at the doorsteps of those armies of salvation"
-			"Wasting time in unemployment lines"
-			"Sitting around waiting for a promotion"
-			\null
-			"Don't you know you're talking about a revolution"
-			"It sounds like a whisper"
-			\null
-			"Poor people are gonna rise up"
-			"And get their share"
-			"Poor people are gonna rise up "
-			"And take what's theirs"
-			\null
-			"Don't you know you better run, run, run, run, run,"
-			"run, run, run, run, run, run, run, run"
-			"Oh I said you better run, run, run, run, run, run,"
-			"run, run, run, run, run, run, run"
-		}
-		\null
-		\column {
-			"Finally the tables are starting to turn"
-			"Talking about a revolution "
-			"Finally the tables are starting to turn"
-			"Talking about a revolution oh no"
-			"Talking about a revolution oh no"
-			\null
-			"While they're standing in the welfare lines"
-			"Crying at the doorsteps of those armies of salvation"
-			"Wasting time in unemployment lines"
-			"Sitting around waiting for a promotion"
-			\null
-			"Don't you know you're talking about a revolution"
-			"It sounds like a whisper"
-			\null
-			"And finally the tables are starting to turn"
-			"Talking about a revolution"
-			"Finally the tables are starting to turn"
-			"Talking about a revolution oh no"
-			"Talking about a revolution oh no"
-			"Talking about a revolution oh no"
-		}
+			\column {
+				"Finally the tables are starting to turn"
+				"Talking about a revolution "
+				"Finally the tables are starting to turn"
+				"Talking about a revolution oh no"
+				"Talking about a revolution oh no"
+				\null
+				"While they're standing in the welfare lines"
+				"Crying at the doorsteps of those armies of salvation"
+				"Wasting time in unemployment lines"
+				"Sitting around waiting for a promotion"
+				\null
+				"Don't you know you're talking about a revolution"
+				"It sounds like a whisper"
+				\null
+				"And finally the tables are starting to turn"
+				"Talking about a revolution"
+				"Finally the tables are starting to turn"
+				"Talking about a revolution oh no"
+				"Talking about a revolution oh no"
+				"Talking about a revolution oh no"
+			}
 		}
 	}
 }

@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -14,34 +14,34 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="A Foggy Day"
-	attributes['style']="Jazz"
+	attributes['title']='A Foggy Day'
+	attributes['style']='Jazz'
 	# this is from the fake book
-	attributes['subtitle']="From 'A Damsel In Distress'"
+	attributes['subtitle']='From \'A Damsel In Distress\''
 	# this is from the fake book
-	attributes['composer']="George Gershwin"
+	attributes['composer']='George Gershwin'
 	# this is from the fake book
-	attributes['poet']="Ira Gershwin"
+	attributes['poet']='Ira Gershwin'
 	# this is from the real book
-	#attributes['piece']="Med. Swing"
+	#attributes['piece']='Med. Swing'
 	# this is from the fake book
-	attributes['piece']="Medium Swing"
+	attributes['piece']='Medium Swing'
 	# this is from the fake book
-	attributes['copyright']="1937, Gershwin Publishing Corporation"
-	attributes['copyrightextra']="Copyright Renewed, Assigned to Chappell & Co, Inc."
+	attributes['copyright']='1937, Gershwin Publishing Corporation'
+	attributes['copyrightextra']='Copyright Renewed, Assigned to Chappell & Co, Inc.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="87da6ece-a26e-11df-95d7-0019d11e5a41"
-	attributes['structure']="AB"
-	attributes['structureremark']="this tunes structure can also be categorised as ABAC since the first 8 bars of both the first and second part are the same."
-	attributes['location']="rbk1:6,jfb:120-121"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='87da6ece-a26e-11df-95d7-0019d11e5a41'
+	attributes['structure']='AB'
+	attributes['structureremark']='this tunes structure can also be categorised as ABAC since the first 8 bars of both the first and second part are the same.'
+	attributes['location']='rbk1:6,jfb:120-121'
 
-	attributes['idyoutuberemark1']="Wynton Marsalis Quartet"
-	attributes['idyoutube1']="-P2xoeGoWMs"
-	attributes['idyoutuberemark2']="Mel Torme (one of the greatest vocal versions)"
-	attributes['idyoutube2']="tVCDZaApwV8"
-	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/A-Foggy-Day-lyrics-Frank-Sinatra/0F2EB16090A785424825692000077664"
+	attributes['idyoutuberemark1']='Wynton Marsalis Quartet'
+	attributes['idyoutube1']='-P2xoeGoWMs'
+	attributes['idyoutuberemark2']='Mel Torme (one of the greatest vocal versions)'
+	attributes['idyoutube2']='tVCDZaApwV8'
+	attributes['lyricsurl']='http://www.sing365.com/music/lyric.nsf/A-Foggy-Day-lyrics-Frank-Sinatra/0F2EB16090A785424825692000077664'
 %>
 % endif
 
@@ -98,17 +98,17 @@
 % if part=='VoiceReal':
 \relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Allegro" 4 = 130
+	\tempo Allegro 4 = 130
 	\time 4/4
 	\key f \major
 
-	%% part "A"
+	%% part 'A'
 	r4 c c c | ees2. ees4 | d d2. | a'1 |
 	r4 f f f | aes2. aes4 | g2. g4 | d'1 |
 	r4 e e e | c c2. | a a4 | f1 |
 	r4 a a a | c c2 c4 | a2. a4 | d,1 |
 
-	%% part "B"
+	%% part 'B'
 	r4 c c c | ees2. ees4 | d2. d4 | a'1 |
 	r4 f f f | aes2. aes4 | g2. g4 | d'1 |
 	f2 f4 f | d2. d4 | c2 c | a a4 bes |
@@ -120,11 +120,11 @@
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 
-	%% part "A"
+	%% part 'A'
 	A Fog -- gy Day in Lon -- don town had __ _ me low and had me down.
 	I viewed the morn -- ing with a -- larm, the Brit -- ish Mu -- seum had lost its charm.
 
-	%% part "B"
+	%% part 'B'
 	How long I wondered could this thing last? But_the age of mira -- cles had -- n't passed,
 	for sud -- den -- ly I saw you there and through fog -- gy Lon -- don town the sun was shin -- ing ev -- 'ry where. __
 }
@@ -154,12 +154,12 @@
 		c1:m7 | f:7 | bes:maj7 | ees:7 | \myEndLine
 		f2 g:m7 | a:m7 bes:m6 | a:m7 d:m7 | g:m7 c:7 | \myEndLine
 	} \alternative {
-			{
-				f1 | g2:m7 c:7 | \myEndLineVoltaNotLast
-			}
-			{
-				f1 | bes2:7 bes:m6 | f1:maj7 | \myEndLineVoltaLast
-			}
+		{
+			f1 | g2:m7 c:7 | \myEndLineVoltaNotLast
+		}
+		{
+			f1 | bes2:7 bes:m6 | f1:maj7 | \myEndLineVoltaLast
+		}
 	}
 	\endPart
 
@@ -171,7 +171,7 @@
 % if part=='VoiceFake':
 \relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Allegro" 4 = 130
+	\tempo Allegro 4 = 130
 	\time 4/4
 	\key f \major
 
@@ -179,13 +179,13 @@
 
 	\repeat volta 2 {
 
-	%% part "A"
+	%% part 'A'
 	c c2 ees4~ | ees2. ees4 | d d2 a'4~ | a1 |
 	f2 f4 aes~ | aes2. aes4 | g2 g4 d'4~ | d1 |
 	r4 e e e | c c2. | a2 a4 f~ | f2. f4 |
 	a a a c~ | c c2 c4 | a2 a4 d,~ | d2. c4 |
 
-	%% part "B"
+	%% part 'B'
 	c2 c4 ees~ | ees ees2 ees4 | d2 d4 a'~ | a2 a4 a |
 	f2 f4 aes~ | aes bes aes2 | g g4 d'~ | d2. d4 |
 	f2 f4 d~ | d2. d4 | c2 c4 a~ | a2 a4 bes |
@@ -205,15 +205,15 @@
 % if part=='LyricsFake':
 \lyricmode {
 
-	%% part "A"
+	%% part 'A'
 	A Fog -- gy Day __ in Lon -- don town __ had me low __ and had me down. __
 	I viewed the morn -- ing with a -- larm, __ the Brit -- ish Mu -- se -- um had lost its charm. __
 
-	%% part "B"
+	%% part 'B'
 	How long I won -- dered could this thing last? __ But the age of mir -- a -- cles had -- n't passed, __
 	for sud -- den -- ly, __ I saw you there __ and through fog -- gy Lon -- don town the sun was shin -- ing ev -- 'ry where.
 
-	%% part "Volta"
+	%% part 'Volta'
 	A where. __
 }
 % endif

@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -8,22 +8,22 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Doxy"
-	attributes['style']="Jazz"
-	attributes['composer']="Sonny Rollins"
+	attributes['title']='Doxy'
+	attributes['style']='Jazz'
+	attributes['composer']='Sonny Rollins'
 	# this is from the fake book
-	attributes['piece']="Medium Groove"
+	attributes['piece']='Medium Groove'
 	# this is from the fake book
-	attributes['copyright']="1963 Prestige Music Co, Inc."
+	attributes['copyright']='1963 Prestige Music Co, Inc.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="c921579e-a26e-11df-9a5c-0019d11e5a41"
-	attributes['structure']="AABA"
-	attributes['location']="rbk2:79,jfb:105"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='c921579e-a26e-11df-9a5c-0019d11e5a41'
+	attributes['structure']='AABA'
+	attributes['location']='rbk2:79,jfb:105'
 
-	attributes['idyoutuberemark1']="Miles Davis!"
-	attributes['idyoutube1']="ZcPxCQhJ2n4"
+	attributes['idyoutuberemark1']='Miles Davis!'
+	attributes['idyoutube1']='ZcPxCQhJ2n4'
 %>
 % endif
 

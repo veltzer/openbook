@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -11,21 +11,21 @@
 
 	attributes['heb']=True
 
-	attributes['title']=u"איך זה שכוכב"
-	attributes['style']="Israeli"
-	attributes['composer']=u"מתי כספי"
-	attributes['poet']=u"נתן זך"
-	attributes['piece']=u"בוסה נובה"
-	attributes['singer']=u"מתי כספי"
-	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
+	attributes['title']=u'איך זה שכוכב'
+	attributes['style']='Israeli'
+	attributes['composer']=u'מתי כספי'
+	attributes['poet']=u'נתן זך'
+	attributes['piece']=u'בוסה נובה'
+	attributes['singer']=u'מתי כספי'
+	attributes['typesetter']=u'מרק ולצר <mark.veltzer@gmail.com>'
 
-	attributes['completion']="5"
-	attributes['uuid']="d936b39a-971e-11e0-9c44-0019d11e5a41"
+	attributes['completion']='5'
+	attributes['uuid']='d936b39a-971e-11e0-9c44-0019d11e5a41'
 	# my own deduction
-	attributes['structure']="AB"
-	attributes['location']="file:eich_ze_shekochav.pdf"
+	attributes['structure']='AB'
+	attributes['location']='file:eich_ze_shekochav.pdf'
 
-	attributes['idyoutube1']="1GI5Vst5a-o"
+	attributes['idyoutube1']='1GI5Vst5a-o'
 %>
 % endif
 

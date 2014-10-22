@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,27 +9,27 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Have you met Miss Jones?"
-	attributes['style']="Jazz"
-	attributes['composer']="Richard Rodgers"
-	attributes['poet']="Lorenz Hart"
+	attributes['title']='Have you met Miss Jones?'
+	attributes['style']='Jazz'
+	attributes['composer']='Richard Rodgers'
+	attributes['poet']='Lorenz Hart'
 	# this is from the real book
-	#attributes['piece']="Med."
+	#attributes['piece']='Med.'
 	# this is from the fake book
-	attributes['piece']="Medum Swing"
-	attributes['copyright']="1937, by Chappell & Co., Inc. Copyright Renewed"
+	attributes['piece']='Medum Swing'
+	attributes['copyright']='1937, by Chappell & Co., Inc. Copyright Renewed'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="fe106f6c-a26e-11df-abb3-0019d11e5a41"
-	attributes['structure']="AABA"
-	attributes['location']="rbk1:186,jfb:143"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='fe106f6c-a26e-11df-abb3-0019d11e5a41'
+	attributes['structure']='AABA'
+	attributes['location']='rbk1:186,jfb:143'
 
-	attributes['idyoutuberemark1']="Frank!"
-	attributes['idyoutube1']="wZIVgszUs7c"
-	attributes['idyoutuberemark2']="Art Tatum on piano solo"
-	attributes['idyoutube2']="h3YNBVpxOcQ"
-	attributes['lyricsurl']="http://www.lyrics007.com/Ella%20Fitzgerald%20Lyrics/Have%20You%20Met%20Miss%20Jones%20Lyrics.html"
+	attributes['idyoutuberemark1']='Frank!'
+	attributes['idyoutube1']='wZIVgszUs7c'
+	attributes['idyoutuberemark2']='Art Tatum on piano solo'
+	attributes['idyoutube2']='h3YNBVpxOcQ'
+	attributes['lyricsurl']='http://www.lyrics007.com/Ella%20Fitzgerald%20Lyrics/Have%20You%20Met%20Miss%20Jones%20Lyrics.html'
 %>
 % endif
 

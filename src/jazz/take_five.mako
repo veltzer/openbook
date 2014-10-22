@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -8,17 +8,17 @@
 	attributes.addVersion('Unknown', version)
 	attributes.setDefaultVersionName('Unknown')
 
-	attributes['title']="Take Five"
-	attributes['style']="Jazz"
-	attributes['composer']="Paul Desmond"
-	attributes['piece']="Moderately"
-	attributes['copyright']="1960 (Renewed) Desmond Music Company (U.S.A.) and Derry Music Company (Canada)"
+	attributes['title']='Take Five'
+	attributes['style']='Jazz'
+	attributes['composer']='Paul Desmond'
+	attributes['piece']='Moderately'
+	attributes['copyright']='1960 (Renewed) Desmond Music Company (U.S.A.) and Derry Music Company (Canada)'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="86e17438-da80-11e3-9f6f-832caca8efee"
-	attributes['structure']="ABA"
-	attributes['location']="rbk1:420"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='86e17438-da80-11e3-9f6f-832caca8efee'
+	attributes['structure']='ABA'
+	attributes['location']='rbk1:420'
 %>
 % endif
 

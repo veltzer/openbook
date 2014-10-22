@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,17 +9,17 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="I Can't Give You Anything But Love"
-	attributes['style']="Jazz"
-	attributes['composer']="Jimmy McHugh"
-	attributes['poet']="Dorothy Fields"
+	attributes['title']='I Can\'t Give You Anything But Love'
+	attributes['style']='Jazz'
+	attributes['composer']='Jimmy McHugh'
+	attributes['poet']='Dorothy Fields'
 	# this is from the fake book
-	attributes['piece']="Dreamily"
+	attributes['piece']='Dreamily'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="2501ad54-da81-11e3-ba1a-2b982dfcfb4e"
-	attributes['structure']="ABA'"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='2501ad54-da81-11e3-ba1a-2b982dfcfb4e'
+	attributes['structure']='ABA\''
 %>
 % endif
 

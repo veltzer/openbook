@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,27 +9,27 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Don't Explain"
-	attributes['style']="Jazz"
-	attributes['composer']="Billie Holiday"
-	attributes['poet']="Arthur Herzog, Jr."
+	attributes['title']='Don\'t Explain'
+	attributes['style']='Jazz'
+	attributes['composer']='Billie Holiday'
+	attributes['poet']='Arthur Herzog, Jr.'
 	# this is from the fake book
-	attributes['piece']="Slowly"
+	attributes['piece']='Slowly'
 	# this is from the fake book
-	attributes['copyright']="1946 by Northern Music Company"
-	attributes['copyrightextra']="Rights Administered by MCA Music Publishing, A Division of MCA INC., New York, NY. Copyright Renewed."
+	attributes['copyright']='1946 by Northern Music Company'
+	attributes['copyrightextra']='Rights Administered by MCA Music Publishing, A Division of MCA INC., New York, NY. Copyright Renewed.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="070df83e-0676-11e1-b7fe-0019d11e5a41"
-	attributes['structure']="AABA"
-	attributes['location']="jfb:102,jltd:90"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='070df83e-0676-11e1-b7fe-0019d11e5a41'
+	attributes['structure']='AABA'
+	attributes['location']='jfb:102,jltd:90'
 
-	attributes['idyoutuberemark1']="Billie in a radio show"
-	attributes['idyoutube1']="XxwJ9lh-id4"
-	attributes['idyoutuberemark2']="The great Dexter Gordon at the height of his power"
-	attributes['idyoutube2']="k2Lx3n10fkc"
-	attributes['lyricsurl']="http://www.elyrics.net/read/b/billie-holiday-lyrics/don_t-explain-lyrics.html"
+	attributes['idyoutuberemark1']='Billie in a radio show'
+	attributes['idyoutube1']='XxwJ9lh-id4'
+	attributes['idyoutuberemark2']='The great Dexter Gordon at the height of his power'
+	attributes['idyoutube2']='k2Lx3n10fkc'
+	attributes['lyricsurl']='http://www.elyrics.net/read/b/billie-holiday-lyrics/don_t-explain-lyrics.html'
 %>
 % endif
 

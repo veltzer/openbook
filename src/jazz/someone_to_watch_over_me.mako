@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,20 +10,20 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="Someone To Watch Over Me"
-	attributes['style']="Jazz"
-	attributes['composer']="George Gershwin"
-	attributes['poet']="Ira Gershwin"
-	attributes['piece']="Jazz Ballad"
+	attributes['title']='Someone To Watch Over Me'
+	attributes['style']='Jazz'
+	attributes['composer']='George Gershwin'
+	attributes['poet']='Ira Gershwin'
+	attributes['piece']='Jazz Ballad'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="75cbb354-1411-11e0-9a9e-0019d11e5a41"
-	attributes['structure']="AABA"
-	attributes['location']="rbk2:331"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='75cbb354-1411-11e0-9a9e-0019d11e5a41'
+	attributes['structure']='AABA'
+	attributes['location']='rbk2:331'
 
-	attributes['idyoutube1']="CCTIpclVQe4"
-	attributes['idyoutube2']="gLqsIIrk5wQ"
+	attributes['idyoutube1']='CCTIpclVQe4'
+	attributes['idyoutube2']='gLqsIIrk5wQ'
 %>
 % endif
 

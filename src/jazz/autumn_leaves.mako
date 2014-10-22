@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -15,29 +15,29 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Autumn Leaves"
-	attributes['style']="Jazz"
-	attributes['subtitle']="Les Feuilles Mortes"
-	attributes['composer']="Joseph Kosma"
-	attributes['poet']="Jacques Prevert, Johnny Mercer"
+	attributes['title']='Autumn Leaves'
+	attributes['style']='Jazz'
+	attributes['subtitle']='Les Feuilles Mortes'
+	attributes['composer']='Joseph Kosma'
+	attributes['poet']='Jacques Prevert, Johnny Mercer'
 	# this is from the fake book.
-	#attributes['piece']="Medium Swing"
+	#attributes['piece']='Medium Swing'
 	# this is from the real book
-	attributes['piece']="Med. Jazz"
-	attributes['copyright']="1947, 1950, 1987 Enoch Et Cie. Renewed 1975, 1978 Enoch Et Cie"
-	attributes['copyrightextra']="Sole Selling Agent for U.S.A (including its territories and possessions) and Dominion of Canada: Morley Music Co., by arrangement with Enoch Et Cie. International Copyright Secured. All Rights Reserved."
+	attributes['piece']='Med. Jazz'
+	attributes['copyright']='1947, 1950, 1987 Enoch Et Cie. Renewed 1975, 1978 Enoch Et Cie'
+	attributes['copyrightextra']='Sole Selling Agent for U.S.A (including its territories and possessions) and Dominion of Canada: Morley Music Co., by arrangement with Enoch Et Cie. International Copyright Secured. All Rights Reserved.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="8c35acf6-a7c1-11df-9040-0019d11e5a41"
-	attributes['structure']="AAB"
-	attributes['location']="rbk1:36,jfb:50"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='8c35acf6-a7c1-11df-9040-0019d11e5a41'
+	attributes['structure']='AAB'
+	attributes['location']='rbk1:36,jfb:50'
 
-	attributes['idyoutuberemark1']="The great Bill Evans..."
-	attributes['idyoutube1']="mRhVI7cpcS4"
-	attributes['idyoutuberemark2']="Keith Jarret in a great performance"
-	attributes['idyoutube2']="io1o1Hwpo8Y"
-	attributes['lyricsurl']="http://www.bluesforpeace.com/lyrics/autumn-leaves.htm"
+	attributes['idyoutuberemark1']='The great Bill Evans...'
+	attributes['idyoutube1']='mRhVI7cpcS4'
+	attributes['idyoutuberemark2']='Keith Jarret in a great performance'
+	attributes['idyoutube2']='io1o1Hwpo8Y'
+	attributes['lyricsurl']='http://www.bluesforpeace.com/lyrics/autumn-leaves.htm'
 %>
 % endif
 

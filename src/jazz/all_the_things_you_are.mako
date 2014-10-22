@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -15,32 +15,32 @@
 	attributes.setDefaultVersionName('Fake')
 
 	# from the jazz fake book
-	attributes['title']="All The Things You Are"
-	attributes['style']="Jazz"
+	attributes['title']='All The Things You Are'
+	attributes['style']='Jazz'
 	# from the jazz fake book
-	attributes['subtitle']="From 'VERY WARM FOR MAY'"
+	attributes['subtitle']='From \'VERY WARM FOR MAY\''
 	# from the jazz fake book
-	attributes['composer']="Jerome Kern"
+	attributes['composer']='Jerome Kern'
 	# from the jazz fake book
-	attributes['poet']="Oscar Hammerstein II"
+	attributes['poet']='Oscar Hammerstein II'
 	# from the jazz fake book
-	attributes['piece']="Moderately"
+	attributes['piece']='Moderately'
 	# from the jazz fake book
-	attributes['copyright']="1939 T.B. Harms Company. Copyright Renewed."
+	attributes['copyright']='1939 T.B. Harms Company. Copyright Renewed.'
 	# from the jazz fake book
-	attributes['copyrightextra']="(c/o The Welk Music Group, Santa Monica, CA 90401)"
+	attributes['copyrightextra']='(c/o The Welk Music Group, Santa Monica, CA 90401)'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="a064f20e-fb85-11e0-8d5d-0019d11e5a41"
-	attributes['structure']="ABC"
-	attributes['location']="rbk1:18,jfb:40"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='a064f20e-fb85-11e0-8d5d-0019d11e5a41'
+	attributes['structure']='ABC'
+	attributes['location']='rbk1:18,jfb:40'
 
-	attributes['idyoutuberemark1']="Charlie Parker, great performance"
-	attributes['idyoutube1']="UTORd2Y_X6U"
-	attributes['idyoutuberemark2']="Art Tatum. Brilliant"
-	attributes['idyoutube2']="_bPgf_olXeE"
-	attributes['lyricsurl']="http://www.lyrics007.com/Jerome%20Kern%20Lyrics/All%20The%20Things%20You%20Are%20Lyrics.html"
+	attributes['idyoutuberemark1']='Charlie Parker, great performance'
+	attributes['idyoutube1']='UTORd2Y_X6U'
+	attributes['idyoutuberemark2']='Art Tatum. Brilliant'
+	attributes['idyoutube2']='_bPgf_olXeE'
+	attributes['lyricsurl']='http://www.lyrics007.com/Jerome%20Kern%20Lyrics/All%20The%20Things%20You%20Are%20Lyrics.html'
 %>
 % endif
 

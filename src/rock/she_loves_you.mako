@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,16 +9,16 @@
 	attributes.addVersion('Epdf0', version)
 	attributes.setDefaultVersionName('Epdf0')
 
-	attributes['title']="She Loves You"
-	attributes['style']="Rock"
-	attributes['composer']="John Lennon, Paul McCartney"
-	attributes['poet']="John Lennon, Paul McCartney"
-	attributes['piece']="Moderato"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
+	attributes['title']='She Loves You'
+	attributes['style']='Rock'
+	attributes['composer']='John Lennon, Paul McCartney'
+	attributes['poet']='John Lennon, Paul McCartney'
+	attributes['piece']='Moderato'
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
 
-	attributes['completion']="0"
-	attributes['uuid']="32a5cb0e-431f-11e0-b9fa-0019d11e5a41"
-	attributes['structure']="ABABAB"
+	attributes['completion']='0'
+	attributes['uuid']='32a5cb0e-431f-11e0-b9fa-0019d11e5a41'
+	attributes['structure']='ABABAB'
 %>
 % endif
 

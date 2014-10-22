@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,28 +9,28 @@
 	attributes.setDefaultVersionName('Fake')
 
 	# from the fake book
-	attributes['title']="Ornithology"
-	attributes['style']="Jazz"
+	attributes['title']='Ornithology'
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']="Charlie Parker, Benny Harris"
+	attributes['composer']='Charlie Parker, Benny Harris'
 	# from the fake book
-	attributes['piece']="Fast Swing"
+	attributes['piece']='Fast Swing'
 	# from the fake book
-	attributes['copyright']="1946 ATLANTIC MUSIC CORP."
+	attributes['copyright']='1946 ATLANTIC MUSIC CORP.'
 	# from the fake book
-	attributes['copyrightextra']="Renewed and assigned 1974 ATLANTIC MUSIC CORP."
+	attributes['copyrightextra']='Renewed and assigned 1974 ATLANTIC MUSIC CORP.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="dac427e4-0b81-11e4-9974-0f7c29702a29"
-	attributes['structure']="ABAC"
-	attributes['structureremark']="This can also be seen as AB but they start with exactly the same first 8 bar so ABAC is better"
-	attributes['location']="jfb:293"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='dac427e4-0b81-11e4-9974-0f7c29702a29'
+	attributes['structure']='ABAC'
+	attributes['structureremark']='This can also be seen as AB but they start with exactly the same first 8 bar so ABAC is better'
+	attributes['location']='jfb:293'
 
-	attributes['idyoutuberemark1']="Charlie!"
-	attributes['idyoutube1']="DEeISJ0wr48"
-	attributes['idyoutuberemark2']="Kenny Garrett And Brad Mehldau classic"
-	attributes['idyoutube2']="W_CskOhskbc"
+	attributes['idyoutuberemark1']='Charlie!'
+	attributes['idyoutube1']='DEeISJ0wr48'
+	attributes['idyoutuberemark2']='Kenny Garrett And Brad Mehldau classic'
+	attributes['idyoutube2']='W_CskOhskbc'
 %>
 % endif
 

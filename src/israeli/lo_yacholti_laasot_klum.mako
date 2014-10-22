@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -12,20 +12,20 @@
 
 	attributes['heb']=True
 
-	attributes['title']=u"לא יכולתי לעשות כלום"
-	attributes['style']="Israeli"
-	attributes['composer']=u"אילן וירצברג"
-	attributes['poet']=u"יונה וולך"
-	attributes['piece']=u"בלדת רוק"
-	attributes['singer']=u"איןך ןירצברג"
-	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
+	attributes['title']=u'לא יכולתי לעשות כלום'
+	attributes['style']='Israeli'
+	attributes['composer']=u'אילן וירצברג'
+	attributes['poet']=u'יונה וולך'
+	attributes['piece']=u'בלדת רוק'
+	attributes['singer']=u'איןך ןירצברג'
+	attributes['typesetter']=u'מרק ולצר <mark.veltzer@gmail.com>'
 
-	attributes['completion']="5"
-	attributes['uuid']="f2e3c22e-f100-11e0-9162-0019d11e5a41"
-	attributes['remark']="Ilan Virtsberg plays it in G in live concerts"
+	attributes['completion']='5'
+	attributes['uuid']='f2e3c22e-f100-11e0-9162-0019d11e5a41'
+	attributes['remark']='Ilan Virtsberg plays it in G in live concerts'
 
-	attributes['idyoutube1']="XJYKf0sNDoE"
-	attributes['lyricsurl']="http://www.mp3music.co.il/tabs/10728.html"
+	attributes['idyoutube1']='XJYKf0sNDoE'
+	attributes['lyricsurl']='http://www.mp3music.co.il/tabs/10728.html'
 %>
 % endif
 

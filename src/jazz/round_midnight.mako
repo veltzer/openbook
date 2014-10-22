@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,28 +10,28 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="'Round Midnight"
-	attributes['style']="Jazz"
-	attributes['composer']="Cootie Williams, Thelonious Monk"
-	attributes['poet']="Bernie Hanighen"
+	attributes['title']='\'Round Midnight'
+	attributes['style']='Jazz'
+	attributes['composer']='Cootie Williams, Thelonious Monk'
+	attributes['poet']='Bernie Hanighen'
 	# this is from the fake book
-	#attributes['piece']="Slowly"
+	#attributes['piece']='Slowly'
 	# this is from the real book
-	attributes['piece']="Ballad"
+	attributes['piece']='Ballad'
 	# this is from the fake book
-	attributes['copyright']="1944 (Renewed) Warner Bros. Inc. and Thelonian Music"
+	attributes['copyright']='1944 (Renewed) Warner Bros. Inc. and Thelonian Music'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="1c99c334-a26f-11df-b3cb-0019d11e5a41"
-	attributes['structure']="AABA"
-	attributes['location']="rbk1:364,jfb:322"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='1c99c334-a26f-11df-b3cb-0019d11e5a41'
+	attributes['structure']='AABA'
+	attributes['location']='rbk1:364,jfb:322'
 
-	attributes['idyoutuberemark1']="Ella's vocal version"
-	attributes['idyoutube1']="DEaDj6TXiQQ"
-	attributes['idyoutuberemark2']="Monk. What can I say?"
-	attributes['idyoutube2']="OMmeNsmQaFw"
-	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Round-Midnight-lyrics-Ella-Fitzgerald/F7F9D0761ABE750348256AAB0009FEEA"
+	attributes['idyoutuberemark1']='Ella\'s vocal version'
+	attributes['idyoutube1']='DEaDj6TXiQQ'
+	attributes['idyoutuberemark2']='Monk. What can I say?'
+	attributes['idyoutube2']='OMmeNsmQaFw'
+	attributes['lyricsurl']='http://www.sing365.com/music/lyric.nsf/Round-Midnight-lyrics-Ella-Fitzgerald/F7F9D0761ABE750348256AAB0009FEEA'
 %>
 % endif
 

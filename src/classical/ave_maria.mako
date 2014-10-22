@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,16 +9,16 @@
 	attributes.addVersion('My', version)
 	attributes.setDefaultVersionName('My')
 
-	attributes['title']="Ave Maria"
-	attributes['style']="Classical"
-	attributes['subtitle']="Meditation on Prelude in C by J.S. Bach"
-	attributes['composer']="Charles Gounod"
-	attributes['copyright']="Public Domain"
+	attributes['title']='Ave Maria'
+	attributes['style']='Classical'
+	attributes['subtitle']='Meditation on Prelude in C by J.S. Bach'
+	attributes['composer']='Charles Gounod'
+	attributes['copyright']='Public Domain'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="626a30f8-da81-11e3-a291-2f021049e3c1"
-	attributes['structure']="A"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='626a30f8-da81-11e3-a291-2f021049e3c1'
+	attributes['structure']='A'
 %>
 % endif
 

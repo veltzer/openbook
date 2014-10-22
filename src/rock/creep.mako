@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -8,20 +8,20 @@
 	attributes.addVersion('DontMatter', version)
 	attributes.setDefaultVersionName('DontMatter')
 
-	attributes['title']="Creep"
-	attributes['style']="Rock"
-	attributes['composer']="Radiohead"
-	attributes['poet']="Radiohead"
-	attributes['piece']="Med. Ballad"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
+	attributes['title']='Creep'
+	attributes['style']='Rock'
+	attributes['composer']='Radiohead'
+	attributes['poet']='Radiohead'
+	attributes['piece']='Med. Ballad'
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
 
-	attributes['completion']="5"
-	attributes['uuid']="e9b74c60-97f6-11e0-86b8-0019d11e5a41"
+	attributes['completion']='5'
+	attributes['uuid']='e9b74c60-97f6-11e0-86b8-0019d11e5a41'
 
-	attributes['remark']="The G scale is the one used in the original version (Mark Veltzer,17/6/11)"
+	attributes['remark']='The G scale is the one used in the original version (Mark Veltzer,17/6/11)'
 
-	attributes['idyoutube1']="XFkzRNyygfk"
-	attributes['lyricsurl']="http://www.azlyrics.com/lyrics/radiohead/creepacoustic.html"
+	attributes['idyoutube1']='XFkzRNyygfk'
+	attributes['lyricsurl']='http://www.azlyrics.com/lyrics/radiohead/creepacoustic.html'
 %>
 % endif
 

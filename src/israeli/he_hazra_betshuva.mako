@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -11,18 +11,18 @@
 
 	attributes['heb']=True
 
-	attributes['title']=u"היא חזרה בתשובה"
-	attributes['style']="Israeli"
-	attributes['composer']=u"מתי כספי"
-	attributes['poet']=u"יעקב רוטבליט"
-	attributes['piece']=u"בוסה נובה"
-	attributes['singer']=u"מתי כספי"
-	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
+	attributes['title']=u'היא חזרה בתשובה'
+	attributes['style']='Israeli'
+	attributes['composer']=u'מתי כספי'
+	attributes['poet']=u'יעקב רוטבליט'
+	attributes['piece']=u'בוסה נובה'
+	attributes['singer']=u'מתי כספי'
+	attributes['typesetter']=u'מרק ולצר <mark.veltzer@gmail.com>'
 
-	attributes['completion']="5"
-	attributes['uuid']="24815072-2a71-11e1-a41f-0019d11e5a41"
+	attributes['completion']='5'
+	attributes['uuid']='24815072-2a71-11e1-a41f-0019d11e5a41'
 
-	attributes['idyoutube1']="1GI5Vst5a-o"
+	attributes['idyoutube1']='1GI5Vst5a-o'
 
 %>
 % endif

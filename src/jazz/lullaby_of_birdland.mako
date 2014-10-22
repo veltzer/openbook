@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,24 +9,24 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Lullaby of birdland"
-	attributes['style']="Jazz"
-	attributes['composer']="George Shearing"
-	attributes['poet']="George David Weiss"
-	attributes['piece']="Relaxed Swing"
-	attributes['copyright']="1952, 1953, 1954 Adam R. Levy & Father Ent., Inc., New York NY. Copyrights Renewed."
+	attributes['title']='Lullaby of birdland'
+	attributes['style']='Jazz'
+	attributes['composer']='George Shearing'
+	attributes['poet']='George David Weiss'
+	attributes['piece']='Relaxed Swing'
+	attributes['copyright']='1952, 1953, 1954 Adam R. Levy & Father Ent., Inc., New York NY. Copyrights Renewed.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="f9668406-a26e-11df-8542-0019d11e5a41"
-	attributes['structure']="AABA"
-	attributes['location']="rbk1:277,jfb:234"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='f9668406-a26e-11df-8542-0019d11e5a41'
+	attributes['structure']='AABA'
+	attributes['location']='rbk1:277,jfb:234'
 
-	attributes['idyoutuberemark1']="The famous Ella version"
-	attributes['idyoutube1']="UY8zK4R9oE8"
-	attributes['idyoutuberemark2']="George Shearing himself! Amazing!"
-	attributes['idyoutube2']="LKXvMbAKAmY"
-	attributes['lyricsurl']="http://www.bluesforpeace.com/lyrics/lullaby-birdland.htm"
+	attributes['idyoutuberemark1']='The famous Ella version'
+	attributes['idyoutube1']='UY8zK4R9oE8'
+	attributes['idyoutuberemark2']='George Shearing himself! Amazing!'
+	attributes['idyoutube2']='LKXvMbAKAmY'
+	attributes['lyricsurl']='http://www.bluesforpeace.com/lyrics/lullaby-birdland.htm'
 %>
 % endif
 

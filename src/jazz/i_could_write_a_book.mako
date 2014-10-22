@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,33 +10,33 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="I Could Write A Book"
-	attributes['style']="Jazz"
+	attributes['title']='I Could Write A Book'
+	attributes['style']='Jazz'
 	# this is from the fake book
-	attributes['subtitle']="From 'Pal Joey'"
+	attributes['subtitle']='From \'Pal Joey\''
 	# this is from the real book and the fake book
-	attributes['composer']="Richard Rodgers"
+	attributes['composer']='Richard Rodgers'
 	# this is from the real book and the fake book
-	attributes['poet']="Lorenz Hart"
+	attributes['poet']='Lorenz Hart'
 	# this is from the jazz fake book
-	#attributes['piece']="Modeartely Slow"
+	#attributes['piece']='Modeartely Slow'
 	# this is from the real book
-	attributes['piece']="Ballad"
+	attributes['piece']='Ballad'
 	# this is from the jazz fake book
-	attributes['copyright']="1940, Chappell & Co., Inc. Copyright Renewed."
+	attributes['copyright']='1940, Chappell & Co., Inc. Copyright Renewed.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="e00ddbf8-a26e-11df-92da-0019d11e5a41"
-	attributes['structure']="ABAC"
-	attributes['structureremark']="could be categorized as AB"
-	attributes['location']="rbk1:209,jfb:153"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='e00ddbf8-a26e-11df-92da-0019d11e5a41'
+	attributes['structure']='ABAC'
+	attributes['structureremark']='could be categorized as AB'
+	attributes['location']='rbk1:209,jfb:153'
 
-	attributes['idyoutuberemark1']="Frank in the classic vocal version"
-	attributes['idyoutube1']="UwoZNHhFgLQ"
-	attributes['idyoutuberemark2']="Miles swings!"
-	attributes['idyoutube2']="_DH46QyK2cw"
-	attributes['lyricsurl']="http://www.lorenzhart.org/booksng.htm"
+	attributes['idyoutuberemark1']='Frank in the classic vocal version'
+	attributes['idyoutube1']='UwoZNHhFgLQ'
+	attributes['idyoutuberemark2']='Miles swings!'
+	attributes['idyoutube2']='_DH46QyK2cw'
+	attributes['lyricsurl']='http://www.lorenzhart.org/booksng.htm'
 %>
 % endif
 

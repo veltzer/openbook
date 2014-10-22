@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,26 +9,26 @@
 	attributes.setDefaultVersionName('Fake')
 
 	# from the fake book
-	attributes['title']="One By One"
-	attributes['style']="Jazz"
+	attributes['title']='One By One'
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']="Wayne Shorter"
+	attributes['composer']='Wayne Shorter'
 	# from the fake book
-	attributes['piece']="Shuffle"
+	attributes['piece']='Shuffle'
 	# from the fake book
-	attributes['copyright']="1963 Miyako Music"
+	attributes['copyright']='1963 Miyako Music'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="654dc682-0e83-11e4-8688-1f470b65356e"
-	attributes['structure']="AABA"
-	attributes['structureremark']="The second half of the B part is the same as the second half of the A part. Didn't see this a lot."
-	attributes['location']="jfb:292"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='654dc682-0e83-11e4-8688-1f470b65356e'
+	attributes['structure']='AABA'
+	attributes['structureremark']='The second half of the B part is the same as the second half of the A part. Didn\'t see this a lot.'
+	attributes['location']='jfb:292'
 
-	attributes['idyoutuberemark1']="Blakey with the kids"
-	attributes['idyoutube1']="Hmu57-USSs0"
-	attributes['idyoutuberemark2']="Wyntons version (he learned it from Blakey...:)"
-	attributes['idyoutube2']="-phKoexy_E0"
+	attributes['idyoutuberemark1']='Blakey with the kids'
+	attributes['idyoutube1']='Hmu57-USSs0'
+	attributes['idyoutuberemark2']='Wyntons version (he learned it from Blakey...:)'
+	attributes['idyoutube2']='-phKoexy_E0'
 %>
 % endif
 

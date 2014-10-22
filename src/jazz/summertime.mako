@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -15,30 +15,30 @@
 	version['doLyricsmore']=True
 	attributes.addVersion('Aebersold', version)
 
-	attributes['title']="Summertime"
-	attributes['style']="Jazz"
+	attributes['title']='Summertime'
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']="George Gershwin"
+	attributes['composer']='George Gershwin'
 	# from the fake book
-	attributes['poet']="DuBose Heyward"
+	attributes['poet']='DuBose Heyward'
 	# from the fake book
-	attributes['piece']="Slowly"
+	attributes['piece']='Slowly'
 	# from the fake book
-	attributes['copyright']="1935 by Gershwin Publishing Corporation"
+	attributes['copyright']='1935 by Gershwin Publishing Corporation'
 	# from the fake book
-	attributes['copyrightextra']="Copyright Renewed. Assigned to Chappell & Co., Inc."
+	attributes['copyrightextra']='Copyright Renewed. Assigned to Chappell & Co., Inc.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="2615b7ec-a26f-11df-b010-0019d11e5a41"
-	attributes['structure']="AB"
-	attributes['location']="rbk2:323,jfb:370,ja54:4"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='2615b7ec-a26f-11df-b010-0019d11e5a41'
+	attributes['structure']='AB'
+	attributes['location']='rbk2:323,jfb:370,ja54:4'
 
-	attributes['idyoutuberemark1']="Janis!"
-	attributes['idyoutube1']="mzNEgcqWDG4"
-	attributes['idyoutuberemark2']="Ella Fitzgerald with Louis"
-	attributes['idyoutube2']="MIDOEsQL7lA"
-	attributes['lyricsurl']="http://www.stlyrics.com/songs/g/georgegershwin8836/summertime299720.html"
+	attributes['idyoutuberemark1']='Janis!'
+	attributes['idyoutube1']='mzNEgcqWDG4'
+	attributes['idyoutuberemark2']='Ella Fitzgerald with Louis'
+	attributes['idyoutube2']='MIDOEsQL7lA'
+	attributes['lyricsurl']='http://www.stlyrics.com/songs/g/georgegershwin8836/summertime299720.html'
 %>
 % endif
 

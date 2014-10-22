@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,20 +10,20 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Cocktails For Two"
-	attributes['style']="Jazz"
+	attributes['title']='Cocktails For Two'
+	attributes['style']='Jazz'
 	# this is from the fake book
-	attributes['composer']="Arthur Johnston and Sam Coslow"
+	attributes['composer']='Arthur Johnston and Sam Coslow'
 	# this is from the fake book
-	attributes['poet']="Arthur Johnston and Sam Coslow"
+	attributes['poet']='Arthur Johnston and Sam Coslow'
 	# this is from the fake book
-	attributes['piece']="Moderately"
+	attributes['piece']='Moderately'
 	# this is from the fake book
-	attributes['copyright']="1934 (Renewed 1961) Famous Music Corporation"
+	attributes['copyright']='1934 (Renewed 1961) Famous Music Corporation'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="dd76c35c-da80-11e3-ac15-97e8d2a823ca"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='dd76c35c-da80-11e3-ac15-97e8d2a823ca'
 %>
 % endif
 

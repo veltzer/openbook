@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,27 +9,27 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="This Can't Be Love"
-	attributes['style']="Jazz"
+	attributes['title']='This Can\'t Be Love'
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']="Richard Rogers"
+	attributes['composer']='Richard Rogers'
 	# from the fake book
-	attributes['poet']="Lorenz Hart"
+	attributes['poet']='Lorenz Hart'
 	# from the fake book
-	attributes['piece']="Moderately"
-	attributes['copyright']="1938 by Chappell & Co., Inc. Copyright Renewed"
+	attributes['piece']='Moderately'
+	attributes['copyright']='1938 by Chappell & Co., Inc. Copyright Renewed'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="c01fbf4c-d7a2-11e3-a29f-abfec0c435b3"
-	attributes['structure']="AABA"
-	attributes['location']="jfb:392"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='c01fbf4c-d7a2-11e3-a29f-abfec0c435b3'
+	attributes['structure']='AABA'
+	attributes['location']='jfb:392'
 
-	attributes['idyoutuberemark1']="I like this version by Diana Krall"
-	attributes['idyoutube1']="9uRGw8Bc0s0"
-	attributes['idyoutuberemark2']="Well know version by Nat King Cole"
-	attributes['idyoutube2']="dfWsU4IDCS0"
-	attributes['lyricsurl']="http://www.lyricsfreak.com/n/nat+king+cole/this+cant+be+love_20098113.html"
+	attributes['idyoutuberemark1']='I like this version by Diana Krall'
+	attributes['idyoutube1']='9uRGw8Bc0s0'
+	attributes['idyoutuberemark2']='Well know version by Nat King Cole'
+	attributes['idyoutube2']='dfWsU4IDCS0'
+	attributes['lyricsurl']='http://www.lyricsfreak.com/n/nat+king+cole/this+cant+be+love_20098113.html'
 %>
 % endif
 

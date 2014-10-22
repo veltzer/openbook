@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -11,28 +11,28 @@
 	attributes.setDefaultVersionName('Fake')
 
 	# this is from the fake book
-	attributes['title']="Satin Doll"
-	attributes['style']="Jazz"
+	attributes['title']='Satin Doll'
+	attributes['style']='Jazz'
 	# this is from the fake book and wikipedia
-	attributes['composer']="Duke Ellington, Billy Strayhorn"
+	attributes['composer']='Duke Ellington, Billy Strayhorn'
 	# this is from the fake book and wikipedia
-	attributes['poet']="Johnny Mercer"
+	attributes['poet']='Johnny Mercer'
 	# this is from the fake book
-	attributes['piece']="Smoothly"
+	attributes['piece']='Smoothly'
 	# this is from the fake book
-	attributes['copyright']="1958 Tempo Music, Inc."
+	attributes['copyright']='1958 Tempo Music, Inc.'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="42beeace-da80-11e3-933c-cbd0bd4c5a97"
-	attributes['structure']="AABA"
-	attributes['location']="jfb:324-325"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='42beeace-da80-11e3-933c-cbd0bd4c5a97'
+	attributes['structure']='AABA'
+	attributes['location']='jfb:324-325'
 
-	attributes['idyoutuberemark1']="Duke with his orchestra"
-	attributes['idyoutube1']="TrytKuC3Z_o"
-	attributes['idyoutuberemark2']="Clark Terry on the trumpet"
-	attributes['idyoutube2']="GivaZbLzaoQ"
-	attributes['lyricsurl']="http://www.metrolyrics.com/satin-doll-lyrics-ella-fitzgerald.html"
+	attributes['idyoutuberemark1']='Duke with his orchestra'
+	attributes['idyoutube1']='TrytKuC3Z_o'
+	attributes['idyoutuberemark2']='Clark Terry on the trumpet'
+	attributes['idyoutube2']='GivaZbLzaoQ'
+	attributes['lyricsurl']='http://www.metrolyrics.com/satin-doll-lyrics-ella-fitzgerald.html'
 %>
 % endif
 

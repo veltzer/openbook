@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,32 +9,32 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="I Could Have Danced All Night"
-	attributes['style']="Jazz"
-	attributes['subtitle']="From 'My Fair Lady'"
+	attributes['title']='I Could Have Danced All Night'
+	attributes['style']='Jazz'
+	attributes['subtitle']='From 'My Fair Lady''
 	# from the fake book
-	attributes['composer']="Frederick Loewe"
+	attributes['composer']='Frederick Loewe'
 	# from the fake book
-	attributes['poet']="Alan Jay Lerner"
+	attributes['poet']='Alan Jay Lerner'
 	# from the fake book
-	attributes['piece']="Moderately"
+	attributes['piece']='Moderately'
 	# from the fake book
-	attributes['copyright']="1956 by Alan Jay Lerner & Frederick Loewe. Copyright Renewed"
+	attributes['copyright']='1956 by Alan Jay Lerner & Frederick Loewe. Copyright Renewed'
 	# from the fake book
-	attributes['copyrightextra']="Chappell & Co., Inc., owner of publication and allied rights throughout the World"
+	attributes['copyrightextra']='Chappell & Co., Inc., owner of publication and allied rights throughout the World'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="47321f34-1a2e-11e4-b94f-232e14538fbe"
-	attributes['structure']="ABCD"
-	attributes['structureremark']="A, B and D parts are similar in many ways but not in exact harmony so this tune is close to a an AABA tune."
-	attributes['location']="jfb:153"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='47321f34-1a2e-11e4-b94f-232e14538fbe'
+	attributes['structure']='ABCD'
+	attributes['structureremark']='A, B and D parts are similar in many ways but not in exact harmony so this tune is close to a an AABA tune.'
+	attributes['location']='jfb:153'
 
-	attributes['idyoutuberemark1']="Frank in a great version"
-	attributes['idyoutube1']="IGqGBu6Ksqk"
-	attributes['idyoutuberemark2']="Julie Andrews in a musical like version"
-	attributes['idyoutube2']="JNaIor5lxN8"
-	attributes['lyricsurl']="http://www.metrolyrics.com/i-could-have-danced-all-night-lyrics-my-fair-lady.html"
+	attributes['idyoutuberemark1']='Frank in a great version'
+	attributes['idyoutube1']='IGqGBu6Ksqk'
+	attributes['idyoutuberemark2']='Julie Andrews in a musical like version'
+	attributes['idyoutube2']='JNaIor5lxN8'
+	attributes['lyricsurl']='http://www.metrolyrics.com/i-could-have-danced-all-night-lyrics-my-fair-lady.html'
 %>
 % endif
 

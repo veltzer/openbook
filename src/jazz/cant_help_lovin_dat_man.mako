@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,17 +9,17 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Can't Help Lovin' Dat Man"
-	attributes['style']="Jazz"
-	attributes['composer']="Jerome Kern"
-	attributes['poet']="Oscar Hammerstein III"
-	attributes['piece']="Moderately and rather freely"
-	attributes['copyright']="1927 T.B. Hama Company, Copyright Renewed"
+	attributes['title']='Can\'t Help Lovin\' Dat Man'
+	attributes['style']='Jazz'
+	attributes['composer']='Jerome Kern'
+	attributes['poet']='Oscar Hammerstein III'
+	attributes['piece']='Moderately and rather freely'
+	attributes['copyright']='1927 T.B. Hama Company, Copyright Renewed'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="0343bfb8-da81-11e3-a02b-6be199cd3208"
-	attributes['structure']="AABA"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='0343bfb8-da81-11e3-a02b-6be199cd3208'
+	attributes['structure']='AABA'
 %>
 % endif
 

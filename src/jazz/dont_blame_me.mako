@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -11,26 +11,26 @@
 	attributes.setDefaultVersionName('Real')
 
 	# this is from the real book
-	attributes['title']="Don't Blame Me"
-	attributes['style']="Jazz"
+	attributes['title']='Don't Blame Me'
+	attributes['style']='Jazz'
 	# this is from wikipedia
-	attributes['composer']="Jimmy McHugh"
+	attributes['composer']='Jimmy McHugh'
 	# this is from wikipedia
-	attributes['poet']="Dorothy Fields"
+	attributes['poet']='Dorothy Fields'
 	# this is mine
-	attributes['piece']="Swing"
+	attributes['piece']='Swing'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="d01b9fc8-e077-11e3-8a42-b3378bc59d8a"
-	attributes['structure']="AABA"
-	attributes['location']="rbk1:125"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='d01b9fc8-e077-11e3-8a42-b3378bc59d8a'
+	attributes['structure']='AABA'
+	attributes['location']='rbk1:125'
 
-	attributes['idyoutuberemark1']="Nat King Cole"
-	attributes['idyoutube1']="CkqKURwl9m0"
-	attributes['idyoutuberemark2']="Monk in a monked version of the tune"
-	attributes['idyoutube2']="KshrtLXBdl8"
-	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Don%27t-Blame-Me-1958-version-lyrics-Nat-King-Cole/C27E88B65E6C613D48256AF1000ED478"
+	attributes['idyoutuberemark1']='Nat King Cole'
+	attributes['idyoutube1']='CkqKURwl9m0'
+	attributes['idyoutuberemark2']='Monk in a monked version of the tune'
+	attributes['idyoutube2']='KshrtLXBdl8'
+	attributes['lyricsurl']='http://www.sing365.com/music/lyric.nsf/Don%27t-Blame-Me-1958-version-lyrics-Nat-King-Cole/C27E88B65E6C613D48256AF1000ED478'
 %>
 % endif
 

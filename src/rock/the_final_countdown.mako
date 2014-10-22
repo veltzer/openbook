@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -8,21 +8,21 @@
 	attributes.addVersion('DontMatter', version)
 	attributes.setDefaultVersionName('DontMatter')
 
-	attributes['title']="The Final Countdown"
-	attributes['style']="Rock"
-	attributes['composer']="Europe"
-	attributes['poet']="Europe"
-	attributes['piece']="Upbeat"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
+	attributes['title']='The Final Countdown'
+	attributes['style']='Rock'
+	attributes['composer']='Europe'
+	attributes['poet']='Europe'
+	attributes['piece']='Upbeat'
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
 
-	attributes['completion']="5"
-	attributes['uuid']="7f247a70-c8f3-11e0-bb35-0019d11e5a41"
+	attributes['completion']='5'
+	attributes['uuid']='7f247a70-c8f3-11e0-bb35-0019d11e5a41'
 
-	attributes['remark']="same scale (fis:m) as the original version"
+	attributes['remark']='same scale (fis:m) as the original version'
 
-	attributes['idyoutuberemark1']="Original version by Europe"
-	attributes['idyoutube1']="9jK-NcRmVcw"
-	attributes['lyricsurl']="http://www.elyrics.net/read/e/europe-lyrics/the-final-countdown-lyrics.html"
+	attributes['idyoutuberemark1']='Original version by Europe'
+	attributes['idyoutube1']='9jK-NcRmVcw'
+	attributes['lyricsurl']='http://www.elyrics.net/read/e/europe-lyrics/the-final-countdown-lyrics.html'
 %>
 % endif
 
@@ -35,9 +35,9 @@
 	- document the youtube performance.
 % endif
 
-<%namespace name="defs" file="/src/include/defs.makoi"/>
+<%namespace name='defs' file='/src/include/defs.makoi'/>
 
-<%def name="chords()">
+<%def name='chords()'>
 	\chordmode {
 		\mark "Opening"
 		\startRepeat

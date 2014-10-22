@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -15,31 +15,31 @@
 	version['doLyricsmore']=True
 	attributes.addVersion('Real', version)
 
-	attributes['title']="Here's That Rainy Day"
-	attributes['style']="Jazz"
+	attributes['title']='Here\'s That Rainy Day'
+	attributes['style']='Jazz'
 	# this is from the real book
-	#attributes['composer']="Jim Van Heusen"
+	#attributes['composer']='Jim Van Heusen'
 	# this is from the fake book
-	attributes['composer']="James Van Heusen"
+	attributes['composer']='James Van Heusen'
 	# this is from the fake book
-	attributes['poet']="Johnny Burke"
+	attributes['poet']='Johnny Burke'
 	# this is from the fake book
-	attributes['piece']="Slowly"
+	attributes['piece']='Slowly'
 	# this is from the fake book
-	attributes['copyright']="1953 by BOURCE CO. and DORSEY BROS. MUSIC, INC. Copyright Renewed."
+	attributes['copyright']='1953 by BOURCE CO. and DORSEY BROS. MUSIC, INC. Copyright Renewed.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="4c69df80-cd7f-11e1-8c91-4b6b0349580b"
-	attributes['structure']="ABAC"
-	attributes['structureremark']="You can also think of this as AB"
-	attributes['location']="rbk1:191,jfb:147"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='4c69df80-cd7f-11e1-8c91-4b6b0349580b'
+	attributes['structure']='ABAC'
+	attributes['structureremark']='You can also think of this as AB'
+	attributes['location']='rbk1:191,jfb:147'
 
-	attributes['idyoutuberemark1']="Nat King Cole in a great vocal version"
-	attributes['idyoutube1']="yokM-Hfu5Gc"
-	attributes['idyoutuberemark2']="The great Bill Evans"
-	attributes['idyoutube2']="cJzIvj9IKcM"
-	attributes['lyricsurl']="http://kokomo.ca/pop_standards/heres_that_rainy_day_lyrics.htm"
+	attributes['idyoutuberemark1']='Nat King Cole in a great vocal version'
+	attributes['idyoutube1']='yokM-Hfu5Gc'
+	attributes['idyoutuberemark2']='The great Bill Evans'
+	attributes['idyoutube2']='cJzIvj9IKcM'
+	attributes['lyricsurl']='http://kokomo.ca/pop_standards/heres_that_rainy_day_lyrics.htm'
 %>
 % endif
 

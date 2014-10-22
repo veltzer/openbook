@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,29 +9,29 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Desafinado"
-	attributes['style']="Jazz"
-	attributes['subtitle']="Slightly Out Of Tune"
-	attributes['composer']="Antonio Carlos Jobim"
+	attributes['title']='Desafinado'
+	attributes['style']='Jazz'
+	attributes['subtitle']='Slightly Out Of Tune'
+	attributes['composer']='Antonio Carlos Jobim'
 	# this is from the fake book
-	attributes['poet']="Newton Mendonca, Jon Hendricks, Jessie Cavanaugh"
+	attributes['poet']='Newton Mendonca, Jon Hendricks, Jessie Cavanaugh'
 	# this is from the fake book
-	attributes['piece']="Medium Bossa Nova"
+	attributes['piece']='Medium Bossa Nova'
 	# this is from the fake book
-	attributes['copyright']="1959 and 1962, Editora Musical Arapua, Sao Paulo, Brazil"
-	attributes['copyrightextra']="1959 1962, Editora Musical Arapua, Sao Paulo, Brazil"
+	attributes['copyright']='1959 and 1962, Editora Musical Arapua, Sao Paulo, Brazil'
+	attributes['copyrightextra']='1959 1962, Editora Musical Arapua, Sao Paulo, Brazil'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="c3fff540-a26e-11df-9435-0019d11e5a41"
-	attributes['structure']="AABA"
-	attributes['location']="rbk1:112-113,jfb:97"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='c3fff540-a26e-11df-9435-0019d11e5a41'
+	attributes['structure']='AABA'
+	attributes['location']='rbk1:112-113,jfb:97'
 
-	attributes['idyoutuberemark1']="Joao Gilberto in a nice brasilian version"
-	attributes['idyoutube1']="g6w3a2v_50U"
-	attributes['idyoutuberemark2']="Stan Getz in a nice instrumental version"
-	attributes['idyoutube2']="lo1SiVwVqic"
-	attributes['lyricsurl']="http://www.hotlyrics.net/lyrics/E/Ella_Fitzgerald/Desafinado.html"
+	attributes['idyoutuberemark1']='Joao Gilberto in a nice brasilian version'
+	attributes['idyoutube1']='g6w3a2v_50U'
+	attributes['idyoutuberemark2']='Stan Getz in a nice instrumental version'
+	attributes['idyoutube2']='lo1SiVwVqic'
+	attributes['lyricsurl']='http://www.hotlyrics.net/lyrics/E/Ella_Fitzgerald/Desafinado.html'
 %>
 % endif
 

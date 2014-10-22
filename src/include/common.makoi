@@ -136,6 +136,8 @@ endRepeat=\bar ":|"
 startTune={}
 endTune=\bar "|."
 myFakeEndLine={}
+mySegno=\mark \markup { \musicglyph #"scripts.segno" }
+myCoda=\mark \markup { \musicglyph #"scripts.coda" }
 
 %% some functions to be reused all over
 %% =====================================================================
@@ -152,8 +154,8 @@ myGrace =
 	(parser location notes)
 	(ly:music?)
 	#{
-	%%\grace $notes 
-	\appoggiatura $notes 
+	%%\grace $notes
+	\appoggiatura $notes
 	#})
 %%myGrace =
 %%#(define-music-function

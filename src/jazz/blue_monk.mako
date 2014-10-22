@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,23 +9,23 @@
 	attributes.setDefaultVersionName('Real')
 
 	# from the reak book
-	attributes['title']="Blue Monk"
-	attributes['style']="Jazz"
+	attributes['title']='Blue Monk'
+	attributes['style']='Jazz'
 	# from the real book
-	attributes['composer']="Thelonius Monk"
+	attributes['composer']='Thelonius Monk'
 	# My own
-	attributes['piece']="Blues"
+	attributes['piece']='Blues'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="4cc04ec0-e8b6-11e3-a334-5bb66fd360f0"
-	attributes['structure']="A"
-	attributes['location']="rbk1:54"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='4cc04ec0-e8b6-11e3-a334-5bb66fd360f0'
+	attributes['structure']='A'
+	attributes['location']='rbk1:54'
 
-	attributes['idyoutuberemark1']="Classic Monk..."
-	attributes['idyoutube1']="FRUWtrgTpcs"
-	attributes['idyoutuberemark2']="Bobby McFerrin and Chick Corea"
-	attributes['idyoutube2']="u0LDlgOsp_k"
+	attributes['idyoutuberemark1']='Classic Monk...'
+	attributes['idyoutube1']='FRUWtrgTpcs'
+	attributes['idyoutuberemark2']='Bobby McFerrin and Chick Corea'
+	attributes['idyoutube2']='u0LDlgOsp_k'
 %>
 % endif
 

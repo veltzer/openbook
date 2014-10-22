@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,17 +9,17 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="I'm Beginning To See The Light"
-	attributes['style']="Jazz"
-	attributes['composer']="Harry James, Duke Ellington, Johnny Hodges, Don George"
-	attributes['poet']="Harry James, Duke Ellington, Johnny Hodges, Don George"
-	attributes['piece']="Medium Bounce"
-	attributes['copyright']="1944 Alamo Music, Inc."
-	attributes['copyrightextra']="Copyright Renewed, controlled by Chappell & Chappell & Co., Inc. (Intersong Music, Publisher)"
+	attributes['title']='I\'m Beginning To See The Light'
+	attributes['style']='Jazz'
+	attributes['composer']='Harry James, Duke Ellington, Johnny Hodges, Don George'
+	attributes['poet']='Harry James, Duke Ellington, Johnny Hodges, Don George'
+	attributes['piece']='Medium Bounce'
+	attributes['copyright']='1944 Alamo Music, Inc.'
+	attributes['copyrightextra']='Copyright Renewed, controlled by Chappell & Chappell & Co., Inc. (Intersong Music, Publisher)'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="849d81e0-da7f-11e3-acc0-47bbef4c81a6"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='849d81e0-da7f-11e3-acc0-47bbef4c81a6'
 %>
 % endif
 

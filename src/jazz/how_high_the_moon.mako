@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -14,29 +14,29 @@
 	version['doLyrics']=True
 	attributes.addVersion('Real', version)
 
-	attributes['title']="How High The Moon"
-	attributes['style']="Jazz"
+	attributes['title']='How High The Moon'
+	attributes['style']='Jazz'
 	# this is from the real book and fake book
-	attributes['composer']="Morgan Lewis"
+	attributes['composer']='Morgan Lewis'
 	# this is from the fake book
-	attributes['poet']="Nancy Hamilton"
+	attributes['poet']='Nancy Hamilton'
 	# this is from the fake book
-	attributes['piece']="Moderately"
+	attributes['piece']='Moderately'
 	# this is from the fake book
-	attributes['copyright']="1940 by Chappell & Co., Inc. Copyright Renewed."
+	attributes['copyright']='1940 by Chappell & Co., Inc. Copyright Renewed.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="7d17fd1c-15fe-11e1-b205-0019d11e5a41"
-	attributes['structure']="AB"
-	attributes['structureremark']="this tunes structure can also be categorised as ABAC if you take the AB as A and the AC as B. Under the AB interpretation the first part of A (first 8 bars) is the same as the first part of B."
-	attributes['location']="rbk1:202,jfb:149"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='7d17fd1c-15fe-11e1-b205-0019d11e5a41'
+	attributes['structure']='AB'
+	attributes['structureremark']='this tunes structure can also be categorised as ABAC if you take the AB as A and the AC as B. Under the AB interpretation the first part of A (first 8 bars) is the same as the first part of B.'
+	attributes['location']='rbk1:202,jfb:149'
 
-	attributes['idyoutuberemark1']="Ella!"
-	attributes['idyoutube1']="2d-l7_TGnIE"
-	attributes['idyoutuberemark2']="Grappelli in a nice emotional version with McCoy Tyner at the Piano"
-	attributes['idyoutube2']="S4kf5aU1Wtg"
-	attributes['lyricsurl']="http://www.lyricsfreak.com/e/ella+fitzgerald/how+high+the+moon_20045644.html"
+	attributes['idyoutuberemark1']='Ella!'
+	attributes['idyoutube1']='2d-l7_TGnIE'
+	attributes['idyoutuberemark2']='Grappelli in a nice emotional version with McCoy Tyner at the Piano'
+	attributes['idyoutube2']='S4kf5aU1Wtg'
+	attributes['lyricsurl']='http://www.lyricsfreak.com/e/ella+fitzgerald/how+high+the+moon_20045644.html'
 %>
 % endif
 

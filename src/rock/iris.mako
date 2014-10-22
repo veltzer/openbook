@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -8,22 +8,22 @@
 	attributes.addVersion('DontMatter', version)
 	attributes.setDefaultVersionName('DontMatter')
 
-	attributes['title']="Iris"
-	attributes['style']="Rock"
-	attributes['composer']="Goo Goo Dolls"
-	attributes['poet']="Goo Goo Dolls"
-	attributes['piece']="Med. Ballad"
-	attributes['album']="Dizzy Up The Girls"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
+	attributes['title']='Iris'
+	attributes['style']='Rock'
+	attributes['composer']='Goo Goo Dolls'
+	attributes['poet']='Goo Goo Dolls'
+	attributes['piece']='Med. Ballad'
+	attributes['album']='Dizzy Up The Girls'
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
 
-	attributes['completion']="5"
-	attributes['uuid']="2596358c-3929-11e2-a2c3-6beac8f09e25"
+	attributes['completion']='5'
+	attributes['uuid']='2596358c-3929-11e2-a2c3-6beac8f09e25'
 
-	attributes['remark']="This is the right scale"
+	attributes['remark']='This is the right scale'
 
-	attributes['idyoutuberemark1']="The original video clip from youtube"
-	attributes['idyoutube1']="NdYWuo9OFAw"
-	attributes['lyricsurl']="http://tabs.ultimate-guitar.com/g/goo_goo_dolls/iris_ver5_crd.htm"
+	attributes['idyoutuberemark1']='The original video clip from youtube'
+	attributes['idyoutube1']='NdYWuo9OFAw'
+	attributes['lyricsurl']='http://tabs.ultimate-guitar.com/g/goo_goo_dolls/iris_ver5_crd.htm'
 %>
 % endif
 

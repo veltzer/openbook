@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,30 +10,30 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="Once I Loved"
-	attributes['style']="Jazz"
+	attributes['title']='Once I Loved'
+	attributes['style']='Jazz'
 	# from the real book
-	attributes['composer']="Antonio Carlos Jobim"
+	attributes['composer']='Antonio Carlos Jobim'
 	# Ray Gilbert from the new real book
-	attributes['poet']="Vinicius DeMoraes, Ray Gilbert"
+	attributes['poet']='Vinicius DeMoraes, Ray Gilbert'
 	# from the real book
-	attributes['piece']="Bossa"
+	attributes['piece']='Bossa'
 	# from the new real book
-	#attributes['piece']="Med.-Slow Bossa Nova"
+	#attributes['piece']='Med.-Slow Bossa Nova'
 	# from the new real book
-	attributes['copyright']="1965, Ipanema Music. Used By Permission."
+	attributes['copyright']='1965, Ipanema Music. Used By Permission.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="18294374-a26f-11df-a5f0-0019d11e5a41"
-	attributes['structure']="AAB"
-	attributes['location']="rbk1:329,nrbk1:250"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='18294374-a26f-11df-a5f0-0019d11e5a41'
+	attributes['structure']='AAB'
+	attributes['location']='rbk1:329,nrbk1:250'
 
-	attributes['idyoutuberemark1']="Joe Henderson accompanied by guitar doing Bossa..."
-	attributes['idyoutube1']="rJxHFW2S-Eo"
-	attributes['idyoutuberemark2']="Astrud Gilberto (original Bossa Style with Orchestra)"
-	attributes['idyoutube2']="BwP0eIRU-dQ"
-	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Once-I-Loved-lyrics-Ella-Fitzgerald/24CD6F6E245519E348256AAB0009C557"
+	attributes['idyoutuberemark1']='Joe Henderson accompanied by guitar doing Bossa...'
+	attributes['idyoutube1']='rJxHFW2S-Eo'
+	attributes['idyoutuberemark2']='Astrud Gilberto (original Bossa Style with Orchestra)'
+	attributes['idyoutube2']='BwP0eIRU-dQ'
+	attributes['lyricsurl']='http://www.sing365.com/music/lyric.nsf/Once-I-Loved-lyrics-Ella-Fitzgerald/24CD6F6E245519E348256AAB0009C557'
 %>
 % endif
 

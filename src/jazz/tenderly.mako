@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,30 +10,30 @@
 	attributes.setDefaultVersionName('Fake')
 
 	# from the fake book
-	attributes['title']="Tenderly"
-	attributes['style']="Jazz"
+	attributes['title']='Tenderly'
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']="Walter Gross"
+	attributes['composer']='Walter Gross'
 	# from the fake book
-	attributes['poet']="Jack Lawrence"
+	attributes['poet']='Jack Lawrence'
 	# from the fake book
-	attributes['piece']="Moderately"
+	attributes['piece']='Moderately'
 	# from the fake book
-	attributes['copyright']="1946, 1947, 1987 EDWIN H. MORRIS & COMPANY, A Division of MPL Communications, Inc."
+	attributes['copyright']='1946, 1947, 1987 EDWIN H. MORRIS & COMPANY, A Division of MPL Communications, Inc.'
 	# from the fake book
-	attributes['copyrightextra']="Renewed 1974, 1975 EDWIN H. MORRIS & COMPANY, A Division of MPL Communications, Inc. International Copyright Secured. All Rights Reserved."
+	attributes['copyrightextra']='Renewed 1974, 1975 EDWIN H. MORRIS & COMPANY, A Division of MPL Communications, Inc. International Copyright Secured. All Rights Reserved.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="37e8d9d8-db6c-11e3-8007-f7449ea11e17"
-	attributes['structure']="ABAC"
-	attributes['location']="jfb:381"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='37e8d9d8-db6c-11e3-8007-f7449ea11e17'
+	attributes['structure']='ABAC'
+	attributes['location']='jfb:381'
 
-	attributes['idyoutuberemark1']="Beautiful lyric version by Chet Baker"
-	attributes['idyoutube1']="H6mfWun73vI"
-	attributes['idyoutuberemark2']="Vocal version by Sarah Vaughn"
-	attributes['idyoutube2']="qNi6M_A9AzU"
-	attributes['lyricsurl']="http://www.metrolyrics.com/tenderly-lyrics-ella-fitzgerald.html"
+	attributes['idyoutuberemark1']='Beautiful lyric version by Chet Baker'
+	attributes['idyoutube1']='H6mfWun73vI'
+	attributes['idyoutuberemark2']='Vocal version by Sarah Vaughn'
+	attributes['idyoutube2']='qNi6M_A9AzU'
+	attributes['lyricsurl']='http://www.metrolyrics.com/tenderly-lyrics-ella-fitzgerald.html'
 %>
 % endif
 

@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -12,27 +12,27 @@
 
 	attributes['heb']=True
 
-	attributes['title']=u"כמה אהבה"
-	attributes['style']="Israeli"
+	attributes['title']=u'כמה אהבה'
+	attributes['style']='Israeli'
 	# from the internet
-	attributes['composer']=u"מאיר בנאי"
+	attributes['composer']=u'מאיר בנאי'
 	# from the internet
-	attributes['poet']=u"מאיר בנאי"
+	attributes['poet']=u'מאיר בנאי'
 	# mine
-	attributes['piece']=u"פלמנקו"
+	attributes['piece']=u'פלמנקו'
 	# from the internet
-	attributes['singer']=u"מאיר בנאי"
-	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
+	attributes['singer']=u'מאיר בנאי'
+	attributes['typesetter']=u'מרק ולצר <mark.veltzer@gmail.com>'
 
-	attributes['completion']="4"
-	attributes['uuid']="9196fc14-f623-11e2-afd9-ebf7136455e5"
+	attributes['completion']='4'
+	attributes['uuid']='9196fc14-f623-11e2-afd9-ebf7136455e5'
 
 	# mine
-	attributes['structure']="Intro,Verse,Chorus,Verse2,Chorus,Instrumental"
+	attributes['structure']='Intro,Verse,Chorus,Verse2,Chorus,Instrumental'
 
-	attributes['idyoutuberemark1']="Meir Banay in original version"
-	attributes['idyoutube1']="MtkYo-IVCjw"
-	attributes['lyricsurl']="http://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=606&wrkid=3894"
+	attributes['idyoutuberemark1']='Meir Banay in original version'
+	attributes['idyoutube1']='MtkYo-IVCjw'
+	attributes['lyricsurl']='http://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=606&wrkid=3894'
 
 %>
 % endif

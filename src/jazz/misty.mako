@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,31 +10,31 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="Misty"
-	attributes['style']="Jazz"
+	attributes['title']='Misty'
+	attributes['style']='Jazz'
 	# this is from the fake book
-	attributes['composer']="Errol Garner"
+	attributes['composer']='Errol Garner'
 	# this is from the fake book
-	attributes['poet']="Johnny Burke"
+	attributes['poet']='Johnny Burke'
 	# this is from the fake book
-	#attributes['piece']="Slowly, with a smooth swing"
+	#attributes['piece']='Slowly, with a smooth swing'
 	# this is from the real book
-	attributes['piece']="Ballad"
+	attributes['piece']='Ballad'
 	# this is from the fake book
-	attributes['copyright']="1955. Renewed 1983 Marke Music, Limerick Music, Reganesque"
-	attributes['copyrightextra']="Music and Time-Co Music"
+	attributes['copyright']='1955. Renewed 1983 Marke Music, Limerick Music, Reganesque'
+	attributes['copyrightextra']='Music and Time-Co Music'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="bb21d126-f210-11e0-9b64-0019d11e5a41"
-	attributes['structure']="AABA"
-	attributes['location']="rbk1:296,jfb:252"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='bb21d126-f210-11e0-9b64-0019d11e5a41'
+	attributes['structure']='AABA'
+	attributes['location']='rbk1:296,jfb:252'
 
-	attributes['idyoutuberemark1']="great version by Ella Fitzgerald"
-	attributes['idyoutube1']="mQouJdvB80U"
-	attributes['idyoutuberemark2']="Garner himself! what an amazing piano..."
-	attributes['idyoutube2']="nAaZzQWk8V4"
-	attributes['lyricsurl']="http://www.lyrics007.com/Ella%20Fitzgerald%20Lyrics/Misty%20Lyrics.html"
+	attributes['idyoutuberemark1']='great version by Ella Fitzgerald'
+	attributes['idyoutube1']='mQouJdvB80U'
+	attributes['idyoutuberemark2']='Garner himself! what an amazing piano...'
+	attributes['idyoutube2']='nAaZzQWk8V4'
+	attributes['lyricsurl']='http://www.lyrics007.com/Ella%20Fitzgerald%20Lyrics/Misty%20Lyrics.html'
 %>
 % endif
 

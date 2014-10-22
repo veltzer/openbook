@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -12,30 +12,30 @@
 
 	# Sorry for all the slashes. They have to be escaped by mako and then
 	# still escaped for Lilypond
-	attributes['title']="Take the \\\"A\\\" Train"
-	attributes['style']="Jazz"
+	attributes['title']='Take the \'A\' Train'
+	attributes['style']='Jazz'
 	# this is from the fake book
-	attributes['composer']="Billy Strayhorn, The Delta Rhythm Boys"
+	attributes['composer']='Billy Strayhorn, The Delta Rhythm Boys'
 	# this is from wikipedia
-	attributes['poet']="Joya Sherrill"
+	attributes['poet']='Joya Sherrill'
 	# this is from the fake book
-	attributes['piece']="Easy Swing"
+	attributes['piece']='Easy Swing'
 	# this is from the fake book
-	attributes['copyright']="1941 and 1943 by Tempo Music, Inc. Copyright Renewed 1969"
+	attributes['copyright']='1941 and 1943 by Tempo Music, Inc. Copyright Renewed 1969'
 	# this is from the fake book
-	attributes['copyrightextra']="International Copyright Secured Made in U.S.A. All Rights Reserved"
+	attributes['copyrightextra']='International Copyright Secured Made in U.S.A. All Rights Reserved'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="8e4bc138-da80-11e3-a96b-032e06c074f3"
-	attributes['structure']="AABA"
-	attributes['location']="jfb:379"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='8e4bc138-da80-11e3-a96b-032e06c074f3'
+	attributes['structure']='AABA'
+	attributes['location']='jfb:379'
 
-	attributes['idyoutuberemark1']="Original version by Duke"
-	attributes['idyoutube1']="cb2w2m1JmCY"
-	attributes['idyoutuberemark2']="Mingus and Dolphy together?!?"
-	attributes['idyoutube2']="YuCbQCnoIzI"
-	attributes['lyricsurl']="http://www.metrolyrics.com/take-the-a-train-lyrics-ella-fitzgerald.html"
+	attributes['idyoutuberemark1']='Original version by Duke'
+	attributes['idyoutube1']='cb2w2m1JmCY'
+	attributes['idyoutuberemark2']='Mingus and Dolphy together?!?'
+	attributes['idyoutube2']='YuCbQCnoIzI'
+	attributes['lyricsurl']='http://www.metrolyrics.com/take-the-a-train-lyrics-ella-fitzgerald.html'
 %>
 % endif
 

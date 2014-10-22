@@ -51,7 +51,7 @@ clean to be accepted)
 What do I need to know to participate?
 ---------------------------------------
 * Some rudimentary Linux system administration (in order to install the software needed for this project to build).
-* Some basic git software content tracking (in order to fetch the project, modify and submit patches). 
+* Some basic git software content tracking (in order to fetch the project, modify and submit patches).
 * The lilypond language (in order to edit or add tunes).
 * Some music knowledge would also help...:)
 

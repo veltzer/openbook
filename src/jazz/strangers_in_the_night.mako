@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,30 +10,30 @@
 	attributes.setDefaultVersionName('Fake')
 
 	# from the fake book
-	attributes['title']="Strangers In The Night"
-	attributes['style']="Jazz"
+	attributes['title']='Strangers In The Night'
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']="Bert Kaempfert"
+	attributes['composer']='Bert Kaempfert'
 	# from the fake book
-	attributes['poet']="Charles Singleton, Eddie Snyder"
+	attributes['poet']='Charles Singleton, Eddie Snyder'
 	# from the fake book
-	attributes['piece']="Moderately Slow"
+	attributes['piece']='Moderately Slow'
 	# from the fake book
-	attributes['copyright']="1966 by Champion Music Corporation and Screen Gems-EMI"
+	attributes['copyright']='1966 by Champion Music Corporation and Screen Gems-EMI'
 	# from the fake book
-	attributes['copyrightextra']="Sole Selling Agent MCA MUSIC PUBLISHING, A Division of MCA Inc., New York, NY"
+	attributes['copyrightextra']='Sole Selling Agent MCA MUSIC PUBLISHING, A Division of MCA Inc., New York, NY'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="2af3e35c-e252-11e3-abb7-932771d3c7a0"
-	attributes['structure']="AA'BA"
-	attributes['location']="jfb:364-365"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='2af3e35c-e252-11e3-abb7-932771d3c7a0'
+	attributes['structure']='AA\'BA'
+	attributes['location']='jfb:364-365'
 
-	attributes['idyoutuberemark1']="Cannonical version by Frank"
-	attributes['idyoutube1']="hlSbSKNk9f0"
-	attributes['idyoutuberemark2']="Another version by Frank"
-	attributes['idyoutube2']="nHuko5BCFzA"
-	attributes['lyricsurl']="http://www.lyricsfreak.com/f/frank+sinatra/strangers+in+the+night_20056148.html"
+	attributes['idyoutuberemark1']='Cannonical version by Frank'
+	attributes['idyoutube1']='hlSbSKNk9f0'
+	attributes['idyoutuberemark2']='Another version by Frank'
+	attributes['idyoutube2']='nHuko5BCFzA'
+	attributes['lyricsurl']='http://www.lyricsfreak.com/f/frank+sinatra/strangers+in+the+night_20056148.html'
 %>
 % endif
 

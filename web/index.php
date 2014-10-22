@@ -108,7 +108,7 @@
 		</ul>
 		</p>
 		<p>
-		Mark Veltzer, <?php 
+		Mark Veltzer, <?php
 			$copyYear = 2011;
 			$curYear = date('Y');
 			echo $copyYear . (($copyYear != $curYear) ? '-' . $curYear : '');

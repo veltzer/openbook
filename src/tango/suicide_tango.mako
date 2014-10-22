@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,24 +10,18 @@
 	attributes.addVersion('My', version)
 	attributes.setDefaultVersionName('My')
 
-	attributes['render']="My"
+	attributes['title']='Suicide Tango'
+	attributes['style']='Tango'
+	attributes['subtitle']='Utomlyonnye solntsem'
+	attributes['piece']='Tango'
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
 
-	attributes['title']="Suicide Tango"
-	attributes['style']="Tango"
-	attributes['subtitle']="Utomlyonnye solntsem"
-	attributes['composer']="???"
-	attributes['poet']="???"
-	attributes['piece']="Tango"
-	attributes['copyright']="???"
-	attributes['copyrightextra']="???"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
+	attributes['completion']='5'
+	attributes['uuid']='66834ecc-dcd0-11e2-9ec9-782bcbdd3b7a'
+	attributes['structure']='AABA'
 
-	attributes['completion']="5"
-	attributes['uuid']="66834ecc-dcd0-11e2-9ec9-782bcbdd3b7a"
-	attributes['structure']="AABA"
-
-	attributes['idyoutuberemark1']="Original Russian version"
-	attributes['idyoutube1']="qOnU-TRRmSE"
+	attributes['idyoutuberemark1']='Original Russian version'
+	attributes['idyoutube1']='qOnU-TRRmSE'
 %>
 % endif
 

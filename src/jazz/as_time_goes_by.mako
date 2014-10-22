@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 
@@ -11,26 +11,26 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="As Time Goes By"
-	attributes['style']="Jazz"
+	attributes['title']='As Time Goes By'
+	attributes['style']='Jazz'
 	# this is from the internet
-	attributes['composer']="Herman Hupfeld"
+	attributes['composer']='Herman Hupfeld'
 	# this is from the internet
-	attributes['poet']="Herman Hupfeld"
+	attributes['poet']='Herman Hupfeld'
 	# this is from the real book
-	attributes['piece']="Ballad"
+	attributes['piece']='Ballad'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="0a7b423c-7a4e-11e1-8d67-878c1414bdce"
-	attributes['structure']="AABA"
-	attributes['location']="rbk1:31"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='0a7b423c-7a4e-11e1-8d67-878c1414bdce'
+	attributes['structure']='AABA'
+	attributes['location']='rbk1:31'
 
-	attributes['idyoutuberemark1']="Classic Billie Holiday"
-	attributes['idyoutube1']="vYoet7-qDHI"
-	attributes['idyoutuberemark2']="The classic Sinatra performance with the Casablanca footage"
-	attributes['idyoutube2']="AY62QByUYJQ"
-	attributes['lyricsurl']="http://www.lyrics007.com/Frank%20Sinatra%20Lyrics/As%20Time%20Goes%20By%20Lyrics.html"
+	attributes['idyoutuberemark1']='Classic Billie Holiday'
+	attributes['idyoutube1']='vYoet7-qDHI'
+	attributes['idyoutuberemark2']='The classic Sinatra performance with the Casablanca footage'
+	attributes['idyoutube2']='AY62QByUYJQ'
+	attributes['lyricsurl']='http://www.lyrics007.com/Frank%20Sinatra%20Lyrics/As%20Time%20Goes%20By%20Lyrics.html'
 %>
 % endif
 

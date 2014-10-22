@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,30 +9,30 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="My Ship"
-	attributes['style']="Jazz"
+	attributes['title']='My Ship'
+	attributes['style']='Jazz'
 	# this is from the fake book
-	attributes['subtitle']="From The Musical Production 'LADY IN THE DARK'"
+	attributes['subtitle']='From The Musical Production \'LADY IN THE DARK\''
 	# this is from the fake book
-	attributes['composer']="Kurt Weil"
+	attributes['composer']='Kurt Weil'
 	# this is from the fake book
-	attributes['poet']="Ira Gershwin"
+	attributes['poet']='Ira Gershwin'
 	# this is from the fake book
-	attributes['piece']="Moderately Slow"
+	attributes['piece']='Moderately Slow'
 	# this is from the fake book
-	attributes['copyright']="1941 and renewed 1969 Hampshire House Publishing Corp. and Chappell & Co., Inc., New York, NY"
+	attributes['copyright']='1941 and renewed 1969 Hampshire House Publishing Corp. and Chappell & Co., Inc., New York, NY'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="ffe98a96-0a4c-11e3-bcaf-3b8eec526bc3"
-	attributes['structure']="AABA"
-	attributes['location']="jfb:268-269"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='ffe98a96-0a4c-11e3-bcaf-3b8eec526bc3'
+	attributes['structure']='AABA'
+	attributes['location']='jfb:268-269'
 
-	attributes['idyoutuberemark1']="Hancock, Brecker and Hargrove"
-	attributes['idyoutube1']="QTHYSBAZJrQ"
-	attributes['idyoutuberemark2']="Ella and Joe Pass"
-	attributes['idyoutube2']="UEOll-nNy4I"
-	attributes['lyricsurl']="http://www.stlyrics.com/lyrics/ladyinthedark/myship.htm"
+	attributes['idyoutuberemark1']='Hancock, Brecker and Hargrove'
+	attributes['idyoutube1']='QTHYSBAZJrQ'
+	attributes['idyoutuberemark2']='Ella and Joe Pass'
+	attributes['idyoutube2']='UEOll-nNy4I'
+	attributes['lyricsurl']='http://www.stlyrics.com/lyrics/ladyinthedark/myship.htm'
 %>
 % endif
 

@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -16,28 +16,28 @@
 	version['doLyricsmore']=True
 	attributes.addVersion('Real', version)
 
-	attributes['title']="A Fine Romance"
-	attributes['style']="Jazz"
-	attributes['composer']="Jerome Kern"
+	attributes['title']='A Fine Romance'
+	attributes['style']='Jazz'
+	attributes['composer']='Jerome Kern'
 	# this is from the fake book
-	attributes['poet']="Dorothy Fields"
-	attributes['piece']="Moderately"
+	attributes['poet']='Dorothy Fields'
+	attributes['piece']='Moderately'
 	# this is from the fake book
-	attributes['copyright']="1936 T.B. Harms Company. Copyright Renewed."
-	attributes['copyrightextra']="(c/o The Welk Music Group, Santa Monica, CA 90401)."
+	attributes['copyright']='1936 T.B. Harms Company. Copyright Renewed.'
+	attributes['copyrightextra']='(c/o The Welk Music Group, Santa Monica, CA 90401).'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="7c9691e6-a26e-11df-8418-0019d11e5a41"
-	attributes['structure']="ABAC"
-	attributes['structureremark']="the structure of this tune can also be AA or AA'. Doesn't really matter."
-	attributes['location']="rbk1:3,jfb:116"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='7c9691e6-a26e-11df-8418-0019d11e5a41'
+	attributes['structure']='ABAC'
+	attributes['structureremark']='the structure of this tune can also be AA or AA\'. Doesn't really matter.'
+	attributes['location']='rbk1:3,jfb:116'
 
-	attributes['idyoutuberemark1']="Oscar Peterson!"
-	attributes['idyoutube1']="ytipqjANlrY"
-	attributes['idyoutuberemark2']="Ella and Louis, great vocal performance of this song"
-	attributes['idyoutube2']="cKbD4PQBrIA"
-	attributes['lyricsurl']="http://www.elyrics.net/read/b/billie-holiday-lyrics/a-fine-romance-lyrics.html"
+	attributes['idyoutuberemark1']='Oscar Peterson!'
+	attributes['idyoutube1']='ytipqjANlrY'
+	attributes['idyoutuberemark2']='Ella and Louis, great vocal performance of this song'
+	attributes['idyoutube2']='cKbD4PQBrIA'
+	attributes['lyricsurl']='http://www.elyrics.net/read/b/billie-holiday-lyrics/a-fine-romance-lyrics.html'
 %>
 % endif
 

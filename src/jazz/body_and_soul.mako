@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,29 +10,29 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Body And Soul"
-	attributes['style']="Jazz"
+	attributes['title']='Body And Soul'
+	attributes['style']='Jazz'
 	# this is from the fake book
-	attributes['composer']="John Green"
+	attributes['composer']='John Green'
 	# this is from the fake book
-	attributes['poet']="Edward Heyman, Robert Sour, Frank Eyton"
+	attributes['poet']='Edward Heyman, Robert Sour, Frank Eyton'
 	# this is from the fake book
-	attributes['piece']="Slowly, with expression"
+	attributes['piece']='Slowly, with expression'
 	# this is from the fake book
-	attributes['copyright']="1930 Warner Bros. Inc & Chappell & Co. Ltd."
-	attributes['copyrightextra']="Copyright Renewed & Assigned to Warner Bros. Inc."
+	attributes['copyright']='1930 Warner Bros. Inc & Chappell & Co. Ltd.'
+	attributes['copyrightextra']='Copyright Renewed & Assigned to Warner Bros. Inc.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="b2076c06-e025-11e0-ab4c-0019d11e5a41"
-	attributes['structure']="AABA"
-	attributes['location']="rbk1:59,jfb:67"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='b2076c06-e025-11e0-ab4c-0019d11e5a41'
+	attributes['structure']='AABA'
+	attributes['location']='rbk1:59,jfb:67'
 
-	attributes['idyoutuberemark1']="Billie Holiday"
-	attributes['idyoutube1']="CMDlk6lGQOk"
-	attributes['idyoutuberemark2']="Dexter Gordon from the ballads. Excellent"
-	attributes['idyoutube2']="rMd9oZ4O0bs"
-	attributes['lyricsurl']="http://www.azlyrics.com/lyrics/dianakrall/bodyandsoul.html"
+	attributes['idyoutuberemark1']='Billie Holiday'
+	attributes['idyoutube1']='CMDlk6lGQOk'
+	attributes['idyoutuberemark2']='Dexter Gordon from the ballads. Excellent'
+	attributes['idyoutube2']='rMd9oZ4O0bs'
+	attributes['lyricsurl']='http://www.azlyrics.com/lyrics/dianakrall/bodyandsoul.html'
 %>
 % endif
 

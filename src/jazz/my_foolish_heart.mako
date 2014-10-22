@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,27 +9,27 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="My Foolish Heart"
-	attributes['style']="Jazz"
+	attributes['title']='My Foolish Heart'
+	attributes['style']='Jazz'
 	# this is from the fake book
-	attributes['composer']="Victor Young"
+	attributes['composer']='Victor Young'
 	# this is from the fake book
-	attributes['poet']="Ned Washington"
+	attributes['poet']='Ned Washington'
 	# this is from the fake book
-	attributes['piece']="Slowly & Expressively"
+	attributes['piece']='Slowly & Expressively'
 	# this is from the fake book
-	attributes['copyright']="1949 by Anne-Rachel Music Corp."
-	attributes['copyrightextra']="Copyright Renewed, Young interest conrolled by Chappel & Co., Inc. Intersong Music, Publisher"
+	attributes['copyright']='1949 by Anne-Rachel Music Corp.'
+	attributes['copyrightextra']='Copyright Renewed, Young interest conrolled by Chappel & Co., Inc. Intersong Music, Publisher'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="ce9be996-a26e-11df-bf2c-0019d11e5a41"
-	attributes['structure']="AB"
-	attributes['location']="jfb:260-261"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='ce9be996-a26e-11df-bf2c-0019d11e5a41'
+	attributes['structure']='AB'
+	attributes['location']='jfb:260-261'
 
-	attributes['idyoutube1']="a2LFVWBmoiw"
-	attributes['idyoutube2']="neXL51g8P-M"
-	attributes['lyricsurl']="http://www.oldielyrics.com/lyrics/frank_sinatra/my_foolish_heart.html"
+	attributes['idyoutube1']='a2LFVWBmoiw'
+	attributes['idyoutube2']='neXL51g8P-M'
+	attributes['lyricsurl']='http://www.oldielyrics.com/lyrics/frank_sinatra/my_foolish_heart.html'
 %>
 % endif
 

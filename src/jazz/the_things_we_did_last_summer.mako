@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,31 +9,31 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="The Things We Did Last Summer"
-	attributes['style']="Jazz"
+	attributes['title']='The Things We Did Last Summer'
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']="Sammy Chan & Jule Styne"
+	attributes['composer']='Sammy Chan & Jule Styne'
 	# from the fake book
-	attributes['poet']="Sammy Chan & Jule Styne"
+	attributes['poet']='Sammy Chan & Jule Styne'
 	# from the fake book
-	attributes['piece']="Slow Ballad"
-	attributes['copyright']="1946 by Edwin H. Morris & Co., Inc"
-	attributes['copyrightextra']="Copyright renewed, assigned to Producers Music Pub. Co., Inc. (Chappell & Co., Inc., administrator) and Cahn Music Co. for the U.S.A. only"
+	attributes['piece']='Slow Ballad'
+	attributes['copyright']='1946 by Edwin H. Morris & Co., Inc'
+	attributes['copyrightextra']='Copyright renewed, assigned to Producers Music Pub. Co., Inc. (Chappell & Co., Inc., administrator) and Cahn Music Co. for the U.S.A. only'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="31587e4e-ab0c-11e1-9dc8-3765c038b685"
-	attributes['structure']="AABA"
-	attributes['structureremark']="This is not a perfect AABA (last A is a little different) but very very close"
-	attributes['location']="jfb:392-393"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='31587e4e-ab0c-11e1-9dc8-3765c038b685'
+	attributes['structure']='AABA'
+	attributes['structureremark']='This is not a perfect AABA (last A is a little different) but very very close'
+	attributes['location']='jfb:392-393'
 
-	attributes['idyoutuberemark1']="Fats Navaro blowing cool"
-	attributes['idyoutube1']="extdr--C3jI"
-	attributes['idyoutuberemark2']="The classic Dean Martin version"
-	attributes['idyoutube2']="yRWfc-8wLm4"
-	attributes['idyoutuberemark3']="The classic Sinatra version"
-	attributes['idyoutube3']="f_88dKZHeF4"
-	attributes['lyricsurl']="http://www.lyricsfreak.com/f/frank+sinatra/the+things+we+did+last+summer_20055125.html"
+	attributes['idyoutuberemark1']='Fats Navaro blowing cool'
+	attributes['idyoutube1']='extdr--C3jI'
+	attributes['idyoutuberemark2']='The classic Dean Martin version'
+	attributes['idyoutube2']='yRWfc-8wLm4'
+	attributes['idyoutuberemark3']='The classic Sinatra version'
+	attributes['idyoutube3']='f_88dKZHeF4'
+	attributes['lyricsurl']='http://www.lyricsfreak.com/f/frank+sinatra/the+things+we+did+last+summer_20055125.html'
 %>
 % endif
 

@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -11,32 +11,32 @@
 	attributes.setDefaultVersionName('Fake')
 
 	# from the fake book
-	attributes['title']="Stormy Weather"
-	attributes['style']="Jazz"
+	attributes['title']='Stormy Weather'
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['subtitle']="Keeps Rainin' All the Time"
+	attributes['subtitle']='Keeps Rainin\' All the Time'
 	# this is from the fake book
-	attributes['composer']="Harold Arlen"
+	attributes['composer']='Harold Arlen'
 	# this is from the fake book
-	attributes['poet']="Ted Koehler"
+	attributes['poet']='Ted Koehler'
 	# this is from the fake book
-	attributes['piece']="Slowly"
+	attributes['piece']='Slowly'
 	# this is from the fake book
-	attributes['copyright']="1933 MILLIS MUSIC, INC."
+	attributes['copyright']='1933 MILLIS MUSIC, INC.'
 	# this is from the fake book
-	attributes['copyrightextra']="Renewed 1961 ARKO MUSIC CORP. This Arrangement 1987 ARKO MUSIC CORP. International Copyright Secured. All Rights Reserved."
+	attributes['copyrightextra']='Renewed 1961 ARKO MUSIC CORP. This Arrangement 1987 ARKO MUSIC CORP. International Copyright Secured. All Rights Reserved.'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="6204de70-da80-11e3-95e9-fbc293b14fcd"
-	attributes['structure']="AABA"
-	attributes['location']="jfb:363"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='6204de70-da80-11e3-95e9-fbc293b14fcd'
+	attributes['structure']='AABA'
+	attributes['location']='jfb:363'
 
-	attributes['idyoutuberemark1']="Ella in a great version"
-	attributes['idyoutube1']="ezGHapF8-lY"
-	attributes['idyoutuberemark2']="Ella in 1975 with Joe Pass"
-	attributes['idyoutube2']="teXOPAFMOp0"
-	attributes['lyricsurl']="http://www.lyricsfreak.com/b/billie+holiday/stormy+weather_20018077.html"
+	attributes['idyoutuberemark1']='Ella in a great version'
+	attributes['idyoutube1']='ezGHapF8-lY'
+	attributes['idyoutuberemark2']='Ella in 1975 with Joe Pass'
+	attributes['idyoutube2']='teXOPAFMOp0'
+	attributes['lyricsurl']='http://www.lyricsfreak.com/b/billie+holiday/stormy+weather_20018077.html'
 %>
 % endif
 

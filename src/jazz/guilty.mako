@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,17 +10,17 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Guilty"
-	attributes['style']="Jazz"
-	attributes['composer']="Gus Kahn, Harry Akst, Richard A. Whiting"
-	attributes['poet']="Gus Kahn, Harry Akst, Richard A. Whiting"
-	attributes['piece']="Slowly"
-	attributes['copyright']="1931 (Renewed 1958) Whiting Publishing and EMI Feist Catalog Inc."
+	attributes['title']='Guilty'
+	attributes['style']='Jazz'
+	attributes['composer']='Gus Kahn, Harry Akst, Richard A. Whiting'
+	attributes['poet']='Gus Kahn, Harry Akst, Richard A. Whiting'
+	attributes['piece']='Slowly'
+	attributes['copyright']='1931 (Renewed 1958) Whiting Publishing and EMI Feist Catalog Inc.'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="16154c88-da81-11e3-b38d-b75a4937af0f"
-	attributes['structure']="AABA"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='16154c88-da81-11e3-b38d-b75a4937af0f'
+	attributes['structure']='AABA'
 %>
 % endif
 

@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,20 +9,20 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Cry Me A River"
-	attributes['style']="Jazz"
+	attributes['title']='Cry Me A River'
+	attributes['style']='Jazz'
 	# this is from the fake book
-	attributes['composer']="Arthur Hamilton"
+	attributes['composer']='Arthur Hamilton'
 	# this is from the fake book
-	attributes['poet']="Arthur Hamilton"
+	attributes['poet']='Arthur Hamilton'
 	# this is from the fake book
-	attributes['piece']="Slowly and Rhythmically"
-	attributes['copyright']="1953, 1955 by Saunders Publications, Inc."
-	attributes['copyrightextra']="Copyright renewed, assigned to Arthur Hamilton and Chappell & Co., Inc."
+	attributes['piece']='Slowly and Rhythmically'
+	attributes['copyright']='1953, 1955 by Saunders Publications, Inc.'
+	attributes['copyrightextra']='Copyright renewed, assigned to Arthur Hamilton and Chappell & Co., Inc.'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="d7e89780-da80-11e3-b56b-2bd125289f76"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='d7e89780-da80-11e3-b56b-2bd125289f76'
 %>
 % endif
 

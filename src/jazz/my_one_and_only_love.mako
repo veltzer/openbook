@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,30 +9,30 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="My One And Only Love"
-	attributes['style']="Jazz"
+	attributes['title']='My One And Only Love'
+	attributes['style']='Jazz'
 	# this is from the fake book
-	attributes['composer']="Guy Wood"
+	attributes['composer']='Guy Wood'
 	# this is from the fake book
-	attributes['poet']="Robert Mellin"
+	attributes['poet']='Robert Mellin'
 	# this is from the fake book
-	attributes['piece']="Slowly"
+	attributes['piece']='Slowly'
 	# this is from the fake book
-	attributes['copyright']="1952, 1953 SHERWIN MUSIC PUBLISHING CORP."
+	attributes['copyright']='1952, 1953 SHERWIN MUSIC PUBLISHING CORP.'
 	# this is from the fake book
-	attributes['copyrightextra']="Renewed 1980, 1981 WAROCK CORP."
+	attributes['copyrightextra']='Renewed 1980, 1981 WAROCK CORP.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="ac777f1c-0bf0-11e3-9fd3-782bcbdd3b7a"
-	attributes['structure']="AABA"
-	attributes['location']="jfb:266"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='ac777f1c-0bf0-11e3-9fd3-782bcbdd3b7a'
+	attributes['structure']='AABA'
+	attributes['location']='jfb:266'
 
-	attributes['idyoutuberemark1']="Coltrane!"
-	attributes['idyoutube1']="ecrE80rnjhw"
-	attributes['idyoutuberemark2']="Sting in the leaving Las-Vegas version"
-	attributes['idyoutube2']="lEkJoMNFPEA"
-	attributes['lyricsurl']="http://www.lyricsfreak.com/l/louis+armstrong/my+one+and+only+love_20268115.html"
+	attributes['idyoutuberemark1']='Coltrane!'
+	attributes['idyoutube1']='ecrE80rnjhw'
+	attributes['idyoutuberemark2']='Sting in the leaving Las-Vegas version'
+	attributes['idyoutube2']='lEkJoMNFPEA'
+	attributes['lyricsurl']='http://www.lyricsfreak.com/l/louis+armstrong/my+one+and+only+love_20268115.html'
 %>
 % endif
 

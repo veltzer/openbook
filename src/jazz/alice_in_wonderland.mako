@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,26 +10,26 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="Alice In Wonderland"
-	attributes['style']="Jazz"
+	attributes['title']='Alice In Wonderland'
+	attributes['style']='Jazz'
 	# this is from the internet
-	attributes['composer']="Sammy Fain"
+	attributes['composer']='Sammy Fain'
 	# this is from the internet
-	attributes['poet']="Bob Hilliard"
+	attributes['poet']='Bob Hilliard'
 	# this is from the real book
-	attributes['piece']="Med."
+	attributes['piece']='Med.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="718a13e0-023a-11e1-924f-0019d11e5a41"
-	attributes['structure']="AABA"
-	attributes['location']="rbk1:12"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='718a13e0-023a-11e1-924f-0019d11e5a41'
+	attributes['structure']='AABA'
+	attributes['location']='rbk1:12'
 
-	attributes['idyoutuberemark1']="An amzing version by Oscar Peterson"
-	attributes['idyoutube1']="TSNPzm_wYLY"
-	attributes['idyoutuberemark2']="Bill Evans in the amazing Village Vanguard version"
-	attributes['idyoutube2']="bSXRvgFea-0"
-	attributes['lyricsurl']="http://www.stlyrics.com/lyrics/aliceinwonderland/aliceinwonderland.htm"
+	attributes['idyoutuberemark1']='An amzing version by Oscar Peterson'
+	attributes['idyoutube1']='TSNPzm_wYLY'
+	attributes['idyoutuberemark2']='Bill Evans in the amazing Village Vanguard version'
+	attributes['idyoutube2']='bSXRvgFea-0'
+	attributes['lyricsurl']='http://www.stlyrics.com/lyrics/aliceinwonderland/aliceinwonderland.htm'
 %>
 % endif
 

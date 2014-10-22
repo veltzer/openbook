@@ -118,7 +118,7 @@ SOURCES_ALL:=$(subst ./,,$(shell find src -type f -and -name "*.mako" -or -name 
 FILES_MAKO:=$(filter %.mako,$(SOURCES_ALL))
 FILES_MAKOI:=$(filter %.makoi,$(SOURCES_ALL))
 
-FILES_COMPLETED_JAZZ:=$(shell grep -l \'completion\']=\"5\" src/jazz/*)
+FILES_COMPLETED_JAZZ:=$(shell grep -l \'completion\']=\'5\' src/jazz/*)
 
 WEB_FOLDER:=web
 WEB_FILES:=$(shell find $(WEB_FOLDER) -type f)
@@ -288,6 +288,14 @@ clean:
 
 # checks
 
+.PHONY: check_ws
+check_ws:
+	$(info doing [$@])
+	$(Q)scripts/wrapper_ok.py grep -e "[[:space:]]$$" $(FILES_MAKO)
+.PHONY: check_naked_mymark
+check_naked_mymark:
+	$(info doing [$@])
+	$(Q)scripts/wrapper_ok.py grep "\myMark" $(FILES_MAKO) | scripts/wrapper_ok.py grep -v \"
 .PHONY: check_and
 check_and:
 	$(info doing [$@])
@@ -306,7 +314,7 @@ check_python:
 	$(info doing [$@])
 	$(Q)scripts/check.py
 .PHONY: check_all
-check_all: check_and check_mark check_veltzer_https check_python
+check_all: check_ws check_naked_mymark check_and check_mark check_veltzer_https check_python
 
 # rules
 
@@ -377,14 +385,14 @@ $(OB_OUT_LY): $(OB_OUT_FILES) $(MAKO_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(Q)$(MAKO_WRAPPER) $(OB_OUT_LY) "$(OB_OUT_PATTERN)" $(CONST_BOOK) $(CONST_DONTCUT) 0
 $(IL_OUT_PDF) $(IL_OUT_PS): $(IL_OUT_LY) $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)$(LILYPOND_WRAPPER) $(IL_OUT_PS) $(IL_OUT_PDF) $(IL_OUT_BASE) $(IL_OUT_LY) $(DO_PDFRED_BOOKS) $(DO_STOP_OUTPUT) 
+	$(Q)$(LILYPOND_WRAPPER) $(IL_OUT_PS) $(IL_OUT_PDF) $(IL_OUT_BASE) $(IL_OUT_LY) $(DO_PDFRED_BOOKS) $(DO_STOP_OUTPUT)
 $(IL_OUT_LY): $(IL_OUT_FILES) $(MAKO_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)
 	$(Q)$(MAKO_WRAPPER) $(IL_OUT_LY) "$(IL_OUT_PATTERN)" $(CONST_BOOK) $(CONST_DONTCUT) 0
 $(RK_OUT_PDF) $(RK_OUT_PS): $(RK_OUT_LY) $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)$(LILYPOND_WRAPPER) $(RK_OUT_PS) $(RK_OUT_PDF) $(RK_OUT_BASE) $(RK_OUT_LY) $(DO_PDFRED_BOOKS) $(DO_STOP_OUTPUT) 
+	$(Q)$(LILYPOND_WRAPPER) $(RK_OUT_PS) $(RK_OUT_PDF) $(RK_OUT_BASE) $(RK_OUT_LY) $(DO_PDFRED_BOOKS) $(DO_STOP_OUTPUT)
 $(RK_OUT_LY): $(RK_OUT_FILES) $(MAKO_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-mkdir -p $(dir $@)

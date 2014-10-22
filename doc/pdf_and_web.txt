@@ -10,6 +10,6 @@ how do you do it?
 
 how do you check if a file is linearized?
 - qpdf --check [filename.pdf]
-- pdfinfo [filename.pdf] 
+- pdfinfo [filename.pdf]
 	you can find it under:
 	Optimized:      yes

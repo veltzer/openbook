@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,18 +9,18 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Nice Work If You Can Get It"
-	attributes['style']="Jazz"
-	attributes['subtitle']="(From \\\"A Damsel In Distress\\\")"
-	attributes['composer']="George Gershwin"
-	attributes['poet']="Ira Gershwin"
-	attributes['piece']="Moderately"
-	attributes['copyright']="1937 Gershwin Publishing Corp."
-	attributes['copyrightextra']="Copyright Renewed, Assigned to Chappell & Co. Inc."
+	attributes['title']='Nice Work If You Can Get It'
+	attributes['style']='Jazz'
+	attributes['subtitle']='(From \'A Damsel In Distress\')'
+	attributes['composer']='George Gershwin'
+	attributes['poet']='Ira Gershwin'
+	attributes['piece']='Moderately'
+	attributes['copyright']='1937 Gershwin Publishing Corp.'
+	attributes['copyrightextra']='Copyright Renewed, Assigned to Chappell & Co. Inc.'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="e55de2a4-da7f-11e3-8543-8726b44261b4"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='e55de2a4-da7f-11e3-8543-8726b44261b4'
 %>
 % endif
 

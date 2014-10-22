@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,29 +10,29 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Flamingo"
-	attributes['style']="Jazz"
+	attributes['title']='Flamingo'
+	attributes['style']='Jazz'
 	# this is from the fake book
-	attributes['composer']="Ted Grouya"
+	attributes['composer']='Ted Grouya'
 	# this is from the fake book
-	attributes['poet']="Ed Anderson"
+	attributes['poet']='Ed Anderson'
 	# this is from the fake book
-	attributes['piece']="Slowly"
+	attributes['piece']='Slowly'
 	# this is from the fake book
-	attributes['copyright']="1941 Tempo Music, Inc."
-	attributes['copyrightextra']="Renewed 1969 Edwin H. Morris & Company, A Division of MPL Communications, Inc."
+	attributes['copyright']='1941 Tempo Music, Inc.'
+	attributes['copyrightextra']='Renewed 1969 Edwin H. Morris & Company, A Division of MPL Communications, Inc.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="be87a49a-1a05-11e1-ba9e-0019d11e5a41"
-	attributes['structure']="AABA"
-	attributes['location']="jfb:119"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='be87a49a-1a05-11e1-ba9e-0019d11e5a41'
+	attributes['structure']='AABA'
+	attributes['location']='jfb:119'
 
-	attributes['idyoutuberemark1']="Duke and his orchestra"
-	attributes['idyoutube1']="XlmMzUMCIIg"
-	attributes['idyoutuberemark2']="Petrucciani and Grappelli"
-	attributes['idyoutube2']="oqR5hPjPM3o"
-	attributes['lyricsurl']="http://lyricsplayground.com/alpha/songs/f/flamingo.shtml"
+	attributes['idyoutuberemark1']='Duke and his orchestra'
+	attributes['idyoutube1']='XlmMzUMCIIg'
+	attributes['idyoutuberemark2']='Petrucciani and Grappelli'
+	attributes['idyoutube2']='oqR5hPjPM3o'
+	attributes['lyricsurl']='http://lyricsplayground.com/alpha/songs/f/flamingo.shtml'
 %>
 % endif
 

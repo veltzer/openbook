@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,19 +9,19 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Ol' Man River"
-	attributes['style']="Jazz"
-	attributes['composer']="Jerome Kern"
-	attributes['poet']="Oscar Hammerstein II"
+	attributes['title']='Ol\' Man River'
+	attributes['style']='Jazz'
+	attributes['composer']='Jerome Kern'
+	attributes['poet']='Oscar Hammerstein II'
 	# this is from the fake book
-	attributes['piece']="Very Slowly"
-	attributes['copyright']="1927 T.B. Harms Company. Copyright Renewed."
-	attributes['copyrightextra']="(c/o The Welk Music Group, Santa Monica, CA 90401)"
+	attributes['piece']='Very Slowly'
+	attributes['copyright']='1927 T.B. Harms Company. Copyright Renewed.'
+	attributes['copyrightextra']='(c/o The Welk Music Group, Santa Monica, CA 90401)'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="0313b274-da80-11e3-a78b-a386f8b826fd"
-	attributes['structure']="AA'BA''"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='0313b274-da80-11e3-a78b-a386f8b826fd'
+	attributes['structure']='AA\'BA\'\''
 %>
 % endif
 

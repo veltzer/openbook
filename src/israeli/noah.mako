@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -12,27 +12,27 @@
 
 	attributes['heb']=True
 
-	attributes['title']=u"נח"
-	attributes['style']="Israeli"
+	attributes['title']=u'נח'
+	attributes['style']='Israeli'
 	# from the internet
-	attributes['composer']=u"מתי כספי"
+	attributes['composer']=u'מתי כספי'
 	# from the internet
-	attributes['poet']=u"יורם טהרלב"
+	attributes['poet']=u'יורם טהרלב'
 	# mine
-	attributes['piece']=u"סמבה"
+	attributes['piece']=u'סמבה'
 	# from the internet
-	attributes['singer']=u"מתי כספי"
-	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
+	attributes['singer']=u'מתי כספי'
+	attributes['typesetter']=u'מרק ולצר <mark.veltzer@gmail.com>'
 
-	attributes['completion']="5"
-	attributes['uuid']="702eab24-e8ce-11e2-91c8-5b1ff4f22893"
+	attributes['completion']='5'
+	attributes['uuid']='702eab24-e8ce-11e2-91c8-5b1ff4f22893'
 
-	attributes['structure']="A"
+	attributes['structure']='A'
 
-	attributes['idyoutuberemark1']="Mati Caspi in the original performance"
-	attributes['idyoutube1']="Eiae247OZXI"
+	attributes['idyoutuberemark1']='Mati Caspi in the original performance'
+	attributes['idyoutube1']='Eiae247OZXI'
 
-	attributes['lyricsurl']="http://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=688&wrkid=2292&gclid=CLiirsj_o7gCFci23godXw0A8w"
+	attributes['lyricsurl']='http://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=688&wrkid=2292&gclid=CLiirsj_o7gCFci23godXw0A8w'
 
 %>
 % endif

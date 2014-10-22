@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -11,30 +11,30 @@
 	attributes.setDefaultVersionName('Fake')
 
 	# from the fake book
-	attributes['title']="I'll Remember April"
-	attributes['style']="Jazz"
+	attributes['title']='I\'ll Remember April'
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']="Don Raye, Gene De Paul, Pat Johnson"
+	attributes['composer']='Don Raye, Gene De Paul, Pat Johnson'
 	# from the fake book
-	attributes['poet']="Don Raye, Gene De Paul, Pat Johnson"
+	attributes['poet']='Don Raye, Gene De Paul, Pat Johnson'
 	# from the fake book
-	attributes['piece']="Moderately"
+	attributes['piece']='Moderately'
 	# from the fake book
-	attributes['copyright']="1941, 1942 by MCA Music Publishing, A Division of MCA, Inc."
+	attributes['copyright']='1941, 1942 by MCA Music Publishing, A Division of MCA, Inc.'
 	# from the fake book
-	attributes['copyrightextra']="Renewed 1969, 1970 Pic Corp."
+	attributes['copyrightextra']='Renewed 1969, 1970 Pic Corp.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="84142766-dba0-11e3-9e62-bb6aa0505531"
-	attributes['structure']="ABA"
-	attributes['location']="jfb:168-169"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='84142766-dba0-11e3-9e62-bb6aa0505531'
+	attributes['structure']='ABA'
+	attributes['location']='jfb:168-169'
 
-	attributes['idyoutuberemark1']="Caterina Valente & Chet Baker"
-	attributes['idyoutube1']="2YZ4FGEGom8"
-	attributes['idyoutuberemark2']="Sonny Stitt blasts away..."
-	attributes['idyoutube2']="VHbwr4ieI2U"
-	attributes['lyricsurl']="http://www.lyricsfreak.com/f/frank+sinatra/ill+remember+april_20055817.html"
+	attributes['idyoutuberemark1']='Caterina Valente & Chet Baker'
+	attributes['idyoutube1']='2YZ4FGEGom8'
+	attributes['idyoutuberemark2']='Sonny Stitt blasts away...'
+	attributes['idyoutube2']='VHbwr4ieI2U'
+	attributes['lyricsurl']='http://www.lyricsfreak.com/f/frank+sinatra/ill+remember+april_20055817.html'
 %>
 % endif
 

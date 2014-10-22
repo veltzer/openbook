@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,36 +10,36 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="The Girl From Ipanema"
-	attributes['style']="Jazz"
+	attributes['title']='The Girl From Ipanema'
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['subtitle']="Garota De Ipanema"
+	attributes['subtitle']='Garota De Ipanema'
 	# from the real book
-	#attributes['composer']="Jobim"
+	#attributes['composer']='Jobim'
 	# from the fake book
-	attributes['composer']="Antonio Carlos Jobim"
+	attributes['composer']='Antonio Carlos Jobim'
 	# from the fake book
-	attributes['poet']="Vincius De Moraes, Norman Gimbel"
+	attributes['poet']='Vincius De Moraes, Norman Gimbel'
 	# from the real book
-	#attributes['piece']="Bossa"
+	#attributes['piece']='Bossa'
 	# from the fake book
-	attributes['piece']="Moderate Bossa Nova"
+	attributes['piece']='Moderate Bossa Nova'
 	# from the fake book
-	attributes['copyright']="1963, Antonio Carlos Jobim and Vincius De Moraes, Brazil"
+	attributes['copyright']='1963, Antonio Carlos Jobim and Vincius De Moraes, Brazil'
 	# from the fake book
-	attributes['copyrightextra']="Sole Selling Agent Duchess Music Corporation (MCA), New York, NY for all. English speaking countries"
+	attributes['copyrightextra']='Sole Selling Agent Duchess Music Corporation (MCA), New York, NY for all. English speaking countries'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="2c3b337c-a26f-11df-b7d1-0019d11e5a41"
-	attributes['structure']="AABA"
-	attributes['location']="rbk1:171,jfb:132"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='2c3b337c-a26f-11df-b7d1-0019d11e5a41'
+	attributes['structure']='AABA'
+	attributes['location']='rbk1:171,jfb:132'
 
-	attributes['idyoutuberemark1']="Tom Jobim and Joan Gilberto"
-	attributes['idyoutube1']="DmV0TcTNJ3o"
-	attributes['idyoutuberemark2']="Frank!"
-	attributes['idyoutube2']="NldPFVKYmiw"
-	attributes['lyricsurl']="http://www.lyricsfreak.com/f/frank+sinatra/girl+from+ipanema+the_10121534.html"
+	attributes['idyoutuberemark1']='Tom Jobim and Joan Gilberto'
+	attributes['idyoutube1']='DmV0TcTNJ3o'
+	attributes['idyoutuberemark2']='Frank!'
+	attributes['idyoutube2']='NldPFVKYmiw'
+	attributes['lyricsurl']='http://www.lyricsfreak.com/f/frank+sinatra/girl+from+ipanema+the_10121534.html'
 %>
 % endif
 

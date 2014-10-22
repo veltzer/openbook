@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,28 +10,28 @@
 	attributes.setDefaultVersionName('Fake')
 
 	# from the fake book
-	attributes['title']="All Or Nothing At All"
-	attributes['style']="Jazz"
+	attributes['title']='All Or Nothing At All'
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']="Arthur Altman"
+	attributes['composer']='Arthur Altman'
 	# from the fake book
-	attributes['poet']="Jack Lawrence"
+	attributes['poet']='Jack Lawrence'
 	# from the fake book
-	attributes['piece']="Moderately Slow"
+	attributes['piece']='Moderately Slow'
 	# from the fake book
-	attributes['copyright']="1930, 1940 by MCA MUSIC PUBLISHING, A Division of MCA Inc. Copyright Renewed"
+	attributes['copyright']='1930, 1940 by MCA MUSIC PUBLISHING, A Division of MCA Inc. Copyright Renewed'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="4a4a2f24-ed86-11e3-aaf5-87841dcdcaf2"
-	attributes['structure']="AABA"
-	attributes['location']="jfb:41"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='4a4a2f24-ed86-11e3-aaf5-87841dcdcaf2'
+	attributes['structure']='AABA'
+	attributes['location']='jfb:41'
 
-	attributes['idyoutuberemark1']="Diana Krall in a good version of this one"
-	attributes['idyoutube1']="GHyT8m6mSuI"
-	attributes['idyoutuberemark2']="Early Frank with Orchestra"
-	attributes['idyoutube2']="u7klm1GS3v8"
-	attributes['lyricsurl']="http://www.azlyrics.com/lyrics/franksinatra/allornothingatall.html"
+	attributes['idyoutuberemark1']='Diana Krall in a good version of this one'
+	attributes['idyoutube1']='GHyT8m6mSuI'
+	attributes['idyoutuberemark2']='Early Frank with Orchestra'
+	attributes['idyoutube2']='u7klm1GS3v8'
+	attributes['lyricsurl']='http://www.azlyrics.com/lyrics/franksinatra/allornothingatall.html'
 %>
 % endif
 

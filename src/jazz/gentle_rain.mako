@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,30 +10,30 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="Gentle Rain"
-	attributes['style']="Jazz"
-	attributes['composer']="Louis Bonfa"
+	attributes['title']='Gentle Rain'
+	attributes['style']='Jazz'
+	attributes['composer']='Louis Bonfa'
 	# this is from the new real book
-	attributes['poet']="Matt Dubey"
+	attributes['poet']='Matt Dubey'
 	# this comes from the real book...
-	attributes['piece']="Bossa"
+	attributes['piece']='Bossa'
 	# this is from the new real book
-	#attributes['piece']="Med. Ballad (or Slow Bossa)"
-	attributes['copyright']="1931 (renewed 1959) EMI Robbins Catalog, Inc"
-	attributes['copyrightextra']="Used by Persmission of CPP/Belwin, Inc, Miami, FL. International Copyright Secured. All Rights Reserved."
+	#attributes['piece']='Med. Ballad (or Slow Bossa)'
+	attributes['copyright']='1931 (renewed 1959) EMI Robbins Catalog, Inc'
+	attributes['copyrightextra']='Used by Persmission of CPP/Belwin, Inc, Miami, FL. International Copyright Secured. All Rights Reserved.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="04bbfb74-0128-11e1-9e2a-0019d11e5a41"
-	attributes['structure']="AB"
-	attributes['structureremark']="This tune has a weird structure because the part B has different lengths"
-	attributes['location']="rbk1:169,nrbk3:128"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='04bbfb74-0128-11e1-9e2a-0019d11e5a41'
+	attributes['structure']='AB'
+	attributes['structureremark']='This tune has a weird structure because the part B has different lengths'
+	attributes['location']='rbk1:169,nrbk3:128'
 
-	attributes['idyoutuberemark1']="Tony Bennet slow version"
-	attributes['idyoutube1']="uJGqzudEDDE"
-	attributes['idyoutuberemark2']="The wonderful ballad version of Astrud Gilberto"
-	attributes['idyoutube2']="s6ndU7GKpjI"
-	attributes['lyricsurl']="http://lyrics.wikia.com/Astrud_Gilberto:The_Gentle_Rain"
+	attributes['idyoutuberemark1']='Tony Bennet slow version'
+	attributes['idyoutube1']='uJGqzudEDDE'
+	attributes['idyoutuberemark2']='The wonderful ballad version of Astrud Gilberto'
+	attributes['idyoutube2']='s6ndU7GKpjI'
+	attributes['lyricsurl']='http://lyrics.wikia.com/Astrud_Gilberto:The_Gentle_Rain'
 %>
 % endif
 

@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,31 +9,31 @@
 	attributes.addVersion('Newreal', version)
 	attributes.setDefaultVersionName('Newreal')
 
-	attributes['title']="Nature Boy"
-	attributes['style']="Jazz"
+	attributes['title']='Nature Boy'
+	attributes['style']='Jazz'
 	# from the new real book
-	attributes['composer']="Eben Ahbez"
-	attributes['poet']="Eben Ahbez"
+	attributes['composer']='Eben Ahbez'
+	attributes['poet']='Eben Ahbez'
 	# from the real book (volume II)
-	#attributes['piece']="Slowly"
+	#attributes['piece']='Slowly'
 	# from the new Real book
-	attributes['piece']="Med. Ballad"
+	attributes['piece']='Med. Ballad'
 	# from the new Real Book
-	attributes['copyright']="1948, Eben Ahbez"
+	attributes['copyright']='1948, Eben Ahbez'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="13d57a4a-a26f-11df-8711-0019d11e5a41"
-	attributes['structure']="AB"
-	attributes['structureremark']="this tunes structure can also be AA' or maybe ABAC since the A and the part B are VERY similar."
-	attributes['location']="rbk2:260,nrbk1:231"
-	attributes['remark']="7th bar of letters A and B were originally 2 bars each. Melody is straight eights, though rather freely interpreted rhythmically."
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='13d57a4a-a26f-11df-8711-0019d11e5a41'
+	attributes['structure']='AB'
+	attributes['structureremark']='this tunes structure can also be AA' or maybe ABAC since the A and the part B are VERY similar.'
+	attributes['location']='rbk2:260,nrbk1:231'
+	attributes['remark']='7th bar of letters A and B were originally 2 bars each. Melody is straight eights, though rather freely interpreted rhythmically.'
 
-	attributes['idyoutuberemark1']="Nat King Cole in a the cannonical version..."
-	attributes['idyoutube1']="Iq0XJCJ1Srw"
-	attributes['idyoutuberemark2']="Miles in a slow version"
-	attributes['idyoutube2']="GDS_nqHaUvc"
-	attributes['lyricsurl']="http://www.metrolyrics.com/nature-boy-lyrics-nat-king-cole.html"
+	attributes['idyoutuberemark1']='Nat King Cole in a the cannonical version...'
+	attributes['idyoutube1']='Iq0XJCJ1Srw'
+	attributes['idyoutuberemark2']='Miles in a slow version'
+	attributes['idyoutube2']='GDS_nqHaUvc'
+	attributes['lyricsurl']='http://www.metrolyrics.com/nature-boy-lyrics-nat-king-cole.html'
 %>
 % endif
 

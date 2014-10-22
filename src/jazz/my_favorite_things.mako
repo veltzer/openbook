@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,32 +10,32 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="My Favorite Things"
-	attributes['style']="Jazz"
+	attributes['title']='My Favorite Things'
+	attributes['style']='Jazz'
 	# this is from the fake book
-	attributes['subtitle']="From 'The Sound Of Music'"
+	attributes['subtitle']='From 'The Sound Of Music''
 	# this is from the fake book
-	attributes['composer']="Richard Rodgers"
+	attributes['composer']='Richard Rodgers'
 	# this is from the fake book
-	attributes['poet']="Oscar Hammerstein II"
+	attributes['poet']='Oscar Hammerstein II'
 	# this is from the fake book
-	attributes['piece']="Lively, with spirit"
+	attributes['piece']='Lively, with spirit'
 	# this is from the fake book
-	attributes['copyright']="1959 by Richard Rodgers and Oscar Hammerstein II. Copyright Renewed."
+	attributes['copyright']='1959 by Richard Rodgers and Oscar Hammerstein II. Copyright Renewed.'
 	# this is from the fake book
-	attributes['copyrightextra']="Williamson Music Co., owner of publication and allied right throughout the Westen Hemisphere and Japan. All Rights Administered by Chappell & Co., Inc."
+	attributes['copyrightextra']='Williamson Music Co., owner of publication and allied right throughout the Westen Hemisphere and Japan. All Rights Administered by Chappell & Co., Inc.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="02c22208-a26f-11df-98fd-0019d11e5a41"
-	attributes['structure']="AABA"
-	attributes['location']="rbk1:306,jfb:260"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='02c22208-a26f-11df-98fd-0019d11e5a41'
+	attributes['structure']='AABA'
+	attributes['location']='rbk1:306,jfb:260'
 
-	attributes['idyoutuberemark1']="Sarah Vaughan"
-	attributes['idyoutube1']="dusavln6Cjw"
-	attributes['idyoutuberemark2']="The great version by Coltrane"
-	attributes['idyoutube2']="0I6xkVRWzCY"
-	attributes['lyricsurl']="http://www.stlyrics.com/songs/s/soundofmusic9841/myfavouritethings323514.html"
+	attributes['idyoutuberemark1']='Sarah Vaughan'
+	attributes['idyoutube1']='dusavln6Cjw'
+	attributes['idyoutuberemark2']='The great version by Coltrane'
+	attributes['idyoutube2']='0I6xkVRWzCY'
+	attributes['lyricsurl']='http://www.stlyrics.com/songs/s/soundofmusic9841/myfavouritethings323514.html'
 %>
 % endif
 

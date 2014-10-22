@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,29 +9,29 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Hallelujah I Love Him (Her) So"
-	attributes['style']="Jazz"
+	attributes['title']='Hallelujah I Love Him (Her) So'
+	attributes['style']='Jazz'
 	# this is from the fake book
-	attributes['composer']="Ray Charles"
+	attributes['composer']='Ray Charles'
 	# this is from the fake book
-	attributes['poet']="Ray Charles"
+	attributes['poet']='Ray Charles'
 	# this is from the fake book
-	attributes['piece']="Moderately"
+	attributes['piece']='Moderately'
 	# this is from the fake book
-	attributes['copyright']="1956 & 1959 by Hill & Range Snogs, Inc."
-	attributes['copyrightextra']="Copyright renewed, all rights controlled by Unichappell Music, Inc."
+	attributes['copyright']='1956 & 1959 by Hill & Range Snogs, Inc.'
+	attributes['copyrightextra']='Copyright renewed, all rights controlled by Unichappell Music, Inc.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="d387ae5e-a26e-11df-9edf-0019d11e5a41"
-	attributes['structure']="ABA"
-	attributes['location']="jfb:141"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='d387ae5e-a26e-11df-9edf-0019d11e5a41'
+	attributes['structure']='ABA'
+	attributes['location']='jfb:141'
 
-	attributes['idyoutuberemark1']="Ray Charles live!"
-	attributes['idyoutube1']="Cf0X7QuK4LI"
-	attributes['idyoutuberemark2']="The original version"
-	attributes['idyoutube2']="rWGG6MdGdlg"
-	attributes['lyricsurl']="http://www.lyrics007.com/Peggy%20Lee%20Lyrics/Hallelujah,%20I%20Love%20Him%20So%20Lyrics.html"
+	attributes['idyoutuberemark1']='Ray Charles live!'
+	attributes['idyoutube1']='Cf0X7QuK4LI'
+	attributes['idyoutuberemark2']='The original version'
+	attributes['idyoutube2']='rWGG6MdGdlg'
+	attributes['lyricsurl']='http://www.lyrics007.com/Peggy%20Lee%20Lyrics/Hallelujah,%20I%20Love%20Him%20So%20Lyrics.html'
 %>
 % endif
 

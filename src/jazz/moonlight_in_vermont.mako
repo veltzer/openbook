@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,30 +10,30 @@
 	attributes.setDefaultVersionName('Fake')
 
 	# from the fake book
-	attributes['title']="Moonlight in Vermont"
-	attributes['style']="Jazz"
+	attributes['title']='Moonlight in Vermont'
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']="Karl Suessdorf"
+	attributes['composer']='Karl Suessdorf'
 	# from the fake book
-	attributes['poet']="John Blackburn"
+	attributes['poet']='John Blackburn'
 	# from the fake book
-	attributes['piece']="Freely"
+	attributes['piece']='Freely'
 	# from the fake book
-	attributes['copyright']="1944-1945 by MICHAEL H GOLDSEN, INC."
+	attributes['copyright']='1944-1945 by MICHAEL H GOLDSEN, INC.'
 	# from the fake book
-	attributes['copyrightextra']="Renewed 1972-1973 MICHAEL H GOLDSEN, INC."
+	attributes['copyrightextra']='Renewed 1972-1973 MICHAEL H GOLDSEN, INC.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="557b082e-e0d8-11e3-a037-b365e6166d43"
-	attributes['structure']="AABA"
-	attributes['location']="jfb:256"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='557b082e-e0d8-11e3-a037-b365e6166d43'
+	attributes['structure']='AABA'
+	attributes['location']='jfb:256'
 
-	attributes['idyoutuberemark1']="Louis and Ella"
-	attributes['idyoutube1']="Rg0hg5YD7sE"
-	attributes['idyoutuberemark2']="Franks version"
-	attributes['idyoutube2']="_CiizL8Vfu8"
-	attributes['lyricsurl']="http://www.azlyrics.com/lyrics/franksinatra/moonlightinvermont.html"
+	attributes['idyoutuberemark1']='Louis and Ella'
+	attributes['idyoutube1']='Rg0hg5YD7sE'
+	attributes['idyoutuberemark2']='Franks version'
+	attributes['idyoutube2']='_CiizL8Vfu8'
+	attributes['lyricsurl']='http://www.azlyrics.com/lyrics/franksinatra/moonlightinvermont.html'
 %>
 % endif
 
@@ -52,7 +52,7 @@
 	- added lyrics url.
 	- added youtube performances.
 	TODO:
-	- the "aes:9.11+" chord appears as 7.11+ in the pdf. how do I fix this?
+	- the 'aes:9.11+' chord appears as 7.11+ in the pdf. how do I fix this?
 	- add another version of this tune.
 % endif
 

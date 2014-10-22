@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,30 +10,30 @@
 	attributes.setDefaultVersionName('Fake')
 
 	# from the fake book
-	attributes['title']="What A Wonderful World"
-	attributes['style']="Jazz"
+	attributes['title']='What A Wonderful World'
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']="George David Weiss, Bob Thiele"
+	attributes['composer']='George David Weiss, Bob Thiele'
 	# from the fake book
-	attributes['poet']="George David Weiss, Bob Thiele"
+	attributes['poet']='George David Weiss, Bob Thiele'
 	# from the fake book
-	attributes['piece']="Slowly"
+	attributes['piece']='Slowly'
 	# from the fake book
-	attributes['copyright']="1967 by Range Road Music Inc. and Quartet Music Inc."
+	attributes['copyright']='1967 by Range Road Music Inc. and Quartet Music Inc.'
 	# from the fake book
-	attributes['copyrightextra']="All rights administered by Hudson Bay Music, Inc."
+	attributes['copyrightextra']='All rights administered by Hudson Bay Music, Inc.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="39de7d2c-a26f-11df-8dbc-0019d11e5a41"
-	attributes['structure']="AABA"
-	attributes['location']="jfb:422-423"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='39de7d2c-a26f-11df-8dbc-0019d11e5a41'
+	attributes['structure']='AABA'
+	attributes['location']='jfb:422-423'
 
-	attributes['idyoutuberemark1']="Orchestral version from the film score of \"Meet Joe Black\""
-	attributes['idyoutube1']="Qhrpc9FFFAI"
-	attributes['idyoutuberemark2']="Louis in the classic version"
-	attributes['idyoutube2']="m5TwT69i1lU"
-	attributes['lyricsurl']="http://www.lyrics007.com/Louis%20Armstrong%20Lyrics/What%20A%20Wonderful%20World%20Lyrics.html"
+	attributes['idyoutuberemark1']='Orchestral version from the film score of \'Meet Joe Black\''
+	attributes['idyoutube1']='Qhrpc9FFFAI'
+	attributes['idyoutuberemark2']='Louis in the classic version'
+	attributes['idyoutube2']='m5TwT69i1lU'
+	attributes['lyricsurl']='http://www.lyrics007.com/Louis%20Armstrong%20Lyrics/What%20A%20Wonderful%20World%20Lyrics.html'
 %>
 % endif
 

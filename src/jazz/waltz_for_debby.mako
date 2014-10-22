@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -12,28 +12,28 @@
 	attributes.setDefaultVersionName('Fake')
 
 	# from the fake book
-	attributes['title']="Waltz For Debby"
-	attributes['style']="Jazz"
+	attributes['title']='Waltz For Debby'
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']="Bill Evans"
+	attributes['composer']='Bill Evans'
 	# from the fake book
-	attributes['poet']="Gene Lees"
+	attributes['poet']='Gene Lees'
 	# from the fake book
-	attributes['piece']="Moderately, in one"
+	attributes['piece']='Moderately, in one'
 	# from the fake book
-	attributes['copyright']="1964 and 1965 Acom Music Corp., New York, NY."
+	attributes['copyright']='1964 and 1965 Acom Music Corp., New York, NY.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="010d881c-e348-11e3-bd2b-af99bf9a3980"
-	attributes['structure']="AABA"
-	attributes['location']="jfb:414"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='010d881c-e348-11e3-bd2b-af99bf9a3980'
+	attributes['structure']='AABA'
+	attributes['location']='jfb:414'
 
-	attributes['idyoutuberemark1']="Bill Evans in great form"
-	attributes['idyoutube1']="dH3GSrCmzC8"
-	attributes['idyoutuberemark2']="Bill with Tony Bennett"
-	attributes['idyoutube2']="lsb8mYrYycE"
-	attributes['lyricsurl']="http://www.azlyrics.com/lyrics/tonybennett/waltzfordebby.html"
+	attributes['idyoutuberemark1']='Bill Evans in great form'
+	attributes['idyoutube1']='dH3GSrCmzC8'
+	attributes['idyoutuberemark2']='Bill with Tony Bennett'
+	attributes['idyoutube2']='lsb8mYrYycE'
+	attributes['lyricsurl']='http://www.azlyrics.com/lyrics/tonybennett/waltzfordebby.html'
 %>
 % endif
 

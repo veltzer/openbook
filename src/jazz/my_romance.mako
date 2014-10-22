@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,33 +9,33 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="My Romance"
-	attributes['style']="Jazz"
+	attributes['title']='My Romance'
+	attributes['style']='Jazz'
 	# this is from the fake book
-	attributes['subtitle']="From 'Jumbo'"
+	attributes['subtitle']='From \'Jumbo\''
 	# this is from the fake book
-	attributes['composer']="Richard Rodgers"
+	attributes['composer']='Richard Rodgers'
 	# this is from the fake book
-	attributes['poet']="Lorenz Hart"
+	attributes['poet']='Lorenz Hart'
 	# this is from the real book
-	#attributes['piece']="Med."
+	#attributes['piece']='Med.'
 	# this is from the fake book
-	attributes['piece']="Modeartely Slow"
+	attributes['piece']='Modeartely Slow'
 	# this is from the fake book
-	attributes['copyright']="1935, T.B. Harms Company. Copyright Renewed, (c/o The Welk Music Group, Santa Monica, CA 90401)"
+	attributes['copyright']='1935, T.B. Harms Company. Copyright Renewed, (c/o The Welk Music Group, Santa Monica, CA 90401)'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="6a5d2730-c7dd-11df-b3d0-0019d11e5a41"
-	attributes['structure']="ABAC"
-	attributes['structureremark']="this tunes song could also be noted as AB but then you lose the info that the first 8 bars of the A and part B are the same."
-	attributes['location']="rbk1:311,jfb:268"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='6a5d2730-c7dd-11df-b3d0-0019d11e5a41'
+	attributes['structure']='ABAC'
+	attributes['structureremark']='this tunes song could also be noted as AB but then you lose the info that the first 8 bars of the A and part B are the same.'
+	attributes['location']='rbk1:311,jfb:268'
 
-	attributes['idyoutuberemark1']="Ben Webster on his airy sax..."
-	attributes['idyoutube1']="_D2XBzcKFPM"
-	attributes['idyoutuberemark2']="The great Bill Evans in the late 70's trio"
-	attributes['idyoutube2']="aCO1Gd0jRto"
-	attributes['lyricsurl']="http://www.lyricsfreak.com/e/ella+fitzgerald/my+romance_20045848.html"
+	attributes['idyoutuberemark1']='Ben Webster on his airy sax...'
+	attributes['idyoutube1']='_D2XBzcKFPM'
+	attributes['idyoutuberemark2']='The great Bill Evans in the late 70\'s trio'
+	attributes['idyoutube2']='aCO1Gd0jRto'
+	attributes['lyricsurl']='http://www.lyricsfreak.com/e/ella+fitzgerald/my+romance_20045848.html'
 %>
 % endif
 

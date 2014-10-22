@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,25 +9,25 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="My Funny Valentine"
-	attributes['style']="Jazz"
-	attributes['composer']="Richard Rodgers"
-	attributes['poet']="Lorenz Hart"
+	attributes['title']='My Funny Valentine'
+	attributes['style']='Jazz'
+	attributes['composer']='Richard Rodgers'
+	attributes['poet']='Lorenz Hart'
 	# this direction is from the fake book
-	attributes['piece']="Slowly"
-	attributes['copyright']="1937 by Chappell & Co., Inc. Copyright Renewed"
+	attributes['piece']='Slowly'
+	attributes['copyright']='1937 by Chappell & Co., Inc. Copyright Renewed'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="087137ac-a26f-11df-aa1f-0019d11e5a41"
-	attributes['structure']="AABA"
-	attributes['location']="rbk1:308,jfb:259"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='087137ac-a26f-11df-aa1f-0019d11e5a41'
+	attributes['structure']='AABA'
+	attributes['location']='rbk1:308,jfb:259'
 
-	attributes['idyoutuberemark1']="Frank!"
-	attributes['idyoutube1']="wG6lAtpcI_Q"
-	attributes['idyoutuberemark2']="Chet Baker vocal version (amazing!)"
-	attributes['idyoutube2']="7iQQGBfbB0k"
-	attributes['lyricsurl']="http://www.elyrics.net/read/f/frank-sinatra-lyrics/my-funny-valentine-lyrics.html"
+	attributes['idyoutuberemark1']='Frank!'
+	attributes['idyoutube1']='wG6lAtpcI_Q'
+	attributes['idyoutuberemark2']='Chet Baker vocal version (amazing!)'
+	attributes['idyoutube2']='7iQQGBfbB0k'
+	attributes['lyricsurl']='http://www.elyrics.net/read/f/frank-sinatra-lyrics/my-funny-valentine-lyrics.html'
 %>
 % endif
 

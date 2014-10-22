@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,32 +9,32 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="The Shadow of Your Smile"
-	attributes['style']="Jazz"
+	attributes['title']='The Shadow of Your Smile'
+	attributes['style']='Jazz'
 	# this is from the real book
-	attributes['composer']="Johnny Mandel"
+	attributes['composer']='Johnny Mandel'
 	# this is from wikipedia
-	attributes['poet']="Paul Francis Webster"
+	attributes['poet']='Paul Francis Webster'
 	# this is from the new real book vol 3
-	#attributes['piece']="Medium Bossa (or Swing)"
+	#attributes['piece']='Medium Bossa (or Swing)'
 	# this is from the real book
-	attributes['piece']="Slow Bossa"
+	attributes['piece']='Slow Bossa'
 	# this is from the new real book vol 3
-	attributes['copyright']="1965 (Renewed 1993) MGM/EMI Miller Catalog, Inc"
-	attributes['copyrightextra']="Used by Permission of CPP/Belwin, Inc, Miami, FL"
+	attributes['copyright']='1965 (Renewed 1993) MGM/EMI Miller Catalog, Inc'
+	attributes['copyrightextra']='Used by Permission of CPP/Belwin, Inc, Miami, FL'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="dff04e04-a969-11e1-b8c5-5a1faa0d3cc5"
-	attributes['structure']="ABAC"
-	attributes['structureremark']="The structure could also be thought of as AB but it is very close to a pure ABAC"
-	attributes['location']="nrbk3:336,rbk1:381"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='dff04e04-a969-11e1-b8c5-5a1faa0d3cc5'
+	attributes['structure']='ABAC'
+	attributes['structureremark']='The structure could also be thought of as AB but it is very close to a pure ABAC'
+	attributes['location']='nrbk3:336,rbk1:381'
 
-	attributes['idyoutuberemark1']="A very sensitive rendition by Dexter Gordon"
-	attributes['idyoutube1']="8PttNhYVY3c"
-	attributes['idyoutuberemark2']="Sarah Vaughan, fucking awesome"
-	attributes['idyoutube2']="t9HxfF7faXk"
-	attributes['lyricsurl']="http://www.absolutelyrics.com/lyrics/view/barbra_streisand/the_shadow_of_your_smile"
+	attributes['idyoutuberemark1']='A very sensitive rendition by Dexter Gordon'
+	attributes['idyoutube1']='8PttNhYVY3c'
+	attributes['idyoutuberemark2']='Sarah Vaughan, fucking awesome'
+	attributes['idyoutube2']='t9HxfF7faXk'
+	attributes['lyricsurl']='http://www.absolutelyrics.com/lyrics/view/barbra_streisand/the_shadow_of_your_smile'
 %>
 % endif
 

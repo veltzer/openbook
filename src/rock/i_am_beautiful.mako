@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -8,21 +8,21 @@
 	attributes.addVersion('DontMatter', version)
 	attributes.setDefaultVersionName('DontMatter')
 
-	attributes['title']="I Am Beautiful"
-	attributes['style']="Rock"
+	attributes['title']='I Am Beautiful'
+	attributes['style']='Rock'
 	# from wikipedia
-	attributes['composer']="Linda Perry"
+	attributes['composer']='Linda Perry'
 	# from wikipedia
-	attributes['poet']="Linda Perry"
-	attributes['piece']="Ballad"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
+	attributes['poet']='Linda Perry'
+	attributes['piece']='Ballad'
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
 
-	attributes['completion']="5"
-	attributes['uuid']="94c2657c-2726-11e1-b716-0019d11e5a41"
+	attributes['completion']='5'
+	attributes['uuid']='94c2657c-2726-11e1-b716-0019d11e5a41'
 
-	attributes['idyoutuberemark1']="The original Christina Aguilera video clip"
-	attributes['idyoutube1']="eAfyFTzZDMM"
-	attributes['lyricsurl']="http://www.lyrics007.com/Christina%20Aguilera%20Lyrics/Beautiful%20Lyrics.html"
+	attributes['idyoutuberemark1']='The original Christina Aguilera video clip'
+	attributes['idyoutube1']='eAfyFTzZDMM'
+	attributes['lyricsurl']='http://www.lyrics007.com/Christina%20Aguilera%20Lyrics/Beautiful%20Lyrics.html'
 %>
 % endif
 

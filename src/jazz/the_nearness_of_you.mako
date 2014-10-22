@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -13,20 +13,20 @@
 	#attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Unknown')
 
-	attributes['title']="The Nearness Of You"
-	attributes['style']="Jazz"
-	attributes['subtitle']="from the Paramount Picture \\\"Romance in the Dark\\\""
-	attributes['composer']="Hoagy Carmichael"
-	attributes['poet']="Ned Washington"
-	attributes['piece']="Slowly"
-	attributes['copyright']="1937, 1940 Famous Music Corporation"
-	attributes['copyrightextra']="Renewed 1964, 1967"
+	attributes['title']='The Nearness Of You'
+	attributes['style']='Jazz'
+	attributes['subtitle']='from the Paramount Picture \'Romance in the Dark\''
+	attributes['composer']='Hoagy Carmichael'
+	attributes['poet']='Ned Washington'
+	attributes['piece']='Slowly'
+	attributes['copyright']='1937, 1940 Famous Music Corporation'
+	attributes['copyrightextra']='Renewed 1964, 1967'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="aeb48162-da80-11e3-9daf-67e95f938714"
-	attributes['structure']="AABA"
-	attributes['location']="rbk2:261"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='aeb48162-da80-11e3-9daf-67e95f938714'
+	attributes['structure']='AABA'
+	attributes['location']='rbk2:261'
 %>
 % endif
 

@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,28 +10,28 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="Alone Together"
-	attributes['style']="Jazz"
+	attributes['title']='Alone Together'
+	attributes['style']='Jazz'
 	# this is from the internet
-	attributes['composer']="Arthur Schwartz"
+	attributes['composer']='Arthur Schwartz'
 	# this is from the internet
-	attributes['poet']="Howard Dietz"
+	attributes['poet']='Howard Dietz'
 	# this is from the real book
-	attributes['piece']="Ballad"
-	attributes['copyright']="1932 (Renewed) Warner Bros. Inc."
+	attributes['piece']='Ballad'
+	attributes['copyright']='1932 (Renewed) Warner Bros. Inc.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="b647880a-0b68-11e1-b491-0019d11e5a41"
-	attributes['structure']="AABA"
-	attributes['structureremark']="this tunes structure can also be categorised as ABAC since the first 8 bars of both the first and second part are the same."
-	attributes['location']="rbk1:19"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='b647880a-0b68-11e1-b491-0019d11e5a41'
+	attributes['structure']='AABA'
+	attributes['structureremark']='this tunes structure can also be categorised as ABAC since the first 8 bars of both the first and second part are the same.'
+	attributes['location']='rbk1:19'
 
-	attributes['idyoutuberemark1']="The great trumpet version of Chet Baker"
-	attributes['idyoutube1']="zdDhinO58ss"
-	attributes['idyoutuberemark2']="Dexter in a soprano sax version"
-	attributes['idyoutube2']="mmu6kgQtl-k"
-	attributes['lyricsurl']="http://www.hotlyrics.net/lyrics/E/Ella_Fitzgerald/Alone_Together.html"
+	attributes['idyoutuberemark1']='The great trumpet version of Chet Baker'
+	attributes['idyoutube1']='zdDhinO58ss'
+	attributes['idyoutuberemark2']='Dexter in a soprano sax version'
+	attributes['idyoutube2']='mmu6kgQtl-k'
+	attributes['lyricsurl']='http://www.hotlyrics.net/lyrics/E/Ella_Fitzgerald/Alone_Together.html'
 %>
 % endif
 

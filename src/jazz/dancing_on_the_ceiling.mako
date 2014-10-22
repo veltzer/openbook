@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -11,26 +11,26 @@
 	attributes.setDefaultVersionName('Real')
 
 	# from the real book
-	attributes['title']="Dancing on the Ceiling"
-	attributes['style']="Jazz"
+	attributes['title']='Dancing on the Ceiling'
+	attributes['style']='Jazz'
 	# from the real book
-	attributes['composer']="Richard Rodgers"
+	attributes['composer']='Richard Rodgers'
 	# from the real book
-	attributes['poet']="Lorenz Hart"
+	attributes['poet']='Lorenz Hart'
 	# my own
-	attributes['piece']="Swing"
+	attributes['piece']='Swing'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="2f047dae-e00d-11e3-98f7-03db92494d62"
-	attributes['structure']="AABA"
-	attributes['location']="rbk1:102"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='2f047dae-e00d-11e3-98f7-03db92494d62'
+	attributes['structure']='AABA'
+	attributes['location']='rbk1:102'
 
-	attributes['idyoutuberemark1']="Frank in a cannonical version"
-	attributes['idyoutube1']="C406rXlRT6c"
-	attributes['idyoutuberemark2']="Ella in a great version"
-	attributes['idyoutube2']="qzBld5uHTiw"
-	attributes['lyricsurl']="http://www.lorenzhart.org/ceilingsng.htm"
+	attributes['idyoutuberemark1']='Frank in a cannonical version'
+	attributes['idyoutube1']='C406rXlRT6c'
+	attributes['idyoutuberemark2']='Ella in a great version'
+	attributes['idyoutube2']='qzBld5uHTiw'
+	attributes['lyricsurl']='http://www.lorenzhart.org/ceilingsng.htm'
 %>
 % endif
 

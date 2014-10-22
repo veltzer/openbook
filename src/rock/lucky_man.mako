@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -8,20 +8,20 @@
 	attributes.addVersion('DontMatter', version)
 	attributes.setDefaultVersionName('DontMatter')
 
-	attributes['title']="Lucky Man"
-	attributes['style']="Rock"
-	attributes['composer']="Greg Lake"
-	attributes['poet']="Greg Lake"
-	attributes['piece']="Med. Ballad"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
+	attributes['title']='Lucky Man'
+	attributes['style']='Rock'
+	attributes['composer']='Greg Lake'
+	attributes['poet']='Greg Lake'
+	attributes['piece']='Med. Ballad'
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
 
-	attributes['completion']="5"
-	attributes['uuid']="a68bcbbc-c8ae-11e0-8fa9-0019d11e5a41"
+	attributes['completion']='5'
+	attributes['uuid']='a68bcbbc-c8ae-11e0-8fa9-0019d11e5a41'
 
-	attributes['remark']="The D scale is the one used in the original version (Mark Veltzer,17/8/11)"
+	attributes['remark']='The D scale is the one used in the original version (Mark Veltzer,17/8/11)'
 
-	attributes['idyoutube1']="5x6uQ6yZsOY"
-	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Lucky-Man-lyrics-Emerson-Lake-Palmer/13302F99F6B11DEC48256AB8002432F8"
+	attributes['idyoutube1']='5x6uQ6yZsOY'
+	attributes['lyricsurl']='http://www.sing365.com/music/lyric.nsf/Lucky-Man-lyrics-Emerson-Lake-Palmer/13302F99F6B11DEC48256AB8002432F8'
 %>
 % endif
 

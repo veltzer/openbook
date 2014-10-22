@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,27 +9,27 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="One Note Samba"
-	attributes['style']="Jazz"
-	attributes['subtitle']="Samba de uma nota so"
-	attributes['composer']="Antonio Carlos Jobim"
-	attributes['poet']="Newton Mendonca"
+	attributes['title']='One Note Samba'
+	attributes['style']='Jazz'
+	attributes['subtitle']='Samba de uma nota so'
+	attributes['composer']='Antonio Carlos Jobim'
+	attributes['poet']='Newton Mendonca'
 	# this is from the fake book
-	attributes['piece']="Samba"
-	attributes['copyright']="1961, 1962 by Antonio Carlos Jobim and Mrs. Mendonca, Brazil"
-	attributes['copyrightextra']="Sole Selling Agent Duchess Music Croporation (MCA), New York, NY for all English Speaking Countries"
+	attributes['piece']='Samba'
+	attributes['copyright']='1961, 1962 by Antonio Carlos Jobim and Mrs. Mendonca, Brazil'
+	attributes['copyrightextra']='Sole Selling Agent Duchess Music Croporation (MCA), New York, NY for all English Speaking Countries'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="21bc8284-a26f-11df-a829-0019d11e5a41"
-	attributes['structure']="ABA'"
-	attributes['location']="jfb:289,rbk1:331"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='21bc8284-a26f-11df-a829-0019d11e5a41'
+	attributes['structure']='ABA\''
+	attributes['location']='jfb:289,rbk1:331'
 
-	attributes['idyoutuberemark1']="Dizzy Gilespie in a great version"
-	attributes['idyoutube1']="Jb7LqPmWBKw"
-	attributes['idyoutuberemark2']="The only performance of Jobim in Japan"
-	attributes['idyoutube2']="eEkMwotUuic"
-	attributes['lyricsurl']="http://www.lyricsfreak.com/f/frank+sinatra/one+note+samba_10122272.html"
+	attributes['idyoutuberemark1']='Dizzy Gilespie in a great version'
+	attributes['idyoutube1']='Jb7LqPmWBKw'
+	attributes['idyoutuberemark2']='The only performance of Jobim in Japan'
+	attributes['idyoutube2']='eEkMwotUuic'
+	attributes['lyricsurl']='http://www.lyricsfreak.com/f/frank+sinatra/one+note+samba_10122272.html'
 %>
 % endif
 

@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -12,19 +12,19 @@
 
 	attributes['heb']=True
 
-	attributes['title']=u"איך הוא שר"
-	attributes['style']="Israeli"
-	attributes['composer']=u"דני רובס"
-	attributes['poet']=u"דני רובס"
-	attributes['piece']=u"בלדת רוק"
-	attributes['singer']=u"דני רובס"
-	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
+	attributes['title']=u'איך הוא שר'
+	attributes['style']='Israeli'
+	attributes['composer']=u'דני רובס'
+	attributes['poet']=u'דני רובס'
+	attributes['piece']=u'בלדת רוק'
+	attributes['singer']=u'דני רובס'
+	attributes['typesetter']=u'מרק ולצר <mark.veltzer@gmail.com>'
 
-	attributes['completion']="5"
-	attributes['uuid']="8203d67e-41a0-11e2-a975-5a1faa0d3cc5"
+	attributes['completion']='5'
+	attributes['uuid']='8203d67e-41a0-11e2-a975-5a1faa0d3cc5'
 
-	attributes['idyoutube1']="ARuMB_iMRcY"
-	attributes['lyricsurl']="http://www.tab4u.com/tabs/songs/1172_%D7%93%D7%A0%D7%99_%D7%A8%D7%95%D7%91%D7%A1_-_%D7%90%D7%99%D7%9A_%D7%94%D7%95%D7%90_%D7%A9%D7%A8.html"
+	attributes['idyoutube1']='ARuMB_iMRcY'
+	attributes['lyricsurl']='http://www.tab4u.com/tabs/songs/1172_%D7%93%D7%A0%D7%99_%D7%A8%D7%95%D7%91%D7%A1_-_%D7%90%D7%99%D7%9A_%D7%94%D7%95%D7%90_%D7%A9%D7%A8.html'
 %>
 % endif
 

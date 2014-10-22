@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -8,23 +8,23 @@
 	attributes.addVersion('DontMatter', version)
 	attributes.setDefaultVersionName('DontMatter')
 
-	attributes['title']="Days Like This"
-	attributes['style']="Rock"
-	attributes['composer']="Van Morrison"
-	attributes['poet']="Van Morrison"
-	attributes['piece']="Med. Ballad"
-	attributes['album']="Days Like This/1995"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
+	attributes['title']='Days Like This'
+	attributes['style']='Rock'
+	attributes['composer']='Van Morrison'
+	attributes['poet']='Van Morrison'
+	attributes['piece']='Med. Ballad'
+	attributes['album']='Days Like This/1995'
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
 
-	attributes['completion']="5"
-	attributes['uuid']="6437a34a-3bd4-11e2-9e13-9f845e169c9b"
+	attributes['completion']='5'
+	attributes['uuid']='6437a34a-3bd4-11e2-9e13-9f845e169c9b'
 
-	attributes['remark']="This is the right scale"
+	attributes['remark']='This is the right scale'
 
-	attributes['idyoutuberemark1']="Original video clip"
-	attributes['idyoutube1']="BteIwbKU_iQ"
-	attributes['lyricsurl']="http://www.lyricsfreak.com/v/van+morrison/days+like+this_20142994.html"
-	attributes['wiki']="Days_Like_This_(song)"
+	attributes['idyoutuberemark1']='Original video clip'
+	attributes['idyoutube1']='BteIwbKU_iQ'
+	attributes['lyricsurl']='http://www.lyricsfreak.com/v/van+morrison/days+like+this_20142994.html'
+	attributes['wiki']='Days_Like_This_(song)'
 %>
 % endif
 

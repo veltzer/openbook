@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -12,27 +12,27 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Afternoon in Paris"
-	attributes['style']="Jazz"
+	attributes['title']='Afternoon in Paris'
+	attributes['style']='Jazz'
 	# this is from the fake book
-	attributes['composer']="John Lewis"
+	attributes['composer']='John Lewis'
 	# this is from the fake book
-	#attributes['piece']="Moderate Swing"
+	#attributes['piece']='Moderate Swing'
 	# this is from the real book
-	attributes['piece']="Swing"
+	attributes['piece']='Swing'
 	# this is from the fake book
-	attributes['copyright']="1955 and Renewal of Copyright 1983 by MJQ Music, Inc."
+	attributes['copyright']='1955 and Renewal of Copyright 1983 by MJQ Music, Inc.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="8f0a1ea6-a26e-11df-8edc-0019d11e5a41"
-	attributes['structure']="AABA"
-	attributes['location']="rbk1:10,jfb:35"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='8f0a1ea6-a26e-11df-8edc-0019d11e5a41'
+	attributes['structure']='AABA'
+	attributes['location']='rbk1:10,jfb:35'
 
-	attributes['idyoutuberemark1']="Chet Baker in a cool jazz version"
-	attributes['idyoutube1']="o3KtgcvYkig"
-	attributes['idyoutuberemark2']="Milt Jackson in a cool jazz version"
-	attributes['idyoutube2']="FFj03f2Zr5Y"
+	attributes['idyoutuberemark1']='Chet Baker in a cool jazz version'
+	attributes['idyoutube1']='o3KtgcvYkig'
+	attributes['idyoutuberemark2']='Milt Jackson in a cool jazz version'
+	attributes['idyoutube2']='FFj03f2Zr5Y'
 %>
 % endif
 
