@@ -11,7 +11,7 @@
 	attributes.setDefaultVersionName('Real')
 
 	# this is from the real book
-	attributes['title']='Don't Blame Me'
+	attributes['title']='Don\'t Blame Me'
 	attributes['style']='Jazz'
 	# this is from wikipedia
 	attributes['composer']='Jimmy McHugh'
