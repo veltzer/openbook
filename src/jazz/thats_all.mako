@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -11,28 +11,28 @@
 	attributes.setDefaultVersionName('Fake')
 
 	# from the fake book
-	attributes['title']="That's All"
-	attributes['style']="Jazz"
+	attributes['title']='That\'s All'
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']="Alan Brandt, Bob Haymes"
+	attributes['composer']='Alan Brandt, Bob Haymes'
 	# from the fake book
-	attributes['poet']="Alan Brandt, Bob Haymes"
+	attributes['poet']='Alan Brandt, Bob Haymes'
 	# from the fake book
-	attributes['piece']="Slowly, with expression"
+	attributes['piece']='Slowly, with expression'
 	# from the fake book
-	attributes['copyright']="1952 Renewed 1982 Mixed Bag Music, Inc."
+	attributes['copyright']='1952 Renewed 1982 Mixed Bag Music, Inc.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="b0685520-db92-11e3-a96d-4fe96cfbc3fb"
-	attributes['structure']="AABA"
-	attributes['location']="jfb:380-381"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='b0685520-db92-11e3-a96d-4fe96cfbc3fb'
+	attributes['structure']='AABA'
+	attributes['location']='jfb:380-381'
 
-	attributes['idyoutuberemark1']="Nat King Cole cannonical version"
-	attributes['idyoutube1']="sooSaQpGnMM"
-	attributes['idyoutuberemark2']="Frank Sinatra cannonical version"
-	attributes['idyoutube2']="SINfqtCq0lY"
-	attributes['lyricsurl']="http://www.metrolyrics.com/thats-all-lyrics-nat-king-cole.html"
+	attributes['idyoutuberemark1']='Nat King Cole cannonical version'
+	attributes['idyoutube1']='sooSaQpGnMM'
+	attributes['idyoutuberemark2']='Frank Sinatra cannonical version'
+	attributes['idyoutube2']='SINfqtCq0lY'
+	attributes['lyricsurl']='http://www.metrolyrics.com/thats-all-lyrics-nat-king-cole.html'
 %>
 % endif
 

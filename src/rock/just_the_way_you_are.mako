@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -8,21 +8,20 @@
 	attributes.addVersion('DontMatter', version)
 	attributes.setDefaultVersionName('DontMatter')
 
-	attributes['title']="Just The Way You Are"
-	attributes['style']="Pop"
-	attributes['composer']="Billy Joel"
-	attributes['poet']="Billy Joel"
-	attributes['piece']="Moderately"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
+	attributes['title']='Just The Way You Are'
+	attributes['style']='Pop'
+	attributes['composer']='Billy Joel'
+	attributes['poet']='Billy Joel'
+	attributes['piece']='Moderately'
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
 
-	attributes['completion']="4"
-	attributes['uuid']="ca1dfd9e-7033-11e0-a987-0019d11e5a41"
-	attributes['structure']="????"
-	attributes['location']="file:just_the_way_you_are.pdf"
+	attributes['completion']='4'
+	attributes['uuid']='ca1dfd9e-7033-11e0-a987-0019d11e5a41'
+	attributes['location']='file:just_the_way_you_are.pdf'
 
-	attributes['idyoutube1']="QPiK_yGG8ag"
-	attributes['idyoutube2']="YiOYsnET6Iw"
-	attributes['idyoutube3']="ounJsqomcv8"
+	attributes['idyoutube1']='QPiK_yGG8ag'
+	attributes['idyoutube2']='YiOYsnET6Iw'
+	attributes['idyoutube3']='ounJsqomcv8'
 %>
 % endif
 

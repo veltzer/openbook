@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,17 +9,16 @@
 	attributes.addVersion('Unknown', version)
 	attributes.setDefaultVersionName('Unknown')
 
-	attributes['title']="Corcovado"
-	attributes['style']="Jazz"
-	attributes['subtitle']="quiet nights of quiet stars"
-	attributes['composer']="Antonio Carlos Jobim"
-	attributes['piece']="Med Swing"
-	attributes['copyright']="1959, Editora Musical Arapua, Sao Paulo, Brazil"
+	attributes['title']='Corcovado'
+	attributes['style']='Jazz'
+	attributes['subtitle']='quiet nights of quiet stars'
+	attributes['composer']='Antonio Carlos Jobim'
+	attributes['piece']='Med Swing'
+	attributes['copyright']='1959, Editora Musical Arapua, Sao Paulo, Brazil'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="0"
-	attributes['uuid']="b847fc02-a26e-11df-92ce-0019d11e5a41"
-	attributes['structure']="????"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='0'
+	attributes['uuid']='b847fc02-a26e-11df-92ce-0019d11e5a41'
 %>
 % endif
 

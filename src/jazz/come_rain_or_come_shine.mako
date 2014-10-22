@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,21 +9,21 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Come Rain Or Come Shine"
-	attributes['style']="Jazz"
-	attributes['composer']="Harold Arlen"
-	attributes['poet']="Johnny Mercer"
-	attributes['piece']="Moderately"
-	attributes['copyright']="1946, by A-M Music Corp. Copyright Renewed, all rights controlled by Chappell & Co., Inc."
+	attributes['title']='Come Rain Or Come Shine'
+	attributes['style']='Jazz'
+	attributes['composer']='Harold Arlen'
+	attributes['poet']='Johnny Mercer'
+	attributes['piece']='Moderately'
+	attributes['copyright']='1946, by A-M Music Corp. Copyright Renewed, all rights controlled by Chappell & Co., Inc.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="b109cd80-a26e-11df-8c11-0019d11e5a41"
-	attributes['structure']="AB"
-	attributes['location']="rbk2:63,jfb:86-87"
-	attributes['remark']="the my set of chords is from Amit Golan"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='b109cd80-a26e-11df-8c11-0019d11e5a41'
+	attributes['structure']='AB'
+	attributes['location']='rbk2:63,jfb:86-87'
+	attributes['remark']='the my set of chords is from Amit Golan'
 
-	attributes['idyoutube1']="XqECFy_qzkM"
+	attributes['idyoutube1']='XqECFy_qzkM'
 %>
 % endif
 

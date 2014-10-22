@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,24 +9,24 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Bye Bye Blackbird"
-	attributes['style']="Jazz"
+	attributes['title']='Bye Bye Blackbird'
+	attributes['style']='Jazz'
 	# this is from the fake book
-	attributes['composer']="Ray Henderson"
+	attributes['composer']='Ray Henderson'
 	# this is from the fake book
-	attributes['poet']="Mort Dixon"
+	attributes['poet']='Mort Dixon'
 	# this is from the fake book
-	attributes['piece']="Moderately"
+	attributes['piece']='Moderately'
 	# this is from the fake book
-	attributes['copyright']="1926 (Renewed) Warner Bros. Inc."
+	attributes['copyright']='1926 (Renewed) Warner Bros. Inc.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="7b863bbe-f2a2-11e0-9257-0019d11e5a41"
-	attributes['structure']="ABCD"
-	attributes['location']="rbk2:51,jfb:75"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='7b863bbe-f2a2-11e0-9257-0019d11e5a41'
+	attributes['structure']='ABCD'
+	attributes['location']='rbk2:51,jfb:75'
 
-	attributes['idyoutube1']="HMPHMu7LVhQ"
+	attributes['idyoutube1']='HMPHMu7LVhQ'
 %>
 % endif
 

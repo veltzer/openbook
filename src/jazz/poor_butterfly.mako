@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,21 +9,21 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Poor Butterfly"
-	attributes['style']="Jazz"
+	attributes['title']='Poor Butterfly'
+	attributes['style']='Jazz'
 	# this is from the fake book
-	attributes['composer']="Raymond Hubbell"
+	attributes['composer']='Raymond Hubbell'
 	# this is from the fake book
-	attributes['poet']="John L. Golden"
+	attributes['poet']='John L. Golden'
 	# this is from the fake book
-	attributes['piece']="Moderately Slow"
-	attributes['copyright']="1998 Hal Leonard Corporation"
+	attributes['piece']='Moderately Slow'
+	attributes['copyright']='1998 Hal Leonard Corporation'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="2db00c66-da81-11e3-9d15-47dd58c4ba8d"
-	attributes['structure']="ABAC"
-	attributes['location']="rbk3:242"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='2db00c66-da81-11e3-9d15-47dd58c4ba8d'
+	attributes['structure']='ABAC'
+	attributes['location']='rbk3:242'
 %>
 % endif
 

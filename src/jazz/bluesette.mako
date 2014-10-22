@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -11,30 +11,30 @@
 	attributes.setDefaultVersionName('Fake')
 
 	# from the fake book
-	attributes['title']="Bluesette"
-	attributes['style']="Jazz"
+	attributes['title']='Bluesette'
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']="Jean 'Toots' Thielemans"
+	attributes['composer']='Jean \'Toots\' Thielemans'
 	# from the fake book
-	attributes['poet']="Norman Gimbel"
+	attributes['poet']='Norman Gimbel'
 	# from the fake book
-	attributes['piece']="Moderate Waltz"
+	attributes['piece']='Moderate Waltz'
 	# from the fake book
-	attributes['copyright']="1963, 1964 by MUSIC CORPORATION OF AMERICA, INC., New York, NY"
+	attributes['copyright']='1963, 1964 by MUSIC CORPORATION OF AMERICA, INC., New York, NY'
 	# from the fake book
-	attributes['copyrightextra']="Rights Administered by MCA MUSIC PUBLISHING, A Division of MCA Inc., New York, NY"
+	attributes['copyrightextra']='Rights Administered by MCA MUSIC PUBLISHING, A Division of MCA Inc., New York, NY'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="e4c0cc74-eb5c-11e3-8d65-b71fa04c4d86"
-	attributes['structure']="A"
-	attributes['location']="jfb:67-68"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='e4c0cc74-eb5c-11e3-8d65-b71fa04c4d86'
+	attributes['structure']='A'
+	attributes['location']='jfb:67-68'
 
-	attributes['idyoutuberemark1']="Bill with Toots"
-	attributes['idyoutube1']="micPH3vJVs0"
-	attributes['idyoutuberemark2']="Toots with Orchestra"
-	attributes['idyoutube2']="yKnG_9q4crA"
-	attributes['lyricsurl']="http://www.lyricsmode.com/lyrics/t/toots_thielemans/bluesette.html"
+	attributes['idyoutuberemark1']='Bill with Toots'
+	attributes['idyoutube1']='micPH3vJVs0'
+	attributes['idyoutuberemark2']='Toots with Orchestra'
+	attributes['idyoutube2']='yKnG_9q4crA'
+	attributes['lyricsurl']='http://www.lyricsmode.com/lyrics/t/toots_thielemans/bluesette.html'
 %>
 % endif
 

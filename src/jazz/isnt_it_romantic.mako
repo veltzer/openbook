@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,30 +10,30 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="Isn't It Romantic"
-	attributes['style']="Jazz"
+	attributes['title']='Isn\'t It Romantic'
+	attributes['style']='Jazz'
 	# from the Hal Leonard book
-	attributes['subtitle']="From the Paramount Picture 'Love Me Tonight'"
+	attributes['subtitle']='From the Paramount Picture \'Love Me Tonight\''
 	# from the Hal Leonard book
-	attributes['composer']="Richard Rodgers"
+	attributes['composer']='Richard Rodgers'
 	# from the Hal Leonard book
-	attributes['poet']="Lorenz Hart"
+	attributes['poet']='Lorenz Hart'
 	# from the Hal Leonard book
-	attributes['piece']="Easy Swing"
+	attributes['piece']='Easy Swing'
 	# from the Hal Leonard book
-	attributes['copyright']="1932 (Renewed 1959) by Famous Music Corporation"
+	attributes['copyright']='1932 (Renewed 1959) by Famous Music Corporation'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="dedcc73c-1ead-11e1-8007-0019d11e5a41"
-	attributes['structure']="ABAC"
-	attributes['location']="rbk1:238,hlrjb:181"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='dedcc73c-1ead-11e1-8007-0019d11e5a41'
+	attributes['structure']='ABAC'
+	attributes['location']='rbk1:238,hlrjb:181'
 
-	attributes['idyoutuberemark1']="Cool Jazz by Chet Baker..."
-	attributes['idyoutube1']="c8C6i3kpsQU"
-	attributes['idyoutuberemark2']="Swinging Bill Evans..."
-	attributes['idyoutube2']="10ZYoSryrcI"
-	attributes['lyricsurl']="http://www.stlyrics.com/lyrics/onefineday/isntitromantic.htm"
+	attributes['idyoutuberemark1']='Cool Jazz by Chet Baker...'
+	attributes['idyoutube1']='c8C6i3kpsQU'
+	attributes['idyoutuberemark2']='Swinging Bill Evans...'
+	attributes['idyoutube2']='10ZYoSryrcI'
+	attributes['lyricsurl']='http://www.stlyrics.com/lyrics/onefineday/isntitromantic.htm'
 %>
 % endif
 
@@ -56,7 +56,7 @@
 	TODO:
 	- add the Hal Leonard version of this tune (epdf is already here).
 	REMARK:
-	- this tunes structure could also be interpreted as "AB" where A is AB and B is AC in the ABAC interpretation.
+	- this tunes structure could also be interpreted as 'AB' where A is AB and B is AC in the ABAC interpretation.
 % endif
 
 % if part=='ChordsReal':

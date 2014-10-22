@@ -14,7 +14,7 @@ import attr # for Attributes
 #############
 def is_ready(file):
 	for line in open(file):
-		if line=="\tattributes['completion']=\"5\"\n":
+		if line=='\tattributes[\'completion\']=\'5\'\n':
 			return True
 	return False
 
@@ -36,10 +36,12 @@ p_cut=bool(int(sys.argv[4]))
 p_cutnum=int(sys.argv[5])
 common='src/include/common.makoi'
 
-# We really need the unlink, even though we have "open a file
-# for writing" later on which is supposed to truncate the file to 0
-# since we chmod the output to be unwritable which means that the
-# "open a file for writing" later would fail...
+'''
+We really need the unlink, even though we have *open a file
+for writing* later on which is supposed to truncate the file to 0
+since we chmod the output to be unwritable which means that the
+*open a file for writing* later would fail...
+'''
 if os.path.isfile(p_output):
 	os.unlink(p_output)
 

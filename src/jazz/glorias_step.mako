@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -8,22 +8,22 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="Gloria's Step"
-	attributes['style']="Jazz"
-	attributes['composer']="Scott LaFaro"
-	attributes['piece']="Swing"
-	attributes['copyright']="1962, Orpheum Music."
+	attributes['title']='Gloria\'s Step'
+	attributes['style']='Jazz'
+	attributes['composer']='Scott LaFaro'
+	attributes['piece']='Swing'
+	attributes['copyright']='1962, Orpheum Music.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="892e5552-f2ad-11e0-8c10-0019d11e5a41"
-	attributes['structure']="AABA"
-	attributes['location']="rbk1:172,nrbk1:118"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='892e5552-f2ad-11e0-8c10-0019d11e5a41'
+	attributes['structure']='AABA'
+	attributes['location']='rbk1:172,nrbk1:118'
 
-	attributes['idyoutuberemark1']="Bill Evans, not the orignal Sunday at the Village version..."
-	attributes['idyoutube1']="C84KmJwtPeI"
-	attributes['idyoutuberemark2']="the original Sunday at the Village version (take 2)..."
-	attributes['idyoutube2']="Aib_RL_x7PA"
+	attributes['idyoutuberemark1']='Bill Evans, not the orignal Sunday at the Village version...'
+	attributes['idyoutube1']='C84KmJwtPeI'
+	attributes['idyoutuberemark2']='the original Sunday at the Village version (take 2)...'
+	attributes['idyoutube2']='Aib_RL_x7PA'
 %>
 % endif
 

@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,17 +9,17 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Love For Sale"
-	attributes['style']="Jazz"
-	attributes['composer']="Cole Porter"
-	attributes['poet']="Cole Porter"
-	attributes['piece']="With Swinging Rhythm"
-	attributes['copyright']="1930 (Renewed) Warner Bros. Inc."
+	attributes['title']='Love For Sale'
+	attributes['style']='Jazz'
+	attributes['composer']='Cole Porter'
+	attributes['poet']='Cole Porter'
+	attributes['piece']='With Swinging Rhythm'
+	attributes['copyright']='1930 (Renewed) Warner Bros. Inc.'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="ae7a1f0a-da7f-11e3-83ac-9776cf1b3075"
-	attributes['structure']="AABA'"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='ae7a1f0a-da7f-11e3-83ac-9776cf1b3075'
+	attributes['structure']='AABA\''
 %>
 % endif
 

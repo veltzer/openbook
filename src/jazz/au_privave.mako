@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -8,24 +8,24 @@
 	attributes.addVersion('Aebersold', version)
 	attributes.setDefaultVersionName('Aebersold')
 
-	attributes['title']="Au Privave"
-	attributes['style']="Jazz"
+	attributes['title']='Au Privave'
+	attributes['style']='Jazz'
 	# from the aebersold book
-	attributes['composer']="Charlie Parker"
+	attributes['composer']='Charlie Parker'
 	# this is my own definition
-	attributes['piece']="Upbeat Swing"
+	attributes['piece']='Upbeat Swing'
 	# this is from the aebersold book
-	attributes['copyright']="1956, Atlantic Music Corp."
-	attributes['copyrightextra']="1978, Atlantic Music Corp."
+	attributes['copyright']='1956, Atlantic Music Corp.'
+	attributes['copyrightextra']='1978, Atlantic Music Corp.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="e62b60ec-eb9b-11e0-aab7-0019d11e5a41"
-	attributes['structure']="Blues"
-	attributes['location']="rbk1:32,jfb:50,file:au_privave_omnibook.pdf"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='e62b60ec-eb9b-11e0-aab7-0019d11e5a41'
+	attributes['structure']='Blues'
+	attributes['location']='rbk1:32,jfb:50,file:au_privave_omnibook.pdf'
 
-	attributes['idyoutube1']="HUNgcPSYeyM"
-	attributes['idyoutube2']="dvdQYSWOobc"
+	attributes['idyoutube1']='HUNgcPSYeyM'
+	attributes['idyoutube2']='dvdQYSWOobc'
 %>
 % endif
 

@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -11,25 +11,25 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="Blue Bossa"
-	attributes['style']="Jazz"
-	attributes['composer']="Kenny Dorham"
-	attributes['poet']="Joan Cartwright"
-	attributes['piece']="Bossa Nova"
+	attributes['title']='Blue Bossa'
+	attributes['style']='Jazz'
+	attributes['composer']='Kenny Dorham'
+	attributes['poet']='Joan Cartwright'
+	attributes['piece']='Bossa Nova'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="f7fdc5e0-db41-11e0-a31c-0019d11e5a41"
-	attributes['structure']="A"
-	attributes['location']="rbk1:51"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='f7fdc5e0-db41-11e0-a31c-0019d11e5a41'
+	attributes['structure']='A'
+	attributes['location']='rbk1:51'
 	# from the real book
-	attributes['remark']="Play last 4 bars twice more to end"
+	attributes['remark']='Play last 4 bars twice more to end'
 
-	attributes['idyoutube1']="EhQfGODnvww"
-	attributes['idyoutube2']="-0mNSP1452o"
-	attributes['idyoutube3']="6sr7BXinJMw"
-	attributes['idyoutube4']="lKEEVECH58Q"
-	attributes['lyricsurl']="http://fyicomminc.bizland.com/music/lyrics/bluebossa.htm"
+	attributes['idyoutube1']='EhQfGODnvww'
+	attributes['idyoutube2']='-0mNSP1452o'
+	attributes['idyoutube3']='6sr7BXinJMw'
+	attributes['idyoutube4']='lKEEVECH58Q'
+	attributes['lyricsurl']='http://fyicomminc.bizland.com/music/lyrics/bluebossa.htm'
 %>
 % endif
 

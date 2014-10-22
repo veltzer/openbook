@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,30 +10,30 @@
 	attributes.setDefaultVersionName('Fake')
 
 	# from the fake book
-	attributes['title']="I'll Be Seeing You"
+	attributes['title']='I\'ll Be Seeing You'
 	# from the fake book
-	attributes['style']="Jazz"
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']="Irving Kahal, Sammy Fain"
+	attributes['composer']='Irving Kahal, Sammy Fain'
 	# from the fake book
-	attributes['poet']="Irving Kahal, Sammy Fain"
+	attributes['poet']='Irving Kahal, Sammy Fain'
 	# from the fake book
-	attributes['piece']="Moderately"
+	attributes['piece']='Moderately'
 	# from the fake book
-	attributes['copyright']="1938 Williamson Music Co. Copyright Renewed."
+	attributes['copyright']='1938 Williamson Music Co. Copyright Renewed.'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="6161149e-da7f-11e3-9076-0bd9aa7a6778"
-	attributes['structure']="ABA'C"
-	attributes['structureremark']="This is almost a pure ABAC"
-	attributes['location']="jfb:167"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='6161149e-da7f-11e3-9076-0bd9aa7a6778'
+	attributes['structure']='ABA\'C'
+	attributes['structureremark']='This is almost a pure ABAC'
+	attributes['location']='jfb:167'
 
-	attributes['idyoutuberemark1']="Sinatra in his younger days"
-	attributes['idyoutube1']="oL60OQLekWQ"
-	attributes['idyoutuberemark2']="Stitt in a cool instrumental version"
-	attributes['idyoutube2']="cmkEbH43GIQ"
-	attributes['lyricsurl']="http://www.azlyrics.com/lyrics/billieholiday/illbeseeingyou.html"
+	attributes['idyoutuberemark1']='Sinatra in his younger days'
+	attributes['idyoutube1']='oL60OQLekWQ'
+	attributes['idyoutuberemark2']='Stitt in a cool instrumental version'
+	attributes['idyoutube2']='cmkEbH43GIQ'
+	attributes['lyricsurl']='http://www.azlyrics.com/lyrics/billieholiday/illbeseeingyou.html'
 %>
 % endif
 

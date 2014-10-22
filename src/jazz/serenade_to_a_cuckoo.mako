@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -8,25 +8,25 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="Serenade To A Cuckoo"
-	attributes['style']="Jazz"
+	attributes['title']='Serenade To A Cuckoo'
+	attributes['style']='Jazz'
 	# from the real book
-	attributes['composer']="Roland Kirk"
+	attributes['composer']='Roland Kirk'
 	# from the real book
-	attributes['piece']="Med"
+	attributes['piece']='Med'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="7f78edea-47a9-11e2-8d61-0f0bb7c14483"
-	attributes['structure']="AB"
-	attributes['location']="rbk1:377"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='7f78edea-47a9-11e2-8d61-0f0bb7c14483'
+	attributes['structure']='AB'
+	attributes['location']='rbk1:377'
 
-	attributes['idyoutuberemark1']="Jethro Tull doing it ?!?"
-	attributes['idyoutube1']="Zh4GZJlQCfY"
-	attributes['idyoutuberemark2']="Another one from Jethro"
-	attributes['idyoutube2']="wHw4N_lZl10"
-	attributes['idyoutuberemark3']="The original Roland Kirk!"
-	attributes['idyoutube3']="_q8Ye58uL5o"
+	attributes['idyoutuberemark1']='Jethro Tull doing it ?!?'
+	attributes['idyoutube1']='Zh4GZJlQCfY'
+	attributes['idyoutuberemark2']='Another one from Jethro'
+	attributes['idyoutube2']='wHw4N_lZl10'
+	attributes['idyoutuberemark3']='The original Roland Kirk!'
+	attributes['idyoutube3']='_q8Ye58uL5o'
 %>
 % endif
 

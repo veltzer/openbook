@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,28 +10,28 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="Green Dolphin Street"
-	attributes['style']="Jazz"
-	attributes['composer']="Bronislau Kaper"
-	attributes['poet']="Ned Washington"
+	attributes['title']='Green Dolphin Street'
+	attributes['style']='Jazz'
+	attributes['composer']='Bronislau Kaper'
+	attributes['poet']='Ned Washington'
 	# this is from the real book
-	attributes['piece']="Latin/Swing"
+	attributes['piece']='Latin/Swing'
 	# this is from the new real book, vol 3
-	#attributes['piece']="Med. Latin"
+	#attributes['piece']='Med. Latin'
 	# this is from the new real book, vol 3
-	attributes['copyright']="1947 (Renewed 1975) MGM/EMI Feist Catalog, Inc."
+	attributes['copyright']='1947 (Renewed 1975) MGM/EMI Feist Catalog, Inc.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="b93bdc7e-0207-11e1-9e68-0019d11e5a41"
-	attributes['structure']="ABAC"
-	attributes['location']="rbk1:179,tbk:227,gt:126,nrbk3:273"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='b93bdc7e-0207-11e1-9e68-0019d11e5a41'
+	attributes['structure']='ABAC'
+	attributes['location']='rbk1:179,tbk:227,gt:126,nrbk3:273'
 
-	attributes['idyoutuberemark1']="Sarah Vaughan from a radio show"
-	attributes['idyoutube1']="vHp0IvAEFMQ"
-	attributes['idyoutuberemark2']="The great Coltrane"
-	attributes['idyoutube2']="Ny1n5E4IdYY"
-	attributes['lyricsurl']="http://www.lyricszoo.com/miles-davis/on-green-dolphin-street-miles-davis-washington-ned/"
+	attributes['idyoutuberemark1']='Sarah Vaughan from a radio show'
+	attributes['idyoutube1']='vHp0IvAEFMQ'
+	attributes['idyoutuberemark2']='The great Coltrane'
+	attributes['idyoutube2']='Ny1n5E4IdYY'
+	attributes['lyricsurl']='http://www.lyricszoo.com/miles-davis/on-green-dolphin-street-miles-davis-washington-ned/'
 %>
 % endif
 

@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,25 +9,25 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Darn That Dream"
-	attributes['style']="Jazz"
-	attributes['composer']="Jimmy Van Heusen"
-	attributes['poet']="Eddie DeLange"
-	attributes['piece']="Slowly"
-	attributes['copyright']="1939 Bregman, Vocco and Conn, Inc. New York"
-	attributes['copyrightextra']="Copyright Renewed, Assigned and Copyright 1968 by Scarsdale Music. Corporation and Van Heusen Music Corp., New York"
+	attributes['title']='Darn That Dream'
+	attributes['style']='Jazz'
+	attributes['composer']='Jimmy Van Heusen'
+	attributes['poet']='Eddie DeLange'
+	attributes['piece']='Slowly'
+	attributes['copyright']='1939 Bregman, Vocco and Conn, Inc. New York'
+	attributes['copyrightextra']='Copyright Renewed, Assigned and Copyright 1968 by Scarsdale Music. Corporation and Van Heusen Music Corp., New York'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="f0a5804c-eb83-11e0-aeb1-0019d11e5a41"
-	attributes['structure']="AABA"
-	attributes['location']="rbk1:103,jfb:94"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='f0a5804c-eb83-11e0-aeb1-0019d11e5a41'
+	attributes['structure']='AABA'
+	attributes['location']='rbk1:103,jfb:94'
 
-	attributes['idyoutuberemark1']="Theloneous Monk...:)"
-	attributes['idyoutube1']="GsI4oNKGJPg"
-	attributes['idyoutuberemark2']="Dexter Gordon, one of the great performances of this song..."
-	attributes['idyoutube2']="upZ00qxXrBg"
-	attributes['lyricsurl']="http://www.lyricsfreak.com/b/billie+holiday/darn+that+dream_20018018.html"
+	attributes['idyoutuberemark1']='Theloneous Monk...:)'
+	attributes['idyoutube1']='GsI4oNKGJPg'
+	attributes['idyoutuberemark2']='Dexter Gordon, one of the great performances of this song...'
+	attributes['idyoutube2']='upZ00qxXrBg'
+	attributes['lyricsurl']='http://www.lyricsfreak.com/b/billie+holiday/darn+that+dream_20018018.html'
 %>
 % endif
 

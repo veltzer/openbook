@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,24 +9,24 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Unforgettable"
-	attributes['style']="Jazz"
-	attributes['composer']="Irving Gordon"
-	attributes['poet']="Irving Gordon"
-	attributes['piece']="Moderately"
-	attributes['copyright']="1951, Bourne Co. Copyright Renewed."
+	attributes['title']='Unforgettable'
+	attributes['style']='Jazz'
+	attributes['composer']='Irving Gordon'
+	attributes['poet']='Irving Gordon'
+	attributes['piece']='Moderately'
+	attributes['copyright']='1951, Bourne Co. Copyright Renewed.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="3162420a-a26f-11df-aacf-0019d11e5a41"
-	attributes['structure']="AB"
-	attributes['location']="jfb:406-407"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='3162420a-a26f-11df-aacf-0019d11e5a41'
+	attributes['structure']='AB'
+	attributes['location']='jfb:406-407'
 
-	attributes['idyoutuberemark1']="Nat King Cole the unforgettable..."
-	attributes['idyoutube1']="S1UEzL9poPM"
-	attributes['idyoutuberemark2']="Nat King Cole with Natalie Cole duet..."
-	attributes['idyoutube2']="2uRtNMFfF-g"
-	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/unforgettable-lyrics-nat-king-cole/afdec7063791226248256af1000bbaa6"
+	attributes['idyoutuberemark1']='Nat King Cole the unforgettable...'
+	attributes['idyoutube1']='S1UEzL9poPM'
+	attributes['idyoutuberemark2']='Nat King Cole with Natalie Cole duet...'
+	attributes['idyoutube2']='2uRtNMFfF-g'
+	attributes['lyricsurl']='http://www.sing365.com/music/lyric.nsf/unforgettable-lyrics-nat-king-cole/afdec7063791226248256af1000bbaa6'
 %>
 % endif
 

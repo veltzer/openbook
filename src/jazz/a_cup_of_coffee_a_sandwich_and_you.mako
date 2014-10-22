@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,15 +9,15 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="A Cup Of Coffee, A Sandwich And You"
-	attributes['style']="Jazz"
-	attributes['composer']="Joseph Meyer"
-	attributes['poet']="Billy Rose, Al Dubin"
-	attributes['piece']="Moderato"
+	attributes['title']='A Cup Of Coffee, A Sandwich And You'
+	attributes['style']='Jazz'
+	attributes['composer']='Joseph Meyer'
+	attributes['poet']='Billy Rose, Al Dubin'
+	attributes['piece']='Moderato'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="efaf8a18-da80-11e3-83d3-8b992af01517"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='efaf8a18-da80-11e3-83d3-8b992af01517'
 %>
 % endif
 
@@ -75,7 +75,7 @@
 % if part=='VoiceFake':
 \relative {
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Andante" 4 = 88
+	\tempo Andante 4 = 88
 	\time 2/2
 	\key bes \major
 
@@ -83,7 +83,7 @@
 
 	\repeat volta 2 {
 
-		%% part "A"
+		%% part A
 		d' bes r d | c bes r d | d ( bes2.~ | bes4 ) d, ees d |
 		g f r a | g f r a | a ( f2.~ | f4 ) f g f |
 		d' bes r d | c bes r d | d ( bes2.~ | bes4 ) d, ees d |

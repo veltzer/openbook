@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -11,28 +11,28 @@
 	attributes.setDefaultVersionName('Fake')
 
 	# from the fake book
-	attributes['title']="What A Diff'rence A Day Made"
-	attributes['style']="Jazz"
+	attributes['title']='What A Diff\'rence A Day Made'
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']="Maria Grever"
+	attributes['composer']='Maria Grever'
 	# from the fake book
-	attributes['poet']="Stanley Adams"
+	attributes['poet']='Stanley Adams'
 	# from the fake book
-	attributes['piece']="Relaxed"
+	attributes['piece']='Relaxed'
 	# from the fake book
-	attributes['copyright']="1934 by Edward B. Marks Music Company. Copyright Renewed."
+	attributes['copyright']='1934 by Edward B. Marks Music Company. Copyright Renewed.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="d28e02f4-2218-11e4-870b-bfbfa80d68bd"
-	attributes['structure']="ABAC"
-	attributes['location']="jfb:422"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='d28e02f4-2218-11e4-870b-bfbfa80d68bd'
+	attributes['structure']='ABAC'
+	attributes['location']='jfb:422'
 
-	attributes['idyoutuberemark1']="Dinah Washington in a classic performance"
-	attributes['idyoutube1']="OmBxVfQTuvI"
-	attributes['idyoutuberemark2']="Jamie Cullum vocal+piano"
-	attributes['idyoutube2']="NzS4ygeE1oQ"
-	attributes['lyricsurl']="http://www.azlyrics.com/lyrics/reneeolstead/whatadifferenceadaymakes.html"
+	attributes['idyoutuberemark1']='Dinah Washington in a classic performance'
+	attributes['idyoutube1']='OmBxVfQTuvI'
+	attributes['idyoutuberemark2']='Jamie Cullum vocal+piano'
+	attributes['idyoutube2']='NzS4ygeE1oQ'
+	attributes['lyricsurl']='http://www.azlyrics.com/lyrics/reneeolstead/whatadifferenceadaymakes.html'
 %>
 % endif
 

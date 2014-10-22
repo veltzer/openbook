@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -8,22 +8,22 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="A Night In Tunisia"
-	attributes['style']="Jazz"
+	attributes['title']='A Night In Tunisia'
+	attributes['style']='Jazz'
 	# Sorry for all the slashes. They have to be escaped by mako and then
 	# still escaped for Lilypond
-	attributes['composer']="John \\\"Dizzy\\\" Gillespie, Frank Paparelli"
+	attributes['composer']='John \'Dizzy\' Gillespie, Frank Paparelli'
 	# this is from the fake book
-	attributes['piece']="Bright Swing"
+	attributes['piece']='Bright Swing'
 	# this is from the fake book
-	attributes['copyright']="1944 by MCA Music Publishing, A division of MCA Inc, New York, NY"
+	attributes['copyright']='1944 by MCA Music Publishing, A division of MCA Inc, New York, NY'
 	# this is from the fake book
-	attributes['copyrightextra']="Copyright Renewed"
+	attributes['copyrightextra']='Copyright Renewed'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="ea02cd50-da80-11e3-999d-eb3f2153c941"
-	attributes['structure']="ABA"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='ea02cd50-da80-11e3-999d-eb3f2153c941'
+	attributes['structure']='ABA'
 %>
 % endif
 

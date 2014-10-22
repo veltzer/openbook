@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,30 +9,30 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Fly Me To The Moon"
-	attributes['style']="Jazz"
+	attributes['title']='Fly Me To The Moon'
+	attributes['style']='Jazz'
 	# this is from the fake book
-	attributes['subtitle']="In Other Words"
+	attributes['subtitle']='In Other Words'
 	# this is from the fake book
-	attributes['composer']="Bart Howard"
+	attributes['composer']='Bart Howard'
 	# this is from the fake book
-	attributes['poet']="Bart Howard"
+	attributes['poet']='Bart Howard'
 	# this is from the fake book
-	attributes['piece']="Moderately, with a beat"
+	attributes['piece']='Moderately, with a beat'
 	# this is from the fake book
-	attributes['copyright']="1954 and renewed 1982 Hampshire House Publishing Corp., New York NY."
+	attributes['copyright']='1954 and renewed 1982 Hampshire House Publishing Corp., New York NY.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="3244f4ae-159d-11e1-bbe3-0019d11e5a41"
-	attributes['structure']="AB"
-	attributes['location']="jfb:119"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='3244f4ae-159d-11e1-bbe3-0019d11e5a41'
+	attributes['structure']='AB'
+	attributes['location']='jfb:119'
 
-	attributes['idyoutuberemark1']="The one and only Frank"
-	attributes['idyoutube1']="oCW9Hey6IVY"
-	attributes['idyoutuberemark2']="I didn't know that Diana Krall knew piano this well..."
-	attributes['idyoutube2']="-b8brVSAAQA"
-	attributes['lyricsurl']="http://www.metrolyrics.com/fly-me-to-the-moon-lyrics-frank-sinatra.html"
+	attributes['idyoutuberemark1']='The one and only Frank'
+	attributes['idyoutube1']='oCW9Hey6IVY'
+	attributes['idyoutuberemark2']='I didn\'t know that Diana Krall knew piano this well...'
+	attributes['idyoutube2']='-b8brVSAAQA'
+	attributes['lyricsurl']='http://www.metrolyrics.com/fly-me-to-the-moon-lyrics-frank-sinatra.html'
 %>
 % endif
 

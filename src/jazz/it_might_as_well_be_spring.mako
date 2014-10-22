@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -7,16 +7,15 @@
 	attributes.addVersion('Unknown', version)
 	attributes.setDefaultVersionName('Unknown')
 
-	attributes['title']="It might as well be spring"
-	attributes['style']="Jazz"
-	attributes['composer']="Richard Rogers"
-	attributes['poet']="Oscar Hammerstein"
-	attributes['piece']="Med Swing"
+	attributes['title']='It might as well be spring'
+	attributes['style']='Jazz'
+	attributes['composer']='Richard Rogers'
+	attributes['poet']='Oscar Hammerstein'
+	attributes['piece']='Med Swing'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="0"
-	attributes['uuid']="f4f39800-a26e-11df-b97a-0019d11e5a41"
-	attributes['structure']="????"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='0'
+	attributes['uuid']='f4f39800-a26e-11df-b97a-0019d11e5a41'
 %>
 % endif
 

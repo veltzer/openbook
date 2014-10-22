@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,26 +9,26 @@
 	attributes.setDefaultVersionName('DontMatter')
 
 	# from wikipedia
-	attributes['title']="Sorry Seems to Be the Hardest Word"
+	attributes['title']='Sorry Seems to Be the Hardest Word'
 	# from wikipedia
-	attributes['style']="Pop,R&B"
+	attributes['style']='Pop,R&B'
 	# from wikipedia
-	attributes['composer']="Elton John"
+	attributes['composer']='Elton John'
 	# from wikipedia
-	attributes['poet']="Bernie Taupin"
+	attributes['poet']='Bernie Taupin'
 	# from me
-	attributes['piece']="Ballad"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
+	attributes['piece']='Ballad'
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
 
-	attributes['completion']="5"
-	attributes['uuid']="795b5442-53f8-11e2-9a2d-871ce68b4fd7"
+	attributes['completion']='5'
+	attributes['uuid']='795b5442-53f8-11e2-9a2d-871ce68b4fd7'
 
-	attributes['remark']="same scale (g:m) as the original version"
+	attributes['remark']='same scale (g:m) as the original version'
 
-	attributes['idyoutuberemark1']="Original Elton John Video clip"
-	attributes['idyoutube1']="c3nScN89Klo"
-	attributes['lyricsurl']="http://www.eltonography.com/songs/sorry_seems_to_be_the_hardest_word.html"
-	attributes['wiki']="Sorry_Seems_to_Be_the_Hardest_Word"
+	attributes['idyoutuberemark1']='Original Elton John Video clip'
+	attributes['idyoutube1']='c3nScN89Klo'
+	attributes['lyricsurl']='http://www.eltonography.com/songs/sorry_seems_to_be_the_hardest_word.html'
+	attributes['wiki']='Sorry_Seems_to_Be_the_Hardest_Word'
 %>
 % endif
 

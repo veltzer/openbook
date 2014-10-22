@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -7,17 +7,17 @@
 	attributes.addVersion('Own', version)
 	attributes.setDefaultVersionName('Own')
 
-	attributes['title']="Memory"
-	attributes['style']="Musical"
-	attributes['composer']="Andrew Lloyd Webber"
-	attributes['poet']="Trevor Nunn after T.S. Eliot"
-	attributes['piece']="Musical"
-	attributes['copyright']="Copyright 1981 by the Really Useful Group plc. and Faber Music Ltd."
+	attributes['title']='Memory'
+	attributes['style']='Musical'
+	attributes['composer']='Andrew Lloyd Webber'
+	attributes['poet']='Trevor Nunn after T.S. Eliot'
+	attributes['piece']='Musical'
+	attributes['copyright']='Copyright 1981 by the Really Useful Group plc. and Faber Music Ltd.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="1"
-	attributes['uuid']="cc3c46c7-908d-4b3e-b90f-1e01a942ef27"
-	attributes['remark']="Taken from Scribd url http://www.scribd.com/doc/9491593/Sheet-Music-Cats-Memory"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='1'
+	attributes['uuid']='cc3c46c7-908d-4b3e-b90f-1e01a942ef27'
+	attributes['remark']='Taken from Scribd url http://www.scribd.com/doc/9491593/Sheet-Music-Cats-Memory'
 %>
 % endif
 
@@ -31,13 +31,13 @@
 	TODO:
 		- I don't want to see the vocal staff in the opening.
 		- rests for entire bars (like in the begining) are not centered (should they be ?).
-		- reduce the size of the "GRIZABELLA" headline.
+		- reduce the size of the 'GRIZABELLA' headline.
 		- what's the deal with setting the key per voice? - do I have to do that ?
 			check it out in the documentation, fix if need be and document this.
 		- in the bass notes the bass of the chord should be held for the entire bar
 			(how do I do this in lilypond ?).
 		- too much space between the systems on the page.
-		- add a macro that says "Music by" and then the composer and the same for the lyrics to be preceeded by "Text by".
+		- add a macro that says 'Music by' and then the composer and the same for the lyrics to be preceeded by 'Text by'.
 % endif
 
 % if part=='Own':

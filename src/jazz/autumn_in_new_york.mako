@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,29 +10,29 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="Autumn In New York"
-	attributes['style']="Jazz"
+	attributes['title']='Autumn In New York'
+	attributes['style']='Jazz'
 	# from the hal leonard book
-	attributes['composer']="Vernon Duke"
-	attributes['poet']="Vernon Duke"
+	attributes['composer']='Vernon Duke'
+	attributes['poet']='Vernon Duke'
 	# this is from the hal leonard book.
-	attributes['piece']="Brightly"
+	attributes['piece']='Brightly'
 	# from the hal leonard book
-	attributes['copyright']="1934 by Kay Duke Music."
-	attributes['copyrightextra']="Copyright Renewed. All Rights Administered by BMG Songs, Inc."
+	attributes['copyright']='1934 by Kay Duke Music.'
+	attributes['copyrightextra']='Copyright Renewed. All Rights Administered by BMG Songs, Inc.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="9677b522-7463-11e1-a57d-bbc28ffad085"
-	attributes['structure']="ABAC"
-	attributes['structureremark']="I determined it was ABAC although the part A does not repeat exactly. It is good enough"
-	attributes['location']="rbk1:33,hlrjb:34"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='9677b522-7463-11e1-a57d-bbc28ffad085'
+	attributes['structure']='ABAC'
+	attributes['structureremark']='I determined it was ABAC although the part A does not repeat exactly. It is good enough'
+	attributes['location']='rbk1:33,hlrjb:34'
 
-	attributes['idyoutuberemark1']="Virtuoso Sonny Stitt"
-	attributes['idyoutube1']="Nn11v07Db3s"
-	attributes['idyoutuberemark2']="The classic Billie Holiday..."
-	attributes['idyoutube2']="cl_e7UW-bz8"
-	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Autumn-in-New-York-lyrics-Frank-Sinatra/C779DB117665DFD94825691F00067AD0"
+	attributes['idyoutuberemark1']='Virtuoso Sonny Stitt'
+	attributes['idyoutube1']='Nn11v07Db3s'
+	attributes['idyoutuberemark2']='The classic Billie Holiday...'
+	attributes['idyoutube2']='cl_e7UW-bz8'
+	attributes['lyricsurl']='http://www.sing365.com/music/lyric.nsf/Autumn-in-New-York-lyrics-Frank-Sinatra/C779DB117665DFD94825691F00067AD0'
 %>
 % endif
 
@@ -59,7 +59,7 @@
 		music does NOT SHOW the fact that the a minor is two beats and
 		each of the following chords are on one beat).
 		Document this issue in the lilyponds hints file.
-	- how do I enter french keys? As in the words of the song "rou -- es"
+	- how do I enter french keys? As in the words of the song 'rou -- es'
 		(the e is supposed to be a french e)
 	- how do I united two exact lyrics? Look at the hal leonard lyrical
 		ending of this songs and see how he joins the two lyrics

@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -8,24 +8,24 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="Solar"
-	attributes['style']="Jazz"
+	attributes['title']='Solar'
+	attributes['style']='Jazz'
 	# from the real book
-	attributes['composer']="Miles Davis"
+	attributes['composer']='Miles Davis'
 	# from the real book
-	attributes['piece']="Jazz"
+	attributes['piece']='Jazz'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="841f9004-4477-11e2-acde-078065be2912"
-	attributes['structure']="A"
-	attributes['structureremark']="The 12 bars have a kind of blues structure feel to them"
-	attributes['location']="rbk1:386"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='841f9004-4477-11e2-acde-078065be2912'
+	attributes['structure']='A'
+	attributes['structureremark']='The 12 bars have a kind of blues structure feel to them'
+	attributes['location']='rbk1:386'
 
-	attributes['idyoutuberemark1']="Metheny/Holland/Hancock/DeJohnette kickass performance"
-	attributes['idyoutube1']="FAYt3a-c_k0"
-	attributes['idyoutuberemark2']="Classic miles davis"
-	attributes['idyoutube2']="9GADuMRXMRw"
+	attributes['idyoutuberemark1']='Metheny/Holland/Hancock/DeJohnette kickass performance'
+	attributes['idyoutube1']='FAYt3a-c_k0'
+	attributes['idyoutuberemark2']='Classic miles davis'
+	attributes['idyoutube2']='9GADuMRXMRw'
 %>
 % endif
 

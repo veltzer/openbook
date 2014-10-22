@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -11,29 +11,29 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="Someday My Prince Will Come"
-	attributes['style']="Jazz"
+	attributes['title']='Someday My Prince Will Come'
+	attributes['style']='Jazz'
 	# this is from the internet
-	attributes['composer']="Frank Churchill"
+	attributes['composer']='Frank Churchill'
 	# this is from the internet
-	attributes['poet']="Larry Morey"
+	attributes['poet']='Larry Morey'
 	# this is from the real book
-	attributes['piece']="Med. Jazz Waltz"
+	attributes['piece']='Med. Jazz Waltz'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="4933391e-ee10-11e0-b804-0019d11e5a41"
-	attributes['structure']="ABAC"
-	attributes['structureremark']="This could be thought of as AB as well"
-	attributes['location']="rbk1:388"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='4933391e-ee10-11e0-b804-0019d11e5a41'
+	attributes['structure']='ABAC'
+	attributes['structureremark']='This could be thought of as AB as well'
+	attributes['location']='rbk1:388'
 
-	attributes['idyoutuberemark1']="Miles"
-	attributes['idyoutube1']="Lo18F5ObPng"
-	attributes['idyoutuberemark2']="the great Bill Evans"
-	attributes['idyoutube2']="zYpKNM1Yi5o"
-	attributes['idyoutuberemark3']="and Bill again"
-	attributes['idyoutube3']="KUT06K5eGz4"
-	attributes['lyricsurl']="http://artists.letssingit.com/disney-lyrics-someday-my-prince-will-come-31rjgwv"
+	attributes['idyoutuberemark1']='Miles'
+	attributes['idyoutube1']='Lo18F5ObPng'
+	attributes['idyoutuberemark2']='the great Bill Evans'
+	attributes['idyoutube2']='zYpKNM1Yi5o'
+	attributes['idyoutuberemark3']='and Bill again'
+	attributes['idyoutube3']='KUT06K5eGz4'
+	attributes['lyricsurl']='http://artists.letssingit.com/disney-lyrics-someday-my-prince-will-come-31rjgwv'
 %>
 % endif
 

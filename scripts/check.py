@@ -17,10 +17,17 @@ def error(num, line, file):
 def check_file(file):
 	insideVoice=False
 	insideChords=False
+	insidePython=False
 	prevprev=None
 	prev=None
 	for num,line in enumerate(open(file, 'r')):
 		line=line.rstrip('\n')
+		if line=='<%':
+			insidePython=True
+		if insidePython and line.find('"')!=-1:
+			error(num, line, file)
+		if line=='%>':
+			insidePython=False
 		if line.startswith('% if part==\'Voice'):
 			insideVoice=True
 		if line=='% endif':

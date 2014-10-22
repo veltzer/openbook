@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -14,23 +14,23 @@
 	version['doLyrics']=True
 	attributes.addVersion('Real', version)
 
-	attributes['title']="There Will Never Be Another You"
-	attributes['style']="Jazz"
-	attributes['composer']="Harry Warren"
-	attributes['poet']="Mack Gordon"
-	attributes['piece']="Easy Swing"
-	attributes['copyright']="1942, 1987 Twentieth Century Music Corporation"
-	attributes['copyrightextra']="Renewed 1970 Twentieth Century Music Corporation. All Rights Controlled by Morley Music Co. International Copyright Secured. All Rights Reserved."
+	attributes['title']='There Will Never Be Another You'
+	attributes['style']='Jazz'
+	attributes['composer']='Harry Warren'
+	attributes['poet']='Mack Gordon'
+	attributes['piece']='Easy Swing'
+	attributes['copyright']='1942, 1987 Twentieth Century Music Corporation'
+	attributes['copyrightextra']='Renewed 1970 Twentieth Century Music Corporation. All Rights Controlled by Morley Music Co. International Copyright Secured. All Rights Reserved.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="e30e1074-eaf3-11e0-a377-0019d11e5a41"
-	attributes['structure']="AB"
-	attributes['structureremark']="the structure of this tune could also be thought of ABAC since in the AB interpretation the first 8 bars of the A and B part are identical."
-	attributes['location']="jfb:384,rbk1:426"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='e30e1074-eaf3-11e0-a377-0019d11e5a41'
+	attributes['structure']='AB'
+	attributes['structureremark']='the structure of this tune could also be thought of ABAC since in the AB interpretation the first 8 bars of the A and B part are identical.'
+	attributes['location']='jfb:384,rbk1:426'
 
-	attributes['idyoutube1']="kh_NnsbIqNQ"
-	attributes['idyoutube2']="Til3lV_ItZE"
+	attributes['idyoutube1']='kh_NnsbIqNQ'
+	attributes['idyoutube2']='Til3lV_ItZE'
 %>
 % endif
 

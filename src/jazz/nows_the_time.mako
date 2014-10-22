@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -8,26 +8,26 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Now's The Time"
-	attributes['style']="Jazz"
+	attributes['title']='Now\'s The Time'
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']="Charlie Parker"
+	attributes['composer']='Charlie Parker'
 	# from the fake book
-	attributes['piece']="Fast Blues"
+	attributes['piece']='Fast Blues'
 	# from the fake book
-	attributes['copyright']="1945, Atlantic Music Corp."
-	attributes['copyrightextra']="Renewed and assigned 1973, Atlantic Music Corp."
+	attributes['copyright']='1945, Atlantic Music Corp.'
+	attributes['copyrightextra']='Renewed and assigned 1973, Atlantic Music Corp.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="cd56a8d8-da1d-11e3-a6ca-c3a55777c28e"
-	attributes['structure']="Blues"
-	attributes['location']="jfb:279"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='cd56a8d8-da1d-11e3-a6ca-c3a55777c28e'
+	attributes['structure']='Blues'
+	attributes['location']='jfb:279'
 
-	attributes['idyoutuberemark1']="The great Charlie Parker"
-	attributes['idyoutube1']="ryNtmkfeJk4"
-	attributes['idyoutuberemark2']="A much more modern version by Blakey and the Messengers"
-	attributes['idyoutube2']="qq7xDN1G3Bc"
+	attributes['idyoutuberemark1']='The great Charlie Parker'
+	attributes['idyoutube1']='ryNtmkfeJk4'
+	attributes['idyoutuberemark2']='A much more modern version by Blakey and the Messengers'
+	attributes['idyoutube2']='qq7xDN1G3Bc'
 %>
 % endif
 

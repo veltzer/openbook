@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -8,14 +8,14 @@
 	attributes.addVersion('DontMatter', version)
 	attributes.setDefaultVersionName('DontMatter')
 
-	attributes['title']="Forever Young"
-	attributes['style']="Pop"
-	attributes['composer']="Alphaville"
-	attributes['piece']="Med. Ballad"
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
+	attributes['title']='Forever Young'
+	attributes['style']='Pop'
+	attributes['composer']='Alphaville'
+	attributes['piece']='Med. Ballad'
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
 
-	attributes['completion']="5"
-	attributes['uuid']="625ad0a2-a26f-11df-8f71-0019d11e5a41"
+	attributes['completion']='5'
+	attributes['uuid']='625ad0a2-a26f-11df-8f71-0019d11e5a41'
 %>
 % endif
 

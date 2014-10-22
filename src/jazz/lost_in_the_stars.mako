@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,18 +9,18 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Lost In The Stars"
-	attributes['style']="Jazz"
-	attributes['subtitle']="(Form \\\"Lost In The Stars\\\")"
-	attributes['composer']="Kurt Weill"
-	attributes['poet']="Maxwell Anderson"
-	attributes['piece']="Moderately"
-	attributes['copyright']="1946 Chappell & Co., Inc"
-	attributes['copyrightextra']="Renewed Chappell & Co., Inc. & TRO-Hampshire House"
+	attributes['title']='Lost In The Stars'
+	attributes['style']='Jazz'
+	attributes['subtitle']='(Form \'Lost In The Stars\')'
+	attributes['composer']='Kurt Weill'
+	attributes['poet']='Maxwell Anderson'
+	attributes['piece']='Moderately'
+	attributes['copyright']='1946 Chappell & Co., Inc'
+	attributes['copyrightextra']='Renewed Chappell & Co., Inc. & TRO-Hampshire House'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="a785ec42-da7f-11e3-b5cb-675e7f5a49ce"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='a785ec42-da7f-11e3-b5cb-675e7f5a49ce'
 %>
 % endif
 

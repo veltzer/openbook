@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,30 +9,30 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="Just Friends"
-	attributes['style']="Jazz"
+	attributes['title']='Just Friends'
+	attributes['style']='Jazz'
 	# from the new real book
-	attributes['composer']="John Klenner"
+	attributes['composer']='John Klenner'
 	# from the new real book
-	attributes['poet']="Sam M. Lewis"
+	attributes['poet']='Sam M. Lewis'
 	# from the new real book
-	attributes['piece']="Medium Swing"
+	attributes['piece']='Medium Swing'
 	# from the new real book
-	attributes['copyright']="1931 (renewed 1959) EMI Robbins Catalog, Inc."
+	attributes['copyright']='1931 (renewed 1959) EMI Robbins Catalog, Inc.'
 	# from the new real book
-	attributes['copyrightextra']="Used by by Persmission of CPP/Belwin, Inc., Miami, FL. International Copyright Secured."
+	attributes['copyrightextra']='Used by by Persmission of CPP/Belwin, Inc., Miami, FL. International Copyright Secured.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="2f6e2740-f29e-11e0-9ede-0019d11e5a41"
-	attributes['structure']="AB"
-	attributes['location']="rbk1:249,nrbk3:193"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='2f6e2740-f29e-11e0-9ede-0019d11e5a41'
+	attributes['structure']='AB'
+	attributes['location']='rbk1:249,nrbk3:193'
 
-	attributes['idyoutuberemark1']="the fabulous Chet Baker"
-	attributes['idyoutube1']="88CqlgFAJ-k"
-	attributes['idyoutuberemark2']="fast and furious Trane"
-	attributes['idyoutube2']="9W_XQCLD_I0"
-	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Just-Friends-lyrics-Frank-Sinatra/FA2BFD6A414238734825691F000AC7E7"
+	attributes['idyoutuberemark1']='the fabulous Chet Baker'
+	attributes['idyoutube1']='88CqlgFAJ-k'
+	attributes['idyoutuberemark2']='fast and furious Trane'
+	attributes['idyoutube2']='9W_XQCLD_I0'
+	attributes['lyricsurl']='http://www.sing365.com/music/lyric.nsf/Just-Friends-lyrics-Frank-Sinatra/FA2BFD6A414238734825691F000AC7E7'
 %>
 % endif
 

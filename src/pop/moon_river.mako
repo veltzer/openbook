@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,20 +9,20 @@
 	attributes.addVersion('My', version)
 	attributes.setDefaultVersionName('My')
 
-	attributes['title']="Moon River"
-	attributes['style']="Ballad"
-	attributes['composer']="Henri Mancini"
-	attributes['poet']="Johnny Mercer"
-	attributes['piece']="Ballad"
+	attributes['title']='Moon River'
+	attributes['style']='Ballad'
+	attributes['composer']='Henri Mancini'
+	attributes['poet']='Johnny Mercer'
+	attributes['piece']='Ballad'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="11542882-e65c-11e2-9030-4311f6fc08c2"
-	attributes['structure']="ABAC"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='11542882-e65c-11e2-9030-4311f6fc08c2'
+	attributes['structure']='ABAC'
 
-	attributes['idyoutuberemark1']="Rita Hayworth version"
-	attributes['idyoutube1']="SQ8keKFByh8"
-	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Moon-River-lyrics-Frank-Sinatra/B08DDFF369E15C874825691F000CAC36"
+	attributes['idyoutuberemark1']='Rita Hayworth version'
+	attributes['idyoutube1']='SQ8keKFByh8'
+	attributes['lyricsurl']='http://www.sing365.com/music/lyric.nsf/Moon-River-lyrics-Frank-Sinatra/B08DDFF369E15C874825691F000CAC36'
 %>
 % endif
 

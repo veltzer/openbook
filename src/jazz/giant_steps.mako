@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,29 +10,29 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="Giant Steps"
-	attributes['style']="Jazz"
-	attributes['composer']="John Coltrane"
+	attributes['title']='Giant Steps'
+	attributes['style']='Jazz'
+	attributes['composer']='John Coltrane'
 	# this is from the real book
-	attributes['piece']="Fast"
+	attributes['piece']='Fast'
 	# this is from the hal leonard book
-	#attributes['piece']="Fast Swing"
+	#attributes['piece']='Fast Swing'
 	# this is from the hal leonard book
-	attributes['copyright']="1974 Jowcol Music."
+	attributes['copyright']='1974 Jowcol Music.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="828326cc-013c-11e1-b823-0019d11e5a41"
-	attributes['structure']="A"
-	attributes['structureremark']="Very weird not repeating structure because of the weird harmony steps"
-	attributes['location']="rbk1:170,hlrjb:130,nrbk2:121,kw:3"
-	attributes['remark']="the key here is of little meaning as the harmony changes key all the time...:) That's why it's written in C."
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='828326cc-013c-11e1-b823-0019d11e5a41'
+	attributes['structure']='A'
+	attributes['structureremark']='Very weird not repeating structure because of the weird harmony steps'
+	attributes['location']='rbk1:170,hlrjb:130,nrbk2:121,kw:3'
+	attributes['remark']='the key here is of little meaning as the harmony changes key all the time...:) That\'s why it\'s written in C.'
 
-	attributes['idyoutuberemark1']="Mccoy Tyner awesome solo..."
-	attributes['idyoutube1']="PukuQPUKfyU"
-	attributes['idyoutuberemark2']="The original Coltrane version..."
-	attributes['idyoutube2']="BZRnkBK_0no"
-	attributes['lyricsurl']="http://www.bjazz.com/Giant_Steps.html"
+	attributes['idyoutuberemark1']='Mccoy Tyner awesome solo...'
+	attributes['idyoutube1']='PukuQPUKfyU'
+	attributes['idyoutuberemark2']='The original Coltrane version...'
+	attributes['idyoutube2']='BZRnkBK_0no'
+	attributes['lyricsurl']='http://www.bjazz.com/Giant_Steps.html'
 %>
 % endif
 

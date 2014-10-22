@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,21 +9,21 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="How Deep Is the Ocean"
-	attributes['style']="Jazz"
-	attributes['subtitle']="How High Is the Sky"
+	attributes['title']='How Deep Is the Ocean'
+	attributes['style']='Jazz'
+	attributes['subtitle']='How High Is the Sky'
 	# this is from the fake book
-	attributes['composer']="Irving Berlin"
+	attributes['composer']='Irving Berlin'
 	# this is from the fake book
-	attributes['poet']="Irving Berlin"
+	attributes['poet']='Irving Berlin'
 	# this is from the fake book
-	attributes['piece']="Slowly"
-	attributes['copyright']="1932 Irving Berling (Renewed)"
+	attributes['piece']='Slowly'
+	attributes['copyright']='1932 Irving Berling (Renewed)'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="1f41adf6-da81-11e3-a9b9-277d2c72c477"
-	attributes['structure']="ABAC"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='1f41adf6-da81-11e3-a9b9-277d2c72c477'
+	attributes['structure']='ABAC'
 %>
 % endif
 

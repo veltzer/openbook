@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,21 +9,21 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Polka Dots And Moonbeams"
-	attributes['style']="Jazz"
-	attributes['composer']="Jimmy Van Heusen"
-	attributes['poet']="Johnny Burke"
-	attributes['piece']="Slowly, with expression"
-	attributes['copyright']="1940 by ARC Music Corp., now Bourne Co. and Dorsey Bros."
-	attributes['copyrightextra']="Music, Division of Music Sales Corporation"
+	attributes['title']='Polka Dots And Moonbeams'
+	attributes['style']='Jazz'
+	attributes['composer']='Jimmy Van Heusen'
+	attributes['poet']='Johnny Burke'
+	attributes['piece']='Slowly, with expression'
+	attributes['copyright']='1940 by ARC Music Corp., now Bourne Co. and Dorsey Bros.'
+	attributes['copyrightextra']='Music, Division of Music Sales Corporation'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="60170b42-46e0-11e0-bf54-0019d11e5a41"
-	attributes['structure']="AABA"
-	attributes['location']="jfb:304"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='60170b42-46e0-11e0-bf54-0019d11e5a41'
+	attributes['structure']='AABA'
+	attributes['location']='jfb:304'
 
-	attributes['idyoutube1']="4NTxWQfMSsA"
+	attributes['idyoutube1']='4NTxWQfMSsA'
 %>
 % endif
 

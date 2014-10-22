@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -7,13 +7,13 @@
 	attributes.addVersion('Own', version)
 	attributes.setDefaultVersionName('Own')
 
-	attributes['title']="Drumming paradiddles"
-	attributes['style']="Jazz"
+	attributes['title']='Drumming paradiddles'
+	attributes['style']='Jazz'
 	attributes['copyright']=gattr['copyrightvalstudy']
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="eb2be7a4-6f42-11e0-a53d-0019d11e5a41"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='eb2be7a4-6f42-11e0-a53d-0019d11e5a41'
 %>
 % endif
 

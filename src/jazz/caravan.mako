@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,31 +10,31 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="Caravan"
-	attributes['style']="Jazz"
+	attributes['title']='Caravan'
+	attributes['style']='Jazz'
 	# this is from the new real book, volume III
-	attributes['composer']="Duke Ellington, Juan Tizol"
+	attributes['composer']='Duke Ellington, Juan Tizol'
 	# this is from the new real book, volume III
-	attributes['poet']="Irving Mills"
+	attributes['poet']='Irving Mills'
 	# this is from the new real book, volume III
-	attributes['piece']="Bright Latin and Swing"
+	attributes['piece']='Bright Latin and Swing'
 	# this is from the new real book, volume III
-	attributes['copyright']="1937 (renewed 1965) Mills Music c/o EMI Music Publishing"
+	attributes['copyright']='1937 (renewed 1965) Mills Music c/o EMI Music Publishing'
 	# this is from the new real book, volume III
-	attributes['copyrightextra']="Used by Permission of CPP/Belwin, Inc., Miami, FL ALL Right Reserved"
+	attributes['copyrightextra']='Used by Permission of CPP/Belwin, Inc., Miami, FL ALL Right Reserved'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="160af5b0-ebe1-11e2-937c-bb8193c610fc"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='160af5b0-ebe1-11e2-937c-bb8193c610fc'
 	# my own (the structure in the new real book claims ABC which is totally wrong)
-	attributes['structure']="AABA"
-	attributes['location']="nrbk3:73"
+	attributes['structure']='AABA'
+	attributes['location']='nrbk3:73'
 
-	attributes['idyoutuberemark1']="A great performance by Ella"
-	attributes['idyoutube1']="s4VjltPMfds"
-	attributes['idyoutuberemark2']="Jazz messengers with an intro by Blakey"
-	attributes['idyoutube2']="eP12RhmBIRw"
-	attributes['lyricsurl']="http://www.metrolyrics.com/caravan-lyrics-ella-fitzgerald.html"
+	attributes['idyoutuberemark1']='A great performance by Ella'
+	attributes['idyoutube1']='s4VjltPMfds'
+	attributes['idyoutuberemark2']='Jazz messengers with an intro by Blakey'
+	attributes['idyoutube2']='eP12RhmBIRw'
+	attributes['lyricsurl']='http://www.metrolyrics.com/caravan-lyrics-ella-fitzgerald.html'
 %>
 % endif
 

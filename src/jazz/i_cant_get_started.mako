@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -16,30 +16,30 @@
 	version['doLyricsmore']=True
 	attributes.addVersion('Real', version)
 
-	attributes['title']="I Can't Get Started"
-	attributes['style']="Jazz"
+	attributes['title']='I Can\'t Get Started'
+	attributes['style']='Jazz'
 	# this is from the fake book
-	attributes['composer']="Vernon Duke"
+	attributes['composer']='Vernon Duke'
 	# this is from the fake book
-	attributes['poet']="Ira Gershwin"
+	attributes['poet']='Ira Gershwin'
 	# this is from the fake book
-	attributes['piece']="Slowly"
+	attributes['piece']='Slowly'
 	# this is from the fake book
-	attributes['copyright']="1963, 1964 by Antonio Carlos Jobim and Vincius De Moraes, Brazil"
-	attributes['copyrightextra']="Sole Selling Agent Duchess Music Corporation (MCA), New York, NY for the U.S.A. and Canada"
+	attributes['copyright']='1963, 1964 by Antonio Carlos Jobim and Vincius De Moraes, Brazil'
+	attributes['copyrightextra']='Sole Selling Agent Duchess Music Corporation (MCA), New York, NY for the U.S.A. and Canada'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="0"
-	attributes['uuid']="ee9c0d62-15fd-11e1-bd56-0019d11e5a41"
-	attributes['structure']="AB"
-	attributes['structureremark']="this tunes structure can also be categorised as ABAC since the first 8 bars of both the first and second part are the same."
-	attributes['location']="jfb:150-151"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='0'
+	attributes['uuid']='ee9c0d62-15fd-11e1-bd56-0019d11e5a41'
+	attributes['structure']='AB'
+	attributes['structureremark']='this tunes structure can also be categorised as ABAC since the first 8 bars of both the first and second part are the same.'
+	attributes['location']='jfb:150-151'
 
-	attributes['idyoutuberemark1']="Jobim with Pat Metheny"
-	attributes['idyoutube1']="VendEbBv3nc"
-	attributes['idyoutuberemark2']="Astrud Gilberto in the classic version"
-	attributes['idyoutube2']="nIW049UrhGM"
-	attributes['lyricsurl']="http://www.lyricsmode.com/lyrics/a/antonio_carlos_jobim/how_insensitive.html"
+	attributes['idyoutuberemark1']='Jobim with Pat Metheny'
+	attributes['idyoutube1']='VendEbBv3nc'
+	attributes['idyoutuberemark2']='Astrud Gilberto in the classic version'
+	attributes['idyoutube2']='nIW049UrhGM'
+	attributes['lyricsurl']='http://www.lyricsmode.com/lyrics/a/antonio_carlos_jobim/how_insensitive.html'
 %>
 % endif
 

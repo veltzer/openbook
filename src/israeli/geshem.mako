@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -12,19 +12,19 @@
 
 	attributes['heb']=True
 
-	attributes['title']=u"גשם"
-	attributes['style']="Israeli"
-	attributes['composer']=u"יחיאל אמסלם"
-	attributes['poet']=u"יעקב גלעד"
-	attributes['piece']=u"בלדת רוק"
-	attributes['singer']=u"אלי לוזון"
-	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
+	attributes['title']=u'גשם'
+	attributes['style']='Israeli'
+	attributes['composer']=u'יחיאל אמסלם'
+	attributes['poet']=u'יעקב גלעד'
+	attributes['piece']=u'בלדת רוק'
+	attributes['singer']=u'אלי לוזון'
+	attributes['typesetter']=u'מרק ולצר <mark.veltzer@gmail.com>'
 
-	attributes['completion']="5"
-	attributes['uuid']="c562b5fa-c345-11e0-995c-0019d11e5a41"
+	attributes['completion']='5'
+	attributes['uuid']='c562b5fa-c345-11e0-995c-0019d11e5a41'
 
-	attributes['idyoutube1']="1CBj7q51-BQ"
-	attributes['lyricsurl']="http://www.mp3music.co.il/lyrics/448.html"
+	attributes['idyoutube1']='1CBj7q51-BQ'
+	attributes['lyricsurl']='http://www.mp3music.co.il/lyrics/448.html'
 %>
 % endif
 

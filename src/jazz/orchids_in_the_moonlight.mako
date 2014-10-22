@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,32 +10,32 @@
 	attributes.setDefaultVersionName('Fake')
 
 	# from the fake book
-	attributes['title']="Orchids In The Moonlight"
+	attributes['title']='Orchids In The Moonlight'
 	# from the fake book
-	attributes['style']="Jazz"
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']="Vincent Youmans"
+	attributes['composer']='Vincent Youmans'
 	# from the fake book
-	attributes['poet']="Gus Kahn, Edward Eliscu"
+	attributes['poet']='Gus Kahn, Edward Eliscu'
 	# from the fake book
-	attributes['piece']="With a Tango Beat"
+	attributes['piece']='With a Tango Beat'
 	# from the fake book
-	attributes['copyright']="1933 by T.B. Harms Co."
+	attributes['copyright']='1933 by T.B. Harms Co.'
 	# from the fake book
-	attributes['copyrightextra']="Copyright Renewed, assigned to Chappell & Co., Inc (Intersong Music, Publisher) and T.B. Harms Co. (c/o The Welk Music Group, Santa Monica, CA 90401) for the U.S.A. only. Rights outside controlled by T.B. Harms Co."
+	attributes['copyrightextra']='Copyright Renewed, assigned to Chappell & Co., Inc (Intersong Music, Publisher) and T.B. Harms Co. (c/o The Welk Music Group, Santa Monica, CA 90401) for the U.S.A. only. Rights outside controlled by T.B. Harms Co.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="ba3d8788-10f7-11e4-b63c-8397db34c0b9"
-	attributes['structure']="ABA"
-	attributes['structureremark']="Each A part is the 16 bars where the first 4 of every half are the same"
-	attributes['location']="jfb:292"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='ba3d8788-10f7-11e4-b63c-8397db34c0b9'
+	attributes['structure']='ABA'
+	attributes['structureremark']='Each A part is the 16 bars where the first 4 of every half are the same'
+	attributes['location']='jfb:292'
 
-	attributes['idyoutuberemark1']="Excellent piano arrangement"
-	attributes['idyoutube1']="2LEah90aDmA"
-	attributes['idyoutuberemark2']="Classic tango vocal version"
-	attributes['idyoutube2']="WuD8XmCza5U"
-	attributes['lyricsurl']="http://lyricsplayground.com/alpha/songs/o/orchidsinthemoonlight.shtml"
+	attributes['idyoutuberemark1']='Excellent piano arrangement'
+	attributes['idyoutube1']='2LEah90aDmA'
+	attributes['idyoutuberemark2']='Classic tango vocal version'
+	attributes['idyoutube2']='WuD8XmCza5U'
+	attributes['lyricsurl']='http://lyricsplayground.com/alpha/songs/o/orchidsinthemoonlight.shtml'
 %>
 % endif
 

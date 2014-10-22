@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,28 +9,28 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="They Can't Take That Away From Me"
-	attributes['style']="Jazz"
+	attributes['title']='They Can\'t Take That Away From Me'
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']="George Gershwin"
+	attributes['composer']='George Gershwin'
 	# from the fake book
-	attributes['poet']="Ira Gershwin"
+	attributes['poet']='Ira Gershwin'
 	# from the fake book
-	attributes['piece']="Moderately"
-	attributes['copyright']="1937 by Gershwin Publishing Corporation"
-	attributes['copyrightextra']="Copyright renewed, Assigned to Chappell & Co., Inc."
+	attributes['piece']='Moderately'
+	attributes['copyright']='1937 by Gershwin Publishing Corporation'
+	attributes['copyrightextra']='Copyright renewed, Assigned to Chappell & Co., Inc.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="d0904c80-d84b-11e3-b741-dbf5614f4f33"
-	attributes['structure']="AABA"
-	attributes['location']="jfb:390"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='d0904c80-d84b-11e3-b741-dbf5614f4f33'
+	attributes['structure']='AABA'
+	attributes['location']='jfb:390'
 
-	attributes['idyoutuberemark1']="Louis and Ella in a great performance"
-	attributes['idyoutube1']="ExmoiGZuiFQ"
-	attributes['idyoutuberemark2']="Tony Bennett and Elvis Constello..."
-	attributes['idyoutube2']="x6uDp5lYPzs"
-	attributes['lyricsurl']="http://www.lyrics007.com/Ella%20Fitzgerald%20Lyrics/They%20Can%27t%20Take%20That%20Away%20From%20Me%20Lyrics.html"
+	attributes['idyoutuberemark1']='Louis and Ella in a great performance'
+	attributes['idyoutube1']='ExmoiGZuiFQ'
+	attributes['idyoutuberemark2']='Tony Bennett and Elvis Constello...'
+	attributes['idyoutube2']='x6uDp5lYPzs'
+	attributes['lyricsurl']='http://www.lyrics007.com/Ella%20Fitzgerald%20Lyrics/They%20Can%27t%20Take%20That%20Away%20From%20Me%20Lyrics.html'
 %>
 % endif
 

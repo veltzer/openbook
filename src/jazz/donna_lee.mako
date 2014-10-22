@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -8,24 +8,24 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="Donna Lee"
-	attributes['style']="Jazz"
+	attributes['title']='Donna Lee'
+	attributes['style']='Jazz'
 	# this is from the real book
-	attributes['composer']="Charlie Parker"
+	attributes['composer']='Charlie Parker'
 	# this is from the real book
-	attributes['piece']="Up Tempo"
+	attributes['piece']='Up Tempo'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="a9ca1752-53d6-11e2-a687-1bd4487b8eae"
-	attributes['structure']="AB"
-	attributes['structureremark']="This could be thought of as ABAC although the two A's are not the same so AB is more accurate"
-	attributes['location']="rbk1:124"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='a9ca1752-53d6-11e2-a687-1bd4487b8eae'
+	attributes['structure']='AB'
+	attributes['structureremark']='This could be thought of as ABAC although the two A\'s are not the same so AB is more accurate'
+	attributes['location']='rbk1:124'
 
-	attributes['idyoutuberemark1']="Very fast Wynton Marsalis version"
-	attributes['idyoutube1']="QdD6XE9DtAE"
-	attributes['idyoutuberemark2']="The original Parker, Davis, Bud Powell version"
-	attributes['idyoutube2']="hANODMX9c5g"
+	attributes['idyoutuberemark1']='Very fast Wynton Marsalis version'
+	attributes['idyoutube1']='QdD6XE9DtAE'
+	attributes['idyoutuberemark2']='The original Parker, Davis, Bud Powell version'
+	attributes['idyoutube2']='hANODMX9c5g'
 %>
 % endif
 

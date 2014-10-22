@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -7,15 +7,15 @@
 	attributes.addVersion('Epdf0', version)
 	attributes.setDefaultVersionName('Epdf0')
 
-	attributes['title']="Sonata III"
-	attributes['style']="Classical"
-	attributes['composer']="Wolfgang Amadeus Mozart"
-	attributes['copyright']="1918, G.Schirmer Inc."
+	attributes['title']='Sonata III'
+	attributes['style']='Classical'
+	attributes['composer']='Wolfgang Amadeus Mozart'
+	attributes['copyright']='1918, G.Schirmer Inc.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="0"
-	attributes['uuid']="744f61d8-a26f-11df-b6b1-0019d11e5a41"
-	attributes['remark']="Edited, revised and fingered by Richard Epstein"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='0'
+	attributes['uuid']='744f61d8-a26f-11df-b6b1-0019d11e5a41'
+	attributes['remark']='Edited, revised and fingered by Richard Epstein'
 %>
 % endif
 
@@ -24,7 +24,7 @@
 	TODO:
 	- fix the tune which has absolute notes
 	- add it as an epdf:
-	"Schirmer's library of musical classics"
+	'Schirmer's library of musical classics'
 	An accompaniment for Second Piano by Edvard Grieg may be found in Schirmer's Library, Vol. 1440.
 	- write whats been done for this tune.
 % endif

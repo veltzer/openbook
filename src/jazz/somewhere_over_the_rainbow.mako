@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -17,34 +17,34 @@
 	attributes.addVersion('Wikifonia', version)
 
 	# from the ccb book
-	attributes['title']="Somewhere, Over The Rainbow"
-	attributes['style']="Jazz"
+	attributes['title']='Somewhere, Over The Rainbow'
+	attributes['style']='Jazz'
 	# from the ccb book
-	attributes['composer']="Harold Arlen"
+	attributes['composer']='Harold Arlen'
 	# from wikipedia
-	attributes['poet']="Edgar Yipsel 'Yip' Harburg"
+	attributes['poet']='Edgar Yipsel \'Yip\' Harburg'
 	# from the fake book
-	attributes['piece']="Ballad"
+	attributes['piece']='Ballad'
 	# my own
-	#attributes['piece']="Slowly, with expression"
+	#attributes['piece']='Slowly, with expression'
 	# from wikifonia
-	attributes['copyright']="Musicopy"
+	attributes['copyright']='Musicopy'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="f046f51c-ed4d-11e3-9d71-67b6b025e741"
-	attributes['structure']="AABA"
-	attributes['location']="cc:209,file:over_the_rainbow.pdf"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='f046f51c-ed4d-11e3-9d71-67b6b025e741'
+	attributes['structure']='AABA'
+	attributes['location']='cc:209,file:over_the_rainbow.pdf'
 
-	attributes['idyoutuberemark1']="Keith Jarret solo"
-	attributes['idyoutube1']="eq0EWNuR1H8"
-	attributes['idyoutuberemark2']="Original Judy Garland version"
-	attributes['idyoutube2']="PSZxmZmBfnU"
-	attributes['idyoutuberemark3']="Keith Jarret kills them"
-	attributes['idyoutube3']="u3eH6VW6Chc"
-	attributes['idyoutuberemark4']="The original Judy Garland version"
-	attributes['idyoutube4']="1HRa4X07jdE"
-	attributes['lyricsurl']="http://www.stlyrics.com/lyrics/thewizardofoz/somewhereovertherainbow.htm"
+	attributes['idyoutuberemark1']='Keith Jarret solo'
+	attributes['idyoutube1']='eq0EWNuR1H8'
+	attributes['idyoutuberemark2']='Original Judy Garland version'
+	attributes['idyoutube2']='PSZxmZmBfnU'
+	attributes['idyoutuberemark3']='Keith Jarret kills them'
+	attributes['idyoutube3']='u3eH6VW6Chc'
+	attributes['idyoutuberemark4']='The original Judy Garland version'
+	attributes['idyoutube4']='1HRa4X07jdE'
+	attributes['lyricsurl']='http://www.stlyrics.com/lyrics/thewizardofoz/somewhereovertherainbow.htm'
 %>
 % endif
 

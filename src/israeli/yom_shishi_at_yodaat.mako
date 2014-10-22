@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -12,21 +12,21 @@
 
 	attributes['heb']=True
 
-	attributes['title']=u"יום שישי את יודעת"
-	attributes['style']="Israeli"
-	attributes['composer']=u"יהודה פוליקר"
-	attributes['poet']=u"יעקב גלעד"
-	attributes['piece']=u"רוקנרול"
-	attributes['singer']=u"יהודה פוליקר"
-	attributes['typesetter']=u"מרק ולצר <mark.veltzer@gmail.com>"
+	attributes['title']=u'יום שישי את יודעת'
+	attributes['style']='Israeli'
+	attributes['composer']=u'יהודה פוליקר'
+	attributes['poet']=u'יעקב גלעד'
+	attributes['piece']=u'רוקנרול'
+	attributes['singer']=u'יהודה פוליקר'
+	attributes['typesetter']=u'מרק ולצר <mark.veltzer@gmail.com>'
 
-	attributes['completion']="5"
-	attributes['uuid']="d4c79db6-8aec-11e1-bca8-3b15b6cb5cfe"
-	attributes['remark']="The chords were taken from the original song which is in the C scale"
+	attributes['completion']='5'
+	attributes['uuid']='d4c79db6-8aec-11e1-bca8-3b15b6cb5cfe'
+	attributes['remark']='The chords were taken from the original song which is in the C scale'
 
-	attributes['idyoutuberemark1']="הביצוע המקורי של בנזין"
-	attributes['idyoutube1']="wD0Zlwg5VOg"
-	attributes['lyricsurl']="http://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=187&wrkid=1537"
+	attributes['idyoutuberemark1']='הביצוע המקורי של בנזין'
+	attributes['idyoutube1']='wD0Zlwg5VOg'
+	attributes['lyricsurl']='http://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=187&wrkid=1537'
 %>
 % endif
 

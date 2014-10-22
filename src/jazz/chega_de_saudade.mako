@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,33 +10,33 @@
 	attributes.setDefaultVersionName('Fake')
 
 	# from the fake book
-	attributes['title']="Chega De Saudade"
+	attributes['title']='Chega De Saudade'
 	# from the fake book
-	attributes['style']="Latin/Jazz"
+	attributes['style']='Latin/Jazz'
 	# from the fake book
-	attributes['subtitle']="No More Blues"
+	attributes['subtitle']='No More Blues'
 	# from the fake book
-	attributes['composer']="Antonio Carlos Jobim"
+	attributes['composer']='Antonio Carlos Jobim'
 	# from the fake book
-	attributes['poet']="Vinicius DeMoraes, John Hendricks, Jessie Cavanaugh"
+	attributes['poet']='Vinicius DeMoraes, John Hendricks, Jessie Cavanaugh'
 	# from the fake book
-	attributes['piece']="Bossa Nova"
+	attributes['piece']='Bossa Nova'
 	# from the fake book
-	attributes['copyright']="1962 and 1967 Editora Musical Arapua, Sao Paulo, Brazil"
+	attributes['copyright']='1962 and 1967 Editora Musical Arapua, Sao Paulo, Brazil'
 	# from the fake book
-	attributes['copyrightextra']="TRO-Hollis Music, Inc., New York, controls all publication rights for the U.S.A. and Canada"
+	attributes['copyrightextra']='TRO-Hollis Music, Inc., New York, controls all publication rights for the U.S.A. and Canada'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="a8d44d0c-a26e-11df-a32b-0019d11e5a41"
-	attributes['structure']="AA'BA''"
-	attributes['location']="jfb:82"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='a8d44d0c-a26e-11df-a32b-0019d11e5a41'
+	attributes['structure']='AA\'BA\'\''
+	attributes['location']='jfb:82'
 
-	attributes['idyoutuberemark1']="The original Jobim on piano"
-	attributes['idyoutube1']="-c6Zbi3tbMg"
-	attributes['idyoutuberemark2']="And Jobim sings..."
-	attributes['idyoutube2']="UzFJwiHRwDg"
-	attributes['lyricsurl']="http://www.stlyrics.com/songs/j/janemonheit24558/chegadesaudadenomoreblues1055457.html"
+	attributes['idyoutuberemark1']='The original Jobim on piano'
+	attributes['idyoutube1']='-c6Zbi3tbMg'
+	attributes['idyoutuberemark2']='And Jobim sings...'
+	attributes['idyoutube2']='UzFJwiHRwDg'
+	attributes['lyricsurl']='http://www.stlyrics.com/songs/j/janemonheit24558/chegadesaudadenomoreblues1055457.html'
 %>
 % endif
 
@@ -54,7 +54,7 @@
 	- added youtube performances.
 	- added lyrics url.
 	TODO:
-	- there is a boy/girl part in the lyrics of which I retrained just the "boy" part. Do them both.
+	- there is a boy/girl part in the lyrics of which I retrained just the 'boy' part. Do them both.
 	- get another version of this tune.
 % endif
 

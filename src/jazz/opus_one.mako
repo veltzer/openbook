@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,30 +10,30 @@
 	attributes.setDefaultVersionName('Fake')
 
 	# from the fake book
-	attributes['title']="Opus One"
+	attributes['title']='Opus One'
 	# from the fake book
-	attributes['style']="Jazz"
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']="Sy Oliver"
+	attributes['composer']='Sy Oliver'
 	# from the fake book
-	attributes['poet']="Sy Oliver"
+	attributes['poet']='Sy Oliver'
 	# from the fake book
-	attributes['piece']="Moderate Jump Tempo"
+	attributes['piece']='Moderate Jump Tempo'
 	# from the fake book
-	attributes['copyright']="1943 (Renewed) Embassy Music Corporation, New York."
+	attributes['copyright']='1943 (Renewed) Embassy Music Corporation, New York.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="31cf66b6-11b8-11e4-bcfe-f76051fd87b1"
-	attributes['structure']="AABA"
-	attributes['structureremark']="The A's are just a little bit different"
-	attributes['location']="jfb:291"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='31cf66b6-11b8-11e4-bcfe-f76051fd87b1'
+	attributes['structure']='AABA'
+	attributes['structureremark']='The A\'s are just a little bit different'
+	attributes['location']='jfb:291'
 
-	attributes['idyoutuberemark1']="Nat King Cole swings"
-	attributes['idyoutube1']="a33vdj7zoB0"
-	attributes['idyoutuberemark2']="Tommy Dorsey's Orchestra swings"
-	attributes['idyoutube2']="rV9LhjTr5Bc"
-	attributes['lyricsurl']="http://www.songlyrics.com/the-mills-brothers/opus-one-lyrics/"
+	attributes['idyoutuberemark1']='Nat King Cole swings'
+	attributes['idyoutube1']='a33vdj7zoB0'
+	attributes['idyoutuberemark2']='Tommy Dorsey's Orchestra swings'
+	attributes['idyoutube2']='rV9LhjTr5Bc'
+	attributes['lyricsurl']='http://www.songlyrics.com/the-mills-brothers/opus-one-lyrics/'
 %>
 % endif
 

@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,33 +10,33 @@
 	attributes.addVersion('Newreal', version)
 	attributes.setDefaultVersionName('Newreal')
 
-	attributes['title']="The Way You Look Tonight"
-	attributes['style']="Jazz"
+	attributes['title']='The Way You Look Tonight'
+	attributes['style']='Jazz'
 	# from the new real book of jazz vol 1
-	attributes['composer']="Jerome Kern"
+	attributes['composer']='Jerome Kern'
 	# from the new real book of jazz vol 1
-	attributes['poet']="Dorothy Fields"
+	attributes['poet']='Dorothy Fields'
 	# from the new real book of jazz vol 1
-	attributes['piece']="Med.-Up Swing"
+	attributes['piece']='Med.-Up Swing'
 	# from the new real book of jazz vol 1
-	attributes['copyright']="1936 T B Harms Co."
+	attributes['copyright']='1936 T B Harms Co.'
 	# from the new real book of jazz vol 1
-	attributes['copyrightextra']="Copyright Renewed c/o The Welk Music Group, Santa Monica, CA 90401 Authorized Selling Agent in Japan High Note Publishing Co, Ltd, used by permission of JASRAC License #8670719. International Copyright Secured. All Right Reserved. Used By Permission."
+	attributes['copyrightextra']='Copyright Renewed c/o The Welk Music Group, Santa Monica, CA 90401 Authorized Selling Agent in Japan High Note Publishing Co, Ltd, used by permission of JASRAC License #8670719. International Copyright Secured. All Right Reserved. Used By Permission.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="30fc7894-d8f8-11e3-84a6-77203dda2123"
-	attributes['structure']="AABA"
-	attributes['structureremark']="The New Real Book marks this one as AABC but the C is too damn close to the A"
-	attributes['location']="nrbk1:395-396"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='30fc7894-d8f8-11e3-84a6-77203dda2123'
+	attributes['structure']='AABA'
+	attributes['structureremark']='The New Real Book marks this one as AABC but the C is too damn close to the A'
+	attributes['location']='nrbk1:395-396'
 
-	attributes['idyoutuberemark1']="The cannonical performance by Frank Sinatra"
-	attributes['idyoutube1']="h9ZGKALMMuc"
-	attributes['idyoutuberemark2']="Nat King Cole in a great version"
-	attributes['idyoutube2']="qLVvHtKUrdQ"
-	attributes['idyoutuberemark3']="Monk and Rollins in an instrumental version"
-	attributes['idyoutube3']="V0fPYzyB2AQ"
-	attributes['lyricsurl']="http://www.lyrics007.com/Frank%20Sinatra%20Lyrics/The%20Way%20You%20Look%20Tonight%20Lyrics.html"
+	attributes['idyoutuberemark1']='The cannonical performance by Frank Sinatra'
+	attributes['idyoutube1']='h9ZGKALMMuc'
+	attributes['idyoutuberemark2']='Nat King Cole in a great version'
+	attributes['idyoutube2']='qLVvHtKUrdQ'
+	attributes['idyoutuberemark3']='Monk and Rollins in an instrumental version'
+	attributes['idyoutube3']='V0fPYzyB2AQ'
+	attributes['lyricsurl']='http://www.lyrics007.com/Frank%20Sinatra%20Lyrics/The%20Way%20You%20Look%20Tonight%20Lyrics.html'
 %>
 % endif
 

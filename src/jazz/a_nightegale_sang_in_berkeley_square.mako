@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,18 +10,18 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="A Nightengale Sang in Berkeley Square"
-	attributes['style']="Jazz"
-	attributes['composer']="Manning Sherwin"
-	attributes['poet']="Eric Maschwitz"
-	attributes['piece']="Slowly"
-	attributes['copyright']="1951, Bourne Co. Copyright Renewed."
-	attributes['copyrightextra']="Sole Selling Agent-Shapiro, Bernstein & Co., Inc., New York, NY"
+	attributes['title']='A Nightengale Sang in Berkeley Square'
+	attributes['style']='Jazz'
+	attributes['composer']='Manning Sherwin'
+	attributes['poet']='Eric Maschwitz'
+	attributes['piece']='Slowly'
+	attributes['copyright']='1951, Bourne Co. Copyright Renewed.'
+	attributes['copyrightextra']='Sole Selling Agent-Shapiro, Bernstein & Co., Inc., New York, NY'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="f8e2cbc2-da80-11e3-a7c9-dbe4f674fe15"
-	attributes['structure']="AABBA"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='f8e2cbc2-da80-11e3-a7c9-dbe4f674fe15'
+	attributes['structure']='AABBA'
 %>
 % endif
 

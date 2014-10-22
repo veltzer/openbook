@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,17 +9,17 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Don't Get Around Much Anymore"
-	attributes['style']="Jazz"
-	attributes['composer']="Duke Ellington"
-	attributes['poet']="Bob Russell"
-	attributes['piece']="Medium Swing"
-	attributes['copyright']="1973 Herrison Music Corp. and Robbins Music"
+	attributes['title']='Don\'t Get Around Much Anymore'
+	attributes['style']='Jazz'
+	attributes['composer']='Duke Ellington'
+	attributes['poet']='Bob Russell'
+	attributes['piece']='Medium Swing'
+	attributes['copyright']='1973 Herrison Music Corp. and Robbins Music'
 
-	attributes['typesetter']="Jordan Eldredge <jordaneldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="09a63a8e-da81-11e3-b649-339a89e65802"
-	attributes['structure']="AABA"
+	attributes['typesetter']='Jordan Eldredge <jordaneldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='09a63a8e-da81-11e3-b649-339a89e65802'
+	attributes['structure']='AABA'
 %>
 % endif
 

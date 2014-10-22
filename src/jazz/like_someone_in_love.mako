@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,20 +9,20 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Like Someone In Love"
-	attributes['style']="Jazz"
-	attributes['composer']="Johnny Burke, Jimmy Van Heusen"
+	attributes['title']='Like Someone In Love'
+	attributes['style']='Jazz'
+	attributes['composer']='Johnny Burke, Jimmy Van Heusen'
 	# from the fake book
-	attributes['poet']="Johnny Burke, Jimmy Van Heusen"
+	attributes['poet']='Johnny Burke, Jimmy Van Heusen'
 	# from the fake book
-	attributes['piece']="Moderately"
+	attributes['piece']='Moderately'
 	# from the fake book
-	attributes['copyright']="1944 Bourne Co. and Dorsey Bros. Music, Inc. Division of Music Sales Corporation"
+	attributes['copyright']='1944 Bourne Co. and Dorsey Bros. Music, Inc. Division of Music Sales Corporation'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="a2084076-da7f-11e3-86db-a7e6565c22fc"
-	attributes['structure']="ABAB'"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='a2084076-da7f-11e3-86db-a7e6565c22fc'
+	attributes['structure']='ABAB\''
 %>
 % endif
 

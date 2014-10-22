@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,30 +10,30 @@
 	attributes.setDefaultVersionName('Fake')
 
 	# from the fake book
-	attributes['title']="Red Sails In The Sunset"
-	attributes['style']="Jazz"
+	attributes['title']='Red Sails In The Sunset'
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']="Hugh Williams"
+	attributes['composer']='Hugh Williams'
 	# from the fake book
-	attributes['poet']="Jimmy Kennedy"
+	attributes['poet']='Jimmy Kennedy'
 	# from the fake book
-	attributes['piece']="Slowly"
+	attributes['piece']='Slowly'
 	# from the fake book
-	attributes['copyright']="1935 The Peter Maurice Music Co. Ltd., London, England"
+	attributes['copyright']='1935 The Peter Maurice Music Co. Ltd., London, England'
 	# from the fake book
-	attributes['copyrightextra']="United Sates Copyright Renewed and Assigned to Sharpiro, Bernstein & Co., Inc."
+	attributes['copyrightextra']='United Sates Copyright Renewed and Assigned to Sharpiro, Bernstein & Co., Inc.'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="2507f6ec-da80-11e3-9bfd-ff436f70a1a7"
-	attributes['structure']="AABA"
-	attributes['location']="jfb:313"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='2507f6ec-da80-11e3-9bfd-ff436f70a1a7'
+	attributes['structure']='AABA'
+	attributes['location']='jfb:313'
 
-	attributes['idyoutuberemark1']="Nat King Cole in a classic..."
-	attributes['idyoutube1']="HLQZZoAkdig"
-	attributes['idyoutuberemark2']="The Beatles?!?"
-	attributes['idyoutube2']="b_Xg_md46Sw"
-	attributes['lyricsurl']="http://www.sing365.com/music/lyric.nsf/Red-Sails-In-the-Sunset-lyrics-Nat-King-Cole/F51AC099651BC18A48256AF1000B7499"
+	attributes['idyoutuberemark1']='Nat King Cole in a classic...'
+	attributes['idyoutube1']='HLQZZoAkdig'
+	attributes['idyoutuberemark2']='The Beatles?!?'
+	attributes['idyoutube2']='b_Xg_md46Sw'
+	attributes['lyricsurl']='http://www.sing365.com/music/lyric.nsf/Red-Sails-In-the-Sunset-lyrics-Nat-King-Cole/F51AC099651BC18A48256AF1000B7499'
 %>
 % endif
 

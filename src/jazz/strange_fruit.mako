@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,28 +10,28 @@
 	attributes.setDefaultVersionName('Fake')
 
 	# this is from the fake book
-	attributes['title']="Strang Fruit"
-	attributes['style']="Jazz"
+	attributes['title']='Strang Fruit'
+	attributes['style']='Jazz'
 	# this is from the fake book
-	attributes['composer']="Lewis Allan"
+	attributes['composer']='Lewis Allan'
 	# this is from the fake book
-	attributes['poet']="Lewis Allan"
+	attributes['poet']='Lewis Allan'
 	# this is from the fake book
-	attributes['piece']="Andante Moderato"
+	attributes['piece']='Andante Moderato'
 	# this is from the fake book
-	attributes['copyright']="1940 by Edward B. Marks Music Company. Copyright Renewed."
+	attributes['copyright']='1940 by Edward B. Marks Music Company. Copyright Renewed.'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="68679a0a-da80-11e3-8208-4fcd89557297"
-	attributes['structure']="A"
-	attributes['location']="jfb:364"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='68679a0a-da80-11e3-8208-4fcd89557297'
+	attributes['structure']='A'
+	attributes['location']='jfb:364'
 
-	attributes['idyoutuberemark1']="Nina Simon version"
-	attributes['idyoutube1']="ughAVo2ZAag"
-	attributes['idyoutuberemark2']="The famous version by Billie Holiday"
-	attributes['idyoutube2']="h4ZyuULy9zs"
-	attributes['lyricsurl']="http://www.lyricsfreak.com/b/billie+holiday/strange+fruit_20017859.html"
+	attributes['idyoutuberemark1']='Nina Simon version'
+	attributes['idyoutube1']='ughAVo2ZAag'
+	attributes['idyoutuberemark2']='The famous version by Billie Holiday'
+	attributes['idyoutube2']='h4ZyuULy9zs'
+	attributes['lyricsurl']='http://www.lyricsfreak.com/b/billie+holiday/strange+fruit_20017859.html'
 %>
 % endif
 

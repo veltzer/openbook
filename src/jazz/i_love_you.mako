@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,26 +9,26 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="I Love You"
-	attributes['style']="Jazz"
+	attributes['title']='I Love You'
+	attributes['style']='Jazz'
 	# from the real book
-	attributes['composer']="Cole Porter"
+	attributes['composer']='Cole Porter'
 	# from the internet
-	attributes['poet']="Cole Porter"
+	attributes['poet']='Cole Porter'
 	# from the real book
-	attributes['piece']="Slowly"
+	attributes['piece']='Slowly'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="b806ce6c-b405-11e1-9daf-1fdf93f5ba36"
-	attributes['structure']="AB"
-	attributes['location']="rbk1:215"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='b806ce6c-b405-11e1-9daf-1fdf93f5ba36'
+	attributes['structure']='AB'
+	attributes['location']='rbk1:215'
 
-	attributes['idyoutuberemark1']="John Coltrane in a great version"
-	attributes['idyoutube1']="MzSVV1sI57g"
-	attributes['idyoutuberemark2']="Peter Bernstein on guitar"
-	attributes['idyoutube2']="C9gT-6K-cgE"
-	attributes['lyricsurl']="http://www.lyricstime.com/cole-porter-i-love-you-lyrics.html"
+	attributes['idyoutuberemark1']='John Coltrane in a great version'
+	attributes['idyoutube1']='MzSVV1sI57g'
+	attributes['idyoutuberemark2']='Peter Bernstein on guitar'
+	attributes['idyoutube2']='C9gT-6K-cgE'
+	attributes['lyricsurl']='http://www.lyricstime.com/cole-porter-i-love-you-lyrics.html'
 %>
 % endif
 

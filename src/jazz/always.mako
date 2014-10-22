@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,27 +9,27 @@
 	attributes.addVersion('TBK', version)
 	attributes.setDefaultVersionName('TBK')
 
-	attributes['title']="Always"
-	attributes['style']="Jazz"
+	attributes['title']='Always'
+	attributes['style']='Jazz'
 	# this is from the internet
-	attributes['composer']="Irving Berlin"
+	attributes['composer']='Irving Berlin'
 	# this is from the internet
-	attributes['poet']="Irving Berlin"
-	# this is from "The Book"
-	attributes['piece']="Waltz"
+	attributes['poet']='Irving Berlin'
+	# this is from 'The Book'
+	attributes['piece']='Waltz'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="e2f7709c-da80-11e3-80dc-7f255b43b3a5"
-	attributes['structure']="AB"
-	attributes['structureremark']="The tune has an ABAC feel to it because the A and B part start off the same way"
-	attributes['location']="tbk:354"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='e2f7709c-da80-11e3-80dc-7f255b43b3a5'
+	attributes['structure']='AB'
+	attributes['structureremark']='The tune has an ABAC feel to it because the A and B part start off the same way'
+	attributes['location']='tbk:354'
 
-	attributes['idyoutuberemark1']="Frank!"
-	attributes['idyoutube1']="eLh-m1Z_feY"
-	attributes['idyoutuberemark2']="Billie!"
-	attributes['idyoutube2']="iQPdnqDAJE4"
-	attributes['lyricsurl']="http://www.metrolyrics.com/always-lyrics-irving-berlin.html"
+	attributes['idyoutuberemark1']='Frank!'
+	attributes['idyoutube1']='eLh-m1Z_feY'
+	attributes['idyoutuberemark2']='Billie!'
+	attributes['idyoutube2']='iQPdnqDAJE4'
+	attributes['lyricsurl']='http://www.metrolyrics.com/always-lyrics-irving-berlin.html'
 %>
 % endif
 

@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,25 +10,25 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="Night And Day"
-	attributes['style']="Jazz"
+	attributes['title']='Night And Day'
+	attributes['style']='Jazz'
 	# from the real book
-	attributes['composer']="Cole Porter"
+	attributes['composer']='Cole Porter'
 	# from wikipedia
-	attributes['poet']="Cole Porter"
+	attributes['poet']='Cole Porter'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="f3f8f010-3fda-11e2-ad72-a3725b0aaeaa"
-	attributes['structure']="AAB"
-	attributes['location']="kw:42,rbk1:320"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='f3f8f010-3fda-11e2-ad72-a3725b0aaeaa'
+	attributes['structure']='AAB'
+	attributes['location']='kw:42,rbk1:320'
 
-	attributes['idyoutuberemark1']="Cannonical version by Frank Sinatra"
-	attributes['idyoutube1']="mGGirB4XOmI"
-	attributes['idyoutuberemark2']="Cole Porter version"
-	attributes['idyoutube2']="5WX_fKVWX2s"
-	attributes['lyricsurl']="http://www.lyricsfreak.com/f/frank+sinatra/night+day_20055251.html"
-	attributes['wiki']="Night_and_Day_(song)"
+	attributes['idyoutuberemark1']='Cannonical version by Frank Sinatra'
+	attributes['idyoutube1']='mGGirB4XOmI'
+	attributes['idyoutuberemark2']='Cole Porter version'
+	attributes['idyoutube2']='5WX_fKVWX2s'
+	attributes['lyricsurl']='http://www.lyricsfreak.com/f/frank+sinatra/night+day_20055251.html'
+	attributes['wiki']='Night_and_Day_(song)'
 %>
 % endif
 

@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -7,18 +7,18 @@
 	attributes.addVersion('Own', version)
 	attributes.setDefaultVersionName('Own')
 
-	attributes['title']="Torcacita"
-	attributes['style']="Classical"
-	attributes['subtitle']="South American tune"
-	attributes['composer']="Folk"
-	attributes['copyright']="Public Domain"
+	attributes['title']='Torcacita'
+	attributes['style']='Classical'
+	attributes['subtitle']='South American tune'
+	attributes['composer']='Folk'
+	attributes['copyright']='Public Domain'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="29e07ac4-ba42-11e0-a95c-0019d11e5a41"
-	attributes['remark']="Taken from guitar album II by Misha Applebaum"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='29e07ac4-ba42-11e0-a95c-0019d11e5a41'
+	attributes['remark']='Taken from guitar album II by Misha Applebaum'
 
-	attributes['idyoutube1']="gVDDRvoVgQg"
+	attributes['idyoutube1']='gVDDRvoVgQg'
 %>
 % endif
 

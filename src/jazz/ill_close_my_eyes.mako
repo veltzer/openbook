@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -14,23 +14,23 @@
 	version['doLyrics']=True
 	attributes.addVersion('Real', version)
 
-	attributes['title']="I'll Close My Eyes"
-	attributes['style']="Jazz"
-	attributes['composer']="Billy Reid"
-	attributes['poet']="Buddy Kaye"
-	attributes['piece']="Medium Swing"
+	attributes['title']='I\'ll Close My Eyes'
+	attributes['style']='Jazz'
+	attributes['composer']='Billy Reid'
+	attributes['poet']='Buddy Kaye'
+	attributes['piece']='Medium Swing'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="e7277c50-a26e-11df-863c-0019d11e5a41"
-	attributes['structure']="AB"
-	attributes['structureremark']="this tunes structure could also be thought of as ABAC since the begining of the A and part B (the first 8 bars) under the AB interpretation is exactly the same."
-	attributes['location']="rbk3:130"
-	attributes['remark']="the My version is from Amit Golan"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='e7277c50-a26e-11df-863c-0019d11e5a41'
+	attributes['structure']='AB'
+	attributes['structureremark']='this tunes structure could also be thought of as ABAC since the begining of the A and part B (the first 8 bars) under the AB interpretation is exactly the same.'
+	attributes['location']='rbk3:130'
+	attributes['remark']='the My version is from Amit Golan'
 
-	attributes['idyoutube1']="7Oh-Dl-KbF0"
-	attributes['idyoutube2']="u6lXbfx1hHw"
-	attributes['lyricsurl']="http://lyricsplayground.com/alpha/songs/i/illclosemyeyes.shtml"
+	attributes['idyoutube1']='7Oh-Dl-KbF0'
+	attributes['idyoutube2']='u6lXbfx1hHw'
+	attributes['lyricsurl']='http://lyricsplayground.com/alpha/songs/i/illclosemyeyes.shtml'
 %>
 % endif
 

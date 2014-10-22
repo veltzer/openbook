@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,15 +9,15 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Heart And Soul"
-	attributes['style']="Jazz"
-	attributes['composer']="Frank Losser, Hoagy Carmichael"
-	attributes['poet']="Frank Losser, Hoagy Carmichael"
+	attributes['title']='Heart And Soul'
+	attributes['style']='Jazz'
+	attributes['composer']='Frank Losser, Hoagy Carmichael'
+	attributes['poet']='Frank Losser, Hoagy Carmichael'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="2c3e3512-da7f-11e3-9149-3707f62022e6"
-	attributes['structure']="AABA"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='2c3e3512-da7f-11e3-9149-3707f62022e6'
+	attributes['structure']='AABA'
 %>
 % endif
 

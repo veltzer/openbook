@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,22 +9,22 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="Stella By Starlight"
-	attributes['style']="Jazz"
-	attributes['composer']="Victor Young"
-	attributes['poet']="Ned Washington"
-	attributes['piece']="Slowly, with Expression"
+	attributes['title']='Stella By Starlight'
+	attributes['style']='Jazz'
+	attributes['composer']='Victor Young'
+	attributes['poet']='Ned Washington'
+	attributes['piece']='Slowly, with Expression'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="afea10ce-edc0-11e0-9cc4-0019d11e5a41"
-	attributes['structure']="AB"
-	attributes['location']="rbk1:408"
-	attributes['remark']="there are a couple of different lyric versions for this song"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='afea10ce-edc0-11e0-9cc4-0019d11e5a41'
+	attributes['structure']='AB'
+	attributes['location']='rbk1:408'
+	attributes['remark']='there are a couple of different lyric versions for this song'
 
-	attributes['idyoutube1']="Iqs3w1Q5sto"
-	attributes['idyoutube2']="IbzxJuvbH08"
-	attributes['lyricsurl']="http://www.lyrics007.com/Ella%20Fitzgerald%20Lyrics/Stella%20By%20Starlight%20Lyrics.html"
+	attributes['idyoutube1']='Iqs3w1Q5sto'
+	attributes['idyoutube2']='IbzxJuvbH08'
+	attributes['lyricsurl']='http://www.lyrics007.com/Ella%20Fitzgerald%20Lyrics/Stella%20By%20Starlight%20Lyrics.html'
 %>
 % endif
 

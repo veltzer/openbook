@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,33 +10,33 @@
 	attributes.setDefaultVersionName('Stan')
 
 	# from the standards real book
-	attributes['title']="The More I See You"
-	attributes['style']="Jazz"
+	attributes['title']='The More I See You'
+	attributes['style']='Jazz'
 	# from the standards real book
-	attributes['subtitle']="From 'Diamond Horseshoe'"
+	attributes['subtitle']='From \'Diamond Horseshoe\''
 	# from the standards real book
-	attributes['composer']="Harry Warren"
+	attributes['composer']='Harry Warren'
 	# from the standards real book
-	attributes['poet']="Mack Gordon"
+	attributes['poet']='Mack Gordon'
 	# from the standards real book
-	#attributes['piece']="Freely"
+	#attributes['piece']='Freely'
 	# from the standards real book (middle of tune)
-	attributes['piece']="Med. Ballad or Medium"
+	attributes['piece']='Med. Ballad or Medium'
 	# from the standards real book
-	attributes['copyright']="1945 WB Music Corp. (Renewed) All Rights Reserved. Used by Permission"
+	attributes['copyright']='1945 WB Music Corp. (Renewed) All Rights Reserved. Used by Permission'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="0"
-	attributes['uuid']="ca5eae8e-ee84-11e3-a0d7-d7aaa2e1aa93"
-	attributes['structure']="ABAC"
-	attributes['structureremark']="The tune in the standards real book is written as ABCD but A and C are so close that it's really ABAC"
-	attributes['location']="tsrbk:309-310"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='0'
+	attributes['uuid']='ca5eae8e-ee84-11e3-a0d7-d7aaa2e1aa93'
+	attributes['structure']='ABAC'
+	attributes['structureremark']='The tune in the standards real book is written as ABCD but A and C are so close that it's really ABAC'
+	attributes['location']='tsrbk:309-310'
 
-	attributes['idyoutuberemark1']="Hank Mobley in a great and soulful version"
-	attributes['idyoutube1']="ViniUjqqVZI"
-	attributes['idyoutuberemark2']="Classic vocal version of Nat King Cole"
-	attributes['idyoutube2']="XASZpJcgVLI"
-	attributes['lyricsurl']="http://www.metrolyrics.com/the-more-i-see-you-lyrics-nat-king-cole.html"
+	attributes['idyoutuberemark1']='Hank Mobley in a great and soulful version'
+	attributes['idyoutube1']='ViniUjqqVZI'
+	attributes['idyoutuberemark2']='Classic vocal version of Nat King Cole'
+	attributes['idyoutube2']='XASZpJcgVLI'
+	attributes['lyricsurl']='http://www.metrolyrics.com/the-more-i-see-you-lyrics-nat-king-cole.html'
 %>
 % endif
 

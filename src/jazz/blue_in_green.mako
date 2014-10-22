@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,27 +9,27 @@
 	attributes.setDefaultVersionName('Fake')
 
 	# from the fake book
-	attributes['title']="Blue In Green"
-	attributes['style']="Jazz"
+	attributes['title']='Blue In Green'
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']="Miles Davis, Bill Evans"
+	attributes['composer']='Miles Davis, Bill Evans'
 	# My own
-	attributes['piece']="Slowly"
+	attributes['piece']='Slowly'
 	# from the fake book
-	attributes['copyright']="1959 JAZZ HORN MUSIC CORP. & WARNER-TAMERLANE PUBLISHING CORP."
+	attributes['copyright']='1959 JAZZ HORN MUSIC CORP. & WARNER-TAMERLANE PUBLISHING CORP.'
 	# from the fake book
-	attributes['copyrightextra']="WARNER-TAMERLANE PUBLISHING CORP. administers on behalf of itself and JAZZ HORN MUSIC CORP."
+	attributes['copyrightextra']='WARNER-TAMERLANE PUBLISHING CORP. administers on behalf of itself and JAZZ HORN MUSIC CORP.'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="c73decf2-e30c-11e3-b12b-dbe41a94d84d"
-	attributes['structure']="A"
-	attributes['location']="jfb:64"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='c73decf2-e30c-11e3-b12b-dbe41a94d84d'
+	attributes['structure']='A'
+	attributes['location']='jfb:64'
 
-	attributes['idyoutuberemark1']="Original from Kind of Blue"
-	attributes['idyoutube1']="PoPL7BExSQU"
-	attributes['idyoutuberemark2']="Bill Evans in a piano version"
-	attributes['idyoutube2']="mW_7gRH7ASE"
+	attributes['idyoutuberemark1']='Original from Kind of Blue'
+	attributes['idyoutube1']='PoPL7BExSQU'
+	attributes['idyoutuberemark2']='Bill Evans in a piano version'
+	attributes['idyoutube2']='mW_7gRH7ASE'
 %>
 % endif
 

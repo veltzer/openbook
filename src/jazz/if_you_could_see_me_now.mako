@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -10,26 +10,26 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="If You Could See Me Now"
-	attributes['style']="Jazz"
+	attributes['title']='If You Could See Me Now'
+	attributes['style']='Jazz'
 	# from the real book
-	attributes['composer']="Tadd Dameron"
+	attributes['composer']='Tadd Dameron'
 	# from wikipedia
-	attributes['poet']="Carl Sigman"
+	attributes['poet']='Carl Sigman'
 	# from the real book
-	attributes['piece']="Ballad"
+	attributes['piece']='Ballad'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="e259226a-11ac-11e1-90cb-0019d11e5a41"
-	attributes['structure']="AABA"
-	attributes['location']="rbk2:157,file:if_you_could_see_me_now_wikifonia.pdf"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='e259226a-11ac-11e1-90cb-0019d11e5a41'
+	attributes['structure']='AABA'
+	attributes['location']='rbk2:157,file:if_you_could_see_me_now_wikifonia.pdf'
 
-	attributes['idyoutuberemark1']="Sarah Vaughan"
-	attributes['idyoutube1']="ySI5ZPhf5Lw"
-	attributes['idyoutuberemark2']="Bill Evans (amazing version)"
-	attributes['idyoutube2']="NXUxR4wunaE"
-	attributes['lyricsurl']="http://www.metrolyrics.com/if-you-could-see-me-now-lyrics-natalie-cole.html"
+	attributes['idyoutuberemark1']='Sarah Vaughan'
+	attributes['idyoutube1']='ySI5ZPhf5Lw'
+	attributes['idyoutuberemark2']='Bill Evans (amazing version)'
+	attributes['idyoutube2']='NXUxR4wunaE'
+	attributes['lyricsurl']='http://www.metrolyrics.com/if-you-could-see-me-now-lyrics-natalie-cole.html'
 
 %>
 % endif

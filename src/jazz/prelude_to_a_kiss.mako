@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,15 +9,15 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']="Prelude To A Kiss"
-	attributes['style']="Jazz"
-	attributes['composer']="Duke Ellington"
-	attributes['poet']="Irving Gordon and Irving Mills"
-	attributes['piece']="Slowly"
+	attributes['title']='Prelude To A Kiss'
+	attributes['style']='Jazz'
+	attributes['composer']='Duke Ellington'
+	attributes['poet']='Irving Gordon and Irving Mills'
+	attributes['piece']='Slowly'
 
-	attributes['typesetter']="Jordan Eldredge <JordanEldredge@gmail.com>"
-	attributes['completion']="5"
-	attributes['uuid']="1a21cdfc-da80-11e3-8e64-13828462b6b5"
+	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['completion']='5'
+	attributes['uuid']='1a21cdfc-da80-11e3-8e64-13828462b6b5'
 %>
 % endif
 

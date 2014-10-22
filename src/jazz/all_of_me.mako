@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -9,31 +9,31 @@
 	attributes.addVersion('Real', version)
 	attributes.setDefaultVersionName('Real')
 
-	attributes['title']="All Of Me"
-	attributes['style']="Jazz"
-	attributes['composer']="Seymour Simons, Gerald Marks"
-	attributes['poet']="Seymour Simons, Gerald Marks"
+	attributes['title']='All Of Me'
+	attributes['style']='Jazz'
+	attributes['composer']='Seymour Simons, Gerald Marks'
+	attributes['poet']='Seymour Simons, Gerald Marks'
 	# this if from the real book
-	attributes['piece']="Mod. Swing"
+	attributes['piece']='Mod. Swing'
 	# this is from the fake book
-	#attributes['piece']="Moderately"
+	#attributes['piece']='Moderately'
 	# this is from the fake book
-	attributes['copyright']="1931 Bourne Co. Copyright Renewed"
+	attributes['copyright']='1931 Bourne Co. Copyright Renewed'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="6dd0233c-03b8-11e1-b5a9-0019d11e5a41"
-	attributes['structure']="AB"
-	attributes['structureremark']="the structure of this tune could also be interpreted as ABAC since the 8 first bars of A and B are the same."
-	attributes['location']="rbk1:16,jfb:39"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='6dd0233c-03b8-11e1-b5a9-0019d11e5a41'
+	attributes['structure']='AB'
+	attributes['structureremark']='the structure of this tune could also be interpreted as ABAC since the 8 first bars of A and B are the same.'
+	attributes['location']='rbk1:16,jfb:39'
 
-	attributes['idyoutuberemark1']="Louis Armstrong with amazing rythm"
-	attributes['idyoutube1']="wFzxo-XI8As"
-	attributes['idyoutuberemark2']="Ella Firtzerald - amazing"
-	attributes['idyoutube2']="Mx5b4AFVaT8"
-	attributes['idyoutuberemark3']="Oscar - amazing version"
-	attributes['idyoutube3']="aNLvaBCFHdE"
-	attributes['lyricsurl']="http://www.lyrics007.com/Frank%20Sinatra%20Lyrics/All%20Of%20Me%20Lyrics.html"
+	attributes['idyoutuberemark1']='Louis Armstrong with amazing rythm'
+	attributes['idyoutube1']='wFzxo-XI8As'
+	attributes['idyoutuberemark2']='Ella Firtzerald - amazing'
+	attributes['idyoutube2']='Mx5b4AFVaT8'
+	attributes['idyoutuberemark3']='Oscar - amazing version'
+	attributes['idyoutube3']='aNLvaBCFHdE'
+	attributes['lyricsurl']='http://www.lyrics007.com/Frank%20Sinatra%20Lyrics/All%20Of%20Me%20Lyrics.html'
 %>
 % endif
 

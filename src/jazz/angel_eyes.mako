@@ -1,4 +1,4 @@
-<%page args="part"/>
+<%page args='part'/>
 % if part=='Vars':
 <%
 	import attr
@@ -11,28 +11,28 @@
 	attributes.setDefaultVersionName('Fake')
 
 	# from the fake book
-	attributes['title']="Angel Eyes"
-	attributes['style']="Jazz"
+	attributes['title']='Angel Eyes'
+	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']="Matt Dennis"
+	attributes['composer']='Matt Dennis'
 	# from the fake book
-	attributes['poet']="Earl Brent"
+	attributes['poet']='Earl Brent'
 	# from the fake book
-	attributes['piece']="Slow Blues"
+	attributes['piece']='Slow Blues'
 	# from the fake book
-	attributes['copyright']="1946 (Renewed 1973) Dorsey Brothers Music"
+	attributes['copyright']='1946 (Renewed 1973) Dorsey Brothers Music'
 
-	attributes['typesetter']="Mark Veltzer <mark@veltzer.net>"
-	attributes['completion']="5"
-	attributes['uuid']="0a43bee4-e044-11e3-9617-b76a2faa3d0b"
-	attributes['structure']="AABA"
-	attributes['location']="jfb:45"
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['completion']='5'
+	attributes['uuid']='0a43bee4-e044-11e3-9617-b76a2faa3d0b'
+	attributes['structure']='AABA'
+	attributes['location']='jfb:45'
 
-	attributes['idyoutuberemark1']="Chet Baker in a very good version"
-	attributes['idyoutube1']="shuy1hpUGvQ"
-	attributes['idyoutuberemark2']="Stings version (I like this one...)"
-	attributes['idyoutube2']="QS1MgqJ7B3Y"
-	attributes['lyricsurl']="http://www.metrolyrics.com/angel-eyes-lyrics-ella-fitzgerald.html"
+	attributes['idyoutuberemark1']='Chet Baker in a very good version'
+	attributes['idyoutube1']='shuy1hpUGvQ'
+	attributes['idyoutuberemark2']='Stings version (I like this one...)'
+	attributes['idyoutube2']='QS1MgqJ7B3Y'
+	attributes['lyricsurl']='http://www.metrolyrics.com/angel-eyes-lyrics-ella-fitzgerald.html'
 %>
 % endif
 
