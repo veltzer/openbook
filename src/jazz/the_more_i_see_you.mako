@@ -29,7 +29,7 @@
 	attributes['completion']='0'
 	attributes['uuid']='ca5eae8e-ee84-11e3-a0d7-d7aaa2e1aa93'
 	attributes['structure']='ABAC'
-	attributes['structureremark']='The tune in the standards real book is written as ABCD but A and C are so close that it's really ABAC'
+	attributes['structureremark']='The tune in the standards real book is written as ABCD but A and C are so close that it\'s really ABAC'
 	attributes['location']='tsrbk:309-310'
 
 	attributes['idyoutuberemark1']='Hank Mobley in a great and soulful version'
