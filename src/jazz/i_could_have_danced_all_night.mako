@@ -11,7 +11,7 @@
 
 	attributes['title']='I Could Have Danced All Night'
 	attributes['style']='Jazz'
-	attributes['subtitle']='From 'My Fair Lady''
+	attributes['subtitle']='From \'My Fair Lady\''
 	# from the fake book
 	attributes['composer']='Frederick Loewe'
 	# from the fake book
