@@ -1,5 +1,7 @@
 Now:
 ====
+- all the checks should be done in python.
+	translate them all to python.
 - if let say I have a fake book tune and I know it's location
 	the location should NOT be in 'attribute['location']' but
 	rather in the version so I could associate the external pdf
