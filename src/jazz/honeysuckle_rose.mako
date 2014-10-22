@@ -15,7 +15,7 @@
 	attributes['poet']='Andy Razaf'
 	attributes['piece']='Medium, with a lift'
 	attributes['copyright']='1929 Santly Bros., Inc.'
-	attributes['copyrightextra']='Copyright Renewed, Waller's Interet controller by Chappell & Co., Inc. (Interson Music, Publisher), Razaf's interest controlled by Razaf Music Co., co/o The Songwriters Guild'
+	attributes['copyrightextra']='Copyright Renewed, Waller\'s Interet controller by Chappell & Co., Inc. (Interson Music, Publisher), Razaf\'s interest controlled by Razaf Music Co., co/o The Songwriters Guild'
 
 	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
 	attributes['completion']='5'

@@ -31,7 +31,7 @@
 
 	attributes['idyoutuberemark1']='Nat King Cole swings'
 	attributes['idyoutube1']='a33vdj7zoB0'
-	attributes['idyoutuberemark2']='Tommy Dorsey's Orchestra swings'
+	attributes['idyoutuberemark2']='Tommy Dorsey\'s Orchestra swings'
 	attributes['idyoutube2']='rV9LhjTr5Bc'
 	attributes['lyricsurl']='http://www.songlyrics.com/the-mills-brothers/opus-one-lyrics/'
 %>

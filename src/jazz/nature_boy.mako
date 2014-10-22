@@ -25,7 +25,7 @@
 	attributes['completion']='5'
 	attributes['uuid']='13d57a4a-a26f-11df-8711-0019d11e5a41'
 	attributes['structure']='AB'
-	attributes['structureremark']='this tunes structure can also be AA' or maybe ABAC since the A and the part B are VERY similar.'
+	attributes['structureremark']='this tunes structure can also be AA\' or maybe ABAC since the A and the part B are VERY similar.'
 	attributes['location']='rbk2:260,nrbk1:231'
 	attributes['remark']='7th bar of letters A and B were originally 2 bars each. Melody is straight eights, though rather freely interpreted rhythmically.'
 
