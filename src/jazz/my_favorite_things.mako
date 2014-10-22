@@ -13,7 +13,7 @@
 	attributes['title']='My Favorite Things'
 	attributes['style']='Jazz'
 	# this is from the fake book
-	attributes['subtitle']='From 'The Sound Of Music''
+	attributes['subtitle']='From \'The Sound Of Music\''
 	# this is from the fake book
 	attributes['composer']='Richard Rodgers'
 	# this is from the fake book
