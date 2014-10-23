@@ -21,7 +21,7 @@ packs=[
 	'python-tweepy', # this is for tweeting new releases
 	'python-tweepy-doc', # this is for tweeting new releases
 	'python-facebook', # this is for facebooking releases
-	'python-simplejson', # this make facebook work better
+	'python-simplejson', # this makes facebook work better
 	'texi2html', # needed to install lilypond from source
 	'guile-2.0-dev', # needed to install lilypond from source
 	'lilypond', # this is the main tool we use
