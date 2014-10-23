@@ -2,43 +2,43 @@
 # PARAMETERS #
 ##############
 # should we show commands executed ?
-DO_MKDBG?=0
+DO_MKDBG:=0
 # should we depend on the date of the makefile itself ?
-DO_ALL_DEP?=1
+DO_ALL_DEP:=1
 # should we depend on the wrappers scripts dates ?
-DO_WRAPDEPS?=1
+DO_WRAPDEPS:=1
 # should we depend on the common include file ?
-DO_INCDEPS?=1
+DO_INCDEPS:=1
 # should we make the ly files and use them?
-DO_LY?=0
+DO_LY:=0
 # should we make lilypond dependency files and use them?
-DO_LYD?=0
+DO_LYD:=0
 # should we make mako dependency files ?
-DO_MAKO_DEPS?=0
+DO_MAKO_DEPS:=0
 # should we make pdfs ?
-DO_PDF?=0
+DO_PDF:=0
 # should we make images ?
-DO_PNG?=0
+DO_PNG:=0
 # should we make postscript ?
-DO_PS?=0
+DO_PS:=0
 # should we make midi ?
-DO_MIDI?=0
+DO_MIDI:=0
 # should we make stamp files ?
-DO_STAMP?=0
+DO_STAMP:=0
 # should we make .wav files ? (don't really want this):
-DO_WAV?=0
+DO_WAV:=0
 # should we make mp3 ?
-DO_MP3?=0
+DO_MP3:=0
 # should we make ogg ?
-DO_OGG?=0
+DO_OGG:=0
 # should we do the full books ?
-DO_BOOKS_PDF?=1
+DO_BOOKS_PDF:=1
 # should we reduce the size of the pdf books?
-DO_PDFRED_BOOKS?=1
+DO_PDFRED_BOOKS:=1
 # should we reduce the size of the pdf individual songs?
-DO_PDFRED_PIECES?=1
+DO_PDFRED_PIECES:=1
 # should we stop on lilypond output?
-DO_STOP_OUTPUT?=1
+DO_STOP_OUTPUT:=1
 
 #############
 # CONSTANTS #
