@@ -6,7 +6,7 @@ good meta data by tune authors
 '''
 
 import os.path # for join, isfile
-import subprocess # for check_call
+import subprocess # for check_call, DEVNULL
 import shutil # for copy
 
 order=[
@@ -240,5 +240,4 @@ def cut_pdf(source_pdf, pg_from, pg_to, output_pdf):
 		source_pdf,
 	]
 	#print('going to run', args)
-	f=open('/dev/null', 'w')
-	subprocess.check_call(args, stdout=f, stderr=f)
+	subprocess.check_call(args, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
