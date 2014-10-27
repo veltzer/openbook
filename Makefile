@@ -381,21 +381,21 @@ $(OB_OUT_PDF) $(OB_OUT_PS): $(OB_OUT_LY) $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(Q)$(LILYPOND_WRAPPER) $(OB_OUT_PS) $(OB_OUT_PDF) $(OB_OUT_BASE) $(OB_OUT_LY) $(DO_PDFRED_BOOKS) $(DO_STOP_OUTPUT)
 $(OB_OUT_LY): $(OB_OUT_FILES) $(MAKO_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)-mkdir -p $(dir $@)
+	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKO_WRAPPER) $(OB_OUT_LY) "$(OB_OUT_PATTERN)" $(CONST_BOOK) $(CONST_DONTCUT) 0
 $(IL_OUT_PDF) $(IL_OUT_PS): $(IL_OUT_LY) $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)$(LILYPOND_WRAPPER) $(IL_OUT_PS) $(IL_OUT_PDF) $(IL_OUT_BASE) $(IL_OUT_LY) $(DO_PDFRED_BOOKS) $(DO_STOP_OUTPUT)
 $(IL_OUT_LY): $(IL_OUT_FILES) $(MAKO_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)-mkdir -p $(dir $@)
+	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKO_WRAPPER) $(IL_OUT_LY) "$(IL_OUT_PATTERN)" $(CONST_BOOK) $(CONST_DONTCUT) 0
 $(RK_OUT_PDF) $(RK_OUT_PS): $(RK_OUT_LY) $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)$(LILYPOND_WRAPPER) $(RK_OUT_PS) $(RK_OUT_PDF) $(RK_OUT_BASE) $(RK_OUT_LY) $(DO_PDFRED_BOOKS) $(DO_STOP_OUTPUT)
 $(RK_OUT_LY): $(RK_OUT_FILES) $(MAKO_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)-mkdir -p $(dir $@)
+	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKO_WRAPPER) $(RK_OUT_LY) "$(RK_OUT_PATTERN)" $(CONST_BOOK) $(CONST_DONTCUT) 0
 
 .PHONY: install
