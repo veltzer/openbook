@@ -1,5 +1,7 @@
 Now:
 ====
+- move to a new ubuntu_install.py script which installs my ppa
+	and templar and all.
 - all the checks should be done in python.
 	translate them all to python.
 - if let say I have a fake book tune and I know it's location
