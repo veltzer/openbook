@@ -213,12 +213,15 @@ PROJECT:=$(notdir $(CURDIR))
 #########
 .PHONY: all
 all: $(ALL)
+	$(info doing [$@])
 
 .PHONY: stamp
 stamp: $(FILES_STAMP)
+	$(info doing [$@])
 
 .PHONY: ly
 ly: $(FILES_LY)
+	$(info doing [$@])
 
 .PHONY: debug
 debug:
@@ -262,17 +265,21 @@ debug:
 
 .PHONY: todo
 todo:
+	$(info doing [$@])
 	$(Q)-grep TODO $(FILES_LY)
 
 .PHONY: show_uncompleted
 show_uncompleted:
+	$(info doing [$@])
 	$(Q)grep completion src/jazz/* | grep -v 5
 
 .PHONY: clean_deps
 clean_deps:
+	$(info doing [$@])
 	$(Q)rm -f $(FILES_LYD)
 .PHONY: clean_all_png
 clean_all_png:
+	$(info doing [$@])
 	$(Q)-find $(SOURCE_DIR) -name "*.png" -exec rm -f {} \;
 
 # cleaning using git. Watch out! always add files or they will be erased...
