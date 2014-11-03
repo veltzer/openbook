@@ -5,7 +5,7 @@ run any command line and do not emit it's standard error or output unless there 
 or there was an error.
 
 Notice that we run the commands via a shell so that we will be able to do the following:
-this_script.py "ls -l 2> /dev/null"
+this_script.py 'ls -l 2> /dev/null'
 In this case we will have on argument and we MUST run it to preserve the intention of the user.
 if on the other hand we are run this way:
 this_script.py ls -l
@@ -52,8 +52,8 @@ run_no_error(sys.argv[1:])
 
 '''
 This version is intersting but alas wrong. If you pass a command that generates errors
-and fails the errors will not be printed out. Example: this_script.py "ls nonexistant"
-This will succeed: this_script.py "ls nonexistant; exit 0"
+and fails the errors will not be printed out. Example: this_script.py 'ls nonexistant'
+This will succeed: this_script.py 'ls nonexistant; exit 0'
 '''
 
 '''
