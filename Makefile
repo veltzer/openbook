@@ -298,24 +298,24 @@ clean:
 .PHONY: check_ws
 check_ws:
 	$(info doing [$@])
-	$(Q)scripts/wrapper_ok.py grep -e "[[:space:]]$$" $(FILES_MAKO)
+	$(Q)wrapper_ok grep -e "[[:space:]]$$" $(FILES_MAKO)
 .PHONY: check_naked_mymark
 check_naked_mymark:
 	$(info doing [$@])
-	$(Q)scripts/wrapper_ok.py grep "\myMark" $(FILES_MAKO) | scripts/wrapper_ok.py grep -v \"
+	$(Q)grep "\myMark" $(FILES_MAKO) | wrapper_ok grep -v \"
 .PHONY: check_and
 check_and:
 	$(info doing [$@])
-	$(Q)scripts/wrapper_ok.py grep "composer=\".* and .*\"" $(FILES_MAKO)
-	$(Q)scripts/wrapper_ok.py grep "poet=\".* and .*\"" $(FILES_MAKO)
+	$(Q)wrapper_ok grep "composer=\".* and .*\"" $(FILES_MAKO)
+	$(Q)wrapper_ok grep "poet=\".* and .*\"" $(FILES_MAKO)
 .PHONY: check_mark
 check_mark:
 	$(info doing [$@])
-	$(Q)scripts/wrapper_ok.py grep --files-without-match "\\\\myMark" $(FILES_COMPLETED_JAZZ)
+	$(Q)wrapper_ok grep --files-without-match "\\\\myMark" $(FILES_COMPLETED_JAZZ)
 .PHONY: check_veltzer_https
 check_veltzer_https:
 	$(info doing [$@])
-	$(Q)scripts/wrapper_ok.py git grep "http:\/\/veltzer.net"
+	$(Q)wrapper_ok git grep "http:\/\/veltzer.net"
 .PHONY: check_python
 check_python:
 	$(info doing [$@])
