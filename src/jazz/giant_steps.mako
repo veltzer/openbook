@@ -76,7 +76,7 @@
 % endif
 
 % if part=='VoiceReal':
-\relative {
+{
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Prestissimo" 4 = 240
 	\time 4/4

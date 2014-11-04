@@ -18,7 +18,7 @@
 % endif
 
 % if part=='VoiceUnknown':
-\relative {
+{
 	\key c \major
 	\time 3/4
 

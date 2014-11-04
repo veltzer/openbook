@@ -86,7 +86,7 @@
 % endif
 
 % if part=='VoiceTBK':
-\relative {
+{
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante" 4 = 88
 	\time 3/4

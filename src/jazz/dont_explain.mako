@@ -90,7 +90,7 @@
 % endif
 
 % if part=='VoiceFake':
-\relative {
+{
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Adagio" 4 = 72
 	\time 4/4

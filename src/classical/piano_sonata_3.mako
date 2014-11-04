@@ -30,7 +30,7 @@
 % endif
 
 % if part=='VoiceEpdf0':
-\relative {
+{
 	\key c \major
 	\time 4/4
 	\startTune

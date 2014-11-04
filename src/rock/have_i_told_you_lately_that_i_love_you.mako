@@ -47,7 +47,7 @@
 % endif
 
 % if part=='VoiceMy':
-\relative {
+{
 	a
 }
 % endif

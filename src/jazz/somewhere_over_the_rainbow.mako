@@ -113,7 +113,7 @@
 % endif
 
 % if part=='VoiceCcb':
-\relative {
+{
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante" 4 = 80
 	\time 4/4
@@ -216,7 +216,7 @@
 % endif
 
 % if part=='VoiceWikifonia':
-\relative {
+{
 	\time 4/4
 	\key ees \major
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/

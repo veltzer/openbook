@@ -62,7 +62,7 @@
 % endif
 
 % if part=='VoiceMy':
-\relative {
+{
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 112
 	\time 6/8

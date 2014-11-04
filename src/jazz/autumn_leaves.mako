@@ -92,7 +92,7 @@
 % endif
 
 % if part=='VoiceReal':
-\relative {
+{
 	\time 4/4
 	\key e \minor
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -184,7 +184,7 @@
 % endif
 
 % if part=='VoiceFake':
-\relative {
+{
 	\time 4/4
 	\key e \minor
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/

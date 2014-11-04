@@ -92,7 +92,7 @@
 % endif
 
 % if part=='VoiceFake':
-\relative {
+{
 	\time 4/4
 	\key g \major
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/

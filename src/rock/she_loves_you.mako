@@ -62,7 +62,7 @@
 % endif
 
 % if part=='VoiceEpdf0':
-\relative {
+{
 	\time 4/4
 	\key f \major
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
