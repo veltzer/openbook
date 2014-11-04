@@ -100,7 +100,7 @@
 % endif
 
 % if part=='VoiceReal':
-\relative {
+{
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 108
 	\key c \major

@@ -55,7 +55,7 @@
 % endif
 
 % if part=='VoiceAebersold':
-\relative {
+{
 	\key c \major
 	\time 4/4
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/

@@ -78,7 +78,7 @@
 % endif
 
 % if part=='VoiceMy':
-\relative {
+{
 	\time 3/4
 	\key f \major
 	\clef treble

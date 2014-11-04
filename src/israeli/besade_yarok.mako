@@ -52,7 +52,7 @@
 % endif
 
 % if part=='VoiceMy':
-\relative {
+{
 	\time 4/4
 	\key f \major
 	\partial 4 a'8 c |
