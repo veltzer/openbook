@@ -109,8 +109,8 @@
 	\key f \minor
 
 	%% Intro
-	c1~ | c2 \times 2/3 { c4 des c } | c4. bes8 bes2~ | bes \times 2/3 { bes4 aes c } |
-	c4. f,8 f2 | g \times 2/3 { g4 ees' bes } | c1~ | c |
+	c1~ | c2 \tuplet 3/2 { c4 des c } | c4. bes8 bes2~ | bes \tuplet 3/2 { bes4 aes c } |
+	c4. f,8 f2 | g \tuplet 3/2 { g4 ees' bes } | c1~ | c |
 
 	%% Verse
 }

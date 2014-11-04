@@ -1,4 +1,4 @@
-#!/usr/bin/python3.4
+#!/usr/bin/python3
 
 '''
 wrapper to run lilypond.
@@ -6,7 +6,7 @@ run lilypond to produce the book
 lilypond --ps --pdf --output=$(OUT_BASE) $(OUT_LY)
 '''
 
-import sys # for argv
+import sys # for argv, exit, stderr
 import os # for chmod
 import subprocess # for Popen
 import os.path # for isfile
@@ -21,23 +21,30 @@ import tempfile # for NamedTemporaryFile
 # there is an error (and subprocess.check_output does not do this)
 def system_check_output(args):
 	if p_debug:
-		print('running:', args)
+		print('{0}: running [{1}]'.format(sys.argv[0], args), file=sys.stderr)
 	pr=subprocess.Popen(args,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
 	(output,errout)=pr.communicate()
 	output=output.decode()
 	errout=errout.decode()
 	if p_debug:
-		print('stdout is',output)
-		print('stderr is',errout)
-		print(pr.returncode)
+		print('{0}: stdout is'.format(sys.argv[0]), file=sys.stderr)
+		print(output, file=sys.stderr)
+		print('{0}: stderr is'.format(sys.argv[0]), file=sys.stderr)
+		print(errout, file=sys.stderr)
+		print('{0}: return code is [{1}]'.format(sys.argv[0], pr.returncode), file=sys.stderr)
 	status=pr.returncode
 	if status or (p_stop_on_output and (output!='' or errout!='')):
-		print('stdout is',output)
-		print('stderr is',errout)
-		raise ValueError('error in executing',args)
+		print('{0}: stdout is'.format(sys.argv[0]), file=sys.stderr)
+		print(output, file=sys.stderr)
+		print('{0}: stderr is'.format(sys.argv[0]), file=sys.stderr)
+		print(errout, file=sys.stderr)
+		print('{0}: error in executing {1}'.format(sys.argv[0], args), file=sys.stderr)
+		sys.exit(1)
 	if p_show_output:
-		print('stdout is',output)
-		print('stderr is',errout)
+		print('{0}: stdout is'.format(sys.argv[0]), file=sys.stderr)
+		print(output, file=sys.stderr)
+		print('{0}: stderr is'.format(sys.argv[0]), file=sys.stderr)
+		print(errout, file=sys.stderr)
 
 # remove the target files, do nothing if they are not there
 def remove_outputs_if_exists():
@@ -73,7 +80,8 @@ p_loglevel='ERROR'
 check_version.check_version()
 
 if len(sys.argv)!=7:
-	raise ValueError('usage: [ps] [pdf] [pdf without suffix] [lilypond input] [reducepdf] [stoponoutput]')
+	print('{0}: usage: [ps] [pdf] [pdf without suffix] [lilypond input] [reducepdf] [stoponoutput]'.format(sys.argv[0]))
+	sys.exit(1)
 
 p_ps=sys.argv[1]
 p_pdf=sys.argv[2]
@@ -83,7 +91,7 @@ p_do_pdfred=int(sys.argv[5])
 p_stop_on_output=bool(int(sys.argv[6]))
 
 if p_debug:
-	print('arguments are',sys.argv)
+	print('{0}: arguments are [{1}]'.format(sys.argv[0], sys.argv), file=sys.stderr)
 
 remove_outputs_if_exists()
 
@@ -108,7 +116,8 @@ try:
 		os.chmod(p_pdf,0o0444)
 except Exception as e:
 	remove_outputs_if_exists()
-	raise e
+	print('{0}: exiting because of errors'.format(sys.argv[0]), file=sys.stderr)
+	sys.exit(1)
 
 # do pdf reduction
 if p_do_pdfred:

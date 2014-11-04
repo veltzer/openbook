@@ -105,12 +105,12 @@
 
 	%% part "B"
 	g g g2~ | g4 a bes c | d2. c4 | bes4 g2 f!4 |
-	g g g2~ | g4 a bes c | d d d2~ | d4 d \times 2/3 { d d d } |
+	g g g2~ | g4 a bes c | d d d2~ | d4 d \tuplet 3/2 { d d d } |
 	d2. d4 | e c d4. b8 | a4 b2.~ | b4 b d c |
-	b b2.~ | b4 r \times 2/3 { b a gis } | b1~ | b^\markup {D.C. al Coda} |
+	b b2.~ | b4 r \tuplet 3/2 { b a gis } | b1~ | b^\markup {D.C. al Coda} |
 
 	%% part "Coda"
-	a4. a8 a2~ | a4 a \times 2/3 { a b c } | d d2.~ | d4 r e4. d8 |
+	a4. a8 a2~ | a4 a \tuplet 3/2 { a b c } | d d2.~ | d4 r e4. d8 |
 	b4 c d c~ | c2 b4 b | g1~ | g2 r |
 }
 % endif

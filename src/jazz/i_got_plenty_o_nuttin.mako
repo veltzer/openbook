@@ -97,7 +97,7 @@
 		fis2 e8 fis e d | d1~ | d4 r e8 fis e b | d4 b8 d fis2~ | fis e8 fis e b |
 		d4 b8 d e4 c8 e | fis4 d8 fis g4 e8 g | a4 fis8 a c2~ | c r4 d, | g4 g a g8 a |
 		b8 d4.~ d4 r8 d, | b'4 b8 a~ a b a4 | g2 fis | e4 e cis4. r8 | e4 e cis4. cis8 |
-		e8 e4 e8 cis4 e | eis1 | \xNote { \times 2/3 { b'4 b b } g e } | r2 fis4 fis | g1~ | g4 r f f g1~ |
+		e8 e4 e8 cis4 e | eis1 | \xNote { \tuplet 3/2 { b'4 b b } g e } | r2 fis4 fis | g1~ | g4 r f f g1~ |
 		g4 r e4 e |
 	} \alternative {
 		{

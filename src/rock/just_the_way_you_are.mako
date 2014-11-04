@@ -61,7 +61,7 @@ PartFrets=\new FretBoards {
 	\PartChords
 }
 
-PartUpperIntro=\relative {
+PartUpperIntro=\relative c' {
 	\clef treble
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 112
@@ -73,7 +73,7 @@ PartUpperIntro=\relative {
 	r8 a d <bes e g>~ <bes e g>2 | r8 a d <d g b>~ <d g b> <d a'>4 fis16 e | \myEndLine
 	\endBar
 }
-PartLowerIntro=\relative {
+PartLowerIntro=\relative c' {
 	\clef bass
 	\key d \major
 	<< { d,2~ d8 d4 d8 } \\ { d,1 } >> |
@@ -82,19 +82,19 @@ PartLowerIntro=\relative {
 	<< { d'2~ d8 d4 d8 } \\ { d,1 } >> |
 }
 
-PartUpperVoice=\relative {
+PartUpperVoice=\relative c' {
 	\clef treble
 	\key d \major
 	<< { r2 d'8 fis4. } \\ { fis,4. fis8~ <fis d'>2 } >>
 	<< { d'8 b4.~ b2 } \\ { <d, fis>2~ <d fis>8 <d fis>4. } >>
 }
-PartLowerVoice=\relative {
+PartLowerVoice=\relative c' {
 	\clef bass
 	\key d \major
 	<d, a'>1 | << { gis2~ gis8 gis4. } \\ { b1 } >> |
 }
 
-PartMelody=\relative {
+PartMelody=\relative c' {
 	\clef treble
 	\key d \major
 	r2 d'8 fis4. | d8 b4.~ b2 | r4 r8 fis8 b8 d4. | b8 fis4.~ fis2 |

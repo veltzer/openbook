@@ -65,7 +65,7 @@
 	\time 4/4
 	\key f \major
 	\clef bass
-	\relative {
+	\relative c' {
 		%% I should have at least 17 x 3 x 4 = 51 X 4 = 204 options
 
 		%% 16 options for Dm7
@@ -130,7 +130,7 @@
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 	\layout {}

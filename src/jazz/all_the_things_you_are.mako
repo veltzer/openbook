@@ -109,7 +109,7 @@
 	aes'1 | des2. aes4 | g g g g | g c2 g4 |
 	f f f f | f b2 f4 | e1~ | e |
 	ees | aes2. ees4 | d d d d | d g2 d4 |
-	c c c c | \times 2/3 { c d ees } d c | b1~ | b4 d g d' |
+	c c c c | \tuplet 3/2 { c d ees } d c | b1~ | b4 d g d' |
 
 	%% part "B"
 	d2 c~ | c4 ees, e c' | b1~ | b4 d, g b |
@@ -117,7 +117,7 @@
 
 	%% part "C"
 	aes | des2. aes4 | g g g g | g c2 g4 |
-	f1 | ees'2 des | ees,4 ees \times 2/3 { ees ees ees } | g2. f4 |
+	f1 | ees'2 des | ees,4 ees \tuplet 3/2 { ees ees ees } | g2. f4 |
 	des f aes des | f2 g | aes1~ | aes |
 }
 % endif
@@ -193,7 +193,7 @@
 
 	%% part "C"
 	aes | des2. aes4 | g g g g | g c2 g4 |
-	f1 | ees'2. des4 | ees, ees \times 2/3 { ees ees ees } | g2. f4 |
+	f1 | ees'2. des4 | ees, ees \tuplet 3/2 { ees ees ees } | g2. f4 |
 	des des f aes | f'2 g, | aes1~ | aes2. r4 |
 }
 % endif

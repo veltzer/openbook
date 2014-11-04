@@ -94,18 +94,18 @@
 	\time 2/2
 	\key f \major
 
-	\partial 2. c8 d \times 2/3 { f4 d f } |
+	\partial 2. c8 d \tuplet 3/2 { f4 d f } |
 
 	%% part "A"
-	g2 g~ | \times 2/3 { g4 f g f e f } | e2 d~ | d4 d8 e \times 2/3 { f4 d f } |
-	bes2 bes~ | bes4 c8 c \times 2/3 { c4 c^\markup {To Coda \musicglyph #"scripts.coda"} c } | c1~ | c4 r8 a a a a a |
+	g2 g~ | \tuplet 3/2 { g4 f g f e f } | e2 d~ | d4 d8 e \tuplet 3/2 { f4 d f } |
+	bes2 bes~ | bes4 c8 c \tuplet 3/2 { c4 c^\markup {To Coda \musicglyph #"scripts.coda"} c } | c1~ | c4 r8 a a a a a |
 
 	%% part "B"
 	a2 a~ | a4. a8 a a a a | a2 a~ | a4. a8 a a a aes |
-	g2 g~ | g4 d8 e f e f4 | g1~ | g4 c,8 d \times 2/3 { f4 d f^\markup {D.S. al Coda} } |
+	g2 g~ | g4 d8 e f e f4 | g1~ | g4 c,8 d \tuplet 3/2 { f4 d f^\markup {D.S. al Coda} } |
 
 	%% part "end of A"
-	c'2 \times 2/3 { a4 c a } | g2 r8 a c bes |
+	c'2 \tuplet 3/2 { a4 c a } | g2 r8 a c bes |
 
 	%% part "C"
 	a2 a~ | a4 g a8 g f e | g2 g~ | g4 f8 g f e4 d8 |

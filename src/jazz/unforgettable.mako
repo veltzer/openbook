@@ -83,8 +83,8 @@
 	\key g \major
 
 	\repeat unfold 2 {
-		d4 e e8 fis4 fis8~ | fis2 \times 2/3 { d4 e g } | fis1~ | fis2. r4 |
-		g4 a a8 b4 b8~ | b2 \times 2/3 { g4 a c } | b1~ | b2. r4 |
+		d4 e e8 fis4 fis8~ | fis2 \tuplet 3/2 { d4 e g } | fis1~ | fis2. r4 |
+		g4 a a8 b4 b8~ | b2 \tuplet 3/2 { g4 a c } | b1~ | b2. r4 |
 		c d d c | c d8 ees~ ees d c4 | g a a g | g a8 b~ b a g4 |
 	} \alternative {
 		{ e e a e~ | e2. f4 | fis? fis c' fis,~ | fis2. r4 | }

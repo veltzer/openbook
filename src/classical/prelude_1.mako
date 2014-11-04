@@ -218,11 +218,11 @@ PartPiano={
 		\new Staff="up" {
 			\clef treble
 			<<
-				\relative {
+				\relative c' {
 					\voiceA
 				}
 				%%\\
-				%%\relative {
+				%%\relative c' {
 				%%	\voiceB
 				%%}
 			>>
@@ -230,11 +230,11 @@ PartPiano={
 		\new Staff="down" {
 			\clef bass
 			<<
-				\relative {
+				\relative c' {
 					\voiceB
 				}
 				\\\
-				\relative {
+				\relative c' {
 					\voiceC
 				}
 			>>

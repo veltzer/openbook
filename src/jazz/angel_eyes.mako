@@ -100,7 +100,7 @@
 
 	%% part "A"
 	\repeat volta 2 {
-		r8. c16 g'8 ges8~ ges4. f8 | ees4 \times 2/3 { ees8 c ees~ } ees2 |
+		r8. c16 g'8 ges8~ ges4. f8 | ees4 \tuplet 3/2 { ees8 c ees~ } ees2 |
 		r8. c16 ees8 g d'8. d16 c8 g~ | g1 |
 		r8. c,16 g'8 ges8~ ges4. f8 | ees8. ees16 c8 ees8~ ees4. c8 |
 		ees8. c16 ees8. c16 ees4 ees8 c~ |
@@ -118,7 +118,7 @@
 	b2~ b8 a4 b16 a | d,8 d4.~ d4 r8 e | fis8. fis16 fis8 fis~ fis4 fis8 g~ | g1 |
 
 	%% part "A"
-	r8. c,16 g'8 ges8~ ges4. f8 | ees4 \times 2/3 { ees8 c ees~ } ees2 |
+	r8. c,16 g'8 ges8~ ges4. f8 | ees4 \tuplet 3/2 { ees8 c ees~ } ees2 |
 	r8. c16 ees8 g d'8. d16 c8 g~ | g1 |
 	r8. c,16 g'8 ges8~ ges4. f8 | ees8. ees16 c8 ees8~ ees4. c8 |
 	ees8. c16 ees8. c16 ees4 ees8 c~ | c1 |

@@ -107,38 +107,38 @@
 		\myGrace b'16\f c8 c4 c8 \myGrace c16 des4 des | \myGrace b16 c8 c4 c8 \myGrace bes16 b4 b |
 		\myGrace b16 c8 c4 c8 \myGrace e8 f4 des | \myGrace b8 c2~ c8 \myGrace e,16 f8 g aes |
 		\myGrace a16 bes8 bes4 g8 \myGrace b8 c4 bes | \myGrace g16 aes8 aes4 f8 \myGrace b8 c4 aes |
-		\times 2/3 { \myGrace g8 aes4 g f \myGrace e8 f4 e f } |
+		\tuplet 3/2 { \myGrace g8 aes4 g f \myGrace e8 f4 e f } |
 	} \alternative {
 		{
-			\times 2/3 { \myGrace fis8 g8 c, des } c8 d e f g aes |
+			\tuplet 3/2 { \myGrace fis8 g8 c, des } c8 d e f g aes |
 		}
 		{
-			\times 2/3 { g4 c, des c f aes } |
+			\tuplet 3/2 { g4 c, des c f aes } |
 		}
 	}
 
 	%% A part
 	\repeat volta 2 {
-		\myGrace c8 des2 c | \times 2/3 { r4 \myGrace d8 ees4 d des g, aes } | \myGrace b8 c2 bes | \times 2/3 { r4 \myGrace d8 ees4 d des g, aes } |
+		\myGrace c8 des2 c | \tuplet 3/2 { r4 \myGrace d8 ees4 d des g, aes } | \myGrace b8 c2 bes | \tuplet 3/2 { r4 \myGrace d8 ees4 d des g, aes } |
 		\myGrace b8 c2 bes |
 	} \alternative {
 		{
-			r2 \times 2/3 { \myGrace b8 c2 g4 } | aes1 | \times 2/3 { r4 c, des c f aes } |
+			r2 \tuplet 3/2 { \myGrace b8 c2 g4 } | aes1 | \tuplet 3/2 { r4 c, des c f aes } |
 		}
 		{
-			r2 \times 2/3 { \myGrace b8 c2 aes4 } | f1 | r |
+			r2 \tuplet 3/2 { \myGrace b8 c2 aes4 } | f1 | r |
 		}
 	}
 
 	%% B part
-	\times 2/3 { \myGrace e8 f2 g4 a2 c4 } | \times 2/3 { ees2 e4 f2 c4 } |
+	\tuplet 3/2 { \myGrace e8 f2 g4 a2 c4 } | \tuplet 3/2 { ees2 e4 f2 c4 } |
 	ees2 des2~ | des1 |
-	\times 2/3 { \myGrace d,8 ees2 f4 g2 bes4 } | \times 2/3 { des2 d4 ees2 bes4 } |
-	c1~ | \times 2/3 { c4 c, des c f aes } |
+	\tuplet 3/2 { \myGrace d,8 ees2 f4 g2 bes4 } | \tuplet 3/2 { des2 d4 ees2 bes4 } |
+	c1~ | \tuplet 3/2 { c4 c, des c f aes } |
 
 	%% A part
-	\myGrace c8 des2 c | \times 2/3 { r4 \myGrace d8 ees4 d des g, aes } | \myGrace b8 c2 bes | \times 2/3 { r4 \myGrace d8 ees4 d des g, aes } |
-	\myGrace b8 c2 bes | r2 \times 2/3 { \myGrace b8 c2 aes4 } | f4. des'8 c aes4 g8 | f4 e f2 |
+	\myGrace c8 des2 c | \tuplet 3/2 { r4 \myGrace d8 ees4 d des g, aes } | \myGrace b8 c2 bes | \tuplet 3/2 { r4 \myGrace d8 ees4 d des g, aes } |
+	\myGrace b8 c2 bes | r2 \tuplet 3/2 { \myGrace b8 c2 aes4 } | f4. des'8 c aes4 g8 | f4 e f2 |
 }
 % endif
 

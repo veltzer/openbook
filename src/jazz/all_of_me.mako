@@ -90,14 +90,14 @@
 	\key c \major
 
 	%% part "A"
-	c'4 g8 e~ e2~ | e \times 2/3 { c'4 d c } | b gis8 e~ e2~ | e1 |
-	a4. g8 e2~ | e4 dis \times 2/3 { e bes' a } | g2 f~ | f1 |
-	e4. ees8 d2~ | d \times 2/3 { e4 gis b } | d2 c~ | c1 |
-	b4. bes8 a2~ | a \times 2/3 { a4 d b } | a1 | b |
+	c'4 g8 e~ e2~ | e \tuplet 3/2 { c'4 d c } | b gis8 e~ e2~ | e1 |
+	a4. g8 e2~ | e4 dis \tuplet 3/2 { e bes' a } | g2 f~ | f1 |
+	e4. ees8 d2~ | d \tuplet 3/2 { e4 gis b } | d2 c~ | c1 |
+	b4. bes8 a2~ | a \tuplet 3/2 { a4 d b } | a1 | b |
 
 	%% part "B"
-	c4 g8 e~ e2~ | e \times 2/3 { c'4 d c } | b gis8 e~ e2~ | e1 |
-	a4. g8 e2~ | e4 dis \times 2/3 { e bes' a } | g2 f~ | f1 |
+	c4 g8 e~ e2~ | e \tuplet 3/2 { c'4 d c } | b gis8 e~ e2~ | e1 |
+	a4. g8 e2~ | e4 dis \tuplet 3/2 { e bes' a } | g2 f~ | f1 |
 	d'2 c4 b | d2. c4 | b2 e,4 g | b2. a4 |
 	c2 a4 c | e2 e | c1~ | c |
 }

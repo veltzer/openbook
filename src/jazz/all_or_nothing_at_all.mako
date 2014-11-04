@@ -104,28 +104,28 @@
 	\key c \major
 
 	%% part "A"
-	e1~ | e4 e \times 2/3 { e f c } | e1~ | e2. r4 |
-	e2 e | e \times 2/3 { e4 g c, } | d4. d8 d2~ | d2. r4 |
-	d2 d | d \times 2/3 { e4 cis d } | a'4. a8 a2~ | a b4 a |
+	e1~ | e4 e \tuplet 3/2 { e f c } | e1~ | e2. r4 |
+	e2 e | e \tuplet 3/2 { e4 g c, } | d4. d8 d2~ | d2. r4 |
+	d2 d | d \tuplet 3/2 { e4 cis d } | a'4. a8 a2~ | a b4 a |
 	g g2 g4 | g g2 g4 | g1 | r |
 
 	%% part "A"
-	e~ | e4 e \times 2/3 { e f c } | e1~ | e2. r4 |
-	e2 e | e \times 2/3 { e4 g c, } | d4. d8 d2~ | d2. r4 |
-	d4. d8 d4. d8 | d4. d8 \times 2/3 { e4 cis d } | a'4. a8 a2~ | a b4 a |
+	e~ | e4 e \tuplet 3/2 { e f c } | e1~ | e2. r4 |
+	e2 e | e \tuplet 3/2 { e4 g c, } | d4. d8 d2~ | d2. r4 |
+	d4. d8 d4. d8 | d4. d8 \tuplet 3/2 { e4 cis d } | a'4. a8 a2~ | a b4 a |
 	g g2 g4 | g g2 g4 | g1~ | g4 r r ees |
 
 	%% part "B"
-	c' c c c | c4. c8 \times 2/3 { c4 des aes } | c1~ | c2. ees,4 |
-	c'4. c8 c4. c8 | des2 \times 2/3 { c4 bes aes } | g1~ | g2. ees4 |
-	\times 2/3 { bes' bes bes } bes4. bes8 | \times 2/3 { bes4 bes bes } \times 2/3 { bes c g } | bes1~ | bes2 c4 bes |
+	c' c c c | c4. c8 \tuplet 3/2 { c4 des aes } | c1~ | c2. ees,4 |
+	c'4. c8 c4. c8 | des2 \tuplet 3/2 { c4 bes aes } | g1~ | g2. ees4 |
+	\tuplet 3/2 { bes' bes bes } bes4. bes8 | \tuplet 3/2 { bes4 bes bes } \tuplet 3/2 { bes c g } | bes1~ | bes2 c4 bes |
 	aes2 aes4 aes | aes aes2 aes4 | g1 | r4 d c b |
 
 	%% part "A"
-	e1 | \times 2/3 { e4 f c } \times 2/3 { e f c } | e1~ | e2. r4 |
-	e2 e | e \times 2/3 { e4 g c, } | d4. d8 d2~ | d2. r4 |
-	d2 d | d4. d8 \times 2/3 { e4 cis d } | a'1 | b |
-	c1~ | c4 c \times 2/3 { c c c } | c1~ | c2. r4 |
+	e1 | \tuplet 3/2 { e4 f c } \tuplet 3/2 { e f c } | e1~ | e2. r4 |
+	e2 e | e \tuplet 3/2 { e4 g c, } | d4. d8 d2~ | d2. r4 |
+	d2 d | d4. d8 \tuplet 3/2 { e4 cis d } | a'1 | b |
+	c1~ | c4 c \tuplet 3/2 { c c c } | c1~ | c2. r4 |
 }
 % endif
 

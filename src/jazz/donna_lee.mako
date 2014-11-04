@@ -83,22 +83,22 @@
 	\tempo "Allegro" 4 = 130
 
 	%% part "A"
-	r2 \times 2/3 { g''8 aes g } f e | ees! des c bes-4 a-3 c,-1 ees f |
-	\times 2/3 { ges aes ges } f-1 ees d f aes c | g! f r4 r e!8 d! |
+	r2 \tuplet 3/2 { g''8 aes g } f e | ees! des c bes-4 a-3 c,-1 ees f |
+	\tuplet 3/2 { ges aes ges } f-1 ees d f aes c | g! f r4 r e!8 d! |
 	ees! a, bes des! f aes c ees | des e, f c' b g-1 ees-3 des-2 |
 	c-1 ees g bes! aes4 ees8-2 f-1 | ges-2 bes-3 des-4 f-5 e-4 c-1 r4 |
 	ees2~ ees8 des c bes | ees des r4 ges8 fes ees des |
-	c c des d ees des c bes | a c ees f \times 2/3 { ges aes ges } f ees |
-	d c b a bes aes r d,16 f | \times 2/3 { g8 ges f } e4 r2 |
-	ees'!8 des f, aes c bes aes f | g bes des ees \times 2/3 { e fis e } ees des |
+	c c des d ees des c bes | a c ees f \tuplet 3/2 { ges aes ges } f ees |
+	d c b a bes aes r d,16 f | \tuplet 3/2 { g8 ges f } e4 r2 |
+	ees'!8 des f, aes c bes aes f | g bes des ees \tuplet 3/2 { e fis e } ees des |
 
 	%% part "B"
-	c4 r \times 2/3 { g'8 aes g } f e | ees! des c bes-4 a-3 c,-1 ees f |
-	\times 2/3 { ges aes ges } f-1 ees d f aes c | g! f r4 r g8 f |
-	e f g aes bes aes g f | \times 2/3 { des' ees des } c bes \times 2/3 { aes bes aes } g e |
+	c4 r \tuplet 3/2 { g'8 aes g } f e | ees! des c bes-4 a-3 c,-1 ees f |
+	\tuplet 3/2 { ges aes ges } f-1 ees d f aes c | g! f r4 r g8 f |
+	e f g aes bes aes g f | \tuplet 3/2 { des' ees des } c bes \tuplet 3/2 { aes bes aes } g e |
 	f4 r r2 | r r4 r8 b |
 	c b c des d cis d ees | e dis e dis d des c bes |
-	\times 2/3 { aes bes aes } g aes bes aes g f | b, d f aes b g' f e |
+	\tuplet 3/2 { aes bes aes } g aes bes aes g f | b, d f aes b g' f e |
 	ees! des c bes a ges f ees | des f aes c bes aes g ees |
 	aes4 r r2 | r1 |
 }

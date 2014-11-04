@@ -81,7 +81,7 @@
 		c8 bes a g~ g a bes4 | f4 f2. |
 	} \alternative {
 		{
-			\times 2/3 { f4 c f } cis a'8 g~ | g2. r4 |
+			\tuplet 3/2 { f4 c f } cis a'8 g~ | g2. r4 |
 		}
 		{
 			g8 ees g4 a8 bes c bes~ | bes2. r4 |

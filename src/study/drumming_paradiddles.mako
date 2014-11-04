@@ -44,9 +44,9 @@ Single Paradiddle (starting with the right hand).
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
 		%% the next line killed lilypond 2.12.3
-		%%\override StaffSymbol #'line-count = #0
-		%%\override Stem #'Y-extent = ##f
-		%%\override Stem #'transparent = ##t
+		%%\override StaffSymbol.line-count = #0
+		%%\override Stem.Y-extent = ##f
+		%%\override Stem.transparent = ##t
 	} <<
 		\set Score.timing = ##f
 		\new DrumVoice {
@@ -64,7 +64,7 @@ Single Paradiddle (starting with the right hand).
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 }
@@ -80,9 +80,9 @@ Double Paradiddle (starting with the right hand)
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
 		%% the next line killed lilypond 2.12.3
-		%%\override StaffSymbol #'line-count = #0
-		%%\override Stem #'Y-extent = ##f
-		%%\override Stem #'transparent = ##t
+		%%\override StaffSymbol.line-count = #0
+		%%\override Stem.Y-extent = ##f
+		%%\override Stem.transparent = ##t
 	} <<
 		\set Score.timing = ##f
 		\new DrumVoice {
@@ -100,7 +100,7 @@ Double Paradiddle (starting with the right hand)
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 }
@@ -116,9 +116,9 @@ Triple Paradiddle (starting with the right hand).
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
 		%% the next line killed lilypond 2.12.3
-		%%\override StaffSymbol #'line-count = #0
-		%%\override Stem #'Y-extent = ##f
-		%%\override Stem #'transparent = ##t
+		%%\override StaffSymbol.line-count = #0
+		%%\override Stem.Y-extent = ##f
+		%%\override Stem.transparent = ##t
 	} <<
 		\set Score.timing = ##f
 		\new DrumVoice {
@@ -136,7 +136,7 @@ Triple Paradiddle (starting with the right hand).
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 }
@@ -152,9 +152,9 @@ Paradiddle-Diddle (starting with the right hand).
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
 		%% the next line killed lilypond 2.12.3
-		%%\override StaffSymbol #'line-count = #0
-		%%\override Stem #'Y-extent = ##f
-		%%\override Stem #'transparent = ##t
+		%%\override StaffSymbol.line-count = #0
+		%%\override Stem.Y-extent = ##f
+		%%\override Stem.transparent = ##t
 	} <<
 		\set Score.timing = ##f
 		\new DrumVoice {
@@ -172,7 +172,7 @@ Paradiddle-Diddle (starting with the right hand).
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 }

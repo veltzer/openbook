@@ -85,10 +85,10 @@
 
 	%% part "A"
 	\repeat volta 2 {
-		ees4. f,8 f2 | r8 f f g f4 ees | g1~ | g4 bes d c | ees4. f,8 f2~ | f4 g \times 2/3 { f ees d } |
+		ees4. f,8 f2 | r8 f f g f4 ees | g1~ | g4 bes d c | ees4. f,8 f2~ | f4 g \tuplet 3/2 { f ees d } |
 		c1~ | c2. c4 | g' g g g | ees2. g4 | bes bes bes bes | g2. b4 | d d d2~ | d d |
 		bes1~ | bes4 bes d c | ees4. f,8 f2 | r8 f f g f4 ees | g1~ | g4 bes d c | ees4. f,8 f2~ |
-		f4 g \times 2/3 { f ees d } | g1~ | g2 r4 ees4 | g2. f4 | aes2. g4 | \times 2/3 { d4 ees g } bes4 c | d2. c4 |
+		f4 g \tuplet 3/2 { f ees d } | g1~ | g2 r4 ees4 | g2. f4 | aes2. g4 | \tuplet 3/2 { d4 ees g } bes4 c | d2. c4 |
 		ees4. f,8 f2 | r8 c d ees g4 g |
 	} \alternative {
 		{

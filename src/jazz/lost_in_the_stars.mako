@@ -93,9 +93,9 @@
 	%% part "A"
 	e4 d g8. g16 cis,8 cis | e4 d8. d16 a'4 r8 cis,16 cis | e4 d c'8 c b c | b4 a8 gis a4 r8 b16 c |
 	d4 d8 d d4 c8 b | a4 a8 a a4. a8 | d4 cis8 d e d c b | a4. a8 a2 |
-	r4 cis,8 d c'4 c | \times 2/3 { c8 b ais } b2. | b16 a g8~ g4 bes8 g4. | b8. b16 a8 g e2 |
-	r4 cis8 d c'4 c | \times 2/3 { c8 b ais } b2. | b16 a g8~ g4 bes8 g4. | b8. b16 c8 d e2 |
-	r4 cis,8 d a'4 a | \times 2/3 { a8 g fis } g2.~ | g1 |
+	r4 cis,8 d c'4 c | \tuplet 3/2 { c8 b ais } b2. | b16 a g8~ g4 bes8 g4. | b8. b16 a8 g e2 |
+	r4 cis8 d c'4 c | \tuplet 3/2 { c8 b ais } b2. | b16 a g8~ g4 bes8 g4. | b8. b16 c8 d e2 |
+	r4 cis,8 d a'4 a | \tuplet 3/2 { a8 g fis } g2.~ | g1 |
 }
 % endif
 

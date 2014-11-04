@@ -111,8 +111,8 @@
 		bes,4 ees c' bes | aes2. g4 | f1~ | f2. g8 aes |
 
 		%% part B
-		bes4. ees,8 ees4 ees | g f2 g8 aes | \times 2/3 { bes4 g aes } \times 2/3 { bes g aes } | bes2. aes8 bes |
-		c4. f,8 f4 f | aes g2 aes8 bes | \times 2/3 { c4 aes bes } \times 2/3 { c aes c } | bes1 |
+		bes4. ees,8 ees4 ees | g f2 g8 aes | \tuplet 3/2 { bes4 g aes } \tuplet 3/2 { bes g aes } | bes2. aes8 bes |
+		c4. f,8 f4 f | aes g2 aes8 bes | \tuplet 3/2 { c4 aes bes } \tuplet 3/2 { c aes c } | bes1 |
 
 		%% part A
 		bes,4 ees aes g | ees1 | bes4 ees aes g | ees f2. |

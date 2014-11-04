@@ -41,12 +41,12 @@
 	}
 	\alternative {
 		{
-			c''4 b'4 c''4 d''4 | \times 2/3 { c''4 b'4 bes'4 } a'4 aes'4 | g'2 g2~ | g2. g'4 |
-			a'4 gis'4 a'4 b'4 | \times 2/3 { a'4 aes'4 g'4 } ges'4 f'4 | e'2 e2~ | e2 e'2 |
+			c''4 b'4 c''4 d''4 | \tuplet 3/2 { c''4 b'4 bes'4 } a'4 aes'4 | g'2 g2~ | g2. g'4 |
+			a'4 gis'4 a'4 b'4 | \tuplet 3/2 { a'4 aes'4 g'4 } ges'4 f'4 | e'2 e2~ | e2 e'2 |
 		}
 		{
-			c''4 b'4 c''4 d''4 | \times 2/3 { e''4 d''4 c''4 } b'4 bes'4 | a'1 | \times 2/3 { c''4 b'4 bes'4 } a'4 aes'4 |
-			g'1 | \times 2/3 { b'4 a'4 aes'4 } g'4 d''4 | c1~ | c2 r4 <\parenthesize e'>4 |
+			c''4 b'4 c''4 d''4 | \tuplet 3/2 { e''4 d''4 c''4 } b'4 bes'4 | a'1 | \tuplet 3/2 { c''4 b'4 bes'4 } a'4 aes'4 |
+			g'1 | \tuplet 3/2 { b'4 a'4 aes'4 } g'4 d''4 | c1~ | c2 r4 <\parenthesize e'>4 |
 		}
 	}
 	\endTune

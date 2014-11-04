@@ -86,11 +86,11 @@
 	\key c \minor
 
 	%% part "A"
-	c4 c c c8 c | ees2 d | \times 2/3 { c4 c c } c c | \times 2/3 { d d d } d2 |
+	c4 c c c8 c | ees2 d | \tuplet 3/2 { c4 c c } c c | \tuplet 3/2 { d d d } d2 |
 	d4 d8 d f f f f | aes^"Piu mosso (a little faster)" aes g2. | c,4 c b8 b b b | c c4 c8~ c2 |
 	ees4 c d b | c g g2 | ees' d |
-	\times 2/3 { ees'4 c ees } \times 2/3 { d b d } | c4. g8 g4. b,8 | c4. c8 c4 c8 c | d4. d8 d2 |
-	\times 2/3 { ees'4 c ees } \times 2/3 { d b d } | \times 2/3 { c bes! aes } g4 d8 d | d4 d f f | aes aes b r | r1 |
+	\tuplet 3/2 { ees'4 c ees } \tuplet 3/2 { d b d } | c4. g8 g4. b,8 | c4. c8 c4 c8 c | d4. d8 d2 |
+	\tuplet 3/2 { ees'4 c ees } \tuplet 3/2 { d b d } | \tuplet 3/2 { c bes! aes } g4 d8 d | d4 d f f | aes aes b r | r1 |
 	c,4 c8 c c4 c8 c | ees4 ees d d8 d | d4 d f8 f f f | aes4 aes g g8 g |
 	g4 g g g8 g | bes4 bes aes r | ees2 d |
 	c4 c8 c c4 c | ees8 d4. g2 | ees4 ( c d b | c1 ) |

@@ -66,7 +66,7 @@ PartChords=\chordmode {
 	\endChords
 }
 
-voiceVocal=\relative {
+voiceVocal=\relative c' {
 	\clef treble
 	\time 12/8
 	\key bes \major
@@ -95,7 +95,7 @@ voiceVocal=\relative {
 		}
 	}
 }
-voiceTreble=\relative {
+voiceTreble=\relative c' {
 	\clef treble
 	\key bes \major
 	r1. | r |
@@ -119,7 +119,7 @@ voiceTreble=\relative {
 		}
 	}
 }
-voiceBass=\relative {
+voiceBass=\relative c' {
 	\clef bass
 	\key bes \major
 	bes,8 f' d'~ d f, d' bes, f' d'~ d f, d' |

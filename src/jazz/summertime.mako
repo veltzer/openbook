@@ -210,7 +210,7 @@
 
 	%% part "B"
 	e8 e4 e8~ e2 | r4 d8. c16 d8. e16 c4 | a2 e~ | e r4 e |
-	g e8 g a4 c | e8 d4. c2 | a1~ | a1~ | a4 r4 r2 | r \times 2/3 { e'4 e c } |
+	g e8 g a4 c | e8 d4. c2 | a1~ | a1~ | a4 r4 r2 | r \tuplet 3/2 { e'4 e c } |
 
 	%% part "A"
 	e4 e2. | r8. e16 d8. c16 d8. e16 c4 | a2 e~ | e e'4 c |

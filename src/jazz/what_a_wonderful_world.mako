@@ -101,21 +101,21 @@
 	\partial 4 c8 e |
 
 	%% part "A"
-	f4. a8 c2 | r8 d d d c2 | r8 bes bes bes a2 | r8 g g g f4~ \times 2/3 { f8 f f } |
-	f4~ \times 2/3 { f8 f f } f2 | r4 f8 f \times 2/3 {e4 f g} | a1~ | a2 r4 c,8 e |
+	f4. a8 c2 | r8 d d d c2 | r8 bes bes bes a2 | r8 g g g f4~ \tuplet 3/2 { f8 f f } |
+	f4~ \tuplet 3/2 { f8 f f } f2 | r4 f8 f \tuplet 3/2 {e4 f g} | a1~ | a2 r4 c,8 e |
 
 	%% part "A"
-	f4. a8 c4. c8 | d4. d8 c4. c8 | bes4~ \times 2/3 { bes8 bes bes } a4. a8 | g4~ \times 2/3 { g8 g g } f4~ \times 2/3 { f8 f f } |
-	f4~ \times 2/3 { f8 f f } f2 | r4 f8 f \times 2/3 {e4 f g } | f1~ | f2 r4 f4 |
+	f4. a8 c4. c8 | d4. d8 c4. c8 | bes4~ \tuplet 3/2 { bes8 bes bes } a4. a8 | g4~ \tuplet 3/2 { g8 g g } f4~ \tuplet 3/2 { f8 f f } |
+	f4~ \tuplet 3/2 { f8 f f } f2 | r4 f8 f \tuplet 3/2 {e4 f g } | f1~ | f2 r4 f4 |
 
 	%% part "B"
 	g8 g g g g c,4 c8 | bes' a a gis a4. f8 | g g g g g c,4 g'8 | bes a a gis a4 a8 c |
-	d4 d8 d c4~ \times 2/3 { c8 a c } | d4 d8 d c2 | r8 d d d c c4. | bes4 a g c,8 e |
+	d4 d8 d c4~ \tuplet 3/2 { c8 a c } | d4 d8 d c2 | r8 d d d c c4. | bes4 a g c,8 e |
 
 	%% part "A"
-	f4. a8 c4. c8 | d4. d8 c2 | r8 bes bes bes a4. a8 | g4~ \times 2/3 { g8 g g } f4~ \times 2/3 { f8 f f } |
-	f4~ \times 2/3 { f8 f f } f2 | r4 f8 f \times 2/3 {e4 f g} | a1~ | a4 r a a |
-	\times 2/3 {a4 f g} f2 | r4 f8 f \times 2/3 {e4 f g} | f1~ | f\fermata |
+	f4. a8 c4. c8 | d4. d8 c2 | r8 bes bes bes a4. a8 | g4~ \tuplet 3/2 { g8 g g } f4~ \tuplet 3/2 { f8 f f } |
+	f4~ \tuplet 3/2 { f8 f f } f2 | r4 f8 f \tuplet 3/2 {e4 f g} | a1~ | a4 r a a |
+	\tuplet 3/2 {a4 f g} f2 | r4 f8 f \tuplet 3/2 {e4 f g} | f1~ | f\fermata |
 }
 % endif
 

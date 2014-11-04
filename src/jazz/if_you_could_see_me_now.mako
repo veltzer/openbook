@@ -117,7 +117,7 @@
 	}
 
 	%% part "B"
-	d4 d8 d d4 e8 bes | \times 2/3 { b4 b b } b c8 d | a4 a8 a a4 b8 c | d2. e,4 |
+	d4 d8 d d4 e8 bes | \tuplet 3/2 { b4 b b } b c8 d | a4 a8 a a4 b8 c | d2. e,4 |
 	b'8 a g a bes c d ees | f2 r8 d c bes | ees2 r8 c bes a | bes1 |
 
 	%% part "A"

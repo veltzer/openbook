@@ -113,8 +113,8 @@
 	}
 
 	%% part "B"
-	c'1~ | \times 2/3 { c4 a bes } \times 2/3 { c ees d } | bes1~ | bes2. d,4 |
-	bes'1~ | \times 2/3 { bes4 g a } \times 2/3 { bes des c } | a2.. f8 | g2.. d8 |
+	c'1~ | \tuplet 3/2 { c4 a bes } \tuplet 3/2 { c ees d } | bes1~ | bes2. d,4 |
+	bes'1~ | \tuplet 3/2 { bes4 g a } \tuplet 3/2 { bes des c } | a2.. f8 | g2.. d8 |
 
 	%% part "A"
 	f2.. d8 | e e4.~ e2~ | e4 r8 d e4. f8 | a1~ |

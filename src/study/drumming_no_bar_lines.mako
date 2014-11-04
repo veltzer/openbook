@@ -43,9 +43,9 @@ Same number of strokes in each hand.
 		%%\remove Forbid_line_break_engraver
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
-		\override StaffSymbol #'line-count = #1
-		\override Stem #'Y-extent = ##f
-		\override Stem #'transparent = ##t
+		\override StaffSymbol.line-count = #1
+		\override Stem.Y-extent = ##f
+		\override Stem.transparent = ##t
 	} <<
 		\set Score.timing = ##f
 		\new DrumVoice {
@@ -74,7 +74,7 @@ Same number of strokes in each hand.
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 }
@@ -90,9 +90,9 @@ Same number of strokes in each hand.
 		%%\remove Forbid_line_break_engraver
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
-		\override StaffSymbol #'line-count = #1
-		\override Stem #'Y-extent = ##f
-		\override Stem #'transparent = ##t
+		\override StaffSymbol.line-count = #1
+		\override Stem.Y-extent = ##f
+		\override Stem.transparent = ##t
 	} <<
 		\set Score.timing = ##f
 		\new DrumVoice {
@@ -121,7 +121,7 @@ Same number of strokes in each hand.
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 }
@@ -137,9 +137,9 @@ Different number of strokes in each hand.
 		%%\remove Forbid_line_break_engraver
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
-		\override StaffSymbol #'line-count = #1
-		\override Stem #'Y-extent = ##f
-		\override Stem #'transparent = ##t
+		\override StaffSymbol.line-count = #1
+		\override Stem.Y-extent = ##f
+		\override Stem.transparent = ##t
 	} <<
 		\set Score.timing = ##f
 		\new DrumVoice {
@@ -161,7 +161,7 @@ Different number of strokes in each hand.
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 }
@@ -177,9 +177,9 @@ Different number of strokes in each hand.
 		%%\remove Forbid_line_break_engraver
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
-		\override StaffSymbol #'line-count = #1
-		\override Stem #'Y-extent = ##f
-		\override Stem #'transparent = ##t
+		\override StaffSymbol.line-count = #1
+		\override Stem.Y-extent = ##f
+		\override Stem.transparent = ##t
 	} <<
 		\set Score.timing = ##f
 		\new DrumVoice {
@@ -201,7 +201,7 @@ Different number of strokes in each hand.
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 }
@@ -221,9 +221,9 @@ Starting with the right hand.
 		%%\remove Forbid_line_break_engraver
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
-		\override StaffSymbol #'line-count = #1
-		\override Stem #'Y-extent = ##f
-		\override Stem #'transparent = ##t
+		\override StaffSymbol.line-count = #1
+		\override Stem.Y-extent = ##f
+		\override Stem.transparent = ##t
 	} <<
 		\set Score.timing = ##f
 		\new DrumVoice {
@@ -244,7 +244,7 @@ Starting with the right hand.
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 }
@@ -259,9 +259,9 @@ Starting with the left hand.
 		%%\remove Forbid_line_break_engraver
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
-		\override StaffSymbol #'line-count = #1
-		\override Stem #'Y-extent = ##f
-		\override Stem #'transparent = ##t
+		\override StaffSymbol.line-count = #1
+		\override Stem.Y-extent = ##f
+		\override Stem.transparent = ##t
 	} <<
 		\set Score.timing = ##f
 		\new DrumVoice {
@@ -282,7 +282,7 @@ Starting with the left hand.
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 }

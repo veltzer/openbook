@@ -84,8 +84,8 @@
 	\partial 8 a8 |
 
 	\repeat volta 2 {
-		\times 2/3 { bes des f } c'2 bes8 f | gis a4. r4 r8 a, | \times 2/3 { bes des f } c' c~ c4 bes8 f | a2. r8 a, | \times 2/3 { bes des f } c'2 bes8 f | gis a4. r2 |
-		a8 bes \times 2/3 { a16 bes a } g8 ees4 cis8 d~ |
+		\tuplet 3/2 { bes des f } c'2 bes8 f | gis a4. r4 r8 a, | \tuplet 3/2 { bes des f } c' c~ c4 bes8 f | a2. r8 a, | \tuplet 3/2 { bes des f } c'2 bes8 f | gis a4. r2 |
+		a8 bes \tuplet 3/2 { a16 bes a } g8 ees4 cis8 d~ |
 	} \alternative {
 		{
 			d4 r r r8 a |
@@ -97,10 +97,10 @@
 
 	%% part "B"
 	c4. a8~ a4. g8 | ges4 ees'8 cis d c4 a8 |
-	bes g4 fis8~ fis4 a8 fis | g a e4 r r8 \grace a8 bes8~ | bes \grace a8 bes4 r8 r4 \times 2/3 { g16 aes g } f8 | e4 \times 2/3 { des'16 ees des } b8 c bes4 gis8 | a4. f8 \times 2/3 { g?16 aes g } f8 \times 2/3 { g16 aes g } f8 |
+	bes g4 fis8~ fis4 a8 fis | g a e4 r r8 \grace a8 bes8~ | bes \grace a8 bes4 r8 r4 \tuplet 3/2 { g16 aes g } f8 | e4 \tuplet 3/2 { des'16 ees des } b8 c bes4 gis8 | a4. f8 \tuplet 3/2 { g?16 aes g } f8 \tuplet 3/2 { g16 aes g } f8 |
 	e2. r8 a, |
 
 	%% part "A"
-	\times 2/3 { bes des f } c'2 bes8 f | gis a4. r4 r8 a, | \times 2/3 { bes des f } c' c~ c4 bes8 f | a2. r8 a, | \times 2/3 { bes des f } c'2 bes8 f | gis a4. r2 | a8 bes \times 2/3 { a16 bes a } g8 ees4 cis8 d~ | d4 r r2 |
+	\tuplet 3/2 { bes des f } c'2 bes8 f | gis a4. r4 r8 a, | \tuplet 3/2 { bes des f } c' c~ c4 bes8 f | a2. r8 a, | \tuplet 3/2 { bes des f } c'2 bes8 f | gis a4. r2 | a8 bes \tuplet 3/2 { a16 bes a } g8 ees4 cis8 d~ | d4 r r2 |
 }
 % endif

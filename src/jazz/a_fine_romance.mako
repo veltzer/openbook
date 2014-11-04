@@ -125,16 +125,16 @@
 		e,1 | d'4 c2 e,4 | g1 | e'4 d2 g,4 |
 
 		%% part "B"
-		c4 b c d | \times 2/3 { c b! bes } a aes | g2 g~ | g2. g4 |
-		a gis a b | \times 2/3 { a aes g! } fis f | e2 e~ | e2. e4 |
+		c4 b c d | \tuplet 3/2 { c b! bes } a aes | g2 g~ | g2. g4 |
+		a gis a b | \tuplet 3/2 { a aes g! } fis f | e2 e~ | e2. e4 |
 
 		%% part "A"
 		c1 | a'4 g2 a4 | b,1 | b'4 a2 b4 |
 		e,1 | d'4 c2 e,4 | g1 | e'4 d2 g,4 |
 
 		%% part "C"
-		c4 b c d | \times 2/3 { e d c } b! bes | a1 | \times 2/3 { c4 b bes } a! aes |
-		g1 | \times 2/3 { b4 a aes } g! d' |
+		c4 b c d | \tuplet 3/2 { e d c } b! bes | a1 | \tuplet 3/2 { c4 b bes } a! aes |
+		g1 | \tuplet 3/2 { b4 a aes } g! d' |
 	}
 	\alternative {
 		{
@@ -246,14 +246,14 @@
 		{
 
 			%% part "B"
-			c4 b c d | \times 2/3 { c b bes } a aes | g2 g~ | g2. g4 |
-			a gis a b | \times 2/3 { a aes g } ges f | e2 e~ | e e |
+			c4 b c d | \tuplet 3/2 { c b bes } a aes | g2 g~ | g2. g4 |
+			a gis a b | \tuplet 3/2 { a aes g } ges f | e2 e~ | e e |
 		}
 		{
 
 			%% part "C"
-			c'4 b c d | \times 2/3 { e d c } b bes | a1 | \times 2/3 { c4 b bes } a aes |
-			g1 | \times 2/3 { b4 a aes } g d' | c1~_\markup { \italic { Fine } } | c2 r2|
+			c'4 b c d | \tuplet 3/2 { e d c } b bes | a1 | \tuplet 3/2 { c4 b bes } a aes |
+			g1 | \tuplet 3/2 { b4 a aes } g d' | c1~_\markup { \italic { Fine } } | c2 r2|
 		}
 	}
 }

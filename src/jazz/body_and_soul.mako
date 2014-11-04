@@ -98,7 +98,7 @@
 	%% part "A"
 	\repeat volta 2 {
 		r8. ees16 f8. ees16 f4 ees | bes' bes2. | r8. aes16 bes8. aes16 bes4 aes | ees'4 des c bes |
-		r4 des bes8 ges4 bes,8 | f'2 ees | r8. des16 ees8. f16 aes4 \times 2/3 { aes8 bes fes } |
+		r4 des bes8 ges4 bes,8 | f'2 ees | r8. des16 ees8. f16 aes4 \tuplet 3/2 { aes8 bes fes } |
 	} \alternative {
 		{ des1 | }
 		{ des2. r4 | }
@@ -113,7 +113,7 @@
 	%% part "A"
 	\key des \major
 	r8. ees,16 f8. ees16 f4 ees | bes' bes2. | r8. aes16 bes8. aes16 bes4 aes | ees'4 des c bes |
-	r4 des bes8 ges4 bes,8 | f'2 ees | r8. des16 ees8. f16 aes4 \times 2/3 { aes8 bes fes } | des1 |
+	r4 des bes8 ges4 bes,8 | f'2 ees | r8. des16 ees8. f16 aes4 \tuplet 3/2 { aes8 bes fes } | des1 |
 }
 % endif
 

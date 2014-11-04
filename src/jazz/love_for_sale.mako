@@ -107,7 +107,7 @@
 		%% part "B"
 		r4 bes8 c des4 ees | f4 ees ees2 | r4 c8 des ees4 f | aes1 |
 		r4 bes,8 c des4 ees | f4 ees ees2 | r4 c8 des ees4 f | bes1 |
-		r4 bes,8 c d4 f | ges f f2 | r4 d \times 2/3 { ees4 f ges } | c4 bes bes2 |
+		r4 bes,8 c d4 f | ges f f2 | r4 d \tuplet 3/2 { ees4 f ges } | c4 bes bes2 |
 		des c | des c | r4 b8 b b4 b | b2 bes |
 
 		%% part "A"

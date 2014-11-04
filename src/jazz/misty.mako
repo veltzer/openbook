@@ -107,20 +107,20 @@
 
 	%% part "A"
 	\repeat volta 2 {
-		d2. bes8 c | des c' c c c bes g ees | c2 \times 2/3 { r8 g aes c ees g } | bes bes bes aes bes4 aes8 bes |
-		g4~ \times 2/3 { g8 aes bes } ees,4~ \times 2/3 { ees8 f g } | aes8 c,4 c8 \times 2/3 { d4 ees f } |
+		d2. bes8 c | des c' c c c bes g ees | c2 \tuplet 3/2 { r8 g aes c ees g } | bes bes bes aes bes4 aes8 bes |
+		g4~ \tuplet 3/2 { g8 aes bes } ees,4~ \tuplet 3/2 { ees8 f g } | aes8 c,4 c8 \tuplet 3/2 { d4 ees f } |
 	} \alternative {
 		{ g1~ | g2. bes8 g | }
-		{ ees1 | \times 2/3 { r4 ees f } \times 2/3 { g bes c } | }
+		{ ees1 | \tuplet 3/2 { r4 ees f } \tuplet 3/2 { g bes c } | }
 	}
 
 	%% part "B"
-	des8 des des des~ des2~ | des4 des8 ees \times 2/3 { fes4 ees des } | c8 c c c~ c2 | \times 2/3 { r4 ees, f aes bes c } |
-	d8 d d c d2~ | d8 d d c \times 2/3 { f4 d c } | bes1~ | bes2. bes8 g |
+	des8 des des des~ des2~ | des4 des8 ees \tuplet 3/2 { fes4 ees des } | c8 c c c~ c2 | \tuplet 3/2 { r4 ees, f aes bes c } |
+	d8 d d c d2~ | d8 d d c \tuplet 3/2 { f4 d c } | bes1~ | bes2. bes8 g |
 
 	%% part "A"
-	d2. bes8 c | des c' c c c bes g ees | c2 \times 2/3 { r8 g aes c ees g } | bes bes bes aes bes4 aes8 bes |
-	g4~ \times 2/3 { g8 aes bes } ees,4~ \times 2/3 { ees8 f g } | aes8 c,4 c8 \times 2/3 { d4 ees f } | ees1 | r |
+	d2. bes8 c | des c' c c c bes g ees | c2 \tuplet 3/2 { r8 g aes c ees g } | bes bes bes aes bes4 aes8 bes |
+	g4~ \tuplet 3/2 { g8 aes bes } ees,4~ \tuplet 3/2 { ees8 f g } | aes8 c,4 c8 \tuplet 3/2 { d4 ees f } | ees1 | r |
 }
 % endif
 

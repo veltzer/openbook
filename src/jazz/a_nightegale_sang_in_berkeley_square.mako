@@ -92,13 +92,13 @@
 	\partial 8 bes8 |
 
 	\repeat volta 2 {
-		g'4 g ees4. ees8 | bes'4 bes g ees8 ees | \times 2/3 { c'4 c c d d d } | ees2. ees8 ees |
+		g'4 g ees4. ees8 | bes'4 bes g ees8 ees | \tuplet 3/2 { c'4 c c d d d } | ees2. ees8 ees |
 		d4 bes c4. aes8 | bes4 ees, bes' aes8 aes | g aes bes4 ees, ees | ees2 f | ees1 |
-		r2 r4 r8 bes | g'4 g ees4. ees8 | bes'4 bes g ees8 ees | \times 2/3 { c'4 c c d d d } | ees2. ees4 |
+		r2 r4 r8 bes | g'4 g ees4. ees8 | bes'4 bes g ees8 ees | \tuplet 3/2 { c'4 c c d d d } | ees2. ees4 |
 		d4 bes c4. aes8 | bes4 ees, bes'4. aes8 | g aes bes4 ees, ees | ees2 f | ees1 | r |
 		r8. d16 e8. fis16 g8. a16 b8. c16 | d8 d4 b8~ b4. b8 | a4 a fis4. fis8 | e4 e d2 |
 		r8. d16 e8. fis16 g8. a16 b8. c16 | d8 d4 b8~ b4. b8 | a4 a g4. g8 | c4 c bes4. bes,8 |
-		g'4 g ees4. ees8 | bes'4 bes g ees8 ees | \times 2/3 { c'4 c c d d d } | ees2. ees4 | d bes c4. aes8 |
+		g'4 g ees4. ees8 | bes'4 bes g ees8 ees | \tuplet 3/2 { c'4 c c d d d } | ees2. ees4 | d bes c4. aes8 |
 		bes4 ees, bes'4. aes8 | g8 aes bes4 ees, ees | ees2 f |
 	} \alternative {
 		{
