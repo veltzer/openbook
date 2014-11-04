@@ -11,7 +11,7 @@
 	import socket # for gethostname
 	import subprocess # for subprocess.check_output
 
-	gattr['lilyver']='2.16.2'
+	gattr['lilyver']='2.18.2'
 	gattr['date']=datetime.datetime.now().strftime('%T %d-%m-%Y')
 	gattr['year']=datetime.datetime.now().strftime('%Y')
 	gattr['username']=pwd.getpwuid(os.getuid())[0]
