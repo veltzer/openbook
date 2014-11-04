@@ -97,7 +97,7 @@
 
 	%% part "B"
 	c4. a8~ a4. g8 | ges4 ees'8 cis d c4 a8 |
-	bes g4 fis8~ fis4 a8 fis | g a e4 r r8 \grace a8 bes8~ | bes \grace a8 bes4 r8 r4 \times2/3 { g16 aes g } f8 | e4 \times 2/3 { des'16 ees des } b8 c bes4 gis8 | a4. f8 \times 2/3 { g?16 aes g } f8 \times 2/3 { g16 aes g } f8 |
+	bes g4 fis8~ fis4 a8 fis | g a e4 r r8 \grace a8 bes8~ | bes \grace a8 bes4 r8 r4 \times 2/3 { g16 aes g } f8 | e4 \times 2/3 { des'16 ees des } b8 c bes4 gis8 | a4. f8 \times 2/3 { g?16 aes g } f8 \times 2/3 { g16 aes g } f8 |
 	e2. r8 a, |
 
 	%% part "A"
