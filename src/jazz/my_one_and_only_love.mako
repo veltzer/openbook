@@ -107,26 +107,26 @@
 	\repeat volta 2 {
 
 		%% part "A"
-		r8 g a8. c16 d8 e b' g | a4 d b~ \times 2/3 { b8 g f } |
-		e4 c' a~ \times 2/3 { a8 f e } | d4 b' g2 |
+		r8 g a8. c16 d8 e b' g | a4 d b~ \tuplet 3/2 { b8 g f } |
+		e4 c' a~ \tuplet 3/2 { a8 f e } | d4 b' g2 |
 		r8 a g f e8. d16 g8. e16 | c8 a4.~ a2 |
 		r8 f' g a g4 d | g1 |
 
 		%% part "A"
-		r8 g, a8. c16 d8 e b' g | a4 d b~ \times 2/3 { b8 g f } |
-		e4 c' a~ \times 2/3 { a8 f e } | d4 b' g2 |
+		r8 g, a8. c16 d8 e b' g | a4 d b~ \tuplet 3/2 { b8 g f } |
+		e4 c' a~ \tuplet 3/2 { a8 f e } | d4 b' g2 |
 		r8 a g f e8. d16 g8. e16 | c8 a4.~ a2 |
 		r8 f' g a g4 e | c2. r8 b |
 
 		%% part "B"
-		b'4~ \times 2/3 { b8 a g } b4~ \times 2/3 { b8 a g } | b,8 b4.~ b4 r8 b |
-		b'4~ \times 2/3 { b8 a g } b4~ \times 2/3 { b8 a g } | b,2. r8 b |
-		e4~ \times 2/3 { e8 fis g } e4. b8 | e4~ \times 2/3 { e8 fis g } e2 |
-		\times 2/3 { d4 d d } \times 2/3 { f! d f } | d1 |
+		b'4~ \tuplet 3/2 { b8 a g } b4~ \tuplet 3/2 { b8 a g } | b,8 b4.~ b4 r8 b |
+		b'4~ \tuplet 3/2 { b8 a g } b4~ \tuplet 3/2 { b8 a g } | b,2. r8 b |
+		e4~ \tuplet 3/2 { e8 fis g } e4. b8 | e4~ \tuplet 3/2 { e8 fis g } e2 |
+		\tuplet 3/2 { d4 d d } \tuplet 3/2 { f! d f } | d1 |
 
 		%% part "A"
-		r8 g, a8. c16 d8 e b' g | a4 d b~ \times 2/3 { b8 g f } |
-		e4 c' a~ \times 2/3 { a8 f e } | d4 b' g2 |
+		r8 g, a8. c16 d8 e b' g | a4 d b~ \tuplet 3/2 { b8 g f } |
+		e4 c' a~ \tuplet 3/2 { a8 f e } | d4 b' g2 |
 		r8 a g f e8. d16 g8. e16 | c8 a4.~ a2 |
 		r8 f' g f aes4 b |
 	} \alternative {

@@ -107,10 +107,10 @@
 	\repeat volta 2 {
 		r4 bes16 ees f bes ges4. bes,8 | ees4. d16 ees bes'8 aes r4 |
 		r ees16 ges bes des c4. ees,8 | a8 fis16 d gis4 aes8 f16 des g4 |
-		r4 aes16 ces ees ges f4. ces8 | bes4 \times 2/3 { ees,8 d des } c aes'4 ees16 f |
+		r4 aes16 ces ees ges f4. ces8 | bes4 \tuplet 3/2 { ees,8 d des } c aes'4 ees16 f |
 	} \alternative {
 		{
-			\times 2/3 { fis8 fis fis fis f dis } f4. dis8 | d bes r4 r2 |
+			\tuplet 3/2 { fis8 fis fis fis f dis } f4. dis8 | d bes r4 r2 |
 		}
 		{
 			fis'4 f8 dis f4 ees8 des | ees2. ees8 f |
@@ -124,7 +124,7 @@
 	%% part "A"
 	r4 bes16 ees f bes ges4. bes,8 | ees4. d16 ees bes'8 aes r4 |
 	r ees16 ges bes des c4. ees,8 | a8 fis16 d gis4 aes8 f16 des g4 |
-	r4 aes16 ces ees ges f4. ces8 | bes4 \times 2/3 { ees,8 d des } c aes'4 ees16 f |
+	r4 aes16 ces ees ges f4. ces8 | bes4 \tuplet 3/2 { ees,8 d des } c aes'4 ees16 f |
 	ges4 f8 ees f4 ees8 des | ees1 |
 }
 % endif

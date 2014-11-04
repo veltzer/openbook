@@ -79,7 +79,7 @@
 
 	%% part "B"
 	c8 d e f g2 | aes8 g f4 g2 | f8 e d4 e2 | d8 c b4 c2 |
-	c8 d e f g2 | aes8 g f4 g2 | f8 e d4 e2 | \times 2/3 { d4 c b } c4 b |
+	c8 d e f g2 | aes8 g f4 g2 | f8 e d4 e2 | \tuplet 3/2 { d4 c b } c4 b |
 
 	%% part "A"
 	a2 e' | r d8 c d4 | e1 | r2 d8 c d4 |

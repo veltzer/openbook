@@ -78,7 +78,7 @@
 	\repeat volta 2 {
 		f f g c, f4 r8 c | f f g c, f4 r8 c | f f g c, f f g c, | f f g c, f4 r8 c |
 		f f g c, f bes,4. | f'8 f g c, f b,!4. | f'8 f g c, f f g c, | f f g c, f4 r8 aes~ |
-		\times 2/3 { aes16 bes aes } f8 d b! d4 r | r8 g4. f8 g f ees | r c r c4 r8 r4 | r1 |
+		\tuplet 3/2 { aes16 bes aes } f8 d b! d4 r | r8 g4. f8 g f ees | r c r c4 r8 r4 | r1 |
 	}
 }
 % endif

@@ -129,19 +129,19 @@
 	}
 
 	%% part "B"
-	f1~ | \times 2/3 {f4 ges f} \times 2/3 {ees4 f ees} |
+	f1~ | \tuplet 3/2 {f4 ges f} \tuplet 3/2 {ees4 f ees} |
 	des4. ees8~ ees2~ | ees2. r8 gis~ |
-	gis1~ | \times 2/3 {gis4 a gis} \times 2/3 {fis gis fis} |
+	gis1~ | \tuplet 3/2 {gis4 a gis} \tuplet 3/2 {fis gis fis} |
 	e4. fis8~ fis2~ | fis2. r8 a~ |
-	a1~ | \times 2/3 {a4 bes a} \times 2/3 {g a g} |
-	f4. g8~ g2~ | g2 \times 2/3 {r4 a bes} |
-	\times 2/3 {c c, d} \times 2/3 {e f g} | gis2. a4 |
-	\times 2/3 {bes bes, c} \times 2/3 {d e f} | fis2. r4 |
+	a1~ | \tuplet 3/2 {a4 bes a} \tuplet 3/2 {g a g} |
+	f4. g8~ g2~ | g2 \tuplet 3/2 {r4 a bes} |
+	\tuplet 3/2 {c c, d} \tuplet 3/2 {e f g} | gis2. a4 |
+	\tuplet 3/2 {bes bes, c} \tuplet 3/2 {d e f} | fis2. r4 |
 
 	%% part "A"
 	g4. e8 e4 d8 g8~ | g4 e8 e~ e e d g~ | g4 e e d8 g~ | g g e e~ e e d a'~ |
-	a4. f8 f f d c'~ | c4. e,8 \times 2/3 {e4 e d} | e1 | r4 r8 e8 \times 2/3 {e4 e d} |
-	e1 | r4 r8 e8 \times 2/3 {e4 e d} | e1~ | e2. r4 |
+	a4. f8 f f d c'~ | c4. e,8 \tuplet 3/2 {e4 e d} | e1 | r4 r8 e8 \tuplet 3/2 {e4 e d} |
+	e1 | r4 r8 e8 \tuplet 3/2 {e4 e d} | e1~ | e2. r4 |
 }
 % endif
 

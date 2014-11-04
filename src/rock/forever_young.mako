@@ -47,7 +47,7 @@
 		}
 		${defs.chordDefs()}
 		${chords()}
-\new Voice="melody" \relative {
+\new Voice="melody" \relative c' {
 	\time 4/4
 	\key c \major
 
@@ -114,7 +114,7 @@
 	%%\midi {
 	%%	\context {
 	%%		\Score
-	%%		tempoWholesPerMinute = #(ly:make-moment 130 4)
+	%%		tempoWholesPerMinute = #(ly:make-moment 130/4)
 	%%	}
 	%%}
 	\layout {}

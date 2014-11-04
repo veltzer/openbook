@@ -52,7 +52,7 @@
 \new Voice \with {
 	\consists "Pitch_squash_engraver"
 } {
-	\relative {
+	\relative c' {
 		\improvisationOn
 		c4 c8 c c4 c8 c
 		f4 f8 f f4 f8 f
@@ -68,7 +68,7 @@
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 	\layout {}

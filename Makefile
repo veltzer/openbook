@@ -38,7 +38,7 @@ DO_PDFRED_BOOKS:=1
 # should we reduce the size of the pdf individual songs?
 DO_PDFRED_PIECES:=1
 # should we stop on lilypond output?
-DO_STOP_OUTPUT:=1
+DO_STOP_OUTPUT:=0
 
 #############
 # CONSTANTS #

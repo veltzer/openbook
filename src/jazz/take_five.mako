@@ -69,15 +69,15 @@
 	\partial 2 a8 d f g |
 
 	%% part "A"
-	gis a gis g f4 a, c | d2. \times 2/3 { e16 f e } d8 c4 | d2. \times 2/3 { c16 d c } a8 g4 | a2.~ a8 d f g |
-	gis a gis g f4 a, c | d2. \times 2/3 { e16 f e } d8 c4 | d2. \times 2/3 { c16 d c } a8 g4 | a2.~ a2 |
+	gis a gis g f4 a, c | d2. \tuplet 3/2 { e16 f e } d8 c4 | d2. \tuplet 3/2 { c16 d c } a8 g4 | a2.~ a8 d f g |
+	gis a gis g f4 a, c | d2. \tuplet 3/2 { e16 f e } d8 c4 | d2. \tuplet 3/2 { c16 d c } a8 g4 | a2.~ a2 |
 
 	%% part "B"
 	d'8 f4 d8 bes4 g8 a bes b | c e4 c8 a4 f8 g gis a | bes8 d4 bes8 g4 e8 f g gis | a gis a bes c4 c8 b c cis |
 	d8 f4 d8 bes4 g8 a bes b | c e4 c8 a4 f8 g gis a | bes8 d4 bes8 g4 e8 g c bes | a2. a,8 d f g |
 
 	%% part "A"
-	gis a gis g f4 a, c | d2. \times 2/3 { e16 f e } d8 c4 | d2. \times 2/3 { c16 d c } a8 g4 | a2.~ a8 d f g |
-	gis a gis g f4 a, c | d2. \times 2/3 { c16 d c } a8 g4 | a2. \times 2/3 { e'16 f e } d8 c4 | d2.~ d2 |
+	gis a gis g f4 a, c | d2. \tuplet 3/2 { e16 f e } d8 c4 | d2. \tuplet 3/2 { c16 d c } a8 g4 | a2.~ a8 d f g |
+	gis a gis g f4 a, c | d2. \tuplet 3/2 { c16 d c } a8 g4 | a2. \tuplet 3/2 { e'16 f e } d8 c4 | d2.~ d2 |
 }
 % endif

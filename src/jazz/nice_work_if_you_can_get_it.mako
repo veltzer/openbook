@@ -80,7 +80,7 @@
 	d4. e8~ e8. d16 e8. g16 | a8 b4. r8. d,16 e8. g16 | a8 b4. g4 g8 g~ | g2. r4 |
 
 	%% part "A"
-	b4 c c b | a b2. | g4 a \times 2/3 { a4 gis g } | fis1 |
+	b4 c c b | a b2. | g4 a \tuplet 3/2 { a4 gis g } | fis1 |
 	d4. e8~ e8. d16 e8. g16 | a8 b4. r8. d,16 e8. g16 | a8 b4. g4 g8 g~ | g1 |
 
 	%% part "B"
@@ -88,7 +88,7 @@
 	r8 a4 fis8 a4 fis | a4. a8~ a4 a8. b16 | d4 d d8. e16 b4 | ais1 |
 
 	%% part "A"
-	b4 c c b | a b2. | g4 a \times 2/3 { a4 gis g } | fis1 |
+	b4 c c b | a b2. | g4 a \tuplet 3/2 { a4 gis g } | fis1 |
 	d4. e8~ e8. d16 e8. g16 | a8 b4. r8. d,16 e8. g16 | a8 b4.~ b2 | d4 b g e | g1~ | g2. r4 |
 }
 % endif

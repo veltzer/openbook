@@ -112,15 +112,15 @@
 
 	%% part "A"
 	a'1~ | a8 bes4 a bes a8~ | a1~ | a8 bes4 a bes a8~ |
-	a2~ \times 2/3 { a4 gis a } | c8 b4 bes8~ bes a4. | a4. g8~ g2~ | g1 |
+	a2~ \tuplet 3/2 { a4 gis a } | c8 b4 bes8~ bes a4. | a4. g8~ g2~ | g1 |
 	g~ | g8 a4 g a g8~ | g1~ | g8 a4 g a g8~ |
-	g2~ \times 2/3 { g4 fis g } | bes4. a8 \times 2/3 { aes4 g g~ } | g4. f8~ f2~ | f1 |
+	g2~ \tuplet 3/2 { g4 fis g } | bes4. a8 \tuplet 3/2 { aes4 g g~ } | g4. f8~ f2~ | f1 |
 
 	%% part "B"
 	f1~ | f8 g4 f g f8~ | f1~ | f8 g4 f g a8~ |
 	a2. f4 | d e d e | f2 f~ | f1 |
 	f~ | f4. g8 f g4 e8~ | e1~ | e8 f4 e f e8~ |
-	e2~ \times 2/3 { e4 dis e } | g4. ges8 f4 e | e4. d8~ d2 | r1 |
+	e2~ \tuplet 3/2 { e4 dis e } | g4. ges8 f4 e | e4. d8~ d2 | r1 |
 }
 % endif
 

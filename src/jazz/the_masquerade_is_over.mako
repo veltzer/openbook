@@ -81,8 +81,8 @@
 	\partial 4 bes4 |
 
 	\repeat volta 2 {
-		g'2. g4 | g2~ \times 2/3 { g4 bes aes } | g2. g4 | f2 r4 d8 ees | c'2. c4 |
-		bes2~ \times 2/3 { bes4 c bes } | a2. f4 | aes2 r4 g8 aes | bes2~ bes8 g f ees | ees'2. c4 |
+		g'2. g4 | g2~ \tuplet 3/2 { g4 bes aes } | g2. g4 | f2 r4 d8 ees | c'2. c4 |
+		bes2~ \tuplet 3/2 { bes4 c bes } | a2. f4 | aes2 r4 g8 aes | bes2~ bes8 g f ees | ees'2. c4 |
 		bes2 aes | r4 ees4 f ees |
 	} \alternative {
 		{
@@ -94,8 +94,8 @@
 		}
 	}
 	f8 f f g aes4 g | bes bes2 ees,4 | f8 f f g aes4 g | bes2 r4 g |
-	a4 b c b8 a | d4 d2 d4 | f2~ \times 2/3 { f4 ees c } | f,2 r4 <bes, \parenthesize fis'> | g'2. g4 |
-	g2~ \times 2/3 { g4 bes aes } | g2. g4 | f2 r4 d8 ees | c'2. c4 | bes2~ \times 2/3 { bes4 c bes } |
+	a4 b c b8 a | d4 d2 d4 | f2~ \tuplet 3/2 { f4 ees c } | f,2 r4 <bes, \parenthesize fis'> | g'2. g4 |
+	g2~ \tuplet 3/2 { g4 bes aes } | g2. g4 | f2 r4 d8 ees | c'2. c4 | bes2~ \tuplet 3/2 { bes4 c bes } |
 	a2. f4 | aes?2 r4 g8 aes | bes2~ bes8 g f ees | ees'2. ees4 | ees2 f, |
 	r4 f g aes | c1~ | c4 aes c ees | ees1~ | ees\fermata |
 }

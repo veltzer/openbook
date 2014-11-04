@@ -99,8 +99,8 @@
 
 	%% part "A"
 	\repeat volta 2 {
-		g'2 bes | a2. g4 | \times 2/3 { f4 f f } e e | d2. c4 |
-		\times 2/3 { f f f } e d | \times 2/3 { g g g } f e |
+		g'2 bes | a2. g4 | \tuplet 3/2 { f4 f f } e e | d2. c4 |
+		\tuplet 3/2 { f f f } e d | \tuplet 3/2 { g g g } f e |
 	}
 	\alternative {
 		{
@@ -113,11 +113,11 @@
 
 	%% part "B"
 	gis4 a gis a | ais b ais b | d2 c4 c~ | c1 |
-	d2 c4 c~ | c2 \times 2/3 { d,4 fis b } | a2 aes | g1 |
+	d2 c4 c~ | c2 \tuplet 3/2 { d,4 fis b } | a2 aes | g1 |
 
 	%% part "A"
-	g2 bes | a2. g4 | \times 2/3 { f4 f f } e e | d2. c4 |
-	\times 2/3 { f f f } e d | \times 2/3 { g g g } f e | a2 a | c2. r4 |
+	g2 bes | a2. g4 | \tuplet 3/2 { f4 f f } e e | d2. c4 |
+	\tuplet 3/2 { f f f } e d | \tuplet 3/2 { g g g } f e | a2 a | c2. r4 |
 }
 % endif
 

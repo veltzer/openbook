@@ -85,11 +85,11 @@
 
 	%% part "A"
 	g2 bes4 aes8 g | f4 aes2 g4 | ees2 g4 f | d f2 ees4 |
-	bes1~ | bes8 c d ees \times 2/3 { f4 ees d } | bes'1~ | bes2~ bes8 bes, ees f |
+	bes1~ | bes8 c d ees \tuplet 3/2 { f4 ees d } | bes'1~ | bes2~ bes8 bes, ees f |
 
 	%% part "A"
 	g2 bes4 aes8 g | f4 aes2 g4 | ees2 g4 f | d f2 ees4 |
-	bes1~ | bes8 c d ees \times 2/3 { f4 ees d } | ees1~ | ees2 bes8 c d ees |
+	bes1~ | bes8 c d ees \tuplet 3/2 { f4 ees d } | ees1~ | ees2 bes8 c d ees |
 
 	%% part "B"
 	f1~ | f4 d8 ees f ees4 d8 | g4. d8 des2~ | des~ des8 ees4 ees8 |
@@ -97,7 +97,7 @@
 
 	%% part "A"
 	g2 bes4 aes8 g | f4 aes2 g4 | ees2 g4 f | d f2 ees4 |
-	bes1~ | bes8 c d ees \times 2/3 { f4 ees d } | bes'1~ | bes4 g8 aes \times 2/3 { bes4 aes g } |
+	bes1~ | bes8 c d ees \tuplet 3/2 { f4 ees d } | bes'1~ | bes4 g8 aes \tuplet 3/2 { bes4 aes g } |
 	c2. c,4 | d ees2 f4 | ees1~ | ees2 r |
 }
 % endif

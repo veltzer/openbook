@@ -86,7 +86,7 @@
 	f8 g f g f2 | a8 a g f e ees4. | d8 bes' g f e a4 f8~ | f2. e8 fis |
 
 	%% part "B"
-	e4 cis'2 e8 ees | d cis b a gis e4. | e8 fis fis gis \times 2/3 { gis4 a cis } | e2. e,8 fis |
+	e4 cis'2 e8 ees | d cis b a gis e4. | e8 fis fis gis \tuplet 3/2 { gis4 a cis } | e2. e,8 fis |
 	e4 cis'2 e8 ees | d cis b a gis e4. | r8 a4 b8 a4 bes | c bes8 g~ g r8 r4 |
 
 	%% part "A"

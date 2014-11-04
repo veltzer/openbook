@@ -108,20 +108,20 @@
 	\repeat volta 2 {
 
 		%% part "A"
-		r4 b' \times 2/3 { b c b } | d d2. | r4 g, \times 2/3 { g a g } | b1 |
-		r4 d, \times 2/3 { d e d } | a' a2. | r4 a \times 2/3 { a g fis } | g1 |
+		r4 b' \tuplet 3/2 { b c b } | d d2. | r4 g, \tuplet 3/2 { g a g } | b1 |
+		r4 d, \tuplet 3/2 { d e d } | a' a2. | r4 a \tuplet 3/2 { a g fis } | g1 |
 
 		%% part "A"
-		r4 b \times 2/3 { b c b } | d d2. | r4 g, \times 2/3 { g a g } | b1 |
-		r4 d, \times 2/3 { d e d } | a' a2. | r4 a \times 2/3 { a g fis } | g1 |
+		r4 b \tuplet 3/2 { b c b } | d d2. | r4 g, \tuplet 3/2 { g a g } | b1 |
+		r4 d, \tuplet 3/2 { d e d } | a' a2. | r4 a \tuplet 3/2 { a g fis } | g1 |
 
 		%% part "B"
-		a2 \times 2/3 { g4 a g } | e d2. | r4 a' \times 2/3 { a g e } | g1 |
-		a2 \times 2/3 { g4 a g } | e d2. | r8 b' b b b a4 g8 | a1 |
+		a2 \tuplet 3/2 { g4 a g } | e d2. | r4 a' \tuplet 3/2 { a g e } | g1 |
+		a2 \tuplet 3/2 { g4 a g } | e d2. | r8 b' b b b a4 g8 | a1 |
 
 		%% part "A"
-		r4 b \times 2/3 { b c b } | d d2. | r4 g, \times 2/3 { g a g } | b1 |
-		r4 d, \times 2/3 { d e d } | a' a2. | r4 a \times 2/3 { a g fis } |
+		r4 b \tuplet 3/2 { b c b } | d d2. | r4 g, \tuplet 3/2 { g a g } | b1 |
+		r4 d, \tuplet 3/2 { d e d } | a' a2. | r4 a \tuplet 3/2 { a g fis } |
 	} \alternative {
 		{
 			g2 r |

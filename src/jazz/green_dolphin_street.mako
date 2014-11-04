@@ -108,8 +108,8 @@
 
 	%% part "A"
 	\repeat volta 2 {
-		c'2 c~ | c \times 2/3 { b4 g e } | bes'1~ | bes |
-		a2 a~ | a \times 2/3 { aes4 f des } | g1~ | g |
+		c'2 c~ | c \tuplet 3/2 { b4 g e } | bes'1~ | bes |
+		a2 a~ | a \tuplet 3/2 { aes4 f des } | g1~ | g |
 	}
 	\alternative {
 		{

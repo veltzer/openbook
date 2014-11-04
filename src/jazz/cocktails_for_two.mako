@@ -96,7 +96,7 @@
 	}
 
 	%% part "B"
-	r4 e'4 \times 2/3 { e4 e e } |
+	r4 e'4 \tuplet 3/2 { e4 e e } |
 	e2 d | r4 d8 cis e d c b | d4. c8 c2 |
 	r4 c8 b d c b a | c b~ b2 b8 a | a4. g8 g4. fis8 | a4. g8 g2 |
 	r8 c, e g gis b a8. e16 | a1~ | a8 c, e g gis b a8. e16 | g1~ |

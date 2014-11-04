@@ -123,8 +123,8 @@
 	}
 
 	%% part "B"
-	e8. fis16 \times 2/3 { g8 a g~ } g8. g16 g8. g16 | g4. g8 b g4. |
-	e8. fis16 \times 2/3 { g8 a g~ } g8. g16 g8. g16 | g4. g8 e d4. | e8. fis16 \times 2/3 { g8 a g~ } g8. g16 g8. g16 | g4. g8 c8 b4. |
+	e8. fis16 \tuplet 3/2 { g8 a g~ } g8. g16 g8. g16 | g4. g8 b g4. |
+	e8. fis16 \tuplet 3/2 { g8 a g~ } g8. g16 g8. g16 | g4. g8 e d4. | e8. fis16 \tuplet 3/2 { g8 a g~ } g8. g16 g8. g16 | g4. g8 c8 b4. |
 
 	%% part "A"
 	d4 b8 a g4 e | a2. ais8 b | d2.~ d8 ais16 b | d8 b d cis c4 ais8 b |

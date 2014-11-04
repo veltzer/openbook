@@ -93,14 +93,14 @@
 	\partial 4 b'4 |
 
 	%% part "A"
-	b1~ | b2 \times 2/3 { a4 b a } | ees1~ | ees2 a |
-	a1~ | a4 a \times 2/3 { g a g } | des1~ | des2. g4 |
+	b1~ | b2 \tuplet 3/2 { a4 b a } | ees1~ | ees2 a |
+	a1~ | a4 a \tuplet 3/2 { g a g } | des1~ | des2. g4 |
 	g4. e8 g4. e8 | fis2. fis4 | fis4. d8 fis4. d8 | e4 fis g b |
-	e2 b~ | b4 e, \times 2/3 { e fis g } | b2 a~ | a b |
+	e2 b~ | b4 e, \tuplet 3/2 { e fis g } | b2 a~ | a b |
 
 	%% part "B"
-	b1~ | b2 \times 2/3 { a4 b a } | ees1~ | ees2 a |
-	a1~ | a4 a \times 2/3 { g a g } | des1~ | des2. g4 |
+	b1~ | b2 \tuplet 3/2 { a4 b a } | ees1~ | ees2 a |
+	a1~ | a4 a \tuplet 3/2 { g a g } | des1~ | des2. g4 |
 	g4. e8 g4. e8 | fis2. a4 | a4. fis8 a4. fis8 | g4 a b d |
 	e2 e, | d' b | g1 | r2 b |
 }

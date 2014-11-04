@@ -73,7 +73,7 @@ PartChords=\chordmode {
 	\endChords
 }
 
-PartHighVoice=\relative {
+PartHighVoice=\relative c' {
 	\time 3/4
 	\key c \major
 	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
@@ -84,11 +84,11 @@ PartHighVoice=\relative {
 	r8 e' g f e dis \endPart
 
 	\myMark "A"
-	e2\segno e4 | f2 \times 2/3 {f8 g f} | e2. | r8 e g f e dis | \myFakeEndLine
-	e2 e4 | f2 \times 2/3 {f8 g f} | e2. | r8 a b a gis a | \myFakeEndLine
+	e2\segno e4 | f2 \tuplet 3/2 {f8 g f} | e2. | r8 e g f e dis | \myFakeEndLine
+	e2 e4 | f2 \tuplet 3/2 {f8 g f} | e2. | r8 a b a gis a | \myFakeEndLine
 	f2. | r8 gis a b a gis | e2. | r8 e g f e f | \myFakeEndLine
 	e2. | r8 f e d c b | a2. ~ | a8-\markup { \italic "Fine" }
-	\override BreathingSign #'text = \markup {
+	\override BreathingSign.text = \markup {
 		\musicglyph #"scripts.caesura.straight"
 	}
 	\breathe
@@ -128,7 +128,7 @@ PartHighVoice=\relative {
 	\endTune
 }
 
-PartMidVoice=\relative {
+PartMidVoice=\relative c' {
 	\voiceTwo
 
 	s2. |
@@ -159,7 +159,7 @@ PartMidVoice=\relative {
 	}
 }
 
-PartLowVoice=\relative {
+PartLowVoice=\relative c' {
 	\voiceFour
 
 	s2. |

@@ -109,19 +109,19 @@
 
 	%% part "A"
 	f4 r r8 des16 c b8 c | e g f g a bes c a | bes c16 bes a8 f g ees~ ees4 | r2 r4 f16 g bes d |
-	f8 r d g, r4 f16 g bes d | f4 des8 g, r2 | r8 e \times 2/3 { f8 a c } e ees d des | c bes \times 2/3 { a16 bes a } g8 ges ees c cis |
-	f a, \times 2/3 { bes d f } a f d bes | g'4 c8 aes~ aes4 c8 a~ | a4 c,8 d~ d4 r | r2 r4 f'8 e |
+	f8 r d g, r4 f16 g bes d | f4 des8 g, r2 | r8 e \tuplet 3/2 { f8 a c } e ees d des | c bes \tuplet 3/2 { a16 bes a } g8 ges ees c cis |
+	f a, \tuplet 3/2 { bes d f } a f d bes | g'4 c8 aes~ aes4 c8 a~ | a4 c,8 d~ d4 r | r2 r4 f'8 e |
 
 	%% part "A"
 	f r c bes c4 a8 f | bes c d c r b, c bes' | aes a c a bes c16 bes a8 g | f e ees g d c f e |
 	d f, aes b e4 b8 g'~ | g4 r8 f~ f4 e8 c | d a~ a2 r4 | r2 r4 g'16 a bes d |
-	f16 d ees e c cis d c bes a g f e g bes d | c a \times 2/3 { bes c bes } a f d bes g' aes e c cis d b g | %% cont on next line
+	f16 d ees e c cis d c bes a g f e g bes d | c a \tuplet 3/2 { bes c bes } a f d bes g' aes e c cis d b g | %% cont on next line
 	c4 r r8 bes a16 c e g | f4 r8 c e4~ e16 g bes d |
 
 	%% part "A"
-	c4 r8 bes a f4 b8~ | b bes \times 2/3 { aes16 bes aes } f8 g f4 ees8~ | ees c~ c4 r2 | r4 r8 g''8~ g4 f8 ees |
-	d c bes c16 bes aes8 f d4 | r r8 \mark \markup { \italic { Lay Back } } g~ g f des b | c4 r r r8 e'16 ees | d8 des c bes \times 2/3 { a16 bes a } g8 ges g |
-	a g r4 r8 a bes c | \times 2/3 { des ees des } c b bes g c bes | a f des b c4 r4 | r4 r8 a'~ a4~ a8 c16 a |
+	c4 r8 bes a f4 b8~ | b bes \tuplet 3/2 { aes16 bes aes } f8 g f4 ees8~ | ees c~ c4 r2 | r4 r8 g''8~ g4 f8 ees |
+	d c bes c16 bes aes8 f d4 | r r8 \mark \markup { \italic { Lay Back } } g~ g f des b | c4 r r r8 e'16 ees | d8 des c bes \tuplet 3/2 { a16 bes a } g8 ges g |
+	a g r4 r8 a bes c | \tuplet 3/2 { des ees des } c b bes g c bes | a f des b c4 r4 | r4 r8 a'~ a4~ a8 c16 a |
 
 	%% part "End"
 	g8 f g2. |

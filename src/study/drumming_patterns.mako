@@ -39,7 +39,7 @@ Drumming patterns to train with pad over...
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 	\layout {}
@@ -56,7 +56,7 @@ Very famous comping for certain standards (My Baby Don't Care For Me)...
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 	\layout {}
@@ -73,7 +73,7 @@ Count Basie, Every Day I have the Blues...
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 	\layout {}
@@ -90,7 +90,7 @@ Bossa Nove basics...
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 	\layout {}
@@ -101,41 +101,41 @@ Triplet based comping...
 \score {
 <<
 	\drums {
-		\times 4/3 { sn16 sn16 sn16 } \times 4/3 { sn16 sn16 sn16 } \times 4/3 { sn16 sn16 sn16 } \times 4/3 { sn16 sn16 sn16 } |
+		\tuplet 3/4 { sn16 sn16 sn16 } \tuplet 3/4 { sn16 sn16 sn16 } \tuplet 3/4 { sn16 sn16 sn16 } \tuplet 3/4 { sn16 sn16 sn16 } |
 	}
 >>
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 	\layout {}
 }
 \score {
 	\drums {
-		\times 4/3 { r16 sn16 sn16 } \times 4/3 { r16 sn16 sn16 } \times 4/3 { r16 sn16 sn16 } \times 4/3 { r16 sn16 sn16 } |
-		\times 4/3 { sn16 r16 sn16 } \times 4/3 { sn16 r16 sn16 } \times 4/3 { sn16 r16 sn16 } \times 4/3 { sn16 r16 sn16 } |
-		\times 4/3 { sn16 sn16 r16 } \times 4/3 { sn16 sn16 r16 } \times 4/3 { sn16 sn16 r16 } \times 4/3 { sn16 sn16 r16 } |
+		\tuplet 3/4 { r16 sn16 sn16 } \tuplet 3/4 { r16 sn16 sn16 } \tuplet 3/4 { r16 sn16 sn16 } \tuplet 3/4 { r16 sn16 sn16 } |
+		\tuplet 3/4 { sn16 r16 sn16 } \tuplet 3/4 { sn16 r16 sn16 } \tuplet 3/4 { sn16 r16 sn16 } \tuplet 3/4 { sn16 r16 sn16 } |
+		\tuplet 3/4 { sn16 sn16 r16 } \tuplet 3/4 { sn16 sn16 r16 } \tuplet 3/4 { sn16 sn16 r16 } \tuplet 3/4 { sn16 sn16 r16 } |
 	}
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 	\layout {}
 }
 \score {
 	\drums {
-		\times 4/3 { sn16 r16 r16 } \times 4/3 { sn16 r16 r16 } \times 4/3 { sn16 r16 r16 } \times 4/3 { sn16 r16 r16 } |
-		\times 4/3 { r16 sn16 r16 } \times 4/3 { r16 sn16 r16 } \times 4/3 { r16 sn16 r16 } \times 4/3 { r16 sn16 r16 } |
-		\times 4/3 { r16 r16 sn16 } \times 4/3 { r16 r16 sn16 } \times 4/3 { r16 r16 sn16 } \times 4/3 { r16 r16 sn16 } |
+		\tuplet 3/4 { sn16 r16 r16 } \tuplet 3/4 { sn16 r16 r16 } \tuplet 3/4 { sn16 r16 r16 } \tuplet 3/4 { sn16 r16 r16 } |
+		\tuplet 3/4 { r16 sn16 r16 } \tuplet 3/4 { r16 sn16 r16 } \tuplet 3/4 { r16 sn16 r16 } \tuplet 3/4 { r16 sn16 r16 } |
+		\tuplet 3/4 { r16 r16 sn16 } \tuplet 3/4 { r16 r16 sn16 } \tuplet 3/4 { r16 r16 sn16 } \tuplet 3/4 { r16 r16 sn16 } |
 	}
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 	\layout {}
@@ -145,24 +145,24 @@ Triplet based combinations...
 }
 \score {
 	\drums {
-		\times 4/3 { sn16 sn8 } \times 4/3 { sn8 sn16 } \times 4/3 { sn16 sn8 } \times 4/3 { sn8 sn16 } |
+		\tuplet 3/4 { sn16 sn8 } \tuplet 3/4 { sn8 sn16 } \tuplet 3/4 { sn16 sn8 } \tuplet 3/4 { sn8 sn16 } |
 	}
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 	\layout {}
 }
 \score {
 	\drums {
-		\times 4/3 { sn8 sn16 } \times 4/3 { r16 sn16 sn16 } \times 4/3 { sn8 sn16 } \times 4/3 { r16 sn16 sn16 } |
+		\tuplet 3/4 { sn8 sn16 } \tuplet 3/4 { r16 sn16 sn16 } \tuplet 3/4 { sn8 sn16 } \tuplet 3/4 { r16 sn16 sn16 } |
 	}
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 	\layout {}

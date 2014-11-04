@@ -57,7 +57,7 @@ Regular rock type drumming...
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 	\layout {}
@@ -91,7 +91,7 @@ My own drills for understanding the on and off 8 notes...
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 	\layout {}
@@ -125,7 +125,7 @@ Patterns of 3 located in different places in the eight 8 notes...
 	\midi {
 		\context {
 			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130 4)
+			tempoWholesPerMinute = #(ly:make-moment 130/4)
 		}
 	}
 	\layout {}

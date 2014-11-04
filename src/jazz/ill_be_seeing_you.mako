@@ -121,7 +121,7 @@
 		aes4. g8 g4. f8 | f4. e8 e4 f | bes4. aes8 aes4. g8 | g4. fis8 fis4 g |
 
 		%% part "C"
-		%% on the third bar we can do <g \parenthesize \tweak #'font-size #-1 g'>2.
+		%% on the third bar we can do <g \parenthesize \tweak font-size #-1 g'>2.
 		c4. c8 bes4 aes | d4. d8 c4 b | ees ees d c | g2. f8 g |
 		aes aes aes aes aes2~ | aes8 aes bes ces bes4 aes |
 	} \alternative {

@@ -84,7 +84,7 @@
 	bes a g f | g2 a4 bes | d4. c8 c2~ | c d |
 
 	%% part "B"
-	ees1~ | ees4 ees ees d | f1~ | f4 ees \times 2/3 { d c bes } |
+	ees1~ | ees4 ees ees d | f1~ | f4 ees \tuplet 3/2 { d c bes } |
 	d2 d2~ | d4 c bes a | c1~ | c2. bes4 |
 	a1~ | a4 g a bes | f1~ | f4 f f ees |
 	ges1~ | ges4 ges ges f | f1~ | f1 |

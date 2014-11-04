@@ -75,7 +75,7 @@
 	f2~ f8 bes, d f | g a g2 g4 | g2~ g8 c, ees g | a2. a4 |
 	a2~ a8 d, f a | bes c bes2 bes4 | bes2~ bes8 ees, g bes |
 	c2. bes8 c | d4. d8 d4 c8 bes | d4 d2 c8 bes |
-	c4. c16 c \times 2/3 {c8 d c} a8 bes | c2. bes8 a |
+	c4. c16 c \tuplet 3/2 {c8 d c} a8 bes | c2. bes8 a |
 	bes4. bes8 bes a g a | bes4 bes2 a8 g | a4. a8 a f g f |
 	a2. g4 |
 	f2~ f8 bes, d f | g a g2 g4 | g2~ g8 c, ees g | a2. a4 |

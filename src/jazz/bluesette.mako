@@ -115,7 +115,7 @@
 	%% part "A"
 	g a b | d r r | c b a | g2 fis4 | e fis g | b2. | a4 g f | e2 d4 |
 	g2 b,4 | c4. b8 c d | ees4. f8 g bes | a4 bes c | f,2 a,4 | bes4. c8 des ees | f2 des'4 | c2 bes4 |
-	ees,8 ees f f g g | aes aes bes bes c c | d2 \times 2/3 { c8 d c } | b2 a4 | d,2.~ | d~ | d | r2. |
+	ees,8 ees f f g g | aes aes bes bes c c | d2 \tuplet 3/2 { c8 d c } | b2 a4 | d,2.~ | d~ | d | r2. |
 
 	%% part "A"
 	r4 d'8 d d d | c4 b2 | r4 c8 c c c | b4 a2 | r4 b8 b b b | a4 g2 | r4 a8 a a a | g4 f2 |

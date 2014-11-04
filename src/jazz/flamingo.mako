@@ -122,7 +122,7 @@
 
 	%% part "A"
 	c'4. a8~ a2 | r4 bes8 c e4 d8 c | aes1 | r4 g8 aes c4 bes8 aes |
-	f4 f2. | r4 g \times 2/3 { bes d f } | a1~ | a2. r4 |
+	f4 f2. | r4 g \tuplet 3/2 { bes d f } | a1~ | a2. r4 |
 }
 % endif
 

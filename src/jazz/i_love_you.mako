@@ -90,12 +90,12 @@
 
 	%% part "A"
 	c2 des,~ | des bes'4. a8 | gis4. a8 a2~ | a r4 a |
-	a2 bes,~ | bes \times 2/3 { g'4 f e } | d1~ | d2 r4 c' |
+	a2 bes,~ | bes \tuplet 3/2 { g'4 f e } | d1~ | d2 r4 c' |
 	c2 des,~ | des4. bes'8 bes4. a8 | gis4. a8 a2~ | a a4 a |
 	b4. cis8 cis2 | d2. e4 | e1~ | e2 r4 e |
 
 	%% part "B"
-	f4. f8 f2~ | f4 e \times 2/3 { e d c } | e4. e8 e2~ | e4 r c d |
+	f4. f8 f2~ | f4 e \tuplet 3/2 { e d c } | e4. e8 e2~ | e4 r c d |
 	ees4. ees8 ees2~ | ees4. d8 c4 bes8 a | g1~ | g2 r4 c |
 	c2 des,~ | des bes'4. a8 | gis4. a8 a2~ | a bes4 c |
 	cis4. d8 d4 d, | a'2 a | f1 | r |

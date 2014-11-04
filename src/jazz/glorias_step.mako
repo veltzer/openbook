@@ -79,7 +79,7 @@
 
 	%% part "A"
 	\repeat volta 2 {
-		r8 g'4 c8 \times 2/3 { b c a } \times 2/3 { r a e } | g1 | r8 f g f~ f ees c ees~ | ees2 r8 c bes c~ | c1 |
+		r8 g'4 c8 \tuplet 3/2 { b c a } \tuplet 3/2 { r a e } | g1 | r8 f g f~ f ees c ees~ | ees2 r8 c bes c~ | c1 |
 	}
 
 	%% part "B"
@@ -87,6 +87,6 @@
 	aes2. g4 | bes2 r8 aes16 bes aes8 des, | ees'2 r8 des16 ees des8 aes | ges'1~ | ges |
 
 	%% part "A"
-	r8 g,4 c8 \times 2/3 { b c a } \times 2/3 { r a e } | g1 | r8 f g f~ f ees c ees~ | ees2 r8 c bes c~ | c1 |
+	r8 g,4 c8 \tuplet 3/2 { b c a } \tuplet 3/2 { r a e } | g1 | r8 f g f~ f ees c ees~ | ees2 r8 c bes c~ | c1 |
 }
 % endif
