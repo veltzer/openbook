@@ -107,14 +107,14 @@
 		des4 c8 bes a c bes g | a4 g8 fis r4 r8 d |
 	} \alternative {
 		{
-			a' g d bes f' d ees d~ | d a' \times2/3 { fis! g a fis g a fis g a } |
-			d4 r r8 a \times2/3 { fis g a } | \times2/3 { fis g a fis g a fis g a fis g a } |
+			a' g d bes f' d ees d~ | d a' \times 2/3 { fis! g a fis g a fis g a } |
+			d4 r r8 a \times 2/3 { fis g a } | \times 2/3 { fis g a fis g a fis g a fis g a } |
 			d b a g c aes fis d | ees f! g b bes ges e! d |
 		}
 		{
-			a' g d b f'! d ees d~ | d a' \times2/3 { fis! g a fis g a fis g a } |
-			d r r4 r2 | r8 a \times2/3 { fis g a fis g a fis g a } |
-			d a \times2/3 { fis g a fis g a fis g a } | d r r4 r2 |
+			a' g d b f'! d ees d~ | d a' \times 2/3 { fis! g a fis g a fis g a } |
+			d r r4 r2 | r8 a \times 2/3 { fis g a fis g a fis g a } |
+			d a \times 2/3 { fis g a fis g a fis g a } | d r r4 r2 |
 		}
 	}
 }
