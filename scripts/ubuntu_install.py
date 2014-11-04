@@ -35,6 +35,9 @@ packs=[
 	'ghostscript', # for pdfopt(1)
 	'grive', # for grive(1)
 	'okular', # kde pdf reader
+
+	# my own
+	'templar',
 ]
 
 args=['sudo','apt-get','install','--assume-yes']
