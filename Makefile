@@ -52,8 +52,8 @@ WEB_DIR:=~/public_html/public/openbook
 # where is the common file?
 COMMON:=src/include/common.makoi
 # wrappers
-LILYPOND_WRAPPER:=scripts/lilypond_wrapper.py
-MAKO_WRAPPER:=scripts/mako_wrapper.py
+LILYPOND_WRAPPER:=scripts/wrapper_lilypond.py
+MAKO_WRAPPER:=scripts/wrapper_mako.py
 LYD_WRAPPER:=scripts/lyd.pl
 MAKO_DEPS_WRAPPER:=scripts/mako_deps.py
 MIDI2WAV_WRAPPER:=scripts/midi2wav.pl
