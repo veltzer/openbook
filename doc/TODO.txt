@@ -1,8 +1,12 @@
 Now:
 ====
-- after moving to ubuntu 14.10 and lilypond 2.18.2 some of the tunes
-	are at the wrong pitch. Something probably with relative stuff
-	and more. fix this.
+- create a new site for openbook on GAE.
+	use GCS (Google Cloud Storage) to store the results of openbook and serve
+	them across the internet.
+	openbook.appspot.com
+	make scripts to upload a new site.
+	I have utilities to do graphs on the progress: Make those graphs go into
+	some google storage and be served out of that service.
 - move to a new ubuntu_install.py script which installs my ppa
 	and templar and all.
 - all the checks should be done in python.
