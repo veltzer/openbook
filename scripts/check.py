@@ -47,7 +47,7 @@ def check_file(file):
 			error(num, line, file)
 		if line.find('\myEndLine')!=-1 and line.find('%%')!=-1:
 			error(num, line, file)
-		if line.find('relative')!=-1 and not line.endswith('\\relative {'):
+		if line.find('relative')!=-1 and not line.endswith('\\relative c\' {'):
 			error(num, line, file)
 		if line=='}' and prev=='':
 			error(num, line, file)
