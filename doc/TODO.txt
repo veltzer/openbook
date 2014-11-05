@@ -1,5 +1,7 @@
 Now:
 ====
+- the scripts/release.py currently does not work
+	we need to find a way to release automatically to gh-pages (github pages)
 - move to a new ubuntu_install.py script which installs my ppa
 	and templar and all.
 	(also remove unneeded stuff like okular etc).
