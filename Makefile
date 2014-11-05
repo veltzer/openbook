@@ -14,10 +14,6 @@ DO_WRAPDEPS:=1
 DO_INCDEPS:=1
 # should we make the ly files and use them?
 DO_LY:=0
-# should we make lilypond dependency files and use them?
-DO_LYD:=0
-# should we make mako dependency files ?
-DO_MAKO_DEPS:=0
 # should we make pdfs ?
 DO_PDF:=0
 # should we make images ?
@@ -57,7 +53,6 @@ COMMON:=src/include/common.makoi
 # wrappers
 LILYPOND_WRAPPER:=scripts/wrapper_lilypond.py
 MAKO_WRAPPER:=scripts/wrapper_mako.py
-LYD_WRAPPER:=scripts/lyd.pl
 MAKO_DEPS_WRAPPER:=scripts/mako_deps.py
 MIDI2WAV_WRAPPER:=scripts/midi2wav.pl
 MIDI2OGG_WRAPPER:=scripts/midi2ogg.pl
@@ -72,16 +67,9 @@ CONST_CUT:=1
 # BODY #
 ########
 
-# do not include deps (or generate them) if we are doing a clean...
-ifneq ($(filter clean,$(MAKECMDGOALS)),)
-	DO_LYD:=0
-	DO_MAKO_DEPS:=0
-endif
-
 ifeq ($(DO_WRAPDEPS),1)
 	LILYPOND_WRAPPER_DEP:=$(LILYPOND_WRAPPER)
 	MAKO_WRAPPER_DEP:=$(MAKO_WRAPPER)
-	LYD_WRAPPER_DEP:=$(LYD_WRAPPER)
 	MAKO_DEPS_WRAPPER_DEP:=$(MAKO_DEPS_WRAPPER)
 	MIDI2WAV_WRAPPER_DEP:=$(MIDI2WAV_WRAPPER)
 	MIDI2OGG_WRAPPER_DEP:=$(MIDI2OGG_WRAPPER)
@@ -90,7 +78,6 @@ else
 	LILYPOND_WRAPPER_DEP:=
 	BOOK_WRAPPER_DEP:=
 	MAKO_WRAPPER_DEP:=
-	LYD_WRAPPER_DEP:=
 	MAKO_DEPS_WRAPPER_DEP:=
 	MIDI2WAV_WRAPPER_DEP:=
 	MIDI2OGG_WRAPPER_DEP:=
@@ -119,7 +106,6 @@ FILES_COMPLETED_JAZZ:=$(shell grep -l \'completion\']=\'5\' src/jazz/*)
 
 FILES_MAKO_DEPS:=$(addsuffix .mako.d,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_LY:=$(addsuffix .ly,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
-FILES_LYD:=$(addsuffix .ly.d,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_PDF:=$(addsuffix .pdf,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_PS:=$(addsuffix .ps,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_MIDI:=$(addsuffix .midi,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
@@ -163,12 +149,6 @@ ALL_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(ALL_OUT_F
 
 ifeq ($(DO_LY),1)
 	ALL:=$(ALL) $(FILES_LY)
-endif
-ifeq ($(DO_LYD),1)
-	ALL:=$(ALL) $(FILES_LYD)
-endif
-ifeq ($(DO_MAKO_DEPS),1)
-	ALL:=$(ALL) $(FILES_MAKO_DEPS)
 endif
 ifeq ($(DO_PS),1)
 	ALL:=$(ALL) $(FILES_PS)
@@ -226,7 +206,6 @@ debug:
 	$(info FILES_MAKO_DEPS is $(FILES_MAKO_DEPS))
 	$(info FILES_LY is $(FILES_LY))
 	$(info FILES_LYI is $(FILES_LYI))
-	$(info FILES_LYD is $(FILES_LYD))
 	$(info FILES_PDF is $(FILES_PDF))
 	$(info FILES_PS is $(FILES_PS))
 	$(info FILES_MIDI is $(FILES_MIDI))
@@ -267,10 +246,6 @@ show_uncompleted:
 	$(info doing [$@])
 	$(Q)grep completion src/jazz/* | grep -v 5
 
-.PHONY: clean_deps
-clean_deps:
-	$(info doing [$@])
-	$(Q)rm -f $(FILES_LYD)
 .PHONY: clean_all_png
 clean_all_png:
 	$(info doing [$@])
@@ -357,10 +332,6 @@ $(FILES_MAKO_DEPS): $(OUT_DIR)/%.mako.d: %.mako $(MAKO_DEPS_WRAPPER_DEP) $(ALL_D
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKO_DEPS_WRAPPER) $< $@ $(basename $(basename $@)).stamp $(basename $(basename $@)).pdf $(basename $(basename $@)).ps $(basename $(basename $@)).midi
-$(FILES_LYD): %.ly.d: %.ly $(LYD_WRAPPER_DEP) $(ALL_DEP)
-	$(info doing [$@])
-	$(Q)mkdir -p $(dir $@)
-	$(Q)$(LYD_WRAPPER) $< $@ $(basename $@).stamp $(basename $@).pdf $(basename $@).ps $(basename $@).midi
 $(FILES_WAV): %.wav: %.midi $(MIDI2WAV_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing $@)
 	$(Q)mkdir -p $(dir $@)
@@ -430,11 +401,3 @@ all_tunes_rock: $(RK_OUT_STAMP)
 .PHONY: all_tunes_israeli
 all_tunes_israeli: $(IL_OUT_STAMP)
 	$(info doing [$@])
-
-# include the deps files (no warnings)
-ifeq ($(DO_LYD),1)
--include $(FILES_LYD)
-endif
-ifeq ($(DO_MAKO_DEPS),1)
--include $(FILES_MAKO_DEPS)
-endif
