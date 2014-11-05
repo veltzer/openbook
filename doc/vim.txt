@@ -3,9 +3,36 @@ How to edit .mako files using the vim editor?
 - first make sure you have a ~/.vimrc file of your own.
 	You can take /etc/vim/vimrc or /usr/share/vim/vim73/vimrc_example.vim
 	or maybe even edit /etc/vim/vimrc (not recommended).
-- add the next line in your ~/.vimrc:
-	set runtimepath+=/usr/share/lilypond/2.14.2/vim/
+- add the next lines in your ~/.vimrc:
+	filetype off
+	set runtimepath+=/usr/share/lilypond/2.18.2/vim/
+	filetype on
 	after this you can edit lilypond files with syntax highlighting.
 - It seems that after the previous instructions .mako files also do lilypond
 	highlighting. I don't really know why but I guess that the first
 	two bullets are enough (I need to investigate this...)
+- If you want to be able to edit in vim and get syntax highlighting you
+	can use the modeline way in which you tell vim, on a file by
+	file basis how to edit that file.
+	Make sure that your .vimrc has the following lines:
+	set modeline		" Allow files to configure vim behaviour when editing them
+	set modelines=5		" First 5 lines of the file can have a modeline
+	And then make sure that you have this line at the first 5 lines of your file...
+	# vim: set filetype=lilypon :
+- Another way to automatically edit all files with some extension (say .mako) using the
+	'lilypond' file type is to put the next lines into your ~/.vimrc or as a file
+	in ~/.vim/
+========================================
+if exists("did_load_filetypes")
+	finish
+endif
+augroup filetypedetect
+	au! BufNewFile,BufRead *.ly setf lilypond
+	au! BufNewFile,BufRead *.lyi setf lilypond
+	au! BufNewFile,BufRead *.mako setf lilypond
+	au! BufNewFile,BufRead *.makoi setf lilypond
+augroup END
+========================================
+	Last time I tried this it did not work and so I'm using the modeline method above
+	(for other reasons as well since .mako files may have other stuff than lilypond
+	in them...)
