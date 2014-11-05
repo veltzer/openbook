@@ -11,5 +11,8 @@
 # backup files
 *~
 
+# stamps of various kinds
+*.stamp
+
 # templar generated files
 .attr.config
