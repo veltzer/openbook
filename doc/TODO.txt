@@ -1,14 +1,8 @@
 Now:
 ====
-- create a new site for openbook on GAE.
-	use GCS (Google Cloud Storage) to store the results of openbook and serve
-	them across the internet.
-	openbook.appspot.com
-	make scripts to upload a new site.
-	I have utilities to do graphs on the progress: Make those graphs go into
-	some google storage and be served out of that service.
 - move to a new ubuntu_install.py script which installs my ppa
 	and templar and all.
+	(also remove unneeded stuff like okular etc).
 - all the checks should be done in python.
 	translate them all to python.
 - if let say I have a fake book tune and I know it's location
