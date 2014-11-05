@@ -1,4 +1,4 @@
-#!/usr/bin/python3.4
+#!/usr/bin/python3
 
 '''
 This script checks if we have \myEndLine in voice
