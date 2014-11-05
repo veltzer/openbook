@@ -35,6 +35,7 @@ packs=[
 	'ghostscript', # for pdfopt(1)
 	'grive', # for grive(1)
 	'okular', # kde pdf reader
+	'qpdf', # for pdf size reduction
 
 	# my own
 	'templar',
