@@ -1,5 +1,9 @@
-Hello and welcome to OpenBook
-=============================
+openbook
+========
+
+version: 142
+
+OpenBook is an open source Jazz real book
 
 What is OpenBook?
 ------------------
@@ -7,7 +11,7 @@ OpenBook is a Jazz real book constructed with free software. A real book simply 
 
 Where is the projects website?
 -------------------------------
-https://veltzer.net/openbook/
+https://veltzer.github.io/openbook
 
 Why did you start this?
 ------------------------
@@ -57,21 +61,13 @@ What do I need to know to participate?
 
 Who currently contributes?
 ---------------------------
-* Mark Veltzer <mark.veltzer@gmail.com>
-Original developer, lead developer and maintainer.
-Most Tunes
-
-* Jordan Eldredge <JordanEldredge@gmail.com>
-Tunes and many other contributions
-
-* Vincent O. <osele31@gmail.com>
-Ideas about using a Jazz lilypond font in openbook.
+Look at the CREDITS file
 
 Your name could be here if you contribute...
 
 Where can I see some results?
 ------------------------------
-Check out the PDFs and other outputs in https://veltzer.net/openbook/.
+Check out the PDFs and other outputs in https://veltzer.github.io/openbook.
 
 Why is there so little documentation?
 --------------------------------------
@@ -106,28 +102,27 @@ Can I just add a single tune?
 ------------------------------
 Yes. To add a tune named "yourtune" just a single file named
 
-			src/jazz/yourtune.mako
+src/jazz/yourtune.mako
 Yes, the extension should be .mako since I use mako for templating.
 In that file there are sections. Just copy them from some other tune. One section for
 chords, another for lyrics, another for the melody etc.
 After working on the tune build just a single tune by issueing:
 
-			make out/src/jazz/yourtune.pdf
+make out/src/jazz/yourtune.pdf
 or
 
-			make out/src/jazz/yourtune.midi
+make out/src/jazz/yourtune.midi
 or
 
-			make out/src/jazz/yourtune.stamp
+make out/src/jazz/yourtune.stamp
 to get both pdf and midi.
 
 Can I send corrections to the tunes without learning lilypond and all the rest of the stuff?
 --------------------------------------------------------------------------------------------
-Yes. Just send them as regular text via my email : mark.veltzer@gmail.com
+Yes. Just send them as regular text via my email below.
 
 Where can I get more documentation about this project?
 ------------------------------------------------------
 Look in the "doc" subfolder of the source code...
 
-			Mark Veltzer, 2010-2014
-			mark.veltzer@gmail.com
+	Mark Veltzer <mark@veltzer.net>, 2014

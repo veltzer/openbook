@@ -10,3 +10,6 @@
 
 # backup files
 *~
+
+# templar generated files
+.attr.config
