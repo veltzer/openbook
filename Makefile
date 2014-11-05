@@ -1,10 +1,13 @@
+include /usr/share/templar/Makefile
+
+ALL:=$(TEMPLAR_ALL)
+ALL_DEP:=$(TEMPLAR_ALL_DEP)
+
 ##############
 # PARAMETERS #
 ##############
 # should we show commands executed ?
 DO_MKDBG:=0
-# should we depend on the date of the makefile itself ?
-DO_ALL_DEP:=1
 # should we depend on the wrappers scripts dates ?
 DO_WRAPDEPS:=1
 # should we depend on the common include file ?
@@ -75,12 +78,6 @@ ifneq ($(filter clean,$(MAKECMDGOALS)),)
 	DO_MAKO_DEPS:=0
 endif
 
-ALL:=
-
-ALL_DEP:=
-ifeq ($(DO_ALL_DEP),1)
-	ALL_DEP:=$(ALL_DEP) Makefile
-endif
 ifeq ($(DO_WRAPDEPS),1)
 	LILYPOND_WRAPPER_DEP:=$(LILYPOND_WRAPPER)
 	MAKO_WRAPPER_DEP:=$(MAKO_WRAPPER)
@@ -119,9 +116,6 @@ FILES_MAKO:=$(filter %.mako,$(SOURCES_ALL))
 FILES_MAKOI:=$(filter %.makoi,$(SOURCES_ALL))
 
 FILES_COMPLETED_JAZZ:=$(shell grep -l \'completion\']=\'5\' src/jazz/*)
-
-WEB_FOLDER:=web
-WEB_FILES:=$(shell find $(WEB_FOLDER) -type f)
 
 FILES_MAKO_DEPS:=$(addsuffix .mako.d,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_LY:=$(addsuffix .ly,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
@@ -211,6 +205,7 @@ PROJECT:=$(notdir $(CURDIR))
 #########
 # rules #
 #########
+.DEFAULT_GOAL=all
 .PHONY: all
 all: $(ALL)
 	$(info doing [$@])
@@ -257,7 +252,6 @@ debug:
 	$(info RK_OUT_STAMP is $(RK_OUT_STAMP))
 	$(info FILES_COMPLETED_JAZZ is $(FILES_COMPLETED_JAZZ))
 	$(info WEB_FOLDER is $(WEB_FOLDER))
-	$(info WEB_FILES is $(WEB_FILES))
 	$(info DO_PDFRED_BOOKS is $(DO_PDFRED_BOOKS))
 	$(info DO_PDFRED_PIECES is $(DO_PDFRED_PIECES))
 	$(info OUTPUTS_TO_EXPORT is $(OUTPUTS_TO_EXPORT))
@@ -404,14 +398,6 @@ $(RK_OUT_LY): $(RK_OUT_FILES) $(MAKO_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKO_WRAPPER) $(RK_OUT_LY) "$(RK_OUT_PATTERN)" $(CONST_BOOK) $(CONST_DONTCUT) 0
-
-.PHONY: install
-install: $(OB_OUT_LY) $(OB_OUT_PDF) $(OB_OUT_PS) $(WEB_FILES) $(ALL_DEP)
-	$(info doing [$@])
-	$(Q)rm -rf $(WEB_DIR)
-	$(Q)mkdir -p $(WEB_DIR)
-	$(Q)cp -r .htaccess index.html $(OB_OUT_LY) $(OB_OUT_PDF) $(OB_OUT_PS) $(WEB_FOLDER) $(WEB_DIR)
-	$(Q)chmod -R go+rx $(WEB_DIR)
 
 .PHONY: grive
 grive: $(OUTPUTS_TO_EXPORT) $(ALL_DEP)
