@@ -12,33 +12,36 @@ import check_version # for check_version
 check_version.check_version()
 
 packs=[
-	'perl', # for the old perl scripts
-	'python', # for the python scripts
+	# must have (critical)
 	'python3', # for the python scripts
-	'python-mako', # this is out template processor
 	'python3-mako', # mako for python 3 (we are not really using it)
-	'python-mako-doc', # documentation for the template preprocessor
+	'lilypond', # this is the main tool we use
+	'ghostscript', # for ps2pdf(1), pdf2ps(1) (used in pdf size reduction)
+	'qpdf', # for qpdf(1) (used in pdf size reduction)
+	'templar', # for templar makefile and more (used for templating)
+
+	# for producing extra stuff (not critical)
+	'timidity', # play output midi and convert midi to wav
+	'lame', # convert audio (encode ogg)
+
+	# release helpers (not critical)
+	'grive', # for grive(1)
 	'python-tweepy', # this is for tweeting new releases
 	'python-tweepy-doc', # this is for tweeting new releases
 	'python-facebook', # this is for facebooking releases
 	'python-simplejson', # this makes facebook work better
+
+	# for development (not critical)
+	'okular', # kde pdf reader
+	'python-mako-doc', # documentation for the template preprocessor
 	'texi2html', # needed to install lilypond from source
 	'guile-2.0-dev', # needed to install lilypond from source
-	'lilypond', # this is the main tool we use
-	'lilypond-data', # documentation for lilypond
 	'lilypond-doc', # documentation for lilypond
 	'lilypond-doc-html', # documentation for lilypond
 	'lilypond-doc-pdf', # documentation for lilypond
-	'timidity', # play output midi and convert midi to wav
-	'lame', # convert audio (encode ogg)
-	'pdfjam', # join pdfs (using pdfjoin(1))
-	'ghostscript', # for pdfopt(1)
-	'grive', # for grive(1)
-	'okular', # kde pdf reader
-	'qpdf', # for pdf size reduction
 
-	# my own
-	'templar',
+	# was once used but no more (not critical)
+	'pdfjam', # for pdfjoin(1)
 ]
 
 args=['sudo','apt-get','install','--assume-yes']
