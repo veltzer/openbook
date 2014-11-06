@@ -16,3 +16,4 @@
 
 # templar generated files
 .attr.config
+version.ini
