@@ -1,7 +1,7 @@
 openbook
 ========
 
-version: 143
+version: 144
 
 OpenBook is an open source Jazz real book
 
