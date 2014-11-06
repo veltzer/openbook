@@ -262,7 +262,7 @@ clean:
 .PHONY: install
 install: $(ALL) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)cp $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) ../openbook-gh-pages/static
+	$(Q)cp $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) version.ini ../openbook-gh-pages/static
 	$(info now go to ../openbook-gh-pages and push the new versions out)
 
 # checks
