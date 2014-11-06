@@ -16,8 +16,6 @@ DO_INCDEPS:=1
 DO_LY:=0
 # should we make pdfs ?
 DO_PDF:=0
-# should we make images ?
-DO_PNG:=0
 # should we make postscript ?
 DO_PS:=0
 # should we make midi ?
@@ -123,7 +121,7 @@ OB_OUT_FILES:=$(shell find src -type f -and -wholename "$(OB_OUT_PATTERN)")
 OB_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(OB_OUT_FILES))))
 OB_OUT_PS:=$(OUT_DIR)/openbook.ps
 OB_OUT_PDF:=$(OUT_DIR)/openbook.pdf
-DO:=$(DO) $(OB_OUT_PDF)
+DO+=$(OB_OUT_PDF)
 # book - israelbook
 IL_OUT_BASE:=$(OUT_DIR)/israelisongbook
 IL_OUT_LY:=$(OUT_DIR)/israelisongbook.ly
@@ -132,7 +130,7 @@ IL_OUT_FILES:=$(shell find src -type f -and -wholename "$(IL_OUT_PATTERN)")
 IL_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(IL_OUT_FILES))))
 IL_OUT_PS:=$(OUT_DIR)/israelisongbook.ps
 IL_OUT_PDF:=$(OUT_DIR)/israelisongbook.pdf
-DO:=$(DO) $(IL_OUT_PDF)
+DO+=$(IL_OUT_PDF)
 # book - rockbook
 RK_OUT_BASE:=$(OUT_DIR)/rockbook
 RK_OUT_LY:=$(OUT_DIR)/rockbook.ly
@@ -142,39 +140,37 @@ RK_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(RK_OUT_FIL
 RK_OUT_PS:=$(OUT_DIR)/rockbook.ps
 RK_OUT_PDF:=$(OUT_DIR)/rockbook.pdf
 # don't do the rockbook for now since it has errors
-#DO:=$(DO) $(RK_OUT_PDF)
+#DO+=$(RK_OUT_PDF)
 
 ALL_OUT_FILES:=$(shell find src -type f -and -name "*.mako")
 ALL_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(ALL_OUT_FILES))))
 
 ifeq ($(DO_LY),1)
-	ALL:=$(ALL) $(FILES_LY)
+	ALL+=$(FILES_LY)
 endif
 ifeq ($(DO_PS),1)
-	ALL:=$(ALL) $(FILES_PS)
+	ALL+=$(FILES_PS)
 endif
 ifeq ($(DO_PDF),1)
-	ALL:=$(ALL) $(FILES_PDF)
-endif
-ifeq ($(DO_PNG),1)
+	ALL+=$(FILES_PDF)
 endif
 ifeq ($(DO_MIDI),1)
-	ALL:=$(ALL) $(FILES_MIDI)
+	ALL+=$(FILES_MIDI)
 endif
 ifeq ($(DO_STAMP),1)
-	ALL:=$(ALL) $(FILES_STAMP)
+	ALL+=$(FILES_STAMP)
 endif
 ifeq ($(DO_WAV),1)
-	ALL:=$(ALL) $(FILES_WAV)
+	ALL+=$(FILES_WAV)
 endif
 ifeq ($(DO_MP3),1)
-	ALL:=$(ALL) $(FILES_MP3)
+	ALL+=$(FILES_MP3)
 endif
 ifeq ($(DO_OGG),1)
-	ALL:=$(ALL) $(FILES_OGG)
+	ALL+=$(FILES_OGG)
 endif
 ifeq ($(DO_BOOKS_PDF),1)
-	ALL:=$(ALL) $(DO)
+	ALL+=$(DO)
 endif
 
 # what to export out (to grive and dropbox)?
@@ -200,6 +196,7 @@ ly: $(FILES_LY)
 
 .PHONY: debug
 debug:
+	$(info doing [$@])
 	$(info ALL is $(ALL))
 	$(info SOURCES_ALL is $(SOURCES_ALL))
 	$(info FILES_MAKO is $(FILES_MAKO))
@@ -262,6 +259,12 @@ clean:
 	$(info doing [$@])
 	$(Q)git clean -xfd > /dev/null
 
+.PHONY: install
+install: $(ALL) $(ALL_DEP)
+	$(info doing [$@])
+	$(Q)cp $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) ../openbook-gh-pages/static
+	$(info now go to ../openbook-gh-pages and push the new versions out)
+
 # checks
 
 .PHONY: check_ws
@@ -296,10 +299,13 @@ check_all: check_ws check_naked_mymark check_and check_mark check_veltzer_https 
 
 # explain to make that .ps .pdf and .midi are really stamp files (do I need this ?!?)
 $(FILES_PS): %.ps: %.stamp $(ALL_DEP)
+	$(info doing [$@])
 
 $(FILES_PDF): %.pdf: %.stamp $(ALL_DEP)
+	$(info doing [$@])
 
 $(FILES_MIDI): %.midi: %.stamp $(ALL_DEP)
+	$(info doing [$@])
 
 # this is the real rule
 $(FILES_STAMP): %.stamp: %.ly $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
