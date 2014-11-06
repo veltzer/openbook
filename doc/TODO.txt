@@ -1,7 +1,6 @@
 Now:
 ====
-- the scripts/release.py currently does not work
-	we need to find a way to release automatically to gh-pages (github pages)
+- add to the pdf stuff like the operating system release that this was built on.
 - the output pdf still has hardcoded my name, year of start and more.
 	make it take it all from templar.
 - move to a new ubuntu_install.py script which installs my ppa
