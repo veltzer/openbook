@@ -4,6 +4,8 @@
 # it runs git status -s in order to see that everything is commited.
 # it then tags the current tree with one + the old tag.
 # it then cleans and then rebuilds everything and puts the results in the output.
+# we use -a so that the tags will be annotated and therefor seen in all branches
+# (say gh-pages branch)
 
 # TODO:
 # - add integration with twitter and facebook to announce new versions.
@@ -45,7 +47,7 @@ if debug:
 	print('new tag is '+str(tag))
 tag=str(tag)
 # tag the new tag
-subprocess.check_output(['git','tag','-s','-m',project+' version '+tag,tag])
+subprocess.check_output(['git','tag','-a','-s','-m',project+' version '+tag,tag])
 subprocess.check_call(['make','clean'])
 subprocess.check_call(['make','install'])
 if doRelease:
