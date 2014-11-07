@@ -101,7 +101,6 @@
 
 % if part=='VoiceReal':
 {
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Prestissimo" 4 = 220
 	\time 2/2
 	\key f \minor

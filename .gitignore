@@ -14,4 +14,4 @@ __pycache__
 /*.stamp
 
 # templar generated files
-/.attr.config
+/.tdefs.config

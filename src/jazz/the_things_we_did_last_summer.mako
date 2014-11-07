@@ -94,10 +94,9 @@
 
 % if part=='VoiceFake':
 {
+	\tempo "Adagio" 4 = 66
 	\time 4/4
 	\key g \major
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Adagio" 4 = 66
 
 	%% Intro
 	\partial 8 b8 |

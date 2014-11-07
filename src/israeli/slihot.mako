@@ -80,10 +80,9 @@
 
 % if part=='VoiceMy':
 {
+	\tempo "Moderato" 4 = 112
 	\time 3/4
 	\key a \minor
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Moderato" 4 = 112
 
 	\partial 4 a'8 e |
 

@@ -18,6 +18,7 @@ def check_file(file):
 	insideVoice=False
 	insideChords=False
 	insidePython=False
+	state_tempo_time_key=0
 	prevprev=None
 	prev=None
 	for num,line in enumerate(open(file, 'r')):
@@ -45,7 +46,7 @@ def check_file(file):
 			error(num, line, file)
 		if line.find('%% part')!=-1 and prev=='' and prevprev=='':
 			error(num, line, file)
-		if line.find('\myEndLine')!=-1 and line.find('%%')!=-1:
+		if line.find('\\myEndLine')!=-1 and line.find('%%')!=-1:
 			error(num, line, file)
 		if line.find('relative')!=-1 and not line.endswith('\\relative c\' {'):
 			error(num, line, file)
@@ -61,8 +62,23 @@ def check_file(file):
 			error(num, line, file)
 		if line.find(']=""')!=-1:
 			error(num, line, file)
-		if line.find('\bar')!=-1 or line.find('\include')!=-1 or line.find('\break')!=-1:
+		if line.find('\\bar')!=-1 or line.find('\include')!=-1 or line.find('\break')!=-1:
 			error(num, line, file)
+		if state_tempo_time_key==2:
+			if line.find('\\key')==-1:
+				error(num, line, file)
+			else:
+				state_tempo_time_key=0
+		if state_tempo_time_key==1:
+			if line.find('\\time')==-1:
+				error(num, line, file)
+			else:
+				state_tempo_time_key=2
+		if line.find('\\tempo')!=-1:
+			if state_tempo_time_key!=0:
+				error(num, line, file)
+			else:
+				state_tempo_time_key=1
 		prevprev=prev
 		prev=line
 

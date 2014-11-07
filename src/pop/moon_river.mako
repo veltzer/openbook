@@ -80,11 +80,11 @@
 
 % if part=='VoiceMy':
 {
+	\tempo "Allegro" 4 = 130
 	\time 3/4
 	\key f \major
+
 	\clef treble
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Allegro" 4 = 130
 
 	%% A part
 	c'2. | g'8 f8~ f2 | e4. d8 c bes | c2 f,4 |

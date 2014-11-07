@@ -102,10 +102,9 @@
 
 % if part=='VoiceFake':
 {
+	\tempo "Moderato" 4 = 100
 	\time 4/4
 	\key f \major
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Moderato" 4 = 100
 
 	\partial 4 c4 |
 

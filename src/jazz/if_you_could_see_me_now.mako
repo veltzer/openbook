@@ -98,10 +98,9 @@
 
 % if part=='VoiceReal':
 {
+	\tempo "Adagio" 4 = 76
 	\time 4/4
 	\key ees \major
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Adagio" 4 = 76
 
 	\repeat volta 2 {
 

@@ -115,7 +115,6 @@
 
 % if part=='VoiceCcb':
 {
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante" 4 = 80
 	\time 4/4
 	\key ees \major
@@ -218,10 +217,9 @@
 
 % if part=='VoiceWikifonia':
 {
+	\tempo "Adagio" 4 = 76
 	\time 4/4
 	\key ees \major
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Adagio" 4 = 76
 
 	%% part "A"
 	\repeat volta 2 {

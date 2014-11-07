@@ -1,5 +1,7 @@
 Now:
 ====
+- create the CREDITS file using templar for info from git.
+- create the LICENSE file using templar and the collection of licensing on the debian based system.
 - add to the pdf stuff like the operating system release that this was built on.
 - the output pdf still has hardcoded my name, year of start and more.
 	make it take it all from templar.

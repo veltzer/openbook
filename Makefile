@@ -295,16 +295,20 @@ check_and:
 check_mark:
 	$(info doing [$@])
 	$(Q)wrapper_ok grep --files-without-match "\\\\myMark" $(FILES_COMPLETED_JAZZ)
-.PHONY: check_veltzer_https
-check_veltzer_https:
+.PHONY: check_key
+check_key:
 	$(info doing [$@])
-	$(Q)wrapper_ok git grep "http:\/\/veltzer.net"
+	$(Q)grep "\\\\key" $(FILES_COMPLETED_JAZZ) | grep -v major | wrapper_ok grep -v minor
+.PHONY: check_hardcoded_names
+check_hardcoded_names:
+	$(info doing [$@])
+	$(Q)wrapper_ok git grep $(tdefs.personal_slug) 
 .PHONY: check_python
 check_python:
 	$(info doing [$@])
 	$(Q)scripts/check.py
 .PHONY: check_all
-check_all: check_ws check_naked_mymark check_and check_mark check_veltzer_https check_python
+check_all: check_ws check_naked_mymark check_and check_mark check_key check_hardcoded_names check_python
 
 .PHONY: checkhtml
 checkhtml: $(HTMLCHECK)
@@ -394,17 +398,17 @@ $(RK_OUT_LY): $(RK_OUT_FILES) $(MAKO_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 .PHONY: grive
 grive: $(OUTPUTS_TO_EXPORT) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)-rm -rf ~/grive/outputs/$(attr.project_name)
-	$(Q)-mkdir ~/grive/outputs/$(attr.project_name)
-	$(Q)cp $(OUTPUTS_TO_EXPORT) ~/grive/outputs/$(attr.project_name)
+	$(Q)-rm -rf ~/grive/outputs/$(tdefs.project_name)
+	$(Q)-mkdir ~/grive/outputs/$(tdefs.project_name)
+	$(Q)cp $(OUTPUTS_TO_EXPORT) ~/grive/outputs/$(tdefs.project_name)
 	$(Q)cd ~/grive; grive
 
 .PHONY: dropbox
 dropbox: $(OUTPUTS_TO_EXPORT) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)-rm -rf ~/Dropbox/outputs/$(attr.project_name)
-	$(Q)-mkdir ~/Dropbox/outputs/$(attr.project_name)
-	$(Q)cp $(OUTPUTS_TO_EXPORT) ~/Dropbox/outputs/$(attr.project_name)
+	$(Q)-rm -rf ~/Dropbox/outputs/$(tdefs.project_name)
+	$(Q)-mkdir ~/Dropbox/outputs/$(tdefs.project_name)
+	$(Q)cp $(OUTPUTS_TO_EXPORT) ~/Dropbox/outputs/$(tdefs.project_name)
 
 .PHONY: web
 web: grive dropbox
