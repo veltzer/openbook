@@ -4,7 +4,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>${attr.project_name}</title>
-		<link rel="shortcut icon" href="static/favicon.ico"/>
+		<link rel="shortcut icon" href="../static/favicon.ico"/>
 		<meta name="Description" content="jazz real book open source project that produces beautiful jazz standards for musicians"/>
 		<meta name="Keywords" content="${attr.personal_fullname}, ${attr.personal_slug}, ${attr.project_name}, ${attr.project_keywords}"/>
 		${attr.project_google_analytics_snipplet}
@@ -15,8 +15,8 @@
 		<p>current version is ${attr.git_lasttag}</p>
 
 		<h2>A demo for the impatient...</h2>
-		<object data="static/openbook.pdf" type="application/pdf" width="100%" height="1700"></object>
-		<p>You can download the latest version of the <b>${attr.project_name}</b> from <a href="static/openbook.pdf">here</a>.</p>
+		<object data="../out/openbook.pdf" type="application/pdf" width="100%" height="1700"></object>
+		<p>You can download the latest version of the <b>${attr.project_name}</b> from <a href="../out/openbook.pdf">here</a>.</p>
 
 		<p><b>${attr.project_name}</b> is an open source project to build a free, high quality "real book"
 		for Jazz musicians. A real book simply means a big book with lots of Jazz tunes or standards as they are more widely known. Open book will always remain free and is guarateed so by it's license. The goal of production is beautiful and lightweight postscript and PDF real books with Jazz tunes. The idea is that the end user can control the final output and decide if he/she wants lyrics, size of paper, transposition for trumpet, selection of tunes and more. In addition you can produce midi, mp3 and ogg outputs. The end user can also, obviously, modify add or remove tunes or use the tunes in <b>${attr.project_name}</b> as the basis of arrangements.</p>
@@ -88,13 +88,13 @@
 			The web site for the project is <a title="open book is a real book for Jazz musicians" href="${attr.project_website}">here</a>
 			</li>
 			<li>
-			The latest stable pdf coming out of the <b>${attr.project_name}</b> project is <a href="static/openbook.pdf">here</a>
+			The latest stable pdf coming out of the <b>${attr.project_name}</b> project is <a href="../out/openbook.pdf">here</a>
 			</li>
 			<li>
-			The latest stable postscript coming out of the <b>${attr.project_name}</b> project is <a href="static/openbook.ps">here</a>
+			The latest stable postscript coming out of the <b>${attr.project_name}</b> project is <a href="../out/openbook.ps">here</a>
 			</li>
 			<li>
-			The latest stable lilypond file from which the pdf and postscript were created is <a href="static/openbook.ly">here</a>
+			The latest stable lilypond file from which the pdf and postscript were created is <a href="../out/openbook.ly">here</a>
 			</li>
 		</ul>
 		<p>
