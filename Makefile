@@ -64,7 +64,7 @@ CONST_DONTCUT:=0
 CONST_CUT:=1
 
 ########
-# BODY #
+# code #
 ########
 
 ifeq ($(DO_WRAPDEPS),1)
@@ -184,6 +184,8 @@ ifeq ($(DO_CHECKHTML),1)
 ALL+=$(HTMLCHECK)
 endif # DO_CHECKHTML
 
+COPY_FOLDERS:=out web static
+
 #########
 # rules #
 #########
@@ -204,6 +206,7 @@ ly: $(FILES_LY)
 debug:
 	$(info doing [$@])
 	$(info ALL is $(ALL))
+	$(info COPY_FOLDERS is $(COPY_FOLDERS))
 	$(info SOURCES_ALL is $(SOURCES_ALL))
 	$(info SOURCES_HTML is $(SOURCES_HTML))
 	$(info FILES_MAKO is $(FILES_MAKO))
@@ -268,7 +271,9 @@ clean:
 .PHONY: install
 install: $(ALL) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)cp $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) version.ini $(WEB_DIR)/static
+	$(Q)-for folder in $(COPY_FOLDERS); do rm -rf $(WEB_DIR)/$$folder; done
+	$(Q)for folder in $(COPY_FOLDERS); do cp -r $$folder $(WEB_DIR); done
+	$(Q)cp support/redirector.html $(WEB_DIR)/index.html
 	$(info now cd $(WEB_DIR); git status; make; git add -A; git push)
 
 # checks
