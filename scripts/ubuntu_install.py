@@ -24,6 +24,9 @@ packs=[
 	'timidity', # play output midi and convert midi to wav
 	'lame', # convert audio (encode ogg)
 
+	# for web pages creation (not critical)
+	'tidy', # for tidy(1) (used in checking HTML)
+
 	# release helpers (not critical)
 	'grive', # for grive(1)
 	'python-tweepy', # this is for tweeting new releases

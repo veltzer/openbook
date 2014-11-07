@@ -36,6 +36,8 @@ DO_PDFRED_BOOKS:=1
 DO_PDFRED_PIECES:=1
 # should we stop on lilypond output?
 DO_STOP_OUTPUT:=0
+# do you want to validate html?
+DO_CHECKHTML:=1
 
 #############
 # CONSTANTS #
@@ -45,7 +47,7 @@ SOURCE_DIR:=src
 # where is the output folder ?
 OUT_DIR:=out
 # what is the web folder ?
-WEB_DIR:=~/public_html/public/openbook
+WEB_DIR:=../openbook-gh-pages
 # where is the common file?
 COMMON:=src/include/common.makoi
 # wrappers
@@ -175,8 +177,12 @@ endif
 
 # what to export out (to grive and dropbox)?
 OUTPUTS_TO_EXPORT:=$(OB_OUT_PDF)
-# what is the name of the project?
-PROJECT:=$(notdir $(CURDIR))
+
+SOURCES_HTML:=web/index.html
+HTMLCHECK:=html.stamp
+ifeq ($(DO_CHECKHTML),1)
+ALL+=$(HTMLCHECK)
+endif # DO_CHECKHTML
 
 #########
 # rules #
@@ -199,6 +205,7 @@ debug:
 	$(info doing [$@])
 	$(info ALL is $(ALL))
 	$(info SOURCES_ALL is $(SOURCES_ALL))
+	$(info SOURCES_HTML is $(SOURCES_HTML))
 	$(info FILES_MAKO is $(FILES_MAKO))
 	$(info FILES_MAKO_DEPS is $(FILES_MAKO_DEPS))
 	$(info FILES_LY is $(FILES_LY))
@@ -231,7 +238,6 @@ debug:
 	$(info DO_PDFRED_BOOKS is $(DO_PDFRED_BOOKS))
 	$(info DO_PDFRED_PIECES is $(DO_PDFRED_PIECES))
 	$(info OUTPUTS_TO_EXPORT is $(OUTPUTS_TO_EXPORT))
-	$(info PROJECT is $(PROJECT))
 
 .PHONY: todo
 todo:
@@ -262,8 +268,8 @@ clean:
 .PHONY: install
 install: $(ALL) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)cp $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) version.ini ../openbook-gh-pages/static
-	$(info now cd ../openbook-gh-pages; git status; make; git add -A; git push)
+	$(Q)cp $(OB_OUT_LY) $(OB_OUT_PS) $(OB_OUT_PDF) version.ini $(WEB_DIR)/static
+	$(info now cd $(WEB_DIR); git status; make; git add -A; git push)
 
 # checks
 
@@ -294,6 +300,10 @@ check_python:
 	$(Q)scripts/check.py
 .PHONY: check_all
 check_all: check_ws check_naked_mymark check_and check_mark check_veltzer_https check_python
+
+.PHONY: checkhtml
+checkhtml: $(HTMLCHECK)
+	$(info doing [$@])
 
 # rules
 
@@ -379,17 +389,17 @@ $(RK_OUT_LY): $(RK_OUT_FILES) $(MAKO_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 .PHONY: grive
 grive: $(OUTPUTS_TO_EXPORT) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)-rm -rf ~/grive/outputs/$(PROJECT)
-	$(Q)-mkdir ~/grive/outputs/$(PROJECT)
-	$(Q)cp $(OUTPUTS_TO_EXPORT) ~/grive/outputs/$(PROJECT)
+	$(Q)-rm -rf ~/grive/outputs/$(attr.project_name)
+	$(Q)-mkdir ~/grive/outputs/$(attr.project_name)
+	$(Q)cp $(OUTPUTS_TO_EXPORT) ~/grive/outputs/$(attr.project_name)
 	$(Q)cd ~/grive; grive
 
 .PHONY: dropbox
 dropbox: $(OUTPUTS_TO_EXPORT) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)-rm -rf ~/Dropbox/outputs/$(PROJECT)
-	$(Q)-mkdir ~/Dropbox/outputs/$(PROJECT)
-	$(Q)cp $(OUTPUTS_TO_EXPORT) ~/Dropbox/outputs/$(PROJECT)
+	$(Q)-rm -rf ~/Dropbox/outputs/$(attr.project_name)
+	$(Q)-mkdir ~/Dropbox/outputs/$(attr.project_name)
+	$(Q)cp $(OUTPUTS_TO_EXPORT) ~/Dropbox/outputs/$(attr.project_name)
 
 .PHONY: web
 web: grive dropbox
@@ -407,3 +417,9 @@ all_tunes_rock: $(RK_OUT_STAMP)
 .PHONY: all_tunes_israeli
 all_tunes_israeli: $(IL_OUT_STAMP)
 	$(info doing [$@])
+
+$(HTMLCHECK): $(SOURCES_HTML) $(ALL_DEP)
+	$(info doing [$@])
+	$(Q)tidy -errors -q -utf8 $(SOURCES_HTML)
+	$(Q)mkdir -p $(dir $@)
+	$(Q)touch $(HTMLCHECK)
