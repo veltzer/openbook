@@ -75,7 +75,6 @@
 
 % if part=='VoiceReal':
 {
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 150
 	\time 4/4
 	\key c \minor

@@ -78,10 +78,9 @@
 
 % if part=='VoiceReal':
 {
+	\tempo "Allegro" 4 = 130
 	\time 4/4
 	\key aes \major
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Allegro" 4 = 130
 
 	%% part "A"
 	r2 \tuplet 3/2 { g''8 aes g } f e | ees! des c bes-4 a-3 c,-1 ees f |

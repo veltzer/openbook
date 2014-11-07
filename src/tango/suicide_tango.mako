@@ -93,11 +93,11 @@
 
 % if part=='VoiceMy':
 {
+	\tempo "Allegro" 4 = 130
 	\time 4/4
 	\key f \minor
+
 	\clef treble
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Allegro" 4 = 130
 %%	http://lilypond.org/doc/v2.11/Documentation/user/lilypond/MIDI-instruments#MIDI-instruments
 %%	\set Staff.midiInstrument = #"violin"
 %%	\set Staff.midiMinimumVolume = #0.5

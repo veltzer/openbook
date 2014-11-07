@@ -78,11 +78,11 @@
 
 % if part=='VoiceMy':
 {
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
-	\set Staff.midiInstrument = #"flute"
 	\time 4/4
 	\key d \minor
+
+	\set Staff.midiInstrument = #"flute"
 
 	\partial 4 f8 e |
 

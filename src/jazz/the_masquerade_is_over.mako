@@ -74,10 +74,9 @@
 
 % if part=='VoiceFake':
 {
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Presto" 4 = 196
-	\key ees \major
 	\time 4/4
+	\key ees \major
 
 	\partial 4 bes4 |
 

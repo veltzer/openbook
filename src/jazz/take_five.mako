@@ -62,7 +62,6 @@
 
 % if part=='VoiceUnknown':
 {
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante Moderato" 4 = 88
 	\time 5/4
 	\key d \minor

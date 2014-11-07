@@ -62,7 +62,6 @@
 
 % if part=='VoiceMy':
 {
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 128
 	\time 2/4
 	\key g \minor

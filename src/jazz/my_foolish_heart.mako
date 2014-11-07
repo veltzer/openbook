@@ -66,10 +66,9 @@
 
 % if part=='VoiceReal':
 {
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 108
-	\key bes \major
 	\time 4/4
+	\key bes \major
 
 	\partial 4 f4 |
 
@@ -125,10 +124,9 @@
 
 % if part=='VoiceFake':
 {
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Moderato" 4 = 108
-	\key bes \major
 	\time 4/4
+	\key bes \major
 
 	\partial 4 f4 |
 

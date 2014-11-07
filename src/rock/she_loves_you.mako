@@ -64,10 +64,9 @@
 
 % if part=='VoiceEpdf0':
 {
+	\tempo "Moderato" 4 = 112
 	\time 4/4
 	\key f \major
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Moderato" 4 = 112
 
 	\partial 8 c'8-2 |
 	f4-1 g a bes8 <f a>~ | <f a>2. a8-3 a | << { c4-5 a a4. g8 } \\ { e1-1 } >> | <e a>8 c' <e, a>2 r8 c' |

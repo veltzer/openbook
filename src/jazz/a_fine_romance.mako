@@ -112,10 +112,9 @@
 
 % if part=='VoiceFake':
 {
-	\key c \major
-	\time 4/4
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Presto" 4 = 196
+	\time 4/4
+	\key c \major
 
 	\partial 4 e4 |
 
@@ -231,10 +230,9 @@
 
 % if part=='VoiceReal':
 {
-	\key c \major
-	\time 4/4
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Presto" 4 = 196
+	\time 4/4
+	\key c \major
 
 	\partial 4 e4 |
 

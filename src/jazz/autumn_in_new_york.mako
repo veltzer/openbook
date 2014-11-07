@@ -104,10 +104,9 @@
 
 % if part=='VoiceReal':
 {
+	\tempo "Andante" 4 = 76
 	\time 4/4
 	\key f \major
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Andante" 4 = 76
 
 	%% part "A"
 	a'8 g f d c2 | r8 d f bes d d4 c8 | d2 a | r1 |

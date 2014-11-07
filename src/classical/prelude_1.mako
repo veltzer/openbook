@@ -207,8 +207,9 @@ PartPiano={
 	%% render this voice in midi format...
 	\set PianoStaff.instrumentName = #"Piano"
 	%% The tempo of the tune
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante" 4 = 72
+	\time 4/4
+	\key c \major
 	%% The instrument that will be used to render this voice in midi
 	%% list of instruments can be found at
 	%% http://lilypond.org/doc/v2.11/Documentation/user/lilypond/MIDI-instruments#MIDI-instruments

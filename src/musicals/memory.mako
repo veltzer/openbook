@@ -123,6 +123,7 @@ voiceTreble=\relative c' {
 voiceBass=\relative c' {
 	\clef bass
 	\key bes \major
+
 	bes,8 f' d'~ d f, d' bes, f' d'~ d f, d' |
 	bes, f' d'~ d f, d' bes, f' d'~ d f, d' |
 	\repeat volta 2 {
@@ -156,9 +157,9 @@ pianoMain={
 	%% list of instruments can be found at
 	%% http://lilypond.org/doc/v2.11/Documentation/user/lilypond/MIDI-instruments#MIDI-instruments
 	\set PianoStaff.midiInstrument=#"acoustic grand"
-	%% The tempo of the tune
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo Freely 4.=50
+	\time 12/8
+	\key bes \major
 	<<
 		%% you can move voiceB from below to the treble clef if you prefer
 		%% the notation not to match the hands but rather the music...

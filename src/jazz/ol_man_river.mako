@@ -78,7 +78,6 @@
 
 % if part=='VoiceFake':
 {
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Andante" 4 = 88
 	\time 4/4
 	\key ees \major

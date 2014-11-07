@@ -73,10 +73,9 @@
 % if part=='VoiceFake':
 %% the tune was turned into 8'th notes instead of triplets.
 {
+	\tempo "Adagio" 4 = 76
 	\time 4/4
 	\key f \major
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Adagio" 4 = 76
 
 	%% part "A"
 	r8 c d e f g a c | a4 g8 f e d4. | r8 c d e f g a c | d4 c8 bes a g4. |

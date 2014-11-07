@@ -57,10 +57,9 @@
 
 % if part=='VoiceAebersold':
 {
-	\key c \major
-	\time 4/4
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo "Allegro" 4 = 130
+	\time 4/4
+	\key c \major
 
 	%% part "A"
 	ees'1\p\<~ | ees4\! f,8 f <aes c> ( <bes d>4-. ) f8~ | f1~ | f2 r |

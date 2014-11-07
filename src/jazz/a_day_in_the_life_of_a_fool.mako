@@ -95,7 +95,6 @@
 
 % if part=='VoiceFake':
 {
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
 	\tempo Moderato 4 = 120
 	\time 4/4
 	\key c \major

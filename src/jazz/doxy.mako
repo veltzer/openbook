@@ -86,10 +86,9 @@
 
 % if part=='VoiceFake':
 {
+	\tempo "Allegro" 4 = 130
 	\time 4/4
 	\key bes \major
-	%% https://veltzer.net/blog/blog/2010/08/14/musical-tempo-table/
-	\tempo "Allegro" 4 = 130
 
 	\partial 8 f8 |
 
