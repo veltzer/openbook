@@ -12,6 +12,3 @@ __pycache__
 
 # stamps of various kinds
 /*.stamp
-
-# templar generated files
-/.tdefs.config
