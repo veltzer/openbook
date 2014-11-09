@@ -1,5 +1,7 @@
 Now:
 ====
+- add spell checking on the lyrics of the songs.
+- add spell checking on the html pages.
 - learn some design and design the fron page of openbook better.
 - create the CREDITS file using templar for info from git.
 - create the LICENSE file using templar and the collection of licensing on the debian based system.
