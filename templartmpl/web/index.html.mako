@@ -54,7 +54,7 @@
 			producing a mobile application for various platforms that musicians could use on their portable pads. This app would show them their music sheets and allow them to search for standards.
 			</li>
 		</ul>
-		<p>Links to tools used by this project:</p>
+		<p>Links to tools used by the <b>${tdefs.project_name}</b> project:</p>
 		<ul>
 			<li>
 			The git tool used as a source control system for <b>${tdefs.project_name}</b> is <a title="git" href="http://git-scm.com/">here</a>
@@ -72,28 +72,32 @@
 			The lilypond language and compiler used to develop the tunes in <b>${tdefs.project_name}</b> is <a title="lilypond" href="http://lilypond.org/">here</a>
 			</li>
 			<li>
-			The timidity tool used in <b>${tdefs.project_name}</b> to convert from midi to wav and ogg is <a title="timidity++" href="http://timidity.sourceforge.net/">here</a>
+			The timidity tool used to convert from midi to wav and ogg in <b>${tdefs.project_name}</b> is <a title="timidity++" href="http://timidity.sourceforge.net/">here</a>
 			</li>
 			<li>
 			The lame tool used to encode midi to mp3 in <b>${tdefs.project_name}</b> is <a title="lame" href="http://lame.sourceforge.net/">here</a>
 			</li>
 		</ul>
-		<p>Some related project links:</p>
+		<p>Some related <b>${tdefs.project_name}</b> project links:</p>
 		<ul>
 			<li>
-			The <b>${tdefs.project_name}</b> github project is <a title="<b>${tdefs.project_name}</b> github project" href="${tdefs.project_website_source}">here</a>
+			The <b>${tdefs.project_name}</b> github project is <a title="${tdefs.project_name} github project" href="${tdefs.project_website_source}">here</a>
 			</li>
 			<li>
-			The <b>${tdefs.project_name}</b> web site for the project is <a title="open book is a real book for Jazz musicians" href="${tdefs.project_website}">here</a>
+			The <b>${tdefs.project_name}</b> web site for the project is <a title="${tdefs.project_name} web site" href="${tdefs.project_website}">here</a>
 			</li>
 			<li>
-			The latest stable pdf coming out of the <b>${tdefs.project_name}</b> project is <a href="../out/openbook.pdf">here</a>
+			The <b>${tdefs.project_name}</b> git clone link is <a title="${tdefs.project_name} git clone link" href="${tdefs.project_website_git}">here</a>
+
 			</li>
 			<li>
-			The latest stable postscript coming out of the <b>${tdefs.project_name}</b> project is <a href="../out/openbook.ps">here</a>
+			The latest stable pdf coming out of the <b>${tdefs.project_name}</b> project is <a title="latest pdf" href="../out/openbook.pdf">here</a>
 			</li>
 			<li>
-			The latest stable lilypond coming out of the <b>${tdefs.project_name}</b> project is <a href="../out/openbook.ly">here</a>
+			The latest stable postscript coming out of the <b>${tdefs.project_name}</b> project is <a title="latest postscript" href="../out/openbook.ps">here</a>
+			</li>
+			<li>
+			The latest stable lilypond coming out of the <b>${tdefs.project_name}</b> project is <a title="latest lilypond" href="../out/openbook.ly">here</a>
 			</li>
 		</ul>
 		<p>
