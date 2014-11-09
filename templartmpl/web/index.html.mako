@@ -22,7 +22,7 @@
 
 		<p>The project is developed by me, ${tdefs.personal_fullname}, and you can contact me at <a href="mailto:${tdefs.personal_email}">${tdefs.personal_email}</a>. Currently there are no other contributors but I am hoping that this will change. Anyone is welcome to contribute.</p>
 
-		<p>The license for the project is currently GPL V3. This is only so because I did not have time to think more deeply about the issue. It may change in the future as a result of future thinking on my part and the fact that I am the only copyright holder. The fact that the tunes inside the book have their own copyright holders complicates matters. In any case I am committed to keeping the project free in the free software sense and you are well within your rights to take a snapshot of it and continue developing it on your own when and if you feel that a future license selection does not match your expectations.</p>
+		<p>The license for the project is currently ${tdefs.project_license}. This is only so because I did not have time to think more deeply about the issue. It may change in the future as a result of future thinking on my part and the fact that I am the only copyright holder. The fact that the tunes inside the book have their own copyright holders complicates matters. In any case I am committed to keeping the project free in the free software sense and you are well within your rights to take a snapshot of it and continue developing it on your own when and if you feel that a future license selection does not match your expectations.</p>
 
 		<p>Why did I start this ?</p>
 		<ul>
@@ -69,13 +69,13 @@
 			The mako templating engine for python that is used in <b>${tdefs.project_name}</b> is <a title="mako" href="http://www.makotemplates.org/">here</a>
 			</li>
 			<li>
-			The lilypond language and compiler used to develop the tunes is <a title="lilypond" href="http://lilypond.org/">here</a>
+			The lilypond language and compiler used to develop the tunes in <b>${tdefs.project_name}</b> is <a title="lilypond" href="http://lilypond.org/">here</a>
 			</li>
 			<li>
 			The timidity tool used in <b>${tdefs.project_name}</b> to convert from midi to wav and ogg is <a title="timidity++" href="http://timidity.sourceforge.net/">here</a>
 			</li>
 			<li>
-			The lame tool used to encode midi to mp3 is <a title="lame" href="http://lame.sourceforge.net/">here</a>
+			The lame tool used to encode midi to mp3 in <b>${tdefs.project_name}</b> is <a title="lame" href="http://lame.sourceforge.net/">here</a>
 			</li>
 		</ul>
 		<p>Some related project links:</p>
@@ -84,7 +84,7 @@
 			The <b>${tdefs.project_name}</b> github project is <a title="<b>${tdefs.project_name}</b> github project" href="${tdefs.project_website_source}">here</a>
 			</li>
 			<li>
-			The web site for the project is <a title="open book is a real book for Jazz musicians" href="${tdefs.project_website}">here</a>
+			The <b>${tdefs.project_name}</b> web site for the project is <a title="open book is a real book for Jazz musicians" href="${tdefs.project_website}">here</a>
 			</li>
 			<li>
 			The latest stable pdf coming out of the <b>${tdefs.project_name}</b> project is <a href="../out/openbook.pdf">here</a>
@@ -93,7 +93,7 @@
 			The latest stable postscript coming out of the <b>${tdefs.project_name}</b> project is <a href="../out/openbook.ps">here</a>
 			</li>
 			<li>
-			The latest stable lilypond file from which the pdf and postscript were created is <a href="../out/openbook.ly">here</a>
+			The latest stable lilypond coming out of the <b>${tdefs.project_name}</b> project is <a href="../out/openbook.ly">here</a>
 			</li>
 		</ul>
 		<p>
