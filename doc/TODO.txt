@@ -1,5 +1,6 @@
 Now:
 ====
+- learn some design and design the fron page of openbook better.
 - create the CREDITS file using templar for info from git.
 - create the LICENSE file using templar and the collection of licensing on the debian based system.
 - add to the pdf stuff like the operating system release that this was built on.
