@@ -32,7 +32,7 @@ OpenBook is a Jazz real book constructed with free software. A real book simply 
 
 Where is the projects website?
 -------------------------------
-%(website)s
+{project_website}
 
 Why did you start this?
 ------------------------
@@ -88,7 +88,7 @@ Your name could be here if you contribute...
 
 Where can I see some results?
 ------------------------------
-Check out the PDFs and other outputs in %(website)s.
+Check out the PDFs and other outputs in {project_website}.
 
 Why is there so little documentation?
 --------------------------------------
@@ -110,7 +110,7 @@ No. Rock and Pop will be welcome and so would classical. If you are really into 
 How do I get started?
 ----------------------
 * create an account on git hub.
-* git checkout -b [your branch name] %(website_git)s
+* git checkout -b [your branch name] {project_website_git}
 * on Ubuntu run ./scripts/ubuntu_install.py to install required pieces of software.
 * on other systems do the best you can.
 * make (install pieces of software that it needs if it complains).
@@ -144,7 +144,7 @@ Yes. Just send them as regular text via my email below.
  
 Where can I get more documentation about this project?
 ------------------------------------------------------
-Look in the "doc" subfolder of the source code...'''
+Look in the "doc" subfolder of the source code...'''.format(**d)
 
 def getdeps():
 	return [
