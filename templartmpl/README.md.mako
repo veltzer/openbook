@@ -1,1 +1,1 @@
-/usr/share/templar/templates/README.md.mako
+/usr/share/templar/templartmpl/README.md.mako

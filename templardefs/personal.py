@@ -1,0 +1,1 @@
+/home/mark/.details.py

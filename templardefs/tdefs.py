@@ -1,0 +1,1 @@
+/usr/share/templar/templardefs/tdefs.py
