@@ -302,7 +302,7 @@ check_key:
 .PHONY: check_hardcoded_names
 check_hardcoded_names:
 	$(info doing [$@])
-	$(Q)wrapper_ok git grep $(tdefs.personal_slug) 
+	$(Q)wrapper_ok git grep $(tdefs.personal_slug)
 .PHONY: check_python
 check_python:
 	$(info doing [$@])
