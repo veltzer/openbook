@@ -27,7 +27,7 @@ used by Jazz musicians both for practice and for performance.
 What tools are used?
 ---------------------
 lilypond, make, python, mako, lame, timidity and possibly more.
- 
+
 What is produced?
 ------------------
 Beautiful and lightweight postscript and PDF real books with Jazz tunes.
@@ -85,7 +85,7 @@ Wikifonia uses musicXML for typesetting while I use an essentially lilypond form
 Do you only allow Jazz tunes?
 ------------------------------
 No. Rock and Pop will be welcome and so would classical. If you are really into classical lilypond production you may alternativly wish to contribute to the mutopia project at http://www.mutopiaproject.org/.
- 
+
 How do I get started?
 ----------------------
 * create an account on git hub.
@@ -97,30 +97,30 @@ How do I get started?
 * commit to your own hard drive repository (git commit).
 * push to git hub (git push).
 * send me a pull request (button in the github ui).
- 
+
 Can I just add a single tune?
 ------------------------------
 Yes. To add a tune named "yourtune" just a single file named
- 
+
 		src/jazz/yourtune.mako
 Yes, the extension should be .mako since I use mako for templating.
 In that file there are sections. Just copy them from some other tune. One section for
 chords, another for lyrics, another for the melody etc.
 After working on the tune build just a single tune by issueing:
- 
+
 		make out/src/jazz/yourtune.pdf
 or
 
 		make out/src/jazz/yourtune.midi
 or
- 
+
 		make out/src/jazz/yourtune.stamp
 to get both pdf and midi.
- 
+
 Can I send corrections to the tunes without learning lilypond and all the rest of the stuff?
 --------------------------------------------------------------------------------------------
 Yes. Just send them as regular text via my email below.
- 
+
 Where can I get more documentation about this project?
 ------------------------------------------------------
 Look in the "doc" subfolder of the source code...
