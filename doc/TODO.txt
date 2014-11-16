@@ -1,5 +1,6 @@
 Now:
 ====
+- make "make install" automatically make my changes public.
 - add spell checking on the lyrics of the songs.
 - add spell checking on the html pages.
 - learn some design and design the fron page of openbook better.
