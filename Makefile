@@ -1,8 +1,4 @@
 include /usr/share/templar/make/Makefile
-
-ALL:=$(TEMPLAR_ALL)
-ALL_DEP:=$(TEMPLAR_ALL_DEP)
-
 ##############
 # PARAMETERS #
 ##############
@@ -174,6 +170,7 @@ endif
 ifeq ($(DO_BOOKS_PDF),1)
 	ALL+=$(DO)
 endif
+all: $(ALL)
 
 # what to export out (to grive and dropbox)?
 OUTPUTS_TO_EXPORT:=$(OB_OUT_PDF)
@@ -182,6 +179,7 @@ SOURCES_HTML:=web/index.html
 HTMLCHECK:=html.stamp
 ifeq ($(DO_CHECKHTML),1)
 ALL+=$(HTMLCHECK)
+all: $(ALL)
 endif # DO_CHECKHTML
 
 COPY_FOLDERS:=out web static
@@ -189,11 +187,6 @@ COPY_FOLDERS:=out web static
 #########
 # rules #
 #########
-.DEFAULT_GOAL=all
-.PHONY: all
-all: $(ALL)
-	$(info doing [$@])
-
 .PHONY: stamp
 stamp: $(FILES_STAMP)
 	$(info doing [$@])
@@ -202,8 +195,8 @@ stamp: $(FILES_STAMP)
 ly: $(FILES_LY)
 	$(info doing [$@])
 
-.PHONY: debug
-debug:
+.PHONY: debug_me
+debug_me:
 	$(info doing [$@])
 	$(info ALL is $(ALL))
 	$(info COPY_FOLDERS is $(COPY_FOLDERS))
@@ -256,17 +249,6 @@ show_uncompleted:
 clean_all_png:
 	$(info doing [$@])
 	$(Q)-find $(SOURCE_DIR) -name "*.png" -exec rm -f {} \;
-
-# cleaning using git. Watch out! always add files or they will be erased...
-# -x: remove everything not known to git (not only ignore rules).
-# -d: remove directories also.
-# -f: force.
-# -X: keep manually created files and remove ignored files
-# -xfd - is the hardest
-.PHONY: clean
-clean:
-	$(info doing [$@])
-	$(Q)git clean -xfd > /dev/null
 
 .PHONY: install
 install: $(ALL) $(ALL_DEP)
