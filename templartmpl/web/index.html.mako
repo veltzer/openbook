@@ -14,8 +14,8 @@
 		<p>current version is ${tdefs.git_lasttag}</p>
 
 		<h2>A demo for the impatient...</h2>
-		<object data="../out/openbook.pdf" type="application/pdf" width="100%" height="1700"></object>
-		<p>You can download the latest version of the <b>${tdefs.project_name}</b> from <a href="../out/openbook.pdf">here</a>.</p>
+		<object data="../out/riddling.pdf" type="application/pdf" width="100%" height="1700"></object>
+		<p>You can download the latest version of <b>${tdefs.project_name}</b> from <a href="../out/openbook.pdf">riddling</a>.</p>
 
 		<p><b>${tdefs.project_name}</b> is an open source project to build a free, high quality "real book"
 		for Jazz musicians. A real book simply means a big book with lots of Jazz tunes or standards as they are more widely known. <b>${tdefs.project_name}</b> will always remain free and is guarateed so by it's license. The goal of production is beautiful and lightweight postscript and PDF real books with Jazz tunes. The idea is that the end user can control the final output and decide if he/she wants lyrics, size of paper, transposition for trumpet, selection of tunes and more. In addition you can produce midi, mp3 and ogg outputs. The end user can also, obviously, modify add or remove tunes or use the tunes in <b>${tdefs.project_name}</b> as the basis of arrangements.</p>
@@ -88,7 +88,6 @@
 			</li>
 			<li>
 			The <b>${tdefs.project_name}</b> git clone link is <a title="${tdefs.project_name} git clone link" href="${tdefs.project_website_git}">here</a>
-
 			</li>
 			<li>
 			The latest stable pdf coming out of the <b>${tdefs.project_name}</b> project is <a title="latest pdf" href="../out/openbook.pdf">here</a>

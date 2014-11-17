@@ -412,5 +412,6 @@ all_tunes_israeli: $(IL_OUT_STAMP)
 $(HTMLCHECK): $(SOURCES_HTML) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)tidy -errors -q -utf8 $(SOURCES_HTML)
+	$(Q)htmlhint $(SOURCES_HTML) > /dev/null
 	$(Q)mkdir -p $(dir $@)
 	$(Q)touch $(HTMLCHECK)

@@ -1,5 +1,6 @@
 Now:
 ====
+- add graphs from my blog to the gh-pages website.
 - make "make install" automatically make my changes public.
 - add spell checking on the lyrics of the songs.
 - add spell checking on the html pages.
