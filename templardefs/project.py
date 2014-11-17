@@ -146,6 +146,9 @@ Where can I get more documentation about this project?
 ------------------------------------------------------
 Look in the "doc" subfolder of the source code...'''.format(**d)
 
+	# deb
+	d.deb_package=False
+
 def getdeps():
 	return [
 		__file__, # myself
