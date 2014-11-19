@@ -256,7 +256,7 @@ install: $(ALL) $(ALL_DEP)
 	$(Q)rm -rf $(WEB_DIR)/*
 	$(Q)for folder in $(COPY_FOLDERS); do cp -r $$folder $(WEB_DIR); done
 	$(Q)cp support/redirector.html $(WEB_DIR)/index.html
-	cd $(WEB_DIR); git add -A; git commit -a -m "new version"; git push
+	cd $(WEB_DIR); git commit -a -m "new version"; git push
 
 # checks
 
