@@ -263,28 +263,28 @@ install: $(ALL) $(ALL_DEP)
 .PHONY: check_ws
 check_ws:
 	$(info doing [$@])
-	$(Q)wrapper_ok grep -e "[[:space:]]$$" $(FILES_MAKO)
+	$(Q)make_helper wrapper-ok grep -e "[[:space:]]$$" $(FILES_MAKO)
 .PHONY: check_naked_mymark
 check_naked_mymark:
 	$(info doing [$@])
-	$(Q)grep "\myMark" $(FILES_MAKO) | wrapper_ok grep -v \"
+	$(Q)grep "\myMark" $(FILES_MAKO) | make_helper wrapper-ok grep -v \"
 .PHONY: check_and
 check_and:
 	$(info doing [$@])
-	$(Q)wrapper_ok grep "composer=\".* and .*\"" $(FILES_MAKO)
-	$(Q)wrapper_ok grep "poet=\".* and .*\"" $(FILES_MAKO)
+	$(Q)make_helper wrapper-ok grep "composer=\".* and .*\"" $(FILES_MAKO)
+	$(Q)make_helper wrapper-ok grep "poet=\".* and .*\"" $(FILES_MAKO)
 .PHONY: check_mark
 check_mark:
 	$(info doing [$@])
-	$(Q)wrapper_ok grep --files-without-match "\\\\myMark" $(FILES_COMPLETED_JAZZ)
+	$(Q)make_helper wrapper-ok grep --files-without-match "\\\\myMark" $(FILES_COMPLETED_JAZZ)
 .PHONY: check_key
 check_key:
 	$(info doing [$@])
-	$(Q)grep "\\\\key" $(FILES_COMPLETED_JAZZ) | grep -v major | wrapper_ok grep -v minor
+	$(Q)grep "\\\\key" $(FILES_COMPLETED_JAZZ) | grep -v major | make_helper wrapper-ok grep -v minor
 .PHONY: check_hardcoded_names
 check_hardcoded_names:
 	$(info doing [$@])
-	$(Q)wrapper_ok git grep $(tdefs.personal_slug)
+	$(Q)make_helper wrapper-ok git grep veltzer
 .PHONY: check_python
 check_python:
 	$(info doing [$@])

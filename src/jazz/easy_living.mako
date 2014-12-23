@@ -120,6 +120,7 @@
 
 % if part=='LyricsReal':
 \lyricmode {
+
 	%% part "A"
 	Li -- ving for you is ea -- sy li -- ving
 	It's ea -- sy to live when you're in love
@@ -144,10 +145,12 @@
 
 % if part=='LyricsmoreReal':
 \lyricmode {
+
 	%% part "A"
 	I ne -- ver_reg -- ret the years that I'm giving
 	They're ea -- sy to give when you're in love
 	I'm hap -- py to do
-	what _ _ _ _ _ _ -- ev -- er I do for you __
+	what -- _ _ _ _ _ _ ev -- er I do for you __
 }
+
 % endif
