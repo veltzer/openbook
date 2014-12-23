@@ -21,7 +21,7 @@
 	attributes['piece']='Med'
 
 	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
-	attributes['completion']='4'
+	attributes['completion']='5'
 	attributes['uuid']='c5019d6a-88cc-11e4-8336-3860779cb560'
 	attributes['structure']='AABA'
 	attributes['location']='rbk1:129'
