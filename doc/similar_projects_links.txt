@@ -9,3 +9,8 @@ http://www.irealb.com/
 	(http://www.irealb.com/forums/showthread.php?4519-Jazz-1300-Standards) but
 	I have uploaded them in a more readable format here:
 	https://gist.github.com/captbaritone/6289832
+http://www.myrealbook.com/
+	only chord charts with no tunes.
+http://musescore.com/
+	a collection of lead sheets in musescore format.
+	Interesting.
