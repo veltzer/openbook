@@ -58,6 +58,8 @@ CONST_BOOK:=1
 CONST_SONG:=0
 CONST_DONTCUT:=0
 CONST_CUT:=1
+# arguments to git grep
+GITARGS:=--no-pager
 
 ########
 # code #
@@ -281,16 +283,16 @@ check_mark:
 check_key:
 	$(info doing [$@])
 	$(Q)grep "\\\\key" $(FILES_COMPLETED_JAZZ) | grep -v major | make_helper wrapper-ok grep -v minor
-.PHONY: check_hardcoded_names
-check_hardcoded_names:
-	$(info doing [$@])
-	$(Q)make_helper wrapper-ok git grep veltzer
 .PHONY: check_python
 check_python:
 	$(info doing [$@])
 	$(Q)scripts/check.py
+.PHONY: check_hardcoded_names
+check_hardcoded_names:
+	$(info doing [$@])
+	$(Q)make_helper wrapper-ok git $(GITARGS) grep veltzer
 .PHONY: check_all
-check_all: check_ws check_naked_mymark check_and check_mark check_key check_hardcoded_names check_python
+check_all: check_ws check_naked_mymark check_and check_mark check_key check_python check_hardcoded_names
 
 .PHONY: checkhtml
 checkhtml: $(HTMLCHECK)
