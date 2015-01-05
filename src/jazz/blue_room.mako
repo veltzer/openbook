@@ -116,7 +116,6 @@
 	%% part "A"
 	c4 f2 d4 | c g'2 d4 | c a'2 d,4 | c bes'2 d,4 |
 	c c' c c | c8 f bes,2 a8 g | f4 f f8 g a g | f1 |
-
 }
 % endif
 
