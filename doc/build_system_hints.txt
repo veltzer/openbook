@@ -16,3 +16,5 @@ DO_STOP_OUTPUT=0 make all_tunes
 
 if you want to cut an external pdf use (you must have the external pdfs in the right place):
 make out/src/jazz/a_foggy_day.[0-9].pdf
+or
+make out/src/jazz/[tune].0.pdf
