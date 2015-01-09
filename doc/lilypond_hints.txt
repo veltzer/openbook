@@ -99,6 +99,10 @@ Chords:
 	see the playground for an example and explanation of how this works.
 	If you want to put a single chord then do this:
 		\OPC bes4:7
+- dominant 9 11# chords:
+	mark them out as "9.11+".
+	Lilypond by default will render them as 7#11 but I have my own rule
+	to render them as 9#11.
 
 questions:
 - how do I do 4-3, 9-8 or other similar chords?

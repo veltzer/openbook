@@ -70,8 +70,8 @@ p_unlink_ps=False
 p_do_qpdf=True
 # what warning level do you want?
 # we really need to work with warnings and solve all of them
-#p_loglevel='WARN'
-p_loglevel='ERROR'
+p_loglevel='WARN'
+#p_loglevel='ERROR'
 
 ########
 # code #

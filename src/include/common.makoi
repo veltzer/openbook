@@ -114,6 +114,7 @@ myChordDefinitions={
 	%%<c e g b>-\markup { "maj7" }
 	<c e gis bes d'>-\markup { \super { "9 " \sharp "5" } }
 	<c e g bes d' a'>-\markup \super {13}
+	<c e g bes d' fis'>-\markup { \super { "9 " \sharp "11" } }
 }
 myChordExceptions=#(append
 	(sequential-music-to-chord-exceptions myChordDefinitions #t)
