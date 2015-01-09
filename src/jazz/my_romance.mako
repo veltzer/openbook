@@ -87,7 +87,7 @@
 
 	\myMark "C"
 	\startPart
-	f:maj7 f:maj7/e | d:m7 d:m7/c | b:m7 bes:7.9.11+ | a:m7 aes:7.9 | \myEndLine
+	f:maj7 f:maj7/e | d:m7 d:m7/c | b:m7 bes:9.11+ | a:m7 aes:7.9 | \myEndLine
 	c:maj7/g a:m7 | d:m7 d4:m7/g g:7 | c1*2:6 | \myEndLine
 	\endPart
 
