@@ -1,7 +1,7 @@
 openbook
 ========
 
-version: 145
+version: 152
 
 OpenBook is an open source Jazz real book
 
@@ -125,4 +125,4 @@ Where can I get more documentation about this project?
 ------------------------------------------------------
 Look in the "doc" subfolder of the source code...
 
-	Mark Veltzer <mark@veltzer.net>, 2009-2014
+	Mark Veltzer <mark@veltzer.net>, 2009-2015
