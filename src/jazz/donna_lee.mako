@@ -45,7 +45,7 @@
 	TODO:
 	- fill in the copyright from somewhere.
 	- get another version from somewhere (aebersold?!? he's got a solo too, I think...).
-	- fill in the reset of the fingerings from Ofer Portugali (in my own private real "real book")
+	- fill in the rest of the fingerings from Ofer Portugali (in my own private real "real book")
 	REMARK:
 	- the fingering in the notes are from Ofer Portugali.
 % endif

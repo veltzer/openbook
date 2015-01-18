@@ -20,7 +20,7 @@
 	# this is from the real book and the fake book
 	attributes['poet']='Lorenz Hart'
 	# this is from the jazz fake book
-	#attributes['piece']='Modeartely Slow'
+	#attributes['piece']='Moderately Slow'
 	# this is from the real book
 	attributes['piece']='Ballad'
 	# this is from the jazz fake book

@@ -21,7 +21,7 @@
 	# this is from the real book
 	#attributes['piece']='Med.'
 	# this is from the fake book
-	attributes['piece']='Modeartely Slow'
+	attributes['piece']='Moderately Slow'
 	# this is from the fake book
 	attributes['copyright']='1935, T.B. Harms Company. Copyright Renewed, (c/o The Welk Music Group, Santa Monica, CA 90401)'
 

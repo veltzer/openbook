@@ -178,6 +178,7 @@ class Attributes(dict):
 		self.pos=newpos
 		super().__setitem__(key, val)
 	def reset(self):
+		self.clear()
 		self.postinit()
 	def cut(self, p_cutnum, p_output):
 		val=self['location']
@@ -239,5 +240,4 @@ def cut_pdf(source_pdf, pg_from, pg_to, output_pdf):
 		'-sOutputFile='+output_pdf,
 		source_pdf,
 	]
-	#print('going to run', args)
 	subprocess.check_call(args, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)

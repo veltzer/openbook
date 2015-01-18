@@ -17,7 +17,7 @@
 	# this is from the fake book
 	attributes['poet']='Lorenz Hart'
 	# this is from the fake book
-	attributes['piece']='Modeartely Slow'
+	attributes['piece']='Moderately Slow'
 	# this is from the fake book
 	attributes['copyright']='1941, by Chappell & Co., Inc. Copyright Renewed'
 
