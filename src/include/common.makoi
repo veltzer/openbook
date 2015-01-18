@@ -205,43 +205,7 @@ endChords={}
 
 <%def name="clearVars()">
 <%
-	# these are variables passed to the template for its use
-
-	# these are the default values for the variables
 	attributes.reset()
-
-	attributes['heb']=False
-
-	attributes['dedication']=''
-	attributes['title']=''
-	attributes['style']=''
-	attributes['subtitle']=''
-	attributes['subsubtitle']=''
-	attributes['composer']=''
-	attributes['poet']=''
-	attributes['piece']=''
-	attributes['opus']=''
-	attributes['instrument']=''
-
-	attributes['copyright']=''
-	attributes['copyrightextra']=''
-
-	attributes['completion']=''
-	attributes['uuid']=''
-
-	attributes['structure']=''
-	attributes['idyoutuberemark1']=''
-	attributes['idyoutube1']=''
-	attributes['idyoutuberemark2']=''
-	attributes['idyoutube2']=''
-	attributes['idyoutuberemark3']=''
-	attributes['idyoutube3']=''
-	attributes['idyoutuberemark4']=''
-	attributes['idyoutube4']=''
-	attributes['lyricsurl']=''
-
-	attributes.reset()
-
 %>
 
 </%def>
@@ -364,13 +328,13 @@ ${self.clearVars()}
 
 %% now play with the variables that depend on language
 <%
-	if attributes['composer']=='':
-		if attributes['poet']=='':
+	if 'composer' not in attributes:
+		if 'poet' not in attributes:
 			add=''
 		else:
 			add=' / '+attributes['poet']
 	else:
-		if attributes['poet']=='':
+		if 'poet' not in attributes:
 			add=' / '+attributes['composer']
 		else:
 			if attributes['composer']==attributes['poet']:
@@ -379,8 +343,8 @@ ${self.clearVars()}
 				add=' / '+attributes['composer']+', '+attributes['poet']
 	scratch['tocname']=attributes['title']+add
 %>
-% if attributes['copyright']=='':
-% if attributes['heb']:
+% if 'copyright' not in attributes:
+% if 'heb' in attributes and attributes['heb']:
 <%
 	scratch['copyright']=u'-- עיזרו לי למלא את שורת זכויות היוצרים הזו --'
 %>
@@ -390,7 +354,7 @@ ${self.clearVars()}
 %>
 % endif
 % else:
-% if attributes['heb']:
+% if 'heb' in attributes and attributes['heb']:
 <%
 	scratch['copyright']=u'זכויות יוצרים © '+attributes['copyright']
 %>
@@ -402,7 +366,7 @@ ${self.clearVars()}
 % endif
 
 %% calculate the tag line
-% if attributes['heb']:
+% if heb in attributes and attributes['heb']:
 <%
 	scratch['tagline']=u'תווי על ידי '+attributes['typesetter']+u', נבנה בתאריך'+gattr['date']+u', תימון על ידי lilypond '+gattr['lilyver']
 %>
@@ -413,7 +377,7 @@ ${self.clearVars()}
 % endif
 
 %% calculate the typesetby
-% if attributes['heb']:
+% if heb in attributes and attributes['heb']:
 <%
 	scratch['typesetby']=u'תווי על ידי '+attributes['typesetter']
 %>
@@ -463,24 +427,24 @@ ${self.clearVars()}
 <%
 	# this block handles poet and composer. The idea is that the author of the tune
 	# just fills in the raw poet/composer data and this takes care of the nice printing...
-	if attributes['poet']==attributes['composer'] and attributes['poet']!='':
-		if attributes['heb']:
+	if 'poet' in attributes and 'composer' in attributes and attributes['poet']==attributes['composer']:
+		if 'heb' in attributes and attributes['heb']:
 			scratch['fullcomposer']=u'מילים ולחן: '+attributes['poet']
 		else:
 			scratch['fullcomposer']='Lyrics and Music by '+attributes['poet']
 		scratch['fullpoet']=''
 	else:
-		if attributes['poet']=='':
+		if 'poet' not in attributes:
 			scratch['fullpoet']=''
 		else:
-			if attributes['heb']:
+			if 'heb' in attributes and attributes['heb']:
 				scratch['fullpoet']=u'מלים: '+attributes['poet']
 			else:
 				scratch['fullpoet']='Lyrics by '+attributes['poet']
-		if attributes['composer']=='':
+		if 'composer' not in attributes:
 			scratch['fullcomposer']=''
 		else:
-			if attributes['heb']:
+			if 'heb' in attributes and attributes['heb']:
 				scratch['fullcomposer']=u'לחן: '+attributes['composer']
 			else:
 				scratch['fullcomposer']='Music by '+attributes['composer']
@@ -489,24 +453,32 @@ ${self.clearVars()}
 %% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
 \markup {
 	\column {
-% if attributes['dedication']!='':
+% if 'dedication' in attributes:
 		\fill-line { "${attributes['dedication']}" }
 % endif
 		\override #'(baseline-skip . 3.5)
 		\column {
 			\huge \larger \bold
 			\fill-line { \larger "${attributes['title']}" }
-% if attributes['subtitle']!='':
+% if 'subtitle' in attributes:
 			\fill-line { \large \smaller \bold \larger "${attributes['subtitle']}" }
 % endif
+% if 'subsubtitle' in attributes:
 			\fill-line { \smaller \bold "${attributes['subsubtitle']}" }
+% endif
 			\fill-line {
 				"${scratch['fullpoet']}"
 				"${scratch['fullcomposer']}"
 			}
 			\fill-line {
+% if 'piece' in attributes:
 				"${attributes['piece']}"
+% endif
+% if 'opus' in attributes:
 				"${attributes['opus']}"
+% else:
+				""
+% endif
 			}
 		}
 	}

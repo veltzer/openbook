@@ -3,6 +3,7 @@
 import sys # for argv
 import mako.template # for Template
 import mako.lookup # for TemplateLookup
+import mako.exceptions # for text_error_template
 import os # for chmod, unlink
 import glob # for glob
 import check_version # for check_version
@@ -98,4 +99,5 @@ try:
 except Exception as e:
 	if os.path.isfile(p_output):
 		os.unlink(p_output)
+	print(mako.exceptions.text_error_template().render())
 	raise e
