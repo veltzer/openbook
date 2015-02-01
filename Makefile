@@ -242,8 +242,8 @@ todo:
 	$(info doing [$@])
 	$(Q)-grep TODO $(FILES_LY)
 
-.PHONY: show_uncompleted
-show_uncompleted:
+.PHONY: show_uncompleted_jazz
+show_uncompleted_jazz:
 	$(info doing [$@])
 	$(Q)grep completion src/jazz/* | grep -v 5
 
