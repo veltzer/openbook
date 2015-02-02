@@ -44,6 +44,8 @@ SOURCE_DIR:=src
 OUT_DIR:=out
 # what is the web folder ?
 WEB_DIR:=../openbook-gh-pages
+# which folders to copy for web?
+COPY_FOLDERS:=out web static
 # where is the common file?
 COMMON:=src/include/common.makoi
 # wrappers
@@ -183,8 +185,6 @@ ifeq ($(DO_CHECKHTML),1)
 ALL+=$(HTMLCHECK)
 all: $(ALL)
 endif # DO_CHECKHTML
-
-COPY_FOLDERS:=out web static
 
 #########
 # rules #
