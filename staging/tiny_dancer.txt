@@ -2,17 +2,25 @@ Tiny Dancer / Elton John
 ========================
 
 Intro:
-	C | F6/C | C | F6/C |
-	C | F6/C | C | F6/C |
+	C | F9.6/C | C | F9.6/C |
+	C | F9.6/C | C | F9.6/C |
 
 Verse:
 
-	C | F6/C | C | F6/C |
-	C | C | F6/C | F6/C G7 |
+	C | F9.6/C | C | F9.6/C |
+	C | C | F9.6/A | F9.6/A G7 |
 
-Between adjacent Verses:
-	Drop bass from G to C in steps
-	G G/F C/E G/D
+	C | F9.6/C | C | F9.6/C |
+	C | C | F9.6/A | F9.6/A G7 |
+
+	F | E7 | Am7 | D7 |
+	F:maj7 | E7 | Am7 | Am7 G7 |
+
+	C | F9.6/C | C | F9.6/C |
+	C | F9.6/C | G F | Em Dm |
+
+Interlude:
+	C | F9.6/C | C | F9.6/C |
 
 Bridge:
 
@@ -23,3 +31,11 @@ Bridge:
 Chorus:
 	F6 | C | Dm7 | Dm7 |
 	F6 | C | G7/D | G7/D |
+
+	F6 | C | Dm7 | Dm7 |
+	F6 | C | G7/D | G7/D |
+
+	F/D | F/D | G7/D G7/D |
+
+Interlude:
+	C | F9.6/C | C | F9.6/C/ |
