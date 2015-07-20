@@ -118,8 +118,7 @@ DO:=
 # book - openbook
 OB_OUT_BASE:=$(OUT_DIR)/openbook
 OB_OUT_LY:=$(OUT_DIR)/openbook.ly
-OB_OUT_PATTERN:=src/jazz/*.mako
-OB_OUT_FILES:=$(shell find src -type f -and -wholename "$(OB_OUT_PATTERN)")
+OB_OUT_FILES:=$(shell git ls-files src/jazz)
 OB_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(OB_OUT_FILES))))
 OB_OUT_PS:=$(OUT_DIR)/openbook.ps
 OB_OUT_PDF:=$(OUT_DIR)/openbook.pdf
@@ -127,8 +126,7 @@ DO+=$(OB_OUT_PDF)
 # book - israelbook
 IL_OUT_BASE:=$(OUT_DIR)/israelisongbook
 IL_OUT_LY:=$(OUT_DIR)/israelisongbook.ly
-IL_OUT_PATTERN:=src/israeli/*.mako
-IL_OUT_FILES:=$(shell find src -type f -and -wholename "$(IL_OUT_PATTERN)")
+IL_OUT_FILES:=$(shell git ls-files src/israeli)
 IL_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(IL_OUT_FILES))))
 IL_OUT_PS:=$(OUT_DIR)/israelisongbook.ps
 IL_OUT_PDF:=$(OUT_DIR)/israelisongbook.pdf
@@ -136,8 +134,7 @@ DO+=$(IL_OUT_PDF)
 # book - rockbook
 RK_OUT_BASE:=$(OUT_DIR)/rockbook
 RK_OUT_LY:=$(OUT_DIR)/rockbook.ly
-RK_OUT_PATTERN:=src/rock/*.mako
-RK_OUT_FILES:=$(shell find src -type f -and -wholename "$(RK_OUT_PATTERN)")
+RK_OUT_FILES:=$(shell git ls-files src/rock)
 RK_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(RK_OUT_FILES))))
 RK_OUT_PS:=$(OUT_DIR)/rockbook.ps
 RK_OUT_PDF:=$(OUT_DIR)/rockbook.pdf
@@ -218,17 +215,14 @@ debug_me:
 	$(info OB_OUT_LY is $(OB_OUT_LY))
 	$(info OB_OUT_PS is $(OB_OUT_PS))
 	$(info OB_OUT_PDF is $(OB_OUT_PDF))
-	$(info OB_OUT_PATTERN is $(OB_OUT_PATTERN))
 	$(info OB_OUT_FILES is $(OB_OUT_FILES))
 	$(info IL_OUT_LY is $(IL_OUT_LY))
 	$(info IL_OUT_PS is $(IL_OUT_PS))
 	$(info IL_OUT_PDF is $(IL_OUT_PDF))
-	$(info IL_OUT_PATTERN is $(IL_OUT_PATTERN))
 	$(info IL_OUT_FILES is $(IL_OUT_FILES))
 	$(info RK_OUT_LY is $(RK_OUT_LY))
 	$(info RK_OUT_PS is $(RK_OUT_PS))
 	$(info RK_OUT_PDF is $(RK_OUT_PDF))
-	$(info RK_OUT_PATTERN is $(RK_OUT_PATTERN))
 	$(info RK_OUT_FILES is $(RK_OUT_FILES))
 	$(info RK_OUT_STAMP is $(RK_OUT_STAMP))
 	$(info FILES_COMPLETED_JAZZ is $(FILES_COMPLETED_JAZZ))
@@ -320,23 +314,23 @@ $(FILES_STAMP): %.stamp: %.ly $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 $(OUT_DIR)/%.0.pdf: %.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
-	$(Q)$(MAKO_WRAPPER) $@ $< $(CONST_SONG) $(CONST_CUT) 0
+	$(Q)$(MAKO_WRAPPER) $(CONST_SONG) $(CONST_CUT) 0 $@ $<
 $(OUT_DIR)/%.1.pdf: %.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
-	$(Q)$(MAKO_WRAPPER) $@ $< $(CONST_SONG) $(CONST_CUT) 1
+	$(Q)$(MAKO_WRAPPER) $(CONST_SONG) $(CONST_CUT) 1 $@ $<
 $(OUT_DIR)/%.2.pdf: %.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
-	$(Q)$(MAKO_WRAPPER) $@ $< $(CONST_SONG) $(CONST_CUT) 2
+	$(Q)$(MAKO_WRAPPER) $(CONST_SONG) $(CONST_CUT) 2 $@ $<
 $(OUT_DIR)/%.3.pdf: %.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
-	$(Q)$(MAKO_WRAPPER) $@ $< $(CONST_SONG) $(CONST_CUT) 3
+	$(Q)$(MAKO_WRAPPER) $(CONST_SONG) $(CONST_CUT) 3 $@ $<
 $(FILES_LY): $(OUT_DIR)/%.ly: %.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
-	$(Q)$(MAKO_WRAPPER) $@ $< $(CONST_SONG) $(CONST_DONTCUT) 0
+	$(Q)$(MAKO_WRAPPER) $(CONST_SONG) $(CONST_DONTCUT) 0 $@ $<
 $(FILES_MAKO_DEPS): $(OUT_DIR)/%.mako.d: %.mako $(MAKO_DEPS_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
@@ -363,21 +357,21 @@ $(OB_OUT_PDF) $(OB_OUT_PS): $(OB_OUT_LY) $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 $(OB_OUT_LY): $(OB_OUT_FILES) $(MAKO_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
-	$(Q)$(MAKO_WRAPPER) $(OB_OUT_LY) "$(OB_OUT_PATTERN)" $(CONST_BOOK) $(CONST_DONTCUT) 0
+	$(Q)$(MAKO_WRAPPER) $(CONST_BOOK) $(CONST_DONTCUT) 0 $(OB_OUT_LY) $(OB_OUT_FILES)
 $(IL_OUT_PDF) $(IL_OUT_PS): $(IL_OUT_LY) $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)$(LILYPOND_WRAPPER) $(IL_OUT_PS) $(IL_OUT_PDF) $(IL_OUT_BASE) $(IL_OUT_LY) $(DO_PDFRED_BOOKS) $(DO_STOP_OUTPUT)
 $(IL_OUT_LY): $(IL_OUT_FILES) $(MAKO_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
-	$(Q)$(MAKO_WRAPPER) $(IL_OUT_LY) "$(IL_OUT_PATTERN)" $(CONST_BOOK) $(CONST_DONTCUT) 0
+	$(Q)$(MAKO_WRAPPER) $(CONST_BOOK) $(CONST_DONTCUT) 0 $(IL_OUT_LY) $(IL_OUT_FILES)
 $(RK_OUT_PDF) $(RK_OUT_PS): $(RK_OUT_LY) $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)$(LILYPOND_WRAPPER) $(RK_OUT_PS) $(RK_OUT_PDF) $(RK_OUT_BASE) $(RK_OUT_LY) $(DO_PDFRED_BOOKS) $(DO_STOP_OUTPUT)
 $(RK_OUT_LY): $(RK_OUT_FILES) $(MAKO_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
-	$(Q)$(MAKO_WRAPPER) $(RK_OUT_LY) "$(RK_OUT_PATTERN)" $(CONST_BOOK) $(CONST_DONTCUT) 0
+	$(Q)$(MAKO_WRAPPER) $(CONST_BOOK) $(CONST_DONTCUT) 0 $(RK_OUT_LY) $(RK_OUT_FILES)
 
 .PHONY: grive
 grive: $(OUTPUTS_TO_EXPORT) $(ALL_DEP)
