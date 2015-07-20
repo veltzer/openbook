@@ -25,16 +25,16 @@ def is_ready(file):
 # first check that we are using the correct version of python
 check_version.check_version()
 
-if len(sys.argv)!=6:
-	raise ValueError('command line issue')
+if len(sys.argv)<6:
+	raise ValueError('command line issue', sys.argv)
 
 input_encoding='utf-8'
 output_encoding='utf-8'
-p_output=sys.argv[1]
-p_input=sys.argv[2]
-p_book=bool(int(sys.argv[3]))
-p_cut=bool(int(sys.argv[4]))
-p_cutnum=int(sys.argv[5])
+p_book=bool(int(sys.argv[1]))
+p_cut=bool(int(sys.argv[2]))
+p_cutnum=int(sys.argv[3])
+p_output=sys.argv[4]
+p_input=sys.argv[5:]
 common='src/include/common.makoi'
 
 '''
@@ -62,7 +62,7 @@ try:
 	)
 	gattr={}
 	if p_book:
-		filelist=glob.glob(p_input)
+		filelist=p_input
 		filelist=list(filter(is_ready,filelist))
 		filelist.sort()
 		gattr['files']=filelist

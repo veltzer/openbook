@@ -1,5 +1,8 @@
 Now:
 ====
+- make it so that I could have as many books as I want without editing the makefile too much.
+- start the drumming patterns book by adding the rock book.
+
 - add graphs from my blog to the gh-pages website.
 - add spell checking on the lyrics of the songs.
 - add spell checking on the html pages.
