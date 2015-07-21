@@ -304,3 +304,7 @@ command line:
 =============
 - I couldn't find any command line to stop lilypond to from producing midi. If I do ever
 	find a way to do that it could help me in my wrapper scripts for lilypond.
+
+drums
+=====
+http://lilypond-cookbook.tumblr.com/post/74312396803/drum-music-1-getting-started
