@@ -34,6 +34,8 @@ DO_PDFRED_PIECES:=1
 DO_STOP_OUTPUT:=0
 # do you want to validate html?
 DO_CHECKHTML:=1
+# which books should we do?
+DO_BOOKS=openbook israeli
 
 #############
 # CONSTANTS #
@@ -102,7 +104,7 @@ SOURCES_ALL:=$(subst ./,,$(shell find src -type f -and -name "*.mako" -or -name 
 FILES_MAKO:=$(filter %.mako,$(SOURCES_ALL))
 FILES_MAKOI:=$(filter %.makoi,$(SOURCES_ALL))
 
-FILES_COMPLETED_JAZZ:=$(shell grep -l \'completion\']=\'5\' src/jazz/*)
+FILES_JAZZ:=$(shell git ls-files src/openbook)
 
 FILES_MAKO_DEPS:=$(addsuffix .mako.d,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_LY:=$(addsuffix .ly,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
@@ -113,36 +115,12 @@ FILES_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO)
 FILES_WAV:=$(addsuffix .wav,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_MP3:=$(addsuffix .mp3,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 FILES_OGG:=$(addsuffix .ogg,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
-# books
-DO:=
-# book - openbook
-OB_OUT_BASE:=$(OUT_DIR)/openbook
-OB_OUT_LY:=$(OUT_DIR)/openbook.ly
-OB_OUT_FILES:=$(shell git ls-files src/jazz)
-OB_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(OB_OUT_FILES))))
-OB_OUT_PS:=$(OUT_DIR)/openbook.ps
-OB_OUT_PDF:=$(OUT_DIR)/openbook.pdf
-DO+=$(OB_OUT_PDF)
-# book - israelbook
-IL_OUT_BASE:=$(OUT_DIR)/israelisongbook
-IL_OUT_LY:=$(OUT_DIR)/israelisongbook.ly
-IL_OUT_FILES:=$(shell git ls-files src/israeli)
-IL_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(IL_OUT_FILES))))
-IL_OUT_PS:=$(OUT_DIR)/israelisongbook.ps
-IL_OUT_PDF:=$(OUT_DIR)/israelisongbook.pdf
-DO+=$(IL_OUT_PDF)
-# book - rockbook
-RK_OUT_BASE:=$(OUT_DIR)/rockbook
-RK_OUT_LY:=$(OUT_DIR)/rockbook.ly
-RK_OUT_FILES:=$(shell git ls-files src/rock)
-RK_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(RK_OUT_FILES))))
-RK_OUT_PS:=$(OUT_DIR)/rockbook.ps
-RK_OUT_PDF:=$(OUT_DIR)/rockbook.pdf
-# don't do the rockbook for now since it has errors
-#DO+=$(RK_OUT_PDF)
 
 ALL_OUT_FILES:=$(shell find src -type f -and -name "*.mako")
 ALL_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(ALL_OUT_FILES))))
+
+BOOKS:=out/openbook.pdf out/israeli.pdf
+LYS:=out/openbook.ly out/israeli.ly
 
 ifeq ($(DO_LY),1)
 	ALL+=$(FILES_LY)
@@ -169,12 +147,9 @@ ifeq ($(DO_OGG),1)
 	ALL+=$(FILES_OGG)
 endif
 ifeq ($(DO_BOOKS_PDF),1)
-	ALL+=$(DO)
+	ALL+=$(BOOKS)
 endif
 all: $(ALL)
-
-# what to export out (to grive and dropbox)?
-OUTPUTS_TO_EXPORT:=$(OB_OUT_PDF)
 
 SOURCES_HTML:=web/index.html
 HTMLCHECK:=html.stamp
@@ -212,34 +187,16 @@ debug_me:
 	$(info FILES_WAV is $(FILES_WAV))
 	$(info FILES_MP3 is $(FILES_MP3))
 	$(info FILES_OGG is $(FILES_OGG))
-	$(info OB_OUT_LY is $(OB_OUT_LY))
-	$(info OB_OUT_PS is $(OB_OUT_PS))
-	$(info OB_OUT_PDF is $(OB_OUT_PDF))
-	$(info OB_OUT_FILES is $(OB_OUT_FILES))
-	$(info IL_OUT_LY is $(IL_OUT_LY))
-	$(info IL_OUT_PS is $(IL_OUT_PS))
-	$(info IL_OUT_PDF is $(IL_OUT_PDF))
-	$(info IL_OUT_FILES is $(IL_OUT_FILES))
-	$(info RK_OUT_LY is $(RK_OUT_LY))
-	$(info RK_OUT_PS is $(RK_OUT_PS))
-	$(info RK_OUT_PDF is $(RK_OUT_PDF))
-	$(info RK_OUT_FILES is $(RK_OUT_FILES))
-	$(info RK_OUT_STAMP is $(RK_OUT_STAMP))
-	$(info FILES_COMPLETED_JAZZ is $(FILES_COMPLETED_JAZZ))
+	$(info FILES_JAZZ is $(FILES_JAZZ))
 	$(info WEB_FOLDER is $(WEB_FOLDER))
 	$(info DO_PDFRED_BOOKS is $(DO_PDFRED_BOOKS))
 	$(info DO_PDFRED_PIECES is $(DO_PDFRED_PIECES))
-	$(info OUTPUTS_TO_EXPORT is $(OUTPUTS_TO_EXPORT))
+	$(info BOOKS is $(BOOKS))
 
 .PHONY: todo
 todo:
 	$(info doing [$@])
 	$(Q)-grep TODO $(FILES_LY)
-
-.PHONY: show_uncompleted_jazz
-show_uncompleted_jazz:
-	$(info doing [$@])
-	$(Q)grep completion src/jazz/* | grep -v 5
 
 .PHONY: clean_all_png
 clean_all_png:
@@ -272,11 +229,11 @@ check_and:
 .PHONY: check_mark
 check_mark:
 	$(info doing [$@])
-	$(Q)make_helper wrapper-ok grep --files-without-match "\\\\myMark" $(FILES_COMPLETED_JAZZ)
+	$(Q)make_helper wrapper-ok grep --files-without-match "\\\\myMark" $(FILES_JAZZ)
 .PHONY: check_key
 check_key:
 	$(info doing [$@])
-	$(Q)grep "\\\\key" $(FILES_COMPLETED_JAZZ) | grep -v major | make_helper wrapper-ok grep -v minor
+	$(Q)grep "\\\\key" $(FILES_JAZZ) | grep -v major | make_helper wrapper-ok grep -v minor
 .PHONY: check_python
 check_python:
 	$(info doing [$@])
@@ -348,45 +305,29 @@ $(FILES_MP3): %.mp3: %.midi $(MIDI2MP3_WRAPPER_DEP) $(ALL_DEP)
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MIDI2MP3_WRAPPER) $< $@
 
-.PHONY: books
-books: $(OB_OUT_PDF) $(IL_OUT_PDF) $(RK_OUT_PDF) $(ALL_DEP)
+$(BOOKS): out/%.pdf: out/%.ly $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
-$(OB_OUT_PDF) $(OB_OUT_PS): $(OB_OUT_LY) $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
-	$(info doing [$@])
-	$(Q)$(LILYPOND_WRAPPER) $(OB_OUT_PS) $(OB_OUT_PDF) $(OB_OUT_BASE) $(OB_OUT_LY) $(DO_PDFRED_BOOKS) $(DO_STOP_OUTPUT)
-$(OB_OUT_LY): $(OB_OUT_FILES) $(MAKO_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
+	$(Q)$(LILYPOND_WRAPPER) $(dir $@)$(basename $(notdir $@)).ps $(dir $@)$(basename $(notdir $@)).pdf $(dir $@)$(basename $(notdir $@)) $< $(DO_PDFRED_BOOKS) $(DO_STOP_OUTPUT)
+
+$(LYS): out/%.ly: $(shell git ls-files src/$(basename $(notdir $@))) $(MAKO_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
-	$(Q)$(MAKO_WRAPPER) $(CONST_BOOK) $(CONST_DONTCUT) 0 $(OB_OUT_LY) $(OB_OUT_FILES)
-$(IL_OUT_PDF) $(IL_OUT_PS): $(IL_OUT_LY) $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
-	$(info doing [$@])
-	$(Q)$(LILYPOND_WRAPPER) $(IL_OUT_PS) $(IL_OUT_PDF) $(IL_OUT_BASE) $(IL_OUT_LY) $(DO_PDFRED_BOOKS) $(DO_STOP_OUTPUT)
-$(IL_OUT_LY): $(IL_OUT_FILES) $(MAKO_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
-	$(info doing [$@])
-	$(Q)mkdir -p $(dir $@)
-	$(Q)$(MAKO_WRAPPER) $(CONST_BOOK) $(CONST_DONTCUT) 0 $(IL_OUT_LY) $(IL_OUT_FILES)
-$(RK_OUT_PDF) $(RK_OUT_PS): $(RK_OUT_LY) $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
-	$(info doing [$@])
-	$(Q)$(LILYPOND_WRAPPER) $(RK_OUT_PS) $(RK_OUT_PDF) $(RK_OUT_BASE) $(RK_OUT_LY) $(DO_PDFRED_BOOKS) $(DO_STOP_OUTPUT)
-$(RK_OUT_LY): $(RK_OUT_FILES) $(MAKO_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
-	$(info doing [$@])
-	$(Q)mkdir -p $(dir $@)
-	$(Q)$(MAKO_WRAPPER) $(CONST_BOOK) $(CONST_DONTCUT) 0 $(RK_OUT_LY) $(RK_OUT_FILES)
+	$(Q)$(MAKO_WRAPPER) $(CONST_BOOK) $(CONST_DONTCUT) 0 $@ $(shell git ls-files src/$(basename $(notdir $@)))
 
 .PHONY: grive
-grive: $(OUTPUTS_TO_EXPORT) $(ALL_DEP)
+grive: $(BOOKS) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-rm -rf ~/grive/outputs/$(tdefs.project_name)
 	$(Q)-mkdir ~/grive/outputs/$(tdefs.project_name)
-	$(Q)cp $(OUTPUTS_TO_EXPORT) ~/grive/outputs/$(tdefs.project_name)
+	$(Q)cp $(BOOKS) ~/grive/outputs/$(tdefs.project_name)
 	$(Q)cd ~/grive; grive
 
 .PHONY: dropbox
-dropbox: $(OUTPUTS_TO_EXPORT) $(ALL_DEP)
+dropbox: $(BOOKS) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-rm -rf ~/Dropbox/outputs/$(tdefs.project_name)
 	$(Q)-mkdir ~/Dropbox/outputs/$(tdefs.project_name)
-	$(Q)cp $(OUTPUTS_TO_EXPORT) ~/Dropbox/outputs/$(tdefs.project_name)
+	$(Q)cp $(BOOKS) ~/Dropbox/outputs/$(tdefs.project_name)
 
 .PHONY: web
 web: grive dropbox
@@ -394,15 +335,6 @@ web: grive dropbox
 
 .PHONY: all_tunes
 all_tunes: $(ALL_OUT_STAMP)
-	$(info doing [$@])
-.PHONY: all_tunes_jazz
-all_tunes_jazz: $(OB_OUT_STAMP)
-	$(info doing [$@])
-.PHONY: all_tunes_rock
-all_tunes_rock: $(RK_OUT_STAMP)
-	$(info doing [$@])
-.PHONY: all_tunes_israeli
-all_tunes_israeli: $(IL_OUT_STAMP)
 	$(info doing [$@])
 
 $(HTMLCHECK): $(SOURCES_HTML) $(ALL_DEP)
