@@ -35,7 +35,7 @@ DO_STOP_OUTPUT:=0
 # do you want to validate html?
 DO_CHECKHTML:=1
 # which books should we do?
-DO_BOOKS=openbook israeli
+NAMES:=openbook israeli drumming
 
 #############
 # CONSTANTS #
@@ -119,8 +119,8 @@ FILES_OGG:=$(addsuffix .ogg,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 ALL_OUT_FILES:=$(shell find src -type f -and -name "*.mako")
 ALL_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(ALL_OUT_FILES))))
 
-BOOKS:=out/openbook.pdf out/israeli.pdf
-LYS:=out/openbook.ly out/israeli.ly
+BOOKS:=$(addsuffix .pdf,$(addprefix $(OUT_DIR)/,$(NAMES)))
+LYS:=$(addsuffix .ly,$(addprefix $(OUT_DIR)/,$(NAMES)))
 
 ifeq ($(DO_LY),1)
 	ALL+=$(FILES_LY)
@@ -191,7 +191,9 @@ debug_me:
 	$(info WEB_FOLDER is $(WEB_FOLDER))
 	$(info DO_PDFRED_BOOKS is $(DO_PDFRED_BOOKS))
 	$(info DO_PDFRED_PIECES is $(DO_PDFRED_PIECES))
+	$(info NAMES is $(NAMES))
 	$(info BOOKS is $(BOOKS))
+	$(info LYS is $(LYS))
 
 .PHONY: todo
 todo:
@@ -305,14 +307,20 @@ $(FILES_MP3): %.mp3: %.midi $(MIDI2MP3_WRAPPER_DEP) $(ALL_DEP)
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MIDI2MP3_WRAPPER) $< $@
 
-$(BOOKS): out/%.pdf: out/%.ly $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
-	$(info doing [$@])
-	$(Q)$(LILYPOND_WRAPPER) $(dir $@)$(basename $(notdir $@)).ps $(dir $@)$(basename $(notdir $@)).pdf $(dir $@)$(basename $(notdir $@)) $< $(DO_PDFRED_BOOKS) $(DO_STOP_OUTPUT)
-
-$(LYS): out/%.ly: $(shell git ls-files src/$(basename $(notdir $@))) $(MAKO_WRAPPER_DEP) $(COMMON) $(ALL_DEP)
-	$(info doing [$@])
-	$(Q)mkdir -p $(dir $@)
-	$(Q)$(MAKO_WRAPPER) $(CONST_BOOK) $(CONST_DONTCUT) 0 $@ $(shell git ls-files src/$(basename $(notdir $@)))
+define template
+TMPL_LY_$(1):=$$(OUT_DIR)/$(1).ly
+TMPL_PS_$(1):=$$(OUT_DIR)/$(1).ps
+TMPL_PDF_$(1):=$$(OUT_DIR)/$(1).pdf
+TMPL_PREREQ_$(1):=$(shell git ls-files src/$(1))
+$$(TMPL_PDF_$(1)): $$(TMPL_LY_$(1)) $$(LILYPOND_WRAPPER_DEP) $$(ALL_DEP)
+	$$(info doing [$$@])
+	$$(Q)$$(LILYPOND_WRAPPER) $$(TMPL_PS_$(1)) $$(TMPL_PDF_$(1)) $$(OUT_DIR) $$< $$(DO_PDFRED_BOOKS) $$(DO_STOP_OUTPUT)
+$$(TMPL_LY_$(1)): $$(TMPL_PREREQ_$(1)) $$(MAKO_WRAPPER_DEP) $$(COMMON) $$(ALL_DEP)
+	$$(info doing [$$@])
+	$$(Q)mkdir -p $$(dir $$@)
+	$$(Q)$$(MAKO_WRAPPER) $$(CONST_BOOK) $$(CONST_DONTCUT) 0 $$@ $$(TMPL_PREREQ_$(1))
+endef
+$(foreach name, $(NAMES), $(eval $(call template,$(name))))
 
 .PHONY: grive
 grive: $(BOOKS) $(ALL_DEP)
