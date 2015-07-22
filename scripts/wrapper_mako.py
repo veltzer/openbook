@@ -72,7 +72,7 @@ try:
 		# put each tune in it's own book part (avoid lilypond performance problems)
 		gattr['parts']=True
 	else:
-		gattr['files']=[ p_input ]
+		gattr['files']=p_input
 		gattr['book']=False
 		gattr['toc']=False
 		gattr['midi']=True
