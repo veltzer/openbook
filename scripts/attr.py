@@ -116,7 +116,7 @@ books_dont_have=set([
 doCheckLocation=False
 
 # where are all the fake books?
-folder='/home/mark/slow_links/topics_archive/music_education/jazz/collections'
+folder='/home/mark/links/topics_archive/music_education/jazz/collections'
 
 def check_int(val):
 	if not val.isdigit():

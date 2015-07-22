@@ -48,9 +48,9 @@
 	- added the real book lyrics.
 	- check the real book chords.
 	- check the real book tune.
-	TODO:
 	- check the real book lyrics.
 	- heard the real book version to make sure it sounds ok.
+	TODO:
 % endif
 
 % if part=='ChordsReal':
