@@ -51,6 +51,7 @@
 	- check the real book lyrics.
 	- heard the real book version to make sure it sounds ok.
 	TODO:
+	- bring in another version of this tune.
 % endif
 
 % if part=='ChordsReal':
