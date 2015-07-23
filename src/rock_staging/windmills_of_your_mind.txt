@@ -1,0 +1,38 @@
+This is from the Sting version of this song (https://www.youtube.com/watch?v=8TtdW--jhAQ)
+
+Here are the chords: http://tabs.ultimate-guitar.com/d/dusty_springfield/windmills_of_your_mind_crd.htm
+(you can transpose them to f minor using the GUI there). They are not very accurate.
+
+Bass for this is played by playing the 1'st, 5'th and the octave (1'st) of every
+chord.
+
+Intro
+f1*4:m7 |
+
+Verse 1
+f1*2:m7 | g1:m7.5- | c:7.9- |
+f:m7 | f:7/a | bes:m7 | ees:7.9 |
+aes:maj7 | des:maj7 | g:m7.5- | c:7.9- |
+b:dim7 | c:7.9- | f1*2:m7 |
+
+Verse 2 : like Verse 1
+
+Verse 3
+f1*2:m7 | bes:m7 | ees:7.9 |
+aes:maj7 | aes:7 | des:maj7 | g:7 |
+c:m7 | c2:m7 f:7 | bes:m7 | ees:7.9 |
+aes:maj7 | des:maj7 | g:m7.5- | c:7.9- |
+f1*2:m7 | g1:m7.5- | c:7.9- |
+b:dim7 | f:m7/c | c:7.9- | f1*2:m7 |
+
+Interlude
+f1*2:m7 |
+
+Verse 4
+c:m7 | c2:m7 f:7 | bes:m7 | ees:7.9 |
+aes:maj7 | des:maj7 | g:m7.5- | c:7.9- |
+f1*2:m7 | g1:m7.5- | c:7.9- |
+b:dim7 | f:m7/c | c:7.9- | f1*2:m7 |
+
+Fade out
+f:m7 | f:m7 | .... 
