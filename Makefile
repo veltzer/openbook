@@ -35,7 +35,7 @@ DO_STOP_OUTPUT:=0
 # do you want to validate html?
 DO_CHECKHTML:=1
 # which books should we do?
-NAMES:=openbook israeli drumming
+NAMES:=openbook israeli drumming rockbook
 
 #############
 # CONSTANTS #
