@@ -12,7 +12,7 @@
 
 	attributes['title']='Shape of My Heart'
 	attributes['style']='Pop'
-	attributes['composer']='Sting'
+	attributes['composer']='Sting, Dominic Miller'
 	attributes['poet']='Sting'
 	attributes['piece']='Med. Ballad'
 	attributes['singer']='Sting'
@@ -46,7 +46,7 @@
 	TODO:
 	- check the chords
 	- add guitar chords.
-	- is the composer really sting?
+	- add guitar tab.
 	- add tune
 % endif
 
@@ -58,12 +58,6 @@
 	\startSong
 
 	\mark \markup { \tiny \center-column { Verse and chorus } }
-	\startPart
-	ges2:m ges:m9/e | d:6 des4:sus4 des | ges2:m ges:m9/e | d:6 des4:sus4 des | \myEndLine
-	d1:6 | a2:9 des | d:maj7 des:7 | ges1:m | \myEndLine
-	\endPart
-
-	\mark \markup { \tiny \center-column { Chorus (to special) } }
 	\startPart
 	ges2:m ges:m9/e | d:6 des4:sus4 des | ges2:m ges:m9/e | d:6 des4:sus4 des | \myEndLine
 	d1:6 | a2:9 des | d:maj7 des:7 | ges1:m | \myEndLine
