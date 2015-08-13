@@ -62,6 +62,7 @@
 	\partial 2. s2. |
 
 	\repeat volta 2 {
+
 		\myMark "A"
 		\startPart
 		g1:7 | g2:m7 c:7 | f1:maj7 | d:m7 | \myEndLine
@@ -69,12 +70,14 @@
 		\endPart
 	} \alternative {
 		{
+
 			\myMark "B"
 			\startPart
 			bes1:maj7 | bes2:m7 ees:7 | f1*2:maj7 | \myEndLine
 			d1:m7 | g:7 | g:m7 | c:7 | \myEndLine
 		}
 		{
+
 			\myMark "C"
 			\startPart
 			bes1:maj7 | bes2:m7 ees:7 | f1:maj7 | d:m7 | \myEndLine
@@ -96,16 +99,19 @@
 	\partial 2. g'4 a g |
 
 	\repeat volta 2 {
+
 		%% part "A"
 		a2 g4 f~ | f g a g | a1 | r4 g a g |
 		a2 g4 f~ | f g a g | a1 | r4 a bes c |
 	} \alternative {
 		{
+
 			%% part "B"
 			cis2 d4 f | r g, a bes | b!2 c4 f | r f, g a |
 			a2 bes4 f' | r f d bes | g1 | r4 g a g |
 		}
 		{
+
 			%% part "C"
 			cis2 d4 f | r g, a bes | b!2 c4 g' | r f d bes |
 			a1 | g | f~ | f2. r4 |
@@ -145,7 +151,7 @@
 	_ _ _ fool to fall, __
 	And get that way
 	Hi- -- Ho a -- las
-	and al __ -- so lack a day
+	and al -- __ so lack a day
 
 	Al -- though I
 }
