@@ -123,19 +123,19 @@ Can I just add a single tune?
 ------------------------------
 Yes. To add a tune named "yourtune" just a single file named
 
-		src/jazz/yourtune.mako
+		src/openbook/yourtune.mako
 Yes, the extension should be .mako since I use mako for templating.
 In that file there are sections. Just copy them from some other tune. One section for
 chords, another for lyrics, another for the melody etc.
 After working on the tune build just a single tune by issueing:
 
-		make out/src/jazz/yourtune.pdf
+		make out/src/openbook/yourtune.pdf
 or
 
-		make out/src/jazz/yourtune.midi
+		make out/src/openbook/yourtune.midi
 or
 
-		make out/src/jazz/yourtune.stamp
+		make out/src/openbook/yourtune.stamp
 to get both pdf and midi.
 
 Can I send corrections to the tunes without learning lilypond and all the rest of the stuff?

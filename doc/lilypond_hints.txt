@@ -308,3 +308,13 @@ command line:
 drums
 =====
 http://lilypond-cookbook.tumblr.com/post/74312396803/drum-music-1-getting-started
+
+comments
+========
+- multi-line comment:
+	%{
+	This line, and the notes below are ignored,
+	since they are in a block comment.
+
+	f4 f e e d d c2
+	%}

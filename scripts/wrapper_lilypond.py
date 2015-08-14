@@ -17,6 +17,13 @@ import tempfile # for NamedTemporaryFile
 #############
 # functions #
 #############
+# remove the target files, do nothing if they are not there
+def remove_outputs_if_exist():
+	if os.path.isfile(p_ps):
+		os.unlink(p_ps)
+	if os.path.isfile(p_pdf):
+		os.unlink(p_pdf)
+
 # this function is here because we want to supress output until we know
 # there is an error (and subprocess.check_output does not do this)
 def system_check_output(args):
@@ -39,19 +46,13 @@ def system_check_output(args):
 		print('{0}: stderr is'.format(sys.argv[0]), file=sys.stderr)
 		print(errout, file=sys.stderr)
 		print('{0}: error in executing {1}'.format(sys.argv[0], args), file=sys.stderr)
+		remove_outputs_if_exist()
 		sys.exit(1)
 	if p_show_output:
 		print('{0}: stdout is'.format(sys.argv[0]), file=sys.stderr)
 		print(output, file=sys.stderr)
 		print('{0}: stderr is'.format(sys.argv[0]), file=sys.stderr)
 		print(errout, file=sys.stderr)
-
-# remove the target files, do nothing if they are not there
-def remove_outputs_if_exists():
-	if os.path.isfile(p_ps):
-		os.unlink(p_ps)
-	if os.path.isfile(p_pdf):
-		os.unlink(p_pdf)
 
 ##############
 # parameters #
@@ -93,7 +94,7 @@ p_stop_on_output=bool(int(sys.argv[6]))
 if p_debug:
 	print('{0}: arguments are [{1}]'.format(sys.argv[0], sys.argv), file=sys.stderr)
 
-remove_outputs_if_exists()
+remove_outputs_if_exist()
 
 # run the command
 args=[]
@@ -115,7 +116,7 @@ try:
 	if p_do_pdf:
 		os.chmod(p_pdf,0o0444)
 except Exception as e:
-	remove_outputs_if_exists()
+	remove_outputs_if_exist()
 	print('{0}: exiting because of errors'.format(sys.argv[0]), file=sys.stderr)
 	sys.exit(1)
 

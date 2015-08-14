@@ -43,6 +43,7 @@
 	DONE:
 	- added a lyrics url.
 	- added the fake book epdf.
+	- added the tune structure.
 	- wrote down the fake book chords.
 	- wrote down the fake book tune.
 	- wrote down the fake book lyrics.
@@ -88,10 +89,10 @@
 
 	} \alternative {
 		{
-			g e:7.9+ | a:7.9- d:7.9- | \myEndLine
+			g e:7.9+ | a:7.9- d:7.9- | \myEndLineVoltaNotLast
 		}
 		{
-			ees1 | bes2/d d:7/c | g/b e:7 | a:m7 d:7 | g1*2 | \myEndLine
+			ees1 | bes2/d d:7/c | g/b e:7 | a:m7 d:7 | g1*2 | \myEndLineVoltaLast
 		}
 	}
 	\endPart
@@ -104,6 +105,7 @@
 % if part=='VoiceFake':
 {
 	\tempo "Allegro" 4 = 130
+	\set Staff.timeSignatureFraction=#'(2 . 2)
 	\time 4/4
 	\key g \major
 

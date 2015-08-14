@@ -4,7 +4,7 @@ Options:
 ========
 1. Create a pdf from every song and catenate the small pdfs into one large pdf.
 	A command line like this could do the trick:
-	pdfjoin out/src/jazz/*.pdf --outfile '.$output.' 2> /dev/null
+	pdfjoin out/src/openbook/*.pdf --outfile '.$output.' 2> /dev/null
 
 	Advantages:
 	- very easy to do.
@@ -13,7 +13,7 @@ Options:
 	- the resulting pdf is too heavy since it has the fonts over and over
 	and over again.
 		you can see this by issuing:
-		> pdffonts out/src/jazz/once_i_loved.pdf
+		> pdffonts out/src/openbook/once_i_loved.pdf
 		and
 		> pdffonts out/openbook.pdf
 		and seeing that the object are repeated.
