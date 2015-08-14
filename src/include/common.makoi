@@ -218,7 +218,7 @@ ${self.defs()}
 
 % if gattr['book']:
 %% book header
-\book {
+%%\book {
 	%% this is the title page
 	\bookpart {
 		\markup {
@@ -317,6 +317,9 @@ ${self.defs()}
 
 %% from here everything needs to go into a loop
 % for file in gattr['files']:
+
+%% include anything the user wants before the bookpart starts
+<%include file="/${file}" args="part='Defs'"/>
 
 % if gattr['parts']:
 \bookpart {
@@ -704,5 +707,5 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 
 % if gattr['book']:
 %% book footer
-}
+%%}
 % endif
