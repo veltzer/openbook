@@ -4,6 +4,13 @@
 wrapper to run lilypond.
 run lilypond to produce the book
 lilypond --ps --pdf --output=$(OUT_BASE) $(OUT_LY)
+
+Why do we need this script?
+- To make sure to remove the outputs (all of them - ps, pdf, ...) in any case of error.
+- To get over lilypond printing junk on the console that I don't want to see when building.
+- To get over the fact that lilypond does not have a "treat warnings as errors and stop" flag.
+- To print the lilypond output, but only in case of error.
+- To do extra stuff on the output coming out from lilypond like reduce the size of the pdf and more.
 '''
 
 import sys # for argv, exit, stderr
@@ -24,6 +31,17 @@ def remove_outputs_if_exist():
 	if os.path.isfile(p_pdf):
 		os.unlink(p_pdf)
 
+# print output of the program in case of error
+def print_outputs(output, errout, status, args):
+	if output!='':
+		print('{0}: stdout is'.format(sys.argv[0]), file=sys.stderr)
+		print(output, file=sys.stderr)
+	if errout!='':
+		print('{0}: stderr is'.format(sys.argv[0]), file=sys.stderr)
+		print(errout, file=sys.stderr)
+	print('{0}: return code is [{1}]'.format(sys.argv[0], status), file=sys.stderr)
+	print('{0}: error in executing {1}'.format(sys.argv[0], args), file=sys.stderr)
+
 # this function is here because we want to supress output until we know
 # there is an error (and subprocess.check_output does not do this)
 def system_check_output(args):
@@ -33,32 +51,14 @@ def system_check_output(args):
 	(output,errout)=pr.communicate()
 	output=output.decode()
 	errout=errout.decode()
-	if p_debug:
-		print('{0}: stdout is'.format(sys.argv[0]), file=sys.stderr)
-		print(output, file=sys.stderr)
-		print('{0}: stderr is'.format(sys.argv[0]), file=sys.stderr)
-		print(errout, file=sys.stderr)
-		print('{0}: return code is [{1}]'.format(sys.argv[0], pr.returncode), file=sys.stderr)
-	status=pr.returncode
-	if status or (p_stop_on_output and (output!='' or errout!='')):
-		print('{0}: stdout is'.format(sys.argv[0]), file=sys.stderr)
-		print(output, file=sys.stderr)
-		print('{0}: stderr is'.format(sys.argv[0]), file=sys.stderr)
-		print(errout, file=sys.stderr)
-		print('{0}: error in executing {1}'.format(sys.argv[0], args), file=sys.stderr)
+	if p_debug or pr.returncode or (p_stop_on_output and (output!='' or errout!='')):
+		print_outputs(output, errout, pr.returncode, args)
 		remove_outputs_if_exist()
 		sys.exit(1)
-	if p_show_output:
-		print('{0}: stdout is'.format(sys.argv[0]), file=sys.stderr)
-		print(output, file=sys.stderr)
-		print('{0}: stderr is'.format(sys.argv[0]), file=sys.stderr)
-		print(errout, file=sys.stderr)
 
 ##############
 # parameters #
 ##############
-# I want errors to happen if there is any output...
-p_show_output=False
 # do postscript?
 p_do_ps=True
 # do pdf?
@@ -73,6 +73,10 @@ p_do_qpdf=True
 # we really need to work with warnings and solve all of them
 p_loglevel='WARN'
 #p_loglevel='ERROR'
+# should we reduce the pdf size?
+p_do_pdfred=True
+# should we stop on errors? (This should be set to True!)
+p_stop_on_output=True
 
 ########
 # code #
@@ -80,16 +84,14 @@ p_loglevel='WARN'
 # first check that we are using the correct version of python
 check_version.check_version()
 
-if len(sys.argv)!=7:
-	print('{0}: usage: [ps] [pdf] [pdf without suffix] [lilypond input] [reducepdf] [stoponoutput]'.format(sys.argv[0]))
+if len(sys.argv)!=5:
+	print('{0}: usage: [ps] [pdf] [pdf without suffix] [lilypond input]'.format(sys.argv[0]))
 	sys.exit(1)
 
 p_ps=sys.argv[1]
 p_pdf=sys.argv[2]
 p_out=sys.argv[3]
 p_ly=sys.argv[4]
-p_do_pdfred=int(sys.argv[5])
-p_stop_on_output=bool(int(sys.argv[6]))
 
 if p_debug:
 	print('{0}: arguments are [{1}]'.format(sys.argv[0], sys.argv), file=sys.stderr)

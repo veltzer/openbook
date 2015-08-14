@@ -26,16 +26,10 @@ DO_MP3:=0
 DO_OGG:=0
 # should we do the full books ?
 DO_BOOKS_PDF:=1
-# should we reduce the size of the pdf books?
-DO_PDFRED_BOOKS:=1
-# should we reduce the size of the pdf individual songs?
-DO_PDFRED_PIECES:=1
-# should we stop on lilypond output?
-DO_STOP_OUTPUT:=1
 # do you want to validate html?
 DO_CHECKHTML:=1
 # which books should we do?
-NAMES:=openbook israeli drumming rockbook
+NAMES:=openbook israeli drumming rockbook guitar_album
 
 #############
 # CONSTANTS #
@@ -189,8 +183,6 @@ debug_me:
 	$(info FILES_OGG is $(FILES_OGG))
 	$(info FILES_JAZZ is $(FILES_JAZZ))
 	$(info WEB_FOLDER is $(WEB_FOLDER))
-	$(info DO_PDFRED_BOOKS is $(DO_PDFRED_BOOKS))
-	$(info DO_PDFRED_PIECES is $(DO_PDFRED_PIECES))
 	$(info NAMES is $(NAMES))
 	$(info BOOKS is $(BOOKS))
 	$(info LYS is $(LYS))
@@ -269,7 +261,7 @@ $(FILES_MIDI): %.midi: %.stamp $(ALL_DEP)
 $(FILES_STAMP): %.stamp: %.ly $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
-	$(Q)$(LILYPOND_WRAPPER) $(dir $@)$(basename $(notdir $@)).ps $(dir $@)$(basename $(notdir $@)).pdf $(dir $@)$(basename $(notdir $@)) $< $(DO_PDFRED_PIECES) $(DO_STOP_OUTPUT)
+	$(Q)$(LILYPOND_WRAPPER) $(dir $@)$(basename $(notdir $@)).ps $(dir $@)$(basename $(notdir $@)).pdf $(dir $@)$(basename $(notdir $@)) $<
 	$(Q)touch $@
 
 $(OUT_DIR)/%.0.pdf: %.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
@@ -316,7 +308,7 @@ TMPL_PDF_$(1):=$$(OUT_DIR)/$(1).pdf
 TMPL_PREREQ_$(1):=$(shell git ls-files src/$(1))
 $$(TMPL_PDF_$(1)): $$(TMPL_LY_$(1)) $$(LILYPOND_WRAPPER_DEP) $$(ALL_DEP)
 	$$(info doing [$$@])
-	$$(Q)$$(LILYPOND_WRAPPER) $$(TMPL_PS_$(1)) $$(TMPL_PDF_$(1)) $$(OUT_DIR) $$< $$(DO_PDFRED_BOOKS) $$(DO_STOP_OUTPUT)
+	$$(Q)$$(LILYPOND_WRAPPER) $$(TMPL_PS_$(1)) $$(TMPL_PDF_$(1)) $$(OUT_DIR) $$<
 $$(TMPL_LY_$(1)): $$(TMPL_PREREQ_$(1)) $$(MAKO_WRAPPER_DEP) $$(COMMON) $$(ALL_DEP)
 	$$(info doing [$$@])
 	$$(Q)mkdir -p $$(dir $$@)

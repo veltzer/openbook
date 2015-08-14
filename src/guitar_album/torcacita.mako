@@ -33,7 +33,7 @@
 	- document the youtube performances.
 % endif
 
-% if part=='Own':
+% if part=='Defs':
 PartChords=\chordmode {
 	\startSong
 	\startChords
@@ -196,7 +196,9 @@ PartLowVoice=\relative c' {
 		{ a | }
 	}
 }
+% endif
 
+% if part=='Own':
 %% score for printing
 \score {
 	<<
