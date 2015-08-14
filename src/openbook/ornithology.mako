@@ -61,16 +61,13 @@
 
 		\myMark "A"
 		\startPart
-		g1*2:maj7 | g2:m7 c:7 | g:m7 | c:7 | \myEndLine
+		g1*2:maj7 | g2:m7 c:7 | g:m7 c:7 | \myEndLine
 		f1*2:maj7 | f1:m7 | bes:7 | \myEndLine
 		\endPart
 
 		\myMark "B"
-
-		\myMark "C"
 		\startPart
 		ees:7 | d:7 |
-		\endPart
 	} \alternative {
 		{
 			g:m | c2:m7.5- d:7 | \myEndLine
@@ -78,7 +75,7 @@
 		}
 		{
 			g | a2:m7 d:7 | \myEndLine
-			g/b bes:7 | a:m7 aes:7 | g1*2:maj7 | \myEndLine
+			g/b bes:7 | a:m7 aes:7 | g1*2:maj7 | \myEndLine \endPart
 		}
 	}
 
@@ -102,8 +99,6 @@
 		c a4 f!8 bes gis a f~ | f r r4 r4 r8 aes~ | aes4 g8 f! e g f c | f!4 ees8 d r4 r8 des'8~ |
 
 		%% part "B"
-
-		%% part "C"
 		des4 c8 bes a c bes g | a4 g8 fis r4 r8 d |
 	} \alternative {
 		{

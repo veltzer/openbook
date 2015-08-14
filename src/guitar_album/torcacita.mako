@@ -35,9 +35,8 @@
 
 % if part=='Own':
 PartChords=\chordmode {
-	\startChords
-
 	\startSong
+	\startChords
 
 	%% there is no need to worry about which instrument plays the chords
 	%% since they will not be heard...
@@ -69,9 +68,8 @@ PartChords=\chordmode {
 		{ a:m | }
 	} \myFakeEndLine
 
-	\endSong
-
 	\endChords
+	\endSong
 }
 
 PartHighVoice=\relative c' {
@@ -80,6 +78,7 @@ PartHighVoice=\relative c' {
 	\time 3/4
 	\key c \major
 
+	%% this is to let lily know that this is voice one
 	\voiceOne
 
 	\startTune
@@ -131,6 +130,9 @@ PartHighVoice=\relative c' {
 }
 
 PartMidVoice=\relative c' {
+	\time 3/4
+
+	%% this is to let lily know that this is voice one
 	\voiceTwo
 
 	s2. |
@@ -162,7 +164,10 @@ PartMidVoice=\relative c' {
 }
 
 PartLowVoice=\relative c' {
-	\voiceFour
+	\time 3/4
+
+	%% this is to let lily know that this is voice one
+	\voiceThree
 
 	s2. |
 

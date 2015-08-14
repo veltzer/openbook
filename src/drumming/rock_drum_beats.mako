@@ -31,17 +31,12 @@ Regular rock type drumming...
 <<
 	\new DrumStaff <<
 		\drummode {
-			<< {
-				\stemUp
-				\repeat unfold 40 hh8
-			} \\ {
-				\stemUp
-				bd4 sn bd sn |
-				bd sn s8 bd sn4 |
-				bd sn8 bd s bd sn4 |
-				bd sn bd8 bd sn sn |
-				bd bd sn bd bd bd sn bd |
-			} >>
+			\stemUp
+			bd4 sn bd sn |
+			bd sn s8 bd sn4 |
+			bd sn8 bd s bd sn4 |
+			bd sn bd8 bd sn sn |
+			bd bd sn bd bd bd sn bd |
 		}
 	>>
 >>

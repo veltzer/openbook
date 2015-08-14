@@ -125,7 +125,7 @@
 
 	%% part "B"
 	\key d \major
-	r8. d16 e8. fis16 a8 a4 a8 | d d4 fis, a8 a4 g8 | fis fis4 d8 e4 cis8 a~ | a2~ a8 r r4 |
+	r8. d16 e8. fis16 a8 a4 a8 | d d4 fis,8 a a4 g8 | fis fis4 d8 e4 cis8 a~ | a2~ a8 r r4 |
 	\key c \major
 	r8. d16 e8. f16 a8 a4 g8 | e' e4 b8 d d4 a8 | c c4 a8 b b4 g8 | e4 ees d bes'^\markup {D.C. al Coda} |
 
