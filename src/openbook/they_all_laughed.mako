@@ -105,9 +105,9 @@
 % if part=='VoiceFake':
 {
 	\tempo "Allegro" 4 = 130
-	\set Staff.timeSignatureFraction=#'(2 . 2)
 	\time 4/4
 	\key g \major
+	\set Staff.timeSignatureFraction=#'(2 . 2)
 
 	\repeat volta 2 {
 
