@@ -43,25 +43,25 @@ PartChords=\chordmode {
 
 	r2. |
 
-	a:m | d:m | a1*2:m | \myFakeEndLine
-	a1:m | d:m | a:m/e | a:m | \myFakeEndLine
-	d:m | e:7 | a1*2:m | \myFakeEndLine
+	a:m | d:m | a2.*2:m | \myFakeEndLine
+	a2.:m | d:m | a:m/e | a:m | \myFakeEndLine
+	d:m | e:7 | a2.*2:m | \myFakeEndLine
 	e:7 | a:m | \myFakeEndLine
 
 	\repeat volta 2 {
-		e1*2:7 | a:m | \myFakeEndLine
-		e1:7 | e:7/d | a1*2:m | \myFakeEndLine
+		e2.*2:7 | a:m | \myFakeEndLine
+		e2.:7 | e:7/d | a2.*2:m | \myFakeEndLine
 		d:m | a:m | \myFakeEndLine
-		e1:7 |
+		e2.:7 |
 	} \alternative {
-		{ e1:7 | a1*2:m | }
-		{ e1:7 | a1*2:m | }
+		{ e2.:7 | a2.*2:m | }
+		{ e2.:7 | a2.*2:m | }
 	} \myFakeEndLine
 
 	\repeat volta 2 {
-		a1*2:m | d1:m | a:m | \myFakeEndLine
+		a2.*2:m | d2.:m | a:m | \myFakeEndLine
 		d:m | a:m | e:7 | a:m | \myFakeEndLine
-		a1*2:m | d1:m | a:m | \myFakeEndLine
+		a2.*2:m | d2.:m | a:m | \myFakeEndLine
 		d:m | a:m/c | e:7/b |
 	} \alternative {
 		{ a:m | }
@@ -81,8 +81,7 @@ PartHighVoice=\relative c' {
 	%% this is to let lily know that this is voice one
 	\voiceOne
 
-	\startTune
-	r8 e' g f e dis \endPart
+	r8 e' g f e dis |
 
 	\myMark "A"
 	e2\segno e4 | f2 \tuplet 3/2 {f8 g f} | e2. | r8 e g f e dis | \myFakeEndLine
@@ -93,7 +92,7 @@ PartHighVoice=\relative c' {
 		\musicglyph #"scripts.caesura.straight"
 	}
 	\breathe
-	c b4 a \endPart \myFakeEndLine
+	c b4 a | \myFakeEndLine
 
 	\myMark "B"
 	\repeat volta 2 {
@@ -202,7 +201,7 @@ PartLowVoice=\relative c' {
 %% score for printing
 \score {
 	<<
-		%%\new ChordNames="Partchords" \PartChords
+		\new ChordNames="Partchords" \PartChords
 		\new Staff="Melody" <<
 			\new Voice="highvoice" \PartHighVoice
 			\new Voice="midvoice" \PartMidVoice

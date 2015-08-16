@@ -1,6 +1,10 @@
 Now:
 ====
-- start the drumming patterns book by adding the rock drumming patterns from drumeo.
+- write to the lilypond people and ask them how to correctly write torcacita.
+- fix the george gershwin tune.
+- get the drumming book to look good
+	(do < > style drumming patterns and put in more patterns).
+- write another tune in the guitar album.
 
 - add graphs from my blog to the gh-pages website.
 - add spell checking on the lyrics of the songs.
