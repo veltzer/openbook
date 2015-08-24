@@ -27,6 +27,8 @@
 % endif
 
 % if part=='Doc':
+	**** THIS TUNE DOESNT COMPILE WITH WARNINGS BECAUSE OF THE GRACE NOTE ISSUE BELOW ****
+
 	DONE:
 	TODO:
 	- the myGrace notes seem to meddle with the line breaks. Why is that? find
@@ -55,7 +57,7 @@
 			c:7.9- | \myEndLineVoltaNotLast
 		}
 		{
-			c:7.9- | \myEndLine
+			c:7.9- | \myEndLineVoltaLast
 		}
 	}
 
@@ -69,7 +71,7 @@
 			c:7.9- | f1:m7 | c:7.9- | \myEndLineVoltaNotLast
 		}
 		{
-			c:7.9- | f:m7 | f:7 | \myEndLine
+			c:7.9- | f:m7 | f:7 | \myEndLineVoltaLast
 		}
 	}
 	\endPart
