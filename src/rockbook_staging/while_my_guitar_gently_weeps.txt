@@ -1,0 +1,13 @@
+This was extracted by me from the "original" Beatles version.
+https://www.youtube.com/watch?v=F3RYvO2X0Oo
+
+verse:
+	a:m | a:m/F | fis:m7.5- | f:maj7 |
+	a:m | g | d | e:7 |
+	a:m | a:m/F | fis:m7.5- | f:maj7 |
+	a:m | g | c | e:7 |
+chorus:
+	a | cis:m | fis:m | cis:m |
+	b:m7 | b:m7 | e:7 e:7/fis | e:7/gis e:7 |
+	a | cis:m | fis:m | cis:m |
+	b:m7 | b:m7 | e:7 e:7/fis | e:7/gis e:7 |
