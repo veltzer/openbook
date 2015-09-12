@@ -318,3 +318,9 @@ comments
 
 	f4 f e e d d c2
 	%}
+
+
+lilypond and jazz
+=================
+http://lilypondblog.org/2013/09/lilypond-and-lilyjazz
+http://lilypondblog.org/2014/09/lilyponds-look-and-feel
