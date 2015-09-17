@@ -59,12 +59,22 @@
 
 	\mark \markup { \tiny \center-column { Verse and chorus } }
 	\startPart
-	ges2:m ges:m9/e | d:6 des4:sus4 des | ges2:m ges:m9/e | d:6 des4:sus4 des | \myEndLine
-	d1:6 | a2:9 des | d:maj7 des:7 | ges1:m | \myEndLine
+	fis2:m fis:m9/e | b:m7 b4:m7 cis:7 | fis2:m fis:m9/e | b:m7 b4:m7 cis:7 | \myEndLine
+	d1 | a2:9 cis:7 | d:maj7 cis:7 | fis1:m | \myEndLine
+	\endPart
+
+	\mark "When doubling"
+	\startPart
+	fis2:m fis:m9/e | b:m7 b4:m7 cis:7 | fis2:m fis:m9/e | b:m7 b4:m7 cis:7 | \myEndLine
+	d1 | a2:9 cis:7 | d:maj7 cis:7 | fis:m fis:m9/e | \myEndLine
+	d:maj7 cis:7 | fis1:m | \myEndLine
 	\endPart
 
 	\mark "Special"
 	\startPart
+	cis2:m cis:m9/b | fis:m7 fis4:m7 gis:7 | cis2:m cis:m9/b | fis:m7 fis4:m7 gis:7 | \myEndLine
+	a1 | e2:9 gis:7 | a:maj7 gis:7 | cis:m cis:m9/b | \myEndLine
+	a:maj7 gis:7 | a1 | \myEndLine
 	\endPart
 
 	\endSong
