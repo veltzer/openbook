@@ -22,7 +22,7 @@ Melody:
 - rests: "r2." looks diffrent on the page than "r2 r4". do with this information what you will.
 - beams: sometimes lilypond beams are not that smart. For instance in Jazz certain passages are fast
 	and should be connected by one beam but since the melody rises and falls lilypond decides
-	to connect it with one beam. In order to get around it use manual beams this way:
+	to connect it with more than one beam. In order to get around it use manual beams this way:
 	b8.[ b16 a8. g16] a8
 - putting a "Fine" mark in the tune:
 	g1~ \mark \markup { \italic { Fine } }

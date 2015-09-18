@@ -13,7 +13,7 @@
 	attributes['title']='This Can\'t Be Love'
 	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']='Richard Rogers'
+	attributes['composer']='Richard Rodgers'
 	# from the fake book
 	attributes['poet']='Lorenz Hart'
 	# from the fake book
