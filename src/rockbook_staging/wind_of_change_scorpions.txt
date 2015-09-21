@@ -1,0 +1,38 @@
+Reference:
+http://tabs.ultimate-guitar.com/s/scorpions/wind_of_change_ver2_crd.htm
+
+Intro:
+4/4 f1 | d:m | f | d:m | a:m | d2:m a:m | 2/4 g2 |
+
+Verse:
+4/4 c1 | d:m | c | d2:m a:m | 2/4 g2 | 4/4 c1 | d:m | c | d2:m a:m | 2/4 g2 |
+
+Interlude (like intro):
+4/4 f1 | d:m | f | d:m | a:m | d2:m a:m | 2/4 g2 |
+
+Verse:
+4/4 c1 | d:m | c | d2:m a:m | 2/4 g2 | 4/4 c1 | d:m | c | d2:m a:m | g1 |
+
+Chorus:
+4/4 c2 g | d:m g | c g | d:m g | a:m f | g1 |
+
+Interude:
+4/4 c1*2 |
+
+Verse:
+4/4 c1 | d:m | c | d2:m a:m | 2/4 g2 | 4/4 c1 | d:m | c | d2:m a:m | g1 |
+
+Chorus:
+4/4 c2 g | d:m g | c g | d:m g | a:m f | g1 |
+
+Bridge:
+4/4 a1:m | g | a:m | g | c | d:m | e1*2:7 |
+
+Guitar solo:
+4/4 f2 g | e:m a:m | f g | a1:m | f2 g | e:m a:m | d1:m | e:7 |
+
+Chorus:
+4/4 c2 g | d:m g | c g | d:m g | a:m f | g1 | g (silent) |
+
+Outro (just the prefix of the intro):
+4/4 f1 | d:m | f | d:m | a:m | d:m |
