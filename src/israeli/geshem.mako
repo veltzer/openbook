@@ -34,38 +34,44 @@
 	\startChords
 	\startSong
 
-	\repeat volta 2 {
-		g1*2 | d | \myEndLine
-		c1 | d | e1*2:m |
-	}
-	d | \myEndLine
-	\repeat volta 2 {
-		g1*2 | d | \myEndLine
-		c1 | d | e1*2:m |
-	}
-	d | \myEndLine
+	\myWordMark "Intro"
+	\startPart
+	g2. g4:sus4 | g2. g4:sus4 |
+	\endPart
 
-	e:m | d | \myEndLine
-	c1 | d | g | g2 g/fis | \myEndLine
-	e1*2:m | d | \myEndLine
-	c1 | d | e:m | \myEndLine
-	a:m | b:m | c | des:m7.5- | \myEndLine
-	b:m | g | c | e1*2 | \myEndLine
-
+	\myWordMark "Verse"
+	\startPart
 	\repeat volta 2 {
-		a | e | \myEndLine
-		d1 | e | fis1*2:m |
+		\repeat volta 2 {
+			g1 | d | c2 d | e1:m |
+		}
+		d | \myEndLine
+	}
+	\endPart
+
+	\myWordMark "Chorus"
+	\startPart
+	e1:m | d | c2 d | g2. g4/fis | \myEndLine
+	e1:m | d | c2 d | e:m a:m | \myEndLine
+	b:m c | des:m7.5- b:m | g c | e1 | \myEndLine
+	\endPart
+
+	\myWordMark "Verse"
+	\startPart
+	\repeat volta 2 {
+		a | e | d2 e | fis1:m |
 	}
 	e | \myEndLine
+	\endPart
 
-	fis:m | e | \myEndLine
-	d1 | e | fis1*2:m | \myEndLine
-	fis:m | e | \myEndLine
-	d1 | e | fis:m | \myEndLine
-	\repeat volta 3 {
-		b:m | cis:m | d | ees:m7.5- | \myEndLine
-		cis:m | a | d | fis1*2 | \myEndLine
+	\myWordMark "Chorus"
+	\startPart
+	fis:m | e | d2 e | fis1:m | \myEndLine
+	fis:m | e | d2 e | \time 2/4 fis2:m | \myEndLine
+	\repeat volta 2 {
+		\time 4/4 b2:m cis:m | d ees:m7.5- | cis:m a | d fis | \time 2/4 fis2 | \myEndLine
 	}
+	\endPart
 
 	%% commented in order to see the closing repeats
 	%%\endSong

@@ -150,6 +150,13 @@ myMark =
 	#{
 	\mark \markup { \circle #mark }
 	#})
+myWordMark =
+#(define-music-function
+	(parser location mark)
+	(markup?)
+	#{
+	\mark \markup { \box #mark }
+	#})
 %% grace that does appoggiatura
 %%\grace $notes
 myGrace = #(define-music-function (parser location notes) (ly:music?) #{ \appoggiatura $notes #})
