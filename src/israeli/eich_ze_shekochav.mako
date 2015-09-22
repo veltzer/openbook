@@ -59,7 +59,7 @@
 	\startPart
 	d1:7 | d:m | fis:dim | a:m | \myEndLine
 	b:m7 | a:7 | d:m/f | fis1*2:m | \myEndLine
-	a1*2:maj7 | e2:m7 e:m6 | e1:m | \myEndLine
+	a:maj7 | e2:m7 e:m6 | e1:m | \myEndLine
 	d:m7 | d2:m6 d:m7 | a1*2:maj7 | \myEndLine
 	\endPart
 
@@ -75,16 +75,16 @@
 	\key a \major
 
 	%% part "A"
-	e2 e | gis4 a8 gis~ gis4 a8 gis~ | gis4 fis8 e8~ e4 fis8 g~ | g1 |
+	e2 e | gis4 a8 gis~ gis4 a8 gis~ | gis4 fis8 e~ e4 fis8 g~ | g1 |
 	r2 g8 fis e f~ | f1 | r4. f8 g a b cis~ | cis1 |
 	r2. cis8 e~ | e4 e8 d~ d4 d8 c~ | c2. b8 d~ | d d d c~ c c c b~ |
-	b4 r4 r8 a8 b d~ | d2. a8 d~ | d d~ d cis~ cis4 b8 a~ | a1~ | a2 r |
+	b4 r r8 a b d~ | d2. a8 d~ | d d~ d cis~ cis4 b8 a~ | a1~ | a2 r |
 
 	%% part "B"
 	c2 c | c4 c8 c~ c4 c8 c~ | c4 c8 c~ c4 c8 c~ | c2 r |
-	r2 d8 d d cis~ | cis2 r | r4 r8 a b b b a~ | a4 r r2 |
-	r4 r8 a b b b a~ | a4 r r2 | r2 a8 gis fis g~ | g2 r |
-	r2 g8 fis e f~ | f2 r | r4 r8 f g a b a~ | a1~ | a1 |
+	r d8 d d cis~ | cis2 r | r4 r8 a b b b a~ | a4 r r2 |
+	r4 r8 a b b b a~ | a4 r r2 | r a8 gis fis g~ | g2 r |
+	r g8 fis e f~ | f2 r | r4 r8 f g a b a~ | a1~ | a |
 }
 % endif
 
