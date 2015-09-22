@@ -116,8 +116,17 @@
 	\small {
 		\fill-line {
 			\right-column {
+				\null
+			}
+			\right-column {
+				\null
+			}
+			\right-column {
+				\null
+			}
+			\right-column {
 
-				%% part "A"
+				\box "A"
 				"איך זה שכוכב אחד לבד מעז."
 				"איך הוא מעז, למען השם."
 				"כוכב אחד לבד."

@@ -59,12 +59,12 @@
 	\startChords
 	\startSong
 
-	\myWordMark "פתיחה"
+	\myWordMark "Intro"
 	\startPart
 	f1:m | bes:m | f:m | c:7 | \myEndLine
 	\endPart
 
-	\myMark "בית"
+	\myMark "A"
 	\startPart
 	f:m | bes:m | f:m | c:7 | \myEndLine
 	f:m | bes:m | f:m | c:7 | \myEndLine
@@ -85,10 +85,10 @@
 	\time 4/4
 	\key f \minor
 
-	%% part "פתיחה"
+	%% part "Intro"
 	f8 aes bes b c f, c' b | bes f ees' d f, d' des f, | des' c f, c' b f bes aes | c, e g bes c4 c' |
 
-	%% part "בית"
+	%% part "A"
 	f,,8 aes8~ aes2. | f'4 des8 bes4 g4 c8~ | c4 aes8 f4 c4 bes'8~ | bes4 g8 e4 c4. |
 	f8 aes8~ aes2. | f'4 des8 bes4 g4 c8~ | c4 aes8 f4 c4 bes'8~ | bes4 g8 e4 c4. |
 	g'4 f8 f4 c g'8~ | g f4 f2~ f8 | g4 f8 f4 c g'8~ | g f4 f c4. |
@@ -101,13 +101,13 @@
 % if part=='LyricsMy':
 \lyricmode {
 
-	%% part "פתיחה"
+	%% part "Intro"
 	_ _ _ _ _ _ _ _
 	_ _ _ _ _ _ _ _
 	_ _ _ _ _ _ _ _
 	_ _ _ _ _ _
 
-	%% part "בית"
+	%% part "A"
 	נ -- ח- __ לא ש -- כ -- חנו איך __ ב -- ג -- שם ו -- __ ב -- ס -- ער
 	נ -- ח- __ ל -- תי -- בה א -- ספ -- __ ת את ח -- יות __ ה -- י -- ער.
 	שת -- יים, שת -- יים מ -- __ כל מין __
@@ -127,8 +127,14 @@
 	\small {
 		\fill-line {
 			\right-column {
+				\null
+			}
+			\right-column {
+				\null
+			}
+			\right-column {
 
-				%% part "בית"
+				\box "A"
 				"נח - היונה כבר שבה עם עלה של זית"
 				"נח - תן לנו לצאת ולחזור לבית"
 				"כי כבר נמאסנו זה על זה"
@@ -141,7 +147,7 @@
 			\null
 			\right-column {
 
-				%% part "בית"
+				\box "A"
 				"נח - כמה זמן נמשיך לשוט על פני המים?"
 				"נח - כל החלונות סגורים כמעט חודשיים."
 				"וכבר אין לנו אויר"
@@ -152,7 +158,7 @@
 				"שלח את היונה."
 				\null
 
-				%% part "בית"
+				\box "A"
 				"נח - מה אתה דואג, הן כבר חדל הגשם"
 				"נח - פתח את החלון, אולי הופיעה קשת"
 				"ויראו אותה כולם"

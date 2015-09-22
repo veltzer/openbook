@@ -50,13 +50,13 @@
 
 	\partial 4 s4 |
 
-	\myWordMark "פתיחה"
+	\myWordMark "Intro"
 	\startPart
 	a2.:m | d:m7 | g:7 | c:maj7 |
 	f:maj7 | b:7 | e:7 | \myEndLine
 	\endPart
 
-	\myWordMark "בית"
+	\myWordMark "A"
 	\startPart
 	a2.:m | d:m7 | e:7 | a:m |
 	a:m | d:m7 | e:7 | a:7 | \myEndLine
@@ -66,7 +66,7 @@
 	a:m | d:m7 | e:7 | a:m | a:m | \myEndLine
 	\endPart
 
-	\myWordMark "פזמון"
+	\myWordMark "B"
 	\startPart
 	\repeat unfold 2 {
 		a2.:m | d:m7 | g:7 | c:maj7 |
@@ -88,11 +88,11 @@
 
 	\partial 4 a'8 e |
 
-	%% part "פתיחה"
+	%% part "Intro"
 	c'4 a4. e8 | f2 g8 a | b4 a4. g8 | f8 e4. f8 g |
 	a2 f8 e | ees2 b8 a | gis4 a b |
 
-	%% part "בית"
+	%% part "A"
 	c'2 b8 a | g2 f8 d | e2 d4 | c8 b a2 |
 	c'8 b a4 g8 f | e2 d8 e | f4 e ees | e2. |
 	d4 e f | g a4. f8 | e4 e d | c b2 |
@@ -100,7 +100,7 @@
 	d4 e f | g a4. f8 | e4 e d | c b2 |
 	a8 b c4 d8 e | g4 f d | e c b | a2. ~ | a2 a'8 e |
 
-	%% part "פזמון"
+	%% part "B"
 	c'2 a8 e | f2 g8 a | b4 a g | f e f8 g |
 	a2 f8 e | ees2 b8 a | gis4 a b | c2 a'8 e |
 	c'2 a8 e | f2 g8 a | b4 a g | f e f8 g |
@@ -146,38 +146,57 @@
 \verticalSpace
 \verticalSpace
 \markup {
+	\override #'(text-direction . +1)
 	\small {
 		\fill-line {
 			\right-column {
-
-				%% part "Verse"
-				"אם היו עינויים - הם הפליגו אליך"
-				"מפרשי הלבן אל האופל שלך"
-				"תנני ללכת תנני ללכת"
-				"לכרוע על חוף הסליחה."
 				\null
+			}
+			\right-column {
+				\null
+			}
+			\right-column {
+				\null
+			}
+			\right-column {
 
-				%% part "Chorus"
+				\box "B"
 				"ולמדתי: שם לכל ריס וציפורן"
 				"ולכל שערה בבשר החשוף"
 				"וריח ילדות ריח דבק ואורן"
 				"הוא ניחוח לילו של הגוף."
+				\null
+
+				\box "A"
+				"באת אלי את עיני לפקוח,"
+				"וגופך לי מבט וחלון וראי,"
+				"באת כלילה הבא אל האוח"
+				"להראות לו בחושך את כל הדברים."
+				\null
 			}
 			\null
 			\right-column {
 
-				%% part "Verse"
+				\box "A"
 				"באת אלי את עיני לפקוח,"
 				"וגופך לי מבט וחלון וראי,"
 				"באת כלילה הבא אל האוח"
 				"להראות לו בחושך את כל הדברים."
 				\null
 
-				%% part "Chorus"
+				\box "B"
 				"ולמדתי: שם לכל ריס וציפורן"
 				"ולכל שערה בבשר החשוף"
 				"וריח ילדות ריח דבק ואורן"
 				"הוא ניחוח לילו של הגוף."
+				\null
+
+				\box "A"
+				"אם היו עינויים - הם הפליגו אליך"
+				"מפרשי הלבן אל האופל שלך"
+				"תנני ללכת תנני ללכת"
+				"לכרוע על חוף הסליחה."
+				\null
 			}
 		}
 	}
