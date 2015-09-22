@@ -146,15 +146,15 @@
 		\fill-line {
 			\right-column {
 
-				%% part
+				%% part "Verse"
 			}
 			\null
 			\right-column {
 
-				%% part
+				%% part "Verse"
 				\null
 
-				%% part
+				%% part "Chorus"
 			}
 		}
 	}

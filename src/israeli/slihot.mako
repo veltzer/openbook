@@ -8,6 +8,7 @@
 	version['doVoice']=True
 	version['doLyrics']=True
 	version['doLyricsmore']=True
+	version['doExtra']=True
 	attributes.addVersion('My', version)
 	attributes.setDefaultVersionName('My')
 
@@ -27,6 +28,7 @@
 
 	attributes['idyoutube1']='DZd_Ik2SNcg'
 	attributes['idyoutube2']='jZ_8rSmLFwU'
+	attributes['lyricsurl']='http://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=462&wrkid=2413'
 %>
 % endif
 
@@ -48,13 +50,13 @@
 
 	\partial 4 s4 |
 
-	\mark "פתיחה"
+	\myWordMark "פתיחה"
 	\startPart
 	a2.:m | d:m7 | g:7 | c:maj7 |
 	f:maj7 | b:7 | e:7 | \myEndLine
 	\endPart
 
-	\myMark "A"
+	\myWordMark "בית"
 	\startPart
 	a2.:m | d:m7 | e:7 | a:m |
 	a:m | d:m7 | e:7 | a:7 | \myEndLine
@@ -64,7 +66,7 @@
 	a:m | d:m7 | e:7 | a:m | a:m | \myEndLine
 	\endPart
 
-	\myMark "B"
+	\myWordMark "פזמון"
 	\startPart
 	\repeat unfold 2 {
 		a2.:m | d:m7 | g:7 | c:maj7 |
@@ -136,5 +138,48 @@
 	מפר -- שי ה -- ל -- בן אל האו -- פל של -- ך
 	תנני ללכת תנני ללכת
 	לכרוע על חוף הסליחה.
+}
+% endif
+
+% if part=='Extra':
+%% Lyrics
+\verticalSpace
+\verticalSpace
+\markup {
+	\small {
+		\fill-line {
+			\right-column {
+
+				%% part "Verse"
+				"אם היו עינויים - הם הפליגו אליך"
+				"מפרשי הלבן אל האופל שלך"
+				"תנני ללכת תנני ללכת"
+				"לכרוע על חוף הסליחה."
+				\null
+
+				%% part "Chorus"
+				"ולמדתי: שם לכל ריס וציפורן"
+				"ולכל שערה בבשר החשוף"
+				"וריח ילדות ריח דבק ואורן"
+				"הוא ניחוח לילו של הגוף."
+			}
+			\null
+			\right-column {
+
+				%% part "Verse"
+				"באת אלי את עיני לפקוח,"
+				"וגופך לי מבט וחלון וראי,"
+				"באת כלילה הבא אל האוח"
+				"להראות לו בחושך את כל הדברים."
+				\null
+
+				%% part "Chorus"
+				"ולמדתי: שם לכל ריס וציפורן"
+				"ולכל שערה בבשר החשוף"
+				"וריח ילדות ריח דבק ואורן"
+				"הוא ניחוח לילו של הגוף."
+			}
+		}
+	}
 }
 % endif

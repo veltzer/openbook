@@ -89,7 +89,7 @@
 
 	\partial 4 d''4 |
 
-	%% part A
+	%% part "A"
 	\repeat volta 2 {
 		b1~ | \tuplet 3/2 { b4 b, d a' fis d } | e1~ | e4 c \tuplet 3/2 { a f d } |
 		g1 | f2. f4 | f8 e4 g8~ g2~ | g2~ \tuplet 3/2 { g4 f e } |
@@ -97,7 +97,7 @@
 		bes aes8 c~ c2~ | c4 r8 g d' ees aes, d | c1~ | c | r | r2. <\parenthesize d'>4 |
 	}
 
-	%% part Coda
+	%% part "Coda"
 	\repeat volta 2 {
 		r4 r8 g,, d' ees aes, d | c1~ | c | r |
 	}
@@ -108,14 +108,14 @@
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 
-	%% part A
+	%% part "A"
 	Some day you'll look in to her eyes __
 	Then there'll be no good -- byes
 	And yes -- ter -- day __ will have gone __
 	And you'll find yourself __ in a -- no -- ther space __
 	"500" _ _ mi -- les high __
 
-	%% part Coda
+	%% part "Coda"
 	_ "500" _ _ mi -- les high __
 }
 % endif
@@ -123,7 +123,7 @@
 % if part=='LyricsmoreReal':
 \lyricmode {
 
-	%% part A
+	%% part "A"
 	You'll see just one look and you'll know __
 	She's so ten -- der and warm
 	You'll re -- cog -- nise __ this is love __
@@ -135,7 +135,7 @@
 % if part=='LyricsmoremoreReal':
 \lyricmode {
 
-	%% part A
+	%% part "A"
 	Be sure that you love stays so free __
 	Then it nev -- er can die
 	Just re -- a -- lise __ this is truth __

@@ -143,12 +143,15 @@ myCoda=\mark \markup { \musicglyph #"scripts.coda" }
 %% some functions to be reused all over
 %% =====================================================================
 %% A wrapper for section markers that allows us to control their formatting
+
+%% You can have a circle instead of a box using:
+%% \mark \markup { \circle #mark }
 myMark =
 #(define-music-function
 	(parser location mark)
 	(markup?)
 	#{
-	\mark \markup { \circle #mark }
+	\mark \markup { \box #mark }
 	#})
 myWordMark =
 #(define-music-function

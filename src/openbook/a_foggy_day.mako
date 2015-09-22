@@ -102,13 +102,13 @@
 	\time 4/4
 	\key f \major
 
-	%% part 'A'
+	%% part "A"
 	r4 c c c | ees2. ees4 | d d2. | a'1 |
 	r4 f f f | aes2. aes4 | g2. g4 | d'1 |
 	r4 e e e | c c2. | a a4 | f1 |
 	r4 a a a | c c2 c4 | a2. a4 | d,1 |
 
-	%% part 'B'
+	%% part "B"
 	r4 c c c | ees2. ees4 | d2. d4 | a'1 |
 	r4 f f f | aes2. aes4 | g2. g4 | d'1 |
 	f2 f4 f | d2. d4 | c2 c | a a4 bes |
@@ -120,11 +120,11 @@
 %% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 
-	%% part 'A'
+	%% part "A"
 	A Fog -- gy Day in Lon -- don town had __ _ me low and had me down.
 	I viewed the morn -- ing with a -- larm, the Brit -- ish Mu -- seum had lost its charm.
 
-	%% part 'B'
+	%% part "B"
 	How long I wondered could this thing last? But_the age of mira -- cles had -- n't passed,
 	for sud -- den -- ly I saw you there and through fog -- gy Lon -- don town the sun was shin -- ing ev -- 'ry where. __
 }
@@ -178,13 +178,13 @@
 
 	\repeat volta 2 {
 
-	%% part 'A'
+	%% part "A"
 	c c2 ees4~ | ees2. ees4 | d d2 a'4~ | a1 |
 	f2 f4 aes~ | aes2. aes4 | g2 g4 d'4~ | d1 |
 	r4 e e e | c c2. | a2 a4 f~ | f2. f4 |
 	a a a c~ | c c2 c4 | a2 a4 d,~ | d2. c4 |
 
-	%% part 'B'
+	%% part "B"
 	c2 c4 ees~ | ees ees2 ees4 | d2 d4 a'~ | a2 a4 a |
 	f2 f4 aes~ | aes bes aes2 | g g4 d'~ | d2. d4 |
 	f2 f4 d~ | d2. d4 | c2 c4 a~ | a2 a4 bes |
@@ -204,15 +204,15 @@
 % if part=='LyricsFake':
 \lyricmode {
 
-	%% part 'A'
+	%% part "A"
 	A Fog -- gy Day __ in Lon -- don town __ had me low __ and had me down. __
 	I viewed the morn -- ing with a -- larm, __ the Brit -- ish Mu -- se -- um had lost its charm. __
 
-	%% part 'B'
+	%% part "B"
 	How long I won -- dered could this thing last? __ But the age of mir -- a -- cles had -- n't passed, __
 	for sud -- den -- ly, __ I saw you there __ and through fog -- gy Lon -- don town the sun was shin -- ing ev -- 'ry where.
 
-	%% part 'Volta'
+	%% part "Volta"
 	A where. __
 }
 % endif
