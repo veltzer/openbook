@@ -5,7 +5,8 @@
 	import attr
 	version=attr.Version()
 	version['doChords']=True
-	version['doChordBars']=True
+	version['doVoice']=True
+	#version['doChordBars']=True
 	version['doGuitar']=True
 	version['doExtra']=True
 	attributes.addVersion('My', version)
@@ -76,6 +77,20 @@
 	%% commented in order to see the closing repeats
 	%%\endSong
 	%%\endChords
+}
+% endif
+
+% if part=='VoiceMy':
+{
+	\tempo "Moderato" 4 = 80
+	\time 4/4
+	\key e \minor
+
+	%% part "Intro"
+	b2. c4 | b2. a8 b16 c |
+
+	%% part "Verse"
+	d8. c16 b8 c d8. c16 b8 c | d1 |
 }
 % endif
 
