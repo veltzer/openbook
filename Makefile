@@ -239,7 +239,7 @@ check_hardcoded_names:
 	$(info doing [$@])
 	$(Q)make_helper wrapper-ok git $(GITARGS) grep veltzer
 .PHONY: check_all
-check_all: check_ws check_naked_mymark check_and check_mark check_key check_python check_hardcoded_names
+check_all: check_ws check_naked_mymark check_and check_mark check_key check_python
 
 .PHONY: checkhtml
 checkhtml: $(HTMLCHECK)
