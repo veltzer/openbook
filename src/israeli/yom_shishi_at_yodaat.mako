@@ -47,11 +47,11 @@
 	\startChords
 	\startSong
 
-	\mark "פתיחה"
+	\myWordMark "פתיחה"
 	f1 | g | c | a:m | \myEndLine
 	f | g | c1*2 | \myEndLine
 
-	\mark "בית"
+	\myWordMark "בית"
 	\repeat volta 2 {
 		c1*2 | g1*2 | \myEndLine
 		g1*2 | c1*2 | \myEndLine
@@ -59,15 +59,15 @@
 	bes1 | a | aes | g | \myEndLine
 	c2 c4 d | ees1 | c1*2 | \myEndLine
 
-	\mark "פזמון"
+	\myWordMark "פזמון"
 	\repeat volta 2 {
 		f1 | g | c | a:m | \myEndLine
 		d:m7 | g | c | c:7 | \myEndLine
 	}
-	\mark "מעבר"
+	\myWordMark "מעבר"
 	f | g | c1*2 | \myEndLine
 
-	\mark "סיום"
+	\myWordMark "סיום"
 	\repeat volta 2 {
 		c1 | g | g | c | \myEndLine
 	}

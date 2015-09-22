@@ -83,7 +83,7 @@
 
 	\repeat volta 2 {
 
-		%% part A
+		%% part "A"
 		d' bes r d | c bes r d | d ( bes2.~ | bes4 ) d, ees d |
 		g f r a | g f r a | a ( f2.~ | f4 ) f g f |
 		d' bes r d | c bes r d | d ( bes2.~ | bes4 ) d, ees d |

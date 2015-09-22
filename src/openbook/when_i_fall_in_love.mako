@@ -106,19 +106,19 @@
 
 	\repeat volta 2 {
 
-		%% part A
+		%% part "A"
 		bes4 ees aes g | ees1 | bes4 ees aes g | ees f2. |
 		bes,4 ees c' bes | aes2. g4 | f1~ | f2. g8 aes |
 
-		%% part B
+		%% part "B"
 		bes4. ees,8 ees4 ees | g f2 g8 aes | \tuplet 3/2 { bes4 g aes } \tuplet 3/2 { bes g aes } | bes2. aes8 bes |
 		c4. f,8 f4 f | aes g2 aes8 bes | \tuplet 3/2 { c4 aes bes } \tuplet 3/2 { c aes c } | bes1 |
 
-		%% part A
+		%% part "A"
 		bes,4 ees aes g | ees1 | bes4 ees aes g | ees f2. |
 		bes,4 ees c' bes | aes2. g4 | f1~ | f2. g8 aes |
 
-		%% part C
+		%% part "C"
 		bes4. ees,8 ees4 ees | d' c2 c,4 | c' bes2 c4 | aes2. f4 |
 		bes, ees aes g | ees2 f |
 	} \alternative {
@@ -131,31 +131,31 @@
 % if part=='LyricsFake':
 \lyricmode {
 
-	%% part A
+	%% part "A"
 	When I Fall In Love
 	it will be for -- ev -- er,
 	or I'll nev -- er
 	fall in love. __
 
-	%% part B
+	%% part "B"
 	in a rest -- less world like this is,
 	love is end -- ed be -- fore it's be -- gun,
 	and too man -- y moon -- light kiss -- es
 	seem to cool in the warmth of the sun.
 
-	%% part A
+	%% part "A"
 	When I give my heart
 	it will be com -- plete -- ly
 	or I'll nev -- er
 	give my heart. __
 
-	%% part C
+	%% part "C"
 	And the mo -- ment I can feel that
 	you feel that way too,
 	is When I Fall In
 	Love with you. __
 
-	%% part Volta
+	%% part "Volta"
 	you. __
 }
 % endif

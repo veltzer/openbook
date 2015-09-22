@@ -43,7 +43,7 @@
 	\startChords
 	\startSong
 
-	\mark "בית"
+	\myWordMark "בית"
 	\startPart
 	a1 | fis:m | d | g | a | \myEndLine
 	d | d:m | g | a | \myEndLine
@@ -51,13 +51,13 @@
 	a | cis:m | d | d:m | a | \myEndLine
 	\endPart
 
-	\mark "פזמון"
+	\myWordMark "פזמון"
 	\startPart
 	fis1*2:m | cis:m | b:m | fis:m | \myEndLine
 	a | cis:m | b:m | fis:m | \myEndLine
 	\endPart
 
-	\mark "אינסטרומנטלי"
+	\myWordMark "אינסטרומנטלי"
 	\startPart
 	\startRepeat
 	fis1*2:m | cis:m | b:m | fis:m | \myEndLine

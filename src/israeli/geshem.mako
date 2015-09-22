@@ -37,7 +37,7 @@
 
 	\myWordMark "Intro"
 	\startPart
-	g2. g4:sus4 | g2. g4:sus4 |
+	g2. g4:sus4 | g2. g4:sus4 | \myEndLine
 	\endPart
 
 	\myWordMark "Verse"
@@ -90,7 +90,8 @@
 	b2. c4 | b2. a8 b16 c |
 
 	%% part "Verse"
-	d8. c16 b8 c d8. c16 b8 c | d1 |
+	d8. c16 b8 c d8. c16 b8 c | d2.. e16 fis | g8. fis16 e8 e d8. b16 d8 e | b2.. b16 c |
+	d8. d16 d8 d d8. d16 e8 fis | d2.. e16 fis | g8. fis16 e8 e d4 \times 2/3 { d8 d d } | e1 |
 }
 % endif
 

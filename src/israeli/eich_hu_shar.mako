@@ -34,7 +34,7 @@
 	\startChords
 	\startSong
 
-	\mark "Verse"
+	\myWordMark "בית"
 	\startPart
 	\repeat volta 2 {
 		a1:m | d:m/f | e:sus4 | e:7 |
@@ -43,7 +43,7 @@
 	a:m | d:m | e:sus4 | e:7 |
 	\endPart
 
-	\mark "Chorus"
+	\myWordMark "פזמון"
 	\startPart
 	d:m | g | c | a:7 |
 	d:m | e:7 | f | a:7 |
