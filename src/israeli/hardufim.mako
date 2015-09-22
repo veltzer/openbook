@@ -54,7 +54,7 @@
 		g:m7 | bes:maj7 | d2:dim7 a:7 |
 	} \alternative {
 		{ d1:m | }
-		{ d1:m | }
+		{ d:m | }
 	} \myEndLine
 	\endPart
 
@@ -100,7 +100,7 @@
 	\repeat volta 2 {
 		e4. a,8 d4. e8 | f4 f2 e8 f | g4. c,8 f4. g8 | a4 a2 bes8 c |
 	} \alternative {
-		{ d4. cis8 f4. e8 | d4 d2 c8 bes | a4. a8 bes8 c bes4 | a2. cis,8 d | }
+		{ d4. cis8 f4. e8 | d4 d2 c8 bes | a4. a8 bes c bes4 | a2. cis,8 d | }
 		{ d'4. cis8 f4. e8 | d4 d2 bes8 c | d4. cis8 f4. e8 | d2. f,8 e | }
 	}
 }

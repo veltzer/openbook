@@ -88,11 +88,11 @@
 
 	\partial 4 a'8 e |
 
-	%% part "Intro"
+	%% part "פתיחה"
 	c'4 a4. e8 | f2 g8 a | b4 a4. g8 | f8 e4. f8 g |
 	a2 f8 e | ees2 b8 a | gis4 a b |
 
-	%% part "A"
+	%% part "בית"
 	c'2 b8 a | g2 f8 d | e2 d4 | c8 b a2 |
 	c'8 b a4 g8 f | e2 d8 e | f4 e ees | e2. |
 	d4 e f | g a4. f8 | e4 e d | c b2 |
@@ -100,7 +100,7 @@
 	d4 e f | g a4. f8 | e4 e d | c b2 |
 	a8 b c4 d8 e | g4 f d | e c b | a2. ~ | a2 a'8 e |
 
-	%% part "B"
+	%% part "פזמון"
 	c'2 a8 e | f2 g8 a | b4 a g | f e f8 g |
 	a2 f8 e | ees2 b8 a | gis4 a b | c2 a'8 e |
 	c'2 a8 e | f2 g8 a | b4 a g | f e f8 g |
