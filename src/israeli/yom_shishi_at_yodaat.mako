@@ -47,11 +47,11 @@
 	\startChords
 	\startSong
 
-	\myWordMark "פתיחה"
+	\myWordMark "Intro"
 	f1 | g | c | a:m | \myEndLine
 	f | g | c1*2 | \myEndLine
 
-	\myWordMark "בית"
+	\myWordMark "Verse"
 	\repeat volta 2 {
 		c1*2 | g1*2 | \myEndLine
 		g1*2 | c1*2 | \myEndLine
@@ -59,15 +59,15 @@
 	bes1 | a | aes | g | \myEndLine
 	c2 c4 d | ees1 | c1*2 | \myEndLine
 
-	\myWordMark "פזמון"
+	\myWordMark "Chorus"
 	\repeat volta 2 {
 		f1 | g | c | a:m | \myEndLine
 		d:m7 | g | c | c:7 | \myEndLine
 	}
-	\myWordMark "מעבר"
+	\myWordMark "Bridge"
 	f | g | c1*2 | \myEndLine
 
-	\myWordMark "סיום"
+	\myWordMark "Outro"
 	\repeat volta 2 {
 		c1 | g | g | c | \myEndLine
 	}
@@ -85,6 +85,16 @@
 	\small { %% \teeny \tiny \small \normalsize \large \huge
 		\fill-line {
 			\right-column {
+				\null
+			}
+			\right-column {
+				\null
+			}
+			\right-column {
+				\null
+			}
+			\right-column {
+				\box "Verse"
 				"אז אני מטלפן מתכנן מתכונן"
 				"מתקלח שעה מתבונן במראה"
 				"מחטא יבלות ומרים משקולות"
@@ -93,8 +103,10 @@
 				"יום שישי כבר מגיע"
 				"השבוע נגמר"
 				\null
+				\box "Chorus"
 				"יום שישי את יודעת..."
 				\null
+				\box "Verse"
 				"כשעובר יום שבת והזמן זז לאט"
 				"אני שוב מיובש, עוד שבוע חדש"
 				"בעיות, עניינים, חדשות, עיתונים"
@@ -102,10 +114,12 @@
 				"אז עכשיו אני כאן, מעביר את הזמן"
 				"אין לי דרך לברוח, לא יודע לאן"
 				\null
+				\box "Chorus"
 				"יום שישי את יודעת..."
 			}
 			\null
 			\right-column {
+				\box "Verse"
 				"השבוע מתחיל מאוחר כרגיל"
 				"אין לי כח לקום אין לי חשק לכלום"
 				"יום ראשון דיכאון יום שני עצבני"
@@ -114,6 +128,7 @@
 				"זה כבר סוף השבוע"
 				"ומחר יום שישי"
 				\null
+				\box "Chorus"
 				"יום שישי את יודעת"
 				"יש בעיר מסיבה"
 				"נשארים כל הלילה"
