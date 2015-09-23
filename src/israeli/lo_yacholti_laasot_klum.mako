@@ -43,7 +43,7 @@
 	\startChords
 	\startSong
 
-	\myWordMark "בית"
+	\myWordMark "Verse"
 	\startPart
 	a1 | fis:m | d | g | a | \myEndLine
 	d | d:m | g | a | \myEndLine
@@ -51,13 +51,13 @@
 	a | cis:m | d | d:m | a | \myEndLine
 	\endPart
 
-	\myWordMark "פזמון"
+	\myWordMark "Chorus"
 	\startPart
 	fis1*2:m | cis:m | b:m | fis:m | \myEndLine
 	a | cis:m | b:m | fis:m | \myEndLine
 	\endPart
 
-	\myWordMark "אינסטרומנטלי"
+	\myWordMark "Solo"
 	\startPart
 	\startRepeat
 	fis1*2:m | cis:m | b:m | fis:m | \myEndLine
@@ -77,46 +77,61 @@
 	\small { %% \teeny \tiny \small \normalsize \large \huge
 		\fill-line {
 			\right-column {
+				\null
+			}
+			\right-column {
+				\null
+			}
+			\right-column {
+				\box "Verse"
 				"לא יכולתי לעשות עם זה כלום, אתה שומע?"
 				"לא יכולתי לעשות עם זה כלום."
 				"זה היה אצלי בידיים..."
 				"ולא יכולתי לעשות כלום."
 				\null
+				\box "Verse"
 				"אנלא יכולתי עם זה משהו, אתה שומע?"
 				"יכולתי לגמגם"
 				"מה רציתי להגיד"
 				"יכולתי להרגיש הכי רע, שאפשר."
 				\null
+				\box "Verse"
 				"ופתאום אתה עומד כמו ילד קטן"
 				"בסינור לצוואר וחוזר על השאלה"
 				"מה עשית עם זה, שואלים לאן"
 				"בזבזת את כל זה היה לך סיכוי"
 				"ואתה תצטרך להתחיל הכל מחדש."
 				\null
+				\box "Verse"
 				"לא יכולתי לעשות עם זה כלום."
 			}
 			\null
 			\right-column {
+				\box "Verse"
 				"לא יכולתי לעשות עם זה כלום, אתה שומע?"
 				"לא יכולתי לעשות עם זה כלום."
 				"זה היה אצלי בידיים..."
 				"ולא יכולתי לעשות כלום."
 				\null
+				\box "Verse"
 				"לא יכולתי לעשות משהו, אתה שומע?"
 				"יכולתי לגמגם"
 				"מה רציתי להגיד "
 				"יכולתי להרגיש הכי רע, שאפשר."
 				\null
+				\box "Verse"
 				"לא יכולתי לעשות עם זה כלום, אתה שומע?"
 				"לא יכולתי לעשות עם זה כלום."
 				"זה היה אצלי בידיים..."
 				"ולא יכולתי לעשות כלום."
 				\null
+				\box "Verse"
 				"לא יכולתי לעשות משהו, אתה שומע?"
 				"יכולתי לגמגם"
 				"מה רציתי להגיד"
 				"יכולתי להרגיש הכי רע, שאפשר."
 				\null
+				\box "Verse"
 				"ופתאום אתה עומד כמו ילד קטן"
 				"בסינור לצוואר וחוזר על השאלה"
 				"מה עשית עם זה, שואלים לאן"
