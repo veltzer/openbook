@@ -1,5 +1,7 @@
 Now:
 ====
+- move all hebrew songs to the new format
+	(of hebrew alignments).
 - auto download all youtube videos to some folder.
 - write to the lilypond people and ask them how to correctly write torcacita.
 - fix the george gershwin tune.
