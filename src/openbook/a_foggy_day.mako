@@ -180,7 +180,7 @@
 
 	%% part "A"
 	c c2 ees4~ | ees2. ees4 | d d2 a'4~ | a1 |
-	f2 f4 aes~ | aes2. aes4 | g2 g4 d'4~ | d1 |
+	f2 f4 aes~ | aes2. aes4 | g2 g4 d'~ | d1 |
 	r4 e e e | c c2. | a2 a4 f~ | f2. f4 |
 	a a a c~ | c c2 c4 | a2 a4 d,~ | d2. c4 |
 

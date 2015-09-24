@@ -80,11 +80,11 @@
 	} \alternative {
 		{
 			e1:m7.5- | a:7.9- | \myEndLine
-			d:m7 | d2.:m7/g g4:7.9- | c1:6 | b2:m7 e:7 |
+			d:m7 | d2.:m7/g g4:7.9- | c1:6 | b2:m7 e:7 | \myEndLineVolta
 		}
 		{
 			e2:m7.5- bes:7.9 | a1:7.9- | \myEndLine
-			d:m7 | g2.:7 g4:7.9- | c2:6 bes4:6 b:6 | c1:6.9 | \myEndLine
+			d:m7 | g2.:7 g4:7.9- | c2:6 bes4:6 b:6 | c1:6.9 | \myEndLineVoltaLast
 		}
 	}
 

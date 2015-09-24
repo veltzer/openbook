@@ -80,7 +80,7 @@
 			\myMark "B"
 			\startPart
 			d:m7 | g:7 | c:maj7 | a:m7 | \myEndLine
-			d:m7 | g:7 | e:m7 | a:7 | \myEndLine
+			d:m7 | g:7 | e:m7 | a:7 | \myEndLineVolta
 			\endPart
 		}
 		{
@@ -90,7 +90,7 @@
 			\myMark "C"
 			\startPart
 			d:m7 | f:m6 | c:maj7 | e2:7 ees:dim | \myEndLine
-			d1:m7 | g:7 | c1*2:6 | \myEndLine
+			d1:m7 | g:7 | c1*2:6 | \myEndLineVolta
 			\endPart
 		}
 	}

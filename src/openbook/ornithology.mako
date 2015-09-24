@@ -71,11 +71,11 @@
 	} \alternative {
 		{
 			g:m | c2:m7.5- d:7 | \myEndLine
-			b1:m7 | e:7 | a:m7 | d:7 | \myEndLine
+			b1:m7 | e:7 | a:m7 | d:7 | \myEndLineVolta
 		}
 		{
 			g | a2:m7 d:7 | \myEndLine
-			g/b bes:7 | a:m7 aes:7 | g1*2:maj7 | \myEndLine \endPart
+			g/b bes:7 | a:m7 aes:7 | g1*2:maj7 | \myEndLineVolta \endPart
 		}
 	}
 

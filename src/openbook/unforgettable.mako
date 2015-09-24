@@ -60,7 +60,7 @@
 	g1 | g:maj7 | g1*2:dim7 | \myEndLine
 	c1 | c:maj7 | a2:7.9 e:m7 | a1:7.9 | \myEndLine
 	f:6 | f:m7 | c2 e:m7.5-/b | a1:7 | \myEndLine
-	d:7.9 | d2.:7.9 des4:7 | d1*2:7 | \myEndLine
+	d:7.9 | d2.:7.9 des4:7 | d1*2:7 | \myEndLineVolta
 	\endPart
 
 	\myMark "B"
@@ -68,7 +68,7 @@
 	g1 | g:maj7 | g1*2:dim7 | \myEndLine
 	c1 | c:maj7 | a2:7.9 e:m7 | a1:7.9 | \myEndLine
 	f:6 | f:m | c | a2:7 a:7.9 | \myEndLine
-	d1:7.9 | d2:m7 g:7 | c d4:m7 des:maj7 | c1:6.9 | \myEndLine
+	d1:7.9 | d2:m7 g:7 | c d4:m7 des:maj7 | c1:6.9 | \myEndLineVolta
 	\endPart
 
 	\endSong
@@ -87,8 +87,12 @@
 		g4 a a8 b4 b8~ | b2 \tuplet 3/2 { g4 a c } | b1~ | b2. r4 |
 		c d d c | c d8 ees~ ees d c4 | g a a g | g a8 b~ b a g4 |
 	} \alternative {
-		{ e e a e~ | e2. f4 | fis? fis c' fis,~ | fis2. r4 | }
-		{ d e e d | d e8 g~ g e d4 | c1~ | c2. r4 | }
+		{
+			e e a e~ | e2. f4 | fis? fis c' fis,~ | fis2. r4 |
+		}
+		{
+			d e e d | d e8 g~ g e d4 | c1~ | c2. r4 |
+		}
 	}
 }
 % endif

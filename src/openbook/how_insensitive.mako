@@ -176,10 +176,10 @@
 		g:m6 |
 	} \alternative {
 		{
-			a:7 | d:m7 | e2:m7.5- a:7.9- | \myEndLine
+			a:7 | d:m7 | e2:m7.5- a:7.9- | \myEndLineVolta
 		}
 		{
-			a1:7 | d2:m d:m6 | d1:m6 | \myEndLine
+			a1:7 | d2:m d:m6 | d1:m6 | \myEndLineVolta
 		}
 	}
 	\endPart

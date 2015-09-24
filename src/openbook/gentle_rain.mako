@@ -75,11 +75,11 @@
 		d:m7.5- | b2:m7.5- e:7 |
 	} \alternative {
 		{
-			a1:m6 | bes:7 | \myEndLine
+			a1:m6 | bes:7 | \myEndLineVoltaNotLast
 		}
 		{
 			a2:m7 d:7 | g:m7 c:7 | f1:6 | c:7 | \myEndLine
-			f:6 | e:m7 | a:m | \OPC e:7 | \myEndLine
+			f:6 | e:m7 | a:m | \OPC e:7 | \myEndLineVoltaLast
 		}
 	}
 	\endPart

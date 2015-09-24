@@ -48,10 +48,10 @@
 		d2:m7 g:7 | d:m7 g:5+7 |
 	} \alternative {
 		{
-			c2 cis:dim7 | g1:7
+			c cis:dim7 | g1:7 | \myEndLineVoltaNotLast
 		}
 		{
-			g1:m7 |
+			g:m7 | \myEndLineVoltaLast
 		}
 	}
 	\myEndLine

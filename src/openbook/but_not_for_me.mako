@@ -74,14 +74,16 @@
 			\myMark "B"
 			\startPart
 			bes1:maj7 | bes2:m7 ees:7 | f1*2:maj7 | \myEndLine
-			d1:m7 | g:7 | g:m7 | c:7 | \myEndLine
+			d1:m7 | g:7 | g:m7 | c:7 | \myEndLineVolta
+			\endPart
 		}
 		{
 
 			\myMark "C"
 			\startPart
 			bes1:maj7 | bes2:m7 ees:7 | f1:maj7 | d:m7 | \myEndLine
-			g:m7 | c:7 | f1*2:maj7 | \myEndLine
+			g:m7 | c:7 | f1*2:maj7 | \myEndLineVolta
+			\endPart
 		}
 	}
 

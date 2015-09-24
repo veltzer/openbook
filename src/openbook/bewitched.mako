@@ -88,10 +88,10 @@
 		c d:7 | d:m g:7 |
 	} \alternative {
 		{
-			c a:m | d:m7 g:7 |
+			c a:m | d:m7 g:7 | \myEndLineVoltaNotLast
 		}
 		{
-			c f | c1 | \myEndLine \endPart
+			c f | c1 | \myEndLineVoltaLast \endPart
 		}
 	}
 	\endSong

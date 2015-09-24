@@ -78,7 +78,7 @@
 			\myMark "B"
 			\startPart
 			aes1:maj7 | bes2:7 g:7 | c:m g:7/b | bes:m7 ees:7 | \myEndLine
-			aes:maj7 c:7/g | f:m d4:m7.5- g:7 | c2:m f:7.9 | bes:7.3-.5-.9-.11-.13- bes:7 | \myEndLine
+			aes:maj7 c:7/g | f:m d4:m7.5- g:7 | c2:m f:7.9 | bes:7.3-.5-.9-.11-.13- bes:7 | \myEndLineVolta
 			\endPart
 		}
 		{
@@ -86,7 +86,7 @@
 			\myMark "C"
 			\startPart
 			f2:m f:m/ees | d:m7.5- g:7 | c:m c:m/bes | c:m/a aes:6 | \myEndLine
-			g:m7 ges:7 | f:m7 bes:7 | ees aes:6 | ees \OPC bes:7 | \myEndLine
+			g:m7 ges:7 | f:m7 bes:7 | ees aes:6 | ees \OPC bes:7 | \myEndLineVolta
 			\endPart
 		}
 	}

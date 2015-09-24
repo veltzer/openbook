@@ -129,6 +129,7 @@ myEndLine=\break
 %%myEndLine={}
 myEndLineVoltaNotLast={}
 myEndLineVoltaLast=\break
+myEndLineVolta=\break
 partBar=\bar "||"
 endBar=\bar "|."
 startBar=\bar ".|"

@@ -113,8 +113,12 @@
 		c1:m7 | c:m7/f |
 
 	} \alternative {
-		{ bes2 g:m7 | c:m7 f:7 | }
-		{ bes1*2 | \myEndLine \endPart }
+		{
+			bes2 g:m7 | c:m7 f:7 | \myEndLineVoltaNotLast
+		}
+		{
+			bes1*2 | \myEndLineVoltaLast \endPart
+		}
 	}
 
 	\endSong

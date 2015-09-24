@@ -60,10 +60,10 @@
 		d1:m7.5- | g:7 |
 	} \alternative {
 		{
-			c1:m7 | d2:m7.5- g:7 |
+			c1:m7 | d2:m7.5- g:7 | \myEndLineVoltaNotLast
 		}
 		{
-			c1:m7 | c:m7 | \myEndLine
+			c1:m7 | c:m7 | \myEndLineVoltaLast
 		}
 	}
 	\endPart

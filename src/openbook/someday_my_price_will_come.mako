@@ -73,7 +73,7 @@
 			\myMark "B"
 			\startPart
 			d:m7 | des:dim | c:m7 | f:7 | \myEndLine
-			d:m7 | des:dim | c:m7 | f:7 | \myEndLine
+			d:m7 | des:dim | c:m7 | f:7 | \myEndLineVolta
 			\endPart
 		}
 		{
@@ -81,7 +81,7 @@
 			\myMark "C"
 			\startPart
 			f:m7 | bes:7 | ees | e:dim | \myEndLine
-			bes/f | c2:m7/f f4:7 | bes2.*2 | \myEndLine
+			bes/f | c2:m7/f f4:7 | bes2.*2 | \myEndLineVolta
 			\endPart
 		}
 	}

@@ -86,11 +86,10 @@
 		g1.:m7 c2:7 |
 	} \alternative {
 		{
-			f d:m7 | g:m7 c:7 |
+			f d:m7 | g:m7 c:7 | \myEndLineVoltaNotLast
 		}
 		{
-			f bes | bes:m6 f:6 |
-			\endPart
+			f bes | bes:m6 f:6 | \myEndLineVoltaLast \endPart
 		}
 	}
 

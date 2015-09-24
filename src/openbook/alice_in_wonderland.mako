@@ -69,10 +69,10 @@
 	} \alternative {
 		{
 			%% the chords a:m7 d:7 are a mistake in the real book
-			e4.:m7 a:7 | d:m7 g:7 |
+			e4.:m7 a:7 | d:m7 g:7 | \myEndLineVoltaNotLast
 		}
 		{
-			c2.:maj7 | a:m7 | \myEndLine
+			c2.:maj7 | a:m7 | \myEndLineVoltaLast
 		}
 	}
 	\endPart
