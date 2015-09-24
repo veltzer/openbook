@@ -88,8 +88,12 @@
 		ees1 | aes | g2:m7 c:7 | f:m7 des:9 | \myEndLine
 		ees c:7.9-.5+ | f:m7 bes:7 |
 	} \alternative {
-		{ ees c:m7 | f:m7 bes:7.9- | }
-		{ ees1*2 | \myEndLine }
+		{
+			ees c:m7 | f:m7 bes:7.9- | \myEndLineVoltaNotLast
+		}
+		{
+			ees1*2 | \myEndLineVoltaLast
+		}
 	}
 	\endPart
 

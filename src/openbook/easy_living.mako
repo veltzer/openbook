@@ -64,10 +64,10 @@
 		f:maj7 d:m7 |
 	} \alternative {
 		{
-			g:m7 c:7 | a:7.5+ d:9 | g:7.5+ c:9 | \myEndLine
+			g:m7 c:7 | a:7.5+ d:9 | g:7.5+ c:9 | \myEndLineVolta
 		}
 		{
-			g:m7 c:7.9- | f bes:7 | ees:m7 aes:7 | \myEndLine
+			g:m7 c:7.9- | f bes:7 | ees:m7 aes:7 | \myEndLineVolta
 		}
 	}
 	\endPart

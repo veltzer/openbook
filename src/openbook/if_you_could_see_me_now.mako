@@ -71,10 +71,10 @@
 		g2:m7 fis4:m7 b:7 | f2:m7 bes:7 |
 	} \alternative {
 		{
-			g:7.5+ c:7 | f:m7 bes:7 |
+			g:7.5+ c:7 | f:m7 bes:7 | \myEndLineVoltaNotLast
 		}
 		{
-			a:m7.5- aes:m7 | g:m7 c4:m7 bes:m7 | \myEndLine
+			a:m7.5- aes:m7 | g:m7 c4:m7 bes:m7 | \myEndLineVoltaLast
 		}
 	}
 	\endPart

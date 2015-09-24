@@ -57,8 +57,12 @@
 		bes1*2:7 | f1:7 | a2:m d:7 | \myEndLine
 		g1:m | c:7 | f2:7 d:7 |
 	} \alternative {
-		{ g2:m c:7 | }
-		{ g2:7 c:7 | \myEndLine}
+		{
+			g2:m c:7 | \myEndLineVoltaNotLast
+		}
+		{
+			g2:7 c:7 | \myEndLineVoltaLast
+		}
 	}
 	\endPart
 
@@ -103,8 +107,12 @@
 		b4. f'8 r b, bes4~ | bes2 aes8 f g f | c'4 r8 a bes4 r8 g | c4 c~ c8 a bes c |
 		a g f e f4 r8 c' | bes4 r8 f'~ f c e f | r4 r8 c~ c4. a8 |
 	} \alternative {
-		{ bes a f d a' a~ a4 }
-		{ bes8 a f d a' g~ g4 }
+		{
+			bes a f d a' a~ a4
+		}
+		{
+			bes8 a f d a' g~ g4
+		}
 	}
 
 	%% part "A"

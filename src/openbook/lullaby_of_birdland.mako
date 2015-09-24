@@ -79,8 +79,12 @@
 		f2:m6 d:m7.5- | g:7.9- c:7.9- | f:m7 des:maj7 | bes:m7 ees:9 | \myEndLine
 		c:m7 f:m7 | bes:m7 ees:7.9- |
 	} \alternative {
-		{ aes:maj7 des:9 | g:m7.5- c:7 | }
-		{ aes1:maj7 | bes2:m7 ees:9 | aes1:maj7 | bes2:m7 a4:maj7 aes:maj7.9 | }
+		{
+			aes:maj7 des:9 | g:m7.5- c:7 | \myEndLineVoltaNotLast
+		}
+		{
+			aes1:maj7 | bes2:m7 ees:9 | aes1:maj7 | bes2:m7 a4:maj7 aes:maj7.9 | \myEndLineVoltaLast
+		}
 	} \myEndLine
 	\endPart
 

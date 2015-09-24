@@ -72,8 +72,12 @@
 		e1:m7.5- | a:7.9- |
 	}
 	\alternative {
-		{ d:maj7 | d:7.9- | }
-		{ d:maj7 | g:7 | \myEndLine }
+		{
+			d:maj7 | d:7.9- | \myEndLineVoltaNotLast
+		}
+		{
+			d:maj7 | g:7 | \myEndLineVoltaLast
+		}
 	}
 	\endPart
 

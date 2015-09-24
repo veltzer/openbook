@@ -83,10 +83,10 @@
 		a:m7 d:7.9- | g:m7 c:7 |
 	} \alternative {
 		{
-			f d:m7 | g:m7 c:7 |
+			f d:m7 | g:m7 c:7 | \myEndLineVoltaNotLast
 		}
 		{
-			f1*2 | \myEndLine
+			f1*2 | \myEndLineVoltaLast
 		}
 	}
 	\endPart

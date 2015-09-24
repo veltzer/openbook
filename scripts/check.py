@@ -35,7 +35,7 @@ def check_file(file):
 			insideVoice=False
 		if insideVoice:
 			if line.find('\myEndLine')!=-1:
-				error(num, line, file)
+				error(num, line, file, 'have end line')
 		if line.startswith('% if part==\'Chords'):
 			insideChords=True
 		if line=='% endif':
@@ -44,6 +44,8 @@ def check_file(file):
 			error(num, line, file, 'myMark with no empty line before it')
 		if line.find('%% part')!=-1 and prev!='':
 			error(num, line, file, 'part with no empty line before it')
+		if line.find('\box')!=-1 and prev!='':
+			error(num, line, file, 'box with no empty line before it')
 		if line.find('%% part')!=-1 and prev=='' and prevprev=='':
 			error(num, line, file, 'part with two empty lines before it')
 		if line.find('\\myEndLine')!=-1 and line.find('%%')!=-1:

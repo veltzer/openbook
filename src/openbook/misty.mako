@@ -72,10 +72,10 @@
 		ees:maj7 c:m7 | f:m7 bes:7 |
 	} \alternative {
 		{
-			g:m7 c:7 | f:m7 bes:7 |
+			g:m7 c:7 | f:m7 bes:7 | \myEndLineVoltaNotLast
 		}
 		{
-			ees1*2:6 | \myEndLine
+			ees1*2:6 | \myEndLineVoltaLast
 		}
 	}
 	\endPart

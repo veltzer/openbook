@@ -242,8 +242,12 @@ check_hardcoded_names:
 check_parts:
 	$(info doing [$@])
 	$(Q)git grep "%% part" src | make_helper wrapper-ok grep -v \"
+.PHONY: check_volta_last
+check_volta_last:
+	$(info doing [$@])
+	$(Q)make_helper wrapper-ok grep alternative `git grep -L myEndLineVolta src/openbook`
 .PHONY: check_all
-check_all: check_ws check_naked_mymark check_and check_mark check_key check_python check_parts
+check_all: check_ws check_naked_mymark check_and check_mark check_key check_python check_parts check_volta_last
 
 .PHONY: checkhtml
 checkhtml: $(HTMLCHECK)

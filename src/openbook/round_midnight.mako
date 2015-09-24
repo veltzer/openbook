@@ -73,10 +73,10 @@
 		aes2:m7 des:7 | ees:m7 aes:7 |
 	} \alternative {
 		{
-			b1:7 | bes:7 |
+			b1:7 | bes:7 | \myEndLineVoltaNotLast
 		}
 		{
-			b2:7 bes:7 | ees1:m7 | \myEndLine
+			b2:7 bes:7 | ees1:m7 | \myEndLineVoltaLast
 		}
 	}
 	\endPart

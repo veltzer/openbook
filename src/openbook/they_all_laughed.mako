@@ -130,7 +130,7 @@
 			g1~ | g2 r |
 		}
 		{
-			g4 g g2 | bes8 bes4 bes8 fis4 fis | d'4 d d2 | e8 e4 e8 b4 b | g1~ | g4 r4 r2 |
+			g4 g g2 | bes8 bes4 bes8 fis4 fis | d'4 d d2 | e8 e4 e8 b4 b | g1~ | g4 r r2 |
 		}
 	}
 }

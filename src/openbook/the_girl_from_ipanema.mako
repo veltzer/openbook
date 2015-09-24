@@ -121,7 +121,7 @@
 		f d4 d8~ d d c e~ | e c4 c8~ c c bes4 |
 	} \alternative {
 		{
-			r4 c2.~ | c2 r |
+			r c2.~ | c2 r |
 		}
 		{
 			r4 c2.~ | c2 r |
@@ -129,7 +129,7 @@
 	}
 
 	%% part "B"
-	f1~ | \tuplet 3/2 {f4 ges f} \tuplet 3/2 {ees4 f ees} |
+	f1~ | \tuplet 3/2 {f4 ges f} \tuplet 3/2 {ees f ees} |
 	des4. ees8~ ees2~ | ees2. r8 gis~ |
 	gis1~ | \tuplet 3/2 {gis4 a gis} \tuplet 3/2 {fis gis fis} |
 	e4. fis8~ fis2~ | fis2. r8 a~ |
@@ -139,9 +139,9 @@
 	\tuplet 3/2 {bes bes, c} \tuplet 3/2 {d e f} | fis2. r4 |
 
 	%% part "A"
-	g4. e8 e4 d8 g8~ | g4 e8 e~ e e d g~ | g4 e e d8 g~ | g g e e~ e e d a'~ |
-	a4. f8 f f d c'~ | c4. e,8 \tuplet 3/2 {e4 e d} | e1 | r4 r8 e8 \tuplet 3/2 {e4 e d} |
-	e1 | r4 r8 e8 \tuplet 3/2 {e4 e d} | e1~ | e2. r4 |
+	g4. e8 e4 d8 g~ | g4 e8 e~ e e d g~ | g4 e e d8 g~ | g g e e~ e e d a'~ |
+	a4. f8 f f d c'~ | c4. e,8 \tuplet 3/2 {e4 e d} | e1 | r4 r8 e \tuplet 3/2 {e4 e d} |
+	e1 | r4 r8 e \tuplet 3/2 {e4 e d} | e1~ | e2. r4 |
 }
 % endif
 

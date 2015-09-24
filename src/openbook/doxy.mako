@@ -61,10 +61,10 @@
 	}
 	\alternative {
 		{
-			c:7 f:7 | bes1:7 |
+			c:7 f:7 | bes1:7 | \myEndLineVoltaNotLast
 		}
 		{
-			c:7 | f:7 | \myEndLine
+			c:7 | f:7 | \myEndLineVoltaLast
 		}
 	}
 	\endPart

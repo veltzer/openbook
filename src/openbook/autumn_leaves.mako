@@ -71,10 +71,10 @@
 		fis:m7.5- |
 	} \alternative {
 		{
-			b:7 | e1*2:m |
+			b:7 | e1*2:m | \myEndLineVoltaNotLast
 		}
 		{
-			b1:7 | e1*2:m | \myEndLine
+			b1:7 | e1*2:m | \myEndLineVoltaLast
 		}
 	}
 	\endPart
