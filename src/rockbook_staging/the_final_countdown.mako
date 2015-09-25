@@ -110,9 +110,10 @@
 \verticalSpace
 \verticalSpace
 \markup {
-	\small { %% \teeny \tiny \small \normalsize \large \huge
-		\fill-line {
+	\small {
+		\concat {
 			\column {
+				\box "Verse"
 				"We're leaving together"
 				"But still it's farewell"
 				"And maybe we'll come back"
@@ -120,10 +121,12 @@
 				"I guess there is no one to blame"
 				"We're leaving ground"
 				"Will things ever be the same again?"
-				\null
+				\vspace #0.3
+				\box "Chorus"
 				"It's the final countdown"
 				"The final countdown"
-				\null
+				\vspace #0.3
+				\box "Verse"
 				"Ohh"
 				"We're heading for Venus and still we stand tall"
 				"'Cause maybe they've seen us and welcome us all, yea"
@@ -131,20 +134,23 @@
 				"(To be found)"
 				"I'm sure that we'll all miss her so"
 			}
-			\null
+			\hspace #3
 			\column {
+				\box "Chorus"
 				"It's the final countdown"
 				"The final countdown"
 				"The final countdown"
 				"(The final countdown)"
 				"Ohh ho ohh"
-				\null
+				\vspace #0.3
+				\box "Chorus"
 				"The final countdown, oh ho"
 				"It's the final countdown"
 				"The final countdown"
 				"The final countdown"
 				"(The final countdown)"
-				\null
+				\vspace #0.3
+				\box "Chorus"
 				"Ohh"
 				"It's the final countdown"
 				"We're leaving together"

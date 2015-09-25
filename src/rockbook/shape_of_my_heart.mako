@@ -88,54 +88,54 @@
 \verticalSpace
 \markup {
 	\small {
-		\fill-line {
+		\concat {
 			\column {
-				%% Verse
+				\box "Verse"
 				"He deals the cards as a meditation"
 				"And those he plays never suspect"
 				"He doesn't play for the money he wins"
 				"He doesn't play for respect"
-				\null
-				%% Verse
+				\vspace #0.3
+				\box "Verse"
 				"He deals the cards to find the answer"
 				"The sacred geometry of chance"
 				"The hidden law of a probable outcome"
 				"The numbers lead a dance"
-				\null
-				%% Chorus
+				\vspace #0.3
+				\box "Chorus"
 				"I know that the spades are swords of a soldier"
 				"I know that the clubs are weapons of war"
 				"I know that diamonds mean money for this art"
 				"But that's not the shape of my heart"
-				\null
-				%% Verse
+				\vspace #0.3
+				\box "Verse"
 				"He may play the jack of diamonds"
 				"He may lay the queen of spades"
 				"He may conceal a king in his hand"
 				"While the memory of it fades"
 			}
-			\null
+			\hspace #3
 			\column {
-				%% Chorus
+				\box "Chorus"
 				"I know that the spades are swords of a soldier"
 				"I know that the clubs are weapons of war"
 				"I know that diamonds mean money for this art"
 				"But that's not the shape of my heart"
 				"Shape of my heart"
-				\null
-				%% Verse
+				\vspace #0.3
+				\box "Verse"
 				"And if I told you that I loved you"
 				"You'd maybe think there's something wrong"
 				"I'm not a man of too many faces"
 				"The mask I wear is one"
-				%% Verse
-				\null
+				\vspace #0.3
+				\box "Verse"
 				"Those who speak know nothing"
 				"And find out to their cost"
 				"Like those who curse their luck in too many places"
 				"And those who fear are lost"
-				\null
-				%% Chorus
+				\vspace #0.3
+				\box "Chorus"
 				"I know that the spades are swords of a soldier"
 				"I know that the clubs are weapons of war"
 				"I know that diamonds mean money for this art"

@@ -117,46 +117,48 @@
 \verticalSpace
 \verticalSpace
 \markup {
-	\small { %% \teeny \tiny \small \normalsize \large \huge
+	\small {
 		\fill-line {
 			\column {
-				%% verse
+				\box "Verse"
 				"And I'd give up forever to touch you"
 				"'Cause I know that you feel me somehow"
 				"You're the closest to heaven that I'll ever be"
 				"And I don't want to go home right now"
-				\null
-				%% verse
+				\vspace #0.3
+				\box "Verse"
 				"And all I can taste is this moment"
 				"And all I can breathe is your life"
 				"And sooner or later it's over"
 				"I just don't want to miss you tonight"
-				\null
-				%% chorus
+				\vspace #0.3
+				\box "Chorus"
 				"And I don't want the world to see me"
 				"'Cause I don't think that they'd understand"
 				"When everything's made to be broken"
 				"I just want you to know who I am"
-				\null
-				%% verse
+				\vspace #0.3
+				\box "Verse"
 				"And you can't fight the tears that ain't coming"
 				"Or the moment of truth in your lies"
 				"When everything feels like the movies"
 				"Yeah, you bleed just to know you're alive"
-			} \column {
-				%% chorus
+			}
+			\hspace #3
+			\column {
+				\box "Chorus"
 				"And I don't want the world to see me"
 				"'Cause I don't think that they'd understand"
 				"When everything's made to be broken"
 				"I just want you to know who I am"
-				\null
-				%% chorus
+				\vspace #0.3
+				\box "Chorus"
 				"And I don't want the world to see me"
 				"'Cause I don't think that they'd understand"
 				"When everything's made to be broken"
 				"I just want you to know who I am"
-				\null
-				%% chorus
+				\vspace #0.3
+				\box "Chorus"
 				"I just want you to know who I am"
 				"I just want you to know who I am"
 				"I just want you to know who I am"

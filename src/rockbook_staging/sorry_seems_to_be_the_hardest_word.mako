@@ -89,22 +89,22 @@
 \verticalSpace
 \verticalSpace
 \markup {
-	\small { %% \teeny \tiny \small \normalsize \large \huge
+	\small {
 		\fill-line {
 			\column {
-				%% verse
+				\box "Verse"
 				"What have I got to do to make you love me"
 				"What have I got to do to make you care"
 				"What do I do when lightning strikes me"
 				"And I wake to find that you're not there"
-				\null
-				%% verse
+				\vspace #0.3
+				\box "Verse"
 				"What do I do to make you want me"
 				"What have I got to do to be heard"
 				"What do I say when it's all over"
 				"And sorry seems to be the hardest word"
-				\null
-				%% chorus
+				\vspace #0.3
+				\box "Chorus"
 				"It's sad, so sad"
 				"It's a sad, sad situation"
 				"And it's getting more and more absurd"
@@ -113,9 +113,9 @@
 				"Oh it seems to me"
 				"That sorry seems to be the hardest word"
 			}
-			\null
+			\hspace #3
 			\column {
-				%% chorus (same as before)
+				\box "Chorus"
 				"It's sad, so sad"
 				"It's a sad, sad situation"
 				"And it's getting more and more absurd"
@@ -123,8 +123,8 @@
 				"Why can't we talk it over"
 				"Oh it seems to me"
 				"That sorry seems to be the hardest word"
-				\null
-				%% verse
+				\vspace #0.3
+				\box "Verse"
 				"What do I do to make you love me"
 				"What have I got to do to be heard"
 				"What do I do when lightning strikes me"

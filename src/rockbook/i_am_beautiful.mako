@@ -44,31 +44,37 @@
 	\chordmode {
 		\startChords
 		\startSong
+
 		\mark "Opening"
 		\startPart
 		ees1 | des | c:m | ces |
 		ees | des | c:m | ces |
 		\endPart
+
 		\mark "Verse"
 		\startPart
 		ees | des | c:m | ces |
 		ees | des | c:m | ces |
 		\endPart
+
 		\mark "Chorus"
 		\startPart
 		aes | f:m | ees2 des | c1:m |
 		aes | f:m | ees2 des | c1:m |
 		f:m |
 		\endPart
+
 		\mark "Transition"
 		\startPart
 		ees | des | c:m | ces |
 		\endPart
+
 		\mark "Special part"
 		\startPart
 		ees | des | c:m | ces |
 		ees | des | c:m | ces |
 		\endPart
+
 		\endSong
 		\endChords
 	}
@@ -92,17 +98,20 @@
 \verticalSpace
 \markup {
 	\small {
-		\fill-line {
+		\concat {
 			\column {
+				\box "Opening"
 				"Don't look at me"
-				\null
+				\vspace #0.3
+				\box "Verse"
 				"Everyday is so wonderful"
 				"Then suddenly"
 				"It's hard to breathe"
 				"Now and then I get insecure"
 				"From all the pain"
 				"I'm so ashamed"
-				\null
+				\vspace #0.3
+				\box "Chorus"
 				"I am beautiful"
 				"No matter what they say"
 				"Words can't bring me down"
@@ -111,7 +120,8 @@
 				"Yes words can't bring me down"
 				"Oh no"
 				"So don't you bring me down today"
-				\null
+				\vspace #0.3
+				\box "Verse"
 				"To all your friends you're delirious"
 				"So consumed"
 				"In all your doom, ooh"
@@ -119,7 +129,10 @@
 				"The pieces gone"
 				"Left the puzzle undone"
 				"Ain't that the way it is"
-				\null
+			}
+			\hspace #3
+			\column {
+				\box "Chorus"
 				"You're beautiful"
 				"No matter what they say"
 				"Words can't bring you down"
@@ -129,9 +142,7 @@
 				"Yes words can't bring you down"
 				"Oh no"
 				"So don't you bring me down today"
-			}
-			\null
-			\column {
+				\box "Chorus"
 				"No matter what we do"
 				"(No matter what we do)"
 				"No matter what we say"
@@ -139,14 +150,18 @@
 				"We're the song inside the tune"
 				"(Yeah, oh yeah)"
 				"Full of beautiful mistakes"
-				\null
+				\vspace #0.3
+				\box "Chorus"
 				"And everywhere we go"
 				"(And everywhere we go)"
 				"The sun will always shine"
 				"(The sun will always, always, shine)"
 				"And tomorrow we might awake"
 				"On the other side"
-				\null
+			}
+			\hspace #3
+			\column {
+				\box "Chorus"
 				"We're beautiful"
 				"No matter what they say"
 				"Yes words won't bring us down"
@@ -156,7 +171,8 @@
 				"Yes words can't bring us down"
 				"Oh no"
 				"So don't you bring me down today"
-				\null
+				\vspace #0.3
+				\box "Chorus"
 				"Oh, oh"
 				"Don't you bring me down today"
 				"Don't you bring me down, ooh"

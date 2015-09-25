@@ -103,41 +103,41 @@
 \verticalSpace
 \markup {
 	\small {
-		\fill-line {
+		\concat {
 			\column {
-				%% verse1
+				\box "Verse"
 				"When its not always raining therell be days like this"
 				"When theres no one complaining therell be days like this"
 				"When everything falls into place like the flick of a switch"
 				"Well my mama told me therell be days like this"
-				\null
-				%% verse2
+				\vspace #0.3
+				\box "Verse"
 				"When you dont need to worry therell be days like this"
 				"When no ones in a hurry therell be days like this"
 				"When all the parts of the puzzle start to look like they fit"
 				"Then I must remember therell be days like this"
-				\null
-				%% verse3
+				\vspace #0.3
+				\box "Verse"
 				"When you dont need an answer therell be days like this"
 				"When you dont meet a chancer therell be days like this"
 				"When you dont get betrayed by that old judas kiss"
 				"Then I must remember therell be days like this"
 			}
-			\null
+			\hspace #3
 			\column {
-				%% verse4
+				\box "Verse"
 				"When everyone is up front and theyre not playing tricks"
 				"When you dont have no freeloaders out to get their kicks"
 				"When its nobodys business the way that you wanna live"
 				"Well my mama told me therell be days like this"
-				\null
-				%% verse5
+				\vspace #0.3
+				\box "Verse"
 				"When no one steps on my dreams therell be days like this"
 				"When people understand what I mean therell be days like this"
 				"When you ring out the changes about how everything is"
 				"Well my mama told me therell be days like this"
-				\null
-				%% ending
+				\vspace #0.3
+				\box "Ending"
 				"Well my mama told me Therell be days like this"
 				"Well my mama told me Therell be days like this"
 				"Well my mama told me Therell be days like this"

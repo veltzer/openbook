@@ -64,60 +64,72 @@
 \verticalSpace
 \markup {
 	\small {
-		\fill-line {
+		\concat {
 			\column {
+				\box "Verse"
 				"Oh baby, baby"
 				"How was I supposed to know"
 				"That somethin' wasn't right?"
-				\null
+				\vspace #0.3
+				\box "Verse"
 				"Oh baby, baby"
 				"I shouldn't have let you go"
 				"And now you're outta sight"
-				\null
+				\vspace #0.3
+				\box "Transition"
 				"Show me how you want it to be"
 				"Tell me baby 'cause I need to know now"
 				"Oh because"
-				\null
+				\vspace #0.3
+				\box "Chorus"
 				"My loneliness is killin' me"
 				"I must confess I still believe"
 				"When I'm not with you I lose my mind"
 				"Give me a sign, hit me baby one more time"
-				\null
+				\vspace #0.3
+				\box "Verse"
 				"Oh baby, baby"
 				"The reason I breathe is you"
 				"Now, boy you got me blinded"
-				\null
+				\vspace #0.3
+				\box "Verse"
 				"I bet you baby"
 				"There's nothing that I would not do, no"
 				"It's not the way I planned it"
-				\null
+				\vspace #0.3
+				\box "Transition"
 				"Show me how you want it to be"
 				"Tell me baby 'cause I need to know now"
 				"Oh because"
 			}
-			\null
+			\hspace #3
 			\column {
+				\box "Chorus"
 				"My loneliness is killin' me"
 				"I must confess I still believe"
 				"When I'm not with you I lose my mind"
 				"Give me a sign, hit me baby one more time"
-				\null
+				\vspace #0.3
+				\box "Chorus"
 				"Oh baby baby, oh baby baby"
 				"Oh baby, baby"
 				"How was I supposed to know"
 				"Oh baby, baby"
 				"I shouldn't have let you go"
-				\null
+				\vspace #0.3
+				\box "Chorus"
 				"I must confess that my lonliness is killing me now"
 				"Don't you know I still believe?"
 				"That you will be here and give me a sign"
 				"Hit me baby one more time"
-				\null
+				\vspace #0.3
+				\box "Chorus"
 				"My loneliness is killin' me"
 				"I must confess I still believe"
 				"When I'm not with you I lose my mind"
 				"Give me a sign, hit me baby one more time"
-				\null
+				\vspace #0.3
+				\box "Chorus"
 				"I must confess that my lonliness is killing me now"
 				"Don't you know I still believe?"
 				"That you will be here and give me a sign"
