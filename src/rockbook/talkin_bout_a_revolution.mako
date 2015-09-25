@@ -69,7 +69,7 @@
 \verticalSpace
 \verticalSpace
 \markup {
-	\small { %% \teeny \tiny \small \normalsize \large \huge
+	\small {
 		\fill-line {
 			\column {
 				"Don't you know you're talking about a revolution"

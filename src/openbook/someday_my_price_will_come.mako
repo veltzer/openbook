@@ -152,28 +152,36 @@
 \verticalSpace
 \verticalSpace
 \markup {
-	\small { %% \teeny \tiny \small \normalsize \large \huge
-		\fill-line {
+	\small {
+		\concat {
 			\column {
+				\box "A"
 				"Someday I'll find my love"
 				"Someone to call my own"
+				\box "B"
 				"And I know at the moment we meet"
 				"my heart will start skipping the beats"
-				\null
+				\vspace #0.3
+				\box "A"
 				"Someday we'll say and do"
 				"Things we've been longing to"
+				\box "C"
 				"Though he's far away I'll find my love someday"
 				"Someday when my dreams come true"
 			}
-			\null
+			\hspace #3
 			\column {
+				\box "A"
 				"Someday my prince will come"
 				"Someday we'll meet again"
+				\box "B"
 				"And away to his castle we'll go"
 				"To be happy forever I know"
-				\null
+				\vspace #0.3
+				\box "A"
 				"Someday when spring is here"
 				"We'll find our love anew"
+				\box "C"
 				"And the birds will sing and weddingbells will ring"
 				"Someday when my dreams come true"
 			}
