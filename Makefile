@@ -246,8 +246,12 @@ check_parts:
 check_volta_last:
 	$(info doing [$@])
 	$(Q)make_helper wrapper-ok grep alternative `git grep -L myEndLineVolta src/openbook`
+.PHONY: check_null
+check_null:
+	$(info doing [$@])
+	$(Q)git grep null src | make_helper wrapper-ok grep -v include
 .PHONY: check_all
-check_all: check_ws check_naked_mymark check_and check_mark check_key check_python check_parts check_volta_last
+check_all: check_ws check_naked_mymark check_and check_mark check_key check_python check_parts check_volta_last check_null
 
 .PHONY: checkhtml
 checkhtml: $(HTMLCHECK)
