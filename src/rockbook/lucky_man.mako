@@ -56,13 +56,13 @@
 		\startChords
 		\startSong
 
-		\mark "Verse"
+		\myWordMark "Verse"
 		\startPart
 		g1 | d | g | d | \myEndLine
 		g | d | g | d | \myEndLine
 		\endPart
 
-		\mark "Chorus"
+		\myWordMark "Chorus"
 		\startPart
 		a:m | e:m | d1*2 | \myEndLine
 		a1:m | e:m | d1*2 | \myEndLine
@@ -91,39 +91,47 @@
 \verticalSpace
 \markup {
 	\small {
-		\fill-line {
+		\concat {
 			\column {
+				\box "Verse"
 				"He had white Horses"
 				"And ladies by the score"
 				"All dressed in satin"
 				"And waiting by the door"
-				\null
+				\vspace #0.3
+				\box "Chorus"
 				"Ooooh, what a lucky man he was"
 				"Ooooh, what a lucky man he was"
-				\null
+				\vspace #0.3
+				\box "Verse"
 				"White lace and feathers"
 				"They made up his bed"
 				"A gold covered mattress"
 				"On which he was led"
-				\null
+				\vspace #0.3
+				\box "Chorus"
 				"Ooooh, what a lucky man he was"
 				"Ooooh, what a lucky man he was"
 			}
-			\null
+			\hspace #3
 			\column {
+				\box "Verse"
 				"He went to fight wars"
 				"For his country and his king"
 				"Of his honor and his glory"
 				"The people would sing"
-				\null
+				\vspace #0.3
+				\box "Chorus"
 				"Ooooh, what a lucky man he was"
 				"Ooooh, what a lucky man he was"
-				\null
+				\vspace #0.3
+				\box "Verse"
 				"A bullet had found him"
 				"His blood ran as he cried"
 				"No money could save him"
 				"So he laid down and he died"
-				\null
+				\vspace #0.3
+				\box "Chorus"
 				"Ooooh, what a lucky man he was"
 				"Ooooh, what a lucky man he was"
 			}

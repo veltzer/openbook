@@ -70,47 +70,56 @@
 \verticalSpace
 \markup {
 	\small {
-		\fill-line {
+		\concat {
 			\column {
+				\box "A"
 				"Don't you know you're talking about a revolution"
 				"It sounds like a whisper"
 				"Don't you know they're talking about a revolution"
 				"It sounds like a whisper"
-				\null
+				\vspace #0.3
+				\box "A"
 				"While they're standing in the welfare lines"
 				"Crying at the doorsteps of those armies of salvation"
 				"Wasting time in unemployment lines"
 				"Sitting around waiting for a promotion"
-				\null
+				\vspace #0.3
+				\box "A"
 				"Don't you know you're talking about a revolution"
 				"It sounds like a whisper"
-				\null
+				\vspace #0.3
+				\box "A"
 				"Poor people are gonna rise up"
 				"And get their share"
 				"Poor people are gonna rise up "
 				"And take what's theirs"
-				\null
+				\vspace #0.3
+				\box "A"
 				"Don't you know you better run, run, run, run, run,"
 				"run, run, run, run, run, run, run, run"
 				"Oh I said you better run, run, run, run, run, run,"
 				"run, run, run, run, run, run, run"
 			}
-			\null
+			\hspace #3
 			\column {
+				\box "A"
 				"Finally the tables are starting to turn"
 				"Talking about a revolution "
 				"Finally the tables are starting to turn"
 				"Talking about a revolution oh no"
 				"Talking about a revolution oh no"
-				\null
+				\vspace #0.3
+				\box "A"
 				"While they're standing in the welfare lines"
 				"Crying at the doorsteps of those armies of salvation"
 				"Wasting time in unemployment lines"
 				"Sitting around waiting for a promotion"
-				\null
+				\vspace #0.3
+				\box "A"
 				"Don't you know you're talking about a revolution"
 				"It sounds like a whisper"
-				\null
+				\vspace #0.3
+				\box "A"
 				"And finally the tables are starting to turn"
 				"Talking about a revolution"
 				"Finally the tables are starting to turn"

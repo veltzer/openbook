@@ -75,34 +75,36 @@
 \verticalSpace
 \markup {
 	\small {
-		\fill-line {
+		\concat {
 			\column {
-				%% verse
+				\box "Verse"
 				"Ain't no sunshine when she's gone."
 				"It's not warm when she's away."
 				"Ain't no sunshine when she's gone"
 				"And she's always gone too long anytime she goes away."
-				\null
-				%% verse
+				\vspace #0.3
+				\box "Verse"
 				"Wonder this time where she's gone,"
 				"Wonder if she's gone to stay"
 				"Ain't no sunshine when she's gone"
 				"And this house just ain't no home anytime she goes away."
-				\null
-				%% special
+				\vspace #0.3
+				\box "Special"
 				"And I know, I know, I know, I know, I know,"
 				"I know, I know, I know, I know, I know, I know, I know,"
 				"I know, I know, I know, I know, I know, I know,"
 				"I know, I know, I know, I know, I know, I know, I know, I know"
 				"Hey, I ought to leave the young thing alone,"
-			} \column {
-				%% verse
+			}
+			\hspace #3
+			\column {
+				\box "Verse"
 				"But ain't no sunshine when she's gone,"
 				"Only darkness everyday."
 				"Ain't no sunshine when she's gone,"
 				"And this house just ain't no home anytime she goes away."
-				\null
-				%% ending
+				\vspace #0.3
+				\box "Ending"
 				"Anytime she goes away."
 				"Anytime she goes away."
 				"Anytime she goes away."
