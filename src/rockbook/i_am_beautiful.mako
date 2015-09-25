@@ -91,7 +91,7 @@
 \verticalSpace
 \verticalSpace
 \markup {
-	\small { %% \teeny \tiny \small \normalsize \large \huge
+	\small {
 		\fill-line {
 			\column {
 				"Don't look at me"

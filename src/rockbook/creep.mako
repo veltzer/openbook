@@ -63,53 +63,62 @@
 \verticalSpace
 \verticalSpace
 \markup {
-	\small { %% \teeny \tiny \small \normalsize \large \huge
-		\fill-line {
+	\small {
+		\concat {
 			\column {
+				\box "Verse"
 				"When you were here before"
 				"Couldn't look you in the eye"
 				"You're just like an angel"
 				"Your skin makes me cry"
-				\null
+				\vspace #0.3
+				\box "Verse"
 				"You float like a feather"
 				"In a beautiful world"
 				"I wish I was special"
 				"You're so fucking special"
-				\null
+				\vspace #0.3
+				\box "Chorus"
 				"But I 'm a creep"
 				"I 'm a weirdo"
 				"What the hell am I doing here?"
 				"I don't belong here"
 			}
-			\null
+			\hspace #3
 			\column {
+				\box "Verse"
 				"I don't care if it hurts"
 				"I want to have control"
 				"I want a perfect body"
 				"I want a perfect soul"
-				\null
+				\vspace #0.3
+				\box "Verse"
 				"I want you to notice"
 				"When I'm not around"
 				"You're so fucking special"
 				"I wish I was special"
-				\null
+				\vspace #0.3
+				\box "Chorus"
 				"But I'm a creep"
 				"I'm a weirdo"
 				"What the hell am I doing here?"
 				"I don't belong here"
 			}
-			\null
+			\hspace #3
 			\column {
+				\box "Chorus"
 				"She's running out again"
 				"She's running out"
 				"She run, run, run run"
 				"Run"
-				\null
+				\vspace #0.3
+				\box "Verse"
 				"Whatever makes you happy"
 				"Whatever you want"
 				"You're so fucking special"
 				"I wish I was special"
-				\null
+				\vspace #0.3
+				\box "Chorus"
 				"But I'm a creep"
 				"I'm a weirdo"
 				"What the hell am I doing here?"

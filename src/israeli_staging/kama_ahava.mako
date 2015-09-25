@@ -144,17 +144,20 @@
 \markup {
 	\small {
 		\fill-line {
-			\right-column {
+			\hspace #0
+			\concat {
+				\right-column {
 
-				%% part "Verse"
-			}
-			\null
-			\right-column {
+					\box "Verse"
+				}
+				\hspace #3
+				\right-column {
 
-				%% part "Verse"
-				\null
+					\box "Verse"
 
-				%% part "Chorus"
+					\vspace #0.3
+					\box "Chorus"
+				}
 			}
 		}
 	}
