@@ -38,17 +38,17 @@
 
 	\startSong
 
-	\mark "verse"
+	\myWordMark "Verse"
 	\startPart
 	\repeat volta 2 {
-		c2 b2:m7.5- | a2:m7 d2:m7 | g2:7 c2:maj7 | d2:m7 g2:7 | \myEndLine
+		c2 b:m7.5- | a2:m7 d:m7 | g:7 c:maj7 | d:m7 g:7 | \myEndLine
 	}
 	\endPart
 
-	\mark "chorus"
+	\myWordMark "Chorus"
 	\startPart
-	a2:m7 g2:7 | f1:maj7 | a2:m7 d2:m7 | g1:7 | \myEndLine
-	c2 b2:m7.5- | a2:m7 g2:7 | f2:maj7 g2:7 | c2 g2:7 | \myEndLine
+	a2:m7 g:7 | f1:maj7 | a2:m7 d:m7 | g1:7 | \myEndLine
+	c2 b:m7.5- | a:m7 g:7 | f:maj7 g:7 | c g:7 | \myEndLine
 	\endPart
 
 	\endSong

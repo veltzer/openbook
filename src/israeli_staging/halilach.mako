@@ -35,14 +35,14 @@
 
 	\mark "verse"
 	\startPart
-	a1:m7 | d1:m7 | a1:m7 | e1 | \myEndLine
-	a1:m7 | d2:m7 g2:7 | c2:maj7 d4:m7 g4:7 | c1:maj7 | \myEndLine
+	a1:m7 | d:m7 | a:m7 | e | \myEndLine
+	a:m7 | d2:m7 g:7 | c:maj7 d4:m7 g:7 | c1:maj7 | \myEndLine
 	\endPart
 
 	\mark "chorus"
 	\startPart
-	f1:maj7 | e1:m7 | d2:m7 e2:7 | a1:m7 | \myEndLine
-	d2:7 e2:m7 | f2:maj7 d4:m7 g4:7 | c2:maj7 d4:m7 e4:7 | a1:m7 | \myEndLine
+	f:maj7 | e:m7 | d2:m7 e:7 | a1:m7 | \myEndLine
+	d2:7 e:m7 | f:maj7 d4:m7 g:7 | c2:maj7 d4:m7 e:7 | a1:m7 | \myEndLine
 	\endPart
 
 	\endSong
