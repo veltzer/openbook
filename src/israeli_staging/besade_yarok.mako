@@ -41,11 +41,11 @@
 
 	\partial 4 s4 |
 
-	bes2 a2:m7 | g1:m7 | g2:m7 bes2 | f2 c2:7 | \myEndLine
-	bes2 a2:m7 | g1:m7 | g2:m7 bes2 | f2 c2:7 | c1:7 | \myEndLine
+	bes2 a:m7 | g1:m7 | g2:m7 bes | f c:7 | \myEndLine
+	bes a:m7 | g1:m7 | g2:m7 bes | f c:7 | c1:7 | \myEndLine
 
-	g1:m7 | bes1 | f2 c2:7 | f1 | \myEndLine
-	g1:m7 | bes2 c2:7 | f2 ees2 | bes2 c2:7 | \myEndLine
+	g:m7 | bes | f2 c:7 | f1 | \myEndLine
+	g:m7 | bes2 c:7 | f ees | bes c:7 | \myEndLine
 
 	\endSong
 	\endChords
