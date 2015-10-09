@@ -75,8 +75,7 @@
 		c1*2:maj7 | c:m7 | \myEndLine
 		d1:7/c | d2:7/c des/c | c1*2:maj7 | \myEndLine
 		\endPart
-	}
-	\alternative {
+	} \alternative {
 		{
 
 			\myMark "B"
@@ -110,8 +109,7 @@
 	\repeat volta 2 {
 		c'2 c~ | c \tuplet 3/2 { b4 g e } | bes'1~ | bes |
 		a2 a~ | a \tuplet 3/2 { aes4 f des } | g1~ | g |
-	}
-	\alternative {
+	} \alternative {
 		{
 
 			%% part "B"

@@ -13,8 +13,7 @@ Chords = \chords {
     \repeat volta 2 {
 	c1*2:m | f:9 | c:m | f:m | 
 	bes2 bes2.:9 bes:7 | bes2.:m6 c4*5:9 | 
-    } 
-    \alternative { 
+    } \alternative { 
 	{ f1..:9 f4:7 | g2 f:m6 | g f4 g:7 | } 
 	{ f1:9 | f2.:m7 bes4:7 | ees1*2 | } 
     }
@@ -40,8 +39,7 @@ Tune = \notes \relative c' {
 	ees2 g ~ | g c,4 d | ees2 g ~ | g c,4 d | 
 	ees2 f4 g ~ | g ees f g | aes2 c ~ | c b4 c | 
 	d2 c ~ | c4 d,4 des d | c'2 ces4 bes ~ | bes2 c,4 d |
-    } 
-    \alternative { 
+    } \alternative { 
 	{ ees2 g ~ | g2. f4 | d1 ~ | d4 r c4 d | } 
 	{ ees2 g ~ | g2. f4 | ees1 ~ | ees2 r4 ees | \bar "||" } 
     }
@@ -49,8 +47,7 @@ Tune = \notes \relative c' {
     \mark "B" 
     \repeat unfold 2 {
 	bes'2 bes4 c | des des2 bes4 | a2 a4 bes | c2. a4 |
-    }
-    \alternative {
+    } \alternative {
 	{ aes!2 aes4 bes | ces ces2 aes4 | g1 ~ | g2 r4 ees | }
 	{ aes!2 aes8 aes4 aes8 | aes4 bes2 aes4 | g1 ~ | g4 r4 c, d \bar "||" }
     }

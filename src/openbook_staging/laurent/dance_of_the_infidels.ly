@@ -13,8 +13,7 @@ Chords = \chords {
 	f | f2:min7 bes:7 | a:min7 g:min7 | ges:min7 b:7 | 
 	bes1:7 | bes2:min7 ees:7 | a1:min7 | aes2:min7 des:7 |
 	g:min7 c:7 | des:min7 ges:7 | g1 | c | g |
-    }
-    \alternative { { d1:7 | } { g1*2 } }
+    } \alternative { { d1:7 | } { g1*2 } }
 }
 
 Tune = \notes \relative c' {
@@ -34,8 +33,7 @@ Tune = \notes \relative c' {
 	~ d fis, g a bes c d ees \break | ~ ees ees des b bes aes ges r | 
 	r8 c, f g a bes c <g e> | ~<g e> <d f> <e2 g> <d4 f> | \break
 	r4 <e2 g> <d4 f> | 
-    } 
-    \alternative { 
+    } \alternative { 
 	{ r4 <e2 g> <d8 f> d16 des | }
 	{ r4 <e2. g> | ~ <e2. g> <d4 f> \bar "|." } 
     } 

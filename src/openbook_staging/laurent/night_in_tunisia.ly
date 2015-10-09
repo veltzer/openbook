@@ -11,8 +11,7 @@ Chords = \chords {
     \partial 8 R8 |
     \repeat "volta" 2 {
 	ees1:7 | d:m7 | ees1:7 | d:m7 | ees1:7 | d:m7 | e2:m7.5- a:7.5- |
-    }
-    \alternative { { d1:m7 } { d1:m7 } }
+    } \alternative { { d1:m7 } { d1:m7 } }
     a1:m7.5- | d:7.9- | g:m7 | g2:m7 c:7 |
     g1:m7.5- | c:7.9- | f:6 | e2:m7.5- a:7.5- |
 
@@ -41,8 +40,7 @@ Tune = \notes \relative c' {
     \partial 8 a8 | 
     \repeat "volta" 2 {
 	\partA
-    } 
-    \alternative { 
+    } \alternative { 
 	{ ~ d2 r4 r8 a8 | }
 	{ ~ d2. a'4 \bar "||" } 
     }

@@ -22,8 +22,7 @@ melody = \notes \relative c'' {
     \boxedMark \mark "A" 
     \repeat volta 2 {
 	\A
-    } 
-    \alternative {
+    } \alternative {
 	{ g8 ees d c f d ees f ~ | f4 r r r8 cis' | }
 	{ g8 ees d c f cis d bes ~ | bes4 r r r8 a' \bar "||" }
     }
@@ -44,8 +43,7 @@ harmony = \notes \chords {
     \repeat volta 2 {
 	c1:9 | c2:m7 f:7.5+ | bes1:maj | g:9 |
 	c:m7 | d2:m7 g:7 | 
-    }
-    \alternative {
+    } \alternative {
 	{ c:m7 f:7 | bes:maj g:7 | }
 	{ c:m7 f:7 | bes1:6 | }
     }

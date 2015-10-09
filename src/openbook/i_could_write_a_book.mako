@@ -73,8 +73,7 @@
 		c2:maj7 a:m7 | d:m7 g:7 | c1:maj7 | c2:maj7 g:7 | \myEndLine
 		c:maj7 g:7 | c:maj7 cis:dim7 | d1:m7 | g:7 | \myEndLine
 		\endPart
-	}
-	\alternative {
+	} \alternative {
 		{
 
 			\myMark "B"
@@ -110,8 +109,7 @@
 	\repeat volta 2 {
 		g2 b | a4 g e d | e1~ | e4 g e d |
 		e g e d | e c'2 e,4 | g1~ | g2 a4 b |
-	}
-	\alternative {
+	} \alternative {
 		{
 
 			%% part "B"

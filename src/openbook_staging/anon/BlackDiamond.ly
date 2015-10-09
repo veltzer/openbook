@@ -17,8 +17,7 @@ myMelody = {
     \repeat volta 2 {
       r4 d8 d f f    | g f d c d4   | r a'8 d af g | f d f4 g | \break
       e'8 d g4 r8 f8 | e d e4  d8 e | a,2.         |
-    }
-    \alternative {  % first, second endings
+    } \alternative {  % first, second endings
       { r4 a8 g f e }
       { b'4 g'4. gf8 \break }
     }
@@ -31,8 +30,7 @@ myMelody = {
       \mark \markup { \musicglyph #"scripts.coda" }
 
                                       c2.          |  % that's measure 15
-    }
-    \alternative {
+    } \alternative {
       { b4 g'4. fs8  }
       { r4 a,8 g f e }
     }
@@ -57,13 +55,11 @@ myChords = \chordmode {
   \repeat volta 2 {
     d2.:m  | d:3-.5+ | d:m6  | d:7  |
     g:m7   | c:7     | f:maj |
-  }
-  \alternative { { a:5+ } { b:5+ } }
+  } \alternative { { a:5+ } { b:5+ } }
   \repeat volta 2 {
     e2.:5+ | a:5+    | d:5+  | g:5+ |
     g:m7   | c:7.9-  | f:maj |
-  }
-  \alternative { { b:5+ } { a:5+ } }
+  } \alternative { { b:5+ } { a:5+ } }
 
   % coda chords:
   \repeat volta 2 { f2.:maj | fs:7 }

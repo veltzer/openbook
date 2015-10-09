@@ -63,8 +63,7 @@
 	\repeat volta 2 {
 		c2:6 f4:m7 bes:7 | e2:m7 a:7 | d:m7 g:7 | c:maj7 a:m7 | \myEndLine
 		d:m7 g:7 | e:m7.5- a:7 |
-	}
-	\alternative {
+	} \alternative {
 		{
 			d:m7 g:7 | c:6 d4:m7 g:7 | \myEndLineVoltaNotLast
 		}
@@ -101,8 +100,7 @@
 	\repeat volta 2 {
 		g'2 bes | a2. g4 | \tuplet 3/2 { f4 f f } e e | d2. c4 |
 		\tuplet 3/2 { f f f } e d | \tuplet 3/2 { g g g } f e |
-	}
-	\alternative {
+	} \alternative {
 		{
 			a2 b | g1 |
 		}

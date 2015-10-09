@@ -18,8 +18,7 @@ myMelody = {
 \repeat volta 2 {
   df1    | r4 bf df f  | a,2 gf8 af a4 | df4 b8 a af gf ~ gf4 | \break
   f2 df2 ~ | df2 ef4 af, | bf2 ef4 af |
-}
-\alternative {
+} \alternative {
   { f4 r a8 bf4. }
   { f2. r8 bf8 \break }
 }

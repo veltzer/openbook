@@ -97,8 +97,7 @@
 		c:6 | c2:7 a:7 | d:m7 a:7 | d:m7 dis:dim7 | \myEndLine
 		e:m7 a:7 | d:m7 g:7.9- |
 
-	}
-	\alternative {
+	} \alternative {
 		{
 			c:6 a:m7 | d:m7 g:7 | \myEndLineVoltaNotLast
 		}
@@ -135,8 +134,7 @@
 		%% part "C"
 		c4 b c d | \tuplet 3/2 { e d c } b! bes | a1 | \tuplet 3/2 { c4 b bes } a! aes |
 		g1 | \tuplet 3/2 { b4 a aes } g! d' |
-	}
-	\alternative {
+	} \alternative {
 		{
 			c1 | r2 r4 e,4 |
 		}
@@ -203,8 +201,7 @@
 		c1:6 | a:m7 | g:7 | dis:dim | \myEndLine
 		e:m7 | a:m7 | d:m7 | g:7 | \myEndLine
 		\endPart
-	}
-	\alternative {
+	} \alternative {
 		{
 
 			\myMark "B"
@@ -240,8 +237,7 @@
 	\repeat volta 2 {
 		c1 | a'4 g2 a4 | b,1 | b'4 a2 b4 |
 		e,1 | d'4 c2 e,4 | g1 | e'4 d2 g,4 |
-	}
-	\alternative {
+	} \alternative {
 		{
 
 			%% part "B"

@@ -27,8 +27,7 @@ Tune = \notes \relative g' {
 
 	c2 bes8 a4 f8 ~ | f2 a4 bes | c2 bes8 a4 f8 ~| f2 a4 bes | des2 b8 bes4 ges8 ~ | 
 	ges2 a8 g!4 f8 ~ | f1 |  
-    }
-    \alternative {
+    } \alternative {
 	{  r2 ees8. c16 ees8 f8 ~ | f2 ees8. c16 ees8 g8 ~ | 
 	   g2 \times 2/3 { ees4 c ees } | a2 a2 ~ | a2 f8. d16 f8 a ~ | a2 f8. d16 f8 b ~ | 
 	   b2 \times 2/3 { f4 d f } | c'2 c2 ~ | c8 d4 aes8 g8. f16 d8. c16 \bar "||" }

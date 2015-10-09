@@ -13,8 +13,7 @@ Chords = \chords {
     \repeat volta 2 {
 	g1:m7 | c:7 | f:maj | fis:dim.7 | g:m7 | aes:dim.7 | a:m7 | a:m7/+g |
 	f:m7 | bes:7 | \break ees1*2:maj | e1:m7.5- | a:7.9- |
-    }
-    \alternative { { d:maj | d:7.9- } { d:maj | g:7 } }
+    } \alternative { { d:maj | d:7.9- } { d:maj | g:7 } }
     c:maj | f:7 | \break bes1*2:maj | 
     b1:dim.7 | bes:m6 | a:m7 | aes:7.4+ | 
     g:7 | g2:m7 a:7.9- \toCoda | d1:m7 | d2:m7 d:7.9+ | \coda \break
@@ -32,8 +31,7 @@ Tune = \notes \relative d'' {
 	\times 2/3 { e c a } ~ a2 ~| a2. r4 \bar "||"
 	c1 ~ | c2 ~ c8 bes4 g8 ~ | g1 ~ | g2 \times 2/3 { r4 g a } |
 	\times 2/3 { bes bes a } \times 2/3 { c c bes } | a2 \times 2/3 { g4 bes a } |
-    }
-    \alternative {
+    } \alternative {
 	{ g8 fis4 fis8 ~ fis2 | fis r \break } 
 	{ g8 fis4 a8 ~ a2 | g8 f4 a8 ~ a g4 e8 ~ \bar "||" }
     }

@@ -58,8 +58,7 @@
 	\startPart
 	\repeat volta 2 {
 		bes2:7 aes:7 | aes:7 g:7 |
-	}
-	\alternative {
+	} \alternative {
 		{
 			c:7 f:7 | bes1:7 | \myEndLineVoltaNotLast
 		}
@@ -95,8 +94,7 @@
 	%% part "A"
 	\repeat volta 2 {
 		bes8 d bes f bes4 r8 f | bes8 f bes des r g,4 f8 |
-	}
-	\alternative {
+	} \alternative {
 		{
 			e8 g bes des \tuplet 3/2 { c8 des c } g8 bes | r2 r4 r8 f |
 		}

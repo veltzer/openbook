@@ -10,8 +10,7 @@ Chords = \chords {
     \partial 4. R4. |
     \repeat volta 2 {
 	c1*2:7 | c1*2:7 | f1*2:7 | c1:7 | a:7.5+ |
-    }
-    \alternative {
+    } \alternative {
 	{ aes:maj | des:maj | c:maj | g:7 | }
 	{ aes:maj | des:maj | c:maj | a:7 | }
     }
@@ -25,8 +24,7 @@ Chords = \chords {
     \repeat volta 2 { 
 	c1*4:7 | f1*2:7 | c1:7 | a:7.5+ | \break
 	aes:maj | g:7.5+ | c:maj |
-    }
-    \alternative { { g1:7 } { a1:7 \break } }
+    } \alternative { { g1:7 } { a1:7 \break } }
 
     d:min7 | g:7 | c:maj | a:7.9- | \break
     d:min7 | g:7 | e2:7 a:7 | d:min7 g:7 \bar "||" \break
@@ -48,8 +46,7 @@ Tune = \notes \relative f' {
     \repeat volta 2 {
 	bes1 ~ | bes2 r8 g8 a bes ~ | bes1 ~ | bes2  r8 c d ees ~ | \break
 	ees1 ~ | ees2 r8 bes a g ~ | g2 ~ g8 g g( )a | r2 r8 c, ees c | \break
-    }
-    \alternative {
+    } \alternative {
 	{ g' c, ees c' ~ c2 ~ | c2 bes8 g f g ~ | g1 ~ | g2 r8 g a bes ~ |  \break }
 	{ g' c, ees c' ~ c2 ~ | c2 bes8 g b c | r1   | r8 e, r f e d cis a \bar "||" \break }
     }
@@ -70,8 +67,7 @@ Solos = \notes \relative c'' {
 	\repeat percent 4 { \fourBeats | }
 	\repeat percent 2 { \fourBeats | } 
 	\repeat unfold 5 \fourBeats
-    }
-    \alternative { { \fourBeats | } { \fourBeats | } }
+    } \alternative { { \fourBeats | } { \fourBeats | } }
     \repeat unfold 8 \fourBeats
     
     \rehearsalBeginOfLine

@@ -38,8 +38,7 @@
 	\repeat volta 2 {
 		f2:m7 bes:7 | g:m7 c:7 | f:m7 bes:7 | ees:maj7 c:7 |
 		f:m7 bes:7 | g:m7 c:7.9+.5+ | f:m7 bes:7 |
-	}
-	\alternative { { ees:maj7 c:7 | } {ees:maj7 ees:7 } }
+	} \alternative { { ees:maj7 c:7 | } {ees:maj7 ees:7 } }
 	\endPart
 
 	\startPart
@@ -67,8 +66,7 @@
 	\repeat volta 2 {
 		f f f f ees f r g | r2 r8 bes8 ees g | f f f f ees f r ees | r2 r8 bes8 ees g | f f f f ees f r g |
 		r bes4. a4 aes | g8 g g g f f r ees |
-	}
-	\alternative {
+	} \alternative {
 		{r2 r8 bes ees g}
 		{r2 r8 bes' c d}
 	}

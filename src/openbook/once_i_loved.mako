@@ -70,8 +70,7 @@
 		g:m7 | gis:dim7 | a:m7 | a:m7/g | \myEndLine
 		f:m7 | bes:7.5+ | ees1*2:maj7 | \myEndLine
 		e1:m7.5- | a:7.9- |
-	}
-	\alternative {
+	} \alternative {
 		{
 			d:maj7 | d:7.9- | \myEndLineVoltaNotLast
 		}
@@ -106,10 +105,13 @@
 		\tuplet 3/2 { e c a~ } a2~| a2. r4 |
 		c1~ | c2~ c8 bes4 g8~ | g1~ | g2 \tuplet 3/2 { r4 g a } |
 		\tuplet 3/2 { bes bes a } \tuplet 3/2 { c c bes } | a2 \tuplet 3/2 { g4 bes a } |
-	}
-	\alternative {
-		{ g8 fis4 fis8~ fis2~ | fis r }
-		{ g8 fis4 a8~ a2 | g8 f!4 a8~ a g4 e8~ | }
+	} \alternative {
+		{
+			g8 fis4 fis8~ fis2~ | fis r
+		}
+		{
+			g8 fis4 a8~ a2 | g8 f!4 a8~ a g4 e8~ |
+		}
 	}
 
 	%% part "B"

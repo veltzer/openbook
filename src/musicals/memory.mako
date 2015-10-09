@@ -81,8 +81,7 @@ voiceVocal=\relative c' {
 		f4. c4 d8 ees[ f g a] |
 		\time 12/8
 		bes a g f4.~ f d4 bes8 |
-	}
-	\alternative {
+	} \alternative {
 		{
 			f'2.~ f4 g,8 g4 bes8 |
 			\time 6/8
@@ -105,8 +104,7 @@ voiceTreble=\relative c' {
 		g4. g~ g8 ees f g f ees | d2.~ d4. d4 f8 |
 		f4. c4 d8 ees[ f g a] |
 		bes a g f4.~ f d4 bes8 |
-	}
-	\alternative {
+	} \alternative {
 		{
 			f'2.~ f4 g,8 g4 bes8 |
 			\time 6/8
@@ -133,8 +131,7 @@ voiceBass=\relative c' {
 		d, a' d~ d a d d, a' d a' f d |
 		c,[ g' c] ees[ g c] c,[ g' c g] |
 		g, d' g bes d f g,, d' g f' d bes |
-	}
-	\alternative {
+	} \alternative {
 		{
 			f, c' f a c f f,, c' f bes g ees |
 			\time 6/8

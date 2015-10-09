@@ -8,8 +8,8 @@
 
 Chords = \chords {
     \partial 8*5 R2 R8 |
-    \repeat volta 2 { ees1*4:7 | aes1*2:13 | ees:7 | bes:7 }
-    \alternative { {ees1*2:7} {ees1*2:7} }
+    \repeat volta 2 { ees1*4:7 | aes1*2:13 | ees:7 | bes:7
+	} \alternative { {ees1*2:7} {ees1*2:7} }
 }
 
 Tune = \notes \relative c'' {
@@ -23,8 +23,7 @@ Tune = \notes \relative c'' {
 	aes1 | r4 r8 bes des f-\accent des ees ~ |
 	ees1 | \break r4 r8 bes des ges-\accent ees des ~ | 
 	des1 | r4 r8 bes des f-\accent des ees ~ |
-    }
-    \alternative { 
+    } \alternative { 
 	{ ees1 | \break r4 r8 bes des f-\accent des ees ~ | } 
 	{ ees4 r4 r2| r1 | } 
     }
