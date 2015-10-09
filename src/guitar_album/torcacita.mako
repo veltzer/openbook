@@ -211,17 +211,4 @@ PartLowVoice=\relative c' {
 	\layout {
 	}
 }
-%% score for midi
-\score {
-	\unfoldRepeats
-	<<
-		\new Staff="Melody" <<
-			\new Voice="highvoice" \PartHighVoice
-			\new Voice="midvoice" \PartMidVoice
-			\new Voice="lowvoice" \PartLowVoice
-		>>
-	>>
-	\midi {
-	}
-}
 % endif

@@ -40,12 +40,6 @@ Regular rock type drumming...
 		}
 	>>
 >>
-	\midi {
-		\context {
-			\Score
-			tempoWholesPerMinute = #(ly:make-moment 130/4)
-		}
-	}
 	\layout {}
 }
 
