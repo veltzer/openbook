@@ -11,8 +11,7 @@ Chords = \chords \transpose bes {
     \repeat volta 2 {
 	e2:7 a:7 | d1:m7 | g2:7 c:7 | f1:maj |
 	e2:7 a:7 | d1:m7 | 
-    } 
-    \alternative {
+    } \alternative {
 	{ bes:7 | a:7 | } { bes:7 | a:7 | }
     }
     a2:7 d:7 | g:7 c:7 | f:7 bes:7 | ees1:7 |
@@ -30,8 +29,7 @@ Tune = \notes \transpose bes \relative c' {
     \repeat volta 2 {
 	gis2 g4. f8-. | r a, d e f g a c | b2 bes4. a8-. | r a, [d e] f g a f |
 	gis2 g4. f8-. | r2 \times 2/3 {[f16 g f} d8] [f d] ~ |
-    }
-    \alternative { 
+    } \alternative { 
 	{ d2.. d8-. | r a [d e] f g a f | } 
 	{ d2.. d8-. | r2 r8 a''4-. a8 ~ \bar "||" } 
     }

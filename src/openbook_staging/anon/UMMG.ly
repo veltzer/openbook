@@ -17,8 +17,7 @@ myMelody = {
 
 \repeat volta 2 {
   a2. g8 bf ~ | bf4. a8 ~ a2  | r8 g4. g4 f8 e8 ~ | e2 r8 d4. | \break
-}
-\alternative {
+} \alternative {
   { af4.  a8 ~ a4. b8 ~ | b4 c \trp {e4 g b} | d2. c8 fs, ~ | fs2 g2 \break }
   { af,4. a8 ~ a4. b8 ~ | b4 c \trp {e4 g c} | f2. e8 f8  ~ | f2  e2 \break }
 }
@@ -52,8 +51,7 @@ myChords = \chordmode {
 
 \repeat volta 2 {
   e1:3-.5-.7 | a:3.5.7.9- | d:m7 | g:7 |
-}
-\alternative {
+} \alternative {
   { c2:dim7 c:6 | c1:maj | c:m7      | f:7       }
   { c2:dim7 c:6 | c1:maj | g2:m7 c:7 | g2:m7 c:7 }
 }

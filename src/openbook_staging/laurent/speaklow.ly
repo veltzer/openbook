@@ -33,9 +33,9 @@ Staff = \notes \context Voice = $Staff {
 	c''1 ~ |
 	c''4. bes'16 c''16 \times 2/3 { bes'4 f' g' } |
 	a'4. a'8 ~ \times 2/3 { a'4 e' f' } |
-	g'4. g'8 ~ \times 2/3 {  g'4 f' e'  } |}
+	g'4. g'8 ~ \times 2/3 {  g'4 f' e'  } |
 				%15
-    \alternative	{ 
+	} \alternative	{ 
 	{ d'2 d' | d'2. c'4 |}
 	{ f'1 ~ | f' \bar "||"}
     }

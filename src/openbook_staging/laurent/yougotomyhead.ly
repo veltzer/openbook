@@ -22,8 +22,7 @@ Staff = \notes \context Voice = $Staff {
 	d' d' c' d' ~ d'2 |
 	r4 c'8 c' ees' ees' d' d' |
 	d' c' c' c' ~ c'2 |
-    }
-    \alternative {	
+    } \alternative {	
 	{ r r4 g \bar ":|"}
 	{ r2 r8 c'4. \bar "||"} 
     }

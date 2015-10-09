@@ -10,8 +10,7 @@ Chords = \chords {
     \repeat volta 2 { 
 	a2.:m7 d4:7 | c2:m7 f:7 | f1:m7 | bes:7 | 
 	ees:maj | a2.:m7 d4:7 | g1:maj | 
-    }
-    \alternative { 
+    } \alternative { 
 	{ aes2.:m7.5- des4:7.9- | } 
 	{ g1:maj | } 
     }
@@ -31,8 +30,7 @@ Tune = \notes \relative c'' {
     \repeat volta 2 {
 	b2. a4 | d2 c | bes1 | f2 g4 aes8 bes ~ |
 	bes2 g4 bes8 c ~  \break | c2 a4 c8 d ~ | d1 ~ | 
-    }
-    \alternative { 
+    } \alternative { 
 	{ d2. r4 | } 
 	{ d2. b4 \bar "||" \break } 
     }

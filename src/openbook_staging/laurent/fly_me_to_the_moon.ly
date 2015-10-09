@@ -14,8 +14,7 @@ melody = \notes \relative c' {
     \repeat volta 2 {
 	c'4. b8 a4 g8 f ~ | f g ~ g4 a c | b4. a8 g4 f8 e | ~ e1 |
 	a4. g8 f4 e8 d | ~ d e ~ e4 f a | gis4. f8 e4 d8 c | ~ c2. cis4 \bar "||"
-    }
-    \alternative {
+    } \alternative {
 	{ d8 a'4 a8 ~ a2 | ~ a2 c4 b | g1 | ~ g2. b,4 | 
 	  c8 f4 f8 ~ f2 | ~ f4 a2 g4 | f4. e8 ~ e2 | ~ e2 r | }
 	{ d8 a'4 a8 ~ a2 | ~ a2 c4 b | g1 | ~ g2. gis4 | 
@@ -27,8 +26,7 @@ harmony = \notes \chords {
     \repeat volta 2 {
 	a1:m7 | d:m7 | g:7 | c:maj | \break
 	f:maj | b:m7.5- | e:7.9+ | a:m7 | \break
-    }
-    \alternative {
+    } \alternative {
 	{ d1:m7 | g:7 | e:m7.5- | a:7.9+ | \break
 	  d:m7 | g:7 | c:maj | b2:m7.5- e:7.9+ | \break }
 	{ d1:m7 | g:7 | e:m7.5- | a:7.9+ | \break

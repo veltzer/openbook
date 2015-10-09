@@ -38,8 +38,7 @@ Tune = \notes \relative c' {
 	r4 \times 2/3 {bes,8 d g} bes8. d16 bes8. g16 | a8. d,16 g8. bes16 cis,8. e16 a8. g16 |
 	a8 f r4 r8 a, d8. f16 | aes8( f )g4 r8 a, d8. f16 |
 	g8 d f2. ~ | 
-    } 
-    \alternative {
+    } \alternative {
 	{ r2 \times 2/3 {g8 aes g ~ } g4 } { f2. r4 \bar "|." }
     }
 }
@@ -49,8 +48,7 @@ Chords = \chords {
 
     \repeat volta 2 {
 	c2:m7 c:m7/bes | a:m7.5- d:7.9- | g:m7 g:m7/f | e:m7.5- a:7.9- |
-    }
-    \alternative { 
+    } \alternative { 
 	{ d:m7 b:m7.5- | e:m7 a:7.9- | d:m7 e:m7 | f:m7 g:7.9- | } 
 	{ d:m7 d:m7/c | e:m7 a:7.9- | d:m7 e:m7 | f:m7 bes:7 | } 
     }
@@ -64,8 +62,7 @@ Chords = \chords {
     \repeat volta 2 {
 	c2:m7 c:m7/bes | a:m7.5- d:7.9- | g:m7 g:m7/f | e:m7.5- a:7 |
 	d:m7 b:m7.5- | e:m7 a:7 | d:m7 e:m7 | 
-    }
-    \alternative {  { g1:7 | } { f2.:m7 bes2:7 } }
+    } \alternative {  { g1:7 | } { f2.:m7 bes2:7 } }
 }
 
 Breaks = \notes {

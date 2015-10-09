@@ -24,8 +24,7 @@ Staff = \notes \context Voice = $Staff {
 				%5
 	r8 d''4. c''8 d''4. |
 	r8 bes'4. aes'4 bes'8 g' ~ |
-    }
-    \alternative {
+    } \alternative {
 	{ g'1 ~ | g'4 r r2 | }
 	{ g'1 | r2 r4 r8 g' |}
     }
@@ -67,8 +66,8 @@ textb = \lyrics {
 accompaniment = \chords {
     \repeat volta 2 {d2:min g:7 d:min g:7
 		     e:min a:7 e:min a:7 a:min d:7
-		     aes:min des:7}
-    \alternative{
+		     aes:min des:7
+	} \alternative{
 	{c2:7 b:7 bes:7 a:7}
 	{c1*2}
     }

@@ -21,8 +21,7 @@ melody = \notes \relative c' {
 	    r8 c d e r c d e | r g f e r c d ees | ~ ees1 | r2 r8 f g a |
 	    r f g  a r f g a | r c bes a r f g aes | ~ aes1 | r2 g8 a bes b |
 	    c2 f,8 a c des | r ges,4. f2 | r8 d'4. c4 bes8 a | ~ a2 r8 g a bes |
-	}
-	\alternative {
+	} \alternative {
 	    { c2 f,8 a c des | ~ des4 ges,8 f ~ f2 | 
 	      r8 d'4. c4 bes8 a-\marcato | r2 r8 c,8 d e \bar "||" }
 	    { \break \toCoda c4 a8 c des ges, f4 | d'!4 bes8 g e'4 c8 f-\marcato | r1 | r1 | }
@@ -40,8 +39,7 @@ harmony = \notes \chords {
 	    f1*2:maj                  | f1:m7          | bes:7           |
 	    g1*2:m7                   | bes1:m7        | ees:7           |
 	    f1:maj/+a | aes2:m7 des:7 | g1:m7          | e2:m7.5- a:7.5- |
-	}
-	\alternative {
+	} \alternative {
 	    { f1:maj/+a    | aes2:m7 des:7   | g2.:m7 R8 c8:7 | R1        | }
 	    { a2:m7 aes:m7 | g:m7 c4.:7 f8:6 | R1             | g2:m7 c:7 | }
 	}

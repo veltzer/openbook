@@ -24,9 +24,7 @@ myMelody = {
   \repeat volta 2 {
     d8 e d e ~ e2 | e8 fs g4 fs8 e8 ~ e4 | d8 e d4 e d8 fs ~ | fs1   | \break
     g4 r^"X" g r^"X" | g8 e g4 e2  |
-  }
-
-  \alternative {
+  } \alternative {
     { g8 e c4 b a8 d ~ | d1 }
     { g8 e c4 b b8 g ~ | g1 \break }
   }

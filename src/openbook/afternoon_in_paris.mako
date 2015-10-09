@@ -130,8 +130,7 @@
 	\repeat volta 2 {
 		c1:maj7 | c2:m7 f:7 | bes1:maj7 | bes2:m7 ees:7 | \myEndLine
 		aes1:maj7 | d2:m7 g:7.9- | c1:maj7 |
-	}
-	\alternative {
+	} \alternative {
 		{
 			d2:m7 g:7 | \myEndLineVoltaNotLast
 		}
@@ -173,8 +172,7 @@
 		r c4-^ bes8 a bes c d | des f, aes c bes4 c8 ees-^ |
 		r c4-^ aes8 g bes aes g~ | g2~ g8 bes aes g~ |
 		g1 |
-	}
-	\alternative {
+	} \alternative {
 		{
 			r2 r4 e'8-- g-^ |
 		}

@@ -30,9 +30,7 @@ myMelody = {
       r8 af,8 c af c af | c af c af c af | e'4 e2 ~ | e2. |            \break
 
       r8 a,   c a  c a  | c a  c a  c a  |
-    }
-
-    \alternative {
+    } \alternative {
       { b4 c df | d  b a | \break g2. ~ | g ~ | g ~ | g | \break }
       { a'2.    | r4 g e | c2. ~        | c ~ | c ~ | c | \break }
     }
@@ -49,8 +47,7 @@ myChords = \chordmode {
     a:m7    | s  | d:7.9   | s  |
     f:m7    | s  | bf:7.5- | s  |
     a:m7    | s  |
-  }
-  \alternative {
+  } \alternative {
     { d:7 | g:7 | e:m7  | ef:7 | d:m7 | df:7 }
     { d:7 | g:7 | c:maj | ef:7 | d:7  | df:7 }
   }

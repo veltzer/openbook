@@ -13,8 +13,7 @@ Chords = \chords {
 	d1:m7.5- | g:7 | c1*2:maj | \break
 	fis1:m7.5- | f:m7 | e:m7 | ees:dim7 | \break
 	d:m7 | g:7 | c:maj
-    }
-    \alternative { { c1:maj | } { bes1:7 | \break } }
+    } \alternative { { c1:maj | } { bes1:7 | \break } }
     ees1*2:maj | c1*2:maj | \break
     ees1*2:maj | c1*2:maj | \break
     fis1:m7.5- | f:m7 | e:m7 | ees:dim7 | \break
@@ -31,8 +30,7 @@ Tune = \notes \relative c'' {
 	~ g4 g g g | g f \times 2/3 { f4 e dis } | e1 | ~ e2 e4. e8 | 
 	e4 e e e | ees2 ~ ees8 ees4 ees8 | d4 d d d | d des8 c ~ c4 b | 
 	a aes8 g ~ g2 | g g'4 g8 g | ~ g1 | 
-    } 
-    \alternative { 
+    } \alternative { 
 	{ ~ g4 r g g8 g | }
 	{ ~ g2 g4 g | } 
     } 

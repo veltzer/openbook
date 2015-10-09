@@ -26,8 +26,7 @@ Staff = \notes \context Voice = $Staff {
 				%5
 	f' f' f' g' ees' fis' a' bes' |
 	c'' c'' \times 2/3 { c'' c'' a' } ~ a'2 |
-    }
-    \alternative {
+    } \alternative {
 	{g'8 g' g' a' ~ a' a' a' f' ~ | f'2. r8 g' |}
 	{g' g' g' a' ~ a' a' a' bes' ~ | bes'2. r8 bes' \bar"||"}
     }

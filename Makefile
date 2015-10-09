@@ -250,8 +250,12 @@ check_volta_last:
 check_null:
 	$(info doing [$@])
 	$(Q)git grep null src | make_helper wrapper-ok grep -v include
+.PHONY: check_alternative
+check_alternative:
+	$(info doing [$@])
+	$(Q)git grep \\\\alternative src | make_helper wrapper-ok grep -v "}"
 .PHONY: check_all
-check_all: check_ws check_naked_mymark check_and check_mark check_key check_python check_parts check_volta_last check_null
+check_all: check_ws check_naked_mymark check_and check_mark check_key check_python check_parts check_volta_last check_null check_alternative
 
 .PHONY: checkhtml
 checkhtml: $(HTMLCHECK)

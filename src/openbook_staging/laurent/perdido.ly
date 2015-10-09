@@ -16,8 +16,7 @@ melody = \notes \relative c' {
 	ees8 f ~ f2 r8 c | ees f4 c8 ees f4 bes,8 | 
 	d f ~ f2 r8 bes, | d f4 bes,8 d f4 c8 |
 	ees f ~ f2 r8 c | \times 2/3 {ees4 f d'} c4. f,8 | 
-    }
-    \alternative {
+    } \alternative {
 	{ g8 bes8 ~ bes2. | r2 r4 r8 c,8 }
 	{ g8 bes8 ~ bes2. | ~ bes2 r }
     }
@@ -30,8 +29,7 @@ harmony = \notes \chords {
     \repeat volta 2 {
 	c1:m7 | f:7 | bes2:maj ees:7 | d:m7 g:7 | \break
 	c1:m7 | c2:m7 f:7 | 
-    }
-    \alternative {
+    } \alternative {
 	{ bes2:maj ees:7 | d:m7 g:7 | \break }
 	{ bes1:maj | bes1:maj | }
     }

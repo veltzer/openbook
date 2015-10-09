@@ -18,8 +18,7 @@ Tune = \notes \relative d' {
 	e d d d e d d g | e4 d2 d8 d | 
 	[ d8. b'16 d8. g,16 ] [ b8. d,16 g8. d16 ] |
 	f2. f4 | e dis8 e fis4. g8 | g4 d!2 d8 d | 
-    }
-    \alternative {
+    } \alternative {
 	{ c'4 c c fis, | b2. d,8 d | }
 	{ d'4 d d fis, | g1 | }
     }

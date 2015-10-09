@@ -39,8 +39,7 @@
 	\repeat volta 2 {
 		c'1 | a'4 g'2 a'4 | b1 | b'4 a'2 b'4 |
 		e'1 | d''4 c''2 e'4 | g'1 | e''4 d''2 g'4 |
-	}
-	\alternative {
+	} \alternative {
 		{
 			c''4 b'4 c''4 d''4 | \tuplet 3/2 { c''4 b'4 bes'4 } a'4 aes'4 | g'2 g2~ | g2. g'4 |
 			a'4 gis'4 a'4 b'4 | \tuplet 3/2 { a'4 aes'4 g'4 } ges'4 f'4 | e'2 e2~ | e2 e'2 |

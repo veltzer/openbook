@@ -27,9 +27,7 @@ myMelody = {
 
                               a'4. a8 a2 ~ | a b4 a |
     g g2 g4 | g g2 g4 | g1 ~ |
-  }
-
-  \alternative {
+  } \alternative {
     { g4 r r2 | }
     { g2.\repeatTie ef4 | \break }
   }
@@ -62,9 +60,7 @@ myChords = \chordmode {
   \repeat volta 2 {
     a1:3-.5.7+ | s  | s  | s  |  s  | s  | bf:maj | bf:6  |
     g:m7  | s   | d:m7   | ef:dim7 |  d:m7  | g:5+       | c:maj  |
-  }
-
-  \alternative {
+  } \alternative {
     { b2:3-.5-.7 e:7.9+       | }
     { bf2:m7     ef2:3.5.7.9- | }
   }
