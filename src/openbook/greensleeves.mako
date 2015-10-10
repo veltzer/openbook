@@ -24,7 +24,7 @@
 	attributes['completion']='5'
 	attributes['uuid']='dbd95022-6dd8-11e5-864c-3860779cb560'
 	attributes['structure']='AA\'BB\''
-	attributes['location']='fb:138'
+	attributes['location']='jfb:138'
 
 	attributes['idyoutuberemark1']='The great Oscar'
 	attributes['idyoutube1']='35eZI9plYpk'
