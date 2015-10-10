@@ -37,6 +37,7 @@ order=[
 	'instrument',
 	'copyright',
 	'copyrightextra',
+	'copyrightextraextra',
 	'typesetter',
 	'completion',
 	'dontimport',
