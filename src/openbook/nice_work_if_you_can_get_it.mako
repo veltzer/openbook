@@ -12,7 +12,7 @@
 
 	attributes['title']='Nice Work If You Can Get It'
 	attributes['style']='Jazz'
-	attributes['subtitle']='(From \'A Damsel In Distress\')'
+	attributes['subtitle']='From \'A Damsel In Distress\''
 	attributes['composer']='George Gershwin'
 	attributes['poet']='Ira Gershwin'
 	attributes['piece']='Moderately'

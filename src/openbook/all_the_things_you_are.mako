@@ -19,7 +19,7 @@
 	attributes['title']='All The Things You Are'
 	attributes['style']='Jazz'
 	# from the jazz fake book
-	attributes['subtitle']='From \'VERY WARM FOR MAY\''
+	attributes['subtitle']='From \'Very Warm For May\''
 	# from the jazz fake book
 	attributes['composer']='Jerome Kern'
 	# from the jazz fake book

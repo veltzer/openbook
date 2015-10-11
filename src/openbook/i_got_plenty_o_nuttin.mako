@@ -13,21 +13,32 @@
 
 	attributes['title']='I Got Plenty O\' Nuttin\''
 	attributes['style']='Jazz'
-	attributes['subtitle']='(From \'Porgy and Bess\')'
+	# from the fake book
+	attributes['subtitle']='From \'Porgy and Bess\''
+	# from the fake book
 	attributes['composer']='George Gershwin'
-	attributes['poet']='Ira Gershwin, DuBose Hayward'
+	# from the fake book
+	attributes['poet']='Ira Gershwin, DuBose Heyward'
+	# from the fake book
 	attributes['piece']='Moderately'
-	attributes['copyright']='1935 Gershiwin Publishing Corporation'
-	attributes['copyrightextra']='Corporation Renewed, Assigned to Chappell & Co., Inc.'
+	# from the fake book
+	attributes['copyright']='1935 by Gershwin Publishing Corporation'
+	# from the fake book
+	attributes['copyrightextra']='Copyright Renewed, Assigned to Chappell & Co., Inc.'
 
 	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='51444eaa-da7f-11e3-a1f7-4b82298467da'
+	attributes['structure']='AABA'
+	attributes['location']='jfb:157'
 %>
 % endif
 
 % if part=='Doc':
 	DONE:
+	- filled in the meta data from the fake book
+	- added epdf for the fake book.
+	- put in the tunes structure.
 	TODO:
 	- mark what has been done to this tune.
 % endif
@@ -43,14 +54,14 @@
 
 		\myMark "A"
 		\startPart
-		g2 a:m7 | b:m7 a:m7 | g a:m7 | g b:7 | \myEndLine
-		e a | e a e a4 e | cis1 | cis2 d | \myEndLine
+		g2 a:m7 | b:m a:m7 | g a:m7 | g b:7 | e a | \myEndLine
+		e a | e a4 e | cis1 | cis2 d | \myEndLine
 		\endPart
 
 		\myMark "A"
 		\startPart
-		g2 a:m7 | b:m7 a:m7 | g a:m7 | g b:7 | \myEndLine
-		e a | e a e a4 e | cis1 | cis2 d | g2 a:m7 | b:m g | \myEndLine
+		g2 a:m7 | b:m a:m7 | g a:m7 | g b:7 | e a | \myEndLine
+		e a | e a4 e | cis1 | cis2 d | g2 a:m7 | b:m g | \myEndLine
 		\endPart
 
 		\myMark "B"
@@ -62,7 +73,7 @@
 		\myMark "A'"
 		\startPart
 		g2 a:m7 | b:m7 a:m7 | g a:m7 | g b:7 | \myEndLine
-		e a | e a e a4 e | cis1 | cis | \myEndLine
+		e a | e a | e a4 e | cis1 | cis | \myEndLine
 		cis2 d | g a:m7 | g d:m7 | g a:m7 | \myEndLine
 		g c |
 	} \alternative {
@@ -88,10 +99,13 @@
 
 	\partial 4 d4 |
 
-	%% part "A"
 	\repeat volta 2 {
-		g4 g a g8 a | b8 d4.~ d4 r8 d, | b'4 b8 a~ a b a4 | g2 fis | e4 e cis4. r8 |
-		e4 e cis4. cis8 | e4 e cis e | eis1~ | eis2 fis | g4 g a g8 a | b8 d4.~ d4 r |
+
+		%% part "A"
+		g4 g a g8 a | b8 d4.~ d4 r8 d, | b'4 b8 a~ a b a4 | g2 fis |
+		e4 e cis4. r8 | e4 e cis4. cis8 | e4 e cis e | eis1~ |
+
+		eis2 fis | g4 g a g8 a | b8 d4.~ d4 r |
 		b4 b8 a~ a b a4 | g2 fis | e4 e cis8 cis4 cis8 | e8 e4 e8 cis cis cis cis |
 		e4 e cis e | eis1~ | eis2 fis | g1~ | g2 r | fis4 d8 b d4 b8 d |
 		fis2 e8 fis e d | d1~ | d4 r e8 fis e b | d4 b8 d fis2~ | fis e8 fis e b |
@@ -133,6 +147,7 @@
 	got the sun, got the moon, _ got the deep blue sea. __ De folks wid plen -- ty o' plen -- ty __
 	got to pray __ all de day, _ __ Seems wid plen -- ty you sure got to wor -- ry how to
 	keep the debbel a -- way, __ a -- way. __ I ain't a -- fret -- tin' 'bout
-	hell 'til de time ar -- rive. __ Nev -- er wor -- ry long as I'm well, __ nev -- er one to strive to be good, to be bad, what the hell? I is glad I's a love. __
+	hell 'til de time ar -- rive. __ Nev -- er wor -- ry long as I'm well, __ nev -- er one to strive to be good, to be bad, what the hell?
+	I is glad I's a love. __
 }
 % endif
