@@ -10,7 +10,7 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']='It might as well be spring'
+	attributes['title']='It Might As Well Be Spring'
 	attributes['style']='Jazz'
 	# this is from the fake book
 	attributes['subtitle']='From \'State Fair\''
