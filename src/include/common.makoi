@@ -102,6 +102,10 @@
 %%#(set-default-paper-size "a4")
 %%)
 
+%% Don't have textedit:// links for every note in the pdf file.
+%% This reduces the size of the pdf by a lot
+\pointAndClickOff
+
 %% chord related matters
 myChordDefinitions={
 	<c ees ges bes des' fes' aes'>-\markup \super {7alt}
