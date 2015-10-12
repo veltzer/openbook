@@ -45,6 +45,12 @@ This is a huge size consumer.
 The way to do this is by having: \pointAndClickOff somewhere in the lilypond file.
 The quality of the pdf is, ofcourse, not affected by this option.
 
+Method 8 (WE DONT USE THIS)
+========
+There a google tool which is supposed to reduce the size of pdfs. I still haven't tried it
+so I can't comment on whether it reduces the size of the file, causes quality degredation,
+hard to install and use etc.
+
 References:
 http://askubuntu.com/questions/113544/how-to-reduce-pdf-filesize
 http://stackoverflow.com/questions/5296667/pdftk-compression-option
