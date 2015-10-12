@@ -125,7 +125,7 @@
 	%% part "Coda"
 	c2.~ | c | r4 d c | d c d | bes2.~ | bes |
 	r4 bes aes | bes aes bes | g2.~ | g~ | g | r4 f ees | f ees f | ees f ees |
-	c'2. | d,2. | ees2.( | bes'2.) |
+	c'2. | d, | ees( | bes') |
 }
 % endif
 
