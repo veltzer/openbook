@@ -103,7 +103,7 @@
 
 	%% part "A"
 	\repeat volta 2 {
-		aes g f ees f4. g8 | bes8 aes g f aes4. bes8 | ees8 d c bes c2 | r2 r4 d4 |
+		aes g f ees f4. g8 | bes aes g f aes4. bes8 | ees d c bes c2 | r2 r4 d |
 		f8 ees d c d4 ees | bes bes ees, f |
 	} \alternative {
 		{
@@ -119,7 +119,7 @@
 	g8 aes g ees'~ ees4 ees | ees8 d ees d f4 d | c c g g | bes2. r8 g |
 
 	%% part "A"
-	aes g f ees f f4 g8 | bes8 aes g f aes8 aes4 bes8 | ees8 d c bes c2 | r2 r4 d4 |
+	aes g f ees f f4 g8 | bes aes g f aes aes4 bes8 | ees d c bes c2 | r r4 d |
 	f8 ees d c d4 ees | bes bes2 g4 | bes2 bes | ees2. r8 g, |
 }
 % endif
