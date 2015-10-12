@@ -39,17 +39,18 @@
 	DONE:
 	- added the epdf from the real book.
 	- added the meta data from the real book.
-	- added a lyrics url.
+	- added the tunes structure.
 	- put in the tunes structure
 	- put in the chords (realbook).
 	- put in the tune (realbook).
-	- check the chords (realbook).
-	- check the tune (realbook).
 	- put in the lyrics (realbook).
+	- checked the chords (realbook).
+	- checked the tune (realbook).
+	- checked the lyrics (realbook).
 	- heard the tune to check that it is right and adjust the tempo.
 	- added youtube performances.
+	- added lyrics url.
 	TODO:
-	- check the lyrics (realbook).
 	- add another version of this tune.
 % endif
 
@@ -110,11 +111,11 @@
 	}
 
 	%% part "B"
-	e4 f g a | bes c d e | r f f8 e d4 | c2 d |
+	e f g a | bes c d e | r f f8 e d4 | c2 d |
 	r4 e e8 d c4 | bes2 c | r4 a a8 g f4 | c2. r4 |
 
 	%% part "A"
-	c4 f2 d4 | c g'2 d4 | c a'2 d,4 | c bes'2 d,4 |
+	c f2 d4 | c g'2 d4 | c a'2 d,4 | c bes'2 d,4 |
 	c c' c c | c8 f bes,2 a8 g | f4 f f8 g a g | f1 |
 }
 % endif
