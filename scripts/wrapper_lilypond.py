@@ -74,7 +74,7 @@ p_do_qpdf=True
 p_loglevel='WARN'
 #p_loglevel='ERROR'
 # should we reduce the pdf size?
-p_do_pdfred=True
+p_do_pdfred=False
 # should we stop on errors? (This should be set to True!)
 p_stop_on_output=True
 
@@ -135,6 +135,7 @@ if p_do_qpdf:
 	# delete=False since we are going to move the file
 	t=tempfile.NamedTemporaryFile(delete=False)
 	system_check_output(['qpdf', '--linearize', p_pdf, t.name])
+	os.unlink(p_pdf)
 	shutil.move(t.name, p_pdf)
 
 # remove the postscript file if need be or chmod it
