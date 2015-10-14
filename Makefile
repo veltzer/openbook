@@ -113,8 +113,9 @@ FILES_OGG:=$(addsuffix .ogg,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
 ALL_OUT_FILES:=$(shell find src -type f -and -name "*.mako")
 ALL_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(ALL_OUT_FILES))))
 
-BOOKS:=$(addsuffix .pdf,$(addprefix $(OUT_DIR)/,$(NAMES)))
-LYS:=$(addsuffix .ly,$(addprefix $(OUT_DIR)/,$(NAMES)))
+OUT_LY:=$(addsuffix .ly,$(addprefix $(OUT_DIR)/,$(NAMES)))
+OUT_PS:=$(addsuffix .ps,$(addprefix $(OUT_DIR)/,$(NAMES)))
+OUT_PDF:=$(addsuffix .pdf,$(addprefix $(OUT_DIR)/,$(NAMES)))
 
 ifeq ($(DO_LY),1)
 	ALL+=$(FILES_LY)
@@ -141,7 +142,7 @@ ifeq ($(DO_OGG),1)
 	ALL+=$(FILES_OGG)
 endif
 ifeq ($(DO_BOOKS_PDF),1)
-	ALL+=$(BOOKS)
+	ALL+=$(OUT_PDF)
 endif
 all: $(ALL)
 
@@ -184,8 +185,9 @@ debug_me:
 	$(info FILES_JAZZ is $(FILES_JAZZ))
 	$(info WEB_FOLDER is $(WEB_FOLDER))
 	$(info NAMES is $(NAMES))
-	$(info BOOKS is $(BOOKS))
-	$(info LYS is $(LYS))
+	$(info OUT_LY is $(OUT_LY))
+	$(info OUT_PS is $(OUT_PS))
+	$(info OUT_PDF is $(OUT_PDF))
 
 .PHONY: todo
 todo:
@@ -202,7 +204,9 @@ install: $(ALL) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)rm -rf $(WEB_DIR)/*
 	$(Q)mkdir $(WEB_DIR)/out
-	$(Q)cp $(BOOKS) $(WEB_DIR)/out
+	$(Q)cp $(OUT_PDF) $(WEB_DIR)/out
+	$(Q)cp $(OUT_PS) $(WEB_DIR)/out
+	$(Q)cp $(OUT_LY) $(WEB_DIR)/out
 	$(Q)for folder in $(COPY_FOLDERS); do cp -r $$folder $(WEB_DIR); done
 	$(Q)cp support/redirector.html $(WEB_DIR)/index.html
 	cd $(WEB_DIR); git commit -a -m "new version"; git push
@@ -333,19 +337,19 @@ endef
 $(foreach name, $(NAMES), $(eval $(call template,$(name))))
 
 .PHONY: grive
-grive: $(BOOKS) $(ALL_DEP)
+grive: $(OUT_PDF) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-rm -rf ~/grive/outputs/$(tdefs.project_name)
 	$(Q)-mkdir ~/grive/outputs/$(tdefs.project_name)
-	$(Q)cp $(BOOKS) ~/grive/outputs/$(tdefs.project_name)
+	$(Q)cp $(OUT_PDF) ~/grive/outputs/$(tdefs.project_name)
 	$(Q)cd ~/grive; grive
 
 .PHONY: dropbox
-dropbox: $(BOOKS) $(ALL_DEP)
+dropbox: $(OUT_PDF) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)-rm -rf ~/Dropbox/outputs/$(tdefs.project_name)
 	$(Q)-mkdir ~/Dropbox/outputs/$(tdefs.project_name)
-	$(Q)cp $(BOOKS) ~/Dropbox/outputs/$(tdefs.project_name)
+	$(Q)cp $(OUT_PDF) ~/Dropbox/outputs/$(tdefs.project_name)
 
 .PHONY: web
 web: grive dropbox
