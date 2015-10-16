@@ -46,7 +46,6 @@
 
 % if part=='Doc':
 	DONE:
-	- added the location of the real book and fake book versions.
 	- put in the tunes meta data from the real book and fake book.
 	- put in locations for reak book and fake book.
 	- put in the tunes structure.
