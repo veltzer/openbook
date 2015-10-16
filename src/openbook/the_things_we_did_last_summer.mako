@@ -13,9 +13,9 @@
 	attributes['title']='The Things We Did Last Summer'
 	attributes['style']='Jazz'
 	# from the fake book
-	attributes['composer']='Sammy Chan & Jule Styne'
+	attributes['composer']='Sammy Chan, Jule Styne'
 	# from the fake book
-	attributes['poet']='Sammy Chan & Jule Styne'
+	attributes['poet']='Sammy Chan, Jule Styne'
 	# from the fake book
 	attributes['piece']='Slow Ballad'
 	attributes['copyright']='1946 by Edwin H. Morris & Co., Inc'
