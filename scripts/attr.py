@@ -107,6 +107,7 @@ books_offsets={
 	'rbk3': 5,
 	'tsrbk': -3,
 	'nrbk1': 13,
+	'nrbk3': 10,
 	'tbk': 11,
 }
 

@@ -35,7 +35,7 @@
 	attributes['completion']='5'
 	attributes['uuid']='f046f51c-ed4d-11e3-9d71-67b6b025e741'
 	attributes['structure']='AABA'
-	attributes['location']='cc:209,file:over_the_rainbow.pdf'
+	attributes['location']='cc:209,file:over_the_rainbow.pdf,nrbk3:287-288'
 
 	attributes['idyoutuberemark1']='Keith Jarret solo'
 	attributes['idyoutube1']='eq0EWNuR1H8'
