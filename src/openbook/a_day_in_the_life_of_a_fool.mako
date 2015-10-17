@@ -95,7 +95,7 @@
 
 % if part=='VoiceFake':
 {
-	\tempo Moderato 4 = 120
+	\tempo "Moderato" 4 = 120
 	\time 4/4
 	\key c \major
 

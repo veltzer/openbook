@@ -75,7 +75,7 @@
 
 % if part=='VoiceFake':
 {
-	\tempo Andante 4 = 88
+	\tempo "Andante" 4 = 88
 	\time 2/2
 	\key bes \major
 

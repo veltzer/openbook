@@ -83,7 +83,7 @@
 
 % if part=='VoiceReal':
 {
-	\tempo Allegro 4 = 168
+	\tempo "Allegro" 4 = 168
 	\time 4/4
 	\key c \major
 
