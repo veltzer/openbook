@@ -154,7 +154,7 @@ pianoMain={
 	%% list of instruments can be found at
 	%% http://lilypond.org/doc/v2.11/Documentation/user/lilypond/MIDI-instruments#MIDI-instruments
 	\set PianoStaff.midiInstrument=#"acoustic grand"
-	\tempo Freely 4.=50
+	\tempo "Freely" 4.=50
 	\time 12/8
 	\key bes \major
 	<<

@@ -98,7 +98,7 @@
 
 % if part=='VoiceReal':
 {
-	\tempo Allegro 4 = 130
+	\tempo "Allegro" 4 = 130
 	\time 4/4
 	\key f \major
 
@@ -170,7 +170,7 @@
 
 % if part=='VoiceFake':
 {
-	\tempo Allegro 4 = 130
+	\tempo "Allegro" 4 = 130
 	\time 4/4
 	\key f \major
 

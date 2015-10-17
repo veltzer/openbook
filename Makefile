@@ -258,8 +258,12 @@ check_null:
 check_alternative:
 	$(info doing [$@])
 	$(Q)git grep \\\\alternative src | make_helper wrapper-ok grep -v "}"
+.PHONY: check_tempo
+check_tempo:
+	$(info doing [$@])
+	$(Q)git grep "\\\\tempo " src | make_helper wrapper-ok grep -v \"
 .PHONY: check_all
-check_all: check_ws check_naked_mymark check_and check_mark check_key check_python check_parts check_volta_last check_null check_alternative
+check_all: check_ws check_naked_mymark check_and check_mark check_key check_python check_parts check_volta_last check_null check_alternative check_tempo
 
 .PHONY: checkhtml
 checkhtml: $(HTMLCHECK)

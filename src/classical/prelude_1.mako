@@ -206,7 +206,6 @@ PartPiano={
 	%% it has nothing to do with the midi instrument that will be used to
 	%% render this voice in midi format...
 	\set PianoStaff.instrumentName = #"Piano"
-	%% The tempo of the tune
 	\tempo "Andante" 4 = 72
 	\time 4/4
 	\key c \major
