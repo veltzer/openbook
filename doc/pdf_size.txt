@@ -20,7 +20,7 @@ Method 3 (WE USE THIS BUT NOT FOR SIZE REASONS)
 ========
 qpdf --linearize openbook.pdf qpdf.pdf
 does not reduce the size
-it does, however, linearize the file (see pdf_and_web.txt for details).
+it does, however, linearize the file making the file work better over the web (see pdf_and_web.txt for details).
 
 Method 4 (WE DONT USE THIS)
 ========
