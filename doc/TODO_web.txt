@@ -1,1 +1,0 @@
-- print git shortlog or something on the page of openbook where I list contributions.
