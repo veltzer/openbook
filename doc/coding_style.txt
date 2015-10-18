@@ -28,9 +28,9 @@ the chance of collision with future or current templating systems that may use a
 
 name of files:
 ==============
-If a song is called "Autumn Leaves" it will be in a file called "autumn_leaves.gpp".
+If a song is called "Autumn Leaves" it will be in a file called "autumn_leaves.mako".
 - spaces are replaced by underscores.
-- up case moves to low.
+- all low case.
 - apostrophes, and any other special punctuation marks, are removed. examples:
 	"Gloria's Step" -> "glorias_step.mako"
 	"Hallelujah I Love Him (Her) So" -> "hallelujah_i_love_him_her_so.mako"

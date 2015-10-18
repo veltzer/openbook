@@ -1,13 +1,14 @@
 This documentation deals with how to create the final book
 ==========================================================
-Options:
-========
-1. Create a pdf from every song and catenate the small pdfs into one large pdf.
+There are several ways this could be done:
+- Create a pdf from every song and catenate the small pdfs into one large pdf.
 	A command line like this could do the trick:
 	pdfjoin out/src/openbook/*.pdf --outfile '.$output.' 2> /dev/null
 
 	Advantages:
 	- very easy to do.
+	- avoids the large processing time it takes for lilypond to process a huge
+	file and calculate all the possible arrangements of tunes on pages.
 	Disadvantages:
 	- cannot create nice index.
 	- the resulting pdf is too heavy since it has the fonts over and over
@@ -22,10 +23,11 @@ Options:
 		to occupy the same page, but then again, I may want
 		it (for printing for instance instead of digital
 		book...).
-
-2. Create a book using latex.
+	WE DO NOT USE THIS METHOD NOW.
+- Create a book using latex.
 	TBD
-3. Create a book using large lilypond file that includes all other
+	WE DO NOT USE THIS METHOD NOW.
+- Create a book using large lilypond file that includes all other
 	lilyponds.
 	- if you just catenate the files and create a big lilypond file then you find that:
 		- it takes a long time to process that files (this is a bug which should be submitted to

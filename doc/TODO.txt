@@ -1,15 +1,20 @@
-Now:
-====
-- move all hebrew songs to the new format
-	(of hebrew alignments).
+- print git shortlog or something on the page of openbook where I list contributions.
+	(do it using templar or something).
+- some songs have more than one name.
+	This is not a subtitle, this is a different name
+	Some songs belong to musicals,
+	This is not a subtitle, this is a musical.
+	Express this info in the meta data of songs and one day we would
+	be able to use this info to:
+	- put songs with more than one name into the main index more than one time.
+	- create an index by musical names.
+- move all hebrew songs to the new format for lyrics
+	with better alignments.
 - auto download all youtube videos to some folder.
 - write to the lilypond people and ask them how to correctly write torcacita.
-- fix the george gershwin tune.
 - get the drumming book to look good
 	(do < > style drumming patterns and put in more patterns).
-- write another tune in the guitar album.
-
-- add graphs from my blog to the gh-pages website.
+- add graphs (of openbook progress) from my blog to the gh-pages website.
 - add spell checking on the lyrics of the songs.
 - add spell checking on the html pages.
 - learn some design and design the front page of openbook better.
