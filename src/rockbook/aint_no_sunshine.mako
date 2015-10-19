@@ -14,8 +14,8 @@
 	attributes['composer']='Bill Withers'
 	attributes['poet']='Bill Withers'
 	attributes['piece']='Med. Ballad'
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
 
+	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
 	attributes['completion']='5'
 	attributes['uuid']='669540fe-d851-11df-ae78-0019d11e5a41'
 
@@ -30,7 +30,6 @@
 	DONE:
 	TODO:
 	- mark what has been done to this song (I think it is done).
-	- how do I mark out verses and choruses in the actual text that appears?
 % endif
 
 <%namespace name="defs" file="/src/include/defs.makoi"/>
@@ -48,8 +47,7 @@
 		\mark "Interlude"
 		\startPart
 		%% these chords are silent
-		a1:m7 | a:m7 | a:m7 | a:m7 |
-		a1:m7 | a:m7 | a:m7 | a:m7 |
+		a1*8:m7 |
 		%% these chords are even more silent
 		a2:m7 e4:m7 e:m7/g | a1:m7 |
 		\endPart
