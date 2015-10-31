@@ -16,7 +16,7 @@
 
 	attributes['title']='The Nearness Of You'
 	attributes['style']='Jazz'
-	attributes['subtitle']='from the Paramount Picture \'Romance in the Dark\''
+	attributes['subtitle']='From the Paramount Picture \'Romance in the Dark\''
 	attributes['composer']='Hoagy Carmichael'
 	attributes['poet']='Ned Washington'
 	attributes['piece']='Slowly'
