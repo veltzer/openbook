@@ -45,6 +45,9 @@ packs=[
 
 	# was once used but no more (not critical)
 	'pdfjam', # for pdfjoin(1)
+
+	# npm is used for htmlhint
+	'npm', # for htmlhint
 ]
 
 args=['sudo','apt-get','install','--assume-yes']
