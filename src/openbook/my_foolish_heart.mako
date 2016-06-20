@@ -160,7 +160,7 @@
 	%% part "A"
 	The night __ is like a love -- ly tune,
 	be -- ware __ My Fool -- ish Heart!
-	How while __ the ev -- er con -- stant moon;
+	How white __ the ev -- er con -- stant moon;
 	take care __ My Fool -- ish Heart!
 
 	There's a line be -- tween love and fas -- ci -- na -- tion __
@@ -175,7 +175,7 @@
 	then let __ the fire _ start
 
 	for this time it is -- n't fas -- ci -- na -- tion,
-	or a dream that will fake and fall a -- part,
+	or a dream that will fade and fall a -- part,
 	it's love __ this time, it's love,
 	My Fool -- ish Heart. __ The
 
