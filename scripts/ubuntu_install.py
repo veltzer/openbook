@@ -44,12 +44,24 @@ packs=[
 	'lilypond-doc-pdf', # documentation for lilypond
 
 	# was once used but no more (not critical)
-	'pdfjam', # for pdfjoin(1)
+	'texlive-extra-utils', # for pdfjoin(1)
 
 	# npm is used for htmlhint
 	'npm', # for htmlhint
+]
+node_packs=[
+	'htmlhint',
 ]
 
 args=['sudo','apt-get','install','--assume-yes']
 args.extend(packs)
 subprocess.check_call(args)
+
+for node_pack in node_packs:
+	print('getting npm for [{0}]'.format(node_pack))
+	subprocess.check_call([
+		'npm',
+		'--silent',
+		'install',
+		node_pack,
+	], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)

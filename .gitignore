@@ -15,3 +15,6 @@ __pycache__
 
 # templar generated
 /.tdefs.config
+
+# node modules
+/node_modules
