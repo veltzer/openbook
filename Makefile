@@ -144,18 +144,18 @@ endif
 ifeq ($(DO_BOOKS_PDF),1)
 	ALL+=$(OUT_PDF)
 endif
-all: $(ALL)
 
 SOURCES_HTML:=web/index.html
 HTMLCHECK:=html.stamp
 ifeq ($(DO_CHECKHTML),1)
 ALL+=$(HTMLCHECK)
-all: $(ALL)
 endif # DO_CHECKHTML
 
 #########
 # rules #
 #########
+# do not touch this rule or add a recipe to it. This is to force 'make' to take the new $(ALL)
+all: $(ALL)
 .PHONY: stamp
 stamp: $(FILES_STAMP)
 	$(info doing [$@])
