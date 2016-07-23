@@ -1,6 +1,5 @@
 # generated stuff
-/out/
-/web/
+/out
 
 # python stuff
 *.pyc
@@ -9,12 +8,6 @@ __pycache__
 
 # backup files
 *~
-
-# stamps of various kinds
-/*.stamp
-
-# templar generated
-/.tdefs.config
 
 # node modules
 /node_modules
