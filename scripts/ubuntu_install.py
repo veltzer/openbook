@@ -50,7 +50,8 @@ packs=[
 	'npm', # for htmlhint
 ]
 node_packs=[
-	'htmlhint',
+	'htmlhint', # for htmlhint(1)
+	'gh-pages', # for gh-pages(1)
 ]
 
 args=['sudo','apt-get','install','--assume-yes']

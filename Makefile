@@ -38,10 +38,6 @@ NAMES:=openbook israeli drumming rockbook guitar_album
 SOURCE_DIR:=src
 # where is the output folder ?
 OUT_DIR:=out
-# what is the web folder ?
-WEB_DIR:=../openbook-gh-pages
-# which folders to copy for web?
-COPY_FOLDERS:=web static
 # where is the common file?
 COMMON:=src/include/common.makoi
 # wrappers
@@ -145,7 +141,7 @@ ifeq ($(DO_BOOKS_PDF),1)
 	ALL+=$(OUT_PDF)
 endif
 
-SOURCES_HTML:=web/index.html
+SOURCES_HTML:=out/web/index.html
 HTMLCHECK:=out/html.stamp
 ifeq ($(DO_CHECKHTML),1)
 ALL+=$(HTMLCHECK)
@@ -168,7 +164,6 @@ ly: $(FILES_LY)
 debug_me:
 	$(info doing [$@])
 	$(info ALL is $(ALL))
-	$(info COPY_FOLDERS is $(COPY_FOLDERS))
 	$(info SOURCES_ALL is $(SOURCES_ALL))
 	$(info SOURCES_HTML is $(SOURCES_HTML))
 	$(info FILES_MAKO is $(FILES_MAKO))
@@ -183,7 +178,6 @@ debug_me:
 	$(info FILES_MP3 is $(FILES_MP3))
 	$(info FILES_OGG is $(FILES_OGG))
 	$(info FILES_JAZZ is $(FILES_JAZZ))
-	$(info WEB_FOLDER is $(WEB_FOLDER))
 	$(info NAMES is $(NAMES))
 	$(info OUT_LY is $(OUT_LY))
 	$(info OUT_PS is $(OUT_PS))
@@ -202,14 +196,9 @@ clean_all_png:
 .PHONY: install
 install: $(ALL) $(ALL_DEP)
 	$(info doing [$@])
-	$(Q)rm -rf $(WEB_DIR)/*
-	$(Q)mkdir $(WEB_DIR)/out
 	$(Q)cp $(OUT_PDF) $(WEB_DIR)/out
 	$(Q)cp $(OUT_PS) $(WEB_DIR)/out
 	$(Q)cp $(OUT_LY) $(WEB_DIR)/out
-	$(Q)for folder in $(COPY_FOLDERS); do cp -r $$folder $(WEB_DIR); done
-	$(Q)cp support/redirector.html $(WEB_DIR)/index.html
-	cd $(WEB_DIR); git commit -a -m "new version"; git push
 
 # checks
 
