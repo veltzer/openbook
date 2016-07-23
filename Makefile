@@ -141,6 +141,9 @@ ifeq ($(DO_BOOKS_PDF),1)
 	ALL+=$(OUT_PDF)
 endif
 
+COPY:=out/web/openbook.ly out/web/openbook.pdf out/web/openbook.ps
+ALL+=$(COPY)
+
 SOURCES_HTML:=out/web/index.html
 HTMLCHECK:=out/html.stamp
 ifeq ($(DO_CHECKHTML),1)
@@ -199,6 +202,10 @@ install: $(ALL) $(ALL_DEP)
 	$(Q)cp $(OUT_PDF) $(WEB_DIR)/out
 	$(Q)cp $(OUT_PS) $(WEB_DIR)/out
 	$(Q)cp $(OUT_LY) $(WEB_DIR)/out
+.PHONY: gh-pages
+gh-pages: $(ALL) $(ALL_DEPS)
+	$(info doing [$@])
+	$(Q)node_modules/gh-pages/bin/gh-pages --dist out/web
 
 # checks
 
@@ -358,3 +365,8 @@ $(HTMLCHECK): $(SOURCES_HTML) $(ALL_DEP)
 	$(Q)node_modules/htmlhint/bin/htmlhint $(SOURCES_HTML) > /dev/null
 	$(Q)mkdir -p $(dir $@)
 	$(Q)touch $(HTMLCHECK)
+
+$(COPY): out/web/%: out/% $(ALL_DEP)
+	$(info doing [$@])
+	$(Q)mkdir -p $(dir $@)
+	$(Q)cp $< $@
