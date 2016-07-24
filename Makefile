@@ -369,4 +369,4 @@ $(HTMLCHECK): $(SOURCES_HTML) $(ALL_DEP)
 $(COPY): out/web/%: out/% $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
-	$(Q)cp $< $@
+	$(Q)cp -f $< $@
