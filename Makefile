@@ -196,17 +196,6 @@ clean_all_png:
 	$(info doing [$@])
 	$(Q)-find $(SOURCE_DIR) -name "*.png" -exec rm -f {} \;
 
-.PHONY: install
-install: $(ALL) $(ALL_DEP)
-	$(info doing [$@])
-	$(Q)cp $(OUT_PDF) $(WEB_DIR)/out
-	$(Q)cp $(OUT_PS) $(WEB_DIR)/out
-	$(Q)cp $(OUT_LY) $(WEB_DIR)/out
-.PHONY: gh-pages
-gh-pages: $(ALL) $(ALL_DEPS)
-	$(info doing [$@])
-	$(Q)node_modules/gh-pages/bin/gh-pages --dist out/web
-
 # checks
 
 .PHONY: check_ws
