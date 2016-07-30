@@ -39,7 +39,7 @@ SOURCE_DIR:=src
 # where is the output folder ?
 OUT_DIR:=out
 # where is the common file?
-COMMON:=src/include/common.ly.makoi
+COMMON:=include/common.ly.mako
 # wrappers
 LILYPOND_WRAPPER:=scripts/wrapper_lilypond.py
 MAKO_WRAPPER:=scripts/wrapper_mako.py

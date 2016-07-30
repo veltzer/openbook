@@ -49,7 +49,7 @@
 	- add tune
 % endif
 
-<%namespace name="defs" file="/src/include/defs.ly.makoi"/>
+<%namespace name="defs" file="/include/defs.ly.mako"/>
 
 % if part=='ChordsMy':
 \chordmode {

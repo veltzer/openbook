@@ -35,7 +35,7 @@ p_cut=bool(int(sys.argv[2]))
 p_cutnum=int(sys.argv[3])
 p_output=sys.argv[4]
 p_input=sys.argv[5:]
-common='src/include/common.ly.makoi'
+common='include/common.ly.mako'
 
 '''
 We really need the unlink, even though we have *open a file

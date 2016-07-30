@@ -48,7 +48,7 @@
 	TODO:
 % endif
 
-<%namespace name="defs" file="/src/include/defs.ly.makoi"/>
+<%namespace name="defs" file="/include/defs.ly.mako"/>
 
 <%def name="chords()">
 	\chordmode {
