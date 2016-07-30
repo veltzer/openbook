@@ -82,8 +82,6 @@
 - tweeter api does not work. check it out and fix it.
 - add the facebook api to release manager and see that it works.
 
-- stop calling the template common.makoi. The name and the location of this
-	template is totally inappropriate...
 - make the full build also build all the pdfs (not just the ones going into
 	the book).
 - enable to turn off lyrics and produce a book with lyrics and a book without.

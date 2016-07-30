@@ -90,9 +90,8 @@ endif # DO_MKDBG
 # this finds the sources via git
 SOURCES_ALL:=$(shell git ls-files)
 # this find the sources without git...
-SOURCES_ALL:=$(subst ./,,$(shell find src -type f -and -name "*.mako" -or -name "*.makoi"))
+SOURCES_ALL:=$(subst ./,,$(shell find src -type f -and -name "*.mako"))
 FILES_MAKO:=$(filter %.mako,$(SOURCES_ALL))
-FILES_MAKOI:=$(filter %.makoi,$(SOURCES_ALL))
 
 FILES_JAZZ:=$(shell git ls-files src/openbook)
 
