@@ -1,3 +1,12 @@
+- My email is hardcoded in several places:
+	in all of the regular tunes as:
+		attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	in the israeli tunes as:
+		attributes['typesetter']=u'מרק ולצר <mark.veltzer@gmail.com>'
+	in the common.ly.mako include files as:
+		"<" \with-url #"mailto:mark.veltzer@gmail.com" mark.veltzer@gmail.com ">"
+	remove all of this junk and use mako to replace it with my email (either hebrew or not).
+
 - print git shortlog or something on the page of openbook where I list contributions.
 	(do it using templar or something).
 - some songs have more than one name.
