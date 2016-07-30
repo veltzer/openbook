@@ -36,7 +36,7 @@
 		(currently they reside above the lyrics which is weird).
 % endif
 
-<%namespace name="defs" file="/src/include/defs.makoi"/>
+<%namespace name="defs" file="/src/include/defs.ly.makoi"/>
 
 % if part=='Own':
 %% all of the parts are taken from the notes I have of Bill Joel

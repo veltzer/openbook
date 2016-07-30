@@ -32,7 +32,7 @@
 	- document the youtube performances.
 % endif
 
-<%namespace name="defs" file="/src/include/defs.makoi"/>
+<%namespace name="defs" file="/src/include/defs.ly.makoi"/>
 
 <%def name="chords()">
 	\chordmode {

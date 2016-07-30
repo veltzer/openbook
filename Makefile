@@ -39,7 +39,7 @@ SOURCE_DIR:=src
 # where is the output folder ?
 OUT_DIR:=out
 # where is the common file?
-COMMON:=src/include/common.makoi
+COMMON:=src/include/common.ly.makoi
 # wrappers
 LILYPOND_WRAPPER:=scripts/wrapper_lilypond.py
 MAKO_WRAPPER:=scripts/wrapper_mako.py
@@ -76,7 +76,7 @@ else
 	MIDI2MP3_WRAPPER_DEP:=
 endif
 ifeq ($(DO_INCDEPS),1)
-	MAKO_WRAPPER_DEP:=$(MAKO_WRAPPER_DEP) src/include/common.makoi
+	MAKO_WRAPPER_DEP:=$(MAKO_WRAPPER_DEP) $(COMMON)
 endif
 
 ifeq ($(DO_MKDBG),1)

@@ -30,7 +30,7 @@
 	- add lyrics and melody.
 % endif
 
-<%namespace name="defs" file="/src/include/defs.makoi"/>
+<%namespace name="defs" file="/src/include/defs.ly.makoi"/>
 
 % if part=='ChordsEpdf0':
 \chordmode {
