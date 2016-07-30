@@ -1,7 +1,6 @@
 <%page args='part'/>
 % if part=='Vars':
 <%
-	# vim: set filetype=lilypond :
 	import attr
 	version=attr.Version()
 	version['doChords']=True
