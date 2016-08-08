@@ -28,7 +28,7 @@ packs=[
 	'tidy', # for tidy(1) (used in checking HTML)
 
 	# release helpers (not critical)
-	'grive', # for grive(1)
+	#'grive', # for grive(1)
 	'python-tweepy', # this is for tweeting new releases
 	'python-tweepy-doc', # this is for tweeting new releases
 	'python-facebook', # this is for facebooking releases
