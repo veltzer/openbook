@@ -3,30 +3,30 @@ project definitions for templar
 '''
 
 def populate(d):
-	d.project_github_username='veltzer'
-	d.project_name='openbook'
-	d.project_website='https://{project_github_username}.github.io/{project_name}'.format(**d)
-	d.project_website_source='https://github.com/{project_github_username}/{project_name}'.format(**d)
-	d.project_website_git='git://github.com/{project_github_username}/{project_name}.git'.format(**d)
-	d.project_paypal_donate_button_id='ASPRXR59H2NTQ'
-	d.project_google_analytics_tracking_id='UA-56436979-1'
-	d.project_long_description='OpenBook is an open source Jazz real book'
-	# keywords to put on html pages or for search, dont put the name of the project or my details
-	# as they will be added automatically...
-	d.project_keywords=[
-		'jazz',
-		'Real book',
-		'realbook',
-		'open book',
-		'music',
-		'standards',
-		'pdf',
-		'sheet music',
-		'open source',
-	]
-	d.project_license='GPLV3'
-	d.project_year_started='2009'
-	d.project_description='''What is OpenBook?
+    d.project_github_username='veltzer'
+    d.project_name='openbook'
+    d.project_website='https://{project_github_username}.github.io/{project_name}'.format(**d)
+    d.project_website_source='https://github.com/{project_github_username}/{project_name}'.format(**d)
+    d.project_website_git='git://github.com/{project_github_username}/{project_name}.git'.format(**d)
+    d.project_paypal_donate_button_id='ASPRXR59H2NTQ'
+    d.project_google_analytics_tracking_id='UA-56436979-1'
+    d.project_long_description='OpenBook is an open source Jazz real book'
+    # keywords to put on html pages or for search, dont put the name of the project or my details
+    # as they will be added automatically...
+    d.project_keywords=[
+        'jazz',
+        'Real book',
+        'realbook',
+        'open book',
+        'music',
+        'standards',
+        'pdf',
+        'sheet music',
+        'open source',
+    ]
+    d.project_license='GPLV3'
+    d.project_year_started='2009'
+    d.project_description='''What is OpenBook?
 ------------------
 OpenBook is a Jazz real book constructed with free software. A real book simply means a big book with lots of Jazz tunes or standards as they are more widely known.
 
@@ -123,19 +123,19 @@ Can I just add a single tune?
 ------------------------------
 Yes. To add a tune named "yourtune" just a single file named
 
-		src/openbook/yourtune.mako
+        src/openbook/yourtune.mako
 Yes, the extension should be .mako since I use mako for templating.
 In that file there are sections. Just copy them from some other tune. One section for
 chords, another for lyrics, another for the melody etc.
 After working on the tune build just a single tune by issueing:
 
-		make out/src/openbook/yourtune.pdf
+        make out/src/openbook/yourtune.pdf
 or
 
-		make out/src/openbook/yourtune.midi
+        make out/src/openbook/yourtune.midi
 or
 
-		make out/src/openbook/yourtune.stamp
+        make out/src/openbook/yourtune.stamp
 to get both pdf and midi.
 
 Can I send corrections to the tunes without learning lilypond and all the rest of the stuff?
@@ -146,10 +146,10 @@ Where can I get more documentation about this project?
 ------------------------------------------------------
 Look in the "doc" subfolder of the source code...'''.format(**d)
 
-	# deb
-	d.deb_package=False
+    # deb
+    d.deb_package=False
 
 def getdeps():
-	return [
-		__file__, # myself
-	]
+    return [
+        __file__, # myself
+    ]

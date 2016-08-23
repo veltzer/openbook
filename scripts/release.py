@@ -43,18 +43,18 @@ check_version.check_version()
 
 # check that everything is committed
 if opt_check:
-	out=subprocess.check_output(['git','status','-s']).decode().rstrip()
-	if out!='':
-		print('first commit everything, then call me...', file=sys.stderr)
-		sys.exit(1)
+    out=subprocess.check_output(['git','status','-s']).decode().rstrip()
+    if out!='':
+        print('first commit everything, then call me...', file=sys.stderr)
+        sys.exit(1)
 
 # tag the new version
 tag=int(subprocess.check_output(['git','describe','--abbrev=0']).decode().rstrip())
 if opt_debug:
-	print('old tag is [{0}]'.format(tag))
+    print('old tag is [{0}]'.format(tag))
 tag+=1
 if opt_debug:
-	print('new tag is [{0}]'.format(tag))
+    print('new tag is [{0}]'.format(tag))
 tag=str(tag)
 subprocess.check_output(['git','tag','-a','-s','-m',opt_project+' version '+tag,tag])
 
@@ -66,6 +66,6 @@ subprocess.check_call(['make','install'])
 
 # call the release manager
 if opt_release:
-	import releasemanager # for ReleaseManager
-	rm=releasemanager.ReleaseManager()
-	rm.release()
+    import releasemanager # for ReleaseManager
+    rm=releasemanager.ReleaseManager()
+    rm.release()
