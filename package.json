@@ -1,0 +1,35 @@
+{
+  "name": "openbook",
+  "version": "1.0.0",
+  "description": "openbook is jazz real book",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gh-pages": "latest",
+    "htmlhint": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veltzer/openbook.git"
+  },
+  "keywords": [
+    "jazz",
+    "realbook",
+    "mark",
+    "veltzer",
+    "openbook"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/veltzer/issues"
+  },
+  "homepage": "https://veltzer.github.io/openbook"
+}
