@@ -30,6 +30,8 @@ DO_BOOKS_PDF:=1
 DO_CHECKHTML:=1
 # which books should we do?
 NAMES:=openbook israeli drumming rockbook guitar_album
+# should we do tools?
+DO_TOOLS:=1
 
 #############
 # CONSTANTS #
@@ -77,7 +79,7 @@ else
 endif
 ifeq ($(DO_INCDEPS),1)
 	MAKO_WRAPPER_DEP:=$(MAKO_WRAPPER_DEP) $(COMMON)
-endif
+endif # DO_INCDEPS
 
 ifeq ($(DO_MKDBG),1)
 Q=
@@ -86,6 +88,10 @@ else # DO_MKDBG
 Q=@
 #.SILENT:
 endif # DO_MKDBG
+
+ifeq ($(DO_TOOLS),1)
+ALL_DEP+=out/tools.stamp
+endif # DO_TOOLS
 
 # this finds the sources via git
 SOURCES_ALL:=$(shell git ls-files)
@@ -161,6 +167,11 @@ stamp: $(FILES_STAMP)
 .PHONY: ly
 ly: $(FILES_LY)
 	$(info doing [$@])
+
+out/tools.stamp: package.json templardefs/deps.py
+	$(info doing [$@])
+	$(Q)templar_cmd install_deps
+	$(Q)make_helper touch-mkdir $@
 
 .PHONY: debug_me
 debug_me:
