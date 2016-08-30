@@ -97,19 +97,20 @@ endif # DO_TOOLS
 SOURCES_ALL:=$(shell git ls-files)
 # this find the sources without git...
 SOURCES_ALL:=$(subst ./,,$(shell find src -type f -and -name "*.mako"))
-FILES_MAKO:=$(filter %.mako,$(SOURCES_ALL))
+FILES_MAKO:=$(filter %.ly.mako,$(SOURCES_ALL))
+FILES_MAKO_BASE:=$(basename $(basename $(FILES_MAKO)))
 
 FILES_JAZZ:=$(shell git ls-files src/openbook)
 
-FILES_MAKO_DEPS:=$(addsuffix .mako.d,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
-FILES_LY:=$(addsuffix .ly,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
-FILES_PDF:=$(addsuffix .pdf,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
-FILES_PS:=$(addsuffix .ps,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
-FILES_MIDI:=$(addsuffix .midi,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
-FILES_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
-FILES_WAV:=$(addsuffix .wav,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
-FILES_MP3:=$(addsuffix .mp3,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
-FILES_OGG:=$(addsuffix .ogg,$(addprefix $(OUT_DIR)/,$(basename $(FILES_MAKO))))
+FILES_MAKO_DEPS:=$(addsuffix .mako.d,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
+FILES_LY:=$(addsuffix .ly,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
+FILES_PDF:=$(addsuffix .pdf,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
+FILES_PS:=$(addsuffix .ps,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
+FILES_MIDI:=$(addsuffix .midi,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
+FILES_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
+FILES_WAV:=$(addsuffix .wav,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
+FILES_MP3:=$(addsuffix .mp3,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
+FILES_OGG:=$(addsuffix .ogg,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
 
 ALL_OUT_FILES:=$(shell find src -type f -and -name "*.mako")
 ALL_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(ALL_OUT_FILES))))
@@ -277,33 +278,33 @@ $(FILES_MIDI): %.midi: %.stamp $(ALL_DEP)
 	$(info doing [$@])
 
 # this is the real rule
-$(FILES_STAMP): %.stamp: %.ly $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
+$(FILES_STAMP): $(OUT_DIR)/%.stamp: %.ly.mako $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(LILYPOND_WRAPPER) $(dir $@)$(basename $(notdir $@)).ps $(dir $@)$(basename $(notdir $@)).pdf $(dir $@)$(basename $(notdir $@)) $<
 	$(Q)touch $@
 
-$(OUT_DIR)/%.0.pdf: %.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
+$(OUT_DIR)/%.0.pdf: %.ly.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKO_WRAPPER) $(CONST_SONG) $(CONST_CUT) 0 $@ $<
-$(OUT_DIR)/%.1.pdf: %.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
+$(OUT_DIR)/%.1.pdf: %.ly.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKO_WRAPPER) $(CONST_SONG) $(CONST_CUT) 1 $@ $<
-$(OUT_DIR)/%.2.pdf: %.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
+$(OUT_DIR)/%.2.pdf: %.ly.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKO_WRAPPER) $(CONST_SONG) $(CONST_CUT) 2 $@ $<
-$(OUT_DIR)/%.3.pdf: %.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
+$(OUT_DIR)/%.3.pdf: %.ly.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKO_WRAPPER) $(CONST_SONG) $(CONST_CUT) 3 $@ $<
-$(FILES_LY): $(OUT_DIR)/%.ly: %.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
+$(FILES_LY): $(OUT_DIR)/%.ly: %.ly.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKO_WRAPPER) $(CONST_SONG) $(CONST_DONTCUT) 0 $@ $<
-$(FILES_MAKO_DEPS): $(OUT_DIR)/%.mako.d: %.mako $(MAKO_DEPS_WRAPPER_DEP) $(ALL_DEP)
+$(FILES_MAKO_DEPS): $(OUT_DIR)/%.mako.d: %.ly.mako $(MAKO_DEPS_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKO_DEPS_WRAPPER) $< $@ $(basename $(basename $@)).stamp $(basename $(basename $@)).pdf $(basename $(basename $@)).ps $(basename $(basename $@)).midi
