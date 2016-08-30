@@ -4,13 +4,14 @@ If you want to build a single tune use this:
 	$ make out/[source without .ly.mako].stamp
 example:
 	$ make out/src/openbook/a_foggy_day.stamp
-this will build both midi and pdf and possibly other things as well.
+this will build: ly, midi, ps, pdf, stamp
 
 If you just want to build a pdf use this:
 	$ make out/[source without .ly.mako].pdf
 example:
 	$ make out/src/openbook/a_foggy_day.pdf
-this will build only pdf
+this is guaranteed to build the pdf for the required tune
+but may also build other products as well (and currently does).
 
 If you want to build all rock songs use this:
 	$ make all_tunes_rock

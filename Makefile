@@ -278,7 +278,7 @@ $(FILES_MIDI): %.midi: %.stamp $(ALL_DEP)
 	$(info doing [$@])
 
 # this is the real rule
-$(FILES_STAMP): $(OUT_DIR)/%.stamp: %.ly.mako $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
+$(FILES_STAMP): $(OUT_DIR)/%.stamp: $(OUT_DIR)/%.ly $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(LILYPOND_WRAPPER) $(dir $@)$(basename $(notdir $@)).ps $(dir $@)$(basename $(notdir $@)).pdf $(dir $@)$(basename $(notdir $@)) $<
