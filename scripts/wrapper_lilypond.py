@@ -17,7 +17,6 @@ import sys # for argv, exit, stderr
 import os # for chmod
 import subprocess # for Popen
 import os.path # for isfile
-import check_version # for check_version
 import shutil # for move
 import tempfile # for NamedTemporaryFile
 
@@ -81,9 +80,6 @@ p_stop_on_output=True
 ########
 # code #
 ########
-# first check that we are using the correct version of python
-check_version.check_version()
-
 if len(sys.argv)!=5:
     print('{0}: usage: [ps] [pdf] [pdf without suffix] [lilypond input]'.format(sys.argv[0]))
     sys.exit(1)

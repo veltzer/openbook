@@ -6,7 +6,6 @@ import configparser
 import os
 import sys
 import tweepy
-import check_version # for check_version
 
 class ReleaseManager:
     def __init__(self):
@@ -81,7 +80,5 @@ class ReleaseManager:
             self.doFace()
 
 if __name__=='__main__':
-    # first check that we are using the correct version of python
-    check_version.check_version()
     rm=ReleaseManager()
     rm.release()

@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 
 '''
-This script checks if we have \myEndLine in voice
+This scripts checks our lilypond source files for common mistakes
+and best practices.
+
+One of the things it checks is that we have \myEndLine in voices
 '''
 
 import glob # for glob

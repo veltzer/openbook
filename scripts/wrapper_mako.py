@@ -6,7 +6,6 @@ import mako.lookup # for TemplateLookup
 import mako.exceptions # for text_error_template
 import os # for chmod, unlink
 import glob # for glob
-import check_version # for check_version
 import os.path # for isfile
 import attr # for Attributes
 
@@ -22,9 +21,6 @@ def is_ready(file):
 ########
 # code #
 ########
-# first check that we are using the correct version of python
-check_version.check_version()
-
 if len(sys.argv)<6:
     raise ValueError('command line issue', sys.argv)
 

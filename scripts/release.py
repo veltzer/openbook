@@ -18,7 +18,6 @@ TODO:
 ###########
 import subprocess # for check_output, check_call
 import os # for getcwd
-import check_version # for check_version
 import sys # for stderr, exit
 
 ##############
@@ -37,9 +36,6 @@ opt_release=False
 ########
 # code #
 ########
-
-# first check that we are using the correct version of python
-check_version.check_version()
 
 # check that everything is committed
 if opt_check:

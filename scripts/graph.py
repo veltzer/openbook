@@ -23,7 +23,6 @@ import os.path # for isfile, expanduser
 import configparser # for ConfigParser
 import getpass # for getuser
 import progressbar # for ProgressBar
-import check_version # for check_version
 
 ##############
 # parameters #
@@ -66,8 +65,6 @@ def get_config():
 ########
 # code #
 ########
-
-check_version.check_version()
 
 conn=mysql.connector.Connect(**get_config())
 
