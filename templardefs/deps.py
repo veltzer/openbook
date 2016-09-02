@@ -40,6 +40,7 @@ def populate(d):
 
         # npm is used for htmlhint
         'npm', # for htmlhint
+    ]
     d.python_version_needed=(3,5)
 
 def getdeps():
