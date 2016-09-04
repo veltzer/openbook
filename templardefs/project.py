@@ -109,7 +109,6 @@ No. Rock and Pop will be welcome and so would classical. If you are really into 
 
 How do I build the pdfs?
 ------------------------
-* create an account on git hub.
 * git checkout -b [your branch name] {project_website_git}
 * install templar which is my own package that facilitates the build.
 * templar is here: https://launchpad.net/~mark-veltzer
@@ -118,6 +117,7 @@ How do I build the pdfs?
 
 How do I contribute?
 --------------------
+* create an account on git hub.
 * hack on the .ly.mako files (git add the files that you hack on).
 * commit to your own hard drive repository (git commit).
 * push to git hub (git push).
