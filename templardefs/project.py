@@ -107,14 +107,18 @@ Do you only allow Jazz tunes?
 ------------------------------
 No. Rock and Pop will be welcome and so would classical. If you are really into classical lilypond production you may alternativly wish to contribute to the mutopia project at http://www.mutopiaproject.org/.
 
-How do I get started?
-----------------------
+How do I build the pdfs?
+------------------------
 * create an account on git hub.
 * git checkout -b [your branch name] {project_website_git}
-* on Ubuntu run ./scripts/ubuntu_install.py to install required pieces of software.
-* on other systems do the best you can.
-* make (install pieces of software that it needs if it complains).
-* hack on the files (git add the files that you hack on).
+* install templar which is my own package that facilitates the build.
+* templar is here: https://launchpad.net/~mark-veltzer
+* issue $ make.
+* the pdfs should build and you will find them in the 'out' folder.
+
+How do I contribute?
+--------------------
+* hack on the .ly.mako files (git add the files that you hack on).
 * commit to your own hard drive repository (git commit).
 * push to git hub (git push).
 * send me a pull request (button in the github ui).
@@ -123,7 +127,7 @@ Can I just add a single tune?
 ------------------------------
 Yes. To add a tune named "yourtune" just a single file named
 
-        src/openbook/yourtune.mako
+        src/openbook/yourtune.ly.mako
 Yes, the extension should be .mako since I use mako for templating.
 In that file there are sections. Just copy them from some other tune. One section for
 chords, another for lyrics, another for the melody etc.
