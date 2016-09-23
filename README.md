@@ -1,7 +1,7 @@
 openbook
 ========
 
-version: 153
+version: 170
 
 OpenBook is an open source Jazz real book
 
@@ -75,7 +75,7 @@ I just started this project (4 years all in all). Feel free to add stuff and req
 
 How do you write the standards?
 --------------------------------
-Using lilypond. Check it out at: http://www.lilypond.org/
+Using lilypond. Check it out at: http://www.lilypond.org/. We use version 2.18.2.
 
 Will you co-operate with the lilypond, mutopia and wikifonia communities?
 --------------------------------------------------------------------------

@@ -3,7 +3,7 @@ include /usr/share/templar/make/Makefile
 # PARAMETERS #
 ##############
 # should we show commands executed ?
-DO_MKDBG:=0
+DO_MKDBG?=0
 # should we depend on the wrappers scripts dates ?
 DO_WRAPDEPS:=1
 # should we depend on the common include file ?
@@ -196,6 +196,7 @@ debug_me:
 	$(info OUT_LY is $(OUT_LY))
 	$(info OUT_PS is $(OUT_PS))
 	$(info OUT_PDF is $(OUT_PDF))
+	$(info DO_MKDBG is $(DO_MKDBG))
 
 .PHONY: todo
 todo:
