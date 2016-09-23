@@ -80,6 +80,8 @@ try:
     gattr['break_after_tune']=False
     # put a page break after the toc?
     gattr['break_after_toc']=True
+    # this is here until we get rid of this script and do everything using templar
+    gattr['lilypond_version']='2.18.2'
     if not p_cut:
         file=open(p_output,'wb')
     attributes=attr.Attributes()

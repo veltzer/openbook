@@ -11,7 +11,6 @@
 	import socket # for gethostname
 	import subprocess # for subprocess.check_output
 
-	gattr['lilyver']='${lilypond_version}'
 	gattr['date']=datetime.datetime.now().strftime('%T %d-%m-%Y')
 	gattr['year']=datetime.datetime.now().strftime('%Y')
 	gattr['username']=pwd.getpwuid(os.getuid())[0]
@@ -23,11 +22,11 @@
 	gattr['copyrightvalstudy']='-- no copyright notice for study materials --'
 	gattr['lyricsInMidi']=False
 %>
-\version "${gattr['lilyver']}"
+\version "${gattr['lilypond_version']}"
 
 %% lets define a variable to hold the formatted build date (man 3 strftime):
 %%date=#(strftime "%T %d-%m-%Y" (localtime (current-time)))
-%%lilyver=#(lilypond-version)
+%%lilypond_version=#(lilypond-version)
 
 %% setting instruments for midi generation (bah - this doesn't work...)
 %%=====================================================================
@@ -287,7 +286,7 @@ ${self.defs()}
 				\fill-line { \small "Build user: ${gattr['username']}" }
 				\fill-line { \small "Build host: ${gattr['hostname']}" }
 				\fill-line { \small "Build kernel: ${gattr['kernel']}" }
-				\fill-line { \small "Lilypond version: ${gattr['lilyver']}" }
+				\fill-line { \small "Lilypond version: ${gattr['lilypond_version']}" }
 				\fill-line { \small "Number of tunes: ${len(gattr['files'])}" }
 				\null
 				\null
@@ -377,11 +376,11 @@ ${self.clearVars()}
 %% calculate the tag line
 % if heb in attributes and attributes['heb']:
 <%
-	scratch['tagline']=u'תווי על ידי '+attributes['typesetter']+u', נבנה בתאריך'+gattr['date']+u', תימון על ידי lilypond '+gattr['lilyver']
+	scratch['tagline']=u'תווי על ידי '+attributes['typesetter']+u', נבנה בתאריך'+gattr['date']+u', תימון על ידי lilypond '+gattr['lilypond_version']
 %>
 % else:
 <%
-	scratch['tagline']='Typeset by '+attributes['typesetter']+', Built at '+gattr['date']+', Engraved by lilypond '+gattr['lilyver']
+	scratch['tagline']='Typeset by '+attributes['typesetter']+', Built at '+gattr['date']+', Engraved by lilypond '+gattr['lilypond_version']
 %>
 % endif
 
