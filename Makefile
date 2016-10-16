@@ -90,7 +90,8 @@ Q=@
 endif # DO_MKDBG
 
 ifeq ($(DO_TOOLS),1)
-ALL_DEP+=out/tools.stamp
+TOOLS:=out/tools.stamp
+ALL_DEP+=$(TOOLS)
 endif # DO_TOOLS
 
 # this finds the sources via git
@@ -169,7 +170,7 @@ stamp: $(FILES_STAMP)
 ly: $(FILES_LY)
 	$(info doing [$@])
 
-out/tools.stamp: package.json templardefs/deps.py
+$(TOOLS): package.json templardefs/deps.py
 	$(info doing [$@])
 	$(Q)templar_cmd install_deps
 	$(Q)make_helper touch-mkdir $@
