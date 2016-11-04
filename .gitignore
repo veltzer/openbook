@@ -11,3 +11,6 @@ __pycache__
 
 # node modules
 /node_modules
+
+# tools
+/tools.stamp
