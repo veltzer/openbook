@@ -170,9 +170,9 @@ stamp: $(FILES_STAMP)
 ly: $(FILES_LY)
 	$(info doing [$@])
 
-$(TOOLS): package.json templardefs/deps.py
+$(TOOLS): templardefs/deps.py
 	$(info doing [$@])
-	$(Q)templar_cmd install_deps
+	$(Q)templar install_deps
 	$(Q)make_helper touch-mkdir $@
 
 .PHONY: debug_me
