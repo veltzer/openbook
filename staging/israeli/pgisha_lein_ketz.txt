@@ -3,7 +3,7 @@
 אריק איינשטיין - פגישה לאין קץ
 
 פתיחה:
-Ab C#maj7 Bbm Ebm C#maj7 G Cm G
+Ab Dbmaj7 Bbm Ebm Dbmaj7 G Cm G
 
 Bb     Fm            Cm
 כי סערת עלי, לנצח אנגנך
@@ -24,7 +24,7 @@ G Bb/B            Bb    Fm         Cm
 תאלמי אותי    לאלומות.
 
 מעבר:
-Ab C#maj7 Bbm Ebm C#maj7 G Cm G
+Ab Dbmaj7 Bbm Ebm Dbmaj7 G Cm G
 
 Bb/B  Bb       Fm             Cm
 אל תתחנני   אל הנסוגים מגשת.
@@ -54,7 +54,7 @@ Ab G   G4     Fm      Cm
 בלי  הכוכבים  שנשארו בחוץ.
 
 מעבר:
-Ab C#maj7 Bbm Ebm C#maj7 G Cm G
+Ab Dbmaj7 Bbm Ebm Dbmaj7 G Cm G
 
  Bb      Fm           Cm
 שם לוהט ירח  כנשיקת טבחת,
@@ -84,4 +84,4 @@ G Bb/B     Bb   Fm      Cm
 מעוניי הרב  שקדים וצימוקים.
 
 סיום:
-Ab C#maj7 Bbm Ebm C#maj7 G Cm
+Ab Dbmaj7 Bbm Ebm Dbmaj7 G Cm
