@@ -43,7 +43,7 @@ def populate(d):
     ]
     d.python_version_needed=(3,5)
 
-def getdeps():
+def get_deps():
     return [
         __file__, # myself
     ]

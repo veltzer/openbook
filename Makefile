@@ -36,6 +36,8 @@ DO_TOOLS:=1
 #############
 # CONSTANTS #
 #############
+# where is the web folder?
+DOCS:=docs
 # where are the sources located ?
 SOURCE_DIR:=src
 # where is the output folder ?
@@ -104,9 +106,9 @@ FILES_MAKO_BASE:=$(basename $(basename $(FILES_MAKO)))
 FILES_JAZZ:=$(shell git ls-files src/openbook)
 
 FILES_MAKO_DEPS:=$(addsuffix .mako.d,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
-FILES_LY:=$(addsuffix .ly,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
-FILES_PDF:=$(addsuffix .pdf,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
-FILES_PS:=$(addsuffix .ps,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
+FILES_LY:=$(addsuffix .ly,$(addprefix $(DOCS)/,$(FILES_MAKO_BASE)))
+FILES_PDF:=$(addsuffix .pdf,$(addprefix $(DOCS)/,$(FILES_MAKO_BASE)))
+FILES_PS:=$(addsuffix .ps,$(addprefix $(DOCS)/,$(FILES_MAKO_BASE)))
 FILES_MIDI:=$(addsuffix .midi,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
 FILES_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
 FILES_WAV:=$(addsuffix .wav,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
@@ -116,9 +118,9 @@ FILES_OGG:=$(addsuffix .ogg,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
 ALL_OUT_FILES:=$(shell find src -type f -and -name "*.mako")
 ALL_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(ALL_OUT_FILES))))
 
-OUT_LY:=$(addsuffix .ly,$(addprefix $(OUT_DIR)/,$(NAMES)))
-OUT_PS:=$(addsuffix .ps,$(addprefix $(OUT_DIR)/,$(NAMES)))
-OUT_PDF:=$(addsuffix .pdf,$(addprefix $(OUT_DIR)/,$(NAMES)))
+OUT_LY:=$(addsuffix .ly,$(addprefix $(DOCS)/,$(NAMES)))
+OUT_PS:=$(addsuffix .ps,$(addprefix $(DOCS)/,$(NAMES)))
+OUT_PDF:=$(addsuffix .pdf,$(addprefix $(DOCS)/,$(NAMES)))
 
 ifeq ($(DO_LY),1)
 	ALL+=$(FILES_LY)
@@ -148,10 +150,7 @@ ifeq ($(DO_BOOKS_PDF),1)
 	ALL+=$(OUT_PDF)
 endif
 
-COPY:=out/web/openbook.ly out/web/openbook.pdf out/web/openbook.ps
-ALL+=$(COPY)
-
-SOURCES_HTML:=out/web/index.html
+SOURCES_HTML:=$(DOCS)/index.html
 HTMLCHECK:=out/html.stamp
 ifeq ($(DO_CHECKHTML),1)
 ALL+=$(HTMLCHECK)
@@ -280,7 +279,7 @@ $(FILES_MIDI): %.midi: %.stamp $(ALL_DEP)
 	$(info doing [$@])
 
 # this is the real rule
-$(FILES_STAMP): $(OUT_DIR)/%.stamp: $(OUT_DIR)/%.ly $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
+$(FILES_STAMP): $(OUT_DIR)/%.stamp: $(DOCS)/%.ly $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(LILYPOND_WRAPPER) $(dir $@)$(basename $(notdir $@)).ps $(dir $@)$(basename $(notdir $@)).pdf $(dir $@)$(basename $(notdir $@)) $<
@@ -324,13 +323,13 @@ $(FILES_MP3): %.mp3: %.midi $(MIDI2MP3_WRAPPER_DEP) $(ALL_DEP)
 	$(Q)$(MIDI2MP3_WRAPPER) $< $@
 
 define template
-TMPL_LY_$(1):=$$(OUT_DIR)/$(1).ly
-TMPL_PS_$(1):=$$(OUT_DIR)/$(1).ps
-TMPL_PDF_$(1):=$$(OUT_DIR)/$(1).pdf
+TMPL_LY_$(1):=$$(DOCS)/$(1).ly
+TMPL_PS_$(1):=$$(DOCS)/$(1).ps
+TMPL_PDF_$(1):=$$(DOCS)/$(1).pdf
 TMPL_PREREQ_$(1):=$(shell git ls-files src/$(1))
 $$(TMPL_PDF_$(1)): $$(TMPL_LY_$(1)) $$(LILYPOND_WRAPPER_DEP) $$(ALL_DEP)
 	$$(info doing [$$@])
-	$$(Q)$$(LILYPOND_WRAPPER) $$(TMPL_PS_$(1)) $$(TMPL_PDF_$(1)) $$(OUT_DIR) $$<
+	$$(Q)$$(LILYPOND_WRAPPER) $$(TMPL_PS_$(1)) $$(TMPL_PDF_$(1)) $$(DOCS) $$<
 $$(TMPL_LY_$(1)): $$(TMPL_PREREQ_$(1)) $$(MAKO_WRAPPER_DEP) $$(COMMON) $$(ALL_DEP)
 	$$(info doing [$$@])
 	$$(Q)mkdir -p $$(dir $$@)
@@ -353,10 +352,6 @@ dropbox: $(OUT_PDF) $(ALL_DEP)
 	$(Q)-mkdir ~/Dropbox/outputs/$(tdefs.project_name)
 	$(Q)cp $(OUT_PDF) ~/Dropbox/outputs/$(tdefs.project_name)
 
-.PHONY: web
-web: grive dropbox
-	$(info doing [$@])
-
 .PHONY: all_tunes
 all_tunes: $(ALL_OUT_STAMP)
 	$(info doing [$@])
@@ -367,8 +362,3 @@ $(HTMLCHECK): $(SOURCES_HTML) $(ALL_DEP)
 	$(Q)node_modules/htmlhint/bin/htmlhint $(SOURCES_HTML) > /dev/null
 	$(Q)mkdir -p $(dir $@)
 	$(Q)touch $(HTMLCHECK)
-
-$(COPY): out/web/%: out/% $(ALL_DEP)
-	$(info doing [$@])
-	$(Q)mkdir -p $(dir $@)
-	$(Q)cp -f $< $@
