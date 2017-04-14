@@ -301,7 +301,7 @@ $(OUT_DIR)/%.3.pdf: %.ly.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKO_WRAPPER) $(CONST_SONG) $(CONST_CUT) 3 $@ $<
-$(FILES_LY): $(OUT_DIR)/%.ly: %.ly.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
+$(FILES_LY): $(DOCS)/%.ly: %.ly.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKO_WRAPPER) $(CONST_SONG) $(CONST_DONTCUT) 0 $@ $<
