@@ -257,12 +257,12 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 171" }
-				\fill-line { \small "Git describe: 171-7-gdb5d41b" }
-				\fill-line { \small "Git commits: 1498" }
-				\fill-line { \small "Build date: 10:52:53 18-04-2017" }
+				\fill-line { \small "Git describe: 171-10-g6ee201a" }
+				\fill-line { \small "Git commits: 1501" }
+				\fill-line { \small "Build date: 21:28:52 21-07-2017" }
 				\fill-line { \small "Build user: mark" }
-				\fill-line { \small "Build host: gandalf" }
-				\fill-line { \small "Build kernel: Linux 4.8.0-22-lowlatency" }
+				\fill-line { \small "Build host: fermat" }
+				\fill-line { \small "Build kernel: Linux 4.10.0-26-generic" }
 				\fill-line { \small "Lilypond version: 2.18.2" }
 				\fill-line { \small "Number of tunes: 149" }
 				\null
