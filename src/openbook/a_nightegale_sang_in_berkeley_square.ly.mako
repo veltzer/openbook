@@ -10,7 +10,7 @@
 	attributes.addVersion('Fake', version)
 	attributes.setDefaultVersionName('Fake')
 
-	attributes['title']='A Nightengale Sang in Berkeley Square'
+	attributes['title']='A Nightingale Sang in Berkeley Square'
 	attributes['style']='Jazz'
 	attributes['composer']='Manning Sherwin'
 	attributes['poet']='Eric Maschwitz'
