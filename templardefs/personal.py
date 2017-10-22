@@ -1,1 +1,1 @@
-/home/mark/.details.py
+/home/mark/.config/personal.py
