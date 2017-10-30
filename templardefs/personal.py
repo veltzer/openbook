@@ -1,1 +1,0 @@
-/home/mark/.config/personal.py
