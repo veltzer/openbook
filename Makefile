@@ -1,4 +1,3 @@
-include /usr/share/templar/make/Makefile
 ##############
 # PARAMETERS #
 ##############
@@ -31,7 +30,7 @@ DO_CHECKHTML:=1
 # which books should we do?
 NAMES:=openbook israeli drumming rockbook guitar_album
 # should we do tools?
-DO_TOOLS:=1
+DO_TOOLS:=0
 
 #############
 # CONSTANTS #
