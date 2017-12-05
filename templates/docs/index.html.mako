@@ -7,7 +7,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>${config.project.project_name}</title>
-		<link rel="shortcut icon" href="../static/favicon.ico"/>
+		<link rel="shortcut icon" href="favicon.ico"/>
 		<meta name="Description" content="${config.project.project_long_description}"/>
 		<meta name="Keywords" content="${config.personal.personal_fullname}, ${config.personal.personal_slug}, ${config.project.project_name}, ${', '.join(config.project.project_keywords)}"/>
 		${config.project.project_google_analytics_snipplet}
