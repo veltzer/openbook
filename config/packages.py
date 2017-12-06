@@ -36,4 +36,3 @@ packs=[
     # npm is used for htmlhint
     'npm', # for htmlhint
 ]
-python_version_needed=(3,5)
