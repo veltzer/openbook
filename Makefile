@@ -105,17 +105,17 @@ FILES_MAKO_BASE:=$(basename $(basename $(FILES_MAKO)))
 FILES_JAZZ:=$(shell git ls-files src/openbook)
 
 FILES_MAKO_DEPS:=$(addsuffix .mako.d,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
-FILES_LY:=$(addsuffix .ly,$(addprefix $(DOCS)/,$(FILES_MAKO_BASE)))
-FILES_PDF:=$(addsuffix .pdf,$(addprefix $(DOCS)/,$(FILES_MAKO_BASE)))
-FILES_PS:=$(addsuffix .ps,$(addprefix $(DOCS)/,$(FILES_MAKO_BASE)))
+FILES_LY:=$(addsuffix .ly,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
+FILES_PDF:=$(addsuffix .pdf,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
+FILES_PS:=$(addsuffix .ps,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
 FILES_MIDI:=$(addsuffix .midi,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
 FILES_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
 FILES_WAV:=$(addsuffix .wav,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
 FILES_MP3:=$(addsuffix .mp3,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
 FILES_OGG:=$(addsuffix .ogg,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
 
-ALL_OUT_FILES:=$(shell find src -type f -and -name "*.mako")
-ALL_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(ALL_OUT_FILES))))
+# ALL_OUT_FILES:=$(shell find src -type f -and -name "*.mako")
+# ALL_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(ALL_OUT_FILES))))
 
 OUT_LY:=$(addsuffix .ly,$(addprefix $(DOCS)/,$(NAMES)))
 OUT_PS:=$(addsuffix .ps,$(addprefix $(DOCS)/,$(NAMES)))
@@ -173,8 +173,8 @@ $(TOOLS): templardefs/deps.py
 	$(Q)templar install_deps
 	$(Q)make_helper touch-mkdir $@
 
-.PHONY: debug_me
-debug_me:
+.PHONY: debug
+debug:
 	$(info doing [$@])
 	$(info ALL is $(ALL))
 	$(info SOURCES_ALL is $(SOURCES_ALL))
@@ -278,7 +278,7 @@ $(FILES_MIDI): %.midi: %.stamp $(ALL_DEP)
 	$(info doing [$@])
 
 # this is the real rule
-$(FILES_STAMP): $(OUT_DIR)/%.stamp: $(DOCS)/%.ly $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
+$(FILES_STAMP): $(OUT_DIR)/%.stamp: $(OUT_DIR)/%.ly $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(LILYPOND_WRAPPER) $(dir $@)$(basename $(notdir $@)).ps $(dir $@)$(basename $(notdir $@)).pdf $(dir $@)$(basename $(notdir $@)) $<
@@ -300,7 +300,7 @@ $(OUT_DIR)/%.3.pdf: %.ly.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKO_WRAPPER) $(CONST_SONG) $(CONST_CUT) 3 $@ $<
-$(FILES_LY): $(DOCS)/%.ly: %.ly.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
+$(FILES_LY): $(OUT_DIR)/%.ly: %.ly.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKO_WRAPPER) $(CONST_SONG) $(CONST_DONTCUT) 0 $@ $<
@@ -352,7 +352,7 @@ dropbox: $(OUT_PDF) $(ALL_DEP)
 	$(Q)cp $(OUT_PDF) ~/Dropbox/outputs/$(tdefs.project_name)
 
 .PHONY: all_tunes
-all_tunes: $(ALL_OUT_STAMP)
+all_tunes: $(FILES_STAMP)
 	$(info doing [$@])
 
 $(HTMLCHECK): $(SOURCES_HTML) $(ALL_DEP)
