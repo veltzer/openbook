@@ -13,6 +13,11 @@ install_requires = [
 
 dev_requires = [
     'pydmt',
+    'pytconf',
+    'python-dateutil',
+    'tqdm',
+    'PyMySQL',
+    'mako',
 ]
 
 python_requires = ">=3"

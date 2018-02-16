@@ -1,7 +1,7 @@
 <%page args='part'/>
 % if part=='Vars':
 <%
-	import attr
+	import scripts.attr
 	version=attr.Version()
 	version['doOwn']=True
 	attributes.addVersion('Own', version)

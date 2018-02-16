@@ -1,18 +1,18 @@
-import config.openbook
-import config.general
 import datetime
+import config.general
 
-project_github_username='veltzer'
-project_name='openbook'
-project_website='https://{project_github_username}.github.io/{project_name}'.format(**locals())
-project_website_source='https://github.com/{project_github_username}/{project_name}'.format(**locals())
-project_website_git='git://github.com/{project_github_username}/{project_name}.git'.format(**locals())
-project_paypal_donate_button_id='ASPRXR59H2NTQ'
-project_google_analytics_tracking_id='UA-56436979-1'
-project_long_description='OpenBook is an open source Jazz real book'
+
+project_github_username = 'veltzer'
+project_name = 'openbook'
+project_website = 'https://{project_github_username}.github.io/{project_name}'.format(**locals())
+project_website_source = 'https://github.com/{project_github_username}/{project_name}'.format(**locals())
+project_website_git = 'git://github.com/{project_github_username}/{project_name}.git'.format(**locals())
+project_paypal_donate_button_id = 'ASPRXR59H2NTQ'
+project_google_analytics_tracking_id = 'UA-56436979-1'
+project_long_description = 'OpenBook is an open source Jazz real book'
 # keywords to put on html pages or for search, dont put the name of the project or my details
 # as they will be added automatically...
-project_keywords=[
+project_keywords = [
     'jazz',
     'Real book',
     'realbook',
@@ -23,11 +23,12 @@ project_keywords=[
     'sheet music',
     'open source',
 ]
-project_license='GPLV3'
-project_year_started='2009'
-project_description='''What is OpenBook?
+project_license = 'GPLV3'
+project_year_started = '2009'
+project_description = '''What is OpenBook?
 ------------------
-OpenBook is a Jazz real book constructed with free software. A real book simply means a big book with lots of Jazz tunes or standards as they are more widely known.
+OpenBook is a Jazz real book constructed with free software. A real book simply means a big book with lots of\
+Jazz tunes or standards as they are more widely known.
 
 Where is the projects website?
 -------------------------------
@@ -91,20 +92,24 @@ Check out the PDFs and other outputs in {project_website}.
 
 Why is there so little documentation?
 --------------------------------------
-I just started this project (4 years all in all). Feel free to add stuff and request a pull. If you contribute a lot I will make you an admin...
+I just started this project (4 years all in all). Feel free to add stuff and request a pull.\ If you contribute a lot
+I will make you an admin...
 
 How do you write the standards?
 --------------------------------
-Using lilypond. Check it out at: http://www.lilypond.org/. We use version {config.openbook.lilypond_version}.
+Using lilypond. Check it out at: http://www.lilypond.org/.
 
 Will you co-operate with the lilypond, mutopia and wikifonia communities?
 --------------------------------------------------------------------------
-YES! Any bugs or feature suggestion are submitted to the lilypond community. Any requests for pieces from the mutopia community will be respected.
-Wikifonia uses musicXML for typesetting while I use an essentially lilypond format as input format - so there could not be much co-operation there.
+YES! Any bugs or feature suggestion are submitted to the lilypond community. Any requests for pieces from the \
+mutopia community will be respected.
+Wikifonia uses musicXML for typesetting while I use an essentially lilypond format as input format - so there could \
+not be much co-operation there.
 
 Do you only allow Jazz tunes?
 ------------------------------
-No. Rock and Pop will be welcome and so would classical. If you are really into classical lilypond production you may alternativly wish to contribute to the mutopia project at http://www.mutopiaproject.org/.
+No. Rock and Pop will be welcome and so would classical. If you are really into classical lilypond production you \
+may alternativly wish to contribute to the mutopia project at http://www.mutopiaproject.org/.
 
 How do I build the pdfs?
 ------------------------
@@ -156,7 +161,6 @@ if str(config.general.general_current_year) == project_year_started:
 else:
     project_copyright_years = '{0}-{1}'.format(project_year_started, config.general.general_current_year)
 # project_data_files.append(templar.utils.hlp_files_under('/usr/bin', 'src/*'))
-project_google_analytics_tracking_id = "0"
 project_google_analytics_snipplet = '''<script type="text/javascript">
 (function(i,s,o,g,r,a,m){{i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){{
 (i[r].q=i[r].q||[]).push(arguments)}},i[r].l=1*new Date();a=s.createElement(o),
@@ -168,7 +172,6 @@ ga('send', 'pageview');
 
 </script>'''.format(project_google_analytics_tracking_id)
 
-project_paypal_donate_button_id = "0"
 project_paypal_donate_button_snipplet = '''<form action="https://www.paypal.com/cgi-bin/webscr"
     method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">

@@ -2,7 +2,7 @@
 % if part=='Vars':
 <%
 	# vim: set filetype=lilypond :
-	import attr
+	import scripts.attr
 	version=attr.Version()
 	version['doGuitar']=True
 	version['doOwn']=True
@@ -36,7 +36,7 @@
 		(currently they reside above the lyrics which is weird).
 % endif
 
-<%namespace name="defs" file="/include/defs.ly.mako"/>
+<%namespace name="defs" file="../../include/defs.ly.mako"/>
 
 % if part=='Own':
 %% all of the parts are taken from the notes I have of Bill Joel

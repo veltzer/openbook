@@ -2,8 +2,9 @@
     import config.project
     import config.personal
     import config.git
+    line = "=" * len(config.project.project_name)
 %>${config.project.project_name}
-${'=' * len(config.project.project_name)}
+${line}
 
 version: ${config.git.git_last_tag}
 

@@ -2,7 +2,7 @@
 % if part=='Vars':
 <%
 	# vim: set filetype=lilypond :
-	import attr
+	import scripts.attr
 	version=attr.Version()
 	version['doChords']=True
 	attributes.addVersion('My', version)

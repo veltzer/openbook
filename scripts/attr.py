@@ -1,15 +1,15 @@
-'''
+"""
 This is the attributes object to be used in every tune
 to fill in the tunes meta data.
 It should do as much validation as is possible to enforce
 good meta data by tune authors
-'''
+"""
 
-import os.path # for join, isfile
-import subprocess # for check_call, DEVNULL
-import shutil # for copy
+import os.path  # for join, isfile
+import subprocess  # for check_call, DEVNULL
+import shutil  # for copy
 
-order=[
+order = [
     'doChords',
     'doVoice',
     'doLyrics',
@@ -62,7 +62,7 @@ order=[
     'wiki',
 ]
 
-books_translation={
+books_translation = {
     'cc': 'Colorado Cookbook',
     'cfb': 'Cuban Fake Book',
     'fj': 'Fake Jazz - The World\'s Greatest Fake Book',
@@ -77,9 +77,9 @@ books_translation={
     'nrbk1': 'newreal1',
     'nrbk2': 'newreal2',
     'nrbk3': 'newreal3',
-    'nrbk1': 'New Real Book Vol 1',
-    'nrbk2': 'New Real Book Vol 2',
-    'nrbk3': 'New Real Book Vol 3',
+    'nnrbk1': 'New Real Book Vol 1',
+    'nnrbk2': 'New Real Book Vol 2',
+    'nnrbk3': 'New Real Book Vol 3',
     'rebk1': 'Real Easy Book Vol 1',
     'tbk': 'The Book',
     'tolmfb': 'The Original Legal Musician Fake Book',
@@ -100,7 +100,7 @@ books_translation={
     'gt': 'Guitar - 557 Standards',
 }
 
-books_offsets={
+books_offsets = {
     'jfb': -1,
     'rbk1': 13,
     'rbk2': 7,
@@ -111,135 +111,151 @@ books_offsets={
     'tbk': 11,
 }
 
-books_dont_have=set([
-    'ja54',
-])
+books_dont_have = {'ja54'}
 
-doCheckLocation=False
+doCheckLocation = False
 
 # where are all the fake books?
-folder='/home/mark/links/topics_archive/music_education/jazz/collections'
+folder = '/home/mark/links/topics_archive/music_education/jazz/collections'
+
 
 def check_int(val):
     if not val.isdigit():
         raise ValueError('what kind of page number is', val)
 
+
 def check_have_file(filename):
-    full=os.path.join(folder, filename)
+    full = os.path.join(folder, filename)
     if not os.path.isfile(full):
         raise ValueError('do not have file', full)
 
+
 def check_location(val):
-    parts=val.split(',')
+    parts = val.split(',')
     for part in parts:
-        (bk, pages)=part.split(':')
-        if bk=='file':
-            filename=pages
+        (bk, pages) = part.split(':')
+        if bk == 'file':
+            filename = pages
             check_have_file(filename)
         else:
-            if not bk in books_translation:
+            if bk not in books_translation:
                 raise ValueError('what kind of value is', val)
-            if not bk in books_dont_have:
-                filename=books_translation[bk]+'.pdf'
+            if bk not in books_dont_have:
+                filename = books_translation[bk] + '.pdf'
                 check_have_file(filename)
             if '-' in pages:
-                (pg_from, pg_to)=pages.split('-')
+                (pg_from, pg_to) = pages.split('-')
                 check_int(pg_from)
                 check_int(pg_to)
             else:
                 check_int(pages)
+
 
 class Version(dict):
     def __init__(self):
         super().__init__()
-        self['doChords']=False
-        self['doVoice']=False
-        self['doLyrics']=False
-        self['doLyricsmore']=False
-        self['doLyricsmoremore']=False
-        self['doChordBars']=False
-        self['doGuitar']=False
-        self['doExtra']=False
-        self['doPrep']=False
-        self['doOwn']=False
+        self['doChords'] = False
+        self['doVoice'] = False
+        self['doLyrics'] = False
+        self['doLyricsmore'] = False
+        self['doLyricsmoremore'] = False
+        self['doChordBars'] = False
+        self['doGuitar'] = False
+        self['doExtra'] = False
+        self['doPrep'] = False
+        self['doOwn'] = False
+
 
 class Attributes(dict):
     def postinit(self):
-        self.pos=-1
-        self.versions=dict()
-        self.defaultVersionName=None
+        self.pos = -1
+        self.versions = dict()
+        self.defaultVersionName = None
+
     def __init__(self):
         super().__init__()
         self.postinit()
+        self.pos = None
+        self.versions = None
+        self.defaultVersionName = None
+
     def __setitem__(self, key, val):
-        newpos=order.index(key)
-        if newpos<=self.pos:
+        newpos = order.index(key)
+        if newpos <= self.pos:
             raise ValueError('incorrect order of assignment', key, self['title'], self.pos, newpos)
-        if key=='location' and doCheckLocation:
+        if key == 'location' and doCheckLocation:
             check_location(val)
-        self.pos=newpos
+        self.pos = newpos
         super().__setitem__(key, val)
+
     def reset(self):
         self.clear()
         self.postinit()
+
     def cut(self, p_cutnum, p_output):
-        val=self['location']
-        if val=='':
+        val = self['location']
+        if val == '':
             raise ValueError('have no location information')
-        parts=val.split(',')
-        if p_cutnum<0 or p_cutnum>=len(parts):
+        parts = val.split(',')
+        if p_cutnum < 0 or p_cutnum >= len(parts):
             raise ValueError('location out of range')
-        part=parts[p_cutnum]
-        (bk, pages)=part.split(':')
-        if bk=='file':
-            filename=pages
-            full=os.path.join(folder, filename)
+        part = parts[p_cutnum]
+        (bk, pages) = part.split(':')
+        if bk == 'file':
+            filename = pages
+            full = os.path.join(folder, filename)
             shutil.copy(full, p_output)
         else:
-            if not bk in books_translation:
+            if bk not in books_translation:
                 raise ValueError('what kind of value is', val)
             if bk in books_dont_have:
                 raise ValueError('dont have the book', bk)
-            filename=books_translation[bk]+'.pdf'
-            full=os.path.join(folder, filename)
+            filename = books_translation[bk] + '.pdf'
+            full = os.path.join(folder, filename)
             if not os.path.isfile(full):
                 raise ValueError('dont have file', full)
             if '-' in pages:
-                (pg_from, pg_to)=pages.split('-')
+                (pg_from, pg_to) = pages.split('-')
                 check_int(pg_from)
                 check_int(pg_to)
             else:
                 check_int(pages)
-                pg_from=pages
-                pg_to=pages
-            pg_from=int(pg_from)
-            pg_to=int(pg_to)
+                pg_from = pages
+                pg_to = pages
+            pg_from = int(pg_from)
+            pg_to = int(pg_to)
             # apply offsets to page numbers
             if bk in books_offsets:
-                pg_from+=books_offsets[bk]
-                pg_to+=books_offsets[bk]
+                pg_from += books_offsets[bk]
+                pg_to += books_offsets[bk]
             cut_pdf(full, pg_from, pg_to, p_output)
+
     def addVersion(self, name, version):
-        self.versions[name]=version
+        self.versions[name] = version
+
     def setDefaultVersionName(self, name):
-        self.defaultVersionName=name
+        self.defaultVersionName = name
+
     def getDefaultVersionName(self):
         return self.defaultVersionName
+
     def getDefaultVersion(self):
         return self.versions[self.defaultVersionName]
+
     def getWorkingVersion(self):
         return self.versions[self.defaultVersionName]
 
+
 def cut_pdf(source_pdf, pg_from, pg_to, output_pdf):
-    args=[
+    args = [
         'gs',
         '-sDEVICE=pdfwrite',
         '-dNOPAUSE',
         '-dBATCH',
         '-dSAFER',
-        '-dFirstPage='+str(pg_from),
-        '-dLastPage='+str(pg_to),
-        '-sOutputFile='+output_pdf,
+        '-dFirstPage=' + str(pg_from),
+        '-dLastPage=' + str(pg_to),
+        '-sOutputFile=' + output_pdf,
         source_pdf,
     ]
     subprocess.check_call(args, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)

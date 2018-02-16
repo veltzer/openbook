@@ -1,7 +1,7 @@
 <%page args='part'/>
 % if part=='Vars':
 <%
-	import attr
+	import scripts.attr
 	version=attr.Version()
 	version['doChords']=True
 	version['doVoice']=True
@@ -30,7 +30,7 @@
 	- add lyrics and melody.
 % endif
 
-<%namespace name="defs" file="/include/defs.ly.mako"/>
+<%namespace name="defs" file="../../include/defs.ly.mako"/>
 
 % if part=='ChordsEpdf0':
 \chordmode {

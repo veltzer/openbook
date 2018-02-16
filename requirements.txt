@@ -1,3 +1,8 @@
 # THIS IS AN AUTO-GENERATED FILE. DO NOT EDIT!
 # dev requirements
 pydmt
+pytconf
+python-dateutil
+tqdm
+PyMySQL
+mako

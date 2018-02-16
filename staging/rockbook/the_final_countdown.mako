@@ -2,7 +2,7 @@
 % if part=='Vars':
 <%
 	# vim: set filetype=lilypond :
-	import attr
+	import scripts.attr
 	version=attr.Version()
 	version['doGuitar']=True
 	version['doOwn']=True
@@ -36,7 +36,7 @@
 	- document the youtube performance.
 % endif
 
-<%namespace name='defs' file='/include/defs.ly.mako'/>
+<%namespace name='defs' file='../../include/defs.ly.mako'/>
 
 <%def name='chords()'>
 	\chordmode {

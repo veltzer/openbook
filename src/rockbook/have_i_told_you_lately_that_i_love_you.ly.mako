@@ -1,7 +1,7 @@
 <%page args='part'/>
 % if part=='Vars':
 <%
-	import attr
+	import scripts.attr
 	version=attr.Version()
 	version['doChords']=True
 	version['doVoice']=True
@@ -27,7 +27,7 @@
 	- document what was done in this song.
 % endif
 
-<%namespace name="defs" file="/include/defs.ly.mako"/>
+<%namespace name="defs" file="../../include/defs.ly.mako"/>
 
 % if part=='ChordsMy':
 \chordmode {

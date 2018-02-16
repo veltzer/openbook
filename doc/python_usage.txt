@@ -1,13 +1,12 @@
 This document deals with which python version we use in openbook and why
 
+We use python through virtual env and so all script can have
+	#!/usr/bin/env python
+and not
+	#!/usr/bin/python3
+
 We currently use python3
 Specifially I use 3.5.2 on my machine but that is a technicality.
 
 Why? 3 is better than 2 and and the 3 branch is mature stable and full of
 stuff we want. 
-
-Do we wish to enforce our selected version of python on the user?
-- At the shbang line we dont. That is why the shbang lines are #!/usr/bin/python3
-- We used to enforce by 'import check_version' which was a module that checked
-the version in every script and I removed that. There is no reason to rely on
-a specific version of python so this was removed.
