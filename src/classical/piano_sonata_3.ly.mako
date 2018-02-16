@@ -1,7 +1,7 @@
 <%page args='part'/>
 % if part=='Vars':
 <%
-	import scripts.attr
+	from scripts import attr
 	version=attr.Version()
 	version['doVoice']=True
 	attributes.addVersion('Epdf0', version)

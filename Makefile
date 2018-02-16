@@ -44,12 +44,17 @@ OUT_DIR:=out
 # where is the common file?
 COMMON:=include/common.ly.mako
 # wrappers
-LILYPOND_WRAPPER:=scripts/wrapper_lilypond.py
-MAKO_WRAPPER:=scripts/wrapper_mako.py
+LILYPOND_WRAPPER:=python -m scripts.wrapper_lilypond
+LILYPOND_WRAPPER_DEP:=scripts/wrapper_lilypond.py
+MAKO_WRAPPER:=python -m scripts.wrapper_mako
+MAKO_WRAPPER_DEP:=scripts/wrapper_mako.py
 MAKO_DEPS_WRAPPER:=scripts/mako_deps.py
 MIDI2WAV_WRAPPER:=scripts/midi2wav.pl
+MIDI2WAV_WRAPPER_DEP:=scripts/midi2wav.pl
 MIDI2OGG_WRAPPER:=scripts/midi2ogg.pl
+MIDI2OGG_WRAPPER_DEP:=scripts/midi2ogg.pl
 MIDI2MP3_WRAPPER:=scripts/midi2mp3.pl
+MIDI2MP3_WRAPPER_DEP:=scripts/midi2mp3.pl
 # parameters to pass to the mako wrapper
 CONST_BOOK:=1
 CONST_SONG:=0
@@ -62,14 +67,7 @@ GITARGS:=--no-pager
 # code #
 ########
 
-ifeq ($(DO_WRAPDEPS),1)
-	LILYPOND_WRAPPER_DEP:=$(LILYPOND_WRAPPER)
-	MAKO_WRAPPER_DEP:=$(MAKO_WRAPPER)
-	MAKO_DEPS_WRAPPER_DEP:=$(MAKO_DEPS_WRAPPER)
-	MIDI2WAV_WRAPPER_DEP:=$(MIDI2WAV_WRAPPER)
-	MIDI2OGG_WRAPPER_DEP:=$(MIDI2OGG_WRAPPER)
-	MIDI2MP3_WRAPPER_DEP:=$(MIDI2MP3_WRAPPER)
-else
+ifeq ($(DO_WRAPDEPS),0)
 	LILYPOND_WRAPPER_DEP:=
 	BOOK_WRAPPER_DEP:=
 	MAKO_WRAPPER_DEP:=
@@ -281,7 +279,7 @@ $(FILES_MIDI): %.midi: %.stamp $(ALL_DEP)
 $(FILES_STAMP): $(OUT_DIR)/%.stamp: $(OUT_DIR)/%.ly $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
-	$(Q)$(LILYPOND_WRAPPER) $(dir $@)$(basename $(notdir $@)).ps $(dir $@)$(basename $(notdir $@)).pdf $(dir $@)$(basename $(notdir $@)) $<
+	$(Q)$(LILYPOND_WRAPPER) run --ps $(dir $@)$(basename $(notdir $@)).ps --pdf $(dir $@)$(basename $(notdir $@)).pdf --out $(dir $@)$(basename $(notdir $@)) --ly $<
 	$(Q)touch $@
 
 $(OUT_DIR)/%.0.pdf: %.ly.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
@@ -328,7 +326,7 @@ TMPL_PDF_$(1):=$$(DOCS)/$(1).pdf
 TMPL_PREREQ_$(1):=$(shell git ls-files src/$(1))
 $$(TMPL_PDF_$(1)): $$(TMPL_LY_$(1)) $$(LILYPOND_WRAPPER_DEP) $$(ALL_DEP)
 	$$(info doing [$$@])
-	$$(Q)$$(LILYPOND_WRAPPER) $$(TMPL_PS_$(1)) $$(TMPL_PDF_$(1)) $$(DOCS) $$<
+	$$(Q)$$(LILYPOND_WRAPPER) run --ps $$(TMPL_PS_$(1)) --pdf $$(TMPL_PDF_$(1)) --out $$(DOCS) --ly $$<
 $$(TMPL_LY_$(1)): $$(TMPL_PREREQ_$(1)) $$(MAKO_WRAPPER_DEP) $$(COMMON) $$(ALL_DEP)
 	$$(info doing [$$@])
 	$$(Q)mkdir -p $$(dir $$@)
