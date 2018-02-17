@@ -94,7 +94,7 @@ How do I build the pdfs?
 * clone the repository ```$ git clone git://github.com/veltzer/openbook.git```
 * cd into the newly created folder ```$ cd openbook```
 * create a python virtual environment ```$ virtualenv --python=/usr/bin/python3 .venv```
-* activate the virutal env ```$ ./.venv/bin/activate```
+* activate the virutal env ```$ source .venv/bin/activate```
 * install the python prerequisites ```$ pip install -r requirements.txt```
 * run the build process ```$ make```
 * the pdfs should built and you will find them in the 'docs' folder.
