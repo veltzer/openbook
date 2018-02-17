@@ -48,7 +48,7 @@ used by Jazz musicians both for practice and for performance.
 
 What tools are used?
 ---------------------
-lilypond, make, python, mako, lame, timidity and possibly more.
+lilypond, make, python, virtualenv, qpdf, ghostscript, mako, lame, timidity and more.
 
 What is produced?
 ------------------
