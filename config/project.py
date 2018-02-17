@@ -122,7 +122,8 @@ How do I build the pdfs?
 * activate the virutal env ```$ source .venv/bin/activate```
 * install the python prerequisites ```$ pip install -r requirements.txt```
 * run the build process ```$ make```
-* the pdfs should built and you will find them in the 'docs' folder.
+* the pdfs should now be built and you will find them in the 'docs' folder.
+* if you want to build all the tunes individually then run ```$ make all_tunes```
 
 How do I contribute?
 --------------------
