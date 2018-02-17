@@ -4,6 +4,7 @@ import config.general
 
 project_github_username = 'veltzer'
 project_name = 'openbook'
+project_top_folder = project_name
 project_website = 'https://{project_github_username}.github.io/{project_name}'.format(**locals())
 project_website_source = 'https://github.com/{project_github_username}/{project_name}'.format(**locals())
 project_website_git = 'git://github.com/{project_github_username}/{project_name}.git'.format(**locals())
@@ -113,11 +114,15 @@ may alternativly wish to contribute to the mutopia project at http://www.mutopia
 
 How do I build the pdfs?
 ------------------------
-* git checkout -b [your branch name] {project_website_git}
-* install templar which is my own package that facilitates the build.
-* templar is here: https://launchpad.net/~mark-veltzer
-* issue $ make.
-* the pdfs should build and you will find them in the 'out' folder.
+
+* you need tools installed. on Ubuntu ```$ sudo apt install python3 virtualenv lilypond qpdf ghostscript```
+* clone the repository ```$ git clone {project_website_git}```
+* cd into the newly created folder ```$ cd {project_top_folder}```
+* create a python virtual environment ```$ virtualenv --python=/usr/bin/python3 .venv```
+* activate the virutal env ```$ ./.venv/bin/activate```
+* install the python prerequisites ```$ pip install -r requirements.txt```
+* run the build process ```$ make```
+* the pdfs should built and you will find them in the 'docs' folder.
 
 How do I contribute?
 --------------------

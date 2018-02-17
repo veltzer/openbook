@@ -7,7 +7,7 @@ OpenBook is an open source Jazz real book
 
 What is OpenBook?
 ------------------
-OpenBook is a Jazz real book constructed with free software. A real book simply means a big book with lots of Jazz tunes or standards as they are more widely known.
+OpenBook is a Jazz real book constructed with free software. A real book simply means a big book with lots ofJazz tunes or standards as they are more widely known.
 
 Where is the projects website?
 -------------------------------
@@ -71,11 +71,12 @@ Check out the PDFs and other outputs in https://veltzer.github.io/openbook.
 
 Why is there so little documentation?
 --------------------------------------
-I just started this project (4 years all in all). Feel free to add stuff and request a pull. If you contribute a lot I will make you an admin...
+I just started this project (4 years all in all). Feel free to add stuff and request a pull.\ If you contribute a lot
+I will make you an admin...
 
 How do you write the standards?
 --------------------------------
-Using lilypond. Check it out at: http://www.lilypond.org/. We use version 2.18.2.
+Using lilypond. Check it out at: http://www.lilypond.org/.
 
 Will you co-operate with the lilypond, mutopia and wikifonia communities?
 --------------------------------------------------------------------------
@@ -88,11 +89,15 @@ No. Rock and Pop will be welcome and so would classical. If you are really into 
 
 How do I build the pdfs?
 ------------------------
-* git checkout -b [your branch name] git://github.com/veltzer/openbook.git
-* install templar which is my own package that facilitates the build.
-* templar is here: https://launchpad.net/~mark-veltzer
-* issue $ make.
-* the pdfs should build and you will find them in the 'out' folder.
+
+* you need tools installed. on Ubuntu ```$ sudo apt install python3 virtualenv lilypond qpdf ghostscript```
+* clone the repository ```$ git clone git://github.com/veltzer/openbook.git```
+* cd into the newly created folder ```$ cd openbook```
+* create a python virtual environment ```$ virtualenv --python=/usr/bin/python3 .venv```
+* activate the virutal env ```$ ./.venv/bin/activate```
+* install the python prerequisites ```$ pip install -r requirements.txt```
+* run the build process ```$ make```
+* the pdfs should built and you will find them in the 'docs' folder.
 
 How do I contribute?
 --------------------
