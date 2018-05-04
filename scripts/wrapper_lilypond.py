@@ -22,8 +22,7 @@ import shutil
 import tempfile
 from typing import List
 
-from pytconf.config import Config, create_bool, create_enum, create_new_file, create_str, create_existing_file, \
-    config_arg_parse_and_launch, register_endpoint, register_main
+from pytconf.config import Config, ParamCreator, config_arg_parse_and_launch, register_endpoint, register_main
 from pytconf.extended_enum import ExtendedEnum
 
 
@@ -87,26 +86,29 @@ class ConfigAll(Config):
     """
     All parameters for the run
     """
-    do_ps = create_bool(default=True, help_string="do postscript?")
-    do_pdf = create_bool(default=True, help_string="do pdf?")
-    do_debug = create_bool(default=False, help_string="emit debug info?")
-    unlink_ps = create_bool(default=False, help_string="unlink the postscript file at the end?")
-    do_qpdf = create_bool(default=True, help_string="do you want to linearize the pdf file afterwards?")
+    do_ps = ParamCreator.create_bool(default=True, help_string="do postscript?")
+    do_pdf = ParamCreator.create_bool(default=True, help_string="do pdf?")
+    do_debug = ParamCreator.create_bool(default=False, help_string="emit debug info?")
+    unlink_ps = ParamCreator.create_bool(default=False, help_string="unlink the postscript file at the end?")
+    do_qpdf = ParamCreator.create_bool(default=True, help_string="do you want to linearize the pdf file afterwards?")
     # we should work with warnings and try and solve all of them
-    loglevel = create_enum(
+    loglevel = ParamCreator.create_enum(
         enum_type=LilypondLogLevels,
         default=LilypondLogLevels.WARNING,
         help_string="what warning level do you want?",
     )
-    do_pdfred = create_bool(default=False, help_string="should we reduce the pdf size?")
+    do_pdfred = ParamCreator.create_bool(default=False, help_string="should we reduce the pdf size?")
     # this should be set to True
-    stop_on_output = create_bool(default=True, help_string="should we stop on any output from the lilypond process?")
+    stop_on_output = ParamCreator.create_bool(
+        default=True,
+        help_string="should we stop on any output from the lilypond process?",
+    )
 
     # parameters without defaults (should be supplied by the user on the command line)
-    ps = create_new_file(help_string="postscript to produce")
-    pdf = create_new_file(help_string="pdf to produce")
-    out = create_str(help_string="pdf without suffix")
-    ly = create_existing_file(help_string="lilypond input")
+    ps = ParamCreator.create_new_file(help_string="postscript to produce")
+    pdf = ParamCreator.create_new_file(help_string="pdf to produce")
+    out = ParamCreator.create_str(help_string="pdf without suffix")
+    ly = ParamCreator.create_existing_file(help_string="lilypond input")
 
 
 @register_endpoint(
