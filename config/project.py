@@ -1,5 +1,6 @@
 import datetime
 import config.general
+import config.openbook
 
 
 project_github_username = 'veltzer'
@@ -116,6 +117,7 @@ How do I build the pdfs?
 ------------------------
 
 * you need tools installed. on Ubuntu ```$ sudo apt install python3 virtualenv lilypond qpdf ghostscript```
+* make sure you install lilypond version {config.openbook.lilypond_version}. This project is based on this version.
 * clone the repository ```$ git clone {project_website_git}```
 * cd into the newly created folder ```$ cd {project_top_folder}```
 * create a python virtual environment ```$ virtualenv --python=/usr/bin/python3 .venv```
@@ -134,8 +136,8 @@ How do I contribute?
 * send me a pull request (button in the github ui).
 
 Can I just add a single tune?
-------------------------------
-Yes. To add a tune named "yourtune" just a single file named
+-----------------------------
+Yes. To add a tune named "yourtune" just add single file named
 
         src/openbook/yourtune.ly.mako
 Yes, the extension should be .mako since I use mako for templating.
@@ -148,9 +150,20 @@ or
 
         make out/src/openbook/yourtune.midi
 or
-
         make out/src/openbook/yourtune.stamp
 to get both pdf and midi.
+
+Can I just build a single tune?
+-------------------------------
+Yes.
+        make out/src/openbook/[tune_name].pdf
+        make out/src/openbook/[tune_name].midi
+        make out/src/openbook/[tune_name].stamp
+
+What about MusicXML?
+--------------------
+Sorry, this project is lilypond based. Patches for MusicXML will be welcome but I don't
+see how they will fit into this project.
 
 Can I send corrections to the tunes without learning lilypond and all the rest of the stuff?
 --------------------------------------------------------------------------------------------
