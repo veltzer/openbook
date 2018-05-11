@@ -257,14 +257,14 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 171" }
-				\fill-line { \small "Git describe: 171-36-g6d92454" }
-				\fill-line { \small "Git commits: 1527" }
-				\fill-line { \small "Build date: 13:14:22 11-05-2018" }
+				\fill-line { \small "Git describe: 171-37-ga96ebf9" }
+				\fill-line { \small "Git commits: 1528" }
+				\fill-line { \small "Build date: 13:38:11 11-05-2018" }
 				\fill-line { \small "Build user: mark" }
 				\fill-line { \small "Build host: fermat" }
 				\fill-line { \small "Build kernel: Linux 4.15.0-20-generic" }
 				\fill-line { \small "Lilypond version: 2.18.2" }
-				\fill-line { \small "Number of tunes: 149" }
+				\fill-line { \small "Number of tunes: 150" }
 				\null
 				\null
 				\null
@@ -4988,6 +4988,181 @@ endChords={}
 	}
 	\fill-line {
 		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+	}
+}
+
+
+
+}
+
+
+% include anything the user wants before the bookpart starts
+
+
+
+
+
+
+\bookpart {
+
+% this causes the variables to be defined...
+
+
+
+
+
+
+
+
+
+
+
+% now play with the variables that depend on language
+
+
+
+% calculate the tag line
+
+
+% calculate the typesetby
+
+
+
+
+\tocItem \markup "Billie's Bounce / Charlie Parker"
+
+
+
+
+
+% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
+\markup {
+	\column {
+		\override #'(baseline-skip . 3.5)
+		\column {
+			\huge \larger \bold
+			\fill-line { \larger "Billie's Bounce" }
+			\fill-line {
+				""
+				"Music by Charlie Parker"
+			}
+			\fill-line {
+				"Blues"
+				""
+			}
+		}
+	}
+}
+\noPageBreak
+
+
+% include the preparatory stuff, if there is any
+
+% calculate the vars
+
+
+
+% score for printing
+\score {
+	<<
+\new ChordNames="Chords"
+	\with {
+		\remove "Bar_engraver"
+	}
+	
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\partial 8 c8:7 |
+	\myMark "A"
+	\startPart
+	   f1:7 | bes2:7 b2:dim| f1:7 | \myEndLine
+	   f1:7 | bes1:7 | bes1:7 | f1:7 | \myEndLine
+	   a2:m d2:7 | g1:m | c1:7 | f2:7 d2:7 | \myEndLine
+	   g2:m c2:7 |
+	\endPart
+
+	\myMark "B"
+	\startPart
+	   f1:7 | f1:7 | \myEndLine
+	   f1:7 | c2:m f2:7 | bes1:7 | \myEndLine
+	   bes1:7 | f1:7 | a2:m d2:7 |  \myEndLine
+	   g1:m | c1:7 | f1:7| \myEndLine
+	   c1:7 |
+	\endPart
+
+	\endSong
+	\endChords
+}
+
+
+% this thing will only engrave voltas. This is required to put the volta under the chords.
+% No great harm will happen if you don't put it, only the voltas will be above the chords.
+%\new Staff \with {
+%	\consists "Volta_engraver"
+%}
+\new Staff="Melody" {
+\new Voice="Voice"
+	\relative c' 
+
+
+
+{
+	\tempo "Allegro" 4 = 130
+	\time 4/4
+	\key c \major
+
+	\partial 8 c8 |
+%% part "A"
+	\repeat volta 2 {
+
+	   b8 c8 f8 gis8 a8 f8 d8 f8~|f8 d8 f8 r8 r8 f4 d8 |
+	   f8 r8 r8 f8~ f8 d8 f8 d8 | \myEndLine
+	   as'8 a8 \tuplet 3/2 { f16 g16 f16 } d8 f8 g8 f8 f8 |
+	   r4 r8 a8 bes8 f8 r8 as8~ |
+	   as8 bes8~bes4 es8 c8 f8 es8 | r8 f8 c4 r4 r8 e8~ |
+	   e4 g,8 e8 fis8 es'8 c8 cis8 |
+	   d4 r8 g8 \tuplet 3/2 {fis16 g16 fis16} d8 bes8 f8 |
+	   f'4 r8 f8 e8 e8 d8 d8 |
+	   c4 r8 f,8~f8 d8 f4|
+	   r8 f4~f8 d8 f4 c8|
+	}
+
+	f4 g8 gis8 s4 ais8 b8 |
+	c8 a8 \tuplet 3/2 {bes8 c8 bes8 } a8 f8 d8 c8 |\myEndLine
+%%
+	\tuplet 3/2 {g'16 a16 g16} f8 es8 f8~ f4 r4 | r2 r4 r8 f'8~ |
+	f8 c16 bes16 as8 f8 g8 f8 es8 d8 | \myEndLine
+%%
+	c4 bes8 f8 gis8 a8 bes8 b8 | c8 d16 c16 a8 c8 e8 d8~d4 |
+	r1 | \myEndLine
+	r4 r8 \tuplet 3/2 {g16 bes16 d16} f8 e8 d8 des8 |
+	c8 a8 bes8 c16 bes16 a8 f8 d8 c8 | g'8 f8 g8( a8)~a4 r4 | \myEndLine
+%%
+	r1-\markup {\abs-fontsize #14 {(Last 12 Bars are transcribed from Charlie Parker Solo - The Savoy Recordings)}}
+	|
+	\myEndLine
+}
+
+}
+	>>
+	\layout {
+	}
+}
+
+
+\noPageBreak
+\markup \column {
+%% just a little space
+	\null
+	\fill-line {
+		\smaller \smaller { "-- help me fill it out this copyright notice --" }
+	}
+	\fill-line {
+		\smaller \smaller { "Typeset by Micha Dienert <mdienert@t-online.de>" }
 	}
 }
 
