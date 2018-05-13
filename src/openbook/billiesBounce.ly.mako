@@ -19,7 +19,7 @@
 
         attributes['typesetter']='Micha Dienert <mdienert@t-online.de>'
         attributes['completion']='5'
-        attributes['uuid']='9bd9980c-9628-11e4-80e9-3860779cb560'
+        attributes['uuid']='6690eb38-56a9-11e8-8975-fb059da22c43'
         attributes['structure']='Blues'
         attributes['location']='rbk2:24'
 
