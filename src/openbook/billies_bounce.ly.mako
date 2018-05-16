@@ -53,19 +53,19 @@
 	\partial 8 c8:7 |
 	\myMark "A"
 	\startPart
-		 f1:7 | bes2:7 b2:dim7| f1:7 | \myEndLine
-		 f1:7 | bes1:7 | bes1:7 | f1:7 | \myEndLine
-		 a2:m d2:7 | g1:m | c1:7 | f2:7 d2:7 | \myEndLine
-		 g2:m c2:7 | 
+	   f1:7 | bes2:7 b2:dim7| f1:7 | \myEndLine
+	   f1:7 | bes1:7 | bes1:7 | f1:7 | \myEndLine
+	   a2:m d2:7 | g1:m | c1:7 | f2:7 d2:7 | \myEndLine
+	   g2:m c2:7 | 
 	\endPart
 
 	\myMark "B"
 	\startPart
 	   f1:7 | f1:7 | \myEndLine
 	   f1:7 | c2:m f2:7 | bes1:7 | \myEndLine
-	   bes1:7 | f1:7 | a2:m d2:7 |	\myEndLine
+	   bes1:7 | f1:7 | a2:m d2:7 | \myEndLine
 	   g1:m | c1:7 | f1:7| \myEndLine
-	   c1:7 | 
+	   c1:7 |
 	\endPart
 
 	\endSong
