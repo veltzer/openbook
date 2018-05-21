@@ -25,12 +25,6 @@
 
 % if part=='Doc':
 	NOTES:
-		- this tune is an example of how to create different outputs for midi and
-		printing. This could be required for several reasons:
-		- you may want chord names to appear in the print but not be heard in the midi.
-		- you may want the midi to unfold the voltas (play them correctly that is) while
-		in the print the voltas should appear unfolded to keep the print small and
-		comprehensible.
 	DONE:
 	TODO:
 % endif
@@ -48,36 +42,21 @@ PartChords=\chordmode {
 	\myMark "Intro"
 
 	\startPart
-	   \repeat volta 2{
-	      f1:m7|
-	      f1:m7 |
-	      f1:m7 |
-	      f1:m7 |\break
-	   }
-	\endPart      
+		\repeat volta 2{
+			f1:m7 | f1:m7 | f1:m7 | f1:m7 | \break
+		}
+	\endPart
 
 	\myMark "A"
 
 	\startPart
-           \repeat volta 2{
-              f1:m7  |
-              f1:m7  |
-              f1:m7  |
-              f1:m7  |\break
-              des1:7 |
-              des1:7 |
-              des1:7 |
-              des1:7 |\break
-              d1:m11 |
-	      d1:m11 |
-	      d1:m11 |
-	      d1:m11 |\break
-              f1:m7  |
-	      f1:m7  |
-	      f1:m7  |
-	      f1:m7  |\break      
-	   }
-	\endPart      
+		\repeat volta 2{
+			f1:m7 | f1:m7 | f1:m7 | f1:m7 |\break
+			des1:7 | des1:7 | des1:7 | des1:7 |\break
+			d1:m11 | d1:m11 | d1:m11 | d1:m11 |\break
+			f1:m7 | f1:m7 | f1:m7 | f1:m7 |\break
+		}
+	\endPart
 
 	\endSong
 
@@ -87,62 +66,62 @@ PartChords=\chordmode {
 \parallelMusic #'(melodie akkorde bass) {
 	%% Bar 1
 	r1 |
-	r8  <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
+	r8 <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
 	f4. c'8 ~ c4 es8 f8|
 
 	%% Bar 2
 	r1 |
-	r8  <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
+	r8 <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
 	f,4. c'8 ~ c4 es8 f8|
 
 	%% Bar 3
 	r1 |
-	r8  <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
+	r8 <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
 	f,4. c'8 ~ c4 es8 f8|
 
 	%% Bar 4
 	r2 r4 \onCue f8 f8 |
-	r8  <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
+	r8 <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
 	f,4. c'8 ~ c4 es8 f8|
 
 	%% Bar 5
 	r2 as8 bes8 bes4 ~ |
-	r8  <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
+	r8 <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
 	f,4. c'8 ~ c4 es8 f8|
 
 	%% Bar 6
 	bes4. as8 bes8[ c8] es,8[ f8] |
-	r8  <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
+	r8 <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
 	f,4. c'8 ~ c4 es8 f8|
 
 	%% Bar 7
 	r1 |
-	r8  <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
+	r8 <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
 	f,4. c'8 ~ c4 es8 f8|
 
 	%% Bar 8
 	r2 r4 f8 f8 |
-	r8  <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
+	r8 <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
 	f,4. c'8 ~ c4 es8 f8|
 
 	%% Bar 9
 	r2 as8 bes8 bes4 ~ |
-	r8  <as ces>8 <bes des>4 <ces es>4 <bes des>8 <as ces>8|
+	r8 <as ces>8 <bes des>4 <ces es>4 <bes des>8 <as ces>8|
 	des,4. as'8 ~ as4 b8 des8|
 
 	%% Bar 10
 	bes4. as8 bes8[ c8] es,8[ f8] |
-	r8  <as ces>8 <bes des>4 <ces es>4 <bes des>8 <as ces>8|
+	r8 <as ces>8 <bes des>4 <ces es>4 <bes des>8 <as ces>8|
 	des,4. as'8 ~ as4 b8 des8|
 
 	%% Bar 11
 	r1 |
-	r8  <as ces>8 <bes des>4 <ces es>4 <bes des>8 <as ces>8|
+	r8 <as ces>8 <bes des>4 <ces es>4 <bes des>8 <as ces>8|
 	des,4. as'8 ~ as4 b8 des8|
 
 	%% Bar 12
 	r2 c'8[ es8] c8[ es8] |
-	r8  <as ces>8 <bes des>4 <ces es>4 <bes des>8 <as ces>8|
+	r8 <as ces>8 <bes des>4 <ces es>4 <bes des>8 <as ces>8|
 	des,4. as'8 ~ as4 b8 des8|
 
 	%% Bar 13
@@ -167,22 +146,22 @@ PartChords=\chordmode {
 
 	%% Bar 17
 	r1 |
-	r8  <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
+	r8 <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
 	f4. c'8 ~ c4 es8 f8|
 
 	%% Bar 18
 	r1 |
-	r8  <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
+	r8 <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
 	f,4. c'8 ~ c4 es8 f8|
 
 	%% Bar 19
 	r1 |
-	r8  <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
+	r8 <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
 	f,4. c'8 ~ c4 es8 f8|
 
 	%% Bar 20
 	r2 r4 f8 f8 |
-	r8  <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
+	r8 <as c>8 <bes d>4 <c es>4 <bes d>8 <as c>8|
 	f,4. c'8 ~ c4 es8 f8|
 
 
@@ -210,24 +189,24 @@ PartPiano={
 				\relative c' {
 					\melodie
 				}
-	
+
 %%			>>
 %%		}
-                \new Staff="down"  {
-                        \clef bass
-                        <<
-                           \relative c'  \akkorde
-			   \\\
-                           \relative c,  \bass
-                        >>
-                }
-        >>
+		\new Staff="down" {
+			\clef bass
+			<<
+				\relative c' \akkorde
+			\\\
+				\relative c, \bass
+			>>
+		}
+	>>
 }
 
 %% score for printing
 \score {
 	<<
-		\new ChordNames{ \PartChords }	
+		\new ChordNames{ \PartChords }
 		\new PianoStaff="piano" \PartPiano
 	>>
 	\layout {

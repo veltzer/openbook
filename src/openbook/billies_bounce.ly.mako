@@ -53,19 +53,19 @@
 	\partial 8 c8:7 |
 	\myMark "A"
 	\startPart
-	   f1:7 | bes2:7 b2:dim7| f1:7 | \myEndLine
-	   f1:7 | bes1:7 | bes1:7 | f1:7 | \myEndLine
-	   a2:m d2:7 | g1:m | c1:7 | f2:7 d2:7 | \myEndLine
-	   g2:m c2:7 | 
+		f1:7 | bes2:7 b2:dim7| f1:7 | \myEndLine
+		f1:7 | bes1:7 | bes1:7 | f1:7 | \myEndLine
+		a2:m d2:7 | g1:m | c1:7 | f2:7 d2:7 | \myEndLine
+		g2:m c2:7 |
 	\endPart
 
 	\myMark "B"
 	\startPart
-	   f1:7 | f1:7 | \myEndLine
-	   f1:7 | c2:m f2:7 | bes1:7 | \myEndLine
-	   bes1:7 | f1:7 | a2:m d2:7 | \myEndLine
-	   g1:m | c1:7 | f1:7| \myEndLine
-	   c1:7 |
+		f1:7 | f1:7 | \myEndLine
+		f1:7 | c2:m f2:7 | bes1:7 | \myEndLine
+		bes1:7 | f1:7 | a2:m d2:7 | \myEndLine
+		g1:m | c1:7 | f1:7| \myEndLine
+		c1:7 |
 	\endPart
 
 	\endSong
@@ -83,16 +83,16 @@
 	%% part "A"
 	\repeat volta 2 {
 
-	   b8 c8 f8 gis8 a8 f8 d8 f8~|f8 d8 f8 r8 r8 f4 d8 |
-	   f8 r8 r8 f8~ f8 d8 f8 d8 | \myEndLine
-	   as'8 a8 \tuplet 3/2 { f16 g16 f16 } d8 f8 g8 f8 f8 |
-	   r4 r8 a8 bes8 f8 r8 as8~ |
-	   as8 bes8~bes4 es8 c8 f8 es8 | r8 f8 c4 r4 r8 e8~ |
-	   e4 g,8 e8 fis8 es'8 c8 cis8 |
-	   d4 r8 g8 \tuplet 3/2 {fis16 g16 fis16} d8 bes8 f8 |
-	   f'4 r8 f8 e8 e8 d8 d8 |
-	   c4 r8 f,8~f8 d8 f4|
-	   r8 f4~f8 d8 f4 c8|
+		b8 c8 f8 gis8 a8 f8 d8 f8~|f8 d8 f8 r8 r8 f4 d8 |
+		f8 r8 r8 f8~ f8 d8 f8 d8 | \myEndLine
+		as'8 a8 \tuplet 3/2 { f16 g16 f16 } d8 f8 g8 f8 f8 |
+		r4 r8 a8 bes8 f8 r8 as8~ |
+		as8 bes8~bes4 es8 c8 f8 es8 | r8 f8 c4 r4 r8 e8~ |
+		e4 g,8 e8 fis8 es'8 c8 cis8 |
+		d4 r8 g8 \tuplet 3/2 {fis16 g16 fis16} d8 bes8 f8 |
+		f'4 r8 f8 e8 e8 d8 d8 |
+		c4 r8 f,8~f8 d8 f4|
+		r8 f4~f8 d8 f4 c8|
 	}
 
 	f4 g8 gis8 s4 ais8 b8 |
