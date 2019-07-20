@@ -17,20 +17,9 @@
 
 		<p>current version is ${config.git.git_last_tag}</p>
 
-		<h2>A demo for the impatient...</h2>
-		<p>If you are using chrome you need the Chrome PDF Viewer plugin enabled. With version up to 56 you go to chrome://plugins/
-		and change the configuration of the pdf viewer. With newer chrome version you go to chrome://settings/ -
-		Show advanced settings... - privacy - Content settings... - PDF Documents - Open PDF files in the default PDF viewer application.
-		</p>
-		<p>If you are using firefox you need to enable viewing pdf in the browser this way: preferences - applications - pdf - preview in firefox...</p>
-		<!--
-		<object data="openbook.pdf" type="application/pdf" width="100%" height="1700"></object>
-		-->
-		<!-- embed needs no closing tag -->
-		<!--
-		<embed src="openbook.pdf" type="application/pdf" width="100%" height="1700">
-		-->
-		<a href="web/viewer.html?file=../openbook.pdf">openbook.pdf</a>
+		<h2>A demo for the impatient is
+			<a href="web/viewer.html?file=/openbook.pdf">here</a>
+		</h2>
 		<p>You can download the latest version of <b>${config.project.project_name}</b> from <a href="openbook.pdf">here</a>.</p>
 
 		<p><b>${config.project.project_name}</b> is an open source project to build a free, high quality "real book"
