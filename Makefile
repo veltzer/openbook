@@ -158,6 +158,7 @@ endif # DO_CHECKHTML
 #########
 # do not touch this rule or add a recipe to it. This is to force 'make' to take the new $(ALL)
 all: $(ALL)
+
 .PHONY: stamp
 stamp: $(FILES_STAMP)
 	$(info doing [$@])
@@ -202,7 +203,7 @@ todo:
 
 .PHONY: clean
 clean:
-	$(Q)rm -f $(ALL)
+	$(Q)rm -f $(ALL) $(OUT_LY) $(OUT_PS) $(OUT_PDF)
 
 .PHONY: clean_all_png
 clean_all_png:

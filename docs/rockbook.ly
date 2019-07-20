@@ -246,7 +246,7 @@ endChords={}
 				\fill-line {
 					\huge \bold \concat {
 						"Typesetting copyright: © 2011-"
-						2018
+						2019
 						" Mark Veltzer "
 						"<" \with-url #"mailto:mark.veltzer@gmail.com" mark.veltzer@gmail.com ">"
 					}
@@ -257,12 +257,12 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 171" }
-				\fill-line { \small "Git describe: 171-32-ge56f213" }
-				\fill-line { \small "Git commits: 1523" }
-				\fill-line { \small "Build date: 16:15:17 04-05-2018" }
+				\fill-line { \small "Git describe: 171-61-g6861ac4" }
+				\fill-line { \small "Git commits: 1552" }
+				\fill-line { \small "Build date: 14:09:11 20-07-2019" }
 				\fill-line { \small "Build user: mark" }
 				\fill-line { \small "Build host: fermat" }
-				\fill-line { \small "Build kernel: Linux 4.15.0-20-generic" }
+				\fill-line { \small "Build kernel: Linux 5.0.0-20-lowlatency" }
 				\fill-line { \small "Lilypond version: 2.18.2" }
 				\fill-line { \small "Number of tunes: 9" }
 				\null
