@@ -23,7 +23,10 @@
 		Show advanced settings... - privacy - Content settings... - PDF Documents - Open PDF files in the default PDF viewer application.
 		</p>
 		<p>If you are using firefox you need to enable viewing pdf in the browser this way: preferences - applications - pdf - preview in firefox...</p>
+		<!--
 		<object data="openbook.pdf" type="application/pdf" width="100%" height="1700"></object>
+		-->
+		<embed src="openbook.pdf" type="application/pdf" width="100%" height="1700"></embed>
 		<p>You can download the latest version of <b>${config.project.project_name}</b> from <a href="openbook.pdf">here</a>.</p>
 
 		<p><b>${config.project.project_name}</b> is an open source project to build a free, high quality "real book"
