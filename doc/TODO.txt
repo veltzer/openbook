@@ -1,5 +1,6 @@
 - veltzer.net is mentioned all over (and mark@veltzer.net). move the website of the project to the right
 	thing and my email to the right email.
+- move all files from src to templates and use pydmt to process them.
 
 - My email is hardcoded in several places:
 	in all of the regular tunes as:
