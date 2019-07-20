@@ -8,7 +8,7 @@ DO_WRAPDEPS:=1
 # should we depend on the common include file ?
 DO_INCDEPS:=1
 # should we make the ly files and use them?
-DO_LY:=0
+DO_LY:=1
 # should we make pdfs ?
 DO_PDF:=0
 # should we make postscript ?
@@ -199,6 +199,10 @@ debug:
 todo:
 	$(info doing [$@])
 	$(Q)-grep TODO $(FILES_LY)
+
+.PHONY: clean
+clean:
+	$(Q)rm -f $(ALL)
 
 .PHONY: clean_all_png
 clean_all_png:

@@ -147,4 +147,4 @@ Where can I get more documentation about this project?
 ------------------------------------------------------
 Look in the "doc" subfolder of the source code...
 
-	Mark Veltzer <mark.veltzer@gmail.com>, 2009-2018
+	Mark Veltzer <mark.veltzer@gmail.com>, 2009-2019
