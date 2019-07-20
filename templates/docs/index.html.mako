@@ -18,7 +18,7 @@
 		<p>current version is ${config.git.git_last_tag}</p>
 
 		<h2>A demo for the impatient is
-			<a href="web/viewer.html?file=/openbook.pdf">here</a>
+			<a href="web/viewer.html?file=../openbook.pdf">here</a>
 		</h2>
 		<p>You can download the latest version of <b>${config.project.project_name}</b> from <a href="openbook.pdf">here</a>.</p>
 
