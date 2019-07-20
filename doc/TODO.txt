@@ -1,3 +1,5 @@
+- use the js pdf library to show the pdf on the index.html page.
+
 - My email is hardcoded in several places:
 	in all of the regular tunes as:
 		attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
