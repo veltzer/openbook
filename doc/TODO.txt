@@ -1,8 +1,9 @@
-- use the js pdf library to show the pdf on the index.html page.
+- veltzer.net is mentioned all over (and mark@veltzer.net). move the website of the project to the right
+	thing and my email to the right email.
 
 - My email is hardcoded in several places:
 	in all of the regular tunes as:
-		attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+		attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	in the israeli tunes as:
 		attributes['typesetter']=u'מרק ולצר <mark.veltzer@gmail.com>'
 	in the common.ly.mako include files as:
