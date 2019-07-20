@@ -26,7 +26,11 @@
 		<!--
 		<object data="openbook.pdf" type="application/pdf" width="100%" height="1700"></object>
 		-->
-		<embed src="openbook.pdf" type="application/pdf" width="100%" height="1700"></embed>
+		<!-- embed needs no closing tag -->
+		<!--
+		<embed src="openbook.pdf" type="application/pdf" width="100%" height="1700">
+		-->
+		<a href="web/viewer.html?file=openbook.pdf">openbook.pdf</a>
 		<p>You can download the latest version of <b>${config.project.project_name}</b> from <a href="openbook.pdf">here</a>.</p>
 
 		<p><b>${config.project.project_name}</b> is an open source project to build a free, high quality "real book"
