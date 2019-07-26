@@ -1,6 +1,6 @@
 <%!
     import config.project
-    import config.personal
+    import user.personal
     import config.git
 %><!DOCTYPE html>
 <html>
@@ -9,7 +9,7 @@
 		<title>${config.project.project_name}</title>
 		<link rel="shortcut icon" href="favicon.ico"/>
 		<meta name="Description" content="${config.project.project_long_description}"/>
-		<meta name="Keywords" content="${config.personal.personal_fullname}, ${config.personal.personal_slug}, ${config.project.project_name}, ${', '.join(config.project.project_keywords)}"/>
+		<meta name="Keywords" content="${user.personal.personal_fullname}, ${user.personal.personal_slug}, ${config.project.project_name}, ${', '.join(config.project.project_keywords)}"/>
 		${config.project.project_google_analytics_snipplet}
 	</head>
 	<body>
@@ -25,7 +25,7 @@
 		<p><b>${config.project.project_name}</b> is an open source project to build a free, high quality "real book"
 		for Jazz musicians. A real book simply means a big book with lots of Jazz tunes or standards as they are more widely known. <b>${config.project.project_name}</b> will always remain free and is guarateed so by it's license. The goal of production is beautiful and lightweight postscript and PDF real books with Jazz tunes. The idea is that the end user can control the final output and decide if he/she wants lyrics, size of paper, transposition for trumpet, selection of tunes and more. In addition you can produce midi, mp3 and ogg outputs. The end user can also, obviously, modify add or remove tunes or use the tunes in <b>${config.project.project_name}</b> as the basis of arrangements.</p>
 
-		<p>The project is developed by me, ${config.personal.personal_fullname}, and you can contact me at <a href="mailto:${config.personal.personal_email}">${config.personal.personal_email}</a>. There is already a handful of contributors who contributed or are contributing to this project and you can see the ones that are contributing by name in the git changelog. Some are contributing anonymously because of copyright issues. Anyone is welcome to contribute anonymously or by name (it is your choice).</p>
+		<p>The project is developed by me, ${user.personal.personal_fullname}, and you can contact me at <a href="mailto:${user.personal.personal_email}">${user.personal.personal_email}</a>. There is already a handful of contributors who contributed or are contributing to this project and you can see the ones that are contributing by name in the git changelog. Some are contributing anonymously because of copyright issues. Anyone is welcome to contribute anonymously or by name (it is your choice).</p>
 
 		<p>The license for the project is currently ${config.project.project_license}. This is only so because I did not have time to think more deeply about the issue. It may change in the future as a result of future thinking on my part and the fact that I am the only copyright holder. The fact that the tunes inside the book have their own copyright holders complicates matters. In any case I am committed to keeping the project free in the free software sense and you are well within your rights to take a snapshot of it and continue developing it on your own when and if you feel that a future license selection does not match your expectations.</p>
 
@@ -111,8 +111,8 @@
 		</p>
 		${config.project.project_paypal_donate_button_snipplet}
 		<p>
-			Copyright ${config.personal.personal_fullname}, ${config.project.project_copyright_years}
-			<a href="mailto:${config.personal.personal_email}">${config.personal.personal_email}</a>
+			Copyright ${user.personal.personal_fullname}, ${config.project.project_copyright_years}
+			<a href="mailto:${user.personal.personal_email}">${user.personal.personal_email}</a>
 		</p>
 	</body>
 </html>
