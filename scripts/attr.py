@@ -73,7 +73,7 @@ books_translation = {
     'js': 'Jazz standards (Budget books)',
     'kw': 'Kiselev W. - 150 American Jazz Standards',
     'lrb': 'Latin Real Book',
-    'lomj': 'Library of Musicians´Jazz',
+    'lomj': 'Library of Musicians Jazz',
     'nrbk1': 'newreal1',
     'nrbk2': 'newreal2',
     'nrbk3': 'newreal3',
