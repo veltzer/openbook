@@ -57,7 +57,7 @@
 	bookTitleMarkup = \markup {}
 }
 \layout {
-%% don't have the fist line indented
+%% don't have the first line indented
 	indent = 0.0 \cm
 %% don't know what this is (taken from Laurent Martelli...)
 %%textheight = 1.5\cm
@@ -246,7 +246,7 @@ endChords={}
 				\fill-line {
 					\huge \bold \concat {
 						"Typesetting copyright: © 2011-"
-						2019
+						2020
 						" Mark Veltzer "
 						"<" \with-url #"mailto:mark.veltzer@gmail.com" mark.veltzer@gmail.com ">"
 					}
@@ -257,14 +257,14 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 171" }
-				\fill-line { \small "Git describe: 171-68-g9108d65" }
-				\fill-line { \small "Git commits: 1559" }
-				\fill-line { \small "Build date: 19:46:45 26-10-2019" }
+				\fill-line { \small "Git describe: 171-69-gccd37c9" }
+				\fill-line { \small "Git commits: 1560" }
+				\fill-line { \small "Build date: 07:07:46 18-04-2020" }
 				\fill-line { \small "Build user: mark" }
-				\fill-line { \small "Build host: gandalf" }
-				\fill-line { \small "Build kernel: Linux 5.0.0-29-lowlatency" }
+				\fill-line { \small "Build host: newton" }
+				\fill-line { \small "Build kernel: Linux 5.3.0-46-lowlatency" }
 				\fill-line { \small "Lilypond version: 2.18.2" }
-				\fill-line { \small "Number of tunes: 150" }
+				\fill-line { \small "Number of tunes: 151" }
 				\null
 				\null
 				\null
@@ -6925,6 +6925,235 @@ endChords={}
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1930 Warner Bros. Inc & Chappell & Co. Ltd." }
+	}
+	\fill-line {
+		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+	}
+}
+
+
+
+}
+
+
+% include anything the user wants before the bookpart starts
+
+
+
+
+
+
+
+\bookpart {
+
+% this causes the variables to be defined...
+
+
+
+
+
+
+
+
+
+
+
+
+% now play with the variables that depend on language
+
+
+
+% calculate the tag line
+
+
+% calculate the typesetby
+
+
+
+
+\tocItem \markup "But Beautiful / Johnny Burke, James Van Heusen"
+
+
+
+
+
+% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
+\markup {
+	\column {
+		\override #'(baseline-skip . 3.5)
+		\column {
+			\huge \larger \bold
+			\fill-line { \larger "But Beautiful" }
+			\fill-line {
+				""
+				"Lyrics and Music by Johnny Burke, James Van Heusen"
+			}
+			\fill-line {
+				"Slowly"
+				""
+			}
+		}
+	}
+}
+\noPageBreak
+
+
+% include the preparatory stuff, if there is any
+
+% calculate the vars
+
+
+
+% score for printing
+\score {
+	<<
+\new ChordNames="Chords"
+	\with {
+		\remove "Bar_engraver"
+	}
+	
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\repeat volta 2 {
+
+		\myMark "A"
+		\startPart
+		g2 e:m | a:m7 d:7 | a:m7 d:7.9- | g4 bes:7 a:7 d:7 | \myEndLine
+		g2 e:m | a:m7 d:7 | g:6 e:m7 | a:m7 d:7 | \myEndLine
+		\endPart
+
+		\myMark "A'"
+		\startPart
+		g2 e:m | a:m7 d:7 | cis:7.9- fis:7.9- | b:m7 e:7 | \myEndLine
+		d1:6 | a:7 | d1*2:7 | \myEndLine
+		\endPart
+
+		\myMark "B"
+		\startPart
+		g4*11:7 b4:7 | e1:7.5+ | \myEndLine
+		a1*2:7 | a1:m7 | ees2:7 d2:7 | \myEndLine
+		\endPart
+
+		\myMark "A''"
+		\startPart
+		g2 e:m | a:m7 d:7 | b:7 e:7 | a1:7 | \myEndLine
+		g2 e:7 | a:m7 d:7 |
+
+	} \alternative {
+		{
+			g e:7.9+ | a:7.9- d:7.9- | \myEndLineVoltaNotLast
+		}
+		{
+			ees1 | bes2/d d:7/c | g/b e:7 | a:m7 d:7 | g1*2 | \myEndLineVoltaLast
+		}
+	}
+	\endPart
+
+	\endSong
+	\endChords
+}
+
+
+
+% this thing will only engrave voltas. This is required to put the volta under the chords.
+% No great harm will happen if you don't put it, only the voltas will be above the chords.
+%\new Staff \with {
+%	\consists "Volta_engraver"
+%}
+\new Staff="Melody" {
+\new Voice="Voice"
+	\relative c' 
+
+
+
+{
+	\tempo "Allegro" 4 = 130
+	\time 2/2
+	\key g \major
+
+	\repeat volta 2 {
+
+	%% part "A"
+		r8 d e4 g a | b8.[ b16 a8. g16] a8 b4. | b8.[ b16 a8. g16] a8 b4 d,8~ | d1 |
+		r8 d e4 g a | b8.[ b16 a8. g16] a8 b4 g8~ | g1~ | g2. r4 |
+
+	%% part "A"
+		r8 d e4 g a | b8.[ b16 a8. g16] a8 b4. | d8.[ d16 cis8. b16] cis8 d4 fis,8~ | fis1 |
+		b4 a8. gis16 a8 b4. | b8.[ c16 a8. gis16] a8 b4. | a4 b c b | a d d d |
+
+	%% part "B"
+		d2~ d8 b4 g8 | a2~ a8.[ b16 c8. cis16] | d4 e d b | c2. b4 |
+		e2~ e8 cis4 a8 | b2~ b8 a4 b8 | c4 e e, g | a1 |
+
+	%% part "A"
+		r8 d, e4 g a | b8.[ b16 a8. g16] a8 b4. | c8 b4 a8 b4 c | b2. a4 |
+		d4 d d2 | e8 e4 e8 b4 b |
+	} \alternative {
+		{
+			g1~ | g2 r |
+		}
+		{
+			g4 g g2 | bes8 bes4 bes8 fis4 fis | d'4 d d2 | e8 e4 e8 b4 b | g1~ | g4 r r2 |
+		}
+	}
+}
+
+
+}
+\new Lyrics="Lyrics" \lyricsto "Voice"
+	
+
+
+
+
+\lyricmode {
+
+%% part "A"
+	They All Laughed at Chris -- to -- pher Co -- lum -- bus
+	when he said the world was round. __
+	They All Laughed when Ed -- i -- son re -- cord -- ed sound. __
+
+%% part "A"
+	They All Laughed at Wil -- bur and his broth -- er,
+	when they said that man could fly. __
+	They told Mar -- co -- ni wire -- less was a pho -- ney;
+	it's the same old cry.
+
+%% part "B"
+	They laughed at me __ want -- ing you, __
+	said I was reach -- ing for the moon.
+	But oh, __ you came through __
+	now they'll have to change their tune.
+
+%% part "A"
+	They all said we nev -- er could be hap -- py,
+	they laughed at us and how!
+	But ho, ho, ho!
+	Who's got the last laugh now? __
+
+%% part "Volta"
+	He, he, he!
+	Let's at the past laugh,
+	Ha, ha, ha!
+	Who's got the last laugh now? __
+}
+
+	>>
+	\layout {
+	}
+}
+
+
+\noPageBreak
+\markup \column {
+%% just a little space
+	\null
+	\fill-line {
+		\smaller \smaller { "Copyright © 1947 by Doesey Brothers Music, A Division of Music Sales Corporation, New York" }
 	}
 	\fill-line {
 		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }

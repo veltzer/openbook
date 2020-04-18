@@ -69,7 +69,7 @@
 	bookTitleMarkup = \markup {}
 }
 \layout {
-	%% don't have the fist line indented
+	%% don't have the first line indented
 	indent = 0.0 \cm
 	%% don't know what this is (taken from Laurent Martelli...)
 	%%textheight = 1.5\cm

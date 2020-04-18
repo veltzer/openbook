@@ -57,7 +57,7 @@
 	bookTitleMarkup = \markup {}
 }
 \layout {
-%% don't have the fist line indented
+%% don't have the first line indented
 	indent = 0.0 \cm
 %% don't know what this is (taken from Laurent Martelli...)
 %%textheight = 1.5\cm
@@ -246,7 +246,7 @@ endChords={}
 				\fill-line {
 					\huge \bold \concat {
 						"Typesetting copyright: © 2011-"
-						2019
+						2020
 						" Mark Veltzer "
 						"<" \with-url #"mailto:mark.veltzer@gmail.com" mark.veltzer@gmail.com ">"
 					}
@@ -257,12 +257,12 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 171" }
-				\fill-line { \small "Git describe: 171-61-g6861ac4" }
-				\fill-line { \small "Git commits: 1552" }
-				\fill-line { \small "Build date: 14:09:10 20-07-2019" }
+				\fill-line { \small "Git describe: 171-69-gccd37c9" }
+				\fill-line { \small "Git commits: 1560" }
+				\fill-line { \small "Build date: 07:08:17 18-04-2020" }
 				\fill-line { \small "Build user: mark" }
-				\fill-line { \small "Build host: fermat" }
-				\fill-line { \small "Build kernel: Linux 5.0.0-20-lowlatency" }
+				\fill-line { \small "Build host: newton" }
+				\fill-line { \small "Build kernel: Linux 5.3.0-46-lowlatency" }
 				\fill-line { \small "Lilypond version: 2.18.2" }
 				\fill-line { \small "Number of tunes: 1" }
 				\null
