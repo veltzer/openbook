@@ -26,7 +26,7 @@
 	attributes['completion']='5'
 	attributes['uuid']='769f56f4-7f33-11ea-b0b2-eb3dd252214d'
 
-	attributes['structure']='AB'
+	attributes['structure']='ABAC'
 	attributes['structureremark']=''
 	attributes['location']='jfb:74'
 
@@ -45,7 +45,6 @@
 	- added the tune structure.
 	- filled in the meta data from the fake book.
 	- added youtube performances.
-	TODO:
 	- wrote down the fake book chords.
 	- wrote down the fake book tune.
 	- wrote down the fake book lyrics.
@@ -53,7 +52,7 @@
 	- check the fake book tune.
 	- check the fake book lyrics.
 	- played the midi to hear that it sounds right.
-
+	TODO:
 	- get another version in here (from where?)
 % endif
 
@@ -62,37 +61,39 @@
 	\startChords
 	\startSong
 
+	\partial 4 s4 |
+
 	\repeat volta 2 {
 
 		\myMark "A"
 		\startPart
-		g2 e:m | a:m7 d:7 | a:m7 d:7.9- | g4 bes:7 a:7 d:7 | \myEndLine
-		g2 e:m | a:m7 d:7 | g:6 e:m7 | a:m7 d:7 | \myEndLine
-		\endPart
-
-		\myMark "A'"
-		\startPart
-		g2 e:m | a:m7 d:7 | cis:7.9- fis:7.9- | b:m7 e:7 | \myEndLine
-		d1:6 | a:7 | d1*2:7 | \myEndLine
+		g1:maj9 | b2:m7.5- e:7.9- | a1:m9 | cis2:m7.5- fis:7.9- | \myEndLine
+		g1:maj9 | b2:m7.5- e:7 | a1*2:9 | \myEndLine
 		\endPart
 
 		\myMark "B"
 		\startPart
-		g4*11:7 b4:7 | e1:7.5+ | \myEndLine
-		a1*2:7 | a1:m7 | ees2:7 d2:7 | \myEndLine
+		d2.:7 d4:7/c | b2:m7 e:m7 | a:m7 d:7 | g1 | \myEndLine
+		e2:m6 e2:m7 | a1:9 | a:m7 | d:7 | \myEndLine
 		\endPart
 
-		\myMark "A''"
+		\myMark "A"
 		\startPart
-		g2 e:m | a:m7 d:7 | b:7 e:7 | a1:7 | \myEndLine
-		g2 e:7 | a:m7 d:7 |
+		g:maj9 | b2:m7.5- e:7.9- | a1:m9 | cis2:m7.5- fis:7.9- | \myEndLine
+		g1:maj9 | b2:m7.5- e:7 | a1*2:9 | \myEndLine
+		\endPart
+
+		\myMark "C"
+		d2. d4:7/c | b2:m7 e:m7 | a:m7 b4:7.5+ b:7 | e2:m7 c4:m7 f:7 | \myEndLine
+		g2 e:7 | a:m7 d4:7 aes:7 |
+		\startPart
 
 	} \alternative {
 		{
-			g e:7.9+ | a:7.9- d:7.9- | \myEndLineVoltaNotLast
+			g1 | a2:m7 d:7 | \myEndLineVoltaNotLast
 		}
 		{
-			ees1 | bes2/d d:7/c | g/b e:7 | a:m7 d:7 | g1*2 | \myEndLineVoltaLast
+			g1*2 | \myEndLineVoltaLast
 		}
 	}
 	\endPart
@@ -108,29 +109,32 @@
 	\time 2/2
 	\key g \major
 
+	\partial 4 cis8 d |
+
 	\repeat volta 2 {
 
 		%% part "A"
-		r8 d e4 g a | b8.[ b16 a8. g16] a8 b4. | b8.[ b16 a8. g16] a8 b4 d,8~ | d1 |
-		r8 d e4 g a | b8.[ b16 a8. g16] a8 b4 g8~ | g1~ | g2. r4 |
-
-		%% part "A"
-		r8 d e4 g a | b8.[ b16 a8. g16] a8 b4. | d8.[ d16 cis8. b16] cis8 d4 fis,8~ | fis1 |
-		b4 a8. gis16 a8 b4. | b8.[ c16 a8. gis16] a8 b4. | a4 b c b | a d d d |
+		a'4 a2 g8 fis | f!2. dis8 e | b'4 b2 a8 aes | g2. fis8 g |
+		d'4 d2 b8 bes | a2. gis4 | b8 b b2.~ | b1 |
 
 		%% part "B"
-		d2~ d8 b4 g8 | a2~ a8.[ b16 c8. cis16] | d4 e d b | c2. b4 |
-		e2~ e8 cis4 a8 | b2~ b8 a4 b8 | c4 e e, g | a1 |
+		b8 b b2 a4 | d b a4. g8 | c4 a g fis | b2. d,8 dis |
+		e4 e2 g4 | b g fis e | a1~ | a2. cis,8 d |
 
 		%% part "A"
-		r8 d, e4 g a | b8.[ b16 a8. g16] a8 b4. | c8 b4 a8 b4 c | b2. a4 |
-		d4 d d2 | e8 e4 e8 b4 b |
+		a'4 a2 g8 fis | f!2. dis8 e | b'4 b2 a8 aes | g2. fis8 g |
+		d'4 d2 b8 bes | a2. gis4 | b8 b b2.~ | b e,8 eis |
+
+		%% part "C"
+		fis4 fis2 a4 | d b a4. g8 | e'4 c b a | g2. g4 |
+		d'8 d d2 g,4 | c8 c c2 fis,4 |
+
 	} \alternative {
 		{
-			g1~ | g2 r |
+			g1~ | g2. cis,8 d |
 		}
 		{
-			g4 g g2 | bes8 bes4 bes8 fis4 fis | d'4 d d2 | e8 e4 e8 b4 b | g1~ | g4 r r2 |
+			g1~ | g2. r4 |
 		}
 	}
 }
@@ -140,32 +144,22 @@
 \lyricmode {
 
 	%% part "A"
-	They All Laughed at Chris -- to -- pher Co -- lum -- bus
-	when he said the world was round. __
-	They All Laughed when Ed -- i -- son re -- cord -- ed sound. __
-
-	%% part "A"
-	They All Laughed at Wil -- bur and his broth -- er,
-	when they said that man could fly. __
-	They told Mar -- co -- ni wire -- less was a pho -- ney;
-	it's the same old cry.
+	Love is fun -- ny or it's sad or it's qui -- et or it's mad;
+	it's a good thing or it's bad, But Beau -- ti -- ful! __
 
 	%% part "B"
-	They laughed at me __ want -- ing you, __
-	said I was reach -- ing for the moon.
-	But oh, __ you came through __
-	now they'll have to change their tune.
+	Beau -- ti -- ful to take a chance and if you fall, you fall,
+	and I'm think -- ing I would -- n't mind at all. __
 
 	%% part "A"
-	They all said we nev -- er could be hap -- py,
-	they laughed at us and how!
-	But ho, ho, ho!
-	Who's got the last laugh now? __
+	Love is tear -- ful or it's gay; it's a prob -- lem or it's play;
+	it's a heart -- ache eith -- er way, But Beau -- ti -- ful! __
 
+	%% part "C"
+	And I'm think -- ing if you were mine I'd nev -- er let you go,
+	and that would be But Beau -- ti -- ful  I
 	%% part "Volta"
-	He, he, he!
-	Let's at the past laugh,
-	Ha, ha, ha!
-	Who's got the last laugh now? __
+	know. __ Love is
+	know. __
 }
 % endif
