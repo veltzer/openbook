@@ -1,3 +1,4 @@
+- stop using git in the makefile. It breaks the build from a zip file.
 - move to lilypond 2.20.0. You can install it manually.
 - wrap the pdf.js viewer as a library and use it like that and not like a page (viewer.html).
 - veltzer.net is mentioned all over (and mark@veltzer.net). move the website of the project to the right
