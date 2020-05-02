@@ -3,6 +3,8 @@
 ##############
 # should we show commands executed ?
 DO_MKDBG?=0
+# do you want dependency on the Makefile itself ?
+DO_MAKEFILE_DEPEND:=1
 # should we depend on the wrappers scripts dates ?
 DO_WRAPDEPS:=1
 # should we depend on the common include file ?
@@ -79,6 +81,13 @@ endif
 ifeq ($(DO_INCDEPS),1)
 	MAKO_WRAPPER_DEP:=$(MAKO_WRAPPER_DEP) $(COMMON)
 endif # DO_INCDEPS
+
+ALL_DEP:=
+
+# dependency on the makefile itself
+ifeq ($(DO_MAKEFILE_DEPEND),1)
+ALL_DEP+=Makefile
+endif # DO_MAKEFILE_DEPEND
 
 ifeq ($(DO_MKDBG),1)
 Q=
