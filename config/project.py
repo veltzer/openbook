@@ -116,7 +116,7 @@ may alternativly wish to contribute to the mutopia project at http://www.mutopia
 How do I build the pdfs?
 ------------------------
 
-* you need tools installed. on Ubuntu ```$ sudo apt install python3 virtualenv lilypond qpdf ghostscript```
+* you need tools installed. on Ubuntu ```$ sudo apt install python3 virtualenv lilypond qpdf```
 * make sure you install lilypond version {config.openbook.lilypond_version}. This project is based on this version.
 * clone the repository ```$ git clone {project_website_git}```
 * cd into the newly created folder ```$ cd {project_top_folder}```

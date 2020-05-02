@@ -92,7 +92,7 @@ No. Rock and Pop will be welcome and so would classical. If you are really into 
 How do I build the pdfs?
 ------------------------
 
-* you need tools installed. on Ubuntu ```$ sudo apt install python3 virtualenv lilypond qpdf ghostscript```
+* you need tools installed. on Ubuntu ```$ sudo apt install python3 virtualenv lilypond qpdf```
 * make sure you install lilypond version 2.18.2. This project is based on this version.
 * clone the repository ```$ git clone git://github.com/veltzer/openbook.git```
 * cd into the newly created folder ```$ cd openbook```
