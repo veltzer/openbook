@@ -29,4 +29,6 @@ jobs:
         source .venv/bin/activate
         pip install -r requirements.txt
     - name: Build
-      run: make
+      run: |
+        source .venv/bin/activate
+        make
