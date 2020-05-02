@@ -22,7 +22,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Install system-wide dependencies
-      run: sudo apt install python3 virtualenv lilypond qpdf ghostscript
+      run: sudo apt install python3 virtualenv lilypond qpdf ghostscript tidy
     - name: Virtualev setup
       run: |
         virtualenv --python=/usr/bin/python3 .venv
