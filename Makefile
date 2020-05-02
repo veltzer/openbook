@@ -26,7 +26,7 @@ DO_OGG:=0
 # should we do the full books ?
 DO_BOOKS_PDF:=1
 # do you want to validate html?
-DO_CHECKHTML:=1
+DO_CHECKHTML:=0
 # which books should we do?
 NAMES:=openbook israeli drumming rockbook guitar_album
 # should we do tools?
