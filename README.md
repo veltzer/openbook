@@ -1,4 +1,4 @@
-openbook
+OpenBook
 ========
 
 ![build](https://github.com/veltzer/openbook/workflows/build/badge.svg)
@@ -78,16 +78,21 @@ I will make you an admin...
 
 How do you write the standards?
 --------------------------------
-Using lilypond. Check it out at: http://www.lilypond.org/.
+Using lilypond. Check it out at http://www.lilypond.org/.
 
 Will you co-operate with the lilypond, mutopia and wikifonia communities?
 --------------------------------------------------------------------------
-YES! Any bugs or feature suggestion are submitted to the lilypond community. Any requests for pieces from the mutopia community will be respected.
-Wikifonia uses musicXML for typesetting while I use an essentially lilypond format as input format - so there could not be much co-operation there.
+YES! Any bugs or feature suggestion are submitted to the lilypond community.
+Any requests for pieces from the mutopia community will be respected.
+Wikifonia uses musicXML for typesetting while I use an essentially lilypond
+format as input format - so there could not be much co-operation there.
 
 Do you only allow Jazz tunes?
 ------------------------------
-No. Rock and Pop will be welcome and so would classical. If you are really into classical lilypond production you may alternativly wish to contribute to the mutopia project at http://www.mutopiaproject.org/.
+No. Rock and Pop will be welcome and so would classical.
+If you are really into classical lilypond production you may alternativly
+wish to contribute to the mutopia project at http://www.mutopiaproject.org/.
+
 
 How do I build the pdfs?
 ------------------------

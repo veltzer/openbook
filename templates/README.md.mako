@@ -3,7 +3,7 @@
     import user.personal
     import config.git
     line = "=" * len(config.project.project_name)
-%>${config.project.project_name}
+%>${config.project.project_name_fancy}
 ${line}
 
 ![build](https://github.com/veltzer/${config.project.project_name}/workflows/build/badge.svg)
