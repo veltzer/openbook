@@ -95,8 +95,8 @@ Check out the PDFs and other outputs in {project_website}.
 
 Why is there so little documentation?
 --------------------------------------
-I just started this project (4 years all in all). Feel free to add stuff and request a pull.\ If you contribute a lot
-I will make you an admin...
+I just started this project (4 years all in all). Feel free to add stuff and request a pull.
+If you contribute a lot I will make you an admin...
 
 How do you write the standards?
 --------------------------------
