@@ -19,3 +19,9 @@ ${a}
 ${a}
 % endfor
 % endif
+% if config.python.test_requires:
+# test requirements
+% for a in config.python.test_requires:
+${a}
+% endfor
+% endif
