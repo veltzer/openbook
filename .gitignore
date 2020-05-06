@@ -17,3 +17,5 @@ __pycache__
 
 /.pydmt/
 /.venv/
+
+/docs/web/*.pdf
