@@ -21,7 +21,7 @@
 	remove all of this junk and use mako to replace it with my email (either hebrew or not).
 
 - print git shortlog or something on the page of openbook where I list contributions.
-	(do it using templar or something).
+	(do it using templating or something).
 - some songs have more than one name.
 	This is not a subtitle, this is a different name
 	Some songs belong to musicals,
@@ -40,14 +40,11 @@
 - add spell checking on the lyrics of the songs.
 - add spell checking on the html pages.
 - learn some design and design the front page of openbook better.
-- create the CREDITS file using templar for info from git.
-- create the LICENSE file using templar and the collection of licensing on the debian based system.
+- create the CREDITS file using templating for info from git.
+- create the LICENSE file using templating and the collection of licensing on the debian based system.
 - add to the pdf stuff like the operating system release that this was built on.
 - the output pdf still has hardcoded my name, year of start and more.
-	make it take it all from templar.
-- move to a new ubuntu_install.py script which installs my ppa
-	and templar and all.
-	(also remove unneeded stuff like okular etc).
+	make it take it all from config.
 - all the checks should be done in python.
 	translate them all to python.
 - if let say I have a fake book tune and I know it's location

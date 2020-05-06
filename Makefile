@@ -176,10 +176,10 @@ stamp: $(FILES_STAMP)
 ly: $(FILES_LY)
 	$(info doing [$@])
 
-$(TOOLS): templardefs/deps.py
+$(TOOLS): config/packages.py
 	$(info doing [$@])
-	$(Q)templar install_deps
-	$(Q)make_helper touch-mkdir $@
+	$(Q)install_deps
+	$(Q)pymakehelper touch-mkdir $@
 
 .PHONY: debug
 debug:

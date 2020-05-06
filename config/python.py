@@ -21,6 +21,7 @@ dev_requires = [
     'tqdm',
     'PyMySQL',
     'mako',
+    'pymakehelper',
 ]
 
 python_requires = ">=3"

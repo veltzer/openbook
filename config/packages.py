@@ -3,10 +3,10 @@ packs = [
     'python3',  # for the python scripts
     'virutalenv',  # for using virtualenv for python
     'lilypond',  # this is the main tool we use
-    'ghostscript',  # for ps2pdf(1), pdf2ps(1) (used in pdf size reduction)
     'qpdf',  # for qpdf(1) (used in pdf size reduction)
 
     # for producing extra stuff (not critical)
+    'ghostscript',  # for ps2pdf(1), pdf2ps(1) (used in pdf size reduction)
     'timidity',  # play output midi and convert midi to wav
     'lame',  # convert audio (encode ogg)
 

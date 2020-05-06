@@ -6,3 +6,4 @@ python-dateutil
 tqdm
 PyMySQL
 mako
+pymakehelper

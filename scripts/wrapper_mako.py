@@ -77,7 +77,6 @@ def main():
         gattr['break_after_tune'] = False
         # put a page break after the toc?
         gattr['break_after_toc'] = True
-        # this is here until we get rid of this script and do everything using templar
         gattr['lilypond_version'] = config.openbook.lilypond_version
         attributes = attr.Attributes()
         if p_cut:
