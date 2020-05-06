@@ -5,6 +5,8 @@ OpenBook
 
 version: 171
 
+viewer version: 2.3.200
+
 OpenBook is an open source Jazz real book
 
 What is OpenBook?

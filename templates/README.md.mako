@@ -1,5 +1,6 @@
 <%!
     import config.project
+    import config.openbook
     import user.personal
     import config.git
     line = "=" * len(config.project.project_name)
@@ -9,6 +10,8 @@ ${line}
 ![build](https://github.com/veltzer/${config.project.project_name}/workflows/build/badge.svg)
 
 version: ${config.git.git_last_tag}
+
+viewer version: ${config.openbook.pdfjs_version}
 
 ${config.project.project_long_description}
 
