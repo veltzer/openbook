@@ -1,7 +1,6 @@
 % This .ly file has text lines below the score, so it embeds the contents of
 % lz.ly, rather than \include'ing it.
 
-\version "2.18.0"
 \include "english.ly"
 
 % Top-level details for this tune:

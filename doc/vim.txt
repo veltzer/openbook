@@ -5,7 +5,7 @@ How to edit .mako files using the vim editor?
 	or maybe even edit /etc/vim/vimrc (not recommended).
 - add the next lines in your ~/.vimrc:
 	filetype off
-	set runtimepath+=/usr/share/lilypond/2.18.2/vim/
+	set runtimepath+=/usr/share/lilypond/[lilypond_version]/vim/
 	filetype on
 	after this you can edit lilypond files with syntax highlighting.
 - It seems that after the previous instructions .mako files also do lilypond

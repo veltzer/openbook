@@ -97,12 +97,13 @@ wish to contribute to the mutopia project at http://www.mutopiaproject.org/.
 How do I build the pdfs?
 ------------------------
 
-* you need tools installed. on Ubuntu ```$ sudo apt install python3 virtualenv lilypond qpdf```
-* make sure you install lilypond version 2.18.2. This project is based on this version.
+* you need tools installed. on Ubuntu ```$ sudo apt install lilypond qpdf```
 * clone the repository ```$ git clone git://github.com/veltzer/openbook.git```
 * cd into the newly created folder ```$ cd openbook```
+* install python tools to create a python virtual envrionment. on Ubuntu ```$ sudo apt install python3 virtualenv```
 * create a python virtual environment ```$ virtualenv --python=/usr/bin/python3 .venv```
 * activate the virutal env ```$ source .venv/bin/activate```
+* update pip ```$ python -m pip install --upgrade pip```
 * install the python prerequisites ```$ pip install -r requirements.txt```
 * run the build process ```$ make```
 * the pdfs should now be built and you will find them in the 'docs' folder.
@@ -118,20 +119,28 @@ How do I contribute?
 
 Can I just add a single tune?
 -----------------------------
-Yes. To add a tune named "yourtune" just add single file named
+Yes. To add a tune named [tunename] just add single file named
 
-        src/openbook/yourtune.ly.mako
+        src/openbook/[tunename].ly.mako
 Yes, the extension should be .mako since I use mako for templating.
 In that file there are sections. Just copy them from some other tune. One section for
 chords, another for lyrics, another for the melody etc.
 After working on the tune build just a single tune by issueing:
-
-        make out/src/openbook/yourtune.pdf
+        make out/src/openbook/[tunename].pdf
 or
-
-        make out/src/openbook/yourtune.midi
+        make out/src/openbook/[tunename].midi
 or
-        make out/src/openbook/yourtune.stamp
+        make out/src/openbook/[tunename].stamp
+to get both pdf and midi.
+
+Can I just build a single tune?
+-------------------------------
+Sure. Just use:
+        make out/src/openbook/[tunename].pdf
+to build the pdf
+        make out/src/openbook/[tunename].midi
+to build the midi
+        make out/src/openbook/[tunename].stamp
 to get both pdf and midi.
 
 What about MusicXML?

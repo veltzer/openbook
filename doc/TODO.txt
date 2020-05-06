@@ -4,10 +4,8 @@
 - create the github workflow file from template and put the version
 	we test on of ubuntu and the python versions we test on
 	as parameters.
-- enable to run on lilypond 2.20.0 too.
 - remove mark@veltzer.net as email and templatize it.
 - stop using git in the makefile. It breaks the build from a zip file.
-- move to lilypond 2.20.0. You can install it manually.
 - wrap the pdf.js viewer as a library and use it like that and not like a page (viewer.html).
 - veltzer.net is mentioned all over (and mark@veltzer.net). move the website of the project to the right
 	thing and my email to the right email.

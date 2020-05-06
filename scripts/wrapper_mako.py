@@ -5,6 +5,7 @@ import mako.exceptions
 import mako.lookup
 import mako.template
 import os.path
+import config.openbook
 
 from scripts import attr
 
@@ -77,7 +78,7 @@ def main():
         # put a page break after the toc?
         gattr['break_after_toc'] = True
         # this is here until we get rid of this script and do everything using templar
-        gattr['lilypond_version'] = '2.18.2'
+        gattr['lilypond_version'] = config.openbook.lilypond_version
         attributes = attr.Attributes()
         if p_cut:
             template.render(attributes=attributes, gattr=gattr, scratch={})

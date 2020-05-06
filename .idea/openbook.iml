@@ -12,13 +12,6 @@
     <orderEntry type="jdk" jdkName="Python 3.6 (openbook)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
-  <component name="TemplatesService">
-    <option name="TEMPLATE_FOLDERS">
-      <list>
-        <option value="$MODULE_DIR$/.venv/default/lib/python3.6/site-packages/sphinx/ext/autosummary/templates" />
-      </list>
-    </option>
-  </component>
   <component name="TestRunnerService">
     <option name="projectConfiguration" value="Nosetests" />
     <option name="PROJECT_TEST_RUNNER" value="Nosetests" />

@@ -1,4 +1,3 @@
-\version "2.18.2"
 \include "english.ly"
 
 % ref app:p:/1t/fakebooks/Jazz/RealBook/Z/Zingaro_br_224.pdf

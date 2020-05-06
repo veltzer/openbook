@@ -26,8 +26,7 @@ from pytconf.config import Config, ParamCreator, config_arg_parse_and_launch, re
 from pytconf.extended_enum import ExtendedEnum
 
 
-def remove_outputs_if_exist():
-    # type: () -> None
+def remove_outputs_if_exist() -> None:
     """
     remove the target files, do nothing if they are not there
     :return:
@@ -38,8 +37,7 @@ def remove_outputs_if_exist():
         os.unlink(ConfigAll.pdf)
 
 
-def print_outputs(output, errout, status, args):
-    # type: (str, str, int, List[str]) -> None
+def print_outputs(output: str, errout: str, status: int, args: List[str]) -> None:
     """
     print output of the program in case of error
     """
@@ -53,13 +51,11 @@ def print_outputs(output, errout, status, args):
     print('{0}: error in executing {1}'.format(sys.argv[0], args), file=sys.stderr)
 
 
-def system_check_output(args):
-    # type: (List[str]) -> None
+def system_check_output(args: List[str]) -> None:
     """
     this function is here because we want to supress output until we know
     there is an error (and subprocess.check_output does not do this)
     """
-    # type: (List[str]) -> None
     if ConfigAll.do_debug:
         print('{0}: running [{1}]'.format(sys.argv[0], args), file=sys.stderr)
     pr = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -114,7 +110,7 @@ class ConfigAll(Config):
 @register_endpoint(
     configs=[ConfigAll],
 )
-def run():
+def run() -> None:
     if ConfigAll.do_debug:
         print('{0}: arguments are [{1}]'.format(sys.argv[0], sys.argv), file=sys.stderr)
 
@@ -171,7 +167,7 @@ def run():
 
 
 @register_main()
-def main():
+def main() -> None:
     """
     Run the lilypond wrapper
     :return:

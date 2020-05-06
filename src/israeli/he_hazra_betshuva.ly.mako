@@ -59,6 +59,8 @@
 	\tempo "Allegro" 4 = 130
 	\time 4/4
 	\key c \minor
+
+	e
 }
 % endif
 

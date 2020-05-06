@@ -10,7 +10,7 @@
 % this version tag will keep me compiling only on this version of lilypond.
 %=====================================================================
 
-\version "2.18.2"
+\version "2.20.0"
 
 % lets define a variable to hold the formatted build date (man 3 strftime):
 %date=#(strftime "%T %d-%m-%Y" (localtime (current-time)))
@@ -257,13 +257,13 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 171" }
-				\fill-line { \small "Git describe: 171-85-gd12a907" }
-				\fill-line { \small "Git commits: 1576" }
-				\fill-line { \small "Build date: 04:46:18 02-05-2020" }
+				\fill-line { \small "Git describe: 171-102-g08ee60a" }
+				\fill-line { \small "Git commits: 1593" }
+				\fill-line { \small "Build date: 06:42:07 06-05-2020" }
 				\fill-line { \small "Build user: mark" }
 				\fill-line { \small "Build host: newton" }
-				\fill-line { \small "Build kernel: Linux 5.3.0-51-lowlatency" }
-				\fill-line { \small "Lilypond version: 2.18.2" }
+				\fill-line { \small "Build kernel: Linux 5.4.0-29-lowlatency" }
+				\fill-line { \small "Lilypond version: 2.20.0" }
 				\fill-line { \small "Number of tunes: 151" }
 				\null
 				\null
@@ -445,7 +445,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -467,7 +467,8 @@ endChords={}
 
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -485,7 +486,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -503,6 +505,7 @@ endChords={}
 	"500" _ _ mi -- les high __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -691,7 +694,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -710,6 +713,7 @@ endChords={}
 	you! __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -882,7 +886,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -908,6 +912,7 @@ endChords={}
 	ev -- 'ry day in the life of a fool. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -1120,7 +1125,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -1150,7 +1155,8 @@ endChords={}
 
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -1180,6 +1186,7 @@ endChords={}
 
 
 
+}
 	>>
 	\layout {
 	}
@@ -1376,7 +1383,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -1399,6 +1406,7 @@ endChords={}
 	A where. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -1773,7 +1781,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -1792,7 +1800,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -1811,6 +1820,7 @@ endChords={}
 	far a -- way A Night -- in -- gale Sang In Ber -- k'ley Square. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -2180,7 +2190,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -2197,7 +2207,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -2225,6 +2236,7 @@ endChords={}
 	I real -- ly won -- der where __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -2383,7 +2395,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -2415,6 +2427,7 @@ endChords={}
 	take all of me __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -2601,7 +2614,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -2634,6 +2647,7 @@ endChords={}
 	All __ Or Noth -- ing At All! __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -2813,7 +2827,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -2840,6 +2854,7 @@ endChords={}
 	When All The Things You Are, are mine. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -3024,7 +3039,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -3046,7 +3061,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -3075,6 +3091,7 @@ endChords={}
 	A
 }
 
+}
 	>>
 	\layout {
 	}
@@ -3253,7 +3270,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -3278,6 +3295,7 @@ endChords={}
 	Al -- ways. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -3469,7 +3487,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -3484,6 +3502,7 @@ endChords={}
 	And as the tear drops start, __ I find a bro -- ken heart A -- mong My Sou -- ve -- nirs.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -3671,7 +3690,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -3704,7 +3723,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -3721,6 +3741,7 @@ endChords={}
 	mis -- spent with An -- gel Eyes to -- night. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -3907,7 +3928,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -3941,7 +3962,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -3958,6 +3980,7 @@ endChords={}
 	As Time Goes _ _ By __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -4331,7 +4354,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -4366,7 +4389,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -4400,6 +4424,7 @@ endChords={}
 	it's good to live it a -- gain.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -4583,7 +4608,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -4610,6 +4635,7 @@ endChords={}
 	When Au -- tumn Leaves start to fall. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -4940,7 +4966,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -4973,6 +4999,7 @@ endChords={}
 	I'm I. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -5324,7 +5351,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -5346,7 +5373,8 @@ endChords={}
 
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -5369,7 +5397,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -5390,6 +5419,7 @@ endChords={}
 	The_blue -- ness of the_true -- ness of our love __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -5850,7 +5880,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -5883,7 +5913,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -5900,6 +5931,7 @@ endChords={}
 	With _ _ _ _ _ _ your wee head u -- pon my knee.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -6069,7 +6101,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -6091,6 +6123,7 @@ endChords={}
 	Blue days all of them gone, noth -- ing but blue skies from now on.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -6577,7 +6610,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -6617,7 +6650,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -6632,6 +6666,7 @@ endChords={}
 	Two lov -- ing arms he can nest -- le in and stay. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -6835,7 +6870,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -6864,7 +6899,8 @@ endChords={}
 
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -6885,7 +6921,8 @@ endChords={}
 
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -6913,6 +6950,7 @@ endChords={}
 
 
 
+}
 	>>
 	\layout {
 	}
@@ -7109,7 +7147,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -7137,6 +7175,7 @@ endChords={}
 	know. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -7321,7 +7360,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -7350,7 +7389,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -7368,6 +7408,7 @@ endChords={}
 	Al -- though I
 }
 
+}
 	>>
 	\layout {
 	}
@@ -7557,7 +7598,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -7586,6 +7627,7 @@ endChords={}
 	bye. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -7755,7 +7797,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -7770,6 +7812,7 @@ endChords={}
 	He can come home as late as can be, __ home with -- out him __ ain't no home to me, __ Can't Help Lov -- in' Dat Man of mine. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -7962,7 +8005,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -7991,7 +8034,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -8008,6 +8052,7 @@ endChords={}
 	This mem -- 'ry of our Ca -- ra -- van __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -8199,7 +8244,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -8243,6 +8288,7 @@ endChords={}
 	When we set -- tle down there'll __ be No More Blues. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -8429,7 +8475,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -8455,7 +8501,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -8470,6 +8517,7 @@ endChords={}
 	two hand are sure to sly -- ly meet be -- neath a ser -- vi -- nette, with
 }
 
+}
 	>>
 	\layout {
 	}
@@ -8632,7 +8680,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -8664,6 +8712,7 @@ endChords={}
 	I'm with you rain _ or shine!
 }
 
+}
 	>>
 	\layout {
 	}
@@ -9028,7 +9077,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -9054,6 +9103,7 @@ endChords={}
 	Cry Me A Riv -- er, I cried a riv -- er o -- ver you. __ you. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -9222,7 +9272,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -9248,7 +9298,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -9263,6 +9314,7 @@ endChords={}
 	there's my love up a -- bove
 }
 
+}
 	>>
 	\layout {
 	}
@@ -9433,7 +9485,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -9466,6 +9518,7 @@ endChords={}
 	Oh, Darn That Dream.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -9663,7 +9716,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -9692,6 +9745,7 @@ endChords={}
 	Then you won't be Slight -- ly Out Of Tune, __ you'll sing a -- long with me. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -10036,7 +10090,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -10068,7 +10122,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -10085,6 +10140,7 @@ endChords={}
 	_ _ _ Don't Blame Me.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -10255,7 +10311,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -10292,6 +10348,7 @@ endChords={}
 	Don't Ex -- plain! __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -10475,7 +10532,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -10495,6 +10552,7 @@ endChords={}
 	more.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -10849,7 +10907,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -10879,7 +10937,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -10896,6 +10955,7 @@ endChords={}
 }
 
 
+}
 	>>
 	\layout {
 	}
@@ -11080,7 +11140,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -11106,7 +11166,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -11121,6 +11182,7 @@ endChords={}
 	that it does seem a
 }
 
+}
 	>>
 	\layout {
 	}
@@ -11482,7 +11544,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -11500,7 +11562,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -11526,6 +11589,7 @@ endChords={}
 	and has -- ten to me. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -11707,7 +11771,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -11731,6 +11795,7 @@ endChords={}
 	true! __ In oth -- er words, __ I love you! __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -11907,7 +11972,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -11928,7 +11993,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -11942,6 +12008,7 @@ endChords={}
 	And our love will be sweet, will be
 }
 
+}
 	>>
 	\layout {
 	}
@@ -12090,7 +12157,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -12107,7 +12174,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -12124,6 +12192,7 @@ endChords={}
 	Check -- mate __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -12460,7 +12529,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -12477,7 +12546,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -12489,6 +12559,7 @@ endChords={}
 	Love come __ here in my heart __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -12683,7 +12754,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -12698,7 +12769,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -12715,6 +12787,7 @@ endChords={}
 	who but my la -- _ dy Green -- sleeves.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -12898,7 +12971,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -12915,7 +12988,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -12926,6 +13000,7 @@ endChords={}
 	May -- be I'm wrong __ dream -- ing of you, __ dream -- ing the lone -- ly night thru, __ _
 }
 
+}
 	>>
 	\layout {
 	}
@@ -13092,7 +13167,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -13121,6 +13196,7 @@ endChords={}
 	That's why I know, __ _ yes, I know. __ _ Hal -- le -- lu -- jah, I just love him so. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -13310,7 +13386,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -13338,6 +13414,7 @@ endChords={}
 	I. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -13507,7 +13584,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -13532,6 +13609,7 @@ endChords={}
 	that lit -- tle kiss your stole Heald all my heart and soul. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -13738,7 +13816,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -13769,6 +13847,7 @@ endChords={}
 
 
 
+}
 	>>
 	\layout {
 	}
@@ -13959,7 +14038,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -13977,6 +14056,7 @@ endChords={}
 	Rose. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -14148,7 +14228,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -14173,6 +14253,7 @@ endChords={}
 	How Deep Is The O -- cean, how high is the sky?
 }
 
+}
 	>>
 	\layout {
 	}
@@ -14367,7 +14448,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -14400,6 +14481,7 @@ endChords={}
 
 
 
+}
 	>>
 	\layout {
 	}
@@ -14599,7 +14681,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -14623,7 +14705,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -14643,6 +14726,7 @@ endChords={}
 	What __ was I __ to do? __ What can __ one do __ when a love __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -14807,7 +14891,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -14821,6 +14905,7 @@ endChords={}
 	well, Ba -- by I can't give you an -- y -- thing but love. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -15011,7 +15096,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -15045,6 +15130,7 @@ endChords={}
 	_ I con -- cen -- trate, __ and con -- cen -- trate __ on you. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -15236,7 +15322,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -15266,6 +15352,7 @@ endChords={}
 	all night. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -15449,7 +15536,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -15471,7 +15558,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -15496,6 +15584,7 @@ endChords={}
 	If they
 }
 
+}
 	>>
 	\layout {
 	}
@@ -15686,7 +15775,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -15717,6 +15806,7 @@ endChords={}
 	a flame in your heart __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -15920,7 +16010,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -15951,7 +16041,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -15969,6 +16060,7 @@ endChords={}
 	I is glad I's a live. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -16131,7 +16223,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -16144,6 +16236,7 @@ endChords={}
 	a -- bove the blue __ and wind -- y sea. When I come home to you San Fran -- cis-- co your gold -- en sun will sine for me. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -16306,7 +16399,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -16336,6 +16429,7 @@ endChords={}
 	To you and me.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -16519,7 +16613,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -16550,7 +16644,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -16566,6 +16661,7 @@ endChords={}
 	I'm still in love with _ you. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -16757,7 +16853,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -16784,6 +16880,7 @@ endChords={}
 	You! __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -16958,7 +17055,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -16993,6 +17090,7 @@ endChords={}
 	And I'll see you_with my heart __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -17177,7 +17275,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -17193,6 +17291,7 @@ endChords={}
 	you
 }
 
+}
 	>>
 	\layout {
 	}
@@ -17366,7 +17465,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -17392,7 +17491,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -17407,6 +17507,7 @@ endChords={}
 	I
 }
 
+}
 	>>
 	\layout {
 	}
@@ -17589,7 +17690,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -17607,6 +17708,7 @@ endChords={}
 	_
 }
 
+}
 	>>
 	\layout {
 	}
@@ -17794,7 +17896,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -17811,6 +17913,7 @@ endChords={}
 	long. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -17993,7 +18096,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -18019,7 +18122,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -18033,6 +18137,7 @@ endChords={}
 	Is -- n't It Ro -- man -- tic? Ev -- 'ry note that's sung is like a lov -- er's kiss.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -18212,7 +18317,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -18250,6 +18355,7 @@ endChords={}
 	It Might __ _ As Well __ _ Be Spring! __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -18443,7 +18549,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -18484,6 +18590,7 @@ endChords={}
 	It Nev -- er En -- tered My Mind. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -18646,7 +18753,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -18668,6 +18775,7 @@ endChords={}
 	The sto -- ry ends and we're just friends.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -18863,7 +18971,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -18895,7 +19003,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -18913,6 +19022,7 @@ endChords={}
 %% part "A"
 }
 
+}
 	>>
 	\layout {
 	}
@@ -19103,7 +19213,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -19131,6 +19241,7 @@ endChords={}
 	Love. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -19312,7 +19423,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -19332,6 +19443,7 @@ endChords={}
 	And we're lost out here in the stars. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -19542,7 +19654,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -19562,6 +19674,7 @@ endChords={}
 	Sale.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -19750,7 +19863,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -19786,6 +19899,7 @@ endChords={}
 	_ all be -- cause __ we're in love. __ __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -19968,7 +20082,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -19986,7 +20100,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -20010,6 +20125,7 @@ endChords={}
 	I'm too Mist -- y and too much in Love.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -20176,7 +20292,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -20199,6 +20315,7 @@ endChords={}
 	you and I and Moon -- light In Ver -- mont.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -20383,7 +20500,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -20412,7 +20529,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -20428,6 +20546,7 @@ endChords={}
 	these are a few of My Fa -- vor -- ite Things.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -20610,7 +20729,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -20644,6 +20763,7 @@ endChords={}
 	Heart. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -20816,7 +20936,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -20846,6 +20966,7 @@ endChords={}
 	Each day is Val -- en -- tine's day. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -21044,7 +21165,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -21079,6 +21200,7 @@ endChords={}
 	Love.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -21254,7 +21376,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -21279,6 +21401,7 @@ endChords={}
 	My Ro -- mance does -- n't need a thing but you. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -21474,7 +21597,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -21505,6 +21628,7 @@ endChords={}
 	if the ship I sing does -- n't al -- so bring my own true love to me. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -21667,7 +21791,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -21698,6 +21822,7 @@ endChords={}
 	in re -- turn.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -21869,7 +21994,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -21885,6 +22010,7 @@ endChords={}
 	get it, __ won't you tell me how? __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -22068,7 +22194,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -22102,7 +22228,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -22122,6 +22249,7 @@ endChords={}
 	Night And Day __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -22450,7 +22578,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -22467,6 +22595,7 @@ endChords={}
 	long. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -22647,7 +22776,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -22665,7 +22794,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -22688,6 +22818,7 @@ endChords={}
 	when it goes a -- way, __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -23021,7 +23152,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -23054,6 +23185,7 @@ endChords={}
 	Bet -- ter play __ the note __ you know.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -23228,7 +23360,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -23260,6 +23392,7 @@ endChords={}
 	When -- ev -- er you can hear O -- pus One. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -23419,7 +23552,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -23440,6 +23573,7 @@ endChords={}
 	but the moon -- beams that fall, on -- ly seem to re -- call, love is all, love is you.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -23784,7 +23918,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -23817,6 +23951,7 @@ endChords={}
 	when I kiss the pug -- nosed dream. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -23991,7 +24126,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -24006,6 +24141,7 @@ endChords={}
 	sigh or _ cry, __ I just mus' "die.\"" Poor _ But -- ter -- fly. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -24178,7 +24314,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -24194,6 +24330,7 @@ endChords={}
 	in your eyes __ my love is a pre -- lude that nev -- er dies __ a Pre -- lude To A Kiss. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -24355,7 +24492,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -24383,6 +24520,7 @@ endChords={}
 	Oh, __ my love. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -24573,7 +24711,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -24600,6 +24738,7 @@ endChords={}
 	me.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -24786,7 +24925,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -24819,7 +24958,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -24835,6 +24975,7 @@ endChords={}
 	And ol'
 }
 
+}
 	>>
 	\layout {
 	}
@@ -25017,7 +25158,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -25040,7 +25181,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -25054,6 +25196,7 @@ endChords={}
 	Speaks lat -- in that Sat -- in Doll.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -25539,7 +25682,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -25559,7 +25702,8 @@ endChords={}
 
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -25580,6 +25724,7 @@ endChords={}
 }
 
 
+}
 	>>
 	\layout {
 	}
@@ -25806,7 +25951,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -25850,7 +25995,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -25865,6 +26011,7 @@ endChords={}
 	To one who'll watch o -- ver %% me
 }
 
+}
 	>>
 	\layout {
 	}
@@ -26063,7 +26210,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -26097,7 +26244,8 @@ endChords={}
 
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -26117,6 +26265,7 @@ endChords={}
 
 
 
+}
 	>>
 	\layout {
 	}
@@ -26443,7 +26592,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -26466,6 +26615,7 @@ endChords={}
 	She's eve -- ry -- thing on_this earth to me.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -26658,7 +26808,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -26688,7 +26838,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -26703,6 +26854,7 @@ endChords={}
 	just can't get my poor __ self to -- geth -- er, __ I'm wear -- y all __ the
 }
 
+}
 	>>
 	\layout {
 	}
@@ -26855,7 +27007,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -26872,6 +27024,7 @@ endChords={}
 	\markup \italic (Hum) __ _ Here is a strange and bit -- ter crop. \markup \italic (Hum) __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -27042,7 +27195,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -27072,6 +27225,7 @@ endChords={}
 	It turned out so right __ for Strang -- ers In The Night. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -27262,7 +27416,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -27299,6 +27453,7 @@ endChords={}
 	stand -- _ in' by. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -27644,7 +27799,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -27666,7 +27821,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -27679,6 +27835,7 @@ endChords={}
 	If __ you miss the "\"A\"" Train, __ You'll find you've missed the quick -- est way to Har -- lem. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -27853,7 +28010,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -27876,6 +28033,7 @@ endChords={}
 	Your arms op -- ened wide and closed me in -- side; you took my lips, you took my love so Ten -- der -- ly. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -28062,7 +28220,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -28092,7 +28250,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -28112,6 +28271,7 @@ endChords={}
 	All, That's All. There are
 }
 
+}
 	>>
 	\layout {
 	}
@@ -28305,7 +28465,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -28338,7 +28498,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -28353,6 +28514,7 @@ endChords={}
 	that when __ she pass -- __ es, each one __ she pass -- __ es goes _ "\"ah!\"" __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -28563,7 +28725,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -28605,6 +28767,7 @@ endChords={}
 
 
 
+}
 	>>
 	\layout {
 	}
@@ -28797,7 +28960,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -28816,7 +28979,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -28828,6 +28992,7 @@ endChords={}
 	spired, __ now they're juse rou -- tine.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -29005,7 +29170,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -29031,6 +29196,7 @@ endChords={}
 	night The Near -- ness Of You. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -29205,7 +29371,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -29236,6 +29402,7 @@ endChords={}
 	The sha -- dow of your
 }
 
+}
 	>>
 	\layout {
 	}
@@ -29412,7 +29579,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -29450,6 +29617,7 @@ endChords={}
 	I'll re -- mem -- ber __ all win -- ter long.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -29661,7 +29829,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -29695,7 +29863,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -29715,6 +29884,7 @@ endChords={}
 	Just the way you look to -- night.
 }
 
+}
 	>>
 	\layout {
 	}
@@ -29889,7 +30059,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -29913,6 +30083,7 @@ endChords={}
 	if there will nev -- er ev -- er be an -- oth -- er you?
 }
 
+}
 	>>
 	\layout {
 	}
@@ -30108,7 +30279,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -30147,7 +30318,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -30180,6 +30352,7 @@ endChords={}
 	Who's got the last laugh
 }
 
+}
 	>>
 	\layout {
 	}
@@ -30358,7 +30531,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -30390,6 +30563,7 @@ endChords={}
 	No! They Can't Take That A -- way From Me! __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -30560,7 +30734,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -30585,6 +30759,7 @@ endChords={}
 	but still I love to look __ in your eyes. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -30744,7 +30919,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -30764,6 +30939,7 @@ endChords={}
 	thinks that I am Un -- for -- get -- __ ta -- ble too. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -30956,7 +31132,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -30980,7 +31156,8 @@ endChords={}
 
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -30994,7 +31171,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -31009,6 +31187,7 @@ endChords={}
 	her sil -- ly old
 }
 
+}
 	>>
 	\layout {
 	}
@@ -31325,7 +31504,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -31357,7 +31536,8 @@ endChords={}
 }
 
 
-\new Lyrics="Lyrics" \lyricsto "Voice"
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -31373,6 +31553,7 @@ endChords={}
 	since that mo -- ment of
 }
 
+}
 	>>
 	\layout {
 	}
@@ -31549,7 +31730,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -31578,6 +31759,7 @@ endChords={}
 	Yes, I think to my -- self What A Won -- der -- ful World. __
 }
 
+}
 	>>
 	\layout {
 	}
@@ -31764,7 +31946,7 @@ endChords={}
 
 
 }
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 	
 
 
@@ -31800,6 +31982,7 @@ endChords={}
 	you. __
 }
 
+}
 	>>
 	\layout {
 	}

@@ -5,11 +5,6 @@ this script gets the graph data for the openbook progress report
 the idea is to be able to see in a graph the progress being made in
 this project.
 
-CHANGELOG:
-19/11/11: wrote the damn script.
-21/11/11: added insertion of graph data into the database.
-25/07/14: moved to python3, removed corrupt handling and added progress report.
-
 TODO:
     - modify this script to produce counts for both jazz and non-jazz tunes.
         (very easy). This way the data that is outputted will be related to the openbook pdf.

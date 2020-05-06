@@ -571,31 +571,34 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 }
 % endif
 % if attributes.getWorkingVersion()['doLyrics']:
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 % if gattr['inline']:
 	<%include file="/${file}" args="part=Lyrics"/>
 % endif
 % if gattr['inline']==False:
 	\Lyrics
 % endif
+}
 % endif
 % if attributes.getWorkingVersion()['doLyricsmore']:
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 % if gattr['inline']:
 	<%include file="/${file}" args="part=Lyricsmore"/>
 % endif
 % if gattr['inline']==False:
 	\Lyricsmore
 % endif
+}
 % endif
 % if attributes.getWorkingVersion()['doLyricsmoremore']:
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 % if gattr['inline']:
 	<%include file="/${file}" args="part=Lyricsmoremore"/>
 % endif
 % if gattr['inline']==False:
 	\Lyricsmoremore
 % endif
+}
 % endif
 	>>
 	\layout {
@@ -628,31 +631,34 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 % endif
 % if gattr['lyricsInMidi']:
 % if attributes.getWorkingVersion()['doLyrics']:
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 % if gattr['inline']:
 	<%include file="/${file}" args="part=Lyrics"/>
 % endif
 % if gattr['inline']==False:
 	\Lyrics
 % endif
+}
 % endif
 % if attributes.getWorkingVersion()['doLyricsmore']:
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 % if gattr['inline']:
 	<%include file="/${file}" args="part=Lyricsmore"/>
 % endif
 % if gattr['inline']==False:
 	\Lyricsmore
 % endif
+}
 % endif
 % if attributes.getWorkingVersion()['doLyricsmoremore']:
-\new Lyrics="Lyrics" \lyricsto "Voice"
+\new Lyrics="Lyrics" \lyricsto "Voice" {
 % if gattr['inline']:
 	<%include file="/${file}" args="part=Lyricsmoremore"/>
 % endif
 % if gattr['inline']==False:
 	\Lyricsmoremore
 % endif
+}
 % endif
 % endif
 	>>

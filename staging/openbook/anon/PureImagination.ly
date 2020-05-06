@@ -1,4 +1,3 @@
-\version "2.18.2"
 \include "english.ly"
 
 myTitle = "Pure Imagination"

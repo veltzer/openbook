@@ -46,9 +46,9 @@ OUT_DIR:=out
 # where is the common file?
 COMMON:=include/common.ly.mako
 # wrappers
-LILYPOND_WRAPPER:=python3 -m scripts.wrapper_lilypond
+LILYPOND_WRAPPER:=python -m scripts.wrapper_lilypond
 LILYPOND_WRAPPER_DEP:=scripts/wrapper_lilypond.py
-MAKO_WRAPPER:=python3 -m scripts.wrapper_mako
+MAKO_WRAPPER:=python -m scripts.wrapper_mako
 MAKO_WRAPPER_DEP:=scripts/wrapper_mako.py
 MAKO_DEPS_WRAPPER:=scripts/mako_deps.py
 MIDI2WAV_WRAPPER:=scripts/midi2wav.pl
