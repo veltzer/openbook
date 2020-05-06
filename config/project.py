@@ -156,13 +156,6 @@ or
         make out/src/openbook/yourtune.stamp
 to get both pdf and midi.
 
-Can I just build a single tune?
--------------------------------
-Yes.
-        make out/src/openbook/[tune_name].pdf
-        make out/src/openbook/[tune_name].midi
-        make out/src/openbook/[tune_name].stamp
-
 What about MusicXML?
 --------------------
 Sorry, this project is lilypond based. Patches for MusicXML will be welcome but I don't
