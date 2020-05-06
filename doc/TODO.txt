@@ -1,3 +1,6 @@
+- create a github workflow to run on build which will also test on ubuntu 20.04
+	(which means lilypond 2.20.0). This is possible via the "image" tag
+	in their workflow.
 - allow rendering to linnstrument (already have a sample of how to do it
 	in demos-lilypond).
 	same for guitar tabs.
