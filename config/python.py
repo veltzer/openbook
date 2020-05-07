@@ -23,6 +23,8 @@ dev_requires = [
     'mako',
     'pymakehelper',
 ]
+test_os="[ubuntu-16.04, ubuntu-18.04, macos-10.15]"
+test_python="[3.6, 3.7, 3.8]"
 
 python_requires = ">=3"
 

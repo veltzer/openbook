@@ -1,5 +1,6 @@
 <%!
     import config.project
+    import config.python
     import config.openbook
     import user.personal
     import config.git
@@ -8,6 +9,11 @@
 ${line}
 
 ![build](https://github.com/veltzer/${config.project.project_name}/workflows/build/badge.svg)
+
+test matrix
+-----------
+test_os: ${config.python.test_os}
+test_python: ${config.python.test_python}
 
 version: ${config.git.git_last_tag}
 

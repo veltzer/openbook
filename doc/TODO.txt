@@ -1,13 +1,9 @@
 - create a github workflow to run on build which will also test on ubuntu 20.04
 	(which means lilypond 2.20.0). This is possible via the "image" tag
 	in their workflow.
-- do tests on macos too.
 - allow rendering to linnstrument (already have a sample of how to do it
 	in demos-lilypond).
 	same for guitar tabs.
-- create the github workflow file from template and put the version
-	we test on of ubuntu and the python versions we test on
-	as parameters.
 - remove mark@veltzer.net as email and templatize it.
 - stop using git in the makefile. It breaks the build from a zip file.
 - wrap the pdf.js viewer as a library and use it like that and not like a page (viewer.html).
