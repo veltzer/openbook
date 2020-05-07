@@ -17,7 +17,7 @@ jobs:
       run: |
         apt-get update
         apt-get install -y lilypond qpdf python3 python3-pip git python3-virtualenv
-        dpkg --listfies python3-virtualenv
+        dpkg --listfiles python3-virtualenv
         #virtualenv .venv
         #source .venv/bin/activate
         #python -m pip install --upgrade pip
