@@ -13,10 +13,12 @@ jobs:
     - uses: actions/checkout@v2
     - name: Install system-wide dependencies
       run: |
+        # update must be done first or it doesn't know anything about any package
+        apt-get update
         # because tzdata is interactive
         export DEBIAN_FRONTEND=noninteractive
         apt-get -y install tzdata
-        apt-get update
+        # this is the real installation
         apt-get install -y lilypond qpdf python3 python3-pip git python3-virtualenv
         dpkg --listfiles python3-virtualenv
         #virtualenv .venv
