@@ -15,6 +15,5 @@ python -m pip install --upgrade pip
 # install requirements
 pip install -r requirements.txt
 # build
-# make
-# make all_tunes
-ls -la
+make
+make all_tunes
