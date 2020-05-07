@@ -1,11 +1,8 @@
 <%!
     import config.python
 %>name: build_cont
+# on: [push, pull_request]
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
 jobs:
   build:
     name: Build on ${"${{ matrix.container }}"}

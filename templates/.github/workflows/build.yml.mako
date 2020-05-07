@@ -1,11 +1,7 @@
 <%!
     import config.python
 %>name: build
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+on: [push, pull_request]
 jobs:
   build:
     runs-on: ${"${{ matrix.os }}"}
