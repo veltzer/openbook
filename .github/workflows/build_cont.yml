@@ -11,7 +11,7 @@ jobs:
     container: ${{ matrix.container }}
     strategy:
       matrix:
-        container: config.python.test_containers
+        container: [ 'ubuntu:16.04', 'ubuntu:18.04', 'ubuntu:20.04' ]
         python-version: [3.6, 3.7, 3.8]
     steps:
     - uses: actions/checkout@v2

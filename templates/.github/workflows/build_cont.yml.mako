@@ -13,7 +13,7 @@ jobs:
     container: ${"${{ matrix.container }}"}
     strategy:
       matrix:
-        container: config.python.test_containers
+        container: ${config.python.test_container}
         python-version: ${config.python.test_python}
     steps:
     - uses: actions/checkout@v2
