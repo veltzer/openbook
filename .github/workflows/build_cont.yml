@@ -14,7 +14,8 @@ jobs:
     - name: Install system-wide dependencies
       run: |
         # because tzdata is interactive
-        export DEBIAN_FRONTEND=noninteractive apt-get -y install tzdata
+        export DEBIAN_FRONTEND=noninteractive
+        apt-get -y install tzdata
         apt-get update
         apt-get install -y lilypond qpdf python3 python3-pip git python3-virtualenv
         dpkg --listfiles python3-virtualenv
