@@ -2,7 +2,6 @@
     import config.python
 %>name: build_cont
 # on: [push, pull_request]
-on:
 jobs:
   build:
     name: Build on ${"${{ matrix.container }}"}
