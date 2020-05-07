@@ -1,6 +1,6 @@
 <%!
     import config.python
-%>name: build
+%>name: build_cont
 on:
   push:
     branches: [ master ]
