@@ -102,14 +102,12 @@ TOOLS:=out/tools.stamp
 ALL_DEP+=$(TOOLS)
 endif # DO_TOOLS
 
-# this finds the sources via git
-SOURCES_ALL:=$(shell git ls-files)
 # this find the sources without git...
 SOURCES_ALL:=$(subst ./,,$(shell find src -type f -and -name "*.mako"))
 FILES_MAKO:=$(filter %.ly.mako,$(SOURCES_ALL))
 FILES_MAKO_BASE:=$(basename $(basename $(FILES_MAKO)))
 
-FILES_JAZZ:=$(shell git ls-files src/openbook)
+FILES_JAZZ:=$(subst ./,,$(shell find src/openbook -type f -and -name "*.mako"))
 
 FILES_MAKO_DEPS:=$(addsuffix .mako.d,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
 FILES_LY:=$(addsuffix .ly,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
@@ -337,7 +335,7 @@ define template
 TMPL_LY_$(1):=$$(DOCS)/$(1).ly
 TMPL_PS_$(1):=$$(DOCS)/$(1).ps
 TMPL_PDF_$(1):=$$(DOCS)/$(1).pdf
-TMPL_PREREQ_$(1):=$(shell git ls-files src/$(1))
+TMPL_PREREQ_$(1):=$(subst ./,,$(shell find src/$(1) -type f -and -name "*.mako"))
 $$(TMPL_PDF_$(1)): $$(TMPL_LY_$(1)) $$(LILYPOND_WRAPPER_DEP) $$(ALL_DEP)
 	$$(info doing [$$@])
 	$$(Q)$$(LILYPOND_WRAPPER) run --ps $$(TMPL_PS_$(1)) --pdf $$(TMPL_PDF_$(1)) --out $$(DOCS) --ly $$<
