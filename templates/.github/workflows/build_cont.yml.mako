@@ -1,7 +1,7 @@
 <%!
     import config.python
 %>name: build_cont
-on: [pull_request]
+on: [push, pull_request]
 jobs:
   build:
     name: Build on ${"${{ matrix.container }}"}
@@ -19,5 +19,6 @@ jobs:
         apt-get install -y lilypond qpdf python3 python3-pip git
         python3 -m pip install --upgrade pip
         pip install -r requirements.txt
-        make
-        make all_tunes
+        ls
+        # make
+        # make all_tunes
