@@ -22,6 +22,4 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Build
-      run: make
-    - name: BuildAllTunes
-      run: make all_tunes
+      run: make all all_tunes

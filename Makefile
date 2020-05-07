@@ -164,6 +164,7 @@ endif # DO_CHECKHTML
 # rules #
 #########
 # do not touch this rule or add a recipe to it. This is to force 'make' to take the new $(ALL)
+.PHONY: all
 all: $(ALL)
 
 .PHONY: stamp
