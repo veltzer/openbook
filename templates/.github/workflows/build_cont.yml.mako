@@ -20,7 +20,7 @@ jobs:
     - name: Install system-wide dependencies
       run: |
         apt-get update
-        apt-get install -y lilypond qpdf python3 python3-pip
+        apt-get install -y lilypond qpdf python3 python3-pip git
         python3 -m pip install --upgrade pip
         pip install -r requirements.txt
         make
