@@ -218,6 +218,11 @@ clean_all_png:
 	$(info doing [$@])
 	$(Q)-find $(SOURCE_DIR) -name "*.png" -exec rm -f {} \;
 
+.PHONY: clean_docs
+clean_docs:
+	$(info doing [$@])
+	$(Q)rm -f $(OUT_PDF) $(OUT_PS) $(OUT_LY)
+
 # checks
 
 .PHONY: check_ws

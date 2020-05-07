@@ -15,4 +15,5 @@ python -m pip install --upgrade pip
 # install requirements
 pip install -r requirements.txt
 # build
+make clean_docs
 make all all_tunes
