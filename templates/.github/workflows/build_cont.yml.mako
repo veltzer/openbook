@@ -1,7 +1,7 @@
 <%!
     import config.python
 %>name: build_cont
-# on: [push, pull_request]
+on: [pull_request]
 jobs:
   build:
     name: Build on ${"${{ matrix.container }}"}
