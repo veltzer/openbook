@@ -8,12 +8,15 @@
 %>${config.project.project_name_fancy}
 ${line}
 
+build
+-----
 ![build](https://github.com/veltzer/${config.project.project_name}/workflows/build/badge.svg)
-
-test matrix
------------
 * test_os: ${config.python.test_os}
 * test_python: ${config.python.test_python}
+
+build_cont
+----------
+![build](https://github.com/veltzer/${config.project.project_name}/workflows/build_cont/badge.svg)
 * test_container: ${config.python.test_container}
 
 version: ${config.git.git_last_tag}

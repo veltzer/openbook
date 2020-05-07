@@ -1,12 +1,15 @@
 OpenBook
 ========
 
+build
+-----
 ![build](https://github.com/veltzer/openbook/workflows/build/badge.svg)
-
-test matrix
------------
 * test_os: [ubuntu-16.04, ubuntu-18.04]
 * test_python: [3.6, 3.7, 3.8]
+
+build_cont
+----------
+![build](https://github.com/veltzer/openbook/workflows/build_cont/badge.svg)
 * test_container: [ 'ubuntu:18.04', 'ubuntu:20.04' ]
 
 version: 171

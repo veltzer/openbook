@@ -20,4 +20,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Build
-      run: make all all_tunes
+      run: |
+        make clean_docs
+        make all all_tunes
