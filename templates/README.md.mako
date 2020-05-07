@@ -12,8 +12,8 @@ ${line}
 
 test matrix
 -----------
-test_os: ${config.python.test_os}
-test_python: ${config.python.test_python}
+* test_os: ${config.python.test_os}
+* test_python: ${config.python.test_python}
 
 version: ${config.git.git_last_tag}
 

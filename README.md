@@ -5,8 +5,8 @@ OpenBook
 
 test matrix
 -----------
-test_os: [ubuntu-16.04, ubuntu-18.04]
-test_python: [3.6, 3.7, 3.8]
+* test_os: [ubuntu-16.04, ubuntu-18.04]
+* test_python: [3.6, 3.7, 3.8]
 
 version: 171
 
