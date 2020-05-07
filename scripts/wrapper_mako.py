@@ -6,12 +6,13 @@ import mako.lookup
 import mako.template
 import os.path
 import config.openbook
+import io
 
 from scripts import attr
 
 
 def is_ready(filename):
-    for line in open(filename):
+    for line in io.open(filename, encoding='utf-8'):
         if line == '\tattributes[\'completion\']=\'5\'\n':
             return True
     return False
