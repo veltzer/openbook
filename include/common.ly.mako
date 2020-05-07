@@ -14,9 +14,19 @@
 	gattr['date']=datetime.datetime.now().strftime('%T %d-%m-%Y')
 	gattr['year']=datetime.datetime.now().strftime('%Y')
 	gattr['username']=pwd.getpwuid(os.getuid())[0]
-	gattr['gittag']=subprocess.check_output(['git','describe','--abbrev=0','--always']).decode().strip()
-	gattr['gitdesc']=subprocess.check_output(['git','describe','--tags','--always']).decode().strip()
-	gattr['gitcommits']=subprocess.check_output(['git','log','--pretty=format:\'\'']).decode().split('\n').__len__()
+
+	if os.path.exists(".git"):
+		tag=subprocess.check_output(['git','describe','--abbrev=0','--always']).decode().strip()
+		desc=subprocess.check_output(['git','describe','--tags','--always']).decode().strip()
+		commits=subprocess.check_output(['git','log','--pretty=format:\'\'']).decode().split('\n').__len__()
+	else:
+		tag="no-tag"
+		desc="no-desc"
+		commits="no-commits"
+	gattr['gittag']=tag
+	gattr['gitdesc']=desc
+	gattr['gitcommits']=commits
+
 	gattr['hostname']=socket.gethostname()
 	gattr['kernel']=os.uname()[0]+' '+os.uname()[2]
 	gattr['copyrightvalstudy']='-- no copyright notice for study materials --'
