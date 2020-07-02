@@ -1,3 +1,6 @@
+<%
+TONALITY='c'
+%>
 <%def name="defs()">
 %% end verbatim - this comment is a hack to prevent texinfo.tex
 %% from choking on non-European UTF-8 subsets
@@ -248,7 +251,7 @@ ${self.defs()}
 				\null
 				\null
 				\null
-				\fill-line { \fontsize #11 \bold "OpenBook" }
+				\fill-line { \fontsize #11 \bold "OpenBook (${TONALITY})"}
 				\null
 				\null
 				\fill-line { \larger \larger \bold "An open source Jazz real book" }
@@ -522,10 +525,10 @@ ${self.clearVars()}
 % if gattr['inline']==False:
 %% lets emit the blocks
 % if attributes.getWorkingVersion()['doChords']:
-Chords=<%include file="/${file}" args="part=Chords"/>
+Chords=\transpose c ${TONALITY} {<%include file="/${file}" args="part=Chords"/>}
 % endif
 % if attributes.getWorkingVersion()['doVoice']:
-Voice=\relative c' <%include file="/${file}" args="part=Voice"/>
+Voice=\transpose c ${TONALITY} {\relative c' <%include file="/${file}" args="part=Voice"/>}
 % endif
 % if attributes.getWorkingVersion()['doLyrics']:
 Lyrics=<%include file="/${file}" args="part=Lyrics"/>

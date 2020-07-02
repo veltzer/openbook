@@ -1,28 +1,13 @@
-OpenBook
-========
-
-build
------
-![build](https://github.com/veltzer/openbook/workflows/build/badge.svg)
-* test_os: [ubuntu-16.04, ubuntu-18.04]
-* test_python: [3.6, 3.7, 3.8]
-
-build_cont
-----------
-![build](https://github.com/veltzer/openbook/workflows/build_cont/badge.svg)
-* test_container: [ 'ubuntu:18.04', 'ubuntu:20.04' ]
-
-version: 171
-
-viewer version: 2.3.200
-
-What is OpenBook?
+<%!
+    import config.project
+%>What is OpenBook?
 ------------------
-OpenBook is a Jazz real book constructed with free software. A real book simply means a big book with lots ofJazz tunes or standards as they are more widely known.
+OpenBook is a Jazz real book constructed with free software. A real book simply means a big book with lots of\
+Jazz tunes or standards as they are more widely known.
 
 Where is the projects website?
 -------------------------------
-https://veltzer.github.io/openbook
+${config.project.project_website}
 
 Why did you start this?
 ------------------------
@@ -78,7 +63,7 @@ Your name could be here if you contribute...
 
 Where can I see some results?
 ------------------------------
-Check out the PDFs and other outputs in https://veltzer.github.io/openbook.
+Check out the PDFs and other outputs in ${config.project.project_website}.
 
 Why is there so little documentation?
 --------------------------------------
@@ -107,8 +92,8 @@ How do I build the pdfs?
 ------------------------
 
 * you need tools installed. on Ubuntu ```$ sudo apt install lilypond qpdf```
-* clone the repository ```$ git clone git://github.com/veltzer/openbook.git```
-* cd into the newly created folder ```$ cd openbook```
+* clone the repository ```$ git clone ${config.project.project_website_git}```
+* cd into the newly created folder ```$ cd ${config.project.project_top_folder}```
 * install python tools to create a python virtual envrionment. on Ubuntu ```$ sudo apt install python3 virtualenv```
 * create a python virtual environment ```$ virtualenv --python=/usr/bin/python3 .venv```
 * activate the virutal env ```$ source .venv/bin/activate```
@@ -181,6 +166,3 @@ Look in the "doc" subfolder of the source code...
 How can I get a version of this book in a key other than C?
 -----------------------------------------------------------
 Just edit `include/common.ly.mako` and change TONALITY='c' to "bes" or "ees" before compiling.
-
-
-	Mark Veltzer <mark.veltzer@gmail.com>, 2009-2020

@@ -23,8 +23,6 @@ version: ${config.git.git_last_tag}
 
 viewer version: ${config.openbook.pdfjs_version}
 
-${config.project.project_long_description}
-
-${config.project.project_description}
+<%include file="../snipplets/main.md.mako" />
 
 	${user.personal.personal_origin}, ${config.project.project_copyright_years}

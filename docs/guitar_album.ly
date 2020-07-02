@@ -2,6 +2,7 @@
 
 
 
+
 % lets emit the definitions
 
 % end verbatim - this comment is a hack to prevent texinfo.tex
@@ -215,7 +216,7 @@ endChords={}
 				\null
 				\null
 				\null
-				\fill-line { \fontsize #11 \bold "OpenBook" }
+				\fill-line { \fontsize #11 \bold "OpenBook (c)"}
 				\null
 				\null
 				\fill-line { \larger \larger \bold "An open source Jazz real book" }
@@ -257,12 +258,12 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 171" }
-				\fill-line { \small "Git describe: 171-151-g239b55f" }
-				\fill-line { \small "Git commits: 1642" }
-				\fill-line { \small "Build date: 21:27:22 25-05-2020" }
+				\fill-line { \small "Git describe: 171-155-g1551220" }
+				\fill-line { \small "Git commits: 1646" }
+				\fill-line { \small "Build date: 22:36:22 01-07-2020" }
 				\fill-line { \small "Build user: mark" }
 				\fill-line { \small "Build host: newton" }
-				\fill-line { \small "Build kernel: Linux 5.4.0-31-lowlatency" }
+				\fill-line { \small "Build kernel: Linux 5.4.0-39-lowlatency" }
 				\fill-line { \small "Lilypond version: 2.20.0" }
 				\fill-line { \small "Number of tunes: 1" }
 				\null
