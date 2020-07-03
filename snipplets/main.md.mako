@@ -1,5 +1,7 @@
 <%!
     import config.project
+    import config.python
+    import config.packages
 %>What is OpenBook?
 ------------------
 OpenBook is a Jazz real book constructed with free software. A real book simply means a big book with lots of\
@@ -22,7 +24,15 @@ used by Jazz musicians both for practice and for performance.
 
 What tools are used?
 ---------------------
-lilypond, make, python, virtualenv, qpdf, ghostscript, mako, lame, timidity and more.
+% for k,v in config.packages.packs.items():
+* ${k}: ${v}
+% endfor
+
+What python modules are used?
+-----------------------------
+% for k,v in config.python.dev_requires.items():
+* ${k}: ${v}
+% endfor
 
 What is produced?
 ------------------

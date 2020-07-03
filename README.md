@@ -37,7 +37,32 @@ used by Jazz musicians both for practice and for performance.
 
 What tools are used?
 ---------------------
-lilypond, make, python, virtualenv, qpdf, ghostscript, mako, lame, timidity and more.
+* python3: for the python scripts
+* virutalenv: for using virtualenv for python
+* lilypond: this is the main tool we use
+* qpdf: for qpdf(1) (used in pdf size reduction)
+* ghostscript: for ps2pdf(1), pdf2ps(1) (used in pdf size reduction)
+* timidity: play output midi and convert midi to wav
+* lame: convert audio (encode ogg)
+* tidy: for tidy(1) (used in checking HTML)
+* okular: kde pdf reader
+* python-mako-doc: documentation for the template preprocessor
+* texi2html: needed to install lilypond from source
+* guile-2.0-dev: needed to install lilypond from source
+* lilypond-doc: documentation for lilypond
+* lilypond-doc-html: documentation for lilypond
+* lilypond-doc-pdf: documentation for lilypond
+* npm: for htmlhint
+
+What python modules are used?
+-----------------------------
+* pydmt: for building the project
+* pytconf: for command line parsing
+* python-dateutil: for doing graphs of progress
+* tqdm: for doing graphs of progress
+* PyMySQL: for doing graphs of progress
+* mako: the templating solution used by this project
+* pymakehelper: help module for writing makefiles easier
 
 What is produced?
 ------------------
