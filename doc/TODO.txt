@@ -1,3 +1,7 @@
+- on the title page of the book it appears as "Openbook (c)"
+	which looks like a copyright sign but is really the key.
+	Add the "c" in it's own line "Key: c"
+	under "Openbook"
 - the stuff which appears in the book which is:
 	- website of the book
 	- my email on every page.
