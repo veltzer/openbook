@@ -24,6 +24,14 @@ Where is the projects website?
 -------------------------------
 https://veltzer.github.io/openbook
 
+Requirements
+------------------------
+
+ * [Python3](https://realpython.com/installing-python)
+ * [pip](https://pip.pypa.io/en/stable/installing)
+ * [qpdf](https://github.com/qpdf/qpdf)
+ * make (on Mac/OS X this is part of X-Code or [command line tools](https://stackoverflow.com/a/9329325/2223106))
+
 Why did you start this?
 ------------------------
 Because of many reasons:
