@@ -56,7 +56,7 @@
 	- put in youtube performances
 	- put in the lyrics url
 	TODO:
-	- add another version of this tune.
+	- add the hal leonard version (page 49)
 % endif
 
 % if part=='ChordsFake':

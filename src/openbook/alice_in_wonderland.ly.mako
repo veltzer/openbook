@@ -18,6 +18,9 @@
 	attributes['poet']='Bob Hilliard'
 	# this is from the real book
 	attributes['piece']='Med.'
+	# this is from the Hal Leonard Real Jazz Book
+	attributes['copyright']='1951 Walt Disney Music Company'
+	attributes['copyrightextra']='Copyright Renewed'
 
 	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
 	attributes['completion']='5'
@@ -45,12 +48,9 @@
 	- put in youtube performances.
 	- put in lyrics url.
 	- put in the real book lyrics (from the internet)
+	- put in the copyright (from the hal leonard book)
 	TODO:
-	- put in the copyright (from where?)
-	- put more versions in here (from where?)
-	REMARKS:
-	- if you want a vocal recording then you can find one at:
-		http://www.youtube.com/watch?v=seToJih5eq0
+	- put in the hal leonard version (page 27)
 % endif
 
 % if part=='ChordsReal':

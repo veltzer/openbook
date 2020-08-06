@@ -1,3 +1,7 @@
+- test building on macos
+	look at:
+	https://docs.github.com/en/actions/reference/virtual-environments-for-github-hosted-runners
+	at what testing environment for macs github supply.
 - on the title page of the book it appears as "Openbook (c)"
 	which looks like a copyright sign but is really the key.
 	Add the "c" in it's own line "Key: c"

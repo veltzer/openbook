@@ -9,4 +9,4 @@ We currently use python3
 Specifially I use 3.5.2 on my machine but that is a technicality.
 
 Why? 3 is better than 2 and and the 3 branch is mature stable and full of
-stuff we want.
+stuff we want. 2 is over.
