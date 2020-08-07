@@ -12,7 +12,7 @@ build_cont
 ![build](https://github.com/veltzer/openbook/workflows/build_cont/badge.svg)
 * test_container: [ 'ubuntu:18.04', 'ubuntu:20.04' ]
 
-version: 171
+version: 172
 
 viewer version: 2.3.200
 
