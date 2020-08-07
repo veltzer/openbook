@@ -100,7 +100,6 @@ wish to contribute to the mutopia project at http://www.mutopiaproject.org/.
 
 How do I build the pdfs?
 ------------------------
-
 * you need tools installed. on Ubuntu ```$ sudo apt install lilypond qpdf```
 * clone the repository ```$ git clone ${config.project.project_website_git}```
 * cd into the newly created folder ```$ cd ${config.project.project_top_folder}```
@@ -112,6 +111,15 @@ How do I build the pdfs?
 * run the build process ```$ make```
 * the pdfs should now be built and you will find them in the 'docs' folder.
 * if you want to build all the tunes individually then run ```$ make all_tunes```
+
+
+MacOS user notes:
+-----------------
+* [Python3](https://realpython.com/installing-python)
+* [pip](https://pip.pypa.io/en/stable/installing)
+* [qpdf](https://github.com/qpdf/qpdf)
+* make (on Mac/OS X this is part of X-Code or [command line tools](https://stackoverflow.com/a/9329325/2223106))
+
 
 How do I contribute?
 --------------------
