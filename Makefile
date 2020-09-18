@@ -212,7 +212,10 @@ todo:
 .PHONY: clean
 clean:
 	$(Q)rm -f $(ALL) $(OUT_LY) $(OUT_PS) $(OUT_PDF)
-
+.PHONY: clean_hard
+clean_hard:
+	$(info doing [$@])
+	$(Q)git clean -xdf > /dev/null
 .PHONY: clean_all_png
 clean_all_png:
 	$(info doing [$@])
