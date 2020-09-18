@@ -257,13 +257,13 @@ endChords={}
 				\null
 				\null
 				\null
-				\fill-line { \small "Git tag: 171" }
-				\fill-line { \small "Git describe: 171-155-g1551220" }
-				\fill-line { \small "Git commits: 1646" }
-				\fill-line { \small "Build date: 22:35:37 01-07-2020" }
+				\fill-line { \small "Git tag: 172" }
+				\fill-line { \small "Git describe: 172-2-gac4ce51" }
+				\fill-line { \small "Git commits: 1657" }
+				\fill-line { \small "Build date: 16:19:33 18-09-2020" }
 				\fill-line { \small "Build user: mark" }
 				\fill-line { \small "Build host: newton" }
-				\fill-line { \small "Build kernel: Linux 5.4.0-39-lowlatency" }
+				\fill-line { \small "Build kernel: Linux 5.4.0-47-lowlatency" }
 				\fill-line { \small "Lilypond version: 2.20.0" }
 				\fill-line { \small "Number of tunes: 151" }
 				\null
@@ -2249,7 +2249,7 @@ endChords={}
 %% just a little space
 	\null
 	\fill-line {
-		\smaller \smaller { "-- help me fill it out this copyright notice --" }
+		\smaller \smaller { "Copyright © 1951 Walt Disney Music Company" }
 	}
 	\fill-line {
 		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
