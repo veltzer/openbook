@@ -6,7 +6,7 @@ packs = {
     'qpdf': 'for qpdf(1) (used in pdf size reduction)',
 
     # for producing extra stuff (not critical)
-    'ghostscript': 'for ps2pdf(1), pdf2ps(1) (used in pdf size reduction)',
+    'ghostscript': 'for ps2pdf(1), pdf2ps(1), gv (used in pdf size reduction and cutting pdfs)',
     'timidity': 'play output midi and convert midi to wav',
     'lame': 'convert audio (encode ogg)',
 
