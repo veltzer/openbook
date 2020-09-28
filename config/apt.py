@@ -9,7 +9,7 @@ apt_codename = subprocess.check_output(["lsb_release", "--codename", "--short"])
 apt_arch = subprocess.check_output(
     "dpkg-architecture | grep -e ^DEB_BUILD_ARCH= | cut -d = -f 2", shell=True
 ).decode().rstrip()
-apt_architectures = "{0} source".format(apt_arch)
+apt_architectures = f"{apt_arch} source"
 apt_component = "main"
 apt_folder = "apt"
 apt_service_dir = os.path.join(
