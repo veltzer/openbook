@@ -23,12 +23,10 @@ dev_requires = {
     'mako': 'the templating solution used by this project',
     'pymakehelper': 'help module for writing makefiles easier',
 }
+python_requires = ">=3"
+
 # test_os="[ubuntu-16.04, ubuntu-18.04, macos-10.15]"
 test_os="[ubuntu-16.04, ubuntu-18.04, ubuntu-20.04]"
 test_python="[3.6, 3.7, 3.8]"
 test_container="[ 'ubuntu:18.04', 'ubuntu:20.04' ]"
 
-python_requires = ">=3"
-
-# deb section
-deb_package = False

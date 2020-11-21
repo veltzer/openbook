@@ -178,7 +178,7 @@ ly: $(FILES_LY)
 $(TOOLS): config/packages.py
 	$(info doing [$@])
 	$(Q)install_deps
-	$(Q)pymakehelper touch-mkdir $@
+	$(Q)pymakehelper touch_mkdir $@
 
 .PHONY: debug
 debug:
