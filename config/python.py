@@ -14,19 +14,17 @@ install_requires = [
 test_requires = [
 ]
 
-dev_requires = {
-    'pydmt': 'for building the project',
-    'pytconf': 'for command line parsing',
-    'python-dateutil': 'for doing graphs of progress',
-    'tqdm': 'for doing graphs of progress',
-    'PyMySQL': 'for doing graphs of progress',
-    'mako': 'the templating solution used by this project',
-    'pymakehelper': 'help module for writing makefiles easier',
-}
+dev_requires = [
+    'pydmt',
+    'pytconf',
+    'python-dateutil',
+    'tqdm',
+    'PyMySQL',
+    'mako',
+    'pymakehelper',
+]
 python_requires = ">=3"
 
-# test_os="[ubuntu-16.04, ubuntu-18.04, macos-10.15]"
 test_os="[ubuntu-16.04, ubuntu-18.04, ubuntu-20.04]"
 test_python="[3.6, 3.7, 3.8]"
 test_container="[ 'ubuntu:18.04', 'ubuntu:20.04' ]"
-

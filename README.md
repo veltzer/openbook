@@ -41,7 +41,7 @@ What tools are used?
 * virutalenv: for using virtualenv for python
 * lilypond: this is the main tool we use
 * qpdf: for qpdf(1) (used in pdf size reduction)
-* ghostscript: for ps2pdf(1), pdf2ps(1) (used in pdf size reduction)
+* ghostscript: for ps2pdf(1), pdf2ps(1), gv (used in pdf size reduction and cutting pdfs)
 * timidity: play output midi and convert midi to wav
 * lame: convert audio (encode ogg)
 * tidy: for tidy(1) (used in checking HTML)
@@ -56,13 +56,13 @@ What tools are used?
 
 What python modules are used?
 -----------------------------
-* pydmt: for building the project
-* pytconf: for command line parsing
-* python-dateutil: for doing graphs of progress
-* tqdm: for doing graphs of progress
-* PyMySQL: for doing graphs of progress
-* mako: the templating solution used by this project
-* pymakehelper: help module for writing makefiles easier
+* pydmt
+* pytconf
+* python-dateutil
+* tqdm
+* PyMySQL
+* mako
+* pymakehelper
 
 What is produced?
 ------------------

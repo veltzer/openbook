@@ -30,8 +30,8 @@ What tools are used?
 
 What python modules are used?
 -----------------------------
-% for k,v in config.python.dev_requires.items():
-* ${k}: ${v}
+% for k in config.python.dev_requires:
+* ${k}
 % endfor
 
 What is produced?
