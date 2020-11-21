@@ -5,5 +5,5 @@ pytconf
 python-dateutil
 tqdm
 PyMySQL
-mako
+Mako
 pymakehelper

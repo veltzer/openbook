@@ -20,7 +20,7 @@ dev_requires = [
     'python-dateutil',
     'tqdm',
     'PyMySQL',
-    'mako',
+    'Mako',
     'pymakehelper',
 ]
 python_requires = ">=3"

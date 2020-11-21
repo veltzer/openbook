@@ -56,13 +56,13 @@ What tools are used?
 
 What python modules are used?
 -----------------------------
-* pydmt
-* pytconf
-* python-dateutil
-* tqdm
-* PyMySQL
-* mako
-* pymakehelper
+* pydmt: python dependency management tool
+* pytconf: pytconf handles configuration, config files and command line parsing
+* python-dateutil: Extensions to the standard Python datetime module
+* tqdm: Fast, Extensible Progress Meter
+* PyMySQL: Pure Python MySQL Driver
+* Mako: A super-fast templating language that borrows the  best ideas from the existing templating languages.
+* pymakehelper: pymakehelper helps doing things with the make system
 
 What is produced?
 ------------------
