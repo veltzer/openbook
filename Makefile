@@ -231,24 +231,24 @@ clean_docs:
 .PHONY: check_ws
 check_ws:
 	$(info doing [$@])
-	$(Q)make_helper wrapper-ok grep -e "[[:space:]]$$" $(FILES_MAKO)
+	$(Q)pymakehelper only_print_on_error grep -e "[[:space:]]$$" $(FILES_MAKO)
 .PHONY: check_naked_mymark
 check_naked_mymark:
 	$(info doing [$@])
-	$(Q)grep "\myMark" $(FILES_MAKO) | make_helper wrapper-ok grep -v \"
+	$(Q)grep "\myMark" $(FILES_MAKO) | pymakehelper only_print_on_error grep -v \"
 .PHONY: check_and
 check_and:
 	$(info doing [$@])
-	$(Q)make_helper wrapper-ok grep "composer=\".* and .*\"" $(FILES_MAKO)
-	$(Q)make_helper wrapper-ok grep "poet=\".* and .*\"" $(FILES_MAKO)
+	$(Q)pymakehelper only_print_on_error grep "composer=\".* and .*\"" $(FILES_MAKO)
+	$(Q)pymakehelper only_print_on_error grep "poet=\".* and .*\"" $(FILES_MAKO)
 .PHONY: check_mark
 check_mark:
 	$(info doing [$@])
-	$(Q)make_helper wrapper-ok grep --files-without-match "\\\\myMark" $(FILES_JAZZ)
+	$(Q)pymakehelper only_print_on_error grep --files-without-match "\\\\myMark" $(FILES_JAZZ)
 .PHONY: check_key
 check_key:
 	$(info doing [$@])
-	$(Q)grep "\\\\key" $(FILES_JAZZ) | grep -v major | make_helper wrapper-ok grep -v minor
+	$(Q)grep "\\\\key" $(FILES_JAZZ) | grep -v major | pymakehelper only_print_on_error grep -v minor
 .PHONY: check_python
 check_python:
 	$(info doing [$@])
@@ -256,27 +256,27 @@ check_python:
 .PHONY: check_hardcoded_names
 check_hardcoded_names:
 	$(info doing [$@])
-	$(Q)make_helper wrapper-ok git $(GITARGS) grep veltzer
+	$(Q)pymakehelper only_print_on_error git $(GITARGS) grep veltzer
 .PHONY: check_parts
 check_parts:
 	$(info doing [$@])
-	$(Q)git grep "%% part" src | make_helper wrapper-ok grep -v \"
+	$(Q)git grep "%% part" src | pymakehelper only_print_on_error grep -v \"
 .PHONY: check_volta_last
 check_volta_last:
 	$(info doing [$@])
-	$(Q)make_helper wrapper-ok grep alternative `git grep -L myEndLineVolta src/openbook`
+	$(Q)pymakehelper only_print_on_error grep alternative `git grep -L myEndLineVolta src/openbook`
 .PHONY: check_null
 check_null:
 	$(info doing [$@])
-	$(Q)git grep null src | make_helper wrapper-ok grep -v include
+	$(Q)git grep null src | pymakehelper only_print_on_error grep -v include
 .PHONY: check_alternative
 check_alternative:
 	$(info doing [$@])
-	$(Q)git grep \\\\alternative src | make_helper wrapper-ok grep -v "}"
+	$(Q)git grep \\\\alternative src | pymakehelper only_print_on_error grep -v "}"
 .PHONY: check_tempo
 check_tempo:
 	$(info doing [$@])
-	$(Q)git grep "\\\\tempo " src | make_helper wrapper-ok grep -v \"
+	$(Q)git grep "\\\\tempo " src | pymakehelper only_print_on_error grep -v \"
 .PHONY: check_all
 check_all: check_ws check_naked_mymark check_and check_mark check_key check_python check_parts check_volta_last check_null check_alternative check_tempo
 
