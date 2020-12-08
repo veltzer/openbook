@@ -215,7 +215,7 @@ clean:
 .PHONY: clean_hard
 clean_hard:
 	$(info doing [$@])
-	$(Q)git clean -xdf > /dev/null
+	$(Q)git clean -qffxd
 .PHONY: clean_all_png
 clean_all_png:
 	$(info doing [$@])
