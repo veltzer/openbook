@@ -1,3 +1,7 @@
+- The page numbers are alternating between right and left and there is really
+	no need for that since this is not a book.
+	The hint about how to do this is here:
+	http://lilypond.1069038.n5.nabble.com/Question-about-page-number-position-and-ornamentation-td136399.html
 - test building on macos
 	look at:
 	https://docs.github.com/en/actions/reference/virtual-environments-for-github-hosted-runners
