@@ -140,15 +140,15 @@ Yes, the extension should be .mako since I use mako for templating.
 In that file there are sections. Just copy them from some other tune. One section for
 chords, another for lyrics, another for the melody etc.
 After working on the tune build just a single tune by issueing:
-```
+```sh
 make out/src/openbook/[tunename].pdf
 ```
 or
-```
+```sh
 make out/src/openbook/[tunename].midi
 ```
 or
-```
+```sh
 make out/src/openbook/[tunename].stamp
 ```
 to get both pdf and midi.
@@ -156,15 +156,15 @@ to get both pdf and midi.
 Can I just build a single tune?
 -------------------------------
 Sure. Just use:
-```
+```sh
 make out/src/openbook/[tunename].pdf
 ```
 to build the pdf
-```
+```sh
 make out/src/openbook/[tunename].midi
 ```
 to build the midi
-```
+```sh
 make out/src/openbook/[tunename].stamp
 ```
 to get both pdf and midi.
