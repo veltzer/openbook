@@ -216,6 +216,7 @@ clean:
 clean_hard:
 	$(info doing [$@])
 	$(Q)git clean -qffxd
+	$(Q)rm -f $(ALL) $(OUT_LY) $(OUT_PS) $(OUT_PDF)
 .PHONY: clean_all_png
 clean_all_png:
 	$(info doing [$@])
