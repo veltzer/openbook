@@ -5,12 +5,16 @@ import os
 import shutil
 import config.openbook
 
+"""
+Find the latest version and download it
+"""
+
 temp_file="/tmp/viewer.zip"
 if os.path.exists(temp_file):
     os.unlink(temp_file)
 url=(
     "https://github.com/mozilla/pdf.js/releases/download/"
-    "v{0}/pdfjs-{0}-dist.zip".format(config.openbook.pdfjs_version)
+    f"v{config.openbook.pdfjs_version}/pdfjs-{config.openbook.pdfjs_version}-dist.zip"
 )
 subprocess.check_call([
     "wget",
