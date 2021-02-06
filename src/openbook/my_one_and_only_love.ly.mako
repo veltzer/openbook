@@ -22,7 +22,7 @@
 	# this is from the fake book
 	attributes['copyrightextra']='Renewed 1980, 1981 WAROCK CORP.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='ac777f1c-0bf0-11e3-9fd3-782bcbdd3b7a'
 	attributes['structure']='AABA'

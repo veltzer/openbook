@@ -16,7 +16,7 @@
 	attributes['piece']='Moderately'
 	attributes['copyright']='1946, by A-M Music Corp. Copyright Renewed, all rights controlled by Chappell & Co., Inc.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='b109cd80-a26e-11df-8c11-0019d11e5a41'
 	attributes['structure']='AB'

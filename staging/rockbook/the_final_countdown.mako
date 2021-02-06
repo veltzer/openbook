@@ -14,7 +14,7 @@
 	attributes['composer']='Europe'
 	attributes['poet']='Europe'
 	attributes['piece']='Upbeat'
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 
 	attributes['completion']='5'
 	attributes['uuid']='7f247a70-c8f3-11e0-bb35-0019d11e5a41'

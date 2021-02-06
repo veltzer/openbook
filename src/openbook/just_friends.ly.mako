@@ -22,7 +22,7 @@
 	# from the new real book
 	attributes['copyrightextra']='Used by by Persmission of CPP/Belwin, Inc., Miami, FL. International Copyright Secured.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='2f6e2740-f29e-11e0-9ede-0019d11e5a41'
 	attributes['structure']='AB'

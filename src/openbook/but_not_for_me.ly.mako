@@ -19,7 +19,7 @@
 	# this is from the me (although I like it faster)
 	attributes['piece']='Moderately'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='c05b953a-3034-11e5-b197-3860779cb560'
 	attributes['structure']='ABAC'

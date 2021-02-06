@@ -17,7 +17,7 @@
 	# from wikipedia
 	attributes['poet']='Cole Porter'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='f3f8f010-3fda-11e2-ad72-a3725b0aaeaa'
 	attributes['structure']='AAB'

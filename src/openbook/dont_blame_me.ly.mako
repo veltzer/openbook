@@ -20,7 +20,7 @@
 	# this is mine
 	attributes['piece']='Swing'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='d01b9fc8-e077-11e3-8a42-b3378bc59d8a'
 	attributes['structure']='AABA'

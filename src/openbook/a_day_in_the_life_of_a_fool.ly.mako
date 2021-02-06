@@ -26,7 +26,7 @@
 	# from the fake book
 	attributes['copyrightextra']='1964 by Anne-Rachel Music Corp. and United Artists Music Co., Inc. Copyrights for the U.S.A. & Canada assigned to Chappell & Co., Inc. and United Artists Music Co., Inc.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='88a1ec40-db4c-11e3-8a8c-23226fc873cc'
 	attributes['structure']='AA\'B'

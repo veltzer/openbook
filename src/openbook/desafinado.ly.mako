@@ -21,7 +21,7 @@
 	attributes['copyright']='1959 and 1962, Editora Musical Arapua, Sao Paulo, Brazil'
 	attributes['copyrightextra']='1959 1962, Editora Musical Arapua, Sao Paulo, Brazil'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='c3fff540-a26e-11df-9435-0019d11e5a41'
 	attributes['structure']='AABA'

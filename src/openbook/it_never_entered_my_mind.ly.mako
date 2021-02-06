@@ -20,7 +20,7 @@
 	# this is from the fake book
 	attributes['copyright']='1940 by Chappell & Co., Inc. Copyright Renewed'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='3ff5de34-5e09-11e5-83ea-3860779cb560'
 	attributes['structure']='AABA'

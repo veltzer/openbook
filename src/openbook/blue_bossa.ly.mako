@@ -17,7 +17,7 @@
 	attributes['poet']='Joan Cartwright'
 	attributes['piece']='Bossa Nova'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='f7fdc5e0-db41-11e0-a31c-0019d11e5a41'
 	attributes['structure']='A'

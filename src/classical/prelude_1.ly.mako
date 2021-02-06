@@ -14,7 +14,7 @@
 	attributes['piece']='BWV 846'
 	attributes['copyright']='Public Domain'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='562ae904-a664-11df-9e85-0019d11e5a41'
 	attributes['remark']='Taken from Shlomo Gronichs book'

@@ -30,7 +30,7 @@
 	# from wikifonia
 	attributes['copyright']='Musicopy'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='f046f51c-ed4d-11e3-9d71-67b6b025e741'
 	attributes['structure']='AABA'

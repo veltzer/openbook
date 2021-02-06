@@ -12,7 +12,7 @@
 	attributes['piece']='Upbeat Jazz'
 	attributes['copyright']=gattr['copyrightvalstudy']
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='4'
 
 	attributes['uuid']='ffbec224-36a6-11e0-aecb-0019d11e5a41'

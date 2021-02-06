@@ -15,7 +15,7 @@
 	attributes['poet']='Ned Washington'
 	attributes['piece']='Slowly, with Expression'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='afea10ce-edc0-11e0-9cc4-0019d11e5a41'
 	attributes['structure']='AB'

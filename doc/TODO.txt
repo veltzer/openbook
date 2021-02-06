@@ -1,3 +1,5 @@
+- create the outputs in docs/outputs/[XXXX] and not docs/[XXXX] to separate them
+	from other outputs.
 - The page numbers are alternating between right and left and there is really
 	no need for that since this is not a book.
 	The hint about how to do this is here:
@@ -17,11 +19,10 @@
 - allow rendering to linnstrument (already have a sample of how to do it
 	in demos-lilypond).
 	same for guitar tabs.
-- remove mark@veltzer.net as email and templatize it.
 - stop using git in the makefile. It breaks the build from a zip file.
 - wrap the pdf.js viewer as a library and use it like that and not like a page (viewer.html).
-- veltzer.net is mentioned all over (and mark@veltzer.net). move the website of the project to the right
-	thing and my email to the right email.
+- currently mark.veltzer@gmail.com is hardcoded all over the mako files.
+	Use the config entry instead.
 - move all files from src to templates and use pydmt to process them.
 
 - My email is hardcoded in several places:

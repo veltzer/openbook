@@ -17,7 +17,7 @@
 	# from the real book
 	attributes['piece']='Jazz'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='9bd9980c-9628-11e4-80e9-3860779cb560'
 	attributes['structure']='Blues'

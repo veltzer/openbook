@@ -20,7 +20,7 @@
 	# from the fake book
 	attributes['copyrightextra']='Renewed and assigned 1974 ATLANTIC MUSIC CORP.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='dac427e4-0b81-11e4-9974-0f7c29702a29'
 	attributes['structure']='ABAC'

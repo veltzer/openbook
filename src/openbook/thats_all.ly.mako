@@ -22,7 +22,7 @@
 	# from the fake book
 	attributes['copyright']='1952 Renewed 1982 Mixed Bag Music, Inc.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='b0685520-db92-11e3-a96d-4fe96cfbc3fb'
 	attributes['structure']='AABA'

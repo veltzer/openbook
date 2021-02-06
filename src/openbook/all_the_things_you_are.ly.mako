@@ -30,7 +30,7 @@
 	# from the jazz fake book
 	attributes['copyrightextra']='(c/o The Welk Music Group, Santa Monica, CA 90401)'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='a064f20e-fb85-11e0-8d5d-0019d11e5a41'
 	attributes['structure']='ABC'

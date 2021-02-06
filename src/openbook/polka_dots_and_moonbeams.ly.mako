@@ -17,7 +17,7 @@
 	attributes['copyright']='1940 by ARC Music Corp., now Bourne Co. and Dorsey Bros.'
 	attributes['copyrightextra']='Music, Division of Music Sales Corporation'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='60170b42-46e0-11e0-bf54-0019d11e5a41'
 	attributes['structure']='AABA'

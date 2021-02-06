@@ -28,7 +28,7 @@
 	# this is from the fake book
 	attributes['copyright']='1953 by BOURCE CO. and DORSEY BROS. MUSIC, INC. Copyright Renewed.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='4c69df80-cd7f-11e1-8c91-4b6b0349580b'
 	attributes['structure']='ABAC'

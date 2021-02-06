@@ -23,7 +23,7 @@
 	# this is from the new real book, volume III
 	attributes['copyrightextra']='Used by Permission of CPP/Belwin, Inc., Miami, FL ALL Right Reserved'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='160af5b0-ebe1-11e2-937c-bb8193c610fc'
 	# my own (the structure in the new real book claims ABC which is totally wrong)

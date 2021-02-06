@@ -15,7 +15,7 @@
 	attributes['poet']='Johnny Mercer'
 	attributes['piece']='Ballad'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='11542882-e65c-11e2-9030-4311f6fc08c2'
 	attributes['structure']='ABAC'

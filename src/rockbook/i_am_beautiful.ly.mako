@@ -15,7 +15,7 @@
 	# from wikipedia
 	attributes['poet']='Linda Perry'
 	attributes['piece']='Ballad'
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 
 	attributes['completion']='5'
 	attributes['uuid']='94c2657c-2726-11e1-b716-0019d11e5a41'

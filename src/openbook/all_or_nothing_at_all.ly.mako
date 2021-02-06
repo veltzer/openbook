@@ -21,7 +21,7 @@
 	# from the fake book
 	attributes['copyright']='1930, 1940 by MCA MUSIC PUBLISHING, A Division of MCA Inc. Copyright Renewed'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='4a4a2f24-ed86-11e3-aaf5-87841dcdcaf2'
 	attributes['structure']='AABA'

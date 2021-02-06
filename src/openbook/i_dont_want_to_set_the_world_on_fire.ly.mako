@@ -22,7 +22,7 @@
 	# from the fake book
 	attributes['copyrightextra']='Copyright Renewed, Benjamin & Marcus interests assigned to Bennie Benjamin Music, Inc. (Intersong Music, Publisher)'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='5a3efd64-70b7-11e5-bcb5-3860779cb560'
 	attributes['structure']='AABA'

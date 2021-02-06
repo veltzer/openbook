@@ -29,7 +29,7 @@
 	attributes['copyright']='1963, 1964 by Antonio Carlos Jobim and Vincius De Moraes, Brazil'
 	attributes['copyrightextra']='Sole Selling Agent Duchess Music Corporation (MCA), New York, NY for the U.S.A. and Canada'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='0'
 	attributes['uuid']='ee9c0d62-15fd-11e1-bd56-0019d11e5a41'
 	attributes['structure']='AB'

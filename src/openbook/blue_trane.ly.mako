@@ -17,7 +17,7 @@
 	# My own
 	attributes['piece']='Fiercly'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='b303b0a6-95e4-11e4-acdf-3860779cb560'
 	attributes['structure']='Minor Blues'

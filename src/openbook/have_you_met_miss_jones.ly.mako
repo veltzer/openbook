@@ -19,7 +19,7 @@
 	attributes['piece']='Medum Swing'
 	attributes['copyright']='1937, by Chappell & Co., Inc. Copyright Renewed'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='fe106f6c-a26e-11df-abb3-0019d11e5a41'
 	attributes['structure']='AABA'

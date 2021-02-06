@@ -19,7 +19,7 @@
 	attributes['copyright']='1946 by Northern Music Company'
 	attributes['copyrightextra']='Rights Administered by MCA Music Publishing, A Division of MCA INC., New York, NY. Copyright Renewed.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='070df83e-0676-11e1-b7fe-0019d11e5a41'
 	attributes['structure']='AABA'

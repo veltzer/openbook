@@ -18,7 +18,7 @@
 	# from the fake book
 	attributes['copyright']='1963 Miyako Music'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='654dc682-0e83-11e4-8688-1f470b65356e'
 	attributes['structure']='AABA'

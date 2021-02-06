@@ -27,7 +27,7 @@
 	attributes['copyright']='1947, 1950, 1987 Enoch Et Cie. Renewed 1975, 1978 Enoch Et Cie'
 	attributes['copyrightextra']='Sole Selling Agent for U.S.A (including its territories and possessions) and Dominion of Canada: Morley Music Co., by arrangement with Enoch Et Cie. International Copyright Secured. All Rights Reserved.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='8c35acf6-a7c1-11df-9040-0019d11e5a41'
 	attributes['structure']='AAB'

@@ -258,9 +258,9 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 172" }
-				\fill-line { \small "Git describe: 172-21-g4c4472e" }
-				\fill-line { \small "Git commits: 1676" }
-				\fill-line { \small "Build date: 06:49:17 06-02-2021" }
+				\fill-line { \small "Git describe: 172-23-gf221e82" }
+				\fill-line { \small "Git commits: 1678" }
+				\fill-line { \small "Build date: 07:11:31 06-02-2021" }
 				\fill-line { \small "Build user: mark" }
 				\fill-line { \small "Build host: newton" }
 				\fill-line { \small "Build kernel: Linux 5.8.0-41-lowlatency" }
@@ -521,7 +521,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -928,7 +928,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1959 by Nouvelles Editions Meridian" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -1202,7 +1202,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1936 T.B. Harms Company. Copyright Renewed." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -1422,7 +1422,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1937, Gershwin Publishing Corporation" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -2014,7 +2014,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1955 and Renewal of Copyright 1983 by MJQ Music, Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -2252,7 +2252,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1951 Walt Disney Music Company" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -2443,7 +2443,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1931 Bourne Co. Copyright Renewed" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -2663,7 +2663,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1930, 1940 by MCA MUSIC PUBLISHING, A Division of MCA Inc. Copyright Renewed" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -2870,7 +2870,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1939 T.B. Harms Company. Copyright Renewed." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -3107,7 +3107,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1932 (Renewed) Warner Bros. Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -3757,7 +3757,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1946 (Renewed 1973) Dorsey Brothers Music" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -3996,7 +3996,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -4195,7 +4195,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1956, Atlantic Music Corp." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -4440,7 +4440,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1934 by Kay Duke Music." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -4651,7 +4651,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1947, 1950, 1987 Enoch Et Cie. Renewed 1975, 1978 Enoch Et Cie" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -4789,7 +4789,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -5015,7 +5015,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1941, by Chappell & Co., Inc. Copyright Renewed" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -5435,7 +5435,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -5575,7 +5575,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1959 JAZZ HORN MUSIC CORP. & WARNER-TAMERLANE PUBLISHING CORP." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -5713,7 +5713,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -5947,7 +5947,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -6299,7 +6299,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -6437,7 +6437,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -6682,7 +6682,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1963, 1964 by MUSIC CORPORATION OF AMERICA, INC., New York, NY" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -6966,7 +6966,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1930 Warner Bros. Inc & Chappell & Co. Ltd." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -7191,7 +7191,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1947 by Doesey Brothers Music, A Division of Music Sales Corporation, New York" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -7424,7 +7424,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -7643,7 +7643,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1926 (Renewed) Warner Bros. Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -8068,7 +8068,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1937 (renewed 1965) Mills Music c/o EMI Music Publishing" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -8304,7 +8304,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1962 and 1967 Editora Musical Arapua, Sao Paulo, Brazil" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -8728,7 +8728,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1946, by A-M Music Corp. Copyright Renewed, all rights controlled by Chappell & Co., Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -8900,7 +8900,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -9330,7 +9330,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -9534,7 +9534,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1939 Bregman, Vocco and Conn, Inc. New York" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -9761,7 +9761,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1959 and 1962, Editora Musical Arapua, Sao Paulo, Brazil" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -9923,7 +9923,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -10156,7 +10156,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -10364,7 +10364,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1946 by Northern Music Company" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -10740,7 +10740,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1963 Prestige Music Co, Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -10971,7 +10971,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -11198,7 +11198,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1936 by Chappell & Co., Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -11373,7 +11373,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -11605,7 +11605,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1941 Tempo Music, Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -11811,7 +11811,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1954 and renewed 1982 Hampshire House Publishing Corp., New York NY." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -12024,7 +12024,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1931 (renewed 1959) EMI Robbins Catalog, Inc" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -12208,7 +12208,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1974 Jowcol Music." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -12365,7 +12365,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1962, Orpheum Music." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -12575,7 +12575,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1947 (Renewed 1975) MGM/EMI Feist Catalog, Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -12803,7 +12803,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1988 by HAL LEONARD PUBLISHING CORPORATION" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -13212,7 +13212,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1956 & 1959 by Hill & Range Snogs, Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -13430,7 +13430,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1937, by Chappell & Co., Inc. Copyright Renewed" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -13863,7 +13863,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1953 by BOURCE CO. and DORSEY BROS. MUSIC, INC. Copyright Renewed." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -14497,7 +14497,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1940 by Chappell & Co., Inc. Copyright Renewed." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -14742,7 +14742,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1963, 1964 by Antonio Carlos Jobim and Vincius De Moraes, Brazil" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -15146,7 +15146,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1939 by Chappell & Co., Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -15368,7 +15368,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1956 by Alan Jay Lerner & Frederick Loewe. Copyright Renewed" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -15600,7 +15600,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1940, Chappell & Co., Inc. Copyright Renewed." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -15822,7 +15822,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1940 by Bergman, Vocco, & Conn, Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -16445,7 +16445,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -16677,7 +16677,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -17106,7 +17106,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -17523,7 +17523,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1941, 1942 by MCA Music Publishing, A Division of MCA, Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -18153,7 +18153,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1932 (Renewed 1959) by Famous Music Corporation" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -18371,7 +18371,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1945 by Williamson Music Co." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -18606,7 +18606,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1940 by Chappell & Co., Inc. Copyright Renewed" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -18791,7 +18791,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1931 (renewed 1959) EMI Robbins Catalog, Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -19038,7 +19038,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1936, 1937 by Gershwin Publishing Corporation" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -19915,7 +19915,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1952, 1953, 1954 Adam R. Levy & Father Ent., Inc., New York NY. Copyrights Renewed." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -20141,7 +20141,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1955. Renewed 1983 Marke Music, Limerick Music, Reganesque" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -20331,7 +20331,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1944-1945 by MICHAEL H GOLDSEN, INC." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -20562,7 +20562,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1959 by Richard Rodgers and Oscar Hammerstein II. Copyright Renewed." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -20779,7 +20779,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1949 by Anne-Rachel Music Corp." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -20982,7 +20982,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1937 by Chappell & Co., Inc. Copyright Renewed" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -21216,7 +21216,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1952, 1953 SHERWIN MUSIC PUBLISHING CORP." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -21417,7 +21417,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1935, T.B. Harms Company. Copyright Renewed, (c/o The Welk Music Group, Santa Monica, CA 90401)" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -21644,7 +21644,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1941 and renewed 1969 Hampshire House Publishing Corp. and Chappell & Co., Inc., New York, NY" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -21838,7 +21838,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1948, Eben Ahbez" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -22265,7 +22265,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -22410,7 +22410,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1945, Atlantic Music Corp." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -22834,7 +22834,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1965, Ipanema Music. Used By Permission." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -22994,7 +22994,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1963 Miyako Music" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -23201,7 +23201,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1961, 1962 by Antonio Carlos Jobim and Mrs. Mendonca, Brazil" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -23408,7 +23408,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1943 (Renewed) Embassy Music Corporation, New York." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -23589,7 +23589,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1933 by T.B. Harms Co." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -23762,7 +23762,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1946 ATLANTIC MUSIC CORP." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -23967,7 +23967,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1940 by ARC Music Corp., now Bourne Co. and Dorsey Bros." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -24536,7 +24536,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1962, 1964 by Antonio Carlos Jobim, Brazil" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -24991,7 +24991,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1944 (Renewed) Warner Bros. Inc. and Thelonian Music" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -25372,7 +25372,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -25514,7 +25514,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -25788,7 +25788,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -26027,7 +26027,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -26281,7 +26281,7 @@ endChords={}
 		\smaller \smaller { "Copyright © Musicopy" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -26445,7 +26445,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1963, Prestigve Music" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -26631,7 +26631,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -27241,7 +27241,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1966 by Champion Music Corporation and Screen Gems-EMI" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -27469,7 +27469,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1935 by Gershwin Publishing Corporation" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -28049,7 +28049,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1946, 1947, 1987 EDWIN H. MORRIS & COMPANY, A Division of MPL Communications, Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -28287,7 +28287,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1952 Renewed 1982 Mixed Bag Music, Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -28530,7 +28530,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1963, Antonio Carlos Jobim and Vincius De Moraes, Brazil" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -28783,7 +28783,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -29418,7 +29418,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1965 (Renewed 1993) MGM/EMI Miller Catalog, Inc" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -29633,7 +29633,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1946 by Edwin H. Morris & Co., Inc" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -29900,7 +29900,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1936 T B Harms Co." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -30099,7 +30099,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1942, 1987 Twentieth Century Music Corporation" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -30368,7 +30368,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1937, Gershwin Publishing Corporation" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -30579,7 +30579,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1937 by Gershwin Publishing Corporation" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -30775,7 +30775,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1938 by Chappell & Co., Inc. Copyright Renewed" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -30955,7 +30955,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1951, Bourne Co. Copyright Renewed." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -31203,7 +31203,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1964 and 1965 Acom Music Corp., New York, NY." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -31344,7 +31344,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1962, 1963 & 1965 By Hancock Music Co., New York, NY" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -31569,7 +31569,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1934 by Edward B. Marks Music Company. Copyright Renewed." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -31775,7 +31775,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1967 by Range Road Music Inc. and Quartet Music Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 
@@ -31998,7 +31998,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1952 by Victor Young Publications, Inc. Copyright Renewed, Assigned to Chappell & Co., Inc. and Intersong -USA,Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 

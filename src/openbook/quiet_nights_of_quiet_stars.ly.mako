@@ -24,7 +24,7 @@
 	# from the fake book
 	attributes['copyrightextra']='Sole Selling Agent DUCHESS MUSIC CORPORATION (MCA), New York, NY for all English Speaking Countries'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='f8098732-7367-11e5-bffe-3860779cb560'
 	attributes['structure']='AA\''

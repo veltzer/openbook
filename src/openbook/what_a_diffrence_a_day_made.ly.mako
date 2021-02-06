@@ -22,7 +22,7 @@
 	# from the fake book
 	attributes['copyright']='1934 by Edward B. Marks Music Company. Copyright Renewed.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='d28e02f4-2218-11e4-870b-bfbfa80d68bd'
 	attributes['structure']='ABAC'

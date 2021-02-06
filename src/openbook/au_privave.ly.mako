@@ -18,7 +18,7 @@
 	attributes['copyright']='1956, Atlantic Music Corp.'
 	attributes['copyrightextra']='1978, Atlantic Music Corp.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='e62b60ec-eb9b-11e0-aab7-0019d11e5a41'
 	attributes['structure']='Blues'

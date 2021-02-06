@@ -14,7 +14,7 @@
 	attributes['piece']='16-Bar Blues'
 	attributes['copyright']='1962, 1963 & 1965 By Hancock Music Co., New York, NY'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='359f7428-a26f-11df-ad8c-0019d11e5a41'
 	attributes['structure']='16 bar Blues'

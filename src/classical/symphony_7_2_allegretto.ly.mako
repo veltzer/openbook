@@ -14,7 +14,7 @@
 	attributes['composer']='Ludwig van Beethoven'
 	attributes['copyright']='Public Domain'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='d5e32c7a-854b-11e1-96fa-2b2b01073991'
 	attributes['remark']='Extracted by ear as a training exercise'

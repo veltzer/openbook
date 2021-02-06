@@ -24,7 +24,7 @@
 	attributes['copyright']='1955. Renewed 1983 Marke Music, Limerick Music, Reganesque'
 	attributes['copyrightextra']='Music and Time-Co Music'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='bb21d126-f210-11e0-9b64-0019d11e5a41'
 	attributes['structure']='AABA'

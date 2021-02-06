@@ -26,7 +26,7 @@
 	# from the fake book
 	attributes['copyrightextra']='TRO-Hollis Music, Inc., New York, controls all publication rights for the U.S.A. and Canada'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='a8d44d0c-a26e-11df-a32b-0019d11e5a41'
 	attributes['structure']='AA\'BA\'\''

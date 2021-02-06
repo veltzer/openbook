@@ -19,7 +19,7 @@
 	attributes['piece']='Moderately'
 	attributes['copyright']='1938 by Chappell & Co., Inc. Copyright Renewed'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='c01fbf4c-d7a2-11e3-a29f-abfec0c435b3'
 	attributes['structure']='AABA'

@@ -13,7 +13,7 @@
 	attributes['style']='Pop'
 	attributes['piece']='Med. Ballad'
 	attributes['singer']='Van Morrison'
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 
 	attributes['completion']='0'
 	attributes['uuid']='d86922f4-a26e-11df-b237-0019d11e5a41'

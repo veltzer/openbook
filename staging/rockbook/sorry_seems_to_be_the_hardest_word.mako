@@ -19,7 +19,7 @@
 	attributes['poet']='Bernie Taupin'
 	# from me
 	attributes['piece']='Ballad'
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 
 	attributes['completion']='5'
 	attributes['uuid']='795b5442-53f8-11e2-9a2d-871ce68b4fd7'

@@ -23,7 +23,7 @@
 	attributes['copyright']='1965 (Renewed 1993) MGM/EMI Miller Catalog, Inc'
 	attributes['copyrightextra']='Used by Permission of CPP/Belwin, Inc, Miami, FL'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='dff04e04-a969-11e1-b8c5-5a1faa0d3cc5'
 	attributes['structure']='ABAC'

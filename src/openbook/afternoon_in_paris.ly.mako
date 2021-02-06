@@ -23,7 +23,7 @@
 	# this is from the fake book
 	attributes['copyright']='1955 and Renewal of Copyright 1983 by MJQ Music, Inc.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='8f0a1ea6-a26e-11df-8edc-0019d11e5a41'
 	attributes['structure']='AABA'

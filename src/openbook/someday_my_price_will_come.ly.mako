@@ -20,7 +20,7 @@
 	# this is from the real book
 	attributes['piece']='Med. Jazz Waltz'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='4933391e-ee10-11e0-b804-0019d11e5a41'
 	attributes['structure']='ABAC'

@@ -14,7 +14,7 @@
 	attributes['poet']='Bill Withers'
 	attributes['piece']='Med. Ballad'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='669540fe-d851-11df-ae78-0019d11e5a41'
 

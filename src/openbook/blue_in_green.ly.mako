@@ -20,7 +20,7 @@
 	# from the fake book
 	attributes['copyrightextra']='WARNER-TAMERLANE PUBLISHING CORP. administers on behalf of itself and JAZZ HORN MUSIC CORP.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='c73decf2-e30c-11e3-b12b-dbe41a94d84d'
 	attributes['structure']='A'

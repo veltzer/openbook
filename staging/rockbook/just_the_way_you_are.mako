@@ -14,7 +14,7 @@
 	attributes['composer']='Billy Joel'
 	attributes['poet']='Billy Joel'
 	attributes['piece']='Moderately'
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 
 	attributes['completion']='4'
 	attributes['uuid']='ca1dfd9e-7033-11e0-a987-0019d11e5a41'

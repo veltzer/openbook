@@ -24,7 +24,7 @@
 	# from the fake book
 	attributes['copyrightextra']='Renewed 1969, 1970 Pic Corp.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='84142766-dba0-11e3-9e62-bb6aa0505531'
 	attributes['structure']='ABA'

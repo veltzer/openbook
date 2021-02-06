@@ -22,7 +22,7 @@
 	# from the fake book
 	attributes['copyright']='1943 (Renewed) Embassy Music Corporation, New York.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='31cf66b6-11b8-11e4-bcfe-f76051fd87b1'
 	attributes['structure']='AABA'

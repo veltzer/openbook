@@ -13,7 +13,7 @@
 	attributes['composer']='Max Martin'
 	attributes['poet']='Max Martin'
 	attributes['piece']='Pop'
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 
 	attributes['completion']='5'
 	attributes['uuid']='8a728316-ee02-11e0-b7c5-0019d11e5a41'

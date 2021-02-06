@@ -13,7 +13,7 @@
 	attributes['composer']='Folk'
 	attributes['copyright']='Public Domain'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='29e07ac4-ba42-11e0-a95c-0019d11e5a41'
 	attributes['remark']='Taken from guitar album II by Misha Applebaum'

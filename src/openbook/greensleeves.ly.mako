@@ -19,7 +19,7 @@
 	# this is from the fake book
 	attributes['copyright']='1988 by HAL LEONARD PUBLISHING CORPORATION'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='dbd95022-6dd8-11e5-864c-3860779cb560'
 	attributes['structure']='AA\'BB\''

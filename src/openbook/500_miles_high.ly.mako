@@ -18,7 +18,7 @@
 	# this is from the real book
 	attributes['piece']='Samba'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='ed0cff46-dffa-11e3-b4b7-43ee65102d59'
 	attributes['structure']='A'

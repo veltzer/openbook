@@ -23,7 +23,7 @@
 	# from the fake book
 	attributes['copyrightextra']='Sole Selling Agent MCA MUSIC PUBLISHING, A Division of MCA Inc., New York, NY'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='2af3e35c-e252-11e3-abb7-932771d3c7a0'
 	attributes['structure']='AA\'BA'

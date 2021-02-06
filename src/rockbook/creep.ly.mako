@@ -13,7 +13,7 @@
 	attributes['composer']='Radiohead'
 	attributes['poet']='Radiohead'
 	attributes['piece']='Med. Ballad'
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 
 	attributes['completion']='5'
 	attributes['uuid']='e9b74c60-97f6-11e0-86b8-0019d11e5a41'

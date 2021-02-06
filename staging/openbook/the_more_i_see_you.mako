@@ -26,7 +26,7 @@
 	# from the standards real book
 	attributes['copyright']='1945 WB Music Corp. (Renewed) All Rights Reserved. Used by Permission'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='0'
 	attributes['uuid']='ca5eae8e-ee84-11e3-a0d7-d7aaa2e1aa93'
 	attributes['structure']='ABAC'

@@ -23,7 +23,7 @@
 	# from the fake book
 	attributes['copyrightextra']='Renewed 1972-1973 MICHAEL H GOLDSEN, INC.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='557b082e-e0d8-11e3-a037-b365e6166d43'
 	attributes['structure']='AABA'

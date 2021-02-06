@@ -14,7 +14,7 @@
 	attributes['poet']='Van Morrison'
 	attributes['piece']='Med. Ballad'
 	attributes['album']='Days Like This/1995'
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 
 	attributes['completion']='5'
 	attributes['uuid']='6437a34a-3bd4-11e2-9e13-9f845e169c9b'

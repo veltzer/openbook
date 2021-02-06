@@ -18,7 +18,7 @@
 	attributes['copyright']='1945, Atlantic Music Corp.'
 	attributes['copyrightextra']='Renewed and assigned 1973, Atlantic Music Corp.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='cd56a8d8-da1d-11e3-a6ca-c3a55777c28e'
 	attributes['structure']='Blues'

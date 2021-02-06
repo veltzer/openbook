@@ -21,7 +21,7 @@
 	# this is from the fake book
 	attributes['copyright']='1944 (Renewed) Warner Bros. Inc. and Thelonian Music'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='1c99c334-a26f-11df-b3cb-0019d11e5a41'
 	attributes['structure']='AABA'

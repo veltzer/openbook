@@ -20,7 +20,7 @@
 	attributes['copyright']='1946 by Edwin H. Morris & Co., Inc'
 	attributes['copyrightextra']='Copyright renewed, assigned to Producers Music Pub. Co., Inc. (Chappell & Co., Inc., administrator) and Cahn Music Co. for the U.S.A. only'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='31587e4e-ab0c-11e1-9dc8-3765c038b685'
 	attributes['structure']='AABA'

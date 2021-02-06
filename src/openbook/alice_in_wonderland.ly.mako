@@ -22,7 +22,7 @@
 	attributes['copyright']='1951 Walt Disney Music Company'
 	attributes['copyrightextra']='Copyright Renewed'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='718a13e0-023a-11e1-924f-0019d11e5a41'
 	attributes['structure']='AABA'

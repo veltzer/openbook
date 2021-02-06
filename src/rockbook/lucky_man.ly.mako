@@ -13,7 +13,7 @@
 	attributes['composer']='Greg Lake'
 	attributes['poet']='Greg Lake'
 	attributes['piece']='Med. Ballad'
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 
 	attributes['completion']='5'
 	attributes['uuid']='a68bcbbc-c8ae-11e0-8fa9-0019d11e5a41'

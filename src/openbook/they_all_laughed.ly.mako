@@ -23,7 +23,7 @@
 	# from the fake book
 	attributes['copyrightextra']='Copyright Renewed, Assigned to Chappell & Co, Inc.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='89e1c354-f2a2-11e0-9cf1-0019d11e5a41'
 	attributes['structure']='AA\'BA\'\''

@@ -17,7 +17,7 @@
 	attributes['piece']='Slowly'
 	attributes['copyright']='1937 by Chappell & Co., Inc. Copyright Renewed'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='087137ac-a26f-11df-aa1f-0019d11e5a41'
 	attributes['structure']='AABA'

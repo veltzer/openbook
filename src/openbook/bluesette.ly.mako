@@ -24,7 +24,7 @@
 	# from the fake book
 	attributes['copyrightextra']='Rights Administered by MCA MUSIC PUBLISHING, A Division of MCA Inc., New York, NY'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='e4c0cc74-eb5c-11e3-8d65-b71fa04c4d86'
 	attributes['structure']='A'

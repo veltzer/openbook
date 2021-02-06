@@ -23,7 +23,7 @@
 	# from the fake book
 	attributes['copyrightextra']='All rights administered by Hudson Bay Music, Inc.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='39de7d2c-a26f-11df-8dbc-0019d11e5a41'
 	attributes['structure']='AABA'

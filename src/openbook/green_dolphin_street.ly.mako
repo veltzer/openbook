@@ -21,7 +21,7 @@
 	# this is from the new real book, vol 3
 	attributes['copyright']='1947 (Renewed 1975) MGM/EMI Feist Catalog, Inc.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='b93bdc7e-0207-11e1-9e68-0019d11e5a41'
 	attributes['structure']='ABAC'

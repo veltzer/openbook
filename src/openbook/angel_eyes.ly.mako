@@ -22,7 +22,7 @@
 	# from the fake book
 	attributes['copyright']='1946 (Renewed 1973) Dorsey Brothers Music'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='0a43bee4-e044-11e3-9617-b76a2faa3d0b'
 	attributes['structure']='AABA'

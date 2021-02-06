@@ -29,7 +29,7 @@
 	attributes['copyright']='1930 Warner Bros. Inc & Chappell & Co. Ltd.'
 	attributes['copyrightextra']='Copyright Renewed & Assigned to Warner Bros. Inc.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='b2076c06-e025-11e0-ab4c-0019d11e5a41'
 	attributes['structure']='AABA'

@@ -26,7 +26,7 @@
 	attributes['copyright']='1936 by Chappell & Co., Inc.'
 	attributes['copyrightextra']='Copyright Renewed, Assigned to John F. Wharton, Trustee of the Cole Porter Musical & Literary Property Trusts Chappell & Co., Inc., owner of publication and allied rights throughout the world'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='ac74c90e-0d62-11e1-816c-0019d11e5a41'
 	attributes['structure']='ABAC'

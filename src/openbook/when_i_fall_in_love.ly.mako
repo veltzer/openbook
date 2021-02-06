@@ -22,7 +22,7 @@
 	# from the fake book
 	attributes['copyrightextra']='All Rights Administered by Chappell & Co., Inc.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='4e2019f6-f9ef-11e1-b796-174ce4bd9471'
 	attributes['structure']='ABAC'

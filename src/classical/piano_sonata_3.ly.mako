@@ -12,7 +12,7 @@
 	attributes['composer']='Wolfgang Amadeus Mozart'
 	attributes['copyright']='1918, G.Schirmer Inc.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='0'
 	attributes['uuid']='744f61d8-a26f-11df-b6b1-0019d11e5a41'
 	attributes['remark']='Edited, revised and fingered by Richard Epstein'

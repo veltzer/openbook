@@ -19,7 +19,7 @@
 	attributes['copyright']='1961, 1962 by Antonio Carlos Jobim and Mrs. Mendonca, Brazil'
 	attributes['copyrightextra']='Sole Selling Agent Duchess Music Croporation (MCA), New York, NY for all English Speaking Countries'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='21bc8284-a26f-11df-a829-0019d11e5a41'
 	attributes['structure']='ABA\''

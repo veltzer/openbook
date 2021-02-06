@@ -15,7 +15,7 @@
 	# this is from the real book
 	attributes['piece']='Ballad'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='952831ac-74cc-11e5-b102-3860779cb560'
 	attributes['structure']='ABAC'

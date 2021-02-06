@@ -23,7 +23,7 @@
 	# from the fake book
 	attributes['copyrightextra']='Renewed 1974, 1975 EDWIN H. MORRIS & COMPANY, A Division of MPL Communications, Inc. International Copyright Secured. All Rights Reserved.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='37e8d9d8-db6c-11e3-8007-f7449ea11e17'
 	attributes['structure']='ABAC'

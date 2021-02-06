@@ -25,7 +25,7 @@
 	# from the fake book
 	attributes['copyrightextraextra']='Chappell & Co., Inc. owner of publication and allied rights throughout the World.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='74865056-6f44-11e5-89f9-3860779cb560'
 	attributes['structure']='AA\'BA\'\''

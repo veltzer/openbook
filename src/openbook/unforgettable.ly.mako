@@ -16,7 +16,7 @@
 	attributes['piece']='Moderately'
 	attributes['copyright']='1951, Bourne Co. Copyright Renewed.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='3162420a-a26f-11df-aacf-0019d11e5a41'
 	attributes['structure']='AB'

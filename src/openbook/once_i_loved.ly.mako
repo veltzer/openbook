@@ -23,7 +23,7 @@
 	# from the new real book
 	attributes['copyright']='1965, Ipanema Music. Used By Permission.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='18294374-a26f-11df-a5f0-0019d11e5a41'
 	attributes['structure']='AAB'

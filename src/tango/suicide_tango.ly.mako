@@ -14,7 +14,7 @@
 	attributes['style']='Tango'
 	attributes['subtitle']='Utomlyonnye solntsem'
 	attributes['piece']='Tango'
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 
 	attributes['completion']='5'
 	attributes['uuid']='66834ecc-dcd0-11e2-9ec9-782bcbdd3b7a'

@@ -258,9 +258,9 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 172" }
-				\fill-line { \small "Git describe: 172-21-g4c4472e" }
-				\fill-line { \small "Git commits: 1676" }
-				\fill-line { \small "Build date: 06:49:57 06-02-2021" }
+				\fill-line { \small "Git describe: 172-23-gf221e82" }
+				\fill-line { \small "Git commits: 1678" }
+				\fill-line { \small "Build date: 07:12:10 06-02-2021" }
 				\fill-line { \small "Build user: mark" }
 				\fill-line { \small "Build host: newton" }
 				\fill-line { \small "Build kernel: Linux 5.8.0-41-lowlatency" }
@@ -384,7 +384,7 @@ Regular rock type drumming...
 		\smaller \smaller { "Copyright © -- no copyright notice for study materials --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark@veltzer.net>" }
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
 }
 

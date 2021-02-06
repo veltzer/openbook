@@ -16,7 +16,7 @@
 	# this is from the fake book
 	attributes['copyright']='1963 Prestige Music Co, Inc.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='c921579e-a26e-11df-9a5c-0019d11e5a41'
 	attributes['structure']='AABA'

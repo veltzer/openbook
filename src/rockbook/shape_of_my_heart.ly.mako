@@ -15,7 +15,7 @@
 	attributes['poet']='Sting'
 	attributes['piece']='Med. Ballad'
 	attributes['singer']='Sting'
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 
 	attributes['completion']='5'
 	attributes['uuid']='677fee0a-a26f-11df-bd2c-0019d11e5a41'

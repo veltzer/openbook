@@ -22,7 +22,7 @@
 	# from the fake book
 	attributes['copyrightextra']='Copyright Renewed'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='769f56f4-7f33-11ea-b0b2-eb3dd252214d'
 

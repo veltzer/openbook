@@ -24,7 +24,7 @@
 	# this is from the fake book
 	attributes['copyrightextra']='Copyright Renewed. All Rights Administered by Chappell & Co., Inc.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='f4f39800-a26e-11df-b97a-0019d11e5a41'
 	attributes['structure']='AABA'

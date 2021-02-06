@@ -23,7 +23,7 @@
 	# from the fake book
 	attributes['copyright']='1964 and 1965 Acom Music Corp., New York, NY.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='010d881c-e348-11e3-bd2b-af99bf9a3980'
 	attributes['structure']='AABA'

@@ -13,7 +13,7 @@
 	attributes['piece']='Upbeat Jazz Blues'
 	attributes['copyright']=gattr['copyrightvalstudy']
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='84a886b8-a26f-11df-9034-0019d11e5a41'
 	attributes['remark']='Taken from Ofer Portugali\'s exercises at Rimon'

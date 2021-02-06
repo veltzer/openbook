@@ -21,7 +21,7 @@
 	attributes['copyright']='1934 by Kay Duke Music.'
 	attributes['copyrightextra']='Copyright Renewed. All Rights Administered by BMG Songs, Inc.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='9677b522-7463-11e1-a57d-bbc28ffad085'
 	attributes['structure']='ABAC'

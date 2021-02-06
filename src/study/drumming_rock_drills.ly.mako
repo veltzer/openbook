@@ -11,7 +11,7 @@
 	attributes['style']='Jazz'
 	attributes['copyright']=gattr['copyrightvalstudy']
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='d54f6d36-6d29-11e0-a6dd-0019d11e5a41'
 %>

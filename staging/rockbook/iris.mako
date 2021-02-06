@@ -15,7 +15,7 @@
 	attributes['poet']='Goo Goo Dolls'
 	attributes['piece']='Med. Ballad'
 	attributes['album']='Dizzy Up The Girls'
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 
 	attributes['completion']='5'
 	attributes['uuid']='2596358c-3929-11e2-a2c3-6beac8f09e25'

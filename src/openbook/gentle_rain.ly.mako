@@ -22,7 +22,7 @@
 	attributes['copyright']='1931 (renewed 1959) EMI Robbins Catalog, Inc'
 	attributes['copyrightextra']='Used by Persmission of CPP/Belwin, Inc, Miami, FL. International Copyright Secured. All Rights Reserved.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='04bbfb74-0128-11e1-9e2a-0019d11e5a41'
 	attributes['structure']='AB'

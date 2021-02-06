@@ -11,7 +11,7 @@
 	attributes['style']='Classical'
 	attributes['composer']='R. Schumann'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='0'
 	attributes['uuid']='9ff5c7c4-a26e-11df-aa45-0019d11e5a41'
 %>

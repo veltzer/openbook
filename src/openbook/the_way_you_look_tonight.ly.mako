@@ -23,7 +23,7 @@
 	# from the new real book of jazz vol 1
 	attributes['copyrightextra']='Copyright Renewed c/o The Welk Music Group, Santa Monica, CA 90401 Authorized Selling Agent in Japan High Note Publishing Co, Ltd, used by permission of JASRAC License #8670719. International Copyright Secured. All Right Reserved. Used By Permission.'
 
-	attributes['typesetter']='Mark Veltzer <mark@veltzer.net>'
+	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='30fc7894-d8f8-11e3-84a6-77203dda2123'
 	attributes['structure']='AABA'
