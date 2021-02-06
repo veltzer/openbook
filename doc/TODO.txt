@@ -1,3 +1,5 @@
+- make index.html to be generated from a template.
+	and replace everything that is hardcoded in it.
 - create the outputs in docs/outputs/[XXXX] and not docs/[XXXX] to separate them
 	from other outputs.
 - The page numbers are alternating between right and left and there is really
