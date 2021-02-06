@@ -14,7 +14,7 @@ build_cont
 
 version: 172
 
-viewer version: 2.3.200
+viewer version: 2.7.570
 
 What is OpenBook?
 ------------------
