@@ -63,6 +63,7 @@ What python modules are used?
 * PyMySQL: Pure Python MySQL Driver
 * Mako: A super-fast templating language that borrows the  best ideas from the existing templating languages.
 * pymakehelper: pymakehelper helps doing things with the make system
+* requests: Python HTTP for Humans.
 
 What is produced?
 ------------------
