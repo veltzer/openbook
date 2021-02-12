@@ -37,7 +37,7 @@ f1*2:m7 | g1:m7.5- | c:7.9- |
 b:dim7 | f:m7/c | c:7.9- | f1*2:m7 |
 
 Fade out
-f:m7 | f:m7 | .... 
+f:m7 | f:m7 | ....
 
 Lyrics:
 Round like a circle in a spiral, like a wheel within a wheel

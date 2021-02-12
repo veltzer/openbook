@@ -1,5 +1,5 @@
  מחבר: נתן אלתרמן
-מלחין: נעמי שמר 
+מלחין: נעמי שמר
 אריק איינשטיין - פגישה לאין קץ
 
 פתיחה:
@@ -11,12 +11,12 @@ Cm G G4         Ab      Cm   G  Bb/B
 שוא חומה אצור לך, שוא אציב דלתיים
 Bb/B  Bb7     Fm           Cm
 תשוקתי אלייך   ואלי גנך
-Cm G G4   Fm          Cm    G  
+Cm G G4   Fm          Cm    G
 ואלי גופי סחרחר, אובד  ידיים
 
 Cm G Bb/B    Bb    Fm        Cm
 לספרים רק את   החטא והשופטת.
-G G4       Fm     Cm/Bb       
+G G4       Fm     Cm/Bb
 פתאומית לעד,   עיני בך הלומות,
 G Bb/B            Bb    Fm         Cm
 עת ברחוב לוחם, שותת  שקיעות של פטל,
@@ -28,11 +28,11 @@ Ab Dbmaj7 Bbm Ebm Dbmaj7 G Cm G
 
 Bb/B  Bb       Fm             Cm
 אל תתחנני   אל הנסוגים מגשת.
-Cm G G4   Ab      Cm    G  
+Cm G G4   Ab      Cm    G
 לבדי אהיה בארצותייך הלך.
 Bb/B  Bb    Fm             Cm
 תפילתי דבר   איננה מבקשת,
-Cm  G G4    Fm        Cm   G    
+Cm  G G4    Fm        Cm   G
 תפילתי אחת והיא אומרת:  האאא  לך
 
 G Bb/B      Bb7   Fm        Cm
@@ -50,7 +50,7 @@ G G4      Fm   Cm/Bb   Cm
 אל תרחמיהו   בעויפו לרוץ,
 G Bb/B   Bb7   Fm       Cm
 אל תניחי לו  שיאפיל כחדר
-Ab G   G4     Fm      Cm 
+Ab G   G4     Fm      Cm
 בלי  הכוכבים  שנשארו בחוץ.
 
 מעבר:
@@ -62,7 +62,7 @@ G G4    Ab       Cm   G Bb/B
 שם  רקיע לח את שיעולו מרעים,
 Bb/B  Bb7      Fm             Cm
 שם שקמה תפיל  ענף לי כמטפחת
- Cm  G    Cm   G  
+ Cm  G    Cm   G
 ואני אקוד לה וארים.
 
 Cm G Bb/B      Bb  Fm     Cm

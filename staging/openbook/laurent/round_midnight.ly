@@ -23,33 +23,33 @@ Tune = \notes \transpose c' {
     \transpose bes \intro |
     \transpose aes \intro | \break
 
-    \transpose c'' \notes { 
-	\repeat "unfold" 3 { 
-	    r16 <a,16 e gis bis> <a,8 e gis bis> <a,8 e gis bis> 
-	    <a,16 e gis bis> <a,16 e gis bis> 
+    \transpose c'' \notes {
+	\repeat "unfold" 3 {
+	    r16 <a,16 e gis bis> <a,8 e gis bis> <a,8 e gis bis>
+	    <a,16 e gis bis> <a,16 e gis bis>
 	}
-	r16 <a,16 e gis bis> <a,8 e gis bis> <bes,4 e fis c'> 
+	r16 <a,16 e gis bis> <a,8 e gis bis> <bes,4 e fis c'>
     }
-    
+
     \relative c' {
 
 % theme
 	\repeat "volta" 2 {
-	    r4 c16 f g c aes4. c,8 | f8 f ~ f4 ~ f8 f c'16 bes8. | 
-	    r4 f16 aes c ees d4. aes8 | b4 bes bes8 aes ~ aes4 | 
-	    r4 bes16 des f aes g4. des8 | c2. f,8 g | 
-	} \alternative { 
-	    { \times 2/3 {aes g aes} g4 ~ g4. f8 | e c ~ c2. | \break } 
-	    { aes8 g4 f8 ~ f4 f8 f8 | ~ f2. f8 g | } 
+	    r4 c16 f g c aes4. c,8 | f8 f ~ f4 ~ f8 f c'16 bes8. |
+	    r4 f16 aes c ees d4. aes8 | b4 bes bes8 aes ~ aes4 |
+	    r4 bes16 des f aes g4. des8 | c2. f,8 g |
+	} \alternative {
+	    { \times 2/3 {aes g aes} g4 ~ g4. f8 | e c ~ c2. | \break }
+	    { aes8 g4 f8 ~ f4 f8 f8 | ~ f2. f8 g | }
 	}
 	\times 2/3 {aes g aes} g4 ~ g4. f8 | e c ~ c2 f8 g |
 	\times 2/3 {aes8 g aes} g4 ~ g4. f8 | e c'8 ~ c2. |
 	des4 des8. des16 c8 c ~ c4 | aes8. aes16 aes8 g8 ~ g4. c8 |
-	f4. f16 f ees4. ees16 ees | des4. ees16 des c2 | 
+	f4. f16 f ees4. ees16 ees | des4. ees16 des c2 |
 	
-	\break r4 c,16 f g c aes4. c,8 | f8 f ~ f4 ~ f8 f c'16 bes8. | 
-	r4 f16 aes c ees d4. aes8 | b4 bes bes8 aes ~ aes4 | 
-	r4 bes16 des f aes g4. des8 | c2. f,8 g | 
+	\break r4 c,16 f g c aes4. c,8 | f8 f ~ f4 ~ f8 f c'16 bes8. |
+	r4 f16 aes c ees d4. aes8 | b4 bes bes8 aes ~ aes4 |
+	r4 bes16 des f aes g4. des8 | c2. f,8 g |
 	aes8 g4 f8 ~ f4 f8 f8 | ~ f2. r4 \bar "||"
 
 % coda
@@ -68,7 +68,7 @@ Tune = \notes \transpose c' {
 Score = \notes \transpose bes <
     \context ChordNames \Chords
     \context Staff \Tune
-> 
+>
 
 #(set! shortestDurationSpace 1.5)
 #(set! minimumVerticalExtent 4)
