@@ -528,7 +528,9 @@ ${self.clearVars()}
 Chords=\transpose c ${TONALITY} {<%include file="/${file}" args="part=Chords"/>}
 % endif
 % if attributes.getWorkingVersion()['doVoice']:
-Voice=\transpose c ${TONALITY} {\relative c' <%include file="/${file}" args="part=Voice"/>}
+Voice=\transpose c ${TONALITY} {\relative c'
+	<%include file="/${file}" args="part=Voice"/>
+}
 % endif
 % if attributes.getWorkingVersion()['doLyrics']:
 Lyrics=<%include file="/${file}" args="part=Lyrics"/>
@@ -576,7 +578,8 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 \new Staff="Melody" {
 \new Voice="Voice"
 % if gattr['inline']:
-	\relative c' <%include file="/${file}" args="part=Voice"/>
+	\relative c'
+	<%include file="/${file}" args="part=Voice"/>
 % endif
 % if gattr['inline']==False:
 	\Voice
@@ -635,7 +638,8 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 \new Staff="Melody" {
 \new Voice="Voice"
 % if gattr['inline']:
-	\relative c' <%include file="/${file}" args="part=Voice"/>
+	\relative c'
+	<%include file="/${file}" args="part=Voice"/>
 % endif
 % if gattr['inline']==False:
 	\Voice
