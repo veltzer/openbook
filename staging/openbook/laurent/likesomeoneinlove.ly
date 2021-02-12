@@ -60,7 +60,7 @@ Staff = \notes \context Voice = $Staff {
 accompaniment = \chords{
     c1*2 d2:7 g:7 c1 d:m
     g:7 c g2:m c:7 f1 b2:m e:7 a1*2 a1:m d:7  d:m
-    g:7.5+ c1*2 d2:7 g:7 c1 d:m g:7 
+    g:7.5+ c1*2 d2:7 g:7 c1 d:m g:7
     c g2:m c:7 f1 b2:m e:7 a1 ees:3-.5-.7-
     e2:m a:7 d:m g:7 c1 d2:m g:7
 

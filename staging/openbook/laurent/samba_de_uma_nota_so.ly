@@ -72,15 +72,15 @@ harmony = \notes \chords {
 				% 9
     f:m7  | e:7.5- | ees:maj | aes:9 | d4.:m7 des2:7 c8:m11 | R1 |  b:7.5- bes:6 |
 				% 17
-    ees:m7 | aes:7 | des4.:maj des2:6 R8 | des4.:maj des2:6 R8 | des1:m7 | des:7 | ces:maj | 
-    c4.:m7.5- b2:7.5- R8 | d1:m7 | des:7 | c:m7 | b:7.5- | d:m7 | des:7 | c:m7 | b:7.5- | 
-    f:m7 | e:7.5- | ees:maj | aes:9 | des2.:6 R8 c:7 | R2. ces1:maj R8 bes1:6 R8 |  
+    ees:m7 | aes:7 | des4.:maj des2:6 R8 | des4.:maj des2:6 R8 | des1:m7 | des:7 | ces:maj |
+    c4.:m7.5- b2:7.5- R8 | d1:m7 | des:7 | c:m7 | b:7.5- | d:m7 | des:7 | c:m7 | b:7.5- |
+    f:m7 | e:7.5- | ees:maj | aes:9 | des2.:6 R8 c:7 | R2. ces1:maj R8 bes1:6 R8 |
 }
 
 text = \lyrics {
-    This is just a lit -- tle sam -- ba 
+    This is just a lit -- tle sam -- ba
     built up -- on a sin -- gle note.
-    Oth -- er notes are bound to fol -- low 
+    Oth -- er notes are bound to fol -- low
     but the root is still that note.
 
     Now the new one is the con -- se -- quence
@@ -88,7 +88,7 @@ text = \lyrics {
     as I'm bound to be the un -- a -- void -- a -- ble
     con -- se -- quence of you.
 
-    There's so man -- y peo -- ple who can talk and talk and talk 
+    There's so man -- y peo -- ple who can talk and talk and talk
     and just say no -- thing or near -- ly no -- thing
 
     I have used up all the scale I know and at the end I've come to no -- thing

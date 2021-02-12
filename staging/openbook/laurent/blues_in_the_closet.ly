@@ -12,8 +12,8 @@ riffa = \notes \relative a' {
 }
 
 riffb = \notes \relative a' {
-    aes8 ~ aes4 ces8 aes des4 ces8 aes des4 ces8 aes ~ aes ees4 aes8 ~ 
-    aes4 c8 aes des4 c8 aes ~ aes ees4. ~ ees4 
+    aes8 ~ aes4 ces8 aes des4 ces8 aes des4 ces8 aes ~ aes ees4 aes8 ~
+    aes4 c8 aes des4 c8 aes ~ aes ees4. ~ ees4
 }
 
 voiceb = \notes \relative a' {
@@ -27,17 +27,17 @@ voiceb = \notes \relative a' {
     c4 ees8 c f4 ees8 c ~ c aes4. ~ aes4 r4
 }
 
-Tune = \notes \relative a' { 
+Tune = \notes \relative a' {
     \key aes \major
     \time 4/4
 
-    \partial 8 \riffa r8 \riffb r8 
-    aes8 ~ | aes4 c8 aes des4 c8 aes | des4 c8 aes ~ aes ees4 aes8 ~ | 
+    \partial 8 \riffa r8 \riffb r8
+    aes8 ~ | aes4 c8 aes des4 c8 aes | des4 c8 aes ~ aes ees4 aes8 ~ |
     aes4 c8 aes des4 c8 aes ~ | aes ees4 des8 c4 \autoBeamOff ees8  \autoBeamOn
     < { \grace g8 \riffa r8 \riffb r8 \riffa r4 }
       { \grace bes'8 \voiceb } >
-    
-    
+
+
 }
 
 Chords = \chords {
@@ -47,8 +47,8 @@ Chords = \chords {
 
 Breaks = \notes {
     \partial 8 s8 |
-    s1*4 | \break s1*4 | \break s1*4 \bar "||" \break 
-    s1*4 | \break s1*4 | \break s1*4 \bar "|." \break 
+    s1*4 | \break s1*4 | \break s1*4 \bar "||" \break
+    s1*4 | \break s1*4 | \break s1*4 \bar "|." \break
 }
 
 Score = <

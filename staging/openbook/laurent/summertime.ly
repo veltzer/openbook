@@ -9,10 +9,10 @@
 				%
 
 Chords = \chords {
-    \partial 4 R4 | 
+    \partial 4 R4 |
     \repeat "volta" 2 {
 	d1*4:min7 | g1*2:min7 | e1:min7.5- | a:7.9+ |
-	d1*3:min7 | g2:min7 c:7 | 
+	d1*3:min7 | g2:min7 c:7 |
 	f1:maj | e2:min7.5- a:7.9+ | d1:min7 | a:7.9+ |
     }
 }

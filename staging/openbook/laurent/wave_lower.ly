@@ -12,7 +12,7 @@
 
 \include "wave_inc.ly"
 
-Score =  < 
+Score =  <
     \context ChordNames \harmony
     \context Staff \notes \transpose aes { \melody }
 >

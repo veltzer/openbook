@@ -22,17 +22,17 @@ tune = \notes \relative f'' {
 
     \property  Score.RehearsalMark \override #'extra-offset = #'(-2 . 2)
     \mark "B"
-    f'4. a,8 ~ a4. d8 ~ | d2 ~ d8 f4 e8 ~ | e4. b8 ~ b4. d8 ~ | d2 ~ d8 e4 f8 ~ | 
-    f4. bes,8 ~ bes4. cis8 ~ | cis2 ~ cis8 f4 e8 ~ | e8 d4 cis8 d4 ees4 ~ | ees4 d8 fis ~ fis a4 g8 ~ | 
+    f'4. a,8 ~ a4. d8 ~ | d2 ~ d8 f4 e8 ~ | e4. b8 ~ b4. d8 ~ | d2 ~ d8 e4 f8 ~ |
+    f4. bes,8 ~ bes4. cis8 ~ | cis2 ~ cis8 f4 e8 ~ | e8 d4 cis8 d4 ees4 ~ | ees4 d8 fis ~ fis a4 g8 ~ |
     g4. bes8 ~ bes4. cis,8 ~ | cis2 ~ cis8 a'4 g8 ~ | g f4 a8 ~ a g f4 | e d8 cis ~ cis d4 f8 ~ |
-    f d4 b8 ~ b d4 f8 ~ | f cis4 bes?8 ~ bes f'4 d8 ~ | d1 | r1 \bar "||" 
+    f d4 b8 ~ b d4 f8 ~ | f cis4 bes?8 ~ bes f'4 d8 ~ | d1 | r1 \bar "||"
 
 
     \key d \major
     \property  Score.RehearsalMark \override #'extra-offset = #'(-3 . 2)
     \mark "C"
     fis2.. a8 ~ | a4. g8 ~ g8 dis4 fis8 ~ | fis4. e8 dis e4 b'8 ~ | b4 g8 e ~ e b4 d8 ~ |
-    d4. cis8 ~ cis2 ~ | cis4 e8 cis ~ cis a4 b8~ | b2.. a8 ~ | a2 ~ a8 cis4 e8 ~ | 
+    d4. cis8 ~ cis2 ~ | cis4 e8 cis ~ cis a4 b8~ | b2.. a8 ~ | a2 ~ a8 cis4 e8 ~ |
     e d4 cis8 ~ cis d4 f8 ~ | f gis4 cis8 ~ cis b4 a8 ~ | a g!4 b,8 ~ b2 ~ | b4 b8 cis ~ cis d4 fis8 ~ |
     fis e4 d8 b4 gis ~ | gis b8 cis ~ cis e4 d8 ~ | d2.. cis8 ~ | cis1 \bar "||"
 
@@ -72,8 +72,8 @@ harmony = \notes \chords {
 }
 
 
-Score =  < 
-    \context ChordNames \harmony 
+Score =  <
+    \context ChordNames \harmony
     \context Staff \tune
 >
 

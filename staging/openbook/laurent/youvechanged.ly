@@ -17,7 +17,7 @@ Staff = \notes \context Voice = $Staff {
     \key ees \major
     \clef treble
     \partial 4 bes'4 |
-    \repeat volta 2	{ 
+    \repeat volta 2	{
 	d''2. bes'4 |
 	d''8 des'' c'' ces'' bes'4 c'' |
 	bes'2. g'4 |
@@ -26,7 +26,7 @@ Staff = \notes \context Voice = $Staff {
 	g'2. c''4 |
     } \alternative{
 	{ ges'8 ges' ges' g' ~ g'4 d'8 c' ~ |
-	  c'1 ~ | c'2 r4 bes' | \break } 
+	  c'1 ~ | c'2 r4 bes' | \break }
 	{ ges'8 ges' ges' g' ~ g'4 d'8 f' ~ |
 				%10
 	  f'1 |
@@ -63,12 +63,12 @@ accompaniment = \chords{
     \partial 4 bes4:7.5+
     ees1:maj a2:m7.5- d:7.5+
     g1:m7.5- c2:7 c:7.5- f1:9
-    b2:7 bes:7 g:m7 c:7 f:m7 bes:7 
+    b2:7 bes:7 g:m7 c:7 f:m7 bes:7
     b2:7 bes:7 bes1:m7 ees:9
     aes:maj des:9.4^3
     g:m7 bes2:m7 ees:7 aes1:maj des:9.4^3
-    g2:m7 ges4:m7 b:9 
-    f2:m7 bes:7 
+    g2:m7 ges4:m7 b:9
+    f2:m7 bes:7
     ees1:maj a2:m7.5- d:7.5+
     g1:m7.5- c2:7 c:7.5- f1:9
     b2:7 bes:7
@@ -78,22 +78,22 @@ accompaniment = \chords{
 texta = \lyrics{
     You've changed, that spar -- kle in your eyes is gone,
     your smile is just a care -- less yawn, you're
-    break -- ing my heart you've changed. 
+    break -- ing my heart you've changed.
     You've
     can't un -- der -- stand, you've changed.
-    You've for -- got -- ten the words I love you, each me -- mo --ry that 
+    You've for -- got -- ten the words I love you, each me -- mo --ry that
     we shared. You ig -- nore eve -- ry star a -- bove you.
     I can't re -- a -- lize  you e -- ver cared.
-    You've changed, you're not the an -- gel I once knew 
+    You've changed, you're not the an -- gel I once knew
     no need to tell me that we're through,
     It's all o -- ver now, you've changed.
 }
 
-textb = \lyrics{ 
+textb = \lyrics{
     _ changed,
     your kiss -- es now are so bla -- se,
     You're bored with me in eve -- ry way,
-    I 
+    I
 }
 
 \midi {	\tempo 4 = 60 }

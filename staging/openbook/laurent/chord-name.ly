@@ -5,56 +5,56 @@
         (((0 . 0) (2 . -1)) . ("m"))
 
 	;; 7.5+.9-
-	(((0 . 0) (2 . 0) (4 . 1) (6 . -1) (1 . -1)) 
-	 . ("7" (lines ((raise . 1.5) 
+	(((0 . 0) (2 . 0) (4 . 1) (6 . -1) (1 . -1))
+	 . ("7" (lines ((raise . 1.5)
 			((font-relative-size . -2) (columns " " (music (named ("accidentals-1"))) ((raise . -0.5) "5"))))
 		       ((raise . -0.5)
 			((font-relative-size . -2) (columns " " (music (named ("accidentals--1"))) "9"))))))
 	;; 7.5-.9-
-	(((0 . 0) (2 . 0) (4 . -1) (6 . -1) (1 . -1)) 
-	 . ("7" (lines ((raise . 1.5) 
+	(((0 . 0) (2 . 0) (4 . -1) (6 . -1) (1 . -1))
+	 . ("7" (lines ((raise . 1.5)
 			((font-relative-size . -2) (columns " " (music (named ("accidentals--1"))) ((raise . -0.5) "5"))))
 		       ((raise . -0.5)
 			((font-relative-size . -2) (columns " " (music (named ("accidentals--1"))) "9"))))))
 	;; 7.5+.9+
-	(((0 . 0) (2 . 0) (4 . 1) (6 . -1) (1 . 1)) 
-	 . ("7" (lines ((raise . 1.5) 
+	(((0 . 0) (2 . 0) (4 . 1) (6 . -1) (1 . 1))
+	 . ("7" (lines ((raise . 1.5)
 			((font-relative-size . -2) (columns " " (music (named ("accidentals-1"))) ((raise . -0.5) "5"))))
 		       ((raise . -0.5)
 			((font-relative-size . -2) (columns " " (music (named ("accidentals-1"))) ((raise . -0.5) "9")))))))
 	;; 9.11+
-	(((0 . 0) (4 . 0) (6 . -1) (1 . 0) (3 . 1)) 
+	(((0 . 0) (4 . 0) (6 . -1) (1 . 0) (3 . 1))
 	 . ("9" ((raise . 0.8) ((font-relative-size . -2) (music (named ("accidentals-1"))) "11"))))
 	;; 7.4+
-	(((0 . 0) (3 . 1) (4 . 0) (6 . -1)) 
+	(((0 . 0) (3 . 1) (4 . 0) (6 . -1))
 	 . ("7" ((raise . 0.8) ((font-relative-size . -2) (music (named ("accidentals-1"))) "4"))))
 	;; 7.9-.11+
-	(((0 . 0) (4 . 0) (6 . -1) (1 . -1) (3 . 1)) 
-	 . ("7" (lines ((raise . 1.5) 
+	(((0 . 0) (4 . 0) (6 . -1) (1 . -1) (3 . 1))
+	 . ("7" (lines ((raise . 1.5)
 			((font-relative-size . -2) (columns " " (music (named ("accidentals--1"))) "9")))
 		       ((raise . -0.5)
 			((font-relative-size . -2) (columns " " (music (named ("accidentals-1"))) "11"))))))
 	;; 7.9-
-	(((0 . 0) (2 . 0) (4 . 0) (6 . -1) (1 . -1)) 
+	(((0 . 0) (2 . 0) (4 . 0) (6 . -1) (1 . -1))
 	 . ("7" ((raise . 0.8) ((font-relative-size . -2) (music (named ("accidentals--1"))) "9"))))
 	;; 7.5-
-	(((0 . 0) (2 . 0) (4 . -1) (6 . -1)) 
+	(((0 . 0) (2 . 0) (4 . -1) (6 . -1))
 	 . ("7" ((raise . 0.8) ((font-relative-size . -2) (music (named ("accidentals--1"))) "5"))))
 	;; 7.5+
-	(((0 . 0) (2 . 0) (4 . 1) (6 . -1)) 
+	(((0 . 0) (2 . 0) (4 . 1) (6 . -1))
 	 . ("7" ((raise . 0.8) ((font-relative-size . -2) (music (named ("accidentals-1"))) "5"))))
 	;; sus4.7
 	(((0 . 0) (3 . 0) (4 . 0) (6 . -1))
 	 . ("7" ((raise . 0.8) ((font-relative-size . -2) "sus4"))))
 	;; 6.9^7
-	(((0 . 0) (2 . 0) (4 . 0) (5 . 0) (1 . 0)) 
+	(((0 . 0) (2 . 0) (4 . 0) (5 . 0) (1 . 0))
 	 . ("6" ((raise . 0.8) ((font-relative-size . -2) "9"))))
 	;; 9
 	(((0 . 0) (2 . 0) (4 . 0) (6 . -1) (1 . 0)) . ("9"))
 	;; sus9
 	(((0 . 0) (3 . 0) (4 . 0) (6 . -1) (1 . 0)) . ("9sus"))
 	;; maj9
-	(((0 . 0) (2 . 0) (4 . 0) (6 . 0) (1 . 0)) 
+	(((0 . 0) (2 . 0) (4 . 0) (6 . 0) (1 . 0))
 	 . ("$\\Delta$" ((raise . 0.8) ((font-relative-size . -2) " 9"))))
 	;; 7.9+
 	(((0 . 0) (2 . 0) (4 . 0) (6 . -1) (1 . 1))
@@ -87,7 +87,7 @@
 	;; m7.9
 	(((0 . 0) (2 . -1) (4 . 0) (6 . -1) (1 . 0)) .  (("$-9$")))
 	;; maj.4+
-	(((0 . 0) (3 . 1) (4 . 0) (6 . 0)) 
+	(((0 . 0) (3 . 1) (4 . 0) (6 . 0))
 	 . ("$\\Delta$" ((raise . 0.8) ((font-relative-size . -2) " " (music (named ("accidentals-1"))) "4"))))
 	; major seventh chord = triangle
 	(((0 . 0) (2 . 0) (4 . 0) (6 . 0)) .  ("$\\Delta$"))

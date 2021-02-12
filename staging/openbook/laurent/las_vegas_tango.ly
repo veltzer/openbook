@@ -7,20 +7,20 @@
 }
 
 phraseA = \notes \relative a' {
-    g8 g a b4 b16 a | b1 ~ | b4 
+    g8 g a b4 b16 a | b1 ~ | b4
 }
 
 phraseB = \notes \relative c'' {
-    b8 b d e4 e16 d | e1 ~ | e4 
+    b8 b d e4 e16 d | e1 ~ | e4
 }
 
-Tune = \notes \relative a' { 
+Tune = \notes \relative a' {
     \key g \major
     \time 4/4
 
     r4 g8 g a b4 b16 a |
     \repeat volta 2 {
-	b1 ~ | b4  \phraseA \phraseB \phraseA \phraseB \phraseA g8 g a b4 b16 a 
+	b1 ~ | b4  \phraseA \phraseB \phraseA \phraseB \phraseA g8 g a b4 b16 a
     }
 }
 

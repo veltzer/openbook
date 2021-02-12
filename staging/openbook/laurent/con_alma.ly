@@ -15,8 +15,8 @@ melody = \notes \relative g' {
     } \alternative { { e2 r | \break } { e2 \times 2/3 {r4 ees f} } }
     \tupletBracketUp
     \times 2/3 {ges4 f ees8 d} ees2 ~ | ees ees8 f ges aes |
-    \times 2/3 {a!4 gis fis8 f} fis2 ~ | \break fis ~ fis8 fis gis a | 
-    b1 ~ | b2 \times 2/3 {e,4 gis b8 cis} | 
+    \times 2/3 {a!4 gis fis8 f} fis2 ~ | \break fis ~ fis8 fis gis a |
+    b1 ~ | b2 \times 2/3 {e,4 gis b8 cis} |
     bes1 ~ | bes \bar "||"
 }
 
@@ -24,15 +24,15 @@ melody = \notes \relative g' {
 harmony = \notes \chords {
     \repeat volta 2 {
 	e2:maj gis:7/dis | cis:m7 b:7 | bes1:7 | ees2:maj ees4:m7 aes:7 |
-	des2:maj f:7/c | bes:m7 aes:7 | g1:7 | 
+	des2:maj f:7/c | bes:m7 aes:7 | g1:7 |
     } \alternative { {c2:maj fis4:m7 b:7} {c1:maj} }
-    c1:m7.5- | f:7.9- | fis:m7 | b:7 | 
+    c1:m7.5- | f:7.9- | fis:m7 | b:7 |
     e1*2:maj | f1:m7 | bes:7 |
 }
 
 \midi { \tempo 4 = 100 }
 
-Score =  < 
+Score =  <
     \context ChordNames \harmony
     \context Staff \melody
 >

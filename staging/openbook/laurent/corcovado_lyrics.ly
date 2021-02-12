@@ -16,8 +16,8 @@ text = \lyrics {
     qui -- et chords from my gui -- tar
     float -- ing on the si -- lence that sur -- rounds us
 
-    Qui -- et thoughts and qui -- et dreams 
-    qui -- et walks by qui -- et streams, 
+    Qui -- et thoughts and qui -- et dreams
+    qui -- et walks by qui -- et streams,
     and a win -- dow look -- ing on the mount -- tains and the sea.
     How love -- ly!
 
@@ -27,12 +27,12 @@ text = \lyrics {
 
     I who was lost and lone -- ly,
     be -- liev -- ing life was on -- ly
-    a bit -- ter tra -- gic joke have found with you 
+    a bit -- ter tra -- gic joke have found with you
     the mean -- ing of ex -- is -- tence, oh, my love.
 
 }
 
-Score =  < 
+Score =  <
     \context ChordNames \harmony
     \addlyrics
     	\context Staff \melody

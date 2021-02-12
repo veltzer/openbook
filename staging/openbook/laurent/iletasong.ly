@@ -16,7 +16,7 @@ Staff = \notes \context Voice = $Staff {
     \time 4/4
     \key ees \major
     \clef treble
-    \repeat volta 2	{ 
+    \repeat volta 2	{
 	ees'8 f' ees' ees'' ~ ees''4. c''8 |
 	\times 2/3 { bes' c'' bes' } ees'2. |
 	r8 d''4. c''8 bes' g' d' |
@@ -25,7 +25,7 @@ Staff = \notes \context Voice = $Staff {
 	f' g'4 aes'8 ~ aes' a'4 bes'8 ~ |
 	bes' ees''4. ~ ees'' c''8 |
 	\times 2/3 { bes' c'' bes' } ees'2. ~ |
-	} \alternative	{ 
+	} \alternative	{
 	{ees' r4 |}
 	{r4 bes' bes' a' \bar "||"}
     }
@@ -56,17 +56,17 @@ StaffStaff = \context Staff = StaffStaff <
 
 
 accompaniment = \chords{
-    ees2 aes:7 
+    ees2 aes:7
     ees c:m7 g:m7 c:7 g:m7
     c:7 f4:m/aes g:m f:m7 fis:3-.5-.7-
-    ees2/g aes:7 
+    ees2/g aes:7
     ees c:m7 f:m7.5- bes:7
     ees4 ees2/g ges4:3-.5-.7-
     f1:m7 bes:7 ees:maj ees4:6 r4 d:m7 g:7
-    c4:m g:5+.7/b g:m/bes c:m/a aes:m7 des:7 ges2:7 
+    c4:m g:5+.7/b g:m/bes c:m/a aes:m7 des:7 ges2:7
     b1:7 bes:5+.7 ees2 aes:7 ees c:m7 g:m7 c:7
     g:m7 c:7 f4:m/aes g:m f:m7 fis:3-.5-.7-
-    ees2/g aes:7 ees/bes f:m7/bes ees1 
+    ees2/g aes:7 ees/bes f:m7/bes ees1
 
 }
 
@@ -76,7 +76,7 @@ texta = \lyrics{
     Am I too late to make a -- mends
     You know that we are meant to be more than just friends,  just friends.
     I let a song go out of my heart. Be -- lieve me dar -- lin' when I say
-    I won't know sweet _ mu -- sic Un -- til you re -- turn some  day.   
+    I won't know sweet _ mu -- sic Un -- til you re -- turn some  day.
 }
 
 textb = \lyrics{

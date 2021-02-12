@@ -13,8 +13,8 @@ Staff = \notes \context Voice = $Staff {
     \time 4/4
     \key c \major
     \clef treble
-    \partial 4 g'4 \bar"|:" 
-    \repeat volta 2	{ 
+    \partial 4 g'4 \bar"|:"
+    \repeat volta 2	{
 	e'8 b' c''2 e'4 |
 	f'8 b' c''2 f'4 |
 	g'8 b' c''4 gis'8 b' c''4 |
@@ -64,14 +64,14 @@ accompaniment = \chords{
     d:m7 g:7
     c2 cis:3-.5-.7- d:m7
     g:7
-    c c:aug7 f:maj  
+    c c:aug7 f:maj
     g:7.9- c d:7 d:m7 g:7 c f:maj c1
 }
 
 
-textb = \lyrics { 
+textb = \lyrics {
     _
-    could -- n't 
+    could -- n't
     sleep and would -- n't sleep
     when love came and told me I should -- n't sleep
     Be -- witched,
@@ -80,7 +80,7 @@ textb = \lyrics {
 }
 
 texta = \lyrics{
-    I'm 
+    I'm
     wild a -- gain be -- guiled a -- gain
     a sim -- per -- ing whim -- per -- ing
     child  a -- gain Be -- witched,

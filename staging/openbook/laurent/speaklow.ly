@@ -17,7 +17,7 @@ Staff = \notes \context Voice = $Staff {
     \key f \major
     \clef treble
     \partial 4 c'4 |
-    \repeat volta 2	 { 
+    \repeat volta 2	 {
 	a'1 ~ |
 	a'2 \times 2/3 { g'4 d' g' } |
 	a'1 ~ |
@@ -35,7 +35,7 @@ Staff = \notes \context Voice = $Staff {
 	a'4. a'8 ~ \times 2/3 { a'4 e' f' } |
 	g'4. g'8 ~ \times 2/3 {  g'4 f' e'  } |
 				%15
-	} \alternative	{ 
+	} \alternative	{
 	{ d'2 d' | d'2. c'4 |}
 	{ f'1 ~ | f' \bar "||"}
     }
@@ -71,13 +71,13 @@ Staff = \notes \context Voice = $Staff {
 
 accompaniment = \chords{
     \partial 4 R4
-    g1:m7 c:7 g1:m7 c:7 g:m7 
+    g1:m7 c:7 g1:m7 c:7 g:m7
     c:7 a:m7.5- d:7.9- bes:m9 ees:7 bes:m9
     ees:7 g:7 c:7 f2 e:7 g:m7 c:7 f1*2
     f:m7 aes1:m.maj aes:m6 ees1*2:maj
     aes1:m g2:7 c:7 g1:m7
     c:7 g:m7 c:7 g:m7 c:7 a:m7.5- d:7.9- bes:m7
-    ees:7 a:m7.5- d:7 g:m7 c:aug7 f1*2 
+    ees:7 a:m7.5- d:7 g:m7 c:aug7 f1*2
 
 }
 
@@ -88,16 +88,16 @@ StaffStaff = \context Staff = StaffStaff <
 
 
 textb = \lyrics{
-    _ low, dar -- ling speak low, 
-    love is a spark, lost in the dark, too soon, too soon 
+    _ low, dar -- ling speak low,
+    love is a spark, lost in the dark, too soon, too soon
     I feel where -- ver I go that to -- mor -- row is
-    near tomor -- row is here and_al -- ways too 
+    near tomor -- row is here and_al -- ways too
 }
 
 texta = \lyrics{
     Speak low, when you speak love, our sum -- mer days
     wi -- thers a -- way too soon, too soon
-    Speak low, when you speak love, our _  mo -- ment  is swift like 
+    Speak low, when you speak love, our _  mo -- ment  is swift like
     ships a -- drift we're swept a -- part too soon. Speak soon
     Time is so old and love so brief,
     Love is pure gold and time's a thief

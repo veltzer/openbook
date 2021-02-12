@@ -43,7 +43,7 @@ restOff = \property Voice.Rest \override #'molecule-callback = #'()
 
 invisibleNotes = {
     \stemOff
-    \headOff 
+    \headOff
     \beamOff
     \restOff
 }

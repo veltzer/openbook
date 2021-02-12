@@ -15,7 +15,7 @@
 chant = \notes \relative c'' {
     \key c \minor
     \time 3/4
-    
+
     \property Voice.tupletSpannerDuration = #(make-moment 1 4)
 
     \repeat volta 2 {
@@ -24,7 +24,7 @@ chant = \notes \relative c'' {
 	c4. c8 bes8. aes16 |
 	g4 ~ \times 2/3 { \tupletBracketDown [g8( aes bes] \tupletBracketUp [aes bes )c] } |
 	g2. \bar "||"
-	
+
 	g4 \times 2/3 { ees4 f8 g4 aes8 } |
 	bes4 ~ \times 2/3 {[bes8 f f] [f e f] } |
 	aes2 g4 | c c4. ces8 |
@@ -46,15 +46,15 @@ chant = \notes \relative c'' {
 	\tupletBracketUp
 	[aes bes )c] } |
     g2. \bar "||"
-    
+
     g4 \times 2/3 { ees4( )f8 g4( )aes8 } |
     bes4. f8 \times 2/3 { f e f } |
     aes4 g c, | des4 ~ \times 2/3 { [des8( ees )f] [ees( )f g]  } |
     g4 c, e |
     \times 2/3 {
-	f4 f8 [f( )g aes] 
+	f4 f8 [f( )g aes]
 	\tupletBracketDown
-	[bes( )aes bes] 
+	[bes( )aes bes]
       \tupletBracketUp } |
     c4 c, c' |
     f2\f f,4 |

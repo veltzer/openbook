@@ -19,5 +19,5 @@ Score = <
     }
     \addlyrics
     	\context Staff \melody
-    	\context Lyrics <\texta \textb> 
+    	\context Lyrics <\texta \textb>
 >

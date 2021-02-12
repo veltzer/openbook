@@ -22,7 +22,7 @@ Staff = \notes \context Voice = $Staff {
     r4 g'8 g' ~ g' fis' g'4 |
     d''1 ~ |
     d''2 r | \break
-    d''8 d'' d'' d'' ~ d''2 | 
+    d''8 d'' d'' d'' ~ d''2 |
 				%10
     r4 a' gis' a' |
     c''8 c'' c'' c'' ~ c''2 |
@@ -63,11 +63,11 @@ accompaniment = \chords {
     g1*2:m6
     g:m6 g:m6 d1:m7.5- g:7
     c:m9 f:7 bes:maj ees:9
-    e:m7.5- 
+    e:m7.5-
     a:7 a:m7.5-
     d:7
     g1*2:maj g:m6
-    g:m6 d1:m7.5- g:7 c:m9 
+    g:m6 d1:m7.5- g:7 c:m9
     ees2:m7 aes:7 bes:maj ees:7
     d:m7.5- g:7 c1:m7 c2:m7.5- f:7 bes1:6 a2:m7.5- d2:7
 }
@@ -77,9 +77,9 @@ text = \lyrics {
     Get out of town, Be good to me, please.
     Why wish me harm? Why not re -- tire to a farm,
     and be con -- tent -- ed to charm The birds of the trees?
-    Just dis -- ap -- pear, I care for you much too much, And when you are 
-    near, close to me dear, We touch too much, 
-    The thrill when we meet 
+    Just dis -- ap -- pear, I care for you much too much, And when you are
+    near, close to me dear, We touch too much,
+    The thrill when we meet
     Is so bit -- ter sweet
     that dar -- ling, it's get -- ting me down.
     So on your mark, get

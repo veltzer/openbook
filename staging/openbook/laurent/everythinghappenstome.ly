@@ -17,7 +17,7 @@ Staff = \notes \context Voice = $Staff {
     \time 4/4
     \key bes \major
     \clef treble
-    \partial 8 g'8 \bar"|:" 	
+    \partial 8 g'8 \bar"|:"
     \repeat volta 2 {
 	d''8 d'' d'' ees'' c'' c'' bes' a' |
 	c'' c'' c'' d'' bes'4 r8 g' |
@@ -63,8 +63,8 @@ accompaniment = \chords{
     c:m f:7 d:3-.5-.7
     g:7  g:7.9- c:3-.5-.7 d:m g:7 c:m
     f:7 bes1 c2:m f:7 bes1 f2:m bes:7.9+
-    ees c:7 f:m   bes:7.9+ ees1 e2:m 
-    a:7.9+ d1 g2:m c:7 
+    ees c:7 f:m   bes:7.9+ ees1 e2:m
+    a:7.9+ d1 g2:m c:7
     c:m f:7 c:m f:7 d:m cis:3-.5-.7- c:m f:7
     d:3-.5-.7 g:7 g:7.9- c:3-.5-.7 d:m g:7 c:m f:7
     bes g:7.9-
@@ -74,25 +74,25 @@ texta = \lyrics{
     I make a date for golf and you can bet your life it rains
     I try to give a par -- ty and the guy up -- stairs com -- plains
     I guess I'll go thru life just catch -- ing colds and mis -- sin' trains
-    eve -- ry -- thing hap -- pens to me. I 
-    eve -- ry -- thing hap -- pens to me. 
+    eve -- ry -- thing hap -- pens to me. I
+    eve -- ry -- thing hap -- pens to me.
     At first my heart tho't  you could break this jinx for me,
     that love would turn the trick to end des -- pair,
     But now I just can't fool this head that thinks for me,
     I mort -- gaged all my cas -- tles in the air.
     I've te -- le -- graphed and phoned, I sent an Air -- mail Spe -- cial too,
     Your ans -- wer was good -- bye and there was e -- ven post -- age due,
-    I fell in love just once and then It had to be with you, 
-    eve -- ry -- thing hap -- pens to me. 
+    I fell in love just once and then It had to be with you,
+    eve -- ry -- thing hap -- pens to me.
     When I get that Mood In -- di -- go.
     I could lay me down and die.
 }
 
-textb = \lyrics{ 
+textb = \lyrics{
     _
     ne -- ver miss a thing, I've had the mea -- sles and the mumps,
     and ev'-- ry time I play an ace my part -- ner al -- ways  trumps,
-    I guess I'm just a fool who ne -- ver looks be -- fore she jumps, 
+    I guess I'm just a fool who ne -- ver looks be -- fore she jumps,
 }
 
 \midi { \tempo 4 = 60 }

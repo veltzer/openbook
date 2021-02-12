@@ -30,15 +30,15 @@ Tune = \notes \relative g' {
 	r4 f2 g8 r | bes4. c8 ~ c ees4 c8 | d4 d c8 d c4 |
     }
     \alternative { bes1 | } { bes2. r4 \bar "||" }
-    
-    r4 d2 d4 | d4. e8 ~ e2 |   r4 d2 d4 | d4. g,8 ~ g2 | 
-    r4 c2 c4 | c4. d8 ~ d2 |   r4 c2 c4 | c4. c8 ~ c2  \bar "||" 
-    
+
+    r4 d2 d4 | d4. e8 ~ e2 |   r4 d2 d4 | d4. g,8 ~ g2 |
+    r4 c2 c4 | c4. d8 ~ d2 |   r4 c2 c4 | c4. c8 ~ c2  \bar "||"
+
     r4 f,2 g8 r | bes4. c8 ~ c2 | r4 c2 bes8 r | g4. f8 ~ f2 |
     r4 f2 g8 r | bes4. c8 ~ c ees4 c8 | d4 d c8 d c4 | f2 r8 ees4 b8 \toCoda \bar "||"
 
-    d4 d c8 bes c bes-\accent | ~ bes1_"Break" \coda \bar "||" 
-    r1 | r |      
+    d4 d c8 bes c bes-\accent | ~ bes1_"Break" \coda \bar "||"
+    r1 | r |
     \property Voice.NoteHead \set #'style = #'slash
     c4 c c c | c8. c16 c8 c ~ c2-\fermata \bar "|."
 }

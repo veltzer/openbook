@@ -25,22 +25,22 @@ Melody = \notes \relative c' {
 
     \partial 4. c8- . f-. aes-. |
     \repeat "volta" 2 {
-	c-\accent \times 2/3 {\beamHackA des16 \beamHackB c bes} aes8 bes-\accent ~ bes 
+	c-\accent \times 2/3 {\beamHackA des16 \beamHackB c bes} aes8 bes-\accent ~ bes
 	\times 2/3 {\beamHackA c16 \beamHackB bes aes} f8 aes-\accent ~ |
 	aes \times 2/3 {\beamHackA bes16 \beamHackB aes f} ees8 f-\accent ~ f
 	\times 2/3 {\beamHackA g16 \beamHackB f ees} c8 <des-\accent ees> ~ |
 	<des1 ees> ~ | <des2. ees> g,8 \( ges | f <b des!> ~ < \) b2. des> |
-	r2 <d4. f(> <)ees8 g> ~ | <ees1 g> | 
+	r2 <d4. f(> <)ees8 g> ~ | <ees1 g> |
     } \alternative {
 	{ ~ <ees2 g> r8 c-. f-. aes-. | }
 	{ <ees2 g> r8 <c8-. ees> <c-. ees> <c-. ees> | }
     }
-    <c-. ees(> <)bes des> r <des f> ~ <des2 f> | 
-    <des2 f> r8 <des-. f> <des-. f> <des-. f> | 
+    <c-. ees(> <)bes des> r <des f> ~ <des2 f> |
+    <des2 f> r8 <des-. f> <des-. f> <des-. f> |
     <des-. f(> <)ees c> r <ees g> ~ <ees2 g> ~ |
     <ees2 g> r8 <c-. ees> <c-. ees> <c-. ees> |
-    <c-. ees(> <)bes des> r <des f> ~ <des2 f> | 
-    r2 <e4. aes> <g8 bes> ~ | <g1 bes> ~ | 
+    <c-. ees(> <)bes des> r <des f> ~ <des2 f> |
+    r2 <e4. aes> <g8 bes> ~ | <g1 bes> ~ |
     <g2 bes> r8 c,-. f-. aes-. \bar "|."
 }
 
@@ -53,7 +53,7 @@ Harmony = \notes \chords {
 }
 
 
-Score =  < 
+Score =  <
     \context ChordNames \Harmony
     \context Staff \Melody
 >

@@ -22,15 +22,15 @@ Chords = \chords {
 Tune = \notes \relative c' {
     \time 4/4
     \key g \major
-    
-    \partial 2. d4 g a | 
+
+    \partial 2. d4 g a |
     \repeat "volta" 2 {
-	a2 b | ~ b4 d, g a | bes1 | ~ bes4 c, f g | 
+	a2 b | ~ b4 d, g a | bes1 | ~ bes4 c, f g |
 	g2 a | ~ a4 c, f g | aes1 | ~ aes4 d, ees f \bar "||"
     } \alternative {
 	{ g g g g | g g8 a ~ a g a4 | bes1 | ~ bes4. a8 ~ a  g a4 |
 	  b!1 | ~ b4 a b c | d d d d | d8 r d,4 g a | }
-	{ g g g g | g g8 a ~ a g a4 | b1 | ~ b4 a b c | 
+	{ g g g g | g g8 a ~ a g a4 | b1 | ~ b4 a b c |
 	  d d d d | d d, g a | g1 | ~ g \bar "|." }
     }
 }

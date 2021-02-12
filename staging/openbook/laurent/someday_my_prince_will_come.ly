@@ -27,14 +27,14 @@ Tune = \notes \relative f' {
     f,2. | bes2 fis4 | a2 g4 | g2. | g2. |
     ees'2 b4 | d2 c4 | c d ees | f2 f4 | c'2 bes4 |
     b,4. [c8 b c] | a'2 g4 | f f f | f2 f4 | f2. ~ | f2 r4 \bar "|."
-    
+
 }
 
 Score = <
-    \context ChordNames { 
+    \context ChordNames {
 	\Chords
     }
-    \context Staff = bottom {	
+    \context Staff = bottom {
 	\Tune
     }
 >

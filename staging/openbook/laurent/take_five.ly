@@ -16,18 +16,18 @@ Chords = \chords {
 
 TuneA = \notes \relative c' {
     bes8 ees ges aes \bar "||"
-    a bes a aes ges4 bes,4 \( \)des-. | ees2. f16 \( ges f ees \) des4 | 
-    ees2. des16 \( ees des bes \) aes4 |bes2. bes8 ees ges aes |  %\break 
-    a bes a aes ges4 bes,4 \( \)des-. |  ees2. des16 \( ees des bes \) aes4 | 
+    a bes a aes ges4 bes,4 \( \)des-. | ees2. f16 \( ges f ees \) des4 |
+    ees2. des16 \( ees des bes \) aes4 |bes2. bes8 ees ges aes |  %\break
+    a bes a aes ges4 bes,4 \( \)des-. |  ees2. des16 \( ees des bes \) aes4 |
     bes2. f'16 \( ges f ees \) des4 | ees2.
 }
 
 TuneB = \notes \relative c'' {
     ees8 des ees des \bar "||" %\break
-    ees ges4 ees8 ces4 aes8 bes ces c | des8 f4 des8 bes4 ges8 aes a bes | 
+    ees ges4 ees8 ces4 aes8 bes ces c | des8 f4 des8 bes4 ges8 aes a bes |
     ces ees4 ces8 aes4 f8 ges aes a | bes a bes ces des4 des8 c des d | %\break
     ees ges4 ees8 ces4 aes8 bes ces c | des g4 des8 bes4 ges8 aes a bes |
-    ces ees4 ces8 aes4 f8 aes des ces | bes2. 
+    ces ees4 ces8 aes4 f8 aes des ces | bes2.
 }
 
 Tune = \notes \relative c' {

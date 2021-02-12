@@ -11,7 +11,7 @@
 
 \include "wave_inc.ly"
 
-Score =  < 
+Score =  <
     \context ChordNames \harmony
     \context Staff \melody
 >

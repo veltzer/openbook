@@ -44,7 +44,7 @@ Staff = \notes \context Voice = $Staff {
     r8 d''4. c''8 d''4. |
     r8 bes'4. aes'4 bes'8 g' ~ |
     g'1 ~ |
-    g'4 r r2 
+    g'4 r r2
     \bar "|."
 }
 
@@ -54,7 +54,7 @@ texta = \lyrics {
     he digs me, out -- cat -- ting, that sa -- tin doll.
     _  He's no -- bo -- dy's fool so I'm playn' it as cool as can be.
     I'll give it a whirl but I ain't for no boy catch -- ing me.
-    Te -- le -- phone num -- bers, well you know, do -- in' my 
+    Te -- le -- phone num -- bers, well you know, do -- in' my
     rum -- bas, with u -- no, and that' -- n, my sa -- tin doll.
 }
 

@@ -10,14 +10,14 @@
 melody = \notes \relative c' {
     \time 4/4
     \key c \major
-    
+
     \repeat volta 2 {
 	c'4. b8 a4 g8 f ~ | f g ~ g4 a c | b4. a8 g4 f8 e | ~ e1 |
 	a4. g8 f4 e8 d | ~ d e ~ e4 f a | gis4. f8 e4 d8 c | ~ c2. cis4 \bar "||"
     } \alternative {
-	{ d8 a'4 a8 ~ a2 | ~ a2 c4 b | g1 | ~ g2. b,4 | 
+	{ d8 a'4 a8 ~ a2 | ~ a2 c4 b | g1 | ~ g2. b,4 |
 	  c8 f4 f8 ~ f2 | ~ f4 a2 g4 | f4. e8 ~ e2 | ~ e2 r | }
-	{ d8 a'4 a8 ~ a2 | ~ a2 c4 b | g1 | ~ g2. gis4 | 
+	{ d8 a'4 a8 ~ a2 | ~ a2 c4 b | g1 | ~ g2. gis4 |
 	  a8 c,4 c8 ~ c2 | ~ c2 c4 d | c1 | r \bar "||" }
     }
 }
@@ -41,7 +41,7 @@ text = \lyrics {
     In o -- ther words dar -- ling kiss me
 }
 
-Score =  \notes < 
+Score =  \notes <
     \context ChordNames \harmony
     \addlyrics
     \context Staff \melody

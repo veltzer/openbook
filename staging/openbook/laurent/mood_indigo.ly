@@ -59,12 +59,12 @@ Staff = \notes \context Voice = $Staff {
 
 accompaniment = \chords {
     aes1 bes:7 bes2:m ees:7 aes1
-    aes bes:7 e:7 ees:7 
+    aes bes:7 e:7 ees:7
     aes:7 ees2:m aes:7 des1 ges2.:7 ees4:7
     aes1 bes:7 bes2:m ees:7  aes1
     aes bes:7 bes2:m ees:7 aes4 f:7 bes:m ees:7
-    aes1 bes:7 bes:7 ees:7 aes:7 ees2:m aes:7 des des:7 des:7 ees:7  
-    aes1 bes:7 bes2:m ees:7 aes4 
+    aes1 bes:7 bes:7 ees:7 aes:7 ees2:m aes:7 des des:7 des:7 ees:7
+    aes1 bes:7 bes2:m ees:7 aes4
     f:7 bes:m ees:7
 }
 

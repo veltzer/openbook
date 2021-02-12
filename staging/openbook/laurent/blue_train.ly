@@ -21,11 +21,11 @@ Tune = \notes \relative c'' {
 	ees1 | r4 r8 bes des f-\accent des ees ~ |
 	ees1 | \break r4 r8 ees, ges bes-\accent ges aes ~ |
 	aes1 | r4 r8 bes des f-\accent des ees ~ |
-	ees1 | \break r4 r8 bes des ges-\accent ees des ~ | 
+	ees1 | \break r4 r8 bes des ges-\accent ees des ~ |
 	des1 | r4 r8 bes des f-\accent des ees ~ |
-    } \alternative { 
-	{ ees1 | \break r4 r8 bes des f-\accent des ees ~ | } 
-	{ ees4 r4 r2| r1 | } 
+    } \alternative {
+	{ ees1 | \break r4 r8 bes des f-\accent des ees ~ | }
+	{ ees4 r4 r2| r1 | }
     }
     \invisibleNotes c4 c c c \barOff |
 }

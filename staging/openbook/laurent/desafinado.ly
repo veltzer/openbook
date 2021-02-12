@@ -74,7 +74,7 @@ harmony = \notes \chords {
     f1*2:maj         | g:7.4+           | g1:m7  | c:7    | a:m7.5- | d:9-  |
     g:m7   | ees:7   | f:maj | aes:dim7 |
     g1*2:7           | bes1:m7 | ees:9  |
-    g:7    | c:7 | f1:6.9^7 | g:m7/+c | 
+    g:7    | c:7 | f1:6.9^7 | g:m7/+c |
 }
 
 Score = <

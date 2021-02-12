@@ -46,7 +46,7 @@ Tune = \notes \transpose c' {
 	\times 2/3 {aes8 g aes} g4 ~ g4. f8 | e c'8 ~ c2. |
 	des4 des8. des16 c8 c ~ c4 | aes8. aes16 aes8 g8 ~ g4. c8 |
 	f4. f16 f ees4. ees16 ees | des4. ees16 des c2 |
-	
+
 	\break r4 c,16 f g c aes4. c,8 | f8 f ~ f4 ~ f8 f c'16 bes8. |
 	r4 f16 aes c ees d4. aes8 | b4 bes bes8 aes ~ aes4 |
 	r4 bes16 des f aes g4. des8 | c2. f,8 g |

@@ -59,7 +59,7 @@ Staff = \notes \context Voice = $Staff {
 }
 
 text = \lyrics{
-    Just friends, lov -- ers no more 
+    Just friends, lov -- ers no more
     Just friends, but not like be -- fore.
     To think of what we've been and not to kiss a -- gain seems like
     pre -- tend -- ing it is -- n't the end -- ing.
@@ -71,13 +71,13 @@ text = \lyrics{
 
 accompaniment = \chords{
     g2:7
-    c1*2:maj 
+    c1*2:maj
     c1:min7 f:7
     g1*2:maj bes1:min7 ees:7
-    a:min7 d:7 g:maj e:min7 a1*2:9 a1:min7 
-    d2:7 g:7 
+    a:min7 d:7 g:maj e:min7 a1*2:9 a1:min7
+    d2:7 g:7
     c1*2:maj c1:min7 f:7 g1*2:maj bes1:min7 ees:7
-    a:min7 d:7 fis2:min7.5- b:7 
+    a:min7 d:7 fis2:min7.5- b:7
     e1:min7 a:9 a2:min7 d:7 g1:6 d2:min7 g:7
 }
 

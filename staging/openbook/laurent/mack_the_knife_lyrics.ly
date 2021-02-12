@@ -13,7 +13,7 @@ Score = <
     \context ChordNames \Chords
     \addlyrics
         \context Staff < \Tune \Breaks >
-        \context Lyrics < 
+        \context Lyrics <
 	    \context LyricsVoice = "A" \LyricsA
 	    \context LyricsVoice = "B" \LyricsB
 	    \context LyricsVoice = "C" \LyricsC

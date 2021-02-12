@@ -23,20 +23,20 @@ Chords = \chords {
 Tune = \notes \relative c'' {
     \time 4/4
     \key c \major
-    
-    \partial 2 g4 g8 g | 
+
+    \partial 2 g4 g8 g |
     \repeat "volta" 2 {
-	~ g1 | ~ g2 \times 2/3 { f4 e dis } | e1 | ~ e2 g4 g8 g | 
-	~ g4 g g g | g f \times 2/3 { f4 e dis } | e1 | ~ e2 e4. e8 | 
-	e4 e e e | ees2 ~ ees8 ees4 ees8 | d4 d d d | d des8 c ~ c4 b | 
-	a aes8 g ~ g2 | g g'4 g8 g | ~ g1 | 
-    } \alternative { 
+	~ g1 | ~ g2 \times 2/3 { f4 e dis } | e1 | ~ e2 g4 g8 g |
+	~ g4 g g g | g f \times 2/3 { f4 e dis } | e1 | ~ e2 e4. e8 |
+	e4 e e e | ees2 ~ ees8 ees4 ees8 | d4 d d d | d des8 c ~ c4 b |
+	a aes8 g ~ g2 | g g'4 g8 g | ~ g1 |
+    } \alternative {
 	{ ~ g4 r g g8 g | }
-	{ ~ g2 g4 g | } 
-    } 
-    bes1 | ~ bes2 \times 2/3 { g4 f ees } | g4 g8 g ~ g2 | ~ g2 g4. g8 | 
+	{ ~ g2 g4 g | }
+    }
+    bes1 | ~ bes2 \times 2/3 { g4 f ees } | g4 g8 g ~ g2 | ~ g2 g4. g8 |
     bes8 c4 bes8 c4 bes8 c | ~ c bes4 g8 ~ \times 2/3 { g4 f ees } | g4 g8 g ~ g2 | ~ g2 e4. e8 |
-    e4 e e e | ees2 ~ ees8 ees4 ees8 | d4 d d d | d8 des c b' ~ b bes a4 | 
+    e4 e e e | ees2 ~ ees8 ees4 ees8 | d4 d d d | d8 des c b' ~ b bes a4 |
     g4 g8 g ~ g2 | ~ g2 c4 c8 c | ~ c1 | r2 g4 g8 g \bar "|."
 }
 

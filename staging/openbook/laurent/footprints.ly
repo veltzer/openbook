@@ -19,7 +19,7 @@ Melody = \notes \relative c'' {
 
     bes'4-- bes-- bes-- bes8 \( c ~ c4. d8 | \times 6/5 { ees8 d c bes g ~ } g2 \) f4-. |
     \times 6/5 { bes8 \( a g f d ~ } d2 \) c4-. | r2 r8 d8 ~ d2 c4-. |
-    
+
     b'4 \( b b b8 d ~ d4 g,8 bes ~ | bes2 ~ \times 2/3 { bes8 a aes } g2 ~ g16 c g ges |
     f1. ~ | \) f1. \bar "|."
 }
@@ -30,7 +30,7 @@ Harmony = \notes \chords {
 }
 
 
-Score =  < 
+Score =  <
     \context ChordNames \Harmony
     \context Staff \Melody
 >

@@ -10,7 +10,7 @@ Chords = \chords {
     \partial 4 R4 |
     a1:m7 | b2:m7.5- e:7.9- | a1:m7 | b2:m7.5- e:7.9- |
     a1:m7 | d2:m7 g:7 | c1:maj | cis2:dim7 a:7.9- |
-    d1:m7 | g:7 | c:6 | f:maj | 
+    d1:m7 | g:7 | c:6 | f:maj |
     b1:m7.5- | e:7.9- | a:m7 | b2:m7.5- e:7.9- |
 
     a1:m7 | b2:m7.5- e:7.9- | a1:m7 | b2:m7.5- e:7.9- |
@@ -37,7 +37,7 @@ Tune = \notes \relative e' {
     bes'2. a8 g | g2. f8 e | a1 | ~ a2. d,4 | \break
     d2. e8 f | b1 | r4 c,4 c d8 e | a2. gis4 | \break
     e1 | r2 e4 gis8 b | a1 \toCoda | ~ a2. e4 \bar ":|" \break
-    \coda ~ a2. a8 b | c4 d8 c b4 a8 b | c4 d8 c b4 a8 b | 
+    \coda ~ a2. a8 b | c4 d8 c b4 a8 b | c4 d8 c b4 a8 b |
      c4 d8 c b4 a8 g | a1 ~ a2. r4 \bar "|."
 }
 

@@ -159,8 +159,8 @@ MORCEAUX = \
 	whisper_not
 
 
-MORCEAUX_LY = $(addsuffix .ly,$(MORCEAUX) hallelujah what_a_wonderful_world) 
-MORCEAUX_MIDI = $(addsuffix .midi,$(MORCEAUX) hallelujah what_a_wonderful_world) 
+MORCEAUX_LY = $(addsuffix .ly,$(MORCEAUX) hallelujah what_a_wonderful_world)
+MORCEAUX_MIDI = $(addsuffix .midi,$(MORCEAUX) hallelujah what_a_wonderful_world)
 
 SOURCES = $(MORCEAUX_LY) template_c.ly template_bes.ly template_ees.ly \
 	chord-name.ly paper.ly defs.ly Makefile

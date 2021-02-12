@@ -10,19 +10,19 @@
 melody = \notes \relative g'' {
     \time 4/4
     \key c \major
-    
+
     \repeat volta 2 { s1*4 }
     \repeat volta 2 {
-	a2. f4 | e2 ~ e8 d4 c8 | ~ c1| r4 d8 c ~ c d4 b8 | 
+	a2. f4 | e2 ~ e8 d4 c8 | ~ c1| r4 d8 c ~ c d4 b8 |
 	~ b2 c2 | b4. b8 ~ b d4 c8 | ~ c c4 c8 ~ c2 | r1 \bar "||"
 
 	d2. a'4 | g2 ~ g8 f4 c8 | ~ c2 \times 2/3 {d4 c d} | e8 g4 f8 ~ f e4 d8 |
 	~ d1 | r4 f8 e ~ e d4 c8 | c2 \times 2/3 {b4 ais b} | d1 |
-	
-	a'2. f4 | e2 ~ e8 d4 c8 | ~ c1| r4 d8 c ~ c d4 b8 | 
-	~ b1 | r4 c8 b ~ b c4 bes8 | ~ bes1 | r4 c8 bes ~ bes c4 a8 \bar "||" 
 
-	~ a1 | r4 b8 a ~ a b4 a8 | a1 | r4 b8 c ~ c e4 d8 | 
+	a'2. f4 | e2 ~ e8 d4 c8 | ~ c1| r4 d8 c ~ c d4 b8 |
+	~ b1 | r4 c8 b ~ b c4 bes8 | ~ bes1 | r4 c8 bes ~ bes c4 a8 \bar "||"
+
+	~ a1 | r4 b8 a ~ a b4 a8 | a1 | r4 b8 c ~ c e4 d8 |
 	~ d1 | r4 e8 gis ~ gis b4 a8 | ~ a1 | ~ a1 |
     }
 }
@@ -47,7 +47,7 @@ harmony = \notes \chords {
 
 \midi { \tempo 4 = 144 }
 
-Score =  < 
+Score =  <
     \context ChordNames \harmony
     \context Staff \melody
 >

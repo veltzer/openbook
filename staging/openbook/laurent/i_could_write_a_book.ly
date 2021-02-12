@@ -10,11 +10,11 @@ Chords = \chords {
     \partial 2 R2 |
     \repeat volta 2 {
 	ees2:maj c:7 | f:m7 bes:7 | ees1:maj | f2:m7 bes:7 |
-	ees1:maj | c:m7 | f:m7 | d2:m7.5- g:7.5+.9+ || 
+	ees1:maj | c:m7 | f:m7 | d2:m7.5- g:7.5+.9+ ||
 	c1:m7 c:m7 |
     } \alternative {
 	{ a2:m7.5- d:7.5+.9+ | g1:m7 | c:7 | c2:m7 f:7 | f1:m7 | bes:7 | }
-	{ bes2:m7 ees:7 | aes:maj des:7 | ees:maj c:7.9- | f:m7 bes:7 | 
+	{ bes2:m7 ees:7 | aes:maj des:7 | ees:maj c:7.9- | f:m7 bes:7 |
 	  ees1:maj | f2:m7 bes:7 | }
     }
 }

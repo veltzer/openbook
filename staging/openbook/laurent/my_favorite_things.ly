@@ -16,11 +16,11 @@ Chords = \chords {
     }
     e4*12:m7 | a:maj \bar "||"
     a4*3:m7 | d:7 | g:maj | c:maj | g:maj | c:maj | fis:m7.5- | b:7.9- \bar "||"
-    
+
     e4*6:m7 | fis4*3:m7.5- | b:7.9- | e:m7 | e:m7/+d | c4*6:maj |
     c4*6:maj | a:7 | g4*3:maj | c4*6:maj | d4*3:7 \bar "||"
 
-    \repeat unfold 3 { g4*3:maj | c:maj } fis:m7.5- | b:7.9- 
+    \repeat unfold 3 { g4*3:maj | c:maj } fis:m7.5- | b:7.9-
 }
 
 Tune = \notes \relative e' {

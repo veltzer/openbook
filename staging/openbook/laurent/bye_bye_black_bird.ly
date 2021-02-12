@@ -22,11 +22,11 @@ Tune = \notes \relative c'' {
     \time 4/4
     \key f \major
     a4 a a a | bes a a2 | a4 g g2 | g4 f f2 |
-    f1 | g | f2 e ~ | e4 r r2 | 
-    bes'4 bes bes bes | c bes bes2 | bes4 a a2 | a4 g g2 | 
+    f1 | g | f2 e ~ | e4 r r2 |
+    bes'4 bes bes bes | c bes bes2 | bes4 a a2 | a4 g g2 |
     g1 | a | g2 f ~ | f1 |
 
-    f4 c' c c | c4. bes8 a4 g | g1 | fis | 
+    f4 c' c c | c4. bes8 a4 g | g1 | fis |
     d4 bes' bes bes | bes4. a8 g4 f | f1 | e |
 
     a4 a a a | bes a a2 | a4 g g2 | g4 fis fis2 |
@@ -34,11 +34,11 @@ Tune = \notes \relative c'' {
 }
 
 Score = <
-    \context ChordNames { 
+    \context ChordNames {
 	\property ChordNames.ChordName \override #'style = #'jazz
 	\Chords
     }
-    \context Staff = bottom {	
+    \context Staff = bottom {
 	\Tune
     }
 >

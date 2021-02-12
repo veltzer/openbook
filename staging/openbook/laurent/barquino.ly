@@ -16,7 +16,7 @@ melody = \notes \relative g' {
     g8 aes4 g8 bes4 g8 aes | ~ aes g bes4 a aes | g8 g g g g4 cis,8 d | g8 g g g g2 |
     f8 ges4 g8 aes4 f8 ges | ~ ges f aes4 g ges | f8 f f f f4 b,8 c | f2 r8 c'4 bes8 |
     f2. g4 | aes2 ~ aes8 ees'4 d8 | ees,2. f4 | ges2. r4 |
-    
+
     s1*8 s1-\fermata
 }
 
@@ -34,7 +34,7 @@ harmony = \notes \chords {
 
 \midi { \tempo 4 = 144 }
 
-Score =  < 
+Score =  <
     \context ChordNames \harmony
     \context Staff \melody
 >

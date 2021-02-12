@@ -22,9 +22,9 @@ Staff = \notes \context Voice = $Staff {
 	d' d' c' d' ~ d'2 |
 	r4 c'8 c' ees' ees' d' d' |
 	d' c' c' c' ~ c'2 |
-    } \alternative {	
+    } \alternative {
 	{ r r4 g \bar ":|"}
-	{ r2 r8 c'4. \bar "||"} 
+	{ r2 r8 c'4. \bar "||"}
     }
 				%10
     d'8 d' d' a' ~ a'4 a'8 a' |
@@ -66,14 +66,14 @@ StaffStaff = \context Staff = StaffStaff <
 
 
 accompaniment = \chords{
-    r4 c2:maj e:m7 f:m7 bes:7.9- ees:maj a:m7.5- 
+    r4 c2:maj e:m7 f:m7 bes:7.9- ees:maj a:m7.5-
     d:7 g:7.5+.9-
     c:m9 a:m7.5- d:7 g:7.9-.5+
     c:maj a:m7 d:m7 des:7 g:m7
     c:7 f1:6  fis:3-.5-.7- c:maj
-    c:6 fis2:m7 b:7 e:maj f:maj 
-    fis:m7 b:7 e4:m7 ees:m7 d:m7 des:7 
-    c2:maj des:maj f:m7 bes:7.9- ees:maj a:m7.5- 
+    c:6 fis2:m7 b:7 e:maj f:maj
+    fis:m7 b:7 e4:m7 ees:m7 d:m7 des:7
+    c2:maj des:maj f:m7 bes:7.9- ees:maj a:m7.5-
     d:7 g:7.9-.5+ c:m9 a:m7.5- d:7 g:7.9-.5+
     c1:maj g2:m7 c:7 f1:maj f2:m.7+ bes:7
     c:maj d:m7/b ees:m7 fis4:m7 bes:7 e2:m7 a:7 d:m7 g:7
@@ -90,14 +90,14 @@ texta = \lyrics{
     Like a sum -- mer with a thou -- sand Ju -- lys.
     You in -- tox -- i -- cate my soul with your eyes.
     Though I'm cer -- tain that this heart of mine has -- n't a ghost of a chance
-    in this cra -- zy ro -- mance. 
+    in this cra -- zy ro -- mance.
     You  go to my head.
 }
 
-textb = \lyrics { 
+textb = \lyrics {
     _
     go to my head like a sip of spar -- kling bur -- gun -- dy brew
-    And I find the ve -- ry men -- tion of you 
+    And I find the ve -- ry men -- tion of you
     Like the kick -- er in a ju -- lip for two.
 }
 

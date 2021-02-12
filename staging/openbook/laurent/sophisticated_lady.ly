@@ -53,7 +53,7 @@ accompaniment = \chords {
     b4:min7
     bes1:min7
     ges4:7 f:7 e:7 ees:7
-    aes1:maj 
+    aes1:maj
     aes4:7 g:7 ges:7 f:7 bes1:7
     bes2:min7 ees:7 aes1:maj
     aes2.:7 ces4:min7
@@ -66,7 +66,7 @@ accompaniment = \chords {
     bes1:min7
     ges4:7 f:7 e:7 ees:7 aes1:maj
     aes4:7 g:7 ges:7 f:7 bes1:7
-    bes2:min7 ees:7 aes:maj 
+    bes2:min7 ees:7 aes:maj
 }
 
 
@@ -77,20 +77,20 @@ StaffStaff = \context Staff = StaffStaff <
 
 
 texta = \lyrics{
-    They say in -- to your ear -- ly life ro -- mance came, and in this heart 
+    They say in -- to your ear -- ly life ro -- mance came, and in this heart
     of yours burned a flame, a flame that flick -- ered one day and died a -- way.
     see you now....
     Smok -- ing, drink -- ing, nev -- er think -- ing of to -- mor -- row,
-    non -- chal -- ant, 
+    non -- chal -- ant,
     Dia -- monds shin -- ing, danc -- ing, din -- ing with some man in a res -- tau -- rant
-    Is this all you rea -- lly want? No, 
+    Is this all you rea -- lly want? No,
     soph -- is -- ti -- ca -- ted la -- dy, I know
-    you miss the love you lost long a -- go, and 
+    you miss the love you lost long a -- go, and
     when no -- bo -- dy is nigh you cry.
 }
 textb = \lyrics{
-    _ Then with dis -- il -- lu -- sion deep in your eyes you learned that fools in love soon grow wise. 
-    The years have changed you some -- how I 
+    _ Then with dis -- il -- lu -- sion deep in your eyes you learned that fools in love soon grow wise.
+    The years have changed you some -- how I
 }
 
 Score = \notes <

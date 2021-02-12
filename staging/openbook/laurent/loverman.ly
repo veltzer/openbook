@@ -11,7 +11,7 @@ beats = \notes \context Voice = beats {
     \property Voice.NoteHead \override #'style = #'slash
     e''4 e'' e'' e''
     \property Voice.Stem \revert #'molecule-callback
-    \property Voice.NoteHead \revert #'style 
+    \property Voice.NoteHead \revert #'style
 }
 
 Staff = \notes \context Voice = $Staff {
@@ -62,13 +62,13 @@ StaffStaff = \context Staff = StaffStaff <
 
 accompaniment = \chords{
 				%  \property ChordNames.ChordName \override #'word-space = #2
-    d2:m7 g:7 | d:m7 g:7 | g:m7 c:7 | g:m7 c:7 | 
-    f1:7 bes:7 | bes4:m7 ees:7 g:m7 c:7 | f2:maj e4:m7 a:7 | 
-    f2:maj bes:7 | a:m a:m.7+ | a:m7 d:7 | g:maj a:m7 | 
+    d2:m7 g:7 | d:m7 g:7 | g:m7 c:7 | g:m7 c:7 |
+    f1:7 bes:7 | bes4:m7 ees:7 g:m7 c:7 | f2:maj e4:m7 a:7 |
+    f2:maj bes:7 | a:m a:m.7+ | a:m7 d:7 | g:maj a:m7 |
     b:m7 a4:m7 d:7 | g2:m g:m.7+ | g:m7 c:7 |
-    f:maj ees:7 g:m6  a:7 
-    d:m7 g:7 d:m7 g:7 g:m7 c:7 g:m7 c:7 f1:7 bes:7 
-    bes4:m7 ees:7 g:m7 c:7 
+    f:maj ees:7 g:m6  a:7
+    d:m7 g:7 d:m7 g:7 g:m7 c:7 g:m7 c:7 f1:7 bes:7
+    bes4:m7 ees:7 g:m7 c:7
     f2:maj}
 
 texta = \lyrics {
@@ -76,7 +76,7 @@ texta = \lyrics {
     I long to try some -- thing I've ne -- ver had.
     Ne -- ver had no kiss -- in'
     Oh, what I've been miss -- in'.
-    Lo -- ver man oh where can you be? " " " " " "  
+    Lo -- ver man oh where can you be? " " " " " "
     be?
     I've heard it said that the thrill of ro -- mance can be
     like a hea -- ven -- ly dream, " " " " " "
