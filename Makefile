@@ -234,9 +234,7 @@ clean_docs:
 .PHONY: check_ws
 check_ws:
 	$(info doing [$@])
-	$(Q)pymakehelper no_err git grep -e "[[:space:]]$$" -- "*" ":(exclude)docs"
-#	$(Q)git grep -e "[[:space:]]$$" $(FILES_MAKO)
-#	$(Q)pymakehelper no_err git grep -e "[[:space:]]$$" $(FILES_MAKO)
+	$(Q)pymakehelper no_err git grep -e "[[:space:]]$$" -- "*" ":(exclude)docs" ":(exclude)*.ico"
 .PHONY: check_naked_mymark
 check_naked_mymark:
 	$(info doing [$@])
