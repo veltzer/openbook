@@ -23,6 +23,7 @@ dev_requires = [
     'Mako',
     'pymakehelper',
     'requests',
+    'gitpython',
 ]
 python_requires = ">=3"
 

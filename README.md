@@ -64,6 +64,7 @@ What python modules are used?
 * Mako: A super-fast templating language that borrows the  best ideas from the existing templating languages.
 * pymakehelper: pymakehelper eases writing recipes when using the make system
 * requests: Python HTTP for Humans.
+* gitpython: could not import [gitpython]
 
 What is produced?
 ------------------

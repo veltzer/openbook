@@ -5,6 +5,11 @@ import os
 import shutil
 import requests
 import config.openbook
+import git
+import zipfile
+import json
+import tempfile
+import urllib
 
 """
 Find the latest version and download it
@@ -12,36 +17,40 @@ Find the latest version and download it
 
 owner = 'mozilla'
 repo = 'pdf.js'
+debug = False
 
 response = requests.get(f"https://api.github.com/repos/{owner}/{repo}/releases/latest")
 response.raise_for_status()
 obj = response.json()
 latest_release = obj["name"]
-url = obj["browser_download_url"]
-# print(f"latest_release is {latest_release}")
+print(f"latest_release is {latest_release}")
+url = obj["assets"][0]["browser_download_url"]
+print(f"url is {url}")
+if debug:
+    json.dump(obj, sys.stdout, indent=4, sort_keys=True)
 
-temp_file = "/tmp/viewer.zip"
-if os.path.exists(temp_file):
+with tempfile.NamedTemporaryFile() as file_handle:
+    filename=file_handle.name
+    with urllib.request.urlopen(url) as fsrc:
+        shutil.copyfileobj(fsrc, file_handle)
+    repo = git.Repo(".")
+    try:
+        repo.index.remove(['docs/build', 'docs/web'], True, r=True)
+    except Exception:
+        pass
+    with zipfile.ZipFile(filename, 'r') as zip_ref:
+        zip_ref.extractall(path="docs")
+    os.remove("docs/LICENSE")
+    """
+    subprocess.check_call([
+	"unzip",
+	temp_file,
+	"-d",
+	"docs",
+	"-x",
+	"LICENSE",
+    ])
     os.unlink(temp_file)
-
-url = (
-    "https://github.com/mozilla/pdf.js/releases/download/"
-    f"v{config.openbook.pdfjs_version}/pdfjs-{config.openbook.pdfjs_version}-dist.zip"
-)
-subprocess.check_call([
-    "wget",
-    url,
-    "-O",
-    temp_file,
-])
-shutil.rmtree("docs/build", ignore_errors=True)
-shutil.rmtree("docs/web", ignore_errors=True)
-subprocess.check_call([
-    "unzip",
-    temp_file,
-    "-d",
-    "docs",
-    "-x",
-    "LICENSE",
-])
-os.unlink(temp_file)
+    """
+    repo.index.add(['docs/build', 'docs/web'], True)
+    repo.index.commit("got new version of pdf viewer")
