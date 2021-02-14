@@ -3,7 +3,7 @@
     import user.personal
     import config.git
 %><!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>${config.project.project_name}</title>

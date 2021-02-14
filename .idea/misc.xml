@@ -69,5 +69,5 @@
       <textMaps />
     </LinkMapSettings>
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.6 (openbook)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8 (openbook)" project-jdk-type="Python SDK" />
 </project>

@@ -9,11 +9,10 @@
       <excludeFolder url="file://$MODULE_DIR$/node_modules" />
       <excludeFolder url="file://$MODULE_DIR$/out" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.6 (openbook)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.8 (openbook)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">
-    <option name="projectConfiguration" value="Nosetests" />
     <option name="PROJECT_TEST_RUNNER" value="Nosetests" />
   </component>
 </module>

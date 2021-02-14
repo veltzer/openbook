@@ -10,21 +10,21 @@ import config.openbook
 Find the latest version and download it
 """
 
-owner='mozilla'
-repo='pdf.js'
+owner = 'mozilla'
+repo = 'pdf.js'
 
 response = requests.get(f"https://api.github.com/repos/{owner}/{repo}/releases/latest")
 response.raise_for_status()
-obj=response.json()
-latest_release=obj["name"]
-url=obj["browser_download_url"]
+obj = response.json()
+latest_release = obj["name"]
+url = obj["browser_download_url"]
 # print(f"latest_release is {latest_release}")
 
-temp_file="/tmp/viewer.zip"
+temp_file = "/tmp/viewer.zip"
 if os.path.exists(temp_file):
     os.unlink(temp_file)
 
-url=(
+url = (
     "https://github.com/mozilla/pdf.js/releases/download/"
     f"v{config.openbook.pdfjs_version}/pdfjs-{config.openbook.pdfjs_version}-dist.zip"
 )

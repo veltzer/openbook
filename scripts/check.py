@@ -4,7 +4,7 @@
 This scripts checks our lilypond source files for common mistakes
 and best practices.
 
-One of the things it checks is that we have \myEndLine in voices
+One of the things it checks is that we have \\myEndLine in voices
 """
 
 import glob
@@ -36,13 +36,13 @@ def check_file(file):
         if line == '% endif':
             inside_voice = False
         if inside_voice:
-            if line.find('\myEndLine') != -1:
+            if line.find('\\myEndLine') != -1:
                 error(num, line, file, 'have end line')
         if line.startswith('% if part==\'Chords'):
             inside_chords = True
         if line == '% endif':
             inside_chords = False
-        if inside_chords and line.find('\myMark') != -1 and prev != '':
+        if inside_chords and line.find('\\myMark') != -1 and prev != '':
             error(num, line, file, 'myMark with no empty line before it')
         if line.find('%% part') != -1 and prev != '':
             error(num, line, file, 'part with no empty line before it')
@@ -67,7 +67,7 @@ def check_file(file):
             error(num, line, file, 'line has tabs and spaces mixed')
         if line.find(']=""') != -1:
             error(num, line, file, 'empty field')
-        if line.find('\\bar') != -1 or line.find('\include') != -1 or line.find('\break') != -1:
+        if line.find('\\bar') != -1 or line.find('\\include') != -1 or line.find('\break') != -1:
             error(num, line, file, 'use of illegal lilypond symbol')
         if state_tempo_time_key == 2:
             if line.find('\\key') == -1:

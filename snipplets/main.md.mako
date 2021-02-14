@@ -8,18 +8,18 @@
 OpenBook is a Jazz real book constructed with free software. A real book simply means a big book with lots of\
 Jazz tunes or standards as they are more widely known.
 
-Where is the projects website?
+Where is the project's website?
 -------------------------------
 ${config.project.project_website}
 
 Why did you start this?
 ------------------------
 Because of many reasons:
-* I wanted to learn Jazz and a good way to do that is to write down the tunes (amongst many many other things).
+* I wanted to learn Jazz, and a good way to do that is to write down the tunes (amongst many other things).
 * I wanted beautiful sheet music that I could fiddle with.
 * I did not want to pay for the overly expensive real or fake books out there.
 * I believe in free software and wanted free (in the sense of freedom) sheet music.
-* Jazz is a prime example of a free type of art so it's conjunction with free software seems a match made in heaven.
+* Jazz is a prime example of a free type of art, so it's conjunction with free software seems a match made in heaven.
 * Jazz musicians may need beautiful electronic Real books because electronic books are starting to be
 used by Jazz musicians both for practice and for performance.
 
@@ -39,8 +39,8 @@ What is produced?
 ------------------
 Beautiful and lightweight postscript and PDF real books with Jazz tunes.
 The idea is that the end user can control the final output and decide if he/she
-wants lyrics, size of paper, transposition for trumpet, selection of tunes and more.
-In addition you can produce midi, mp3 and ogg outputs.
+wants lyrics, size of paper, transposition for a trumpet, selection of tunes and more.
+In addition, you can produce midi, mp3 and ogg outputs.
 Possibly other output formats will be supported in the future (epub?).
 
 What is the copyright?
@@ -55,9 +55,9 @@ What system do I need to participate?
 --------------------------------------
 A Linux system that you can install software on.
 Mac OSX is reported to work too if you know how to install the right stuff on it.
-Windows is not currently supported although well formed patches will be accepted.
-(disclaimer: the author hates Windows with a vengence so patches have to be ultra
-clean to be accepted)
+Windows is not currently supported although well-formed patches will be accepted.
+(disclaimer: the author hates Windows with a vengence so patches have to be spotless
+to be accepted)
 
 What do I need to know to participate?
 ---------------------------------------
@@ -79,7 +79,7 @@ Check out the PDFs and other outputs in ${config.project.project_website}.
 Why is there so little documentation?
 --------------------------------------
 I just started this project (4 years all in all). Feel free to add stuff and request a pull.
-If you contribute a lot I will make you an admin...
+Contributing may make you an admin...
 
 How do you write the standards?
 --------------------------------
@@ -95,7 +95,7 @@ format as input format - so there could not be much co-operation there.
 Do you only allow Jazz tunes?
 ------------------------------
 No. Rock and Pop will be welcome and so would classical.
-If you are really into classical lilypond production you may alternativly
+If you are really into classical lilypond production, you may alternativly
 wish to contribute to the mutopia project at http://www.mutopiaproject.org/.
 
 
@@ -110,7 +110,7 @@ How do I build the pdfs?
 * update pip ```$ python -m pip install --upgrade pip```
 * install the python prerequisites ```$ pip install -r requirements.txt```
 * run the build process ```$ make```
-* the pdfs should now be built and you will find them in the 'docs' folder.
+* the pdfs should now be built, and you will find them in the 'docs' folder.
 * if you want to build all the tunes individually then run ```$ make all_tunes```
 
 
@@ -136,7 +136,7 @@ Yes. To add a tune named [tunename] just add single file named
 ```
 src/openbook/[tunename].ly.mako
 ```
-Yes, the extension should be .mako since I use mako for templating.
+Yes, the extension should be .mako since I use "mako" for templating.
 In that file there are sections. Just copy them from some other tune. One section for
 chords, another for lyrics, another for the melody etc.
 After working on the tune build just a single tune by issueing:
@@ -171,7 +171,7 @@ to get both pdf and midi.
 
 What about MusicXML?
 --------------------
-Sorry, this project is lilypond based. Patches for MusicXML will be welcome but I don't
+Sorry, this project is lilypond based. Patches for MusicXML will be welcome, but I don't
 see how they will fit into this project.
 
 Can I send corrections to the tunes without learning lilypond and all the rest of the stuff?
