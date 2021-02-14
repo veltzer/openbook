@@ -18,9 +18,9 @@
 		<p>current version is ${config.git.git_last_tag}</p>
 
 		<h2>A demo for the impatient is
-			<a href="web/viewer.html?file=../openbook.pdf">here</a>
+			<a href="web/viewer.html?file=../output/openbook.pdf">here</a>
 		</h2>
-		<p>You can download the latest version of <b>${config.project.project_name_fancy}</b> from <a href="openbook.pdf">here</a>.</p>
+		<p>You can download the latest version of <b>${config.project.project_name_fancy}</b> from <a href="output/openbook.pdf">here</a>.</p>
 
 		<p><b>${config.project.project_name}</b> is an open source project to build a free, high quality "real book"
 		for Jazz musicians. A real book simply means a big book with lots of Jazz tunes or standards as they are more widely known. <b>${config.project.project_name}</b> will always remain free and is guarateed so by it's license. The goal of production is beautiful and lightweight postscript and PDF real books with Jazz tunes. The idea is that the end user can control the final output and decide if he/she wants lyrics, size of paper, transposition for trumpet, selection of tunes and more. In addition you can produce midi, mp3 and ogg outputs. The end user can also, obviously, modify add or remove tunes or use the tunes in <b>${config.project.project_name}</b> as the basis of arrangements.</p>
@@ -95,13 +95,13 @@
 			The <b>${config.project.project_name}</b> git clone link is <a title="${config.project.project_name} git clone link" href="${config.project.project_website_git}">here</a>
 			</li>
 			<li>
-			The latest stable pdf coming out of the <b>${config.project.project_name}</b> project is <a title="latest pdf" href="openbook.pdf">here</a>
+			The latest stable pdf coming out of the <b>${config.project.project_name}</b> project is <a title="latest pdf" href="output/openbook.pdf">here</a>
 			</li>
 			<li>
-			The latest stable postscript coming out of the <b>${config.project.project_name}</b> project is <a title="latest postscript" href="openbook.ps">here</a>
+			The latest stable postscript coming out of the <b>${config.project.project_name}</b> project is <a title="latest postscript" href="output/openbook.ps">here</a>
 			</li>
 			<li>
-			The latest stable lilypond coming out of the <b>${config.project.project_name}</b> project is <a title="latest lilypond" href="openbook.ly">here</a>
+			The latest stable lilypond coming out of the <b>${config.project.project_name}</b> project is <a title="latest lilypond" href="output/openbook.ly">here</a>
 			</li>
 		</ul>
 		<p>

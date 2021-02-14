@@ -103,8 +103,9 @@ class ConfigAll(Config):
     # parameters without defaults (should be supplied by the user on the command line)
     ps = ParamCreator.create_new_file(help_string="postscript to produce")
     pdf = ParamCreator.create_new_file(help_string="pdf to produce")
-    out = ParamCreator.create_str(help_string="pdf without suffix")
     ly = ParamCreator.create_existing_file(help_string="lilypond input")
+
+    output = ParamCreator.create_str(help_string="folder for outputs")
 
 
 @register_endpoint(
@@ -122,7 +123,7 @@ def run() -> None:
         args.append('--ps')
     if ConfigAll.do_pdf:
         args.append('--pdf')
-    args.append('--output=' + ConfigAll.out)
+    args.append('--output=' + ConfigAll.output)
     args.append(ConfigAll.ly)
     try:
         # to make sure that lilypond shuts up...

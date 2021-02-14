@@ -39,6 +39,8 @@ DO_TOOLS:=0
 #############
 # where is the web folder?
 DOCS:=docs
+# what is the output folder?
+OUTPUT:=$(DOCS)/output
 # where are the sources located ?
 SOURCE_DIR:=src
 # where is the output folder ?
@@ -122,9 +124,9 @@ FILES_OGG:=$(addsuffix .ogg,$(addprefix $(OUT_DIR)/,$(FILES_MAKO_BASE)))
 # ALL_OUT_FILES:=$(shell find src -type f -and -name "*.mako")
 # ALL_OUT_STAMP:=$(addsuffix .stamp,$(addprefix $(OUT_DIR)/,$(basename $(ALL_OUT_FILES))))
 
-OUT_LY:=$(addsuffix .ly,$(addprefix $(DOCS)/,$(NAMES)))
-OUT_PS:=$(addsuffix .ps,$(addprefix $(DOCS)/,$(NAMES)))
-OUT_PDF:=$(addsuffix .pdf,$(addprefix $(DOCS)/,$(NAMES)))
+OUT_LY:=$(addsuffix .ly,$(addprefix $(OUTPUT)/,$(NAMES)))
+OUT_PS:=$(addsuffix .ps,$(addprefix $(OUTPUT)/,$(NAMES)))
+OUT_PDF:=$(addsuffix .pdf,$(addprefix $(OUTPUT)/,$(NAMES)))
 
 ifeq ($(DO_LY),1)
 	ALL+=$(FILES_LY)
@@ -344,34 +346,19 @@ $(FILES_MP3): %.mp3: %.midi $(MIDI2MP3_WRAPPER_DEP) $(ALL_DEP)
 	$(Q)$(MIDI2MP3_WRAPPER) $< $@
 
 define template
-TMPL_LY_$(1):=$$(DOCS)/$(1).ly
-TMPL_PS_$(1):=$$(DOCS)/$(1).ps
-TMPL_PDF_$(1):=$$(DOCS)/$(1).pdf
+TMPL_LY_$(1):=$$(OUTPUT)/$(1).ly
+TMPL_PS_$(1):=$$(OUTPUT)/$(1).ps
+TMPL_PDF_$(1):=$$(OUTPUT)/$(1).pdf
 TMPL_PREREQ_$(1):=$(subst ./,,$(shell find src/$(1) -type f -and -name "*.mako"))
 $$(TMPL_PDF_$(1)): $$(TMPL_LY_$(1)) $$(LILYPOND_WRAPPER_DEP) $$(ALL_DEP)
 	$$(info doing [$$@])
-	$$(Q)$$(LILYPOND_WRAPPER) run --ps $$(TMPL_PS_$(1)) --pdf $$(TMPL_PDF_$(1)) --out $$(DOCS) --ly $$<
+	$$(Q)$$(LILYPOND_WRAPPER) run --ps $$(TMPL_PS_$(1)) --pdf $$(TMPL_PDF_$(1)) --output $$(OUTPUT) --ly $$<
 $$(TMPL_LY_$(1)): $$(TMPL_PREREQ_$(1)) $$(MAKO_WRAPPER_DEP) $$(COMMON) $$(ALL_DEP)
 	$$(info doing [$$@])
 	$$(Q)mkdir -p $$(dir $$@)
 	$$(Q)$$(MAKO_WRAPPER) $$(CONST_BOOK) $$(CONST_DONTCUT) 0 $$@ $$(TMPL_PREREQ_$(1))
 endef
 $(foreach name, $(NAMES), $(eval $(call template,$(name))))
-
-.PHONY: grive
-grive: $(OUT_PDF) $(ALL_DEP)
-	$(info doing [$@])
-	$(Q)-rm -rf ~/grive/outputs/$(tdefs.project_name)
-	$(Q)-mkdir ~/grive/outputs/$(tdefs.project_name)
-	$(Q)cp $(OUT_PDF) ~/grive/outputs/$(tdefs.project_name)
-	$(Q)cd ~/grive; grive
-
-.PHONY: dropbox
-dropbox: $(OUT_PDF) $(ALL_DEP)
-	$(info doing [$@])
-	$(Q)-rm -rf ~/Dropbox/outputs/$(tdefs.project_name)
-	$(Q)-mkdir ~/Dropbox/outputs/$(tdefs.project_name)
-	$(Q)cp $(OUT_PDF) ~/Dropbox/outputs/$(tdefs.project_name)
 
 .PHONY: all_tunes
 all_tunes: $(FILES_STAMP)

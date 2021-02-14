@@ -1,0 +1,2 @@
+- create the outputs in docs/outputs/[XXXX] and not docs/[XXXX] to separate them
+	from other outputs.
