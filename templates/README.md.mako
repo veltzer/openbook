@@ -21,8 +21,8 @@ build_cont
 
 version: ${config.git.git_last_tag}
 
-viewer version: ${config.openbook.pdfjs_version}
-
+## viewer version: ${config.openbook.pdfjs_version}
+##
 <%include file="../snipplets/main.md.mako" />
 
 	${user.personal.personal_origin}, ${config.project.project_copyright_years}

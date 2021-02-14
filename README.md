@@ -14,8 +14,6 @@ build_cont
 
 version: 172
 
-viewer version: 2.7.570
-
 What is OpenBook?
 ------------------
 OpenBook is a Jazz real book constructed with free software. A real book simply means a big book with lots ofJazz tunes or standards as they are more widely known.
