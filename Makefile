@@ -305,7 +305,7 @@ $(FILES_MIDI): %.midi: %.stamp $(ALL_DEP)
 $(FILES_STAMP): $(OUT_DIR)/%.stamp: $(OUT_DIR)/%.ly $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
-	$(Q)$(LILYPOND_WRAPPER) run --stop_on_output False --ps $(dir $@)$(basename $(notdir $@)).ps --pdf $(dir $@)$(basename $(notdir $@)).pdf --out $(dir $@)$(basename $(notdir $@)) --ly $<
+	$(Q)$(LILYPOND_WRAPPER) run --stop_on_output False --ps $(dir $@)$(basename $(notdir $@)).ps --pdf $(dir $@)$(basename $(notdir $@)).pdf --output $(dir $@)$(basename $(notdir $@)) --ly $<
 	$(Q)touch $@
 
 $(OUT_DIR)/%.0.pdf: %.ly.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
