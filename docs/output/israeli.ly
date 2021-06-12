@@ -11,7 +11,7 @@
 % this version tag will keep me compiling only on this version of lilypond.
 %=====================================================================
 
-\version "2.20.0"
+\version "2.22.0"
 
 % lets define a variable to hold the formatted build date (man 3 strftime):
 %date=#(strftime "%T %d-%m-%Y" (localtime (current-time)))
@@ -258,13 +258,13 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 172" }
-				\fill-line { \small "Git describe: 172-40-gb1e2d78" }
-				\fill-line { \small "Git commits: 1695" }
-				\fill-line { \small "Build date: 06:00:31 14-02-2021" }
+				\fill-line { \small "Git describe: 172-43-g4b1be7d" }
+				\fill-line { \small "Git commits: 1698" }
+				\fill-line { \small "Build date: 12:52:43 12-06-2021" }
 				\fill-line { \small "Build user: mark" }
 				\fill-line { \small "Build host: newton" }
-				\fill-line { \small "Build kernel: Linux 5.8.0-43-lowlatency" }
-				\fill-line { \small "Lilypond version: 2.20.0" }
+				\fill-line { \small "Build kernel: Linux 5.11.0-18-lowlatency" }
+				\fill-line { \small "Lilypond version: 2.22.0" }
 				\fill-line { \small "Number of tunes: 9" }
 				\null
 				\null

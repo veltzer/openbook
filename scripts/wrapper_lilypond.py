@@ -90,7 +90,8 @@ class ConfigAll(Config):
     # we should work with warnings and try and solve all of them
     loglevel = ParamCreator.create_enum(
         enum_type=LilypondLogLevels,
-        default=LilypondLogLevels.WARNING,
+        # default=LilypondLogLevels.WARNING,
+        default=LilypondLogLevels.ERROR,
         help_string="what warning level do you want?",
     )
     do_pdfred = ParamCreator.create_bool(default=False, help_string="should we reduce the pdf size?")
