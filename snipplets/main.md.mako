@@ -184,4 +184,4 @@ Look in the "doc" subfolder of the source code...
 
 How can I get a version of this book in a key other than C?
 -----------------------------------------------------------
-Just edit `include/common.ly.mako` and change TONALITY='c' to "bes" or "ees" before compiling.
+Just edit `include/common.ly.mako` and change TONALITY="c" to "bes" or "ees" before compiling.

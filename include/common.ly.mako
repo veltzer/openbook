@@ -1,5 +1,8 @@
 <%
-TONALITY="ees"
+# change to the tonality you want... C is the default for obvious reasons...
+# TONALITY="ees"
+# TONALITY="bes"
+TONALITY="c"
 
 # Want to have readable symbol on title page
 # (judgment call: I prefer 'G flat' to 'F sharp')

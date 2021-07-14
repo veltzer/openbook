@@ -216,7 +216,7 @@ endChords={}
 				\null
 				\null
 				\null
-				\fill-line { \fontsize #11 \bold "OpenBook (c)"}
+				\fill-line { \fontsize #11 \bold "OpenBook (C)"}
 				\null
 				\null
 				\fill-line { \larger \larger \bold "An open source Jazz real book" }
@@ -258,12 +258,12 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 172" }
-				\fill-line { \small "Git describe: 172-43-g4b1be7d" }
-				\fill-line { \small "Git commits: 1698" }
-				\fill-line { \small "Build date: 12:52:43 12-06-2021" }
+				\fill-line { \small "Git describe: 172-46-g1064674" }
+				\fill-line { \small "Git commits: 1701" }
+				\fill-line { \small "Build date: 01:49:37 15-07-2021" }
 				\fill-line { \small "Build user: mark" }
 				\fill-line { \small "Build host: newton" }
-				\fill-line { \small "Build kernel: Linux 5.11.0-18-lowlatency" }
+				\fill-line { \small "Build kernel: Linux 5.11.0-22-lowlatency" }
 				\fill-line { \small "Lilypond version: 2.22.0" }
 				\fill-line { \small "Number of tunes: 9" }
 				\null
@@ -371,7 +371,8 @@ endChords={}
 		\override BarLine #'bar-extent = #'(-2 . 2)
 		\consists "Bar_engraver"
 	}
-	
+% # transpose with 'inline' is true!
+	\transpose c c {
 
 \chordmode {
 	\startChords
@@ -398,7 +399,7 @@ endChords={}
 	\endChords
 }
 
-
+}
 % this thing will only engrave voltas. This is required to put the volta under the chords.
 % No great harm will happen if you don't put it, only the voltas will be above the chords.
 %\new Staff \with {
@@ -549,7 +550,8 @@ endChords={}
 	\with {
 		\remove "Bar_engraver"
 	}
-	
+% # transpose with 'inline' is true!
+	\transpose c c {
 
 
 \chordmode {
@@ -578,7 +580,7 @@ endChords={}
 
 
 
-
+}
 % this thing will only engrave voltas. This is required to put the volta under the chords.
 % No great harm will happen if you don't put it, only the voltas will be above the chords.
 %\new Staff \with {
@@ -586,7 +588,8 @@ endChords={}
 %}
 \new Staff="Melody" {
 \new Voice="Voice"
-	\relative c'
+% # transpose with 'inline' is true!
+	\transpose c c { \relative c'
 	
 
 
@@ -610,7 +613,7 @@ endChords={}
 }
 
 
-
+ }
 }
 \new Lyrics="Lyrics" \lyricsto "Voice" {
 	
@@ -762,7 +765,8 @@ endChords={}
 	\with {
 		\remove "Bar_engraver"
 	}
-	
+% # transpose with 'inline' is true!
+	\transpose c c {
 
 \chordmode {
 	\startChords
@@ -813,7 +817,7 @@ endChords={}
 }
 
 
-
+}
 % this thing will only engrave voltas. This is required to put the volta under the chords.
 % No great harm will happen if you don't put it, only the voltas will be above the chords.
 %\new Staff \with {
@@ -821,7 +825,8 @@ endChords={}
 %}
 \new Staff="Melody" {
 \new Voice="Voice"
-	\relative c'
+% # transpose with 'inline' is true!
+	\transpose c c { \relative c'
 	
 
 
@@ -838,7 +843,7 @@ endChords={}
 	d8. d16 d8 d d8. d16 e8 fis | d2.. e16 fis | g8. fis16 e8 e d4 \times 2/3 { d8 d d } | e1 |
 }
 
-
+ }
 }
 	>>
 	\layout {
@@ -992,7 +997,8 @@ endChords={}
 	\with {
 		\remove "Bar_engraver"
 	}
-	
+% # transpose with 'inline' is true!
+	\transpose c c {
 
 
 \chordmode {
@@ -1033,7 +1039,7 @@ endChords={}
 
 
 
-
+}
 % this thing will only engrave voltas. This is required to put the volta under the chords.
 % No great harm will happen if you don't put it, only the voltas will be above the chords.
 %\new Staff \with {
@@ -1041,7 +1047,8 @@ endChords={}
 %}
 \new Staff="Melody" {
 \new Voice="Voice"
-	\relative c'
+% # transpose with 'inline' is true!
+	\transpose c c { \relative c'
 	
 
 
@@ -1075,7 +1082,7 @@ endChords={}
 
 
 
-
+ }
 }
 \new Lyrics="Lyrics" \lyricsto "Voice" {
 	
@@ -1274,7 +1281,8 @@ endChords={}
 	\with {
 		\remove "Bar_engraver"
 	}
-	
+% # transpose with 'inline' is true!
+	\transpose c c {
 
 
 \chordmode {
@@ -1298,7 +1306,7 @@ endChords={}
 }
 
 
-
+}
 % this thing will only engrave voltas. This is required to put the volta under the chords.
 % No great harm will happen if you don't put it, only the voltas will be above the chords.
 %\new Staff \with {
@@ -1306,7 +1314,8 @@ endChords={}
 %}
 \new Staff="Melody" {
 \new Voice="Voice"
-	\relative c'
+% # transpose with 'inline' is true!
+	\transpose c c { \relative c'
 	
 
 
@@ -1319,7 +1328,7 @@ endChords={}
 	e
 }
 
-
+ }
 }
 \new Lyrics="Lyrics" \lyricsto "Voice" {
 	
@@ -1432,7 +1441,8 @@ endChords={}
 		\override BarLine #'bar-extent = #'(-2 . 2)
 		\consists "Bar_engraver"
 	}
-	
+% # transpose with 'inline' is true!
+	\transpose c c {
 
 
 \chordmode {
@@ -1464,7 +1474,7 @@ endChords={}
 	\endChords
 }
 
-
+}
 % this thing will only engrave voltas. This is required to put the volta under the chords.
 % No great harm will happen if you don't put it, only the voltas will be above the chords.
 %\new Staff \with {
@@ -1643,7 +1653,8 @@ endChords={}
 	\with {
 		\remove "Bar_engraver"
 	}
-	
+% # transpose with 'inline' is true!
+	\transpose c c {
 
 
 \chordmode {
@@ -1671,7 +1682,7 @@ endChords={}
 
 
 
-
+}
 % this thing will only engrave voltas. This is required to put the volta under the chords.
 % No great harm will happen if you don't put it, only the voltas will be above the chords.
 %\new Staff \with {
@@ -1679,7 +1690,8 @@ endChords={}
 %}
 \new Staff="Melody" {
 \new Voice="Voice"
-	\relative c'
+% # transpose with 'inline' is true!
+	\transpose c c { \relative c'
 	
 
 
@@ -1702,7 +1714,7 @@ endChords={}
 }
 
 
-
+ }
 }
 \new Lyrics="Lyrics" \lyricsto "Voice" {
 	
@@ -1889,7 +1901,8 @@ endChords={}
 	\with {
 		\remove "Bar_engraver"
 	}
-	
+% # transpose with 'inline' is true!
+	\transpose c c {
 
 
 \chordmode {
@@ -1930,7 +1943,7 @@ endChords={}
 
 
 
-
+}
 % this thing will only engrave voltas. This is required to put the volta under the chords.
 % No great harm will happen if you don't put it, only the voltas will be above the chords.
 %\new Staff \with {
@@ -1938,7 +1951,8 @@ endChords={}
 %}
 \new Staff="Melody" {
 \new Voice="Voice"
-	\relative c'
+% # transpose with 'inline' is true!
+	\transpose c c { \relative c'
 	
 
 
@@ -1971,7 +1985,7 @@ endChords={}
 
 
 
-
+ }
 }
 \new Lyrics="Lyrics" \lyricsto "Voice" {
 	
@@ -2179,7 +2193,8 @@ endChords={}
 		\override BarLine #'bar-extent = #'(-2 . 2)
 		\consists "Bar_engraver"
 	}
-	
+% # transpose with 'inline' is true!
+	\transpose c c {
 
 
 \chordmode {
@@ -2215,7 +2230,7 @@ endChords={}
 	\endChords
 }
 
-
+}
 % this thing will only engrave voltas. This is required to put the volta under the chords.
 % No great harm will happen if you don't put it, only the voltas will be above the chords.
 %\new Staff \with {

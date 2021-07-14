@@ -216,7 +216,7 @@ endChords={}
 				\null
 				\null
 				\null
-				\fill-line { \fontsize #11 \bold "OpenBook (c)"}
+				\fill-line { \fontsize #11 \bold "OpenBook (C)"}
 				\null
 				\null
 				\fill-line { \larger \larger \bold "An open source Jazz real book" }
@@ -258,12 +258,12 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 172" }
-				\fill-line { \small "Git describe: 172-43-g4b1be7d" }
-				\fill-line { \small "Git commits: 1698" }
-				\fill-line { \small "Build date: 12:52:45 12-06-2021" }
+				\fill-line { \small "Git describe: 172-46-g1064674" }
+				\fill-line { \small "Git commits: 1701" }
+				\fill-line { \small "Build date: 01:49:39 15-07-2021" }
 				\fill-line { \small "Build user: mark" }
 				\fill-line { \small "Build host: newton" }
-				\fill-line { \small "Build kernel: Linux 5.11.0-18-lowlatency" }
+				\fill-line { \small "Build kernel: Linux 5.11.0-22-lowlatency" }
 				\fill-line { \small "Lilypond version: 2.22.0" }
 				\fill-line { \small "Number of tunes: 1" }
 				\null
