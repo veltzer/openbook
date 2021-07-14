@@ -1,5 +1,30 @@
 <%
-TONALITY='c'
+TONALITY="ees"
+
+# Want to have readable symbol on title page
+# (judgment call: I prefer 'G flat' to 'F sharp')
+tonalityNames = {"c": "C", "cis": "C♯", "d": "D", "ees":"E♭", "e": "E", "f": "F", "ges": "G♭", "g": "G", "aes": "A♭", "a": "A", "bes": "B♭", "b": "B" }
+
+# An 'E flat' book has tunes transposed so that when played on E flat instrument they work. That means they're trasponsed _down_ a minor third,
+# since E flat is a minor third above c
+#
+# also, judgement call; transpose to the nearest pitch.
+def tonalityTransposePitch(pitch) :
+    keys = list(tonalityNames)
+    pitchIndex = keys.index(pitch)
+    transposeIndex=pitchIndex
+    if (pitchIndex != 0) :
+        # seems a little convoluted, should be more elegant!
+        transposeIndex = 12-pitchIndex
+        
+    result = keys[transposeIndex]
+    if (transposeIndex >= 6):
+        result = result + ','
+    return result
+
+# maybe overkill with the dictionary and function, but here we set globals
+TONALITYName=tonalityNames[TONALITY]
+TONALITYTransposePitch=tonalityTransposePitch(TONALITY)
 %>
 <%def name="defs()">
 %% end verbatim - this comment is a hack to prevent texinfo.tex
@@ -251,7 +276,7 @@ ${self.defs()}
 				\null
 				\null
 				\null
-				\fill-line { \fontsize #11 \bold "OpenBook (${TONALITY})"}
+				\fill-line { \fontsize #11 \bold "OpenBook (${TONALITYName})"}
 				\null
 				\null
 				\fill-line { \larger \larger \bold "An open source Jazz real book" }
@@ -523,12 +548,12 @@ ${self.clearVars()}
 %>
 
 % if gattr['inline']==False:
-%% lets emit the blocks
+%% lets emit the blocks -- use specified pitch
 % if attributes.getWorkingVersion()['doChords']:
-Chords=\transpose c ${TONALITY} {<%include file="/${file}" args="part=Chords"/>}
+Chords=\transpose c ${TONALITYTransposePitch} {<%include file="/${file}" args="part=Chords"/>}
 % endif
 % if attributes.getWorkingVersion()['doVoice']:
-Voice=\transpose c ${TONALITY} {\relative c'
+Voice=\transpose c ${TONALITYTransposePitch} {\relative c'
 	<%include file="/${file}" args="part=Voice"/>
 }
 % endif
@@ -562,8 +587,9 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 		\remove "Bar_engraver"
 	}
 % endif
+%% # transpose with 'inline' is true!
 % if gattr['inline']:
-	<%include file="/${file}" args="part=Chords"/>
+	\transpose c ${TONALITYTransposePitch} {<%include file="/${file}" args="part=Chords"/>}
 % endif
 % if gattr['inline']==False:
 	\Chords
@@ -577,9 +603,10 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 % if attributes.getWorkingVersion()['doVoice']:
 \new Staff="Melody" {
 \new Voice="Voice"
+%% # transpose with 'inline' is true!
 % if gattr['inline']:
-	\relative c'
-	<%include file="/${file}" args="part=Voice"/>
+	\transpose c ${TONALITYTransposePitch} { \relative c'
+	<%include file="/${file}" args="part=Voice"/> }
 % endif
 % if gattr['inline']==False:
 	\Voice
