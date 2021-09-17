@@ -110,6 +110,7 @@ class ConfigAll(Config):
 
 
 @register_endpoint(
+    description="run the script",
     configs=[ConfigAll],
 )
 def run() -> None:
@@ -168,12 +169,12 @@ def run() -> None:
         os.chmod(ConfigAll.pdf, 0o0444)
 
 
-@register_main()
+@register_main(
+        app_name="lilypond wrapper",
+        main_description="Run the lilypond wrapper",
+        version="1.0",
+)
 def main() -> None:
-    """
-    Run the lilypond wrapper
-    :return:
-    """
     config_arg_parse_and_launch()
 
 
