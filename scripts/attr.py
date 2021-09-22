@@ -109,6 +109,7 @@ books_offsets = {
     'nrbk1': 13,
     'nrbk3': 10,
     'tbk': 11,
+    'lrb': 19,
 }
 
 books_dont_have = {'ja54'}

@@ -32,7 +32,7 @@
 	attributes['uuid']='4901d188-1bcf-11ec-ae63-33f52bed6236'
 	attributes['structure']='ABA'
 	# attributes['structureremark']
-	attributes['location']='lrb:26'
+	attributes['location']='lrb:83-84'
 
 	attributes['idyoutuberemark1']='Classical version by Cesaria Evora'
 	attributes['idyoutube1']='LLsg_Lk819s'
