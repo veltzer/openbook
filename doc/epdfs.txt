@@ -19,5 +19,8 @@ How to collect these ?
 	and it is also quite good.
 	When printing from this book with page number use an offset of -1.
 	Meaning if you want to print pages 76-80 print the pages 75-79.
+
+	You can use this site: https://www.seventhstring.com/fbindex.html
+	to search for which book has a tune you want.
 - scan from my own fakebooks.
 	I usually use xsane for this.
