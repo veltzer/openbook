@@ -28,7 +28,7 @@
 	#attributes['copyrightextra']='Sole Selling Agent Duchess Music Corporation (MCA), New York, NY for the U.S.A. and Canada'
 
 	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
-	attributes['completion']='5'
+	attributes['completion']='4'
 	attributes['uuid']='4901d188-1bcf-11ec-ae63-33f52bed6236'
 	attributes['structure']='ABA'
 	# attributes['structureremark']
