@@ -55,7 +55,7 @@ What tools are used?
 What python modules are used?
 -----------------------------
 * pydmt: python dependency management tool
-* pytconf: pytconf handles configuration, config files and command line parsing
+* pytconf: pytconf handles configuration and command line parsing
 * python-dateutil: Extensions to the standard Python datetime module
 * tqdm: Fast, Extensible Progress Meter
 * PyMySQL: Pure Python MySQL Driver

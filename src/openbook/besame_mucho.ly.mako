@@ -49,8 +49,8 @@
 	- put in a lyrics url.
 	- filled in the meta data from the latin book.
 	- put in the tunes structure.
-	TODO:
 	- brought in the latin book epdf.
+	TODO:
 	- put in the latin book chords.
 	- put in the latin book tune.
 	- put in the latin book lyrics.
@@ -67,18 +67,24 @@
 
 	\myMark "A"
 	\startPart
-	d1*2:m9 | cis:dim7 | \myEndLine
-	c:m6 | g:7/b | \myEndLine
-	bes:maj7 | ees:maj7 | \myEndLine
-	e1:m7.5- | a:7.9- | d:m7 | des:13 | \myEndLine
+	d1*2:m6 | g1*2:m6 | \myEndLine
+	g2:m6 d:7.9- | e:m7.5- a:7.9- | d1:m6 | a:7.5+.9- | \myEndLine
+	a:m7.5- | d:7.9- | g1*2:m6 | \myEndLine
+	d2:m6 b:m7.5- | e:7.9- a:7.9- | d1*2:m6 | \myEndLine
 	\endPart
 
 	\myMark "B"
 	\startPart
-	c1*2:m7 | b:dim7 | \myEndLine
-	bes1:maj7 | e2:m7.5- a:7 | d1.:m7 des2:7 | \myEndLine
-	c1:m9 | f:7 | b:m7 | e:7.9- | \myEndLine
-	bes:maj7 | a:7 | d1*2:m7 | \myEndLine
+	g1:m6 | d:m6 | e2:m7.5- a:7.9- | d:m6 d:7.9- | \myEndLine
+	g1*2:m6 | d1:m6 | e2:7 bes:7.9- | a1:7.9- | \myEndLine
+	\endPart
+	
+	\myMark "A"
+	\startPart
+	d1*2:m6 | g1*2:m6 | \myEndLine
+	g2:m6 d:7.9- | e:m7.5- a:7.9- | d1:m6 | a:7.5+.9- | \myEndLine
+	a:m7.5- | d:7.9- | g1*2:m6 | \myEndLine
+	d2:m6 b:m7.5- | e:7.9- a:7.9- | d1:m6 | d2:m6 a:7 | \myEndLine
 	\endPart
 
 	\endSong
@@ -93,7 +99,8 @@
 	\key d \minor
 
 	%% part "A"
-	a'1~ | a8 bes4 a bes a8~ | a1~ | a8 bes4 a bes a8~ |
+	d4 d8 d8~ d2~ | d2 \tuplet 3/2 { d4 e f } | a2 g2~ | g2. r4 |
+	\tuplet 3/2 { g4 g g } \tuplet 3/2 { a a a } | \tuplet 3/2 { bes bes bes } \tuplet 3/2 { cis d e } | a,1~ | a1 |
 	a2~ \tuplet 3/2 { a4 gis a } | c8 b4 bes8~ bes a4. | a4. g8~ g2~ | g1 |
 	g~ | g8 a4 g a g8~ | g1~ | g8 a4 g a g8~ |
 	g2~ \tuplet 3/2 { g4 fis g } | bes4. a8 \tuplet 3/2 { aes4 g g~ } | g4. f8~ f2~ | f1 |
@@ -111,8 +118,9 @@
 \lyricmode {
 
 	%% part "A"
-	How __ In -- sen -- si -- tive __ I must have seemed __ when she told me that __ she loved me. __
-	How __ un -- moved and cold __ I must have seemed __ when she told me so sin -- cere -- __ ly. __
+	Bé -- sa -- me, __ bé -- sa -- me mu -- cho, __
+	Co -- mo si fue -- ra_es -- ta no -- che la úl -- ti -- ma vez. __
+
 	Why, __ she must have asked, __ did I just turn __ and stare in i -- cy si -- lence? __
 	What __ was I to say? __ What can you say __ when a love af -- fair is o -- ver? __
 }
