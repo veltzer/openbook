@@ -11,7 +11,7 @@
 % this version tag will keep me compiling only on this version of lilypond.
 %=====================================================================
 
-\version "2.22.0"
+\version "2.22.1"
 
 % lets define a variable to hold the formatted build date (man 3 strftime):
 %date=#(strftime "%T %d-%m-%Y" (localtime (current-time)))
@@ -258,14 +258,14 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 172" }
-				\fill-line { \small "Git describe: 172-54-ge9fc318" }
-				\fill-line { \small "Git commits: 1709" }
-				\fill-line { \small "Build date: 01:54:00 23-09-2021" }
+				\fill-line { \small "Git describe: 172-56-g0a3557d" }
+				\fill-line { \small "Git commits: 1711" }
+				\fill-line { \small "Build date: 16:06:02 05-12-2021" }
 				\fill-line { \small "Build user: mark" }
 				\fill-line { \small "Build host: newton" }
-				\fill-line { \small "Build kernel: Linux 5.11.0-25-lowlatency" }
-				\fill-line { \small "Lilypond version: 2.22.0" }
-				\fill-line { \small "Number of tunes: 152" }
+				\fill-line { \small "Build kernel: Linux 5.13.0-22-lowlatency" }
+				\fill-line { \small "Lilypond version: 2.22.1" }
+				\fill-line { \small "Number of tunes: 151" }
 				\null
 				\null
 				\null
@@ -4709,209 +4709,6 @@ endChords={}
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1947, 1950, 1987 Enoch Et Cie. Renewed 1975, 1978 Enoch Et Cie" }
-	}
-	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
-	}
-}
-
-
-
-}
-
-
-% include anything the user wants before the bookpart starts
-
-
-
-
-
-
-
-
-\bookpart {
-
-% this causes the variables to be defined...
-
-
-
-
-
-
-
-
-
-
-
-
-
-% now play with the variables that depend on language
-
-
-
-% calculate the tag line
-
-
-% calculate the typesetby
-
-
-
-
-\tocItem \markup "Bésame Mucho / Consuelo Velazquez"
-
-
-
-
-
-% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
-\markup {
-	\column {
-		\override #'(baseline-skip . 3.5)
-		\column {
-			\huge \larger \bold
-			\fill-line { \larger "Bésame Mucho" }
-			\fill-line { \large \smaller \bold \larger "Kiss Me Much" }
-			\fill-line {
-				""
-				"Lyrics and Music by Consuelo Velazquez"
-			}
-			\fill-line {
-				"Slow Bolero"
-				""
-			}
-		}
-	}
-}
-\noPageBreak
-
-
-% include the preparatory stuff, if there is any
-
-% calculate the vars
-
-
-
-% score for printing
-\score {
-	<<
-\new ChordNames="Chords"
-	\with {
-		\remove "Bar_engraver"
-	}
-% # transpose with 'inline' is true!
-	\transpose c c {
-
-
-\chordmode {
-	\startChords
-	\startSong
-
-	\myMark "A"
-	\startPart
-	d1*2:m6 | g1*2:m6 | \myEndLine
-	g2:m6 d:7.9- | e:m7.5- a:7.9- | d1:m6 | a:7.5+.9- | \myEndLine
-	bes:maj7 | ees:maj7 | \myEndLine
-	e1:m7.5- | a:7.9- | d:m7 | des:13 | \myEndLine
-	\endPart
-
-	\myMark "B"
-	\startPart
-	c1*2:m7 | b:dim7 | \myEndLine
-	bes1:maj7 | e2:m7.5- a:7 | d1.:m7 des2:7 | \myEndLine
-	c1:m9 | f:7 | b:m7 | e:7.9- | \myEndLine
-	bes:maj7 | a:7 | d1*2:m7 | \myEndLine
-	\endPart
-
-	\endSong
-	\endChords
-}
-
-
-
-}
-% this thing will only engrave voltas. This is required to put the volta under the chords.
-% No great harm will happen if you don't put it, only the voltas will be above the chords.
-%\new Staff \with {
-%	\consists "Volta_engraver"
-%}
-\new Staff="Melody" {
-\new Voice="Voice"
-% # transpose with 'inline' is true!
-	\transpose c c { \relative c'
-	
-
-
-
-{
-	\tempo "Allegro" 4 = 130
-	\time 4/4
-	\key d \minor
-
-%% part "A"
-	d4 d8 d8~ d2~ | d2 \tuplet 3/2 { d4 e f } | a2 g2~ | g2. r4 |
-	\tuplet 3/2 { g4 g g } \tuplet 3/2 { a a a } | \tuplet 3/2 { bes bes bes } \tuplet 3/2 { cis d e } | a,1~ | a1 |
-	a2~ \tuplet 3/2 { a4 gis a } | c8 b4 bes8~ bes a4. | a4. g8~ g2~ | g1 |
-	g~ | g8 a4 g a g8~ | g1~ | g8 a4 g a g8~ |
-	g2~ \tuplet 3/2 { g4 fis g } | bes4. a8 \tuplet 3/2 { aes4 g g~ } | g4. f8~ f2~ | f1 |
-
-%% part "B"
-	f1~ | f8 g4 f g f8~ | f1~ | f8 g4 f g a8~ |
-	a2. f4 | d e d e | f2 f~ | f1 |
-	f~ | f4. g8 f g4 e8~ | e1~ | e8 f4 e f e8~ |
-	e2~ \tuplet 3/2 { e4 dis e } | g4. ges8 f4 e | e4. d8~ d2 | r1 |
-}
-
-
- }
-}
-\new Lyrics="Lyrics" \lyricsto "Voice" {
-	
-
-
-
-
-% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
-\lyricmode {
-
-%% part "A"
-	Bé -- sa -- me, __ bé -- sa -- me mu -- cho, __
-	Co -- mo si fue -- ra_es -- ta no -- che la úl -- ti -- ma vez. __
-
-	Why, __ she must have asked, __ did I just turn __ and stare in i -- cy si -- lence? __
-	What __ was I to say? __ What can you say __ when a love af -- fair is o -- ver? __
-}
-
-
-}
-\new Lyrics="Lyrics" \lyricsto "Voice" {
-	
-
-
-
-
-
-\lyricmode {
-
-%% part "B"
-	Now, __ she's gone a -- way __ and I'm a -- lone __ with the mem -- 'ry of __ her last look. __
-	Vague __ dra -- wn and sad, __ I see it still, __ all her heart- break in that last __ look. __
-	How, __ she must have asked, __ could I just turn __ and stare in i -- cy si -- lence? __
-	What __ was I to do? __ What can one do __ when a love af -- fair is o -- ver? __
-}
-
-}
-	>>
-	\layout {
-	}
-}
-
-
-\noPageBreak
-\markup \column {
-%% just a little space
-	\null
-	\fill-line {
-		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
 		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
