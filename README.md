@@ -1,6 +1,8 @@
 OpenBook
 ========
 
+This is a change for the students of the devops course
+
 build
 -----
 ![build](https://github.com/veltzer/openbook/workflows/build/badge.svg)
