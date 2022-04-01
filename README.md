@@ -1,8 +1,6 @@
 OpenBook
 ========
 
-This is a change for the students of the devops course
-
 build
 -----
 ![build](https://github.com/veltzer/openbook/workflows/build/badge.svg)
@@ -218,4 +216,4 @@ How can I get a version of this book in a key other than C?
 Just edit `include/common.ly.mako` and change TONALITY="c" to "bes" or "ees" before compiling.
 
 
-	Mark Veltzer <mark.veltzer@gmail.com>, 2009-2021
+	Mark Veltzer <mark.veltzer@gmail.com>, 2009-2022
