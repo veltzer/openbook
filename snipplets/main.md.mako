@@ -2,7 +2,7 @@
     import config.project
     import config.python
     import config.packages
-    import config.helpers
+    import config.pkgs
 %>What is OpenBook?
 ------------------
 OpenBook is a Jazz real book constructed with free software. A real book simply means a big book with lots of\
@@ -32,7 +32,7 @@ What tools are used?
 What python modules are used?
 -----------------------------
 % for k in config.python.dev_requires:
-* ${k}: ${config.helpers.get_package_description(k)}
+* ${k}: ${config.pkgs.get_package_description(k)}
 % endfor
 
 What is produced?
