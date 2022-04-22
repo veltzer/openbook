@@ -4,7 +4,7 @@
 # should we show commands executed ?
 DO_MKDBG?=0
 # do you want dependency on the Makefile itself ?
-DO_MAKEFILE_DEPEND:=1
+DO_ALLDEP:=1
 # should we depend on the wrappers scripts dates ?
 DO_WRAPDEPS:=1
 # should we depend on the common include file ?
@@ -47,6 +47,8 @@ SOURCE_DIR:=src
 OUT_DIR:=out
 # where is the common file?
 COMMON:=include/common.ly.mako
+# where is the tools stamp file?
+TOOLS:=out/tools.stamp
 # wrappers
 LILYPOND_WRAPPER:=python -m scripts.wrapper_lilypond
 LILYPOND_WRAPPER_DEP:=scripts/wrapper_lilypond.py
@@ -84,12 +86,10 @@ ifeq ($(DO_INCDEPS),1)
 	MAKO_WRAPPER_DEP:=$(MAKO_WRAPPER_DEP) $(COMMON)
 endif # DO_INCDEPS
 
-ALL_DEP:=
-
 # dependency on the makefile itself
-ifeq ($(DO_MAKEFILE_DEPEND),1)
-ALL_DEP+=Makefile
-endif # DO_MAKEFILE_DEPEND
+ifeq ($(DO_ALLDEP),1)
+.EXTRA_PREREQS+=$(foreach mk, ${MAKEFILE_LIST},$(abspath ${mk}))
+endif
 
 ifeq ($(DO_MKDBG),1)
 Q=
@@ -100,8 +100,7 @@ Q=@
 endif # DO_MKDBG
 
 ifeq ($(DO_TOOLS),1)
-TOOLS:=out/tools.stamp
-ALL_DEP+=$(TOOLS)
+.EXTRA_PREREQS+=$(TOOLS)
 endif # DO_TOOLS
 
 # this find the sources without git...
@@ -292,55 +291,55 @@ checkhtml: $(HTMLCHECK)
 # rules
 
 # explain to make that .ps .pdf and .midi are really stamp files (do I need this ?!?)
-$(FILES_PS): %.ps: %.stamp $(ALL_DEP)
+$(FILES_PS): %.ps: %.stamp
 	$(info doing [$@])
 
-$(FILES_PDF): %.pdf: %.stamp $(ALL_DEP)
+$(FILES_PDF): %.pdf: %.stamp
 	$(info doing [$@])
 
-$(FILES_MIDI): %.midi: %.stamp $(ALL_DEP)
+$(FILES_MIDI): %.midi: %.stamp
 	$(info doing [$@])
 
 # this is the real rule
-$(FILES_STAMP): $(OUT_DIR)/%.stamp: $(OUT_DIR)/%.ly $(LILYPOND_WRAPPER_DEP) $(ALL_DEP)
+$(FILES_STAMP): $(OUT_DIR)/%.stamp: $(OUT_DIR)/%.ly $(LILYPOND_WRAPPER_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(LILYPOND_WRAPPER) run --stop_on_output False --ps $(dir $@)$(basename $(notdir $@)).ps --pdf $(dir $@)$(basename $(notdir $@)).pdf --output $(dir $@)$(basename $(notdir $@)) --ly $<
 	$(Q)touch $@
 
-$(OUT_DIR)/%.0.pdf: %.ly.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
+$(OUT_DIR)/%.0.pdf: %.ly.mako $(MAKO_WRAPPER_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKO_WRAPPER) $(CONST_SONG) $(CONST_CUT) 0 $@ $<
-$(OUT_DIR)/%.1.pdf: %.ly.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
+$(OUT_DIR)/%.1.pdf: %.ly.mako $(MAKO_WRAPPER_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKO_WRAPPER) $(CONST_SONG) $(CONST_CUT) 1 $@ $<
-$(OUT_DIR)/%.2.pdf: %.ly.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
+$(OUT_DIR)/%.2.pdf: %.ly.mako $(MAKO_WRAPPER_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKO_WRAPPER) $(CONST_SONG) $(CONST_CUT) 2 $@ $<
-$(OUT_DIR)/%.3.pdf: %.ly.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
+$(OUT_DIR)/%.3.pdf: %.ly.mako $(MAKO_WRAPPER_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKO_WRAPPER) $(CONST_SONG) $(CONST_CUT) 3 $@ $<
-$(FILES_LY): $(OUT_DIR)/%.ly: %.ly.mako $(MAKO_WRAPPER_DEP) $(ALL_DEP)
+$(FILES_LY): $(OUT_DIR)/%.ly: %.ly.mako $(MAKO_WRAPPER_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKO_WRAPPER) $(CONST_SONG) $(CONST_DONTCUT) 0 $@ $<
-$(FILES_MAKO_DEPS): $(OUT_DIR)/%.mako.d: %.ly.mako $(MAKO_DEPS_WRAPPER_DEP) $(ALL_DEP)
+$(FILES_MAKO_DEPS): $(OUT_DIR)/%.mako.d: %.ly.mako $(MAKO_DEPS_WRAPPER_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MAKO_DEPS_WRAPPER) $< $@ $(basename $(basename $@)).stamp $(basename $(basename $@)).pdf $(basename $(basename $@)).ps $(basename $(basename $@)).midi
-$(FILES_WAV): %.wav: %.midi $(MIDI2WAV_WRAPPER_DEP) $(ALL_DEP)
+$(FILES_WAV): %.wav: %.midi $(MIDI2WAV_WRAPPER_DEP)
 	$(info doing $@)
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MIDI2WAV_WRAPPER) $< $@
-$(FILES_OGG): %.ogg: %.midi $(MIDI2OGG_WRAPPER_DEP) $(ALL_DEP)
+$(FILES_OGG): %.ogg: %.midi $(MIDI2OGG_WRAPPER_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MIDI2OGG_WRAPPER) $< $@
-$(FILES_MP3): %.mp3: %.midi $(MIDI2MP3_WRAPPER_DEP) $(ALL_DEP)
+$(FILES_MP3): %.mp3: %.midi $(MIDI2MP3_WRAPPER_DEP)
 	$(info doing [$@])
 	$(Q)mkdir -p $(dir $@)
 	$(Q)$(MIDI2MP3_WRAPPER) $< $@
@@ -350,10 +349,10 @@ TMPL_LY_$(1):=$$(OUTPUT)/$(1).ly
 TMPL_PS_$(1):=$$(OUTPUT)/$(1).ps
 TMPL_PDF_$(1):=$$(OUTPUT)/$(1).pdf
 TMPL_PREREQ_$(1):=$(subst ./,,$(shell find src/$(1) -type f -and -name "*.mako"))
-$$(TMPL_PDF_$(1)): $$(TMPL_LY_$(1)) $$(LILYPOND_WRAPPER_DEP) $$(ALL_DEP)
+$$(TMPL_PDF_$(1)): $$(TMPL_LY_$(1)) $$(LILYPOND_WRAPPER_DEP)
 	$$(info doing [$$@])
 	$$(Q)$$(LILYPOND_WRAPPER) run --ps $$(TMPL_PS_$(1)) --pdf $$(TMPL_PDF_$(1)) --output $$(OUTPUT) --ly $$<
-$$(TMPL_LY_$(1)): $$(TMPL_PREREQ_$(1)) $$(MAKO_WRAPPER_DEP) $$(COMMON) $$(ALL_DEP)
+$$(TMPL_LY_$(1)): $$(TMPL_PREREQ_$(1)) $$(MAKO_WRAPPER_DEP) $$(COMMON)
 	$$(info doing [$$@])
 	$$(Q)mkdir -p $$(dir $$@)
 	$$(Q)$$(MAKO_WRAPPER) $$(CONST_BOOK) $$(CONST_DONTCUT) 0 $$@ $$(TMPL_PREREQ_$(1))
@@ -364,7 +363,7 @@ $(foreach name, $(NAMES), $(eval $(call template,$(name))))
 all_tunes: $(FILES_STAMP)
 	$(info doing [$@])
 
-$(HTMLCHECK): $(SOURCES_HTML) $(ALL_DEP)
+$(HTMLCHECK): $(SOURCES_HTML)
 	$(info doing [$@])
 	$(Q)tidy -errors -q -utf8 $(SOURCES_HTML)
 	$(Q)node_modules/htmlhint/bin/htmlhint $(SOURCES_HTML) > /dev/null
