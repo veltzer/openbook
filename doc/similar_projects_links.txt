@@ -24,3 +24,5 @@ http://leighverlag.blogspot.com/2015/12/mimicking-real-book-look.html
 	how to mimic openbook look with lilypond
 https://github.com/941design/realbook
 	project similr to mine but samller in scope.
+https://github.com/andrewzah/openbook
+	project that was copied from me but in rust.
