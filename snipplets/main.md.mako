@@ -25,7 +25,7 @@ used by Jazz musicians both for practice and for performance.
 
 What tools are used?
 ---------------------
-% for k,v in config.deps.packs.items():
+% for k,v in config.deps.packages.items():
 * ${k}: ${v}
 % endfor
 
