@@ -1,4 +1,4 @@
-packs = {
+packages = {
     # must have (critical)
     'python3': 'for the python scripts',
     'virutalenv': 'for using virtualenv for python',
