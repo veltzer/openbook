@@ -1,7 +1,7 @@
 <%!
     import config.project
     import config.python
-    import config.packages
+    import config.deps
     import config.pkgs
 %>What is OpenBook?
 ------------------
@@ -25,7 +25,7 @@ used by Jazz musicians both for practice and for performance.
 
 What tools are used?
 ---------------------
-% for k,v in config.packages.packs.items():
+% for k,v in config.deps.packs.items():
 * ${k}: ${v}
 % endfor
 

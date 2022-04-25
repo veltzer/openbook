@@ -72,6 +72,7 @@ GITARGS:=--no-pager
 ########
 # code #
 ########
+ALL=
 
 ifeq ($(DO_WRAPDEPS),0)
 	LILYPOND_WRAPPER_DEP:=
@@ -101,6 +102,7 @@ endif # DO_MKDBG
 
 ifeq ($(DO_TOOLS),1)
 .EXTRA_PREREQS+=$(TOOLS)
+ALL+=$(TOOLS)
 endif # DO_TOOLS
 
 # this find the sources without git...
@@ -128,31 +130,31 @@ OUT_PS:=$(addsuffix .ps,$(addprefix $(OUTPUT)/,$(NAMES)))
 OUT_PDF:=$(addsuffix .pdf,$(addprefix $(OUTPUT)/,$(NAMES)))
 
 ifeq ($(DO_LY),1)
-	ALL+=$(FILES_LY)
+ALL+=$(FILES_LY)
 endif # DO_LY
 ifeq ($(DO_PS),1)
-	ALL+=$(FILES_PS)
+ALL+=$(FILES_PS)
 endif # DO_PS
 ifeq ($(DO_PDF),1)
-	ALL+=$(FILES_PDF)
+ALL+=$(FILES_PDF)
 endif # DO_PDF
 ifeq ($(DO_MIDI),1)
-	ALL+=$(FILES_MIDI)
+ALL+=$(FILES_MIDI)
 endif # DO_MIDI
 ifeq ($(DO_STAMP),1)
-	ALL+=$(FILES_STAMP)
+ALL+=$(FILES_STAMP)
 endif # DO_STAMP
 ifeq ($(DO_WAV),1)
-	ALL+=$(FILES_WAV)
+ALL+=$(FILES_WAV)
 endif # DO_WAV
 ifeq ($(DO_MP3),1)
-	ALL+=$(FILES_MP3)
+ALL+=$(FILES_MP3)
 endif # DO_MPS
 ifeq ($(DO_OGG),1)
-	ALL+=$(FILES_OGG)
+ALL+=$(FILES_OGG)
 endif # DO_OGG
 ifeq ($(DO_BOOKS_PDF),1)
-	ALL+=$(OUT_PDF)
+ALL+=$(OUT_PDF)
 endif # DO_BOOKS_PDF
 
 SOURCES_HTML:=$(DOCS)/index.html
@@ -177,7 +179,7 @@ stamp: $(FILES_STAMP)
 ly: $(FILES_LY)
 	$(info doing [$@])
 
-$(TOOLS): config/packages.py
+$(TOOLS): packages.txt config/deps.py
 	$(info doing [$@])
 	$(Q)install_deps
 	$(Q)pymakehelper touch_mkdir $@

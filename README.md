@@ -59,7 +59,7 @@ What python modules are used?
 * python-dateutil: Extensions to the standard Python datetime module
 * tqdm: Fast, Extensible Progress Meter
 * PyMySQL: Pure Python MySQL Driver
-* Mako: A super-fast templating language that borrows the  best ideas from the existing templating languages.
+* Mako: A super-fast templating language that borrows the best ideas from the existing templating languages.
 * pymakehelper: pymakehelper eases writing recipes when using the make system
 * requests: Python HTTP for Humans.
 * gitpython: could not import [gitpython]
