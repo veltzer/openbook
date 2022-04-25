@@ -81,7 +81,7 @@ ifeq ($(DO_WRAPDEPS),0)
 	MIDI2WAV_WRAPPER_DEP:=
 	MIDI2OGG_WRAPPER_DEP:=
 	MIDI2MP3_WRAPPER_DEP:=
-endif
+endif DO_WRAPDEPS
 ifeq ($(DO_INCDEPS),1)
 	MAKO_WRAPPER_DEP:=$(MAKO_WRAPPER_DEP) $(COMMON)
 endif # DO_INCDEPS
@@ -89,7 +89,7 @@ endif # DO_INCDEPS
 # dependency on the makefile itself
 ifeq ($(DO_ALLDEP),1)
 .EXTRA_PREREQS+=$(foreach mk, ${MAKEFILE_LIST},$(abspath ${mk}))
-endif
+endif # DO_ALLDEP
 
 ifeq ($(DO_MKDBG),1)
 Q=
@@ -129,31 +129,31 @@ OUT_PDF:=$(addsuffix .pdf,$(addprefix $(OUTPUT)/,$(NAMES)))
 
 ifeq ($(DO_LY),1)
 	ALL+=$(FILES_LY)
-endif
+endif # DO_LY
 ifeq ($(DO_PS),1)
 	ALL+=$(FILES_PS)
-endif
+endif # DO_PS
 ifeq ($(DO_PDF),1)
 	ALL+=$(FILES_PDF)
-endif
+endif # DO_PDF
 ifeq ($(DO_MIDI),1)
 	ALL+=$(FILES_MIDI)
-endif
+endif # DO_MIDI
 ifeq ($(DO_STAMP),1)
 	ALL+=$(FILES_STAMP)
-endif
+endif # DO_STAMP
 ifeq ($(DO_WAV),1)
 	ALL+=$(FILES_WAV)
-endif
+endif # DO_WAV
 ifeq ($(DO_MP3),1)
 	ALL+=$(FILES_MP3)
-endif
+endif # DO_MPS
 ifeq ($(DO_OGG),1)
 	ALL+=$(FILES_OGG)
-endif
+endif # DO_OGG
 ifeq ($(DO_BOOKS_PDF),1)
 	ALL+=$(OUT_PDF)
-endif
+endif # DO_BOOKS_PDF
 
 SOURCES_HTML:=$(DOCS)/index.html
 HTMLCHECK:=out/html.stamp
