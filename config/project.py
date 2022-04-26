@@ -27,7 +27,7 @@ project_keywords = [
     "open source",
 ]
 project_license = "GPLV3"
-project_year_started = "2009"
+project_year_started = 2009
 
 project_copyright_years = ", ".join(
     map(str, range(int(project_year_started), datetime.datetime.now().year + 1)))
