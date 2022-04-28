@@ -10,7 +10,7 @@ jobs:
         os: ${config.python.test_os}
         python-version: ${config.python.test_python}
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Install system-wide dependencies
       run: sudo apt-get install lilypond qpdf
     - name: Set up Python ${"${{ matrix.python-version }}"}

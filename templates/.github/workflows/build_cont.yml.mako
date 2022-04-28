@@ -12,6 +12,6 @@ jobs:
         container: ${config.python.test_container}
         # python-version: ${config.python.test_python}
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: run script
       run: bash ./scripts/build_on_docker.sh
