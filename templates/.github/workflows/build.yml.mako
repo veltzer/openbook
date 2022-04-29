@@ -14,7 +14,7 @@ jobs:
     - name: Install system-wide dependencies
       run: sudo apt-get install lilypond qpdf
     - name: Set up Python ${"${{ matrix.python-version }}"}
-      uses: actions/setup-python@v1
+      uses: actions/setup-python@v2
       with:
         python-version: ${"${{ matrix.python-version }}"}
     - name: Install python dependencies
