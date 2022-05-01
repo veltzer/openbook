@@ -4,13 +4,13 @@ OpenBook
 build
 -----
 ![build](https://github.com/veltzer/openbook/workflows/build/badge.svg)
-* test_os: [ubuntu-18.04, ubuntu-20.04]
+* test_os: [ubuntu-20.04]
 * test_python: [3.7, 3.8, 3.9]
 
 build_cont
 ----------
 ![build](https://github.com/veltzer/openbook/workflows/build_cont/badge.svg)
-* test_container: [ 'ubuntu:18.04', 'ubuntu:20.04' ]
+* test_container: [ 'ubuntu:20.04' ]
 
 version: 172
 
