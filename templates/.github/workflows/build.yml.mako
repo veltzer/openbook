@@ -1,7 +1,7 @@
 <%!
     import config.python
 %>name: build
-on: [push, pull_request]
+on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     runs-on: ${"${{ matrix.os }}"}
