@@ -12,10 +12,8 @@ __pycache__
 # node modules
 /node_modules
 
-# tools
-/tools.stamp
-
 /.pydmt/
 /.venv/
+*.stamp
 
 /docs/web/*.pdf
