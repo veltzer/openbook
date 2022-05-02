@@ -31,8 +31,6 @@ DO_BOOKS_PDF:=1
 DO_CHECKHTML:=0
 # which books should we do?
 NAMES:=openbook israeli drumming rockbook guitar_album
-# should we do tools?
-DO_TOOLS:=0
 
 #############
 # CONSTANTS #
@@ -47,8 +45,6 @@ SOURCE_DIR:=src
 OUT_DIR:=out
 # where is the common file?
 COMMON:=include/common.ly.mako
-# where is the tools stamp file?
-TOOLS:=out/tools.stamp
 # wrappers
 LILYPOND_WRAPPER:=python -m scripts.wrapper_lilypond
 LILYPOND_WRAPPER_DEP:=scripts/wrapper_lilypond.py
@@ -99,11 +95,6 @@ else # DO_MKDBG
 Q=@
 #.SILENT:
 endif # DO_MKDBG
-
-ifeq ($(DO_TOOLS),1)
-.EXTRA_PREREQS+=$(TOOLS)
-ALL+=$(TOOLS)
-endif # DO_TOOLS
 
 # this find the sources without git...
 SOURCES_ALL:=$(subst ./,,$(shell find src -type f -and -name "*.mako"))
@@ -178,11 +169,6 @@ stamp: $(FILES_STAMP)
 .PHONY: ly
 ly: $(FILES_LY)
 	$(info doing [$@])
-
-$(TOOLS): packages.txt config/deps.py
-	$(info doing [$@])
-	$(Q)install_deps
-	$(Q)pymakehelper touch_mkdir $@
 
 .PHONY: debug
 debug:
