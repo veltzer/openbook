@@ -5,8 +5,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [[, u, b, u, n, t, u, -, 2, 0, ., 0, 4, ]]
-        python-version: [[, 3, ., 7, ,,  , 3, ., 8, ,,  , 3, ., 9, ]]
+        os: [ubuntu-20.04]
+        python-version: [3.9]
     steps:
     - name: checkout
       uses: actions/checkout@v3
