@@ -10,7 +10,7 @@ jobs:
     strategy:
       matrix:
         container: ${config.python.test_container}
-        # python-version: ${config.python.test_python}
+        python-version: ${config.python.test_python}
     steps:
     - uses: actions/checkout@v3
     - name: run script

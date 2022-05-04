@@ -17,3 +17,4 @@ __pycache__
 *.stamp
 
 /docs/web/*.pdf
+.myenv.pip.errors
