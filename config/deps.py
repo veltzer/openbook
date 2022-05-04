@@ -1,7 +1,7 @@
 packages = {
     # must have (critical)
     'python3': 'for the python scripts',
-    'virutalenv': 'for using virtualenv for python',
+    'virtualenv': 'for using virtualenv for python',
     'lilypond': 'this is the main tool we use',
     'qpdf': 'for qpdf(1) (used in pdf size reduction)',
 
@@ -17,7 +17,8 @@ packages = {
     'okular': 'kde pdf reader',
     'python-mako-doc': 'documentation for the template preprocessor',
     'texi2html': 'needed to install lilypond from source',
-    'guile-2.0-dev': 'needed to install lilypond from source',
+    # 'guile-2.0-dev': 'needed to install lilypond from source',
+    'guile-2.2-dev': 'needed to install lilypond from source',
     'lilypond-doc': 'documentation for lilypond',
     'lilypond-doc-html': 'documentation for lilypond',
     'lilypond-doc-pdf': 'documentation for lilypond',
