@@ -226,7 +226,7 @@ endChords={}
 				\fill-line {
 					\huge \bold \concat {
 						"Website: "
-						\with-url #"https://veltzer.net/openbook" https://veltzer.net/openbook
+						\with-url #"https://veltzer.github.io/openbook" https://veltzer.github.io/openbook
 					}
 				}
 				\null
@@ -257,13 +257,13 @@ endChords={}
 				\null
 				\null
 				\null
-				\fill-line { \small "Git tag: 172" }
-				\fill-line { \small "Git describe: 172-78-g72035ba" }
-				\fill-line { \small "Git commits: 1733" }
-				\fill-line { \small "Build date: 07:20:45 02-05-2022" }
+				\fill-line { \small "Git tag: 173" }
+				\fill-line { \small "Git describe: 173" }
+				\fill-line { \small "Git commits: 1741" }
+				\fill-line { \small "Build date: 22:32:24 05-05-2022" }
 				\fill-line { \small "Build user: mark" }
 				\fill-line { \small "Build host: newton" }
-				\fill-line { \small "Build kernel: Linux 5.13.0-40-lowlatency" }
+				\fill-line { \small "Build kernel: Linux 5.15.0-27-lowlatency" }
 				\fill-line { \small "Lilypond version: 2.22.1" }
 				\fill-line { \small "Number of tunes: 9" }
 				\null
