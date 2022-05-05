@@ -12,7 +12,7 @@ build_cont
 ![build](https://github.com/veltzer/openbook/workflows/build_cont/badge.svg)
 * test_container: ['ubuntu:20.04']
 
-version: 172
+version: 173
 
 What is OpenBook?
 ------------------
