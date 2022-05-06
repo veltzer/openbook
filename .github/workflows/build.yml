@@ -14,11 +14,9 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
-    - name: pydmt
+    - name: bootstrap
       run: python -m pip install pydmt pyclassifiers
-    - name: build_tools
-      run: pydmt build_tools
-    - name: build_reqs
-      run: pydmt build_reqs
+    - name: pydmt
+      run: pydmt build --dev False
     - name: make
       run: pymakehelper run_make
