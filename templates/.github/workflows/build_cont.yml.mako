@@ -21,8 +21,8 @@ jobs:
     - name: bootstrap os
       run: |
         apt-get update --yes --quiet
-        apt-get install --yes --quiet python3-openssl
-        curl http://security.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1l-1ubuntu1.3_amd64.deb
+        apt-get install --yes --quiet python3-openssl wget
+        wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1l-1ubuntu1.3_amd64.deb
         dpkg --install libssl1.1_1.1.1l-1ubuntu1.3_amd64.deb
         python -m ssl
     - name: bootstrap
