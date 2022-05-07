@@ -8,8 +8,8 @@ jobs:
     runs-on: ${"${{ matrix.os }}"}
     strategy:
       matrix:
-        os: ${pydmt.helpers.python.get_list_unquoted(config.python.test_os)}
-        python-version: ${pydmt.helpers.python.get_list_unquoted(config.python.test_python)}
+        os: ${pydmt.helpers.python.get_list_quoted(config.python.test_os)}
+        python-version: ${pydmt.helpers.python.get_list_quoted(config.python.test_python)}
     steps:
     - name: checkout
       uses: actions/checkout@v3

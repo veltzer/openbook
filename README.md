@@ -5,7 +5,7 @@ build
 -----
 ![build](https://github.com/veltzer/openbook/workflows/build/badge.svg)
 * test_os: ['ubuntu-22.04']
-* test_python: ['3.9']
+* test_python: ['3.10']
 
 build_cont
 ----------
