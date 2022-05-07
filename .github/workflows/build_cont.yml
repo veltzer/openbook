@@ -17,7 +17,9 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
     - name: bootstrap os
-      run: apt-get install python3-openssl
+      run: |
+        apt-get update
+        apt-get install python3-openssl
     - name: bootstrap
       run: python -m pip install pydmt pymakehelper pyclassifiers
     - name: pydmt
