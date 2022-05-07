@@ -4,14 +4,20 @@ package_name = config.project.project_name
 
 dev_requires = [
     "pydmt",
+]
+
+install_requires = [
     "pytconf",
     "python-dateutil",
     "tqdm",
     "PyMySQL",
     "Mako",
-    "pymakehelper",
     "requests",
     "gitpython",
+]
+    
+make_requires = [
+    "pymakehelper",
 ]
 
 python_requires = ">=3.9"

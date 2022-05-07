@@ -55,14 +55,6 @@ What tools are used?
 What python modules are used?
 -----------------------------
 * pydmt: python dependency management tool
-* pytconf: pytconf handles configuration and command line parsing
-* python-dateutil: Extensions to the standard Python datetime module
-* tqdm: Fast, Extensible Progress Meter
-* PyMySQL: Pure Python MySQL Driver
-* Mako: A super-fast templating language that borrows the best ideas from the existing templating languages.
-* pymakehelper: pymakehelper eases writing recipes when using the make system
-* requests: Python HTTP for Humans.
-* gitpython: could not import [gitpython]
 
 What is produced?
 ------------------
