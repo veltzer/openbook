@@ -22,6 +22,7 @@ jobs:
       run: |
         apt-get update --yes --quiet
         apt-get install --yes --quiet python3-openssl
+        python -m ssl
     - name: bootstrap
       run: python -m pip install pydmt pymakehelper pyclassifiers
     - name: pydmt
