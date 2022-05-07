@@ -21,6 +21,6 @@ make_requires = [
 ]
 
 python_requires = ">=3.9"
-test_os = ["ubuntu-20.04"]
+test_os = ["ubuntu-22.04"]
 test_python = ["3.9"]
-test_container = ["ubuntu:20.04"]
+test_container = ["ubuntu:22.04"]
