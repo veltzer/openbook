@@ -21,5 +21,3 @@ jobs:
       run: python -m pip install pydmt pymakehelper pyclassifiers
     - name: pydmt
       run: pydmt build --dev False
-    - name: make
-      run: pymakehelper run_make
