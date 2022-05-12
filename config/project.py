@@ -12,6 +12,7 @@ project_website_source = f"https://github.com/{project_github_username}/{project
 project_website_git = f"git://github.com/{project_github_username}/{project_name}.git"
 project_paypal_donate_button_id = "ASPRXR59H2NTQ"
 project_google_analytics_tracking_id = "UA-56436979-1"
+project_description = "OpenBook is an open source Jazz real book"
 project_long_description = "OpenBook is an open source Jazz real book"
 # keywords to put on html pages or for search, dont put the name of the project or my details
 # as they will be added automatically...

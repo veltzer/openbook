@@ -7,7 +7,9 @@ build
 * test_os: ['ubuntu-22.04']
 * test_python: ['3.10']
 
-version: 173
+version: 0.0.1
+
+description: OpenBook is an open source Jazz real book
 
 What is OpenBook?
 ------------------

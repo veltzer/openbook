@@ -3,8 +3,8 @@
     import config.python
     import config.openbook
     import user.personal
-    import config.git
-    line = "=" * len(config.project.project_name)
+    import config.version
+    line = "=" * len(config.project.project_name_fancy)
 %>${config.project.project_name_fancy}
 ${line}
 
@@ -14,10 +14,10 @@ build
 * test_os: ${config.python.test_os}
 * test_python: ${config.python.test_python}
 
-version: ${config.git.git_last_tag}
+version: ${config.version.version_str}
 
-## viewer version: ${config.openbook.pdfjs_version}
-##
+description: ${config.project.project_description}
+
 <%include file="../snipplets/main.md.mako" />
 
 	${user.personal.personal_origin}, ${config.project.project_copyright_years}
