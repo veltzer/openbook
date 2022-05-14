@@ -31,7 +31,7 @@ What tools are used?
 
 What python modules are used?
 -----------------------------
-% for k in config.python.dev_requires:
+% for k in config.python.install_requires:
 * ${k}: ${config.pkgs.get_package_description(k)}
 % endfor
 

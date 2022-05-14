@@ -2,6 +2,8 @@ import config.project
 
 package_name = config.project.project_name
 
+dev_requires = [
+]
 install_requires = [
     "pytconf",
     "python-dateutil",

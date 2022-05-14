@@ -32,6 +32,7 @@ def get_metadata(filename: str):
 
 
 def get_package_description(name: str) -> str:
+    print(f"searching for [{name}]")
     if name in translate:
         folder = translate[name]
     else:
