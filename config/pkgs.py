@@ -14,7 +14,7 @@ translate = {
 
 import_name_translate = {
     "Mako": "mako",
-    "python-dateutil": "dateutil",
+    "python-dateutil": "python_dateutil",
     "PyMySQL": "pymysql",
 }
 

@@ -51,7 +51,13 @@ What tools are used?
 
 What python modules are used?
 -----------------------------
-* pydmt: python dependency management tool
+* pytconf: pytconf handles configuration and command line parsing
+* python-dateutil: could not import [python_dateutil]
+* tqdm: could not import [tqdm]
+* PyMySQL: could not import [pymysql]
+* Mako: A super-fast templating language that borrows the best ideas from the existing templating languages.
+* requests: Python HTTP for Humans.
+* gitpython: could not import [gitpython]
 
 What is produced?
 ------------------
