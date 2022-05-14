@@ -52,7 +52,8 @@ def get_package_description(name: str) -> str:
     glob_pattern = os.path.join(dirname, f"{folder}-*.dist-info")
     candidates = glob.glob(glob_pattern)
     if len(candidates) != 1:
-        raise ValueError(f"could not find folder [{candidates}, {glob_pattern}]")
+        # raise ValueError(f"could not find folder [{candidates}, {glob_pattern}, {location}]")
+        return "Could not find description"
     dirname = candidates[0]
     metadata = os.path.join(dirname, "METADATA")
     metadata_dict = get_metadata(metadata)

@@ -53,10 +53,10 @@ What python modules are used?
 -----------------------------
 * pytconf: pytconf handles configuration and command line parsing
 * python-dateutil: could not import [python_dateutil]
-* tqdm: could not import [tqdm]
-* PyMySQL: could not import [pymysql]
-* Mako: A super-fast templating language that borrows the best ideas from the existing templating languages.
-* requests: Python HTTP for Humans.
+* tqdm: Could not find description
+* PyMySQL: Pure Python MySQL Driver
+* Mako: Could not find description
+* requests: Could not find description
 * gitpython: could not import [gitpython]
 
 What is produced?
