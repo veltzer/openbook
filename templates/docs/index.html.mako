@@ -1,7 +1,7 @@
 <%!
     import config.project
     import user.personal
-    import config.git
+    import config.version
 %><!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -15,7 +15,7 @@
 	<body>
 		<h1>Welcome to the <i>${config.project.project_name_fancy}</i> web site</h1>
 
-		<p>current version is ${config.git.git_last_tag}</p>
+		<p>current version is ${config.version.version_str}</p>
 
 		<h2>A demo for the impatient is
 			<a href="web/viewer.html?file=../output/openbook.pdf">here</a>
