@@ -52,12 +52,12 @@ What tools are used?
 What python modules are used?
 -----------------------------
 * pytconf: pytconf handles configuration and command line parsing
-* python-dateutil: could not import [python_dateutil]
-* tqdm: Could not find description
+* python-dateutil: Extensions to the standard Python datetime module
+* tqdm: Fast, Extensible Progress Meter
 * PyMySQL: Pure Python MySQL Driver
-* Mako: Could not find description
-* requests: Could not find description
-* gitpython: could not import [gitpython]
+* Mako: A super-fast templating language that borrows the  best ideas from the existing templating languages.
+* requests: Python HTTP for Humans.
+* gitpython: GitPython is a python library used to interact with Git repositories
 
 What is produced?
 ------------------
