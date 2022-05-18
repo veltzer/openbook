@@ -6,7 +6,7 @@ deb_package = True
 deb_section = 'python'
 deb_priority = 'optional'
 deb_architecture = 'all'
-deb_package_name = config.project.project_name
+deb_package_name = config.project.name
 # to which series to publish the package?
 deb_series = [
     'artful',
