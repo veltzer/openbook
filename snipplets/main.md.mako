@@ -103,7 +103,7 @@ How do I build the pdfs?
 ------------------------
 * you need tools installed. on Ubuntu ```$ sudo apt install lilypond qpdf```
 * clone the repository ```$ git clone ${config.project.project_website_git}```
-* cd into the newly created folder ```$ cd ${config.project.project_top_folder}```
+* cd into the newly created folder ```$ cd ${config.project.name}```
 * install python tools to create a python virtual envrionment. on Ubuntu ```$ sudo apt install python3 virtualenv```
 * create a python virtual environment ```$ virtualenv --python=/usr/bin/python3 .venv```
 * activate the virutal env ```$ source .venv/bin/activate```
