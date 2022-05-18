@@ -11,4 +11,4 @@ keywords = [
     "sheet music",
     "open source",
 ]
-license = "GPLV3"
+license_type = "GPLV3"
