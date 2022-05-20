@@ -1,23 +1,37 @@
 <%!
+    import pydmt.helpers.project
+    import pydmt.helpers.misc
+    import pydmt.helpers.signature
+    import pydmt.helpers.urls
     import config.project
-    import config.python
-    import config.openbook
     import user.personal
-    import config.version
-    line = "=" * len(config.project.project_name_fancy)
-%>${config.project.project_name_fancy}
-${line}
+    import os.path
+    import glob
+    import yaml
+%>## ${pydmt.helpers.project.get_name()}
 
-build
------
-![build](https://github.com/veltzer/${config.project.project_name}/workflows/build/badge.svg)
-* test_os: ${config.python.test_os}
-* test_python: ${config.python.test_python}
+version: ${pydmt.helpers.misc.get_version_str()}
 
-version: ${config.version.version_str}
+description: ${config.project.description_short}
 
-description: ${config.project.project_description}
+website: ${pydmt.helpers.urls.get_website()}
 
+${"##"} build
+
+<%
+	action_files = glob.glob('.github/workflows/*.yml')
+	for action_file in action_files:
+		with open(action_file, 'r') as stream:
+			action_name=yaml.safe_load(stream)["name"]
+			context.write(f"![{action_name}](https://github.com/{user.personal.github_username}/{pydmt.helpers.project.get_name()}/workflows/{action_name}/badge.svg)")
+%>
+
+% if hasattr(config.project, "description_long"):
+${config.project.description_long}
+% endif
+chat with me at [![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/veltzer/mark.veltzer)
+
+% if os.path.isfile("../snipplets/main.md.mako"):
 <%include file="../snipplets/main.md.mako" />
-
-	${user.personal.personal_origin}, ${config.project.project_copyright_years}
+% endif
+${user.personal.fullname}, Copyright © ${pydmt.helpers.signature.get_copyright_years_long()}
