@@ -1,5 +1,6 @@
 <%!
-    import config.project
+    import pydmt.helpers.urls
+    import pydmt.helpers.project
     import config.python
     import config.deps
     import pydmt.helpers.pkgs
@@ -10,7 +11,7 @@ Jazz tunes or standards as they are more widely known.
 
 Where is the project's website?
 -------------------------------
-${config.project.project_website}
+${pydmt.helpers.urls.get_website()}
 
 Why did you start this?
 ------------------------
@@ -74,7 +75,7 @@ Your name could be here if you contribute...
 
 Where can I see some results?
 ------------------------------
-Check out the PDFs and other outputs in ${config.project.project_website}.
+Check out the PDFs and other outputs in ${pydmt.helpers.urls.get_website()}.
 
 Why is there so little documentation?
 --------------------------------------
@@ -102,8 +103,8 @@ wish to contribute to the mutopia project at http://www.mutopiaproject.org/.
 How do I build the pdfs?
 ------------------------
 * you need tools installed. on Ubuntu ```$ sudo apt install lilypond qpdf```
-* clone the repository ```$ git clone ${config.project.project_website_git}```
-* cd into the newly created folder ```$ cd ${config.project.name}```
+* clone the repository ```$ git clone ${pydmt.helpers.urls.get_website_git()}```
+* cd into the newly created folder ```$ cd ${pydmt.helpers.project.get_name()}```
 * install python tools to create a python virtual envrionment. on Ubuntu ```$ sudo apt install python3 virtualenv```
 * create a python virtual environment ```$ virtualenv --python=/usr/bin/python3 .venv```
 * activate the virutal env ```$ source .venv/bin/activate```
