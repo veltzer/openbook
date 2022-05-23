@@ -31,7 +31,7 @@ ${config.project.description_long}
 % endif
 chat with me at [![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/veltzer/mark.veltzer)
 
-% if os.path.isfile("../snipplets/main.md.mako"):
+% if os.path.isfile("snipplets/main.md.mako"):
 <%include file="../snipplets/main.md.mako" />
 % endif
 ${user.personal.fullname}, Copyright © ${pydmt.helpers.signature.get_copyright_years_long()}
