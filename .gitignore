@@ -1,20 +1,103 @@
-# generated stuff
-/out
+# generated
+/build/
+/dist/
+/target/
+/out/
+*.out
 
-# python stuff
-*.pyc
-*.pyo
-__pycache__
+# hive
+/derby.log
+/dfs/
+/metastore_db/
 
-# backup files
-*~
+# c, c++ stuff
+*.o
+*.so
+*.a
+*.dis
+/Makefile.bak
+/bin/
+/obj/
+*.o.ur-safe
+*.oo
+*.elf
+*.s
+*.d
+core.*
+lib*.so.*
+*.gch
+*.pchi
+*.gcda
 
-# node modules
-/node_modules
+# kernel stuff...
+*.ko
+*.mod
+*.mod.c
+*.mod.cmd
+.*.o.cmd
+.*.ko.cmd
+.*.o.tmp
+.tmp_versions
+Module.symvers
+modules.order
+*.objdump
+/src/kernel/.*.tmp
+.modules.*.cmd
+.Module.*.cmd
+/flags.cfg
 
-/.pydmt/
+# sphinx
+/docs/_build/
+/docs/.doctrees/environment.pickle
+
+# installations
+/external/
+/install/
+*.tar.gz
+
+# python
+__pycache__/
+*.py[oc]
+/wheel/
 /.venv/
+.coverage
+.coverage.*
+coverage.xml
+*.egg-info/
+
+# mine
+/.pydmt/
 *.stamp
 
-/docs/web/*.pdf
-.myenv.pip.errors
+# java
+*.class
+*.jar
+*.war
+*.ear
+*.jsa
+/.mtj.tmp/
+/hs_err_pid*
+
+# node modules
+/node_modules/
+
+# ppt, pdf
+/doc/odp/*.pdf
+/doc/odp/*.ppt
+
+# intel compiler pgo
+*.dyn
+*.dpi
+*.lock
+
+# dwarf dynamic debug info
+*.dwo
+
+# locks by open office
+.~lock.*
+
+# haskell
+*.hi
+
+# repositries of deb packages
+/deb/mypackage/DEBIAN/control
