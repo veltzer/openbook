@@ -11,6 +11,9 @@ website: https://veltzer.github.io/openbook
 ![build](https://github.com/veltzer/openbook/workflows/build/badge.svg)
 
 OpenBook is a standards book for Jazz players which containts hundreds of jazz standards
+
+## contact 
+
 chat with me at [![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/veltzer/mark.veltzer)
 
 What is OpenBook?
