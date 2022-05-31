@@ -12,7 +12,7 @@ website: https://veltzer.github.io/openbook
 
 OpenBook is a standards book for Jazz players which containts hundreds of jazz standards
 
-## contact 
+## contact
 
 chat with me at [![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/veltzer/mark.veltzer)
 
