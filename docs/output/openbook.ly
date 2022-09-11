@@ -257,13 +257,13 @@ endChords={}
 				\null
 				\null
 				\null
-				\fill-line { \small "Git tag: 10aa9aff27be68fe0ce3ee80a0bc6946d1a5867b" }
-				\fill-line { \small "Git describe: 10aa9af" }
-				\fill-line { \small "Git commits: 1777" }
-				\fill-line { \small "Build date: 19:34:50 15-05-2022" }
+				\fill-line { \small "Git tag: 173" }
+				\fill-line { \small "Git describe: 173-51-gc6abf6e2" }
+				\fill-line { \small "Git commits: 1792" }
+				\fill-line { \small "Build date: 13:41:23 25-07-2022" }
 				\fill-line { \small "Build user: mark" }
-				\fill-line { \small "Build host: newton" }
-				\fill-line { \small "Build kernel: Linux 5.15.0-27-lowlatency" }
+				\fill-line { \small "Build host: cantor" }
+				\fill-line { \small "Build kernel: Linux 5.15.0-41-generic" }
 				\fill-line { \small "Lilypond version: 2.22.1" }
 				\fill-line { \small "Number of tunes: 151" }
 				\null
