@@ -52,9 +52,9 @@
 	- adjusted speed for the tune.
 	- added youtube performances.
 	- added lyrics url.
+	- put the last two chords in the real book version in braces (they are part of the turn around)...
 	TODO:
 	- add the fake book version (the epdf is already there).
-	- how do I put the last two chord in the real book version in braces (they are part of the turn around)...
 % endif
 
 % if part=='ChordsReal':
@@ -88,7 +88,7 @@
 	\myMark "A"
 	\startPart
 	ees1:maj7 | bes2:m7 ees:7 | aes1:maj7 | aes2:m7 des:7 | \myEndLine
-	ees:maj7 c:m7 | f:m7 bes:7 | ees1:6 | f2:m7 bes:7 | \myEndLine
+	ees:maj7 c:m7 | f:m7 bes:7 | ees1:6 | \LPC f2:m7 \RPC bes:7 | \myEndLine
 	\endPart
 
 	\endSong

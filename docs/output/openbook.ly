@@ -258,12 +258,12 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 173" }
-				\fill-line { \small "Git describe: 173-51-gc6abf6e2" }
-				\fill-line { \small "Git commits: 1792" }
-				\fill-line { \small "Build date: 13:41:23 25-07-2022" }
+				\fill-line { \small "Git describe: 173-55-g8f74def" }
+				\fill-line { \small "Git commits: 1796" }
+				\fill-line { \small "Build date: 22:11:29 25-09-2022" }
 				\fill-line { \small "Build user: mark" }
-				\fill-line { \small "Build host: cantor" }
-				\fill-line { \small "Build kernel: Linux 5.15.0-41-generic" }
+				\fill-line { \small "Build host: newton" }
+				\fill-line { \small "Build kernel: Linux 5.15.0-48-lowlatency" }
 				\fill-line { \small "Lilypond version: 2.22.1" }
 				\fill-line { \small "Number of tunes: 151" }
 				\null
@@ -20314,7 +20314,7 @@ endChords={}
 	\myMark "A"
 	\startPart
 	ees1:maj7 | bes2:m7 ees:7 | aes1:maj7 | aes2:m7 des:7 | \myEndLine
-	ees:maj7 c:m7 | f:m7 bes:7 | ees1:6 | f2:m7 bes:7 | \myEndLine
+	ees:maj7 c:m7 | f:m7 bes:7 | ees1:6 | \LPC f2:m7 \RPC bes:7 | \myEndLine
 	\endPart
 
 	\endSong
