@@ -57,8 +57,13 @@
 	- added youtube performances.
 	- added lyrics url.
 	- put the last two chords in the real book version in braces (they are part of the turn around)...
+	- added the fake book chords.
+	- added the fake book tune.
+	- added the fake book lyrics.
+	- checked the fake book chords.
+	- checked the fake book tune.
+	- checked the fake book lyrics.
 	TODO:
-	- add the fake book version (the epdf is already there).
 % endif
 
 % if part=='ChordsReal':
@@ -169,7 +174,7 @@
 	\startPart
 	\repeat volta 2 {
 		ees1:maj7 | bes2:m7 ees:7.9- | aes1:maj7 | aes2:m7 des:9 | \myEndLine
-		ees:maj7 c:m7 | f:m7 bes:7.9- | %% add coda mark
+		ees:maj7 c:m7 | f:m7 bes:7.9- |
 	} \alternative {
 		{
 			g:7 c:7 | f:7 bes4:7 bes8:9 e:7.9+ | \myEndLineVoltaNotLast
@@ -183,7 +188,7 @@
 	\myMark "B"
 	\startPart
 	bes1:m7 | bes2:m7 ees:7.9- | aes:maj7 aes:6 | aes1:6 | \myEndLine
-	a2:m7 d:7 | c:m7 f:7 | g2:m7 c:7 | f:m7 bes4:7.9- bes8:9 e:7.9+ | \myEndLine %% ds al coda
+	a2:m7 d:7 | c:m7 f:7 | g2:m7 c:7 | f:m7 bes4:7.9- bes8:9 e:7.9+ | \myEndLine
 	\endPart
 
 	\myMark "Coda"
@@ -207,7 +212,7 @@
 	%% part "A"
 	\repeat volta 2 {
 		d2. bes8 c | des c' c c c bes g ees | c2 \tuplet 3/2 { r8 g aes c ees g } | bes bes bes aes bes4. aes8 |
-		g4~ \tuplet 3/2 { g8 aes bes } ees,4~ \tuplet 3/2 { ees8 f g } | aes8 c,4 c8 \tuplet 3/2 { d4 ees f } |
+		g4~ \tuplet 3/2 { g8 aes bes } ees,4~ \tuplet 3/2 { ees8 f g } | aes8 c,4 c8 \tuplet 3/2 { d4^\markup {To Coda \musicglyph #"scripts.coda"} ees f } |
 	} \alternative {
 		{ g1~ | g2 r4 bes8 g | }
 		{ ees1 | \tuplet 3/2 { r4 ees f } \tuplet 3/2 { g bes c } | }
@@ -215,7 +220,7 @@
 
 	%% part "B"
 	des8 des des des~ des2~ | des4 des8 ees \tuplet 3/2 { fes4 ees des } | c8 c c c~ c2 | \tuplet 3/2 { r4 ees, f aes bes c } |
-	d8 d d c d2~ | d8 d d c \tuplet 3/2 { f4 d c } | bes1~ | bes2 r4 bes8 g |
+	d8 d d c d2~ | d8 d d c \tuplet 3/2 { f4 d c } | bes1~ | bes2 r4 bes8^\markup {D.S. al Coda} g |
 
 	%% part "Coda"
 	ees1~ | ees

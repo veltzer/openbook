@@ -258,9 +258,9 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 173" }
-				\fill-line { \small "Git describe: 173-59-gc3403d8" }
-				\fill-line { \small "Git commits: 1800" }
-				\fill-line { \small "Build date: 21:35:55 26-09-2022" }
+				\fill-line { \small "Git describe: 173-60-g7336959" }
+				\fill-line { \small "Git commits: 1801" }
+				\fill-line { \small "Build date: 22:32:39 26-09-2022" }
 				\fill-line { \small "Build user: mark" }
 				\fill-line { \small "Build host: newton" }
 				\fill-line { \small "Build kernel: Linux 5.15.0-48-lowlatency" }
@@ -20213,9 +20213,11 @@ endChords={}
 
 
 
+
 \bookpart {
 
 % this causes the variables to be defined...
+
 
 
 
@@ -20302,33 +20304,33 @@ endChords={}
 	\myMark "A"
 	\startPart
 	\repeat volta 2 {
-		ees1:maj7 | bes2:m7 ees:7 | aes1:maj7 | aes2:m7 des:7 | \myEndLine
-		ees:maj7 c:m7 | f:m7 bes:7 |
+		ees1:maj7 | bes2:m7 ees:7.9- | aes1:maj7 | aes2:m7 des:9 | \myEndLine
+		ees:maj7 c:m7 | f:m7 bes:7.9- |
 	} \alternative {
 		{
-			g:m7 c:7 | f:m7 bes:7 | \myEndLineVoltaNotLast
+			g:7 c:7 | f:7 bes4:7 bes8:9 e:7.9+ | \myEndLineVoltaNotLast
 		}
 		{
-			ees1*2:6 | \myEndLineVoltaLast
+			ees2 aes4:m7 des:9 | ees2.:6 a4:dim7 | \myEndLineVoltaLast
 		}
 	}
 	\endPart
 
 	\myMark "B"
 	\startPart
-	bes1:m7 | ees:7.9- | aes1*2:maj7 | \myEndLine
-	a1:m7 | d2:7 f:7 | g2:m7.5- c:7.9- | f:m7 bes:7 | \myEndLine
+	bes1:m7 | bes2:m7 ees:7.9- | aes:maj7 aes:6 | aes1:6 | \myEndLine
+	a2:m7 d:7 | c:m7 f:7 | g2:m7 c:7 | f:m7 bes4:7.9- bes8:9 e:7.9+ | \myEndLine
 	\endPart
 
-	\myMark "A"
+	\myMark "Coda"
 	\startPart
-	ees1:maj7 | bes2:m7 ees:7 | aes1:maj7 | aes2:m7 des:7 | \myEndLine
-	ees:maj7 c:m7 | f:m7 bes:7 | ees1:6 | \LPC f2:m7 \RPC bes:7 | \myEndLine
+	ees4 ges:9 f:m7 e:maj7 | ees1:maj7 |
 	\endPart
 
 	\endSong
 	\endChords
 }
+
 
 
 
@@ -20352,28 +20354,28 @@ endChords={}
 
 {
 	\tempo "Andante" 4 = 88
-	\time 4/4
+	\time 2/2
 	\key ees \major
 
 	\partial 4 bes'8 g |
 
 %% part "A"
 	\repeat volta 2 {
-		d2. bes8 c | des c' c c c bes g ees | c2 \tuplet 3/2 { r8 g aes c ees g } | bes bes bes aes bes4 aes8 bes |
-		g4~ \tuplet 3/2 { g8 aes bes } ees,4~ \tuplet 3/2 { ees8 f g } | aes8 c,4 c8 \tuplet 3/2 { d4 ees f } |
+		d2. bes8 c | des c' c c c bes g ees | c2 \tuplet 3/2 { r8 g aes c ees g } | bes bes bes aes bes4. aes8 |
+		g4~ \tuplet 3/2 { g8 aes bes } ees,4~ \tuplet 3/2 { ees8 f g } | aes8 c,4 c8 \tuplet 3/2 { d4^\markup {To Coda \musicglyph #"scripts.coda"} ees f } |
 	} \alternative {
-		{ g1~ | g2. bes8 g | }
+		{ g1~ | g2 r4 bes8 g | }
 		{ ees1 | \tuplet 3/2 { r4 ees f } \tuplet 3/2 { g bes c } | }
 	}
 
 %% part "B"
 	des8 des des des~ des2~ | des4 des8 ees \tuplet 3/2 { fes4 ees des } | c8 c c c~ c2 | \tuplet 3/2 { r4 ees, f aes bes c } |
-	d8 d d c d2~ | d8 d d c \tuplet 3/2 { f4 d c } | bes1~ | bes2. bes8 g |
+	d8 d d c d2~ | d8 d d c \tuplet 3/2 { f4 d c } | bes1~ | bes2 r4 bes8^\markup {D.S. al Coda} g |
 
-%% part "A"
-	d2. bes8 c | des c' c c c bes g ees | c2 \tuplet 3/2 { r8 g aes c ees g } | bes bes bes aes bes4 aes8 bes |
-	g4~ \tuplet 3/2 { g8 aes bes } ees,4~ \tuplet 3/2 { ees8 f g } | aes8 c,4 c8 \tuplet 3/2 { d4 ees f } | ees1 | r |
+%% part "Coda"
+	ees1~ | ees
 }
+
 
 
  }
@@ -20392,11 +20394,12 @@ endChords={}
 	Look at me,
 	I'm as help -- les as a kit -- ten up a tree
 	and I feel like I'm cling -- ing to a cloud,
-	I ca -- n't __ un -- der -- stand, __
+	I can't __ un -- der -- stand, __
 	I get Mist -- y just hold -- ing your hand. __
 
 	Walk my
 }
+
 
 
 }
@@ -20414,7 +20417,7 @@ endChords={}
 \lyricmode {
 	Walk my way and a thou -- sand vi -- o -- lins be -- gin to play,
 	or it might be the sound of your hel -- lo,
-	th -- at mu -- sic I hear, __
+	that mu -- sic I hear, __
 	I get Mist -- y the mo -- ment you're _ _ _ near.
 
 	You can say that you're lead -- ing me on, __
@@ -20422,10 +20425,28 @@ endChords={}
 	Don't you no -- tice how hope -- less -- ly I'm lost, __
 	that's why I'm fol -- low -- ing you. __
 
+	On my love.
+}
+
+
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
+	
+
+
+
+
+
+
+
+
+
+
+\lyricmode {
 	On my own, would I wan -- der through this won -- der -- land a -- lone,
 	nev -- er know -- ing my right foot from my left,
-	my _ hat __ from my glove, __
-	I'm too Mist -- y and too much in Love.
+	my hat __ from my glove, __
+	I'm too Mist -- y and too much in
 }
 
 }
