@@ -34,6 +34,7 @@
 	attributes['idyoutuberemark3']='Oscar - amazing version'
 	attributes['idyoutube3']='aNLvaBCFHdE'
 	attributes['lyricsurl']='http://www.lyrics007.com/Frank%20Sinatra%20Lyrics/All%20Of%20Me%20Lyrics.html'
+	# lyrics were taken from the internet and adjusted to the tune
 %>
 % endif
 
@@ -103,7 +104,6 @@
 % endif
 
 % if part=='LyricsReal':
-%% this version of the lyrics is from the internet but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 
 	%% part "A"

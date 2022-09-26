@@ -86,7 +86,7 @@
 	g1:m | c:7 | f:7 | g2:m c:7 | \myEndLine
 	\endPart
 
-	%% one bar for the ending...
+	\myMark "End"
 	f1:7 | \myEndLine
 
 	\endSong

@@ -30,6 +30,7 @@
 	attributes['idyoutuberemark2']='The classic Sinatra performance with the Casablanca footage'
 	attributes['idyoutube2']='AY62QByUYJQ'
 	attributes['lyricsurl']='http://www.lyrics007.com/Frank%20Sinatra%20Lyrics/As%20Time%20Goes%20By%20Lyrics.html'
+	# lyrics were taken from the internet and adjusted for the tune
 %>
 % endif
 
@@ -124,7 +125,6 @@
 % endif
 
 % if part=='LyricsReal':
-%% This is taken from the inetnet and adjusted for this tune
 \lyricmode {
 
 	%% part "A"

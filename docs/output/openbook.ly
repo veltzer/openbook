@@ -258,9 +258,9 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 173" }
-				\fill-line { \small "Git describe: 173-55-g8f74def" }
-				\fill-line { \small "Git commits: 1796" }
-				\fill-line { \small "Build date: 22:11:29 25-09-2022" }
+				\fill-line { \small "Git describe: 173-58-g902fc6a" }
+				\fill-line { \small "Git commits: 1799" }
+				\fill-line { \small "Build date: 06:43:10 26-09-2022" }
 				\fill-line { \small "Build user: mark" }
 				\fill-line { \small "Build host: newton" }
 				\fill-line { \small "Build kernel: Linux 5.15.0-48-lowlatency" }
@@ -2432,7 +2432,6 @@ endChords={}
 
 
 
-% this version of the lyrics is from the internet but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 
 %% part "A"
@@ -3464,7 +3463,6 @@ endChords={}
 		ees | bes:7~ | bes2:7 d:dim7 | g:7 c:m7 | f:9 bes:5+7 | \myEndLine
 		\startPart
 		\endPart
-	%% Dm7b5
 
 		\myMark "A"
 		\startPart
@@ -3986,7 +3984,6 @@ endChords={}
 
 
 
-% This is taken from the inetnet and adjusted for this tune
 \lyricmode {
 
 %% part "A"
@@ -4174,7 +4171,7 @@ endChords={}
 	g1:m | c:7 | f:7 | g2:m c:7 | \myEndLine
 	\endPart
 
-%% one bar for the ending...
+	\myMark "End"
 	f1:7 | \myEndLine
 
 	\endSong

@@ -39,14 +39,8 @@ Single Paradiddle (starting with the right hand).
 <<
 	\new DrumStaff \with {
 		\remove Time_signature_engraver
-		%% you don't really need this (have yet to see this do anything useful...)
-		%%\remove Forbid_line_break_engraver
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
-		%% the next line killed lilypond 2.12.3
-		%%\override StaffSymbol.line-count = #0
-		%%\override Stem.Y-extent = ##f
-		%%\override Stem.transparent = ##t
 	} <<
 		\set Score.timing = ##f
 		\new DrumVoice {
@@ -75,14 +69,8 @@ Double Paradiddle (starting with the right hand)
 <<
 	\new DrumStaff \with {
 		\remove Time_signature_engraver
-		%% you don't really need this (have yet to see this do anything useful...)
-		%%\remove Forbid_line_break_engraver
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
-		%% the next line killed lilypond 2.12.3
-		%%\override StaffSymbol.line-count = #0
-		%%\override Stem.Y-extent = ##f
-		%%\override Stem.transparent = ##t
 	} <<
 		\set Score.timing = ##f
 		\new DrumVoice {
@@ -111,14 +99,8 @@ Triple Paradiddle (starting with the right hand).
 <<
 	\new DrumStaff \with {
 		\remove Time_signature_engraver
-		%% you don't really need this (have yet to see this do anything useful...)
-		%%\remove Forbid_line_break_engraver
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
-		%% the next line killed lilypond 2.12.3
-		%%\override StaffSymbol.line-count = #0
-		%%\override Stem.Y-extent = ##f
-		%%\override Stem.transparent = ##t
 	} <<
 		\set Score.timing = ##f
 		\new DrumVoice {
@@ -147,14 +129,8 @@ Paradiddle-Diddle (starting with the right hand).
 <<
 	\new DrumStaff \with {
 		\remove Time_signature_engraver
-		%% you don't really need this (have yet to see this do anything useful...)
-		%%\remove Forbid_line_break_engraver
 		\remove Bar_engraver
 		drumStyleTable = #percussion-style
-		%% the next line killed lilypond 2.12.3
-		%%\override StaffSymbol.line-count = #0
-		%%\override Stem.Y-extent = ##f
-		%%\override Stem.transparent = ##t
 	} <<
 		\set Score.timing = ##f
 		\new DrumVoice {

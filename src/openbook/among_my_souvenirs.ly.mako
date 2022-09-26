@@ -55,7 +55,6 @@
 		ees | bes:7~ | bes2:7 d:dim7 | g:7 c:m7 | f:9 bes:5+7 | \myEndLine
 		\startPart
 		\endPart
-		%% Dm7b5
 
 		\myMark "A"
 		\startPart
