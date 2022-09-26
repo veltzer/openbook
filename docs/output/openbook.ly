@@ -258,9 +258,9 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 173" }
-				\fill-line { \small "Git describe: 173-58-g902fc6a" }
-				\fill-line { \small "Git commits: 1799" }
-				\fill-line { \small "Build date: 06:43:10 26-09-2022" }
+				\fill-line { \small "Git describe: 173-59-gc3403d8" }
+				\fill-line { \small "Git commits: 1800" }
+				\fill-line { \small "Build date: 21:35:55 26-09-2022" }
 				\fill-line { \small "Build user: mark" }
 				\fill-line { \small "Build host: newton" }
 				\fill-line { \small "Build kernel: Linux 5.15.0-48-lowlatency" }
@@ -20209,9 +20209,17 @@ endChords={}
 
 
 
+
+
+
+
 \bookpart {
 
 % this causes the variables to be defined...
+
+
+
+
 
 
 
@@ -20255,7 +20263,7 @@ endChords={}
 				"Music by Errol Garner"
 			}
 			\fill-line {
-				"Ballad"
+				"Slowly, with a smooth swing"
 				""
 			}
 		}
@@ -20279,6 +20287,10 @@ endChords={}
 	}
 % # transpose with 'inline' is true!
 	\transpose c c {
+
+
+
+
 
 
 \chordmode {
@@ -20334,6 +20346,10 @@ endChords={}
 
 
 
+
+
+
+
 {
 	\tempo "Andante" 4 = 88
 	\time 4/4
@@ -20368,7 +20384,10 @@ endChords={}
 
 
 
-% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
+
+
+
+
 \lyricmode {
 	Look at me,
 	I'm as help -- les as a kit -- ten up a tree
@@ -20383,6 +20402,10 @@ endChords={}
 }
 \new Lyrics="Lyrics" \lyricsto "Voice" {
 	
+
+
+
+
 
 
 
