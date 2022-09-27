@@ -64,6 +64,7 @@
 	- checked the fake book tune.
 	- checked the fake book lyrics.
 	TODO:
+	- add better staff spacing and layout in the fake book version (look at how the fake book version is layed out)
 % endif
 
 % if part=='ChordsReal':
