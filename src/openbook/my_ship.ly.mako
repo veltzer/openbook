@@ -136,7 +136,6 @@
 % endif
 
 % if part=='LyricsFake':
-%% this is from the fake book
 \lyricmode {
 
 	%% part "A"
