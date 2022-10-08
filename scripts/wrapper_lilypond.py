@@ -83,7 +83,7 @@ class LilypondLogLevels(ExtendedEnum):
     DEBUG = 6
 
 
-class ConfigAll(Config):
+class ConfigAll(Config):  # pylint: disable=too-few-public-methods
     """
     All parameters for the run
     """
@@ -121,11 +121,6 @@ class ConfigAll(Config):
     ly = ParamCreator.create_existing_file(help_string="lilypond input")
 
     output = ParamCreator.create_str(help_string="folder for outputs")
-
-    # def debug(self):
-    #     """ debug this class """
-    # def print(self):
-    #     """ print this class """
 
 
 @register_endpoint(
