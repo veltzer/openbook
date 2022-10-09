@@ -9,4 +9,5 @@ install_requires = [
 ]
 make_requires = [
     "pymakehelper",
+    "pylint",
 ]

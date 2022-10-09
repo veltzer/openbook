@@ -29,6 +29,8 @@ DO_OGG:=0
 DO_BOOKS_PDF:=1
 # do you want to validate html?
 DO_CHECKHTML:=0
+# do you want to lynt scripts?
+DO_LINT:=1
 # which books should we do?
 NAMES:=openbook israeli drumming rockbook guitar_album
 
@@ -96,10 +98,12 @@ Q=@
 #.SILENT:
 endif # DO_MKDBG
 
-# this find the sources without git...
+# this finds the sources without git. We dont want to use git since in some integration
+# environments we don't have git (e.g. github workflows)
 SOURCES_ALL:=$(subst ./,,$(shell find src -type f -and -name "*.mako"))
 FILES_MAKO:=$(filter %.ly.mako,$(SOURCES_ALL))
 FILES_MAKO_BASE:=$(basename $(basename $(FILES_MAKO)))
+SCRIPTS:=$(shell find scripts -type f -and -name "*.py")
 
 FILES_JAZZ:=$(subst ./,,$(shell find src/openbook -type f -and -name "*.mako"))
 
@@ -154,6 +158,10 @@ ifeq ($(DO_CHECKHTML),1)
 ALL+=$(HTMLCHECK)
 endif # DO_CHECKHTML
 
+ifeq ($(DO_LINT),1)
+ALL+=out/lint.stamp
+endif # DO_LINT
+
 #########
 # rules #
 #########
@@ -193,6 +201,7 @@ debug:
 	$(info OUT_PS is $(OUT_PS))
 	$(info OUT_PDF is $(OUT_PDF))
 	$(info DO_MKDBG is $(DO_MKDBG))
+	$(info SCRIPTS is $(SCRIPTS))
 
 .PHONY: todo
 todo:
@@ -356,5 +365,10 @@ $(HTMLCHECK): $(SOURCES_HTML)
 	$(info doing [$@])
 	$(Q)tidy -errors -q -utf8 $(SOURCES_HTML)
 	$(Q)node_modules/htmlhint/bin/htmlhint $(SOURCES_HTML) > /dev/null
+	$(Q)mkdir -p $(dir $@)
+	$(Q)touch $(HTMLCHECK)
+out/lint.stamp: $(SCRIPTS)
+	$(info doing [$@])
+	$(Q)pymakehelper only_print_on_error python -m pylint --reports=n --score=n $(SCRIPTS)
 	$(Q)mkdir -p $(dir $@)
 	$(Q)touch $(HTMLCHECK)
