@@ -258,14 +258,14 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 173" }
-				\fill-line { \small "Git describe: 173-51-gc6abf6e2" }
-				\fill-line { \small "Git commits: 1792" }
-				\fill-line { \small "Build date: 13:41:48 25-07-2022" }
+				\fill-line { \small "Git describe: 173-66-g0cf659f" }
+				\fill-line { \small "Git commits: 1807" }
+				\fill-line { \small "Build date: 06:31:41 09-10-2022" }
 				\fill-line { \small "Build user: mark" }
-				\fill-line { \small "Build host: cantor" }
-				\fill-line { \small "Build kernel: Linux 5.15.0-41-generic" }
+				\fill-line { \small "Build host: newton" }
+				\fill-line { \small "Build kernel: Linux 5.15.0-48-lowlatency" }
 				\fill-line { \small "Lilypond version: 2.22.1" }
-				\fill-line { \small "Number of tunes: 9" }
+				\fill-line { \small "Number of tunes: 11" }
 				\null
 				\null
 				\null
@@ -394,11 +394,7 @@ endChords={}
 		}
 		
 	\new ChordNames="Chords"
-%% this adds a bar engraver which does not always come with chords
-%% I didn'f find a way to put this with the chords themselves...
 	\with {
-	%% for lilypond 2.12
-	%%\override BarLine #'bar-size = #4
 		\override BarLine #'bar-extent = #'(-2 . 2)
 		\consists "Bar_engraver"
 	}
@@ -579,11 +575,7 @@ endChords={}
 		}
 		
 	\new ChordNames="Chords"
-%% this adds a bar engraver which does not always come with chords
-%% I didn'f find a way to put this with the chords themselves...
 	\with {
-	%% for lilypond 2.12
-	%%\override BarLine #'bar-size = #4
 		\override BarLine #'bar-extent = #'(-2 . 2)
 		\consists "Bar_engraver"
 	}
@@ -790,11 +782,7 @@ endChords={}
 		\new ChordNames="Chords"
 		
 	\new ChordNames="Chords"
-%% this adds a bar engraver which does not always come with chords
-%% I didn'f find a way to put this with the chords themselves...
 	\with {
-	%% for lilypond 2.12
-	%%\override BarLine #'bar-size = #4
 		\override BarLine #'bar-extent = #'(-2 . 2)
 		\consists "Bar_engraver"
 	}
@@ -1012,11 +1000,7 @@ endChords={}
 		}
 		
 	\new ChordNames="Chords"
-%% this adds a bar engraver which does not always come with chords
-%% I didn'f find a way to put this with the chords themselves...
 	\with {
-	%% for lilypond 2.12
-	%%\override BarLine #'bar-size = #4
 		\override BarLine #'bar-extent = #'(-2 . 2)
 		\consists "Bar_engraver"
 	}
@@ -1214,11 +1198,7 @@ endChords={}
 		}
 		
 	\new ChordNames="Chords"
-%% this adds a bar engraver which does not always come with chords
-%% I didn'f find a way to put this with the chords themselves...
 	\with {
-	%% for lilypond 2.12
-	%%\override BarLine #'bar-size = #4
 		\override BarLine #'bar-extent = #'(-2 . 2)
 		\consists "Bar_engraver"
 	}
@@ -1363,6 +1343,169 @@ endChords={}
 
 
 
+\tocItem \markup "Have I told you lately that I love you"
+
+
+
+
+
+% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
+\markup {
+	\column {
+		\override #'(baseline-skip . 3.5)
+		\column {
+			\huge \larger \bold
+			\fill-line { \larger "Have I told you lately that I love you" }
+			\fill-line {
+				""
+				""
+			}
+			\fill-line {
+				"Med. Ballad"
+				""
+			}
+		}
+	}
+}
+\noPageBreak
+
+
+% include the preparatory stuff, if there is any
+
+% calculate the vars
+
+
+
+% score for printing
+\score {
+	<<
+\new ChordNames="Chords"
+	\with {
+		\remove "Bar_engraver"
+	}
+% # transpose with 'inline' is true!
+	\transpose c c {
+
+
+
+
+\chordmode {
+	\startChords
+
+	\startSong
+
+	\repeat volta 2 {
+		f2:maj7 a:m7 | bes:maj7 c:7 |
+	}
+	bes1:maj7 | a:m7 | g2:m7 c:7 | f:maj7 r4 c:7 |
+
+	\endSong
+
+	\endChords
+}
+
+
+}
+% this thing will only engrave voltas. This is required to put the volta under the chords.
+% No great harm will happen if you don't put it, only the voltas will be above the chords.
+%\new Staff \with {
+%	\consists "Volta_engraver"
+%}
+\new Staff="Melody" {
+\new Voice="Voice"
+% # transpose with 'inline' is true!
+	\transpose c c { \relative c'
+	
+
+
+
+
+
+{
+	a
+}
+
+ }
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
+	
+
+
+
+
+
+
+\lyricmode {
+	Have I told you lately that I love you.
+	Have I told you that there's no one but you.
+	You give me so much gladness.
+	Take away all the sadness.
+	Take my troubles that's what you do.
+}
+
+}
+	>>
+	\layout {
+	}
+}
+
+
+\noPageBreak
+\markup \column {
+%% just a little space
+	\null
+	\fill-line {
+		\smaller \smaller { "-- help me fill it out this copyright notice --" }
+	}
+	\fill-line {
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
+	}
+}
+
+
+
+}
+
+
+% include anything the user wants before the bookpart starts
+
+
+
+
+
+
+
+
+
+\bookpart {
+
+% this causes the variables to be defined...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% now play with the variables that depend on language
+
+
+
+% calculate the tag line
+
+
+% calculate the typesetby
+
+
+
+
 \tocItem \markup "I Am Beautiful / Linda Perry"
 
 
@@ -1442,11 +1585,7 @@ endChords={}
 		}
 		
 	\new ChordNames="Chords"
-%% this adds a bar engraver which does not always come with chords
-%% I didn'f find a way to put this with the chords themselves...
 	\with {
-	%% for lilypond 2.12
-	%%\override BarLine #'bar-size = #4
 		\override BarLine #'bar-extent = #'(-2 . 2)
 		\consists "Bar_engraver"
 	}
@@ -1702,11 +1841,7 @@ endChords={}
 		}
 		
 	\new ChordNames="Chords"
-%% this adds a bar engraver which does not always come with chords
-%% I didn'f find a way to put this with the chords themselves...
 	\with {
-	%% for lilypond 2.12
-	%%\override BarLine #'bar-size = #4
 		\override BarLine #'bar-extent = #'(-2 . 2)
 		\consists "Bar_engraver"
 	}
@@ -2055,6 +2190,239 @@ endChords={}
 
 
 
+\tocItem \markup "She Loves You / John Lennon, Paul McCartney"
+
+
+
+
+
+% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
+\markup {
+	\column {
+		\override #'(baseline-skip . 3.5)
+		\column {
+			\huge \larger \bold
+			\fill-line { \larger "She Loves You" }
+			\fill-line {
+				""
+				"Lyrics and Music by John Lennon, Paul McCartney"
+			}
+			\fill-line {
+				"Moderato"
+				""
+			}
+		}
+	}
+}
+\noPageBreak
+
+
+% include the preparatory stuff, if there is any
+
+% calculate the vars
+
+
+
+% score for printing
+\score {
+	<<
+\new ChordNames="Chords"
+	\with {
+		\remove "Bar_engraver"
+	}
+% # transpose with 'inline' is true!
+	\transpose c c {
+
+
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\partial 8 s8 |
+
+	\repeat volta 3 {
+
+		\myMark "A"
+		\startPart
+		f1 | d:m | a:m | c:7 | \myEndLine
+		f | d:m | a:m | c:7 | \myEndLine
+		f | f | d:m | d:m | \myEndLine
+		bes:m6 | bes:m6 | c:7 | c:7 | \myEndLine
+		\endPart
+
+		\myMark "B"
+		\startPart
+		d:m | d:m | g:7 | g:7 | \myEndLine
+		bes:m6 | c2:7.5+ c:7 | f1 | f | \myEndLine
+		\endPart
+	}
+
+	\endSong
+	\endChords
+}
+
+
+}
+% this thing will only engrave voltas. This is required to put the volta under the chords.
+% No great harm will happen if you don't put it, only the voltas will be above the chords.
+%\new Staff \with {
+%	\consists "Volta_engraver"
+%}
+\new Staff="Melody" {
+\new Voice="Voice"
+% # transpose with 'inline' is true!
+	\transpose c c { \relative c'
+	
+
+
+
+
+
+{
+	\tempo "Moderato" 4 = 112
+	\time 4/4
+	\key f \major
+
+	\partial 8 c'8-2 |
+	f4-1 g a bes8 <f a>~ | <f a>2. a8-3 a | << { c4-5 a a4. g8 } \\ { e1-1 } >> | <e a>8 c' <e, a>2 r8 c' |
+	f,4-1 g a bes8 <f a>~ | <f a>2. a8 a | << { c4 a a4. g8 } \\ { e1 } >> | <e a>8 c' <e, a>4 r8 c'-2 c c |
+	d4-3 f2 f,8-3 g |
+}
+
+ }
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
+	
+
+
+
+
+
+
+\lyricmode {
+	You think you've lost your love, __
+	Well, I saw her yesterday.
+	It's you she's thinking of
+	And she told me what to say.
+
+	She loves you, yeah, yeah, yeah
+	She loves you, yeah, yeah, yeah
+	She loves you, yeah, yeah, yeah, yeah
+
+	She says she loves you
+	And you know that can't be bad.
+	Yes, she loves you
+	And you know you should be glad.
+
+	She said you hurt her so
+	She almost lost her mind.
+	But now she said she knows
+	You're not the hurting kind.
+
+	She says she loves you
+	And you know that can't be bad.
+	Yes, she loves you
+	And you know you should be glad. Ooh!
+
+	She loves you, yeah, yeah, yeah
+	She loves you, yeah, yeah, yeah
+	And with a love like that
+	You know you should be glad.
+
+	You know it's up to you,
+	I think it's only fair,
+	Pride can hurt you, too,
+	Apologize to her
+
+	Because she loves you
+	And you know that can't be bad.
+	Yes, she loves you
+	And you know you should be glad. Ooh!
+
+	She loves you, yeah, yeah, yeah
+	She loves you, yeah, yeah, yeah
+
+	with a love like that
+	You know you should
+	Be Glad!
+
+	with a love like that
+	You know you should
+	Be Glad!
+
+	With a love like that
+	You know you should
+	be glad!
+
+	Yeah, yeah, yeah.
+	Yeah, yeah, yeah Ye-ah.
+}
+
+}
+	>>
+	\layout {
+	}
+}
+
+
+\noPageBreak
+\markup \column {
+%% just a little space
+	\null
+	\fill-line {
+		\smaller \smaller { "-- help me fill it out this copyright notice --" }
+	}
+	\fill-line {
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
+	}
+}
+
+
+
+}
+
+
+% include anything the user wants before the bookpart starts
+
+
+
+
+
+
+
+
+
+\bookpart {
+
+% this causes the variables to be defined...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% now play with the variables that depend on language
+
+
+
+% calculate the tag line
+
+
+% calculate the typesetby
+
+
+
+
 \tocItem \markup "Talkin' Bout A Revolution / Tracy Chapman"
 
 
@@ -2110,11 +2478,7 @@ endChords={}
 		}
 		
 	\new ChordNames="Chords"
-%% this adds a bar engraver which does not always come with chords
-%% I didn'f find a way to put this with the chords themselves...
 	\with {
-	%% for lilypond 2.12
-	%%\override BarLine #'bar-size = #4
 		\override BarLine #'bar-extent = #'(-2 . 2)
 		\consists "Bar_engraver"
 	}
