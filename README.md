@@ -188,9 +188,10 @@ Look in the `doc` subfolder of the source code...
 Just edit `include/common.ly.mako` and change TONALITY="c" to "bes" or "ees" before compiling.
 
 ## How do I download the external pdfs to compare them to this project?
-Just edit `include/common.ly.mako` and change TONALITY="c" to "bes" or "ees" before compiling.
+Just run:
 ``` sh
 make real_books_archive
 ```
+and look at the resulting `real_books_archive` folder that is created.
 
 Mark Veltzer, Copyright © 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022
