@@ -4,8 +4,8 @@
 	from scripts import attr
 	version=attr.Version()
 	version['doOwn']=True
-	attributes.addVersion('Own', version)
-	attributes.setDefaultVersionName('Own')
+	attributes.add_version('Own', version)
+	attributes.set_default_version_name('Own')
 
 	attributes['title']='Desafinado'
 	attributes['style']='Jazz'

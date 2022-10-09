@@ -8,8 +8,8 @@
 	version['doLyrics']=True
 	version['doLyricsmore']=True
 	version['doExtra']=True
-	attributes.addVersion('My', version)
-	attributes.setDefaultVersionName('My')
+	attributes.add_version('My', version)
+	attributes.set_default_version_name('My')
 
 	attributes['heb']=True
 

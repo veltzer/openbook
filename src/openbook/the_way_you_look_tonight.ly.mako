@@ -7,8 +7,8 @@
 	version['doVoice']=True
 	version['doLyrics']=True
 	version['doLyricsmore']=True
-	attributes.addVersion('Newreal', version)
-	attributes.setDefaultVersionName('Newreal')
+	attributes.add_version('Newreal', version)
+	attributes.set_default_version_name('Newreal')
 
 	attributes['title']='The Way You Look Tonight'
 	attributes['style']='Jazz'

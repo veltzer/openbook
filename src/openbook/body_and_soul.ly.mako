@@ -8,14 +8,14 @@
 	version['doLyrics']=True
 	version['doLyricsmore']=True
 	version['doLyricsmoremore']=True
-	attributes.addVersion('Fake', version)
+	attributes.add_version('Fake', version)
 	version=attr.Version()
 	version['doChords']=True
 	version['doVoice']=True
 	version['doLyrics']=True
 	version['doLyricsmore']=True
-	attributes.addVersion('Real', version)
-	attributes.setDefaultVersionName('Fake')
+	attributes.add_version('Real', version)
+	attributes.set_default_version_name('Fake')
 
 	attributes['title']='Body And Soul'
 	attributes['style']='Jazz'

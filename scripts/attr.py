@@ -177,7 +177,7 @@ class Attributes(dict):
         """ code to run after initialization """
         self.pos = -1
         self.versions = {}
-        self.defaultVersionName = None
+        self.default_version_name = None
 
     def __init__(self):
         """ constructor """
@@ -185,7 +185,7 @@ class Attributes(dict):
         self.post_init()
         self.pos = None
         self.versions = None
-        self.defaultVersionName = None
+        self.default_version_name = None
 
     def __setitem__(self, key, val):
         newpos = order.index(key)
@@ -240,25 +240,25 @@ class Attributes(dict):
                 pg_to += books_offsets[book]
             cut_pdf(full, pg_from, pg_to, p_output)
 
-    def addVersion(self, name, version):
+    def add_version(self, name, version):
         """ add another version of a tune """
         self.versions[name] = version
 
-    def setDefaultVersionName(self, name):
+    def set_default_version_name(self, name):
         """ set the default version to be used for a tune """
-        self.defaultVersionName = name
+        self.default_version_name = name
 
-    def getDefaultVersionName(self):
+    def get_default_version_name(self):
         """ get the default version to be used for a tune """
-        return self.defaultVersionName
+        return self.default_version_name
 
-    def getDefaultVersion(self):
+    def get_default_version(self):
         """ get the default version object (not name) """
-        return self.versions[self.defaultVersionName]
+        return self.versions[self.default_version_name]
 
-    def getWorkingVersion(self):
+    def get_working_version(self):
         """ get the version which is now the default """
-        return self.versions[self.defaultVersionName]
+        return self.versions[self.default_version_name]
 
 
 def cut_pdf(source_pdf, pg_from, pg_to, output_pdf):

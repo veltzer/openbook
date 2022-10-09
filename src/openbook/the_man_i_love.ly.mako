@@ -6,13 +6,13 @@
 	version['doChords']=True
 	version['doVoice']=True
 	version['doLyrics']=True
-	attributes.addVersion('Real', version)
-	attributes.setDefaultVersionName('Real')
+	attributes.add_version('Real', version)
+	attributes.set_default_version_name('Real')
 	version=attr.Version()
 	version['doChords']=True
 	version['doVoice']=True
 	version['doLyrics']=True
-	attributes.addVersion('Galit', version)
+	attributes.add_version('Galit', version)
 
 	attributes['title']='The Man I Love'
 	attributes['style']='Jazz'

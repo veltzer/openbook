@@ -7,14 +7,14 @@
 	version['doVoice']=True
 	version['doLyrics']=True
 	version['doLyricsmore']=True
-	attributes.addVersion('Ccb', version)
-	attributes.setDefaultVersionName('Ccb')
+	attributes.add_version('Ccb', version)
+	attributes.set_default_version_name('Ccb')
 	version=attr.Version()
 	version['doChords']=True
 	version['doVoice']=True
 	version['doLyrics']=True
 	version['doLyricsmore']=True
-	attributes.addVersion('Wikifonia', version)
+	attributes.add_version('Wikifonia', version)
 
 	# from the ccb book
 	attributes['title']='Somewhere, Over The Rainbow'

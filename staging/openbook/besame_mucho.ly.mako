@@ -7,8 +7,8 @@
 	version['doVoice']=True
 	version['doLyrics']=True
 	version['doLyricsmore']=True
-	attributes.addVersion('Latin', version)
-	attributes.setDefaultVersionName('Latin')
+	attributes.add_version('Latin', version)
+	attributes.set_default_version_name('Latin')
 
 	attributes['title']='Bésame Mucho'
 	# this if the the latin real book

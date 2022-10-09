@@ -5,12 +5,12 @@
 	version=attr.Version()
 	version['doChords']=True
 	version['doVoice']=True
-	attributes.addVersion('Real', version)
+	attributes.add_version('Real', version)
 	version=attr.Version()
 	version['doChords']=True
 	version['doVoice']=True
-	attributes.addVersion('Fake', version)
-	attributes.setDefaultVersionName('Fake')
+	attributes.add_version('Fake', version)
+	attributes.set_default_version_name('Fake')
 
 	attributes['title']='Afternoon in Paris'
 	attributes['style']='Jazz'

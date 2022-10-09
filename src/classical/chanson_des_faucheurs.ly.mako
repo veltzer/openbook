@@ -4,8 +4,8 @@
 	from scripts import attr
 	version=attr.Version()
 	version['doVoice']=True
-	attributes.addVersion('Unknown', version)
-	attributes.setDefaultVersionName('Unknown')
+	attributes.add_version('Unknown', version)
+	attributes.set_default_version_name('Unknown')
 
 	attributes['title']='Chanson des faucheurs'
 	attributes['style']='Classical'

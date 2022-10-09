@@ -6,13 +6,13 @@
 	version['doChords']=True
 	version['doVoice']=True
 	version['doLyrics']=True
-	attributes.addVersion('Fake', version)
+	attributes.add_version('Fake', version)
 	version=attr.Version()
 	version['doChords']=True
 	version['doVoice']=True
 	version['doLyrics']=True
-	attributes.addVersion('Real', version)
-	attributes.setDefaultVersionName('Fake')
+	attributes.add_version('Real', version)
+	attributes.set_default_version_name('Fake')
 
 	# from the jazz fake book
 	attributes['title']='All The Things You Are'

@@ -7,8 +7,8 @@
 	version['doVoice']=True
 	version['doLyrics']=True
 	version['doLyricsmore']=True
-	attributes.addVersion('Real', version)
-	attributes.setDefaultVersionName('Real')
+	attributes.add_version('Real', version)
+	attributes.set_default_version_name('Real')
 
 	attributes['title']='If You Could See Me Now'
 	attributes['style']='Jazz'

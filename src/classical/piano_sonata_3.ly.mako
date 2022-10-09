@@ -4,8 +4,8 @@
 	from scripts import attr
 	version=attr.Version()
 	version['doVoice']=True
-	attributes.addVersion('Epdf0', version)
-	attributes.setDefaultVersionName('Epdf0')
+	attributes.add_version('Epdf0', version)
+	attributes.set_default_version_name('Epdf0')
 
 	attributes['title']='Sonata III'
 	attributes['style']='Classical'

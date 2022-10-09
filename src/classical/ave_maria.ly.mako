@@ -6,8 +6,8 @@
 	version['doChords']=True
 	version['doVoice']=True
 	version['doLyrics']=True
-	attributes.addVersion('My', version)
-	attributes.setDefaultVersionName('My')
+	attributes.add_version('My', version)
+	attributes.set_default_version_name('My')
 
 	attributes['title']='Ave Maria'
 	attributes['style']='Classical'

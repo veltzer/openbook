@@ -437,7 +437,7 @@ ${self.clearVars()}
 % endif
 
 <%doc>
-% if attributes.getWorkingVersion()['doGuitar']:
+% if attributes.get_working_version()['doGuitar']:
 %%\include "predefined-guitar-fretboards.ly"
 % endif
 </%doc>
@@ -534,39 +534,39 @@ ${self.clearVars()}
 }
 \noPageBreak
 
-% if attributes.getWorkingVersion()['doOwn']==False:
+% if attributes.get_working_version()['doOwn']==False:
 
 %% include the preparatory stuff, if there is any
-% if attributes.getWorkingVersion()['doPrep']:
+% if attributes.get_working_version()['doPrep']:
 <%include file="/${file}" args="part='Prep'"/>
 % endif
 
 %% calculate the vars
 <%
-	Chords='Chords'+attributes.getDefaultVersionName()
-	Voice='Voice'+attributes.getDefaultVersionName()
-	Lyrics='Lyrics'+attributes.getDefaultVersionName()
-	Lyricsmore='Lyricsmore'+attributes.getDefaultVersionName()
-	Lyricsmoremore='Lyricsmoremore'+attributes.getDefaultVersionName()
+	Chords='Chords'+attributes.get_default_version_name()
+	Voice='Voice'+attributes.get_default_version_name()
+	Lyrics='Lyrics'+attributes.get_default_version_name()
+	Lyricsmore='Lyricsmore'+attributes.get_default_version_name()
+	Lyricsmoremore='Lyricsmoremore'+attributes.get_default_version_name()
 %>
 
 % if gattr['inline']==False:
 %% lets emit the blocks -- use specified pitch
-% if attributes.getWorkingVersion()['doChords']:
+% if attributes.get_working_version()['doChords']:
 Chords=\transpose c ${TONALITYTransposePitch} {<%include file="/${file}" args="part=Chords"/>}
 % endif
-% if attributes.getWorkingVersion()['doVoice']:
+% if attributes.get_working_version()['doVoice']:
 Voice=\transpose c ${TONALITYTransposePitch} {\relative c'
 	<%include file="/${file}" args="part=Voice"/>
 }
 % endif
-% if attributes.getWorkingVersion()['doLyrics']:
+% if attributes.get_working_version()['doLyrics']:
 Lyrics=<%include file="/${file}" args="part=Lyrics"/>
 % endif
-% if attributes.getWorkingVersion()['doLyricsmore']:
+% if attributes.get_working_version()['doLyricsmore']:
 Lyricsmore=<%include file="/${file}" args="part=Lyricsmore"/>
 % endif
-% if attributes.getWorkingVersion()['doLyricsmoremore']:
+% if attributes.get_working_version()['doLyricsmoremore']:
 Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 % endif
 % endif
@@ -574,9 +574,9 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 %% score for printing
 \score {
 	<<
-% if attributes.getWorkingVersion()['doChords']:
+% if attributes.get_working_version()['doChords']:
 \new ChordNames="Chords"
-% if attributes.getWorkingVersion()['doChordBars']:
+% if attributes.get_working_version()['doChordBars']:
 	%% this adds a bar engraver which does not always come with chords
 	%% I didn'f find a way to put this with the chords themselves...
 	\with {
@@ -603,7 +603,7 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 %%\new Staff \with {
 %%	\consists "Volta_engraver"
 %%}
-% if attributes.getWorkingVersion()['doVoice']:
+% if attributes.get_working_version()['doVoice']:
 \new Staff="Melody" {
 \new Voice="Voice"
 %% # transpose with 'inline' is true!
@@ -616,7 +616,7 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 % endif
 }
 % endif
-% if attributes.getWorkingVersion()['doLyrics']:
+% if attributes.get_working_version()['doLyrics']:
 \new Lyrics="Lyrics" \lyricsto "Voice" {
 % if gattr['inline']:
 	<%include file="/${file}" args="part=Lyrics"/>
@@ -626,7 +626,7 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 % endif
 }
 % endif
-% if attributes.getWorkingVersion()['doLyricsmore']:
+% if attributes.get_working_version()['doLyricsmore']:
 \new Lyrics="Lyrics" \lyricsto "Voice" {
 % if gattr['inline']:
 	<%include file="/${file}" args="part=Lyricsmore"/>
@@ -636,7 +636,7 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 % endif
 }
 % endif
-% if attributes.getWorkingVersion()['doLyricsmoremore']:
+% if attributes.get_working_version()['doLyricsmoremore']:
 \new Lyrics="Lyrics" \lyricsto "Voice" {
 % if gattr['inline']:
 	<%include file="/${file}" args="part=Lyricsmoremore"/>
@@ -655,7 +655,7 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 \score {
 	\unfoldRepeats
 	<<
-% if attributes.getWorkingVersion()['doChords']:
+% if attributes.get_working_version()['doChords']:
 \new ChordNames="Chords"
 % if gattr['inline']:
 	<%include file="/${file}" args="part=Chords"/>
@@ -664,7 +664,7 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 	\Chords
 % endif
 % endif
-% if attributes.getWorkingVersion()['doVoice']:
+% if attributes.get_working_version()['doVoice']:
 \new Staff="Melody" {
 \new Voice="Voice"
 % if gattr['inline']:
@@ -677,7 +677,7 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 }
 % endif
 % if gattr['lyricsInMidi']:
-% if attributes.getWorkingVersion()['doLyrics']:
+% if attributes.get_working_version()['doLyrics']:
 \new Lyrics="Lyrics" \lyricsto "Voice" {
 % if gattr['inline']:
 	<%include file="/${file}" args="part=Lyrics"/>
@@ -687,7 +687,7 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 % endif
 }
 % endif
-% if attributes.getWorkingVersion()['doLyricsmore']:
+% if attributes.get_working_version()['doLyricsmore']:
 \new Lyrics="Lyrics" \lyricsto "Voice" {
 % if gattr['inline']:
 	<%include file="/${file}" args="part=Lyricsmore"/>
@@ -697,7 +697,7 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 % endif
 }
 % endif
-% if attributes.getWorkingVersion()['doLyricsmoremore']:
+% if attributes.get_working_version()['doLyricsmoremore']:
 \new Lyrics="Lyrics" \lyricsto "Voice" {
 % if gattr['inline']:
 	<%include file="/${file}" args="part=Lyricsmoremore"/>
@@ -715,10 +715,10 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 % endif
 % endif
 
-% if attributes.getWorkingVersion()['doOwn']:
+% if attributes.get_working_version()['doOwn']:
 <%include file="/${file}" args="part='Own'"/>
 % endif
-% if attributes.getWorkingVersion()['doExtra']:
+% if attributes.get_working_version()['doExtra']:
 <%include file="/${file}" args="part='Extra'"/>
 % endif
 

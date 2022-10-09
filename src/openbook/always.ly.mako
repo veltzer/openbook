@@ -6,8 +6,8 @@
 	version['doChords']=True
 	version['doVoice']=True
 	version['doLyrics']=True
-	attributes.addVersion('TBK', version)
-	attributes.setDefaultVersionName('TBK')
+	attributes.add_version('TBK', version)
+	attributes.set_default_version_name('TBK')
 
 	attributes['title']='Always'
 	attributes['style']='Jazz'

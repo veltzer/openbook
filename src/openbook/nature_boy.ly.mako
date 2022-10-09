@@ -6,8 +6,8 @@
 	version['doChords']=True
 	version['doVoice']=True
 	version['doLyrics']=True
-	attributes.addVersion('Newreal', version)
-	attributes.setDefaultVersionName('Newreal')
+	attributes.add_version('Newreal', version)
+	attributes.set_default_version_name('Newreal')
 
 	attributes['title']='Nature Boy'
 	attributes['style']='Jazz'

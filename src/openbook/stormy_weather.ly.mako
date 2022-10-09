@@ -7,8 +7,8 @@
 	version['doVoice']=True
 	version['doLyrics']=True
 	version['doLyricsmore']=True
-	attributes.addVersion('Fake', version)
-	attributes.setDefaultVersionName('Fake')
+	attributes.add_version('Fake', version)
+	attributes.set_default_version_name('Fake')
 
 	# from the fake book
 	attributes['title']='Stormy Weather'

@@ -8,8 +8,8 @@
 	version['doLyrics']=True
 	version['doLyricsmore']=True
 	version['doLyricsmoremore']=True
-	attributes.addVersion('Real', version)
-	attributes.setDefaultVersionName('Real')
+	attributes.add_version('Real', version)
+	attributes.set_default_version_name('Real')
 
 	attributes['title']='500 Miles High'
 	attributes['style']='Jazz'

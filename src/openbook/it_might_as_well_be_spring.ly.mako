@@ -6,8 +6,8 @@
 	version['doVoice']=True
 	version['doChords']=True
 	version['doLyrics']=True
-	attributes.addVersion('Fake', version)
-	attributes.setDefaultVersionName('Fake')
+	attributes.add_version('Fake', version)
+	attributes.set_default_version_name('Fake')
 
 	attributes['title']='It Might As Well Be Spring'
 	attributes['style']='Jazz'

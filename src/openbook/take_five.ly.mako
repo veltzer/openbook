@@ -5,8 +5,8 @@
 	version=attr.Version()
 	version['doChords']=True
 	version['doVoice']=True
-	attributes.addVersion('Unknown', version)
-	attributes.setDefaultVersionName('Unknown')
+	attributes.add_version('Unknown', version)
+	attributes.set_default_version_name('Unknown')
 
 	attributes['title']='Take Five'
 	attributes['style']='Jazz'

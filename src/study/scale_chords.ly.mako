@@ -4,8 +4,8 @@
 	from scripts import attr
 	version=attr.Version()
 	version['doVoice']=True
-	attributes.addVersion('My', version)
-	attributes.setDefaultVersionName('My')
+	attributes.add_version('My', version)
+	attributes.set_default_version_name('My')
 
 	attributes['title']='Jazz chords on the major scale'
 	attributes['style']='Jazz'

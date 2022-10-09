@@ -7,8 +7,8 @@
 	version['doChords']=True
 	version['doVoice']=True
 	version['doLyrics']=True
-	attributes.addVersion('Stan', version)
-	attributes.setDefaultVersionName('Stan')
+	attributes.add_version('Stan', version)
+	attributes.set_default_version_name('Stan')
 
 	# from the standards real book
 	attributes['title']='The More I See You'

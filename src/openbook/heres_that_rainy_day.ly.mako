@@ -6,14 +6,14 @@
 	version['doChords']=True
 	version['doVoice']=True
 	version['doLyrics']=True
-	attributes.addVersion('Fake', version)
-	attributes.setDefaultVersionName('Fake')
+	attributes.add_version('Fake', version)
+	attributes.set_default_version_name('Fake')
 	version=attr.Version()
 	version['doChords']=True
 	version['doVoice']=True
 	version['doLyrics']=True
 	version['doLyricsmore']=True
-	attributes.addVersion('Real', version)
+	attributes.add_version('Real', version)
 
 	attributes['title']='Here\'s That Rainy Day'
 	attributes['style']='Jazz'

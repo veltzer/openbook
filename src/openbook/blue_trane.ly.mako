@@ -5,8 +5,8 @@
 	version=attr.Version()
 	version['doChords']=True
 	version['doVoice']=True
-	attributes.addVersion('Real', version)
-	attributes.setDefaultVersionName('Real')
+	attributes.add_version('Real', version)
+	attributes.set_default_version_name('Real')
 
 	# from the real book
 	attributes['title']='Blue Trane'

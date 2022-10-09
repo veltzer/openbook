@@ -8,8 +8,8 @@
 	version['doLyrics']=True
 	version['doLyricsmore']=True
 	version['doExtra']=True
-	attributes.addVersion('Real', version)
-	attributes.setDefaultVersionName('Real')
+	attributes.add_version('Real', version)
+	attributes.set_default_version_name('Real')
 
 	attributes['title']='Someday My Prince Will Come'
 	attributes['style']='Jazz'

@@ -5,8 +5,8 @@
 	version=attr.Version()
 	version['doChords']=True
 	version['doVoice']=True
-	attributes.addVersion('Aebersold', version)
-	attributes.setDefaultVersionName('Aebersold')
+	attributes.add_version('Aebersold', version)
+	attributes.set_default_version_name('Aebersold')
 
 	attributes['title']='Watermelon Man'
 	attributes['style']='Jazz'

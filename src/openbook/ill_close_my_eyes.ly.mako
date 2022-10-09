@@ -6,13 +6,13 @@
 	version['doChords']=True
 	version['doVoice']=True
 	version['doLyrics']=True
-	attributes.addVersion('My', version)
-	attributes.setDefaultVersionName('My')
+	attributes.add_version('My', version)
+	attributes.set_default_version_name('My')
 	version=attr.Version()
 	version['doChords']=True
 	version['doVoice']=True
 	version['doLyrics']=True
-	attributes.addVersion('Real', version)
+	attributes.add_version('Real', version)
 
 	attributes['title']='I\'ll Close My Eyes'
 	attributes['style']='Jazz'

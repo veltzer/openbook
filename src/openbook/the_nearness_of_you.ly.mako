@@ -6,12 +6,12 @@
 	version['doChords']=True
 	version['doVoice']=True
 	version['doLyrics']=True
-	attributes.addVersion('Unknown', version)
+	attributes.add_version('Unknown', version)
 	#version['doChords']=True
 	#version['doVoice']=True
 	#version['doLyrics']=True
-	#attributes.addVersion('Real', version)
-	attributes.setDefaultVersionName('Unknown')
+	#attributes.add_version('Real', version)
+	attributes.set_default_version_name('Unknown')
 
 	attributes['title']='The Nearness Of You'
 	attributes['style']='Jazz'

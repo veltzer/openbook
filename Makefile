@@ -233,7 +233,7 @@ clean_docs:
 .PHONY: check_ws
 check_ws:
 	$(info doing [$@])
-	$(Q)pymakehelper no_err git grep -e "[[:space:]]$$" -- src ":(exclude)src/openbook.staging"
+	$(Q)pymakehelper no_err git grep -e "[[:space:]]$$" -- src
 .PHONY: check_naked_mymark
 check_naked_mymark:
 	$(info doing [$@])
@@ -366,9 +366,9 @@ $(HTMLCHECK): $(SOURCES_HTML)
 	$(Q)tidy -errors -q -utf8 $(SOURCES_HTML)
 	$(Q)node_modules/htmlhint/bin/htmlhint $(SOURCES_HTML) > /dev/null
 	$(Q)mkdir -p $(dir $@)
-	$(Q)touch $(HTMLCHECK)
+	$(Q)touch $@
 out/lint.stamp: $(SCRIPTS)
 	$(info doing [$@])
 	$(Q)pymakehelper error_on_print python -m pylint --reports=n --score=n $(SCRIPTS)
 	$(Q)mkdir -p $(dir $@)
-	$(Q)touch $(HTMLCHECK)
+	$(Q)touch $@

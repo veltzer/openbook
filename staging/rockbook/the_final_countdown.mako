@@ -6,8 +6,8 @@
 	version=attr.Version()
 	version['doGuitar']=True
 	version['doOwn']=True
-	attributes.addVersion('DontMatter', version)
-	attributes.setDefaultVersionName('DontMatter')
+	attributes.add_version('DontMatter', version)
+	attributes.set_default_version_name('DontMatter')
 
 	attributes['title']='The Final Countdown'
 	attributes['style']='Rock'
