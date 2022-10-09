@@ -162,6 +162,8 @@ ifeq ($(DO_LINT),1)
 ALL+=out/lint.stamp
 endif # DO_LINT
 
+REAL_BOOKS_STAMP=out/real_books.stamp
+
 #########
 # rules #
 #########
@@ -372,7 +374,10 @@ out/lint.stamp: $(SCRIPTS)
 	$(Q)pymakehelper error_on_print python -m pylint --reports=n --score=n $(SCRIPTS)
 	$(Q)mkdir -p $(dir $@)
 	$(Q)touch $@
-
-real_books_archive:
+.PHONY: real_books_archive
+real_books_archive: $(REAL_BOOKS_STAMP)
+$(REAL_BOOKS_STAMP):
 	$(info doing [$@])
 	$(Q)wget -qO- https://www.dropbox.com/s/ocwfrjqx14eug3c/real_books_archive.tar.gz?dl=1 | tar xzvf -
+	$(Q)mkdir -p $(dir $@)
+	$(Q)touch $@
