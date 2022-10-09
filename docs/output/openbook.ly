@@ -258,9 +258,9 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 173" }
-				\fill-line { \small "Git describe: 173-68-gc849572" }
-				\fill-line { \small "Git commits: 1809" }
-				\fill-line { \small "Build date: 10:49:21 09-10-2022" }
+				\fill-line { \small "Git describe: 173-69-gc142513" }
+				\fill-line { \small "Git commits: 1810" }
+				\fill-line { \small "Build date: 12:32:26 09-10-2022" }
 				\fill-line { \small "Build user: mark" }
 				\fill-line { \small "Build host: newton" }
 				\fill-line { \small "Build kernel: Linux 5.15.0-48-lowlatency" }
@@ -6897,7 +6897,6 @@ endChords={}
 	d2:m7 g:9 | c:maj7 ees:dim7 | d:m7 g4:7 g:7.5+ | c:9 b:9 bes:9 e:9.11+ | \myEndLine
 	\endPart
 
-%%\myMark ""
 	\startPart
 	\mark \markup { \musicglyph #"scripts.coda" } des1 | \myEndLine
 	\endPart
@@ -25714,7 +25713,7 @@ endChords={}
 		\endPart
 	}
 
-	\myMark "Ending"
+	\myMark "End"
 	\startPart
 	g2:m7.5- c:7 | f1:m | \myEndLine
 	\endPart

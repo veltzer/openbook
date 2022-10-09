@@ -93,7 +93,6 @@
 	d2:m7 g:9 | c:maj7 ees:dim7 | d:m7 g4:7 g:7.5+ | c:9 b:9 bes:9 e:9.11+ | \myEndLine
 	\endPart
 
-	%%\myMark ""
 	\startPart
 	\mark \markup { \musicglyph #"scripts.coda" } des1 | \myEndLine
 	\endPart

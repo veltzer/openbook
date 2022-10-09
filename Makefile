@@ -233,24 +233,24 @@ clean_docs:
 .PHONY: check_ws
 check_ws:
 	$(info doing [$@])
-	$(Q)pymakehelper no_err git grep -e "[[:space:]]$$" -- "*" ":(exclude)docs" ":(exclude)*.ico"
+	$(Q)pymakehelper no_err git grep -e "[[:space:]]$$" -- src ":(exclude)src/openbook.staging"
 .PHONY: check_naked_mymark
 check_naked_mymark:
 	$(info doing [$@])
-	$(Q)grep "\myMark" $(FILES_MAKO) | pymakehelper only_print_on_error grep -v \"
+	$(Q)grep "\myMark" $(FILES_MAKO) | pymakehelper error_on_print grep -v -E "A|B|C|D|Intro|End|Instr"
 .PHONY: check_and
 check_and:
 	$(info doing [$@])
-	$(Q)pymakehelper only_print_on_error grep "composer=\".* and .*\"" $(FILES_MAKO)
-	$(Q)pymakehelper only_print_on_error grep "poet=\".* and .*\"" $(FILES_MAKO)
+	$(Q)pymakehelper error_on_print grep "composer=\".* and .*\"" $(FILES_MAKO)
+	$(Q)pymakehelper error_on_print grep "poet=\".* and .*\"" $(FILES_MAKO)
 .PHONY: check_mark
 check_mark:
 	$(info doing [$@])
-	$(Q)pymakehelper only_print_on_error grep --files-without-match "\\\\myMark" $(FILES_JAZZ)
+	$(Q)pymakehelper error_on_print grep --files-without-match "\\\\myMark" $(FILES_JAZZ)
 .PHONY: check_key
 check_key:
 	$(info doing [$@])
-	$(Q)grep "\\\\key" $(FILES_JAZZ) | grep -v major | pymakehelper only_print_on_error grep -v minor
+	$(Q)grep "\\\\key" $(FILES_JAZZ) | grep -v major | pymakehelper error_on_print grep -v minor
 .PHONY: check_python
 check_python:
 	$(info doing [$@])
@@ -258,27 +258,27 @@ check_python:
 .PHONY: check_hardcoded_names
 check_hardcoded_names:
 	$(info doing [$@])
-	$(Q)pymakehelper only_print_on_error git $(GITARGS) grep veltzer
+	$(Q)pymakehelper error_on_print git $(GITARGS) grep veltzer
 .PHONY: check_parts
 check_parts:
 	$(info doing [$@])
-	$(Q)git grep "%% part" src | pymakehelper only_print_on_error grep -v \"
+	$(Q)git grep "%% part" src | pymakehelper error_on_print grep -v \"
 .PHONY: check_volta_last
 check_volta_last:
 	$(info doing [$@])
-	$(Q)pymakehelper only_print_on_error grep alternative `git grep -L myEndLineVolta src/openbook`
+	$(Q)pymakehelper error_on_print grep alternative `git grep -L myEndLineVolta src/openbook`
 .PHONY: check_null
 check_null:
 	$(info doing [$@])
-	$(Q)git grep null src | pymakehelper only_print_on_error grep -v include
+	$(Q)git grep null src | pymakehelper error_on_print grep -v include
 .PHONY: check_alternative
 check_alternative:
 	$(info doing [$@])
-	$(Q)git grep \\\\alternative src | pymakehelper only_print_on_error grep -v "}"
+	$(Q)git grep \\\\alternative src | pymakehelper error_on_print grep -v "}"
 .PHONY: check_tempo
 check_tempo:
 	$(info doing [$@])
-	$(Q)git grep "\\\\tempo " src | pymakehelper only_print_on_error grep -v \"
+	$(Q)git grep "\\\\tempo " src | pymakehelper error_on_print grep -v \"
 .PHONY: check_all
 check_all: check_ws check_naked_mymark check_and check_mark check_key check_python check_parts check_volta_last check_null check_alternative check_tempo
 
@@ -369,6 +369,6 @@ $(HTMLCHECK): $(SOURCES_HTML)
 	$(Q)touch $(HTMLCHECK)
 out/lint.stamp: $(SCRIPTS)
 	$(info doing [$@])
-	$(Q)pymakehelper only_print_on_error python -m pylint --reports=n --score=n $(SCRIPTS)
+	$(Q)pymakehelper error_on_print python -m pylint --reports=n --score=n $(SCRIPTS)
 	$(Q)mkdir -p $(dir $@)
 	$(Q)touch $(HTMLCHECK)

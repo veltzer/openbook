@@ -65,7 +65,7 @@
 		\endPart
 	}
 
-	\myMark "Ending"
+	\myMark "End"
 	\startPart
 	g2:m7.5- c:7 | f1:m | \myEndLine
 	\endPart

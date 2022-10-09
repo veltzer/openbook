@@ -24,7 +24,10 @@ def main():
     repo = 'pdf.js'
     debug = False
 
-    response = requests.get(f"https://api.github.com/repos/{owner}/{repo}/releases/latest")
+    response = requests.get(
+            f"https://api.github.com/repos/{owner}/{repo}/releases/latest",
+            timeout=20,
+    )
     response.raise_for_status()
     obj = response.json()
     latest_release = obj["name"]
