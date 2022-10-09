@@ -258,24 +258,12 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 173" }
-<<<<<<< HEAD
-<<<<<<< HEAD
-				\fill-line { \small "Git describe: 173-70-g6b1db7a" }
-				\fill-line { \small "Git commits: 1811" }
-				\fill-line { \small "Build date: 13:40:40 09-10-2022" }
-=======
-				\fill-line { \small "Git describe: 173-63-g501dcaf0" }
-				\fill-line { \small "Git commits: 1804" }
-				\fill-line { \small "Build date: 15:52:46 08-10-2022" }
->>>>>>> 17dd2039 (more)
-=======
-				\fill-line { \small "Git describe: 173-71-g84ba428" }
-				\fill-line { \small "Git commits: 1812" }
-				\fill-line { \small "Build date: 19:27:41 09-10-2022" }
->>>>>>> d2eb905 (no commit message given)
+				\fill-line { \small "Git describe: 173-76-g658ca56a" }
+				\fill-line { \small "Git commits: 1817" }
+				\fill-line { \small "Build date: 19:44:26 09-10-2022" }
 				\fill-line { \small "Build user: mark" }
-				\fill-line { \small "Build host: cantor" }
-				\fill-line { \small "Build kernel: Linux 5.15.0-48-generic" }
+				\fill-line { \small "Build host: newton" }
+				\fill-line { \small "Build kernel: Linux 5.15.0-48-lowlatency" }
 				\fill-line { \small "Lilypond version: 2.22.1" }
 				\fill-line { \small "Number of tunes: 151" }
 				\null

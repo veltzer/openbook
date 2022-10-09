@@ -182,9 +182,15 @@ see how they will fit into this project.
 Yes. Just send them as regular text via my email below.
 
 ## Where can I get more documentation about this project?
-Look in the "doc" subfolder of the source code...
+Look in the `doc` subfolder of the source code...
 
 ## How can I get a version of this book in a key other than C?
 Just edit `include/common.ly.mako` and change TONALITY="c" to "bes" or "ees" before compiling.
+
+## How do I download the external pdfs to compare them to this project?
+Just edit `include/common.ly.mako` and change TONALITY="c" to "bes" or "ees" before compiling.
+``` sh
+make real_books_archive
+```
 
 Mark Veltzer, Copyright © 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022
