@@ -117,7 +117,7 @@ books_dont_have = {"ja54"}
 DO_CHECK_LOCATION = False
 
 # where are all the fake books?
-FOLDER = "/home/mark/links/topics_archive/music_education/jazz/collections"
+FOLDER = "real_books_archive"
 
 
 def check_int(val):

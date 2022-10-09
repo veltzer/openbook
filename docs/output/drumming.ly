@@ -258,9 +258,15 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 173" }
+<<<<<<< HEAD
 				\fill-line { \small "Git describe: 173-72-geed7d48e" }
 				\fill-line { \small "Git commits: 1813" }
 				\fill-line { \small "Build date: 16:14:44 09-10-2022" }
+=======
+				\fill-line { \small "Git describe: 173-71-g84ba428" }
+				\fill-line { \small "Git commits: 1812" }
+				\fill-line { \small "Build date: 19:28:04 09-10-2022" }
+>>>>>>> d2eb905 (no commit message given)
 				\fill-line { \small "Build user: mark" }
 				\fill-line { \small "Build host: cantor" }
 				\fill-line { \small "Build kernel: Linux 5.15.0-48-generic" }

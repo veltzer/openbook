@@ -5,6 +5,8 @@
 /out/
 *.out
 
+/real_books_archive
+
 # hive
 /derby.log
 /dfs/
