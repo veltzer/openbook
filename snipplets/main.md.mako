@@ -160,7 +160,8 @@ ${"##"} How can I get a version of this book in a key other than C?
 Just edit `include/common.ly.mako` and change TONALITY="c" to "bes" or "ees" before compiling.
 
 ${"##"} How do I download the external pdfs to compare them to this project?
-Just edit `include/common.ly.mako` and change TONALITY="c" to "bes" or "ees" before compiling.
+Just run:
 ``` sh
 make real_books_archive
 ```
+and look at the resulting `real_books_archive` folder that is created.
