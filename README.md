@@ -55,7 +55,7 @@ used by Jazz musicians both for practice and for performance.
 * python-dateutil: Extensions to the standard Python datetime module
 * tqdm: Fast, Extensible Progress Meter
 * PyMySQL: Pure Python MySQL Driver
-* Mako: A super-fast templating language that borrows the  best ideas from the existing templating languages.
+* Mako: A super-fast templating language that borrows the best ideas from the existing templating languages.
 * requests: Python HTTP for Humans.
 * gitpython: GitPython is a python library used to interact with Git repositories
 

@@ -1,3 +1,8 @@
+make_requires = [
+    "pymakehelper",
+    "pydmt",
+    "pyclassifiers",
+]
 install_requires = [
     "pytconf",
     "python-dateutil",
@@ -7,7 +12,6 @@ install_requires = [
     "requests",
     "gitpython",
 ]
-make_requires = [
-    "pymakehelper",
+test_requires = [
     "pylint",
 ]
