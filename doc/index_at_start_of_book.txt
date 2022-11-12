@@ -1,0 +1,3 @@
+Actually has hyperlinks, but:
+okular (the KDE/Plasma pdf viewing tool) does not respect those links.
+Google-chrome does.
