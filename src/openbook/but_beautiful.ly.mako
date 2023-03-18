@@ -158,6 +158,7 @@
 	%% part "C"
 	And I'm think -- ing if you were mine I'd nev -- er let you go,
 	and that would be But Beau -- ti -- ful  I
+
 	%% part "Volta"
 	know. __ Love is
 	know. __

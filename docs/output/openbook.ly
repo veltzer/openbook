@@ -258,9 +258,9 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 177" }
-				\fill-line { \small "Git describe: 177-4-g11493e97" }
-				\fill-line { \small "Git commits: 1837" }
-				\fill-line { \small "Build date: 18:23:52 18-03-2023" }
+				\fill-line { \small "Git describe: 177-5-g1a6d7c46" }
+				\fill-line { \small "Git commits: 1838" }
+				\fill-line { \small "Build date: 18:33:10 18-03-2023" }
 				\fill-line { \small "Build user: mark" }
 				\fill-line { \small "Build host: newton" }
 				\fill-line { \small "Build kernel: Linux 5.19.0-1018-lowlatency" }
@@ -5169,6 +5169,7 @@ endChords={}
 	\startSong
 
 	\partial 8 c8:7 |
+
 	\myMark "A"
 	\startPart
 		f1:7 | bes2:7 b2:dim7| f1:7 | \myEndLine
@@ -5210,11 +5211,11 @@ endChords={}
 	\key c \major
 
 	\partial 8 c8 |
+
 %% part "A"
 	\repeat volta 2 {
 
-		b8 c8 f8 gis8 a8 f8 d8 f8~|f8 d8 f8 r8 r8 f4 d8 |
-		f8 r8 r8 f8~ f8 d8 f8 d8 | \myEndLine
+		b8 c8 f8 gis8 a8 f8 d8 f8~|f8 d8 f8 r8 r8 f4 d8 | f8 r8 r8 f8~ f8 d8 f8 d8 |
 		as'8 a8 \tuplet 3/2 { f16 g16 f16 } d8 f8 g8 f8 f8 |
 		r4 r8 a8 bes8 f8 r8 as8~ |
 		as8 bes8~bes4 es8 c8 f8 es8 | r8 f8 c4 r4 r8 e8~ |
@@ -5226,19 +5227,17 @@ endChords={}
 	}
 
 	f4 g8 gis8 s4 ais8 b8 |
-	c8 a8 \tuplet 3/2 {bes8 c8 bes8 } a8 f8 d8 c8 |\myEndLine
+	c8 a8 \tuplet 3/2 {bes8 c8 bes8 } a8 f8 d8 c8 |
 %%
 	\tuplet 3/2 {g'16 a16 g16} f8 es8 f8~ f4 r4 | r2 r4 r8 f'8~ |
-	f8 c16 bes16 as8 f8 g8 f8 es8 d8 | \myEndLine
+	f8 c16 bes16 as8 f8 g8 f8 es8 d8 |
 %%
 	c4 bes8 f8 gis8 a8 bes8 b8 | c8 d16 c16 a8 c8 e8 d8~d4 |
-	r1 | \myEndLine
+	r1 |
 	r4 r8 \tuplet 3/2 {g16 bes16 d16} f8 e8 d8 des8 |
-	c8 a8 bes8 c16 bes16 a8 f8 d8 c8 | g'8 f8 g8( a8)~a4 r4 | \myEndLine
+	c8 a8 bes8 c16 bes16 a8 f8 d8 c8 | g'8 f8 g8( a8)~a4 r4 |
 %%
-	r1-\markup {\abs-fontsize #14 {(Last 12 Bars are transcribed from Charlie Parker Solo - The Savoy Recordings)}}
-	|
-	\myEndLine
+	r1-\markup {\abs-fontsize #14 {(Last 12 Bars are transcribed from Charlie Parker Solo - The Savoy Recordings)}} |
 }
  }
 }
@@ -7266,6 +7265,7 @@ endChords={}
 %% part "C"
 	And I'm think -- ing if you were mine I'd nev -- er let you go,
 	and that would be But Beau -- ti -- ful  I
+
 %% part "Volta"
 	know. __ Love is
 	know. __
@@ -20209,13 +20209,9 @@ endChords={}
 
 
 
-
-
 \bookpart {
 
 % this causes the variables to be defined...
-
-
 
 
 
@@ -20292,23 +20288,21 @@ endChords={}
 
 	\myMark "A"
 	\startPart
-	  bes1:7 | es1:7 | bes1:7 | es1:7 \myEndLine
-	  bes1:7 | es1:7 | bes1:7 | es1:7 \myEndLine
+	bes1:7 | es1:7 | bes1:7 | es1:7 \myEndLine
+	bes1:7 | es1:7 | bes1:7 | es1:7 \myEndLine
 	\endPart
 
 
 	\myMark "B"
 	\startPart
-      bes2 es2:/+bes | bes2:7 es2:/+bes | bes2 es2:/+bes | bes2:7 es2:/+bes \myEndLine
-      bes2 bes4:/+d es4 | f1:sus7 | bes2 bes4:/+d es4 | f1:sus7 \myEndLine
-      c1:m7 | d:m7 | g4:m f g:m f | g1:m \myEndLine
+	bes2 es2:/+bes | bes2:7 es2:/+bes | bes2 es2:/+bes | bes2:7 es2:/+bes \myEndLine
+	bes2 bes4:/+d es4 | f1:sus7 | bes2 bes4:/+d es4 | f1:sus7 \myEndLine
+	c1:m7 | d:m7 | g4:m f g:m f | g1:m \myEndLine
 	\endPart
 
 	\endSong
 	\endChords
 }
-
-
 
 
 
@@ -20328,36 +20322,34 @@ endChords={}
 
 
 {
-    \tempo "Andante" 4 = 84
-    \time 4/4
-    \key bes \major
+	\tempo "Andante" 4 = 84
+	\time 4/4
+	\key bes \major
 
 %% part "A"
-    r4 g'8 f8~ f4 d8 bes8 |
-    c8 bes8 bes8 g8 bes8 bes8 c8 bes8 |
-    r4 g'8 f8~ f4 d8 bes8 |
-    c8 bes8 bes8 g8 bes8 bes8 c8 bes8 |
-    r4 g'8 f8~ f4 d8 bes8 |
-    c8 bes8 bes8 g8 bes8 bes8 c8 bes8 |
-    r4 g'8 f8~ f4 d8 bes8 |
-    c8 bes8 bes8 g8 bes8 bes8 c8 bes8 |
+	r4 g'8 f8~ f4 d8 bes8 |
+	c8 bes8 bes8 g8 bes8 bes8 c8 bes8 |
+	r4 g'8 f8~ f4 d8 bes8 |
+	c8 bes8 bes8 g8 bes8 bes8 c8 bes8 |
+	r4 g'8 f8~ f4 d8 bes8 |
+	c8 bes8 bes8 g8 bes8 bes8 c8 bes8 |
+	r4 g'8 f8~ f4 d8 bes8 |
+	c8 bes8 bes8 g8 bes8 bes8 c8 bes8 |
 
 %% part "B"
 	f'4 f4 g8 g4 aes8~ |
-    aes4 aes4 g8 g4 f8~ |
-    f4 f4 g8 g4 as8~ |
-    as4 as4 g8 g4 f8 ~|
-    f4 bes,8 bes8 d8 d8 es8 es8|
-    f8^^ r8 es4 es8 es8 es8 d8~ |
-    d8 r8 bes8 bes8 d8 d8 es8 es8|
-    f8^^ r8 r4 r8 f,8 g8 bes8 |
-    c4. c8~ c4 bes8 c8 |
-    d4. d8~ d8 c8 d8 f8 |
-    g4. f8 g4. f8 |
-    g16 f16 g8 r4 r2 |
+	aes4 aes4 g8 g4 f8~ |
+	f4 f4 g8 g4 as8~ |
+	as4 as4 g8 g4 f8 ~|
+	f4 bes,8 bes8 d8 d8 es8 es8|
+	f8^^ r8 es4 es8 es8 es8 d8~ |
+	d8 r8 bes8 bes8 d8 d8 es8 es8|
+	f8^^ r8 r4 r8 f,8 g8 bes8 |
+	c4. c8~ c4 bes8 c8 |
+	d4. d8~ d8 c8 d8 f8 |
+	g4. f8 g4. f8 |
+	g16 f16 g8 r4 r2 |
 }
-
-
 
 
 
@@ -20373,22 +20365,19 @@ endChords={}
 
 %% part "A"
 	It seems life has played a game on me _ _ _
-    I'm lost in a sea of misery _ _ _ _ _
-    My love _ has turned her back on me _ _ _
-    Heartaches why won't you _ _ let me be I said now
+	I'm lost in a sea of misery _ _ _ _ _
+	My love _ has turned her back on me _ _ _
+	Heartaches why won't you _ _ let me be I said now
 
-   %% part "B"
-    Ba -- by have some mer -- cy please
-    Dont leave me baby on bended knee _
-    Oh please mer -- cy mer -- cy mer -- cy please
-    Have mer -- cy on me
-    Mer -- cy mer -- cy mer -- cy please
-    How can I face life _ with out you
-    What would I do if we were through
-
+%% part "B"
+	Ba -- by have some mer -- cy please
+	Dont leave me baby on bended knee _
+	Oh please mer -- cy mer -- cy mer -- cy please
+	Have mer -- cy on me
+	Mer -- cy mer -- cy mer -- cy please
+	How can I face life _ with out you
+	What would I do if we were through
 }
-
-
 
 
 
@@ -20403,23 +20392,21 @@ endChords={}
 \lyricmode {
 
 %% part "A"
-    Don't you know -- babe I wait for you _ every single night
-    Hop -- ing you'll re -- turn and make things right _ _ _
-    You don′t show and I′m sitting here all alone (all alone) _
-    To pray you're gon -- na call me on the phone _ _
+	Don't you know -- babe I wait for you _ every single night
+	Hop -- ing you'll re -- turn and make things right _ _ _
+	You don′t show and I′m sitting here all alone (all alone) _
+	To pray you're gon -- na call me on the phone _ _
 
-   %% part "B"
-    Ba -- by, have some mer -- cy please
-    Don′t make your mama beg on bended knee Oh please
-    mer -- cy mer -- cy mer -- cy please
-    Have mer -- cy on me
-    mer -- cy mer -- cy mer -- cy please
+%% part "B"
+	Ba -- by, have some mer -- cy please
+	Don′t make your mama beg on bended knee Oh please
+	mer -- cy mer -- cy mer -- cy please
+	Have mer -- cy on me
+	mer -- cy mer -- cy mer -- cy please
 
-    You know I love you and I'm beg -- ging
-    For one more chance, one chance, once more
+	You know I love you and I'm beg -- ging
+	For one more chance, one chance, once more
 }
-
-
 
 
 }
@@ -20431,23 +20418,21 @@ endChords={}
 
 
 
-
-
 \lyricmode {
 
 %% part "A"
-    I know life′s got _ ma -- ny a twist _ _ _
-    Loving you, baby, is a thing I cannot resist _ _ _
-    Your love and un -- der -- stan -- ding you′ve been giving giving giving
-    Without it, I just can't _ go  on living _ _ _
+	I know life′s got _ ma -- ny a twist _ _ _
+	Loving you, baby, is a thing I cannot resist _ _ _
+	Your love and un -- der -- stan -- ding you′ve been giving giving giving
+	Without it, I just can't _ go on living _ _ _
 
-   %% part "B"
-    Ba -- by, have some mer -- cy please
-    Don't leave me, baby, on bended knee
-    I say now, mer -- cy, mer -- cy, mer -- cy please
-    Have mer -- cy on me
-    mer -- cy, mer -- cy, mer -- cy please
-    Have mer -- cy on me.
+%% part "B"
+	Ba -- by, have some mer -- cy please
+	Don't leave me, baby, on bended knee
+	I say now, mer -- cy, mer -- cy, mer -- cy please
+	Have mer -- cy on me
+	mer -- cy, mer -- cy, mer -- cy please
+	Have mer -- cy on me.
 }
 
 }

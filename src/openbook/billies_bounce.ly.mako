@@ -51,6 +51,7 @@
 	\startSong
 
 	\partial 8 c8:7 |
+
 	\myMark "A"
 	\startPart
 		f1:7 | bes2:7 b2:dim7| f1:7 | \myEndLine
@@ -80,11 +81,11 @@
 	\key c \major
 
 	\partial 8 c8 |
+
 	%% part "A"
 	\repeat volta 2 {
 
-		b8 c8 f8 gis8 a8 f8 d8 f8~|f8 d8 f8 r8 r8 f4 d8 |
-		f8 r8 r8 f8~ f8 d8 f8 d8 | \myEndLine
+		b8 c8 f8 gis8 a8 f8 d8 f8~|f8 d8 f8 r8 r8 f4 d8 | f8 r8 r8 f8~ f8 d8 f8 d8 |
 		as'8 a8 \tuplet 3/2 { f16 g16 f16 } d8 f8 g8 f8 f8 |
 		r4 r8 a8 bes8 f8 r8 as8~ |
 		as8 bes8~bes4 es8 c8 f8 es8 | r8 f8 c4 r4 r8 e8~ |
@@ -96,18 +97,16 @@
 	}
 
 	f4 g8 gis8 s4 ais8 b8 |
-	c8 a8 \tuplet 3/2 {bes8 c8 bes8 } a8 f8 d8 c8 |\myEndLine
+	c8 a8 \tuplet 3/2 {bes8 c8 bes8 } a8 f8 d8 c8 |
 	%%
 	\tuplet 3/2 {g'16 a16 g16} f8 es8 f8~ f4 r4 | r2 r4 r8 f'8~ |
-	f8 c16 bes16 as8 f8 g8 f8 es8 d8 | \myEndLine
+	f8 c16 bes16 as8 f8 g8 f8 es8 d8 |
 	%%
 	c4 bes8 f8 gis8 a8 bes8 b8 | c8 d16 c16 a8 c8 e8 d8~d4 |
-	r1 | \myEndLine
+	r1 |
 	r4 r8 \tuplet 3/2 {g16 bes16 d16} f8 e8 d8 des8 |
-	c8 a8 bes8 c16 bes16 a8 f8 d8 c8 | g'8 f8 g8( a8)~a4 r4 | \myEndLine
+	c8 a8 bes8 c16 bes16 a8 f8 d8 c8 | g'8 f8 g8( a8)~a4 r4 |
 	%%
-	r1-\markup {\abs-fontsize #14 {(Last 12 Bars are transcribed from Charlie Parker Solo - The Savoy Recordings)}}
-	|
-	\myEndLine
+	r1-\markup {\abs-fontsize #14 {(Last 12 Bars are transcribed from Charlie Parker Solo - The Savoy Recordings)}} |
 }
 % endif
