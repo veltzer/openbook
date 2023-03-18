@@ -11,7 +11,7 @@
 % this version tag will keep me compiling only on this version of lilypond.
 %=====================================================================
 
-\version "2.22.1"
+\version "2.22.2"
 
 % lets define a variable to hold the formatted build date (man 3 strftime):
 %date=#(strftime "%T %d-%m-%Y" (localtime (current-time)))
@@ -247,7 +247,7 @@ endChords={}
 				\fill-line {
 					\huge \bold \concat {
 						"Typesetting copyright: © 2011-"
-						2022
+						2023
 						" Mark Veltzer "
 						"<" \with-url #"mailto:mark.veltzer@gmail.com" mark.veltzer@gmail.com ">"
 					}
@@ -257,15 +257,15 @@ endChords={}
 				\null
 				\null
 				\null
-				\fill-line { \small "Git tag: 173" }
-				\fill-line { \small "Git describe: 173-76-g658ca56a" }
-				\fill-line { \small "Git commits: 1817" }
-				\fill-line { \small "Build date: 19:44:26 09-10-2022" }
+				\fill-line { \small "Git tag: 177" }
+				\fill-line { \small "Git describe: 177-4-g11493e97" }
+				\fill-line { \small "Git commits: 1837" }
+				\fill-line { \small "Build date: 18:23:52 18-03-2023" }
 				\fill-line { \small "Build user: mark" }
 				\fill-line { \small "Build host: newton" }
-				\fill-line { \small "Build kernel: Linux 5.15.0-48-lowlatency" }
-				\fill-line { \small "Lilypond version: 2.22.1" }
-				\fill-line { \small "Number of tunes: 151" }
+				\fill-line { \small "Build kernel: Linux 5.19.0-1018-lowlatency" }
+				\fill-line { \small "Lilypond version: 2.22.2" }
+				\fill-line { \small "Number of tunes: 152" }
 				\null
 				\null
 				\null
@@ -20191,6 +20191,281 @@ endChords={}
 	}
 	\fill-line {
 		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
+	}
+}
+
+
+
+}
+
+
+% include anything the user wants before the bookpart starts
+
+
+
+
+
+
+
+
+
+
+
+\bookpart {
+
+% this causes the variables to be defined...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% now play with the variables that depend on language
+
+
+
+% calculate the tag line
+
+
+% calculate the typesetby
+
+
+
+
+\tocItem \markup "Mercy Mercy Mercy / Joe Zawinul, Vincent Levy, Gail Fisher"
+
+
+
+
+
+% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
+\markup {
+	\column {
+		\override #'(baseline-skip . 3.5)
+		\column {
+			\huge \larger \bold
+			\fill-line { \larger "Mercy Mercy Mercy" }
+			\fill-line {
+				"Lyrics by Vincent Levy, Gail Fisher"
+				"Music by Joe Zawinul"
+			}
+			\fill-line {
+				"Funk"
+				""
+			}
+		}
+	}
+}
+\noPageBreak
+
+
+% include the preparatory stuff, if there is any
+
+% calculate the vars
+
+
+
+% score for printing
+\score {
+	<<
+\new ChordNames="Chords"
+	\with {
+		\remove "Bar_engraver"
+	}
+% # transpose with 'inline' is true!
+	\transpose c c {
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\myMark "A"
+	\startPart
+	  bes1:7 | es1:7 | bes1:7 | es1:7 \myEndLine
+	  bes1:7 | es1:7 | bes1:7 | es1:7 \myEndLine
+	\endPart
+
+
+	\myMark "B"
+	\startPart
+      bes2 es2:/+bes | bes2:7 es2:/+bes | bes2 es2:/+bes | bes2:7 es2:/+bes \myEndLine
+      bes2 bes4:/+d es4 | f1:sus7 | bes2 bes4:/+d es4 | f1:sus7 \myEndLine
+      c1:m7 | d:m7 | g4:m f g:m f | g1:m \myEndLine
+	\endPart
+
+	\endSong
+	\endChords
+}
+
+
+
+
+
+
+}
+% this thing will only engrave voltas. This is required to put the volta under the chords.
+% No great harm will happen if you don't put it, only the voltas will be above the chords.
+%\new Staff \with {
+%	\consists "Volta_engraver"
+%}
+\new Staff="Melody" {
+\new Voice="Voice"
+% # transpose with 'inline' is true!
+	\transpose c c { \relative c'
+	
+
+
+
+{
+    \tempo "Andante" 4 = 84
+    \time 4/4
+    \key bes \major
+
+%% part "A"
+    r4 g'8 f8~ f4 d8 bes8 |
+    c8 bes8 bes8 g8 bes8 bes8 c8 bes8 |
+    r4 g'8 f8~ f4 d8 bes8 |
+    c8 bes8 bes8 g8 bes8 bes8 c8 bes8 |
+    r4 g'8 f8~ f4 d8 bes8 |
+    c8 bes8 bes8 g8 bes8 bes8 c8 bes8 |
+    r4 g'8 f8~ f4 d8 bes8 |
+    c8 bes8 bes8 g8 bes8 bes8 c8 bes8 |
+
+%% part "B"
+	f'4 f4 g8 g4 aes8~ |
+    aes4 aes4 g8 g4 f8~ |
+    f4 f4 g8 g4 as8~ |
+    as4 as4 g8 g4 f8 ~|
+    f4 bes,8 bes8 d8 d8 es8 es8|
+    f8^^ r8 es4 es8 es8 es8 d8~ |
+    d8 r8 bes8 bes8 d8 d8 es8 es8|
+    f8^^ r8 r4 r8 f,8 g8 bes8 |
+    c4. c8~ c4 bes8 c8 |
+    d4. d8~ d8 c8 d8 f8 |
+    g4. f8 g4. f8 |
+    g16 f16 g8 r4 r2 |
+}
+
+
+
+
+
+ }
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
+	
+
+
+
+
+\lyricmode {
+
+%% part "A"
+	It seems life has played a game on me _ _ _
+    I'm lost in a sea of misery _ _ _ _ _
+    My love _ has turned her back on me _ _ _
+    Heartaches why won't you _ _ let me be I said now
+
+   %% part "B"
+    Ba -- by have some mer -- cy please
+    Dont leave me baby on bended knee _
+    Oh please mer -- cy mer -- cy mer -- cy please
+    Have mer -- cy on me
+    Mer -- cy mer -- cy mer -- cy please
+    How can I face life _ with out you
+    What would I do if we were through
+
+}
+
+
+
+
+
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
+	
+
+
+
+
+
+\lyricmode {
+
+%% part "A"
+    Don't you know -- babe I wait for you _ every single night
+    Hop -- ing you'll re -- turn and make things right _ _ _
+    You don′t show and I′m sitting here all alone (all alone) _
+    To pray you're gon -- na call me on the phone _ _
+
+   %% part "B"
+    Ba -- by, have some mer -- cy please
+    Don′t make your mama beg on bended knee Oh please
+    mer -- cy mer -- cy mer -- cy please
+    Have mer -- cy on me
+    mer -- cy mer -- cy mer -- cy please
+
+    You know I love you and I'm beg -- ging
+    For one more chance, one chance, once more
+}
+
+
+
+
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
+	
+
+
+
+
+
+
+
+
+\lyricmode {
+
+%% part "A"
+    I know life′s got _ ma -- ny a twist _ _ _
+    Loving you, baby, is a thing I cannot resist _ _ _
+    Your love and un -- der -- stan -- ding you′ve been giving giving giving
+    Without it, I just can't _ go  on living _ _ _
+
+   %% part "B"
+    Ba -- by, have some mer -- cy please
+    Don't leave me, baby, on bended knee
+    I say now, mer -- cy, mer -- cy, mer -- cy please
+    Have mer -- cy on me
+    mer -- cy, mer -- cy, mer -- cy please
+    Have mer -- cy on me.
+}
+
+}
+	>>
+	\layout {
+	}
+}
+
+
+\noPageBreak
+\markup \column {
+%% just a little space
+	\null
+	\fill-line {
+		\smaller \smaller { "Copyright © 1966 ZAWINUL MUSIC, ADivisionofGopam Enterprises,Inc." }
+	}
+	\fill-line {
+		\smaller \smaller { "Typeset by Werner Grünberger <openbook@wernergruenberger.de>" }
 	}
 }
 
