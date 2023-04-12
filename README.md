@@ -57,7 +57,7 @@ used by Jazz musicians both for practice and for performance.
 * PyMySQL: Pure Python MySQL Driver
 * Mako: A super-fast templating language that borrows the best ideas from the existing templating languages.
 * requests: Python HTTP for Humans.
-* gitpython: GitPython is a python library used to interact with Git repositories
+* gitpython: GitPython is a Python library used to interact with Git repositories
 
 ## What is produced?
 Beautiful and lightweight postscript and PDF real books with Jazz tunes.
