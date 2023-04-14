@@ -378,6 +378,6 @@ out/lint.stamp: $(SCRIPTS)
 real_books_archive.gi: $(REAL_BOOKS_STAMP)
 $(REAL_BOOKS_STAMP):
 	$(info doing [$@])
-	$(Q)wget -qO- https://www.dropbox.com/s/ocwfrjqx14eug3c/real_books_archive.gi.tar.gz?dl=1 | tar xzvf -
+	$(Q)wget -qO- https://www.dropbox.com/s/birwhwe6g7ojqnh/real_books_archive.gi.tar.gz?dl=1 | tar xzvf -
 	$(Q)mkdir -p $(dir $@)
 	$(Q)touch $@
