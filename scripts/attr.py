@@ -117,7 +117,7 @@ books_dont_have = {"ja54"}
 DO_CHECK_LOCATION = False
 
 # where are all the fake books?
-FOLDER = "real_books_archive"
+FOLDER = "real_books_archive.gi"
 
 
 def check_int(val):

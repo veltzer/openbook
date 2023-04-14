@@ -190,8 +190,8 @@ Just edit `include/common.ly.mako` and change TONALITY="c" to "bes" or "ees" bef
 ## How do I download the external pdfs to compare them to this project?
 Just run:
 ``` sh
-make real_books_archive
+make real_books_archive.gi
 ```
-and look at the resulting `real_books_archive` folder that is created.
+and look at the resulting `real_books_archive.gi` folder that is created.
 
 Mark Veltzer, Copyright © 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023

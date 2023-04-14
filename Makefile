@@ -374,10 +374,10 @@ out/lint.stamp: $(SCRIPTS)
 	$(Q)pymakehelper error_on_print python -m pylint --reports=n --score=n $(SCRIPTS)
 	$(Q)mkdir -p $(dir $@)
 	$(Q)touch $@
-.PHONY: real_books_archive
-real_books_archive: $(REAL_BOOKS_STAMP)
+.PHONY: real_books_archive.gi
+real_books_archive.gi: $(REAL_BOOKS_STAMP)
 $(REAL_BOOKS_STAMP):
 	$(info doing [$@])
-	$(Q)wget -qO- https://www.dropbox.com/s/ocwfrjqx14eug3c/real_books_archive.tar.gz?dl=1 | tar xzvf -
+	$(Q)wget -qO- https://www.dropbox.com/s/ocwfrjqx14eug3c/real_books_archive.gi.tar.gz?dl=1 | tar xzvf -
 	$(Q)mkdir -p $(dir $@)
 	$(Q)touch $@
