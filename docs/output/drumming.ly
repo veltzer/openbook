@@ -11,7 +11,7 @@
 % this version tag will keep me compiling only on this version of lilypond.
 %=====================================================================
 
-\version "2.22.1"
+\version "2.22.2"
 
 % lets define a variable to hold the formatted build date (man 3 strftime):
 %date=#(strftime "%T %d-%m-%Y" (localtime (current-time)))
@@ -247,7 +247,7 @@ endChords={}
 				\fill-line {
 					\huge \bold \concat {
 						"Typesetting copyright: © 2011-"
-						2022
+						2023
 						" Mark Veltzer "
 						"<" \with-url #"mailto:mark.veltzer@gmail.com" mark.veltzer@gmail.com ">"
 					}
@@ -257,14 +257,14 @@ endChords={}
 				\null
 				\null
 				\null
-				\fill-line { \small "Git tag: 173" }
-				\fill-line { \small "Git describe: 173-76-g658ca56a" }
-				\fill-line { \small "Git commits: 1817" }
-				\fill-line { \small "Build date: 19:44:47 09-10-2022" }
+				\fill-line { \small "Git tag: 177" }
+				\fill-line { \small "Git describe: 177-10-g34abefd6" }
+				\fill-line { \small "Git commits: 1843" }
+				\fill-line { \small "Build date: 10:21:40 17-04-2023" }
 				\fill-line { \small "Build user: mark" }
-				\fill-line { \small "Build host: newton" }
-				\fill-line { \small "Build kernel: Linux 5.15.0-48-lowlatency" }
-				\fill-line { \small "Lilypond version: 2.22.1" }
+				\fill-line { \small "Build host: cantor" }
+				\fill-line { \small "Build kernel: Linux 5.19.0-1009-lowlatency" }
+				\fill-line { \small "Lilypond version: 2.22.2" }
 				\fill-line { \small "Number of tunes: 1" }
 				\null
 				\null
