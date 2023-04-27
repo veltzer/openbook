@@ -27,6 +27,11 @@ from pytconf import Config, ParamCreator, config_arg_parse_and_launch, register_
 from pytconf.extended_enum import ExtendedEnum
 
 
+DESCRIPTION="Run the lilypond wrapper"
+VERSION="1.0"
+APP_NAME="lilypond wrapper"
+
+
 def remove_outputs_if_exist() -> None:
     """
     remove the target files, do nothing if they are not there
@@ -187,9 +192,9 @@ def run() -> None:
 
 
 @register_main(
-        app_name="lilypond wrapper",
-        main_description="Run the lilypond wrapper",
-        version="1.0",
+        app_name=APP_NAME,
+        main_description=DESCRIPTION,
+        version=VERSION,
 )
 def main() -> None:
     """ main entry point """
