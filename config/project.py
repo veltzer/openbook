@@ -1,3 +1,4 @@
+name = "openbook"
 name_fancy = "OpenBook"
 description_short = "OpenBook is an open source Jazz real book"
 description_long = "OpenBook is a standards book for Jazz players which containts hundreds of jazz standards"
