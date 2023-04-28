@@ -4,7 +4,7 @@
     import pydmt.helpers.signature
     import pydmt.helpers.urls
     import config.project
-    import user.personal
+    import config.personal
     import os.path
     import glob
     import yaml
@@ -23,7 +23,7 @@ ${"##"} build
 	for action_file in action_files:
 		with open(action_file, 'r') as stream:
 			action_name=yaml.safe_load(stream)["name"]
-			context.write(f"![{action_name}](https://github.com/{user.personal.github_username}/{pydmt.helpers.project.get_name()}/workflows/{action_name}/badge.svg)")
+			context.write(f"![{action_name}](https://github.com/{config.personal.github_username}/{pydmt.helpers.project.get_name()}/workflows/{action_name}/badge.svg)")
 %>
 
 % if hasattr(config.project, "description_long"):
@@ -37,4 +37,4 @@ chat with me at [![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gi
 % if os.path.isfile("snipplets/main.md.mako"):
 <%include file="../snipplets/main.md.mako" />
 % endif
-${user.personal.fullname}, Copyright © ${pydmt.helpers.signature.get_copyright_years_long()}
+${config.personal.fullname}, Copyright © ${pydmt.helpers.signature.get_copyright_years_long()}

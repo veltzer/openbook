@@ -4,7 +4,7 @@
     import pydmt.helpers.misc
     import pydmt.helpers.urls
     import config.project
-    import user.personal
+    import config.personal
 %><!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -12,7 +12,7 @@
 		<title>${pydmt.helpers.project.get_name()}</title>
 		<link rel="shortcut icon" href="favicon.ico"/>
 		<meta name="Description" content="${config.project.description_long}"/>
-		<meta name="Keywords" content="${user.personal.fullname}, ${user.personal.slug}, ${pydmt.helpers.project.get_name()}, ${', '.join(config.project.keywords)}"/>
+		<meta name="Keywords" content="${config.personal.fullname}, ${config.personal.slug}, ${pydmt.helpers.project.get_name()}, ${', '.join(config.project.keywords)}"/>
 	</head>
 	<body>
 		<h1>Welcome to the <i>${config.project.name_fancy}</i> web site</h1>
@@ -27,7 +27,7 @@
 		<p><b>${pydmt.helpers.project.get_name()}</b> is an open source project to build a free, high quality "real book"
 		for Jazz musicians. A real book simply means a big book with lots of Jazz tunes or standards as they are more widely known. <b>${pydmt.helpers.project.get_name()}</b> will always remain free and is guarateed so by it's license. The goal of production is beautiful and lightweight postscript and PDF real books with Jazz tunes. The idea is that the end user can control the final output and decide if he/she wants lyrics, size of paper, transposition for trumpet, selection of tunes and more. In addition you can produce midi, mp3 and ogg outputs. The end user can also, obviously, modify add or remove tunes or use the tunes in <b>${pydmt.helpers.project.get_name()}</b> as the basis of arrangements.</p>
 
-		<p>The project is developed by me, ${user.personal.fullname}, and you can contact me at <a href="mailto:${user.personal.email}">${user.personal.email}</a>. There is already a handful of contributors who contributed or are contributing to this project and you can see the ones that are contributing by name in the git changelog. Some are contributing anonymously because of copyright issues. Anyone is welcome to contribute anonymously or by name (it is your choice).</p>
+		<p>The project is developed by me, ${config.personal.fullname}, and you can contact me at <a href="mailto:${config.personal.email}">${config.personal.email}</a>. There is already a handful of contributors who contributed or are contributing to this project and you can see the ones that are contributing by name in the git changelog. Some are contributing anonymously because of copyright issues. Anyone is welcome to contribute anonymously or by name (it is your choice).</p>
 
 		<p>The license for the project is currently ${config.project.license_type}. This is only so because I did not have time to think more deeply about the issue. It may change in the future as a result of future thinking on my part and the fact that I am the only copyright holder. The fact that the tunes inside the book have their own copyright holders complicates matters. In any case I am committed to keeping the project free in the free software sense and you are well within your rights to take a snapshot of it and continue developing it on your own when and if you feel that a future license selection does not match your expectations.</p>
 
@@ -107,8 +107,8 @@
 			</li>
 		</ul>
 		<p>
-			Copyright ${user.personal.fullname} © ${pydmt.helpers.signature.get_copyright_years_long()}
-			<a href="mailto:${user.personal.email}">${user.personal.email}</a>
+			Copyright ${config.personal.fullname} © ${pydmt.helpers.signature.get_copyright_years_long()}
+			<a href="mailto:${config.personal.email}">${config.personal.email}</a>
 		</p>
 	</body>
 </html>
