@@ -71,6 +71,7 @@ coverage.xml
 *.egg-info/
 
 # mine
+/.pydmt.build.errors
 /.pydmt/
 *.stamp
 
