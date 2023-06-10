@@ -27,7 +27,7 @@
 	- document what was done in this song.
 % endif
 
-<%namespace name="defs" file="../../include/defs.ly.mako"/>
+<%namespace name="defs" file="../../../include/defs.ly.mako"/>
 
 % if part=='ChordsMy':
 \chordmode {

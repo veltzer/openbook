@@ -37,7 +37,7 @@
 	REMARKS:
 % endif
 
-<%namespace name="defs" file="../../include/defs.ly.mako"/>
+<%namespace name="defs" file="../../../include/defs.ly.mako"/>
 
 <%def name="chords()">
 	\chordmode {

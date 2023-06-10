@@ -31,7 +31,7 @@
 	- mark what has been done to this song (I think it is done).
 % endif
 
-<%namespace name="defs" file="../../include/defs.ly.mako"/>
+<%namespace name="defs" file="../../../include/defs.ly.mako"/>
 
 <%def name="chords()">
 	\chordmode {

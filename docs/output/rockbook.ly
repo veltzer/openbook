@@ -11,7 +11,7 @@
 % this version tag will keep me compiling only on this version of lilypond.
 %=====================================================================
 
-\version "2.22.2"
+\version "2.24.1"
 
 % lets define a variable to hold the formatted build date (man 3 strftime):
 %date=#(strftime "%T %d-%m-%Y" (localtime (current-time)))
@@ -258,13 +258,13 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 177" }
-				\fill-line { \small "Git describe: 177-18-g15cc7044" }
-				\fill-line { \small "Git commits: 1851" }
-				\fill-line { \small "Build date: 14:55:06 09-05-2023" }
+				\fill-line { \small "Git describe: 177-19-g83093b55" }
+				\fill-line { \small "Git commits: 1852" }
+				\fill-line { \small "Build date: 19:03:46 10-06-2023" }
 				\fill-line { \small "Build user: mark" }
-				\fill-line { \small "Build host: cantor" }
-				\fill-line { \small "Build kernel: Linux 5.19.0-1009-lowlatency" }
-				\fill-line { \small "Lilypond version: 2.22.2" }
+				\fill-line { \small "Build host: newton" }
+				\fill-line { \small "Build kernel: Linux 6.2.0-1003-lowlatency" }
+				\fill-line { \small "Lilypond version: 2.24.1" }
 				\fill-line { \small "Number of tunes: 11" }
 				\null
 				\null
@@ -294,6 +294,434 @@ endChords={}
 \pageBreak
 
 % from here everything needs to go into a loop
+
+% include anything the user wants before the bookpart starts
+
+
+
+
+
+
+
+
+
+\bookpart {
+
+% this causes the variables to be defined...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% now play with the variables that depend on language
+
+
+
+% calculate the tag line
+
+
+% calculate the typesetby
+
+
+
+
+\tocItem \markup "Forever Young / Alphaville"
+
+
+
+
+
+% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
+\markup {
+	\column {
+		\override #'(baseline-skip . 3.5)
+		\column {
+			\huge \larger \bold
+			\fill-line { \larger "Forever Young" }
+			\fill-line {
+				""
+				"Music by Alphaville"
+			}
+			\fill-line {
+				"Med. Ballad"
+				""
+			}
+		}
+	}
+}
+\noPageBreak
+
+
+
+
+
+
+
+
+
+\score {
+<<
+		\new FretBoards {
+			
+	\chordmode {
+		\startChords
+		\mark "Intro"
+		c1 | g1:7 | a1:m | f1 | g1:7 | d1:m | f1 | c2. g4:7 |
+		\mark "Verse"
+		c1 | g1:7 | a1:m | f1 | g1:7 | d1:m | f1 | a2.:m g4:7 |
+		\endChords
+	}
+
+		}
+		
+	\new ChordNames="Chords"
+	\with {
+		\override BarLine #'bar-extent = #'(-2 . 2)
+		\consists "Bar_engraver"
+	}
+
+		
+	\chordmode {
+		\startChords
+		\mark "Intro"
+		c1 | g1:7 | a1:m | f1 | g1:7 | d1:m | f1 | c2. g4:7 |
+		\mark "Verse"
+		c1 | g1:7 | a1:m | f1 | g1:7 | d1:m | f1 | a2.:m g4:7 |
+		\endChords
+	}
+
+\new Voice="melody" \relative c' {
+	\time 4/4
+	\key c \major
+
+%% part "Intro"
+	e'1 | d | c | c | d | d | c | c2. b4 |
+
+%% part "Verse"
+	r2 g8 g g g~ | g4 f e8 e d e~ | e2 e8 e g f~ | f4 e c8 c d d~ |
+	d2 d8 c d c | e4 d c8 c a c~ | c4 c8 a c a c a | c4 a2 r4 |
+}
+\new Lyrics \lyricsto "melody" {
+	_ _ _ _ _ _ _ _ _
+
+	Let's dance in style, let's dance for a while
+	Hea -- ven can wait we're only watching the skies
+	Ho -- ping for the best but expecting the worst
+	Are you gonna drop the bomb or not?
+
+	Let us die young or let us live forever
+	We don't have the power but we never say never
+	Sitting in a sandpit, life is a short trip
+	The music's for the sad man
+
+	Can you imagine when this race is won
+	Turn our golden faces into the sun
+	Praising our leaders we're getting in tune
+	The music's played by the, the madman
+
+	Forever young, I want to be forever young
+	Do you really want to live forever?
+	Forever, or never
+
+	Forever young, I want to be forever young
+	Do you really want to live forever?
+	Forever young
+
+	Some are like water, some are like the heat
+	Some are a melody and some are the beat
+	Sooner or later they all will be gone
+	Why don't they stay young?
+
+	It's so hard to get old without a cause
+	I don't want to perish like a fading rose
+	Youth like diamonds in the sun
+	And diamonds are forever
+
+	So many adventures couldn't happen today
+	So many songs we forgot to play
+	So many dreams are swinging out of the blue
+	We let 'em come true
+
+	Forever young, I want to be forever young
+	Do you really want to live forever?
+	Forever, or never
+
+	Forever young, I want to be forever young
+	Do you really want to live forever?
+	Forever, or never
+
+	Forever young, I wanna be forever young
+	Do you really want to live forever?
+}
+>>
+%%\midi {
+%%	\context {
+%%		\Score
+%%		tempoWholesPerMinute = #(ly:make-moment 130/4)
+%%	}
+%%}
+	\layout {}
+}
+
+
+\noPageBreak
+\markup \column {
+%% just a little space
+	\null
+	\fill-line {
+		\smaller \smaller { "-- help me fill it out this copyright notice --" }
+	}
+	\fill-line {
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
+	}
+}
+
+
+
+}
+
+
+% include anything the user wants before the bookpart starts
+
+
+
+
+
+
+
+
+
+\bookpart {
+
+% this causes the variables to be defined...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% now play with the variables that depend on language
+
+
+
+% calculate the tag line
+
+
+% calculate the typesetby
+
+
+
+
+\tocItem \markup "She Loves You / John Lennon, Paul McCartney"
+
+
+
+
+
+% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
+\markup {
+	\column {
+		\override #'(baseline-skip . 3.5)
+		\column {
+			\huge \larger \bold
+			\fill-line { \larger "She Loves You" }
+			\fill-line {
+				""
+				"Lyrics and Music by John Lennon, Paul McCartney"
+			}
+			\fill-line {
+				"Moderato"
+				""
+			}
+		}
+	}
+}
+\noPageBreak
+
+
+% include the preparatory stuff, if there is any
+
+% calculate the vars
+
+
+
+% score for printing
+\score {
+	<<
+\new ChordNames="Chords"
+	\with {
+		\remove "Bar_engraver"
+	}
+% # transpose with 'inline' is true!
+	\transpose c c {
+
+
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\partial 8 s8 |
+
+	\repeat volta 3 {
+
+		\myMark "A"
+		\startPart
+		f1 | d:m | a:m | c:7 | \myEndLine
+		f | d:m | a:m | c:7 | \myEndLine
+		f | f | d:m | d:m | \myEndLine
+		bes:m6 | bes:m6 | c:7 | c:7 | \myEndLine
+		\endPart
+
+		\myMark "B"
+		\startPart
+		d:m | d:m | g:7 | g:7 | \myEndLine
+		bes:m6 | c2:7.5+ c:7 | f1 | f | \myEndLine
+		\endPart
+	}
+
+	\endSong
+	\endChords
+}
+
+
+}
+% this thing will only engrave voltas. This is required to put the volta under the chords.
+% No great harm will happen if you don't put it, only the voltas will be above the chords.
+%\new Staff \with {
+%	\consists "Volta_engraver"
+%}
+\new Staff="Melody" {
+\new Voice="Voice"
+% # transpose with 'inline' is true!
+	\transpose c c { \relative c'
+	
+
+
+
+
+
+{
+	\tempo "Moderato" 4 = 112
+	\time 4/4
+	\key f \major
+
+	\partial 8 c'8-2 |
+	f4-1 g a bes8 <f a>~ | <f a>2. a8-3 a | << { c4-5 a a4. g8 } \\ { e1-1 } >> | <e a>8 c' <e, a>2 r8 c' |
+	f,4-1 g a bes8 <f a>~ | <f a>2. a8 a | << { c4 a a4. g8 } \\ { e1 } >> | <e a>8 c' <e, a>4 r8 c'-2 c c |
+	d4-3 f2 f,8-3 g |
+}
+
+ }
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
+	
+
+
+
+
+
+
+\lyricmode {
+	You think you've lost your love, __
+	Well, I saw her yesterday.
+	It's you she's thinking of
+	And she told me what to say.
+
+	She loves you, yeah, yeah, yeah
+	She loves you, yeah, yeah, yeah
+	She loves you, yeah, yeah, yeah, yeah
+
+	She says she loves you
+	And you know that can't be bad.
+	Yes, she loves you
+	And you know you should be glad.
+
+	She said you hurt her so
+	She almost lost her mind.
+	But now she said she knows
+	You're not the hurting kind.
+
+	She says she loves you
+	And you know that can't be bad.
+	Yes, she loves you
+	And you know you should be glad. Ooh!
+
+	She loves you, yeah, yeah, yeah
+	She loves you, yeah, yeah, yeah
+	And with a love like that
+	You know you should be glad.
+
+	You know it's up to you,
+	I think it's only fair,
+	Pride can hurt you, too,
+	Apologize to her
+
+	Because she loves you
+	And you know that can't be bad.
+	Yes, she loves you
+	And you know you should be glad. Ooh!
+
+	She loves you, yeah, yeah, yeah
+	She loves you, yeah, yeah, yeah
+
+	with a love like that
+	You know you should
+	Be Glad!
+
+	with a love like that
+	You know you should
+	Be Glad!
+
+	With a love like that
+	You know you should
+	be glad!
+
+	Yeah, yeah, yeah.
+	Yeah, yeah, yeah Ye-ah.
+}
+
+}
+	>>
+	\layout {
+	}
+}
+
+
+\noPageBreak
+\markup \column {
+%% just a little space
+	\null
+	\fill-line {
+		\smaller \smaller { "-- help me fill it out this copyright notice --" }
+	}
+	\fill-line {
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
+	}
+}
+
+
+
+}
+
 
 % include anything the user wants before the bookpart starts
 
@@ -672,780 +1100,6 @@ endChords={}
 				"Hit me baby one more time"
 			}
 		}
-	}
-}
-
-
-\noPageBreak
-\markup \column {
-%% just a little space
-	\null
-	\fill-line {
-		\smaller \smaller { "-- help me fill it out this copyright notice --" }
-	}
-	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
-	}
-}
-
-
-
-}
-
-
-% include anything the user wants before the bookpart starts
-
-
-
-
-
-
-
-
-
-\bookpart {
-
-% this causes the variables to be defined...
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-% now play with the variables that depend on language
-
-
-
-% calculate the tag line
-
-
-% calculate the typesetby
-
-
-
-
-\tocItem \markup "Creep / Radiohead"
-
-
-
-
-
-% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
-\markup {
-	\column {
-		\override #'(baseline-skip . 3.5)
-		\column {
-			\huge \larger \bold
-			\fill-line { \larger "Creep" }
-			\fill-line {
-				""
-				"Lyrics and Music by Radiohead"
-			}
-			\fill-line {
-				"Med. Ballad"
-				""
-			}
-		}
-	}
-}
-\noPageBreak
-
-
-
-
-
-
-
-
-
-\score {
-	<<
-		\new FretBoards {
-			
-	\chordmode {
-		\startChords
-		\startRepeat
-		g1*4 | b | c | c:m |
-		\endRepeat
-		\endChords
-	}
-
-		}
-		\new ChordNames="Chords"
-		
-	\new ChordNames="Chords"
-	\with {
-		\override BarLine #'bar-extent = #'(-2 . 2)
-		\consists "Bar_engraver"
-	}
-
-		
-	\chordmode {
-		\startChords
-		\startRepeat
-		g1*4 | b | c | c:m |
-		\endRepeat
-		\endChords
-	}
-
-	>>
-%%\midi {}
-	\layout {}
-}
-
-% Lyrics
-\verticalSpace
-\verticalSpace
-\markup {
-	\small {
-		\concat {
-			\column {
-				\box "Verse"
-				"When you were here before"
-				"Couldn't look you in the eye"
-				"You're just like an angel"
-				"Your skin makes me cry"
-				\vspace #0.3
-				\box "Verse"
-				"You float like a feather"
-				"In a beautiful world"
-				"I wish I was special"
-				"You're so fucking special"
-				\vspace #0.3
-				\box "Chorus"
-				"But I 'm a creep"
-				"I 'm a weirdo"
-				"What the hell am I doing here?"
-				"I don't belong here"
-			}
-			\hspace #3
-			\column {
-				\box "Verse"
-				"I don't care if it hurts"
-				"I want to have control"
-				"I want a perfect body"
-				"I want a perfect soul"
-				\vspace #0.3
-				\box "Verse"
-				"I want you to notice"
-				"When I'm not around"
-				"You're so fucking special"
-				"I wish I was special"
-				\vspace #0.3
-				\box "Chorus"
-				"But I'm a creep"
-				"I'm a weirdo"
-				"What the hell am I doing here?"
-				"I don't belong here"
-			}
-			\hspace #3
-			\column {
-				\box "Chorus"
-				"She's running out again"
-				"She's running out"
-				"She run, run, run run"
-				"Run"
-				\vspace #0.3
-				\box "Verse"
-				"Whatever makes you happy"
-				"Whatever you want"
-				"You're so fucking special"
-				"I wish I was special"
-				\vspace #0.3
-				\box "Chorus"
-				"But I'm a creep"
-				"I'm a weirdo"
-				"What the hell am I doing here?"
-				"I don't belong here"
-				"I don't belong here."
-			}
-		}
-	}
-}
-
-
-\noPageBreak
-\markup \column {
-%% just a little space
-	\null
-	\fill-line {
-		\smaller \smaller { "-- help me fill it out this copyright notice --" }
-	}
-	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
-	}
-}
-
-
-
-}
-
-
-% include anything the user wants before the bookpart starts
-
-
-
-
-
-
-
-
-
-\bookpart {
-
-% this causes the variables to be defined...
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-% now play with the variables that depend on language
-
-
-
-% calculate the tag line
-
-
-% calculate the typesetby
-
-
-
-
-\tocItem \markup "Days Like This / Van Morrison"
-
-
-
-
-
-% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
-\markup {
-	\column {
-		\override #'(baseline-skip . 3.5)
-		\column {
-			\huge \larger \bold
-			\fill-line { \larger "Days Like This" }
-			\fill-line {
-				""
-				"Lyrics and Music by Van Morrison"
-			}
-			\fill-line {
-				"Med. Ballad"
-				""
-			}
-		}
-	}
-}
-\noPageBreak
-
-
-
-
-
-
-
-
-
-\score {
-	<<
-		\new FretBoards {
-			
-	\chordmode {
-		\startChords
-		\startSong
-
-		\mark "Opening"
-		\startPart
-		aes2 ees | aes2 ees | aes2 ees | aes2 ees |
-		\endPart
-
-		\mark "Verse"
-		\startPart
-		ees2 c:m | aes ees | ees2 c:m | aes ees |
-		aes bes:7 | ees4 ees/e c2:m | aes bes:7 | aes ees |
-		\endPart
-
-		\mark "Interlude"
-		\startPart
-		aes2 ees |
-		\endPart
-
-		\mark "Ending"
-		\startPart
-		ees c:m | aes ees | ees c:m | aes ees |
-		aes bes:7 | ees4 ees/e c2:m | aes bes:7 | aes ees |
-		aes bes:7 | aes ees | aes bes:7 | aes ees | aes bes:7 | aes ees |
-		\endPart
-
-		\endSong
-		\endChords
-	}
-
-		}
-		
-	\new ChordNames="Chords"
-	\with {
-		\override BarLine #'bar-extent = #'(-2 . 2)
-		\consists "Bar_engraver"
-	}
-
-		
-	\chordmode {
-		\startChords
-		\startSong
-
-		\mark "Opening"
-		\startPart
-		aes2 ees | aes2 ees | aes2 ees | aes2 ees |
-		\endPart
-
-		\mark "Verse"
-		\startPart
-		ees2 c:m | aes ees | ees2 c:m | aes ees |
-		aes bes:7 | ees4 ees/e c2:m | aes bes:7 | aes ees |
-		\endPart
-
-		\mark "Interlude"
-		\startPart
-		aes2 ees |
-		\endPart
-
-		\mark "Ending"
-		\startPart
-		ees c:m | aes ees | ees c:m | aes ees |
-		aes bes:7 | ees4 ees/e c2:m | aes bes:7 | aes ees |
-		aes bes:7 | aes ees | aes bes:7 | aes ees | aes bes:7 | aes ees |
-		\endPart
-
-		\endSong
-		\endChords
-	}
-
-	>>
-%%\midi {}
-	\layout {}
-}
-
-% Lyrics
-\verticalSpace
-\verticalSpace
-\markup {
-	\small {
-		\concat {
-			\column {
-				\box "Verse"
-				"When its not always raining therell be days like this"
-				"When theres no one complaining therell be days like this"
-				"When everything falls into place like the flick of a switch"
-				"Well my mama told me therell be days like this"
-				\vspace #0.3
-				\box "Verse"
-				"When you dont need to worry therell be days like this"
-				"When no ones in a hurry therell be days like this"
-				"When all the parts of the puzzle start to look like they fit"
-				"Then I must remember therell be days like this"
-				\vspace #0.3
-				\box "Verse"
-				"When you dont need an answer therell be days like this"
-				"When you dont meet a chancer therell be days like this"
-				"When you dont get betrayed by that old judas kiss"
-				"Then I must remember therell be days like this"
-			}
-			\hspace #3
-			\column {
-				\box "Verse"
-				"When everyone is up front and theyre not playing tricks"
-				"When you dont have no freeloaders out to get their kicks"
-				"When its nobodys business the way that you wanna live"
-				"Well my mama told me therell be days like this"
-				\vspace #0.3
-				\box "Verse"
-				"When no one steps on my dreams therell be days like this"
-				"When people understand what I mean therell be days like this"
-				"When you ring out the changes about how everything is"
-				"Well my mama told me therell be days like this"
-				\vspace #0.3
-				\box "Ending"
-				"Well my mama told me Therell be days like this"
-				"Well my mama told me Therell be days like this"
-				"Well my mama told me Therell be days like this"
-				"Oh my mama told me (she said) Therell be days like this"
-			}
-		}
-	}
-}
-
-
-\noPageBreak
-\markup \column {
-%% just a little space
-	\null
-	\fill-line {
-		\smaller \smaller { "-- help me fill it out this copyright notice --" }
-	}
-	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
-	}
-}
-
-
-
-}
-
-
-% include anything the user wants before the bookpart starts
-
-
-
-
-
-
-
-
-
-\bookpart {
-
-% this causes the variables to be defined...
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-% now play with the variables that depend on language
-
-
-
-% calculate the tag line
-
-
-% calculate the typesetby
-
-
-
-
-\tocItem \markup "Forever Young / Alphaville"
-
-
-
-
-
-% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
-\markup {
-	\column {
-		\override #'(baseline-skip . 3.5)
-		\column {
-			\huge \larger \bold
-			\fill-line { \larger "Forever Young" }
-			\fill-line {
-				""
-				"Music by Alphaville"
-			}
-			\fill-line {
-				"Med. Ballad"
-				""
-			}
-		}
-	}
-}
-\noPageBreak
-
-
-
-
-
-
-
-
-
-\score {
-<<
-		\new FretBoards {
-			
-	\chordmode {
-		\startChords
-		\mark "Intro"
-		c1 | g1:7 | a1:m | f1 | g1:7 | d1:m | f1 | c2. g4:7 |
-		\mark "Verse"
-		c1 | g1:7 | a1:m | f1 | g1:7 | d1:m | f1 | a2.:m g4:7 |
-		\endChords
-	}
-
-		}
-		
-	\new ChordNames="Chords"
-	\with {
-		\override BarLine #'bar-extent = #'(-2 . 2)
-		\consists "Bar_engraver"
-	}
-
-		
-	\chordmode {
-		\startChords
-		\mark "Intro"
-		c1 | g1:7 | a1:m | f1 | g1:7 | d1:m | f1 | c2. g4:7 |
-		\mark "Verse"
-		c1 | g1:7 | a1:m | f1 | g1:7 | d1:m | f1 | a2.:m g4:7 |
-		\endChords
-	}
-
-\new Voice="melody" \relative c' {
-	\time 4/4
-	\key c \major
-
-%% part "Intro"
-	e'1 | d | c | c | d | d | c | c2. b4 |
-
-%% part "Verse"
-	r2 g8 g g g~ | g4 f e8 e d e~ | e2 e8 e g f~ | f4 e c8 c d d~ |
-	d2 d8 c d c | e4 d c8 c a c~ | c4 c8 a c a c a | c4 a2 r4 |
-}
-\new Lyrics \lyricsto "melody" {
-	_ _ _ _ _ _ _ _ _
-
-	Let's dance in style, let's dance for a while
-	Hea -- ven can wait we're only watching the skies
-	Ho -- ping for the best but expecting the worst
-	Are you gonna drop the bomb or not?
-
-	Let us die young or let us live forever
-	We don't have the power but we never say never
-	Sitting in a sandpit, life is a short trip
-	The music's for the sad man
-
-	Can you imagine when this race is won
-	Turn our golden faces into the sun
-	Praising our leaders we're getting in tune
-	The music's played by the, the madman
-
-	Forever young, I want to be forever young
-	Do you really want to live forever?
-	Forever, or never
-
-	Forever young, I want to be forever young
-	Do you really want to live forever?
-	Forever young
-
-	Some are like water, some are like the heat
-	Some are a melody and some are the beat
-	Sooner or later they all will be gone
-	Why don't they stay young?
-
-	It's so hard to get old without a cause
-	I don't want to perish like a fading rose
-	Youth like diamonds in the sun
-	And diamonds are forever
-
-	So many adventures couldn't happen today
-	So many songs we forgot to play
-	So many dreams are swinging out of the blue
-	We let 'em come true
-
-	Forever young, I want to be forever young
-	Do you really want to live forever?
-	Forever, or never
-
-	Forever young, I want to be forever young
-	Do you really want to live forever?
-	Forever, or never
-
-	Forever young, I wanna be forever young
-	Do you really want to live forever?
-}
->>
-%%\midi {
-%%	\context {
-%%		\Score
-%%		tempoWholesPerMinute = #(ly:make-moment 130/4)
-%%	}
-%%}
-	\layout {}
-}
-
-
-\noPageBreak
-\markup \column {
-%% just a little space
-	\null
-	\fill-line {
-		\smaller \smaller { "-- help me fill it out this copyright notice --" }
-	}
-	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
-	}
-}
-
-
-
-}
-
-
-% include anything the user wants before the bookpart starts
-
-
-
-
-
-
-
-
-
-\bookpart {
-
-% this causes the variables to be defined...
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-% now play with the variables that depend on language
-
-
-
-% calculate the tag line
-
-
-% calculate the typesetby
-
-
-
-
-\tocItem \markup "Have I told you lately that I love you"
-
-
-
-
-
-% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
-\markup {
-	\column {
-		\override #'(baseline-skip . 3.5)
-		\column {
-			\huge \larger \bold
-			\fill-line { \larger "Have I told you lately that I love you" }
-			\fill-line {
-				""
-				""
-			}
-			\fill-line {
-				"Med. Ballad"
-				""
-			}
-		}
-	}
-}
-\noPageBreak
-
-
-% include the preparatory stuff, if there is any
-
-% calculate the vars
-
-
-
-% score for printing
-\score {
-	<<
-\new ChordNames="Chords"
-	\with {
-		\remove "Bar_engraver"
-	}
-% # transpose with 'inline' is true!
-	\transpose c c {
-
-
-
-
-\chordmode {
-	\startChords
-
-	\startSong
-
-	\repeat volta 2 {
-		f2:maj7 a:m7 | bes:maj7 c:7 |
-	}
-	bes1:maj7 | a:m7 | g2:m7 c:7 | f:maj7 r4 c:7 |
-
-	\endSong
-
-	\endChords
-}
-
-
-}
-% this thing will only engrave voltas. This is required to put the volta under the chords.
-% No great harm will happen if you don't put it, only the voltas will be above the chords.
-%\new Staff \with {
-%	\consists "Volta_engraver"
-%}
-\new Staff="Melody" {
-\new Voice="Voice"
-% # transpose with 'inline' is true!
-	\transpose c c { \relative c'
-	
-
-
-
-
-
-{
-	a
-}
-
- }
-}
-\new Lyrics="Lyrics" \lyricsto "Voice" {
-	
-
-
-
-
-
-
-\lyricmode {
-	Have I told you lately that I love you.
-	Have I told you that there's no one but you.
-	You give me so much gladness.
-	Take away all the sadness.
-	Take my troubles that's what you do.
-}
-
-}
-	>>
-	\layout {
 	}
 }
 
@@ -1952,6 +1606,202 @@ endChords={}
 
 
 
+
+\bookpart {
+
+% this causes the variables to be defined...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% now play with the variables that depend on language
+
+
+
+% calculate the tag line
+
+
+% calculate the typesetby
+
+
+
+
+\tocItem \markup "Creep / Radiohead"
+
+
+
+
+
+% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
+\markup {
+	\column {
+		\override #'(baseline-skip . 3.5)
+		\column {
+			\huge \larger \bold
+			\fill-line { \larger "Creep" }
+			\fill-line {
+				""
+				"Lyrics and Music by Radiohead"
+			}
+			\fill-line {
+				"Med. Ballad"
+				""
+			}
+		}
+	}
+}
+\noPageBreak
+
+
+
+
+
+
+
+
+
+\score {
+	<<
+		\new FretBoards {
+			
+	\chordmode {
+		\startChords
+		\startRepeat
+		g1*4 | b | c | c:m |
+		\endRepeat
+		\endChords
+	}
+
+		}
+		\new ChordNames="Chords"
+		
+	\new ChordNames="Chords"
+	\with {
+		\override BarLine #'bar-extent = #'(-2 . 2)
+		\consists "Bar_engraver"
+	}
+
+		
+	\chordmode {
+		\startChords
+		\startRepeat
+		g1*4 | b | c | c:m |
+		\endRepeat
+		\endChords
+	}
+
+	>>
+%%\midi {}
+	\layout {}
+}
+
+% Lyrics
+\verticalSpace
+\verticalSpace
+\markup {
+	\small {
+		\concat {
+			\column {
+				\box "Verse"
+				"When you were here before"
+				"Couldn't look you in the eye"
+				"You're just like an angel"
+				"Your skin makes me cry"
+				\vspace #0.3
+				\box "Verse"
+				"You float like a feather"
+				"In a beautiful world"
+				"I wish I was special"
+				"You're so fucking special"
+				\vspace #0.3
+				\box "Chorus"
+				"But I 'm a creep"
+				"I 'm a weirdo"
+				"What the hell am I doing here?"
+				"I don't belong here"
+			}
+			\hspace #3
+			\column {
+				\box "Verse"
+				"I don't care if it hurts"
+				"I want to have control"
+				"I want a perfect body"
+				"I want a perfect soul"
+				\vspace #0.3
+				\box "Verse"
+				"I want you to notice"
+				"When I'm not around"
+				"You're so fucking special"
+				"I wish I was special"
+				\vspace #0.3
+				\box "Chorus"
+				"But I'm a creep"
+				"I'm a weirdo"
+				"What the hell am I doing here?"
+				"I don't belong here"
+			}
+			\hspace #3
+			\column {
+				\box "Chorus"
+				"She's running out again"
+				"She's running out"
+				"She run, run, run run"
+				"Run"
+				\vspace #0.3
+				\box "Verse"
+				"Whatever makes you happy"
+				"Whatever you want"
+				"You're so fucking special"
+				"I wish I was special"
+				\vspace #0.3
+				\box "Chorus"
+				"But I'm a creep"
+				"I'm a weirdo"
+				"What the hell am I doing here?"
+				"I don't belong here"
+				"I don't belong here."
+			}
+		}
+	}
+}
+
+
+\noPageBreak
+\markup \column {
+%% just a little space
+	\null
+	\fill-line {
+		\smaller \smaller { "-- help me fill it out this copyright notice --" }
+	}
+	\fill-line {
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
+	}
+}
+
+
+
+}
+
+
+% include anything the user wants before the bookpart starts
+
+
+
+
+
+
+
+
 \bookpart {
 
 % this causes the variables to be defined...
@@ -2190,239 +2040,6 @@ endChords={}
 
 
 
-\tocItem \markup "She Loves You / John Lennon, Paul McCartney"
-
-
-
-
-
-% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
-\markup {
-	\column {
-		\override #'(baseline-skip . 3.5)
-		\column {
-			\huge \larger \bold
-			\fill-line { \larger "She Loves You" }
-			\fill-line {
-				""
-				"Lyrics and Music by John Lennon, Paul McCartney"
-			}
-			\fill-line {
-				"Moderato"
-				""
-			}
-		}
-	}
-}
-\noPageBreak
-
-
-% include the preparatory stuff, if there is any
-
-% calculate the vars
-
-
-
-% score for printing
-\score {
-	<<
-\new ChordNames="Chords"
-	\with {
-		\remove "Bar_engraver"
-	}
-% # transpose with 'inline' is true!
-	\transpose c c {
-
-
-
-
-\chordmode {
-	\startChords
-	\startSong
-
-	\partial 8 s8 |
-
-	\repeat volta 3 {
-
-		\myMark "A"
-		\startPart
-		f1 | d:m | a:m | c:7 | \myEndLine
-		f | d:m | a:m | c:7 | \myEndLine
-		f | f | d:m | d:m | \myEndLine
-		bes:m6 | bes:m6 | c:7 | c:7 | \myEndLine
-		\endPart
-
-		\myMark "B"
-		\startPart
-		d:m | d:m | g:7 | g:7 | \myEndLine
-		bes:m6 | c2:7.5+ c:7 | f1 | f | \myEndLine
-		\endPart
-	}
-
-	\endSong
-	\endChords
-}
-
-
-}
-% this thing will only engrave voltas. This is required to put the volta under the chords.
-% No great harm will happen if you don't put it, only the voltas will be above the chords.
-%\new Staff \with {
-%	\consists "Volta_engraver"
-%}
-\new Staff="Melody" {
-\new Voice="Voice"
-% # transpose with 'inline' is true!
-	\transpose c c { \relative c'
-	
-
-
-
-
-
-{
-	\tempo "Moderato" 4 = 112
-	\time 4/4
-	\key f \major
-
-	\partial 8 c'8-2 |
-	f4-1 g a bes8 <f a>~ | <f a>2. a8-3 a | << { c4-5 a a4. g8 } \\ { e1-1 } >> | <e a>8 c' <e, a>2 r8 c' |
-	f,4-1 g a bes8 <f a>~ | <f a>2. a8 a | << { c4 a a4. g8 } \\ { e1 } >> | <e a>8 c' <e, a>4 r8 c'-2 c c |
-	d4-3 f2 f,8-3 g |
-}
-
- }
-}
-\new Lyrics="Lyrics" \lyricsto "Voice" {
-	
-
-
-
-
-
-
-\lyricmode {
-	You think you've lost your love, __
-	Well, I saw her yesterday.
-	It's you she's thinking of
-	And she told me what to say.
-
-	She loves you, yeah, yeah, yeah
-	She loves you, yeah, yeah, yeah
-	She loves you, yeah, yeah, yeah, yeah
-
-	She says she loves you
-	And you know that can't be bad.
-	Yes, she loves you
-	And you know you should be glad.
-
-	She said you hurt her so
-	She almost lost her mind.
-	But now she said she knows
-	You're not the hurting kind.
-
-	She says she loves you
-	And you know that can't be bad.
-	Yes, she loves you
-	And you know you should be glad. Ooh!
-
-	She loves you, yeah, yeah, yeah
-	She loves you, yeah, yeah, yeah
-	And with a love like that
-	You know you should be glad.
-
-	You know it's up to you,
-	I think it's only fair,
-	Pride can hurt you, too,
-	Apologize to her
-
-	Because she loves you
-	And you know that can't be bad.
-	Yes, she loves you
-	And you know you should be glad. Ooh!
-
-	She loves you, yeah, yeah, yeah
-	She loves you, yeah, yeah, yeah
-
-	with a love like that
-	You know you should
-	Be Glad!
-
-	with a love like that
-	You know you should
-	Be Glad!
-
-	With a love like that
-	You know you should
-	be glad!
-
-	Yeah, yeah, yeah.
-	Yeah, yeah, yeah Ye-ah.
-}
-
-}
-	>>
-	\layout {
-	}
-}
-
-
-\noPageBreak
-\markup \column {
-%% just a little space
-	\null
-	\fill-line {
-		\smaller \smaller { "-- help me fill it out this copyright notice --" }
-	}
-	\fill-line {
-		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
-	}
-}
-
-
-
-}
-
-
-% include anything the user wants before the bookpart starts
-
-
-
-
-
-
-
-
-
-\bookpart {
-
-% this causes the variables to be defined...
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-% now play with the variables that depend on language
-
-
-
-% calculate the tag line
-
-
-% calculate the typesetby
-
-
-
-
 \tocItem \markup "Talkin' Bout A Revolution / Tracy Chapman"
 
 
@@ -2560,6 +2177,389 @@ endChords={}
 				"Talking about a revolution oh no"
 			}
 		}
+	}
+}
+
+
+\noPageBreak
+\markup \column {
+%% just a little space
+	\null
+	\fill-line {
+		\smaller \smaller { "-- help me fill it out this copyright notice --" }
+	}
+	\fill-line {
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
+	}
+}
+
+
+
+}
+
+
+% include anything the user wants before the bookpart starts
+
+
+
+
+
+
+
+
+
+\bookpart {
+
+% this causes the variables to be defined...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% now play with the variables that depend on language
+
+
+
+% calculate the tag line
+
+
+% calculate the typesetby
+
+
+
+
+\tocItem \markup "Days Like This / Van Morrison"
+
+
+
+
+
+% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
+\markup {
+	\column {
+		\override #'(baseline-skip . 3.5)
+		\column {
+			\huge \larger \bold
+			\fill-line { \larger "Days Like This" }
+			\fill-line {
+				""
+				"Lyrics and Music by Van Morrison"
+			}
+			\fill-line {
+				"Med. Ballad"
+				""
+			}
+		}
+	}
+}
+\noPageBreak
+
+
+
+
+
+
+
+
+
+\score {
+	<<
+		\new FretBoards {
+			
+	\chordmode {
+		\startChords
+		\startSong
+
+		\mark "Opening"
+		\startPart
+		aes2 ees | aes2 ees | aes2 ees | aes2 ees |
+		\endPart
+
+		\mark "Verse"
+		\startPart
+		ees2 c:m | aes ees | ees2 c:m | aes ees |
+		aes bes:7 | ees4 ees/e c2:m | aes bes:7 | aes ees |
+		\endPart
+
+		\mark "Interlude"
+		\startPart
+		aes2 ees |
+		\endPart
+
+		\mark "Ending"
+		\startPart
+		ees c:m | aes ees | ees c:m | aes ees |
+		aes bes:7 | ees4 ees/e c2:m | aes bes:7 | aes ees |
+		aes bes:7 | aes ees | aes bes:7 | aes ees | aes bes:7 | aes ees |
+		\endPart
+
+		\endSong
+		\endChords
+	}
+
+		}
+		
+	\new ChordNames="Chords"
+	\with {
+		\override BarLine #'bar-extent = #'(-2 . 2)
+		\consists "Bar_engraver"
+	}
+
+		
+	\chordmode {
+		\startChords
+		\startSong
+
+		\mark "Opening"
+		\startPart
+		aes2 ees | aes2 ees | aes2 ees | aes2 ees |
+		\endPart
+
+		\mark "Verse"
+		\startPart
+		ees2 c:m | aes ees | ees2 c:m | aes ees |
+		aes bes:7 | ees4 ees/e c2:m | aes bes:7 | aes ees |
+		\endPart
+
+		\mark "Interlude"
+		\startPart
+		aes2 ees |
+		\endPart
+
+		\mark "Ending"
+		\startPart
+		ees c:m | aes ees | ees c:m | aes ees |
+		aes bes:7 | ees4 ees/e c2:m | aes bes:7 | aes ees |
+		aes bes:7 | aes ees | aes bes:7 | aes ees | aes bes:7 | aes ees |
+		\endPart
+
+		\endSong
+		\endChords
+	}
+
+	>>
+%%\midi {}
+	\layout {}
+}
+
+% Lyrics
+\verticalSpace
+\verticalSpace
+\markup {
+	\small {
+		\concat {
+			\column {
+				\box "Verse"
+				"When its not always raining therell be days like this"
+				"When theres no one complaining therell be days like this"
+				"When everything falls into place like the flick of a switch"
+				"Well my mama told me therell be days like this"
+				\vspace #0.3
+				\box "Verse"
+				"When you dont need to worry therell be days like this"
+				"When no ones in a hurry therell be days like this"
+				"When all the parts of the puzzle start to look like they fit"
+				"Then I must remember therell be days like this"
+				\vspace #0.3
+				\box "Verse"
+				"When you dont need an answer therell be days like this"
+				"When you dont meet a chancer therell be days like this"
+				"When you dont get betrayed by that old judas kiss"
+				"Then I must remember therell be days like this"
+			}
+			\hspace #3
+			\column {
+				\box "Verse"
+				"When everyone is up front and theyre not playing tricks"
+				"When you dont have no freeloaders out to get their kicks"
+				"When its nobodys business the way that you wanna live"
+				"Well my mama told me therell be days like this"
+				\vspace #0.3
+				\box "Verse"
+				"When no one steps on my dreams therell be days like this"
+				"When people understand what I mean therell be days like this"
+				"When you ring out the changes about how everything is"
+				"Well my mama told me therell be days like this"
+				\vspace #0.3
+				\box "Ending"
+				"Well my mama told me Therell be days like this"
+				"Well my mama told me Therell be days like this"
+				"Well my mama told me Therell be days like this"
+				"Oh my mama told me (she said) Therell be days like this"
+			}
+		}
+	}
+}
+
+
+\noPageBreak
+\markup \column {
+%% just a little space
+	\null
+	\fill-line {
+		\smaller \smaller { "-- help me fill it out this copyright notice --" }
+	}
+	\fill-line {
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
+	}
+}
+
+
+
+}
+
+
+% include anything the user wants before the bookpart starts
+
+
+
+
+
+
+
+
+
+\bookpart {
+
+% this causes the variables to be defined...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% now play with the variables that depend on language
+
+
+
+% calculate the tag line
+
+
+% calculate the typesetby
+
+
+
+
+\tocItem \markup "Have I told you lately that I love you"
+
+
+
+
+
+% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
+\markup {
+	\column {
+		\override #'(baseline-skip . 3.5)
+		\column {
+			\huge \larger \bold
+			\fill-line { \larger "Have I told you lately that I love you" }
+			\fill-line {
+				""
+				""
+			}
+			\fill-line {
+				"Med. Ballad"
+				""
+			}
+		}
+	}
+}
+\noPageBreak
+
+
+% include the preparatory stuff, if there is any
+
+% calculate the vars
+
+
+
+% score for printing
+\score {
+	<<
+\new ChordNames="Chords"
+	\with {
+		\remove "Bar_engraver"
+	}
+% # transpose with 'inline' is true!
+	\transpose c c {
+
+
+
+
+\chordmode {
+	\startChords
+
+	\startSong
+
+	\repeat volta 2 {
+		f2:maj7 a:m7 | bes:maj7 c:7 |
+	}
+	bes1:maj7 | a:m7 | g2:m7 c:7 | f:maj7 r4 c:7 |
+
+	\endSong
+
+	\endChords
+}
+
+
+}
+% this thing will only engrave voltas. This is required to put the volta under the chords.
+% No great harm will happen if you don't put it, only the voltas will be above the chords.
+%\new Staff \with {
+%	\consists "Volta_engraver"
+%}
+\new Staff="Melody" {
+\new Voice="Voice"
+% # transpose with 'inline' is true!
+	\transpose c c { \relative c'
+	
+
+
+
+
+
+{
+	a
+}
+
+ }
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
+	
+
+
+
+
+
+
+\lyricmode {
+	Have I told you lately that I love you.
+	Have I told you that there's no one but you.
+	You give me so much gladness.
+	Take away all the sadness.
+	Take my troubles that's what you do.
+}
+
+}
+	>>
+	\layout {
 	}
 }
 
