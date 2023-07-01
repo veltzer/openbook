@@ -6,7 +6,7 @@
 *.out
 /.mypy_cache
 
-# general ignore stuff
+# folders to git ignore
 /*.gi
 
 # hive
