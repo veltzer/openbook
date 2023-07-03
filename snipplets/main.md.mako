@@ -103,7 +103,7 @@ ${"##"} MacOS user notes
 * make (on Mac/OS X this is part of X-Code or [command line tools](https://stackoverflow.com/a/9329325/2223106))
 
 ${"##"} How do I contribute?
-* create an account on git hub.
+* create an account on github.
 * hack on the .ly.mako files (git add the files that you hack on).
 * commit to your own hard drive repository (git commit).
 * push to git hub (git push).
@@ -130,6 +130,11 @@ or
 make out/src/openbook/[tunename].stamp
 ```
 to get both pdf and midi.
+
+To get the external pdfs build
+```sh
+make out/src/openbook/[tunename].?.pdf
+```
 
 ${"##"} Can I just build a single tune?
 Sure. Just use:

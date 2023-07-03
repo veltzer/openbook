@@ -258,14 +258,14 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 177" }
-				\fill-line { \small "Git describe: 177-19-g83093b55" }
-				\fill-line { \small "Git commits: 1852" }
-				\fill-line { \small "Build date: 18:57:57 10-06-2023" }
+				\fill-line { \small "Git describe: 177-23-g98a68eb4" }
+				\fill-line { \small "Git commits: 1856" }
+				\fill-line { \small "Build date: 13:24:45 03-07-2023" }
 				\fill-line { \small "Build user: mark" }
 				\fill-line { \small "Build host: newton" }
-				\fill-line { \small "Build kernel: Linux 6.2.0-1003-lowlatency" }
+				\fill-line { \small "Build kernel: Linux 6.2.0-23-generic" }
 				\fill-line { \small "Lilypond version: 2.24.1" }
-				\fill-line { \small "Number of tunes: 152" }
+				\fill-line { \small "Number of tunes: 153" }
 				\null
 				\null
 				\null
@@ -8173,6 +8173,216 @@ endChords={}
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1937 (renewed 1965) Mills Music c/o EMI Music Publishing" }
+	}
+	\fill-line {
+		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
+	}
+}
+
+
+
+}
+
+
+% include anything the user wants before the bookpart starts
+
+
+
+
+
+
+
+
+
+
+\bookpart {
+
+% this causes the variables to be defined...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% now play with the variables that depend on language
+
+
+
+% calculate the tag line
+
+
+% calculate the typesetby
+
+
+
+
+\tocItem \markup "Cheek to Cheek / Irving Berlin"
+
+
+
+
+
+% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
+\markup {
+	\column {
+		\override #'(baseline-skip . 3.5)
+		\column {
+			\huge \larger \bold
+			\fill-line { \larger "Cheek to Cheek" }
+			\fill-line {
+				""
+				"Music by Irving Berlin"
+			}
+			\fill-line {
+				"Bright Swing"
+				""
+			}
+		}
+	}
+}
+\noPageBreak
+
+
+% include the preparatory stuff, if there is any
+
+% calculate the vars
+
+
+
+% score for printing
+\score {
+	<<
+\new ChordNames="Chords"
+	\with {
+		\remove "Bar_engraver"
+	}
+% # transpose with 'inline' is true!
+	\transpose c c {
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\myMark "A"
+	\startPart
+	\repeat volta 2 {
+		c2:maj7 cis:dim7 | d:m7 g:7 | c:maj7 cis:dim7 | d:m7 g:7 | \myEndLine
+		c:maj7 d:m7 | ees:dim7 e:m7 | bes1:7.11+ | a2:7 d:7 | \myEndLine
+		g:7 d:m7 | e:m7 f:7 | bes1:7.11+ | a:7 | \myEndLine
+		d:m7 | g:7 |
+	} \alternative {
+		{
+			e2:m7 a:7 | d:m7 g:7 | \myEndLineVoltaNotLast
+		}
+		{
+			c1:6.9 | \myEndLineVoltaLast
+		}
+	}
+	\endPart
+
+	\myMark "B"
+	\startPart
+	\repeat volta 2 {
+		d1:m7/g | c/g | d:m7/g | c/g | \myEndLine
+		d:m7/g | c/g | d:m7/g |
+	} \alternative {
+		{
+			c:6.9/g | \myEndLineVoltaNotLast
+		}
+		{
+			c1:6.9 | \myEndLineVoltaLast
+		}
+	}
+	\endPart
+
+	\endSong
+	\endChords
+}
+
+
+
+
+
+}
+% this thing will only engrave voltas. This is required to put the volta under the chords.
+% No great harm will happen if you don't put it, only the voltas will be above the chords.
+%\new Staff \with {
+%	\consists "Volta_engraver"
+%}
+\new Staff="Melody" {
+\new Voice="Voice"
+% # transpose with 'inline' is true!
+	\transpose c c { \relative c'
+	
+
+
+
+{
+	\tempo "Allegro" 4 = 130
+	\time 4/4
+	\key c \major
+
+%% part "A"
+	\repeat volta 2 {
+	} \alternative {
+		{
+		}
+		{
+		}
+	}
+
+%% part "B"
+}
+
+
+
+
+ }
+}
+\new Lyrics="Lyrics" \lyricsto "Voice" {
+	
+
+
+
+
+% this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
+\lyricmode {
+
+%% part "A"
+	A Fog -- gy Day in Lon -- don town had __ _ me low and had me down.
+	I viewed the morn -- ing with a -- larm, the Brit -- ish Mu -- seum had lost its charm.
+
+%% part "B"
+	How long I wondered could this thing last? But_the age of mira -- cles had -- n't passed,
+	for sud -- den -- ly I saw you there and through fog -- gy Lon -- don town the sun was shin -- ing ev -- 'ry where. __
+}
+
+
+
+
+}
+	>>
+	\layout {
+	}
+}
+
+
+\noPageBreak
+\markup \column {
+%% just a little space
+	\null
+	\fill-line {
+		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
 		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
