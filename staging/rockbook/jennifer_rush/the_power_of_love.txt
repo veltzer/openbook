@@ -1,0 +1,23 @@
+
+
+verse:
+A  |  F#m  |
+A  |  E |
+A  |  F#m |
+D A | E |
+
+chorus:
+A  | D  |
+Bm | E |
+A | D |
+Bm | E |
+D A |
+
+B part:
+D E | A |
+D E | F#m |
+D E | A |
+D | E |
+
+ending:
+D E | A | -> repeat
