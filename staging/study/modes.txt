@@ -1,0 +1,8 @@
+modes of:
+	major scale
+	malodic minor
+		1 2 b3 4 5 6 7 <- this is relative to ionian mode
+	harmonic minor
+		1 2 b3 4 5 b6 7 <- this is relative to ionian mode
+	harmonic major
+	double harmonic major
