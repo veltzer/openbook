@@ -1,5 +1,6 @@
 # generated
 /build/
+/toolchain/
 /dist/
 /target/
 /out/
@@ -110,3 +111,9 @@ coverage.xml
 
 # generic
 *.log
+
+# scons
+/.sconsign.dblite
+
+# DS_Store
+.DS_Store
