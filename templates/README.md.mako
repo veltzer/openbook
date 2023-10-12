@@ -19,9 +19,9 @@ website: ${pydmt.helpers.urls.get_website()}
 ${"##"} build
 
 <%
-	action_files = glob.glob('.github/workflows/*.yml')
+	action_files = glob.glob(".github/workflows/*.yml")
 	for action_file in action_files:
-		with open(action_file, 'r') as stream:
+		with open(action_file, "r") as stream:
 			action_name=yaml.safe_load(stream)["name"]
 			context.write(f"![{action_name}](https://github.com/{config.personal.github_username}/{pydmt.helpers.project.get_name()}/workflows/{action_name}/badge.svg)")
 %>
