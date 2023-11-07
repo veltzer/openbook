@@ -26,7 +26,6 @@
 *.o.ur-safe
 *.oo
 *.elf
-*.s
 *.dep
 core.*
 lib*.so.*
