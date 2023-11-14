@@ -6,13 +6,13 @@ description: OpenBook is an open source Jazz real book
 
 website: https://veltzer.github.io/openbook
 
-## build
+## Build
 
 ![build](https://github.com/veltzer/openbook/workflows/build/badge.svg)
 
 OpenBook is a standards book for Jazz players which containts hundreds of jazz standards
 
-## contact
+## Contact
 
 chat with me at [![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/veltzer/mark.veltzer)
 

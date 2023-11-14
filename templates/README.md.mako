@@ -16,7 +16,7 @@ description: ${config.project.description_short}
 
 website: ${pydmt.helpers.urls.get_website()}
 
-${"##"} build
+${"##"} Build
 
 <%
 	action_files = glob.glob(".github/workflows/*.yml")
@@ -30,7 +30,7 @@ ${"##"} build
 ${config.project.description_long}
 % endif
 
-${"##"} contact
+${"##"} Contact
 
 chat with me at [![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/veltzer/mark.veltzer)
 
