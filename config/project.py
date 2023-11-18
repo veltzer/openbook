@@ -4,13 +4,14 @@ description_short = "OpenBook is an open source Jazz real book"
 description_long = "OpenBook is a standards book for Jazz players which containts hundreds of jazz standards"
 keywords = [
     "jazz",
-    "Real book",
+    "real-book",
     "realbook",
-    "open book",
+    "open-book",
     "music",
     "standards",
     "pdf",
-    "sheet music",
-    "open source",
+    "sheet-music",
+    "open-source",
+    "opensource",
 ]
 license_type = "GPLV3"
