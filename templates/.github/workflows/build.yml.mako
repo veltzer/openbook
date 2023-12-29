@@ -25,4 +25,4 @@ jobs:
     - name: bootstrap
       run: python -m pip install pydmt
     - name: pydmt
-      run: pydmt build --dev False
+      run: pydmt build
