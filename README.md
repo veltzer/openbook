@@ -51,7 +51,7 @@ used by Jazz musicians both for practice and for performance.
 * npm: for htmlhint
 
 ## What python modules are used?
-* pytconf: pytconf handles configuration and command line parsing
+* pytconf: Configuration, command line and injection framework for python
 * python-dateutil: Extensions to the standard Python datetime module
 * tqdm: Fast, Extensible Progress Meter
 * PyMySQL: Pure Python MySQL Driver
