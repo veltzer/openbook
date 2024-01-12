@@ -9,7 +9,7 @@ install_requires = [
     "requests",
     "gitpython",
 ]
-make_requires = [
+build_requires = [
     "pymakehelper",
     "pydmt",
     "pyclassifiers",
@@ -17,4 +17,4 @@ make_requires = [
 test_requires = [
     "pylint",
 ]
-requires = config_requires + install_requires + make_requires + test_requires
+requires = config_requires + install_requires + build_requires + test_requires
