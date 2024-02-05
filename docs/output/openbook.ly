@@ -31,54 +31,54 @@
 %}
 
 \paper {
-%% reduce spaces between systems and the bottom (taken from the lilypond
-%% documentation and found the relevant variable)
-%% the result of this is that I can fit 8 single staffs in one page
-%% which is ideal for Jazz (think 32 bar divided into 8 lines of 4 bars each...).
-%% I should really only apply this thing for Jazz tunes but that is a TODO item.
-%% default is 4\mm - 3 already causes 8 staffs to take 2 pages
+	% reduce spaces between systems and the bottom (taken from the lilypond
+	% documentation and found the relevant variable)
+	% the result of this is that I can fit 8 single staffs in one page
+	% which is ideal for Jazz (think 32 bar divided into 8 lines of 4 bars each...).
+	% I should really only apply this thing for Jazz tunes but that is a TODO item.
+	% default is 4\mm - 3 already causes 8 staffs to take 2 pages
 	between-system-padding = 2\mm
-%% default is 20\mm
-%% between-system-space = 16\mm
-%% ragged-last-bottom = ##f
-%% ragged-bottom = ##f
+	% default is 20\mm
+	% between-system-space = 16\mm
+	% ragged-last-bottom = ##f
+	% ragged-bottom = ##f
 
-%% make lilypond increase the distance of the footer from the bottom of the page
-%% it seems that if you don't do something like this you're going to have
-%% a real problem seeing the footer in postscript printing....
-%%bottom-margin = 2.5\cm
+	% make lilypond increase the distance of the footer from the bottom of the page
+	% it seems that if you don't do something like this you're going to have
+	% a real problem seeing the footer in postscript printing....
+	%bottom-margin = 2.5\cm
 
-%% from /usr/share/lilypond/2.12.3/ly/titling-init.ly
-%% to stop lilypond from printing footers...
+	% from /usr/share/lilypond/2.12.3/ly/titling-init.ly
+	% to stop lilypond from printing footers...
 	oddFooterMarkup = \markup {}
 
-%% prevent lilypond from printing the headers...
+	% prevent lilypond from printing the headers...
 
 	scoreTitleMarkup = \markup {}
 	bookTitleMarkup = \markup {}
 }
 \layout {
-%% don't have the first line indented
+	% don't have the first line indented
 	indent = 0.0 \cm
-%% don't know what this is (taken from Laurent Martelli...)
-%%textheight = 1.5\cm
+	% don't know what this is (taken from Laurent Martelli...)
+	%textheight = 1.5\cm
 
 	\context {
 		\Score
-	%% change the size of the text fonts
-	%%\override LyricText #'font-family = #'typewriter
+		% change the size of the text fonts
+		%\override LyricText #'font-family = #'typewriter
 		\override LyricText #'font-size = #'-2
 
-	%% set the style of the chords to Jazz - I don't see this making any effect
+		% set the style of the chords to Jazz - I don't see this making any effect
 		\override ChordName #'style = #'jazz
-	%%\override ChordName #'word-space = #2
+		%\override ChordName #'word-space = #2
 
-	%% set the chord size and font
-	%%\override ChordName #'font-series = #'bold
-	%%\override ChordName #'font-family = #'roman
-	%%\override ChordName #'font-size = #-1
+		% set the chord size and font
+		%\override ChordName #'font-series = #'bold
+		%\override ChordName #'font-family = #'roman
+		%\override ChordName #'font-size = #-1
 
-	%% don't show bar numbers (for jazz it makes it too cluttery)
+		% don't show bar numbers (for jazz it makes it too cluttery)
 		\remove "Bar_number_engraver"
 	}
 }
@@ -103,7 +103,7 @@ myChordDefinitions={
 	<c ees ges bes>-\markup { "m" \super { "7 " \flat "5" } }
 	<c ees ges beses>-\markup { "dim" \super { "7" } }
 	<c ees ges>-\markup { "dim" }
-%%<c e g b>-\markup { "maj7" }
+	%<c e g b>-\markup { "maj7" }
 	<c e gis bes d'>-\markup { \super { "9 " \sharp "5" } }
 	<c e g bes d' a'>-\markup \super {13}
 	<c e g bes d' fis'>-\markup { \super { "9 " \sharp "11" } }
@@ -189,9 +189,9 @@ startPart={}
 % endPart=\bar "||"
 endPart={}
 startChords={
-%% this causes chords that do not change to disappear...
+	% this causes chords that do not change to disappear...
 	\set chordChanges = ##t
-%% use my own chord exceptions
+	% use my own chord exceptions
 	\set chordNameExceptions = #myChordExceptions
 }
 endChords={}
@@ -202,7 +202,7 @@ endChords={}
 
 % book header
 %\book {
-%% this is the title page
+	% this is the title page
 	\bookpart {
 		\markup {
 			\column {
@@ -247,7 +247,7 @@ endChords={}
 				\fill-line {
 					\huge \bold \concat {
 						"Typesetting copyright: © 2011-"
-						2023
+						2024
 						" Mark Veltzer "
 						"<" \with-url #"mailto:mark.veltzer@gmail.com" mark.veltzer@gmail.com ">"
 					}
@@ -258,12 +258,12 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 177" }
-				\fill-line { \small "Git describe: 177-39-g8bc3320d" }
-				\fill-line { \small "Git commits: 1872" }
-				\fill-line { \small "Build date: 22:59:37 04-12-2023" }
+				\fill-line { \small "Git describe: 177-56-ge90fc38e" }
+				\fill-line { \small "Git commits: 1889" }
+				\fill-line { \small "Build date: 07:19:53 05-02-2024" }
 				\fill-line { \small "Build user: mark" }
-				\fill-line { \small "Build host: newton" }
-				\fill-line { \small "Build kernel: Linux 6.5.0-10-lowlatency" }
+				\fill-line { \small "Build host: cantor" }
+				\fill-line { \small "Build kernel: Linux 6.5.0-15-generic" }
 				\fill-line { \small "Lilypond version: 2.24.1" }
 				\fill-line { \small "Number of tunes: 154" }
 				\null
@@ -384,7 +384,7 @@ endChords={}
 
 	\partial 4 s4 |
 
-%%\myMark "A"
+	%\myMark "A"
 	\mySegno
 	\startPart
 	\repeat volta 2 {
@@ -395,8 +395,8 @@ endChords={}
 	}
 	\endPart
 
-%%\myMark "Coda"
-%%\myCoda
+	%\myMark "Coda"
+	%\myCoda
 	\startPart
 	\repeat volta 2 {
 		b1:7.3-.5-.9-.11-.13- | c1*2:m11 | b1:7.3-.5-.9-.11-.13- | \myEndLine
@@ -431,7 +431,7 @@ endChords={}
 
 	\partial 4 d''4 |
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		b1~ | \tuplet 3/2 { b4 b, d a' fis d } | e1~ | e4 c \tuplet 3/2 { a f d } |
 		g1 | f2. f4 | f8 e4 g8~ g2~ | g2~ \tuplet 3/2 { g4 f e } |
@@ -439,7 +439,7 @@ endChords={}
 		bes aes8 c~ c2~ | c4 r8 g d' ees aes, d | c1~ | c | r | r2. <\parenthesize d'>4 |
 	}
 
-%% part "Coda"
+	% part "Coda"
 	\repeat volta 2 {
 		r4 r8 g,, d' ees aes, d | c1~ | c | r |
 	}
@@ -458,14 +458,14 @@ endChords={}
 % this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Some day you'll look in to her eyes __
 	Then there'll be no good -- byes
 	And yes -- ter -- day __ will have gone __
 	And you'll find yourself __ in a -- no -- ther space __
 	"500" _ _ mi -- les high __
 
-%% part "Coda"
+	% part "Coda"
 	_ "500" _ _ mi -- les high __
 }
 
@@ -481,7 +481,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	You'll see just one look and you'll know __
 	She's so ten -- der and warm
 	You'll re -- cog -- nise __ this is love __
@@ -501,7 +501,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Be sure that you love stays so free __
 	Then it nev -- er can die
 	Just re -- a -- lise __ this is truth __
@@ -518,7 +518,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -680,7 +680,7 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		d' bes r d | c bes r d | d ( bes2.~ | bes4 ) d, ees d |
 		g f r a | g f r a | a ( f2.~ | f4 ) f g f |
 		d' bes r d | c bes r d | d ( bes2.~ | bes4 ) d, ees d |
@@ -729,7 +729,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -877,19 +877,19 @@ endChords={}
 
 	\partial 4 e4 |
 
-%% part "A"
+	% part "A"
 	c'2~ \tuplet 3/2 { c4 b a } | a2~ \tuplet 3/2 { a4 gis b } | e,1~ | e2 r4 e4 |
 	c'2~ \tuplet 3/2 { c4 b a } | a2~ \tuplet 3/2 { a4 g b } | e,1~ | e2 r8 e f g |
 	a4. d,8 d2~ | d r8 d e f | g4. c,8 c2~ | c r8 c d e |
 	f4. b,8 b2~ | b \tuplet 3/2 { b4 c d } | e1~ | e2 r4 e |
 
-%% part "A'"
+	% part "A'"
 	c'2~ \tuplet 3/2 { c4 b a } | a2~ \tuplet 3/2 { a4 gis b } | e,1~ | e2 r4 e4 |
 	bes'2~ \tuplet 3/2 { bes4 a g } | g2~ \tuplet 3/2 { g4 f e } | a1~ | a |
 	r4 d, \tuplet 3/2 { d e f } | b1 | r4 c, \tuplet 3/2 { c d e } | a2. g4 |
 	e1~ | e2 \tuplet 3/2 { e4 gis b } | a1~ | a2 \tuplet 3/2 { r4 a b } |
 
-%% part "B"
+	% part "B"
 	\tuplet 3/2 { c d c } \tuplet 3/2 { b a b } | \tuplet 3/2 { c d c } \tuplet 3/2 { b a b } |
 	\tuplet 3/2 { c d c } \tuplet 3/2 { b a g } | a1~ | a2. r4 |
 }
@@ -904,19 +904,19 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	A Day __ In The Life __ Of A Fool, __
 	a sad __ and a long, __ lone -- ly day, __
 	I walk the av -- e -- nue __ and hope I'll run in -- to __
 	the wel -- come sight of you __ com -- ing my way. __
 
-%% part "A'"
+	% part "A'"
 	I stop __ just a -- cross __ from your door __
 	but you're __ nev -- er home __ an -- y -- more. __
 	So back to my room and there in the gloom
 	I cry __ tears of good -- bye. __
 
-%% part "B"
+	% part "B"
 	'Til you come back to me,
 	that's the way it will be
 	ev -- 'ry day in the life of a fool. __
@@ -931,7 +931,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1959 by Nouvelles Editions Meridian" }
@@ -1106,19 +1106,19 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		c1 | a'4 g2 a4 | b,1 | b'4 a2 b4 |
 		e,1 | d'4 c2 e,4 | g1 | e'4 d2 g,4 |
 
-	%% part "B"
+		% part "B"
 		c4 b c d | \tuplet 3/2 { c b! bes } a aes | g2 g~ | g2. g4 |
 		a gis a b | \tuplet 3/2 { a aes g! } fis f | e2 e~ | e2. e4 |
 
-	%% part "A"
+		% part "A"
 		c1 | a'4 g2 a4 | b,1 | b'4 a2 b4 |
 		e,1 | d'4 c2 e,4 | g1 | e'4 d2 g,4 |
 
-	%% part "C"
+		% part "C"
 		c4 b c d | \tuplet 3/2 { e d c } b! bes | a1 | \tuplet 3/2 { c4 b bes } a! aes |
 		g1 | \tuplet 3/2 { b4 a aes } g! d' |
 	} \alternative {
@@ -1146,19 +1146,19 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	A Fine Ro -- mance with no kis -- es!
 	A Fine Ro -- mance, my friend, this is!
 
-%% part "B"
+	% part "B"
 	We should be like a cou -- ple of hot to -- ma -- toes, __
 	but you're as cold as yes -- ter -- day's mashed po -- ta -- toes. __
 
-%% part "A"
+	% part "A"
 	A Fine Ro -- mance you won't nest -- le.
 	A Fine Ro -- mance, you won't wrest -- le!
 
-%% part "C"
+	% part "C"
 	I might as well play bridge with my old maid aunts!
 	I have -- n't got a chance. This is A Fine Ro -- mance. A
 }
@@ -1178,19 +1178,19 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	_ Fine Ro -- mance my good fel -- low!
 	You take ro -- mance, I'll take jel -- lo!
 
-%% part "B"
+	% part "B"
 	You're calm -- er than the seal in the Arc -- tic O -- cean, __
 	at least they flap their fins to ex -- press e -- mo -- tion. __
 
-%% part "A"
+	% part "A"
 	A Fine Ro -- mance with no quar -- rels,
 	With no in -- sults, and all mor -- als!
 
-%% part "C"
+	% part "C"
 	I've nev -- er mussed the crease in your blue serge pants!
 	I nev -- er get the chance. This is A Fine Ro -- _ _ mance. __
 }
@@ -1208,7 +1208,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1936 T.B. Harms Company. Copyright Renewed." }
@@ -1375,13 +1375,13 @@ endChords={}
 
 	\repeat volta 2 {
 
-%% part "A"
+	% part "A"
 	c c2 ees4~ | ees2. ees4 | d d2 a'4~ | a1 |
 	f2 f4 aes~ | aes2. aes4 | g2 g4 d'~ | d1 |
 	r4 e e e | c c2. | a2 a4 f~ | f2. f4 |
 	a a a c~ | c c2 c4 | a2 a4 d,~ | d2. c4 |
 
-%% part "B"
+	% part "B"
 	c2 c4 ees~ | ees ees2 ees4 | d2 d4 a'~ | a2 a4 a |
 	f2 f4 aes~ | aes bes aes2 | g g4 d'~ | d2. d4 |
 	f2 f4 d~ | d2. d4 | c2 c4 a~ | a2 a4 bes |
@@ -1410,15 +1410,15 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	A Fog -- gy Day __ in Lon -- don town __ had me low __ and had me down. __
 	I viewed the morn -- ing with a -- larm, __ the Brit -- ish Mu -- se -- um had lost its charm. __
 
-%% part "B"
+	% part "B"
 	How long I won -- dered could this thing last? __ But the age of mir -- a -- cles had -- n't passed, __
 	for sud -- den -- ly, __ I saw you there __ and through fog -- gy Lon -- don town the sun was shin -- ing ev -- 'ry where.
 
-%% part "Volta"
+	% part "Volta"
 	A where. __
 }
 
@@ -1431,7 +1431,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1937, Gershwin Publishing Corporation" }
@@ -1579,7 +1579,7 @@ endChords={}
 	\time 4/4
 	\key f \major
 
-%% part "A"
+	% part "A"
 	\partial 8 a8 |
 
 	\repeat volta 2 {
@@ -1594,12 +1594,12 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 	c4. a8~ a4. g8 | ges4 ees'8 cis d c4 a8 |
 	bes g4 fis8~ fis4 a8 fis | g a e4 r r8 \grace a8 bes8~ | bes \grace a8 bes4 r8 r4 \tuplet 3/2 { g16 aes g } f8 | e4 \tuplet 3/2 { des'16 ees des } b8 c bes4 gis8 | a4. f8 \tuplet 3/2 { g?16 aes g } f8 \tuplet 3/2 { g16 aes g } f8 |
 	e2. r8 a, |
 
-%% part "A"
+	% part "A"
 	\tuplet 3/2 { bes des f } c'2 bes8 f | gis a4. r4 r8 a, | \tuplet 3/2 { bes des f } c' c~ c4 bes8 f | a2. r8 a, | \tuplet 3/2 { bes des f } c'2 bes8 f | gis a4. r2 | a8 bes \tuplet 3/2 { a16 bes a } g8 ees4 cis8 d~ | d4 r r2 |
 }
  }
@@ -1612,7 +1612,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1944 by MCA Music Publishing, A division of MCA Inc, New York, NY" }
@@ -1851,7 +1851,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1951, Bourne Co. Copyright Renewed." }
@@ -2004,19 +2004,19 @@ endChords={}
 
 	\partial 4 e'4 |
 
-%% part "A"
+	% part "A"
 	g8 d r c b c d e | ees g, bes d c4 d | f8 c r bes a bes c d | des f, aes c bes4 c |
 	ees8 c aes ees g bes aes4 | f2 \tuplet 3/2 { g4 f g } | e8 g b d a b c e | f a, c e d4 e |
 
-%% part "A"
+	% part "A"
 	g8 d r c b c d e | ees g, bes d c4 d | f8 c r bes a bes c d | des f, aes c bes4 c |
 	ees8 c aes ees g bes aes4 | aes2 \tuplet 3/2 { g4 f g } | e1~ | e2 a4 b |
 
-%% part "B"
+	% part "B"
 	c2. d4 | e2. d4 | c2. e4 | a,2. b4 |
 	c2. d4 | e2. d4 | e1 | f2. e4 |
 
-%% part "A"
+	% part "A"
 	g8 d r c b c d e | ees g, bes d c4 d | f8 c r bes a bes c d | des f, aes c bes4 c |
 	ees8 c aes ees g bes aes4 | f2 \tuplet 3/2 { g4 f g } | e1~ | e2. r4 |
 }
@@ -2032,7 +2032,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1955 and Renewal of Copyright 1983 by MJQ Music, Inc." }
@@ -2141,7 +2141,7 @@ endChords={}
 		d:m7 | g:7 |
 	} \alternative {
 		{
-		%% the chords a:m7 d:7 are a mistake in the real book
+			% the chords a:m7 d:7 are a mistake in the real book
 			e4.:m7 a:7 | d:m7 g:7 | \myEndLineVoltaNotLast
 		}
 		{
@@ -2191,7 +2191,7 @@ endChords={}
 	\time 3/4
 	\key c \major
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		g'2. | g'2 f4 | e2 c4 | g2. |
 		d'4 e f | e2 d4 | e2 c4 | g2. |
@@ -2202,13 +2202,13 @@ endChords={}
 		{ c,2.~ | c2 cis4 | }
 	}
 
-%% part "B"
+	% part "B"
 	d2. | a' | g | c, |
 	d4 e f | g2 a4 | b2 g4 | e2. |
 	fis | c' | b2 g4 | e2. |
 	a2 g4 | f2 e4 | d2 c4 | b2. |
 
-%% part "A"
+	% part "A"
 	g2. | g'2 f4 | e2 c4 | g2. |
 	d'4 e f | e2 d4 | e2 c4 | g2. |
 	d'4 e f | e2 d4 | e2 g4 | c2 a4 |
@@ -2227,7 +2227,7 @@ endChords={}
 % This is taken from the inetnet and adjusted for this tune
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	A -- lice In Won -- der -- land
 	How do you get to won -- der -- land
 	O -- ver the hill or un -- der -- land
@@ -2245,19 +2245,19 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	When clouds go rol -- ling by
 	They roll a -- way and leave the sky
 	Where is the land be -- yond the eye
 	That peo -- ple can -- not _ see __
 
-%% part "B"
+	% part "B"
 	And where do stars go
 	Where is the sil -- ver cre -- scent moon
 	They must be some -- where
 	in the sun -- ny af -- ter -- noon
 
-%% part "A"
+	% part "A"
 	A -- lice In Won -- der -- land
 	Where is the path to won -- der -- land
 	O -- ver the hill or here or there
@@ -2273,7 +2273,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1951 Walt Disney Music Company" }
@@ -2411,13 +2411,13 @@ endChords={}
 	\time 4/4
 	\key c \major
 
-%% part "A"
+	% part "A"
 	c'4 g8 e~ e2~ | e \tuplet 3/2 { c'4 d c } | b gis8 e~ e2~ | e1 |
 	a4. g8 e2~ | e4 dis \tuplet 3/2 { e bes' a } | g2 f~ | f1 |
 	e4. ees8 d2~ | d \tuplet 3/2 { e4 gis b } | d2 c~ | c1 |
 	b4. bes8 a2~ | a \tuplet 3/2 { a4 d b } | a1 | b |
 
-%% part "B"
+	% part "B"
 	c4 g8 e~ e2~ | e \tuplet 3/2 { c'4 d c } | b gis8 e~ e2~ | e1 |
 	a4. g8 e2~ | e4 dis \tuplet 3/2 { e bes' a } | g2 f~ | f1 |
 	d'2 c4 b | d2. c4 | b2 e,4 g | b2. a4 |
@@ -2434,7 +2434,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	All of me __
 	why not take all of me __
 	Can't you see __
@@ -2445,7 +2445,7 @@ endChords={}
 	Take my arms __
 	I'll ne -- ver use them __
 
-%% part "B"
+	% part "B"
 	Your good -- bye __
 	left me with eyes that cry __
 	How can I __
@@ -2466,7 +2466,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1931 Bourne Co. Copyright Renewed" }
@@ -2620,25 +2620,25 @@ endChords={}
 	\time 4/4
 	\key c \major
 
-%% part "A"
+	% part "A"
 	e1~ | e4 e \tuplet 3/2 { e f c } | e1~ | e2. r4 |
 	e2 e | e \tuplet 3/2 { e4 g c, } | d4. d8 d2~ | d2. r4 |
 	d2 d | d \tuplet 3/2 { e4 cis d } | a'4. a8 a2~ | a b4 a |
 	g g2 g4 | g g2 g4 | g1 | r |
 
-%% part "A"
+	% part "A"
 	e~ | e4 e \tuplet 3/2 { e f c } | e1~ | e2. r4 |
 	e2 e | e \tuplet 3/2 { e4 g c, } | d4. d8 d2~ | d2. r4 |
 	d4. d8 d4. d8 | d4. d8 \tuplet 3/2 { e4 cis d } | a'4. a8 a2~ | a b4 a |
 	g g2 g4 | g g2 g4 | g1~ | g4 r r ees |
 
-%% part "B"
+	% part "B"
 	c' c c c | c4. c8 \tuplet 3/2 { c4 des aes } | c1~ | c2. ees,4 |
 	c'4. c8 c4. c8 | des2 \tuplet 3/2 { c4 bes aes } | g1~ | g2. ees4 |
 	\tuplet 3/2 { bes' bes bes } bes4. bes8 | \tuplet 3/2 { bes4 bes bes } \tuplet 3/2 { bes c g } | bes1~ | bes2 c4 bes |
 	aes2 aes4 aes | aes aes2 aes4 | g1 | r4 d c b |
 
-%% part "A"
+	% part "A"
 	e1 | \tuplet 3/2 { e4 f c } \tuplet 3/2 { e f c } | e1~ | e2. r4 |
 	e2 e | e \tuplet 3/2 { e4 g c, } | d4. d8 d2~ | d2. r4 |
 	d2 d | d4. d8 \tuplet 3/2 { e4 cis d } | a'1 | b |
@@ -2655,25 +2655,25 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	All, __ Or Noth -- ing At All. __
 	Half a love nev -- er ap -- pealed to me. __
 	If your heart nev -- er could yield to me, __
 	then I'd rath -- er have noth -- ing at all!
 
-%% part "A"
+	% part "A"
 	All __ Or Noth -- ing At All! __
 	If it's love, there is no in -- be -- tween. __
 	Why be -- gin, then cry for some -- thing that might have been. __
 	No, I'd rath -- er have noth -- ing at all. __
 
-%% part "B"
+	% part "B"
 	But, please, don't bring your lips so close to my cheek. __
 	Don't smile or I'll be lost be -- yond re -- call. __
 	The kiss in your eyes, the touch of your hand makes me weak, __
 	And my heart may grow diz -- zy and fall.
 
-%% part "A"
+	% part "A"
 	And if I fell un -- der the spell of your call. __
 	I would be caught in the un -- der -- tow. __
 	So, you see, I've got to say: No! No!
@@ -2689,7 +2689,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1930, 1940 by MCA MUSIC PUBLISHING, A Division of MCA Inc. Copyright Renewed" }
@@ -2845,17 +2845,17 @@ endChords={}
 	\time 4/4
 	\key aes \major
 
-%% part "A"
+	% part "A"
 	aes'1 | des2. aes4 | g g g g | g c2 g4 |
 	f f f f | f b2 f4 | e1~ | e |
 	ees | aes2. ees4 | d d d d | d g2 d4 |
 	c c c c | c d8 ees d4 c | b1~ | b4 d g d' |
 
-%% part "B"
+	% part "B"
 	d4. c8 c2~ | c4 dis, e c' | b1~ | b4 d, g b |
 	b4. a8 a2~ | a4 bes,? b a' | gis1 | r |
 
-%% part "C"
+	% part "C"
 	aes | des2. aes4 | g g g g | g c2 g4 |
 	f1 | ees'2. des4 | ees, ees \tuplet 3/2 { ees ees ees } | g2. f4 |
 	des des f aes | f'2 g, | aes1~ | aes2. r4 |
@@ -2874,17 +2874,17 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	You are the prom -- ised kiss of spring -- time
 	That makes the lone -- ly win -- ter seem long. __
 	You are the breath -- less hush of eve -- ning
 	That trem -- bles on the brink of a love -- ly song. __
 
-%% part "B"
+	% part "B"
 	You are the an -- gel glow __ that lights a star. __
 	The dear -- est things I know __ are what you are.
 
-%% part "C"
+	% part "C"
 	Some day my hap -- py arms will hold you,
 	And some day I'll know that mo -- ment di -- vine,
 	When All The Things You Are, are mine. __
@@ -2899,7 +2899,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1939 T.B. Harms Company. Copyright Renewed." }
@@ -3056,7 +3056,7 @@ endChords={}
 
 	\partial 8 d8 |
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		f2.. d8 | e e4.~ e2~ | e4 r8 d e4. f8 | a1~ |
 		a4 r8 d, e4. f8 | a1~ | a4 r8 g a4. bes8 | d2.. d8 |
@@ -3066,11 +3066,11 @@ endChords={}
 		{ fis fis4.~ fis2~ | fis2. d4 | }
 	}
 
-%% part "B"
+	% part "B"
 	c'1~ | \tuplet 3/2 { c4 a bes } \tuplet 3/2 { c ees d } | bes1~ | bes2. d,4 |
 	bes'1~ | \tuplet 3/2 { bes4 g a } \tuplet 3/2 { bes des c } | a2.. f8 | g2.. d8 |
 
-%% part "A"
+	% part "A"
 	f2.. d8 | e e4.~ e2~ | e4 r8 d e4. f8 | a1~ |
 	a4 r8 a b4. d8 | f2.. cis8 | d d4.~ d2~ | d2 r4 r8 <\parenthesize d,>8 |
 }
@@ -3087,7 +3087,7 @@ endChords={}
 % this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	A -- lone To -- geth -- er; __
 	be -- yond the crowd. __
 	a -- bove the world, __
@@ -3110,7 +3110,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	A -- lone To -- geth -- er; __
 	the blind -- ing rain __
 	The star -- less night, __
@@ -3118,11 +3118,11 @@ endChords={}
 	For we're to -- geth -- er, and what is there
 	to fear to -- _ _ _ geth -- er. __
 
-%% part "B"
+	% part "B"
 	Our love __ is as deep as the sea, __
 	Our love __ is as great as a love can be,
 
-%% part "A"
+	% part "A"
 	And we can wea -- ther __
 	the great un -- known, __
 	If we're A -- lone To -- geth -- er. __
@@ -3139,7 +3139,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1932 (Renewed) Warner Bros. Inc." }
@@ -3289,13 +3289,13 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		c4. d8 f g | a2. | c4 a2~ | a2. |
 		c,4. d8 e f | g2. | a4 f2~ | f2. |
 		c4. d8 f g | a2. | e4. fis8 a b | cis2. |
 		e,4. fis8 gis b | d2. | cis4 a2 | a4 g2 |
 
-	%% part "B"
+		% part "B"
 		c,4. d8 f g | a2. | c4 a2~ | a2. |
 		d,4. e8 fis a | d2. | es4 d2~ | d2. |
 		bes4. a8 g a | bes2. | a4. g8 f g | a2. |
@@ -3320,20 +3320,20 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	I'll be lov -- ing you, Al -- ways __
 	With a love that's true, Al -- ways __
 	When the things you've planned
 	Need a help -- ing hand,
 	I will un -- der -- stand, Al -- ways, Al -- ways.
 
-%% part "B"
+	% part "B"
 	Days may not be fair, Al -- ways __
 	That's when I'll be there, Al -- ways. __
 	Not for just and hour, Not for just a day,
 	Not for just a year, But Al -- ways. __
 
-%% part "Volta"
+	% part "Volta"
 	Al -- ways. __
 }
 
@@ -3346,7 +3346,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -3504,19 +3504,19 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		r4 g' g bes | bes aes aes2~ | aes4 aes aes c | c bes bes2~ |
 		bes4 bes bes ees | ees d d c | c bes bes aes | g1~ |
 
-	%% part "A"
+		% part "A"
 		g4 g g bes | bes aes aes2~ | aes4 aes aes c | c bes bes2~ |
 		bes4 bes bes ees | ees d d c | c bes bes aes | g1~ |
 
-	%% part "B"
+		% part "B"
 		g4 g aes bes | c f f2~ | f4 ees d c | ees g, bes2~ |
 		bes4 ees, f g | aes d d2~ | d4 c bes aes | g2 ees | g fis |
 
-	%% part "A"
+		% part "A"
 		r4 g g bes | bes aes aes2~ | aes4 aes aes c | c bes bes2~ |
 		bes4 bes bes ees | ees d d c | c d c bes |
 	} \alternative {
@@ -3555,7 +3555,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -3707,7 +3707,7 @@ endChords={}
 	\time 4/4
 	\key c \minor
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		r8. c16 g'8 ges8~ ges4. f8 | ees4 \tuplet 3/2 { ees8 c ees~ } ees2 |
 		r8. c16 ees8 g d'8. d16 c8 g~ | g1 |
@@ -3722,11 +3722,11 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 	c8 c4.~ c8 c bes ees,~ | ees ees4.~ ees2 | c'8 c4 c16 bes c4 bes8 ees,~ | ees2. c'4 |
 	b2~ b8 a4 b16 a | d,8 d4.~ d4 r8 e | fis8. fis16 fis8 fis~ fis4 fis8 g~ | g1 |
 
-%% part "A"
+	% part "A"
 	r8. c,16 g'8 ges8~ ges4. f8 | ees4 \tuplet 3/2 { ees8 c ees~ } ees2 |
 	r8. c16 ees8 g d'8. d16 c8 g~ | g1 |
 	r8. c,16 g'8 ges8~ ges4. f8 | ees8. ees16 c8 ees8~ ees4. c8 |
@@ -3745,7 +3745,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Try to think __
 	that love's not a -- round __
 	still it's un -- com -- fort -- 'bly near. __
@@ -3754,13 +3754,13 @@ endChords={}
 	be -- cause my An -- gel Eyes ain't here. __
 	_
 
-%% part "B"
+	% part "B"
 	So drink up __ all you peo -- ple, __
 	or -- der an -- y -- thing you see. __
 	Have fun, __ you hap -- py peo -- ple __
 	the drink and the laugh's __ on me. __
 
-%% part "A"
+	% part "A"
 	Par -- don me, __
 	but I got -- ta run, __
 	the fact's un -- com -- mon -- ly clear. __
@@ -3780,7 +3780,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	An -- gel Eyes __
 	that old dev -- il sent, __
 	they glow un -- bear -- a -- bly bright. __
@@ -3797,7 +3797,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1946 (Renewed 1973) Dorsey Brothers Music" }
@@ -3953,7 +3953,7 @@ endChords={}
 
 	\partial 8 g'8 |
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		aes g f ees f4. g8 | bes aes g f aes4. bes8 | ees d c bes c2 | r2 r4 d |
 		f8 ees d c d4 ees | bes bes ees, f |
@@ -3966,11 +3966,11 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 	ees8 f ees c'~ c4 c | c8 des c b c2 | f,8 g f c'~ c4 c | c8 des c b c2 |
 	g8 aes g ees'~ ees4 ees | ees8 d ees d f4 d | c c g g | bes2. r8 g |
 
-%% part "A"
+	% part "A"
 	aes g f ees f f4 g8 | bes aes g f aes aes4 bes8 | ees d c bes c2 | r r4 d |
 	f8 ees d c d4 ees | bes bes2 g4 | bes2 bes | ees2. r8 g, |
 }
@@ -3986,23 +3986,23 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	You must re -- mem -- ber this
 	A kiss is still a kiss
 	A sigh is still a sigh
 	The fun -- da -- men -- tal things app -- ly
 	As Time Goes By __
 
-%% part "A"
+	% part "A"
 	And _
 
-%% part "B"
+	% part "B"
 	Moon -- light and love __ songs- nev -- er out of date
 	Hearts full of pas -- __ sion- jea -- lou -- sy and hate
 	Wo -- men needs man- __ and man must have his mate
 	That no one can de -- ny
 
-%% part "A"
+	% part "A"
 	It's still the same old sto -- ry
 	A fight for love and glo -- ry
 	A case of do or die
@@ -4021,7 +4021,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	And when two lov -- ers woo
 	They still say: "\"I" love "you\""
 	On that you can re -- ly
@@ -4038,7 +4038,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -4197,7 +4197,7 @@ endChords={}
 	\time 4/4
 	\key f \major
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		f8 e f c r4 a'8 aes | a c, r e~ e g f e | g f a bes a f g ees | r d' r4 r8 des~ des bes |
 		b4. f'8 r b, bes4~ | bes2 aes8 f g f | c'4 r8 a bes4 r8 g | c4 c~ c8 a bes c |
@@ -4211,23 +4211,23 @@ endChords={}
 		}
 	}
 
-%% part "A"
+	% part "A"
 	f4 r r8 des16 c b8 c | e g f g a bes c a | bes c16 bes a8 f g ees~ ees4 | r2 r4 f16 g bes d |
 	f8 r d g, r4 f16 g bes d | f4 des8 g, r2 | r8 e \tuplet 3/2 { f8 a c } e ees d des | c bes \tuplet 3/2 { a16 bes a } g8 ges ees c cis |
 	f a, \tuplet 3/2 { bes d f } a f d bes | g'4 c8 aes~ aes4 c8 a~ | a4 c,8 d~ d4 r | r2 r4 f'8 e |
 
-%% part "A"
+	% part "A"
 	f r c bes c4 a8 f | bes c d c r b, c bes' | aes a c a bes c16 bes a8 g | f e ees g d c f e |
 	d f, aes b e4 b8 g'~ | g4 r8 f~ f4 e8 c | d a~ a2 r4 | r2 r4 g'16 a bes d |
 	f16 d ees e c cis d c bes a g f e g bes d | c a \tuplet 3/2 { bes c bes } a f d bes g' aes e c cis d b g | %% cont on next line
 	c4 r r8 bes a16 c e g | f4 r8 c e4~ e16 g bes d |
 
-%% part "A"
+	% part "A"
 	c4 r8 bes a f4 b8~ | b bes \tuplet 3/2 { aes16 bes aes } f8 g f4 ees8~ | ees c~ c4 r2 | r4 r8 g''8~ g4 f8 ees |
 	d c bes c16 bes aes8 f d4 | r r8 \mark \markup { \italic { Lay Back } } g~ g f des b | c4 r r r8 e'16 ees | d8 des c bes \tuplet 3/2 { a16 bes a } g8 ges g |
 	a g r4 r8 a bes c | \tuplet 3/2 { des ees des } c b bes g c bes | a f des b c4 r4 | r4 r8 a'~ a4~ a8 c16 a |
 
-%% part "End"
+	% part "End"
 	g8 f g2. |
 }
  }
@@ -4240,7 +4240,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1956, Atlantic Music Corp." }
@@ -4389,19 +4389,19 @@ endChords={}
 	\time 4/4
 	\key f \major
 
-%% part "A"
+	% part "A"
 	a'8 g f d c2 | r8 d f bes d d4 c8 | d2 a | r1 |
 	a8 g f d c2 | r8 d f bes d d4 c8 | d2 a | r1 |
 
-%% part "B"
+	% part "B"
 	c8 c4 a8 a4. f8 | aes8 aes4 f8 ees4. des8 | ees b4 c8 ees2~ | ees f |
 	g8 d4 ees8 g2~ | g b | g1~ | g2. gis4 |
 
-%% part "A"
+	% part "A"
 	a8 g! f d c2 | r8 d f bes d d4 c8 | d2 a | r1 |
 	d8 c bes g f2~ | f8 ges bes c des ees4 c8 | des1~ | des2. r4 |
 
-%% part "C"
+	% part "C"
 	c8 aes4 c8 e4 e | c2. bes4 | aes8 f4 aes8 c4 c | aes2. aes4 |
 	a!8 g f d c2~ | c8 bes des f aes bes4 g8 | f1 | r1 |
 }
@@ -4418,25 +4418,25 @@ endChords={}
 % lyrics are taken from the fake book and adjusted for the real one
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Au -- tumn In New York,
 	why does it seem so in -- vit -- ing?
 	Au -- tumn In New York,
 	it spells the thrill of first night -- ing.
 
-%% part "B"
+	% part "B"
 	Glit -- ter -- ing crowds and shim -- mer -- ing clouds
 	in can -- yons of steel, __
 	they're mak -- ing me feel __
 	I'm home. __
 
-%% part "A"
+	% part "A"
 	It's Au -- tumn In New York,
 	that brings the pro -- mise of new love;
 	Au -- tumn In New York __
 	is of -- ten min -- gled with pain. __
 
-%% part "C"
+	% part "C"
 	Dream -- ers with emp -- ty hands
 	may sigh for ex -- ot -- ic lands;
 	It's Au -- tumn In New York, __
@@ -4454,25 +4454,25 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Au -- tumn In New York,
 	the gleam -- ing roof -- tops at sun -- down.
 	Au -- tumn In New York,
 	it lifts you up when you're run -- down.
 
-%% part "B"
+	% part "B"
 	Jad -- ed rou -- es and gay di -- vor -- cees
 	who lunch at the Ritz __
 	will tell you that "\"it's" __
 	di -- "vine!\"" __
 
-%% part "A"
+	% part "A"
 	This Au -- tumn In New York,
 	trans -- forms the slums in -- to May -- fair;
 	Au -- tumn In New York, __
 	you'll need no cas -- tles in Spain. __
 
-%% part "C"
+	% part "C"
 	Lov -- ers that bless the dark
 	on bench -- es in Cen -- tral Park
 	greet Au -- tumn In New York, __
@@ -4488,7 +4488,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1934 by Kay Duke Music." }
@@ -4651,13 +4651,13 @@ endChords={}
 
 	\partial 2. e4 fis g |
 
-%% part "A"
+	% part "A"
 	c1~ | c4 d, e fis | b2 b~ | b4 c, d e |
 	a1~ | a4 b, cis dis | g1 | r4 e fis g |
 	c1~ | c4 d, e fis | b2 b~ | b4 c, d e |
 	a1~ | a4 fis a g | e1~ | e4 r dis e |
 
-%% part "B"
+	% part "B"
 	fis b, fis'2~ | fis4 fis e fis | g1~ | g4 g fis g |
 	a1~ | a4 d, d'4. c8 | b1~ | b4 r ais b |
 	c c a a | fis2. c'4 | b2 b~ | b e, |
@@ -4678,15 +4678,15 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	The fall -- ing leaves __ drift by the win -- dow, __
 	The Au -- tumn Leaves, __ of red and gold.
 
-%% part "A"
+	% part "A"
 	I see your lips, __ the sum -- mer kiss -- es,
 	The sun -- burned hands __ I used to hold.
 
-%% part "B"
+	% part "B"
 	Since you went a -- way __ the days grow long, __
 	And soon I'll hear __ old win -- ter's song. __
 	But I miss you most of all my dar -- ling, __
@@ -4702,7 +4702,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1947, 1950, 1987 Enoch Et Cie. Renewed 1975, 1978 Enoch Et Cie" }
@@ -4828,7 +4828,7 @@ endChords={}
 	\time 4/4
 	\key c \major
 
-%% part "A"
+	% part "A"
 	g'4 ees8 des~ des2 | c'4 aes8 ges~ ges4. ees8 | g ees g4 g8 ees!4 g8~ | g ees d des~ des2 |
 	r8 c'4 bes8 c aes r4 | c4. aes8 r ges4 ees8 | g ees g4 g8 g4 g8~ | g ees d des r g4 ges8 |
 	f4 d bes d8 f | ees c aes4 c8 ees!4. | r8 f ees c r2 | r f8 g aes bes |
@@ -4843,7 +4843,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -5003,19 +5003,19 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		e8 b' c2 e,4 | f8 b c2 f,4 | g8 b c4 gis8 b c4 | a8 b c2 b4 |
 		c r b8 a g fis | g4 d2 e4 | f1~ | f2 r |
 
-	%% part "A"
+		% part "A"
 		e8 b' c2 e,4 | f8 b c2 f,4 | g8 b c4 gis8 b c4 | a8 b c2 b4 |
 		c r b8 a g fis | g4 d2 e4 | a1~ | a2. r4 |
 
-	%% part "B"
+		% part "B"
 		b8 a f2 b8 a | f4 f2. | b8 a e2 b'8 a | e1 |
 		c'8 b g2 c8 b | g4 g~ g8 a b c | d2 c f,2. g4 |
 
-	%% part "A"
+		% part "A"
 		e8 b' c2 e,4 | f8 b c2 f,4 | g8 b c4 gis8 b c4 | a8 b c2 b4 |
 		c r b8 a g fis | g4 d'2 g,4 |
 	} \alternative {
@@ -5038,28 +5038,28 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	I'm wild a -- gain, be -- guiled a -- gain,
 	a sim -- per -- ing, whim -- per -- ing child a -- gain,
 	Be -- witched, both -- ered and be -- wild -- ered am I. __
 
-%% part "A"
+	% part "A"
 	Could -- n't sleep, and would -- n't sleep,
 	when love came and told me I should -- n't sleep,
 	Be -- witched, both -- ered and be -- wild -- ered am I. __
 
-%% part "B"
+	% part "B"
 	Lost my heart, but what of it?
 	He is cold I a -- gree,
 	he can laugh, but I love it, __
 	al -- though the laugh's on me.
 
-%% part "A"
+	% part "A"
 	I'll sing to him, each spring to him,
 	and long for the day when I'll cling to him,
 	Be -- witched, both -- ered and be -- wild -- ered am I.
 
-%% part "Volta"
+	% part "Volta"
 	I'm I. __
 }
 
@@ -5072,7 +5072,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1941, by Chappell & Co., Inc. Copyright Renewed" }
@@ -5212,7 +5212,7 @@ endChords={}
 
 	\partial 8 c8 |
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 
 		b8 c8 f8 gis8 a8 f8 d8 f8~|f8 d8 f8 r8 r8 f4 d8 | f8 r8 r8 f8~ f8 d8 f8 d8 |
@@ -5228,15 +5228,15 @@ endChords={}
 
 	f4 g8 gis8 s4 ais8 b8 |
 	c8 a8 \tuplet 3/2 {bes8 c8 bes8 } a8 f8 d8 c8 |
-%%
+	%
 	\tuplet 3/2 {g'16 a16 g16} f8 es8 f8~ f4 r4 | r2 r4 r8 f'8~ |
 	f8 c16 bes16 as8 f8 g8 f8 es8 d8 |
-%%
+	%
 	c4 bes8 f8 gis8 a8 bes8 b8 | c8 d16 c16 a8 c8 e8 d8~d4 |
 	r1 |
 	r4 r8 \tuplet 3/2 {g16 bes16 d16} f8 e8 d8 des8 |
 	c8 a8 bes8 c16 bes16 a8 f8 d8 c8 | g'8 f8 g8( a8)~a4 r4 |
-%%
+	%
 	r1-\markup {\abs-fontsize #14 {(Last 12 Bars are transcribed from Charlie Parker Solo - The Savoy Recordings)}} |
 }
  }
@@ -5249,7 +5249,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -5399,7 +5399,7 @@ endChords={}
 
 	\partial 4 g'4 |
 
-%% part "A"
+	% part "A"
 	\repeat volta 3 {
 		g'4. f8 ees d4 c8~ | c2. bes4 | aes2 g'4. f8~ | f1 |
 		f4. ees8 d c4 bes8~ | bes2. aes4 | g2 f'4. ees8~ | ees1 |
@@ -5429,7 +5429,7 @@ endChords={}
 % this version of the lyrics is from the internet adjusted for the real book.
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	A place in -- side my heart __
 	Is where you live __
 	Mem -- ories of our start __
@@ -5452,7 +5452,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	_ Nights of moon -- lit skies __
 	A gen -- tle kiss __
 	Some -- thing in your eyes __
@@ -5477,7 +5477,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	The thought of how we met __
 	Still lin -- gers on __
 	How can I for -- get __
@@ -5497,7 +5497,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -5624,7 +5624,7 @@ endChords={}
 	\time 4/4
 	\key c \major
 
-%% part "A"
+	% part "A"
 	e'2. d4 | c2. bes4 | a2. g4 | f d'2. |
 	e,4. d8 cis d f a | c2. a4 |
 	g2. f4 | c'2. gis4 | b2. a4 | f'2. cis4 |
@@ -5640,7 +5640,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1959 JAZZ HORN MUSIC CORP. & WARNER-TAMERLANE PUBLISHING CORP." }
@@ -5766,7 +5766,7 @@ endChords={}
 	\time 4/4
 	\key bes \major
 
-%% part "A"
+	% part "A"
 	d8 ees e f~ f2 | g8 gis a bes~ bes2 | f8 g! f e! ees f, cis' d~ | d des4 c8~ c2 |
 	g'8 gis a bes~ bes2 | bes8 b c des~ des2 | f,8 g f e! ees f, cis' d~ | d2. \tuplet 3/2 { f8 f f } |
 	f f,4.~ f2 | f'8 g f e ees f, cis' d~ | d4 f8 g f e ees f, | cis' d4.~ d2 |
@@ -5781,7 +5781,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -5933,7 +5933,7 @@ endChords={}
 	\time 4/4
 	\key f \major
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		c4 f2 d4 | c g'2 d4 | c a'2 d,4 | c bes'2 d,4 |
 		c c' c c | c8 d bes2 g4 |
@@ -5946,11 +5946,11 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 	e f g a | bes c d e | r f f8 e d4 | c2 d |
 	r4 e e8 d c4 | bes2 c | r4 a a8 g f4 | c2. r4 |
 
-%% part "A"
+	% part "A"
 	c f2 d4 | c g'2 d4 | c a'2 d,4 | c bes'2 d,4 |
 	c c' c c | c8 f bes,2 a8 g | f4 f f8 g a g | f1 |
 }
@@ -5967,7 +5967,7 @@ endChords={}
 % this version of the lyrics is from the internet adjusted for the real book.
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	We'll have a blue room,
 	A new room,
 	For two room,
@@ -5976,14 +5976,14 @@ endChords={}
 
 	_ _ _ _ _ _ _
 
-%% part "B"
+	% part "B"
 	We will thrive on,
 	Keep a -- live on,
 	Just not -- hing but kis -- ses,
 	With Mis -- ter and Mis -- sus
 	On lit -- tle blue chairs.
 
-%% part "A"
+	% part "A"
 	You sew your trous -- seau,
 	And Ro -- bin -- son Cru -- soe
 	Is not so far from world -- ly cares
@@ -6001,7 +6001,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Not like a ball -- room,
 	A small room,
 	A hall room,
@@ -6018,7 +6018,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -6163,19 +6163,19 @@ endChords={}
 	\time 4/4
 	\key a \minor
 
-%% part "A"
+	% part "A"
 	a2 e' | r d8 c d4 | e1 | r2 d8 c d4 |
 	e2 g, | r g8 a4. | c1~ | c |
 
-%% part "A"
+	% part "A"
 	a2 e' | r d8 c d4 | e1 | r2 d8 c d4 |
 	e2 g, | r g8 a4. | c1~ | c |
 
-%% part "B"
+	% part "B"
 	c8 d e f g2 | aes8 g f4 g2 | f8 e d4 e2 | d8 c b4 c2 |
 	c8 d e f g2 | aes8 g f4 g2 | f8 e d4 e2 | \tuplet 3/2 { d4 c b } c4 b |
 
-%% part "A"
+	% part "A"
 	a2 e' | r d8 c d4 | e1 | r2 d8 c d4 |
 	e2 g, | r g4 a4 | c1~ | c |
 }
@@ -6190,17 +6190,17 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Blue Skies smil -- ing at me, noth -- ing but blue skies do I see.
 
-%% part "A"
+	% part "A"
 	Blue -- birds sing -- ing a song, noth -- ing but blue -- birds all day long.
 
-%% part "B"
+	% part "B"
 	Nev -- er saw the sun shin -- ing so bright, nev -- er saw things go -- ing so right.
 	Not -- ic -- ing the days hur -- ry -- ing by, when you're in love, my how they fly by.
 
-%% part "A"
+	% part "A"
 	Blue days all of them gone, noth -- ing but blue skies from now on.
 }
 
@@ -6213,7 +6213,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -6352,7 +6352,7 @@ endChords={}
 
 	\partial 8*5 g'8 bes d bes c~ |
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		c1~ | c4-^ r8 g bes d bes c~ | c1~ | c4-^ r8 c ees g ees f~ |
 		f1~ | f4-^ r8 g, bes d bes c~ | c1~ | c4-^ r8 g c d c bes~ |
@@ -6376,7 +6376,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -6502,7 +6502,7 @@ endChords={}
 	\time 4/4
 	\key f \major
 
-%% part "A"
+	% part "A"
 	f'4 c8 a e'4 c8 a | d e b c cis bes g gis | a4 f8 d g a f e | \tuplet 3/2 { ees g bes } d des r f, \tuplet 3/2 { f g f } |
 	c'4 bes8 f aes bes, r g' | ees' des aes f c' f, g a~ | a4 e8 c d4 r8 des'~ | des4 ces8 ges bes4 r8 aes |
 	\tuplet 3/2 { g4 f' f } f8 d bes g | a g c bes ees4 r8 c~ | c4 a8 f g4 r8 d'~ | d4 bes8 f a4 r |
@@ -6517,7 +6517,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -6673,24 +6673,24 @@ endChords={}
 	\time 3/4
 	\key g \major
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		d4 e fis | g a b | c2 e,4 | dis2. | b'2 d,!4 | cis2. | a'2 c,!4 | b2. |
 		g'2 b,4 | c4. d8 ees f | g2 ees'4 | d2 c4 | f,2 d'4 | c2 bes4 | f2 des'4 | c2 bes4 |
 		ees, f g | aes bes c | d2 c4 | b2 a4 | d,2.~ | d~ | d~ | d4 r r |
 	}
 
-%% part "A"
+	% part "A"
 	g a b | d r r | c b a | g2 fis4 | e fis g | b2. | a4 g f | e2 d4 |
 	g2 b,4 | c4. b8 c d | ees4. f8 g bes | a4 bes c | f,2 a,4 | bes4. c8 des ees | f2 des'4 | c2 bes4 |
 	ees,8 ees f f g g | aes aes bes bes c c | d2 \tuplet 3/2 { c8 d c } | b2 a4 | d,2.~ | d~ | d | r2. |
 
-%% part "A"
+	% part "A"
 	r4 d'8 d d d | c4 b2 | r4 c8 c c c | b4 a2 | r4 b8 b b b | a4 g2 | r4 a8 a a a | g4 f2 |
 	e4 f fis | g a b | c cis d | ees d c | f, g a | bes b c | cis d dis | e ees des |
 	c r8 bes4. | aes4 r8 bes4 c8 | d4 r8 c4 b8 | aes4 r fis8 e | d4 d d | f d4. c8 | d2.~ | d2 r4 |
 
-%% part "A"
+	% part "A"
 	d e fis | g a b | c2 e,4 | dis2. | b'2 d,!4 | cis2. | a'2 c,!4 | b2. |
 	g'2 b,4 | c4. d8 ees f! | g2 ees'4 | d2 c4 | f,!2 d'4 | c2 bes4 | f2 des'4 | c2 bes4 |
 	ees, f g | aes bes c | d2 c4 | b2 a4 | e'2.~ | e~ | e2 d4 | c2 b4 |
@@ -6708,20 +6708,20 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Poor lit -- tle, sad lit -- tle blue Blues -- ette,
 	don't you cry, don't you fret.
 	You can bet one luck -- y day you'll wak -- en and your blues will be for -- sak -- en.
 	One luck -- y day love -- ly love will come your way. __
 
-%% part "A"
+	% part "A"
 	Get set, Blues -- ette, true love is com -- ing.
 	Your trou -- bled heart soon will be hum -- ming.
 	\markup \italic Hum __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 	Doo -- ya, doo -- ya, doo -- ya, doo -- ya, doo -- ya, doo -- ya,
 	Doo -- oo -- _ _ oo Blues -- ette. __
 
-%% part "A"
+	% part "A"
 	Pret -- ty lit -- tle Blues -- ette must -- n't be a mourn -- er.
 	Have you heard the news yet?
 	Love is 'round the cor -- ner.
@@ -6730,7 +6730,7 @@ endChords={}
 	So, dry your eyes. Don't -- cha pout, don't -- cha fret,
 	good -- y good times are com -- ing, Blues -- ette. __
 
-%% part "A"
+	% part "A"
 	Long as there's love in your heart to share, dear Blues -- ette, don't des -- pair.
 	Some blue boy is long -- ing, just like you,
 	to find a some -- one to be true to.
@@ -6750,7 +6750,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Long as there's love in your heart to share, dear Blues -- ette, don't des -- pair
 	Some blue boy is long -- ing, just like you to find a some -- one to be true to.
 	Two lov -- ing arms he can nest -- le in and stay. __
@@ -6765,7 +6765,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1963, 1964 by MUSIC CORPORATION OF AMERICA, INC., New York, NY" }
@@ -6930,7 +6930,7 @@ endChords={}
 	\time 4/4
 	\key des \major
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		r8. ees16 f8. ees16 f4 ees | bes' bes2. | r8. aes16 bes8. aes16 bes4 aes | ees'4 des c bes |
 		r4 des bes8 ges4 bes,8 | f'2 ees | r8. des16 ees8. f16 aes4 \tuplet 3/2 { aes8 bes fes^\markup {To Coda \musicglyph #"scripts.coda"} } |
@@ -6943,13 +6943,13 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 	\key d \major
 	r8. d16 e8. fis16 a8 a4 a8 | d d4 fis,8 a a4 g8 | fis fis4 d8 e4 cis8 a~ | a2~ a8 r r4 |
 	\key c \major
 	r8. d16 e8. f16 a8 a4 g8 | e' e4 b8 d d4 a8 | c c4 a8 b b4 g8 | e4 ees d bes'^\markup {D.C. al Coda} |
 
-%% part "Coda"
+	% part "Coda"
 	\key des \major
 	des,1 |
 }
@@ -6970,13 +6970,13 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	My heart is sad and lone -- ly,
 	for you I sigh, for you, dear, on -- ly.
 	Why have -- n't you seen it?
 	I'm all for you, Bod -- y And Soul! _
 
-%% part "B"
+	% part "B"
 	I can't be -- lieve it,
 	it's hard to con -- ceive it
 	that you'd turn a -- way ro -- mance. __
@@ -7001,7 +7001,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	I spend my days in long -- ing
 	and won -- d'ring why it's me you're wrong -- ing,
 	I tell you I mean it,
@@ -7024,17 +7024,17 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	my life a wreck you're mak -- ing,
 	you know I'm yours for just the tak -- ing;
 	I'd glad -- ly sur -- ren -- der
 	my -- self to you, Bod -- y And
 
-%% part "B"
+	% part "B"
 	_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 	_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-%% part "Coda"
+	% part "Coda"
 	Soul!
 }
 
@@ -7051,7 +7051,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1930 Warner Bros. Inc & Chappell & Co. Ltd." }
@@ -7214,19 +7214,19 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		a'4 a2 g8 fis | f!2. dis8 e | b'4 b2 a8 aes | g2. fis8 g |
 		d'4 d2 b8 bes | a2. gis4 | b8 b b2.~ | b1 |
 
-	%% part "B"
+		% part "B"
 		b8 b b2 a4 | d b a4. g8 | c4 a g fis | b2. d,8 dis |
 		e4 e2 g4 | b g fis e | a1~ | a2. cis,8 d |
 
-	%% part "A"
+		% part "A"
 		a'4 a2 g8 fis | f!2. dis8 e | b'4 b2 a8 aes | g2. fis8 g |
 		d'4 d2 b8 bes | a2. gis4 | b8 b b2.~ | b e,8 eis |
 
-	%% part "C"
+		% part "C"
 		fis4 fis2 a4 | d b a4. g8 | e'4 c b a | g2. g4 |
 		d'8 d d2 g,4 | c8 c c2 fis,4 |
 
@@ -7250,23 +7250,23 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Love is fun -- ny or it's sad or it's qui -- et or it's mad;
 	it's a good thing or it's bad, But Beau -- ti -- ful! __
 
-%% part "B"
+	% part "B"
 	Beau -- ti -- ful to take a chance and if you fall, you fall,
 	and I'm think -- ing I would -- n't mind at all. __
 
-%% part "A"
+	% part "A"
 	Love is tear -- ful or it's gay; it's a prob -- lem or it's play;
 	it's a heart -- ache eith -- er way, But Beau -- ti -- ful! __
 
-%% part "C"
+	% part "C"
 	And I'm think -- ing if you were mine I'd nev -- er let you go,
 	and that would be But Beau -- ti -- ful  I
 
-%% part "Volta"
+	% part "Volta"
 	know. __ Love is
 	know. __
 }
@@ -7280,7 +7280,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1947 by Doesey Brothers Music, A Division of Music Sales Corporation, New York" }
@@ -7437,19 +7437,19 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		a2 g4 f~ | f g a g | a1 | r4 g a g |
 		a2 g4 f~ | f g a g | a1 | r4 a bes c |
 	} \alternative {
 		{
 
-		%% part "B"
+			% part "B"
 			cis2 d4 f | r g, a bes | b!2 c4 f | r f, g a |
 			a2 bes4 f' | r f d bes | g1 | r4 g a g |
 		}
 		{
 
-		%% part "C"
+			% part "C"
 			cis2 d4 f | r g, a bes | b!2 c4 g' | r f d bes |
 			a1 | g | f~ | f2. r4 |
 		}
@@ -7467,13 +7467,13 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	They're wri -- ting songs of love, __
 	But not for me
 	A luc -- ky stars a -- bove, __
 	But not for me!
 
-%% part "B"
+	% part "B"
 	With love to lead the way,
 	I've found more clouds of gray
 	Than a -- ny Rus -- sian play
@@ -7481,7 +7481,7 @@ endChords={}
 
 	I was a
 
-%% part "C"
+	% part "C"
 	can't dis -- miss
 	the me -- mory of his kiss,
 	I guess he's not for me __
@@ -7498,7 +7498,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	_ _ _ fool to fall, __
 	And get that way
 	Hi- -- Ho a -- las
@@ -7516,7 +7516,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -7673,19 +7673,19 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		a'4 a a a | bes a a2 | a4 g g2 | g4 f f2 |
 		f1 | g | f2 e2~ | e1 |
 
-	%% part "B"
+		% part "B"
 		bes'4 bes bes bes | c bes bes2 | bes4 a a2 | a4 g g2 |
 		g1 | a | g2 f~ | f1 |
 
-	%% part "C"
+		% part "C"
 		f4 c' c c | c bes a g | g1 | fis |
 		d4 bes' bes bes | bes a g f | f1 | e |
 
-	%% part "D"
+		% part "D"
 		a4 a a a | bes a a2 | a4 g g2 | g4 fis fis2 |
 		g2 bes~ | bes e, |
 	} \alternative {
@@ -7708,21 +7708,21 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Pack up all my care and woe,
 	here I go, Sing -- ing low,
 	Bye Bye Black -- bird, __
 
-%% part "B"
+	% part "B"
 	Where some -- bod -- y waits for me,
 	sug -- ar's sweet, so is she,
 	Bye Bye Black -- bird. __
 
-%% part "C"
+	% part "C"
 	No one here can love or un -- der -- stand me,
 	oh, what hard luck sto -- ries they all hand me.
 
-%% part "D"
+	% part "D"
 	Make my bed and light the light,
 	I'll ar -- rive late to -- night,
 	black -- bird __ bye bye.
@@ -7738,7 +7738,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1926 (Renewed) Warner Bros. Inc." }
@@ -7884,18 +7884,18 @@ endChords={}
 	\time 4/4
 	\key c \major
 
-%% part "A"
+	% part "A"
 	g'8 g g c~ c4 c | c8 g g g~ g2 | e8 e e a~ a4 a | a8 d, d d~ d2 | g c, |
 	aes8 c c ees~ ees4 d | c1 | R1 |
 
-%% part "A"
+	% part "A"
 	g'8 g g c~ c4 c | c8 g g g~ g2 | e8 e e a~ a4 a | a8 d, d d~ d2 | g c, |
 	aes8 c c ees~ ees4 d | c1 | R1 |
 
-%% part "B"
+	% part "B"
 	d4 d d d8 ees~ | ees1 | e?4 e e e8 fis~ | fis1 | g4 g g g | a a a a | d2~ d8 c b a | g1 |
 
-%% part "A"
+	% part "A"
 	g8 g g c~ c4 c | c8 g g g~ g2 | e8 e e a~ a4 a | a8 d, d d~ d2 | g c |
 	ees8 c d ees~ ees4 d | c1~ | c2. r4 | R1 |
 }
@@ -7926,7 +7926,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1927 T.B. Hama Company, Copyright Renewed" }
@@ -8031,7 +8031,7 @@ endChords={}
 	\startSong
 
 	\myMark "A"
-%%\mark "Bright Latin"
+	%\mark "Bright Latin"
 	\startPart
 	\repeat volta 2 {
 		c1*4:7 | \myEndLine
@@ -8039,11 +8039,11 @@ endChords={}
 		c1*4:7 | \myEndLine
 		f1*4:m6 | \myEndLine
 	}
-%% so I would see the repeat marks
-%%\endPart
+	% so I would see the repeat marks
+	%\endPart
 
 	\myMark "B"
-%%\mark "Swing"
+	%\mark "Swing"
 	\startPart
 	f1*4:9 | \myEndLine
 	bes1*4:9 | \myEndLine
@@ -8052,7 +8052,7 @@ endChords={}
 	\endPart
 
 	\myMark "A"
-%%\mark "Bright Latin"
+	%\mark "Bright Latin"
 	\startPart
 	c1*4:7 | \myEndLine
 	c1*4:7 | \myEndLine
@@ -8087,7 +8087,7 @@ endChords={}
 	\time 2/2
 	\key f \minor
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		c'1~ | c~ | c4 des c g | bes c e g, |
 		bes1~ | bes~ | bes4 c des c | des c b g |
@@ -8095,13 +8095,13 @@ endChords={}
 		f1~ | f~ | f | r |
 	}
 
-%% part "B"
+	% part "B"
 	f'1 | d2 c4. g8~ | g1~ | g4. f8 e4-. f-. |
 	c'1 | g2 f4. c8~ | c1 | r2 bes'8 c des d |
 	ees1 | c2 bes4. f8~ | f1~ | f2 g4-. ees-. |
 	c'4. aes8~ aes2~ | aes bes4-. aes-. | g2 g4. g8~ | g2 r |
 
-%% part "A"
+	% part "A"
 	c1~ | c~ | c4 des c g | bes c e g, |
 	bes1~ | bes~ | bes4 c des c | des c b g |
 	bes!1~ | bes~ | bes4 c b bes | a aes g ges |
@@ -8124,18 +8124,18 @@ endChords={}
 % these lyrics are from the Ella Firtgerald performance and adjusted for this tune...
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Night __ and stars that shine ab -- ove so bright __
 	The ma -- gic of their fa -- ding light __
 	That shines u -- pon our Ca -- ra -- van __
 
-%% part "B"
+	% part "B"
 	You are so exciting, __ _ _ _
 	This is so inviting __ _ _ _ _
 	Res -- ting in my_arms __
 	As I thrill to the magic charms __ _ _
 
-%% part "A"
+	% part "A"
 	Of_you be -- side me here, be -- neath the blue __
 	My dream of love is com -- ing true __
 	With -- in our de -- sert Ca -- ra -- van __
@@ -8154,7 +8154,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Sleep __ u -- pon my shou -- lder as we creep __
 	Ac -- ross the sand so I may keep __
 	This mem -- 'ry of our Ca -- ra -- van __
@@ -8169,7 +8169,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1937 (renewed 1965) Mills Music c/o EMI Music Publishing" }
@@ -8332,7 +8332,7 @@ endChords={}
 	\time 4/4
 	\key c \major
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 	} \alternative {
 		{
@@ -8341,7 +8341,7 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 }
 
 
@@ -8358,11 +8358,11 @@ endChords={}
 % this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	A Fog -- gy Day in Lon -- don town had __ _ me low and had me down.
 	I viewed the morn -- ing with a -- larm, the Brit -- ish Mu -- seum had lost its charm.
 
-%% part "B"
+	% part "B"
 	How long I wondered could this thing last? But_the age of mira -- cles had -- n't passed,
 	for sud -- den -- ly I saw you there and through fog -- gy Lon -- don town the sun was shin -- ing ev -- 'ry where. __
 }
@@ -8379,7 +8379,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -8535,13 +8535,13 @@ endChords={}
 	\time 2/2
 	\key f \major
 
-%% part "A"
+	% part "A"
 	f'2 a, | d2. f4 | e2 b! | d2. e4 |
 	f2 bes, | cis f4 e~ | e8 d4 f8~ f e d4 | a1 |
 	f'2 a, | b!2. d4 | c2 e~ | e4 e d c |
 	c2 bes~ | bes4 f' e d | d cis e8 cis4 bes8~ | bes2. r4 |
 
-%% part "A'"
+	% part "A'"
 	f'2 a, | d2. f4 | e2 b! | d2. e4 |
 	f2 bes, | cis f4 e~ | e8 d4 cis8~ cis d ees4~ | ees d fis a |
 	g2 bes | cis,~ cis8 a'4 g8~ | g f4 a8~ a g f4 | e4. d8 cis4 d |
@@ -8549,13 +8549,13 @@ endChords={}
 
 	\key d \major
 
-%% part "B"
+	% part "B"
 	fis2. a4 | g2. dis4 | fis e dis8 e4 b'8~ | b4 g e b |
 	d4. cis8~ cis2~ | cis4 e cis8 a4 b8~ | b1 | a2. cis4 |
 	e d cis8 d4 f8~ | f4 gis cis8 b4 a8~ | a g4 b,8~ b2~ | b4 b cis8 d4 fis8~ |
 	fis4 e d8 b4 gis8~ | gis4 b cis8 e4 d8~ | d2~ d4. cis8~ | cis1 |
 
-%% part "A''"
+	% part "A''"
 	fis2 a, | b2. fis'4 | e2 b | d2. e4 |
 	fis2 ais, | cis2. fis4 | e8 d4 cis8~ cis d4 e8~ | e d4 fis8~ fis4 b |
 	a8 fis4 d8~ d4. b8 | a' f!4 d8~ d4 bes | a'8 e4 cis8~ cis4 a | gis'4 b g! b |
@@ -8573,7 +8573,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	No More Blues,
 	I'm goin' back home.
 	No, No More Blues,
@@ -8582,7 +8582,7 @@ endChords={}
 	the fun -- ny part is __
 	my heart's been right there all a -- long. __
 
-%% part "A'"
+	% part "A'"
 	No more tears and no more sighs,
 	and no more fears, I'll say __ no more __ good -- byes. __
 	If tra -- vel beck -- ons me __
@@ -8590,7 +8590,7 @@ endChords={}
 	I'm gon -- na set -- tle down __
 	and there'll __ be No __ More Blues. __
 
-%% part "B"
+	% part "B"
 	Ev -- 'ry day while I am far a -- way __
 	my thoughts turn home -- ward, __
 	for -- ev -- er home -- __ ward.
@@ -8599,7 +8599,7 @@ endChords={}
 	but all my hap -- pi -- ness I found __
 	was in my home -- __ town. __
 
-%% part "A''"
+	% part "A''"
 	No More Blues, I'm goin' back home.
 	No, no more dues, I'm through with all __
 	my wan -- __ drin', now __ I'll set -- tle down __ and live my life __
@@ -8618,7 +8618,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1962 and 1967 Editora Musical Arapua, Sao Paulo, Brazil" }
@@ -8775,7 +8775,7 @@ endChords={}
 
 	\partial 2.. c8 e g gis b a8. e16 |
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		a1~ | a8 c, e g gis b a8. e16 | g1~
 		g8 d f a c e d8. c16 | a4. c8 b4. f8 | a4. c8 b4. g8 |
@@ -8788,7 +8788,7 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 	r4 e'4 \tuplet 3/2 { e4 e e } |
 	e2 d | r4 d8 cis e d c b | d4. c8 c2 |
 	r4 c8 b d c b a | c b~ b2 b8 a | a4. g8 g4. fis8 | a4. g8 g2 |
@@ -8807,19 +8807,19 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	In some se -- clud -- ed ren -- dez -- vous __ that o -- ver looks the av -- e --neu __
 	with some one shar -- ing a de -- light -- ful chat, of this and that and
-%% Volta
+	% Volta
 	Cock -- tails For Two. __
 	As we en -- joy a cig -- a --
 
-%% part "B"
+	% part "B"
 	Cock -- tails For Two. __
 	My head may go reel -- ing, but my heart will be o -- be -- di --ent
 	with in -- tox -- i -- cat -- ing kiss -- es for the prin -- ci -- pal in -- gre -- di --ent.
 
-%% part "A"
+	% part "A"
 	Most an -- y af -- ter -- nnon at five __ we'll be so gald we're both a -- live, __
 	then may -- be for -- tune will com -- plete her plan that all be -- gan with Cock -- tails For Two. __
 }
@@ -8835,7 +8835,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	_ _ _ _ _ _ _
 	rette, __ to some ex -- qui -- site chan -- son -- ette __
 	two hand are sure to sly -- ly meet be -- neath a ser -- vi -- nette, with
@@ -8850,7 +8850,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1934 (Renewed 1961) Famous Music Corporation" }
@@ -8992,13 +8992,13 @@ endChords={}
 	\time 4/4
 	\key f \major
 
-%% part "A"
+	% part "A"
 	a'4 a8 a a a4 a8 | a4 a8 a a a4 a8 | a f f f~ f2~ | f1 |
 	a4 a8 a a a4 a8 | c4 a8 a a a4 a8 | a f f f~ f2~ | f1 |
 	bes2 bes4 aes8 bes | c4 f,2 f8 f | bes2 bes4 aes8 bes | c1 |
 	d2 d4 c8 d | ees4 c2 c8 d | ees c d4 c bes8 g | a4 g2. |
 
-%% part "B"
+	% part "B"
 	a4 a8 a a a4 a8 | a4 a8 a a a4 a8 | a f f f~ f2~ | f1 |
 	b4 b8 b b b4 b8 | b4 b8 b b b4 b8 | cis a a a~ a2~ | a1 |
 	d4 d8 d d d4 d8 | d4 d,2 d4 | d' d8 d d d4 d8 | d4 d,2 e4 |
@@ -9016,7 +9016,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	I'm gon -- na love you like no -- bod -- y's loved you,
 	Come Rain Or Come Shine.
 	High as a moun -- tain and deep as a riv -- er,
@@ -9027,7 +9027,7 @@ endChords={}
 	But don't ev -- er bet me,
 	'Cause I'm gon -- na be true if you let me.
 
-%% part "B"
+	% part "B"
 	You're gon -- na love me like no -- bod -- y's loved me,
 	Come Rain Or Come Shine.
 	Hap -- py to -- geth -- er, un -- hap -- py to -- geth -- er
@@ -9048,7 +9048,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1946, by A-M Music Corp. Copyright Renewed, all rights controlled by Chappell & Co., Inc." }
@@ -9195,19 +9195,19 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		r4 d f d | g1 | r4 d f d | g4 ges8 f~ f2 |
 		r4 g! bes g | c1 | r4 g bes g | c4 ces8 bes~ bes2 |
 	} \alternative {
 		{
 
-		%% part "B"
+			% part "B"
 			r4 a c!4. a8 | g fis g bes~ bes4. g8 | f! e! f a~ a f e4 | ees!2. r4 |
 			r d8 d~ d cis d4 | a'2 g | r4 f8 f~ f e! f4 | d'2 c |
 		}
 		{
 
-		%% part "C"
+			% part "C"
 			r4 bes d4. bes8 | a gis a c~ c4. a8 | g! fis g bes~ bes f! g4 | ees1 |
 			r4 f g d' | d2 c8 bes c4 | bes1_\markup { \italic { Fine } } | r |
 		}
@@ -9223,7 +9223,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -9381,20 +9381,20 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		d'2~ d8 c g ees | d c4.~ c2 | r8 c ees c' bes4 bes | g2~ g8. g16 fis8. g16 | c4~ \tuplet 3/2 { c8 des c } des c4. |
 
-	%% part "A"
+		% part "A"
 		r8 g~ \tuplet 3/2 { g f ees } f g4. | r8 ges f ees f ees c ees | ees2~ ees4. r8 | d'2~ d8 c g ees | d c4.~ c2 |
 		r8 c ees c' bes4 bes | g2~ g8. g16 fis8. g16 | c4~ \tuplet 3/2 { c8 des c } des c4. | r8 g~ \tuplet 3/2 { g f ees } f g4. |
 		r8 ges f ees f ees c ees | ees1 |
 
-	%% part "B"
+		% part "B"
 		r8. g16 a bes8.~ \tuplet 3/2 { bes8 d, e } fis g | a8. g16 bes8 a~ a4. g8 |
 		bes4~ \tuplet 3/2 { bes8 g d' } c4 bes8 c~ | c1 | r8. g16 a bes8.~ \tuplet 3/2 { bes8 d, e } fis g | a8. g16 bes8 a~ a2 |
 		r8 a16 g a8. g16 a8. g16 b g8. | r8 a16 g a8. g16 a8. g16 b g8. |
 
-	%% part "A"
+		% part "A"
 		d'2~ d8 c g ees | d c4.~ c2 |
 		r8 c ees c' bes4 bes | g2~ g8. g16 fis8. g16 | c4~ \tuplet 3/2 { c8 des c } des c4. | r8 g~ \tuplet 3/2 { g8 f ees } f g4. |
 		r8 c ges ees f ees c ees |
@@ -9418,20 +9418,20 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Now __ you say you're lone -- ly, __ you cry the long night thru; __ well, you can Cry __ Me A Riv --er,
 	Cry __ Me A Riv -- er, I cried a riv -- er o -- ver you. __
 
-%% part "A"
+	% part "A"
 	Now __ you say you're sor -- ry __ for be -- in' so un -- true; __ well, you can Cry __ Me A Riv -- er,
 	Cry __ My A Riv -- er, I cried a riv -- er o -- ver you.
 
-%% part "B"
+	% part "B"
 	You drove me, __ near -- ly drove me, out of my head, __
 	while you __ nev -- er shed a tear. __ Re -- mem -- ber? __ I re -- mem -- ber, all that you said; __
 	told me love was too ple -- be -- ian, told me you were thru with me, an'
 
-%% part "A"
+	% part "A"
 	Now __ you say you love me, __ well, just to prove you do, __ Come on, an' Cry Me A Riv -- er,
 	Cry Me A Riv -- er, I cried a riv -- er o -- ver you. __ you. __
 }
@@ -9445,7 +9445,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1953, 1955 by Saunders Publications, Inc." }
@@ -9590,17 +9590,17 @@ endChords={}
 	\time 4/4
 	\key f \major
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		r4 c d e | f g a2 | g4. f8 e4 d | c' c b!2 |
 		bes!2. c4 | a1 | g2. a4 | f1 |
 	}
 
-%% part "B"
+	% part "B"
 	r4 g g g | g8 g g a f4 g | a r c c~ | c1 |
 	r4 g g g | g8 g a a f4 g | a r c c~ | c1 |
 
-%% part "A"
+	% part "A"
 	r4 c, d e | f g a2 | g4. f8 e4 d | c' c b!2 |
 	bes!2 d~ | d e, | f1~ | f4 r r2 |
 }
@@ -9617,17 +9617,17 @@ endChords={}
 % this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	He dan -- ces o -- ver -- head
 	on the ceil -- ing near my bed
 	in my sight
 	through the night
 
-%% part "B"
+	% part "B"
 	I whis -- per "\"go" a -- way my lo -- ver it's not "fair\"" __
 	but I'm so grate -- ful to dis -- co -- ver he's till there __
 
-%% part "A"
+	% part "A"
 	lo -- ve my ceil -- ing more
 	since it is a dan -- cing floor
 	just for __ my love __
@@ -9644,7 +9644,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	I tried to hide in vain
 	un -- der -- neath my coun -- ter -- pane
 	there's my love up a -- bove
@@ -9659,7 +9659,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -9805,19 +9805,19 @@ endChords={}
 	\time 4/4
 	\key g \major
 
-%% part "A"
+	% part "A"
 	d4 g ees4. ees8 | e4 a f4. fis8 | g4 b gis8 a b c | d4 e b2 |
 	b4 d c8 b a g | fis4 a e ees | d2 fis | d r |
 
-%% part "A"
+	% part "A"
 	d4 g ees4. ees8 | e4 a f4. fis8 | g4 b gis8 a b c | d4 e b2 |
 	b4 d c8 b a g | fis4 a e ees | d2 b' | g2. r4 |
 
-%% part "B"
+	% part "B"
 	r8 g4 g8 f4 ees | c' c8 bes~ bes4. c8 | d ees d des~ des4 ces | bes aes8 f~ f2 |
 	r8 g4 g8 f4 ees | g a8 bes~ bes4. c8 | d d d d~ d4 d, | bes'2 b |
 
-%% part "A"
+	% part "A"
 	d,4 g ees4. ees8 | e4 a f4. fis8 | g4 b gis8 a b c | d4 e b2 |
 	b4 d c8 b a g | fis4 a e ees | d2 b' | g2. r4 |
 }
@@ -9832,25 +9832,25 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Darn That Dream I dream each night,
 	You say you love me and you hold me tight,
 	but when I a -- wake you're out of sight.
 	Oh, Darn That Dream.
 
-%% part "A"
+	% part "A"
 	Darn your lips and darn your eyes,
 	they lift me high a -- bove the moon -- lit skies,
 	then I tum -- ble out of Par -- a -- dise.
 	Oh, Darn That Dream.
 
-%% part "B"
+	% part "B"
 	Darn that one- -- track mind of mine, __
 	it can't un -- der -- stand __ that you don't care. __
 	Just to change the mood I'm in, __
 	I'd wel -- come a nice __ old night -- mare.
 
-%% part "A"
+	% part "A"
 	Darn That Dream and bless it too,
 	with -- out that dream I nev -- er would have you.
 	But it haunts me and it won't come true,
@@ -9866,7 +9866,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1939 Bregman, Vocco and Conn, Inc. New York" }
@@ -10030,25 +10030,25 @@ endChords={}
 %	http://lilypond.org/doc/v2.11/Documentation/user/lilypond/MIDI-instruments#MIDI-instruments
 %	\set Staff.midiInstrument = #"flute"
 
-%% part "A"
+	% part "A"
 	r8 c4 d8 e4 f | e4. d8 cis4 d | f4. des8 des2~ | des1 |
 	r8 d!4 e8 f4 g | f4. e8 dis4 e | c'4. ees,8 ees2~ | ees1 |
 	r8 d c' bes a g4 bes8~ | bes4. a8 dis,4 e | fis8 a fis2 d4 | ees1 |
 	r8 aes4 g8 f4 d | aes'4. g8 f4 d | f4. des8 des2~ | des r |
 
-%% part "A"
+	% part "A"
 	r8 c4 d8 e4 f | e4. d8 cis4 d | f4. des8 des2~ | des1 |
 	r8 d!4 e8 f4 g | f4. e8 dis4 e | c'4. ees,8 ees2~ | ees1 |
 	r8 c'4 bes8 a g4 bes8~ | bes4. a8 g4 f | g8 f g2.~ | g2 r |
 
-%% part "B"
+	% part "B"
 	e4 fis e8 fis4 e8~ | e4. d8 cis4 d | e1~ | e2 r4 cis |
 	e fis e8 fis4 e8~ | e4. d8 cis4 d | e4. b8 e2~ | e1 |
 	r8 e4 fis8 gis4 a | b4. a8 cis,4 d | e8 fis e fis e2~ | e r4 e |
 	g a g a | g f e f | g d8 g~ g d g4~ | g r r8 d g a |
 	bes4 a bes a | c bes a bes | g1~ | g4 r r2 |
 
-%% part "A"
+	% part "A"
 	r8 c,4 d8 e4 f | e4. d8 cis4 d | f4. des8 des2~ | des1 |
 	r8 d!4 e8 f4 g | f4. e8 dis4 e | d' des c b | bes! d r a |
 	c4. b8 bes4 a | bes a g f | a2. e4 | g2. d8 e |
@@ -10096,7 +10096,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1959 and 1962, Editora Musical Arapua, Sao Paulo, Brazil" }
@@ -10231,7 +10231,7 @@ endChords={}
 	\time 4/4
 	\key aes \major
 
-%% part "A"
+	% part "A"
 	r2 \tuplet 3/2 { g''8 aes g } f e | ees! des c bes-4 a-3 c,-1 ees f |
 	\tuplet 3/2 { ges aes ges } f-1 ees d f aes c | g! f r4 r e!8 d! |
 	ees! a, bes des! f aes c ees | des e, f c' b g-1 ees-3 des-2 |
@@ -10241,7 +10241,7 @@ endChords={}
 	d c b a bes aes r d,16 f | \tuplet 3/2 { g8 ges f } e4 r2 |
 	ees'!8 des f, aes c bes aes f | g bes des ees \tuplet 3/2 { e fis e } ees des |
 
-%% part "B"
+	% part "B"
 	c4 r \tuplet 3/2 { g'8 aes g } f e | ees! des c bes-4 a-3 c,-1 ees f |
 	\tuplet 3/2 { ges aes ges } f-1 ees d f aes c | g! f r4 r g8 f |
 	e f g aes bes aes g f | \tuplet 3/2 { des' ees des } c bes \tuplet 3/2 { aes bes aes } g e |
@@ -10261,7 +10261,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -10413,7 +10413,7 @@ endChords={}
 	\time 4/4
 	\key c \major
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		g'2 bes | a2. g4 | \tuplet 3/2 { f4 f f } e e | d2. c4 |
 		\tuplet 3/2 { f f f } e d | \tuplet 3/2 { g g g } f e |
@@ -10426,11 +10426,11 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 	gis4 a gis a | ais b ais b | d2 c4 c~ | c1 |
 	d2 c4 c~ | c2 \tuplet 3/2 { d,4 fis b } | a2 aes | g1 |
 
-%% part "A"
+	% part "A"
 	g2 bes | a2. g4 | \tuplet 3/2 { f4 f f } e e | d2. c4 |
 	\tuplet 3/2 { f f f } e d | \tuplet 3/2 { g g g } f e | a2 a | c2. r4 |
 }
@@ -10447,7 +10447,7 @@ endChords={}
 % these are lyrics from the internet adjusted for the real book
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Don't Blame Me
 	For fal -- ling in love with you.
 	I'm un -- der your spell
@@ -10455,13 +10455,13 @@ endChords={}
 	Don't Blame Me.
 	_ _ _
 
-%% part "B"
+	% part "B"
 	I can't help it
 	If that dog -- gone moon a -- bove __
 	Makes me want __
 	Some -- one like you to love.
 
-%% part "A"
+	% part "A"
 	Blame your kiss
 	As sweet as a kiss can be,
 	And blame all your charms
@@ -10480,7 +10480,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Can't you see
 	When you do the things you do
 	If I can't con -- ceal
@@ -10497,7 +10497,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -10643,19 +10643,19 @@ endChords={}
 	\time 4/4
 	\key f \major
 
-%% part "A"
+	% part "A"
 	d4 f2 a8 d, | e1 | d4 f2 e8 f | e1 |
 	c'4 bes2. | bes4 a2 a8 d, | e1~ | e4 r r2 |
 
-%% part "A"
+	% part "A"
 	d4 f2 a8 d, | e1 | d4 f2 e8 f | e1 |
 	c'4 bes2. | bes4 a2 a8 d, | f1~ | f |
 
-%% part "B"
+	% part "B"
 	a8 a c a bes bes4. | g8 g bes g a2 | f8 f a f g g4. | e8 f g g g f e4 |
 	a8 a c a bes bes4. | g8 g bes g a2 | f8 f a f g g4. | e8 f g f e2 |
 
-%% part "A"
+	% part "A"
 	d4 f2 a8 d, | e1 | d4 f2 e8 f | e1 |
 	c'4 bes2. | bes4 a2 a8 d, | f1~ | f |
 }
@@ -10670,19 +10670,19 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Hush now, Don't Ex -- plain!
 	Just say youl'll re -- main,
 	I'm glad you're back,
 	Don't Ex -- plain! __
 
-%% part "A"
+	% part "A"
 	Qui -- et, Don't Ex -- plain!
 	What is there to gain?
 	Skip that lip -- stick,
 	Don't Ex -- plain! __
 
-%% part "B"
+	% part "B"
 	You know that I love you
 	and what love en -- dures.
 	All my thoughts are of you
@@ -10692,7 +10692,7 @@ endChords={}
 	Right or wrong don't mat -- ter
 	when you're with me, sweet.
 
-%% part "A"
+	% part "A"
 	Hush now, Don't Ex -- plain!
 	You're my joy and pain.
 	My life's yours love,
@@ -10708,7 +10708,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1946 by Northern Music Company" }
@@ -10865,7 +10865,7 @@ endChords={}
 	\time 2/2
 	\key c \major
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		r8 e'4 d8 c g f4 | e1 | r8 e'4 d8 c g f4 | e1 |
 		r8 g4 f8 e d c c'~ | c4. a8~ a2 | r8 e f fis g c, dis e | c1 |
@@ -10894,7 +10894,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Missed the Sat -- ur -- day dance, heard they crowd -- ed the floor;
 	cound -- n't bear it with -- out you, __ Don't Get A -- round Much An -- y -- more.
 	Thougt I'd vis -- it the club, got as far as the door;
@@ -10915,7 +10915,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1973 Herrison Music Corp. and Robbins Music" }
@@ -11062,7 +11062,7 @@ endChords={}
 
 	\partial 8 f8 |
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		bes8 d bes f bes4 r8 f | bes8 f bes des r g,4 f8 |
 	} \alternative {
@@ -11074,10 +11074,10 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 	g'4 r8 f~ f r des4~ | des4. g,8 r c4 g8 | des'4 des8 des g,4 c | r2 r4 r8 f, |
 
-%% part "A"
+	% part "A"
 	bes d bes f bes4 r8 f | bes f bes des r g,4 f8 | e g bes des \tuplet 3/2 { c8 des c } g8 bes | r1 |
 }
  }
@@ -11090,7 +11090,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1963 Prestige Music Co, Inc." }
@@ -11242,7 +11242,7 @@ endChords={}
 	\time 4/4
 	\key f \major
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		\tuplet 3/2 { a'4 d c } ees,2 | r8 d g bes d f4 e8 | \tuplet 3/2 { b4 d c } f,2 | r8 d f a c4. bes8 |
 		\tuplet 3/2 { a4 g' f } a,4. e'8 |
@@ -11255,11 +11255,11 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 	aes1 | \tuplet 3/2 { ees'4 f fes } \tuplet 3/2 { ees c bes } | aes1 | e'!8 f e f ees4 c8 bes |
 	aes2 \tuplet 3/2 { aes4 f aes } | bes2 \tuplet 3/2 { bes4 g bes } | c2 d | g8 e d c gis2 |
 
-%% part "A"
+	% part "A"
 	\tuplet 3/2 { a4 d c } ees,2 | r8 d g bes d f4 e8 | \tuplet 3/2 { b4 d c } f,2 | r8 d f a c4. bes8 |
 	\tuplet 3/2 { a4 g' f } a,4. e'8 | d4 bes8 d, a'4 a8 f~ | f1~ | f |
 }
@@ -11275,21 +11275,21 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Li -- ving for you is ea -- sy li -- ving
 	It's ea -- sy to live when you're in love
 	And I'm so in love
 	There is nothing in life but you __
 	_ _ _ _ _ _
 
-%% part "B"
+	% part "B"
 	For you may -- be I'm_a fool
 	But it's fun
 	Peo -- ple say you rule me with one wave of your hand
 	Dar -- ling, it's grand
 	They just don't un -- der -- stand
 
-%% part "A"
+	% part "A"
 	Li -- ving for you is ea -- sy li -- ving
 	It's ea -- sy to live when you're in love
 	And I'm so in love
@@ -11307,7 +11307,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	I ne -- ver_reg -- ret the years that I'm giving
 	They're ea -- sy to give when you're in love
 	I'm hap -- py to do
@@ -11324,7 +11324,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -11478,7 +11478,7 @@ endChords={}
 	\time 4/4
 	\key c \major
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		a'1 | d,2. e4 | f2 e4. f8 | b2. a4 |
 		g2 fis4 g | d' des c b | a2 gis4. a8 |
@@ -11486,14 +11486,14 @@ endChords={}
 		{
 			g'!1 |
 
-		%% part "B"
+			% part "B"
 			g | a,2. b4 | e e e2~ | e4 r r2 |
 			r4 g g,4. g8 | aes aes4 aes8 a4 a8 b~ | b4 b b2~ | b4 r r2 |
 		}
 		{
 			a'2. e4 |
 
-		%% part "C"
+			% part "C"
 			g2. d4 | f2. c4 | e2 b4 c | d des c b |
 			a2 e' | e ees4 d | c1~ \mark \markup { \italic { Fine } } | c4 r r2 |
 		}
@@ -11511,18 +11511,18 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	You'd be so Eas -- y To Love,
 	So eas -- y to i -- dol -- ize,
 	All oth -- ers a -- bove
 
-%% part "B"
+	% part "B"
 	So worth the yearn -- ing for, __
 	So swell to keep ev -- 'ry home -- fire burn -- ing for __
 
 	shame
 
-%% part "C"
+	% part "C"
 	that you can't see
 	your fu -- ture with me,
 	'cause you'd be oh, so Eas -- y To Love! __
@@ -11539,7 +11539,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	We'd be so grand at the game
 	So care -- free to -- get -- her,
 	that it does seem a
@@ -11554,7 +11554,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1936 by Chappell & Co., Inc." }
@@ -11674,7 +11674,7 @@ endChords={}
 	cis:7 d:7 | cis:7 d:7 | cis:7 d:7 | \mark \markup { \musicglyph #"scripts.coda" } cis:7 d:7 | \myEndLine
 	\endPart
 
-%%\myMark "Coda"
+	%\myMark "Coda"
 	\mark \markup { \musicglyph #"scripts.coda" }
 	\startPart
 	cis:7 d:7 | ges1:7.11+ | \myEndLine
@@ -11703,23 +11703,23 @@ endChords={}
 	\time 4/4
 	\key c \major
 
-%% part "A"
+	% part "A"
 	r4 cis8 d ais' b4. | cis,8 d ais' b~ b4 r | r cis,8 d bes' e,4. | cis8 d bes' e,~ e4 r |
 	r4 dis8 e c' cis4. | dis,8 e c'! cis~ cis4 r | r dis,8 e c'! fis,!4. | dis8 e c' fis,~ fis4 r |
 
-%% part "B"
+	% part "B"
 	r4 dis8 e c' cis4. | dis,8 e c'! cis~ cis4 r | r dis,8 e c'! fis,!4. | dis8 e c' fis,~ fis4 r |
 	r4 cis8 d ais' b4. | cis,8 d ais' b~ b4 r | r cis,8 d bes' e,4. | cis8 d bes' e,~ e4 r |
 
-%% part "C"
+	% part "C"
 	fis,4-> fis-> cis'8 dis fis gis | a4 gis8 a fis4 dis | fis,-> fis-> cis'8 dis fis a | r a4 gis8 fis4 dis |
 	b-> b-> cis8 dis fis gis | b4 a8 b a4 fis | f!8 aes ces ees~ ees ces4. | fis,8 a c! e~ e c4. |
 
-%% part "B"
+	% part "B"
 	r4 dis,8 e c' cis4. | dis,8 e c'! cis~ cis4 r | r dis,8 e c'! fis,!4. | dis8 e c' fis,~ fis4 r |
 	r4 cis8 d ais' b4. | cis,8 d ais' b~ b4 r | r cis,8 d bes' e,4. | cis8 d bes' e,~ e4 r |
 
-%% part "Coda"
+	% part "Coda"
 	cis8 d ais' b~ b4 a!8 c~ | c1\fermata |
 }
  }
@@ -11732,7 +11732,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -11888,7 +11888,7 @@ endChords={}
 
 	\partial 4 c4 |
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		c'4. a8~ a2 | r4 bes8 c e4 d8 c | aes1 | r4 g8 aes c4 bes8 aes |
 		f4 f2. | r4 f8 f g4 f8 g |
@@ -11901,11 +11901,11 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 	f'1 | r4 f8 f f4 ees8 des | ees4. ees8 aes2 | r4 ees8 ees~ ees4 des8 c |
 	des4. des8 g2 | r4 des4 des c8 bes | c1~ | c2 r4 c,4 |
 
-%% part "A"
+	% part "A"
 	c'4. a8~ a2 | r4 bes8 c e4 d8 c | aes1 | r4 g8 aes c4 bes8 aes |
 	f4 f2. | r4 g \tuplet 3/2 { bes d f } | a1~ | a2. r4 |
 }
@@ -11921,12 +11921,12 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Fla -- min -- go, __
 	like a flame in the sky,
 	fly -- ing o -- ver the is -- land
 	to my lov -- er near by. __
-%% Volta
+	% Volta
 	Fla
 }
 
@@ -11941,17 +11941,17 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Fla -- min -- go, __
 	in your trop -- i -- cal hue,
 	speak of pas -- sion un -- dy -- ing
 	and a love that is _ _ true. __
 
-%% part "B"
+	% part "B"
 	The wind sings a song to you as you go,
 	a song __ that I hear be -- low the mur -- mur -- ing palms. __
 
-%% part "A"
+	% part "A"
 	Fla -- min -- go, __
 	when the sun meets the sea,
 	say fare -- well to my lov -- er
@@ -11967,7 +11967,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1941 Tempo Music, Inc." }
@@ -12119,13 +12119,13 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		c'4 b a8 g4. | f g8 a4 c | b a g8 f4. | e1 |
 		a4 g f8 e4. | d4. e8 f4 a | gis f e8 d4. | c2. cis4 |
 		d8 a'4 a8~ a2~ | a4 c2 b4 | g1~ | g2. b,4 |
 		c8 f4 f8~ f2~ | f4 a2 g4 | f2 e2~ | e1 |
 
-	%% part "B"
+		% part "B"
 		c'4 b a8 g4. | f g8 a4 c | b a g8 f4. | e1 |
 		a4 g f8 e4. | d4 e4 f a | gis f e8 d4. | c2. cis4 |
 		d8 a'4 a8~ a2~ | a4 c2 b4 |
@@ -12151,19 +12151,19 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Fly Me To The Moon, and let me play a -- mong the stars;
 	let me see what spring is like on Ju -- pi -- ter and Mars.
 	In oth -- er words, __ hold my hand! __
 	In oth -- er words, __ dar -- ling kiss me! __
 
-%% part "B"
+	% part "B"
 	Fill my heart with song, and let me sing for -- ev -- er -- more;
 	you are all I long for all I wor -- ship and a -- dore.
 	In oth -- er words, __ please be true! __
 	In oth -- er words, __ I love you!
 
-%% part "Volta"
+	% part "Volta"
 	true! __ In oth -- er words, __ I love you! __
 }
 
@@ -12176,7 +12176,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1954 and renewed 1982 Hampshire House Publishing Corp., New York NY." }
@@ -12326,11 +12326,11 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		e2. d8 c | c2. d8 e | e2. d8 c | b2. c8 d |
 		e1~ | e2 e8 g e c | d1~ | d2. r4 |
 
-	%% part "B"
+		% part "B"
 		c'2. b8 a | a2. g8 fis | bes2. a8 g | g2. f8 e |
 		aes2. g8 f | f2. e8 d |
 	} \alternative {
@@ -12392,7 +12392,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1931 (renewed 1959) EMI Robbins Catalog, Inc" }
@@ -12525,7 +12525,7 @@ endChords={}
 	\time 4/4
 	\key c \major
 
-%% part "A"
+	% part "A"
 	fis'2 d | b g4. bes8~ | bes1 | b4. a8~ a2 |
 	d bes | g dis4. fis8~ | fis1 | g2 f4. bes8~ |
 	bes1 | b2 a4. d8~ | d1 | dis2 cis4. fis8~ |
@@ -12543,7 +12543,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Life when we were kids __
 	Was like __ play -- ing gi -- ant steps __
 	We were told __ to ad -- vance __
@@ -12562,7 +12562,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Think of life as chess __
 	Cap -- ture __ one piece at a time __
 	For -- ward east, __ cas -- tle next __
@@ -12579,7 +12579,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1974 Jowcol Music." }
@@ -12680,8 +12680,8 @@ endChords={}
 	\repeat volta 2 {
 		f1:maj7 | ees2:maj7 d:maj | des1:maj7 | c:7.9+ | f:m7 | \myEndLine
 	}
-%% this is remarked ON PURPOSE to keep the repetition sign in the chart...
-%%\endPart
+	% this is remarked ON PURPOSE to keep the repetition sign in the chart...
+	%\endPart
 
 	\myMark "B"
 	\startPart
@@ -12717,16 +12717,16 @@ endChords={}
 	\time 4/4
 	\key c \major
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		r8 g'4 c8 \tuplet 3/2 { b c a } \tuplet 3/2 { r a e } | g1 | r8 f g f~ f ees c ees~ | ees2 r8 c bes c~ | c1 |
 	}
 
-%% part "B"
+	% part "B"
 	g'4 a8 b~ b2 | r8 a4. b4 c8 d~ | d2 r8 c g bes~ | bes2. a4 | c2 r8 bes f aes~ |
 	aes2. g4 | bes2 r8 aes16 bes aes8 des, | ees'2 r8 des16 ees des8 aes | ges'1~ | ges |
 
-%% part "A"
+	% part "A"
 	r8 g,4 c8 \tuplet 3/2 { b c a } \tuplet 3/2 { r a e } | g1 | r8 f g f~ f ees c ees~ | ees2 r8 c bes c~ | c1 |
 }
  }
@@ -12739,7 +12739,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1962, Orpheum Music." }
@@ -12890,20 +12890,20 @@ endChords={}
 	\time 4/4
 	\key c \major
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		c'2 c~ | c \tuplet 3/2 { b4 g e } | bes'1~ | bes |
 		a2 a~ | a \tuplet 3/2 { aes4 f des } | g1~ | g |
 	} \alternative {
 		{
 
-		%% part "B"
+			% part "B"
 			r8 g4. d4 e | f g aes bes | g1~ | g |
 			r8 bes4. f4 g | aes bes ces des | bes1~ | bes2 b |
 		}
 		{
 
-		%% part "C"
+			% part "C"
 			r8 g4. d4 e | f g gis e' | d4. c8~ c2 | c,4 d dis b' |
 			a4. g8~ g2 | r8 g4. g4 g | g1~ | g |
 		}
@@ -12952,7 +12952,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1947 (Renewed 1975) MGM/EMI Feist Catalog, Inc." }
@@ -13113,7 +13113,7 @@ endChords={}
 
 	e8 |
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		g4 a8 b8. c16 b8 | a4 fis8 d8. e16 fis8 |
 	} \alternative {
@@ -13125,7 +13125,7 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 	\repeat volta 2 {
 		d'4. d8. c16 b8 | a4 fis 8 d8. e16 fis8 |
 	} \alternative {
@@ -13183,7 +13183,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1988 by HAL LEONARD PUBLISHING CORPORATION" }
@@ -13336,7 +13336,7 @@ endChords={}
 	\time 4/4
 	\key bes \major
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		f8 g f g~ g2 | g8 a g a~ a2 | a8 bes a bes~ bes a bes4 | d2 c |
 		c8 bes a g~ g a bes4 | f4 f2. |
@@ -13349,11 +13349,11 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 	a8 f g a~ a2 | a8 c bes a~ a2 | d8 c bes a~ a f g4 | a1 |
 	c8 a bes c~ c2 | bes8 c d c~ c4. a8 | c g a bes~ bes c d4 | c2. r4 |
 
-%% part "A"
+	% part "A"
 	f,8 g f g~ g2 | g8 a g a~ a2 | a8 bes a bes~ bes a bes4 | d2 c |
 	c8 bes a g~ g a bes4 | f4 f2. | ees'8 d ees c~ c4 d | bes2. r4\fermata |
 }
@@ -13369,7 +13369,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Is it a sin, __ is it a crime, __ lov -- ing you dar, __ like i do? __ _ If it's a crime __ then I'm
 	Guilt -- y, Guilt -- y of lov -- ing you. __ Guit -- y of dream -- ing of you. __
 	What can I do, __ what can I say, __ af -- ter I've tak -- en the blame? You say you're thu, __
@@ -13399,7 +13399,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1931 (Renewed 1958) Whiting Publishing and EMI Feist Catalog Inc." }
@@ -13535,7 +13535,7 @@ endChords={}
 	\time 4/4
 	\key f \major
 
-%% part "A"
+	% part "A"
 	r8. c'16[ d8. c16] aes8.[ g16 f8. d16] | f4 f8 aes~ aes r r4 |
 	r8. c16[ d8. c16] aes8.[ g16 f8. d16] | f4 f8 d~ d8. c16 r4 |
 	r4 d'8. c16 aes8.[ g16 f8. d16] | f4 f8 f~ f r r4 |
@@ -13543,13 +13543,13 @@ endChords={}
 	a8 c4. r4 a8. a16 | g8 f4. r4 aes8. g16 |
 	aes8.[ g16 f8. d16] f4 f8 f~ | f r r4 r2 |
 
-%% part "B"
+	% part "B"
 	r8. d16[ f8. d16] f8.[ d16 f8. d16] | f8. f16 f4 r2 |
 	r4 a d8.[ c16 a8. f16] | a4 f8 g~ g4 r |
 	r f8. d16 f8.[ d16 f8. d16] | f4 f8 f~ f r r4 |
 	r8. d16[ g8. d16] r2 | g8 a4 d8~ d4 c |
 
-%% part "A"
+	% part "A"
 	r4 d8. c16 aes8.[ g16 f8. d16] | f4 f8 aes~ aes r r4 |
 	r4 d8. c16 aes8.[ g16 f8. d16] | f4 f8 d~ d8. c16 r4 |
 	r8. c'16[ d8. c16] aes8.[ g16 f8. d16] | f4 f8 f~ f r r4 |
@@ -13568,20 +13568,20 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	_ Let me tell you 'bout a boy I know. __
 	He is my ba -- by and he lives next door __ _
 	Ev -- 'ry morn -- ing 'fore the sun comes up __
 	he brings my cof -- fee in my fav -- 'rite cup __
 	That's why I know, __ _ yes, I know, __ _ Hal -- le -- lu -- jah, I just love him so. __
 
-%% part "B"
+	% part "B"
 	Now if I call him on the tel -- e -- phone,
 	and tell him that I'm all a -- lone, __
 	by the time I count from one to four, __
 	I hear him on my door. __ _
 
-%% part "A"
+	% part "A"
 	In the eve -- ning when the sun goes down, __
 	when there is no -- bod -- y else a -- round __ _
 	he kiss -- es me __ _ and he holds me tight. __
@@ -13598,7 +13598,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1956 & 1959 by Hill & Range Snogs, Inc." }
@@ -13753,7 +13753,7 @@ endChords={}
 	\time 4/4
 	\key f \major
 
-%% part "A"
+	% part "A"
 	\repeat unfold 2 {
 		a'4 d, c d | c2. r4 | d e f g | a bes c2 |
 		d4 g, f g | f2. a4 |
@@ -13762,11 +13762,11 @@ endChords={}
 		{ c1~ | c4 d d d | }
 	}
 
-%% part "B"
+	% part "B"
 	c4 bes f g | aes aes aes aes | aes ges des ees | e! e e e |
 	e d fis a | des2 des | bes1~ | bes2. r4 |
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		a4 d, c d | c2. r4 | d e f g | a bes c d |
 		e1~ | e4 d a g |
@@ -13790,20 +13790,20 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	"\"Have" You Met Miss "Jones?\"" Some one said as we shook hands.
 	She was just Miss Jones to me. __
 
-%% part "A"
+	% part "A"
 	Then I said "\"Miss" Jones, You're a girl who un -- der -- stands,
 	I'm a man who must be "free.\"" __
 
-%% part "B"
+	% part "B"
 	And all at once I lost my breath,
 	and all at once was scared to death,
 	and all at once I owned the earth and sky! __
 
-%% part "A"
+	% part "A"
 	Now I've met Miss Jones, and we'll keep on meet -- ing till we die, __
 	Miss Jones and I.
 
@@ -13819,7 +13819,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1937, by Chappell & Co., Inc. Copyright Renewed" }
@@ -13964,19 +13964,19 @@ endChords={}
 	\time 2/2
 	\key f \major
 
-%% part "A"
+	% part "A"
 	f4 f f2~ | f8 f e d e f g4 | a a a2~ | a8 a g f g a bes4 |
 	c2 f, | r8 d' c bes a4 g | f2~ f8 g a bes | c4 bes8 a g2 |
 
-%% part "A"
+	% part "A"
 	f4 f f2~ | f8 f e d e f g4 | a a a2~ | a8 a g f g a bes4 |
 	c2 f, | r8 d' c bes a4 g | f2~ f8 g a bes | c4 f,2. |
 
-%% part "B"
+	% part "B"
 	r8 d' c bes a4. g8 | fis2 g | e f | d e |
 	r8 d' c bes a4. g8 | fis2 g | e f | d e4. c8 |
 
-%% part "A"
+	% part "A"
 	f4 f f2~ | f8 f e d e f g4 | a a a2~ | a8 a g f g a bes4 |
 	c2 f, | r8 d' c bes a4 g | a1 | r8 bes a g f4 e | f1~ | f2. r4 |
 }
@@ -13991,19 +13991,19 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Heart and soul, __ I fell in love with you Heart and Soul, __ the way a fool would do,
 	Mad -- ly, be -- case you held me tight __ and stole a kiss in the night.
 
-%% part "A"
+	% part "A"
 	Heart and soul, __ I begged to be a -- dored; Lost con -- trol, __ and tum -- bled o -- ver -- board
 	Glad -- ly, that mag -- ic night we kissed. __ there in the moon -- mist.
 
-%% part "B"
+	% part "B"
 	Oh! but your lips were thrill -- ing, much too thirll -- ing. Nev -- er be -- fore were
 	mine so strange -- ly will -- ing. But
 
-%% part "A"
+	% part "A"
 	now I see __ what one em -- brace can do. Look at me, __ it's got me love -- ing you, Mad -- ly
 	that lit -- tle kiss your stole Heald all my heart and soul. __
 }
@@ -14017,7 +14017,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -14187,19 +14187,19 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		d4 d2 d4 | d f bes d | d2 c4. b!8 | c1 |
 		d,4 d2 d4 | d fis a c | b1~ | b2. r4 |
 
-	%% part "B"
+		% part "B"
 		ees2 ees | ees4 g, aes a | d2 f,4 fis | g2 f4 g |
 		c c8 c c4 c8 c | c4 e, eis fis | b1~ | b2. r4 |
 
-	%% part "A"
+		% part "A"
 		d,4 d2 d4 | d f bes d | d2 c4. b!8 | c1 |
 		d,4 d2 d4 | d fis a c | b1~ | b2. r4 |
 
-	%% part "C"
+		% part "C"
 		e4 e2 e4 | e a, b c | d2 fis,4 g | a1 |
 		d,4 d2 d4 | d fis a b |
 	} \alternative {
@@ -14226,22 +14226,22 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	May -- be I should have saved those left -- ov -- er dreams;
 	fun -- ny, but Here's That Rain -- y Day. __
 
-%% part "B"
+	% part "B"
 	Here's That Rain -- y Day they told me a -- bout,
 	and I laughed at the thought that it might turn out this way. __
 
-%% part "A"
+	% part "A"
 	Where is that worn out wish that I threw a -- side,
 	Af -- ter it brought my lov -- er near? __
 
-%% part "C"
+	% part "C"
 	Fun -- ny how love be -- comes a cold rain -- y day.
 	Fun -- ny that rain -- y day is here. __
-%% volta
+	% volta
 	here. __
 }
 
@@ -14258,7 +14258,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1953 by BOURCE CO. and DORSEY BROS. MUSIC, INC. Copyright Renewed." }
@@ -14416,19 +14416,19 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		c'8 bes d, f a2 | c8 bes d, f a2 | c8 bes d, f a4 a | a2 a8 g f d |
 		f4 f f2~ | f a8 g f d | f1~ | f4 r r2 |
 
-	%% part "A"
+		% part "A"
 		c'8 bes d, f a2 | c8 bes d, f a2 | c8 bes d, f a4 a | a2 a8 g f d |
 		f4 f f2~ | f a8 g f d | f1~ | f4 r r2 |
 
-	%% part "B"
+		% part "B"
 		f2 g | gis a | r4 bes8 c~ c bes c4 | des c8 bes~ bes2 |
 		g a | ais b | r4 c8 d~ d c d4 | ees d8 c~ c2 |
 
-	%% part "A"
+		% part "A"
 		c8 bes d, f a2 | c8 bes d, f a2 | c8 bes d, f a4 a | a2 a8 g f d |
 		f4 f f2~ | f a8 g f d |
 	} \alternative {
@@ -14451,7 +14451,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Ev -- 're hon -- ey bee fills with jeal -- ous -- y when they see you out with me, I don't blame them, good -- ness knows, __
 	Hon -- ey -- sucke -- le Rose. __ When you're pass -in' by, flow -- ers droop and sigh, and I know the rea -- son
 	why; You're much sweet -- er good -- ness knows, __ Hon -- ey -- suck -- le Rose. __ Don't buy sug -- ar,
@@ -14470,7 +14470,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1929 Santly Bros., Inc." }
@@ -14617,19 +14617,19 @@ endChords={}
 	\time 4/4
 	\key ees \major
 
-%% part "A"
+	% part "A"
 	r4 ees \tuplet 3/2 { ees d ees } | g4 g2. | r4 ees \tuplet 3/2 { ees d ees } | g2. r4 |
 	r4 bes \tuplet 3/2 { bes a bes } | c4 c2. | r4 bes \tuplet 3/2 { bes a bes } | c1 |
 
-%% part "B"
+	% part "B"
 	r4 ees ees ees | ees8 bes4 bes8~ bes4 bes4 | bes ges ges ges~ | ges1 |
 	ges4 ees ees ees~ | ees d2 ees4 | ges f f f~ | f2 r |
 
-%% part "A"
+	% part "A"
 	r4 ees \tuplet 3/2 { ees d ees } | g4 g2. | r4 ees \tuplet 3/2 { ees d ees } | g2. r4 |
 	r4 bes \tuplet 3/2 { bes a bes } | c4 c2. | r4 bes \tuplet 3/2 { bes a bes } | c1 |
 
-%% part "C"
+	% part "C"
 	r4 ees ees des | des c c bes | r aes \tuplet 3/2 { aes g f } | aes1 |
 	r4 g \tuplet 3/2 { g f ees } | g4 g2. | r4 f \tuplet 3/2 { f ees d } | ees2. r4 |
 }
@@ -14644,19 +14644,19 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	How much do I love you? I'll tell you no lie.
 	How Deep Is The O -- cean, how high is the sky?
 
-%% part "B"
+	% part "B"
 	How man -- y times a day __ do I think of you? __
 	How man -- y ros -- es are sprink -- led with dew? __
 
-%% part "A"
+	% part "A"
 	How far would I trav -- el to be whre you are?
 	How far is the jour -- ney for here to a star?
 
-%% part "C"
+	% part "C"
 	And if I ev -- er lost you, how much would I cry?
 	How Deep Is The O -- cean, how high is the sky?
 }
@@ -14670,7 +14670,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1932 Irving Berling (Renewed)" }
@@ -14833,13 +14833,13 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		a2 b~ | b4 d, g a | bes1~ | bes4 c, f g |
 		g2 a~ | a4 c, f g | aes1~ | aes4 d, ees f |
 		g g g g | g g8 a~ a g a4 | bes1~ | bes4. a8~ a g a4 |
 		b!1~ | b4 a b c | d d d d | d d, g a |
 
-	%% part "B"
+		% part "B"
 		a2 b~ | b4 d, g a | bes1~ | bes4 c, f g |
 		g2 a~ | a4 c, f g | aes1~ | aes4 d, ees f |
 		g g g g | g g8 a~ a g a4 | b1~ | b4 a b c |
@@ -14867,7 +14867,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Some -- where there's mu -- sic, __
 	how faint the tune! __
 	Some -- where there's heav -- en, __
@@ -14876,7 +14876,7 @@ endChords={}
 	'till __ it comes true __
 	that you love me as I love you.
 
-%% part "B"
+	% part "B"
 	Some -- where there's mu -- sic, __
 	it's where you are. __
 	Some -- where there's heav -- en, __
@@ -14884,7 +14884,7 @@ endChords={}
 	The dark -- est night would shine if you would come __ to me soon. __
 	Un -- til you will, how still my heart,
 	How High The Moon!
-%% Volta
+	% Volta
 	Some -- where there's
 	Moon! __
 }
@@ -14901,7 +14901,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1940 by Chappell & Co., Inc. Copyright Renewed." }
@@ -15071,13 +15071,13 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		a'1~ | a4 bes8 a~ a bes4 a8~ | a1~ | a4 bes8 a~ a bes4 a8~ |
 		a2~ a8 gis4 a8 | c b4 bes8~ bes a4 a8~ | a4. g8~ g2~ | g2~ g4. g8~ |
 		g1~ | g4 a8 g~ g a4 g8~ | g1~ | g4 a8 g~ g a4 g8~ |
 		g2 r8 fis4 g8 | bes a4 gis8~ gis g4 g8~ | g4. f8~ f2~ | f~ f4. f8~ |
 
-	%% part "B"
+		% part "B"
 		f1~ | f4 g8 f~ f g4 f8~ | f1~ | f4 g8 f~ f g4 a8~ |
 		a2. f4 | d e8 d~ d e4 f8~ | f2 f~ | f~ f4. f8~ |
 		f1~ | f4 g8 f~ f g4 e8~ | e1~ | e4 f8 e~ e f4 e8~ |
@@ -15108,13 +15108,13 @@ endChords={}
 % this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	How __ In -- sen -- __ si -- tive __ I must __ have seemed __ when she told me that __ she loved __ me. __
 	How __ un -- moved __ and cold __ I must __ have seemed __ when she told me so __ sin -- cere -- __ ly. __
 	Why, __ she must __ have asked, __ did I __ just turn __ and stare in i -- __ cy si -- lence? __
 	What __ was I __ to say? __ What can __ you say __ when a love __ af -- fair __ is o -- __ ver? __
 
-%% part "Volta"
+	% part "Volta"
 	_ af -- fair __ is o -- __ ver? __
 }
 
@@ -15133,7 +15133,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "B"
+	% part "B"
 	Now, __ she's gone __ a -- way __ and I'm __ a -- lone __ with the mem -- 'ry of __ her last __ look. __
 	Vague __ _ drawn __ and sad, __ I see __ it still, __ all her heart- break in __ that last __ look. __
 	How, __ she must __ have asked, __ could I __ just turn __ and stare in i -- __ cy si -- lence? __
@@ -15149,7 +15149,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1963, 1964 by Antonio Carlos Jobim and Vincius De Moraes, Brazil" }
@@ -15291,15 +15291,15 @@ endChords={}
 	\time 4/4
 	\key g \major
 
-%% part "A"
+	% part "A"
 	g'4 fis e g | fis e g e | a1 | a8 ais b2. |
 	g4 fis e g | fis e g b | d1 | b8 bes a2. |
 
-%% part "B"
+	% part "B"
 	g8 gis a2. | a8 ais b2. | d4 c b a~ | a1 |
 	a8 ais b2. | b8 c cis2. | e4 d c b | d c e, fis |
 
-%% part "A"
+	% part "A"
 	g fis e g | fis e g e | a1 | a8 ais b2. |
 	d4 c b d | c b d c | b1 | a4 g2. |
 	e4 fis g fis | a g fis g | d'1 | fis,4 e2. |
@@ -15331,7 +15331,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -15489,19 +15489,19 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		r4 bes c ees | d2. c4 | d4. d8 d2~ | d2. r4 | r ees \tuplet 3/2 { ges aes bes } | aes2. ges4 | aes1~ | aes2. r4 |
 		r aes \tuplet 3/2 { aes bes ces } | bes a aes2 | r4 aes ges f | ges1 | r4 f aes g | ges f2 ees4~ | ees1~ | ees2. r4 |
 
-	%% part "A"
+		% part "A"
 		r bes c ees | d2. c4 | d4. d8 d2~ | d2. r4 | r ees \tuplet 3/2 { ges aes bes } | aes2. ges4 | aes1~ | aes2. r4 |
 		r aes \tuplet 3/2 { ces des ees } | des c! ces2 | r4 b bes a | bes1 | r4 f aes g | ges f2 ees4~ | ees1~ | ees4 r ees ees |
 
-	%% part "B"
+		% part "B"
 		c'2. c4 | b2. b4 | b2 bes2~ | bes bes,4. bes8 | aes'2. aes4 | aes2 g4. fis8 | g1~ | g2 ees4. ees8 |
 		c'2 c4 c | ces2 \tuplet 3/2 { ces4 des ces } | ces2 bes~ | bes4 bes bes bes | bes2. bes4 | c2. bes8 c | d1~ | d2. r4 |
 
-	%% part "A"
+		% part "A"
 		r ees ees ees | d2. bes4 | c4. c8 c2~ | c2. r4 | r c b c | bes!2 \tuplet 3/2 { bes,4 c ees } | g1~ | g2. r4 |
 		r g bes a | aes!2. g4 | g f e4. f8 | c'1 | r4 f, aes g | ges f2 ees4~ |
 	} \alternative {
@@ -15524,25 +15524,25 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	When -- ev -- er skies look grey to me __
 	and trou -- ble be -- gins to brew, __
 	when -- ev -- er the win -- ter winds be -- come too strong,
 	I Con -- cen -- trate On You. __
 
-%% part "A"
+	% part "A"
 	When for -- tune cries "\"nay," "nay!\"" to me __
 	and peo -- ple de -- clare "\"You're" "through,\"" __
 	when -- ev -- er the blues be -- come my on -- ly song,
 	I Con -- cen -- trate On You. __
 
-%% part "B"
+	% part "B"
 	On your smile so sweet, so ten -- der, __
 	when at first my kiss you de -- cline. __
 	On the light in your eyes,
 	when you sur -- ren -- der __ and once a -- gain our arms in -- ter -- twine. __
 
-%% part "A"
+	% part "A"
 	And so when wise -- men say to me __
 	that love's young dream nev -- er comes true. __
 	To prove that e -- ven wise -- men can be wrong,
@@ -15559,7 +15559,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1939 by Chappell & Co., Inc." }
@@ -15718,25 +15718,25 @@ endChords={}
 
 	\partial 2. c4 e g |
 
-%% part "A"
+	% part "A"
 	c1~ | c2 b | b1~ | b4 b, e g |
 	b1~ | b2 a | a1~ | a2 g |
 	e1~ | e2 f | g1~ | g2 a |
 	d,1~ | d~ | d | r4 d f a |
 
-%% part "B"
+	% part "B"
 	d1~ | d2 cis | cis1~ | cis4 c, f a |
 	c1~ | c2 b | b1~ | b2 a |
 	f1~ | f2 g | a1~ | a2 a |
 	e1~ | e~ | e | r4 e fis gis |
 
-%% part "C"
+	% part "C"
 	b1~ | b4 e, fis gis | a1~ | a2 b |
 	gis1 | gis~ | gis~ | gis4 g a b |
 	d1~ | d2 g, | a1 | c |
 	b1~ | b~ | b4 r c2 | c c |
 
-%% part "D"
+	% part "D"
 	c1~ | c2 b | b1~ | b4 e, g b |
 	d1~ | d2 c | c1~ | c4 f, a c |
 	e1 | d | f~ | f4 r r2 |
@@ -15753,22 +15753,22 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	I Could Have Danced __ All Night __
 	I Could Have Danced __ All Night! __
 	and still __ have begged __ for more. __
 
-%% part "B"
+	% part "B"
 	I could have spread __ my wings __
 	and done a thou -- sand things __
 	I've nev -- er done __ be -- fore. __
 
-%% part "C"
+	% part "C"
 	I'll nev -- er know __ what made it so __
 	ex -- cit -- ing, __
 	why all at once __ my heart took flight. __
 
-%% part "D"
+	% part "D"
 	I on -- ly know __ when he __
 	be -- gan to dance __ with me. __
 	I could have danced, danced, danced, __
@@ -15784,7 +15784,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1956 by Alan Jay Lerner & Frederick Loewe. Copyright Renewed" }
@@ -15939,20 +15939,20 @@ endChords={}
 
 	\partial 2 e4 f |
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		g2 b | a4 g e d | e1~ | e4 g e d |
 		e g e d | e c'2 e,4 | g1~ | g2 a4 b |
 	} \alternative {
 		{
 
-		%% part "B"
+			% part "B"
 			c2 c | c4 d2 b4 | a2 a | g e4 fis |
 			g2 g | g4 a2 fis4 | g1~ | g4 r e f |
 		}
 		{
 
-		%% part "C"
+			% part "C"
 			c'2 c | c4 d2 b4 | bes2 bes | a g4 f |
 			e2 e | d4 c'2 b4 | c1 | r2 e,4 f |
 		}
@@ -15971,12 +15971,12 @@ endChords={}
 % these are lyrics from the fake book adjusted for the real book
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	If they asked me I Could Write A Book, __
 	a -- bout the way you walk and whis -- per and look, __
 	I could
 
-%% part "B"
+	% part "B"
 	write a pre -- face on how we met,
 	so the world would nev -- er for -- get, __
 
@@ -15994,19 +15994,19 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	_ _ sim -- ple se -- cret of the plot __
 	is just to tell them that I love you a -- lot, __
 	then the
 
-%% part "B"
+	% part "B"
 	_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-%% part "C"
+	% part "C"
 	world dis -- cov -- ers as my book ends,
 	how to make two lov -- ers of friends.
 
-%% part "Reprise"
+	% part "Reprise"
 	If they
 }
 
@@ -16019,7 +16019,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1940, Chappell & Co., Inc. Copyright Renewed." }
@@ -16177,19 +16177,19 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		a'4 c c,8. d16 f8. a16 | c2 ces | bes4 d2.~ | d2 bes |
 		a8. c16 a8 c~ c2 | r4 a c8. cis16 d8 a~ | a1~ | a1 |
 
-	%% part "A"
+		% part "A"
 		a4 c c,8. d16 f8. a16 | c2 ces | bes4 d2.~ | d2 bes |
 		a8. c16 a8 c~ c2 | r4 a c8. cis16 d8 f,~ | f1~ | f2. f4 |
 
-	%% part "B"
+		% part "B"
 		g8. g16 g8 d'~ d d4 f,8 | g8. g16 g8 d'~ d2 | c8. c16 bes8. bes16 a8. a16 d8. d16 | a2. g4 |
 		a8. a16 a8 e'~ e e4 g,8 | a8. a16 a8 e'~ e2 | d8. cis16 d8. cis16 d8. cis16 \tuplet 3/2 { d8 dis e~ } | e4 d8 a~ a aes4. |
 
-	%% part "A"
+		% part "A"
 		a4 c c,8. d16 f8. a16 | c2 ces | bes4 d2.~ | d2 bes |
 		a8. c16 a8 c~ c2 | r4 a c8. cis16 d8 f,~ |
 	} \alternative {
@@ -16212,24 +16212,24 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	I Don't Want To Set The World On Fire __ _
 	I just want to start __
 	a flame in your heart __
 
-%% part "A"
+	% part "A"
 	In my heart I have but one de -- sire __ _
 	and that one is you __
 	no oth -- er will do. __
 
-%% part "B"
+	% part "B"
 	I've lost all am -- bi -- tion for world -- ly ac -- claim
 	I just want to be the one you love
 	and with your ad -- mis -- sion that you feel the same. __
 	I'll have reached the goal I'm dream -- ing of __
 	be -- lieve __ me!
 
-%% part "A"
+	% part "A"
 	I Don't Want To Set The World On Fire __ _
 	I just want to start __
 	a flame in your heart __
@@ -16244,7 +16244,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1940 by Bergman, Vocco, & Conn, Inc." }
@@ -16412,19 +16412,19 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		g4 g a g8 a | b8 d4.~ d4 r8 d, | b'4 b8 a~ a b a4 | g2 fis | e4 e cis4. r8 |
 		e4 e cis4. cis8 | e4 e cis e | eis1~ | eis2 fis |
 
-	%% part "A"
+		% part "A"
 		g4 g a g8 a | b8 d4.~ d4 r | b4 b8 a~ a b a4 | g2 fis | e4 e cis8 cis4 cis8 |
 		e8 e4 e8 cis cis cis cis | e4 e cis e | eis1~ | eis2 fis | g1~ | g2 r |
 
-	%% part "B"
+		% part "B"
 		fis4 d8 b d4 b8 d | fis2 e8 fis e b | d1~ | d4 r e8 fis e b |
 		d4 b8 d fis2~ | fis e8 fis e b | d4 b8 d e4 c8 e | fis4 d8 fis g4 e8 g | a4 fis8 a c2~ | c r4 d, |
 
-	%% part "A"
+		% part "A"
 		g g a g8 a | b8 d4.~ d4 r8 d, | b'4 b8 a~ a b a4 | g2 fis |
 		e4 e cis4. r8 | e4 e cis4. cis8 | e e4 e8 cis4 e | eis1 | \xNote { \tuplet 3/2 { b'4 b b } g e } |
 		r2 fis4 fis | g1~ | g4 r f f | g1~ |
@@ -16450,20 +16450,20 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Oh, I Got Plen -- ty O' Nut -- tin', __ an' nut -- tin's plen -- ty fo' me. I got no car,
 	got no mule, I got no mis -- er -- y. __ De
 
-%% part "A"
+	% part "A"
 	folks wid plen -- ty o' plen -- ty __ got a lock __ on de door, _
 	faid some -- bod -- y's a go -- in' to rob 'em while dey's out a mak -- in' more. __
 	What for? __
 
-%% part "B"
+	% part "B"
 	I got no lock on de door, (dat's no way to be.) __ Day kin steal de rug from de floor, __ dat's o -- keh wid
 	me, 'cause de things dat I prize, like de stars in de skies, all are free. __
 
-%% part "A"
+	% part "A"
 	Oh, I Got Plen -- ty O' Nut -- tin; __
 	an' nut -- tin's plen -- ty fo' me.
 	I got a gal, got my song, got heb ben the whole day long.
@@ -16483,7 +16483,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 	got the sun, got the moon, _ got the deep blue sea. __ De folks wid plen -- ty o' plen -- ty __
 	got to pray __ all de day, _ __ Seems wid plen -- ty you sure got to wor -- ry how to
@@ -16501,7 +16501,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1935 by Gershwin Publishing Corporation" }
@@ -16680,7 +16680,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1954 General Music Publishing Co., Inc." }
@@ -16822,13 +16822,13 @@ endChords={}
 
 	\partial 4 c'4 |
 
-%% part "A"
+	% part "A"
 	c2 des,~ | des bes'4. a8 | gis4. a8 a2~ | a r4 a |
 	a2 bes,~ | bes \tuplet 3/2 { g'4 f e } | d1~ | d2 r4 c' |
 	c2 des,~ | des4. bes'8 bes4. a8 | gis4. a8 a2~ | a a4 a |
 	b4. cis8 cis2 | d2. e4 | e1~ | e2 r4 e |
 
-%% part "B"
+	% part "B"
 	f4. f8 f2~ | f4 e \tuplet 3/2 { e d c } | e4. e8 e2~ | e4 r c d |
 	ees4. ees8 ees2~ | ees4. d8 c4 bes8 a | g1~ | g2 r4 c |
 	c2 des,~ | des bes'4. a8 | gis4. a8 a2~ | a bes4 c |
@@ -16846,7 +16846,7 @@ endChords={}
 % these are lyrics from the internet adjusted for the real book
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	I love you __
 	Hums the Ap -- ril breeze. __
 	I love you __
@@ -16856,7 +16856,7 @@ endChords={}
 	As once more she sees
 	Daf -- fo -- dils. __
 
-%% part "B"
+	% part "B"
 	It's spring a -- gain __
 	And birds on the wing a -- gain __
 	Start to sing a -- gain __
@@ -16876,7 +16876,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -17030,7 +17030,7 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		d8 ees g bes d c bes g | bes a aes bes f2 | d8 ees g bes d c bes g | bes a aes bes f4. g8 |
 		bes4 g8 bes b e, ees4 | c' aes8 f d'4. bes8 |
 	} \alternative {
@@ -17042,11 +17042,11 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 	d4 d8 d d4 e8 bes | \tuplet 3/2 { b4 b b } b c8 d | a4 a8 a a4 b8 c | d2. e,4 |
 	b'8 a g a bes c d ees | f2 r8 d c bes | ees2 r8 c bes a | bes1 |
 
-%% part "A"
+	% part "A"
 	d,8 ees g bes d c bes g | bes a aes bes f2 | d8 ees g bes d c bes g | bes a aes bes f4. g8 |
 	bes4 g8 bes b e, ees4 | c' aes8 f d'4. bes8 | ees1~ | ees2. r4 |
 }
@@ -17062,22 +17062,22 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	_ If you could see me now you'd know how blue I've been.
 	_ One look is all you'd need to see the mood I'm in.
 	Per -- haps then you'd re -- al -- ize
 	I'm still in love with you. __
 
-%% part "Volta"
+	% part "Volta"
 	_
 
-%% part "B"
+	% part "B"
 	You'll happen my way on some mem -- 'ra -- ble day
 	and the month will be May for a while.
 	I'll try to smile but can I play the part with -- out my heart
 	be -- hind the smile?
 
-%% part "B"
+	% part "B"
 	_ The way I feel for you I nev -- er could dis -- guise.
 	_ The look of love is writ -- ten plain -- ly in my eyes.
 	I think you'd be mine a -- gain
@@ -17095,7 +17095,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	_ If you could see me now you'd find me be -- ing brave,
 	_ and try -- in aw -- f'lly hard to make my tears be -- have.
 	But that's quite im -- pos -- si -- ble.
@@ -17111,7 +17111,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -17269,20 +17269,20 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		g'2. f4 | f8 ees4 d8~ d4 ees | aes4. g8 g4. f8 | f4. e8 e4 f |
 		as4. g8 g4. f8 | f4. e8 e4 f | fis8 g4 c8~ c2~ | c2. r4 |
 
-	%% part "B"
+		% part "B"
 		ees2. d4 | d8 c4 b8~ b4 c | ees2. d4 | d8 c4 b8~ b4 c |
 		c2. bes4 | bes8 fis4 fis8~ fis4 d' | c8 g4 g8~ g4 c | fis,8 c4 c8~ c2 |
 
-	%% part "A'"
+		% part "A'"
 		g'2. f4 | f8 ees4 d8~ d4 ees | aes4. g8 g4. f8 | f4. e8 e4 f |
 		aes4. g8 g4. f8 | f4. e8 e4 f | bes4. aes8 aes4. g8 | g4. fis8 fis4 g |
 
-	%% part "C"
-	%% on the third bar we can do <g \parenthesize \tweak font-size #-1 g'>2.
+		% part "C"
+		% on the third bar we can do <g \parenthesize \tweak font-size #-1 g'>2.
 		c4. c8 bes4 aes | d4. d8 c4 b | ees ees d c | g2. f8 g |
 		aes aes aes aes aes2~ | aes8 aes bes ces bes4 aes |
 	} \alternative {
@@ -17305,22 +17305,22 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	I'll Be See -- ing You __ in all the old fa -- mil -- iar plac -- es that this heart of mine em -- brac -- es all day thru. __
 
-%% part "B"
+	% part "B"
 	In that samll ca -- fe; __ the park a -- cross the way, __ the chil -- dren's ca -- rou -- sel, __ the
 	chet -- nut -- trees, __ the wish -- ing well. __
 
-%% part "A'"
+	% part "A'"
 	I'll Be See -- ing You __ in ev -- 'ry love -- ly sum -- mer's day, in ev -- 'ry -- thing that's
 	light and gay, I'll al -- ways think of you that way.
 
-%% part "C"
+	% part "C"
 	I'll find you in the morn -- ing sun and when the night is new. I'll be
 	look -- ing at the moon, __ but I'll Be See -- ing You!
 
-%% part "Volta"
+	% part "Volta"
 	You! __
 }
 
@@ -17333,7 +17333,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1938 Williamson Music Co. Copyright Renewed." }
@@ -17487,13 +17487,13 @@ endChords={}
 
 	\partial 8*5 c8 bes'4 c8 a~ |
 
-%% part "A"
+	% part "A"
 	a1 | r4 r8 c, bes'4 a | a4 g8 e8~ e2 | r4 a, g'4 a8 f~ |
 	f1 | r4 r8 f a4 f8 ees8~ | ees1 | r2 r4 ees |
 	des d c'2 | r4 r8 bes f4 g | a1 | r2 r4 a |
 	gis1 | r4 r8 e g4 f | e1 | r4 r8 c bes'4 c8 a~ |
 
-%% part "B"
+	% part "B"
 	a1 | r4 r8 c, bes'4 a | a4 g8 e8~ e2 | r4 a, g'4 a8 f~ |
 	f1 | r4 r8 f a4 f8 ees8~ | ees1 | r2 r4 ees |
 	des d c'2 | r4 r8 bes f4 g | a1 | r4 r8 a c4 b |
@@ -17513,7 +17513,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	I'll Close My Eyes __
 	To eve -- ry -- one but you __
 	And when I do __
@@ -17524,7 +17524,7 @@ endChords={}
 	I'll_never_say yes
 	To_a_new love af -- fair
 
-%% part "B"
+	% part "B"
 	Then_I'll Close My Eyes __
 	To eve -- ry -- thing that's gay __
 	If you_are not there __
@@ -17532,7 +17532,7 @@ endChords={}
 
 	And through the years
 	In_those moments When_we're_far apart
-%%Do -- n't you know
+	%Do -- n't you know
 	I'll Close My Eyes
 	And I'll see you_with my heart __
 }
@@ -17546,7 +17546,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -17706,7 +17706,7 @@ endChords={}
 
 	\partial 2. bes'4 d c |
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		ees4. f,8 f2 | r8 f f g f4 ees | g1~ | g4 bes d c | ees4. f,8 f2~ | f4 g \tuplet 3/2 { f ees d } |
 		c1~ | c2. c4 | g' g g g | ees2. g4 | bes bes bes bes | g2. b4 | d d d2~ | d d |
@@ -17750,7 +17750,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1939 MCA Music Publsihing, A Division of MCA inc,." }
@@ -17866,7 +17866,7 @@ endChords={}
 	fis:m11 | b:9 | e2:maj7 e:6 | a:m7 d:7 | \myEndLine
 	\endPart
 
-%%\myMark "Coda"
+	%\myMark "Coda"
 	\mark \markup { \musicglyph #"scripts.coda" }
 	\startPart
 	a1:m7.5- | d2:7 d:7/c | b1:m7 | e:9 | \myEndLine
@@ -17898,19 +17898,19 @@ endChords={}
 	\time 2/2
 	\key g \major
 
-%% part "A"
+	% part "A"
 	r4 b' c d | c b a g | a2. g4 | fis e2. |
 	r4 a bes c | bes a g f! | g8 a g2.~ | g2 r4 g^\markup {To Coda \musicglyph #"scripts.coda"} |
 	a2. a4 | a a b4. c8 | d4 d2.~ | d4 r e4. d8 |
 	b4 c d c~ | c2 b4 ais | b1~ | b2 r4 b |
 
-%% part "B"
+	% part "B"
 	g g g2~ | g4 a bes c | d2. c4 | bes4 g2 f!4 |
 	g g g2~ | g4 a bes c | d d d2~ | d4 d \tuplet 3/2 { d d d } |
 	d2. d4 | e c d4. b8 | a4 b2.~ | b4 b d c |
 	b b2.~ | b4 r \tuplet 3/2 { b a gis } | b1~ | b^\markup {D.C. al Coda} |
 
-%% part "Coda"
+	% part "Coda"
 	a4. a8 a2~ | a4 a \tuplet 3/2 { a b c } | d d2.~ | d4 r e4. d8 |
 	b4 c d c~ | c2 b4 b | g1~ | g2 r |
 }
@@ -17926,19 +17926,19 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	This love -- ly day will leng -- then in -- to ev -- 'ning,
 	we'll sign good -- bye to all we've ev -- er had. __
 	A -- lone, where we have walked to -- geth -- er, __
 	I'll Re -- mem -- ber A -- pril __ and be glad. __
 
-%% part "B"
+	% part "B"
 	I'll be con -- tent __ you loved me once in A -- pril.
 	your lips were warm __ and love and Spring were new. __
 	But I'm not a -- fraid of Au -- tumn and her sor -- row, __
 	for I'll Re -- mem -- ber __ A -- pril and you. __
 
-%% part "Coda"
+	% part "Coda"
 	won't for -- get, __ but I won't be lone -- ly, __
 	I'll Re -- mem -- ber A -- pril, __ and I'll smile. __
 }
@@ -17954,7 +17954,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	The fire will dwin -- dle in -- to glow -- ing ash -- es,
 	for flames and love live such a lit -- tle while. __
 	I
@@ -17969,7 +17969,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1941, 1942 by MCA Music Publishing, A Division of MCA, Inc." }
@@ -18118,7 +18118,7 @@ endChords={}
 
 	\partial 8 dis8 |
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		e g e4 g a | b8 e,4 e8~ e4. dis8 | e g e4 g a | bes8 ees,4 ees8~ ees4. ees8 |
 		e8 g e4 g a | b8 d4 d8~ d4 d8 c | b g e4 g8 a4 g8~ | g2 r4 r8 dis |
@@ -18173,7 +18173,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1944 Alamo Music, Inc." }
@@ -18333,7 +18333,7 @@ endChords={}
 
 	\partial 4 c'4 |
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		c a r c | d bes r d | c1~ | c4 c,8 c~ c d f4 | g1~ | g4 g8 g~ g a g4 | f1~ |
 		f2. c'4 |
@@ -18381,7 +18381,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1925 Leo Feist, INC." }
@@ -18536,19 +18536,19 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		ees4 ees2. | d8 ees c d ees4 f | g4. g8 bes4. bes8 | g2 d8 ees c d |
 		ees4 ees2. | d8 ees c d ees4 f | g4. g8 bes4. bes8 | des1 |
 	} \alternative {
 		{
 
-		%% part "B"
+			% part "B"
 			c | d8 c bes aes g4 f | ees4. ees8 g4. g8 | ees1 |
 			c' | d8 c bes aes g4 f | ees4. ees8 c'4. c8 | des,2 d8 ees c d |
 		}
 		{
 
-		%% part "C"
+			% part "C"
 			c'1 | d8 c bes aes g4 f | ees4. ees8 g4. g8 | c4. c8 ees4. ees8 |
 			f4 ees bes2~ | bes d8 ees c d | ees1~ | ees2 \mark \markup { \italic { Fine } } <\parenthesize d,>8 <\parenthesize ees> <\parenthesize c> <\parenthesize d> |
 		}
@@ -18567,18 +18567,18 @@ endChords={}
 % this version of the lyrics is from the Hal Leonard book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Is -- n't It Ro -- man -- tic? Mu -- sic in the night, a dream that can be heard.
 	Is -- n't It Ro -- man -- tic? Mov -- ing shad -- ows write the old -- est mag -- ic word.
 
-%% part "B"
+	% part "B"
 	I hear the breez -- es play -- ing in the trees a -- bove.
 	While all the world is say -- ing you were meant for love.
 
-%% part "Forward"
+	% part "Forward"
 	Is -- n't It Ro --
 
-%% part "C"
+	% part "C"
 	Sweet sym -- bols in the moon -- light
 	Do you mean that I will fall in love per -- chance? __ Is -- n't it ro -- mance? __
 }
@@ -18594,7 +18594,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Is -- n't It Ro -- man -- tic? Mere -- ly to be young on such a night as this?
 	Is -- n't It Ro -- man -- tic? Ev -- 'ry note that's sung is like a lov -- er's kiss.
 }
@@ -18608,7 +18608,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1932 (Renewed 1959) by Famous Music Corporation" }
@@ -18761,19 +18761,19 @@ endChords={}
 
 	\partial 4 d8 d |
 
-%% part "A"
+	% part "A"
 	e d d d e d d g | e4 d2 d8 d | d8. b'16 d8. g,16 b8. d,16 g8. d16 | f2. f4 |
 	e4 dis8 e fis!4. g8 | g4 d2 d8 d | c'4 c c fis, | b2. d,8 d |
 
-%% part "A"
+	% part "A"
 	e d d d e d d g | e4 d2 d8 d | d8. b'16 d8. g,16 b8. d,16 g8. d16 | f2. f4 |
 	e4 dis8 e fis!4. g8 | g4 d2 d8 d | d'4 d d fis, | g1 |
 
-%% part "B"
+	% part "B"
 	c4 c c8 d c b | a4 f f2 | a8 f f f f4 e | g1 |
 	c4 c c8 d c b | a4 fis! fis g8 a | b4 b cis cis | d2. d,8 d |
 
-%% part "A"
+	% part "A"
 	e d d d e d d g | e4 d2 d8 d | d8. b'16 d8. g,16 b8. d,16 g8. d16 | f2. f4 |
 	e8 e dis e fis! fis eis fis | g4 g2 fis8 g | a4 a a fis | b2. b8 bis |
 	cis4 a a a8 b | c a a a a4 a8 ais | b4 g g b | a2. g4 |
@@ -18792,25 +18792,25 @@ endChords={}
 
 	I'm as
 
-%% part "A"
+	% part "A"
 	rest -- less as a wil -- low in a wind -- storm,
 	I'm as jump -- y as a pup -- pet on a string.
 	I'd say that I had spring fev -- er,
 	but I know it is -- n't spring. I am
 
-%% part "A"
+	% part "A"
 	star -- ry eyed and vague -- ly dis -- con -- tent -- ed,
 	like a night -- in -- gale with -- out a song to sing.
 	Oh, why should I have spring fev -- er
 	when it is -- n't e -- ven spring?
 
-%% part "B"
+	% part "B"
 	I keep wish -- ing I were some -- where else
 	walk -- ing down a strange new street;
 	hear -- ing words that I have nev -- er heard
 	from a man I've yet to meet, I'm as
 
-%% part "A"
+	% part "A"
 	bu -- sy as a spi -- der spinn -- ing day -- dreams
 	I'm as gid -- dy as a ba -- by on a swing.
 	I have -- n't seen a cro -- cus or a rose -- bud,
@@ -18829,7 +18829,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1945 by Williamson Music Co." }
@@ -18989,19 +18989,19 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		a'4 a a a | r8. a16[ g8. f16] e4 e | r8. f16[ e8. d16] c4 c | f e8 c~ c2 |
 		r8. f16[ e8. d16] c4 c | f e8 c~ c2 | r8. d16[ f8. g16] a8 f a g~ | g2. r4 |
 
-	%% part "A"
+		% part "A"
 		a4 a a a | r8. a16[ g8. f16] e4 e | r8. f16[ e8. d16] c4 c | f e8 c~ c2 |
 		r8. f16[ e8. d16] c4 c | f e8 c~ c2 | r8. d16[ f8. g16] a8 f a c~ | c2. r4 |
 
-	%% part "B"
+		% part "B"
 		d2 f,4 f~ | f2. e4 | g2 f4 f~ | f2 r4 e |
 		a8 a4. bes8 bes4. | c8 c4. d8 d4. | e2 c4 c~ | c2. r4 |
 
-	%% part "A"
+		% part "A"
 		a4 a a a | r8. a16[ g8. f16] e4 e | r8. f16[ e8. d16] c4 c | f e8 c~ c2 |
 		r8. f16[ e8. d16] c4 c | c'4 bes8 a~ a2 | r8. bes16[ a8. g16] f4 e | a e8 e~ e2 |
 		r8. d16[ f8. g16] a8 f g f~ |
@@ -19025,7 +19025,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Once I laughed when
 	I heard you say -- ing
 	that I'd be play -- ing
@@ -19034,7 +19034,7 @@ endChords={}
 	eas -- y chair, __
 	It Nev -- er En -- tered My Mind. __
 
-%% part "A"
+	% part "A"
 	Once you told me
 	I was mis -- tak -- en
 	that I'd a -- wak -- en
@@ -19042,13 +19042,13 @@ endChords={}
 	and or -- der or -- ange juice for one, __
 	It Nev -- er En -- tered My Mind. __
 
-%% part "B"
+	% part "B"
 	You have what __
 	I lack my -- self, __
 	and now I e -- ven have to scratch
 	my back my -- self. __
 
-%% part "A"
+	% part "A"
 	Once you warned me
 	that if you scorned me
 	I'd sing the maid -- en's
@@ -19067,7 +19067,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1940 by Chappell & Co., Inc. Copyright Renewed" }
@@ -19209,13 +19209,13 @@ endChords={}
 
 	\partial 4 b'4 |
 
-%% part "A"
+	% part "A"
 	b1~ | b2 \tuplet 3/2 { a4 b a } | ees1~ | ees2 a |
 	a1~ | a4 a \tuplet 3/2 { g a g } | des1~ | des2. g4 |
 	g4. e8 g4. e8 | fis2. fis4 | fis4. d8 fis4. d8 | e4 fis g b |
 	e2 b~ | b4 e, \tuplet 3/2 { e fis g } | b2 a~ | a b |
 
-%% part "B"
+	% part "B"
 	b1~ | b2 \tuplet 3/2 { a4 b a } | ees1~ | ees2 a |
 	a1~ | a4 a \tuplet 3/2 { g a g } | des1~ | des2. g4 |
 	g4. e8 g4. e8 | fis2. a4 | a4. fis8 a4. fis8 | g4 a b d |
@@ -19233,13 +19233,13 @@ endChords={}
 % this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Just friends, __ lov -- ers no more __
 	Just friends, __ but not like be -- fore. __
 	To think of what we've been and not to kiss a -- gain seems like
 	pre -- tend -- ing __ it is -- n't the end -- ing. __
 
-%% part "B"
+	% part "B"
 	Two friends __ drift -- ing a -- part, __
 	Two friends __ but one brok -- en heart. __
 	We loved, we laughed, we cried and sud -- den -- ly love died.
@@ -19255,7 +19255,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1931 (renewed 1959) EMI Robbins Catalog, Inc." }
@@ -19417,19 +19417,19 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		g'4 e8 fis~ fis fis4 e8 | g4 a8 b~ b b4. | g4 e8 fis~ fis fis4 e8 | g4 a8 b~ b b4. |
 		d8 g, r4 d'8 g, r4 | d'8 g, r4 d'8 g, r4 | d'4 c8. b16 a4 g | a2. r4 |
 
-	%% part "A"
+		% part "A"
 		g8 g4 e8 fis fis4 e8 | g g4 a8 b b4. | g8 g4 e8 fis fis4 e8 | g g4 a8 b b4 b8 |
 		d g, r g d' g, r g | d' g, r g d' g, r g | d'4 c8. b16 a4 g | g2 r4 g |
 
-	%% part "B"
+		% part "B"
 		e'1 | d8. cis16 b8. cis16 d4 d | b b c c | a2. e4 |
 		e'1 | d8. cis16 b8. cis16 d4 d | b b c c | a2. d,8. d16 |
 
-	%% part "A"
+		% part "A"
 		g8 g4 e8 fis fis4 e8 | g g4 a8 b b4. | g8 g4 e8 fis fis4 e8 | g g4 a8 b b4 b8 |
 		d g, r4 d'8 g, r4 | d'8. d16 g,8. g16 d'8 g,4. | d'8. d16 c8. b16 c8. b16 a4 | b2. r4 | e b8. c16 b4 a |
 	} \alternative {
@@ -19453,27 +19453,27 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	You say ee -- __ ther and I say eye -- __ ther,
 	you say nee -- __ ther and I say ny -- __ ther;
 	ee -- ther, eye -- ther, nee -- ther, ny -- ther,
 	Let's Call The Whole Thing Off!
 
-%% part "A"
+	% part "A"
 	You like po -- ta -- to and I like po -- tah -- to,
 	you like to -- ma -- to and I like to - mah -- to;
 	po -- ta -- to, po -- tah -- to, to -- ma -- to, to -- mah -- to!
 	Let's Call The Whole Thing Off!
 	But
 
-%% part "B"
+	% part "B"
 	oh! If we call the whole thing off,
 	then we must part. And
 	oh! If we ev -- er part, then that might break my heart!
 
-%% part "A"
+	% part "A"
 
-%% part "Volta"
+	% part "Volta"
 }
 
 
@@ -19487,13 +19487,13 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 
-%% part "A"
+	% part "A"
 
-%% part "B"
+	% part "B"
 
-%% part "A"
+	% part "A"
 }
 
 }
@@ -19505,7 +19505,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1936, 1937 by Gershwin Publishing Corporation" }
@@ -19663,19 +19663,19 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		e4 e2 e4 | e4 a g e | d d2 b'4 | g1 |
 		f4 f2 c'4 | b2. a4 | g4 g2 e'4 | d1 |
 
-	%% part "B"
+		% part "B"
 		d4 d2 cis4 | e d cis b | e,2 e~ | e1 |
 		c'4 c2 b4 | d c b a | d,1 | dis |
 
-	%% part "A"
+		% part "A"
 		e4 e2 e4 | e a g e | d d2 b'4 | g1 |
 		f4 f2 c'4 | b2. a4 | g4 g2 e'4 | d1 |
 
-	%% part "B"
+		% part "B"
 		d4 d2 cis4 | e d cis b | e, e2 e4 | fis2. fis4 |
 		g4 g2 g4 | f d'2 b4 |
 	} \alternative {
@@ -19698,23 +19698,23 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Late -- ly I find my -- self out gaz -- ing at stars,
 	hear -- ing gui -- tars Like Some -- one In Love.
 
-%% part "B"
+	% part "B"
 	Some -- times the things I do a -- stound me,
 	__ most -- ly when -- ev -- er you're a -- round me.
 
-%% part "A"
+	% part "A"
 	Late -- ly I seem to walk as though I had wings,
 	bump in -- to things Like Some -- one In Love.
 
-%% part "B"
+	% part "B"
 	Each time I look at you I'm linmp as a glove
 	and feel -- ing Like Some -- one In Love.
 
-%% part "Volta"
+	% part "Volta"
 	Love. __
 }
 
@@ -19727,7 +19727,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1944 Bourne Co. and Dorsey Bros. Music, Inc. Division of Music Sales Corporation" }
@@ -19881,19 +19881,19 @@ endChords={}
 
 	\partial 8 cis8 |
 
-%% part "A"
+	% part "A"
 	e4 d g cis,8 cis | e4 d8 d a'4 r8 cis, | e4 d8 d c'4 b8 c | b4 a8 gis a4 b8 c |
 	d4 b8 g e d'4 c8 | c4 b b r8 d, | e4 e8 e e4 fis8 g | a2. cis,8 cis |
 
-%% part "A"
+	% part "A"
 	e4 d g8 g cis, cis | e4 d a' r8 cis,16 cis | e8 e d4 c' b8 c | b4 a8 gis a4 b8 c |
 	d4 b8 g e d'4 c8 | c4 b8. ais16 b4 r8 d,16 d | e8 e e4 a4. g8 | g2. g8 g |
 
-%% part "B"
+	% part "B"
 	bes4 bes bes a8 g | f4. d8 bes4 c8 d | ees4 ees ees bes8 c | d4. d8 d4 r8 g |
 	bes4 bes8 bes a4 g | f8. f16 f8 d bes4 c8 d | ees4 ees8 ees d4 cis | d2. r8 cis |
 
-%% part "A"
+	% part "A"
 	e4 d g8. g16 cis,8 cis | e4 d8. d16 a'4 r8 cis,16 cis | e4 d c'8 c b c | b4 a8 gis a4 r8 b16 c |
 	d4 d8 d d4 c8 b | a4 a8 a a4. a8 | d4 cis8 d e d c b | a4. a8 a2 |
 	r4 cis,8 d c'4 c | \tuplet 3/2 { c8 b ais } b2. | b16 a g8~ g4 bes8 g4. | b8. b16 a8 g e2 |
@@ -19932,7 +19932,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1946 Chappell & Co., Inc" }
@@ -20100,25 +20100,25 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		bes'1~ | bes2. g4 | f1~ | f |
 		r4 bes8 bes bes4 bes | bes bes2 g4 | f1~ | f2. r4 |
 		r4 bes8 bes bes4 bes | bes c c2 | r4 aes8 aes aes4 aes | aes ges ges2 |
 		f1~ | f2. des4 | bes1~ | bes2. r4 |
 
-	%% part "A"
+		% part "A"
 		bes'1~ | bes2. g4 | f1~ | f |
 		r4 bes8 bes bes4 bes | ees c bes g | f1~ | f2. r4 |
 		r4 bes8 bes bes4 bes | bes c c2 | r4 des8 des des4 des | des ges, ges2 |
 		f1~ | f2. des4 | bes1~ | bes2. r4 |
 
-	%% part "B"
+		% part "B"
 		r4 bes8 c des4 ees | f4 ees ees2 | r4 c8 des ees4 f | aes1 |
 		r4 bes,8 c des4 ees | f4 ees ees2 | r4 c8 des ees4 f | bes1 |
 		r4 bes,8 c d4 f | ges f f2 | r4 d \tuplet 3/2 { ees4 f ges } | c4 bes bes2 |
 		des c | des c | r4 b8 b b4 b | b2 bes |
 
-	%% part "A"
+		% part "A"
 		bes1~ | bes2. g4 | f1~ | f2. r4 |
 		r4 bes8 bes bes4 bes | bes bes2 g4 | f1~ | f2. r4 |
 		r4 bes8 bes bes4 bes | bes c c2 | r4 des8 des des4 des | des ees ees2 |
@@ -20166,7 +20166,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1930 (Renewed) Warner Bros. Inc." }
@@ -20321,19 +20321,19 @@ endChords={}
 	\time 4/4
 	\key f \minor
 
-%% part "A"
+	% part "A"
 	c'8 c bes aes g f4. | d4 f8 e~ e2 | c4 g'8 f~ f2 | des4 c'8 bes~ bes2 |
 	ees8 ees des c bes aes4. | f8 c' bes e,~ e c' bes ees,~ | ees2~ ees8 bes' aes des,~ | des aes' g c,~ c2 |
 
-%% part "A"
+	% part "A"
 	c'8 c bes aes g f4. | d4 f8 e~ e2 | c4 g'8 f~ f2 | des4 c'8 bes~ bes2 |
 	ees8 ees des c bes aes4. | f8 c' bes e,~ e c' bes ees,~ | ees2~ ees8 ees g aes~ | aes1 |
 
-%% part "B"
+	% part "B"
 	c4 des8 d ees c ees des~ | des bes4.~ bes2 | bes4 b8 c des bes des c~ | c1 |
 	c4 des8 d ees c ees des~ | des bes4.~ bes2 | bes4 b8 c des bes des c~ | c des c bes~ bes2 |
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		c8 c bes aes g f4. | d4 f8 e~ e2 | c4 g'8 f~ f2 | des4 c'8 bes~ bes2 |
 		ees8 ees des c bes aes4. | f8 c' bes e,~ e c' bes ees,~ |
@@ -20357,26 +20357,26 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Lul -- la -- by Of Bird -- land
 	that's what I __
 	al -- ways hear __
 	when you sigh. __
 	Nev -- er in my word -- land could there be ways __ to re -- veal __ __ in a phrase __ how I feel! __
 
-%% part "A"
+	% part "A"
 	Have you ev -- er heard two tur -- tle doves __
 	bill and coo __
 	when they love? __
 	That's the kind of mag -- ic mu -- sic we make __ with our lips __ __ when we kiss! __
 
-%% part "B"
+	% part "B"
 	And tere's a weep -- y old wil -- low; __
 	he real -- ly knows how to cry! __
 	That's how I'd cry in my pil -- low __
 	if you should tell me fare -- well __ and good -- bye! __
 
-%% part "A"
+	% part "A"
 	Lul -- la -- by Of Bird -- land whis -- per low, __
 	kiss me sweet __
 	and we'll go __
@@ -20394,7 +20394,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1952, 1953, 1954 Adam R. Levy & Father Ent., Inc., New York NY. Copyrights Renewed." }
@@ -20536,7 +20536,7 @@ endChords={}
 	\time 4/4
 	\key bes \major
 
-%% part "A"
+	% part "A"
 	r4 g'8 f8~ f4 d8 bes8 |
 	c8 bes8 bes8 g8 bes8 bes8 c8 bes8 |
 	r4 g'8 f8~ f4 d8 bes8 |
@@ -20546,7 +20546,7 @@ endChords={}
 	r4 g'8 f8~ f4 d8 bes8 |
 	c8 bes8 bes8 g8 bes8 bes8 c8 bes8 |
 
-%% part "B"
+	% part "B"
 	f'4 f4 g8 g4 aes8~ |
 	aes4 aes4 g8 g4 f8~ |
 	f4 f4 g8 g4 as8~ |
@@ -20573,13 +20573,13 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	It seems life has played a game on me _ _ _
 	I'm lost in a sea of misery _ _ _ _ _
 	My love _ has turned her back on me _ _ _
 	Heartaches why won't you _ _ let me be I said now
 
-%% part "B"
+	% part "B"
 	Ba -- by have some mer -- cy please
 	Dont leave me baby on bended knee _
 	Oh please mer -- cy mer -- cy mer -- cy please
@@ -20601,13 +20601,13 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Don't you know -- babe I wait for you _ every single night
 	Hop -- ing you'll re -- turn and make things right _ _ _
 	You don′t show and I′m sitting here all alone (all alone) _
 	To pray you're gon -- na call me on the phone _ _
 
-%% part "B"
+	% part "B"
 	Ba -- by, have some mer -- cy please
 	Don′t make your mama beg on bended knee Oh please
 	mer -- cy mer -- cy mer -- cy please
@@ -20630,13 +20630,13 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	I know life′s got _ ma -- ny a twist _ _ _
 	Loving you, baby, is a thing I cannot resist _ _ _
 	Your love and un -- der -- stan -- ding you′ve been giving giving giving
 	Without it, I just can't _ go on living _ _ _
 
-%% part "B"
+	% part "B"
 	Ba -- by, have some mer -- cy please
 	Don't leave me, baby, on bended knee
 	I say now, mer -- cy, mer -- cy, mer -- cy please
@@ -20654,7 +20654,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1966 ZAWINUL MUSIC, ADivisionofGopam Enterprises,Inc." }
@@ -20828,7 +20828,7 @@ endChords={}
 
 	\partial 4 bes'8 g |
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		d2. bes8 c | des c' c c c bes g ees | c2 \tuplet 3/2 { r8 g aes c ees g } | bes bes bes aes bes4. aes8 |
 		g4~ \tuplet 3/2 { g8 aes bes } ees,4~ \tuplet 3/2 { ees8 f g } | aes8 c,4 c8 \tuplet 3/2 { d4^\markup {To Coda \musicglyph #"scripts.coda"} ees f } |
@@ -20837,11 +20837,11 @@ endChords={}
 		{ ees1 | \tuplet 3/2 { r4 ees f } \tuplet 3/2 { g bes c } | }
 	}
 
-%% part "B"
+	% part "B"
 	des8 des des des~ des2~ | des4 des8 ees \tuplet 3/2 { fes4 ees des } | c8 c c c~ c2 | \tuplet 3/2 { r4 ees, f aes bes c } |
 	d8 d d c d2~ | d8 d d c \tuplet 3/2 { f4 d c } | bes1~ | bes2 r4 bes8^\markup {D.S. al Coda} g |
 
-%% part "Coda"
+	% part "Coda"
 	ees1~ | ees
 }
 
@@ -20927,7 +20927,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1955. Renewed 1983 Marke Music, Limerick Music, Reganesque" }
@@ -21071,17 +21071,17 @@ endChords={}
 	\time 2/2
 	\key ees \major
 
-%% part "A"
+	% part "A"
 	c'4 bes g f | g1 | c4 bes g4. ees8 | f g ces,2. | g'4 f ees c! | ees1 |
 
-%% part "A"
+	% part "A"
 	c'4 bes g f | g1 | c4 bes g4. ees8 | f g ces,2. | g'4 f ees c! | ees1 |
 
-%% part "B"
+	% part "B"
 	d8 d d d~ d d4 d8 | d d4 d8 d d4 d8 | d d d d'~ d4 c8 d | b!1 |
 	ees,8 ees ees ees~ ees ees4 ees8 | ees ees4 ees8 ees ees4 ees8 | ees ees ees ees'~ ees4 des8 ees | c2 ces |
 
-%% part "A"
+	% part "A"
 	c!4 bes g f | g1 | c4 bes g4. ees8 | f g ces,2. | g'4 f ees c! | ees1 |
 	b!8 c ees g c d b! cis! | bes!1 |
 }
@@ -21096,17 +21096,17 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Pen -- nies in a stream, fall -- ing leaves, a sy -- ca -- more, Moon -- light In Ver -- mont.
 
-%% part "A"
+	% part "A"
 	I -- cy fin -- ger -- waves, ski trails on a moun -- tain -- side, snow -- light in Ver -- mont.
 
-%% part "B"
+	% part "B"
 	Tel -- e -- graph ca -- __ bles, they sing down the high -- way and tra -- vel each bend __ in the road,
 	peo -- ple who meet __ in this ro -- man -- tic set -- ting are so hyp -- no -- tized __ by the love -- ly
 
-%% part "A"
+	% part "A"
 	ev' -- ning sum -- mer breeze, warb -- ling of a mea -- dow -- lark, Moon -- light In Ver -- mont,
 	you and I and Moon -- light In Ver -- mont.
 }
@@ -21120,7 +21120,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1944-1945 by MICHAEL H GOLDSEN, INC." }
@@ -21229,8 +21229,8 @@ endChords={}
 		a2.:m7 | d:7 | g:maj7 | c:maj7 | \myEndLine
 		g:maj7 | c:maj7 | fis:m7.5- | b:7 | \myEndLine
 	}
-%% removed in order to show the repeat sign...
-%%\endPart
+	% removed in order to show the repeat sign...
+	%\endPart
 
 	\myMark "A"
 	\startPart
@@ -21275,19 +21275,19 @@ endChords={}
 	\time 3/4
 	\key g \major
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		\repeat unfold 2 { e4 b' b | fis e e | b e e | fis e2 | }
 		e4 b' a | e fis d | d a' g | c,2. |
 		b4 c d | e fis g | a b a | dis,2. |
 	}
 
-%% part "A"
+	% part "A"
 	\repeat unfold 2 { e4 b' b | fis e e | b e e | fis e2 | }
 	e4 b' a | e fis d | d a' g | c,2. |
 	b4 c d | e fis g | a ais b | c2. |
 
-%% part "B"
+	% part "B"
 	r4 b b | b2 e,4 | r a a | a2 dis,4 |
 	r g g | g2 b,4 | e2.~ | e2 e4 |
 	e fis e | fis e fis | g a g |
@@ -21308,19 +21308,19 @@ endChords={}
 % this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Rain -- drops on ros -- es and whisk -- ers on kit -- tens,
 	bright cop -- per ket -- tles and warm wool -- en mit -- tens;
 	brown pa -- per pack -- ag -- es tied up with string,
 	these are a few of My Fa -- vor -- ite Things.
 
-%% part "A"
+	% part "A"
 	Girls in white dress -- es with blue sat -- in sash -- es,
 	snow -- flakes that stay on my node and eye -- lash -- es,
 	sil -- ver white win -- ters that melt in to spring.
 	These are a few of My Fa -- vor -- ite Things.
 
-%% part "B"
+	% part "B"
 	When the dog bites, when the bee stings,
 	when I'm feel -- ing sad, __
 	I sim -- ply re -- mem -- ber My Fa -- vor -- ite things
@@ -21338,7 +21338,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	cream col -- ored po -- nies and crip ap -- ple strud -- els,
 	door -- bells and sleigh -- bell and schnitz -- el with noo -- dles;
 	wild geese that fly with the moon on the wings,
@@ -21354,7 +21354,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1959 by Richard Rodgers and Oscar Hammerstein II. Copyright Renewed." }
@@ -21512,13 +21512,13 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		f2~ f8 bes, d f | g a g2 g4 | g2~ g8 c, ees g | a2. a4 |
 		a2~ a8 d, f a | bes c bes2 bes4 | bes2~ bes8 ees, g bes | c2. bes8 c |
 		d4. d16 d d8 d d d | d4 d~ d8 d c bes | c4 c8 c c d c bes | c2. bes8 a |
 		bes8 bes4 bes8 bes c a g | bes4 bes2 g8 gis | a4 a8 a a a g f | a2. g4 |
 
-	%% part "B"
+		% part "B"
 		f2~ f8 bes, d f | g a g2 g4 | g2~ g8 c, ees g | a2. a4 |
 		a2~ a8 d, f a | bes c bes2 bes4 | bes2~ bes8 ees, g bes | d2. c4 |
 		bes4 bes8 bes bes a g a | bes4 bes2 bes8 c | d4 d8 d d d c bes | d,2. g4 |
@@ -21540,7 +21540,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	The night __ is like a love -- ly tune,
 	be -- ware __ My Fool -- ish Heart!
 	How white __ the ev -- er con -- stant moon;
@@ -21551,7 +21551,7 @@ endChords={}
 	for they both give the ver -- y same sen -- sa -- tion
 	when you're lost in the mag -- ic of a kiss.
 
-%% part "B"
+	% part "B"
 	His lips __ are much to close to mine,
 	be -- ware __ My Fool -- ish Heart
 	but should __ our ea -- ger lips com -- bine
@@ -21574,7 +21574,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1949 by Anne-Rachel Music Corp." }
@@ -21721,19 +21721,19 @@ endChords={}
 	\time 4/4
 	\key c \minor
 
-%% part "A"
+	% part "A"
 	c2 d4 ees | d4. ees8 d2 | c2 d4 ees | d4. ees8 d2 |
 	c2 d4 ees | bes'2 aes4 g | f1~ | f |
 
-%% part "A"
+	% part "A"
 	ees2 f4 g | f4. g8 f2 | ees2 f4 g | f4. g8 f2 |
 	ees2 f4 g | d'4. c8 bes4. a8 | aes1~ | aes2 g4 f |
 
-%% part "B"
+	% part "B"
 	bes4 r8 ees, ees4 d | ees2 ees4 d | c'4 r8 ees, ees4 d | ees2 ees4 d |
 	bes' r8 ees, ees4 d | ees2 f4 g | c1~ | c2 d, |
 
-%% part "A"
+	% part "A"
 	c2 d4 ees | d4. ees8 d2 | ees2 f4 g | f4. g8 f2 |
 	c'2 d4 ees | d4. ees8 d2 | ees1~ | ees |
 	ees,2 f4 g | f4. g8 f2 | ees1~ | ees2. r4 |
@@ -21749,22 +21749,22 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	My Fun -- ny Val -- en -- tine,
 	sweet com -- ic val -- en -- tine,
 	you make me smile with my heart. __
 
-%% part "A"
+	% part "A"
 	Your looks are laugh -- a -- ble,
 	un -- pho -- to -- graph -- a -- ble,
 	yet, you're my fav -- 'rite work of art. __
 
-%% part "B"
+	% part "B"
 	Is your fig -- ure less than Greek;
 	is your mouth a lit -- tle weak
 	when you o -- pen it to speak, are you smart? __
 
-%% part "A"
+	% part "A"
 	But don't change a hair for me,
 	not if you care for me,
 	stay lit -- tle val -- en -- tine, stay! __
@@ -21780,7 +21780,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1937 by Chappell & Co., Inc. Copyright Renewed" }
@@ -21938,25 +21938,25 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		r8 g a8. c16 d8 e b' g | a4 d b~ \tuplet 3/2 { b8 g f } |
 		e4 c' a~ \tuplet 3/2 { a8 f e } | d4 b' g2 |
 		r8 a g f e8. d16 g8. e16 | c8 a4.~ a2 |
 		r8 f' g a g4 d | g1 |
 
-	%% part "A"
+		% part "A"
 		r8 g, a8. c16 d8 e b' g | a4 d b~ \tuplet 3/2 { b8 g f } |
 		e4 c' a~ \tuplet 3/2 { a8 f e } | d4 b' g2 |
 		r8 a g f e8. d16 g8. e16 | c8 a4.~ a2 |
 		r8 f' g a g4 e | c2. r8 b |
 
-	%% part "B"
+		% part "B"
 		b'4~ \tuplet 3/2 { b8 a g } b4~ \tuplet 3/2 { b8 a g } | b,8 b4.~ b4 r8 b |
 		b'4~ \tuplet 3/2 { b8 a g } b4~ \tuplet 3/2 { b8 a g } | b,2. r8 b |
 		e4~ \tuplet 3/2 { e8 fis g } e4. b8 | e4~ \tuplet 3/2 { e8 fis g } e2 |
 		\tuplet 3/2 { d4 d d } \tuplet 3/2 { f! d f } | d1 |
 
-	%% part "A"
+		% part "A"
 		r8 g, a8. c16 d8 e b' g | a4 d b~ \tuplet 3/2 { b8 g f } |
 		e4 c' a~ \tuplet 3/2 { a8 f e } | d4 b' g2 |
 		r8 a g f e8. d16 g8. e16 | c8 a4.~ a2 |
@@ -21981,25 +21981,25 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	The ver -- y thought of you makes my heart sing __
 	like an A -- pril breeze __ on the wings of spring.
 	And you ap -- pear in all your splen -- dor, __
 	My One And On -- ly Love.
 
-%% part "A"
+	% part "A"
 	The shad -- own fall and spread their mys -- tic charms __
 	in the hush of night __ while you're in my arms.
 	I feel your lips so warm and ten -- der, __
 	My One And On -- ly Love.
 
-%% part "B"
+	% part "B"
 	The touch __ of your hand __ is like heav -- en, __
 	a heav -- __ en that I've __ nev -- er known.
 	The blush __ on your cheek when -- ev -- __ er I speak
 	tell me that you are my own.
 
-%% part "A"
+	% part "A"
 	You fill my ea -- ger heart with such de -- sire. __
 	Ev -- r'y kiss you give __ sets my soul on fire.
 	I give my -- self in sweet sur -- ren -- der, __
@@ -22017,7 +22017,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1952, 1953 SHERWIN MUSIC PUBLISHING CORP." }
@@ -22168,19 +22168,19 @@ endChords={}
 
 	\partial 4 e8 f |
 
-%% part "A"
+	% part "A"
 	g2. e8 f | g4 a b c | c2. b8 a | g2. c,8 d |
 	e2. c8 d | e4 f g a | a2. g8 f | e2. g4 |
 
-%% part "B"
+	% part "B"
 	c,2. c'4 | g2. g4 | c,2. c'4 | g2. c4 |
 	b2. a4 | g2. c4 | b2. a4 | g2. e8 f |
 
-%% part "A"
+	% part "A"
 	g2. e8 f | g4 a b c | c2. b8 a | g2. c,8 d |
 	e2. c8 d | e4 f g a | a2. g8 f | e2. f8 g |
 
-%% part "C"
+	% part "C"
 	a2. f8 g | a4 b c d | e e e e | c2. c8 d |
 	e2. c8 d | e4 c4 a4 f4 | c'1~ | c2. r4 |
 }
@@ -22195,19 +22195,19 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	My Ro -- mance does -- n't have to have a moon in the sky,
 	My Ro -- mance does -- n't need a blue la -- goon stand -- ing by;
 
-%% part "B"
+	% part "B"
 	no month of May, no twin -- kling stars,
 	no hide a -- way, no soft gui -- tars.
 
-%% part "A"
+	% part "A"
 	My Ro -- mance does -- n't need a cas -- tle ris -- ing in Spain,
 	nor a dance to a con -- stant -- ly sur -- pris -- ing re -- frain.
 
-%% part "C"
+	% part "C"
 	Wide a -- wake I can make my most fan -- tas -- tic dreams come true;
 	My Ro -- mance does -- n't need a thing but you. __
 }
@@ -22221,7 +22221,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1935, T.B. Harms Company. Copyright Renewed, (c/o The Welk Music Group, Santa Monica, CA 90401)" }
@@ -22384,19 +22384,19 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		d f c' a8 c | a4 d, d r8 c | d4 f c' c | d,2. c8 cis |
 		d4 f d' c8 d | c4 bes a e8 f | g1~ | g2. c,4 |
 
-	%% part "A"
+		% part "A"
 		d f c' a8 c | a4 d, d4. c8 | d4 f c' c | d,2. r8 c |
 		d4 f d' c8 d | c4 bes a e8 f | g2 g | f2 r4 a8 c |
 
-	%% part "B"
+		% part "B"
 		bes4 a g4. c8 | bes4 a g2 | d'4 bes g f | a2. b!8 d |
 		c4 b! a r8 d | c4 b! a b8 c | d4 b! g e | d2. c4 |
 
-	%% part "A"
+		% part "A"
 		d f c' a8 c | a4 d, d4. c8 | d4 f c' c | d,2. c8 cis |
 		d4 f d' c8 d | c4 bes a4. g8 |
 	} \alternative {
@@ -22419,24 +22419,24 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	My Ship has sails that are made of silk,
 	the decks are trimmed with gold.
 	And of jam and spice there's a par -- a -- dise in the hold. __
 
-%% part "A"
+	% part "A"
 	My Ship's a -- glow with a mil -- lion pearls and ru -- bies fill each bin;
 	the sun sits high in a sap -- phire sky when my ship comes in.
 
-%% part "B"
+	% part "B"
 	I can wait the years 'til it ap -- pears one fine day one spring,
 	but the pearls and such the won't mean much if there's miss -- ing just one thing.
 
-%% part "A"
+	% part "A"
 	I do not care if that day ar -- rives, that dream need nev -- er be,
 	if the ship I sing does -- n't al -- so bring my own true love to me.
 
-%% part "ending"
+	% part "ending"
 	My own true love to me,
 	if the ship I sing does -- n't al -- so bring my own true love to me. __
 }
@@ -22450,7 +22450,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1941 and renewed 1969 Hampshire House Publishing Corp. and Chappell & Co., Inc., New York, NY" }
@@ -22592,13 +22592,13 @@ endChords={}
 
 	\partial 8 a8 |
 
-%% part "A"
+	% part "A"
 	a'8 f d2. | r4 r8 a e' f g bes | a f d2. | r4 r8 a e' f g bes |
 	a4. d8 cis2 | a4. c!8 b2 | g4. bes!8 a4. d,8 | e2. r8 a, |
 	a'2. g4 | e2. a,4 | g'2. f4 | d2. a4 |
 	f'2. e4 | b2. c4 | cis1 | r2 r4 r8 a |
 
-%% part "B"
+	% part "B"
 	a'8 f d2. | r4 r8 a e' f g bes | a f d2. | r4 r8 a e' f g bes |
 	a4. d8 cis2 | a4. c!8 b2 | g4. bes!8 a4. d,8 | e2. r8 a, |
 	a'2. g4 | e2. a,4 | g'2. f4 | d2. a4 |
@@ -22615,7 +22615,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	There was a boy,
 	A ver -- y strange en -- chant -- ed boy
 	They say he wan -- dered ver -- y far, ver -- y far,
@@ -22626,7 +22626,7 @@ endChords={}
 	But ver -- y wise
 	was he
 
-%% part "B"
+	% part "B"
 	And then one day,
 	One mag -- ic day he came my way,
 	And as we spoke of man -- y things, fools and kings,
@@ -22647,7 +22647,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1948, Eben Ahbez" }
@@ -22794,19 +22794,19 @@ endChords={}
 	\time 2/2
 	\key g \major
 
-%% part "A"
+	% part "A"
 	b'4 c c b | a b2. | g4 a a g | fis1 |
 	d4. e8~ e8. d16 e8. g16 | a8 b4. r8. d,16 e8. g16 | a8 b4. g4 g8 g~ | g2. r4 |
 
-%% part "A"
+	% part "A"
 	b4 c c b | a b2. | g4 a \tuplet 3/2 { a4 gis g } | fis1 |
 	d4. e8~ e8. d16 e8. g16 | a8 b4. r8. d,16 e8. g16 | a8 b4. g4 g8 g~ | g1 |
 
-%% part "B"
+	% part "B"
 	r8 b4 g8 b4 g | ais4. g8~ g2 | b8. b16 b,8. b16 e8 g4. | fis1 |
 	r8 a4 fis8 a4 fis | a4. a8~ a4 a8. b16 | d4 d d8. e16 b4 | ais1 |
 
-%% part "A"
+	% part "A"
 	b4 c c b | a b2. | g4 a \tuplet 3/2 { a4 gis g } | fis1 |
 	d4. e8~ e8. d16 e8. g16 | a8 b4. r8. d,16 e8. g16 | a8 b4.~ b2 | d4 b g e | g1~ | g2. r4 |
 }
@@ -22838,7 +22838,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1937 Gershwin Publishing Corp." }
@@ -22991,7 +22991,7 @@ endChords={}
 
 	\partial 2 g'4 g8 g~ |
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		g1~ | g2 \tuplet 3/2 { f4 e dis } | e1~ | e2 g4 g8 g~ |
 		g4 g g g | g f \tuplet 3/2 { f e dis } | e1~ | e2 e4. e8 |
@@ -23006,7 +23006,7 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 	bes1~ | bes2 \tuplet 3/2 { g4 f ees } | g g8 g~ g2~ | g g4. g8 |
 	bes c4 bes8 c4 bes8 c~ | c bes4 g8~ \tuplet 3/2 { g4 f ees } | g g8 g~ g2~ | g2 e!4. e8 |
 	e4 e e e | ees2~ ees8 ees4 ees8 | d4 d d d | d8 des c b'~ b bes a4 |
@@ -23025,7 +23025,7 @@ endChords={}
 % this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Night And Day __
 	You are the one __
 	On -- ly you __ be -- nea -- th the moon
@@ -23037,7 +23037,7 @@ endChords={}
 
 	Day and night __
 
-%% part "B"
+	% part "B"
 	_ Night And Day
 	Un -- der the hide of me __
 	There's an oh such a hun -- gry
@@ -23060,7 +23060,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	_ _ _
 	Why it is so __
 	That this long -- __ ing for you
@@ -23080,7 +23080,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -23228,7 +23228,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1945, Atlantic Music Corp." }
@@ -23386,7 +23386,7 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		bes4 bes c8 ees4 c8 | bes4 bes c8 ees4 f8 | g4 g f8 ees4 f8 | g4 bes c8 bes4 c8 |
 		bes4 bes g8 f4 g8 | bes4 bes g8 f4 g8 | ees1~ | ees2. r8 bes8 | bes4 bes c8 ees4 c8 |
 		bes4 bes c8 ees4 f8 | g4 bes c8 bes4 c8 | ees4 ees d8 c4 d8 | bes4 bes g8 f4 g8 |
@@ -23432,7 +23432,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1927 T.B. Harms Company. Copyright Renewed." }
@@ -23581,7 +23581,7 @@ endChords={}
 	\time 4/4
 	\key f \major
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		d'1~ | d2~ d8 c4 a8~ | a1~ | a2 \tuplet 3/2 { r4 bes c } |
 		\tuplet 3/2 { d d d } \tuplet 3/2 { d d d } | d2 \tuplet 3/2 { f4 e d } |
@@ -23597,7 +23597,7 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 	e1 | g2~ g8 f4 d8~ | d1~ | d2 \tuplet 3/2 { r4 d e } |
 	\tuplet 3/2 { f f e~ } \tuplet 3/2 { e g ges } | f2~ f8 f4 des8 | e4 d8 d~ d2~ |
 	d2 \tuplet 3/2 { r4 d e } | \tuplet 3/2 { f f e~ } \tuplet 3/2 {e g ges } |
@@ -23658,7 +23658,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1965, Ipanema Music. Used By Permission." }
@@ -23797,17 +23797,17 @@ endChords={}
 	\time 4/4
 	\key g \minor
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		d4 f r8 d4 bes8~ | bes2 d4 f | a f r8 d c d~ | d1 |
 		r8 des' c g bes bes c f, | g4 bes8 g bes bes c bes | d4 c8 g bes bes c g~ | g1 |
 	}
 
-%% part "B"
+	% part "B"
 	r8 aes' g d f f g d~ | d1~ | d~ | d2. f4 |
 	r8 des c g bes bes c f, | g4 bes8 g bes bes c bes | d4 c8 g bes bes c g~ | g1 |
 
-%% part "A"
+	% part "A"
 	d4 f r8 d4 bes8~ | bes2 d4 f | a f r8 d c d~ | d1 |
 	r8 des' c g bes bes c f, | g4 bes8 g bes bes c bes | d4 c8 g bes bes c g~ | g1 |
 }
@@ -23821,7 +23821,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1963 Miyako Music" }
@@ -23970,17 +23970,17 @@ endChords={}
 
 	\partial 2 r8 f4 f8 |
 
-%% part "A"
+	% part "A"
 	f4 f8 f~ f f4 f8~ | f f4. r8 f4 f8 | f4 f8 f~ f f4 f8~ | f2 r8 f4 f8 |
 	f4 f8 f~ f f4 f8~ | f f4. r8 f4 f8 | f4 f8 f~ f f4 f8~ | f2 r8 bes4 bes8 |
 	bes4 bes8 bes~ bes bes4 bes8~ | bes bes4. r8 bes4 bes8 | bes4 bes8 bes~ bes bes4 bes8~ | bes4. r8 r f4 f8 |
 	f4 f8 f~ f f4 f8~ | f f4 f8~ f f f4 | f f8 f~ f f4 bes8-^ | r1 |
 
-%% part "B"
+	% part "B"
 	bes8 c des ees des c bes aes | ges f ees des c des ees f | c4. bes8 r c des f | c4. bes8 r2 |
 	aes'8 bes ces des ces bes aes ges | fes ees des ces bes ces des ees | bes4. aes8 r bes ces ees | ges4. f8 r f4 f8 |
 
-%% part "A"
+	% part "A"
 	f4 f8 f f~ f4 f8~ | f f4. r8 f4 f8 | f4 f8 f~ f f4 f8~ | f2 r8 f4 f8 |
 	f4 f8 f~ f f4 f8~ | f f4. r8 f4 f8 | f4 f8 f~ f f4 f8~ | f2 r8 bes4 bes8 |
 	bes4 bes8 bes~ bes bes4 bes8~ | bes bes4. r8 bes4 bes8 | bes4 bes8 bes~ bes bes4 bes8~ | bes2 r8 bes4 bes8 |
@@ -23998,7 +23998,7 @@ endChords={}
 % these are lyrics copied from the internet and adjusted for real book
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	This is just a lit -- __ tle sam -- __ ba
 	built up -- on a sin -- __ gle note. __
 	Oth -- er notes are bound __ to fol -- __ low
@@ -24008,13 +24008,13 @@ endChords={}
 	as I'm bound to be __ the un -- __ a -- void -- __ a -- ble
 	con -- se -- quence __ of you. __
 
-%% part "B"
+	% part "B"
 	There's so man -- y peo -- ple who can talk and talk and talk
 	and just say no -- thing or near -- ly no -- thing
 	I have used up all the scale I know and at the end I've come to no -- thing
 	or near -- ly no -- thing
 
-%% part "A"
+	% part "A"
 	So I come back to my first __ note as I must come back __ to you. __
 	I will pour in -- to __ that one __ note all the love I feel __ for you __
 	A -- ny -- one who wants __ the whole __ show, Re, Mi, Fa, Sol, La, __ Te, Doh. __
@@ -24031,7 +24031,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1961, 1962 by Antonio Carlos Jobim and Mrs. Mendonca, Brazil" }
@@ -24181,19 +24181,19 @@ endChords={}
 
 	\partial 8 d8 |
 
-%% part "A"
+	% part "A"
 	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g fis4 e4. d8 | e g fis e~ e4. d8 |
 	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g fis4 e8 g fis4 | e8 g fis e~ e4. d8 |
 
-%% part "A"
+	% part "A"
 	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g fis4 e4. d8 | e g fis e~ e4. d8 |
 	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g e d e g e g~ | g4. b8~ b d b g |
 
-%% part "B"
+	% part "B"
 	f! bes4 r8 bes4. g8 | c4 c c8 d4 bes8~ | bes4. g8~ g4. g8~ | g4. g8~ g4. g8 |
 	aes des4 r8 des4. bes8 | ees4 ees ees8 f4 des8~ | des2~ des4. des8~ | des8 d4.~ d4. d,8 |
 
-%% part "A"
+	% part "A"
 	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g fis4 e4. d8 | e g fis e~ e4. d8 |
 	e g fis4 e4. d8 | e g fis e~ e4. d8 | e g e d e g e g~ | g2~ g8 r r4 |
 }
@@ -24208,24 +24208,24 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	I'm wrack -- in' my brain, to think of a name, __
 	to give to this tune, so Per -- ry can croon, __
 	and may -- be ol' Bing will give it a fling. __
 	And that -- 'll start ev -- 'ry -- one hum -- min' the thing. __
 
-%% part "A"
+	% part "A"
 	The mel -- o -- dy's dumb, re -- peat an' re -- peat. __
 	But if you can swing, it's got a good beat. __
 	And that's the main thing, to make with the feet. __
 	'Cause ev -- 'ry -- one is swing -- in' to day. __
 
-%% part "B"
+	% part "B"
 	So, __ I'll call it O -- pus One! It's not for Sam -- my Kaye. __
 	Hey! __ hey! __ hey! __ It's O -- pus One! It's got to swing,
 	not sway. __ May -- be, __
 
-%% part "A"
+	% part "A"
 	if Mis -- ter Les Brown could make it re -- nown, __
 	and Ray An -- tho -- ny could swing it for me. __
 	There's nev -- er a doubt you'll knock your -- self out. __
@@ -24241,7 +24241,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1943 (Renewed) Embassy Music Corporation, New York." }
@@ -24379,13 +24379,13 @@ endChords={}
 	\time 4/4
 	\key f \minor
 
-%% part "A"
+	% part "A"
 	r8 f f g aes4 g8 f | des'2 c~ | c8 c c des ees4 des8 c | e!1 |
 	r8 bes bes c des4 c8 bes | f'2 e!2~ | e8 c c des ees!4 des8 c | f1 |
 	r8 f, f g aes4 g8 f | des'2 c~ | c8 c c des ees4 des8 c | f1 |
 	r8 des ees f~ f ees des bes | r c des ees~ ees des c aes | r bes c des~ des bes g e! | f4 r r2^\markup { \italic { Fine } } |
 
-%% part "B"
+	% part "B"
 	\key f \major
 	r4 c8 a' aes4 bes,8 g' | f2 c~ | c4 f8 a c4. c8 | c1 |
 	r4 bes8 a bes c4 bes8 | a4 gis8 g gis a4 gis8 | g!4 fis8 f fis g4 e8 | c2. r4 |
@@ -24403,13 +24403,13 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	When or -- chids bloom in the moon -- light __ and lov -- ers vow to be true;
 	I still can dream in the moon -- light, __ of one dear night that we knew.
 	When or -- chids fade in the dawn -- ing, __ they speak of tears and "\"Good" -- "bye!\""
 	Tho' my dreams __ are shat -- tered, like the pet -- als scat -- tered, still my love __ can nev -- er die.
 
-%% part "B"
+	% part "B"
 	There is peace in the twi -- light, __ when the day is thru,
 	but the shad -- own that fall on -- ly seem to re -- call all my long -- ing for you.
 	There's a dream in the moon -- beams, __ up on the sea of blue;
@@ -24425,7 +24425,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1933 by T.B. Harms Co." }
@@ -24572,11 +24572,11 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		g a b c d b c d | b g r4 r r8 d | g a bes c d e4 f!8~ | f g, a bes~ bes4. d8 |
 		c a4 f!8 bes gis a f~ | f r r4 r4 r8 aes~ | aes4 g8 f! e g f c | f!4 ees8 d r4 r8 des'8~ |
 
-	%% part "B"
+		% part "B"
 		des4 c8 bes a c bes g | a4 g8 fis r4 r8 d |
 	} \alternative {
 		{
@@ -24601,7 +24601,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1946 ATLANTIC MUSIC CORP." }
@@ -24748,19 +24748,19 @@ endChords={}
 	\time 4/4
 	\key f \major
 
-%% part "A"
+	% part "A"
 	r8 c d e f g a c | a4 g8 f e d4. | r8 c d e f g a c | d4 c8 bes a g4. |
 	f8 g f g f2 | a8 a g f e ees4. | d8 bes' g f e d'4 c8~ | c1 |
 
-%% part "A"
+	% part "A"
 	r8 c, d e f g a c | a4 g8 f e d4. | r8 c d e f g a c | d4 c8 bes a g4. |
 	f8 g f g f2 | a8 a g f e ees4. | d8 bes' g f e a4 f8~ | f2. e8 fis |
 
-%% part "B"
+	% part "B"
 	e4 cis'2 e8 ees | d cis b a gis e4. | e8 fis fis gis \tuplet 3/2 { gis4 a cis } | e2. e,8 fis |
 	e4 cis'2 e8 ees | d cis b a gis e4. | r8 a4 b8 a4 bes | c bes8 g~ g r8 r4 |
 
-%% part "A"
+	% part "A"
 	r8 c, d e f g a c | a4 g8 f e d4. | r8 c d e f g a c | d4 c8 bes a g4. |
 	f8 g f g f2 | a8 a g f e ees4. | d8 bes' g f e a4 f8~ | f2. r4 |
 }
@@ -24775,25 +24775,25 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	A coun -- try dance was be -- ing held in a gar -- den,
 	I felt a bump and heard an "\"Oh," beg your par -- "don,\""
 	sud -- den -- ly I saw Pol -- ka Dots And Moon -- beams
 	all a -- round a pug -- nosed dream. __
 
-%% part "A"
+	% part "A"
 	The mus -- ic start -- ed and was I the per -- plexed one,
 	I held my breath and said "\"may" I have the next "one.\""
 	In my fright -- ened arms Pol -- ka Dots And Moon -- beams
 	spark -- led on a pug -- nosed dream. __
 
-%% part "B"
+	% part "B"
 	There were ques -- tions in the eyes of oth -- er danc -- ers
 	as we float -- ed o -- ver the floor.
 	There were ques -- tions but my heart knew all the an -- swers,
 	and per -- haps a few things more. __
 
-%% part "A"
+	% part "A"
 	Now in a cot -- tage built of li -- lacs and laugh -- ter
 	I know the mean -- ing of the words "\"ev" -- er af -- "ter.\""
 	And I'll al -- ways see Pol -- ka Dots And Moon -- beams
@@ -24809,7 +24809,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1940 by ARC Music Corp., now Bourne Co. and Dorsey Bros." }
@@ -24959,19 +24959,19 @@ endChords={}
 
 	\partial 2. ees4 e f |
 
-%% part "A"
+	% part "A"
 	des'1~ | des4 c8 bes des4 c | bes2 bes~ | bes4 aes b, c |
 	aes'1~ | aes4 b,8 c aes'4 g | g1~ | g4 f b, c |
 
-%% part "B"
+	% part "B"
 	g' f8 g f2~ | f4 ees d ees | bes' aes8 bes aes2~ | aes4 f g aes |
 	c bes8 c bes2~ | bes4 aes e f | bes1~ | bes4 ees,4 e f |
 
-%% part "A"
+	% part "A"
 	des'1~ | des4 c8 bes des4 c | bes2 bes~ | bes4 aes b, c |
 	aes'1~ | aes4 b,8 c aes'4 g | g1~ | g2 f4 c |
 
-%% part "C"
+	% part "C"
 	des ees8 f ees'2~ | ees4 des8 c ees4 des | des b8 c g2~ | g4 aes c, g' |
 	f1~ | f4 d8 ees des'?4 c | aes1~ | aes4 r r2 |
 }
@@ -25002,7 +25002,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1998 Hal Leonard Corporation" }
@@ -25149,20 +25149,20 @@ endChords={}
 	\time 4/4
 	\key c \major
 
-%% part "A"
+	% part "A"
 	b'4 bes a gis | g a8 e~ \tuplet 3/2 { e4 f g } | gis4 g fis f | e f8 d~ d2 |
 	\tuplet 3/2 { g4 g g } \tuplet 3/2 { g gis a } | c,4 d'8 b~ b2 | d,8 e f gis~ gis4 gis8 a~ | a2. r4 |
 
-%% part "A"
+	% part "A"
 	b4 bes a gis | g a8 e~ \tuplet 3/2 { e4 f g } | gis4 g fis f | e f8 d~ d2 |
 	\tuplet 3/2 { g4 g g } \tuplet 3/2 { g gis a } | c,4 d'8 b~ b2 | d,8 e f gis~ gis4 a8 c,~ | c2. r4 |
 
-%% part "B"
+	% part "B"
 	r4 ais'8 b dis, e dis' cis | b a c,2 cis4 | r fis8 fis fis4 e |
 	r4 a8 a a2 | r4 ais8 b dis, e dis' cis | b a c,2 cis4 | e8 e4 e8~ e4 e8 e |
 	g4 gis a ais |
 
-%% part "A"
+	% part "A"
 	b4 bes a gis | g a8 e~ \tuplet 3/2 { e4 f g } | gis4 g fis f | e f8 d~ d4 d |
 	\tuplet 3/2 { g4 g g } \tuplet 3/2 { g gis a } | c,4 d'8 b~ b2 | d,8 e f gis~ gis4 a8 c,~ | c1 |
 }
@@ -25194,7 +25194,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -25334,13 +25334,13 @@ endChords={}
 	\time 2/2
 	\key c \major
 
-%% part "A"
+	% part "A"
 	r8 e4 d8 e d4 e8~ | e d e2. | r8 e4 d8 e d4 e8~ | e d e2. |
 	r8 d4 c8 d c4 d8~ | d c4 f8~ f e4 e8~ | e4. d8~ d2~ | d2. r4 |
 	r8 g4 f8 g f4 g8~ | g f4 g8~ g2 | r8 f4 e8 f e4 f8~ | f e f2. |
 	r8 e4 d8 e d4 e8~ | e d4 e8~ e d f4~ | f8 e4 f8 e4 f~| f8 e4 d8~ d c4. |
 
-%% part "A'"
+	% part "A'"
 	r8 e4 d8 e d4 e8~ | e d4 e8~ e2 | r8 e4 d8 e d4 e8~ | e d e4~ e8 g4 d8~ |
 	d2 \tuplet 3/2 { c4 d c } | d8 c4 f8~ f e4 e8~ | e4. d8~ d2~ | d2. r4 |
 	r8 c'4 bes8~ bes aes g f | e4. d8~ d2 | r4 r8 b' a g f e | d4. c8~ c2 |
@@ -25358,7 +25358,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Qui -- et Nights Of Qui -- et Stars,
 	qui -- et chords from my __ gui -- tar
 	float -- ing on the si -- lence that __ sur -- rounds __ us. __
@@ -25367,7 +25367,7 @@ endChords={}
 	and a win -- dow look -- ing on __ the moun -- tains and the sea. __
 	How love -- ly!
 
-%% part "A'"
+	% part "A'"
 	This is where I want __ to be. __
 	Here, with you so close __ to me __
 	un -- til __ the fin -- al flick -- er of __ life's em -- ber. __
@@ -25387,7 +25387,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1962, 1964 by Antonio Carlos Jobim, Brazil" }
@@ -25545,19 +25545,19 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		r4 b' \tuplet 3/2 { b c b } | d d2. | r4 g, \tuplet 3/2 { g a g } | b1 |
 		r4 d, \tuplet 3/2 { d e d } | a' a2. | r4 a \tuplet 3/2 { a g fis } | g1 |
 
-	%% part "A"
+		% part "A"
 		r4 b \tuplet 3/2 { b c b } | d d2. | r4 g, \tuplet 3/2 { g a g } | b1 |
 		r4 d, \tuplet 3/2 { d e d } | a' a2. | r4 a \tuplet 3/2 { a g fis } | g1 |
 
-	%% part "B"
+		% part "B"
 		a2 \tuplet 3/2 { g4 a g } | e d2. | r4 a' \tuplet 3/2 { a g e } | g1 |
 		a2 \tuplet 3/2 { g4 a g } | e d2. | r8 b' b b b a4 g8 | a1 |
 
-	%% part "A"
+		% part "A"
 		r4 b \tuplet 3/2 { b c b } | d d2. | r4 g, \tuplet 3/2 { g a g } | b1 |
 		r4 d, \tuplet 3/2 { d e d } | a' a2. | r4 a \tuplet 3/2 { a g fis } |
 	} \alternative {
@@ -25580,22 +25580,22 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Red Sails In The Sun -- set way out on the sea, oh! car -- ry my loved one
 	home safe -- ly to me.
 
-%% part "A"
+	% part "A"
 	He sailed at the dawn -- ing, all day I've been blue.
 	Red Sails In The Sun -- set I'm trust -- ing in you.
 
-%% part "B"
+	% part "B"
 	Swift wings you must bor -- row, make stright for the shore.
 	We mar -- ry to -- mor -- row and he goes sail -- ing no more.
 
-%% part "A"
+	% part "A"
 	Red Sails In The Sun -- set way out on the sea, oh! car -- ry my loved one home safe -- ly to me.
 
-%% part "Volta"
+	% part "Volta"
 	me.
 }
 
@@ -25608,7 +25608,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1935 The Peter Maurice Music Co. Ltd., London, England" }
@@ -25711,7 +25711,7 @@ endChords={}
 	\myMark "A"
 	\startPart
 	\repeat volta 2 {
-	%% the bes:7 on the next line should be altered
+		% the bes:7 on the next line should be altered
 		ees2:m c:m7.5- | f:m7.5- bes:7 | ees:m7 aes:7 | b4:m7 e:7 bes:m7 ees:7 | \myEndLine
 		aes2:m7 des:7 | ees:m7 aes:7 |
 	} \alternative {
@@ -25732,7 +25732,7 @@ endChords={}
 
 	\myMark "A"
 	\startPart
-%% the bes:7 on the next line should be altered
+	% the bes:7 on the next line should be altered
 	ees2:m c:m7.5- | f:m7.5- bes:7 | ees:m7 aes:7 | b4:m7 e:7 bes:m7 ees:7 | \myEndLine
 	aes2:m7 des:7 | ees:m7 aes:7 | ces:7 bes:7 | ees1:m | \myEndLine
 	\endPart
@@ -25761,7 +25761,7 @@ endChords={}
 	\time 4/4
 	\key ees \minor
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		r4 bes16 ees f bes ges4. bes,8 | ees4. d16 ees bes'8 aes r4 |
 		r ees16 ges bes des c4. ees,8 | a8 fis16 d gis4 aes8 f16 des g4 |
@@ -25775,11 +25775,11 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 	ges4 f8 ees f4. ees8 | d bes' r4 r ees,8 f | ges4 f8 ees f4. ees8 | d bes r4 r bes'4 |
 	ces4. ces8 bes4. bes8 | aes4 ges f4. bes8 | ees ees ees4 des8 des des4 | ces ees,8 d bes' aes e d |
 
-%% part "A"
+	% part "A"
 	r4 bes16 ees f bes ges4. bes,8 | ees4. d16 ees bes'8 aes r4 |
 	r ees16 ges bes des c4. ees,8 | a8 fis16 d gis4 aes8 f16 des g4 |
 	r4 aes16 ces ees ges f4. ces8 | bes4 \tuplet 3/2 { ees,8 d des } c aes'4 ees16 f |
@@ -25797,24 +25797,24 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	It be -- gins to tell, 'round midnight, mid -- _ _ night.
 	I do pre -- tty well, till af -- _ _ ter sun -- _ _ down,
 	Sup -- per -- time I'm fee -- lin' sad; _ _ _ _ _
 	But it real -- ly gets _ _ _ bad, 'round mid -- night.
 
-%% part "Volta"
+	% part "Volta"
 
 	mid -- _ _ night knows it, too.
 
-%% part "B"
+	% part "B"
 	When a quar -- rel we had needs men -- ding,
 	Does it mean that our love is end -- ing.
 	Dar -- lin' I need you, lately I find
 	You're out of my heart,
 	And I'm out of my mind. _ _ _
 
-%% part "A"
+	% part "A"
 	Let our hearts take wings' 'round midnight, mid -- _ _ night.
 	Let the an -- gels sing, for your -- _ _ re tur -- _ _ ning.
 	Till our love is safe and sound. _ _ _ _ _
@@ -25832,7 +25832,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Memo -- ries al -- ways start 'round midnight, mid -- _ _ night.
 	Ha -- ven't got the heart to stand -- _ _ those me -- _ _ mories,
 	When my heart is still with you, _ _ _ _ _
@@ -25848,7 +25848,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1944 (Renewed) Warner Bros. Inc. and Thelonian Music" }
@@ -26000,7 +26000,7 @@ endChords={}
 	\time 2/2
 	\key c \major
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		a'8. g16 a8 g~ g a4. | r8 a4. g8 a4. | b8. a16 b8 a~ a b4. | r8 b4. a8 b4. |
 		r8 d4. c8 d4. | r8 bes4. aes4 bes8 g~ |
@@ -26013,11 +26013,11 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 	c4 bes8. a16 g8. a16 bes4 | c4 bes8. a16 g8. a16 bes8 c~ | c1~ | c2. r8 c |
 	d8. c16 b8. a16~ a8. b16 c4 | d8. c16 b8 a~ a8. b16 c8 d~ | d1~ | d8 \xNote { d4^"(Spoken)" d8 d d4. } |
 
-%% part "A"
+	% part "A"
 	a8. g16 a8 g~ g a4. | r8 a4. g8 a4. | b8. a16 b8 a~ a b4. | r8 b4. a8 b4. |
 	r8 d4. c8 d4. | r8 bes4. aes4 bes8 g~ | g1~ | g2. r4 |
 }
@@ -26033,16 +26033,16 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Cig -- a -- rette hold -- er which wigs me, o -- ver her shoul -- der, she digs me.
 	Out cat -- tin' that Sat -- in Doll. __
 
-%% part "B"
+	% part "B"
 	_ She's no -- bod -- y's fool, so I'm play -- ing it cool as can be. __
 	I'll give it a whirl, __ but I ain't for no girl __ catch -- ing me. __
 	\markup \italic Switch -- \markup \italic E -- \markup \italic Roo -- \markup \italic ney
 
-%% part "A"
+	% part "A"
 	Tel -- e -- phone num -- bers well you know, do -- ing my rhum -- bas
 	with u -- no, and that 'n' my Sat -- in Doll. __
 }
@@ -26058,7 +26058,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Ba -- by shall we __ go out skip -- pin' care -- ful a -- mi -- go, you're flip -- pin'.
 	Speaks lat -- in that Sat -- in Doll.
 }
@@ -26072,7 +26072,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1958 Tempo Music, Inc." }
@@ -26213,16 +26213,16 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		r8 c'4 f,8 c'4. f,8 | c' c bes bes aes f4 ees8 | f4 f8 f aes aes4 c8~ | c1 |
 		r8 c4 f,8 c'4. f,8 | c' c bes bes aes f4 ees8 | f4 f8 f aes f ees f~ | f1 |
 
-	%% part "B"
+		% part "B"
 		r8 f'4-^ r8 bes,2 | r8 ees4-^ r8 aes,2 | r8 des4-^ r8 g,2 | g8 aes bes c~ c2 |
 		r8 f4-^ r8 bes,2 | r8 ees4-^ r8 aes,2 | r8 des4-^ r8 g,2 | g8 aes g f~ f2 |
 	}
 
-%% part "Ending"
+	% part "Ending"
 	c'8 c c ees-^ r des4.-> | c4-> r r2 |
 }
  }
@@ -26235,7 +26235,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -26380,7 +26380,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -26534,20 +26534,20 @@ endChords={}
 	\time 3/4
 	\key bes \major
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		f2. | bes2 fis4 | a2 g4 | g2. |
 		g | ees'2 b4 | d2 c4 | c d ees |
 	} \alternative {
 		{
 
-		%% part "B"
+			% part "B"
 			f2 f4 | a2 a4 | f2. | c4 d ees |
 			f2 f4 | a2 a4 | f2.~ | f |
 		}
 		{
 
-		%% part "C"
+			% part "C"
 			f4. e8 f4 | c'2 bes4 | c,4 bes c | a'2 g4 |
 			f2 ees4 | d2 c4 | bes2.~ | bes |
 		}
@@ -26567,11 +26567,11 @@ endChords={}
 % this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Some -- day my prince will come
 	Some -- day I'll find my love
 
-%% part "B"
+	% part "B"
 	And how thrilling that moment will be
 	When the prince of my dreams_comes to me
 }
@@ -26588,11 +26588,11 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	He'll whis -- per I love you
 	And steal a kiss or two
 
-%% part "C"
+	% part "C"
 	Though he's
 	_ _ _ _ _ _ _ _ _ _ _ _ _
 	far _ a -- way I'll find my love_some -- day
@@ -26657,7 +26657,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -26809,7 +26809,7 @@ endChords={}
 	\time 4/4
 	\key aes \major
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		r4 aes8 bes c ees f aes | bes bes4 aes8 g2 | aes8 aes4 g8 f2 | g8 g4 f8 ees2 |
 		r4 f ees des | aes'2 aes,8 bes4. |
@@ -26818,11 +26818,11 @@ endChords={}
 		{ aes1 | r4 bes c ees | }
 	}
 
-%% part "B"
+	% part "B"
 	g4 aes g aes | bes aes2 g4 | bes aes2 g4 | bes aes2 f4 |
 	aes g2 f4 | aes g2 e4 | c1~ | c2 r |
 
-%% part "A"
+	% part "A"
 	r4 aes8 bes c ees f aes | bes bes4 aes8 g2 | aes8 aes4 g8 f2 | g8 g4 f8 ees2 |
 	r4 f ees des | aes'2 aes,8 bes4. | aes1 | r |
 }
@@ -26849,19 +26849,19 @@ endChords={}
 %	I'd like to add his initial to my monogram
 %	Tell me, where is the shepherd for this lost lamb?
 
-%% part "A"
+	% part "A"
 	There's a some -- bo -- dy I'm lon -- gin' to see
 	I hope that he, turns out to be
 	Some -- one who'll watch o -- ver me
 
 	me
 
-%% part "B"
+	% part "B"
 	Al -- though he may not be the man some
 	Girls think of as hand -- some
 	To my heart he car -- ries the key
 
-%% part "A"
+	% part "A"
 	Won't you tell him please to put on some speed
 	Fol -- low my lead, oh, how I need
 	Some -- one to watch o -- ver me
@@ -26884,7 +26884,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	I'm a lit -- tle lamb who's lost in the wood
 	I know I could, al -- ways be good
 	To one who'll watch o -- ver %% me
@@ -26899,7 +26899,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -27063,7 +27063,7 @@ endChords={}
 	\time 4/4
 	\key ees \major
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		ees2 ees' | d4 bes8 c d4 ees | ees,2 c' | bes1 |
 		c,2 aes' | g4 ees8 f g4 aes | f d8 ees f4 g |
@@ -27076,11 +27076,11 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 	g8 bes g bes g bes g bes | aes bes aes bes aes bes aes bes | c2 c~ | c r4 bes |
 	g8 bes g bes g bes g bes | a c a c a c a c | d2 d | f c |
 
-%% part "A"
+	% part "A"
 	ees,2 ees' | d4 bes8 c d4 ees | ees,2 c' | bes1 |
 	c,2 aes' | g4 ees8 f g4 aes | f d8 ees f4 g | ees2 r |
 }
@@ -27100,13 +27100,13 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Some -- where o -- ver the rain -- bow
 	Way up high,
 	There's a land that I heard of
 	Once in a lu -- lla -- by.
 
-%% part "B"
+	% part "B"
 	_ Some -- day I'll wish u -- pon a star
 	And wake up where the clouds are far
 	Be -- hind me.
@@ -27114,7 +27114,7 @@ endChords={}
 	A -- way a -- bove the chim -- ney tops
 	That's where you'll find me.
 
-%% part "A"
+	% part "A"
 	Some -- where o -- ver the rain -- bow
 	Blue -- birds fly.
 	Birds fly o -- ver the rain -- bow.
@@ -27136,7 +27136,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Some -- where o -- ver the rain -- bow
 	Skies are blue,
 	And the dreams that you dare to dream
@@ -27156,7 +27156,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © Musicopy" }
@@ -27300,16 +27300,16 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		r4 g'8 c r b r a | g4 a e f | g c b c | r1 |
 
-	%% part "A"
+		% part "A"
 		r4 g8 c r b r a | g4 a e f | g c b c | r1 |
 
-	%% part "B"
+		% part "B"
 		e2 f4. g8 | r1 | f2 e4. d8 | r1 |
 
-	%% part "C"
+		% part "C"
 		e2 d | c a | g4 c b c | r1 |
 	}
 }
@@ -27323,7 +27323,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1963, Prestigve Music" }
@@ -27465,13 +27465,13 @@ endChords={}
 
 	\partial 4 bes'4 |
 
-%% part "A"
+	% part "A"
 	a1~ | a4 g a bes | f1~ | f2. f4 |
 	g1~ | g4 f f g | bes,1~ | bes2. c4 |
 	ees d c bes | d2. e4 | g4. f8 f2~ | f2. g4 |
 	bes a g f | g2 a4 bes | d4. c8 c2~ | c d |
 
-%% part "B"
+	% part "B"
 	ees1~ | ees4 ees ees d | f1~ | f4 ees \tuplet 3/2 { d c bes } |
 	d2 d2~ | d4 c bes a | c1~ | c2. bes4 |
 	a1~ | a4 g a bes | f1~ | f4 f f ees |
@@ -27489,13 +27489,13 @@ endChords={}
 % this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics)...
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	The song a rob -- in sings,
 	Through years of end -- less springs,
 	The mur -- mur of a brook at even -- ing tides.
 	That rip -- ples through a nook where two lov -- ers hide.
 
-%% part "B"
+	% part "B"
 	That great sym -- pho -- nic theme,
 	That's Stel -- la by star -- light,
 	And not a dream,
@@ -27512,7 +27512,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -27632,9 +27632,9 @@ endChords={}
 
 	\myMark "B"
 	\startPart
-%% Jazz Fakebook has the following d:7.5+.9- chord without the augmented, but
-%% given the melody note, and the fact that this exact figure appears in
-%% two other places augmented, I'm assumign this was a typo.
+	% Jazz Fakebook has the following d:7.5+.9- chord without the augmented, but
+	% given the melody note, and the fact that this exact figure appears in
+	% two other places augmented, I'm assumign this was a typo.
 	c1:maj7 | g4/b a:m7 g2:maj7 | c1:maj7 | g2/b a4:m7 g:maj7 | \myEndLine
 	c2 cis:dim7 | g/d e:7 | a4:m7 b:7 e2:m7 | a:7 a4:m7 d:7 | \myEndLine
 	\endPart
@@ -27673,7 +27673,7 @@ endChords={}
 
 	\partial 4 ais'8 b |
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		d2.~ d8 ais16 b | d8 b d cis c4 ais8 b | d d,4.~ d2 | a'8. a16 a8. a16 a4~ a8 g16 e |
 		g8 d4.~ d2 | c8 e g ais~ ais4. ais8 |
@@ -27686,11 +27686,11 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 	e8. fis16 \tuplet 3/2 { g8 a g~ } g8. g16 g8. g16 | g4. g8 b g4. |
 	e8. fis16 \tuplet 3/2 { g8 a g~ } g8. g16 g8. g16 | g4. g8 e d4. | e8. fis16 \tuplet 3/2 { g8 a g~ } g8. g16 g8. g16 | g4. g8 c8 b4. |
 
-%% part "A"
+	% part "A"
 	d4 b8 a g4 e | a2. ais8 b | d2.~ d8 ais16 b | d8 b d cis c4 ais8 b |
 	d d,4.~ d2 | a'8. a16 a8. a16 a4~ a8 g16 e | g8 d4.~ d2 | c8 e g ais~ ais4. ais8 |
 	b g4.~ g2 | c,8 e g ais~ ais4. ais8 | b g4.~ g2~ | g2. r4 |
@@ -27707,22 +27707,22 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Don't know
 
-%% part "Volta"
+	% part "Volta"
 	why __ there's no sun up in the sky, Storm -- y Weath -- er, __
 	since my man and I __ ain't to -- geth -- er, __ keeps rain -- in' all __ the time. __ _
 	Life is
 
 	time, __ _ the time. __ _ So wear -- y all __ the time. __ _
 
-%% part "B"
+	% part "B"
 	When he went a -- way __ the blues walked in and met me. If he stays a -- way __ old rock -- in'
 	chair will get me. All I do is pray __ the Lord a -- bove will let me walk in the sun once
 	more.
 
-%% part "A"
+	% part "A"
 	Can't go on, __ ev -- 'ry -- thing I had is gone, Storm -- y Weath -- er, __
 	since my man and I __ ain't to -- geth -- er, __ keeps rain -- in' all __ the time. __ _
 	Keeps rain -- in' all __ the time. __ _
@@ -27739,7 +27739,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	_ _
 	bare __ gloom and mis -- 'ry ev -- 'ry -- where, Storm -- y Weath -- er, __
 	just can't get my poor __ self to -- geth -- er, __ I'm wear -- y all __ the
@@ -27754,7 +27754,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1933 MILLIS MUSIC, INC." }
@@ -27888,7 +27888,7 @@ endChords={}
 	\time 4/4
 	\key c \minor
 
-%% part "A"
+	% part "A"
 	c4 c c c8 c | ees2 d | \tuplet 3/2 { c4 c c } c c | \tuplet 3/2 { d d d } d2 |
 	d4 d8 d f f f f | aes^"Piu mosso (a little faster)" aes g2. | c,4 c b8 b b b | c c4 c8~ c2 |
 	ees4 c d b | c g g2 | ees' d |
@@ -27909,7 +27909,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	South -- ern trees bear a strange fruit, blood on the leaves and blood at the root, black bod -- y swing -- ing in the
 	south -- ern breeze; Strange Fruit hang -- ing from the pop -- lar trees. __ \markup \italic (Humming) __ _ _ _ _ _ _ _ _
 	Pas -- tor -- al scene of the gal -- lant South, the bulg -- ing eyes and the twist -- ed mouth; scent of mag -- no -- _ lia
@@ -27927,7 +27927,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1940 by Edward B. Marks Music Company. Copyright Renewed." }
@@ -28073,19 +28073,19 @@ endChords={}
 	\time 2/2
 	\key f \major
 
-%% part "A"
+	% part "A"
 	f8 g g f g2~ | g8 f g a g4 f | e8 f f e f2~ | f8 e f g f4 e |
 	d8 e e d e2~ | e8 d e f e4 d | bes'1~ | bes2. r4 |
 
-%% part "A'"
+	% part "A'"
 	g8 a a g a2~ | a8 g a bes a4 g | f8 g g f g2~ | g8 f g a g4 f |
 	e8 f f e f2~ | f8 e f g f4 e | c'1~ | c |
 
-%% part "B"
+	% part "B"
 	c8 bes bes a a2~ | a8 bes bes c c bes bes a | c bes bes a a2~ | a8 bes bes c c bes bes a |
 	bes a a g g2 | bes8 a a g g2 | bes8 a a g g f e f | a g g f f e d e |
 
-%% part "A"
+	% part "A"
 	f8 g g f g2~ | g8 f g a g4 f | e8 f f e f2~ | f8 e f g f4 e |
 	d8 e e d e2~ | e8 e f g f4 e | f1~ | f2. r4 |
 }
@@ -28100,23 +28100,23 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Stran -- gers In The Night __ ex -- chang -- ing glanc -- es
 	won -- d'ring in the night __ what were the chanc -- es
 	we'd be shar -- ing love __ be -- fore the night was through. __
 
-%% part "A'"
+	% part "A'"
 	Some -- thing in your eyes __ was so in -- vit -- ing,
 	some -- thing in your smile __ was so ex -- cit -- ing,
 	some -- thing in my heart __ told me I must have you. __
 
-%% part "B"
+	% part "B"
 	Stran -- gers In The Night, __ two lone -- ly peo -- ple we were
 	Stran -- gers In The Night __ up tp the mo -- ment when we
 	said our first hel -- lo. Lit -- tle did we know
 	love was just a glance a -- way, a warm em -- brac -- ing dance a -- way and
 
-%% part "A"
+	% part "A"
 	ev -- er since that night __ we've been to -- geth -- er.
 	Lov -- ers at first sight, __ in love for -- ev -- er.
 	It turned out so right __ for Strang -- ers In The Night. __
@@ -28131,7 +28131,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1966 by Champion Music Corporation and Screen Gems-EMI" }
@@ -28297,19 +28297,19 @@ endChords={}
 
 	\partial 2 e'4 c |
 
-%% part "A"
+	% part "A"
 	e1~ | e8 r d8. c16 d8. e16 c4 | a2 e~ | e4 r e' c |
 	d8 d4.~ d2 | r4 c8. a16 c8. a16 c4 | b1~ | b2 r8 e4 c8 |
 
-%% part "B"
+	% part "B"
 	e8 e4 e8~ e2 | r4 d8. c16 d8. e16 c4 | a2 e~ | e r4 e |
 	g e8 g a4 c | e8 d4. c2 | a1~ | a1~ | a4 r4 r2 | r \tuplet 3/2 { e'4 e c } |
 
-%% part "A"
+	% part "A"
 	e4 e2. | r8. e16 d8. c16 d8. e16 c4 | a2 e~ | e e'4 c |
 	d8 d4 d8~ d2 | r4 c8. a16 c8. a16 c4 | b1~ | b2 r8 e e c |
 
-%% part "B"
+	% part "B"
 	e8 e4.~ e2 | r4 d8. c16 d8. e16 c4 | a2 e~ | e r4 e |
 	g e8 g a4 c | e8 d4. c2 | a1~ | a1~ | a1~ | a1~ | a2. r4 |
 }
@@ -28328,25 +28328,25 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Sum -- mer -- time __
 	an' the liv -- in' is eas -- y, __
 	fish are jump -- in'; __
 	an' the cot -- ton is high. __
 
-%% part "B"
+	% part "B"
 	Oh, yo' dad -- dy's rich, __
 	an' yo' ma is good look -- in', __
 	so hush, lit -- tle ba -- by, __
 	don' __ _ yo' cry. __
 
-%% part "A"
+	% part "A"
 	One of these morn -- in's __
 	you goin' to rise __ _ up sing -- in', __
 	then you'll spread yo' wings __
 	an' you'll take __ _ the sky. __
 
-%% part "B"
+	% part "B"
 	But 'til that morn -- in' __
 	there's a -- noth -- in' can harm you __
 	with dad -- dy an' mam -- my
@@ -28362,7 +28362,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1935 by Gershwin Publishing Corporation" }
@@ -28503,15 +28503,15 @@ endChords={}
 
 	\partial 2 a8 d f g |
 
-%% part "A"
+	% part "A"
 	gis a gis g f4 a, c | d2. \tuplet 3/2 { e16 f e } d8 c4 | d2. \tuplet 3/2 { c16 d c } a8 g4 | a2.~ a8 d f g |
 	gis a gis g f4 a, c | d2. \tuplet 3/2 { e16 f e } d8 c4 | d2. \tuplet 3/2 { c16 d c } a8 g4 | a2.~ a2 |
 
-%% part "B"
+	% part "B"
 	d'8 f4 d8 bes4 g8 a bes b | c e4 c8 a4 f8 g gis a | bes8 d4 bes8 g4 e8 f g gis | a gis a bes c4 c8 b c cis |
 	d8 f4 d8 bes4 g8 a bes b | c e4 c8 a4 f8 g gis a | bes8 d4 bes8 g4 e8 g c bes | a2. a,8 d f g |
 
-%% part "A"
+	% part "A"
 	gis a gis g f4 a, c | d2. \tuplet 3/2 { e16 f e } d8 c4 | d2. \tuplet 3/2 { c16 d c } a8 g4 | a2.~ a8 d f g |
 	gis a gis g f4 a, c | d2. \tuplet 3/2 { c16 d c } a8 g4 | a2. \tuplet 3/2 { e'16 f e } d8 c4 | d2.~ d2 |
 }
@@ -28525,7 +28525,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1960 (Renewed) Desmond Music Company (U.S.A.) and Derry Music Company (Canada)" }
@@ -28677,7 +28677,7 @@ endChords={}
 	\time 4/4
 	\key c \major
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		g'1~ | g8 e'4. g,4 c | e8 aes,~ aes2.~ | aes1 |
 		a! | a8 bes b e g, fis f cis' | c! e,~ e2.~ |
@@ -28690,16 +28690,16 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 	a8 c~ c2. | e8 f,4. a4 c | e8 a,4.~ a2~ | a1 |
 	a8 c~ c2. | e4 fis, a c | e8 a,~ a2.~ | a2 aes |
 
-%% part "A"
+	% part "A"
 	g1~ | g8 e'4. g,4 c | e8 aes,~ aes2.~ | aes1 |
 	a! | a8 bes b e g, fis f cis' | c! e,~ e2.~ | e2 r2 |
-%% These small cue notes were in the fake book, but splitting the voices
-%% breaks the tie from the previous measure. Maybe some can find a fix?
-%%<< { \teeny g8 a_\markup { \italic "(Instrumental)" } b c~ c4 c, } \\ { \normalsize e2 r2 } >> |
+	% These small cue notes were in the fake book, but splitting the voices
+	% breaks the tie from the previous measure. Maybe some can find a fix?
+	%<< { \teeny g8 a_\markup { \italic "(Instrumental)" } b c~ c4 c, } \\ { \normalsize e2 r2 } >> |
 }
 
 
@@ -28713,15 +28713,15 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	You __ must take the "\"A\"" Train __ To go to Sug -- ar Hill way up in Har -- lem. __
 	_
 
-%% part "B"
+	% part "B"
 	Hur -- ry, __ get on now it's com -- ing. __ Lis -- ten __ to those rails a --
 	thrum -- ming. __ All
 
-%% part "A"
+	% part "A"
 	'board! __ Get on the "\"A\"" Train, __ soon
 	you will be on Sug -- ar Hill in Har -- lem. __
 }
@@ -28737,7 +28737,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	If __ you miss the "\"A\"" Train, __ You'll find you've missed the quick -- est way to Har -- lem. __
 }
 
@@ -28750,7 +28750,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1941 and 1943 by Tempo Music, Inc. Copyright Renewed 1969" }
@@ -28900,19 +28900,19 @@ endChords={}
 
 	\partial 4. bes'8 c ees |
 
-%% part "A"
+	% part "A"
 	d4. bes8 c ees | d2 bes8 ges | f2.~ | f4 r8 ees f aes |
 	g4. ees8 f aes | g2 ees8 ces | bes2.~ | bes4 r bes |
 
-%% part "B"
+	% part "B"
 	ces2 bes'4 | g2 bes,4 | ces ees bes' | g2 f4 |
 	ees g f' | d2 f,4 | bes2.~ | bes4 r8 bes8 c ees |
 
-%% part "A"
+	% part "A"
 	d4. bes8 c ees | d2 bes8 ges | f2.~ | f4 r8 ees f aes |
 	g4. ees8 f aes | g2 ees8 ces | bes2.~ | bes4 r bes |
 
-%% part "C"
+	% part "C"
 	ces ees bes' | g2 f4 | ees g f' | d4. ees8 c d |
 	bes4. c8 aes bes | g4. f8 aes d, | ees2.~ | ees4. r8 r4 |
 }
@@ -28927,18 +28927,18 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	The eve -- ning breeze ca -- ressed the trees Ten -- der -- ly, __
 	The termb -- ling trees em -- braced the breeze Ten -- der -- ly. __
 
-%% part "B"
+	% part "B"
 	Then you and I came wand -- er -- ing by and lost in a sigh were we. __
 
-%% part "A"
+	% part "A"
 	The shore was kissed by sea and mist Ten -- der -- ly. __
 	I can't for -- get how two hearts met breath -- less -- ly. __
 
-%% part "C"
+	% part "C"
 	Your arms op -- ened wide and closed me in -- side; you took my lips, you took my love so Ten -- der -- ly. __
 }
 
@@ -28951,7 +28951,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1946, 1947, 1987 EDWIN H. MORRIS & COMPANY, A Division of MPL Communications, Inc." }
@@ -29107,7 +29107,7 @@ endChords={}
 
 	\partial 4 e8 f |
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		g b g e g b g e | g g~ g2 e8 f | g b g e g b g e | g2. a8 b |
 		c e c a c4. a8 | c e c a c4. a8 |
@@ -29120,11 +29120,11 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 	a4 c,8 c' a4 c,8 c' | a4 a2 c,8 c' | a4 c,8 c' a4 c,8 c' | a2. d,8 d' |
 	b4 d,8 d' b4 d,8 d' | b4 b2 d,8 d' | b4 d,8 d' b4 d,8 b' | g2. e8 f |
 
-%% part "A"
+	% part "A"
 	g b g e g b g e | g g~ g2 e8 f | g b g e g b g e | g2. a8 b |
 	c e c a c4. a8 | c e c a c4. a8 | g2. e4 | c1 |
 }
@@ -29140,20 +29140,20 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	I can on -- ly give you love that lasts for -- ev -- er, __
 	and the prom -- ise to be near each time you call;
 	and the on -- ly heart I own, for you and you a -- lone, That's All, That's All. I can
 	_ _ _ _ _
-%%All, That's All.
+	%All, That's All.
 
-%% part "B"
+	% part "B"
 	those I am sure who have told you
 	they would give you the world for a toy.
 	All I have are these arms to en -- fold you
 	and a love time can nev -- er de -- stroy.
 
-%% part "A"
+	% part "A"
 	If you're won -- d'ring what I'm ask -- ing in re -- turn dear, __
 	you'll be glad to know that my de -- mands are small:
 	say it's me that you'll a -- dore,
@@ -29172,7 +29172,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	_ _
 	on -ly give you coun -- try walks in spring -- time, __
 	and a hand to hold when leaves be -- gin to fall;
@@ -29192,7 +29192,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1952 Renewed 1982 Mixed Bag Music, Inc." }
@@ -29348,7 +29348,7 @@ endChords={}
 	\time 2/2
 	\key f \major
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		g'4. e8 e4 d8 g~ | g4 e8 e~ e e d g~ | g4 e e d8 g~ | g g e e~ e e d f~ |
 		f d4 d8~ d d c e~ | e c4 c8~ c c bes4 |
@@ -29361,7 +29361,7 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 	f1~ | \tuplet 3/2 {f4 ges f} \tuplet 3/2 {ees f ees} |
 	des4. ees8~ ees2~ | ees2. r8 gis~ |
 	gis1~ | \tuplet 3/2 {gis4 a gis} \tuplet 3/2 {fis gis fis} |
@@ -29371,7 +29371,7 @@ endChords={}
 	\tuplet 3/2 {c c, d} \tuplet 3/2 {e f g} | gis2. a4 |
 	\tuplet 3/2 {bes bes, c} \tuplet 3/2 {d e f} | fis2. r4 |
 
-%% part "A"
+	% part "A"
 	g4. e8 e4 d8 g~ | g4 e8 e~ e e d g~ | g4 e e d8 g~ | g g e e~ e e d a'~ |
 	a4. f8 f f d c'~ | c4. e,8 \tuplet 3/2 {e4 e d} | e1 | r4 r8 e \tuplet 3/2 {e4 e d} |
 	e1 | r4 r8 e \tuplet 3/2 {e4 e d} | e1~ | e2. r4 |
@@ -29388,22 +29388,22 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	Tall and tan and young __ and love -- __ ly,
 	the Girl __ From I -- pa -- ne -- __ ma goes walk -- __ ing,
 	and when __ she pass -- __ es, each one __ she pass -- __ es goes "\"ah!\"" __
 
-%% part "volta"
+	% part "volta"
 	_
 
-%% part "B"
+	% part "B"
 	Oh, __ but I watch her so sad -- ly. __
 	How __ can I tell her I love her? __
 	Yes, __ I would give my heart glad -- ly, __
 	but each day when she walks to the sea,
 	she looks straight a -- head not at me.
 
-%% part "A"
+	% part "A"
 	Tall and tan and young __ and love -- __ ly,
 	The Girl __ From I -- pa -- ne -- __ ma goes walk -- __ ing,
 	and when __ she pass -- es I smile, __
@@ -29423,7 +29423,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	When she walks she's like __ a sam -- __ ba
 	that swings __ so cool and sways __ _ so gen -- __ tle,
 	that when __ she pass -- __ es, each one __ she pass -- __ es goes _ "\"ah!\"" __
@@ -29438,7 +29438,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1963, Antonio Carlos Jobim and Vincius De Moraes, Brazil" }
@@ -29608,24 +29608,24 @@ endChords={}
 	\time 4/4
 	\key ees \major
 
-%% part "Intro"
+	% part "Intro"
 	r8. bes'16[ c8. bes16] c8.[ bes16 ees,8. f16] | ges8-. ges-. ges-. ges-. ges-> f~ f4 |
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		r8 bes c bes c bes des4 | r8 bes c bes des2 | r8 bes c bes c bes des4 | r8 aes bes aes c2 |
 		r8 aes bes aes bes aes ces4 | r8 g aes g bes4 aes | g2 g | g1 |
 
-	%% part "A"
+		% part "A"
 		r8 bes c bes c bes des4 | r8 bes c bes des2 | r8 bes c bes c bes des4 | r8 aes bes aes c2 |
 		r8 aes bes aes bes aes ces4 | r8 g aes g bes4 g | ees2 ees | ees1 |
 
-	%% part "B"
+		% part "B"
 		ees8 f g fis g4 ees' | ees d bes b | d c g a | b1 |
 		ees,8 f g fis g4 ees' | ees d bes b | d c bes! aes | g f g aes |
 
-	%% part "A"
+		% part "A"
 		r8 bes c bes c bes des4 | r8 bes c bes des2 | r8 bes c bes c bes des4 | r8 aes bes aes c2 |
 		r8 aes bes aes bes aes ces4 | r8 g aes g bes4 g | ees2 ees |
 	} \alternative {
@@ -29652,33 +29652,33 @@ endChords={}
 % these are lyrics from the internet adjusted for the real book
 \lyricmode {
 
-%% part "Intro"
+	% part "Intro"
 	_ _ _ _ _ _ _ _ _ _ _ _ _
 
-%% part "A"
+	% part "A"
 	Some -- day he'll come a -- long, the man I love
 	And he'll be big and strong, the man I love
 	And when he comes my way
 	I'll do my best to make him stay
 
-%% part "A"
+	% part "A"
 	He'll look at me and smile, I'll un -- der -- stand
 	And in a lit -- tle while he'll take my hand
 	And though it seems ab -- surd
 	I know we both won't say a word
 
-%% part "B"
+	% part "B"
 	May -- be I shall meet him Sun -- day
 	May -- be Mon -- day, may -- be not
 	Still I'm sure to meet him one day
 	May -- be Tues -- day will be my good news day
 
-%% part "A"
+	% part "A"
 	He'll build a lit -- tle home, just meant for two
 	From which we'll ne -- ver roam; Who would, would you?
 	And so all else a -- bove
 	I'm wait -- ing for the man I love
-%% Volta
+	% Volta
 	_ love
 }
 
@@ -29694,7 +29694,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -29853,7 +29853,7 @@ endChords={}
 
 	\partial 4 bes4 |
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		g'2. g4 | g2~ \tuplet 3/2 { g4 bes aes } | g2. g4 | f2 r4 d8 ees |
 		c'2. c4 | bes2~ \tuplet 3/2 { bes4 c bes } | a2. f4 | aes2 r4 g8 aes |
@@ -29867,11 +29867,11 @@ endChords={}
 		}
 	}
 
-%% part "B"
+	% part "B"
 	f8 f f g aes4 g | bes bes2 ees,4 | f8 f f g aes4 g | bes2 r4 g |
 	a4 b c b8 a | d4 d2 d4 | f2~ \tuplet 3/2 { f4 ees c } | f,2 r4 <bes, \parenthesize fis'> |
 
-%% part "A"
+	% part "A"
 	g'2. g4 | g2~ \tuplet 3/2 { g4 bes aes } | g2. g4 | f2 r4 d8 ees |
 	c'2. c4 | bes2~ \tuplet 3/2 { bes4 c bes } | a2. f4 | aes?2 r4 g8 aes |
 	bes2~ bes8 g f ees | ees'2. ees4 | ees2 f, | r4 f g aes |
@@ -29922,7 +29922,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -30074,19 +30074,19 @@ endChords={}
 
 	\partial 4. bes8 ees f |
 
-%% part "A"
+	% part "A"
 	g2 bes4 aes8 g | f4 aes2 g4 | ees2 g4 f | d f2 ees4 |
 	bes1~ | bes8 c d ees \tuplet 3/2 { f4 ees d } | bes'1~ | bes2~ bes8 bes, ees f |
 
-%% part "A"
+	% part "A"
 	g2 bes4 aes8 g | f4 aes2 g4 | ees2 g4 f | d f2 ees4 |
 	bes1~ | bes8 c d ees \tuplet 3/2 { f4 ees d } | ees1~ | ees2 bes8 c d ees |
 
-%% part "B"
+	% part "B"
 	f1~ | f4 d8 ees f ees4 d8 | g4. d8 des2~ | des~ des8 ees4 ees8 |
 	c'2. c4 | bes2. aes4 | f1~ | f2~ f8 bes, ees f |
 
-%% part "A"
+	% part "A"
 	g2 bes4 aes8 g | f4 aes2 g4 | ees2 g4 f | d f2 ees4 |
 	bes1~ | bes8 c d ees \tuplet 3/2 { f4 ees d } | bes'1~ | bes4 g8 aes \tuplet 3/2 { bes4 aes g } |
 	c2. c,4 | d ees2 f4 | ees1~ | ees2 r |
@@ -30102,19 +30102,19 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	It's not the pale moon that ex -- cites me, that thrills and de -- lights me. Oh,
 	no, __ it's just The Near -- ness Of You. __
 
-%% part "A"
+	% part "A"
 	It is -- n't your sweet con -- ver -- sa -- tion that brings this sen -- sa -- tion. Oh,
 	no, __ It's just the Near -- ness Of You. __
 
-%% part "B"
+	% part "B"
 	When you're in my arms __ and I feel you so close to me __ all my
 	wild -- est dreams com true. __
 
-%% part "A"
+	% part "A"
 	I need no soft lights to en -- change me if you'll on -- ly grant me the
 	right __ to hold you ev -- er so tight __ and to feel in the
 	night The Near -- ness Of You. __
@@ -30129,7 +30129,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1937, 1940 Famous Music Corporation" }
@@ -30279,19 +30279,19 @@ endChords={}
 
 	\partial 8*5 b8 e fis g b |
 
-%% part "A"
+	% part "A"
 	cis,2. fis4 | dis2. c!4 | b1~ | b4. b8 e fis g b |
 	e,2. a4 | fis2. d4 | b'1~ | b2 c8 b a g |
 
-%% part "B"
+	% part "B"
 	a2. c,4 | b2. a'4 | g1~ | g2 b8 a g fis |
 	g2. b,4 | ais2. g'4 | fis1~ | fis4 r8 b, e fis g b |
 
-%% part "A"
+	% part "A"
 	cis,2. fis4 | dis2. c!4 | b1~ | b4. b8 e fis g b |
 	e,2. c'4 | a2. fis4 | d'1~ | d2 e8 d c b |
 
-%% part "C"
+	% part "C"
 	c4. e,8 c'2~ | c d8 c b a | b4. d,8 b'2~ | b c8 b a gis |
 	a4. cis,8 a'2~ | a4. c,!8 b' a g fis | g1 | r4_\markup { \italic { Fine } } r8 b, e fis g b |
 }
@@ -30307,25 +30307,25 @@ endChords={}
 % this version of the lyrics is from the fake book but adjusted for the real book (the real book has no lyrics).
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	The sha -- dow of your smile, when you are gone. __
 	Will co -- lor all my dreams, and light the dawn. __
 
-%% part "B"
+	% part "B"
 	Look in -- to my eyes, my love, and see. __
 	All the love -- ly things you are to me. __
 
-%% part "A"
+	% part "A"
 	A wist -- ful lit -- tle star, was far too high. __
 	A tear drop kissed your lips, and so did I. __
 
-%% part "C"
+	% part "C"
 	Now when I re -- mem -- ber spring. __
 	All the joy that love can bring. __
 	I will be re -- mem -- be -- ring __
 	The sha -- dow of your smile.
 
-%% part "return"
+	% part "return"
 	The sha -- dow of your
 }
 
@@ -30338,7 +30338,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1965 (Renewed 1993) MGM/EMI Miller Catalog, Inc" }
@@ -30436,7 +30436,7 @@ endChords={}
 	\startChords
 	\startSong
 
-%% Intro
+	% Intro
 	\partial 8 s8 |
 
 	\myMark "A"
@@ -30487,22 +30487,22 @@ endChords={}
 	\time 4/4
 	\key g \major
 
-%% Intro
+	% Intro
 	\partial 8 b8 |
 
-%% part "A"
+	% part "A"
 	d8.[ e16 b8. c16] d4. b'8 | b8.[ c16 e,8. g16] a4. b8 | a8.[ g16 d'8. b16] a8.[ g16 fis8. d16] | f!2. r8 e |
 	c4 b' b a | d, d2 a'8. g16 | d4 d~ d8. a'16 g8. fis16 | e2. r8 b |
 
-%% part "A"
+	% part "A"
 	d8.[ e16 b8. c16] d4. b'8 | b8.[ c16 e,8. g16] a4. b8 | a8.[ g16 d'8. b16] a8.[ g16 fis8. d16] | f!2. r8 e |
 	c4 b' b a | d, d2 a'8. g16 | d4 d~ d8. a'16 g8. fis16 | g2. r8 gis |
 
-%% part "B"
+	% part "B"
 	a8.[ d,16 e8. f!16] g4. gis8 | a8.[ d,16 e8. f!16] g4. dis8 | e8.[ g16 a8. c16] b4 g8 e~ | e2. r8 ais |
 	b8.[ e,16 fis8. g16] a4. ais8 | b8.[ e,16 fis8. g16] a4. g8 | fis[ d d d] g4 e8 a~ | a2. r8 b,8 |
 
-%% part "A"
+	% part "A"
 	d8.[ e16 b8. c16] d4. b'8 | b8.[ c16 e,8. g16] a4. b8 | a8.[ g16 d'8. b16] a8.[ g16 fis8. d16] | f!2. r8 e |
 	c4 b' b a | d, d2 b'8. b16 | b4 c~ c8. a16 g8. fis16 | g2. r4 |
 }
@@ -30517,21 +30517,21 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	The boat rides we would take,
 	the moon -- light on the lake,
 	the way we danced and hummed our fav -- 'rite song.
 	The Things We Did Last Sum -- mer
 	I'll re -- mem -- ber __ all win -- ter long.
 
-%% part "A"
+	% part "A"
 	The mid -- way and the fun,
 	the kew -- pie dolls we won,
 	the bell I/you rang to prove that I/you was/were strong;
 	The Things We Did Last Sum -- mer
 	I'll re -- mem -- ber __ all win -- ter long.
 
-%% part "B"
+	% part "B"
 	The ear -- ly morn -- ing hike.
 	The rent -- ed tan -- dem bike.
 	The lunch -- es that we used to pack: __
@@ -30539,7 +30539,7 @@ endChords={}
 	that sud -- den sum -- mer rain.
 	The looks we got when we got back. __
 
-%% part "A"
+	% part "A"
 	The leaves be -- gan to fade
 	like prom -- is -- es we made.
 	How could a love that seemed so right go wrong?
@@ -30556,7 +30556,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1946 by Edwin H. Morris & Co., Inc" }
@@ -30720,41 +30720,41 @@ endChords={}
 	\time 4/4
 	\key f \major
 
-%% part "Instr."
+	% part "Instr."
 	\repeat volta 2 {
 		r4 c' d2 | r4 a' g2 | r4 e d2 | r4 a g2 |
 	}
 
-%% part "A"
-%%\mark \markup { \musicglyph #"scripts.segno" }
+	% part "A"
+	%\mark \markup { \musicglyph #"scripts.segno" }
 	\repeat volta 2 {
 		c1 | f, | g4 a bes a | g1 |
 		a4 bes c bes | a1 | bes4 c d c | bes c d e |
 		f1 | f, | g4 a c bes | a2 g |
-	%%<< { r4 c d2 } \\ { f,1 } >> | << { r4 a' g2 } \\ { r1 } >> | << { r4 e d2 } \\ { r1 } >> |
+		%<< { r4 c d2 } \\ { f,1 } >> | << { r4 a' g2 } \\ { r1 } >> | << { r4 e d2 } \\ { r1 } >> |
 		f1 | r1 | r1 |
 	} \alternative {
 		{
-		%%<< { r4 a g2} \\ { r4 d e g } >> |
+			%<< { r4 a g2} \\ { r4 d e g } >> |
 			r4 d e g |
 		}
 		{
-		%%<< { r1 } \\ { r4 aes g2 } >> |
+			%<< { r1 } \\ { r4 aes g2 } >> |
 			r1 |
 		}
 	}
 
-%% part "B"
+	% part "B"
 	c2 c | c c | c4 ees des bes~ | bes1 |
 	bes4 c aes g~ | g2 aes | f'1~ | f2. r4 |
 	ees2 ees | ees ees | ees4 f des c~ | c1 |
 	bes4 c2 aes4 | g2 aes | c1~ | c2. r4 |
 
-%% part "C"
+	% part "C"
 	c1 | f, | g4 a bes a | g1 |
 	a4 bes c bes | a1 | bes4 c d c | bes c d e |
 	f1 | f, | g4 a c bes | a2 g |
-%%<< { r4 c d2 } \\ { f,1 } >> | << { r4 a' g2 } \\ { r1 } >> | << { r4 e d2 } \\ { r1 } >> | << { r4 a g2} \\ { r1 } >> |
+	%<< { r4 c d2 } \\ { f,1 } >> | << { r4 a' g2 } \\ { r1 } >> | << { r4 e d2 } \\ { r1 } >> | << { r4 a g2} \\ { r1 } >> |
 	f1 | r1 | r1 | r1 |
 	g4 a c bes | a2 g | f4 r r2 | r1 |
 }
@@ -30770,10 +30770,10 @@ endChords={}
 
 \lyricmode {
 
-%% part "Instr."
+	% part "Instr."
 	_ _ _ _ _ _ _ _
 
-%% part "A"
+	% part "A"
 	Some -- day when I'm aw -- fly low,
 	When the world is cold,
 	I will feel a glow just think -- ing
@@ -30781,13 +30781,13 @@ endChords={}
 	And the way you look to -- night.
 	Oh, but you're
 
-%% part "B"
+	% part "B"
 	With each word your ten -- der -- ness grows, __
 	tear -- ing my fear __ a -- part, __
 	And that laugh that wrin -- kles your nose __
 	touch -- es my fool -- ish heart. __
 
-%% part "C"
+	% part "C"
 	Love -- ly, nev -- er, nev -- er change,
 	Keep that breath -- less charm,
 	Won't you please ar -- range it 'cause I love you,
@@ -30806,10 +30806,10 @@ endChords={}
 
 \lyricmode {
 
-%% part "Instr."
+	% part "Instr."
 	_ _ _ _ _ _ _ _
 
-%% part "A"
+	% part "A"
 	Love -- ly, with your smile so warm,
 	And your cheek so soft,
 	There is noth -- ing for me but to
@@ -30826,7 +30826,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1936 T B Harms Co." }
@@ -30980,13 +30980,13 @@ endChords={}
 
 	\partial 4 bes4 |
 
-%% part "A"
+	% part "A"
 	c d ees f | g bes f4. ees8 | f1~ | f2. g4 |
 	ees f g bes | c ees c4. bes8 | c1~ | c2. bes4 |
 	ees c bes aes | g f g4. aes8 | bes4 g f ees | f ees f4. ees8 |
 	d'4 c bes a | g f g f | aes1~ | aes2. bes,4 |
 
-%% part "B"
+	% part "B"
 	c d ees f | g bes f4. ees8 | f1~ | f2. g4 |
 	ees f g bes | c ees c4. bes8 | c1~ | c2. bes4 |
 	ees4 c bes aes | g f g4. aes8 | bes4 g f ees | d'2. c4 |
@@ -31006,13 +31006,13 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	There will be man -- y oth -- er nights like this, __
 	and I'll be stand -- ing here with some -- one new, __
 	There will be oth -- er songs to sing, an -- oth -- er fall, an -- oth -- er spring,
 	but There Will Nev -- er Be An -- oth -- er You. __
 
-%% part "B"
+	% part "B"
 	There will be oth -- er lips that I may kiss, __
 	but they won't thrill me like yours used to do. __
 	Yes, I may dream a mil -- lion dreams, but how can they come true,
@@ -31028,7 +31028,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1942, 1987 Twentieth Century Music Corporation" }
@@ -31190,19 +31190,19 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		r8 d e4 g a | b8.[ b16 a8. g16] a8 b4. | b8.[ b16 a8. g16] a8 b4 d,8~ | d1 |
 		r8 d e4 g a | b8.[ b16 a8. g16] a8 b4 g8~ | g1~ | g2. r4 |
 
-	%% part "A"
+		% part "A"
 		r8 d e4 g a | b8.[ b16 a8. g16] a8 b4. | d8.[ d16 cis8. b16] cis8 d4 fis,8~ | fis1 |
 		b4 a8. gis16 a8 b4. | b8.[ c16 a8. gis16] a8 b4. | a4 b c b | a d d d |
 
-	%% part "B"
+		% part "B"
 		d2~ d8 b4 g8 | a2~ a8.[ b16 c8. cis16] | d4 e d b | c2. b4 |
 		e2~ e8 cis4 a8 | b2~ b8 a4 b8 | c4 e e, g | a1 |
 
-	%% part "A"
+		% part "A"
 		r8 d, e4 g a | b8.[ b16 a8. g16] a8 b4. | c8 b4 a8 b4 c | b2. a4 |
 		d4 d d2 | e8 e4 e8 b4 b |
 	} \alternative {
@@ -31226,30 +31226,30 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	They All Laughed at Chris -- to -- pher Co -- lum -- bus
 	when he said the world was round. __
 	They All Laughed when Ed -- i -- son re -- cord -- ed sound. __
 
-%% part "A"
+	% part "A"
 	They All Laughed at Wil -- bur and his broth -- er,
 	when they said that man could fly. __
 	They told Mar -- co -- ni wire -- less was a pho -- ney;
 	it's the same old cry.
 
-%% part "B"
+	% part "B"
 	They laughed at me __ want -- ing you, __
 	said I was reach -- ing for the moon.
 	But oh, __ you came through __
 	now they'll have to change their tune.
 
-%% part "A"
+	% part "A"
 	They all said we nev -- er could be hap -- py,
 	they laughed at us and how!
 	But ho, ho, ho!
 	Who's got the last laugh now? __
 
-%% part "Volta"
+	% part "Volta"
 	He, he, he!
 	Let's at the past laugh,
 	Ha, ha, ha!
@@ -31267,24 +31267,24 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	They All Laughed at Rock -- e -- fel -- ler Cen -- ter,
 	now they're fight -- ing to get in. __
 	They All Laughed at Whit -- ney and his cot -- ton gin. __
 
-%% part "A"
+	% part "A"
 	They All Laughed at Ful -- ton and his steam -- boat,
 	Her -- shey and his choc' -- late bar. __
 	Ford and his Liz -- zie kept the laugh -- ers bus -- y;
 	that's how peo -- ple are.
 
-%% part "B"
+	% part "B"
 	They laughed at me __ want -- ing you, __
 	said it would be hel -- lo, good -- bye.
 	But oh, __ you came through __
 	now they're eat -- ing hum -- ble pie.
 
-%% part "A"
+	% part "A"
 	They all said we'd nev -- er get to -- geth -- er;
 	dar -- ling, let's take a bow.
 	For ho, ho, ho!
@@ -31300,7 +31300,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © " }
@@ -31462,19 +31462,19 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		r8 d e4 g a | b8.[ b16 a8. g16] a8 b4. | b8.[ b16 a8. g16] a8 b4 d,8~ | d1 |
 		r8 d e4 g a | b8.[ b16 a8. g16] a8 b4 g8~ | g1~ | g2. r4 |
 
-	%% part "A"
+		% part "A"
 		r8 d e4 g a | b8.[ b16 a8. g16] a8 b4. | d8.[ d16 cis8. b16] cis8 d4 fis,8~ | fis1 |
 		b4 a8. gis16 a8 b4. | b8.[ c16 a8. gis16] a8 b4. | a4 b c b | a d d d |
 
-	%% part "B"
+		% part "B"
 		d2~ d8 b4 g8 | a2~ a8.[ b16 c8. cis16] | d4 e d b | c2. b4 |
 		e2~ e8 cis4 a8 | b2~ b8 a4 b8 | c4 e e, g | a1 |
 
-	%% part "A"
+		% part "A"
 		r8 d, e4 g a | b8.[ b16 a8. g16] a8 b4. | c8 b4 a8 b4 c | b2. a4 |
 		d4 d d2 | e8 e4 e8 b4 b |
 	} \alternative {
@@ -31498,30 +31498,30 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	They All Laughed at Chris -- to -- pher Co -- lum -- bus
 	when he said the world was round. __
 	They All Laughed when Ed -- i -- son re -- cord -- ed sound. __
 
-%% part "A"
+	% part "A"
 	They All Laughed at Wil -- bur and his broth -- er,
 	when they said that man could fly. __
 	They told Mar -- co -- ni wire -- less was a pho -- ney;
 	it's the same old cry.
 
-%% part "B"
+	% part "B"
 	They laughed at me __ want -- ing you, __
 	said I was reach -- ing for the moon.
 	But oh, __ you came through __
 	now they'll have to change their tune.
 
-%% part "A"
+	% part "A"
 	They all said we nev -- er could be hap -- py,
 	they laughed at us and how!
 	But ho, ho, ho!
 	Who's got the last laugh now? __
 
-%% part "Volta"
+	% part "Volta"
 	He, he, he!
 	Let's at the past laugh,
 	Ha, ha, ha!
@@ -31539,24 +31539,24 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	They All Laughed at Rock -- e -- fel -- ler Cen -- ter,
 	now they're fight -- ing to get in. __
 	They All Laughed at Whit -- ney and his cot -- ton gin. __
 
-%% part "A"
+	% part "A"
 	They All Laughed at Ful -- ton and his steam -- boat,
 	Her -- shey and his choc' -- late bar. __
 	Ford and his Liz -- zie kept the laugh -- ers bus -- y;
 	that's how peo -- ple are.
 
-%% part "B"
+	% part "B"
 	They laughed at me __ want -- ing you, __
 	said it would be hel -- lo, good -- bye.
 	But oh, __ you came through __
 	now they're eat -- ing hum -- ble pie.
 
-%% part "A"
+	% part "A"
 	They all said we'd nev -- er get to -- geth -- er;
 	dar -- ling, let's take a bow.
 	For ho, ho, ho!
@@ -31572,7 +31572,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1937, Gershwin Publishing Corporation" }
@@ -31670,7 +31670,7 @@ endChords={}
 	\startChords
 	\startSong
 
-%% Intro
+	% Intro
 	\partial 8*7 s8*7 |
 
 	\myMark "A"
@@ -31722,22 +31722,22 @@ endChords={}
 	\time 4/4
 	\key ees \major
 
-%% part "Intro"
+	% part "Intro"
 	\partial 8*7 ees8 ees ees ees4 ees8 g~ |
 
-%% part "A"
+	% part "A"
 	g1 | r8 ees ees ees ees4 ees8 bes~ | bes1 | r8 ees ees ees ees4 ees8 bes'~ |
 	bes1~ | bes8 r c4 c c | ees8.[ c16 bes8. aes16] bes4 g8 f | r ees ees ees ees4 ees8 g~ |
 
-%% part "A"
+	% part "A"
 	g1 | r8 ees ees ees ees4 ees8 bes~ | bes1 | r8 ees ees ees ees4 ees8 bes'~ |
 	bes1~ | bes4 c4 c c | ees8.[ c16 bes8. aes16] bes4 g8 ees~ | ees2. g8 a! |
 
-%% part "B"
+	% part "B"
 	bes4 g d' c | bes g d' c8 bes | g g g2 f4 | d2. g8 a! |
 	bes4 a! d c | bes g c c | f,1 | r8 ees ees ees ees4 ees8 g~ |
 
-%% part "A"
+	% part "A"
 	g1 | r8 ees ees ees ees4 ees8 bes~ | bes1 | r8 ees ees ees ees4 ees8 c'~ |
 	c1~ | c4 ees ees ees | ees8.[ c16 bes8. aes16] bes4 g8 ees~ | ees r bes'2 aes4 |
 	g aes g bes | f2 g | ees1~ | ees2. r4 |
@@ -31753,23 +31753,23 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	The way you wear your hat, __
 	the way you sip your tea, __
 	the mem -- 'ry of all that __
 	no, no! They Can't Take That A -- way From Me!
 
-%% part "A"
+	% part "A"
 	The way your smile just beams, __
 	the way you sing off key, __
 	the way you haunt my dreams, __
 	no, no! They Can't Take That A -- way From Me! __
 
-%% part "B"
+	% part "B"
 	We may nev -- er, nev -- er meet a -- gain on the bump -- y road to love,
 	still I'll al -- ways, al -- ways keep the mem -- 'ry of
 
-%% part "A"
+	% part "A"
 	the way you hold your knife, __
 	the way we danced till three, __
 	the way you changed my life, __
@@ -31786,7 +31786,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1937 by Gershwin Publishing Corporation" }
@@ -31932,19 +31932,19 @@ endChords={}
 	\time 2/2
 	\key g \major
 
-%% part "A"
+	% part "A"
 	g'2 fis4 g | d g fis g | e2 g4 a~ | a2. g4 |
 	b r d, d~ | d e g2 | a1~ | a2. r4 |
 
-%% part "A"
+	% part "A"
 	g2 fis4 g | d g fis g | e2 g4 a~ | a2. g4 |
 	d' r g, g~ | g b a2 | g1~ | g4 b b b |
 
-%% part "B"
+	% part "B"
 	cis, r e dis~ | dis b' b8 b4. | d1 | r4 b b b |
 	d1 | c | b | a |
 
-%% part "A"
+	% part "A"
 	g2 fis4 g | d g fis g | e2 g4 a~ | a g a g |
 	e' r g, g~ | g b a2 | g1~ | g2. r4 |
 }
@@ -31959,19 +31959,19 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	This Can't Be Love be -- cause I feel so well, __
 	no sobs, no sor -- rows, no sighs; __
 
-%% part "A"
+	% part "A"
 	This Can't Be Love, I get no diz -- zy spell. __
 	My head is not __ in the skies, __
 
-%% part "B"
+	% part "B"
 	my heart does not stand still, __ just hear it beat!
 	This is too sweet to be love.
 
-%% part "A"
+	% part "A"
 	This Can't Be Love be -- cause I feel so well; __
 	but still I love to look __ in your eyes. __
 }
@@ -31985,7 +31985,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1938 by Chappell & Co., Inc. Copyright Renewed" }
@@ -32168,7 +32168,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1951, Bourne Co. Copyright Renewed." }
@@ -32291,7 +32291,7 @@ endChords={}
 	aes:maj7 | g:7 | c:m7 | f:9 | g:m7 | ges:7 | f:m7 | bes:7 | \myEndLine
 	\endPart
 
-%%\myMark "Coda"
+	%\myMark "Coda"
 	\mark \markup { \musicglyph #"scripts.coda" }
 	\startPart
 	g2.:m7 | c2:7.5- c4:7 | a2.:m7 | d:7 | g:m7 | ees2:11 ees4:7 | \myEndLine
@@ -32325,27 +32325,27 @@ endChords={}
 	\time 3/4
 	\key ees \major
 
-%% part "A"
-%%\repeat volta 2 {
+	% part "A"
+	%\repeat volta 2 {
 		bes'2. | ees, | aes | d, | g~ | g | r4 f ees | d ees f |
 		g2 f4 | ees f g |
-%%} \alternative {
+	%} \alternative {
 	\set Score.repeatCommands = #'((volta "1, 3") end-repeat)
-%%	{
+	%	{
 			aes aes g | f g aes | bes2.~ | bes~ | bes~ | bes |
-%%	}
+	%	}
 	\set Score.repeatCommands = #'((volta #f) (volta "2.") end-repeat)
-%%	{
+	%	{
 			a!2 g4 | fis! g a! | b!2.~ | b~ | b~ | b |
-%%	}
-%%}
+	%	}
+	%}
 	\set Score.repeatCommands = #'((volta #f))
 
-%% part "B"
+	% part "B"
 	c2.~ | c2 bes4 | c2.~ | c2 bes4 | c bes aes | g2 d4 | f2 ees4 | c' bes aes |
 	g2 aes4 | g2 d4 | ees g bes | d ees c | bes2.~ | bes~ | bes~ | bes^\markup {D.C. al Coda} |
 
-%% part "Coda"
+	% part "Coda"
 	c2.~ | c | r4 d c | d c d | bes2.~ | bes |
 	r4 bes aes | bes aes bes | g2.~ | g~ | g | r4 f ees | f ees f | ees f ees |
 	c'2. | d, | ees( | bes') |
@@ -32363,16 +32363,16 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	In her own sweet world, __ pop -- u -- lat -- ed by dolls and clowns and a
 	prince and a big pur -- ple bear, __
 	wear -- y grown -- ups all wear. __
 
-%% part "B"
+	% part "B"
 	In __ the sun, __ she danc -- es to si -- lent mu -- sic, songs that are spun of
 	gold some -- where in her own lit -- tle head. __
 
-%% part "Coda"
+	% part "Coda"
 	bear. __ When she goes they will cry __ as they whis -- per "\"good" -- "bye.\"" __
 	They will miss her, I fear, but then, so will I. __
 }
@@ -32389,7 +32389,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	lives my fav -- 'rite girl, __ un -- a -- ware of the wor -- ried frowns that we
 }
 
@@ -32405,7 +32405,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	one day all too soon __ she'll grow up and she'll leave her dolls and her prince and
 	her sil -- ly old
 }
@@ -32419,7 +32419,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1964 and 1965 Acom Music Corp., New York, NY." }
@@ -32546,7 +32546,7 @@ endChords={}
 	\time 4/4
 	\key c \major
 
-%% part "A"
+	% part "A"
 	ees'1\p\<~ | ees4\! f,8 f <aes c> ( <bes d>4-. ) f8~ | f1~ | f2 r |
 	f'1\p\<~ | f4\! f,8 f <aes c> ( <bes d>4-. ) f8~ | f1~ | f2 r |
 	r4 c'8 ( c g'4 a | aes8 g f d f4 g-. ) |
@@ -32563,7 +32563,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1962, 1963 & 1965 By Hancock Music Co., New York, NY" }
@@ -32665,7 +32665,7 @@ endChords={}
 
 	\partial 2. s2. |
 
-%%\myMark "A"
+	%\myMark "A"
 	\mark \markup { \musicglyph #"scripts.segno" }
 	\startPart
 	g1:m7 | c:7 | f | f2/a aes:dim7 | \myEndLine
@@ -32678,7 +32678,7 @@ endChords={}
 	g:7 | g1:m7 | c2:7 r | \myEndLine
 	\endPart
 
-%% end of the "A" part
+	% end of the "A" part
 	\mark \markup { \musicglyph #"scripts.coda" } c1:m7 | f:7 | \myEndLine
 
 	\myMark "C"
@@ -32714,18 +32714,18 @@ endChords={}
 
 	\partial 2. c8 d \tuplet 3/2 { f4 d f } |
 
-%% part "A"
+	% part "A"
 	g2 g~ | \tuplet 3/2 { g4 f g f e f } | e2 d~ | d4 d8 e \tuplet 3/2 { f4 d f } |
 	bes2 bes~ | bes4 c8 c \tuplet 3/2 { c4 c^\markup {To Coda \musicglyph #"scripts.coda"} c } | c1~ | c4 r8 a a a a a |
 
-%% part "B"
+	% part "B"
 	a2 a~ | a4. a8 a a a a | a2 a~ | a4. a8 a a a aes |
 	g2 g~ | g4 d8 e f e f4 | g1~ | g4 c,8 d \tuplet 3/2 { f4 d f^\markup {D.S. al Coda} } |
 
-%% part "end of A"
+	% part "end of A"
 	c'2 \tuplet 3/2 { a4 c a } | g2 r8 a c bes |
 
-%% part "C"
+	% part "C"
 	a2 a~ | a4 g a8 g f e | g2 g~ | g4 f8 g f e4 d8 |
 	f2 f | r4 e8 e e f g4 | f1~ | f4 r r2 |
 }
@@ -32741,13 +32741,13 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	What A Diff -- 'rence A Day Made, __
 	twen -- ty -- four lit -- tle ho -- urs, __
 	brought the sun and the flow -- ers __
 	where there used to be rain. __
 
-%% part "B"
+	% part "B"
 	My yes -- ter day was blue dear, __
 	to -- day I'm part of you dear, __
 	my lone -- ly nights are thru dear, __
@@ -32757,7 +32757,7 @@ endChords={}
 
 	bliss; that thrill -- ing kiss.
 
-%% part "C"
+	% part "C"
 	It's heav -- en when you __
 	find ro -- mance on your men -- u. __
 	What A Diff -- 'rence A Day Made,
@@ -32775,7 +32775,7 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	_ _ _ _ _
 	day makes, __ there's a rain -- bow be -- fore me, __
 	skies a -- bove can't be storm -- y __
@@ -32791,7 +32791,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1934 by Edward B. Marks Music Company. Copyright Renewed." }
@@ -32942,19 +32942,19 @@ endChords={}
 
 	\partial 4 c8 e |
 
-%% part "A"
+	% part "A"
 	f4. a8 c2 | r8 d d d c2 | r8 bes bes bes a2 | r8 g g g f4~ \tuplet 3/2 { f8 f f } |
 	f4~ \tuplet 3/2 { f8 f f } f2 | r4 f8 f \tuplet 3/2 {e4 f g} | a1~ | a2 r4 c,8 e |
 
-%% part "A"
+	% part "A"
 	f4. a8 c4. c8 | d4. d8 c4. c8 | bes4~ \tuplet 3/2 { bes8 bes bes } a4. a8 | g4~ \tuplet 3/2 { g8 g g } f4~ \tuplet 3/2 { f8 f f } |
 	f4~ \tuplet 3/2 { f8 f f } f2 | r4 f8 f \tuplet 3/2 {e4 f g } | f1~ | f2 r4 f4 |
 
-%% part "B"
+	% part "B"
 	g8 g g g g c,4 c8 | bes' a a gis a4. f8 | g g g g g c,4 g'8 | bes a a gis a4 a8 c |
 	d4 d8 d c4~ \tuplet 3/2 { c8 a c } | d4 d8 d c2 | r8 d d d c c4. | bes4 a g c,8 e |
 
-%% part "A"
+	% part "A"
 	f4. a8 c4. c8 | d4. d8 c2 | r8 bes bes bes a4. a8 | g4~ \tuplet 3/2 { g8 g g } f4~ \tuplet 3/2 { f8 f f } |
 	f4~ \tuplet 3/2 { f8 f f } f2 | r4 f8 f \tuplet 3/2 {e4 f g} | a1~ | a4 r a a |
 	\tuplet 3/2 {a4 f g} f2 | r4 f8 f \tuplet 3/2 {e4 f g} | f1~ | f\fermata |
@@ -32970,21 +32970,21 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	I see trees of green, red ros -- es too, I see the bloom for me and you, __
 	and I think __ to my -- self What A Won -- der -- ful World. __
 
-%% part "A"
+	% part "A"
 	I see skies of blue and clouds of white, the bright __ bless -- ed day, the dark __ sac -- red night, __
 	and I think __ to my -- self What A Won -- der -- ful World. __
 
-%% part "B"
+	% part "B"
 	The col -- ors of the rain -- bow, so pret -- ty in the sky
 	are al -- so on the fa -- ces of peo -- ple go -- in' by,
 	I see friends shak -- in' hands, __ say -- in' "\"How" do you "do!\""
 	They're real -- ly say -- in' "\"I" love "you,\""
 
-%% part "A"
+	% part "A"
 	I hear ba -- bies cry, I watch them grow.
 	They'll learn much more than I'll __ ev -- er know, __
 	and I think __ to my -- self What A Won -- der -- ful World. __
@@ -33000,7 +33000,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1967 by Range Road Music Inc. and Quartet Music Inc." }
@@ -33158,19 +33158,19 @@ endChords={}
 
 	\repeat volta 2 {
 
-	%% part "A"
+		% part "A"
 		bes4 ees aes g | ees1 | bes4 ees aes g | ees f2. |
 		bes,4 ees c' bes | aes2. g4 | f1~ | f2. g8 aes |
 
-	%% part "B"
+		% part "B"
 		bes4. ees,8 ees4 ees | g f2 g8 aes | \tuplet 3/2 { bes4 g aes } \tuplet 3/2 { bes g aes } | bes2. aes8 bes |
 		c4. f,8 f4 f | aes g2 aes8 bes | \tuplet 3/2 { c4 aes bes } \tuplet 3/2 { c aes c } | bes1 |
 
-	%% part "A"
+		% part "A"
 		bes,4 ees aes g | ees1 | bes4 ees aes g | ees f2. |
 		bes,4 ees c' bes | aes2. g4 | f1~ | f2. g8 aes |
 
-	%% part "C"
+		% part "C"
 		bes4. ees,8 ees4 ees | d' c2 c,4 | c' bes2 c4 | aes2. f4 |
 		bes, ees aes g | ees2 f |
 	} \alternative {
@@ -33189,31 +33189,31 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	When I Fall In Love
 	it will be for -- ev -- er,
 	or I'll nev -- er
 	fall in love. __
 
-%% part "B"
+	% part "B"
 	in a rest -- less world like this is,
 	love is end -- ed be -- fore it's be -- gun,
 	and too man -- y moon -- light kiss -- es
 	seem to cool in the warmth of the sun.
 
-%% part "A"
+	% part "A"
 	When I give my heart
 	it will be com -- plete -- ly
 	or I'll nev -- er
 	give my heart. __
 
-%% part "C"
+	% part "C"
 	And the mo -- ment I can feel that
 	you feel that way too,
 	is When I Fall In
 	Love with you. __
 
-%% part "Volta"
+	% part "Volta"
 	you. __
 }
 
@@ -33226,7 +33226,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "Copyright © 1952 by Victor Young Publications, Inc. Copyright Renewed, Assigned to Chappell & Co., Inc. and Intersong -USA,Inc." }
