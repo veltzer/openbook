@@ -15,6 +15,7 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: ${{ matrix.python-version }}
+        cache: "pip"
     - name: bootstrap-pip
       run: python -m pip install --upgrade pip
     - name: bootstrap
