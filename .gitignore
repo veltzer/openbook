@@ -5,13 +5,13 @@
 /target/
 /out/
 *.out
-/.mypy_cache
+/.mypy_cache/
 
 # folders to git ignore
 /*.gi
 
 # gems
-/gems
+/gems/
 
 # hive
 /derby.log
