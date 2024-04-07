@@ -1,0 +1,12 @@
+# THIS IS AN AUTO-GENERATED FILE. DO NOT EDIT!
+pytconf
+python-dateutil
+tqdm
+PyMySQL
+Mako
+requests
+gitpython
+pymakehelper
+pydmt
+pyclassifiers
+pylint
