@@ -89,7 +89,7 @@ coverage.xml
 /hs_err_pid*
 
 # node modules
-/node_modules/
+node_modules/
 
 # ppt, pdf
 /doc/odp/*.pdf
