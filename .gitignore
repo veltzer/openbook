@@ -121,5 +121,10 @@ node_modules/
 # DS_Store
 .DS_Store
 
-/.gradle/
+# Java stuff
+.gradle/
+target/
+build/
+
+# Jupyter notebooks
 .ipynb_checkpoints/
