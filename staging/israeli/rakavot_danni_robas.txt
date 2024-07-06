@@ -3,33 +3,33 @@ key: cis:m
 verse:
 \repeat volta 2 {
 	a1 | e | fis2 fis:m | cis1:m | \myEndLine
-	ees2 aes:m7 | d a | gis1:sus4 | gis:7 | \myEndLine
+	ees2 aes:7 | d a | aes:4 | aes:7 | \myEndLine
 }
-a | gis:7 | cis1*2:m | \myEndLine
+fis:m | aes:7 | cis1*2:m | \myEndLine
 
 \verse
 
 chorus:
 cis1*2:m | fis:m | \myEndLine
-b:7 | e:1 | gis:7 | \myEndLine
+b:7 | e:1 | aes:7 | \myEndLine
 
 cis1*2:m | fis:m | \myEndLine
-gis1:7 | a | a2..:7 gis8:7~ | gis1:7 | \myEndLine
+aes1:7 | fis:m | a2..:7 aes8:7~ | aes:7 | \myEndLine
 
 cis1*2:m | fis:m | \myEndLine
-gis:7 | cis1*4:m | \myEndLine
+aes:7 | cis1*4:m | \myEndLine
 
 \verse
 
 pivot chorus: like the chorus but the last part does pivot to d:m
 cis1*2:m | fis:m | \myEndLine
-b:7 | e:1 | gis:7 | \myEndLine
+b:7 | e:1 | aes:7 | \myEndLine
 
 cis1*2:m | fis:m | \myEndLine
-gis1:7 | a | a2..:7 gis8:7~ | gis1:7 | \myEndLine
+aes1:7 | fis:m | a2..:7 aes8:7~ | aes1:7 | \myEndLine
 
 cis1*2:m | fis:m | \myEndLine
-gis:7 | cis1:m | a:7 | \myEndLine (line descending: cis, c, b, bes, a)
+aes:7 | cis1:m | a:7 | \myEndLine (line descending: cis, c, b, bes, a)
 
 final chorus and ending:
 d1*2:m | g:m | \myEndLine
@@ -41,3 +41,5 @@ a1:7 | bes | bes2..:7 a8:7~ | a1:7 | \myEndLine
 d1*2:m | g:m | \myEndLine
 a:7 | d1:m | d:m/c | \myEndLine
 e/b | a:7 | d2:m a:7 | d:m | \myEndLine
+
+https://www.tab4u.com/tabs/songs/68267_%D7%93%D7%A0%D7%99_%D7%A8%D7%95%D7%91%D7%A1_-_%D7%A8%D7%9B%D7%91%D7%95%D7%AA_68_80_88.html?#song
