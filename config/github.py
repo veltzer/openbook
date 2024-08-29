@@ -1,3 +1,3 @@
 workflows_platforms = [
-    ("ubuntu-22.04", "3.11"),
+    ("ubuntu-24.04", "3.12"),
 ]
