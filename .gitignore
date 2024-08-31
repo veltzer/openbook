@@ -128,3 +128,7 @@ build/
 
 # Jupyter notebooks
 .ipynb_checkpoints/
+
+# c#
+**/obj/
+**/bin/
