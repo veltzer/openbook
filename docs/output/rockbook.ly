@@ -11,7 +11,7 @@
 % this version tag will keep me compiling only on this version of lilypond.
 %=====================================================================
 
-\version "2.22.2"
+\version "2.24.3"
 
 % lets define a variable to hold the formatted build date (man 3 strftime):
 %date=#(strftime "%T %d-%m-%Y" (localtime (current-time)))
@@ -31,54 +31,54 @@
 %}
 
 \paper {
-%% reduce spaces between systems and the bottom (taken from the lilypond
-%% documentation and found the relevant variable)
-%% the result of this is that I can fit 8 single staffs in one page
-%% which is ideal for Jazz (think 32 bar divided into 8 lines of 4 bars each...).
-%% I should really only apply this thing for Jazz tunes but that is a TODO item.
-%% default is 4\mm - 3 already causes 8 staffs to take 2 pages
+	% reduce spaces between systems and the bottom (taken from the lilypond
+	% documentation and found the relevant variable)
+	% the result of this is that I can fit 8 single staffs in one page
+	% which is ideal for Jazz (think 32 bar divided into 8 lines of 4 bars each...).
+	% I should really only apply this thing for Jazz tunes but that is a TODO item.
+	% default is 4\mm - 3 already causes 8 staffs to take 2 pages
 	between-system-padding = 2\mm
-%% default is 20\mm
-%% between-system-space = 16\mm
-%% ragged-last-bottom = ##f
-%% ragged-bottom = ##f
+	% default is 20\mm
+	% between-system-space = 16\mm
+	% ragged-last-bottom = ##f
+	% ragged-bottom = ##f
 
-%% make lilypond increase the distance of the footer from the bottom of the page
-%% it seems that if you don't do something like this you're going to have
-%% a real problem seeing the footer in postscript printing....
-%%bottom-margin = 2.5\cm
+	% make lilypond increase the distance of the footer from the bottom of the page
+	% it seems that if you don't do something like this you're going to have
+	% a real problem seeing the footer in postscript printing....
+	%bottom-margin = 2.5\cm
 
-%% from /usr/share/lilypond/2.12.3/ly/titling-init.ly
-%% to stop lilypond from printing footers...
+	% from /usr/share/lilypond/2.12.3/ly/titling-init.ly
+	% to stop lilypond from printing footers...
 	oddFooterMarkup = \markup {}
 
-%% prevent lilypond from printing the headers...
+	% prevent lilypond from printing the headers...
 
 	scoreTitleMarkup = \markup {}
 	bookTitleMarkup = \markup {}
 }
 \layout {
-%% don't have the first line indented
+	% don't have the first line indented
 	indent = 0.0 \cm
-%% don't know what this is (taken from Laurent Martelli...)
-%%textheight = 1.5\cm
+	% don't know what this is (taken from Laurent Martelli...)
+	%textheight = 1.5\cm
 
 	\context {
 		\Score
-	%% change the size of the text fonts
-	%%\override LyricText #'font-family = #'typewriter
+		% change the size of the text fonts
+		%\override LyricText #'font-family = #'typewriter
 		\override LyricText #'font-size = #'-2
 
-	%% set the style of the chords to Jazz - I don't see this making any effect
+		% set the style of the chords to Jazz - I don't see this making any effect
 		\override ChordName #'style = #'jazz
-	%%\override ChordName #'word-space = #2
+		%\override ChordName #'word-space = #2
 
-	%% set the chord size and font
-	%%\override ChordName #'font-series = #'bold
-	%%\override ChordName #'font-family = #'roman
-	%%\override ChordName #'font-size = #-1
+		% set the chord size and font
+		%\override ChordName #'font-series = #'bold
+		%\override ChordName #'font-family = #'roman
+		%\override ChordName #'font-size = #-1
 
-	%% don't show bar numbers (for jazz it makes it too cluttery)
+		% don't show bar numbers (for jazz it makes it too cluttery)
 		\remove "Bar_number_engraver"
 	}
 }
@@ -103,7 +103,7 @@ myChordDefinitions={
 	<c ees ges bes>-\markup { "m" \super { "7 " \flat "5" } }
 	<c ees ges beses>-\markup { "dim" \super { "7" } }
 	<c ees ges>-\markup { "dim" }
-%%<c e g b>-\markup { "maj7" }
+	%<c e g b>-\markup { "maj7" }
 	<c e gis bes d'>-\markup { \super { "9 " \sharp "5" } }
 	<c e g bes d' a'>-\markup \super {13}
 	<c e g bes d' fis'>-\markup { \super { "9 " \sharp "11" } }
@@ -189,9 +189,9 @@ startPart={}
 % endPart=\bar "||"
 endPart={}
 startChords={
-%% this causes chords that do not change to disappear...
+	% this causes chords that do not change to disappear...
 	\set chordChanges = ##t
-%% use my own chord exceptions
+	% use my own chord exceptions
 	\set chordNameExceptions = #myChordExceptions
 }
 endChords={}
@@ -202,7 +202,7 @@ endChords={}
 
 % book header
 %\book {
-%% this is the title page
+	% this is the title page
 	\bookpart {
 		\markup {
 			\column {
@@ -247,7 +247,7 @@ endChords={}
 				\fill-line {
 					\huge \bold \concat {
 						"Typesetting copyright: © 2011-"
-						2023
+						2024
 						" Mark Veltzer "
 						"<" \with-url #"mailto:mark.veltzer@gmail.com" mark.veltzer@gmail.com ">"
 					}
@@ -258,13 +258,13 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 177" }
-				\fill-line { \small "Git describe: 177-21-gb88e40d4" }
-				\fill-line { \small "Git commits: 1854" }
-				\fill-line { \small "Build date: 13:59:30 26-06-2023" }
+				\fill-line { \small "Git describe: 177-74-g01d073ff" }
+				\fill-line { \small "Git commits: 1907" }
+				\fill-line { \small "Build date: 02:42:01 07-09-2024" }
 				\fill-line { \small "Build user: mark" }
-				\fill-line { \small "Build host: cantor" }
-				\fill-line { \small "Build kernel: Linux 5.19.0-45-generic" }
-				\fill-line { \small "Lilypond version: 2.22.2" }
+				\fill-line { \small "Build host: newton" }
+				\fill-line { \small "Build kernel: Linux 6.8.0-41-generic" }
+				\fill-line { \small "Lilypond version: 2.24.3" }
 				\fill-line { \small "Number of tunes: 11" }
 				\null
 				\null
@@ -403,10 +403,10 @@ endChords={}
 	\time 4/4
 	\key c \major
 
-%% part "Intro"
+	% part "Intro"
 	e'1 | d | c | c | d | d | c | c2. b4 |
 
-%% part "Verse"
+	% part "Verse"
 	r2 g8 g g g~ | g4 f e8 e d e~ | e2 e8 e g f~ | f4 e c8 c d d~ |
 	d2 d8 c d c | e4 d c8 c a c~ | c4 c8 a c a c a | c4 a2 r4 |
 }
@@ -463,19 +463,19 @@ endChords={}
 	Do you really want to live forever?
 }
 >>
-%%\midi {
-%%	\context {
-%%		\Score
-%%		tempoWholesPerMinute = #(ly:make-moment 130/4)
-%%	}
-%%}
+	%\midi {
+	%	\context {
+	%		\Score
+	%		tempoWholesPerMinute = #(ly:make-moment 130/4)
+	%	}
+	%}
 	\layout {}
 }
 
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -708,7 +708,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -811,9 +811,9 @@ endChords={}
 		\endPart
 		\mark "Interlude"
 		\startPart
-	%% these chords are silent
+		% these chords are silent
 		a1*8:m7 |
-	%% these chords are even more silent
+		% these chords are even more silent
 		a2:m7 e4:m7 e:m7/g | a1:m7 |
 		\endPart
 		\endChords
@@ -839,16 +839,16 @@ endChords={}
 		\endPart
 		\mark "Interlude"
 		\startPart
-	%% these chords are silent
+		% these chords are silent
 		a1*8:m7 |
-	%% these chords are even more silent
+		% these chords are even more silent
 		a2:m7 e4:m7 e:m7/g | a1:m7 |
 		\endPart
 		\endChords
 	}
 
 	>>
-%%\midi {}
+	%\midi {}
 	\layout {}
 }
 
@@ -899,7 +899,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -1019,7 +1019,7 @@ endChords={}
 	}
 
 	>>
-%%\midi {}
+	%\midi {}
 	\layout {}
 }
 
@@ -1106,7 +1106,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -1284,7 +1284,7 @@ endChords={}
 	}
 
 	>>
-%%\midi {}
+	%\midi {}
 	\layout {}
 }
 
@@ -1380,7 +1380,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -1522,7 +1522,7 @@ endChords={}
 	}
 
 	>>
-%%\midi {}
+	%\midi {}
 	\layout {}
 }
 
@@ -1582,7 +1582,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -1701,7 +1701,7 @@ endChords={}
 	}
 
 	>>
-%%\midi {}
+	%\midi {}
 	\layout {}
 }
 
@@ -1778,7 +1778,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -1986,7 +1986,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -2110,7 +2110,7 @@ endChords={}
 	}
 
 	>>
-%%\midi {}
+	%\midi {}
 	\layout {}
 }
 
@@ -2183,7 +2183,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -2347,7 +2347,7 @@ endChords={}
 	}
 
 	>>
-%%\midi {}
+	%\midi {}
 	\layout {}
 }
 
@@ -2403,7 +2403,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
@@ -2566,7 +2566,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }

@@ -11,7 +11,7 @@
 % this version tag will keep me compiling only on this version of lilypond.
 %=====================================================================
 
-\version "2.22.2"
+\version "2.24.3"
 
 % lets define a variable to hold the formatted build date (man 3 strftime):
 %date=#(strftime "%T %d-%m-%Y" (localtime (current-time)))
@@ -31,54 +31,54 @@
 %}
 
 \paper {
-%% reduce spaces between systems and the bottom (taken from the lilypond
-%% documentation and found the relevant variable)
-%% the result of this is that I can fit 8 single staffs in one page
-%% which is ideal for Jazz (think 32 bar divided into 8 lines of 4 bars each...).
-%% I should really only apply this thing for Jazz tunes but that is a TODO item.
-%% default is 4\mm - 3 already causes 8 staffs to take 2 pages
+	% reduce spaces between systems and the bottom (taken from the lilypond
+	% documentation and found the relevant variable)
+	% the result of this is that I can fit 8 single staffs in one page
+	% which is ideal for Jazz (think 32 bar divided into 8 lines of 4 bars each...).
+	% I should really only apply this thing for Jazz tunes but that is a TODO item.
+	% default is 4\mm - 3 already causes 8 staffs to take 2 pages
 	between-system-padding = 2\mm
-%% default is 20\mm
-%% between-system-space = 16\mm
-%% ragged-last-bottom = ##f
-%% ragged-bottom = ##f
+	% default is 20\mm
+	% between-system-space = 16\mm
+	% ragged-last-bottom = ##f
+	% ragged-bottom = ##f
 
-%% make lilypond increase the distance of the footer from the bottom of the page
-%% it seems that if you don't do something like this you're going to have
-%% a real problem seeing the footer in postscript printing....
-%%bottom-margin = 2.5\cm
+	% make lilypond increase the distance of the footer from the bottom of the page
+	% it seems that if you don't do something like this you're going to have
+	% a real problem seeing the footer in postscript printing....
+	%bottom-margin = 2.5\cm
 
-%% from /usr/share/lilypond/2.12.3/ly/titling-init.ly
-%% to stop lilypond from printing footers...
+	% from /usr/share/lilypond/2.12.3/ly/titling-init.ly
+	% to stop lilypond from printing footers...
 	oddFooterMarkup = \markup {}
 
-%% prevent lilypond from printing the headers...
+	% prevent lilypond from printing the headers...
 
 	scoreTitleMarkup = \markup {}
 	bookTitleMarkup = \markup {}
 }
 \layout {
-%% don't have the first line indented
+	% don't have the first line indented
 	indent = 0.0 \cm
-%% don't know what this is (taken from Laurent Martelli...)
-%%textheight = 1.5\cm
+	% don't know what this is (taken from Laurent Martelli...)
+	%textheight = 1.5\cm
 
 	\context {
 		\Score
-	%% change the size of the text fonts
-	%%\override LyricText #'font-family = #'typewriter
+		% change the size of the text fonts
+		%\override LyricText #'font-family = #'typewriter
 		\override LyricText #'font-size = #'-2
 
-	%% set the style of the chords to Jazz - I don't see this making any effect
+		% set the style of the chords to Jazz - I don't see this making any effect
 		\override ChordName #'style = #'jazz
-	%%\override ChordName #'word-space = #2
+		%\override ChordName #'word-space = #2
 
-	%% set the chord size and font
-	%%\override ChordName #'font-series = #'bold
-	%%\override ChordName #'font-family = #'roman
-	%%\override ChordName #'font-size = #-1
+		% set the chord size and font
+		%\override ChordName #'font-series = #'bold
+		%\override ChordName #'font-family = #'roman
+		%\override ChordName #'font-size = #-1
 
-	%% don't show bar numbers (for jazz it makes it too cluttery)
+		% don't show bar numbers (for jazz it makes it too cluttery)
 		\remove "Bar_number_engraver"
 	}
 }
@@ -103,7 +103,7 @@ myChordDefinitions={
 	<c ees ges bes>-\markup { "m" \super { "7 " \flat "5" } }
 	<c ees ges beses>-\markup { "dim" \super { "7" } }
 	<c ees ges>-\markup { "dim" }
-%%<c e g b>-\markup { "maj7" }
+	%<c e g b>-\markup { "maj7" }
 	<c e gis bes d'>-\markup { \super { "9 " \sharp "5" } }
 	<c e g bes d' a'>-\markup \super {13}
 	<c e g bes d' fis'>-\markup { \super { "9 " \sharp "11" } }
@@ -189,9 +189,9 @@ startPart={}
 % endPart=\bar "||"
 endPart={}
 startChords={
-%% this causes chords that do not change to disappear...
+	% this causes chords that do not change to disappear...
 	\set chordChanges = ##t
-%% use my own chord exceptions
+	% use my own chord exceptions
 	\set chordNameExceptions = #myChordExceptions
 }
 endChords={}
@@ -202,7 +202,7 @@ endChords={}
 
 % book header
 %\book {
-%% this is the title page
+	% this is the title page
 	\bookpart {
 		\markup {
 			\column {
@@ -247,7 +247,7 @@ endChords={}
 				\fill-line {
 					\huge \bold \concat {
 						"Typesetting copyright: © 2011-"
-						2023
+						2024
 						" Mark Veltzer "
 						"<" \with-url #"mailto:mark.veltzer@gmail.com" mark.veltzer@gmail.com ">"
 					}
@@ -258,13 +258,13 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 177" }
-				\fill-line { \small "Git describe: 177-18-g15cc7044" }
-				\fill-line { \small "Git commits: 1851" }
-				\fill-line { \small "Build date: 14:55:04 09-05-2023" }
+				\fill-line { \small "Git describe: 177-74-g01d073ff" }
+				\fill-line { \small "Git commits: 1907" }
+				\fill-line { \small "Build date: 02:41:55 07-09-2024" }
 				\fill-line { \small "Build user: mark" }
-				\fill-line { \small "Build host: cantor" }
-				\fill-line { \small "Build kernel: Linux 5.19.0-1009-lowlatency" }
-				\fill-line { \small "Lilypond version: 2.22.2" }
+				\fill-line { \small "Build host: newton" }
+				\fill-line { \small "Build kernel: Linux 6.8.0-41-generic" }
+				\fill-line { \small "Lilypond version: 2.24.3" }
 				\fill-line { \small "Number of tunes: 9" }
 				\null
 				\null
@@ -363,11 +363,11 @@ endChords={}
 \score {
 	<<
 \new ChordNames="Chords"
-%% this adds a bar engraver which does not always come with chords
-%% I didn'f find a way to put this with the chords themselves...
+	% this adds a bar engraver which does not always come with chords
+	% I didn'f find a way to put this with the chords themselves...
 	\with {
-	%% for lilypond 2.12
-	%%\override BarLine #'bar-size = #4
+		% for lilypond 2.12
+		%\override BarLine #'bar-size = #4
 		\override BarLine #'bar-extent = #'(-2 . 2)
 		\consists "Bar_engraver"
 	}
@@ -458,7 +458,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- עיזרו לי למלא את שורת זכויות היוצרים הזו --" }
@@ -599,13 +599,13 @@ endChords={}
 	\time 4/4
 	\key a \major
 
-%% part "A"
+	% part "A"
 	e2 e | gis4 a8 gis~ gis4 a8 gis~ | gis4 fis8 e~ e4 fis8 g~ | g1 |
 	r2 g8 fis e f~ | f1 | r4. f8 g a b cis~ | cis1 |
 	r2. cis8 e~ | e4 e8 d~ d4 d8 c~ | c2. b8 d~ | d d d c~ c c c b~ |
 	b4 r r8 a b d~ | d2. a8 d~ | d d~ d cis~ cis4 b8 a~ | a1~ | a2 r |
 
-%% part "B"
+	% part "B"
 	c2 c | c4 c8 c~ c4 c8 c~ | c4 c8 c~ c4 c8 c~ | c2 r |
 	r d8 d d cis~ | cis2 r | r4 r8 a b b b a~ | a4 r r2 |
 	r4 r8 a b b b a~ | a4 r r2 | r a8 gis fis g~ | g2 r |
@@ -623,14 +623,14 @@ endChords={}
 
 \lyricmode {
 
-%% part "A"
+	% part "A"
 	איך זה ש -- כו -- כב __ א -- חד __ ל -- בד __ מ -- עז. __
 	איך הוא מ -- עז, __ ל -- מ -- ען ה -- שם. __
 	כו -- כב __ א -- חד __ ל -- בד. __
 	א -- ני __ לא ה -- יי -- __ תי מ -- עז. __
 	ו -- א -- ני, __ ב -- ע -- __ צם, __ לא __ ל -- בד. __ __
 
-%% part "B"
+	% part "B"
 	איך זה ש -- כו -- כב __ א -- חד __ ל -- בד __ מ -- עז. __
 	איך הוא מ -- עז, __ ל -- מ -- ען ה -- שם. __
 	ל -- מ -- ען ה -- שם. __
@@ -677,7 +677,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- עיזרו לי למלא את שורת זכויות היוצרים הזו --" }
@@ -811,9 +811,9 @@ endChords={}
 	}
 	\endPart
 
-%% commented in order to see the closing repeats
-%%\endSong
-%%\endChords
+	% commented in order to see the closing repeats
+	%\endSong
+	%\endChords
 }
 
 
@@ -835,10 +835,10 @@ endChords={}
 	\time 4/4
 	\key e \minor
 
-%% part "Intro"
+	% part "Intro"
 	b2. c4 | b2. a8 b16 c |
 
-%% part "Verse"
+	% part "Verse"
 	d8. c16 b8 c d8. c16 b8 c | d2.. e16 fis | g8. fis16 e8 e d8. b16 d8 e | b2.. b16 c |
 	d8. d16 d8 d d8. d16 e8 fis | d2.. e16 fis | g8. fis16 e8 e d4 \times 2/3 { d8 d d } | e1 |
 }
@@ -903,7 +903,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- עיזרו לי למלא את שורת זכויות היוצרים הזו --" }
@@ -1062,7 +1062,7 @@ endChords={}
 
 	\partial 4 f8 e |
 
-%% part "A"
+	% part "A"
 	\repeat volta 2 {
 		d4. d'8 c4 bes8 a | g2. f8 g | a4. c,8 f4 a8 g | d2. e8 f |
 		g4. f8 e4 d8 d' | bes2 a4 g | f4. f8 e4. e8 |
@@ -1071,7 +1071,7 @@ endChords={}
 		{ d2. cis8 d | }
 	}
 
-%% part "B"
+	% part "B"
 	\repeat volta 2 {
 		e4. a,8 d4. e8 | f4 f2 e8 f | g4. c,8 f4. g8 | a4 a2 bes8 c |
 	} \alternative {
@@ -1191,7 +1191,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- עיזרו לי למלא את שורת זכויות היוצרים הזו --" }
@@ -1348,7 +1348,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- עיזרו לי למלא את שורת זכויות היוצרים הזו --" }
@@ -1433,11 +1433,11 @@ endChords={}
 \score {
 	<<
 \new ChordNames="Chords"
-%% this adds a bar engraver which does not always come with chords
-%% I didn'f find a way to put this with the chords themselves...
+	% this adds a bar engraver which does not always come with chords
+	% I didn'f find a way to put this with the chords themselves...
 	\with {
-	%% for lilypond 2.12
-	%%\override BarLine #'bar-size = #4
+		% for lilypond 2.12
+		%\override BarLine #'bar-size = #4
 		\override BarLine #'bar-extent = #'(-2 . 2)
 		\consists "Bar_engraver"
 	}
@@ -1561,7 +1561,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- עיזרו לי למלא את שורת זכויות היוצרים הזו --" }
@@ -1701,10 +1701,10 @@ endChords={}
 	\time 4/4
 	\key f \minor
 
-%% part "Intro"
+	% part "Intro"
 	f8 aes bes b c f, c' b | bes f ees' d f, d' des f, | des' c f, c' b f bes aes | c, e g bes c4 c' |
 
-%% part "A"
+	% part "A"
 	f,,8 aes8~ aes2. | f'4 des8 bes4 g4 c8~ | c4 aes8 f4 c4 bes'8~ | bes4 g8 e4 c4. |
 	f8 aes8~ aes2. | f'4 des8 bes4 g4 c8~ | c4 aes8 f4 c4 bes'8~ | bes4 g8 e4 c4. |
 	g'4 f8 f4 c g'8~ | g f4 f2~ f8 | g4 f8 f4 c g'8~ | g f4 f c4. |
@@ -1724,13 +1724,13 @@ endChords={}
 
 \lyricmode {
 
-%% part "Intro"
+	% part "Intro"
 	_ _ _ _ _ _ _ _
 	_ _ _ _ _ _ _ _
 	_ _ _ _ _ _ _ _
 	_ _ _ _ _ _
 
-%% part "A"
+	% part "A"
 	נ -- ח- __ לא ש -- כ -- חנו איך __ ב -- ג -- שם ו -- __ ב -- ס -- ער
 	נ -- ח- __ ל -- תי -- בה א -- ספ -- __ ת את ח -- יות __ ה -- י -- ער.
 	שת -- יים, שת -- יים מ -- __ כל מין __
@@ -1806,7 +1806,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- עיזרו לי למלא את שורת זכויות היוצרים הזו --" }
@@ -1964,11 +1964,11 @@ endChords={}
 
 	\partial 4 a'8 e |
 
-%% part "Intro"
+	% part "Intro"
 	c'4 a4. e8 | f2 g8 a | b4 a4. g8 | f8 e4. f8 g |
 	a2 f8 e | ees2 b8 a | gis4 a b |
 
-%% part "A"
+	% part "A"
 	c'2 b8 a | g2 f8 d | e2 d4 | c8 b a2 |
 	c'8 b a4 g8 f | e2 d8 e | f4 e ees | e2. |
 	d4 e f | g a4. f8 | e4 e d | c b2 |
@@ -1976,7 +1976,7 @@ endChords={}
 	d4 e f | g a4. f8 | e4 e d | c b2 |
 	a8 b c4 d8 e | g4 f d | e c b | a2. ~ | a2 a'8 e |
 
-%% part "B"
+	% part "B"
 	c'2 a8 e | f2 g8 a | b4 a g | f e f8 g |
 	a2 f8 e | ees2 b8 a | gis4 a b | c2 a'8 e |
 	c'2 a8 e | f2 g8 a | b4 a g | f e f8 g |
@@ -2100,7 +2100,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- עיזרו לי למלא את שורת זכויות היוצרים הזו --" }
@@ -2185,11 +2185,11 @@ endChords={}
 \score {
 	<<
 \new ChordNames="Chords"
-%% this adds a bar engraver which does not always come with chords
-%% I didn'f find a way to put this with the chords themselves...
+	% this adds a bar engraver which does not always come with chords
+	% I didn'f find a way to put this with the chords themselves...
 	\with {
-	%% for lilypond 2.12
-	%%\override BarLine #'bar-size = #4
+		% for lilypond 2.12
+		%\override BarLine #'bar-size = #4
 		\override BarLine #'bar-extent = #'(-2 . 2)
 		\consists "Bar_engraver"
 	}
@@ -2306,7 +2306,7 @@ endChords={}
 
 \noPageBreak
 \markup \column {
-%% just a little space
+	% just a little space
 	\null
 	\fill-line {
 		\smaller \smaller { "-- עיזרו לי למלא את שורת זכויות היוצרים הזו --" }
