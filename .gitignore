@@ -132,3 +132,6 @@ build/
 # c#
 **/obj/
 **/bin/
+
+# vscode
+.vscode/
