@@ -1,5 +1,5 @@
 ##############
-# PARAMETERS #
+# parameters #
 ##############
 # should we show commands executed ?
 DO_MKDBG?=0
