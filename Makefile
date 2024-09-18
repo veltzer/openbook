@@ -85,11 +85,6 @@ ifeq ($(DO_INCDEPS),1)
 	MAKO_WRAPPER_DEP:=$(MAKO_WRAPPER_DEP) $(COMMON)
 endif # DO_INCDEPS
 
-# dependency on the makefile itself
-ifeq ($(DO_ALLDEP),1)
-.EXTRA_PREREQS+=$(foreach mk, ${MAKEFILE_LIST},$(abspath ${mk}))
-endif # DO_ALLDEP
-
 ifeq ($(DO_MKDBG),1)
 Q=
 # we are not silent in this branch
@@ -381,3 +376,10 @@ $(REAL_BOOKS_STAMP):
 	$(Q)wget -qO- https://www.dropbox.com/s/birwhwe6g7ojqnh/real_books_archive.gi.tar.gz?dl=1 | tar xzvf -
 	$(Q)mkdir -p $(dir $@)
 	$(Q)touch $@
+
+##########
+# alldep #
+##########
+ifeq ($(DO_ALLDEP),1)
+.EXTRA_PREREQS+=$(foreach mk, ${MAKEFILE_LIST},$(abspath ${mk}))
+endif # DO_ALLDEP
