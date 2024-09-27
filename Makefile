@@ -361,7 +361,7 @@ all_tunes: $(FILES_STAMP)
 $(HTMLCHECK): $(SOURCES_HTML)
 	$(info doing [$@])
 	$(Q)tidy -errors -q -utf8 $(SOURCES_HTML)
-	$(Q)node_modules/htmlhint/bin/htmlhint $(SOURCES_HTML) > /dev/null
+	$(Q)pymakehelper only_print_on_error node_modules/.bin/htmlhint $(SOURCES_HTML)
 	$(Q)mkdir -p $(dir $@)
 	$(Q)touch $@
 out/lint.stamp: $(SCRIPTS)
