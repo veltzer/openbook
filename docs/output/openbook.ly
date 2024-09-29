@@ -258,14 +258,14 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 177" }
-				\fill-line { \small "Git describe: 177-80-g4bce560b" }
-				\fill-line { \small "Git commits: 1913" }
-				\fill-line { \small "Build date: 00:20:38 28-09-2024" }
+				\fill-line { \small "Git describe: 177-83-g803419d9" }
+				\fill-line { \small "Git commits: 1916" }
+				\fill-line { \small "Build date: 22:49:57 29-09-2024" }
 				\fill-line { \small "Build user: mark" }
 				\fill-line { \small "Build host: newton" }
 				\fill-line { \small "Build kernel: Linux 6.8.0-45-lowlatency" }
 				\fill-line { \small "Lilypond version: 2.24.3" }
-				\fill-line { \small "Number of tunes: 154" }
+				\fill-line { \small "Number of tunes: 155" }
 				\null
 				\null
 				\null
@@ -25615,6 +25615,184 @@ endChords={}
 	}
 	\fill-line {
 		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+	}
+}
+
+
+
+}
+
+
+% include anything the user wants before the bookpart starts
+
+
+
+
+
+
+\bookpart {
+
+% this causes the variables to be defined...
+
+
+
+
+
+
+
+
+
+
+
+% now play with the variables that depend on language
+
+
+
+% calculate the tag line
+
+
+% calculate the typesetby
+
+
+
+
+\tocItem \markup "Robbin's nest / Sir Charles Thompson, Jean-Baptiste \"Illinois\" Jacquet"
+
+
+
+
+
+% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
+\markup {
+	\column {
+		\override #'(baseline-skip . 3.5)
+		\column {
+			\huge \larger \bold
+			\fill-line { \larger "Robbin's nest" }
+			\fill-line {
+				""
+				"Music by Sir Charles Thompson, Jean-Baptiste \"Illinois\" Jacquet"
+			}
+			\fill-line {
+				"Medium Swing"
+				""
+			}
+		}
+	}
+}
+\noPageBreak
+
+
+% include the preparatory stuff, if there is any
+
+% calculate the vars
+
+
+
+% score for printing
+\score {
+	<<
+\new ChordNames="Chords"
+	\with {
+		\remove "Bar_engraver"
+	}
+% # transpose with 'inline' is true!
+	\transpose c c {
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+        \partial 2 s2 |
+
+	\myMark "A"
+	\startPart
+	\repeat volta 2 {
+                c1*2:6 | aes1*2:7 | e2:m7 ees:m7.5- | d:m7 g:7.9- |
+                \alternative {
+                  { c:6 ees:m7.5- | d:m7 g:7 | \myEndLineVoltaNotLast }
+                  { c1*2:6 | \myEndLineVoltaLast }
+                }
+         }
+	\endPart
+
+	\myMark "B"
+	\startPart
+	e1*2:7.9- | a1*2:7.9- |
+        d1*2:7.9- | g2:7.5+ g:7 | d:m7 | g:7 | \myEndLine
+	\endPart
+
+	\myMark "A"
+	\startPart
+        c1:6 | c:6 | aes:7 | aes:7 | e2:m7 ees:m7.5- | d:m7 g:7.9- | c1:6 | d2:m7 g:7 |
+	\endPart
+
+	\endSong
+	\endChords
+}
+
+}
+% this thing will only engrave voltas. This is required to put the volta under the chords.
+% No great harm will happen if you don't put it, only the voltas will be above the chords.
+%\new Staff \with {
+%	\consists "Volta_engraver"
+%}
+\new Staff="Melody" {
+\new Voice="Voice"
+% # transpose with 'inline' is true!
+	\transpose c c { \relative c'
+	
+
+
+
+{
+	\tempo 4 = 120
+	\time 4/4
+	\key c \major
+
+	\partial 2 s8 dis \tuplet 3/2 { e g b } |
+
+	% part "A"
+	\repeat volta 2 {
+                d c g e d' c4.~ | c2 r8 b, \tuplet 3/2 { c e g } |
+                bes aes ees c bes' aes4.~ | aes2. r8 g~ |
+                g4 e8 g ges ees c f~ | f4 d8 f e8. e16 e8 c~ |
+                \alternative {
+                  { c2~ c~ | c r8 dis \tuplet 3/2 { e g b } | }
+                  { c,2.~ c4 | r2. e4 }
+                }
+	}
+
+	% part "B"
+        f8. e16 dis8. e16 b'2 | r2 r8 e, g a |
+        bes4. a8~ a2 | r2. c8. d16 |
+        ees8. d16 c8 d~ d2 | r2. c8. d16 |
+        ees4. d8~ d4 r4 | r2 r8 dis, \tuplet 3/2 { e g b } |
+
+	% part "A"
+        d c g e d' c4.~ | c2 r4 \tuplet 3/2 { c,8 e g } |
+        bes aes ees c bes' aes4.~ | aes2. r8 g~ |
+        g4 e8 g ges ees c f~ | f4 d8 f e8. g16 a8 c8~ |
+        c1~ | c2~ c4 r4 |
+}
+ }
+}
+	>>
+	\layout {
+	}
+}
+
+
+\noPageBreak
+\markup \column {
+	% just a little space
+	\null
+	\fill-line {
+		\smaller \smaller { "Copyright © 1947, 1948, 1951, 1952 (Renewed 1975, 1976, 1979, 1980) Atlantic Music Corp" }
+	}
+	\fill-line {
+		\smaller \smaller { "Typeset by Samuel Tardieu <sam@rfc1149.net>" }
 	}
 }
 
