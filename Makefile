@@ -34,9 +34,9 @@ DO_LINT:=1
 # which books should we do?
 NAMES:=openbook israeli drumming rockbook guitar_album
 
-#############
-# CONSTANTS #
-#############
+########
+# code #
+########
 # where is the web folder?
 DOCS:=docs
 # what is the output folder?
@@ -67,10 +67,7 @@ CONST_CUT:=1
 # arguments to git grep
 GITARGS:=--no-pager
 
-########
-# code #
-########
-ALL=
+ALL:=
 
 ifeq ($(DO_WRAPDEPS),0)
 	LILYPOND_WRAPPER_DEP:=
