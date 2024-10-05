@@ -20,7 +20,7 @@
 	attributes['piece']='Slowly'
 	attributes['copyright']='1932 Irving Berling (Renewed)'
 
-	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['typesetter']='Jordan Eldredge <jordan@jordaneldredge.com>'
 	attributes['completion']='5'
 	attributes['uuid']='1f41adf6-da81-11e3-a9b9-277d2c72c477'
 	attributes['structure']='ABAC'

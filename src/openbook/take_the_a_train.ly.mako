@@ -25,7 +25,7 @@
 	# this is from the fake book
 	attributes['copyrightextra']='International Copyright Secured Made in U.S.A. All Rights Reserved'
 
-	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['typesetter']='Jordan Eldredge <jordan@jordaneldredge.com>'
 	attributes['completion']='5'
 	attributes['uuid']='8e4bc138-da80-11e3-a96b-032e06c074f3'
 	attributes['structure']='AABA'

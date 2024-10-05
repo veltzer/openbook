@@ -14,7 +14,7 @@
 	attributes['composer']='Frank Losser, Hoagy Carmichael'
 	attributes['poet']='Frank Losser, Hoagy Carmichael'
 
-	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['typesetter']='Jordan Eldredge <jordan@jordaneldredge.com>'
 	attributes['completion']='5'
 	attributes['uuid']='2c3e3512-da7f-11e3-9149-3707f62022e6'
 	attributes['structure']='AABA'

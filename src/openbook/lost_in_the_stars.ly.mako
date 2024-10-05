@@ -18,7 +18,7 @@
 	attributes['copyright']='1946 Chappell & Co., Inc'
 	attributes['copyrightextra']='Renewed Chappell & Co., Inc. & TRO-Hampshire House'
 
-	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['typesetter']='Jordan Eldredge <jordan@jordaneldredge.com>'
 	attributes['completion']='5'
 	attributes['uuid']='a785ec42-da7f-11e3-b5cb-675e7f5a49ce'
 %>

@@ -22,7 +22,7 @@
 	# this is from the fake book
 	attributes['copyright']='1958 Tempo Music, Inc.'
 
-	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['typesetter']='Jordan Eldredge <jordan@jordaneldredge.com>'
 	attributes['completion']='5'
 	attributes['uuid']='42beeace-da80-11e3-933c-cbd0bd4c5a97'
 	attributes['structure']='AABA'

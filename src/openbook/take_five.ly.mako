@@ -14,7 +14,7 @@
 	attributes['piece']='Moderately'
 	attributes['copyright']='1960 (Renewed) Desmond Music Company (U.S.A.) and Derry Music Company (Canada)'
 
-	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['typesetter']='Jordan Eldredge <jordan@jordaneldredge.com>'
 	attributes['completion']='5'
 	attributes['uuid']='86e17438-da80-11e3-9f6f-832caca8efee'
 	attributes['structure']='ABA'

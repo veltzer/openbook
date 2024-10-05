@@ -735,7 +735,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -1618,7 +1618,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1944 by MCA Music Publishing, A division of MCA Inc, New York, NY" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -1857,7 +1857,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1951, Bourne Co. Copyright Renewed." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -3352,7 +3352,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -3561,7 +3561,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -6219,7 +6219,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -7932,7 +7932,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1927 T.B. Hama Company, Copyright Renewed" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -8856,7 +8856,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1934 (Renewed 1961) Famous Music Corporation" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -9451,7 +9451,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1953, 1955 by Saunders Publications, Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -10921,7 +10921,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1973 Herrison Music Corp. and Robbins Music" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <jordaneldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -13405,7 +13405,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1931 (Renewed 1958) Whiting Publishing and EMI Feist Catalog Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -14023,7 +14023,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -14476,7 +14476,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1929 Santly Bros., Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -14676,7 +14676,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1932 Irving Berling (Renewed)" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -15337,7 +15337,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -16507,7 +16507,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1935 by Gershwin Publishing Corporation" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -16686,7 +16686,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1954 General Music Publishing Co., Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -17339,7 +17339,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1938 Williamson Music Co. Copyright Renewed." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -17756,7 +17756,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1939 MCA Music Publsihing, A Division of MCA inc,." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -18179,7 +18179,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1944 Alamo Music, Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -18387,7 +18387,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1925 Leo Feist, INC." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -19733,7 +19733,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1944 Bourne Co. and Dorsey Bros. Music, Inc. Division of Music Sales Corporation" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -19938,7 +19938,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1946 Chappell & Co., Inc" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -20172,7 +20172,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1930 (Renewed) Warner Bros. Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -22844,7 +22844,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1937 Gershwin Publishing Corp." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -23438,7 +23438,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1927 T.B. Harms Company. Copyright Renewed." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -25008,7 +25008,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1998 Hal Leonard Corporation" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -25200,7 +25200,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -25614,7 +25614,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1935 The Peter Maurice Music Co. Ltd., London, England" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -26256,7 +26256,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1958 Tempo Music, Inc." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -27938,7 +27938,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1933 MILLIS MUSIC, INC." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -28111,7 +28111,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1940 by Edward B. Marks Music Company. Copyright Renewed." }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -28709,7 +28709,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1960 (Renewed) Desmond Music Company (U.S.A.) and Derry Music Company (Canada)" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -28934,7 +28934,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1941 and 1943 by Tempo Music, Inc. Copyright Renewed 1969" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -30106,7 +30106,7 @@ endChords={}
 		\smaller \smaller { "-- help me fill it out this copyright notice --" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 
@@ -30313,7 +30313,7 @@ endChords={}
 		\smaller \smaller { "Copyright © 1937, 1940 Famous Music Corporation" }
 	}
 	\fill-line {
-		\smaller \smaller { "Typeset by Jordan Eldredge <JordanEldredge@gmail.com>" }
+		\smaller \smaller { "Typeset by Jordan Eldredge <jordan@jordaneldredge.com>" }
 	}
 }
 

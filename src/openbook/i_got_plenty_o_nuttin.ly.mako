@@ -25,7 +25,7 @@
 	# from the fake book
 	attributes['copyrightextra']='Copyright Renewed, Assigned to Chappell & Co., Inc.'
 
-	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['typesetter']='Jordan Eldredge <jordan@jordaneldredge.com>'
 	attributes['completion']='5'
 	attributes['uuid']='51444eaa-da7f-11e3-a1f7-4b82298467da'
 	attributes['structure']='AABA'

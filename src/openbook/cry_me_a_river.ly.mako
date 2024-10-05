@@ -22,7 +22,7 @@
 	# this is from the fake book
 	attributes['copyrightextra']='Copyright renewed, assigned to Arthur Hamilton and Chappell & Co., Inc.'
 
-	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['typesetter']='Jordan Eldredge <jordan@jordaneldredge.com>'
 	attributes['completion']='5'
 	attributes['uuid']='d7e89780-da80-11e3-b56b-2bd125289f76'
 %>

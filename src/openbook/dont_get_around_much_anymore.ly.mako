@@ -16,7 +16,7 @@
 	attributes['piece']='Medium Swing'
 	attributes['copyright']='1973 Herrison Music Corp. and Robbins Music'
 
-	attributes['typesetter']='Jordan Eldredge <jordaneldredge@gmail.com>'
+	attributes['typesetter']='Jordan Eldredge <jordan@jordaneldredge.com>'
 	attributes['completion']='5'
 	attributes['uuid']='09a63a8e-da81-11e3-b649-339a89e65802'
 	attributes['structure']='AABA'

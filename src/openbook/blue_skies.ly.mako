@@ -14,7 +14,7 @@
 	attributes['composer']='Irving Berlin'
 	attributes['poet']='Irving Berlin'
 
-	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['typesetter']='Jordan Eldredge <jordan@jordaneldredge.com>'
 	attributes['completion']='5'
 	attributes['uuid']='fe14b29a-da80-11e3-a178-07c25bb937a6'
 	attributes['structure']='AABA'

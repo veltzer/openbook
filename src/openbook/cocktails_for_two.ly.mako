@@ -21,7 +21,7 @@
 	# this is from the fake book
 	attributes['copyright']='1934 (Renewed 1961) Famous Music Corporation'
 
-	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['typesetter']='Jordan Eldredge <jordan@jordaneldredge.com>'
 	attributes['completion']='5'
 	attributes['uuid']='dd76c35c-da80-11e3-ac15-97e8d2a823ca'
 %>
