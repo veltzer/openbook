@@ -141,7 +141,7 @@
 
 	%% part "A"
 	Girls in white dress -- es with blue sat -- in sash -- es,
-	snow -- flakes that stay on my node and eye -- lash -- es,
+	snow -- flakes that stay on my nose and eye -- lash -- es,
 	sil -- ver white win -- ters that melt in to spring.
 	These are a few of My Fa -- vor -- ite Things.
 
