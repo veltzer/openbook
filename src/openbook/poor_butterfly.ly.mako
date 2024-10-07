@@ -19,7 +19,7 @@
 	attributes['piece']='Moderately Slow'
 	attributes['copyright']='1998 Hal Leonard Corporation'
 
-	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['typesetter']='Jordan Eldredge <jordan@jordaneldredge.com>'
 	attributes['completion']='5'
 	attributes['uuid']='2db00c66-da81-11e3-9d15-47dd58c4ba8d'
 	attributes['structure']='ABAC'

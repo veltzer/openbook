@@ -21,7 +21,7 @@
 	# this is from the fake book
 	attributes['copyright']='1940 by Edward B. Marks Music Company. Copyright Renewed.'
 
-	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['typesetter']='Jordan Eldredge <jordan@jordaneldredge.com>'
 	attributes['completion']='5'
 	attributes['uuid']='68679a0a-da80-11e3-8208-4fcd89557297'
 	attributes['structure']='A'

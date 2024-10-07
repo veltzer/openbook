@@ -15,7 +15,7 @@
 	attributes['poet']='Irving Gordon and Irving Mills'
 	attributes['piece']='Slowly'
 
-	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['typesetter']='Jordan Eldredge <jordan@jordaneldredge.com>'
 	attributes['completion']='5'
 	attributes['uuid']='1a21cdfc-da80-11e3-8e64-13828462b6b5'
 %>

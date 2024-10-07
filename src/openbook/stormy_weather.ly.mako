@@ -26,7 +26,7 @@
 	# this is from the fake book
 	attributes['copyrightextra']='Renewed 1961 ARKO MUSIC CORP. This Arrangement 1987 ARKO MUSIC CORP. International Copyright Secured. All Rights Reserved.'
 
-	attributes['typesetter']='Jordan Eldredge <JordanEldredge@gmail.com>'
+	attributes['typesetter']='Jordan Eldredge <jordan@jordaneldredge.com>'
 	attributes['completion']='5'
 	attributes['uuid']='6204de70-da80-11e3-95e9-fbc293b14fcd'
 	attributes['structure']='AABA'
