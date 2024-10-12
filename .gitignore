@@ -135,3 +135,7 @@ build/
 
 # vscode
 .vscode/
+
+# qemu
+*.qcow2
+*.iso
