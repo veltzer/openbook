@@ -31,28 +31,31 @@
 	\startChords
 	\startSong
 
-        \partial 2 s2 |
+	\partial 2 s2 |
 
 	\myMark "A"
 	\startPart
 	\repeat volta 2 {
-                c1*2:6 | aes1*2:7 | e2:m7 ees:m7.5- | d:m7 g:7.9- |
-                \alternative {
-                  { c:6 ees:m7.5- | d:m7 g:7 | \myEndLineVoltaNotLast }
-                  { c1*2:6 | \myEndLineVoltaLast }
-                }
-         }
+		c1*2:6 | aes1*2:7 | e2:m7 ees:m7.5- | d:m7 g:7.9- |
+	} \alternative {
+		{
+			c:6 ees:m7.5- | d:m7 g:7 | \myEndLineVoltaNotLast
+		}
+		{
+			c1*2:6 | \myEndLineVoltaLast
+		}
+	}
 	\endPart
 
 	\myMark "B"
 	\startPart
 	e1*2:7.9- | a1*2:7.9- |
-        d1*2:7.9- | g2:7.5+ g:7 | d:m7 | g:7 | \myEndLine
+	d1*2:7.9- | g2:7.5+ g:7 | d:m7 | g:7 | \myEndLine
 	\endPart
 
 	\myMark "A"
 	\startPart
-        c1:6 | c:6 | aes:7 | aes:7 | e2:m7 ees:m7.5- | d:m7 g:7.9- | c1:6 | d2:m7 g:7 |
+	c1:6 | c:6 | aes:7 | aes:7 | e2:m7 ees:m7.5- | d:m7 g:7.9- | c1:6 | d2:m7 g:7 |
 	\endPart
 
 	\endSong
@@ -70,25 +73,28 @@
 
 	%% part "A"
 	\repeat volta 2 {
-                d c g e d' c4.~ | c2 r8 b, \tuplet 3/2 { c e g } |
-                bes aes ees c bes' aes4.~ | aes2. r8 g~ |
-                g4 e8 g ges ees c f~ | f4 d8 f e8. e16 e8 c~ |
-                \alternative {
-                  { c2~ c~ | c r8 dis \tuplet 3/2 { e g b } | }
-                  { c,2.~ c4 | r2. e4 }
-                }
+		d c g e d' c4.~ | c2 r8 b, \tuplet 3/2 { c e g } |
+		bes aes ees c bes' aes4.~ | aes2. r8 g~ |
+		g4 e8 g ges ees c f~ | f4 d8 f e8. e16 e8 c~ |
+	} \alternative {
+		{
+			c2~ c~ | c r8 dis \tuplet 3/2 { e g b } |
+		}
+		{
+			c,2.~ c4 | r2. e4
+		}
 	}
 
 	%% part "B"
-        f8. e16 dis8. e16 b'2 | r2 r8 e, g a |
-        bes4. a8~ a2 | r2. c8. d16 |
-        ees8. d16 c8 d~ d2 | r2. c8. d16 |
-        ees4. d8~ d4 r4 | r2 r8 dis, \tuplet 3/2 { e g b } |
+	f8. e16 dis8. e16 b'2 | r2 r8 e, g a |
+	bes4. a8~ a2 | r2. c8. d16 |
+	ees8. d16 c8 d~ d2 | r2. c8. d16 |
+	ees4. d8~ d4 r4 | r2 r8 dis, \tuplet 3/2 { e g b } |
 
 	%% part "A"
-        d c g e d' c4.~ | c2 r4 \tuplet 3/2 { c,8 e g } |
-        bes aes ees c bes' aes4.~ | aes2. r8 g~ |
-        g4 e8 g ges ees c f~ | f4 d8 f e8. g16 a8 c8~ |
-        c1~ | c2~ c4 r4 |
+	d c g e d' c4.~ | c2 r4 \tuplet 3/2 { c,8 e g } |
+	bes aes ees c bes' aes4.~ | aes2. r8 g~ |
+	g4 e8 g ges ees c f~ | f4 d8 f e8. g16 a8 c8~ |
+	c1~ | c2~ c4 r4 |
 }
 % endif

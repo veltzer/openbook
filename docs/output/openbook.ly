@@ -11,7 +11,7 @@
 % this version tag will keep me compiling only on this version of lilypond.
 %=====================================================================
 
-\version "2.24.3"
+\version "2.24.4"
 
 % lets define a variable to hold the formatted build date (man 3 strftime):
 %date=#(strftime "%T %d-%m-%Y" (localtime (current-time)))
@@ -258,13 +258,13 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 177" }
-				\fill-line { \small "Git describe: 177-95-g97ab2163" }
-				\fill-line { \small "Git commits: 1928" }
-				\fill-line { \small "Build date: 10:21:17 14-10-2024" }
+				\fill-line { \small "Git describe: 177-96-g1a4cddd8" }
+				\fill-line { \small "Git commits: 1929" }
+				\fill-line { \small "Build date: 06:58:04 07-11-2024" }
 				\fill-line { \small "Build user: mark" }
-				\fill-line { \small "Build host: cantor" }
-				\fill-line { \small "Build kernel: Linux 6.8.0-44-lowlatency" }
-				\fill-line { \small "Lilypond version: 2.24.3" }
+				\fill-line { \small "Build host: newton" }
+				\fill-line { \small "Build kernel: Linux 6.11.0-1001-realtime" }
+				\fill-line { \small "Lilypond version: 2.24.4" }
 				\fill-line { \small "Number of tunes: 154" }
 				\null
 				\null
@@ -7264,7 +7264,7 @@ endChords={}
 
 	% part "C"
 	And I'm think -- ing if you were mine I'd nev -- er let you go,
-	and that would be But Beau -- ti -- ful  I
+	and that would be But Beau -- ti -- ful I
 
 	% part "Volta"
 	know. __ Love is
@@ -25704,28 +25704,31 @@ endChords={}
 	\startChords
 	\startSong
 
-        \partial 2 s2 |
+	\partial 2 s2 |
 
 	\myMark "A"
 	\startPart
 	\repeat volta 2 {
-                c1*2:6 | aes1*2:7 | e2:m7 ees:m7.5- | d:m7 g:7.9- |
-                \alternative {
-                  { c:6 ees:m7.5- | d:m7 g:7 | \myEndLineVoltaNotLast }
-                  { c1*2:6 | \myEndLineVoltaLast }
-                }
-         }
+		c1*2:6 | aes1*2:7 | e2:m7 ees:m7.5- | d:m7 g:7.9- |
+	} \alternative {
+		{
+			c:6 ees:m7.5- | d:m7 g:7 | \myEndLineVoltaNotLast
+		}
+		{
+			c1*2:6 | \myEndLineVoltaLast
+		}
+	}
 	\endPart
 
 	\myMark "B"
 	\startPart
 	e1*2:7.9- | a1*2:7.9- |
-        d1*2:7.9- | g2:7.5+ g:7 | d:m7 | g:7 | \myEndLine
+	d1*2:7.9- | g2:7.5+ g:7 | d:m7 | g:7 | \myEndLine
 	\endPart
 
 	\myMark "A"
 	\startPart
-        c1:6 | c:6 | aes:7 | aes:7 | e2:m7 ees:m7.5- | d:m7 g:7.9- | c1:6 | d2:m7 g:7 |
+	c1:6 | c:6 | aes:7 | aes:7 | e2:m7 ees:m7.5- | d:m7 g:7.9- | c1:6 | d2:m7 g:7 |
 	\endPart
 
 	\endSong
@@ -25755,26 +25758,29 @@ endChords={}
 
 	% part "A"
 	\repeat volta 2 {
-                d c g e d' c4.~ | c2 r8 b, \tuplet 3/2 { c e g } |
-                bes aes ees c bes' aes4.~ | aes2. r8 g~ |
-                g4 e8 g ges ees c f~ | f4 d8 f e8. e16 e8 c~ |
-                \alternative {
-                  { c2~ c~ | c r8 dis \tuplet 3/2 { e g b } | }
-                  { c,2.~ c4 | r2. e4 }
-                }
+		d c g e d' c4.~ | c2 r8 b, \tuplet 3/2 { c e g } |
+		bes aes ees c bes' aes4.~ | aes2. r8 g~ |
+		g4 e8 g ges ees c f~ | f4 d8 f e8. e16 e8 c~ |
+	} \alternative {
+		{
+			c2~ c~ | c r8 dis \tuplet 3/2 { e g b } |
+		}
+		{
+			c,2.~ c4 | r2. e4
+		}
 	}
 
 	% part "B"
-        f8. e16 dis8. e16 b'2 | r2 r8 e, g a |
-        bes4. a8~ a2 | r2. c8. d16 |
-        ees8. d16 c8 d~ d2 | r2. c8. d16 |
-        ees4. d8~ d4 r4 | r2 r8 dis, \tuplet 3/2 { e g b } |
+	f8. e16 dis8. e16 b'2 | r2 r8 e, g a |
+	bes4. a8~ a2 | r2. c8. d16 |
+	ees8. d16 c8 d~ d2 | r2. c8. d16 |
+	ees4. d8~ d4 r4 | r2 r8 dis, \tuplet 3/2 { e g b } |
 
 	% part "A"
-        d c g e d' c4.~ | c2 r4 \tuplet 3/2 { c,8 e g } |
-        bes aes ees c bes' aes4.~ | aes2. r8 g~ |
-        g4 e8 g ges ees c f~ | f4 d8 f e8. g16 a8 c8~ |
-        c1~ | c2~ c4 r4 |
+	d c g e d' c4.~ | c2 r4 \tuplet 3/2 { c,8 e g } |
+	bes aes ees c bes' aes4.~ | aes2. r8 g~ |
+	g4 e8 g ges ees c f~ | f4 d8 f e8. g16 a8 c8~ |
+	c1~ | c2~ c4 r4 |
 }
  }
 }
