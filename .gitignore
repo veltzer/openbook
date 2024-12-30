@@ -53,6 +53,9 @@ modules.order
 .modules.*.cmd
 .Module.*.cmd
 /flags.cfg
+# device tree binary files and binary overlay files
+*.dtb
+*.dtbo
 
 # sphinx
 /docs/_build/
