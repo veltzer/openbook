@@ -142,3 +142,12 @@ build/
 # qemu
 *.qcow2
 *.iso
+
+# dev envs
+.cache
+.settings
+.classpath
+.project
+.project.xml
+.idea
+build.properties
