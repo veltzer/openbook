@@ -1,6 +1,6 @@
 import pyclassifiers.values
 
-python_requires = ">=3.8"
+python_requires = ">=3.12"
 
 license_type = "MIT"
 
@@ -15,7 +15,7 @@ classifiers = [
     pyclassifiers.values.ProgrammingLanguage__Python,
     pyclassifiers.values.ProgrammingLanguage__Python__3,
     pyclassifiers.values.ProgrammingLanguage__Python__3__Only,
-    pyclassifiers.values.ProgrammingLanguage__Python__311,
+    pyclassifiers.values.ProgrammingLanguage__Python__312,
     pyclassifiers.values.Topic__Utilities,
     pyclassifiers.values.License__OSIApproved__MITLicense,
 ]
