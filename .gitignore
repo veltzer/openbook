@@ -119,7 +119,7 @@ node_modules/
 *.log
 
 # scons
-/.sconsign.dblite
+.sconsign.dblite
 
 # DS_Store
 .DS_Store
@@ -143,11 +143,15 @@ build/
 *.qcow2
 *.iso
 
-# dev envs
+# jetbrains and eclipse
 .cache
 .settings
 .classpath
 .project
 .project.xml
-.idea
+.idea/
 build.properties
+
+# scala
+target/
+project/
