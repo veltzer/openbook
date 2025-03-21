@@ -14,9 +14,9 @@
 /gems/
 
 # hive
-/derby.log
-/dfs/
-/metastore_db/
+derby.log
+dfs/
+metastore_db/
 
 # c, c++ stuff
 *.o
@@ -151,6 +151,14 @@ build/
 .project.xml
 .idea/
 build.properties
+
+# spark
+spark-warehouse/
+
+# terraform
+.terraform*
+terraform.tfstate
+terraform.tfstate.backup
 
 # scala
 target/
