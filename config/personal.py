@@ -1,4 +1,7 @@
-# personal section
+"""
+Personal definitions
+"""
+
 firstname = "Mark"
 surname = "Veltzer"
 fullname = f"{firstname} {surname}"
