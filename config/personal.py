@@ -1,6 +1,4 @@
-"""
-Personal definitions
-"""
+""" Personal definitions """
 
 firstname = "Mark"
 surname = "Veltzer"

@@ -1,3 +1,5 @@
+""" platform definition """
+
 import pyclassifiers.values
 
 python_requires = ">=3.12"
