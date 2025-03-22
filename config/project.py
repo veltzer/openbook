@@ -1,3 +1,4 @@
+""" project definitions """
 name = "openbook"
 name_fancy = "OpenBook"
 description_short = "OpenBook is an open source Jazz real book"
