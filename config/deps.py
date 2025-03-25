@@ -1,3 +1,7 @@
+"""
+os level dependencies for this project
+"""
+
 packages = {
     # must have (critical)
     "python3": "for the python scripts",
