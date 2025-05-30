@@ -38,7 +38,7 @@ lib*.so.*
 
 # kernel stuff...
 *.ko
-*.mod
+# *.mod
 *.mod.c
 *.mod.cmd
 .*.o.cmd
