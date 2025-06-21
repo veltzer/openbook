@@ -295,9 +295,8 @@ $(FILES_MIDI): %.midi: %.stamp
 # this is the real rule
 $(FILES_STAMP): $(OUT_DIR)/%.stamp: $(OUT_DIR)/%.ly $(LILYPOND_WRAPPER_DEP)
 	$(info doing [$@])
-	$(Q)mkdir -p $(dir $@)
 	$(Q)$(LILYPOND_WRAPPER) run --stop_on_output False --ps $(dir $@)$(basename $(notdir $@)).ps --pdf $(dir $@)$(basename $(notdir $@)).pdf --output $(dir $@)$(basename $(notdir $@)) --ly $<
-	$(Q)touch $@
+	$(Q)pymakehelper touch_mkdir $@
 
 $(OUT_DIR)/%.0.pdf: %.ly.mako $(MAKO_WRAPPER_DEP)
 	$(info doing [$@])
@@ -359,20 +358,17 @@ $(HTMLCHECK): $(SOURCES_HTML)
 	$(info doing [$@])
 	$(Q)tidy -errors -q -utf8 $(SOURCES_HTML)
 	$(Q)pymakehelper only_print_on_error node_modules/.bin/htmlhint $(SOURCES_HTML)
-	$(Q)mkdir -p $(dir $@)
-	$(Q)touch $@
+	$(Q)pymakehelper touch_mkdir $@
 out/lint.stamp: $(SCRIPTS)
 	$(info doing [$@])
 	$(Q)pymakehelper error_on_print python -m pylint --reports=n --score=n $(SCRIPTS)
-	$(Q)mkdir -p $(dir $@)
-	$(Q)touch $@
+	$(Q)pymakehelper touch_mkdir $@
 .PHONY: real_books_archive.gi
 real_books_archive.gi: $(REAL_BOOKS_STAMP)
 $(REAL_BOOKS_STAMP):
 	$(info doing [$@])
 	$(Q)wget -qO- https://www.dropbox.com/s/birwhwe6g7ojqnh/real_books_archive.gi.tar.gz?dl=1 | tar xzvf -
-	$(Q)mkdir -p $(dir $@)
-	$(Q)touch $@
+	$(Q)pymakehelper touch_mkdir $@
 
 ##########
 # alldep #
