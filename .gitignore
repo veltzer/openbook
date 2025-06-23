@@ -36,7 +36,7 @@ lib*.so.*
 *.pchi
 *.gcda
 
-# kernel stuff...
+# kernel stuff
 *.ko
 # *.mod
 *.mod.c

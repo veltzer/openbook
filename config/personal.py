@@ -12,12 +12,12 @@ launchpad_username = "mark-veltzer"
 
 # this is the key used for signing.
 # it really should not have a passphrase since that will means that I have
-# to manually sign everything...
-# it must match the email_key up...
+# to manually sign everything.
+# it must match the email_key up.
 key = "73C128F9"
 email_key = "mark.veltzer@gmail.com"
 # the person who is the owner of the key and must match *exactly* what you get
-# from "gpg --list-keys"...
+# from "gpg --list-keys".
 key_signer = f"{fullname} (signkey, never expires) <{email_key}>"
 
 origin = f"{fullname} <{email}>"
