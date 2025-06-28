@@ -1,12 +1,11 @@
 # THIS IS AN AUTO-GENERATED FILE. DO NOT EDIT!
+Mako
+PyMySQL
+gitpython
+pydmt
+pylint
+pymakehelper
 pytconf
 python-dateutil
-tqdm
-PyMySQL
-Mako
 requests
-gitpython
-pymakehelper
-pydmt
-pyclassifiers
-pylint
+tqdm
