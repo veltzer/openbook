@@ -43,7 +43,7 @@ def remove_outputs_if_exist() -> None:
         os.unlink(ConfigAll.pdf)
 
 
-def print_outputs(output: str, errout: str, status: int, args: List[str]) -> None:
+def print_outputs(output: str, errout: str, status: int, args: list[str]) -> None:
     """
     print output of the program in case of error
     """
@@ -57,7 +57,7 @@ def print_outputs(output: str, errout: str, status: int, args: List[str]) -> Non
     print(f"{sys.argv[0]}: error in executing {args}", file=sys.stderr)
 
 
-def system_check_output(args: List[str]) -> None:
+def system_check_output(args: list[str]) -> None:
     """
     this function is here because we want to supress output until we know
     there is an error (and subprocess.check_output does not do this)

@@ -27,7 +27,7 @@ def check_file(file):
     state_tempo_time_key = 0
     prevprev = None
     prev = None
-    with open(file, "r", encoding="utf-8") as stream:
+    with open(file, encoding="utf-8") as stream:
         for num, line in enumerate(stream):
             line = line.rstrip("\n")
             if line == "<%":

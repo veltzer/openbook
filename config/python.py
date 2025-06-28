@@ -1,6 +1,6 @@
-config_requires = []
-dev_requires = []
-install_requires = [
+""" python deps for this project """
+
+install_requires: list[str] = [
     "pytconf",
     "python-dateutil",
     "tqdm",
@@ -9,12 +9,10 @@ install_requires = [
     "requests",
     "gitpython",
 ]
-build_requires = [
-    "pymakehelper",
+build_requires: list[str] = [
     "pydmt",
-    "pyclassifiers",
-]
-test_requires = [
+    "pymakehelper",
     "pylint",
 ]
-requires = config_requires + install_requires + build_requires + test_requires
+
+requires = install_requires + build_requires
