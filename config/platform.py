@@ -19,4 +19,5 @@ classifiers = [
     pyclassifiers.values.ProgrammingLanguage__Python__3__Only,
     pyclassifiers.values.ProgrammingLanguage__Python__312,
     pyclassifiers.values.Topic__Utilities,
+    pyclassifiers.values.License__OSIApproved__MITLicense,
 ]
