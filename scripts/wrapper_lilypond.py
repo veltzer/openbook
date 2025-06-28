@@ -20,7 +20,6 @@ import os.path
 import subprocess
 import shutil
 import tempfile
-from typing import List
 
 from pytconf import Config, ParamCreator, config_arg_parse_and_launch, register_endpoint, \
         register_main
