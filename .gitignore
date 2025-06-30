@@ -24,8 +24,6 @@ metastore_db/
 *.a
 *.dis
 /Makefile.bak
-/bin/
-/obj/
 *.o.ur-safe
 *.oo
 *.elf
