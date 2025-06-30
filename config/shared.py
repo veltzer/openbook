@@ -5,6 +5,7 @@ PCONFIG: list[str] = [
 ]
 # build for python module
 PBUILD: list[str] = [
+    "pyclassifiers",
     "hatch",
     "pydmt",
     "pymakehelper",
@@ -12,6 +13,7 @@ PBUILD: list[str] = [
 ]
 # build for non python module
 BUILD: list[str] = [
+    "pyclassifiers",
     "pydmt",
     "pymakehelper",
     "pycmdtools",
