@@ -2,10 +2,14 @@
 Mako
 PyMySQL
 gitpython
+mypy
+pycmdtools
 pydmt
 pylint
 pymakehelper
 pytconf
+pytest
 python-dateutil
 requests
+ruff
 tqdm
