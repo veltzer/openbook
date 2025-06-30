@@ -3,6 +3,7 @@ Mako
 PyMySQL
 gitpython
 mypy
+pyclassifiers
 pycmdtools
 pydmt
 pylint
