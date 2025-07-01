@@ -28,7 +28,7 @@ metastore_db/
 *.oo
 *.elf
 *.dep
-core.*
+/core.*
 lib*.so.*
 *.gch
 *.pchi
