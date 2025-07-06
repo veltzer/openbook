@@ -49,7 +49,7 @@ referencing==0.36.2
 requests==2.32.4
 roman-numerals-py==3.1.0
 rpds-py==0.26.0
-ruff==0.12.1
+ruff==0.12.2
 six==1.17.0
 smmap==5.0.2
 snowballstemmer==3.0.1
@@ -65,7 +65,7 @@ termcolor==3.1.0
 tomlkit==0.13.3
 tqdm==4.67.1
 types-requests==2.32.4.20250611
-typing-extensions==4.14.0
+typing-extensions==4.14.1
 tzdata==2025.2
 unidecode==1.4.0
 urllib3==2.5.0
