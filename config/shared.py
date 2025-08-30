@@ -1,5 +1,6 @@
 """ shared stuff """
 
+# config for python module
 PCONFIG: list[str] = [
     "pyclassifiers",
 ]
@@ -10,14 +11,7 @@ PBUILD: list[str] = [
     "pymakehelper",
     "pycmdtools",
 ]
-# build for non python module
-BUILD: list[str] = [
-    "pyclassifiers",
-    "pydmt",
-    "pymakehelper",
-    "pycmdtools",
-]
-# testing for python modules
+# test for python module
 PTEST: list[str] = [
     "pylint",
     "pytest",
@@ -25,10 +19,27 @@ PTEST: list[str] = [
     "ruff",
     # "pytest-cov",
 ]
-# testing for non python modules
+# deps for python module
+PDEPS: list[str] = [
+    "ripgrep",
+]
+# config for non python module
+CONFIG: list[str] = [
+]
+# build for non python module
+BUILD: list[str] = [
+    "pyclassifiers",
+    "pydmt",
+    "pymakehelper",
+    "pycmdtools",
+]
+# test for non python module
 TEST: list[str] = [
     "pylint",
     "pytest",
     "mypy",
     "ruff",
+]
+# deps for non python module
+DEPS: list[str] = [
 ]
