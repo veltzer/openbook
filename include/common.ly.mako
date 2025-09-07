@@ -729,6 +729,17 @@ Lyricsmoremore=<%include file="/${file}" args="part=Lyricsmoremore"/>
 	\fill-line {
 		\smaller \smaller { "${scratch['copyright']}" }
 	}
+% if 'copyrightextra' in attributes:
+	\fill-line {
+		\smaller \smaller { "${attributes['copyrightextra']}" }
+	}
+%endif
+% if 'copyrightextraextra' in attributes:
+	\fill-line {
+		\smaller \smaller { "${attributes['copyrightextraextra']}" }
+	}
+%endif
+
 % if gattr['book']:
 	\fill-line {
 		\smaller \smaller { "${scratch['typesetby']}" }

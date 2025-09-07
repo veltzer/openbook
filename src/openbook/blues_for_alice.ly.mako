@@ -16,6 +16,7 @@
 	attributes['composer']='Charlie Parker'
 	# from the real book
 	attributes['piece']='Jazz'
+	attributes['copyright']='1956 (Renewed 1984) Atlantic Music Corp.'
 
 	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'

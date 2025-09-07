@@ -15,6 +15,7 @@
 	attributes['composer']='John Coltrane'
 	# my own
 	attributes['piece']='Blues'
+	attributes['copyright']='1977 Jowcol Music'
 
 	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
