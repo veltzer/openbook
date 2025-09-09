@@ -18,6 +18,7 @@
 	attributes['poet']='Herman Hupfeld'
 	# this is from the real book
 	attributes['piece']='Ballad'
+	attributes['copyright']='1931 Harms Incorporated, USA'
 
 	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'

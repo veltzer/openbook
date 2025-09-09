@@ -16,6 +16,7 @@
 	attributes['composer']='John Coltrane'
 	# My own
 	attributes['piece']='Fiercly'
+	attributes['copyright']='1957 (Renewed 1985) JOWCOL MUSIC'
 
 	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'

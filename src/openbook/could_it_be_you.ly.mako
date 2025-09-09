@@ -14,7 +14,9 @@
 	attributes['composer']='Cole Porter'
 	# this is from the real book
 	attributes['piece']='Ballad'
-
+	attributes['copyright']='1942 by Chappell & Co., Renewed'
+	attributes['copyrightextra']='Assigned to Robert H. Montgomery, Trustee of the Cole Porter Musical and Literary Property Trusts'
+	attributes['copyrightextraextra']='Chappel & Co. owner of publication and allied rights throughout the world'
 	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
 	attributes['uuid']='952831ac-74cc-11e5-b102-3860779cb560'

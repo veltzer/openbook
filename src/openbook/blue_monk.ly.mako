@@ -15,6 +15,7 @@
 	attributes['composer']='Thelonius Monk'
 	# My own
 	attributes['piece']='Blues'
+	attributes['copyright']='1962 (Renewed 1990) by Thelonious Monk Corp.'
 
 	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'

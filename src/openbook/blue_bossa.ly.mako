@@ -16,6 +16,7 @@
 	attributes['composer']='Kenny Dorham'
 	attributes['poet']='Joan Cartwright'
 	attributes['piece']='Bossa Nova'
+	attributes['copyright']='1965 (Renewed 1993) Second Floor Music'
 
 	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'

@@ -17,6 +17,7 @@
 	attributes['poet']='Irving Berlin'
 	# this is from 'The Book'
 	attributes['piece']='Waltz'
+	attributes['copyright']='1925 (Renewed) by Irving Berlin'
 
 	attributes['typesetter']='Jordan Eldredge <jordan@jordaneldredge.com>'
 	attributes['completion']='5'

@@ -19,6 +19,9 @@
 	attributes['poet']='Lorenz Hart'
 	# My own
 	attributes['piece']='Jazz'
+	attributes['copyright']='1926 (Renewed) by Chappal & Co'
+	attributes['copyrightextra']='Right for the Extended Renewal Term in the U.S. Controlled by Williamson Music and WB Music Corp.'
+	attributes['copyrightextraextra']='o/b/o The Estate Of Lorenz Hart'
 
 	attributes['typesetter']='Mark Veltzer <mark.veltzer@gmail.com>'
 	attributes['completion']='5'
