@@ -258,12 +258,12 @@ endChords={}
 				\null
 				\null
 				\fill-line { \small "Git tag: 177" }
-				\fill-line { \small "Git describe: 177-118-g19490952" }
-				\fill-line { \small "Git commits: 1951" }
-				\fill-line { \small "Build date: 23:19:47 21-06-2025" }
+				\fill-line { \small "Git describe: 177-148-g0703744c" }
+				\fill-line { \small "Git commits: 1981" }
+				\fill-line { \small "Build date: 17:29:42 09-09-2025" }
 				\fill-line { \small "Build user: mark" }
 				\fill-line { \small "Build host: newton" }
-				\fill-line { \small "Build kernel: Linux 6.11.0-26-generic" }
+				\fill-line { \small "Build kernel: Linux 6.14.0-29-generic" }
 				\fill-line { \small "Lilypond version: 2.24.4" }
 				\fill-line { \small "Number of tunes: 1" }
 				\null
@@ -542,6 +542,7 @@ PartLowVoice=\relative c' {
 	\fill-line {
 		\smaller \smaller { "Copyright © Public Domain" }
 	}
+
 	\fill-line {
 		\smaller \smaller { "Typeset by Mark Veltzer <mark.veltzer@gmail.com>" }
 	}
