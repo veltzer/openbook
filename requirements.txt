@@ -37,14 +37,14 @@ pyfakeuse==0.0.9
 pygments==2.19.2
 pylint==3.3.8
 pylogconf==0.0.38
-pymakehelper==0.0.37
+pymakehelper==0.0.38
 pymysql==1.1.1
-pytconf==0.1.19
+pytconf==0.1.21
 pytest==8.4.1
 python-dateutil==2.9.0.post0
 pytidylib==0.3.2
 pytz==2025.2
-pyyaml==6.0.2
+pyyaml==6.0.3
 referencing==0.36.2
 requests==2.32.5
 roman-numerals-py==3.1.0
@@ -61,7 +61,7 @@ sphinxcontrib-htmlhelp==2.1.0
 sphinxcontrib-jsmath==1.0.1
 sphinxcontrib-qthelp==2.0.0
 sphinxcontrib-serializinghtml==2.0.0
-termcolor==3.1.0
+termcolor==3.2.0
 tomlkit==0.13.3
 tqdm==4.67.1
 types-requests==2.32.4.20250809
