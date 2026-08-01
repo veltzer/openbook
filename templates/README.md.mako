@@ -34,7 +34,7 @@ ${"##"} Contact
 
 chat with me at [![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/veltzer/mark.veltzer)
 
-% if os.path.isfile("snipplets/main.md.mako"):
-<%include file="../snipplets/main.md.mako" />
+% if os.path.isfile("snippets/main.md.mako"):
+<%include file="../snippets/main.md.mako" />
 % endif
 ${config.personal.fullname}, Copyright © ${pydmt.helpers.signature.get_copyright_years_long()}
