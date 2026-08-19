@@ -64,9 +64,9 @@ def system_check_output(args: list[str]) -> None:
     if ConfigAll.do_debug:
         print(f"{sys.argv[0]}: running [{args}]", file=sys.stderr)
     with subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE) as process:
-        (output, errout) = process.communicate()
-        output = output.decode()
-        errout = errout.decode()
+        (raw_output, raw_errout) = process.communicate()
+        output = raw_output.decode()
+        errout = raw_errout.decode()
         if ConfigAll.do_debug or process.returncode or \
             (ConfigAll.stop_on_output and (output != "" or errout != "")):
             print_outputs(output, errout, process.returncode, args)

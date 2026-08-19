@@ -161,3 +161,6 @@ terraform.tfstate.backup
 # scala
 target/
 project/
+
+# rsconstruct
+/.rsconstruct/

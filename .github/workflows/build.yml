@@ -1,24 +1,37 @@
 name: build
-on: [push, pull_request, workflow_dispatch]
+on: push
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        include:
-          - os: "ubuntu-24.04"
-            python-version: "3.12"
+    runs-on: ubuntu-24.04
     steps:
-    - name: checkout
-      uses: actions/checkout@v4
-    - name: python ${{ matrix.python-version }}
-      uses: actions/setup-python@v5
+    - uses: actions/checkout@v6
+    - uses: actions/cache@v5
       with:
-        python-version: ${{ matrix.python-version }}
-        cache: "pip"
-    - name: bootstrap-pip
-      run: python -m pip install --upgrade pip
-    - name: bootstrap
-      run: python -m pip install pydmt
-    - name: pydmt
-      run: pydmt build
+        path: .rsconstruct
+        # Primary key is unique per run so every successful run saves a fresh
+        # cache. restore-keys lets the run start from the most recent cache
+        # matching the prefix. Without this (static key), actions/cache never
+        # re-saves once the first cache exists.
+        key: rsconstruct-${{ runner.os }}-${{ github.run_id }}
+        restore-keys: |
+          rsconstruct-${{ runner.os }}-
+    - name: install rsconstruct
+      run: |
+        gh release download --repo veltzer/rsconstruct --pattern 'rsconstruct-linux-x86_64' --output /usr/local/bin/rsconstruct
+        chmod +x /usr/local/bin/rsconstruct
+        rsconstruct version
+      env:
+        GH_TOKEN: ${{ github.token }}
+    - name: install
+      run: |
+        rsconstruct tools install-deps
+        rsconstruct tools install
+    - name: build
+      run: rsconstruct build
+    - name: status
+      run: rsconstruct status
