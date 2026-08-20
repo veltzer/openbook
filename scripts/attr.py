@@ -6,8 +6,8 @@ good meta data by tune authors
 """
 
 import os.path  # for join, isfile
-import subprocess  # for check_call, DEVNULL
 import shutil  # for copy
+import subprocess  # for check_call, DEVNULL
 
 order = [
     "doChords",

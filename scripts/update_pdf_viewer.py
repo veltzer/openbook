@@ -6,16 +6,16 @@ Find the latest version and download it
 """
 
 
-import os
-import sys
-import shutil
-import zipfile
 import json
+import os
+import shutil
+import sys
 import tempfile
 import urllib
-import requests
+import zipfile
 
 import git
+import requests
 
 
 def main():

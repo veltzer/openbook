@@ -14,17 +14,21 @@ Why do we need this script?
 - To do extra stuff on the output coming out from lilypond like reduce the size of the pdf and more.
 """
 
-import sys
 import os
 import os.path
-import subprocess
 import shutil
+import subprocess
+import sys
 import tempfile
 
-from pytconf import Config, ParamCreator, config_arg_parse_and_launch, register_endpoint, \
-        register_main
+from pytconf import (
+    Config,
+    ParamCreator,
+    config_arg_parse_and_launch,
+    register_endpoint,
+    register_main,
+)
 from pytconf.extended_enum import ExtendedEnum
-
 
 DESCRIPTION="Run the lilypond wrapper"
 VERSION="1.0"

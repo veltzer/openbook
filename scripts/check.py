@@ -40,9 +40,8 @@ def check_file(file):
                 inside_voice = True
             if line == "% endif":
                 inside_voice = False
-            if inside_voice:
-                if line.find("\\myEndLine") != -1:
-                    error(num, line, file, "have end line")
+            if inside_voice and line.find("\\myEndLine") != -1:
+                error(num, line, file, "have end line")
             if line.startswith("% if part==\'Chords"):
                 inside_chords = True
             if line == "% endif":
@@ -67,7 +66,7 @@ def check_file(file):
                 error(num, line, file, "bad symbols")
             if line.find("copyright = ''") != -1:
                 error(num, line, file, "empty copyright")
-            if line.endswith("\t") or line.endswith(" "):
+            if line.endswith(("\t", " ")):
                 error(num, line, file, "line ends with tab or space")
             if line.find(" \t") != -1 or line.find("\t ") != -1:
                 error(num, line, file, "line has tabs and spaces mixed")

@@ -11,16 +11,15 @@ TODO:
         And do this also for completion level 5.
 """
 
-import subprocess
-import os.path
 import configparser
 import getpass
-import dateutil.parser
+import os.path
+import subprocess
 
+import dateutil.parser
 import pymysql
 import tqdm
 from dateutil import tz
-
 
 DEBUG = False
 DO_DB = True

@@ -4,13 +4,14 @@
 A command line tool to run the mako templating engine
 """
 
-import sys
 import os.path
+import sys
+
 import mako.exceptions
 import mako.lookup
 import mako.template
-import config.openbook
 
+import config.openbook
 from scripts import attr
 
 
@@ -81,11 +82,11 @@ def main():
             with open(p_output, "wb") as file:
                 file.write(template.render(attributes=attributes, gattr=gattr, scratch={}))
             os.chmod(p_output, 0o0444)
-    except Exception as exception:
+    except Exception:
         if os.path.isfile(p_output):
             os.unlink(p_output)
         print(mako.exceptions.text_error_template().render())
-        raise exception
+        raise
 
 
 if __name__ == "__main__":
