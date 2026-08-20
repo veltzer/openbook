@@ -31,4 +31,5 @@ pip = [
     "types-pymysql",
     "types-requests",
     "types-tqdm",
+    "types-python-dateutil",
 ]
