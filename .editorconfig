@@ -1,0 +1,57 @@
+# EditorConfig — shared across all repos, kept byte-identical by
+# `rsmultigit check-same` (rule: editorconfig).
+#
+# https://editorconfig.org
+#
+# The per-type sections below describe what each language actually uses in
+# these repos today, so editing an existing file does not fight its own style.
+# Types with no clear majority (css, js, md, tera) fall through to [*].
+#
+# Note: this only steers editors as you type. It reformats nothing, and it is
+# not a substitute for a formatter (rustfmt, black, gofmt, prettier).
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+# ── 4-space languages ─────────────────────────────────────────────────────────
+# py 96%, rs 95%, lua 88%
+[*.{py,pyi,rs,lua}]
+indent_style = space
+indent_size = 4
+
+# ── 2-space languages ─────────────────────────────────────────────────────────
+# yml 98%, yaml 98%, tf 96%, json 63%, jsx/scss/rb small but unanimous
+[*.{yml,yaml,tf,tfvars,json,jsx,scss,rb}]
+indent_style = space
+indent_size = 2
+
+# ── tab languages ─────────────────────────────────────────────────────────────
+# pl/pm 100%, cc 99%, php 98%, toml 99%, mako 97%, java 91%, h 89%,
+# html 78%, c 76%, sh 75%, xml 73%, go 71%
+[*.{pl,pm,php,toml,mako,java,c,cc,cpp,h,hpp,html,htm,sh,bash,xml,go,groovy}]
+indent_style = tab
+
+# ── tabs are mandatory, not a preference ──────────────────────────────────────
+[{Makefile,makefile,GNUmakefile,*.mk}]
+indent_style = tab
+
+# ── markdown: two trailing spaces are a hard line break ───────────────────────
+[*.md]
+trim_trailing_whitespace = false
+
+# ── generated / vendored: leave exactly as upstream wrote it ──────────────────
+[{Cargo.lock,package-lock.json,*.min.js,*.min.css}]
+insert_final_newline = false
+trim_trailing_whitespace = false
+
+# ── patches carry significant trailing whitespace ─────────────────────────────
+[*.{patch,diff}]
+trim_trailing_whitespace = false
+insert_final_newline = false
