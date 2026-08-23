@@ -1,3 +1,0 @@
-"""
-Initialize the module
-"""
