@@ -1,15 +1,5 @@
-# Canonical shared rsconstruct.toml — this file is IDENTICAL in every repo.
-#
-# Do not edit per-repo copies. Edit the canonical copy
-# (/home/mark/git/rsconstruct.canonical.toml) and sync it out.
-# Repo-specific configuration (dependencies, explicit generators, excludes,
-# one-off workarounds) lives in rsconstruct.local.toml, which rsconstruct
-# deep-merges over this file at load time.
-#
-# This file is a menu: src_dirs entries that don't exist in a given repo are
-# skipped (default behavior since 0.9.46), so a processor whose directories
-# are all absent simply matches no files there. The directory layout of each
-# repo decides which checks run.
+# rsconstruct configuration for this repository — shared defaults plus
+# repo-specific config (merged from the former rsconstruct.local.toml).
 
 # ─── analyzers ───────────────────────────────────────────────────────────────
 
@@ -33,85 +23,77 @@ dep_auto = [
 	"config/python.lua",
 	"config/shared.lua",
 ]
+src_dirs = ["tera.templates"]
+dep_inputs = [
+    "config/project.lua",
+    "config/personal.lua",
+    "config/version.lua",
+]
 
 # ─── markdown ────────────────────────────────────────────────────────────────
 
 [processor.rumdl]
-src_dirs = ["src", "docs", "exercises", "notes", "marp"]
+src_dirs = ["src", "docs"]
 
 [processor.zspell]
-src_dirs = ["src", "docs", "exercises", "notes", "marp", "syllabi", "out/generator"]
+src_dirs = ["src", "docs"]
 
 # ─── python ──────────────────────────────────────────────────────────────────
 
 [processor.ruff]
-src_dirs = ["src", "scripts", "config", "tests", "exercises", "animations"]
+src_dirs = ["src", "scripts", "config"]
 
 [processor.pylint]
-src_dirs = ["src", "scripts", "config", "tests", "exercises", "animations"]
+src_dirs = ["src", "scripts", "config"]
 
 [processor.mypy]
-src_dirs = ["src", "scripts", "config", "tests", "exercises", "animations"]
+src_dirs = ["src", "scripts", "config"]
 
 [processor.requirements]
-src_dirs = ["src", "scripts", "config", "tests", "animations"]
-
-[processor.pytest]
-src_dirs = ["tests"]
+src_dirs = ["src", "scripts", "config"]
 
 # ─── shell ───────────────────────────────────────────────────────────────────
 
 [processor.shellcheck]
-src_dirs = ["scripts", "src", "misc", "exercises", "docs", "config"]
+src_dirs = ["scripts", "src", "docs", "config"]
 args = ["--severity=error", "--shell=bash"]
 
 # ─── lua ─────────────────────────────────────────────────────────────────────
 
 [processor.luacheck]
-src_dirs = ["config", "print"]
+src_dirs = ["config"]
 
 # ─── toml / yaml / json ──────────────────────────────────────────────────────
 
 [processor.taplo]
 src_dirs = ["."]
 
-[processor.iyamllint]
-src_dirs = ["yaml", "tracks"]
-
-[processor.ijsonlint]
-src_dirs = ["json"]
-
-# ─── web ─────────────────────────────────────────────────────────────────────
-
-[processor.stylelint]
-src_dirs = ["resources", "site-resources", "print"]
-
 [processor.htmlhint]
-src_dirs = ["src", "site-resources"]
+src_dirs = ["src"]
 
 [processor.tidy]
-src_dirs = ["src", "blog"]
+src_dirs = ["src"]
 
 [processor.eslint]
-src_dirs = ["site-resources", "shared", "config", "blog"]
+src_dirs = ["config"]
 args = ["-c", "config/eslint.config.js"]
 
-# ─── teaching content ────────────────────────────────────────────────────────
+# ─── merged from rsconstruct.local.toml ─────────────────────────────────────
 
-[processor.tags]
-src_dirs = ["syllabi", "out/generator"]
-required_fields = ["tags", "level", "category", "audience"]
-required_field_groups = [["duration_hours"], ["duration_hours_long", "duration_hours_short"]]
-
-[processor.terms]
-src_dirs = ["syllabi", "out/generator"]
-
-[processor.pandoc.syllabi]
-src_dirs = ["syllabi"]
-formats = ["pdf", "html", "docx"]
-
-[processor.script.check_md]
-command = "scripts/check_md.py"
-src_extensions = [".md"]
-src_dirs = ["syllabi", "marp", "out/generator"]
-batch = true
+# Runtime deps so CI installs what the lilypond/mako build scripts import
+# (pylint/mypy resolve them). These scripts drive the .ly.mako songbook build
+# via the Makefile, which is separate from the rsconstruct doc-site render.
+[dependencies]
+pip = [
+    "GitPython",
+    "mako",
+    "pymysql",
+    "python-dateutil",
+    "pytconf",
+    "requests",
+    "tqdm",
+    "types-pymysql",
+    "types-requests",
+    "types-tqdm",
+    "types-python-dateutil",
+]
