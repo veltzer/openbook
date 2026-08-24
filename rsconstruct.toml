@@ -5,8 +5,6 @@
 
 [analyzer.tera]
 
-[analyzer.markdown]
-
 [analyzer.python]
 
 # ─── templating ──────────────────────────────────────────────────────────────
@@ -29,16 +27,6 @@ dep_inputs = [
     "config/personal.lua",
     "config/version.lua",
 ]
-
-# ─── markdown ────────────────────────────────────────────────────────────────
-
-[processor.rumdl]
-src_dirs = ["src", "docs"]
-
-[processor.zspell]
-src_dirs = ["src", "docs"]
-
-# ─── python ──────────────────────────────────────────────────────────────────
 
 [processor.ruff]
 src_dirs = ["src", "scripts", "config"]
@@ -67,18 +55,6 @@ src_dirs = ["config"]
 
 [processor.taplo]
 src_dirs = ["."]
-
-[processor.htmlhint]
-src_dirs = ["src"]
-
-[processor.tidy]
-src_dirs = ["src"]
-
-[processor.eslint]
-src_dirs = ["config"]
-args = ["-c", "config/eslint.config.js"]
-
-# ─── merged from rsconstruct.local.toml ─────────────────────────────────────
 
 # Runtime deps so CI installs what the lilypond/mako build scripts import
 # (pylint/mypy resolve them). These scripts drive the .ly.mako songbook build
