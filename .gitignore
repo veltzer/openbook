@@ -198,7 +198,6 @@ project/
 **/*.rs.bk
 **/mutants.out*/
 *.pdb
-/Cargo.lock
 debug
 /.rsconstruct_cache.json
 
