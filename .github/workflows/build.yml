@@ -7,7 +7,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     permissions:
       contents: read
       # needed by the stale-pages-artifact cleanup below
@@ -73,7 +73,7 @@ jobs:
   deploy:
     needs: build
     if: needs.build.outputs.pages-dir != ''
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     permissions:
       pages: write
       id-token: write
