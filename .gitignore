@@ -1,8 +1,6 @@
 # generated
-/build/
 /toolchain/
 /dist/
-/target/
 /out/
 /debug/
 /download/
@@ -77,8 +75,6 @@ modules.order
 # python
 __pycache__/
 *.py[oc]
-*.pyc
-*.pyo
 /wheel/
 /.venv/
 .coverage
@@ -175,7 +171,6 @@ bin-release/
 .project
 .project.xml
 .idea/
-/.idea/
 build.properties
 
 # spark
@@ -186,12 +181,9 @@ spark-warehouse/
 /.terraform/
 terraform.tfstate
 terraform.tfstate.backup
-/terraform.tfstate
-/terraform.tfstate.backup
 /terraform.lock.hcl
 
 # scala
-target/
 project/
 
 # rust
@@ -203,7 +195,7 @@ debug
 
 # claude
 /.claude/
-claude/
+/claude/
 .claude/projects/
 .claude/settings.local.json
 
