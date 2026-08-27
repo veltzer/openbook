@@ -12,8 +12,10 @@ virtualenv -p /usr/bin/python3 .venv
 source .venv/bin/activate
 # upgrate pip
 python -m pip install --upgrade pip
-# install requirements
-pip install -r requirements.txt
+# install the dependencies declared in pyproject.toml ([project].dependencies);
+# uv installs them without building the non-installable project itself
+pip install uv
+uv pip install -r pyproject.toml
 # build
 make clean_docs
 make all all_tunes

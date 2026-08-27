@@ -37,9 +37,6 @@ src_dirs = ["src", "scripts", "config"]
 [processor.mypy]
 src_dirs = ["src", "scripts", "config"]
 
-[processor.requirements]
-src_dirs = ["src", "scripts", "config"]
-
 # ─── shell ───────────────────────────────────────────────────────────────────
 
 [processor.shellcheck]
@@ -55,21 +52,3 @@ src_dirs = ["config"]
 
 [processor.taplo]
 src_dirs = ["."]
-
-# Runtime deps so CI installs what the lilypond/mako build scripts import
-# (pylint/mypy resolve them). These scripts drive the .ly.mako songbook build
-# via the Makefile, which is separate from the rsconstruct doc-site render.
-[dependencies]
-pip = [
-    "GitPython",
-    "mako",
-    "pymysql",
-    "python-dateutil",
-    "pytconf",
-    "requests",
-    "tqdm",
-    "types-pymysql",
-    "types-requests",
-    "types-tqdm",
-    "types-python-dateutil",
-]
