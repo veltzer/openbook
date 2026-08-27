@@ -52,3 +52,10 @@ src_dirs = ["config"]
 
 [processor.taplo]
 src_dirs = ["."]
+
+# lint the GitHub Actions workflow files with actionlint
+[processor.actionlint]
+src_dirs = [".github/workflows"]
+# actionlint 1.7.12's runner-label list predates the official ubuntu-26.04
+# hosted runner; drop this ignore once a newer actionlint knows the label
+args = ["-ignore", 'label "ubuntu-26\.04" is unknown']
