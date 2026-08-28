@@ -83,7 +83,10 @@ coverage.xml
 *.egg-info/
 
 # mine
-/.pydmt.build.errors
+# error files left by the bashy prompt plugins (.uv.sync.errors,
+# .pydmt.build.errors, ...); unanchored because a sub-project's
+# pyproject root can sit below the git root
+.*.errors
 /.pydmt/
 *.stamp
 *.stamp.*
