@@ -23,3 +23,18 @@ dependencies = [
 [tool.uv]
 # Demo/teaching repo: not an installable package.
 package = false
+
+[tool.mypy]
+mypy_path = "src:python:scripts"
+explicit_package_bases = true
+namespace_packages = true
+
+# Third-party libraries without type stubs; `foo.*` also matches `foo` itself.
+[[tool.mypy.overrides]]
+module = [
+    "mako.*",
+    "pymysql.*",
+    "pytconf.*",
+    "tqdm.*",
+]
+ignore_missing_imports = true
