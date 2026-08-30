@@ -71,6 +71,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "The Man I Love / George Gershwin, Ira Gershwin"
 copyright = "-- help me fill it out this copyright notice --"
 fullpoet = "Lyrics by Ira Gershwin"
 fullcomposer = "Music by George Gershwin"

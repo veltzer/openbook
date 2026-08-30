@@ -63,6 +63,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Have I told you lately that I love you"
 copyright = "-- help me fill it out this copyright notice --"
 fullpoet = ""
 fullcomposer = ""

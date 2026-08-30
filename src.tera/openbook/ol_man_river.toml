@@ -67,6 +67,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Ol' Man River / Jerome Kern, Oscar Hammerstein II"
 copyright = "Copyright © 1927 T.B. Harms Company. Copyright Renewed."
 fullpoet = "Lyrics by Oscar Hammerstein II"
 fullcomposer = "Music by Jerome Kern"

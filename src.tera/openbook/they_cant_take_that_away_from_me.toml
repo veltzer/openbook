@@ -73,6 +73,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "They Can't Take That Away From Me / George Gershwin, Ira Gershwin"
 copyright = "Copyright © 1937 by Gershwin Publishing Corporation"
 fullpoet = "Lyrics by Ira Gershwin"
 fullcomposer = "Music by George Gershwin"

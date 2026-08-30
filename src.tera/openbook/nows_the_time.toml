@@ -71,6 +71,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Now's The Time / Charlie Parker"
 copyright = "Copyright © 1945, Atlantic Music Corp."
 fullpoet = ""
 fullcomposer = "Music by Charlie Parker"

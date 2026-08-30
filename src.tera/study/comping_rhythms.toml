@@ -62,6 +62,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Comping Rhythms"
 copyright = "Copyright © -- no copyright notice for study materials --"
 fullpoet = ""
 fullcomposer = ""

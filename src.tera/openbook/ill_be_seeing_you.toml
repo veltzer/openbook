@@ -73,6 +73,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "I'll Be Seeing You / Irving Kahal, Sammy Fain"
 copyright = "Copyright © 1938 Williamson Music Co. Copyright Renewed."
 fullcomposer = "Lyrics and Music by Irving Kahal, Sammy Fain"
 fullpoet = ""

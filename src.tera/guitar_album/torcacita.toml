@@ -66,6 +66,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Torcacita / Folk"
 copyright = "Copyright © Public Domain"
 fullpoet = ""
 fullcomposer = "Music by Folk"

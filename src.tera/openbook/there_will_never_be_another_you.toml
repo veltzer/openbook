@@ -71,6 +71,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "There Will Never Be Another You / Harry Warren, Mack Gordon"
 copyright = "Copyright © 1942, 1987 Twentieth Century Music Corporation"
 fullpoet = "Lyrics by Mack Gordon"
 fullcomposer = "Music by Harry Warren"

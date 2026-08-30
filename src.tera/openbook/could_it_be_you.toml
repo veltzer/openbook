@@ -72,6 +72,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Could It Be You / Cole Porter"
 copyright = "Copyright © 1942 by Chappell & Co., Renewed"
 fullpoet = ""
 fullcomposer = "Music by Cole Porter"

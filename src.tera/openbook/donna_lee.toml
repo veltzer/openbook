@@ -70,6 +70,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Donna Lee / Charlie Parker"
 copyright = "-- help me fill it out this copyright notice --"
 fullpoet = ""
 fullcomposer = "Music by Charlie Parker"

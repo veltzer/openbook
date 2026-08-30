@@ -73,6 +73,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Always / Irving Berlin"
 copyright = "Copyright © 1925 (Renewed) by Irving Berlin"
 fullcomposer = "Lyrics and Music by Irving Berlin"
 fullpoet = ""

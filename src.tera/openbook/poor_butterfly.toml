@@ -67,6 +67,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Poor Butterfly / Raymond Hubbell, John L. Golden"
 copyright = "Copyright © 1998 Hal Leonard Corporation"
 fullpoet = "Lyrics by John L. Golden"
 fullcomposer = "Music by Raymond Hubbell"

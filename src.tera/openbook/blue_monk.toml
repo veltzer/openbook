@@ -70,6 +70,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Blue Monk / Thelonius Monk"
 copyright = "Copyright © 1962 (Renewed 1990) by Thelonious Monk Corp."
 fullpoet = ""
 fullcomposer = "Music by Thelonius Monk"

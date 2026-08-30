@@ -63,6 +63,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Bass Lines"
 copyright = "Copyright © -- no copyright notice for study materials --"
 fullpoet = ""
 fullcomposer = ""

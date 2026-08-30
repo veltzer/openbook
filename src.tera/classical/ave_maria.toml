@@ -65,6 +65,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Ave Maria / Charles Gounod"
 copyright = "Copyright © Public Domain"
 fullpoet = ""
 fullcomposer = "Music by Charles Gounod"

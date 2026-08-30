@@ -66,6 +66,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Take Five / Paul Desmond"
 copyright = "Copyright © 1960 (Renewed) Desmond Music Company (U.S.A.) and Derry Music Company (Canada)"
 fullpoet = ""
 fullcomposer = "Music by Paul Desmond"

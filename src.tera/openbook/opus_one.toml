@@ -73,6 +73,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Opus One / Sy Oliver"
 copyright = "Copyright © 1943 (Renewed) Embassy Music Corporation, New York."
 fullcomposer = "Lyrics and Music by Sy Oliver"
 fullpoet = ""

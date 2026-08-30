@@ -74,6 +74,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "The Girl From Ipanema / Antonio Carlos Jobim, Vincius De Moraes, Norman Gimbel"
 copyright = "Copyright © 1963, Antonio Carlos Jobim and Vincius De Moraes, Brazil"
 fullpoet = "Lyrics by Vincius De Moraes, Norman Gimbel"
 fullcomposer = "Music by Antonio Carlos Jobim"

@@ -73,6 +73,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Red Sails In The Sunset / Hugh Williams, Jimmy Kennedy"
 copyright = "Copyright © 1935 The Peter Maurice Music Co. Ltd., London, England"
 fullpoet = "Lyrics by Jimmy Kennedy"
 fullcomposer = "Music by Hugh Williams"

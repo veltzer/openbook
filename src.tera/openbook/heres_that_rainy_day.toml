@@ -73,6 +73,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Here's That Rainy Day / James Van Heusen, Johnny Burke"
 copyright = "Copyright © 1953 by BOURCE CO. and DORSEY BROS. MUSIC, INC. Copyright Renewed."
 fullpoet = "Lyrics by Johnny Burke"
 fullcomposer = "Music by James Van Heusen"

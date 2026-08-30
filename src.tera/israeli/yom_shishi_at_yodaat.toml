@@ -70,6 +70,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "יום שישי את יודעת / יהודה פוליקר, יעקב גלעד"
 copyright = "-- עיזרו לי למלא את שורת זכויות היוצרים הזו --"
 fullpoet = "מלים: יעקב גלעד"
 fullcomposer = "לחן: יהודה פוליקר"

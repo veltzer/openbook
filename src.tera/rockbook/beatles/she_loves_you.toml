@@ -65,6 +65,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "She Loves You / John Lennon, Paul McCartney"
 copyright = "-- help me fill it out this copyright notice --"
 fullcomposer = "Lyrics and Music by John Lennon, Paul McCartney"
 fullpoet = ""

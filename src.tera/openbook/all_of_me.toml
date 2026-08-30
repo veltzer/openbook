@@ -75,6 +75,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "All Of Me / Seymour Simons, Gerald Marks"
 copyright = "Copyright © 1931 Bourne Co. Copyright Renewed"
 fullcomposer = "Lyrics and Music by Seymour Simons, Gerald Marks"
 fullpoet = ""

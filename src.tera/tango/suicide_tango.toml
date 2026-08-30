@@ -66,6 +66,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Suicide Tango"
 copyright = "-- help me fill it out this copyright notice --"
 fullpoet = ""
 fullcomposer = ""

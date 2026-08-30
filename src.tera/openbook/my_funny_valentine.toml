@@ -72,6 +72,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "My Funny Valentine / Richard Rodgers, Lorenz Hart"
 copyright = "Copyright © 1937 by Chappell & Co., Inc. Copyright Renewed"
 fullpoet = "Lyrics by Lorenz Hart"
 fullcomposer = "Music by Richard Rodgers"

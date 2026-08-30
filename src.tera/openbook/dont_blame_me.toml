@@ -71,6 +71,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Don't Blame Me / Jimmy McHugh, Dorothy Fields"
 copyright = "-- help me fill it out this copyright notice --"
 fullpoet = "Lyrics by Dorothy Fields"
 fullcomposer = "Music by Jimmy McHugh"

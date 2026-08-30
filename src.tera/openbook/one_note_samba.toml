@@ -74,6 +74,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "One Note Samba / Antonio Carlos Jobim, Newton Mendonca"
 copyright = "Copyright © 1961, 1962 by Antonio Carlos Jobim and Mrs. Mendonca, Brazil"
 fullpoet = "Lyrics by Newton Mendonca"
 fullcomposer = "Music by Antonio Carlos Jobim"

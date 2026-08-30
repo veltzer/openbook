@@ -74,6 +74,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Quiet Nights Of Quiet Stars / Antonio Carlos Jobim, Antonio Carlos Jobim, Gene Lees"
 copyright = "Copyright © 1962, 1964 by Antonio Carlos Jobim, Brazil"
 fullpoet = "Lyrics by Antonio Carlos Jobim, Gene Lees"
 fullcomposer = "Music by Antonio Carlos Jobim"

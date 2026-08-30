@@ -1,0 +1,194 @@
+{% set lilypond_version = shell_output(command='lilypond --version 2>/dev/null | head -n 1 | cut -d " " -f 3', depends_on=[]) %}{% set date = shell_output(command="date +%d-%m-%Y", depends_on=[]) %}{% set year = shell_output(command="date +%Y", depends_on=[]) %}{% set gittag = shell_output(command="git describe --abbrev=0 --always", depends_on=[]) %}{% set gitdesc = shell_output(command="git describe --tags --always", depends_on=[]) %}{% set gitcommits = shell_output(command="git rev-list --count HEAD", depends_on=[]) %}{% set username = shell_output(command="whoami", depends_on=[]) %}{% set hostname = shell_output(command="hostname", depends_on=[]) %}{% set kernel = shell_output(command="uname -sr", depends_on=[]) %}
+
+
+
+
+% lets emit the definitions
+{% include "src.tera/include/defs.ly.tera" %}
+
+% lets always include guitar definitions
+\include "predefined-guitar-fretboards.ly"
+
+% book header
+%\book {
+	% this is the title page
+	\bookpart {
+		\markup {
+			\column {
+				\null
+				\null
+				\null
+				\null
+				\null
+				\null
+				\null
+				\null
+				\null
+				\null
+				\fill-line { \fontsize #11 \bold "OpenBook (C)"}
+				\null
+				\null
+				\fill-line { \larger \larger \bold "An open source Jazz real book" }
+				\null
+				\null
+				\null
+				\fill-line {
+					\huge \bold \concat {
+						"Website: "
+						\with-url #"https://veltzer.github.io/openbook" https://veltzer.github.io/openbook
+					}
+				}
+				\null
+				\fill-line {
+					\huge \bold \concat {
+						"Development: "
+						\with-url #"https://github.com/veltzer/openbook" https://github.com/veltzer/openbook
+					}
+				}
+				\null
+				\fill-line {
+					\huge \bold \concat {
+						"Lead developer: Mark Veltzer "
+						"<" \with-url #"mailto:mark.veltzer@gmail.com" mark.veltzer@gmail.com ">"
+					}
+				}
+				\null
+				\fill-line {
+					\huge \bold \concat {
+						"Typesetting copyright: © 2011-"
+						{{ year }}
+						" Mark Veltzer "
+						"<" \with-url #"mailto:mark.veltzer@gmail.com" mark.veltzer@gmail.com ">"
+					}
+				}
+				\null
+				\fill-line { \huge \bold "Tune copyright: © belong to their respective holders" }
+				\null
+				\null
+				\null
+				\fill-line { \small "Git tag: {{ gittag }}" }
+				\fill-line { \small "Git describe: {{ gitdesc }}" }
+				\fill-line { \small "Git commits: {{ gitcommits }}" }
+				\fill-line { \small "Build date: {{ date }}" }
+				\fill-line { \small "Build user: {{ username }}" }
+				\fill-line { \small "Build host: {{ hostname }}" }
+				\fill-line { \small "Build kernel: {{ kernel }}" }
+				\fill-line { \small "Lilypond version: {{ lilypond_version }}" }
+				\fill-line { \small "Number of tunes: 1" }
+				\null
+				\null
+				\null
+			}
+		}
+		\score {
+			<<
+				\new Staff="Melody" {
+					\new Voice="Voice"
+					\relative c' {
+						\time 4/4
+						\key f \major
+						\set fontSize = #-3
+						f8 e f c r4 a'8 aes | a c, r e~ e g f e | g f a bes a f g ees
+					}
+				}
+			>>
+			\layout {
+				#(layout-set-staff-size 35)
+				indent = 2.6\cm
+			}
+		}
+	}
+
+\markuplist \table-of-contents
+\pageBreak
+
+% from here everything needs to go into a loop
+{% set meta = load_toml(path="src.tera/guitar_album/torcacita.toml") %}
+% include anything the user wants before the bookpart starts
+{% include "src.tera/guitar_album/torcacita.Defs.ly.tera" %}
+
+\bookpart {
+
+% this causes the variables to be defined...
+
+
+
+
+
+
+
+
+
+
+
+% now play with the variables that depend on language
+
+
+
+% calculate the tag line
+
+
+% calculate the typesetby
+
+
+
+
+\tocItem \markup "{{ meta.computed.tocname }}"
+
+
+
+
+
+% taken from "/usr/share/lilypond/2.12.3/ly/titling-init.ly"
+\markup {
+	\column {
+{% if meta.has.dedication %}		\fill-line { "{{ meta.attributes.dedication }}" }
+{% endif %}		\override #'(baseline-skip . 3.5)
+		\column {
+			\huge \larger \bold
+			\fill-line { \larger "{{ meta.attributes.title }}" }
+{% if meta.has.subtitle %}			\fill-line { \large \smaller \bold \larger "{{ meta.attributes.subtitle }}" }
+{% endif %}{% if meta.has.subsubtitle %}			\fill-line { \smaller \bold "{{ meta.attributes.subsubtitle }}" }
+{% endif %}			\fill-line {
+				"{{ meta.computed.fullpoet }}"
+				"{{ meta.computed.fullcomposer }}"
+			}
+			\fill-line {
+{% if meta.has.piece %}				"{{ meta.attributes.piece }}"
+{% endif %}{% if meta.has.opus %}				"{{ meta.attributes.opus }}"
+{% else %}				""
+{% endif %}			}
+		}
+	}
+}
+\noPageBreak
+
+
+{% include "src.tera/guitar_album/torcacita.Own.ly.tera" %}
+
+\noPageBreak
+\markup \column {
+	% just a little space
+	\null
+	\fill-line {
+		\smaller \smaller { "{{ meta.computed.copyright }}" }
+	}
+{% if meta.has.copyrightextra %}	\fill-line {
+		\smaller \smaller { "{{ meta.attributes.copyrightextra }}" }
+	}
+{% endif %}{% if meta.has.copyrightextraextra %}	\fill-line {
+		\smaller \smaller { "{{ meta.attributes.copyrightextraextra }}" }
+	}
+{% endif %}
+	\fill-line {
+		\smaller \smaller { "Typeset by {{ meta.attributes.typesetter }}" }
+	}
+}
+
+
+
+}
+
+
+% book footer
+%}

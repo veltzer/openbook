@@ -67,6 +67,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "How Deep Is the Ocean / Irving Berlin"
 copyright = "Copyright © 1932 Irving Berling (Renewed)"
 fullcomposer = "Lyrics and Music by Irving Berlin"
 fullpoet = ""

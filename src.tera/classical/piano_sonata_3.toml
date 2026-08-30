@@ -64,6 +64,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Sonata III / Wolfgang Amadeus Mozart"
 copyright = "Copyright © 1918, G.Schirmer Inc."
 fullpoet = ""
 fullcomposer = "Music by Wolfgang Amadeus Mozart"

@@ -72,6 +72,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Green Dolphin Street / Bronislau Kaper, Ned Washington"
 copyright = "Copyright © 1947 (Renewed 1975) MGM/EMI Feist Catalog, Inc."
 fullpoet = "Lyrics by Ned Washington"
 fullcomposer = "Music by Bronislau Kaper"

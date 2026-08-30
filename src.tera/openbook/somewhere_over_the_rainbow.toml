@@ -76,6 +76,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Somewhere, Over The Rainbow / Harold Arlen, Edgar Yipsel 'Yip' Harburg"
 copyright = "Copyright © Musicopy"
 fullpoet = "Lyrics by Edgar Yipsel 'Yip' Harburg"
 fullcomposer = "Music by Harold Arlen"

@@ -67,6 +67,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "A Nightingale Sang in Berkeley Square / Manning Sherwin, Eric Maschwitz"
 copyright = "Copyright © 1951, Bourne Co. Copyright Renewed."
 fullpoet = "Lyrics by Eric Maschwitz"
 fullcomposer = "Music by Manning Sherwin"

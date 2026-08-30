@@ -67,6 +67,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Nice Work If You Can Get It / George Gershwin, Ira Gershwin"
 copyright = "Copyright © 1937 Gershwin Publishing Corp."
 fullpoet = "Lyrics by Ira Gershwin"
 fullcomposer = "Music by George Gershwin"

@@ -73,6 +73,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Blue Bossa / Kenny Dorham, Joan Cartwright"
 copyright = "Copyright © 1965 (Renewed 1993) Second Floor Music"
 fullpoet = "Lyrics by Joan Cartwright"
 fullcomposer = "Music by Kenny Dorham"

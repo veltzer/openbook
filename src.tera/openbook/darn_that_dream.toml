@@ -73,6 +73,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Darn That Dream / Jimmy Van Heusen, Eddie DeLange"
 copyright = "Copyright © 1939 Bregman, Vocco and Conn, Inc. New York"
 fullpoet = "Lyrics by Eddie DeLange"
 fullcomposer = "Music by Jimmy Van Heusen"

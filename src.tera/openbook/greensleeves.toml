@@ -71,6 +71,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Greensleeves / Traditional"
 copyright = "Copyright © 1988 by HAL LEONARD PUBLISHING CORPORATION"
 fullpoet = ""
 fullcomposer = "Music by Traditional"

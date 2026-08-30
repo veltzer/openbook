@@ -70,6 +70,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Blues For Alice / Charlie Parker"
 copyright = "Copyright © 1956 (Renewed 1984) Atlantic Music Corp."
 fullpoet = ""
 fullcomposer = "Music by Charlie Parker"

@@ -73,6 +73,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Summertime / George Gershwin, DuBose Heyward"
 copyright = "Copyright © 1935 by Gershwin Publishing Corporation"
 fullpoet = "Lyrics by DuBose Heyward"
 fullcomposer = "Music by George Gershwin"

@@ -68,6 +68,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Someone To Watch Over Me / George Gershwin, Ira Gershwin"
 copyright = "-- help me fill it out this copyright notice --"
 fullpoet = "Lyrics by Ira Gershwin"
 fullcomposer = "Music by George Gershwin"

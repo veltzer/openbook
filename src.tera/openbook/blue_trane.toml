@@ -70,6 +70,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Blue Trane / John Coltrane"
 copyright = "Copyright © 1957 (Renewed 1985) JOWCOL MUSIC"
 fullpoet = ""
 fullcomposer = "Music by John Coltrane"

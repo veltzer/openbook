@@ -64,6 +64,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Blue Skies / Irving Berlin"
 copyright = "-- help me fill it out this copyright notice --"
 fullcomposer = "Lyrics and Music by Irving Berlin"
 fullpoet = ""

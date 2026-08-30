@@ -70,6 +70,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Stella By Starlight / Victor Young, Ned Washington"
 copyright = "-- help me fill it out this copyright notice --"
 fullpoet = "Lyrics by Ned Washington"
 fullcomposer = "Music by Victor Young"

@@ -68,6 +68,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "איך הוא שר / דני רובס"
 copyright = "-- עיזרו לי למלא את שורת זכויות היוצרים הזו --"
 fullcomposer = "מילים ולחן: דני רובס"
 fullpoet = ""

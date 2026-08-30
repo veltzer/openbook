@@ -71,6 +71,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Serenade To A Cuckoo / Roland Kirk"
 copyright = "-- help me fill it out this copyright notice --"
 fullpoet = ""
 fullcomposer = "Music by Roland Kirk"

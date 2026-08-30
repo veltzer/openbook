@@ -69,6 +69,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Au Privave / Charlie Parker"
 copyright = "Copyright © 1956, Atlantic Music Corp."
 fullpoet = ""
 fullcomposer = "Music by Charlie Parker"

@@ -74,6 +74,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "All The Things You Are / Jerome Kern, Oscar Hammerstein II"
 copyright = "Copyright © 1939 T.B. Harms Company. Copyright Renewed."
 fullpoet = "Lyrics by Oscar Hammerstein II"
 fullcomposer = "Music by Jerome Kern"

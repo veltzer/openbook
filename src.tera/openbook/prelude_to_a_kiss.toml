@@ -64,6 +64,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Prelude To A Kiss / Duke Ellington, Irving Gordon and Irving Mills"
 copyright = "-- help me fill it out this copyright notice --"
 fullpoet = "Lyrics by Irving Gordon and Irving Mills"
 fullcomposer = "Music by Duke Ellington"

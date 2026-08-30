@@ -70,6 +70,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "נח / מתי כספי, יורם טהרלב"
 copyright = "-- עיזרו לי למלא את שורת זכויות היוצרים הזו --"
 fullpoet = "מלים: יורם טהרלב"
 fullcomposer = "לחן: מתי כספי"

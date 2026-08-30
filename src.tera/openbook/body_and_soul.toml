@@ -73,6 +73,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Body And Soul / John Green, Edward Heyman, Robert Sour, Frank Eyton"
 copyright = "Copyright © 1930 Warner Bros. Inc & Chappell & Co. Ltd."
 fullpoet = "Lyrics by Edward Heyman, Robert Sour, Frank Eyton"
 fullcomposer = "Music by John Green"

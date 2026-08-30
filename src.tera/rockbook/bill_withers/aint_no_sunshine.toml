@@ -68,6 +68,7 @@ lyricsurl = true
 wiki = true
 
 [computed]
+tocname = "Ain't No Sunshine / Bill Withers"
 copyright = "-- help me fill it out this copyright notice --"
 fullcomposer = "Lyrics and Music by Bill Withers"
 fullpoet = ""

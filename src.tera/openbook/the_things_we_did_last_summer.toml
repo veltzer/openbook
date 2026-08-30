@@ -76,6 +76,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "The Things We Did Last Summer / Sammy Chan, Jule Styne"
 copyright = "Copyright © 1946 by Edwin H. Morris & Co., Inc"
 fullcomposer = "Lyrics and Music by Sammy Chan, Jule Styne"
 fullpoet = ""

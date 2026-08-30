@@ -74,6 +74,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "My Favorite Things / Richard Rodgers, Oscar Hammerstein II"
 copyright = "Copyright © 1959 by Richard Rodgers and Oscar Hammerstein II. Copyright Renewed."
 fullpoet = "Lyrics by Oscar Hammerstein II"
 fullcomposer = "Music by Richard Rodgers"

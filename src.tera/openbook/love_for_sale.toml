@@ -66,6 +66,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Love For Sale / Cole Porter"
 copyright = "Copyright © 1930 (Renewed) Warner Bros. Inc."
 fullcomposer = "Lyrics and Music by Cole Porter"
 fullpoet = ""

@@ -74,6 +74,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Blue Room / Richard Rodgers, Lorenz Hart"
 copyright = "Copyright © 1926 (Renewed) by Chappal & Co"
 fullpoet = "Lyrics by Lorenz Hart"
 fullcomposer = "Music by Richard Rodgers"

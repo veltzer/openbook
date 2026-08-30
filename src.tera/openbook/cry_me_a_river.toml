@@ -66,6 +66,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Cry Me A River / Arthur Hamilton"
 copyright = "Copyright © 1953, 1955 by Saunders Publications, Inc."
 fullcomposer = "Lyrics and Music by Arthur Hamilton"
 fullpoet = ""

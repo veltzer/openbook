@@ -73,6 +73,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Giant Steps / John Coltrane"
 copyright = "Copyright © 1974 Jowcol Music."
 fullpoet = ""
 fullcomposer = "Music by John Coltrane"

@@ -68,6 +68,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Doxy / Sonny Rollins"
 copyright = "Copyright © 1963 Prestige Music Co, Inc."
 fullpoet = ""
 fullcomposer = "Music by Sonny Rollins"

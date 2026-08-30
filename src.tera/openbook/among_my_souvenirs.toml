@@ -65,6 +65,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Among My Souvenirs / Horatio Nicholls, Edgar Leslie"
 copyright = "-- help me fill it out this copyright notice --"
 fullpoet = "Lyrics by Edgar Leslie"
 fullcomposer = "Music by Horatio Nicholls"

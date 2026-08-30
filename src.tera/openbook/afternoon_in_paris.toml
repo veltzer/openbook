@@ -70,6 +70,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Afternoon in Paris / John Lewis"
 copyright = "Copyright © 1955 and Renewal of Copyright 1983 by MJQ Music, Inc."
 fullpoet = ""
 fullcomposer = "Music by John Lewis"

@@ -74,6 +74,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "But Beautiful / Johnny Burke, James Van Heusen"
 copyright = "Copyright © 1947 by Doesey Brothers Music, A Division of Music Sales Corporation, New York"
 fullcomposer = "Lyrics and Music by Johnny Burke, James Van Heusen"
 fullpoet = ""

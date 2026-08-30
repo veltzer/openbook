@@ -73,6 +73,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Alone Together / Arthur Schwartz, Howard Dietz"
 copyright = "Copyright © 1932 (Renewed) Warner Bros. Inc."
 fullpoet = "Lyrics by Howard Dietz"
 fullcomposer = "Music by Arthur Schwartz"

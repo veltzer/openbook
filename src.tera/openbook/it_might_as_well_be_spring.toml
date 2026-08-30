@@ -74,6 +74,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "It Might As Well Be Spring / Richard Rodgers, Oscar Hammerstein II"
 copyright = "Copyright © 1945 by Williamson Music Co."
 fullpoet = "Lyrics by Oscar Hammerstein II"
 fullcomposer = "Music by Richard Rodgers"

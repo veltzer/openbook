@@ -1,4 +1,4 @@
-{% set meta = load_toml(path="src.tera/study/drumming_rock_drills.toml") %}{% set lilypond_version = shell_output(command='lilypond --version 2>/dev/null | head -n 1 | cut -d " " -f 3', depends_on=[]) %}{% set date = shell_output(command="date +%d-%m-%Y", depends_on=[]) %}
+{% set lilypond_version = shell_output(command='lilypond --version 2>/dev/null | head -n 1 | cut -d " " -f 3', depends_on=[]) %}{% set date = shell_output(command="date +%d-%m-%Y", depends_on=[]) %}
 
 
 
@@ -12,7 +12,7 @@
 
 
 % from here everything needs to go into a loop
-
+{% set meta = load_toml(path="src.tera/study/drumming_rock_drills.toml") %}
 % include anything the user wants before the bookpart starts
 
 

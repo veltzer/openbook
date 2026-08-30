@@ -64,6 +64,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "A Cup Of Coffee, A Sandwich And You / Joseph Meyer, Billy Rose, Al Dubin"
 copyright = "-- help me fill it out this copyright notice --"
 fullpoet = "Lyrics by Billy Rose, Al Dubin"
 fullcomposer = "Music by Joseph Meyer"

@@ -65,6 +65,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Symphony 2 / Ludwig van Beethoven"
 copyright = "Copyright © Public Domain"
 fullpoet = ""
 fullcomposer = "Music by Ludwig van Beethoven"

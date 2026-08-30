@@ -69,6 +69,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Billie's Bounce / Charlie Parker"
 copyright = "-- help me fill it out this copyright notice --"
 fullpoet = ""
 fullcomposer = "Music by Charlie Parker"

@@ -66,6 +66,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Honeysuckle Rose / Thomas 'Fats' Waller, Andy Razaf"
 copyright = "Copyright © 1929 Santly Bros., Inc."
 fullpoet = "Lyrics by Andy Razaf"
 fullcomposer = "Music by Thomas 'Fats' Waller"

@@ -67,6 +67,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Lost In The Stars / Kurt Weill, Maxwell Anderson"
 copyright = "Copyright © 1946 Chappell & Co., Inc"
 fullpoet = "Lyrics by Maxwell Anderson"
 fullcomposer = "Music by Kurt Weill"

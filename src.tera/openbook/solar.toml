@@ -70,6 +70,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Solar / Miles Davis"
 copyright = "-- help me fill it out this copyright notice --"
 fullpoet = ""
 fullcomposer = "Music by Miles Davis"

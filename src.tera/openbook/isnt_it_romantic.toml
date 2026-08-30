@@ -73,6 +73,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Isn't It Romantic / Richard Rodgers, Lorenz Hart"
 copyright = "Copyright © 1932 (Renewed 1959) by Famous Music Corporation"
 fullpoet = "Lyrics by Lorenz Hart"
 fullcomposer = "Music by Richard Rodgers"

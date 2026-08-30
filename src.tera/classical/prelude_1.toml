@@ -67,6 +67,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Prelude and Fugue No. 1 in C major / Johann Sebastian Bach (1685-1750)"
 copyright = "Copyright © Public Domain"
 fullpoet = ""
 fullcomposer = "Music by Johann Sebastian Bach (1685-1750)"

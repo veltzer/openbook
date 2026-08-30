@@ -71,6 +71,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "St. Thomas / Sonny Rollins"
 copyright = "Copyright © 1963, Prestigve Music"
 fullpoet = ""
 fullcomposer = "Music by Sonny Rollins"

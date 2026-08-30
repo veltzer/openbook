@@ -73,6 +73,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Misty / Errol Garner, Johnny Burke"
 copyright = "Copyright © 1955. Renewed 1983 Marke Music, Limerick Music, Reganesque"
 fullpoet = "Lyrics by Johnny Burke"
 fullcomposer = "Music by Errol Garner"

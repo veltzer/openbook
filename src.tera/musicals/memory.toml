@@ -66,6 +66,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Memory / Andrew Lloyd Webber, Trevor Nunn after T.S. Eliot"
 copyright = "Copyright © Copyright 1981 by the Really Useful Group plc. and Faber Music Ltd."
 fullpoet = "Lyrics by Trevor Nunn after T.S. Eliot"
 fullcomposer = "Music by Andrew Lloyd Webber"

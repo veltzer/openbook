@@ -64,6 +64,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Heart And Soul / Frank Losser, Hoagy Carmichael"
 copyright = "-- help me fill it out this copyright notice --"
 fullcomposer = "Lyrics and Music by Frank Losser, Hoagy Carmichael"
 fullpoet = ""

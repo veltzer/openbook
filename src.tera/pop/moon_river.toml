@@ -68,6 +68,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Moon River / Henri Mancini, Johnny Mercer"
 copyright = "-- help me fill it out this copyright notice --"
 fullpoet = "Lyrics by Johnny Mercer"
 fullcomposer = "Music by Henri Mancini"

@@ -69,6 +69,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Baby One More Time / Max Martin"
 copyright = "-- help me fill it out this copyright notice --"
 fullcomposer = "Lyrics and Music by Max Martin"
 fullpoet = ""

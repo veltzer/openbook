@@ -74,6 +74,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Someday My Prince Will Come / Frank Churchill, Larry Morey"
 copyright = "-- help me fill it out this copyright notice --"
 fullpoet = "Lyrics by Larry Morey"
 fullcomposer = "Music by Frank Churchill"

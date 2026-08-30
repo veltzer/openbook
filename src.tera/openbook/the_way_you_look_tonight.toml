@@ -76,6 +76,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "The Way You Look Tonight / Jerome Kern, Dorothy Fields"
 copyright = "Copyright © 1936 T B Harms Co."
 fullpoet = "Lyrics by Dorothy Fields"
 fullcomposer = "Music by Jerome Kern"

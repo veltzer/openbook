@@ -74,6 +74,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Stormy Weather / Harold Arlen, Ted Koehler"
 copyright = "Copyright © 1933 MILLIS MUSIC, INC."
 fullpoet = "Lyrics by Ted Koehler"
 fullcomposer = "Music by Harold Arlen"

@@ -72,6 +72,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Once I Loved / Antonio Carlos Jobim, Vinicius DeMoraes, Ray Gilbert"
 copyright = "Copyright © 1965, Ipanema Music. Used By Permission."
 fullpoet = "Lyrics by Vinicius DeMoraes, Ray Gilbert"
 fullcomposer = "Music by Antonio Carlos Jobim"

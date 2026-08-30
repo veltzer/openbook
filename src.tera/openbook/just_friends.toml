@@ -73,6 +73,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Just Friends / John Klenner, Sam M. Lewis"
 copyright = "Copyright © 1931 (renewed 1959) EMI Robbins Catalog, Inc."
 fullpoet = "Lyrics by Sam M. Lewis"
 fullcomposer = "Music by John Klenner"

@@ -69,6 +69,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Come Rain Or Come Shine / Harold Arlen, Johnny Mercer"
 copyright = "Copyright © 1946, by A-M Music Corp. Copyright Renewed, all rights controlled by Chappell & Co., Inc."
 fullpoet = "Lyrics by Johnny Mercer"
 fullcomposer = "Music by Harold Arlen"

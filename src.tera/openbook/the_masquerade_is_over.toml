@@ -64,6 +64,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "(I'm Afraid) The Masquerade Is Over / Allie Wrubel, Herb Magidson"
 copyright = "-- help me fill it out this copyright notice --"
 fullpoet = "Lyrics by Herb Magidson"
 fullcomposer = "Music by Allie Wrubel"

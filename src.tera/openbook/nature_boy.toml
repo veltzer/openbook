@@ -74,6 +74,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Nature Boy / Eben Ahbez"
 copyright = "Copyright © 1948, Eben Ahbez"
 fullcomposer = "Lyrics and Music by Eben Ahbez"
 fullpoet = ""

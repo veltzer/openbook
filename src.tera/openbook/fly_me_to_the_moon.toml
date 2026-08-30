@@ -73,6 +73,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Fly Me To The Moon / Bart Howard"
 copyright = "Copyright © 1954 and renewed 1982 Hampshire House Publishing Corp., New York NY."
 fullcomposer = "Lyrics and Music by Bart Howard"
 fullpoet = ""

@@ -73,6 +73,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "My Ship / Kurt Weil, Ira Gershwin"
 copyright = "Copyright © 1941 and renewed 1969 Hampshire House Publishing Corp. and Chappell & Co., Inc., New York, NY"
 fullpoet = "Lyrics by Ira Gershwin"
 fullcomposer = "Music by Kurt Weil"

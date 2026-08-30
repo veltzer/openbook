@@ -72,6 +72,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Waltz For Debby / Bill Evans, Gene Lees"
 copyright = "Copyright © 1964 and 1965 Acom Music Corp., New York, NY."
 fullpoet = "Lyrics by Gene Lees"
 fullcomposer = "Music by Bill Evans"

@@ -62,6 +62,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Chanson des faucheurs / R. Schumann"
 copyright = "-- help me fill it out this copyright notice --"
 fullpoet = ""
 fullcomposer = "Music by R. Schumann"

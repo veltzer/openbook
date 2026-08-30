@@ -73,6 +73,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Alice In Wonderland / Sammy Fain, Bob Hilliard"
 copyright = "Copyright © 1951 Walt Disney Music Company"
 fullpoet = "Lyrics by Bob Hilliard"
 fullcomposer = "Music by Sammy Fain"

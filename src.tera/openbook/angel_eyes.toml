@@ -72,6 +72,7 @@ lyricsurl = true
 wiki = false
 
 [computed]
+tocname = "Angel Eyes / Matt Dennis, Earl Brent"
 copyright = "Copyright © 1946 (Renewed 1973) Dorsey Brothers Music"
 fullpoet = "Lyrics by Earl Brent"
 fullcomposer = "Music by Matt Dennis"

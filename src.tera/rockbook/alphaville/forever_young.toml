@@ -63,6 +63,7 @@ lyricsurl = false
 wiki = false
 
 [computed]
+tocname = "Forever Young / Alphaville"
 copyright = "-- help me fill it out this copyright notice --"
 fullpoet = ""
 fullcomposer = "Music by Alphaville"
