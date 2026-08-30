@@ -1,0 +1,24 @@
+
+
+
+\chordmode {
+	\startSong
+	\startChords
+
+	\myMark "A"
+	\startPart
+	c1:m | g2:7.5+ g:7 | c1:m | g:7 | \myEndLine
+	d2:m7.5- g:7.9- | d:m7.9- g:7 | c:m g:7 | c1:m | \myEndLine
+	c2:m g:7/d | c:m/ees c:m | c1:m | \myEndLine
+	c2:m g:7/d | c:m/ees c:m | c:m d:m7.5- | g1:7.9- | \myEndLine
+	c2:m g:7 | c:m g:7 | g:7.9-/f g:7.9-/d | g:7.9-/b g:7.9- | g1:7.9- | \myEndLine
+	c2:m c:m/bes | aes:maj7 g:7 | d:m7.5- g:7 | d:m7.5- g:7 | \myEndLine
+	c1:m | d:m7.5- | c2:m/g g:7 | \myEndLine
+	c1:m | g2:7 des:6.9 | c:m g:7 | c1:m | \myEndLine
+	\endPart
+
+	\endChords
+	\endSong
+}
+
+

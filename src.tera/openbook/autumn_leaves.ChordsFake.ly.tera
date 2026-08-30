@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\partial 2. s2. |
+
+	\myMark "A"
+	\startPart
+	a1:m7 | d:7 | g:maj7 | c:maj7 | \myEndLine
+	fis:m7.5- | b:7 | e1*2:m | \myEndLine
+	\endPart
+
+	\myMark "A"
+	\startPart
+	a1:m7 | d:7 | g:maj7 | c:maj7 | \myEndLine
+	fis:m7.5- | b:7 | e2:m a:m | e1:m | \myEndLine
+	\endPart
+
+	\myMark "B"
+	\startPart
+	fis:m7.5- | b:7 | e1*2:m | \myEndLine
+	a1:m7 | d:7 | g:maj7 | e:7.9- | \myEndLine
+	fis:m7.5- | b:7.9- | e2:m e:m/d | cis:m7.5- c:maj7 | \myEndLine
+	fis1:m7.5- | b:7.9- | e2:m a:m | e1:m | \myEndLine
+	\endPart
+
+	\endSong
+	\endChords
+}
+
+

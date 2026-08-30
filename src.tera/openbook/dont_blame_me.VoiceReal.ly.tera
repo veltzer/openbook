@@ -1,0 +1,32 @@
+
+
+
+
+{
+	\tempo "Allegro" 4 = 130
+	\time 4/4
+	\key c \major
+
+	% part "A"
+	\repeat volta 2 {
+		g'2 bes | a2. g4 | \tuplet 3/2 { f4 f f } e e | d2. c4 |
+		\tuplet 3/2 { f f f } e d | \tuplet 3/2 { g g g } f e |
+	} \alternative {
+		{
+			a2 b | g1 |
+		}
+		{
+			a2 a | c1 |
+		}
+	}
+
+	% part "B"
+	gis4 a gis a | ais b ais b | d2 c4 c~ | c1 |
+	d2 c4 c~ | c2 \tuplet 3/2 { d,4 fis b } | a2 aes | g1 |
+
+	% part "A"
+	g2 bes | a2. g4 | \tuplet 3/2 { f4 f f } e e | d2. c4 |
+	\tuplet 3/2 { f f f } e d | \tuplet 3/2 { g g g } f e | a2 a | c2. r4 |
+}
+
+

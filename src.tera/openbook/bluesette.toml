@@ -1,0 +1,90 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Fake"
+
+[attributes]
+title = "Bluesette"
+style = "Jazz"
+composer = "Jean 'Toots' Thielemans"
+poet = "Norman Gimbel"
+piece = "Moderate Waltz"
+copyright = "1963, 1964 by MUSIC CORPORATION OF AMERICA, INC., New York, NY"
+copyrightextra = "Rights Administered by MCA MUSIC PUBLISHING, A Division of MCA Inc., New York, NY"
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "e4c0cc74-eb5c-11e3-8d65-b71fa04c4d86"
+structure = "A"
+location = "jfb:67-68"
+idyoutuberemark1 = "Bill with Toots"
+idyoutube1 = "micPH3vJVs0"
+idyoutuberemark2 = "Toots with Orchestra"
+idyoutube2 = "yKnG_9q4crA"
+lyricsurl = "http://www.lyricsmode.com/lyrics/t/toots_thielemans/bluesette.html"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = true
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = false
+location = true
+remark = false
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = true
+idyoutube2 = true
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "Copyright © 1963, 1964 by MUSIC CORPORATION OF AMERICA, INC., New York, NY"
+fullpoet = "Lyrics by Norman Gimbel"
+fullcomposer = "Music by Jean 'Toots' Thielemans"
+
+[versions.Fake]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = true
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

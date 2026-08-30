@@ -1,0 +1,80 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "DontMatter"
+
+[attributes]
+title = "Forever Young"
+style = "Pop"
+composer = "Alphaville"
+piece = "Med. Ballad"
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "625ad0a2-a26f-11df-8f71-0019d11e5a41"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = false
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = false
+copyrightextra = false
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = false
+structureremark = false
+location = false
+remark = false
+idyoutuberemark1 = false
+idyoutube1 = false
+idyoutuberemark2 = false
+idyoutube2 = false
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = false
+wiki = false
+
+[computed]
+copyright = "-- help me fill it out this copyright notice --"
+fullpoet = ""
+fullcomposer = "Music by Alphaville"
+
+[versions.DontMatter]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = true
+doExtra = false
+doPrep = false
+doOwn = true

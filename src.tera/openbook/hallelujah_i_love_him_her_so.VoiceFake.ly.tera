@@ -1,0 +1,32 @@
+
+
+
+
+{
+	\tempo "Allegro" 4 = 130
+	\time 4/4
+	\key f \major
+
+	% part "A"
+	r8. c'16[ d8. c16] aes8.[ g16 f8. d16] | f4 f8 aes~ aes r r4 |
+	r8. c16[ d8. c16] aes8.[ g16 f8. d16] | f4 f8 d~ d8. c16 r4 |
+	r4 d'8. c16 aes8.[ g16 f8. d16] | f4 f8 f~ f r r4 |
+	r8. d16[ f8. d16] f8.[ d16 f8. d16] | f4 f8 f~ f8.[ c16 d8. f16] |
+	a8 c4. r4 a8. a16 | g8 f4. r4 aes8. g16 |
+	aes8.[ g16 f8. d16] f4 f8 f~ | f r r4 r2 |
+
+	% part "B"
+	r8. d16[ f8. d16] f8.[ d16 f8. d16] | f8. f16 f4 r2 |
+	r4 a d8.[ c16 a8. f16] | a4 f8 g~ g4 r |
+	r f8. d16 f8.[ d16 f8. d16] | f4 f8 f~ f r r4 |
+	r8. d16[ g8. d16] r2 | g8 a4 d8~ d4 c |
+
+	% part "A"
+	r4 d8. c16 aes8.[ g16 f8. d16] | f4 f8 aes~ aes r r4 |
+	r4 d8. c16 aes8.[ g16 f8. d16] | f4 f8 d~ d8. c16 r4 |
+	r8. c'16[ d8. c16] aes8.[ g16 f8. d16] | f4 f8 f~ f r r4 |
+	r8. d16[ f8. d16] f8.[ d16 f8. d16] | f4 f8 f~ f8.[ c16 d8. f16] |
+	a8 c4. r4 a8. a16 | g8 f4. r4 aes8. g16 |
+	aes8.[ g16 f8. d16] f4 f8 f~ | f1~ | f2 r |
+}
+

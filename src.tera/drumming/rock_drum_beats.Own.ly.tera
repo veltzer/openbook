@@ -1,0 +1,22 @@
+
+
+
+\markup {
+Regular rock type drumming...
+}
+\score {
+<<
+	\new DrumStaff <<
+		\drummode {
+			\stemUp
+			bd4 sn bd sn |
+			bd sn s8 bd sn4 |
+			bd sn8 bd s bd sn4 |
+			bd sn bd8 bd sn sn |
+			bd bd sn bd bd bd sn bd |
+		}
+	>>
+>>
+	\layout {}
+}
+

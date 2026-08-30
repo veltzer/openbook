@@ -1,0 +1,90 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Real"
+
+[attributes]
+title = "Alice In Wonderland"
+style = "Jazz"
+composer = "Sammy Fain"
+poet = "Bob Hilliard"
+piece = "Med."
+copyright = "1951 Walt Disney Music Company"
+copyrightextra = "Copyright Renewed"
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "718a13e0-023a-11e1-924f-0019d11e5a41"
+structure = "AABA"
+location = "rbk1:12"
+idyoutuberemark1 = "An amzing version by Oscar Peterson"
+idyoutube1 = "TSNPzm_wYLY"
+idyoutuberemark2 = "Bill Evans in the amazing Village Vanguard version"
+idyoutube2 = "bSXRvgFea-0"
+lyricsurl = "http://www.stlyrics.com/lyrics/aliceinwonderland/aliceinwonderland.htm"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = true
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = false
+location = true
+remark = false
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = true
+idyoutube2 = true
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "Copyright © 1951 Walt Disney Music Company"
+fullpoet = "Lyrics by Bob Hilliard"
+fullcomposer = "Music by Sammy Fain"
+
+[versions.Real]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = true
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

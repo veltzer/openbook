@@ -1,0 +1,46 @@
+
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\repeat volta 2 {
+
+		\myMark "A"
+		\startPart
+		ees1:6 | ees:maj7 | bes1*2:7 | ees1:m7 | des2:m7 ges:9 | ces1:6 | aes2:m7 aes:m7/ges | \myEndLine
+		f1:m7.5- | bes:7 | ees:m6 | c:m7.5- | f:7 | bes:7 | ees:6 | f2:m7 bes:7 | \myEndLine
+		\endPart
+
+		\myMark "A"
+		\startPart
+		ees1:6 | ees:maj7 | bes1*2:7 | ees1:m7 | des2:m7 ges:9 | ces1:6 | ces2:6 ces/bes | \myEndLine
+		aes1:m7 | des:7 | ges:maj7 | b:maj7 | f:7 | bes:7 | ees2:6 aes:6 | ees ees:7 | \myEndLine
+		\endPart
+
+		\myMark "B"
+		\startPart
+		aes1:maj7 | aes:m7 | ees | g2:m7 c:7 | f1:m7 | bes:7 | ees:maj7 | ees:7 | \myEndLine
+		aes:maj7 | des:7 | ges2:maj7 ges/f | ees:m7 ees:m/des | c1:m7.5- | f:7 | bes2 bes:maj7 | bes1:7 | \myEndLine
+		\endPart
+
+		\myMark "A"
+		\startPart
+		ees | ees:maj7 | a:m7.5- | d:7 | bes:m7 | ees2:7 aes:maj7 | d1:m7.5- | g:7 | \myEndLine
+		g:m7.5- | c:7.5+ | f:m | fis:dim7 | f:7.5-/ces | bes:7 |
+	} \alternative {
+		{
+			ees | f2:m7 bes:7 | \myEndLineVoltaNotLast
+		}
+		{
+			ees2:6 aes:6 | ees1:6 | f1*2:m7 | bes1:7.9- | bes2:7.9- e:9 | ees1*4:6.9 | \myEndLineVoltaLast
+		}
+	}
+	\endPart
+
+	\endSong
+	\endChords
+}
+
+

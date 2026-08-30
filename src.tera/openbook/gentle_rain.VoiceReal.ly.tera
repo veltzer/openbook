@@ -1,0 +1,30 @@
+
+
+
+
+{
+	\tempo "Allegro" 4 = 130
+	\time 4/4
+	\key a \minor
+
+	\repeat volta 2 {
+
+		% part "A"
+		e2. d8 c | c2. d8 e | e2. d8 c | b2. c8 d |
+		e1~ | e2 e8 g e c | d1~ | d2. r4 |
+
+		% part "B"
+		c'2. b8 a | a2. g8 fis | bes2. a8 g | g2. f8 e |
+		aes2. g8 f | f2. e8 d |
+	} \alternative {
+		{
+			e1~ | e2. r4 |
+		}
+		{
+			e1~ | e2 e8 g e c | d1~ | d2 e8 g e c |
+			d1~ | d2 b'8 d b g | a1~ | a1 |
+		}
+	}
+}
+
+

@@ -1,0 +1,83 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Own"
+
+[attributes]
+title = "Memory"
+style = "Musical"
+composer = "Andrew Lloyd Webber"
+poet = "Trevor Nunn after T.S. Eliot"
+piece = "Musical"
+copyright = "Copyright 1981 by the Really Useful Group plc. and Faber Music Ltd."
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "1"
+uuid = "cc3c46c7-908d-4b3e-b90f-1e01a942ef27"
+remark = "Taken from Scribd url http://www.scribd.com/doc/9491593/Sheet-Music-Cats-Memory"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = false
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = false
+structureremark = false
+location = false
+remark = true
+idyoutuberemark1 = false
+idyoutube1 = false
+idyoutuberemark2 = false
+idyoutube2 = false
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = false
+wiki = false
+
+[computed]
+copyright = "Copyright © Copyright 1981 by the Really Useful Group plc. and Faber Music Ltd."
+fullpoet = "Lyrics by Trevor Nunn after T.S. Eliot"
+fullcomposer = "Music by Andrew Lloyd Webber"
+
+[versions.Own]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = true

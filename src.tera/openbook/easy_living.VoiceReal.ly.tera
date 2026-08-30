@@ -1,0 +1,32 @@
+
+
+
+
+{
+	\tempo "Moderato" 4 = 108
+	\time 4/4
+	\key f \major
+
+	% part "A"
+	\repeat volta 2 {
+		\tuplet 3/2 { a'4 d c } ees,2 | r8 d g bes d f4 e8 | \tuplet 3/2 { b4 d c } f,2 | r8 d f a c4. bes8 |
+		\tuplet 3/2 { a4 g' f } a,4. e'8 |
+	} \alternative {
+		{
+			d4 bes8 d, a'4 g | a1~ | a |
+		}
+		{
+			d4 bes8 d, a'4 a8 f~ | f1~ | f2. f4 |
+		}
+	}
+
+	% part "B"
+	aes1 | \tuplet 3/2 { ees'4 f fes } \tuplet 3/2 { ees c bes } | aes1 | e'!8 f e f ees4 c8 bes |
+	aes2 \tuplet 3/2 { aes4 f aes } | bes2 \tuplet 3/2 { bes4 g bes } | c2 d | g8 e d c gis2 |
+
+	% part "A"
+	\tuplet 3/2 { a4 d c } ees,2 | r8 d g bes d f4 e8 | \tuplet 3/2 { b4 d c } f,2 | r8 d f a c4. bes8 |
+	\tuplet 3/2 { a4 g' f } a,4. e'8 | d4 bes8 d, a'4 a8 f~ | f1~ | f |
+}
+
+

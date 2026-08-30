@@ -1,0 +1,85 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "My"
+
+[attributes]
+heb = true
+title = "גשם"
+style = "Israeli"
+composer = "יחיאל אמסלם"
+poet = "יעקב גלעד"
+piece = "בלדת רוק"
+singer = "אלי לוזון"
+typesetter = "מרק ולצר <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "c562b5fa-c345-11e0-995c-0019d11e5a41"
+idyoutube1 = "1CBj7q51-BQ"
+lyricsurl = "http://www.mp3music.co.il/lyrics/448.html"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = true
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = true
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = false
+copyrightextra = false
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = false
+structureremark = false
+location = false
+remark = false
+idyoutuberemark1 = false
+idyoutube1 = true
+idyoutuberemark2 = false
+idyoutube2 = false
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "-- עיזרו לי למלא את שורת זכויות היוצרים הזו --"
+fullpoet = "מלים: יעקב גלעד"
+fullcomposer = "לחן: יחיאל אמסלם"
+
+[versions.My]
+doChords = true
+doVoice = true
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = true
+doExtra = true
+doPrep = false
+doOwn = false

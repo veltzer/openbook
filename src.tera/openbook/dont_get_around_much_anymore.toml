@@ -1,0 +1,83 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Fake"
+
+[attributes]
+title = "Don't Get Around Much Anymore"
+style = "Jazz"
+composer = "Duke Ellington"
+poet = "Bob Russell"
+piece = "Medium Swing"
+copyright = "1973 Herrison Music Corp. and Robbins Music"
+typesetter = "Jordan Eldredge <jordan@jordaneldredge.com>"
+completion = "5"
+uuid = "09a63a8e-da81-11e3-b649-339a89e65802"
+structure = "AABA"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = false
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = false
+location = false
+remark = false
+idyoutuberemark1 = false
+idyoutube1 = false
+idyoutuberemark2 = false
+idyoutube2 = false
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = false
+wiki = false
+
+[computed]
+copyright = "Copyright © 1973 Herrison Music Corp. and Robbins Music"
+fullpoet = "Lyrics by Bob Russell"
+fullcomposer = "Music by Duke Ellington"
+
+[versions.Fake]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

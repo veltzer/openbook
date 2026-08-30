@@ -1,0 +1,86 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Epdf0"
+
+[attributes]
+heb = true
+title = "איך זה שכוכב"
+style = "Israeli"
+composer = "מתי כספי"
+poet = "נתן זך"
+piece = "בוסה נובה"
+singer = "מתי כספי"
+typesetter = "מרק ולצר <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "d936b39a-971e-11e0-9c44-0019d11e5a41"
+structure = "AB"
+location = "file:eich_ze_shekochav.pdf"
+idyoutube1 = "1GI5Vst5a-o"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = true
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = true
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = false
+copyrightextra = false
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = false
+location = true
+remark = false
+idyoutuberemark1 = false
+idyoutube1 = true
+idyoutuberemark2 = false
+idyoutube2 = false
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = false
+wiki = false
+
+[computed]
+copyright = "-- עיזרו לי למלא את שורת זכויות היוצרים הזו --"
+fullpoet = "מלים: נתן זך"
+fullcomposer = "לחן: מתי כספי"
+
+[versions.Epdf0]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = true
+doPrep = false
+doOwn = false

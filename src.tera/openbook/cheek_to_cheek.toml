@@ -1,0 +1,87 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Real"
+
+[attributes]
+title = "Cheek to Cheek"
+style = "Jazz"
+composer = "Irving Berlin"
+piece = "Bright Swing"
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "1"
+uuid = "1ae3c3d4-1951-11ee-94b2-4fe241ad9c11"
+structure = "AABA"
+location = "rbk3:50"
+idyoutuberemark1 = ""
+idyoutube1 = ""
+idyoutuberemark2 = ""
+idyoutube2 = ""
+lyricsurl = "https://www.azlyrics.com/lyrics/franksinatra/cheektocheek.html"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = false
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = false
+copyrightextra = false
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = false
+location = true
+remark = false
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = true
+idyoutube2 = true
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "-- help me fill it out this copyright notice --"
+fullpoet = ""
+fullcomposer = "Music by Irving Berlin"
+
+[versions.Real]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

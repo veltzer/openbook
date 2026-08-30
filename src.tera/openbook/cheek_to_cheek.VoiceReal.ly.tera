@@ -1,0 +1,24 @@
+
+
+
+
+{
+	\tempo "Allegro" 4 = 130
+	\time 4/4
+	\key c \major
+
+	% part "A"
+	\repeat volta 2 {
+	} \alternative {
+		{
+		}
+		{
+		}
+	}
+
+	% part "B"
+}
+
+
+
+

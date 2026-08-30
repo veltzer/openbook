@@ -1,0 +1,33 @@
+
+
+
+
+{
+	\tempo "Andante" 4 = 108
+	\time 4/4
+	\key ees \major
+
+	\partial 2 d8 ees c d |
+
+	\repeat volta 2 {
+
+		% part "A"
+		ees4 ees2. | d8 ees c d ees4 f | g4. g8 bes4. bes8 | g2 d8 ees c d |
+		ees4 ees2. | d8 ees c d ees4 f | g4. g8 bes4. bes8 | des1 |
+	} \alternative {
+		{
+
+			% part "B"
+			c | d8 c bes aes g4 f | ees4. ees8 g4. g8 | ees1 |
+			c' | d8 c bes aes g4 f | ees4. ees8 c'4. c8 | des,2 d8 ees c d |
+		}
+		{
+
+			% part "C"
+			c'1 | d8 c bes aes g4 f | ees4. ees8 g4. g8 | c4. c8 ees4. ees8 |
+			f4 ees bes2~ | bes d8 ees c d | ees1~ | ees2 \mark \markup { \italic { Fine } } <\parenthesize d,>8 <\parenthesize ees> <\parenthesize c> <\parenthesize d> |
+		}
+	}
+}
+
+

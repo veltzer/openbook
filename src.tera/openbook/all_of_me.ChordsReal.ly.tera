@@ -1,0 +1,28 @@
+
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\myMark "A"
+	\startPart
+	c1*2:maj7 | e:7 | \myEndLine
+	a:7 | d:m | \myEndLine
+	e:7 | a:m | \myEndLine
+	d:7 | d1:m7 | g:7 | \myEndLine
+	\endPart
+
+	\myMark "B"
+	\startPart
+	c1*2:maj7 | e:7 | \myEndLine
+	a:7 | d:m | \myEndLine
+	f1 | f:m | c2:maj7 e:m7 | a1:7 | \myEndLine
+	d:m7 | g:7 | c2:6 \LPC ees:dim | d:m7 \RPC g:7 | \myEndLine
+	\endPart
+
+	\endSong
+	\endChords
+}
+
+

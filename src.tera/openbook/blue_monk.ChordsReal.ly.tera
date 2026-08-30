@@ -1,0 +1,18 @@
+
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\myMark "A"
+	\startPart
+	bes1 | ees:7 | bes2 f:7 | bes bes:7 | \myEndLine
+	ees1 | e:dim7 | bes2 f:7 | bes1 | \myEndLine
+	f1*2:7 | bes1. \OPC f2:7 | \myEndLine
+	\endPart
+
+	\endSong
+	\endChords
+}
+

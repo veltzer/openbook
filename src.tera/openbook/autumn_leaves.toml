@@ -1,0 +1,103 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Fake"
+
+[attributes]
+title = "Autumn Leaves"
+style = "Jazz"
+subtitle = "Les Feuilles Mortes"
+composer = "Joseph Kosma"
+poet = "Jacques Prevert, Johnny Mercer"
+piece = "Med. Jazz"
+copyright = "1947, 1950, 1987 Enoch Et Cie. Renewed 1975, 1978 Enoch Et Cie"
+copyrightextra = "Sole Selling Agent for U.S.A (including its territories and possessions) and Dominion of Canada: Morley Music Co., by arrangement with Enoch Et Cie. International Copyright Secured. All Rights Reserved."
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "8c35acf6-a7c1-11df-9040-0019d11e5a41"
+structure = "AAB"
+location = "rbk1:36,jfb:50"
+idyoutuberemark1 = "The great Bill Evans..."
+idyoutube1 = "mRhVI7cpcS4"
+idyoutuberemark2 = "Keith Jarret in a great performance"
+idyoutube2 = "io1o1Hwpo8Y"
+lyricsurl = "http://www.bluesforpeace.com/lyrics/autumn-leaves.htm"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = true
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = true
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = false
+location = true
+remark = false
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = true
+idyoutube2 = true
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "Copyright © 1947, 1950, 1987 Enoch Et Cie. Renewed 1975, 1978 Enoch Et Cie"
+fullpoet = "Lyrics by Jacques Prevert, Johnny Mercer"
+fullcomposer = "Music by Joseph Kosma"
+
+[versions.Real]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = true
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+
+[versions.Fake]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

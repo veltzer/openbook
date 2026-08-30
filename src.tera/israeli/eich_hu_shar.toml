@@ -1,0 +1,85 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "My"
+
+[attributes]
+heb = true
+title = "איך הוא שר"
+style = "Israeli"
+composer = "דני רובס"
+poet = "דני רובס"
+piece = "בלדת רוק"
+singer = "דני רובס"
+typesetter = "מרק ולצר <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "8203d67e-41a0-11e2-a975-5a1faa0d3cc5"
+idyoutube1 = "ARuMB_iMRcY"
+lyricsurl = "http://www.tab4u.com/tabs/songs/1172_%D7%93%D7%A0%D7%99_%D7%A8%D7%95%D7%91%D7%A1_-_%D7%90%D7%99%D7%9A_%D7%94%D7%95%D7%90_%D7%A9%D7%A8.html"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = true
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = true
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = false
+copyrightextra = false
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = false
+structureremark = false
+location = false
+remark = false
+idyoutuberemark1 = false
+idyoutube1 = true
+idyoutuberemark2 = false
+idyoutube2 = false
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "-- עיזרו לי למלא את שורת זכויות היוצרים הזו --"
+fullcomposer = "מילים ולחן: דני רובס"
+fullpoet = ""
+
+[versions.My]
+doChords = true
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = true
+doGuitar = true
+doExtra = true
+doPrep = false
+doOwn = false

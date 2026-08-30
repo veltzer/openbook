@@ -1,0 +1,85 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Fake"
+
+[attributes]
+title = "Bye Bye Blackbird"
+style = "Jazz"
+composer = "Ray Henderson"
+poet = "Mort Dixon"
+piece = "Moderately"
+copyright = "1926 (Renewed) Warner Bros. Inc."
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "7b863bbe-f2a2-11e0-9257-0019d11e5a41"
+structure = "ABCD"
+location = "rbk2:51,jfb:75"
+idyoutube1 = "HMPHMu7LVhQ"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = false
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = false
+location = true
+remark = false
+idyoutuberemark1 = false
+idyoutube1 = true
+idyoutuberemark2 = false
+idyoutube2 = false
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = false
+wiki = false
+
+[computed]
+copyright = "Copyright © 1926 (Renewed) Warner Bros. Inc."
+fullpoet = "Lyrics by Mort Dixon"
+fullcomposer = "Music by Ray Henderson"
+
+[versions.Fake]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

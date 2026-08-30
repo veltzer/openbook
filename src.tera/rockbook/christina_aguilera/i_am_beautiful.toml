@@ -1,0 +1,84 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "DontMatter"
+
+[attributes]
+title = "I Am Beautiful"
+style = "Rock"
+composer = "Linda Perry"
+poet = "Linda Perry"
+piece = "Ballad"
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "94c2657c-2726-11e1-b716-0019d11e5a41"
+idyoutuberemark1 = "The original Christina Aguilera video clip"
+idyoutube1 = "eAfyFTzZDMM"
+lyricsurl = "http://www.lyrics007.com/Christina%20Aguilera%20Lyrics/Beautiful%20Lyrics.html"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = false
+copyrightextra = false
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = false
+structureremark = false
+location = false
+remark = false
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = false
+idyoutube2 = false
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "-- help me fill it out this copyright notice --"
+fullcomposer = "Lyrics and Music by Linda Perry"
+fullpoet = ""
+
+[versions.DontMatter]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = true
+doExtra = false
+doPrep = false
+doOwn = true

@@ -1,0 +1,36 @@
+
+
+
+
+{
+	\tempo "Andante" 4 = 84
+	\time 4/4
+	\key bes \major
+
+	% part "A"
+	r4 g'8 f8~ f4 d8 bes8 |
+	c8 bes8 bes8 g8 bes8 bes8 c8 bes8 |
+	r4 g'8 f8~ f4 d8 bes8 |
+	c8 bes8 bes8 g8 bes8 bes8 c8 bes8 |
+	r4 g'8 f8~ f4 d8 bes8 |
+	c8 bes8 bes8 g8 bes8 bes8 c8 bes8 |
+	r4 g'8 f8~ f4 d8 bes8 |
+	c8 bes8 bes8 g8 bes8 bes8 c8 bes8 |
+
+	% part "B"
+	f'4 f4 g8 g4 aes8~ |
+	aes4 aes4 g8 g4 f8~ |
+	f4 f4 g8 g4 as8~ |
+	as4 as4 g8 g4 f8 ~|
+	f4 bes,8 bes8 d8 d8 es8 es8|
+	f8^^ r8 es4 es8 es8 es8 d8~ |
+	d8 r8 bes8 bes8 d8 d8 es8 es8|
+	f8^^ r8 r4 r8 f,8 g8 bes8 |
+	c4. c8~ c4 bes8 c8 |
+	d4. d8~ d8 c8 d8 f8 |
+	g4. f8 g4. f8 |
+	g16 f16 g8 r4 r2 |
+}
+
+
+

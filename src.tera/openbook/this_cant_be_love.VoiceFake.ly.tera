@@ -1,0 +1,26 @@
+
+
+
+
+{
+	\tempo "Presto" 4 = 200
+	\time 2/2
+	\key g \major
+
+	% part "A"
+	g'2 fis4 g | d g fis g | e2 g4 a~ | a2. g4 |
+	b r d, d~ | d e g2 | a1~ | a2. r4 |
+
+	% part "A"
+	g2 fis4 g | d g fis g | e2 g4 a~ | a2. g4 |
+	d' r g, g~ | g b a2 | g1~ | g4 b b b |
+
+	% part "B"
+	cis, r e dis~ | dis b' b8 b4. | d1 | r4 b b b |
+	d1 | c | b | a |
+
+	% part "A"
+	g2 fis4 g | d g fis g | e2 g4 a~ | a g a g |
+	e' r g, g~ | g b a2 | g1~ | g2. r4 |
+}
+

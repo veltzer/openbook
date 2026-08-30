@@ -1,0 +1,90 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Fake"
+
+[attributes]
+title = "Hallelujah I Love Him (Her) So"
+style = "Jazz"
+composer = "Ray Charles"
+poet = "Ray Charles"
+piece = "Moderately"
+copyright = "1956 & 1959 by Hill & Range Snogs, Inc."
+copyrightextra = "Copyright renewed, all rights controlled by Unichappell Music, Inc."
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "d387ae5e-a26e-11df-9edf-0019d11e5a41"
+structure = "ABA"
+location = "jfb:141"
+idyoutuberemark1 = "Ray Charles live!"
+idyoutube1 = "Cf0X7QuK4LI"
+idyoutuberemark2 = "The original version"
+idyoutube2 = "rWGG6MdGdlg"
+lyricsurl = "http://www.lyrics007.com/Peggy%20Lee%20Lyrics/Hallelujah,%20I%20Love%20Him%20So%20Lyrics.html"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = true
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = false
+location = true
+remark = false
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = true
+idyoutube2 = true
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "Copyright © 1956 & 1959 by Hill & Range Snogs, Inc."
+fullcomposer = "Lyrics and Music by Ray Charles"
+fullpoet = ""
+
+[versions.Fake]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

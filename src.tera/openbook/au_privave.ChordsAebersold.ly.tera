@@ -1,0 +1,51 @@
+
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\myMark "A"
+	\startPart
+	\repeat volta 2 {
+		f1:7 | g2:m aes:dim | f1:7 | c2:m f:7 | \myEndLine
+		bes1*2:7 | f1:7 | a2:m d:7 | \myEndLine
+		g1:m | c:7 | f2:7 d:7 |
+	} \alternative {
+		{
+			g2:m c:7 | \myEndLineVoltaNotLast
+		}
+		{
+			g2:7 c:7 | \myEndLineVoltaLast
+		}
+	}
+	\endPart
+
+	\myMark "A"
+	\startPart
+	f1*2:7 | c1:m | c2:m b:7 | \myEndLine
+	bes1*2:7 | f1 | f2 d:7 | \myEndLine
+	g1:m | c:7 | f:7 | g2:m c:7 | \myEndLine
+	\endPart
+
+	\myMark "A"
+	\startPart
+	f1:7 | bes:7 | f:7 | f2:7 f:7.5+ | \myEndLine
+	bes1*2:7 | f1:7 | a2:m d:7 | \myEndLine
+	g1:m | c:7 | f:7 | g2:m c:7 | \myEndLine
+	\endPart
+
+	\myMark "A"
+	\startPart
+	f1:7 | bes:7 | f:7 | c2:m f:7 | \myEndLine
+	bes1*2:7 | f1:7 | a2:m d:7 | \myEndLine
+	g1:m | c:7 | f:7 | g2:m c:7 | \myEndLine
+	\endPart
+
+	\myMark "End"
+	f1:7 | \myEndLine
+
+	\endSong
+	\endChords
+}
+

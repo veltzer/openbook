@@ -1,0 +1,88 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Real"
+
+[attributes]
+title = "Dancing on the Ceiling"
+style = "Jazz"
+composer = "Richard Rodgers"
+poet = "Lorenz Hart"
+piece = "Swing"
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "2f047dae-e00d-11e3-98f7-03db92494d62"
+structure = "AABA"
+location = "rbk1:102"
+idyoutuberemark1 = "Frank in a cannonical version"
+idyoutube1 = "C406rXlRT6c"
+idyoutuberemark2 = "Ella in a great version"
+idyoutube2 = "qzBld5uHTiw"
+lyricsurl = "http://www.lorenzhart.org/ceilingsng.htm"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = false
+copyrightextra = false
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = false
+location = true
+remark = false
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = true
+idyoutube2 = true
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "-- help me fill it out this copyright notice --"
+fullpoet = "Lyrics by Lorenz Hart"
+fullcomposer = "Music by Richard Rodgers"
+
+[versions.Real]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = true
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

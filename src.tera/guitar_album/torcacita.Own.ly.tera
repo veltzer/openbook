@@ -1,0 +1,17 @@
+
+
+
+
+% score for printing
+\score {
+	<<
+		\new ChordNames="Partchords" \PartChords
+		\new Staff="Melody" <<
+			\new Voice="highvoice" \PartHighVoice
+			\new Voice="midvoice" \PartMidVoice
+			\new Voice="lowvoice" \PartLowVoice
+		>>
+	>>
+	\layout {
+	}
+}

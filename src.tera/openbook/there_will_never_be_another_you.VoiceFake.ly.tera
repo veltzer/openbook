@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+{
+	\tempo "Allegro" 4 = 130
+	\time 4/4
+	\key ees \major
+
+	\partial 4 bes4 |
+
+	% part "A"
+	c d ees f | g bes f4. ees8 | f1~ | f2. g4 |
+	ees f g bes | c ees c4. bes8 | c1~ | c2. bes4 |
+	ees c bes aes | g f g4. aes8 | bes4 g f ees | f ees f4. ees8 |
+	d'4 c bes a | g f g f | aes1~ | aes2. bes,4 |
+
+	% part "B"
+	c d ees f | g bes f4. ees8 | f1~ | f2. g4 |
+	ees f g bes | c ees c4. bes8 | c1~ | c2. bes4 |
+	ees4 c bes aes | g f g4. aes8 | bes4 g f ees | d'2. c4 |
+	bes ees d c | bes ees, bes' aes | f2 g | ees2. r4 |
+}
+

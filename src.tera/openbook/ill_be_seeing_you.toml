@@ -1,0 +1,90 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Fake"
+
+[attributes]
+title = "I'll Be Seeing You"
+style = "Jazz"
+composer = "Irving Kahal, Sammy Fain"
+poet = "Irving Kahal, Sammy Fain"
+piece = "Moderately"
+copyright = "1938 Williamson Music Co. Copyright Renewed."
+typesetter = "Jordan Eldredge <jordan@jordaneldredge.com>"
+completion = "5"
+uuid = "6161149e-da7f-11e3-9076-0bd9aa7a6778"
+structure = "ABA'C"
+structureremark = "This is almost a pure ABAC"
+location = "jfb:167"
+idyoutuberemark1 = "Sinatra in his younger days"
+idyoutube1 = "oL60OQLekWQ"
+idyoutuberemark2 = "Stitt in a cool instrumental version"
+idyoutube2 = "cmkEbH43GIQ"
+lyricsurl = "http://www.azlyrics.com/lyrics/billieholiday/illbeseeingyou.html"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = false
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = true
+location = true
+remark = false
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = true
+idyoutube2 = true
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "Copyright © 1938 Williamson Music Co. Copyright Renewed."
+fullcomposer = "Lyrics and Music by Irving Kahal, Sammy Fain"
+fullpoet = ""
+
+[versions.Fake]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

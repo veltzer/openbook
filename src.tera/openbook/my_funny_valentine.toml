@@ -1,0 +1,89 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Fake"
+
+[attributes]
+title = "My Funny Valentine"
+style = "Jazz"
+composer = "Richard Rodgers"
+poet = "Lorenz Hart"
+piece = "Slowly"
+copyright = "1937 by Chappell & Co., Inc. Copyright Renewed"
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "087137ac-a26f-11df-aa1f-0019d11e5a41"
+structure = "AABA"
+location = "rbk1:308,jfb:259"
+idyoutuberemark1 = "Frank!"
+idyoutube1 = "wG6lAtpcI_Q"
+idyoutuberemark2 = "Chet Baker vocal version (amazing!)"
+idyoutube2 = "7iQQGBfbB0k"
+lyricsurl = "http://www.elyrics.net/read/f/frank-sinatra-lyrics/my-funny-valentine-lyrics.html"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = false
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = false
+location = true
+remark = false
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = true
+idyoutube2 = true
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "Copyright © 1937 by Chappell & Co., Inc. Copyright Renewed"
+fullpoet = "Lyrics by Lorenz Hart"
+fullcomposer = "Music by Richard Rodgers"
+
+[versions.Fake]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

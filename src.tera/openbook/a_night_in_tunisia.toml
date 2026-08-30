@@ -1,0 +1,83 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Fake"
+
+[attributes]
+title = "A Night In Tunisia"
+style = "Jazz"
+composer = "John 'Dizzy' Gillespie, Frank Paparelli"
+piece = "Bright Swing"
+copyright = "1944 by MCA Music Publishing, A division of MCA Inc, New York, NY"
+copyrightextra = "Copyright Renewed"
+typesetter = "Jordan Eldredge <jordan@jordaneldredge.com>"
+completion = "5"
+uuid = "ea02cd50-da80-11e3-999d-eb3f2153c941"
+structure = "ABA"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = false
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = true
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = false
+location = false
+remark = false
+idyoutuberemark1 = false
+idyoutube1 = false
+idyoutuberemark2 = false
+idyoutube2 = false
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = false
+wiki = false
+
+[computed]
+copyright = "Copyright © 1944 by MCA Music Publishing, A division of MCA Inc, New York, NY"
+fullpoet = ""
+fullcomposer = "Music by John 'Dizzy' Gillespie, Frank Paparelli"
+
+[versions.Fake]
+doChords = true
+doVoice = true
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

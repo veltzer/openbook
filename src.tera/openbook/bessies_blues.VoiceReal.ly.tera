@@ -1,0 +1,14 @@
+
+
+
+
+{
+	\tempo "Presto" 4 = 200
+	\time 4/4
+	\key c \major
+
+	% part "A"
+	g'4 ees8 des~ des2 | c'4 aes8 ges~ ges4. ees8 | g ees g4 g8 ees!4 g8~ | g ees d des~ des2 |
+	r8 c'4 bes8 c aes r4 | c4. aes8 r ges4 ees8 | g ees g4 g8 g4 g8~ | g ees d des r g4 ges8 |
+	f4 d bes d8 f | ees c aes4 c8 ees!4. | r8 f ees c r2 | r f8 g aes bes |
+}

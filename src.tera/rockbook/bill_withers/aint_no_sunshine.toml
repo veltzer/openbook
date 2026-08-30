@@ -1,0 +1,85 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "DontMatter"
+
+[attributes]
+title = "Ain't No Sunshine"
+style = "Pop"
+composer = "Bill Withers"
+poet = "Bill Withers"
+piece = "Med. Ballad"
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "669540fe-d851-11df-ae78-0019d11e5a41"
+idyoutuberemark1 = "The original video clip from youtube"
+idyoutube1 = "tIdIqbv7SPo"
+lyricsurl = "http://tabs.ultimate-guitar.com/b/bill_withers/aint_no_sunshine_crd.htm"
+wiki = "Ain%27t_No_Sunshine"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = false
+copyrightextra = false
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = false
+structureremark = false
+location = false
+remark = false
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = false
+idyoutube2 = false
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = true
+
+[computed]
+copyright = "-- help me fill it out this copyright notice --"
+fullcomposer = "Lyrics and Music by Bill Withers"
+fullpoet = ""
+
+[versions.DontMatter]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = true
+doExtra = false
+doPrep = false
+doOwn = true

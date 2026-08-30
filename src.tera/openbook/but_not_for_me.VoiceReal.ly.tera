@@ -1,0 +1,33 @@
+
+
+
+
+{
+	\tempo "Moderato" 4 = 116
+	\time 4/4
+	\key f \major
+
+	\partial 2. g'4 a g |
+
+	\repeat volta 2 {
+
+		% part "A"
+		a2 g4 f~ | f g a g | a1 | r4 g a g |
+		a2 g4 f~ | f g a g | a1 | r4 a bes c |
+	} \alternative {
+		{
+
+			% part "B"
+			cis2 d4 f | r g, a bes | b!2 c4 f | r f, g a |
+			a2 bes4 f' | r f d bes | g1 | r4 g a g |
+		}
+		{
+
+			% part "C"
+			cis2 d4 f | r g, a bes | b!2 c4 g' | r f d bes |
+			a1 | g | f~ | f2. r4 |
+		}
+	}
+}
+
+

@@ -1,0 +1,33 @@
+
+
+
+
+{
+	\tempo "Prestissimo" 4 = 220
+	\time 2/2
+	\key f \minor
+
+	% part "A"
+	\repeat volta 2 {
+		c'1~ | c~ | c4 des c g | bes c e g, |
+		bes1~ | bes~ | bes4 c des c | des c b g |
+		bes!1~ | bes~ | bes4 c b bes | a aes g ges |
+		f1~ | f~ | f | r |
+	}
+
+	% part "B"
+	f'1 | d2 c4. g8~ | g1~ | g4. f8 e4-. f-. |
+	c'1 | g2 f4. c8~ | c1 | r2 bes'8 c des d |
+	ees1 | c2 bes4. f8~ | f1~ | f2 g4-. ees-. |
+	c'4. aes8~ aes2~ | aes bes4-. aes-. | g2 g4. g8~ | g2 r |
+
+	% part "A"
+	c1~ | c~ | c4 des c g | bes c e g, |
+	bes1~ | bes~ | bes4 c des c | des c b g |
+	bes!1~ | bes~ | bes4 c b bes | a aes g ges |
+	f1~ | f~ | f | r |
+}
+
+
+
+

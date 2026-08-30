@@ -1,0 +1,86 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "My"
+
+[attributes]
+heb = true
+title = "לא יכולתי לעשות כלום"
+style = "Israeli"
+composer = "אילן וירצברג"
+poet = "יונה וולך"
+piece = "בלדת רוק"
+singer = "איןך ןירצברג"
+typesetter = "מרק ולצר <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "f2e3c22e-f100-11e0-9162-0019d11e5a41"
+remark = "Ilan Virtsberg plays it in G in live concerts"
+idyoutube1 = "XJYKf0sNDoE"
+lyricsurl = "http://www.mp3music.co.il/tabs/10728.html"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = true
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = true
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = false
+copyrightextra = false
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = false
+structureremark = false
+location = false
+remark = true
+idyoutuberemark1 = false
+idyoutube1 = true
+idyoutuberemark2 = false
+idyoutube2 = false
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "-- עיזרו לי למלא את שורת זכויות היוצרים הזו --"
+fullpoet = "מלים: יונה וולך"
+fullcomposer = "לחן: אילן וירצברג"
+
+[versions.My]
+doChords = true
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = true
+doGuitar = true
+doExtra = true
+doPrep = false
+doOwn = false

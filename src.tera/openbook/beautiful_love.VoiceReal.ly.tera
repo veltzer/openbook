@@ -1,0 +1,44 @@
+
+
+
+
+{
+  \numericTimeSignature\time 4/4 \key f \major
+   \transposition c r4
+   d4 e4 f4 |
+   \repeat volta 2 {
+      |
+      a2.  g4 |
+      f4.  e8  d4  e8 [
+      f8 ~ ] |
+      f1 |
+      r4  f4  g4  a4 \break |
+      c2.  bes4 |
+      a4.  g8  f4  g8 [
+      a8 ~ ] |
+      a1 |
+      r4  a4  b4  cis4 \break |
+      e4.  d8 ~  d4  a4 |
+      c4.  bes8 ~  bes4  d,4
+      |
+      e1 |
+      r4  e4  f4  g4 \break
+   }
+   \alternative {
+      {
+         a2.  d,4 |
+         cis2.  d4 |
+         e1 | \break
+         r4  d4  e4  f4  |
+      }  
+      {
+         a2  cis,4  d4 |
+      }
+   }
+   f2  e2 |
+   d1 |
+   r4  d4  e4  f4  | 
+   \bar "|."
+}
+
+

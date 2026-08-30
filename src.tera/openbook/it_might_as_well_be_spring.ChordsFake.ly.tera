@@ -1,0 +1,40 @@
+
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\partial 4 s4 |
+
+	\myMark "A"
+	\startPart
+	g2:6 c:9 | b4:m7 e:7 a:m7 d:7 | g1 | d2:m7 g:7 | \myEndLine
+	c cis4:m7 fis:7 | b2:m7 e:7 | a:m7 d4:7 d:7/c | b:m7 e:7 a:m7 d:7 | \myEndLine
+	\endPart
+
+	\myMark "A"
+	\startPart
+	g2:6 c:9 | b4:m7 e:7 a:m7 d:7 | g1 | d2:m7 g:7 | \myEndLine
+	c cis4:m7 fis:7 | b2:m7 e:7 | a:m7 d:7 | g d4:m7 g:7 | \myEndLine
+	\endPart
+
+	\myMark "B"
+	\startPart
+	c1 | d:m7 | d2:m7 g:7 | c1 | \myEndLine
+	a2:m7 a:m7/g | fis:7.5- b:7 | e:m7 a:7 | a:m7/d d:7 | \myEndLine
+	\endPart
+
+	\myMark "A"
+	\startPart
+	g2:6 c:9 | b4:m7 e:7 a:m7 d:7 | g1 | d2:m7 g:7 | \myEndLine
+	c cis4:m7 fis:7 | g2:6.9/b e:m7 | a:m7 d4:9 d:7/c | b2:7 e:7 | \myEndLine
+	a1:7 | c2:m7 f:7 | b:m7 e4:m7 e:m7/d | a2:7/cis c4:m7 f:9 | \myEndLine
+	b2:m7 e:m7 | a:m7 d:7 | g c:6 | g1 | \myEndLine
+	\endPart
+
+	\endSong
+	\endChords
+}
+
+

@@ -1,0 +1,32 @@
+
+
+
+
+{
+	\tempo "Moderato" 4 = 108
+	\time 4/4
+	\key c \major
+
+	% part "A"
+	\repeat volta 2 {
+		a'1 | d,2. e4 | f2 e4. f8 | b2. a4 |
+		g2 fis4 g | d' des c b | a2 gis4. a8 |
+	} \alternative {
+		{
+			g'!1 |
+
+			% part "B"
+			g | a,2. b4 | e e e2~ | e4 r r2 |
+			r4 g g,4. g8 | aes aes4 aes8 a4 a8 b~ | b4 b b2~ | b4 r r2 |
+		}
+		{
+			a'2. e4 |
+
+			% part "C"
+			g2. d4 | f2. c4 | e2 b4 c | d des c b |
+			a2 e' | e ees4 d | c1~ \mark \markup { \italic { Fine } } | c4 r r2 |
+		}
+	}
+}
+
+

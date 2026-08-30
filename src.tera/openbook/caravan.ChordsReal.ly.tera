@@ -1,0 +1,45 @@
+
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\myMark "A"
+	%\mark "Bright Latin"
+	\startPart
+	\repeat volta 2 {
+		c1*4:7 | \myEndLine
+		c1*4:7 | \myEndLine
+		c1*4:7 | \myEndLine
+		f1*4:m6 | \myEndLine
+	}
+	% so I would see the repeat marks
+	%\endPart
+
+	\myMark "B"
+	%\mark "Swing"
+	\startPart
+	f1*4:9 | \myEndLine
+	bes1*4:9 | \myEndLine
+	ees1*4:7 | \myEndLine
+	aes1*2:6 | c1*2:7 | \myEndLine
+	\endPart
+
+	\myMark "A"
+	%\mark "Bright Latin"
+	\startPart
+	c1*4:7 | \myEndLine
+	c1*4:7 | \myEndLine
+	c1*4:7 | \myEndLine
+	f1*4:m6 | \myEndLine
+	\endPart
+
+	\endSong
+	\endChords
+}
+
+
+
+
+

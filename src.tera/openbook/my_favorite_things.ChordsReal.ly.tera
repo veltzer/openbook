@@ -1,0 +1,42 @@
+
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\myMark "A"
+	\startPart
+	\repeat volta 2 {
+		e2.:m7 | fis:m7 | e:m7 | fis:m7 | \myEndLine
+		c2.*4:maj7 | \myEndLine
+		a2.:m7 | d:7 | g:maj7 | c:maj7 | \myEndLine
+		g:maj7 | c:maj7 | fis:m7.5- | b:7 | \myEndLine
+	}
+	% removed in order to show the repeat sign...
+	%\endPart
+
+	\myMark "A"
+	\startPart
+	e2.:maj7 | fis:m7 | e:maj7 | fis:m7 | \myEndLine
+	a2.*4:maj7 | \myEndLine
+	a2.:m7 | d:7 | g:maj7 | c:maj7 | \myEndLine
+	g:maj7 | c:maj7 | fis:m7.5- | b:7.9- | \myEndLine
+	\endPart
+
+	\myMark "B"
+	\startPart
+	e2.*2:m7 | fis2.:m7.5- | b:7 | \myEndLine
+	e2.*2:m7 | c:maj7 | \myEndLine
+	c:maj7 | a:7 | \myEndLine
+	g2.:maj7 | c2.*2:maj7 | d2.:7 | \myEndLine
+	g:6 | c:maj7 | g:6 | c:maj7 | \myEndLine
+	g:maj7 | c:maj7 | fis:m7.5- | b:7 | \myEndLine
+	\endPart
+
+	\endSong
+	\endChords
+}
+
+
+

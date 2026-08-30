@@ -1,0 +1,91 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Fake"
+
+[attributes]
+title = "Chega De Saudade"
+style = "Latin/Jazz"
+subtitle = "No More Blues"
+composer = "Antonio Carlos Jobim"
+poet = "Vinicius DeMoraes, John Hendricks, Jessie Cavanaugh"
+piece = "Bossa Nova"
+copyright = "1962 and 1967 Editora Musical Arapua, Sao Paulo, Brazil"
+copyrightextra = "TRO-Hollis Music, Inc., New York, controls all publication rights for the U.S.A. and Canada"
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "a8d44d0c-a26e-11df-a32b-0019d11e5a41"
+structure = "AA'BA''"
+location = "jfb:82"
+idyoutuberemark1 = "The original Jobim on piano"
+idyoutube1 = "-c6Zbi3tbMg"
+idyoutuberemark2 = "And Jobim sings..."
+idyoutube2 = "UzFJwiHRwDg"
+lyricsurl = "http://www.stlyrics.com/songs/j/janemonheit24558/chegadesaudadenomoreblues1055457.html"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = true
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = true
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = false
+location = true
+remark = false
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = true
+idyoutube2 = true
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "Copyright © 1962 and 1967 Editora Musical Arapua, Sao Paulo, Brazil"
+fullpoet = "Lyrics by Vinicius DeMoraes, John Hendricks, Jessie Cavanaugh"
+fullcomposer = "Music by Antonio Carlos Jobim"
+
+[versions.Fake]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

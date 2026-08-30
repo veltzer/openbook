@@ -1,0 +1,90 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Fake"
+
+[attributes]
+title = "Darn That Dream"
+style = "Jazz"
+composer = "Jimmy Van Heusen"
+poet = "Eddie DeLange"
+piece = "Slowly"
+copyright = "1939 Bregman, Vocco and Conn, Inc. New York"
+copyrightextra = "Copyright Renewed, Assigned and Copyright 1968 by Scarsdale Music. Corporation and Van Heusen Music Corp., New York"
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "f0a5804c-eb83-11e0-aeb1-0019d11e5a41"
+structure = "AABA"
+location = "rbk1:103,jfb:94"
+idyoutuberemark1 = "Theloneous Monk...:)"
+idyoutube1 = "GsI4oNKGJPg"
+idyoutuberemark2 = "Dexter Gordon, one of the great performances of this song..."
+idyoutube2 = "upZ00qxXrBg"
+lyricsurl = "http://www.lyricsfreak.com/b/billie+holiday/darn+that+dream_20018018.html"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = true
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = false
+location = true
+remark = false
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = true
+idyoutube2 = true
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "Copyright © 1939 Bregman, Vocco and Conn, Inc. New York"
+fullpoet = "Lyrics by Eddie DeLange"
+fullcomposer = "Music by Jimmy Van Heusen"
+
+[versions.Fake]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

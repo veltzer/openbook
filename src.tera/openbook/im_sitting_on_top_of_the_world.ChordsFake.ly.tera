@@ -1,0 +1,48 @@
+
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\partial 4 s4 |
+
+	\repeat volta 2 {
+
+		\myMark "A"
+		\startPart
+		f2 f4:maj7 f:7 | bes1 | f | f | \myEndLine
+		g:7 | c:7 | f2 g4:m f/a | g2:m7 c:7.5+ | \myEndLine
+		\endPart
+
+		\myMark "A"
+		\startPart
+		f f4:maj7 f:7 | bes1 | f | f | \myEndLine
+		g:7 | c:7 | f | f:7 | \myEndLine
+		\endPart
+
+		\myMark "B"
+		\startPart
+		bes | e:7 | f | f | \myEndLine
+		d2:m d:m7+ | d:m7 d:m6 | g1:7 | c2.:7 c4:7.5+ | \myEndLine
+		\endPart
+
+		\myMark "A"
+		\startPart
+		f2 f4:maj7 f:7 | bes1 | f2 c:9.5+ | f1 | \myEndLine
+		g2:7 g:7.5-/des | c1:7 |
+	} \alternative {
+		{
+			f2 des:7 | g:7 c:7.5+ | \myEndLineVoltaNotLast
+		}
+		{
+			f bes | f1 | \myEndLineVoltaLast
+		}
+	}
+	\endPart
+
+	\endSong
+	\endChords
+}
+
+

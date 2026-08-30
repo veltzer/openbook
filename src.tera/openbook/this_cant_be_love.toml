@@ -1,0 +1,89 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Fake"
+
+[attributes]
+title = "This Can't Be Love"
+style = "Jazz"
+composer = "Richard Rodgers"
+poet = "Lorenz Hart"
+piece = "Moderately"
+copyright = "1938 by Chappell & Co., Inc. Copyright Renewed"
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "c01fbf4c-d7a2-11e3-a29f-abfec0c435b3"
+structure = "AABA"
+location = "jfb:392"
+idyoutuberemark1 = "I like this version by Diana Krall"
+idyoutube1 = "9uRGw8Bc0s0"
+idyoutuberemark2 = "Well know version by Nat King Cole"
+idyoutube2 = "dfWsU4IDCS0"
+lyricsurl = "http://www.lyricsfreak.com/n/nat+king+cole/this+cant+be+love_20098113.html"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = false
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = false
+location = true
+remark = false
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = true
+idyoutube2 = true
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "Copyright © 1938 by Chappell & Co., Inc. Copyright Renewed"
+fullpoet = "Lyrics by Lorenz Hart"
+fullcomposer = "Music by Richard Rodgers"
+
+[versions.Fake]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

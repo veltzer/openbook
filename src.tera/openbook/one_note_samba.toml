@@ -1,0 +1,91 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Real"
+
+[attributes]
+title = "One Note Samba"
+style = "Jazz"
+subtitle = "Samba de uma nota so"
+composer = "Antonio Carlos Jobim"
+poet = "Newton Mendonca"
+piece = "Samba"
+copyright = "1961, 1962 by Antonio Carlos Jobim and Mrs. Mendonca, Brazil"
+copyrightextra = "Sole Selling Agent Duchess Music Croporation (MCA), New York, NY for all English Speaking Countries"
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "21bc8284-a26f-11df-a829-0019d11e5a41"
+structure = "ABA'"
+location = "jfb:289,rbk1:331"
+idyoutuberemark1 = "Dizzy Gilespie in a great version"
+idyoutube1 = "Jb7LqPmWBKw"
+idyoutuberemark2 = "The only performance of Jobim in Japan"
+idyoutube2 = "eEkMwotUuic"
+lyricsurl = "http://www.lyricsfreak.com/f/frank+sinatra/one+note+samba_10122272.html"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = true
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = true
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = false
+location = true
+remark = false
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = true
+idyoutube2 = true
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "Copyright © 1961, 1962 by Antonio Carlos Jobim and Mrs. Mendonca, Brazil"
+fullpoet = "Lyrics by Newton Mendonca"
+fullcomposer = "Music by Antonio Carlos Jobim"
+
+[versions.Real]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

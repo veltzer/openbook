@@ -1,0 +1,82 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "My"
+
+[attributes]
+title = "Symphony 2"
+style = "Classical"
+subtitle = "Allegretto"
+composer = "Ludwig van Beethoven"
+copyright = "Public Domain"
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "d5e32c7a-854b-11e1-96fa-2b2b01073991"
+remark = "Extracted by ear as a training exercise"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = true
+subsubtitle = false
+composer = true
+poet = false
+piece = false
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = false
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = false
+structureremark = false
+location = false
+remark = true
+idyoutuberemark1 = false
+idyoutube1 = false
+idyoutuberemark2 = false
+idyoutube2 = false
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = false
+wiki = false
+
+[computed]
+copyright = "Copyright © Public Domain"
+fullpoet = ""
+fullcomposer = "Music by Ludwig van Beethoven"
+
+[versions.My]
+doChords = true
+doVoice = true
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

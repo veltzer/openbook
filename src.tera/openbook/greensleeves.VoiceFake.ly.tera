@@ -1,0 +1,37 @@
+
+
+
+
+{
+	\tempo "Andante" 4 = 76
+	\time 6/8
+	\key e \minor
+
+	e8 |
+
+	% part "A"
+	\repeat volta 2 {
+		g4 a8 b8. c16 b8 | a4 fis8 d8. e16 fis8 |
+	} \alternative {
+		{
+			g4 e8 e8. dis16 e8 | fis4 dis8 b4 e8 |
+		}
+		{
+			g fis e dis8. cis16 dis8 | e4 e8 e4 r8 |
+		}
+	}
+
+	% part "B"
+	\repeat volta 2 {
+		d'4. d8. c16 b8 | a4 fis 8 d8. e16 fis8 |
+	} \alternative {
+		{
+			g4 e8 e8. dis16 e8 | fis4 dis8 b4 r8 |
+		}
+		{
+			g' fis e dis8. cis16 dis8 | e4. e |
+		}
+	}
+}
+
+

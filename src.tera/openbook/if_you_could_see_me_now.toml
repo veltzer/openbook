@@ -1,0 +1,88 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Real"
+
+[attributes]
+title = "If You Could See Me Now"
+style = "Jazz"
+composer = "Tadd Dameron"
+poet = "Carl Sigman"
+piece = "Ballad"
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "e259226a-11ac-11e1-90cb-0019d11e5a41"
+structure = "AABA"
+location = "rbk2:157,file:if_you_could_see_me_now_wikifonia.pdf"
+idyoutuberemark1 = "Sarah Vaughan"
+idyoutube1 = "ySI5ZPhf5Lw"
+idyoutuberemark2 = "Bill Evans (amazing version)"
+idyoutube2 = "NXUxR4wunaE"
+lyricsurl = "http://www.metrolyrics.com/if-you-could-see-me-now-lyrics-natalie-cole.html"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = false
+copyrightextra = false
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = false
+location = true
+remark = false
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = true
+idyoutube2 = true
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "-- help me fill it out this copyright notice --"
+fullpoet = "Lyrics by Carl Sigman"
+fullcomposer = "Music by Tadd Dameron"
+
+[versions.Real]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = true
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

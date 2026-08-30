@@ -1,0 +1,22 @@
+
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\partial 8 s8 |
+
+	\myMark "A"
+	\startPart
+	\repeat volta 2 {
+		f1*4:7 | \myEndLine
+		bes1:7 | bes2:7 b:dim7 | f1*2:7 | \myEndLine
+		g1:m7 | c:7 | f:7 | g2:m7 c:7 | \myEndLine
+	}
+	\endPart
+
+	\endSong
+	\endChords
+}
+

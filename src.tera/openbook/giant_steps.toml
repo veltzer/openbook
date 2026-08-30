@@ -1,0 +1,90 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Real"
+
+[attributes]
+title = "Giant Steps"
+style = "Jazz"
+composer = "John Coltrane"
+piece = "Fast"
+copyright = "1974 Jowcol Music."
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "828326cc-013c-11e1-b823-0019d11e5a41"
+structure = "A"
+structureremark = "Very weird not repeating structure because of the weird harmony steps"
+location = "rbk1:170,hlrjb:130,nrbk2:121,kw:3"
+remark = "the key here is of little meaning as the harmony changes key all the time...:) That's why it's written in C."
+idyoutuberemark1 = "Mccoy Tyner awesome solo..."
+idyoutube1 = "PukuQPUKfyU"
+idyoutuberemark2 = "The original Coltrane version..."
+idyoutube2 = "BZRnkBK_0no"
+lyricsurl = "http://www.bjazz.com/Giant_Steps.html"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = false
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = false
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = true
+location = true
+remark = true
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = true
+idyoutube2 = true
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "Copyright © 1974 Jowcol Music."
+fullpoet = ""
+fullcomposer = "Music by John Coltrane"
+
+[versions.Real]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = true
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

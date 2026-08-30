@@ -1,0 +1,91 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Fake"
+
+[attributes]
+title = "It Might As Well Be Spring"
+style = "Jazz"
+subtitle = "From 'State Fair'"
+composer = "Richard Rodgers"
+poet = "Oscar Hammerstein II"
+piece = "Moderately"
+copyright = "1945 by Williamson Music Co."
+copyrightextra = "Copyright Renewed. All Rights Administered by Chappell & Co., Inc."
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "f4f39800-a26e-11df-b97a-0019d11e5a41"
+structure = "AABA"
+location = "jfb:189"
+idyoutuberemark1 = "Astrud Gilberto in the classic version"
+idyoutube1 = "86MwK3TT9og"
+idyoutuberemark2 = "Bill Evans the master himself"
+idyoutube2 = "kUvIdEWiQms"
+lyricsurl = "http://www.lyricsondemand.com/soundtracks/s/statefairlyrics/itmightaswellbespringlyrics.html"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = true
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = true
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = false
+location = true
+remark = false
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = true
+idyoutube2 = true
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "Copyright © 1945 by Williamson Music Co."
+fullpoet = "Lyrics by Oscar Hammerstein II"
+fullcomposer = "Music by Richard Rodgers"
+
+[versions.Fake]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

@@ -1,0 +1,49 @@
+
+
+
+\chordmode {
+%	list of instruments can be found at
+%	http://lilypond.org/doc/v2.11/Documentation/user/lilypond/MIDI-instruments#MIDI-instruments
+%	\set ChordNames.midiInstrument = #"acoustic grand"
+
+	\startChords
+	\startSong
+
+	\myMark "A"
+	\startPart
+	f1*2:maj7 | g:7.5- | \myEndLine
+	g1:m7 | c2.:7 c4:7/bes | a1:m7.5- | d:7.9- | \myEndLine
+	g:m7 | a:7.9- | d:7 | d:7.9- | \myEndLine
+	g1*2:7.9- | ges:maj7 | \myEndLine
+	\endPart
+
+	\myMark "A"
+	\startPart
+	f1*2:maj7 | g:7.5- | \myEndLine
+	g1:m7 | c2.:7 c4:7/bes | a1:m7.5- | d:7.9- | \myEndLine
+	g:m7 | bes2:m7 ees:7 | f1:maj7 | b2:m7.5- e:9- | \myEndLine
+	\endPart
+
+	\myMark "B"
+	\startPart
+	a1:maj7 | bes:dim7 | b:m7 | e:7 | \myEndLine
+	a | bes:dim7 | b:m7 | e:7 | \myEndLine
+	a | fis:m7 | b:m7 | e:7 | \myEndLine
+	c:maj7 | cis:dim7 | d:m7 | g:7 | \myEndLine
+	g:m7 | fis:dim | g:7 | c2:7 c:7.5- | \myEndLine
+	\endPart
+
+	\myMark "A"
+	\startPart
+	f1*2:maj7 | g:7.5- | \myEndLine
+	g1:m7 | c2.:7 c4:7/bes | a1:m7.5- | d:7.9- | \myEndLine
+	g:m7 | bes2:m ees:7 | f1:maj7 | d:m7 | \myEndLine
+	g1*2:7 | bes1:m7 | ees:7.9 | \myEndLine
+	g:7 | g2:m7 c:7 | f1*2:6 | \myEndLine
+	\endPart
+
+	\endSong
+	\endChords
+}
+
+

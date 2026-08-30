@@ -1,0 +1,91 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Fake"
+
+[attributes]
+title = "Orchids In The Moonlight"
+style = "Jazz"
+composer = "Vincent Youmans"
+poet = "Gus Kahn, Edward Eliscu"
+piece = "With a Tango Beat"
+copyright = "1933 by T.B. Harms Co."
+copyrightextra = "Copyright Renewed, assigned to Chappell & Co., Inc (Intersong Music, Publisher) and T.B. Harms Co. (c/o The Welk Music Group, Santa Monica, CA 90401) for the U.S.A. only. Rights outside controlled by T.B. Harms Co."
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "ba3d8788-10f7-11e4-b63c-8397db34c0b9"
+structure = "ABA"
+structureremark = "Each A part is the 16 bars where the first 4 of every half are the same"
+location = "jfb:292"
+idyoutuberemark1 = "Excellent piano arrangement"
+idyoutube1 = "2LEah90aDmA"
+idyoutuberemark2 = "Classic tango vocal version"
+idyoutube2 = "WuD8XmCza5U"
+lyricsurl = "http://lyricsplayground.com/alpha/songs/o/orchidsinthemoonlight.shtml"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = true
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = true
+location = true
+remark = false
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = true
+idyoutube2 = true
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "Copyright © 1933 by T.B. Harms Co."
+fullpoet = "Lyrics by Gus Kahn, Edward Eliscu"
+fullcomposer = "Music by Vincent Youmans"
+
+[versions.Fake]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

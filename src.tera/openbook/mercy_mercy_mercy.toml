@@ -1,0 +1,85 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Fake"
+
+[attributes]
+title = "Mercy Mercy Mercy"
+style = "Jazz"
+composer = "Joe Zawinul"
+poet = "Vincent Levy, Gail Fisher"
+piece = "Funk"
+copyright = "1966 ZAWINUL MUSIC, ADivisionofGopam Enterprises,Inc."
+typesetter = "Werner Grünberger <openbook@wernergruenberger.de>"
+structure = "AB"
+location = "rbk2:242"
+idyoutuberemark1 = "Joe Zawinul -- Mercy, Mercy, Mercy."
+idyoutube1 = "ycNv57aZFTg"
+lyricsurl = "https://www.songtexte.com/songtext/marlena-shaw/mercy-mercy-mercy-5bd22b70.html"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = false
+copyrightextraextra = false
+typesetter = true
+completion = false
+dontimport = false
+uuid = false
+structure = true
+structureremark = false
+location = true
+remark = false
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = false
+idyoutube2 = false
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "Copyright © 1966 ZAWINUL MUSIC, ADivisionofGopam Enterprises,Inc."
+fullpoet = "Lyrics by Vincent Levy, Gail Fisher"
+fullcomposer = "Music by Joe Zawinul"
+
+[versions.Fake]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = true
+doLyricsmoremore = true
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

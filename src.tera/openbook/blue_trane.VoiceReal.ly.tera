@@ -1,0 +1,25 @@
+
+
+
+
+{
+	\tempo "Allegro" 4 = 130
+	\time 4/4
+	\key c \minor
+
+	\partial 8*5 g'8 bes d bes c~ |
+
+	% part "A"
+	\repeat volta 2 {
+		c1~ | c4-^ r8 g bes d bes c~ | c1~ | c4-^ r8 c ees g ees f~ |
+		f1~ | f4-^ r8 g, bes d bes c~ | c1~ | c4-^ r8 g c d c bes~ |
+		bes1~ | bes4-^ r8 g bes d bes c~ |
+	} \alternative {
+		{
+			c1~ | c4-^ r8 g bes d bes c~ |
+		}
+		{
+			c1~ | c4-^_\markup { \italic { Fine } } r4 r2 |
+		}
+	}
+}

@@ -1,0 +1,86 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Fake"
+
+[attributes]
+title = "Come Rain Or Come Shine"
+style = "Jazz"
+composer = "Harold Arlen"
+poet = "Johnny Mercer"
+piece = "Moderately"
+copyright = "1946, by A-M Music Corp. Copyright Renewed, all rights controlled by Chappell & Co., Inc."
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "b109cd80-a26e-11df-8c11-0019d11e5a41"
+structure = "AB"
+location = "rbk2:63,jfb:86-87"
+remark = "the my set of chords is from Amit Golan"
+idyoutube1 = "XqECFy_qzkM"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = false
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = false
+location = true
+remark = true
+idyoutuberemark1 = false
+idyoutube1 = true
+idyoutuberemark2 = false
+idyoutube2 = false
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = false
+wiki = false
+
+[computed]
+copyright = "Copyright © 1946, by A-M Music Corp. Copyright Renewed, all rights controlled by Chappell & Co., Inc."
+fullpoet = "Lyrics by Johnny Mercer"
+fullcomposer = "Music by Harold Arlen"
+
+[versions.Fake]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

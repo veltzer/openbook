@@ -1,0 +1,21 @@
+
+
+
+
+
+\chordmode {
+	\startChords
+
+	\startSong
+
+	\repeat volta 2 {
+		f2:maj7 a:m7 | bes:maj7 c:7 |
+	}
+	bes1:maj7 | a:m7 | g2:m7 c:7 | f:maj7 r4 c:7 |
+
+	\endSong
+
+	\endChords
+}
+
+

@@ -1,0 +1,23 @@
+
+
+
+
+
+{
+	\tempo "Moderato" 4 = 100
+	\time 4/4
+	\key f \major
+
+	% part "A"
+	a'4 a8 a a a4 a8 | a4 a8 a a a4 a8 | a f f f~ f2~ | f1 |
+	a4 a8 a a a4 a8 | c4 a8 a a a4 a8 | a f f f~ f2~ | f1 |
+	bes2 bes4 aes8 bes | c4 f,2 f8 f | bes2 bes4 aes8 bes | c1 |
+	d2 d4 c8 d | ees4 c2 c8 d | ees c d4 c bes8 g | a4 g2. |
+
+	% part "B"
+	a4 a8 a a a4 a8 | a4 a8 a a a4 a8 | a f f f~ f2~ | f1 |
+	b4 b8 b b b4 b8 | b4 b8 b b b4 b8 | cis a a a~ a2~ | a1 |
+	d4 d8 d d d4 d8 | d4 d,2 d4 | d' d8 d d d4 d8 | d4 d,2 e4 |
+	a a8 bes b d4. | e4 e8 d e d e4 | d1~ | d2 r |
+}
+

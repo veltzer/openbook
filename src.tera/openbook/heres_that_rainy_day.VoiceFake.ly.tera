@@ -1,0 +1,40 @@
+
+
+
+
+{
+	\tempo "Allegro" 4 = 130
+	\time 2/2
+	\key g \major
+
+	\repeat volta 2 {
+
+		% part "A"
+		d4 d2 d4 | d f bes d | d2 c4. b!8 | c1 |
+		d,4 d2 d4 | d fis a c | b1~ | b2. r4 |
+
+		% part "B"
+		ees2 ees | ees4 g, aes a | d2 f,4 fis | g2 f4 g |
+		c c8 c c4 c8 c | c4 e, eis fis | b1~ | b2. r4 |
+
+		% part "A"
+		d,4 d2 d4 | d f bes d | d2 c4. b!8 | c1 |
+		d,4 d2 d4 | d fis a c | b1~ | b2. r4 |
+
+		% part "C"
+		e4 e2 e4 | e a, b c | d2 fis,4 g | a1 |
+		d,4 d2 d4 | d fis a b |
+	} \alternative {
+		{
+			g1~ | g4 r r2 |
+		}
+		{
+			g1~ | g~ | g~ | g2. r4 |
+		}
+	}
+}
+
+
+
+
+

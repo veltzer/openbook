@@ -1,0 +1,91 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Real"
+
+[attributes]
+title = "The Shadow of Your Smile"
+style = "Jazz"
+composer = "Johnny Mandel"
+poet = "Paul Francis Webster"
+piece = "Slow Bossa"
+copyright = "1965 (Renewed 1993) MGM/EMI Miller Catalog, Inc"
+copyrightextra = "Used by Permission of CPP/Belwin, Inc, Miami, FL"
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "dff04e04-a969-11e1-b8c5-5a1faa0d3cc5"
+structure = "ABAC"
+structureremark = "The structure could also be thought of as AB but it is very close to a pure ABAC"
+location = "nrbk3:336,rbk1:381"
+idyoutuberemark1 = "A very sensitive rendition by Dexter Gordon"
+idyoutube1 = "8PttNhYVY3c"
+idyoutuberemark2 = "Sarah Vaughan, fucking awesome"
+idyoutube2 = "t9HxfF7faXk"
+lyricsurl = "http://www.absolutelyrics.com/lyrics/view/barbra_streisand/the_shadow_of_your_smile"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = true
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = true
+location = true
+remark = false
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = true
+idyoutube2 = true
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "Copyright © 1965 (Renewed 1993) MGM/EMI Miller Catalog, Inc"
+fullpoet = "Lyrics by Paul Francis Webster"
+fullcomposer = "Music by Johnny Mandel"
+
+[versions.Real]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

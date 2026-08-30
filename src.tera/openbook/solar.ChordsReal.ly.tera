@@ -1,0 +1,21 @@
+
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\repeat volta 2 {
+
+		\myMark "A"
+		\startPart
+		c1*2:m | g1:m7 | c:7 | \myEndLine
+		f1*2:maj7 | f1:m7 | bes:7 | \myEndLine
+		ees:maj7 | ees2:m7 aes:7 | des1:maj7 | d2:m7.5- g:7.9- | \myEndLine
+		\endPart
+	}
+
+	\endSong
+	\endChords
+}
+

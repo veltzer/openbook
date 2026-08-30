@@ -1,0 +1,28 @@
+
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\myWordMark "Intro"
+	\startPart
+	f1:m | bes:m | f:m | c:7 | \myEndLine
+	\endPart
+
+	\myMark "A"
+	\startPart
+	f:m | bes:m | f:m | c:7 | \myEndLine
+	f:m | bes:m | f:m | c:7 | \myEndLine
+	f:7 | bes:7 | c:7 | f | \myEndLine
+	f:7 | bes:7 | c:7 | f:7 | \myEndLine
+	bes | ees | ees:m7 | c:7 | \myEndLine
+	f:m | bes:m | f:m | c:7 | \myEndLine
+	\endPart
+
+	\endSong
+	\endChords
+}
+
+
+

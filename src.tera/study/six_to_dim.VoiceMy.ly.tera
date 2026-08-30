@@ -1,0 +1,13 @@
+
+
+
+{
+	\time 4/4
+	\key bes \major
+
+	% this is to be played over: cm6 as tonic, am7.5- as II chord, f7 as dominant, b7 as dominant
+
+	<c ees g a>1 <d f aes b> <ees g a c> <f aes b d>
+	<g a c ees> <aes b d f> <a c ees g> <b d f aes>
+	<c ees g a>
+}

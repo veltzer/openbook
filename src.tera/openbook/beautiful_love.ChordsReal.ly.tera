@@ -1,0 +1,45 @@
+
+
+
+\chordmode {
+\startChords
+\startSong
+
+   s4 s4 s4 s4 \repeat volta 2 {
+      |
+      e2.:dim5m7 s4 |
+      a4.:7.5+ s8 s4 s8 s8 |
+      d1:m5 |
+      d4:m5 s4 s4 s4 |
+      g2.:m7 s4 |
+      c4.:7 s8 s4 s8 s8 |
+      f1:maj7 |
+      e4:dim5m7 s4 a4:7 s4 |
+      d4.:m5 s8 s4 s4 | 
+      g4.:m7 s8 s4 s4 |
+      bes1:7.11+ |
+      a4:7 s4 s4 s4
+   }
+   \alternative {
+      {
+         |
+         d2.:m5 s4 |
+         g2.:7.11+ s4 |
+         e1:dim5m7 |
+         a4:7 s4 s4 s4
+      }
+      {
+         |
+         d2:m5 b4:7 s4
+      }
+   } |
+   bes2:7 a2:7 |
+   d1:m5 | 
+   s4 s4 s4 s4 \bar "|."
+
+\endSong
+\endChords
+}
+
+
+

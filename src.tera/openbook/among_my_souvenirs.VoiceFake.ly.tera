@@ -1,0 +1,36 @@
+
+
+
+
+{
+	\tempo "Andante" 4 = 88
+	\time 2/2
+	\key ees \major
+
+	\repeat volta 2 {
+
+		% part "A"
+		r4 g' g bes | bes aes aes2~ | aes4 aes aes c | c bes bes2~ |
+		bes4 bes bes ees | ees d d c | c bes bes aes | g1~ |
+
+		% part "A"
+		g4 g g bes | bes aes aes2~ | aes4 aes aes c | c bes bes2~ |
+		bes4 bes bes ees | ees d d c | c bes bes aes | g1~ |
+
+		% part "B"
+		g4 g aes bes | c f f2~ | f4 ees d c | ees g, bes2~ |
+		bes4 ees, f g | aes d d2~ | d4 c bes aes | g2 ees | g fis |
+
+		% part "A"
+		r4 g g bes | bes aes aes2~ | aes4 aes aes c | c bes bes2~ |
+		bes4 bes bes ees | ees d d c | c d c bes |
+	} \alternative {
+		{
+			ees1~ | ees4 r r2 |
+		}
+		{
+			ees1~ | ees4 r r2 |
+		}
+	}
+}
+

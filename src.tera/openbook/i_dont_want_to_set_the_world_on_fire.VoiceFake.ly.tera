@@ -1,0 +1,36 @@
+
+
+
+
+{
+	\tempo "Allegro" 4 = 130
+	\time 2/2
+	\key f \major
+
+	\repeat volta 2 {
+
+		% part "A"
+		a'4 c c,8. d16 f8. a16 | c2 ces | bes4 d2.~ | d2 bes |
+		a8. c16 a8 c~ c2 | r4 a c8. cis16 d8 a~ | a1~ | a1 |
+
+		% part "A"
+		a4 c c,8. d16 f8. a16 | c2 ces | bes4 d2.~ | d2 bes |
+		a8. c16 a8 c~ c2 | r4 a c8. cis16 d8 f,~ | f1~ | f2. f4 |
+
+		% part "B"
+		g8. g16 g8 d'~ d d4 f,8 | g8. g16 g8 d'~ d2 | c8. c16 bes8. bes16 a8. a16 d8. d16 | a2. g4 |
+		a8. a16 a8 e'~ e e4 g,8 | a8. a16 a8 e'~ e2 | d8. cis16 d8. cis16 d8. cis16 \tuplet 3/2 { d8 dis e~ } | e4 d8 a~ a aes4. |
+
+		% part "A"
+		a4 c c,8. d16 f8. a16 | c2 ces | bes4 d2.~ | d2 bes |
+		a8. c16 a8 c~ c2 | r4 a c8. cis16 d8 f,~ |
+	} \alternative {
+		{
+			f1 | r |
+		}
+		{
+			f~ | f2. r4 |
+		}
+	}
+}
+

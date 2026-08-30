@@ -1,0 +1,34 @@
+
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\repeat volta 2 {
+
+		\myMark "A"
+		\startPart
+		c1 | a:7 | d2:m7 g4:7 c~ | c2 g:7 | \myEndLine
+		\endPart
+
+		\myMark "A"
+		\startPart
+		c1 | a:7 | d2:m7 g4:7 c~ | c1 | \myEndLine
+		\endPart
+
+		\myMark "B"
+		\startPart
+		e1:m7.5- | a:7 | d:m7 | g:7 | \myEndLine
+		\endPart
+
+		\myMark "C"
+		\startPart
+		c:7 | f2 fis:dim7 | c/g g4:7 c~ | c1 | \myEndLine
+		\endPart
+	}
+
+	\endSong
+	\endChords
+}
+

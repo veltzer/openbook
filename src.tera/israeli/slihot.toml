@@ -1,0 +1,87 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "My"
+
+[attributes]
+heb = true
+title = "סליחות"
+style = "Israeli"
+subtitle = "באת אלי"
+composer = "עודד לרר"
+poet = "לאה גולדברג"
+piece = "בלדה מתונה"
+singer = "יהודית רביץ"
+typesetter = "מרק ולצר <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "11ad0c38-6dc9-4318-873f-5e7e80b7c8a8"
+idyoutube1 = "DZd_Ik2SNcg"
+idyoutube2 = "jZ_8rSmLFwU"
+lyricsurl = "http://shironet.mako.co.il/artist?type=lyrics&lang=1&prfid=462&wrkid=2413"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = true
+dedication = false
+title = true
+style = true
+subtitle = true
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = true
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = false
+copyrightextra = false
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = false
+structureremark = false
+location = false
+remark = false
+idyoutuberemark1 = false
+idyoutube1 = true
+idyoutuberemark2 = false
+idyoutube2 = true
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "-- עיזרו לי למלא את שורת זכויות היוצרים הזו --"
+fullpoet = "מלים: לאה גולדברג"
+fullcomposer = "לחן: עודד לרר"
+
+[versions.My]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = true
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = true
+doPrep = false
+doOwn = false

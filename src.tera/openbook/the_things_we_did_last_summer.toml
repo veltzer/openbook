@@ -1,0 +1,93 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Fake"
+
+[attributes]
+title = "The Things We Did Last Summer"
+style = "Jazz"
+composer = "Sammy Chan, Jule Styne"
+poet = "Sammy Chan, Jule Styne"
+piece = "Slow Ballad"
+copyright = "1946 by Edwin H. Morris & Co., Inc"
+copyrightextra = "Copyright renewed, assigned to Producers Music Pub. Co., Inc. (Chappell & Co., Inc., administrator) and Cahn Music Co. for the U.S.A. only"
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "31587e4e-ab0c-11e1-9dc8-3765c038b685"
+structure = "AABA"
+structureremark = "This is not a perfect AABA (last A is a little different) but very very close"
+location = "jfb:392-393"
+idyoutuberemark1 = "Fats Navaro blowing cool"
+idyoutube1 = "extdr--C3jI"
+idyoutuberemark2 = "The classic Dean Martin version"
+idyoutube2 = "yRWfc-8wLm4"
+idyoutuberemark3 = "The classic Sinatra version"
+idyoutube3 = "f_88dKZHeF4"
+lyricsurl = "http://www.lyricsfreak.com/f/frank+sinatra/the+things+we+did+last+summer_20055125.html"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = true
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = true
+location = true
+remark = false
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = true
+idyoutube2 = true
+idyoutuberemark3 = true
+idyoutube3 = true
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "Copyright © 1946 by Edwin H. Morris & Co., Inc"
+fullcomposer = "Lyrics and Music by Sammy Chan, Jule Styne"
+fullpoet = ""
+
+[versions.Fake]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

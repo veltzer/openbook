@@ -1,0 +1,31 @@
+
+
+
+
+{
+	\tempo "Allegro" 4 = 130
+	\time 3/4
+	\key bes \major
+
+	% part "A"
+	\repeat volta 2 {
+		f2. | bes2 fis4 | a2 g4 | g2. |
+		g | ees'2 b4 | d2 c4 | c d ees |
+	} \alternative {
+		{
+
+			% part "B"
+			f2 f4 | a2 a4 | f2. | c4 d ees |
+			f2 f4 | a2 a4 | f2.~ | f |
+		}
+		{
+
+			% part "C"
+			f4. e8 f4 | c'2 bes4 | c,4 bes c | a'2 g4 |
+			f2 ees4 | d2 c4 | bes2.~ | bes |
+		}
+	}
+}
+
+
+

@@ -1,0 +1,106 @@
+
+
+
+
+
+
+
+\score {
+	<<
+		\new FretBoards {
+			
+	\chordmode {
+		\startChords
+		\mark "Verse"
+		\startPart
+		a2:m7 e4:m7 e:m7/g | a1:m7 |
+		a2:m7 e4:m7 e:m7/g | a1:m7 |
+		e:m7 | d:m7 |
+		a2:m7 e4:m7 e:m7/g | a1:m7 |
+		\endPart
+		\mark "Interlude"
+		\startPart
+		% these chords are silent
+		a1*8:m7 |
+		% these chords are even more silent
+		a2:m7 e4:m7 e:m7/g | a1:m7 |
+		\endPart
+		\endChords
+	}
+
+		}
+		
+	\new ChordNames="Chords"
+	\with {
+		\override BarLine #'bar-extent = #'(-2 . 2)
+		\consists "Bar_engraver"
+	}
+
+		
+	\chordmode {
+		\startChords
+		\mark "Verse"
+		\startPart
+		a2:m7 e4:m7 e:m7/g | a1:m7 |
+		a2:m7 e4:m7 e:m7/g | a1:m7 |
+		e:m7 | d:m7 |
+		a2:m7 e4:m7 e:m7/g | a1:m7 |
+		\endPart
+		\mark "Interlude"
+		\startPart
+		% these chords are silent
+		a1*8:m7 |
+		% these chords are even more silent
+		a2:m7 e4:m7 e:m7/g | a1:m7 |
+		\endPart
+		\endChords
+	}
+
+	>>
+	%\midi {}
+	\layout {}
+}
+
+% Lyrics
+\verticalSpace
+\verticalSpace
+\markup {
+	\small {
+		\concat {
+			\column {
+				\box "Verse"
+				"Ain't no sunshine when she's gone."
+				"It's not warm when she's away."
+				"Ain't no sunshine when she's gone"
+				"And she's always gone too long anytime she goes away."
+				\vspace #0.3
+				\box "Verse"
+				"Wonder this time where she's gone,"
+				"Wonder if she's gone to stay"
+				"Ain't no sunshine when she's gone"
+				"And this house just ain't no home anytime she goes away."
+				\vspace #0.3
+				\box "Special"
+				"And I know, I know, I know, I know, I know,"
+				"I know, I know, I know, I know, I know, I know, I know,"
+				"I know, I know, I know, I know, I know, I know,"
+				"I know, I know, I know, I know, I know, I know, I know, I know"
+				"Hey, I ought to leave the young thing alone,"
+			}
+			\hspace #3
+			\column {
+				\box "Verse"
+				"But ain't no sunshine when she's gone,"
+				"Only darkness everyday."
+				"Ain't no sunshine when she's gone,"
+				"And this house just ain't no home anytime she goes away."
+				\vspace #0.3
+				\box "Ending"
+				"Anytime she goes away."
+				"Anytime she goes away."
+				"Anytime she goes away."
+				"Anytime she goes away."
+			}
+		}
+	}
+}

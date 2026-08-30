@@ -1,0 +1,45 @@
+
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\partial 4 s4 |
+
+	\myMark "A"
+	\startPart
+	\repeat volta 2 {
+		ees1 | g2:7/d g:7 | c2.:m c4:m7 | bes2:m7 ees:7 | \myEndLine
+		aes1 | c2:7/g c:7 | f1:7 | f2:m7.5-/bes bes:7 | \myEndLine
+		ees1 | ees:7 | aes | aes:m6 | \myEndLine
+	} \alternative {
+		{
+			ees:maj7 | c:7.9- | f:m7 | bes:7 | \myEndLineVoltaNotLast
+		}
+		{
+			ees | f2:m7 bes:7.9- | ees1 | ees | \myEndLineVoltaLast
+		}
+	}
+	\endPart
+
+	\myMark "B"
+	\startPart
+	f2:m7 bes:7 | ees4:maj9 ees2.:6 | f2:m7 bes:7 | ees2:maj9 ees:6 | \myEndLine
+	a:m7 d:7 | g:maj7 g:6 | f1:m7 | b2:7.5- bes4:7 bes:7.5+ | \myEndLine
+	\endPart
+
+	\myMark "A"
+	\startPart
+	ees1 | g2:7/d g:7 | c2.:m c4:m7 | bes2:m7 ees:7 | \myEndLine
+	aes1 | c2:7/g c:7 | f1:7 | f2:m7.5-/bes bes:7 | \myEndLine
+	ees1 | ees2.:7 ees4:7.5+ | aes1 | aes | \myEndLine
+	f:9 | f2.:m7 f4:m7.5-/bes | ees1*2:6 | \myEndLine
+	\endPart
+
+	\endSong
+	\endChords
+}
+
+
+

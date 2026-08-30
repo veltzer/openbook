@@ -1,0 +1,23 @@
+
+
+
+
+{
+	\tempo "Allegro" 4 = 130
+	\time 2/2
+	\key c \major
+
+	% part "A"
+	r8 e4 d8 e d4 e8~ | e d e2. | r8 e4 d8 e d4 e8~ | e d e2. |
+	r8 d4 c8 d c4 d8~ | d c4 f8~ f e4 e8~ | e4. d8~ d2~ | d2. r4 |
+	r8 g4 f8 g f4 g8~ | g f4 g8~ g2 | r8 f4 e8 f e4 f8~ | f e f2. |
+	r8 e4 d8 e d4 e8~ | e d4 e8~ e d f4~ | f8 e4 f8 e4 f~| f8 e4 d8~ d c4. |
+
+	% part "A'"
+	r8 e4 d8 e d4 e8~ | e d4 e8~ e2 | r8 e4 d8 e d4 e8~ | e d e4~ e8 g4 d8~ |
+	d2 \tuplet 3/2 { c4 d c } | d8 c4 f8~ f e4 e8~ | e4. d8~ d2~ | d2. r4 |
+	r8 c'4 bes8~ bes aes g f | e4. d8~ d2 | r4 r8 b' a g f e | d4. c8~ c2 |
+	r4 r8 a' g f e d | c b4 c8~ c d4 g8~ | g1~ | g2 r |
+	r4 r8 a g f e d | c b4 c8~ c d4 c8~ | c1~ | c2. r4 |
+}
+

@@ -1,0 +1,18 @@
+
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\startPart
+	a2:m e:7 | e:7 a:m | a:m c | g:7 c |
+	\repeat volta 2 {
+		c b:7 | d a | a:m e:7 | e:7 a:m |
+	}
+	\endPart
+
+	\endSong
+	\endChords
+}
+

@@ -1,0 +1,44 @@
+
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\myMark "A"
+	\startPart
+	\repeat volta 2 {
+		g2.*2 | fis2.:m7.5- | b:7.9- | e:m7 | a:7.9- | d:m7 | g:7 | \myEndLine
+		c:maj7 | c:6 | c:m7 | f:9 | bes2.*2:maj7 | bes2.:m7 | ees:9 | \myEndLine
+		aes:maj7 | aes | a:m7.5- | d:7.9- | b:m7 | bes:7 | a:m7 | d:7 | \myEndLine
+	}
+	\endPart
+
+	\myMark "A"
+	\startPart
+	g2.*2 | fis2.:m7.5- | b:7 | e:m7 | a:7 | d:m7 | g:7 | \myEndLine
+	c:maj7 | c:6 | c:m7 | f:7 | bes:maj7 | bes:6 | bes:m7 | ees:9 | \myEndLine
+	aes2.*2:maj7 | a2.:m7.5- | d:7.9- | b:m7 | bes:7 | a:m7 | d:7 | \myEndLine
+	\endPart
+
+	\myMark "A"
+	\startPart
+	g2.*2 | fis2.:m7.5- | b:7 | e:m7 | a:7 | d:m7 | g:7 | \myEndLine
+	c:maj7 | c:6 | c:m7 | f:7 | bes:maj7 | bes:6 | bes:7 | ees:7 | \myEndLine
+	aes2.*2:maj7 | a2.:m7.5- | d:7 | b:m7 | bes:7 | a:m7 | d:7 | \myEndLine
+	\endPart
+
+	\myMark "A"
+	\startPart
+	g2.*2 | fis2.:m7.5- | b:7.9- | e:m7 | a:7.9- | d:m7 | g:7 | \myEndLine
+	c:maj7 | c:6 | c:m7 | f:9 | bes2.*2:maj7 | bes2.:m7 | ees:9 | \myEndLine
+	aes2.*2:maj7 | a2.:m7.5- | d:9 | b2.*2:m7 | e2.:7 | e2:7.5+ e4:7 | \myEndLine
+	a2.*2:m7 | d:7 | g2. | d2:7.9+ d4:9 | b4:m7 a:m7 aes:maj7 | g2.:maj7 | \myEndLine
+	\endPart
+
+	\endSong
+	\endChords
+}
+
+
+

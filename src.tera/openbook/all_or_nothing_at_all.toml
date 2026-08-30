@@ -1,0 +1,89 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Fake"
+
+[attributes]
+title = "All Or Nothing At All"
+style = "Jazz"
+composer = "Arthur Altman"
+poet = "Jack Lawrence"
+piece = "Moderately Slow"
+copyright = "1930, 1940 by MCA MUSIC PUBLISHING, A Division of MCA Inc. Copyright Renewed"
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "4a4a2f24-ed86-11e3-aaf5-87841dcdcaf2"
+structure = "AABA"
+location = "jfb:41"
+idyoutuberemark1 = "Diana Krall in a good version of this one"
+idyoutube1 = "GHyT8m6mSuI"
+idyoutuberemark2 = "Early Frank with Orchestra"
+idyoutube2 = "u7klm1GS3v8"
+lyricsurl = "http://www.azlyrics.com/lyrics/franksinatra/allornothingatall.html"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = false
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = false
+location = true
+remark = false
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = true
+idyoutube2 = true
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "Copyright © 1930, 1940 by MCA MUSIC PUBLISHING, A Division of MCA Inc. Copyright Renewed"
+fullpoet = "Lyrics by Jack Lawrence"
+fullcomposer = "Music by Arthur Altman"
+
+[versions.Fake]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

@@ -1,0 +1,42 @@
+
+
+
+
+{
+	\tempo "Andante" 4 = 76
+	\time 4/4
+	\key ees \major
+
+	% part "Intro"
+	r8. bes'16[ c8. bes16] c8.[ bes16 ees,8. f16] | ges8-. ges-. ges-. ges-. ges-> f~ f4 |
+
+	\repeat volta 2 {
+
+		% part "A"
+		r8 bes c bes c bes des4 | r8 bes c bes des2 | r8 bes c bes c bes des4 | r8 aes bes aes c2 |
+		r8 aes bes aes bes aes ces4 | r8 g aes g bes4 aes | g2 g | g1 |
+
+		% part "A"
+		r8 bes c bes c bes des4 | r8 bes c bes des2 | r8 bes c bes c bes des4 | r8 aes bes aes c2 |
+		r8 aes bes aes bes aes ces4 | r8 g aes g bes4 g | ees2 ees | ees1 |
+
+		% part "B"
+		ees8 f g fis g4 ees' | ees d bes b | d c g a | b1 |
+		ees,8 f g fis g4 ees' | ees d bes b | d c bes! aes | g f g aes |
+
+		% part "A"
+		r8 bes c bes c bes des4 | r8 bes c bes des2 | r8 bes c bes c bes des4 | r8 aes bes aes c2 |
+		r8 aes bes aes bes aes ces4 | r8 g aes g bes4 g | ees2 ees |
+	} \alternative {
+		{
+			ees f |
+		}
+		{
+			ees1 |
+		}
+	}
+}
+
+
+
+

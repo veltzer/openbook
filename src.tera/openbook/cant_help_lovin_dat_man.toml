@@ -1,0 +1,83 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Fake"
+
+[attributes]
+title = "Can't Help Lovin' Dat Man"
+style = "Jazz"
+composer = "Jerome Kern"
+poet = "Oscar Hammerstein III"
+piece = "Moderately and rather freely"
+copyright = "1927 T.B. Hama Company, Copyright Renewed"
+typesetter = "Jordan Eldredge <jordan@jordaneldredge.com>"
+completion = "5"
+uuid = "0343bfb8-da81-11e3-a02b-6be199cd3208"
+structure = "AABA"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = false
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = false
+location = false
+remark = false
+idyoutuberemark1 = false
+idyoutube1 = false
+idyoutuberemark2 = false
+idyoutube2 = false
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = false
+wiki = false
+
+[computed]
+copyright = "Copyright © 1927 T.B. Hama Company, Copyright Renewed"
+fullpoet = "Lyrics by Oscar Hammerstein III"
+fullcomposer = "Music by Jerome Kern"
+
+[versions.Fake]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

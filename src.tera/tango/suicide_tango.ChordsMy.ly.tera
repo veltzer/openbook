@@ -1,0 +1,58 @@
+
+
+
+\chordmode {
+%	http://lilypond.org/doc/v2.11/Documentation/user/lilypond/MIDI-instruments#MIDI-instruments
+%	\set ChordNames.midiInstrument = #"accordion"
+%	\set ChordNames.midiMinimumVolume = #0.1
+%	\set ChordNames.midiMaximumVolume = #0.1
+%	\set ChordNames.dynamicAbsoluteVolumeFunction = #0.1
+	\startChords
+	\startSong
+
+	\mark "Intro"
+	\repeat volta 2 {
+		f2:m7 g:m7.5- | f:m7 des:7 | f:m7 g:m7.5- | f1:m7 | \myEndLine
+		bes:m7 | f:m7 | des:7 |
+	} \alternative {
+		{
+			c:7.9- | \myEndLineVoltaNotLast
+		}
+		{
+			c:7.9- | \myEndLineVoltaLast
+		}
+	}
+
+	\myMark "A"
+	\startPart
+	\repeat volta 2 {
+		f1*2:m7 | g:m7.5- | \myEndLine
+		c1:7.9- |
+	} \alternative {
+		{
+			c:7.9- | f1:m7 | c:7.9- | \myEndLineVoltaNotLast
+		}
+		{
+			c:7.9- | f:m7 | f:7 | \myEndLineVoltaLast
+		}
+	}
+	\endPart
+
+	\myMark "B"
+	\startPart
+	f1*2:7 | bes:m7 | \myEndLine
+	ees:7 | aes1 | c:7.9- | \myEndLine
+	\endPart
+
+	\myMark "A"
+	\startPart
+	f1*2:m7 | g:m7.5- | \myEndLine
+	c:7.9- | f2:m7 c:7.9- | f4:m7 c:7.9- f2:m7 | \myEndLine
+	\endPart
+
+	\endSong
+	\endChords
+}
+
+
+

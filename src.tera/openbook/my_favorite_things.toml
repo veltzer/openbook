@@ -1,0 +1,91 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Real"
+
+[attributes]
+title = "My Favorite Things"
+style = "Jazz"
+subtitle = "From 'The Sound Of Music'"
+composer = "Richard Rodgers"
+poet = "Oscar Hammerstein II"
+piece = "Lively, with spirit"
+copyright = "1959 by Richard Rodgers and Oscar Hammerstein II. Copyright Renewed."
+copyrightextra = "Williamson Music Co., owner of publication and allied right throughout the Westen Hemisphere and Japan. All Rights Administered by Chappell & Co., Inc."
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "02c22208-a26f-11df-98fd-0019d11e5a41"
+structure = "AABA"
+location = "rbk1:306,jfb:260"
+idyoutuberemark1 = "Sarah Vaughan"
+idyoutube1 = "dusavln6Cjw"
+idyoutuberemark2 = "The great version by Coltrane"
+idyoutube2 = "0I6xkVRWzCY"
+lyricsurl = "http://www.stlyrics.com/songs/s/soundofmusic9841/myfavouritethings323514.html"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = true
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = true
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = false
+location = true
+remark = false
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = true
+idyoutube2 = true
+idyoutuberemark3 = false
+idyoutube3 = false
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "Copyright © 1959 by Richard Rodgers and Oscar Hammerstein II. Copyright Renewed."
+fullpoet = "Lyrics by Oscar Hammerstein II"
+fullcomposer = "Music by Richard Rodgers"
+
+[versions.Real]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = true
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false

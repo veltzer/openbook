@@ -1,0 +1,35 @@
+
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\partial 4 s4 |
+
+	%\myMark "A"
+	\mySegno
+	\startPart
+	\repeat volta 2 {
+		e1*2:m | g:m | \myEndLine
+		bes:maj7 | b1:m7.5- | e:7.9+ | \myEndLine
+		a1*2:m11 | fis:m7.5- | \myEndLine
+		f:m7 | c:m11 | \myCoda b:7.3-.5-.9-.11-.13- \mark \markup {D.S. al Coda} | \myEndLine
+	}
+	\endPart
+
+	%\myMark "Coda"
+	%\myCoda
+	\startPart
+	\repeat volta 2 {
+		b1:7.3-.5-.9-.11-.13- | c1*2:m11 | b1:7.3-.5-.9-.11-.13- | \myEndLine
+	}
+	\endPart
+
+	\endSong
+	\endChords
+}
+
+
+
+

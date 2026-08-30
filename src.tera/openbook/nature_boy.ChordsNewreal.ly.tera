@@ -1,0 +1,30 @@
+
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\partial 8 s8 |
+
+	\myMark "A"
+	\startPart
+	d1:m | e2:m7.5- a:7 | d1:m | e2:m7.5- a:7 | \myEndLine
+	d:m d:m7+ | d:m7 d:m6 | g:m6 d:m | e1:m7.5- | \myEndLine
+	a1*2:7 | d:m | \myEndLine
+	e:7.9- | a:7 | \myEndLine
+	\endPart
+
+	\myMark "B"
+	\startPart
+	d1:m | e2:m7.5- a:7 | d1:m | e2:m7.5- a:7 | \myEndLine
+	d:m d:m7+ | d:m7 d:m6 | g:m6 d:m | e1:m7.5- | \myEndLine
+	a1*2:7 | d1:m | \OPC b:m7.5- | \myEndLine
+	e:7.9- | a:7.5+ | d:m | \LPC e2:m7.5- \RPC a:7 | \myEndLine
+	\endPart
+
+	\endSong
+	\endChords
+}
+
+

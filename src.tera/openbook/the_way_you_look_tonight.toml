@@ -1,0 +1,93 @@
+# extracted from the mako Vars part by scripts/convert_to_tera.py
+default_version = "Newreal"
+
+[attributes]
+title = "The Way You Look Tonight"
+style = "Jazz"
+composer = "Jerome Kern"
+poet = "Dorothy Fields"
+piece = "Med.-Up Swing"
+copyright = "1936 T B Harms Co."
+copyrightextra = "Copyright Renewed c/o The Welk Music Group, Santa Monica, CA 90401 Authorized Selling Agent in Japan High Note Publishing Co, Ltd, used by permission of JASRAC License #8670719. International Copyright Secured. All Right Reserved. Used By Permission."
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "30fc7894-d8f8-11e3-84a6-77203dda2123"
+structure = "AABA"
+structureremark = "The New Real Book marks this one as AABC but the C is too damn close to the A"
+location = "nrbk1:395-396"
+idyoutuberemark1 = "The cannonical performance by Frank Sinatra"
+idyoutube1 = "h9ZGKALMMuc"
+idyoutuberemark2 = "Nat King Cole in a great version"
+idyoutube2 = "qLVvHtKUrdQ"
+idyoutuberemark3 = "Monk and Rollins in an instrumental version"
+idyoutube3 = "V0fPYzyB2AQ"
+lyricsurl = "http://www.lyrics007.com/Frank%20Sinatra%20Lyrics/The%20Way%20You%20Look%20Tonight%20Lyrics.html"
+
+[has]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+render = false
+heb = false
+dedication = false
+title = true
+style = true
+subtitle = false
+subsubtitle = false
+composer = true
+poet = true
+piece = true
+singer = false
+arranger = false
+album = false
+opus = false
+instrument = false
+copyright = true
+copyrightextra = true
+copyrightextraextra = false
+typesetter = true
+completion = true
+dontimport = false
+uuid = true
+structure = true
+structureremark = true
+location = true
+remark = false
+idyoutuberemark1 = true
+idyoutube1 = true
+idyoutuberemark2 = true
+idyoutube2 = true
+idyoutuberemark3 = true
+idyoutube3 = true
+idyoutuberemark4 = false
+idyoutube4 = false
+idyoutuberemark5 = false
+idyoutube5 = false
+idyoutuberemark6 = false
+idyoutube6 = false
+lyricsurl = true
+wiki = false
+
+[computed]
+copyright = "Copyright © 1936 T B Harms Co."
+fullpoet = "Lyrics by Dorothy Fields"
+fullcomposer = "Music by Jerome Kern"
+
+[versions.Newreal]
+doChords = true
+doVoice = true
+doLyrics = true
+doLyricsmore = true
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
