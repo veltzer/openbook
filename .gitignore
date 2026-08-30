@@ -62,7 +62,7 @@ modules.order
 
 # sphinx
 /docs/_build/
-/docs/.doctrees/environment.pickle
+/docs/.doctrees/
 
 # mdBook build output
 /docs/book/
