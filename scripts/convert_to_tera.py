@@ -386,6 +386,14 @@ def needed_parts(attributes: attr.Attributes) -> list[str]:
     return parts
 
 
+RE_PART_SECTION = re.compile(r"^%\s*if part\s*==\s*'(\w+)'", re.MULTILINE)
+
+
+def source_parts(song: Path) -> set[str]:
+    """ every part name a song's source defines, whatever its version """
+    return set(RE_PART_SECTION.findall(song.read_text(encoding="utf-8")))
+
+
 def convert_song(song: Path) -> None:
     """ convert one song: TOML + part files + driver """
     rel = song.relative_to(SRC)  # <book>/.../<name>.ly.mako
@@ -394,8 +402,10 @@ def convert_song(song: Path) -> None:
     attributes = capture_vars(song)
     write_toml(tera_dir / f"{stem}.toml", attributes)
 
+    # extract every part the source defines (all versions, Doc included) so
+    # no content is lost, plus the parts the driver splices even when absent
     parts: dict[str, str] = {}
-    for part in needed_parts(attributes):
+    for part in sorted(source_parts(song) | set(needed_parts(attributes))):
         scratch_attributes = attr.Attributes()  # Vars re-executes; must start clean
         scratch_attributes.reset()
         text = render_song_part(song, part, scratch_attributes)

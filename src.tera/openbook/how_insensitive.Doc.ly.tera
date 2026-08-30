@@ -1,0 +1,41 @@
+
+
+	DONE:
+	- brought in the real book epdf.
+	- filled in the meta data from the real book.
+	- put in the tunes structure.
+	- put in the real book chords.
+	- brought in the fake book epdf.
+	- filled in the meta data from the fake book.
+	- put in the real book tune.
+	- checked the real book chords.
+	- checked the real book tune.
+	- put in the real book lyrics.
+	- checked the real book lyrics.
+	- played the real book version to hear that it sounds well.
+	- put in you tube performances with documentation.
+	- put in a lyrics url.
+	- add the fake book chords.
+	- add the fake book tune.
+	- add the fake book lyrics.
+	- check the fake book chords.
+	- check the fake book tune.
+	- check the fake book lyrics.
+	- heard the fake book version.
+	TODO:
+	- this song has two poets one for the original portugese and one for english. This is not reflected in the output,
+		make it not so.
+	- in the real book version of the chords in the B section the des:7 should come in the middle of the bar and I
+		have no way to indicate that. The original real book score does indicate that using tempo markings.
+		Find out how to do that in lilypond and do it.
+	REMARKS:
+	- this tune was written in the real book under a C major scale (or A minor scale) where the B is always flat.
+		Obviously this is a serious mistake.
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+
+
+	DONE:
+	- filled in this tunes meta data from the fake book.
+	- filled in this tunes structure.
+	- brought in the fake book epdf.
+	- filled in the fake book chords.
+	- filled in the fake book tune.
+	- filled in the fake book lyrics.
+	- checked the fake book chords.
+	- checked the fake book tune.
+	- checked the fake book lyrics.
+	- heard that the fake book tune sounds well.
+	- added youtube performances.
+	- added a lyrics url.
+	TODO:
+	- in the lyrics there is a boy/girl part which is currently only boy in the implementation.
+	find out how to do the dual parts and fix that.
+	- bring another version of this tune in here.
+
+
+

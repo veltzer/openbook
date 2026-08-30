@@ -1,0 +1,38 @@
+
+
+	DONE:
+	- added the meta data for this tune from the fake book.
+	- brought in locations for fake, real and aebersold.
+	- put in the aebersold chords.
+	- put in the aebersold tune.
+	- put in the aebersold lyrics.
+	- checked the aebersold chords.
+	- checked the aebersold tune.
+	- checked the aebersold lyrics.
+	- in the aebersold version added parens on the turn around notes.
+	- in the aebersold version added phrases.
+	- heard the aebersold version to make sure it's ok.
+	- added youtube performances.
+	- added lyrics url.
+	- put in the fakebook chords.
+	- put in the fakebook tune.
+	- put in the fakebook lyrics.
+	- checked the fakebook chords.
+	- checked the fakebook tune.
+	- checked the fakebook lyrics.
+	- hear the fakebook version to hear that the tempo is right and there are no errors.
+	TODO:
+	- add real book version.
+	- in the Aebersold tune there are two versions: one marked out and one not. The only
+		difference between then is that the marked out one has phrases lined out (as
+		in the Aebersold booklet). The reasons it is not enabled is that it makes
+		the lyrics come out wrong. It seems that phrases are related to lyrics rendering.
+		Find out why and how and fix it (try to get the phrases back while keeping the
+		lyrics intact).
+
+
+
+
+
+
+

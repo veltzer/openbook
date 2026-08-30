@@ -1,0 +1,33 @@
+
+
+
+\chordmode {
+	\startChords
+	\startSong
+
+	\partial 4 s4 |
+
+	\myMark "A"
+	\startPart
+	ees1*2:maj7 | d1:m7.5- | g:7.9- | \myEndLine
+	c1*2:m7 | bes1:m7 | ees:7 | \myEndLine
+	aes:maj7 | f2:m7.5- bes:7 | ees1:maj7 | c:m7 | \myEndLine
+	f:7 | \LPC c2:m7 \RPC f:7 | f1:m7 | bes:7 | \myEndLine
+	\endPart
+
+	\myMark "B"
+	\startPart
+	ees1*2:maj7 | d1:m7.5- | g:7.9- | \myEndLine
+	c1*2:m7 | bes1:m7 | ees:7 | \myEndLine
+	aes:maj7 | f2:m7.5- bes:7 | ees1:maj7 | g2:m7 c:7 | \myEndLine
+	ees:maj7 d:7 | g:7 c:7 | f:m7 bes:7 | ees:maj7 \OPC bes:7 | \myEndLine
+	\endPart
+
+	\endSong
+	\endChords
+}
+
+
+
+
+
