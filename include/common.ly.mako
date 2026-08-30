@@ -42,7 +42,8 @@ TONALITYTransposePitch=tonalityTransposePitch(TONALITY)
 	import socket # for gethostname
 	import subprocess # for subprocess.check_output
 
-	gattr['date']=datetime.datetime.now().strftime('%T %d-%m-%Y')
+	# day resolution only: keeps rebuilds within the same day byte-identical
+	gattr['date']=datetime.datetime.now().strftime('%d-%m-%Y')
 	gattr['year']=datetime.datetime.now().strftime('%Y')
 	gattr['username']=pwd.getpwuid(os.getuid())[0]
 
