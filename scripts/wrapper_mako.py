@@ -7,12 +7,12 @@ A command line tool to run the mako templating engine
 import os.path
 import sys
 
-import attr
 import mako.exceptions
 import mako.lookup
 import mako.template
 
 import config.openbook
+from scripts import attr
 
 
 def main():

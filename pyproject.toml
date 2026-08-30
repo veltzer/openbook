@@ -33,7 +33,7 @@ dev = [
 package = false
 
 [tool.mypy]
-mypy_path = "src:python:scripts"
+mypy_path = "src:python"
 explicit_package_bases = true
 namespace_packages = true
 
