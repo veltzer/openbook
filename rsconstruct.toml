@@ -14,19 +14,15 @@
 # dep_inputs override in their local overlay until converted.
 [processor.tera]
 dep_auto = [
-	"config/project.lua",
-	"config/personal.lua",
-	"config/version.lua",
-	"config/github.lua",
-	"config/python.lua",
-	"config/shared.lua",
+  "config/project.lua",
+  "config/personal.lua",
+  "config/version.lua",
+  "config/github.lua",
+  "config/python.lua",
+  "config/shared.lua",
 ]
 src_dirs = ["tera.templates"]
-dep_inputs = [
-    "config/project.lua",
-    "config/personal.lua",
-    "config/version.lua",
-]
+dep_inputs = ["config/project.lua", "config/personal.lua", "config/version.lua"]
 
 [processor.ruff]
 src_dirs = ["src", "scripts", "config"]
@@ -52,6 +48,48 @@ src_dirs = ["config"]
 
 [processor.taplo]
 src_dirs = ["."]
+
+# ─── books ───────────────────────────────────────────────────────────────────
+
+# Compile the tera-rendered book sources with lilypond. Each book is one
+# explicit product whose .ly input is a tera-processor output, so rsconstruct
+# orders tera before lilypond automatically and rebuilds a book only when its
+# rendered source changes.
+[processor.explicit.openbook]
+command = "python"
+args = ["-m", "scripts.wrapper_lilypond_explicit"]
+inputs = ["out/tera/books/openbook.ly"]
+output_files = ["out/tera/books/openbook.pdf", "out/tera/books/openbook.ps"]
+
+[processor.explicit.israeli]
+command = "python"
+args = ["-m", "scripts.wrapper_lilypond_explicit"]
+inputs = ["out/tera/books/israeli.ly"]
+output_files = ["out/tera/books/israeli.pdf", "out/tera/books/israeli.ps"]
+
+[processor.explicit.drumming]
+command = "python"
+args = ["-m", "scripts.wrapper_lilypond_explicit"]
+inputs = ["out/tera/books/drumming.ly"]
+output_files = ["out/tera/books/drumming.pdf", "out/tera/books/drumming.ps"]
+
+[processor.explicit.rockbook]
+command = "python"
+args = ["-m", "scripts.wrapper_lilypond_explicit"]
+inputs = ["out/tera/books/rockbook.ly"]
+output_files = ["out/tera/books/rockbook.pdf", "out/tera/books/rockbook.ps"]
+
+[processor.explicit.guitar_album]
+command = "python"
+args = ["-m", "scripts.wrapper_lilypond_explicit"]
+inputs = ["out/tera/books/guitar_album.ly"]
+output_files = ["out/tera/books/guitar_album.pdf", "out/tera/books/guitar_album.ps"]
+
+# ─── external dependencies ───────────────────────────────────────────────────
+
+# lilypond engraves the books; installed by `rsconstruct tools install-deps`
+[dependencies]
+system = ["lilypond"]
 
 # lint the GitHub Actions workflow files with actionlint
 [processor.actionlint]
