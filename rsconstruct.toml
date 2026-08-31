@@ -91,6 +91,120 @@ output_files = ["out/tera/books/guitar_album.pdf", "out/tera/books/guitar_album.
 [dependencies]
 system = ["lilypond"]
 
+# ─── opt-in targets (disabled by default) ────────────────────────────────────
+
+# Migrated from the Makefile targets that were not part of `make all`.
+# Each stanza ships with enabled = false; activate one for a single build
+# from the command line without touching this file:
+#
+#   rsconstruct build --iset explicit.check_all.enabled=true
+#   rsconstruct build --iset generator.songs_pdf.enabled=true
+#
+# The per-song and audio processors scan generated trees (out/tera/src,
+# out/songs/midi), so they discover work only once a prior build has
+# produced those files: run a plain `rsconstruct build` first.
+
+# `make check_all`: source-convention checks on the song sources
+[processor.explicit.check_all]
+enabled = false
+command = "python"
+args = ["-m", "scripts.check_all"]
+inputs = ["scripts/check_all.py"]
+input_globs = ["src.tera/**/*.ly.tera"]
+output_files = ["out/checks/check_all.stamp"]
+
+# `make checkhtml` (DO_CHECKHTML): validate the website index page
+[processor.tidy]
+enabled = false
+src_files = ["docs/index.html"]
+args = ["-errors", "-q", "-utf8"]
+
+[processor.htmlhint]
+enabled = false
+src_files = ["docs/index.html"]
+
+# per-song engraving (DO_PDF / DO_PS / DO_MIDI): one product per rendered song
+[processor.generator.songs_pdf]
+enabled = false
+command = "python"
+args = ["-m", "scripts.wrapper_lilypond_song"]
+src_dirs = ["out/tera/src"]
+src_extensions = [".ly"]
+output_dir = "out/songs/pdf"
+output_extension = "pdf"
+dep_inputs = ["scripts/wrapper_lilypond_song.py"]
+required_tools = ["lilypond"]
+batch = false
+
+[processor.generator.songs_ps]
+enabled = false
+command = "python"
+args = ["-m", "scripts.wrapper_lilypond_song"]
+src_dirs = ["out/tera/src"]
+src_extensions = [".ly"]
+output_dir = "out/songs/ps"
+output_extension = "ps"
+dep_inputs = ["scripts/wrapper_lilypond_song.py"]
+required_tools = ["lilypond"]
+batch = false
+
+[processor.generator.songs_midi]
+enabled = false
+command = "python"
+args = ["-m", "scripts.wrapper_lilypond_song"]
+src_dirs = ["out/tera/src"]
+src_extensions = [".ly"]
+output_dir = "out/songs/midi"
+output_extension = "midi"
+dep_inputs = ["scripts/wrapper_lilypond_song.py"]
+required_tools = ["lilypond"]
+batch = false
+
+# audio rendering (DO_WAV / DO_OGG / DO_MP3): consumes the songs_midi outputs
+[processor.generator.midi2wav]
+enabled = false
+command = "python"
+args = ["-m", "scripts.wrapper_midi_audio"]
+src_dirs = ["out/songs/midi"]
+src_extensions = [".midi"]
+output_dir = "out/songs/wav"
+output_extension = "wav"
+dep_inputs = ["scripts/wrapper_midi_audio.py"]
+required_tools = ["timidity"]
+batch = false
+
+[processor.generator.midi2ogg]
+enabled = false
+command = "python"
+args = ["-m", "scripts.wrapper_midi_audio"]
+src_dirs = ["out/songs/midi"]
+src_extensions = [".midi"]
+output_dir = "out/songs/ogg"
+output_extension = "ogg"
+dep_inputs = ["scripts/wrapper_midi_audio.py"]
+required_tools = ["timidity"]
+batch = false
+
+[processor.generator.midi2mp3]
+enabled = false
+command = "python"
+args = ["-m", "scripts.wrapper_midi_audio"]
+src_dirs = ["out/songs/midi"]
+src_extensions = [".midi"]
+output_dir = "out/songs/mp3"
+output_extension = "mp3"
+dep_inputs = ["scripts/wrapper_midi_audio.py"]
+required_tools = ["timidity", "lame"]
+batch = false
+
+# `make real_books_archive.gi`: fetch the scanned real-books reference archive
+[processor.explicit.real_books]
+enabled = false
+command = "python"
+args = ["-m", "scripts.download_real_books"]
+inputs = ["scripts/download_real_books.py"]
+output_files = ["out/real_books/real_books.stamp"]
+
 # lint the GitHub Actions workflow files with actionlint
 [processor.actionlint]
 src_dirs = [".github/workflows"]
