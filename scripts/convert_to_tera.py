@@ -1,37 +1,42 @@
 """
 Convert the mako song corpus to tera, side by side with the mako pipeline.
 
-The mako pipeline renders include/common.ly.mako once per output with a
-gattr dict steering it (single tune vs whole book) and each song supplying
-a 'Vars' part (python filling an Attributes object) plus LilyPond parts.
+The layout follows the same decisions as the mako system: EVERY SONG IS
+ONE FILE carrying its metadata and all of its variations. A song's
+src.tera/<book>/.../<song>.ly.tera holds TOML front matter inside a tera
+comment (the metadata that was python in the mako 'Vars' part) followed
+by the LilyPond parts as {% if part == "..." %} blocks, with local chord
+defs as same-file macros — a 1:1 translation of the mako file.
 
-This tool performs the data/markup separation for both output kinds:
+The render-time machinery mirrors the old wrapper+common.ly.mako pair:
+generated driver templates (tera cannot include dynamic paths, so the
+per-output weave of common.ly.mako is partially evaluated per tune and
+per book) render each song file several times with `part` set, exactly
+as common.ly.mako included each song per part.
 
+Subcommands:
   golden   render every single tune and every book through the mako
            pipeline into out/golden/, the byte-exact reference
-  convert  for every song, write
-             src.tera/<book>/.../<song>.toml           extracted metadata
-             src.tera/<book>/.../<song>.<Part>.ly.tera extracted parts
-             tera.templates/out/tera/src/.../<song>.ly.tera  tune driver
-           plus one book driver per book under tera.templates/out/tera/books/
-           and the shared src.tera/include/defs.ly.tera
+  convert  mako sources -> one-file tera songs in src.tera/ (plus the
+           shared include/ translations), then run `drivers`
+  drivers  tera song files -> driver templates under
+           tera.templates/out/tera/ and derived metadata under
+           out/derived/ (reads only src.tera, never the mako sources)
   compare  byte-diff out/tera against out/golden
 
-Drivers are produced by partially evaluating common.ly.mako: gattr
-conditionals and version flags are baked at convert time, the per-song
-loop is unrolled, and metadata values plus attribute-presence
-conditionals stay live tera expressions reading each song's TOML.
 Whitespace follows mako's exact semantics (consumed control lines, kept
 newline after block tags, leading %% un-escaped to %), so the tera
-output can be byte-identical to mako's.
+output is byte-identical to mako's.
 """
 
 import argparse
 import json
 import re
 import sys
-from dataclasses import dataclass, field
+import tomllib
+from dataclasses import dataclass
 from pathlib import Path
+from typing import Any
 
 import mako.lookup
 import mako.template
@@ -39,12 +44,15 @@ import mako.template
 from scripts import attr
 
 COMMON = Path("include/common.ly.mako")
+NAMESPACE_DEFS = Path("include/defs.ly.mako")
 SRC = Path("src")
 SRC_TERA = Path("src.tera")
 DRIVERS = Path("tera.templates/out/tera/src")
 BOOK_DRIVERS = Path("tera.templates/out/tera/books")
 GOLDEN = Path("out/golden")
 TERA_OUT = Path("out/tera")
+DERIVED = Path("out/derived")
+COMMON_TERA = SRC_TERA / "include/common.ly.tera"
 DEFS_TERA = SRC_TERA / "include/defs.ly.tera"
 
 BOOKS = ["openbook", "israeli", "drumming", "rockbook", "guitar_album"]
@@ -91,22 +99,28 @@ RUNTIME_HAS = {
 RE_CONTROL = re.compile(r"^%\s*(if|elif|else|endif|for|endfor)\b\s*(.*?):?\s*$")
 RE_INCLUDE = re.compile(r"""<%include\s+file="/\$\{file\}"\s+args="part=([^"]+)"\s*/>""")
 RE_ESCAPED_PCT = re.compile(r"^(\s*)%%")
-RE_PART_SECTION = re.compile(r"^%\s*if part\s*==\s*'(\w+)'", re.MULTILINE)
+RE_PART_IF = re.compile(r"^%\s*if part\s*==\s*'(\w+)'\s*:\s*$")
+RE_FRONT_MATTER = re.compile(r"\A(?:\{% import [^%]*%\})?\{#\n(.*?)\n#\}", re.DOTALL)
 
 
 @dataclass
-class SongInfo:
-    """ everything the driver generator needs to know about one song """
-    source: Path  # e.g. src/openbook/foo.ly.mako
-    attributes: attr.Attributes
-    # part name -> spliced text: a glued {% include %} tag or inline text
-    parts: dict[str, str] = field(default_factory=dict)
+class SongMeta:
+    """ one song as the driver generator sees it: the tera file plus metadata """
+    tera_source: Path  # src.tera/<book>/.../<song>.ly.tera
+    attrs: dict[str, Any]
+    versions: dict[str, dict[str, bool]]
+    default_version: str
 
     @property
-    def toml_path(self) -> Path:
-        """ the song's metadata file """
-        rel = self.source.relative_to(SRC)
-        return SRC_TERA / rel.parent / (rel.name[: -len(".ly.mako")] + ".toml")
+    def working_version(self) -> dict[str, bool]:
+        """ the version the drivers render """
+        return self.versions[self.default_version]
+
+    @property
+    def derived_toml(self) -> Path:
+        """ the derived metadata file the driver loads at render time """
+        rel = self.tera_source.relative_to(SRC_TERA)
+        return DERIVED / rel.parent / (rel.name[: -len(".ly.tera")] + ".toml")
 
 
 def lookup() -> mako.lookup.TemplateLookup:
@@ -114,17 +128,12 @@ def lookup() -> mako.lookup.TemplateLookup:
     return mako.lookup.TemplateLookup(directories=["."], input_encoding="utf-8")
 
 
-def render_song_part(song: Path, part: str, attributes: attr.Attributes) -> str:
-    """ render one song template with one part selected, mako-exact """
-    template = mako.template.Template(filename=str(song), lookup=lookup(), input_encoding="utf-8")
-    return template.render(part=part, attributes=attributes, gattr=dict(GATTR_SINGLE), scratch={})
-
-
 def capture_vars(song: Path) -> attr.Attributes:
     """ execute the song's Vars part and return the filled Attributes """
     attributes = attr.Attributes()
     attributes.reset()
-    render_song_part(song, "Vars", attributes)
+    template = mako.template.Template(filename=str(song), lookup=lookup(), input_encoding="utf-8")
+    template.render(part="Vars", attributes=attributes, gattr=dict(GATTR_SINGLE), scratch={})
     return attributes
 
 
@@ -133,24 +142,24 @@ def toml_str(value: str | bool | int) -> str:
     return json.dumps(value, ensure_ascii=False)
 
 
-def compute_scratch(attributes: attr.Attributes) -> dict[str, str]:
+def compute_scratch(attrs: dict[str, Any]) -> dict[str, str]:
     """ replicate the scratch computations of common.ly.mako at convert time """
-    heb = bool(attributes.get("heb"))
+    heb = bool(attrs.get("heb"))
     computed = {}
-    poet = attributes.get("poet")
-    composer = attributes.get("composer")
+    poet = attrs.get("poet")
+    composer = attrs.get("composer")
     if composer is None:
         add = "" if poet is None else " / " + poet
     elif poet is None or composer == poet:
         add = " / " + composer
     else:
         add = " / " + composer + ", " + poet
-    computed["tocname"] = attributes["title"] + add
-    if "copyright" in attributes:
+    computed["tocname"] = attrs["title"] + add
+    if "copyright" in attrs:
         if heb:
-            computed["copyright"] = "זכויות יוצרים © " + attributes["copyright"]
+            computed["copyright"] = "זכויות יוצרים © " + attrs["copyright"]
         else:
-            computed["copyright"] = "Copyright © " + attributes["copyright"]
+            computed["copyright"] = "Copyright © " + attrs["copyright"]
     else:
         if heb:
             computed["copyright"] = "-- עיזרו לי למלא את שורת זכויות היוצרים הזו --"
@@ -171,38 +180,142 @@ def compute_scratch(attributes: attr.Attributes) -> dict[str, str]:
     return computed
 
 
-def write_toml(path: Path, attributes: attr.Attributes) -> None:
-    """ write the extracted per-song metadata file """
-    lines = ["# extracted from the mako Vars part by scripts/convert_to_tera.py\n"]
-    lines.append(f"default_version = {toml_str(attributes.get_default_version_name())}\n")
+# ── mako song -> one-file tera song ──────────────────────────────────────
+
+
+def front_matter(attributes: attr.Attributes) -> str:
+    """ the song's metadata as TOML, the front matter of its tera file """
+    lines = [f"default_version = {toml_str(attributes.get_default_version_name())}\n"]
     lines.append("\n[attributes]\n")
     for key in attr.order:
         if key in attributes:
             lines.append(f"{key} = {toml_str(attributes[key])}\n")
-    lines.append("\n[has]\n")
-    for key in attr.order:
-        lines.append(f"{key} = {toml_str(key in attributes)}\n")
-    lines.append("\n[computed]\n")
-    for key, val in compute_scratch(attributes).items():
-        lines.append(f"{key} = {toml_str(val)}\n")
     for name, version in attributes.versions.items():
         lines.append(f"\n[versions.{name}]\n")
         for key, val in version.items():
             lines.append(f"{key} = {toml_str(val)}\n")
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text("".join(lines), encoding="utf-8")
+    text = "".join(lines)
+    if "#}" in text:
+        raise ValueError("metadata cannot be embedded in a tera comment: contains #}")
+    return text
+
+
+def translate_text(line: str) -> str:
+    """ translate one literal mako line to its tera equivalent """
+    line = RE_ESCAPED_PCT.sub(r"\1%", line)
+    line = line.replace("${chords()}", "{{ self::chords() }}")
+    line = line.replace("${defs.chordDefs()}", "{{ defs::chordDefs() }}")
+    if "${" in line or "{{{" in line or "{{%" in line or "{#" in line:
+        raise ValueError(f"untranslatable song line: {line!r}")
+    return line
+
+
+def logical_lines(text: str) -> list[str]:
+    """ mako's trailing-backslash continuation: the backslash is dropped and
+    the next physical line (leading %% un-escaped, as mako does per physical
+    line) is glued on. The first line keeps its raw %% for translate_text. """
+    joined: list[str] = []
+    for line in text.splitlines(keepends=True):
+        if joined and joined[-1].endswith("\\\n"):
+            joined[-1] = joined[-1][:-2] + RE_ESCAPED_PCT.sub(r"\1%", line)
+        else:
+            joined.append(line)
+    return joined
+
+
+def translate_song_body(text: str) -> tuple[str, str]:
+    """ translate a mako song's template body to tera, whitespace-exact
+
+    tera requires {% import %} before any content, so the mako namespace
+    line is hoisted to the very top (returned as prefix) and leaves its
+    newline in place.
+    """
+    prefix = ""
+    if "<%namespace" in text:
+        prefix = '{% import "' + DEFS_TERA.as_posix() + '" as defs %}'
+    lines = logical_lines(text)
+    out: list[str] = []
+    index = 0
+    while index < len(lines):
+        line = lines[index]
+        stripped = line.strip()
+        part_if = RE_PART_IF.match(line)
+        if part_if:
+            out.append('{% if part == "' + part_if.group(1) + '" %}')
+            index += 1
+        elif re.match(r"^%\s*endif", line):
+            out.append("{% endif %}")
+            index += 1
+        elif stripped.startswith("<%page"):
+            out.append("\n")
+            index += 1
+        elif stripped.startswith("<%namespace"):
+            out.append("\n")  # the import itself is hoisted to the top of the file
+            index += 1
+        elif stripped == "<%":  # metadata code block: emits its trailing newline
+            while lines[index].strip() != "%>":
+                index += 1
+            index += 1
+            out.append("\n")
+        elif stripped.startswith("<%def"):
+            name = re.search(r'name="(\w+)\(\)"', line).group(1)  # type: ignore[union-attr]
+            out.append("{% macro " + name + "() %}\n")
+            index += 1
+            while "</%def>" not in lines[index]:
+                out.append(translate_text(lines[index]))
+                index += 1
+            index += 1
+            out.append("{% endmacro %}\n")
+        elif stripped.startswith("%") and not stripped.startswith("%%"):
+            raise ValueError(f"unhandled mako control line in song: {line!r}")
+        else:
+            out.append(translate_text(line))
+            index += 1
+    return prefix, "".join(out)
+
+
+def convert_song(song: Path) -> Path:
+    """ convert one mako song to its single tera file; returns the new path """
+    rel = song.relative_to(SRC)
+    attributes = capture_vars(song)
+    tera_path = SRC_TERA / rel.parent / (rel.name[: -len(".ly.mako")] + ".ly.tera")
+    tera_path.parent.mkdir(parents=True, exist_ok=True)
+    prefix, body = translate_song_body(song.read_text(encoding="utf-8"))
+    # the import must be first and trims ALL whitespace after it; the glued
+    # front-matter comment shields the body from that trim
+    text = prefix + "{#\n" + front_matter(attributes) + "#}" + body
+    tera_path.write_text(text, encoding="utf-8")
+    return tera_path
+
+
+def write_shared_includes() -> None:
+    """ translate include/defs.ly.mako and common.ly.mako's defs() block """
+    DEFS_TERA.parent.mkdir(parents=True, exist_ok=True)
+    _, defs_body = translate_song_body(NAMESPACE_DEFS.read_text(encoding="utf-8"))
+    DEFS_TERA.write_text(defs_body, encoding="utf-8")
+    harvester = DriverEmitter(GATTR_SINGLE, [])
+    harvester.run(COMMON.read_text(encoding="utf-8"))
+    COMMON_TERA.write_text(harvester.eval_def_body(harvester.defs_body), encoding="utf-8")
+
+
+# ── the driver generator (partial evaluation of common.ly.mako) ──────────
 
 
 class DriverEmitter:
     """ partial evaluator turning common.ly.mako into one output's driver """
 
-    def __init__(self, gattr: dict, songs: list[SongInfo]):
+    def __init__(self, gattr: dict, songs: list[SongMeta]):
         self.gattr = gattr
         self.songs = songs
-        self.current = songs[0]
+        self.current = songs[0] if songs else None
         self.out: list[str] = []
         self.defs_body: str = ""
         self.clearvars_body: str = ""
+
+    def song(self) -> SongMeta:
+        """ the song whose loop iteration is being evaluated """
+        assert self.current is not None
+        return self.current
 
     # ── static condition evaluation ──────────────────────────────────────
 
@@ -214,19 +327,19 @@ class DriverEmitter:
             return (not val) if match.group(2) else val
         match = re.fullmatch(r"attributes.get_working_version\(\)\['(\w+)'\](==False)?", cond)
         if match:
-            val = bool(self.current.attributes.get_working_version()[match.group(1)])
+            val = bool(self.song().working_version[match.group(1)])
             return (not val) if match.group(2) else val
         match = re.fullmatch(r"'(\w+)'( not)? in attributes", cond)
         if match:
             key = match.group(1)
             if key in RUNTIME_HAS and not match.group(2):
                 return f"meta.has.{key}"
-            present = key in self.current.attributes
+            present = key in self.song().attrs
             return (not present) if match.group(2) else present
         match = re.fullmatch(r"'(\w+)' in attributes and attributes\['(\w+)'\]", cond)
         if match:
-            attributes = self.current.attributes
-            return match.group(1) in attributes and bool(attributes[match.group(1)])
+            attrs = self.song().attrs
+            return match.group(1) in attrs and bool(attrs[match.group(1)])
         # the famous bare-name bug: `heb in attributes` compares mako's
         # UNDEFINED sentinel, so the condition is always False
         if re.fullmatch(r"heb in attributes and attributes\['heb'\]", cond):
@@ -272,12 +385,15 @@ class DriverEmitter:
         return line.replace("{{%", "{ {%-")
 
     def splice_part(self, part_expr: str) -> str:
-        """ resolve an include tag's part expression to spliced driver text """
+        """ render one part of the current song, as mako's include did """
         if part_expr.startswith("'"):
             part = part_expr.strip("'")
         else:  # e.g. part=Chords where Chords='Chords'+default version name
-            part = part_expr + self.current.attributes.get_default_version_name()
-        return self.current.parts[part]
+            part = part_expr + self.song().default_version
+        return (
+            '{% set part = "' + part + '" %}'
+            '{% include "' + self.song().tera_source.as_posix() + '" %}'
+        )
 
     # ── the evaluator ────────────────────────────────────────────────────
 
@@ -341,7 +457,7 @@ class DriverEmitter:
             if not taking():
                 continue
             if "${self.defs()}" in line:
-                self.emit('{% include "' + DEFS_TERA.as_posix() + '" %}\n')
+                self.emit('{% include "' + COMMON_TERA.as_posix() + '" %}\n')
                 continue
             if "${self.clearVars()}" in line:
                 self.emit(self.eval_def_body(self.clearvars_body) + "\n")
@@ -360,7 +476,7 @@ class DriverEmitter:
                     body = rest[:end]
                     for song in self.songs:
                         self.current = song
-                        self.emit('{% set meta = load_toml(path="' + song.toml_path.as_posix() + '") %}')
+                        self.emit('{% set meta = load_toml(path="' + song.derived_toml.as_posix() + '") %}')
                         self.eval_lines(body)
                     return end + 1
                 depth -= 1
@@ -401,8 +517,42 @@ class DriverEmitter:
 
     def eval_def_body(self, body: str) -> str:
         """ partial-evaluate a def body with the same line semantics """
-        inner = DriverEmitter(self.gattr, [self.current])
+        inner = DriverEmitter(self.gattr, [self.current] if self.current else [])
         return inner.run(body)
+
+
+# ── the drivers step: tera song files -> drivers + derived metadata ──────
+
+
+def parse_song_meta(tera_path: Path) -> SongMeta:
+    """ read one tera song file's front matter """
+    match = RE_FRONT_MATTER.match(tera_path.read_text(encoding="utf-8"))
+    if not match:
+        raise ValueError(f"no front matter in {tera_path}")
+    data = tomllib.loads(match.group(1))
+    return SongMeta(
+        tera_source=tera_path,
+        attrs=data["attributes"],
+        versions=data["versions"],
+        default_version=data["default_version"],
+    )
+
+
+def write_derived_toml(meta: SongMeta) -> None:
+    """ write the derived metadata file the driver loads at render time """
+    lines = ["# derived from the song's front matter by scripts/convert_to_tera.py\n"]
+    lines.append("\n[attributes]\n")
+    for key in attr.order:
+        if key in meta.attrs:
+            lines.append(f"{key} = {toml_str(meta.attrs[key])}\n")
+    lines.append("\n[has]\n")
+    for key in attr.order:
+        lines.append(f"{key} = {toml_str(key in meta.attrs)}\n")
+    lines.append("\n[computed]\n")
+    for key, val in compute_scratch(meta.attrs).items():
+        lines.append(f"{key} = {toml_str(val)}\n")
+    meta.derived_toml.parent.mkdir(parents=True, exist_ok=True)
+    meta.derived_toml.write_text("".join(lines), encoding="utf-8")
 
 
 def driver_header(var_names: list[str]) -> str:
@@ -417,13 +567,45 @@ def driver_header(var_names: list[str]) -> str:
     return "".join(parts)
 
 
+def write_driver(gattr: dict, songs: list[SongMeta], var_names: list[str], driver: Path) -> None:
+    """ generate one driver template by partial evaluation of common.ly.mako """
+    emitter = DriverEmitter(gattr, songs)
+    body = emitter.run(COMMON.read_text(encoding="utf-8"))
+    driver.parent.mkdir(parents=True, exist_ok=True)
+    driver.write_text(driver_header(var_names) + body, encoding="utf-8")
+
+
+def tera_song_paths() -> list[Path]:
+    """ all one-file tera songs, in the order the Makefile+wrapper sorts them """
+    paths = [p for p in SRC_TERA.rglob("*.ly.tera") if not p.is_relative_to(SRC_TERA / "include")]
+    return sorted(paths, key=lambda p: "src/" + str(p.relative_to(SRC_TERA)))
+
+
+def cmd_drivers() -> int:
+    """ generate drivers and derived metadata from the tera song files """
+    metas = {path: parse_song_meta(path) for path in tera_song_paths()}
+    for path, meta in metas.items():
+        write_derived_toml(meta)
+        rel = path.relative_to(SRC_TERA)
+        driver = DRIVERS / rel.parent / (rel.name[: -len(".ly.tera")] + ".ly.tera")
+        write_driver(GATTR_SINGLE, [meta], SINGLE_VARS, driver)
+    for book in BOOKS:
+        songs = [m for p, m in metas.items() if p.is_relative_to(SRC_TERA / book)]
+        write_driver(GATTR_BOOK, songs, BOOK_VARS, BOOK_DRIVERS / f"{book}.ly.tera")
+    print(f"drivers: {len(metas)} songs and {len(BOOKS)} books")
+    return 0
+
+
+# ── golden / convert / compare ───────────────────────────────────────────
+
+
 def song_paths() -> list[Path]:
-    """ all song templates, stable order """
+    """ all mako song templates, stable order """
     return sorted(SRC.rglob("*.ly.mako"))
 
 
 def book_songs(book: str) -> list[Path]:
-    """ the songs of one book, in the order the Makefile+wrapper renders them """
+    """ the mako songs of one book, in the order the Makefile+wrapper renders them """
     return sorted((SRC / book).rglob("*.ly.mako"), key=str)
 
 
@@ -456,90 +638,26 @@ def cmd_golden() -> int:
     return 0
 
 
-def needed_parts(attributes: attr.Attributes) -> list[str]:
-    """ the parts common.ly.mako will include for this song, in include order """
-    version = attributes.get_working_version()
-    default = attributes.get_default_version_name()
-    parts = ["Defs", "Vars"]
-    if not version["doOwn"]:
-        if version["doPrep"]:
-            parts.append("Prep")
-        for flag, stem in (
-            ("doChords", "Chords"), ("doVoice", "Voice"), ("doLyrics", "Lyrics"),
-            ("doLyricsmore", "Lyricsmore"), ("doLyricsmoremore", "Lyricsmoremore"),
-        ):
-            if version[flag]:
-                parts.append(stem + default)
-    if version["doOwn"]:
-        parts.append("Own")
-    if version["doExtra"]:
-        parts.append("Extra")
-    return parts
-
-
-def source_parts(song: Path) -> set[str]:
-    """ every part name a song's source defines, whatever its version """
-    return set(RE_PART_SECTION.findall(song.read_text(encoding="utf-8")))
-
-
-def convert_song(song: Path) -> SongInfo:
-    """ convert one song: TOML + part files; returns its driver context """
-    rel = song.relative_to(SRC)  # <book>/.../<name>.ly.mako
-    stem = rel.name[: -len(".ly.mako")]
-    tera_dir = SRC_TERA / rel.parent
-    attributes = capture_vars(song)
-    info = SongInfo(source=song, attributes=attributes)
-    write_toml(info.toml_path, attributes)
-
-    # extract every part the source defines (all versions, Doc included) so
-    # no content is lost, plus the parts the driver splices even when absent
-    for part in sorted(source_parts(song) | set(needed_parts(attributes))):
-        scratch_attributes = attr.Attributes()  # Vars re-executes; must start clean
-        scratch_attributes.reset()
-        text = render_song_part(song, part, scratch_attributes)
-        if text.strip() == "":
-            info.parts[part] = text  # inline pure whitespace, no file needed
-        else:
-            part_path = tera_dir / f"{stem}.{part}.ly.tera"
-            part_path.parent.mkdir(parents=True, exist_ok=True)
-            part_path.write_text(text, encoding="utf-8")
-            info.parts[part] = '{% include "' + part_path.as_posix() + '" %}'
-    return info
-
-
-def write_driver(gattr: dict, songs: list[SongInfo], var_names: list[str], driver: Path) -> DriverEmitter:
-    """ generate one driver template by partial evaluation of common.ly.mako """
-    emitter = DriverEmitter(gattr, songs)
-    body = emitter.run(COMMON.read_text(encoding="utf-8"))
-    driver.parent.mkdir(parents=True, exist_ok=True)
-    driver.write_text(driver_header(var_names) + body, encoding="utf-8")
-    return emitter
-
-
 def cmd_convert() -> int:
-    """ convert the whole corpus: songs, tune drivers, book drivers """
+    """ convert the mako corpus to one-file tera songs, then run `drivers` """
+    stale = [p for p in SRC_TERA.rglob("*") if p.is_file()]
+    for path in stale:
+        path.unlink()
     failures = []
-    infos: dict[Path, SongInfo] = {}
+    count = 0
     for song in song_paths():
         try:
-            infos[song] = convert_song(song)
+            convert_song(song)
+            count += 1
         except Exception as exc:  # noqa: BLE001  # pylint: disable=broad-exception-caught
             failures.append((song, exc))
-    emitter = None
-    for song, info in infos.items():
-        rel = song.relative_to(SRC)
-        driver = DRIVERS / rel.parent / (rel.name[: -len(".ly.mako")] + ".ly.tera")
-        emitter = write_driver(GATTR_SINGLE, [info], SINGLE_VARS, driver)
-    for book in BOOKS:
-        songs = [infos[s] for s in book_songs(book) if s in infos]
-        write_driver(GATTR_BOOK, songs, BOOK_VARS, BOOK_DRIVERS / f"{book}.ly.tera")
-    if emitter is not None and emitter.defs_body:
-        DEFS_TERA.parent.mkdir(parents=True, exist_ok=True)
-        DEFS_TERA.write_text(emitter.eval_def_body(emitter.defs_body), encoding="utf-8")
-    print(f"convert: {len(infos)} songs and {len(BOOKS)} books converted, {len(failures)} failed")
+    write_shared_includes()
+    print(f"convert: {count} songs converted, {len(failures)} failed")
     for failed_song, failure in failures:
         print(f"  FAIL {failed_song}: {failure}")
-    return 1 if failures else 0
+    if failures:
+        return 1
+    return cmd_drivers()
 
 
 def cmd_compare() -> int:
@@ -564,9 +682,15 @@ def cmd_compare() -> int:
 def main() -> int:
     """ main entry point """
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["golden", "convert", "compare"])
+    parser.add_argument("command", choices=["golden", "convert", "drivers", "compare"])
     args = parser.parse_args()
-    return {"golden": cmd_golden, "convert": cmd_convert, "compare": cmd_compare}[args.command]()
+    commands = {
+        "golden": cmd_golden,
+        "convert": cmd_convert,
+        "drivers": cmd_drivers,
+        "compare": cmd_compare,
+    }
+    return commands[args.command]()
 
 
 if __name__ == "__main__":

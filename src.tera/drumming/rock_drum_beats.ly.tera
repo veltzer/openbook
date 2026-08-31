@@ -1,0 +1,48 @@
+{#
+default_version = "Own"
+
+[attributes]
+title = "Rock Drums Beats"
+style = "Rock"
+copyright = "-- no copyright notice for study materials --"
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "d54f6d36-6d29-11e0-a6dd-0019d11e5a41"
+
+[versions.Own]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = true
+#}
+{% if part == "Vars" %}
+{% endif %}
+{% if part == "Doc" %}	DONE:
+	TODO:
+{% endif %}
+{% if part == "Own" %}\markup {
+Regular rock type drumming...
+}
+\score {
+<<
+	\new DrumStaff <<
+		\drummode {
+			\stemUp
+			bd4 sn bd sn |
+			bd sn s8 bd sn4 |
+			bd sn8 bd s bd sn4 |
+			bd sn bd8 bd sn sn |
+			bd bd sn bd bd bd sn bd |
+		}
+	>>
+>>
+	\layout {}
+}
+
+{% endif %}

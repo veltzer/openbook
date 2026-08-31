@@ -4,7 +4,7 @@
 
 
 % lets emit the definitions
-{% include "src.tera/include/defs.ly.tera" %}
+{% include "src.tera/include/common.ly.tera" %}
 
 % lets always include guitar definitions
 \include "predefined-guitar-fretboards.ly"
@@ -12,13 +12,9 @@
 
 
 % from here everything needs to go into a loop
-{% set meta = load_toml(path="src.tera/openbook/blue_trane.toml") %}
+{% set meta = load_toml(path="out/derived/openbook/blue_trane.toml") %}
 % include anything the user wants before the bookpart starts
-
-
-
-
-
+{% set part = "Defs" %}{% include "src.tera/openbook/blue_trane.ly.tera" %}
 
 
 % this causes the variables to be defined...
@@ -26,12 +22,7 @@
 
 
 
-
-
-
-
-
-
+{% set part = "Vars" %}{% include "src.tera/openbook/blue_trane.ly.tera" %}
 
 % now play with the variables that depend on language
 
@@ -89,7 +80,7 @@
 		\remove "Bar_engraver"
 	}
 % # transpose with 'inline' is true!
-	\transpose c c { {%- include "src.tera/openbook/blue_trane.ChordsReal.ly.tera" %}}
+	\transpose c c { {%- set part = "ChordsReal" %}{% include "src.tera/openbook/blue_trane.ly.tera" %}}
 % this thing will only engrave voltas. This is required to put the volta under the chords.
 % No great harm will happen if you don't put it, only the voltas will be above the chords.
 %\new Staff \with {
@@ -99,7 +90,7 @@
 \new Voice="Voice"
 % # transpose with 'inline' is true!
 	\transpose c c { \relative c'
-	{% include "src.tera/openbook/blue_trane.VoiceReal.ly.tera" %} }
+	{% set part = "VoiceReal" %}{% include "src.tera/openbook/blue_trane.ly.tera" %} }
 }
 	>>
 	\layout {
@@ -110,11 +101,11 @@
 	\unfoldRepeats
 	<<
 \new ChordNames="Chords"
-	{% include "src.tera/openbook/blue_trane.ChordsReal.ly.tera" %}
+	{% set part = "ChordsReal" %}{% include "src.tera/openbook/blue_trane.ly.tera" %}
 \new Staff="Melody" {
 \new Voice="Voice"
 	\relative c'
-	{% include "src.tera/openbook/blue_trane.VoiceReal.ly.tera" %}
+	{% set part = "VoiceReal" %}{% include "src.tera/openbook/blue_trane.ly.tera" %}
 }
 	>>
 	\midi {

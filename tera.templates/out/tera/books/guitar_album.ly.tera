@@ -4,7 +4,7 @@
 
 
 % lets emit the definitions
-{% include "src.tera/include/defs.ly.tera" %}
+{% include "src.tera/include/common.ly.tera" %}
 
 % lets always include guitar definitions
 \include "predefined-guitar-fretboards.ly"
@@ -103,9 +103,9 @@
 \pageBreak
 
 % from here everything needs to go into a loop
-{% set meta = load_toml(path="src.tera/guitar_album/torcacita.toml") %}
+{% set meta = load_toml(path="out/derived/guitar_album/torcacita.toml") %}
 % include anything the user wants before the bookpart starts
-{% include "src.tera/guitar_album/torcacita.Defs.ly.tera" %}
+{% set part = "Defs" %}{% include "src.tera/guitar_album/torcacita.ly.tera" %}
 
 \bookpart {
 
@@ -114,12 +114,7 @@
 
 
 
-
-
-
-
-
-
+{% set part = "Vars" %}{% include "src.tera/guitar_album/torcacita.ly.tera" %}
 
 % now play with the variables that depend on language
 
@@ -164,7 +159,7 @@
 \noPageBreak
 
 
-{% include "src.tera/guitar_album/torcacita.Own.ly.tera" %}
+{% set part = "Own" %}{% include "src.tera/guitar_album/torcacita.ly.tera" %}
 
 \noPageBreak
 \markup \column {

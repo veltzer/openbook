@@ -1,0 +1,140 @@
+{% import "src.tera/include/defs.ly.tera" as defs %}{#
+default_version = "DontMatter"
+
+[attributes]
+title = "Lucky Man"
+style = "Rock"
+composer = "Greg Lake"
+poet = "Greg Lake"
+piece = "Med. Ballad"
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "5"
+uuid = "a68bcbbc-c8ae-11e0-8fa9-0019d11e5a41"
+remark = "The D scale is the one used in the original version (Mark Veltzer,17/8/11)"
+idyoutube1 = "5x6uQ6yZsOY"
+lyricsurl = "http://www.sing365.com/music/lyric.nsf/Lucky-Man-lyrics-Emerson-Lake-Palmer/13302F99F6B11DEC48256AB8002432F8"
+
+[versions.DontMatter]
+doChords = false
+doVoice = false
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = true
+doExtra = false
+doPrep = false
+doOwn = true
+#}
+{% if part == "Vars" %}
+{% endif %}
+{% if part == "Doc" %}	remarks:
+	\key d \major
+	Some people play "a | g | d | d |" at the chorus but this is wrong if you bother
+	to hear the original.
+	Song progression:
+		opening
+		verse 1
+		chorus 1
+		verse 2
+		chorus 2
+		verse (solo)
+		chorus (solo)
+		verse 3
+		chorus 3
+		verse 4
+		chorus 4
+		ending (2.5 choruses with a solo keyboard and a long D at the end)
+
+	DONE:
+	TODO:
+{% endif %}
+
+
+{% macro chords() %}
+	\chordmode {
+		\startChords
+		\startSong
+
+		\myWordMark "Verse"
+		\startPart
+		g1 | d | g | d | \myEndLine
+		g | d | g | d | \myEndLine
+		\endPart
+
+		\myWordMark "Chorus"
+		\startPart
+		a:m | e:m | d1*2 | \myEndLine
+		a1:m | e:m | d1*2 | \myEndLine
+		\endPart
+
+		\endSong
+		\endChords
+	}
+{% endmacro %}
+
+{% if part == "Own" %}\score {
+	<<
+		\new FretBoards {
+			{{ self::chords() }}
+		}
+		{{ defs::chordDefs() }}
+		{{ self::chords() }}
+	>>
+	%\midi {}
+	\layout {}
+}
+
+% Lyrics
+\verticalSpace
+\verticalSpace
+\markup {
+	\small {
+		\concat {
+			\column {
+				\box "Verse"
+				"He had white Horses"
+				"And ladies by the score"
+				"All dressed in satin"
+				"And waiting by the door"
+				\vspace #0.3
+				\box "Chorus"
+				"Ooooh, what a lucky man he was"
+				"Ooooh, what a lucky man he was"
+				\vspace #0.3
+				\box "Verse"
+				"White lace and feathers"
+				"They made up his bed"
+				"A gold covered mattress"
+				"On which he was led"
+				\vspace #0.3
+				\box "Chorus"
+				"Ooooh, what a lucky man he was"
+				"Ooooh, what a lucky man he was"
+			}
+			\hspace #3
+			\column {
+				\box "Verse"
+				"He went to fight wars"
+				"For his country and his king"
+				"Of his honor and his glory"
+				"The people would sing"
+				\vspace #0.3
+				\box "Chorus"
+				"Ooooh, what a lucky man he was"
+				"Ooooh, what a lucky man he was"
+				\vspace #0.3
+				\box "Verse"
+				"A bullet had found him"
+				"His blood ran as he cried"
+				"No money could save him"
+				"So he laid down and he died"
+				\vspace #0.3
+				\box "Chorus"
+				"Ooooh, what a lucky man he was"
+				"Ooooh, what a lucky man he was"
+			}
+		}
+	}
+}
+{% endif %}

@@ -4,7 +4,7 @@
 
 
 % lets emit the definitions
-{% include "src.tera/include/defs.ly.tera" %}
+{% include "src.tera/include/common.ly.tera" %}
 
 % lets always include guitar definitions
 \include "predefined-guitar-fretboards.ly"
@@ -12,11 +12,9 @@
 
 
 % from here everything needs to go into a loop
-{% set meta = load_toml(path="src.tera/classical/chanson_des_faucheurs.toml") %}
+{% set meta = load_toml(path="out/derived/classical/chanson_des_faucheurs.toml") %}
 % include anything the user wants before the bookpart starts
-
-
-
+{% set part = "Defs" %}{% include "src.tera/classical/chanson_des_faucheurs.ly.tera" %}
 
 
 % this causes the variables to be defined...
@@ -24,10 +22,7 @@
 
 
 
-
-
-
-
+{% set part = "Vars" %}{% include "src.tera/classical/chanson_des_faucheurs.ly.tera" %}
 
 % now play with the variables that depend on language
 
@@ -89,7 +84,7 @@
 \new Voice="Voice"
 % # transpose with 'inline' is true!
 	\transpose c c { \relative c'
-	{% include "src.tera/classical/chanson_des_faucheurs.VoiceUnknown.ly.tera" %} }
+	{% set part = "VoiceUnknown" %}{% include "src.tera/classical/chanson_des_faucheurs.ly.tera" %} }
 }
 	>>
 	\layout {
@@ -102,7 +97,7 @@
 \new Staff="Melody" {
 \new Voice="Voice"
 	\relative c'
-	{% include "src.tera/classical/chanson_des_faucheurs.VoiceUnknown.ly.tera" %}
+	{% set part = "VoiceUnknown" %}{% include "src.tera/classical/chanson_des_faucheurs.ly.tera" %}
 }
 	>>
 	\midi {

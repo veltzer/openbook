@@ -4,7 +4,7 @@
 
 
 % lets emit the definitions
-{% include "src.tera/include/defs.ly.tera" %}
+{% include "src.tera/include/common.ly.tera" %}
 
 % lets always include guitar definitions
 \include "predefined-guitar-fretboards.ly"
@@ -103,16 +103,9 @@
 \pageBreak
 
 % from here everything needs to go into a loop
-{% set meta = load_toml(path="src.tera/rockbook/alphaville/forever_young.toml") %}
+{% set meta = load_toml(path="out/derived/rockbook/alphaville/forever_young.toml") %}
 % include anything the user wants before the bookpart starts
-
-
-
-
-
-
-
-
+{% set part = "Defs" %}{% include "src.tera/rockbook/alphaville/forever_young.ly.tera" %}
 
 \bookpart {
 
@@ -121,15 +114,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
+{% set part = "Vars" %}{% include "src.tera/rockbook/alphaville/forever_young.ly.tera" %}
 
 % now play with the variables that depend on language
 
@@ -174,7 +159,7 @@
 \noPageBreak
 
 
-{% include "src.tera/rockbook/alphaville/forever_young.Own.ly.tera" %}
+{% set part = "Own" %}{% include "src.tera/rockbook/alphaville/forever_young.ly.tera" %}
 
 \noPageBreak
 \markup \column {
@@ -199,16 +184,9 @@
 
 }
 
-{% set meta = load_toml(path="src.tera/rockbook/beatles/she_loves_you.toml") %}
+{% set meta = load_toml(path="out/derived/rockbook/beatles/she_loves_you.toml") %}
 % include anything the user wants before the bookpart starts
-
-
-
-
-
-
-
-
+{% set part = "Defs" %}{% include "src.tera/rockbook/beatles/she_loves_you.ly.tera" %}
 
 \bookpart {
 
@@ -217,15 +195,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
+{% set part = "Vars" %}{% include "src.tera/rockbook/beatles/she_loves_you.ly.tera" %}
 
 % now play with the variables that depend on language
 
@@ -284,7 +254,7 @@
 		\remove "Bar_engraver"
 	}
 % # transpose with 'inline' is true!
-	\transpose c c { {%- include "src.tera/rockbook/beatles/she_loves_you.ChordsEpdf0.ly.tera" %}}
+	\transpose c c { {%- set part = "ChordsEpdf0" %}{% include "src.tera/rockbook/beatles/she_loves_you.ly.tera" %}}
 % this thing will only engrave voltas. This is required to put the volta under the chords.
 % No great harm will happen if you don't put it, only the voltas will be above the chords.
 %\new Staff \with {
@@ -294,10 +264,10 @@
 \new Voice="Voice"
 % # transpose with 'inline' is true!
 	\transpose c c { \relative c'
-	{% include "src.tera/rockbook/beatles/she_loves_you.VoiceEpdf0.ly.tera" %} }
+	{% set part = "VoiceEpdf0" %}{% include "src.tera/rockbook/beatles/she_loves_you.ly.tera" %} }
 }
 \new Lyrics="Lyrics" \lyricsto "Voice" {
-	{% include "src.tera/rockbook/beatles/she_loves_you.LyricsEpdf0.ly.tera" %}
+	{% set part = "LyricsEpdf0" %}{% include "src.tera/rockbook/beatles/she_loves_you.ly.tera" %}
 }
 	>>
 	\layout {
@@ -328,16 +298,9 @@
 
 }
 
-{% set meta = load_toml(path="src.tera/rockbook/bill_withers/aint_no_sunshine.toml") %}
+{% set meta = load_toml(path="out/derived/rockbook/bill_withers/aint_no_sunshine.toml") %}
 % include anything the user wants before the bookpart starts
-
-
-
-
-
-
-
-
+{% set part = "Defs" %}{% include "src.tera/rockbook/bill_withers/aint_no_sunshine.ly.tera" %}
 
 \bookpart {
 
@@ -346,15 +309,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
+{% set part = "Vars" %}{% include "src.tera/rockbook/bill_withers/aint_no_sunshine.ly.tera" %}
 
 % now play with the variables that depend on language
 
@@ -399,7 +354,7 @@
 \noPageBreak
 
 
-{% include "src.tera/rockbook/bill_withers/aint_no_sunshine.Own.ly.tera" %}
+{% set part = "Own" %}{% include "src.tera/rockbook/bill_withers/aint_no_sunshine.ly.tera" %}
 
 \noPageBreak
 \markup \column {
@@ -424,16 +379,9 @@
 
 }
 
-{% set meta = load_toml(path="src.tera/rockbook/britney_spears/baby_one_more_time.toml") %}
+{% set meta = load_toml(path="out/derived/rockbook/britney_spears/baby_one_more_time.toml") %}
 % include anything the user wants before the bookpart starts
-
-
-
-
-
-
-
-
+{% set part = "Defs" %}{% include "src.tera/rockbook/britney_spears/baby_one_more_time.ly.tera" %}
 
 \bookpart {
 
@@ -442,15 +390,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
+{% set part = "Vars" %}{% include "src.tera/rockbook/britney_spears/baby_one_more_time.ly.tera" %}
 
 % now play with the variables that depend on language
 
@@ -495,7 +435,7 @@
 \noPageBreak
 
 
-{% include "src.tera/rockbook/britney_spears/baby_one_more_time.Own.ly.tera" %}
+{% set part = "Own" %}{% include "src.tera/rockbook/britney_spears/baby_one_more_time.ly.tera" %}
 
 \noPageBreak
 \markup \column {
@@ -520,16 +460,9 @@
 
 }
 
-{% set meta = load_toml(path="src.tera/rockbook/christina_aguilera/i_am_beautiful.toml") %}
+{% set meta = load_toml(path="out/derived/rockbook/christina_aguilera/i_am_beautiful.toml") %}
 % include anything the user wants before the bookpart starts
-
-
-
-
-
-
-
-
+{% set part = "Defs" %}{% include "src.tera/rockbook/christina_aguilera/i_am_beautiful.ly.tera" %}
 
 \bookpart {
 
@@ -538,15 +471,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
+{% set part = "Vars" %}{% include "src.tera/rockbook/christina_aguilera/i_am_beautiful.ly.tera" %}
 
 % now play with the variables that depend on language
 
@@ -591,7 +516,7 @@
 \noPageBreak
 
 
-{% include "src.tera/rockbook/christina_aguilera/i_am_beautiful.Own.ly.tera" %}
+{% set part = "Own" %}{% include "src.tera/rockbook/christina_aguilera/i_am_beautiful.ly.tera" %}
 
 \noPageBreak
 \markup \column {
@@ -616,16 +541,9 @@
 
 }
 
-{% set meta = load_toml(path="src.tera/rockbook/emerson_lake_and_palmer/lucky_man.toml") %}
+{% set meta = load_toml(path="out/derived/rockbook/emerson_lake_and_palmer/lucky_man.toml") %}
 % include anything the user wants before the bookpart starts
-
-
-
-
-
-
-
-
+{% set part = "Defs" %}{% include "src.tera/rockbook/emerson_lake_and_palmer/lucky_man.ly.tera" %}
 
 \bookpart {
 
@@ -634,15 +552,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
+{% set part = "Vars" %}{% include "src.tera/rockbook/emerson_lake_and_palmer/lucky_man.ly.tera" %}
 
 % now play with the variables that depend on language
 
@@ -687,7 +597,7 @@
 \noPageBreak
 
 
-{% include "src.tera/rockbook/emerson_lake_and_palmer/lucky_man.Own.ly.tera" %}
+{% set part = "Own" %}{% include "src.tera/rockbook/emerson_lake_and_palmer/lucky_man.ly.tera" %}
 
 \noPageBreak
 \markup \column {
@@ -712,16 +622,9 @@
 
 }
 
-{% set meta = load_toml(path="src.tera/rockbook/radiohead/creep.toml") %}
+{% set meta = load_toml(path="out/derived/rockbook/radiohead/creep.toml") %}
 % include anything the user wants before the bookpart starts
-
-
-
-
-
-
-
-
+{% set part = "Defs" %}{% include "src.tera/rockbook/radiohead/creep.ly.tera" %}
 
 \bookpart {
 
@@ -730,15 +633,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
+{% set part = "Vars" %}{% include "src.tera/rockbook/radiohead/creep.ly.tera" %}
 
 % now play with the variables that depend on language
 
@@ -783,7 +678,7 @@
 \noPageBreak
 
 
-{% include "src.tera/rockbook/radiohead/creep.Own.ly.tera" %}
+{% set part = "Own" %}{% include "src.tera/rockbook/radiohead/creep.ly.tera" %}
 
 \noPageBreak
 \markup \column {
@@ -808,15 +703,9 @@
 
 }
 
-{% set meta = load_toml(path="src.tera/rockbook/sting/shape_of_my_heart.toml") %}
+{% set meta = load_toml(path="out/derived/rockbook/sting/shape_of_my_heart.toml") %}
 % include anything the user wants before the bookpart starts
-
-
-
-
-
-
-
+{% set part = "Defs" %}{% include "src.tera/rockbook/sting/shape_of_my_heart.ly.tera" %}
 
 \bookpart {
 
@@ -825,14 +714,7 @@
 
 
 
-
-
-
-
-
-
-
-
+{% set part = "Vars" %}{% include "src.tera/rockbook/sting/shape_of_my_heart.ly.tera" %}
 
 % now play with the variables that depend on language
 
@@ -891,7 +773,7 @@
 		\remove "Bar_engraver"
 	}
 % # transpose with 'inline' is true!
-	\transpose c c { {%- include "src.tera/rockbook/sting/shape_of_my_heart.ChordsMy.ly.tera" %}}
+	\transpose c c { {%- set part = "ChordsMy" %}{% include "src.tera/rockbook/sting/shape_of_my_heart.ly.tera" %}}
 % this thing will only engrave voltas. This is required to put the volta under the chords.
 % No great harm will happen if you don't put it, only the voltas will be above the chords.
 %\new Staff \with {
@@ -902,7 +784,7 @@
 	}
 }
 
-{% include "src.tera/rockbook/sting/shape_of_my_heart.Extra.ly.tera" %}
+{% set part = "Extra" %}{% include "src.tera/rockbook/sting/shape_of_my_heart.ly.tera" %}
 
 \noPageBreak
 \markup \column {
@@ -927,16 +809,9 @@
 
 }
 
-{% set meta = load_toml(path="src.tera/rockbook/tracy_chapman/talkin_bout_a_revolution.toml") %}
+{% set meta = load_toml(path="out/derived/rockbook/tracy_chapman/talkin_bout_a_revolution.toml") %}
 % include anything the user wants before the bookpart starts
-
-
-
-
-
-
-
-
+{% set part = "Defs" %}{% include "src.tera/rockbook/tracy_chapman/talkin_bout_a_revolution.ly.tera" %}
 
 \bookpart {
 
@@ -945,15 +820,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
+{% set part = "Vars" %}{% include "src.tera/rockbook/tracy_chapman/talkin_bout_a_revolution.ly.tera" %}
 
 % now play with the variables that depend on language
 
@@ -998,7 +865,7 @@
 \noPageBreak
 
 
-{% include "src.tera/rockbook/tracy_chapman/talkin_bout_a_revolution.Own.ly.tera" %}
+{% set part = "Own" %}{% include "src.tera/rockbook/tracy_chapman/talkin_bout_a_revolution.ly.tera" %}
 
 \noPageBreak
 \markup \column {
@@ -1023,16 +890,9 @@
 
 }
 
-{% set meta = load_toml(path="src.tera/rockbook/van_morisson/days_like_this.toml") %}
+{% set meta = load_toml(path="out/derived/rockbook/van_morisson/days_like_this.toml") %}
 % include anything the user wants before the bookpart starts
-
-
-
-
-
-
-
-
+{% set part = "Defs" %}{% include "src.tera/rockbook/van_morisson/days_like_this.ly.tera" %}
 
 \bookpart {
 
@@ -1041,15 +901,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
+{% set part = "Vars" %}{% include "src.tera/rockbook/van_morisson/days_like_this.ly.tera" %}
 
 % now play with the variables that depend on language
 
@@ -1094,7 +946,7 @@
 \noPageBreak
 
 
-{% include "src.tera/rockbook/van_morisson/days_like_this.Own.ly.tera" %}
+{% set part = "Own" %}{% include "src.tera/rockbook/van_morisson/days_like_this.ly.tera" %}
 
 \noPageBreak
 \markup \column {
@@ -1119,16 +971,9 @@
 
 }
 
-{% set meta = load_toml(path="src.tera/rockbook/van_morisson/have_i_told_you_lately_that_i_love_you.toml") %}
+{% set meta = load_toml(path="out/derived/rockbook/van_morisson/have_i_told_you_lately_that_i_love_you.toml") %}
 % include anything the user wants before the bookpart starts
-
-
-
-
-
-
-
-
+{% set part = "Defs" %}{% include "src.tera/rockbook/van_morisson/have_i_told_you_lately_that_i_love_you.ly.tera" %}
 
 \bookpart {
 
@@ -1137,15 +982,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
+{% set part = "Vars" %}{% include "src.tera/rockbook/van_morisson/have_i_told_you_lately_that_i_love_you.ly.tera" %}
 
 % now play with the variables that depend on language
 
@@ -1204,7 +1041,7 @@
 		\remove "Bar_engraver"
 	}
 % # transpose with 'inline' is true!
-	\transpose c c { {%- include "src.tera/rockbook/van_morisson/have_i_told_you_lately_that_i_love_you.ChordsMy.ly.tera" %}}
+	\transpose c c { {%- set part = "ChordsMy" %}{% include "src.tera/rockbook/van_morisson/have_i_told_you_lately_that_i_love_you.ly.tera" %}}
 % this thing will only engrave voltas. This is required to put the volta under the chords.
 % No great harm will happen if you don't put it, only the voltas will be above the chords.
 %\new Staff \with {
@@ -1214,10 +1051,10 @@
 \new Voice="Voice"
 % # transpose with 'inline' is true!
 	\transpose c c { \relative c'
-	{% include "src.tera/rockbook/van_morisson/have_i_told_you_lately_that_i_love_you.VoiceMy.ly.tera" %} }
+	{% set part = "VoiceMy" %}{% include "src.tera/rockbook/van_morisson/have_i_told_you_lately_that_i_love_you.ly.tera" %} }
 }
 \new Lyrics="Lyrics" \lyricsto "Voice" {
-	{% include "src.tera/rockbook/van_morisson/have_i_told_you_lately_that_i_love_you.LyricsMy.ly.tera" %}
+	{% set part = "LyricsMy" %}{% include "src.tera/rockbook/van_morisson/have_i_told_you_lately_that_i_love_you.ly.tera" %}
 }
 	>>
 	\layout {

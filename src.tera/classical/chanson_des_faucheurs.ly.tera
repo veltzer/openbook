@@ -1,0 +1,39 @@
+{#
+default_version = "Unknown"
+
+[attributes]
+title = "Chanson des faucheurs"
+style = "Classical"
+composer = "R. Schumann"
+typesetter = "Mark Veltzer <mark.veltzer@gmail.com>"
+completion = "0"
+uuid = "9ff5c7c4-a26e-11df-aa45-0019d11e5a41"
+
+[versions.Unknown]
+doChords = false
+doVoice = true
+doLyrics = false
+doLyricsmore = false
+doLyricsmoremore = false
+doChordBars = false
+doGuitar = false
+doExtra = false
+doPrep = false
+doOwn = false
+#}
+{% if part == "Vars" %}
+{% endif %}
+{% if part == "VoiceUnknown" %}{
+	\key c \major
+	\time 3/4
+
+	g''4 ( c ) b | a ( d ) c | b ( a ) b | c2 ( d4 ) |
+	g,4 ( c ) b | a ( d ) c | b ( a ) b | c2 r4 |
+
+	d,4 ( g ) fis | e ( a ) g | fis ( e ) fis | g2 ( b4 ) |
+	d4 ( g ) fis | e ( a ) g | fis ( e ) fis | g2 r4 |
+
+	g,4 ( c ) b | a ( d ) c | b ( a ) b | c2 ( d4 ) |
+	g,4 ( c ) b | a ( d ) c | b ( a ) b | c2 r4 |
+}
+{% endif %}
