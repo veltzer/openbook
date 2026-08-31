@@ -1,6 +1,4 @@
-# Generated to let `uv sync` install this repo's Python dependencies.
-# The authoritative dependency list is [dependencies].pip in
-# rsconstruct.toml; keep the two in sync when editing.
+# Lets `uv sync` install this repo's Python dependencies.
 
 [project]
 name = "openbook"
@@ -14,10 +12,6 @@ dependencies = [
     "pytconf",
     "requests",
     "tqdm",
-    "types-pymysql",
-    "types-requests",
-    "types-tqdm",
-    "types-python-dateutil",
 ]
 
 [dependency-groups]
@@ -26,6 +20,10 @@ dev = [
     "pylint",
     "pytest",
     "ruff",
+    "types-pymysql",
+    "types-python-dateutil",
+    "types-requests",
+    "types-tqdm",
 ]
 
 [tool.uv]

@@ -456,10 +456,6 @@ dependencies = [
     { name = "python-dateutil" },
     { name = "requests" },
     { name = "tqdm" },
-    { name = "types-pymysql" },
-    { name = "types-python-dateutil" },
-    { name = "types-requests" },
-    { name = "types-tqdm" },
 ]
 
 [package.dev-dependencies]
@@ -468,6 +464,10 @@ dev = [
     { name = "pylint" },
     { name = "pytest" },
     { name = "ruff" },
+    { name = "types-pymysql" },
+    { name = "types-python-dateutil" },
+    { name = "types-requests" },
+    { name = "types-tqdm" },
 ]
 
 [package.metadata]
@@ -479,10 +479,6 @@ requires-dist = [
     { name = "python-dateutil" },
     { name = "requests" },
     { name = "tqdm" },
-    { name = "types-pymysql" },
-    { name = "types-python-dateutil" },
-    { name = "types-requests" },
-    { name = "types-tqdm" },
 ]
 
 [package.metadata.requires-dev]
@@ -491,6 +487,10 @@ dev = [
     { name = "pylint" },
     { name = "pytest" },
     { name = "ruff" },
+    { name = "types-pymysql" },
+    { name = "types-python-dateutil" },
+    { name = "types-requests" },
+    { name = "types-tqdm" },
 ]
 
 [[package]]
