@@ -39,7 +39,6 @@ used by Jazz musicians both for practice and for performance.
 * python3: for the helper scripts
 
 ## What python modules are used?
-* GitPython
 * requests
 
 ## What is produced?

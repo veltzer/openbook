@@ -15,7 +15,7 @@
 		<p>current version is {{ version_str(path="config/version.lua") }}</p>
 
 		<h2>A demo for the impatient is
-			<a href="web/viewer.html?file=../output/openbook.pdf">here</a>
+			<a href="output/openbook.pdf">here</a>
 		</h2>
 		<p>You can download the latest version of <b>{{ project.NAME_FANCY }}</b> from <a href="output/openbook.pdf">here</a>.</p>
 
@@ -107,7 +107,6 @@
 			<tr><th>book</th><th></th><th></th><th></th><th></th></tr>
 {% for book in ["openbook", "israeli", "drumming", "rockbook", "guitar_album"] %}			<tr>
 				<td><b>{{ book }}</b></td>
-				<td><a href="web/viewer.html?file=../output/{{ book }}.pdf">view</a></td>
 				<td><a href="output/{{ book }}.pdf">pdf</a></td>
 				<td><a href="output/{{ book }}.ps">postscript</a></td>
 				<td><a href="output/{{ book }}.ly">lilypond</a></td>

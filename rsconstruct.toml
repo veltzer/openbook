@@ -173,12 +173,12 @@ output_files = ["out/tera/books/guitar_album.pdf", "out/tera/books/guitar_album.
 
 # ─── github pages ────────────────────────────────────────────────────────────
 
-# The website is the docs/ tree as built: the committed pdf.js viewer
-# (docs/web, docs/build), the tera-rendered docs/index.html, and the
-# freshly engraved books copied to docs/output/ below — index.html links
-# them as output/<book>.{pdf,ps,ly}. CI uploads this directory as the
-# Pages artifact; docs/output and docs/index.html are generated, not
-# committed.
+# The website is the docs/ tree as built: the tera-rendered
+# docs/index.html and the freshly engraved books copied to docs/output/
+# below — index.html links them as output/<book>.{pdf,ps,ly} and the
+# browser's native PDF viewer displays them. CI uploads this directory
+# as the Pages artifact; docs/output and docs/index.html are generated,
+# not committed.
 [pages]
 dir = "docs"
 
@@ -235,18 +235,14 @@ inputs = ["scripts/check_all.py"]
 input_globs = ["src/**/*.ly.tera"]
 output_files = ["out/checks/check_all.stamp"]
 
-# validate the generated website index page (part of the default build);
-# the vendored pdf.js viewer trees are third-party and full of
-# proprietary attributes, so they are excluded
+# validate the generated website index page (part of the default build)
 [processor.tidy]
 src_dirs = ["docs"]
-src_exclude_dirs = ["docs/web", "docs/build"]
 args = ["-errors", "-q", "-utf8"]
 
 [processor.htmlhint]
 enabled = false
 src_dirs = ["docs"]
-src_exclude_dirs = ["docs/web", "docs/build"]
 
 # per-song engraving (DO_PDF / DO_PS / DO_MIDI): one product per rendered song
 [processor.generator.songs_pdf]
