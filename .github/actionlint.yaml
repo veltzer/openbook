@@ -1,0 +1,6 @@
+---
+# actionlint 1.7.12's runner-label list predates the official ubuntu-26.04
+# hosted runner; delete this file once a newer actionlint knows the label.
+self-hosted-runner:
+  labels:
+    - ubuntu-26.04
