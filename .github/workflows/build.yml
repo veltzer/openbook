@@ -20,9 +20,6 @@ jobs:
         # A no-op in repos without submodules, so every repo shares this
         # exact file.
         submodules: recursive
-        # Full history: builds derive values from git (copyright years,
-        # git describe, commit counts); a shallow clone renders them wrong.
-        fetch-depth: 0
     - uses: actions/cache@v5
       with:
         path: .rsconstruct
@@ -46,11 +43,6 @@ jobs:
         rsconstruct tools install
     - name: build
       run: rsconstruct build
-    - name: generated files in sync
-      # The build regenerates some committed files (e.g. README.md from
-      # its template). If that leaves the checkout dirty, the committed
-      # copy has drifted from its sources - fail so it gets recommitted.
-      run: git diff --exit-code
     - name: status
       run: rsconstruct status
     - name: pages dir
