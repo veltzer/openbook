@@ -1,27 +1,9 @@
-# *openbook* project by Mark Veltzer
-
-description: OpenBook is an open source Jazz real book
-
-project website: https://veltzer.github.io/openbook
-
-author: Mark Veltzer
-
-version: 0.0.1
-
-![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)
-
-## github
-
-![License](https://img.shields.io/github/license/veltzer/openbook)
-
-## build
-
-![build](https://github.com/veltzer/openbook/workflows/build/badge.svg)
-## What is OpenBook?
-OpenBook is a Jazz real book constructed with free software. A real book simply means a big book with lots of Jazz tunes or standards as they are more widely known.
+{% set pyproject = load_toml(path="pyproject.toml") -%}
+## What is {{ project.NAME_FANCY }}?
+{{ project.NAME_FANCY }} is a Jazz real book constructed with free software. A real book simply means a big book with lots of Jazz tunes or standards as they are more widely known.
 
 ## Where is the project's website?
-https://veltzer.github.io/openbook
+https://{{ personal.GITHUB_USERNAME }}.github.io/{{ project.NAME }}
 
 ## Why did you start this?
 Because of many reasons:
@@ -40,8 +22,9 @@ used by Jazz musicians both for practice and for performance.
 * python3: for the helper scripts
 
 ## What python modules are used?
-* requests
-
+{% for dep in pyproject.project.dependencies -%}
+* {{ dep }}
+{% endfor %}
 ## What is produced?
 Beautiful and lightweight postscript and PDF real books with Jazz tunes.
 The idea is that the end user can control the final output and decide if he/she
@@ -74,7 +57,7 @@ Look at the CREDITS file
 Your name could be here if you contribute...
 
 ## Where can I see some results?
-Check out the PDFs and other outputs in https://veltzer.github.io/openbook.
+Check out the PDFs and other outputs in https://{{ personal.GITHUB_USERNAME }}.github.io/{{ project.NAME }}.
 
 ## Why is there so little documentation?
 I just started this project (4 years all in all -> that's not true: it's 12 years in the making). Feel free to add stuff and request a pull.
@@ -97,8 +80,8 @@ wish to contribute to the mutopia project at http://www.mutopiaproject.org/.
 ## How do I build the pdfs?
 * you need tools installed. on Ubuntu ```$ sudo apt install lilypond```
 * you need the [rsconstruct](https://github.com/veltzer/rsconstruct) build tool on your PATH.
-* clone the repository ```$ git clone https://github.com/veltzer/openbook.git```
-* cd into the newly created folder ```$ cd openbook```
+* clone the repository ```$ git clone https://github.com/{{ personal.GITHUB_USERNAME }}/{{ project.NAME }}.git```
+* cd into the newly created folder ```$ cd {{ project.NAME }}```
 * install the python environment with [uv](https://docs.astral.sh/uv/) ```$ uv sync```
 * activate the virutal env ```$ source .venv/bin/activate```
 * run the build process ```$ rsconstruct build```
@@ -164,12 +147,3 @@ Just run:
 rsconstruct build --iset explicit.real_books.enabled=true
 ```
 and look at the resulting `real_books_archive.gi` folder that is created.
-
-## contact me
-
-[mailto](mailto:mark.veltzer@gmail.com)
-![gitter](https://img.shields.io/gitter/room/veltzer/mark.veltzer)
-![discord](https://img.shields.io/discord/719336281624281119)
-![discord](https://img.shields.io/discord/719336282194444302)
-
-Mark Veltzer, Copyright © 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026
