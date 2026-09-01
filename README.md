@@ -17,7 +17,7 @@ OpenBook is a standards book for Jazz players which containts hundreds of jazz s
 chat with me at [![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/veltzer/mark.veltzer)
 
 ## What is OpenBook?
-OpenBook is a Jazz real book constructed with free software. A real book simply means a big book with lots ofJazz tunes or standards as they are more widely known.
+OpenBook is a Jazz real book constructed with free software. A real book simply means a big book with lots of Jazz tunes or standards as they are more widely known.
 
 ## Where is the project's website?
 https://veltzer.github.io/openbook
@@ -33,31 +33,18 @@ Because of many reasons:
 used by Jazz musicians both for practice and for performance.
 
 ## What tools are used?
-* python3: for the python scripts
-* virtualenv: for using virtualenv for python
-* lilypond: this is the main tool we use
-* qpdf: for qpdf(1) (used in pdf size reduction)
-* ghostscript: for ps2pdf(1), pdf2ps(1), gv (used in pdf size reduction and cutting pdfs)
-* timidity: play output midi and convert midi to wav
-* lame: convert audio (encode ogg)
-* tidy: for tidy(1) (used in checking HTML)
-* okular: kde pdf reader
-* python-mako-doc: documentation for the template preprocessor
-* texi2html: needed to install lilypond from source
-* guile-2.2-dev: needed to install lilypond from source
-* lilypond-doc: documentation for lilypond
-* lilypond-doc-html: documentation for lilypond
-* lilypond-doc-pdf: documentation for lilypond
-* npm: for htmlhint
+* [lilypond](https://lilypond.org/): the music engraver, this is the main tool we use
+* [rsconstruct](https://github.com/veltzer/rsconstruct): the build system (templating, dependency tracking, linting)
+* [uv](https://docs.astral.sh/uv/): manages the python environment
+* python3: for the helper scripts
 
 ## What python modules are used?
-* pytconf: Configuration, command line and injection framework for python
-* python-dateutil: Extensions to the standard Python datetime module
-* tqdm: Fast, Extensible Progress Meter
-* PyMySQL: Pure Python MySQL Driver
-* Mako: A super-fast templating language that borrows the best ideas from the existing templating languages.
-* requests: Python HTTP for Humans.
-* gitpython: GitPython is a Python library used to interact with Git repositories
+* GitPython
+* pymysql
+* python-dateutil
+* pytconf
+* requests
+* tqdm
 
 ## What is produced?
 Beautiful and lightweight postscript and PDF real books with Jazz tunes.
@@ -114,7 +101,7 @@ wish to contribute to the mutopia project at http://www.mutopiaproject.org/.
 ## How do I build the pdfs?
 * you need tools installed. on Ubuntu ```$ sudo apt install lilypond```
 * you need the [rsconstruct](https://github.com/veltzer/rsconstruct) build tool on your PATH.
-* clone the repository ```$ git clone git://github.com/veltzer/openbook.git```
+* clone the repository ```$ git clone https://github.com/veltzer/openbook.git```
 * cd into the newly created folder ```$ cd openbook```
 * install the python environment with [uv](https://docs.astral.sh/uv/) ```$ uv sync```
 * activate the virutal env ```$ source .venv/bin/activate```
@@ -182,4 +169,4 @@ rsconstruct build --iset explicit.real_books.enabled=true
 ```
 and look at the resulting `real_books_archive.gi` folder that is created.
 
-Mark Veltzer, Copyright © 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025
+Mark Veltzer, Copyright © 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026

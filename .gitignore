@@ -237,3 +237,7 @@ creds.txt
 
 # rsconstruct
 /.rsconstruct/
+
+# generated website pieces (built into the Pages artifact by CI)
+/docs/output/
+/docs/index.html

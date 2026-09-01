@@ -167,6 +167,42 @@ args = ["-m", "scripts.wrapper_lilypond_explicit"]
 inputs = ["out/tera/books/guitar_album.ly"]
 output_files = ["out/tera/books/guitar_album.pdf", "out/tera/books/guitar_album.ps"]
 
+# ─── github pages ────────────────────────────────────────────────────────────
+
+# The website is the docs/ tree as built: the committed pdf.js viewer
+# (docs/web, docs/build), the tera-rendered docs/index.html, and the
+# freshly engraved books copied to docs/output/ below — index.html links
+# them as output/<book>.{pdf,ps,ly}. CI uploads this directory as the
+# Pages artifact; docs/output and docs/index.html are generated, not
+# committed.
+[pages]
+dir = "docs"
+
+# copy the engraved books into the website tree, one product per file
+[processor.generator.pages_books_pdf]
+command = "cp"
+src_dirs = ["out/tera/books"]
+src_extensions = [".pdf"]
+output_dir = "docs/output"
+output_extension = "pdf"
+batch = false
+
+[processor.generator.pages_books_ps]
+command = "cp"
+src_dirs = ["out/tera/books"]
+src_extensions = [".ps"]
+output_dir = "docs/output"
+output_extension = "ps"
+batch = false
+
+[processor.generator.pages_books_ly]
+command = "cp"
+src_dirs = ["out/tera/books"]
+src_extensions = [".ly"]
+output_dir = "docs/output"
+output_extension = "ly"
+batch = false
+
 # ─── external dependencies ───────────────────────────────────────────────────
 
 # lilypond engraves the books; installed by `rsconstruct tools install-deps`

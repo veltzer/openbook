@@ -1,17 +1,31 @@
-<%!
-    import pydmt.helpers.urls
-    import pydmt.helpers.project
-    import config.python
-    import config.deps
-    import pydmt.helpers.pkgs
-%>${"##"} What is OpenBook?
-OpenBook is a Jazz real book constructed with free software. A real book simply means a big book with lots of\
-Jazz tunes or standards as they are more widely known.
+{% set project = load_lua(path="config/project.lua") -%}
+{% set personal = load_lua(path="config/personal.lua") -%}
+{% set pyproject = load_toml(path="pyproject.toml") -%}
+## {{ project.NAME }}
 
-${"##"} Where is the project's website?
-${pydmt.helpers.urls.get_website()}
+version: {{ version_str(path="config/version.lua") }}
 
-${"##"} Why did you start this?
+description: {{ project.DESCRIPTION_SHORT }}
+
+website: https://{{ personal.GITHUB_USERNAME }}.github.io/{{ project.NAME }}
+
+## Build
+
+![build](https://github.com/{{ personal.GITHUB_USERNAME }}/{{ project.NAME }}/workflows/build/badge.svg)
+
+{{ project.DESCRIPTION_LONG }}
+
+## Contact
+
+chat with me at [![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/veltzer/mark.veltzer)
+
+## What is {{ project.NAME_FANCY }}?
+{{ project.NAME_FANCY }} is a Jazz real book constructed with free software. A real book simply means a big book with lots of Jazz tunes or standards as they are more widely known.
+
+## Where is the project's website?
+https://{{ personal.GITHUB_USERNAME }}.github.io/{{ project.NAME }}
+
+## Why did you start this?
 Because of many reasons:
 * I wanted to learn Jazz, and a good way to do that is to write down the tunes (amongst many other things).
 * I wanted beautiful sheet music that I could fiddle with.
@@ -21,92 +35,92 @@ Because of many reasons:
 * Jazz musicians may need beautiful electronic Real books because electronic books are starting to be
 used by Jazz musicians both for practice and for performance.
 
-${"##"} What tools are used?
-% for k,v in config.deps.packages.items():
-* ${k}: ${v}
-% endfor
+## What tools are used?
+* [lilypond](https://lilypond.org/): the music engraver, this is the main tool we use
+* [rsconstruct](https://github.com/veltzer/rsconstruct): the build system (templating, dependency tracking, linting)
+* [uv](https://docs.astral.sh/uv/): manages the python environment
+* python3: for the helper scripts
 
-${"##"} What python modules are used?
-% for k in config.python.install_requires:
-* ${k}: ${pydmt.helpers.pkgs.get_package_description(k)}
-% endfor
-
-${"##"} What is produced?
+## What python modules are used?
+{% for dep in pyproject.project.dependencies -%}
+* {{ dep }}
+{% endfor %}
+## What is produced?
 Beautiful and lightweight postscript and PDF real books with Jazz tunes.
 The idea is that the end user can control the final output and decide if he/she
 wants lyrics, size of paper, transposition for a trumpet, selection of tunes and more.
 In addition, you can produce midi, mp3 and ogg outputs.
 Possibly other output formats will be supported in the future (epub?).
 
-${"##"} What is the copyright?
+## What is the copyright?
 All the stuff in this project is GPL version 3. The tunes themselves have their own copyright holders.
 
-${"##"} Who can contribute?
+## Who can contribute?
 Anyone.
 
-${"##"} What system do I need to participate?
+## What system do I need to participate?
 A Linux system that you can install software on.
 Mac OSX is reported to work too if you know how to install the right stuff on it.
 Windows is not currently supported although well-formed patches will be accepted.
 (disclaimer: the author hates Windows with a vengence so patches have to be spotless
 to be accepted)
 
-${"##"} What do I need to know to participate?
+## What do I need to know to participate?
 * Some rudimentary Linux system administration (in order to install the software needed for this project to build).
 * Some basic git software content tracking (in order to fetch the project, modify and submit patches).
 * The lilypond language (in order to edit or add tunes).
 * Some music knowledge would also help...:)
 
-${"##"} Who currently contributes?
+## Who currently contributes?
 Look at the CREDITS file
 
 Your name could be here if you contribute...
 
-${"##"} Where can I see some results?
-Check out the PDFs and other outputs in ${pydmt.helpers.urls.get_website()}.
+## Where can I see some results?
+Check out the PDFs and other outputs in https://{{ personal.GITHUB_USERNAME }}.github.io/{{ project.NAME }}.
 
-${"##"} Why is there so little documentation?
+## Why is there so little documentation?
 I just started this project (4 years all in all -> that's not true: it's 12 years in the making). Feel free to add stuff and request a pull.
 Contributing may make you an admin...
 
-${"##"} How do you write the standards?
+## How do you write the standards?
 Using lilypond. Check it out at http://www.lilypond.org/.
 
-${"##"} Will you co-operate with the lilypond, mutopia and wikifonia communities?
+## Will you co-operate with the lilypond, mutopia and wikifonia communities?
 YES! Any bugs or feature suggestion are submitted to the lilypond community.
 Any requests for pieces from the mutopia community will be respected.
 Wikifonia uses musicXML for typesetting while I use an essentially lilypond
 format as input format - so there could not be much co-operation there.
 
-${"##"} Do you only allow Jazz tunes?
+## Do you only allow Jazz tunes?
 No. Rock and Pop will be welcome and so would classical.
 If you are really into classical lilypond production, you may alternativly
 wish to contribute to the mutopia project at http://www.mutopiaproject.org/.
 
-${"##"} How do I build the pdfs?
+## How do I build the pdfs?
 * you need tools installed. on Ubuntu ```$ sudo apt install lilypond```
 * you need the [rsconstruct](https://github.com/veltzer/rsconstruct) build tool on your PATH.
-* clone the repository ```$ git clone ${pydmt.helpers.urls.get_website_git()}```
-* cd into the newly created folder ```$ cd ${pydmt.helpers.project.get_name()}```
+* clone the repository ```$ git clone https://github.com/{{ personal.GITHUB_USERNAME }}/{{ project.NAME }}.git```
+* cd into the newly created folder ```$ cd {{ project.NAME }}```
 * install the python environment with [uv](https://docs.astral.sh/uv/) ```$ uv sync```
 * activate the virutal env ```$ source .venv/bin/activate```
 * run the build process ```$ rsconstruct build```
 * the pdfs should now be built, and you will find them in the 'out/tera/books' folder.
 * if you want to build all the tunes individually then run ```$ rsconstruct build --iset generator.songs_pdf.enabled=true --iset generator.songs_midi.enabled=true``` (after a plain build has rendered the songs).
 
-${"##"} MacOS user notes
+## MacOS user notes
 * [Python3](https://realpython.com/installing-python)
 * [uv](https://docs.astral.sh/uv/)
 * [rsconstruct](https://github.com/veltzer/rsconstruct)
 
-${"##"} How do I contribute?
+## How do I contribute?
 * create an account on github.
 * hack on the .ly.tera files (git add the files that you hack on).
 * commit to your own hard drive repository (git commit).
 * push to git hub (git push).
 * send me a pull request (button in the github ui).
 
-${"##"} Can I just add a single tune?
+## Can I just add a single tune?
 Yes. To add a tune named [tunename] just add single file named
 ```
 src/openbook/[tunename].ly.tera
@@ -122,7 +136,7 @@ rsconstruct build --iset generator.songs_pdf.enabled=true -t "*[tunename]*"
 ```
 or with --iset generator.songs_midi.enabled=true for the midi.
 
-${"##"} Can I just build a single tune?
+## Can I just build a single tune?
 Sure. Just use:
 ```sh
 rsconstruct build --iset generator.songs_pdf.enabled=true -t "*[tunename]*"
@@ -133,23 +147,25 @@ rsconstruct build --iset generator.songs_midi.enabled=true -t "*[tunename]*"
 ```
 to build the midi (a plain ```rsconstruct build``` must have rendered the songs first).
 
-${"##"} What about MusicXML?
+## What about MusicXML?
 Sorry, this project is lilypond based. Patches for MusicXML will be welcome, but I don't
 see how they will fit into this project.
 
-${"##"} Can I send corrections to the tunes without learning lilypond and all the rest of the stuff?
+## Can I send corrections to the tunes without learning lilypond and all the rest of the stuff?
 Yes. Just send them as regular text via my email below.
 
-${"##"} Where can I get more documentation about this project?
+## Where can I get more documentation about this project?
 Look in the `doc` subfolder of the source code...
 
-${"##"} How can I get a version of this book in a key other than C?
+## How can I get a version of this book in a key other than C?
 Just edit the TONALITY_PITCH / TONALITY_NAME constants in `scripts/drivers.py`
 (e.g. "bes" / "B♭") and rebuild.
 
-${"##"} How do I download the external pdfs to compare them to this project?
+## How do I download the external pdfs to compare them to this project?
 Just run:
 ``` sh
 rsconstruct build --iset explicit.real_books.enabled=true
 ```
 and look at the resulting `real_books_archive.gi` folder that is created.
+
+{{ personal.FULLNAME }}, Copyright © {{ copyright_years() }}
