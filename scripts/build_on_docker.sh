@@ -5,17 +5,22 @@ apt-get update
 export DEBIAN_FRONTEND=noninteractive
 apt-get -y install tzdata
 # this is the real installation
-apt-get install -y lilypond qpdf python3 python3-pip virtualenv git
-# create the virtual env
-virtualenv -p /usr/bin/python3 .venv
+apt-get install -y lilypond qpdf python3 git curl
+# get the rsconstruct build tool
+curl -L -o /usr/local/bin/rsconstruct \
+	https://github.com/veltzer/rsconstruct/releases/latest/download/rsconstruct-linux-x86_64
+chmod +x /usr/local/bin/rsconstruct
+# install uv and create the python environment from pyproject.toml + uv.lock
+curl -LsSf https://astral.sh/uv/install.sh | sh
+export PATH="$HOME/.local/bin:$PATH"
+uv sync
 # enter the virtual env
 source .venv/bin/activate
-# upgrate pip
-python -m pip install --upgrade pip
-# install the dependencies declared in pyproject.toml ([project].dependencies);
-# uv installs them without building the non-installable project itself
-pip install uv
-uv pip install -r pyproject.toml
-# build
-make clean_docs
-make all all_tunes
+# build the books (renders the songs and engraves the five books)
+rsconstruct build
+# build every tune individually as well (the song generators scan the
+# rendered songs, so this must come after the plain build above)
+rsconstruct build \
+	--iset generator.songs_pdf.enabled=true \
+	--iset generator.songs_ps.enabled=true \
+	--iset generator.songs_midi.enabled=true

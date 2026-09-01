@@ -4,7 +4,7 @@
 Download and unpack the scanned real-books reference archive. Replaces the
 old `make real_books_archive.gi` target. The archive is extracted at the
 repository root (creating real_books_archive.gi/, which is gitignored via
-the /*.gi pattern) so scripts/attr.py finds it where it always did.
+the /*.gi pattern).
 
 Invoked per the rsconstruct explicit-processor contract:
 

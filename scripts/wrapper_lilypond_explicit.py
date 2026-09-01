@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 """
 Compile a LilyPond source to pdf+ps for the rsconstruct explicit processor.
 
@@ -7,7 +9,7 @@ Invoked per the explicit-processor contract:
         --inputs out/tera/books/<name>.ly \
         --output-files out/tera/books/<name>.pdf out/tera/books/<name>.ps
 
-Same decisions as scripts/wrapper_lilypond.py, the make-driven wrapper:
+Same decisions as the wrapper the retired Makefile used to drive:
 suppress lilypond's console noise unless it fails, and never leave
 partial outputs behind on error.
 """

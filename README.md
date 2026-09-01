@@ -112,27 +112,24 @@ If you are really into classical lilypond production, you may alternativly
 wish to contribute to the mutopia project at http://www.mutopiaproject.org/.
 
 ## How do I build the pdfs?
-* you need tools installed. on Ubuntu ```$ sudo apt install lilypond qpdf```
+* you need tools installed. on Ubuntu ```$ sudo apt install lilypond```
+* you need the [rsconstruct](https://github.com/veltzer/rsconstruct) build tool on your PATH.
 * clone the repository ```$ git clone git://github.com/veltzer/openbook.git```
 * cd into the newly created folder ```$ cd openbook```
-* install python tools to create a python virtual envrionment. on Ubuntu ```$ sudo apt install python3 virtualenv```
-* create a python virtual environment ```$ virtualenv --python=/usr/bin/python3 .venv```
+* install the python environment with [uv](https://docs.astral.sh/uv/) ```$ uv sync```
 * activate the virutal env ```$ source .venv/bin/activate```
-* update pip ```$ python -m pip install --upgrade pip```
-* install the python prerequisites ```$ pip install -r requirements.txt```
-* run the build process ```$ make```
-* the pdfs should now be built, and you will find them in the 'docs' folder.
-* if you want to build all the tunes individually then run ```$ make all_tunes```
+* run the build process ```$ rsconstruct build```
+* the pdfs should now be built, and you will find them in the 'out/tera/books' folder.
+* if you want to build all the tunes individually then run ```$ rsconstruct build --iset generator.songs_pdf.enabled=true --iset generator.songs_midi.enabled=true``` (after a plain build has rendered the songs).
 
 ## MacOS user notes
 * [Python3](https://realpython.com/installing-python)
-* [pip](https://pip.pypa.io/en/stable/installing)
-* [qpdf](https://github.com/qpdf/qpdf)
-* make (on Mac/OS X this is part of X-Code or [command line tools](https://stackoverflow.com/a/9329325/2223106))
+* [uv](https://docs.astral.sh/uv/)
+* [rsconstruct](https://github.com/veltzer/rsconstruct)
 
 ## How do I contribute?
 * create an account on github.
-* hack on the .ly.mako files (git add the files that you hack on).
+* hack on the .ly.tera files (git add the files that you hack on).
 * commit to your own hard drive repository (git commit).
 * push to git hub (git push).
 * send me a pull request (button in the github ui).
@@ -140,44 +137,29 @@ wish to contribute to the mutopia project at http://www.mutopiaproject.org/.
 ## Can I just add a single tune?
 Yes. To add a tune named [tunename] just add single file named
 ```
-src/openbook/[tunename].ly.mako
+src/openbook/[tunename].ly.tera
 ```
-Yes, the extension should be .mako since I use "mako" for templating.
-In that file there are sections. Just copy them from some other tune. One section for
-chords, another for lyrics, another for the melody etc.
-After working on the tune build just a single tune by issueing:
+The extension is .tera since I use "tera" for templating: the file carries the
+tune's metadata as TOML front matter followed by sections. Just copy them from
+some other tune. One section for chords, another for lyrics, another for the
+melody etc.
+The build picks the new tune up by itself — no other file needs editing.
+After working on the tune build just that single tune by issueing:
 ```sh
-make out/src/openbook/[tunename].pdf
+rsconstruct build --iset generator.songs_pdf.enabled=true -t "*[tunename]*"
 ```
-or
-```sh
-make out/src/openbook/[tunename].midi
-```
-or
-```sh
-make out/src/openbook/[tunename].stamp
-```
-to get both pdf and midi.
-
-To get the external pdfs build
-```sh
-make out/src/openbook/[tunename].?.pdf
-```
+or with --iset generator.songs_midi.enabled=true for the midi.
 
 ## Can I just build a single tune?
 Sure. Just use:
 ```sh
-make out/src/openbook/[tunename].pdf
+rsconstruct build --iset generator.songs_pdf.enabled=true -t "*[tunename]*"
 ```
 to build the pdf
 ```sh
-make out/src/openbook/[tunename].midi
+rsconstruct build --iset generator.songs_midi.enabled=true -t "*[tunename]*"
 ```
-to build the midi
-```sh
-make out/src/openbook/[tunename].stamp
-```
-to get both pdf and midi.
+to build the midi (a plain ```rsconstruct build``` must have rendered the songs first).
 
 ## What about MusicXML?
 Sorry, this project is lilypond based. Patches for MusicXML will be welcome, but I don't
@@ -190,12 +172,13 @@ Yes. Just send them as regular text via my email below.
 Look in the `doc` subfolder of the source code...
 
 ## How can I get a version of this book in a key other than C?
-Just edit `include/common.ly.mako` and change TONALITY="c" to "bes" or "ees" before compiling.
+Just edit the TONALITY_PITCH / TONALITY_NAME constants in `scripts/drivers.py`
+(e.g. "bes" / "B♭") and rebuild.
 
 ## How do I download the external pdfs to compare them to this project?
 Just run:
 ``` sh
-make real_books_archive.gi
+rsconstruct build --iset explicit.real_books.enabled=true
 ```
 and look at the resulting `real_books_archive.gi` folder that is created.
 

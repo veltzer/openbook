@@ -6,7 +6,6 @@ version = "0.0.0"
 requires-python = ">=3.14"
 dependencies = [
     "GitPython",
-    "mako",
     "pymysql",
     "python-dateutil",
     "pytconf",
@@ -38,7 +37,6 @@ namespace_packages = true
 # Third-party libraries without type stubs; `foo.*` also matches `foo` itself.
 [[tool.mypy.overrides]]
 module = [
-    "mako.*",
     "pymysql.*",
     "pytconf.*",
     "tqdm.*",

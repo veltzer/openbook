@@ -2,13 +2,12 @@
 
 """
 Source checks for the song sources, migrated from the old `make check_all`
-target and scripts/check.py (which targeted the retired mako tree under
-src/) to the tera tree under src.tera/.
+target and the retired scripts/check.py to the tera song tree under src/.
 
 Invoked per the rsconstruct explicit-processor contract:
 
     python -m scripts.check_all \
-        --inputs src.tera/... \
+        --inputs src/... \
         --output-files out/checks/check_all.stamp
 
 On success the stamp file is written; on any finding every error is printed
@@ -21,7 +20,7 @@ import sys
 from pathlib import Path
 
 # jazz tunes get extra conventions checks (was src/openbook in make)
-JAZZ_PREFIX = "src.tera/openbook/"
+JAZZ_PREFIX = "src/openbook/"
 # a \myMark must name a song section
 MYMARK_SECTIONS = re.compile(r"A|B|C|D|Intro|End|Instr")
 # multiple authors are comma separated, never "X and Y"
@@ -133,7 +132,7 @@ def main() -> int:
     for name in args.inputs:
         # inputs may carry this script itself (declared for dependency
         # tracking); the shared include is a template fragment, not a song
-        if not name.endswith(".ly.tera") or "src.tera/include/" in name:
+        if not name.endswith(".ly.tera") or "src/include/" in name:
             continue
         checker.check_file(Path(name))
     if checker.errors > 0:

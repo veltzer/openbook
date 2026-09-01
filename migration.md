@@ -64,15 +64,20 @@ Chaining note: the per-song and audio generators scan generated trees
 `rsconstruct build` first (and build midi before enabling the audio
 processors).
 
-Known findings the opt-in checks currently report (pre-existing content
-issues, the reason `check_all` was never part of `all`):
+`check_all` now passes clean: the 21 findings it originally reported were
+fixed in the sources (2026-09-01) — `beautiful_love.ly.tera` was brought up
+to the house conventions (`\myMark "A"`, `\myEndLine`/`\myEndLineVolta*`
+line breaks in the chords part instead of raw `\break` in the voice,
+`} \alternative {` on one line, `\endBar`/`\endTune` instead of
+`\bar "|."`, trailing whitespace stripped), four composer/poet fields
+joined with "and" were changed to comma-separated
+(`cocktails_for_two`, `im_sitting_on_top_of_the_world`,
+`prelude_to_a_kiss`), and `robbins_nest`'s bare `\tempo 4 = 120` got its
+piece name (`\tempo "Medium Swing" 4 = 120`). The books recompiled cleanly
+after the changes.
 
-- `check_all`: 21 errors — 16 in `src.tera/openbook/beautiful_love.ly.tera`
-  (trailing whitespace, `\bar`/`\break` usage, `\alternative` layout, no
-  `myMark`, no `myEndLineVolta`), four composer/poet fields joined with
-  "and" instead of a comma (`cocktails_for_two`,
-  `im_sitting_on_top_of_the_world`, `prelude_to_a_kiss`), and one unquoted
-  `\tempo 4 = 120` in `robbins_nest`.
+One known finding remains in the opt-in checks:
+
 - `tidy`: warns on the proprietary `mozdisallowselectionprint` attribute on
   `<html>` in the generated `docs/index.html`.
 
@@ -90,10 +95,88 @@ issues, the reason `check_all` was never part of `all`):
 
 1. Decide how the built books reach the website (pages config or copy
    step), then remove the stale artifacts from `docs/output/`.
-2. Fix the 21 `check_all` findings, then consider flipping
-   `explicit.check_all` to `enabled = true` so it gates CI (long-standing
-   wish in `doc/TODO.txt`).
-3. Once nothing depends on it, delete the `Makefile`, the legacy mako tree
-   scripts it drove (`scripts/check.py`, `scripts/wrapper_mako.py`,
-   `scripts/wrapper_lilypond.py`), and the audio/MIDI documentation in
-   `doc/generating_mp3.txt` that references the removed perl scripts.
+2. Consider flipping `explicit.check_all` to `enabled = true` so it gates
+   CI (long-standing wish in `doc/TODO.txt`) — it passes clean now.
+3. ~~Delete the `Makefile` and the scripts it drove~~ — done (2026-09-01):
+   the `Makefile`, `scripts/check.py`, `scripts/wrapper_mako.py`, and
+   `scripts/wrapper_lilypond.py` are deleted; `scripts/build_on_docker.sh`,
+   `README.md`, and `snippets/main.md.mako` now describe the rsconstruct
+   workflow. The mako tree (`src/`, `include/*.mako`, `scripts/attr.py`,
+   `scripts/convert_to_tera.py`) is kept: `convert_to_tera.py drivers` is
+   the tool that regenerates the driver templates when a tune is added,
+   and it partially evaluates `include/common.ly.mako` (where TONALITY
+   still lives) to do so.
+
+## Cold-build fix (2026-09-01)
+
+CI was failing on cold runners: the tera drivers `load_toml` per-song
+metadata from `out/derived/`, which only existed locally (written by a
+manual `convert_to_tera.py drivers` run). The build now self-hosts it:
+`[processor.generator.derive_metadata]` derives one
+`out/derived/<book>/<song>.ly.toml` per song from the front matter of
+`src.tera/<book>/<song>.ly.tera` (`scripts/derive_metadata.py`). The
+derived files were renamed `.toml` → `.ly.toml` (and the driver templates
+regenerated to match) so the generator's output naming lines up exactly —
+that exact-path match is what orders derivation before the tera renders.
+A from-scratch build (`out/` and cache wiped) passes: 651 products, 0
+failures. This also means front-matter edits now propagate to the books
+on every build instead of waiting for a manual drivers run.
+
+## Mako removal and tree rename (2026-09-01)
+
+The mako song tree is gone and the tera tree took its place:
+
+- deleted: `src/` (the 195 `.ly.mako` songs), `include/` (`common.ly.mako`,
+  `defs.ly.mako`), `scripts/convert_to_tera.py`, `scripts/attr.py`, and the
+  `mako` dependency (removed from `pyproject.toml`, `uv.lock` refreshed).
+- renamed: `src.tera/` → `src/`; every `src.tera/` reference in the song
+  sources, driver templates, configs, checks, and docs now says `src/`.
+- kept: `include/common.ly.mako`'s text lives on as
+  `src/include/common.ly.weave` — the "weave master" that
+  `scripts/drivers.py` (the mako-free descendant of `convert_to_tera.py`)
+  partially evaluates to generate the driver templates, the per-song
+  derived metadata, and `src/include/common.ly.tera`. It still uses
+  mako-style syntax but is processed by our own evaluator; the mako
+  package is not involved. TONALITY lives there.
+
+Verified: the regenerated drivers are byte-identical to the previous
+committed ones modulo the `src.tera/` → `src/` path change (all 195 song
+drivers and 5 book drivers), `src/include/common.ly.tera` regenerates
+byte-identically from the weave, a from-scratch cold build passes (639
+products, 0 failures), `check_all` passes, and a per-song PDF still
+engraves.
+
+## Drivers generated at build time (2026-09-01)
+
+The ~200 committed driver templates (tera.templates/out/tera/**) are gone
+from git — they were pure duplication, deterministically derivable from
+the song front matter plus the weave. The build now generates them:
+
+- `[processor.generator.song_drivers]`: one driver per song, from the
+  song's derived metadata toml (drivers depend only on front matter, not
+  the tune body), into `out/drivers/out/tera/src/`.
+- `[processor.explicit.<book>_driver]` (×5): one driver per book from a
+  glob over the book's derived tomls, which grows across rsconstruct's
+  discovery passes so cold builds see every song.
+- the tera processor's `src_dirs` gained `out/drivers`, so the generated
+  drivers render to the same `out/tera/` paths as before.
+- `src/include/common.ly.tera` is now a first-class committed source: the
+  weave's `defs` block (its duplicate) was excised.
+- the engraving tonality moved to `TONALITY_PITCH`/`TONALITY_NAME` in
+  `scripts/drivers.py` (the weave's TONALITY had been dead text since the
+  tera port).
+- `git holds exactly ONE file per song`; `tera.templates/` shrank to
+  `docs/index.html.tera`; adding a tune is now "add the one file, build".
+
+This needed two rsconstruct fixes (in ~/git/rsconstruct, to be released
+before openbook is pushed, since CI downloads the latest release):
+1. the tera dependency analyzer no longer hard-fails scanning a template
+   that is itself a not-yet-built product output;
+2. the tera processor skips not-yet-built templates when preloading the
+   includable set (a render that really includes one is ordered behind
+   its producer by the graph).
+
+Verified: cold build from nothing is green (839 products, 0 failed), all
+200 rendered .ly files byte-identical to the committed-drivers era, a
+front-matter edit propagates toml → driver → render incrementally and
+reconverges to zero rebuilds.

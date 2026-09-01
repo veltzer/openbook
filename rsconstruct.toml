@@ -21,22 +21,24 @@ dep_auto = [
   "config/python.lua",
   "config/shared.lua",
 ]
-src_dirs = ["tera.templates"]
+# out/drivers holds the build-generated driver templates (see the
+# driver-generation section below); nothing under it is committed.
+src_dirs = ["tera.templates", "out/drivers"]
 dep_inputs = ["config/project.lua", "config/personal.lua", "config/version.lua"]
 
 [processor.ruff]
-src_dirs = ["src", "scripts", "config"]
+src_dirs = ["scripts", "config"]
 
 [processor.pylint]
-src_dirs = ["src", "scripts", "config"]
+src_dirs = ["scripts", "config"]
 
 [processor.mypy]
-src_dirs = ["src", "scripts", "config"]
+src_dirs = ["scripts", "config"]
 
 # ─── shell ───────────────────────────────────────────────────────────────────
 
 [processor.shellcheck]
-src_dirs = ["scripts", "src", "docs", "config"]
+src_dirs = ["scripts", "docs", "config"]
 args = ["--severity=error", "--shell=bash"]
 
 # ─── lua ─────────────────────────────────────────────────────────────────────
@@ -48,6 +50,86 @@ src_dirs = ["config"]
 
 [processor.taplo]
 src_dirs = ["."]
+# out/derived holds generated per-song metadata (force-walked into the
+# file index as a src_dir of song_drivers); lint only hand-written toml
+src_exclude_dirs = ["out"]
+
+# ─── derived song metadata ───────────────────────────────────────────────────
+
+# One out/derived/<book>/<song>.ly.toml per song, derived from the TOML
+# front matter of src/<book>/<song>.ly.tera. The driver templates
+# load these via load_toml, so this must run before the tera renders —
+# the exact output-path match gives rsconstruct that ordering. Without
+# this step a cold checkout cannot render any song or book.
+[processor.generator.derive_metadata]
+command = "python"
+args = ["-m", "scripts.derive_metadata"]
+src_dirs = ["src"]
+src_extensions = [".tera"]
+src_exclude_dirs = ["src/include"]
+output_dir = "out/derived"
+output_extension = "toml"
+dep_inputs = ["scripts/derive_metadata.py", "scripts/drivers.py"]
+
+# ─── driver templates ────────────────────────────────────────────────────────
+
+# tera cannot include dynamic paths, so every output needs its own driver
+# template wrapping the song file(s); scripts/drivers.py generates them
+# from the weave master (src/include/common.ly.weave) so that git holds
+# exactly ONE file per song. A song driver depends on the song's derived
+# metadata toml (drivers depend only on front matter, not the tune body),
+# which both orders derivation before the driver and, transitively,
+# before the tera render that load_toml's it — cold builds work in one
+# pass via rsconstruct's virtual-file discovery loop. The output path
+# nests out/tera/src under out/drivers so the tera processor (src_dirs
+# includes out/drivers) renders each driver to the out/tera path the
+# books and opt-in song processors expect.
+[processor.generator.song_drivers]
+command = "python"
+args = ["-m", "scripts.drivers", "songs"]
+src_dirs = ["out/derived"]
+src_extensions = [".toml"]
+output_dir = "out/drivers/out/tera/src"
+output_extension = "tera"
+dep_inputs = ["scripts/drivers.py", "src/include/common.ly.weave"]
+
+# One driver per book, splicing all of the book's songs; the glob over
+# the derived tomls grows across discovery passes, so the product picks
+# up every song even on a cold build.
+[processor.explicit.openbook_driver]
+command = "python"
+args = ["-m", "scripts.drivers", "book"]
+inputs = ["src/include/common.ly.weave", "scripts/drivers.py"]
+input_globs = ["out/derived/openbook/**/*.ly.toml"]
+output_files = ["out/drivers/out/tera/books/openbook.ly.tera"]
+
+[processor.explicit.israeli_driver]
+command = "python"
+args = ["-m", "scripts.drivers", "book"]
+inputs = ["src/include/common.ly.weave", "scripts/drivers.py"]
+input_globs = ["out/derived/israeli/**/*.ly.toml"]
+output_files = ["out/drivers/out/tera/books/israeli.ly.tera"]
+
+[processor.explicit.drumming_driver]
+command = "python"
+args = ["-m", "scripts.drivers", "book"]
+inputs = ["src/include/common.ly.weave", "scripts/drivers.py"]
+input_globs = ["out/derived/drumming/**/*.ly.toml"]
+output_files = ["out/drivers/out/tera/books/drumming.ly.tera"]
+
+[processor.explicit.rockbook_driver]
+command = "python"
+args = ["-m", "scripts.drivers", "book"]
+inputs = ["src/include/common.ly.weave", "scripts/drivers.py"]
+input_globs = ["out/derived/rockbook/**/*.ly.toml"]
+output_files = ["out/drivers/out/tera/books/rockbook.ly.tera"]
+
+[processor.explicit.guitar_album_driver]
+command = "python"
+args = ["-m", "scripts.drivers", "book"]
+inputs = ["src/include/common.ly.weave", "scripts/drivers.py"]
+input_globs = ["out/derived/guitar_album/**/*.ly.toml"]
+output_files = ["out/drivers/out/tera/books/guitar_album.ly.tera"]
 
 # ─── books ───────────────────────────────────────────────────────────────────
 
@@ -110,7 +192,7 @@ enabled = false
 command = "python"
 args = ["-m", "scripts.check_all"]
 inputs = ["scripts/check_all.py"]
-input_globs = ["src.tera/**/*.ly.tera"]
+input_globs = ["src/**/*.ly.tera"]
 output_files = ["out/checks/check_all.stamp"]
 
 # `make checkhtml` (DO_CHECKHTML): validate the website index page
