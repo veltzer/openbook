@@ -89,7 +89,7 @@
 			The <b>{{ project.NAME }}</b> web site for the project is <a title="{{ project.NAME }} web site" href="https://{{ personal.GITHUB_USERNAME }}.github.io/{{ project.NAME }}">here</a>
 			</li>
 			<li>
-			The <b>{{ project.NAME }}</b> git clone link is <a title="{{ project.NAME }} git clone link" href="git://github.com/{{ personal.GITHUB_USERNAME }}/{{ project.NAME }}.git">here</a>
+			The <b>{{ project.NAME }}</b> git clone link is <a title="{{ project.NAME }} git clone link" href="https://github.com/{{ personal.GITHUB_USERNAME }}/{{ project.NAME }}.git">here</a>
 			</li>
 			<li>
 			The latest stable pdf coming out of the <b>{{ project.NAME }}</b> project is <a title="latest pdf" href="output/openbook.pdf">here</a>
@@ -101,6 +101,18 @@
 			The latest stable lilypond coming out of the <b>{{ project.NAME }}</b> project is <a title="latest lilypond" href="output/openbook.ly">here</a>
 			</li>
 		</ul>
+		<h2>All the books</h2>
+		<p>Besides the main real book this project builds several more books, all engraved fresh on every release:</p>
+		<table>
+			<tr><th>book</th><th></th><th></th><th></th><th></th></tr>
+{% for book in ["openbook", "israeli", "drumming", "rockbook", "guitar_album"] %}			<tr>
+				<td><b>{{ book }}</b></td>
+				<td><a href="web/viewer.html?file=../output/{{ book }}.pdf">view</a></td>
+				<td><a href="output/{{ book }}.pdf">pdf</a></td>
+				<td><a href="output/{{ book }}.ps">postscript</a></td>
+				<td><a href="output/{{ book }}.ly">lilypond</a></td>
+			</tr>
+{% endfor %}		</table>
 		<p>
 			Copyright {{ personal.FULLNAME }} © {{ copyright_years() }}
 			<a href="mailto:{{ personal.EMAIL }}">{{ personal.EMAIL }}</a>

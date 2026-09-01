@@ -1,3 +1,0 @@
-url:
-http://www.makotemplates.org/
-maybe in the future openbook will use pdmt for building.

@@ -4,12 +4,16 @@ apt-get update
 # because tzdata is interactive
 export DEBIAN_FRONTEND=noninteractive
 apt-get -y install tzdata
-# this is the real installation
-apt-get install -y lilypond qpdf python3 git curl
+# base tools; the build's own dependencies (lilypond, tidy, ...) are
+# installed by rsconstruct below from [dependencies] in rsconstruct.toml,
+# so that knowledge lives in exactly one place
+apt-get install -y python3 git curl
 # get the rsconstruct build tool
 curl -L -o /usr/local/bin/rsconstruct \
 	https://github.com/veltzer/rsconstruct/releases/latest/download/rsconstruct-linux-x86_64
 chmod +x /usr/local/bin/rsconstruct
+# install the project's external dependencies (lilypond etc.)
+rsconstruct tools install-deps
 # install uv and create the python environment from pyproject.toml + uv.lock
 curl -LsSf https://astral.sh/uv/install.sh | sh
 export PATH="$HOME/.local/bin:$PATH"

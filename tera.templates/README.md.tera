@@ -17,7 +17,7 @@ website: https://{{ personal.GITHUB_USERNAME }}.github.io/{{ project.NAME }}
 
 ## Contact
 
-chat with me at [![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/veltzer/mark.veltzer)
+contact me at {{ personal.EMAIL }}
 
 ## What is {{ project.NAME_FANCY }}?
 {{ project.NAME_FANCY }} is a Jazz real book constructed with free software. A real book simply means a big book with lots of Jazz tunes or standards as they are more widely known.

@@ -43,6 +43,11 @@ jobs:
         rsconstruct tools install
     - name: build
       run: rsconstruct build
+    - name: generated files in sync
+      # The build regenerates some committed files (e.g. README.md from
+      # its template). If that leaves the checkout dirty, the committed
+      # copy has drifted from its sources - fail so it gets recommitted.
+      run: git diff --exit-code
     - name: status
       run: rsconstruct status
     - name: pages dir

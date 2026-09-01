@@ -6,11 +6,7 @@ version = "0.0.0"
 requires-python = ">=3.14"
 dependencies = [
     "GitPython",
-    "pymysql",
-    "python-dateutil",
-    "pytconf",
     "requests",
-    "tqdm",
 ]
 
 [dependency-groups]
@@ -19,15 +15,16 @@ dev = [
     "pylint",
     "pytest",
     "ruff",
-    "types-pymysql",
-    "types-python-dateutil",
     "types-requests",
-    "types-tqdm",
 ]
 
 [tool.uv]
 # Demo/teaching repo: not an installable package.
 package = false
+
+[tool.pytest.ini_options]
+# the tests import scripts.* from the repository root
+pythonpath = ["."]
 
 [tool.mypy]
 mypy_path = "src:python"
@@ -37,8 +34,5 @@ namespace_packages = true
 # Third-party libraries without type stubs; `foo.*` also matches `foo` itself.
 [[tool.mypy.overrides]]
 module = [
-    "pymysql.*",
-    "pytconf.*",
-    "tqdm.*",
 ]
 ignore_missing_imports = true

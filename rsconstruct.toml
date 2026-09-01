@@ -27,13 +27,17 @@ src_dirs = ["tera.templates", "out/drivers"]
 dep_inputs = ["config/project.lua", "config/personal.lua", "config/version.lua"]
 
 [processor.ruff]
-src_dirs = ["scripts", "config"]
+src_dirs = ["scripts", "config", "tests"]
 
 [processor.pylint]
-src_dirs = ["scripts", "config"]
+src_dirs = ["scripts", "config", "tests"]
 
 [processor.mypy]
-src_dirs = ["scripts", "config"]
+src_dirs = ["scripts", "config", "tests"]
+
+# golden tests pinning the driver generator (tests/test_drivers.py)
+[processor.pytest]
+src_dirs = ["tests"]
 
 # ─── shell ───────────────────────────────────────────────────────────────────
 
@@ -207,7 +211,7 @@ batch = false
 
 # lilypond engraves the books; installed by `rsconstruct tools install-deps`
 [dependencies]
-system = ["lilypond"]
+system = ["lilypond", "tidy"]
 
 # ─── opt-in targets (disabled by default) ────────────────────────────────────
 
@@ -222,24 +226,27 @@ system = ["lilypond"]
 # out/songs/midi), so they discover work only once a prior build has
 # produced those files: run a plain `rsconstruct build` first.
 
-# `make check_all`: source-convention checks on the song sources
+# source-convention checks on the song sources; part of the default
+# build since 2026-09-01, when its findings were all fixed
 [processor.explicit.check_all]
-enabled = false
 command = "python"
 args = ["-m", "scripts.check_all"]
 inputs = ["scripts/check_all.py"]
 input_globs = ["src/**/*.ly.tera"]
 output_files = ["out/checks/check_all.stamp"]
 
-# `make checkhtml` (DO_CHECKHTML): validate the website index page
+# validate the generated website index page (part of the default build);
+# the vendored pdf.js viewer trees are third-party and full of
+# proprietary attributes, so they are excluded
 [processor.tidy]
-enabled = false
-src_files = ["docs/index.html"]
+src_dirs = ["docs"]
+src_exclude_dirs = ["docs/web", "docs/build"]
 args = ["-errors", "-q", "-utf8"]
 
 [processor.htmlhint]
 enabled = false
-src_files = ["docs/index.html"]
+src_dirs = ["docs"]
+src_exclude_dirs = ["docs/web", "docs/build"]
 
 # per-song engraving (DO_PDF / DO_PS / DO_MIDI): one product per rendered song
 [processor.generator.songs_pdf]

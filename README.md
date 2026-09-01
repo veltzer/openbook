@@ -14,7 +14,7 @@ OpenBook is a standards book for Jazz players which containts hundreds of jazz s
 
 ## Contact
 
-chat with me at [![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/veltzer/mark.veltzer)
+contact me at mark.veltzer@gmail.com
 
 ## What is OpenBook?
 OpenBook is a Jazz real book constructed with free software. A real book simply means a big book with lots of Jazz tunes or standards as they are more widely known.
@@ -40,11 +40,7 @@ used by Jazz musicians both for practice and for performance.
 
 ## What python modules are used?
 * GitPython
-* pymysql
-* python-dateutil
-* pytconf
 * requests
-* tqdm
 
 ## What is produced?
 Beautiful and lightweight postscript and PDF real books with Jazz tunes.
