@@ -8,17 +8,15 @@
 
 # ─── templating ──────────────────────────────────────────────────────────────
 
-# Convention: tera configs are Lua (config/*.lua). dep_auto entries are
-# silently skipped where absent. Repos still on config/*.py keep a
-# dep_inputs override in their local overlay until converted.
+# Convention: tera configs are Lua (config/*.lua). Every dep_auto entry
+# listed here must exist: rsconstruct rejects a missing one at config load.
+# Repos still on config/*.py keep a dep_inputs override in their local
+# overlay until converted.
 [processor.tera]
 dep_auto = [
   "config/project.lua",
   "config/personal.lua",
   "config/version.lua",
-  "config/github.lua",
-  "config/python.lua",
-  "config/shared.lua",
 ]
 # out/drivers holds the build-generated driver templates (see the
 # driver-generation section below); nothing under it is committed.
