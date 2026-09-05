@@ -40,7 +40,6 @@ src_dirs = ["tests"]
 
 [processor.shellcheck]
 src_dirs = ["scripts", "docs", "config"]
-args = ["--severity=error", "--shell=bash"]
 
 # ─── lua ─────────────────────────────────────────────────────────────────────
 
@@ -326,3 +325,8 @@ output_files = ["out/real_books/real_books.stamp"]
 # lint the GitHub Actions workflow files with actionlint
 [processor.actionlint]
 src_dirs = [".github/workflows"]
+
+# ─── markdown ────────────────────────────────────────────────────────────────
+
+[processor.rumdl]
+src_files = ["README.md"]

@@ -102,7 +102,7 @@ wish to contribute to the mutopia project at http://www.mutopiaproject.org/.
 
 ## Can I just add a single tune?
 Yes. To add a tune named [tunename] just add single file named
-```
+```text
 src/openbook/[tunename].ly.tera
 ```
 The extension is .tera since I use "tera" for templating: the file carries the

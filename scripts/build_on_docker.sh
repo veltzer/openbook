@@ -16,9 +16,10 @@ chmod +x /usr/local/bin/rsconstruct
 rsconstruct tools install-deps
 # install uv and create the python environment from pyproject.toml + uv.lock
 curl -LsSf https://astral.sh/uv/install.sh | sh
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="${HOME}/.local/bin:${PATH}"
 uv sync
 # enter the virtual env
+# shellcheck disable=SC1091
 source .venv/bin/activate
 # build the books (renders the songs and engraves the five books)
 rsconstruct build

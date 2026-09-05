@@ -1,0 +1,12 @@
+# Markdown lint rules, shared fleet-wide (rsmultigit check-same). Carried
+# over from the pydmt-era .markdownlint.json / .mdl.style.rb configs the
+# repos were maintained against: rules those never addressed stay on.
+
+[global]
+disable = ["MD022", "MD024", "MD026", "MD031", "MD032", "MD033", "MD034"]
+
+[MD007]
+indent = 4
+
+[MD013]
+line_length = 1000

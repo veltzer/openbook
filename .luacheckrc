@@ -5,5 +5,3 @@ files["config"] = {
     allow_defined_top = true,
     ignore = { "131" },
 }
--- generated config tables (long keyword lists) can exceed the default width
-max_line_length = false
