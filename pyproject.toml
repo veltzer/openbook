@@ -1,7 +1,7 @@
 # Lets `uv sync` install this repo's Python dependencies.
 
 [project]
-name = "openbook"
+name = "book-openbook"
 version = "0.0.0"
 requires-python = ">=3.14"
 dependencies = [

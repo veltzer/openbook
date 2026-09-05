@@ -1,8 +1,8 @@
-# *openbook* project by Mark Veltzer
+# *book-openbook* project by Mark Veltzer
 
 description: OpenBook is an open source Jazz real book
 
-project website: https://veltzer.github.io/openbook
+project website: https://veltzer.github.io/book-openbook
 
 author: Mark Veltzer
 
@@ -12,16 +12,16 @@ version: 0.0.1
 
 ## github
 
-![License](https://img.shields.io/github/license/veltzer/openbook)
+![License](https://img.shields.io/github/license/veltzer/book-openbook)
 
 ## build
 
-![build](https://github.com/veltzer/openbook/workflows/build/badge.svg)
+![build](https://github.com/veltzer/book-openbook/workflows/build/badge.svg)
 ## What is OpenBook?
 OpenBook is a Jazz real book constructed with free software. A real book simply means a big book with lots of Jazz tunes or standards as they are more widely known.
 
 ## Where is the project's website?
-https://veltzer.github.io/openbook
+https://veltzer.github.io/book-openbook
 
 ## Why did you start this?
 Because of many reasons:
@@ -74,7 +74,7 @@ Look at the CREDITS file
 Your name could be here if you contribute...
 
 ## Where can I see some results?
-Check out the PDFs and other outputs in https://veltzer.github.io/openbook.
+Check out the PDFs and other outputs in https://veltzer.github.io/book-openbook.
 
 ## Why is there so little documentation?
 I just started this project (4 years all in all -> that's not true: it's 12 years in the making). Feel free to add stuff and request a pull.
@@ -97,8 +97,8 @@ wish to contribute to the mutopia project at http://www.mutopiaproject.org/.
 ## How do I build the pdfs?
 * you need tools installed. on Ubuntu ```$ sudo apt install lilypond```
 * you need the [rsconstruct](https://github.com/veltzer/rsconstruct) build tool on your PATH.
-* clone the repository ```$ git clone https://github.com/veltzer/openbook.git```
-* cd into the newly created folder ```$ cd openbook```
+* clone the repository ```$ git clone https://github.com/veltzer/book-openbook.git```
+* cd into the newly created folder ```$ cd book-openbook```
 * install the python environment with [uv](https://docs.astral.sh/uv/) ```$ uv sync```
 * activate the virutal env ```$ source .venv/bin/activate```
 * run the build process ```$ rsconstruct build```

@@ -1,4 +1,4 @@
-NAME = "openbook"
+NAME = "book-openbook"
 DESCRIPTION_SHORT = "OpenBook is an open source Jazz real book"
 DESCRIPTION_LONG = "OpenBook is a standards book for Jazz players which containts hundreds of jazz standards"
 NAME_FANCY = "OpenBook"
